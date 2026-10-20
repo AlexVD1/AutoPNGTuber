@@ -1,0 +1,492 @@
+[
+  {
+    "id": 1,
+    "texto": "¿Qué pasaría si la Tierra dejara de girar por solo un segundo?",
+    "poseId": "thinking_chin_hand",
+    "expresion": "thinking",
+    "props": {
+      "derecha": "globe",
+      "arriba": "question_mark"
+    },
+    "icono": "Globe",
+    "colorIcono": "#3B82F6",
+    "tituloVisual": "¿Y SI SE DETIENE?",
+    "duracionSegundos": 4.114,
+    "palabras": [
+      {
+        "palabra": "Qué",
+        "inicioMs": 95,
+        "finMs": 209
+      },
+      {
+        "palabra": "pasaría",
+        "inicioMs": 220,
+        "finMs": 641
+      },
+      {
+        "palabra": "si",
+        "inicioMs": 652,
+        "finMs": 789
+      },
+      {
+        "palabra": "la",
+        "inicioMs": 800,
+        "finMs": 902
+      },
+      {
+        "palabra": "Tierra",
+        "inicioMs": 914,
+        "finMs": 1164
+      },
+      {
+        "palabra": "dejara",
+        "inicioMs": 1175,
+        "finMs": 1516
+      },
+      {
+        "palabra": "de",
+        "inicioMs": 1527,
+        "finMs": 1630
+      },
+      {
+        "palabra": "girar",
+        "inicioMs": 1641,
+        "finMs": 1993
+      },
+      {
+        "palabra": "por",
+        "inicioMs": 2005,
+        "finMs": 2175
+      },
+      {
+        "palabra": "solo",
+        "inicioMs": 2186,
+        "finMs": 2448
+      },
+      {
+        "palabra": "un",
+        "inicioMs": 2459,
+        "finMs": 2573
+      },
+      {
+        "palabra": "segundo",
+        "inicioMs": 2584,
+        "finMs": 3073
+      }
+    ]
+  },
+  {
+    "id": 2,
+    "texto": "En el ecuador nos movemos a mil seiscientos kilómetros por hora.",
+    "poseId": "explaining_both_hands",
+    "expresion": "talking",
+    "props": {
+      "derecha": "planet"
+    },
+    "icono": "Zap",
+    "colorIcono": "#F59E0B",
+    "tituloVisual": "1,600 KM/H",
+    "duracionSegundos": 4.282,
+    "palabras": [
+      {
+        "palabra": "En",
+        "inicioMs": 95,
+        "finMs": 255
+      },
+      {
+        "palabra": "el",
+        "inicioMs": 266,
+        "finMs": 368
+      },
+      {
+        "palabra": "ecuador",
+        "inicioMs": 380,
+        "finMs": 755
+      },
+      {
+        "palabra": "nos",
+        "inicioMs": 766,
+        "finMs": 948
+      },
+      {
+        "palabra": "movemos",
+        "inicioMs": 959,
+        "finMs": 1357
+      },
+      {
+        "palabra": "a",
+        "inicioMs": 1368,
+        "finMs": 1414
+      },
+      {
+        "palabra": "mil",
+        "inicioMs": 1425,
+        "finMs": 1607
+      },
+      {
+        "palabra": "seiscientos",
+        "inicioMs": 1618,
+        "finMs": 2209
+      },
+      {
+        "palabra": "kilómetros",
+        "inicioMs": 2220,
+        "finMs": 2800
+      },
+      {
+        "palabra": "por",
+        "inicioMs": 2811,
+        "finMs": 2970
+      },
+      {
+        "palabra": "hora",
+        "inicioMs": 2982,
+        "finMs": 3232
+      }
+    ]
+  },
+  {
+    "id": 3,
+    "texto": "Si el planeta frena de golpe, la inercia nos lanzaría al instante.",
+    "poseId": "tripping_falling",
+    "expresion": "shocked",
+    "icono": "Wind",
+    "colorIcono": "#EF4444",
+    "tituloVisual": "INERCIA BRUTAL",
+    "duracionSegundos": 4.738,
+    "palabras": [
+      {
+        "palabra": "Si",
+        "inicioMs": 95,
+        "finMs": 311
+      },
+      {
+        "palabra": "el",
+        "inicioMs": 323,
+        "finMs": 414
+      },
+      {
+        "palabra": "planeta",
+        "inicioMs": 425,
+        "finMs": 823
+      },
+      {
+        "palabra": "frena",
+        "inicioMs": 834,
+        "finMs": 1084
+      },
+      {
+        "palabra": "de",
+        "inicioMs": 1095,
+        "finMs": 1186
+      },
+      {
+        "palabra": "golpe",
+        "inicioMs": 1198,
+        "finMs": 1573
+      },
+      {
+        "palabra": "la",
+        "inicioMs": 1845,
+        "finMs": 1925
+      },
+      {
+        "palabra": "inercia",
+        "inicioMs": 1936,
+        "finMs": 2345
+      },
+      {
+        "palabra": "nos",
+        "inicioMs": 2357,
+        "finMs": 2539
+      },
+      {
+        "palabra": "lanzaría",
+        "inicioMs": 2550,
+        "finMs": 3027
+      },
+      {
+        "palabra": "al",
+        "inicioMs": 3039,
+        "finMs": 3130
+      },
+      {
+        "palabra": "instante",
+        "inicioMs": 3141,
+        "finMs": 3698
+      }
+    ]
+  },
+  {
+    "id": 4,
+    "texto": "Edificios, personas y océanos saldrían disparados hacia el este.",
+    "poseId": "shock_explosion",
+    "expresion": "scared",
+    "props": {
+      "arriba": "exclamation_mark"
+    },
+    "icono": "Building2",
+    "colorIcono": "#DC2626",
+    "tituloVisual": "TODO VOLARÍA",
+    "duracionSegundos": 4.738,
+    "palabras": [
+      {
+        "palabra": "Edificios",
+        "inicioMs": 95,
+        "finMs": 755
+      },
+      {
+        "palabra": "personas",
+        "inicioMs": 970,
+        "finMs": 1505
+      },
+      {
+        "palabra": "y",
+        "inicioMs": 1516,
+        "finMs": 1561
+      },
+      {
+        "palabra": "océanos",
+        "inicioMs": 1573,
+        "finMs": 1993
+      },
+      {
+        "palabra": "saldrían",
+        "inicioMs": 2005,
+        "finMs": 2425
+      },
+      {
+        "palabra": "disparados",
+        "inicioMs": 2436,
+        "finMs": 3016
+      },
+      {
+        "palabra": "hacia",
+        "inicioMs": 3027,
+        "finMs": 3266
+      },
+      {
+        "palabra": "el",
+        "inicioMs": 3277,
+        "finMs": 3357
+      },
+      {
+        "palabra": "este",
+        "inicioMs": 3368,
+        "finMs": 3686
+      }
+    ]
+  },
+  {
+    "id": 5,
+    "texto": "Se formarían olas gigantescas arrasando continentes enteros.",
+    "poseId": "backing_away_scared",
+    "expresion": "scared",
+    "props": {
+      "derecha": "water_drop"
+    },
+    "icono": "Waves",
+    "colorIcono": "#0EA5E9",
+    "tituloVisual": "MEGATSUNAMIS",
+    "duracionSegundos": 4.498,
+    "palabras": [
+      {
+        "palabra": "Se",
+        "inicioMs": 95,
+        "finMs": 300
+      },
+      {
+        "palabra": "formarían",
+        "inicioMs": 311,
+        "finMs": 823
+      },
+      {
+        "palabra": "olas",
+        "inicioMs": 834,
+        "finMs": 1061
+      },
+      {
+        "palabra": "gigantescas",
+        "inicioMs": 1073,
+        "finMs": 1766
+      },
+      {
+        "palabra": "arrasando",
+        "inicioMs": 1777,
+        "finMs": 2255
+      },
+      {
+        "palabra": "continentes",
+        "inicioMs": 2266,
+        "finMs": 2868
+      },
+      {
+        "palabra": "enteros",
+        "inicioMs": 2880,
+        "finMs": 3448
+      }
+    ]
+  },
+  {
+    "id": 6,
+    "texto": "Y al reanudar el giro un segundo después, el choque sería catastrófico.",
+    "poseId": "frustrated_head_grab",
+    "expresion": "frustrated",
+    "icono": "Flame",
+    "colorIcono": "#EA580C",
+    "tituloVisual": "CHOQUE TOTAL",
+    "duracionSegundos": 5.026,
+    "palabras": [
+      {
+        "palabra": "Y",
+        "inicioMs": 95,
+        "finMs": 243
+      },
+      {
+        "palabra": "al",
+        "inicioMs": 255,
+        "finMs": 357
+      },
+      {
+        "palabra": "reanudar",
+        "inicioMs": 368,
+        "finMs": 777
+      },
+      {
+        "palabra": "el",
+        "inicioMs": 789,
+        "finMs": 880
+      },
+      {
+        "palabra": "giro",
+        "inicioMs": 891,
+        "finMs": 1164
+      },
+      {
+        "palabra": "un",
+        "inicioMs": 1175,
+        "finMs": 1289
+      },
+      {
+        "palabra": "segundo",
+        "inicioMs": 1300,
+        "finMs": 1675
+      },
+      {
+        "palabra": "después",
+        "inicioMs": 1686,
+        "finMs": 2164
+      },
+      {
+        "palabra": "el",
+        "inicioMs": 2380,
+        "finMs": 2516
+      },
+      {
+        "palabra": "choque",
+        "inicioMs": 2527,
+        "finMs": 2823
+      },
+      {
+        "palabra": "sería",
+        "inicioMs": 2834,
+        "finMs": 3175
+      },
+      {
+        "palabra": "catastrófico",
+        "inicioMs": 3186,
+        "finMs": 3982
+      }
+    ]
+  },
+  {
+    "id": 7,
+    "texto": "Por suerte, la física del espacio nos mantendrá girando por miles de millones de años.",
+    "poseId": "thumbs_up_approval",
+    "expresion": "smile_wide",
+    "props": {
+      "izquierda": "check_mark"
+    },
+    "icono": "ShieldCheck",
+    "colorIcono": "#10B981",
+    "tituloVisual": "ESTAMOS A SALVO",
+    "duracionSegundos": 5.77,
+    "palabras": [
+      {
+        "palabra": "Por",
+        "inicioMs": 95,
+        "finMs": 255
+      },
+      {
+        "palabra": "suerte",
+        "inicioMs": 266,
+        "finMs": 641
+      },
+      {
+        "palabra": "la",
+        "inicioMs": 936,
+        "finMs": 1027
+      },
+      {
+        "palabra": "física",
+        "inicioMs": 1039,
+        "finMs": 1414
+      },
+      {
+        "palabra": "del",
+        "inicioMs": 1425,
+        "finMs": 1573
+      },
+      {
+        "palabra": "espacio",
+        "inicioMs": 1584,
+        "finMs": 2005
+      },
+      {
+        "palabra": "nos",
+        "inicioMs": 2016,
+        "finMs": 2186
+      },
+      {
+        "palabra": "mantendrá",
+        "inicioMs": 2198,
+        "finMs": 2664
+      },
+      {
+        "palabra": "girando",
+        "inicioMs": 2675,
+        "finMs": 3084
+      },
+      {
+        "palabra": "por",
+        "inicioMs": 3095,
+        "finMs": 3289
+      },
+      {
+        "palabra": "miles",
+        "inicioMs": 3300,
+        "finMs": 3630
+      },
+      {
+        "palabra": "de",
+        "inicioMs": 3641,
+        "finMs": 3709
+      },
+      {
+        "palabra": "millones",
+        "inicioMs": 3720,
+        "finMs": 4175
+      },
+      {
+        "palabra": "de",
+        "inicioMs": 4186,
+        "finMs": 4277
+      },
+      {
+        "palabra": "años",
+        "inicioMs": 4289,
+        "finMs": 4732
+      }
+    ]
+  }
+]

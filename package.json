@@ -1,0 +1,29 @@
+{
+  "name": "auto-png-tuber",
+  "version": "1.0.0",
+  "description": "Generador rápido de Shorts estilo ¿Sabías que...? con Remotion y edge-tts",
+  "private": true,
+  "scripts": {
+    "dev": "remotion studio",
+    "build": "remotion bundle",
+    "render": "remotion render ShortSabiasQue out/short.mp4 --port 3002",
+    "poses:build": "node scripts/generar_biblioteca_poses.mjs",
+    "tts": "python scripts/generar_voz.py"
+  },
+  "dependencies": {
+    "@remotion/cli": "^4.0.242",
+    "@remotion/tailwind": "^4.0.242",
+    "lucide-react": "^0.468.0",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "remotion": "^4.0.242"
+  },
+  "devDependencies": {
+    "@types/react": "^18.3.12",
+    "@types/react-dom": "^18.3.1",
+    "autoprefixer": "^10.4.20",
+    "postcss": "^8.4.49",
+    "tailwindcss": "^3.4.17",
+    "typescript": "^5.7.2"
+  }
+}
