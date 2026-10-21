@@ -7,6 +7,26 @@ import {
 } from "remotion";
 import * as LucideIcons from "lucide-react";
 
+/**
+ * Registro explícito de iconos principales y fallbacks conocidos.
+ */
+export const ICON_REGISTRY: Record<
+  string,
+  React.ComponentType<{
+    size?: number;
+    color?: string;
+    strokeWidth?: number;
+  }>
+> = {
+  Sparkles: LucideIcons.Sparkles,
+  Scale: LucideIcons.Scale,
+  ArrowDownCircle: LucideIcons.ArrowDownCircle,
+  Zap: LucideIcons.Zap,
+  Flame: LucideIcons.Flame,
+  Skull: LucideIcons.Skull,
+  HelpCircle: LucideIcons.HelpCircle,
+};
+
 interface AnimatedIconProps {
   icono: string;
   colorIcono: string;
@@ -63,6 +83,7 @@ export const AnimatedIcon: React.FC<AnimatedIconProps> = ({
   const initialRotate = interpolate(cardSpring, [0, 1], [-12, 0]);
 
   const IconComponent =
+    ICON_REGISTRY[icono] ??
     (
       LucideIcons as unknown as Record<
         string,
@@ -72,7 +93,8 @@ export const AnimatedIcon: React.FC<AnimatedIconProps> = ({
           strokeWidth?: number;
         }>
       >
-    )[icono] ?? LucideIcons.HelpCircle;
+    )[icono] ??
+    LucideIcons.HelpCircle;
 
   const bgTint = hexToRgba(colorIcono, 0.1);
 

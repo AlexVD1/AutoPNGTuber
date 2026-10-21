@@ -2,6 +2,7 @@ import React from "react";
 import { Composition, CalculateMetadataFunction } from "remotion";
 import { ShortComposition } from "./Composition";
 import { ShowcasePoses } from "./components/ShowcasePoses";
+import { TestNarrativaScene } from "./components/TestNarrativaScene";
 import { EscenaGuion, ShortProps } from "./types";
 import guionData from "./data/guion.json";
 import "./style.css";
@@ -46,6 +47,14 @@ export const RemotionRoot: React.FC = () => {
         fps={FPS}
         width={1920}
         height={1600}
+      />
+      <Composition
+        id="TestNarrativa"
+        component={TestNarrativaScene}
+        durationInFrames={180}
+        fps={FPS}
+        width={1080}
+        height={1920}
       />
     </>
   );

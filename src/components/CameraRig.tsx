@@ -5,12 +5,14 @@ import {
   useCurrentFrame,
   useVideoConfig,
 } from "remotion";
-import { TipoTransicion } from "../types";
+import { TipoComposicionVisual, TipoTransicion } from "../types";
 
 export interface CameraRigProps {
   children: React.ReactNode;
   transicion?: TipoTransicion;
   efectosCamara?: ("shake" | "punch" | "drift")[];
+  composicionVisual?: TipoComposicionVisual;
+  impactFrame?: number;
   durationInFrames: number;
 }
 
@@ -18,12 +20,28 @@ export const CameraRig: React.FC<CameraRigProps> = ({
   children,
   transicion = "zoom_in",
   efectosCamara = ["drift"],
+  composicionVisual = "minimalista",
+  impactFrame,
   durationInFrames,
 }) => {
   const frame = useCurrentFrame();
   const { fps } = useVideoConfig();
 
-  // 1. Micro-zoom cinematográfico continuo (push-in suave)
+  // 1. Escala base según tipo de encuadre y composición visual
+  let baseCompositionScale = 1.0;
+  let baseCompositionOffsetY = 0;
+
+  if (composicionVisual === "primer_plano") {
+    // Zoom pronunciado al 142% enfocado en expresiones y torso
+    baseCompositionScale = 1.42;
+    baseCompositionOffsetY = 80;
+  } else if (composicionVisual === "plano_general") {
+    // Encuadre amplio para mostrar contexto y distancia entre personajes
+    baseCompositionScale = 0.95;
+    baseCompositionOffsetY = -20;
+  }
+
+  // 2. Micro-zoom cinematográfico continuo (push-in suave)
   const isDrift = efectosCamara.includes("drift");
   const pushInScale = isDrift
     ? interpolate(frame, [0, Math.max(1, durationInFrames)], [1.0, 1.038], {
@@ -59,38 +77,46 @@ export const CameraRig: React.FC<CameraRigProps> = ({
     });
   }
 
-  // 3. Trauma Shake cinemático (impactos, peligro, frenado brusco)
+  // 3. Trauma Shake cinemático (impactos, peligro, frenado brusco o momento de contacto)
   let shakeX = 0;
   let shakeY = 0;
   let shakeRotate = 0;
 
-  if (efectosCamara.includes("shake")) {
+  const hasImpactShake =
+    impactFrame !== undefined && frame >= impactFrame && frame < impactFrame + 20;
+
+  if (efectosCamara.includes("shake") || hasImpactShake) {
+    const activeFrame = hasImpactShake ? frame - impactFrame : frame;
     const shakeDuration = 22;
-    if (frame < shakeDuration) {
-      const shakeDecay = interpolate(frame, [0, shakeDuration], [1, 0], {
+    if (activeFrame < shakeDuration && activeFrame >= 0) {
+      const shakeDecay = interpolate(activeFrame, [0, shakeDuration], [1, 0], {
         extrapolateRight: "clamp",
       });
       // Amplitud de vibración pseudo-aleatoria pero 100% determinista
-      shakeX = Math.sin(frame * 2.3) * 16 * shakeDecay;
-      shakeY = Math.cos(frame * 1.9) * 12 * shakeDecay;
-      shakeRotate = Math.sin(frame * 1.5) * 1.6 * shakeDecay;
+      shakeX = Math.sin(activeFrame * 2.3) * 18 * shakeDecay;
+      shakeY = Math.cos(activeFrame * 1.9) * 14 * shakeDecay;
+      shakeRotate = Math.sin(activeFrame * 1.5) * 1.8 * shakeDecay;
     }
   }
 
   // 4. Punch zoom rápido
   let punchScale = 1;
-  if (efectosCamara.includes("punch")) {
+  const hasImpactPunch =
+    impactFrame !== undefined && frame >= impactFrame && frame < impactFrame + 14;
+
+  if (efectosCamara.includes("punch") || hasImpactPunch) {
+    const activeFrame = hasImpactPunch ? frame - impactFrame : frame;
     punchScale = interpolate(
-      frame,
-      [0, 4, 16],
-      [1.0, 1.06, 1.0],
+      activeFrame,
+      [0, 3, 14],
+      [1.0, 1.08, 1.0],
       { extrapolateRight: "clamp" }
     );
   }
 
-  const finalScale = pushInScale * transScale * punchScale;
+  const finalScale = baseCompositionScale * pushInScale * transScale * punchScale;
   const finalX = transX + shakeX;
-  const finalY = transY + shakeY;
+  const finalY = transY + shakeY + baseCompositionOffsetY;
 
   return (
     <div

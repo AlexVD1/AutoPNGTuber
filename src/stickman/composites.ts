@@ -1,3 +1,6 @@
+import React from "react";
+import ReactDOMServer from "react-dom/server";
+import * as LucideIcons from "lucide-react";
 import { BODY_POSES, BodyPoseDef, LEGACY_POSE_MAP } from "./bodyPoses";
 import { EXPRESSIONS, ExpressionDef, renderFaceMarkup } from "./expressions";
 import { PROPS_LIBRARY, PropDef } from "./propsLibrary";
@@ -360,13 +363,82 @@ export const COMPOSITE_POSES: Record<string, CompositePoseDef> = {
     action: "studying",
     tags: ["cuaderno", "lapiz", "apuntes", "notas", "estudio"],
   },
+  frustrated_no_wifi: {
+    id: "frustrated_no_wifi",
+    name: "Frustrado sin internet ni wifi",
+    bodyPoseId: "frustrated_head_grab",
+    expressionId: "frustrated",
+    rightProp: "router",
+    overheadProp: "no_wifi",
+    emotion: "frustrated",
+    action: "frustrated",
+    tags: ["frustrado", "sin_internet", "no_wifi", "router", "desesperacion"],
+  },
+  reading_book_peaceful: {
+    id: "reading_book_peaceful",
+    name: "Leyendo un libro en calma",
+    bodyPoseId: "holding_both_hands",
+    expressionId: "smile_soft",
+    rightProp: "open_book",
+    overheadProp: "idea_bulb",
+    emotion: "happy",
+    action: "reading",
+    tags: ["leyendo", "libro", "calma", "descubrimiento", "paz"],
+  },
 };
 
 export type AnyPropDef = PropDef | FestivePropDef;
 
 export function findPropById(id?: string): AnyPropDef | undefined {
   if (!id) return undefined;
-  return PROPS_LIBRARY[id] ?? FESTIVE_PROPS[id];
+  if (PROPS_LIBRARY[id]) return PROPS_LIBRARY[id];
+  if (FESTIVE_PROPS[id]) return FESTIVE_PROPS[id];
+
+  // 1. Soporte para SVG personalizado inline generado por IA (ej. "svg:<path .../>" o "<circle ...>")
+  if (id.startsWith("<") || id.startsWith("svg:")) {
+    const rawSvg = id.startsWith("svg:") ? id.substring(4) : id;
+    return {
+      id: "custom_svg",
+      name: "Prop Vectorial Personalizado",
+      defaultPlacement: "right",
+      svg: rawSvg,
+      tags: ["custom", "inline", "vector"],
+    };
+  }
+
+  // 2. Soporte universal para más de 1,400 iconos de Lucide (ej. "lucide:Brain", "Coffee", "Rocket", etc.)
+  const cleanIconName = id.replace(/^lucide:/i, "").trim();
+  const pascalName =
+    cleanIconName.charAt(0).toUpperCase() + cleanIconName.slice(1);
+  const IconComponent =
+    (LucideIcons as any)[cleanIconName] || (LucideIcons as any)[pascalName];
+
+  if (IconComponent && typeof IconComponent === "function") {
+    try {
+      const markup = ReactDOMServer.renderToStaticMarkup(
+        React.createElement(IconComponent, {
+          size: 38,
+          color: "#000000",
+          strokeWidth: 2.8,
+        })
+      );
+      const innerMatch = markup.match(/<svg[^>]*>([\s\S]*?)<\/svg>/i);
+      const innerSvg = innerMatch ? innerMatch[1] : markup;
+
+      return {
+        id,
+        name: pascalName,
+        defaultPlacement: "right",
+        // Sticker neo-brutalista circular con fondo blanco, borde de 5px y el icono de Lucide en el centro
+        svg: `<circle cx="0" cy="0" r="28" fill="#FFFFFF" stroke="#000000" stroke-width="5"/><g transform="translate(-19, -19)">${innerSvg}</g>`,
+        tags: [cleanIconName.toLowerCase(), "lucide", "icono"],
+      };
+    } catch {
+      // Continuar si no se pudo serializar
+    }
+  }
+
+  return undefined;
 }
 
 export interface RenderStickmanOptions {
@@ -566,6 +638,7 @@ export interface DynamicStickmanOptions extends RenderStickmanOptions {
   frame?: number;
   fps?: number;
   isSpeaking?: boolean;
+  headTiltOffset?: number;
 }
 
 /**
@@ -622,8 +695,10 @@ export function buildDynamicStickmanSvgString(
   const baseTilt = bodyPose.head.tilt ?? 0;
 
   const speakingNod = isSpeaking ? Math.sin(frame / 3.5) * 2.2 : 0;
+  const headTiltOffset = options.headTiltOffset ?? 0;
   const organicTilt =
     baseTilt +
+    headTiltOffset +
     Math.sin(frame / 12) * 1.8 +
     (isSpeaking ? Math.sin(frame / 4) * 1.5 : 0);
 

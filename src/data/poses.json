@@ -4,11 +4,11 @@
   "totales": {
     "posesCorporales": 68,
     "expresionesFaciales": 24,
-    "propsGenerales": 90,
+    "propsGenerales": 97,
     "propsFestivos": 123,
-    "combinacionesCompuestas": 32,
+    "combinacionesCompuestas": 34,
     "combinacionesFestivas": 20,
-    "totalRecursos": 357
+    "totalRecursos": 366
   },
   "compatibilidadLegacy": {
     "normal": "standing_relaxed",
@@ -2432,6 +2432,51 @@
       "compatibleComposicion": true
     },
     {
+      "id": "prop_router",
+      "propParamId": "router",
+      "nombre": "Prop: Router Wi-Fi",
+      "categoria": "props",
+      "subcategoria": "tecnologia",
+      "emocion": "any",
+      "accion": "right",
+      "propsAsociados": [
+        "router"
+      ],
+      "ruta": "poses/props/prop_router.svg",
+      "formato": "svg",
+      "etiquetas": [
+        "router",
+        "wifi",
+        "internet",
+        "red",
+        "modem",
+        "conexion"
+      ],
+      "compatibleComposicion": true
+    },
+    {
+      "id": "prop_no_wifi",
+      "propParamId": "no_wifi",
+      "nombre": "Prop: Sin señal Wi-Fi",
+      "categoria": "props",
+      "subcategoria": "tecnologia",
+      "emocion": "any",
+      "accion": "overhead",
+      "propsAsociados": [
+        "no_wifi"
+      ],
+      "ruta": "poses/props/prop_no_wifi.svg",
+      "formato": "svg",
+      "etiquetas": [
+        "no_wifi",
+        "sin_internet",
+        "desconectado",
+        "corte",
+        "offline"
+      ],
+      "compatibleComposicion": true
+    },
+    {
       "id": "prop_mug",
       "propParamId": "mug",
       "nombre": "Prop: Taza caliente",
@@ -3588,6 +3633,119 @@
         "falso",
         "error",
         "no"
+      ],
+      "compatibleComposicion": true
+    },
+    {
+      "id": "prop_sandwich",
+      "propParamId": "sandwich",
+      "nombre": "Prop: Sándwich delicioso",
+      "categoria": "props",
+      "subcategoria": "naturaleza_alimentos",
+      "emocion": "any",
+      "accion": "right",
+      "propsAsociados": [
+        "sandwich"
+      ],
+      "ruta": "poses/props/prop_sandwich.svg",
+      "formato": "svg",
+      "etiquetas": [
+        "sandwich",
+        "comida",
+        "almuerzo",
+        "pan",
+        "snack",
+        "comer"
+      ],
+      "compatibleComposicion": true
+    },
+    {
+      "id": "prop_vent_grille",
+      "propParamId": "vent_grille",
+      "nombre": "Prop: Rejilla de ventilación",
+      "categoria": "props",
+      "subcategoria": "vida_cotidiana",
+      "emocion": "any",
+      "accion": "overhead",
+      "propsAsociados": [
+        "vent_grille"
+      ],
+      "ruta": "poses/props/prop_vent_grille.svg",
+      "formato": "svg",
+      "etiquetas": [
+        "rejilla",
+        "ventilacion",
+        "escape",
+        "ducto",
+        "techo"
+      ],
+      "compatibleComposicion": true
+    },
+    {
+      "id": "prop_emergency_lever",
+      "propParamId": "emergency_lever",
+      "nombre": "Prop: Palanca de emergencia",
+      "categoria": "props",
+      "subcategoria": "vida_cotidiana",
+      "emocion": "any",
+      "accion": "right",
+      "propsAsociados": [
+        "emergency_lever"
+      ],
+      "ruta": "poses/props/prop_emergency_lever.svg",
+      "formato": "svg",
+      "etiquetas": [
+        "palanca",
+        "emergencia",
+        "interruptor",
+        "seguridad",
+        "salida",
+        "puerta"
+      ],
+      "compatibleComposicion": true
+    },
+    {
+      "id": "prop_locked_door",
+      "propParamId": "locked_door",
+      "nombre": "Prop: Puerta bloqueada",
+      "categoria": "props",
+      "subcategoria": "vida_cotidiana",
+      "emocion": "any",
+      "accion": "both",
+      "propsAsociados": [
+        "locked_door"
+      ],
+      "ruta": "poses/props/prop_locked_door.svg",
+      "formato": "svg",
+      "etiquetas": [
+        "puerta",
+        "bloqueada",
+        "cerrada",
+        "candado",
+        "habitacion",
+        "escape"
+      ],
+      "compatibleComposicion": true
+    },
+    {
+      "id": "prop_water_puddle",
+      "propParamId": "water_puddle",
+      "nombre": "Prop: Charco de agua",
+      "categoria": "props",
+      "subcategoria": "naturaleza_alimentos",
+      "emocion": "any",
+      "accion": "both",
+      "propsAsociados": [
+        "water_puddle"
+      ],
+      "ruta": "poses/props/prop_water_puddle.svg",
+      "formato": "svg",
+      "etiquetas": [
+        "charco",
+        "inundacion",
+        "agua",
+        "piso",
+        "gotas"
       ],
       "compatibleComposicion": true
     },
@@ -7211,6 +7369,52 @@
         "apuntes",
         "notas",
         "estudio"
+      ],
+      "compatibleComposicion": true
+    },
+    {
+      "id": "frustrated_no_wifi",
+      "nombre": "Frustrado sin internet ni wifi",
+      "categoria": "compuestas",
+      "poseBase": "frustrated_head_grab",
+      "expresionBase": "frustrated",
+      "emocion": "frustrated",
+      "accion": "frustrated",
+      "propsAsociados": [
+        "router",
+        "no_wifi"
+      ],
+      "ruta": "poses/compuestas/frustrated_no_wifi.svg",
+      "formato": "svg",
+      "etiquetas": [
+        "frustrado",
+        "sin_internet",
+        "no_wifi",
+        "router",
+        "desesperacion"
+      ],
+      "compatibleComposicion": true
+    },
+    {
+      "id": "reading_book_peaceful",
+      "nombre": "Leyendo un libro en calma",
+      "categoria": "compuestas",
+      "poseBase": "holding_both_hands",
+      "expresionBase": "smile_soft",
+      "emocion": "happy",
+      "accion": "reading",
+      "propsAsociados": [
+        "open_book",
+        "idea_bulb"
+      ],
+      "ruta": "poses/compuestas/reading_book_peaceful.svg",
+      "formato": "svg",
+      "etiquetas": [
+        "leyendo",
+        "libro",
+        "calma",
+        "descubrimiento",
+        "paz"
       ],
       "compatibleComposicion": true
     },

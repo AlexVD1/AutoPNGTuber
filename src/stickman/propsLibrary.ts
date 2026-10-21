@@ -315,6 +315,22 @@ export const PROPS_LIBRARY: Record<string, PropDef> = {
     svg: `<path d="M -18 36 L 0 -18 L 18 36 M -10 14 L 10 14" stroke="${S}" stroke-width="6" stroke-linecap="round" stroke-linejoin="round" fill="none"/><circle cx="0" cy="-22" r="7" fill="#EF4444" stroke="${S}" stroke-width="4"/><path d="M -18 -32 Q -28 -22 -18 -12 M 18 -32 Q 28 -22 18 -12" stroke="#3B82F6" stroke-width="5" stroke-linecap="round" fill="none"/>`,
     tags: ["antena", "señal", "radio", "wifi", "telecomunicaciones"],
   },
+  router: {
+    id: "router",
+    name: "Router Wi-Fi",
+    family: "tecnologia",
+    defaultPlacement: "right",
+    svg: `<line x1="-20" y1="0" x2="-28" y2="-36" stroke="${S}" stroke-width="6" stroke-linecap="round"/><line x1="20" y1="0" x2="28" y2="-36" stroke="${S}" stroke-width="6" stroke-linecap="round"/><rect x="-36" y="0" width="72" height="32" rx="6" fill="#1E293B" stroke="${S}" stroke-width="6"/><circle cx="-22" cy="16" r="4" fill="#22C55E"/><circle cx="-10" cy="16" r="4" fill="#22C55E"/><circle cx="2" cy="16" r="4" fill="#EF4444"/><circle cx="14" cy="16" r="4" fill="#EF4444"/><path d="M 22 12 L 28 20 M 28 12 L 22 20" stroke="#EF4444" stroke-width="3" stroke-linecap="round"/>`,
+    tags: ["router", "wifi", "internet", "red", "modem", "conexion"],
+  },
+  no_wifi: {
+    id: "no_wifi",
+    name: "Sin señal Wi-Fi",
+    family: "tecnologia",
+    defaultPlacement: "overhead",
+    svg: `<circle cx="0" cy="0" r="32" fill="#FEE2E2" stroke="${S}" stroke-width="6"/><path d="M -20 -10 Q 0 -26 20 -10 M -14 -2 Q 0 -14 14 -2 M -7 6 Q 0 0 7 6" stroke="#94A3B8" stroke-width="5" stroke-linecap="round" fill="none"/><circle cx="0" cy="14" r="3.5" fill="#94A3B8"/><line x1="-24" y1="-24" x2="24" y2="24" stroke="#EF4444" stroke-width="7" stroke-linecap="round"/>`,
+    tags: ["no_wifi", "sin_internet", "desconectado", "corte", "offline"],
+  },
 
   // ===========================================================================
   // 3. VIDA COTIDIANA
@@ -762,5 +778,45 @@ export const PROPS_LIBRARY: Record<string, PropDef> = {
     defaultPlacement: "right",
     svg: `<circle cx="0" cy="0" r="28" fill="#EF4444" stroke="${S}" stroke-width="6"/><path d="M -11 -11 L 11 11 M 11 -11 L -11 11" stroke="#FFFFFF" stroke-width="8" stroke-linecap="round"/>`,
     tags: ["cruz", "incorrecto", "falso", "error", "no"],
+  },
+  sandwich: {
+    id: "sandwich",
+    name: "Sándwich delicioso",
+    family: "naturaleza_alimentos",
+    defaultPlacement: "right",
+    svg: `<path d="M -36 10 L 32 10 Q 36 10 36 16 L 34 24 Q 34 28 28 28 L -30 28 Q -36 28 -36 22 Z" fill="#D97706" stroke="${S}" stroke-width="5" stroke-linejoin="round"/><rect x="-32" y="4" width="64" height="8" rx="3" fill="#BE185D" stroke="${S}" stroke-width="4"/><polygon points="-24,6 4,6 -6,18" fill="#FACC15" stroke="${S}" stroke-width="4" stroke-linejoin="round"/><polygon points="10,6 28,6 20,16" fill="#FACC15" stroke="${S}" stroke-width="4" stroke-linejoin="round"/><path d="M -34 2 Q -26 -6 -18 2 Q -10 -6 -2 2 Q 6 -6 14 2 Q 22 -6 32 2" stroke="#22C55E" stroke-width="6" stroke-linecap="round" fill="none"/><circle cx="-16" cy="-2" r="6" fill="#EF4444" stroke="${S}" stroke-width="4"/><circle cx="8" cy="-2" r="6" fill="#EF4444" stroke="${S}" stroke-width="4"/><path d="M -34 -6 Q 0 -22 34 -6 L 32 2 Q 32 5 28 5 L -28 5 Q -34 5 -34 2 Z" fill="#F59E0B" stroke="${S}" stroke-width="5" stroke-linejoin="round"/><ellipse cx="-14" cy="-10" rx="2" ry="1" fill="#FEF08A"/><ellipse cx="6" cy="-12" rx="2" ry="1" fill="#FEF08A"/><ellipse cx="18" cy="-8" rx="2" ry="1" fill="#FEF08A"/>`,
+    tags: ["sandwich", "comida", "almuerzo", "pan", "snack", "comer"],
+  },
+  vent_grille: {
+    id: "vent_grille",
+    name: "Rejilla de ventilación",
+    family: "vida_cotidiana",
+    defaultPlacement: "overhead",
+    svg: `<rect x="-42" y="-36" width="84" height="72" rx="6" fill="#64748B" stroke="${S}" stroke-width="6"/><rect x="-32" y="-26" width="64" height="52" rx="3" fill="#0F172A" stroke="${S}" stroke-width="4"/><rect x="-28" y="-20" width="56" height="6" rx="2" fill="#94A3B8" stroke="${S}" stroke-width="3"/><rect x="-28" y="-9" width="56" height="6" rx="2" fill="#94A3B8" stroke="${S}" stroke-width="3"/><rect x="-28" y="2" width="56" height="6" rx="2" fill="#94A3B8" stroke="${S}" stroke-width="3"/><rect x="-28" y="13" width="56" height="6" rx="2" fill="#94A3B8" stroke="${S}" stroke-width="3"/><circle cx="-36" cy="-30" r="2.5" fill="#CBD5E1" stroke="${S}" stroke-width="2"/><circle cx="36" cy="-30" r="2.5" fill="#CBD5E1" stroke="${S}" stroke-width="2"/><circle cx="-36" cy="30" r="2.5" fill="#CBD5E1" stroke="${S}" stroke-width="2"/><circle cx="36" cy="30" r="2.5" fill="#CBD5E1" stroke="${S}" stroke-width="2"/>`,
+    tags: ["rejilla", "ventilacion", "escape", "ducto", "techo"],
+  },
+  emergency_lever: {
+    id: "emergency_lever",
+    name: "Palanca de emergencia",
+    family: "vida_cotidiana",
+    defaultPlacement: "right",
+    svg: `<rect x="-28" y="-38" width="56" height="76" rx="6" fill="#FACC15" stroke="${S}" stroke-width="6"/><path d="M -26 -30 L -12 -38 M -26 -16 L 4 -38 M -26 -2 L 20 -38 M -26 12 L 26 -24 M -20 26 L 26 -10 M -6 36 L 26 6" stroke="${S}" stroke-width="4" stroke-linecap="round"/><rect x="-18" y="-22" width="36" height="44" rx="4" fill="#334155" stroke="${S}" stroke-width="5"/><circle cx="0" cy="8" r="8" fill="#94A3B8" stroke="${S}" stroke-width="4"/><line x1="0" y1="8" x2="22" y2="-32" stroke="#EF4444" stroke-width="8" stroke-linecap="round"/><circle cx="22" cy="-32" r="10" fill="#DC2626" stroke="${S}" stroke-width="5"/><circle cx="20" cy="-34" r="3" fill="#FCA5A5"/>`,
+    tags: ["palanca", "emergencia", "interruptor", "seguridad", "salida", "puerta"],
+  },
+  locked_door: {
+    id: "locked_door",
+    name: "Puerta bloqueada",
+    family: "vida_cotidiana",
+    defaultPlacement: "both",
+    svg: `<rect x="-38" y="-48" width="76" height="96" rx="6" fill="#475569" stroke="${S}" stroke-width="6"/><rect x="-30" y="-40" width="60" height="80" rx="4" fill="#64748B" stroke="${S}" stroke-width="5"/><line x1="-30" y1="0" x2="30" y2="0" stroke="${S}" stroke-width="5"/><circle cx="-22" cy="-32" r="2.5" fill="#CBD5E1" stroke="${S}" stroke-width="2"/><circle cx="22" cy="-32" r="2.5" fill="#CBD5E1" stroke="${S}" stroke-width="2"/><circle cx="-22" cy="32" r="2.5" fill="#CBD5E1" stroke="${S}" stroke-width="2"/><circle cx="22" cy="32" r="2.5" fill="#CBD5E1" stroke="${S}" stroke-width="2"/><path d="M -10 6 L -10 -4 A 10 10 0 0 1 10 -4 L 10 6" fill="none" stroke="#94A3B8" stroke-width="6" stroke-linecap="round"/><rect x="-16" y="4" width="32" height="26" rx="4" fill="#EAB308" stroke="${S}" stroke-width="5"/><circle cx="0" cy="14" r="3" fill="${S}"/><polygon points="-2,15 2,15 3,22 -3,22" fill="${S}"/>`,
+    tags: ["puerta", "bloqueada", "cerrada", "candado", "habitacion", "escape"],
+  },
+  water_puddle: {
+    id: "water_puddle",
+    name: "Charco de agua",
+    family: "naturaleza_alimentos",
+    defaultPlacement: "both",
+    svg: `<ellipse cx="0" cy="8" rx="46" ry="20" fill="#38BDF8" stroke="${S}" stroke-width="6"/><ellipse cx="6" cy="4" rx="32" ry="12" fill="#7DD3FC" stroke="#0284C7" stroke-width="3"/><ellipse cx="14" cy="2" rx="16" ry="6" fill="#E0F2FE"/><circle cx="-32" cy="-14" r="5" fill="#38BDF8" stroke="${S}" stroke-width="3"/><circle cx="28" cy="-18" r="6" fill="#38BDF8" stroke="${S}" stroke-width="4"/><circle cx="38" cy="-4" r="4" fill="#38BDF8" stroke="${S}" stroke-width="3"/>`,
+    tags: ["charco", "inundacion", "agua", "piso", "gotas"],
   },
 };

@@ -54,6 +54,109 @@ export type TipoTransicion =
 
 export type EstiloLayout = "clasico" | "narrativo" | "compacto";
 
+export type TipoComposicionVisual =
+  | "minimalista"
+  | "escenario_ilustrado"
+  | "primer_plano"
+  | "plano_general"
+  | "cifras_concepto";
+
+export type TipoEscenario =
+  | "habitacion_noche"
+  | "laboratorio"
+  | "calle"
+  | "lunar"
+  | "vacio";
+
+export type TipoCurvaMovimiento =
+  | "lineal"
+  | "suave"
+  | "anticipacion"
+  | "rebote"
+  | "impacto";
+
+export type TipoMovimientoProcedural =
+  | "caminar"
+  | "temblar"
+  | "rebotar"
+  | "flotar"
+  | "recoil"
+  | "estatico";
+
+export type AccionPredefinidaTipo =
+  | "caminar_hacia"
+  | "detenerse_y_mirar"
+  | "acercarse_y_tocar"
+  | "sorpresa_y_retroceso"
+  | "tropezar_y_reaccionar"
+  | "mirar_y_reaccionar"
+  | "sonambulo_avanzar"
+  | "despertar_asustado"
+  | "guiar_amigo"
+  | "explicar_calma";
+
+export interface PasoAccion {
+  inicioFrame?: number;
+  finFrame?: number;
+  inicioProgreso?: number;
+  finProgreso?: number;
+  poseId?: string;
+  expresion?: string;
+  posicion?: { x?: number; y?: number };
+  deltaPosicion?: { x?: number; y?: number };
+  escala?: number;
+  orientacion?: OrientacionStickman;
+  curva?: TipoCurvaMovimiento;
+  prop?: string;
+  props?: StickmanPropsAttachment;
+  mirarHacia?: { x: number; y: number } | "objetivo";
+  procedural?: TipoMovimientoProcedural;
+}
+
+export interface AccionPersonaje {
+  tipo?: AccionPredefinidaTipo | "personalizada";
+  pasos?: PasoAccion[];
+  desdeX?: number;
+  haciaX?: number;
+  desdeY?: number;
+  haciaY?: number;
+  inicioFrame?: number;
+  duracionFrames?: number;
+  objetivoId?: string;
+}
+
+export interface PersonajeEscena {
+  id: string;
+  nombre?: string;
+  poseId?: string;
+  expresion?: string;
+  prop?: string;
+  props?: StickmanPropsAttachment;
+  efectoAmbiente?: EfectoAmbienteFestivo;
+  posicion?: { x?: number; y?: number };
+  escala?: number;
+  orientacion?: OrientacionStickman;
+  animacionEntrada?: AnimacionEntradaStickman;
+  acciones?: AccionPersonaje[];
+  habla?: boolean;
+  capaZ?: number;
+}
+
+export interface ObjetoEscena {
+  id: string;
+  propId: string;
+  posicion: { x: number; y: number };
+  escala?: number;
+  rotacion?: number;
+  capaZ?: number;
+  animacion?: {
+    tipo: "caer" | "flotar" | "vibrar" | "pulso" | "fijo";
+    inicioFrame?: number;
+    finFrame?: number;
+    deltaY?: number;
+  };
+}
+
 export interface EscenaGuion {
   id: number;
   texto: string;
@@ -96,6 +199,14 @@ export interface EscenaGuion {
   volumenSfx?: number;
   /** Palabras clave para destacar con jerarquía tipográfica */
   palabrasClave?: string[];
+  /** Tipo de encuadre y composición narrativa */
+  composicionVisual?: TipoComposicionVisual;
+  /** Tipo de escenario ilustrado de fondo */
+  escenario?: TipoEscenario;
+  /** Múltiples personajes actuando de forma sincronizada en la escena */
+  personajes?: PersonajeEscena[];
+  /** Objetos o props interactivos presentes en el escenario */
+  objetos?: ObjetoEscena[];
 }
 
 export type ShortProps = {

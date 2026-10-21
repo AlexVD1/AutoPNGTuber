@@ -45,6 +45,12 @@ export interface StickmanProps {
   animacionEntrada?: AnimacionEntradaStickman;
   /** Sincronía labial opcional con el audio de la escena */
   palabras?: PalabraTiming[];
+  /** Inclinación o cabeceo de cabeza procedural */
+  headTiltOffset?: number;
+  /** Vibración o temblor horizontal procedural adicional */
+  vibrationOffset?: number;
+  /** Forzar si el personaje está hablando o en silencio */
+  overrideIsSpeaking?: boolean;
 }
 
 const ALERT_KEYWORDS = [
@@ -77,6 +83,9 @@ export const Stickman: React.FC<StickmanProps> = ({
   posicion,
   animacionEntrada = "rebote",
   palabras,
+  headTiltOffset = 0,
+  vibrationOffset = 0,
+  overrideIsSpeaking,
 }) => {
   const frame = useCurrentFrame();
   const { fps } = useVideoConfig();
@@ -86,13 +95,16 @@ export const Stickman: React.FC<StickmanProps> = ({
   // Detección determinista de si el personaje está hablando activamente
   const currentTimeMs = (frame / fps) * 1000;
   const isSpeaking = useMemo(() => {
+    if (overrideIsSpeaking !== undefined) {
+      return overrideIsSpeaking;
+    }
     if (!palabras || palabras.length === 0) {
       return frame > 4;
     }
     return palabras.some(
       (p) => currentTimeMs >= p.inicioMs && currentTimeMs <= p.finMs + 60
     );
-  }, [palabras, currentTimeMs, frame]);
+  }, [overrideIsSpeaking, palabras, currentTimeMs, frame]);
 
   const resolved = useMemo(
     () =>
@@ -183,7 +195,8 @@ export const Stickman: React.FC<StickmanProps> = ({
   }
 
   const flipMultiplier = orientacion === "izquierda" ? -1 : 1;
-  const finalTranslateX = (posicion?.x ?? 0) + animTranslateX + vibrationX;
+  const finalTranslateX =
+    (posicion?.x ?? 0) + animTranslateX + vibrationX + vibrationOffset;
   const finalTranslateY =
     (posicion?.y ?? 0) + animTranslateY + breathTranslateY;
   const finalScaleX = animScaleX * escala * flipMultiplier;
@@ -205,6 +218,7 @@ export const Stickman: React.FC<StickmanProps> = ({
         frame,
         fps,
         isSpeaking,
+        headTiltOffset,
       }),
     [
       targetPoseKey,
@@ -221,6 +235,7 @@ export const Stickman: React.FC<StickmanProps> = ({
       frame,
       fps,
       isSpeaking,
+      headTiltOffset,
     ]
   );
 
