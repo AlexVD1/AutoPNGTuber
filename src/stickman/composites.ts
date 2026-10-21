@@ -561,3 +561,163 @@ export function buildStickmanSvgString(options: RenderStickmanOptions): string {
   ${overheadPropSvg}
 </svg>`;
 }
+
+export interface DynamicStickmanOptions extends RenderStickmanOptions {
+  frame?: number;
+  fps?: number;
+  isSpeaking?: boolean;
+}
+
+/**
+ * Generador SVG determinista con micro-animaciones procedurales en tiempo real:
+ * - Parpadeo orgánico (blink) cada ~75 frames.
+ * - Sincronía labial orgánica (lip-sync PNGTuber) cuando habla.
+ * - Cabeceo y tilt de cabeza expresivo.
+ * - Micro-gesticulación de brazos y props vinculados a las articulaciones de los hombros.
+ * - Respiración sutil en sombras y accesorios.
+ */
+export function buildDynamicStickmanSvgString(
+  options: DynamicStickmanOptions
+): string {
+  const {
+    bodyPose,
+    expression,
+    rightProp,
+    leftProp,
+    overheadProp,
+    hatProp,
+    faceProp,
+    neckProp,
+    waistProp,
+    efectoAmbiente,
+  } = resolveStickmanConfig(options);
+
+  const frame = options.frame ?? 0;
+  const isSpeaking = options.isSpeaking ?? false;
+  const stroke = "#111827";
+
+  // 1. Parpadeo orgánico: cada ~75 frames (~2.5s a 30fps), parpadea durante 3 frames
+  const isBlinking = ((frame + 28) % 75) < 3;
+  const dynamicExpr = { ...expression };
+  if (isBlinking && expression.eyes !== "closed") {
+    dynamicExpr.eyes = "happy_arc" as any;
+  }
+
+  // 2. Modulación de boca al hablar (PNGTuber lip-sync determinista)
+  if (isSpeaking) {
+    const mouthCycle = Math.floor(frame / 4) % 3;
+    if (mouthCycle === 0) {
+      dynamicExpr.mouth = "talking";
+    } else if (mouthCycle === 1) {
+      dynamicExpr.mouth =
+        expression.mouth === "talking" ? "smile_wide" : expression.mouth;
+    } else {
+      dynamicExpr.mouth = "surprised_o";
+    }
+  }
+
+  // 3. Cabeceo e inclinación viva de la cabeza
+  const hx = bodyPose.head.cx;
+  const hy = bodyPose.head.cy;
+  const baseTilt = bodyPose.head.tilt ?? 0;
+
+  const speakingNod = isSpeaking ? Math.sin(frame / 3.5) * 2.2 : 0;
+  const organicTilt =
+    baseTilt +
+    Math.sin(frame / 12) * 1.8 +
+    (isSpeaking ? Math.sin(frame / 4) * 1.5 : 0);
+
+  const faceTranslateX = hx - 200;
+  const faceTranslateY = hy - 115 + speakingNod;
+  const headTransform = `translate(${faceTranslateX}, ${faceTranslateY}) rotate(${organicTilt}, 200, 115)`;
+
+  const faceSvg = renderFaceMarkup(dynamicExpr, stroke);
+
+  // 4. Micro-gesticulación de brazos alrededor de los hombros (200, 210)
+  const leftGestureAngle =
+    Math.sin(frame / 9) * 2.4 + (isSpeaking ? Math.sin(frame / 4) * 2.2 : 0);
+  const rightGestureAngle =
+    Math.cos(frame / 9) * 2.4 + (isSpeaking ? Math.cos(frame / 4) * 2.2 : 0);
+
+  // Accesorios corporales
+  const isCape = neckProp?.id === "vampire_cape";
+  const backNeckSvg =
+    neckProp && isCape
+      ? `<g transform="translate(${hx}, ${hy + 72 + speakingNod})">${neckProp.svg}</g>`
+      : "";
+  const frontNeckSvg =
+    neckProp && !isCape
+      ? `<g transform="translate(${hx}, ${hy + 72 + speakingNod})">${neckProp.svg}</g>`
+      : "";
+  const waistSvg = waistProp
+    ? `<g transform="translate(200, 290)">${waistProp.svg}</g>`
+    : "";
+
+  // Accesorios de cabeza y cara (siguen el cabeceo e inclinación de la cabeza)
+  const faceAccessorySvg = faceProp
+    ? `<g transform="translate(200, 115)">${faceProp.svg}</g>`
+    : "";
+  const hatAccessorySvg = hatProp
+    ? `<g transform="translate(200, 47)">${hatProp.svg}</g>`
+    : "";
+
+  const leftPropSvg = leftProp
+    ? `<g transform="translate(${bodyPose.hands.left.x}, ${bodyPose.hands.left.y}) rotate(${bodyPose.hands.left.angle ?? 0})">${leftProp.svg}</g>`
+    : "";
+
+  const rightPropSvg = rightProp
+    ? `<g transform="translate(${bodyPose.hands.right.x}, ${bodyPose.hands.right.y}) rotate(${bodyPose.hands.right.angle ?? 0})">${rightProp.svg}</g>`
+    : "";
+
+  const overheadX = bodyPose.overhead.x === 200 ? 282 : bodyPose.overhead.x;
+  const overheadY = bodyPose.overhead.y < 45 ? 48 : bodyPose.overhead.y;
+
+  const overheadPropSvg = overheadProp
+    ? `<g transform="translate(${overheadX}, ${overheadY + speakingNod * 0.5})">${overheadProp.svg}</g>`
+    : "";
+
+  const ambientSvg =
+    efectoAmbiente && AMBIENT_EFFECTS[efectoAmbiente]
+      ? AMBIENT_EFFECTS[efectoAmbiente]
+      : "";
+
+  const shadowRx = 85 + Math.sin(frame / 8) * 3;
+
+  return `<svg width="500" height="620" viewBox="-35 -40 470 545" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Efectos festivos de ambiente opcionales -->
+  ${ambientSvg}
+  <!-- Sombra base dinámica -->
+  <ellipse cx="200" cy="472" rx="${shadowRx}" ry="14" fill="#E5E7EB" />
+  <!-- Capa trasera si aplica -->
+  ${backNeckSvg}
+  <!-- Piernas -->
+  <path d="${bodyPose.legs}" stroke="${stroke}" stroke-width="12" stroke-linecap="round" stroke-linejoin="round" />
+  <!-- Torso -->
+  <path d="${bodyPose.torso}" stroke="${stroke}" stroke-width="12" stroke-linecap="round" stroke-linejoin="round" />
+  <!-- Accesorios de cintura -->
+  ${waistSvg}
+  <!-- Brazo izquierdo y prop gesticulando orgánicamente desde el hombro (200, 210) -->
+  <g transform="rotate(${leftGestureAngle}, 200, 210)">
+    <path d="${bodyPose.leftArm}" stroke="${stroke}" stroke-width="12" stroke-linecap="round" stroke-linejoin="round" />
+    ${leftPropSvg}
+  </g>
+  <!-- Brazo derecho y prop gesticulando orgánicamente desde el hombro (200, 210) -->
+  <g transform="rotate(${rightGestureAngle}, 200, 210)">
+    <path d="${bodyPose.rightArm}" stroke="${stroke}" stroke-width="12" stroke-linecap="round" stroke-linejoin="round" />
+    ${rightPropSvg}
+  </g>
+  <!-- Accesorios de cuello delanteros -->
+  ${frontNeckSvg}
+  <!-- Accesorios de postura -->
+  ${bodyPose.accents ?? ""}
+  <!-- Cabeza, expresion facial y accesorios de cabeza/cara -->
+  <g transform="${headTransform}">
+    <circle cx="200" cy="115" r="68" fill="#FFFFFF" stroke="${stroke}" stroke-width="12" />
+    ${faceSvg}
+    ${faceAccessorySvg}
+    ${hatAccessorySvg}
+  </g>
+  <!-- Prop superior overhead -->
+  ${overheadPropSvg}
+</svg>`;
+}

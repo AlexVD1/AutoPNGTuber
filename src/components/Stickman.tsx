@@ -10,11 +10,13 @@ import {
 import {
   AnimacionEntradaStickman,
   OrientacionStickman,
+  PalabraTiming,
   Pose,
   StickmanPropsAttachment,
 } from "../types";
 import { EfectoAmbienteFestivo } from "../stickman/festiveLibrary";
 import {
+  buildDynamicStickmanSvgString,
   buildStickmanSvgString,
   resolveStickmanConfig,
 } from "../stickman/composites";
@@ -41,6 +43,8 @@ export interface StickmanProps {
   posicion?: { x?: number; y?: number };
   /** Animación determinista de entrada */
   animacionEntrada?: AnimacionEntradaStickman;
+  /** Sincronía labial opcional con el audio de la escena */
+  palabras?: PalabraTiming[];
 }
 
 const ALERT_KEYWORDS = [
@@ -72,11 +76,23 @@ export const Stickman: React.FC<StickmanProps> = ({
   escala = 1,
   posicion,
   animacionEntrada = "rebote",
+  palabras,
 }) => {
   const frame = useCurrentFrame();
   const { fps } = useVideoConfig();
 
   const targetPoseKey = poseId || pose || "normal";
+
+  // Detección determinista de si el personaje está hablando activamente
+  const currentTimeMs = (frame / fps) * 1000;
+  const isSpeaking = useMemo(() => {
+    if (!palabras || palabras.length === 0) {
+      return frame > 4;
+    }
+    return palabras.some(
+      (p) => currentTimeMs >= p.inicioMs && currentTimeMs <= p.finMs + 60
+    );
+  }, [palabras, currentTimeMs, frame]);
 
   const resolved = useMemo(
     () =>
@@ -175,7 +191,7 @@ export const Stickman: React.FC<StickmanProps> = ({
 
   const svgMarkup = useMemo(
     () =>
-      buildStickmanSvgString({
+      buildDynamicStickmanSvgString({
         poseId: targetPoseKey,
         expressionId: expresion,
         rightProp: props?.derecha ?? prop,
@@ -186,6 +202,9 @@ export const Stickman: React.FC<StickmanProps> = ({
         neckProp: props?.cuello,
         waistProp: props?.cintura,
         efectoAmbiente,
+        frame,
+        fps,
+        isSpeaking,
       }),
     [
       targetPoseKey,
@@ -199,6 +218,9 @@ export const Stickman: React.FC<StickmanProps> = ({
       props?.cuello,
       props?.cintura,
       efectoAmbiente,
+      frame,
+      fps,
+      isSpeaking,
     ]
   );
 

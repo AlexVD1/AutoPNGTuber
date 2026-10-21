@@ -1,447 +1,517 @@
 {
   "escena_1": {
-    "sha256": "91c3ea9357ea84f1a781b9900d04f657ee039ba51eb3890262c3154e56f8c857",
-    "texto": "¿Qué pasaría si la Tierra dejara de girar por solo un segundo?",
+    "sha256": "5f4126dd7255398a9893660073733c41007d97eb3410a14827302638794f01cc",
+    "texto": "¿Qué pasaría si despertaras a un sonámbulo?",
     "voiceConds": "alex.conds.pt",
-    "duracionSegundos": 3.658,
+    "duracionSegundos": 3.034,
     "palabras": [
       {
         "palabra": "Qué",
         "inicioMs": 0,
-        "finMs": 160
+        "finMs": 180
       },
       {
         "palabra": "pasaría",
-        "inicioMs": 160,
-        "finMs": 640
+        "inicioMs": 180,
+        "finMs": 660
       },
       {
         "palabra": "si",
-        "inicioMs": 640,
-        "finMs": 860
+        "inicioMs": 660,
+        "finMs": 940
       },
       {
-        "palabra": "la",
-        "inicioMs": 860,
-        "finMs": 1000
+        "palabra": "despertaras",
+        "inicioMs": 940,
+        "finMs": 1620
       },
       {
-        "palabra": "Tierra",
-        "inicioMs": 1000,
-        "finMs": 1260
-      },
-      {
-        "palabra": "dejara",
-        "inicioMs": 1260,
-        "finMs": 1660
-      },
-      {
-        "palabra": "de",
-        "inicioMs": 1660,
+        "palabra": "a",
+        "inicioMs": 1620,
         "finMs": 1800
       },
       {
-        "palabra": "girar",
-        "inicioMs": 1800,
-        "finMs": 2080
-      },
-      {
-        "palabra": "por",
-        "inicioMs": 2080,
-        "finMs": 2240
-      },
-      {
-        "palabra": "solo",
-        "inicioMs": 2240,
-        "finMs": 2500
-      },
-      {
         "palabra": "un",
-        "inicioMs": 2500,
-        "finMs": 2740
+        "inicioMs": 1800,
+        "finMs": 1940
       },
       {
-        "palabra": "segundo",
-        "inicioMs": 2740,
-        "finMs": 3180
+        "palabra": "sonámbulo",
+        "inicioMs": 1940,
+        "finMs": 2540
       }
     ]
   },
   "escena_2": {
-    "sha256": "9f3499876547a89336d09e5395cd7ddeda5658454e21fe2d765e0a49483b0f06",
-    "texto": "En el ecuador nos movemos a mil seiscientos kilómetros por hora.",
+    "sha256": "0348e75e55b3d2c72b25fd5c49edda00740353d93404846bf301013de023f091",
+    "texto": "Imagínate ver a tu amigo caminando dormido por la casa, con los ojos abiertos, ¡pero completamente inconsciente!",
     "voiceConds": "alex.conds.pt",
-    "duracionSegundos": 4.21,
+    "duracionSegundos": 7.258,
     "palabras": [
       {
-        "palabra": "En",
+        "palabra": "Imagínate",
         "inicioMs": 0,
-        "finMs": 220
+        "finMs": 760
       },
       {
-        "palabra": "el",
-        "inicioMs": 220,
-        "finMs": 340
-      },
-      {
-        "palabra": "ecuador",
-        "inicioMs": 340,
-        "finMs": 720
-      },
-      {
-        "palabra": "nos",
-        "inicioMs": 1020,
-        "finMs": 1140
-      },
-      {
-        "palabra": "movemos",
-        "inicioMs": 1140,
-        "finMs": 1600
+        "palabra": "ver",
+        "inicioMs": 760,
+        "finMs": 960
       },
       {
         "palabra": "a",
-        "inicioMs": 1600,
-        "finMs": 1800
+        "inicioMs": 960,
+        "finMs": 1080
       },
       {
-        "palabra": "mil",
-        "inicioMs": 1800,
-        "finMs": 1920
+        "palabra": "tu",
+        "inicioMs": 1080,
+        "finMs": 1220
       },
       {
-        "palabra": "seiscientos",
-        "inicioMs": 1920,
-        "finMs": 2440
+        "palabra": "amigo",
+        "inicioMs": 1220,
+        "finMs": 1460
       },
       {
-        "palabra": "kilómetros",
-        "inicioMs": 2440,
-        "finMs": 3160
+        "palabra": "caminando",
+        "inicioMs": 1460,
+        "finMs": 2140
+      },
+      {
+        "palabra": "dormido",
+        "inicioMs": 2140,
+        "finMs": 2600
       },
       {
         "palabra": "por",
-        "inicioMs": 3160,
-        "finMs": 3460
+        "inicioMs": 2600,
+        "finMs": 2800
       },
       {
-        "palabra": "hora",
-        "inicioMs": 3460,
-        "finMs": 3720
+        "palabra": "la",
+        "inicioMs": 2800,
+        "finMs": 2980
+      },
+      {
+        "palabra": "casa",
+        "inicioMs": 2980,
+        "finMs": 3300
+      },
+      {
+        "palabra": "con",
+        "inicioMs": 3540,
+        "finMs": 3620
+      },
+      {
+        "palabra": "los",
+        "inicioMs": 3620,
+        "finMs": 3780
+      },
+      {
+        "palabra": "ojos",
+        "inicioMs": 3780,
+        "finMs": 4040
+      },
+      {
+        "palabra": "abiertos",
+        "inicioMs": 4040,
+        "finMs": 4720
+      },
+      {
+        "palabra": "pero",
+        "inicioMs": 5020,
+        "finMs": 5200
+      },
+      {
+        "palabra": "completamente",
+        "inicioMs": 5200,
+        "finMs": 5840
+      },
+      {
+        "palabra": "inconsciente",
+        "inicioMs": 5840,
+        "finMs": 6760
       }
     ]
   },
   "escena_3": {
-    "sha256": "f6e374f201381315c6835da266920bfe7bba188775f0594beea5b7f7e467e5e5",
-    "texto": "Si el planeta frena de golpe, la inercia nos lanzaría al instante.",
+    "sha256": "01be27a79d03f8b4c3e3aa8e21853c222b6e9064d39cb93daa069bae788abd30",
+    "texto": "De pronto, decides despertarlo.",
     "voiceConds": "alex.conds.pt",
-    "duracionSegundos": 4.426,
+    "duracionSegundos": 2.746,
     "palabras": [
       {
-        "palabra": "Si",
-        "inicioMs": 0,
-        "finMs": 140
-      },
-      {
-        "palabra": "el",
-        "inicioMs": 140,
-        "finMs": 260
-      },
-      {
-        "palabra": "planeta",
-        "inicioMs": 260,
-        "finMs": 540
-      },
-      {
-        "palabra": "frena",
-        "inicioMs": 540,
-        "finMs": 1020
-      },
-      {
-        "palabra": "de",
-        "inicioMs": 1020,
-        "finMs": 1100
-      },
-      {
-        "palabra": "golpe",
-        "inicioMs": 1100,
-        "finMs": 1440
-      },
-      {
-        "palabra": "la",
-        "inicioMs": 1800,
-        "finMs": 1960
-      },
-      {
-        "palabra": "inercia",
-        "inicioMs": 1960,
-        "finMs": 2460
-      },
-      {
-        "palabra": "nos",
-        "inicioMs": 2460,
-        "finMs": 2620
-      },
-      {
-        "palabra": "lanzaría",
-        "inicioMs": 2620,
-        "finMs": 3140
-      },
-      {
-        "palabra": "al",
-        "inicioMs": 3140,
-        "finMs": 3360
-      },
-      {
-        "palabra": "instante",
-        "inicioMs": 3360,
-        "finMs": 3940
-      }
-    ]
-  },
-  "escena_4": {
-    "sha256": "0d0c30c75f067a254aa0ab65d5e7d2ca6cd489b629eeb6220ef714d9455256c4",
-    "texto": "Edificios, personas y océanos saldrían disparados hacia el este.",
-    "voiceConds": "alex.conds.pt",
-    "duracionSegundos": 4.762,
-    "palabras": [
-      {
-        "palabra": "Edificios",
-        "inicioMs": 0,
-        "finMs": 800
-      },
-      {
-        "palabra": "personas",
-        "inicioMs": 1120,
-        "finMs": 1520
-      },
-      {
-        "palabra": "y",
-        "inicioMs": 1520,
-        "finMs": 1760
-      },
-      {
-        "palabra": "océanos",
-        "inicioMs": 1760,
-        "finMs": 2260
-      },
-      {
-        "palabra": "saldrían",
-        "inicioMs": 2560,
-        "finMs": 2960
-      },
-      {
-        "palabra": "disparados",
-        "inicioMs": 2960,
-        "finMs": 3580
-      },
-      {
-        "palabra": "hacia",
-        "inicioMs": 3580,
-        "finMs": 3860
-      },
-      {
-        "palabra": "el",
-        "inicioMs": 3860,
-        "finMs": 4020
-      },
-      {
-        "palabra": "este",
-        "inicioMs": 4020,
-        "finMs": 4280
-      }
-    ]
-  },
-  "escena_5": {
-    "sha256": "8234e6d58fe465663ceb0a473f0c8edf99de120dcd09cd31f605f3ddbc5a224d",
-    "texto": "Se formarían olas gigantescas arrasando continentes enteros.",
-    "voiceConds": "alex.conds.pt",
-    "duracionSegundos": 4.714,
-    "palabras": [
-      {
-        "palabra": "Se",
-        "inicioMs": 0,
-        "finMs": 120
-      },
-      {
-        "palabra": "formarían",
-        "inicioMs": 120,
-        "finMs": 800
-      },
-      {
-        "palabra": "olas",
-        "inicioMs": 800,
-        "finMs": 1280
-      },
-      {
-        "palabra": "gigantescas",
-        "inicioMs": 1280,
-        "finMs": 2040
-      },
-      {
-        "palabra": "arrasando",
-        "inicioMs": 2400,
-        "finMs": 2900
-      },
-      {
-        "palabra": "continentes",
-        "inicioMs": 2900,
-        "finMs": 3560
-      },
-      {
-        "palabra": "enteros",
-        "inicioMs": 3560,
-        "finMs": 4220
-      }
-    ]
-  },
-  "escena_6": {
-    "sha256": "496f790f29c241ce697549f93bab7bd3a8927226c20d2b07256cfdd3054eb289",
-    "texto": "Y al reanudar el giro un segundo después, el choque sería catastrófico.",
-    "voiceConds": "alex.conds.pt",
-    "duracionSegundos": 4.738,
-    "palabras": [
-      {
-        "palabra": "Y",
+        "palabra": "De",
         "inicioMs": 0,
         "finMs": 180
       },
       {
-        "palabra": "al",
+        "palabra": "pronto",
         "inicioMs": 180,
-        "finMs": 320
+        "finMs": 580
       },
       {
-        "palabra": "reanudar",
-        "inicioMs": 320,
-        "finMs": 800
-      },
-      {
-        "palabra": "el",
-        "inicioMs": 800,
-        "finMs": 920
-      },
-      {
-        "palabra": "giro",
-        "inicioMs": 920,
+        "palabra": "decides",
+        "inicioMs": 940,
         "finMs": 1180
       },
       {
-        "palabra": "un",
+        "palabra": "despertarlo",
         "inicioMs": 1180,
-        "finMs": 1360
+        "finMs": 2260
+      }
+    ]
+  },
+  "escena_4": {
+    "sha256": "442173dab17572a1f90184c5a2eec2f85410ce6ae22b4609052522148915dafd",
+    "texto": "Se levanta confundido, desorientado y sin entender qué está pasando.",
+    "voiceConds": "alex.conds.pt",
+    "duracionSegundos": 4.234,
+    "palabras": [
+      {
+        "palabra": "Se",
+        "inicioMs": 0,
+        "finMs": 160
       },
       {
-        "palabra": "segundo",
-        "inicioMs": 1360,
-        "finMs": 1700
+        "palabra": "levanta",
+        "inicioMs": 160,
+        "finMs": 580
       },
       {
-        "palabra": "después",
-        "inicioMs": 1700,
-        "finMs": 2180
+        "palabra": "confundido",
+        "inicioMs": 580,
+        "finMs": 1260
       },
       {
-        "palabra": "el",
+        "palabra": "desorientado",
+        "inicioMs": 1560,
+        "finMs": 2280
+      },
+      {
+        "palabra": "y",
+        "inicioMs": 2280,
+        "finMs": 2520
+      },
+      {
+        "palabra": "sin",
+        "inicioMs": 2520,
+        "finMs": 2660
+      },
+      {
+        "palabra": "entender",
+        "inicioMs": 2660,
+        "finMs": 3060
+      },
+      {
+        "palabra": "qué",
+        "inicioMs": 3060,
+        "finMs": 3260
+      },
+      {
+        "palabra": "está",
+        "inicioMs": 3260,
+        "finMs": 3420
+      },
+      {
+        "palabra": "pasando",
+        "inicioMs": 3420,
+        "finMs": 3720
+      }
+    ]
+  },
+  "escena_5": {
+    "sha256": "cfe6c478112fc3cd1640c9f1266efd7a0432ff967bedd1b27f056ab13db02491",
+    "texto": "Pero aquí viene lo curioso: despertar a un sonámbulo no suele ser peligroso por sí mismo. El problema es que podría asustarse, reaccionar de forma inesperada o lastimarse.",
+    "voiceConds": "alex.conds.pt",
+    "duracionSegundos": 11.77,
+    "palabras": [
+      {
+        "palabra": "Pero",
+        "inicioMs": 0,
+        "finMs": 320
+      },
+      {
+        "palabra": "aquí",
+        "inicioMs": 320,
+        "finMs": 700
+      },
+      {
+        "palabra": "viene",
+        "inicioMs": 700,
+        "finMs": 1240
+      },
+      {
+        "palabra": "lo",
+        "inicioMs": 1240,
+        "finMs": 1460
+      },
+      {
+        "palabra": "curioso",
+        "inicioMs": 1460,
+        "finMs": 1940
+      },
+      {
+        "palabra": "despertar",
+        "inicioMs": 2300,
+        "finMs": 2740
+      },
+      {
+        "palabra": "a",
         "inicioMs": 2740,
-        "finMs": 2860
+        "finMs": 2900
       },
       {
-        "palabra": "choque",
-        "inicioMs": 2860,
-        "finMs": 3180
+        "palabra": "un",
+        "inicioMs": 2900,
+        "finMs": 3020
       },
       {
-        "palabra": "sería",
-        "inicioMs": 3180,
-        "finMs": 3460
+        "palabra": "sonámbulo",
+        "inicioMs": 3020,
+        "finMs": 3540
       },
       {
-        "palabra": "catastrófico",
-        "inicioMs": 3460,
-        "finMs": 4260
+        "palabra": "no",
+        "inicioMs": 3780,
+        "finMs": 3860
+      },
+      {
+        "palabra": "suele",
+        "inicioMs": 3860,
+        "finMs": 4200
+      },
+      {
+        "palabra": "ser",
+        "inicioMs": 4200,
+        "finMs": 4440
+      },
+      {
+        "palabra": "peligroso",
+        "inicioMs": 4440,
+        "finMs": 5020
+      },
+      {
+        "palabra": "por",
+        "inicioMs": 5020,
+        "finMs": 5200
+      },
+      {
+        "palabra": "sí",
+        "inicioMs": 5200,
+        "finMs": 5360
+      },
+      {
+        "palabra": "mismo",
+        "inicioMs": 5360,
+        "finMs": 5760
+      },
+      {
+        "palabra": "El",
+        "inicioMs": 6340,
+        "finMs": 6520
+      },
+      {
+        "palabra": "problema",
+        "inicioMs": 6520,
+        "finMs": 6880
+      },
+      {
+        "palabra": "es",
+        "inicioMs": 6880,
+        "finMs": 7200
+      },
+      {
+        "palabra": "que",
+        "inicioMs": 7200,
+        "finMs": 7320
+      },
+      {
+        "palabra": "podría",
+        "inicioMs": 7320,
+        "finMs": 7680
+      },
+      {
+        "palabra": "asustarse",
+        "inicioMs": 7680,
+        "finMs": 8300
+      },
+      {
+        "palabra": "reaccionar",
+        "inicioMs": 8740,
+        "finMs": 9180
+      },
+      {
+        "palabra": "de",
+        "inicioMs": 9180,
+        "finMs": 9400
+      },
+      {
+        "palabra": "forma",
+        "inicioMs": 9400,
+        "finMs": 9700
+      },
+      {
+        "palabra": "inesperada",
+        "inicioMs": 9700,
+        "finMs": 10380
+      },
+      {
+        "palabra": "o",
+        "inicioMs": 10380,
+        "finMs": 10700
+      },
+      {
+        "palabra": "lastimarse",
+        "inicioMs": 10700,
+        "finMs": 11300
+      }
+    ]
+  },
+  "escena_6": {
+    "sha256": "4cc08e06e2b8a0c5539327f1dedd9b19148cc0ab7749c7ecbc373482c3ac51f3",
+    "texto": "Lo mejor es guiarlo suavemente de regreso a la cama.",
+    "voiceConds": "alex.conds.pt",
+    "duracionSegundos": 3.034,
+    "palabras": [
+      {
+        "palabra": "Lo",
+        "inicioMs": 0,
+        "finMs": 200
+      },
+      {
+        "palabra": "mejor",
+        "inicioMs": 200,
+        "finMs": 480
+      },
+      {
+        "palabra": "es",
+        "inicioMs": 480,
+        "finMs": 720
+      },
+      {
+        "palabra": "guiarlo",
+        "inicioMs": 720,
+        "finMs": 1140
+      },
+      {
+        "palabra": "suavemente",
+        "inicioMs": 1140,
+        "finMs": 1720
+      },
+      {
+        "palabra": "de",
+        "inicioMs": 1720,
+        "finMs": 1880
+      },
+      {
+        "palabra": "regreso",
+        "inicioMs": 1880,
+        "finMs": 2300
+      },
+      {
+        "palabra": "a",
+        "inicioMs": 2300,
+        "finMs": 2400
+      },
+      {
+        "palabra": "la",
+        "inicioMs": 2400,
+        "finMs": 2480
+      },
+      {
+        "palabra": "cama",
+        "inicioMs": 2480,
+        "finMs": 2640
       }
     ]
   },
   "escena_7": {
-    "sha256": "a92a72a0cebc17a7f15c90bc66223fcd6840a667d74155bc46f1700b3d634587",
-    "texto": "Por suerte, la física del espacio nos mantendrá girando por miles de millones de años.",
+    "sha256": "83917331bde091de066a69bb613d640f2f7542f3abe7be4fb5e86777945cf12b",
+    "texto": "Así que, si ves a alguien sonámbulo, ¡nada de sustos! Mejor conviértete en su guía nocturno.",
     "voiceConds": "alex.conds.pt",
-    "duracionSegundos": 5.674,
+    "duracionSegundos": 6.298,
     "palabras": [
       {
-        "palabra": "Por",
+        "palabra": "Así",
         "inicioMs": 0,
-        "finMs": 220
+        "finMs": 320
       },
       {
-        "palabra": "suerte",
-        "inicioMs": 220,
-        "finMs": 740
+        "palabra": "que",
+        "inicioMs": 320,
+        "finMs": 560
       },
       {
-        "palabra": "la",
-        "inicioMs": 1000,
+        "palabra": "si",
+        "inicioMs": 560,
         "finMs": 1120
       },
       {
-        "palabra": "física",
+        "palabra": "ves",
         "inicioMs": 1120,
-        "finMs": 1420
+        "finMs": 1260
       },
       {
-        "palabra": "del",
-        "inicioMs": 1420,
-        "finMs": 1700
+        "palabra": "a",
+        "inicioMs": 1260,
+        "finMs": 1460
       },
       {
-        "palabra": "espacio",
-        "inicioMs": 1700,
-        "finMs": 2160
+        "palabra": "alguien",
+        "inicioMs": 1460,
+        "finMs": 1640
       },
       {
-        "palabra": "nos",
-        "inicioMs": 2160,
-        "finMs": 2360
+        "palabra": "sonámbulo",
+        "inicioMs": 1640,
+        "finMs": 2280
       },
       {
-        "palabra": "mantendrá",
-        "inicioMs": 2360,
-        "finMs": 2940
+        "palabra": "nada",
+        "inicioMs": 2520,
+        "finMs": 2800
       },
       {
-        "palabra": "girando",
-        "inicioMs": 2940,
-        "finMs": 3480
+        "palabra": "de",
+        "inicioMs": 2800,
+        "finMs": 2960
       },
       {
-        "palabra": "por",
-        "inicioMs": 3480,
-        "finMs": 3700
+        "palabra": "sustos",
+        "inicioMs": 2960,
+        "finMs": 3540
       },
       {
-        "palabra": "miles",
-        "inicioMs": 3700,
+        "palabra": "Mejor",
+        "inicioMs": 3820,
         "finMs": 4000
       },
       {
-        "palabra": "de",
+        "palabra": "conviértete",
         "inicioMs": 4000,
-        "finMs": 4240
+        "finMs": 4540
       },
       {
-        "palabra": "millones",
-        "inicioMs": 4240,
-        "finMs": 4560
+        "palabra": "en",
+        "inicioMs": 4540,
+        "finMs": 4720
       },
       {
-        "palabra": "de",
-        "inicioMs": 4560,
+        "palabra": "su",
+        "inicioMs": 4720,
         "finMs": 4860
       },
       {
-        "palabra": "años",
+        "palabra": "guía",
         "inicioMs": 4860,
-        "finMs": 5180
+        "finMs": 5060
+      },
+      {
+        "palabra": "nocturno",
+        "inicioMs": 5060,
+        "finMs": 5580
       }
     ]
   }

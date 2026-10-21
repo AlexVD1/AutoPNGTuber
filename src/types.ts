@@ -26,6 +26,34 @@ export interface PalabraTiming {
   finMs: number;
 }
 
+export type TipoElementoNarrativo =
+  | "speed_counter"
+  | "speed_lines"
+  | "flying_debris"
+  | "giant_waves"
+  | "shockwave_burst"
+  | "orbital_peace"
+  | "danger_vignette";
+
+export interface ElementoNarrativo {
+  tipo: TipoElementoNarrativo;
+  valorNumerico?: number;
+  unidad?: string;
+  subtitulo?: string;
+  color?: string;
+  direccion?: "este" | "oeste" | "arriba" | "abajo";
+  intensidad?: number;
+}
+
+export type TipoTransicion =
+  | "zoom_in"
+  | "whip_right"
+  | "whip_left"
+  | "flash"
+  | "corte";
+
+export type EstiloLayout = "clasico" | "narrativo" | "compacto";
+
 export interface EscenaGuion {
   id: number;
   texto: string;
@@ -54,6 +82,20 @@ export interface EscenaGuion {
   tituloVisual: string;
   duracionSegundos?: number;
   palabras?: PalabraTiming[];
+  /** Estilo de distribución espacial de la escena */
+  layout?: EstiloLayout;
+  /** Elementos visuales narrativos animados para apoyar la explicación del guion */
+  elementosNarrativos?: ElementoNarrativo[];
+  /** Efectos de cámara cinemática ('shake', 'punch', 'drift') */
+  efectosCamara?: ("shake" | "punch" | "drift")[];
+  /** Transición visual de entrada */
+  transicion?: TipoTransicion;
+  /** Archivo SFX sincronizado específico (ej. 'sfx/sfx_whoosh.wav') */
+  sfx?: string;
+  /** Nivel de volumen para el SFX de esta escena (0 a 1) */
+  volumenSfx?: number;
+  /** Palabras clave para destacar con jerarquía tipográfica */
+  palabrasClave?: string[];
 }
 
 export type ShortProps = {

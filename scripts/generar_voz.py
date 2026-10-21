@@ -127,20 +127,18 @@ def limpiar_texto_narracion(texto: str) -> str:
     return re.sub(r"\s+", " ", texto).strip()
 
 
-def dividir_en_fragmentos(texto: str, max_chars: int = 180) -> list[str]:
+def dividir_en_fragmentos(texto: str, max_chars: int = 95) -> list[str]:
     limpio = limpiar_texto_narracion(texto)
     if not limpio:
         return []
-    if len(limpio) <= max_chars:
+
+    oraciones = [s.strip() for s in re.split(r"(?<=[.!?])\s+", limpio) if s.strip()]
+    if not oraciones:
         return [limpio]
 
-    oraciones = re.split(r"(?<=[.!?])\s+", limpio)
     fragmentos = []
     actual = ""
     for oracion in oraciones:
-        oracion = oracion.strip()
-        if not oracion:
-            continue
         if not actual:
             actual = oracion
         elif len(actual) + 1 + len(oracion) <= max_chars:
@@ -269,7 +267,7 @@ def recortar_cola_mp3(audio_path: Path, corte_segundos: float) -> None:
     with tempfile.NamedTemporaryFile(suffix=".mp3", delete=False, dir=str(audio_path.parent)) as tmp_file:
         tmp_mp3 = Path(tmp_file.name)
     try:
-        fade_start = max(0.0, corte_segundos - 0.08)
+        fade_start = max(0.0, corte_segundos - 0.12)
         cmd = [
             "ffmpeg",
             "-y",
@@ -280,7 +278,7 @@ def recortar_cola_mp3(audio_path: Path, corte_segundos: float) -> None:
             "-t",
             f"{corte_segundos:.3f}",
             "-af",
-            f"afade=t=out:st={fade_start:.3f}:d=0.08",
+            f"afade=t=out:st={fade_start:.3f}:d=0.12",
             "-ar",
             "24000",
             "-ac",
@@ -409,18 +407,37 @@ def procesar_escena(
         )
         return
 
-    tts_engine.sintetizar_a_mp3(texto, audio_path)
+    tokens_guion = [
+        t.strip(PUNCT_STRIP)
+        for t in re.findall(r"\S+", texto)
+        if t.strip(PUNCT_STRIP)
+    ]
 
-    mp3_info = MP3(audio_path)
-    duracion_real_mp3 = mp3_info.info.length
+    max_intentos = 3
+    for intento in range(max_intentos):
+        tts_engine.sintetizar_a_mp3(texto, audio_path)
 
-    palabras = whisper_aligner.extraer_palabras(audio_path, texto, duracion_real_mp3)
+        mp3_info = MP3(audio_path)
+        duracion_real_mp3 = mp3_info.info.length
 
-    # Si el sintetizador dejó una cola residual larga tras la última palabra, recortar el MP3 y re-medir con mutagen
+        palabras = whisper_aligner.extraer_palabras(audio_path, texto, duracion_real_mp3)
+
+        # Si faltan palabras clave respecto al guion y quedan intentos, reintentar síntesis
+        if palabras and tokens_guion and intento < max_intentos - 1:
+            if len(palabras) < len(tokens_guion) - 1:
+                print(
+                    f"[Escena {escena_id}] ⚠️ Audio incompleto ({len(palabras)}/{len(tokens_guion)} palabras). "
+                    f"Reintentando síntesis (intento {intento + 2}/{max_intentos})..."
+                )
+                continue
+
+        break
+
+    # Si el sintetizador dejó una cola residual innecesaria tras la última palabra (>0.7s), recortar con margen seguro (+0.40s)
     if palabras:
         fin_ultima_palabra_s = palabras[-1]["finMs"] / 1000.0
-        if duracion_real_mp3 > fin_ultima_palabra_s + 0.35:
-            recortar_cola_mp3(audio_path, fin_ultima_palabra_s + 0.18)
+        if duracion_real_mp3 > fin_ultima_palabra_s + 0.70:
+            recortar_cola_mp3(audio_path, fin_ultima_palabra_s + 0.40)
             mp3_info = MP3(audio_path)
             duracion_real_mp3 = mp3_info.info.length
 

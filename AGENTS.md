@@ -73,6 +73,13 @@ Cada elemento del arreglo en `src/data/guion.json` sigue la interfaz `EscenaGuio
 | `escala` | `number` | Opcional | Multiplicador de tamaño del Stickman (`1` por defecto). |
 | `posicion` | `{x, y}` | Opcional | Ajuste fino en píxeles (`{ "x": 0, "y": 0 }`). |
 | `animacionEntrada` | `string` | Opcional | `"rebote"` (por defecto), `"zoom"`, `"deslizar"` o `"ninguna"`. |
+| `layout` | `string` | Opcional | `"clasico"` (tarjeta superior grande), `"narrativo"` (banner compacto + espacio central libre) o `"compacto"`. |
+| `elementosNarrativos` | `array` | Opcional | Lista de elementos visuales vectoriales: `speed_counter`, `speed_lines`, `flying_debris`, `giant_waves`, `shockwave_burst`, `orbital_peace`, `danger_vignette`. |
+| `efectosCamara` | `array` | Opcional | Modificadores cinemáticos: `["shake"]`, `["punch"]`, `["drift"]` (micro-zoom continuo). |
+| `transicion` | `string` | Opcional | Entrada visual hacia la escena: `"zoom_in"` (por defecto), `"whip_right"`, `"whip_left"`, `"flash"`, `"corte"`. |
+| `sfx` | `string` | Opcional | Ruta relativa a `public/` de audio de impacto (ej. `"sfx/sfx_whoosh.wav"`, `"sfx/sfx_impact.wav"`, `"sfx/sfx_dramatic_hit.wav"`, `"sfx/pop.mp3"`). |
+| `volumenSfx` | `number` | Opcional | Volumen del SFX (`0.15` a `0.30`, subordinado a la voz). |
+| `palabrasClave` | `array` | Opcional | Lista de palabras o cifras que recibirán énfasis tipográfico dinámico y pop de escala. |
 
 ### Campos Autogenerados (inyectados por `scripts/generar_voz.py`)
 
@@ -110,9 +117,13 @@ Para consultar o filtrar recursos programáticamente usa `src/stickman/catalog.t
 │   └── generar_biblioteca_poses.mjs # Compila SVGs, poses.json y contact_sheet.html
 ├── src/
 │   ├── components/
-│   │   ├── Scene.tsx           # Layout 1080x1920 (Ícono arriba, Stickman centro, Subtítulos abajo)
-│   │   ├── Stickman.tsx        # Renderizador determinista SVG/PNG + animaciones de entrada
+│   │   ├── Scene.tsx           # Layout adaptable con soporte de layouts clásico o narrativo
+│   │   ├── CameraRig.tsx       # Rig cinemático de cámara (push-in, trauma shake, transiciones)
+│   │   ├── NarrativeElements.tsx # Motor de elementos vectoriales narrativos (velocímetro, olas, escombros)
+│   │   ├── Stickman.tsx        # Renderizador determinista SVG/PNG + parpadeo, lip-sync y gesticulación
 │   │   ├── Subtitles.tsx       # Bloques de 2-3 palabras sincronizados con inicioMs
+│   │   ├── WordSubtitles.tsx   # Subtítulos neo-brutalistas sin empastes y con énfasis en cifras
+│   │   ├── AnimatedIcon.tsx    # Ícono neo-brutalista animado con soporte de modo banner compacto
 │   │   └── ShowcasePoses.tsx   # Composición HojaDeContacto
 │   ├── data/
 │   │   ├── guion.json          # Guion activo del Short
