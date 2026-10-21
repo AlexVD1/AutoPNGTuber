@@ -43,6 +43,24 @@ export interface StickmanProps {
   animacionEntrada?: AnimacionEntradaStickman;
 }
 
+const ALERT_KEYWORDS = [
+  "sorprendido",
+  "shock",
+  "shocked",
+  "scared",
+  "fear",
+  "trembling",
+  "hiding",
+  "danger",
+  "warning",
+  "backing_away",
+  "tripping",
+  "explosion",
+  "worried",
+  "surprised",
+  "alert",
+];
+
 export const Stickman: React.FC<StickmanProps> = ({
   pose,
   poseId,
@@ -100,6 +118,7 @@ export const Stickman: React.FC<StickmanProps> = ({
     [targetPoseKey]
   );
 
+  // Animación determinista de entrada
   const entranceProgress = spring({
     frame,
     fps,
@@ -126,11 +145,33 @@ export const Stickman: React.FC<StickmanProps> = ({
     animTranslateX = interpolate(entranceProgress, [0, 1], [-160, 0]);
   }
 
+  // 1. Vida Continua: Animación de respiración determinista (Math.sin(frame / 8))
+  const breathCycle = Math.sin(frame / 8);
+  const breathTranslateY = -breathCycle * 3.5;
+  const breathScaleY = 1 + breathCycle * 0.022;
+
+  // 2. Vibración rápida en primeros 20 frames si la pose o expresión es de alerta/sorpresa/peligro
+  const isAlertPose = ALERT_KEYWORDS.some(
+    (k) =>
+      targetPoseKey.toLowerCase().includes(k) ||
+      (expresion && expresion.toLowerCase().includes(k))
+  );
+
+  let vibrationX = 0;
+  if (isAlertPose && frame < 20) {
+    const vibrationDecay = interpolate(frame, [0, 20], [1, 0], {
+      extrapolateRight: "clamp",
+    });
+    // Vibración horizontal rápida de alta frecuencia
+    vibrationX = Math.sin(frame * 1.8) * 8 * vibrationDecay;
+  }
+
   const flipMultiplier = orientacion === "izquierda" ? -1 : 1;
-  const finalTranslateX = (posicion?.x ?? 0) + animTranslateX;
-  const finalTranslateY = (posicion?.y ?? 0) + animTranslateY;
+  const finalTranslateX = (posicion?.x ?? 0) + animTranslateX + vibrationX;
+  const finalTranslateY =
+    (posicion?.y ?? 0) + animTranslateY + breathTranslateY;
   const finalScaleX = animScaleX * escala * flipMultiplier;
-  const finalScaleY = animScaleY * escala;
+  const finalScaleY = animScaleY * escala * breathScaleY;
 
   const svgMarkup = useMemo(
     () =>
@@ -165,7 +206,7 @@ export const Stickman: React.FC<StickmanProps> = ({
 
   return (
     <div
-      className="flex items-center justify-center"
+      className="flex items-center justify-center select-none"
       style={{
         width: 500 * escala,
         height: 620 * escala,
@@ -177,7 +218,7 @@ export const Stickman: React.FC<StickmanProps> = ({
           width: 500,
           height: 620,
           transform: `scale(${finalScaleX}, ${finalScaleY})`,
-          transformOrigin: "center center",
+          transformOrigin: "center bottom",
           flexShrink: 0,
         }}
       >

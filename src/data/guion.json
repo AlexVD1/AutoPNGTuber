@@ -11,67 +11,67 @@
     "icono": "Globe",
     "colorIcono": "#3B82F6",
     "tituloVisual": "¿Y SI SE DETIENE?",
-    "duracionSegundos": 4.114,
+    "duracionSegundos": 3.658,
     "palabras": [
       {
         "palabra": "Qué",
-        "inicioMs": 95,
-        "finMs": 209
+        "inicioMs": 0,
+        "finMs": 160
       },
       {
         "palabra": "pasaría",
-        "inicioMs": 220,
-        "finMs": 641
+        "inicioMs": 160,
+        "finMs": 640
       },
       {
         "palabra": "si",
-        "inicioMs": 652,
-        "finMs": 789
+        "inicioMs": 640,
+        "finMs": 860
       },
       {
         "palabra": "la",
-        "inicioMs": 800,
-        "finMs": 902
+        "inicioMs": 860,
+        "finMs": 1000
       },
       {
         "palabra": "Tierra",
-        "inicioMs": 914,
-        "finMs": 1164
+        "inicioMs": 1000,
+        "finMs": 1260
       },
       {
         "palabra": "dejara",
-        "inicioMs": 1175,
-        "finMs": 1516
+        "inicioMs": 1260,
+        "finMs": 1660
       },
       {
         "palabra": "de",
-        "inicioMs": 1527,
-        "finMs": 1630
+        "inicioMs": 1660,
+        "finMs": 1800
       },
       {
         "palabra": "girar",
-        "inicioMs": 1641,
-        "finMs": 1993
+        "inicioMs": 1800,
+        "finMs": 2080
       },
       {
         "palabra": "por",
-        "inicioMs": 2005,
-        "finMs": 2175
+        "inicioMs": 2080,
+        "finMs": 2240
       },
       {
         "palabra": "solo",
-        "inicioMs": 2186,
-        "finMs": 2448
+        "inicioMs": 2240,
+        "finMs": 2500
       },
       {
         "palabra": "un",
-        "inicioMs": 2459,
-        "finMs": 2573
+        "inicioMs": 2500,
+        "finMs": 2740
       },
       {
         "palabra": "segundo",
-        "inicioMs": 2584,
-        "finMs": 3073
+        "inicioMs": 2740,
+        "finMs": 3180
       }
     ]
   },
@@ -86,62 +86,62 @@
     "icono": "Zap",
     "colorIcono": "#F59E0B",
     "tituloVisual": "1,600 KM/H",
-    "duracionSegundos": 4.282,
+    "duracionSegundos": 4.21,
     "palabras": [
       {
         "palabra": "En",
-        "inicioMs": 95,
-        "finMs": 255
+        "inicioMs": 0,
+        "finMs": 220
       },
       {
         "palabra": "el",
-        "inicioMs": 266,
-        "finMs": 368
+        "inicioMs": 220,
+        "finMs": 340
       },
       {
         "palabra": "ecuador",
-        "inicioMs": 380,
-        "finMs": 755
+        "inicioMs": 340,
+        "finMs": 720
       },
       {
         "palabra": "nos",
-        "inicioMs": 766,
-        "finMs": 948
+        "inicioMs": 1020,
+        "finMs": 1140
       },
       {
         "palabra": "movemos",
-        "inicioMs": 959,
-        "finMs": 1357
+        "inicioMs": 1140,
+        "finMs": 1600
       },
       {
         "palabra": "a",
-        "inicioMs": 1368,
-        "finMs": 1414
+        "inicioMs": 1600,
+        "finMs": 1800
       },
       {
         "palabra": "mil",
-        "inicioMs": 1425,
-        "finMs": 1607
+        "inicioMs": 1800,
+        "finMs": 1920
       },
       {
         "palabra": "seiscientos",
-        "inicioMs": 1618,
-        "finMs": 2209
+        "inicioMs": 1920,
+        "finMs": 2440
       },
       {
         "palabra": "kilómetros",
-        "inicioMs": 2220,
-        "finMs": 2800
+        "inicioMs": 2440,
+        "finMs": 3160
       },
       {
         "palabra": "por",
-        "inicioMs": 2811,
-        "finMs": 2970
+        "inicioMs": 3160,
+        "finMs": 3460
       },
       {
         "palabra": "hora",
-        "inicioMs": 2982,
-        "finMs": 3232
+        "inicioMs": 3460,
+        "finMs": 3720
       }
     ]
   },
@@ -153,67 +153,67 @@
     "icono": "Wind",
     "colorIcono": "#EF4444",
     "tituloVisual": "INERCIA BRUTAL",
-    "duracionSegundos": 4.738,
+    "duracionSegundos": 4.426,
     "palabras": [
       {
         "palabra": "Si",
-        "inicioMs": 95,
-        "finMs": 311
+        "inicioMs": 0,
+        "finMs": 140
       },
       {
         "palabra": "el",
-        "inicioMs": 323,
-        "finMs": 414
+        "inicioMs": 140,
+        "finMs": 260
       },
       {
         "palabra": "planeta",
-        "inicioMs": 425,
-        "finMs": 823
+        "inicioMs": 260,
+        "finMs": 540
       },
       {
         "palabra": "frena",
-        "inicioMs": 834,
-        "finMs": 1084
+        "inicioMs": 540,
+        "finMs": 1020
       },
       {
         "palabra": "de",
-        "inicioMs": 1095,
-        "finMs": 1186
+        "inicioMs": 1020,
+        "finMs": 1100
       },
       {
         "palabra": "golpe",
-        "inicioMs": 1198,
-        "finMs": 1573
+        "inicioMs": 1100,
+        "finMs": 1440
       },
       {
         "palabra": "la",
-        "inicioMs": 1845,
-        "finMs": 1925
+        "inicioMs": 1800,
+        "finMs": 1960
       },
       {
         "palabra": "inercia",
-        "inicioMs": 1936,
-        "finMs": 2345
+        "inicioMs": 1960,
+        "finMs": 2460
       },
       {
         "palabra": "nos",
-        "inicioMs": 2357,
-        "finMs": 2539
+        "inicioMs": 2460,
+        "finMs": 2620
       },
       {
         "palabra": "lanzaría",
-        "inicioMs": 2550,
-        "finMs": 3027
+        "inicioMs": 2620,
+        "finMs": 3140
       },
       {
         "palabra": "al",
-        "inicioMs": 3039,
-        "finMs": 3130
+        "inicioMs": 3140,
+        "finMs": 3360
       },
       {
         "palabra": "instante",
-        "inicioMs": 3141,
-        "finMs": 3698
+        "inicioMs": 3360,
+        "finMs": 3940
       }
     ]
   },
@@ -228,52 +228,52 @@
     "icono": "Building2",
     "colorIcono": "#DC2626",
     "tituloVisual": "TODO VOLARÍA",
-    "duracionSegundos": 4.738,
+    "duracionSegundos": 4.762,
     "palabras": [
       {
         "palabra": "Edificios",
-        "inicioMs": 95,
-        "finMs": 755
+        "inicioMs": 0,
+        "finMs": 800
       },
       {
         "palabra": "personas",
-        "inicioMs": 970,
-        "finMs": 1505
+        "inicioMs": 1120,
+        "finMs": 1520
       },
       {
         "palabra": "y",
-        "inicioMs": 1516,
-        "finMs": 1561
+        "inicioMs": 1520,
+        "finMs": 1760
       },
       {
         "palabra": "océanos",
-        "inicioMs": 1573,
-        "finMs": 1993
+        "inicioMs": 1760,
+        "finMs": 2260
       },
       {
         "palabra": "saldrían",
-        "inicioMs": 2005,
-        "finMs": 2425
+        "inicioMs": 2560,
+        "finMs": 2960
       },
       {
         "palabra": "disparados",
-        "inicioMs": 2436,
-        "finMs": 3016
+        "inicioMs": 2960,
+        "finMs": 3580
       },
       {
         "palabra": "hacia",
-        "inicioMs": 3027,
-        "finMs": 3266
+        "inicioMs": 3580,
+        "finMs": 3860
       },
       {
         "palabra": "el",
-        "inicioMs": 3277,
-        "finMs": 3357
+        "inicioMs": 3860,
+        "finMs": 4020
       },
       {
         "palabra": "este",
-        "inicioMs": 3368,
-        "finMs": 3686
+        "inicioMs": 4020,
+        "finMs": 4280
       }
     ]
   },
@@ -288,42 +288,42 @@
     "icono": "Waves",
     "colorIcono": "#0EA5E9",
     "tituloVisual": "MEGATSUNAMIS",
-    "duracionSegundos": 4.498,
+    "duracionSegundos": 4.714,
     "palabras": [
       {
         "palabra": "Se",
-        "inicioMs": 95,
-        "finMs": 300
+        "inicioMs": 0,
+        "finMs": 120
       },
       {
         "palabra": "formarían",
-        "inicioMs": 311,
-        "finMs": 823
+        "inicioMs": 120,
+        "finMs": 800
       },
       {
         "palabra": "olas",
-        "inicioMs": 834,
-        "finMs": 1061
+        "inicioMs": 800,
+        "finMs": 1280
       },
       {
         "palabra": "gigantescas",
-        "inicioMs": 1073,
-        "finMs": 1766
+        "inicioMs": 1280,
+        "finMs": 2040
       },
       {
         "palabra": "arrasando",
-        "inicioMs": 1777,
-        "finMs": 2255
+        "inicioMs": 2400,
+        "finMs": 2900
       },
       {
         "palabra": "continentes",
-        "inicioMs": 2266,
-        "finMs": 2868
+        "inicioMs": 2900,
+        "finMs": 3560
       },
       {
         "palabra": "enteros",
-        "inicioMs": 2880,
-        "finMs": 3448
+        "inicioMs": 3560,
+        "finMs": 4220
       }
     ]
   },
@@ -335,67 +335,67 @@
     "icono": "Flame",
     "colorIcono": "#EA580C",
     "tituloVisual": "CHOQUE TOTAL",
-    "duracionSegundos": 5.026,
+    "duracionSegundos": 4.738,
     "palabras": [
       {
         "palabra": "Y",
-        "inicioMs": 95,
-        "finMs": 243
+        "inicioMs": 0,
+        "finMs": 180
       },
       {
         "palabra": "al",
-        "inicioMs": 255,
-        "finMs": 357
+        "inicioMs": 180,
+        "finMs": 320
       },
       {
         "palabra": "reanudar",
-        "inicioMs": 368,
-        "finMs": 777
+        "inicioMs": 320,
+        "finMs": 800
       },
       {
         "palabra": "el",
-        "inicioMs": 789,
-        "finMs": 880
+        "inicioMs": 800,
+        "finMs": 920
       },
       {
         "palabra": "giro",
-        "inicioMs": 891,
-        "finMs": 1164
+        "inicioMs": 920,
+        "finMs": 1180
       },
       {
         "palabra": "un",
-        "inicioMs": 1175,
-        "finMs": 1289
+        "inicioMs": 1180,
+        "finMs": 1360
       },
       {
         "palabra": "segundo",
-        "inicioMs": 1300,
-        "finMs": 1675
+        "inicioMs": 1360,
+        "finMs": 1700
       },
       {
         "palabra": "después",
-        "inicioMs": 1686,
-        "finMs": 2164
+        "inicioMs": 1700,
+        "finMs": 2180
       },
       {
         "palabra": "el",
-        "inicioMs": 2380,
-        "finMs": 2516
+        "inicioMs": 2740,
+        "finMs": 2860
       },
       {
         "palabra": "choque",
-        "inicioMs": 2527,
-        "finMs": 2823
+        "inicioMs": 2860,
+        "finMs": 3180
       },
       {
         "palabra": "sería",
-        "inicioMs": 2834,
-        "finMs": 3175
+        "inicioMs": 3180,
+        "finMs": 3460
       },
       {
         "palabra": "catastrófico",
-        "inicioMs": 3186,
-        "finMs": 3982
+        "inicioMs": 3460,
+        "finMs": 4260
       }
     ]
   },
@@ -410,82 +410,82 @@
     "icono": "ShieldCheck",
     "colorIcono": "#10B981",
     "tituloVisual": "ESTAMOS A SALVO",
-    "duracionSegundos": 5.77,
+    "duracionSegundos": 5.674,
     "palabras": [
       {
         "palabra": "Por",
-        "inicioMs": 95,
-        "finMs": 255
+        "inicioMs": 0,
+        "finMs": 220
       },
       {
         "palabra": "suerte",
-        "inicioMs": 266,
-        "finMs": 641
+        "inicioMs": 220,
+        "finMs": 740
       },
       {
         "palabra": "la",
-        "inicioMs": 936,
-        "finMs": 1027
+        "inicioMs": 1000,
+        "finMs": 1120
       },
       {
         "palabra": "física",
-        "inicioMs": 1039,
-        "finMs": 1414
+        "inicioMs": 1120,
+        "finMs": 1420
       },
       {
         "palabra": "del",
-        "inicioMs": 1425,
-        "finMs": 1573
+        "inicioMs": 1420,
+        "finMs": 1700
       },
       {
         "palabra": "espacio",
-        "inicioMs": 1584,
-        "finMs": 2005
+        "inicioMs": 1700,
+        "finMs": 2160
       },
       {
         "palabra": "nos",
-        "inicioMs": 2016,
-        "finMs": 2186
+        "inicioMs": 2160,
+        "finMs": 2360
       },
       {
         "palabra": "mantendrá",
-        "inicioMs": 2198,
-        "finMs": 2664
+        "inicioMs": 2360,
+        "finMs": 2940
       },
       {
         "palabra": "girando",
-        "inicioMs": 2675,
-        "finMs": 3084
+        "inicioMs": 2940,
+        "finMs": 3480
       },
       {
         "palabra": "por",
-        "inicioMs": 3095,
-        "finMs": 3289
+        "inicioMs": 3480,
+        "finMs": 3700
       },
       {
         "palabra": "miles",
-        "inicioMs": 3300,
-        "finMs": 3630
+        "inicioMs": 3700,
+        "finMs": 4000
       },
       {
         "palabra": "de",
-        "inicioMs": 3641,
-        "finMs": 3709
+        "inicioMs": 4000,
+        "finMs": 4240
       },
       {
         "palabra": "millones",
-        "inicioMs": 3720,
-        "finMs": 4175
+        "inicioMs": 4240,
+        "finMs": 4560
       },
       {
         "palabra": "de",
-        "inicioMs": 4186,
-        "finMs": 4277
+        "inicioMs": 4560,
+        "finMs": 4860
       },
       {
         "palabra": "años",
-        "inicioMs": 4289,
-        "finMs": 4732
+        "inicioMs": 4860,
+        "finMs": 5180
       }
     ]
   }

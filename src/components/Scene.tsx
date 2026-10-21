@@ -1,97 +1,63 @@
-import React from "react";
+import React, { useMemo } from "react";
 import {
   AbsoluteFill,
   Audio,
-  interpolate,
-  spring,
+  getStaticFiles,
   staticFile,
-  useCurrentFrame,
-  useVideoConfig,
 } from "remotion";
-import * as LucideIcons from "lucide-react";
 import { EscenaGuion } from "../types";
+import { AnimatedIcon } from "./AnimatedIcon";
 import { Stickman } from "./Stickman";
-import { Subtitles } from "./Subtitles";
+import { WordSubtitles } from "./WordSubtitles";
 
 interface SceneProps {
   escena: EscenaGuion;
 }
 
+/**
+ * Comprueba de forma segura si un archivo estático existe en public/ sin lanzar error.
+ */
+function fileExistsInStatic(targetRelativePath: string): boolean {
+  try {
+    const files = getStaticFiles();
+    if (!files || files.length === 0) {
+      // Durante compilaciones fuera del navegador o si no hay lista estática
+      return true;
+    }
+    const normalizedTarget = targetRelativePath.replace(/\\/g, "/").toLowerCase();
+    return files.some((f) => {
+      const name = (f.name || "").replace(/\\/g, "/").toLowerCase();
+      const src = (f.src || "").replace(/\\/g, "/").toLowerCase();
+      return name.endsWith(normalizedTarget) || src.includes(normalizedTarget);
+    });
+  } catch {
+    return false;
+  }
+}
+
 export const Scene: React.FC<SceneProps> = ({ escena }) => {
-  const frame = useCurrentFrame();
-  const { fps } = useVideoConfig();
-
-  const iconSpring = spring({
-    frame,
-    fps,
-    config: {
-      damping: 9,
-      stiffness: 150,
-      mass: 0.8,
-    },
-  });
-
-  const titleSpring = spring({
-    frame: Math.max(0, frame - 3),
-    fps,
-    config: {
-      damping: 12,
-      stiffness: 160,
-    },
-  });
-
-  const iconRotate = interpolate(iconSpring, [0, 1], [-12, 0]);
-
-  const IconComponent =
-    (
-      LucideIcons as unknown as Record<
-        string,
-        React.ComponentType<{
-          size?: number;
-          color?: string;
-          strokeWidth?: number;
-        }>
-      >
-    )[escena.icono] ?? LucideIcons.HelpCircle;
+  // Comprobación segura de SFX pop.mp3 al inicio de cada escena
+  const hasPopSfx = useMemo(() => fileExistsInStatic("sfx/pop.mp3"), []);
 
   return (
-    <AbsoluteFill
-      className="bg-white flex flex-col justify-between items-center"
-      style={{ backgroundColor: "#FFFFFF" }}
-    >
+    <AbsoluteFill className="flex flex-col justify-between items-center bg-transparent">
+      {/* Audio de locución de la escena */}
       <Audio src={staticFile(`audios/escena_${escena.id}.mp3`)} />
 
-      {/* Mitad superior: Ícono grande con animación spring y tituloVisual */}
-      <div className="w-full h-[760px] flex flex-col items-center justify-center pt-16 px-12">
-        <div
-          className="flex items-center justify-center rounded-3xl p-8"
-          style={{
-            transform: `scale(${iconSpring}) rotate(${iconRotate}deg)`,
-          }}
-        >
-          <IconComponent
-            size={260}
-            color={escena.colorIcono}
-            strokeWidth={2.4}
-          />
-        </div>
+      {/* Efecto de sonido opcional al inicio de la escena */}
+      {hasPopSfx && <Audio src={staticFile("sfx/pop.mp3")} volume={0.3} />}
 
-        <h2
-          className="mt-4 text-center uppercase font-black tracking-tight"
-          style={{
-            fontFamily:
-              "'Arial Black', 'Impact', 'Inter', system-ui, sans-serif",
-            fontSize: "58px",
-            color: "#111827",
-            transform: `scale(${titleSpring})`,
-          }}
-        >
-          {escena.tituloVisual}
-        </h2>
+      {/* Mitad superior: Tarjeta Neo-Brutalista con Ícono animado continuo y título */}
+      <div className="w-full h-[740px] flex items-center justify-center">
+        <AnimatedIcon
+          icono={escena.icono}
+          colorIcono={escena.colorIcono}
+          tituloVisual={escena.tituloVisual}
+        />
       </div>
 
-      {/* Centro/Abajo: Stickman expresivo con soporte de poses, expresiones y props */}
-      <div className="w-full flex-1 flex items-center justify-center -mt-12">
+      {/* Centro: Stickman con vida continua (respiración y reacción de alerta) */}
+      <div className="w-full flex-1 flex items-center justify-center -mt-6">
         <Stickman
           pose={escena.pose}
           poseId={escena.poseId}
@@ -106,9 +72,9 @@ export const Scene: React.FC<SceneProps> = ({ escena }) => {
         />
       </div>
 
-      {/* Abajo: Subtítulos sincronizados */}
-      <div className="w-full h-[380px] flex items-center justify-center pb-16">
-        <Subtitles palabras={escena.palabras ?? []} />
+      {/* Abajo: Subtítulos dinámicos con bloques independientes y pop spring */}
+      <div className="w-full h-[400px] flex items-center justify-center pb-16">
+        <WordSubtitles palabras={escena.palabras ?? []} />
       </div>
     </AbsoluteFill>
   );

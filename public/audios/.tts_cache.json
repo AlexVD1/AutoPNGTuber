@@ -1,0 +1,448 @@
+{
+  "escena_1": {
+    "sha256": "91c3ea9357ea84f1a781b9900d04f657ee039ba51eb3890262c3154e56f8c857",
+    "texto": "¿Qué pasaría si la Tierra dejara de girar por solo un segundo?",
+    "voiceConds": "alex.conds.pt",
+    "duracionSegundos": 3.658,
+    "palabras": [
+      {
+        "palabra": "Qué",
+        "inicioMs": 0,
+        "finMs": 160
+      },
+      {
+        "palabra": "pasaría",
+        "inicioMs": 160,
+        "finMs": 640
+      },
+      {
+        "palabra": "si",
+        "inicioMs": 640,
+        "finMs": 860
+      },
+      {
+        "palabra": "la",
+        "inicioMs": 860,
+        "finMs": 1000
+      },
+      {
+        "palabra": "Tierra",
+        "inicioMs": 1000,
+        "finMs": 1260
+      },
+      {
+        "palabra": "dejara",
+        "inicioMs": 1260,
+        "finMs": 1660
+      },
+      {
+        "palabra": "de",
+        "inicioMs": 1660,
+        "finMs": 1800
+      },
+      {
+        "palabra": "girar",
+        "inicioMs": 1800,
+        "finMs": 2080
+      },
+      {
+        "palabra": "por",
+        "inicioMs": 2080,
+        "finMs": 2240
+      },
+      {
+        "palabra": "solo",
+        "inicioMs": 2240,
+        "finMs": 2500
+      },
+      {
+        "palabra": "un",
+        "inicioMs": 2500,
+        "finMs": 2740
+      },
+      {
+        "palabra": "segundo",
+        "inicioMs": 2740,
+        "finMs": 3180
+      }
+    ]
+  },
+  "escena_2": {
+    "sha256": "9f3499876547a89336d09e5395cd7ddeda5658454e21fe2d765e0a49483b0f06",
+    "texto": "En el ecuador nos movemos a mil seiscientos kilómetros por hora.",
+    "voiceConds": "alex.conds.pt",
+    "duracionSegundos": 4.21,
+    "palabras": [
+      {
+        "palabra": "En",
+        "inicioMs": 0,
+        "finMs": 220
+      },
+      {
+        "palabra": "el",
+        "inicioMs": 220,
+        "finMs": 340
+      },
+      {
+        "palabra": "ecuador",
+        "inicioMs": 340,
+        "finMs": 720
+      },
+      {
+        "palabra": "nos",
+        "inicioMs": 1020,
+        "finMs": 1140
+      },
+      {
+        "palabra": "movemos",
+        "inicioMs": 1140,
+        "finMs": 1600
+      },
+      {
+        "palabra": "a",
+        "inicioMs": 1600,
+        "finMs": 1800
+      },
+      {
+        "palabra": "mil",
+        "inicioMs": 1800,
+        "finMs": 1920
+      },
+      {
+        "palabra": "seiscientos",
+        "inicioMs": 1920,
+        "finMs": 2440
+      },
+      {
+        "palabra": "kilómetros",
+        "inicioMs": 2440,
+        "finMs": 3160
+      },
+      {
+        "palabra": "por",
+        "inicioMs": 3160,
+        "finMs": 3460
+      },
+      {
+        "palabra": "hora",
+        "inicioMs": 3460,
+        "finMs": 3720
+      }
+    ]
+  },
+  "escena_3": {
+    "sha256": "f6e374f201381315c6835da266920bfe7bba188775f0594beea5b7f7e467e5e5",
+    "texto": "Si el planeta frena de golpe, la inercia nos lanzaría al instante.",
+    "voiceConds": "alex.conds.pt",
+    "duracionSegundos": 4.426,
+    "palabras": [
+      {
+        "palabra": "Si",
+        "inicioMs": 0,
+        "finMs": 140
+      },
+      {
+        "palabra": "el",
+        "inicioMs": 140,
+        "finMs": 260
+      },
+      {
+        "palabra": "planeta",
+        "inicioMs": 260,
+        "finMs": 540
+      },
+      {
+        "palabra": "frena",
+        "inicioMs": 540,
+        "finMs": 1020
+      },
+      {
+        "palabra": "de",
+        "inicioMs": 1020,
+        "finMs": 1100
+      },
+      {
+        "palabra": "golpe",
+        "inicioMs": 1100,
+        "finMs": 1440
+      },
+      {
+        "palabra": "la",
+        "inicioMs": 1800,
+        "finMs": 1960
+      },
+      {
+        "palabra": "inercia",
+        "inicioMs": 1960,
+        "finMs": 2460
+      },
+      {
+        "palabra": "nos",
+        "inicioMs": 2460,
+        "finMs": 2620
+      },
+      {
+        "palabra": "lanzaría",
+        "inicioMs": 2620,
+        "finMs": 3140
+      },
+      {
+        "palabra": "al",
+        "inicioMs": 3140,
+        "finMs": 3360
+      },
+      {
+        "palabra": "instante",
+        "inicioMs": 3360,
+        "finMs": 3940
+      }
+    ]
+  },
+  "escena_4": {
+    "sha256": "0d0c30c75f067a254aa0ab65d5e7d2ca6cd489b629eeb6220ef714d9455256c4",
+    "texto": "Edificios, personas y océanos saldrían disparados hacia el este.",
+    "voiceConds": "alex.conds.pt",
+    "duracionSegundos": 4.762,
+    "palabras": [
+      {
+        "palabra": "Edificios",
+        "inicioMs": 0,
+        "finMs": 800
+      },
+      {
+        "palabra": "personas",
+        "inicioMs": 1120,
+        "finMs": 1520
+      },
+      {
+        "palabra": "y",
+        "inicioMs": 1520,
+        "finMs": 1760
+      },
+      {
+        "palabra": "océanos",
+        "inicioMs": 1760,
+        "finMs": 2260
+      },
+      {
+        "palabra": "saldrían",
+        "inicioMs": 2560,
+        "finMs": 2960
+      },
+      {
+        "palabra": "disparados",
+        "inicioMs": 2960,
+        "finMs": 3580
+      },
+      {
+        "palabra": "hacia",
+        "inicioMs": 3580,
+        "finMs": 3860
+      },
+      {
+        "palabra": "el",
+        "inicioMs": 3860,
+        "finMs": 4020
+      },
+      {
+        "palabra": "este",
+        "inicioMs": 4020,
+        "finMs": 4280
+      }
+    ]
+  },
+  "escena_5": {
+    "sha256": "8234e6d58fe465663ceb0a473f0c8edf99de120dcd09cd31f605f3ddbc5a224d",
+    "texto": "Se formarían olas gigantescas arrasando continentes enteros.",
+    "voiceConds": "alex.conds.pt",
+    "duracionSegundos": 4.714,
+    "palabras": [
+      {
+        "palabra": "Se",
+        "inicioMs": 0,
+        "finMs": 120
+      },
+      {
+        "palabra": "formarían",
+        "inicioMs": 120,
+        "finMs": 800
+      },
+      {
+        "palabra": "olas",
+        "inicioMs": 800,
+        "finMs": 1280
+      },
+      {
+        "palabra": "gigantescas",
+        "inicioMs": 1280,
+        "finMs": 2040
+      },
+      {
+        "palabra": "arrasando",
+        "inicioMs": 2400,
+        "finMs": 2900
+      },
+      {
+        "palabra": "continentes",
+        "inicioMs": 2900,
+        "finMs": 3560
+      },
+      {
+        "palabra": "enteros",
+        "inicioMs": 3560,
+        "finMs": 4220
+      }
+    ]
+  },
+  "escena_6": {
+    "sha256": "496f790f29c241ce697549f93bab7bd3a8927226c20d2b07256cfdd3054eb289",
+    "texto": "Y al reanudar el giro un segundo después, el choque sería catastrófico.",
+    "voiceConds": "alex.conds.pt",
+    "duracionSegundos": 4.738,
+    "palabras": [
+      {
+        "palabra": "Y",
+        "inicioMs": 0,
+        "finMs": 180
+      },
+      {
+        "palabra": "al",
+        "inicioMs": 180,
+        "finMs": 320
+      },
+      {
+        "palabra": "reanudar",
+        "inicioMs": 320,
+        "finMs": 800
+      },
+      {
+        "palabra": "el",
+        "inicioMs": 800,
+        "finMs": 920
+      },
+      {
+        "palabra": "giro",
+        "inicioMs": 920,
+        "finMs": 1180
+      },
+      {
+        "palabra": "un",
+        "inicioMs": 1180,
+        "finMs": 1360
+      },
+      {
+        "palabra": "segundo",
+        "inicioMs": 1360,
+        "finMs": 1700
+      },
+      {
+        "palabra": "después",
+        "inicioMs": 1700,
+        "finMs": 2180
+      },
+      {
+        "palabra": "el",
+        "inicioMs": 2740,
+        "finMs": 2860
+      },
+      {
+        "palabra": "choque",
+        "inicioMs": 2860,
+        "finMs": 3180
+      },
+      {
+        "palabra": "sería",
+        "inicioMs": 3180,
+        "finMs": 3460
+      },
+      {
+        "palabra": "catastrófico",
+        "inicioMs": 3460,
+        "finMs": 4260
+      }
+    ]
+  },
+  "escena_7": {
+    "sha256": "a92a72a0cebc17a7f15c90bc66223fcd6840a667d74155bc46f1700b3d634587",
+    "texto": "Por suerte, la física del espacio nos mantendrá girando por miles de millones de años.",
+    "voiceConds": "alex.conds.pt",
+    "duracionSegundos": 5.674,
+    "palabras": [
+      {
+        "palabra": "Por",
+        "inicioMs": 0,
+        "finMs": 220
+      },
+      {
+        "palabra": "suerte",
+        "inicioMs": 220,
+        "finMs": 740
+      },
+      {
+        "palabra": "la",
+        "inicioMs": 1000,
+        "finMs": 1120
+      },
+      {
+        "palabra": "física",
+        "inicioMs": 1120,
+        "finMs": 1420
+      },
+      {
+        "palabra": "del",
+        "inicioMs": 1420,
+        "finMs": 1700
+      },
+      {
+        "palabra": "espacio",
+        "inicioMs": 1700,
+        "finMs": 2160
+      },
+      {
+        "palabra": "nos",
+        "inicioMs": 2160,
+        "finMs": 2360
+      },
+      {
+        "palabra": "mantendrá",
+        "inicioMs": 2360,
+        "finMs": 2940
+      },
+      {
+        "palabra": "girando",
+        "inicioMs": 2940,
+        "finMs": 3480
+      },
+      {
+        "palabra": "por",
+        "inicioMs": 3480,
+        "finMs": 3700
+      },
+      {
+        "palabra": "miles",
+        "inicioMs": 3700,
+        "finMs": 4000
+      },
+      {
+        "palabra": "de",
+        "inicioMs": 4000,
+        "finMs": 4240
+      },
+      {
+        "palabra": "millones",
+        "inicioMs": 4240,
+        "finMs": 4560
+      },
+      {
+        "palabra": "de",
+        "inicioMs": 4560,
+        "finMs": 4860
+      },
+      {
+        "palabra": "años",
+        "inicioMs": 4860,
+        "finMs": 5180
+      }
+    ]
+  }
+}
