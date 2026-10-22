@@ -4,11 +4,11 @@
   "totales": {
     "posesCorporales": 68,
     "expresionesFaciales": 24,
-    "propsGenerales": 155,
+    "propsGenerales": 158,
     "propsFestivos": 123,
     "combinacionesCompuestas": 34,
     "combinacionesFestivas": 20,
-    "totalRecursos": 424
+    "totalRecursos": 427
   },
   "compatibilidadLegacy": {
     "normal": "standing_relaxed",
@@ -5107,6 +5107,78 @@
         "lorentz",
         "velocidad_luz",
         "gemelos"
+      ],
+      "compatibleComposicion": true
+    },
+    {
+      "id": "prop_magma_bubbling_crust",
+      "propParamId": "magma_bubbling_crust",
+      "nombre": "Prop: Corteza Basáltica con Magma Hirviendo y Burbujas a 1,200 °C",
+      "categoria": "props",
+      "subcategoria": "educacion_ciencia",
+      "emocion": "any",
+      "accion": "right",
+      "propsAsociados": [
+        "magma_bubbling_crust"
+      ],
+      "ruta": "poses/props/prop_magma_bubbling_crust.svg",
+      "formato": "svg",
+      "etiquetas": [
+        "lava",
+        "magma",
+        "volcan",
+        "caldera",
+        "basalto",
+        "calor",
+        "temperatura"
+      ],
+      "compatibleComposicion": true
+    },
+    {
+      "id": "prop_leidenfrost_cushion",
+      "propParamId": "leidenfrost_cushion",
+      "nombre": "Prop: Efecto Leidenfrost: Colchón de Vapor Hirviente Protector",
+      "categoria": "props",
+      "subcategoria": "educacion_ciencia",
+      "emocion": "any",
+      "accion": "overhead",
+      "propsAsociados": [
+        "leidenfrost_cushion"
+      ],
+      "ruta": "poses/props/prop_leidenfrost_cushion.svg",
+      "formato": "svg",
+      "etiquetas": [
+        "leidenfrost",
+        "vapor",
+        "termodinamica",
+        "aislamiento",
+        "volcan",
+        "fisica",
+        "ebullicion"
+      ],
+      "compatibleComposicion": true
+    },
+    {
+      "id": "prop_volcanic_density_scale",
+      "propParamId": "volcanic_density_scale",
+      "nombre": "Prop: Balanza de Densidad: Roca Fundida (3.1 g/cm³) vs Cuerpo Humano (1.0 g/cm³)",
+      "categoria": "props",
+      "subcategoria": "educacion_ciencia",
+      "emocion": "any",
+      "accion": "overhead",
+      "propsAsociados": [
+        "volcanic_density_scale"
+      ],
+      "ruta": "poses/props/prop_volcanic_density_scale.svg",
+      "formato": "svg",
+      "etiquetas": [
+        "balanza",
+        "densidad",
+        "lava",
+        "flotar",
+        "humano",
+        "comparacion",
+        "volcan"
       ],
       "compatibleComposicion": true
     },

@@ -711,6 +711,147 @@ const relativisticRocket = (f: number) => {
   </g>`;
 };
 
+const magmaBubblingCrust = (f: number) => {
+  const bubCycle1 = f % 36;
+  const bubScale1 = Math.min(1.2, bubCycle1 / 24);
+  const bubPopped1 = bubCycle1 > 24;
+
+  const bubCycle2 = (f + 18) % 36;
+  const bubScale2 = Math.min(1.1, bubCycle2 / 24);
+  const bubPopped2 = bubCycle2 > 24;
+
+  return `<g transform="scale(1.1)">
+    <!-- Base de roca basáltica neo-brutalista -->
+    <polygon points="-46,12 -38,-16 10,-24 46,-10 40,24 -24,28" fill="#1C1917" stroke="${S}" stroke-width="5" stroke-linejoin="round"/>
+    
+    <!-- Venas incandescentes de lava pulsante -->
+    <path d="M -34 -4 Q -10 6 12 -6 Q 26 8 38 4" stroke="#F97316" stroke-width="6" stroke-linecap="round" fill="none"/>
+    <path d="M -34 -4 Q -10 6 12 -6 Q 26 8 38 4" stroke="#FEF08A" stroke-width="2.5" stroke-linecap="round" fill="none"/>
+    <path d="M -8 6 Q 6 18 18 24" stroke="#EF4444" stroke-width="5" stroke-linecap="round" fill="none"/>
+    <path d="M -8 6 Q 6 18 18 24" stroke="#FEF08A" stroke-width="2" stroke-linecap="round" fill="none"/>
+
+    <!-- Burbuja 1 de gas sulfuroso hirviendo -->
+    ${
+      bubPopped1
+        ? `<g transform="translate(-14, 0)">
+            <circle cx="-6" cy="-8" r="2.5" fill="#FEF08A" stroke="${S}" stroke-width="1.5"/>
+            <circle cx="8" cy="-10" r="3" fill="#F59E0B" stroke="${S}" stroke-width="1.5"/>
+            <line x1="0" y1="-2" x2="0" y2="-12" stroke="#EF4444" stroke-width="2" stroke-linecap="round"/>
+          </g>`
+        : `<g transform="translate(-14, 0) scale(${n(bubScale1)})">
+            <ellipse cx="0" cy="0" rx="9" ry="7" fill="#F59E0B" stroke="${S}" stroke-width="3"/>
+            <ellipse cx="-2.5" cy="-2" rx="3" ry="2" fill="#FEF08A"/>
+          </g>`
+    }
+
+    <!-- Burbuja 2 de gas volcánico -->
+    ${
+      bubPopped2
+        ? `<g transform="translate(20, -2)">
+            <circle cx="-5" cy="-6" r="2.5" fill="#FEF08A" stroke="${S}" stroke-width="1.5"/>
+            <circle cx="6" cy="-8" r="2.5" fill="#F97316" stroke="${S}" stroke-width="1.5"/>
+          </g>`
+        : `<g transform="translate(20, -2) scale(${n(bubScale2)})">
+            <ellipse cx="0" cy="0" rx="8" ry="6" fill="#EA580C" stroke="${S}" stroke-width="2.5"/>
+            <ellipse cx="-2" cy="-2" rx="2.5" ry="1.5" fill="#FEF08A"/>
+          </g>`
+    }
+
+    <!-- Placa de temperatura extrema 1,200 °C -->
+    <rect x="-38" y="-44" width="76" height="16" rx="4" fill="#DC2626" stroke="${S}" stroke-width="3"/>
+    <text x="0" y="-32" font-family="'Arial Black', sans-serif" font-size="8.5" font-weight="900" fill="#FEF08A" text-anchor="middle">🔥 1,200 °C</text>
+  </g>`;
+};
+
+const leidenfrostCushion = (f: number) => {
+  const wave1 = Math.sin(f / 4) * 3;
+  const wave2 = Math.cos(f / 4) * 3;
+  const arrowFloat = Math.sin(f / 5) * 4;
+
+  return `<g transform="scale(1.12)">
+    <!-- Marco contenedor de infografía científica -->
+    <rect x="-48" y="-46" width="96" height="92" rx="6" fill="#0F172A" stroke="${S}" stroke-width="4.5"/>
+
+    <!-- Capa inferior: Mar de Lava a 1,200 °C -->
+    <rect x="-44" y="14" width="88" height="26" fill="#EA580C" stroke="${S}" stroke-width="3"/>
+    <path d="M -44 14 Q -22 ${n(10 + wave1)} 0 14 Q 22 ${n(18 - wave1)} 44 14" stroke="#FEF08A" stroke-width="4" fill="none"/>
+    <text x="0" y="32" font-family="'Arial Black', sans-serif" font-size="7" font-weight="900" fill="#FEF08A" text-anchor="middle">LAVA 1,200 °C</text>
+
+    <!-- Capa intermedia: Colchón de vapor Leidenfrost oscilante -->
+    <path d="M -42 ${n(2 + wave1)} Q -21 ${n(-4 + wave2)} 0 ${n(2 + wave1)} Q 21 ${n(8 - wave2)} 42 ${n(2 + wave1)}" stroke="#38BDF8" stroke-width="7" stroke-linecap="round" fill="none"/>
+    <path d="M -42 ${n(2 + wave1)} Q -21 ${n(-4 + wave2)} 0 ${n(2 + wave1)} Q 21 ${n(8 - wave2)} 42 ${n(2 + wave1)}" stroke="#FFFFFF" stroke-width="2.5" stroke-linecap="round" fill="none"/>
+
+    <!-- Flechas térmicas de rechazo hacia arriba -->
+    <path d="M -26 ${n(-4 + arrowFloat)} L -26 ${n(-12 + arrowFloat)} M -29 ${n(-9 + arrowFloat)} L -26 ${n(-13 + arrowFloat)} L -23 ${n(-9 + arrowFloat)}" stroke="#38BDF8" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+    <path d="M 26 ${n(-4 + arrowFloat)} L 26 ${n(-12 + arrowFloat)} M 23 ${n(-9 + arrowFloat)} L 26 ${n(-13 + arrowFloat)} L 29 ${n(-9 + arrowFloat)}" stroke="#38BDF8" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+
+    <!-- Capa superior: Bota / Tejido orgánico suspendido sin tocar la lava -->
+    <g transform="translate(0, -18)">
+      <!-- Bota aislada flotando en el vapor -->
+      <path d="M -16 -12 L -6 -12 L -6 2 L 18 2 L 18 10 L -16 10 Z" fill="#F8FAFC" stroke="${S}" stroke-width="3.5" stroke-linejoin="round"/>
+      <line x1="-12" y1="10" x2="16" y2="10" stroke="#EF4444" stroke-width="3" stroke-linecap="round"/>
+    </g>
+
+    <!-- Etiqueta superior del fenómeno -->
+    <rect x="-42" y="-42" width="84" height="13" rx="3" fill="#0284C7" stroke="${S}" stroke-width="2.5"/>
+    <text x="0" y="-33" font-family="'Arial Black', sans-serif" font-size="5.8" font-weight="900" fill="#FFFFFF" text-anchor="middle">EFECTO LEIDENFROST</text>
+  </g>`;
+};
+
+const volcanicDensityScale = (f: number) => {
+  const tilt = Math.sin(f / 14) * 6; // Grados de inclinación oscilante
+
+  return `<g transform="scale(1.12)">
+    <!-- Base de la balanza neo-brutalista -->
+    <rect x="-46" y="32" width="92" height="12" rx="3" fill="#1E293B" stroke="${S}" stroke-width="3.5"/>
+    <polygon points="0,32 -8,6 8,6" fill="#475569" stroke="${S}" stroke-width="3"/>
+
+    <!-- Brazo oscilante de la balanza -->
+    <g transform="rotate(${n(tilt)}, 0, 6)">
+      <line x1="-38" y1="6" x2="38" y2="6" stroke="${S}" stroke-width="5" stroke-linecap="round"/>
+      <circle cx="0" cy="6" r="4.5" fill="#F59E0B" stroke="${S}" stroke-width="2.5"/>
+
+      <!-- Cuerdas del plato izquierdo (Lava pesada) -->
+      <line x1="-34" y1="6" x2="-44" y2="24" stroke="${S}" stroke-width="2"/>
+      <line x1="-34" y1="6" x2="-24" y2="24" stroke="${S}" stroke-width="2"/>
+      <line x1="-46" y1="24" x2="-22" y2="24" stroke="${S}" stroke-width="3.5" stroke-linecap="round"/>
+
+      <!-- Plato izquierdo: Bloque de roca basáltica 3.1 g/cm³ -->
+      <g transform="translate(-34, 15)">
+        <polygon points="-9,7 9,7 7,-3 -7,-3" fill="#1C1917" stroke="${S}" stroke-width="2.5"/>
+        <path d="M -4 2 L 0 5 L 4 0" stroke="#F97316" stroke-width="1.8" fill="none"/>
+      </g>
+
+      <!-- Cuerdas del plato derecho (Humano liviano flotando) -->
+      <line x1="34" y1="6" x2="24" y2="24" stroke="${S}" stroke-width="2"/>
+      <line x1="34" y1="6" x2="44" y2="24" stroke="${S}" stroke-width="2"/>
+      <line x1="22" y1="24" x2="46" y2="24" stroke="${S}" stroke-width="3.5" stroke-linecap="round"/>
+
+      <!-- Plato derecho: Silueta humana flotando 1.0 g/cm³ -->
+      <g transform="translate(34, 13)">
+        <circle cx="0" cy="-6" r="3" fill="#38BDF8" stroke="${S}" stroke-width="1.5"/>
+        <line x1="0" y1="-3" x2="0" y2="5" stroke="#38BDF8" stroke-width="2.5" stroke-linecap="round"/>
+        <line x1="-4" y1="0" x2="4" y2="0" stroke="#38BDF8" stroke-width="2" stroke-linecap="round"/>
+        <line x1="0" y1="5" x2="-3" y2="9" stroke="#38BDF8" stroke-width="2" stroke-linecap="round"/>
+        <line x1="0" y1="5" x2="3" y2="9" stroke="#38BDF8" stroke-width="2" stroke-linecap="round"/>
+      </g>
+    </g>
+
+    <!-- Indicador de densidades comparativas -->
+    <rect x="-48" y="-44" width="46" height="20" rx="3" fill="#DC2626" stroke="${S}" stroke-width="2.5"/>
+    <text x="-25" y="-34" font-family="'Arial Black', sans-serif" font-size="5.5" font-weight="900" fill="#FFFFFF" text-anchor="middle">LAVA ROCA</text>
+    <text x="-25" y="-26" font-family="'Arial Black', sans-serif" font-size="6.8" font-weight="900" fill="#FEF08A" text-anchor="middle">3.1 g/cm³</text>
+
+    <rect x="2" y="-44" width="46" height="20" rx="3" fill="#0284C7" stroke="${S}" stroke-width="2.5"/>
+    <text x="25" y="-34" font-family="'Arial Black', sans-serif" font-size="5.5" font-weight="900" fill="#FFFFFF" text-anchor="middle">CUERPO HUMANO</text>
+    <text x="25" y="-26" font-family="'Arial Black', sans-serif" font-size="6.8" font-weight="900" fill="#BAE6FD" text-anchor="middle">1.0 g/cm³</text>
+
+    <!-- Veredicto: ¡3 VECES MÁS DENSO! -->
+    <rect x="-38" y="-18" width="76" height="12" rx="3" fill="#FACC15" stroke="${S}" stroke-width="2"/>
+    <text x="0" y="-9.5" font-family="'Arial Black', sans-serif" font-size="6" font-weight="900" fill="#000000" text-anchor="middle">¡LA LAVA ES 3x MÁS DENSA!</text>
+  </g>`;
+};
+
 export const PROPS_LIBRARY: Record<string, PropDef> = {
   // ===========================================================================
   // 1. EDUCACIÓN Y CIENCIA
@@ -2006,5 +2147,32 @@ export const PROPS_LIBRARY: Record<string, PropDef> = {
     svg: relativisticRocket(0),
     animatedSvg: relativisticRocket,
     tags: ["cohete", "nave", "espacio", "relatividad", "lorentz", "velocidad_luz", "gemelos"],
+  },
+  magma_bubbling_crust: {
+    id: "magma_bubbling_crust",
+    name: "Corteza Basáltica con Magma Hirviendo y Burbujas a 1,200 °C",
+    family: "educacion_ciencia",
+    defaultPlacement: "right",
+    svg: magmaBubblingCrust(0),
+    animatedSvg: magmaBubblingCrust,
+    tags: ["lava", "magma", "volcan", "caldera", "basalto", "calor", "temperatura"],
+  },
+  leidenfrost_cushion: {
+    id: "leidenfrost_cushion",
+    name: "Efecto Leidenfrost: Colchón de Vapor Hirviente Protector",
+    family: "educacion_ciencia",
+    defaultPlacement: "overhead",
+    svg: leidenfrostCushion(0),
+    animatedSvg: leidenfrostCushion,
+    tags: ["leidenfrost", "vapor", "termodinamica", "aislamiento", "volcan", "fisica", "ebullicion"],
+  },
+  volcanic_density_scale: {
+    id: "volcanic_density_scale",
+    name: "Balanza de Densidad: Roca Fundida (3.1 g/cm³) vs Cuerpo Humano (1.0 g/cm³)",
+    family: "educacion_ciencia",
+    defaultPlacement: "overhead",
+    svg: volcanicDensityScale(0),
+    animatedSvg: volcanicDensityScale,
+    tags: ["balanza", "densidad", "lava", "flotar", "humano", "comparacion", "volcan"],
   },
 };

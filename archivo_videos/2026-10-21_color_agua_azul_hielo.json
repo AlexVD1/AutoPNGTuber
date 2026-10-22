@@ -1,0 +1,1625 @@
+{
+  "meta": {
+    "id": "color_agua_azul_hielo",
+    "slug": "color_agua_azul_hielo",
+    "temaResumen": "¿Por qué el agua es azul pero el hielo es transparente? El secreto de la absorción de luz"
+  },
+  "escenas": [
+    {
+      "id": 1,
+      "texto": "¿Alguna vez te has preguntado por qué el agua del mar es de un azul profundo, pero un cubo de hielo es completamente transparente?",
+      "icono": "Droplet",
+      "colorIcono": "#0EA5E9",
+      "tituloVisual": "AGUA AZUL",
+      "composicionVisual": "plano_general",
+      "escenario": "mar_abierto",
+      "layout": "narrativo",
+      "transicion": "zoom_in",
+      "efectosCamara": [
+        "drift"
+      ],
+      "sfx": "sfx/sfx_whoosh.wav",
+      "volumenSfx": 0.2,
+      "palabrasClave": [
+        "agua del mar",
+        "azul profundo",
+        "cubo de hielo transparente"
+      ],
+      "personajes": [
+        {
+          "id": "fisico",
+          "posicion": {
+            "x": -160,
+            "y": 70
+          },
+          "escala": 1.05,
+          "orientacion": "derecha",
+          "prop": "water_glass",
+          "poseId": "presenting_object",
+          "expresion": "eureka",
+          "acciones": [
+            {
+              "tipo": "caminar_hacia",
+              "desdeX": -260,
+              "haciaX": -120
+            }
+          ],
+          "habla": true
+        }
+      ],
+      "duracionSegundos": 6.346,
+      "palabras": [
+        {
+          "palabra": "Alguna",
+          "inicioMs": 0,
+          "finMs": 400
+        },
+        {
+          "palabra": "vez",
+          "inicioMs": 400,
+          "finMs": 540
+        },
+        {
+          "palabra": "te",
+          "inicioMs": 540,
+          "finMs": 720
+        },
+        {
+          "palabra": "has",
+          "inicioMs": 720,
+          "finMs": 760
+        },
+        {
+          "palabra": "preguntado",
+          "inicioMs": 760,
+          "finMs": 1260
+        },
+        {
+          "palabra": "por",
+          "inicioMs": 1260,
+          "finMs": 1440
+        },
+        {
+          "palabra": "qué",
+          "inicioMs": 1440,
+          "finMs": 1620
+        },
+        {
+          "palabra": "el",
+          "inicioMs": 1620,
+          "finMs": 1760
+        },
+        {
+          "palabra": "agua",
+          "inicioMs": 1760,
+          "finMs": 1900
+        },
+        {
+          "palabra": "del",
+          "inicioMs": 1900,
+          "finMs": 2040
+        },
+        {
+          "palabra": "mar",
+          "inicioMs": 2040,
+          "finMs": 2260
+        },
+        {
+          "palabra": "es",
+          "inicioMs": 2260,
+          "finMs": 2520
+        },
+        {
+          "palabra": "de",
+          "inicioMs": 2520,
+          "finMs": 2620
+        },
+        {
+          "palabra": "un",
+          "inicioMs": 2620,
+          "finMs": 2740
+        },
+        {
+          "palabra": "azul",
+          "inicioMs": 2740,
+          "finMs": 2900
+        },
+        {
+          "palabra": "profundo",
+          "inicioMs": 2900,
+          "finMs": 3500
+        },
+        {
+          "palabra": "pero",
+          "inicioMs": 3600,
+          "finMs": 3720
+        },
+        {
+          "palabra": "un",
+          "inicioMs": 3720,
+          "finMs": 3840
+        },
+        {
+          "palabra": "cubo",
+          "inicioMs": 3840,
+          "finMs": 4100
+        },
+        {
+          "palabra": "de",
+          "inicioMs": 4100,
+          "finMs": 4220
+        },
+        {
+          "palabra": "hielo",
+          "inicioMs": 4220,
+          "finMs": 4540
+        },
+        {
+          "palabra": "es",
+          "inicioMs": 4540,
+          "finMs": 5000
+        },
+        {
+          "palabra": "completamente",
+          "inicioMs": 5000,
+          "finMs": 5860
+        },
+        {
+          "palabra": "transparente",
+          "inicioMs": 5860,
+          "finMs": 6096
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "texto": "Contrario a lo que muchos creen, el agua no es azul por reflejar el cielo: tiene un color azul propio causado por la absorción selectiva de la luz.",
+      "icono": "Sky",
+      "colorIcono": "#38BDF8",
+      "tituloVisual": "NO ES EL CIELO",
+      "composicionVisual": "primer_plano",
+      "escenario": "laboratorio",
+      "layout": "narrativo",
+      "transicion": "whip_right",
+      "efectosCamara": [
+        "shake",
+        "punch"
+      ],
+      "sfx": "sfx/sfx_dramatic_hit.wav",
+      "volumenSfx": 0.25,
+      "palabrasClave": [
+        "no es por el cielo",
+        "color azul propio",
+        "absorción selectiva"
+      ],
+      "personajes": [
+        {
+          "id": "fisico",
+          "posicion": {
+            "x": 0,
+            "y": 50
+          },
+          "escala": 1.15,
+          "orientacion": "derecha",
+          "poseId": "backing_away_scared",
+          "expresion": "shocked",
+          "habla": true
+        }
+      ],
+      "duracionSegundos": 8.098,
+      "palabras": [
+        {
+          "palabra": "Contrario",
+          "inicioMs": 0,
+          "finMs": 580
+        },
+        {
+          "palabra": "a",
+          "inicioMs": 580,
+          "finMs": 660
+        },
+        {
+          "palabra": "lo",
+          "inicioMs": 660,
+          "finMs": 720
+        },
+        {
+          "palabra": "que",
+          "inicioMs": 720,
+          "finMs": 860
+        },
+        {
+          "palabra": "muchos",
+          "inicioMs": 860,
+          "finMs": 1120
+        },
+        {
+          "palabra": "creen",
+          "inicioMs": 1120,
+          "finMs": 1680
+        },
+        {
+          "palabra": "el",
+          "inicioMs": 1900,
+          "finMs": 2040
+        },
+        {
+          "palabra": "agua",
+          "inicioMs": 2040,
+          "finMs": 2260
+        },
+        {
+          "palabra": "no",
+          "inicioMs": 2260,
+          "finMs": 2420
+        },
+        {
+          "palabra": "es",
+          "inicioMs": 2420,
+          "finMs": 2560
+        },
+        {
+          "palabra": "azul",
+          "inicioMs": 2560,
+          "finMs": 2800
+        },
+        {
+          "palabra": "por",
+          "inicioMs": 2800,
+          "finMs": 3020
+        },
+        {
+          "palabra": "reflejar",
+          "inicioMs": 3020,
+          "finMs": 3440
+        },
+        {
+          "palabra": "el",
+          "inicioMs": 3440,
+          "finMs": 3580
+        },
+        {
+          "palabra": "cielo",
+          "inicioMs": 3580,
+          "finMs": 3920
+        },
+        {
+          "palabra": "tiene",
+          "inicioMs": 4180,
+          "finMs": 4340
+        },
+        {
+          "palabra": "un",
+          "inicioMs": 4340,
+          "finMs": 4520
+        },
+        {
+          "palabra": "color",
+          "inicioMs": 4520,
+          "finMs": 4700
+        },
+        {
+          "palabra": "azul",
+          "inicioMs": 4700,
+          "finMs": 5000
+        },
+        {
+          "palabra": "propio",
+          "inicioMs": 5000,
+          "finMs": 5440
+        },
+        {
+          "palabra": "causado",
+          "inicioMs": 5440,
+          "finMs": 5960
+        },
+        {
+          "palabra": "por",
+          "inicioMs": 5960,
+          "finMs": 6140
+        },
+        {
+          "palabra": "la",
+          "inicioMs": 6140,
+          "finMs": 6280
+        },
+        {
+          "palabra": "absorción",
+          "inicioMs": 6280,
+          "finMs": 6720
+        },
+        {
+          "palabra": "selectiva",
+          "inicioMs": 6720,
+          "finMs": 7220
+        },
+        {
+          "palabra": "de",
+          "inicioMs": 7220,
+          "finMs": 7360
+        },
+        {
+          "palabra": "la",
+          "inicioMs": 7360,
+          "finMs": 7460
+        },
+        {
+          "palabra": "luz",
+          "inicioMs": 7460,
+          "finMs": 7620
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "texto": "La molécula de agua absorbe las longitudes de onda rojas, naranjas y amarillas de la luz, pero deja pasar las longitudes de onda azules y verdes.",
+      "icono": "Palette",
+      "colorIcono": "#8B5CF6",
+      "tituloVisual": "ABSORCIÓN SELECTIVA",
+      "composicionVisual": "plano_general",
+      "escenario": "laboratorio",
+      "layout": "narrativo",
+      "transicion": "whip_left",
+      "efectosCamara": [
+        "drift"
+      ],
+      "palabrasClave": [
+        "absorbe longitudes rojas",
+        "deja pasar azules",
+        "espectro de luz"
+      ],
+      "personajes": [
+        {
+          "id": "fisico",
+          "posicion": {
+            "x": -160,
+            "y": 70
+          },
+          "escala": 1.05,
+          "orientacion": "derecha",
+          "prop": "prism_spectrum",
+          "poseId": "presenting_object",
+          "expresion": "analytical",
+          "habla": true
+        }
+      ],
+      "duracionSegundos": 7.69,
+      "palabras": [
+        {
+          "palabra": "La",
+          "inicioMs": 0,
+          "finMs": 180
+        },
+        {
+          "palabra": "molécula",
+          "inicioMs": 180,
+          "finMs": 640
+        },
+        {
+          "palabra": "de",
+          "inicioMs": 640,
+          "finMs": 740
+        },
+        {
+          "palabra": "agua",
+          "inicioMs": 740,
+          "finMs": 920
+        },
+        {
+          "palabra": "absorbe",
+          "inicioMs": 920,
+          "finMs": 1340
+        },
+        {
+          "palabra": "las",
+          "inicioMs": 1340,
+          "finMs": 1440
+        },
+        {
+          "palabra": "longitudes",
+          "inicioMs": 1440,
+          "finMs": 1900
+        },
+        {
+          "palabra": "de",
+          "inicioMs": 1900,
+          "finMs": 2160
+        },
+        {
+          "palabra": "onda",
+          "inicioMs": 2160,
+          "finMs": 2460
+        },
+        {
+          "palabra": "rojas",
+          "inicioMs": 2460,
+          "finMs": 2780
+        },
+        {
+          "palabra": "naranjas",
+          "inicioMs": 2880,
+          "finMs": 3260
+        },
+        {
+          "palabra": "y",
+          "inicioMs": 3260,
+          "finMs": 3400
+        },
+        {
+          "palabra": "amarillas",
+          "inicioMs": 3400,
+          "finMs": 3760
+        },
+        {
+          "palabra": "de",
+          "inicioMs": 3760,
+          "finMs": 3880
+        },
+        {
+          "palabra": "la",
+          "inicioMs": 3880,
+          "finMs": 3980
+        },
+        {
+          "palabra": "luz",
+          "inicioMs": 3980,
+          "finMs": 4180
+        },
+        {
+          "palabra": "pero",
+          "inicioMs": 4460,
+          "finMs": 4600
+        },
+        {
+          "palabra": "deja",
+          "inicioMs": 4600,
+          "finMs": 4840
+        },
+        {
+          "palabra": "pasar",
+          "inicioMs": 4840,
+          "finMs": 5160
+        },
+        {
+          "palabra": "las",
+          "inicioMs": 5160,
+          "finMs": 5340
+        },
+        {
+          "palabra": "longitudes",
+          "inicioMs": 5340,
+          "finMs": 5860
+        },
+        {
+          "palabra": "de",
+          "inicioMs": 5860,
+          "finMs": 6060
+        },
+        {
+          "palabra": "onda",
+          "inicioMs": 6060,
+          "finMs": 6560
+        },
+        {
+          "palabra": "azules",
+          "inicioMs": 6560,
+          "finMs": 6780
+        },
+        {
+          "palabra": "y",
+          "inicioMs": 6780,
+          "finMs": 7220
+        },
+        {
+          "palabra": "verdes",
+          "inicioMs": 7220,
+          "finMs": 7440
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "texto": "En un vaso de agua, la cantidad de moléculas es tan pequeña que la absorción es imperceptible, por eso el agua parece transparente.",
+      "icono": "GlassWater",
+      "colorIcono": "#FACC15",
+      "tituloVisual": "VASO TRANSPARENTE",
+      "composicionVisual": "primer_plano",
+      "escenario": "laboratorio",
+      "layout": "narrativo",
+      "transicion": "zoom_in",
+      "efectosCamara": [
+        "drift"
+      ],
+      "palabrasClave": [
+        "cantidad de moléculas",
+        "absorción imperceptible",
+        "agua transparente"
+      ],
+      "personajes": [
+        {
+          "id": "fisico",
+          "posicion": {
+            "x": 0,
+            "y": 50
+          },
+          "escala": 1.15,
+          "orientacion": "derecha",
+          "prop": "water_glass",
+          "poseId": "presenting_object",
+          "expresion": "talking_enthusiastic",
+          "habla": true
+        }
+      ],
+      "duracionSegundos": 6.322,
+      "palabras": [
+        {
+          "palabra": "En",
+          "inicioMs": 0,
+          "finMs": 180
+        },
+        {
+          "palabra": "un",
+          "inicioMs": 180,
+          "finMs": 280
+        },
+        {
+          "palabra": "vaso",
+          "inicioMs": 280,
+          "finMs": 580
+        },
+        {
+          "palabra": "de",
+          "inicioMs": 580,
+          "finMs": 680
+        },
+        {
+          "palabra": "agua",
+          "inicioMs": 680,
+          "finMs": 960
+        },
+        {
+          "palabra": "la",
+          "inicioMs": 1000,
+          "finMs": 1120
+        },
+        {
+          "palabra": "cantidad",
+          "inicioMs": 1120,
+          "finMs": 1320
+        },
+        {
+          "palabra": "de",
+          "inicioMs": 1320,
+          "finMs": 1560
+        },
+        {
+          "palabra": "moléculas",
+          "inicioMs": 1560,
+          "finMs": 2100
+        },
+        {
+          "palabra": "es",
+          "inicioMs": 2100,
+          "finMs": 2280
+        },
+        {
+          "palabra": "tan",
+          "inicioMs": 2280,
+          "finMs": 2420
+        },
+        {
+          "palabra": "pequeña",
+          "inicioMs": 2420,
+          "finMs": 2800
+        },
+        {
+          "palabra": "que",
+          "inicioMs": 2800,
+          "finMs": 3000
+        },
+        {
+          "palabra": "la",
+          "inicioMs": 3000,
+          "finMs": 3100
+        },
+        {
+          "palabra": "absorción",
+          "inicioMs": 3100,
+          "finMs": 3500
+        },
+        {
+          "palabra": "es",
+          "inicioMs": 3500,
+          "finMs": 3660
+        },
+        {
+          "palabra": "imperceptible",
+          "inicioMs": 3660,
+          "finMs": 4320
+        },
+        {
+          "palabra": "por",
+          "inicioMs": 4400,
+          "finMs": 4480
+        },
+        {
+          "palabra": "eso",
+          "inicioMs": 4480,
+          "finMs": 4640
+        },
+        {
+          "palabra": "el",
+          "inicioMs": 4640,
+          "finMs": 4720
+        },
+        {
+          "palabra": "agua",
+          "inicioMs": 4720,
+          "finMs": 4860
+        },
+        {
+          "palabra": "parece",
+          "inicioMs": 4860,
+          "finMs": 5140
+        },
+        {
+          "palabra": "transparente",
+          "inicioMs": 5140,
+          "finMs": 5860
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "texto": "Pero en el océano, la luz debe atravesar cientos de metros de agua, acumulando la absorción hasta que solo sobrevive el color azul.",
+      "icono": "Waves",
+      "colorIcono": "#0EA5E9",
+      "tituloVisual": "OCÉANO PROFUNDO",
+      "composicionVisual": "plano_general",
+      "escenario": "mar_abierto",
+      "layout": "narrativo",
+      "transicion": "corte",
+      "efectosCamara": [
+        "drift"
+      ],
+      "palabrasClave": [
+        "cientos de metros",
+        "acumulando absorción",
+        "solo sobrevive azul"
+      ],
+      "personajes": [
+        {
+          "id": "fisico",
+          "posicion": {
+            "x": -160,
+            "y": 70
+          },
+          "escala": 1.05,
+          "orientacion": "derecha",
+          "poseId": "explaining_both_hands",
+          "expresion": "analytical",
+          "habla": true
+        }
+      ],
+      "duracionSegundos": 7.522,
+      "palabras": [
+        {
+          "palabra": "Pero",
+          "inicioMs": 0,
+          "finMs": 240
+        },
+        {
+          "palabra": "en",
+          "inicioMs": 240,
+          "finMs": 340
+        },
+        {
+          "palabra": "el",
+          "inicioMs": 340,
+          "finMs": 440
+        },
+        {
+          "palabra": "océano",
+          "inicioMs": 440,
+          "finMs": 860
+        },
+        {
+          "palabra": "la",
+          "inicioMs": 860,
+          "finMs": 1300
+        },
+        {
+          "palabra": "luz",
+          "inicioMs": 1300,
+          "finMs": 1480
+        },
+        {
+          "palabra": "debe",
+          "inicioMs": 1480,
+          "finMs": 1760
+        },
+        {
+          "palabra": "atravesar",
+          "inicioMs": 1760,
+          "finMs": 2280
+        },
+        {
+          "palabra": "cientos",
+          "inicioMs": 2280,
+          "finMs": 2660
+        },
+        {
+          "palabra": "de",
+          "inicioMs": 2660,
+          "finMs": 2840
+        },
+        {
+          "palabra": "metros",
+          "inicioMs": 2840,
+          "finMs": 3040
+        },
+        {
+          "palabra": "de",
+          "inicioMs": 3040,
+          "finMs": 3260
+        },
+        {
+          "palabra": "agua",
+          "inicioMs": 3260,
+          "finMs": 3540
+        },
+        {
+          "palabra": "acumulando",
+          "inicioMs": 3840,
+          "finMs": 4380
+        },
+        {
+          "palabra": "la",
+          "inicioMs": 4380,
+          "finMs": 4520
+        },
+        {
+          "palabra": "absorción",
+          "inicioMs": 4520,
+          "finMs": 5040
+        },
+        {
+          "palabra": "hasta",
+          "inicioMs": 5040,
+          "finMs": 5520
+        },
+        {
+          "palabra": "que",
+          "inicioMs": 5520,
+          "finMs": 5680
+        },
+        {
+          "palabra": "solo",
+          "inicioMs": 5680,
+          "finMs": 5900
+        },
+        {
+          "palabra": "sobrevive",
+          "inicioMs": 5900,
+          "finMs": 6420
+        },
+        {
+          "palabra": "el",
+          "inicioMs": 6420,
+          "finMs": 6560
+        },
+        {
+          "palabra": "color",
+          "inicioMs": 6560,
+          "finMs": 6740
+        },
+        {
+          "palabra": "azul",
+          "inicioMs": 6740,
+          "finMs": 7060
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "texto": "A partir de los veinte metros de profundidad, el color rojo desaparece por completo, y a cien metros solo queda el azul oscuro.",
+      "icono": "ArrowDown",
+      "colorIcono": "#1E40AF",
+      "tituloVisual": "PROFUNDIDAD AZUL",
+      "composicionVisual": "cifras_concepto",
+      "escenario": "abismo_oceanico",
+      "layout": "narrativo",
+      "transicion": "zoom_in",
+      "efectosCamara": [
+        "drift"
+      ],
+      "palabrasClave": [
+        "veinte metros",
+        "color rojo desaparece",
+        "cien metros azul oscuro"
+      ],
+      "personajes": [
+        {
+          "id": "fisico",
+          "posicion": {
+            "x": 0,
+            "y": 50
+          },
+          "escala": 1.15,
+          "orientacion": "derecha",
+          "prop": "depth_sonar_marker",
+          "poseId": "presenting_object",
+          "expresion": "eureka",
+          "habla": true
+        }
+      ],
+      "duracionSegundos": 6.898,
+      "palabras": [
+        {
+          "palabra": "A",
+          "inicioMs": 0,
+          "finMs": 160
+        },
+        {
+          "palabra": "partir",
+          "inicioMs": 160,
+          "finMs": 380
+        },
+        {
+          "palabra": "de",
+          "inicioMs": 380,
+          "finMs": 560
+        },
+        {
+          "palabra": "los",
+          "inicioMs": 560,
+          "finMs": 660
+        },
+        {
+          "palabra": "veinte",
+          "inicioMs": 660,
+          "finMs": 940
+        },
+        {
+          "palabra": "metros",
+          "inicioMs": 940,
+          "finMs": 1240
+        },
+        {
+          "palabra": "de",
+          "inicioMs": 1240,
+          "finMs": 1400
+        },
+        {
+          "palabra": "profundidad",
+          "inicioMs": 1400,
+          "finMs": 1980
+        },
+        {
+          "palabra": "el",
+          "inicioMs": 2160,
+          "finMs": 2220
+        },
+        {
+          "palabra": "color",
+          "inicioMs": 2220,
+          "finMs": 2420
+        },
+        {
+          "palabra": "rojo",
+          "inicioMs": 2420,
+          "finMs": 2780
+        },
+        {
+          "palabra": "desaparece",
+          "inicioMs": 2780,
+          "finMs": 3360
+        },
+        {
+          "palabra": "por",
+          "inicioMs": 3360,
+          "finMs": 3500
+        },
+        {
+          "palabra": "completo",
+          "inicioMs": 3500,
+          "finMs": 4020
+        },
+        {
+          "palabra": "y",
+          "inicioMs": 4020,
+          "finMs": 4440
+        },
+        {
+          "palabra": "a",
+          "inicioMs": 4440,
+          "finMs": 4660
+        },
+        {
+          "palabra": "cien",
+          "inicioMs": 4660,
+          "finMs": 4980
+        },
+        {
+          "palabra": "metros",
+          "inicioMs": 4980,
+          "finMs": 5240
+        },
+        {
+          "palabra": "solo",
+          "inicioMs": 5240,
+          "finMs": 5500
+        },
+        {
+          "palabra": "queda",
+          "inicioMs": 5500,
+          "finMs": 5760
+        },
+        {
+          "palabra": "el",
+          "inicioMs": 5760,
+          "finMs": 5980
+        },
+        {
+          "palabra": "azul",
+          "inicioMs": 5980,
+          "finMs": 6420
+        },
+        {
+          "palabra": "oscuro",
+          "inicioMs": 6420,
+          "finMs": 6648
+        }
+      ]
+    },
+    {
+      "id": 7,
+      "texto": "El hielo es transparente porque en estado sólido, las moléculas de agua se organizan en una estructura cristalina ordenada que no absorbe luz visible.",
+      "icono": "Snowflake",
+      "colorIcono": "#67E8F9",
+      "tituloVisual": "HIELO TRANSPARENTE",
+      "composicionVisual": "primer_plano",
+      "escenario": "lago_helado",
+      "layout": "narrativo",
+      "transicion": "whip_right",
+      "efectosCamara": [
+        "drift"
+      ],
+      "palabrasClave": [
+        "estado sólido",
+        "estructura cristalina",
+        "no absorbe luz visible"
+      ],
+      "personajes": [
+        {
+          "id": "fisico",
+          "posicion": {
+            "x": -160,
+            "y": 70
+          },
+          "escala": 1.05,
+          "orientacion": "derecha",
+          "prop": "ice_crystal_hex",
+          "poseId": "presenting_object",
+          "expresion": "analytical",
+          "habla": true
+        }
+      ],
+      "duracionSegundos": 8.266,
+      "palabras": [
+        {
+          "palabra": "El",
+          "inicioMs": 0,
+          "finMs": 240
+        },
+        {
+          "palabra": "hielo",
+          "inicioMs": 240,
+          "finMs": 440
+        },
+        {
+          "palabra": "es",
+          "inicioMs": 440,
+          "finMs": 580
+        },
+        {
+          "palabra": "transparente",
+          "inicioMs": 580,
+          "finMs": 1180
+        },
+        {
+          "palabra": "porque",
+          "inicioMs": 1180,
+          "finMs": 1440
+        },
+        {
+          "palabra": "en",
+          "inicioMs": 1440,
+          "finMs": 1720
+        },
+        {
+          "palabra": "estado",
+          "inicioMs": 1720,
+          "finMs": 2020
+        },
+        {
+          "palabra": "sólido",
+          "inicioMs": 2020,
+          "finMs": 2560
+        },
+        {
+          "palabra": "las",
+          "inicioMs": 2560,
+          "finMs": 3560
+        },
+        {
+          "palabra": "moléculas",
+          "inicioMs": 3560,
+          "finMs": 4020
+        },
+        {
+          "palabra": "de",
+          "inicioMs": 4020,
+          "finMs": 4140
+        },
+        {
+          "palabra": "agua",
+          "inicioMs": 4140,
+          "finMs": 4320
+        },
+        {
+          "palabra": "se",
+          "inicioMs": 4320,
+          "finMs": 4460
+        },
+        {
+          "palabra": "organizan",
+          "inicioMs": 4460,
+          "finMs": 4900
+        },
+        {
+          "palabra": "en",
+          "inicioMs": 4900,
+          "finMs": 5000
+        },
+        {
+          "palabra": "una",
+          "inicioMs": 5000,
+          "finMs": 5140
+        },
+        {
+          "palabra": "estructura",
+          "inicioMs": 5140,
+          "finMs": 5540
+        },
+        {
+          "palabra": "cristalina",
+          "inicioMs": 5540,
+          "finMs": 5680
+        },
+        {
+          "palabra": "ordenada",
+          "inicioMs": 5680,
+          "finMs": 5860
+        },
+        {
+          "palabra": "que",
+          "inicioMs": 5860,
+          "finMs": 6060
+        },
+        {
+          "palabra": "no",
+          "inicioMs": 6060,
+          "finMs": 6480
+        },
+        {
+          "palabra": "absorbe",
+          "inicioMs": 6480,
+          "finMs": 6660
+        },
+        {
+          "palabra": "luz",
+          "inicioMs": 6660,
+          "finMs": 6840
+        },
+        {
+          "palabra": "visible",
+          "inicioMs": 6840,
+          "finMs": 7220
+        }
+      ]
+    },
+    {
+      "id": 8,
+      "texto": "Además, el hielo tiene burbujas de aire atrapadas que dispersan la luz en todas las direcciones, haciéndolo parecer blanco y opaco.",
+      "icono": "Circle",
+      "colorIcono": "#E0F2FE",
+      "tituloVisual": "BURBUJAS DE AIRE",
+      "composicionVisual": "plano_general",
+      "escenario": "lago_helado",
+      "layout": "narrativo",
+      "transicion": "corte",
+      "efectosCamara": [
+        "drift"
+      ],
+      "palabrasClave": [
+        "burbujas de aire",
+        "dispersan la luz",
+        "blanco y opaco"
+      ],
+      "personajes": [
+        {
+          "id": "fisico",
+          "posicion": {
+            "x": -160,
+            "y": 70
+          },
+          "escala": 1.05,
+          "orientacion": "derecha",
+          "poseId": "explaining_both_hands",
+          "expresion": "talking_enthusiastic",
+          "habla": true
+        }
+      ],
+      "duracionSegundos": 7.81,
+      "palabras": [
+        {
+          "palabra": "Además",
+          "inicioMs": 0,
+          "finMs": 420
+        },
+        {
+          "palabra": "el",
+          "inicioMs": 720,
+          "finMs": 840
+        },
+        {
+          "palabra": "hielo",
+          "inicioMs": 840,
+          "finMs": 1120
+        },
+        {
+          "palabra": "tiene",
+          "inicioMs": 1120,
+          "finMs": 1320
+        },
+        {
+          "palabra": "burbujas",
+          "inicioMs": 1320,
+          "finMs": 1920
+        },
+        {
+          "palabra": "de",
+          "inicioMs": 1920,
+          "finMs": 2080
+        },
+        {
+          "palabra": "aire",
+          "inicioMs": 2080,
+          "finMs": 2300
+        },
+        {
+          "palabra": "atrapadas",
+          "inicioMs": 2300,
+          "finMs": 2920
+        },
+        {
+          "palabra": "que",
+          "inicioMs": 2920,
+          "finMs": 3120
+        },
+        {
+          "palabra": "dispersan",
+          "inicioMs": 3120,
+          "finMs": 3640
+        },
+        {
+          "palabra": "la",
+          "inicioMs": 3640,
+          "finMs": 3760
+        },
+        {
+          "palabra": "luz",
+          "inicioMs": 3760,
+          "finMs": 3960
+        },
+        {
+          "palabra": "en",
+          "inicioMs": 3960,
+          "finMs": 4260
+        },
+        {
+          "palabra": "todas",
+          "inicioMs": 4260,
+          "finMs": 4500
+        },
+        {
+          "palabra": "las",
+          "inicioMs": 4500,
+          "finMs": 4720
+        },
+        {
+          "palabra": "direcciones",
+          "inicioMs": 4720,
+          "finMs": 5240
+        },
+        {
+          "palabra": "haciéndolo",
+          "inicioMs": 5240,
+          "finMs": 6040
+        },
+        {
+          "palabra": "parecer",
+          "inicioMs": 6040,
+          "finMs": 6400
+        },
+        {
+          "palabra": "blanco",
+          "inicioMs": 6400,
+          "finMs": 6820
+        },
+        {
+          "palabra": "y",
+          "inicioMs": 6820,
+          "finMs": 6960
+        },
+        {
+          "palabra": "opaco",
+          "inicioMs": 6960,
+          "finMs": 7340
+        }
+      ]
+    },
+    {
+      "id": 9,
+      "texto": "Por eso los glaciares antiguos, que tienen menos burbujas, son de un azul intenso: la luz azul puede penetrar profundamente antes de ser absorbida.",
+      "icono": "Mountain",
+      "colorIcono": "#0284C7",
+      "tituloVisual": "GLACIARES AZULES",
+      "composicionVisual": "primer_plano",
+      "escenario": "lago_helado",
+      "layout": "narrativo",
+      "transicion": "whip_left",
+      "efectosCamara": [
+        "drift"
+      ],
+      "palabrasClave": [
+        "glaciares antiguos",
+        "menos burbujas",
+        "azul intenso"
+      ],
+      "personajes": [
+        {
+          "id": "fisico",
+          "posicion": {
+            "x": 0,
+            "y": 50
+          },
+          "escala": 1.15,
+          "orientacion": "derecha",
+          "prop": "ice_crystal_hex",
+          "poseId": "presenting_object",
+          "expresion": "eureka",
+          "habla": true
+        }
+      ],
+      "duracionSegundos": 7.834,
+      "palabras": [
+        {
+          "palabra": "Por",
+          "inicioMs": 0,
+          "finMs": 180
+        },
+        {
+          "palabra": "eso",
+          "inicioMs": 180,
+          "finMs": 300
+        },
+        {
+          "palabra": "los",
+          "inicioMs": 300,
+          "finMs": 420
+        },
+        {
+          "palabra": "glaciares",
+          "inicioMs": 420,
+          "finMs": 820
+        },
+        {
+          "palabra": "antiguos",
+          "inicioMs": 820,
+          "finMs": 1280
+        },
+        {
+          "palabra": "que",
+          "inicioMs": 1280,
+          "finMs": 1360
+        },
+        {
+          "palabra": "tienen",
+          "inicioMs": 1360,
+          "finMs": 1560
+        },
+        {
+          "palabra": "menos",
+          "inicioMs": 1560,
+          "finMs": 1760
+        },
+        {
+          "palabra": "burbujas",
+          "inicioMs": 1760,
+          "finMs": 2380
+        },
+        {
+          "palabra": "son",
+          "inicioMs": 2380,
+          "finMs": 2560
+        },
+        {
+          "palabra": "de",
+          "inicioMs": 2560,
+          "finMs": 2680
+        },
+        {
+          "palabra": "un",
+          "inicioMs": 2680,
+          "finMs": 2780
+        },
+        {
+          "palabra": "azul",
+          "inicioMs": 2780,
+          "finMs": 2960
+        },
+        {
+          "palabra": "intenso",
+          "inicioMs": 2960,
+          "finMs": 3500
+        },
+        {
+          "palabra": "la",
+          "inicioMs": 3780,
+          "finMs": 3900
+        },
+        {
+          "palabra": "luz",
+          "inicioMs": 3900,
+          "finMs": 4060
+        },
+        {
+          "palabra": "azul",
+          "inicioMs": 4060,
+          "finMs": 4380
+        },
+        {
+          "palabra": "puede",
+          "inicioMs": 4380,
+          "finMs": 4700
+        },
+        {
+          "palabra": "penetrar",
+          "inicioMs": 4700,
+          "finMs": 5160
+        },
+        {
+          "palabra": "profundamente",
+          "inicioMs": 5160,
+          "finMs": 6020
+        },
+        {
+          "palabra": "antes",
+          "inicioMs": 6020,
+          "finMs": 6460
+        },
+        {
+          "palabra": "de",
+          "inicioMs": 6460,
+          "finMs": 6640
+        },
+        {
+          "palabra": "ser",
+          "inicioMs": 6640,
+          "finMs": 6820
+        },
+        {
+          "palabra": "absorbida",
+          "inicioMs": 6820,
+          "finMs": 7360
+        }
+      ]
+    },
+    {
+      "id": 10,
+      "texto": "Así que la próxima vez que veas el mar azul, recuerda que estás viendo la luz solar filtrada por millones de moléculas de agua. ¡La física óptica está en cada gota!",
+      "icono": "Sparkles",
+      "colorIcono": "#0EA5E9",
+      "tituloVisual": "FÍSICA ÓPTICA",
+      "composicionVisual": "plano_general",
+      "escenario": "mar_abierto",
+      "layout": "narrativo",
+      "transicion": "zoom_in",
+      "efectosCamara": [
+        "drift"
+      ],
+      "sfx": "sfx/sfx_whoosh.wav",
+      "volumenSfx": 0.2,
+      "palabrasClave": [
+        "mar azul",
+        "luz solar filtrada",
+        "moléculas de agua"
+      ],
+      "personajes": [
+        {
+          "id": "fisico",
+          "posicion": {
+            "x": 0,
+            "y": 50
+          },
+          "escala": 1.15,
+          "orientacion": "derecha",
+          "prop": "trophy",
+          "poseId": "celebrating_arms_up",
+          "expresion": "smile_wide",
+          "habla": true
+        }
+      ],
+      "duracionSegundos": 8.314,
+      "palabras": [
+        {
+          "palabra": "Así",
+          "inicioMs": 0,
+          "finMs": 280
+        },
+        {
+          "palabra": "que",
+          "inicioMs": 280,
+          "finMs": 420
+        },
+        {
+          "palabra": "la",
+          "inicioMs": 420,
+          "finMs": 500
+        },
+        {
+          "palabra": "próxima",
+          "inicioMs": 500,
+          "finMs": 840
+        },
+        {
+          "palabra": "vez",
+          "inicioMs": 840,
+          "finMs": 1060
+        },
+        {
+          "palabra": "que",
+          "inicioMs": 1060,
+          "finMs": 1220
+        },
+        {
+          "palabra": "veas",
+          "inicioMs": 1220,
+          "finMs": 1440
+        },
+        {
+          "palabra": "el",
+          "inicioMs": 1440,
+          "finMs": 1540
+        },
+        {
+          "palabra": "mar",
+          "inicioMs": 1540,
+          "finMs": 1640
+        },
+        {
+          "palabra": "azul",
+          "inicioMs": 1640,
+          "finMs": 1920
+        },
+        {
+          "palabra": "recuerda",
+          "inicioMs": 2040,
+          "finMs": 2380
+        },
+        {
+          "palabra": "que",
+          "inicioMs": 2380,
+          "finMs": 2500
+        },
+        {
+          "palabra": "estás",
+          "inicioMs": 2500,
+          "finMs": 2660
+        },
+        {
+          "palabra": "viendo",
+          "inicioMs": 2660,
+          "finMs": 2880
+        },
+        {
+          "palabra": "la",
+          "inicioMs": 2880,
+          "finMs": 3060
+        },
+        {
+          "palabra": "luz",
+          "inicioMs": 3060,
+          "finMs": 3240
+        },
+        {
+          "palabra": "solar",
+          "inicioMs": 3240,
+          "finMs": 3520
+        },
+        {
+          "palabra": "filtrada",
+          "inicioMs": 3520,
+          "finMs": 3980
+        },
+        {
+          "palabra": "por",
+          "inicioMs": 3980,
+          "finMs": 4240
+        },
+        {
+          "palabra": "millones",
+          "inicioMs": 4240,
+          "finMs": 4480
+        },
+        {
+          "palabra": "de",
+          "inicioMs": 4480,
+          "finMs": 4720
+        },
+        {
+          "palabra": "moléculas",
+          "inicioMs": 4720,
+          "finMs": 5200
+        },
+        {
+          "palabra": "de",
+          "inicioMs": 5200,
+          "finMs": 5300
+        },
+        {
+          "palabra": "agua",
+          "inicioMs": 5300,
+          "finMs": 5540
+        },
+        {
+          "palabra": "La",
+          "inicioMs": 5760,
+          "finMs": 5840
+        },
+        {
+          "palabra": "física",
+          "inicioMs": 5840,
+          "finMs": 6140
+        },
+        {
+          "palabra": "óptica",
+          "inicioMs": 6140,
+          "finMs": 6720
+        },
+        {
+          "palabra": "está",
+          "inicioMs": 6720,
+          "finMs": 6920
+        },
+        {
+          "palabra": "en",
+          "inicioMs": 6920,
+          "finMs": 7080
+        },
+        {
+          "palabra": "cada",
+          "inicioMs": 7080,
+          "finMs": 7360
+        },
+        {
+          "palabra": "gota",
+          "inicioMs": 7360,
+          "finMs": 7840
+        }
+      ]
+    }
+  ]
+}

@@ -1,374 +1,47 @@
 {
   "meta": {
-    "id": "paradoja_gemelos_espacio",
-    "slug": "paradoja_gemelos_espacio",
-    "temaResumen": "¿Cómo viajar al 99% de la velocidad de la luz frena el envejecimiento biológico según la paradoja de los gemelos de Einstein?"
+    "id": "caer_en_lava_volcan",
+    "slug": "caer_en_lava_volcan",
+    "temaResumen": "¿Qué le pasaría realmente a tu cuerpo si caes en la lava de un volcán? Mito de Hollywood vs Efecto Leidenfrost"
   },
   "escenas": [
     {
       "id": 1,
-      "texto": "Si tuvieras un hermano gemelo y viajas al espacio a casi la velocidad de la luz, al volver ¡tú seguirás joven y él será un anciano!",
-      "icono": "Rocket",
-      "colorIcono": "#38BDF8",
-      "tituloVisual": "PARADOJA GEMELOS",
+      "texto": "En las películas de Hollywood, cuando alguien cae a un volcán se hunde lentamente en la lava como si fuera una piscina. ¡Pero la física real dice que eso es completamente imposible!",
+      "icono": "Film",
+      "colorIcono": "#EF4444",
+      "tituloVisual": "MITO DE HOLLYWOOD",
       "composicionVisual": "plano_general",
-      "escenario": "vuelo_relativista",
+      "escenario": "sala_estar",
       "layout": "narrativo",
       "transicion": "zoom_in",
-      "efectosCamara": [
-        "drift"
-      ],
       "sfx": "sfx/sfx_whoosh.wav",
       "volumenSfx": 0.2,
       "palabrasClave": [
-        "hermano gemelo",
-        "velocidad de la luz",
-        "seguirás joven",
-        "será un anciano"
+        "películas de Hollywood",
+        "se hunde lentamente",
+        "completamente imposible"
       ],
       "personajes": [
         {
-          "id": "astronauta",
+          "id": "narrador",
           "posicion": {
-            "x": -160,
+            "x": -140,
             "y": 70
           },
           "escala": 1.05,
           "orientacion": "derecha",
-          "prop": "relativistic_rocket",
-          "poseId": "presenting_object",
-          "expresion": "eureka",
+          "poseId": "scratching_head",
+          "expresion": "confused",
           "acciones": [
             {
-              "tipo": "caminar_hacia",
-              "desdeX": -260,
-              "haciaX": -120
+              "tipo": "mirar_y_reaccionar"
             }
           ],
           "habla": true
         }
       ],
-      "duracionSegundos": 6.274,
-      "palabras": [
-        {
-          "palabra": "Si",
-          "inicioMs": 0,
-          "finMs": 100
-        },
-        {
-          "palabra": "tuvieras",
-          "inicioMs": 100,
-          "finMs": 400
-        },
-        {
-          "palabra": "un",
-          "inicioMs": 400,
-          "finMs": 520
-        },
-        {
-          "palabra": "hermano",
-          "inicioMs": 520,
-          "finMs": 840
-        },
-        {
-          "palabra": "gemelo",
-          "inicioMs": 840,
-          "finMs": 1180
-        },
-        {
-          "palabra": "y",
-          "inicioMs": 1180,
-          "finMs": 1300
-        },
-        {
-          "palabra": "viajas",
-          "inicioMs": 1300,
-          "finMs": 1540
-        },
-        {
-          "palabra": "al",
-          "inicioMs": 1540,
-          "finMs": 1680
-        },
-        {
-          "palabra": "espacio",
-          "inicioMs": 1680,
-          "finMs": 2040
-        },
-        {
-          "palabra": "a",
-          "inicioMs": 2160,
-          "finMs": 2300
-        },
-        {
-          "palabra": "casi",
-          "inicioMs": 2300,
-          "finMs": 2460
-        },
-        {
-          "palabra": "la",
-          "inicioMs": 2460,
-          "finMs": 2740
-        },
-        {
-          "palabra": "velocidad",
-          "inicioMs": 2740,
-          "finMs": 2980
-        },
-        {
-          "palabra": "de",
-          "inicioMs": 2980,
-          "finMs": 3060
-        },
-        {
-          "palabra": "la",
-          "inicioMs": 3060,
-          "finMs": 3240
-        },
-        {
-          "palabra": "luz",
-          "inicioMs": 3360,
-          "finMs": 3440
-        },
-        {
-          "palabra": "al",
-          "inicioMs": 3440,
-          "finMs": 3760
-        },
-        {
-          "palabra": "volver",
-          "inicioMs": 4000,
-          "finMs": 4100
-        },
-        {
-          "palabra": "tú",
-          "inicioMs": 4100,
-          "finMs": 4460
-        },
-        {
-          "palabra": "seguirás",
-          "inicioMs": 4460,
-          "finMs": 4780
-        },
-        {
-          "palabra": "joven",
-          "inicioMs": 4780,
-          "finMs": 4920
-        },
-        {
-          "palabra": "y",
-          "inicioMs": 4920,
-          "finMs": 5020
-        },
-        {
-          "palabra": "él",
-          "inicioMs": 5020,
-          "finMs": 5240
-        },
-        {
-          "palabra": "será",
-          "inicioMs": 5240,
-          "finMs": 5360
-        },
-        {
-          "palabra": "un",
-          "inicioMs": 5360,
-          "finMs": 5800
-        },
-        {
-          "palabra": "anciano",
-          "inicioMs": 5800,
-          "finMs": 6024
-        }
-      ]
-    },
-    {
-      "id": 2,
-      "texto": "No es una metáfora poética de ciencia ficción: es una consecuencia física comprobada de la Relatividad Especial de Albert Einstein.",
-      "icono": "Atom",
-      "colorIcono": "#8B5CF6",
-      "tituloVisual": "EINSTEIN 1905",
-      "composicionVisual": "primer_plano",
-      "escenario": "laboratorio_neuro",
-      "layout": "narrativo",
-      "transicion": "whip_right",
-      "efectosCamara": [
-        "drift"
-      ],
-      "palabrasClave": [
-        "consecuencia física",
-        "Relatividad Especial",
-        "Albert Einstein"
-      ],
-      "personajes": [
-        {
-          "id": "fisico",
-          "posicion": {
-            "x": 0,
-            "y": 50
-          },
-          "escala": 1.15,
-          "orientacion": "derecha",
-          "prop": "book",
-          "poseId": "presenting_object",
-          "expresion": "talking_enthusiastic",
-          "habla": true
-        }
-      ],
-      "duracionSegundos": 6.634,
-      "palabras": [
-        {
-          "palabra": "No",
-          "inicioMs": 0,
-          "finMs": 220
-        },
-        {
-          "palabra": "es",
-          "inicioMs": 220,
-          "finMs": 340
-        },
-        {
-          "palabra": "una",
-          "inicioMs": 340,
-          "finMs": 460
-        },
-        {
-          "palabra": "metáfora",
-          "inicioMs": 460,
-          "finMs": 960
-        },
-        {
-          "palabra": "poética",
-          "inicioMs": 960,
-          "finMs": 1320
-        },
-        {
-          "palabra": "de",
-          "inicioMs": 1320,
-          "finMs": 1500
-        },
-        {
-          "palabra": "ciencia",
-          "inicioMs": 1500,
-          "finMs": 1800
-        },
-        {
-          "palabra": "ficción",
-          "inicioMs": 1800,
-          "finMs": 2260
-        },
-        {
-          "palabra": "es",
-          "inicioMs": 2360,
-          "finMs": 2460
-        },
-        {
-          "palabra": "una",
-          "inicioMs": 2460,
-          "finMs": 2600
-        },
-        {
-          "palabra": "consecuencia",
-          "inicioMs": 2600,
-          "finMs": 3140
-        },
-        {
-          "palabra": "física",
-          "inicioMs": 3140,
-          "finMs": 3440
-        },
-        {
-          "palabra": "comprobada",
-          "inicioMs": 3440,
-          "finMs": 4020
-        },
-        {
-          "palabra": "de",
-          "inicioMs": 4020,
-          "finMs": 4160
-        },
-        {
-          "palabra": "la",
-          "inicioMs": 4160,
-          "finMs": 4280
-        },
-        {
-          "palabra": "Relatividad",
-          "inicioMs": 4280,
-          "finMs": 4800
-        },
-        {
-          "palabra": "Especial",
-          "inicioMs": 4800,
-          "finMs": 5200
-        },
-        {
-          "palabra": "de",
-          "inicioMs": 5200,
-          "finMs": 5440
-        },
-        {
-          "palabra": "Albert",
-          "inicioMs": 5440,
-          "finMs": 5720
-        },
-        {
-          "palabra": "Einstein",
-          "inicioMs": 5720,
-          "finMs": 6080
-        }
-      ]
-    },
-    {
-      "id": 3,
-      "texto": "En nuestro cosmos, la velocidad de la luz en el vacío es un límite absoluto e insuperable: trescientos mil kilómetros por segundo.",
-      "icono": "Zap",
-      "colorIcono": "#FACC15",
-      "tituloVisual": "LÍMITE CÓSMICO",
-      "composicionVisual": "cifras_concepto",
-      "escenario": "vuelo_relativista",
-      "layout": "narrativo",
-      "transicion": "corte",
-      "efectosCamara": [
-        "drift"
-      ],
-      "palabrasClave": [
-        "límite absoluto",
-        "trescientos mil kilómetros",
-        "velocidad de la luz"
-      ],
-      "personajes": [
-        {
-          "id": "fisico",
-          "posicion": {
-            "x": -180,
-            "y": 70
-          },
-          "escala": 1.05,
-          "orientacion": "derecha",
-          "poseId": "explaining_pointing_up",
-          "expresion": "analytical",
-          "habla": true
-        }
-      ],
-      "objetos": [
-        {
-          "id": "nave_luz",
-          "propId": "relativistic_rocket",
-          "posicion": {
-            "x": 170,
-            "y": -30
-          },
-          "escala": 1.45,
-          "animacion": {
-            "tipo": "flotar",
-            "inicioFrame": 0,
-            "finFrame": 9999
-          },
-          "capaZ": 25
-        }
-      ],
-      "duracionSegundos": 6.802,
+      "duracionSegundos": 8.602,
       "palabras": [
         {
           "palabra": "En",
@@ -376,652 +49,225 @@
           "finMs": 200
         },
         {
-          "palabra": "nuestro",
+          "palabra": "las",
           "inicioMs": 200,
-          "finMs": 440
+          "finMs": 300
         },
         {
-          "palabra": "cosmos",
-          "inicioMs": 440,
-          "finMs": 880
-        },
-        {
-          "palabra": "la",
-          "inicioMs": 980,
-          "finMs": 1040
-        },
-        {
-          "palabra": "velocidad",
-          "inicioMs": 1040,
-          "finMs": 1360
-        },
-        {
-          "palabra": "de",
-          "inicioMs": 1360,
-          "finMs": 1600
-        },
-        {
-          "palabra": "la",
-          "inicioMs": 1600,
-          "finMs": 1680
-        },
-        {
-          "palabra": "luz",
-          "inicioMs": 1680,
-          "finMs": 1820
-        },
-        {
-          "palabra": "en",
-          "inicioMs": 1820,
-          "finMs": 1980
-        },
-        {
-          "palabra": "el",
-          "inicioMs": 1980,
-          "finMs": 2080
-        },
-        {
-          "palabra": "vacío",
-          "inicioMs": 2080,
-          "finMs": 2480
-        },
-        {
-          "palabra": "es",
-          "inicioMs": 2480,
-          "finMs": 2700
-        },
-        {
-          "palabra": "un",
-          "inicioMs": 2700,
-          "finMs": 2800
-        },
-        {
-          "palabra": "límite",
-          "inicioMs": 2800,
-          "finMs": 3120
-        },
-        {
-          "palabra": "absoluto",
-          "inicioMs": 3120,
-          "finMs": 3680
-        },
-        {
-          "palabra": "e",
-          "inicioMs": 3680,
-          "finMs": 3720
-        },
-        {
-          "palabra": "insuperable",
-          "inicioMs": 3720,
-          "finMs": 4340
-        },
-        {
-          "palabra": "trescientos",
-          "inicioMs": 4600,
-          "finMs": 5000
-        },
-        {
-          "palabra": "mil",
-          "inicioMs": 5000,
-          "finMs": 5300
-        },
-        {
-          "palabra": "kilómetros",
-          "inicioMs": 5300,
-          "finMs": 5720
-        },
-        {
-          "palabra": "por",
-          "inicioMs": 5720,
-          "finMs": 5960
-        },
-        {
-          "palabra": "segundo",
-          "inicioMs": 5960,
-          "finMs": 6300
-        }
-      ]
-    },
-    {
-      "id": 4,
-      "texto": "Para que la velocidad de la luz sea idéntica para todos los observadores en movimiento, lo que debe deformarse es el tiempo mismo.",
-      "icono": "Clock",
-      "colorIcono": "#3B82F6",
-      "tituloVisual": "TIEMPO ELÁSTICO",
-      "composicionVisual": "primer_plano",
-      "escenario": "laboratorio_neuro",
-      "layout": "narrativo",
-      "transicion": "whip_left",
-      "efectosCamara": [
-        "drift"
-      ],
-      "palabrasClave": [
-        "debe deformarse",
-        "tiempo mismo",
-        "observadores en movimiento"
-      ],
-      "personajes": [
-        {
-          "id": "fisico",
-          "posicion": {
-            "x": 0,
-            "y": 50
-          },
-          "escala": 1.15,
-          "orientacion": "derecha",
-          "prop": "relativistic_clock",
-          "poseId": "presenting_object",
-          "expresion": "eureka",
-          "habla": true
-        }
-      ],
-      "duracionSegundos": 6.394,
-      "palabras": [
-        {
-          "palabra": "Para",
-          "inicioMs": 0,
-          "finMs": 200
-        },
-        {
-          "palabra": "que",
-          "inicioMs": 200,
-          "finMs": 340
-        },
-        {
-          "palabra": "la",
-          "inicioMs": 340,
-          "finMs": 440
-        },
-        {
-          "palabra": "velocidad",
-          "inicioMs": 440,
-          "finMs": 720
-        },
-        {
-          "palabra": "de",
-          "inicioMs": 720,
-          "finMs": 940
-        },
-        {
-          "palabra": "la",
-          "inicioMs": 940,
-          "finMs": 1040
-        },
-        {
-          "palabra": "luz",
-          "inicioMs": 1040,
-          "finMs": 1180
-        },
-        {
-          "palabra": "sea",
-          "inicioMs": 1180,
-          "finMs": 1380
-        },
-        {
-          "palabra": "idéntica",
-          "inicioMs": 1380,
-          "finMs": 1900
-        },
-        {
-          "palabra": "para",
-          "inicioMs": 1900,
-          "finMs": 2060
-        },
-        {
-          "palabra": "todos",
-          "inicioMs": 2060,
-          "finMs": 2280
-        },
-        {
-          "palabra": "los",
-          "inicioMs": 2280,
-          "finMs": 2460
-        },
-        {
-          "palabra": "observadores",
-          "inicioMs": 2460,
-          "finMs": 3000
-        },
-        {
-          "palabra": "en",
-          "inicioMs": 3000,
-          "finMs": 3180
-        },
-        {
-          "palabra": "movimiento",
-          "inicioMs": 3180,
-          "finMs": 3720
-        },
-        {
-          "palabra": "lo",
-          "inicioMs": 3880,
-          "finMs": 3940
-        },
-        {
-          "palabra": "que",
-          "inicioMs": 3940,
-          "finMs": 4060
-        },
-        {
-          "palabra": "debe",
-          "inicioMs": 4060,
-          "finMs": 4220
-        },
-        {
-          "palabra": "deformarse",
-          "inicioMs": 4220,
-          "finMs": 4840
-        },
-        {
-          "palabra": "es",
-          "inicioMs": 4840,
-          "finMs": 5140
-        },
-        {
-          "palabra": "el",
-          "inicioMs": 5140,
-          "finMs": 5260
-        },
-        {
-          "palabra": "tiempo",
-          "inicioMs": 5260,
-          "finMs": 5520
-        },
-        {
-          "palabra": "mismo",
-          "inicioMs": 5520,
-          "finMs": 5900
-        }
-      ]
-    },
-    {
-      "id": 5,
-      "texto": "A medida que tu nave espacial se aproxima a la velocidad de la luz, el tiempo a bordo se ralentiza mediante dilatación cinemática.",
-      "icono": "Gauge",
-      "colorIcono": "#10B981",
-      "tituloVisual": "DILATACIÓN CÓSMICA",
-      "composicionVisual": "plano_general",
-      "escenario": "vuelo_relativista",
-      "layout": "narrativo",
-      "transicion": "zoom_in",
-      "efectosCamara": [
-        "punch"
-      ],
-      "sfx": "sfx/sfx_dramatic_hit.wav",
-      "volumenSfx": 0.25,
-      "palabrasClave": [
-        "se ralentiza",
-        "dilatación cinemática",
-        "próxima a la luz"
-      ],
-      "personajes": [
-        {
-          "id": "astronauta",
-          "posicion": {
-            "x": -80,
-            "y": 60
-          },
-          "escala": 1.1,
-          "orientacion": "derecha",
-          "prop": "relativistic_rocket",
-          "poseId": "presenting_object",
-          "expresion": "talking_enthusiastic",
-          "habla": true
-        }
-      ],
-      "duracionSegundos": 7.162,
-      "palabras": [
-        {
-          "palabra": "A",
-          "inicioMs": 0,
-          "finMs": 200
-        },
-        {
-          "palabra": "medida",
-          "inicioMs": 200,
-          "finMs": 380
-        },
-        {
-          "palabra": "que",
-          "inicioMs": 380,
-          "finMs": 680
-        },
-        {
-          "palabra": "tu",
-          "inicioMs": 680,
-          "finMs": 800
-        },
-        {
-          "palabra": "nave",
-          "inicioMs": 800,
-          "finMs": 1000
-        },
-        {
-          "palabra": "espacial",
-          "inicioMs": 1000,
-          "finMs": 1680
-        },
-        {
-          "palabra": "se",
-          "inicioMs": 1680,
-          "finMs": 1940
-        },
-        {
-          "palabra": "aproxima",
-          "inicioMs": 1940,
-          "finMs": 2500
-        },
-        {
-          "palabra": "a",
-          "inicioMs": 2500,
-          "finMs": 2600
-        },
-        {
-          "palabra": "la",
-          "inicioMs": 2600,
-          "finMs": 2660
-        },
-        {
-          "palabra": "velocidad",
-          "inicioMs": 2660,
-          "finMs": 2940
-        },
-        {
-          "palabra": "de",
-          "inicioMs": 2940,
-          "finMs": 3220
-        },
-        {
-          "palabra": "la",
-          "inicioMs": 3220,
-          "finMs": 3320
-        },
-        {
-          "palabra": "luz",
-          "inicioMs": 3320,
-          "finMs": 3520
-        },
-        {
-          "palabra": "el",
-          "inicioMs": 3620,
-          "finMs": 3700
-        },
-        {
-          "palabra": "tiempo",
-          "inicioMs": 3700,
-          "finMs": 3980
-        },
-        {
-          "palabra": "a",
-          "inicioMs": 3980,
-          "finMs": 4120
-        },
-        {
-          "palabra": "bordo",
-          "inicioMs": 4120,
-          "finMs": 4400
-        },
-        {
-          "palabra": "se",
-          "inicioMs": 4400,
-          "finMs": 4560
-        },
-        {
-          "palabra": "ralentiza",
-          "inicioMs": 4560,
-          "finMs": 5160
-        },
-        {
-          "palabra": "mediante",
-          "inicioMs": 5160,
-          "finMs": 5540
-        },
-        {
-          "palabra": "dilatación",
-          "inicioMs": 5540,
-          "finMs": 5660
-        },
-        {
-          "palabra": "cinemática",
-          "inicioMs": 5660,
-          "finMs": 5760
-        }
-      ]
-    },
-    {
-      "id": 6,
-      "texto": "Al viajar al noventa y nueve por ciento de la luz, el factor de Lorentz llega a siete. ¡El reloj corre siete veces más despacio!",
-      "icono": "Activity",
-      "colorIcono": "#EF4444",
-      "tituloVisual": "FACTOR 7.1x",
-      "composicionVisual": "cifras_concepto",
-      "escenario": "vuelo_relativista",
-      "layout": "narrativo",
-      "transicion": "corte",
-      "efectosCamara": [
-        "punch"
-      ],
-      "sfx": "sfx/sfx_dramatic_hit.wav",
-      "volumenSfx": 0.25,
-      "palabrasClave": [
-        "noventa y nueve por ciento",
-        "factor de Lorentz",
-        "siete veces más despacio"
-      ],
-      "personajes": [
-        {
-          "id": "fisico",
-          "posicion": {
-            "x": -180,
-            "y": 70
-          },
-          "escala": 1.05,
-          "orientacion": "derecha",
-          "poseId": "explaining_pointing_up",
-          "expresion": "eureka",
-          "habla": true
-        }
-      ],
-      "objetos": [
-        {
-          "id": "reloj_lorentz",
-          "propId": "relativistic_clock",
-          "posicion": {
-            "x": 170,
-            "y": -30
-          },
-          "escala": 1.45,
-          "animacion": {
-            "tipo": "pulso",
-            "inicioFrame": 0,
-            "finFrame": 9999
-          },
-          "capaZ": 25
-        }
-      ],
-      "duracionSegundos": 6.37,
-      "palabras": [
-        {
-          "palabra": "Al",
-          "inicioMs": 0,
-          "finMs": 200
-        },
-        {
-          "palabra": "viajar",
-          "inicioMs": 200,
-          "finMs": 480
-        },
-        {
-          "palabra": "al",
-          "inicioMs": 480,
+          "palabra": "películas",
+          "inicioMs": 300,
           "finMs": 580
         },
         {
-          "palabra": "noventa",
+          "palabra": "de",
           "inicioMs": 580,
-          "finMs": 960
+          "finMs": 840
         },
         {
-          "palabra": "y",
-          "inicioMs": 960,
-          "finMs": 1560
+          "palabra": "Hollywood",
+          "inicioMs": 840,
+          "finMs": 1220
         },
         {
-          "palabra": "nueve",
-          "inicioMs": 1560,
-          "finMs": 1740
+          "palabra": "cuando",
+          "inicioMs": 1320,
+          "finMs": 1480
         },
         {
-          "palabra": "por",
-          "inicioMs": 1740,
-          "finMs": 1820
+          "palabra": "alguien",
+          "inicioMs": 1480,
+          "finMs": 1860
         },
         {
-          "palabra": "ciento",
-          "inicioMs": 1820,
-          "finMs": 2040
-        },
-        {
-          "palabra": "de",
-          "inicioMs": 2220,
-          "finMs": 2300
-        },
-        {
-          "palabra": "la",
-          "inicioMs": 2300,
-          "finMs": 2520
-        },
-        {
-          "palabra": "luz",
-          "inicioMs": 2520,
-          "finMs": 2700
-        },
-        {
-          "palabra": "el",
-          "inicioMs": 2700,
-          "finMs": 3040
-        },
-        {
-          "palabra": "factor",
-          "inicioMs": 3040,
-          "finMs": 3280
-        },
-        {
-          "palabra": "de",
-          "inicioMs": 3280,
-          "finMs": 3460
-        },
-        {
-          "palabra": "Lorentz",
-          "inicioMs": 3460,
-          "finMs": 3680
-        },
-        {
-          "palabra": "llega",
-          "inicioMs": 3860,
-          "finMs": 3980
+          "palabra": "cae",
+          "inicioMs": 1860,
+          "finMs": 2100
         },
         {
           "palabra": "a",
-          "inicioMs": 3980,
-          "finMs": 4300
+          "inicioMs": 2100,
+          "finMs": 2160
         },
         {
-          "palabra": "siete",
-          "inicioMs": 4300,
-          "finMs": 4540
+          "palabra": "un",
+          "inicioMs": 2160,
+          "finMs": 2240
         },
         {
-          "palabra": "El",
-          "inicioMs": 4540,
-          "finMs": 4780
+          "palabra": "volcán",
+          "inicioMs": 2240,
+          "finMs": 2620
         },
         {
-          "palabra": "reloj",
-          "inicioMs": 4780,
-          "finMs": 5080
+          "palabra": "se",
+          "inicioMs": 2620,
+          "finMs": 2800
         },
         {
-          "palabra": "corre",
-          "inicioMs": 5080,
-          "finMs": 5320
+          "palabra": "hunde",
+          "inicioMs": 2800,
+          "finMs": 3040
         },
         {
-          "palabra": "siete",
-          "inicioMs": 5320,
-          "finMs": 5440
+          "palabra": "lentamente",
+          "inicioMs": 3040,
+          "finMs": 3480
         },
         {
-          "palabra": "veces",
-          "inicioMs": 5440,
-          "finMs": 5880
+          "palabra": "en",
+          "inicioMs": 3480,
+          "finMs": 3720
         },
         {
-          "palabra": "más",
-          "inicioMs": 5880,
-          "finMs": 6000
+          "palabra": "la",
+          "inicioMs": 3720,
+          "finMs": 3780
         },
         {
-          "palabra": "despacio",
-          "inicioMs": 5880,
-          "finMs": 6000
+          "palabra": "lava",
+          "inicioMs": 3780,
+          "finMs": 4000
+        },
+        {
+          "palabra": "como",
+          "inicioMs": 4000,
+          "finMs": 4240
+        },
+        {
+          "palabra": "si",
+          "inicioMs": 4240,
+          "finMs": 4380
+        },
+        {
+          "palabra": "fuera",
+          "inicioMs": 4380,
+          "finMs": 4600
+        },
+        {
+          "palabra": "una",
+          "inicioMs": 4600,
+          "finMs": 4740
+        },
+        {
+          "palabra": "piscina",
+          "inicioMs": 4740,
+          "finMs": 5180
+        },
+        {
+          "palabra": "Pero",
+          "inicioMs": 5360,
+          "finMs": 5480
+        },
+        {
+          "palabra": "la",
+          "inicioMs": 5480,
+          "finMs": 5600
+        },
+        {
+          "palabra": "física",
+          "inicioMs": 5600,
+          "finMs": 5900
+        },
+        {
+          "palabra": "real",
+          "inicioMs": 5900,
+          "finMs": 6140
+        },
+        {
+          "palabra": "dice",
+          "inicioMs": 6140,
+          "finMs": 6360
+        },
+        {
+          "palabra": "que",
+          "inicioMs": 6360,
+          "finMs": 6600
+        },
+        {
+          "palabra": "eso",
+          "inicioMs": 6600,
+          "finMs": 6780
+        },
+        {
+          "palabra": "es",
+          "inicioMs": 6780,
+          "finMs": 6920
+        },
+        {
+          "palabra": "completamente",
+          "inicioMs": 6920,
+          "finMs": 7380
+        },
+        {
+          "palabra": "imposible",
+          "inicioMs": 7380,
+          "finMs": 8120
         }
       ]
     },
     {
-      "id": 7,
-      "texto": "Para ti dentro de la nave todo se siente normal: tu corazón late igual, lees libros, duermes y cumples cinco años de viaje.",
-      "icono": "Heart",
-      "colorIcono": "#EC4899",
-      "tituloVisual": "5 AÑOS A BORDO",
-      "composicionVisual": "primer_plano",
-      "escenario": "vuelo_relativista",
+      "id": 2,
+      "texto": "Para empezar, la lava no es un líquido ligero como el agua: es roca basáltica pesada fundida a más de mil doscientos grados centígrados.",
+      "icono": "Flame",
+      "colorIcono": "#F97316",
+      "tituloVisual": "ROCA FUNDIDA",
+      "composicionVisual": "escenario_ilustrado",
+      "escenario": "crater_volcanico",
       "layout": "narrativo",
       "transicion": "whip_right",
       "efectosCamara": [
         "drift"
       ],
       "palabrasClave": [
-        "se siente normal",
-        "tu corazón late igual",
-        "cumples cinco años"
+        "roca basáltica",
+        "pesada",
+        "mil doscientos grados"
+      ],
+      "objetos": [
+        {
+          "propId": "magma_bubbling_crust",
+          "posicion": {
+            "x": 220,
+            "y": -40
+          },
+          "escala": 1.15,
+          "animacion": {
+            "tipo": "flotar"
+          }
+        }
       ],
       "personajes": [
         {
-          "id": "astronauta",
+          "id": "vulcanologo",
           "posicion": {
-            "x": 0,
-            "y": 50
+            "x": -220,
+            "y": 70
           },
-          "escala": 1.15,
+          "escala": 1.05,
           "orientacion": "derecha",
-          "prop": "coffee_mug",
-          "poseId": "presenting_object",
-          "expresion": "smile_soft",
+          "poseId": "explaining_pointing_up",
+          "expresion": "analytical",
+          "acciones": [
+            {
+              "tipo": "caminar_hacia",
+              "desdeX": -300,
+              "haciaX": -180
+            }
+          ],
           "habla": true
         }
       ],
-      "duracionSegundos": 6.346,
+      "duracionSegundos": 8.218,
       "palabras": [
         {
           "palabra": "Para",
           "inicioMs": 0,
-          "finMs": 240
+          "finMs": 220
         },
         {
-          "palabra": "ti",
-          "inicioMs": 240,
-          "finMs": 400
-        },
-        {
-          "palabra": "dentro",
-          "inicioMs": 480,
-          "finMs": 660
-        },
-        {
-          "palabra": "de",
-          "inicioMs": 660,
-          "finMs": 820
+          "palabra": "empezar",
+          "inicioMs": 220,
+          "finMs": 580
         },
         {
           "palabra": "la",
@@ -1029,538 +275,1765 @@
           "finMs": 920
         },
         {
-          "palabra": "nave",
+          "palabra": "lava",
           "inicioMs": 920,
           "finMs": 1120
         },
         {
-          "palabra": "todo",
-          "inicioMs": 1320,
-          "finMs": 1440
+          "palabra": "no",
+          "inicioMs": 1120,
+          "finMs": 1340
         },
         {
-          "palabra": "se",
-          "inicioMs": 1440,
-          "finMs": 1620
+          "palabra": "es",
+          "inicioMs": 1340,
+          "finMs": 1500
         },
         {
-          "palabra": "siente",
-          "inicioMs": 1620,
-          "finMs": 1860
+          "palabra": "un",
+          "inicioMs": 1500,
+          "finMs": 1600
         },
         {
-          "palabra": "normal",
-          "inicioMs": 1860,
-          "finMs": 2220
+          "palabra": "líquido",
+          "inicioMs": 1600,
+          "finMs": 1900
         },
         {
-          "palabra": "tu",
-          "inicioMs": 2380,
+          "palabra": "ligero",
+          "inicioMs": 1900,
+          "finMs": 2260
+        },
+        {
+          "palabra": "como",
+          "inicioMs": 2260,
           "finMs": 2460
         },
         {
-          "palabra": "corazón",
+          "palabra": "el",
           "inicioMs": 2460,
-          "finMs": 2760
+          "finMs": 2580
         },
         {
-          "palabra": "late",
-          "inicioMs": 2760,
-          "finMs": 3140
+          "palabra": "agua",
+          "inicioMs": 2580,
+          "finMs": 2840
         },
         {
-          "palabra": "igual",
-          "inicioMs": 3140,
-          "finMs": 3600
+          "palabra": "es",
+          "inicioMs": 3080,
+          "finMs": 3260
         },
         {
-          "palabra": "lees",
-          "inicioMs": 3720,
-          "finMs": 4060
+          "palabra": "roca",
+          "inicioMs": 3260,
+          "finMs": 3740
         },
         {
-          "palabra": "libros",
-          "inicioMs": 4160,
-          "finMs": 4500
+          "palabra": "basáltica",
+          "inicioMs": 3740,
+          "finMs": 4360
         },
         {
-          "palabra": "duermes",
-          "inicioMs": 4500,
-          "finMs": 4580
+          "palabra": "pesada",
+          "inicioMs": 4360,
+          "finMs": 4880
         },
         {
-          "palabra": "y",
-          "inicioMs": 4580,
-          "finMs": 4920
+          "palabra": "fundida",
+          "inicioMs": 5020,
+          "finMs": 5420
         },
         {
-          "palabra": "cumples",
-          "inicioMs": 4920,
-          "finMs": 5200
+          "palabra": "a",
+          "inicioMs": 5420,
+          "finMs": 5560
         },
         {
-          "palabra": "cinco",
-          "inicioMs": 5200,
-          "finMs": 5460
-        },
-        {
-          "palabra": "años",
-          "inicioMs": 5460,
-          "finMs": 5600
+          "palabra": "más",
+          "inicioMs": 5560,
+          "finMs": 5680
         },
         {
           "palabra": "de",
-          "inicioMs": 5600,
-          "finMs": 5880
+          "inicioMs": 5680,
+          "finMs": 5820
         },
         {
-          "palabra": "viaje",
-          "inicioMs": 5880,
-          "finMs": 6096
+          "palabra": "mil",
+          "inicioMs": 5820,
+          "finMs": 5980
+        },
+        {
+          "palabra": "doscientos",
+          "inicioMs": 5980,
+          "finMs": 6480
+        },
+        {
+          "palabra": "grados",
+          "inicioMs": 6480,
+          "finMs": 7080
+        },
+        {
+          "palabra": "centígrados",
+          "inicioMs": 7080,
+          "finMs": 7760
         }
       ]
     },
     {
-      "id": 8,
-      "texto": "Pero mientras tú vivías esos cinco años en tu camarote, en la Tierra han pasado más de treinta y cinco años terrestres completos.",
-      "icono": "Calendar",
-      "colorIcono": "#F97316",
-      "tituloVisual": "35 AÑOS TIERRA",
+      "id": 3,
+      "texto": "Aquí entra en juego la física de la densidad: el cuerpo humano tiene una densidad de un gramo por centímetro cúbico, mientras que la roca fundida supera los tres gramos por centímetro cúbico.",
+      "icono": "Scale",
+      "colorIcono": "#FACC15",
+      "tituloVisual": "DENSIDAD 3X",
       "composicionVisual": "cifras_concepto",
-      "escenario": "laboratorio_neuro",
+      "escenario": "laboratorio",
+      "layout": "narrativo",
+      "transicion": "zoom_in",
+      "efectosCamara": [
+        "drift"
+      ],
+      "palabrasClave": [
+        "física de la densidad",
+        "un gramo",
+        "tres gramos"
+      ],
+      "objetos": [
+        {
+          "propId": "volcanic_density_scale",
+          "posicion": {
+            "x": 190,
+            "y": -30
+          },
+          "escala": 1.25,
+          "animacion": {
+            "tipo": "pulso"
+          }
+        }
+      ],
+      "personajes": [
+        {
+          "id": "cientifico",
+          "posicion": {
+            "x": -240,
+            "y": 70
+          },
+          "escala": 1.05,
+          "orientacion": "derecha",
+          "poseId": "comparing_two_objects",
+          "expresion": "eureka",
+          "habla": true
+        }
+      ],
+      "duracionSegundos": 9.154,
+      "palabras": [
+        {
+          "palabra": "Aquí",
+          "inicioMs": 0,
+          "finMs": 320
+        },
+        {
+          "palabra": "entra",
+          "inicioMs": 320,
+          "finMs": 560
+        },
+        {
+          "palabra": "en",
+          "inicioMs": 560,
+          "finMs": 640
+        },
+        {
+          "palabra": "juego",
+          "inicioMs": 640,
+          "finMs": 820
+        },
+        {
+          "palabra": "la",
+          "inicioMs": 820,
+          "finMs": 1020
+        },
+        {
+          "palabra": "física",
+          "inicioMs": 1020,
+          "finMs": 1260
+        },
+        {
+          "palabra": "de",
+          "inicioMs": 1260,
+          "finMs": 1500
+        },
+        {
+          "palabra": "la",
+          "inicioMs": 1500,
+          "finMs": 1580
+        },
+        {
+          "palabra": "densidad",
+          "inicioMs": 1580,
+          "finMs": 2000
+        },
+        {
+          "palabra": "el",
+          "inicioMs": 2140,
+          "finMs": 2220
+        },
+        {
+          "palabra": "cuerpo",
+          "inicioMs": 2220,
+          "finMs": 2380
+        },
+        {
+          "palabra": "humano",
+          "inicioMs": 2380,
+          "finMs": 2740
+        },
+        {
+          "palabra": "tiene",
+          "inicioMs": 2740,
+          "finMs": 2960
+        },
+        {
+          "palabra": "una",
+          "inicioMs": 2960,
+          "finMs": 3140
+        },
+        {
+          "palabra": "densidad",
+          "inicioMs": 3140,
+          "finMs": 3540
+        },
+        {
+          "palabra": "de",
+          "inicioMs": 3540,
+          "finMs": 3640
+        },
+        {
+          "palabra": "un",
+          "inicioMs": 3640,
+          "finMs": 3720
+        },
+        {
+          "palabra": "gramo",
+          "inicioMs": 3720,
+          "finMs": 3960
+        },
+        {
+          "palabra": "por",
+          "inicioMs": 3960,
+          "finMs": 4140
+        },
+        {
+          "palabra": "centímetro",
+          "inicioMs": 4140,
+          "finMs": 4600
+        },
+        {
+          "palabra": "cúbico",
+          "inicioMs": 4600,
+          "finMs": 5140
+        },
+        {
+          "palabra": "mientras",
+          "inicioMs": 5360,
+          "finMs": 5540
+        },
+        {
+          "palabra": "que",
+          "inicioMs": 5540,
+          "finMs": 5740
+        },
+        {
+          "palabra": "la",
+          "inicioMs": 5740,
+          "finMs": 5840
+        },
+        {
+          "palabra": "roca",
+          "inicioMs": 5840,
+          "finMs": 6100
+        },
+        {
+          "palabra": "fundida",
+          "inicioMs": 6100,
+          "finMs": 6500
+        },
+        {
+          "palabra": "supera",
+          "inicioMs": 6500,
+          "finMs": 6880
+        },
+        {
+          "palabra": "los",
+          "inicioMs": 6880,
+          "finMs": 6960
+        },
+        {
+          "palabra": "tres",
+          "inicioMs": 6960,
+          "finMs": 7240
+        },
+        {
+          "palabra": "gramos",
+          "inicioMs": 7240,
+          "finMs": 7500
+        },
+        {
+          "palabra": "por",
+          "inicioMs": 7500,
+          "finMs": 7640
+        },
+        {
+          "palabra": "centímetro",
+          "inicioMs": 7640,
+          "finMs": 8160
+        },
+        {
+          "palabra": "cúbico",
+          "inicioMs": 8160,
+          "finMs": 8680
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "texto": "¡Eres tres veces más ligero que la lava! Si cayeras desde lo alto, no te hundirías ni un solo centímetro: chocarías contra una superficie dura y viscosa con la fuerza de un golpe contra concreto.",
+      "icono": "Zap",
+      "colorIcono": "#EF4444",
+      "tituloVisual": "IMPACTO SECO",
+      "composicionVisual": "primer_plano",
+      "escenario": "crater_volcanico",
+      "layout": "narrativo",
+      "transicion": "corte",
+      "efectosCamara": [
+        "punch",
+        "shake"
+      ],
+      "sfx": "sfx/sfx_dramatic_hit.wav",
+      "volumenSfx": 0.28,
+      "palabrasClave": [
+        "tres veces más ligero",
+        "no te hundirías",
+        "golpe contra concreto"
+      ],
+      "personajes": [
+        {
+          "id": "victima",
+          "posicion": {
+            "x": 0,
+            "y": 60
+          },
+          "escala": 1.1,
+          "orientacion": "derecha",
+          "acciones": [
+            {
+              "tipo": "personalizada",
+              "pasos": [
+                {
+                  "inicioProgreso": 0,
+                  "finProgreso": 0.45,
+                  "poseId": "tripping_falling",
+                  "expresion": "shocked",
+                  "posicion": {
+                    "x": 0,
+                    "y": -80
+                  },
+                  "curva": "impacto",
+                  "procedural": "estatico"
+                },
+                {
+                  "inicioProgreso": 0.45,
+                  "finProgreso": 1.0,
+                  "poseId": "trembling_fear",
+                  "expresion": "scared",
+                  "posicion": {
+                    "x": 0,
+                    "y": 60
+                  },
+                  "curva": "rebote",
+                  "procedural": "temblar"
+                }
+              ]
+            }
+          ],
+          "habla": true
+        }
+      ],
+      "duracionSegundos": 10.066,
+      "palabras": [
+        {
+          "palabra": "Eres",
+          "inicioMs": 0,
+          "finMs": 280
+        },
+        {
+          "palabra": "tres",
+          "inicioMs": 280,
+          "finMs": 620
+        },
+        {
+          "palabra": "veces",
+          "inicioMs": 620,
+          "finMs": 860
+        },
+        {
+          "palabra": "más",
+          "inicioMs": 860,
+          "finMs": 1140
+        },
+        {
+          "palabra": "ligero",
+          "inicioMs": 1140,
+          "finMs": 1540
+        },
+        {
+          "palabra": "que",
+          "inicioMs": 1540,
+          "finMs": 1680
+        },
+        {
+          "palabra": "la",
+          "inicioMs": 1680,
+          "finMs": 1800
+        },
+        {
+          "palabra": "lava",
+          "inicioMs": 1800,
+          "finMs": 2080
+        },
+        {
+          "palabra": "Si",
+          "inicioMs": 2300,
+          "finMs": 2380
+        },
+        {
+          "palabra": "cayeras",
+          "inicioMs": 2380,
+          "finMs": 2740
+        },
+        {
+          "palabra": "desde",
+          "inicioMs": 2740,
+          "finMs": 3000
+        },
+        {
+          "palabra": "lo",
+          "inicioMs": 3000,
+          "finMs": 3200
+        },
+        {
+          "palabra": "alto",
+          "inicioMs": 3200,
+          "finMs": 3540
+        },
+        {
+          "palabra": "no",
+          "inicioMs": 3700,
+          "finMs": 3800
+        },
+        {
+          "palabra": "te",
+          "inicioMs": 3800,
+          "finMs": 3940
+        },
+        {
+          "palabra": "hundirías",
+          "inicioMs": 3940,
+          "finMs": 4360
+        },
+        {
+          "palabra": "ni",
+          "inicioMs": 4360,
+          "finMs": 4640
+        },
+        {
+          "palabra": "un",
+          "inicioMs": 4640,
+          "finMs": 4800
+        },
+        {
+          "palabra": "solo",
+          "inicioMs": 4800,
+          "finMs": 4960
+        },
+        {
+          "palabra": "centímetro",
+          "inicioMs": 4960,
+          "finMs": 5600
+        },
+        {
+          "palabra": "chocarías",
+          "inicioMs": 5720,
+          "finMs": 6160
+        },
+        {
+          "palabra": "contra",
+          "inicioMs": 6160,
+          "finMs": 6440
+        },
+        {
+          "palabra": "una",
+          "inicioMs": 6440,
+          "finMs": 6580
+        },
+        {
+          "palabra": "superficie",
+          "inicioMs": 6580,
+          "finMs": 7180
+        },
+        {
+          "palabra": "dura",
+          "inicioMs": 7180,
+          "finMs": 7380
+        },
+        {
+          "palabra": "y",
+          "inicioMs": 7380,
+          "finMs": 7900
+        },
+        {
+          "palabra": "viscosa",
+          "inicioMs": 7900,
+          "finMs": 8040
+        },
+        {
+          "palabra": "con",
+          "inicioMs": 8040,
+          "finMs": 8160
+        },
+        {
+          "palabra": "la",
+          "inicioMs": 8160,
+          "finMs": 8400
+        },
+        {
+          "palabra": "fuerza",
+          "inicioMs": 8400,
+          "finMs": 8560
+        },
+        {
+          "palabra": "de",
+          "inicioMs": 8560,
+          "finMs": 8680
+        },
+        {
+          "palabra": "un",
+          "inicioMs": 8680,
+          "finMs": 8900
+        },
+        {
+          "palabra": "golpe",
+          "inicioMs": 8900,
+          "finMs": 9100
+        },
+        {
+          "palabra": "contra",
+          "inicioMs": 9100,
+          "finMs": 9240
+        },
+        {
+          "palabra": "concreto",
+          "inicioMs": 9240,
+          "finMs": 9600
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "texto": "Inmediatamente después del choque ocurre un fenómeno termodinámico fascinante llamado Efecto Leidenfrost.",
+      "icono": "ShieldAlert",
+      "colorIcono": "#38BDF8",
+      "tituloVisual": "COLCHÓN DE VAPOR",
+      "composicionVisual": "cifras_concepto",
+      "escenario": "crater_volcanico",
+      "layout": "narrativo",
+      "transicion": "zoom_in",
+      "efectosCamara": [
+        "drift"
+      ],
+      "palabrasClave": [
+        "fenómeno termodinámico",
+        "Efecto Leidenfrost"
+      ],
+      "objetos": [
+        {
+          "propId": "leidenfrost_cushion",
+          "posicion": {
+            "x": 180,
+            "y": -30
+          },
+          "escala": 1.3,
+          "animacion": {
+            "tipo": "pulso"
+          }
+        }
+      ],
+      "personajes": [
+        {
+          "id": "explicador",
+          "posicion": {
+            "x": -220,
+            "y": 70
+          },
+          "escala": 1.05,
+          "orientacion": "derecha",
+          "poseId": "eureka_idea",
+          "expresion": "eureka",
+          "habla": true
+        }
+      ],
+      "duracionSegundos": 6.01,
+      "palabras": [
+        {
+          "palabra": "Inmediatamente",
+          "inicioMs": 0,
+          "finMs": 660
+        },
+        {
+          "palabra": "después",
+          "inicioMs": 660,
+          "finMs": 1040
+        },
+        {
+          "palabra": "del",
+          "inicioMs": 1040,
+          "finMs": 1240
+        },
+        {
+          "palabra": "choque",
+          "inicioMs": 1240,
+          "finMs": 1600
+        },
+        {
+          "palabra": "ocurre",
+          "inicioMs": 1600,
+          "finMs": 2080
+        },
+        {
+          "palabra": "un",
+          "inicioMs": 2080,
+          "finMs": 2180
+        },
+        {
+          "palabra": "fenómeno",
+          "inicioMs": 2180,
+          "finMs": 2580
+        },
+        {
+          "palabra": "termodinámico",
+          "inicioMs": 2580,
+          "finMs": 3280
+        },
+        {
+          "palabra": "fascinante",
+          "inicioMs": 3280,
+          "finMs": 3840
+        },
+        {
+          "palabra": "llamado",
+          "inicioMs": 3840,
+          "finMs": 4180
+        },
+        {
+          "palabra": "Efecto",
+          "inicioMs": 4180,
+          "finMs": 4840
+        },
+        {
+          "palabra": "Leidenfrost",
+          "inicioMs": 4840,
+          "finMs": 5500
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "texto": "El agua y la humedad de tu cuerpo entrarían en ebullición instantánea, creando una capa de vapor hirviente que te mantendría flotando suspendido sobre la roca líquida durante unos segundos.",
+      "icono": "Waves",
+      "colorIcono": "#0284C7",
+      "tituloVisual": "EFECTO LEIDENFROST",
+      "composicionVisual": "escenario_ilustrado",
+      "escenario": "crater_volcanico",
+      "layout": "narrativo",
+      "transicion": "whip_right",
+      "efectosCamara": [
+        "drift"
+      ],
+      "palabrasClave": [
+        "ebullición instantánea",
+        "capa de vapor",
+        "flotando suspendido"
+      ],
+      "personajes": [
+        {
+          "id": "flotador",
+          "posicion": {
+            "x": -60,
+            "y": 60
+          },
+          "escala": 1.05,
+          "orientacion": "derecha",
+          "poseId": "backing_away_scared",
+          "expresion": "surprised",
+          "acciones": [
+            {
+              "tipo": "sorpresa_y_retroceso"
+            }
+          ],
+          "habla": true
+        }
+      ],
+      "duracionSegundos": 9.418,
+      "palabras": [
+        {
+          "palabra": "El",
+          "inicioMs": 0,
+          "finMs": 240
+        },
+        {
+          "palabra": "agua",
+          "inicioMs": 240,
+          "finMs": 440
+        },
+        {
+          "palabra": "y",
+          "inicioMs": 440,
+          "finMs": 540
+        },
+        {
+          "palabra": "la",
+          "inicioMs": 540,
+          "finMs": 600
+        },
+        {
+          "palabra": "humedad",
+          "inicioMs": 600,
+          "finMs": 960
+        },
+        {
+          "palabra": "de",
+          "inicioMs": 960,
+          "finMs": 1060
+        },
+        {
+          "palabra": "tu",
+          "inicioMs": 1060,
+          "finMs": 1180
+        },
+        {
+          "palabra": "cuerpo",
+          "inicioMs": 1180,
+          "finMs": 1560
+        },
+        {
+          "palabra": "entrarían",
+          "inicioMs": 1560,
+          "finMs": 2140
+        },
+        {
+          "palabra": "en",
+          "inicioMs": 2140,
+          "finMs": 2320
+        },
+        {
+          "palabra": "ebullición",
+          "inicioMs": 2320,
+          "finMs": 2760
+        },
+        {
+          "palabra": "instantánea",
+          "inicioMs": 2760,
+          "finMs": 3480
+        },
+        {
+          "palabra": "creando",
+          "inicioMs": 3760,
+          "finMs": 4100
+        },
+        {
+          "palabra": "una",
+          "inicioMs": 4100,
+          "finMs": 4280
+        },
+        {
+          "palabra": "capa",
+          "inicioMs": 4280,
+          "finMs": 4600
+        },
+        {
+          "palabra": "de",
+          "inicioMs": 4600,
+          "finMs": 4660
+        },
+        {
+          "palabra": "vapor",
+          "inicioMs": 4660,
+          "finMs": 4880
+        },
+        {
+          "palabra": "hirviente",
+          "inicioMs": 4880,
+          "finMs": 5340
+        },
+        {
+          "palabra": "que",
+          "inicioMs": 5340,
+          "finMs": 5460
+        },
+        {
+          "palabra": "te",
+          "inicioMs": 5460,
+          "finMs": 5580
+        },
+        {
+          "palabra": "mantendría",
+          "inicioMs": 5580,
+          "finMs": 6020
+        },
+        {
+          "palabra": "flotando",
+          "inicioMs": 6020,
+          "finMs": 6480
+        },
+        {
+          "palabra": "suspendido",
+          "inicioMs": 6480,
+          "finMs": 7100
+        },
+        {
+          "palabra": "sobre",
+          "inicioMs": 7100,
+          "finMs": 7320
+        },
+        {
+          "palabra": "la",
+          "inicioMs": 7320,
+          "finMs": 7440
+        },
+        {
+          "palabra": "roca",
+          "inicioMs": 7440,
+          "finMs": 7700
+        },
+        {
+          "palabra": "líquida",
+          "inicioMs": 7700,
+          "finMs": 8080
+        },
+        {
+          "palabra": "durante",
+          "inicioMs": 8080,
+          "finMs": 8340
+        },
+        {
+          "palabra": "unos",
+          "inicioMs": 8340,
+          "finMs": 8540
+        },
+        {
+          "palabra": "segundos",
+          "inicioMs": 8540,
+          "finMs": 8880
+        }
+      ]
+    },
+    {
+      "id": 7,
+      "texto": "Pero flotar sobre vapor no te salvaría. A mil doscientos grados, la radiación térmica es tan bestial que el aire que respiras quemaría tus pulmones antes de que puedas tocar el magma.",
+      "icono": "ThermometerSun",
+      "colorIcono": "#F59E0B",
+      "tituloVisual": "CALOR RADIANTE",
+      "composicionVisual": "primer_plano",
+      "escenario": "crater_volcanico",
       "layout": "narrativo",
       "transicion": "corte",
       "efectosCamara": [
         "drift"
       ],
       "palabrasClave": [
-        "en la Tierra",
-        "más de treinta y cinco años",
-        "terrestres completos"
+        "radiación térmica",
+        "aire que respiras",
+        "quemaría tus pulmones"
       ],
       "personajes": [
         {
-          "id": "narrador",
+          "id": "ahogado",
           "posicion": {
-            "x": -80,
+            "x": -100,
             "y": 60
           },
           "escala": 1.1,
           "orientacion": "derecha",
-          "prop": "clock",
-          "poseId": "presenting_object",
-          "expresion": "shocked",
+          "poseId": "covering_mouth",
+          "expresion": "exhausted",
           "habla": true
         }
       ],
-      "duracionSegundos": 6.946,
+      "duracionSegundos": 10.546,
       "palabras": [
         {
           "palabra": "Pero",
           "inicioMs": 0,
-          "finMs": 240
+          "finMs": 260
         },
         {
-          "palabra": "mientras",
-          "inicioMs": 240,
-          "finMs": 520
+          "palabra": "flotar",
+          "inicioMs": 260,
+          "finMs": 720
         },
         {
-          "palabra": "tú",
-          "inicioMs": 520,
-          "finMs": 740
+          "palabra": "sobre",
+          "inicioMs": 720,
+          "finMs": 980
         },
         {
-          "palabra": "vivías",
-          "inicioMs": 740,
-          "finMs": 1100
+          "palabra": "vapor",
+          "inicioMs": 980,
+          "finMs": 1280
         },
         {
-          "palabra": "esos",
-          "inicioMs": 1100,
-          "finMs": 1360
+          "palabra": "no",
+          "inicioMs": 1280,
+          "finMs": 1760
         },
         {
-          "palabra": "cinco",
-          "inicioMs": 1360,
-          "finMs": 1700
+          "palabra": "te",
+          "inicioMs": 1760,
+          "finMs": 1900
         },
         {
-          "palabra": "años",
-          "inicioMs": 1700,
-          "finMs": 1980
+          "palabra": "salvaría",
+          "inicioMs": 1900,
+          "finMs": 2480
         },
         {
-          "palabra": "en",
-          "inicioMs": 1980,
-          "finMs": 2200
+          "palabra": "A",
+          "inicioMs": 2480,
+          "finMs": 3360
         },
         {
-          "palabra": "tu",
-          "inicioMs": 2200,
-          "finMs": 2320
+          "palabra": "mil",
+          "inicioMs": 3360,
+          "finMs": 3520
         },
         {
-          "palabra": "camarote",
-          "inicioMs": 2320,
-          "finMs": 2820
+          "palabra": "doscientos",
+          "inicioMs": 3520,
+          "finMs": 4060
         },
         {
-          "palabra": "en",
-          "inicioMs": 2940,
-          "finMs": 3020
+          "palabra": "grados",
+          "inicioMs": 4060,
+          "finMs": 4760
         },
         {
           "palabra": "la",
-          "inicioMs": 3020,
-          "finMs": 3100
+          "inicioMs": 5200,
+          "finMs": 5380
         },
         {
-          "palabra": "Tierra",
-          "inicioMs": 3100,
-          "finMs": 3420
-        },
-        {
-          "palabra": "han",
-          "inicioMs": 3420,
-          "finMs": 3620
-        },
-        {
-          "palabra": "pasado",
-          "inicioMs": 3620,
-          "finMs": 3900
-        },
-        {
-          "palabra": "más",
-          "inicioMs": 3900,
-          "finMs": 4180
-        },
-        {
-          "palabra": "de",
-          "inicioMs": 4180,
-          "finMs": 4320
-        },
-        {
-          "palabra": "treinta",
-          "inicioMs": 4320,
-          "finMs": 4840
-        },
-        {
-          "palabra": "y",
-          "inicioMs": 4840,
-          "finMs": 5280
-        },
-        {
-          "palabra": "cinco",
-          "inicioMs": 5280,
-          "finMs": 5440
-        },
-        {
-          "palabra": "años",
-          "inicioMs": 5440,
-          "finMs": 5600
-        },
-        {
-          "palabra": "terrestres",
-          "inicioMs": 5600,
+          "palabra": "radiación",
+          "inicioMs": 5380,
           "finMs": 5780
         },
         {
-          "palabra": "completos",
+          "palabra": "térmica",
           "inicioMs": 5780,
-          "finMs": 6480
+          "finMs": 6200
+        },
+        {
+          "palabra": "es",
+          "inicioMs": 6200,
+          "finMs": 6360
+        },
+        {
+          "palabra": "tan",
+          "inicioMs": 6360,
+          "finMs": 6440
+        },
+        {
+          "palabra": "bestial",
+          "inicioMs": 6440,
+          "finMs": 6740
+        },
+        {
+          "palabra": "que",
+          "inicioMs": 6740,
+          "finMs": 6920
+        },
+        {
+          "palabra": "el",
+          "inicioMs": 6920,
+          "finMs": 7040
+        },
+        {
+          "palabra": "aire",
+          "inicioMs": 7040,
+          "finMs": 7120
+        },
+        {
+          "palabra": "que",
+          "inicioMs": 7120,
+          "finMs": 7280
+        },
+        {
+          "palabra": "respiras",
+          "inicioMs": 7280,
+          "finMs": 7680
+        },
+        {
+          "palabra": "quemaría",
+          "inicioMs": 7680,
+          "finMs": 7820
+        },
+        {
+          "palabra": "tus",
+          "inicioMs": 7820,
+          "finMs": 8220
+        },
+        {
+          "palabra": "pulmones",
+          "inicioMs": 8220,
+          "finMs": 8640
+        },
+        {
+          "palabra": "antes",
+          "inicioMs": 8640,
+          "finMs": 8900
+        },
+        {
+          "palabra": "de",
+          "inicioMs": 8900,
+          "finMs": 9000
+        },
+        {
+          "palabra": "que",
+          "inicioMs": 9000,
+          "finMs": 9100
+        },
+        {
+          "palabra": "puedas",
+          "inicioMs": 9100,
+          "finMs": 9360
+        },
+        {
+          "palabra": "tocar",
+          "inicioMs": 9360,
+          "finMs": 9560
+        },
+        {
+          "palabra": "el",
+          "inicioMs": 9560,
+          "finMs": 9740
+        },
+        {
+          "palabra": "magma",
+          "inicioMs": 9740,
+          "finMs": 10060
+        }
+      ]
+    },
+    {
+      "id": 8,
+      "texto": "A medida que el calor penetra, los fluidos orgánicos atrapados se expanden violentamente, generando micro-explosiones de vapor que rompen la corteza volcánica a tu alrededor.",
+      "icono": "Bomb",
+      "colorIcono": "#DC2626",
+      "tituloVisual": "EXPLOSIÓN DE VAPOR",
+      "composicionVisual": "escenario_ilustrado",
+      "escenario": "crater_volcanico",
+      "layout": "narrativo",
+      "transicion": "corte",
+      "efectosCamara": [
+        "shake"
+      ],
+      "sfx": "sfx/sfx_impact.wav",
+      "volumenSfx": 0.25,
+      "elementosNarrativos": [
+        {
+          "tipo": "shockwave_burst"
+        },
+        {
+          "tipo": "flying_debris"
+        }
+      ],
+      "palabrasClave": [
+        "se expanden violentamente",
+        "micro-explosiones de vapor",
+        "corteza volcánica"
+      ],
+      "personajes": [
+        {
+          "id": "asustado",
+          "posicion": {
+            "x": -120,
+            "y": 70
+          },
+          "escala": 1.05,
+          "orientacion": "derecha",
+          "poseId": "shock_explosion",
+          "expresion": "shocked",
+          "habla": true
+        }
+      ],
+      "duracionSegundos": 9.634,
+      "palabras": [
+        {
+          "palabra": "A",
+          "inicioMs": 0,
+          "finMs": 180
+        },
+        {
+          "palabra": "medida",
+          "inicioMs": 180,
+          "finMs": 340
+        },
+        {
+          "palabra": "que",
+          "inicioMs": 340,
+          "finMs": 580
+        },
+        {
+          "palabra": "el",
+          "inicioMs": 580,
+          "finMs": 660
+        },
+        {
+          "palabra": "calor",
+          "inicioMs": 660,
+          "finMs": 920
+        },
+        {
+          "palabra": "penetra",
+          "inicioMs": 920,
+          "finMs": 1440
+        },
+        {
+          "palabra": "los",
+          "inicioMs": 1680,
+          "finMs": 1840
+        },
+        {
+          "palabra": "fluidos",
+          "inicioMs": 1840,
+          "finMs": 2200
+        },
+        {
+          "palabra": "orgánicos",
+          "inicioMs": 2200,
+          "finMs": 2680
+        },
+        {
+          "palabra": "atrapados",
+          "inicioMs": 2680,
+          "finMs": 3300
+        },
+        {
+          "palabra": "se",
+          "inicioMs": 3300,
+          "finMs": 3560
+        },
+        {
+          "palabra": "expanden",
+          "inicioMs": 3560,
+          "finMs": 4000
+        },
+        {
+          "palabra": "violentamente",
+          "inicioMs": 4000,
+          "finMs": 4820
+        },
+        {
+          "palabra": "generando",
+          "inicioMs": 5060,
+          "finMs": 5500
+        },
+        {
+          "palabra": "micro-explosiones",
+          "inicioMs": 5500,
+          "finMs": 6360
+        },
+        {
+          "palabra": "de",
+          "inicioMs": 6360,
+          "finMs": 6520
+        },
+        {
+          "palabra": "vapor",
+          "inicioMs": 6520,
+          "finMs": 6760
+        },
+        {
+          "palabra": "que",
+          "inicioMs": 6760,
+          "finMs": 7000
+        },
+        {
+          "palabra": "rompen",
+          "inicioMs": 7000,
+          "finMs": 7340
+        },
+        {
+          "palabra": "la",
+          "inicioMs": 7340,
+          "finMs": 7500
+        },
+        {
+          "palabra": "corteza",
+          "inicioMs": 7500,
+          "finMs": 7920
+        },
+        {
+          "palabra": "volcánica",
+          "inicioMs": 7920,
+          "finMs": 8500
+        },
+        {
+          "palabra": "a",
+          "inicioMs": 8500,
+          "finMs": 8680
+        },
+        {
+          "palabra": "tu",
+          "inicioMs": 8680,
+          "finMs": 8780
+        },
+        {
+          "palabra": "alrededor",
+          "inicioMs": 8780,
+          "finMs": 9080
         }
       ]
     },
     {
       "id": 9,
-      "texto": "Al aterrizar, tu hermano gemelo tendrá más de sesenta años y arrugas, mientras que tú apenas tienes veinticinco años biológicos.",
-      "icono": "Users",
+      "texto": "Los vulcanólogos lo comprobaron arrojando una bolsa de basura orgánica de treinta kilos a un lago de lava en Etiopía: el impacto desató una erupción caótica de fuentes de lava que duró varios minutos.",
+      "icono": "FlaskConical",
       "colorIcono": "#10B981",
-      "tituloVisual": "EL REENCUENTRO",
-      "composicionVisual": "primer_plano",
-      "escenario": "laboratorio_neuro",
-      "layout": "narrativo",
-      "transicion": "zoom_in",
-      "efectosCamara": [
-        "shake",
-        "punch"
-      ],
-      "sfx": "sfx/sfx_dramatic_hit.wav",
-      "volumenSfx": 0.25,
-      "palabrasClave": [
-        "sesenta años y arrugas",
-        "veinticinco años biológicos",
-        "hermano gemelo"
-      ],
-      "personajes": [
-        {
-          "id": "astronauta",
-          "posicion": {
-            "x": 0,
-            "y": 50
-          },
-          "escala": 1.15,
-          "orientacion": "derecha",
-          "prop": "relativistic_rocket",
-          "poseId": "presenting_object",
-          "expresion": "eureka",
-          "habla": true
-        }
-      ],
-      "duracionSegundos": 6.85,
-      "palabras": [
-        {
-          "palabra": "Al",
-          "inicioMs": 0,
-          "finMs": 240
-        },
-        {
-          "palabra": "aterrizar",
-          "inicioMs": 240,
-          "finMs": 760
-        },
-        {
-          "palabra": "tu",
-          "inicioMs": 760,
-          "finMs": 940
-        },
-        {
-          "palabra": "hermano",
-          "inicioMs": 940,
-          "finMs": 1260
-        },
-        {
-          "palabra": "gemelo",
-          "inicioMs": 1260,
-          "finMs": 1580
-        },
-        {
-          "palabra": "tendrá",
-          "inicioMs": 1580,
-          "finMs": 1920
-        },
-        {
-          "palabra": "más",
-          "inicioMs": 1920,
-          "finMs": 2080
-        },
-        {
-          "palabra": "de",
-          "inicioMs": 2080,
-          "finMs": 2240
-        },
-        {
-          "palabra": "sesenta",
-          "inicioMs": 2240,
-          "finMs": 2660
-        },
-        {
-          "palabra": "años",
-          "inicioMs": 2660,
-          "finMs": 2900
-        },
-        {
-          "palabra": "y",
-          "inicioMs": 2900,
-          "finMs": 3040
-        },
-        {
-          "palabra": "arrugas",
-          "inicioMs": 3040,
-          "finMs": 3480
-        },
-        {
-          "palabra": "mientras",
-          "inicioMs": 3720,
-          "finMs": 3920
-        },
-        {
-          "palabra": "que",
-          "inicioMs": 3920,
-          "finMs": 4160
-        },
-        {
-          "palabra": "tú",
-          "inicioMs": 4160,
-          "finMs": 4300
-        },
-        {
-          "palabra": "apenas",
-          "inicioMs": 4300,
-          "finMs": 4520
-        },
-        {
-          "palabra": "tienes",
-          "inicioMs": 4520,
-          "finMs": 4880
-        },
-        {
-          "palabra": "veinticinco",
-          "inicioMs": 4880,
-          "finMs": 5500
-        },
-        {
-          "palabra": "años",
-          "inicioMs": 5500,
-          "finMs": 5720
-        },
-        {
-          "palabra": "biológicos",
-          "inicioMs": 5720,
-          "finMs": 6360
-        }
-      ]
-    },
-    {
-      "id": 10,
-      "texto": "Viajar a la velocidad de la luz es una máquina para viajar hacia el futuro del universo, sin boleto de regreso al pasado.",
-      "icono": "Compass",
-      "colorIcono": "#38BDF8",
-      "tituloVisual": "VIAJE AL FUTURO",
-      "composicionVisual": "plano_general",
-      "escenario": "vuelo_relativista",
+      "tituloVisual": "PRUEBA CIENTÍFICA",
+      "composicionVisual": "escenario_ilustrado",
+      "escenario": "crater_volcanico",
       "layout": "narrativo",
       "transicion": "whip_left",
       "efectosCamara": [
         "drift"
       ],
       "palabrasClave": [
-        "máquina para viajar al futuro",
-        "sin boleto de regreso",
-        "futuro del universo"
+        "vulcanólogos",
+        "basura orgánica",
+        "erupción caótica"
+      ],
+      "objetos": [
+        {
+          "propId": "magma_bubbling_crust",
+          "posicion": {
+            "x": 240,
+            "y": 10
+          },
+          "escala": 1.15,
+          "animacion": {
+            "tipo": "vibrar"
+          }
+        }
       ],
       "personajes": [
         {
-          "id": "astronauta",
+          "id": "investigador",
           "posicion": {
-            "x": 0,
-            "y": 50
+            "x": -220,
+            "y": 70
           },
-          "escala": 1.15,
+          "escala": 1.05,
           "orientacion": "derecha",
-          "prop": "relativistic_rocket",
-          "poseId": "presenting_object",
-          "expresion": "talking_enthusiastic",
+          "poseId": "taking_notes",
+          "expresion": "analytical",
           "habla": true
         }
       ],
-      "duracionSegundos": 5.722,
+      "duracionSegundos": 10.018,
       "palabras": [
         {
-          "palabra": "Viajar",
+          "palabra": "Los",
           "inicioMs": 0,
-          "finMs": 380
+          "finMs": 220
         },
         {
-          "palabra": "a",
-          "inicioMs": 380,
-          "finMs": 480
+          "palabra": "vulcanólogos",
+          "inicioMs": 220,
+          "finMs": 900
         },
         {
-          "palabra": "la",
-          "inicioMs": 480,
-          "finMs": 540
+          "palabra": "lo",
+          "inicioMs": 900,
+          "finMs": 1000
         },
         {
-          "palabra": "velocidad",
-          "inicioMs": 540,
-          "finMs": 840
-        },
-        {
-          "palabra": "de",
-          "inicioMs": 840,
-          "finMs": 1060
-        },
-        {
-          "palabra": "la",
-          "inicioMs": 1060,
-          "finMs": 1140
-        },
-        {
-          "palabra": "luz",
-          "inicioMs": 1140,
-          "finMs": 1320
-        },
-        {
-          "palabra": "es",
-          "inicioMs": 1320,
+          "palabra": "comprobaron",
+          "inicioMs": 1000,
           "finMs": 1580
         },
         {
-          "palabra": "una",
+          "palabra": "arrojando",
           "inicioMs": 1580,
-          "finMs": 1720
+          "finMs": 2060
         },
         {
-          "palabra": "máquina",
-          "inicioMs": 1720,
-          "finMs": 2040
+          "palabra": "una",
+          "inicioMs": 2060,
+          "finMs": 2200
         },
         {
-          "palabra": "para",
-          "inicioMs": 2040,
-          "finMs": 2280
-        },
-        {
-          "palabra": "viajar",
-          "inicioMs": 2280,
-          "finMs": 2600
-        },
-        {
-          "palabra": "hacia",
-          "inicioMs": 2600,
-          "finMs": 2760
-        },
-        {
-          "palabra": "el",
-          "inicioMs": 2760,
-          "finMs": 2880
-        },
-        {
-          "palabra": "futuro",
-          "inicioMs": 2880,
-          "finMs": 3080
-        },
-        {
-          "palabra": "del",
-          "inicioMs": 3080,
-          "finMs": 3300
-        },
-        {
-          "palabra": "universo",
-          "inicioMs": 3300,
-          "finMs": 3680
-        },
-        {
-          "palabra": "sin",
-          "inicioMs": 3800,
-          "finMs": 3940
-        },
-        {
-          "palabra": "boleto",
-          "inicioMs": 3940,
-          "finMs": 4260
+          "palabra": "bolsa",
+          "inicioMs": 2200,
+          "finMs": 2520
         },
         {
           "palabra": "de",
-          "inicioMs": 4260,
-          "finMs": 4380
+          "inicioMs": 2520,
+          "finMs": 2620
         },
         {
-          "palabra": "regreso",
-          "inicioMs": 4380,
-          "finMs": 4760
+          "palabra": "basura",
+          "inicioMs": 2620,
+          "finMs": 2900
         },
         {
-          "palabra": "al",
-          "inicioMs": 4760,
-          "finMs": 4860
+          "palabra": "orgánica",
+          "inicioMs": 2900,
+          "finMs": 3340
         },
         {
-          "palabra": "pasado",
-          "inicioMs": 4860,
-          "finMs": 5160
+          "palabra": "de",
+          "inicioMs": 3340,
+          "finMs": 3440
+        },
+        {
+          "palabra": "treinta",
+          "inicioMs": 3440,
+          "finMs": 3720
+        },
+        {
+          "palabra": "kilos",
+          "inicioMs": 3720,
+          "finMs": 4020
+        },
+        {
+          "palabra": "a",
+          "inicioMs": 4020,
+          "finMs": 4200
+        },
+        {
+          "palabra": "un",
+          "inicioMs": 4200,
+          "finMs": 4300
+        },
+        {
+          "palabra": "lago",
+          "inicioMs": 4300,
+          "finMs": 4500
+        },
+        {
+          "palabra": "de",
+          "inicioMs": 4500,
+          "finMs": 4640
+        },
+        {
+          "palabra": "lava",
+          "inicioMs": 4640,
+          "finMs": 4780
+        },
+        {
+          "palabra": "en",
+          "inicioMs": 4780,
+          "finMs": 4920
+        },
+        {
+          "palabra": "Etiopía",
+          "inicioMs": 4920,
+          "finMs": 5400
+        },
+        {
+          "palabra": "el",
+          "inicioMs": 5540,
+          "finMs": 5660
+        },
+        {
+          "palabra": "impacto",
+          "inicioMs": 5660,
+          "finMs": 6040
+        },
+        {
+          "palabra": "desató",
+          "inicioMs": 6040,
+          "finMs": 6520
+        },
+        {
+          "palabra": "una",
+          "inicioMs": 6520,
+          "finMs": 6680
+        },
+        {
+          "palabra": "erupción",
+          "inicioMs": 6680,
+          "finMs": 7020
+        },
+        {
+          "palabra": "caótica",
+          "inicioMs": 7020,
+          "finMs": 7620
+        },
+        {
+          "palabra": "de",
+          "inicioMs": 7620,
+          "finMs": 7740
+        },
+        {
+          "palabra": "fuentes",
+          "inicioMs": 7740,
+          "finMs": 8080
+        },
+        {
+          "palabra": "de",
+          "inicioMs": 8080,
+          "finMs": 8220
+        },
+        {
+          "palabra": "lava",
+          "inicioMs": 8220,
+          "finMs": 8440
+        },
+        {
+          "palabra": "que",
+          "inicioMs": 8440,
+          "finMs": 8700
+        },
+        {
+          "palabra": "duró",
+          "inicioMs": 8700,
+          "finMs": 8960
+        },
+        {
+          "palabra": "varios",
+          "inicioMs": 8960,
+          "finMs": 9200
+        },
+        {
+          "palabra": "minutos",
+          "inicioMs": 9200,
+          "finMs": 9500
+        }
+      ]
+    },
+    {
+      "id": 10,
+      "texto": "Así que olvídate de hundirte despacio levantando el pulgar como Terminator: la física de la materia y la termodinámica son infinitamente más violentas y espectaculares.",
+      "icono": "Brain",
+      "colorIcono": "#8B5CF6",
+      "tituloVisual": "CIENCIA VS CINE",
+      "composicionVisual": "plano_general",
+      "escenario": "laboratorio",
+      "layout": "narrativo",
+      "transicion": "zoom_in",
+      "efectosCamara": [
+        "drift"
+      ],
+      "palabrasClave": [
+        "levantando el pulgar",
+        "física de la materia",
+        "más violentas"
+      ],
+      "personajes": [
+        {
+          "id": "terminator_fan",
+          "posicion": {
+            "x": -160,
+            "y": 70
+          },
+          "escala": 1.05,
+          "orientacion": "derecha",
+          "poseId": "thumbs_up_approval",
+          "expresion": "smile_wide",
+          "acciones": [
+            {
+              "tipo": "caminar_hacia",
+              "desdeX": -240,
+              "haciaX": -120
+            }
+          ],
+          "habla": true
+        }
+      ],
+      "duracionSegundos": 8.434,
+      "palabras": [
+        {
+          "palabra": "Así",
+          "inicioMs": 0,
+          "finMs": 300
+        },
+        {
+          "palabra": "que",
+          "inicioMs": 300,
+          "finMs": 440
+        },
+        {
+          "palabra": "olvídate",
+          "inicioMs": 440,
+          "finMs": 820
+        },
+        {
+          "palabra": "de",
+          "inicioMs": 820,
+          "finMs": 960
+        },
+        {
+          "palabra": "hundirte",
+          "inicioMs": 960,
+          "finMs": 1300
+        },
+        {
+          "palabra": "despacio",
+          "inicioMs": 1300,
+          "finMs": 1740
+        },
+        {
+          "palabra": "levantando",
+          "inicioMs": 1740,
+          "finMs": 2280
+        },
+        {
+          "palabra": "el",
+          "inicioMs": 2280,
+          "finMs": 2380
+        },
+        {
+          "palabra": "pulgar",
+          "inicioMs": 2380,
+          "finMs": 2660
+        },
+        {
+          "palabra": "como",
+          "inicioMs": 2660,
+          "finMs": 2880
+        },
+        {
+          "palabra": "Terminator",
+          "inicioMs": 2880,
+          "finMs": 3500
+        },
+        {
+          "palabra": "la",
+          "inicioMs": 3800,
+          "finMs": 3880
+        },
+        {
+          "palabra": "física",
+          "inicioMs": 3880,
+          "finMs": 4120
+        },
+        {
+          "palabra": "de",
+          "inicioMs": 4120,
+          "finMs": 4300
+        },
+        {
+          "palabra": "la",
+          "inicioMs": 4300,
+          "finMs": 4420
+        },
+        {
+          "palabra": "materia",
+          "inicioMs": 4420,
+          "finMs": 4680
+        },
+        {
+          "palabra": "y",
+          "inicioMs": 4680,
+          "finMs": 4840
+        },
+        {
+          "palabra": "la",
+          "inicioMs": 4840,
+          "finMs": 4900
+        },
+        {
+          "palabra": "termodinámica",
+          "inicioMs": 4900,
+          "finMs": 5560
+        },
+        {
+          "palabra": "son",
+          "inicioMs": 5560,
+          "finMs": 5740
+        },
+        {
+          "palabra": "infinitamente",
+          "inicioMs": 5740,
+          "finMs": 6240
+        },
+        {
+          "palabra": "más",
+          "inicioMs": 6240,
+          "finMs": 6580
+        },
+        {
+          "palabra": "violentas",
+          "inicioMs": 6580,
+          "finMs": 7080
+        },
+        {
+          "palabra": "y",
+          "inicioMs": 7080,
+          "finMs": 7200
+        },
+        {
+          "palabra": "espectaculares",
+          "inicioMs": 7200,
+          "finMs": 7920
+        }
+      ]
+    },
+    {
+      "id": 11,
+      "texto": "La naturaleza nunca perdona las leyes de la física. ¿Qué otro gran mito de las películas quieres que desmintamos con ciencia real?",
+      "icono": "Sparkles",
+      "colorIcono": "#EC4899",
+      "tituloVisual": "¡RESPETA LA FÍSICA!",
+      "composicionVisual": "escenario_ilustrado",
+      "escenario": "crater_volcanico",
+      "layout": "narrativo",
+      "transicion": "whip_right",
+      "efectosCamara": [
+        "drift"
+      ],
+      "palabrasClave": [
+        "leyes de la física",
+        "gran mito",
+        "ciencia real"
+      ],
+      "personajes": [
+        {
+          "id": "despedida",
+          "posicion": {
+            "x": -120,
+            "y": 70
+          },
+          "escala": 1.05,
+          "orientacion": "derecha",
+          "poseId": "celebrating_arms_up",
+          "expresion": "laugh",
+          "habla": true
+        }
+      ],
+      "duracionSegundos": 6.85,
+      "palabras": [
+        {
+          "palabra": "La",
+          "inicioMs": 0,
+          "finMs": 180
+        },
+        {
+          "palabra": "naturaleza",
+          "inicioMs": 180,
+          "finMs": 760
+        },
+        {
+          "palabra": "nunca",
+          "inicioMs": 760,
+          "finMs": 1060
+        },
+        {
+          "palabra": "perdona",
+          "inicioMs": 1060,
+          "finMs": 1460
+        },
+        {
+          "palabra": "las",
+          "inicioMs": 1460,
+          "finMs": 1680
+        },
+        {
+          "palabra": "leyes",
+          "inicioMs": 1680,
+          "finMs": 1920
+        },
+        {
+          "palabra": "de",
+          "inicioMs": 1920,
+          "finMs": 2060
+        },
+        {
+          "palabra": "la",
+          "inicioMs": 2060,
+          "finMs": 2160
+        },
+        {
+          "palabra": "física",
+          "inicioMs": 2160,
+          "finMs": 2540
+        },
+        {
+          "palabra": "Qué",
+          "inicioMs": 2880,
+          "finMs": 3040
+        },
+        {
+          "palabra": "otro",
+          "inicioMs": 3040,
+          "finMs": 3240
+        },
+        {
+          "palabra": "gran",
+          "inicioMs": 3240,
+          "finMs": 3460
+        },
+        {
+          "palabra": "mito",
+          "inicioMs": 3460,
+          "finMs": 3780
+        },
+        {
+          "palabra": "de",
+          "inicioMs": 3780,
+          "finMs": 3880
+        },
+        {
+          "palabra": "las",
+          "inicioMs": 3880,
+          "finMs": 3980
+        },
+        {
+          "palabra": "películas",
+          "inicioMs": 3980,
+          "finMs": 4500
+        },
+        {
+          "palabra": "quieres",
+          "inicioMs": 4500,
+          "finMs": 4720
+        },
+        {
+          "palabra": "que",
+          "inicioMs": 4720,
+          "finMs": 4900
+        },
+        {
+          "palabra": "desmintamos",
+          "inicioMs": 4900,
+          "finMs": 5520
+        },
+        {
+          "palabra": "con",
+          "inicioMs": 5520,
+          "finMs": 5700
+        },
+        {
+          "palabra": "ciencia",
+          "inicioMs": 5700,
+          "finMs": 6080
+        },
+        {
+          "palabra": "real",
+          "inicioMs": 6080,
+          "finMs": 6340
         }
       ]
     }

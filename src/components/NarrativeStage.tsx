@@ -20,6 +20,10 @@ export const ESCENARIOS_OSCUROS: ReadonlySet<TipoEscenario> = new Set<TipoEscena
   "nucleo_tierra",
   "red_subterranea",
   "vuelo_relativista",
+  "playa_bioluminiscente",
+  "caldera_volcan",
+  "crater_volcanico",
+  "volcan",
 ]);
 
 /** Pseudo-aleatorio determinista (mismo valor en cada render del mismo índice). */
@@ -1879,12 +1883,428 @@ const VueloRelativista: React.FC<{ frame: number; isPrimerPlano: boolean }> = ({
   );
 };
 
+/** Playa bioluminiscente nocturna: océano con olas azul neón, cielo estrellado y arena luminosa. */
+const PlayaBioluminiscente: React.FC<{ frame: number; isPrimerPlano: boolean }> = ({ frame, isPrimerPlano }) => {
+  const waveGlow1 = 0.5 + 0.5 * Math.sin(frame / 12);
+  const waveGlow2 = 0.5 + 0.5 * Math.sin(frame / 15 + 2);
+  const waveGlow3 = 0.5 + 0.5 * Math.sin(frame / 9 + 4);
+  const starBlink1 = 0.4 + 0.6 * Math.sin(frame / 7);
+  const starBlink2 = 0.4 + 0.6 * Math.cos(frame / 9);
+  const starBlink3 = 0.4 + 0.6 * Math.sin(frame / 11 + 1.5);
+  const surfDrift = Math.sin(frame / 40) * 20;
+  return (
+    <div className="absolute inset-0 pointer-events-none z-0 overflow-hidden bg-[#020B1A]">
+      <svg className="absolute inset-0 w-full h-full" viewBox="0 0 1080 1920" preserveAspectRatio="xMidYMid slice">
+        {/* Cielo nocturno profundo */}
+        <defs>
+          <linearGradient id="bioSky" x1="0" y1="0" x2="0" y2="1">
+            <stop offset="0%" stopColor="#010612" />
+            <stop offset="60%" stopColor="#031530" />
+            <stop offset="100%" stopColor="#072A4A" />
+          </linearGradient>
+          <linearGradient id="bioOcean" x1="0" y1="0" x2="0" y2="1">
+            <stop offset="0%" stopColor="#041E3A" />
+            <stop offset="40%" stopColor="#031525" />
+            <stop offset="100%" stopColor="#010810" />
+          </linearGradient>
+          <radialGradient id="moonGlowBio">
+            <stop offset="0%" stopColor="#E0F2FE" stopOpacity="0.9" />
+            <stop offset="100%" stopColor="#E0F2FE" stopOpacity="0" />
+          </radialGradient>
+          <radialGradient id="bioWaveGlow">
+            <stop offset="0%" stopColor="#22D3EE" stopOpacity="0.85" />
+            <stop offset="100%" stopColor="#22D3EE" stopOpacity="0" />
+          </radialGradient>
+        </defs>
+        {/* Cielo */}
+        <rect x="0" y="0" width="1080" height="900" fill="url(#bioSky)" />
+        {/* Estrellas titilantes */}
+        {[
+          { x: 80, y: 80, r: 2.5, b: starBlink1 },
+          { x: 220, y: 160, r: 2, b: starBlink2 },
+          { x: 380, y: 60, r: 3, b: starBlink3 },
+          { x: 520, y: 140, r: 2, b: starBlink1 },
+          { x: 700, y: 90, r: 2.5, b: starBlink2 },
+          { x: 860, y: 180, r: 2, b: starBlink3 },
+          { x: 980, y: 70, r: 3, b: starBlink1 },
+          { x: 150, y: 300, r: 2, b: starBlink2 },
+          { x: 460, y: 280, r: 2.5, b: starBlink3 },
+          { x: 780, y: 320, r: 2, b: starBlink1 },
+          { x: 920, y: 260, r: 2.5, b: starBlink2 },
+        ].map((s, i) => (
+          <circle key={`star${i}`} cx={s.x} cy={s.y} r={s.r} fill="#FFFFFF" opacity={s.b} />
+        ))}
+        {/* Luna creciente con halo */}
+        <circle cx="920" cy="180" r="70" fill="url(#moonGlowBio)" opacity="0.5" />
+        <path d="M 920 120 A 60 60 0 1 1 920 240 A 45 45 0 1 0 920 120 Z" fill="#FDE047" stroke="#000000" strokeWidth="3" />
+        {/* Océano */}
+        <rect x="0" y="900" width="1080" height="1020" fill="url(#bioOcean)" />
+        {/* Línea de horizonte */}
+        <line x1="0" y1="900" x2="1080" y2="900" stroke="#0EA5E9" strokeWidth="4" opacity="0.5" />
+        {/* Olas bioluminiscentes en el fondo (parallax lejano) */}
+        {[0, 1, 2].map((i) => {
+          const y = 980 + i * 80;
+          const glow = [waveGlow1, waveGlow2, waveGlow3][i];
+          return (
+            <g key={`farwave${i}`} transform={`translate(${surfDrift * 0.3} 0)`}>
+              <path
+                d={`M -60 ${y} Q 120 ${y - 15} 300 ${y} T 660 ${y} T 1020 ${y} T 1380 ${y}`}
+                stroke="#22D3EE"
+                strokeWidth="3"
+                fill="none"
+                opacity={0.3 + glow * 0.3}
+              />
+              <path
+                d={`M -60 ${y + 4} Q 120 ${y - 11} 300 ${y + 4} T 660 ${y + 4} T 1020 ${y + 4} T 1380 ${y + 4}`}
+                stroke="#06B6D4"
+                strokeWidth="2"
+                fill="none"
+                opacity={0.2}
+              />
+            </g>
+          );
+        })}
+        {/* Olas principales bioluminiscentes (plano medio) */}
+        {[0, 1, 2, 3].map((i) => {
+          const y = 1050 + i * 120;
+          const glow = 0.5 + 0.5 * Math.sin(frame / 8 + i * 1.5);
+          const xOff = Math.sin(frame / 30 + i) * 15;
+          return (
+            <g key={`midwave${i}`} transform={`translate(${xOff} 0)`}>
+              <path
+                d={`M -80 ${y} Q 100 ${y - 25} 280 ${y} T 640 ${y} T 1000 ${y} T 1360 ${y}`}
+                stroke="#22D3EE"
+                strokeWidth={4 + glow * 2}
+                fill="none"
+                opacity={0.5 + glow * 0.4}
+              />
+              {/* Resplandor de la ola */}
+              <ellipse
+                cx={280 + i * 200}
+                cy={y}
+                rx={120}
+                ry={30}
+                fill="url(#bioWaveGlow)"
+                opacity={glow * 0.4}
+              />
+              <ellipse
+                cx={640 + i * 150}
+                cy={y}
+                rx={100}
+                ry={25}
+                fill="url(#bioWaveGlow)"
+                opacity={glow * 0.3}
+              />
+            </g>
+          );
+        })}
+        {/* Partículas bioluminiscentes flotando (dinoflagelados) */}
+        {[...Array(40)].map((_, i) => {
+          const x = (i * 97 + frame * (0.3 + (i % 5) * 0.15)) % 1080;
+          const y = 920 + ((i * 137 + frame * (0.2 + (i % 3) * 0.1)) % 980);
+          const sz = 2 + (i % 3);
+          const pulse = 0.3 + 0.7 * Math.abs(Math.sin(frame / 6 + i * 0.7));
+          return (
+            <circle
+              key={`particle${i}`}
+              cx={x}
+              cy={y}
+              r={sz}
+              fill="#22D3EE"
+              opacity={pulse * 0.6}
+            />
+          );
+        })}
+        {/* Espuma bioluminiscente en la orilla (primer plano) */}
+        <g transform={`translate(${surfDrift} 0)`}>
+          {[...Array(12)].map((_, i) => {
+            const x = i * 95 - 20;
+            const y = 1580 + Math.sin(frame / 10 + i) * 8;
+            const glow = 0.4 + 0.6 * Math.abs(Math.sin(frame / 7 + i * 0.8));
+            return (
+              <ellipse
+                key={`foam${i}`}
+                cx={x}
+                cy={y}
+                rx={50}
+                ry={18}
+                fill="#22D3EE"
+                opacity={glow * 0.5}
+              />
+            );
+          })}
+        </g>
+        {/* Arena (suelo) */}
+        <rect x="0" y="1620" width="1080" height="300" fill="#1C1410" />
+        <rect x="0" y="1620" width="1080" height="8" fill="#3D2B1F" />
+        {/* Partículas de arena brillante */}
+        {[...Array(20)].map((_, i) => {
+          const x = (i * 53 + frame * 0.1) % 1080;
+          const y = 1640 + (i * 17) % 260;
+          const glow = 0.2 + 0.4 * Math.abs(Math.sin(frame / 5 + i));
+          return (
+            <circle
+              key={`sand${i}`}
+              cx={x}
+              cy={y}
+              r={1.5}
+              fill="#22D3EE"
+              opacity={glow}
+            />
+          );
+        })}
+      </svg>
+      {isPrimerPlano && (
+        <div
+          className="absolute inset-0 pointer-events-none"
+          style={{
+            background:
+              "radial-gradient(circle at 50% 50%, transparent 40%, rgba(2, 11, 26, 0.55) 100%)",
+          }}
+        />
+      )}
+    </div>
+  );
+};
+
+/** Caldera y Cráter Volcánico con lago de lava basáltica hirviendo, humo sulfuroso,
+ * corteza agrietada con magma palpitante y partículas de cenizas/chispas incandescentes. */
+const CraterVolcanico: React.FC<{ frame: number; isPrimerPlano: boolean }> = ({ frame, isPrimerPlano }) => {
+  const f = frame;
+  const smokeSway = Math.sin(f / 25) * 18;
+  const lavaWave = Math.sin(f / 14) * 12;
+  const crustBreath = Math.sin(f / 18) * 8;
+
+  return (
+    <div className="absolute inset-0 pointer-events-none z-0 overflow-hidden bg-[#120502]">
+      <svg className="absolute inset-0 w-full h-full" viewBox="0 0 1080 1920" preserveAspectRatio="xMidYMid slice">
+        <defs>
+          <linearGradient id="volcanCielo" x1="0" y1="0" x2="0" y2="1">
+            <stop offset="0%" stopColor="#180703" />
+            <stop offset="30%" stopColor="#3F0D0C" />
+            <stop offset="60%" stopColor="#7F1D1D" />
+            <stop offset="85%" stopColor="#B91C1C" />
+            <stop offset="100%" stopColor="#EA580C" />
+          </linearGradient>
+          <linearGradient id="lavaGrad" x1="0" y1="0" x2="0" y2="1">
+            <stop offset="0%" stopColor="#FEF08A" />
+            <stop offset="15%" stopColor="#F59E0B" />
+            <stop offset="45%" stopColor="#EF4444" />
+            <stop offset="80%" stopColor="#991B1B" />
+            <stop offset="100%" stopColor="#450A0A" />
+          </linearGradient>
+          <radialGradient id="lavaGlow">
+            <stop offset="0%" stopColor="#FDE047" stopOpacity="0.85" />
+            <stop offset="50%" stopColor="#EA580C" stopOpacity="0.5" />
+            <stop offset="100%" stopColor="#7F1D1D" stopOpacity="0" />
+          </radialGradient>
+        </defs>
+
+        {/* Capa 0: Cielo crepuscular volcánico saturado */}
+        <rect x="0" y="0" width="1080" height="1920" fill="url(#volcanCielo)" />
+
+        {/* Humo y ceniza piroclástica lejana */}
+        {[
+          { x: 260, y: 480, r: 160, c: "#260E0B", o: 0.75, s: 1 },
+          { x: 540, y: 380, r: 210, c: "#1C0A08", o: 0.85, s: 1.2 },
+          { x: 820, y: 460, r: 170, c: "#260E0B", o: 0.7, s: 0.9 },
+        ].map((cloud, i) => {
+          const drift = Math.sin(f / 20 + i * 2) * 22;
+          return (
+            <g key={`smoke${i}`} transform={`translate(${cloud.x + drift} ${cloud.y - (f * 0.4) % 180}) scale(${cloud.s})`}>
+              <circle cx="0" cy="0" r={cloud.r} fill={cloud.c} opacity={cloud.o} />
+              <circle cx="-50" cy="40" r={cloud.r * 0.75} fill={cloud.c} opacity={cloud.o} />
+              <circle cx="60" cy="30" r={cloud.r * 0.7} fill={cloud.c} opacity={cloud.o} />
+            </g>
+          );
+        })}
+
+        {/* Resplandor del cráter lejano */}
+        <ellipse cx="540" cy="1180" rx="580" ry="240" fill="url(#lavaGlow)" />
+
+        {/* Capa 1: Borde escarpado de la caldera basáltica lejana */}
+        <path
+          d={`M -50 1120 L 160 920 L 320 990 L 520 860 L 710 960 L 890 890 L 1130 1140 L 1130 1350 L -50 1350 Z`}
+          fill="#1C1917"
+          stroke="#000000"
+          strokeWidth="6"
+        />
+
+        {/* Columnas de humo ascendente sobre fisuras */}
+        <path
+          d={`M 320 990 Q ${320 + smokeSway} 700 ${360 - smokeSway} 450 Q ${330 + smokeSway} 250 400 120`}
+          stroke="#451A03"
+          strokeWidth="28"
+          strokeLinecap="round"
+          fill="none"
+          opacity="0.35"
+        />
+        <path
+          d={`M 710 960 Q ${710 - smokeSway} 680 ${680 + smokeSway} 420 Q ${730 - smokeSway} 200 700 80`}
+          stroke="#451A03"
+          strokeWidth="32"
+          strokeLinecap="round"
+          fill="none"
+          opacity="0.3"
+        />
+
+        {/* Capa 2: Paredes medias del cráter con fisuras de lava */}
+        <path
+          d="M -30 1250 L 180 1100 L 380 1170 L 600 1080 L 840 1160 L 1110 1090 L 1110 1380 L -30 1380 Z"
+          fill="#292524"
+          stroke="#000000"
+          strokeWidth="7"
+        />
+        {/* Venas de magma en las paredes rocosas */}
+        <path
+          d="M 190 1110 Q 240 1180 280 1260 M 590 1090 Q 560 1170 540 1260 M 830 1170 Q 860 1220 890 1260"
+          stroke="#F97316"
+          strokeWidth="8"
+          strokeLinecap="round"
+          fill="none"
+        />
+        <path
+          d="M 190 1110 Q 240 1180 280 1260 M 590 1090 Q 560 1170 540 1260 M 830 1170 Q 860 1220 890 1260"
+          stroke="#FEF08A"
+          strokeWidth="3.5"
+          strokeLinecap="round"
+          fill="none"
+        />
+
+        {/* Capa 3: Lago de Lava Basáltica Hirviendo (Suelo activo) */}
+        <path
+          d={`M 0 1240 Q 270 ${1215 + lavaWave} 540 1240 T 1080 ${1225 - lavaWave} L 1080 1920 L 0 1920 Z`}
+          fill="url(#lavaGrad)"
+          stroke="#000000"
+          strokeWidth="8"
+        />
+
+        {/* Olas y ondulaciones de magma espeso en superficie */}
+        <path
+          d={`M 0 1280 Q 260 ${1260 - lavaWave} 540 1285 T 1080 ${1270 + lavaWave}`}
+          stroke="#FEF08A"
+          strokeWidth="10"
+          strokeLinecap="round"
+          fill="none"
+          opacity="0.9"
+        />
+        <path
+          d={`M 0 1320 Q 320 ${1305 + lavaWave} 640 1325 T 1080 1315`}
+          stroke="#F97316"
+          strokeWidth="12"
+          strokeLinecap="round"
+          fill="none"
+          opacity="0.8"
+        />
+
+        {/* Placas de corteza basáltica flotante y agrietada */}
+        {[
+          { x: 120, y: 1420, w: 260, h: 140 },
+          { x: 440, y: 1380, w: 220, h: 120 },
+          { x: 720, y: 1440, w: 280, h: 150 },
+          { x: 260, y: 1620, w: 320, h: 180 },
+          { x: 620, y: 1650, w: 360, h: 190 },
+        ].map((plate, i) => {
+          const bob = Math.sin(f / 16 + i * 1.5) * 6;
+          return (
+            <g key={`plate${i}`} transform={`translate(${plate.x + crustBreath * (i % 2 === 0 ? 1 : -1)} ${plate.y + bob})`}>
+              <polygon
+                points={`-30,-20 ${plate.w * 0.4},-35 ${plate.w},0 ${plate.w * 0.85},${plate.h} 20,${plate.h * 0.9} -20,${plate.h * 0.5}`}
+                fill="#1C1917"
+                stroke="#000000"
+                strokeWidth="6"
+              />
+              {/* Grietas internas incandescentes en la placa */}
+              <path
+                d={`M 15 10 L ${plate.w * 0.4} ${plate.h * 0.3} L ${plate.w * 0.7} ${plate.h * 0.6}`}
+                stroke="#EF4444"
+                strokeWidth="5"
+                strokeLinecap="round"
+                fill="none"
+              />
+              <path
+                d={`M 15 10 L ${plate.w * 0.4} ${plate.h * 0.3} L ${plate.w * 0.7} ${plate.h * 0.6}`}
+                stroke="#FEF08A"
+                strokeWidth="2"
+                strokeLinecap="round"
+                fill="none"
+              />
+            </g>
+          );
+        })}
+
+        {/* Burbujas gigantes de lava que revientan */}
+        {[
+          { cx: 320, cy: 1360, r: 35, phase: 0 },
+          { cx: 780, cy: 1350, r: 42, phase: 2 },
+          { cx: 540, cy: 1520, r: 48, phase: 4 },
+        ].map((bub, i) => {
+          const bubCycle = (f + bub.phase * 15) % 45;
+          const bubScale = Math.min(1, bubCycle / 30);
+          const isPopped = bubCycle > 30;
+          if (isPopped) {
+            return (
+              <g key={`burst${i}`} transform={`translate(${bub.cx} ${bub.cy})`}>
+                <circle cx="-15" cy="-20" r="5" fill="#FEF08A" stroke="#000000" strokeWidth="2" />
+                <circle cx="18" cy="-22" r="6" fill="#F59E0B" stroke="#000000" strokeWidth="2" />
+                <circle cx="0" cy="-30" r="4" fill="#EF4444" />
+              </g>
+            );
+          }
+          return (
+            <g key={`bub${i}`} transform={`translate(${bub.cx} ${bub.cy}) scale(${bubScale})`}>
+              <ellipse cx="0" cy="0" rx={bub.r} ry={bub.r * 0.7} fill="#F59E0B" stroke="#000000" strokeWidth="5" />
+              <ellipse cx="-8" cy="-8" rx={bub.r * 0.35} ry={bub.r * 0.22} fill="#FEF08A" />
+            </g>
+          );
+        })}
+
+        {/* Partículas vivas: 28 chispas de lava y ceniza incandescente ascendiendo */}
+        {Array.from({ length: 28 }).map((_, i) => {
+          const speed = 2.4 + rnd(i * 3) * 3.2;
+          const py = 1920 - ((f * speed + rnd(i * 7) * 1920) % 1920);
+          const px = 60 + rnd(i * 13) * 960 + Math.sin(f / 10 + i) * 24;
+          const r = 2.5 + rnd(i * 5) * 4;
+          const sparkColor = i % 3 === 0 ? "#FEF08A" : i % 3 === 1 ? "#F59E0B" : "#EF4444";
+          return (
+            <circle
+              key={`spark${i}`}
+              cx={px}
+              cy={py}
+              r={r}
+              fill={sparkColor}
+              stroke="#000000"
+              strokeWidth={1.5}
+              opacity={0.85 + Math.sin(f / 6 + i) * 0.15}
+            />
+          );
+        })}
+      </svg>
+
+      {/* Halo de calor radiante extremo en primer plano */}
+      {isPrimerPlano && (
+        <div
+          className="absolute inset-0 pointer-events-none"
+          style={{
+            background:
+              "radial-gradient(circle at 50% 50%, transparent 35%, rgba(185, 28, 28, 0.45) 85%, rgba(69, 10, 10, 0.75) 100%)",
+          }}
+        />
+      )}
+    </div>
+  );
+};
+
 export const NarrativeStage: React.FC<NarrativeStageProps> = ({
   escenario = "vacio",
   composicionVisual = "minimalista",
   frame,
 }) => {
   const isPrimerPlano = composicionVisual === "primer_plano";
+
+  if (escenario === "crater_volcanico" || escenario === "caldera_volcan" || escenario === "volcan") {
+    return <CraterVolcanico frame={frame} isPrimerPlano={isPrimerPlano} />;
+  }
 
   if (escenario === "azotea_rascacielos" || escenario === "rascacielos") {
     return <AzoteaRascacielos frame={frame} isPrimerPlano={isPrimerPlano} />;
@@ -1942,6 +2362,9 @@ export const NarrativeStage: React.FC<NarrativeStageProps> = ({
   }
   if (escenario === "vuelo_relativista") {
     return <VueloRelativista frame={frame} isPrimerPlano={isPrimerPlano} />;
+  }
+  if (escenario === "playa_bioluminiscente") {
+    return <PlayaBioluminiscente frame={frame} isPrimerPlano={isPrimerPlano} />;
   }
 
   // En minimalista o vacio, fondo limpio neo-brutalista

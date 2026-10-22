@@ -92,6 +92,10 @@ export type TipoEscenario =
   | "arrecife_coral"
   | "red_subterranea"
   | "vuelo_relativista"
+  | "playa_bioluminiscente"
+  | "caldera_volcan"
+  | "crater_volcanico"
+  | "volcan"
   | "vacio";
 
 export type TipoCurvaMovimiento =

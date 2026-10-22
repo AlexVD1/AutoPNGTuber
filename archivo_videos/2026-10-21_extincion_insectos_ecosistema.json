@@ -1,0 +1,1658 @@
+{
+  "meta": {
+    "id": "extincion_insectos_ecosistema",
+    "slug": "extincion_insectos_ecosistema",
+    "temaResumen": "¿Qué pasaría si todos los insectos del mundo desaparecieran mañana?"
+  },
+  "escenas": [
+    {
+      "id": 1,
+      "texto": "¿Alguna vez te has preguntado qué pasaría si todos los insectos del planeta desaparecieran de la noche a la mañana?",
+      "icono": "Bug",
+      "colorIcono": "#10B981",
+      "tituloVisual": "SIN INSECTOS",
+      "composicionVisual": "plano_general",
+      "escenario": "selva_tropical",
+      "layout": "narrativo",
+      "transicion": "zoom_in",
+      "efectosCamara": [
+        "drift"
+      ],
+      "sfx": "sfx/sfx_whoosh.wav",
+      "volumenSfx": 0.2,
+      "palabrasClave": [
+        "todos los insectos",
+        "desaparecieran",
+        "noche a la mañana"
+      ],
+      "personajes": [
+        {
+          "id": "biologo",
+          "posicion": {
+            "x": -160,
+            "y": 70
+          },
+          "escala": 1.05,
+          "orientacion": "derecha",
+          "prop": "bionic_ant",
+          "poseId": "presenting_object",
+          "expresion": "eureka",
+          "acciones": [
+            {
+              "tipo": "caminar_hacia",
+              "desdeX": -260,
+              "haciaX": -120
+            }
+          ],
+          "habla": true
+        }
+      ],
+      "duracionSegundos": 5.386,
+      "palabras": [
+        {
+          "palabra": "Alguna",
+          "inicioMs": 0,
+          "finMs": 400
+        },
+        {
+          "palabra": "vez",
+          "inicioMs": 400,
+          "finMs": 500
+        },
+        {
+          "palabra": "te",
+          "inicioMs": 500,
+          "finMs": 680
+        },
+        {
+          "palabra": "has",
+          "inicioMs": 680,
+          "finMs": 700
+        },
+        {
+          "palabra": "preguntado",
+          "inicioMs": 700,
+          "finMs": 1220
+        },
+        {
+          "palabra": "qué",
+          "inicioMs": 1220,
+          "finMs": 1380
+        },
+        {
+          "palabra": "pasaría",
+          "inicioMs": 1380,
+          "finMs": 1800
+        },
+        {
+          "palabra": "si",
+          "inicioMs": 1800,
+          "finMs": 1980
+        },
+        {
+          "palabra": "todos",
+          "inicioMs": 1980,
+          "finMs": 2220
+        },
+        {
+          "palabra": "los",
+          "inicioMs": 2220,
+          "finMs": 2420
+        },
+        {
+          "palabra": "insectos",
+          "inicioMs": 2420,
+          "finMs": 2920
+        },
+        {
+          "palabra": "del",
+          "inicioMs": 2920,
+          "finMs": 3040
+        },
+        {
+          "palabra": "planeta",
+          "inicioMs": 3040,
+          "finMs": 3320
+        },
+        {
+          "palabra": "desaparecieran",
+          "inicioMs": 3320,
+          "finMs": 4100
+        },
+        {
+          "palabra": "de",
+          "inicioMs": 4100,
+          "finMs": 4260
+        },
+        {
+          "palabra": "la",
+          "inicioMs": 4260,
+          "finMs": 4340
+        },
+        {
+          "palabra": "noche",
+          "inicioMs": 4340,
+          "finMs": 4520
+        },
+        {
+          "palabra": "a",
+          "inicioMs": 4520,
+          "finMs": 4640
+        },
+        {
+          "palabra": "la",
+          "inicioMs": 4640,
+          "finMs": 4660
+        },
+        {
+          "palabra": "mañana",
+          "inicioMs": 4660,
+          "finMs": 4860
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "texto": "Parece un sueño para quienes odian las cucarachas y los mosquitos, pero la realidad sería un apocalipsis ecológico total.",
+      "icono": "AlertTriangle",
+      "colorIcono": "#EF4444",
+      "tituloVisual": "APOCALIPSIS",
+      "composicionVisual": "primer_plano",
+      "escenario": "selva_tropical",
+      "layout": "narrativo",
+      "transicion": "whip_right",
+      "efectosCamara": [
+        "shake",
+        "punch"
+      ],
+      "sfx": "sfx/sfx_dramatic_hit.wav",
+      "volumenSfx": 0.25,
+      "elementosNarrativos": [
+        {
+          "tipo": "danger_vignette"
+        }
+      ],
+      "palabrasClave": [
+        "sueño",
+        "cucarachas",
+        "apocalipsis ecológico"
+      ],
+      "personajes": [
+        {
+          "id": "biologo",
+          "posicion": {
+            "x": 0,
+            "y": 50
+          },
+          "escala": 1.15,
+          "orientacion": "derecha",
+          "poseId": "backing_away_scared",
+          "expresion": "shocked",
+          "habla": true
+        }
+      ],
+      "duracionSegundos": 5.962,
+      "palabras": [
+        {
+          "palabra": "Parece",
+          "inicioMs": 0,
+          "finMs": 280
+        },
+        {
+          "palabra": "un",
+          "inicioMs": 280,
+          "finMs": 480
+        },
+        {
+          "palabra": "sueño",
+          "inicioMs": 480,
+          "finMs": 780
+        },
+        {
+          "palabra": "para",
+          "inicioMs": 780,
+          "finMs": 960
+        },
+        {
+          "palabra": "quienes",
+          "inicioMs": 960,
+          "finMs": 1140
+        },
+        {
+          "palabra": "odian",
+          "inicioMs": 1140,
+          "finMs": 1500
+        },
+        {
+          "palabra": "las",
+          "inicioMs": 1500,
+          "finMs": 1640
+        },
+        {
+          "palabra": "cucarachas",
+          "inicioMs": 1640,
+          "finMs": 2160
+        },
+        {
+          "palabra": "y",
+          "inicioMs": 2160,
+          "finMs": 2220
+        },
+        {
+          "palabra": "los",
+          "inicioMs": 2220,
+          "finMs": 2320
+        },
+        {
+          "palabra": "mosquitos",
+          "inicioMs": 2320,
+          "finMs": 2840
+        },
+        {
+          "palabra": "pero",
+          "inicioMs": 2940,
+          "finMs": 3040
+        },
+        {
+          "palabra": "la",
+          "inicioMs": 3040,
+          "finMs": 3160
+        },
+        {
+          "palabra": "realidad",
+          "inicioMs": 3160,
+          "finMs": 3500
+        },
+        {
+          "palabra": "sería",
+          "inicioMs": 3500,
+          "finMs": 3880
+        },
+        {
+          "palabra": "un",
+          "inicioMs": 3880,
+          "finMs": 4060
+        },
+        {
+          "palabra": "apocalipsis",
+          "inicioMs": 4060,
+          "finMs": 4620
+        },
+        {
+          "palabra": "ecológico",
+          "inicioMs": 4620,
+          "finMs": 5180
+        },
+        {
+          "palabra": "total",
+          "inicioMs": 5180,
+          "finMs": 5500
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "texto": "Los insectos representan más del ochenta por ciento de todas las especies animales del planeta y son el cimiento de casi todos los ecosistemas terrestres.",
+      "icono": "Globe",
+      "colorIcono": "#38BDF8",
+      "tituloVisual": "80% DE ESPECIES",
+      "composicionVisual": "cifras_concepto",
+      "escenario": "selva_tropical",
+      "layout": "narrativo",
+      "transicion": "corte",
+      "efectosCamara": [
+        "drift"
+      ],
+      "palabrasClave": [
+        "ochenta por ciento",
+        "especies animales",
+        "ecosistemas terrestres"
+      ],
+      "personajes": [
+        {
+          "id": "biologo",
+          "posicion": {
+            "x": -160,
+            "y": 70
+          },
+          "escala": 1.05,
+          "orientacion": "derecha",
+          "poseId": "explaining_both_hands",
+          "expresion": "analytical",
+          "habla": true
+        }
+      ],
+      "duracionSegundos": 9.058,
+      "palabras": [
+        {
+          "palabra": "Los",
+          "inicioMs": 0,
+          "finMs": 240
+        },
+        {
+          "palabra": "insectos",
+          "inicioMs": 240,
+          "finMs": 800
+        },
+        {
+          "palabra": "representan",
+          "inicioMs": 800,
+          "finMs": 1380
+        },
+        {
+          "palabra": "más",
+          "inicioMs": 1380,
+          "finMs": 1580
+        },
+        {
+          "palabra": "del",
+          "inicioMs": 1580,
+          "finMs": 1760
+        },
+        {
+          "palabra": "ochenta",
+          "inicioMs": 1760,
+          "finMs": 2040
+        },
+        {
+          "palabra": "por",
+          "inicioMs": 2040,
+          "finMs": 2340
+        },
+        {
+          "palabra": "ciento",
+          "inicioMs": 2340,
+          "finMs": 2880
+        },
+        {
+          "palabra": "de",
+          "inicioMs": 2880,
+          "finMs": 3140
+        },
+        {
+          "palabra": "todas",
+          "inicioMs": 3140,
+          "finMs": 3380
+        },
+        {
+          "palabra": "las",
+          "inicioMs": 3380,
+          "finMs": 3760
+        },
+        {
+          "palabra": "especies",
+          "inicioMs": 3760,
+          "finMs": 4100
+        },
+        {
+          "palabra": "animales",
+          "inicioMs": 4100,
+          "finMs": 4360
+        },
+        {
+          "palabra": "del",
+          "inicioMs": 4360,
+          "finMs": 4720
+        },
+        {
+          "palabra": "planeta",
+          "inicioMs": 4720,
+          "finMs": 5020
+        },
+        {
+          "palabra": "y",
+          "inicioMs": 5020,
+          "finMs": 5180
+        },
+        {
+          "palabra": "son",
+          "inicioMs": 5180,
+          "finMs": 5300
+        },
+        {
+          "palabra": "el",
+          "inicioMs": 5300,
+          "finMs": 5560
+        },
+        {
+          "palabra": "cimiento",
+          "inicioMs": 5560,
+          "finMs": 5800
+        },
+        {
+          "palabra": "de",
+          "inicioMs": 5800,
+          "finMs": 5980
+        },
+        {
+          "palabra": "casi",
+          "inicioMs": 5980,
+          "finMs": 6280
+        },
+        {
+          "palabra": "todos",
+          "inicioMs": 6280,
+          "finMs": 6700
+        },
+        {
+          "palabra": "los",
+          "inicioMs": 6700,
+          "finMs": 7940
+        },
+        {
+          "palabra": "ecosistemas",
+          "inicioMs": 7940,
+          "finMs": 8600
+        },
+        {
+          "palabra": "terrestres",
+          "inicioMs": 8600,
+          "finMs": 8808
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "texto": "El primer colapso ocurriría en la polinización: sin abejas, mariposas y escarabajos, el setenta y cinco por ciento de los cultivos alimentarios desaparecerían.",
+      "icono": "Flower",
+      "colorIcono": "#EC4899",
+      "tituloVisual": "SIN POLINIZACIÓN",
+      "composicionVisual": "primer_plano",
+      "escenario": "selva_tropical",
+      "layout": "narrativo",
+      "transicion": "whip_left",
+      "efectosCamara": [
+        "drift"
+      ],
+      "palabrasClave": [
+        "polinización",
+        "setenta y cinco por ciento",
+        "cultivos alimentarios"
+      ],
+      "personajes": [
+        {
+          "id": "biologo",
+          "posicion": {
+            "x": 0,
+            "y": 50
+          },
+          "escala": 1.15,
+          "orientacion": "derecha",
+          "prop": "flower",
+          "poseId": "presenting_object",
+          "expresion": "worried",
+          "habla": true
+        }
+      ],
+      "duracionSegundos": 8.578,
+      "palabras": [
+        {
+          "palabra": "El",
+          "inicioMs": 0,
+          "finMs": 200
+        },
+        {
+          "palabra": "primer",
+          "inicioMs": 200,
+          "finMs": 440
+        },
+        {
+          "palabra": "colapso",
+          "inicioMs": 440,
+          "finMs": 940
+        },
+        {
+          "palabra": "ocurriría",
+          "inicioMs": 940,
+          "finMs": 1440
+        },
+        {
+          "palabra": "en",
+          "inicioMs": 1440,
+          "finMs": 1560
+        },
+        {
+          "palabra": "la",
+          "inicioMs": 1560,
+          "finMs": 1640
+        },
+        {
+          "palabra": "polinización",
+          "inicioMs": 1640,
+          "finMs": 2200
+        },
+        {
+          "palabra": "sin",
+          "inicioMs": 2200,
+          "finMs": 2880
+        },
+        {
+          "palabra": "abejas",
+          "inicioMs": 3120,
+          "finMs": 3580
+        },
+        {
+          "palabra": "mariposas",
+          "inicioMs": 3580,
+          "finMs": 3760
+        },
+        {
+          "palabra": "y",
+          "inicioMs": 3760,
+          "finMs": 4440
+        },
+        {
+          "palabra": "escarabajos",
+          "inicioMs": 4740,
+          "finMs": 4860
+        },
+        {
+          "palabra": "el",
+          "inicioMs": 4860,
+          "finMs": 5180
+        },
+        {
+          "palabra": "setenta",
+          "inicioMs": 5180,
+          "finMs": 5900
+        },
+        {
+          "palabra": "y",
+          "inicioMs": 5900,
+          "finMs": 6160
+        },
+        {
+          "palabra": "cinco",
+          "inicioMs": 6160,
+          "finMs": 6260
+        },
+        {
+          "palabra": "por",
+          "inicioMs": 6260,
+          "finMs": 6720
+        },
+        {
+          "palabra": "ciento",
+          "inicioMs": 6720,
+          "finMs": 7260
+        },
+        {
+          "palabra": "de",
+          "inicioMs": 7260,
+          "finMs": 8100
+        },
+        {
+          "palabra": "los",
+          "inicioMs": 8100,
+          "finMs": 8180
+        },
+        {
+          "palabra": "cultivos",
+          "inicioMs": 8100,
+          "finMs": 8180
+        },
+        {
+          "palabra": "alimentarios",
+          "inicioMs": 8100,
+          "finMs": 8180
+        },
+        {
+          "palabra": "desaparecerían",
+          "inicioMs": 8100,
+          "finMs": 8180
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "texto": "Manzanas, almendras, café, chocolate y la mayoría de frutas y verduras dependerían únicamente de polinización manual, algo imposible a escala global.",
+      "icono": "Apple",
+      "colorIcono": "#EF4444",
+      "tituloVisual": "CULTIVOS PERDIDOS",
+      "composicionVisual": "plano_general",
+      "escenario": "laboratorio",
+      "layout": "narrativo",
+      "transicion": "zoom_in",
+      "efectosCamara": [
+        "drift"
+      ],
+      "palabrasClave": [
+        "manzanas",
+        "café",
+        "chocolate",
+        "polinización manual"
+      ],
+      "personajes": [
+        {
+          "id": "biologo",
+          "posicion": {
+            "x": -160,
+            "y": 70
+          },
+          "escala": 1.05,
+          "orientacion": "derecha",
+          "poseId": "explaining_pointing_up",
+          "expresion": "analytical",
+          "habla": true
+        }
+      ],
+      "duracionSegundos": 8.722,
+      "palabras": [
+        {
+          "palabra": "Manzanas",
+          "inicioMs": 0,
+          "finMs": 620
+        },
+        {
+          "palabra": "almendras",
+          "inicioMs": 840,
+          "finMs": 1340
+        },
+        {
+          "palabra": "café",
+          "inicioMs": 1460,
+          "finMs": 1660
+        },
+        {
+          "palabra": "chocolate",
+          "inicioMs": 1860,
+          "finMs": 2180
+        },
+        {
+          "palabra": "y",
+          "inicioMs": 2180,
+          "finMs": 2540
+        },
+        {
+          "palabra": "la",
+          "inicioMs": 2540,
+          "finMs": 2640
+        },
+        {
+          "palabra": "mayoría",
+          "inicioMs": 2640,
+          "finMs": 2840
+        },
+        {
+          "palabra": "de",
+          "inicioMs": 2840,
+          "finMs": 3100
+        },
+        {
+          "palabra": "frutas",
+          "inicioMs": 3100,
+          "finMs": 3500
+        },
+        {
+          "palabra": "y",
+          "inicioMs": 3500,
+          "finMs": 3580
+        },
+        {
+          "palabra": "verduras",
+          "inicioMs": 3580,
+          "finMs": 3940
+        },
+        {
+          "palabra": "dependerían",
+          "inicioMs": 3940,
+          "finMs": 4540
+        },
+        {
+          "palabra": "únicamente",
+          "inicioMs": 4540,
+          "finMs": 5120
+        },
+        {
+          "palabra": "de",
+          "inicioMs": 5120,
+          "finMs": 5340
+        },
+        {
+          "palabra": "polinización",
+          "inicioMs": 5340,
+          "finMs": 5900
+        },
+        {
+          "palabra": "manual",
+          "inicioMs": 5900,
+          "finMs": 6280
+        },
+        {
+          "palabra": "algo",
+          "inicioMs": 6540,
+          "finMs": 6740
+        },
+        {
+          "palabra": "imposible",
+          "inicioMs": 6740,
+          "finMs": 7360
+        },
+        {
+          "palabra": "a",
+          "inicioMs": 7360,
+          "finMs": 7620
+        },
+        {
+          "palabra": "escala",
+          "inicioMs": 7620,
+          "finMs": 7980
+        },
+        {
+          "palabra": "global",
+          "inicioMs": 7980,
+          "finMs": 8240
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "texto": "Sin insectos descomponedores, los cadáveres de animales y plantas se acumularían sin descomponerse, bloqueando el ciclo del nitrógeno en el suelo.",
+      "icono": "Leaf",
+      "colorIcono": "#84CC16",
+      "tituloVisual": "SIN DESCOMPOSICIÓN",
+      "composicionVisual": "primer_plano",
+      "escenario": "selva_tropical",
+      "layout": "narrativo",
+      "transicion": "whip_right",
+      "efectosCamara": [
+        "drift"
+      ],
+      "palabrasClave": [
+        "descomponedores",
+        "cadáveres",
+        "ciclo del nitrógeno"
+      ],
+      "personajes": [
+        {
+          "id": "biologo",
+          "posicion": {
+            "x": 0,
+            "y": 50
+          },
+          "escala": 1.15,
+          "orientacion": "derecha",
+          "poseId": "explaining_both_hands",
+          "expresion": "worried",
+          "habla": true
+        }
+      ],
+      "duracionSegundos": 7.618,
+      "palabras": [
+        {
+          "palabra": "Sin",
+          "inicioMs": 0,
+          "finMs": 200
+        },
+        {
+          "palabra": "insectos",
+          "inicioMs": 200,
+          "finMs": 720
+        },
+        {
+          "palabra": "descomponedores",
+          "inicioMs": 720,
+          "finMs": 1480
+        },
+        {
+          "palabra": "los",
+          "inicioMs": 1580,
+          "finMs": 1680
+        },
+        {
+          "palabra": "cadáveres",
+          "inicioMs": 1680,
+          "finMs": 2120
+        },
+        {
+          "palabra": "de",
+          "inicioMs": 2120,
+          "finMs": 2200
+        },
+        {
+          "palabra": "animales",
+          "inicioMs": 2200,
+          "finMs": 2480
+        },
+        {
+          "palabra": "y",
+          "inicioMs": 2480,
+          "finMs": 2680
+        },
+        {
+          "palabra": "plantas",
+          "inicioMs": 2680,
+          "finMs": 3060
+        },
+        {
+          "palabra": "se",
+          "inicioMs": 3060,
+          "finMs": 3160
+        },
+        {
+          "palabra": "acumularían",
+          "inicioMs": 3160,
+          "finMs": 3700
+        },
+        {
+          "palabra": "sin",
+          "inicioMs": 3700,
+          "finMs": 3880
+        },
+        {
+          "palabra": "descomponerse",
+          "inicioMs": 3880,
+          "finMs": 4660
+        },
+        {
+          "palabra": "bloqueando",
+          "inicioMs": 4980,
+          "finMs": 5480
+        },
+        {
+          "palabra": "el",
+          "inicioMs": 5480,
+          "finMs": 5600
+        },
+        {
+          "palabra": "ciclo",
+          "inicioMs": 5600,
+          "finMs": 5920
+        },
+        {
+          "palabra": "del",
+          "inicioMs": 5920,
+          "finMs": 6080
+        },
+        {
+          "palabra": "nitrógeno",
+          "inicioMs": 6080,
+          "finMs": 6640
+        },
+        {
+          "palabra": "en",
+          "inicioMs": 6640,
+          "finMs": 6720
+        },
+        {
+          "palabra": "el",
+          "inicioMs": 6720,
+          "finMs": 6840
+        },
+        {
+          "palabra": "suelo",
+          "inicioMs": 6840,
+          "finMs": 7140
+        }
+      ]
+    },
+    {
+      "id": 7,
+      "texto": "Las aves, reptiles, anfibios y mamíferos que se alimentan de insectos perderían su fuente principal de proteína, causando extinciones en cadena.",
+      "icono": "Bird",
+      "colorIcono": "#F59E0B",
+      "tituloVisual": "EXTINCIÓN EN CADENA",
+      "composicionVisual": "plano_general",
+      "escenario": "selva_tropical",
+      "layout": "narrativo",
+      "transicion": "corte",
+      "efectosCamara": [
+        "drift"
+      ],
+      "palabrasClave": [
+        "aves y reptiles",
+        "fuente principal de proteína",
+        "extinciones en cadena"
+      ],
+      "personajes": [
+        {
+          "id": "biologo",
+          "posicion": {
+            "x": -160,
+            "y": 70
+          },
+          "escala": 1.05,
+          "orientacion": "derecha",
+          "poseId": "sad_slumped",
+          "expresion": "sad",
+          "habla": true
+        }
+      ],
+      "duracionSegundos": 7.81,
+      "palabras": [
+        {
+          "palabra": "Las",
+          "inicioMs": 0,
+          "finMs": 220
+        },
+        {
+          "palabra": "aves",
+          "inicioMs": 220,
+          "finMs": 540
+        },
+        {
+          "palabra": "reptiles",
+          "inicioMs": 540,
+          "finMs": 1100
+        },
+        {
+          "palabra": "anfibios",
+          "inicioMs": 1180,
+          "finMs": 1660
+        },
+        {
+          "palabra": "y",
+          "inicioMs": 1660,
+          "finMs": 1780
+        },
+        {
+          "palabra": "mamíferos",
+          "inicioMs": 1780,
+          "finMs": 2340
+        },
+        {
+          "palabra": "que",
+          "inicioMs": 2340,
+          "finMs": 2420
+        },
+        {
+          "palabra": "se",
+          "inicioMs": 2420,
+          "finMs": 2540
+        },
+        {
+          "palabra": "alimentan",
+          "inicioMs": 2540,
+          "finMs": 2960
+        },
+        {
+          "palabra": "de",
+          "inicioMs": 2960,
+          "finMs": 3080
+        },
+        {
+          "palabra": "insectos",
+          "inicioMs": 3080,
+          "finMs": 3580
+        },
+        {
+          "palabra": "perderían",
+          "inicioMs": 3580,
+          "finMs": 4000
+        },
+        {
+          "palabra": "su",
+          "inicioMs": 4000,
+          "finMs": 4140
+        },
+        {
+          "palabra": "fuente",
+          "inicioMs": 4140,
+          "finMs": 4420
+        },
+        {
+          "palabra": "principal",
+          "inicioMs": 4420,
+          "finMs": 4820
+        },
+        {
+          "palabra": "de",
+          "inicioMs": 4820,
+          "finMs": 5000
+        },
+        {
+          "palabra": "proteína",
+          "inicioMs": 5000,
+          "finMs": 5480
+        },
+        {
+          "palabra": "causando",
+          "inicioMs": 5620,
+          "finMs": 6140
+        },
+        {
+          "palabra": "extinciones",
+          "inicioMs": 6140,
+          "finMs": 6740
+        },
+        {
+          "palabra": "en",
+          "inicioMs": 6740,
+          "finMs": 6920
+        },
+        {
+          "palabra": "cadena",
+          "inicioMs": 6920,
+          "finMs": 7320
+        }
+      ]
+    },
+    {
+      "id": 8,
+      "texto": "Los océanos también colapsarían: el krill y el plancton, que son la base de la cadena alimenticia marina, dependen de organismos similares a insectos.",
+      "icono": "Waves",
+      "colorIcono": "#06B6D4",
+      "tituloVisual": "COLAPSO MARINO",
+      "composicionVisual": "primer_plano",
+      "escenario": "abismo_oceanico",
+      "layout": "narrativo",
+      "transicion": "whip_right",
+      "efectosCamara": [
+        "drift"
+      ],
+      "palabrasClave": [
+        "océanos colapsarían",
+        "krill y plancton",
+        "cadena alimenticia"
+      ],
+      "personajes": [
+        {
+          "id": "biologo",
+          "posicion": {
+            "x": 0,
+            "y": 50
+          },
+          "escala": 1.15,
+          "orientacion": "derecha",
+          "poseId": "explaining_both_hands",
+          "expresion": "worried",
+          "habla": true
+        }
+      ],
+      "duracionSegundos": 7.066,
+      "palabras": [
+        {
+          "palabra": "Los",
+          "inicioMs": 0,
+          "finMs": 180
+        },
+        {
+          "palabra": "océanos",
+          "inicioMs": 180,
+          "finMs": 580
+        },
+        {
+          "palabra": "también",
+          "inicioMs": 580,
+          "finMs": 760
+        },
+        {
+          "palabra": "colapsarían",
+          "inicioMs": 760,
+          "finMs": 1380
+        },
+        {
+          "palabra": "el",
+          "inicioMs": 1380,
+          "finMs": 1560
+        },
+        {
+          "palabra": "krill",
+          "inicioMs": 1560,
+          "finMs": 1880
+        },
+        {
+          "palabra": "y",
+          "inicioMs": 1880,
+          "finMs": 2340
+        },
+        {
+          "palabra": "el",
+          "inicioMs": 2440,
+          "finMs": 2500
+        },
+        {
+          "palabra": "plancton",
+          "inicioMs": 2500,
+          "finMs": 2620
+        },
+        {
+          "palabra": "que",
+          "inicioMs": 2620,
+          "finMs": 2740
+        },
+        {
+          "palabra": "son",
+          "inicioMs": 2740,
+          "finMs": 2940
+        },
+        {
+          "palabra": "la",
+          "inicioMs": 2940,
+          "finMs": 3160
+        },
+        {
+          "palabra": "base",
+          "inicioMs": 3160,
+          "finMs": 3420
+        },
+        {
+          "palabra": "de",
+          "inicioMs": 3420,
+          "finMs": 3920
+        },
+        {
+          "palabra": "la",
+          "inicioMs": 3920,
+          "finMs": 4260
+        },
+        {
+          "palabra": "cadena",
+          "inicioMs": 4440,
+          "finMs": 4820
+        },
+        {
+          "palabra": "alimenticia",
+          "inicioMs": 4820,
+          "finMs": 4920
+        },
+        {
+          "palabra": "marina",
+          "inicioMs": 4920,
+          "finMs": 5420
+        },
+        {
+          "palabra": "dependen",
+          "inicioMs": 5420,
+          "finMs": 5880
+        },
+        {
+          "palabra": "de",
+          "inicioMs": 5880,
+          "finMs": 5960
+        },
+        {
+          "palabra": "organismos",
+          "inicioMs": 5960,
+          "finMs": 6600
+        },
+        {
+          "palabra": "similares",
+          "inicioMs": 6600,
+          "finMs": 6680
+        },
+        {
+          "palabra": "a",
+          "inicioMs": 6600,
+          "finMs": 6680
+        },
+        {
+          "palabra": "insectos",
+          "inicioMs": 6600,
+          "finMs": 6680
+        }
+      ]
+    },
+    {
+      "id": 9,
+      "texto": "Paradójicamente, los mosquitos que transmiten enfermedades también desaparecerían, pero el costo ecológico sería millones de veces mayor que el beneficio.",
+      "icono": "Shield",
+      "colorIcono": "#F59E0B",
+      "tituloVisual": "PARADOJA",
+      "composicionVisual": "plano_general",
+      "escenario": "selva_tropical",
+      "layout": "narrativo",
+      "transicion": "zoom_in",
+      "efectosCamara": [
+        "drift"
+      ],
+      "palabrasClave": [
+        "mosquitos desaparecerían",
+        "costo ecológico",
+        "millones de veces mayor"
+      ],
+      "personajes": [
+        {
+          "id": "biologo",
+          "posicion": {
+            "x": -160,
+            "y": 70
+          },
+          "escala": 1.05,
+          "orientacion": "derecha",
+          "poseId": "thinking_chin_hand",
+          "expresion": "thinking",
+          "habla": true
+        }
+      ],
+      "duracionSegundos": 8.266,
+      "palabras": [
+        {
+          "palabra": "Paradójicamente",
+          "inicioMs": 0,
+          "finMs": 800
+        },
+        {
+          "palabra": "los",
+          "inicioMs": 1040,
+          "finMs": 1160
+        },
+        {
+          "palabra": "mosquitos",
+          "inicioMs": 1160,
+          "finMs": 1600
+        },
+        {
+          "palabra": "que",
+          "inicioMs": 1600,
+          "finMs": 1740
+        },
+        {
+          "palabra": "transmiten",
+          "inicioMs": 1740,
+          "finMs": 2260
+        },
+        {
+          "palabra": "enfermedades",
+          "inicioMs": 2260,
+          "finMs": 2880
+        },
+        {
+          "palabra": "también",
+          "inicioMs": 2880,
+          "finMs": 3180
+        },
+        {
+          "palabra": "desaparecerían",
+          "inicioMs": 3180,
+          "finMs": 4120
+        },
+        {
+          "palabra": "pero",
+          "inicioMs": 4520,
+          "finMs": 4680
+        },
+        {
+          "palabra": "el",
+          "inicioMs": 4680,
+          "finMs": 4820
+        },
+        {
+          "palabra": "costo",
+          "inicioMs": 4820,
+          "finMs": 5140
+        },
+        {
+          "palabra": "ecológico",
+          "inicioMs": 5140,
+          "finMs": 5620
+        },
+        {
+          "palabra": "sería",
+          "inicioMs": 5620,
+          "finMs": 5900
+        },
+        {
+          "palabra": "millones",
+          "inicioMs": 5900,
+          "finMs": 6140
+        },
+        {
+          "palabra": "de",
+          "inicioMs": 6140,
+          "finMs": 6460
+        },
+        {
+          "palabra": "veces",
+          "inicioMs": 6460,
+          "finMs": 6660
+        },
+        {
+          "palabra": "mayor",
+          "inicioMs": 6660,
+          "finMs": 6980
+        },
+        {
+          "palabra": "que",
+          "inicioMs": 6980,
+          "finMs": 7160
+        },
+        {
+          "palabra": "el",
+          "inicioMs": 7160,
+          "finMs": 7240
+        },
+        {
+          "palabra": "beneficio",
+          "inicioMs": 7240,
+          "finMs": 7800
+        }
+      ]
+    },
+    {
+      "id": 10,
+      "texto": "Los científicos estiman que sin insectos, la humanidad sobreviviría apenas unos meses antes de que el sistema alimentario global colapsara por completo.",
+      "icono": "Clock",
+      "colorIcono": "#EF4444",
+      "tituloVisual": "SOBREVIVENCIA HUMANA",
+      "composicionVisual": "primer_plano",
+      "escenario": "selva_tropical",
+      "layout": "narrativo",
+      "transicion": "whip_right",
+      "efectosCamara": [
+        "drift"
+      ],
+      "palabrasClave": [
+        "humanidad sobreviviría",
+        "unos meses",
+        "sistema alimentario colapsara"
+      ],
+      "personajes": [
+        {
+          "id": "biologo",
+          "posicion": {
+            "x": 0,
+            "y": 50
+          },
+          "escala": 1.15,
+          "orientacion": "derecha",
+          "poseId": "worried_clock",
+          "expresion": "worried",
+          "habla": true
+        }
+      ],
+      "duracionSegundos": 7.858,
+      "palabras": [
+        {
+          "palabra": "Los",
+          "inicioMs": 0,
+          "finMs": 180
+        },
+        {
+          "palabra": "científicos",
+          "inicioMs": 180,
+          "finMs": 720
+        },
+        {
+          "palabra": "estiman",
+          "inicioMs": 720,
+          "finMs": 1080
+        },
+        {
+          "palabra": "que",
+          "inicioMs": 1080,
+          "finMs": 1200
+        },
+        {
+          "palabra": "sin",
+          "inicioMs": 1200,
+          "finMs": 1360
+        },
+        {
+          "palabra": "insectos",
+          "inicioMs": 1360,
+          "finMs": 2000
+        },
+        {
+          "palabra": "la",
+          "inicioMs": 2220,
+          "finMs": 2300
+        },
+        {
+          "palabra": "humanidad",
+          "inicioMs": 2300,
+          "finMs": 2640
+        },
+        {
+          "palabra": "sobreviviría",
+          "inicioMs": 2640,
+          "finMs": 3320
+        },
+        {
+          "palabra": "apenas",
+          "inicioMs": 3320,
+          "finMs": 3540
+        },
+        {
+          "palabra": "unos",
+          "inicioMs": 3540,
+          "finMs": 3800
+        },
+        {
+          "palabra": "meses",
+          "inicioMs": 3800,
+          "finMs": 4080
+        },
+        {
+          "palabra": "antes",
+          "inicioMs": 4080,
+          "finMs": 4580
+        },
+        {
+          "palabra": "de",
+          "inicioMs": 4580,
+          "finMs": 4960
+        },
+        {
+          "palabra": "que",
+          "inicioMs": 4960,
+          "finMs": 5080
+        },
+        {
+          "palabra": "el",
+          "inicioMs": 5080,
+          "finMs": 5180
+        },
+        {
+          "palabra": "sistema",
+          "inicioMs": 5180,
+          "finMs": 5440
+        },
+        {
+          "palabra": "alimentario",
+          "inicioMs": 5440,
+          "finMs": 5980
+        },
+        {
+          "palabra": "global",
+          "inicioMs": 5980,
+          "finMs": 6240
+        },
+        {
+          "palabra": "colapsara",
+          "inicioMs": 6240,
+          "finMs": 6780
+        },
+        {
+          "palabra": "por",
+          "inicioMs": 6780,
+          "finMs": 6960
+        },
+        {
+          "palabra": "completo",
+          "inicioMs": 6960,
+          "finMs": 7380
+        }
+      ]
+    },
+    {
+      "id": 11,
+      "texto": "Así que la próxima vez que veas un insecto, recuerda que ese diminuto ser es un pilar invisible que sostiene toda la vida en la Tierra. ¡Protejamos a los insectos!",
+      "icono": "Heart",
+      "colorIcono": "#10B981",
+      "tituloVisual": "PILAR INVISIBLE",
+      "composicionVisual": "plano_general",
+      "escenario": "selva_tropical",
+      "layout": "narrativo",
+      "transicion": "zoom_in",
+      "efectosCamara": [
+        "drift"
+      ],
+      "sfx": "sfx/sfx_whoosh.wav",
+      "volumenSfx": 0.2,
+      "palabrasClave": [
+        "diminuto ser",
+        "pilar invisible",
+        "protejamos a los insectos"
+      ],
+      "personajes": [
+        {
+          "id": "biologo",
+          "posicion": {
+            "x": -160,
+            "y": 70
+          },
+          "escala": 1.05,
+          "orientacion": "derecha",
+          "prop": "trophy",
+          "poseId": "celebrating_arms_up",
+          "expresion": "eureka",
+          "habla": true
+        }
+      ],
+      "duracionSegundos": 8.194,
+      "palabras": [
+        {
+          "palabra": "Así",
+          "inicioMs": 0,
+          "finMs": 260
+        },
+        {
+          "palabra": "que",
+          "inicioMs": 260,
+          "finMs": 360
+        },
+        {
+          "palabra": "la",
+          "inicioMs": 360,
+          "finMs": 460
+        },
+        {
+          "palabra": "próxima",
+          "inicioMs": 460,
+          "finMs": 820
+        },
+        {
+          "palabra": "vez",
+          "inicioMs": 820,
+          "finMs": 1040
+        },
+        {
+          "palabra": "que",
+          "inicioMs": 1040,
+          "finMs": 1200
+        },
+        {
+          "palabra": "veas",
+          "inicioMs": 1200,
+          "finMs": 1380
+        },
+        {
+          "palabra": "un",
+          "inicioMs": 1380,
+          "finMs": 1480
+        },
+        {
+          "palabra": "insecto",
+          "inicioMs": 1480,
+          "finMs": 2040
+        },
+        {
+          "palabra": "recuerda",
+          "inicioMs": 2140,
+          "finMs": 2500
+        },
+        {
+          "palabra": "que",
+          "inicioMs": 2500,
+          "finMs": 2620
+        },
+        {
+          "palabra": "ese",
+          "inicioMs": 2620,
+          "finMs": 2760
+        },
+        {
+          "palabra": "diminuto",
+          "inicioMs": 2760,
+          "finMs": 3160
+        },
+        {
+          "palabra": "ser",
+          "inicioMs": 3160,
+          "finMs": 3380
+        },
+        {
+          "palabra": "es",
+          "inicioMs": 3380,
+          "finMs": 3660
+        },
+        {
+          "palabra": "un",
+          "inicioMs": 3660,
+          "finMs": 3760
+        },
+        {
+          "palabra": "pilar",
+          "inicioMs": 3760,
+          "finMs": 4000
+        },
+        {
+          "palabra": "invisible",
+          "inicioMs": 4000,
+          "finMs": 4440
+        },
+        {
+          "palabra": "que",
+          "inicioMs": 4440,
+          "finMs": 4720
+        },
+        {
+          "palabra": "sostiene",
+          "inicioMs": 4720,
+          "finMs": 5100
+        },
+        {
+          "palabra": "toda",
+          "inicioMs": 5100,
+          "finMs": 5380
+        },
+        {
+          "palabra": "la",
+          "inicioMs": 5380,
+          "finMs": 5580
+        },
+        {
+          "palabra": "vida",
+          "inicioMs": 5580,
+          "finMs": 5720
+        },
+        {
+          "palabra": "en",
+          "inicioMs": 5720,
+          "finMs": 5860
+        },
+        {
+          "palabra": "la",
+          "inicioMs": 5860,
+          "finMs": 5920
+        },
+        {
+          "palabra": "Tierra",
+          "inicioMs": 5920,
+          "finMs": 6240
+        },
+        {
+          "palabra": "Protejamos",
+          "inicioMs": 6340,
+          "finMs": 6840
+        },
+        {
+          "palabra": "a",
+          "inicioMs": 6840,
+          "finMs": 6980
+        },
+        {
+          "palabra": "los",
+          "inicioMs": 6980,
+          "finMs": 7080
+        },
+        {
+          "palabra": "insectos",
+          "inicioMs": 7080,
+          "finMs": 7720
+        }
+      ]
+    }
+  ]
+}

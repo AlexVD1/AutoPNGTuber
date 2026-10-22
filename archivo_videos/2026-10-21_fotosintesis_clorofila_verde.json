@@ -1,0 +1,1603 @@
+{
+  "meta": {
+    "id": "fotosintesis_clorofila_verde",
+    "slug": "fotosintesis_clorofila_verde",
+    "temaResumen": "¿Por qué las hojas son verdes pero los árboles no lo son? El secreto de la fotosíntesis"
+  },
+  "escenas": [
+    {
+      "id": 1,
+      "texto": "¿Alguna vez te has preguntado por qué las hojas de los árboles son de un verde intenso pero la madera y el tronco no lo son?",
+      "icono": "Leaf",
+      "colorIcono": "#22C55E",
+      "tituloVisual": "HOJAS VERDES",
+      "composicionVisual": "plano_general",
+      "escenario": "selva_tropical",
+      "layout": "narrativo",
+      "transicion": "zoom_in",
+      "efectosCamara": [
+        "drift"
+      ],
+      "sfx": "sfx/sfx_whoosh.wav",
+      "volumenSfx": 0.2,
+      "palabrasClave": [
+        "hojas de los árboles",
+        "verde intenso",
+        "madera y el tronco"
+      ],
+      "personajes": [
+        {
+          "id": "biologo",
+          "posicion": {
+            "x": -160,
+            "y": 70
+          },
+          "escala": 1.05,
+          "orientacion": "derecha",
+          "prop": "leaf",
+          "poseId": "presenting_object",
+          "expresion": "eureka",
+          "acciones": [
+            {
+              "tipo": "caminar_hacia",
+              "desdeX": -260,
+              "haciaX": -120
+            }
+          ],
+          "habla": true
+        }
+      ],
+      "duracionSegundos": 6.418,
+      "palabras": [
+        {
+          "palabra": "Alguna",
+          "inicioMs": 0,
+          "finMs": 460
+        },
+        {
+          "palabra": "vez",
+          "inicioMs": 460,
+          "finMs": 680
+        },
+        {
+          "palabra": "te",
+          "inicioMs": 680,
+          "finMs": 840
+        },
+        {
+          "palabra": "has",
+          "inicioMs": 840,
+          "finMs": 940
+        },
+        {
+          "palabra": "preguntado",
+          "inicioMs": 940,
+          "finMs": 1540
+        },
+        {
+          "palabra": "por",
+          "inicioMs": 1540,
+          "finMs": 1720
+        },
+        {
+          "palabra": "qué",
+          "inicioMs": 1720,
+          "finMs": 1900
+        },
+        {
+          "palabra": "las",
+          "inicioMs": 1900,
+          "finMs": 2080
+        },
+        {
+          "palabra": "hojas",
+          "inicioMs": 2080,
+          "finMs": 2360
+        },
+        {
+          "palabra": "de",
+          "inicioMs": 2360,
+          "finMs": 2480
+        },
+        {
+          "palabra": "los",
+          "inicioMs": 2480,
+          "finMs": 2600
+        },
+        {
+          "palabra": "árboles",
+          "inicioMs": 2600,
+          "finMs": 3000
+        },
+        {
+          "palabra": "son",
+          "inicioMs": 3000,
+          "finMs": 3200
+        },
+        {
+          "palabra": "de",
+          "inicioMs": 3200,
+          "finMs": 3360
+        },
+        {
+          "palabra": "un",
+          "inicioMs": 3360,
+          "finMs": 3500
+        },
+        {
+          "palabra": "verde",
+          "inicioMs": 3500,
+          "finMs": 3660
+        },
+        {
+          "palabra": "intenso",
+          "inicioMs": 3660,
+          "finMs": 4260
+        },
+        {
+          "palabra": "pero",
+          "inicioMs": 4380,
+          "finMs": 4460
+        },
+        {
+          "palabra": "la",
+          "inicioMs": 4460,
+          "finMs": 4600
+        },
+        {
+          "palabra": "madera",
+          "inicioMs": 4600,
+          "finMs": 4940
+        },
+        {
+          "palabra": "y",
+          "inicioMs": 4940,
+          "finMs": 5040
+        },
+        {
+          "palabra": "el",
+          "inicioMs": 5040,
+          "finMs": 5140
+        },
+        {
+          "palabra": "tronco",
+          "inicioMs": 5140,
+          "finMs": 5440
+        },
+        {
+          "palabra": "no",
+          "inicioMs": 5440,
+          "finMs": 5580
+        },
+        {
+          "palabra": "lo",
+          "inicioMs": 5580,
+          "finMs": 5660
+        },
+        {
+          "palabra": "son",
+          "inicioMs": 5660,
+          "finMs": 5900
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "texto": "La respuesta se esconde en una molécula llamada clorofila, el pigmento verde que captura la luz del Sol para fabricar el alimento del árbol.",
+      "icono": "Sun",
+      "colorIcono": "#FACC15",
+      "tituloVisual": "CLOROFILA",
+      "composicionVisual": "primer_plano",
+      "escenario": "laboratorio",
+      "layout": "narrativo",
+      "transicion": "whip_right",
+      "efectosCamara": [
+        "drift"
+      ],
+      "palabrasClave": [
+        "molécula llamada clorofila",
+        "pigmento verde",
+        "fabricar alimento"
+      ],
+      "personajes": [
+        {
+          "id": "biologo",
+          "posicion": {
+            "x": 0,
+            "y": 50
+          },
+          "escala": 1.15,
+          "orientacion": "derecha",
+          "poseId": "explaining_both_hands",
+          "expresion": "talking_enthusiastic",
+          "habla": true
+        }
+      ],
+      "objetos": [
+        {
+          "id": "molecula_clorofila",
+          "propId": "molecule",
+          "posicion": {
+            "x": 200,
+            "y": -40
+          },
+          "escala": 1.5,
+          "animacion": {
+            "tipo": "pulso",
+            "inicioFrame": 0,
+            "finFrame": 9999
+          },
+          "capaZ": 25
+        }
+      ],
+      "duracionSegundos": 7.738,
+      "palabras": [
+        {
+          "palabra": "La",
+          "inicioMs": 0,
+          "finMs": 200
+        },
+        {
+          "palabra": "respuesta",
+          "inicioMs": 200,
+          "finMs": 500
+        },
+        {
+          "palabra": "se",
+          "inicioMs": 500,
+          "finMs": 820
+        },
+        {
+          "palabra": "esconde",
+          "inicioMs": 820,
+          "finMs": 1140
+        },
+        {
+          "palabra": "en",
+          "inicioMs": 1140,
+          "finMs": 1300
+        },
+        {
+          "palabra": "una",
+          "inicioMs": 1300,
+          "finMs": 1420
+        },
+        {
+          "palabra": "molécula",
+          "inicioMs": 1420,
+          "finMs": 1880
+        },
+        {
+          "palabra": "llamada",
+          "inicioMs": 1880,
+          "finMs": 2240
+        },
+        {
+          "palabra": "clorofila",
+          "inicioMs": 2240,
+          "finMs": 2860
+        },
+        {
+          "palabra": "el",
+          "inicioMs": 2860,
+          "finMs": 3680
+        },
+        {
+          "palabra": "pigmento",
+          "inicioMs": 3680,
+          "finMs": 4240
+        },
+        {
+          "palabra": "verde",
+          "inicioMs": 4240,
+          "finMs": 4440
+        },
+        {
+          "palabra": "que",
+          "inicioMs": 4440,
+          "finMs": 4660
+        },
+        {
+          "palabra": "captura",
+          "inicioMs": 4660,
+          "finMs": 5040
+        },
+        {
+          "palabra": "la",
+          "inicioMs": 5040,
+          "finMs": 5160
+        },
+        {
+          "palabra": "luz",
+          "inicioMs": 5160,
+          "finMs": 5320
+        },
+        {
+          "palabra": "del",
+          "inicioMs": 5320,
+          "finMs": 5520
+        },
+        {
+          "palabra": "Sol",
+          "inicioMs": 5520,
+          "finMs": 5740
+        },
+        {
+          "palabra": "para",
+          "inicioMs": 5740,
+          "finMs": 5960
+        },
+        {
+          "palabra": "fabricar",
+          "inicioMs": 5960,
+          "finMs": 6360
+        },
+        {
+          "palabra": "el",
+          "inicioMs": 6360,
+          "finMs": 6500
+        },
+        {
+          "palabra": "alimento",
+          "inicioMs": 6500,
+          "finMs": 6740
+        },
+        {
+          "palabra": "del",
+          "inicioMs": 6740,
+          "finMs": 6980
+        },
+        {
+          "palabra": "árbol",
+          "inicioMs": 6980,
+          "finMs": 7260
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "texto": "La clorofila absorbe principalmente la luz roja y azul del espectro solar, pero refleja la luz verde, que es la que tus ojos perciben.",
+      "icono": "Palette",
+      "colorIcono": "#38BDF8",
+      "tituloVisual": "REFLEJA VERDE",
+      "composicionVisual": "plano_general",
+      "escenario": "laboratorio",
+      "layout": "narrativo",
+      "transicion": "whip_left",
+      "efectosCamara": [
+        "drift"
+      ],
+      "palabrasClave": [
+        "absorbe luz roja y azul",
+        "refleja la luz verde",
+        "tus ojos perciben"
+      ],
+      "personajes": [
+        {
+          "id": "biologo",
+          "posicion": {
+            "x": -160,
+            "y": 70
+          },
+          "escala": 1.05,
+          "orientacion": "derecha",
+          "prop": "prism_spectrum",
+          "poseId": "presenting_object",
+          "expresion": "analytical",
+          "habla": true
+        }
+      ],
+      "duracionSegundos": 7.33,
+      "palabras": [
+        {
+          "palabra": "La",
+          "inicioMs": 0,
+          "finMs": 180
+        },
+        {
+          "palabra": "clorofila",
+          "inicioMs": 180,
+          "finMs": 720
+        },
+        {
+          "palabra": "absorbe",
+          "inicioMs": 720,
+          "finMs": 1220
+        },
+        {
+          "palabra": "principalmente",
+          "inicioMs": 1220,
+          "finMs": 1860
+        },
+        {
+          "palabra": "la",
+          "inicioMs": 1860,
+          "finMs": 2140
+        },
+        {
+          "palabra": "luz",
+          "inicioMs": 2140,
+          "finMs": 2300
+        },
+        {
+          "palabra": "roja",
+          "inicioMs": 2300,
+          "finMs": 2680
+        },
+        {
+          "palabra": "y",
+          "inicioMs": 2680,
+          "finMs": 2780
+        },
+        {
+          "palabra": "azul",
+          "inicioMs": 2780,
+          "finMs": 3020
+        },
+        {
+          "palabra": "del",
+          "inicioMs": 3020,
+          "finMs": 3200
+        },
+        {
+          "palabra": "espectro",
+          "inicioMs": 3200,
+          "finMs": 3620
+        },
+        {
+          "palabra": "solar",
+          "inicioMs": 3620,
+          "finMs": 3880
+        },
+        {
+          "palabra": "pero",
+          "inicioMs": 4020,
+          "finMs": 4160
+        },
+        {
+          "palabra": "refleja",
+          "inicioMs": 4160,
+          "finMs": 4580
+        },
+        {
+          "palabra": "la",
+          "inicioMs": 4580,
+          "finMs": 4680
+        },
+        {
+          "palabra": "luz",
+          "inicioMs": 4680,
+          "finMs": 4860
+        },
+        {
+          "palabra": "verde",
+          "inicioMs": 4860,
+          "finMs": 5220
+        },
+        {
+          "palabra": "que",
+          "inicioMs": 5500,
+          "finMs": 5600
+        },
+        {
+          "palabra": "es",
+          "inicioMs": 5600,
+          "finMs": 5740
+        },
+        {
+          "palabra": "la",
+          "inicioMs": 5740,
+          "finMs": 5840
+        },
+        {
+          "palabra": "que",
+          "inicioMs": 5840,
+          "finMs": 5960
+        },
+        {
+          "palabra": "tus",
+          "inicioMs": 5960,
+          "finMs": 6120
+        },
+        {
+          "palabra": "ojos",
+          "inicioMs": 6120,
+          "finMs": 6320
+        },
+        {
+          "palabra": "perciben",
+          "inicioMs": 6320,
+          "finMs": 6840
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "texto": "Este proceso se llama fotosíntesis: la planta usa la energía de la luz solar para convertir dióxido de carbono y agua en glucosa y oxígeno.",
+      "icono": "Zap",
+      "colorIcono": "#FACC15",
+      "tituloVisual": "FOTOSÍNTESIS",
+      "composicionVisual": "primer_plano",
+      "escenario": "selva_tropical",
+      "layout": "narrativo",
+      "transicion": "zoom_in",
+      "efectosCamara": [
+        "punch"
+      ],
+      "sfx": "sfx/sfx_dramatic_hit.wav",
+      "volumenSfx": 0.25,
+      "palabrasClave": [
+        "fotosíntesis",
+        "dióxido de carbono y agua",
+        "glucosa y oxígeno"
+      ],
+      "personajes": [
+        {
+          "id": "biologo",
+          "posicion": {
+            "x": 0,
+            "y": 50
+          },
+          "escala": 1.15,
+          "orientacion": "derecha",
+          "poseId": "explaining_pointing_up",
+          "expresion": "eureka",
+          "habla": true
+        }
+      ],
+      "duracionSegundos": 7.954,
+      "palabras": [
+        {
+          "palabra": "Este",
+          "inicioMs": 0,
+          "finMs": 280
+        },
+        {
+          "palabra": "proceso",
+          "inicioMs": 280,
+          "finMs": 580
+        },
+        {
+          "palabra": "se",
+          "inicioMs": 580,
+          "finMs": 840
+        },
+        {
+          "palabra": "llama",
+          "inicioMs": 840,
+          "finMs": 1040
+        },
+        {
+          "palabra": "fotosíntesis",
+          "inicioMs": 1040,
+          "finMs": 1860
+        },
+        {
+          "palabra": "la",
+          "inicioMs": 2040,
+          "finMs": 2100
+        },
+        {
+          "palabra": "planta",
+          "inicioMs": 2100,
+          "finMs": 2500
+        },
+        {
+          "palabra": "usa",
+          "inicioMs": 2500,
+          "finMs": 2700
+        },
+        {
+          "palabra": "la",
+          "inicioMs": 2700,
+          "finMs": 2880
+        },
+        {
+          "palabra": "energía",
+          "inicioMs": 2880,
+          "finMs": 3180
+        },
+        {
+          "palabra": "de",
+          "inicioMs": 3180,
+          "finMs": 3360
+        },
+        {
+          "palabra": "la",
+          "inicioMs": 3360,
+          "finMs": 3460
+        },
+        {
+          "palabra": "luz",
+          "inicioMs": 3460,
+          "finMs": 3600
+        },
+        {
+          "palabra": "solar",
+          "inicioMs": 3600,
+          "finMs": 3900
+        },
+        {
+          "palabra": "para",
+          "inicioMs": 3900,
+          "finMs": 4160
+        },
+        {
+          "palabra": "convertir",
+          "inicioMs": 4160,
+          "finMs": 4740
+        },
+        {
+          "palabra": "dióxido",
+          "inicioMs": 4740,
+          "finMs": 5260
+        },
+        {
+          "palabra": "de",
+          "inicioMs": 5260,
+          "finMs": 5380
+        },
+        {
+          "palabra": "carbono",
+          "inicioMs": 5380,
+          "finMs": 5740
+        },
+        {
+          "palabra": "y",
+          "inicioMs": 5740,
+          "finMs": 6060
+        },
+        {
+          "palabra": "agua",
+          "inicioMs": 6060,
+          "finMs": 6220
+        },
+        {
+          "palabra": "en",
+          "inicioMs": 6220,
+          "finMs": 6340
+        },
+        {
+          "palabra": "glucosa",
+          "inicioMs": 6340,
+          "finMs": 6760
+        },
+        {
+          "palabra": "y",
+          "inicioMs": 6760,
+          "finMs": 6880
+        },
+        {
+          "palabra": "oxígeno",
+          "inicioMs": 6880,
+          "finMs": 7440
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "texto": "Las hojas son verdes porque ahí es donde ocurre la fotosíntesis: en los cloroplastos, orgánulos celulares llenos de clorofila que capturan la luz.",
+      "icono": "Grid",
+      "colorIcono": "#8B5CF6",
+      "tituloVisual": "CLOROPLASTOS",
+      "composicionVisual": "plano_general",
+      "escenario": "selva_tropical",
+      "layout": "narrativo",
+      "transicion": "corte",
+      "efectosCamara": [
+        "drift"
+      ],
+      "palabrasClave": [
+        "ocurre la fotosíntesis",
+        "cloroplastos",
+        "capturan la luz"
+      ],
+      "personajes": [
+        {
+          "id": "biologo",
+          "posicion": {
+            "x": -160,
+            "y": 70
+          },
+          "escala": 1.05,
+          "orientacion": "derecha",
+          "poseId": "explaining_both_hands",
+          "expresion": "analytical",
+          "habla": true
+        }
+      ],
+      "duracionSegundos": 8.266,
+      "palabras": [
+        {
+          "palabra": "Las",
+          "inicioMs": 0,
+          "finMs": 240
+        },
+        {
+          "palabra": "hojas",
+          "inicioMs": 240,
+          "finMs": 500
+        },
+        {
+          "palabra": "son",
+          "inicioMs": 500,
+          "finMs": 720
+        },
+        {
+          "palabra": "verdes",
+          "inicioMs": 720,
+          "finMs": 1200
+        },
+        {
+          "palabra": "porque",
+          "inicioMs": 1200,
+          "finMs": 1440
+        },
+        {
+          "palabra": "ahí",
+          "inicioMs": 1440,
+          "finMs": 1700
+        },
+        {
+          "palabra": "es",
+          "inicioMs": 1700,
+          "finMs": 1860
+        },
+        {
+          "palabra": "donde",
+          "inicioMs": 1860,
+          "finMs": 2040
+        },
+        {
+          "palabra": "ocurre",
+          "inicioMs": 2040,
+          "finMs": 2440
+        },
+        {
+          "palabra": "la",
+          "inicioMs": 2440,
+          "finMs": 2560
+        },
+        {
+          "palabra": "fotosíntesis",
+          "inicioMs": 2560,
+          "finMs": 3340
+        },
+        {
+          "palabra": "en",
+          "inicioMs": 3560,
+          "finMs": 3640
+        },
+        {
+          "palabra": "los",
+          "inicioMs": 3640,
+          "finMs": 3760
+        },
+        {
+          "palabra": "cloroplastos",
+          "inicioMs": 3760,
+          "finMs": 4760
+        },
+        {
+          "palabra": "orgánulos",
+          "inicioMs": 5020,
+          "finMs": 5380
+        },
+        {
+          "palabra": "celulares",
+          "inicioMs": 5380,
+          "finMs": 5940
+        },
+        {
+          "palabra": "llenos",
+          "inicioMs": 5940,
+          "finMs": 6280
+        },
+        {
+          "palabra": "de",
+          "inicioMs": 6280,
+          "finMs": 6440
+        },
+        {
+          "palabra": "clorofila",
+          "inicioMs": 6440,
+          "finMs": 6940
+        },
+        {
+          "palabra": "que",
+          "inicioMs": 6940,
+          "finMs": 7100
+        },
+        {
+          "palabra": "capturan",
+          "inicioMs": 7100,
+          "finMs": 7500
+        },
+        {
+          "palabra": "la",
+          "inicioMs": 7500,
+          "finMs": 7640
+        },
+        {
+          "palabra": "luz",
+          "inicioMs": 7640,
+          "finMs": 7780
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "texto": "El tronco y las ramas no son verdes porque no contienen cloroplastos: su función es estructural, transportar agua y nutrientes, no fabricar comida.",
+      "icono": "TreePine",
+      "colorIcono": "#92400E",
+      "tituloVisual": "FUNCIÓN ESTRUCTURAL",
+      "composicionVisual": "primer_plano",
+      "escenario": "selva_tropical",
+      "layout": "narrativo",
+      "transicion": "whip_right",
+      "efectosCamara": [
+        "drift"
+      ],
+      "palabrasClave": [
+        "no contienen cloroplastos",
+        "función estructural",
+        "transportar agua"
+      ],
+      "personajes": [
+        {
+          "id": "biologo",
+          "posicion": {
+            "x": 0,
+            "y": 50
+          },
+          "escala": 1.15,
+          "orientacion": "derecha",
+          "poseId": "explaining_pointing_up",
+          "expresion": "analytical",
+          "habla": true
+        }
+      ],
+      "duracionSegundos": 8.338,
+      "palabras": [
+        {
+          "palabra": "El",
+          "inicioMs": 0,
+          "finMs": 220
+        },
+        {
+          "palabra": "tronco",
+          "inicioMs": 220,
+          "finMs": 540
+        },
+        {
+          "palabra": "y",
+          "inicioMs": 540,
+          "finMs": 620
+        },
+        {
+          "palabra": "las",
+          "inicioMs": 620,
+          "finMs": 700
+        },
+        {
+          "palabra": "ramas",
+          "inicioMs": 700,
+          "finMs": 980
+        },
+        {
+          "palabra": "no",
+          "inicioMs": 980,
+          "finMs": 1180
+        },
+        {
+          "palabra": "son",
+          "inicioMs": 1180,
+          "finMs": 1360
+        },
+        {
+          "palabra": "verdes",
+          "inicioMs": 1360,
+          "finMs": 1800
+        },
+        {
+          "palabra": "porque",
+          "inicioMs": 1800,
+          "finMs": 2000
+        },
+        {
+          "palabra": "no",
+          "inicioMs": 2000,
+          "finMs": 2180
+        },
+        {
+          "palabra": "contienen",
+          "inicioMs": 2180,
+          "finMs": 2600
+        },
+        {
+          "palabra": "cloroplastos",
+          "inicioMs": 2600,
+          "finMs": 3460
+        },
+        {
+          "palabra": "su",
+          "inicioMs": 3600,
+          "finMs": 3700
+        },
+        {
+          "palabra": "función",
+          "inicioMs": 3700,
+          "finMs": 4060
+        },
+        {
+          "palabra": "es",
+          "inicioMs": 4060,
+          "finMs": 4260
+        },
+        {
+          "palabra": "estructural",
+          "inicioMs": 4260,
+          "finMs": 4820
+        },
+        {
+          "palabra": "transportar",
+          "inicioMs": 4820,
+          "finMs": 5580
+        },
+        {
+          "palabra": "agua",
+          "inicioMs": 5580,
+          "finMs": 5860
+        },
+        {
+          "palabra": "y",
+          "inicioMs": 5860,
+          "finMs": 6620
+        },
+        {
+          "palabra": "nutrientes",
+          "inicioMs": 6780,
+          "finMs": 6940
+        },
+        {
+          "palabra": "no",
+          "inicioMs": 6940,
+          "finMs": 7500
+        },
+        {
+          "palabra": "fabricar",
+          "inicioMs": 7500,
+          "finMs": 7800
+        },
+        {
+          "palabra": "comida",
+          "inicioMs": 7800,
+          "finMs": 8088
+        }
+      ]
+    },
+    {
+      "id": 7,
+      "texto": "Sin embargo, algunos árboles jóvenes tienen corteza verde porque sus tallos jóvenes aún contienen clorofila y pueden hacer fotosíntesis parcialmente.",
+      "icono": "Sprout",
+      "colorIcono": "#84CC16",
+      "tituloVisual": "CORTEZA VERDE",
+      "composicionVisual": "plano_general",
+      "escenario": "selva_tropical",
+      "layout": "narrativo",
+      "transicion": "corte",
+      "efectosCamara": [
+        "drift"
+      ],
+      "palabrasClave": [
+        "árboles jóvenes",
+        "corteza verde",
+        "fotosíntesis parcialmente"
+      ],
+      "personajes": [
+        {
+          "id": "biologo",
+          "posicion": {
+            "x": -160,
+            "y": 70
+          },
+          "escala": 1.05,
+          "orientacion": "derecha",
+          "prop": "leaf",
+          "poseId": "investigating_magnifier",
+          "expresion": "thinking",
+          "habla": true
+        }
+      ],
+      "duracionSegundos": 8.218,
+      "palabras": [
+        {
+          "palabra": "Sin",
+          "inicioMs": 0,
+          "finMs": 200
+        },
+        {
+          "palabra": "embargo",
+          "inicioMs": 200,
+          "finMs": 500
+        },
+        {
+          "palabra": "algunos",
+          "inicioMs": 780,
+          "finMs": 1500
+        },
+        {
+          "palabra": "árboles",
+          "inicioMs": 1500,
+          "finMs": 1880
+        },
+        {
+          "palabra": "jóvenes",
+          "inicioMs": 1880,
+          "finMs": 2240
+        },
+        {
+          "palabra": "tienen",
+          "inicioMs": 2240,
+          "finMs": 2600
+        },
+        {
+          "palabra": "corteza",
+          "inicioMs": 2600,
+          "finMs": 3040
+        },
+        {
+          "palabra": "verde",
+          "inicioMs": 3040,
+          "finMs": 3340
+        },
+        {
+          "palabra": "porque",
+          "inicioMs": 3340,
+          "finMs": 3620
+        },
+        {
+          "palabra": "sus",
+          "inicioMs": 3620,
+          "finMs": 3820
+        },
+        {
+          "palabra": "tallos",
+          "inicioMs": 3820,
+          "finMs": 4160
+        },
+        {
+          "palabra": "jóvenes",
+          "inicioMs": 4160,
+          "finMs": 4480
+        },
+        {
+          "palabra": "aún",
+          "inicioMs": 4480,
+          "finMs": 4740
+        },
+        {
+          "palabra": "contienen",
+          "inicioMs": 4740,
+          "finMs": 5120
+        },
+        {
+          "palabra": "clorofila",
+          "inicioMs": 5120,
+          "finMs": 5700
+        },
+        {
+          "palabra": "y",
+          "inicioMs": 5700,
+          "finMs": 5880
+        },
+        {
+          "palabra": "pueden",
+          "inicioMs": 5880,
+          "finMs": 6060
+        },
+        {
+          "palabra": "hacer",
+          "inicioMs": 6060,
+          "finMs": 6260
+        },
+        {
+          "palabra": "fotosíntesis",
+          "inicioMs": 6260,
+          "finMs": 6940
+        },
+        {
+          "palabra": "parcialmente",
+          "inicioMs": 6940,
+          "finMs": 7760
+        }
+      ]
+    },
+    {
+      "id": 8,
+      "texto": "La fotosíntesis es tan eficiente que una sola hoja de árbol puede producir suficiente oxígeno para que un humano respire durante un año entero.",
+      "icono": "Wind",
+      "colorIcono": "#38BDF8",
+      "tituloVisual": "OXÍGENO VITAL",
+      "composicionVisual": "primer_plano",
+      "escenario": "selva_tropical",
+      "layout": "narrativo",
+      "transicion": "whip_right",
+      "efectosCamara": [
+        "drift"
+      ],
+      "palabrasClave": [
+        "tan eficiente",
+        "suficiente oxígeno",
+        "un año entero"
+      ],
+      "personajes": [
+        {
+          "id": "biologo",
+          "posicion": {
+            "x": 0,
+            "y": 50
+          },
+          "escala": 1.15,
+          "orientacion": "derecha",
+          "poseId": "explaining_both_hands",
+          "expresion": "eureka",
+          "habla": true
+        }
+      ],
+      "duracionSegundos": 7.786,
+      "palabras": [
+        {
+          "palabra": "La",
+          "inicioMs": 0,
+          "finMs": 180
+        },
+        {
+          "palabra": "fotosíntesis",
+          "inicioMs": 180,
+          "finMs": 860
+        },
+        {
+          "palabra": "es",
+          "inicioMs": 860,
+          "finMs": 1140
+        },
+        {
+          "palabra": "tan",
+          "inicioMs": 1140,
+          "finMs": 1260
+        },
+        {
+          "palabra": "eficiente",
+          "inicioMs": 1260,
+          "finMs": 1660
+        },
+        {
+          "palabra": "que",
+          "inicioMs": 1660,
+          "finMs": 2000
+        },
+        {
+          "palabra": "una",
+          "inicioMs": 2000,
+          "finMs": 2180
+        },
+        {
+          "palabra": "sola",
+          "inicioMs": 2180,
+          "finMs": 2420
+        },
+        {
+          "palabra": "hoja",
+          "inicioMs": 2420,
+          "finMs": 2700
+        },
+        {
+          "palabra": "de",
+          "inicioMs": 2700,
+          "finMs": 2840
+        },
+        {
+          "palabra": "árbol",
+          "inicioMs": 2840,
+          "finMs": 3100
+        },
+        {
+          "palabra": "puede",
+          "inicioMs": 3100,
+          "finMs": 3340
+        },
+        {
+          "palabra": "producir",
+          "inicioMs": 3340,
+          "finMs": 3840
+        },
+        {
+          "palabra": "suficiente",
+          "inicioMs": 3840,
+          "finMs": 4260
+        },
+        {
+          "palabra": "oxígeno",
+          "inicioMs": 4260,
+          "finMs": 5000
+        },
+        {
+          "palabra": "para",
+          "inicioMs": 5000,
+          "finMs": 5120
+        },
+        {
+          "palabra": "que",
+          "inicioMs": 5120,
+          "finMs": 5280
+        },
+        {
+          "palabra": "un",
+          "inicioMs": 5280,
+          "finMs": 5400
+        },
+        {
+          "palabra": "humano",
+          "inicioMs": 5400,
+          "finMs": 5600
+        },
+        {
+          "palabra": "respire",
+          "inicioMs": 5600,
+          "finMs": 6080
+        },
+        {
+          "palabra": "durante",
+          "inicioMs": 6080,
+          "finMs": 6300
+        },
+        {
+          "palabra": "un",
+          "inicioMs": 6300,
+          "finMs": 6520
+        },
+        {
+          "palabra": "año",
+          "inicioMs": 6520,
+          "finMs": 6780
+        },
+        {
+          "palabra": "entero",
+          "inicioMs": 6900,
+          "finMs": 7300
+        }
+      ]
+    },
+    {
+      "id": 9,
+      "texto": "Sin la clorofila y la fotosíntesis, la Tierra sería un planeta muerto: no habría oxígeno para respirar ni comida para comer.",
+      "icono": "Globe",
+      "colorIcono": "#06B6D4",
+      "tituloVisual": "PLANETA MUERTO",
+      "composicionVisual": "plano_general",
+      "escenario": "selva_tropical",
+      "layout": "narrativo",
+      "transicion": "zoom_in",
+      "efectosCamara": [
+        "drift"
+      ],
+      "palabrasClave": [
+        "planeta muerto",
+        "no habría oxígeno",
+        "no comida"
+      ],
+      "personajes": [
+        {
+          "id": "biologo",
+          "posicion": {
+            "x": -160,
+            "y": 70
+          },
+          "escala": 1.05,
+          "orientacion": "derecha",
+          "poseId": "sad_slumped",
+          "expresion": "worried",
+          "habla": true
+        }
+      ],
+      "duracionSegundos": 6.826,
+      "palabras": [
+        {
+          "palabra": "Sin",
+          "inicioMs": 0,
+          "finMs": 260
+        },
+        {
+          "palabra": "la",
+          "inicioMs": 260,
+          "finMs": 400
+        },
+        {
+          "palabra": "clorofila",
+          "inicioMs": 400,
+          "finMs": 960
+        },
+        {
+          "palabra": "y",
+          "inicioMs": 960,
+          "finMs": 1140
+        },
+        {
+          "palabra": "la",
+          "inicioMs": 1140,
+          "finMs": 1900
+        },
+        {
+          "palabra": "fotosíntesis",
+          "inicioMs": 2000,
+          "finMs": 2060
+        },
+        {
+          "palabra": "la",
+          "inicioMs": 2060,
+          "finMs": 2340
+        },
+        {
+          "palabra": "Tierra",
+          "inicioMs": 2340,
+          "finMs": 2600
+        },
+        {
+          "palabra": "sería",
+          "inicioMs": 2600,
+          "finMs": 2760
+        },
+        {
+          "palabra": "un",
+          "inicioMs": 2760,
+          "finMs": 2980
+        },
+        {
+          "palabra": "planeta",
+          "inicioMs": 2980,
+          "finMs": 3560
+        },
+        {
+          "palabra": "muerto",
+          "inicioMs": 3640,
+          "finMs": 3740
+        },
+        {
+          "palabra": "no",
+          "inicioMs": 3740,
+          "finMs": 4020
+        },
+        {
+          "palabra": "habría",
+          "inicioMs": 4020,
+          "finMs": 4600
+        },
+        {
+          "palabra": "oxígeno",
+          "inicioMs": 4600,
+          "finMs": 4740
+        },
+        {
+          "palabra": "para",
+          "inicioMs": 4740,
+          "finMs": 5300
+        },
+        {
+          "palabra": "respirar",
+          "inicioMs": 5300,
+          "finMs": 5500
+        },
+        {
+          "palabra": "ni",
+          "inicioMs": 5500,
+          "finMs": 5840
+        },
+        {
+          "palabra": "comida",
+          "inicioMs": 5840,
+          "finMs": 6080
+        },
+        {
+          "palabra": "para",
+          "inicioMs": 6080,
+          "finMs": 6340
+        },
+        {
+          "palabra": "comer",
+          "inicioMs": 6340,
+          "finMs": 6576
+        }
+      ]
+    },
+    {
+      "id": 10,
+      "texto": "Así que la próxima vez que veas una hoja verde, recuerda que esa pequeña fábrica solar está produciendo el oxígeno que mantiene viva a toda la vida en la Tierra.",
+      "icono": "Sparkles",
+      "colorIcono": "#22C55E",
+      "tituloVisual": "FÁBRICA SOLAR",
+      "composicionVisual": "plano_general",
+      "escenario": "selva_tropical",
+      "layout": "narrativo",
+      "transicion": "zoom_in",
+      "efectosCamara": [
+        "drift"
+      ],
+      "sfx": "sfx/sfx_whoosh.wav",
+      "volumenSfx": 0.2,
+      "palabrasClave": [
+        "hoja verde",
+        "fábrica solar",
+        "oxígeno que mantiene viva"
+      ],
+      "personajes": [
+        {
+          "id": "biologo",
+          "posicion": {
+            "x": 0,
+            "y": 50
+          },
+          "escala": 1.15,
+          "orientacion": "derecha",
+          "prop": "trophy",
+          "poseId": "celebrating_arms_up",
+          "expresion": "eureka",
+          "habla": true
+        }
+      ],
+      "duracionSegundos": 7.618,
+      "palabras": [
+        {
+          "palabra": "Así",
+          "inicioMs": 0,
+          "finMs": 300
+        },
+        {
+          "palabra": "que",
+          "inicioMs": 300,
+          "finMs": 420
+        },
+        {
+          "palabra": "la",
+          "inicioMs": 420,
+          "finMs": 500
+        },
+        {
+          "palabra": "próxima",
+          "inicioMs": 500,
+          "finMs": 800
+        },
+        {
+          "palabra": "vez",
+          "inicioMs": 800,
+          "finMs": 1040
+        },
+        {
+          "palabra": "que",
+          "inicioMs": 1040,
+          "finMs": 1220
+        },
+        {
+          "palabra": "veas",
+          "inicioMs": 1220,
+          "finMs": 1440
+        },
+        {
+          "palabra": "una",
+          "inicioMs": 1440,
+          "finMs": 1580
+        },
+        {
+          "palabra": "hoja",
+          "inicioMs": 1580,
+          "finMs": 1800
+        },
+        {
+          "palabra": "verde",
+          "inicioMs": 1800,
+          "finMs": 2080
+        },
+        {
+          "palabra": "recuerda",
+          "inicioMs": 2420,
+          "finMs": 2620
+        },
+        {
+          "palabra": "que",
+          "inicioMs": 2620,
+          "finMs": 2740
+        },
+        {
+          "palabra": "esa",
+          "inicioMs": 2740,
+          "finMs": 2940
+        },
+        {
+          "palabra": "pequeña",
+          "inicioMs": 2940,
+          "finMs": 3220
+        },
+        {
+          "palabra": "fábrica",
+          "inicioMs": 3220,
+          "finMs": 3720
+        },
+        {
+          "palabra": "solar",
+          "inicioMs": 3720,
+          "finMs": 3980
+        },
+        {
+          "palabra": "está",
+          "inicioMs": 3980,
+          "finMs": 4240
+        },
+        {
+          "palabra": "produciendo",
+          "inicioMs": 4240,
+          "finMs": 4680
+        },
+        {
+          "palabra": "el",
+          "inicioMs": 4680,
+          "finMs": 4840
+        },
+        {
+          "palabra": "oxígeno",
+          "inicioMs": 4840,
+          "finMs": 5300
+        },
+        {
+          "palabra": "que",
+          "inicioMs": 5300,
+          "finMs": 5400
+        },
+        {
+          "palabra": "mantiene",
+          "inicioMs": 5400,
+          "finMs": 5800
+        },
+        {
+          "palabra": "viva",
+          "inicioMs": 5800,
+          "finMs": 6080
+        },
+        {
+          "palabra": "a",
+          "inicioMs": 6080,
+          "finMs": 6220
+        },
+        {
+          "palabra": "toda",
+          "inicioMs": 6220,
+          "finMs": 6380
+        },
+        {
+          "palabra": "la",
+          "inicioMs": 6380,
+          "finMs": 6540
+        },
+        {
+          "palabra": "vida",
+          "inicioMs": 6540,
+          "finMs": 6780
+        },
+        {
+          "palabra": "en",
+          "inicioMs": 6780,
+          "finMs": 6860
+        },
+        {
+          "palabra": "la",
+          "inicioMs": 6860,
+          "finMs": 7140
+        },
+        {
+          "palabra": "Tierra",
+          "inicioMs": 7140,
+          "finMs": 7368
+        }
+      ]
+    }
+  ]
+}

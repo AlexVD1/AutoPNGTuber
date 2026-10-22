@@ -110,7 +110,10 @@ export const Scene: React.FC<SceneProps> = ({ escena }) => {
   const escenarioFinal = useMemo(() => {
     if (escena.escenario) return escena.escenario;
     const t = (escena.texto || "").toLowerCase();
-    if (/n[uú]cleo|magma|volc[aá]n|lava|centro de la tierra|manto terrestre|geolog/i.test(t)) {
+    if (/volc[aá]n|lava|cr[aá]ter|caldera|basalto|erupci[oó]n|magm[aá]tico/i.test(t)) {
+      return "crater_volcanico";
+    }
+    if (/n[uú]cleo|magma|centro de la tierra|manto terrestre|geolog/i.test(t)) {
       return "nucleo_tierra";
     }
     if (/micelio|hifa|ra[ií]ces|wood wide web|subterr[aá]neo/i.test(t)) {
@@ -124,6 +127,9 @@ export const Scene: React.FC<SceneProps> = ({ escena }) => {
     }
     if (/(?:c[eé]lula|celular|prote[ií]na|tejido|sangre|[oó]rgano|pulm[oó]n|neurona|m[uú]sculo|t[ií]mpano|coraz[oó]n(?!.*tierra))/i.test(t)) {
       return "interior_cuerpo";
+    }
+    if (/bioluminisc|ne[oó]n|dinoflagel|ola.*azul|mar.*brill/i.test(t)) {
+      return "playa_bioluminiscente";
     }
     if (/oc[eé]ano|abis|fosa|marianas|submarin|profundidad|pez |peces|ballena|tibur[oó]n|arrecife/i.test(t)) {
       return "abismo_oceanico";

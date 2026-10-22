@@ -1,0 +1,1547 @@
+{
+  "meta": {
+    "id": "maglev_levitacion_magnetica",
+    "slug": "maglev_levitacion_magnetica",
+    "temaResumen": "¿Cómo es posible que un imán pueda levitar un tren a 600 km/h sin tocar las vías?"
+  },
+  "escenas": [
+    {
+      "id": 1,
+      "texto": "¿Sabías que en Japón existe un tren que flota sobre las vías a más de seiscientos kilómetros por hora sin tocarlas jamás?",
+      "icono": "Train",
+      "colorIcono": "#38BDF8",
+      "tituloVisual": "TREN MAGLEV",
+      "composicionVisual": "plano_general",
+      "escenario": "calle",
+      "layout": "narrativo",
+      "transicion": "zoom_in",
+      "efectosCamara": [
+        "drift"
+      ],
+      "sfx": "sfx/sfx_whoosh.wav",
+      "volumenSfx": 0.2,
+      "palabrasClave": [
+        "Japón",
+        "flota sobre las vías",
+        "seiscientos kilómetros por hora"
+      ],
+      "personajes": [
+        {
+          "id": "ingeniero",
+          "posicion": {
+            "x": -160,
+            "y": 70
+          },
+          "escala": 1.05,
+          "orientacion": "derecha",
+          "prop": "magnet",
+          "poseId": "presenting_object",
+          "expresion": "eureka",
+          "acciones": [
+            {
+              "tipo": "caminar_hacia",
+              "desdeX": -260,
+              "haciaX": -120
+            }
+          ],
+          "habla": true
+        }
+      ],
+      "duracionSegundos": 5.77,
+      "palabras": [
+        {
+          "palabra": "Sabías",
+          "inicioMs": 0,
+          "finMs": 440
+        },
+        {
+          "palabra": "que",
+          "inicioMs": 440,
+          "finMs": 580
+        },
+        {
+          "palabra": "en",
+          "inicioMs": 580,
+          "finMs": 680
+        },
+        {
+          "palabra": "Japón",
+          "inicioMs": 680,
+          "finMs": 980
+        },
+        {
+          "palabra": "existe",
+          "inicioMs": 980,
+          "finMs": 1200
+        },
+        {
+          "palabra": "un",
+          "inicioMs": 1200,
+          "finMs": 1440
+        },
+        {
+          "palabra": "tren",
+          "inicioMs": 1440,
+          "finMs": 1600
+        },
+        {
+          "palabra": "que",
+          "inicioMs": 1600,
+          "finMs": 1740
+        },
+        {
+          "palabra": "flota",
+          "inicioMs": 1740,
+          "finMs": 2040
+        },
+        {
+          "palabra": "sobre",
+          "inicioMs": 2040,
+          "finMs": 2260
+        },
+        {
+          "palabra": "las",
+          "inicioMs": 2260,
+          "finMs": 2460
+        },
+        {
+          "palabra": "vías",
+          "inicioMs": 2460,
+          "finMs": 2740
+        },
+        {
+          "palabra": "a",
+          "inicioMs": 2740,
+          "finMs": 2840
+        },
+        {
+          "palabra": "más",
+          "inicioMs": 2840,
+          "finMs": 2960
+        },
+        {
+          "palabra": "de",
+          "inicioMs": 2960,
+          "finMs": 3080
+        },
+        {
+          "palabra": "seiscientos",
+          "inicioMs": 3080,
+          "finMs": 3320
+        },
+        {
+          "palabra": "kilómetros",
+          "inicioMs": 3320,
+          "finMs": 3980
+        },
+        {
+          "palabra": "por",
+          "inicioMs": 3980,
+          "finMs": 4220
+        },
+        {
+          "palabra": "hora",
+          "inicioMs": 4220,
+          "finMs": 4420
+        },
+        {
+          "palabra": "sin",
+          "inicioMs": 4420,
+          "finMs": 4600
+        },
+        {
+          "palabra": "tocarlas",
+          "inicioMs": 4600,
+          "finMs": 4780
+        },
+        {
+          "palabra": "jamás",
+          "inicioMs": 4780,
+          "finMs": 5000
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "texto": "Se llama tren Maglev y funciona mediante levitación magnética: el tren flota sobre las vías gracias a la repulsión entre imanes superconductores.",
+      "icono": "Magnet",
+      "colorIcono": "#8B5CF6",
+      "tituloVisual": "LEVITACIÓN MAGNÉTICA",
+      "composicionVisual": "primer_plano",
+      "escenario": "laboratorio",
+      "layout": "narrativo",
+      "transicion": "whip_right",
+      "efectosCamara": [
+        "drift"
+      ],
+      "palabrasClave": [
+        "Maglev",
+        "levitación magnética",
+        "imanes superconductores"
+      ],
+      "personajes": [
+        {
+          "id": "ingeniero",
+          "posicion": {
+            "x": 0,
+            "y": 50
+          },
+          "escala": 1.15,
+          "orientacion": "derecha",
+          "poseId": "explaining_both_hands",
+          "expresion": "talking_enthusiastic",
+          "habla": true
+        }
+      ],
+      "duracionSegundos": 8.05,
+      "palabras": [
+        {
+          "palabra": "Se",
+          "inicioMs": 0,
+          "finMs": 160
+        },
+        {
+          "palabra": "llama",
+          "inicioMs": 160,
+          "finMs": 400
+        },
+        {
+          "palabra": "tren",
+          "inicioMs": 400,
+          "finMs": 680
+        },
+        {
+          "palabra": "Maglev",
+          "inicioMs": 680,
+          "finMs": 1120
+        },
+        {
+          "palabra": "y",
+          "inicioMs": 1120,
+          "finMs": 1300
+        },
+        {
+          "palabra": "funciona",
+          "inicioMs": 1300,
+          "finMs": 1620
+        },
+        {
+          "palabra": "mediante",
+          "inicioMs": 1620,
+          "finMs": 1940
+        },
+        {
+          "palabra": "levitación",
+          "inicioMs": 1940,
+          "finMs": 2420
+        },
+        {
+          "palabra": "magnética",
+          "inicioMs": 2420,
+          "finMs": 2980
+        },
+        {
+          "palabra": "el",
+          "inicioMs": 3460,
+          "finMs": 3620
+        },
+        {
+          "palabra": "tren",
+          "inicioMs": 3620,
+          "finMs": 3860
+        },
+        {
+          "palabra": "flota",
+          "inicioMs": 3860,
+          "finMs": 4140
+        },
+        {
+          "palabra": "sobre",
+          "inicioMs": 4140,
+          "finMs": 4400
+        },
+        {
+          "palabra": "las",
+          "inicioMs": 4400,
+          "finMs": 4640
+        },
+        {
+          "palabra": "vías",
+          "inicioMs": 4640,
+          "finMs": 4900
+        },
+        {
+          "palabra": "gracias",
+          "inicioMs": 4900,
+          "finMs": 5280
+        },
+        {
+          "palabra": "a",
+          "inicioMs": 5280,
+          "finMs": 5460
+        },
+        {
+          "palabra": "la",
+          "inicioMs": 5460,
+          "finMs": 5560
+        },
+        {
+          "palabra": "repulsión",
+          "inicioMs": 5560,
+          "finMs": 6040
+        },
+        {
+          "palabra": "entre",
+          "inicioMs": 6040,
+          "finMs": 6300
+        },
+        {
+          "palabra": "imanes",
+          "inicioMs": 6300,
+          "finMs": 6580
+        },
+        {
+          "palabra": "superconductores",
+          "inicioMs": 6580,
+          "finMs": 7580
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "texto": "El secreto está en los superconductores: materiales que a temperaturas extremadamente bajas pierden toda su resistencia eléctrica.",
+      "icono": "Snowflake",
+      "colorIcono": "#06B6D4",
+      "tituloVisual": "SUPERCONDUCTORES",
+      "composicionVisual": "plano_general",
+      "escenario": "laboratorio",
+      "layout": "narrativo",
+      "transicion": "whip_left",
+      "efectosCamara": [
+        "drift"
+      ],
+      "palabrasClave": [
+        "superconductores",
+        "resistencia eléctrica",
+        "temperaturas extremas"
+      ],
+      "personajes": [
+        {
+          "id": "ingeniero",
+          "posicion": {
+            "x": -160,
+            "y": 70
+          },
+          "escala": 1.05,
+          "orientacion": "derecha",
+          "prop": "magnet",
+          "poseId": "presenting_object",
+          "expresion": "analytical",
+          "habla": true
+        }
+      ],
+      "duracionSegundos": 6.418,
+      "palabras": [
+        {
+          "palabra": "El",
+          "inicioMs": 0,
+          "finMs": 200
+        },
+        {
+          "palabra": "secreto",
+          "inicioMs": 200,
+          "finMs": 600
+        },
+        {
+          "palabra": "está",
+          "inicioMs": 600,
+          "finMs": 740
+        },
+        {
+          "palabra": "en",
+          "inicioMs": 740,
+          "finMs": 820
+        },
+        {
+          "palabra": "los",
+          "inicioMs": 820,
+          "finMs": 900
+        },
+        {
+          "palabra": "superconductores",
+          "inicioMs": 900,
+          "finMs": 1740
+        },
+        {
+          "palabra": "materiales",
+          "inicioMs": 1940,
+          "finMs": 2380
+        },
+        {
+          "palabra": "que",
+          "inicioMs": 2380,
+          "finMs": 2460
+        },
+        {
+          "palabra": "a",
+          "inicioMs": 2460,
+          "finMs": 2540
+        },
+        {
+          "palabra": "temperaturas",
+          "inicioMs": 2540,
+          "finMs": 2940
+        },
+        {
+          "palabra": "extremadamente",
+          "inicioMs": 2940,
+          "finMs": 3620
+        },
+        {
+          "palabra": "bajas",
+          "inicioMs": 3620,
+          "finMs": 4080
+        },
+        {
+          "palabra": "pierden",
+          "inicioMs": 4080,
+          "finMs": 4460
+        },
+        {
+          "palabra": "toda",
+          "inicioMs": 4460,
+          "finMs": 4760
+        },
+        {
+          "palabra": "su",
+          "inicioMs": 4760,
+          "finMs": 4960
+        },
+        {
+          "palabra": "resistencia",
+          "inicioMs": 4960,
+          "finMs": 5500
+        },
+        {
+          "palabra": "eléctrica",
+          "inicioMs": 5500,
+          "finMs": 5960
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "texto": "Al enfriar los imanes del tren a menos de doscientos grados bajo cero, se convierten en superconductores perfectos que generan campos magnéticos increíblemente intensos.",
+      "icono": "Thermometer",
+      "colorIcono": "#EF4444",
+      "tituloVisual": "CAMPOS MAGNÉTICOS",
+      "composicionVisual": "cifras_concepto",
+      "escenario": "laboratorio",
+      "layout": "narrativo",
+      "transicion": "zoom_in",
+      "efectosCamara": [
+        "punch"
+      ],
+      "sfx": "sfx/sfx_dramatic_hit.wav",
+      "volumenSfx": 0.25,
+      "palabrasClave": [
+        "doscientos grados bajo cero",
+        "superconductores perfectos",
+        "campos magnéticos"
+      ],
+      "personajes": [
+        {
+          "id": "ingeniero",
+          "posicion": {
+            "x": 0,
+            "y": 50
+          },
+          "escala": 1.15,
+          "orientacion": "derecha",
+          "poseId": "explaining_pointing_up",
+          "expresion": "eureka",
+          "habla": true
+        }
+      ],
+      "duracionSegundos": 9.73,
+      "palabras": [
+        {
+          "palabra": "Al",
+          "inicioMs": 0,
+          "finMs": 200
+        },
+        {
+          "palabra": "enfriar",
+          "inicioMs": 200,
+          "finMs": 600
+        },
+        {
+          "palabra": "los",
+          "inicioMs": 600,
+          "finMs": 760
+        },
+        {
+          "palabra": "imanes",
+          "inicioMs": 760,
+          "finMs": 1040
+        },
+        {
+          "palabra": "del",
+          "inicioMs": 1040,
+          "finMs": 1260
+        },
+        {
+          "palabra": "tren",
+          "inicioMs": 1260,
+          "finMs": 1500
+        },
+        {
+          "palabra": "a",
+          "inicioMs": 1740,
+          "finMs": 1800
+        },
+        {
+          "palabra": "menos",
+          "inicioMs": 1800,
+          "finMs": 2000
+        },
+        {
+          "palabra": "de",
+          "inicioMs": 2000,
+          "finMs": 2180
+        },
+        {
+          "palabra": "doscientos",
+          "inicioMs": 2180,
+          "finMs": 2580
+        },
+        {
+          "palabra": "grados",
+          "inicioMs": 2580,
+          "finMs": 3040
+        },
+        {
+          "palabra": "bajo",
+          "inicioMs": 3040,
+          "finMs": 3220
+        },
+        {
+          "palabra": "cero",
+          "inicioMs": 3220,
+          "finMs": 3640
+        },
+        {
+          "palabra": "se",
+          "inicioMs": 3960,
+          "finMs": 4060
+        },
+        {
+          "palabra": "convierten",
+          "inicioMs": 4060,
+          "finMs": 4520
+        },
+        {
+          "palabra": "en",
+          "inicioMs": 4520,
+          "finMs": 4700
+        },
+        {
+          "palabra": "superconductores",
+          "inicioMs": 4700,
+          "finMs": 5540
+        },
+        {
+          "palabra": "perfectos",
+          "inicioMs": 5540,
+          "finMs": 6240
+        },
+        {
+          "palabra": "que",
+          "inicioMs": 6240,
+          "finMs": 6340
+        },
+        {
+          "palabra": "generan",
+          "inicioMs": 6340,
+          "finMs": 6780
+        },
+        {
+          "palabra": "campos",
+          "inicioMs": 6780,
+          "finMs": 7180
+        },
+        {
+          "palabra": "magnéticos",
+          "inicioMs": 7180,
+          "finMs": 7800
+        },
+        {
+          "palabra": "increíblemente",
+          "inicioMs": 7800,
+          "finMs": 8560
+        },
+        {
+          "palabra": "intensos",
+          "inicioMs": 8560,
+          "finMs": 9260
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "texto": "Estos campos magnéticos interactúan con las bobinas de las vías, creando una fuerza de repulsión que levanta el tren unos diez centímetros del suelo.",
+      "icono": "ArrowUp",
+      "colorIcono": "#10B981",
+      "tituloVisual": "FUERZA DE REPULSIÓN",
+      "composicionVisual": "plano_general",
+      "escenario": "calle",
+      "layout": "narrativo",
+      "transicion": "corte",
+      "efectosCamara": [
+        "drift"
+      ],
+      "palabrasClave": [
+        "interactúan con las bobinas",
+        "fuerza de repulsión",
+        "diez centímetros"
+      ],
+      "personajes": [
+        {
+          "id": "ingeniero",
+          "posicion": {
+            "x": -160,
+            "y": 70
+          },
+          "escala": 1.05,
+          "orientacion": "derecha",
+          "poseId": "explaining_both_hands",
+          "expresion": "analytical",
+          "habla": true
+        }
+      ],
+      "duracionSegundos": 7.786,
+      "palabras": [
+        {
+          "palabra": "Estos",
+          "inicioMs": 0,
+          "finMs": 280
+        },
+        {
+          "palabra": "campos",
+          "inicioMs": 280,
+          "finMs": 580
+        },
+        {
+          "palabra": "magnéticos",
+          "inicioMs": 580,
+          "finMs": 1160
+        },
+        {
+          "palabra": "interactúan",
+          "inicioMs": 1160,
+          "finMs": 1760
+        },
+        {
+          "palabra": "con",
+          "inicioMs": 1760,
+          "finMs": 1880
+        },
+        {
+          "palabra": "las",
+          "inicioMs": 1880,
+          "finMs": 1980
+        },
+        {
+          "palabra": "bobinas",
+          "inicioMs": 1980,
+          "finMs": 2340
+        },
+        {
+          "palabra": "de",
+          "inicioMs": 2340,
+          "finMs": 2400
+        },
+        {
+          "palabra": "las",
+          "inicioMs": 2400,
+          "finMs": 2820
+        },
+        {
+          "palabra": "vías",
+          "inicioMs": 3000,
+          "finMs": 3420
+        },
+        {
+          "palabra": "creando",
+          "inicioMs": 3420,
+          "finMs": 3640
+        },
+        {
+          "palabra": "una",
+          "inicioMs": 3640,
+          "finMs": 3960
+        },
+        {
+          "palabra": "fuerza",
+          "inicioMs": 3960,
+          "finMs": 4120
+        },
+        {
+          "palabra": "de",
+          "inicioMs": 4120,
+          "finMs": 4660
+        },
+        {
+          "palabra": "repulsión",
+          "inicioMs": 4660,
+          "finMs": 4780
+        },
+        {
+          "palabra": "que",
+          "inicioMs": 4780,
+          "finMs": 5180
+        },
+        {
+          "palabra": "levanta",
+          "inicioMs": 5180,
+          "finMs": 5280
+        },
+        {
+          "palabra": "el",
+          "inicioMs": 5280,
+          "finMs": 5480
+        },
+        {
+          "palabra": "tren",
+          "inicioMs": 5480,
+          "finMs": 5820
+        },
+        {
+          "palabra": "unos",
+          "inicioMs": 5820,
+          "finMs": 6140
+        },
+        {
+          "palabra": "diez",
+          "inicioMs": 6140,
+          "finMs": 6680
+        },
+        {
+          "palabra": "centímetros",
+          "inicioMs": 6680,
+          "finMs": 6960
+        },
+        {
+          "palabra": "del",
+          "inicioMs": 6960,
+          "finMs": 7340
+        },
+        {
+          "palabra": "suelo",
+          "inicioMs": 7340,
+          "finMs": 7536
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "texto": "Al no haber contacto físico entre el tren y las vías, no existe fricción, lo que permite alcanzar velocidades imposibles para los trenes convencionales.",
+      "icono": "Gauge",
+      "colorIcono": "#F59E0B",
+      "tituloVisual": "CERO FRICCIÓN",
+      "composicionVisual": "primer_plano",
+      "escenario": "calle",
+      "layout": "narrativo",
+      "transicion": "whip_right",
+      "efectosCamara": [
+        "drift"
+      ],
+      "palabrasClave": [
+        "no hay contacto físico",
+        "no existe fricción",
+        "velocidades imposibles"
+      ],
+      "personajes": [
+        {
+          "id": "ingeniero",
+          "posicion": {
+            "x": 0,
+            "y": 50
+          },
+          "escala": 1.15,
+          "orientacion": "derecha",
+          "poseId": "presenting_object",
+          "expresion": "talking_enthusiastic",
+          "habla": true
+        }
+      ],
+      "duracionSegundos": 8.146,
+      "palabras": [
+        {
+          "palabra": "Al",
+          "inicioMs": 0,
+          "finMs": 200
+        },
+        {
+          "palabra": "no",
+          "inicioMs": 200,
+          "finMs": 340
+        },
+        {
+          "palabra": "haber",
+          "inicioMs": 340,
+          "finMs": 460
+        },
+        {
+          "palabra": "contacto",
+          "inicioMs": 460,
+          "finMs": 960
+        },
+        {
+          "palabra": "físico",
+          "inicioMs": 960,
+          "finMs": 1360
+        },
+        {
+          "palabra": "entre",
+          "inicioMs": 1360,
+          "finMs": 1540
+        },
+        {
+          "palabra": "el",
+          "inicioMs": 1540,
+          "finMs": 1640
+        },
+        {
+          "palabra": "tren",
+          "inicioMs": 1640,
+          "finMs": 1800
+        },
+        {
+          "palabra": "y",
+          "inicioMs": 1800,
+          "finMs": 1920
+        },
+        {
+          "palabra": "las",
+          "inicioMs": 1920,
+          "finMs": 2020
+        },
+        {
+          "palabra": "vías",
+          "inicioMs": 2020,
+          "finMs": 2300
+        },
+        {
+          "palabra": "no",
+          "inicioMs": 2300,
+          "finMs": 2540
+        },
+        {
+          "palabra": "existe",
+          "inicioMs": 2540,
+          "finMs": 2800
+        },
+        {
+          "palabra": "fricción",
+          "inicioMs": 2800,
+          "finMs": 3440
+        },
+        {
+          "palabra": "lo",
+          "inicioMs": 3660,
+          "finMs": 3820
+        },
+        {
+          "palabra": "que",
+          "inicioMs": 3820,
+          "finMs": 3980
+        },
+        {
+          "palabra": "permite",
+          "inicioMs": 3980,
+          "finMs": 4300
+        },
+        {
+          "palabra": "alcanzar",
+          "inicioMs": 4300,
+          "finMs": 4920
+        },
+        {
+          "palabra": "velocidades",
+          "inicioMs": 4920,
+          "finMs": 5440
+        },
+        {
+          "palabra": "imposibles",
+          "inicioMs": 5440,
+          "finMs": 6100
+        },
+        {
+          "palabra": "para",
+          "inicioMs": 6100,
+          "finMs": 6300
+        },
+        {
+          "palabra": "los",
+          "inicioMs": 6300,
+          "finMs": 6480
+        },
+        {
+          "palabra": "trenes",
+          "inicioMs": 6480,
+          "finMs": 6860
+        },
+        {
+          "palabra": "convencionales",
+          "inicioMs": 6860,
+          "finMs": 7680
+        }
+      ]
+    },
+    {
+      "id": 7,
+      "texto": "Además, los trenes Maglev usan propulsión magnética lineal: las bobinas de las vías crean un campo magnético móvil que empuja el tren hacia adelante.",
+      "icono": "Zap",
+      "colorIcono": "#FACC15",
+      "tituloVisual": "PROPULSIÓN LINEAL",
+      "composicionVisual": "plano_general",
+      "escenario": "laboratorio",
+      "layout": "narrativo",
+      "transicion": "corte",
+      "efectosCamara": [
+        "drift"
+      ],
+      "palabrasClave": [
+        "propulsión magnética lineal",
+        "campo magnético móvil",
+        "empuja el tren"
+      ],
+      "personajes": [
+        {
+          "id": "ingeniero",
+          "posicion": {
+            "x": -160,
+            "y": 70
+          },
+          "escala": 1.05,
+          "orientacion": "derecha",
+          "prop": "atom",
+          "poseId": "explaining_pointing_up",
+          "expresion": "analytical",
+          "habla": true
+        }
+      ],
+      "duracionSegundos": 8.506,
+      "palabras": [
+        {
+          "palabra": "Además",
+          "inicioMs": 0,
+          "finMs": 420
+        },
+        {
+          "palabra": "los",
+          "inicioMs": 640,
+          "finMs": 760
+        },
+        {
+          "palabra": "trenes",
+          "inicioMs": 760,
+          "finMs": 1120
+        },
+        {
+          "palabra": "Maglev",
+          "inicioMs": 1120,
+          "finMs": 1460
+        },
+        {
+          "palabra": "usan",
+          "inicioMs": 1460,
+          "finMs": 1820
+        },
+        {
+          "palabra": "propulsión",
+          "inicioMs": 1820,
+          "finMs": 2300
+        },
+        {
+          "palabra": "magnética",
+          "inicioMs": 2300,
+          "finMs": 2800
+        },
+        {
+          "palabra": "lineal",
+          "inicioMs": 2800,
+          "finMs": 3340
+        },
+        {
+          "palabra": "las",
+          "inicioMs": 3580,
+          "finMs": 3680
+        },
+        {
+          "palabra": "bobinas",
+          "inicioMs": 3680,
+          "finMs": 4060
+        },
+        {
+          "palabra": "de",
+          "inicioMs": 4060,
+          "finMs": 4220
+        },
+        {
+          "palabra": "las",
+          "inicioMs": 4220,
+          "finMs": 4360
+        },
+        {
+          "palabra": "vías",
+          "inicioMs": 4360,
+          "finMs": 4720
+        },
+        {
+          "palabra": "crean",
+          "inicioMs": 4720,
+          "finMs": 5060
+        },
+        {
+          "palabra": "un",
+          "inicioMs": 5060,
+          "finMs": 5180
+        },
+        {
+          "palabra": "campo",
+          "inicioMs": 5180,
+          "finMs": 5480
+        },
+        {
+          "palabra": "magnético",
+          "inicioMs": 5480,
+          "finMs": 6080
+        },
+        {
+          "palabra": "móvil",
+          "inicioMs": 6080,
+          "finMs": 6440
+        },
+        {
+          "palabra": "que",
+          "inicioMs": 6440,
+          "finMs": 6620
+        },
+        {
+          "palabra": "empuja",
+          "inicioMs": 6620,
+          "finMs": 7000
+        },
+        {
+          "palabra": "el",
+          "inicioMs": 7000,
+          "finMs": 7100
+        },
+        {
+          "palabra": "tren",
+          "inicioMs": 7100,
+          "finMs": 7340
+        },
+        {
+          "palabra": "hacia",
+          "inicioMs": 7340,
+          "finMs": 7540
+        },
+        {
+          "palabra": "adelante",
+          "inicioMs": 7540,
+          "finMs": 7860
+        }
+      ]
+    },
+    {
+      "id": 8,
+      "texto": "El tren japonés Chuo Shinkansen Maglev alcanzó un récord de seiscientos tres kilómetros por hora en pruebas, convirtiéndose en el tren más rápido del mundo.",
+      "icono": "Trophy",
+      "colorIcono": "#F59E0B",
+      "tituloVisual": "RÉCORD MUNDIAL",
+      "composicionVisual": "cifras_concepto",
+      "escenario": "calle",
+      "layout": "narrativo",
+      "transicion": "whip_left",
+      "efectosCamara": [
+        "drift"
+      ],
+      "palabrasClave": [
+        "Chuo Shinkansen",
+        "seiscientos tres kilómetros",
+        "tren más rápido"
+      ],
+      "personajes": [
+        {
+          "id": "ingeniero",
+          "posicion": {
+            "x": -150,
+            "y": 70
+          },
+          "escala": 1.05,
+          "orientacion": "derecha",
+          "poseId": "celebrating_arms_up",
+          "expresion": "eureka",
+          "habla": true
+        }
+      ],
+      "duracionSegundos": 8.722,
+      "palabras": [
+        {
+          "palabra": "El",
+          "inicioMs": 0,
+          "finMs": 240
+        },
+        {
+          "palabra": "tren",
+          "inicioMs": 240,
+          "finMs": 400
+        },
+        {
+          "palabra": "japonés",
+          "inicioMs": 400,
+          "finMs": 960
+        },
+        {
+          "palabra": "Chuo",
+          "inicioMs": 1120,
+          "finMs": 1420
+        },
+        {
+          "palabra": "Shinkansen",
+          "inicioMs": 1420,
+          "finMs": 1720
+        },
+        {
+          "palabra": "Maglev",
+          "inicioMs": 1720,
+          "finMs": 2200
+        },
+        {
+          "palabra": "alcanzó",
+          "inicioMs": 2200,
+          "finMs": 2780
+        },
+        {
+          "palabra": "un",
+          "inicioMs": 2780,
+          "finMs": 2920
+        },
+        {
+          "palabra": "récord",
+          "inicioMs": 2920,
+          "finMs": 3160
+        },
+        {
+          "palabra": "de",
+          "inicioMs": 3160,
+          "finMs": 3400
+        },
+        {
+          "palabra": "seiscientos",
+          "inicioMs": 3400,
+          "finMs": 4200
+        },
+        {
+          "palabra": "tres",
+          "inicioMs": 4200,
+          "finMs": 4620
+        },
+        {
+          "palabra": "kilómetros",
+          "inicioMs": 4620,
+          "finMs": 4900
+        },
+        {
+          "palabra": "por",
+          "inicioMs": 4900,
+          "finMs": 5040
+        },
+        {
+          "palabra": "hora",
+          "inicioMs": 5040,
+          "finMs": 5180
+        },
+        {
+          "palabra": "en",
+          "inicioMs": 5180,
+          "finMs": 5500
+        },
+        {
+          "palabra": "pruebas",
+          "inicioMs": 5500,
+          "finMs": 6780
+        },
+        {
+          "palabra": "convirtiéndose",
+          "inicioMs": 6780,
+          "finMs": 6900
+        },
+        {
+          "palabra": "en",
+          "inicioMs": 6900,
+          "finMs": 7000
+        },
+        {
+          "palabra": "el",
+          "inicioMs": 7000,
+          "finMs": 7180
+        },
+        {
+          "palabra": "tren",
+          "inicioMs": 7180,
+          "finMs": 7400
+        },
+        {
+          "palabra": "más",
+          "inicioMs": 7400,
+          "finMs": 7760
+        },
+        {
+          "palabra": "rápido",
+          "inicioMs": 7760,
+          "finMs": 7960
+        },
+        {
+          "palabra": "del",
+          "inicioMs": 7960,
+          "finMs": 8240
+        },
+        {
+          "palabra": "mundo",
+          "inicioMs": 8240,
+          "finMs": 8472
+        }
+      ]
+    },
+    {
+      "id": 9,
+      "texto": "La única desventaja es el costo: construir las vías magnéticas cuesta hasta diez veces más que las vías convencionales de acero.",
+      "icono": "Coins",
+      "colorIcono": "#FACC15",
+      "tituloVisual": "COSTO ELEVADO",
+      "composicionVisual": "plano_general",
+      "escenario": "laboratorio",
+      "layout": "narrativo",
+      "transicion": "zoom_in",
+      "efectosCamara": [
+        "drift"
+      ],
+      "palabrasClave": [
+        "costo elevado",
+        "diez veces más",
+        "vías convencionales"
+      ],
+      "personajes": [
+        {
+          "id": "ingeniero",
+          "posicion": {
+            "x": -160,
+            "y": 70
+          },
+          "escala": 1.05,
+          "orientacion": "derecha",
+          "prop": "coins",
+          "poseId": "presenting_object",
+          "expresion": "analytical",
+          "habla": true
+        }
+      ],
+      "duracionSegundos": 6.946,
+      "palabras": [
+        {
+          "palabra": "La",
+          "inicioMs": 0,
+          "finMs": 200
+        },
+        {
+          "palabra": "única",
+          "inicioMs": 200,
+          "finMs": 420
+        },
+        {
+          "palabra": "desventaja",
+          "inicioMs": 420,
+          "finMs": 1100
+        },
+        {
+          "palabra": "es",
+          "inicioMs": 1100,
+          "finMs": 1240
+        },
+        {
+          "palabra": "el",
+          "inicioMs": 1240,
+          "finMs": 1340
+        },
+        {
+          "palabra": "costo",
+          "inicioMs": 1340,
+          "finMs": 1820
+        },
+        {
+          "palabra": "construir",
+          "inicioMs": 1960,
+          "finMs": 2300
+        },
+        {
+          "palabra": "las",
+          "inicioMs": 2300,
+          "finMs": 2560
+        },
+        {
+          "palabra": "vías",
+          "inicioMs": 2560,
+          "finMs": 2840
+        },
+        {
+          "palabra": "magnéticas",
+          "inicioMs": 2840,
+          "finMs": 3380
+        },
+        {
+          "palabra": "cuesta",
+          "inicioMs": 3380,
+          "finMs": 3760
+        },
+        {
+          "palabra": "hasta",
+          "inicioMs": 3760,
+          "finMs": 4000
+        },
+        {
+          "palabra": "diez",
+          "inicioMs": 4000,
+          "finMs": 4240
+        },
+        {
+          "palabra": "veces",
+          "inicioMs": 4240,
+          "finMs": 4520
+        },
+        {
+          "palabra": "más",
+          "inicioMs": 4520,
+          "finMs": 4760
+        },
+        {
+          "palabra": "que",
+          "inicioMs": 4760,
+          "finMs": 4960
+        },
+        {
+          "palabra": "las",
+          "inicioMs": 4960,
+          "finMs": 5120
+        },
+        {
+          "palabra": "vías",
+          "inicioMs": 5120,
+          "finMs": 5400
+        },
+        {
+          "palabra": "convencionales",
+          "inicioMs": 5400,
+          "finMs": 6100
+        },
+        {
+          "palabra": "de",
+          "inicioMs": 6100,
+          "finMs": 6160
+        },
+        {
+          "palabra": "acero",
+          "inicioMs": 6160,
+          "finMs": 6480
+        }
+      ]
+    },
+    {
+      "id": 10,
+      "texto": "Pero la tecnología Maglev ya se usa en China y Japón, y en el futuro podría revolucionar el transporte aéreo con trenes que viajan a la velocidad del sonido.",
+      "icono": "Rocket",
+      "colorIcono": "#38BDF8",
+      "tituloVisual": "FUTURO DEL TRANSPORTE",
+      "composicionVisual": "plano_general",
+      "escenario": "calle",
+      "layout": "narrativo",
+      "transicion": "zoom_in",
+      "efectosCamara": [
+        "drift"
+      ],
+      "sfx": "sfx/sfx_whoosh.wav",
+      "volumenSfx": 0.2,
+      "palabrasClave": [
+        "China y Japón",
+        "revolucionar el transporte",
+        "velocidad del sonido"
+      ],
+      "personajes": [
+        {
+          "id": "ingeniero",
+          "posicion": {
+            "x": 0,
+            "y": 50
+          },
+          "escala": 1.15,
+          "orientacion": "derecha",
+          "prop": "trophy",
+          "poseId": "celebrating_arms_up",
+          "expresion": "eureka",
+          "habla": true
+        }
+      ],
+      "duracionSegundos": 8.338,
+      "palabras": [
+        {
+          "palabra": "Pero",
+          "inicioMs": 0,
+          "finMs": 220
+        },
+        {
+          "palabra": "la",
+          "inicioMs": 220,
+          "finMs": 340
+        },
+        {
+          "palabra": "tecnología",
+          "inicioMs": 340,
+          "finMs": 780
+        },
+        {
+          "palabra": "Maglev",
+          "inicioMs": 780,
+          "finMs": 1280
+        },
+        {
+          "palabra": "ya",
+          "inicioMs": 1280,
+          "finMs": 1460
+        },
+        {
+          "palabra": "se",
+          "inicioMs": 1460,
+          "finMs": 1600
+        },
+        {
+          "palabra": "usa",
+          "inicioMs": 1600,
+          "finMs": 1760
+        },
+        {
+          "palabra": "en",
+          "inicioMs": 1760,
+          "finMs": 1940
+        },
+        {
+          "palabra": "China",
+          "inicioMs": 1940,
+          "finMs": 2180
+        },
+        {
+          "palabra": "y",
+          "inicioMs": 2180,
+          "finMs": 2280
+        },
+        {
+          "palabra": "Japón",
+          "inicioMs": 2280,
+          "finMs": 2740
+        },
+        {
+          "palabra": "y",
+          "inicioMs": 2740,
+          "finMs": 3180
+        },
+        {
+          "palabra": "en",
+          "inicioMs": 3180,
+          "finMs": 3280
+        },
+        {
+          "palabra": "el",
+          "inicioMs": 3280,
+          "finMs": 3380
+        },
+        {
+          "palabra": "futuro",
+          "inicioMs": 3380,
+          "finMs": 3660
+        },
+        {
+          "palabra": "podría",
+          "inicioMs": 3660,
+          "finMs": 4040
+        },
+        {
+          "palabra": "revolucionar",
+          "inicioMs": 4040,
+          "finMs": 4680
+        },
+        {
+          "palabra": "el",
+          "inicioMs": 4680,
+          "finMs": 4820
+        },
+        {
+          "palabra": "transporte",
+          "inicioMs": 4820,
+          "finMs": 5400
+        },
+        {
+          "palabra": "aéreo",
+          "inicioMs": 5400,
+          "finMs": 5760
+        },
+        {
+          "palabra": "con",
+          "inicioMs": 5760,
+          "finMs": 5900
+        },
+        {
+          "palabra": "trenes",
+          "inicioMs": 5900,
+          "finMs": 6320
+        },
+        {
+          "palabra": "que",
+          "inicioMs": 6320,
+          "finMs": 6440
+        },
+        {
+          "palabra": "viajan",
+          "inicioMs": 6440,
+          "finMs": 6760
+        },
+        {
+          "palabra": "a",
+          "inicioMs": 6760,
+          "finMs": 6880
+        },
+        {
+          "palabra": "la",
+          "inicioMs": 6880,
+          "finMs": 6940
+        },
+        {
+          "palabra": "velocidad",
+          "inicioMs": 6940,
+          "finMs": 7240
+        },
+        {
+          "palabra": "del",
+          "inicioMs": 7240,
+          "finMs": 7500
+        },
+        {
+          "palabra": "sonido",
+          "inicioMs": 7500,
+          "finMs": 7860
+        }
+      ]
+    }
+  ]
+}
