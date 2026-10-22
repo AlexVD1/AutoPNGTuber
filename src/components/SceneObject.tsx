@@ -53,19 +53,21 @@ export const SceneObject: React.FC<SceneObjectProps> = ({ objeto, frame }) => {
       style={{
         left: 540 + finalX,
         top: 960 + finalY,
-        width: 140,
-        height: 140,
+        width: 220,
+        height: 220,
         transform: `translate(-50%, -50%) rotate(${animRot}deg) scale(${finalScale})`,
-        zIndex: objeto.capaZ ?? 15,
-        filter: "drop-shadow(6px 6px 0px #000000)",
+        zIndex: objeto.capaZ ?? 25,
+        filter: "drop-shadow(8px 8px 0px #000000)",
       }}
     >
       <svg
-        viewBox="-60 -60 120 120"
-        width="140"
-        height="140"
+        viewBox="-55 -55 110 110"
+        width="220"
+        height="220"
         style={{ overflow: "visible" }}
-        dangerouslySetInnerHTML={{ __html: propDef.svg }}
+        dangerouslySetInnerHTML={{
+          __html: "animatedSvg" in propDef && propDef.animatedSvg ? propDef.animatedSvg(frame) : propDef.svg,
+        }}
       />
     </div>
   );

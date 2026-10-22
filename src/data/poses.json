@@ -4,11 +4,11 @@
   "totales": {
     "posesCorporales": 68,
     "expresionesFaciales": 24,
-    "propsGenerales": 97,
+    "propsGenerales": 155,
     "propsFestivos": 123,
     "combinacionesCompuestas": 34,
     "combinacionesFestivas": 20,
-    "totalRecursos": 366
+    "totalRecursos": 424
   },
   "compatibilidadLegacy": {
     "normal": "standing_relaxed",
@@ -3746,6 +3746,1367 @@
         "agua",
         "piso",
         "gotas"
+      ],
+      "compatibleComposicion": true
+    },
+    {
+      "id": "prop_kidneys",
+      "propParamId": "kidneys",
+      "nombre": "Prop: Riñones humanos",
+      "categoria": "props",
+      "subcategoria": "educacion_ciencia",
+      "emocion": "any",
+      "accion": "both",
+      "propsAsociados": [
+        "kidneys"
+      ],
+      "ruta": "poses/props/prop_kidneys.svg",
+      "formato": "svg",
+      "etiquetas": [
+        "riñones",
+        "organo",
+        "cuerpo",
+        "filtro",
+        "orina",
+        "salud",
+        "biologia"
+      ],
+      "compatibleComposicion": true
+    },
+    {
+      "id": "prop_black_hole",
+      "propParamId": "black_hole",
+      "nombre": "Prop: Agujero Negro Cósmico",
+      "categoria": "props",
+      "subcategoria": "educacion_ciencia",
+      "emocion": "any",
+      "accion": "overhead",
+      "propsAsociados": [
+        "black_hole"
+      ],
+      "ruta": "poses/props/prop_black_hole.svg",
+      "formato": "svg",
+      "etiquetas": [
+        "agujero_negro",
+        "espacio",
+        "gravedad",
+        "singularidad",
+        "cosmos"
+      ],
+      "compatibleComposicion": true
+    },
+    {
+      "id": "prop_salt_crystal",
+      "propParamId": "salt_crystal",
+      "nombre": "Prop: Cristal de Sal Marina",
+      "categoria": "props",
+      "subcategoria": "educacion_ciencia",
+      "emocion": "any",
+      "accion": "right",
+      "propsAsociados": [
+        "salt_crystal"
+      ],
+      "ruta": "poses/props/prop_salt_crystal.svg",
+      "formato": "svg",
+      "etiquetas": [
+        "sal",
+        "cristal",
+        "quimica",
+        "sodio",
+        "cloro",
+        "mar"
+      ],
+      "compatibleComposicion": true
+    },
+    {
+      "id": "prop_shrinking_cell",
+      "propParamId": "shrinking_cell",
+      "nombre": "Prop: Célula Deshidratada",
+      "categoria": "props",
+      "subcategoria": "educacion_ciencia",
+      "emocion": "any",
+      "accion": "overhead",
+      "propsAsociados": [
+        "shrinking_cell"
+      ],
+      "ruta": "poses/props/prop_shrinking_cell.svg",
+      "formato": "svg",
+      "etiquetas": [
+        "celula",
+        "osmosis",
+        "deshidratacion",
+        "biologia"
+      ],
+      "compatibleComposicion": true
+    },
+    {
+      "id": "prop_spaceship",
+      "propParamId": "spaceship",
+      "nombre": "Prop: Nave Espacial Cósmica",
+      "categoria": "props",
+      "subcategoria": "tecnologia",
+      "emocion": "any",
+      "accion": "overhead",
+      "propsAsociados": [
+        "spaceship"
+      ],
+      "ruta": "poses/props/prop_spaceship.svg",
+      "formato": "svg",
+      "etiquetas": [
+        "nave",
+        "cohete",
+        "espacio",
+        "astronauta",
+        "cosmos"
+      ],
+      "compatibleComposicion": true
+    },
+    {
+      "id": "prop_cosmic_hourglass",
+      "propParamId": "cosmic_hourglass",
+      "nombre": "Prop: Reloj de Arena Cósmico",
+      "categoria": "props",
+      "subcategoria": "educacion_ciencia",
+      "emocion": "any",
+      "accion": "right",
+      "propsAsociados": [
+        "cosmic_hourglass"
+      ],
+      "ruta": "poses/props/prop_cosmic_hourglass.svg",
+      "formato": "svg",
+      "etiquetas": [
+        "reloj_arena",
+        "tiempo",
+        "relatividad",
+        "dilatacion"
+      ],
+      "compatibleComposicion": true
+    },
+    {
+      "id": "prop_singularity",
+      "propParamId": "singularity",
+      "nombre": "Prop: Singularidad Espaciotemporal",
+      "categoria": "props",
+      "subcategoria": "educacion_ciencia",
+      "emocion": "any",
+      "accion": "overhead",
+      "propsAsociados": [
+        "singularity"
+      ],
+      "ruta": "poses/props/prop_singularity.svg",
+      "formato": "svg",
+      "etiquetas": [
+        "singularidad",
+        "agujero_negro",
+        "gravedad",
+        "universo"
+      ],
+      "compatibleComposicion": true
+    },
+    {
+      "id": "prop_dolphin",
+      "propParamId": "dolphin",
+      "nombre": "Prop: Delfín marino",
+      "categoria": "props",
+      "subcategoria": "naturaleza_alimentos",
+      "emocion": "any",
+      "accion": "both",
+      "propsAsociados": [
+        "dolphin"
+      ],
+      "ruta": "poses/props/prop_dolphin.svg",
+      "formato": "svg",
+      "etiquetas": [
+        "delfin",
+        "mar",
+        "cetaceo",
+        "oceano",
+        "animal"
+      ],
+      "compatibleComposicion": true
+    },
+    {
+      "id": "prop_split_brain",
+      "propParamId": "split_brain",
+      "nombre": "Prop: Cerebro Unihemisférico",
+      "categoria": "props",
+      "subcategoria": "educacion_ciencia",
+      "emocion": "any",
+      "accion": "overhead",
+      "propsAsociados": [
+        "split_brain"
+      ],
+      "ruta": "poses/props/prop_split_brain.svg",
+      "formato": "svg",
+      "etiquetas": [
+        "cerebro",
+        "sueno",
+        "unihemisferico",
+        "mente",
+        "neurociencia"
+      ],
+      "compatibleComposicion": true
+    },
+    {
+      "id": "prop_shark_fin",
+      "propParamId": "shark_fin",
+      "nombre": "Prop: Aleta de Tiburón",
+      "categoria": "props",
+      "subcategoria": "naturaleza_alimentos",
+      "emocion": "any",
+      "accion": "right",
+      "propsAsociados": [
+        "shark_fin"
+      ],
+      "ruta": "poses/props/prop_shark_fin.svg",
+      "formato": "svg",
+      "etiquetas": [
+        "tiburon",
+        "aleta",
+        "depredador",
+        "peligro",
+        "mar"
+      ],
+      "compatibleComposicion": true
+    },
+    {
+      "id": "prop_sun_radiant",
+      "propParamId": "sun_radiant",
+      "nombre": "Prop: Sol Radiante",
+      "categoria": "props",
+      "subcategoria": "naturaleza_alimentos",
+      "emocion": "any",
+      "accion": "overhead",
+      "propsAsociados": [
+        "sun_radiant"
+      ],
+      "ruta": "poses/props/prop_sun_radiant.svg",
+      "formato": "svg",
+      "etiquetas": [
+        "sol",
+        "luz",
+        "dia",
+        "atardecer",
+        "cielo",
+        "calor"
+      ],
+      "compatibleComposicion": true
+    },
+    {
+      "id": "prop_prism_spectrum",
+      "propParamId": "prism_spectrum",
+      "nombre": "Prop: Prisma de Luz",
+      "categoria": "props",
+      "subcategoria": "educacion_ciencia",
+      "emocion": "any",
+      "accion": "right",
+      "propsAsociados": [
+        "prism_spectrum"
+      ],
+      "ruta": "poses/props/prop_prism_spectrum.svg",
+      "formato": "svg",
+      "etiquetas": [
+        "prisma",
+        "optica",
+        "arcoiris",
+        "luz",
+        "espectro",
+        "color"
+      ],
+      "compatibleComposicion": true
+    },
+    {
+      "id": "prop_moon_cratered",
+      "propParamId": "moon_cratered",
+      "nombre": "Prop: Luna Llena con Cráteres",
+      "categoria": "props",
+      "subcategoria": "educacion_ciencia",
+      "emocion": "any",
+      "accion": "overhead",
+      "propsAsociados": [
+        "moon_cratered"
+      ],
+      "ruta": "poses/props/prop_moon_cratered.svg",
+      "formato": "svg",
+      "etiquetas": [
+        "luna",
+        "luna_llena",
+        "espacio",
+        "astronomia",
+        "crater"
+      ],
+      "compatibleComposicion": true
+    },
+    {
+      "id": "prop_earth_axis",
+      "propParamId": "earth_axis",
+      "nombre": "Prop: Tierra con Eje de Inclinación",
+      "categoria": "props",
+      "subcategoria": "educacion_ciencia",
+      "emocion": "any",
+      "accion": "overhead",
+      "propsAsociados": [
+        "earth_axis"
+      ],
+      "ruta": "poses/props/prop_earth_axis.svg",
+      "formato": "svg",
+      "etiquetas": [
+        "tierra",
+        "eje",
+        "inclinacion",
+        "estaciones",
+        "planeta",
+        "clima"
+      ],
+      "compatibleComposicion": true
+    },
+    {
+      "id": "prop_mirror_neurons",
+      "propParamId": "mirror_neurons",
+      "nombre": "Prop: Neuronas Espejo Sinápticas",
+      "categoria": "props",
+      "subcategoria": "educacion_ciencia",
+      "emocion": "any",
+      "accion": "overhead",
+      "propsAsociados": [
+        "mirror_neurons"
+      ],
+      "ruta": "poses/props/prop_mirror_neurons.svg",
+      "formato": "svg",
+      "etiquetas": [
+        "neuronas",
+        "espejo",
+        "empatia",
+        "cerebro",
+        "neurociencia",
+        "sinapsis"
+      ],
+      "compatibleComposicion": true
+    },
+    {
+      "id": "prop_brain_radiator",
+      "propParamId": "brain_radiator",
+      "nombre": "Prop: Cerebro con Termorregulación",
+      "categoria": "props",
+      "subcategoria": "educacion_ciencia",
+      "emocion": "any",
+      "accion": "overhead",
+      "propsAsociados": [
+        "brain_radiator"
+      ],
+      "ruta": "poses/props/prop_brain_radiator.svg",
+      "formato": "svg",
+      "etiquetas": [
+        "cerebro",
+        "temperatura",
+        "enfriamiento",
+        "radiador",
+        "termoregulacion",
+        "bostezo"
+      ],
+      "compatibleComposicion": true
+    },
+    {
+      "id": "prop_temporal_lobe_glitch",
+      "propParamId": "temporal_lobe_glitch",
+      "nombre": "Prop: Desincronización Temporal Déjà Vu",
+      "categoria": "props",
+      "subcategoria": "educacion_ciencia",
+      "emocion": "any",
+      "accion": "overhead",
+      "propsAsociados": [
+        "temporal_lobe_glitch"
+      ],
+      "ruta": "poses/props/prop_temporal_lobe_glitch.svg",
+      "formato": "svg",
+      "etiquetas": [
+        "cerebro",
+        "deja_vu",
+        "tiempo",
+        "memoria",
+        "hipocampo",
+        "glitch",
+        "neurociencia"
+      ],
+      "compatibleComposicion": true
+    },
+    {
+      "id": "prop_cat_falling_physics",
+      "propParamId": "cat_falling_physics",
+      "nombre": "Prop: Gato Girando en el Aire (Reflejo de Enderezamiento)",
+      "categoria": "props",
+      "subcategoria": "educacion_ciencia",
+      "emocion": "any",
+      "accion": "overhead",
+      "propsAsociados": [
+        "cat_falling_physics"
+      ],
+      "ruta": "poses/props/prop_cat_falling_physics.svg",
+      "formato": "svg",
+      "etiquetas": [
+        "gato",
+        "caida",
+        "fisica",
+        "giro",
+        "reflejo",
+        "felino",
+        "inercia"
+      ],
+      "compatibleComposicion": true
+    },
+    {
+      "id": "prop_vestibular_system",
+      "propParamId": "vestibular_system",
+      "nombre": "Prop: Sistema Vestibular y Conductos Semicirculares",
+      "categoria": "props",
+      "subcategoria": "educacion_ciencia",
+      "emocion": "any",
+      "accion": "overhead",
+      "propsAsociados": [
+        "vestibular_system"
+      ],
+      "ruta": "poses/props/prop_vestibular_system.svg",
+      "formato": "svg",
+      "etiquetas": [
+        "oido",
+        "equilibrio",
+        "vestibular",
+        "gravedad",
+        "aceleracion",
+        "orientacion"
+      ],
+      "compatibleComposicion": true
+    },
+    {
+      "id": "prop_histatin_saliva",
+      "propParamId": "histatin_saliva",
+      "nombre": "Prop: Histatinas y Saliva Cicatrizante",
+      "categoria": "props",
+      "subcategoria": "educacion_ciencia",
+      "emocion": "any",
+      "accion": "overhead",
+      "propsAsociados": [
+        "histatin_saliva"
+      ],
+      "ruta": "poses/props/prop_histatin_saliva.svg",
+      "formato": "svg",
+      "etiquetas": [
+        "saliva",
+        "histatinas",
+        "boca",
+        "cicatrizacion",
+        "curacion",
+        "peptido"
+      ],
+      "compatibleComposicion": true
+    },
+    {
+      "id": "prop_oral_mucosa_vessels",
+      "propParamId": "oral_mucosa_vessels",
+      "nombre": "Prop: Mucosa Oral y Microvasos Sanguíneos",
+      "categoria": "props",
+      "subcategoria": "educacion_ciencia",
+      "emocion": "any",
+      "accion": "overhead",
+      "propsAsociados": [
+        "oral_mucosa_vessels"
+      ],
+      "ruta": "poses/props/prop_oral_mucosa_vessels.svg",
+      "formato": "svg",
+      "etiquetas": [
+        "mucosa",
+        "vasos",
+        "sangre",
+        "oxigeno",
+        "boca",
+        "tejido",
+        "celulas"
+      ],
+      "compatibleComposicion": true
+    },
+    {
+      "id": "prop_anglerfish_abyssal",
+      "propParamId": "anglerfish_abyssal",
+      "nombre": "Prop: Pez Rape Abisal Bioluminiscente",
+      "categoria": "props",
+      "subcategoria": "educacion_ciencia",
+      "emocion": "any",
+      "accion": "overhead",
+      "propsAsociados": [
+        "anglerfish_abyssal"
+      ],
+      "ruta": "poses/props/prop_anglerfish_abyssal.svg",
+      "formato": "svg",
+      "etiquetas": [
+        "pez",
+        "abisal",
+        "rape",
+        "marianas",
+        "profundo",
+        "oceano",
+        "bioluminiscente"
+      ],
+      "compatibleComposicion": true
+    },
+    {
+      "id": "prop_hydrostatic_pressure_gauge",
+      "propParamId": "hydrostatic_pressure_gauge",
+      "nombre": "Prop: Medidor de Presión Abisal 1100 ATM",
+      "categoria": "props",
+      "subcategoria": "educacion_ciencia",
+      "emocion": "any",
+      "accion": "overhead",
+      "propsAsociados": [
+        "hydrostatic_pressure_gauge"
+      ],
+      "ruta": "poses/props/prop_hydrostatic_pressure_gauge.svg",
+      "formato": "svg",
+      "etiquetas": [
+        "presion",
+        "fosa",
+        "marianas",
+        "atmosferas",
+        "profundidad",
+        "medidor",
+        "bar"
+      ],
+      "compatibleComposicion": true
+    },
+    {
+      "id": "prop_hair_follicle_erector",
+      "propParamId": "hair_follicle_erector",
+      "nombre": "Prop: Folículo Piloso y Músculo Erector",
+      "categoria": "props",
+      "subcategoria": "educacion_ciencia",
+      "emocion": "any",
+      "accion": "overhead",
+      "propsAsociados": [
+        "hair_follicle_erector"
+      ],
+      "ruta": "poses/props/prop_hair_follicle_erector.svg",
+      "formato": "svg",
+      "etiquetas": [
+        "piel",
+        "foliculo",
+        "vello",
+        "musculo",
+        "erector",
+        "piloereccion",
+        "gallina"
+      ],
+      "compatibleComposicion": true
+    },
+    {
+      "id": "prop_thermal_fur_barrier",
+      "propParamId": "thermal_fur_barrier",
+      "nombre": "Prop: Barrera Térmica de Pelaje Erizado",
+      "categoria": "props",
+      "subcategoria": "educacion_ciencia",
+      "emocion": "any",
+      "accion": "overhead",
+      "propsAsociados": [
+        "thermal_fur_barrier"
+      ],
+      "ruta": "poses/props/prop_thermal_fur_barrier.svg",
+      "formato": "svg",
+      "etiquetas": [
+        "pelaje",
+        "calor",
+        "aire",
+        "abrigo",
+        "aislante",
+        "evolucion",
+        "animal"
+      ],
+      "compatibleComposicion": true
+    },
+    {
+      "id": "prop_lichtenberg_fractal_skin",
+      "propParamId": "lichtenberg_fractal_skin",
+      "nombre": "Prop: Figuras de Lichtenberg en la Piel",
+      "categoria": "props",
+      "subcategoria": "educacion_ciencia",
+      "emocion": "any",
+      "accion": "overhead",
+      "propsAsociados": [
+        "lichtenberg_fractal_skin"
+      ],
+      "ruta": "poses/props/prop_lichtenberg_fractal_skin.svg",
+      "formato": "svg",
+      "etiquetas": [
+        "rayo",
+        "lichtenberg",
+        "piel",
+        "fractal",
+        "electricidad",
+        "cicatriz",
+        "arbol"
+      ],
+      "compatibleComposicion": true
+    },
+    {
+      "id": "prop_lightning_flashover",
+      "propParamId": "lightning_flashover",
+      "nombre": "Prop: Efecto Flashover de Descarga Superficial",
+      "categoria": "props",
+      "subcategoria": "educacion_ciencia",
+      "emocion": "any",
+      "accion": "overhead",
+      "propsAsociados": [
+        "lightning_flashover"
+      ],
+      "ruta": "poses/props/prop_lightning_flashover.svg",
+      "formato": "svg",
+      "etiquetas": [
+        "rayo",
+        "flashover",
+        "electricidad",
+        "impacto",
+        "descarga",
+        "corriente",
+        "humano"
+      ],
+      "compatibleComposicion": true
+    },
+    {
+      "id": "prop_depth_sonar_marker",
+      "propParamId": "depth_sonar_marker",
+      "nombre": "Prop: Sonda de Profundidad 0 a 11 km (marcador descendente)",
+      "categoria": "props",
+      "subcategoria": "educacion_ciencia",
+      "emocion": "any",
+      "accion": "overhead",
+      "propsAsociados": [
+        "depth_sonar_marker"
+      ],
+      "ruta": "poses/props/prop_depth_sonar_marker.svg",
+      "formato": "svg",
+      "etiquetas": [
+        "profundidad",
+        "fosa",
+        "marianas",
+        "oceano",
+        "descenso",
+        "sonda",
+        "kilometros"
+      ],
+      "compatibleComposicion": true
+    },
+    {
+      "id": "prop_pressure_gauge_bursting",
+      "propParamId": "pressure_gauge_bursting",
+      "nombre": "Prop: Manómetro al Límite (aguja vibrando, vidrio agrietado y fuga de vapor)",
+      "categoria": "props",
+      "subcategoria": "educacion_ciencia",
+      "emocion": "any",
+      "accion": "overhead",
+      "propsAsociados": [
+        "pressure_gauge_bursting"
+      ],
+      "ruta": "poses/props/prop_pressure_gauge_bursting.svg",
+      "formato": "svg",
+      "etiquetas": [
+        "presion",
+        "manometro",
+        "atmosferas",
+        "estallar",
+        "medidor",
+        "fosa",
+        "limite"
+      ],
+      "compatibleComposicion": true
+    },
+    {
+      "id": "prop_airliner_stack",
+      "propParamId": "airliner_stack",
+      "nombre": "Prop: Pila de Aviones Comerciales x50 aplastando un pecho",
+      "categoria": "props",
+      "subcategoria": "educacion_ciencia",
+      "emocion": "any",
+      "accion": "overhead",
+      "propsAsociados": [
+        "airliner_stack"
+      ],
+      "ruta": "poses/props/prop_airliner_stack.svg",
+      "formato": "svg",
+      "etiquetas": [
+        "avion",
+        "aviones",
+        "peso",
+        "toneladas",
+        "aplastar",
+        "presion",
+        "pecho"
+      ],
+      "compatibleComposicion": true
+    },
+    {
+      "id": "prop_lungs_compressing",
+      "propParamId": "lungs_compressing",
+      "nombre": "Prop: Pulmones Colapsando hasta el tamaño de una manzana",
+      "categoria": "props",
+      "subcategoria": "educacion_ciencia",
+      "emocion": "any",
+      "accion": "overhead",
+      "propsAsociados": [
+        "lungs_compressing"
+      ],
+      "ruta": "poses/props/prop_lungs_compressing.svg",
+      "formato": "svg",
+      "etiquetas": [
+        "pulmones",
+        "respirar",
+        "colapso",
+        "presion",
+        "gas",
+        "organo",
+        "manzana"
+      ],
+      "compatibleComposicion": true
+    },
+    {
+      "id": "prop_eardrum_rupture",
+      "propParamId": "eardrum_rupture",
+      "nombre": "Prop: Tímpano Rompiéndose por Presión de Agua",
+      "categoria": "props",
+      "subcategoria": "educacion_ciencia",
+      "emocion": "any",
+      "accion": "overhead",
+      "propsAsociados": [
+        "eardrum_rupture"
+      ],
+      "ruta": "poses/props/prop_eardrum_rupture.svg",
+      "formato": "svg",
+      "etiquetas": [
+        "oido",
+        "timpano",
+        "presion",
+        "agua",
+        "senos",
+        "dolor",
+        "barotrauma"
+      ],
+      "compatibleComposicion": true
+    },
+    {
+      "id": "prop_cell_water_pressure",
+      "propParamId": "cell_water_pressure",
+      "nombre": "Prop: Célula Comprimida con Moléculas de Agua Alteradas",
+      "categoria": "props",
+      "subcategoria": "educacion_ciencia",
+      "emocion": "any",
+      "accion": "overhead",
+      "propsAsociados": [
+        "cell_water_pressure"
+      ],
+      "ruta": "poses/props/prop_cell_water_pressure.svg",
+      "formato": "svg",
+      "etiquetas": [
+        "celula",
+        "agua",
+        "h2o",
+        "presion",
+        "tejido",
+        "biologia",
+        "molecula"
+      ],
+      "compatibleComposicion": true
+    },
+    {
+      "id": "prop_protein_deforming",
+      "propParamId": "protein_deforming",
+      "nombre": "Prop: Proteína Deformándose por Inserción de Agua",
+      "categoria": "props",
+      "subcategoria": "educacion_ciencia",
+      "emocion": "any",
+      "accion": "overhead",
+      "propsAsociados": [
+        "protein_deforming"
+      ],
+      "ruta": "poses/props/prop_protein_deforming.svg",
+      "formato": "svg",
+      "etiquetas": [
+        "proteina",
+        "agua",
+        "molecula",
+        "plegamiento",
+        "celula",
+        "bioquimica",
+        "deformar"
+      ],
+      "compatibleComposicion": true
+    },
+    {
+      "id": "prop_snailfish_gelatinous",
+      "propParamId": "snailfish_gelatinous",
+      "nombre": "Prop: Pez Caracol Gelatinoso de las Marianas",
+      "categoria": "props",
+      "subcategoria": "educacion_ciencia",
+      "emocion": "any",
+      "accion": "overhead",
+      "propsAsociados": [
+        "snailfish_gelatinous"
+      ],
+      "ruta": "poses/props/prop_snailfish_gelatinous.svg",
+      "formato": "svg",
+      "etiquetas": [
+        "pez",
+        "caracol",
+        "gelatinoso",
+        "cartilago",
+        "abisal",
+        "marianas",
+        "oceano"
+      ],
+      "compatibleComposicion": true
+    },
+    {
+      "id": "prop_tmao_molecule_shield",
+      "propParamId": "tmao_molecule_shield",
+      "nombre": "Prop: Molécula de Trimetilamina (TMAO) como Escudo Molecular",
+      "categoria": "props",
+      "subcategoria": "educacion_ciencia",
+      "emocion": "any",
+      "accion": "overhead",
+      "propsAsociados": [
+        "tmao_molecule_shield"
+      ],
+      "ruta": "poses/props/prop_tmao_molecule_shield.svg",
+      "formato": "svg",
+      "etiquetas": [
+        "trimetilamina",
+        "tmao",
+        "molecula",
+        "escudo",
+        "proteina",
+        "quimica",
+        "abisal"
+      ],
+      "compatibleComposicion": true
+    },
+    {
+      "id": "prop_bathyscaphe_explorer",
+      "propParamId": "bathyscaphe_explorer",
+      "nombre": "Prop: Batiscafo Explorador con Foco y Hélice",
+      "categoria": "props",
+      "subcategoria": "historia_exploracion",
+      "emocion": "any",
+      "accion": "overhead",
+      "propsAsociados": [
+        "bathyscaphe_explorer"
+      ],
+      "ruta": "poses/props/prop_bathyscaphe_explorer.svg",
+      "formato": "svg",
+      "etiquetas": [
+        "batiscafo",
+        "submarino",
+        "explorar",
+        "oceano",
+        "abismo",
+        "trieste",
+        "profundidad"
+      ],
+      "compatibleComposicion": true
+    },
+    {
+      "id": "prop_water_glass",
+      "propParamId": "water_glass",
+      "nombre": "Prop: Vaso de Agua Cristalina con Hielo",
+      "categoria": "props",
+      "subcategoria": "vida_cotidiana",
+      "emocion": "any",
+      "accion": "right",
+      "propsAsociados": [
+        "water_glass"
+      ],
+      "ruta": "poses/props/prop_water_glass.svg",
+      "formato": "svg",
+      "etiquetas": [
+        "vaso",
+        "agua",
+        "beber",
+        "h2o",
+        "cristal",
+        "sed",
+        "hielo",
+        "mar"
+      ],
+      "compatibleComposicion": true
+    },
+    {
+      "id": "prop_glass_water",
+      "propParamId": "glass_water",
+      "nombre": "Prop: Vaso de Agua Cristalina con Hielo",
+      "categoria": "props",
+      "subcategoria": "vida_cotidiana",
+      "emocion": "any",
+      "accion": "right",
+      "propsAsociados": [
+        "glass_water"
+      ],
+      "ruta": "poses/props/prop_glass_water.svg",
+      "formato": "svg",
+      "etiquetas": [
+        "vaso",
+        "agua",
+        "beber",
+        "h2o",
+        "cristal",
+        "sed",
+        "hielo",
+        "mar"
+      ],
+      "compatibleComposicion": true
+    },
+    {
+      "id": "prop_life_buoy",
+      "propParamId": "life_buoy",
+      "nombre": "Prop: Salvavidas Náutico",
+      "categoria": "props",
+      "subcategoria": "historia_exploracion",
+      "emocion": "any",
+      "accion": "overhead",
+      "propsAsociados": [
+        "life_buoy"
+      ],
+      "ruta": "poses/props/prop_life_buoy.svg",
+      "formato": "svg",
+      "etiquetas": [
+        "salvavidas",
+        "naufrago",
+        "mar",
+        "oceano",
+        "rescate",
+        "barco"
+      ],
+      "compatibleComposicion": true
+    },
+    {
+      "id": "prop_lifebuoy",
+      "propParamId": "lifebuoy",
+      "nombre": "Prop: Salvavidas Náutico",
+      "categoria": "props",
+      "subcategoria": "historia_exploracion",
+      "emocion": "any",
+      "accion": "overhead",
+      "propsAsociados": [
+        "lifebuoy"
+      ],
+      "ruta": "poses/props/prop_lifebuoy.svg",
+      "formato": "svg",
+      "etiquetas": [
+        "salvavidas",
+        "naufrago",
+        "mar",
+        "oceano",
+        "rescate",
+        "barco"
+      ],
+      "compatibleComposicion": true
+    },
+    {
+      "id": "prop_cosmic_lock",
+      "propParamId": "cosmic_lock",
+      "nombre": "Prop: Candado Cósmico del Horizonte de Sucesos",
+      "categoria": "props",
+      "subcategoria": "educacion_ciencia",
+      "emocion": "any",
+      "accion": "right",
+      "propsAsociados": [
+        "cosmic_lock"
+      ],
+      "ruta": "poses/props/prop_cosmic_lock.svg",
+      "formato": "svg",
+      "etiquetas": [
+        "candado",
+        "bloqueo",
+        "lock",
+        "horizonte",
+        "seguridad",
+        "agujero_negro"
+      ],
+      "compatibleComposicion": true
+    },
+    {
+      "id": "prop_padlock",
+      "propParamId": "padlock",
+      "nombre": "Prop: Candado Cósmico del Horizonte de Sucesos",
+      "categoria": "props",
+      "subcategoria": "educacion_ciencia",
+      "emocion": "any",
+      "accion": "right",
+      "propsAsociados": [
+        "padlock"
+      ],
+      "ruta": "poses/props/prop_padlock.svg",
+      "formato": "svg",
+      "etiquetas": [
+        "candado",
+        "bloqueo",
+        "lock",
+        "horizonte",
+        "seguridad",
+        "agujero_negro"
+      ],
+      "compatibleComposicion": true
+    },
+    {
+      "id": "prop_bionic_ant",
+      "propParamId": "bionic_ant",
+      "nombre": "Prop: Hormiga Heroica Neo-Brutalista",
+      "categoria": "props",
+      "subcategoria": "educacion_ciencia",
+      "emocion": "any",
+      "accion": "right",
+      "propsAsociados": [
+        "bionic_ant"
+      ],
+      "ruta": "poses/props/prop_bionic_ant.svg",
+      "formato": "svg",
+      "etiquetas": [
+        "hormiga",
+        "ant",
+        "insecto",
+        "quitina",
+        "resistencia",
+        "caida",
+        "bicho"
+      ],
+      "compatibleComposicion": true
+    },
+    {
+      "id": "prop_ant_hero",
+      "propParamId": "ant_hero",
+      "nombre": "Prop: Hormiga Heroica Neo-Brutalista",
+      "categoria": "props",
+      "subcategoria": "educacion_ciencia",
+      "emocion": "any",
+      "accion": "right",
+      "propsAsociados": [
+        "ant_hero"
+      ],
+      "ruta": "poses/props/prop_ant_hero.svg",
+      "formato": "svg",
+      "etiquetas": [
+        "hormiga",
+        "ant",
+        "insecto",
+        "quitina",
+        "resistencia",
+        "caida",
+        "bicho"
+      ],
+      "compatibleComposicion": true
+    },
+    {
+      "id": "prop_cube_physics",
+      "propParamId": "cube_physics",
+      "nombre": "Prop: Cubo Ley Cuadrado-Cúbica (Área vs Masa)",
+      "categoria": "props",
+      "subcategoria": "educacion_ciencia",
+      "emocion": "any",
+      "accion": "overhead",
+      "propsAsociados": [
+        "cube_physics"
+      ],
+      "ruta": "poses/props/prop_cube_physics.svg",
+      "formato": "svg",
+      "etiquetas": [
+        "cubo",
+        "fisica",
+        "ley",
+        "escala",
+        "volumen",
+        "area",
+        "haldane",
+        "masa"
+      ],
+      "compatibleComposicion": true
+    },
+    {
+      "id": "prop_terminal_velocity_shield",
+      "propParamId": "terminal_velocity_shield",
+      "nombre": "Prop: Escudo de Velocidad Terminal 6.4 km/h",
+      "categoria": "props",
+      "subcategoria": "educacion_ciencia",
+      "emocion": "any",
+      "accion": "overhead",
+      "propsAsociados": [
+        "terminal_velocity_shield"
+      ],
+      "ruta": "poses/props/prop_terminal_velocity_shield.svg",
+      "formato": "svg",
+      "etiquetas": [
+        "velocidad",
+        "terminal",
+        "paracaidas",
+        "aire",
+        "resistencia",
+        "freno",
+        "caida"
+      ],
+      "compatibleComposicion": true
+    },
+    {
+      "id": "prop_honey_pot",
+      "propParamId": "honey_pot",
+      "nombre": "Prop: Vasija de Miel Dorada Inmortal",
+      "categoria": "props",
+      "subcategoria": "educacion_ciencia",
+      "emocion": "any",
+      "accion": "right",
+      "propsAsociados": [
+        "honey_pot"
+      ],
+      "ruta": "poses/props/prop_honey_pot.svg",
+      "formato": "svg",
+      "etiquetas": [
+        "miel",
+        "vasija",
+        "egipto",
+        "antiguo",
+        "alimento",
+        "inmortal",
+        "dulce"
+      ],
+      "compatibleComposicion": true
+    },
+    {
+      "id": "prop_mars_helmet",
+      "propParamId": "mars_helmet",
+      "nombre": "Prop: Casco de Astronauta en Marte (Ebullición Saliva)",
+      "categoria": "props",
+      "subcategoria": "educacion_ciencia",
+      "emocion": "any",
+      "accion": "overhead",
+      "propsAsociados": [
+        "mars_helmet"
+      ],
+      "ruta": "poses/props/prop_mars_helmet.svg",
+      "formato": "svg",
+      "etiquetas": [
+        "casco",
+        "marte",
+        "astronauta",
+        "presion",
+        "ebullicion",
+        "armstrong",
+        "vacio"
+      ],
+      "compatibleComposicion": true
+    },
+    {
+      "id": "prop_ice_crystal_hex",
+      "propParamId": "ice_crystal_hex",
+      "nombre": "Prop: Red Hexagonal de Hielo Flotante",
+      "categoria": "props",
+      "subcategoria": "educacion_ciencia",
+      "emocion": "any",
+      "accion": "overhead",
+      "propsAsociados": [
+        "ice_crystal_hex"
+      ],
+      "ruta": "poses/props/prop_ice_crystal_hex.svg",
+      "formato": "svg",
+      "etiquetas": [
+        "hielo",
+        "cristal",
+        "hexagonal",
+        "agua",
+        "flotar",
+        "densidad",
+        "molecula"
+      ],
+      "compatibleComposicion": true
+    },
+    {
+      "id": "prop_bullet_ant",
+      "propParamId": "bullet_ant",
+      "nombre": "Prop: Hormiga Bala y Neurotoxina (Dolor 4.0+)",
+      "categoria": "props",
+      "subcategoria": "educacion_ciencia",
+      "emocion": "any",
+      "accion": "right",
+      "propsAsociados": [
+        "bullet_ant"
+      ],
+      "ruta": "poses/props/prop_bullet_ant.svg",
+      "formato": "svg",
+      "etiquetas": [
+        "hormiga",
+        "bala",
+        "dolor",
+        "schmidt",
+        "aguijon",
+        "veneno",
+        "neurotoxina"
+      ],
+      "compatibleComposicion": true
+    },
+    {
+      "id": "prop_chameleon_hero",
+      "propParamId": "chameleon_hero",
+      "nombre": "Prop: Camaleón y Cristales Fotónicos",
+      "categoria": "props",
+      "subcategoria": "educacion_ciencia",
+      "emocion": "any",
+      "accion": "right",
+      "propsAsociados": [
+        "chameleon_hero"
+      ],
+      "ruta": "poses/props/prop_chameleon_hero.svg",
+      "formato": "svg",
+      "etiquetas": [
+        "camaleon",
+        "color",
+        "cristales",
+        "fotonica",
+        "reptil",
+        "nanocristales"
+      ],
+      "compatibleComposicion": true
+    },
+    {
+      "id": "prop_photonic_crystals",
+      "propParamId": "photonic_crystals",
+      "nombre": "Prop: Red de Nanocristales Fotónicos de Guanina",
+      "categoria": "props",
+      "subcategoria": "educacion_ciencia",
+      "emocion": "any",
+      "accion": "right",
+      "propsAsociados": [
+        "photonic_crystals"
+      ],
+      "ruta": "poses/props/prop_photonic_crystals.svg",
+      "formato": "svg",
+      "etiquetas": [
+        "cristales",
+        "fotonica",
+        "guanina",
+        "nanocristales",
+        "iridoforo",
+        "optica",
+        "color",
+        "longitud_onda"
+      ],
+      "compatibleComposicion": true
+    },
+    {
+      "id": "prop_tardigrade_hero",
+      "propParamId": "tardigrade_hero",
+      "nombre": "Prop: Tardígrado y Criptobiosis Inmortal",
+      "categoria": "props",
+      "subcategoria": "educacion_ciencia",
+      "emocion": "any",
+      "accion": "right",
+      "propsAsociados": [
+        "tardigrade_hero"
+      ],
+      "ruta": "poses/props/prop_tardigrade_hero.svg",
+      "formato": "svg",
+      "etiquetas": [
+        "tardigrado",
+        "oso_agua",
+        "criptobiosis",
+        "biovidrio",
+        "inmortal",
+        "vacio",
+        "radiacion"
+      ],
+      "compatibleComposicion": true
+    },
+    {
+      "id": "prop_pistol_shrimp_hero",
+      "propParamId": "pistol_shrimp_hero",
+      "nombre": "Prop: Camarón Pistola y Burbuja de Plasma (4,700°C)",
+      "categoria": "props",
+      "subcategoria": "educacion_ciencia",
+      "emocion": "any",
+      "accion": "right",
+      "propsAsociados": [
+        "pistol_shrimp_hero"
+      ],
+      "ruta": "poses/props/prop_pistol_shrimp_hero.svg",
+      "formato": "svg",
+      "etiquetas": [
+        "camaron_pistola",
+        "cavitacion",
+        "plasma",
+        "sonoluminiscencia",
+        "onda_choque",
+        "calor_solar"
+      ],
+      "compatibleComposicion": true
+    },
+    {
+      "id": "prop_relativistic_clock",
+      "propParamId": "relativistic_clock",
+      "nombre": "Prop: Reloj Relativista: Núcleo vs Superficie",
+      "categoria": "props",
+      "subcategoria": "educacion_ciencia",
+      "emocion": "any",
+      "accion": "overhead",
+      "propsAsociados": [
+        "relativistic_clock"
+      ],
+      "ruta": "poses/props/prop_relativistic_clock.svg",
+      "formato": "svg",
+      "etiquetas": [
+        "reloj",
+        "relatividad",
+        "tiempo",
+        "gravedad",
+        "dilatacion",
+        "einstein",
+        "nucleo_tierra"
+      ],
+      "compatibleComposicion": true
+    },
+    {
+      "id": "prop_mycelium_network",
+      "propParamId": "mycelium_network",
+      "nombre": "Prop: Red de Micelio Fúngico (Wood Wide Web)",
+      "categoria": "props",
+      "subcategoria": "naturaleza_alimentos",
+      "emocion": "any",
+      "accion": "overhead",
+      "propsAsociados": [
+        "mycelium_network"
+      ],
+      "ruta": "poses/props/prop_mycelium_network.svg",
+      "formato": "svg",
+      "etiquetas": [
+        "micelio",
+        "bosque",
+        "arboles",
+        "wood_wide_web",
+        "hongos",
+        "raices",
+        "comunicacion"
+      ],
+      "compatibleComposicion": true
+    },
+    {
+      "id": "prop_relativistic_rocket",
+      "propParamId": "relativistic_rocket",
+      "nombre": "Prop: Nave Relativista a 0.99c (Contracción de Lorentz)",
+      "categoria": "props",
+      "subcategoria": "tecnologia",
+      "emocion": "any",
+      "accion": "overhead",
+      "propsAsociados": [
+        "relativistic_rocket"
+      ],
+      "ruta": "poses/props/prop_relativistic_rocket.svg",
+      "formato": "svg",
+      "etiquetas": [
+        "cohete",
+        "nave",
+        "espacio",
+        "relatividad",
+        "lorentz",
+        "velocidad_luz",
+        "gemelos"
       ],
       "compatibleComposicion": true
     },

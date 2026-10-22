@@ -1,0 +1,1688 @@
+{
+  "meta": {
+    "id": "agua_mar_deshidratacion",
+    "slug": "agua_mar_deshidratacion",
+    "temaResumen": "¿Por qué no podemos tomar agua de mar para sobrevivir?"
+  },
+  "escenas": [
+    {
+      "id": 1,
+      "texto": "¿Sabías por qué tomar agua de mar puede matarte de sed en lugar de salvarte la vida?",
+      "icono": "Waves",
+      "colorIcono": "#0284C7",
+      "tituloVisual": "TRAMPA MORTAL",
+      "composicionVisual": "plano_general",
+      "escenario": "mar_abierto",
+      "layout": "narrativo",
+      "transicion": "zoom_in",
+      "efectosCamara": [
+        "drift"
+      ],
+      "sfx": "sfx/sfx_tension_riser.wav",
+      "volumenSfx": 0.22,
+      "elementosNarrativos": [
+        {
+          "tipo": "giant_waves"
+        }
+      ],
+      "personajes": [
+        {
+          "id": "narrador",
+          "posicion": {
+            "x": -240,
+            "y": 40
+          },
+          "escala": 1,
+          "orientacion": "derecha",
+          "prop": "water_glass",
+          "acciones": [
+            {
+              "tipo": "caminar_hacia",
+              "desdeX": -300,
+              "haciaX": -80
+            }
+          ],
+          "habla": true
+        }
+      ],
+      "objetos": [
+        {
+          "id": "cristal_sal_intro",
+          "propId": "salt_crystal",
+          "posicion": {
+            "x": 260,
+            "y": -80
+          },
+          "escala": 1.4,
+          "animacion": {
+            "tipo": "vibrar"
+          }
+        }
+      ],
+      "palabrasClave": [
+        "agua de mar",
+        "matarte de sed",
+        "salvarte la vida"
+      ],
+      "duracionSegundos": 4.258,
+      "palabras": [
+        {
+          "palabra": "Sabías",
+          "inicioMs": 0,
+          "finMs": 400
+        },
+        {
+          "palabra": "por",
+          "inicioMs": 400,
+          "finMs": 560
+        },
+        {
+          "palabra": "qué",
+          "inicioMs": 560,
+          "finMs": 700
+        },
+        {
+          "palabra": "tomar",
+          "inicioMs": 700,
+          "finMs": 900
+        },
+        {
+          "palabra": "agua",
+          "inicioMs": 900,
+          "finMs": 1100
+        },
+        {
+          "palabra": "de",
+          "inicioMs": 1100,
+          "finMs": 1220
+        },
+        {
+          "palabra": "mar",
+          "inicioMs": 1220,
+          "finMs": 1400
+        },
+        {
+          "palabra": "puede",
+          "inicioMs": 1400,
+          "finMs": 1640
+        },
+        {
+          "palabra": "matarte",
+          "inicioMs": 1640,
+          "finMs": 2080
+        },
+        {
+          "palabra": "de",
+          "inicioMs": 2080,
+          "finMs": 2220
+        },
+        {
+          "palabra": "sed",
+          "inicioMs": 2220,
+          "finMs": 2420
+        },
+        {
+          "palabra": "en",
+          "inicioMs": 2420,
+          "finMs": 2660
+        },
+        {
+          "palabra": "lugar",
+          "inicioMs": 2660,
+          "finMs": 2860
+        },
+        {
+          "palabra": "de",
+          "inicioMs": 2860,
+          "finMs": 3040
+        },
+        {
+          "palabra": "salvarte",
+          "inicioMs": 3040,
+          "finMs": 3420
+        },
+        {
+          "palabra": "la",
+          "inicioMs": 3420,
+          "finMs": 3560
+        },
+        {
+          "palabra": "vida",
+          "inicioMs": 3560,
+          "finMs": 3760
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "texto": "Imagina estar perdido en medio del océano, rodeado de millones de litros de agua cristalina sin poder beber una sola gota.",
+      "icono": "Compass",
+      "colorIcono": "#0EA5E9",
+      "tituloVisual": "EN EL OCÉANO",
+      "composicionVisual": "plano_general",
+      "escenario": "mar_abierto",
+      "layout": "narrativo",
+      "transicion": "whip_right",
+      "efectosCamara": [
+        "drift"
+      ],
+      "elementosNarrativos": [
+        {
+          "tipo": "giant_waves"
+        }
+      ],
+      "personajes": [
+        {
+          "id": "naufrago",
+          "posicion": {
+            "x": -60,
+            "y": 50
+          },
+          "escala": 1.05,
+          "orientacion": "derecha",
+          "poseId": "looking_up_pose",
+          "expresion": "worried",
+          "prop": "compass",
+          "habla": true
+        }
+      ],
+      "objetos": [
+        {
+          "id": "salvavidas",
+          "propId": "life_buoy",
+          "posicion": {
+            "x": 250,
+            "y": 90
+          },
+          "escala": 1.35,
+          "animacion": {
+            "tipo": "flotar"
+          }
+        }
+      ],
+      "palabrasClave": [
+        "perdido",
+        "océano",
+        "millones de litros",
+        "sin poder beber"
+      ],
+      "duracionSegundos": 5.53,
+      "palabras": [
+        {
+          "palabra": "Imagina",
+          "inicioMs": 0,
+          "finMs": 440
+        },
+        {
+          "palabra": "estar",
+          "inicioMs": 440,
+          "finMs": 600
+        },
+        {
+          "palabra": "perdido",
+          "inicioMs": 600,
+          "finMs": 1000
+        },
+        {
+          "palabra": "en",
+          "inicioMs": 1000,
+          "finMs": 1100
+        },
+        {
+          "palabra": "medio",
+          "inicioMs": 1100,
+          "finMs": 1240
+        },
+        {
+          "palabra": "del",
+          "inicioMs": 1240,
+          "finMs": 1380
+        },
+        {
+          "palabra": "océano",
+          "inicioMs": 1380,
+          "finMs": 1820
+        },
+        {
+          "palabra": "rodeado",
+          "inicioMs": 1920,
+          "finMs": 2220
+        },
+        {
+          "palabra": "de",
+          "inicioMs": 2220,
+          "finMs": 2340
+        },
+        {
+          "palabra": "millones",
+          "inicioMs": 2340,
+          "finMs": 2540
+        },
+        {
+          "palabra": "de",
+          "inicioMs": 2540,
+          "finMs": 2780
+        },
+        {
+          "palabra": "litros",
+          "inicioMs": 2780,
+          "finMs": 3020
+        },
+        {
+          "palabra": "de",
+          "inicioMs": 3020,
+          "finMs": 3120
+        },
+        {
+          "palabra": "agua",
+          "inicioMs": 3120,
+          "finMs": 3220
+        },
+        {
+          "palabra": "cristalina",
+          "inicioMs": 3220,
+          "finMs": 3720
+        },
+        {
+          "palabra": "sin",
+          "inicioMs": 3720,
+          "finMs": 3860
+        },
+        {
+          "palabra": "poder",
+          "inicioMs": 3860,
+          "finMs": 4100
+        },
+        {
+          "palabra": "beber",
+          "inicioMs": 4100,
+          "finMs": 4300
+        },
+        {
+          "palabra": "una",
+          "inicioMs": 4300,
+          "finMs": 4480
+        },
+        {
+          "palabra": "sola",
+          "inicioMs": 4480,
+          "finMs": 4660
+        },
+        {
+          "palabra": "gota",
+          "inicioMs": 4660,
+          "finMs": 5060
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "texto": "A simple vista parece agua normal, pero contiene una concentración masiva de casi treinta y cinco gramos de sal por cada litro.",
+      "icono": "Beaker",
+      "colorIcono": "#38BDF8",
+      "tituloVisual": "35G POR LITRO",
+      "composicionVisual": "plano_general",
+      "escenario": "laboratorio",
+      "layout": "narrativo",
+      "transicion": "corte",
+      "efectosCamara": [
+        "drift"
+      ],
+      "personajes": [
+        {
+          "id": "cientifico",
+          "posicion": {
+            "x": -150,
+            "y": 30
+          },
+          "escala": 1,
+          "orientacion": "derecha",
+          "poseId": "presenting_object",
+          "expresion": "analytical",
+          "prop": "flask",
+          "habla": true
+        }
+      ],
+      "objetos": [
+        {
+          "id": "molecula_sal_lab",
+          "propId": "salt_crystal",
+          "posicion": {
+            "x": 250,
+            "y": -70
+          },
+          "escala": 1.5,
+          "animacion": {
+            "tipo": "vibrar"
+          }
+        }
+      ],
+      "palabrasClave": [
+        "treinta y cinco gramos",
+        "sal marina",
+        "cada litro"
+      ],
+      "duracionSegundos": 6.37,
+      "palabras": [
+        {
+          "palabra": "A",
+          "inicioMs": 0,
+          "finMs": 180
+        },
+        {
+          "palabra": "simple",
+          "inicioMs": 180,
+          "finMs": 460
+        },
+        {
+          "palabra": "vista",
+          "inicioMs": 460,
+          "finMs": 760
+        },
+        {
+          "palabra": "parece",
+          "inicioMs": 760,
+          "finMs": 1000
+        },
+        {
+          "palabra": "agua",
+          "inicioMs": 1000,
+          "finMs": 1280
+        },
+        {
+          "palabra": "normal",
+          "inicioMs": 1280,
+          "finMs": 1660
+        },
+        {
+          "palabra": "pero",
+          "inicioMs": 1840,
+          "finMs": 1940
+        },
+        {
+          "palabra": "contiene",
+          "inicioMs": 1940,
+          "finMs": 2340
+        },
+        {
+          "palabra": "una",
+          "inicioMs": 2340,
+          "finMs": 2500
+        },
+        {
+          "palabra": "concentración",
+          "inicioMs": 2500,
+          "finMs": 3060
+        },
+        {
+          "palabra": "masiva",
+          "inicioMs": 3060,
+          "finMs": 3440
+        },
+        {
+          "palabra": "de",
+          "inicioMs": 3440,
+          "finMs": 3580
+        },
+        {
+          "palabra": "casi",
+          "inicioMs": 3580,
+          "finMs": 3780
+        },
+        {
+          "palabra": "treinta",
+          "inicioMs": 3780,
+          "finMs": 4400
+        },
+        {
+          "palabra": "y",
+          "inicioMs": 4400,
+          "finMs": 4800
+        },
+        {
+          "palabra": "cinco",
+          "inicioMs": 4800,
+          "finMs": 4920
+        },
+        {
+          "palabra": "gramos",
+          "inicioMs": 4920,
+          "finMs": 5100
+        },
+        {
+          "palabra": "de",
+          "inicioMs": 5100,
+          "finMs": 5320
+        },
+        {
+          "palabra": "sal",
+          "inicioMs": 5320,
+          "finMs": 5520
+        },
+        {
+          "palabra": "por",
+          "inicioMs": 5520,
+          "finMs": 5900
+        },
+        {
+          "palabra": "cada",
+          "inicioMs": 5900,
+          "finMs": 6010
+        },
+        {
+          "palabra": "litro",
+          "inicioMs": 5900,
+          "finMs": 6010
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "texto": "Nuestros riñones son los filtros biológicos más eficientes del cuerpo, pero tienen un límite fisiológico muy estricto.",
+      "icono": "Activity",
+      "colorIcono": "#10B981",
+      "tituloVisual": "FILTRO BIOLÓGICO",
+      "composicionVisual": "plano_general",
+      "escenario": "interior_cuerpo",
+      "layout": "narrativo",
+      "transicion": "whip_left",
+      "efectosCamara": [
+        "drift"
+      ],
+      "personajes": [
+        {
+          "id": "explicador",
+          "posicion": {
+            "x": -150,
+            "y": 25
+          },
+          "escala": 1,
+          "orientacion": "derecha",
+          "poseId": "explaining_both_hands",
+          "expresion": "talking_enthusiastic",
+          "acciones": [
+            {
+              "tipo": "mirar_y_reaccionar"
+            }
+          ],
+          "habla": true
+        }
+      ],
+      "objetos": [
+        {
+          "id": "rinones_organo_escena",
+          "propId": "kidneys",
+          "posicion": {
+            "x": 240,
+            "y": -60
+          },
+          "escala": 1.55,
+          "animacion": {
+            "tipo": "pulso"
+          }
+        }
+      ],
+      "palabrasClave": [
+        "riñones",
+        "filtros biológicos",
+        "límite estricto"
+      ],
+      "duracionSegundos": 6.106,
+      "palabras": [
+        {
+          "palabra": "Nuestros",
+          "inicioMs": 0,
+          "finMs": 420
+        },
+        {
+          "palabra": "riñones",
+          "inicioMs": 420,
+          "finMs": 800
+        },
+        {
+          "palabra": "son",
+          "inicioMs": 800,
+          "finMs": 960
+        },
+        {
+          "palabra": "los",
+          "inicioMs": 960,
+          "finMs": 1080
+        },
+        {
+          "palabra": "filtros",
+          "inicioMs": 1080,
+          "finMs": 1360
+        },
+        {
+          "palabra": "biológicos",
+          "inicioMs": 1360,
+          "finMs": 1900
+        },
+        {
+          "palabra": "más",
+          "inicioMs": 1900,
+          "finMs": 2060
+        },
+        {
+          "palabra": "eficientes",
+          "inicioMs": 2060,
+          "finMs": 2560
+        },
+        {
+          "palabra": "del",
+          "inicioMs": 2560,
+          "finMs": 2760
+        },
+        {
+          "palabra": "cuerpo",
+          "inicioMs": 2760,
+          "finMs": 3120
+        },
+        {
+          "palabra": "pero",
+          "inicioMs": 3240,
+          "finMs": 3340
+        },
+        {
+          "palabra": "tienen",
+          "inicioMs": 3340,
+          "finMs": 3580
+        },
+        {
+          "palabra": "un",
+          "inicioMs": 3580,
+          "finMs": 3760
+        },
+        {
+          "palabra": "límite",
+          "inicioMs": 3760,
+          "finMs": 4060
+        },
+        {
+          "palabra": "fisiológico",
+          "inicioMs": 4060,
+          "finMs": 4760
+        },
+        {
+          "palabra": "muy",
+          "inicioMs": 4760,
+          "finMs": 5000
+        },
+        {
+          "palabra": "estricto",
+          "inicioMs": 5000,
+          "finMs": 5640
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "texto": "La sangre humana tiene una concentración de sal de apenas el cero punto nueve por ciento, cuatro veces menor que el mar.",
+      "icono": "Droplets",
+      "colorIcono": "#06B6D4",
+      "tituloVisual": "SANGRE VS MAR",
+      "composicionVisual": "cifras_concepto",
+      "escenario": "interior_cuerpo",
+      "layout": "narrativo",
+      "transicion": "corte",
+      "efectosCamara": [
+        "drift"
+      ],
+      "personajes": [
+        {
+          "id": "comparador",
+          "posicion": {
+            "x": -160,
+            "y": 30
+          },
+          "escala": 1,
+          "orientacion": "derecha",
+          "poseId": "comparing_two_objects",
+          "expresion": "analytical",
+          "prop": "test_tube",
+          "habla": true
+        }
+      ],
+      "objetos": [
+        {
+          "id": "cristal_sal_sangre",
+          "propId": "salt_crystal",
+          "posicion": {
+            "x": 230,
+            "y": -80
+          },
+          "escala": 1.4,
+          "animacion": {
+            "tipo": "pulso"
+          }
+        }
+      ],
+      "palabrasClave": [
+        "cero punto nueve",
+        "cuatro veces menor",
+        "sal marina"
+      ],
+      "duracionSegundos": 6.586,
+      "palabras": [
+        {
+          "palabra": "La",
+          "inicioMs": 0,
+          "finMs": 180
+        },
+        {
+          "palabra": "sangre",
+          "inicioMs": 180,
+          "finMs": 440
+        },
+        {
+          "palabra": "humana",
+          "inicioMs": 440,
+          "finMs": 820
+        },
+        {
+          "palabra": "tiene",
+          "inicioMs": 820,
+          "finMs": 1000
+        },
+        {
+          "palabra": "una",
+          "inicioMs": 1000,
+          "finMs": 1200
+        },
+        {
+          "palabra": "concentración",
+          "inicioMs": 1200,
+          "finMs": 1820
+        },
+        {
+          "palabra": "de",
+          "inicioMs": 1820,
+          "finMs": 1980
+        },
+        {
+          "palabra": "sal",
+          "inicioMs": 1980,
+          "finMs": 2180
+        },
+        {
+          "palabra": "de",
+          "inicioMs": 2180,
+          "finMs": 2460
+        },
+        {
+          "palabra": "apenas",
+          "inicioMs": 2460,
+          "finMs": 2760
+        },
+        {
+          "palabra": "el",
+          "inicioMs": 2760,
+          "finMs": 2960
+        },
+        {
+          "palabra": "cero",
+          "inicioMs": 2960,
+          "finMs": 3240
+        },
+        {
+          "palabra": "punto",
+          "inicioMs": 3240,
+          "finMs": 4560
+        },
+        {
+          "palabra": "nueve",
+          "inicioMs": 4560,
+          "finMs": 5040
+        },
+        {
+          "palabra": "por",
+          "inicioMs": 5040,
+          "finMs": 5280
+        },
+        {
+          "palabra": "ciento",
+          "inicioMs": 5280,
+          "finMs": 5640
+        },
+        {
+          "palabra": "cuatro",
+          "inicioMs": 5640,
+          "finMs": 5860
+        },
+        {
+          "palabra": "veces",
+          "inicioMs": 5860,
+          "finMs": 5960
+        },
+        {
+          "palabra": "menor",
+          "inicioMs": 5960,
+          "finMs": 6120
+        },
+        {
+          "palabra": "que",
+          "inicioMs": 6120,
+          "finMs": 6200
+        },
+        {
+          "palabra": "el",
+          "inicioMs": 6120,
+          "finMs": 6200
+        },
+        {
+          "palabra": "mar",
+          "inicioMs": 6120,
+          "finMs": 6200
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "texto": "Para expulsar toda esa sal marina extra, tus riñones se ven obligados a producir muchísima más orina de la que bebiste.",
+      "icono": "AlertTriangle",
+      "colorIcono": "#F59E0B",
+      "tituloVisual": "SOBRECARGA RENAL",
+      "composicionVisual": "plano_general",
+      "escenario": "interior_cuerpo",
+      "layout": "narrativo",
+      "transicion": "whip_right",
+      "efectosCamara": [
+        "punch"
+      ],
+      "personajes": [
+        {
+          "id": "agonizante",
+          "posicion": {
+            "x": -100,
+            "y": 40
+          },
+          "escala": 1,
+          "orientacion": "derecha",
+          "prop": "kidneys",
+          "acciones": [
+            {
+              "tipo": "tropezar_y_reaccionar"
+            }
+          ],
+          "habla": true
+        }
+      ],
+      "palabrasClave": [
+        "expulsar sal",
+        "producir orina",
+        "deshidratación"
+      ],
+      "duracionSegundos": 6.178,
+      "palabras": [
+        {
+          "palabra": "Para",
+          "inicioMs": 0,
+          "finMs": 240
+        },
+        {
+          "palabra": "expulsar",
+          "inicioMs": 240,
+          "finMs": 800
+        },
+        {
+          "palabra": "toda",
+          "inicioMs": 800,
+          "finMs": 980
+        },
+        {
+          "palabra": "esa",
+          "inicioMs": 980,
+          "finMs": 1220
+        },
+        {
+          "palabra": "sal",
+          "inicioMs": 1220,
+          "finMs": 1420
+        },
+        {
+          "palabra": "marina",
+          "inicioMs": 1420,
+          "finMs": 1800
+        },
+        {
+          "palabra": "extra",
+          "inicioMs": 1800,
+          "finMs": 2180
+        },
+        {
+          "palabra": "tus",
+          "inicioMs": 2280,
+          "finMs": 2340
+        },
+        {
+          "palabra": "riñones",
+          "inicioMs": 2340,
+          "finMs": 2740
+        },
+        {
+          "palabra": "se",
+          "inicioMs": 2740,
+          "finMs": 2880
+        },
+        {
+          "palabra": "ven",
+          "inicioMs": 2880,
+          "finMs": 2960
+        },
+        {
+          "palabra": "obligados",
+          "inicioMs": 2960,
+          "finMs": 3440
+        },
+        {
+          "palabra": "a",
+          "inicioMs": 3440,
+          "finMs": 3600
+        },
+        {
+          "palabra": "producir",
+          "inicioMs": 3600,
+          "finMs": 3960
+        },
+        {
+          "palabra": "muchísima",
+          "inicioMs": 3960,
+          "finMs": 4500
+        },
+        {
+          "palabra": "más",
+          "inicioMs": 4500,
+          "finMs": 4680
+        },
+        {
+          "palabra": "orina",
+          "inicioMs": 4680,
+          "finMs": 5020
+        },
+        {
+          "palabra": "de",
+          "inicioMs": 5020,
+          "finMs": 5120
+        },
+        {
+          "palabra": "la",
+          "inicioMs": 5120,
+          "finMs": 5200
+        },
+        {
+          "palabra": "que",
+          "inicioMs": 5200,
+          "finMs": 5300
+        },
+        {
+          "palabra": "bebiste",
+          "inicioMs": 5300,
+          "finMs": 5700
+        }
+      ]
+    },
+    {
+      "id": 7,
+      "texto": "Es una trampa matemática cruel: por cada vaso de agua salada que tomas, tu cuerpo pierde casi un vaso y medio de agua pura.",
+      "icono": "Calculator",
+      "colorIcono": "#EF4444",
+      "tituloVisual": "TRAMPA MATEMÁTICA",
+      "composicionVisual": "primer_plano",
+      "escenario": "laboratorio",
+      "layout": "narrativo",
+      "transicion": "flash",
+      "efectosCamara": [
+        "shake",
+        "punch"
+      ],
+      "sfx": "sfx/sfx_dramatic_hit.wav",
+      "volumenSfx": 0.25,
+      "elementosNarrativos": [
+        {
+          "tipo": "danger_vignette"
+        }
+      ],
+      "personajes": [
+        {
+          "id": "alarma_matematica",
+          "posicion": {
+            "x": 0,
+            "y": 10
+          },
+          "escala": 1.15,
+          "orientacion": "derecha",
+          "poseId": "warning_danger",
+          "expresion": "shocked",
+          "prop": "calculator",
+          "habla": true
+        }
+      ],
+      "palabrasClave": [
+        "trampa matemática",
+        "vaso y medio",
+        "agua pura"
+      ],
+      "duracionSegundos": 6.322,
+      "palabras": [
+        {
+          "palabra": "Es",
+          "inicioMs": 0,
+          "finMs": 220
+        },
+        {
+          "palabra": "una",
+          "inicioMs": 220,
+          "finMs": 380
+        },
+        {
+          "palabra": "trampa",
+          "inicioMs": 380,
+          "finMs": 720
+        },
+        {
+          "palabra": "matemática",
+          "inicioMs": 720,
+          "finMs": 1240
+        },
+        {
+          "palabra": "cruel",
+          "inicioMs": 1240,
+          "finMs": 1540
+        },
+        {
+          "palabra": "por",
+          "inicioMs": 1540,
+          "finMs": 1700
+        },
+        {
+          "palabra": "cada",
+          "inicioMs": 1700,
+          "finMs": 1960
+        },
+        {
+          "palabra": "vaso",
+          "inicioMs": 1960,
+          "finMs": 2300
+        },
+        {
+          "palabra": "de",
+          "inicioMs": 2300,
+          "finMs": 2400
+        },
+        {
+          "palabra": "agua",
+          "inicioMs": 2400,
+          "finMs": 2540
+        },
+        {
+          "palabra": "salada",
+          "inicioMs": 2540,
+          "finMs": 2900
+        },
+        {
+          "palabra": "que",
+          "inicioMs": 2900,
+          "finMs": 3040
+        },
+        {
+          "palabra": "tomas",
+          "inicioMs": 3040,
+          "finMs": 3420
+        },
+        {
+          "palabra": "tu",
+          "inicioMs": 3560,
+          "finMs": 3620
+        },
+        {
+          "palabra": "cuerpo",
+          "inicioMs": 3620,
+          "finMs": 3800
+        },
+        {
+          "palabra": "pierde",
+          "inicioMs": 3800,
+          "finMs": 4280
+        },
+        {
+          "palabra": "casi",
+          "inicioMs": 4280,
+          "finMs": 4480
+        },
+        {
+          "palabra": "un",
+          "inicioMs": 4480,
+          "finMs": 4680
+        },
+        {
+          "palabra": "vaso",
+          "inicioMs": 4680,
+          "finMs": 4960
+        },
+        {
+          "palabra": "y",
+          "inicioMs": 4960,
+          "finMs": 5020
+        },
+        {
+          "palabra": "medio",
+          "inicioMs": 5020,
+          "finMs": 5120
+        },
+        {
+          "palabra": "de",
+          "inicioMs": 5120,
+          "finMs": 5320
+        },
+        {
+          "palabra": "agua",
+          "inicioMs": 5320,
+          "finMs": 5460
+        },
+        {
+          "palabra": "pura",
+          "inicioMs": 5460,
+          "finMs": 5860
+        }
+      ]
+    },
+    {
+      "id": 8,
+      "texto": "A nivel celular ocurre un fenómeno brutal llamado ósmosis: la sal en la sangre deshidrata y encoge tus células vivas.",
+      "icono": "Dna",
+      "colorIcono": "#8B5CF6",
+      "tituloVisual": "ÓSMOSIS CELULAR",
+      "composicionVisual": "plano_general",
+      "escenario": "interior_cuerpo",
+      "layout": "narrativo",
+      "transicion": "whip_left",
+      "efectosCamara": [
+        "drift"
+      ],
+      "personajes": [
+        {
+          "id": "biologo",
+          "posicion": {
+            "x": -150,
+            "y": 25
+          },
+          "escala": 1,
+          "orientacion": "derecha",
+          "poseId": "explaining_both_hands",
+          "expresion": "analytical",
+          "acciones": [
+            {
+              "tipo": "mirar_y_reaccionar"
+            }
+          ],
+          "habla": true
+        }
+      ],
+      "objetos": [
+        {
+          "id": "celula_encogida_escena",
+          "propId": "shrinking_cell",
+          "posicion": {
+            "x": 240,
+            "y": -70
+          },
+          "escala": 1.6,
+          "animacion": {
+            "tipo": "pulso"
+          }
+        }
+      ],
+      "palabrasClave": [
+        "ósmosis",
+        "deshidrata",
+        "encoge células"
+      ],
+      "duracionSegundos": 6.394,
+      "palabras": [
+        {
+          "palabra": "A",
+          "inicioMs": 0,
+          "finMs": 180
+        },
+        {
+          "palabra": "nivel",
+          "inicioMs": 180,
+          "finMs": 380
+        },
+        {
+          "palabra": "celular",
+          "inicioMs": 380,
+          "finMs": 660
+        },
+        {
+          "palabra": "ocurre",
+          "inicioMs": 660,
+          "finMs": 1160
+        },
+        {
+          "palabra": "un",
+          "inicioMs": 1160,
+          "finMs": 1240
+        },
+        {
+          "palabra": "fenómeno",
+          "inicioMs": 1240,
+          "finMs": 1620
+        },
+        {
+          "palabra": "brutal",
+          "inicioMs": 1620,
+          "finMs": 1940
+        },
+        {
+          "palabra": "llamado",
+          "inicioMs": 1940,
+          "finMs": 2260
+        },
+        {
+          "palabra": "ósmosis",
+          "inicioMs": 2260,
+          "finMs": 3080
+        },
+        {
+          "palabra": "la",
+          "inicioMs": 3180,
+          "finMs": 3240
+        },
+        {
+          "palabra": "sal",
+          "inicioMs": 3240,
+          "finMs": 3540
+        },
+        {
+          "palabra": "en",
+          "inicioMs": 3540,
+          "finMs": 3640
+        },
+        {
+          "palabra": "la",
+          "inicioMs": 3640,
+          "finMs": 3880
+        },
+        {
+          "palabra": "sangre",
+          "inicioMs": 3880,
+          "finMs": 4040
+        },
+        {
+          "palabra": "deshidrata",
+          "inicioMs": 4040,
+          "finMs": 4460
+        },
+        {
+          "palabra": "y",
+          "inicioMs": 4460,
+          "finMs": 4580
+        },
+        {
+          "palabra": "encoge",
+          "inicioMs": 4580,
+          "finMs": 4920
+        },
+        {
+          "palabra": "tus",
+          "inicioMs": 4920,
+          "finMs": 5100
+        },
+        {
+          "palabra": "células",
+          "inicioMs": 5100,
+          "finMs": 5380
+        },
+        {
+          "palabra": "vivas",
+          "inicioMs": 5380,
+          "finMs": 5920
+        }
+      ]
+    },
+    {
+      "id": 9,
+      "texto": "Tus órganos vitales pierden humedad crítica rápidamente, la sangre se vuelve espesa y la presión arterial cae en picada.",
+      "icono": "HeartPulse",
+      "colorIcono": "#EC4899",
+      "tituloVisual": "COLAPSO INTERNO",
+      "composicionVisual": "plano_general",
+      "escenario": "interior_cuerpo",
+      "layout": "narrativo",
+      "transicion": "corte",
+      "efectosCamara": [
+        "shake",
+        "drift"
+      ],
+      "elementosNarrativos": [
+        {
+          "tipo": "danger_vignette"
+        }
+      ],
+      "personajes": [
+        {
+          "id": "victima_presion",
+          "posicion": {
+            "x": 70,
+            "y": 40
+          },
+          "escala": 1.05,
+          "orientacion": "izquierda",
+          "poseId": "trembling_fear",
+          "expresion": "scared",
+          "acciones": [
+            {
+              "tipo": "sorpresa_y_retroceso"
+            }
+          ],
+          "habla": true
+        }
+      ],
+      "palabrasClave": [
+        "humedad crítica",
+        "sangre espesa",
+        "presión cae"
+      ],
+      "duracionSegundos": 6.538,
+      "palabras": [
+        {
+          "palabra": "Tus",
+          "inicioMs": 0,
+          "finMs": 160
+        },
+        {
+          "palabra": "órganos",
+          "inicioMs": 160,
+          "finMs": 560
+        },
+        {
+          "palabra": "vitales",
+          "inicioMs": 560,
+          "finMs": 840
+        },
+        {
+          "palabra": "pierden",
+          "inicioMs": 840,
+          "finMs": 1320
+        },
+        {
+          "palabra": "humedad",
+          "inicioMs": 1320,
+          "finMs": 1700
+        },
+        {
+          "palabra": "crítica",
+          "inicioMs": 1700,
+          "finMs": 2160
+        },
+        {
+          "palabra": "rápidamente",
+          "inicioMs": 2160,
+          "finMs": 2740
+        },
+        {
+          "palabra": "la",
+          "inicioMs": 2940,
+          "finMs": 3000
+        },
+        {
+          "palabra": "sangre",
+          "inicioMs": 3000,
+          "finMs": 3260
+        },
+        {
+          "palabra": "se",
+          "inicioMs": 3260,
+          "finMs": 3460
+        },
+        {
+          "palabra": "vuelve",
+          "inicioMs": 3460,
+          "finMs": 3760
+        },
+        {
+          "palabra": "espesa",
+          "inicioMs": 3760,
+          "finMs": 4260
+        },
+        {
+          "palabra": "y",
+          "inicioMs": 4260,
+          "finMs": 4380
+        },
+        {
+          "palabra": "la",
+          "inicioMs": 4380,
+          "finMs": 4480
+        },
+        {
+          "palabra": "presión",
+          "inicioMs": 4480,
+          "finMs": 4800
+        },
+        {
+          "palabra": "arterial",
+          "inicioMs": 4800,
+          "finMs": 5260
+        },
+        {
+          "palabra": "cae",
+          "inicioMs": 5260,
+          "finMs": 5560
+        },
+        {
+          "palabra": "en",
+          "inicioMs": 5560,
+          "finMs": 6080
+        },
+        {
+          "palabra": "picada",
+          "inicioMs": 6080,
+          "finMs": 6288
+        }
+      ]
+    },
+    {
+      "id": 10,
+      "texto": "En pocas horas sobrevienen alucinaciones, fallo renal severo y el corazón colapsa por el exceso extremo de sodio.",
+      "icono": "Skull",
+      "colorIcono": "#E11D48",
+      "tituloVisual": "FALLO TOTAL",
+      "composicionVisual": "primer_plano",
+      "escenario": "mar_abierto",
+      "layout": "narrativo",
+      "transicion": "flash",
+      "efectosCamara": [
+        "shake",
+        "punch"
+      ],
+      "sfx": "sfx/sfx_impact.wav",
+      "volumenSfx": 0.26,
+      "elementosNarrativos": [
+        {
+          "tipo": "danger_vignette"
+        },
+        {
+          "tipo": "shockwave_burst"
+        }
+      ],
+      "personajes": [
+        {
+          "id": "fallo_organico",
+          "posicion": {
+            "x": 0,
+            "y": 0
+          },
+          "escala": 1.15,
+          "orientacion": "derecha",
+          "poseId": "backing_away_scared",
+          "expresion": "shocked",
+          "prop": "skull",
+          "habla": true
+        }
+      ],
+      "palabrasClave": [
+        "alucinaciones",
+        "fallo renal",
+        "exceso de sodio"
+      ],
+      "duracionSegundos": 6.154,
+      "palabras": [
+        {
+          "palabra": "En",
+          "inicioMs": 0,
+          "finMs": 560
+        },
+        {
+          "palabra": "pocas",
+          "inicioMs": 560,
+          "finMs": 740
+        },
+        {
+          "palabra": "horas",
+          "inicioMs": 740,
+          "finMs": 1220
+        },
+        {
+          "palabra": "sobrevienen",
+          "inicioMs": 1220,
+          "finMs": 1360
+        },
+        {
+          "palabra": "alucinaciones",
+          "inicioMs": 1360,
+          "finMs": 1980
+        },
+        {
+          "palabra": "fallo",
+          "inicioMs": 2100,
+          "finMs": 2360
+        },
+        {
+          "palabra": "renal",
+          "inicioMs": 2360,
+          "finMs": 2580
+        },
+        {
+          "palabra": "severo",
+          "inicioMs": 2580,
+          "finMs": 3120
+        },
+        {
+          "palabra": "y",
+          "inicioMs": 3120,
+          "finMs": 3220
+        },
+        {
+          "palabra": "el",
+          "inicioMs": 3220,
+          "finMs": 3320
+        },
+        {
+          "palabra": "corazón",
+          "inicioMs": 3320,
+          "finMs": 3620
+        },
+        {
+          "palabra": "colapsa",
+          "inicioMs": 3620,
+          "finMs": 4200
+        },
+        {
+          "palabra": "por",
+          "inicioMs": 4200,
+          "finMs": 4360
+        },
+        {
+          "palabra": "el",
+          "inicioMs": 4360,
+          "finMs": 4460
+        },
+        {
+          "palabra": "exceso",
+          "inicioMs": 4460,
+          "finMs": 4800
+        },
+        {
+          "palabra": "extremo",
+          "inicioMs": 4800,
+          "finMs": 5200
+        },
+        {
+          "palabra": "de",
+          "inicioMs": 5200,
+          "finMs": 5280
+        },
+        {
+          "palabra": "sodio",
+          "inicioMs": 5280,
+          "finMs": 5680
+        }
+      ]
+    },
+    {
+      "id": 11,
+      "texto": "Por eso los náufragos sobreviven más tiempo sin beber nada que si bebieran agua de mar. ¡La física de tu cuerpo nunca perdona!",
+      "icono": "ShieldCheck",
+      "colorIcono": "#10B981",
+      "tituloVisual": "REGLA DE ORO",
+      "composicionVisual": "plano_general",
+      "escenario": "mar_abierto",
+      "layout": "narrativo",
+      "transicion": "zoom_in",
+      "efectosCamara": [
+        "drift"
+      ],
+      "elementosNarrativos": [
+        {
+          "tipo": "giant_waves"
+        }
+      ],
+      "personajes": [
+        {
+          "id": "conclusion",
+          "posicion": {
+            "x": -160,
+            "y": 30
+          },
+          "escala": 1,
+          "orientacion": "derecha",
+          "prop": "trophy",
+          "acciones": [
+            {
+              "tipo": "caminar_hacia",
+              "desdeX": -220,
+              "haciaX": 0
+            }
+          ],
+          "habla": true
+        }
+      ],
+      "palabrasClave": [
+        "sobreviven más",
+        "nunca tomes agua de mar",
+        "física corporal"
+      ],
+      "duracionSegundos": 6.25,
+      "palabras": [
+        {
+          "palabra": "Por",
+          "inicioMs": 0,
+          "finMs": 200
+        },
+        {
+          "palabra": "eso",
+          "inicioMs": 200,
+          "finMs": 340
+        },
+        {
+          "palabra": "los",
+          "inicioMs": 340,
+          "finMs": 460
+        },
+        {
+          "palabra": "náufragos",
+          "inicioMs": 460,
+          "finMs": 920
+        },
+        {
+          "palabra": "sobreviven",
+          "inicioMs": 920,
+          "finMs": 1300
+        },
+        {
+          "palabra": "más",
+          "inicioMs": 1300,
+          "finMs": 1440
+        },
+        {
+          "palabra": "tiempo",
+          "inicioMs": 1440,
+          "finMs": 1780
+        },
+        {
+          "palabra": "sin",
+          "inicioMs": 1780,
+          "finMs": 1980
+        },
+        {
+          "palabra": "beber",
+          "inicioMs": 1980,
+          "finMs": 2160
+        },
+        {
+          "palabra": "nada",
+          "inicioMs": 2160,
+          "finMs": 2500
+        },
+        {
+          "palabra": "que",
+          "inicioMs": 2500,
+          "finMs": 2680
+        },
+        {
+          "palabra": "si",
+          "inicioMs": 2680,
+          "finMs": 2820
+        },
+        {
+          "palabra": "bebieran",
+          "inicioMs": 2820,
+          "finMs": 3120
+        },
+        {
+          "palabra": "agua",
+          "inicioMs": 3120,
+          "finMs": 3300
+        },
+        {
+          "palabra": "de",
+          "inicioMs": 3300,
+          "finMs": 3440
+        },
+        {
+          "palabra": "mar",
+          "inicioMs": 3440,
+          "finMs": 3620
+        },
+        {
+          "palabra": "La",
+          "inicioMs": 3820,
+          "finMs": 3920
+        },
+        {
+          "palabra": "física",
+          "inicioMs": 3920,
+          "finMs": 4260
+        },
+        {
+          "palabra": "de",
+          "inicioMs": 4260,
+          "finMs": 4480
+        },
+        {
+          "palabra": "tu",
+          "inicioMs": 4480,
+          "finMs": 4600
+        },
+        {
+          "palabra": "cuerpo",
+          "inicioMs": 4600,
+          "finMs": 4860
+        },
+        {
+          "palabra": "nunca",
+          "inicioMs": 4860,
+          "finMs": 5200
+        },
+        {
+          "palabra": "perdona",
+          "inicioMs": 5200,
+          "finMs": 5800
+        }
+      ]
+    }
+  ]
+}

@@ -6,19 +6,50 @@ Guía de arquitectura, flujo de trabajo y estructura de datos para agentes y des
 
 ## 1. Flujo de Trabajo Completo (End-to-End)
 
+> 🚨 **REGLA DE ORO ANTES DE CREAR UN GUION**: Siempre que el usuario pida un nuevo video o una idea de historia, el agente DEBE leer primero `src/data/historial_temas.json`, revisar los temas y ganchos existentes, y asegurarse de proponer un tema, enfoque científico o fenómeno completamente distinto a los ya registrados.
+>
+> ⏱️ **REGLA DE DURACIÓN OBLIGATORIA DEL GUION**:
+> - **Mínimo obligatorio**: El guion DEBE durar **mínimo 1:02 (62 segundos) o más, forzosamente**. Nunca generar historias de menos de 1:02.
+> - **Rango objetivo esperado**: Entre **1:02** (62s) y **1:30** (90s).
+> - **Tope máximo y holgura**: 1:30 es el techo esperado de referencia. Puede haber holgura y pasarse ligeramente del techo si la narrativa lo requiere, pero **no por más de 10 a 20 segundos** (por ejemplo hasta ~1:40 o ~1:50 máximo con holgura).
+> - **Estructura recomendada**: Para cumplir el mínimo de 1:02, redactar entre **10 y 14 escenas** ricas en curiosidades y detalles científicos (o escenas con pausas y explicaciones fluidas de 5 a 8 segundos cada una).
+>
+> 🎨 **REGLA DE ESCENARIOS, PROPS Y ANIMACIÓN DINÁMICA (NO VACÍOS)**:
+> - **Expansión Dinámica de Escenarios (`NarrativeStage.tsx`)**: Si la narración requiere un ambiente no existente (ej. `abismo_oceanico`, `interior_cuerpo`, `volcan_activo`), debe programarse en SVG/CSS con: atmósfera rica en color/gradiente, 3 planos de profundidad/parallax y partículas vivas con `Math.sin()`.
+> - **Contraste del Stickman (`Stickman.tsx`)**: En escenarios oscuros (`ESCENARIOS_OSCUROS`), el Stickman recibe automáticamente un halo blanco nítido (`drop-shadow`) para garantizar visibilidad total.
+> - **Cero Encuadres Vacíos (`Scene.tsx`)**: Prohibido colocar al Stickman a un lado señalando al vacío. Cada escena debe incluir escenario y un prop protagónico o interactivo.
+> - **Props Ilustrados con Volumen y Animación (`propsLibrary.ts` / `SceneObject.tsx`)**: Diseñar props neo-brutalistas a todo color con `animatedSvg(frame)` permanente para conceptos científicos clave.
+> - **Movimiento Físico continuo**: Emplear secuencias de movimiento (`caminar_hacia`, `sorpresa_y_retroceso`, etc.) evitando el estatismo en `{x: 0, y: 0}`.
+> - **Duración Estricta de Monetización**: Entre 1:02 (62s) y 1:30 (90s), máx 1:50 (110s). `scripts/generar_voz.py` emite alerta si es menor a 62s.
+> - **Pipeline de Audio Infalible (`v3_sentence_tailcut`)**:
+>   - Gating estricto en `scripts/render_short.js`: Compara automáticamente cada escena contra `.tts_cache.json` y `public/audios/`; si hay desajuste, falta un audio o el pipeline es obsoleto, ejecuta `python scripts/generar_voz.py` antes de renderizar.
+>   - Fragmentación por oraciones completas (135 caracteres) respetando cláusulas sintácticas naturales (prohibido cortar a mitad de frase o separar verbos de objetos directos).
+>   - Poda estricta de colas residuales: Recorta el audio exactamente a los 160ms tras la última palabra pronunciada con fundido suave de 40ms, eliminando el 100% de respiraciones, chasquidos y ruidos del sintetizador.
+>   - Micro-fades anti-clic (6ms/12ms) en fragmentos y temperatura acústica a `0.50` con reintentos adaptativos automáticos por similitud Whisper (< 72%).
+> - **Subtítulos Estables**: `WordSubtitles.tsx` mantiene progresión monótona sin parpadeos ni repeticiones del último bloque.
+> - **Hashtags Optimizados**: `scripts/exportar_metadata.js` genera entre 6 y 10 hashtags limpios sin números ni preposiciones.
+
 Cada vez que se pida crear o actualizar un Short animado o estilo *"¿Sabías que...?"*, sigue estos pasos en orden:
 
-1. **Definir el guion (`src/data/guion.json`)**:
+1. **Consultar historial y definir el guion (`src/data/historial_temas.json` y `src/data/guion.json`)**:
+   - **Obligatorio**: Inspeccionar `src/data/historial_temas.json` para garantizar que la nueva propuesta no coincida con historias previas (>65% similitud).
+   - Puede ser un arreglo directo `[...]` o con metadatos `{ meta: { id, slug, temaResumen }, escenas: [...] }`.
    - Puede ser tan simple como `{ id, texto, icono, colorIcono, tituloVisual, poseId, prop }` o tan avanzado como una escena multi-personaje con `acciones` y `objetos`.
    - **Auto-Director Integrado**: Si la IA no especifica `acciones`, `composicionVisual` o `escenario`, el motor auto-dirige la puesta en escena (infiere el escenario temático, asigna encuadres dinámicos de cámara y dota al personaje de micro-movimiento procedural comunicativo y bamboleo de peso para que nunca quede congelado).
    - **Miles de Props Disponibles**: Además de los 213 props de biblioteca, la IA puede solicitar cualquier icono de `lucide-react` (ej. `"lucide:Brain"`, `"lucide:Coffee"`, `"Dna"`, `"Rocket"`) o insertar código SVG inline (`"svg:<path ...>"`).
-2. **Generar voz y tiempos por palabra (`npm run tts` o `python scripts/generar_voz.py`)**:
+2. **Generar voz, alinear palabras y registrar historial (`npm run tts` o `python scripts/generar_voz.py`)**:
    - Sintetiza los audios MP3 en `public/audios/escena_{id}.mp3`.
    - Inyecta automáticamente `duracionSegundos` (duración real + `0.25s`) y el arreglo `palabras` (`{ palabra, inicioMs, finMs }`) en `src/data/guion.json`.
+   - **Historial y Respaldo Automático**: Al concluir, ejecuta `scripts/registrar_historia.py`:
+     - Evalúa mediante `difflib.SequenceMatcher` si el gancho o guion supera el 65% de similitud con un registro previo diferente. Si detecta duplicado, emite: `[ALERTA DUPLICADO] Este tema ya se trató en el video {id}`.
+     - Guarda una copia exacta en `archivo_videos/{fecha}_{id_o_slug}.json`.
+     - Registra o actualiza la entrada en `src/data/historial_temas.json` con `id`, `fecha`, `gancho`, `palabrasClave`, `archivoRespaldo` y `textoCompleto`.
 3. **Previsualizar o Renderizar**:
    - Previsualización en vivo: `npm run dev` (`http://localhost:3000`).
    - Renderizar prueba aislada: `npx remotion render TestNarrativa out/test_narrativa.mp4 --port 3003`.
-   - Renderizar Short completo (1080×1920, 30fps): `npm run render` (ejecuta `scripts/render_short.js`: nombra el video según el tema del guion, purga videos >48h en `/out` y lo copia a `H:\Mi unidad\ShortsMotionGraphics`).
+   - Renderizar Short completo (1080×1920, 30fps): `npm run render` (ejecuta `scripts/render_short.js`: nombra el video según el tema del guion, purga videos >48h en `/out`, genera la metadata `.json` para publicación y copia ambos archivos a `H:\Mi unidad\ShortsMotionGraphics`).
+4. **Exportar Metadata para Publicación (`npm run metadata` o `node scripts/exportar_metadata.js`)**:
+   - Genera el archivo `${slug}.json` con el mismo nombre base que el video `.mp4`, conteniendo id, título, sinopsis/descripción, hashtags virales, género, métricas de video y voz, listo para automatizaciones de publicación (YouTube, TikTok, Instagram). Se exporta automáticamente al renderizar y también puede ejecutarse de forma aislada.
 
 > **Nota sobre la biblioteca de poses**: Si agregas nuevas poses, expresiones o props en `src/stickman/`, ejecuta `npm run poses:build` (`node scripts/generar_biblioteca_poses.mjs`) para regenerar los archivos `.svg` en `public/poses/`, actualizar el catálogo `src/data/poses.json` y la hoja de contacto `public/poses/contact_sheet.html`.
 
@@ -187,11 +218,14 @@ Para consultar o filtrar recursos programáticamente usa `src/stickman/catalog.t
 ## 4. Estructura del Proyecto y Comandos Rápidos
 
 ```text
+├── archivo_videos/             # Copias completas de guiones generados ({fecha}_{id}.json)
 ├── public/
 │   ├── audios/                 # MP3 generados por scripts/generar_voz.py
 │   └── poses/                  # 357 SVGs organizados + contact_sheet.html / .png
 ├── scripts/
-│   ├── generar_voz.py          # TTS (edge-tts + mutagen) -> actualiza guion.json
+│   ├── exportar_metadata.js    # Genera y exporta la metadata JSON para publicación en redes
+│   ├── generar_voz.py          # TTS (edge-tts + mutagen) -> actualiza guion.json y llama historial
+│   ├── registrar_historia.py   # Respaldo, detección de duplicados (SequenceMatcher) e historial
 │   └── generar_biblioteca_poses.mjs # Compila SVGs, poses.json y contact_sheet.html
 ├── src/
 │   ├── components/
@@ -207,6 +241,7 @@ Para consultar o filtrar recursos programáticamente usa `src/stickman/catalog.t
 │   │   └── ShowcasePoses.tsx   # Composición HojaDeContacto
 │   ├── data/
 │   │   ├── guion.json          # Guion activo del Short
+│   │   ├── historial_temas.json # Registro histórico de historias creadas y ganchos
 │   │   └── poses.json          # Catálogo validado de poses, expresiones y props
 │   └── stickman/
 │       ├── actionSequences.ts  # Motor de secuencias de acciones, interpolaciones y procedimentales
@@ -220,8 +255,10 @@ Para consultar o filtrar recursos programáticamente usa `src/stickman/catalog.t
 
 ### Comandos
 
-- `npm run tts` — Genera los audios MP3 y actualiza tiempos en `src/data/guion.json`.
+- `npm run tts` — Genera los audios MP3, actualiza tiempos en `src/data/guion.json` y ejecuta el respaldo/historial.
+- `npm run historial` — Registra y respalda manualmente el guion actual en `src/data/historial_temas.json` y `archivo_videos/`.
 - `npm run poses:build` — Regenera SVGs, `src/data/poses.json` y `public/poses/contact_sheet.html`.
 - `npm run dev` — Inicia Remotion Studio en `http://localhost:3000`.
-- `npm run render` — Renderiza el Short asignándole nombre temático según el guion, purga videos antiguos (>48h) en `/out` y lo envía a `H:\Mi unidad\ShortsMotionGraphics`.
+- `npm run metadata` — Genera el archivo JSON de metadata enriquecida para publicación en redes (se guarda en `out/` y se copia a `H:\Mi unidad\ShortsMotionGraphics`).
+- `npm run render` — Renderiza el Short asignándole nombre temático según el guion, purga videos y metadata antigua (>48h) en `/out`, exporta la metadata `.json` y envía ambos archivos a `H:\Mi unidad\ShortsMotionGraphics`.
 - `npx remotion render TestNarrativa out/test_narrativa.mp4 --port 3003` — Renderiza la escena de prueba narrativa.

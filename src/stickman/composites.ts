@@ -400,6 +400,7 @@ export function findPropById(id?: string): AnyPropDef | undefined {
     return {
       id: "custom_svg",
       name: "Prop Vectorial Personalizado",
+      family: "reacciones_humor",
       defaultPlacement: "right",
       svg: rawSvg,
       tags: ["custom", "inline", "vector"],
@@ -413,11 +414,14 @@ export function findPropById(id?: string): AnyPropDef | undefined {
   const IconComponent =
     (LucideIcons as any)[cleanIconName] || (LucideIcons as any)[pascalName];
 
-  if (IconComponent && typeof IconComponent === "function") {
+  if (
+    IconComponent &&
+    (typeof IconComponent === "function" || typeof IconComponent === "object")
+  ) {
     try {
       const markup = ReactDOMServer.renderToStaticMarkup(
         React.createElement(IconComponent, {
-          size: 38,
+          size: 40,
           color: "#000000",
           strokeWidth: 2.8,
         })
@@ -425,12 +429,36 @@ export function findPropById(id?: string): AnyPropDef | undefined {
       const innerMatch = markup.match(/<svg[^>]*>([\s\S]*?)<\/svg>/i);
       const innerSvg = innerMatch ? innerMatch[1] : markup;
 
+      // Paleta vibrante neo-brutalista determinista según el nombre del icono
+      const BADGE_COLORS = [
+        "#FFE600", // Amarillo neo-brutalista
+        "#38BDF8", // Cyan cielo
+        "#F43F5E", // Rosa vibrante
+        "#34D399", // Esmeralda
+        "#A78BFA", // Violeta eléctrico
+        "#FB923C", // Naranja cálido
+        "#FBBF24", // Ámbar dorado
+        "#2DD4BF", // Turquesa
+      ];
+      let hash = 0;
+      for (let i = 0; i < cleanIconName.length; i++) {
+        hash = (hash << 5) - hash + cleanIconName.charCodeAt(i);
+      }
+      const bg = BADGE_COLORS[Math.abs(hash) % BADGE_COLORS.length];
+
       return {
         id,
         name: pascalName,
+        family: "vida_cotidiana",
         defaultPlacement: "right",
-        // Sticker neo-brutalista circular con fondo blanco, borde de 5px y el icono de Lucide en el centro
-        svg: `<circle cx="0" cy="0" r="28" fill="#FFFFFF" stroke="#000000" stroke-width="5"/><g transform="translate(-19, -19)">${innerSvg}</g>`,
+        // Sticker Neo-Brutalista circular con fondo sólido para evitar líneas dobles en drop-shadow
+        svg: `<g>
+          <circle cx="0" cy="0" r="38" fill="${bg}" stroke="#000000" stroke-width="5" />
+          <circle cx="0" cy="0" r="33" fill="none" stroke="#FFFFFF" stroke-width="2.5" opacity="0.65" />
+          <svg x="-20" y="-20" width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="#000000" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round">
+            ${innerSvg}
+          </svg>
+        </g>`,
         tags: [cleanIconName.toLowerCase(), "lucide", "icono"],
       };
     } catch {
@@ -736,19 +764,27 @@ export function buildDynamicStickmanSvgString(
     ? `<g transform="translate(200, 47)">${hatProp.svg}</g>`
     : "";
 
+  const getPropContent = (propDef?: AnyPropDef) => {
+    if (!propDef) return "";
+    if ("animatedSvg" in propDef && typeof (propDef as any).animatedSvg === "function") {
+      return (propDef as any).animatedSvg(frame);
+    }
+    return propDef.svg;
+  };
+
   const leftPropSvg = leftProp
-    ? `<g transform="translate(${bodyPose.hands.left.x}, ${bodyPose.hands.left.y}) rotate(${bodyPose.hands.left.angle ?? 0})">${leftProp.svg}</g>`
+    ? `<g transform="translate(${bodyPose.hands.left.x}, ${bodyPose.hands.left.y}) rotate(${bodyPose.hands.left.angle ?? 0})">${getPropContent(leftProp)}</g>`
     : "";
 
   const rightPropSvg = rightProp
-    ? `<g transform="translate(${bodyPose.hands.right.x}, ${bodyPose.hands.right.y}) rotate(${bodyPose.hands.right.angle ?? 0})">${rightProp.svg}</g>`
+    ? `<g transform="translate(${bodyPose.hands.right.x}, ${bodyPose.hands.right.y}) rotate(${bodyPose.hands.right.angle ?? 0})">${getPropContent(rightProp)}</g>`
     : "";
 
   const overheadX = bodyPose.overhead.x === 200 ? 282 : bodyPose.overhead.x;
   const overheadY = bodyPose.overhead.y < 45 ? 48 : bodyPose.overhead.y;
 
   const overheadPropSvg = overheadProp
-    ? `<g transform="translate(${overheadX}, ${overheadY + speakingNod * 0.5})">${overheadProp.svg}</g>`
+    ? `<g transform="translate(${overheadX}, ${overheadY + speakingNod * 0.5})">${getPropContent(overheadProp)}</g>`
     : "";
 
   const ambientSvg =
@@ -771,26 +807,31 @@ export function buildDynamicStickmanSvgString(
   <path d="${bodyPose.torso}" stroke="${stroke}" stroke-width="12" stroke-linecap="round" stroke-linejoin="round" />
   <!-- Accesorios de cintura -->
   ${waistSvg}
-  <!-- Brazo izquierdo y prop gesticulando orgánicamente desde el hombro (200, 210) -->
+  <!-- Accesorios de postura (detrás de brazos y props para evitar solapamientos indeseados) -->
+  ${bodyPose.accents ?? ""}
+  <!-- Brazo izquierdo gesticulando orgánicamente desde el hombro (200, 210) -->
   <g transform="rotate(${leftGestureAngle}, 200, 210)">
     <path d="${bodyPose.leftArm}" stroke="${stroke}" stroke-width="12" stroke-linecap="round" stroke-linejoin="round" />
-    ${leftPropSvg}
   </g>
-  <!-- Brazo derecho y prop gesticulando orgánicamente desde el hombro (200, 210) -->
+  <!-- Brazo derecho gesticulando orgánicamente desde el hombro (200, 210) -->
   <g transform="rotate(${rightGestureAngle}, 200, 210)">
     <path d="${bodyPose.rightArm}" stroke="${stroke}" stroke-width="12" stroke-linecap="round" stroke-linejoin="round" />
-    ${rightPropSvg}
   </g>
   <!-- Accesorios de cuello delanteros -->
   ${frontNeckSvg}
-  <!-- Accesorios de postura -->
-  ${bodyPose.accents ?? ""}
   <!-- Cabeza, expresion facial y accesorios de cabeza/cara -->
   <g transform="${headTransform}">
     <circle cx="200" cy="115" r="68" fill="#FFFFFF" stroke="${stroke}" stroke-width="12" />
     ${faceSvg}
     ${faceAccessorySvg}
     ${hatAccessorySvg}
+  </g>
+  <!-- Props en manos: renderizados SIEMPRE en la capa frontal para que nunca queden ocultos detrás de manos o cabeza -->
+  <g transform="rotate(${leftGestureAngle}, 200, 210)">
+    ${leftPropSvg}
+  </g>
+  <g transform="rotate(${rightGestureAngle}, 200, 210)">
+    ${rightPropSvg}
   </g>
   <!-- Prop superior overhead -->
   ${overheadPropSvg}

@@ -1,0 +1,1507 @@
+{
+  "meta": {
+    "id": "delfines_dormir_respirar",
+    "slug": "delfines_dormir_respirar",
+    "temaResumen": "¿Cómo hacen los delfines para dormir en el mar sin ahogarse?"
+  },
+  "escenas": [
+    {
+      "id": 1,
+      "texto": "¿Alguna vez te has preguntado cómo duermen los delfines en el océano sin ahogarse?",
+      "icono": "Waves",
+      "colorIcono": "#0284C7",
+      "tituloVisual": "¿CÓMO DUERMEN?",
+      "composicionVisual": "plano_general",
+      "escenario": "mar_abierto",
+      "layout": "narrativo",
+      "transicion": "zoom_in",
+      "efectosCamara": [
+        "drift"
+      ],
+      "sfx": "sfx/sfx_tension_riser.wav",
+      "volumenSfx": 0.22,
+      "elementosNarrativos": [
+        {
+          "tipo": "giant_waves"
+        }
+      ],
+      "personajes": [
+        {
+          "id": "narrador_marino",
+          "posicion": {
+            "x": -240,
+            "y": 40
+          },
+          "escala": 1,
+          "orientacion": "derecha",
+          "acciones": [
+            {
+              "tipo": "caminar_hacia",
+              "desdeX": -300,
+              "haciaX": -80
+            }
+          ],
+          "habla": true
+        }
+      ],
+      "objetos": [
+        {
+          "id": "delfin_intro",
+          "propId": "dolphin",
+          "posicion": {
+            "x": 250,
+            "y": -70
+          },
+          "escala": 1.5,
+          "animacion": {
+            "tipo": "flotar"
+          }
+        }
+      ],
+      "palabrasClave": [
+        "delfines",
+        "dormir en el océano",
+        "sin ahogarse"
+      ],
+      "duracionSegundos": 5.506,
+      "palabras": [
+        {
+          "palabra": "Alguna",
+          "inicioMs": 0,
+          "finMs": 400
+        },
+        {
+          "palabra": "vez",
+          "inicioMs": 400,
+          "finMs": 580
+        },
+        {
+          "palabra": "te",
+          "inicioMs": 580,
+          "finMs": 760
+        },
+        {
+          "palabra": "has",
+          "inicioMs": 760,
+          "finMs": 860
+        },
+        {
+          "palabra": "preguntado",
+          "inicioMs": 860,
+          "finMs": 1460
+        },
+        {
+          "palabra": "cómo",
+          "inicioMs": 1460,
+          "finMs": 1740
+        },
+        {
+          "palabra": "duermen",
+          "inicioMs": 1740,
+          "finMs": 2180
+        },
+        {
+          "palabra": "los",
+          "inicioMs": 2180,
+          "finMs": 2300
+        },
+        {
+          "palabra": "delfines",
+          "inicioMs": 2300,
+          "finMs": 2800
+        },
+        {
+          "palabra": "en",
+          "inicioMs": 2800,
+          "finMs": 3020
+        },
+        {
+          "palabra": "el",
+          "inicioMs": 3020,
+          "finMs": 3140
+        },
+        {
+          "palabra": "océano",
+          "inicioMs": 3140,
+          "finMs": 3580
+        },
+        {
+          "palabra": "sin",
+          "inicioMs": 3860,
+          "finMs": 4000
+        },
+        {
+          "palabra": "ahogarse",
+          "inicioMs": 4000,
+          "finMs": 4640
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "texto": "Los seres humanos respiramos de forma completamente automática, incluso cuando estamos profundamente dormidos en la cama.",
+      "icono": "Wind",
+      "colorIcono": "#0EA5E9",
+      "tituloVisual": "RESPIRAR AUTOMÁTICO",
+      "composicionVisual": "plano_general",
+      "escenario": "mar_abierto",
+      "layout": "narrativo",
+      "transicion": "whip_right",
+      "efectosCamara": [
+        "drift"
+      ],
+      "personajes": [
+        {
+          "id": "humano_durmiendo",
+          "posicion": {
+            "x": -60,
+            "y": 30
+          },
+          "escala": 1,
+          "orientacion": "derecha",
+          "poseId": "standing_relaxed",
+          "expresion": "smile_soft",
+          "habla": true
+        }
+      ],
+      "palabrasClave": [
+        "respirar automático",
+        "dormidos en la cama",
+        "reflejo natural"
+      ],
+      "duracionSegundos": 6.682,
+      "palabras": [
+        {
+          "palabra": "Los",
+          "inicioMs": 0,
+          "finMs": 200
+        },
+        {
+          "palabra": "seres",
+          "inicioMs": 200,
+          "finMs": 420
+        },
+        {
+          "palabra": "humanos",
+          "inicioMs": 420,
+          "finMs": 760
+        },
+        {
+          "palabra": "respiramos",
+          "inicioMs": 760,
+          "finMs": 1340
+        },
+        {
+          "palabra": "de",
+          "inicioMs": 1340,
+          "finMs": 1460
+        },
+        {
+          "palabra": "forma",
+          "inicioMs": 1460,
+          "finMs": 1680
+        },
+        {
+          "palabra": "completamente",
+          "inicioMs": 1680,
+          "finMs": 2260
+        },
+        {
+          "palabra": "automática",
+          "inicioMs": 2260,
+          "finMs": 3000
+        },
+        {
+          "palabra": "incluso",
+          "inicioMs": 3180,
+          "finMs": 3480
+        },
+        {
+          "palabra": "cuando",
+          "inicioMs": 3480,
+          "finMs": 3780
+        },
+        {
+          "palabra": "estamos",
+          "inicioMs": 3780,
+          "finMs": 4080
+        },
+        {
+          "palabra": "profundamente",
+          "inicioMs": 4080,
+          "finMs": 4780
+        },
+        {
+          "palabra": "dormidos",
+          "inicioMs": 4780,
+          "finMs": 5260
+        },
+        {
+          "palabra": "en",
+          "inicioMs": 5260,
+          "finMs": 5380
+        },
+        {
+          "palabra": "la",
+          "inicioMs": 5380,
+          "finMs": 5500
+        },
+        {
+          "palabra": "cama",
+          "inicioMs": 5500,
+          "finMs": 5780
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "texto": "Pero en los delfines y ballenas, cada bocanada de aire en la superficie es un acto plenamente consciente y voluntario.",
+      "icono": "Brain",
+      "colorIcono": "#EC4899",
+      "tituloVisual": "ACTO VOLUNTARIO",
+      "composicionVisual": "plano_general",
+      "escenario": "mar_abierto",
+      "layout": "narrativo",
+      "transicion": "corte",
+      "efectosCamara": [
+        "drift"
+      ],
+      "personajes": [
+        {
+          "id": "explicador_voluntario",
+          "posicion": {
+            "x": -150,
+            "y": 30
+          },
+          "escala": 1,
+          "orientacion": "derecha",
+          "poseId": "pointing_at_viewer",
+          "expresion": "analytical",
+          "habla": true
+        }
+      ],
+      "objetos": [
+        {
+          "id": "cerebro_voluntario",
+          "propId": "split_brain",
+          "posicion": {
+            "x": 240,
+            "y": -70
+          },
+          "escala": 1.5,
+          "animacion": {
+            "tipo": "pulso"
+          }
+        }
+      ],
+      "palabrasClave": [
+        "delfines y ballenas",
+        "acto voluntario",
+        "respiración consciente"
+      ],
+      "duracionSegundos": 6.538,
+      "palabras": [
+        {
+          "palabra": "Pero",
+          "inicioMs": 0,
+          "finMs": 220
+        },
+        {
+          "palabra": "en",
+          "inicioMs": 220,
+          "finMs": 340
+        },
+        {
+          "palabra": "los",
+          "inicioMs": 340,
+          "finMs": 360
+        },
+        {
+          "palabra": "delfines",
+          "inicioMs": 360,
+          "finMs": 720
+        },
+        {
+          "palabra": "y",
+          "inicioMs": 720,
+          "finMs": 900
+        },
+        {
+          "palabra": "ballenas",
+          "inicioMs": 900,
+          "finMs": 1300
+        },
+        {
+          "palabra": "cada",
+          "inicioMs": 1680,
+          "finMs": 1940
+        },
+        {
+          "palabra": "bocanada",
+          "inicioMs": 1940,
+          "finMs": 2420
+        },
+        {
+          "palabra": "de",
+          "inicioMs": 2420,
+          "finMs": 2600
+        },
+        {
+          "palabra": "aire",
+          "inicioMs": 2600,
+          "finMs": 2760
+        },
+        {
+          "palabra": "en",
+          "inicioMs": 2760,
+          "finMs": 2900
+        },
+        {
+          "palabra": "la",
+          "inicioMs": 2900,
+          "finMs": 2980
+        },
+        {
+          "palabra": "superficie",
+          "inicioMs": 2980,
+          "finMs": 3580
+        },
+        {
+          "palabra": "es",
+          "inicioMs": 3580,
+          "finMs": 3800
+        },
+        {
+          "palabra": "un",
+          "inicioMs": 3800,
+          "finMs": 3900
+        },
+        {
+          "palabra": "acto",
+          "inicioMs": 3900,
+          "finMs": 4180
+        },
+        {
+          "palabra": "plenamente",
+          "inicioMs": 4180,
+          "finMs": 4700
+        },
+        {
+          "palabra": "consciente",
+          "inicioMs": 4700,
+          "finMs": 5220
+        },
+        {
+          "palabra": "y",
+          "inicioMs": 5220,
+          "finMs": 5320
+        },
+        {
+          "palabra": "voluntario",
+          "inicioMs": 5320,
+          "finMs": 5820
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "texto": "Si un delfín cayera en un sueño profundo inconsciente como el nuestro, simplemente se hundiría en el mar y moriría ahogado.",
+      "icono": "AlertOctagon",
+      "colorIcono": "#EF4444",
+      "tituloVisual": "PELIGRO MORTAL",
+      "composicionVisual": "primer_plano",
+      "escenario": "mar_abierto",
+      "layout": "narrativo",
+      "transicion": "flash",
+      "efectosCamara": [
+        "punch",
+        "shake"
+      ],
+      "sfx": "sfx/sfx_whoosh.wav",
+      "volumenSfx": 0.22,
+      "elementosNarrativos": [
+        {
+          "tipo": "danger_vignette"
+        }
+      ],
+      "personajes": [
+        {
+          "id": "alerta_ahogo",
+          "posicion": {
+            "x": 0,
+            "y": 10
+          },
+          "escala": 1.15,
+          "orientacion": "derecha",
+          "poseId": "warning_danger",
+          "expresion": "worried",
+          "habla": true
+        }
+      ],
+      "palabrasClave": [
+        "sueño inconsciente",
+        "hundirse en el mar",
+        "peligro mortal"
+      ],
+      "duracionSegundos": 7.546,
+      "palabras": [
+        {
+          "palabra": "Si",
+          "inicioMs": 0,
+          "finMs": 280
+        },
+        {
+          "palabra": "un",
+          "inicioMs": 280,
+          "finMs": 420
+        },
+        {
+          "palabra": "delfín",
+          "inicioMs": 420,
+          "finMs": 760
+        },
+        {
+          "palabra": "cayera",
+          "inicioMs": 760,
+          "finMs": 1220
+        },
+        {
+          "palabra": "en",
+          "inicioMs": 1220,
+          "finMs": 1360
+        },
+        {
+          "palabra": "un",
+          "inicioMs": 1360,
+          "finMs": 1480
+        },
+        {
+          "palabra": "sueño",
+          "inicioMs": 1480,
+          "finMs": 1780
+        },
+        {
+          "palabra": "profundo",
+          "inicioMs": 1780,
+          "finMs": 2220
+        },
+        {
+          "palabra": "inconsciente",
+          "inicioMs": 2220,
+          "finMs": 2860
+        },
+        {
+          "palabra": "como",
+          "inicioMs": 2860,
+          "finMs": 3080
+        },
+        {
+          "palabra": "el",
+          "inicioMs": 3080,
+          "finMs": 3200
+        },
+        {
+          "palabra": "nuestro",
+          "inicioMs": 3200,
+          "finMs": 3540
+        },
+        {
+          "palabra": "simplemente",
+          "inicioMs": 3900,
+          "finMs": 4300
+        },
+        {
+          "palabra": "se",
+          "inicioMs": 4300,
+          "finMs": 4600
+        },
+        {
+          "palabra": "hundiría",
+          "inicioMs": 4600,
+          "finMs": 4940
+        },
+        {
+          "palabra": "en",
+          "inicioMs": 4940,
+          "finMs": 5020
+        },
+        {
+          "palabra": "el",
+          "inicioMs": 5020,
+          "finMs": 5120
+        },
+        {
+          "palabra": "mar",
+          "inicioMs": 5120,
+          "finMs": 5320
+        },
+        {
+          "palabra": "y",
+          "inicioMs": 5320,
+          "finMs": 5580
+        },
+        {
+          "palabra": "moriría",
+          "inicioMs": 5580,
+          "finMs": 6080
+        },
+        {
+          "palabra": "ahogado",
+          "inicioMs": 6080,
+          "finMs": 6620
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "texto": "Para resolver este dilema de supervivencia extrema, la evolución diseñó un truco neurológico verdaderamente asombroso.",
+      "icono": "Sparkles",
+      "colorIcono": "#F59E0B",
+      "tituloVisual": "TRUCO EVOLUTIVO",
+      "composicionVisual": "plano_general",
+      "escenario": "mar_abierto",
+      "layout": "narrativo",
+      "transicion": "whip_left",
+      "efectosCamara": [
+        "drift"
+      ],
+      "personajes": [
+        {
+          "id": "eureka_evolucion",
+          "posicion": {
+            "x": -140,
+            "y": 25
+          },
+          "escala": 1,
+          "orientacion": "derecha",
+          "poseId": "eureka_idea",
+          "expresion": "eureka",
+          "habla": true
+        }
+      ],
+      "palabrasClave": [
+        "supervivencia",
+        "truco evolutivo",
+        "diseño neurológico"
+      ],
+      "duracionSegundos": 7.258,
+      "palabras": [
+        {
+          "palabra": "Para",
+          "inicioMs": 0,
+          "finMs": 240
+        },
+        {
+          "palabra": "resolver",
+          "inicioMs": 240,
+          "finMs": 680
+        },
+        {
+          "palabra": "este",
+          "inicioMs": 680,
+          "finMs": 1000
+        },
+        {
+          "palabra": "dilema",
+          "inicioMs": 1000,
+          "finMs": 1400
+        },
+        {
+          "palabra": "de",
+          "inicioMs": 1400,
+          "finMs": 1520
+        },
+        {
+          "palabra": "supervivencia",
+          "inicioMs": 1520,
+          "finMs": 2240
+        },
+        {
+          "palabra": "extrema",
+          "inicioMs": 2240,
+          "finMs": 2780
+        },
+        {
+          "palabra": "la",
+          "inicioMs": 3000,
+          "finMs": 3080
+        },
+        {
+          "palabra": "evolución",
+          "inicioMs": 3080,
+          "finMs": 3500
+        },
+        {
+          "palabra": "diseñó",
+          "inicioMs": 3500,
+          "finMs": 3960
+        },
+        {
+          "palabra": "un",
+          "inicioMs": 3960,
+          "finMs": 4080
+        },
+        {
+          "palabra": "truco",
+          "inicioMs": 4080,
+          "finMs": 4360
+        },
+        {
+          "palabra": "neurológico",
+          "inicioMs": 4360,
+          "finMs": 5000
+        },
+        {
+          "palabra": "verdaderamente",
+          "inicioMs": 5000,
+          "finMs": 5620
+        },
+        {
+          "palabra": "asombroso",
+          "inicioMs": 5620,
+          "finMs": 6320
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "texto": "Se llama sueño unihemisférico: el delfín desconecta y pone a dormir solo un hemisferio de su cerebro a la vez.",
+      "icono": "Split",
+      "colorIcono": "#8B5CF6",
+      "tituloVisual": "SUEÑO UNIHEMISFÉRICO",
+      "composicionVisual": "plano_general",
+      "escenario": "mar_abierto",
+      "layout": "narrativo",
+      "transicion": "corte",
+      "efectosCamara": [
+        "drift"
+      ],
+      "personajes": [
+        {
+          "id": "comparador_cerebro",
+          "posicion": {
+            "x": -150,
+            "y": 30
+          },
+          "escala": 1,
+          "orientacion": "derecha",
+          "poseId": "comparing_two_objects",
+          "expresion": "analytical",
+          "acciones": [
+            {
+              "tipo": "mirar_y_reaccionar"
+            }
+          ],
+          "habla": true
+        }
+      ],
+      "objetos": [
+        {
+          "id": "cerebro_dividido_escena",
+          "propId": "split_brain",
+          "posicion": {
+            "x": 240,
+            "y": -70
+          },
+          "escala": 1.6,
+          "animacion": {
+            "tipo": "pulso"
+          }
+        }
+      ],
+      "palabrasClave": [
+        "sueño unihemisférico",
+        "desconecta un hemisferio",
+        "cerebro dividido"
+      ],
+      "duracionSegundos": 6.658,
+      "palabras": [
+        {
+          "palabra": "Se",
+          "inicioMs": 0,
+          "finMs": 200
+        },
+        {
+          "palabra": "llama",
+          "inicioMs": 200,
+          "finMs": 380
+        },
+        {
+          "palabra": "sueño",
+          "inicioMs": 380,
+          "finMs": 640
+        },
+        {
+          "palabra": "unihemisférico",
+          "inicioMs": 640,
+          "finMs": 840
+        },
+        {
+          "palabra": "el",
+          "inicioMs": 840,
+          "finMs": 940
+        },
+        {
+          "palabra": "delfín",
+          "inicioMs": 940,
+          "finMs": 1420
+        },
+        {
+          "palabra": "desconecta",
+          "inicioMs": 1720,
+          "finMs": 1820
+        },
+        {
+          "palabra": "y",
+          "inicioMs": 1820,
+          "finMs": 1960
+        },
+        {
+          "palabra": "pone",
+          "inicioMs": 1960,
+          "finMs": 2220
+        },
+        {
+          "palabra": "a",
+          "inicioMs": 2220,
+          "finMs": 2920
+        },
+        {
+          "palabra": "dormir",
+          "inicioMs": 2920,
+          "finMs": 3100
+        },
+        {
+          "palabra": "solo",
+          "inicioMs": 3100,
+          "finMs": 3340
+        },
+        {
+          "palabra": "un",
+          "inicioMs": 3340,
+          "finMs": 3500
+        },
+        {
+          "palabra": "hemisferio",
+          "inicioMs": 3500,
+          "finMs": 3800
+        },
+        {
+          "palabra": "de",
+          "inicioMs": 3800,
+          "finMs": 4120
+        },
+        {
+          "palabra": "su",
+          "inicioMs": 4120,
+          "finMs": 4360
+        },
+        {
+          "palabra": "cerebro",
+          "inicioMs": 4360,
+          "finMs": 4840
+        },
+        {
+          "palabra": "a",
+          "inicioMs": 4840,
+          "finMs": 4940
+        },
+        {
+          "palabra": "la",
+          "inicioMs": 4940,
+          "finMs": 5060
+        },
+        {
+          "palabra": "vez",
+          "inicioMs": 5060,
+          "finMs": 5460
+        }
+      ]
+    },
+    {
+      "id": 7,
+      "texto": "Mientras el hemisferio izquierdo descansa plácidamente, el ojo derecho permanece cerrado y desconectado del entorno.",
+      "icono": "EyeOff",
+      "colorIcono": "#64748B",
+      "tituloVisual": "MITAD DORMIDA",
+      "composicionVisual": "plano_general",
+      "escenario": "mar_abierto",
+      "layout": "narrativo",
+      "transicion": "whip_right",
+      "efectosCamara": [
+        "drift"
+      ],
+      "personajes": [
+        {
+          "id": "mitad_dormida_delfin",
+          "posicion": {
+            "x": -40,
+            "y": 40
+          },
+          "escala": 1.05,
+          "orientacion": "derecha",
+          "poseId": "covering_eyes",
+          "expresion": "tired",
+          "habla": true
+        }
+      ],
+      "palabrasClave": [
+        "hemisferio izquierdo",
+        "ojo cerrado",
+        "descanso plácido"
+      ],
+      "duracionSegundos": 6.874,
+      "palabras": [
+        {
+          "palabra": "Mientras",
+          "inicioMs": 0,
+          "finMs": 380
+        },
+        {
+          "palabra": "el",
+          "inicioMs": 380,
+          "finMs": 580
+        },
+        {
+          "palabra": "hemisferio",
+          "inicioMs": 580,
+          "finMs": 1000
+        },
+        {
+          "palabra": "izquierdo",
+          "inicioMs": 1000,
+          "finMs": 1420
+        },
+        {
+          "palabra": "descansa",
+          "inicioMs": 1420,
+          "finMs": 1880
+        },
+        {
+          "palabra": "plácidamente",
+          "inicioMs": 1880,
+          "finMs": 2460
+        },
+        {
+          "palabra": "el",
+          "inicioMs": 3180,
+          "finMs": 3340
+        },
+        {
+          "palabra": "ojo",
+          "inicioMs": 3340,
+          "finMs": 3480
+        },
+        {
+          "palabra": "derecho",
+          "inicioMs": 3480,
+          "finMs": 3740
+        },
+        {
+          "palabra": "permanece",
+          "inicioMs": 3740,
+          "finMs": 4320
+        },
+        {
+          "palabra": "cerrado",
+          "inicioMs": 4320,
+          "finMs": 4480
+        },
+        {
+          "palabra": "y",
+          "inicioMs": 4480,
+          "finMs": 4720
+        },
+        {
+          "palabra": "desconectado",
+          "inicioMs": 4720,
+          "finMs": 5340
+        },
+        {
+          "palabra": "del",
+          "inicioMs": 5340,
+          "finMs": 5500
+        },
+        {
+          "palabra": "entorno",
+          "inicioMs": 5500,
+          "finMs": 5940
+        }
+      ]
+    },
+    {
+      "id": 8,
+      "texto": "Al mismo tiempo, el hemisferio derecho sigue 100% despierto, vigilando depredadores como tiburones y controlando el nado.",
+      "icono": "Eye",
+      "colorIcono": "#10B981",
+      "tituloVisual": "MITAD VIGILANTE",
+      "composicionVisual": "plano_general",
+      "escenario": "laboratorio_neuro",
+      "layout": "narrativo",
+      "transicion": "corte",
+      "efectosCamara": [
+        "punch"
+      ],
+      "personajes": [
+        {
+          "id": "vigilante_tiburon",
+          "posicion": {
+            "x": -140,
+            "y": 30
+          },
+          "escala": 1,
+          "orientacion": "derecha",
+          "poseId": "looking_up_pose",
+          "expresion": "analytical",
+          "habla": true
+        }
+      ],
+      "objetos": [
+        {
+          "id": "aleta_tiburon_peligro",
+          "propId": "shark_fin",
+          "posicion": {
+            "x": 240,
+            "y": 50
+          },
+          "escala": 1.5,
+          "animacion": {
+            "tipo": "flotar"
+          }
+        }
+      ],
+      "palabrasClave": [
+        "hemisferio derecho",
+        "vigilando tiburones",
+        "controlando el nado"
+      ],
+      "duracionSegundos": 7.546,
+      "palabras": [
+        {
+          "palabra": "Al",
+          "inicioMs": 0,
+          "finMs": 220
+        },
+        {
+          "palabra": "mismo",
+          "inicioMs": 220,
+          "finMs": 480
+        },
+        {
+          "palabra": "tiempo",
+          "inicioMs": 480,
+          "finMs": 940
+        },
+        {
+          "palabra": "el",
+          "inicioMs": 1140,
+          "finMs": 1260
+        },
+        {
+          "palabra": "hemisferio",
+          "inicioMs": 1260,
+          "finMs": 1700
+        },
+        {
+          "palabra": "derecho",
+          "inicioMs": 1700,
+          "finMs": 1940
+        },
+        {
+          "palabra": "sigue",
+          "inicioMs": 1940,
+          "finMs": 2260
+        },
+        {
+          "palabra": "100%",
+          "inicioMs": 2260,
+          "finMs": 2540
+        },
+        {
+          "palabra": "despierto",
+          "inicioMs": 2540,
+          "finMs": 3500
+        },
+        {
+          "palabra": "vigilando",
+          "inicioMs": 3680,
+          "finMs": 4120
+        },
+        {
+          "palabra": "depredadores",
+          "inicioMs": 4120,
+          "finMs": 4680
+        },
+        {
+          "palabra": "como",
+          "inicioMs": 4680,
+          "finMs": 4920
+        },
+        {
+          "palabra": "tiburones",
+          "inicioMs": 4920,
+          "finMs": 5420
+        },
+        {
+          "palabra": "y",
+          "inicioMs": 5420,
+          "finMs": 5680
+        },
+        {
+          "palabra": "controlando",
+          "inicioMs": 5680,
+          "finMs": 6200
+        },
+        {
+          "palabra": "el",
+          "inicioMs": 6200,
+          "finMs": 6320
+        },
+        {
+          "palabra": "nado",
+          "inicioMs": 6320,
+          "finMs": 6600
+        }
+      ]
+    },
+    {
+      "id": 9,
+      "texto": "Esa mitad despierta le recuerda al animal salir a la superficie rítmicamente para respirar oxígeno por su espiráculo.",
+      "icono": "ArrowUpCircle",
+      "colorIcono": "#06B6D4",
+      "tituloVisual": "A LA SUPERFICIE",
+      "composicionVisual": "plano_general",
+      "escenario": "mar_abierto",
+      "layout": "narrativo",
+      "transicion": "whip_left",
+      "efectosCamara": [
+        "drift"
+      ],
+      "sfx": "sfx/sfx_dramatic_hit.wav",
+      "volumenSfx": 0.22,
+      "elementosNarrativos": [
+        {
+          "tipo": "giant_waves"
+        }
+      ],
+      "personajes": [
+        {
+          "id": "respirar_espiraculo",
+          "posicion": {
+            "x": -150,
+            "y": 25
+          },
+          "escala": 1,
+          "orientacion": "derecha",
+          "poseId": "explaining_pointing_up",
+          "expresion": "talking_enthusiastic",
+          "habla": true
+        }
+      ],
+      "objetos": [
+        {
+          "id": "delfin_respirando",
+          "propId": "dolphin",
+          "posicion": {
+            "x": 240,
+            "y": -60
+          },
+          "escala": 1.5,
+          "animacion": {
+            "tipo": "flotar"
+          }
+        }
+      ],
+      "palabrasClave": [
+        "salir a la superficie",
+        "respirar oxígeno",
+        "espiráculo"
+      ],
+      "duracionSegundos": 8.17,
+      "palabras": [
+        {
+          "palabra": "Esa",
+          "inicioMs": 0,
+          "finMs": 320
+        },
+        {
+          "palabra": "mitad",
+          "inicioMs": 320,
+          "finMs": 500
+        },
+        {
+          "palabra": "despierta",
+          "inicioMs": 500,
+          "finMs": 1040
+        },
+        {
+          "palabra": "le",
+          "inicioMs": 1040,
+          "finMs": 1160
+        },
+        {
+          "palabra": "recuerda",
+          "inicioMs": 1160,
+          "finMs": 1600
+        },
+        {
+          "palabra": "al",
+          "inicioMs": 1600,
+          "finMs": 1700
+        },
+        {
+          "palabra": "animal",
+          "inicioMs": 1700,
+          "finMs": 1980
+        },
+        {
+          "palabra": "salir",
+          "inicioMs": 1980,
+          "finMs": 2360
+        },
+        {
+          "palabra": "a",
+          "inicioMs": 2360,
+          "finMs": 2480
+        },
+        {
+          "palabra": "la",
+          "inicioMs": 2480,
+          "finMs": 2580
+        },
+        {
+          "palabra": "superficie",
+          "inicioMs": 2580,
+          "finMs": 3260
+        },
+        {
+          "palabra": "rítmicamente",
+          "inicioMs": 3400,
+          "finMs": 4060
+        },
+        {
+          "palabra": "para",
+          "inicioMs": 4060,
+          "finMs": 4280
+        },
+        {
+          "palabra": "respirar",
+          "inicioMs": 4280,
+          "finMs": 4780
+        },
+        {
+          "palabra": "oxígeno",
+          "inicioMs": 4780,
+          "finMs": 5320
+        },
+        {
+          "palabra": "por",
+          "inicioMs": 5320,
+          "finMs": 5440
+        },
+        {
+          "palabra": "su",
+          "inicioMs": 5440,
+          "finMs": 5560
+        },
+        {
+          "palabra": "espiráculo",
+          "inicioMs": 5560,
+          "finMs": 6100
+        }
+      ]
+    },
+    {
+      "id": 10,
+      "texto": "Dos horas después, el cerebro invierte los papeles: la mitad descansada toma el control y la otra mitad se duerme.",
+      "icono": "RefreshCw",
+      "colorIcono": "#3B82F6",
+      "tituloVisual": "CAMBIO DE TURNO",
+      "composicionVisual": "plano_general",
+      "escenario": "mar_abierto",
+      "layout": "narrativo",
+      "transicion": "corte",
+      "efectosCamara": [
+        "drift"
+      ],
+      "personajes": [
+        {
+          "id": "cambio_turno",
+          "posicion": {
+            "x": -140,
+            "y": 30
+          },
+          "escala": 1,
+          "orientacion": "derecha",
+          "poseId": "holding_both_hands",
+          "expresion": "smile_wide",
+          "habla": true
+        }
+      ],
+      "objetos": [
+        {
+          "id": "reloj_turno",
+          "propId": "clock",
+          "posicion": {
+            "x": 240,
+            "y": -70
+          },
+          "escala": 1.4,
+          "animacion": {
+            "tipo": "pulso"
+          }
+        }
+      ],
+      "palabrasClave": [
+        "dos horas después",
+        "cambio de turno",
+        "cerebro invierte"
+      ],
+      "duracionSegundos": 6.706,
+      "palabras": [
+        {
+          "palabra": "Dos",
+          "inicioMs": 0,
+          "finMs": 260
+        },
+        {
+          "palabra": "horas",
+          "inicioMs": 260,
+          "finMs": 620
+        },
+        {
+          "palabra": "después",
+          "inicioMs": 620,
+          "finMs": 840
+        },
+        {
+          "palabra": "el",
+          "inicioMs": 840,
+          "finMs": 1140
+        },
+        {
+          "palabra": "cerebro",
+          "inicioMs": 1140,
+          "finMs": 1500
+        },
+        {
+          "palabra": "invierte",
+          "inicioMs": 1500,
+          "finMs": 1680
+        },
+        {
+          "palabra": "los",
+          "inicioMs": 1680,
+          "finMs": 2120
+        },
+        {
+          "palabra": "papeles",
+          "inicioMs": 2460,
+          "finMs": 2520
+        },
+        {
+          "palabra": "la",
+          "inicioMs": 2520,
+          "finMs": 2820
+        },
+        {
+          "palabra": "mitad",
+          "inicioMs": 2820,
+          "finMs": 3540
+        },
+        {
+          "palabra": "descansada",
+          "inicioMs": 3540,
+          "finMs": 3800
+        },
+        {
+          "palabra": "toma",
+          "inicioMs": 3800,
+          "finMs": 3940
+        },
+        {
+          "palabra": "el",
+          "inicioMs": 3940,
+          "finMs": 4320
+        },
+        {
+          "palabra": "control",
+          "inicioMs": 4320,
+          "finMs": 4620
+        },
+        {
+          "palabra": "y",
+          "inicioMs": 4620,
+          "finMs": 4740
+        },
+        {
+          "palabra": "la",
+          "inicioMs": 4740,
+          "finMs": 4920
+        },
+        {
+          "palabra": "otra",
+          "inicioMs": 4920,
+          "finMs": 5260
+        },
+        {
+          "palabra": "mitad",
+          "inicioMs": 5260,
+          "finMs": 5659
+        },
+        {
+          "palabra": "se",
+          "inicioMs": 5260,
+          "finMs": 5659
+        },
+        {
+          "palabra": "duerme",
+          "inicioMs": 5260,
+          "finMs": 5659
+        }
+      ]
+    },
+    {
+      "id": 11,
+      "texto": "¡Así logran dormir ocho horas completas al día sin dejar de nadar jamás! La vida marina es simplemente fascinante.",
+      "icono": "CheckCircle2",
+      "colorIcono": "#10B981",
+      "tituloVisual": "MAGIA MARINA",
+      "composicionVisual": "plano_general",
+      "escenario": "mar_abierto",
+      "layout": "narrativo",
+      "transicion": "zoom_in",
+      "efectosCamara": [
+        "drift"
+      ],
+      "elementosNarrativos": [
+        {
+          "tipo": "giant_waves"
+        }
+      ],
+      "personajes": [
+        {
+          "id": "conclusion_delfin",
+          "posicion": {
+            "x": -160,
+            "y": 30
+          },
+          "escala": 1,
+          "orientacion": "derecha",
+          "prop": "trophy",
+          "acciones": [
+            {
+              "tipo": "caminar_hacia",
+              "desdeX": -220,
+              "haciaX": 0
+            }
+          ],
+          "habla": true
+        }
+      ],
+      "palabrasClave": [
+        "ocho horas completas",
+        "sin dejar de nadar",
+        "maravilla biológica"
+      ],
+      "duracionSegundos": 7.498,
+      "palabras": [
+        {
+          "palabra": "Así",
+          "inicioMs": 0,
+          "finMs": 280
+        },
+        {
+          "palabra": "logran",
+          "inicioMs": 280,
+          "finMs": 580
+        },
+        {
+          "palabra": "dormir",
+          "inicioMs": 580,
+          "finMs": 860
+        },
+        {
+          "palabra": "ocho",
+          "inicioMs": 860,
+          "finMs": 1260
+        },
+        {
+          "palabra": "horas",
+          "inicioMs": 1260,
+          "finMs": 1460
+        },
+        {
+          "palabra": "completas",
+          "inicioMs": 1460,
+          "finMs": 2040
+        },
+        {
+          "palabra": "al",
+          "inicioMs": 2040,
+          "finMs": 2200
+        },
+        {
+          "palabra": "día",
+          "inicioMs": 2200,
+          "finMs": 2340
+        },
+        {
+          "palabra": "sin",
+          "inicioMs": 2340,
+          "finMs": 2560
+        },
+        {
+          "palabra": "dejar",
+          "inicioMs": 2560,
+          "finMs": 2840
+        },
+        {
+          "palabra": "de",
+          "inicioMs": 2840,
+          "finMs": 3020
+        },
+        {
+          "palabra": "nadar",
+          "inicioMs": 3020,
+          "finMs": 3440
+        },
+        {
+          "palabra": "jamás",
+          "inicioMs": 3620,
+          "finMs": 4220
+        },
+        {
+          "palabra": "La",
+          "inicioMs": 4220,
+          "finMs": 4700
+        },
+        {
+          "palabra": "vida",
+          "inicioMs": 4700,
+          "finMs": 4880
+        },
+        {
+          "palabra": "marina",
+          "inicioMs": 4880,
+          "finMs": 5260
+        },
+        {
+          "palabra": "es",
+          "inicioMs": 5260,
+          "finMs": 5380
+        },
+        {
+          "palabra": "simplemente",
+          "inicioMs": 5380,
+          "finMs": 5800
+        },
+        {
+          "palabra": "fascinante",
+          "inicioMs": 5800,
+          "finMs": 6680
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,1768 @@
+{
+  "meta": {
+    "id": "tardigrado_criptobiosis_inmortal",
+    "slug": "tardigrado_criptobiosis_inmortal",
+    "temaResumen": "¿Cómo sobrevive el tardígrado al vacío espacial, radiación y congelación mediante biovidrio celular?"
+  },
+  "escenas": [
+    {
+      "id": 1,
+      "texto": "¿Sabías que existe un animal microscópico tan indestructible que puede sobrevivir en el vacío del espacio, a doscientos setenta grados bajo cero y bañado en radiación mortal?",
+      "icono": "ShieldAlert",
+      "colorIcono": "#F59E0B",
+      "tituloVisual": "SER INDESTRUCTIBLE",
+      "composicionVisual": "plano_general",
+      "escenario": "espacio_profundo",
+      "layout": "narrativo",
+      "transicion": "zoom_in",
+      "efectosCamara": [
+        "drift"
+      ],
+      "sfx": "sfx/sfx_whoosh.wav",
+      "volumenSfx": 0.2,
+      "palabrasClave": [
+        "indestructible",
+        "vacío del espacio",
+        "doscientos setenta grados",
+        "radiación mortal"
+      ],
+      "personajes": [
+        {
+          "id": "biologo",
+          "posicion": {
+            "x": -160,
+            "y": 70
+          },
+          "escala": 1.05,
+          "orientacion": "derecha",
+          "prop": "tardigrade_hero",
+          "poseId": "presenting_object",
+          "expresion": "eureka",
+          "acciones": [
+            {
+              "tipo": "caminar_hacia",
+              "desdeX": -260,
+              "haciaX": -120
+            }
+          ],
+          "habla": true
+        }
+      ],
+      "duracionSegundos": 8.482,
+      "palabras": [
+        {
+          "palabra": "Sabías",
+          "inicioMs": 0,
+          "finMs": 400
+        },
+        {
+          "palabra": "que",
+          "inicioMs": 400,
+          "finMs": 560
+        },
+        {
+          "palabra": "existe",
+          "inicioMs": 560,
+          "finMs": 800
+        },
+        {
+          "palabra": "un",
+          "inicioMs": 800,
+          "finMs": 1040
+        },
+        {
+          "palabra": "animal",
+          "inicioMs": 1040,
+          "finMs": 1280
+        },
+        {
+          "palabra": "microscópico",
+          "inicioMs": 1280,
+          "finMs": 2060
+        },
+        {
+          "palabra": "tan",
+          "inicioMs": 2060,
+          "finMs": 2280
+        },
+        {
+          "palabra": "indestructible",
+          "inicioMs": 2280,
+          "finMs": 3060
+        },
+        {
+          "palabra": "que",
+          "inicioMs": 3060,
+          "finMs": 3200
+        },
+        {
+          "palabra": "puede",
+          "inicioMs": 3200,
+          "finMs": 3400
+        },
+        {
+          "palabra": "sobrevivir",
+          "inicioMs": 3400,
+          "finMs": 4040
+        },
+        {
+          "palabra": "en",
+          "inicioMs": 4040,
+          "finMs": 4120
+        },
+        {
+          "palabra": "el",
+          "inicioMs": 4120,
+          "finMs": 4240
+        },
+        {
+          "palabra": "vacío",
+          "inicioMs": 4240,
+          "finMs": 4520
+        },
+        {
+          "palabra": "del",
+          "inicioMs": 4520,
+          "finMs": 4640
+        },
+        {
+          "palabra": "espacio",
+          "inicioMs": 4640,
+          "finMs": 5080
+        },
+        {
+          "palabra": "a",
+          "inicioMs": 5080,
+          "finMs": 5280
+        },
+        {
+          "palabra": "doscientos",
+          "inicioMs": 5280,
+          "finMs": 5860
+        },
+        {
+          "palabra": "setenta",
+          "inicioMs": 5860,
+          "finMs": 6480
+        },
+        {
+          "palabra": "grados",
+          "inicioMs": 6480,
+          "finMs": 6620
+        },
+        {
+          "palabra": "bajo",
+          "inicioMs": 6620,
+          "finMs": 6900
+        },
+        {
+          "palabra": "cero",
+          "inicioMs": 6900,
+          "finMs": 7020
+        },
+        {
+          "palabra": "y",
+          "inicioMs": 7020,
+          "finMs": 7320
+        },
+        {
+          "palabra": "bañado",
+          "inicioMs": 7320,
+          "finMs": 7380
+        },
+        {
+          "palabra": "en",
+          "inicioMs": 7380,
+          "finMs": 7460
+        },
+        {
+          "palabra": "radiación",
+          "inicioMs": 7460,
+          "finMs": 7740
+        },
+        {
+          "palabra": "mortal",
+          "inicioMs": 7740,
+          "finMs": 7960
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "texto": "Se trata del tardígrado u oso de agua. Mide apenas un milímetro, pero tiene la mayor armadura de resistencia biológica jamás descubierta en la Tierra.",
+      "icono": "Bug",
+      "colorIcono": "#10B981",
+      "tituloVisual": "OSO DE AGUA",
+      "composicionVisual": "primer_plano",
+      "escenario": "laboratorio_neuro",
+      "layout": "narrativo",
+      "transicion": "whip_right",
+      "efectosCamara": [
+        "drift"
+      ],
+      "palabrasClave": [
+        "tardígrado",
+        "oso de agua",
+        "un milímetro",
+        "resistencia biológica"
+      ],
+      "personajes": [
+        {
+          "id": "biologo",
+          "posicion": {
+            "x": 0,
+            "y": 50
+          },
+          "escala": 1.15,
+          "orientacion": "derecha",
+          "prop": "tardigrade_hero",
+          "poseId": "presenting_object",
+          "expresion": "talking_enthusiastic",
+          "habla": true
+        }
+      ],
+      "duracionSegundos": 8.338,
+      "palabras": [
+        {
+          "palabra": "Se",
+          "inicioMs": 0,
+          "finMs": 200
+        },
+        {
+          "palabra": "trata",
+          "inicioMs": 200,
+          "finMs": 440
+        },
+        {
+          "palabra": "del",
+          "inicioMs": 440,
+          "finMs": 680
+        },
+        {
+          "palabra": "tardígrado",
+          "inicioMs": 680,
+          "finMs": 1260
+        },
+        {
+          "palabra": "u",
+          "inicioMs": 1260,
+          "finMs": 1560
+        },
+        {
+          "palabra": "oso",
+          "inicioMs": 1560,
+          "finMs": 1800
+        },
+        {
+          "palabra": "de",
+          "inicioMs": 1800,
+          "finMs": 1960
+        },
+        {
+          "palabra": "agua",
+          "inicioMs": 1960,
+          "finMs": 2240
+        },
+        {
+          "palabra": "Mide",
+          "inicioMs": 2640,
+          "finMs": 2980
+        },
+        {
+          "palabra": "apenas",
+          "inicioMs": 2980,
+          "finMs": 3120
+        },
+        {
+          "palabra": "un",
+          "inicioMs": 3120,
+          "finMs": 3440
+        },
+        {
+          "palabra": "milímetro",
+          "inicioMs": 3440,
+          "finMs": 3940
+        },
+        {
+          "palabra": "pero",
+          "inicioMs": 4040,
+          "finMs": 4140
+        },
+        {
+          "palabra": "tiene",
+          "inicioMs": 4140,
+          "finMs": 4340
+        },
+        {
+          "palabra": "la",
+          "inicioMs": 4340,
+          "finMs": 4500
+        },
+        {
+          "palabra": "mayor",
+          "inicioMs": 4500,
+          "finMs": 4720
+        },
+        {
+          "palabra": "armadura",
+          "inicioMs": 4720,
+          "finMs": 5140
+        },
+        {
+          "palabra": "de",
+          "inicioMs": 5140,
+          "finMs": 5340
+        },
+        {
+          "palabra": "resistencia",
+          "inicioMs": 5340,
+          "finMs": 5920
+        },
+        {
+          "palabra": "biológica",
+          "inicioMs": 5920,
+          "finMs": 6440
+        },
+        {
+          "palabra": "jamás",
+          "inicioMs": 6440,
+          "finMs": 6860
+        },
+        {
+          "palabra": "descubierta",
+          "inicioMs": 6860,
+          "finMs": 7420
+        },
+        {
+          "palabra": "en",
+          "inicioMs": 7420,
+          "finMs": 7500
+        },
+        {
+          "palabra": "la",
+          "inicioMs": 7500,
+          "finMs": 7580
+        },
+        {
+          "palabra": "Tierra",
+          "inicioMs": 7580,
+          "finMs": 7860
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "texto": "En dos mil siete, la Agencia Espacial Europea envió miles de tardígrados vivos al espacio exterior a bordo de un satélite, expuestos al vacío cósmico absoluto.",
+      "icono": "Rocket",
+      "colorIcono": "#38BDF8",
+      "tituloVisual": "MISIÓN CÓSMICA",
+      "composicionVisual": "plano_general",
+      "escenario": "espacio_profundo",
+      "layout": "narrativo",
+      "transicion": "corte",
+      "efectosCamara": [
+        "punch"
+      ],
+      "sfx": "sfx/sfx_dramatic_hit.wav",
+      "volumenSfx": 0.25,
+      "palabrasClave": [
+        "Agencia Espacial Europea",
+        "espacio exterior",
+        "vacío cósmico absoluto"
+      ],
+      "personajes": [
+        {
+          "id": "astronomo",
+          "posicion": {
+            "x": -180,
+            "y": 70
+          },
+          "escala": 1.05,
+          "orientacion": "derecha",
+          "poseId": "explaining_pointing_up",
+          "expresion": "analytical",
+          "habla": true
+        }
+      ],
+      "objetos": [
+        {
+          "id": "satelite_tardigrado",
+          "propId": "tardigrade_hero",
+          "posicion": {
+            "x": 170,
+            "y": -40
+          },
+          "escala": 1.4,
+          "animacion": {
+            "tipo": "flotar",
+            "inicioFrame": 0,
+            "finFrame": 9999
+          },
+          "capaZ": 25
+        }
+      ],
+      "duracionSegundos": 8.506,
+      "palabras": [
+        {
+          "palabra": "En",
+          "inicioMs": 0,
+          "finMs": 200
+        },
+        {
+          "palabra": "dos",
+          "inicioMs": 200,
+          "finMs": 680
+        },
+        {
+          "palabra": "mil",
+          "inicioMs": 900,
+          "finMs": 1000
+        },
+        {
+          "palabra": "siete",
+          "inicioMs": 1000,
+          "finMs": 1320
+        },
+        {
+          "palabra": "la",
+          "inicioMs": 1320,
+          "finMs": 1680
+        },
+        {
+          "palabra": "Agencia",
+          "inicioMs": 1680,
+          "finMs": 2220
+        },
+        {
+          "palabra": "Espacial",
+          "inicioMs": 2220,
+          "finMs": 2540
+        },
+        {
+          "palabra": "Europea",
+          "inicioMs": 2540,
+          "finMs": 2820
+        },
+        {
+          "palabra": "envió",
+          "inicioMs": 2820,
+          "finMs": 2980
+        },
+        {
+          "palabra": "miles",
+          "inicioMs": 2980,
+          "finMs": 3440
+        },
+        {
+          "palabra": "de",
+          "inicioMs": 3440,
+          "finMs": 3840
+        },
+        {
+          "palabra": "tardígrados",
+          "inicioMs": 3840,
+          "finMs": 3920
+        },
+        {
+          "palabra": "vivos",
+          "inicioMs": 3920,
+          "finMs": 4220
+        },
+        {
+          "palabra": "al",
+          "inicioMs": 4220,
+          "finMs": 4600
+        },
+        {
+          "palabra": "espacio",
+          "inicioMs": 4600,
+          "finMs": 4800
+        },
+        {
+          "palabra": "exterior",
+          "inicioMs": 4800,
+          "finMs": 5040
+        },
+        {
+          "palabra": "a",
+          "inicioMs": 5040,
+          "finMs": 5160
+        },
+        {
+          "palabra": "bordo",
+          "inicioMs": 5160,
+          "finMs": 5240
+        },
+        {
+          "palabra": "de",
+          "inicioMs": 5240,
+          "finMs": 5740
+        },
+        {
+          "palabra": "un",
+          "inicioMs": 5900,
+          "finMs": 6360
+        },
+        {
+          "palabra": "satélite",
+          "inicioMs": 6360,
+          "finMs": 6580
+        },
+        {
+          "palabra": "expuestos",
+          "inicioMs": 6580,
+          "finMs": 6920
+        },
+        {
+          "palabra": "al",
+          "inicioMs": 6920,
+          "finMs": 7460
+        },
+        {
+          "palabra": "vacío",
+          "inicioMs": 7460,
+          "finMs": 8040
+        },
+        {
+          "palabra": "cósmico",
+          "inicioMs": 8040,
+          "finMs": 8148
+        },
+        {
+          "palabra": "absoluto",
+          "inicioMs": 8040,
+          "finMs": 8148
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "texto": "Diez días después, al regresar a la Tierra, no solo estaban vivos: ¡muchas hembras pusieron huevos y nacieron crías completamente sanas y fuertes!",
+      "icono": "Sparkles",
+      "colorIcono": "#FBBF24",
+      "tituloVisual": "SOBREVIVIENTES",
+      "composicionVisual": "cifras_concepto",
+      "escenario": "laboratorio_neuro",
+      "layout": "narrativo",
+      "transicion": "whip_left",
+      "efectosCamara": [
+        "drift"
+      ],
+      "palabrasClave": [
+        "diez días después",
+        "estaban vivos",
+        "pusieron huevos",
+        "crías sanas"
+      ],
+      "personajes": [
+        {
+          "id": "biologo",
+          "posicion": {
+            "x": -80,
+            "y": 60
+          },
+          "escala": 1.1,
+          "orientacion": "derecha",
+          "prop": "tardigrade_hero",
+          "poseId": "presenting_object",
+          "expresion": "eureka",
+          "habla": true
+        }
+      ],
+      "duracionSegundos": 7.738,
+      "palabras": [
+        {
+          "palabra": "Diez",
+          "inicioMs": 0,
+          "finMs": 320
+        },
+        {
+          "palabra": "días",
+          "inicioMs": 320,
+          "finMs": 700
+        },
+        {
+          "palabra": "después",
+          "inicioMs": 820,
+          "finMs": 880
+        },
+        {
+          "palabra": "al",
+          "inicioMs": 880,
+          "finMs": 1340
+        },
+        {
+          "palabra": "regresar",
+          "inicioMs": 1340,
+          "finMs": 1380
+        },
+        {
+          "palabra": "a",
+          "inicioMs": 1380,
+          "finMs": 1480
+        },
+        {
+          "palabra": "la",
+          "inicioMs": 1480,
+          "finMs": 1700
+        },
+        {
+          "palabra": "Tierra",
+          "inicioMs": 1700,
+          "finMs": 1920
+        },
+        {
+          "palabra": "no",
+          "inicioMs": 1920,
+          "finMs": 2120
+        },
+        {
+          "palabra": "solo",
+          "inicioMs": 2120,
+          "finMs": 2440
+        },
+        {
+          "palabra": "estaban",
+          "inicioMs": 2440,
+          "finMs": 2920
+        },
+        {
+          "palabra": "vivos",
+          "inicioMs": 3100,
+          "finMs": 3340
+        },
+        {
+          "palabra": "muchas",
+          "inicioMs": 3340,
+          "finMs": 3700
+        },
+        {
+          "palabra": "hembras",
+          "inicioMs": 3700,
+          "finMs": 4100
+        },
+        {
+          "palabra": "pusieron",
+          "inicioMs": 4100,
+          "finMs": 4520
+        },
+        {
+          "palabra": "huevos",
+          "inicioMs": 4520,
+          "finMs": 4660
+        },
+        {
+          "palabra": "y",
+          "inicioMs": 4660,
+          "finMs": 4980
+        },
+        {
+          "palabra": "nacieron",
+          "inicioMs": 4980,
+          "finMs": 5360
+        },
+        {
+          "palabra": "crías",
+          "inicioMs": 5360,
+          "finMs": 5840
+        },
+        {
+          "palabra": "completamente",
+          "inicioMs": 5840,
+          "finMs": 6460
+        },
+        {
+          "palabra": "sanas",
+          "inicioMs": 6460,
+          "finMs": 6640
+        },
+        {
+          "palabra": "y",
+          "inicioMs": 6640,
+          "finMs": 7280
+        },
+        {
+          "palabra": "fuertes",
+          "inicioMs": 7280,
+          "finMs": 7488
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "texto": "¿Cómo es físicamente posible que un ser biológico no explote ni se congele hasta morir en las condiciones más despiadadas del universo?",
+      "icono": "HelpCircle",
+      "colorIcono": "#EF4444",
+      "tituloVisual": "EL GRAN ENIGMA",
+      "composicionVisual": "primer_plano",
+      "escenario": "laboratorio_neuro",
+      "layout": "narrativo",
+      "transicion": "zoom_in",
+      "efectosCamara": [
+        "shake"
+      ],
+      "palabrasClave": [
+        "físicamente posible",
+        "no explote",
+        "condiciones despiadadas",
+        "universo"
+      ],
+      "personajes": [
+        {
+          "id": "narrador",
+          "posicion": {
+            "x": 0,
+            "y": 50
+          },
+          "escala": 1.15,
+          "orientacion": "derecha",
+          "poseId": "scratching_head",
+          "expresion": "confused",
+          "habla": true
+        }
+      ],
+      "duracionSegundos": 6.826,
+      "palabras": [
+        {
+          "palabra": "Cómo",
+          "inicioMs": 0,
+          "finMs": 280
+        },
+        {
+          "palabra": "es",
+          "inicioMs": 280,
+          "finMs": 380
+        },
+        {
+          "palabra": "físicamente",
+          "inicioMs": 380,
+          "finMs": 780
+        },
+        {
+          "palabra": "posible",
+          "inicioMs": 780,
+          "finMs": 1340
+        },
+        {
+          "palabra": "que",
+          "inicioMs": 1340,
+          "finMs": 1560
+        },
+        {
+          "palabra": "un",
+          "inicioMs": 1560,
+          "finMs": 1660
+        },
+        {
+          "palabra": "ser",
+          "inicioMs": 1660,
+          "finMs": 1820
+        },
+        {
+          "palabra": "biológico",
+          "inicioMs": 1820,
+          "finMs": 2420
+        },
+        {
+          "palabra": "no",
+          "inicioMs": 2420,
+          "finMs": 2580
+        },
+        {
+          "palabra": "explote",
+          "inicioMs": 2580,
+          "finMs": 3060
+        },
+        {
+          "palabra": "ni",
+          "inicioMs": 3060,
+          "finMs": 3200
+        },
+        {
+          "palabra": "se",
+          "inicioMs": 3200,
+          "finMs": 3300
+        },
+        {
+          "palabra": "congele",
+          "inicioMs": 3300,
+          "finMs": 3820
+        },
+        {
+          "palabra": "hasta",
+          "inicioMs": 3820,
+          "finMs": 3960
+        },
+        {
+          "palabra": "morir",
+          "inicioMs": 3960,
+          "finMs": 4280
+        },
+        {
+          "palabra": "en",
+          "inicioMs": 4280,
+          "finMs": 4360
+        },
+        {
+          "palabra": "las",
+          "inicioMs": 4360,
+          "finMs": 4480
+        },
+        {
+          "palabra": "condiciones",
+          "inicioMs": 4480,
+          "finMs": 4920
+        },
+        {
+          "palabra": "más",
+          "inicioMs": 4920,
+          "finMs": 5260
+        },
+        {
+          "palabra": "despiadadas",
+          "inicioMs": 5260,
+          "finMs": 5820
+        },
+        {
+          "palabra": "del",
+          "inicioMs": 5820,
+          "finMs": 6020
+        },
+        {
+          "palabra": "universo",
+          "inicioMs": 6020,
+          "finMs": 6300
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "texto": "El secreto es un superpoder celular llamado anhidrobiosis: ante el peligro extremo, el tardígrado expulsa casi el noventa y nueve por ciento de toda el agua de su cuerpo.",
+      "icono": "Droplets",
+      "colorIcono": "#06B6D4",
+      "tituloVisual": "ANHIDROBIOSIS",
+      "composicionVisual": "plano_general",
+      "escenario": "interior_cuerpo",
+      "layout": "narrativo",
+      "transicion": "corte",
+      "efectosCamara": [
+        "drift"
+      ],
+      "palabrasClave": [
+        "anhidrobiosis",
+        "peligro extremo",
+        "noventa y nueve por ciento",
+        "expulsa el agua"
+      ],
+      "personajes": [
+        {
+          "id": "fisico",
+          "posicion": {
+            "x": -150,
+            "y": 70
+          },
+          "escala": 1.05,
+          "orientacion": "derecha",
+          "prop": "water_drop",
+          "poseId": "presenting_object",
+          "expresion": "analytical",
+          "habla": true
+        }
+      ],
+      "duracionSegundos": 9.394,
+      "palabras": [
+        {
+          "palabra": "El",
+          "inicioMs": 0,
+          "finMs": 180
+        },
+        {
+          "palabra": "secreto",
+          "inicioMs": 180,
+          "finMs": 580
+        },
+        {
+          "palabra": "es",
+          "inicioMs": 580,
+          "finMs": 680
+        },
+        {
+          "palabra": "un",
+          "inicioMs": 680,
+          "finMs": 780
+        },
+        {
+          "palabra": "superpoder",
+          "inicioMs": 780,
+          "finMs": 1300
+        },
+        {
+          "palabra": "celular",
+          "inicioMs": 1300,
+          "finMs": 1620
+        },
+        {
+          "palabra": "llamado",
+          "inicioMs": 1620,
+          "finMs": 2180
+        },
+        {
+          "palabra": "anhidrobiosis",
+          "inicioMs": 2180,
+          "finMs": 3180
+        },
+        {
+          "palabra": "ante",
+          "inicioMs": 3340,
+          "finMs": 3500
+        },
+        {
+          "palabra": "el",
+          "inicioMs": 3500,
+          "finMs": 3620
+        },
+        {
+          "palabra": "peligro",
+          "inicioMs": 3620,
+          "finMs": 3940
+        },
+        {
+          "palabra": "extremo",
+          "inicioMs": 3940,
+          "finMs": 4900
+        },
+        {
+          "palabra": "el",
+          "inicioMs": 5000,
+          "finMs": 5140
+        },
+        {
+          "palabra": "tardígrado",
+          "inicioMs": 5140,
+          "finMs": 5640
+        },
+        {
+          "palabra": "expulsa",
+          "inicioMs": 5640,
+          "finMs": 6140
+        },
+        {
+          "palabra": "casi",
+          "inicioMs": 6140,
+          "finMs": 6340
+        },
+        {
+          "palabra": "el",
+          "inicioMs": 6340,
+          "finMs": 6520
+        },
+        {
+          "palabra": "noventa",
+          "inicioMs": 6520,
+          "finMs": 6940
+        },
+        {
+          "palabra": "y",
+          "inicioMs": 6940,
+          "finMs": 7620
+        },
+        {
+          "palabra": "nueve",
+          "inicioMs": 7620,
+          "finMs": 7900
+        },
+        {
+          "palabra": "por",
+          "inicioMs": 7900,
+          "finMs": 8080
+        },
+        {
+          "palabra": "ciento",
+          "inicioMs": 8080,
+          "finMs": 8220
+        },
+        {
+          "palabra": "de",
+          "inicioMs": 8220,
+          "finMs": 8400
+        },
+        {
+          "palabra": "toda",
+          "inicioMs": 8400,
+          "finMs": 8480
+        },
+        {
+          "palabra": "el",
+          "inicioMs": 8480,
+          "finMs": 8620
+        },
+        {
+          "palabra": "agua",
+          "inicioMs": 8620,
+          "finMs": 8900
+        },
+        {
+          "palabra": "de",
+          "inicioMs": 8900,
+          "finMs": 8981
+        },
+        {
+          "palabra": "su",
+          "inicioMs": 8900,
+          "finMs": 8981
+        },
+        {
+          "palabra": "cuerpo",
+          "inicioMs": 8900,
+          "finMs": 8981
+        }
+      ]
+    },
+    {
+      "id": 7,
+      "texto": "Sin agua líquida dentro, las células normalmente se arrugan y mueren. Pero el tardígrado produce unas proteínas milagrosas llamadas TDPs que se convierten en biovidrio protector.",
+      "icono": "Shield",
+      "colorIcono": "#8B5CF6",
+      "tituloVisual": "BIOVIDRIO CELULAR",
+      "composicionVisual": "plano_general",
+      "escenario": "interior_cuerpo",
+      "layout": "narrativo",
+      "transicion": "whip_right",
+      "efectosCamara": [
+        "drift"
+      ],
+      "palabrasClave": [
+        "proteínas TDPs",
+        "biovidrio protector",
+        "escudo celular",
+        "sin agua"
+      ],
+      "personajes": [
+        {
+          "id": "fisico",
+          "posicion": {
+            "x": -180,
+            "y": 70
+          },
+          "escala": 1.05,
+          "orientacion": "derecha",
+          "poseId": "explaining_pointing_up",
+          "expresion": "eureka",
+          "habla": true
+        }
+      ],
+      "objetos": [
+        {
+          "id": "tardigrado_vidrio",
+          "propId": "tardigrade_hero",
+          "posicion": {
+            "x": 170,
+            "y": -30
+          },
+          "escala": 1.45,
+          "animacion": {
+            "tipo": "pulso",
+            "inicioFrame": 0,
+            "finFrame": 9999
+          },
+          "capaZ": 25
+        }
+      ],
+      "duracionSegundos": 9.106,
+      "palabras": [
+        {
+          "palabra": "Sin",
+          "inicioMs": 0,
+          "finMs": 200
+        },
+        {
+          "palabra": "agua",
+          "inicioMs": 200,
+          "finMs": 400
+        },
+        {
+          "palabra": "líquida",
+          "inicioMs": 400,
+          "finMs": 800
+        },
+        {
+          "palabra": "dentro",
+          "inicioMs": 800,
+          "finMs": 1240
+        },
+        {
+          "palabra": "las",
+          "inicioMs": 1340,
+          "finMs": 1460
+        },
+        {
+          "palabra": "células",
+          "inicioMs": 1460,
+          "finMs": 1740
+        },
+        {
+          "palabra": "normalmente",
+          "inicioMs": 1740,
+          "finMs": 2340
+        },
+        {
+          "palabra": "se",
+          "inicioMs": 2340,
+          "finMs": 2700
+        },
+        {
+          "palabra": "arrugan",
+          "inicioMs": 2700,
+          "finMs": 3060
+        },
+        {
+          "palabra": "y",
+          "inicioMs": 3060,
+          "finMs": 3160
+        },
+        {
+          "palabra": "mueren",
+          "inicioMs": 3160,
+          "finMs": 3460
+        },
+        {
+          "palabra": "Pero",
+          "inicioMs": 3700,
+          "finMs": 3840
+        },
+        {
+          "palabra": "el",
+          "inicioMs": 3840,
+          "finMs": 3960
+        },
+        {
+          "palabra": "tardígrado",
+          "inicioMs": 3960,
+          "finMs": 4440
+        },
+        {
+          "palabra": "produce",
+          "inicioMs": 4440,
+          "finMs": 4820
+        },
+        {
+          "palabra": "unas",
+          "inicioMs": 4820,
+          "finMs": 5020
+        },
+        {
+          "palabra": "proteínas",
+          "inicioMs": 5020,
+          "finMs": 5480
+        },
+        {
+          "palabra": "milagrosas",
+          "inicioMs": 5480,
+          "finMs": 6060
+        },
+        {
+          "palabra": "llamadas",
+          "inicioMs": 6060,
+          "finMs": 6380
+        },
+        {
+          "palabra": "TDPs",
+          "inicioMs": 6380,
+          "finMs": 6820
+        },
+        {
+          "palabra": "que",
+          "inicioMs": 6820,
+          "finMs": 7000
+        },
+        {
+          "palabra": "se",
+          "inicioMs": 7000,
+          "finMs": 7120
+        },
+        {
+          "palabra": "convierten",
+          "inicioMs": 7120,
+          "finMs": 7520
+        },
+        {
+          "palabra": "en",
+          "inicioMs": 7520,
+          "finMs": 7660
+        },
+        {
+          "palabra": "biovidrio",
+          "inicioMs": 7660,
+          "finMs": 8160
+        },
+        {
+          "palabra": "protector",
+          "inicioMs": 8160,
+          "finMs": 8720
+        }
+      ]
+    },
+    {
+      "id": 8,
+      "texto": "Esta matriz vítrea inmoviliza y congela sus proteínas y ADN en el espacio exacto, reduciendo su metabolismo al cero punto cero uno por ciento: la vida se pone en pausa total.",
+      "icono": "PauseCircle",
+      "colorIcono": "#3B82F6",
+      "tituloVisual": "PAUSA BIOLÓGICA",
+      "composicionVisual": "cifras_concepto",
+      "escenario": "laboratorio_neuro",
+      "layout": "narrativo",
+      "transicion": "corte",
+      "efectosCamara": [
+        "drift"
+      ],
+      "palabrasClave": [
+        "matriz vítrea",
+        "cero punto cero uno",
+        "pausa total",
+        "ADN inmovilizado"
+      ],
+      "personajes": [
+        {
+          "id": "biologo",
+          "posicion": {
+            "x": -80,
+            "y": 60
+          },
+          "escala": 1.1,
+          "orientacion": "derecha",
+          "prop": "dna",
+          "poseId": "presenting_object",
+          "expresion": "talking_enthusiastic",
+          "habla": true
+        }
+      ],
+      "duracionSegundos": 10.858,
+      "palabras": [
+        {
+          "palabra": "Esta",
+          "inicioMs": 0,
+          "finMs": 340
+        },
+        {
+          "palabra": "matriz",
+          "inicioMs": 340,
+          "finMs": 620
+        },
+        {
+          "palabra": "vítrea",
+          "inicioMs": 620,
+          "finMs": 1040
+        },
+        {
+          "palabra": "inmoviliza",
+          "inicioMs": 1040,
+          "finMs": 1660
+        },
+        {
+          "palabra": "y",
+          "inicioMs": 1660,
+          "finMs": 1840
+        },
+        {
+          "palabra": "congela",
+          "inicioMs": 1840,
+          "finMs": 2320
+        },
+        {
+          "palabra": "sus",
+          "inicioMs": 2320,
+          "finMs": 2480
+        },
+        {
+          "palabra": "proteínas",
+          "inicioMs": 2480,
+          "finMs": 3080
+        },
+        {
+          "palabra": "y",
+          "inicioMs": 3080,
+          "finMs": 3280
+        },
+        {
+          "palabra": "ADN",
+          "inicioMs": 3280,
+          "finMs": 3540
+        },
+        {
+          "palabra": "en",
+          "inicioMs": 3540,
+          "finMs": 3840
+        },
+        {
+          "palabra": "el",
+          "inicioMs": 3840,
+          "finMs": 3960
+        },
+        {
+          "palabra": "espacio",
+          "inicioMs": 3960,
+          "finMs": 4240
+        },
+        {
+          "palabra": "exacto",
+          "inicioMs": 4240,
+          "finMs": 5240
+        },
+        {
+          "palabra": "reduciendo",
+          "inicioMs": 5560,
+          "finMs": 6040
+        },
+        {
+          "palabra": "su",
+          "inicioMs": 6040,
+          "finMs": 6220
+        },
+        {
+          "palabra": "metabolismo",
+          "inicioMs": 6220,
+          "finMs": 6540
+        },
+        {
+          "palabra": "al",
+          "inicioMs": 6540,
+          "finMs": 6920
+        },
+        {
+          "palabra": "cero",
+          "inicioMs": 6920,
+          "finMs": 7140
+        },
+        {
+          "palabra": "punto",
+          "inicioMs": 7140,
+          "finMs": 8840
+        },
+        {
+          "palabra": "cero",
+          "inicioMs": 8840,
+          "finMs": 9140
+        },
+        {
+          "palabra": "uno",
+          "inicioMs": 9140,
+          "finMs": 9320
+        },
+        {
+          "palabra": "por",
+          "inicioMs": 9320,
+          "finMs": 9500
+        },
+        {
+          "palabra": "ciento",
+          "inicioMs": 9500,
+          "finMs": 9640
+        },
+        {
+          "palabra": "la",
+          "inicioMs": 9640,
+          "finMs": 9820
+        },
+        {
+          "palabra": "vida",
+          "inicioMs": 9820,
+          "finMs": 10080
+        },
+        {
+          "palabra": "se",
+          "inicioMs": 10080,
+          "finMs": 10360
+        },
+        {
+          "palabra": "pone",
+          "inicioMs": 10360,
+          "finMs": 10440
+        },
+        {
+          "palabra": "en",
+          "inicioMs": 10360,
+          "finMs": 10440
+        },
+        {
+          "palabra": "pausa",
+          "inicioMs": 10360,
+          "finMs": 10440
+        },
+        {
+          "palabra": "total",
+          "inicioMs": 10360,
+          "finMs": 10440
+        }
+      ]
+    },
+    {
+      "id": 9,
+      "texto": "Pueden pasar treinta años en este estado de criptobiosis. Basta colocar una sola gota de agua fresca para que en pocos minutos el oso de agua reviva y siga caminando.",
+      "icono": "Droplet",
+      "colorIcono": "#10B981",
+      "tituloVisual": "RESURRECCIÓN",
+      "composicionVisual": "primer_plano",
+      "escenario": "laboratorio_neuro",
+      "layout": "narrativo",
+      "transicion": "zoom_in",
+      "efectosCamara": [
+        "punch",
+        "drift"
+      ],
+      "sfx": "sfx/sfx_dramatic_hit.wav",
+      "volumenSfx": 0.25,
+      "palabrasClave": [
+        "treinta años",
+        "criptobiosis",
+        "una sola gota",
+        "reviva y camine"
+      ],
+      "personajes": [
+        {
+          "id": "biologo",
+          "posicion": {
+            "x": 0,
+            "y": 50
+          },
+          "escala": 1.15,
+          "orientacion": "derecha",
+          "prop": "tardigrade_hero",
+          "poseId": "presenting_object",
+          "expresion": "smile_wide",
+          "habla": true
+        }
+      ],
+      "duracionSegundos": 8.674,
+      "palabras": [
+        {
+          "palabra": "Pueden",
+          "inicioMs": 0,
+          "finMs": 300
+        },
+        {
+          "palabra": "pasar",
+          "inicioMs": 300,
+          "finMs": 560
+        },
+        {
+          "palabra": "treinta",
+          "inicioMs": 560,
+          "finMs": 880
+        },
+        {
+          "palabra": "años",
+          "inicioMs": 880,
+          "finMs": 1260
+        },
+        {
+          "palabra": "en",
+          "inicioMs": 1260,
+          "finMs": 1440
+        },
+        {
+          "palabra": "este",
+          "inicioMs": 1440,
+          "finMs": 1640
+        },
+        {
+          "palabra": "estado",
+          "inicioMs": 1640,
+          "finMs": 1920
+        },
+        {
+          "palabra": "de",
+          "inicioMs": 1920,
+          "finMs": 2060
+        },
+        {
+          "palabra": "criptobiosis",
+          "inicioMs": 2060,
+          "finMs": 2880
+        },
+        {
+          "palabra": "Basta",
+          "inicioMs": 3000,
+          "finMs": 3220
+        },
+        {
+          "palabra": "colocar",
+          "inicioMs": 3220,
+          "finMs": 3540
+        },
+        {
+          "palabra": "una",
+          "inicioMs": 3540,
+          "finMs": 3840
+        },
+        {
+          "palabra": "sola",
+          "inicioMs": 3840,
+          "finMs": 4060
+        },
+        {
+          "palabra": "gota",
+          "inicioMs": 4060,
+          "finMs": 4400
+        },
+        {
+          "palabra": "de",
+          "inicioMs": 4400,
+          "finMs": 4480
+        },
+        {
+          "palabra": "agua",
+          "inicioMs": 4480,
+          "finMs": 4620
+        },
+        {
+          "palabra": "fresca",
+          "inicioMs": 4620,
+          "finMs": 5000
+        },
+        {
+          "palabra": "para",
+          "inicioMs": 5000,
+          "finMs": 5180
+        },
+        {
+          "palabra": "que",
+          "inicioMs": 5180,
+          "finMs": 5320
+        },
+        {
+          "palabra": "en",
+          "inicioMs": 5320,
+          "finMs": 5420
+        },
+        {
+          "palabra": "pocos",
+          "inicioMs": 5420,
+          "finMs": 5720
+        },
+        {
+          "palabra": "minutos",
+          "inicioMs": 5720,
+          "finMs": 6000
+        },
+        {
+          "palabra": "el",
+          "inicioMs": 6000,
+          "finMs": 6280
+        },
+        {
+          "palabra": "oso",
+          "inicioMs": 6280,
+          "finMs": 6420
+        },
+        {
+          "palabra": "de",
+          "inicioMs": 6420,
+          "finMs": 6580
+        },
+        {
+          "palabra": "agua",
+          "inicioMs": 6580,
+          "finMs": 6740
+        },
+        {
+          "palabra": "reviva",
+          "inicioMs": 6740,
+          "finMs": 7140
+        },
+        {
+          "palabra": "y",
+          "inicioMs": 7140,
+          "finMs": 7360
+        },
+        {
+          "palabra": "siga",
+          "inicioMs": 7360,
+          "finMs": 7620
+        },
+        {
+          "palabra": "caminando",
+          "inicioMs": 7620,
+          "finMs": 8200
+        }
+      ]
+    },
+    {
+      "id": 10,
+      "texto": "El tardígrado nos demuestra que la vida no es frágil como creíamos: la naturaleza diseñó la criogenia perfecta millones de años antes de que los humanos la soñáramos.",
+      "icono": "Globe",
+      "colorIcono": "#F59E0B",
+      "tituloVisual": "LECCIÓN CÓSMICA",
+      "composicionVisual": "plano_general",
+      "escenario": "espacio_profundo",
+      "layout": "narrativo",
+      "transicion": "whip_right",
+      "efectosCamara": [
+        "drift"
+      ],
+      "palabrasClave": [
+        "no es frágil",
+        "criogenia perfecta",
+        "naturaleza viva",
+        "lección cósmica"
+      ],
+      "personajes": [
+        {
+          "id": "biologo",
+          "posicion": {
+            "x": 0,
+            "y": 50
+          },
+          "escala": 1.15,
+          "orientacion": "derecha",
+          "prop": "tardigrade_hero",
+          "poseId": "presenting_object",
+          "expresion": "talking_enthusiastic",
+          "habla": true
+        }
+      ],
+      "duracionSegundos": 8.29,
+      "palabras": [
+        {
+          "palabra": "El",
+          "inicioMs": 0,
+          "finMs": 160
+        },
+        {
+          "palabra": "tardígrado",
+          "inicioMs": 160,
+          "finMs": 380
+        },
+        {
+          "palabra": "nos",
+          "inicioMs": 380,
+          "finMs": 540
+        },
+        {
+          "palabra": "demuestra",
+          "inicioMs": 540,
+          "finMs": 1080
+        },
+        {
+          "palabra": "que",
+          "inicioMs": 1080,
+          "finMs": 1220
+        },
+        {
+          "palabra": "la",
+          "inicioMs": 1220,
+          "finMs": 1320
+        },
+        {
+          "palabra": "vida",
+          "inicioMs": 1320,
+          "finMs": 1540
+        },
+        {
+          "palabra": "no",
+          "inicioMs": 1540,
+          "finMs": 1760
+        },
+        {
+          "palabra": "es",
+          "inicioMs": 1760,
+          "finMs": 1900
+        },
+        {
+          "palabra": "frágil",
+          "inicioMs": 1900,
+          "finMs": 2280
+        },
+        {
+          "palabra": "como",
+          "inicioMs": 2280,
+          "finMs": 2480
+        },
+        {
+          "palabra": "creíamos",
+          "inicioMs": 2480,
+          "finMs": 2980
+        },
+        {
+          "palabra": "la",
+          "inicioMs": 3100,
+          "finMs": 3180
+        },
+        {
+          "palabra": "naturaleza",
+          "inicioMs": 3180,
+          "finMs": 3800
+        },
+        {
+          "palabra": "diseñó",
+          "inicioMs": 3800,
+          "finMs": 4220
+        },
+        {
+          "palabra": "la",
+          "inicioMs": 4220,
+          "finMs": 4320
+        },
+        {
+          "palabra": "criogenia",
+          "inicioMs": 4320,
+          "finMs": 4860
+        },
+        {
+          "palabra": "perfecta",
+          "inicioMs": 4860,
+          "finMs": 5320
+        },
+        {
+          "palabra": "millones",
+          "inicioMs": 5320,
+          "finMs": 5460
+        },
+        {
+          "palabra": "de",
+          "inicioMs": 5460,
+          "finMs": 5800
+        },
+        {
+          "palabra": "años",
+          "inicioMs": 5800,
+          "finMs": 5980
+        },
+        {
+          "palabra": "antes",
+          "inicioMs": 5980,
+          "finMs": 6400
+        },
+        {
+          "palabra": "de",
+          "inicioMs": 6400,
+          "finMs": 6560
+        },
+        {
+          "palabra": "que",
+          "inicioMs": 6560,
+          "finMs": 6660
+        },
+        {
+          "palabra": "los",
+          "inicioMs": 6660,
+          "finMs": 6780
+        },
+        {
+          "palabra": "humanos",
+          "inicioMs": 6780,
+          "finMs": 7060
+        },
+        {
+          "palabra": "la",
+          "inicioMs": 7060,
+          "finMs": 7280
+        },
+        {
+          "palabra": "soñáramos",
+          "inicioMs": 7280,
+          "finMs": 7780
+        }
+      ]
+    }
+  ]
+}

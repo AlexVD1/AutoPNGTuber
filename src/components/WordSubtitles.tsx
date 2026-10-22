@@ -58,19 +58,30 @@ export const WordSubtitles: React.FC<WordSubtitlesProps> = ({
 
   const currentTimeMs = (frame / fps) * 1000;
 
-  // Encontrar la palabra activa según su tiempo de inicio
-  let activeWordIndex = 0;
-  for (let i = 0; i < palabras.length; i++) {
-    if (currentTimeMs >= palabras[i].inicioMs) {
-      activeWordIndex = i;
+  // 1. Determinar el bloque actual de forma monótona (evita saltos hacia atrás o re-disparos)
+  let currentBlockIndex = 0;
+  for (let b = 0; b < bloques.length; b++) {
+    const primerInicio = bloques[b][0]?.inicioMs ?? 0;
+    if (currentTimeMs >= primerInicio) {
+      currentBlockIndex = b;
     } else {
       break;
     }
   }
 
+  // El bloque actual nunca cae al primero por error: se mantiene fijo en el último bloque al terminar
   const bloqueActual =
-    bloques.find((b) => b.some((p) => p.index === activeWordIndex)) ??
-    bloques[0];
+    bloques[currentBlockIndex] ?? bloques[bloques.length - 1] ?? bloques[0];
+
+  // 2. Determinar palabra activa sólo dentro de su ventana de pronunciación (+80ms de gracia natural)
+  let activeWordIndex = -1;
+  for (let i = 0; i < palabras.length; i++) {
+    const p = palabras[i];
+    if (currentTimeMs >= p.inicioMs && currentTimeMs <= p.finMs + 80) {
+      activeWordIndex = i;
+      break;
+    }
+  }
 
   return (
     <div className="w-full px-8 flex items-center justify-center">
@@ -78,7 +89,9 @@ export const WordSubtitles: React.FC<WordSubtitlesProps> = ({
       <div className="flex flex-wrap justify-center items-center gap-x-6 gap-y-3 text-center">
         {bloqueActual.map((item) => {
           const isActive =
-            item.index === activeWordIndex && currentTimeMs >= item.inicioMs;
+            item.index === activeWordIndex &&
+            currentTimeMs >= item.inicioMs &&
+            currentTimeMs <= item.finMs + 80;
 
           // Limpiar signos para identificar si es número o palabra clave
           const cleanWord = item.palabra

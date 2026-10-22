@@ -66,6 +66,32 @@ export type TipoEscenario =
   | "laboratorio"
   | "calle"
   | "lunar"
+  | "abismo_oceanico"
+  | "interior_cuerpo"
+  | "mar_abierto"
+  | "espacio_profundo"
+  | "cielo_dia"
+  | "atardecer_dorado"
+  | "tormenta_electrica"
+  | "bosque_frio_nocturno"
+  | "sala_estar"
+  | "laboratorio_neuro"
+  | "azotea_rascacielos"
+  | "rascacielos"
+  | "tumba_egipcia"
+  | "egipto"
+  | "superficie_marte"
+  | "marte"
+  | "lago_helado"
+  | "glaciar"
+  | "artico"
+  | "selva_tropical"
+  | "bosque_tropical"
+  | "amazonas"
+  | "nucleo_tierra"
+  | "arrecife_coral"
+  | "red_subterranea"
+  | "vuelo_relativista"
   | "vacio";
 
 export type TipoCurvaMovimiento =
@@ -212,3 +238,49 @@ export interface EscenaGuion {
 export type ShortProps = {
   escenas: EscenaGuion[];
 };
+
+export interface GuionMeta {
+  id?: string;
+  slug?: string;
+  temaResumen?: string;
+  [key: string]: unknown;
+}
+
+export interface GuionConMeta {
+  meta?: GuionMeta;
+  escenas: EscenaGuion[];
+}
+
+export type GuionEstructura = EscenaGuion[] | GuionConMeta;
+
+export interface RegistroHistorialTema {
+  id: string;
+  fecha: string;
+  gancho: string;
+  palabrasClave: string;
+  archivoRespaldo: string;
+  textoCompleto?: string;
+}
+
+export interface VideoMetadata {
+  storyId: string;
+  title: string;
+  description: string;
+  hashtags: string[];
+  genre: string;
+  category: string;
+  language: string;
+  duration_seconds: number;
+  resolution: string;
+  format: string;
+  codec_video: string;
+  codec_audio: string;
+  fps: number;
+  created_at: string;
+  video_file: string;
+  scene_count: number;
+  has_subtitles: boolean;
+  has_narration: boolean;
+  has_music: boolean;
+  tts_voice: string;
+}

@@ -1,0 +1,1668 @@
+{
+  "meta": {
+    "id": "miel_inmortal_arqueologia",
+    "slug": "miel_inmortal_arqueologia",
+    "temaResumen": "¿Por qué la miel es el único alimento que nunca caduca en miles de años?"
+  },
+  "escenas": [
+    {
+      "id": 1,
+      "texto": "¿Sabías que los arqueólogos han encontrado vasijas de miel en tumbas del antiguo Egipto con más de tres mil años y aún era comestible?",
+      "icono": "Bug",
+      "colorIcono": "#F59E0B",
+      "tituloVisual": "MIEL INMORTAL",
+      "composicionVisual": "plano_general",
+      "escenario": "tumba_egipcia",
+      "layout": "narrativo",
+      "transicion": "zoom_in",
+      "efectosCamara": [
+        "drift"
+      ],
+      "sfx": "sfx/sfx_whoosh.wav",
+      "volumenSfx": 0.2,
+      "palabrasClave": [
+        "vasijas de miel",
+        "antiguo Egipto",
+        "tres mil años"
+      ],
+      "personajes": [
+        {
+          "id": "arqueologo",
+          "posicion": {
+            "x": -160,
+            "y": 70
+          },
+          "escala": 1.05,
+          "orientacion": "derecha",
+          "prop": "honey_pot",
+          "poseId": "explaining_pointing_up",
+          "expresion": "talking_enthusiastic",
+          "acciones": [
+            {
+              "tipo": "caminar_hacia",
+              "desdeX": -260,
+              "haciaX": -120
+            }
+          ],
+          "habla": true
+        }
+      ],
+      "duracionSegundos": 7.45,
+      "palabras": [
+        {
+          "palabra": "Sabías",
+          "inicioMs": 0,
+          "finMs": 420
+        },
+        {
+          "palabra": "que",
+          "inicioMs": 420,
+          "finMs": 600
+        },
+        {
+          "palabra": "los",
+          "inicioMs": 600,
+          "finMs": 740
+        },
+        {
+          "palabra": "arqueólogos",
+          "inicioMs": 740,
+          "finMs": 1400
+        },
+        {
+          "palabra": "han",
+          "inicioMs": 1400,
+          "finMs": 1560
+        },
+        {
+          "palabra": "encontrado",
+          "inicioMs": 1560,
+          "finMs": 2060
+        },
+        {
+          "palabra": "vasijas",
+          "inicioMs": 2060,
+          "finMs": 2600
+        },
+        {
+          "palabra": "de",
+          "inicioMs": 2600,
+          "finMs": 2800
+        },
+        {
+          "palabra": "miel",
+          "inicioMs": 2800,
+          "finMs": 3060
+        },
+        {
+          "palabra": "en",
+          "inicioMs": 3060,
+          "finMs": 3360
+        },
+        {
+          "palabra": "tumbas",
+          "inicioMs": 3360,
+          "finMs": 3500
+        },
+        {
+          "palabra": "del",
+          "inicioMs": 3500,
+          "finMs": 3860
+        },
+        {
+          "palabra": "antiguo",
+          "inicioMs": 3860,
+          "finMs": 4260
+        },
+        {
+          "palabra": "Egipto",
+          "inicioMs": 4260,
+          "finMs": 4700
+        },
+        {
+          "palabra": "con",
+          "inicioMs": 4700,
+          "finMs": 4880
+        },
+        {
+          "palabra": "más",
+          "inicioMs": 4880,
+          "finMs": 5020
+        },
+        {
+          "palabra": "de",
+          "inicioMs": 5020,
+          "finMs": 5320
+        },
+        {
+          "palabra": "tres",
+          "inicioMs": 5320,
+          "finMs": 5720
+        },
+        {
+          "palabra": "mil",
+          "inicioMs": 5720,
+          "finMs": 6060
+        },
+        {
+          "palabra": "años",
+          "inicioMs": 6060,
+          "finMs": 6240
+        },
+        {
+          "palabra": "y",
+          "inicioMs": 6240,
+          "finMs": 6420
+        },
+        {
+          "palabra": "aún",
+          "inicioMs": 6420,
+          "finMs": 6960
+        },
+        {
+          "palabra": "era",
+          "inicioMs": 6960,
+          "finMs": 7080
+        },
+        {
+          "palabra": "comestible",
+          "inicioMs": 6960,
+          "finMs": 7080
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "texto": "Cualquier otro alimento orgánico se pudre, se llena de hongos o fermenta en cuestión de días si lo dejas al aire libre.",
+      "icono": "AlertTriangle",
+      "colorIcono": "#EF4444",
+      "tituloVisual": "CADUCIDAD TOTAL",
+      "composicionVisual": "primer_plano",
+      "escenario": "laboratorio",
+      "layout": "narrativo",
+      "transicion": "whip_right",
+      "efectosCamara": [
+        "shake",
+        "punch"
+      ],
+      "sfx": "sfx/sfx_dramatic_hit.wav",
+      "volumenSfx": 0.25,
+      "elementosNarrativos": [
+        {
+          "tipo": "danger_vignette"
+        }
+      ],
+      "palabrasClave": [
+        "alimento orgánico",
+        "se pudre",
+        "hongos"
+      ],
+      "personajes": [
+        {
+          "id": "victima",
+          "posicion": {
+            "x": 0,
+            "y": 50
+          },
+          "escala": 1.15,
+          "orientacion": "derecha",
+          "poseId": "backing_away_scared",
+          "expresion": "shocked",
+          "acciones": [
+            {
+              "tipo": "sorpresa_y_retroceso"
+            }
+          ],
+          "habla": true
+        }
+      ],
+      "duracionSegundos": 6.13,
+      "palabras": [
+        {
+          "palabra": "Cualquier",
+          "inicioMs": 0,
+          "finMs": 400
+        },
+        {
+          "palabra": "otro",
+          "inicioMs": 400,
+          "finMs": 660
+        },
+        {
+          "palabra": "alimento",
+          "inicioMs": 660,
+          "finMs": 940
+        },
+        {
+          "palabra": "orgánico",
+          "inicioMs": 940,
+          "finMs": 1480
+        },
+        {
+          "palabra": "se",
+          "inicioMs": 1480,
+          "finMs": 1620
+        },
+        {
+          "palabra": "pudre",
+          "inicioMs": 1620,
+          "finMs": 2020
+        },
+        {
+          "palabra": "se",
+          "inicioMs": 2160,
+          "finMs": 2240
+        },
+        {
+          "palabra": "llena",
+          "inicioMs": 2240,
+          "finMs": 2520
+        },
+        {
+          "palabra": "de",
+          "inicioMs": 2520,
+          "finMs": 2660
+        },
+        {
+          "palabra": "hongos",
+          "inicioMs": 2660,
+          "finMs": 3080
+        },
+        {
+          "palabra": "o",
+          "inicioMs": 3080,
+          "finMs": 3180
+        },
+        {
+          "palabra": "fermenta",
+          "inicioMs": 3180,
+          "finMs": 3660
+        },
+        {
+          "palabra": "en",
+          "inicioMs": 3660,
+          "finMs": 3720
+        },
+        {
+          "palabra": "cuestión",
+          "inicioMs": 3720,
+          "finMs": 3980
+        },
+        {
+          "palabra": "de",
+          "inicioMs": 3980,
+          "finMs": 4220
+        },
+        {
+          "palabra": "días",
+          "inicioMs": 4220,
+          "finMs": 4480
+        },
+        {
+          "palabra": "si",
+          "inicioMs": 4480,
+          "finMs": 4660
+        },
+        {
+          "palabra": "lo",
+          "inicioMs": 4660,
+          "finMs": 4760
+        },
+        {
+          "palabra": "dejas",
+          "inicioMs": 4760,
+          "finMs": 5020
+        },
+        {
+          "palabra": "al",
+          "inicioMs": 5020,
+          "finMs": 5180
+        },
+        {
+          "palabra": "aire",
+          "inicioMs": 5180,
+          "finMs": 5360
+        },
+        {
+          "palabra": "libre",
+          "inicioMs": 5360,
+          "finMs": 5640
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "texto": "El primer gran secreto de la miel es su bajísimo contenido de agua: apenas un diecisiete por ciento de humedad en su estado natural.",
+      "icono": "Droplet",
+      "colorIcono": "#38BDF8",
+      "tituloVisual": "CERO HUMEDAD",
+      "composicionVisual": "plano_general",
+      "escenario": "laboratorio",
+      "layout": "narrativo",
+      "transicion": "whip_left",
+      "efectosCamara": [
+        "drift"
+      ],
+      "palabrasClave": [
+        "bajísimo contenido",
+        "diecisiete por ciento",
+        "humedad"
+      ],
+      "personajes": [
+        {
+          "id": "quimico",
+          "posicion": {
+            "x": -160,
+            "y": 70
+          },
+          "escala": 1.05,
+          "orientacion": "derecha",
+          "prop": "honey_pot",
+          "poseId": "presenting_object",
+          "expresion": "analytical",
+          "habla": true
+        }
+      ],
+      "duracionSegundos": 6.946,
+      "palabras": [
+        {
+          "palabra": "El",
+          "inicioMs": 0,
+          "finMs": 200
+        },
+        {
+          "palabra": "primer",
+          "inicioMs": 200,
+          "finMs": 420
+        },
+        {
+          "palabra": "gran",
+          "inicioMs": 420,
+          "finMs": 700
+        },
+        {
+          "palabra": "secreto",
+          "inicioMs": 700,
+          "finMs": 1160
+        },
+        {
+          "palabra": "de",
+          "inicioMs": 1160,
+          "finMs": 1260
+        },
+        {
+          "palabra": "la",
+          "inicioMs": 1260,
+          "finMs": 1360
+        },
+        {
+          "palabra": "miel",
+          "inicioMs": 1360,
+          "finMs": 1540
+        },
+        {
+          "palabra": "es",
+          "inicioMs": 1540,
+          "finMs": 1800
+        },
+        {
+          "palabra": "su",
+          "inicioMs": 1800,
+          "finMs": 1900
+        },
+        {
+          "palabra": "bajísimo",
+          "inicioMs": 1900,
+          "finMs": 2360
+        },
+        {
+          "palabra": "contenido",
+          "inicioMs": 2360,
+          "finMs": 2740
+        },
+        {
+          "palabra": "de",
+          "inicioMs": 2740,
+          "finMs": 3060
+        },
+        {
+          "palabra": "agua",
+          "inicioMs": 3060,
+          "finMs": 3340
+        },
+        {
+          "palabra": "apenas",
+          "inicioMs": 3500,
+          "finMs": 3760
+        },
+        {
+          "palabra": "un",
+          "inicioMs": 3760,
+          "finMs": 3980
+        },
+        {
+          "palabra": "diecisiete",
+          "inicioMs": 3980,
+          "finMs": 4400
+        },
+        {
+          "palabra": "por",
+          "inicioMs": 4400,
+          "finMs": 5020
+        },
+        {
+          "palabra": "ciento",
+          "inicioMs": 5020,
+          "finMs": 5200
+        },
+        {
+          "palabra": "de",
+          "inicioMs": 5200,
+          "finMs": 5580
+        },
+        {
+          "palabra": "humedad",
+          "inicioMs": 5580,
+          "finMs": 5740
+        },
+        {
+          "palabra": "en",
+          "inicioMs": 5740,
+          "finMs": 5840
+        },
+        {
+          "palabra": "su",
+          "inicioMs": 5840,
+          "finMs": 6100
+        },
+        {
+          "palabra": "estado",
+          "inicioMs": 6100,
+          "finMs": 6460
+        },
+        {
+          "palabra": "natural",
+          "inicioMs": 6460,
+          "finMs": 6696
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "texto": "A nivel microscópico, esta concentración masiva de azúcares genera una presión osmótica implacable que absorbe el agua de cualquier bacteria.",
+      "icono": "Activity",
+      "colorIcono": "#EC4899",
+      "tituloVisual": "ÓSMOSIS BRUTAL",
+      "composicionVisual": "plano_general",
+      "escenario": "laboratorio",
+      "layout": "narrativo",
+      "transicion": "zoom_in",
+      "efectosCamara": [
+        "drift"
+      ],
+      "palabrasClave": [
+        "presión osmótica",
+        "absorbe el agua",
+        "cualquier bacteria"
+      ],
+      "personajes": [
+        {
+          "id": "quimico",
+          "posicion": {
+            "x": -160,
+            "y": 70
+          },
+          "escala": 1.05,
+          "orientacion": "derecha",
+          "poseId": "explaining_both_hands",
+          "expresion": "eureka",
+          "habla": true
+        }
+      ],
+      "objetos": [
+        {
+          "id": "celula_deshidratada",
+          "propId": "shrinking_cell",
+          "posicion": {
+            "x": 220,
+            "y": -50
+          },
+          "escala": 1.6,
+          "animacion": {
+            "tipo": "pulso"
+          }
+        }
+      ],
+      "duracionSegundos": 8.17,
+      "palabras": [
+        {
+          "palabra": "A",
+          "inicioMs": 0,
+          "finMs": 160
+        },
+        {
+          "palabra": "nivel",
+          "inicioMs": 160,
+          "finMs": 340
+        },
+        {
+          "palabra": "microscópico",
+          "inicioMs": 340,
+          "finMs": 1280
+        },
+        {
+          "palabra": "esta",
+          "inicioMs": 1540,
+          "finMs": 1760
+        },
+        {
+          "palabra": "concentración",
+          "inicioMs": 1760,
+          "finMs": 2400
+        },
+        {
+          "palabra": "masiva",
+          "inicioMs": 2400,
+          "finMs": 2840
+        },
+        {
+          "palabra": "de",
+          "inicioMs": 2840,
+          "finMs": 3000
+        },
+        {
+          "palabra": "azúcares",
+          "inicioMs": 3000,
+          "finMs": 3540
+        },
+        {
+          "palabra": "genera",
+          "inicioMs": 3540,
+          "finMs": 4120
+        },
+        {
+          "palabra": "una",
+          "inicioMs": 4120,
+          "finMs": 4220
+        },
+        {
+          "palabra": "presión",
+          "inicioMs": 4220,
+          "finMs": 4600
+        },
+        {
+          "palabra": "osmótica",
+          "inicioMs": 4600,
+          "finMs": 5160
+        },
+        {
+          "palabra": "implacable",
+          "inicioMs": 5160,
+          "finMs": 5740
+        },
+        {
+          "palabra": "que",
+          "inicioMs": 5740,
+          "finMs": 5940
+        },
+        {
+          "palabra": "absorbe",
+          "inicioMs": 5940,
+          "finMs": 6400
+        },
+        {
+          "palabra": "el",
+          "inicioMs": 6400,
+          "finMs": 6560
+        },
+        {
+          "palabra": "agua",
+          "inicioMs": 6560,
+          "finMs": 6740
+        },
+        {
+          "palabra": "de",
+          "inicioMs": 6740,
+          "finMs": 6860
+        },
+        {
+          "palabra": "cualquier",
+          "inicioMs": 6860,
+          "finMs": 7180
+        },
+        {
+          "palabra": "bacteria",
+          "inicioMs": 7180,
+          "finMs": 7620
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "texto": "Cuando una bacteria o espora aterriza en la miel, el líquido le extrae toda el agua interna en segundos, secándola y matándola al instante.",
+      "icono": "Skull",
+      "colorIcono": "#EF4444",
+      "tituloVisual": "MUERTE BACTERIANA",
+      "composicionVisual": "cifras_concepto",
+      "escenario": "laboratorio",
+      "layout": "narrativo",
+      "transicion": "corte",
+      "efectosCamara": [
+        "punch",
+        "drift"
+      ],
+      "palabrasClave": [
+        "extrae toda el agua",
+        "secándola",
+        "matándola al instante"
+      ],
+      "personajes": [
+        {
+          "id": "quimico",
+          "posicion": {
+            "x": -150,
+            "y": 70
+          },
+          "escala": 1.05,
+          "orientacion": "derecha",
+          "poseId": "pointing_right",
+          "expresion": "analytical",
+          "habla": true
+        }
+      ],
+      "objetos": [
+        {
+          "id": "bacteria_muerta",
+          "propId": "shrinking_cell",
+          "posicion": {
+            "x": 220,
+            "y": -40
+          },
+          "escala": 1.7,
+          "animacion": {
+            "tipo": "vibrar"
+          }
+        }
+      ],
+      "duracionSegundos": 7.138,
+      "palabras": [
+        {
+          "palabra": "Cuando",
+          "inicioMs": 0,
+          "finMs": 240
+        },
+        {
+          "palabra": "una",
+          "inicioMs": 240,
+          "finMs": 480
+        },
+        {
+          "palabra": "bacteria",
+          "inicioMs": 480,
+          "finMs": 820
+        },
+        {
+          "palabra": "o",
+          "inicioMs": 820,
+          "finMs": 1000
+        },
+        {
+          "palabra": "espora",
+          "inicioMs": 1000,
+          "finMs": 1680
+        },
+        {
+          "palabra": "aterriza",
+          "inicioMs": 1680,
+          "finMs": 1800
+        },
+        {
+          "palabra": "en",
+          "inicioMs": 1800,
+          "finMs": 2020
+        },
+        {
+          "palabra": "la",
+          "inicioMs": 2060,
+          "finMs": 2200
+        },
+        {
+          "palabra": "miel",
+          "inicioMs": 2200,
+          "finMs": 2440
+        },
+        {
+          "palabra": "el",
+          "inicioMs": 2440,
+          "finMs": 2540
+        },
+        {
+          "palabra": "líquido",
+          "inicioMs": 2540,
+          "finMs": 2920
+        },
+        {
+          "palabra": "le",
+          "inicioMs": 2920,
+          "finMs": 3080
+        },
+        {
+          "palabra": "extrae",
+          "inicioMs": 3080,
+          "finMs": 3280
+        },
+        {
+          "palabra": "toda",
+          "inicioMs": 3280,
+          "finMs": 3420
+        },
+        {
+          "palabra": "el",
+          "inicioMs": 3420,
+          "finMs": 3820
+        },
+        {
+          "palabra": "agua",
+          "inicioMs": 3820,
+          "finMs": 3900
+        },
+        {
+          "palabra": "interna",
+          "inicioMs": 3900,
+          "finMs": 4300
+        },
+        {
+          "palabra": "en",
+          "inicioMs": 4420,
+          "finMs": 4980
+        },
+        {
+          "palabra": "segundos",
+          "inicioMs": 4980,
+          "finMs": 5240
+        },
+        {
+          "palabra": "secándola",
+          "inicioMs": 5240,
+          "finMs": 5840
+        },
+        {
+          "palabra": "y",
+          "inicioMs": 5840,
+          "finMs": 6060
+        },
+        {
+          "palabra": "matándola",
+          "inicioMs": 6060,
+          "finMs": 6640
+        },
+        {
+          "palabra": "al",
+          "inicioMs": 6640,
+          "finMs": 6764
+        },
+        {
+          "palabra": "instante",
+          "inicioMs": 6640,
+          "finMs": 6764
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "texto": "Además, la miel posee una acidez natural sorprendente, con un pH entre tres y cuatro, un nivel tan ácido como el vinagre o el limón.",
+      "icono": "FlaskConical",
+      "colorIcono": "#10B981",
+      "tituloVisual": "ÁCIDO NATURAL",
+      "composicionVisual": "plano_general",
+      "escenario": "laboratorio",
+      "layout": "narrativo",
+      "transicion": "whip_right",
+      "efectosCamara": [
+        "drift"
+      ],
+      "palabrasClave": [
+        "acidez natural",
+        "pH entre tres y cuatro",
+        "vinagre"
+      ],
+      "personajes": [
+        {
+          "id": "quimico",
+          "posicion": {
+            "x": -160,
+            "y": 70
+          },
+          "escala": 1.05,
+          "orientacion": "derecha",
+          "prop": "flask",
+          "poseId": "investigating_magnifier",
+          "expresion": "analytical",
+          "habla": true
+        }
+      ],
+      "duracionSegundos": 6.634,
+      "palabras": [
+        {
+          "palabra": "Además",
+          "inicioMs": 0,
+          "finMs": 340
+        },
+        {
+          "palabra": "la",
+          "inicioMs": 500,
+          "finMs": 560
+        },
+        {
+          "palabra": "miel",
+          "inicioMs": 560,
+          "finMs": 680
+        },
+        {
+          "palabra": "posee",
+          "inicioMs": 680,
+          "finMs": 1040
+        },
+        {
+          "palabra": "una",
+          "inicioMs": 1040,
+          "finMs": 1180
+        },
+        {
+          "palabra": "acidez",
+          "inicioMs": 1180,
+          "finMs": 1460
+        },
+        {
+          "palabra": "natural",
+          "inicioMs": 1460,
+          "finMs": 1800
+        },
+        {
+          "palabra": "sorprendente",
+          "inicioMs": 1800,
+          "finMs": 2520
+        },
+        {
+          "palabra": "con",
+          "inicioMs": 2640,
+          "finMs": 2740
+        },
+        {
+          "palabra": "un",
+          "inicioMs": 2740,
+          "finMs": 2880
+        },
+        {
+          "palabra": "pH",
+          "inicioMs": 2880,
+          "finMs": 3000
+        },
+        {
+          "palabra": "entre",
+          "inicioMs": 3000,
+          "finMs": 3200
+        },
+        {
+          "palabra": "tres",
+          "inicioMs": 3200,
+          "finMs": 3420
+        },
+        {
+          "palabra": "y",
+          "inicioMs": 3420,
+          "finMs": 3540
+        },
+        {
+          "palabra": "cuatro",
+          "inicioMs": 3540,
+          "finMs": 3880
+        },
+        {
+          "palabra": "un",
+          "inicioMs": 4240,
+          "finMs": 4340
+        },
+        {
+          "palabra": "nivel",
+          "inicioMs": 4340,
+          "finMs": 4480
+        },
+        {
+          "palabra": "tan",
+          "inicioMs": 4480,
+          "finMs": 4700
+        },
+        {
+          "palabra": "ácido",
+          "inicioMs": 4700,
+          "finMs": 5000
+        },
+        {
+          "palabra": "como",
+          "inicioMs": 5000,
+          "finMs": 5200
+        },
+        {
+          "palabra": "el",
+          "inicioMs": 5200,
+          "finMs": 5320
+        },
+        {
+          "palabra": "vinagre",
+          "inicioMs": 5320,
+          "finMs": 5680
+        },
+        {
+          "palabra": "o",
+          "inicioMs": 5680,
+          "finMs": 5780
+        },
+        {
+          "palabra": "el",
+          "inicioMs": 5780,
+          "finMs": 5900
+        },
+        {
+          "palabra": "limón",
+          "inicioMs": 5900,
+          "finMs": 6160
+        }
+      ]
+    },
+    {
+      "id": 7,
+      "texto": "Pero el arma definitiva la añaden las abejas en su estómago: una poderosa enzima llamada glucosa oxidasa que transforma el néctar.",
+      "icono": "Sparkles",
+      "colorIcono": "#F59E0B",
+      "tituloVisual": "ENZIMA SECRETA",
+      "composicionVisual": "primer_plano",
+      "escenario": "tumba_egipcia",
+      "layout": "narrativo",
+      "transicion": "zoom_in",
+      "efectosCamara": [
+        "drift"
+      ],
+      "palabrasClave": [
+        "arma definitiva",
+        "glucosa oxidasa",
+        "estómago abejas"
+      ],
+      "personajes": [
+        {
+          "id": "narrador",
+          "posicion": {
+            "x": 0,
+            "y": 50
+          },
+          "escala": 1.15,
+          "orientacion": "derecha",
+          "poseId": "explaining_pointing_up",
+          "expresion": "eureka",
+          "habla": true
+        }
+      ],
+      "duracionSegundos": 6.97,
+      "palabras": [
+        {
+          "palabra": "Pero",
+          "inicioMs": 0,
+          "finMs": 240
+        },
+        {
+          "palabra": "el",
+          "inicioMs": 240,
+          "finMs": 360
+        },
+        {
+          "palabra": "arma",
+          "inicioMs": 360,
+          "finMs": 540
+        },
+        {
+          "palabra": "definitiva",
+          "inicioMs": 540,
+          "finMs": 1140
+        },
+        {
+          "palabra": "la",
+          "inicioMs": 1140,
+          "finMs": 1260
+        },
+        {
+          "palabra": "añaden",
+          "inicioMs": 1260,
+          "finMs": 1620
+        },
+        {
+          "palabra": "las",
+          "inicioMs": 1620,
+          "finMs": 1800
+        },
+        {
+          "palabra": "abejas",
+          "inicioMs": 1800,
+          "finMs": 2160
+        },
+        {
+          "palabra": "en",
+          "inicioMs": 2160,
+          "finMs": 2340
+        },
+        {
+          "palabra": "su",
+          "inicioMs": 2340,
+          "finMs": 2440
+        },
+        {
+          "palabra": "estómago",
+          "inicioMs": 2440,
+          "finMs": 2900
+        },
+        {
+          "palabra": "una",
+          "inicioMs": 3140,
+          "finMs": 3300
+        },
+        {
+          "palabra": "poderosa",
+          "inicioMs": 3300,
+          "finMs": 3780
+        },
+        {
+          "palabra": "enzima",
+          "inicioMs": 3780,
+          "finMs": 4100
+        },
+        {
+          "palabra": "llamada",
+          "inicioMs": 4100,
+          "finMs": 4520
+        },
+        {
+          "palabra": "glucosa",
+          "inicioMs": 4520,
+          "finMs": 5040
+        },
+        {
+          "palabra": "oxidasa",
+          "inicioMs": 5040,
+          "finMs": 5500
+        },
+        {
+          "palabra": "que",
+          "inicioMs": 5500,
+          "finMs": 5700
+        },
+        {
+          "palabra": "transforma",
+          "inicioMs": 5700,
+          "finMs": 6180
+        },
+        {
+          "palabra": "el",
+          "inicioMs": 6180,
+          "finMs": 6240
+        },
+        {
+          "palabra": "néctar",
+          "inicioMs": 6240,
+          "finMs": 6500
+        }
+      ]
+    },
+    {
+      "id": 8,
+      "texto": "Esta enzima descompone la glucosa produciendo microdosis constantes de peróxido de hidrógeno, el mismo compuesto del agua oxigenada.",
+      "icono": "Atom",
+      "colorIcono": "#6366F1",
+      "tituloVisual": "AGUA OXIGENADA",
+      "composicionVisual": "plano_general",
+      "escenario": "laboratorio",
+      "layout": "narrativo",
+      "transicion": "corte",
+      "efectosCamara": [
+        "drift"
+      ],
+      "palabrasClave": [
+        "peróxido de hidrógeno",
+        "microdosis constantes",
+        "agua oxigenada"
+      ],
+      "personajes": [
+        {
+          "id": "cientifico",
+          "posicion": {
+            "x": -150,
+            "y": 70
+          },
+          "escala": 1.05,
+          "orientacion": "derecha",
+          "prop": "atom",
+          "poseId": "presenting_object",
+          "expresion": "talking_enthusiastic",
+          "habla": true
+        }
+      ],
+      "duracionSegundos": 7.33,
+      "palabras": [
+        {
+          "palabra": "Esta",
+          "inicioMs": 0,
+          "finMs": 340
+        },
+        {
+          "palabra": "enzima",
+          "inicioMs": 340,
+          "finMs": 660
+        },
+        {
+          "palabra": "descompone",
+          "inicioMs": 660,
+          "finMs": 1300
+        },
+        {
+          "palabra": "la",
+          "inicioMs": 1300,
+          "finMs": 1460
+        },
+        {
+          "palabra": "glucosa",
+          "inicioMs": 1460,
+          "finMs": 1920
+        },
+        {
+          "palabra": "produciendo",
+          "inicioMs": 1920,
+          "finMs": 2440
+        },
+        {
+          "palabra": "microdosis",
+          "inicioMs": 2440,
+          "finMs": 3100
+        },
+        {
+          "palabra": "constantes",
+          "inicioMs": 3100,
+          "finMs": 3680
+        },
+        {
+          "palabra": "de",
+          "inicioMs": 3680,
+          "finMs": 3760
+        },
+        {
+          "palabra": "peróxido",
+          "inicioMs": 3760,
+          "finMs": 4200
+        },
+        {
+          "palabra": "de",
+          "inicioMs": 4200,
+          "finMs": 4320
+        },
+        {
+          "palabra": "hidrógeno",
+          "inicioMs": 4320,
+          "finMs": 4820
+        },
+        {
+          "palabra": "el",
+          "inicioMs": 5080,
+          "finMs": 5160
+        },
+        {
+          "palabra": "mismo",
+          "inicioMs": 5160,
+          "finMs": 5420
+        },
+        {
+          "palabra": "compuesto",
+          "inicioMs": 5420,
+          "finMs": 5900
+        },
+        {
+          "palabra": "del",
+          "inicioMs": 5900,
+          "finMs": 6060
+        },
+        {
+          "palabra": "agua",
+          "inicioMs": 6060,
+          "finMs": 6280
+        },
+        {
+          "palabra": "oxigenada",
+          "inicioMs": 6280,
+          "finMs": 6840
+        }
+      ]
+    },
+    {
+      "id": 9,
+      "texto": "Es un escudo químico antibacteriano perpetuo: un medio sin agua, ácido y cargado de desinfectante natural que no da tregua.",
+      "icono": "ShieldCheck",
+      "colorIcono": "#10B981",
+      "tituloVisual": "ESCUDO PERPETUO",
+      "composicionVisual": "plano_general",
+      "escenario": "laboratorio",
+      "layout": "narrativo",
+      "transicion": "whip_left",
+      "efectosCamara": [
+        "drift"
+      ],
+      "palabrasClave": [
+        "escudo químico",
+        "desinfectante natural",
+        "sin agua"
+      ],
+      "personajes": [
+        {
+          "id": "narrador",
+          "posicion": {
+            "x": -160,
+            "y": 70
+          },
+          "escala": 1.05,
+          "orientacion": "derecha",
+          "prop": "shield",
+          "poseId": "standing_confident",
+          "expresion": "proud",
+          "habla": true
+        }
+      ],
+      "duracionSegundos": 6.73,
+      "palabras": [
+        {
+          "palabra": "Es",
+          "inicioMs": 0,
+          "finMs": 240
+        },
+        {
+          "palabra": "un",
+          "inicioMs": 240,
+          "finMs": 340
+        },
+        {
+          "palabra": "escudo",
+          "inicioMs": 340,
+          "finMs": 680
+        },
+        {
+          "palabra": "químico",
+          "inicioMs": 680,
+          "finMs": 1100
+        },
+        {
+          "palabra": "antibacteriano",
+          "inicioMs": 1100,
+          "finMs": 1760
+        },
+        {
+          "palabra": "perpetuo",
+          "inicioMs": 1760,
+          "finMs": 2340
+        },
+        {
+          "palabra": "un",
+          "inicioMs": 2440,
+          "finMs": 2540
+        },
+        {
+          "palabra": "medio",
+          "inicioMs": 2540,
+          "finMs": 2780
+        },
+        {
+          "palabra": "sin",
+          "inicioMs": 2780,
+          "finMs": 3000
+        },
+        {
+          "palabra": "agua",
+          "inicioMs": 3000,
+          "finMs": 3300
+        },
+        {
+          "palabra": "ácido",
+          "inicioMs": 3500,
+          "finMs": 3600
+        },
+        {
+          "palabra": "y",
+          "inicioMs": 3600,
+          "finMs": 3820
+        },
+        {
+          "palabra": "cargado",
+          "inicioMs": 3820,
+          "finMs": 4280
+        },
+        {
+          "palabra": "de",
+          "inicioMs": 4280,
+          "finMs": 4460
+        },
+        {
+          "palabra": "desinfectante",
+          "inicioMs": 4460,
+          "finMs": 5080
+        },
+        {
+          "palabra": "natural",
+          "inicioMs": 5080,
+          "finMs": 5420
+        },
+        {
+          "palabra": "que",
+          "inicioMs": 5420,
+          "finMs": 5660
+        },
+        {
+          "palabra": "no",
+          "inicioMs": 5660,
+          "finMs": 5780
+        },
+        {
+          "palabra": "da",
+          "inicioMs": 5780,
+          "finMs": 5880
+        },
+        {
+          "palabra": "tregua",
+          "inicioMs": 5880,
+          "finMs": 6260
+        }
+      ]
+    },
+    {
+      "id": 10,
+      "texto": "La única forma de arruinar la miel es dejarla abierta en un ambiente húmedo, ya que absorbe agua del aire y podría fermentar.",
+      "icono": "AlertCircle",
+      "colorIcono": "#F59E0B",
+      "tituloVisual": "CUIDADO HUMEDAD",
+      "composicionVisual": "plano_general",
+      "escenario": "tumba_egipcia",
+      "layout": "narrativo",
+      "transicion": "zoom_in",
+      "efectosCamara": [
+        "drift"
+      ],
+      "palabrasClave": [
+        "ambiente húmedo",
+        "absorbe agua",
+        "podría fermentar"
+      ],
+      "personajes": [
+        {
+          "id": "arqueologo",
+          "posicion": {
+            "x": -150,
+            "y": 70
+          },
+          "escala": 1.05,
+          "orientacion": "derecha",
+          "prop": "honey_pot",
+          "poseId": "explaining_both_hands",
+          "expresion": "analytical",
+          "habla": true
+        }
+      ],
+      "duracionSegundos": 6.346,
+      "palabras": [
+        {
+          "palabra": "La",
+          "inicioMs": 0,
+          "finMs": 180
+        },
+        {
+          "palabra": "única",
+          "inicioMs": 180,
+          "finMs": 400
+        },
+        {
+          "palabra": "forma",
+          "inicioMs": 400,
+          "finMs": 680
+        },
+        {
+          "palabra": "de",
+          "inicioMs": 680,
+          "finMs": 860
+        },
+        {
+          "palabra": "arruinar",
+          "inicioMs": 860,
+          "finMs": 1180
+        },
+        {
+          "palabra": "la",
+          "inicioMs": 1180,
+          "finMs": 1320
+        },
+        {
+          "palabra": "miel",
+          "inicioMs": 1320,
+          "finMs": 1480
+        },
+        {
+          "palabra": "es",
+          "inicioMs": 1480,
+          "finMs": 1700
+        },
+        {
+          "palabra": "dejarla",
+          "inicioMs": 1700,
+          "finMs": 1940
+        },
+        {
+          "palabra": "abierta",
+          "inicioMs": 1940,
+          "finMs": 2440
+        },
+        {
+          "palabra": "en",
+          "inicioMs": 2440,
+          "finMs": 2540
+        },
+        {
+          "palabra": "un",
+          "inicioMs": 2540,
+          "finMs": 2640
+        },
+        {
+          "palabra": "ambiente",
+          "inicioMs": 2640,
+          "finMs": 2900
+        },
+        {
+          "palabra": "húmedo",
+          "inicioMs": 2900,
+          "finMs": 3500
+        },
+        {
+          "palabra": "ya",
+          "inicioMs": 3580,
+          "finMs": 3660
+        },
+        {
+          "palabra": "que",
+          "inicioMs": 3660,
+          "finMs": 3800
+        },
+        {
+          "palabra": "absorbe",
+          "inicioMs": 3800,
+          "finMs": 4180
+        },
+        {
+          "palabra": "agua",
+          "inicioMs": 4180,
+          "finMs": 4400
+        },
+        {
+          "palabra": "del",
+          "inicioMs": 4400,
+          "finMs": 4560
+        },
+        {
+          "palabra": "aire",
+          "inicioMs": 4560,
+          "finMs": 4820
+        },
+        {
+          "palabra": "y",
+          "inicioMs": 4820,
+          "finMs": 5000
+        },
+        {
+          "palabra": "podría",
+          "inicioMs": 5000,
+          "finMs": 5300
+        },
+        {
+          "palabra": "fermentar",
+          "inicioMs": 5300,
+          "finMs": 5860
+        }
+      ]
+    },
+    {
+      "id": 11,
+      "texto": "Mientras permanezca sellada, la miel desafía las leyes del tiempo y se convierte en el tesoro eterno de la naturaleza.",
+      "icono": "Trophy",
+      "colorIcono": "#FACC15",
+      "tituloVisual": "ORO ETERNO",
+      "composicionVisual": "plano_general",
+      "escenario": "tumba_egipcia",
+      "layout": "narrativo",
+      "transicion": "zoom_in",
+      "efectosCamara": [
+        "drift"
+      ],
+      "palabrasClave": [
+        "desafía el tiempo",
+        "tesoro eterno",
+        "naturaleza"
+      ],
+      "personajes": [
+        {
+          "id": "arqueologo",
+          "posicion": {
+            "x": 0,
+            "y": 50
+          },
+          "escala": 1.15,
+          "orientacion": "derecha",
+          "prop": "trophy",
+          "poseId": "celebrating_arms_up",
+          "expresion": "eureka",
+          "habla": true
+        }
+      ],
+      "duracionSegundos": 6.106,
+      "palabras": [
+        {
+          "palabra": "Mientras",
+          "inicioMs": 0,
+          "finMs": 340
+        },
+        {
+          "palabra": "permanezca",
+          "inicioMs": 340,
+          "finMs": 940
+        },
+        {
+          "palabra": "sellada",
+          "inicioMs": 940,
+          "finMs": 1460
+        },
+        {
+          "palabra": "la",
+          "inicioMs": 1540,
+          "finMs": 1600
+        },
+        {
+          "palabra": "miel",
+          "inicioMs": 1600,
+          "finMs": 1760
+        },
+        {
+          "palabra": "desafía",
+          "inicioMs": 1760,
+          "finMs": 2240
+        },
+        {
+          "palabra": "las",
+          "inicioMs": 2240,
+          "finMs": 2440
+        },
+        {
+          "palabra": "leyes",
+          "inicioMs": 2440,
+          "finMs": 2680
+        },
+        {
+          "palabra": "del",
+          "inicioMs": 2680,
+          "finMs": 2860
+        },
+        {
+          "palabra": "tiempo",
+          "inicioMs": 2860,
+          "finMs": 3200
+        },
+        {
+          "palabra": "y",
+          "inicioMs": 3200,
+          "finMs": 3360
+        },
+        {
+          "palabra": "se",
+          "inicioMs": 3360,
+          "finMs": 3440
+        },
+        {
+          "palabra": "convierte",
+          "inicioMs": 3440,
+          "finMs": 3900
+        },
+        {
+          "palabra": "en",
+          "inicioMs": 3900,
+          "finMs": 4000
+        },
+        {
+          "palabra": "el",
+          "inicioMs": 4000,
+          "finMs": 4100
+        },
+        {
+          "palabra": "tesoro",
+          "inicioMs": 4100,
+          "finMs": 4400
+        },
+        {
+          "palabra": "eterno",
+          "inicioMs": 4400,
+          "finMs": 4820
+        },
+        {
+          "palabra": "de",
+          "inicioMs": 4820,
+          "finMs": 4900
+        },
+        {
+          "palabra": "la",
+          "inicioMs": 4900,
+          "finMs": 5000
+        },
+        {
+          "palabra": "naturaleza",
+          "inicioMs": 5000,
+          "finMs": 5640
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,1498 @@
+{
+  "meta": {
+    "id": "arboles_red_micelio_wood_wide_web",
+    "slug": "arboles_red_micelio_wood_wide_web",
+    "temaResumen": "¿Cómo se comunican y comparten comida los árboles a través de la red fúngica subterránea Wood Wide Web?"
+  },
+  "escenas": [
+    {
+      "id": 1,
+      "texto": "¿Alguna vez creíste que los árboles son seres solitarios compitiendo por luz? ¡Pues resulta que están conectados a una red viva bajo tierra!",
+      "icono": "TreePine",
+      "colorIcono": "#10B981",
+      "tituloVisual": "INTERNET DEL BOSQUE",
+      "composicionVisual": "plano_general",
+      "escenario": "red_subterranea",
+      "layout": "narrativo",
+      "transicion": "zoom_in",
+      "efectosCamara": [
+        "drift"
+      ],
+      "sfx": "sfx/sfx_whoosh.wav",
+      "volumenSfx": 0.2,
+      "palabrasClave": [
+        "seres solitarios",
+        "conectados a una red viva",
+        "bajo tierra"
+      ],
+      "personajes": [
+        {
+          "id": "biologo",
+          "posicion": {
+            "x": -160,
+            "y": 70
+          },
+          "escala": 1.05,
+          "orientacion": "derecha",
+          "prop": "mycelium_network",
+          "poseId": "presenting_object",
+          "expresion": "eureka",
+          "acciones": [
+            {
+              "tipo": "caminar_hacia",
+              "desdeX": -260,
+              "haciaX": -120
+            }
+          ],
+          "habla": true
+        }
+      ],
+      "duracionSegundos": 6.178,
+      "palabras": [
+        {
+          "palabra": "Alguna",
+          "inicioMs": 0,
+          "finMs": 380
+        },
+        {
+          "palabra": "vez",
+          "inicioMs": 380,
+          "finMs": 500
+        },
+        {
+          "palabra": "creíste",
+          "inicioMs": 500,
+          "finMs": 860
+        },
+        {
+          "palabra": "que",
+          "inicioMs": 860,
+          "finMs": 1000
+        },
+        {
+          "palabra": "los",
+          "inicioMs": 1000,
+          "finMs": 1120
+        },
+        {
+          "palabra": "árboles",
+          "inicioMs": 1120,
+          "finMs": 1500
+        },
+        {
+          "palabra": "son",
+          "inicioMs": 1500,
+          "finMs": 1640
+        },
+        {
+          "palabra": "seres",
+          "inicioMs": 1640,
+          "finMs": 1880
+        },
+        {
+          "palabra": "solitarios",
+          "inicioMs": 1880,
+          "finMs": 2400
+        },
+        {
+          "palabra": "compitiendo",
+          "inicioMs": 2400,
+          "finMs": 2900
+        },
+        {
+          "palabra": "por",
+          "inicioMs": 2900,
+          "finMs": 3080
+        },
+        {
+          "palabra": "luz",
+          "inicioMs": 3080,
+          "finMs": 3280
+        },
+        {
+          "palabra": "Pues",
+          "inicioMs": 3400,
+          "finMs": 3480
+        },
+        {
+          "palabra": "resulta",
+          "inicioMs": 3480,
+          "finMs": 3880
+        },
+        {
+          "palabra": "que",
+          "inicioMs": 3880,
+          "finMs": 3940
+        },
+        {
+          "palabra": "están",
+          "inicioMs": 3940,
+          "finMs": 4080
+        },
+        {
+          "palabra": "conectados",
+          "inicioMs": 4080,
+          "finMs": 4540
+        },
+        {
+          "palabra": "a",
+          "inicioMs": 4540,
+          "finMs": 4640
+        },
+        {
+          "palabra": "una",
+          "inicioMs": 4640,
+          "finMs": 4760
+        },
+        {
+          "palabra": "red",
+          "inicioMs": 4760,
+          "finMs": 4940
+        },
+        {
+          "palabra": "viva",
+          "inicioMs": 4940,
+          "finMs": 5220
+        },
+        {
+          "palabra": "bajo",
+          "inicioMs": 5220,
+          "finMs": 5380
+        },
+        {
+          "palabra": "tierra",
+          "inicioMs": 5380,
+          "finMs": 5700
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "texto": "Los científicos la bautizaron como la Wood Wide Web: una inmensa autopista biológica subterránea construida por hongos microscópicos.",
+      "icono": "Network",
+      "colorIcono": "#34D399",
+      "tituloVisual": "WOOD WIDE WEB",
+      "composicionVisual": "primer_plano",
+      "escenario": "red_subterranea",
+      "layout": "narrativo",
+      "transicion": "whip_right",
+      "efectosCamara": [
+        "drift"
+      ],
+      "palabrasClave": [
+        "Wood Wide Web",
+        "autopista biológica",
+        "hongos microscópicos"
+      ],
+      "personajes": [
+        {
+          "id": "biologo",
+          "posicion": {
+            "x": 0,
+            "y": 50
+          },
+          "escala": 1.15,
+          "orientacion": "derecha",
+          "prop": "mycelium_network",
+          "poseId": "presenting_object",
+          "expresion": "talking_enthusiastic",
+          "habla": true
+        }
+      ],
+      "duracionSegundos": 8.338,
+      "palabras": [
+        {
+          "palabra": "Los",
+          "inicioMs": 0,
+          "finMs": 220
+        },
+        {
+          "palabra": "científicos",
+          "inicioMs": 220,
+          "finMs": 980
+        },
+        {
+          "palabra": "la",
+          "inicioMs": 980,
+          "finMs": 1180
+        },
+        {
+          "palabra": "bautizaron",
+          "inicioMs": 1180,
+          "finMs": 1800
+        },
+        {
+          "palabra": "como",
+          "inicioMs": 1800,
+          "finMs": 2040
+        },
+        {
+          "palabra": "la",
+          "inicioMs": 2040,
+          "finMs": 2240
+        },
+        {
+          "palabra": "Wood",
+          "inicioMs": 2240,
+          "finMs": 2480
+        },
+        {
+          "palabra": "Wide",
+          "inicioMs": 2480,
+          "finMs": 2880
+        },
+        {
+          "palabra": "Web",
+          "inicioMs": 2880,
+          "finMs": 3280
+        },
+        {
+          "palabra": "una",
+          "inicioMs": 3380,
+          "finMs": 3520
+        },
+        {
+          "palabra": "inmensa",
+          "inicioMs": 3520,
+          "finMs": 4020
+        },
+        {
+          "palabra": "autopista",
+          "inicioMs": 4020,
+          "finMs": 4680
+        },
+        {
+          "palabra": "biológica",
+          "inicioMs": 4680,
+          "finMs": 5280
+        },
+        {
+          "palabra": "subterránea",
+          "inicioMs": 5280,
+          "finMs": 6020
+        },
+        {
+          "palabra": "construida",
+          "inicioMs": 6020,
+          "finMs": 6560
+        },
+        {
+          "palabra": "por",
+          "inicioMs": 6560,
+          "finMs": 6760
+        },
+        {
+          "palabra": "hongos",
+          "inicioMs": 6760,
+          "finMs": 7080
+        },
+        {
+          "palabra": "microscópicos",
+          "inicioMs": 7080,
+          "finMs": 7860
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "texto": "Debajo del suelo, billones de filamentos ultrafinos llamados hifas de micelio se entrelazan íntimamente con las raíces de cada árbol.",
+      "icono": "GitBranch",
+      "colorIcono": "#FBBF24",
+      "tituloVisual": "RED DE HIFAS",
+      "composicionVisual": "plano_general",
+      "escenario": "red_subterranea",
+      "layout": "narrativo",
+      "transicion": "corte",
+      "efectosCamara": [
+        "drift"
+      ],
+      "palabrasClave": [
+        "hifas de micelio",
+        "raíces de cada árbol",
+        "billones de filamentos"
+      ],
+      "personajes": [
+        {
+          "id": "fisico",
+          "posicion": {
+            "x": -180,
+            "y": 70
+          },
+          "escala": 1.05,
+          "orientacion": "derecha",
+          "poseId": "explaining_pointing_up",
+          "expresion": "analytical",
+          "habla": true
+        }
+      ],
+      "objetos": [
+        {
+          "id": "hifas_glow",
+          "propId": "mycelium_network",
+          "posicion": {
+            "x": 170,
+            "y": -30
+          },
+          "escala": 1.45,
+          "animacion": {
+            "tipo": "pulso",
+            "inicioFrame": 0,
+            "finFrame": 9999
+          },
+          "capaZ": 25
+        }
+      ],
+      "duracionSegundos": 6.73,
+      "palabras": [
+        {
+          "palabra": "Debajo",
+          "inicioMs": 0,
+          "finMs": 360
+        },
+        {
+          "palabra": "del",
+          "inicioMs": 360,
+          "finMs": 540
+        },
+        {
+          "palabra": "suelo",
+          "inicioMs": 540,
+          "finMs": 820
+        },
+        {
+          "palabra": "billones",
+          "inicioMs": 1000,
+          "finMs": 1160
+        },
+        {
+          "palabra": "de",
+          "inicioMs": 1160,
+          "finMs": 1400
+        },
+        {
+          "palabra": "filamentos",
+          "inicioMs": 1400,
+          "finMs": 1760
+        },
+        {
+          "palabra": "ultrafinos",
+          "inicioMs": 1760,
+          "finMs": 2280
+        },
+        {
+          "palabra": "llamados",
+          "inicioMs": 2280,
+          "finMs": 2720
+        },
+        {
+          "palabra": "hifas",
+          "inicioMs": 2720,
+          "finMs": 3000
+        },
+        {
+          "palabra": "de",
+          "inicioMs": 3000,
+          "finMs": 3160
+        },
+        {
+          "palabra": "micelio",
+          "inicioMs": 3160,
+          "finMs": 3660
+        },
+        {
+          "palabra": "se",
+          "inicioMs": 3660,
+          "finMs": 4040
+        },
+        {
+          "palabra": "entrelazan",
+          "inicioMs": 4040,
+          "finMs": 4460
+        },
+        {
+          "palabra": "íntimamente",
+          "inicioMs": 4460,
+          "finMs": 5060
+        },
+        {
+          "palabra": "con",
+          "inicioMs": 5060,
+          "finMs": 5280
+        },
+        {
+          "palabra": "las",
+          "inicioMs": 5280,
+          "finMs": 5400
+        },
+        {
+          "palabra": "raíces",
+          "inicioMs": 5400,
+          "finMs": 5640
+        },
+        {
+          "palabra": "de",
+          "inicioMs": 5640,
+          "finMs": 5780
+        },
+        {
+          "palabra": "cada",
+          "inicioMs": 5780,
+          "finMs": 5980
+        },
+        {
+          "palabra": "árbol",
+          "inicioMs": 5980,
+          "finMs": 6260
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "texto": "Es un pacto comercial perfecto: el árbol entrega a los hongos azúcares ricos en carbono, y los hongos devuelven agua, fósforo y nitrógeno.",
+      "icono": "Repeat",
+      "colorIcono": "#38BDF8",
+      "tituloVisual": "PACTO SIMBIÓTICO",
+      "composicionVisual": "cifras_concepto",
+      "escenario": "red_subterranea",
+      "layout": "narrativo",
+      "transicion": "whip_left",
+      "efectosCamara": [
+        "drift"
+      ],
+      "palabrasClave": [
+        "pacto comercial",
+        "carbono",
+        "agua, fósforo y nitrógeno"
+      ],
+      "personajes": [
+        {
+          "id": "biologo",
+          "posicion": {
+            "x": -80,
+            "y": 60
+          },
+          "escala": 1.1,
+          "orientacion": "derecha",
+          "prop": "mycelium_network",
+          "poseId": "presenting_object",
+          "expresion": "talking_enthusiastic",
+          "habla": true
+        }
+      ],
+      "duracionSegundos": 8.434,
+      "palabras": [
+        {
+          "palabra": "Es",
+          "inicioMs": 0,
+          "finMs": 240
+        },
+        {
+          "palabra": "un",
+          "inicioMs": 240,
+          "finMs": 380
+        },
+        {
+          "palabra": "pacto",
+          "inicioMs": 380,
+          "finMs": 760
+        },
+        {
+          "palabra": "comercial",
+          "inicioMs": 760,
+          "finMs": 1240
+        },
+        {
+          "palabra": "perfecto",
+          "inicioMs": 1240,
+          "finMs": 1880
+        },
+        {
+          "palabra": "el",
+          "inicioMs": 2140,
+          "finMs": 2300
+        },
+        {
+          "palabra": "árbol",
+          "inicioMs": 2300,
+          "finMs": 2520
+        },
+        {
+          "palabra": "entrega",
+          "inicioMs": 2520,
+          "finMs": 3000
+        },
+        {
+          "palabra": "a",
+          "inicioMs": 3000,
+          "finMs": 3080
+        },
+        {
+          "palabra": "los",
+          "inicioMs": 3080,
+          "finMs": 3220
+        },
+        {
+          "palabra": "hongos",
+          "inicioMs": 3220,
+          "finMs": 3540
+        },
+        {
+          "palabra": "azúcares",
+          "inicioMs": 3540,
+          "finMs": 4000
+        },
+        {
+          "palabra": "ricos",
+          "inicioMs": 4000,
+          "finMs": 4340
+        },
+        {
+          "palabra": "en",
+          "inicioMs": 4340,
+          "finMs": 4500
+        },
+        {
+          "palabra": "carbono",
+          "inicioMs": 4500,
+          "finMs": 4900
+        },
+        {
+          "palabra": "y",
+          "inicioMs": 4900,
+          "finMs": 5340
+        },
+        {
+          "palabra": "los",
+          "inicioMs": 5340,
+          "finMs": 5520
+        },
+        {
+          "palabra": "hongos",
+          "inicioMs": 5520,
+          "finMs": 5840
+        },
+        {
+          "palabra": "devuelven",
+          "inicioMs": 5840,
+          "finMs": 6240
+        },
+        {
+          "palabra": "agua",
+          "inicioMs": 6240,
+          "finMs": 6560
+        },
+        {
+          "palabra": "fósforo",
+          "inicioMs": 6820,
+          "finMs": 7180
+        },
+        {
+          "palabra": "y",
+          "inicioMs": 7180,
+          "finMs": 7380
+        },
+        {
+          "palabra": "nitrógeno",
+          "inicioMs": 7380,
+          "finMs": 7940
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "texto": "Pero lo verdaderamente alucinante es que los árboles usan esta red para enviarse comida y salvar a otros árboles vecinos enfermos.",
+      "icono": "HeartHandshake",
+      "colorIcono": "#EC4899",
+      "tituloVisual": "SOLIDARIDAD VIVA",
+      "composicionVisual": "primer_plano",
+      "escenario": "red_subterranea",
+      "layout": "narrativo",
+      "transicion": "zoom_in",
+      "efectosCamara": [
+        "punch"
+      ],
+      "sfx": "sfx/sfx_dramatic_hit.wav",
+      "volumenSfx": 0.25,
+      "palabrasClave": [
+        "enviarse comida",
+        "salvar a otros árboles",
+        "vecinos enfermos"
+      ],
+      "personajes": [
+        {
+          "id": "biologo",
+          "posicion": {
+            "x": 0,
+            "y": 50
+          },
+          "escala": 1.15,
+          "orientacion": "derecha",
+          "prop": "mycelium_network",
+          "poseId": "presenting_object",
+          "expresion": "eureka",
+          "habla": true
+        }
+      ],
+      "duracionSegundos": 6.682,
+      "palabras": [
+        {
+          "palabra": "Pero",
+          "inicioMs": 0,
+          "finMs": 240
+        },
+        {
+          "palabra": "lo",
+          "inicioMs": 240,
+          "finMs": 360
+        },
+        {
+          "palabra": "verdaderamente",
+          "inicioMs": 360,
+          "finMs": 960
+        },
+        {
+          "palabra": "alucinante",
+          "inicioMs": 960,
+          "finMs": 1620
+        },
+        {
+          "palabra": "es",
+          "inicioMs": 1620,
+          "finMs": 1760
+        },
+        {
+          "palabra": "que",
+          "inicioMs": 1760,
+          "finMs": 1840
+        },
+        {
+          "palabra": "los",
+          "inicioMs": 1840,
+          "finMs": 1980
+        },
+        {
+          "palabra": "árboles",
+          "inicioMs": 1980,
+          "finMs": 2340
+        },
+        {
+          "palabra": "usan",
+          "inicioMs": 2340,
+          "finMs": 2700
+        },
+        {
+          "palabra": "esta",
+          "inicioMs": 2700,
+          "finMs": 2900
+        },
+        {
+          "palabra": "red",
+          "inicioMs": 2900,
+          "finMs": 3060
+        },
+        {
+          "palabra": "para",
+          "inicioMs": 3060,
+          "finMs": 3280
+        },
+        {
+          "palabra": "enviarse",
+          "inicioMs": 3280,
+          "finMs": 3700
+        },
+        {
+          "palabra": "comida",
+          "inicioMs": 3700,
+          "finMs": 3980
+        },
+        {
+          "palabra": "y",
+          "inicioMs": 3980,
+          "finMs": 4260
+        },
+        {
+          "palabra": "salvar",
+          "inicioMs": 4260,
+          "finMs": 4520
+        },
+        {
+          "palabra": "a",
+          "inicioMs": 4520,
+          "finMs": 4700
+        },
+        {
+          "palabra": "otros",
+          "inicioMs": 4700,
+          "finMs": 4920
+        },
+        {
+          "palabra": "árboles",
+          "inicioMs": 4920,
+          "finMs": 5340
+        },
+        {
+          "palabra": "vecinos",
+          "inicioMs": 5340,
+          "finMs": 5700
+        },
+        {
+          "palabra": "enfermos",
+          "inicioMs": 5700,
+          "finMs": 6220
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "texto": "Un árbol madre maduro puede reconocer las raíces de sus propias crías en la sombra, bombeándoles nutrientes para que no mueran.",
+      "icono": "ShieldCheck",
+      "colorIcono": "#10B981",
+      "tituloVisual": "ÁRBOL MADRE",
+      "composicionVisual": "plano_general",
+      "escenario": "red_subterranea",
+      "layout": "narrativo",
+      "transicion": "corte",
+      "efectosCamara": [
+        "drift"
+      ],
+      "palabrasClave": [
+        "árbol madre maduro",
+        "sus propias crías",
+        "bombeándoles nutrientes"
+      ],
+      "personajes": [
+        {
+          "id": "narrador",
+          "posicion": {
+            "x": -150,
+            "y": 70
+          },
+          "escala": 1.05,
+          "orientacion": "derecha",
+          "prop": "mycelium_network",
+          "poseId": "presenting_object",
+          "expresion": "analytical",
+          "habla": true
+        }
+      ],
+      "duracionSegundos": 7.474,
+      "palabras": [
+        {
+          "palabra": "Un",
+          "inicioMs": 0,
+          "finMs": 280
+        },
+        {
+          "palabra": "árbol",
+          "inicioMs": 280,
+          "finMs": 580
+        },
+        {
+          "palabra": "madre",
+          "inicioMs": 580,
+          "finMs": 940
+        },
+        {
+          "palabra": "maduro",
+          "inicioMs": 940,
+          "finMs": 1320
+        },
+        {
+          "palabra": "puede",
+          "inicioMs": 1320,
+          "finMs": 1620
+        },
+        {
+          "palabra": "reconocer",
+          "inicioMs": 1620,
+          "finMs": 2320
+        },
+        {
+          "palabra": "las",
+          "inicioMs": 2320,
+          "finMs": 2460
+        },
+        {
+          "palabra": "raíces",
+          "inicioMs": 2460,
+          "finMs": 3000
+        },
+        {
+          "palabra": "de",
+          "inicioMs": 3000,
+          "finMs": 3240
+        },
+        {
+          "palabra": "sus",
+          "inicioMs": 3240,
+          "finMs": 3680
+        },
+        {
+          "palabra": "propias",
+          "inicioMs": 3680,
+          "finMs": 4040
+        },
+        {
+          "palabra": "crías",
+          "inicioMs": 4040,
+          "finMs": 4220
+        },
+        {
+          "palabra": "en",
+          "inicioMs": 4220,
+          "finMs": 4320
+        },
+        {
+          "palabra": "la",
+          "inicioMs": 4320,
+          "finMs": 4780
+        },
+        {
+          "palabra": "sombra",
+          "inicioMs": 4780,
+          "finMs": 5440
+        },
+        {
+          "palabra": "bombeándoles",
+          "inicioMs": 5440,
+          "finMs": 6060
+        },
+        {
+          "palabra": "nutrientes",
+          "inicioMs": 6060,
+          "finMs": 6260
+        },
+        {
+          "palabra": "para",
+          "inicioMs": 6260,
+          "finMs": 6400
+        },
+        {
+          "palabra": "que",
+          "inicioMs": 6400,
+          "finMs": 6540
+        },
+        {
+          "palabra": "no",
+          "inicioMs": 6540,
+          "finMs": 6980
+        },
+        {
+          "palabra": "mueran",
+          "inicioMs": 6980,
+          "finMs": 7224
+        }
+      ]
+    },
+    {
+      "id": 7,
+      "texto": "¡Y no solo comparten comida, también se envían alertas de guerra! Si orugas atacan las hojas de un abeto en un rincón del bosque...",
+      "icono": "AlertTriangle",
+      "colorIcono": "#EF4444",
+      "tituloVisual": "ALERTA DE GUERRA",
+      "composicionVisual": "primer_plano",
+      "escenario": "red_subterranea",
+      "layout": "narrativo",
+      "transicion": "whip_right",
+      "efectosCamara": [
+        "shake"
+      ],
+      "palabrasClave": [
+        "alertas de guerra",
+        "orugas atacan",
+        "rincón del bosque"
+      ],
+      "personajes": [
+        {
+          "id": "narrador",
+          "posicion": {
+            "x": 0,
+            "y": 50
+          },
+          "escala": 1.15,
+          "orientacion": "derecha",
+          "poseId": "warning_danger",
+          "expresion": "scared",
+          "habla": true
+        }
+      ],
+      "duracionSegundos": 6.778,
+      "palabras": [
+        {
+          "palabra": "Y",
+          "inicioMs": 0,
+          "finMs": 160
+        },
+        {
+          "palabra": "no",
+          "inicioMs": 160,
+          "finMs": 280
+        },
+        {
+          "palabra": "solo",
+          "inicioMs": 280,
+          "finMs": 480
+        },
+        {
+          "palabra": "comparten",
+          "inicioMs": 480,
+          "finMs": 960
+        },
+        {
+          "palabra": "comida",
+          "inicioMs": 960,
+          "finMs": 1440
+        },
+        {
+          "palabra": "también",
+          "inicioMs": 1660,
+          "finMs": 1880
+        },
+        {
+          "palabra": "se",
+          "inicioMs": 1880,
+          "finMs": 2100
+        },
+        {
+          "palabra": "envían",
+          "inicioMs": 2100,
+          "finMs": 2360
+        },
+        {
+          "palabra": "alertas",
+          "inicioMs": 2360,
+          "finMs": 2840
+        },
+        {
+          "palabra": "de",
+          "inicioMs": 2840,
+          "finMs": 2920
+        },
+        {
+          "palabra": "guerra",
+          "inicioMs": 2920,
+          "finMs": 3200
+        },
+        {
+          "palabra": "Si",
+          "inicioMs": 3460,
+          "finMs": 3540
+        },
+        {
+          "palabra": "orugas",
+          "inicioMs": 3540,
+          "finMs": 3880
+        },
+        {
+          "palabra": "atacan",
+          "inicioMs": 3880,
+          "finMs": 4280
+        },
+        {
+          "palabra": "las",
+          "inicioMs": 4280,
+          "finMs": 4460
+        },
+        {
+          "palabra": "hojas",
+          "inicioMs": 4460,
+          "finMs": 4720
+        },
+        {
+          "palabra": "de",
+          "inicioMs": 4720,
+          "finMs": 4840
+        },
+        {
+          "palabra": "un",
+          "inicioMs": 4840,
+          "finMs": 4940
+        },
+        {
+          "palabra": "abeto",
+          "inicioMs": 4940,
+          "finMs": 5220
+        },
+        {
+          "palabra": "en",
+          "inicioMs": 5220,
+          "finMs": 5340
+        },
+        {
+          "palabra": "un",
+          "inicioMs": 5340,
+          "finMs": 5440
+        },
+        {
+          "palabra": "rincón",
+          "inicioMs": 5440,
+          "finMs": 5760
+        },
+        {
+          "palabra": "del",
+          "inicioMs": 5760,
+          "finMs": 5920
+        },
+        {
+          "palabra": "bosque",
+          "inicioMs": 5920,
+          "finMs": 6320
+        }
+      ]
+    },
+    {
+      "id": 8,
+      "texto": "El árbol emite señales químicas por el micelio. En minutos, árboles vecinos a cientos de metros reciben la alarma y producen toxinas en sus hojas.",
+      "icono": "Radio",
+      "colorIcono": "#8B5CF6",
+      "tituloVisual": "SEÑAL QUÍMICA",
+      "composicionVisual": "plano_general",
+      "escenario": "red_subterranea",
+      "layout": "narrativo",
+      "transicion": "corte",
+      "efectosCamara": [
+        "drift"
+      ],
+      "palabrasClave": [
+        "señales químicas",
+        "en minutos",
+        "producen toxinas"
+      ],
+      "personajes": [
+        {
+          "id": "fisico",
+          "posicion": {
+            "x": -180,
+            "y": 70
+          },
+          "escala": 1.05,
+          "orientacion": "derecha",
+          "poseId": "explaining_pointing_up",
+          "expresion": "eureka",
+          "habla": true
+        }
+      ],
+      "objetos": [
+        {
+          "id": "micelio_alarma",
+          "propId": "mycelium_network",
+          "posicion": {
+            "x": 170,
+            "y": -30
+          },
+          "escala": 1.45,
+          "animacion": {
+            "tipo": "flotar",
+            "inicioFrame": 0,
+            "finFrame": 9999
+          },
+          "capaZ": 25
+        }
+      ],
+      "duracionSegundos": 8.77,
+      "palabras": [
+        {
+          "palabra": "El",
+          "inicioMs": 0,
+          "finMs": 240
+        },
+        {
+          "palabra": "árbol",
+          "inicioMs": 240,
+          "finMs": 480
+        },
+        {
+          "palabra": "emite",
+          "inicioMs": 480,
+          "finMs": 780
+        },
+        {
+          "palabra": "señales",
+          "inicioMs": 780,
+          "finMs": 1180
+        },
+        {
+          "palabra": "químicas",
+          "inicioMs": 1180,
+          "finMs": 1640
+        },
+        {
+          "palabra": "por",
+          "inicioMs": 1640,
+          "finMs": 1840
+        },
+        {
+          "palabra": "el",
+          "inicioMs": 1840,
+          "finMs": 1980
+        },
+        {
+          "palabra": "micelio",
+          "inicioMs": 1980,
+          "finMs": 2540
+        },
+        {
+          "palabra": "En",
+          "inicioMs": 2780,
+          "finMs": 3200
+        },
+        {
+          "palabra": "minutos",
+          "inicioMs": 3200,
+          "finMs": 3520
+        },
+        {
+          "palabra": "árboles",
+          "inicioMs": 3520,
+          "finMs": 3920
+        },
+        {
+          "palabra": "vecinos",
+          "inicioMs": 3920,
+          "finMs": 4360
+        },
+        {
+          "palabra": "a",
+          "inicioMs": 4360,
+          "finMs": 4540
+        },
+        {
+          "palabra": "cientos",
+          "inicioMs": 4540,
+          "finMs": 4880
+        },
+        {
+          "palabra": "de",
+          "inicioMs": 4880,
+          "finMs": 5020
+        },
+        {
+          "palabra": "metros",
+          "inicioMs": 5020,
+          "finMs": 5320
+        },
+        {
+          "palabra": "reciben",
+          "inicioMs": 5320,
+          "finMs": 6000
+        },
+        {
+          "palabra": "la",
+          "inicioMs": 6000,
+          "finMs": 6180
+        },
+        {
+          "palabra": "alarma",
+          "inicioMs": 6180,
+          "finMs": 6540
+        },
+        {
+          "palabra": "y",
+          "inicioMs": 6540,
+          "finMs": 6760
+        },
+        {
+          "palabra": "producen",
+          "inicioMs": 6760,
+          "finMs": 7140
+        },
+        {
+          "palabra": "toxinas",
+          "inicioMs": 7140,
+          "finMs": 7640
+        },
+        {
+          "palabra": "en",
+          "inicioMs": 7640,
+          "finMs": 7800
+        },
+        {
+          "palabra": "sus",
+          "inicioMs": 7800,
+          "finMs": 7980
+        },
+        {
+          "palabra": "hojas",
+          "inicioMs": 7980,
+          "finMs": 8280
+        }
+      ]
+    },
+    {
+      "id": 9,
+      "texto": "Cuando las plagas intentan morder los árboles vecinos, el sabor es tan amargo y venenoso que las orugas mueren o huyen de inmediato.",
+      "icono": "ShieldAlert",
+      "colorIcono": "#F59E0B",
+      "tituloVisual": "ESCUDO COLECTIVO",
+      "composicionVisual": "primer_plano",
+      "escenario": "red_subterranea",
+      "layout": "narrativo",
+      "transicion": "zoom_in",
+      "efectosCamara": [
+        "punch"
+      ],
+      "sfx": "sfx/sfx_dramatic_hit.wav",
+      "volumenSfx": 0.25,
+      "palabrasClave": [
+        "amargo y venenoso",
+        "mueren o huyen",
+        "escudo colectivo"
+      ],
+      "personajes": [
+        {
+          "id": "biologo",
+          "posicion": {
+            "x": 0,
+            "y": 50
+          },
+          "escala": 1.15,
+          "orientacion": "derecha",
+          "prop": "mycelium_network",
+          "poseId": "presenting_object",
+          "expresion": "smile_wide",
+          "habla": true
+        }
+      ],
+      "duracionSegundos": 6.682,
+      "palabras": [
+        {
+          "palabra": "Cuando",
+          "inicioMs": 0,
+          "finMs": 220
+        },
+        {
+          "palabra": "las",
+          "inicioMs": 220,
+          "finMs": 420
+        },
+        {
+          "palabra": "plagas",
+          "inicioMs": 420,
+          "finMs": 860
+        },
+        {
+          "palabra": "intentan",
+          "inicioMs": 860,
+          "finMs": 1340
+        },
+        {
+          "palabra": "morder",
+          "inicioMs": 1340,
+          "finMs": 1580
+        },
+        {
+          "palabra": "los",
+          "inicioMs": 1580,
+          "finMs": 1800
+        },
+        {
+          "palabra": "árboles",
+          "inicioMs": 1800,
+          "finMs": 2140
+        },
+        {
+          "palabra": "vecinos",
+          "inicioMs": 2140,
+          "finMs": 2660
+        },
+        {
+          "palabra": "el",
+          "inicioMs": 2760,
+          "finMs": 2860
+        },
+        {
+          "palabra": "sabor",
+          "inicioMs": 2860,
+          "finMs": 3100
+        },
+        {
+          "palabra": "es",
+          "inicioMs": 3100,
+          "finMs": 3380
+        },
+        {
+          "palabra": "tan",
+          "inicioMs": 3380,
+          "finMs": 3800
+        },
+        {
+          "palabra": "amargo",
+          "inicioMs": 3800,
+          "finMs": 3860
+        },
+        {
+          "palabra": "y",
+          "inicioMs": 3860,
+          "finMs": 4280
+        },
+        {
+          "palabra": "venenoso",
+          "inicioMs": 4280,
+          "finMs": 4420
+        },
+        {
+          "palabra": "que",
+          "inicioMs": 4420,
+          "finMs": 4560
+        },
+        {
+          "palabra": "las",
+          "inicioMs": 4560,
+          "finMs": 4940
+        },
+        {
+          "palabra": "orugas",
+          "inicioMs": 4940,
+          "finMs": 5200
+        },
+        {
+          "palabra": "mueren",
+          "inicioMs": 5200,
+          "finMs": 5340
+        },
+        {
+          "palabra": "o",
+          "inicioMs": 5340,
+          "finMs": 5580
+        },
+        {
+          "palabra": "huyen",
+          "inicioMs": 5580,
+          "finMs": 5700
+        },
+        {
+          "palabra": "de",
+          "inicioMs": 5700,
+          "finMs": 6200
+        },
+        {
+          "palabra": "inmediato",
+          "inicioMs": 6200,
+          "finMs": 6432
+        }
+      ]
+    },
+    {
+      "id": 10,
+      "texto": "El bosque no es una guerra solitaria de individuos: es un superorganismo inteligente hiperconectado que sobrevive cooperando.",
+      "icono": "Globe",
+      "colorIcono": "#10B981",
+      "tituloVisual": "SUPERORGANISMO",
+      "composicionVisual": "plano_general",
+      "escenario": "red_subterranea",
+      "layout": "narrativo",
+      "transicion": "whip_left",
+      "efectosCamara": [
+        "drift"
+      ],
+      "palabrasClave": [
+        "no es una guerra solitaria",
+        "superorganismo inteligente",
+        "sobrevive cooperando"
+      ],
+      "personajes": [
+        {
+          "id": "biologo",
+          "posicion": {
+            "x": 0,
+            "y": 50
+          },
+          "escala": 1.15,
+          "orientacion": "derecha",
+          "prop": "mycelium_network",
+          "poseId": "presenting_object",
+          "expresion": "talking_enthusiastic",
+          "habla": true
+        }
+      ],
+      "duracionSegundos": 6.514,
+      "palabras": [
+        {
+          "palabra": "El",
+          "inicioMs": 0,
+          "finMs": 200
+        },
+        {
+          "palabra": "bosque",
+          "inicioMs": 200,
+          "finMs": 520
+        },
+        {
+          "palabra": "no",
+          "inicioMs": 520,
+          "finMs": 660
+        },
+        {
+          "palabra": "es",
+          "inicioMs": 660,
+          "finMs": 820
+        },
+        {
+          "palabra": "una",
+          "inicioMs": 820,
+          "finMs": 960
+        },
+        {
+          "palabra": "guerra",
+          "inicioMs": 960,
+          "finMs": 1120
+        },
+        {
+          "palabra": "solitaria",
+          "inicioMs": 1120,
+          "finMs": 1660
+        },
+        {
+          "palabra": "de",
+          "inicioMs": 1660,
+          "finMs": 1800
+        },
+        {
+          "palabra": "individuos",
+          "inicioMs": 1800,
+          "finMs": 2340
+        },
+        {
+          "palabra": "es",
+          "inicioMs": 2440,
+          "finMs": 2560
+        },
+        {
+          "palabra": "un",
+          "inicioMs": 2560,
+          "finMs": 2660
+        },
+        {
+          "palabra": "superorganismo",
+          "inicioMs": 2660,
+          "finMs": 3420
+        },
+        {
+          "palabra": "inteligente",
+          "inicioMs": 3420,
+          "finMs": 4060
+        },
+        {
+          "palabra": "hiperconectado",
+          "inicioMs": 4060,
+          "finMs": 4760
+        },
+        {
+          "palabra": "que",
+          "inicioMs": 4760,
+          "finMs": 4900
+        },
+        {
+          "palabra": "sobrevive",
+          "inicioMs": 4900,
+          "finMs": 5400
+        },
+        {
+          "palabra": "cooperando",
+          "inicioMs": 5400,
+          "finMs": 6040
+        }
+      ]
+    }
+  ]
+}

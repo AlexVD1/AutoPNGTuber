@@ -10,14 +10,7 @@ import * as LucideIcons from "lucide-react";
 /**
  * Registro explícito de iconos principales y fallbacks conocidos.
  */
-export const ICON_REGISTRY: Record<
-  string,
-  React.ComponentType<{
-    size?: number;
-    color?: string;
-    strokeWidth?: number;
-  }>
-> = {
+export const ICON_REGISTRY: Record<string, React.ComponentType<any>> = {
   Sparkles: LucideIcons.Sparkles,
   Scale: LucideIcons.Scale,
   ArrowDownCircle: LucideIcons.ArrowDownCircle,
@@ -82,18 +75,17 @@ export const AnimatedIcon: React.FC<AnimatedIconProps> = ({
   const iconOscillateRotate = Math.sin(frame / 14) * 3.5;
   const initialRotate = interpolate(cardSpring, [0, 1], [-12, 0]);
 
+  const cleanIconName = (icono || "").replace(/^lucide:/i, "").trim();
+  const pascalName =
+    cleanIconName.charAt(0).toUpperCase() + cleanIconName.slice(1);
+
   const IconComponent =
+    ICON_REGISTRY[cleanIconName] ??
+    ICON_REGISTRY[pascalName] ??
     ICON_REGISTRY[icono] ??
-    (
-      LucideIcons as unknown as Record<
-        string,
-        React.ComponentType<{
-          size?: number;
-          color?: string;
-          strokeWidth?: number;
-        }>
-      >
-    )[icono] ??
+    (LucideIcons as any)[cleanIconName] ??
+    (LucideIcons as any)[pascalName] ??
+    (LucideIcons as any)[icono] ??
     LucideIcons.HelpCircle;
 
   const bgTint = hexToRgba(colorIcono, 0.1);

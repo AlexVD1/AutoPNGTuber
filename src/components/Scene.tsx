@@ -8,12 +8,12 @@ import {
   useCurrentFrame,
   useVideoConfig,
 } from "remotion";
-import { EscenaGuion, PersonajeEscena } from "../types";
+import { EscenaGuion, ObjetoEscena, PersonajeEscena } from "../types";
 import { evaluateCharacterState } from "../stickman/actionSequences";
 import { AnimatedIcon } from "./AnimatedIcon";
 import { CameraRig } from "./CameraRig";
 import { NarrativeElements } from "./NarrativeElements";
-import { NarrativeStage } from "./NarrativeStage";
+import { ESCENARIOS_OSCUROS, NarrativeStage } from "./NarrativeStage";
 import { SceneObject } from "./SceneObject";
 import { Stickman } from "./Stickman";
 import { WordSubtitles } from "./WordSubtitles";
@@ -110,6 +110,24 @@ export const Scene: React.FC<SceneProps> = ({ escena }) => {
   const escenarioFinal = useMemo(() => {
     if (escena.escenario) return escena.escenario;
     const t = (escena.texto || "").toLowerCase();
+    if (/n[uú]cleo|magma|volc[aá]n|lava|centro de la tierra|manto terrestre|geolog/i.test(t)) {
+      return "nucleo_tierra";
+    }
+    if (/micelio|hifa|ra[ií]ces|wood wide web|subterr[aá]neo/i.test(t)) {
+      return "red_subterranea";
+    }
+    if (/arrecife|coral|pistola|cavitaci[oó]n|arena|playa|madriguera/i.test(t)) {
+      return "arrecife_coral";
+    }
+    if (/0\.99c|relativista|velocidad de la luz|dilataci[oó]n temporal|lorentz|espacio-tiempo/i.test(t)) {
+      return "vuelo_relativista";
+    }
+    if (/(?:c[eé]lula|celular|prote[ií]na|tejido|sangre|[oó]rgano|pulm[oó]n|neurona|m[uú]sculo|t[ií]mpano|coraz[oó]n(?!.*tierra))/i.test(t)) {
+      return "interior_cuerpo";
+    }
+    if (/oc[eé]ano|abis|fosa|marianas|submarin|profundidad|pez |peces|ballena|tibur[oó]n|arrecife/i.test(t)) {
+      return "abismo_oceanico";
+    }
     if (/luna|espacio|universo|planeta|estrella|galaxia|marte|gravedad|orbita|cohete/i.test(t)) {
       return "lunar";
     }
@@ -138,6 +156,39 @@ export const Scene: React.FC<SceneProps> = ({ escena }) => {
   }, [escena.composicionVisual, escena.texto, escena.id, escenarioFinal]);
 
   const composicion = composicionFinal;
+  const halo = ESCENARIOS_OSCUROS.has(escenarioFinal);
+
+  // Cero encuadres vacíos: si un único personaje está desplazado a un lado sin objetos ni
+  // elementos narrativos, se coloca automáticamente un objeto protagónico en el lado libre.
+  const objetosFinales: ObjetoEscena[] = useMemo(() => {
+    if (escena.objetos && escena.objetos.length > 0) return escena.objetos;
+    if (personajesList.length !== 1 || escena.elementosNarrativos?.length) return [];
+    const char = personajesList[0];
+
+    // Si el personaje ya tiene un prop en mano o accesorios, la escena ya tiene utilería visual
+    if (char.prop || char.props?.derecha || char.props?.izquierda || escena.prop || escena.props?.derecha) {
+      return [];
+    }
+
+    // Si el personaje se desplaza por la escena (ej. caminar_hacia), no colocar objetos estáticos que bloqueen su paso
+    const hasMovement = (char.acciones || []).some(
+      (a) => a.tipo === "caminar_hacia" || a.haciaX !== undefined || (a.pasos && a.pasos.some((p) => p.posicion))
+    );
+    if (hasMovement) return [];
+
+    const x = char.posicion?.x ?? 0;
+    if (Math.abs(x) < 140) return [];
+
+    return [
+      {
+        id: "auto_relleno",
+        propId: `lucide:${escena.icono}`,
+        posicion: { x: x < 0 ? 240 : -240, y: -60 },
+        escala: 1.25,
+        animacion: { tipo: "flotar" },
+      },
+    ];
+  }, [escena.objetos, escena.elementosNarrativos, escena.icono, escena.prop, escena.props, personajesList]);
   const isNarrativeMode =
     escena.layout === "narrativo" ||
     escena.layout === "compacto" ||
@@ -176,10 +227,9 @@ export const Scene: React.FC<SceneProps> = ({ escena }) => {
           <NarrativeElements elementos={escena.elementosNarrativos} />
 
           {/* Props y objetos interactivos en el escenario */}
-          {escena.objetos &&
-            escena.objetos.map((obj) => (
-              <SceneObject key={obj.id} objeto={obj} frame={frame} />
-            ))}
+          {objetosFinales.map((obj) => (
+            <SceneObject key={obj.id} objeto={obj} frame={frame} />
+          ))}
 
           {/* Escenario de personajes actuando de forma continua */}
           <div className="absolute inset-0 flex items-center justify-center pointer-events-none z-20">
@@ -207,6 +257,7 @@ export const Scene: React.FC<SceneProps> = ({ escena }) => {
                     vibrationOffset={ev.vibrationX}
                     animacionEntrada={char.animacionEntrada ?? "ninguna"}
                     palabras={escena.palabras}
+                    halo={halo}
                     overrideIsSpeaking={
                       char.habla !== undefined ? (char.habla ? undefined : false) : undefined
                     }

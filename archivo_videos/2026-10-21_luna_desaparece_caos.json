@@ -1,0 +1,1702 @@
+{
+  "meta": {
+    "id": "luna_desaparece_caos",
+    "slug": "luna_desaparece_caos",
+    "temaResumen": "¿Qué pasaría en la Tierra si la Luna desapareciera repentinamente?"
+  },
+  "escenas": [
+    {
+      "id": 1,
+      "texto": "¿Alguna vez te has preguntado qué le ocurriría a nuestro planeta si la Luna simplemente desapareciera de la noche a la mañana?",
+      "icono": "Moon",
+      "colorIcono": "#94A3B8",
+      "tituloVisual": "¿Y SI DESAPARECE?",
+      "composicionVisual": "plano_general",
+      "escenario": "espacio_profundo",
+      "layout": "narrativo",
+      "transicion": "zoom_in",
+      "efectosCamara": [
+        "drift"
+      ],
+      "sfx": "sfx/sfx_tension_riser.wav",
+      "volumenSfx": 0.22,
+      "personajes": [
+        {
+          "id": "narrador_lunar",
+          "posicion": {
+            "x": -240,
+            "y": 40
+          },
+          "escala": 1,
+          "orientacion": "derecha",
+          "acciones": [
+            {
+              "tipo": "caminar_hacia",
+              "desdeX": -300,
+              "haciaX": -80
+            }
+          ],
+          "habla": true
+        }
+      ],
+      "objetos": [
+        {
+          "id": "luna_intro",
+          "propId": "moon_cratered",
+          "posicion": {
+            "x": 260,
+            "y": -80
+          },
+          "escala": 1.5,
+          "animacion": {
+            "tipo": "flotar"
+          }
+        }
+      ],
+      "palabrasClave": [
+        "planeta",
+        "Luna",
+        "desapareciera",
+        "noche a la mañana"
+      ],
+      "duracionSegundos": 7.018,
+      "palabras": [
+        {
+          "palabra": "Alguna",
+          "inicioMs": 0,
+          "finMs": 360
+        },
+        {
+          "palabra": "vez",
+          "inicioMs": 360,
+          "finMs": 500
+        },
+        {
+          "palabra": "te",
+          "inicioMs": 500,
+          "finMs": 660
+        },
+        {
+          "palabra": "has",
+          "inicioMs": 660,
+          "finMs": 720
+        },
+        {
+          "palabra": "preguntado",
+          "inicioMs": 720,
+          "finMs": 1300
+        },
+        {
+          "palabra": "qué",
+          "inicioMs": 1300,
+          "finMs": 1500
+        },
+        {
+          "palabra": "le",
+          "inicioMs": 1500,
+          "finMs": 1600
+        },
+        {
+          "palabra": "ocurriría",
+          "inicioMs": 1600,
+          "finMs": 2120
+        },
+        {
+          "palabra": "a",
+          "inicioMs": 2120,
+          "finMs": 2220
+        },
+        {
+          "palabra": "nuestro",
+          "inicioMs": 2220,
+          "finMs": 2420
+        },
+        {
+          "palabra": "planeta",
+          "inicioMs": 2420,
+          "finMs": 2700
+        },
+        {
+          "palabra": "si",
+          "inicioMs": 2920,
+          "finMs": 2960
+        },
+        {
+          "palabra": "la",
+          "inicioMs": 2960,
+          "finMs": 3100
+        },
+        {
+          "palabra": "Luna",
+          "inicioMs": 3100,
+          "finMs": 4060
+        },
+        {
+          "palabra": "simplemente",
+          "inicioMs": 4060,
+          "finMs": 4520
+        },
+        {
+          "palabra": "desapareciera",
+          "inicioMs": 4520,
+          "finMs": 5140
+        },
+        {
+          "palabra": "de",
+          "inicioMs": 5140,
+          "finMs": 5240
+        },
+        {
+          "palabra": "la",
+          "inicioMs": 5240,
+          "finMs": 5360
+        },
+        {
+          "palabra": "noche",
+          "inicioMs": 5360,
+          "finMs": 5560
+        },
+        {
+          "palabra": "a",
+          "inicioMs": 5560,
+          "finMs": 5680
+        },
+        {
+          "palabra": "la",
+          "inicioMs": 5680,
+          "finMs": 5700
+        },
+        {
+          "palabra": "mañana",
+          "inicioMs": 5700,
+          "finMs": 5960
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "texto": "El primer impacto inmediato ocurriría esa misma noche: una oscuridad absoluta como jamás hemos experimentado en la historia humana.",
+      "icono": "EyeOff",
+      "colorIcono": "#64748B",
+      "tituloVisual": "OSCURIDAD TOTAL",
+      "composicionVisual": "primer_plano",
+      "escenario": "habitacion_noche",
+      "layout": "narrativo",
+      "transicion": "whip_right",
+      "efectosCamara": [
+        "shake"
+      ],
+      "sfx": "sfx/sfx_whoosh.wav",
+      "volumenSfx": 0.2,
+      "personajes": [
+        {
+          "id": "asombro_oscuridad",
+          "posicion": {
+            "x": 0,
+            "y": 20
+          },
+          "escala": 1.15,
+          "orientacion": "derecha",
+          "poseId": "covering_eyes",
+          "expresion": "shocked",
+          "habla": true
+        }
+      ],
+      "palabrasClave": [
+        "primer impacto",
+        "oscuridad absoluta",
+        "historia humana"
+      ],
+      "duracionSegundos": 7.378,
+      "palabras": [
+        {
+          "palabra": "El",
+          "inicioMs": 0,
+          "finMs": 200
+        },
+        {
+          "palabra": "primer",
+          "inicioMs": 200,
+          "finMs": 420
+        },
+        {
+          "palabra": "impacto",
+          "inicioMs": 420,
+          "finMs": 800
+        },
+        {
+          "palabra": "inmediato",
+          "inicioMs": 800,
+          "finMs": 1300
+        },
+        {
+          "palabra": "ocurriría",
+          "inicioMs": 1300,
+          "finMs": 1940
+        },
+        {
+          "palabra": "esa",
+          "inicioMs": 1940,
+          "finMs": 2200
+        },
+        {
+          "palabra": "misma",
+          "inicioMs": 2200,
+          "finMs": 2380
+        },
+        {
+          "palabra": "noche",
+          "inicioMs": 2380,
+          "finMs": 2720
+        },
+        {
+          "palabra": "una",
+          "inicioMs": 3020,
+          "finMs": 3220
+        },
+        {
+          "palabra": "oscuridad",
+          "inicioMs": 3220,
+          "finMs": 3760
+        },
+        {
+          "palabra": "absoluta",
+          "inicioMs": 3760,
+          "finMs": 4400
+        },
+        {
+          "palabra": "como",
+          "inicioMs": 4400,
+          "finMs": 4560
+        },
+        {
+          "palabra": "jamás",
+          "inicioMs": 4560,
+          "finMs": 4960
+        },
+        {
+          "palabra": "hemos",
+          "inicioMs": 4960,
+          "finMs": 5100
+        },
+        {
+          "palabra": "experimentado",
+          "inicioMs": 5100,
+          "finMs": 5880
+        },
+        {
+          "palabra": "en",
+          "inicioMs": 5880,
+          "finMs": 5980
+        },
+        {
+          "palabra": "la",
+          "inicioMs": 5980,
+          "finMs": 6020
+        },
+        {
+          "palabra": "historia",
+          "inicioMs": 6020,
+          "finMs": 6240
+        },
+        {
+          "palabra": "humana",
+          "inicioMs": 6240,
+          "finMs": 6700
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "texto": "Sin el reflejo de la luz solar en la superficie lunar, las noches serían tan negras que los ecosistemas nocturnos colapsarían al instante.",
+      "icono": "Compass",
+      "colorIcono": "#38BDF8",
+      "tituloVisual": "COLAPSO NOCTURNO",
+      "composicionVisual": "plano_general",
+      "escenario": "bosque_frio_nocturno",
+      "layout": "narrativo",
+      "transicion": "zoom_in",
+      "efectosCamara": [
+        "drift"
+      ],
+      "personajes": [
+        {
+          "id": "animales_perdidos",
+          "posicion": {
+            "x": -150,
+            "y": 30
+          },
+          "escala": 1,
+          "orientacion": "derecha",
+          "poseId": "confused_question",
+          "expresion": "worried",
+          "habla": true
+        }
+      ],
+      "objetos": [
+        {
+          "id": "brujula_perdida",
+          "propId": "flashlight",
+          "posicion": {
+            "x": 240,
+            "y": -60
+          },
+          "escala": 1.4,
+          "animacion": {
+            "tipo": "vibrar"
+          }
+        }
+      ],
+      "palabrasClave": [
+        "luz solar",
+        "noches negras",
+        "ecosistemas nocturnos"
+      ],
+      "duracionSegundos": 7.69,
+      "palabras": [
+        {
+          "palabra": "Sin",
+          "inicioMs": 0,
+          "finMs": 220
+        },
+        {
+          "palabra": "el",
+          "inicioMs": 220,
+          "finMs": 360
+        },
+        {
+          "palabra": "reflejo",
+          "inicioMs": 360,
+          "finMs": 820
+        },
+        {
+          "palabra": "de",
+          "inicioMs": 820,
+          "finMs": 960
+        },
+        {
+          "palabra": "la",
+          "inicioMs": 960,
+          "finMs": 1060
+        },
+        {
+          "palabra": "luz",
+          "inicioMs": 1060,
+          "finMs": 1240
+        },
+        {
+          "palabra": "solar",
+          "inicioMs": 1240,
+          "finMs": 1560
+        },
+        {
+          "palabra": "en",
+          "inicioMs": 1560,
+          "finMs": 1740
+        },
+        {
+          "palabra": "la",
+          "inicioMs": 1740,
+          "finMs": 1780
+        },
+        {
+          "palabra": "superficie",
+          "inicioMs": 1780,
+          "finMs": 2300
+        },
+        {
+          "palabra": "lunar",
+          "inicioMs": 2300,
+          "finMs": 2560
+        },
+        {
+          "palabra": "las",
+          "inicioMs": 2880,
+          "finMs": 2980
+        },
+        {
+          "palabra": "noches",
+          "inicioMs": 2980,
+          "finMs": 3300
+        },
+        {
+          "palabra": "serían",
+          "inicioMs": 3300,
+          "finMs": 3600
+        },
+        {
+          "palabra": "tan",
+          "inicioMs": 3600,
+          "finMs": 3860
+        },
+        {
+          "palabra": "negras",
+          "inicioMs": 3860,
+          "finMs": 4300
+        },
+        {
+          "palabra": "que",
+          "inicioMs": 4300,
+          "finMs": 4440
+        },
+        {
+          "palabra": "los",
+          "inicioMs": 4440,
+          "finMs": 4580
+        },
+        {
+          "palabra": "ecosistemas",
+          "inicioMs": 4580,
+          "finMs": 5120
+        },
+        {
+          "palabra": "nocturnos",
+          "inicioMs": 5120,
+          "finMs": 5720
+        },
+        {
+          "palabra": "colapsarían",
+          "inicioMs": 5720,
+          "finMs": 6280
+        },
+        {
+          "palabra": "al",
+          "inicioMs": 6280,
+          "finMs": 6400
+        },
+        {
+          "palabra": "instante",
+          "inicioMs": 6400,
+          "finMs": 6920
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "texto": "Pero el verdadero desastre planetario comenzaría en los océanos. La atracción gravitatoria de la Luna es el motor de las mareas.",
+      "icono": "Waves",
+      "colorIcono": "#0284C7",
+      "tituloVisual": "MAREAS PERDIDAS",
+      "composicionVisual": "plano_general",
+      "escenario": "mar_abierto",
+      "layout": "narrativo",
+      "transicion": "whip_left",
+      "efectosCamara": [
+        "drift"
+      ],
+      "elementosNarrativos": [
+        {
+          "tipo": "giant_waves"
+        }
+      ],
+      "personajes": [
+        {
+          "id": "explicador_mareas",
+          "posicion": {
+            "x": -140,
+            "y": 25
+          },
+          "escala": 1,
+          "orientacion": "derecha",
+          "poseId": "explaining_both_hands",
+          "expresion": "analytical",
+          "habla": true
+        }
+      ],
+      "palabrasClave": [
+        "desastre planetario",
+        "atracción gravitatoria",
+        "motor de las mareas"
+      ],
+      "duracionSegundos": 7.81,
+      "palabras": [
+        {
+          "palabra": "Pero",
+          "inicioMs": 0,
+          "finMs": 260
+        },
+        {
+          "palabra": "el",
+          "inicioMs": 260,
+          "finMs": 440
+        },
+        {
+          "palabra": "verdadero",
+          "inicioMs": 440,
+          "finMs": 840
+        },
+        {
+          "palabra": "desastre",
+          "inicioMs": 840,
+          "finMs": 1240
+        },
+        {
+          "palabra": "planetario",
+          "inicioMs": 1240,
+          "finMs": 1820
+        },
+        {
+          "palabra": "comenzaría",
+          "inicioMs": 1820,
+          "finMs": 2380
+        },
+        {
+          "palabra": "en",
+          "inicioMs": 2380,
+          "finMs": 2500
+        },
+        {
+          "palabra": "los",
+          "inicioMs": 2500,
+          "finMs": 2580
+        },
+        {
+          "palabra": "océanos",
+          "inicioMs": 2580,
+          "finMs": 3020
+        },
+        {
+          "palabra": "La",
+          "inicioMs": 3240,
+          "finMs": 3340
+        },
+        {
+          "palabra": "atracción",
+          "inicioMs": 3340,
+          "finMs": 3780
+        },
+        {
+          "palabra": "gravitatoria",
+          "inicioMs": 3780,
+          "finMs": 4480
+        },
+        {
+          "palabra": "de",
+          "inicioMs": 4480,
+          "finMs": 4580
+        },
+        {
+          "palabra": "la",
+          "inicioMs": 4580,
+          "finMs": 4700
+        },
+        {
+          "palabra": "Luna",
+          "inicioMs": 4700,
+          "finMs": 4880
+        },
+        {
+          "palabra": "es",
+          "inicioMs": 4880,
+          "finMs": 5200
+        },
+        {
+          "palabra": "el",
+          "inicioMs": 5200,
+          "finMs": 5340
+        },
+        {
+          "palabra": "motor",
+          "inicioMs": 5340,
+          "finMs": 5600
+        },
+        {
+          "palabra": "de",
+          "inicioMs": 5600,
+          "finMs": 5800
+        },
+        {
+          "palabra": "las",
+          "inicioMs": 5800,
+          "finMs": 5960
+        },
+        {
+          "palabra": "mareas",
+          "inicioMs": 5960,
+          "finMs": 6420
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "texto": "Sin ella, las mareas oceánicas perderían casi el sesenta y siete por ciento de su fuerza, quedando reducidas a leves ondulaciones del Sol.",
+      "icono": "Percent",
+      "colorIcono": "#F59E0B",
+      "tituloVisual": "PÉRDIDA DEL 67%",
+      "composicionVisual": "cifras_concepto",
+      "escenario": "mar_abierto",
+      "layout": "narrativo",
+      "transicion": "zoom_in",
+      "efectosCamara": [
+        "punch"
+      ],
+      "sfx": "sfx/sfx_impact.wav",
+      "volumenSfx": 0.22,
+      "personajes": [
+        {
+          "id": "cifras_fuerza",
+          "posicion": {
+            "x": -150,
+            "y": 30
+          },
+          "escala": 1,
+          "orientacion": "derecha",
+          "poseId": "pointing_right",
+          "expresion": "serious",
+          "habla": true
+        }
+      ],
+      "objetos": [
+        {
+          "id": "calculo_mareas",
+          "propId": "calculator",
+          "posicion": {
+            "x": 240,
+            "y": -70
+          },
+          "escala": 1.45,
+          "animacion": {
+            "tipo": "pulso"
+          }
+        }
+      ],
+      "palabrasClave": [
+        "sesenta y siete por ciento",
+        "fuerza",
+        "ondulaciones del Sol"
+      ],
+      "duracionSegundos": 8.194,
+      "palabras": [
+        {
+          "palabra": "Sin",
+          "inicioMs": 0,
+          "finMs": 200
+        },
+        {
+          "palabra": "ella",
+          "inicioMs": 200,
+          "finMs": 460
+        },
+        {
+          "palabra": "las",
+          "inicioMs": 800,
+          "finMs": 880
+        },
+        {
+          "palabra": "mareas",
+          "inicioMs": 880,
+          "finMs": 1180
+        },
+        {
+          "palabra": "oceánicas",
+          "inicioMs": 1180,
+          "finMs": 1620
+        },
+        {
+          "palabra": "perderían",
+          "inicioMs": 1620,
+          "finMs": 2080
+        },
+        {
+          "palabra": "casi",
+          "inicioMs": 2080,
+          "finMs": 2380
+        },
+        {
+          "palabra": "el",
+          "inicioMs": 2380,
+          "finMs": 2520
+        },
+        {
+          "palabra": "sesenta",
+          "inicioMs": 2520,
+          "finMs": 2920
+        },
+        {
+          "palabra": "y",
+          "inicioMs": 2920,
+          "finMs": 3620
+        },
+        {
+          "palabra": "siete",
+          "inicioMs": 3620,
+          "finMs": 3860
+        },
+        {
+          "palabra": "por",
+          "inicioMs": 3860,
+          "finMs": 4000
+        },
+        {
+          "palabra": "ciento",
+          "inicioMs": 4000,
+          "finMs": 4360
+        },
+        {
+          "palabra": "de",
+          "inicioMs": 4760,
+          "finMs": 5060
+        },
+        {
+          "palabra": "su",
+          "inicioMs": 5060,
+          "finMs": 5680
+        },
+        {
+          "palabra": "fuerza",
+          "inicioMs": 5680,
+          "finMs": 5920
+        },
+        {
+          "palabra": "quedando",
+          "inicioMs": 5920,
+          "finMs": 6140
+        },
+        {
+          "palabra": "reducidas",
+          "inicioMs": 6140,
+          "finMs": 6720
+        },
+        {
+          "palabra": "a",
+          "inicioMs": 6720,
+          "finMs": 7020
+        },
+        {
+          "palabra": "leves",
+          "inicioMs": 7020,
+          "finMs": 7300
+        },
+        {
+          "palabra": "ondulaciones",
+          "inicioMs": 7300,
+          "finMs": 7515
+        },
+        {
+          "palabra": "del",
+          "inicioMs": 7300,
+          "finMs": 7515
+        },
+        {
+          "palabra": "Sol",
+          "inicioMs": 7300,
+          "finMs": 7515
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "texto": "Las corrientes marinas globales se detendrían, interrumpiendo el transporte de nutrientes y provocando la muerte masiva de vida marina.",
+      "icono": "Skull",
+      "colorIcono": "#EF4444",
+      "tituloVisual": "COLAPSO OCEÁNICO",
+      "composicionVisual": "primer_plano",
+      "escenario": "mar_abierto",
+      "layout": "narrativo",
+      "transicion": "flash",
+      "efectosCamara": [
+        "shake",
+        "punch"
+      ],
+      "elementosNarrativos": [
+        {
+          "tipo": "danger_vignette"
+        }
+      ],
+      "personajes": [
+        {
+          "id": "peligro_oceano",
+          "posicion": {
+            "x": 0,
+            "y": 15
+          },
+          "escala": 1.15,
+          "orientacion": "derecha",
+          "poseId": "warning_danger",
+          "expresion": "scared",
+          "habla": true
+        }
+      ],
+      "palabrasClave": [
+        "corrientes marinas",
+        "transporte de nutrientes",
+        "muerte masiva"
+      ],
+      "duracionSegundos": 6.634,
+      "palabras": [
+        {
+          "palabra": "Las",
+          "inicioMs": 0,
+          "finMs": 260
+        },
+        {
+          "palabra": "corrientes",
+          "inicioMs": 260,
+          "finMs": 700
+        },
+        {
+          "palabra": "marinas",
+          "inicioMs": 700,
+          "finMs": 1060
+        },
+        {
+          "palabra": "globales",
+          "inicioMs": 1060,
+          "finMs": 1560
+        },
+        {
+          "palabra": "se",
+          "inicioMs": 1560,
+          "finMs": 1680
+        },
+        {
+          "palabra": "detendrían",
+          "inicioMs": 1680,
+          "finMs": 2220
+        },
+        {
+          "palabra": "interrumpiendo",
+          "inicioMs": 2420,
+          "finMs": 2920
+        },
+        {
+          "palabra": "el",
+          "inicioMs": 2920,
+          "finMs": 3380
+        },
+        {
+          "palabra": "transporte",
+          "inicioMs": 3380,
+          "finMs": 3500
+        },
+        {
+          "palabra": "de",
+          "inicioMs": 3500,
+          "finMs": 3900
+        },
+        {
+          "palabra": "nutrientes",
+          "inicioMs": 3900,
+          "finMs": 4040
+        },
+        {
+          "palabra": "y",
+          "inicioMs": 4040,
+          "finMs": 4460
+        },
+        {
+          "palabra": "provocando",
+          "inicioMs": 4460,
+          "finMs": 4580
+        },
+        {
+          "palabra": "la",
+          "inicioMs": 4580,
+          "finMs": 4780
+        },
+        {
+          "palabra": "muerte",
+          "inicioMs": 4780,
+          "finMs": 5200
+        },
+        {
+          "palabra": "masiva",
+          "inicioMs": 5200,
+          "finMs": 5300
+        },
+        {
+          "palabra": "de",
+          "inicioMs": 5300,
+          "finMs": 5460
+        },
+        {
+          "palabra": "vida",
+          "inicioMs": 5460,
+          "finMs": 5820
+        },
+        {
+          "palabra": "marina",
+          "inicioMs": 5820,
+          "finMs": 6384
+        }
+      ]
+    },
+    {
+      "id": 7,
+      "texto": "Y lo peor aún estaría por llegar: la Luna actúa como un estabilizador giroscópico fundamental para el eje de rotación de la Tierra.",
+      "icono": "Globe",
+      "colorIcono": "#3B82F6",
+      "tituloVisual": "ESTABILIZADOR TERRESTRE",
+      "composicionVisual": "plano_general",
+      "escenario": "espacio_profundo",
+      "layout": "narrativo",
+      "transicion": "zoom_in",
+      "efectosCamara": [
+        "drift"
+      ],
+      "personajes": [
+        {
+          "id": "tierra_giroscopio",
+          "posicion": {
+            "x": -160,
+            "y": 30
+          },
+          "escala": 1,
+          "orientacion": "derecha",
+          "poseId": "presenting_object",
+          "expresion": "analytical",
+          "habla": true
+        }
+      ],
+      "objetos": [
+        {
+          "id": "tierra_con_eje",
+          "propId": "earth_axis",
+          "posicion": {
+            "x": 240,
+            "y": -70
+          },
+          "escala": 1.5,
+          "animacion": {
+            "tipo": "flotar"
+          }
+        }
+      ],
+      "palabrasClave": [
+        "estabilizador giroscópico",
+        "eje de rotación",
+        "Tierra"
+      ],
+      "duracionSegundos": 7.498,
+      "palabras": [
+        {
+          "palabra": "Y",
+          "inicioMs": 0,
+          "finMs": 80
+        },
+        {
+          "palabra": "lo",
+          "inicioMs": 80,
+          "finMs": 180
+        },
+        {
+          "palabra": "peor",
+          "inicioMs": 180,
+          "finMs": 500
+        },
+        {
+          "palabra": "aún",
+          "inicioMs": 500,
+          "finMs": 660
+        },
+        {
+          "palabra": "estaría",
+          "inicioMs": 660,
+          "finMs": 1120
+        },
+        {
+          "palabra": "por",
+          "inicioMs": 1120,
+          "finMs": 1300
+        },
+        {
+          "palabra": "llegar",
+          "inicioMs": 1300,
+          "finMs": 1580
+        },
+        {
+          "palabra": "la",
+          "inicioMs": 2180,
+          "finMs": 2240
+        },
+        {
+          "palabra": "Luna",
+          "inicioMs": 2240,
+          "finMs": 2500
+        },
+        {
+          "palabra": "actúa",
+          "inicioMs": 2500,
+          "finMs": 2760
+        },
+        {
+          "palabra": "como",
+          "inicioMs": 2760,
+          "finMs": 3000
+        },
+        {
+          "palabra": "un",
+          "inicioMs": 3000,
+          "finMs": 3120
+        },
+        {
+          "palabra": "estabilizador",
+          "inicioMs": 3120,
+          "finMs": 3740
+        },
+        {
+          "palabra": "giroscópico",
+          "inicioMs": 3740,
+          "finMs": 4380
+        },
+        {
+          "palabra": "fundamental",
+          "inicioMs": 4380,
+          "finMs": 4740
+        },
+        {
+          "palabra": "para",
+          "inicioMs": 4740,
+          "finMs": 5200
+        },
+        {
+          "palabra": "el",
+          "inicioMs": 5200,
+          "finMs": 5320
+        },
+        {
+          "palabra": "eje",
+          "inicioMs": 5320,
+          "finMs": 5460
+        },
+        {
+          "palabra": "de",
+          "inicioMs": 5460,
+          "finMs": 5580
+        },
+        {
+          "palabra": "rotación",
+          "inicioMs": 5580,
+          "finMs": 5980
+        },
+        {
+          "palabra": "de",
+          "inicioMs": 5980,
+          "finMs": 6160
+        },
+        {
+          "palabra": "la",
+          "inicioMs": 6160,
+          "finMs": 6260
+        },
+        {
+          "palabra": "Tierra",
+          "inicioMs": 6260,
+          "finMs": 6560
+        }
+      ]
+    },
+    {
+      "id": 8,
+      "texto": "Actualmente nuestro planeta se mantiene firme a veintitrés punto cinco grados de inclinación, lo que permite que existan estaciones climáticas predecibles.",
+      "icono": "Sun",
+      "colorIcono": "#F59E0B",
+      "tituloVisual": "23.5 GRADOS FIRMES",
+      "composicionVisual": "plano_general",
+      "escenario": "espacio_profundo",
+      "layout": "narrativo",
+      "transicion": "whip_right",
+      "efectosCamara": [
+        "drift"
+      ],
+      "personajes": [
+        {
+          "id": "inclinacion_firme",
+          "posicion": {
+            "x": -140,
+            "y": 25
+          },
+          "escala": 1,
+          "orientacion": "derecha",
+          "poseId": "explaining_pointing_up",
+          "expresion": "smile_soft",
+          "habla": true
+        }
+      ],
+      "objetos": [
+        {
+          "id": "globo_estable",
+          "propId": "globe",
+          "posicion": {
+            "x": 250,
+            "y": -60
+          },
+          "escala": 1.4,
+          "animacion": {
+            "tipo": "flotar"
+          }
+        }
+      ],
+      "palabrasClave": [
+        "veintitrés punto cinco grados",
+        "inclinación",
+        "estaciones climáticas"
+      ],
+      "duracionSegundos": 8.722,
+      "palabras": [
+        {
+          "palabra": "Actualmente",
+          "inicioMs": 0,
+          "finMs": 700
+        },
+        {
+          "palabra": "nuestro",
+          "inicioMs": 700,
+          "finMs": 1000
+        },
+        {
+          "palabra": "planeta",
+          "inicioMs": 1000,
+          "finMs": 1240
+        },
+        {
+          "palabra": "se",
+          "inicioMs": 1240,
+          "finMs": 1500
+        },
+        {
+          "palabra": "mantiene",
+          "inicioMs": 1500,
+          "finMs": 1820
+        },
+        {
+          "palabra": "firme",
+          "inicioMs": 1820,
+          "finMs": 2180
+        },
+        {
+          "palabra": "a",
+          "inicioMs": 2180,
+          "finMs": 2260
+        },
+        {
+          "palabra": "veintitrés",
+          "inicioMs": 2260,
+          "finMs": 2560
+        },
+        {
+          "palabra": "punto",
+          "inicioMs": 2560,
+          "finMs": 3440
+        },
+        {
+          "palabra": "cinco",
+          "inicioMs": 3440,
+          "finMs": 3880
+        },
+        {
+          "palabra": "grados",
+          "inicioMs": 3880,
+          "finMs": 3980
+        },
+        {
+          "palabra": "de",
+          "inicioMs": 3980,
+          "finMs": 4520
+        },
+        {
+          "palabra": "inclinación",
+          "inicioMs": 5020,
+          "finMs": 5180
+        },
+        {
+          "palabra": "lo",
+          "inicioMs": 5180,
+          "finMs": 5300
+        },
+        {
+          "palabra": "que",
+          "inicioMs": 5300,
+          "finMs": 5580
+        },
+        {
+          "palabra": "permite",
+          "inicioMs": 5580,
+          "finMs": 5800
+        },
+        {
+          "palabra": "que",
+          "inicioMs": 5800,
+          "finMs": 6220
+        },
+        {
+          "palabra": "existan",
+          "inicioMs": 6220,
+          "finMs": 6620
+        },
+        {
+          "palabra": "estaciones",
+          "inicioMs": 6620,
+          "finMs": 7180
+        },
+        {
+          "palabra": "climáticas",
+          "inicioMs": 7180,
+          "finMs": 7820
+        },
+        {
+          "palabra": "predecibles",
+          "inicioMs": 7820,
+          "finMs": 8472
+        }
+      ]
+    },
+    {
+      "id": 9,
+      "texto": "Sin el ancla gravitacional de la Luna, el eje terrestre comenzaría a tambalearse descontroladamente entre cero y casi noventa grados.",
+      "icono": "Activity",
+      "colorIcono": "#EF4444",
+      "tituloVisual": "TAMBALEO CAÓTICO",
+      "composicionVisual": "primer_plano",
+      "escenario": "bosque_frio_nocturno",
+      "layout": "narrativo",
+      "transicion": "flash",
+      "efectosCamara": [
+        "shake"
+      ],
+      "sfx": "sfx/sfx_dramatic_hit.wav",
+      "volumenSfx": 0.24,
+      "personajes": [
+        {
+          "id": "caos_tambaleo",
+          "posicion": {
+            "x": 0,
+            "y": 15
+          },
+          "escala": 1.15,
+          "orientacion": "derecha",
+          "poseId": "shock_explosion",
+          "expresion": "shocked",
+          "habla": true
+        }
+      ],
+      "palabrasClave": [
+        "ancla gravitacional",
+        "tambalearse descontroladamente",
+        "noventa grados"
+      ],
+      "duracionSegundos": 7.666,
+      "palabras": [
+        {
+          "palabra": "Sin",
+          "inicioMs": 0,
+          "finMs": 240
+        },
+        {
+          "palabra": "el",
+          "inicioMs": 240,
+          "finMs": 400
+        },
+        {
+          "palabra": "ancla",
+          "inicioMs": 400,
+          "finMs": 640
+        },
+        {
+          "palabra": "gravitacional",
+          "inicioMs": 640,
+          "finMs": 1200
+        },
+        {
+          "palabra": "de",
+          "inicioMs": 1200,
+          "finMs": 1440
+        },
+        {
+          "palabra": "la",
+          "inicioMs": 1440,
+          "finMs": 1560
+        },
+        {
+          "palabra": "Luna",
+          "inicioMs": 1560,
+          "finMs": 1780
+        },
+        {
+          "palabra": "el",
+          "inicioMs": 1900,
+          "finMs": 2020
+        },
+        {
+          "palabra": "eje",
+          "inicioMs": 2020,
+          "finMs": 2140
+        },
+        {
+          "palabra": "terrestre",
+          "inicioMs": 2140,
+          "finMs": 2620
+        },
+        {
+          "palabra": "comenzaría",
+          "inicioMs": 2620,
+          "finMs": 3160
+        },
+        {
+          "palabra": "a",
+          "inicioMs": 3160,
+          "finMs": 3320
+        },
+        {
+          "palabra": "tambalearse",
+          "inicioMs": 3320,
+          "finMs": 3820
+        },
+        {
+          "palabra": "descontroladamente",
+          "inicioMs": 3820,
+          "finMs": 4580
+        },
+        {
+          "palabra": "entre",
+          "inicioMs": 4580,
+          "finMs": 5000
+        },
+        {
+          "palabra": "cero",
+          "inicioMs": 5000,
+          "finMs": 5300
+        },
+        {
+          "palabra": "y",
+          "inicioMs": 5300,
+          "finMs": 5380
+        },
+        {
+          "palabra": "casi",
+          "inicioMs": 5380,
+          "finMs": 5580
+        },
+        {
+          "palabra": "noventa",
+          "inicioMs": 5580,
+          "finMs": 5880
+        },
+        {
+          "palabra": "grados",
+          "inicioMs": 5880,
+          "finMs": 6380
+        }
+      ]
+    },
+    {
+      "id": 10,
+      "texto": "El ecuador se congelaría por completo bajo glaciares polares, mientras los polos hervirían al sol, desatando vientos huracanados a nivel global.",
+      "icono": "Wind",
+      "colorIcono": "#06B6D4",
+      "tituloVisual": "CLIMA EXTREMO",
+      "composicionVisual": "plano_general",
+      "escenario": "tormenta_electrica",
+      "layout": "narrativo",
+      "transicion": "zoom_in",
+      "efectosCamara": [
+        "drift"
+      ],
+      "elementosNarrativos": [
+        {
+          "tipo": "speed_lines"
+        }
+      ],
+      "personajes": [
+        {
+          "id": "vientos_huracanados",
+          "posicion": {
+            "x": -150,
+            "y": 30
+          },
+          "escala": 1,
+          "orientacion": "derecha",
+          "prop": "shield",
+          "poseId": "protecting_shielding",
+          "expresion": "worried",
+          "habla": true
+        }
+      ],
+      "palabrasClave": [
+        "glaciares polares",
+        "polos hervirían",
+        "vientos huracanados"
+      ],
+      "duracionSegundos": 8.266,
+      "palabras": [
+        {
+          "palabra": "El",
+          "inicioMs": 0,
+          "finMs": 220
+        },
+        {
+          "palabra": "ecuador",
+          "inicioMs": 220,
+          "finMs": 560
+        },
+        {
+          "palabra": "se",
+          "inicioMs": 560,
+          "finMs": 780
+        },
+        {
+          "palabra": "congelaría",
+          "inicioMs": 780,
+          "finMs": 1340
+        },
+        {
+          "palabra": "por",
+          "inicioMs": 1340,
+          "finMs": 1580
+        },
+        {
+          "palabra": "completo",
+          "inicioMs": 1580,
+          "finMs": 2040
+        },
+        {
+          "palabra": "bajo",
+          "inicioMs": 2040,
+          "finMs": 2300
+        },
+        {
+          "palabra": "glaciares",
+          "inicioMs": 2300,
+          "finMs": 2820
+        },
+        {
+          "palabra": "polares",
+          "inicioMs": 2820,
+          "finMs": 3260
+        },
+        {
+          "palabra": "mientras",
+          "inicioMs": 3460,
+          "finMs": 3640
+        },
+        {
+          "palabra": "los",
+          "inicioMs": 3640,
+          "finMs": 3940
+        },
+        {
+          "palabra": "polos",
+          "inicioMs": 3940,
+          "finMs": 4300
+        },
+        {
+          "palabra": "hervirían",
+          "inicioMs": 4300,
+          "finMs": 4800
+        },
+        {
+          "palabra": "al",
+          "inicioMs": 4800,
+          "finMs": 4940
+        },
+        {
+          "palabra": "sol",
+          "inicioMs": 4940,
+          "finMs": 5240
+        },
+        {
+          "palabra": "desatando",
+          "inicioMs": 5240,
+          "finMs": 5760
+        },
+        {
+          "palabra": "vientos",
+          "inicioMs": 5760,
+          "finMs": 6160
+        },
+        {
+          "palabra": "huracanados",
+          "inicioMs": 6160,
+          "finMs": 6780
+        },
+        {
+          "palabra": "a",
+          "inicioMs": 6780,
+          "finMs": 6920
+        },
+        {
+          "palabra": "nivel",
+          "inicioMs": 6920,
+          "finMs": 7100
+        },
+        {
+          "palabra": "global",
+          "inicioMs": 7100,
+          "finMs": 7440
+        }
+      ]
+    },
+    {
+      "id": 11,
+      "texto": "La Luna no es un simple adorno en el cielo nocturno: es el escudo protector y el ancla que hace posible la vida en la Tierra.",
+      "icono": "Sparkles",
+      "colorIcono": "#FACC15",
+      "tituloVisual": "NUESTRO ESCUDO VITAL",
+      "composicionVisual": "plano_general",
+      "escenario": "espacio_profundo",
+      "layout": "narrativo",
+      "transicion": "zoom_in",
+      "efectosCamara": [
+        "drift"
+      ],
+      "personajes": [
+        {
+          "id": "conclusion_lunar",
+          "posicion": {
+            "x": -160,
+            "y": 30
+          },
+          "escala": 1,
+          "orientacion": "derecha",
+          "prop": "trophy",
+          "acciones": [
+            {
+              "tipo": "caminar_hacia",
+              "desdeX": -220,
+              "haciaX": 0
+            }
+          ],
+          "habla": true
+        }
+      ],
+      "palabrasClave": [
+        "escudo protector",
+        "ancla gravitacional",
+        "vida en la Tierra"
+      ],
+      "duracionSegundos": 7.378,
+      "palabras": [
+        {
+          "palabra": "La",
+          "inicioMs": 0,
+          "finMs": 160
+        },
+        {
+          "palabra": "Luna",
+          "inicioMs": 160,
+          "finMs": 380
+        },
+        {
+          "palabra": "no",
+          "inicioMs": 380,
+          "finMs": 600
+        },
+        {
+          "palabra": "es",
+          "inicioMs": 600,
+          "finMs": 740
+        },
+        {
+          "palabra": "un",
+          "inicioMs": 740,
+          "finMs": 920
+        },
+        {
+          "palabra": "simple",
+          "inicioMs": 920,
+          "finMs": 1300
+        },
+        {
+          "palabra": "adorno",
+          "inicioMs": 1300,
+          "finMs": 1620
+        },
+        {
+          "palabra": "en",
+          "inicioMs": 1620,
+          "finMs": 1780
+        },
+        {
+          "palabra": "el",
+          "inicioMs": 1780,
+          "finMs": 1940
+        },
+        {
+          "palabra": "cielo",
+          "inicioMs": 1940,
+          "finMs": 2080
+        },
+        {
+          "palabra": "nocturno",
+          "inicioMs": 2080,
+          "finMs": 2780
+        },
+        {
+          "palabra": "es",
+          "inicioMs": 3060,
+          "finMs": 3240
+        },
+        {
+          "palabra": "el",
+          "inicioMs": 3240,
+          "finMs": 3360
+        },
+        {
+          "palabra": "escudo",
+          "inicioMs": 3360,
+          "finMs": 3700
+        },
+        {
+          "palabra": "protector",
+          "inicioMs": 3700,
+          "finMs": 4040
+        },
+        {
+          "palabra": "y",
+          "inicioMs": 4040,
+          "finMs": 4480
+        },
+        {
+          "palabra": "el",
+          "inicioMs": 4480,
+          "finMs": 4620
+        },
+        {
+          "palabra": "ancla",
+          "inicioMs": 4620,
+          "finMs": 4880
+        },
+        {
+          "palabra": "que",
+          "inicioMs": 4880,
+          "finMs": 5020
+        },
+        {
+          "palabra": "hace",
+          "inicioMs": 5020,
+          "finMs": 5180
+        },
+        {
+          "palabra": "posible",
+          "inicioMs": 5180,
+          "finMs": 5520
+        },
+        {
+          "palabra": "la",
+          "inicioMs": 5520,
+          "finMs": 5760
+        },
+        {
+          "palabra": "vida",
+          "inicioMs": 5760,
+          "finMs": 5940
+        },
+        {
+          "palabra": "en",
+          "inicioMs": 5940,
+          "finMs": 6060
+        },
+        {
+          "palabra": "la",
+          "inicioMs": 6060,
+          "finMs": 6160
+        },
+        {
+          "palabra": "Tierra",
+          "inicioMs": 6160,
+          "finMs": 6460
+        }
+      ]
+    }
+  ]
+}

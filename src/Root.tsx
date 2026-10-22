@@ -25,6 +25,10 @@ const calculateMetadata: CalculateMetadataFunction<ShortProps> = async ({
   };
 };
 
+const escenasGuion: EscenaGuion[] = Array.isArray(guionData)
+  ? (guionData as EscenaGuion[])
+  : (((guionData as any)?.escenas || []) as EscenaGuion[]);
+
 export const RemotionRoot: React.FC = () => {
   return (
     <>
@@ -36,7 +40,7 @@ export const RemotionRoot: React.FC = () => {
         width={1080}
         height={1920}
         defaultProps={{
-          escenas: guionData as EscenaGuion[],
+          escenas: escenasGuion,
         }}
         calculateMetadata={calculateMetadata}
       />

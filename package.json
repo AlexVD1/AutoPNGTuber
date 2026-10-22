@@ -7,8 +7,10 @@
     "dev": "remotion studio",
     "build": "remotion bundle",
     "render": "node scripts/render_short.js",
+    "metadata": "node scripts/exportar_metadata.js",
     "poses:build": "node scripts/generar_biblioteca_poses.mjs",
-    "tts": "python scripts/generar_voz.py"
+    "tts": "python scripts/generar_voz.py",
+    "historial": "python scripts/registrar_historia.py"
   },
   "dependencies": {
     "@remotion/cli": "^4.0.242",

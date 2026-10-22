@@ -1,0 +1,1553 @@
+{
+  "meta": {
+    "id": "camaron_pistola_cavitacion",
+    "slug": "camaron_pistola_cavitacion",
+    "temaResumen": "¿Cómo dispara el camarón pistola una burbuja de plasma a 4,700°C mediante cavitación acústica?"
+  },
+  "escenas": [
+    {
+      "id": 1,
+      "texto": "¿Sabías que existe un camarón diminuto en el océano que dispara un rayo de plasma casi tan caliente como la superficie del Sol?",
+      "icono": "Flame",
+      "colorIcono": "#EF4444",
+      "tituloVisual": "ARMA DE PLASMA",
+      "composicionVisual": "plano_general",
+      "escenario": "arrecife_coral",
+      "layout": "narrativo",
+      "transicion": "zoom_in",
+      "efectosCamara": [
+        "drift"
+      ],
+      "sfx": "sfx/sfx_whoosh.wav",
+      "volumenSfx": 0.2,
+      "palabrasClave": [
+        "camarón diminuto",
+        "rayo de plasma",
+        "superficie del Sol",
+        "disparo"
+      ],
+      "personajes": [
+        {
+          "id": "biologo",
+          "posicion": {
+            "x": -160,
+            "y": 70
+          },
+          "escala": 1.05,
+          "orientacion": "derecha",
+          "prop": "pistol_shrimp_hero",
+          "poseId": "presenting_object",
+          "expresion": "eureka",
+          "acciones": [
+            {
+              "tipo": "caminar_hacia",
+              "desdeX": -260,
+              "haciaX": -120
+            }
+          ],
+          "habla": true
+        }
+      ],
+      "duracionSegundos": 6.298,
+      "palabras": [
+        {
+          "palabra": "Sabías",
+          "inicioMs": 0,
+          "finMs": 420
+        },
+        {
+          "palabra": "que",
+          "inicioMs": 420,
+          "finMs": 580
+        },
+        {
+          "palabra": "existe",
+          "inicioMs": 580,
+          "finMs": 780
+        },
+        {
+          "palabra": "un",
+          "inicioMs": 780,
+          "finMs": 1000
+        },
+        {
+          "palabra": "camarón",
+          "inicioMs": 1000,
+          "finMs": 1360
+        },
+        {
+          "palabra": "diminuto",
+          "inicioMs": 1360,
+          "finMs": 1780
+        },
+        {
+          "palabra": "en",
+          "inicioMs": 1780,
+          "finMs": 1860
+        },
+        {
+          "palabra": "el",
+          "inicioMs": 1860,
+          "finMs": 1980
+        },
+        {
+          "palabra": "océano",
+          "inicioMs": 1980,
+          "finMs": 2360
+        },
+        {
+          "palabra": "que",
+          "inicioMs": 2360,
+          "finMs": 2520
+        },
+        {
+          "palabra": "dispara",
+          "inicioMs": 2520,
+          "finMs": 2880
+        },
+        {
+          "palabra": "un",
+          "inicioMs": 2880,
+          "finMs": 2980
+        },
+        {
+          "palabra": "rayo",
+          "inicioMs": 2980,
+          "finMs": 3240
+        },
+        {
+          "palabra": "de",
+          "inicioMs": 3240,
+          "finMs": 3320
+        },
+        {
+          "palabra": "plasma",
+          "inicioMs": 3320,
+          "finMs": 3620
+        },
+        {
+          "palabra": "casi",
+          "inicioMs": 3620,
+          "finMs": 3940
+        },
+        {
+          "palabra": "tan",
+          "inicioMs": 3940,
+          "finMs": 4140
+        },
+        {
+          "palabra": "caliente",
+          "inicioMs": 4140,
+          "finMs": 4540
+        },
+        {
+          "palabra": "como",
+          "inicioMs": 4540,
+          "finMs": 4720
+        },
+        {
+          "palabra": "la",
+          "inicioMs": 4720,
+          "finMs": 4840
+        },
+        {
+          "palabra": "superficie",
+          "inicioMs": 4840,
+          "finMs": 5440
+        },
+        {
+          "palabra": "del",
+          "inicioMs": 5440,
+          "finMs": 5520
+        },
+        {
+          "palabra": "Sol",
+          "inicioMs": 5520,
+          "finMs": 5800
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "texto": "Se llama camarón pistola. Mide apenas cinco centímetros, pero posee el arma biomecánica más destructiva y veloz de todo el reino animal.",
+      "icono": "Crosshair",
+      "colorIcono": "#F97316",
+      "tituloVisual": "CAMARÓN PISTOLA",
+      "composicionVisual": "primer_plano",
+      "escenario": "arrecife_coral",
+      "layout": "narrativo",
+      "transicion": "whip_right",
+      "efectosCamara": [
+        "drift"
+      ],
+      "palabrasClave": [
+        "camarón pistola",
+        "cinco centímetros",
+        "arma biomecánica",
+        "destructiva y veloz"
+      ],
+      "personajes": [
+        {
+          "id": "biologo",
+          "posicion": {
+            "x": 0,
+            "y": 50
+          },
+          "escala": 1.15,
+          "orientacion": "derecha",
+          "prop": "pistol_shrimp_hero",
+          "poseId": "presenting_object",
+          "expresion": "talking_enthusiastic",
+          "habla": true
+        }
+      ],
+      "duracionSegundos": 7.45,
+      "palabras": [
+        {
+          "palabra": "Se",
+          "inicioMs": 0,
+          "finMs": 120
+        },
+        {
+          "palabra": "llama",
+          "inicioMs": 120,
+          "finMs": 340
+        },
+        {
+          "palabra": "camarón",
+          "inicioMs": 340,
+          "finMs": 800
+        },
+        {
+          "palabra": "pistola",
+          "inicioMs": 800,
+          "finMs": 1340
+        },
+        {
+          "palabra": "Mide",
+          "inicioMs": 1780,
+          "finMs": 2180
+        },
+        {
+          "palabra": "apenas",
+          "inicioMs": 2180,
+          "finMs": 2400
+        },
+        {
+          "palabra": "cinco",
+          "inicioMs": 2400,
+          "finMs": 2800
+        },
+        {
+          "palabra": "centímetros",
+          "inicioMs": 2800,
+          "finMs": 3360
+        },
+        {
+          "palabra": "pero",
+          "inicioMs": 3480,
+          "finMs": 3600
+        },
+        {
+          "palabra": "posee",
+          "inicioMs": 3600,
+          "finMs": 3980
+        },
+        {
+          "palabra": "el",
+          "inicioMs": 3980,
+          "finMs": 4120
+        },
+        {
+          "palabra": "arma",
+          "inicioMs": 4120,
+          "finMs": 4300
+        },
+        {
+          "palabra": "biomecánica",
+          "inicioMs": 4300,
+          "finMs": 4900
+        },
+        {
+          "palabra": "más",
+          "inicioMs": 4900,
+          "finMs": 5100
+        },
+        {
+          "palabra": "destructiva",
+          "inicioMs": 5100,
+          "finMs": 5660
+        },
+        {
+          "palabra": "y",
+          "inicioMs": 5660,
+          "finMs": 5740
+        },
+        {
+          "palabra": "veloz",
+          "inicioMs": 5740,
+          "finMs": 6080
+        },
+        {
+          "palabra": "de",
+          "inicioMs": 6080,
+          "finMs": 6200
+        },
+        {
+          "palabra": "todo",
+          "inicioMs": 6200,
+          "finMs": 6380
+        },
+        {
+          "palabra": "el",
+          "inicioMs": 6380,
+          "finMs": 6540
+        },
+        {
+          "palabra": "reino",
+          "inicioMs": 6540,
+          "finMs": 6740
+        },
+        {
+          "palabra": "animal",
+          "inicioMs": 6740,
+          "finMs": 6960
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "texto": "Una de sus pinzas es gigantesca: ocupa la mitad de su cuerpo y funciona exactamente como un martillo percutor cargado con resorte muscular.",
+      "icono": "Zap",
+      "colorIcono": "#FBBF24",
+      "tituloVisual": "PINZA GIGANTE",
+      "composicionVisual": "plano_general",
+      "escenario": "arrecife_coral",
+      "layout": "narrativo",
+      "transicion": "corte",
+      "efectosCamara": [
+        "drift"
+      ],
+      "palabrasClave": [
+        "pinzas gigantesca",
+        "martillo percutor",
+        "resorte muscular"
+      ],
+      "personajes": [
+        {
+          "id": "fisico",
+          "posicion": {
+            "x": -180,
+            "y": 70
+          },
+          "escala": 1.05,
+          "orientacion": "derecha",
+          "poseId": "explaining_pointing_up",
+          "expresion": "analytical",
+          "habla": true
+        }
+      ],
+      "objetos": [
+        {
+          "id": "pinza_hero",
+          "propId": "pistol_shrimp_hero",
+          "posicion": {
+            "x": 170,
+            "y": -30
+          },
+          "escala": 1.45,
+          "animacion": {
+            "tipo": "pulso",
+            "inicioFrame": 0,
+            "finFrame": 9999
+          },
+          "capaZ": 25
+        }
+      ],
+      "duracionSegundos": 7.426,
+      "palabras": [
+        {
+          "palabra": "Una",
+          "inicioMs": 0,
+          "finMs": 280
+        },
+        {
+          "palabra": "de",
+          "inicioMs": 280,
+          "finMs": 400
+        },
+        {
+          "palabra": "sus",
+          "inicioMs": 400,
+          "finMs": 580
+        },
+        {
+          "palabra": "pinzas",
+          "inicioMs": 580,
+          "finMs": 980
+        },
+        {
+          "palabra": "es",
+          "inicioMs": 980,
+          "finMs": 1240
+        },
+        {
+          "palabra": "gigantesca",
+          "inicioMs": 1240,
+          "finMs": 1980
+        },
+        {
+          "palabra": "ocupa",
+          "inicioMs": 2300,
+          "finMs": 2680
+        },
+        {
+          "palabra": "la",
+          "inicioMs": 2680,
+          "finMs": 2800
+        },
+        {
+          "palabra": "mitad",
+          "inicioMs": 2800,
+          "finMs": 3000
+        },
+        {
+          "palabra": "de",
+          "inicioMs": 3000,
+          "finMs": 3160
+        },
+        {
+          "palabra": "su",
+          "inicioMs": 3160,
+          "finMs": 3280
+        },
+        {
+          "palabra": "cuerpo",
+          "inicioMs": 3280,
+          "finMs": 3440
+        },
+        {
+          "palabra": "y",
+          "inicioMs": 3440,
+          "finMs": 3660
+        },
+        {
+          "palabra": "funciona",
+          "inicioMs": 3660,
+          "finMs": 4460
+        },
+        {
+          "palabra": "exactamente",
+          "inicioMs": 4460,
+          "finMs": 4820
+        },
+        {
+          "palabra": "como",
+          "inicioMs": 4820,
+          "finMs": 4960
+        },
+        {
+          "palabra": "un",
+          "inicioMs": 4960,
+          "finMs": 5300
+        },
+        {
+          "palabra": "martillo",
+          "inicioMs": 5300,
+          "finMs": 5760
+        },
+        {
+          "palabra": "percutor",
+          "inicioMs": 5760,
+          "finMs": 6080
+        },
+        {
+          "palabra": "cargado",
+          "inicioMs": 6080,
+          "finMs": 6260
+        },
+        {
+          "palabra": "con",
+          "inicioMs": 6260,
+          "finMs": 6580
+        },
+        {
+          "palabra": "resorte",
+          "inicioMs": 6580,
+          "finMs": 6920
+        },
+        {
+          "palabra": "muscular",
+          "inicioMs": 6920,
+          "finMs": 7176
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "texto": "Cuando divisa un pez, tensa el tendón y cierra la pinza a más de cien kilómetros por hora en una sola milésima de segundo.",
+      "icono": "FastForward",
+      "colorIcono": "#38BDF8",
+      "tituloVisual": "CIEN KM/H",
+      "composicionVisual": "primer_plano",
+      "escenario": "arrecife_coral",
+      "layout": "narrativo",
+      "transicion": "zoom_in",
+      "efectosCamara": [
+        "punch"
+      ],
+      "sfx": "sfx/sfx_dramatic_hit.wav",
+      "volumenSfx": 0.25,
+      "palabrasClave": [
+        "tensa el tendón",
+        "cien kilómetros por hora",
+        "milésima de segundo"
+      ],
+      "personajes": [
+        {
+          "id": "biologo",
+          "posicion": {
+            "x": 0,
+            "y": 50
+          },
+          "escala": 1.15,
+          "orientacion": "derecha",
+          "prop": "pistol_shrimp_hero",
+          "poseId": "presenting_object",
+          "expresion": "eureka",
+          "habla": true
+        }
+      ],
+      "duracionSegundos": 6.61,
+      "palabras": [
+        {
+          "palabra": "Cuando",
+          "inicioMs": 0,
+          "finMs": 300
+        },
+        {
+          "palabra": "divisa",
+          "inicioMs": 300,
+          "finMs": 680
+        },
+        {
+          "palabra": "un",
+          "inicioMs": 680,
+          "finMs": 780
+        },
+        {
+          "palabra": "pez",
+          "inicioMs": 780,
+          "finMs": 1320
+        },
+        {
+          "palabra": "tensa",
+          "inicioMs": 1320,
+          "finMs": 1440
+        },
+        {
+          "palabra": "el",
+          "inicioMs": 1440,
+          "finMs": 1880
+        },
+        {
+          "palabra": "tendón",
+          "inicioMs": 1880,
+          "finMs": 2060
+        },
+        {
+          "palabra": "y",
+          "inicioMs": 2060,
+          "finMs": 2320
+        },
+        {
+          "palabra": "cierra",
+          "inicioMs": 2320,
+          "finMs": 2460
+        },
+        {
+          "palabra": "la",
+          "inicioMs": 2460,
+          "finMs": 2880
+        },
+        {
+          "palabra": "pinza",
+          "inicioMs": 2880,
+          "finMs": 3060
+        },
+        {
+          "palabra": "a",
+          "inicioMs": 3060,
+          "finMs": 3220
+        },
+        {
+          "palabra": "más",
+          "inicioMs": 3220,
+          "finMs": 3360
+        },
+        {
+          "palabra": "de",
+          "inicioMs": 3360,
+          "finMs": 3520
+        },
+        {
+          "palabra": "cien",
+          "inicioMs": 3520,
+          "finMs": 4060
+        },
+        {
+          "palabra": "kilómetros",
+          "inicioMs": 4060,
+          "finMs": 4320
+        },
+        {
+          "palabra": "por",
+          "inicioMs": 4320,
+          "finMs": 4500
+        },
+        {
+          "palabra": "hora",
+          "inicioMs": 4500,
+          "finMs": 4700
+        },
+        {
+          "palabra": "en",
+          "inicioMs": 4700,
+          "finMs": 4860
+        },
+        {
+          "palabra": "una",
+          "inicioMs": 4860,
+          "finMs": 5140
+        },
+        {
+          "palabra": "sola",
+          "inicioMs": 5140,
+          "finMs": 5620
+        },
+        {
+          "palabra": "milésima",
+          "inicioMs": 5620,
+          "finMs": 5740
+        },
+        {
+          "palabra": "de",
+          "inicioMs": 5740,
+          "finMs": 6080
+        },
+        {
+          "palabra": "segundo",
+          "inicioMs": 6080,
+          "finMs": 6360
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "texto": "El golpe expulsa un chorro de agua a treinta metros por segundo, creando una zona de presión tan baja que el agua se desgarra físicamente.",
+      "icono": "Droplets",
+      "colorIcono": "#06B6D4",
+      "tituloVisual": "AGUA DESGARRADA",
+      "composicionVisual": "plano_general",
+      "escenario": "arrecife_coral",
+      "layout": "narrativo",
+      "transicion": "whip_left",
+      "efectosCamara": [
+        "drift"
+      ],
+      "palabrasClave": [
+        "treinta metros por segundo",
+        "presión tan baja",
+        "se desgarra físicamente"
+      ],
+      "personajes": [
+        {
+          "id": "fisico",
+          "posicion": {
+            "x": -150,
+            "y": 70
+          },
+          "escala": 1.05,
+          "orientacion": "derecha",
+          "prop": "water_drop",
+          "poseId": "presenting_object",
+          "expresion": "analytical",
+          "habla": true
+        }
+      ],
+      "duracionSegundos": 7.018,
+      "palabras": [
+        {
+          "palabra": "El",
+          "inicioMs": 0,
+          "finMs": 200
+        },
+        {
+          "palabra": "golpe",
+          "inicioMs": 200,
+          "finMs": 360
+        },
+        {
+          "palabra": "expulsa",
+          "inicioMs": 360,
+          "finMs": 940
+        },
+        {
+          "palabra": "un",
+          "inicioMs": 940,
+          "finMs": 1040
+        },
+        {
+          "palabra": "chorro",
+          "inicioMs": 1040,
+          "finMs": 1300
+        },
+        {
+          "palabra": "de",
+          "inicioMs": 1300,
+          "finMs": 1420
+        },
+        {
+          "palabra": "agua",
+          "inicioMs": 1420,
+          "finMs": 1620
+        },
+        {
+          "palabra": "a",
+          "inicioMs": 1620,
+          "finMs": 1780
+        },
+        {
+          "palabra": "treinta",
+          "inicioMs": 1780,
+          "finMs": 2040
+        },
+        {
+          "palabra": "metros",
+          "inicioMs": 2040,
+          "finMs": 2300
+        },
+        {
+          "palabra": "por",
+          "inicioMs": 2300,
+          "finMs": 2500
+        },
+        {
+          "palabra": "segundo",
+          "inicioMs": 2500,
+          "finMs": 2960
+        },
+        {
+          "palabra": "creando",
+          "inicioMs": 3320,
+          "finMs": 3660
+        },
+        {
+          "palabra": "una",
+          "inicioMs": 3660,
+          "finMs": 3840
+        },
+        {
+          "palabra": "zona",
+          "inicioMs": 3840,
+          "finMs": 4040
+        },
+        {
+          "palabra": "de",
+          "inicioMs": 4040,
+          "finMs": 4180
+        },
+        {
+          "palabra": "presión",
+          "inicioMs": 4180,
+          "finMs": 4560
+        },
+        {
+          "palabra": "tan",
+          "inicioMs": 4560,
+          "finMs": 4760
+        },
+        {
+          "palabra": "baja",
+          "inicioMs": 4760,
+          "finMs": 5080
+        },
+        {
+          "palabra": "que",
+          "inicioMs": 5080,
+          "finMs": 5280
+        },
+        {
+          "palabra": "el",
+          "inicioMs": 5280,
+          "finMs": 5360
+        },
+        {
+          "palabra": "agua",
+          "inicioMs": 5360,
+          "finMs": 5520
+        },
+        {
+          "palabra": "se",
+          "inicioMs": 5520,
+          "finMs": 5700
+        },
+        {
+          "palabra": "desgarra",
+          "inicioMs": 5700,
+          "finMs": 6020
+        },
+        {
+          "palabra": "físicamente",
+          "inicioMs": 6020,
+          "finMs": 6500
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "texto": "Se crea una burbuja de vacío hidrodinámico llamada cavitación. Pero la verdadera violencia física estalla cuando esa burbuja colapsa.",
+      "icono": "Disc",
+      "colorIcono": "#8B5CF6",
+      "tituloVisual": "CAVITACIÓN",
+      "composicionVisual": "primer_plano",
+      "escenario": "arrecife_coral",
+      "layout": "narrativo",
+      "transicion": "corte",
+      "efectosCamara": [
+        "shake"
+      ],
+      "palabrasClave": [
+        "burbuja de vacío",
+        "cavitación",
+        "burbuja colapsa"
+      ],
+      "personajes": [
+        {
+          "id": "narrador",
+          "posicion": {
+            "x": 0,
+            "y": 50
+          },
+          "escala": 1.15,
+          "orientacion": "derecha",
+          "poseId": "covering_mouth",
+          "expresion": "shocked",
+          "habla": true
+        }
+      ],
+      "duracionSegundos": 8.026,
+      "palabras": [
+        {
+          "palabra": "Se",
+          "inicioMs": 0,
+          "finMs": 220
+        },
+        {
+          "palabra": "crea",
+          "inicioMs": 220,
+          "finMs": 480
+        },
+        {
+          "palabra": "una",
+          "inicioMs": 480,
+          "finMs": 600
+        },
+        {
+          "palabra": "burbuja",
+          "inicioMs": 600,
+          "finMs": 1060
+        },
+        {
+          "palabra": "de",
+          "inicioMs": 1060,
+          "finMs": 1160
+        },
+        {
+          "palabra": "vacío",
+          "inicioMs": 1160,
+          "finMs": 1460
+        },
+        {
+          "palabra": "hidrodinámico",
+          "inicioMs": 1460,
+          "finMs": 2140
+        },
+        {
+          "palabra": "llamada",
+          "inicioMs": 2140,
+          "finMs": 2500
+        },
+        {
+          "palabra": "cavitación",
+          "inicioMs": 2500,
+          "finMs": 3160
+        },
+        {
+          "palabra": "Pero",
+          "inicioMs": 3380,
+          "finMs": 3900
+        },
+        {
+          "palabra": "la",
+          "inicioMs": 3900,
+          "finMs": 4040
+        },
+        {
+          "palabra": "verdadera",
+          "inicioMs": 4040,
+          "finMs": 4480
+        },
+        {
+          "palabra": "violencia",
+          "inicioMs": 4480,
+          "finMs": 4960
+        },
+        {
+          "palabra": "física",
+          "inicioMs": 4960,
+          "finMs": 5360
+        },
+        {
+          "palabra": "estalla",
+          "inicioMs": 5360,
+          "finMs": 5720
+        },
+        {
+          "palabra": "cuando",
+          "inicioMs": 5720,
+          "finMs": 6120
+        },
+        {
+          "palabra": "esa",
+          "inicioMs": 6120,
+          "finMs": 6440
+        },
+        {
+          "palabra": "burbuja",
+          "inicioMs": 6440,
+          "finMs": 6940
+        },
+        {
+          "palabra": "colapsa",
+          "inicioMs": 6940,
+          "finMs": 7560
+        }
+      ]
+    },
+    {
+      "id": 7,
+      "texto": "Al implosionar, los gases se comprimen a miles de atmósferas y la temperatura interna supera los cuatro mil setecientos grados centígrados.",
+      "icono": "ThermometerSun",
+      "colorIcono": "#EF4444",
+      "tituloVisual": "4,700 °C",
+      "composicionVisual": "cifras_concepto",
+      "escenario": "arrecife_coral",
+      "layout": "narrativo",
+      "transicion": "whip_right",
+      "efectosCamara": [
+        "punch",
+        "shake"
+      ],
+      "sfx": "sfx/sfx_dramatic_hit.wav",
+      "volumenSfx": 0.25,
+      "palabrasClave": [
+        "implosionar",
+        "miles de atmósferas",
+        "cuatro mil setecientos grados"
+      ],
+      "personajes": [
+        {
+          "id": "fisico",
+          "posicion": {
+            "x": -180,
+            "y": 70
+          },
+          "escala": 1.05,
+          "orientacion": "derecha",
+          "poseId": "explaining_pointing_up",
+          "expresion": "eureka",
+          "habla": true
+        }
+      ],
+      "objetos": [
+        {
+          "id": "plasma_blast",
+          "propId": "pistol_shrimp_hero",
+          "posicion": {
+            "x": 170,
+            "y": -30
+          },
+          "escala": 1.45,
+          "animacion": {
+            "tipo": "flotar",
+            "inicioFrame": 0,
+            "finFrame": 9999
+          },
+          "capaZ": 25
+        }
+      ],
+      "duracionSegundos": 7.618,
+      "palabras": [
+        {
+          "palabra": "Al",
+          "inicioMs": 0,
+          "finMs": 240
+        },
+        {
+          "palabra": "implosionar",
+          "inicioMs": 240,
+          "finMs": 820
+        },
+        {
+          "palabra": "los",
+          "inicioMs": 1320,
+          "finMs": 1440
+        },
+        {
+          "palabra": "gases",
+          "inicioMs": 1440,
+          "finMs": 1660
+        },
+        {
+          "palabra": "se",
+          "inicioMs": 1660,
+          "finMs": 1860
+        },
+        {
+          "palabra": "comprimen",
+          "inicioMs": 1860,
+          "finMs": 2340
+        },
+        {
+          "palabra": "a",
+          "inicioMs": 2340,
+          "finMs": 2420
+        },
+        {
+          "palabra": "miles",
+          "inicioMs": 2420,
+          "finMs": 2620
+        },
+        {
+          "palabra": "de",
+          "inicioMs": 2620,
+          "finMs": 2780
+        },
+        {
+          "palabra": "atmósferas",
+          "inicioMs": 2780,
+          "finMs": 3360
+        },
+        {
+          "palabra": "y",
+          "inicioMs": 3360,
+          "finMs": 3500
+        },
+        {
+          "palabra": "la",
+          "inicioMs": 3500,
+          "finMs": 3600
+        },
+        {
+          "palabra": "temperatura",
+          "inicioMs": 3600,
+          "finMs": 3880
+        },
+        {
+          "palabra": "interna",
+          "inicioMs": 3880,
+          "finMs": 4480
+        },
+        {
+          "palabra": "supera",
+          "inicioMs": 4480,
+          "finMs": 4880
+        },
+        {
+          "palabra": "los",
+          "inicioMs": 4880,
+          "finMs": 5000
+        },
+        {
+          "palabra": "cuatro",
+          "inicioMs": 5000,
+          "finMs": 5360
+        },
+        {
+          "palabra": "mil",
+          "inicioMs": 5360,
+          "finMs": 6020
+        },
+        {
+          "palabra": "setecientos",
+          "inicioMs": 6020,
+          "finMs": 6520
+        },
+        {
+          "palabra": "grados",
+          "inicioMs": 6520,
+          "finMs": 7140
+        },
+        {
+          "palabra": "centígrados",
+          "inicioMs": 7140,
+          "finMs": 7368
+        }
+      ]
+    },
+    {
+      "id": 8,
+      "texto": "Durante una fracción de nanosegundo, emite un destello de luz visible y un estruendo acústico de más de doscientos dieciocho decibelios.",
+      "icono": "Volume2",
+      "colorIcono": "#FBBF24",
+      "tituloVisual": "218 DECIBELIOS",
+      "composicionVisual": "primer_plano",
+      "escenario": "arrecife_coral",
+      "layout": "narrativo",
+      "transicion": "corte",
+      "efectosCamara": [
+        "shake"
+      ],
+      "palabrasClave": [
+        "destello de luz",
+        "estruendo acústico",
+        "doscientos dieciocho decibelios"
+      ],
+      "personajes": [
+        {
+          "id": "biologo",
+          "posicion": {
+            "x": 0,
+            "y": 50
+          },
+          "escala": 1.15,
+          "orientacion": "derecha",
+          "prop": "pistol_shrimp_hero",
+          "poseId": "presenting_object",
+          "expresion": "shocked",
+          "habla": true
+        }
+      ],
+      "duracionSegundos": 7.258,
+      "palabras": [
+        {
+          "palabra": "Durante",
+          "inicioMs": 0,
+          "finMs": 360
+        },
+        {
+          "palabra": "una",
+          "inicioMs": 360,
+          "finMs": 520
+        },
+        {
+          "palabra": "fracción",
+          "inicioMs": 520,
+          "finMs": 880
+        },
+        {
+          "palabra": "de",
+          "inicioMs": 880,
+          "finMs": 1020
+        },
+        {
+          "palabra": "nanosegundo",
+          "inicioMs": 1020,
+          "finMs": 1700
+        },
+        {
+          "palabra": "emite",
+          "inicioMs": 1960,
+          "finMs": 2240
+        },
+        {
+          "palabra": "un",
+          "inicioMs": 2240,
+          "finMs": 2380
+        },
+        {
+          "palabra": "destello",
+          "inicioMs": 2380,
+          "finMs": 2760
+        },
+        {
+          "palabra": "de",
+          "inicioMs": 2760,
+          "finMs": 2900
+        },
+        {
+          "palabra": "luz",
+          "inicioMs": 2900,
+          "finMs": 3060
+        },
+        {
+          "palabra": "visible",
+          "inicioMs": 3060,
+          "finMs": 3540
+        },
+        {
+          "palabra": "y",
+          "inicioMs": 3540,
+          "finMs": 3800
+        },
+        {
+          "palabra": "un",
+          "inicioMs": 3800,
+          "finMs": 3900
+        },
+        {
+          "palabra": "estruendo",
+          "inicioMs": 3900,
+          "finMs": 4320
+        },
+        {
+          "palabra": "acústico",
+          "inicioMs": 4320,
+          "finMs": 4760
+        },
+        {
+          "palabra": "de",
+          "inicioMs": 4760,
+          "finMs": 4880
+        },
+        {
+          "palabra": "más",
+          "inicioMs": 4880,
+          "finMs": 5060
+        },
+        {
+          "palabra": "de",
+          "inicioMs": 5060,
+          "finMs": 5180
+        },
+        {
+          "palabra": "doscientos",
+          "inicioMs": 5180,
+          "finMs": 6160
+        },
+        {
+          "palabra": "dieciocho",
+          "inicioMs": 6160,
+          "finMs": 6780
+        },
+        {
+          "palabra": "decibelios",
+          "inicioMs": 6780,
+          "finMs": 7008
+        }
+      ]
+    },
+    {
+      "id": 9,
+      "texto": "Ese estallido es más potente que un disparo de escopeta en el agua, noqueando o despedazando a su presa al instante sin siquiera tocarla.",
+      "icono": "Target",
+      "colorIcono": "#10B981",
+      "tituloVisual": "ONDA SÓNICA",
+      "composicionVisual": "plano_general",
+      "escenario": "arrecife_coral",
+      "layout": "narrativo",
+      "transicion": "whip_left",
+      "efectosCamara": [
+        "punch"
+      ],
+      "sfx": "sfx/sfx_dramatic_hit.wav",
+      "volumenSfx": 0.25,
+      "palabrasClave": [
+        "disparo de escopeta",
+        "noqueando a su presa",
+        "sin siquiera tocarla"
+      ],
+      "personajes": [
+        {
+          "id": "biologo",
+          "posicion": {
+            "x": -80,
+            "y": 60
+          },
+          "escala": 1.1,
+          "orientacion": "derecha",
+          "prop": "pistol_shrimp_hero",
+          "poseId": "presenting_object",
+          "expresion": "smile_wide",
+          "habla": true
+        }
+      ],
+      "duracionSegundos": 7.378,
+      "palabras": [
+        {
+          "palabra": "Ese",
+          "inicioMs": 0,
+          "finMs": 240
+        },
+        {
+          "palabra": "estallido",
+          "inicioMs": 240,
+          "finMs": 700
+        },
+        {
+          "palabra": "es",
+          "inicioMs": 700,
+          "finMs": 800
+        },
+        {
+          "palabra": "más",
+          "inicioMs": 800,
+          "finMs": 920
+        },
+        {
+          "palabra": "potente",
+          "inicioMs": 920,
+          "finMs": 1400
+        },
+        {
+          "palabra": "que",
+          "inicioMs": 1400,
+          "finMs": 1540
+        },
+        {
+          "palabra": "un",
+          "inicioMs": 1540,
+          "finMs": 1640
+        },
+        {
+          "palabra": "disparo",
+          "inicioMs": 1640,
+          "finMs": 2040
+        },
+        {
+          "palabra": "de",
+          "inicioMs": 2040,
+          "finMs": 2520
+        },
+        {
+          "palabra": "escopeta",
+          "inicioMs": 2520,
+          "finMs": 2680
+        },
+        {
+          "palabra": "en",
+          "inicioMs": 2680,
+          "finMs": 2800
+        },
+        {
+          "palabra": "el",
+          "inicioMs": 2800,
+          "finMs": 3080
+        },
+        {
+          "palabra": "agua",
+          "inicioMs": 3300,
+          "finMs": 3460
+        },
+        {
+          "palabra": "noqueando",
+          "inicioMs": 3460,
+          "finMs": 3860
+        },
+        {
+          "palabra": "o",
+          "inicioMs": 3860,
+          "finMs": 3980
+        },
+        {
+          "palabra": "despedazando",
+          "inicioMs": 3980,
+          "finMs": 4640
+        },
+        {
+          "palabra": "a",
+          "inicioMs": 4640,
+          "finMs": 4720
+        },
+        {
+          "palabra": "su",
+          "inicioMs": 4720,
+          "finMs": 4820
+        },
+        {
+          "palabra": "presa",
+          "inicioMs": 4820,
+          "finMs": 5200
+        },
+        {
+          "palabra": "al",
+          "inicioMs": 5200,
+          "finMs": 5260
+        },
+        {
+          "palabra": "instante",
+          "inicioMs": 5260,
+          "finMs": 5780
+        },
+        {
+          "palabra": "sin",
+          "inicioMs": 5800,
+          "finMs": 5940
+        },
+        {
+          "palabra": "siquiera",
+          "inicioMs": 5940,
+          "finMs": 6360
+        },
+        {
+          "palabra": "tocarla",
+          "inicioMs": 6360,
+          "finMs": 6900
+        }
+      ]
+    },
+    {
+      "id": 10,
+      "texto": "El camarón pistola nos enseña que el calor y la física de las estrellas también pueden nadar camuflados en el fondo del mar.",
+      "icono": "Sun",
+      "colorIcono": "#F59E0B",
+      "tituloVisual": "PODER SOLAR",
+      "composicionVisual": "plano_general",
+      "escenario": "arrecife_coral",
+      "layout": "narrativo",
+      "transicion": "zoom_in",
+      "efectosCamara": [
+        "drift"
+      ],
+      "palabrasClave": [
+        "física de las estrellas",
+        "camuflados",
+        "fondo del mar"
+      ],
+      "personajes": [
+        {
+          "id": "biologo",
+          "posicion": {
+            "x": 0,
+            "y": 50
+          },
+          "escala": 1.15,
+          "orientacion": "derecha",
+          "prop": "pistol_shrimp_hero",
+          "poseId": "presenting_object",
+          "expresion": "talking_enthusiastic",
+          "habla": true
+        }
+      ],
+      "duracionSegundos": 6.034,
+      "palabras": [
+        {
+          "palabra": "El",
+          "inicioMs": 0,
+          "finMs": 220
+        },
+        {
+          "palabra": "camarón",
+          "inicioMs": 220,
+          "finMs": 620
+        },
+        {
+          "palabra": "pistola",
+          "inicioMs": 620,
+          "finMs": 1040
+        },
+        {
+          "palabra": "nos",
+          "inicioMs": 1040,
+          "finMs": 1180
+        },
+        {
+          "palabra": "enseña",
+          "inicioMs": 1180,
+          "finMs": 1620
+        },
+        {
+          "palabra": "que",
+          "inicioMs": 1620,
+          "finMs": 1760
+        },
+        {
+          "palabra": "el",
+          "inicioMs": 1760,
+          "finMs": 1880
+        },
+        {
+          "palabra": "calor",
+          "inicioMs": 1880,
+          "finMs": 2120
+        },
+        {
+          "palabra": "y",
+          "inicioMs": 2120,
+          "finMs": 2260
+        },
+        {
+          "palabra": "la",
+          "inicioMs": 2260,
+          "finMs": 2360
+        },
+        {
+          "palabra": "física",
+          "inicioMs": 2360,
+          "finMs": 2660
+        },
+        {
+          "palabra": "de",
+          "inicioMs": 2660,
+          "finMs": 2820
+        },
+        {
+          "palabra": "las",
+          "inicioMs": 2820,
+          "finMs": 2940
+        },
+        {
+          "palabra": "estrellas",
+          "inicioMs": 2940,
+          "finMs": 3420
+        },
+        {
+          "palabra": "también",
+          "inicioMs": 3420,
+          "finMs": 3620
+        },
+        {
+          "palabra": "pueden",
+          "inicioMs": 3620,
+          "finMs": 3940
+        },
+        {
+          "palabra": "nadar",
+          "inicioMs": 3940,
+          "finMs": 4240
+        },
+        {
+          "palabra": "camuflados",
+          "inicioMs": 4240,
+          "finMs": 4680
+        },
+        {
+          "palabra": "en",
+          "inicioMs": 4680,
+          "finMs": 4880
+        },
+        {
+          "palabra": "el",
+          "inicioMs": 4880,
+          "finMs": 5000
+        },
+        {
+          "palabra": "fondo",
+          "inicioMs": 5000,
+          "finMs": 5160
+        },
+        {
+          "palabra": "del",
+          "inicioMs": 5160,
+          "finMs": 5380
+        },
+        {
+          "palabra": "mar",
+          "inicioMs": 5380,
+          "finMs": 5560
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,42 @@
+[
+  {
+    "id": 1,
+    "texto": "¿Sabías por qué el maíz explota al hacerse palomita?",
+    "pose": "pensando",
+    "icono": "HelpCircle",
+    "colorIcono": "#F59E0B",
+    "tituloVisual": "¿POR QUÉ EXPLOTA?"
+  },
+  {
+    "id": 2,
+    "texto": "Cada grano guarda una gotita de agua bajo su cáscara dura.",
+    "pose": "explicando",
+    "icono": "Droplets",
+    "colorIcono": "#3B82F6",
+    "tituloVisual": "AGUA ATRAPADA"
+  },
+  {
+    "id": 3,
+    "texto": "Con el calor, esa agua hierve y crea vapor a mucha presión.",
+    "pose": "normal",
+    "icono": "Flame",
+    "colorIcono": "#EF4444",
+    "tituloVisual": "VAPOR A PRESIÓN"
+  },
+  {
+    "id": 4,
+    "texto": "A ciento ochenta grados, la cáscara no resiste más y revienta.",
+    "pose": "sorprendido",
+    "icono": "Zap",
+    "colorIcono": "#EAB308",
+    "tituloVisual": "¡180 °C Y ESTALLA!"
+  },
+  {
+    "id": 5,
+    "texto": "El almidón se infla al instante formando esa espuma blanca.",
+    "pose": "explicando",
+    "icono": "Sparkles",
+    "colorIcono": "#10B981",
+    "tituloVisual": "ESPUMA DE ALMIDÓN"
+  }
+]

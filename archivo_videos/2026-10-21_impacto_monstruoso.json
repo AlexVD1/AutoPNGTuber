@@ -1,0 +1,1881 @@
+[
+  {
+    "id": 1,
+    "texto": "Un rayo transporta hasta trescientos millones de voltios y alcanza treinta mil grados. Aun así, el noventa por ciento de las personas alcanzadas sobreviven.",
+    "icono": "Zap",
+    "colorIcono": "#FFE600",
+    "tituloVisual": "IMPACTO MONSTRUOSO",
+    "composicionVisual": "plano_general",
+    "layout": "narrativo",
+    "transicion": "zoom_in",
+    "palabrasClave": [
+      "rayo",
+      "trescientos",
+      "millones",
+      "noventa",
+      "sobreviven"
+    ],
+    "personajes": [
+      {
+        "id": "narrador",
+        "nombre": "Narrador",
+        "posicion": {
+          "x": -220,
+          "y": 70
+        },
+        "escala": 1,
+        "orientacion": "derecha",
+        "acciones": [
+          {
+            "tipo": "personalizada",
+            "pasos": [
+              {
+                "inicioProgreso": 0,
+                "finProgreso": 0.45,
+                "poseId": "walking",
+                "expresion": "talking",
+                "posicion": {
+                  "x": -220,
+                  "y": 70
+                },
+                "curva": "lineal",
+                "procedural": "caminar"
+              },
+              {
+                "inicioProgreso": 0.45,
+                "finProgreso": 1,
+                "poseId": "shock_explosion",
+                "expresion": "shocked",
+                "posicion": {
+                  "x": -160,
+                  "y": 70
+                },
+                "curva": "suave",
+                "procedural": "estatico"
+              }
+            ]
+          }
+        ],
+        "habla": true,
+        "capaZ": 10
+      }
+    ],
+    "duracionSegundos": 9.586,
+    "palabras": [
+      {
+        "palabra": "Un",
+        "inicioMs": 0,
+        "finMs": 240
+      },
+      {
+        "palabra": "rayo",
+        "inicioMs": 240,
+        "finMs": 560
+      },
+      {
+        "palabra": "transporta",
+        "inicioMs": 560,
+        "finMs": 1220
+      },
+      {
+        "palabra": "hasta",
+        "inicioMs": 1220,
+        "finMs": 1480
+      },
+      {
+        "palabra": "trescientos",
+        "inicioMs": 1480,
+        "finMs": 1940
+      },
+      {
+        "palabra": "millones",
+        "inicioMs": 1940,
+        "finMs": 2240
+      },
+      {
+        "palabra": "de",
+        "inicioMs": 2240,
+        "finMs": 2520
+      },
+      {
+        "palabra": "voltios",
+        "inicioMs": 2520,
+        "finMs": 2860
+      },
+      {
+        "palabra": "y",
+        "inicioMs": 2860,
+        "finMs": 2960
+      },
+      {
+        "palabra": "alcanza",
+        "inicioMs": 2960,
+        "finMs": 3400
+      },
+      {
+        "palabra": "treinta",
+        "inicioMs": 3660,
+        "finMs": 3940
+      },
+      {
+        "palabra": "mil",
+        "inicioMs": 3940,
+        "finMs": 4220
+      },
+      {
+        "palabra": "grados",
+        "inicioMs": 4220,
+        "finMs": 4780
+      },
+      {
+        "palabra": "Aun",
+        "inicioMs": 4960,
+        "finMs": 5200
+      },
+      {
+        "palabra": "así",
+        "inicioMs": 5200,
+        "finMs": 5560
+      },
+      {
+        "palabra": "el",
+        "inicioMs": 5860,
+        "finMs": 5960
+      },
+      {
+        "palabra": "noventa",
+        "inicioMs": 5960,
+        "finMs": 6260
+      },
+      {
+        "palabra": "por",
+        "inicioMs": 6260,
+        "finMs": 6800
+      },
+      {
+        "palabra": "ciento",
+        "inicioMs": 6800,
+        "finMs": 6960
+      },
+      {
+        "palabra": "de",
+        "inicioMs": 6960,
+        "finMs": 7100
+      },
+      {
+        "palabra": "las",
+        "inicioMs": 7100,
+        "finMs": 7420
+      },
+      {
+        "palabra": "personas",
+        "inicioMs": 7420,
+        "finMs": 8060
+      },
+      {
+        "palabra": "alcanzadas",
+        "inicioMs": 8060,
+        "finMs": 8680
+      },
+      {
+        "palabra": "sobreviven",
+        "inicioMs": 8680,
+        "finMs": 9336
+      }
+    ],
+    "escenario": "tormenta_electrica"
+  },
+  {
+    "id": 2,
+    "texto": "¿Cómo es físicamente posible resistir una descarga que puede partir un roble centenario en mil pedazos? La clave está en la velocidad de la corriente.",
+    "icono": "HelpCircle",
+    "colorIcono": "#38BDF8",
+    "tituloVisual": "ENIGMA ELÉCTRICO",
+    "composicionVisual": "primer_plano",
+    "layout": "narrativo",
+    "transicion": "whip_right",
+    "efectosCamara": [
+      "drift"
+    ],
+    "palabrasClave": [
+      "físicamente",
+      "descarga",
+      "velocidad",
+      "corriente"
+    ],
+    "personajes": [
+      {
+        "id": "narrador",
+        "nombre": "Narrador",
+        "posicion": {
+          "x": 0,
+          "y": 60
+        },
+        "escala": 1.05,
+        "orientacion": "derecha",
+        "acciones": [
+          {
+            "tipo": "personalizada",
+            "pasos": [
+              {
+                "inicioProgreso": 0,
+                "finProgreso": 0.5,
+                "poseId": "thinking_chin_hand",
+                "expresion": "analytical",
+                "posicion": {
+                  "x": 0,
+                  "y": 60
+                },
+                "curva": "suave",
+                "procedural": "estatico"
+              },
+              {
+                "inicioProgreso": 0.5,
+                "finProgreso": 1,
+                "poseId": "asking_question",
+                "expresion": "confused",
+                "posicion": {
+                  "x": 20,
+                  "y": 60
+                },
+                "curva": "suave",
+                "procedural": "estatico"
+              }
+            ]
+          }
+        ],
+        "habla": true,
+        "capaZ": 10
+      }
+    ],
+    "duracionSegundos": 8.338,
+    "palabras": [
+      {
+        "palabra": "Cómo",
+        "inicioMs": 0,
+        "finMs": 280
+      },
+      {
+        "palabra": "es",
+        "inicioMs": 280,
+        "finMs": 420
+      },
+      {
+        "palabra": "físicamente",
+        "inicioMs": 420,
+        "finMs": 820
+      },
+      {
+        "palabra": "posible",
+        "inicioMs": 820,
+        "finMs": 1280
+      },
+      {
+        "palabra": "resistir",
+        "inicioMs": 1280,
+        "finMs": 1900
+      },
+      {
+        "palabra": "una",
+        "inicioMs": 1900,
+        "finMs": 2060
+      },
+      {
+        "palabra": "descarga",
+        "inicioMs": 2060,
+        "finMs": 2520
+      },
+      {
+        "palabra": "que",
+        "inicioMs": 2520,
+        "finMs": 2680
+      },
+      {
+        "palabra": "puede",
+        "inicioMs": 2680,
+        "finMs": 2900
+      },
+      {
+        "palabra": "partir",
+        "inicioMs": 2900,
+        "finMs": 3220
+      },
+      {
+        "palabra": "un",
+        "inicioMs": 3560,
+        "finMs": 3880
+      },
+      {
+        "palabra": "roble",
+        "inicioMs": 3880,
+        "finMs": 4020
+      },
+      {
+        "palabra": "centenario",
+        "inicioMs": 4020,
+        "finMs": 4380
+      },
+      {
+        "palabra": "en",
+        "inicioMs": 4380,
+        "finMs": 4520
+      },
+      {
+        "palabra": "mil",
+        "inicioMs": 4520,
+        "finMs": 5360
+      },
+      {
+        "palabra": "pedazos",
+        "inicioMs": 5580,
+        "finMs": 5680
+      },
+      {
+        "palabra": "La",
+        "inicioMs": 5680,
+        "finMs": 5980
+      },
+      {
+        "palabra": "clave",
+        "inicioMs": 5980,
+        "finMs": 6220
+      },
+      {
+        "palabra": "está",
+        "inicioMs": 6220,
+        "finMs": 6320
+      },
+      {
+        "palabra": "en",
+        "inicioMs": 6320,
+        "finMs": 6420
+      },
+      {
+        "palabra": "la",
+        "inicioMs": 6420,
+        "finMs": 6700
+      },
+      {
+        "palabra": "velocidad",
+        "inicioMs": 6700,
+        "finMs": 7000
+      },
+      {
+        "palabra": "de",
+        "inicioMs": 7000,
+        "finMs": 7100
+      },
+      {
+        "palabra": "la",
+        "inicioMs": 7100,
+        "finMs": 7580
+      },
+      {
+        "palabra": "corriente",
+        "inicioMs": 7580,
+        "finMs": 8088
+      }
+    ],
+    "escenario": "tormenta_electrica"
+  },
+  {
+    "id": 3,
+    "texto": "El salvavidas principal se llama efecto flashover. El impacto directo de un rayo dura apenas una diminuta fracción de milisegundo.",
+    "icono": "Activity",
+    "colorIcono": "#06B6D4",
+    "tituloVisual": "EFECTO FLASHOVER",
+    "composicionVisual": "plano_general",
+    "layout": "narrativo",
+    "transicion": "corte",
+    "palabrasClave": [
+      "efecto",
+      "flashover",
+      "fracción",
+      "milisegundo"
+    ],
+    "objetos": [
+      {
+        "id": "flashover_arc",
+        "propId": "lightning_flashover",
+        "posicion": {
+          "x": 220,
+          "y": -40
+        },
+        "escala": 1.8,
+        "animacion": "pulso"
+      }
+    ],
+    "personajes": [
+      {
+        "id": "narrador",
+        "nombre": "Narrador",
+        "posicion": {
+          "x": -200,
+          "y": 70
+        },
+        "escala": 1,
+        "orientacion": "derecha",
+        "acciones": [
+          {
+            "tipo": "personalizada",
+            "pasos": [
+              {
+                "inicioProgreso": 0,
+                "finProgreso": 1,
+                "poseId": "presenting_object",
+                "expresion": "eureka",
+                "posicion": {
+                  "x": -180,
+                  "y": 70
+                },
+                "curva": "suave",
+                "procedural": "estatico"
+              }
+            ]
+          }
+        ],
+        "habla": true,
+        "capaZ": 10
+      }
+    ],
+    "duracionSegundos": 9.178,
+    "palabras": [
+      {
+        "palabra": "El",
+        "inicioMs": 0,
+        "finMs": 220
+      },
+      {
+        "palabra": "salvavidas",
+        "inicioMs": 220,
+        "finMs": 420
+      },
+      {
+        "palabra": "principal",
+        "inicioMs": 420,
+        "finMs": 460
+      },
+      {
+        "palabra": "se",
+        "inicioMs": 460,
+        "finMs": 640
+      },
+      {
+        "palabra": "llama",
+        "inicioMs": 640,
+        "finMs": 1100
+      },
+      {
+        "palabra": "efecto",
+        "inicioMs": 1100,
+        "finMs": 1300
+      },
+      {
+        "palabra": "flashover",
+        "inicioMs": 1300,
+        "finMs": 1480
+      },
+      {
+        "palabra": "El",
+        "inicioMs": 1480,
+        "finMs": 2000
+      },
+      {
+        "palabra": "impacto",
+        "inicioMs": 2000,
+        "finMs": 2580
+      },
+      {
+        "palabra": "directo",
+        "inicioMs": 2840,
+        "finMs": 3300
+      },
+      {
+        "palabra": "de",
+        "inicioMs": 3300,
+        "finMs": 3600
+      },
+      {
+        "palabra": "un",
+        "inicioMs": 3600,
+        "finMs": 4040
+      },
+      {
+        "palabra": "rayo",
+        "inicioMs": 4040,
+        "finMs": 4120
+      },
+      {
+        "palabra": "dura",
+        "inicioMs": 4120,
+        "finMs": 4200
+      },
+      {
+        "palabra": "apenas",
+        "inicioMs": 4200,
+        "finMs": 4400
+      },
+      {
+        "palabra": "una",
+        "inicioMs": 4400,
+        "finMs": 4700
+      },
+      {
+        "palabra": "diminuta",
+        "inicioMs": 4700,
+        "finMs": 5060
+      },
+      {
+        "palabra": "fracción",
+        "inicioMs": 5060,
+        "finMs": 5360
+      },
+      {
+        "palabra": "de",
+        "inicioMs": 5360,
+        "finMs": 5760
+      },
+      {
+        "palabra": "milisegundo",
+        "inicioMs": 5760,
+        "finMs": 6080
+      }
+    ],
+    "escenario": "tormenta_electrica"
+  },
+  {
+    "id": 4,
+    "texto": "Debido a la alta resistencia eléctrica del interior humano y a esa extrema brevedad, la mayor parte del flujo no penetra en los órganos internos.",
+    "icono": "Shield",
+    "colorIcono": "#10B981",
+    "tituloVisual": "ESCUDO EXTERIOR",
+    "composicionVisual": "cifras_concepto",
+    "layout": "narrativo",
+    "transicion": "whip_left",
+    "palabrasClave": [
+      "resistencia",
+      "eléctrica",
+      "órganos",
+      "internos"
+    ],
+    "personajes": [
+      {
+        "id": "narrador",
+        "nombre": "Narrador",
+        "posicion": {
+          "x": 0,
+          "y": 60
+        },
+        "escala": 1,
+        "orientacion": "derecha",
+        "acciones": [
+          {
+            "tipo": "personalizada",
+            "pasos": [
+              {
+                "inicioProgreso": 0,
+                "finProgreso": 1,
+                "poseId": "raising_one_finger",
+                "expresion": "analytical",
+                "posicion": {
+                  "x": 0,
+                  "y": 60
+                },
+                "curva": "suave",
+                "procedural": "estatico"
+              }
+            ]
+          }
+        ],
+        "habla": true,
+        "capaZ": 10
+      }
+    ],
+    "duracionSegundos": 8.026,
+    "palabras": [
+      {
+        "palabra": "Debido",
+        "inicioMs": 0,
+        "finMs": 420
+      },
+      {
+        "palabra": "a",
+        "inicioMs": 420,
+        "finMs": 520
+      },
+      {
+        "palabra": "la",
+        "inicioMs": 520,
+        "finMs": 620
+      },
+      {
+        "palabra": "alta",
+        "inicioMs": 620,
+        "finMs": 880
+      },
+      {
+        "palabra": "resistencia",
+        "inicioMs": 880,
+        "finMs": 1480
+      },
+      {
+        "palabra": "eléctrica",
+        "inicioMs": 1480,
+        "finMs": 1920
+      },
+      {
+        "palabra": "del",
+        "inicioMs": 1920,
+        "finMs": 2120
+      },
+      {
+        "palabra": "interior",
+        "inicioMs": 2120,
+        "finMs": 2420
+      },
+      {
+        "palabra": "humano",
+        "inicioMs": 2420,
+        "finMs": 2780
+      },
+      {
+        "palabra": "y",
+        "inicioMs": 2780,
+        "finMs": 3100
+      },
+      {
+        "palabra": "a",
+        "inicioMs": 3100,
+        "finMs": 3160
+      },
+      {
+        "palabra": "esa",
+        "inicioMs": 3160,
+        "finMs": 3300
+      },
+      {
+        "palabra": "extrema",
+        "inicioMs": 3300,
+        "finMs": 3700
+      },
+      {
+        "palabra": "brevedad",
+        "inicioMs": 3700,
+        "finMs": 4220
+      },
+      {
+        "palabra": "la",
+        "inicioMs": 4480,
+        "finMs": 4540
+      },
+      {
+        "palabra": "mayor",
+        "inicioMs": 4540,
+        "finMs": 4780
+      },
+      {
+        "palabra": "parte",
+        "inicioMs": 4780,
+        "finMs": 5060
+      },
+      {
+        "palabra": "del",
+        "inicioMs": 5060,
+        "finMs": 5220
+      },
+      {
+        "palabra": "flujo",
+        "inicioMs": 5220,
+        "finMs": 5540
+      },
+      {
+        "palabra": "no",
+        "inicioMs": 5540,
+        "finMs": 5680
+      },
+      {
+        "palabra": "penetra",
+        "inicioMs": 5680,
+        "finMs": 6080
+      },
+      {
+        "palabra": "en",
+        "inicioMs": 6080,
+        "finMs": 6180
+      },
+      {
+        "palabra": "los",
+        "inicioMs": 6180,
+        "finMs": 6300
+      },
+      {
+        "palabra": "órganos",
+        "inicioMs": 6300,
+        "finMs": 6700
+      },
+      {
+        "palabra": "internos",
+        "inicioMs": 6700,
+        "finMs": 7240
+      }
+    ],
+    "escenario": "tormenta_electrica"
+  },
+  {
+    "id": 5,
+    "texto": "En lugar de entrar, la corriente resbala velozmente por fuera, viajando sobre la piel húmeda y a través del sudor o de la lluvia.",
+    "icono": "Droplets",
+    "colorIcono": "#0284C7",
+    "tituloVisual": "CAMINO SUPERFICIAL",
+    "composicionVisual": "primer_plano",
+    "layout": "narrativo",
+    "transicion": "zoom_in",
+    "efectosCamara": [
+      "drift"
+    ],
+    "palabrasClave": [
+      "corriente",
+      "resbala",
+      "piel",
+      "sudor"
+    ],
+    "personajes": [
+      {
+        "id": "narrador",
+        "nombre": "Narrador",
+        "posicion": {
+          "x": -20,
+          "y": 60
+        },
+        "escala": 1.05,
+        "orientacion": "derecha",
+        "acciones": [
+          {
+            "tipo": "personalizada",
+            "pasos": [
+              {
+                "inicioProgreso": 0,
+                "finProgreso": 1,
+                "poseId": "explaining_both_hands",
+                "expresion": "talking_enthusiastic",
+                "posicion": {
+                  "x": 0,
+                  "y": 60
+                },
+                "curva": "suave",
+                "procedural": "estatico"
+              }
+            ]
+          }
+        ],
+        "habla": true,
+        "capaZ": 10
+      }
+    ],
+    "duracionSegundos": 7.354,
+    "palabras": [
+      {
+        "palabra": "En",
+        "inicioMs": 0,
+        "finMs": 180
+      },
+      {
+        "palabra": "lugar",
+        "inicioMs": 180,
+        "finMs": 380
+      },
+      {
+        "palabra": "de",
+        "inicioMs": 380,
+        "finMs": 540
+      },
+      {
+        "palabra": "entrar",
+        "inicioMs": 540,
+        "finMs": 780
+      },
+      {
+        "palabra": "la",
+        "inicioMs": 920,
+        "finMs": 960
+      },
+      {
+        "palabra": "corriente",
+        "inicioMs": 960,
+        "finMs": 1400
+      },
+      {
+        "palabra": "resbala",
+        "inicioMs": 1400,
+        "finMs": 1840
+      },
+      {
+        "palabra": "velozmente",
+        "inicioMs": 1840,
+        "finMs": 2280
+      },
+      {
+        "palabra": "por",
+        "inicioMs": 2280,
+        "finMs": 2480
+      },
+      {
+        "palabra": "fuera",
+        "inicioMs": 2480,
+        "finMs": 2800
+      },
+      {
+        "palabra": "viajando",
+        "inicioMs": 2920,
+        "finMs": 3300
+      },
+      {
+        "palabra": "sobre",
+        "inicioMs": 3300,
+        "finMs": 3520
+      },
+      {
+        "palabra": "la",
+        "inicioMs": 3520,
+        "finMs": 3660
+      },
+      {
+        "palabra": "piel",
+        "inicioMs": 3660,
+        "finMs": 3800
+      },
+      {
+        "palabra": "húmeda",
+        "inicioMs": 3800,
+        "finMs": 4180
+      },
+      {
+        "palabra": "y",
+        "inicioMs": 4180,
+        "finMs": 4280
+      },
+      {
+        "palabra": "a",
+        "inicioMs": 4280,
+        "finMs": 4640
+      },
+      {
+        "palabra": "través",
+        "inicioMs": 4640,
+        "finMs": 4760
+      },
+      {
+        "palabra": "del",
+        "inicioMs": 4760,
+        "finMs": 5120
+      },
+      {
+        "palabra": "sudor",
+        "inicioMs": 5120,
+        "finMs": 5300
+      },
+      {
+        "palabra": "o",
+        "inicioMs": 5300,
+        "finMs": 5420
+      },
+      {
+        "palabra": "de",
+        "inicioMs": 5420,
+        "finMs": 5520
+      },
+      {
+        "palabra": "la",
+        "inicioMs": 5520,
+        "finMs": 5900
+      },
+      {
+        "palabra": "lluvia",
+        "inicioMs": 5900,
+        "finMs": 7104
+      }
+    ],
+    "escenario": "tormenta_electrica"
+  },
+  {
+    "id": 6,
+    "texto": "Ese sudor sobre la superficie se vaporiza tan violentamente que genera una onda expansiva, arrancando la ropa y el calzado en el acto.",
+    "icono": "Flame",
+    "colorIcono": "#F97316",
+    "tituloVisual": "EXPLOSIÓN DE VAPOR",
+    "composicionVisual": "plano_general",
+    "layout": "narrativo",
+    "transicion": "corte",
+    "palabrasClave": [
+      "vaporiza",
+      "onda",
+      "ropa",
+      "calzado"
+    ],
+    "personajes": [
+      {
+        "id": "narrador",
+        "nombre": "Narrador",
+        "posicion": {
+          "x": 0,
+          "y": 70
+        },
+        "escala": 1,
+        "orientacion": "derecha",
+        "acciones": [
+          {
+            "tipo": "personalizada",
+            "pasos": [
+              {
+                "inicioProgreso": 0,
+                "finProgreso": 1,
+                "poseId": "explaining_pointing_up",
+                "expresion": "surprised",
+                "posicion": {
+                  "x": 0,
+                  "y": 70
+                },
+                "curva": "suave",
+                "procedural": "estatico"
+              }
+            ]
+          }
+        ],
+        "habla": true,
+        "capaZ": 10
+      }
+    ],
+    "duracionSegundos": 9.13,
+    "palabras": [
+      {
+        "palabra": "Ese",
+        "inicioMs": 0,
+        "finMs": 320
+      },
+      {
+        "palabra": "sudor",
+        "inicioMs": 320,
+        "finMs": 660
+      },
+      {
+        "palabra": "sobre",
+        "inicioMs": 660,
+        "finMs": 900
+      },
+      {
+        "palabra": "la",
+        "inicioMs": 900,
+        "finMs": 1020
+      },
+      {
+        "palabra": "superficie",
+        "inicioMs": 1020,
+        "finMs": 1700
+      },
+      {
+        "palabra": "se",
+        "inicioMs": 1700,
+        "finMs": 2060
+      },
+      {
+        "palabra": "vaporiza",
+        "inicioMs": 2060,
+        "finMs": 2500
+      },
+      {
+        "palabra": "tan",
+        "inicioMs": 2500,
+        "finMs": 2740
+      },
+      {
+        "palabra": "violentamente",
+        "inicioMs": 2740,
+        "finMs": 3360
+      },
+      {
+        "palabra": "que",
+        "inicioMs": 3360,
+        "finMs": 3640
+      },
+      {
+        "palabra": "genera",
+        "inicioMs": 3640,
+        "finMs": 4000
+      },
+      {
+        "palabra": "una",
+        "inicioMs": 4000,
+        "finMs": 4160
+      },
+      {
+        "palabra": "onda",
+        "inicioMs": 4160,
+        "finMs": 4420
+      },
+      {
+        "palabra": "expansiva",
+        "inicioMs": 4420,
+        "finMs": 5100
+      },
+      {
+        "palabra": "arrancando",
+        "inicioMs": 5260,
+        "finMs": 5780
+      },
+      {
+        "palabra": "la",
+        "inicioMs": 5780,
+        "finMs": 6000
+      },
+      {
+        "palabra": "ropa",
+        "inicioMs": 6000,
+        "finMs": 6300
+      },
+      {
+        "palabra": "y",
+        "inicioMs": 6300,
+        "finMs": 6380
+      },
+      {
+        "palabra": "el",
+        "inicioMs": 6380,
+        "finMs": 6500
+      },
+      {
+        "palabra": "calzado",
+        "inicioMs": 6500,
+        "finMs": 6880
+      },
+      {
+        "palabra": "en",
+        "inicioMs": 6880,
+        "finMs": 6980
+      },
+      {
+        "palabra": "el",
+        "inicioMs": 6980,
+        "finMs": 7100
+      },
+      {
+        "palabra": "acto",
+        "inicioMs": 7100,
+        "finMs": 7440
+      }
+    ],
+    "escenario": "tormenta_electrica"
+  },
+  {
+    "id": 7,
+    "texto": "Al volar hacia afuera, esa explosión de vapor arrastra y disipa una cantidad inmensa de calor, evitando que los órganos se cocinen.",
+    "icono": "Wind",
+    "colorIcono": "#F59E0B",
+    "tituloVisual": "DISIPACIÓN TÉRMICA",
+    "composicionVisual": "primer_plano",
+    "layout": "narrativo",
+    "transicion": "whip_right",
+    "efectosCamara": [
+      "drift"
+    ],
+    "palabrasClave": [
+      "explosión",
+      "disipa",
+      "calor",
+      "órganos"
+    ],
+    "personajes": [
+      {
+        "id": "narrador",
+        "nombre": "Narrador",
+        "posicion": {
+          "x": 0,
+          "y": 60
+        },
+        "escala": 1.05,
+        "orientacion": "derecha",
+        "acciones": [
+          {
+            "tipo": "personalizada",
+            "pasos": [
+              {
+                "inicioProgreso": 0,
+                "finProgreso": 1,
+                "poseId": "explaining_both_hands",
+                "expresion": "talking_enthusiastic",
+                "posicion": {
+                  "x": 0,
+                  "y": 60
+                },
+                "curva": "suave",
+                "procedural": "estatico"
+              }
+            ]
+          }
+        ],
+        "habla": true,
+        "capaZ": 10
+      }
+    ],
+    "duracionSegundos": 7.786,
+    "palabras": [
+      {
+        "palabra": "Al",
+        "inicioMs": 0,
+        "finMs": 140
+      },
+      {
+        "palabra": "volar",
+        "inicioMs": 140,
+        "finMs": 400
+      },
+      {
+        "palabra": "hacia",
+        "inicioMs": 400,
+        "finMs": 640
+      },
+      {
+        "palabra": "afuera",
+        "inicioMs": 640,
+        "finMs": 1000
+      },
+      {
+        "palabra": "esa",
+        "inicioMs": 1320,
+        "finMs": 1460
+      },
+      {
+        "palabra": "explosión",
+        "inicioMs": 1460,
+        "finMs": 1920
+      },
+      {
+        "palabra": "de",
+        "inicioMs": 1920,
+        "finMs": 2060
+      },
+      {
+        "palabra": "vapor",
+        "inicioMs": 2060,
+        "finMs": 2220
+      },
+      {
+        "palabra": "arrastra",
+        "inicioMs": 2220,
+        "finMs": 2800
+      },
+      {
+        "palabra": "y",
+        "inicioMs": 2800,
+        "finMs": 2900
+      },
+      {
+        "palabra": "disipa",
+        "inicioMs": 2900,
+        "finMs": 3260
+      },
+      {
+        "palabra": "una",
+        "inicioMs": 3260,
+        "finMs": 3440
+      },
+      {
+        "palabra": "cantidad",
+        "inicioMs": 3440,
+        "finMs": 3760
+      },
+      {
+        "palabra": "inmensa",
+        "inicioMs": 3760,
+        "finMs": 4260
+      },
+      {
+        "palabra": "de",
+        "inicioMs": 4260,
+        "finMs": 4380
+      },
+      {
+        "palabra": "calor",
+        "inicioMs": 4380,
+        "finMs": 4680
+      },
+      {
+        "palabra": "evitando",
+        "inicioMs": 5120,
+        "finMs": 5580
+      },
+      {
+        "palabra": "que",
+        "inicioMs": 5580,
+        "finMs": 5720
+      },
+      {
+        "palabra": "los",
+        "inicioMs": 5720,
+        "finMs": 5900
+      },
+      {
+        "palabra": "órganos",
+        "inicioMs": 5900,
+        "finMs": 6260
+      },
+      {
+        "palabra": "se",
+        "inicioMs": 6260,
+        "finMs": 6380
+      },
+      {
+        "palabra": "cocinen",
+        "inicioMs": 6380,
+        "finMs": 6880
+      }
+    ],
+    "escenario": "tormenta_electrica"
+  },
+  {
+    "id": 8,
+    "texto": "Sin embargo, al deslizarse por la piel rompe pequeños vasos capilares, dejando grabadas unas marcas rojizas llamadas figuras de Lichtenberg.",
+    "icono": "GitBranch",
+    "colorIcono": "#EF4444",
+    "tituloVisual": "FIGURAS LICHTENBERG",
+    "composicionVisual": "plano_general",
+    "layout": "narrativo",
+    "transicion": "corte",
+    "palabrasClave": [
+      "vasos",
+      "capilares",
+      "figuras",
+      "Lichtenberg"
+    ],
+    "objetos": [
+      {
+        "id": "arbol_lichtenberg",
+        "propId": "lichtenberg_fractal_skin",
+        "posicion": {
+          "x": 220,
+          "y": -30
+        },
+        "escala": 1.8,
+        "animacion": "pulso"
+      }
+    ],
+    "personajes": [
+      {
+        "id": "narrador",
+        "nombre": "Narrador",
+        "posicion": {
+          "x": -200,
+          "y": 70
+        },
+        "escala": 1,
+        "orientacion": "derecha",
+        "acciones": [
+          {
+            "tipo": "personalizada",
+            "pasos": [
+              {
+                "inicioProgreso": 0,
+                "finProgreso": 1,
+                "poseId": "presenting_object",
+                "expresion": "eureka",
+                "posicion": {
+                  "x": -180,
+                  "y": 70
+                },
+                "curva": "suave",
+                "procedural": "estatico"
+              }
+            ]
+          }
+        ],
+        "habla": true,
+        "capaZ": 10
+      }
+    ],
+    "duracionSegundos": 8.098,
+    "palabras": [
+      {
+        "palabra": "Sin",
+        "inicioMs": 0,
+        "finMs": 260
+      },
+      {
+        "palabra": "embargo",
+        "inicioMs": 260,
+        "finMs": 500
+      },
+      {
+        "palabra": "al",
+        "inicioMs": 680,
+        "finMs": 800
+      },
+      {
+        "palabra": "deslizarse",
+        "inicioMs": 800,
+        "finMs": 1220
+      },
+      {
+        "palabra": "por",
+        "inicioMs": 1220,
+        "finMs": 1400
+      },
+      {
+        "palabra": "la",
+        "inicioMs": 1400,
+        "finMs": 1520
+      },
+      {
+        "palabra": "piel",
+        "inicioMs": 1520,
+        "finMs": 1700
+      },
+      {
+        "palabra": "rompe",
+        "inicioMs": 2020,
+        "finMs": 2200
+      },
+      {
+        "palabra": "pequeños",
+        "inicioMs": 2200,
+        "finMs": 2500
+      },
+      {
+        "palabra": "vasos",
+        "inicioMs": 2500,
+        "finMs": 2860
+      },
+      {
+        "palabra": "capilares",
+        "inicioMs": 2860,
+        "finMs": 3400
+      },
+      {
+        "palabra": "dejando",
+        "inicioMs": 3700,
+        "finMs": 4000
+      },
+      {
+        "palabra": "grabadas",
+        "inicioMs": 4000,
+        "finMs": 4440
+      },
+      {
+        "palabra": "unas",
+        "inicioMs": 4440,
+        "finMs": 4740
+      },
+      {
+        "palabra": "marcas",
+        "inicioMs": 4740,
+        "finMs": 5140
+      },
+      {
+        "palabra": "rojizas",
+        "inicioMs": 5140,
+        "finMs": 5720
+      },
+      {
+        "palabra": "llamadas",
+        "inicioMs": 5720,
+        "finMs": 6200
+      },
+      {
+        "palabra": "figuras",
+        "inicioMs": 6200,
+        "finMs": 6520
+      },
+      {
+        "palabra": "de",
+        "inicioMs": 6520,
+        "finMs": 6780
+      },
+      {
+        "palabra": "Lichtenberg",
+        "inicioMs": 6780,
+        "finMs": 7400
+      }
+    ],
+    "escenario": "tormenta_electrica"
+  },
+  {
+    "id": 9,
+    "texto": "Estas marcas con forma de helecho son la huella exacta por donde viajaron los electrones escapando a tierra firme a través del cuerpo.",
+    "icono": "Layers",
+    "colorIcono": "#EC4899",
+    "tituloVisual": "MAPA DE ELECTRONES",
+    "composicionVisual": "cifras_concepto",
+    "layout": "narrativo",
+    "transicion": "whip_left",
+    "palabrasClave": [
+      "helecho",
+      "huella",
+      "electrones",
+      "tierra"
+    ],
+    "personajes": [
+      {
+        "id": "narrador",
+        "nombre": "Narrador",
+        "posicion": {
+          "x": 0,
+          "y": 60
+        },
+        "escala": 1,
+        "orientacion": "derecha",
+        "acciones": [
+          {
+            "tipo": "personalizada",
+            "pasos": [
+              {
+                "inicioProgreso": 0,
+                "finProgreso": 1,
+                "poseId": "raising_one_finger",
+                "expresion": "analytical",
+                "posicion": {
+                  "x": 0,
+                  "y": 60
+                },
+                "curva": "suave",
+                "procedural": "estatico"
+              }
+            ]
+          }
+        ],
+        "habla": true,
+        "capaZ": 10
+      }
+    ],
+    "duracionSegundos": 7.69,
+    "palabras": [
+      {
+        "palabra": "Estas",
+        "inicioMs": 0,
+        "finMs": 340
+      },
+      {
+        "palabra": "marcas",
+        "inicioMs": 340,
+        "finMs": 700
+      },
+      {
+        "palabra": "con",
+        "inicioMs": 700,
+        "finMs": 880
+      },
+      {
+        "palabra": "forma",
+        "inicioMs": 880,
+        "finMs": 1220
+      },
+      {
+        "palabra": "de",
+        "inicioMs": 1220,
+        "finMs": 1400
+      },
+      {
+        "palabra": "helecho",
+        "inicioMs": 1400,
+        "finMs": 1800
+      },
+      {
+        "palabra": "son",
+        "inicioMs": 1800,
+        "finMs": 2000
+      },
+      {
+        "palabra": "la",
+        "inicioMs": 2000,
+        "finMs": 2140
+      },
+      {
+        "palabra": "huella",
+        "inicioMs": 2140,
+        "finMs": 2420
+      },
+      {
+        "palabra": "exacta",
+        "inicioMs": 2420,
+        "finMs": 2900
+      },
+      {
+        "palabra": "por",
+        "inicioMs": 2900,
+        "finMs": 3040
+      },
+      {
+        "palabra": "donde",
+        "inicioMs": 3040,
+        "finMs": 3380
+      },
+      {
+        "palabra": "viajaron",
+        "inicioMs": 3380,
+        "finMs": 3960
+      },
+      {
+        "palabra": "los",
+        "inicioMs": 3960,
+        "finMs": 4120
+      },
+      {
+        "palabra": "electrones",
+        "inicioMs": 4120,
+        "finMs": 4620
+      },
+      {
+        "palabra": "escapando",
+        "inicioMs": 4620,
+        "finMs": 5100
+      },
+      {
+        "palabra": "a",
+        "inicioMs": 5100,
+        "finMs": 5200
+      },
+      {
+        "palabra": "tierra",
+        "inicioMs": 5200,
+        "finMs": 5380
+      },
+      {
+        "palabra": "firme",
+        "inicioMs": 5380,
+        "finMs": 5820
+      },
+      {
+        "palabra": "a",
+        "inicioMs": 5820,
+        "finMs": 6000
+      },
+      {
+        "palabra": "través",
+        "inicioMs": 6000,
+        "finMs": 6220
+      },
+      {
+        "palabra": "del",
+        "inicioMs": 6220,
+        "finMs": 6400
+      },
+      {
+        "palabra": "cuerpo",
+        "inicioMs": 6400,
+        "finMs": 6720
+      }
+    ],
+    "escenario": "interior_cuerpo"
+  },
+  {
+    "id": 10,
+    "texto": "El mayor peligro es que detiene el ritmo del corazón. Pero con una rápida reanimación cardiopulmonar, el músculo cardíaco puede reiniciarse.",
+    "icono": "HeartPulse",
+    "colorIcono": "#A855F7",
+    "tituloVisual": "REINICIO CARDÍACO",
+    "composicionVisual": "primer_plano",
+    "layout": "narrativo",
+    "transicion": "zoom_in",
+    "efectosCamara": [
+      "punch"
+    ],
+    "palabrasClave": [
+      "peligro",
+      "corazón",
+      "reanimación",
+      "reiniciarse"
+    ],
+    "personajes": [
+      {
+        "id": "narrador",
+        "nombre": "Narrador",
+        "posicion": {
+          "x": 0,
+          "y": 60
+        },
+        "escala": 1.05,
+        "orientacion": "derecha",
+        "acciones": [
+          {
+            "tipo": "personalizada",
+            "pasos": [
+              {
+                "inicioProgreso": 0,
+                "finProgreso": 1,
+                "poseId": "thumbs_up_approval",
+                "expresion": "proud",
+                "posicion": {
+                  "x": 0,
+                  "y": 60
+                },
+                "curva": "suave",
+                "procedural": "estatico"
+              }
+            ]
+          }
+        ],
+        "habla": true,
+        "capaZ": 10
+      }
+    ],
+    "duracionSegundos": 9.658,
+    "palabras": [
+      {
+        "palabra": "El",
+        "inicioMs": 0,
+        "finMs": 120
+      },
+      {
+        "palabra": "mayor",
+        "inicioMs": 120,
+        "finMs": 380
+      },
+      {
+        "palabra": "peligro",
+        "inicioMs": 380,
+        "finMs": 880
+      },
+      {
+        "palabra": "es",
+        "inicioMs": 880,
+        "finMs": 1060
+      },
+      {
+        "palabra": "que",
+        "inicioMs": 1060,
+        "finMs": 1220
+      },
+      {
+        "palabra": "detiene",
+        "inicioMs": 1220,
+        "finMs": 1560
+      },
+      {
+        "palabra": "el",
+        "inicioMs": 1560,
+        "finMs": 1720
+      },
+      {
+        "palabra": "ritmo",
+        "inicioMs": 1720,
+        "finMs": 1960
+      },
+      {
+        "palabra": "del",
+        "inicioMs": 1960,
+        "finMs": 2140
+      },
+      {
+        "palabra": "corazón",
+        "inicioMs": 2140,
+        "finMs": 2500
+      },
+      {
+        "palabra": "Pero",
+        "inicioMs": 2960,
+        "finMs": 3200
+      },
+      {
+        "palabra": "con",
+        "inicioMs": 3200,
+        "finMs": 3360
+      },
+      {
+        "palabra": "una",
+        "inicioMs": 3360,
+        "finMs": 3520
+      },
+      {
+        "palabra": "rápida",
+        "inicioMs": 3520,
+        "finMs": 3880
+      },
+      {
+        "palabra": "reanimación",
+        "inicioMs": 3880,
+        "finMs": 4520
+      },
+      {
+        "palabra": "cardiopulmonar",
+        "inicioMs": 4520,
+        "finMs": 4620
+      },
+      {
+        "palabra": "el",
+        "inicioMs": 4620,
+        "finMs": 4960
+      },
+      {
+        "palabra": "músculo",
+        "inicioMs": 4960,
+        "finMs": 5540
+      },
+      {
+        "palabra": "cardíaco",
+        "inicioMs": 5820,
+        "finMs": 5940
+      },
+      {
+        "palabra": "puede",
+        "inicioMs": 5940,
+        "finMs": 6280
+      },
+      {
+        "palabra": "reiniciarse",
+        "inicioMs": 6280,
+        "finMs": 6840
+      }
+    ],
+    "escenario": "tormenta_electrica"
+  },
+  {
+    "id": 11,
+    "texto": "Sobrevivir a un rayo es una auténtica hazaña de la física y el tiempo. ¿Conocías el secreto del efecto flashover?",
+    "icono": "Sparkles",
+    "colorIcono": "#FFE600",
+    "tituloVisual": "MILAGRO FÍSICO",
+    "composicionVisual": "plano_general",
+    "layout": "narrativo",
+    "transicion": "corte",
+    "palabrasClave": [
+      "hazaña",
+      "física",
+      "tiempo",
+      "flashover"
+    ],
+    "personajes": [
+      {
+        "id": "narrador",
+        "nombre": "Narrador",
+        "posicion": {
+          "x": 0,
+          "y": 70
+        },
+        "escala": 1,
+        "orientacion": "derecha",
+        "acciones": [
+          {
+            "tipo": "personalizada",
+            "pasos": [
+              {
+                "inicioProgreso": 0,
+                "finProgreso": 1,
+                "poseId": "pointing_at_viewer",
+                "expresion": "smile_wide",
+                "posicion": {
+                  "x": 0,
+                  "y": 70
+                },
+                "curva": "suave",
+                "procedural": "estatico"
+              }
+            ]
+          }
+        ],
+        "habla": true,
+        "capaZ": 10
+      }
+    ],
+    "duracionSegundos": 6.61,
+    "palabras": [
+      {
+        "palabra": "Sobrevivir",
+        "inicioMs": 0,
+        "finMs": 700
+      },
+      {
+        "palabra": "a",
+        "inicioMs": 700,
+        "finMs": 780
+      },
+      {
+        "palabra": "un",
+        "inicioMs": 780,
+        "finMs": 800
+      },
+      {
+        "palabra": "rayo",
+        "inicioMs": 800,
+        "finMs": 1100
+      },
+      {
+        "palabra": "es",
+        "inicioMs": 1100,
+        "finMs": 1180
+      },
+      {
+        "palabra": "una",
+        "inicioMs": 1180,
+        "finMs": 1300
+      },
+      {
+        "palabra": "auténtica",
+        "inicioMs": 1300,
+        "finMs": 1880
+      },
+      {
+        "palabra": "hazaña",
+        "inicioMs": 1880,
+        "finMs": 2160
+      },
+      {
+        "palabra": "de",
+        "inicioMs": 2160,
+        "finMs": 2300
+      },
+      {
+        "palabra": "la",
+        "inicioMs": 2300,
+        "finMs": 2400
+      },
+      {
+        "palabra": "física",
+        "inicioMs": 2400,
+        "finMs": 2700
+      },
+      {
+        "palabra": "y",
+        "inicioMs": 2700,
+        "finMs": 3020
+      },
+      {
+        "palabra": "el",
+        "inicioMs": 3020,
+        "finMs": 3140
+      },
+      {
+        "palabra": "tiempo",
+        "inicioMs": 3140,
+        "finMs": 3520
+      },
+      {
+        "palabra": "Conocías",
+        "inicioMs": 3840,
+        "finMs": 4260
+      },
+      {
+        "palabra": "el",
+        "inicioMs": 4260,
+        "finMs": 4420
+      },
+      {
+        "palabra": "secreto",
+        "inicioMs": 4420,
+        "finMs": 4940
+      },
+      {
+        "palabra": "del",
+        "inicioMs": 4940,
+        "finMs": 5140
+      },
+      {
+        "palabra": "efecto",
+        "inicioMs": 5140,
+        "finMs": 5500
+      },
+      {
+        "palabra": "flashover",
+        "inicioMs": 5500,
+        "finMs": 6080
+      }
+    ],
+    "escenario": "tormenta_electrica"
+  }
+]

@@ -1,0 +1,1568 @@
+{
+  "meta": {
+    "id": "paradoja_gemelos_espacio",
+    "slug": "paradoja_gemelos_espacio",
+    "temaResumen": "¿Cómo viajar al 99% de la velocidad de la luz frena el envejecimiento biológico según la paradoja de los gemelos de Einstein?"
+  },
+  "escenas": [
+    {
+      "id": 1,
+      "texto": "Si tuvieras un hermano gemelo y viajas al espacio a casi la velocidad de la luz, al volver ¡tú seguirás joven y él será un anciano!",
+      "icono": "Rocket",
+      "colorIcono": "#38BDF8",
+      "tituloVisual": "PARADOJA GEMELOS",
+      "composicionVisual": "plano_general",
+      "escenario": "vuelo_relativista",
+      "layout": "narrativo",
+      "transicion": "zoom_in",
+      "efectosCamara": [
+        "drift"
+      ],
+      "sfx": "sfx/sfx_whoosh.wav",
+      "volumenSfx": 0.2,
+      "palabrasClave": [
+        "hermano gemelo",
+        "velocidad de la luz",
+        "seguirás joven",
+        "será un anciano"
+      ],
+      "personajes": [
+        {
+          "id": "astronauta",
+          "posicion": {
+            "x": -160,
+            "y": 70
+          },
+          "escala": 1.05,
+          "orientacion": "derecha",
+          "prop": "relativistic_rocket",
+          "poseId": "presenting_object",
+          "expresion": "eureka",
+          "acciones": [
+            {
+              "tipo": "caminar_hacia",
+              "desdeX": -260,
+              "haciaX": -120
+            }
+          ],
+          "habla": true
+        }
+      ],
+      "duracionSegundos": 6.274,
+      "palabras": [
+        {
+          "palabra": "Si",
+          "inicioMs": 0,
+          "finMs": 100
+        },
+        {
+          "palabra": "tuvieras",
+          "inicioMs": 100,
+          "finMs": 400
+        },
+        {
+          "palabra": "un",
+          "inicioMs": 400,
+          "finMs": 520
+        },
+        {
+          "palabra": "hermano",
+          "inicioMs": 520,
+          "finMs": 840
+        },
+        {
+          "palabra": "gemelo",
+          "inicioMs": 840,
+          "finMs": 1180
+        },
+        {
+          "palabra": "y",
+          "inicioMs": 1180,
+          "finMs": 1300
+        },
+        {
+          "palabra": "viajas",
+          "inicioMs": 1300,
+          "finMs": 1540
+        },
+        {
+          "palabra": "al",
+          "inicioMs": 1540,
+          "finMs": 1680
+        },
+        {
+          "palabra": "espacio",
+          "inicioMs": 1680,
+          "finMs": 2040
+        },
+        {
+          "palabra": "a",
+          "inicioMs": 2160,
+          "finMs": 2300
+        },
+        {
+          "palabra": "casi",
+          "inicioMs": 2300,
+          "finMs": 2460
+        },
+        {
+          "palabra": "la",
+          "inicioMs": 2460,
+          "finMs": 2740
+        },
+        {
+          "palabra": "velocidad",
+          "inicioMs": 2740,
+          "finMs": 2980
+        },
+        {
+          "palabra": "de",
+          "inicioMs": 2980,
+          "finMs": 3060
+        },
+        {
+          "palabra": "la",
+          "inicioMs": 3060,
+          "finMs": 3240
+        },
+        {
+          "palabra": "luz",
+          "inicioMs": 3360,
+          "finMs": 3440
+        },
+        {
+          "palabra": "al",
+          "inicioMs": 3440,
+          "finMs": 3760
+        },
+        {
+          "palabra": "volver",
+          "inicioMs": 4000,
+          "finMs": 4100
+        },
+        {
+          "palabra": "tú",
+          "inicioMs": 4100,
+          "finMs": 4460
+        },
+        {
+          "palabra": "seguirás",
+          "inicioMs": 4460,
+          "finMs": 4780
+        },
+        {
+          "palabra": "joven",
+          "inicioMs": 4780,
+          "finMs": 4920
+        },
+        {
+          "palabra": "y",
+          "inicioMs": 4920,
+          "finMs": 5020
+        },
+        {
+          "palabra": "él",
+          "inicioMs": 5020,
+          "finMs": 5240
+        },
+        {
+          "palabra": "será",
+          "inicioMs": 5240,
+          "finMs": 5360
+        },
+        {
+          "palabra": "un",
+          "inicioMs": 5360,
+          "finMs": 5800
+        },
+        {
+          "palabra": "anciano",
+          "inicioMs": 5800,
+          "finMs": 6024
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "texto": "No es una metáfora poética de ciencia ficción: es una consecuencia física comprobada de la Relatividad Especial de Albert Einstein.",
+      "icono": "Atom",
+      "colorIcono": "#8B5CF6",
+      "tituloVisual": "EINSTEIN 1905",
+      "composicionVisual": "primer_plano",
+      "escenario": "laboratorio_neuro",
+      "layout": "narrativo",
+      "transicion": "whip_right",
+      "efectosCamara": [
+        "drift"
+      ],
+      "palabrasClave": [
+        "consecuencia física",
+        "Relatividad Especial",
+        "Albert Einstein"
+      ],
+      "personajes": [
+        {
+          "id": "fisico",
+          "posicion": {
+            "x": 0,
+            "y": 50
+          },
+          "escala": 1.15,
+          "orientacion": "derecha",
+          "prop": "book",
+          "poseId": "presenting_object",
+          "expresion": "talking_enthusiastic",
+          "habla": true
+        }
+      ],
+      "duracionSegundos": 6.634,
+      "palabras": [
+        {
+          "palabra": "No",
+          "inicioMs": 0,
+          "finMs": 220
+        },
+        {
+          "palabra": "es",
+          "inicioMs": 220,
+          "finMs": 340
+        },
+        {
+          "palabra": "una",
+          "inicioMs": 340,
+          "finMs": 460
+        },
+        {
+          "palabra": "metáfora",
+          "inicioMs": 460,
+          "finMs": 960
+        },
+        {
+          "palabra": "poética",
+          "inicioMs": 960,
+          "finMs": 1320
+        },
+        {
+          "palabra": "de",
+          "inicioMs": 1320,
+          "finMs": 1500
+        },
+        {
+          "palabra": "ciencia",
+          "inicioMs": 1500,
+          "finMs": 1800
+        },
+        {
+          "palabra": "ficción",
+          "inicioMs": 1800,
+          "finMs": 2260
+        },
+        {
+          "palabra": "es",
+          "inicioMs": 2360,
+          "finMs": 2460
+        },
+        {
+          "palabra": "una",
+          "inicioMs": 2460,
+          "finMs": 2600
+        },
+        {
+          "palabra": "consecuencia",
+          "inicioMs": 2600,
+          "finMs": 3140
+        },
+        {
+          "palabra": "física",
+          "inicioMs": 3140,
+          "finMs": 3440
+        },
+        {
+          "palabra": "comprobada",
+          "inicioMs": 3440,
+          "finMs": 4020
+        },
+        {
+          "palabra": "de",
+          "inicioMs": 4020,
+          "finMs": 4160
+        },
+        {
+          "palabra": "la",
+          "inicioMs": 4160,
+          "finMs": 4280
+        },
+        {
+          "palabra": "Relatividad",
+          "inicioMs": 4280,
+          "finMs": 4800
+        },
+        {
+          "palabra": "Especial",
+          "inicioMs": 4800,
+          "finMs": 5200
+        },
+        {
+          "palabra": "de",
+          "inicioMs": 5200,
+          "finMs": 5440
+        },
+        {
+          "palabra": "Albert",
+          "inicioMs": 5440,
+          "finMs": 5720
+        },
+        {
+          "palabra": "Einstein",
+          "inicioMs": 5720,
+          "finMs": 6080
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "texto": "En nuestro cosmos, la velocidad de la luz en el vacío es un límite absoluto e insuperable: trescientos mil kilómetros por segundo.",
+      "icono": "Zap",
+      "colorIcono": "#FACC15",
+      "tituloVisual": "LÍMITE CÓSMICO",
+      "composicionVisual": "cifras_concepto",
+      "escenario": "vuelo_relativista",
+      "layout": "narrativo",
+      "transicion": "corte",
+      "efectosCamara": [
+        "drift"
+      ],
+      "palabrasClave": [
+        "límite absoluto",
+        "trescientos mil kilómetros",
+        "velocidad de la luz"
+      ],
+      "personajes": [
+        {
+          "id": "fisico",
+          "posicion": {
+            "x": -180,
+            "y": 70
+          },
+          "escala": 1.05,
+          "orientacion": "derecha",
+          "poseId": "explaining_pointing_up",
+          "expresion": "analytical",
+          "habla": true
+        }
+      ],
+      "objetos": [
+        {
+          "id": "nave_luz",
+          "propId": "relativistic_rocket",
+          "posicion": {
+            "x": 170,
+            "y": -30
+          },
+          "escala": 1.45,
+          "animacion": {
+            "tipo": "flotar",
+            "inicioFrame": 0,
+            "finFrame": 9999
+          },
+          "capaZ": 25
+        }
+      ],
+      "duracionSegundos": 6.802,
+      "palabras": [
+        {
+          "palabra": "En",
+          "inicioMs": 0,
+          "finMs": 200
+        },
+        {
+          "palabra": "nuestro",
+          "inicioMs": 200,
+          "finMs": 440
+        },
+        {
+          "palabra": "cosmos",
+          "inicioMs": 440,
+          "finMs": 880
+        },
+        {
+          "palabra": "la",
+          "inicioMs": 980,
+          "finMs": 1040
+        },
+        {
+          "palabra": "velocidad",
+          "inicioMs": 1040,
+          "finMs": 1360
+        },
+        {
+          "palabra": "de",
+          "inicioMs": 1360,
+          "finMs": 1600
+        },
+        {
+          "palabra": "la",
+          "inicioMs": 1600,
+          "finMs": 1680
+        },
+        {
+          "palabra": "luz",
+          "inicioMs": 1680,
+          "finMs": 1820
+        },
+        {
+          "palabra": "en",
+          "inicioMs": 1820,
+          "finMs": 1980
+        },
+        {
+          "palabra": "el",
+          "inicioMs": 1980,
+          "finMs": 2080
+        },
+        {
+          "palabra": "vacío",
+          "inicioMs": 2080,
+          "finMs": 2480
+        },
+        {
+          "palabra": "es",
+          "inicioMs": 2480,
+          "finMs": 2700
+        },
+        {
+          "palabra": "un",
+          "inicioMs": 2700,
+          "finMs": 2800
+        },
+        {
+          "palabra": "límite",
+          "inicioMs": 2800,
+          "finMs": 3120
+        },
+        {
+          "palabra": "absoluto",
+          "inicioMs": 3120,
+          "finMs": 3680
+        },
+        {
+          "palabra": "e",
+          "inicioMs": 3680,
+          "finMs": 3720
+        },
+        {
+          "palabra": "insuperable",
+          "inicioMs": 3720,
+          "finMs": 4340
+        },
+        {
+          "palabra": "trescientos",
+          "inicioMs": 4600,
+          "finMs": 5000
+        },
+        {
+          "palabra": "mil",
+          "inicioMs": 5000,
+          "finMs": 5300
+        },
+        {
+          "palabra": "kilómetros",
+          "inicioMs": 5300,
+          "finMs": 5720
+        },
+        {
+          "palabra": "por",
+          "inicioMs": 5720,
+          "finMs": 5960
+        },
+        {
+          "palabra": "segundo",
+          "inicioMs": 5960,
+          "finMs": 6300
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "texto": "Para que la velocidad de la luz sea idéntica para todos los observadores en movimiento, lo que debe deformarse es el tiempo mismo.",
+      "icono": "Clock",
+      "colorIcono": "#3B82F6",
+      "tituloVisual": "TIEMPO ELÁSTICO",
+      "composicionVisual": "primer_plano",
+      "escenario": "laboratorio_neuro",
+      "layout": "narrativo",
+      "transicion": "whip_left",
+      "efectosCamara": [
+        "drift"
+      ],
+      "palabrasClave": [
+        "debe deformarse",
+        "tiempo mismo",
+        "observadores en movimiento"
+      ],
+      "personajes": [
+        {
+          "id": "fisico",
+          "posicion": {
+            "x": 0,
+            "y": 50
+          },
+          "escala": 1.15,
+          "orientacion": "derecha",
+          "prop": "relativistic_clock",
+          "poseId": "presenting_object",
+          "expresion": "eureka",
+          "habla": true
+        }
+      ],
+      "duracionSegundos": 6.394,
+      "palabras": [
+        {
+          "palabra": "Para",
+          "inicioMs": 0,
+          "finMs": 200
+        },
+        {
+          "palabra": "que",
+          "inicioMs": 200,
+          "finMs": 340
+        },
+        {
+          "palabra": "la",
+          "inicioMs": 340,
+          "finMs": 440
+        },
+        {
+          "palabra": "velocidad",
+          "inicioMs": 440,
+          "finMs": 720
+        },
+        {
+          "palabra": "de",
+          "inicioMs": 720,
+          "finMs": 940
+        },
+        {
+          "palabra": "la",
+          "inicioMs": 940,
+          "finMs": 1040
+        },
+        {
+          "palabra": "luz",
+          "inicioMs": 1040,
+          "finMs": 1180
+        },
+        {
+          "palabra": "sea",
+          "inicioMs": 1180,
+          "finMs": 1380
+        },
+        {
+          "palabra": "idéntica",
+          "inicioMs": 1380,
+          "finMs": 1900
+        },
+        {
+          "palabra": "para",
+          "inicioMs": 1900,
+          "finMs": 2060
+        },
+        {
+          "palabra": "todos",
+          "inicioMs": 2060,
+          "finMs": 2280
+        },
+        {
+          "palabra": "los",
+          "inicioMs": 2280,
+          "finMs": 2460
+        },
+        {
+          "palabra": "observadores",
+          "inicioMs": 2460,
+          "finMs": 3000
+        },
+        {
+          "palabra": "en",
+          "inicioMs": 3000,
+          "finMs": 3180
+        },
+        {
+          "palabra": "movimiento",
+          "inicioMs": 3180,
+          "finMs": 3720
+        },
+        {
+          "palabra": "lo",
+          "inicioMs": 3880,
+          "finMs": 3940
+        },
+        {
+          "palabra": "que",
+          "inicioMs": 3940,
+          "finMs": 4060
+        },
+        {
+          "palabra": "debe",
+          "inicioMs": 4060,
+          "finMs": 4220
+        },
+        {
+          "palabra": "deformarse",
+          "inicioMs": 4220,
+          "finMs": 4840
+        },
+        {
+          "palabra": "es",
+          "inicioMs": 4840,
+          "finMs": 5140
+        },
+        {
+          "palabra": "el",
+          "inicioMs": 5140,
+          "finMs": 5260
+        },
+        {
+          "palabra": "tiempo",
+          "inicioMs": 5260,
+          "finMs": 5520
+        },
+        {
+          "palabra": "mismo",
+          "inicioMs": 5520,
+          "finMs": 5900
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "texto": "A medida que tu nave espacial se aproxima a la velocidad de la luz, el tiempo a bordo se ralentiza mediante dilatación cinemática.",
+      "icono": "Gauge",
+      "colorIcono": "#10B981",
+      "tituloVisual": "DILATACIÓN CÓSMICA",
+      "composicionVisual": "plano_general",
+      "escenario": "vuelo_relativista",
+      "layout": "narrativo",
+      "transicion": "zoom_in",
+      "efectosCamara": [
+        "punch"
+      ],
+      "sfx": "sfx/sfx_dramatic_hit.wav",
+      "volumenSfx": 0.25,
+      "palabrasClave": [
+        "se ralentiza",
+        "dilatación cinemática",
+        "próxima a la luz"
+      ],
+      "personajes": [
+        {
+          "id": "astronauta",
+          "posicion": {
+            "x": -80,
+            "y": 60
+          },
+          "escala": 1.1,
+          "orientacion": "derecha",
+          "prop": "relativistic_rocket",
+          "poseId": "presenting_object",
+          "expresion": "talking_enthusiastic",
+          "habla": true
+        }
+      ],
+      "duracionSegundos": 7.162,
+      "palabras": [
+        {
+          "palabra": "A",
+          "inicioMs": 0,
+          "finMs": 200
+        },
+        {
+          "palabra": "medida",
+          "inicioMs": 200,
+          "finMs": 380
+        },
+        {
+          "palabra": "que",
+          "inicioMs": 380,
+          "finMs": 680
+        },
+        {
+          "palabra": "tu",
+          "inicioMs": 680,
+          "finMs": 800
+        },
+        {
+          "palabra": "nave",
+          "inicioMs": 800,
+          "finMs": 1000
+        },
+        {
+          "palabra": "espacial",
+          "inicioMs": 1000,
+          "finMs": 1680
+        },
+        {
+          "palabra": "se",
+          "inicioMs": 1680,
+          "finMs": 1940
+        },
+        {
+          "palabra": "aproxima",
+          "inicioMs": 1940,
+          "finMs": 2500
+        },
+        {
+          "palabra": "a",
+          "inicioMs": 2500,
+          "finMs": 2600
+        },
+        {
+          "palabra": "la",
+          "inicioMs": 2600,
+          "finMs": 2660
+        },
+        {
+          "palabra": "velocidad",
+          "inicioMs": 2660,
+          "finMs": 2940
+        },
+        {
+          "palabra": "de",
+          "inicioMs": 2940,
+          "finMs": 3220
+        },
+        {
+          "palabra": "la",
+          "inicioMs": 3220,
+          "finMs": 3320
+        },
+        {
+          "palabra": "luz",
+          "inicioMs": 3320,
+          "finMs": 3520
+        },
+        {
+          "palabra": "el",
+          "inicioMs": 3620,
+          "finMs": 3700
+        },
+        {
+          "palabra": "tiempo",
+          "inicioMs": 3700,
+          "finMs": 3980
+        },
+        {
+          "palabra": "a",
+          "inicioMs": 3980,
+          "finMs": 4120
+        },
+        {
+          "palabra": "bordo",
+          "inicioMs": 4120,
+          "finMs": 4400
+        },
+        {
+          "palabra": "se",
+          "inicioMs": 4400,
+          "finMs": 4560
+        },
+        {
+          "palabra": "ralentiza",
+          "inicioMs": 4560,
+          "finMs": 5160
+        },
+        {
+          "palabra": "mediante",
+          "inicioMs": 5160,
+          "finMs": 5540
+        },
+        {
+          "palabra": "dilatación",
+          "inicioMs": 5540,
+          "finMs": 5660
+        },
+        {
+          "palabra": "cinemática",
+          "inicioMs": 5660,
+          "finMs": 5760
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "texto": "Al viajar al noventa y nueve por ciento de la luz, el factor de Lorentz llega a siete. ¡El reloj corre siete veces más despacio!",
+      "icono": "Activity",
+      "colorIcono": "#EF4444",
+      "tituloVisual": "FACTOR 7.1x",
+      "composicionVisual": "cifras_concepto",
+      "escenario": "vuelo_relativista",
+      "layout": "narrativo",
+      "transicion": "corte",
+      "efectosCamara": [
+        "punch"
+      ],
+      "sfx": "sfx/sfx_dramatic_hit.wav",
+      "volumenSfx": 0.25,
+      "palabrasClave": [
+        "noventa y nueve por ciento",
+        "factor de Lorentz",
+        "siete veces más despacio"
+      ],
+      "personajes": [
+        {
+          "id": "fisico",
+          "posicion": {
+            "x": -180,
+            "y": 70
+          },
+          "escala": 1.05,
+          "orientacion": "derecha",
+          "poseId": "explaining_pointing_up",
+          "expresion": "eureka",
+          "habla": true
+        }
+      ],
+      "objetos": [
+        {
+          "id": "reloj_lorentz",
+          "propId": "relativistic_clock",
+          "posicion": {
+            "x": 170,
+            "y": -30
+          },
+          "escala": 1.45,
+          "animacion": {
+            "tipo": "pulso",
+            "inicioFrame": 0,
+            "finFrame": 9999
+          },
+          "capaZ": 25
+        }
+      ],
+      "duracionSegundos": 6.37,
+      "palabras": [
+        {
+          "palabra": "Al",
+          "inicioMs": 0,
+          "finMs": 200
+        },
+        {
+          "palabra": "viajar",
+          "inicioMs": 200,
+          "finMs": 480
+        },
+        {
+          "palabra": "al",
+          "inicioMs": 480,
+          "finMs": 580
+        },
+        {
+          "palabra": "noventa",
+          "inicioMs": 580,
+          "finMs": 960
+        },
+        {
+          "palabra": "y",
+          "inicioMs": 960,
+          "finMs": 1560
+        },
+        {
+          "palabra": "nueve",
+          "inicioMs": 1560,
+          "finMs": 1740
+        },
+        {
+          "palabra": "por",
+          "inicioMs": 1740,
+          "finMs": 1820
+        },
+        {
+          "palabra": "ciento",
+          "inicioMs": 1820,
+          "finMs": 2040
+        },
+        {
+          "palabra": "de",
+          "inicioMs": 2220,
+          "finMs": 2300
+        },
+        {
+          "palabra": "la",
+          "inicioMs": 2300,
+          "finMs": 2520
+        },
+        {
+          "palabra": "luz",
+          "inicioMs": 2520,
+          "finMs": 2700
+        },
+        {
+          "palabra": "el",
+          "inicioMs": 2700,
+          "finMs": 3040
+        },
+        {
+          "palabra": "factor",
+          "inicioMs": 3040,
+          "finMs": 3280
+        },
+        {
+          "palabra": "de",
+          "inicioMs": 3280,
+          "finMs": 3460
+        },
+        {
+          "palabra": "Lorentz",
+          "inicioMs": 3460,
+          "finMs": 3680
+        },
+        {
+          "palabra": "llega",
+          "inicioMs": 3860,
+          "finMs": 3980
+        },
+        {
+          "palabra": "a",
+          "inicioMs": 3980,
+          "finMs": 4300
+        },
+        {
+          "palabra": "siete",
+          "inicioMs": 4300,
+          "finMs": 4540
+        },
+        {
+          "palabra": "El",
+          "inicioMs": 4540,
+          "finMs": 4780
+        },
+        {
+          "palabra": "reloj",
+          "inicioMs": 4780,
+          "finMs": 5080
+        },
+        {
+          "palabra": "corre",
+          "inicioMs": 5080,
+          "finMs": 5320
+        },
+        {
+          "palabra": "siete",
+          "inicioMs": 5320,
+          "finMs": 5440
+        },
+        {
+          "palabra": "veces",
+          "inicioMs": 5440,
+          "finMs": 5880
+        },
+        {
+          "palabra": "más",
+          "inicioMs": 5880,
+          "finMs": 6000
+        },
+        {
+          "palabra": "despacio",
+          "inicioMs": 5880,
+          "finMs": 6000
+        }
+      ]
+    },
+    {
+      "id": 7,
+      "texto": "Para ti dentro de la nave todo se siente normal: tu corazón late igual, lees libros, duermes y cumples cinco años de viaje.",
+      "icono": "Heart",
+      "colorIcono": "#EC4899",
+      "tituloVisual": "5 AÑOS A BORDO",
+      "composicionVisual": "primer_plano",
+      "escenario": "vuelo_relativista",
+      "layout": "narrativo",
+      "transicion": "whip_right",
+      "efectosCamara": [
+        "drift"
+      ],
+      "palabrasClave": [
+        "se siente normal",
+        "tu corazón late igual",
+        "cumples cinco años"
+      ],
+      "personajes": [
+        {
+          "id": "astronauta",
+          "posicion": {
+            "x": 0,
+            "y": 50
+          },
+          "escala": 1.15,
+          "orientacion": "derecha",
+          "prop": "coffee_mug",
+          "poseId": "presenting_object",
+          "expresion": "smile_soft",
+          "habla": true
+        }
+      ],
+      "duracionSegundos": 6.346,
+      "palabras": [
+        {
+          "palabra": "Para",
+          "inicioMs": 0,
+          "finMs": 240
+        },
+        {
+          "palabra": "ti",
+          "inicioMs": 240,
+          "finMs": 400
+        },
+        {
+          "palabra": "dentro",
+          "inicioMs": 480,
+          "finMs": 660
+        },
+        {
+          "palabra": "de",
+          "inicioMs": 660,
+          "finMs": 820
+        },
+        {
+          "palabra": "la",
+          "inicioMs": 820,
+          "finMs": 920
+        },
+        {
+          "palabra": "nave",
+          "inicioMs": 920,
+          "finMs": 1120
+        },
+        {
+          "palabra": "todo",
+          "inicioMs": 1320,
+          "finMs": 1440
+        },
+        {
+          "palabra": "se",
+          "inicioMs": 1440,
+          "finMs": 1620
+        },
+        {
+          "palabra": "siente",
+          "inicioMs": 1620,
+          "finMs": 1860
+        },
+        {
+          "palabra": "normal",
+          "inicioMs": 1860,
+          "finMs": 2220
+        },
+        {
+          "palabra": "tu",
+          "inicioMs": 2380,
+          "finMs": 2460
+        },
+        {
+          "palabra": "corazón",
+          "inicioMs": 2460,
+          "finMs": 2760
+        },
+        {
+          "palabra": "late",
+          "inicioMs": 2760,
+          "finMs": 3140
+        },
+        {
+          "palabra": "igual",
+          "inicioMs": 3140,
+          "finMs": 3600
+        },
+        {
+          "palabra": "lees",
+          "inicioMs": 3720,
+          "finMs": 4060
+        },
+        {
+          "palabra": "libros",
+          "inicioMs": 4160,
+          "finMs": 4500
+        },
+        {
+          "palabra": "duermes",
+          "inicioMs": 4500,
+          "finMs": 4580
+        },
+        {
+          "palabra": "y",
+          "inicioMs": 4580,
+          "finMs": 4920
+        },
+        {
+          "palabra": "cumples",
+          "inicioMs": 4920,
+          "finMs": 5200
+        },
+        {
+          "palabra": "cinco",
+          "inicioMs": 5200,
+          "finMs": 5460
+        },
+        {
+          "palabra": "años",
+          "inicioMs": 5460,
+          "finMs": 5600
+        },
+        {
+          "palabra": "de",
+          "inicioMs": 5600,
+          "finMs": 5880
+        },
+        {
+          "palabra": "viaje",
+          "inicioMs": 5880,
+          "finMs": 6096
+        }
+      ]
+    },
+    {
+      "id": 8,
+      "texto": "Pero mientras tú vivías esos cinco años en tu camarote, en la Tierra han pasado más de treinta y cinco años terrestres completos.",
+      "icono": "Calendar",
+      "colorIcono": "#F97316",
+      "tituloVisual": "35 AÑOS TIERRA",
+      "composicionVisual": "cifras_concepto",
+      "escenario": "laboratorio_neuro",
+      "layout": "narrativo",
+      "transicion": "corte",
+      "efectosCamara": [
+        "drift"
+      ],
+      "palabrasClave": [
+        "en la Tierra",
+        "más de treinta y cinco años",
+        "terrestres completos"
+      ],
+      "personajes": [
+        {
+          "id": "narrador",
+          "posicion": {
+            "x": -80,
+            "y": 60
+          },
+          "escala": 1.1,
+          "orientacion": "derecha",
+          "prop": "clock",
+          "poseId": "presenting_object",
+          "expresion": "shocked",
+          "habla": true
+        }
+      ],
+      "duracionSegundos": 6.946,
+      "palabras": [
+        {
+          "palabra": "Pero",
+          "inicioMs": 0,
+          "finMs": 240
+        },
+        {
+          "palabra": "mientras",
+          "inicioMs": 240,
+          "finMs": 520
+        },
+        {
+          "palabra": "tú",
+          "inicioMs": 520,
+          "finMs": 740
+        },
+        {
+          "palabra": "vivías",
+          "inicioMs": 740,
+          "finMs": 1100
+        },
+        {
+          "palabra": "esos",
+          "inicioMs": 1100,
+          "finMs": 1360
+        },
+        {
+          "palabra": "cinco",
+          "inicioMs": 1360,
+          "finMs": 1700
+        },
+        {
+          "palabra": "años",
+          "inicioMs": 1700,
+          "finMs": 1980
+        },
+        {
+          "palabra": "en",
+          "inicioMs": 1980,
+          "finMs": 2200
+        },
+        {
+          "palabra": "tu",
+          "inicioMs": 2200,
+          "finMs": 2320
+        },
+        {
+          "palabra": "camarote",
+          "inicioMs": 2320,
+          "finMs": 2820
+        },
+        {
+          "palabra": "en",
+          "inicioMs": 2940,
+          "finMs": 3020
+        },
+        {
+          "palabra": "la",
+          "inicioMs": 3020,
+          "finMs": 3100
+        },
+        {
+          "palabra": "Tierra",
+          "inicioMs": 3100,
+          "finMs": 3420
+        },
+        {
+          "palabra": "han",
+          "inicioMs": 3420,
+          "finMs": 3620
+        },
+        {
+          "palabra": "pasado",
+          "inicioMs": 3620,
+          "finMs": 3900
+        },
+        {
+          "palabra": "más",
+          "inicioMs": 3900,
+          "finMs": 4180
+        },
+        {
+          "palabra": "de",
+          "inicioMs": 4180,
+          "finMs": 4320
+        },
+        {
+          "palabra": "treinta",
+          "inicioMs": 4320,
+          "finMs": 4840
+        },
+        {
+          "palabra": "y",
+          "inicioMs": 4840,
+          "finMs": 5280
+        },
+        {
+          "palabra": "cinco",
+          "inicioMs": 5280,
+          "finMs": 5440
+        },
+        {
+          "palabra": "años",
+          "inicioMs": 5440,
+          "finMs": 5600
+        },
+        {
+          "palabra": "terrestres",
+          "inicioMs": 5600,
+          "finMs": 5780
+        },
+        {
+          "palabra": "completos",
+          "inicioMs": 5780,
+          "finMs": 6480
+        }
+      ]
+    },
+    {
+      "id": 9,
+      "texto": "Al aterrizar, tu hermano gemelo tendrá más de sesenta años y arrugas, mientras que tú apenas tienes veinticinco años biológicos.",
+      "icono": "Users",
+      "colorIcono": "#10B981",
+      "tituloVisual": "EL REENCUENTRO",
+      "composicionVisual": "primer_plano",
+      "escenario": "laboratorio_neuro",
+      "layout": "narrativo",
+      "transicion": "zoom_in",
+      "efectosCamara": [
+        "shake",
+        "punch"
+      ],
+      "sfx": "sfx/sfx_dramatic_hit.wav",
+      "volumenSfx": 0.25,
+      "palabrasClave": [
+        "sesenta años y arrugas",
+        "veinticinco años biológicos",
+        "hermano gemelo"
+      ],
+      "personajes": [
+        {
+          "id": "astronauta",
+          "posicion": {
+            "x": 0,
+            "y": 50
+          },
+          "escala": 1.15,
+          "orientacion": "derecha",
+          "prop": "relativistic_rocket",
+          "poseId": "presenting_object",
+          "expresion": "eureka",
+          "habla": true
+        }
+      ],
+      "duracionSegundos": 6.85,
+      "palabras": [
+        {
+          "palabra": "Al",
+          "inicioMs": 0,
+          "finMs": 240
+        },
+        {
+          "palabra": "aterrizar",
+          "inicioMs": 240,
+          "finMs": 760
+        },
+        {
+          "palabra": "tu",
+          "inicioMs": 760,
+          "finMs": 940
+        },
+        {
+          "palabra": "hermano",
+          "inicioMs": 940,
+          "finMs": 1260
+        },
+        {
+          "palabra": "gemelo",
+          "inicioMs": 1260,
+          "finMs": 1580
+        },
+        {
+          "palabra": "tendrá",
+          "inicioMs": 1580,
+          "finMs": 1920
+        },
+        {
+          "palabra": "más",
+          "inicioMs": 1920,
+          "finMs": 2080
+        },
+        {
+          "palabra": "de",
+          "inicioMs": 2080,
+          "finMs": 2240
+        },
+        {
+          "palabra": "sesenta",
+          "inicioMs": 2240,
+          "finMs": 2660
+        },
+        {
+          "palabra": "años",
+          "inicioMs": 2660,
+          "finMs": 2900
+        },
+        {
+          "palabra": "y",
+          "inicioMs": 2900,
+          "finMs": 3040
+        },
+        {
+          "palabra": "arrugas",
+          "inicioMs": 3040,
+          "finMs": 3480
+        },
+        {
+          "palabra": "mientras",
+          "inicioMs": 3720,
+          "finMs": 3920
+        },
+        {
+          "palabra": "que",
+          "inicioMs": 3920,
+          "finMs": 4160
+        },
+        {
+          "palabra": "tú",
+          "inicioMs": 4160,
+          "finMs": 4300
+        },
+        {
+          "palabra": "apenas",
+          "inicioMs": 4300,
+          "finMs": 4520
+        },
+        {
+          "palabra": "tienes",
+          "inicioMs": 4520,
+          "finMs": 4880
+        },
+        {
+          "palabra": "veinticinco",
+          "inicioMs": 4880,
+          "finMs": 5500
+        },
+        {
+          "palabra": "años",
+          "inicioMs": 5500,
+          "finMs": 5720
+        },
+        {
+          "palabra": "biológicos",
+          "inicioMs": 5720,
+          "finMs": 6360
+        }
+      ]
+    },
+    {
+      "id": 10,
+      "texto": "Viajar a la velocidad de la luz es una máquina para viajar hacia el futuro del universo, sin boleto de regreso al pasado.",
+      "icono": "Compass",
+      "colorIcono": "#38BDF8",
+      "tituloVisual": "VIAJE AL FUTURO",
+      "composicionVisual": "plano_general",
+      "escenario": "vuelo_relativista",
+      "layout": "narrativo",
+      "transicion": "whip_left",
+      "efectosCamara": [
+        "drift"
+      ],
+      "palabrasClave": [
+        "máquina para viajar al futuro",
+        "sin boleto de regreso",
+        "futuro del universo"
+      ],
+      "personajes": [
+        {
+          "id": "astronauta",
+          "posicion": {
+            "x": 0,
+            "y": 50
+          },
+          "escala": 1.15,
+          "orientacion": "derecha",
+          "prop": "relativistic_rocket",
+          "poseId": "presenting_object",
+          "expresion": "talking_enthusiastic",
+          "habla": true
+        }
+      ],
+      "duracionSegundos": 5.722,
+      "palabras": [
+        {
+          "palabra": "Viajar",
+          "inicioMs": 0,
+          "finMs": 380
+        },
+        {
+          "palabra": "a",
+          "inicioMs": 380,
+          "finMs": 480
+        },
+        {
+          "palabra": "la",
+          "inicioMs": 480,
+          "finMs": 540
+        },
+        {
+          "palabra": "velocidad",
+          "inicioMs": 540,
+          "finMs": 840
+        },
+        {
+          "palabra": "de",
+          "inicioMs": 840,
+          "finMs": 1060
+        },
+        {
+          "palabra": "la",
+          "inicioMs": 1060,
+          "finMs": 1140
+        },
+        {
+          "palabra": "luz",
+          "inicioMs": 1140,
+          "finMs": 1320
+        },
+        {
+          "palabra": "es",
+          "inicioMs": 1320,
+          "finMs": 1580
+        },
+        {
+          "palabra": "una",
+          "inicioMs": 1580,
+          "finMs": 1720
+        },
+        {
+          "palabra": "máquina",
+          "inicioMs": 1720,
+          "finMs": 2040
+        },
+        {
+          "palabra": "para",
+          "inicioMs": 2040,
+          "finMs": 2280
+        },
+        {
+          "palabra": "viajar",
+          "inicioMs": 2280,
+          "finMs": 2600
+        },
+        {
+          "palabra": "hacia",
+          "inicioMs": 2600,
+          "finMs": 2760
+        },
+        {
+          "palabra": "el",
+          "inicioMs": 2760,
+          "finMs": 2880
+        },
+        {
+          "palabra": "futuro",
+          "inicioMs": 2880,
+          "finMs": 3080
+        },
+        {
+          "palabra": "del",
+          "inicioMs": 3080,
+          "finMs": 3300
+        },
+        {
+          "palabra": "universo",
+          "inicioMs": 3300,
+          "finMs": 3680
+        },
+        {
+          "palabra": "sin",
+          "inicioMs": 3800,
+          "finMs": 3940
+        },
+        {
+          "palabra": "boleto",
+          "inicioMs": 3940,
+          "finMs": 4260
+        },
+        {
+          "palabra": "de",
+          "inicioMs": 4260,
+          "finMs": 4380
+        },
+        {
+          "palabra": "regreso",
+          "inicioMs": 4380,
+          "finMs": 4760
+        },
+        {
+          "palabra": "al",
+          "inicioMs": 4760,
+          "finMs": 4860
+        },
+        {
+          "palabra": "pasado",
+          "inicioMs": 4860,
+          "finMs": 5160
+        }
+      ]
+    }
+  ]
+}

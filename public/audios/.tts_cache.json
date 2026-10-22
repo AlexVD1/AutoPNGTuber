@@ -1,253 +1,625 @@
 {
   "escena_1": {
-    "sha256": "250cd4f90367c1b916a4f7172649b29e6aeb63e67b323301379abf456241908c",
-    "texto": "¿Qué pasaría si una sola cucharadita de una estrella de neutrones apareciera en tu mesa?",
+    "sha256": "f48730cd3df3356d7c92c1ef20328335187d9ba32e33f204c4ef1e75148711ff",
+    "pipelineVersion": "v3_sentence_tailcut",
+    "texto": "Si tuvieras un hermano gemelo y viajas al espacio a casi la velocidad de la luz, al volver ¡tú seguirás joven y él será un anciano!",
     "voiceConds": "alex.conds.pt",
-    "duracionSegundos": 4.594,
+    "duracionSegundos": 6.274,
     "palabras": [
       {
-        "palabra": "Qué",
+        "palabra": "Si",
         "inicioMs": 0,
-        "finMs": 160
+        "finMs": 100
       },
       {
-        "palabra": "pasaría",
-        "inicioMs": 160,
-        "finMs": 580
+        "palabra": "tuvieras",
+        "inicioMs": 100,
+        "finMs": 400
       },
       {
-        "palabra": "si",
-        "inicioMs": 580,
-        "finMs": 780
+        "palabra": "un",
+        "inicioMs": 400,
+        "finMs": 520
       },
       {
-        "palabra": "una",
-        "inicioMs": 780,
-        "finMs": 940
+        "palabra": "hermano",
+        "inicioMs": 520,
+        "finMs": 840
       },
       {
-        "palabra": "sola",
-        "inicioMs": 940,
-        "finMs": 1200
+        "palabra": "gemelo",
+        "inicioMs": 840,
+        "finMs": 1180
       },
       {
-        "palabra": "cucharadita",
-        "inicioMs": 1200,
-        "finMs": 1920
+        "palabra": "y",
+        "inicioMs": 1180,
+        "finMs": 1300
+      },
+      {
+        "palabra": "viajas",
+        "inicioMs": 1300,
+        "finMs": 1540
+      },
+      {
+        "palabra": "al",
+        "inicioMs": 1540,
+        "finMs": 1680
+      },
+      {
+        "palabra": "espacio",
+        "inicioMs": 1680,
+        "finMs": 2040
+      },
+      {
+        "palabra": "a",
+        "inicioMs": 2160,
+        "finMs": 2300
+      },
+      {
+        "palabra": "casi",
+        "inicioMs": 2300,
+        "finMs": 2460
+      },
+      {
+        "palabra": "la",
+        "inicioMs": 2460,
+        "finMs": 2740
+      },
+      {
+        "palabra": "velocidad",
+        "inicioMs": 2740,
+        "finMs": 2980
       },
       {
         "palabra": "de",
-        "inicioMs": 1920,
-        "finMs": 2060
+        "inicioMs": 2980,
+        "finMs": 3060
       },
       {
-        "palabra": "una",
-        "inicioMs": 2060,
-        "finMs": 2200
+        "palabra": "la",
+        "inicioMs": 3060,
+        "finMs": 3240
       },
       {
-        "palabra": "estrella",
-        "inicioMs": 2200,
-        "finMs": 2580
+        "palabra": "luz",
+        "inicioMs": 3360,
+        "finMs": 3440
       },
       {
-        "palabra": "de",
-        "inicioMs": 2580,
-        "finMs": 2700
-      },
-      {
-        "palabra": "neutrones",
-        "inicioMs": 2700,
-        "finMs": 3140
-      },
-      {
-        "palabra": "apareciera",
-        "inicioMs": 3140,
+        "palabra": "al",
+        "inicioMs": 3440,
         "finMs": 3760
       },
       {
-        "palabra": "en",
-        "inicioMs": 3760,
-        "finMs": 3860
+        "palabra": "volver",
+        "inicioMs": 4000,
+        "finMs": 4100
       },
       {
-        "palabra": "tu",
-        "inicioMs": 3860,
-        "finMs": 3940
+        "palabra": "tú",
+        "inicioMs": 4100,
+        "finMs": 4460
       },
       {
-        "palabra": "mesa",
-        "inicioMs": 3940,
-        "finMs": 4160
+        "palabra": "seguirás",
+        "inicioMs": 4460,
+        "finMs": 4780
+      },
+      {
+        "palabra": "joven",
+        "inicioMs": 4780,
+        "finMs": 4920
+      },
+      {
+        "palabra": "y",
+        "inicioMs": 4920,
+        "finMs": 5020
+      },
+      {
+        "palabra": "él",
+        "inicioMs": 5020,
+        "finMs": 5240
+      },
+      {
+        "palabra": "será",
+        "inicioMs": 5240,
+        "finMs": 5360
+      },
+      {
+        "palabra": "un",
+        "inicioMs": 5360,
+        "finMs": 5800
+      },
+      {
+        "palabra": "anciano",
+        "inicioMs": 5800,
+        "finMs": 6024
       }
     ]
   },
   "escena_2": {
-    "sha256": "1667cbf884d1dd75b9d24abdd5e09cadb186991e4a8ffb5d834ca425d965ca42",
-    "texto": "Aunque es diminuta, esa gota de materia espacial pesa más de cuatro mil millones de toneladas.",
+    "sha256": "dd2b13d642f40268f19028f62fe8956b089ffc16f6f11960c98488ca736420e2",
+    "pipelineVersion": "v3_sentence_tailcut",
+    "texto": "No es una metáfora poética de ciencia ficción: es una consecuencia física comprobada de la Relatividad Especial de Albert Einstein.",
     "voiceConds": "alex.conds.pt",
-    "duracionSegundos": 4.546,
+    "duracionSegundos": 6.634,
     "palabras": [
       {
-        "palabra": "Aunque",
+        "palabra": "No",
         "inicioMs": 0,
-        "finMs": 280
+        "finMs": 220
       },
       {
         "palabra": "es",
-        "inicioMs": 280,
-        "finMs": 400
+        "inicioMs": 220,
+        "finMs": 340
       },
       {
-        "palabra": "diminuta",
-        "inicioMs": 400,
-        "finMs": 800
+        "palabra": "una",
+        "inicioMs": 340,
+        "finMs": 460
       },
       {
-        "palabra": "esa",
-        "inicioMs": 940,
-        "finMs": 1100
+        "palabra": "metáfora",
+        "inicioMs": 460,
+        "finMs": 960
       },
       {
-        "palabra": "gota",
-        "inicioMs": 1100,
-        "finMs": 1380
-      },
-      {
-        "palabra": "de",
-        "inicioMs": 1380,
-        "finMs": 1440
-      },
-      {
-        "palabra": "materia",
-        "inicioMs": 1440,
-        "finMs": 1640
-      },
-      {
-        "palabra": "espacial",
-        "inicioMs": 1640,
-        "finMs": 2100
-      },
-      {
-        "palabra": "pesa",
-        "inicioMs": 2100,
-        "finMs": 2440
-      },
-      {
-        "palabra": "más",
-        "inicioMs": 2440,
-        "finMs": 2580
+        "palabra": "poética",
+        "inicioMs": 960,
+        "finMs": 1320
       },
       {
         "palabra": "de",
-        "inicioMs": 2580,
-        "finMs": 2780
+        "inicioMs": 1320,
+        "finMs": 1500
       },
       {
-        "palabra": "cuatro",
-        "inicioMs": 2780,
-        "finMs": 3020
+        "palabra": "ciencia",
+        "inicioMs": 1500,
+        "finMs": 1800
       },
       {
-        "palabra": "mil",
-        "inicioMs": 3020,
-        "finMs": 3280
+        "palabra": "ficción",
+        "inicioMs": 1800,
+        "finMs": 2260
       },
       {
-        "palabra": "millones",
-        "inicioMs": 3280,
-        "finMs": 3520
+        "palabra": "es",
+        "inicioMs": 2360,
+        "finMs": 2460
+      },
+      {
+        "palabra": "una",
+        "inicioMs": 2460,
+        "finMs": 2600
+      },
+      {
+        "palabra": "consecuencia",
+        "inicioMs": 2600,
+        "finMs": 3140
+      },
+      {
+        "palabra": "física",
+        "inicioMs": 3140,
+        "finMs": 3440
+      },
+      {
+        "palabra": "comprobada",
+        "inicioMs": 3440,
+        "finMs": 4020
       },
       {
         "palabra": "de",
-        "inicioMs": 3520,
-        "finMs": 3660
+        "inicioMs": 4020,
+        "finMs": 4160
       },
       {
-        "palabra": "toneladas",
-        "inicioMs": 3660,
-        "finMs": 4120
+        "palabra": "la",
+        "inicioMs": 4160,
+        "finMs": 4280
+      },
+      {
+        "palabra": "Relatividad",
+        "inicioMs": 4280,
+        "finMs": 4800
+      },
+      {
+        "palabra": "Especial",
+        "inicioMs": 4800,
+        "finMs": 5200
+      },
+      {
+        "palabra": "de",
+        "inicioMs": 5200,
+        "finMs": 5440
+      },
+      {
+        "palabra": "Albert",
+        "inicioMs": 5440,
+        "finMs": 5720
+      },
+      {
+        "palabra": "Einstein",
+        "inicioMs": 5720,
+        "finMs": 6080
       }
     ]
   },
   "escena_3": {
-    "sha256": "2906a204cecfddd5059e05b44dd7eaca7e29b1ea182a58754558c765283d50ef",
-    "texto": "Su gravedad propia es tan brutal que ningún suelo del planeta podría sostenerla.",
+    "sha256": "7403b1dc72092253754c6920720baaefac445b12ecd827f5e83ac880b7c5f4e0",
+    "pipelineVersion": "v3_sentence_tailcut",
+    "texto": "En nuestro cosmos, la velocidad de la luz en el vacío es un límite absoluto e insuperable: trescientos mil kilómetros por segundo.",
     "voiceConds": "alex.conds.pt",
-    "duracionSegundos": 4.09,
+    "duracionSegundos": 6.802,
     "palabras": [
       {
-        "palabra": "Su",
+        "palabra": "En",
         "inicioMs": 0,
-        "finMs": 160
+        "finMs": 200
       },
       {
-        "palabra": "gravedad",
-        "inicioMs": 160,
-        "finMs": 520
+        "palabra": "nuestro",
+        "inicioMs": 200,
+        "finMs": 440
       },
       {
-        "palabra": "propia",
-        "inicioMs": 520,
-        "finMs": 800
+        "palabra": "cosmos",
+        "inicioMs": 440,
+        "finMs": 880
       },
       {
-        "palabra": "es",
-        "inicioMs": 800,
-        "finMs": 1060
+        "palabra": "la",
+        "inicioMs": 980,
+        "finMs": 1040
       },
       {
-        "palabra": "tan",
-        "inicioMs": 1060,
-        "finMs": 1180
+        "palabra": "velocidad",
+        "inicioMs": 1040,
+        "finMs": 1360
       },
       {
-        "palabra": "brutal",
-        "inicioMs": 1180,
-        "finMs": 1420
+        "palabra": "de",
+        "inicioMs": 1360,
+        "finMs": 1600
       },
       {
-        "palabra": "que",
-        "inicioMs": 1420,
+        "palabra": "la",
+        "inicioMs": 1600,
         "finMs": 1680
       },
       {
-        "palabra": "ningún",
+        "palabra": "luz",
         "inicioMs": 1680,
-        "finMs": 1940
+        "finMs": 1820
       },
       {
-        "palabra": "suelo",
-        "inicioMs": 1940,
-        "finMs": 2280
+        "palabra": "en",
+        "inicioMs": 1820,
+        "finMs": 1980
       },
       {
-        "palabra": "del",
-        "inicioMs": 2280,
-        "finMs": 2420
+        "palabra": "el",
+        "inicioMs": 1980,
+        "finMs": 2080
       },
       {
-        "palabra": "planeta",
-        "inicioMs": 2420,
-        "finMs": 2740
+        "palabra": "vacío",
+        "inicioMs": 2080,
+        "finMs": 2480
       },
       {
-        "palabra": "podría",
-        "inicioMs": 2740,
-        "finMs": 3140
+        "palabra": "es",
+        "inicioMs": 2480,
+        "finMs": 2700
       },
       {
-        "palabra": "sostenerla",
-        "inicioMs": 3140,
-        "finMs": 3740
+        "palabra": "un",
+        "inicioMs": 2700,
+        "finMs": 2800
+      },
+      {
+        "palabra": "límite",
+        "inicioMs": 2800,
+        "finMs": 3120
+      },
+      {
+        "palabra": "absoluto",
+        "inicioMs": 3120,
+        "finMs": 3680
+      },
+      {
+        "palabra": "e",
+        "inicioMs": 3680,
+        "finMs": 3720
+      },
+      {
+        "palabra": "insuperable",
+        "inicioMs": 3720,
+        "finMs": 4340
+      },
+      {
+        "palabra": "trescientos",
+        "inicioMs": 4600,
+        "finMs": 5000
+      },
+      {
+        "palabra": "mil",
+        "inicioMs": 5000,
+        "finMs": 5300
+      },
+      {
+        "palabra": "kilómetros",
+        "inicioMs": 5300,
+        "finMs": 5720
+      },
+      {
+        "palabra": "por",
+        "inicioMs": 5720,
+        "finMs": 5960
+      },
+      {
+        "palabra": "segundo",
+        "inicioMs": 5960,
+        "finMs": 6300
       }
     ]
   },
   "escena_4": {
-    "sha256": "829e4dc251c3a5cbefaddf0585a4bdb3e20d9c5b7ce3e313428be3f4dbbfc465",
-    "texto": "Al instante perforaría tu casa y la corteza terrestre cayendo directo hacia el núcleo.",
+    "sha256": "1689fe4da88bcb3ab51e366a9f0c29967e72638a6b1121af188039601f8c4f17",
+    "pipelineVersion": "v3_sentence_tailcut",
+    "texto": "Para que la velocidad de la luz sea idéntica para todos los observadores en movimiento, lo que debe deformarse es el tiempo mismo.",
     "voiceConds": "alex.conds.pt",
-    "duracionSegundos": 4.186,
+    "duracionSegundos": 6.394,
+    "palabras": [
+      {
+        "palabra": "Para",
+        "inicioMs": 0,
+        "finMs": 200
+      },
+      {
+        "palabra": "que",
+        "inicioMs": 200,
+        "finMs": 340
+      },
+      {
+        "palabra": "la",
+        "inicioMs": 340,
+        "finMs": 440
+      },
+      {
+        "palabra": "velocidad",
+        "inicioMs": 440,
+        "finMs": 720
+      },
+      {
+        "palabra": "de",
+        "inicioMs": 720,
+        "finMs": 940
+      },
+      {
+        "palabra": "la",
+        "inicioMs": 940,
+        "finMs": 1040
+      },
+      {
+        "palabra": "luz",
+        "inicioMs": 1040,
+        "finMs": 1180
+      },
+      {
+        "palabra": "sea",
+        "inicioMs": 1180,
+        "finMs": 1380
+      },
+      {
+        "palabra": "idéntica",
+        "inicioMs": 1380,
+        "finMs": 1900
+      },
+      {
+        "palabra": "para",
+        "inicioMs": 1900,
+        "finMs": 2060
+      },
+      {
+        "palabra": "todos",
+        "inicioMs": 2060,
+        "finMs": 2280
+      },
+      {
+        "palabra": "los",
+        "inicioMs": 2280,
+        "finMs": 2460
+      },
+      {
+        "palabra": "observadores",
+        "inicioMs": 2460,
+        "finMs": 3000
+      },
+      {
+        "palabra": "en",
+        "inicioMs": 3000,
+        "finMs": 3180
+      },
+      {
+        "palabra": "movimiento",
+        "inicioMs": 3180,
+        "finMs": 3720
+      },
+      {
+        "palabra": "lo",
+        "inicioMs": 3880,
+        "finMs": 3940
+      },
+      {
+        "palabra": "que",
+        "inicioMs": 3940,
+        "finMs": 4060
+      },
+      {
+        "palabra": "debe",
+        "inicioMs": 4060,
+        "finMs": 4220
+      },
+      {
+        "palabra": "deformarse",
+        "inicioMs": 4220,
+        "finMs": 4840
+      },
+      {
+        "palabra": "es",
+        "inicioMs": 4840,
+        "finMs": 5140
+      },
+      {
+        "palabra": "el",
+        "inicioMs": 5140,
+        "finMs": 5260
+      },
+      {
+        "palabra": "tiempo",
+        "inicioMs": 5260,
+        "finMs": 5520
+      },
+      {
+        "palabra": "mismo",
+        "inicioMs": 5520,
+        "finMs": 5900
+      }
+    ]
+  },
+  "escena_5": {
+    "sha256": "1ad9d4f412660228158d1ad1aaa18695abff48ed7d341a12d41e0e9e7d182871",
+    "pipelineVersion": "v3_sentence_tailcut",
+    "texto": "A medida que tu nave espacial se aproxima a la velocidad de la luz, el tiempo a bordo se ralentiza mediante dilatación cinemática.",
+    "voiceConds": "alex.conds.pt",
+    "duracionSegundos": 7.162,
+    "palabras": [
+      {
+        "palabra": "A",
+        "inicioMs": 0,
+        "finMs": 200
+      },
+      {
+        "palabra": "medida",
+        "inicioMs": 200,
+        "finMs": 380
+      },
+      {
+        "palabra": "que",
+        "inicioMs": 380,
+        "finMs": 680
+      },
+      {
+        "palabra": "tu",
+        "inicioMs": 680,
+        "finMs": 800
+      },
+      {
+        "palabra": "nave",
+        "inicioMs": 800,
+        "finMs": 1000
+      },
+      {
+        "palabra": "espacial",
+        "inicioMs": 1000,
+        "finMs": 1680
+      },
+      {
+        "palabra": "se",
+        "inicioMs": 1680,
+        "finMs": 1940
+      },
+      {
+        "palabra": "aproxima",
+        "inicioMs": 1940,
+        "finMs": 2500
+      },
+      {
+        "palabra": "a",
+        "inicioMs": 2500,
+        "finMs": 2600
+      },
+      {
+        "palabra": "la",
+        "inicioMs": 2600,
+        "finMs": 2660
+      },
+      {
+        "palabra": "velocidad",
+        "inicioMs": 2660,
+        "finMs": 2940
+      },
+      {
+        "palabra": "de",
+        "inicioMs": 2940,
+        "finMs": 3220
+      },
+      {
+        "palabra": "la",
+        "inicioMs": 3220,
+        "finMs": 3320
+      },
+      {
+        "palabra": "luz",
+        "inicioMs": 3320,
+        "finMs": 3520
+      },
+      {
+        "palabra": "el",
+        "inicioMs": 3620,
+        "finMs": 3700
+      },
+      {
+        "palabra": "tiempo",
+        "inicioMs": 3700,
+        "finMs": 3980
+      },
+      {
+        "palabra": "a",
+        "inicioMs": 3980,
+        "finMs": 4120
+      },
+      {
+        "palabra": "bordo",
+        "inicioMs": 4120,
+        "finMs": 4400
+      },
+      {
+        "palabra": "se",
+        "inicioMs": 4400,
+        "finMs": 4560
+      },
+      {
+        "palabra": "ralentiza",
+        "inicioMs": 4560,
+        "finMs": 5160
+      },
+      {
+        "palabra": "mediante",
+        "inicioMs": 5160,
+        "finMs": 5540
+      },
+      {
+        "palabra": "dilatación",
+        "inicioMs": 5540,
+        "finMs": 5660
+      },
+      {
+        "palabra": "cinemática",
+        "inicioMs": 5660,
+        "finMs": 5760
+      }
+    ]
+  },
+  "escena_6": {
+    "sha256": "29ace0d5955fa3b612dde68746b617f1e7f2c665f4b06a15e61f937dca0c50ef",
+    "pipelineVersion": "v3_sentence_tailcut",
+    "texto": "Al viajar al noventa y nueve por ciento de la luz, el factor de Lorentz llega a siete. ¡El reloj corre siete veces más despacio!",
+    "voiceConds": "alex.conds.pt",
+    "duracionSegundos": 6.37,
     "palabras": [
       {
         "palabra": "Al",
@@ -255,298 +627,719 @@
         "finMs": 200
       },
       {
-        "palabra": "instante",
+        "palabra": "viajar",
         "inicioMs": 200,
-        "finMs": 600
-      },
-      {
-        "palabra": "perforaría",
-        "inicioMs": 660,
-        "finMs": 1080
-      },
-      {
-        "palabra": "tu",
-        "inicioMs": 1080,
-        "finMs": 1240
-      },
-      {
-        "palabra": "casa",
-        "inicioMs": 1240,
-        "finMs": 1500
-      },
-      {
-        "palabra": "y",
-        "inicioMs": 1500,
-        "finMs": 1620
-      },
-      {
-        "palabra": "la",
-        "inicioMs": 1620,
-        "finMs": 1700
-      },
-      {
-        "palabra": "corteza",
-        "inicioMs": 1700,
-        "finMs": 2080
-      },
-      {
-        "palabra": "terrestre",
-        "inicioMs": 2080,
-        "finMs": 2560
-      },
-      {
-        "palabra": "cayendo",
-        "inicioMs": 2560,
-        "finMs": 2880
-      },
-      {
-        "palabra": "directo",
-        "inicioMs": 2880,
-        "finMs": 3300
-      },
-      {
-        "palabra": "hacia",
-        "inicioMs": 3300,
-        "finMs": 3420
-      },
-      {
-        "palabra": "el",
-        "inicioMs": 3420,
-        "finMs": 3540
-      },
-      {
-        "palabra": "núcleo",
-        "inicioMs": 3540,
-        "finMs": 3840
-      }
-    ]
-  },
-  "escena_5": {
-    "sha256": "500d55b7913ab0290c3f3e859d8adbf3c660795164e00a3b8f94f63a499197e3",
-    "texto": "Peor aún: al escapar de la presión de su estrella, se expandiría en una explosión colosal.",
-    "voiceConds": "alex.conds.pt",
-    "duracionSegundos": 5.578,
-    "palabras": [
-      {
-        "palabra": "Peor",
-        "inicioMs": 0,
-        "finMs": 440
-      },
-      {
-        "palabra": "aún",
-        "inicioMs": 440,
-        "finMs": 800
+        "finMs": 480
       },
       {
         "palabra": "al",
-        "inicioMs": 1100,
-        "finMs": 1200
+        "inicioMs": 480,
+        "finMs": 580
       },
       {
-        "palabra": "escapar",
-        "inicioMs": 1200,
-        "finMs": 1600
+        "palabra": "noventa",
+        "inicioMs": 580,
+        "finMs": 960
       },
       {
-        "palabra": "de",
-        "inicioMs": 1600,
+        "palabra": "y",
+        "inicioMs": 960,
+        "finMs": 1560
+      },
+      {
+        "palabra": "nueve",
+        "inicioMs": 1560,
         "finMs": 1740
       },
       {
-        "palabra": "la",
+        "palabra": "por",
         "inicioMs": 1740,
-        "finMs": 1860
+        "finMs": 1820
       },
       {
-        "palabra": "presión",
-        "inicioMs": 1860,
-        "finMs": 2180
-      },
-      {
-        "palabra": "de",
-        "inicioMs": 2180,
-        "finMs": 2320
-      },
-      {
-        "palabra": "su",
-        "inicioMs": 2320,
-        "finMs": 2440
-      },
-      {
-        "palabra": "estrella",
-        "inicioMs": 2440,
-        "finMs": 2940
-      },
-      {
-        "palabra": "se",
-        "inicioMs": 3220,
-        "finMs": 3260
-      },
-      {
-        "palabra": "expandiría",
-        "inicioMs": 3260,
-        "finMs": 3940
-      },
-      {
-        "palabra": "en",
-        "inicioMs": 3940,
-        "finMs": 4040
-      },
-      {
-        "palabra": "una",
-        "inicioMs": 4040,
-        "finMs": 4160
-      },
-      {
-        "palabra": "explosión",
-        "inicioMs": 4160,
-        "finMs": 4700
-      },
-      {
-        "palabra": "colosal",
-        "inicioMs": 4700,
-        "finMs": 5240
-      }
-    ]
-  },
-  "escena_6": {
-    "sha256": "853d5b98219ff4ebbac25faa343d5662d7e570aa3161dd36fb357b0eda6b20b4",
-    "texto": "Esa simple cucharadita bastaría para vaporizar gran parte de la superficie de la Tierra.",
-    "voiceConds": "alex.conds.pt",
-    "duracionSegundos": 4.378,
-    "palabras": [
-      {
-        "palabra": "Esa",
-        "inicioMs": 0,
-        "finMs": 300
-      },
-      {
-        "palabra": "simple",
-        "inicioMs": 300,
-        "finMs": 620
-      },
-      {
-        "palabra": "cucharadita",
-        "inicioMs": 620,
-        "finMs": 1220
-      },
-      {
-        "palabra": "bastaría",
-        "inicioMs": 1220,
-        "finMs": 1600
-      },
-      {
-        "palabra": "para",
-        "inicioMs": 1600,
-        "finMs": 1800
-      },
-      {
-        "palabra": "vaporizar",
-        "inicioMs": 1800,
-        "finMs": 2260
-      },
-      {
-        "palabra": "gran",
-        "inicioMs": 2260,
-        "finMs": 2500
-      },
-      {
-        "palabra": "parte",
-        "inicioMs": 2500,
-        "finMs": 2820
+        "palabra": "ciento",
+        "inicioMs": 1820,
+        "finMs": 2040
       },
       {
         "palabra": "de",
-        "inicioMs": 2820,
-        "finMs": 2960
+        "inicioMs": 2220,
+        "finMs": 2300
       },
       {
         "palabra": "la",
-        "inicioMs": 2960,
-        "finMs": 3060
+        "inicioMs": 2300,
+        "finMs": 2520
       },
       {
-        "palabra": "superficie",
-        "inicioMs": 3060,
-        "finMs": 3540
+        "palabra": "luz",
+        "inicioMs": 2520,
+        "finMs": 2700
+      },
+      {
+        "palabra": "el",
+        "inicioMs": 2700,
+        "finMs": 3040
+      },
+      {
+        "palabra": "factor",
+        "inicioMs": 3040,
+        "finMs": 3280
       },
       {
         "palabra": "de",
-        "inicioMs": 3540,
-        "finMs": 3600
+        "inicioMs": 3280,
+        "finMs": 3460
       },
       {
-        "palabra": "la",
-        "inicioMs": 3600,
-        "finMs": 3700
+        "palabra": "Lorentz",
+        "inicioMs": 3460,
+        "finMs": 3680
       },
       {
-        "palabra": "Tierra",
-        "inicioMs": 3700,
-        "finMs": 3900
+        "palabra": "llega",
+        "inicioMs": 3860,
+        "finMs": 3980
+      },
+      {
+        "palabra": "a",
+        "inicioMs": 3980,
+        "finMs": 4300
+      },
+      {
+        "palabra": "siete",
+        "inicioMs": 4300,
+        "finMs": 4540
+      },
+      {
+        "palabra": "El",
+        "inicioMs": 4540,
+        "finMs": 4780
+      },
+      {
+        "palabra": "reloj",
+        "inicioMs": 4780,
+        "finMs": 5080
+      },
+      {
+        "palabra": "corre",
+        "inicioMs": 5080,
+        "finMs": 5320
+      },
+      {
+        "palabra": "siete",
+        "inicioMs": 5320,
+        "finMs": 5440
+      },
+      {
+        "palabra": "veces",
+        "inicioMs": 5440,
+        "finMs": 5880
+      },
+      {
+        "palabra": "más",
+        "inicioMs": 5880,
+        "finMs": 6000
+      },
+      {
+        "palabra": "despacio",
+        "inicioMs": 5880,
+        "finMs": 6000
       }
     ]
   },
   "escena_7": {
-    "sha256": "d6a11330d36d3f39cf5615eb82c062dc75f53b7fa049b5e5888c6a29c76eacf2",
-    "texto": "A veces, la solución estaba frente a ti desde el principio.",
+    "sha256": "3ae27027a73eae6ac50c34aee76fa1b83051222c682fa4aff5302c4f5a752f7a",
+    "pipelineVersion": "v3_sentence_tailcut",
+    "texto": "Para ti dentro de la nave todo se siente normal: tu corazón late igual, lees libros, duermes y cumples cinco años de viaje.",
     "voiceConds": "alex.conds.pt",
-    "duracionSegundos": 4.258,
+    "duracionSegundos": 6.346,
     "palabras": [
       {
-        "palabra": "A",
+        "palabra": "Para",
+        "inicioMs": 0,
+        "finMs": 240
+      },
+      {
+        "palabra": "ti",
+        "inicioMs": 240,
+        "finMs": 400
+      },
+      {
+        "palabra": "dentro",
+        "inicioMs": 480,
+        "finMs": 660
+      },
+      {
+        "palabra": "de",
+        "inicioMs": 660,
+        "finMs": 820
+      },
+      {
+        "palabra": "la",
+        "inicioMs": 820,
+        "finMs": 920
+      },
+      {
+        "palabra": "nave",
+        "inicioMs": 920,
+        "finMs": 1120
+      },
+      {
+        "palabra": "todo",
+        "inicioMs": 1320,
+        "finMs": 1440
+      },
+      {
+        "palabra": "se",
+        "inicioMs": 1440,
+        "finMs": 1620
+      },
+      {
+        "palabra": "siente",
+        "inicioMs": 1620,
+        "finMs": 1860
+      },
+      {
+        "palabra": "normal",
+        "inicioMs": 1860,
+        "finMs": 2220
+      },
+      {
+        "palabra": "tu",
+        "inicioMs": 2380,
+        "finMs": 2460
+      },
+      {
+        "palabra": "corazón",
+        "inicioMs": 2460,
+        "finMs": 2760
+      },
+      {
+        "palabra": "late",
+        "inicioMs": 2760,
+        "finMs": 3140
+      },
+      {
+        "palabra": "igual",
+        "inicioMs": 3140,
+        "finMs": 3600
+      },
+      {
+        "palabra": "lees",
+        "inicioMs": 3720,
+        "finMs": 4060
+      },
+      {
+        "palabra": "libros",
+        "inicioMs": 4160,
+        "finMs": 4500
+      },
+      {
+        "palabra": "duermes",
+        "inicioMs": 4500,
+        "finMs": 4580
+      },
+      {
+        "palabra": "y",
+        "inicioMs": 4580,
+        "finMs": 4920
+      },
+      {
+        "palabra": "cumples",
+        "inicioMs": 4920,
+        "finMs": 5200
+      },
+      {
+        "palabra": "cinco",
+        "inicioMs": 5200,
+        "finMs": 5460
+      },
+      {
+        "palabra": "años",
+        "inicioMs": 5460,
+        "finMs": 5600
+      },
+      {
+        "palabra": "de",
+        "inicioMs": 5600,
+        "finMs": 5880
+      },
+      {
+        "palabra": "viaje",
+        "inicioMs": 5880,
+        "finMs": 6096
+      }
+    ]
+  },
+  "escena_8": {
+    "sha256": "9a75316407cb9df3b759b3d95f60ecba5d3829ec9c64005164ecb3ba274d9bc2",
+    "pipelineVersion": "v3_sentence_tailcut",
+    "texto": "Pero mientras tú vivías esos cinco años en tu camarote, en la Tierra han pasado más de treinta y cinco años terrestres completos.",
+    "voiceConds": "alex.conds.pt",
+    "duracionSegundos": 6.946,
+    "palabras": [
+      {
+        "palabra": "Pero",
+        "inicioMs": 0,
+        "finMs": 240
+      },
+      {
+        "palabra": "mientras",
+        "inicioMs": 240,
+        "finMs": 520
+      },
+      {
+        "palabra": "tú",
+        "inicioMs": 520,
+        "finMs": 740
+      },
+      {
+        "palabra": "vivías",
+        "inicioMs": 740,
+        "finMs": 1100
+      },
+      {
+        "palabra": "esos",
+        "inicioMs": 1100,
+        "finMs": 1360
+      },
+      {
+        "palabra": "cinco",
+        "inicioMs": 1360,
+        "finMs": 1700
+      },
+      {
+        "palabra": "años",
+        "inicioMs": 1700,
+        "finMs": 1980
+      },
+      {
+        "palabra": "en",
+        "inicioMs": 1980,
+        "finMs": 2200
+      },
+      {
+        "palabra": "tu",
+        "inicioMs": 2200,
+        "finMs": 2320
+      },
+      {
+        "palabra": "camarote",
+        "inicioMs": 2320,
+        "finMs": 2820
+      },
+      {
+        "palabra": "en",
+        "inicioMs": 2940,
+        "finMs": 3020
+      },
+      {
+        "palabra": "la",
+        "inicioMs": 3020,
+        "finMs": 3100
+      },
+      {
+        "palabra": "Tierra",
+        "inicioMs": 3100,
+        "finMs": 3420
+      },
+      {
+        "palabra": "han",
+        "inicioMs": 3420,
+        "finMs": 3620
+      },
+      {
+        "palabra": "pasado",
+        "inicioMs": 3620,
+        "finMs": 3900
+      },
+      {
+        "palabra": "más",
+        "inicioMs": 3900,
+        "finMs": 4180
+      },
+      {
+        "palabra": "de",
+        "inicioMs": 4180,
+        "finMs": 4320
+      },
+      {
+        "palabra": "treinta",
+        "inicioMs": 4320,
+        "finMs": 4840
+      },
+      {
+        "palabra": "y",
+        "inicioMs": 4840,
+        "finMs": 5280
+      },
+      {
+        "palabra": "cinco",
+        "inicioMs": 5280,
+        "finMs": 5440
+      },
+      {
+        "palabra": "años",
+        "inicioMs": 5440,
+        "finMs": 5600
+      },
+      {
+        "palabra": "terrestres",
+        "inicioMs": 5600,
+        "finMs": 5780
+      },
+      {
+        "palabra": "completos",
+        "inicioMs": 5780,
+        "finMs": 6480
+      }
+    ]
+  },
+  "escena_9": {
+    "sha256": "3c8e36d5798ef989c2a5764dfbe61723ac18aabbe3e81b53ca021f645210227e",
+    "pipelineVersion": "v3_sentence_tailcut",
+    "texto": "Al aterrizar, tu hermano gemelo tendrá más de sesenta años y arrugas, mientras que tú apenas tienes veinticinco años biológicos.",
+    "voiceConds": "alex.conds.pt",
+    "duracionSegundos": 6.85,
+    "palabras": [
+      {
+        "palabra": "Al",
+        "inicioMs": 0,
+        "finMs": 240
+      },
+      {
+        "palabra": "aterrizar",
+        "inicioMs": 240,
+        "finMs": 760
+      },
+      {
+        "palabra": "tu",
+        "inicioMs": 760,
+        "finMs": 940
+      },
+      {
+        "palabra": "hermano",
+        "inicioMs": 940,
+        "finMs": 1260
+      },
+      {
+        "palabra": "gemelo",
+        "inicioMs": 1260,
+        "finMs": 1580
+      },
+      {
+        "palabra": "tendrá",
+        "inicioMs": 1580,
+        "finMs": 1920
+      },
+      {
+        "palabra": "más",
+        "inicioMs": 1920,
+        "finMs": 2080
+      },
+      {
+        "palabra": "de",
+        "inicioMs": 2080,
+        "finMs": 2240
+      },
+      {
+        "palabra": "sesenta",
+        "inicioMs": 2240,
+        "finMs": 2660
+      },
+      {
+        "palabra": "años",
+        "inicioMs": 2660,
+        "finMs": 2900
+      },
+      {
+        "palabra": "y",
+        "inicioMs": 2900,
+        "finMs": 3040
+      },
+      {
+        "palabra": "arrugas",
+        "inicioMs": 3040,
+        "finMs": 3480
+      },
+      {
+        "palabra": "mientras",
+        "inicioMs": 3720,
+        "finMs": 3920
+      },
+      {
+        "palabra": "que",
+        "inicioMs": 3920,
+        "finMs": 4160
+      },
+      {
+        "palabra": "tú",
+        "inicioMs": 4160,
+        "finMs": 4300
+      },
+      {
+        "palabra": "apenas",
+        "inicioMs": 4300,
+        "finMs": 4520
+      },
+      {
+        "palabra": "tienes",
+        "inicioMs": 4520,
+        "finMs": 4880
+      },
+      {
+        "palabra": "veinticinco",
+        "inicioMs": 4880,
+        "finMs": 5500
+      },
+      {
+        "palabra": "años",
+        "inicioMs": 5500,
+        "finMs": 5720
+      },
+      {
+        "palabra": "biológicos",
+        "inicioMs": 5720,
+        "finMs": 6360
+      }
+    ]
+  },
+  "escena_10": {
+    "sha256": "9eb638d90cb7df865cc149d8d2db0eee6f2edd1270c62806a9efebe78804c794",
+    "pipelineVersion": "v3_sentence_tailcut",
+    "texto": "Viajar a la velocidad de la luz es una máquina para viajar hacia el futuro del universo, sin boleto de regreso al pasado.",
+    "voiceConds": "alex.conds.pt",
+    "duracionSegundos": 5.722,
+    "palabras": [
+      {
+        "palabra": "Viajar",
+        "inicioMs": 0,
+        "finMs": 380
+      },
+      {
+        "palabra": "a",
+        "inicioMs": 380,
+        "finMs": 480
+      },
+      {
+        "palabra": "la",
+        "inicioMs": 480,
+        "finMs": 540
+      },
+      {
+        "palabra": "velocidad",
+        "inicioMs": 540,
+        "finMs": 840
+      },
+      {
+        "palabra": "de",
+        "inicioMs": 840,
+        "finMs": 1060
+      },
+      {
+        "palabra": "la",
+        "inicioMs": 1060,
+        "finMs": 1140
+      },
+      {
+        "palabra": "luz",
+        "inicioMs": 1140,
+        "finMs": 1320
+      },
+      {
+        "palabra": "es",
+        "inicioMs": 1320,
+        "finMs": 1580
+      },
+      {
+        "palabra": "una",
+        "inicioMs": 1580,
+        "finMs": 1720
+      },
+      {
+        "palabra": "máquina",
+        "inicioMs": 1720,
+        "finMs": 2040
+      },
+      {
+        "palabra": "para",
+        "inicioMs": 2040,
+        "finMs": 2280
+      },
+      {
+        "palabra": "viajar",
+        "inicioMs": 2280,
+        "finMs": 2600
+      },
+      {
+        "palabra": "hacia",
+        "inicioMs": 2600,
+        "finMs": 2760
+      },
+      {
+        "palabra": "el",
+        "inicioMs": 2760,
+        "finMs": 2880
+      },
+      {
+        "palabra": "futuro",
+        "inicioMs": 2880,
+        "finMs": 3080
+      },
+      {
+        "palabra": "del",
+        "inicioMs": 3080,
+        "finMs": 3300
+      },
+      {
+        "palabra": "universo",
+        "inicioMs": 3300,
+        "finMs": 3680
+      },
+      {
+        "palabra": "sin",
+        "inicioMs": 3800,
+        "finMs": 3940
+      },
+      {
+        "palabra": "boleto",
+        "inicioMs": 3940,
+        "finMs": 4260
+      },
+      {
+        "palabra": "de",
+        "inicioMs": 4260,
+        "finMs": 4380
+      },
+      {
+        "palabra": "regreso",
+        "inicioMs": 4380,
+        "finMs": 4760
+      },
+      {
+        "palabra": "al",
+        "inicioMs": 4760,
+        "finMs": 4860
+      },
+      {
+        "palabra": "pasado",
+        "inicioMs": 4860,
+        "finMs": 5160
+      }
+    ]
+  },
+  "escena_11": {
+    "sha256": "c8e3e7dcf22a4e02d2d829c2f8cb19d2d35674131ea2690b5937d3ea016c887b",
+    "pipelineVersion": "v3_sentence_tailcut",
+    "texto": "El camaleón no busca ocultarse del mundo: lleva en su piel la pantalla de nanotecnología viva más avanzada del reino animal.",
+    "voiceConds": "alex.conds.pt",
+    "duracionSegundos": 6.106,
+    "palabras": [
+      {
+        "palabra": "El",
         "inicioMs": 0,
         "finMs": 180
       },
       {
-        "palabra": "veces",
+        "palabra": "camaleón",
         "inicioMs": 180,
-        "finMs": 500
+        "finMs": 620
+      },
+      {
+        "palabra": "no",
+        "inicioMs": 620,
+        "finMs": 760
+      },
+      {
+        "palabra": "busca",
+        "inicioMs": 760,
+        "finMs": 1020
+      },
+      {
+        "palabra": "ocultarse",
+        "inicioMs": 1020,
+        "finMs": 1520
+      },
+      {
+        "palabra": "del",
+        "inicioMs": 1520,
+        "finMs": 1700
+      },
+      {
+        "palabra": "mundo",
+        "inicioMs": 1700,
+        "finMs": 2040
+      },
+      {
+        "palabra": "lleva",
+        "inicioMs": 2140,
+        "finMs": 2320
+      },
+      {
+        "palabra": "en",
+        "inicioMs": 2320,
+        "finMs": 2480
+      },
+      {
+        "palabra": "su",
+        "inicioMs": 2480,
+        "finMs": 2620
+      },
+      {
+        "palabra": "piel",
+        "inicioMs": 2620,
+        "finMs": 2720
       },
       {
         "palabra": "la",
-        "inicioMs": 500,
-        "finMs": 940
-      },
-      {
-        "palabra": "solución",
-        "inicioMs": 940,
-        "finMs": 1420
-      },
-      {
-        "palabra": "estaba",
-        "inicioMs": 1420,
-        "finMs": 1880
-      },
-      {
-        "palabra": "frente",
-        "inicioMs": 1880,
-        "finMs": 2120
-      },
-      {
-        "palabra": "a",
-        "inicioMs": 2120,
-        "finMs": 2360
-      },
-      {
-        "palabra": "ti",
-        "inicioMs": 2360,
-        "finMs": 2460
-      },
-      {
-        "palabra": "desde",
-        "inicioMs": 2460,
+        "inicioMs": 2720,
         "finMs": 2800
       },
       {
-        "palabra": "el",
+        "palabra": "pantalla",
         "inicioMs": 2800,
-        "finMs": 3000
+        "finMs": 3120
       },
       {
-        "palabra": "principio",
-        "inicioMs": 3000,
-        "finMs": 3540
+        "palabra": "de",
+        "inicioMs": 3120,
+        "finMs": 3300
+      },
+      {
+        "palabra": "nanotecnología",
+        "inicioMs": 3300,
+        "finMs": 4080
+      },
+      {
+        "palabra": "viva",
+        "inicioMs": 4080,
+        "finMs": 4380
+      },
+      {
+        "palabra": "más",
+        "inicioMs": 4380,
+        "finMs": 4520
+      },
+      {
+        "palabra": "avanzada",
+        "inicioMs": 4520,
+        "finMs": 4960
+      },
+      {
+        "palabra": "del",
+        "inicioMs": 4960,
+        "finMs": 5120
+      },
+      {
+        "palabra": "reino",
+        "inicioMs": 5120,
+        "finMs": 5340
+      },
+      {
+        "palabra": "animal",
+        "inicioMs": 5340,
+        "finMs": 5580
       }
     ]
   }

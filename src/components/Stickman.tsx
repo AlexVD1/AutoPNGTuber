@@ -51,6 +51,8 @@ export interface StickmanProps {
   vibrationOffset?: number;
   /** Forzar si el personaje está hablando o en silencio */
   overrideIsSpeaking?: boolean;
+  /** Halo blanco nítido para contrastar sobre escenarios oscuros (abismo, espacio, noche) */
+  halo?: boolean;
 }
 
 const ALERT_KEYWORDS = [
@@ -86,6 +88,7 @@ export const Stickman: React.FC<StickmanProps> = ({
   headTiltOffset = 0,
   vibrationOffset = 0,
   overrideIsSpeaking,
+  halo = false,
 }) => {
   const frame = useCurrentFrame();
   const { fps } = useVideoConfig();
@@ -257,6 +260,9 @@ export const Stickman: React.FC<StickmanProps> = ({
           transform: `scale(${finalScaleX}, ${finalScaleY})`,
           transformOrigin: "center bottom",
           flexShrink: 0,
+          filter: halo
+            ? "drop-shadow(0px 0px 4px #FFFFFF) drop-shadow(0px 0px 2px #FFFFFF)"
+            : undefined,
         }}
       >
         {usePngFile && catalogItem ? (
