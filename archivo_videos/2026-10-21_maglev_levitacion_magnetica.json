@@ -2,7 +2,19 @@
   "meta": {
     "id": "maglev_levitacion_magnetica",
     "slug": "maglev_levitacion_magnetica",
-    "temaResumen": "¿Cómo es posible que un imán pueda levitar un tren a 600 km/h sin tocar las vías?"
+    "temaResumen": "¿Cómo es posible que un imán pueda levitar un tren a 600 km/h sin tocar las vías? Superconductores y Efecto Meissner",
+    "titulo": "¿Cómo levita un tren a 600 km/h sin tocar las vías?",
+    "titulo_corto": "TREN MAGLEV 600KMH",
+    "gancho": "¿Te imaginas viajar en un tren de cientos de toneladas que no toca las vías, sino que flota flotando en el aire a más de seiscientos kilómetros por hora?",
+    "fuentes": [
+      "Railway Technical Research Institute (JR Central SC-Maglev Test Reports)",
+      "Physical Review B: Flux Pinning & The Meissner-Ochsenfeld Effect in High-Tc Superconductors"
+    ],
+    "genero": "SCIENCE",
+    "duracionObjetivo": [
+      62,
+      110
+    ]
   },
   "escenas": [
     {
@@ -47,117 +59,117 @@
           "habla": true
         }
       ],
-      "duracionSegundos": 5.77,
+      "duracionSegundos": 6.298,
       "palabras": [
         {
           "palabra": "Sabías",
           "inicioMs": 0,
-          "finMs": 440
+          "finMs": 460
         },
         {
           "palabra": "que",
-          "inicioMs": 440,
-          "finMs": 580
+          "inicioMs": 460,
+          "finMs": 620
         },
         {
           "palabra": "en",
-          "inicioMs": 580,
-          "finMs": 680
+          "inicioMs": 620,
+          "finMs": 700
         },
         {
           "palabra": "Japón",
-          "inicioMs": 680,
-          "finMs": 980
+          "inicioMs": 700,
+          "finMs": 1060
         },
         {
           "palabra": "existe",
-          "inicioMs": 980,
-          "finMs": 1200
+          "inicioMs": 1060,
+          "finMs": 1380
         },
         {
           "palabra": "un",
-          "inicioMs": 1200,
-          "finMs": 1440
+          "inicioMs": 1380,
+          "finMs": 1640
         },
         {
           "palabra": "tren",
-          "inicioMs": 1440,
-          "finMs": 1600
+          "inicioMs": 1640,
+          "finMs": 1840
         },
         {
           "palabra": "que",
-          "inicioMs": 1600,
-          "finMs": 1740
+          "inicioMs": 1840,
+          "finMs": 2000
         },
         {
           "palabra": "flota",
-          "inicioMs": 1740,
-          "finMs": 2040
+          "inicioMs": 2000,
+          "finMs": 2320
         },
         {
           "palabra": "sobre",
-          "inicioMs": 2040,
-          "finMs": 2260
+          "inicioMs": 2320,
+          "finMs": 2560
         },
         {
           "palabra": "las",
-          "inicioMs": 2260,
-          "finMs": 2460
+          "inicioMs": 2560,
+          "finMs": 2760
         },
         {
           "palabra": "vías",
-          "inicioMs": 2460,
-          "finMs": 2740
-        },
-        {
-          "palabra": "a",
-          "inicioMs": 2740,
-          "finMs": 2840
-        },
-        {
-          "palabra": "más",
-          "inicioMs": 2840,
-          "finMs": 2960
-        },
-        {
-          "palabra": "de",
-          "inicioMs": 2960,
+          "inicioMs": 2760,
           "finMs": 3080
         },
         {
-          "palabra": "seiscientos",
+          "palabra": "a",
           "inicioMs": 3080,
+          "finMs": 3200
+        },
+        {
+          "palabra": "más",
+          "inicioMs": 3200,
           "finMs": 3320
         },
         {
-          "palabra": "kilómetros",
+          "palabra": "de",
           "inicioMs": 3320,
-          "finMs": 3980
+          "finMs": 3460
         },
         {
-          "palabra": "por",
-          "inicioMs": 3980,
-          "finMs": 4220
+          "palabra": "seiscientos",
+          "inicioMs": 3460,
+          "finMs": 3820
         },
         {
-          "palabra": "hora",
-          "inicioMs": 4220,
+          "palabra": "kilómetros",
+          "inicioMs": 3820,
           "finMs": 4420
         },
         {
-          "palabra": "sin",
+          "palabra": "por",
           "inicioMs": 4420,
-          "finMs": 4600
+          "finMs": 4640
+        },
+        {
+          "palabra": "hora",
+          "inicioMs": 4640,
+          "finMs": 4840
+        },
+        {
+          "palabra": "sin",
+          "inicioMs": 4840,
+          "finMs": 5060
         },
         {
           "palabra": "tocarlas",
-          "inicioMs": 4600,
-          "finMs": 4780
+          "inicioMs": 5060,
+          "finMs": 5300
         },
         {
           "palabra": "jamás",
-          "inicioMs": 4780,
-          "finMs": 5000
+          "inicioMs": 5300,
+          "finMs": 5520
         }
       ]
     },
@@ -193,7 +205,7 @@
           "habla": true
         }
       ],
-      "duracionSegundos": 8.05,
+      "duracionSegundos": 8.986,
       "palabras": [
         {
           "palabra": "Se",
@@ -208,102 +220,102 @@
         {
           "palabra": "tren",
           "inicioMs": 400,
-          "finMs": 680
+          "finMs": 720
         },
         {
           "palabra": "Maglev",
-          "inicioMs": 680,
-          "finMs": 1120
+          "inicioMs": 720,
+          "finMs": 1160
         },
         {
           "palabra": "y",
-          "inicioMs": 1120,
-          "finMs": 1300
+          "inicioMs": 1160,
+          "finMs": 1360
         },
         {
           "palabra": "funciona",
-          "inicioMs": 1300,
-          "finMs": 1620
+          "inicioMs": 1360,
+          "finMs": 1720
         },
         {
           "palabra": "mediante",
-          "inicioMs": 1620,
-          "finMs": 1940
+          "inicioMs": 1720,
+          "finMs": 2120
         },
         {
           "palabra": "levitación",
-          "inicioMs": 1940,
-          "finMs": 2420
+          "inicioMs": 2120,
+          "finMs": 2640
         },
         {
           "palabra": "magnética",
-          "inicioMs": 2420,
-          "finMs": 2980
+          "inicioMs": 2640,
+          "finMs": 3300
         },
         {
           "palabra": "el",
-          "inicioMs": 3460,
-          "finMs": 3620
+          "inicioMs": 3680,
+          "finMs": 3920
         },
         {
           "palabra": "tren",
-          "inicioMs": 3620,
-          "finMs": 3860
+          "inicioMs": 3920,
+          "finMs": 4160
         },
         {
           "palabra": "flota",
-          "inicioMs": 3860,
-          "finMs": 4140
+          "inicioMs": 4160,
+          "finMs": 4520
         },
         {
           "palabra": "sobre",
-          "inicioMs": 4140,
-          "finMs": 4400
+          "inicioMs": 4520,
+          "finMs": 4820
         },
         {
           "palabra": "las",
-          "inicioMs": 4400,
-          "finMs": 4640
+          "inicioMs": 4820,
+          "finMs": 5080
         },
         {
           "palabra": "vías",
-          "inicioMs": 4640,
-          "finMs": 4900
+          "inicioMs": 5080,
+          "finMs": 5380
         },
         {
           "palabra": "gracias",
-          "inicioMs": 4900,
-          "finMs": 5280
+          "inicioMs": 5380,
+          "finMs": 5740
         },
         {
           "palabra": "a",
-          "inicioMs": 5280,
-          "finMs": 5460
+          "inicioMs": 5740,
+          "finMs": 5920
         },
         {
           "palabra": "la",
-          "inicioMs": 5460,
-          "finMs": 5560
+          "inicioMs": 5920,
+          "finMs": 6020
         },
         {
           "palabra": "repulsión",
-          "inicioMs": 5560,
-          "finMs": 6040
+          "inicioMs": 6020,
+          "finMs": 6600
         },
         {
           "palabra": "entre",
-          "inicioMs": 6040,
-          "finMs": 6300
+          "inicioMs": 6600,
+          "finMs": 6980
         },
         {
           "palabra": "imanes",
-          "inicioMs": 6300,
-          "finMs": 6580
+          "inicioMs": 6980,
+          "finMs": 7380
         },
         {
           "palabra": "superconductores",
-          "inicioMs": 6580,
-          "finMs": 7580
+          "inicioMs": 7380,
+          "finMs": 8520
         }
       ]
     },
@@ -340,92 +352,92 @@
           "habla": true
         }
       ],
-      "duracionSegundos": 6.418,
+      "duracionSegundos": 6.898,
       "palabras": [
         {
           "palabra": "El",
           "inicioMs": 0,
-          "finMs": 200
+          "finMs": 180
         },
         {
           "palabra": "secreto",
-          "inicioMs": 200,
-          "finMs": 600
+          "inicioMs": 180,
+          "finMs": 580
         },
         {
           "palabra": "está",
-          "inicioMs": 600,
-          "finMs": 740
+          "inicioMs": 580,
+          "finMs": 760
         },
         {
           "palabra": "en",
-          "inicioMs": 740,
+          "inicioMs": 760,
           "finMs": 820
         },
         {
           "palabra": "los",
           "inicioMs": 820,
-          "finMs": 900
+          "finMs": 880
         },
         {
           "palabra": "superconductores",
-          "inicioMs": 900,
-          "finMs": 1740
+          "inicioMs": 880,
+          "finMs": 1700
         },
         {
           "palabra": "materiales",
-          "inicioMs": 1940,
-          "finMs": 2380
-        },
-        {
-          "palabra": "que",
-          "inicioMs": 2380,
+          "inicioMs": 1880,
           "finMs": 2460
         },
         {
-          "palabra": "a",
+          "palabra": "que",
           "inicioMs": 2460,
-          "finMs": 2540
+          "finMs": 2600
+        },
+        {
+          "palabra": "a",
+          "inicioMs": 2600,
+          "finMs": 2680
         },
         {
           "palabra": "temperaturas",
-          "inicioMs": 2540,
-          "finMs": 2940
+          "inicioMs": 2680,
+          "finMs": 3260
         },
         {
           "palabra": "extremadamente",
-          "inicioMs": 2940,
-          "finMs": 3620
+          "inicioMs": 3260,
+          "finMs": 4000
         },
         {
           "palabra": "bajas",
-          "inicioMs": 3620,
-          "finMs": 4080
+          "inicioMs": 4000,
+          "finMs": 4520
         },
         {
           "palabra": "pierden",
-          "inicioMs": 4080,
-          "finMs": 4460
+          "inicioMs": 4520,
+          "finMs": 4900
         },
         {
           "palabra": "toda",
-          "inicioMs": 4460,
-          "finMs": 4760
+          "inicioMs": 4900,
+          "finMs": 5140
         },
         {
           "palabra": "su",
-          "inicioMs": 4760,
-          "finMs": 4960
+          "inicioMs": 5140,
+          "finMs": 5340
         },
         {
           "palabra": "resistencia",
-          "inicioMs": 4960,
-          "finMs": 5500
+          "inicioMs": 5340,
+          "finMs": 5920
         },
         {
           "palabra": "eléctrica",
-          "inicioMs": 5500,
-          "finMs": 5960
+          "inicioMs": 5920,
+          "finMs": 6420
         }
       ]
     },
@@ -463,127 +475,127 @@
           "habla": true
         }
       ],
-      "duracionSegundos": 9.73,
+      "duracionSegundos": 9.682,
       "palabras": [
         {
           "palabra": "Al",
           "inicioMs": 0,
-          "finMs": 200
+          "finMs": 240
         },
         {
           "palabra": "enfriar",
-          "inicioMs": 200,
-          "finMs": 600
+          "inicioMs": 240,
+          "finMs": 580
         },
         {
           "palabra": "los",
-          "inicioMs": 600,
-          "finMs": 760
+          "inicioMs": 580,
+          "finMs": 780
         },
         {
           "palabra": "imanes",
-          "inicioMs": 760,
-          "finMs": 1040
+          "inicioMs": 780,
+          "finMs": 1120
         },
         {
           "palabra": "del",
-          "inicioMs": 1040,
-          "finMs": 1260
+          "inicioMs": 1120,
+          "finMs": 1300
         },
         {
           "palabra": "tren",
-          "inicioMs": 1260,
-          "finMs": 1500
+          "inicioMs": 1300,
+          "finMs": 1580
         },
         {
           "palabra": "a",
-          "inicioMs": 1740,
-          "finMs": 1800
+          "inicioMs": 1800,
+          "finMs": 1860
         },
         {
           "palabra": "menos",
-          "inicioMs": 1800,
-          "finMs": 2000
+          "inicioMs": 1860,
+          "finMs": 2080
         },
         {
           "palabra": "de",
-          "inicioMs": 2000,
-          "finMs": 2180
+          "inicioMs": 2080,
+          "finMs": 2300
         },
         {
           "palabra": "doscientos",
-          "inicioMs": 2180,
-          "finMs": 2580
+          "inicioMs": 2300,
+          "finMs": 2700
         },
         {
           "palabra": "grados",
-          "inicioMs": 2580,
-          "finMs": 3040
+          "inicioMs": 2700,
+          "finMs": 3180
         },
         {
           "palabra": "bajo",
-          "inicioMs": 3040,
-          "finMs": 3220
+          "inicioMs": 3180,
+          "finMs": 3340
         },
         {
           "palabra": "cero",
-          "inicioMs": 3220,
-          "finMs": 3640
+          "inicioMs": 3340,
+          "finMs": 3780
         },
         {
           "palabra": "se",
-          "inicioMs": 3960,
+          "inicioMs": 3980,
           "finMs": 4060
         },
         {
           "palabra": "convierten",
           "inicioMs": 4060,
-          "finMs": 4520
+          "finMs": 4540
         },
         {
           "palabra": "en",
-          "inicioMs": 4520,
-          "finMs": 4700
+          "inicioMs": 4540,
+          "finMs": 4680
         },
         {
           "palabra": "superconductores",
-          "inicioMs": 4700,
-          "finMs": 5540
+          "inicioMs": 4680,
+          "finMs": 5420
         },
         {
           "palabra": "perfectos",
-          "inicioMs": 5540,
-          "finMs": 6240
+          "inicioMs": 5420,
+          "finMs": 6120
         },
         {
           "palabra": "que",
-          "inicioMs": 6240,
-          "finMs": 6340
+          "inicioMs": 6120,
+          "finMs": 6220
         },
         {
           "palabra": "generan",
-          "inicioMs": 6340,
-          "finMs": 6780
+          "inicioMs": 6220,
+          "finMs": 6600
         },
         {
           "palabra": "campos",
-          "inicioMs": 6780,
-          "finMs": 7180
+          "inicioMs": 6600,
+          "finMs": 7060
         },
         {
           "palabra": "magnéticos",
-          "inicioMs": 7180,
-          "finMs": 7800
+          "inicioMs": 7060,
+          "finMs": 7680
         },
         {
           "palabra": "increíblemente",
-          "inicioMs": 7800,
-          "finMs": 8560
+          "inicioMs": 7680,
+          "finMs": 8520
         },
         {
           "palabra": "intensos",
-          "inicioMs": 8560,
-          "finMs": 9260
+          "inicioMs": 8520,
+          "finMs": 9220
         }
       ]
     },
@@ -619,127 +631,127 @@
           "habla": true
         }
       ],
-      "duracionSegundos": 7.786,
+      "duracionSegundos": 7.738,
       "palabras": [
         {
           "palabra": "Estos",
           "inicioMs": 0,
-          "finMs": 280
+          "finMs": 400
         },
         {
           "palabra": "campos",
-          "inicioMs": 280,
-          "finMs": 580
+          "inicioMs": 400,
+          "finMs": 720
         },
         {
           "palabra": "magnéticos",
-          "inicioMs": 580,
-          "finMs": 1160
+          "inicioMs": 720,
+          "finMs": 1200
         },
         {
           "palabra": "interactúan",
-          "inicioMs": 1160,
-          "finMs": 1760
+          "inicioMs": 1200,
+          "finMs": 1780
         },
         {
           "palabra": "con",
-          "inicioMs": 1760,
-          "finMs": 1880
+          "inicioMs": 1780,
+          "finMs": 1900
         },
         {
           "palabra": "las",
-          "inicioMs": 1880,
-          "finMs": 1980
+          "inicioMs": 1900,
+          "finMs": 2040
         },
         {
           "palabra": "bobinas",
-          "inicioMs": 1980,
-          "finMs": 2340
+          "inicioMs": 2040,
+          "finMs": 2380
         },
         {
           "palabra": "de",
-          "inicioMs": 2340,
-          "finMs": 2400
+          "inicioMs": 2380,
+          "finMs": 2440
         },
         {
           "palabra": "las",
-          "inicioMs": 2400,
-          "finMs": 2820
+          "inicioMs": 2440,
+          "finMs": 2540
         },
         {
           "palabra": "vías",
-          "inicioMs": 3000,
-          "finMs": 3420
+          "inicioMs": 2540,
+          "finMs": 2920
         },
         {
           "palabra": "creando",
-          "inicioMs": 3420,
-          "finMs": 3640
+          "inicioMs": 3200,
+          "finMs": 3580
         },
         {
           "palabra": "una",
-          "inicioMs": 3640,
-          "finMs": 3960
+          "inicioMs": 3580,
+          "finMs": 3760
         },
         {
           "palabra": "fuerza",
-          "inicioMs": 3960,
-          "finMs": 4120
+          "inicioMs": 3760,
+          "finMs": 4060
         },
         {
           "palabra": "de",
-          "inicioMs": 4120,
-          "finMs": 4660
+          "inicioMs": 4060,
+          "finMs": 4240
         },
         {
           "palabra": "repulsión",
-          "inicioMs": 4660,
-          "finMs": 4780
+          "inicioMs": 4240,
+          "finMs": 4740
         },
         {
           "palabra": "que",
-          "inicioMs": 4780,
-          "finMs": 5180
+          "inicioMs": 4740,
+          "finMs": 4900
         },
         {
           "palabra": "levanta",
-          "inicioMs": 5180,
-          "finMs": 5280
+          "inicioMs": 4900,
+          "finMs": 5260
         },
         {
           "palabra": "el",
-          "inicioMs": 5280,
-          "finMs": 5480
+          "inicioMs": 5260,
+          "finMs": 5340
         },
         {
           "palabra": "tren",
-          "inicioMs": 5480,
-          "finMs": 5820
+          "inicioMs": 5340,
+          "finMs": 5540
         },
         {
           "palabra": "unos",
-          "inicioMs": 5820,
-          "finMs": 6140
+          "inicioMs": 5540,
+          "finMs": 5860
         },
         {
           "palabra": "diez",
-          "inicioMs": 6140,
-          "finMs": 6680
+          "inicioMs": 5860,
+          "finMs": 6100
         },
         {
           "palabra": "centímetros",
-          "inicioMs": 6680,
-          "finMs": 6960
+          "inicioMs": 6100,
+          "finMs": 6660
         },
         {
           "palabra": "del",
-          "inicioMs": 6960,
-          "finMs": 7340
+          "inicioMs": 6660,
+          "finMs": 6900
         },
         {
           "palabra": "suelo",
-          "inicioMs": 7340,
-          "finMs": 7536
+          "inicioMs": 6900,
+          "finMs": 7240
         }
       ]
     },
@@ -775,127 +787,127 @@
           "habla": true
         }
       ],
-      "duracionSegundos": 8.146,
+      "duracionSegundos": 8.122,
       "palabras": [
         {
           "palabra": "Al",
           "inicioMs": 0,
-          "finMs": 200
+          "finMs": 220
         },
         {
           "palabra": "no",
-          "inicioMs": 200,
-          "finMs": 340
+          "inicioMs": 220,
+          "finMs": 380
         },
         {
           "palabra": "haber",
-          "inicioMs": 340,
-          "finMs": 460
+          "inicioMs": 380,
+          "finMs": 540
         },
         {
           "palabra": "contacto",
-          "inicioMs": 460,
-          "finMs": 960
+          "inicioMs": 540,
+          "finMs": 1100
         },
         {
           "palabra": "físico",
-          "inicioMs": 960,
-          "finMs": 1360
+          "inicioMs": 1100,
+          "finMs": 1500
         },
         {
           "palabra": "entre",
-          "inicioMs": 1360,
-          "finMs": 1540
+          "inicioMs": 1500,
+          "finMs": 1720
         },
         {
           "palabra": "el",
-          "inicioMs": 1540,
-          "finMs": 1640
+          "inicioMs": 1720,
+          "finMs": 1840
         },
         {
           "palabra": "tren",
-          "inicioMs": 1640,
-          "finMs": 1800
+          "inicioMs": 1840,
+          "finMs": 2080
         },
         {
           "palabra": "y",
-          "inicioMs": 1800,
-          "finMs": 1920
+          "inicioMs": 2080,
+          "finMs": 2200
         },
         {
           "palabra": "las",
-          "inicioMs": 1920,
-          "finMs": 2020
+          "inicioMs": 2200,
+          "finMs": 2320
         },
         {
           "palabra": "vías",
-          "inicioMs": 2020,
-          "finMs": 2300
+          "inicioMs": 2320,
+          "finMs": 2720
         },
         {
           "palabra": "no",
-          "inicioMs": 2300,
-          "finMs": 2540
+          "inicioMs": 2820,
+          "finMs": 2900
         },
         {
           "palabra": "existe",
-          "inicioMs": 2540,
-          "finMs": 2800
+          "inicioMs": 2900,
+          "finMs": 3180
         },
         {
           "palabra": "fricción",
-          "inicioMs": 2800,
-          "finMs": 3440
-        },
-        {
-          "palabra": "lo",
-          "inicioMs": 3660,
+          "inicioMs": 3180,
           "finMs": 3820
         },
         {
+          "palabra": "lo",
+          "inicioMs": 4020,
+          "finMs": 4120
+        },
+        {
           "palabra": "que",
-          "inicioMs": 3820,
-          "finMs": 3980
+          "inicioMs": 4120,
+          "finMs": 4220
         },
         {
           "palabra": "permite",
-          "inicioMs": 3980,
-          "finMs": 4300
+          "inicioMs": 4220,
+          "finMs": 4480
         },
         {
           "palabra": "alcanzar",
-          "inicioMs": 4300,
-          "finMs": 4920
+          "inicioMs": 4480,
+          "finMs": 5000
         },
         {
           "palabra": "velocidades",
-          "inicioMs": 4920,
-          "finMs": 5440
+          "inicioMs": 5000,
+          "finMs": 5520
         },
         {
           "palabra": "imposibles",
-          "inicioMs": 5440,
+          "inicioMs": 5520,
           "finMs": 6100
         },
         {
           "palabra": "para",
           "inicioMs": 6100,
-          "finMs": 6300
+          "finMs": 6320
         },
         {
           "palabra": "los",
-          "inicioMs": 6300,
-          "finMs": 6480
+          "inicioMs": 6320,
+          "finMs": 6440
         },
         {
           "palabra": "trenes",
-          "inicioMs": 6480,
+          "inicioMs": 6440,
           "finMs": 6860
         },
         {
           "palabra": "convencionales",
           "inicioMs": 6860,
-          "finMs": 7680
+          "finMs": 7660
         }
       ]
     },
@@ -932,7 +944,7 @@
           "habla": true
         }
       ],
-      "duracionSegundos": 8.506,
+      "duracionSegundos": 8.434,
       "palabras": [
         {
           "palabra": "Además",
@@ -941,118 +953,118 @@
         },
         {
           "palabra": "los",
-          "inicioMs": 640,
-          "finMs": 760
+          "inicioMs": 760,
+          "finMs": 940
         },
         {
           "palabra": "trenes",
-          "inicioMs": 760,
-          "finMs": 1120
+          "inicioMs": 940,
+          "finMs": 1260
         },
         {
           "palabra": "Maglev",
-          "inicioMs": 1120,
-          "finMs": 1460
+          "inicioMs": 1260,
+          "finMs": 1580
         },
         {
           "palabra": "usan",
-          "inicioMs": 1460,
-          "finMs": 1820
+          "inicioMs": 1580,
+          "finMs": 1880
         },
         {
           "palabra": "propulsión",
-          "inicioMs": 1820,
-          "finMs": 2300
+          "inicioMs": 1880,
+          "finMs": 2020
         },
         {
           "palabra": "magnética",
-          "inicioMs": 2300,
-          "finMs": 2800
+          "inicioMs": 2020,
+          "finMs": 2440
         },
         {
           "palabra": "lineal",
-          "inicioMs": 2800,
-          "finMs": 3340
+          "inicioMs": 2440,
+          "finMs": 2920
         },
         {
           "palabra": "las",
-          "inicioMs": 3580,
-          "finMs": 3680
+          "inicioMs": 2920,
+          "finMs": 3440
         },
         {
           "palabra": "bobinas",
-          "inicioMs": 3680,
-          "finMs": 4060
+          "inicioMs": 3760,
+          "finMs": 4260
         },
         {
           "palabra": "de",
-          "inicioMs": 4060,
-          "finMs": 4220
+          "inicioMs": 4260,
+          "finMs": 4400
         },
         {
           "palabra": "las",
-          "inicioMs": 4220,
-          "finMs": 4360
+          "inicioMs": 4400,
+          "finMs": 4560
         },
         {
           "palabra": "vías",
-          "inicioMs": 4360,
-          "finMs": 4720
+          "inicioMs": 4560,
+          "finMs": 4800
         },
         {
           "palabra": "crean",
-          "inicioMs": 4720,
-          "finMs": 5060
+          "inicioMs": 4800,
+          "finMs": 5120
         },
         {
           "palabra": "un",
-          "inicioMs": 5060,
-          "finMs": 5180
+          "inicioMs": 5120,
+          "finMs": 5260
         },
         {
           "palabra": "campo",
-          "inicioMs": 5180,
-          "finMs": 5480
+          "inicioMs": 5260,
+          "finMs": 5520
         },
         {
           "palabra": "magnético",
-          "inicioMs": 5480,
-          "finMs": 6080
+          "inicioMs": 5520,
+          "finMs": 6100
         },
         {
           "palabra": "móvil",
-          "inicioMs": 6080,
-          "finMs": 6440
+          "inicioMs": 6100,
+          "finMs": 6460
         },
         {
           "palabra": "que",
-          "inicioMs": 6440,
+          "inicioMs": 6460,
           "finMs": 6620
         },
         {
           "palabra": "empuja",
           "inicioMs": 6620,
-          "finMs": 7000
+          "finMs": 6980
         },
         {
           "palabra": "el",
-          "inicioMs": 7000,
-          "finMs": 7100
+          "inicioMs": 6980,
+          "finMs": 7080
         },
         {
           "palabra": "tren",
-          "inicioMs": 7100,
-          "finMs": 7340
+          "inicioMs": 7080,
+          "finMs": 7280
         },
         {
           "palabra": "hacia",
-          "inicioMs": 7340,
-          "finMs": 7540
+          "inicioMs": 7280,
+          "finMs": 7480
         },
         {
           "palabra": "adelante",
-          "inicioMs": 7540,
-          "finMs": 7860
+          "inicioMs": 7480,
+          "finMs": 7820
         }
       ]
     },
@@ -1088,132 +1100,132 @@
           "habla": true
         }
       ],
-      "duracionSegundos": 8.722,
+      "duracionSegundos": 7.834,
       "palabras": [
         {
           "palabra": "El",
           "inicioMs": 0,
-          "finMs": 240
+          "finMs": 220
         },
         {
           "palabra": "tren",
-          "inicioMs": 240,
-          "finMs": 400
+          "inicioMs": 220,
+          "finMs": 420
         },
         {
           "palabra": "japonés",
-          "inicioMs": 400,
+          "inicioMs": 420,
           "finMs": 960
         },
         {
           "palabra": "Chuo",
-          "inicioMs": 1120,
-          "finMs": 1420
+          "inicioMs": 960,
+          "finMs": 1580
         },
         {
           "palabra": "Shinkansen",
-          "inicioMs": 1420,
-          "finMs": 1720
+          "inicioMs": 1580,
+          "finMs": 2000
         },
         {
           "palabra": "Maglev",
-          "inicioMs": 1720,
-          "finMs": 2200
+          "inicioMs": 2000,
+          "finMs": 2560
         },
         {
           "palabra": "alcanzó",
-          "inicioMs": 2200,
-          "finMs": 2780
+          "inicioMs": 2560,
+          "finMs": 2680
         },
         {
           "palabra": "un",
-          "inicioMs": 2780,
-          "finMs": 2920
+          "inicioMs": 2680,
+          "finMs": 2940
         },
         {
           "palabra": "récord",
-          "inicioMs": 2920,
-          "finMs": 3160
+          "inicioMs": 2940,
+          "finMs": 3060
         },
         {
           "palabra": "de",
-          "inicioMs": 3160,
-          "finMs": 3400
+          "inicioMs": 3060,
+          "finMs": 3920
         },
         {
           "palabra": "seiscientos",
-          "inicioMs": 3400,
-          "finMs": 4200
+          "inicioMs": 3920,
+          "finMs": 4380
         },
         {
           "palabra": "tres",
-          "inicioMs": 4200,
+          "inicioMs": 4380,
           "finMs": 4620
         },
         {
           "palabra": "kilómetros",
           "inicioMs": 4620,
-          "finMs": 4900
+          "finMs": 4740
         },
         {
           "palabra": "por",
-          "inicioMs": 4900,
-          "finMs": 5040
+          "inicioMs": 4740,
+          "finMs": 4860
         },
         {
           "palabra": "hora",
-          "inicioMs": 5040,
-          "finMs": 5180
+          "inicioMs": 4860,
+          "finMs": 5200
         },
         {
           "palabra": "en",
-          "inicioMs": 5180,
-          "finMs": 5500
+          "inicioMs": 5260,
+          "finMs": 5800
         },
         {
           "palabra": "pruebas",
-          "inicioMs": 5500,
-          "finMs": 6780
+          "inicioMs": 5800,
+          "finMs": 5940
         },
         {
           "palabra": "convirtiéndose",
-          "inicioMs": 6780,
-          "finMs": 6900
+          "inicioMs": 5940,
+          "finMs": 6040
         },
         {
           "palabra": "en",
-          "inicioMs": 6900,
-          "finMs": 7000
+          "inicioMs": 6040,
+          "finMs": 6220
         },
         {
           "palabra": "el",
-          "inicioMs": 7000,
-          "finMs": 7180
+          "inicioMs": 6220,
+          "finMs": 6440
         },
         {
           "palabra": "tren",
-          "inicioMs": 7180,
-          "finMs": 7400
+          "inicioMs": 6440,
+          "finMs": 6780
         },
         {
           "palabra": "más",
-          "inicioMs": 7400,
-          "finMs": 7760
+          "inicioMs": 6780,
+          "finMs": 7020
         },
         {
           "palabra": "rápido",
-          "inicioMs": 7760,
-          "finMs": 7960
+          "inicioMs": 7020,
+          "finMs": 7320
         },
         {
           "palabra": "del",
-          "inicioMs": 7960,
-          "finMs": 8240
+          "inicioMs": 7320,
+          "finMs": 7452
         },
         {
           "palabra": "mundo",
-          "inicioMs": 8240,
-          "finMs": 8472
+          "inicioMs": 7320,
+          "finMs": 7452
         }
       ]
     },
@@ -1250,112 +1262,112 @@
           "habla": true
         }
       ],
-      "duracionSegundos": 6.946,
+      "duracionSegundos": 5.818,
       "palabras": [
         {
           "palabra": "La",
           "inicioMs": 0,
-          "finMs": 200
+          "finMs": 180
         },
         {
           "palabra": "única",
-          "inicioMs": 200,
-          "finMs": 420
+          "inicioMs": 180,
+          "finMs": 380
         },
         {
           "palabra": "desventaja",
-          "inicioMs": 420,
-          "finMs": 1100
+          "inicioMs": 380,
+          "finMs": 900
         },
         {
           "palabra": "es",
-          "inicioMs": 1100,
-          "finMs": 1240
+          "inicioMs": 900,
+          "finMs": 1020
         },
         {
           "palabra": "el",
-          "inicioMs": 1240,
-          "finMs": 1340
+          "inicioMs": 1020,
+          "finMs": 1140
         },
         {
           "palabra": "costo",
-          "inicioMs": 1340,
-          "finMs": 1820
+          "inicioMs": 1140,
+          "finMs": 1500
         },
         {
           "palabra": "construir",
-          "inicioMs": 1960,
-          "finMs": 2300
+          "inicioMs": 1740,
+          "finMs": 2000
         },
         {
           "palabra": "las",
-          "inicioMs": 2300,
-          "finMs": 2560
+          "inicioMs": 2000,
+          "finMs": 2220
         },
         {
           "palabra": "vías",
-          "inicioMs": 2560,
-          "finMs": 2840
+          "inicioMs": 2220,
+          "finMs": 2420
         },
         {
           "palabra": "magnéticas",
-          "inicioMs": 2840,
-          "finMs": 3380
+          "inicioMs": 2420,
+          "finMs": 2900
         },
         {
           "palabra": "cuesta",
-          "inicioMs": 3380,
-          "finMs": 3760
+          "inicioMs": 2900,
+          "finMs": 3260
         },
         {
           "palabra": "hasta",
-          "inicioMs": 3760,
-          "finMs": 4000
+          "inicioMs": 3260,
+          "finMs": 3420
         },
         {
           "palabra": "diez",
-          "inicioMs": 4000,
-          "finMs": 4240
+          "inicioMs": 3420,
+          "finMs": 3580
         },
         {
           "palabra": "veces",
-          "inicioMs": 4240,
-          "finMs": 4520
+          "inicioMs": 3580,
+          "finMs": 3840
         },
         {
           "palabra": "más",
-          "inicioMs": 4520,
-          "finMs": 4760
+          "inicioMs": 3840,
+          "finMs": 4040
         },
         {
           "palabra": "que",
-          "inicioMs": 4760,
-          "finMs": 4960
+          "inicioMs": 4040,
+          "finMs": 4180
         },
         {
           "palabra": "las",
-          "inicioMs": 4960,
-          "finMs": 5120
+          "inicioMs": 4180,
+          "finMs": 4260
         },
         {
           "palabra": "vías",
-          "inicioMs": 5120,
-          "finMs": 5400
+          "inicioMs": 4260,
+          "finMs": 4460
         },
         {
           "palabra": "convencionales",
-          "inicioMs": 5400,
-          "finMs": 6100
+          "inicioMs": 4460,
+          "finMs": 5060
         },
         {
           "palabra": "de",
-          "inicioMs": 6100,
-          "finMs": 6160
+          "inicioMs": 5060,
+          "finMs": 5120
         },
         {
           "palabra": "acero",
-          "inicioMs": 6160,
-          "finMs": 6480
+          "inicioMs": 5120,
+          "finMs": 5340
         }
       ]
     },
@@ -1394,7 +1406,7 @@
           "habla": true
         }
       ],
-      "duracionSegundos": 8.338,
+      "duracionSegundos": 8.65,
       "palabras": [
         {
           "palabra": "Pero",
@@ -1409,137 +1421,137 @@
         {
           "palabra": "tecnología",
           "inicioMs": 340,
-          "finMs": 780
+          "finMs": 840
         },
         {
           "palabra": "Maglev",
-          "inicioMs": 780,
-          "finMs": 1280
+          "inicioMs": 840,
+          "finMs": 1320
         },
         {
           "palabra": "ya",
-          "inicioMs": 1280,
-          "finMs": 1460
+          "inicioMs": 1320,
+          "finMs": 1520
         },
         {
           "palabra": "se",
-          "inicioMs": 1460,
-          "finMs": 1600
+          "inicioMs": 1520,
+          "finMs": 1700
         },
         {
           "palabra": "usa",
-          "inicioMs": 1600,
-          "finMs": 1760
+          "inicioMs": 1700,
+          "finMs": 1880
         },
         {
           "palabra": "en",
-          "inicioMs": 1760,
-          "finMs": 1940
+          "inicioMs": 1880,
+          "finMs": 2060
         },
         {
           "palabra": "China",
-          "inicioMs": 1940,
-          "finMs": 2180
+          "inicioMs": 2060,
+          "finMs": 2300
         },
         {
           "palabra": "y",
-          "inicioMs": 2180,
-          "finMs": 2280
+          "inicioMs": 2300,
+          "finMs": 2420
         },
         {
           "palabra": "Japón",
-          "inicioMs": 2280,
-          "finMs": 2740
+          "inicioMs": 2420,
+          "finMs": 2900
         },
         {
           "palabra": "y",
-          "inicioMs": 2740,
-          "finMs": 3180
+          "inicioMs": 3200,
+          "finMs": 3340
         },
         {
           "palabra": "en",
-          "inicioMs": 3180,
-          "finMs": 3280
+          "inicioMs": 3340,
+          "finMs": 3440
         },
         {
           "palabra": "el",
-          "inicioMs": 3280,
-          "finMs": 3380
+          "inicioMs": 3440,
+          "finMs": 3540
         },
         {
           "palabra": "futuro",
-          "inicioMs": 3380,
-          "finMs": 3660
+          "inicioMs": 3540,
+          "finMs": 3800
         },
         {
           "palabra": "podría",
-          "inicioMs": 3660,
-          "finMs": 4040
+          "inicioMs": 3800,
+          "finMs": 4240
         },
         {
           "palabra": "revolucionar",
-          "inicioMs": 4040,
-          "finMs": 4680
+          "inicioMs": 4240,
+          "finMs": 4860
         },
         {
           "palabra": "el",
-          "inicioMs": 4680,
-          "finMs": 4820
+          "inicioMs": 4860,
+          "finMs": 5000
         },
         {
           "palabra": "transporte",
-          "inicioMs": 4820,
-          "finMs": 5400
+          "inicioMs": 5000,
+          "finMs": 5580
         },
         {
           "palabra": "aéreo",
-          "inicioMs": 5400,
-          "finMs": 5760
+          "inicioMs": 5580,
+          "finMs": 5920
         },
         {
           "palabra": "con",
-          "inicioMs": 5760,
-          "finMs": 5900
+          "inicioMs": 5920,
+          "finMs": 6060
         },
         {
           "palabra": "trenes",
-          "inicioMs": 5900,
-          "finMs": 6320
+          "inicioMs": 6060,
+          "finMs": 6540
         },
         {
           "palabra": "que",
-          "inicioMs": 6320,
-          "finMs": 6440
+          "inicioMs": 6540,
+          "finMs": 6660
         },
         {
           "palabra": "viajan",
-          "inicioMs": 6440,
-          "finMs": 6760
+          "inicioMs": 6660,
+          "finMs": 6960
         },
         {
           "palabra": "a",
-          "inicioMs": 6760,
-          "finMs": 6880
+          "inicioMs": 6960,
+          "finMs": 7100
         },
         {
           "palabra": "la",
-          "inicioMs": 6880,
-          "finMs": 6940
+          "inicioMs": 7100,
+          "finMs": 7180
         },
         {
           "palabra": "velocidad",
-          "inicioMs": 6940,
-          "finMs": 7240
+          "inicioMs": 7180,
+          "finMs": 7480
         },
         {
           "palabra": "del",
-          "inicioMs": 7240,
-          "finMs": 7500
+          "inicioMs": 7480,
+          "finMs": 7760
         },
         {
           "palabra": "sonido",
-          "inicioMs": 7500,
-          "finMs": 7860
+          "inicioMs": 7760,
+          "finMs": 8180
         }
       ]
     }

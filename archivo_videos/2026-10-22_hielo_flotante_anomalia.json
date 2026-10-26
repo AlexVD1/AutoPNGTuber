@@ -1,0 +1,1651 @@
+{
+  "meta": {
+    "id": "hielo_flotante_anomalia",
+    "slug": "hielo_flotante_anomalia",
+    "temaResumen": "¿Por qué el hielo flota en el agua y cómo esta anomalía salvó la vida en la Tierra? Puentes de hidrógeno",
+    "titulo": "La extraña anomalía del hielo que salvó toda la vida",
+    "titulo_corto": "EL HIELO FLOTA",
+    "gancho": "¿Te has dado cuenta de que casi todos los sólidos del universo se hunden en su propio líquido derretido, pero el hielo flota pacíficamente en tu vaso de agua?",
+    "fuentes": [
+      "Linus Pauling: The Nature of the Chemical Bond (Hydrogen Bonding in Ice)",
+      "European Journal of Physics: The Unique Density Anomaly of Water at 4 °C"
+    ],
+    "genero": "SCIENCE",
+    "duracionObjetivo": [
+      62,
+      110
+    ]
+  },
+  "escenas": [
+    {
+      "id": 1,
+      "texto": "¿Te has puesto a pensar en lo absurdo que es que el hielo flote en tu vaso cuando casi todos los sólidos del universo se hunden?",
+      "icono": "Snowflake",
+      "colorIcono": "#0284C7",
+      "tituloVisual": "HIELO FLOTANTE",
+      "composicionVisual": "plano_general",
+      "escenario": "lago_helado",
+      "layout": "narrativo",
+      "transicion": "zoom_in",
+      "efectosCamara": [
+        "drift"
+      ],
+      "sfx": "sfx/sfx_whoosh.wav",
+      "volumenSfx": 0.2,
+      "palabrasClave": [
+        "el hielo flote",
+        "sólidos del universo",
+        "se hunden"
+      ],
+      "personajes": [
+        {
+          "id": "narrador",
+          "posicion": {
+            "x": -160,
+            "y": 70
+          },
+          "escala": 1.05,
+          "orientacion": "derecha",
+          "prop": "ice_crystal_hex",
+          "poseId": "explaining_pointing_up",
+          "expresion": "talking_enthusiastic",
+          "acciones": [
+            {
+              "tipo": "caminar_hacia",
+              "desdeX": -260,
+              "haciaX": -120
+            }
+          ],
+          "habla": true
+        }
+      ],
+      "duracionSegundos": 6.226,
+      "palabras": [
+        {
+          "palabra": "Te",
+          "inicioMs": 0,
+          "finMs": 180
+        },
+        {
+          "palabra": "has",
+          "inicioMs": 180,
+          "finMs": 300
+        },
+        {
+          "palabra": "puesto",
+          "inicioMs": 300,
+          "finMs": 460
+        },
+        {
+          "palabra": "a",
+          "inicioMs": 460,
+          "finMs": 680
+        },
+        {
+          "palabra": "pensar",
+          "inicioMs": 680,
+          "finMs": 960
+        },
+        {
+          "palabra": "en",
+          "inicioMs": 960,
+          "finMs": 1140
+        },
+        {
+          "palabra": "lo",
+          "inicioMs": 1140,
+          "finMs": 1240
+        },
+        {
+          "palabra": "absurdo",
+          "inicioMs": 1240,
+          "finMs": 1680
+        },
+        {
+          "palabra": "que",
+          "inicioMs": 1680,
+          "finMs": 1820
+        },
+        {
+          "palabra": "es",
+          "inicioMs": 1820,
+          "finMs": 1940
+        },
+        {
+          "palabra": "que",
+          "inicioMs": 1940,
+          "finMs": 2060
+        },
+        {
+          "palabra": "el",
+          "inicioMs": 2060,
+          "finMs": 2180
+        },
+        {
+          "palabra": "hielo",
+          "inicioMs": 2180,
+          "finMs": 2480
+        },
+        {
+          "palabra": "flote",
+          "inicioMs": 2480,
+          "finMs": 2760
+        },
+        {
+          "palabra": "en",
+          "inicioMs": 2760,
+          "finMs": 2940
+        },
+        {
+          "palabra": "tu",
+          "inicioMs": 2940,
+          "finMs": 3020
+        },
+        {
+          "palabra": "vaso",
+          "inicioMs": 3020,
+          "finMs": 3340
+        },
+        {
+          "palabra": "cuando",
+          "inicioMs": 3340,
+          "finMs": 3540
+        },
+        {
+          "palabra": "casi",
+          "inicioMs": 3540,
+          "finMs": 3860
+        },
+        {
+          "palabra": "todos",
+          "inicioMs": 3860,
+          "finMs": 4180
+        },
+        {
+          "palabra": "los",
+          "inicioMs": 4180,
+          "finMs": 4400
+        },
+        {
+          "palabra": "sólidos",
+          "inicioMs": 4400,
+          "finMs": 4720
+        },
+        {
+          "palabra": "del",
+          "inicioMs": 4720,
+          "finMs": 4900
+        },
+        {
+          "palabra": "universo",
+          "inicioMs": 4900,
+          "finMs": 5240
+        },
+        {
+          "palabra": "se",
+          "inicioMs": 5240,
+          "finMs": 5500
+        },
+        {
+          "palabra": "hunden",
+          "inicioMs": 5500,
+          "finMs": 5760
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "texto": "En la física común, cuando una sustancia se enfría y se vuelve sólida, sus átomos se aprietan, aumenta su densidad y se va al fondo.",
+      "icono": "Scale",
+      "colorIcono": "#8B5CF6",
+      "tituloVisual": "REGLA UNIVERSAL",
+      "composicionVisual": "primer_plano",
+      "escenario": "laboratorio",
+      "layout": "narrativo",
+      "transicion": "whip_right",
+      "efectosCamara": [
+        "shake",
+        "punch"
+      ],
+      "sfx": "sfx/sfx_dramatic_hit.wav",
+      "volumenSfx": 0.25,
+      "palabrasClave": [
+        "física común",
+        "aumenta su densidad",
+        "se va al fondo"
+      ],
+      "personajes": [
+        {
+          "id": "fisico",
+          "posicion": {
+            "x": 0,
+            "y": 50
+          },
+          "escala": 1.15,
+          "orientacion": "derecha",
+          "prop": "scale",
+          "poseId": "comparing_two_objects",
+          "expresion": "analytical",
+          "habla": true
+        }
+      ],
+      "duracionSegundos": 7.018,
+      "palabras": [
+        {
+          "palabra": "En",
+          "inicioMs": 0,
+          "finMs": 180
+        },
+        {
+          "palabra": "la",
+          "inicioMs": 180,
+          "finMs": 280
+        },
+        {
+          "palabra": "física",
+          "inicioMs": 280,
+          "finMs": 560
+        },
+        {
+          "palabra": "común",
+          "inicioMs": 560,
+          "finMs": 960
+        },
+        {
+          "palabra": "cuando",
+          "inicioMs": 1240,
+          "finMs": 1400
+        },
+        {
+          "palabra": "una",
+          "inicioMs": 1400,
+          "finMs": 1620
+        },
+        {
+          "palabra": "sustancia",
+          "inicioMs": 1620,
+          "finMs": 2020
+        },
+        {
+          "palabra": "se",
+          "inicioMs": 2020,
+          "finMs": 2300
+        },
+        {
+          "palabra": "enfría",
+          "inicioMs": 2300,
+          "finMs": 2640
+        },
+        {
+          "palabra": "y",
+          "inicioMs": 2640,
+          "finMs": 2740
+        },
+        {
+          "palabra": "se",
+          "inicioMs": 2740,
+          "finMs": 2860
+        },
+        {
+          "palabra": "vuelve",
+          "inicioMs": 2860,
+          "finMs": 3160
+        },
+        {
+          "palabra": "sólida",
+          "inicioMs": 3160,
+          "finMs": 3620
+        },
+        {
+          "palabra": "sus",
+          "inicioMs": 3700,
+          "finMs": 3780
+        },
+        {
+          "palabra": "átomos",
+          "inicioMs": 3780,
+          "finMs": 4100
+        },
+        {
+          "palabra": "se",
+          "inicioMs": 4100,
+          "finMs": 4280
+        },
+        {
+          "palabra": "aprietan",
+          "inicioMs": 4280,
+          "finMs": 4680
+        },
+        {
+          "palabra": "aumenta",
+          "inicioMs": 4800,
+          "finMs": 5140
+        },
+        {
+          "palabra": "su",
+          "inicioMs": 5140,
+          "finMs": 5260
+        },
+        {
+          "palabra": "densidad",
+          "inicioMs": 5260,
+          "finMs": 5660
+        },
+        {
+          "palabra": "y",
+          "inicioMs": 5660,
+          "finMs": 5880
+        },
+        {
+          "palabra": "se",
+          "inicioMs": 5880,
+          "finMs": 6000
+        },
+        {
+          "palabra": "va",
+          "inicioMs": 6000,
+          "finMs": 6120
+        },
+        {
+          "palabra": "al",
+          "inicioMs": 6120,
+          "finMs": 6220
+        },
+        {
+          "palabra": "fondo",
+          "inicioMs": 6220,
+          "finMs": 6540
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "texto": "Pero el agua es una de las moléculas más rebeldes y fascinantes del cosmos gracias a una propiedad llamada anomalía térmica.",
+      "icono": "Atom",
+      "colorIcono": "#38BDF8",
+      "tituloVisual": "MOLÉCULA REBELDE",
+      "composicionVisual": "plano_general",
+      "escenario": "laboratorio",
+      "layout": "narrativo",
+      "transicion": "whip_left",
+      "efectosCamara": [
+        "drift"
+      ],
+      "palabrasClave": [
+        "moléculas más rebeldes",
+        "anomalía térmica",
+        "cosmos"
+      ],
+      "personajes": [
+        {
+          "id": "fisico",
+          "posicion": {
+            "x": -160,
+            "y": 70
+          },
+          "escala": 1.05,
+          "orientacion": "derecha",
+          "prop": "atom",
+          "poseId": "presenting_object",
+          "expresion": "eureka",
+          "habla": true
+        }
+      ],
+      "duracionSegundos": 7.042,
+      "palabras": [
+        {
+          "palabra": "Pero",
+          "inicioMs": 0,
+          "finMs": 220
+        },
+        {
+          "palabra": "el",
+          "inicioMs": 220,
+          "finMs": 360
+        },
+        {
+          "palabra": "agua",
+          "inicioMs": 360,
+          "finMs": 480
+        },
+        {
+          "palabra": "es",
+          "inicioMs": 480,
+          "finMs": 700
+        },
+        {
+          "palabra": "una",
+          "inicioMs": 700,
+          "finMs": 900
+        },
+        {
+          "palabra": "de",
+          "inicioMs": 900,
+          "finMs": 1000
+        },
+        {
+          "palabra": "las",
+          "inicioMs": 1000,
+          "finMs": 1140
+        },
+        {
+          "palabra": "moléculas",
+          "inicioMs": 1140,
+          "finMs": 1620
+        },
+        {
+          "palabra": "más",
+          "inicioMs": 1620,
+          "finMs": 1820
+        },
+        {
+          "palabra": "rebeldes",
+          "inicioMs": 1820,
+          "finMs": 2360
+        },
+        {
+          "palabra": "y",
+          "inicioMs": 2360,
+          "finMs": 2520
+        },
+        {
+          "palabra": "fascinantes",
+          "inicioMs": 2520,
+          "finMs": 2980
+        },
+        {
+          "palabra": "del",
+          "inicioMs": 2980,
+          "finMs": 3220
+        },
+        {
+          "palabra": "cosmos",
+          "inicioMs": 3220,
+          "finMs": 3560
+        },
+        {
+          "palabra": "gracias",
+          "inicioMs": 4020,
+          "finMs": 4280
+        },
+        {
+          "palabra": "a",
+          "inicioMs": 4280,
+          "finMs": 4460
+        },
+        {
+          "palabra": "una",
+          "inicioMs": 4460,
+          "finMs": 4620
+        },
+        {
+          "palabra": "propiedad",
+          "inicioMs": 4620,
+          "finMs": 5120
+        },
+        {
+          "palabra": "llamada",
+          "inicioMs": 5120,
+          "finMs": 5560
+        },
+        {
+          "palabra": "anomalía",
+          "inicioMs": 5560,
+          "finMs": 6100
+        },
+        {
+          "palabra": "térmica",
+          "inicioMs": 6100,
+          "finMs": 6560
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "texto": "Cuando el agua líquida se enfría, se vuelve más pesada hasta alcanzar su máxima densidad exactamente a cuatro grados centígrados.",
+      "icono": "Thermometer",
+      "colorIcono": "#10B981",
+      "tituloVisual": "4 GRADOS LÍMITE",
+      "composicionVisual": "plano_general",
+      "escenario": "laboratorio",
+      "layout": "narrativo",
+      "transicion": "zoom_in",
+      "efectosCamara": [
+        "drift"
+      ],
+      "palabrasClave": [
+        "máxima densidad",
+        "cuatro grados",
+        "se enfría"
+      ],
+      "personajes": [
+        {
+          "id": "fisico",
+          "posicion": {
+            "x": -160,
+            "y": 70
+          },
+          "escala": 1.05,
+          "orientacion": "derecha",
+          "poseId": "explaining_both_hands",
+          "expresion": "analytical",
+          "habla": true
+        }
+      ],
+      "duracionSegundos": 6.538,
+      "palabras": [
+        {
+          "palabra": "Cuando",
+          "inicioMs": 0,
+          "finMs": 240
+        },
+        {
+          "palabra": "el",
+          "inicioMs": 240,
+          "finMs": 360
+        },
+        {
+          "palabra": "agua",
+          "inicioMs": 360,
+          "finMs": 500
+        },
+        {
+          "palabra": "líquida",
+          "inicioMs": 500,
+          "finMs": 820
+        },
+        {
+          "palabra": "se",
+          "inicioMs": 820,
+          "finMs": 960
+        },
+        {
+          "palabra": "enfría",
+          "inicioMs": 960,
+          "finMs": 1400
+        },
+        {
+          "palabra": "se",
+          "inicioMs": 1540,
+          "finMs": 1660
+        },
+        {
+          "palabra": "vuelve",
+          "inicioMs": 1660,
+          "finMs": 1920
+        },
+        {
+          "palabra": "más",
+          "inicioMs": 1920,
+          "finMs": 2040
+        },
+        {
+          "palabra": "pesada",
+          "inicioMs": 2040,
+          "finMs": 2500
+        },
+        {
+          "palabra": "hasta",
+          "inicioMs": 2500,
+          "finMs": 2760
+        },
+        {
+          "palabra": "alcanzar",
+          "inicioMs": 2760,
+          "finMs": 3160
+        },
+        {
+          "palabra": "su",
+          "inicioMs": 3160,
+          "finMs": 3300
+        },
+        {
+          "palabra": "máxima",
+          "inicioMs": 3300,
+          "finMs": 3700
+        },
+        {
+          "palabra": "densidad",
+          "inicioMs": 3700,
+          "finMs": 4060
+        },
+        {
+          "palabra": "exactamente",
+          "inicioMs": 4060,
+          "finMs": 4620
+        },
+        {
+          "palabra": "a",
+          "inicioMs": 4620,
+          "finMs": 4880
+        },
+        {
+          "palabra": "cuatro",
+          "inicioMs": 4880,
+          "finMs": 5100
+        },
+        {
+          "palabra": "grados",
+          "inicioMs": 5100,
+          "finMs": 5460
+        },
+        {
+          "palabra": "centígrados",
+          "inicioMs": 5460,
+          "finMs": 6080
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "texto": "Pero al enfriarse por debajo de cuatro grados hasta congelarse, ocurre algo asombroso: en lugar de contraerse, ¡el agua se expande!",
+      "icono": "Zap",
+      "colorIcono": "#FACC15",
+      "tituloVisual": "¡SE EXPANDE!",
+      "composicionVisual": "cifras_concepto",
+      "escenario": "lago_helado",
+      "layout": "narrativo",
+      "transicion": "corte",
+      "efectosCamara": [
+        "punch",
+        "drift"
+      ],
+      "palabrasClave": [
+        "algo asombroso",
+        "en lugar de contraerse",
+        "el agua se expande"
+      ],
+      "personajes": [
+        {
+          "id": "narrador",
+          "posicion": {
+            "x": -150,
+            "y": 70
+          },
+          "escala": 1.05,
+          "orientacion": "derecha",
+          "prop": "ice_crystal_hex",
+          "poseId": "surprised_hands_up",
+          "expresion": "surprised",
+          "habla": true
+        }
+      ],
+      "duracionSegundos": 7.186,
+      "palabras": [
+        {
+          "palabra": "Pero",
+          "inicioMs": 0,
+          "finMs": 220
+        },
+        {
+          "palabra": "al",
+          "inicioMs": 220,
+          "finMs": 300
+        },
+        {
+          "palabra": "enfriarse",
+          "inicioMs": 300,
+          "finMs": 740
+        },
+        {
+          "palabra": "por",
+          "inicioMs": 740,
+          "finMs": 940
+        },
+        {
+          "palabra": "debajo",
+          "inicioMs": 940,
+          "finMs": 1260
+        },
+        {
+          "palabra": "de",
+          "inicioMs": 1260,
+          "finMs": 1400
+        },
+        {
+          "palabra": "cuatro",
+          "inicioMs": 1400,
+          "finMs": 1680
+        },
+        {
+          "palabra": "grados",
+          "inicioMs": 1680,
+          "finMs": 2100
+        },
+        {
+          "palabra": "hasta",
+          "inicioMs": 2100,
+          "finMs": 2320
+        },
+        {
+          "palabra": "congelarse",
+          "inicioMs": 2320,
+          "finMs": 2980
+        },
+        {
+          "palabra": "ocurre",
+          "inicioMs": 2980,
+          "finMs": 3400
+        },
+        {
+          "palabra": "algo",
+          "inicioMs": 3400,
+          "finMs": 3600
+        },
+        {
+          "palabra": "asombroso",
+          "inicioMs": 3600,
+          "finMs": 4240
+        },
+        {
+          "palabra": "en",
+          "inicioMs": 4240,
+          "finMs": 4460
+        },
+        {
+          "palabra": "lugar",
+          "inicioMs": 4460,
+          "finMs": 4640
+        },
+        {
+          "palabra": "de",
+          "inicioMs": 4640,
+          "finMs": 4840
+        },
+        {
+          "palabra": "contraerse",
+          "inicioMs": 4840,
+          "finMs": 5460
+        },
+        {
+          "palabra": "el",
+          "inicioMs": 5460,
+          "finMs": 5840
+        },
+        {
+          "palabra": "agua",
+          "inicioMs": 5840,
+          "finMs": 6040
+        },
+        {
+          "palabra": "se",
+          "inicioMs": 6040,
+          "finMs": 6180
+        },
+        {
+          "palabra": "expande",
+          "inicioMs": 6180,
+          "finMs": 6720
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "texto": "Las moléculas de agua forman enlaces de hidrógeno que se organizan en una hermosa red hexagonal con grandes huecos vacíos.",
+      "icono": "Grid",
+      "colorIcono": "#67E8F9",
+      "tituloVisual": "RED HEXAGONAL",
+      "composicionVisual": "plano_general",
+      "escenario": "laboratorio",
+      "layout": "narrativo",
+      "transicion": "whip_right",
+      "efectosCamara": [
+        "drift"
+      ],
+      "palabrasClave": [
+        "enlaces de hidrógeno",
+        "red hexagonal",
+        "huecos vacíos"
+      ],
+      "personajes": [
+        {
+          "id": "fisico",
+          "posicion": {
+            "x": -160,
+            "y": 70
+          },
+          "escala": 1.05,
+          "orientacion": "derecha",
+          "poseId": "explaining_pointing_up",
+          "expresion": "talking_enthusiastic",
+          "habla": true
+        }
+      ],
+      "objetos": [
+        {
+          "id": "cristal_hexagonal",
+          "propId": "ice_crystal_hex",
+          "posicion": {
+            "x": 220,
+            "y": -60
+          },
+          "escala": 1.6,
+          "animacion": {
+            "tipo": "pulso"
+          }
+        }
+      ],
+      "duracionSegundos": 6.85,
+      "palabras": [
+        {
+          "palabra": "Las",
+          "inicioMs": 0,
+          "finMs": 200
+        },
+        {
+          "palabra": "moléculas",
+          "inicioMs": 200,
+          "finMs": 720
+        },
+        {
+          "palabra": "de",
+          "inicioMs": 720,
+          "finMs": 840
+        },
+        {
+          "palabra": "agua",
+          "inicioMs": 840,
+          "finMs": 1040
+        },
+        {
+          "palabra": "forman",
+          "inicioMs": 1040,
+          "finMs": 1420
+        },
+        {
+          "palabra": "enlaces",
+          "inicioMs": 1420,
+          "finMs": 1820
+        },
+        {
+          "palabra": "de",
+          "inicioMs": 1820,
+          "finMs": 1980
+        },
+        {
+          "palabra": "hidrógeno",
+          "inicioMs": 1980,
+          "finMs": 2480
+        },
+        {
+          "palabra": "que",
+          "inicioMs": 2480,
+          "finMs": 2600
+        },
+        {
+          "palabra": "se",
+          "inicioMs": 2600,
+          "finMs": 2720
+        },
+        {
+          "palabra": "organizan",
+          "inicioMs": 2720,
+          "finMs": 3180
+        },
+        {
+          "palabra": "en",
+          "inicioMs": 3180,
+          "finMs": 3280
+        },
+        {
+          "palabra": "una",
+          "inicioMs": 3280,
+          "finMs": 3400
+        },
+        {
+          "palabra": "hermosa",
+          "inicioMs": 3400,
+          "finMs": 3820
+        },
+        {
+          "palabra": "red",
+          "inicioMs": 3820,
+          "finMs": 4000
+        },
+        {
+          "palabra": "hexagonal",
+          "inicioMs": 4000,
+          "finMs": 4860
+        },
+        {
+          "palabra": "con",
+          "inicioMs": 4860,
+          "finMs": 5200
+        },
+        {
+          "palabra": "grandes",
+          "inicioMs": 5200,
+          "finMs": 5560
+        },
+        {
+          "palabra": "huecos",
+          "inicioMs": 5560,
+          "finMs": 5860
+        },
+        {
+          "palabra": "vacíos",
+          "inicioMs": 5860,
+          "finMs": 6360
+        }
+      ]
+    },
+    {
+      "id": 7,
+      "texto": "Esa estructura cristalina hexagonal ocupa un nueve por ciento más de espacio que el agua líquida, haciéndola significativamente más ligera.",
+      "icono": "Feather",
+      "colorIcono": "#38BDF8",
+      "tituloVisual": "MÁS LIGERO",
+      "composicionVisual": "primer_plano",
+      "escenario": "laboratorio",
+      "layout": "narrativo",
+      "transicion": "zoom_in",
+      "efectosCamara": [
+        "drift"
+      ],
+      "palabrasClave": [
+        "nueve por ciento más",
+        "más espacio",
+        "más ligera"
+      ],
+      "personajes": [
+        {
+          "id": "fisico",
+          "posicion": {
+            "x": 0,
+            "y": 50
+          },
+          "escala": 1.15,
+          "orientacion": "derecha",
+          "poseId": "explaining_both_hands",
+          "expresion": "analytical",
+          "habla": true
+        }
+      ],
+      "duracionSegundos": 7.138,
+      "palabras": [
+        {
+          "palabra": "Esa",
+          "inicioMs": 0,
+          "finMs": 280
+        },
+        {
+          "palabra": "estructura",
+          "inicioMs": 280,
+          "finMs": 720
+        },
+        {
+          "palabra": "cristalina",
+          "inicioMs": 720,
+          "finMs": 1260
+        },
+        {
+          "palabra": "hexagonal",
+          "inicioMs": 1260,
+          "finMs": 1820
+        },
+        {
+          "palabra": "ocupa",
+          "inicioMs": 1820,
+          "finMs": 2180
+        },
+        {
+          "palabra": "un",
+          "inicioMs": 2180,
+          "finMs": 2320
+        },
+        {
+          "palabra": "nueve",
+          "inicioMs": 2320,
+          "finMs": 2460
+        },
+        {
+          "palabra": "por",
+          "inicioMs": 2460,
+          "finMs": 2880
+        },
+        {
+          "palabra": "ciento",
+          "inicioMs": 2880,
+          "finMs": 3160
+        },
+        {
+          "palabra": "más",
+          "inicioMs": 3160,
+          "finMs": 3260
+        },
+        {
+          "palabra": "de",
+          "inicioMs": 3260,
+          "finMs": 3560
+        },
+        {
+          "palabra": "espacio",
+          "inicioMs": 3560,
+          "finMs": 3760
+        },
+        {
+          "palabra": "que",
+          "inicioMs": 3760,
+          "finMs": 3860
+        },
+        {
+          "palabra": "el",
+          "inicioMs": 3860,
+          "finMs": 3980
+        },
+        {
+          "palabra": "agua",
+          "inicioMs": 3980,
+          "finMs": 4420
+        },
+        {
+          "palabra": "líquida",
+          "inicioMs": 4520,
+          "finMs": 4800
+        },
+        {
+          "palabra": "haciéndola",
+          "inicioMs": 4800,
+          "finMs": 5000
+        },
+        {
+          "palabra": "significativamente",
+          "inicioMs": 5000,
+          "finMs": 5900
+        },
+        {
+          "palabra": "más",
+          "inicioMs": 5900,
+          "finMs": 6220
+        },
+        {
+          "palabra": "ligera",
+          "inicioMs": 6220,
+          "finMs": 6700
+        }
+      ]
+    },
+    {
+      "id": 8,
+      "texto": "Si el hielo se comportara como los demás sólidos, se hundiría hasta el fondo de los ríos, lagos y océanos con cada invierno.",
+      "icono": "AlertTriangle",
+      "colorIcono": "#EF4444",
+      "tituloVisual": "COLAPSO MARINO",
+      "composicionVisual": "plano_general",
+      "escenario": "lago_helado",
+      "layout": "narrativo",
+      "transicion": "corte",
+      "efectosCamara": [
+        "drift"
+      ],
+      "palabrasClave": [
+        "se hundiría al fondo",
+        "ríos y lagos",
+        "cada invierno"
+      ],
+      "personajes": [
+        {
+          "id": "narrador",
+          "posicion": {
+            "x": -150,
+            "y": 70
+          },
+          "escala": 1.05,
+          "orientacion": "derecha",
+          "prop": "skull",
+          "poseId": "backing_away_scared",
+          "expresion": "worried",
+          "habla": true
+        }
+      ],
+      "duracionSegundos": 6.058,
+      "palabras": [
+        {
+          "palabra": "Si",
+          "inicioMs": 0,
+          "finMs": 220
+        },
+        {
+          "palabra": "el",
+          "inicioMs": 220,
+          "finMs": 340
+        },
+        {
+          "palabra": "hielo",
+          "inicioMs": 340,
+          "finMs": 560
+        },
+        {
+          "palabra": "se",
+          "inicioMs": 560,
+          "finMs": 660
+        },
+        {
+          "palabra": "comportara",
+          "inicioMs": 660,
+          "finMs": 1180
+        },
+        {
+          "palabra": "como",
+          "inicioMs": 1180,
+          "finMs": 1340
+        },
+        {
+          "palabra": "los",
+          "inicioMs": 1340,
+          "finMs": 1460
+        },
+        {
+          "palabra": "demás",
+          "inicioMs": 1460,
+          "finMs": 1680
+        },
+        {
+          "palabra": "sólidos",
+          "inicioMs": 1680,
+          "finMs": 2140
+        },
+        {
+          "palabra": "se",
+          "inicioMs": 2260,
+          "finMs": 2320
+        },
+        {
+          "palabra": "hundiría",
+          "inicioMs": 2320,
+          "finMs": 2700
+        },
+        {
+          "palabra": "hasta",
+          "inicioMs": 2700,
+          "finMs": 2860
+        },
+        {
+          "palabra": "el",
+          "inicioMs": 2860,
+          "finMs": 2940
+        },
+        {
+          "palabra": "fondo",
+          "inicioMs": 2940,
+          "finMs": 3080
+        },
+        {
+          "palabra": "de",
+          "inicioMs": 3080,
+          "finMs": 3280
+        },
+        {
+          "palabra": "los",
+          "inicioMs": 3280,
+          "finMs": 3440
+        },
+        {
+          "palabra": "ríos",
+          "inicioMs": 3440,
+          "finMs": 3820
+        },
+        {
+          "palabra": "lagos",
+          "inicioMs": 3880,
+          "finMs": 4120
+        },
+        {
+          "palabra": "y",
+          "inicioMs": 4120,
+          "finMs": 4300
+        },
+        {
+          "palabra": "océanos",
+          "inicioMs": 4300,
+          "finMs": 4720
+        },
+        {
+          "palabra": "con",
+          "inicioMs": 4720,
+          "finMs": 4920
+        },
+        {
+          "palabra": "cada",
+          "inicioMs": 4920,
+          "finMs": 5140
+        },
+        {
+          "palabra": "invierno",
+          "inicioMs": 5140,
+          "finMs": 5600
+        }
+      ]
+    },
+    {
+      "id": 9,
+      "texto": "Año tras año, los mares se congelarían desde el fondo hacia arriba hasta convertirse en bloques gigantescos de hielo perpetuo sin vida.",
+      "icono": "Globe",
+      "colorIcono": "#0369A1",
+      "tituloVisual": "PLANETA CONGELADO",
+      "composicionVisual": "plano_general",
+      "escenario": "lago_helado",
+      "layout": "narrativo",
+      "transicion": "whip_left",
+      "efectosCamara": [
+        "drift"
+      ],
+      "palabrasClave": [
+        "desde el fondo",
+        "hielo perpetuo",
+        "sin vida"
+      ],
+      "personajes": [
+        {
+          "id": "narrador",
+          "posicion": {
+            "x": -160,
+            "y": 70
+          },
+          "escala": 1.05,
+          "orientacion": "derecha",
+          "poseId": "sad_slumped",
+          "expresion": "sad",
+          "habla": true
+        }
+      ],
+      "duracionSegundos": 6.658,
+      "palabras": [
+        {
+          "palabra": "Año",
+          "inicioMs": 0,
+          "finMs": 360
+        },
+        {
+          "palabra": "tras",
+          "inicioMs": 360,
+          "finMs": 520
+        },
+        {
+          "palabra": "año",
+          "inicioMs": 520,
+          "finMs": 880
+        },
+        {
+          "palabra": "los",
+          "inicioMs": 880,
+          "finMs": 1060
+        },
+        {
+          "palabra": "mares",
+          "inicioMs": 1060,
+          "finMs": 1360
+        },
+        {
+          "palabra": "se",
+          "inicioMs": 1360,
+          "finMs": 1500
+        },
+        {
+          "palabra": "congelarían",
+          "inicioMs": 1500,
+          "finMs": 2100
+        },
+        {
+          "palabra": "desde",
+          "inicioMs": 2100,
+          "finMs": 2280
+        },
+        {
+          "palabra": "el",
+          "inicioMs": 2280,
+          "finMs": 2420
+        },
+        {
+          "palabra": "fondo",
+          "inicioMs": 2420,
+          "finMs": 2560
+        },
+        {
+          "palabra": "hacia",
+          "inicioMs": 2560,
+          "finMs": 2820
+        },
+        {
+          "palabra": "arriba",
+          "inicioMs": 2820,
+          "finMs": 3120
+        },
+        {
+          "palabra": "hasta",
+          "inicioMs": 3120,
+          "finMs": 3300
+        },
+        {
+          "palabra": "convertirse",
+          "inicioMs": 3300,
+          "finMs": 3900
+        },
+        {
+          "palabra": "en",
+          "inicioMs": 3900,
+          "finMs": 4000
+        },
+        {
+          "palabra": "bloques",
+          "inicioMs": 4000,
+          "finMs": 4320
+        },
+        {
+          "palabra": "gigantescos",
+          "inicioMs": 4320,
+          "finMs": 4900
+        },
+        {
+          "palabra": "de",
+          "inicioMs": 4900,
+          "finMs": 5060
+        },
+        {
+          "palabra": "hielo",
+          "inicioMs": 5060,
+          "finMs": 5320
+        },
+        {
+          "palabra": "perpetuo",
+          "inicioMs": 5320,
+          "finMs": 5760
+        },
+        {
+          "palabra": "sin",
+          "inicioMs": 5760,
+          "finMs": 5900
+        },
+        {
+          "palabra": "vida",
+          "inicioMs": 5900,
+          "finMs": 6180
+        }
+      ]
+    },
+    {
+      "id": 10,
+      "texto": "En cambio, al flotar en la superficie, el hielo actúa como una manta térmica aislante que protege el agua líquida inferior.",
+      "icono": "ShieldCheck",
+      "colorIcono": "#10B981",
+      "tituloVisual": "MANTA TÉRMICA",
+      "composicionVisual": "plano_general",
+      "escenario": "lago_helado",
+      "layout": "narrativo",
+      "transicion": "zoom_in",
+      "efectosCamara": [
+        "drift"
+      ],
+      "palabrasClave": [
+        "manta térmica",
+        "aislante",
+        "protege agua líquida"
+      ],
+      "personajes": [
+        {
+          "id": "narrador",
+          "posicion": {
+            "x": -150,
+            "y": 70
+          },
+          "escala": 1.05,
+          "orientacion": "derecha",
+          "prop": "shield",
+          "poseId": "standing_confident",
+          "expresion": "proud",
+          "habla": true
+        }
+      ],
+      "duracionSegundos": 6.25,
+      "palabras": [
+        {
+          "palabra": "En",
+          "inicioMs": 0,
+          "finMs": 220
+        },
+        {
+          "palabra": "cambio",
+          "inicioMs": 220,
+          "finMs": 540
+        },
+        {
+          "palabra": "al",
+          "inicioMs": 780,
+          "finMs": 860
+        },
+        {
+          "palabra": "flotar",
+          "inicioMs": 860,
+          "finMs": 1200
+        },
+        {
+          "palabra": "en",
+          "inicioMs": 1200,
+          "finMs": 1260
+        },
+        {
+          "palabra": "la",
+          "inicioMs": 1260,
+          "finMs": 1340
+        },
+        {
+          "palabra": "superficie",
+          "inicioMs": 1340,
+          "finMs": 2000
+        },
+        {
+          "palabra": "el",
+          "inicioMs": 2000,
+          "finMs": 2240
+        },
+        {
+          "palabra": "hielo",
+          "inicioMs": 2240,
+          "finMs": 2460
+        },
+        {
+          "palabra": "actúa",
+          "inicioMs": 2460,
+          "finMs": 2740
+        },
+        {
+          "palabra": "como",
+          "inicioMs": 2740,
+          "finMs": 3040
+        },
+        {
+          "palabra": "una",
+          "inicioMs": 3040,
+          "finMs": 3200
+        },
+        {
+          "palabra": "manta",
+          "inicioMs": 3200,
+          "finMs": 3480
+        },
+        {
+          "palabra": "térmica",
+          "inicioMs": 3480,
+          "finMs": 3900
+        },
+        {
+          "palabra": "aislante",
+          "inicioMs": 3900,
+          "finMs": 4320
+        },
+        {
+          "palabra": "que",
+          "inicioMs": 4320,
+          "finMs": 4480
+        },
+        {
+          "palabra": "protege",
+          "inicioMs": 4480,
+          "finMs": 4880
+        },
+        {
+          "palabra": "el",
+          "inicioMs": 4880,
+          "finMs": 4980
+        },
+        {
+          "palabra": "agua",
+          "inicioMs": 4980,
+          "finMs": 5120
+        },
+        {
+          "palabra": "líquida",
+          "inicioMs": 5120,
+          "finMs": 5440
+        },
+        {
+          "palabra": "inferior",
+          "inicioMs": 5440,
+          "finMs": 5780
+        }
+      ]
+    },
+    {
+      "id": 11,
+      "texto": "Gracias a esta pequeña rareza molecular del agua, los peces sobreviven el invierno y la vida en la Tierra pudo florecer.",
+      "icono": "Sparkles",
+      "colorIcono": "#38BDF8",
+      "tituloVisual": "VIDA SALVADA",
+      "composicionVisual": "plano_general",
+      "escenario": "lago_helado",
+      "layout": "narrativo",
+      "transicion": "zoom_in",
+      "efectosCamara": [
+        "drift"
+      ],
+      "palabrasClave": [
+        "rareza molecular",
+        "peces sobreviven",
+        "vida pudo florecer"
+      ],
+      "personajes": [
+        {
+          "id": "narrador",
+          "posicion": {
+            "x": 0,
+            "y": 50
+          },
+          "escala": 1.15,
+          "orientacion": "derecha",
+          "prop": "trophy",
+          "poseId": "celebrating_arms_up",
+          "expresion": "eureka",
+          "habla": true
+        }
+      ],
+      "duracionSegundos": 6.658,
+      "palabras": [
+        {
+          "palabra": "Gracias",
+          "inicioMs": 0,
+          "finMs": 480
+        },
+        {
+          "palabra": "a",
+          "inicioMs": 480,
+          "finMs": 680
+        },
+        {
+          "palabra": "esta",
+          "inicioMs": 680,
+          "finMs": 880
+        },
+        {
+          "palabra": "pequeña",
+          "inicioMs": 880,
+          "finMs": 1160
+        },
+        {
+          "palabra": "rareza",
+          "inicioMs": 1160,
+          "finMs": 1740
+        },
+        {
+          "palabra": "molecular",
+          "inicioMs": 1740,
+          "finMs": 2100
+        },
+        {
+          "palabra": "del",
+          "inicioMs": 2100,
+          "finMs": 2380
+        },
+        {
+          "palabra": "agua",
+          "inicioMs": 2380,
+          "finMs": 2680
+        },
+        {
+          "palabra": "los",
+          "inicioMs": 2800,
+          "finMs": 2880
+        },
+        {
+          "palabra": "peces",
+          "inicioMs": 2880,
+          "finMs": 3240
+        },
+        {
+          "palabra": "sobreviven",
+          "inicioMs": 3240,
+          "finMs": 3760
+        },
+        {
+          "palabra": "el",
+          "inicioMs": 3760,
+          "finMs": 3920
+        },
+        {
+          "palabra": "invierno",
+          "inicioMs": 3920,
+          "finMs": 4360
+        },
+        {
+          "palabra": "y",
+          "inicioMs": 4360,
+          "finMs": 4480
+        },
+        {
+          "palabra": "la",
+          "inicioMs": 4480,
+          "finMs": 4560
+        },
+        {
+          "palabra": "vida",
+          "inicioMs": 4560,
+          "finMs": 4780
+        },
+        {
+          "palabra": "en",
+          "inicioMs": 4780,
+          "finMs": 4900
+        },
+        {
+          "palabra": "la",
+          "inicioMs": 4900,
+          "finMs": 4960
+        },
+        {
+          "palabra": "Tierra",
+          "inicioMs": 4960,
+          "finMs": 5260
+        },
+        {
+          "palabra": "pudo",
+          "inicioMs": 5260,
+          "finMs": 5660
+        },
+        {
+          "palabra": "florecer",
+          "inicioMs": 5660,
+          "finMs": 6180
+        }
+      ]
+    }
+  ]
+}

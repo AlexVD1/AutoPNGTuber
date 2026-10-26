@@ -4,11 +4,11 @@
   "totales": {
     "posesCorporales": 68,
     "expresionesFaciales": 24,
-    "propsGenerales": 158,
-    "propsFestivos": 123,
+    "propsGenerales": 262,
+    "propsFestivos": 131,
     "combinacionesCompuestas": 34,
     "combinacionesFestivas": 20,
-    "totalRecursos": 427
+    "totalRecursos": 539
   },
   "compatibilidadLegacy": {
     "normal": "standing_relaxed",
@@ -5183,6 +5183,2346 @@
       "compatibleComposicion": true
     },
     {
+      "id": "prop_pan_de_muerto_xray_flicker",
+      "propParamId": "pan_de_muerto_xray_flicker",
+      "nombre": "Prop: Pan de Muerto con Escáner de Rayos X y Esqueleto Oculto",
+      "categoria": "props",
+      "subcategoria": "naturaleza_alimentos",
+      "emocion": "any",
+      "accion": "both",
+      "propsAsociados": [
+        "pan_de_muerto_xray_flicker"
+      ],
+      "ruta": "poses/props/prop_pan_de_muerto_xray_flicker.svg",
+      "formato": "svg",
+      "etiquetas": [
+        "pan_de_muerto",
+        "rayos_x",
+        "esqueleto",
+        "craneo",
+        "dia_de_muertos"
+      ],
+      "compatibleComposicion": true
+    },
+    {
+      "id": "prop_pan_base_engranaje",
+      "propParamId": "pan_base_engranaje",
+      "nombre": "Prop: Base Redonda de Pan Girando como Engranaje con Flechas de Ciclo Continuo",
+      "categoria": "props",
+      "subcategoria": "naturaleza_alimentos",
+      "emocion": "any",
+      "accion": "overhead",
+      "propsAsociados": [
+        "pan_base_engranaje"
+      ],
+      "ruta": "poses/props/prop_pan_base_engranaje.svg",
+      "formato": "svg",
+      "etiquetas": [
+        "pan_de_muerto",
+        "engranaje",
+        "ciclo_vida",
+        "eterno",
+        "sin_fin",
+        "rotacion"
+      ],
+      "compatibleComposicion": true
+    },
+    {
+      "id": "prop_pan_craneo_morph",
+      "propParamId": "pan_craneo_morph",
+      "nombre": "Prop: Esfera de Pan Flotante con Transición a Calaverita de Azúcar",
+      "categoria": "props",
+      "subcategoria": "naturaleza_alimentos",
+      "emocion": "any",
+      "accion": "overhead",
+      "propsAsociados": [
+        "pan_craneo_morph"
+      ],
+      "ruta": "poses/props/prop_pan_craneo_morph.svg",
+      "formato": "svg",
+      "etiquetas": [
+        "craneo",
+        "calaverita",
+        "azucar",
+        "esfera",
+        "pan_de_muerto",
+        "ofrenda"
+      ],
+      "compatibleComposicion": true
+    },
+    {
+      "id": "prop_esqueleto_canillas_matching",
+      "propParamId": "esqueleto_canillas_matching",
+      "nombre": "Prop: Esqueleto Stickman Acostado con Canillas Encajando en Extremidades",
+      "categoria": "props",
+      "subcategoria": "educacion_ciencia",
+      "emocion": "any",
+      "accion": "overhead",
+      "propsAsociados": [
+        "esqueleto_canillas_matching"
+      ],
+      "ruta": "poses/props/prop_esqueleto_canillas_matching.svg",
+      "formato": "svg",
+      "etiquetas": [
+        "canillas",
+        "huesos",
+        "femur",
+        "humero",
+        "esqueleto",
+        "anatomia",
+        "pan_de_muerto"
+      ],
+      "compatibleComposicion": true
+    },
+    {
+      "id": "prop_brujula_prehispanica_hero",
+      "propParamId": "brujula_prehispanica_hero",
+      "nombre": "Prop: Brújula Prehispánica Mesoamericana con Cuatro Rumbos y Haces de Luz",
+      "categoria": "props",
+      "subcategoria": "educacion_ciencia",
+      "emocion": "any",
+      "accion": "overhead",
+      "propsAsociados": [
+        "brujula_prehispanica_hero"
+      ],
+      "ruta": "poses/props/prop_brujula_prehispanica_hero.svg",
+      "formato": "svg",
+      "etiquetas": [
+        "brujula",
+        "prehispanica",
+        "cuatro_rumbos",
+        "dioses",
+        "mexica",
+        "cosmogonia"
+      ],
+      "compatibleComposicion": true
+    },
+    {
+      "id": "prop_vapor_azahar_blossoms",
+      "propParamId": "vapor_azahar_blossoms",
+      "nombre": "Prop: Vaho Aromático de Flor de Azahar con Flores Girando en el Vapor",
+      "categoria": "props",
+      "subcategoria": "naturaleza_alimentos",
+      "emocion": "any",
+      "accion": "overhead",
+      "propsAsociados": [
+        "vapor_azahar_blossoms"
+      ],
+      "ruta": "poses/props/prop_vapor_azahar_blossoms.svg",
+      "formato": "svg",
+      "etiquetas": [
+        "azahar",
+        "aroma",
+        "vaho",
+        "olor",
+        "difuntos",
+        "altar",
+        "naranjo"
+      ],
+      "compatibleComposicion": true
+    },
+    {
+      "id": "prop_chocolate_barro_steaming",
+      "propParamId": "chocolate_barro_steaming",
+      "nombre": "Prop: Taza de Barro Humeante con Chocolate Caliente y Pan con Mordida",
+      "categoria": "props",
+      "subcategoria": "naturaleza_alimentos",
+      "emocion": "any",
+      "accion": "overhead",
+      "propsAsociados": [
+        "chocolate_barro_steaming"
+      ],
+      "ruta": "poses/props/prop_chocolate_barro_steaming.svg",
+      "formato": "svg",
+      "etiquetas": [
+        "chocolate",
+        "barro",
+        "taza",
+        "pan_con_mordida",
+        "mordida",
+        "ofrenda",
+        "comida"
+      ],
+      "compatibleComposicion": true
+    },
+    {
+      "id": "prop_eye_patch",
+      "propParamId": "eye_patch",
+      "nombre": "Prop: Parche en el ojo de bribón medieval",
+      "categoria": "props",
+      "subcategoria": "historia_exploracion",
+      "emocion": "any",
+      "accion": "overhead",
+      "propsAsociados": [
+        "eye_patch"
+      ],
+      "ruta": "poses/props/prop_eye_patch.svg",
+      "formato": "svg",
+      "etiquetas": [
+        "parche",
+        "jack",
+        "ojo",
+        "pirata",
+        "medieval"
+      ],
+      "compatibleComposicion": true
+    },
+    {
+      "id": "prop_trident",
+      "propParamId": "trident",
+      "nombre": "Prop: Tridente del Diablo",
+      "categoria": "props",
+      "subcategoria": "herramientas_objetos",
+      "emocion": "any",
+      "accion": "right",
+      "propsAsociados": [
+        "trident"
+      ],
+      "ruta": "poses/props/prop_trident.svg",
+      "formato": "svg",
+      "etiquetas": [
+        "tridente",
+        "diablo",
+        "demonio",
+        "infierno",
+        "furia"
+      ],
+      "compatibleComposicion": true
+    },
+    {
+      "id": "prop_calabaza_a_nabo_morph",
+      "propParamId": "calabaza_a_nabo_morph",
+      "nombre": "Prop: Mutación de Calabaza a Nabo Tradicional Histórico",
+      "categoria": "props",
+      "subcategoria": "naturaleza_alimentos",
+      "emocion": "any",
+      "accion": "overhead",
+      "propsAsociados": [
+        "calabaza_a_nabo_morph"
+      ],
+      "ruta": "poses/props/prop_calabaza_a_nabo_morph.svg",
+      "formato": "svg",
+      "etiquetas": [
+        "calabaza",
+        "nabo",
+        "mutacion",
+        "rayo",
+        "pesadilla",
+        "halloween"
+      ],
+      "compatibleComposicion": true
+    },
+    {
+      "id": "prop_diablo_arbol_cruces",
+      "propParamId": "diablo_arbol_cruces",
+      "nombre": "Prop: Diablo Atrapado en Árbol con Cruces Talladas por Jack",
+      "categoria": "props",
+      "subcategoria": "educacion_ciencia",
+      "emocion": "any",
+      "accion": "overhead",
+      "propsAsociados": [
+        "diablo_arbol_cruces"
+      ],
+      "ruta": "poses/props/prop_diablo_arbol_cruces.svg",
+      "formato": "svg",
+      "etiquetas": [
+        "diablo",
+        "arbol",
+        "cruces",
+        "jack",
+        "engano",
+        "celta",
+        "leyenda"
+      ],
+      "compatibleComposicion": true
+    },
+    {
+      "id": "prop_cielo_infierno_puertas",
+      "propParamId": "cielo_infierno_puertas",
+      "nombre": "Prop: Puertas del Cielo Rechazado y Rejas del Infierno",
+      "categoria": "props",
+      "subcategoria": "educacion_ciencia",
+      "emocion": "any",
+      "accion": "overhead",
+      "propsAsociados": [
+        "cielo_infierno_puertas"
+      ],
+      "ruta": "poses/props/prop_cielo_infierno_puertas.svg",
+      "formato": "svg",
+      "etiquetas": [
+        "cielo",
+        "infierno",
+        "candado",
+        "rechazado",
+        "puertas",
+        "alma",
+        "limbo"
+      ],
+      "compatibleComposicion": true
+    },
+    {
+      "id": "prop_carbon_infierno_malabares",
+      "propParamId": "carbon_infierno_malabares",
+      "nombre": "Prop: Brasa Ardiente del Infierno con Malabares de Calor",
+      "categoria": "props",
+      "subcategoria": "educacion_ciencia",
+      "emocion": "any",
+      "accion": "overhead",
+      "propsAsociados": [
+        "carbon_infierno_malabares"
+      ],
+      "ruta": "poses/props/prop_carbon_infierno_malabares.svg",
+      "formato": "svg",
+      "etiquetas": [
+        "carbon",
+        "infierno",
+        "brasa",
+        "fuego",
+        "quemar",
+        "malabares",
+        "luz"
+      ],
+      "compatibleComposicion": true
+    },
+    {
+      "id": "prop_nabo_linterna_jack",
+      "propParamId": "nabo_linterna_jack",
+      "nombre": "Prop: Nabo Linterna Original de Jack con Luz Interior",
+      "categoria": "props",
+      "subcategoria": "naturaleza_alimentos",
+      "emocion": "any",
+      "accion": "overhead",
+      "propsAsociados": [
+        "nabo_linterna_jack"
+      ],
+      "ruta": "poses/props/prop_nabo_linterna_jack.svg",
+      "formato": "svg",
+      "etiquetas": [
+        "nabo",
+        "linterna",
+        "jack_o_lantern",
+        "brasa",
+        "celta",
+        "samhain"
+      ],
+      "compatibleComposicion": true
+    },
+    {
+      "id": "prop_cabana_nabos_proteccion",
+      "propParamId": "cabana_nabos_proteccion",
+      "nombre": "Prop: Ventana con Nabos Aterradores Ahuyentando el Espíritu Errante",
+      "categoria": "props",
+      "subcategoria": "educacion_ciencia",
+      "emocion": "any",
+      "accion": "overhead",
+      "propsAsociados": [
+        "cabana_nabos_proteccion"
+      ],
+      "ruta": "poses/props/prop_cabana_nabos_proteccion.svg",
+      "formato": "svg",
+      "etiquetas": [
+        "cabana",
+        "nabos",
+        "ritual",
+        "samhain",
+        "proteccion",
+        "espiritu",
+        "fantasma"
+      ],
+      "compatibleComposicion": true
+    },
+    {
+      "id": "prop_nabo_duro_vs_calabaza",
+      "propParamId": "nabo_duro_vs_calabaza",
+      "nombre": "Prop: Cuchillo Doblado en Nabo Duro vs Calabaza Dócil",
+      "categoria": "props",
+      "subcategoria": "naturaleza_alimentos",
+      "emocion": "any",
+      "accion": "overhead",
+      "propsAsociados": [
+        "nabo_duro_vs_calabaza"
+      ],
+      "ruta": "poses/props/prop_nabo_duro_vs_calabaza.svg",
+      "formato": "svg",
+      "etiquetas": [
+        "nabo_duro",
+        "calabaza",
+        "cuchillo_doblado",
+        "america",
+        "comparacion"
+      ],
+      "compatibleComposicion": true
+    },
+    {
+      "id": "prop_gota_rupert_hero",
+      "propParamId": "gota_rupert_hero",
+      "nombre": "Prop: Gota de Prince Rupert de Cristal Indestructible",
+      "categoria": "props",
+      "subcategoria": "educacion_ciencia",
+      "emocion": "any",
+      "accion": "overhead",
+      "propsAsociados": [
+        "gota_rupert_hero"
+      ],
+      "ruta": "poses/props/prop_gota_rupert_hero.svg",
+      "formato": "svg",
+      "etiquetas": [
+        "gota_rupert",
+        "vidrio",
+        "cristal",
+        "paradoja",
+        "ciencia",
+        "resistencia"
+      ],
+      "compatibleComposicion": true
+    },
+    {
+      "id": "prop_bala_impacto_aplastada",
+      "propParamId": "bala_impacto_aplastada",
+      "nombre": "Prop: Bala de Pistola Aplastada contra la Gota de Rupert",
+      "categoria": "props",
+      "subcategoria": "educacion_ciencia",
+      "emocion": "any",
+      "accion": "overhead",
+      "propsAsociados": [
+        "bala_impacto_aplastada"
+      ],
+      "ruta": "poses/props/prop_bala_impacto_aplastada.svg",
+      "formato": "svg",
+      "etiquetas": [
+        "bala",
+        "impacto",
+        "blindaje",
+        "choque",
+        "bala_aplastada",
+        "gota_rupert"
+      ],
+      "compatibleComposicion": true
+    },
+    {
+      "id": "prop_mazo_demolicion_rebote",
+      "propParamId": "mazo_demolicion_rebote",
+      "nombre": "Prop: Mazo de Demolición Rebotando como Titanio",
+      "categoria": "props",
+      "subcategoria": "educacion_ciencia",
+      "emocion": "any",
+      "accion": "overhead",
+      "propsAsociados": [
+        "mazo_demolicion_rebote"
+      ],
+      "ruta": "poses/props/prop_mazo_demolicion_rebote.svg",
+      "formato": "svg",
+      "etiquetas": [
+        "mazo",
+        "martillo",
+        "rebote",
+        "golpe",
+        "titanio",
+        "fuerza"
+      ],
+      "compatibleComposicion": true
+    },
+    {
+      "id": "prop_tanque_temple_vidrio",
+      "propParamId": "tanque_temple_vidrio",
+      "nombre": "Prop: Tanque de Temple con Vidrio Fundido en Agua Helada",
+      "categoria": "props",
+      "subcategoria": "educacion_ciencia",
+      "emocion": "any",
+      "accion": "overhead",
+      "propsAsociados": [
+        "tanque_temple_vidrio"
+      ],
+      "ruta": "poses/props/prop_tanque_temple_vidrio.svg",
+      "formato": "svg",
+      "etiquetas": [
+        "tanque",
+        "temple",
+        "vidrio_fundido",
+        "agua_helada",
+        "termodinamica",
+        "choque_termico"
+      ],
+      "compatibleComposicion": true
+    },
+    {
+      "id": "prop_corte_molecular_tension",
+      "propParamId": "corte_molecular_tension",
+      "nombre": "Prop: Corte Molecular: Compresión Exterior vs Tensión Núcleo",
+      "categoria": "props",
+      "subcategoria": "educacion_ciencia",
+      "emocion": "any",
+      "accion": "overhead",
+      "propsAsociados": [
+        "corte_molecular_tension"
+      ],
+      "ruta": "poses/props/prop_corte_molecular_tension.svg",
+      "formato": "svg",
+      "etiquetas": [
+        "corte_molecular",
+        "tension",
+        "compresion",
+        "malla",
+        "red_cristalina",
+        "fisica"
+      ],
+      "compatibleComposicion": true
+    },
+    {
+      "id": "prop_gota_fractura_rayos",
+      "propParamId": "gota_fractura_rayos",
+      "nombre": "Prop: Gota con Cola Rota y Fractura Lumínica a 5,000 km/h",
+      "categoria": "props",
+      "subcategoria": "educacion_ciencia",
+      "emocion": "any",
+      "accion": "overhead",
+      "propsAsociados": [
+        "gota_fractura_rayos"
+      ],
+      "ruta": "poses/props/prop_gota_fractura_rayos.svg",
+      "formato": "svg",
+      "etiquetas": [
+        "fractura",
+        "rayos",
+        "onda_choque",
+        "cola_rota",
+        "ultrasonico",
+        "5000_kmh"
+      ],
+      "compatibleComposicion": true
+    },
+    {
+      "id": "prop_pulverizacion_vidrio_nube",
+      "propParamId": "pulverizacion_vidrio_nube",
+      "nombre": "Prop: Explosión Volumétrica y Pulverización Catastrófica de Vidrio",
+      "categoria": "props",
+      "subcategoria": "educacion_ciencia",
+      "emocion": "any",
+      "accion": "overhead",
+      "propsAsociados": [
+        "pulverizacion_vidrio_nube"
+      ],
+      "ruta": "poses/props/prop_pulverizacion_vidrio_nube.svg",
+      "formato": "svg",
+      "etiquetas": [
+        "pulverizacion",
+        "explosion",
+        "polvo_vidrio",
+        "catastrofico",
+        "nube",
+        "shockwave"
+      ],
+      "compatibleComposicion": true
+    },
+    {
+      "id": "prop_vaso_burbuja_estroboscopica",
+      "propParamId": "vaso_burbuja_estroboscopica",
+      "nombre": "Prop: Vaso de Precipitados con Burbuja y Destello Solar",
+      "categoria": "props",
+      "subcategoria": "educacion_ciencia",
+      "emocion": "any",
+      "accion": "overhead",
+      "propsAsociados": [
+        "vaso_burbuja_estroboscopica"
+      ],
+      "ruta": "poses/props/prop_vaso_burbuja_estroboscopica.svg",
+      "formato": "svg",
+      "etiquetas": [
+        "vaso",
+        "burbuja",
+        "sonoluminiscencia",
+        "destello",
+        "agua",
+        "luz"
+      ],
+      "compatibleComposicion": true
+    },
+    {
+      "id": "prop_pecera_paletas_pingpong",
+      "propParamId": "pecera_paletas_pingpong",
+      "nombre": "Prop: Pecera con Paletas de Ping Pong Intentando Atrapar Burbuja",
+      "categoria": "props",
+      "subcategoria": "reacciones_humor",
+      "emocion": "any",
+      "accion": "overhead",
+      "propsAsociados": [
+        "pecera_paletas_pingpong"
+      ],
+      "ruta": "poses/props/prop_pecera_paletas_pingpong.svg",
+      "formato": "svg",
+      "etiquetas": [
+        "pecera",
+        "paletas",
+        "ping_pong",
+        "burbuja_esquiva",
+        "humor",
+        "agua"
+      ],
+      "compatibleComposicion": true
+    },
+    {
+      "id": "prop_matraz_transductores_ultrasonido",
+      "propParamId": "matraz_transductores_ultrasonido",
+      "nombre": "Prop: Matraz Esférico con Transductores de Ultrasonido y Trampa Acústica",
+      "categoria": "props",
+      "subcategoria": "educacion_ciencia",
+      "emocion": "any",
+      "accion": "overhead",
+      "propsAsociados": [
+        "matraz_transductores_ultrasonido"
+      ],
+      "ruta": "poses/props/prop_matraz_transductores_ultrasonido.svg",
+      "formato": "svg",
+      "etiquetas": [
+        "matraz",
+        "transductores",
+        "ultrasonido",
+        "trampa_acustica",
+        "levitacion",
+        "ondas"
+      ],
+      "compatibleComposicion": true
+    },
+    {
+      "id": "prop_burbuja_colapso_hidrodinamico",
+      "propParamId": "burbuja_colapso_hidrodinamico",
+      "nombre": "Prop: Burbuja en Colapso Hidrodinámico y Ondas de Choque",
+      "categoria": "props",
+      "subcategoria": "educacion_ciencia",
+      "emocion": "any",
+      "accion": "overhead",
+      "propsAsociados": [
+        "burbuja_colapso_hidrodinamico"
+      ],
+      "ruta": "poses/props/prop_burbuja_colapso_hidrodinamico.svg",
+      "formato": "svg",
+      "etiquetas": [
+        "burbuja",
+        "cavitacion",
+        "colapso",
+        "hidrodinamica",
+        "ondas_choque"
+      ],
+      "compatibleComposicion": true
+    },
+    {
+      "id": "prop_termometro_10000_grados",
+      "propParamId": "termometro_10000_grados",
+      "nombre": "Prop: Termómetro Sobrecargado a 10,000 °C y Colisión Cuántica",
+      "categoria": "props",
+      "subcategoria": "educacion_ciencia",
+      "emocion": "any",
+      "accion": "overhead",
+      "propsAsociados": [
+        "termometro_10000_grados"
+      ],
+      "ruta": "poses/props/prop_termometro_10000_grados.svg",
+      "formato": "svg",
+      "etiquetas": [
+        "termometro",
+        "10000_grados",
+        "temperatura_solar",
+        "calor",
+        "energia",
+        "moleculas"
+      ],
+      "compatibleComposicion": true
+    },
+    {
+      "id": "prop_plasma_fogonazo_estelar",
+      "propParamId": "plasma_fogonazo_estelar",
+      "nombre": "Prop: Fogonazo de Plasma Estelar Azul-Violeta",
+      "categoria": "props",
+      "subcategoria": "educacion_ciencia",
+      "emocion": "any",
+      "accion": "overhead",
+      "propsAsociados": [
+        "plasma_fogonazo_estelar"
+      ],
+      "ruta": "poses/props/prop_plasma_fogonazo_estelar.svg",
+      "formato": "svg",
+      "etiquetas": [
+        "plasma",
+        "fogonazo",
+        "estelar",
+        "fotones",
+        "luz",
+        "cuantico"
+      ],
+      "compatibleComposicion": true
+    },
+    {
+      "id": "prop_matraz_estrella_miniatura",
+      "propParamId": "matraz_estrella_miniatura",
+      "nombre": "Prop: Matraz con Estrella Azul en Miniatura Palpitando en Agua",
+      "categoria": "props",
+      "subcategoria": "educacion_ciencia",
+      "emocion": "any",
+      "accion": "overhead",
+      "propsAsociados": [
+        "matraz_estrella_miniatura"
+      ],
+      "ruta": "poses/props/prop_matraz_estrella_miniatura.svg",
+      "formato": "svg",
+      "etiquetas": [
+        "estrella_miniatura",
+        "matraz",
+        "luz_azul",
+        "luciernaga",
+        "cierre"
+      ],
+      "compatibleComposicion": true
+    },
+    {
+      "id": "prop_welding_mask",
+      "propParamId": "welding_mask",
+      "nombre": "Prop: Careta de Soldador Protectora",
+      "categoria": "props",
+      "subcategoria": "historia_exploracion",
+      "emocion": "any",
+      "accion": "overhead",
+      "propsAsociados": [
+        "welding_mask"
+      ],
+      "ruta": "poses/props/prop_welding_mask.svg",
+      "formato": "svg",
+      "etiquetas": [
+        "careta",
+        "soldador",
+        "proteccion",
+        "mascara",
+        "laboratorio"
+      ],
+      "compatibleComposicion": true
+    },
+    {
+      "id": "prop_earmuffs_polar",
+      "propParamId": "earmuffs_polar",
+      "nombre": "Prop: Orejeras Térmicas Polares",
+      "categoria": "props",
+      "subcategoria": "historia_exploracion",
+      "emocion": "any",
+      "accion": "overhead",
+      "propsAsociados": [
+        "earmuffs_polar"
+      ],
+      "ruta": "poses/props/prop_earmuffs_polar.svg",
+      "formato": "svg",
+      "etiquetas": [
+        "orejeras",
+        "antartida",
+        "frio",
+        "polar",
+        "abrigo"
+      ],
+      "compatibleComposicion": true
+    },
+    {
+      "id": "prop_bufanda_polar_viento",
+      "propParamId": "bufanda_polar_viento",
+      "nombre": "Prop: Bufanda Polar Ondeando al Viento",
+      "categoria": "props",
+      "subcategoria": "historia_exploracion",
+      "emocion": "any",
+      "accion": "overhead",
+      "propsAsociados": [
+        "bufanda_polar_viento"
+      ],
+      "ruta": "poses/props/prop_bufanda_polar_viento.svg",
+      "formato": "svg",
+      "etiquetas": [
+        "bufanda",
+        "viento",
+        "polar",
+        "rojo",
+        "antartida"
+      ],
+      "compatibleComposicion": true
+    },
+    {
+      "id": "prop_trozo_hielo_antartico",
+      "propParamId": "trozo_hielo_antartico",
+      "nombre": "Prop: Trozo de Hielo Glacial Rugoso",
+      "categoria": "props",
+      "subcategoria": "educacion_ciencia",
+      "emocion": "any",
+      "accion": "right",
+      "propsAsociados": [
+        "trozo_hielo_antartico"
+      ],
+      "ruta": "poses/props/prop_trozo_hielo_antartico.svg",
+      "formato": "svg",
+      "etiquetas": [
+        "hielo",
+        "glaciar",
+        "antartida",
+        "cristal",
+        "piedra"
+      ],
+      "compatibleComposicion": true
+    },
+    {
+      "id": "prop_cinta_metrica_90m",
+      "propParamId": "cinta_metrica_90m",
+      "nombre": "Prop: Cinta Métrica Infinita 90 Metros",
+      "categoria": "props",
+      "subcategoria": "educacion_ciencia",
+      "emocion": "any",
+      "accion": "right",
+      "propsAsociados": [
+        "cinta_metrica_90m"
+      ],
+      "ruta": "poses/props/prop_cinta_metrica_90m.svg",
+      "formato": "svg",
+      "etiquetas": [
+        "cinta_metrica",
+        "90m",
+        "medicion",
+        "profundidad",
+        "glaciar"
+      ],
+      "compatibleComposicion": true
+    },
+    {
+      "id": "prop_cubeta_hielo_rocas",
+      "propParamId": "cubeta_hielo_rocas",
+      "nombre": "Prop: Cubeta con Hielo y Rocas Antárticas",
+      "categoria": "props",
+      "subcategoria": "vida_cotidiana",
+      "emocion": "any",
+      "accion": "left",
+      "propsAsociados": [
+        "cubeta_hielo_rocas"
+      ],
+      "ruta": "poses/props/prop_cubeta_hielo_rocas.svg",
+      "formato": "svg",
+      "etiquetas": [
+        "cubeta",
+        "hielo",
+        "piedras",
+        "experimento",
+        "balde"
+      ],
+      "compatibleComposicion": true
+    },
+    {
+      "id": "prop_holograma_nave_espacial",
+      "propParamId": "holograma_nave_espacial",
+      "nombre": "Prop: Holograma Nave Espacial con Láser",
+      "categoria": "props",
+      "subcategoria": "tecnologia",
+      "emocion": "any",
+      "accion": "overhead",
+      "propsAsociados": [
+        "holograma_nave_espacial"
+      ],
+      "ruta": "poses/props/prop_holograma_nave_espacial.svg",
+      "formato": "svg",
+      "etiquetas": [
+        "holograma",
+        "nave_espacial",
+        "laser",
+        "star_wars",
+        "scifi"
+      ],
+      "compatibleComposicion": true
+    },
+    {
+      "id": "prop_diagrama_oido_dispersion",
+      "propParamId": "diagrama_oido_dispersion",
+      "nombre": "Prop: Diagrama Oído y Recepción Acústica",
+      "categoria": "props",
+      "subcategoria": "educacion_ciencia",
+      "emocion": "any",
+      "accion": "overhead",
+      "propsAsociados": [
+        "diagrama_oido_dispersion"
+      ],
+      "ruta": "poses/props/prop_diagrama_oido_dispersion.svg",
+      "formato": "svg",
+      "etiquetas": [
+        "oido",
+        "diagrama",
+        "ondas",
+        "frecuencia",
+        "percepcion"
+      ],
+      "compatibleComposicion": true
+    },
+    {
+      "id": "prop_mochila_expedicion_polar",
+      "propParamId": "mochila_expedicion_polar",
+      "nombre": "Prop: Mochila de Expedición Polar",
+      "categoria": "props",
+      "subcategoria": "historia_exploracion",
+      "emocion": "any",
+      "accion": "left",
+      "propsAsociados": [
+        "mochila_expedicion_polar"
+      ],
+      "ruta": "poses/props/prop_mochila_expedicion_polar.svg",
+      "formato": "svg",
+      "etiquetas": [
+        "mochila",
+        "expedicion",
+        "polar",
+        "antartida",
+        "viaje"
+      ],
+      "compatibleComposicion": true
+    },
+    {
+      "id": "prop_barquito_papel",
+      "propParamId": "barquito_papel",
+      "nombre": "Prop: Barquito de Papel Plegado",
+      "categoria": "props",
+      "subcategoria": "vida_cotidiana",
+      "emocion": "any",
+      "accion": "right",
+      "propsAsociados": [
+        "barquito_papel"
+      ],
+      "ruta": "poses/props/prop_barquito_papel.svg",
+      "formato": "svg",
+      "etiquetas": [
+        "barquito",
+        "papel",
+        "origami",
+        "estanque",
+        "agua"
+      ],
+      "compatibleComposicion": true
+    },
+    {
+      "id": "prop_bate_fotones",
+      "propParamId": "bate_fotones",
+      "nombre": "Prop: Bate de Béisbol Fotónico",
+      "categoria": "props",
+      "subcategoria": "educacion_ciencia",
+      "emocion": "any",
+      "accion": "right",
+      "propsAsociados": [
+        "bate_fotones"
+      ],
+      "ruta": "poses/props/prop_bate_fotones.svg",
+      "formato": "svg",
+      "etiquetas": [
+        "bate",
+        "beisbol",
+        "impulso",
+        "momento",
+        "foton"
+      ],
+      "compatibleComposicion": true
+    },
+    {
+      "id": "prop_esfera_foton_dorada",
+      "propParamId": "esfera_foton_dorada",
+      "nombre": "Prop: Esfera de Fotón Solar Radiante",
+      "categoria": "props",
+      "subcategoria": "educacion_ciencia",
+      "emocion": "any",
+      "accion": "overhead",
+      "propsAsociados": [
+        "esfera_foton_dorada"
+      ],
+      "ruta": "poses/props/prop_esfera_foton_dorada.svg",
+      "formato": "svg",
+      "etiquetas": [
+        "foton",
+        "luz",
+        "particula",
+        "energia",
+        "sol"
+      ],
+      "compatibleComposicion": true
+    },
+    {
+      "id": "prop_capsula_espacial_modulo",
+      "propParamId": "capsula_espacial_modulo",
+      "nombre": "Prop: Cápsula Espacial Modular",
+      "categoria": "props",
+      "subcategoria": "tecnologia",
+      "emocion": "any",
+      "accion": "left",
+      "propsAsociados": [
+        "capsula_espacial_modulo"
+      ],
+      "ruta": "poses/props/prop_capsula_espacial_modulo.svg",
+      "formato": "svg",
+      "etiquetas": [
+        "capsula",
+        "nave",
+        "espacial",
+        "astronauta",
+        "cosmos"
+      ],
+      "compatibleComposicion": true
+    },
+    {
+      "id": "prop_vela_solar_mylar",
+      "propParamId": "vela_solar_mylar",
+      "nombre": "Prop: Vela Solar Reflectante Mylar",
+      "categoria": "props",
+      "subcategoria": "tecnologia",
+      "emocion": "any",
+      "accion": "overhead",
+      "propsAsociados": [
+        "vela_solar_mylar"
+      ],
+      "ruta": "poses/props/prop_vela_solar_mylar.svg",
+      "formato": "svg",
+      "etiquetas": [
+        "vela_solar",
+        "mylar",
+        "espejo",
+        "propulsion",
+        "fotones"
+      ],
+      "compatibleComposicion": true
+    },
+    {
+      "id": "prop_diagrama_empuje_2x",
+      "propParamId": "diagrama_empuje_2x",
+      "nombre": "Prop: Insignia Doble Empuje 2X",
+      "categoria": "props",
+      "subcategoria": "educacion_ciencia",
+      "emocion": "any",
+      "accion": "overhead",
+      "propsAsociados": [
+        "diagrama_empuje_2x"
+      ],
+      "ruta": "poses/props/prop_diagrama_empuje_2x.svg",
+      "formato": "svg",
+      "etiquetas": [
+        "diagrama",
+        "empuje",
+        "rebote",
+        "2x",
+        "fisica"
+      ],
+      "compatibleComposicion": true
+    },
+    {
+      "id": "prop_velocimetro_cosmico",
+      "propParamId": "velocimetro_cosmico",
+      "nombre": "Prop: Velocímetro Digital Cósmico",
+      "categoria": "props",
+      "subcategoria": "tecnologia",
+      "emocion": "any",
+      "accion": "overhead",
+      "propsAsociados": [
+        "velocimetro_cosmico"
+      ],
+      "ruta": "poses/props/prop_velocimetro_cosmico.svg",
+      "formato": "svg",
+      "etiquetas": [
+        "velocimetro",
+        "aceleracion",
+        "warp",
+        "hud",
+        "cosmos"
+      ],
+      "compatibleComposicion": true
+    },
+    {
+      "id": "prop_gafas_aviador_futuristas",
+      "propParamId": "gafas_aviador_futuristas",
+      "nombre": "Prop: Gafas de Aviador Futuristas",
+      "categoria": "props",
+      "subcategoria": "tecnologia",
+      "emocion": "any",
+      "accion": "overhead",
+      "propsAsociados": [
+        "gafas_aviador_futuristas"
+      ],
+      "ruta": "poses/props/prop_gafas_aviador_futuristas.svg",
+      "formato": "svg",
+      "etiquetas": [
+        "gafas",
+        "aviador",
+        "futurista",
+        "proteccion",
+        "accesorios"
+      ],
+      "compatibleComposicion": true
+    },
+    {
+      "id": "prop_bufanda_surf_estelar",
+      "propParamId": "bufanda_surf_estelar",
+      "nombre": "Prop: Bufanda Cósmica de Surf Estelar",
+      "categoria": "props",
+      "subcategoria": "historia_exploracion",
+      "emocion": "any",
+      "accion": "overhead",
+      "propsAsociados": [
+        "bufanda_surf_estelar"
+      ],
+      "ruta": "poses/props/prop_bufanda_surf_estelar.svg",
+      "formato": "svg",
+      "etiquetas": [
+        "bufanda",
+        "surf",
+        "estelar",
+        "cosmica",
+        "vuelo"
+      ],
+      "compatibleComposicion": true
+    },
+    {
+      "id": "prop_vaso_espacial_vacio",
+      "propParamId": "vaso_espacial_vacio",
+      "nombre": "Prop: Vaso de Vidrio Boca Abajo",
+      "categoria": "props",
+      "subcategoria": "vida_cotidiana",
+      "emocion": "any",
+      "accion": "right",
+      "propsAsociados": [
+        "vaso_espacial_vacio"
+      ],
+      "ruta": "poses/props/prop_vaso_espacial_vacio.svg",
+      "formato": "svg",
+      "etiquetas": [
+        "vaso",
+        "vidrio",
+        "espacio",
+        "agua",
+        "vacio"
+      ],
+      "compatibleComposicion": true
+    },
+    {
+      "id": "prop_bolsa_agua_astronauta",
+      "propParamId": "bolsa_agua_astronauta",
+      "nombre": "Prop: Bolsa de Hidratación Espacial",
+      "categoria": "props",
+      "subcategoria": "tecnologia",
+      "emocion": "any",
+      "accion": "left",
+      "propsAsociados": [
+        "bolsa_agua_astronauta"
+      ],
+      "ruta": "poses/props/prop_bolsa_agua_astronauta.svg",
+      "formato": "svg",
+      "etiquetas": [
+        "bolsa_agua",
+        "nasa",
+        "astronauta",
+        "bebida",
+        "espacio"
+      ],
+      "compatibleComposicion": true
+    },
+    {
+      "id": "prop_esfera_agua_flotante",
+      "propParamId": "esfera_agua_flotante",
+      "nombre": "Prop: Esfera de Agua Flotante en Microgravedad",
+      "categoria": "props",
+      "subcategoria": "educacion_ciencia",
+      "emocion": "any",
+      "accion": "overhead",
+      "propsAsociados": [
+        "esfera_agua_flotante"
+      ],
+      "ruta": "poses/props/prop_esfera_agua_flotante.svg",
+      "formato": "svg",
+      "etiquetas": [
+        "esfera_agua",
+        "gota",
+        "flotante",
+        "tension_superficial",
+        "microgravedad"
+      ],
+      "compatibleComposicion": true
+    },
+    {
+      "id": "prop_pececito_hule_dorado",
+      "propParamId": "pececito_hule_dorado",
+      "nombre": "Prop: Pececito de Hule Dorado",
+      "categoria": "props",
+      "subcategoria": "vida_cotidiana",
+      "emocion": "any",
+      "accion": "right",
+      "propsAsociados": [
+        "pececito_hule_dorado"
+      ],
+      "ruta": "poses/props/prop_pececito_hule_dorado.svg",
+      "formato": "svg",
+      "etiquetas": [
+        "pececito",
+        "pez",
+        "hule",
+        "dorado",
+        "juguete"
+      ],
+      "compatibleComposicion": true
+    },
+    {
+      "id": "prop_popote_astronauta_largo",
+      "propParamId": "popote_astronauta_largo",
+      "nombre": "Prop: Popote de Astronauta con Adhesión",
+      "categoria": "props",
+      "subcategoria": "tecnologia",
+      "emocion": "any",
+      "accion": "right",
+      "propsAsociados": [
+        "popote_astronauta_largo"
+      ],
+      "ruta": "poses/props/prop_popote_astronauta_largo.svg",
+      "formato": "svg",
+      "etiquetas": [
+        "popote",
+        "tubo",
+        "succion",
+        "adhesion",
+        "astronauta"
+      ],
+      "compatibleComposicion": true
+    },
+    {
+      "id": "prop_mascara_agua_facial",
+      "propParamId": "mascara_agua_facial",
+      "nombre": "Prop: Máscara de Agua Adherida al Rostro",
+      "categoria": "props",
+      "subcategoria": "educacion_ciencia",
+      "emocion": "any",
+      "accion": "overhead",
+      "propsAsociados": [
+        "mascara_agua_facial"
+      ],
+      "ruta": "poses/props/prop_mascara_agua_facial.svg",
+      "formato": "svg",
+      "etiquetas": [
+        "mascara_agua",
+        "adhesion",
+        "casco_agua",
+        "asfixia",
+        "astronauta"
+      ],
+      "compatibleComposicion": true
+    },
+    {
+      "id": "prop_toalla_espacial_microfibra",
+      "propParamId": "toalla_espacial_microfibra",
+      "nombre": "Prop: Toalla Absorbente de Microfibra",
+      "categoria": "props",
+      "subcategoria": "vida_cotidiana",
+      "emocion": "any",
+      "accion": "left",
+      "propsAsociados": [
+        "toalla_espacial_microfibra"
+      ],
+      "ruta": "poses/props/prop_toalla_espacial_microfibra.svg",
+      "formato": "svg",
+      "etiquetas": [
+        "toalla",
+        "microfibra",
+        "secado",
+        "limpieza",
+        "higiene"
+      ],
+      "compatibleComposicion": true
+    },
+    {
+      "id": "prop_compas_cientifico",
+      "propParamId": "compas_cientifico",
+      "nombre": "Prop: Compás de Dibujo Científico",
+      "categoria": "props",
+      "subcategoria": "educacion_ciencia",
+      "emocion": "any",
+      "accion": "right",
+      "propsAsociados": [
+        "compas_cientifico"
+      ],
+      "ruta": "poses/props/prop_compas_cientifico.svg",
+      "formato": "svg",
+      "etiquetas": [
+        "compas",
+        "geometria",
+        "circulo",
+        "dibujo",
+        "ciencia"
+      ],
+      "compatibleComposicion": true
+    },
+    {
+      "id": "prop_baston_trekking_montana",
+      "propParamId": "baston_trekking_montana",
+      "nombre": "Prop: Bastón de Trekking de Alta Montaña",
+      "categoria": "props",
+      "subcategoria": "vida_cotidiana",
+      "emocion": "any",
+      "accion": "right",
+      "propsAsociados": [
+        "baston_trekking_montana"
+      ],
+      "ruta": "poses/props/prop_baston_trekking_montana.svg",
+      "formato": "svg",
+      "etiquetas": [
+        "baston",
+        "trekking",
+        "senderismo",
+        "montana",
+        "nieve"
+      ],
+      "compatibleComposicion": true
+    },
+    {
+      "id": "prop_gafas_ventisca_oscuras",
+      "propParamId": "gafas_ventisca_oscuras",
+      "nombre": "Prop: Gafas de Glaciar y Ventisca",
+      "categoria": "props",
+      "subcategoria": "historia_exploracion",
+      "emocion": "any",
+      "accion": "overhead",
+      "propsAsociados": [
+        "gafas_ventisca_oscuras"
+      ],
+      "ruta": "poses/props/prop_gafas_ventisca_oscuras.svg",
+      "formato": "svg",
+      "etiquetas": [
+        "gafas",
+        "glaciar",
+        "ventisca",
+        "nieve",
+        "proteccion"
+      ],
+      "compatibleComposicion": true
+    },
+    {
+      "id": "prop_mochila_expedicion_montana",
+      "propParamId": "mochila_expedicion_montana",
+      "nombre": "Prop: Mochila de Expedición Andina",
+      "categoria": "props",
+      "subcategoria": "historia_exploracion",
+      "emocion": "any",
+      "accion": "left",
+      "propsAsociados": [
+        "mochila_expedicion_montana"
+      ],
+      "ruta": "poses/props/prop_mochila_expedicion_montana.svg",
+      "formato": "svg",
+      "etiquetas": [
+        "mochila",
+        "expedicion",
+        "trekking",
+        "montanismo",
+        "andes"
+      ],
+      "compatibleComposicion": true
+    },
+    {
+      "id": "prop_estaca_penitente_hielo",
+      "propParamId": "estaca_penitente_hielo",
+      "nombre": "Prop: Cuchilla de Hielo Penitente",
+      "categoria": "props",
+      "subcategoria": "educacion_ciencia",
+      "emocion": "any",
+      "accion": "overhead",
+      "propsAsociados": [
+        "estaca_penitente_hielo"
+      ],
+      "ruta": "poses/props/prop_estaca_penitente_hielo.svg",
+      "formato": "svg",
+      "etiquetas": [
+        "penitente",
+        "hielo",
+        "cuchilla",
+        "estaca",
+        "sublimacion"
+      ],
+      "compatibleComposicion": true
+    },
+    {
+      "id": "prop_fosforo_encendido_sublimacion",
+      "propParamId": "fosforo_encendido_sublimacion",
+      "nombre": "Prop: Fósforo con Sublimación de Vapor",
+      "categoria": "props",
+      "subcategoria": "vida_cotidiana",
+      "emocion": "any",
+      "accion": "right",
+      "propsAsociados": [
+        "fosforo_encendido_sublimacion"
+      ],
+      "ruta": "poses/props/prop_fosforo_encendido_sublimacion.svg",
+      "formato": "svg",
+      "etiquetas": [
+        "fosforo",
+        "fuego",
+        "llama",
+        "vapor",
+        "sublimacion"
+      ],
+      "compatibleComposicion": true
+    },
+    {
+      "id": "prop_puntero_divulgador",
+      "propParamId": "puntero_divulgador",
+      "nombre": "Prop: Puntero Telescópico de Divulgador",
+      "categoria": "props",
+      "subcategoria": "educacion_ciencia",
+      "emocion": "any",
+      "accion": "right",
+      "propsAsociados": [
+        "puntero_divulgador"
+      ],
+      "ruta": "poses/props/prop_puntero_divulgador.svg",
+      "formato": "svg",
+      "etiquetas": [
+        "puntero",
+        "vara",
+        "explicacion",
+        "profesor",
+        "ciencia"
+      ],
+      "compatibleComposicion": true
+    },
+    {
+      "id": "prop_bola_nieve_polvorienta",
+      "propParamId": "bola_nieve_polvorienta",
+      "nombre": "Prop: Bola de Nieve Seca que se Desintegra",
+      "categoria": "props",
+      "subcategoria": "vida_cotidiana",
+      "emocion": "any",
+      "accion": "right",
+      "propsAsociados": [
+        "bola_nieve_polvorienta"
+      ],
+      "ruta": "poses/props/prop_bola_nieve_polvorienta.svg",
+      "formato": "svg",
+      "etiquetas": [
+        "bola_nieve",
+        "nieve_seca",
+        "polvo",
+        "sublimacion",
+        "desintegrar"
+      ],
+      "compatibleComposicion": true
+    },
+    {
+      "id": "prop_mascara_antigas_industrial",
+      "propParamId": "mascara_antigas_industrial",
+      "nombre": "Prop: Máscara Antigás Industrial con Doble Filtro",
+      "categoria": "props",
+      "subcategoria": "tecnologia",
+      "emocion": "any",
+      "accion": "overhead",
+      "propsAsociados": [
+        "mascara_antigas_industrial"
+      ],
+      "ruta": "poses/props/prop_mascara_antigas_industrial.svg",
+      "formato": "svg",
+      "etiquetas": [
+        "mascara",
+        "antigas",
+        "respirador",
+        "quimico",
+        "proteccion"
+      ],
+      "compatibleComposicion": true
+    },
+    {
+      "id": "prop_gorra_detective_explorador",
+      "propParamId": "gorra_detective_explorador",
+      "nombre": "Prop: Gorra de Detective Deerstalker",
+      "categoria": "props",
+      "subcategoria": "historia_exploracion",
+      "emocion": "any",
+      "accion": "overhead",
+      "propsAsociados": [
+        "gorra_detective_explorador"
+      ],
+      "ruta": "poses/props/prop_gorra_detective_explorador.svg",
+      "formato": "svg",
+      "etiquetas": [
+        "gorra",
+        "sombrero",
+        "detective",
+        "sherlock",
+        "explorador"
+      ],
+      "compatibleComposicion": true
+    },
+    {
+      "id": "prop_frasco_muestra_cristal",
+      "propParamId": "frasco_muestra_cristal",
+      "nombre": "Prop: Frasco de Cristal para Muestras",
+      "categoria": "props",
+      "subcategoria": "educacion_ciencia",
+      "emocion": "any",
+      "accion": "left",
+      "propsAsociados": [
+        "frasco_muestra_cristal"
+      ],
+      "ruta": "poses/props/prop_frasco_muestra_cristal.svg",
+      "formato": "svg",
+      "etiquetas": [
+        "frasco",
+        "cristal",
+        "vidrio",
+        "muestra",
+        "quimica"
+      ],
+      "compatibleComposicion": true
+    },
+    {
+      "id": "prop_cuchara_larga_muestreo",
+      "propParamId": "cuchara_larga_muestreo",
+      "nombre": "Prop: Cuchara Larga de Muestreo Químico",
+      "categoria": "props",
+      "subcategoria": "educacion_ciencia",
+      "emocion": "any",
+      "accion": "right",
+      "propsAsociados": [
+        "cuchara_larga_muestreo"
+      ],
+      "ruta": "poses/props/prop_cuchara_larga_muestreo.svg",
+      "formato": "svg",
+      "etiquetas": [
+        "cuchara",
+        "espatula",
+        "laboratorio",
+        "muestreo",
+        "metal"
+      ],
+      "compatibleComposicion": true
+    },
+    {
+      "id": "prop_escudo_acrilico_proteccion",
+      "propParamId": "escudo_acrilico_proteccion",
+      "nombre": "Prop: Escudo Facial de Acrílico Protector",
+      "categoria": "props",
+      "subcategoria": "educacion_ciencia",
+      "emocion": "any",
+      "accion": "left",
+      "propsAsociados": [
+        "escudo_acrilico_proteccion"
+      ],
+      "ruta": "poses/props/prop_escudo_acrilico_proteccion.svg",
+      "formato": "svg",
+      "etiquetas": [
+        "escudo",
+        "acrilico",
+        "proteccion",
+        "careta",
+        "seguridad"
+      ],
+      "compatibleComposicion": true
+    },
+    {
+      "id": "prop_roca_azufre_amarillo_solido",
+      "propParamId": "roca_azufre_amarillo_solido",
+      "nombre": "Prop: Roca de Azufre Amarillo Sólido",
+      "categoria": "props",
+      "subcategoria": "educacion_ciencia",
+      "emocion": "any",
+      "accion": "right",
+      "propsAsociados": [
+        "roca_azufre_amarillo_solido"
+      ],
+      "ruta": "poses/props/prop_roca_azufre_amarillo_solido.svg",
+      "formato": "svg",
+      "etiquetas": [
+        "roca",
+        "azufre",
+        "mineral",
+        "amarillo",
+        "volcan"
+      ],
+      "compatibleComposicion": true
+    },
+    {
+      "id": "prop_bacteria_mascota_verde",
+      "propParamId": "bacteria_mascota_verde",
+      "nombre": "Prop: Bacteria Ideonella Sakaiensis Mascota",
+      "categoria": "props",
+      "subcategoria": "educacion_ciencia",
+      "emocion": "any",
+      "accion": "overhead",
+      "propsAsociados": [
+        "bacteria_mascota_verde"
+      ],
+      "ruta": "poses/props/prop_bacteria_mascota_verde.svg",
+      "formato": "svg",
+      "etiquetas": [
+        "bacteria",
+        "microbio",
+        "ideonella",
+        "mascota",
+        "verde"
+      ],
+      "compatibleComposicion": true
+    },
+    {
+      "id": "prop_botella_pet_arrugada",
+      "propParamId": "botella_pet_arrugada",
+      "nombre": "Prop: Botella de Plástico PET Arrugada",
+      "categoria": "props",
+      "subcategoria": "vida_cotidiana",
+      "emocion": "any",
+      "accion": "right",
+      "propsAsociados": [
+        "botella_pet_arrugada"
+      ],
+      "ruta": "poses/props/prop_botella_pet_arrugada.svg",
+      "formato": "svg",
+      "etiquetas": [
+        "botella",
+        "plastico",
+        "pet",
+        "reciclaje",
+        "basura"
+      ],
+      "compatibleComposicion": true
+    },
+    {
+      "id": "prop_placa_petri_cultivo",
+      "propParamId": "placa_petri_cultivo",
+      "nombre": "Prop: Placa de Petri con Cultivo Bacteriano",
+      "categoria": "props",
+      "subcategoria": "educacion_ciencia",
+      "emocion": "any",
+      "accion": "left",
+      "propsAsociados": [
+        "placa_petri_cultivo"
+      ],
+      "ruta": "poses/props/prop_placa_petri_cultivo.svg",
+      "formato": "svg",
+      "etiquetas": [
+        "petri",
+        "cultivo",
+        "bacteria",
+        "laboratorio",
+        "agar"
+      ],
+      "compatibleComposicion": true
+    },
+    {
+      "id": "prop_tijeras_moleculares_petasa",
+      "propParamId": "tijeras_moleculares_petasa",
+      "nombre": "Prop: Enzima PETasa Tijeras Moleculares",
+      "categoria": "props",
+      "subcategoria": "educacion_ciencia",
+      "emocion": "any",
+      "accion": "overhead",
+      "propsAsociados": [
+        "tijeras_moleculares_petasa"
+      ],
+      "ruta": "poses/props/prop_tijeras_moleculares_petasa.svg",
+      "formato": "svg",
+      "etiquetas": [
+        "petasa",
+        "enzima",
+        "tijeras",
+        "molecular",
+        "biologia"
+      ],
+      "compatibleComposicion": true
+    },
+    {
+      "id": "prop_tijeras_moleculares_mhetasa",
+      "propParamId": "tijeras_moleculares_mhetasa",
+      "nombre": "Prop: Enzima MHETasa Tijeras Nutrientes",
+      "categoria": "props",
+      "subcategoria": "educacion_ciencia",
+      "emocion": "any",
+      "accion": "overhead",
+      "propsAsociados": [
+        "tijeras_moleculares_mhetasa"
+      ],
+      "ruta": "poses/props/prop_tijeras_moleculares_mhetasa.svg",
+      "formato": "svg",
+      "etiquetas": [
+        "mhetasa",
+        "enzima",
+        "nutrientes",
+        "molecular",
+        "tijeras"
+      ],
+      "compatibleComposicion": true
+    },
+    {
+      "id": "prop_manzana_fresca_rechazada",
+      "propParamId": "manzana_fresca_rechazada",
+      "nombre": "Prop: Manzana Fresca",
+      "categoria": "props",
+      "subcategoria": "vida_cotidiana",
+      "emocion": "any",
+      "accion": "left",
+      "propsAsociados": [
+        "manzana_fresca_rechazada"
+      ],
+      "ruta": "poses/props/prop_manzana_fresca_rechazada.svg",
+      "formato": "svg",
+      "etiquetas": [
+        "manzana",
+        "fruta",
+        "comida",
+        "roja",
+        "fresca"
+      ],
+      "compatibleComposicion": true
+    },
+    {
+      "id": "prop_correa_paseo_mascota",
+      "propParamId": "correa_paseo_mascota",
+      "nombre": "Prop: Correa de Paseo Canino Adaptada",
+      "categoria": "props",
+      "subcategoria": "vida_cotidiana",
+      "emocion": "any",
+      "accion": "right",
+      "propsAsociados": [
+        "correa_paseo_mascota"
+      ],
+      "ruta": "poses/props/prop_correa_paseo_mascota.svg",
+      "formato": "svg",
+      "etiquetas": [
+        "correa",
+        "paseo",
+        "mascota",
+        "perro",
+        "pechera"
+      ],
+      "compatibleComposicion": true
+    },
+    {
+      "id": "prop_rueda_auto_deportivo_girando",
+      "propParamId": "rueda_auto_deportivo_girando",
+      "nombre": "Prop: Rueda de Auto Deportivo en Rotación Inversa",
+      "categoria": "props",
+      "subcategoria": "vida_cotidiana",
+      "emocion": "any",
+      "accion": "right",
+      "propsAsociados": [
+        "rueda_auto_deportivo_girando"
+      ],
+      "ruta": "poses/props/prop_rueda_auto_deportivo_girando.svg",
+      "formato": "svg",
+      "etiquetas": [
+        "rueda",
+        "llanta",
+        "auto",
+        "deportivo",
+        "estroboscopico",
+        "rotacion"
+      ],
+      "compatibleComposicion": true
+    },
+    {
+      "id": "prop_tira_pelicula_celuloide",
+      "propParamId": "tira_pelicula_celuloide",
+      "nombre": "Prop: Tira de Película Cinematográfica Celuloide",
+      "categoria": "props",
+      "subcategoria": "educacion_ciencia",
+      "emocion": "any",
+      "accion": "overhead",
+      "propsAsociados": [
+        "tira_pelicula_celuloide"
+      ],
+      "ruta": "poses/props/prop_tira_pelicula_celuloide.svg",
+      "formato": "svg",
+      "etiquetas": [
+        "pelicula",
+        "celuloide",
+        "cine",
+        "fotogramas",
+        "frames"
+      ],
+      "compatibleComposicion": true
+    },
+    {
+      "id": "prop_reloj_estroboscopico_circular",
+      "propParamId": "reloj_estroboscopico_circular",
+      "nombre": "Prop: Reloj Estroboscópico de Ilusión Visual",
+      "categoria": "props",
+      "subcategoria": "educacion_ciencia",
+      "emocion": "any",
+      "accion": "overhead",
+      "propsAsociados": [
+        "reloj_estroboscopico_circular"
+      ],
+      "ruta": "poses/props/prop_reloj_estroboscopico_circular.svg",
+      "formato": "svg",
+      "etiquetas": [
+        "reloj",
+        "estroboscopico",
+        "esfera",
+        "manecilla",
+        "angulo"
+      ],
+      "compatibleComposicion": true
+    },
+    {
+      "id": "prop_puntero_docente_laser",
+      "propParamId": "puntero_docente_laser",
+      "nombre": "Prop: Puntero Telescópico con Marcador Rojo",
+      "categoria": "props",
+      "subcategoria": "educacion_ciencia",
+      "emocion": "any",
+      "accion": "right",
+      "propsAsociados": [
+        "puntero_docente_laser"
+      ],
+      "ruta": "poses/props/prop_puntero_docente_laser.svg",
+      "formato": "svg",
+      "etiquetas": [
+        "puntero",
+        "vara",
+        "docente",
+        "laser",
+        "explicacion"
+      ],
+      "compatibleComposicion": true
+    },
+    {
+      "id": "prop_helicoptero_rotor_animado",
+      "propParamId": "helicoptero_rotor_animado",
+      "nombre": "Prop: Helicóptero de Rescate con Rotor Dinámico",
+      "categoria": "props",
+      "subcategoria": "tecnologia",
+      "emocion": "any",
+      "accion": "overhead",
+      "propsAsociados": [
+        "helicoptero_rotor_animado"
+      ],
+      "ruta": "poses/props/prop_helicoptero_rotor_animado.svg",
+      "formato": "svg",
+      "etiquetas": [
+        "helicoptero",
+        "rotor",
+        "aspas",
+        "aeronautica",
+        "vuelo"
+      ],
+      "compatibleComposicion": true
+    },
+    {
+      "id": "prop_camara_tripode_visor_lcd",
+      "propParamId": "camara_tripode_visor_lcd",
+      "nombre": "Prop: Cámara Digital Profesional en Trípode",
+      "categoria": "props",
+      "subcategoria": "tecnologia",
+      "emocion": "any",
+      "accion": "left",
+      "propsAsociados": [
+        "camara_tripode_visor_lcd"
+      ],
+      "ruta": "poses/props/prop_camara_tripode_visor_lcd.svg",
+      "formato": "svg",
+      "etiquetas": [
+        "camara",
+        "tripode",
+        "shutter",
+        "lcd",
+        "obturador",
+        "60fps"
+      ],
+      "compatibleComposicion": true
+    },
+    {
+      "id": "prop_ventilador_pedestal_aspas",
+      "propParamId": "ventilador_pedestal_aspas",
+      "nombre": "Prop: Ventilador de Pedestal con Aspas Rápidas",
+      "categoria": "props",
+      "subcategoria": "vida_cotidiana",
+      "emocion": "any",
+      "accion": "right",
+      "propsAsociados": [
+        "ventilador_pedestal_aspas"
+      ],
+      "ruta": "poses/props/prop_ventilador_pedestal_aspas.svg",
+      "formato": "svg",
+      "etiquetas": [
+        "ventilador",
+        "pedestal",
+        "aspas",
+        "aire",
+        "estroboscopico"
+      ],
+      "compatibleComposicion": true
+    },
+    {
+      "id": "prop_stickman_ojos_mareo_espiral",
+      "propParamId": "stickman_ojos_mareo_espiral",
+      "nombre": "Prop: Ojos en Espiral de Mareo con Estrellitas",
+      "categoria": "props",
+      "subcategoria": "reacciones_humor",
+      "emocion": "any",
+      "accion": "overhead",
+      "propsAsociados": [
+        "stickman_ojos_mareo_espiral"
+      ],
+      "ruta": "poses/props/prop_stickman_ojos_mareo_espiral.svg",
+      "formato": "svg",
+      "etiquetas": [
+        "ojos",
+        "mareo",
+        "espiral",
+        "estrellas",
+        "caricatura",
+        "humor"
+      ],
+      "compatibleComposicion": true
+    },
+    {
+      "id": "prop_pajaro_petrificado_caliza",
+      "propParamId": "pajaro_petrificado_caliza",
+      "nombre": "Prop: Pájaro Petrificado en Caliza y Sal",
+      "categoria": "props",
+      "subcategoria": "historia_exploracion",
+      "emocion": "any",
+      "accion": "right",
+      "propsAsociados": [
+        "pajaro_petrificado_caliza"
+      ],
+      "ruta": "poses/props/prop_pajaro_petrificado_caliza.svg",
+      "formato": "svg",
+      "etiquetas": [
+        "pajaro",
+        "petrificado",
+        "caliza",
+        "sal",
+        "estatua",
+        "natron"
+      ],
+      "compatibleComposicion": true
+    },
+    {
+      "id": "prop_tira_ph_morado_caustico",
+      "propParamId": "tira_ph_morado_caustico",
+      "nombre": "Prop: Tira de pH Cáustico con Termómetro",
+      "categoria": "props",
+      "subcategoria": "educacion_ciencia",
+      "emocion": "any",
+      "accion": "overhead",
+      "propsAsociados": [
+        "tira_ph_morado_caustico"
+      ],
+      "ruta": "poses/props/prop_tira_ph_morado_caustico.svg",
+      "formato": "svg",
+      "etiquetas": [
+        "ph",
+        "alcalino",
+        "laboratorio",
+        "quimica",
+        "termometro"
+      ],
+      "compatibleComposicion": true
+    },
+    {
+      "id": "prop_sarcofago_egipcio_natron",
+      "propParamId": "sarcofago_egipcio_natron",
+      "nombre": "Prop: Sarcófago Egipcio con Sal de Natrón",
+      "categoria": "props",
+      "subcategoria": "historia_exploracion",
+      "emocion": "any",
+      "accion": "overhead",
+      "propsAsociados": [
+        "sarcofago_egipcio_natron"
+      ],
+      "ruta": "poses/props/prop_sarcofago_egipcio_natron.svg",
+      "formato": "svg",
+      "etiquetas": [
+        "sarcofago",
+        "momia",
+        "egipto",
+        "natron",
+        "faraon"
+      ],
+      "compatibleComposicion": true
+    },
+    {
+      "id": "prop_silueta_ave_impacto_agua",
+      "propParamId": "silueta_ave_impacto_agua",
+      "nombre": "Prop: Ave en Choque contra Espejo de Agua",
+      "categoria": "props",
+      "subcategoria": "educacion_ciencia",
+      "emocion": "any",
+      "accion": "overhead",
+      "propsAsociados": [
+        "silueta_ave_impacto_agua"
+      ],
+      "ruta": "poses/props/prop_silueta_ave_impacto_agua.svg",
+      "formato": "svg",
+      "etiquetas": [
+        "ave",
+        "impacto",
+        "choque",
+        "deshidratacion",
+        "agua"
+      ],
+      "compatibleComposicion": true
+    },
+    {
+      "id": "prop_lupa_inspeccion_fosil",
+      "propParamId": "lupa_inspeccion_fosil",
+      "nombre": "Prop: Lupa de Explorador Fósil",
+      "categoria": "props",
+      "subcategoria": "educacion_ciencia",
+      "emocion": "any",
+      "accion": "right",
+      "propsAsociados": [
+        "lupa_inspeccion_fosil"
+      ],
+      "ruta": "poses/props/prop_lupa_inspeccion_fosil.svg",
+      "formato": "svg",
+      "etiquetas": [
+        "lupa",
+        "inspeccion",
+        "fosil",
+        "aumento",
+        "cristal"
+      ],
+      "compatibleComposicion": true
+    },
+    {
+      "id": "prop_flamenco_rosado_elegante",
+      "propParamId": "flamenco_rosado_elegante",
+      "nombre": "Prop: Flamenco Rosado Inmune al Natrón",
+      "categoria": "props",
+      "subcategoria": "naturaleza_alimentos",
+      "emocion": "any",
+      "accion": "left",
+      "propsAsociados": [
+        "flamenco_rosado_elegante"
+      ],
+      "ruta": "poses/props/prop_flamenco_rosado_elegante.svg",
+      "formato": "svg",
+      "etiquetas": [
+        "flamenco",
+        "ave",
+        "rosado",
+        "natron",
+        "inmune",
+        "tanzania"
+      ],
+      "compatibleComposicion": true
+    },
+    {
+      "id": "prop_botas_hule_amarillas",
+      "propParamId": "botas_hule_amarillas",
+      "nombre": "Prop: Botas de Hule Amarillas de Expedición",
+      "categoria": "props",
+      "subcategoria": "vida_cotidiana",
+      "emocion": "any",
+      "accion": "overhead",
+      "propsAsociados": [
+        "botas_hule_amarillas"
+      ],
+      "ruta": "poses/props/prop_botas_hule_amarillas.svg",
+      "formato": "svg",
+      "etiquetas": [
+        "botas",
+        "hule",
+        "amarillo",
+        "expedicion",
+        "impermeable"
+      ],
+      "compatibleComposicion": true
+    },
+    {
+      "id": "prop_vortice_ant_mill_anillo",
+      "propParamId": "vortice_ant_mill_anillo",
+      "nombre": "Prop: Vórtice Circular de Hormigas (Ant Mill)",
+      "categoria": "props",
+      "subcategoria": "educacion_ciencia",
+      "emocion": "any",
+      "accion": "overhead",
+      "propsAsociados": [
+        "vortice_ant_mill_anillo"
+      ],
+      "ruta": "poses/props/prop_vortice_ant_mill_anillo.svg",
+      "formato": "svg",
+      "etiquetas": [
+        "vortice",
+        "hormigas",
+        "ant_mill",
+        "molino",
+        "espiral"
+      ],
+      "compatibleComposicion": true
+    },
+    {
+      "id": "prop_ramita_bloqueo_hormigas",
+      "propParamId": "ramita_bloqueo_hormigas",
+      "nombre": "Prop: Ramita de Bloqueo con Hormigas Trepadoras",
+      "categoria": "props",
+      "subcategoria": "historia_exploracion",
+      "emocion": "any",
+      "accion": "right",
+      "propsAsociados": [
+        "ramita_bloqueo_hormigas"
+      ],
+      "ruta": "poses/props/prop_ramita_bloqueo_hormigas.svg",
+      "formato": "svg",
+      "etiquetas": [
+        "ramita",
+        "madera",
+        "hormiga",
+        "trepar",
+        "bloqueo"
+      ],
+      "compatibleComposicion": true
+    },
+    {
+      "id": "prop_lampara_tactica_explorador",
+      "propParamId": "lampara_tactica_explorador",
+      "nombre": "Prop: Lámpara Táctica Militar de Exploración",
+      "categoria": "props",
+      "subcategoria": "tecnologia",
+      "emocion": "any",
+      "accion": "left",
+      "propsAsociados": [
+        "lampara_tactica_explorador"
+      ],
+      "ruta": "poses/props/prop_lampara_tactica_explorador.svg",
+      "formato": "svg",
+      "etiquetas": [
+        "lampara",
+        "linterna",
+        "tactica",
+        "luz",
+        "explorador"
+      ],
+      "compatibleComposicion": true
+    },
+    {
+      "id": "prop_hormiga_legionaria_cabeza_macro",
+      "propParamId": "hormiga_legionaria_cabeza_macro",
+      "nombre": "Prop: Cabeza Macro de Hormiga Legionaria",
+      "categoria": "props",
+      "subcategoria": "educacion_ciencia",
+      "emocion": "any",
+      "accion": "overhead",
+      "propsAsociados": [
+        "hormiga_legionaria_cabeza_macro"
+      ],
+      "ruta": "poses/props/prop_hormiga_legionaria_cabeza_macro.svg",
+      "formato": "svg",
+      "etiquetas": [
+        "hormiga",
+        "cabeza",
+        "mandibula",
+        "antenas",
+        "macro",
+        "ciega"
+      ],
+      "compatibleComposicion": true
+    },
+    {
+      "id": "prop_estela_feromona_vector_verde",
+      "propParamId": "estela_feromona_vector_verde",
+      "nombre": "Prop: Estela Química de Feromona Neón",
+      "categoria": "props",
+      "subcategoria": "educacion_ciencia",
+      "emocion": "any",
+      "accion": "overhead",
+      "propsAsociados": [
+        "estela_feromona_vector_verde"
+      ],
+      "ruta": "poses/props/prop_estela_feromona_vector_verde.svg",
+      "formato": "svg",
+      "etiquetas": [
+        "feromona",
+        "quimica",
+        "estela",
+        "rastro",
+        "verde",
+        "neon"
+      ],
+      "compatibleComposicion": true
+    },
+    {
+      "id": "prop_atomizador_spray_jabon",
+      "propParamId": "atomizador_spray_jabon",
+      "nombre": "Prop: Atomizador de Agua y Jabón",
+      "categoria": "props",
+      "subcategoria": "vida_cotidiana",
+      "emocion": "any",
+      "accion": "right",
+      "propsAsociados": [
+        "atomizador_spray_jabon"
+      ],
+      "ruta": "poses/props/prop_atomizador_spray_jabon.svg",
+      "formato": "svg",
+      "etiquetas": [
+        "atomizador",
+        "spray",
+        "jabon",
+        "burbujas",
+        "espuma",
+        "corte"
+      ],
+      "compatibleComposicion": true
+    },
+    {
+      "id": "prop_megacristal_selenita_columna",
+      "propParamId": "megacristal_selenita_columna",
+      "nombre": "Prop: Columna Monumental de Selenita",
+      "categoria": "props",
+      "subcategoria": "historia_exploracion",
+      "emocion": "any",
+      "accion": "right",
+      "propsAsociados": [
+        "megacristal_selenita_columna"
+      ],
+      "ruta": "poses/props/prop_megacristal_selenita_columna.svg",
+      "formato": "svg",
+      "etiquetas": [
+        "cristal",
+        "selenita",
+        "viga",
+        "naica",
+        "colosal",
+        "mineral",
+        "yeso"
+      ],
+      "compatibleComposicion": true
+    },
+    {
+      "id": "prop_casco_minero_linterna",
+      "propParamId": "casco_minero_linterna",
+      "nombre": "Prop: Casco Minero con Linterna Frontal",
+      "categoria": "props",
+      "subcategoria": "historia_exploracion",
+      "emocion": "any",
+      "accion": "overhead",
+      "propsAsociados": [
+        "casco_minero_linterna"
+      ],
+      "ruta": "poses/props/prop_casco_minero_linterna.svg",
+      "formato": "svg",
+      "etiquetas": [
+        "casco",
+        "minero",
+        "linterna",
+        "mina",
+        "naica",
+        "seguridad",
+        "luz"
+      ],
+      "compatibleComposicion": true
+    },
+    {
+      "id": "prop_diagrama_pulmones_condensacion",
+      "propParamId": "diagrama_pulmones_condensacion",
+      "nombre": "Prop: Diagrama Biológico Pulmones con Condensación",
+      "categoria": "props",
+      "subcategoria": "educacion_ciencia",
+      "emocion": "any",
+      "accion": "overhead",
+      "propsAsociados": [
+        "diagrama_pulmones_condensacion"
+      ],
+      "ruta": "poses/props/prop_diagrama_pulmones_condensacion.svg",
+      "formato": "svg",
+      "etiquetas": [
+        "pulmones",
+        "condensacion",
+        "organo",
+        "respirar",
+        "agua",
+        "ahogo",
+        "alveolos"
+      ],
+      "compatibleComposicion": true
+    },
+    {
+      "id": "prop_lata_refresco_condensando",
+      "propParamId": "lata_refresco_condensando",
+      "nombre": "Prop: Lata Helada con Condensación",
+      "categoria": "props",
+      "subcategoria": "vida_cotidiana",
+      "emocion": "any",
+      "accion": "left",
+      "propsAsociados": [
+        "lata_refresco_condensando"
+      ],
+      "ruta": "poses/props/prop_lata_refresco_condensando.svg",
+      "formato": "svg",
+      "etiquetas": [
+        "lata",
+        "refresco",
+        "fria",
+        "condensacion",
+        "gotas",
+        "hielo"
+      ],
+      "compatibleComposicion": true
+    },
+    {
+      "id": "prop_medidores_58c_humedad_sobrecarga",
+      "propParamId": "medidores_58c_humedad_sobrecarga",
+      "nombre": "Prop: Medidor Dual 58°C y 95% Humedad Sobrecarga",
+      "categoria": "props",
+      "subcategoria": "tecnologia",
+      "emocion": "any",
+      "accion": "overhead",
+      "propsAsociados": [
+        "medidores_58c_humedad_sobrecarga"
+      ],
+      "ruta": "poses/props/prop_medidores_58c_humedad_sobrecarga.svg",
+      "formato": "svg",
+      "etiquetas": [
+        "medidor",
+        "termometro",
+        "higrometro",
+        "calor",
+        "humedad",
+        "naica",
+        "58c"
+      ],
+      "compatibleComposicion": true
+    },
+    {
+      "id": "prop_traje_termico_naica_tolomea",
+      "propParamId": "traje_termico_naica_tolomea",
+      "nombre": "Prop: Mochila Criogénica Traje Tolomea Naica",
+      "categoria": "props",
+      "subcategoria": "tecnologia",
+      "emocion": "any",
+      "accion": "both",
+      "propsAsociados": [
+        "traje_termico_naica_tolomea"
+      ],
+      "ruta": "poses/props/prop_traje_termico_naica_tolomea.svg",
+      "formato": "svg",
+      "etiquetas": [
+        "traje",
+        "tolomea",
+        "hielo",
+        "refrigerado",
+        "criogenico",
+        "oxigeno",
+        "respirador"
+      ],
+      "compatibleComposicion": true
+    },
+    {
+      "id": "prop_compuerta_acero_mina_sellada",
+      "propParamId": "compuerta_acero_mina_sellada",
+      "nombre": "Prop: Compuerta de Acero Mina Sellada",
+      "categoria": "props",
+      "subcategoria": "historia_exploracion",
+      "emocion": "any",
+      "accion": "right",
+      "propsAsociados": [
+        "compuerta_acero_mina_sellada"
+      ],
+      "ruta": "poses/props/prop_compuerta_acero_mina_sellada.svg",
+      "formato": "svg",
+      "etiquetas": [
+        "compuerta",
+        "acero",
+        "mina",
+        "escotilla",
+        "sellada",
+        "seguridad",
+        "rueda"
+      ],
+      "compatibleComposicion": true
+    },
+    {
       "id": "prop_party_hat",
       "propParamId": "party_hat",
       "nombre": "Prop Festivo: Sombrero de fiesta",
@@ -6398,6 +8738,222 @@
         "gastronomia",
         "dia_de_muertos",
         "mexico"
+      ],
+      "compatibleComposicion": true
+    },
+    {
+      "id": "prop_pan_de_muerto_xray",
+      "propParamId": "pan_de_muerto_xray",
+      "nombre": "Prop Festivo: Pan de muerto con rayos X y silueta ósea",
+      "categoria": "props_festivos",
+      "subcategoria": "dia_de_muertos",
+      "festividad": "dia_de_muertos",
+      "temporada": "otono",
+      "paisCompatible": [
+        "MX"
+      ],
+      "emocion": "any",
+      "accion": "both",
+      "propsAsociados": [
+        "pan_de_muerto_xray"
+      ],
+      "ruta": "poses/props/festivos/dia_de_muertos/prop_pan_de_muerto_xray.svg",
+      "formato": "svg",
+      "etiquetas": [
+        "pan_de_muerto",
+        "rayos_x",
+        "esqueleto",
+        "dia_de_muertos",
+        "anatomia"
+      ],
+      "compatibleComposicion": true
+    },
+    {
+      "id": "prop_pan_ciclo_vida",
+      "propParamId": "pan_ciclo_vida",
+      "nombre": "Prop Festivo: Base de pan de muerto con ciclo continuo de vida y muerte",
+      "categoria": "props_festivos",
+      "subcategoria": "dia_de_muertos",
+      "festividad": "dia_de_muertos",
+      "temporada": "otono",
+      "paisCompatible": [
+        "MX"
+      ],
+      "emocion": "any",
+      "accion": "both",
+      "propsAsociados": [
+        "pan_ciclo_vida"
+      ],
+      "ruta": "poses/props/festivos/dia_de_muertos/prop_pan_ciclo_vida.svg",
+      "formato": "svg",
+      "etiquetas": [
+        "ciclo_vida",
+        "pan_de_muerto",
+        "rueda",
+        "eterno",
+        "simbolismo"
+      ],
+      "compatibleComposicion": true
+    },
+    {
+      "id": "prop_pan_craneo_calavera",
+      "propParamId": "pan_craneo_calavera",
+      "nombre": "Prop Festivo: Esfera de pan convertida en calaverita de azúcar",
+      "categoria": "props_festivos",
+      "subcategoria": "dia_de_muertos",
+      "festividad": "dia_de_muertos",
+      "temporada": "otono",
+      "paisCompatible": [
+        "MX"
+      ],
+      "emocion": "any",
+      "accion": "right",
+      "propsAsociados": [
+        "pan_craneo_calavera"
+      ],
+      "ruta": "poses/props/festivos/dia_de_muertos/prop_pan_craneo_calavera.svg",
+      "formato": "svg",
+      "etiquetas": [
+        "craneo",
+        "esfera",
+        "calaverita",
+        "azucar",
+        "dia_de_muertos"
+      ],
+      "compatibleComposicion": true
+    },
+    {
+      "id": "prop_canillas_huesos",
+      "propParamId": "canillas_huesos",
+      "nombre": "Prop Festivo: Canillas de pan en cruz representando huesos",
+      "categoria": "props_festivos",
+      "subcategoria": "dia_de_muertos",
+      "festividad": "dia_de_muertos",
+      "temporada": "otono",
+      "paisCompatible": [
+        "MX"
+      ],
+      "emocion": "any",
+      "accion": "both",
+      "propsAsociados": [
+        "canillas_huesos"
+      ],
+      "ruta": "poses/props/festivos/dia_de_muertos/prop_canillas_huesos.svg",
+      "formato": "svg",
+      "etiquetas": [
+        "canillas",
+        "huesos",
+        "extremidades",
+        "esqueleto",
+        "pan_de_muerto"
+      ],
+      "compatibleComposicion": true
+    },
+    {
+      "id": "prop_brujula_prehispanica",
+      "propParamId": "brujula_prehispanica",
+      "nombre": "Prop Festivo: Brújula prehispánica de cuatro rumbos del universo",
+      "categoria": "props_festivos",
+      "subcategoria": "dia_de_muertos",
+      "festividad": "dia_de_muertos",
+      "temporada": "otono",
+      "paisCompatible": [
+        "MX"
+      ],
+      "emocion": "any",
+      "accion": "both",
+      "propsAsociados": [
+        "brujula_prehispanica"
+      ],
+      "ruta": "poses/props/festivos/dia_de_muertos/prop_brujula_prehispanica.svg",
+      "formato": "svg",
+      "etiquetas": [
+        "brujula",
+        "prehispanica",
+        "cuatro_rumbos",
+        "cardinales",
+        "dioses"
+      ],
+      "compatibleComposicion": true
+    },
+    {
+      "id": "prop_vapor_azahar",
+      "propParamId": "vapor_azahar",
+      "nombre": "Prop Festivo: Vaho aromático de flor de azahar",
+      "categoria": "props_festivos",
+      "subcategoria": "dia_de_muertos",
+      "festividad": "dia_de_muertos",
+      "temporada": "otono",
+      "paisCompatible": [
+        "MX"
+      ],
+      "emocion": "any",
+      "accion": "overhead",
+      "propsAsociados": [
+        "vapor_azahar"
+      ],
+      "ruta": "poses/props/festivos/dia_de_muertos/prop_vapor_azahar.svg",
+      "formato": "svg",
+      "etiquetas": [
+        "azahar",
+        "aroma",
+        "vaho",
+        "naranjo",
+        "guiar_almas"
+      ],
+      "compatibleComposicion": true
+    },
+    {
+      "id": "prop_chocolate_barro",
+      "propParamId": "chocolate_barro",
+      "nombre": "Prop Festivo: Taza de barro tradicional con chocolate caliente",
+      "categoria": "props_festivos",
+      "subcategoria": "dia_de_muertos",
+      "festividad": "dia_de_muertos",
+      "temporada": "otono",
+      "paisCompatible": [
+        "MX"
+      ],
+      "emocion": "any",
+      "accion": "right",
+      "propsAsociados": [
+        "chocolate_barro"
+      ],
+      "ruta": "poses/props/festivos/dia_de_muertos/prop_chocolate_barro.svg",
+      "formato": "svg",
+      "etiquetas": [
+        "chocolate",
+        "barro",
+        "taza",
+        "ofrenda",
+        "bebida"
+      ],
+      "compatibleComposicion": true
+    },
+    {
+      "id": "prop_pan_con_mordida",
+      "propParamId": "pan_con_mordida",
+      "nombre": "Prop Festivo: Pan de muerto con mordida",
+      "categoria": "props_festivos",
+      "subcategoria": "dia_de_muertos",
+      "festividad": "dia_de_muertos",
+      "temporada": "otono",
+      "paisCompatible": [
+        "MX"
+      ],
+      "emocion": "any",
+      "accion": "both",
+      "propsAsociados": [
+        "pan_con_mordida"
+      ],
+      "ruta": "poses/props/festivos/dia_de_muertos/prop_pan_con_mordida.svg",
+      "formato": "svg",
+      "etiquetas": [
+        "pan_de_muerto",
+        "mordida",
+        "comer",
+        "ofrenda",
+        "dia_de_muertos"
       ],
       "compatibleComposicion": true
     },

@@ -1,11 +1,10 @@
 const fs = require("fs");
 const path = require("path");
 const { spawnSync } = require("child_process");
-const { exportarArchivoMetadata } = require("./exportar_metadata");
+const { exportarArchivoMetadata, DESTINO_DIR } = require("./exportar_metadata");
 
 const OUT_DIR = path.resolve(__dirname, "../out");
 const GUION_PATH = path.resolve(__dirname, "../src/data/guion.json");
-const DESTINO_DIR = "H:\\Mi unidad\\ShortsMotionGraphics";
 const MAX_AGE_MS = 48 * 60 * 60 * 1000; // 48 horas
 const PURGA_EXTS = new Set([".mp4", ".mov", ".webm", ".mkv", ".avi", ".json"]);
 
@@ -207,6 +206,7 @@ function limpiarVideosAntiguos() {
  * Copia el video generado a la unidad de destino si está disponible.
  */
 function copiarADestino(rutaOrigen, nombreArchivo) {
+  if (!DESTINO_DIR) return console.warn("\n[COPIA] ℹ️  DESTINO_DIR no definido en .env; sin copia a Drive.");
   try {
     const unidad = path.parse(DESTINO_DIR).root;
     if (!fs.existsSync(unidad)) {
@@ -230,6 +230,16 @@ function copiarADestino(rutaOrigen, nombreArchivo) {
 }
 
 /**
+ * Ejecuta un script de chequeo (validar_guion.js / qa_video.js); aborta el render si falla.
+ */
+function ejecutarChequeo(script, args, mensajeFallo) {
+  const res = spawnSync(process.execPath, [path.resolve(__dirname, script), ...args], { stdio: "inherit" });
+  if (res.status !== 0) {
+    console.error(`\n[RENDER] ❌ ${mensajeFallo}`);
+    process.exit(res.status ?? 1);
+  }
+}
+/**
  * Flujo principal de renderizado.
  */
 function main() {
@@ -240,6 +250,7 @@ function main() {
   let port = "3002";
   let cleanOnly = false;
   let metadataOnly = false;
+  let sinQa = false;
   const remotionFlags = [];
 
   for (let i = 0; i < args.length; i++) {
@@ -248,6 +259,8 @@ function main() {
       cleanOnly = true;
     } else if (arg === "--metadata-only" || arg === "--metadata") {
       metadataOnly = true;
+    } else if (arg === "--sin-qa") {
+      sinQa = true;
     } else if (arg === "--name" && args[i + 1]) {
       customName = args[++i];
     } else if (arg.startsWith("--name=")) {
@@ -300,6 +313,9 @@ function main() {
   // 2.5 Verificar coherencia estricta entre guion activo y audios en disco
   verificarCoherenciaAudios();
 
+  // 2.6 Validar el guion (esquema, catálogos, tiempos); falla antes de gastar minutos renderizando
+  ejecutarChequeo("validar_guion.js", [], "El guion no es válido (ver errores arriba).");
+
   console.log(`\n[RENDER] 🎬 Composición: ${composition}`);
   console.log(`[RENDER] 📁 Destino local: ${rutaRelativa}`);
   console.log(`[RENDER] 🌐 Puerto: ${port}\n`);
@@ -316,6 +332,9 @@ function main() {
     console.error(`\n[RENDER] ❌ El render falló con código de salida ${resultado.status}.`);
     process.exit(resultado.status ?? 1);
   }
+
+    // 3.5 QA del MP4 (duración, resolución, loudness, silencios, tamaño)
+  if (!sinQa) ejecutarChequeo("qa_video.js", [rutaSalida], "El video no cumple el QA (usa --sin-qa para omitirlo).");
 
   console.log(`\n[RENDER] ✅ Video generado con éxito: ${rutaRelativa}`);
 

@@ -2,7 +2,19 @@
   "meta": {
     "id": "color_agua_azul_hielo",
     "slug": "color_agua_azul_hielo",
-    "temaResumen": "¿Por qué el agua es azul pero el hielo es transparente? El secreto de la absorción de luz"
+    "temaResumen": "¿Por qué el agua es azul pero el hielo es transparente? El secreto de la absorción de luz",
+    "titulo": "¿Por qué el agua es azul pero el hielo es transparente?",
+    "titulo_corto": "AGUA AZUL VS HIELO",
+    "gancho": "¿Te has fijado en que si llenas un vaso con agua de la llave parece totalmente transparente, pero cuando miras el mar abierto o una alberca profunda se ve intensamente azul?",
+    "fuentes": [
+      "Charles L. Braun & Sergei N. Smirnov (Journal of Chemical Education: Why is Water Blue?)",
+      "USGS Water Science School: Water Properties & Light Absorption"
+    ],
+    "genero": "SCIENCE",
+    "duracionObjetivo": [
+      62,
+      110
+    ]
   },
   "escenas": [
     {
@@ -47,127 +59,127 @@
           "habla": true
         }
       ],
-      "duracionSegundos": 6.346,
+      "duracionSegundos": 6.658,
       "palabras": [
         {
           "palabra": "Alguna",
           "inicioMs": 0,
-          "finMs": 400
+          "finMs": 360
         },
         {
           "palabra": "vez",
-          "inicioMs": 400,
-          "finMs": 540
+          "inicioMs": 360,
+          "finMs": 500
         },
         {
           "palabra": "te",
-          "inicioMs": 540,
-          "finMs": 720
+          "inicioMs": 500,
+          "finMs": 680
         },
         {
           "palabra": "has",
-          "inicioMs": 720,
-          "finMs": 760
+          "inicioMs": 680,
+          "finMs": 740
         },
         {
           "palabra": "preguntado",
-          "inicioMs": 760,
-          "finMs": 1260
+          "inicioMs": 740,
+          "finMs": 1240
         },
         {
           "palabra": "por",
-          "inicioMs": 1260,
-          "finMs": 1440
+          "inicioMs": 1240,
+          "finMs": 1420
         },
         {
           "palabra": "qué",
-          "inicioMs": 1440,
-          "finMs": 1620
+          "inicioMs": 1420,
+          "finMs": 1640
         },
         {
           "palabra": "el",
-          "inicioMs": 1620,
-          "finMs": 1760
+          "inicioMs": 1640,
+          "finMs": 1820
         },
         {
           "palabra": "agua",
-          "inicioMs": 1760,
-          "finMs": 1900
+          "inicioMs": 1820,
+          "finMs": 1980
         },
         {
           "palabra": "del",
-          "inicioMs": 1900,
-          "finMs": 2040
+          "inicioMs": 1980,
+          "finMs": 2120
         },
         {
           "palabra": "mar",
-          "inicioMs": 2040,
-          "finMs": 2260
+          "inicioMs": 2120,
+          "finMs": 2320
         },
         {
           "palabra": "es",
-          "inicioMs": 2260,
-          "finMs": 2520
+          "inicioMs": 2320,
+          "finMs": 2600
         },
         {
           "palabra": "de",
-          "inicioMs": 2520,
-          "finMs": 2620
+          "inicioMs": 2600,
+          "finMs": 2720
         },
         {
           "palabra": "un",
-          "inicioMs": 2620,
-          "finMs": 2740
+          "inicioMs": 2720,
+          "finMs": 2820
         },
         {
           "palabra": "azul",
-          "inicioMs": 2740,
-          "finMs": 2900
+          "inicioMs": 2820,
+          "finMs": 3000
         },
         {
           "palabra": "profundo",
-          "inicioMs": 2900,
-          "finMs": 3500
+          "inicioMs": 3000,
+          "finMs": 3540
         },
         {
           "palabra": "pero",
-          "inicioMs": 3600,
-          "finMs": 3720
+          "inicioMs": 3700,
+          "finMs": 3780
         },
         {
           "palabra": "un",
-          "inicioMs": 3720,
-          "finMs": 3840
+          "inicioMs": 3780,
+          "finMs": 3900
         },
         {
           "palabra": "cubo",
-          "inicioMs": 3840,
-          "finMs": 4100
+          "inicioMs": 3900,
+          "finMs": 4180
         },
         {
           "palabra": "de",
-          "inicioMs": 4100,
-          "finMs": 4220
+          "inicioMs": 4180,
+          "finMs": 4260
         },
         {
           "palabra": "hielo",
-          "inicioMs": 4220,
-          "finMs": 4540
+          "inicioMs": 4260,
+          "finMs": 4560
         },
         {
           "palabra": "es",
-          "inicioMs": 4540,
-          "finMs": 5000
+          "inicioMs": 4560,
+          "finMs": 4720
         },
         {
           "palabra": "completamente",
-          "inicioMs": 5000,
-          "finMs": 5860
+          "inicioMs": 4720,
+          "finMs": 5280
         },
         {
           "palabra": "transparente",
-          "inicioMs": 5860,
-          "finMs": 6096
+          "inicioMs": 5280,
+          "finMs": 6180
         }
       ]
     },
@@ -206,147 +218,147 @@
           "habla": true
         }
       ],
-      "duracionSegundos": 8.098,
+      "duracionSegundos": 7.738,
       "palabras": [
         {
           "palabra": "Contrario",
           "inicioMs": 0,
-          "finMs": 580
+          "finMs": 520
         },
         {
           "palabra": "a",
+          "inicioMs": 520,
+          "finMs": 580
+        },
+        {
+          "palabra": "lo",
           "inicioMs": 580,
           "finMs": 660
         },
         {
-          "palabra": "lo",
-          "inicioMs": 660,
-          "finMs": 720
-        },
-        {
           "palabra": "que",
-          "inicioMs": 720,
-          "finMs": 860
+          "inicioMs": 660,
+          "finMs": 760
         },
         {
           "palabra": "muchos",
-          "inicioMs": 860,
-          "finMs": 1120
+          "inicioMs": 760,
+          "finMs": 1000
         },
         {
           "palabra": "creen",
-          "inicioMs": 1120,
-          "finMs": 1680
+          "inicioMs": 1000,
+          "finMs": 1520
         },
         {
           "palabra": "el",
-          "inicioMs": 1900,
-          "finMs": 2040
+          "inicioMs": 1660,
+          "finMs": 1760
         },
         {
           "palabra": "agua",
-          "inicioMs": 2040,
-          "finMs": 2260
+          "inicioMs": 1760,
+          "finMs": 1960
         },
         {
           "palabra": "no",
-          "inicioMs": 2260,
-          "finMs": 2420
+          "inicioMs": 1960,
+          "finMs": 2100
         },
         {
           "palabra": "es",
-          "inicioMs": 2420,
-          "finMs": 2560
+          "inicioMs": 2100,
+          "finMs": 2220
         },
         {
           "palabra": "azul",
-          "inicioMs": 2560,
-          "finMs": 2800
+          "inicioMs": 2220,
+          "finMs": 2460
         },
         {
           "palabra": "por",
-          "inicioMs": 2800,
-          "finMs": 3020
+          "inicioMs": 2460,
+          "finMs": 2680
         },
         {
           "palabra": "reflejar",
-          "inicioMs": 3020,
-          "finMs": 3440
+          "inicioMs": 2680,
+          "finMs": 3060
         },
         {
           "palabra": "el",
-          "inicioMs": 3440,
-          "finMs": 3580
+          "inicioMs": 3060,
+          "finMs": 3220
         },
         {
           "palabra": "cielo",
-          "inicioMs": 3580,
-          "finMs": 3920
+          "inicioMs": 3220,
+          "finMs": 3560
         },
         {
           "palabra": "tiene",
-          "inicioMs": 4180,
-          "finMs": 4340
+          "inicioMs": 3800,
+          "finMs": 3940
         },
         {
           "palabra": "un",
-          "inicioMs": 4340,
-          "finMs": 4520
+          "inicioMs": 3940,
+          "finMs": 4120
         },
         {
           "palabra": "color",
-          "inicioMs": 4520,
-          "finMs": 4700
+          "inicioMs": 4120,
+          "finMs": 4320
         },
         {
           "palabra": "azul",
-          "inicioMs": 4700,
-          "finMs": 5000
+          "inicioMs": 4320,
+          "finMs": 4600
         },
         {
           "palabra": "propio",
-          "inicioMs": 5000,
-          "finMs": 5440
+          "inicioMs": 4600,
+          "finMs": 5040
         },
         {
           "palabra": "causado",
-          "inicioMs": 5440,
-          "finMs": 5960
+          "inicioMs": 5040,
+          "finMs": 5560
         },
         {
           "palabra": "por",
-          "inicioMs": 5960,
-          "finMs": 6140
+          "inicioMs": 5560,
+          "finMs": 5740
         },
         {
           "palabra": "la",
-          "inicioMs": 6140,
-          "finMs": 6280
+          "inicioMs": 5740,
+          "finMs": 5900
         },
         {
           "palabra": "absorción",
-          "inicioMs": 6280,
-          "finMs": 6720
+          "inicioMs": 5900,
+          "finMs": 6320
         },
         {
           "palabra": "selectiva",
-          "inicioMs": 6720,
-          "finMs": 7220
+          "inicioMs": 6320,
+          "finMs": 6880
         },
         {
           "palabra": "de",
-          "inicioMs": 7220,
-          "finMs": 7360
+          "inicioMs": 6880,
+          "finMs": 6980
         },
         {
           "palabra": "la",
-          "inicioMs": 7360,
-          "finMs": 7460
+          "inicioMs": 6980,
+          "finMs": 7100
         },
         {
           "palabra": "luz",
-          "inicioMs": 7460,
-          "finMs": 7620
+          "inicioMs": 7100,
+          "finMs": 7260
         }
       ]
     },
@@ -383,7 +395,7 @@
           "habla": true
         }
       ],
-      "duracionSegundos": 7.69,
+      "duracionSegundos": 7.618,
       "palabras": [
         {
           "palabra": "La",
@@ -393,127 +405,127 @@
         {
           "palabra": "molécula",
           "inicioMs": 180,
-          "finMs": 640
+          "finMs": 720
         },
         {
           "palabra": "de",
-          "inicioMs": 640,
-          "finMs": 740
+          "inicioMs": 720,
+          "finMs": 940
         },
         {
           "palabra": "agua",
-          "inicioMs": 740,
-          "finMs": 920
+          "inicioMs": 940,
+          "finMs": 1400
         },
         {
           "palabra": "absorbe",
-          "inicioMs": 920,
-          "finMs": 1340
+          "inicioMs": 1400,
+          "finMs": 1540
         },
         {
           "palabra": "las",
-          "inicioMs": 1340,
-          "finMs": 1440
+          "inicioMs": 1540,
+          "finMs": 2060
         },
         {
           "palabra": "longitudes",
-          "inicioMs": 1440,
-          "finMs": 1900
+          "inicioMs": 2060,
+          "finMs": 2220
         },
         {
           "palabra": "de",
-          "inicioMs": 1900,
-          "finMs": 2160
+          "inicioMs": 2220,
+          "finMs": 2360
         },
         {
           "palabra": "onda",
-          "inicioMs": 2160,
-          "finMs": 2460
+          "inicioMs": 2360,
+          "finMs": 2760
         },
         {
           "palabra": "rojas",
-          "inicioMs": 2460,
-          "finMs": 2780
+          "inicioMs": 2920,
+          "finMs": 3280
         },
         {
           "palabra": "naranjas",
-          "inicioMs": 2880,
-          "finMs": 3260
+          "inicioMs": 3280,
+          "finMs": 3440
         },
         {
           "palabra": "y",
-          "inicioMs": 3260,
-          "finMs": 3400
+          "inicioMs": 3440,
+          "finMs": 3820
         },
         {
           "palabra": "amarillas",
-          "inicioMs": 3400,
-          "finMs": 3760
+          "inicioMs": 3820,
+          "finMs": 3920
         },
         {
           "palabra": "de",
-          "inicioMs": 3760,
-          "finMs": 3880
+          "inicioMs": 3920,
+          "finMs": 4020
         },
         {
           "palabra": "la",
-          "inicioMs": 3880,
-          "finMs": 3980
+          "inicioMs": 4020,
+          "finMs": 4220
         },
         {
           "palabra": "luz",
-          "inicioMs": 3980,
-          "finMs": 4180
+          "inicioMs": 4380,
+          "finMs": 4500
         },
         {
           "palabra": "pero",
-          "inicioMs": 4460,
-          "finMs": 4600
+          "inicioMs": 4500,
+          "finMs": 4740
         },
         {
           "palabra": "deja",
-          "inicioMs": 4600,
-          "finMs": 4840
+          "inicioMs": 4740,
+          "finMs": 5080
         },
         {
           "palabra": "pasar",
-          "inicioMs": 4840,
-          "finMs": 5160
+          "inicioMs": 5080,
+          "finMs": 5280
         },
         {
           "palabra": "las",
-          "inicioMs": 5160,
-          "finMs": 5340
+          "inicioMs": 5280,
+          "finMs": 5740
         },
         {
           "palabra": "longitudes",
-          "inicioMs": 5340,
-          "finMs": 5860
+          "inicioMs": 5740,
+          "finMs": 6000
         },
         {
           "palabra": "de",
-          "inicioMs": 5860,
-          "finMs": 6060
+          "inicioMs": 6000,
+          "finMs": 6220
         },
         {
           "palabra": "onda",
-          "inicioMs": 6060,
+          "inicioMs": 6220,
           "finMs": 6560
         },
         {
           "palabra": "azules",
           "inicioMs": 6560,
-          "finMs": 6780
+          "finMs": 6720
         },
         {
           "palabra": "y",
-          "inicioMs": 6780,
-          "finMs": 7220
+          "inicioMs": 6720,
+          "finMs": 7160
         },
         {
           "palabra": "verdes",
-          "inicioMs": 7220,
-          "finMs": 7440
+          "inicioMs": 7160,
+          "finMs": 7368
         }
       ]
     },
@@ -550,122 +562,122 @@
           "habla": true
         }
       ],
-      "duracionSegundos": 6.322,
+      "duracionSegundos": 6.898,
       "palabras": [
         {
           "palabra": "En",
           "inicioMs": 0,
-          "finMs": 180
+          "finMs": 220
         },
         {
           "palabra": "un",
-          "inicioMs": 180,
-          "finMs": 280
+          "inicioMs": 220,
+          "finMs": 340
         },
         {
           "palabra": "vaso",
-          "inicioMs": 280,
-          "finMs": 580
+          "inicioMs": 340,
+          "finMs": 560
         },
         {
           "palabra": "de",
-          "inicioMs": 580,
-          "finMs": 680
+          "inicioMs": 560,
+          "finMs": 740
         },
         {
           "palabra": "agua",
-          "inicioMs": 680,
-          "finMs": 960
+          "inicioMs": 740,
+          "finMs": 980
         },
         {
           "palabra": "la",
-          "inicioMs": 1000,
-          "finMs": 1120
+          "inicioMs": 1080,
+          "finMs": 1140
         },
         {
           "palabra": "cantidad",
-          "inicioMs": 1120,
-          "finMs": 1320
+          "inicioMs": 1140,
+          "finMs": 1420
         },
         {
           "palabra": "de",
-          "inicioMs": 1320,
-          "finMs": 1560
+          "inicioMs": 1420,
+          "finMs": 1680
         },
         {
           "palabra": "moléculas",
-          "inicioMs": 1560,
-          "finMs": 2100
+          "inicioMs": 1680,
+          "finMs": 2240
         },
         {
           "palabra": "es",
-          "inicioMs": 2100,
-          "finMs": 2280
+          "inicioMs": 2240,
+          "finMs": 2500
         },
         {
           "palabra": "tan",
-          "inicioMs": 2280,
-          "finMs": 2420
+          "inicioMs": 2500,
+          "finMs": 2640
         },
         {
           "palabra": "pequeña",
-          "inicioMs": 2420,
-          "finMs": 2800
+          "inicioMs": 2640,
+          "finMs": 2980
         },
         {
           "palabra": "que",
-          "inicioMs": 2800,
-          "finMs": 3000
+          "inicioMs": 2980,
+          "finMs": 3200
         },
         {
           "palabra": "la",
-          "inicioMs": 3000,
-          "finMs": 3100
+          "inicioMs": 3200,
+          "finMs": 3320
         },
         {
           "palabra": "absorción",
-          "inicioMs": 3100,
-          "finMs": 3500
+          "inicioMs": 3320,
+          "finMs": 3740
         },
         {
           "palabra": "es",
-          "inicioMs": 3500,
-          "finMs": 3660
+          "inicioMs": 3740,
+          "finMs": 3900
         },
         {
           "palabra": "imperceptible",
-          "inicioMs": 3660,
-          "finMs": 4320
+          "inicioMs": 3900,
+          "finMs": 4660
         },
         {
           "palabra": "por",
-          "inicioMs": 4400,
-          "finMs": 4480
+          "inicioMs": 4780,
+          "finMs": 4880
         },
         {
           "palabra": "eso",
-          "inicioMs": 4480,
-          "finMs": 4640
+          "inicioMs": 4880,
+          "finMs": 5100
         },
         {
           "palabra": "el",
-          "inicioMs": 4640,
-          "finMs": 4720
+          "inicioMs": 5100,
+          "finMs": 5220
         },
         {
           "palabra": "agua",
-          "inicioMs": 4720,
-          "finMs": 4860
+          "inicioMs": 5220,
+          "finMs": 5380
         },
         {
           "palabra": "parece",
-          "inicioMs": 4860,
-          "finMs": 5140
+          "inicioMs": 5380,
+          "finMs": 5660
         },
         {
           "palabra": "transparente",
-          "inicioMs": 5140,
-          "finMs": 5860
+          "inicioMs": 5660,
+          "finMs": 6440
         }
       ]
     },
@@ -701,122 +713,122 @@
           "habla": true
         }
       ],
-      "duracionSegundos": 7.522,
+      "duracionSegundos": 7.738,
       "palabras": [
         {
           "palabra": "Pero",
           "inicioMs": 0,
-          "finMs": 240
+          "finMs": 280
         },
         {
           "palabra": "en",
-          "inicioMs": 240,
-          "finMs": 340
+          "inicioMs": 280,
+          "finMs": 400
         },
         {
           "palabra": "el",
-          "inicioMs": 340,
-          "finMs": 440
+          "inicioMs": 400,
+          "finMs": 520
         },
         {
           "palabra": "océano",
-          "inicioMs": 440,
-          "finMs": 860
+          "inicioMs": 520,
+          "finMs": 1040
         },
         {
           "palabra": "la",
-          "inicioMs": 860,
-          "finMs": 1300
+          "inicioMs": 1260,
+          "finMs": 1360
         },
         {
           "palabra": "luz",
-          "inicioMs": 1300,
-          "finMs": 1480
+          "inicioMs": 1360,
+          "finMs": 1580
         },
         {
           "palabra": "debe",
-          "inicioMs": 1480,
-          "finMs": 1760
+          "inicioMs": 1580,
+          "finMs": 1920
         },
         {
           "palabra": "atravesar",
-          "inicioMs": 1760,
-          "finMs": 2280
+          "inicioMs": 1920,
+          "finMs": 2500
         },
         {
           "palabra": "cientos",
-          "inicioMs": 2280,
-          "finMs": 2660
+          "inicioMs": 2500,
+          "finMs": 2880
         },
         {
           "palabra": "de",
-          "inicioMs": 2660,
-          "finMs": 2840
+          "inicioMs": 2880,
+          "finMs": 3080
         },
         {
           "palabra": "metros",
-          "inicioMs": 2840,
-          "finMs": 3040
+          "inicioMs": 3080,
+          "finMs": 3320
         },
         {
           "palabra": "de",
-          "inicioMs": 3040,
-          "finMs": 3260
+          "inicioMs": 3320,
+          "finMs": 3560
         },
         {
           "palabra": "agua",
-          "inicioMs": 3260,
-          "finMs": 3540
+          "inicioMs": 3560,
+          "finMs": 3860
         },
         {
           "palabra": "acumulando",
-          "inicioMs": 3840,
-          "finMs": 4380
+          "inicioMs": 3960,
+          "finMs": 4580
         },
         {
           "palabra": "la",
-          "inicioMs": 4380,
-          "finMs": 4520
+          "inicioMs": 4580,
+          "finMs": 4720
         },
         {
           "palabra": "absorción",
-          "inicioMs": 4520,
-          "finMs": 5040
+          "inicioMs": 4720,
+          "finMs": 5240
         },
         {
           "palabra": "hasta",
-          "inicioMs": 5040,
-          "finMs": 5520
+          "inicioMs": 5240,
+          "finMs": 5660
         },
         {
           "palabra": "que",
-          "inicioMs": 5520,
-          "finMs": 5680
+          "inicioMs": 5660,
+          "finMs": 5820
         },
         {
           "palabra": "solo",
-          "inicioMs": 5680,
-          "finMs": 5900
+          "inicioMs": 5820,
+          "finMs": 6020
         },
         {
           "palabra": "sobrevive",
-          "inicioMs": 5900,
-          "finMs": 6420
+          "inicioMs": 6020,
+          "finMs": 6620
         },
         {
           "palabra": "el",
-          "inicioMs": 6420,
-          "finMs": 6560
+          "inicioMs": 6620,
+          "finMs": 6720
         },
         {
           "palabra": "color",
-          "inicioMs": 6560,
-          "finMs": 6740
+          "inicioMs": 6720,
+          "finMs": 6920
         },
         {
           "palabra": "azul",
-          "inicioMs": 6740,
-          "finMs": 7060
+          "inicioMs": 6920,
+          "finMs": 7240
         }
       ]
     },
@@ -853,7 +865,7 @@
           "habla": true
         }
       ],
-      "duracionSegundos": 6.898,
+      "duracionSegundos": 6.97,
       "palabras": [
         {
           "palabra": "A",
@@ -863,112 +875,112 @@
         {
           "palabra": "partir",
           "inicioMs": 160,
-          "finMs": 380
+          "finMs": 440
         },
         {
           "palabra": "de",
-          "inicioMs": 380,
-          "finMs": 560
+          "inicioMs": 440,
+          "finMs": 640
         },
         {
           "palabra": "los",
-          "inicioMs": 560,
-          "finMs": 660
+          "inicioMs": 640,
+          "finMs": 760
         },
         {
           "palabra": "veinte",
-          "inicioMs": 660,
-          "finMs": 940
+          "inicioMs": 760,
+          "finMs": 1040
         },
         {
           "palabra": "metros",
-          "inicioMs": 940,
-          "finMs": 1240
+          "inicioMs": 1040,
+          "finMs": 1320
         },
         {
           "palabra": "de",
-          "inicioMs": 1240,
-          "finMs": 1400
+          "inicioMs": 1320,
+          "finMs": 1480
         },
         {
           "palabra": "profundidad",
-          "inicioMs": 1400,
-          "finMs": 1980
+          "inicioMs": 1480,
+          "finMs": 2080
         },
         {
           "palabra": "el",
-          "inicioMs": 2160,
-          "finMs": 2220
+          "inicioMs": 2200,
+          "finMs": 2280
         },
         {
           "palabra": "color",
-          "inicioMs": 2220,
-          "finMs": 2420
+          "inicioMs": 2280,
+          "finMs": 2480
         },
         {
           "palabra": "rojo",
-          "inicioMs": 2420,
-          "finMs": 2780
+          "inicioMs": 2480,
+          "finMs": 2840
         },
         {
           "palabra": "desaparece",
-          "inicioMs": 2780,
-          "finMs": 3360
+          "inicioMs": 2840,
+          "finMs": 3420
         },
         {
           "palabra": "por",
-          "inicioMs": 3360,
-          "finMs": 3500
+          "inicioMs": 3420,
+          "finMs": 3560
         },
         {
           "palabra": "completo",
-          "inicioMs": 3500,
-          "finMs": 4020
+          "inicioMs": 3560,
+          "finMs": 4080
         },
         {
           "palabra": "y",
-          "inicioMs": 4020,
-          "finMs": 4440
+          "inicioMs": 4080,
+          "finMs": 4520
         },
         {
           "palabra": "a",
-          "inicioMs": 4440,
-          "finMs": 4660
+          "inicioMs": 4520,
+          "finMs": 4720
         },
         {
           "palabra": "cien",
-          "inicioMs": 4660,
-          "finMs": 4980
+          "inicioMs": 4720,
+          "finMs": 4860
         },
         {
           "palabra": "metros",
-          "inicioMs": 4980,
-          "finMs": 5240
+          "inicioMs": 4860,
+          "finMs": 5100
         },
         {
           "palabra": "solo",
-          "inicioMs": 5240,
-          "finMs": 5500
+          "inicioMs": 5100,
+          "finMs": 5440
         },
         {
           "palabra": "queda",
-          "inicioMs": 5500,
-          "finMs": 5760
+          "inicioMs": 5440,
+          "finMs": 5680
         },
         {
           "palabra": "el",
-          "inicioMs": 5760,
-          "finMs": 5980
+          "inicioMs": 5680,
+          "finMs": 5880
         },
         {
           "palabra": "azul",
-          "inicioMs": 5980,
-          "finMs": 6420
+          "inicioMs": 5880,
+          "finMs": 6040
         },
         {
           "palabra": "oscuro",
-          "inicioMs": 6420,
-          "finMs": 6648
+          "inicioMs": 6040,
+          "finMs": 6480
         }
       ]
     },
@@ -1005,7 +1017,7 @@
           "habla": true
         }
       ],
-      "duracionSegundos": 8.266,
+      "duracionSegundos": 8.458,
       "palabras": [
         {
           "palabra": "El",
@@ -1015,56 +1027,56 @@
         {
           "palabra": "hielo",
           "inicioMs": 240,
-          "finMs": 440
+          "finMs": 520
         },
         {
           "palabra": "es",
-          "inicioMs": 440,
-          "finMs": 580
+          "inicioMs": 520,
+          "finMs": 740
         },
         {
           "palabra": "transparente",
-          "inicioMs": 580,
-          "finMs": 1180
+          "inicioMs": 740,
+          "finMs": 1420
         },
         {
           "palabra": "porque",
-          "inicioMs": 1180,
-          "finMs": 1440
+          "inicioMs": 1420,
+          "finMs": 1680
         },
         {
           "palabra": "en",
-          "inicioMs": 1440,
-          "finMs": 1720
+          "inicioMs": 1680,
+          "finMs": 1840
         },
         {
           "palabra": "estado",
-          "inicioMs": 1720,
-          "finMs": 2020
+          "inicioMs": 1840,
+          "finMs": 2140
         },
         {
           "palabra": "sólido",
-          "inicioMs": 2020,
-          "finMs": 2560
+          "inicioMs": 2140,
+          "finMs": 2640
         },
         {
           "palabra": "las",
-          "inicioMs": 2560,
-          "finMs": 3560
+          "inicioMs": 2640,
+          "finMs": 3520
         },
         {
           "palabra": "moléculas",
-          "inicioMs": 3560,
-          "finMs": 4020
+          "inicioMs": 3520,
+          "finMs": 4000
         },
         {
           "palabra": "de",
-          "inicioMs": 4020,
-          "finMs": 4140
+          "inicioMs": 4000,
+          "finMs": 4120
         },
         {
           "palabra": "agua",
-          "inicioMs": 4140,
+          "inicioMs": 4120,
           "finMs": 4320
         },
         {
@@ -1075,57 +1087,57 @@
         {
           "palabra": "organizan",
           "inicioMs": 4460,
-          "finMs": 4900
+          "finMs": 4960
         },
         {
           "palabra": "en",
-          "inicioMs": 4900,
-          "finMs": 5000
+          "inicioMs": 4960,
+          "finMs": 5060
         },
         {
           "palabra": "una",
-          "inicioMs": 5000,
-          "finMs": 5140
+          "inicioMs": 5060,
+          "finMs": 5200
         },
         {
           "palabra": "estructura",
-          "inicioMs": 5140,
-          "finMs": 5540
+          "inicioMs": 5200,
+          "finMs": 5660
         },
         {
           "palabra": "cristalina",
-          "inicioMs": 5540,
-          "finMs": 5680
+          "inicioMs": 5660,
+          "finMs": 6140
         },
         {
           "palabra": "ordenada",
-          "inicioMs": 5680,
-          "finMs": 5860
+          "inicioMs": 6140,
+          "finMs": 6620
         },
         {
           "palabra": "que",
-          "inicioMs": 5860,
-          "finMs": 6060
+          "inicioMs": 6620,
+          "finMs": 6760
         },
         {
           "palabra": "no",
-          "inicioMs": 6060,
-          "finMs": 6480
+          "inicioMs": 6760,
+          "finMs": 6920
         },
         {
           "palabra": "absorbe",
-          "inicioMs": 6480,
-          "finMs": 6660
+          "inicioMs": 6920,
+          "finMs": 7340
         },
         {
           "palabra": "luz",
-          "inicioMs": 6660,
-          "finMs": 6840
+          "inicioMs": 7340,
+          "finMs": 7540
         },
         {
           "palabra": "visible",
-          "inicioMs": 6840,
-          "finMs": 7220
+          "inicioMs": 7540,
+          "finMs": 7960
         }
       ]
     },
@@ -1161,112 +1173,112 @@
           "habla": true
         }
       ],
-      "duracionSegundos": 7.81,
+      "duracionSegundos": 6.562,
       "palabras": [
         {
           "palabra": "Además",
           "inicioMs": 0,
-          "finMs": 420
+          "finMs": 320
         },
         {
           "palabra": "el",
-          "inicioMs": 720,
-          "finMs": 840
+          "inicioMs": 460,
+          "finMs": 580
         },
         {
           "palabra": "hielo",
-          "inicioMs": 840,
-          "finMs": 1120
+          "inicioMs": 580,
+          "finMs": 820
         },
         {
           "palabra": "tiene",
-          "inicioMs": 1120,
-          "finMs": 1320
+          "inicioMs": 820,
+          "finMs": 980
         },
         {
           "palabra": "burbujas",
-          "inicioMs": 1320,
-          "finMs": 1920
+          "inicioMs": 980,
+          "finMs": 1560
         },
         {
           "palabra": "de",
-          "inicioMs": 1920,
-          "finMs": 2080
+          "inicioMs": 1560,
+          "finMs": 1660
         },
         {
           "palabra": "aire",
-          "inicioMs": 2080,
-          "finMs": 2300
+          "inicioMs": 1660,
+          "finMs": 1820
         },
         {
           "palabra": "atrapadas",
-          "inicioMs": 2300,
-          "finMs": 2920
+          "inicioMs": 1820,
+          "finMs": 2380
         },
         {
           "palabra": "que",
-          "inicioMs": 2920,
-          "finMs": 3120
+          "inicioMs": 2380,
+          "finMs": 2520
         },
         {
           "palabra": "dispersan",
-          "inicioMs": 3120,
-          "finMs": 3640
+          "inicioMs": 2520,
+          "finMs": 3060
         },
         {
           "palabra": "la",
-          "inicioMs": 3640,
-          "finMs": 3760
+          "inicioMs": 3060,
+          "finMs": 3160
         },
         {
           "palabra": "luz",
-          "inicioMs": 3760,
-          "finMs": 3960
+          "inicioMs": 3160,
+          "finMs": 3340
         },
         {
           "palabra": "en",
-          "inicioMs": 3960,
-          "finMs": 4260
+          "inicioMs": 3340,
+          "finMs": 3520
         },
         {
           "palabra": "todas",
-          "inicioMs": 4260,
-          "finMs": 4500
+          "inicioMs": 3520,
+          "finMs": 3660
         },
         {
           "palabra": "las",
-          "inicioMs": 4500,
-          "finMs": 4720
+          "inicioMs": 3660,
+          "finMs": 3840
         },
         {
           "palabra": "direcciones",
-          "inicioMs": 4720,
-          "finMs": 5240
+          "inicioMs": 3840,
+          "finMs": 4380
         },
         {
           "palabra": "haciéndolo",
-          "inicioMs": 5240,
-          "finMs": 6040
+          "inicioMs": 4500,
+          "finMs": 4880
         },
         {
           "palabra": "parecer",
-          "inicioMs": 6040,
-          "finMs": 6400
+          "inicioMs": 4880,
+          "finMs": 5140
         },
         {
           "palabra": "blanco",
-          "inicioMs": 6400,
-          "finMs": 6820
+          "inicioMs": 5140,
+          "finMs": 5620
         },
         {
           "palabra": "y",
-          "inicioMs": 6820,
-          "finMs": 6960
+          "inicioMs": 5620,
+          "finMs": 5720
         },
         {
           "palabra": "opaco",
-          "inicioMs": 6960,
-          "finMs": 7340
+          "inicioMs": 5720,
+          "finMs": 6100
         }
       ]
     },
@@ -1303,127 +1315,127 @@
           "habla": true
         }
       ],
-      "duracionSegundos": 7.834,
+      "duracionSegundos": 8.026,
       "palabras": [
         {
           "palabra": "Por",
           "inicioMs": 0,
-          "finMs": 180
+          "finMs": 220
         },
         {
           "palabra": "eso",
-          "inicioMs": 180,
-          "finMs": 300
+          "inicioMs": 220,
+          "finMs": 360
         },
         {
           "palabra": "los",
-          "inicioMs": 300,
-          "finMs": 420
+          "inicioMs": 360,
+          "finMs": 500
         },
         {
           "palabra": "glaciares",
-          "inicioMs": 420,
-          "finMs": 820
+          "inicioMs": 500,
+          "finMs": 980
         },
         {
           "palabra": "antiguos",
-          "inicioMs": 820,
-          "finMs": 1280
+          "inicioMs": 980,
+          "finMs": 1500
         },
         {
           "palabra": "que",
-          "inicioMs": 1280,
-          "finMs": 1360
+          "inicioMs": 1500,
+          "finMs": 1620
         },
         {
           "palabra": "tienen",
-          "inicioMs": 1360,
-          "finMs": 1560
+          "inicioMs": 1620,
+          "finMs": 1820
         },
         {
           "palabra": "menos",
-          "inicioMs": 1560,
-          "finMs": 1760
+          "inicioMs": 1820,
+          "finMs": 2060
         },
         {
           "palabra": "burbujas",
-          "inicioMs": 1760,
-          "finMs": 2380
-        },
-        {
-          "palabra": "son",
-          "inicioMs": 2380,
-          "finMs": 2560
-        },
-        {
-          "palabra": "de",
-          "inicioMs": 2560,
+          "inicioMs": 2060,
           "finMs": 2680
         },
         {
-          "palabra": "un",
+          "palabra": "son",
           "inicioMs": 2680,
-          "finMs": 2780
-        },
-        {
-          "palabra": "azul",
-          "inicioMs": 2780,
-          "finMs": 2960
-        },
-        {
-          "palabra": "intenso",
-          "inicioMs": 2960,
-          "finMs": 3500
-        },
-        {
-          "palabra": "la",
-          "inicioMs": 3780,
-          "finMs": 3900
-        },
-        {
-          "palabra": "luz",
-          "inicioMs": 3900,
-          "finMs": 4060
-        },
-        {
-          "palabra": "azul",
-          "inicioMs": 4060,
-          "finMs": 4380
-        },
-        {
-          "palabra": "puede",
-          "inicioMs": 4380,
-          "finMs": 4700
-        },
-        {
-          "palabra": "penetrar",
-          "inicioMs": 4700,
-          "finMs": 5160
-        },
-        {
-          "palabra": "profundamente",
-          "inicioMs": 5160,
-          "finMs": 6020
-        },
-        {
-          "palabra": "antes",
-          "inicioMs": 6020,
-          "finMs": 6460
+          "finMs": 3040
         },
         {
           "palabra": "de",
-          "inicioMs": 6460,
-          "finMs": 6640
+          "inicioMs": 3040,
+          "finMs": 3200
         },
         {
-          "palabra": "ser",
-          "inicioMs": 6640,
+          "palabra": "un",
+          "inicioMs": 3200,
+          "finMs": 3320
+        },
+        {
+          "palabra": "azul",
+          "inicioMs": 3320,
+          "finMs": 3520
+        },
+        {
+          "palabra": "intenso",
+          "inicioMs": 3520,
+          "finMs": 4120
+        },
+        {
+          "palabra": "la",
+          "inicioMs": 4460,
+          "finMs": 4540
+        },
+        {
+          "palabra": "luz",
+          "inicioMs": 4540,
+          "finMs": 4660
+        },
+        {
+          "palabra": "azul",
+          "inicioMs": 4660,
+          "finMs": 4900
+        },
+        {
+          "palabra": "puede",
+          "inicioMs": 4900,
+          "finMs": 5180
+        },
+        {
+          "palabra": "penetrar",
+          "inicioMs": 5180,
+          "finMs": 5540
+        },
+        {
+          "palabra": "profundamente",
+          "inicioMs": 5540,
+          "finMs": 6200
+        },
+        {
+          "palabra": "antes",
+          "inicioMs": 6200,
+          "finMs": 6680
+        },
+        {
+          "palabra": "de",
+          "inicioMs": 6680,
           "finMs": 6820
         },
         {
-          "palabra": "absorbida",
+          "palabra": "ser",
           "inicioMs": 6820,
-          "finMs": 7360
+          "finMs": 6980
+        },
+        {
+          "palabra": "absorbida",
+          "inicioMs": 6980,
+          "finMs": 7560
         }
       ]
     },
@@ -1462,162 +1474,162 @@
           "habla": true
         }
       ],
-      "duracionSegundos": 8.314,
+      "duracionSegundos": 8.602,
       "palabras": [
         {
           "palabra": "Así",
           "inicioMs": 0,
-          "finMs": 280
+          "finMs": 300
         },
         {
           "palabra": "que",
-          "inicioMs": 280,
-          "finMs": 420
+          "inicioMs": 300,
+          "finMs": 460
         },
         {
           "palabra": "la",
-          "inicioMs": 420,
-          "finMs": 500
+          "inicioMs": 460,
+          "finMs": 560
         },
         {
           "palabra": "próxima",
-          "inicioMs": 500,
-          "finMs": 840
+          "inicioMs": 560,
+          "finMs": 920
         },
         {
           "palabra": "vez",
-          "inicioMs": 840,
-          "finMs": 1060
+          "inicioMs": 920,
+          "finMs": 1140
         },
         {
           "palabra": "que",
-          "inicioMs": 1060,
-          "finMs": 1220
+          "inicioMs": 1140,
+          "finMs": 1320
         },
         {
           "palabra": "veas",
-          "inicioMs": 1220,
-          "finMs": 1440
-        },
-        {
-          "palabra": "el",
-          "inicioMs": 1440,
+          "inicioMs": 1320,
           "finMs": 1540
         },
         {
-          "palabra": "mar",
+          "palabra": "el",
           "inicioMs": 1540,
-          "finMs": 1640
+          "finMs": 1660
+        },
+        {
+          "palabra": "mar",
+          "inicioMs": 1660,
+          "finMs": 1760
         },
         {
           "palabra": "azul",
-          "inicioMs": 1640,
-          "finMs": 1920
+          "inicioMs": 1760,
+          "finMs": 2080
         },
         {
           "palabra": "recuerda",
-          "inicioMs": 2040,
-          "finMs": 2380
+          "inicioMs": 2200,
+          "finMs": 2580
         },
         {
           "palabra": "que",
-          "inicioMs": 2380,
-          "finMs": 2500
+          "inicioMs": 2580,
+          "finMs": 2720
         },
         {
           "palabra": "estás",
-          "inicioMs": 2500,
-          "finMs": 2660
+          "inicioMs": 2720,
+          "finMs": 2920
         },
         {
           "palabra": "viendo",
-          "inicioMs": 2660,
-          "finMs": 2880
+          "inicioMs": 2920,
+          "finMs": 3200
         },
         {
           "palabra": "la",
-          "inicioMs": 2880,
-          "finMs": 3060
+          "inicioMs": 3200,
+          "finMs": 3460
         },
         {
           "palabra": "luz",
-          "inicioMs": 3060,
-          "finMs": 3240
+          "inicioMs": 3460,
+          "finMs": 3640
         },
         {
           "palabra": "solar",
-          "inicioMs": 3240,
-          "finMs": 3520
+          "inicioMs": 3640,
+          "finMs": 3960
         },
         {
           "palabra": "filtrada",
-          "inicioMs": 3520,
-          "finMs": 3980
+          "inicioMs": 3960,
+          "finMs": 4580
         },
         {
           "palabra": "por",
-          "inicioMs": 3980,
-          "finMs": 4240
+          "inicioMs": 4580,
+          "finMs": 4780
         },
         {
           "palabra": "millones",
-          "inicioMs": 4240,
-          "finMs": 4480
+          "inicioMs": 4780,
+          "finMs": 5000
         },
         {
           "palabra": "de",
-          "inicioMs": 4480,
-          "finMs": 4720
-        },
-        {
-          "palabra": "moléculas",
-          "inicioMs": 4720,
-          "finMs": 5200
-        },
-        {
-          "palabra": "de",
-          "inicioMs": 5200,
+          "inicioMs": 5000,
           "finMs": 5300
         },
         {
-          "palabra": "agua",
+          "palabra": "moléculas",
           "inicioMs": 5300,
-          "finMs": 5540
-        },
-        {
-          "palabra": "La",
-          "inicioMs": 5760,
           "finMs": 5840
         },
         {
-          "palabra": "física",
+          "palabra": "de",
           "inicioMs": 5840,
-          "finMs": 6140
+          "finMs": 5940
+        },
+        {
+          "palabra": "agua",
+          "inicioMs": 5940,
+          "finMs": 6240
+        },
+        {
+          "palabra": "La",
+          "inicioMs": 6440,
+          "finMs": 6500
+        },
+        {
+          "palabra": "física",
+          "inicioMs": 6500,
+          "finMs": 6760
         },
         {
           "palabra": "óptica",
-          "inicioMs": 6140,
-          "finMs": 6720
+          "inicioMs": 6760,
+          "finMs": 7260
         },
         {
           "palabra": "está",
-          "inicioMs": 6720,
-          "finMs": 6920
+          "inicioMs": 7260,
+          "finMs": 7440
         },
         {
           "palabra": "en",
-          "inicioMs": 6920,
-          "finMs": 7080
+          "inicioMs": 7440,
+          "finMs": 7540
         },
         {
           "palabra": "cada",
-          "inicioMs": 7080,
-          "finMs": 7360
+          "inicioMs": 7540,
+          "finMs": 7720
         },
         {
           "palabra": "gota",
-          "inicioMs": 7360,
-          "finMs": 7840
+          "inicioMs": 7720,
+          "finMs": 8140
         }
       ]
     }

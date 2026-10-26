@@ -150,9 +150,10 @@ def verificar_duplicado(
     nuevo_texto_completo: str,
     historial: List[Dict[str, Any]],
     umbral: float = UMBRAL_SIMILITUD_DEFECTO,
+    nuevo_tema: str = "",
 ) -> List[Dict[str, Any]]:
     """
-    Compara el gancho y el texto completo contra el historial usando difflib.SequenceMatcher.
+    Compara el gancho, el tema (meta.temaResumen) y el texto completo contra el historial usando difflib.SequenceMatcher.
     Si detecta similitud > 65% con otro video (distinto al actual en edición),
     muestra la advertencia [ALERTA DUPLICADO] Este tema ya se trató en el video {id}.
     """
@@ -181,10 +182,17 @@ def verificar_duplicado(
         if norm_nuevo_completo and norm_reg_completo:
             sim_completo = difflib.SequenceMatcher(None, norm_nuevo_completo, norm_reg_completo).ratio()
 
-        max_sim = max(sim_gancho, sim_completo)
+        # Tema: compara meta.temaResumen (o, si el registro es antiguo, su gancho)
+        norm_nuevo_tema = normalizar_para_comparacion(nuevo_tema)
+        norm_reg_tema = normalizar_para_comparacion(registro.get("tema") or reg_gancho)
+        sim_tema = 0.0
+        if norm_nuevo_tema and norm_reg_tema:
+            sim_tema = difflib.SequenceMatcher(None, norm_nuevo_tema, norm_reg_tema).ratio()
+
+        max_sim = max(sim_gancho, sim_completo, sim_tema)
 
         if max_sim >= umbral:
-            tipo_coincidencia = "gancho" if sim_gancho >= sim_completo else "guion completo"
+            tipo_coincidencia = max(((sim_gancho, "gancho"), (sim_completo, "guion completo"), (sim_tema, "tema")))[1]
             porcentaje = int(round(max_sim * 100))
             duplicados.append({
                 "id": reg_id,
@@ -217,6 +225,14 @@ def respaldar_guion(guion_raw: Any, id_slug: str, fecha_str: Optional[str] = Non
     ruta_relativa = f"archivo_videos/{nombre_archivo}"
     return ruta_relativa
 
+
+def rango_duracion(guion_raw: Any) -> tuple:
+    """Rango (min, max) en segundos: meta.duracionObjetivo = [min, max] o 62-110 por defecto."""
+    meta = guion_raw.get("meta") if isinstance(guion_raw, dict) else None
+    objetivo = (meta or {}).get("duracionObjetivo")
+    if isinstance(objetivo, (list, tuple)) and len(objetivo) == 2:
+        return float(objetivo[0]), float(objetivo[1])
+    return 62.0, 110.0
 
 def registrar_historia(
     guion_raw: Optional[Any] = None,
@@ -255,33 +271,27 @@ def registrar_historia(
         nuevo_texto_completo=texto_completo,
         historial=historial,
         umbral=umbral,
+        nuevo_tema=(info["meta"] or {}).get("temaResumen", ""),
     )
 
-    # Verificación de duración obligatoria (Mínimo: 1:02 / 62s, Esperado: ~1:30 / 90s, Holgura: ~1:50 / 110s)
+    # Verificación de duración contra meta.duracionObjetivo (por defecto 62-110 s)
     total_duracion = sum(
         e.get("duracionSegundos", 0)
         for e in info.get("escenas", [])
         if isinstance(e, dict) and isinstance(e.get("duracionSegundos"), (int, float))
     )
     if total_duracion > 0:
-        minutos = int(total_duracion // 60)
-        segundos = int(round(total_duracion % 60))
-        tiempo_fmt = f"{minutos}:{segundos:02d}"
-        if total_duracion < 62.0:
+        minimo, maximo = rango_duracion(guion_raw)
+        tiempo_fmt = f"{int(total_duracion // 60)}:{int(round(total_duracion % 60)):02d}"
+        if total_duracion < minimo:
             print(
-                f"⏱️  [DURACIÓN] ⚠️ ALERTA: La duración total ({tiempo_fmt} / {total_duracion:.1f}s) es menor al mínimo obligatorio de 1:02 (62s).\n"
-                f"   El guion debe ampliarse para cumplir con la regla de duración.\n"
+                f"⏱️  [DURACIÓN] ⚠️ ALERTA: {tiempo_fmt} ({total_duracion:.1f}s) es menor al mínimo del objetivo ({minimo:.0f}s).\n"
+                f"   El guion debe ampliarse para cumplir con la duración objetivo.\n"
             )
-        elif total_duracion > 110.0:
-            print(
-                f"⏱️  [DURACIÓN] ⚠️ AVISO: La duración total ({tiempo_fmt} / {total_duracion:.1f}s) excede el margen con holgura de ~1:50 (110s).\n"
-            )
+        elif total_duracion > maximo:
+            print(f"⏱️  [DURACIÓN] ⚠️ AVISO: {tiempo_fmt} ({total_duracion:.1f}s) excede el máximo del objetivo ({maximo:.0f}s).\n")
         else:
-            print(
-                f"⏱️  [DURACIÓN] ✅ Duración en rango óptimo: {tiempo_fmt} ({total_duracion:.1f}s) "
-                f"[Mínimo 1:02 | Esperado 1:30 | Holgura hasta ~1:50]\n"
-            )
-
+            print(f"⏱️  [DURACIÓN] ✅ {tiempo_fmt} ({total_duracion:.1f}s) dentro del objetivo [{minimo:.0f}-{maximo:.0f}s]\n")
     # Respaldo en archivo_videos/
     archivo_respaldo = respaldar_guion(guion_raw, nuevo_id, fecha_str)
 
@@ -290,6 +300,7 @@ def registrar_historia(
         "id": nuevo_id,
         "fecha": fecha_str,
         "gancho": gancho,
+        "tema": (info["meta"] or {}).get("temaResumen", ""),
         "palabrasClave": palabras_clave,
         "archivoRespaldo": archivo_respaldo,
         "textoCompleto": texto_completo,

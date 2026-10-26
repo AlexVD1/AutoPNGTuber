@@ -1,0 +1,1744 @@
+{
+  "meta": {
+    "id": "marte_sin_escafandra",
+    "slug": "marte_sin_escafandra",
+    "temaResumen": "¿Qué le pasaría a tu cuerpo si intentaras respirar en la atmósfera de Marte sin traje espacial? Límite de Armstrong",
+    "titulo": "¿Qué le pasaría a tu cuerpo en Marte sin traje espacial?",
+    "titulo_corto": "MARTE SIN ESCAFANDRA",
+    "gancho": "¿Alguna vez te has preguntado qué le ocurriría exactamente a tu cuerpo si te quitaras el casco en la superficie de Marte por solo diez segundos?",
+    "fuentes": [
+      "NASA Space Physiology Laboratory (Human Survivability in Martian Atmosphere)",
+      "Federal Aviation Administration (FAA: The Armstrong Limit & Ebullism in Vacuum)"
+    ],
+    "genero": "SCIENCE",
+    "duracionObjetivo": [
+      62,
+      110
+    ]
+  },
+  "escenas": [
+    {
+      "id": 1,
+      "texto": "¿Alguna vez te has preguntado qué le ocurriría exactamente a tu cuerpo si te quitaras el casco en la superficie de Marte por solo diez segundos?",
+      "icono": "Rocket",
+      "colorIcono": "#EA580C",
+      "tituloVisual": "MARTE SIN TRAJE",
+      "composicionVisual": "plano_general",
+      "escenario": "superficie_marte",
+      "layout": "narrativo",
+      "transicion": "zoom_in",
+      "efectosCamara": [
+        "drift"
+      ],
+      "sfx": "sfx/sfx_whoosh.wav",
+      "volumenSfx": 0.2,
+      "palabrasClave": [
+        "quitaras el casco",
+        "superficie de Marte",
+        "diez segundos"
+      ],
+      "personajes": [
+        {
+          "id": "astronauta",
+          "posicion": {
+            "x": -160,
+            "y": 70
+          },
+          "escala": 1.05,
+          "orientacion": "derecha",
+          "prop": "mars_helmet",
+          "poseId": "explaining_pointing_up",
+          "expresion": "talking_enthusiastic",
+          "acciones": [
+            {
+              "tipo": "caminar_hacia",
+              "desdeX": -260,
+              "haciaX": -120
+            }
+          ],
+          "habla": true
+        }
+      ],
+      "duracionSegundos": 7.114,
+      "palabras": [
+        {
+          "palabra": "Alguna",
+          "inicioMs": 0,
+          "finMs": 380
+        },
+        {
+          "palabra": "vez",
+          "inicioMs": 380,
+          "finMs": 480
+        },
+        {
+          "palabra": "te",
+          "inicioMs": 480,
+          "finMs": 660
+        },
+        {
+          "palabra": "has",
+          "inicioMs": 660,
+          "finMs": 700
+        },
+        {
+          "palabra": "preguntado",
+          "inicioMs": 700,
+          "finMs": 1160
+        },
+        {
+          "palabra": "qué",
+          "inicioMs": 1160,
+          "finMs": 1340
+        },
+        {
+          "palabra": "le",
+          "inicioMs": 1340,
+          "finMs": 1440
+        },
+        {
+          "palabra": "ocurriría",
+          "inicioMs": 1440,
+          "finMs": 1920
+        },
+        {
+          "palabra": "exactamente",
+          "inicioMs": 1920,
+          "finMs": 2240
+        },
+        {
+          "palabra": "a",
+          "inicioMs": 2240,
+          "finMs": 2600
+        },
+        {
+          "palabra": "tu",
+          "inicioMs": 2600,
+          "finMs": 2700
+        },
+        {
+          "palabra": "cuerpo",
+          "inicioMs": 2700,
+          "finMs": 3000
+        },
+        {
+          "palabra": "si",
+          "inicioMs": 3000,
+          "finMs": 3240
+        },
+        {
+          "palabra": "te",
+          "inicioMs": 3240,
+          "finMs": 3360
+        },
+        {
+          "palabra": "quitaras",
+          "inicioMs": 3360,
+          "finMs": 3760
+        },
+        {
+          "palabra": "el",
+          "inicioMs": 3760,
+          "finMs": 3880
+        },
+        {
+          "palabra": "casco",
+          "inicioMs": 3880,
+          "finMs": 4220
+        },
+        {
+          "palabra": "en",
+          "inicioMs": 4220,
+          "finMs": 4300
+        },
+        {
+          "palabra": "la",
+          "inicioMs": 4300,
+          "finMs": 4380
+        },
+        {
+          "palabra": "superficie",
+          "inicioMs": 4380,
+          "finMs": 4940
+        },
+        {
+          "palabra": "de",
+          "inicioMs": 4940,
+          "finMs": 5020
+        },
+        {
+          "palabra": "Marte",
+          "inicioMs": 5020,
+          "finMs": 5380
+        },
+        {
+          "palabra": "por",
+          "inicioMs": 5380,
+          "finMs": 5540
+        },
+        {
+          "palabra": "solo",
+          "inicioMs": 5540,
+          "finMs": 5760
+        },
+        {
+          "palabra": "diez",
+          "inicioMs": 5760,
+          "finMs": 6020
+        },
+        {
+          "palabra": "segundos",
+          "inicioMs": 6020,
+          "finMs": 6300
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "texto": "Las películas de ciencia ficción nos enseñan que explotarías como un globo, pero la realidad de la física espacial es mucho más perturbadora.",
+      "icono": "AlertTriangle",
+      "colorIcono": "#EF4444",
+      "tituloVisual": "MITO DE HOLLYWOOD",
+      "composicionVisual": "primer_plano",
+      "escenario": "superficie_marte",
+      "layout": "narrativo",
+      "transicion": "whip_right",
+      "efectosCamara": [
+        "shake",
+        "punch"
+      ],
+      "sfx": "sfx/sfx_dramatic_hit.wav",
+      "volumenSfx": 0.25,
+      "elementosNarrativos": [
+        {
+          "tipo": "danger_vignette"
+        }
+      ],
+      "palabrasClave": [
+        "explotarías como un globo",
+        "física espacial",
+        "perturbadora"
+      ],
+      "personajes": [
+        {
+          "id": "victima",
+          "posicion": {
+            "x": 0,
+            "y": 50
+          },
+          "escala": 1.15,
+          "orientacion": "derecha",
+          "poseId": "backing_away_scared",
+          "expresion": "shocked",
+          "acciones": [
+            {
+              "tipo": "sorpresa_y_retroceso"
+            }
+          ],
+          "habla": true
+        }
+      ],
+      "duracionSegundos": 7.666,
+      "palabras": [
+        {
+          "palabra": "Las",
+          "inicioMs": 0,
+          "finMs": 180
+        },
+        {
+          "palabra": "películas",
+          "inicioMs": 180,
+          "finMs": 560
+        },
+        {
+          "palabra": "de",
+          "inicioMs": 560,
+          "finMs": 780
+        },
+        {
+          "palabra": "ciencia",
+          "inicioMs": 780,
+          "finMs": 1140
+        },
+        {
+          "palabra": "ficción",
+          "inicioMs": 1140,
+          "finMs": 1580
+        },
+        {
+          "palabra": "nos",
+          "inicioMs": 1580,
+          "finMs": 1780
+        },
+        {
+          "palabra": "enseñan",
+          "inicioMs": 1780,
+          "finMs": 2320
+        },
+        {
+          "palabra": "que",
+          "inicioMs": 2320,
+          "finMs": 2440
+        },
+        {
+          "palabra": "explotarías",
+          "inicioMs": 2440,
+          "finMs": 3080
+        },
+        {
+          "palabra": "como",
+          "inicioMs": 3080,
+          "finMs": 3320
+        },
+        {
+          "palabra": "un",
+          "inicioMs": 3320,
+          "finMs": 3460
+        },
+        {
+          "palabra": "globo",
+          "inicioMs": 3460,
+          "finMs": 3780
+        },
+        {
+          "palabra": "pero",
+          "inicioMs": 3980,
+          "finMs": 4120
+        },
+        {
+          "palabra": "la",
+          "inicioMs": 4120,
+          "finMs": 4280
+        },
+        {
+          "palabra": "realidad",
+          "inicioMs": 4280,
+          "finMs": 4600
+        },
+        {
+          "palabra": "de",
+          "inicioMs": 4600,
+          "finMs": 4800
+        },
+        {
+          "palabra": "la",
+          "inicioMs": 4800,
+          "finMs": 4880
+        },
+        {
+          "palabra": "física",
+          "inicioMs": 4880,
+          "finMs": 5180
+        },
+        {
+          "palabra": "espacial",
+          "inicioMs": 5180,
+          "finMs": 5740
+        },
+        {
+          "palabra": "es",
+          "inicioMs": 5740,
+          "finMs": 6080
+        },
+        {
+          "palabra": "mucho",
+          "inicioMs": 6080,
+          "finMs": 6340
+        },
+        {
+          "palabra": "más",
+          "inicioMs": 6340,
+          "finMs": 6520
+        },
+        {
+          "palabra": "perturbadora",
+          "inicioMs": 6520,
+          "finMs": 7180
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "texto": "La presión atmosférica en Marte es de solo seis milibares, menos del uno por ciento de la presión a nivel del mar en la Tierra.",
+      "icono": "Gauge",
+      "colorIcono": "#38BDF8",
+      "tituloVisual": "PRESIÓN MÍNIMA",
+      "composicionVisual": "plano_general",
+      "escenario": "laboratorio",
+      "layout": "narrativo",
+      "transicion": "whip_left",
+      "efectosCamara": [
+        "drift"
+      ],
+      "palabrasClave": [
+        "seis milibares",
+        "menos del uno por ciento",
+        "presión mínima"
+      ],
+      "personajes": [
+        {
+          "id": "astrofisico",
+          "posicion": {
+            "x": -160,
+            "y": 70
+          },
+          "escala": 1.05,
+          "orientacion": "derecha",
+          "poseId": "explaining_both_hands",
+          "expresion": "analytical",
+          "habla": true
+        }
+      ],
+      "objetos": [
+        {
+          "id": "manometro_marte",
+          "propId": "pressure_gauge_bursting",
+          "posicion": {
+            "x": 220,
+            "y": -50
+          },
+          "escala": 1.5,
+          "animacion": {
+            "tipo": "pulso"
+          }
+        }
+      ],
+      "duracionSegundos": 6.346,
+      "palabras": [
+        {
+          "palabra": "La",
+          "inicioMs": 0,
+          "finMs": 180
+        },
+        {
+          "palabra": "presión",
+          "inicioMs": 180,
+          "finMs": 460
+        },
+        {
+          "palabra": "atmosférica",
+          "inicioMs": 460,
+          "finMs": 1040
+        },
+        {
+          "palabra": "en",
+          "inicioMs": 1040,
+          "finMs": 1160
+        },
+        {
+          "palabra": "Marte",
+          "inicioMs": 1160,
+          "finMs": 1480
+        },
+        {
+          "palabra": "es",
+          "inicioMs": 1480,
+          "finMs": 1640
+        },
+        {
+          "palabra": "de",
+          "inicioMs": 1640,
+          "finMs": 1740
+        },
+        {
+          "palabra": "solo",
+          "inicioMs": 1740,
+          "finMs": 1960
+        },
+        {
+          "palabra": "seis",
+          "inicioMs": 1960,
+          "finMs": 2340
+        },
+        {
+          "palabra": "milibares",
+          "inicioMs": 2340,
+          "finMs": 2900
+        },
+        {
+          "palabra": "menos",
+          "inicioMs": 2980,
+          "finMs": 3120
+        },
+        {
+          "palabra": "del",
+          "inicioMs": 3120,
+          "finMs": 3320
+        },
+        {
+          "palabra": "uno",
+          "inicioMs": 3320,
+          "finMs": 3560
+        },
+        {
+          "palabra": "por",
+          "inicioMs": 3560,
+          "finMs": 3920
+        },
+        {
+          "palabra": "ciento",
+          "inicioMs": 3920,
+          "finMs": 4200
+        },
+        {
+          "palabra": "de",
+          "inicioMs": 4200,
+          "finMs": 4300
+        },
+        {
+          "palabra": "la",
+          "inicioMs": 4300,
+          "finMs": 4680
+        },
+        {
+          "palabra": "presión",
+          "inicioMs": 4680,
+          "finMs": 4780
+        },
+        {
+          "palabra": "a",
+          "inicioMs": 4780,
+          "finMs": 4960
+        },
+        {
+          "palabra": "nivel",
+          "inicioMs": 4960,
+          "finMs": 5180
+        },
+        {
+          "palabra": "del",
+          "inicioMs": 5180,
+          "finMs": 5360
+        },
+        {
+          "palabra": "mar",
+          "inicioMs": 5360,
+          "finMs": 5480
+        },
+        {
+          "palabra": "en",
+          "inicioMs": 5480,
+          "finMs": 5580
+        },
+        {
+          "palabra": "la",
+          "inicioMs": 5580,
+          "finMs": 5880
+        },
+        {
+          "palabra": "Tierra",
+          "inicioMs": 5880,
+          "finMs": 6096
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "texto": "A esta presión tan ridículamente baja se cruza el Límite de Armstrong, donde el punto de ebullición del agua cae por debajo de la temperatura corporal.",
+      "icono": "Thermometer",
+      "colorIcono": "#F59E0B",
+      "tituloVisual": "LÍMITE ARMSTRONG",
+      "composicionVisual": "plano_general",
+      "escenario": "laboratorio",
+      "layout": "narrativo",
+      "transicion": "zoom_in",
+      "efectosCamara": [
+        "drift"
+      ],
+      "palabrasClave": [
+        "Límite de Armstrong",
+        "punto de ebullición",
+        "temperatura corporal"
+      ],
+      "personajes": [
+        {
+          "id": "astrofisico",
+          "posicion": {
+            "x": -160,
+            "y": 70
+          },
+          "escala": 1.05,
+          "orientacion": "derecha",
+          "prop": "mars_helmet",
+          "poseId": "presenting_object",
+          "expresion": "eureka",
+          "habla": true
+        }
+      ],
+      "duracionSegundos": 7.834,
+      "palabras": [
+        {
+          "palabra": "A",
+          "inicioMs": 0,
+          "finMs": 180
+        },
+        {
+          "palabra": "esta",
+          "inicioMs": 180,
+          "finMs": 360
+        },
+        {
+          "palabra": "presión",
+          "inicioMs": 360,
+          "finMs": 700
+        },
+        {
+          "palabra": "tan",
+          "inicioMs": 700,
+          "finMs": 920
+        },
+        {
+          "palabra": "ridículamente",
+          "inicioMs": 920,
+          "finMs": 1500
+        },
+        {
+          "palabra": "baja",
+          "inicioMs": 1500,
+          "finMs": 1860
+        },
+        {
+          "palabra": "se",
+          "inicioMs": 1860,
+          "finMs": 2020
+        },
+        {
+          "palabra": "cruza",
+          "inicioMs": 2020,
+          "finMs": 2340
+        },
+        {
+          "palabra": "el",
+          "inicioMs": 2340,
+          "finMs": 2460
+        },
+        {
+          "palabra": "Límite",
+          "inicioMs": 2460,
+          "finMs": 2700
+        },
+        {
+          "palabra": "de",
+          "inicioMs": 2700,
+          "finMs": 2860
+        },
+        {
+          "palabra": "Armstrong",
+          "inicioMs": 2860,
+          "finMs": 3320
+        },
+        {
+          "palabra": "donde",
+          "inicioMs": 3740,
+          "finMs": 3900
+        },
+        {
+          "palabra": "el",
+          "inicioMs": 3900,
+          "finMs": 4080
+        },
+        {
+          "palabra": "punto",
+          "inicioMs": 4080,
+          "finMs": 4320
+        },
+        {
+          "palabra": "de",
+          "inicioMs": 4320,
+          "finMs": 4480
+        },
+        {
+          "palabra": "ebullición",
+          "inicioMs": 4480,
+          "finMs": 4840
+        },
+        {
+          "palabra": "del",
+          "inicioMs": 4840,
+          "finMs": 5020
+        },
+        {
+          "palabra": "agua",
+          "inicioMs": 5020,
+          "finMs": 5260
+        },
+        {
+          "palabra": "cae",
+          "inicioMs": 5260,
+          "finMs": 5600
+        },
+        {
+          "palabra": "por",
+          "inicioMs": 5600,
+          "finMs": 5740
+        },
+        {
+          "palabra": "debajo",
+          "inicioMs": 5740,
+          "finMs": 6080
+        },
+        {
+          "palabra": "de",
+          "inicioMs": 6080,
+          "finMs": 6220
+        },
+        {
+          "palabra": "la",
+          "inicioMs": 6220,
+          "finMs": 6300
+        },
+        {
+          "palabra": "temperatura",
+          "inicioMs": 6300,
+          "finMs": 6620
+        },
+        {
+          "palabra": "corporal",
+          "inicioMs": 6620,
+          "finMs": 7340
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "texto": "Esto significa que la saliva en tu lengua, las lágrimas en tus ojos y los fluidos de tus pulmones comenzarían a hervir a temperatura ambiente.",
+      "icono": "Flame",
+      "colorIcono": "#DC2626",
+      "tituloVisual": "SALIVA HIRVIENDO",
+      "composicionVisual": "cifras_concepto",
+      "escenario": "superficie_marte",
+      "layout": "narrativo",
+      "transicion": "corte",
+      "efectosCamara": [
+        "punch",
+        "drift"
+      ],
+      "palabrasClave": [
+        "saliva en tu lengua",
+        "lágrimas",
+        "hervir a temperatura ambiente"
+      ],
+      "personajes": [
+        {
+          "id": "astronauta",
+          "posicion": {
+            "x": -150,
+            "y": 70
+          },
+          "escala": 1.05,
+          "orientacion": "derecha",
+          "prop": "mars_helmet",
+          "poseId": "backing_away_scared",
+          "expresion": "shocked",
+          "habla": true
+        }
+      ],
+      "duracionSegundos": 7.954,
+      "palabras": [
+        {
+          "palabra": "Esto",
+          "inicioMs": 0,
+          "finMs": 260
+        },
+        {
+          "palabra": "significa",
+          "inicioMs": 260,
+          "finMs": 680
+        },
+        {
+          "palabra": "que",
+          "inicioMs": 680,
+          "finMs": 920
+        },
+        {
+          "palabra": "la",
+          "inicioMs": 920,
+          "finMs": 1040
+        },
+        {
+          "palabra": "saliva",
+          "inicioMs": 1040,
+          "finMs": 1320
+        },
+        {
+          "palabra": "en",
+          "inicioMs": 1320,
+          "finMs": 1520
+        },
+        {
+          "palabra": "tu",
+          "inicioMs": 1520,
+          "finMs": 1620
+        },
+        {
+          "palabra": "lengua",
+          "inicioMs": 1620,
+          "finMs": 2000
+        },
+        {
+          "palabra": "las",
+          "inicioMs": 2360,
+          "finMs": 2460
+        },
+        {
+          "palabra": "lágrimas",
+          "inicioMs": 2460,
+          "finMs": 2900
+        },
+        {
+          "palabra": "en",
+          "inicioMs": 2900,
+          "finMs": 3060
+        },
+        {
+          "palabra": "tus",
+          "inicioMs": 3060,
+          "finMs": 3240
+        },
+        {
+          "palabra": "ojos",
+          "inicioMs": 3240,
+          "finMs": 3560
+        },
+        {
+          "palabra": "y",
+          "inicioMs": 3560,
+          "finMs": 3820
+        },
+        {
+          "palabra": "los",
+          "inicioMs": 3820,
+          "finMs": 3940
+        },
+        {
+          "palabra": "fluidos",
+          "inicioMs": 3940,
+          "finMs": 4380
+        },
+        {
+          "palabra": "de",
+          "inicioMs": 4380,
+          "finMs": 4540
+        },
+        {
+          "palabra": "tus",
+          "inicioMs": 4540,
+          "finMs": 4700
+        },
+        {
+          "palabra": "pulmones",
+          "inicioMs": 4700,
+          "finMs": 5240
+        },
+        {
+          "palabra": "comenzarían",
+          "inicioMs": 5240,
+          "finMs": 6100
+        },
+        {
+          "palabra": "a",
+          "inicioMs": 6100,
+          "finMs": 6200
+        },
+        {
+          "palabra": "hervir",
+          "inicioMs": 6200,
+          "finMs": 6400
+        },
+        {
+          "palabra": "a",
+          "inicioMs": 6400,
+          "finMs": 6520
+        },
+        {
+          "palabra": "temperatura",
+          "inicioMs": 6520,
+          "finMs": 6960
+        },
+        {
+          "palabra": "ambiente",
+          "inicioMs": 6960,
+          "finMs": 7320
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "texto": "Si intentas contener la respiración, el aire atrapado en tus pulmones se expandirá con violencia destrozando los alvéolos en un segundo.",
+      "icono": "Activity",
+      "colorIcono": "#EC4899",
+      "tituloVisual": "COLAPSO PULMONAR",
+      "composicionVisual": "plano_general",
+      "escenario": "laboratorio",
+      "layout": "narrativo",
+      "transicion": "whip_right",
+      "efectosCamara": [
+        "drift"
+      ],
+      "palabrasClave": [
+        "contener la respiración",
+        "expandirá con violencia",
+        "alvéolos"
+      ],
+      "personajes": [
+        {
+          "id": "medico",
+          "posicion": {
+            "x": -160,
+            "y": 70
+          },
+          "escala": 1.05,
+          "orientacion": "derecha",
+          "poseId": "explaining_pointing_up",
+          "expresion": "analytical",
+          "habla": true
+        }
+      ],
+      "objetos": [
+        {
+          "id": "pulmones_marte",
+          "propId": "lungs_compressing",
+          "posicion": {
+            "x": 220,
+            "y": -60
+          },
+          "escala": 1.6,
+          "animacion": {
+            "tipo": "pulso"
+          }
+        }
+      ],
+      "duracionSegundos": 7.57,
+      "palabras": [
+        {
+          "palabra": "Si",
+          "inicioMs": 0,
+          "finMs": 180
+        },
+        {
+          "palabra": "intentas",
+          "inicioMs": 180,
+          "finMs": 740
+        },
+        {
+          "palabra": "contener",
+          "inicioMs": 740,
+          "finMs": 1120
+        },
+        {
+          "palabra": "la",
+          "inicioMs": 1120,
+          "finMs": 1280
+        },
+        {
+          "palabra": "respiración",
+          "inicioMs": 1280,
+          "finMs": 1980
+        },
+        {
+          "palabra": "el",
+          "inicioMs": 2160,
+          "finMs": 2300
+        },
+        {
+          "palabra": "aire",
+          "inicioMs": 2300,
+          "finMs": 2440
+        },
+        {
+          "palabra": "atrapado",
+          "inicioMs": 2440,
+          "finMs": 3000
+        },
+        {
+          "palabra": "en",
+          "inicioMs": 3000,
+          "finMs": 3100
+        },
+        {
+          "palabra": "tus",
+          "inicioMs": 3100,
+          "finMs": 3220
+        },
+        {
+          "palabra": "pulmones",
+          "inicioMs": 3220,
+          "finMs": 3680
+        },
+        {
+          "palabra": "se",
+          "inicioMs": 3680,
+          "finMs": 4380
+        },
+        {
+          "palabra": "expandirá",
+          "inicioMs": 4380,
+          "finMs": 4540
+        },
+        {
+          "palabra": "con",
+          "inicioMs": 4540,
+          "finMs": 5060
+        },
+        {
+          "palabra": "violencia",
+          "inicioMs": 5060,
+          "finMs": 5920
+        },
+        {
+          "palabra": "destrozando",
+          "inicioMs": 5920,
+          "finMs": 6060
+        },
+        {
+          "palabra": "los",
+          "inicioMs": 6060,
+          "finMs": 6440
+        },
+        {
+          "palabra": "alvéolos",
+          "inicioMs": 6440,
+          "finMs": 6540
+        },
+        {
+          "palabra": "en",
+          "inicioMs": 6540,
+          "finMs": 6660
+        },
+        {
+          "palabra": "un",
+          "inicioMs": 6660,
+          "finMs": 7060
+        },
+        {
+          "palabra": "segundo",
+          "inicioMs": 7060,
+          "finMs": 7320
+        }
+      ]
+    },
+    {
+      "id": 7,
+      "texto": "Tu sangre no hervirá de inmediato gracias a la presión elástica de tus venas, pero el oxígeno escapará de tus glóbulos rojos al revés.",
+      "icono": "Activity",
+      "colorIcono": "#EF4444",
+      "tituloVisual": "OXÍGENO INVERTIDO",
+      "composicionVisual": "primer_plano",
+      "escenario": "laboratorio",
+      "layout": "narrativo",
+      "transicion": "zoom_in",
+      "efectosCamara": [
+        "drift"
+      ],
+      "palabrasClave": [
+        "sangre no hervirá",
+        "presión elástica",
+        "oxígeno al revés"
+      ],
+      "personajes": [
+        {
+          "id": "medico",
+          "posicion": {
+            "x": 0,
+            "y": 50
+          },
+          "escala": 1.15,
+          "orientacion": "derecha",
+          "poseId": "explaining_both_hands",
+          "expresion": "analytical",
+          "habla": true
+        }
+      ],
+      "duracionSegundos": 7.498,
+      "palabras": [
+        {
+          "palabra": "Tu",
+          "inicioMs": 0,
+          "finMs": 180
+        },
+        {
+          "palabra": "sangre",
+          "inicioMs": 180,
+          "finMs": 500
+        },
+        {
+          "palabra": "no",
+          "inicioMs": 500,
+          "finMs": 760
+        },
+        {
+          "palabra": "hervirá",
+          "inicioMs": 760,
+          "finMs": 1140
+        },
+        {
+          "palabra": "de",
+          "inicioMs": 1140,
+          "finMs": 1240
+        },
+        {
+          "palabra": "inmediato",
+          "inicioMs": 1240,
+          "finMs": 1780
+        },
+        {
+          "palabra": "gracias",
+          "inicioMs": 1780,
+          "finMs": 2160
+        },
+        {
+          "palabra": "a",
+          "inicioMs": 2160,
+          "finMs": 2360
+        },
+        {
+          "palabra": "la",
+          "inicioMs": 2360,
+          "finMs": 2420
+        },
+        {
+          "palabra": "presión",
+          "inicioMs": 2420,
+          "finMs": 2780
+        },
+        {
+          "palabra": "elástica",
+          "inicioMs": 2780,
+          "finMs": 3300
+        },
+        {
+          "palabra": "de",
+          "inicioMs": 3300,
+          "finMs": 3420
+        },
+        {
+          "palabra": "tus",
+          "inicioMs": 3420,
+          "finMs": 3600
+        },
+        {
+          "palabra": "venas",
+          "inicioMs": 3600,
+          "finMs": 4040
+        },
+        {
+          "palabra": "pero",
+          "inicioMs": 4140,
+          "finMs": 4280
+        },
+        {
+          "palabra": "el",
+          "inicioMs": 4280,
+          "finMs": 4400
+        },
+        {
+          "palabra": "oxígeno",
+          "inicioMs": 4400,
+          "finMs": 4900
+        },
+        {
+          "palabra": "escapará",
+          "inicioMs": 4900,
+          "finMs": 5360
+        },
+        {
+          "palabra": "de",
+          "inicioMs": 5360,
+          "finMs": 5460
+        },
+        {
+          "palabra": "tus",
+          "inicioMs": 5460,
+          "finMs": 5640
+        },
+        {
+          "palabra": "glóbulos",
+          "inicioMs": 5640,
+          "finMs": 6160
+        },
+        {
+          "palabra": "rojos",
+          "inicioMs": 6160,
+          "finMs": 6440
+        },
+        {
+          "palabra": "al",
+          "inicioMs": 6440,
+          "finMs": 6620
+        },
+        {
+          "palabra": "revés",
+          "inicioMs": 6620,
+          "finMs": 7040
+        }
+      ]
+    },
+    {
+      "id": 8,
+      "texto": "En apenas diez a quince segundos tu cerebro se apagará por hipoxia total, cayendo inconsciente sobre el polvo rojo marciano.",
+      "icono": "Brain",
+      "colorIcono": "#8B5CF6",
+      "tituloVisual": "HIPOXIA TOTAL",
+      "composicionVisual": "plano_general",
+      "escenario": "superficie_marte",
+      "layout": "narrativo",
+      "transicion": "corte",
+      "efectosCamara": [
+        "drift"
+      ],
+      "palabrasClave": [
+        "quince segundos",
+        "cerebro se apagará",
+        "hipoxia total"
+      ],
+      "personajes": [
+        {
+          "id": "astronauta",
+          "posicion": {
+            "x": -150,
+            "y": 70
+          },
+          "escala": 1.05,
+          "orientacion": "derecha",
+          "poseId": "exhausted_slouch",
+          "expresion": "exhausted",
+          "habla": true
+        }
+      ],
+      "duracionSegundos": 6.562,
+      "palabras": [
+        {
+          "palabra": "En",
+          "inicioMs": 0,
+          "finMs": 200
+        },
+        {
+          "palabra": "apenas",
+          "inicioMs": 200,
+          "finMs": 520
+        },
+        {
+          "palabra": "diez",
+          "inicioMs": 520,
+          "finMs": 840
+        },
+        {
+          "palabra": "a",
+          "inicioMs": 840,
+          "finMs": 1020
+        },
+        {
+          "palabra": "quince",
+          "inicioMs": 1020,
+          "finMs": 1320
+        },
+        {
+          "palabra": "segundos",
+          "inicioMs": 1320,
+          "finMs": 1740
+        },
+        {
+          "palabra": "tu",
+          "inicioMs": 1740,
+          "finMs": 1940
+        },
+        {
+          "palabra": "cerebro",
+          "inicioMs": 1940,
+          "finMs": 2280
+        },
+        {
+          "palabra": "se",
+          "inicioMs": 2280,
+          "finMs": 2440
+        },
+        {
+          "palabra": "apagará",
+          "inicioMs": 2440,
+          "finMs": 2820
+        },
+        {
+          "palabra": "por",
+          "inicioMs": 2820,
+          "finMs": 2980
+        },
+        {
+          "palabra": "hipoxia",
+          "inicioMs": 2980,
+          "finMs": 3360
+        },
+        {
+          "palabra": "total",
+          "inicioMs": 3360,
+          "finMs": 3740
+        },
+        {
+          "palabra": "cayendo",
+          "inicioMs": 3840,
+          "finMs": 4120
+        },
+        {
+          "palabra": "inconsciente",
+          "inicioMs": 4120,
+          "finMs": 4720
+        },
+        {
+          "palabra": "sobre",
+          "inicioMs": 4720,
+          "finMs": 4920
+        },
+        {
+          "palabra": "el",
+          "inicioMs": 4920,
+          "finMs": 5060
+        },
+        {
+          "palabra": "polvo",
+          "inicioMs": 5060,
+          "finMs": 5340
+        },
+        {
+          "palabra": "rojo",
+          "inicioMs": 5340,
+          "finMs": 5620
+        },
+        {
+          "palabra": "marciano",
+          "inicioMs": 5620,
+          "finMs": 6100
+        }
+      ]
+    },
+    {
+      "id": 9,
+      "texto": "Al mismo tiempo, la temperatura media de sesenta grados bajo cero congelaría tu piel expuesta rápidamente sin viento que te caliente.",
+      "icono": "Snowflake",
+      "colorIcono": "#06B6D4",
+      "tituloVisual": "FRÍO POLAR",
+      "composicionVisual": "plano_general",
+      "escenario": "superficie_marte",
+      "layout": "narrativo",
+      "transicion": "whip_left",
+      "efectosCamara": [
+        "drift"
+      ],
+      "palabrasClave": [
+        "sesenta grados bajo cero",
+        "congelaría tu piel",
+        "frío extremo"
+      ],
+      "personajes": [
+        {
+          "id": "astronauta",
+          "posicion": {
+            "x": -160,
+            "y": 70
+          },
+          "escala": 1.05,
+          "orientacion": "derecha",
+          "prop": "mars_helmet",
+          "poseId": "trembling_fear",
+          "expresion": "scared",
+          "habla": true
+        }
+      ],
+      "duracionSegundos": 6.778,
+      "palabras": [
+        {
+          "palabra": "Al",
+          "inicioMs": 0,
+          "finMs": 180
+        },
+        {
+          "palabra": "mismo",
+          "inicioMs": 180,
+          "finMs": 340
+        },
+        {
+          "palabra": "tiempo",
+          "inicioMs": 340,
+          "finMs": 720
+        },
+        {
+          "palabra": "la",
+          "inicioMs": 720,
+          "finMs": 860
+        },
+        {
+          "palabra": "temperatura",
+          "inicioMs": 860,
+          "finMs": 1160
+        },
+        {
+          "palabra": "media",
+          "inicioMs": 1160,
+          "finMs": 1600
+        },
+        {
+          "palabra": "de",
+          "inicioMs": 1600,
+          "finMs": 1760
+        },
+        {
+          "palabra": "sesenta",
+          "inicioMs": 1760,
+          "finMs": 2640
+        },
+        {
+          "palabra": "grados",
+          "inicioMs": 2640,
+          "finMs": 3540
+        },
+        {
+          "palabra": "bajo",
+          "inicioMs": 3540,
+          "finMs": 3700
+        },
+        {
+          "palabra": "cero",
+          "inicioMs": 3700,
+          "finMs": 3920
+        },
+        {
+          "palabra": "congelaría",
+          "inicioMs": 3920,
+          "finMs": 4500
+        },
+        {
+          "palabra": "tu",
+          "inicioMs": 4500,
+          "finMs": 4980
+        },
+        {
+          "palabra": "piel",
+          "inicioMs": 4980,
+          "finMs": 5260
+        },
+        {
+          "palabra": "expuesta",
+          "inicioMs": 5260,
+          "finMs": 5580
+        },
+        {
+          "palabra": "rápidamente",
+          "inicioMs": 5580,
+          "finMs": 5720
+        },
+        {
+          "palabra": "sin",
+          "inicioMs": 5720,
+          "finMs": 5800
+        },
+        {
+          "palabra": "viento",
+          "inicioMs": 5800,
+          "finMs": 6300
+        },
+        {
+          "palabra": "que",
+          "inicioMs": 6300,
+          "finMs": 6380
+        },
+        {
+          "palabra": "te",
+          "inicioMs": 6300,
+          "finMs": 6380
+        },
+        {
+          "palabra": "caliente",
+          "inicioMs": 6300,
+          "finMs": 6380
+        }
+      ]
+    },
+    {
+      "id": 10,
+      "texto": "Incluso si pudieras comprimir el aire marciano, es noventa y cinco por ciento dióxido de carbono puro con cero oxígeno respirable.",
+      "icono": "Skull",
+      "colorIcono": "#64748B",
+      "tituloVisual": "GAS VENENOSO",
+      "composicionVisual": "plano_general",
+      "escenario": "laboratorio",
+      "layout": "narrativo",
+      "transicion": "zoom_in",
+      "efectosCamara": [
+        "drift"
+      ],
+      "palabrasClave": [
+        "noventa y cinco por ciento",
+        "dióxido de carbono",
+        "cero oxígeno"
+      ],
+      "personajes": [
+        {
+          "id": "astrofisico",
+          "posicion": {
+            "x": -150,
+            "y": 70
+          },
+          "escala": 1.05,
+          "orientacion": "derecha",
+          "prop": "skull",
+          "poseId": "explaining_pointing_up",
+          "expresion": "talking_enthusiastic",
+          "habla": true
+        }
+      ],
+      "duracionSegundos": 7.858,
+      "palabras": [
+        {
+          "palabra": "Incluso",
+          "inicioMs": 0,
+          "finMs": 600
+        },
+        {
+          "palabra": "si",
+          "inicioMs": 600,
+          "finMs": 740
+        },
+        {
+          "palabra": "pudieras",
+          "inicioMs": 740,
+          "finMs": 1120
+        },
+        {
+          "palabra": "comprimir",
+          "inicioMs": 1120,
+          "finMs": 1580
+        },
+        {
+          "palabra": "el",
+          "inicioMs": 1580,
+          "finMs": 1720
+        },
+        {
+          "palabra": "aire",
+          "inicioMs": 1720,
+          "finMs": 1880
+        },
+        {
+          "palabra": "marciano",
+          "inicioMs": 1880,
+          "finMs": 2480
+        },
+        {
+          "palabra": "es",
+          "inicioMs": 2480,
+          "finMs": 2940
+        },
+        {
+          "palabra": "noventa",
+          "inicioMs": 2940,
+          "finMs": 3680
+        },
+        {
+          "palabra": "y",
+          "inicioMs": 3680,
+          "finMs": 4320
+        },
+        {
+          "palabra": "cinco",
+          "inicioMs": 4320,
+          "finMs": 4500
+        },
+        {
+          "palabra": "por",
+          "inicioMs": 4500,
+          "finMs": 4760
+        },
+        {
+          "palabra": "ciento",
+          "inicioMs": 4760,
+          "finMs": 4900
+        },
+        {
+          "palabra": "dióxido",
+          "inicioMs": 4900,
+          "finMs": 5200
+        },
+        {
+          "palabra": "de",
+          "inicioMs": 5200,
+          "finMs": 5640
+        },
+        {
+          "palabra": "carbono",
+          "inicioMs": 5640,
+          "finMs": 5820
+        },
+        {
+          "palabra": "puro",
+          "inicioMs": 5820,
+          "finMs": 6160
+        },
+        {
+          "palabra": "con",
+          "inicioMs": 6160,
+          "finMs": 6840
+        },
+        {
+          "palabra": "cero",
+          "inicioMs": 6840,
+          "finMs": 7380
+        },
+        {
+          "palabra": "oxígeno",
+          "inicioMs": 7380,
+          "finMs": 7494
+        },
+        {
+          "palabra": "respirable",
+          "inicioMs": 7380,
+          "finMs": 7494
+        }
+      ]
+    },
+    {
+      "id": 11,
+      "texto": "Marte es un desierto fascinante pero despiadado: sin tu traje presurizado, la física cósmica no te da ni una sola segunda oportunidad.",
+      "icono": "Compass",
+      "colorIcono": "#EA580C",
+      "tituloVisual": "FRONTERA CÓSMICA",
+      "composicionVisual": "plano_general",
+      "escenario": "superficie_marte",
+      "layout": "narrativo",
+      "transicion": "zoom_in",
+      "efectosCamara": [
+        "drift"
+      ],
+      "palabrasClave": [
+        "desierto despiadado",
+        "traje presurizado",
+        "física cósmica"
+      ],
+      "personajes": [
+        {
+          "id": "astronauta",
+          "posicion": {
+            "x": 0,
+            "y": 50
+          },
+          "escala": 1.15,
+          "orientacion": "derecha",
+          "prop": "trophy",
+          "poseId": "standing_confident",
+          "expresion": "proud",
+          "habla": true
+        }
+      ],
+      "duracionSegundos": 7.378,
+      "palabras": [
+        {
+          "palabra": "Marte",
+          "inicioMs": 0,
+          "finMs": 460
+        },
+        {
+          "palabra": "es",
+          "inicioMs": 460,
+          "finMs": 600
+        },
+        {
+          "palabra": "un",
+          "inicioMs": 600,
+          "finMs": 720
+        },
+        {
+          "palabra": "desierto",
+          "inicioMs": 720,
+          "finMs": 1080
+        },
+        {
+          "palabra": "fascinante",
+          "inicioMs": 1080,
+          "finMs": 1760
+        },
+        {
+          "palabra": "pero",
+          "inicioMs": 1920,
+          "finMs": 1960
+        },
+        {
+          "palabra": "despiadado",
+          "inicioMs": 1960,
+          "finMs": 2680
+        },
+        {
+          "palabra": "sin",
+          "inicioMs": 2880,
+          "finMs": 3000
+        },
+        {
+          "palabra": "tu",
+          "inicioMs": 3000,
+          "finMs": 3140
+        },
+        {
+          "palabra": "traje",
+          "inicioMs": 3140,
+          "finMs": 3440
+        },
+        {
+          "palabra": "presurizado",
+          "inicioMs": 3440,
+          "finMs": 4020
+        },
+        {
+          "palabra": "la",
+          "inicioMs": 4200,
+          "finMs": 4220
+        },
+        {
+          "palabra": "física",
+          "inicioMs": 4220,
+          "finMs": 4500
+        },
+        {
+          "palabra": "cósmica",
+          "inicioMs": 4500,
+          "finMs": 5080
+        },
+        {
+          "palabra": "no",
+          "inicioMs": 5080,
+          "finMs": 5240
+        },
+        {
+          "palabra": "te",
+          "inicioMs": 5240,
+          "finMs": 5360
+        },
+        {
+          "palabra": "da",
+          "inicioMs": 5360,
+          "finMs": 5480
+        },
+        {
+          "palabra": "ni",
+          "inicioMs": 5480,
+          "finMs": 5640
+        },
+        {
+          "palabra": "una",
+          "inicioMs": 5640,
+          "finMs": 5820
+        },
+        {
+          "palabra": "sola",
+          "inicioMs": 5820,
+          "finMs": 6020
+        },
+        {
+          "palabra": "segunda",
+          "inicioMs": 6020,
+          "finMs": 6440
+        },
+        {
+          "palabra": "oportunidad",
+          "inicioMs": 6440,
+          "finMs": 6900
+        }
+      ]
+    }
+  ]
+}

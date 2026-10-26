@@ -1,14 +1,17 @@
 const fs = require("fs");
 const path = require("path");
 const crypto = require("crypto");
+const { spawnSync } = require("child_process");
 
 const ROOT_DIR = path.resolve(__dirname, "..");
+try { process.loadEnvFile(path.join(ROOT_DIR, ".env")); } catch { /* .env opcional */ }
+
 const GUION_PATH = path.resolve(ROOT_DIR, "src/data/guion.json");
 const OUT_DIR = path.resolve(ROOT_DIR, "out");
-const DESTINO_DIR = "H:\\Mi unidad\\ShortsMotionGraphics";
+const DESTINO_DIR = process.env.DESTINO_DIR || "";
 const TTS_CACHE_PATH = path.resolve(ROOT_DIR, "public/audios/.tts_cache.json");
 const VOICE_CAST_PATH = path.resolve(ROOT_DIR, "public/voices/voice_cast.json");
-const BGM_PATH = path.resolve(ROOT_DIR, "public/sfx/bgm.mp3");
+const BGM_PATH = path.resolve(ROOT_DIR, "public/bgm/bgm.mp3");
 
 /**
  * Convierte un texto en un slug seguro para nombres de archivo.
@@ -238,6 +241,85 @@ function generarHashtags(genero, guion) {
 }
 
 /**
+ * UUID estable derivado del slug: re-exportar no cambia el ID.
+ */
+function storyIdEstable(slug) {
+  const h = crypto.createHash("sha1").update(slug).digest("hex");
+  return `${h.slice(0, 8)}-${h.slice(8, 12)}-${h.slice(12, 16)}-${h.slice(16, 20)}-${h.slice(20, 32)}`;
+}
+
+/**
+ * Duración real del MP4 con ffprobe; null si no existe el archivo o ffprobe falla.
+ */
+function medirDuracionMp4(rutaMp4) {
+  if (!fs.existsSync(rutaMp4)) return null;
+  const r = spawnSync("ffprobe", ["-v", "error", "-show_entries", "format=duration", "-of", "csv=p=0", rutaMp4], { encoding: "utf-8" });
+  const d = parseFloat(r.stdout);
+  return r.status === 0 && d > 0 ? Number(d.toFixed(2)) : null;
+}
+
+const MAX_TITULO = 60;
+const LIMITE_DESCRIPCION = 500;
+
+function primeraFrase(texto) {
+  return (texto || "").trim().split(/(?<=[.!?])\s+/)[0] || "";
+}
+
+function recortar(texto, max) {
+  if (texto.length <= max) return texto;
+  const corte = texto.slice(0, max - 1);
+  return corte.slice(0, corte.lastIndexOf(" ") > 0 ? corte.lastIndexOf(" ") : undefined).replace(/[,;:\s]+$/, "") + "…";
+}
+
+/**
+ * Título ≤ 60 caracteres. Rota (estable por slug) entre 4 plantillas:
+ * pregunta, cifra, contradicción y "lo que nadie te dice". Meta.titulo tiene prioridad.
+ */
+function generarTitulo(meta, escenas, slug, textoCompleto) {
+  if (meta?.titulo) return recortar(meta.titulo.trim(), MAX_TITULO);
+
+  const base = (meta?.temaResumen || escenas.find((e) => e?.tituloVisual)?.tituloVisual || "Short Sabías Que").trim();
+  // Segmentos (hasta "?" o ".") sin signos de interrogación; se corta antes de cláusulas secundarias.
+  const segmentos = base.split(/[?.]/).map((s) => s.replace(/^¿/, "").split(/,| mediante | debido | según | gracias /)[0].trim()).filter(Boolean);
+  const minus = (n) => n.charAt(0).toLowerCase() + n.slice(1);
+  const cifra = textoCompleto.match(/\d+(?:[.,]\d+)?\s?%?/)?.[0].trim();
+
+  const plantillas = [
+    (n) => `¿${n}?`,
+    cifra && !base.includes(cifra) && ((n) => `${cifra}: ${minus(n)}`),
+    (n) => `No es lo que crees: ${minus(n)}`,
+    (n) => `Lo que nadie te dice: ${minus(n)}`,
+  ].filter(Boolean);
+
+  // Plantilla inicial estable por slug; se usa la primera combinación segmento+plantilla que cabe en 60.
+  const idx = parseInt(crypto.createHash("sha1").update(slug).digest("hex").slice(0, 8), 16) % plantillas.length;
+  for (const seg of segmentos) {
+    for (let i = 0; i < plantillas.length; i++) {
+      const t = plantillas[(idx + i) % plantillas.length](seg);
+      if (t.length <= MAX_TITULO) return t;
+    }
+  }
+  return recortar(plantillas[0](segmentos[0]), MAX_TITULO);
+}
+/**
+ * Descripción ≤ 500 caracteres: gancho, 2 líneas de datos, CTA, fuentes y hashtags.
+ */
+function generarDescripcion(meta, escenas, hashtags) {
+  const gancho = recortar(meta?.gancho || primeraFrase(escenas[0]?.texto), 120);
+  const ultima = (escenas[escenas.length - 1]?.texto || "").trim().split(/(?<=[.!?])\s+/);
+  const cta = [...ultima].reverse().find((f) => f.endsWith("?")) || "¿Qué otro tema quieres que explique?";
+  const fuentes = meta?.fuentes?.length ? `Fuentes: ${meta.fuentes.join("; ")}` : "";
+  const tags = hashtags.join(" ");
+
+  const fijo = [gancho, cta, fuentes, tags].filter(Boolean).join("\n\n");
+  // El resto del presupuesto se reparte entre las 2 líneas de datos.
+  const presupuesto = Math.max(20, Math.floor((LIMITE_DESCRIPCION - fijo.length - 6) / 2));
+  const datos = escenas.slice(1, 3).map((e) => recortar(primeraFrase(e?.texto), presupuesto)).filter(Boolean);
+
+  return [gancho, datos.join("\n"), cta, fuentes, tags].filter(Boolean).join("\n\n");
+}
+
+/**
  * Resuelve la voz TTS utilizada a partir de la caché o configuración.
  */
 function resolverTtsVoice() {
@@ -283,12 +365,11 @@ function generarMetadata(opciones = {}) {
 
   const slug = opciones.slug || obtenerSlug(guion, opciones.customName);
   const nombreVideo = `${slug}.mp4`;
-  const titulo = obtenerTituloLegible(guion, opciones.customName, opciones.title);
-
+  const meta = Array.isArray(guion) ? null : guion?.meta;
   const escenas = Array.isArray(guion) ? guion : (guion?.escenas || []);
 
-  // Descripción completa reuniendo la narración de todas las escenas
-  const descripcion = escenas
+  // Narración completa (antes era la descripción; ahora va aparte)
+  const transcript = escenas
     .map((e) => (e && e.texto ? e.texto.trim() : ""))
     .filter(Boolean)
     .join(" ");
@@ -297,26 +378,37 @@ function generarMetadata(opciones = {}) {
     Array.isArray(e.palabrasClave) ? e.palabrasClave : []
   );
 
-  const genero = opciones.genre || detectarGenero(descripcion, todasLasPalabrasClave);
+  // La heurística de género es solo una pista; meta.genero o --genre la sobrescriben.
+  const genero = opciones.genre || meta?.genero || detectarGenero(transcript, todasLasPalabrasClave);
   const hashtags = generarHashtags(genero, escenas);
+  const titulo = opciones.title?.trim() || generarTitulo(meta, escenas, slug, transcript);
+  const tituloVisual = escenas.find((e) => e?.tituloVisual)?.tituloVisual || titulo;
+  const tituloCorto = meta?.titulo_corto || tituloVisual.split(/\s+/).slice(0, 5).join(" ");
 
-  // Duración total exacta sumada de las escenas
+  // Duración real del MP4; respaldo: suma de escenas
+  const duracionMp4 = medirDuracionMp4(path.join(opciones.outDir || OUT_DIR, nombreVideo));
   const totalSegundos = escenas.reduce(
     (acc, e) => acc + (typeof e.duracionSegundos === "number" ? e.duracionSegundos : 4),
     0
   );
-  const duracionSegundos = Number(totalSegundos.toFixed(2));
+  const duracionSegundos = duracionMp4 ?? Number(totalSegundos.toFixed(2));
 
-  const hasMusic = fs.existsSync(BGM_PATH);
-  const ttsVoice = resolverTtsVoice();
+  // Conserva campos de seguimiento editados a mano al re-exportar
+  let previo = {};
+  try {
+    previo = JSON.parse(fs.readFileSync(path.join(opciones.outDir || OUT_DIR, `${slug}_metadata.json`), "utf-8"));
+  } catch { /* primera exportación */ }
 
   return {
-    storyId: crypto.randomUUID(),
+    storyId: storyIdEstable(slug),
     title: titulo,
-    description: descripcion,
-    hashtags: hashtags,
+    titulo_corto: tituloCorto,
+    description: generarDescripcion(meta, escenas, hashtags.slice(0, 4)),
+    transcript,
+    hashtags,
+    fuentes: meta?.fuentes || [],
     genre: genero,
-    category: opciones.category || "Entertainment",
+    category: opciones.category || (genero === "SCIENCE" || genero === "SCI_FI" ? "Science & Technology" : "Education"),
     language: "es-MX",
     duration_seconds: duracionSegundos,
     resolution: "1080x1920",
@@ -329,8 +421,12 @@ function generarMetadata(opciones = {}) {
     scene_count: escenas.length,
     has_subtitles: true,
     has_narration: true,
-    has_music: hasMusic,
-    tts_voice: ttsVoice,
+    has_music: fs.existsSync(BGM_PATH),
+    tts_voice: resolverTtsVoice(),
+    playlist: previo.playlist ?? meta?.playlist ?? null,
+    idioma_alterno: previo.idioma_alterno ?? meta?.idioma_alterno ?? null,
+    estado: previo.estado ?? "pendiente",
+    fecha_publicacion: previo.fecha_publicacion ?? null,
   };
 }
 
@@ -436,4 +532,5 @@ module.exports = {
   obtenerTituloLegible,
   detectarGenero,
   generarHashtags,
+  DESTINO_DIR,
 };

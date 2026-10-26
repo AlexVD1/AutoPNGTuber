@@ -2,7 +2,19 @@
   "meta": {
     "id": "deja_vu_misterio_cerebro",
     "slug": "deja_vu_misterio_cerebro",
-    "temaResumen": "¿Qué le ocurre exactamente a tu cerebro cuando experimentas un Déjà Vu?"
+    "temaResumen": "¿Qué le ocurre exactamente a tu cerebro cuando experimentas un déjà vu? Corteza rinal y lóbulo temporal",
+    "titulo": "¿Qué le pasa a tu cerebro durante un déjà vu real?",
+    "titulo_corto": "MISTERIO DEL DÉJÀ VU",
+    "gancho": "¿Alguna vez has entrado a un lugar completamente nuevo o escuchado una frase por primera vez, y de repente sentiste una certeza absoluta de que ya habías vivido ese segundo exacto?",
+    "fuentes": [
+      "O'Connor et al. (Frontiers in Neuroscience: Neural mechanisms of Déjà vu)",
+      "University of St Andrews Memory Laboratory"
+    ],
+    "genero": "SCIENCE",
+    "duracionObjetivo": [
+      62,
+      110
+    ]
   },
   "escenas": [
     {
@@ -58,127 +70,127 @@
         "absoluta certeza",
         "ya habías vivido"
       ],
-      "duracionSegundos": 7.498,
+      "duracionSegundos": 7.426,
       "palabras": [
         {
           "palabra": "Alguna",
           "inicioMs": 0,
-          "finMs": 380
+          "finMs": 340
         },
         {
           "palabra": "vez",
-          "inicioMs": 380,
-          "finMs": 540
+          "inicioMs": 340,
+          "finMs": 560
         },
         {
           "palabra": "has",
-          "inicioMs": 540,
-          "finMs": 680
+          "inicioMs": 560,
+          "finMs": 660
         },
         {
           "palabra": "entrado",
-          "inicioMs": 680,
-          "finMs": 1060
+          "inicioMs": 660,
+          "finMs": 1040
         },
         {
           "palabra": "a",
-          "inicioMs": 1060,
-          "finMs": 1140
+          "inicioMs": 1040,
+          "finMs": 1160
         },
         {
           "palabra": "un",
-          "inicioMs": 1140,
-          "finMs": 1180
+          "inicioMs": 1160,
+          "finMs": 1240
         },
         {
           "palabra": "lugar",
-          "inicioMs": 1180,
-          "finMs": 1360
+          "inicioMs": 1240,
+          "finMs": 1440
         },
         {
           "palabra": "completamente",
-          "inicioMs": 1360,
-          "finMs": 1900
+          "inicioMs": 1440,
+          "finMs": 1980
         },
         {
           "palabra": "nuevo",
-          "inicioMs": 1900,
-          "finMs": 2380
+          "inicioMs": 1980,
+          "finMs": 2520
         },
         {
           "palabra": "pero",
-          "inicioMs": 2520,
-          "finMs": 3000
+          "inicioMs": 2660,
+          "finMs": 2780
         },
         {
           "palabra": "sentiste",
-          "inicioMs": 3000,
-          "finMs": 3140
+          "inicioMs": 2780,
+          "finMs": 3240
         },
         {
           "palabra": "con",
-          "inicioMs": 3140,
-          "finMs": 3580
+          "inicioMs": 3240,
+          "finMs": 3380
         },
         {
           "palabra": "absoluta",
-          "inicioMs": 3580,
-          "finMs": 3920
+          "inicioMs": 3380,
+          "finMs": 3880
         },
         {
           "palabra": "certeza",
-          "inicioMs": 3920,
-          "finMs": 4200
+          "inicioMs": 3880,
+          "finMs": 4300
         },
         {
           "palabra": "que",
-          "inicioMs": 4200,
-          "finMs": 4340
+          "inicioMs": 4300,
+          "finMs": 4600
         },
         {
           "palabra": "ya",
-          "inicioMs": 4340,
-          "finMs": 4460
+          "inicioMs": 4600,
+          "finMs": 4780
         },
         {
           "palabra": "habías",
-          "inicioMs": 4460,
-          "finMs": 4860
+          "inicioMs": 4780,
+          "finMs": 5080
         },
         {
           "palabra": "vivido",
-          "inicioMs": 4860,
-          "finMs": 5020
+          "inicioMs": 5080,
+          "finMs": 5500
         },
         {
           "palabra": "ese",
-          "inicioMs": 5020,
-          "finMs": 5520
+          "inicioMs": 5500,
+          "finMs": 5660
         },
         {
           "palabra": "exacto",
-          "inicioMs": 5520,
-          "finMs": 5760
+          "inicioMs": 5660,
+          "finMs": 6120
         },
         {
           "palabra": "momento",
-          "inicioMs": 5760,
-          "finMs": 5980
+          "inicioMs": 6120,
+          "finMs": 6340
         },
         {
           "palabra": "en",
-          "inicioMs": 5980,
-          "finMs": 6080
+          "inicioMs": 6340,
+          "finMs": 6580
         },
         {
           "palabra": "el",
-          "inicioMs": 6080,
-          "finMs": 6380
+          "inicioMs": 6580,
+          "finMs": 6660
         },
         {
           "palabra": "pasado",
-          "inicioMs": 6380,
-          "finMs": 7248
+          "inicioMs": 6660,
+          "finMs": 6900
         }
       ]
     },
@@ -214,92 +226,92 @@
         "Déjà Vu",
         "ya visto"
       ],
-      "duracionSegundos": 7.138,
+      "duracionSegundos": 5.65,
       "palabras": [
         {
           "palabra": "Esa",
           "inicioMs": 0,
-          "finMs": 360
+          "finMs": 300
         },
         {
           "palabra": "sensación",
-          "inicioMs": 360,
-          "finMs": 840
+          "inicioMs": 300,
+          "finMs": 740
         },
         {
           "palabra": "escalofriante",
-          "inicioMs": 840,
-          "finMs": 1460
+          "inicioMs": 740,
+          "finMs": 1260
         },
         {
           "palabra": "se",
-          "inicioMs": 1460,
-          "finMs": 1620
+          "inicioMs": 1260,
+          "finMs": 1380
         },
         {
           "palabra": "conoce",
-          "inicioMs": 1620,
-          "finMs": 1960
+          "inicioMs": 1380,
+          "finMs": 1680
         },
         {
           "palabra": "como",
-          "inicioMs": 1960,
-          "finMs": 2140
+          "inicioMs": 1680,
+          "finMs": 1840
         },
         {
           "palabra": "Déjà",
-          "inicioMs": 2140,
-          "finMs": 2400
+          "inicioMs": 1840,
+          "finMs": 1980
         },
         {
           "palabra": "Vu",
-          "inicioMs": 2400,
-          "finMs": 2680
+          "inicioMs": 1980,
+          "finMs": 2340
         },
         {
           "palabra": "una",
-          "inicioMs": 3100,
-          "finMs": 3320
+          "inicioMs": 2440,
+          "finMs": 2560
         },
         {
           "palabra": "expresión",
-          "inicioMs": 3320,
-          "finMs": 3740
+          "inicioMs": 2560,
+          "finMs": 3000
         },
         {
           "palabra": "en",
-          "inicioMs": 3740,
-          "finMs": 3880
+          "inicioMs": 3000,
+          "finMs": 3100
         },
         {
           "palabra": "francés",
-          "inicioMs": 3880,
-          "finMs": 4260
+          "inicioMs": 3100,
+          "finMs": 3480
         },
         {
           "palabra": "que",
-          "inicioMs": 4260,
-          "finMs": 4420
+          "inicioMs": 3480,
+          "finMs": 3600
         },
         {
           "palabra": "significa",
-          "inicioMs": 4420,
-          "finMs": 4820
+          "inicioMs": 3600,
+          "finMs": 3980
         },
         {
           "palabra": "literalmente",
-          "inicioMs": 4820,
-          "finMs": 5620
+          "inicioMs": 3980,
+          "finMs": 4600
         },
         {
           "palabra": "ya",
-          "inicioMs": 5620,
-          "finMs": 5960
+          "inicioMs": 4600,
+          "finMs": 4820
         },
         {
           "palabra": "visto",
-          "inicioMs": 5960,
-          "finMs": 6320
+          "inicioMs": 4820,
+          "finMs": 5160
         }
       ]
     },
@@ -349,117 +361,117 @@
         "vidas pasadas",
         "neurociencia moderna"
       ],
-      "duracionSegundos": 8.506,
+      "duracionSegundos": 8.314,
       "palabras": [
         {
           "palabra": "Durante",
           "inicioMs": 0,
-          "finMs": 380
+          "finMs": 360
         },
         {
           "palabra": "siglos",
-          "inicioMs": 380,
-          "finMs": 760
+          "inicioMs": 360,
+          "finMs": 720
         },
         {
           "palabra": "se",
-          "inicioMs": 820,
-          "finMs": 880
+          "inicioMs": 720,
+          "finMs": 860
         },
         {
           "palabra": "creyó",
-          "inicioMs": 880,
-          "finMs": 1180
+          "inicioMs": 860,
+          "finMs": 1140
         },
         {
           "palabra": "que",
-          "inicioMs": 1180,
-          "finMs": 1300
+          "inicioMs": 1140,
+          "finMs": 1280
         },
         {
           "palabra": "era",
-          "inicioMs": 1300,
-          "finMs": 1440
+          "inicioMs": 1280,
+          "finMs": 1420
         },
         {
           "palabra": "clarividencia",
-          "inicioMs": 1440,
-          "finMs": 2200
+          "inicioMs": 1420,
+          "finMs": 2180
         },
         {
           "palabra": "o",
-          "inicioMs": 2200,
-          "finMs": 2380
+          "inicioMs": 2180,
+          "finMs": 2400
         },
         {
           "palabra": "recuerdos",
-          "inicioMs": 2380,
-          "finMs": 2860
+          "inicioMs": 2400,
+          "finMs": 2840
         },
         {
           "palabra": "de",
-          "inicioMs": 2860,
-          "finMs": 3000
+          "inicioMs": 2840,
+          "finMs": 2980
         },
         {
           "palabra": "vidas",
-          "inicioMs": 3000,
-          "finMs": 3300
+          "inicioMs": 2980,
+          "finMs": 3240
         },
         {
           "palabra": "pasadas",
-          "inicioMs": 3300,
-          "finMs": 3820
+          "inicioMs": 3240,
+          "finMs": 3740
         },
         {
           "palabra": "pero",
-          "inicioMs": 4180,
-          "finMs": 4380
+          "inicioMs": 4040,
+          "finMs": 4400
         },
         {
           "palabra": "la",
-          "inicioMs": 4380,
-          "finMs": 4500
+          "inicioMs": 4400,
+          "finMs": 4540
         },
         {
           "palabra": "neurociencia",
-          "inicioMs": 4500,
+          "inicioMs": 4540,
           "finMs": 5100
         },
         {
           "palabra": "moderna",
           "inicioMs": 5100,
-          "finMs": 5600
+          "finMs": 5660
         },
         {
           "palabra": "ha",
-          "inicioMs": 5600,
-          "finMs": 5740
+          "inicioMs": 5660,
+          "finMs": 5820
         },
         {
           "palabra": "descubierto",
-          "inicioMs": 5740,
-          "finMs": 6240
+          "inicioMs": 5820,
+          "finMs": 6280
         },
         {
           "palabra": "su",
-          "inicioMs": 6240,
-          "finMs": 6460
+          "inicioMs": 6280,
+          "finMs": 6480
         },
         {
           "palabra": "verdadera",
-          "inicioMs": 6460,
-          "finMs": 6880
+          "inicioMs": 6480,
+          "finMs": 6900
         },
         {
           "palabra": "causa",
-          "inicioMs": 6880,
-          "finMs": 7160
+          "inicioMs": 6900,
+          "finMs": 7180
         },
         {
           "palabra": "biológica",
-          "inicioMs": 7160,
-          "finMs": 7760
+          "inicioMs": 7180,
+          "finMs": 7820
         }
       ]
     },
@@ -511,107 +523,107 @@
         "velocidad de procesamiento",
         "lóbulo temporal"
       ],
-      "duracionSegundos": 7.738,
+      "duracionSegundos": 6.226,
       "palabras": [
         {
           "palabra": "Todo",
           "inicioMs": 0,
-          "finMs": 280
+          "finMs": 200
         },
         {
           "palabra": "se",
-          "inicioMs": 280,
-          "finMs": 560
+          "inicioMs": 200,
+          "finMs": 420
         },
         {
           "palabra": "reduce",
-          "inicioMs": 560,
-          "finMs": 860
+          "inicioMs": 420,
+          "finMs": 720
         },
         {
           "palabra": "a",
-          "inicioMs": 860,
-          "finMs": 1080
+          "inicioMs": 720,
+          "finMs": 920
         },
         {
           "palabra": "un",
-          "inicioMs": 1080,
-          "finMs": 1200
+          "inicioMs": 920,
+          "finMs": 1000
         },
         {
           "palabra": "desfase",
-          "inicioMs": 1200,
-          "finMs": 1680
+          "inicioMs": 1000,
+          "finMs": 1400
         },
         {
           "palabra": "de",
-          "inicioMs": 1680,
-          "finMs": 1860
+          "inicioMs": 1400,
+          "finMs": 1560
         },
         {
           "palabra": "apenas",
+          "inicioMs": 1560,
+          "finMs": 1860
+        },
+        {
+          "palabra": "unos",
           "inicioMs": 1860,
           "finMs": 2180
         },
         {
-          "palabra": "unos",
-          "inicioMs": 2180,
-          "finMs": 2440
-        },
-        {
           "palabra": "pocos",
-          "inicioMs": 2440,
-          "finMs": 2880
+          "inicioMs": 2180,
+          "finMs": 2480
         },
         {
           "palabra": "milisegundos",
-          "inicioMs": 2880,
-          "finMs": 3460
+          "inicioMs": 2480,
+          "finMs": 3160
         },
         {
           "palabra": "en",
-          "inicioMs": 3460,
-          "finMs": 3760
+          "inicioMs": 3160,
+          "finMs": 3340
         },
         {
           "palabra": "la",
-          "inicioMs": 3760,
-          "finMs": 3980
+          "inicioMs": 3340,
+          "finMs": 3440
         },
         {
           "palabra": "velocidad",
-          "inicioMs": 3980,
-          "finMs": 4820
+          "inicioMs": 3440,
+          "finMs": 3700
         },
         {
           "palabra": "de",
-          "inicioMs": 4820,
-          "finMs": 5160
+          "inicioMs": 3700,
+          "finMs": 4060
         },
         {
           "palabra": "procesamiento",
-          "inicioMs": 5160,
-          "finMs": 5720
+          "inicioMs": 4060,
+          "finMs": 4680
         },
         {
           "palabra": "de",
-          "inicioMs": 5720,
-          "finMs": 5960
+          "inicioMs": 4680,
+          "finMs": 4860
         },
         {
           "palabra": "tu",
-          "inicioMs": 5960,
-          "finMs": 6080
+          "inicioMs": 4860,
+          "finMs": 4960
         },
         {
           "palabra": "lóbulo",
-          "inicioMs": 6080,
-          "finMs": 6420
+          "inicioMs": 4960,
+          "finMs": 5340
         },
         {
           "palabra": "temporal",
-          "inicioMs": 6420,
-          "finMs": 6840
+          "inicioMs": 5340,
+          "finMs": 5760
         }
       ]
     },
@@ -661,102 +673,102 @@
         "dos rutas neuronales",
         "sincronizadas al mismo tiempo"
       ],
-      "duracionSegundos": 8.626,
+      "duracionSegundos": 7.378,
       "palabras": [
         {
           "palabra": "Normalmente",
           "inicioMs": 0,
-          "finMs": 660
+          "finMs": 780
         },
         {
           "palabra": "cuando",
-          "inicioMs": 660,
-          "finMs": 880
+          "inicioMs": 980,
+          "finMs": 1140
         },
         {
           "palabra": "percibes",
-          "inicioMs": 880,
-          "finMs": 1280
+          "inicioMs": 1140,
+          "finMs": 1620
         },
         {
           "palabra": "una",
-          "inicioMs": 1280,
-          "finMs": 1480
-        },
-        {
-          "palabra": "escena",
-          "inicioMs": 1480,
+          "inicioMs": 1620,
           "finMs": 1820
         },
         {
+          "palabra": "escena",
+          "inicioMs": 1820,
+          "finMs": 2200
+        },
+        {
           "palabra": "tu",
-          "inicioMs": 2460,
-          "finMs": 2540
+          "inicioMs": 2420,
+          "finMs": 2460
         },
         {
           "palabra": "cerebro",
-          "inicioMs": 2540,
-          "finMs": 2920
+          "inicioMs": 2460,
+          "finMs": 2800
         },
         {
           "palabra": "envía",
-          "inicioMs": 2920,
-          "finMs": 3260
+          "inicioMs": 2800,
+          "finMs": 3080
         },
         {
           "palabra": "la",
-          "inicioMs": 3260,
-          "finMs": 3420
+          "inicioMs": 3080,
+          "finMs": 3200
         },
         {
           "palabra": "información",
-          "inicioMs": 3420,
-          "finMs": 3820
+          "inicioMs": 3200,
+          "finMs": 3580
         },
         {
           "palabra": "sensorial",
-          "inicioMs": 3820,
-          "finMs": 4460
+          "inicioMs": 3580,
+          "finMs": 4120
         },
         {
           "palabra": "por",
-          "inicioMs": 4460,
-          "finMs": 4760
+          "inicioMs": 4120,
+          "finMs": 4380
         },
         {
           "palabra": "dos",
-          "inicioMs": 4760,
-          "finMs": 5000
+          "inicioMs": 4380,
+          "finMs": 4560
         },
         {
           "palabra": "rutas",
-          "inicioMs": 5000,
-          "finMs": 5500
+          "inicioMs": 4560,
+          "finMs": 4940
         },
         {
           "palabra": "neuronales",
-          "inicioMs": 5500,
-          "finMs": 6040
+          "inicioMs": 4940,
+          "finMs": 5440
         },
         {
           "palabra": "sincronizadas",
-          "inicioMs": 6040,
-          "finMs": 6820
+          "inicioMs": 5440,
+          "finMs": 6120
         },
         {
           "palabra": "al",
-          "inicioMs": 6820,
-          "finMs": 7000
+          "inicioMs": 6120,
+          "finMs": 6280
         },
         {
           "palabra": "mismo",
-          "inicioMs": 7000,
-          "finMs": 7240
+          "inicioMs": 6280,
+          "finMs": 6460
         },
         {
           "palabra": "tiempo",
-          "inicioMs": 7240,
-          "finMs": 7680
+          "inicioMs": 6460,
+          "finMs": 6860
         }
       ]
     },
@@ -792,7 +804,7 @@
         "archiva los recuerdos",
         "memoria a largo plazo"
       ],
-      "duracionSegundos": 7.762,
+      "duracionSegundos": 7.018,
       "palabras": [
         {
           "palabra": "Una",
@@ -807,97 +819,97 @@
         {
           "palabra": "registra",
           "inicioMs": 600,
-          "finMs": 1160
+          "finMs": 1200
         },
         {
           "palabra": "el",
-          "inicioMs": 1160,
-          "finMs": 1260
+          "inicioMs": 1200,
+          "finMs": 1400
         },
         {
           "palabra": "presente",
-          "inicioMs": 1260,
-          "finMs": 1500
+          "inicioMs": 1400,
+          "finMs": 1740
         },
         {
           "palabra": "inmediato",
-          "inicioMs": 1500,
-          "finMs": 2160
+          "inicioMs": 1740,
+          "finMs": 2520
         },
         {
           "palabra": "mientras",
-          "inicioMs": 2400,
-          "finMs": 2580
+          "inicioMs": 2640,
+          "finMs": 2840
         },
         {
           "palabra": "que",
-          "inicioMs": 2580,
-          "finMs": 2780
+          "inicioMs": 2840,
+          "finMs": 3020
         },
         {
           "palabra": "la",
-          "inicioMs": 2780,
-          "finMs": 2880
+          "inicioMs": 3020,
+          "finMs": 3140
         },
         {
           "palabra": "otra",
-          "inicioMs": 2880,
-          "finMs": 3040
+          "inicioMs": 3140,
+          "finMs": 3380
         },
         {
           "palabra": "clasifica",
-          "inicioMs": 3040,
-          "finMs": 3600
+          "inicioMs": 3380,
+          "finMs": 4000
         },
         {
           "palabra": "y",
-          "inicioMs": 3600,
-          "finMs": 3760
+          "inicioMs": 4000,
+          "finMs": 4140
         },
         {
           "palabra": "archiva",
-          "inicioMs": 3760,
-          "finMs": 4100
+          "inicioMs": 4140,
+          "finMs": 4480
         },
         {
           "palabra": "los",
-          "inicioMs": 4100,
-          "finMs": 4240
+          "inicioMs": 4480,
+          "finMs": 4620
         },
         {
           "palabra": "recuerdos",
-          "inicioMs": 4240,
-          "finMs": 4700
+          "inicioMs": 4620,
+          "finMs": 5060
         },
         {
           "palabra": "en",
-          "inicioMs": 4700,
-          "finMs": 4840
+          "inicioMs": 5060,
+          "finMs": 5220
         },
         {
           "palabra": "tu",
-          "inicioMs": 4840,
-          "finMs": 4960
+          "inicioMs": 5220,
+          "finMs": 5340
         },
         {
           "palabra": "memoria",
-          "inicioMs": 4960,
-          "finMs": 5360
+          "inicioMs": 5340,
+          "finMs": 5720
         },
         {
           "palabra": "a",
-          "inicioMs": 5360,
-          "finMs": 5560
+          "inicioMs": 5720,
+          "finMs": 5900
         },
         {
           "palabra": "largo",
-          "inicioMs": 5560,
-          "finMs": 5840
+          "inicioMs": 5900,
+          "finMs": 6180
         },
         {
           "palabra": "plazo",
-          "inicioMs": 5840,
-          "finMs": 6280
+          "inicioMs": 6180,
+          "finMs": 6560
         }
       ]
     },
@@ -935,7 +947,7 @@
         "fracción de segundo",
         "desfase temporal"
       ],
-      "duracionSegundos": 7.402,
+      "duracionSegundos": 7.378,
       "palabras": [
         {
           "palabra": "Pero",
@@ -950,117 +962,117 @@
         {
           "palabra": "por",
           "inicioMs": 340,
-          "finMs": 500
+          "finMs": 540
         },
         {
           "palabra": "una",
-          "inicioMs": 500,
-          "finMs": 660
+          "inicioMs": 540,
+          "finMs": 720
         },
         {
           "palabra": "mínima",
-          "inicioMs": 660,
-          "finMs": 1020
+          "inicioMs": 720,
+          "finMs": 1100
         },
         {
           "palabra": "sobrecarga",
-          "inicioMs": 1020,
-          "finMs": 1600
+          "inicioMs": 1100,
+          "finMs": 1680
         },
         {
           "palabra": "una",
-          "inicioMs": 1600,
-          "finMs": 1760
-        },
-        {
-          "palabra": "de",
-          "inicioMs": 1760,
+          "inicioMs": 1680,
           "finMs": 1900
         },
         {
-          "palabra": "las",
+          "palabra": "de",
           "inicioMs": 1900,
-          "finMs": 2020
+          "finMs": 2040
+        },
+        {
+          "palabra": "las",
+          "inicioMs": 2040,
+          "finMs": 2180
         },
         {
           "palabra": "rutas",
-          "inicioMs": 2020,
-          "finMs": 2360
+          "inicioMs": 2180,
+          "finMs": 2640
         },
         {
           "palabra": "se",
-          "inicioMs": 2360,
-          "finMs": 2500
+          "inicioMs": 2640,
+          "finMs": 2780
         },
         {
           "palabra": "retrasa",
-          "inicioMs": 2500,
-          "finMs": 2900
+          "inicioMs": 2780,
+          "finMs": 3240
         },
         {
           "palabra": "solo",
-          "inicioMs": 2900,
-          "finMs": 3120
+          "inicioMs": 3240,
+          "finMs": 3480
         },
         {
           "palabra": "una",
-          "inicioMs": 3120,
-          "finMs": 3320
+          "inicioMs": 3480,
+          "finMs": 3680
         },
         {
           "palabra": "fracción",
-          "inicioMs": 3320,
-          "finMs": 3660
+          "inicioMs": 3680,
+          "finMs": 4060
         },
         {
           "palabra": "de",
-          "inicioMs": 3660,
-          "finMs": 3840
+          "inicioMs": 4060,
+          "finMs": 4220
         },
         {
           "palabra": "segundo",
-          "inicioMs": 3840,
-          "finMs": 4280
+          "inicioMs": 4220,
+          "finMs": 4640
         },
         {
           "palabra": "la",
-          "inicioMs": 4520,
-          "finMs": 4600
+          "inicioMs": 4820,
+          "finMs": 4900
         },
         {
           "palabra": "señal",
-          "inicioMs": 4600,
-          "finMs": 4940
-        },
-        {
-          "palabra": "llega",
-          "inicioMs": 4940,
-          "finMs": 5060
-        },
-        {
-          "palabra": "con",
-          "inicioMs": 5060,
+          "inicioMs": 4900,
           "finMs": 5300
         },
         {
-          "palabra": "un",
+          "palabra": "llega",
           "inicioMs": 5300,
-          "finMs": 5440
+          "finMs": 5540
+        },
+        {
+          "palabra": "con",
+          "inicioMs": 5540,
+          "finMs": 5800
+        },
+        {
+          "palabra": "un",
+          "inicioMs": 5800,
+          "finMs": 5920
         },
         {
           "palabra": "leve",
-          "inicioMs": 5440,
-          "finMs": 5600
+          "inicioMs": 5920,
+          "finMs": 6100
         },
         {
           "palabra": "desfase",
-          "inicioMs": 5600,
-          "finMs": 6020
+          "inicioMs": 6100,
+          "finMs": 6500
         },
         {
           "palabra": "temporal",
-          "inicioMs": 6020,
-          "finMs": 6480
+          "inicioMs": 6500,
+          "finMs": 6940
         }
       ]
     },
@@ -1096,122 +1108,122 @@
         "error de etiquetado",
         "recuerdo antiguo"
       ],
-      "duracionSegundos": 7.426,
+      "duracionSegundos": 7.69,
       "palabras": [
         {
           "palabra": "Al",
           "inicioMs": 0,
-          "finMs": 240
+          "finMs": 320
         },
         {
           "palabra": "recibir",
-          "inicioMs": 240,
-          "finMs": 480
+          "inicioMs": 320,
+          "finMs": 520
         },
         {
           "palabra": "la",
-          "inicioMs": 480,
-          "finMs": 720
+          "inicioMs": 520,
+          "finMs": 760
         },
         {
           "palabra": "misma",
-          "inicioMs": 720,
-          "finMs": 920
+          "inicioMs": 760,
+          "finMs": 1200
         },
         {
           "palabra": "información",
-          "inicioMs": 920,
-          "finMs": 1400
+          "inicioMs": 1200,
+          "finMs": 1420
         },
         {
           "palabra": "por",
-          "inicioMs": 1400,
-          "finMs": 1640
+          "inicioMs": 1420,
+          "finMs": 1760
         },
         {
           "palabra": "segunda",
-          "inicioMs": 1640,
-          "finMs": 1980
+          "inicioMs": 1760,
+          "finMs": 2140
         },
         {
           "palabra": "vez",
-          "inicioMs": 1980,
-          "finMs": 2280
+          "inicioMs": 2440,
+          "finMs": 2600
         },
         {
           "palabra": "tu",
-          "inicioMs": 2520,
-          "finMs": 2580
+          "inicioMs": 2600,
+          "finMs": 3120
         },
         {
           "palabra": "hipocampo",
-          "inicioMs": 2580,
-          "finMs": 3080
-        },
-        {
-          "palabra": "comete",
-          "inicioMs": 3080,
-          "finMs": 3280
-        },
-        {
-          "palabra": "un",
-          "inicioMs": 3280,
+          "inicioMs": 3120,
           "finMs": 3420
         },
         {
-          "palabra": "error",
+          "palabra": "comete",
           "inicioMs": 3420,
-          "finMs": 3600
-        },
-        {
-          "palabra": "de",
-          "inicioMs": 3600,
-          "finMs": 3780
-        },
-        {
-          "palabra": "etiquetado",
-          "inicioMs": 3780,
-          "finMs": 4360
-        },
-        {
-          "palabra": "y",
-          "inicioMs": 4360,
-          "finMs": 4540
-        },
-        {
-          "palabra": "la",
-          "inicioMs": 4540,
-          "finMs": 4620
-        },
-        {
-          "palabra": "clasifica",
-          "inicioMs": 4620,
-          "finMs": 5100
-        },
-        {
-          "palabra": "falsamente",
-          "inicioMs": 5100,
-          "finMs": 5560
-        },
-        {
-          "palabra": "como",
-          "inicioMs": 5560,
-          "finMs": 5800
+          "finMs": 3580
         },
         {
           "palabra": "un",
-          "inicioMs": 5800,
+          "inicioMs": 3580,
+          "finMs": 3760
+        },
+        {
+          "palabra": "error",
+          "inicioMs": 3760,
+          "finMs": 3960
+        },
+        {
+          "palabra": "de",
+          "inicioMs": 3960,
+          "finMs": 4640
+        },
+        {
+          "palabra": "etiquetado",
+          "inicioMs": 4820,
+          "finMs": 4840
+        },
+        {
+          "palabra": "y",
+          "inicioMs": 4840,
+          "finMs": 4940
+        },
+        {
+          "palabra": "la",
+          "inicioMs": 4940,
+          "finMs": 5460
+        },
+        {
+          "palabra": "clasifica",
+          "inicioMs": 5460,
           "finMs": 5940
         },
         {
-          "palabra": "recuerdo",
+          "palabra": "falsamente",
           "inicioMs": 5940,
-          "finMs": 6180
+          "finMs": 6200
+        },
+        {
+          "palabra": "como",
+          "inicioMs": 6200,
+          "finMs": 6320
+        },
+        {
+          "palabra": "un",
+          "inicioMs": 6320,
+          "finMs": 6680
+        },
+        {
+          "palabra": "recuerdo",
+          "inicioMs": 6680,
+          "finMs": 7200
         },
         {
           "palabra": "antiguo",
-          "inicioMs": 6180,
-          "finMs": 6740
+          "inicioMs": 7200,
+          "finMs": 7440
         }
       ]
     },
@@ -1247,102 +1259,102 @@
         "cerebro te engaña",
         "ocurrió hace años"
       ],
-      "duracionSegundos": 5.914,
+      "duracionSegundos": 5.482,
       "palabras": [
         {
           "palabra": "Estás",
           "inicioMs": 0,
-          "finMs": 360
+          "finMs": 280
         },
         {
           "palabra": "viviendo",
-          "inicioMs": 360,
-          "finMs": 740
+          "inicioMs": 280,
+          "finMs": 680
         },
         {
           "palabra": "el",
-          "inicioMs": 740,
-          "finMs": 840
+          "inicioMs": 680,
+          "finMs": 760
         },
         {
           "palabra": "presente",
-          "inicioMs": 840,
-          "finMs": 1100
+          "inicioMs": 760,
+          "finMs": 1040
         },
         {
           "palabra": "pero",
-          "inicioMs": 1280,
-          "finMs": 1360
+          "inicioMs": 1300,
+          "finMs": 1400
         },
         {
           "palabra": "tu",
-          "inicioMs": 1360,
+          "inicioMs": 1400,
           "finMs": 1520
         },
         {
           "palabra": "cerebro",
           "inicioMs": 1520,
-          "finMs": 1860
+          "finMs": 1840
         },
         {
           "palabra": "te",
-          "inicioMs": 1860,
-          "finMs": 2040
+          "inicioMs": 1840,
+          "finMs": 1980
         },
         {
           "palabra": "engaña",
-          "inicioMs": 2040,
-          "finMs": 2380
+          "inicioMs": 1980,
+          "finMs": 2320
         },
         {
           "palabra": "haciéndote",
-          "inicioMs": 2380,
-          "finMs": 2520
+          "inicioMs": 2420,
+          "finMs": 2720
         },
         {
           "palabra": "creer",
-          "inicioMs": 2520,
-          "finMs": 3040
+          "inicioMs": 2720,
+          "finMs": 3020
         },
         {
           "palabra": "que",
-          "inicioMs": 3040,
+          "inicioMs": 3020,
           "finMs": 3140
         },
         {
           "palabra": "estás",
           "inicioMs": 3140,
-          "finMs": 3320
+          "finMs": 3300
         },
         {
           "palabra": "recordando",
-          "inicioMs": 3320,
-          "finMs": 3820
+          "inicioMs": 3300,
+          "finMs": 3800
         },
         {
           "palabra": "algo",
-          "inicioMs": 3820,
-          "finMs": 4120
+          "inicioMs": 3800,
+          "finMs": 4060
         },
         {
           "palabra": "que",
-          "inicioMs": 4120,
-          "finMs": 4300
+          "inicioMs": 4060,
+          "finMs": 4220
         },
         {
           "palabra": "ocurrió",
-          "inicioMs": 4300,
-          "finMs": 4640
+          "inicioMs": 4220,
+          "finMs": 4540
         },
         {
           "palabra": "hace",
-          "inicioMs": 4640,
-          "finMs": 4800
+          "inicioMs": 4540,
+          "finMs": 4700
         },
         {
           "palabra": "años",
-          "inicioMs": 4800,
-          "finMs": 5080
+          "inicioMs": 4700,
+          "finMs": 5000
         }
       ]
     },
@@ -1380,127 +1392,127 @@
         "excelente señal",
         "verificación de memoria"
       ],
-      "duracionSegundos": 9.298,
+      "duracionSegundos": 7.978,
       "palabras": [
         {
           "palabra": "Curiosamente",
           "inicioMs": 0,
-          "finMs": 700
+          "finMs": 520
         },
         {
           "palabra": "los",
-          "inicioMs": 1080,
-          "finMs": 1440
+          "inicioMs": 680,
+          "finMs": 800
         },
         {
           "palabra": "estudios",
-          "inicioMs": 1440,
-          "finMs": 1840
+          "inicioMs": 800,
+          "finMs": 1200
         },
         {
           "palabra": "demuestran",
-          "inicioMs": 1840,
-          "finMs": 2280
+          "inicioMs": 1200,
+          "finMs": 1680
         },
         {
           "palabra": "que",
-          "inicioMs": 2280,
-          "finMs": 2400
+          "inicioMs": 1680,
+          "finMs": 1820
         },
         {
           "palabra": "tener",
-          "inicioMs": 2400,
-          "finMs": 2680
+          "inicioMs": 1820,
+          "finMs": 2020
         },
         {
           "palabra": "Déjà",
-          "inicioMs": 2680,
-          "finMs": 3000
+          "inicioMs": 2020,
+          "finMs": 2200
         },
         {
           "palabra": "Vu",
-          "inicioMs": 3000,
-          "finMs": 3400
+          "inicioMs": 2200,
+          "finMs": 2520
         },
         {
           "palabra": "es",
-          "inicioMs": 3400,
-          "finMs": 3620
+          "inicioMs": 2520,
+          "finMs": 2840
         },
         {
           "palabra": "una",
-          "inicioMs": 3620,
-          "finMs": 3740
+          "inicioMs": 2840,
+          "finMs": 2980
         },
         {
           "palabra": "excelente",
-          "inicioMs": 3740,
-          "finMs": 4200
+          "inicioMs": 2980,
+          "finMs": 3380
         },
         {
           "palabra": "señal",
-          "inicioMs": 4200,
-          "finMs": 4660
+          "inicioMs": 3380,
+          "finMs": 3800
         },
         {
           "palabra": "significa",
-          "inicioMs": 4980,
-          "finMs": 5500
+          "inicioMs": 4080,
+          "finMs": 4520
         },
         {
           "palabra": "que",
-          "inicioMs": 5500,
-          "finMs": 5640
+          "inicioMs": 4520,
+          "finMs": 4660
         },
         {
           "palabra": "tu",
-          "inicioMs": 5640,
-          "finMs": 5760
+          "inicioMs": 4660,
+          "finMs": 4780
         },
         {
           "palabra": "sistema",
-          "inicioMs": 5760,
-          "finMs": 6040
+          "inicioMs": 4780,
+          "finMs": 5100
         },
         {
           "palabra": "de",
-          "inicioMs": 6040,
-          "finMs": 6240
+          "inicioMs": 5100,
+          "finMs": 5280
         },
         {
           "palabra": "verificación",
-          "inicioMs": 6240,
-          "finMs": 6580
+          "inicioMs": 5280,
+          "finMs": 5760
         },
         {
           "palabra": "de",
-          "inicioMs": 6580,
-          "finMs": 6860
+          "inicioMs": 5760,
+          "finMs": 5980
         },
         {
           "palabra": "memoria",
-          "inicioMs": 6860,
-          "finMs": 7200
+          "inicioMs": 5980,
+          "finMs": 6300
         },
         {
           "palabra": "está",
-          "inicioMs": 7200,
-          "finMs": 7520
+          "inicioMs": 6300,
+          "finMs": 6560
         },
         {
           "palabra": "sano",
-          "inicioMs": 7520,
-          "finMs": 7820
+          "inicioMs": 6560,
+          "finMs": 6880
         },
         {
           "palabra": "y",
-          "inicioMs": 7820,
-          "finMs": 7980
+          "inicioMs": 6880,
+          "finMs": 7000
         },
         {
           "palabra": "activo",
-          "inicioMs": 7980,
-          "finMs": 8440
+          "inicioMs": 7000,
+          "finMs": 7480
         }
       ]
     },
@@ -1542,142 +1554,142 @@
         "no es magia",
         "calibrando sus archivos en vivo"
       ],
-      "duracionSegundos": 8.626,
+      "duracionSegundos": 7.522,
       "palabras": [
         {
           "palabra": "Así",
           "inicioMs": 0,
-          "finMs": 340
+          "finMs": 260
         },
         {
           "palabra": "que",
-          "inicioMs": 340,
-          "finMs": 460
+          "inicioMs": 260,
+          "finMs": 400
         },
         {
           "palabra": "la",
-          "inicioMs": 460,
-          "finMs": 580
+          "inicioMs": 400,
+          "finMs": 500
         },
         {
           "palabra": "próxima",
-          "inicioMs": 580,
-          "finMs": 900
+          "inicioMs": 500,
+          "finMs": 880
         },
         {
           "palabra": "vez",
-          "inicioMs": 900,
-          "finMs": 1140
+          "inicioMs": 880,
+          "finMs": 1100
         },
         {
           "palabra": "que",
-          "inicioMs": 1140,
-          "finMs": 1320
+          "inicioMs": 1100,
+          "finMs": 1300
         },
         {
           "palabra": "sientas",
-          "inicioMs": 1320,
-          "finMs": 1780
+          "inicioMs": 1300,
+          "finMs": 1800
         },
         {
           "palabra": "esa",
-          "inicioMs": 1780,
-          "finMs": 1960
+          "inicioMs": 1800,
+          "finMs": 1940
         },
         {
           "palabra": "extraña",
-          "inicioMs": 1960,
-          "finMs": 2400
+          "inicioMs": 1940,
+          "finMs": 2780
         },
         {
           "palabra": "ilusión",
-          "inicioMs": 2400,
-          "finMs": 2860
+          "inicioMs": 2780,
+          "finMs": 2960
         },
         {
           "palabra": "no",
-          "inicioMs": 3160,
-          "finMs": 3240
+          "inicioMs": 2960,
+          "finMs": 3080
         },
         {
           "palabra": "es",
-          "inicioMs": 3240,
-          "finMs": 3380
+          "inicioMs": 3080,
+          "finMs": 3420
         },
         {
           "palabra": "magia",
-          "inicioMs": 3380,
-          "finMs": 3760
+          "inicioMs": 3420,
+          "finMs": 3540
         },
         {
           "palabra": "ni",
-          "inicioMs": 3760,
-          "finMs": 3900
+          "inicioMs": 3540,
+          "finMs": 3720
         },
         {
           "palabra": "una",
-          "inicioMs": 3900,
+          "inicioMs": 3720,
           "finMs": 4120
         },
         {
           "palabra": "falla",
           "inicioMs": 4120,
-          "finMs": 4440
+          "finMs": 4200
         },
         {
           "palabra": "en",
-          "inicioMs": 4440,
-          "finMs": 4520
-        },
-        {
-          "palabra": "la",
-          "inicioMs": 4520,
+          "inicioMs": 4200,
           "finMs": 4580
         },
         {
+          "palabra": "la",
+          "inicioMs": 4800,
+          "finMs": 5060
+        },
+        {
           "palabra": "realidad",
-          "inicioMs": 4580,
-          "finMs": 4960
+          "inicioMs": 5060,
+          "finMs": 5500
         },
         {
           "palabra": "es",
-          "inicioMs": 5360,
-          "finMs": 5600
+          "inicioMs": 5500,
+          "finMs": 6020
         },
         {
           "palabra": "tu",
-          "inicioMs": 5600,
-          "finMs": 5720
+          "inicioMs": 6020,
+          "finMs": 6180
         },
         {
           "palabra": "cerebro",
-          "inicioMs": 5720,
-          "finMs": 6120
-        },
-        {
-          "palabra": "calibrando",
-          "inicioMs": 6120,
+          "inicioMs": 6180,
           "finMs": 6600
         },
         {
-          "palabra": "sus",
+          "palabra": "calibrando",
           "inicioMs": 6600,
-          "finMs": 6780
+          "finMs": 6800
+        },
+        {
+          "palabra": "sus",
+          "inicioMs": 6800,
+          "finMs": 7040
         },
         {
           "palabra": "archivos",
-          "inicioMs": 6780,
-          "finMs": 7200
+          "inicioMs": 7040,
+          "finMs": 7120
         },
         {
           "palabra": "en",
-          "inicioMs": 7200,
-          "finMs": 7420
+          "inicioMs": 7040,
+          "finMs": 7120
         },
         {
           "palabra": "vivo",
-          "inicioMs": 7420,
-          "finMs": 7680
+          "inicioMs": 7040,
+          "finMs": 7120
         }
       ]
     }

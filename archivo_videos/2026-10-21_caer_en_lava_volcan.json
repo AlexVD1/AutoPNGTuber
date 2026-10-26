@@ -2,7 +2,19 @@
   "meta": {
     "id": "caer_en_lava_volcan",
     "slug": "caer_en_lava_volcan",
-    "temaResumen": "¿Qué le pasaría realmente a tu cuerpo si caes en la lava de un volcán? Mito de Hollywood vs Efecto Leidenfrost"
+    "temaResumen": "¿Qué le pasaría realmente a tu cuerpo si caes en la lava de un volcán? Mito de Hollywood vs Efecto Leidenfrost",
+    "titulo": "No es como en el cine: qué pasa si caes en lava real",
+    "titulo_corto": "CAER EN LAVA REAL",
+    "gancho": "En las películas de Hollywood, cuando alguien cae a un volcán se hunde lentamente en la lava como si fuera una piscina. ¡Pero la física real dice que eso es completamente imposible!",
+    "fuentes": [
+      "Journal of Volcanology and Geothermal Research (Basaltic Lava Density)",
+      "Erta Ale Lava Lake Organic Matter Experiment (Richard Roscoe, 2002)"
+    ],
+    "genero": "SCIENCE",
+    "duracionObjetivo": [
+      62,
+      110
+    ]
   },
   "escenas": [
     {

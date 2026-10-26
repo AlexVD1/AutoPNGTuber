@@ -581,6 +581,26 @@ class LocalWhisperAligner:
         return fusionadas
 
 
+def validar_palabras(palabras: list[dict], texto_guion: str, escena_id) -> list[dict]:
+    """Garantiza que las palabras coincidan con el guion y que inicioMs sea creciente."""
+    tokens = [t.strip(PUNCT_STRIP) for t in re.findall(r"\S+", texto_guion) if t.strip(PUNCT_STRIP)]
+    nombres = [p["palabra"].strip(PUNCT_STRIP) for p in palabras]
+    if nombres != tokens:
+        print(f"[Escena {escena_id}] ⚠️ Las palabras alineadas no coinciden con el texto del guion.")
+        print(f"    guion:    {' '.join(tokens)}")
+        print(f"    alineado: {' '.join(nombres)}")
+
+    previo = 0
+    for p in palabras:
+        if p["inicioMs"] < previo:
+            print(f"[Escena {escena_id}] ⚠️ Tiempo desordenado en '{p['palabra']}' ({p['inicioMs']}ms < {previo}ms); corregido.")
+            p["inicioMs"] = previo
+        if p["finMs"] <= p["inicioMs"]:
+            p["finMs"] = p["inicioMs"] + 20
+        previo = p["inicioMs"]
+    return palabras
+
+
 def procesar_escena(
     escena: dict,
     tts_engine: LocalClonedTTS,
@@ -657,6 +677,7 @@ def procesar_escena(
 
         break
 
+    palabras = validar_palabras(palabras, texto, escena_id)
     duracion_segundos = round(duracion_real_mp3 + PAUSE_SECONDS, 3)
 
     escena["duracionSegundos"] = duracion_segundos
@@ -726,21 +747,23 @@ def main() -> None:
     total = sum(e.get("duracionSegundos", 0) for e in escenas)
     print(f"\nGuion actualizado en {GUION_PATH} (Duración total: {total:.2f}s)")
 
-    if total < 62.0:
+    try:
+        from scripts.registrar_historia import rango_duracion
+    except ImportError:
+        from registrar_historia import rango_duracion
+    minimo, maximo = rango_duracion(guion_raw)
+    if total < minimo:
         print(
-            f"\n[ALERTA MONETIZACIÓN] ⚠️ Duración total ({total:.2f}s) menor a 1:02 min (62s). "
-            f"Agrega 1 o 2 escenas de desarrollo al guion para que el agente lo ajuste antes de renderizar."
+            f"\n[ALERTA MONETIZACIÓN] ⚠️ Duración total ({total:.2f}s) menor al mínimo del objetivo ({minimo:.0f}s). "
+            f"Agrega escenas de desarrollo al guion antes de renderizar."
         )
-    elif total > 110.0:
+    elif total > maximo:
         print(
-            f"\n[ALERTA MONETIZACIÓN] ⚠️ Duración total ({total:.2f}s) excede el máximo permitido de 1:50 min (110s). "
+            f"\n[ALERTA MONETIZACIÓN] ⚠️ Duración total ({total:.2f}s) excede el máximo del objetivo ({maximo:.0f}s). "
             f"Reduce o compacta escenas antes de renderizar."
         )
     else:
-        print(
-            f"\n[MONETIZACIÓN OK] ✅ Duración total ({total:.2f}s) dentro del rango óptimo para monetización (1:02 - 1:50 min)."
-        )
-
+        print(f"\n[DURACIÓN OK] ✅ Duración total ({total:.2f}s) dentro del objetivo [{minimo:.0f}-{maximo:.0f}s].")
     try:
         try:
             from scripts.registrar_historia import registrar_historia

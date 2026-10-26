@@ -8,16 +8,14 @@
 
 ## ⏱️ REGLA DE DURACIÓN OBLIGATORIA DEL GUION
 
-1. **Mínimo obligatorio forzoso**: El guion DEBE durar **mínimo 1:02 (62 segundos)** medido en audio real. Jamás se debe generar un video de duración inferior a 1:02.
-2. **Rango objetivo esperado**: La duración esperada se sitúa **entre 1:02 (62s) y 1:30 (90s)**.
-3. **Tope máximo y holgura permitida**:
-   - 1:30 es el techo de referencia previsto.
-   - Está permitido superar este techo esperado si la narrativa lo amerita, pero **con un margen de holgura de máximo 10 a 20 segundos** (por ejemplo hasta ~1:40 o un extremo de ~1:50).
-   - El mínimo de **1:02** es innegociable y forzoso.
-4. **Dimensionamiento del guion**:
-   - Estructurar entre **10 a 14 escenas** con contenido explicativo sustancial.
-   - Cada escena suele aportar entre 4.5s y 7.5s tras la síntesis de voz y pausas.
-   - Evitar guiones cortos de 4 a 6 escenas que no alcancen los 62 segundos.
+1. **Duración configurable por video**: cada guion declara `meta.duracionObjetivo: [minSegundos, maxSegundos]`. Rangos de referencia para el experimento: **35-45 s** (corto), **60-75 s** (medio) y **80-95 s** (largo).
+2. **Valor por defecto**: si el guion no define `duracionObjetivo`, se aplica **62-110 s** (el comportamiento histórico). `generar_voz.py`, `registrar_historia.py`, `npm run validar` y `npm run qa` leen este mismo rango.
+3. **Monetización en TikTok**: el Programa de Recompensas del Creador solo paga videos de **más de 60 s**; usa 60-75 s o más si el video se publica allí.
+4. **La duración estándar se decide con datos**: tras el experimento A/B de `docs/CHECKLIST_PUBLICACION.md` (5 cortos + 5 medios, métricas a 48 h en `docs/SEGUIMIENTO.csv`), no por regla fija.
+5. **Estructura de guion**: gancho en los primeros 1-2 s, dato clave entre los 5 y 10 s, giro a la mitad y cierre que enlaza con el inicio. La escena 1 debe mostrar una imagen o cifra impactante desde el frame 0 (el motor superpone `tituloVisual` en grande durante 1.5 s).
+6. **Dimensionamiento**: ~4.5-7.5 s por escena tras la síntesis; el número de escenas sale del rango elegido (p. ej. 10-14 escenas para 60-90 s).
+7. **Ritmo visual**: `npm run validar` avisa si dos escenas consecutivas repiten composición/pose/encuadre o si una escena pasa de ~6 s sin cambio de cámara (`punch`/`shake`).
+8. **Voz**: se puede probar una velocidad ligeramente mayor y pausas cortas antes del dato clave, manteniendo siempre la validación Whisper.
 
 ---
 
@@ -69,6 +67,13 @@
    - **Prioridad 1 — Prop Permanente Ilustrado y Animado**: Registrar en `src/stickman/propsLibrary.ts` con SVG enriquecido y compilar con `npm run poses:build`.
    - **Prioridad 2 — Iconos de Lucide (+1,400 listos)**: `"lucide:<IconName>"` como sticker neo-brutalista circular para props secundarios.
    - **Prioridad 3 — SVG Inline Personalizado**: `"svg:<path ...>"` para detalles vectoriales directos.
+
+6. **Generación y Expansión Dinámica de SFX (`public/sfx/`)**:
+   - Similar a los props SVG a medida, si la narración o una escena requiere un efecto de sonido puntual (ej. rayo láser, latido de corazón, alarma de peligro, glitch, choque metálico, destello) que no exista en `public/sfx/`, **el agente DEBE generar el archivo WAV correspondiente**:
+     - Usar el generador procedural: `python scripts/generar_sfx.py <nombre_archivo> <tipo> [duracion]` (presets: `laser`, `heartbeat`, `glitch`, `alarm`, `impact`, `sparkle`, `click`).
+     - O sintetizar directamente con un script Python usando `wave` y `math`/`numpy` guardando en `public/sfx/<nombre>.wav`.
+   - Prohibido omitir acentos sonoros clave o forzar un sonido que desentone con la emoción de la escena.
+   - Configurar siempre `"sfx": "sfx/<nombre>.wav"` y su respectivo `volumenSfx` (`0.18` a `0.28`, subordinado a la voz).
 
 ---
 

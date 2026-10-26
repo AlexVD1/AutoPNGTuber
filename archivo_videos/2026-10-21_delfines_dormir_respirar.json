@@ -2,7 +2,19 @@
   "meta": {
     "id": "delfines_dormir_respirar",
     "slug": "delfines_dormir_respirar",
-    "temaResumen": "¿Cómo hacen los delfines para dormir en el mar sin ahogarse?"
+    "temaResumen": "¿Cómo hacen los delfines para dormir en el mar sin ahogarse? Sueño unihemisférico",
+    "titulo": "¿Cómo duermen los delfines en el mar sin ahogarse?",
+    "titulo_corto": "DELFINES SUEÑO MITAD",
+    "gancho": "¿Alguna vez te has preguntado cómo duermen los delfines en medio del océano abierto sin hundirse ni ahogarse?",
+    "fuentes": [
+      "Mukhametov et al. (Neuroscience Letters: Unihemispheric Slow-Wave Sleep in Marine Mammals)",
+      "Woods Hole Oceanographic Institution (Marine Mammal Respiration)"
+    ],
+    "genero": "SCIENCE",
+    "duracionObjetivo": [
+      62,
+      110
+    ]
   },
   "escenas": [
     {
@@ -63,77 +75,77 @@
         "dormir en el océano",
         "sin ahogarse"
       ],
-      "duracionSegundos": 5.506,
+      "duracionSegundos": 3.898,
       "palabras": [
         {
           "palabra": "Alguna",
           "inicioMs": 0,
-          "finMs": 400
+          "finMs": 380
         },
         {
           "palabra": "vez",
-          "inicioMs": 400,
-          "finMs": 580
+          "inicioMs": 380,
+          "finMs": 480
         },
         {
           "palabra": "te",
-          "inicioMs": 580,
-          "finMs": 760
+          "inicioMs": 480,
+          "finMs": 640
         },
         {
           "palabra": "has",
-          "inicioMs": 760,
-          "finMs": 860
+          "inicioMs": 640,
+          "finMs": 680
         },
         {
           "palabra": "preguntado",
-          "inicioMs": 860,
-          "finMs": 1460
+          "inicioMs": 680,
+          "finMs": 1120
         },
         {
           "palabra": "cómo",
-          "inicioMs": 1460,
-          "finMs": 1740
+          "inicioMs": 1120,
+          "finMs": 1320
         },
         {
           "palabra": "duermen",
-          "inicioMs": 1740,
-          "finMs": 2180
+          "inicioMs": 1320,
+          "finMs": 1720
         },
         {
           "palabra": "los",
-          "inicioMs": 2180,
-          "finMs": 2300
+          "inicioMs": 1720,
+          "finMs": 1820
         },
         {
           "palabra": "delfines",
-          "inicioMs": 2300,
-          "finMs": 2800
+          "inicioMs": 1820,
+          "finMs": 2200
         },
         {
           "palabra": "en",
-          "inicioMs": 2800,
-          "finMs": 3020
+          "inicioMs": 2200,
+          "finMs": 2380
         },
         {
           "palabra": "el",
-          "inicioMs": 3020,
-          "finMs": 3140
+          "inicioMs": 2380,
+          "finMs": 2480
         },
         {
           "palabra": "océano",
-          "inicioMs": 3140,
-          "finMs": 3580
+          "inicioMs": 2480,
+          "finMs": 2800
         },
         {
           "palabra": "sin",
-          "inicioMs": 3860,
-          "finMs": 4000
+          "inicioMs": 2800,
+          "finMs": 2960
         },
         {
           "palabra": "ahogarse",
-          "inicioMs": 4000,
-          "finMs": 4640
+          "inicioMs": 2960,
+          "finMs": 3400
         }
       ]
     },
@@ -169,87 +181,87 @@
         "dormidos en la cama",
         "reflejo natural"
       ],
-      "duracionSegundos": 6.682,
+      "duracionSegundos": 5.962,
       "palabras": [
         {
           "palabra": "Los",
           "inicioMs": 0,
-          "finMs": 200
+          "finMs": 180
         },
         {
           "palabra": "seres",
-          "inicioMs": 200,
-          "finMs": 420
+          "inicioMs": 180,
+          "finMs": 380
         },
         {
           "palabra": "humanos",
-          "inicioMs": 420,
-          "finMs": 760
+          "inicioMs": 380,
+          "finMs": 660
         },
         {
           "palabra": "respiramos",
-          "inicioMs": 760,
-          "finMs": 1340
+          "inicioMs": 660,
+          "finMs": 1280
         },
         {
           "palabra": "de",
-          "inicioMs": 1340,
-          "finMs": 1460
+          "inicioMs": 1280,
+          "finMs": 1380
         },
         {
           "palabra": "forma",
-          "inicioMs": 1460,
-          "finMs": 1680
+          "inicioMs": 1380,
+          "finMs": 1600
         },
         {
           "palabra": "completamente",
-          "inicioMs": 1680,
-          "finMs": 2260
+          "inicioMs": 1600,
+          "finMs": 2140
         },
         {
           "palabra": "automática",
-          "inicioMs": 2260,
-          "finMs": 3000
+          "inicioMs": 2140,
+          "finMs": 2860
         },
         {
           "palabra": "incluso",
-          "inicioMs": 3180,
-          "finMs": 3480
+          "inicioMs": 3100,
+          "finMs": 3400
         },
         {
           "palabra": "cuando",
-          "inicioMs": 3480,
-          "finMs": 3780
+          "inicioMs": 3400,
+          "finMs": 3720
         },
         {
           "palabra": "estamos",
-          "inicioMs": 3780,
-          "finMs": 4080
+          "inicioMs": 3720,
+          "finMs": 3980
         },
         {
           "palabra": "profundamente",
-          "inicioMs": 4080,
-          "finMs": 4780
+          "inicioMs": 3980,
+          "finMs": 4580
         },
         {
           "palabra": "dormidos",
-          "inicioMs": 4780,
-          "finMs": 5260
+          "inicioMs": 4580,
+          "finMs": 5040
         },
         {
           "palabra": "en",
-          "inicioMs": 5260,
-          "finMs": 5380
+          "inicioMs": 5040,
+          "finMs": 5200
         },
         {
           "palabra": "la",
-          "inicioMs": 5380,
-          "finMs": 5500
+          "inicioMs": 5200,
+          "finMs": 5280
         },
         {
           "palabra": "cama",
-          "inicioMs": 5500,
-          "finMs": 5780
+          "inicioMs": 5280,
+          "finMs": 5480
         }
       ]
     },
@@ -299,7 +311,7 @@
         "acto voluntario",
         "respiración consciente"
       ],
-      "duracionSegundos": 6.538,
+      "duracionSegundos": 5.986,
       "palabras": [
         {
           "palabra": "Pero",
@@ -314,92 +326,92 @@
         {
           "palabra": "los",
           "inicioMs": 340,
-          "finMs": 360
+          "finMs": 380
         },
         {
           "palabra": "delfines",
-          "inicioMs": 360,
-          "finMs": 720
+          "inicioMs": 380,
+          "finMs": 760
         },
         {
           "palabra": "y",
-          "inicioMs": 720,
-          "finMs": 900
+          "inicioMs": 760,
+          "finMs": 920
         },
         {
           "palabra": "ballenas",
-          "inicioMs": 900,
-          "finMs": 1300
+          "inicioMs": 920,
+          "finMs": 1340
         },
         {
           "palabra": "cada",
-          "inicioMs": 1680,
-          "finMs": 1940
+          "inicioMs": 1460,
+          "finMs": 1580
         },
         {
           "palabra": "bocanada",
-          "inicioMs": 1940,
-          "finMs": 2420
+          "inicioMs": 1580,
+          "finMs": 2060
         },
         {
           "palabra": "de",
-          "inicioMs": 2420,
-          "finMs": 2600
+          "inicioMs": 2060,
+          "finMs": 2240
         },
         {
           "palabra": "aire",
-          "inicioMs": 2600,
-          "finMs": 2760
+          "inicioMs": 2240,
+          "finMs": 2400
         },
         {
           "palabra": "en",
-          "inicioMs": 2760,
-          "finMs": 2900
+          "inicioMs": 2400,
+          "finMs": 2540
         },
         {
           "palabra": "la",
-          "inicioMs": 2900,
-          "finMs": 2980
+          "inicioMs": 2540,
+          "finMs": 2580
         },
         {
           "palabra": "superficie",
-          "inicioMs": 2980,
-          "finMs": 3580
+          "inicioMs": 2580,
+          "finMs": 3260
         },
         {
           "palabra": "es",
-          "inicioMs": 3580,
-          "finMs": 3800
+          "inicioMs": 3260,
+          "finMs": 3420
         },
         {
           "palabra": "un",
-          "inicioMs": 3800,
-          "finMs": 3900
+          "inicioMs": 3420,
+          "finMs": 3540
         },
         {
           "palabra": "acto",
-          "inicioMs": 3900,
-          "finMs": 4180
+          "inicioMs": 3540,
+          "finMs": 3820
         },
         {
           "palabra": "plenamente",
-          "inicioMs": 4180,
-          "finMs": 4700
+          "inicioMs": 3820,
+          "finMs": 4280
         },
         {
           "palabra": "consciente",
-          "inicioMs": 4700,
-          "finMs": 5220
+          "inicioMs": 4280,
+          "finMs": 4880
         },
         {
           "palabra": "y",
-          "inicioMs": 5220,
-          "finMs": 5320
+          "inicioMs": 4880,
+          "finMs": 4960
         },
         {
           "palabra": "voluntario",
-          "inicioMs": 5320,
-          "finMs": 5820
+          "inicioMs": 4960,
+          "finMs": 5520
         }
       ]
     },
@@ -443,112 +455,112 @@
         "hundirse en el mar",
         "peligro mortal"
       ],
-      "duracionSegundos": 7.546,
+      "duracionSegundos": 6.034,
       "palabras": [
         {
           "palabra": "Si",
           "inicioMs": 0,
-          "finMs": 280
+          "finMs": 120
         },
         {
           "palabra": "un",
-          "inicioMs": 280,
-          "finMs": 420
+          "inicioMs": 120,
+          "finMs": 220
         },
         {
           "palabra": "delfín",
-          "inicioMs": 420,
-          "finMs": 760
+          "inicioMs": 220,
+          "finMs": 520
         },
         {
           "palabra": "cayera",
-          "inicioMs": 760,
-          "finMs": 1220
+          "inicioMs": 520,
+          "finMs": 880
         },
         {
           "palabra": "en",
-          "inicioMs": 1220,
-          "finMs": 1360
+          "inicioMs": 880,
+          "finMs": 980
         },
         {
           "palabra": "un",
-          "inicioMs": 1360,
-          "finMs": 1480
+          "inicioMs": 980,
+          "finMs": 1080
         },
         {
           "palabra": "sueño",
-          "inicioMs": 1480,
-          "finMs": 1780
+          "inicioMs": 1080,
+          "finMs": 1360
         },
         {
           "palabra": "profundo",
-          "inicioMs": 1780,
-          "finMs": 2220
+          "inicioMs": 1360,
+          "finMs": 1780
         },
         {
           "palabra": "inconsciente",
-          "inicioMs": 2220,
-          "finMs": 2860
+          "inicioMs": 1780,
+          "finMs": 2320
         },
         {
           "palabra": "como",
-          "inicioMs": 2860,
-          "finMs": 3080
+          "inicioMs": 2320,
+          "finMs": 2500
         },
         {
           "palabra": "el",
-          "inicioMs": 3080,
-          "finMs": 3200
+          "inicioMs": 2500,
+          "finMs": 2620
         },
         {
           "palabra": "nuestro",
-          "inicioMs": 3200,
-          "finMs": 3540
+          "inicioMs": 2620,
+          "finMs": 2920
         },
         {
           "palabra": "simplemente",
-          "inicioMs": 3900,
-          "finMs": 4300
+          "inicioMs": 3020,
+          "finMs": 3380
         },
         {
           "palabra": "se",
-          "inicioMs": 4300,
-          "finMs": 4600
+          "inicioMs": 3380,
+          "finMs": 3660
         },
         {
           "palabra": "hundiría",
-          "inicioMs": 4600,
-          "finMs": 4940
+          "inicioMs": 3660,
+          "finMs": 4000
         },
         {
           "palabra": "en",
-          "inicioMs": 4940,
-          "finMs": 5020
+          "inicioMs": 4000,
+          "finMs": 4060
         },
         {
           "palabra": "el",
-          "inicioMs": 5020,
-          "finMs": 5120
+          "inicioMs": 4060,
+          "finMs": 4180
         },
         {
           "palabra": "mar",
-          "inicioMs": 5120,
-          "finMs": 5320
+          "inicioMs": 4180,
+          "finMs": 4360
         },
         {
           "palabra": "y",
-          "inicioMs": 5320,
-          "finMs": 5580
+          "inicioMs": 4360,
+          "finMs": 4580
         },
         {
           "palabra": "moriría",
-          "inicioMs": 5580,
-          "finMs": 6080
+          "inicioMs": 4580,
+          "finMs": 5020
         },
         {
           "palabra": "ahogado",
-          "inicioMs": 6080,
-          "finMs": 6620
+          "inicioMs": 5020,
+          "finMs": 5540
         }
       ]
     },
@@ -584,7 +596,7 @@
         "truco evolutivo",
         "diseño neurológico"
       ],
-      "duracionSegundos": 7.258,
+      "duracionSegundos": 6.082,
       "palabras": [
         {
           "palabra": "Para",
@@ -594,72 +606,72 @@
         {
           "palabra": "resolver",
           "inicioMs": 240,
-          "finMs": 680
+          "finMs": 580
         },
         {
           "palabra": "este",
-          "inicioMs": 680,
-          "finMs": 1000
+          "inicioMs": 580,
+          "finMs": 860
         },
         {
           "palabra": "dilema",
-          "inicioMs": 1000,
-          "finMs": 1400
+          "inicioMs": 860,
+          "finMs": 1200
         },
         {
           "palabra": "de",
-          "inicioMs": 1400,
-          "finMs": 1520
+          "inicioMs": 1200,
+          "finMs": 1280
         },
         {
           "palabra": "supervivencia",
-          "inicioMs": 1520,
-          "finMs": 2240
+          "inicioMs": 1280,
+          "finMs": 1920
         },
         {
           "palabra": "extrema",
-          "inicioMs": 2240,
-          "finMs": 2780
+          "inicioMs": 1920,
+          "finMs": 2400
         },
         {
           "palabra": "la",
-          "inicioMs": 3000,
-          "finMs": 3080
+          "inicioMs": 2480,
+          "finMs": 2540
         },
         {
           "palabra": "evolución",
-          "inicioMs": 3080,
-          "finMs": 3500
+          "inicioMs": 2540,
+          "finMs": 2960
         },
         {
           "palabra": "diseñó",
-          "inicioMs": 3500,
-          "finMs": 3960
+          "inicioMs": 2960,
+          "finMs": 3360
         },
         {
           "palabra": "un",
-          "inicioMs": 3960,
-          "finMs": 4080
+          "inicioMs": 3360,
+          "finMs": 3440
         },
         {
           "palabra": "truco",
-          "inicioMs": 4080,
-          "finMs": 4360
+          "inicioMs": 3440,
+          "finMs": 3720
         },
         {
           "palabra": "neurológico",
-          "inicioMs": 4360,
-          "finMs": 5000
+          "inicioMs": 3720,
+          "finMs": 4380
         },
         {
           "palabra": "verdaderamente",
-          "inicioMs": 5000,
-          "finMs": 5620
+          "inicioMs": 4380,
+          "finMs": 5000
         },
         {
           "palabra": "asombroso",
-          "inicioMs": 5620,
-          "finMs": 6320
+          "inicioMs": 5000,
+          "finMs": 5640
         }
       ]
     },
@@ -714,107 +726,107 @@
         "desconecta un hemisferio",
         "cerebro dividido"
       ],
-      "duracionSegundos": 6.658,
+      "duracionSegundos": 5.506,
       "palabras": [
         {
           "palabra": "Se",
           "inicioMs": 0,
-          "finMs": 200
+          "finMs": 160
         },
         {
           "palabra": "llama",
-          "inicioMs": 200,
-          "finMs": 380
+          "inicioMs": 160,
+          "finMs": 360
         },
         {
           "palabra": "sueño",
-          "inicioMs": 380,
-          "finMs": 640
+          "inicioMs": 360,
+          "finMs": 780
         },
         {
           "palabra": "unihemisférico",
-          "inicioMs": 640,
-          "finMs": 840
+          "inicioMs": 780,
+          "finMs": 1640
         },
         {
           "palabra": "el",
-          "inicioMs": 840,
-          "finMs": 940
+          "inicioMs": 1820,
+          "finMs": 1900
         },
         {
           "palabra": "delfín",
-          "inicioMs": 940,
-          "finMs": 1420
+          "inicioMs": 1900,
+          "finMs": 2200
         },
         {
           "palabra": "desconecta",
-          "inicioMs": 1720,
-          "finMs": 1820
+          "inicioMs": 2200,
+          "finMs": 2820
         },
         {
           "palabra": "y",
-          "inicioMs": 1820,
-          "finMs": 1960
+          "inicioMs": 2820,
+          "finMs": 2860
         },
         {
           "palabra": "pone",
-          "inicioMs": 1960,
-          "finMs": 2220
+          "inicioMs": 2860,
+          "finMs": 3000
         },
         {
           "palabra": "a",
-          "inicioMs": 2220,
-          "finMs": 2920
+          "inicioMs": 3000,
+          "finMs": 3160
         },
         {
           "palabra": "dormir",
-          "inicioMs": 2920,
-          "finMs": 3100
+          "inicioMs": 3160,
+          "finMs": 3320
         },
         {
           "palabra": "solo",
-          "inicioMs": 3100,
-          "finMs": 3340
+          "inicioMs": 3320,
+          "finMs": 3580
         },
         {
           "palabra": "un",
-          "inicioMs": 3340,
-          "finMs": 3500
+          "inicioMs": 3580,
+          "finMs": 3780
         },
         {
           "palabra": "hemisferio",
-          "inicioMs": 3500,
-          "finMs": 3800
+          "inicioMs": 3780,
+          "finMs": 4180
         },
         {
           "palabra": "de",
-          "inicioMs": 3800,
-          "finMs": 4120
+          "inicioMs": 4180,
+          "finMs": 4280
         },
         {
           "palabra": "su",
-          "inicioMs": 4120,
-          "finMs": 4360
+          "inicioMs": 4280,
+          "finMs": 4400
         },
         {
           "palabra": "cerebro",
-          "inicioMs": 4360,
-          "finMs": 4840
+          "inicioMs": 4400,
+          "finMs": 4740
         },
         {
           "palabra": "a",
-          "inicioMs": 4840,
-          "finMs": 4940
+          "inicioMs": 4740,
+          "finMs": 4840
         },
         {
           "palabra": "la",
-          "inicioMs": 4940,
-          "finMs": 5060
+          "inicioMs": 4840,
+          "finMs": 4880
         },
         {
           "palabra": "vez",
-          "inicioMs": 5060,
-          "finMs": 5460
+          "inicioMs": 4880,
+          "finMs": 5020
         }
       ]
     },
@@ -841,7 +853,7 @@
           "escala": 1.05,
           "orientacion": "derecha",
           "poseId": "covering_eyes",
-          "expresion": "tired",
+          "expresion": "exhausted",
           "habla": true
         }
       ],
@@ -850,82 +862,82 @@
         "ojo cerrado",
         "descanso plácido"
       ],
-      "duracionSegundos": 6.874,
+      "duracionSegundos": 5.914,
       "palabras": [
         {
           "palabra": "Mientras",
           "inicioMs": 0,
-          "finMs": 380
+          "finMs": 320
         },
         {
           "palabra": "el",
-          "inicioMs": 380,
-          "finMs": 580
+          "inicioMs": 320,
+          "finMs": 480
         },
         {
           "palabra": "hemisferio",
-          "inicioMs": 580,
-          "finMs": 1000
+          "inicioMs": 480,
+          "finMs": 920
         },
         {
           "palabra": "izquierdo",
-          "inicioMs": 1000,
-          "finMs": 1420
+          "inicioMs": 920,
+          "finMs": 1340
         },
         {
           "palabra": "descansa",
-          "inicioMs": 1420,
-          "finMs": 1880
+          "inicioMs": 1340,
+          "finMs": 1760
         },
         {
           "palabra": "plácidamente",
-          "inicioMs": 1880,
-          "finMs": 2460
+          "inicioMs": 1760,
+          "finMs": 2340
         },
         {
           "palabra": "el",
-          "inicioMs": 3180,
-          "finMs": 3340
+          "inicioMs": 2520,
+          "finMs": 2620
         },
         {
           "palabra": "ojo",
-          "inicioMs": 3340,
-          "finMs": 3480
+          "inicioMs": 2620,
+          "finMs": 2800
         },
         {
           "palabra": "derecho",
-          "inicioMs": 3480,
-          "finMs": 3740
+          "inicioMs": 2800,
+          "finMs": 3040
         },
         {
           "palabra": "permanece",
-          "inicioMs": 3740,
-          "finMs": 4320
+          "inicioMs": 3040,
+          "finMs": 3620
         },
         {
           "palabra": "cerrado",
-          "inicioMs": 4320,
-          "finMs": 4480
+          "inicioMs": 3620,
+          "finMs": 4040
         },
         {
           "palabra": "y",
-          "inicioMs": 4480,
-          "finMs": 4720
+          "inicioMs": 4040,
+          "finMs": 4160
         },
         {
           "palabra": "desconectado",
-          "inicioMs": 4720,
-          "finMs": 5340
+          "inicioMs": 4160,
+          "finMs": 4780
         },
         {
           "palabra": "del",
-          "inicioMs": 5340,
-          "finMs": 5500
+          "inicioMs": 4780,
+          "finMs": 4940
         },
         {
           "palabra": "entorno",
-          "inicioMs": 5500,
-          "finMs": 5940
+          "inicioMs": 4940,
+          "finMs": 5420
         }
       ]
     },
@@ -975,92 +987,92 @@
         "vigilando tiburones",
         "controlando el nado"
       ],
-      "duracionSegundos": 7.546,
+      "duracionSegundos": 7.162,
       "palabras": [
         {
           "palabra": "Al",
           "inicioMs": 0,
-          "finMs": 220
+          "finMs": 200
         },
         {
           "palabra": "mismo",
-          "inicioMs": 220,
-          "finMs": 480
+          "inicioMs": 200,
+          "finMs": 420
         },
         {
           "palabra": "tiempo",
-          "inicioMs": 480,
-          "finMs": 940
+          "inicioMs": 420,
+          "finMs": 900
         },
         {
           "palabra": "el",
-          "inicioMs": 1140,
-          "finMs": 1260
+          "inicioMs": 1020,
+          "finMs": 1120
         },
         {
           "palabra": "hemisferio",
-          "inicioMs": 1260,
-          "finMs": 1700
+          "inicioMs": 1120,
+          "finMs": 1560
         },
         {
           "palabra": "derecho",
-          "inicioMs": 1700,
-          "finMs": 1940
+          "inicioMs": 1560,
+          "finMs": 1780
         },
         {
           "palabra": "sigue",
-          "inicioMs": 1940,
-          "finMs": 2260
+          "inicioMs": 1780,
+          "finMs": 2180
         },
         {
           "palabra": "100%",
-          "inicioMs": 2260,
-          "finMs": 2540
+          "inicioMs": 2180,
+          "finMs": 2520
         },
         {
           "palabra": "despierto",
-          "inicioMs": 2540,
-          "finMs": 3500
+          "inicioMs": 2520,
+          "finMs": 3580
         },
         {
           "palabra": "vigilando",
-          "inicioMs": 3680,
-          "finMs": 4120
+          "inicioMs": 3760,
+          "finMs": 4140
         },
         {
           "palabra": "depredadores",
-          "inicioMs": 4120,
-          "finMs": 4680
+          "inicioMs": 4140,
+          "finMs": 4740
         },
         {
           "palabra": "como",
-          "inicioMs": 4680,
-          "finMs": 4920
+          "inicioMs": 4740,
+          "finMs": 4980
         },
         {
           "palabra": "tiburones",
-          "inicioMs": 4920,
-          "finMs": 5420
+          "inicioMs": 4980,
+          "finMs": 5500
         },
         {
           "palabra": "y",
-          "inicioMs": 5420,
-          "finMs": 5680
+          "inicioMs": 5500,
+          "finMs": 5740
         },
         {
           "palabra": "controlando",
-          "inicioMs": 5680,
-          "finMs": 6200
+          "inicioMs": 5740,
+          "finMs": 6260
         },
         {
           "palabra": "el",
-          "inicioMs": 6200,
-          "finMs": 6320
+          "inicioMs": 6260,
+          "finMs": 6360
         },
         {
           "palabra": "nado",
-          "inicioMs": 6320,
-          "finMs": 6600
+          "inicioMs": 6360,
+          "finMs": 6660
         }
       ]
     },
@@ -1117,97 +1129,97 @@
         "respirar oxígeno",
         "espiráculo"
       ],
-      "duracionSegundos": 8.17,
+      "duracionSegundos": 7.066,
       "palabras": [
         {
           "palabra": "Esa",
           "inicioMs": 0,
-          "finMs": 320
+          "finMs": 340
         },
         {
           "palabra": "mitad",
-          "inicioMs": 320,
-          "finMs": 500
+          "inicioMs": 340,
+          "finMs": 600
         },
         {
           "palabra": "despierta",
-          "inicioMs": 500,
-          "finMs": 1040
+          "inicioMs": 600,
+          "finMs": 1280
         },
         {
           "palabra": "le",
-          "inicioMs": 1040,
-          "finMs": 1160
+          "inicioMs": 1280,
+          "finMs": 1400
         },
         {
           "palabra": "recuerda",
-          "inicioMs": 1160,
-          "finMs": 1600
+          "inicioMs": 1400,
+          "finMs": 1900
         },
         {
           "palabra": "al",
-          "inicioMs": 1600,
-          "finMs": 1700
+          "inicioMs": 1900,
+          "finMs": 2000
         },
         {
           "palabra": "animal",
-          "inicioMs": 1700,
-          "finMs": 1980
+          "inicioMs": 2000,
+          "finMs": 2300
         },
         {
           "palabra": "salir",
-          "inicioMs": 1980,
-          "finMs": 2360
+          "inicioMs": 2300,
+          "finMs": 2640
         },
         {
           "palabra": "a",
-          "inicioMs": 2360,
-          "finMs": 2480
+          "inicioMs": 2640,
+          "finMs": 2800
         },
         {
           "palabra": "la",
-          "inicioMs": 2480,
-          "finMs": 2580
+          "inicioMs": 2800,
+          "finMs": 2840
         },
         {
           "palabra": "superficie",
-          "inicioMs": 2580,
-          "finMs": 3260
+          "inicioMs": 2840,
+          "finMs": 3480
         },
         {
           "palabra": "rítmicamente",
-          "inicioMs": 3400,
-          "finMs": 4060
+          "inicioMs": 3480,
+          "finMs": 4220
         },
         {
           "palabra": "para",
-          "inicioMs": 4060,
-          "finMs": 4280
+          "inicioMs": 4220,
+          "finMs": 4500
         },
         {
           "palabra": "respirar",
-          "inicioMs": 4280,
-          "finMs": 4780
+          "inicioMs": 4500,
+          "finMs": 5040
         },
         {
           "palabra": "oxígeno",
-          "inicioMs": 4780,
-          "finMs": 5320
+          "inicioMs": 5040,
+          "finMs": 5720
         },
         {
           "palabra": "por",
-          "inicioMs": 5320,
-          "finMs": 5440
+          "inicioMs": 5720,
+          "finMs": 5840
         },
         {
           "palabra": "su",
-          "inicioMs": 5440,
-          "finMs": 5560
+          "inicioMs": 5840,
+          "finMs": 5980
         },
         {
           "palabra": "espiráculo",
-          "inicioMs": 5560,
-          "finMs": 6100
+          "inicioMs": 5980,
+          "finMs": 6580
         }
       ]
     },
@@ -1257,7 +1269,7 @@
         "cambio de turno",
         "cerebro invierte"
       ],
-      "duracionSegundos": 6.706,
+      "duracionSegundos": 6.298,
       "palabras": [
         {
           "palabra": "Dos",
@@ -1267,97 +1279,97 @@
         {
           "palabra": "horas",
           "inicioMs": 260,
-          "finMs": 620
+          "finMs": 440
         },
         {
           "palabra": "después",
-          "inicioMs": 620,
-          "finMs": 840
+          "inicioMs": 440,
+          "finMs": 860
         },
         {
           "palabra": "el",
-          "inicioMs": 840,
-          "finMs": 1140
+          "inicioMs": 860,
+          "finMs": 1080
         },
         {
           "palabra": "cerebro",
-          "inicioMs": 1140,
-          "finMs": 1500
+          "inicioMs": 1080,
+          "finMs": 1420
         },
         {
           "palabra": "invierte",
-          "inicioMs": 1500,
-          "finMs": 1680
+          "inicioMs": 1420,
+          "finMs": 1800
         },
         {
           "palabra": "los",
-          "inicioMs": 1680,
-          "finMs": 2120
+          "inicioMs": 1800,
+          "finMs": 1940
         },
         {
           "palabra": "papeles",
-          "inicioMs": 2460,
+          "inicioMs": 1940,
           "finMs": 2520
         },
         {
           "palabra": "la",
-          "inicioMs": 2520,
-          "finMs": 2820
+          "inicioMs": 2640,
+          "finMs": 2700
         },
         {
           "palabra": "mitad",
-          "inicioMs": 2820,
-          "finMs": 3540
+          "inicioMs": 2700,
+          "finMs": 2980
         },
         {
           "palabra": "descansada",
-          "inicioMs": 3540,
-          "finMs": 3800
+          "inicioMs": 2980,
+          "finMs": 3680
         },
         {
           "palabra": "toma",
-          "inicioMs": 3800,
-          "finMs": 3940
+          "inicioMs": 3680,
+          "finMs": 3920
         },
         {
           "palabra": "el",
-          "inicioMs": 3940,
-          "finMs": 4320
+          "inicioMs": 3920,
+          "finMs": 4060
         },
         {
           "palabra": "control",
-          "inicioMs": 4320,
-          "finMs": 4620
+          "inicioMs": 4060,
+          "finMs": 4440
         },
         {
           "palabra": "y",
-          "inicioMs": 4620,
-          "finMs": 4740
+          "inicioMs": 4440,
+          "finMs": 4700
         },
         {
           "palabra": "la",
-          "inicioMs": 4740,
-          "finMs": 4920
+          "inicioMs": 4700,
+          "finMs": 4820
         },
         {
           "palabra": "otra",
-          "inicioMs": 4920,
-          "finMs": 5260
+          "inicioMs": 4820,
+          "finMs": 5040
         },
         {
           "palabra": "mitad",
-          "inicioMs": 5260,
-          "finMs": 5659
+          "inicioMs": 5040,
+          "finMs": 5300
         },
         {
           "palabra": "se",
-          "inicioMs": 5260,
-          "finMs": 5659
+          "inicioMs": 5300,
+          "finMs": 5500
         },
         {
           "palabra": "duerme",
-          "inicioMs": 5260,
-          "finMs": 5659
+          "inicioMs": 5500,
+          "finMs": 5860
         }
       ]
     },
@@ -1404,102 +1416,102 @@
         "sin dejar de nadar",
         "maravilla biológica"
       ],
-      "duracionSegundos": 7.498,
+      "duracionSegundos": 6.298,
       "palabras": [
         {
           "palabra": "Así",
           "inicioMs": 0,
-          "finMs": 280
+          "finMs": 320
         },
         {
           "palabra": "logran",
-          "inicioMs": 280,
-          "finMs": 580
+          "inicioMs": 320,
+          "finMs": 680
         },
         {
           "palabra": "dormir",
-          "inicioMs": 580,
-          "finMs": 860
+          "inicioMs": 680,
+          "finMs": 940
         },
         {
           "palabra": "ocho",
-          "inicioMs": 860,
-          "finMs": 1260
+          "inicioMs": 940,
+          "finMs": 1180
         },
         {
           "palabra": "horas",
-          "inicioMs": 1260,
-          "finMs": 1460
+          "inicioMs": 1180,
+          "finMs": 1360
         },
         {
           "palabra": "completas",
-          "inicioMs": 1460,
-          "finMs": 2040
+          "inicioMs": 1360,
+          "finMs": 1960
         },
         {
           "palabra": "al",
-          "inicioMs": 2040,
-          "finMs": 2200
+          "inicioMs": 1960,
+          "finMs": 2080
         },
         {
           "palabra": "día",
-          "inicioMs": 2200,
-          "finMs": 2340
+          "inicioMs": 2080,
+          "finMs": 2260
         },
         {
           "palabra": "sin",
-          "inicioMs": 2340,
-          "finMs": 2560
+          "inicioMs": 2260,
+          "finMs": 2460
         },
         {
           "palabra": "dejar",
-          "inicioMs": 2560,
-          "finMs": 2840
+          "inicioMs": 2460,
+          "finMs": 2780
         },
         {
           "palabra": "de",
-          "inicioMs": 2840,
-          "finMs": 3020
+          "inicioMs": 2780,
+          "finMs": 2940
         },
         {
           "palabra": "nadar",
-          "inicioMs": 3020,
-          "finMs": 3440
+          "inicioMs": 2940,
+          "finMs": 3240
         },
         {
           "palabra": "jamás",
-          "inicioMs": 3620,
-          "finMs": 4220
+          "inicioMs": 3240,
+          "finMs": 3680
         },
         {
           "palabra": "La",
-          "inicioMs": 4220,
-          "finMs": 4700
+          "inicioMs": 3920,
+          "finMs": 4000
         },
         {
           "palabra": "vida",
-          "inicioMs": 4700,
-          "finMs": 4880
+          "inicioMs": 4000,
+          "finMs": 4200
         },
         {
           "palabra": "marina",
-          "inicioMs": 4880,
-          "finMs": 5260
+          "inicioMs": 4200,
+          "finMs": 4600
         },
         {
           "palabra": "es",
-          "inicioMs": 5260,
-          "finMs": 5380
+          "inicioMs": 4600,
+          "finMs": 4720
         },
         {
           "palabra": "simplemente",
-          "inicioMs": 5380,
-          "finMs": 5800
+          "inicioMs": 4720,
+          "finMs": 5120
         },
         {
           "palabra": "fascinante",
-          "inicioMs": 5800,
-          "finMs": 6680
+          "inicioMs": 5120,
+          "finMs": 5820
         }
       ]
     }

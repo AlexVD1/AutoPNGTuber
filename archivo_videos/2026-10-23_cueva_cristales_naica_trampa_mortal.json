@@ -1,0 +1,1858 @@
+{
+  "meta": {
+    "id": "cueva_cristales_naica_trampa_mortal",
+    "slug": "cueva_cristales_naica_trampa_mortal",
+    "temaResumen": "La cueva que crea megacristales (La trampa mortal de Naica)",
+    "duracionObjetivo": [
+      62,
+      78
+    ],
+    "titulo": "La cueva que crea megacristales: La trampa mortal de Naica",
+    "titulo_corto": "La trampa de Naica",
+    "gancho": "¿Por qué entrar a esta cueva subterránea de cristales gigantes te ahogaría en tus propios pulmones en menos de diez minutos sin tocar una sola gota de agua?",
+    "fuentes": [
+      "García-Ruiz et al. (2007) - Formation of natural gypsum megacrystals in Naica, Mexico (Geology)",
+      "Forti & Badino (2010) - The Naica Caves: Thermal and Environmental Study (International Journal of Speleology)",
+      "NASA Astrobiology Institute - Life in Extreme Conditions in the Naica Mine"
+    ],
+    "genero": "Ciencia y Geología Extrema",
+    "playlist": "Lugares Extremos de la Tierra"
+  },
+  "escenas": [
+    {
+      "id": 1,
+      "texto": "Bajo el desierto de Chihuahua existe una cueva con cristales de selenita de once metros de largo, pero respirar su aire sin protección especial te ahogaría en cuestión de minutos. ¿Cómo es posible?",
+      "icono": "Flame",
+      "colorIcono": "#EF4444",
+      "tituloVisual": "TRAMPA EN NAICA",
+      "composicionVisual": "plano_general",
+      "escenario": "cueva_naica_megacristales_calor",
+      "layout": "narrativo",
+      "transicion": "zoom_in",
+      "efectosCamara": [
+        "punch",
+        "drift"
+      ],
+      "sfx": "sfx/sfx_calor_tos_pulmon_ahogo.wav",
+      "volumenSfx": 0.25,
+      "palabrasClave": [
+        "CRISTALES DE SELENITA",
+        "ONCE METROS",
+        "TE AHOGARÍA"
+      ],
+      "personajes": [
+        {
+          "id": "explorador_asfixiado",
+          "nombre": "Explorador Asfixiado",
+          "posicion": {
+            "x": -160,
+            "y": 70
+          },
+          "escala": 1.0,
+          "orientacion": "derecha",
+          "habla": true,
+          "capaZ": 10,
+          "acciones": [
+            {
+              "tipo": "personalizada",
+              "pasos": [
+                {
+                  "inicioProgreso": 0,
+                  "finProgreso": 0.35,
+                  "poseId": "leaning_forward",
+                  "expresion": "neutral",
+                  "posicion": {
+                    "x": -160,
+                    "y": 70
+                  },
+                  "curva": "suave",
+                  "procedural": "caminar"
+                },
+                {
+                  "inicioProgreso": 0.35,
+                  "finProgreso": 0.7,
+                  "poseId": "covering_eyes",
+                  "expresion": "worried",
+                  "posicion": {
+                    "x": -100,
+                    "y": 80
+                  },
+                  "curva": "suave",
+                  "procedural": "temblar"
+                },
+                {
+                  "inicioProgreso": 0.7,
+                  "finProgreso": 1.0,
+                  "poseId": "surprised_hands_up",
+                  "expresion": "scared",
+                  "posicion": {
+                    "x": -40,
+                    "y": 75
+                  },
+                  "curva": "impacto",
+                  "procedural": "recoil"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "objetos": [
+        {
+          "id": "obj_megacristal_base",
+          "propId": "megacristal_selenita_columna",
+          "posicion": {
+            "x": 260,
+            "y": 60
+          },
+          "escala": 1.3,
+          "animacion": "pulso"
+        }
+      ],
+      "duracionSegundos": 10.81,
+      "palabras": [
+        {
+          "palabra": "Bajo",
+          "inicioMs": 0,
+          "finMs": 300
+        },
+        {
+          "palabra": "el",
+          "inicioMs": 300,
+          "finMs": 460
+        },
+        {
+          "palabra": "desierto",
+          "inicioMs": 460,
+          "finMs": 780
+        },
+        {
+          "palabra": "de",
+          "inicioMs": 780,
+          "finMs": 1000
+        },
+        {
+          "palabra": "Chihuahua",
+          "inicioMs": 1000,
+          "finMs": 1580
+        },
+        {
+          "palabra": "existe",
+          "inicioMs": 1580,
+          "finMs": 1980
+        },
+        {
+          "palabra": "una",
+          "inicioMs": 1980,
+          "finMs": 2300
+        },
+        {
+          "palabra": "cueva",
+          "inicioMs": 2300,
+          "finMs": 2620
+        },
+        {
+          "palabra": "con",
+          "inicioMs": 2620,
+          "finMs": 2820
+        },
+        {
+          "palabra": "cristales",
+          "inicioMs": 2820,
+          "finMs": 3300
+        },
+        {
+          "palabra": "de",
+          "inicioMs": 3300,
+          "finMs": 3480
+        },
+        {
+          "palabra": "selenita",
+          "inicioMs": 3480,
+          "finMs": 4040
+        },
+        {
+          "palabra": "de",
+          "inicioMs": 4040,
+          "finMs": 4180
+        },
+        {
+          "palabra": "once",
+          "inicioMs": 4180,
+          "finMs": 4440
+        },
+        {
+          "palabra": "metros",
+          "inicioMs": 4440,
+          "finMs": 4760
+        },
+        {
+          "palabra": "de",
+          "inicioMs": 4760,
+          "finMs": 4920
+        },
+        {
+          "palabra": "largo",
+          "inicioMs": 4920,
+          "finMs": 5280
+        },
+        {
+          "palabra": "pero",
+          "inicioMs": 5540,
+          "finMs": 5700
+        },
+        {
+          "palabra": "respirar",
+          "inicioMs": 5700,
+          "finMs": 6180
+        },
+        {
+          "palabra": "su",
+          "inicioMs": 6180,
+          "finMs": 6400
+        },
+        {
+          "palabra": "aire",
+          "inicioMs": 6400,
+          "finMs": 6580
+        },
+        {
+          "palabra": "sin",
+          "inicioMs": 6580,
+          "finMs": 6800
+        },
+        {
+          "palabra": "protección",
+          "inicioMs": 6800,
+          "finMs": 7260
+        },
+        {
+          "palabra": "especial",
+          "inicioMs": 7260,
+          "finMs": 7880
+        },
+        {
+          "palabra": "te",
+          "inicioMs": 7880,
+          "finMs": 8220
+        },
+        {
+          "palabra": "ahogaría",
+          "inicioMs": 8220,
+          "finMs": 8520
+        },
+        {
+          "palabra": "en",
+          "inicioMs": 8520,
+          "finMs": 8620
+        },
+        {
+          "palabra": "cuestión",
+          "inicioMs": 8620,
+          "finMs": 8920
+        },
+        {
+          "palabra": "de",
+          "inicioMs": 8920,
+          "finMs": 9080
+        },
+        {
+          "palabra": "minutos",
+          "inicioMs": 9080,
+          "finMs": 9460
+        },
+        {
+          "palabra": "Cómo",
+          "inicioMs": 9620,
+          "finMs": 9780
+        },
+        {
+          "palabra": "es",
+          "inicioMs": 9780,
+          "finMs": 9900
+        },
+        {
+          "palabra": "posible",
+          "inicioMs": 9900,
+          "finMs": 10280
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "texto": "Descubierta a trescientos metros bajo tierra en la mina de Naica, esta cámara alberga columnas colosales de cincuenta y cinco toneladas. Un bosque subterráneo de fantasía que parece sacado de otro planeta.",
+      "icono": "Sparkles",
+      "colorIcono": "#38BDF8",
+      "tituloVisual": "CRISTALES GIGANTES",
+      "composicionVisual": "plano_general",
+      "escenario": "cueva_naica_escala_panoramica",
+      "layout": "narrativo",
+      "transicion": "whip_right",
+      "efectosCamara": [
+        "punch",
+        "drift"
+      ],
+      "sfx": "sfx/sfx_cueva_eco_cristales_shimmer.wav",
+      "volumenSfx": 0.22,
+      "palabrasClave": [
+        "TRESCIENTOS METROS",
+        "CINCUENTA Y CINCO TONELADAS",
+        "BOSQUE SUBTERRÁNEO"
+      ],
+      "personajes": [
+        {
+          "id": "explorador_monumental",
+          "nombre": "Explorador Monumental",
+          "posicion": {
+            "x": -260,
+            "y": 70
+          },
+          "escala": 0.95,
+          "orientacion": "derecha",
+          "habla": true,
+          "capaZ": 10,
+          "prop": "casco_minero_linterna",
+          "acciones": [
+            {
+              "tipo": "personalizada",
+              "pasos": [
+                {
+                  "inicioProgreso": 0,
+                  "finProgreso": 0.35,
+                  "poseId": "walking",
+                  "expresion": "analytical",
+                  "posicion": {
+                    "x": -260,
+                    "y": 70
+                  },
+                  "curva": "suave",
+                  "procedural": "caminar"
+                },
+                {
+                  "inicioProgreso": 0.35,
+                  "finProgreso": 0.7,
+                  "poseId": "investigating_magnifier",
+                  "expresion": "surprised",
+                  "posicion": {
+                    "x": -120,
+                    "y": 70
+                  },
+                  "curva": "suave",
+                  "procedural": "estatico"
+                },
+                {
+                  "inicioProgreso": 0.7,
+                  "finProgreso": 1.0,
+                  "poseId": "shrugging",
+                  "expresion": "eureka",
+                  "posicion": {
+                    "x": -20,
+                    "y": 70
+                  },
+                  "curva": "suave",
+                  "procedural": "estatico"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "objetos": [
+        {
+          "id": "obj_megacristal_lateral",
+          "propId": "megacristal_selenita_columna",
+          "posicion": {
+            "x": 280,
+            "y": 40
+          },
+          "escala": 1.4,
+          "animacion": "flotar"
+        }
+      ],
+      "duracionSegundos": 10.018,
+      "palabras": [
+        {
+          "palabra": "Descubierta",
+          "inicioMs": 0,
+          "finMs": 620
+        },
+        {
+          "palabra": "a",
+          "inicioMs": 620,
+          "finMs": 1080
+        },
+        {
+          "palabra": "trescientos",
+          "inicioMs": 1080,
+          "finMs": 1480
+        },
+        {
+          "palabra": "metros",
+          "inicioMs": 1480,
+          "finMs": 1760
+        },
+        {
+          "palabra": "bajo",
+          "inicioMs": 1760,
+          "finMs": 2100
+        },
+        {
+          "palabra": "tierra",
+          "inicioMs": 2100,
+          "finMs": 2240
+        },
+        {
+          "palabra": "en",
+          "inicioMs": 2240,
+          "finMs": 2300
+        },
+        {
+          "palabra": "la",
+          "inicioMs": 2300,
+          "finMs": 2480
+        },
+        {
+          "palabra": "mina",
+          "inicioMs": 2480,
+          "finMs": 2640
+        },
+        {
+          "palabra": "de",
+          "inicioMs": 2640,
+          "finMs": 2840
+        },
+        {
+          "palabra": "Naica",
+          "inicioMs": 3060,
+          "finMs": 3240
+        },
+        {
+          "palabra": "esta",
+          "inicioMs": 3240,
+          "finMs": 3500
+        },
+        {
+          "palabra": "cámara",
+          "inicioMs": 3500,
+          "finMs": 3940
+        },
+        {
+          "palabra": "alberga",
+          "inicioMs": 3940,
+          "finMs": 4360
+        },
+        {
+          "palabra": "columnas",
+          "inicioMs": 4360,
+          "finMs": 4500
+        },
+        {
+          "palabra": "colosales",
+          "inicioMs": 4500,
+          "finMs": 4820
+        },
+        {
+          "palabra": "de",
+          "inicioMs": 4820,
+          "finMs": 4920
+        },
+        {
+          "palabra": "cincuenta",
+          "inicioMs": 4920,
+          "finMs": 5520
+        },
+        {
+          "palabra": "y",
+          "inicioMs": 5520,
+          "finMs": 6220
+        },
+        {
+          "palabra": "cinco",
+          "inicioMs": 6440,
+          "finMs": 6580
+        },
+        {
+          "palabra": "toneladas",
+          "inicioMs": 6580,
+          "finMs": 6880
+        },
+        {
+          "palabra": "Un",
+          "inicioMs": 6880,
+          "finMs": 7460
+        },
+        {
+          "palabra": "bosque",
+          "inicioMs": 7460,
+          "finMs": 7580
+        },
+        {
+          "palabra": "subterráneo",
+          "inicioMs": 7580,
+          "finMs": 8120
+        },
+        {
+          "palabra": "de",
+          "inicioMs": 8120,
+          "finMs": 8260
+        },
+        {
+          "palabra": "fantasía",
+          "inicioMs": 8260,
+          "finMs": 8520
+        },
+        {
+          "palabra": "que",
+          "inicioMs": 8520,
+          "finMs": 8960
+        },
+        {
+          "palabra": "parece",
+          "inicioMs": 8960,
+          "finMs": 9060
+        },
+        {
+          "palabra": "sacado",
+          "inicioMs": 9060,
+          "finMs": 9220
+        },
+        {
+          "palabra": "de",
+          "inicioMs": 9220,
+          "finMs": 9480
+        },
+        {
+          "palabra": "otro",
+          "inicioMs": 9480,
+          "finMs": 9624
+        },
+        {
+          "palabra": "planeta",
+          "inicioMs": 9480,
+          "finMs": 9624
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "texto": "Durante medio millón de años, una bolsa de magma a tres kilómetros de profundidad mantuvo un acuífero termal hirviendo a más de cincuenta grados, nutriendo lentamente el crecimiento de este cristal perfecto.",
+      "icono": "Compass",
+      "colorIcono": "#F59E0B",
+      "tituloVisual": "CALDO DE YESO Y MAGMA",
+      "composicionVisual": "cifras_concepto",
+      "escenario": "corte_geologico_magma_submarino",
+      "layout": "narrativo",
+      "transicion": "whip_right",
+      "efectosCamara": [
+        "punch",
+        "drift"
+      ],
+      "sfx": "sfx/sfx_magma_submarino_reloj.wav",
+      "volumenSfx": 0.24,
+      "palabrasClave": [
+        "MEDIO MILLÓN DE AÑOS",
+        "BOLSA DE MAGMA",
+        "ACUÍFERO TERMAL"
+      ],
+      "personajes": [
+        {
+          "id": "geologo_explicador",
+          "nombre": "Geólogo Explicador",
+          "posicion": {
+            "x": -220,
+            "y": 70
+          },
+          "escala": 1.0,
+          "orientacion": "derecha",
+          "habla": true,
+          "capaZ": 10,
+          "acciones": [
+            {
+              "tipo": "personalizada",
+              "pasos": [
+                {
+                  "inicioProgreso": 0,
+                  "finProgreso": 0.35,
+                  "poseId": "pointing_up",
+                  "expresion": "talking_enthusiastic",
+                  "posicion": {
+                    "x": -220,
+                    "y": 70
+                  },
+                  "curva": "suave",
+                  "procedural": "estatico"
+                },
+                {
+                  "inicioProgreso": 0.35,
+                  "finProgreso": 0.7,
+                  "poseId": "explaining_both_hands",
+                  "expresion": "analytical",
+                  "posicion": {
+                    "x": -150,
+                    "y": 70
+                  },
+                  "curva": "suave",
+                  "procedural": "estatico"
+                },
+                {
+                  "inicioProgreso": 0.7,
+                  "finProgreso": 1.0,
+                  "poseId": "nodding_yes",
+                  "expresion": "smile_wide",
+                  "posicion": {
+                    "x": -80,
+                    "y": 70
+                  },
+                  "curva": "suave",
+                  "procedural": "estatico"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "objetos": [
+        {
+          "id": "obj_medidor_geologico",
+          "propId": "medidores_58c_humedad_sobrecarga",
+          "posicion": {
+            "x": 240,
+            "y": 30
+          },
+          "escala": 1.1,
+          "animacion": "pulso"
+        }
+      ],
+      "duracionSegundos": 11.194,
+      "palabras": [
+        {
+          "palabra": "Durante",
+          "inicioMs": 0,
+          "finMs": 440
+        },
+        {
+          "palabra": "medio",
+          "inicioMs": 440,
+          "finMs": 780
+        },
+        {
+          "palabra": "millón",
+          "inicioMs": 780,
+          "finMs": 1100
+        },
+        {
+          "palabra": "de",
+          "inicioMs": 1100,
+          "finMs": 1280
+        },
+        {
+          "palabra": "años",
+          "inicioMs": 1280,
+          "finMs": 1540
+        },
+        {
+          "palabra": "una",
+          "inicioMs": 1780,
+          "finMs": 1940
+        },
+        {
+          "palabra": "bolsa",
+          "inicioMs": 1940,
+          "finMs": 2220
+        },
+        {
+          "palabra": "de",
+          "inicioMs": 2220,
+          "finMs": 2380
+        },
+        {
+          "palabra": "magma",
+          "inicioMs": 2380,
+          "finMs": 2740
+        },
+        {
+          "palabra": "a",
+          "inicioMs": 2740,
+          "finMs": 2880
+        },
+        {
+          "palabra": "tres",
+          "inicioMs": 2880,
+          "finMs": 3060
+        },
+        {
+          "palabra": "kilómetros",
+          "inicioMs": 3060,
+          "finMs": 3480
+        },
+        {
+          "palabra": "de",
+          "inicioMs": 3480,
+          "finMs": 3660
+        },
+        {
+          "palabra": "profundidad",
+          "inicioMs": 3660,
+          "finMs": 4240
+        },
+        {
+          "palabra": "mantuvo",
+          "inicioMs": 4420,
+          "finMs": 4660
+        },
+        {
+          "palabra": "un",
+          "inicioMs": 4660,
+          "finMs": 4820
+        },
+        {
+          "palabra": "acuífero",
+          "inicioMs": 4820,
+          "finMs": 5180
+        },
+        {
+          "palabra": "termal",
+          "inicioMs": 5180,
+          "finMs": 5580
+        },
+        {
+          "palabra": "hirviendo",
+          "inicioMs": 5580,
+          "finMs": 6020
+        },
+        {
+          "palabra": "a",
+          "inicioMs": 6020,
+          "finMs": 6120
+        },
+        {
+          "palabra": "más",
+          "inicioMs": 6120,
+          "finMs": 6240
+        },
+        {
+          "palabra": "de",
+          "inicioMs": 6240,
+          "finMs": 6360
+        },
+        {
+          "palabra": "cincuenta",
+          "inicioMs": 6360,
+          "finMs": 6700
+        },
+        {
+          "palabra": "grados",
+          "inicioMs": 6700,
+          "finMs": 7240
+        },
+        {
+          "palabra": "nutriendo",
+          "inicioMs": 7580,
+          "finMs": 8020
+        },
+        {
+          "palabra": "lentamente",
+          "inicioMs": 8020,
+          "finMs": 8520
+        },
+        {
+          "palabra": "el",
+          "inicioMs": 8520,
+          "finMs": 8780
+        },
+        {
+          "palabra": "crecimiento",
+          "inicioMs": 8780,
+          "finMs": 9220
+        },
+        {
+          "palabra": "de",
+          "inicioMs": 9220,
+          "finMs": 9460
+        },
+        {
+          "palabra": "este",
+          "inicioMs": 9460,
+          "finMs": 9640
+        },
+        {
+          "palabra": "cristal",
+          "inicioMs": 9640,
+          "finMs": 10020
+        },
+        {
+          "palabra": "perfecto",
+          "inicioMs": 10020,
+          "finMs": 10700
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "texto": "Pero cuando los mineros drenaron el agua subterránea para extraer plomo, la cueva quedó expuesta al aire, convirtiéndose súbitamente en un horno asfixiante a cincuenta y ocho grados y noventa y cinco por ciento de humedad.",
+      "icono": "AlertTriangle",
+      "colorIcono": "#EF4444",
+      "tituloVisual": "EL HORNO SUBTERRÁNEO",
+      "composicionVisual": "plano_general",
+      "escenario": "cueva_naica_drenaje_horno",
+      "layout": "narrativo",
+      "transicion": "whip_right",
+      "efectosCamara": [
+        "punch",
+        "drift"
+      ],
+      "sfx": "sfx/sfx_bomba_drenaje_vapor_alarma.wav",
+      "volumenSfx": 0.25,
+      "palabrasClave": [
+        "DRENARON EL AGUA",
+        "CINCUENTA Y OCHO GRADOS",
+        "NOVENTA Y CINCO POR CIENTO"
+      ],
+      "personajes": [
+        {
+          "id": "explorador_sofocado",
+          "nombre": "Explorador Sofocado",
+          "posicion": {
+            "x": -220,
+            "y": 70
+          },
+          "escala": 1.0,
+          "orientacion": "derecha",
+          "habla": true,
+          "capaZ": 10,
+          "acciones": [
+            {
+              "tipo": "personalizada",
+              "pasos": [
+                {
+                  "inicioProgreso": 0,
+                  "finProgreso": 0.35,
+                  "poseId": "backing_away_scared",
+                  "expresion": "shocked",
+                  "posicion": {
+                    "x": -220,
+                    "y": 70
+                  },
+                  "curva": "impacto",
+                  "procedural": "recoil"
+                },
+                {
+                  "inicioProgreso": 0.35,
+                  "finProgreso": 0.7,
+                  "poseId": "exhausted_slouch",
+                  "expresion": "exhausted",
+                  "posicion": {
+                    "x": -140,
+                    "y": 80
+                  },
+                  "curva": "suave",
+                  "procedural": "temblar"
+                },
+                {
+                  "inicioProgreso": 0.7,
+                  "finProgreso": 1.0,
+                  "poseId": "facepalm",
+                  "expresion": "frustrated",
+                  "posicion": {
+                    "x": -70,
+                    "y": 80
+                  },
+                  "curva": "suave",
+                  "procedural": "temblar"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "objetos": [
+        {
+          "id": "obj_medidor_sobrecalor",
+          "propId": "medidores_58c_humedad_sobrecarga",
+          "posicion": {
+            "x": 250,
+            "y": 20
+          },
+          "escala": 1.25,
+          "animacion": "vibrar"
+        }
+      ],
+      "duracionSegundos": 10.306,
+      "palabras": [
+        {
+          "palabra": "Pero",
+          "inicioMs": 0,
+          "finMs": 200
+        },
+        {
+          "palabra": "cuando",
+          "inicioMs": 200,
+          "finMs": 400
+        },
+        {
+          "palabra": "los",
+          "inicioMs": 400,
+          "finMs": 600
+        },
+        {
+          "palabra": "mineros",
+          "inicioMs": 600,
+          "finMs": 900
+        },
+        {
+          "palabra": "drenaron",
+          "inicioMs": 900,
+          "finMs": 1340
+        },
+        {
+          "palabra": "el",
+          "inicioMs": 1340,
+          "finMs": 1500
+        },
+        {
+          "palabra": "agua",
+          "inicioMs": 1500,
+          "finMs": 1660
+        },
+        {
+          "palabra": "subterránea",
+          "inicioMs": 1660,
+          "finMs": 2240
+        },
+        {
+          "palabra": "para",
+          "inicioMs": 2240,
+          "finMs": 2440
+        },
+        {
+          "palabra": "extraer",
+          "inicioMs": 2440,
+          "finMs": 2800
+        },
+        {
+          "palabra": "plomo",
+          "inicioMs": 2800,
+          "finMs": 3180
+        },
+        {
+          "palabra": "la",
+          "inicioMs": 3260,
+          "finMs": 3340
+        },
+        {
+          "palabra": "cueva",
+          "inicioMs": 3340,
+          "finMs": 3580
+        },
+        {
+          "palabra": "quedó",
+          "inicioMs": 3580,
+          "finMs": 3820
+        },
+        {
+          "palabra": "expuesta",
+          "inicioMs": 3820,
+          "finMs": 4260
+        },
+        {
+          "palabra": "al",
+          "inicioMs": 4260,
+          "finMs": 4420
+        },
+        {
+          "palabra": "aire",
+          "inicioMs": 4420,
+          "finMs": 4620
+        },
+        {
+          "palabra": "convirtiéndose",
+          "inicioMs": 4700,
+          "finMs": 5200
+        },
+        {
+          "palabra": "súbitamente",
+          "inicioMs": 5200,
+          "finMs": 5800
+        },
+        {
+          "palabra": "en",
+          "inicioMs": 5800,
+          "finMs": 6060
+        },
+        {
+          "palabra": "un",
+          "inicioMs": 6060,
+          "finMs": 6140
+        },
+        {
+          "palabra": "horno",
+          "inicioMs": 6140,
+          "finMs": 6420
+        },
+        {
+          "palabra": "asfixiante",
+          "inicioMs": 6420,
+          "finMs": 7000
+        },
+        {
+          "palabra": "a",
+          "inicioMs": 7000,
+          "finMs": 7120
+        },
+        {
+          "palabra": "cincuenta",
+          "inicioMs": 7120,
+          "finMs": 8240
+        },
+        {
+          "palabra": "y",
+          "inicioMs": 8240,
+          "finMs": 8280
+        },
+        {
+          "palabra": "ocho",
+          "inicioMs": 8280,
+          "finMs": 8800
+        },
+        {
+          "palabra": "grados",
+          "inicioMs": 8800,
+          "finMs": 9320
+        },
+        {
+          "palabra": "y",
+          "inicioMs": 9320,
+          "finMs": 9520
+        },
+        {
+          "palabra": "noventa",
+          "inicioMs": 9520,
+          "finMs": 9860
+        },
+        {
+          "palabra": "y",
+          "inicioMs": 9860,
+          "finMs": 9940
+        },
+        {
+          "palabra": "cinco",
+          "inicioMs": 9860,
+          "finMs": 9940
+        },
+        {
+          "palabra": "por",
+          "inicioMs": 9860,
+          "finMs": 9940
+        },
+        {
+          "palabra": "ciento",
+          "inicioMs": 9860,
+          "finMs": 9940
+        },
+        {
+          "palabra": "de",
+          "inicioMs": 9860,
+          "finMs": 9940
+        },
+        {
+          "palabra": "humedad",
+          "inicioMs": 9860,
+          "finMs": 9940
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "texto": "Aquí la física es letal. Como una lata fría de refresco que se empapa de agua en un día caliente, tus pulmones a treinta y siete grados condensan el vapor ambiental... ¡llenándote de agua por dentro!",
+      "icono": "Droplets",
+      "colorIcono": "#38BDF8",
+      "tituloVisual": "CONDENSACIÓN PULMONAR",
+      "composicionVisual": "cifras_concepto",
+      "escenario": "diagrama_condensacion_lata_pulmon",
+      "layout": "narrativo",
+      "transicion": "whip_right",
+      "efectosCamara": [
+        "punch",
+        "drift"
+      ],
+      "sfx": "sfx/sfx_lata_goteo_latido_pulmon.wav",
+      "volumenSfx": 0.25,
+      "palabrasClave": [
+        "LATA FRÍA",
+        "PULMONES A TREINTA Y SIETE",
+        "CONDENSAN EL VAPOR"
+      ],
+      "personajes": [
+        {
+          "id": "personaje_descubrimiento_shock",
+          "nombre": "Personaje Descubrimiento Shock",
+          "posicion": {
+            "x": -220,
+            "y": 70
+          },
+          "escala": 1.0,
+          "orientacion": "derecha",
+          "habla": true,
+          "capaZ": 10,
+          "acciones": [
+            {
+              "tipo": "personalizada",
+              "pasos": [
+                {
+                  "inicioProgreso": 0,
+                  "finProgreso": 0.35,
+                  "poseId": "taking_notes",
+                  "expresion": "analytical",
+                  "posicion": {
+                    "x": -220,
+                    "y": 70
+                  },
+                  "curva": "suave",
+                  "procedural": "estatico"
+                },
+                {
+                  "inicioProgreso": 0.35,
+                  "finProgreso": 0.7,
+                  "poseId": "covering_eyes",
+                  "expresion": "scared",
+                  "posicion": {
+                    "x": -150,
+                    "y": 75
+                  },
+                  "curva": "suave",
+                  "procedural": "temblar"
+                },
+                {
+                  "inicioProgreso": 0.7,
+                  "finProgreso": 1.0,
+                  "poseId": "shock_explosion",
+                  "expresion": "shocked",
+                  "posicion": {
+                    "x": -80,
+                    "y": 70
+                  },
+                  "curva": "impacto",
+                  "procedural": "recoil"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "objetos": [
+        {
+          "id": "obj_lata_helada",
+          "propId": "lata_refresco_condensando",
+          "posicion": {
+            "x": -280,
+            "y": -20
+          },
+          "escala": 1.2,
+          "animacion": "flotar"
+        },
+        {
+          "id": "obj_pulmones_bio",
+          "propId": "diagrama_pulmones_condensacion",
+          "posicion": {
+            "x": 260,
+            "y": -20
+          },
+          "escala": 1.25,
+          "animacion": "pulso"
+        }
+      ],
+      "duracionSegundos": 11.002,
+      "palabras": [
+        {
+          "palabra": "Aquí",
+          "inicioMs": 0,
+          "finMs": 300
+        },
+        {
+          "palabra": "la",
+          "inicioMs": 300,
+          "finMs": 440
+        },
+        {
+          "palabra": "física",
+          "inicioMs": 440,
+          "finMs": 740
+        },
+        {
+          "palabra": "es",
+          "inicioMs": 740,
+          "finMs": 1200
+        },
+        {
+          "palabra": "letal",
+          "inicioMs": 1200,
+          "finMs": 1780
+        },
+        {
+          "palabra": "Como",
+          "inicioMs": 1940,
+          "finMs": 2280
+        },
+        {
+          "palabra": "una",
+          "inicioMs": 2280,
+          "finMs": 2500
+        },
+        {
+          "palabra": "lata",
+          "inicioMs": 2500,
+          "finMs": 2680
+        },
+        {
+          "palabra": "fría",
+          "inicioMs": 2680,
+          "finMs": 3060
+        },
+        {
+          "palabra": "de",
+          "inicioMs": 3060,
+          "finMs": 3180
+        },
+        {
+          "palabra": "refresco",
+          "inicioMs": 3180,
+          "finMs": 3700
+        },
+        {
+          "palabra": "que",
+          "inicioMs": 3700,
+          "finMs": 3840
+        },
+        {
+          "palabra": "se",
+          "inicioMs": 3840,
+          "finMs": 3960
+        },
+        {
+          "palabra": "empapa",
+          "inicioMs": 3960,
+          "finMs": 4280
+        },
+        {
+          "palabra": "de",
+          "inicioMs": 4280,
+          "finMs": 4460
+        },
+        {
+          "palabra": "agua",
+          "inicioMs": 4460,
+          "finMs": 4660
+        },
+        {
+          "palabra": "en",
+          "inicioMs": 4660,
+          "finMs": 4780
+        },
+        {
+          "palabra": "un",
+          "inicioMs": 4780,
+          "finMs": 4860
+        },
+        {
+          "palabra": "día",
+          "inicioMs": 4860,
+          "finMs": 5020
+        },
+        {
+          "palabra": "caliente",
+          "inicioMs": 5020,
+          "finMs": 5560
+        },
+        {
+          "palabra": "tus",
+          "inicioMs": 5760,
+          "finMs": 5840
+        },
+        {
+          "palabra": "pulmones",
+          "inicioMs": 5840,
+          "finMs": 6460
+        },
+        {
+          "palabra": "a",
+          "inicioMs": 6460,
+          "finMs": 6960
+        },
+        {
+          "palabra": "treinta",
+          "inicioMs": 6960,
+          "finMs": 7560
+        },
+        {
+          "palabra": "y",
+          "inicioMs": 7560,
+          "finMs": 8040
+        },
+        {
+          "palabra": "siete",
+          "inicioMs": 8040,
+          "finMs": 8200
+        },
+        {
+          "palabra": "grados",
+          "inicioMs": 8200,
+          "finMs": 8380
+        },
+        {
+          "palabra": "condensan",
+          "inicioMs": 8380,
+          "finMs": 9040
+        },
+        {
+          "palabra": "el",
+          "inicioMs": 9160,
+          "finMs": 9620
+        },
+        {
+          "palabra": "vapor",
+          "inicioMs": 9620,
+          "finMs": 9760
+        },
+        {
+          "palabra": "ambiental",
+          "inicioMs": 9760,
+          "finMs": 9920
+        },
+        {
+          "palabra": "llenándote",
+          "inicioMs": 9920,
+          "finMs": 10140
+        },
+        {
+          "palabra": "de",
+          "inicioMs": 10140,
+          "finMs": 10440
+        },
+        {
+          "palabra": "agua",
+          "inicioMs": 10440,
+          "finMs": 10544
+        },
+        {
+          "palabra": "por",
+          "inicioMs": 10440,
+          "finMs": 10544
+        },
+        {
+          "palabra": "dentro",
+          "inicioMs": 10440,
+          "finMs": 10544
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "texto": "Para sobrevivir más de diez minutos, los científicos diseñaron trajes espaciales Tolomea con mochilas de veinte kilos de hielo, inyectando aire fresco a quince grados directo al respirador para evitar el colapso pulmonar.",
+      "icono": "ShieldCheck",
+      "colorIcono": "#22C55E",
+      "tituloVisual": "TRAJE DE HIELO TOLOMEA",
+      "composicionVisual": "escenario_ilustrado",
+      "escenario": "cueva_naica_rescate_traje_hielo",
+      "layout": "narrativo",
+      "transicion": "whip_right",
+      "efectosCamara": [
+        "punch",
+        "drift"
+      ],
+      "sfx": "sfx/sfx_traje_hielo_rescate_oxigeno.wav",
+      "volumenSfx": 0.25,
+      "palabrasClave": [
+        "TRAJES ESPACIALES TOLOMEA",
+        "VEINTE KILOS DE HIELO",
+        "COLAPSO PULMONAR"
+      ],
+      "personajes": [
+        {
+          "id": "cientifico_alivio",
+          "nombre": "Científico Alivio",
+          "posicion": {
+            "x": -220,
+            "y": 80
+          },
+          "escala": 1.0,
+          "orientacion": "derecha",
+          "habla": true,
+          "capaZ": 10,
+          "prop": "traje_termico_naica_tolomea",
+          "acciones": [
+            {
+              "tipo": "personalizada",
+              "pasos": [
+                {
+                  "inicioProgreso": 0,
+                  "finProgreso": 0.35,
+                  "poseId": "kneeling",
+                  "expresion": "exhausted",
+                  "posicion": {
+                    "x": -220,
+                    "y": 80
+                  },
+                  "curva": "suave",
+                  "procedural": "temblar"
+                },
+                {
+                  "inicioProgreso": 0.35,
+                  "finProgreso": 0.7,
+                  "poseId": "presenting_object",
+                  "expresion": "eureka",
+                  "posicion": {
+                    "x": -110,
+                    "y": 70
+                  },
+                  "curva": "suave",
+                  "procedural": "estatico"
+                },
+                {
+                  "inicioProgreso": 0.7,
+                  "finProgreso": 1.0,
+                  "poseId": "thumbs_up_approval",
+                  "expresion": "smile_wide",
+                  "posicion": {
+                    "x": 0,
+                    "y": 70
+                  },
+                  "curva": "suave",
+                  "procedural": "estatico"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "objetos": [
+        {
+          "id": "obj_mochila_hielo_display",
+          "propId": "traje_termico_naica_tolomea",
+          "posicion": {
+            "x": 260,
+            "y": 30
+          },
+          "escala": 1.2,
+          "animacion": "pulso"
+        }
+      ],
+      "duracionSegundos": 10.642,
+      "palabras": [
+        {
+          "palabra": "Para",
+          "inicioMs": 0,
+          "finMs": 220
+        },
+        {
+          "palabra": "sobrevivir",
+          "inicioMs": 220,
+          "finMs": 760
+        },
+        {
+          "palabra": "más",
+          "inicioMs": 760,
+          "finMs": 860
+        },
+        {
+          "palabra": "de",
+          "inicioMs": 860,
+          "finMs": 1000
+        },
+        {
+          "palabra": "diez",
+          "inicioMs": 1000,
+          "finMs": 1160
+        },
+        {
+          "palabra": "minutos",
+          "inicioMs": 1160,
+          "finMs": 1440
+        },
+        {
+          "palabra": "los",
+          "inicioMs": 1580,
+          "finMs": 1660
+        },
+        {
+          "palabra": "científicos",
+          "inicioMs": 1660,
+          "finMs": 2180
+        },
+        {
+          "palabra": "diseñaron",
+          "inicioMs": 2180,
+          "finMs": 2580
+        },
+        {
+          "palabra": "trajes",
+          "inicioMs": 2580,
+          "finMs": 2920
+        },
+        {
+          "palabra": "espaciales",
+          "inicioMs": 2920,
+          "finMs": 3540
+        },
+        {
+          "palabra": "Tolomea",
+          "inicioMs": 3540,
+          "finMs": 3940
+        },
+        {
+          "palabra": "con",
+          "inicioMs": 3940,
+          "finMs": 4080
+        },
+        {
+          "palabra": "mochilas",
+          "inicioMs": 4080,
+          "finMs": 4480
+        },
+        {
+          "palabra": "de",
+          "inicioMs": 4480,
+          "finMs": 4560
+        },
+        {
+          "palabra": "veinte",
+          "inicioMs": 4560,
+          "finMs": 4780
+        },
+        {
+          "palabra": "kilos",
+          "inicioMs": 4780,
+          "finMs": 5020
+        },
+        {
+          "palabra": "de",
+          "inicioMs": 5020,
+          "finMs": 5220
+        },
+        {
+          "palabra": "hielo",
+          "inicioMs": 5220,
+          "finMs": 5520
+        },
+        {
+          "palabra": "inyectando",
+          "inicioMs": 5640,
+          "finMs": 6180
+        },
+        {
+          "palabra": "aire",
+          "inicioMs": 6180,
+          "finMs": 6380
+        },
+        {
+          "palabra": "fresco",
+          "inicioMs": 6380,
+          "finMs": 6860
+        },
+        {
+          "palabra": "a",
+          "inicioMs": 6860,
+          "finMs": 7000
+        },
+        {
+          "palabra": "quince",
+          "inicioMs": 7000,
+          "finMs": 7180
+        },
+        {
+          "palabra": "grados",
+          "inicioMs": 7180,
+          "finMs": 7660
+        },
+        {
+          "palabra": "directo",
+          "inicioMs": 7660,
+          "finMs": 8060
+        },
+        {
+          "palabra": "al",
+          "inicioMs": 8060,
+          "finMs": 8120
+        },
+        {
+          "palabra": "respirador",
+          "inicioMs": 8120,
+          "finMs": 8620
+        },
+        {
+          "palabra": "para",
+          "inicioMs": 8620,
+          "finMs": 8860
+        },
+        {
+          "palabra": "evitar",
+          "inicioMs": 8860,
+          "finMs": 9100
+        },
+        {
+          "palabra": "el",
+          "inicioMs": 9100,
+          "finMs": 9260
+        },
+        {
+          "palabra": "colapso",
+          "inicioMs": 9260,
+          "finMs": 9640
+        },
+        {
+          "palabra": "pulmonar",
+          "inicioMs": 9640,
+          "finMs": 10180
+        }
+      ]
+    },
+    {
+      "id": 7,
+      "texto": "Hoy Naica volvió a inundarse de forma natural, protegiendo para siempre sus megacristales en la oscuridad del abismo. Una maravilla geológica donde la belleza infinita convive con una trampa mortal absoluta.",
+      "icono": "Lock",
+      "colorIcono": "#38BDF8",
+      "tituloVisual": "MISTERIO PROTEGIDO",
+      "composicionVisual": "plano_general",
+      "escenario": "mina_naica_compuerta_escape",
+      "layout": "narrativo",
+      "transicion": "whip_right",
+      "efectosCamara": [
+        "punch",
+        "drift"
+      ],
+      "sfx": "sfx/sfx_escotilla_mina_portazo_triunfo.wav",
+      "volumenSfx": 0.25,
+      "palabrasClave": [
+        "VOLVIÓ A INUNDARSE",
+        "MARAVILLA GEOLÓGICA",
+        "TRAMPA MORTAL"
+      ],
+      "personajes": [
+        {
+          "id": "explorador_escape_triunfal",
+          "nombre": "Explorador Escape Triunfal",
+          "posicion": {
+            "x": -240,
+            "y": 70
+          },
+          "escala": 1.0,
+          "orientacion": "derecha",
+          "habla": true,
+          "capaZ": 10,
+          "acciones": [
+            {
+              "tipo": "personalizada",
+              "pasos": [
+                {
+                  "inicioProgreso": 0,
+                  "finProgreso": 0.35,
+                  "poseId": "walking",
+                  "expresion": "standing_confident",
+                  "posicion": {
+                    "x": -240,
+                    "y": 70
+                  },
+                  "curva": "suave",
+                  "procedural": "caminar"
+                },
+                {
+                  "inicioProgreso": 0.35,
+                  "finProgreso": 0.7,
+                  "poseId": "thumbs_up_approval",
+                  "expresion": "proud",
+                  "posicion": {
+                    "x": -100,
+                    "y": 70
+                  },
+                  "curva": "suave",
+                  "procedural": "estatico"
+                },
+                {
+                  "inicioProgreso": 0.7,
+                  "finProgreso": 1.0,
+                  "poseId": "running",
+                  "expresion": "smile_wide",
+                  "posicion": {
+                    "x": 80,
+                    "y": 70
+                  },
+                  "curva": "suave",
+                  "procedural": "caminar"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "objetos": [
+        {
+          "id": "obj_compuerta_sellada_display",
+          "propId": "compuerta_acero_mina_sellada",
+          "posicion": {
+            "x": 280,
+            "y": 40
+          },
+          "escala": 1.25,
+          "animacion": "pulso"
+        }
+      ],
+      "duracionSegundos": 10.546,
+      "palabras": [
+        {
+          "palabra": "Hoy",
+          "inicioMs": 0,
+          "finMs": 240
+        },
+        {
+          "palabra": "Naica",
+          "inicioMs": 240,
+          "finMs": 520
+        },
+        {
+          "palabra": "volvió",
+          "inicioMs": 520,
+          "finMs": 960
+        },
+        {
+          "palabra": "a",
+          "inicioMs": 960,
+          "finMs": 1040
+        },
+        {
+          "palabra": "inundarse",
+          "inicioMs": 1040,
+          "finMs": 1440
+        },
+        {
+          "palabra": "de",
+          "inicioMs": 1440,
+          "finMs": 1600
+        },
+        {
+          "palabra": "forma",
+          "inicioMs": 1600,
+          "finMs": 1800
+        },
+        {
+          "palabra": "natural",
+          "inicioMs": 1800,
+          "finMs": 2200
+        },
+        {
+          "palabra": "protegiendo",
+          "inicioMs": 2420,
+          "finMs": 2860
+        },
+        {
+          "palabra": "para",
+          "inicioMs": 2860,
+          "finMs": 3040
+        },
+        {
+          "palabra": "siempre",
+          "inicioMs": 3040,
+          "finMs": 3380
+        },
+        {
+          "palabra": "sus",
+          "inicioMs": 3380,
+          "finMs": 3560
+        },
+        {
+          "palabra": "megacristales",
+          "inicioMs": 3560,
+          "finMs": 4240
+        },
+        {
+          "palabra": "en",
+          "inicioMs": 4240,
+          "finMs": 4460
+        },
+        {
+          "palabra": "la",
+          "inicioMs": 4460,
+          "finMs": 4520
+        },
+        {
+          "palabra": "oscuridad",
+          "inicioMs": 4520,
+          "finMs": 4860
+        },
+        {
+          "palabra": "del",
+          "inicioMs": 4860,
+          "finMs": 5000
+        },
+        {
+          "palabra": "abismo",
+          "inicioMs": 5000,
+          "finMs": 5400
+        },
+        {
+          "palabra": "Una",
+          "inicioMs": 5720,
+          "finMs": 5880
+        },
+        {
+          "palabra": "maravilla",
+          "inicioMs": 5880,
+          "finMs": 6300
+        },
+        {
+          "palabra": "geológica",
+          "inicioMs": 6300,
+          "finMs": 6880
+        },
+        {
+          "palabra": "donde",
+          "inicioMs": 6880,
+          "finMs": 7080
+        },
+        {
+          "palabra": "la",
+          "inicioMs": 7080,
+          "finMs": 7240
+        },
+        {
+          "palabra": "belleza",
+          "inicioMs": 7240,
+          "finMs": 7580
+        },
+        {
+          "palabra": "infinita",
+          "inicioMs": 7580,
+          "finMs": 8060
+        },
+        {
+          "palabra": "convive",
+          "inicioMs": 8060,
+          "finMs": 8460
+        },
+        {
+          "palabra": "con",
+          "inicioMs": 8460,
+          "finMs": 8620
+        },
+        {
+          "palabra": "una",
+          "inicioMs": 8620,
+          "finMs": 8800
+        },
+        {
+          "palabra": "trampa",
+          "inicioMs": 8800,
+          "finMs": 9080
+        },
+        {
+          "palabra": "mortal",
+          "inicioMs": 9080,
+          "finMs": 9380
+        },
+        {
+          "palabra": "absoluta",
+          "inicioMs": 9380,
+          "finMs": 10060
+        }
+      ]
+    }
+  ]
+}

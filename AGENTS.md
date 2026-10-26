@@ -8,26 +8,31 @@ Guía de arquitectura, flujo de trabajo y estructura de datos para agentes y des
 
 > 🚨 **REGLA DE ORO ANTES DE CREAR UN GUION**: Siempre que el usuario pida un nuevo video o una idea de historia, el agente DEBE leer primero `src/data/historial_temas.json`, revisar los temas y ganchos existentes, y asegurarse de proponer un tema, enfoque científico o fenómeno completamente distinto a los ya registrados.
 >
-> ⏱️ **REGLA DE DURACIÓN OBLIGATORIA DEL GUION**:
-> - **Mínimo obligatorio**: El guion DEBE durar **mínimo 1:02 (62 segundos) o más, forzosamente**. Nunca generar historias de menos de 1:02.
-> - **Rango objetivo esperado**: Entre **1:02** (62s) y **1:30** (90s).
-> - **Tope máximo y holgura**: 1:30 es el techo esperado de referencia. Puede haber holgura y pasarse ligeramente del techo si la narrativa lo requiere, pero **no por más de 10 a 20 segundos** (por ejemplo hasta ~1:40 o ~1:50 máximo con holgura).
-> - **Estructura recomendada**: Para cumplir el mínimo de 1:02, redactar entre **10 y 14 escenas** ricas en curiosidades y detalles científicos (o escenas con pausas y explicaciones fluidas de 5 a 8 segundos cada una).
+> ⏱️ **REGLA DE DURACIÓN DEL GUION (configurable por video)**:
+> - Cada guion declara `meta.duracionObjetivo: [min, max]` en segundos. Rangos de referencia: **35-45 s** (corto), **60-75 s** (medio), **80-95 s** (largo). Sin el campo, el rango por defecto es **62-110 s**.
+> - TikTok solo paga videos de **más de 60 s**; la duración estándar se decide con los datos del experimento A/B (`docs/CHECKLIST_PUBLICACION.md`, `docs/SEGUIMIENTO.csv`).
+> - **Estructura recomendada**: gancho en 1-2 s, dato clave entre 5 y 10 s, giro a la mitad y cierre que enlaza con el inicio. Escenas de 5 a 8 segundos con curiosidades y detalles científicos.
+> - `npm run validar` (esquema zod + catálogos + tiempos + lint de ritmo) y `npm run qa` (ffprobe/ffmpeg sobre el MP4) usan ese mismo rango. `npm run render` ejecuta ambos y falla con un mensaje claro.
 >
 > 🎨 **REGLA DE ESCENARIOS, PROPS Y ANIMACIÓN DINÁMICA (NO VACÍOS)**:
 > - **Expansión Dinámica de Escenarios (`NarrativeStage.tsx`)**: Si la narración requiere un ambiente no existente (ej. `abismo_oceanico`, `interior_cuerpo`, `volcan_activo`), debe programarse en SVG/CSS con: atmósfera rica en color/gradiente, 3 planos de profundidad/parallax y partículas vivas con `Math.sin()`.
 > - **Contraste del Stickman (`Stickman.tsx`)**: En escenarios oscuros (`ESCENARIOS_OSCUROS`), el Stickman recibe automáticamente un halo blanco nítido (`drop-shadow`) para garantizar visibilidad total.
 > - **Cero Encuadres Vacíos (`Scene.tsx`)**: Prohibido colocar al Stickman a un lado señalando al vacío. Cada escena debe incluir escenario y un prop protagónico o interactivo.
 > - **Props Ilustrados con Volumen y Animación (`propsLibrary.ts` / `SceneObject.tsx`)**: Diseñar props neo-brutalistas a todo color con `animatedSvg(frame)` permanente para conceptos científicos clave.
+> - 🚫 **PROHIBICIÓN TOTAL DE LUCIDE (DISEÑO PROPIO OBLIGATORIO)**: Queda terminantemente prohibido usar íconos de `lucide-react` o prefijos `"lucide:"` en props, objetos o accesorios. Al usuario NO le gusta la estética genérica de Lucide. Si una escena o narración requiere un objeto, prop, herramienta o símbolo visual que no existe en el catálogo, el agente DEBE diseñar e ilustrar props vectoriales propios en SVG/CSS dentro de `src/stickman/propsLibrary.ts` con estética neo-brutalista (colores vibrantes, contornos negros de 4-6px, volumen y detalle) y ejecutar `npm run poses:build`, o bien usar SVG inline personalizado (`"svg:<...>"`). Jamás sustituir con Lucide.
+> - **Generación y Expansión Dinámica de SFX (`public/sfx/`)**: Al igual que con los props SVG, si una escena requiere un efecto de sonido puntual o narrativo que no existe en la biblioteca (`whoosh`, `impact`, `dramatic_hit`, `tension_riser`, `transition`, `pop`), el agente DEBE generarlo/sintetizarlo en formato WAV en `public/sfx/<nombre>.wav` (usando `python scripts/generar_sfx.py <nombre> <tipo>` o síntesis procedural en Python con `wave`/`numpy`), en lugar de omitirlo o usar un efecto inadecuado. Asignarlo a `"sfx": "sfx/<nombre>.wav"` con su respectivo `volumenSfx`.
 > - **Movimiento Físico continuo**: Emplear secuencias de movimiento (`caminar_hacia`, `sorpresa_y_retroceso`, etc.) evitando el estatismo en `{x: 0, y: 0}`.
-> - **Duración Estricta de Monetización**: Entre 1:02 (62s) y 1:30 (90s), máx 1:50 (110s). `scripts/generar_voz.py` emite alerta si es menor a 62s.
+> - **Duración de Monetización**: se valida contra `meta.duracionObjetivo` (por defecto 62-110 s). `scripts/generar_voz.py` y `scripts/registrar_historia.py` emiten alerta si el total queda fuera del rango.
 > - **Pipeline de Audio Infalible (`v3_sentence_tailcut`)**:
 >   - Gating estricto en `scripts/render_short.js`: Compara automáticamente cada escena contra `.tts_cache.json` y `public/audios/`; si hay desajuste, falta un audio o el pipeline es obsoleto, ejecuta `python scripts/generar_voz.py` antes de renderizar.
 >   - Fragmentación por oraciones completas (135 caracteres) respetando cláusulas sintácticas naturales (prohibido cortar a mitad de frase o separar verbos de objetos directos).
 >   - Poda estricta de colas residuales: Recorta el audio exactamente a los 160ms tras la última palabra pronunciada con fundido suave de 40ms, eliminando el 100% de respiraciones, chasquidos y ruidos del sintetizador.
 >   - Micro-fades anti-clic (6ms/12ms) en fragmentos y temperatura acústica a `0.50` con reintentos adaptativos automáticos por similitud Whisper (< 72%).
-> - **Subtítulos Estables**: `WordSubtitles.tsx` mantiene progresión monótona sin parpadeos ni repeticiones del último bloque.
+> - **Subtítulos Estables y en zona segura**: `WordSubtitles.tsx` mantiene progresión monótona sin parpadeos; bloques de hasta 3 palabras/20 caracteres, franja y≈1400-1600 y margen derecho +120 px (la interfaz de TikTok/Shorts tapa el resto). `generar_voz.py` valida que `palabras` coincida con el texto y que `inicioMs` sea creciente.
+> - **Gancho en el frame 0**: en la escena 1, `Scene.tsx` superpone `tituloVisual` en grande durante los primeros 1.5 s.
 > - **Hashtags Optimizados**: `scripts/exportar_metadata.js` genera entre 6 y 10 hashtags limpios sin números ni preposiciones.
+> - **Metadata de publicación**: título ≤ 60 caracteres con rotación de plantillas, `titulo_corto`, descripción ≤ 500 caracteres (gancho + datos + CTA + `fuentes` + hashtags), `transcript` con la narración completa, duración medida con ffprobe, `storyId` estable (hash del slug), categoría Education / Science & Technology, y campos de seguimiento (`playlist`, `idioma_alterno`, `estado`, `fecha_publicacion`) que se conservan al re-exportar. Campos opcionales en `meta` del guion: `titulo`, `titulo_corto`, `gancho`, `fuentes`, `genero`, `playlist`, `idioma_alterno`.
+> - **Licencias**: antes de monetizar, `docs/LICENCIAS.md` no debe tener ⚠️ en voz, música ni SFX. El destino de copia (Drive) se define en `.env` (`DESTINO_DIR`).
 
 Cada vez que se pida crear o actualizar un Short animado o estilo *"¿Sabías que...?"*, sigue estos pasos en orden:
 
@@ -36,7 +41,7 @@ Cada vez que se pida crear o actualizar un Short animado o estilo *"¿Sabías qu
    - Puede ser un arreglo directo `[...]` o con metadatos `{ meta: { id, slug, temaResumen }, escenas: [...] }`.
    - Puede ser tan simple como `{ id, texto, icono, colorIcono, tituloVisual, poseId, prop }` o tan avanzado como una escena multi-personaje con `acciones` y `objetos`.
    - **Auto-Director Integrado**: Si la IA no especifica `acciones`, `composicionVisual` o `escenario`, el motor auto-dirige la puesta en escena (infiere el escenario temático, asigna encuadres dinámicos de cámara y dota al personaje de micro-movimiento procedural comunicativo y bamboleo de peso para que nunca quede congelado).
-   - **Miles de Props Disponibles**: Además de los 213 props de biblioteca, la IA puede solicitar cualquier icono de `lucide-react` (ej. `"lucide:Brain"`, `"lucide:Coffee"`, `"Dna"`, `"Rocket"`) o insertar código SVG inline (`"svg:<path ...>"`).
+   - **Catálogo de Props Ilustrados Propios (Prohibido Lucide)**: Con más de 227 props nativos de biblioteca, el agente DEBE diseñar props vectoriales propios en `src/stickman/propsLibrary.ts` o insertar código SVG inline personalizado (`"svg:<path ...>"`), evitando por completo los íconos genéricos de `lucide-react` (prohibidos por regla visual).
 2. **Generar voz, alinear palabras y registrar historial (`npm run tts` o `python scripts/generar_voz.py`)**:
    - Sintetiza los audios MP3 en `public/audios/escena_{id}.mp3`.
    - Inyecta automáticamente `duracionSegundos` (duración real + `0.25s`) y el arreglo `palabras` (`{ palabra, inicioMs, finMs }`) en `src/data/guion.json`.
@@ -184,12 +189,20 @@ Cada personaje en `personajes` puede tener una lista de `acciones` (`AccionPerso
 - `duracionSegundos` (`number`): Duración real del MP3 medida con `mutagen` + `0.25s` de pausa. `calculateMetadata` en `src/Root.tsx` suma este campo para ajustar la duración total del video.
 - `palabras` (`Array<{ palabra: string, inicioMs: number, finMs: number }>`): Eventos `WordBoundary` de `edge-tts` usados por `src/components/Subtitles.tsx` para mostrar bloques de 2 a 3 palabras en mayúsculas y resaltar en amarillo (`#FFE600`) la palabra activa.
 
-### Sistema Universal de Props (Miles de posibilidades)
+### Sistema de Props Ilustrados Propios (Prohibición de Lucide)
 
-Cualquier campo `prop`, `props.derecha`, `props.izquierda`, `props.arriba` u `objeto.propId` acepta tres orígenes sin necesidad de tocar código:
-1. **Catálogo nativo**: IDs del catálogo (`flashlight`, `laptop`, `beach_ball`, `magnifier`, `scale`, etc.).
-2. **Cualquier icono de Lucide (+1,400 iconos)**: Prefijo `"lucide:<IconName>"` o nombre exacto (ej. `"lucide:Brain"`, `"lucide:Coffee"`, `"Dna"`, `"Rocket"`, `"Coins"`). El motor lo renderiza automáticamente como un sticker neo-brutalista circular con contorno negro de 5px.
-3. **SVG inline personalizado**: Código SVG directo o con prefijo `"svg:"` (ej. `"svg:<circle cx='0' cy='0' r='20' fill='#FF0000'/>"`).
+Queda estrictamente prohibido usar íconos de `lucide-react` o prefijos `"lucide:"` para props u objetos. Todo campo `prop`, `props.derecha`, `props.izquierda`, `props.arriba` u `objeto.propId` debe provenir de:
+1. **Catálogo nativo ilustrado**: IDs de la biblioteca (`propsLibrary.ts` / `poses.json`) con más de 227 props diseñados a mano con volumen, animación física y estética neo-brutalista.
+2. **Diseño e ilustración de props nuevos**: Si el guion requiere un objeto que no existe (ej. herramientas científicas, equipo de expedición, recipientes específicos, reliquias), el agente DEBE programarlo en SVG dentro de `src/stickman/propsLibrary.ts` y regenerar con `npm run poses:build`.
+3. **SVG inline personalizado**: Código SVG directo o con prefijo `"svg:"` (ej. `"svg:<g><circle cx='0' cy='0' r='20' fill='#FF0000' stroke='#000000' stroke-width='4'/></g>"`).
+
+### Sistema de SFX Dinámico y Generación Procedural
+
+Al igual que con los props SVG, los efectos sonoros deben crearse cuando la historia lo amerite:
+1. **Biblioteca base**: `sfx/sfx_whoosh.wav`, `sfx/sfx_impact.wav`, `sfx/sfx_dramatic_hit.wav`, `sfx/sfx_tension_riser.wav`, `sfx/sfx_transition.wav`, `sfx/pop.mp3`.
+2. **Generación procedural bajo demanda**: Si la escena requiere un efecto no existente (ej. láser espacial, latido de corazón, alarma/alerta, glitch digital, destello o impacto sordo), el agente debe generar el archivo WAV en `public/sfx/<nombre>.wav` ejecutando `python scripts/generar_sfx.py <archivo> <tipo> [duracion]` (presets: `laser`, `heartbeat`, `glitch`, `alarm`, `impact`, `sparkle`, `click`) o con un script procedural Python rápido (`wave`/`numpy`).
+3. **Calibración de volumen**: Definir siempre `volumenSfx` en la escena (habitualmente entre `0.18` y `0.28`, subordinado a la voz).
+
 
 ### Desacoplamiento de Cámara y HUD (Subtítulos siempre legibles)
 
@@ -224,6 +237,7 @@ Para consultar o filtrar recursos programáticamente usa `src/stickman/catalog.t
 │   └── poses/                  # 357 SVGs organizados + contact_sheet.html / .png
 ├── scripts/
 │   ├── exportar_metadata.js    # Genera y exporta la metadata JSON para publicación en redes
+│   ├── generar_sfx.py          # Síntesis procedural de SFX (laser, alarm, glitch, heartbeat, etc.)
 │   ├── generar_voz.py          # TTS (edge-tts + mutagen) -> actualiza guion.json y llama historial
 │   ├── registrar_historia.py   # Respaldo, detección de duplicados (SequenceMatcher) e historial
 │   └── generar_biblioteca_poses.mjs # Compila SVGs, poses.json y contact_sheet.html
@@ -236,7 +250,7 @@ Para consultar o filtrar recursos programáticamente usa `src/stickman/catalog.t
 │   │   ├── SceneObject.tsx     # Props y objetos interactivos en el escenario
 │   │   ├── Stickman.tsx        # Renderizador determinista SVG/PNG + parpadeo, lip-sync y gesticulación
 │   │   ├── TestNarrativaScene.tsx # Composición de prueba aislada de interacción y reacción
-│   │   ├── WordSubtitles.tsx   # Subtítulos neo-brutalistas sin empastes y con énfasis en cifras
+│   │   ├── WordSubtitles.tsx   # Subtítulos neo-brutalistas (zona segura y≈1400-1600, bloques ≤3 palabras/20 car.)
 │   │   ├── AnimatedIcon.tsx    # Ícono neo-brutalista animado con soporte de modo banner compacto
 │   │   └── ShowcasePoses.tsx   # Composición HojaDeContacto
 │   ├── data/
@@ -255,10 +269,14 @@ Para consultar o filtrar recursos programáticamente usa `src/stickman/catalog.t
 
 ### Comandos
 
+- `npm run sfx -- <archivo> <tipo> [duracion]` — Genera proceduralmente un efecto de sonido WAV en `public/sfx/`.
 - `npm run tts` — Genera los audios MP3, actualiza tiempos en `src/data/guion.json` y ejecuta el respaldo/historial.
 - `npm run historial` — Registra y respalda manualmente el guion actual en `src/data/historial_temas.json` y `archivo_videos/`.
 - `npm run poses:build` — Regenera SVGs, `src/data/poses.json` y `public/poses/contact_sheet.html`.
 - `npm run dev` — Inicia Remotion Studio en `http://localhost:3000`.
-- `npm run metadata` — Genera el archivo JSON de metadata enriquecida para publicación en redes (se guarda en `out/` y se copia a `H:\Mi unidad\ShortsMotionGraphics`).
-- `npm run render` — Renderiza el Short asignándole nombre temático según el guion, purga videos y metadata antigua (>48h) en `/out`, exporta la metadata `.json` y envía ambos archivos a `H:\Mi unidad\ShortsMotionGraphics`.
+- `npm run metadata` — Genera el archivo JSON de metadata enriquecida para publicación en redes (se guarda en `out/` y se copia a `DESTINO_DIR` del `.env`).
+- `npm run validar` — Valida esquema zod de `guion.json` (poses, expresiones, props, escenarios, composiciones, tiempos en orden, duración) y avisa de ritmo visual.
+- `npm run qa [-- ruta.mp4]` — ffprobe/ffmpeg: duración, 1080×1920, 30 fps, tamaño ≤100MB, loudness ≈ -14 LUFS y silencios > 1 s.
+- `npm run render` — Renderiza el Short con CRF 22, validación previa del guion (`validar`) y QA posterior (`qa`), nombra según el tema, purga videos y metadata antigua (>48h) en `/out`, exporta la metadata `.json` y envía ambos archivos a `DESTINO_DIR`.
+- `npm run render:all` — Ejecuta `npm run tts` seguido de `npm run render`.
 - `npx remotion render TestNarrativa out/test_narrativa.mp4 --port 3003` — Renderiza la escena de prueba narrativa.

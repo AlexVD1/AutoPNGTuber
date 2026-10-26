@@ -1,0 +1,1624 @@
+{
+  "meta": {
+    "id": "calabazas_halloween_nabos_terrorificos",
+    "slug": "calabazas_halloween_nabos_terrorificos",
+    "temaResumen": "El origen de las calabazas de Halloween en los nabos tallados de la leyenda celta de Stingy Jack",
+    "titulo": "Por qué las calabazas de Halloween eran nabos terroríficos",
+    "titulo_corto": "CALABAZAS ERAN NABOS",
+    "gancho": "La calabaza de Halloween que conoces es una mentira: la original era una auténtica pesadilla esculpida en un nabo.",
+    "fuentes": [
+      "National Museum of Ireland: The Ghost Turnip and Irish Folk Life",
+      "Library of Congress: The Origin of the Jack-o'-Lantern",
+      "James Frazer: The Golden Bough (Samhain & Celtic Apotropaic Magic)"
+    ],
+    "genero": "HISTORY_FOLKLORE",
+    "duracionObjetivo": [
+      65,
+      75
+    ]
+  },
+  "escenas": [
+    {
+      "id": 1,
+      "texto": "La calabaza de Halloween que conoces es una mentira: la original era una auténtica pesadilla esculpida en un nabo deforme y pálido, creada para aterrar al más valiente.",
+      "icono": "Ghost",
+      "colorIcono": "#EA580C",
+      "tituloVisual": "CALABAZAS DE PESADILLA",
+      "composicionVisual": "plano_general",
+      "escenario": "paramo_celta_niebla",
+      "layout": "narrativo",
+      "transicion": "zoom_in",
+      "efectosCamara": [
+        "punch",
+        "drift"
+      ],
+      "sfx": "sfx/sfx_dramatic_hit.wav",
+      "volumenSfx": 0.25,
+      "personajes": [
+        {
+          "id": "protagonista",
+          "posicion": {
+            "x": -180,
+            "y": 50
+          },
+          "escala": 1,
+          "orientacion": "derecha",
+          "acciones": [
+            {
+              "tipo": "personalizada",
+              "pasos": [
+                {
+                  "inicioProgreso": 0,
+                  "finProgreso": 0.38,
+                  "poseId": "presenting_object",
+                  "expresion": "smile_wide",
+                  "posicion": {
+                    "x": -180,
+                    "y": 50
+                  },
+                  "curva": "suave",
+                  "procedural": "estatico"
+                },
+                {
+                  "inicioProgreso": 0.38,
+                  "finProgreso": 0.72,
+                  "poseId": "shock_explosion",
+                  "expresion": "shocked",
+                  "posicion": {
+                    "x": -210,
+                    "y": 35
+                  },
+                  "curva": "impacto",
+                  "procedural": "temblar"
+                },
+                {
+                  "inicioProgreso": 0.72,
+                  "finProgreso": 1,
+                  "poseId": "backing_away_scared",
+                  "expresion": "scared",
+                  "posicion": {
+                    "x": -230,
+                    "y": 50
+                  },
+                  "curva": "suave",
+                  "procedural": "estatico"
+                }
+              ]
+            }
+          ],
+          "habla": true
+        }
+      ],
+      "objetos": [
+        {
+          "id": "calabaza_mutacion",
+          "propId": "calabaza_a_nabo_morph",
+          "posicion": {
+            "x": 160,
+            "y": -20
+          },
+          "escala": 1.6,
+          "animacion": {
+            "tipo": "pulso"
+          }
+        }
+      ],
+      "palabrasClave": [
+        "calabaza de Halloween",
+        "mentira",
+        "auténtica pesadilla",
+        "nabo deforme"
+      ],
+      "duracionSegundos": 8.818,
+      "palabras": [
+        {
+          "palabra": "La",
+          "inicioMs": 0,
+          "finMs": 180
+        },
+        {
+          "palabra": "calabaza",
+          "inicioMs": 180,
+          "finMs": 580
+        },
+        {
+          "palabra": "de",
+          "inicioMs": 580,
+          "finMs": 760
+        },
+        {
+          "palabra": "Halloween",
+          "inicioMs": 760,
+          "finMs": 1080
+        },
+        {
+          "palabra": "que",
+          "inicioMs": 1080,
+          "finMs": 1220
+        },
+        {
+          "palabra": "conoces",
+          "inicioMs": 1220,
+          "finMs": 1640
+        },
+        {
+          "palabra": "es",
+          "inicioMs": 1640,
+          "finMs": 1820
+        },
+        {
+          "palabra": "una",
+          "inicioMs": 1820,
+          "finMs": 1980
+        },
+        {
+          "palabra": "mentira",
+          "inicioMs": 1980,
+          "finMs": 2500
+        },
+        {
+          "palabra": "la",
+          "inicioMs": 2580,
+          "finMs": 2660
+        },
+        {
+          "palabra": "original",
+          "inicioMs": 2660,
+          "finMs": 2940
+        },
+        {
+          "palabra": "era",
+          "inicioMs": 2940,
+          "finMs": 3260
+        },
+        {
+          "palabra": "una",
+          "inicioMs": 3260,
+          "finMs": 3440
+        },
+        {
+          "palabra": "auténtica",
+          "inicioMs": 3440,
+          "finMs": 3900
+        },
+        {
+          "palabra": "pesadilla",
+          "inicioMs": 3900,
+          "finMs": 4300
+        },
+        {
+          "palabra": "esculpida",
+          "inicioMs": 4300,
+          "finMs": 4900
+        },
+        {
+          "palabra": "en",
+          "inicioMs": 4900,
+          "finMs": 5100
+        },
+        {
+          "palabra": "un",
+          "inicioMs": 5100,
+          "finMs": 5200
+        },
+        {
+          "palabra": "nabo",
+          "inicioMs": 5200,
+          "finMs": 5440
+        },
+        {
+          "palabra": "deforme",
+          "inicioMs": 5440,
+          "finMs": 5780
+        },
+        {
+          "palabra": "y",
+          "inicioMs": 5780,
+          "finMs": 5940
+        },
+        {
+          "palabra": "pálido",
+          "inicioMs": 5940,
+          "finMs": 6320
+        },
+        {
+          "palabra": "creada",
+          "inicioMs": 6460,
+          "finMs": 6780
+        },
+        {
+          "palabra": "para",
+          "inicioMs": 6780,
+          "finMs": 7000
+        },
+        {
+          "palabra": "aterrar",
+          "inicioMs": 7000,
+          "finMs": 7400
+        },
+        {
+          "palabra": "al",
+          "inicioMs": 7400,
+          "finMs": 7560
+        },
+        {
+          "palabra": "más",
+          "inicioMs": 7560,
+          "finMs": 7720
+        },
+        {
+          "palabra": "valiente",
+          "inicioMs": 7720,
+          "finMs": 8360
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "texto": "Todo comenzó con la leyenda celta de Stingy Jack, un bribón tan astuto y miserable que logró engañar al mismísimo Diablo dos veces, atrapándolo en la copa de un árbol lleno de cruces talladas.",
+      "icono": "Flame",
+      "colorIcono": "#DC2626",
+      "tituloVisual": "EL ENGAÑO AL DIABLO",
+      "composicionVisual": "plano_general",
+      "escenario": "paramo_celta_niebla",
+      "layout": "narrativo",
+      "transicion": "whip_right",
+      "efectosCamara": [
+        "punch",
+        "drift"
+      ],
+      "sfx": "sfx/sfx_whoosh.wav",
+      "volumenSfx": 0.22,
+      "personajes": [
+        {
+          "id": "jack",
+          "nombre": "Stingy Jack",
+          "posicion": {
+            "x": -230,
+            "y": 60
+          },
+          "escala": 1,
+          "orientacion": "derecha",
+          "poseId": "explaining_pointing_up",
+          "expresion": "smile_soft",
+          "prop": "mug",
+          "props": {
+            "cara": "eye_patch"
+          },
+          "habla": true
+        },
+        {
+          "id": "diablo",
+          "nombre": "Diablo",
+          "posicion": {
+            "x": 220,
+            "y": 40
+          },
+          "escala": 0.95,
+          "orientacion": "izquierda",
+          "poseId": "angry_fists",
+          "expresion": "angry",
+          "prop": "trident",
+          "props": {
+            "sombrero": "horn_headband"
+          },
+          "habla": false,
+          "capaZ": 15
+        }
+      ],
+      "objetos": [
+        {
+          "id": "arbol_cruces",
+          "propId": "diablo_arbol_cruces",
+          "posicion": {
+            "x": 20,
+            "y": -40
+          },
+          "escala": 1.5,
+          "animacion": {
+            "tipo": "flotar"
+          }
+        }
+      ],
+      "palabrasClave": [
+        "leyenda celta",
+        "Stingy Jack",
+        "engañar al Diablo",
+        "cruces talladas"
+      ],
+      "duracionSegundos": 9.754,
+      "palabras": [
+        {
+          "palabra": "Todo",
+          "inicioMs": 0,
+          "finMs": 220
+        },
+        {
+          "palabra": "comenzó",
+          "inicioMs": 220,
+          "finMs": 800
+        },
+        {
+          "palabra": "con",
+          "inicioMs": 800,
+          "finMs": 920
+        },
+        {
+          "palabra": "la",
+          "inicioMs": 920,
+          "finMs": 1040
+        },
+        {
+          "palabra": "leyenda",
+          "inicioMs": 1040,
+          "finMs": 1440
+        },
+        {
+          "palabra": "celta",
+          "inicioMs": 1440,
+          "finMs": 1840
+        },
+        {
+          "palabra": "de",
+          "inicioMs": 1840,
+          "finMs": 1960
+        },
+        {
+          "palabra": "Stingy",
+          "inicioMs": 1960,
+          "finMs": 2380
+        },
+        {
+          "palabra": "Jack",
+          "inicioMs": 2380,
+          "finMs": 2560
+        },
+        {
+          "palabra": "un",
+          "inicioMs": 2680,
+          "finMs": 2800
+        },
+        {
+          "palabra": "bribón",
+          "inicioMs": 2800,
+          "finMs": 3240
+        },
+        {
+          "palabra": "tan",
+          "inicioMs": 3240,
+          "finMs": 3580
+        },
+        {
+          "palabra": "astuto",
+          "inicioMs": 3580,
+          "finMs": 3680
+        },
+        {
+          "palabra": "y",
+          "inicioMs": 3680,
+          "finMs": 4120
+        },
+        {
+          "palabra": "miserable",
+          "inicioMs": 4120,
+          "finMs": 4280
+        },
+        {
+          "palabra": "que",
+          "inicioMs": 4280,
+          "finMs": 4560
+        },
+        {
+          "palabra": "logró",
+          "inicioMs": 4560,
+          "finMs": 4920
+        },
+        {
+          "palabra": "engañar",
+          "inicioMs": 4920,
+          "finMs": 5020
+        },
+        {
+          "palabra": "al",
+          "inicioMs": 5020,
+          "finMs": 5560
+        },
+        {
+          "palabra": "mismísimo",
+          "inicioMs": 5560,
+          "finMs": 5820
+        },
+        {
+          "palabra": "Diablo",
+          "inicioMs": 5820,
+          "finMs": 6060
+        },
+        {
+          "palabra": "dos",
+          "inicioMs": 6060,
+          "finMs": 6360
+        },
+        {
+          "palabra": "veces",
+          "inicioMs": 6460,
+          "finMs": 7040
+        },
+        {
+          "palabra": "atrapándolo",
+          "inicioMs": 7040,
+          "finMs": 7140
+        },
+        {
+          "palabra": "en",
+          "inicioMs": 7140,
+          "finMs": 7220
+        },
+        {
+          "palabra": "la",
+          "inicioMs": 7220,
+          "finMs": 7520
+        },
+        {
+          "palabra": "copa",
+          "inicioMs": 7520,
+          "finMs": 7600
+        },
+        {
+          "palabra": "de",
+          "inicioMs": 7600,
+          "finMs": 7720
+        },
+        {
+          "palabra": "un",
+          "inicioMs": 7720,
+          "finMs": 7960
+        },
+        {
+          "palabra": "árbol",
+          "inicioMs": 7960,
+          "finMs": 8280
+        },
+        {
+          "palabra": "lleno",
+          "inicioMs": 8280,
+          "finMs": 8380
+        },
+        {
+          "palabra": "de",
+          "inicioMs": 8380,
+          "finMs": 8720
+        },
+        {
+          "palabra": "cruces",
+          "inicioMs": 8720,
+          "finMs": 9280
+        },
+        {
+          "palabra": "talladas",
+          "inicioMs": 9280,
+          "finMs": 9504
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "texto": "El pacto fue simple: el Diablo prometió jamás reclamar su alma. Pero cuando Jack murió, las puertas del cielo se cerraron con candado... y el infierno tampoco lo dejó entrar por sus trampas.",
+      "icono": "Lock",
+      "colorIcono": "#EAB308",
+      "tituloVisual": "RECHAZADO EN EL LIMBO",
+      "composicionVisual": "plano_general",
+      "escenario": "umbral_cielo_infierno",
+      "layout": "narrativo",
+      "transicion": "zoom_in",
+      "efectosCamara": [
+        "punch",
+        "drift"
+      ],
+      "sfx": "sfx/sfx_impact.wav",
+      "volumenSfx": 0.25,
+      "personajes": [
+        {
+          "id": "jack_alma",
+          "nombre": "Alma de Jack",
+          "posicion": {
+            "x": -180,
+            "y": 50
+          },
+          "escala": 1,
+          "orientacion": "derecha",
+          "poseId": "backing_away_scared",
+          "expresion": "worried",
+          "espectral": true,
+          "opacidad": 0.85,
+          "habla": true
+        }
+      ],
+      "objetos": [
+        {
+          "id": "puertas_cielo_infierno",
+          "propId": "cielo_infierno_puertas",
+          "posicion": {
+            "x": 170,
+            "y": 0
+          },
+          "escala": 1.6,
+          "animacion": {
+            "tipo": "pulso"
+          }
+        }
+      ],
+      "palabrasClave": [
+        "jamás reclamar su alma",
+        "puertas del cielo",
+        "candado",
+        "tampoco lo dejó entrar"
+      ],
+      "duracionSegundos": 9.61,
+      "palabras": [
+        {
+          "palabra": "El",
+          "inicioMs": 0,
+          "finMs": 180
+        },
+        {
+          "palabra": "pacto",
+          "inicioMs": 180,
+          "finMs": 540
+        },
+        {
+          "palabra": "fue",
+          "inicioMs": 540,
+          "finMs": 660
+        },
+        {
+          "palabra": "simple",
+          "inicioMs": 660,
+          "finMs": 1040
+        },
+        {
+          "palabra": "el",
+          "inicioMs": 1240,
+          "finMs": 1360
+        },
+        {
+          "palabra": "Diablo",
+          "inicioMs": 1360,
+          "finMs": 1580
+        },
+        {
+          "palabra": "prometió",
+          "inicioMs": 1580,
+          "finMs": 2020
+        },
+        {
+          "palabra": "jamás",
+          "inicioMs": 2020,
+          "finMs": 2320
+        },
+        {
+          "palabra": "reclamar",
+          "inicioMs": 2320,
+          "finMs": 2740
+        },
+        {
+          "palabra": "su",
+          "inicioMs": 2740,
+          "finMs": 2880
+        },
+        {
+          "palabra": "alma",
+          "inicioMs": 2880,
+          "finMs": 3160
+        },
+        {
+          "palabra": "Pero",
+          "inicioMs": 3400,
+          "finMs": 3520
+        },
+        {
+          "palabra": "cuando",
+          "inicioMs": 3520,
+          "finMs": 3740
+        },
+        {
+          "palabra": "Jack",
+          "inicioMs": 3740,
+          "finMs": 3940
+        },
+        {
+          "palabra": "murió",
+          "inicioMs": 3940,
+          "finMs": 4320
+        },
+        {
+          "palabra": "las",
+          "inicioMs": 4440,
+          "finMs": 4520
+        },
+        {
+          "palabra": "puertas",
+          "inicioMs": 4520,
+          "finMs": 4820
+        },
+        {
+          "palabra": "del",
+          "inicioMs": 4820,
+          "finMs": 4980
+        },
+        {
+          "palabra": "cielo",
+          "inicioMs": 4980,
+          "finMs": 5220
+        },
+        {
+          "palabra": "se",
+          "inicioMs": 5220,
+          "finMs": 5380
+        },
+        {
+          "palabra": "cerraron",
+          "inicioMs": 5380,
+          "finMs": 5740
+        },
+        {
+          "palabra": "con",
+          "inicioMs": 5740,
+          "finMs": 5860
+        },
+        {
+          "palabra": "candado",
+          "inicioMs": 5860,
+          "finMs": 6360
+        },
+        {
+          "palabra": "y",
+          "inicioMs": 6580,
+          "finMs": 6660
+        },
+        {
+          "palabra": "el",
+          "inicioMs": 6660,
+          "finMs": 6780
+        },
+        {
+          "palabra": "infierno",
+          "inicioMs": 6780,
+          "finMs": 7140
+        },
+        {
+          "palabra": "tampoco",
+          "inicioMs": 7140,
+          "finMs": 7540
+        },
+        {
+          "palabra": "lo",
+          "inicioMs": 7540,
+          "finMs": 7780
+        },
+        {
+          "palabra": "dejó",
+          "inicioMs": 7780,
+          "finMs": 8020
+        },
+        {
+          "palabra": "entrar",
+          "inicioMs": 8020,
+          "finMs": 8280
+        },
+        {
+          "palabra": "por",
+          "inicioMs": 8280,
+          "finMs": 8480
+        },
+        {
+          "palabra": "sus",
+          "inicioMs": 8480,
+          "finMs": 8640
+        },
+        {
+          "palabra": "trampas",
+          "inicioMs": 8640,
+          "finMs": 9140
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "texto": "Condenado a vagar en la penumbra eterna entre ambos mundos, el Diablo le arrojó con desprecio una brasa viva del infierno: un carbón incandescente tan ardiente que le quemaba las manos al sostenerlo.",
+      "icono": "Sparkles",
+      "colorIcono": "#EA580C",
+      "tituloVisual": "BRASA DEL AVERNO",
+      "composicionVisual": "primer_plano",
+      "escenario": "paramo_celta_niebla",
+      "layout": "narrativo",
+      "transicion": "zoom_in",
+      "efectosCamara": [
+        "shake"
+      ],
+      "sfx": "sfx/sfx_tension_riser.wav",
+      "volumenSfx": 0.24,
+      "personajes": [
+        {
+          "id": "jack",
+          "nombre": "Stingy Jack",
+          "posicion": {
+            "x": -180,
+            "y": 60
+          },
+          "escala": 1.05,
+          "orientacion": "derecha",
+          "poseId": "surprised_hands_up",
+          "expresion": "shocked",
+          "habla": true
+        }
+      ],
+      "objetos": [
+        {
+          "id": "carbon_brasa",
+          "propId": "carbon_infierno_malabares",
+          "posicion": {
+            "x": 160,
+            "y": -20
+          },
+          "escala": 1.6,
+          "animacion": {
+            "tipo": "vibrar"
+          }
+        }
+      ],
+      "palabrasClave": [
+        "oscuridad eterna",
+        "brasa viva",
+        "carbón incandescente",
+        "quemaba las manos"
+      ],
+      "duracionSegundos": 10.21,
+      "palabras": [
+        {
+          "palabra": "Condenado",
+          "inicioMs": 0,
+          "finMs": 600
+        },
+        {
+          "palabra": "a",
+          "inicioMs": 600,
+          "finMs": 700
+        },
+        {
+          "palabra": "vagar",
+          "inicioMs": 700,
+          "finMs": 980
+        },
+        {
+          "palabra": "en",
+          "inicioMs": 980,
+          "finMs": 1060
+        },
+        {
+          "palabra": "la",
+          "inicioMs": 1060,
+          "finMs": 1160
+        },
+        {
+          "palabra": "penumbra",
+          "inicioMs": 1160,
+          "finMs": 1620
+        },
+        {
+          "palabra": "eterna",
+          "inicioMs": 1620,
+          "finMs": 2000
+        },
+        {
+          "palabra": "entre",
+          "inicioMs": 2000,
+          "finMs": 2200
+        },
+        {
+          "palabra": "ambos",
+          "inicioMs": 2200,
+          "finMs": 2420
+        },
+        {
+          "palabra": "mundos",
+          "inicioMs": 2420,
+          "finMs": 2960
+        },
+        {
+          "palabra": "el",
+          "inicioMs": 3040,
+          "finMs": 3160
+        },
+        {
+          "palabra": "Diablo",
+          "inicioMs": 3160,
+          "finMs": 3460
+        },
+        {
+          "palabra": "le",
+          "inicioMs": 3460,
+          "finMs": 3620
+        },
+        {
+          "palabra": "arrojó",
+          "inicioMs": 3620,
+          "finMs": 3960
+        },
+        {
+          "palabra": "con",
+          "inicioMs": 3960,
+          "finMs": 4100
+        },
+        {
+          "palabra": "desprecio",
+          "inicioMs": 4100,
+          "finMs": 4640
+        },
+        {
+          "palabra": "una",
+          "inicioMs": 4640,
+          "finMs": 4740
+        },
+        {
+          "palabra": "brasa",
+          "inicioMs": 4740,
+          "finMs": 5040
+        },
+        {
+          "palabra": "viva",
+          "inicioMs": 5040,
+          "finMs": 5300
+        },
+        {
+          "palabra": "del",
+          "inicioMs": 5300,
+          "finMs": 5420
+        },
+        {
+          "palabra": "infierno",
+          "inicioMs": 5420,
+          "finMs": 5980
+        },
+        {
+          "palabra": "un",
+          "inicioMs": 6200,
+          "finMs": 6320
+        },
+        {
+          "palabra": "carbón",
+          "inicioMs": 6320,
+          "finMs": 6660
+        },
+        {
+          "palabra": "incandescente",
+          "inicioMs": 6660,
+          "finMs": 7340
+        },
+        {
+          "palabra": "tan",
+          "inicioMs": 7340,
+          "finMs": 7540
+        },
+        {
+          "palabra": "ardiente",
+          "inicioMs": 7540,
+          "finMs": 7940
+        },
+        {
+          "palabra": "que",
+          "inicioMs": 7940,
+          "finMs": 8120
+        },
+        {
+          "palabra": "le",
+          "inicioMs": 8120,
+          "finMs": 8220
+        },
+        {
+          "palabra": "quemaba",
+          "inicioMs": 8220,
+          "finMs": 8540
+        },
+        {
+          "palabra": "las",
+          "inicioMs": 8540,
+          "finMs": 8720
+        },
+        {
+          "palabra": "manos",
+          "inicioMs": 8720,
+          "finMs": 8920
+        },
+        {
+          "palabra": "al",
+          "inicioMs": 8920,
+          "finMs": 9140
+        },
+        {
+          "palabra": "sostenerlo",
+          "inicioMs": 9140,
+          "finMs": 9740
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "texto": "Para no quemarse los dedos, Jack ahuecó un nabo silvestre, le talló una cara tosca y metió el carbón dentro, naciendo así la tétrica leyenda de Jack de la Linterna.",
+      "icono": "Flashlight",
+      "colorIcono": "#FACC15",
+      "tituloVisual": "JACK DE LA LINTERNA",
+      "composicionVisual": "escenario_ilustrado",
+      "escenario": "paramo_celta_niebla",
+      "layout": "narrativo",
+      "transicion": "whip_right",
+      "efectosCamara": [
+        "drift"
+      ],
+      "sfx": "sfx/pop.mp3",
+      "volumenSfx": 0.25,
+      "personajes": [
+        {
+          "id": "jack",
+          "nombre": "Jack de la Linterna",
+          "posicion": {
+            "x": -200,
+            "y": 60
+          },
+          "escala": 1,
+          "orientacion": "derecha",
+          "prop": "flashlight",
+          "habla": true,
+          "acciones": [
+            {
+              "tipo": "caminar_hacia",
+              "desdeX": -240,
+              "haciaX": -80,
+              "desdeY": 60,
+              "haciaY": 60
+            }
+          ]
+        }
+      ],
+      "objetos": [
+        {
+          "id": "linterna_nabo",
+          "propId": "nabo_linterna_jack",
+          "posicion": {
+            "x": 160,
+            "y": -20
+          },
+          "escala": 1.6,
+          "animacion": {
+            "tipo": "flotar"
+          }
+        }
+      ],
+      "palabrasClave": [
+        "ahuecó un nabo",
+        "cara tosca",
+        "carbón dentro",
+        "Jack de la Linterna"
+      ],
+      "duracionSegundos": 8.53,
+      "palabras": [
+        {
+          "palabra": "Para",
+          "inicioMs": 0,
+          "finMs": 160
+        },
+        {
+          "palabra": "no",
+          "inicioMs": 160,
+          "finMs": 300
+        },
+        {
+          "palabra": "quemarse",
+          "inicioMs": 300,
+          "finMs": 660
+        },
+        {
+          "palabra": "los",
+          "inicioMs": 660,
+          "finMs": 840
+        },
+        {
+          "palabra": "dedos",
+          "inicioMs": 840,
+          "finMs": 1260
+        },
+        {
+          "palabra": "Jack",
+          "inicioMs": 1320,
+          "finMs": 1480
+        },
+        {
+          "palabra": "ahuecó",
+          "inicioMs": 1480,
+          "finMs": 1940
+        },
+        {
+          "palabra": "un",
+          "inicioMs": 1940,
+          "finMs": 2100
+        },
+        {
+          "palabra": "nabo",
+          "inicioMs": 2100,
+          "finMs": 2300
+        },
+        {
+          "palabra": "silvestre",
+          "inicioMs": 2300,
+          "finMs": 2880
+        },
+        {
+          "palabra": "le",
+          "inicioMs": 3020,
+          "finMs": 3360
+        },
+        {
+          "palabra": "talló",
+          "inicioMs": 3360,
+          "finMs": 3500
+        },
+        {
+          "palabra": "una",
+          "inicioMs": 3500,
+          "finMs": 4080
+        },
+        {
+          "palabra": "cara",
+          "inicioMs": 4080,
+          "finMs": 4240
+        },
+        {
+          "palabra": "tosca",
+          "inicioMs": 4240,
+          "finMs": 4480
+        },
+        {
+          "palabra": "y",
+          "inicioMs": 4480,
+          "finMs": 4560
+        },
+        {
+          "palabra": "metió",
+          "inicioMs": 4560,
+          "finMs": 4860
+        },
+        {
+          "palabra": "el",
+          "inicioMs": 4860,
+          "finMs": 5200
+        },
+        {
+          "palabra": "carbón",
+          "inicioMs": 5340,
+          "finMs": 5720
+        },
+        {
+          "palabra": "dentro",
+          "inicioMs": 5720,
+          "finMs": 5900
+        },
+        {
+          "palabra": "naciendo",
+          "inicioMs": 5900,
+          "finMs": 6040
+        },
+        {
+          "palabra": "así",
+          "inicioMs": 6040,
+          "finMs": 6480
+        },
+        {
+          "palabra": "la",
+          "inicioMs": 6480,
+          "finMs": 6900
+        },
+        {
+          "palabra": "tétrica",
+          "inicioMs": 6900,
+          "finMs": 7060
+        },
+        {
+          "palabra": "leyenda",
+          "inicioMs": 7060,
+          "finMs": 7260
+        },
+        {
+          "palabra": "de",
+          "inicioMs": 7260,
+          "finMs": 7440
+        },
+        {
+          "palabra": "Jack",
+          "inicioMs": 7440,
+          "finMs": 7540
+        },
+        {
+          "palabra": "de",
+          "inicioMs": 7540,
+          "finMs": 8080
+        },
+        {
+          "palabra": "la",
+          "inicioMs": 8080,
+          "finMs": 8180
+        },
+        {
+          "palabra": "Linterna",
+          "inicioMs": 8080,
+          "finMs": 8180
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "texto": "Desde entonces, en el festival celta de Samhain, los campesinos irlandeses tallaban estos nabos monstruosos en sus ventanas para asustar y espantar al alma en pena de Jack lejos de sus hogares.",
+      "icono": "ShieldAlert",
+      "colorIcono": "#10B981",
+      "tituloVisual": "PROTECCIÓN EN SAMHAIN",
+      "composicionVisual": "plano_general",
+      "escenario": "paramo_celta_niebla",
+      "layout": "narrativo",
+      "transicion": "whip_left",
+      "efectosCamara": [
+        "punch",
+        "drift"
+      ],
+      "sfx": "sfx/sfx_whoosh.wav",
+      "volumenSfx": 0.22,
+      "personajes": [
+        {
+          "id": "campesino",
+          "nombre": "Narrador",
+          "posicion": {
+            "x": -220,
+            "y": 60
+          },
+          "escala": 1,
+          "orientacion": "derecha",
+          "poseId": "explaining_both_hands",
+          "expresion": "talking",
+          "habla": true,
+          "capaZ": 12
+        },
+        {
+          "id": "jack_fantasma",
+          "nombre": "Espíritu de Jack",
+          "posicion": {
+            "x": 220,
+            "y": 40
+          },
+          "escala": 0.95,
+          "orientacion": "izquierda",
+          "poseId": "backing_away_scared",
+          "expresion": "scared",
+          "espectral": true,
+          "opacidad": 0.85,
+          "habla": false,
+          "capaZ": 15,
+          "acciones": [
+            {
+              "tipo": "caminar_hacia",
+              "desdeX": 160,
+              "haciaX": 250,
+              "desdeY": 40,
+              "haciaY": 20
+            }
+          ]
+        }
+      ],
+      "objetos": [
+        {
+          "id": "nabos_cabana",
+          "propId": "cabana_nabos_proteccion",
+          "posicion": {
+            "x": 20,
+            "y": -30
+          },
+          "escala": 1.5,
+          "animacion": {
+            "tipo": "pulso"
+          }
+        }
+      ],
+      "palabrasClave": [
+        "festival celta de Samhain",
+        "nabos monstruosos",
+        "ventanas",
+        "alma en pena"
+      ],
+      "duracionSegundos": 9.994,
+      "palabras": [
+        {
+          "palabra": "Desde",
+          "inicioMs": 0,
+          "finMs": 280
+        },
+        {
+          "palabra": "entonces",
+          "inicioMs": 280,
+          "finMs": 780
+        },
+        {
+          "palabra": "en",
+          "inicioMs": 1040,
+          "finMs": 1140
+        },
+        {
+          "palabra": "el",
+          "inicioMs": 1140,
+          "finMs": 1240
+        },
+        {
+          "palabra": "festival",
+          "inicioMs": 1240,
+          "finMs": 1620
+        },
+        {
+          "palabra": "celta",
+          "inicioMs": 1620,
+          "finMs": 2120
+        },
+        {
+          "palabra": "de",
+          "inicioMs": 2120,
+          "finMs": 2240
+        },
+        {
+          "palabra": "Samhain",
+          "inicioMs": 2240,
+          "finMs": 2760
+        },
+        {
+          "palabra": "los",
+          "inicioMs": 2920,
+          "finMs": 3020
+        },
+        {
+          "palabra": "campesinos",
+          "inicioMs": 3020,
+          "finMs": 3540
+        },
+        {
+          "palabra": "irlandeses",
+          "inicioMs": 3540,
+          "finMs": 4120
+        },
+        {
+          "palabra": "tallaban",
+          "inicioMs": 4120,
+          "finMs": 4520
+        },
+        {
+          "palabra": "estos",
+          "inicioMs": 4520,
+          "finMs": 4760
+        },
+        {
+          "palabra": "nabos",
+          "inicioMs": 4760,
+          "finMs": 5100
+        },
+        {
+          "palabra": "monstruosos",
+          "inicioMs": 5100,
+          "finMs": 5620
+        },
+        {
+          "palabra": "en",
+          "inicioMs": 5620,
+          "finMs": 5760
+        },
+        {
+          "palabra": "sus",
+          "inicioMs": 5760,
+          "finMs": 5900
+        },
+        {
+          "palabra": "ventanas",
+          "inicioMs": 5900,
+          "finMs": 6320
+        },
+        {
+          "palabra": "para",
+          "inicioMs": 6320,
+          "finMs": 6500
+        },
+        {
+          "palabra": "asustar",
+          "inicioMs": 6500,
+          "finMs": 6940
+        },
+        {
+          "palabra": "y",
+          "inicioMs": 6940,
+          "finMs": 7120
+        },
+        {
+          "palabra": "espantar",
+          "inicioMs": 7120,
+          "finMs": 7540
+        },
+        {
+          "palabra": "al",
+          "inicioMs": 7540,
+          "finMs": 7660
+        },
+        {
+          "palabra": "alma",
+          "inicioMs": 7660,
+          "finMs": 7860
+        },
+        {
+          "palabra": "en",
+          "inicioMs": 7860,
+          "finMs": 7980
+        },
+        {
+          "palabra": "pena",
+          "inicioMs": 7980,
+          "finMs": 8160
+        },
+        {
+          "palabra": "de",
+          "inicioMs": 8160,
+          "finMs": 8320
+        },
+        {
+          "palabra": "Jack",
+          "inicioMs": 8320,
+          "finMs": 8540
+        },
+        {
+          "palabra": "lejos",
+          "inicioMs": 8540,
+          "finMs": 8920
+        },
+        {
+          "palabra": "de",
+          "inicioMs": 8920,
+          "finMs": 9040
+        },
+        {
+          "palabra": "sus",
+          "inicioMs": 9040,
+          "finMs": 9180
+        },
+        {
+          "palabra": "hogares",
+          "inicioMs": 9180,
+          "finMs": 9520
+        }
+      ]
+    },
+    {
+      "id": 7,
+      "texto": "Pero al migrar a América en el siglo diecinueve, los irlandeses descubrieron que las calabazas locales eran enormes, suaves para tallar y no apestaban a tubérculo podrido, transformando el monstruo en una tradición festiva.",
+      "icono": "Smile",
+      "colorIcono": "#EA580C",
+      "tituloVisual": "DE NABO A CALABAZA",
+      "composicionVisual": "plano_general",
+      "escenario": "ofrenda_dia_muertos",
+      "layout": "narrativo",
+      "transicion": "zoom_in",
+      "efectosCamara": [
+        "punch",
+        "drift"
+      ],
+      "sfx": "sfx/sfx_dramatic_hit.wav",
+      "volumenSfx": 0.25,
+      "personajes": [
+        {
+          "id": "protagonista",
+          "nombre": "Stickman Moderno",
+          "posicion": {
+            "x": -170,
+            "y": 60
+          },
+          "escala": 1,
+          "orientacion": "derecha",
+          "poseId": "thumbs_up_approval",
+          "expresion": "smile_wide",
+          "habla": true
+        }
+      ],
+      "objetos": [
+        {
+          "id": "comparacion_nabo_calabaza",
+          "propId": "nabo_duro_vs_calabaza",
+          "posicion": {
+            "x": 170,
+            "y": 20
+          },
+          "escala": 1.6,
+          "animacion": {
+            "tipo": "pulso"
+          }
+        }
+      ],
+      "palabrasClave": [
+        "migrar a América",
+        "siglo diecinueve",
+        "calabazas locales",
+        "tubérculo podrido",
+        "tradición festiva"
+      ],
+      "duracionSegundos": 10.378,
+      "palabras": [
+        {
+          "palabra": "Pero",
+          "inicioMs": 0,
+          "finMs": 240
+        },
+        {
+          "palabra": "al",
+          "inicioMs": 240,
+          "finMs": 320
+        },
+        {
+          "palabra": "migrar",
+          "inicioMs": 320,
+          "finMs": 560
+        },
+        {
+          "palabra": "a",
+          "inicioMs": 560,
+          "finMs": 680
+        },
+        {
+          "palabra": "América",
+          "inicioMs": 680,
+          "finMs": 880
+        },
+        {
+          "palabra": "en",
+          "inicioMs": 880,
+          "finMs": 1120
+        },
+        {
+          "palabra": "el",
+          "inicioMs": 1120,
+          "finMs": 1220
+        },
+        {
+          "palabra": "siglo",
+          "inicioMs": 1220,
+          "finMs": 1340
+        },
+        {
+          "palabra": "diecinueve",
+          "inicioMs": 1340,
+          "finMs": 1840
+        },
+        {
+          "palabra": "los",
+          "inicioMs": 1840,
+          "finMs": 2040
+        },
+        {
+          "palabra": "irlandeses",
+          "inicioMs": 2040,
+          "finMs": 2520
+        },
+        {
+          "palabra": "descubrieron",
+          "inicioMs": 2520,
+          "finMs": 3060
+        },
+        {
+          "palabra": "que",
+          "inicioMs": 3060,
+          "finMs": 3180
+        },
+        {
+          "palabra": "las",
+          "inicioMs": 3180,
+          "finMs": 3280
+        },
+        {
+          "palabra": "calabazas",
+          "inicioMs": 3280,
+          "finMs": 3740
+        },
+        {
+          "palabra": "locales",
+          "inicioMs": 3740,
+          "finMs": 4220
+        },
+        {
+          "palabra": "eran",
+          "inicioMs": 4220,
+          "finMs": 4380
+        },
+        {
+          "palabra": "enormes",
+          "inicioMs": 4380,
+          "finMs": 4940
+        },
+        {
+          "palabra": "suaves",
+          "inicioMs": 5140,
+          "finMs": 5380
+        },
+        {
+          "palabra": "para",
+          "inicioMs": 5380,
+          "finMs": 5560
+        },
+        {
+          "palabra": "tallar",
+          "inicioMs": 5560,
+          "finMs": 6020
+        },
+        {
+          "palabra": "y",
+          "inicioMs": 6020,
+          "finMs": 6160
+        },
+        {
+          "palabra": "no",
+          "inicioMs": 6160,
+          "finMs": 6280
+        },
+        {
+          "palabra": "apestaban",
+          "inicioMs": 6280,
+          "finMs": 6680
+        },
+        {
+          "palabra": "a",
+          "inicioMs": 6680,
+          "finMs": 6800
+        },
+        {
+          "palabra": "tubérculo",
+          "inicioMs": 6800,
+          "finMs": 7020
+        },
+        {
+          "palabra": "podrido",
+          "inicioMs": 7020,
+          "finMs": 7660
+        },
+        {
+          "palabra": "transformando",
+          "inicioMs": 7740,
+          "finMs": 8320
+        },
+        {
+          "palabra": "el",
+          "inicioMs": 8320,
+          "finMs": 8420
+        },
+        {
+          "palabra": "monstruo",
+          "inicioMs": 8420,
+          "finMs": 8820
+        },
+        {
+          "palabra": "en",
+          "inicioMs": 8820,
+          "finMs": 8900
+        },
+        {
+          "palabra": "una",
+          "inicioMs": 8900,
+          "finMs": 9040
+        },
+        {
+          "palabra": "tradición",
+          "inicioMs": 9040,
+          "finMs": 9440
+        },
+        {
+          "palabra": "festiva",
+          "inicioMs": 9440,
+          "finMs": 9900
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,1872 @@
+{
+  "meta": {
+    "id": "vortice_muerte_hormigas_legionarias",
+    "slug": "vortice_muerte_hormigas_legionarias",
+    "temaResumen": "La paradoja de las hormigas suicidas (El vórtice de la muerte)",
+    "duracionObjetivo": [
+      62,
+      78
+    ],
+    "titulo": "La paradoja de las hormigas suicidas: El vórtice de la muerte",
+    "titulo_corto": "El vórtice de las hormigas",
+    "gancho": "¿Por qué miles de hormigas entran de pronto en un espiral perfecto... y caminan en círculos sin detenerse jamás hasta morir exhaustas por el agotamiento?",
+    "fuentes": [
+      "William Beebe (1921) - Edge of the Jungle: Observations on Circular Ant Mills",
+      "Couzin & Franks (2003) - Self-organized lane formation and circular mills in army ants",
+      "Schneirla (1944) - The reproductive cycle of the army ant and circular milling"
+    ],
+    "genero": "Ciencia y Entomología",
+    "playlist": "Comportamientos Animales Asombrosos"
+  },
+  "escenas": [
+    {
+      "id": 1,
+      "texto": "¿Por qué miles de hormigas entran de pronto en un espiral perfecto... y caminan en círculos sin detenerse jamás hasta morir exhaustas por el agotamiento absoluto? ¡La naturaleza esconde trampas aterradoras!",
+      "icono": "RefreshCw",
+      "colorIcono": "#EF4444",
+      "tituloVisual": "VÓRTICE MORTAL",
+      "composicionVisual": "plano_general",
+      "escenario": "selva_ant_mill_cenital",
+      "layout": "narrativo",
+      "transicion": "zoom_in",
+      "efectosCamara": [
+        "punch",
+        "drift"
+      ],
+      "sfx": "sfx/sfx_enjambre_patitas_suspenso.wav",
+      "volumenSfx": 0.25,
+      "palabrasClave": [
+        "MILES DE HORMIGAS",
+        "ESPIRAL PERFECTO",
+        "CAMINAN EN CÍRCULOS",
+        "HASTA MORIR",
+        "AGOTAMIENTO ABSOLUTO"
+      ],
+      "personajes": [
+        {
+          "id": "stickman",
+          "nombre": "Explorador",
+          "posicion": {
+            "x": -220,
+            "y": 60
+          },
+          "escala": 1.0,
+          "orientacion": "derecha",
+          "habla": true,
+          "capaZ": 15,
+          "acciones": [
+            {
+              "tipo": "personalizada",
+              "pasos": [
+                {
+                  "inicioProgreso": 0,
+                  "finProgreso": 0.35,
+                  "poseId": "covering_eyes",
+                  "expresion": "confused",
+                  "posicion": {
+                    "x": -220,
+                    "y": 60
+                  },
+                  "curva": "suave",
+                  "procedural": "temblar"
+                },
+                {
+                  "inicioProgreso": 0.35,
+                  "finProgreso": 0.7,
+                  "poseId": "leaning_forward",
+                  "expresion": "surprised",
+                  "posicion": {
+                    "x": -180,
+                    "y": 60
+                  },
+                  "curva": "suave",
+                  "procedural": "estatico"
+                },
+                {
+                  "inicioProgreso": 0.7,
+                  "finProgreso": 1.0,
+                  "poseId": "surprised_hands_up",
+                  "expresion": "shocked",
+                  "posicion": {
+                    "x": -170,
+                    "y": 60
+                  },
+                  "curva": "suave",
+                  "procedural": "estatico"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "objetos": [
+        {
+          "id": "ant_mill_centro",
+          "propId": "vortice_ant_mill_anillo",
+          "posicion": {
+            "x": 180,
+            "y": 60
+          },
+          "escala": 1.45,
+          "animacion": {
+            "tipo": "vibrar"
+          }
+        }
+      ],
+      "duracionSegundos": 11.458,
+      "palabras": [
+        {
+          "palabra": "Por",
+          "inicioMs": 0,
+          "finMs": 200
+        },
+        {
+          "palabra": "qué",
+          "inicioMs": 200,
+          "finMs": 380
+        },
+        {
+          "palabra": "miles",
+          "inicioMs": 380,
+          "finMs": 640
+        },
+        {
+          "palabra": "de",
+          "inicioMs": 640,
+          "finMs": 800
+        },
+        {
+          "palabra": "hormigas",
+          "inicioMs": 800,
+          "finMs": 1140
+        },
+        {
+          "palabra": "entran",
+          "inicioMs": 1140,
+          "finMs": 1420
+        },
+        {
+          "palabra": "de",
+          "inicioMs": 1420,
+          "finMs": 1600
+        },
+        {
+          "palabra": "pronto",
+          "inicioMs": 1600,
+          "finMs": 1780
+        },
+        {
+          "palabra": "en",
+          "inicioMs": 1780,
+          "finMs": 1980
+        },
+        {
+          "palabra": "un",
+          "inicioMs": 1980,
+          "finMs": 2080
+        },
+        {
+          "palabra": "espiral",
+          "inicioMs": 2080,
+          "finMs": 2420
+        },
+        {
+          "palabra": "perfecto",
+          "inicioMs": 2420,
+          "finMs": 3040
+        },
+        {
+          "palabra": "y",
+          "inicioMs": 3180,
+          "finMs": 3260
+        },
+        {
+          "palabra": "caminan",
+          "inicioMs": 3260,
+          "finMs": 3700
+        },
+        {
+          "palabra": "en",
+          "inicioMs": 3700,
+          "finMs": 3880
+        },
+        {
+          "palabra": "círculos",
+          "inicioMs": 3880,
+          "finMs": 4240
+        },
+        {
+          "palabra": "sin",
+          "inicioMs": 4380,
+          "finMs": 4520
+        },
+        {
+          "palabra": "detenerse",
+          "inicioMs": 4520,
+          "finMs": 5040
+        },
+        {
+          "palabra": "jamás",
+          "inicioMs": 5040,
+          "finMs": 5360
+        },
+        {
+          "palabra": "hasta",
+          "inicioMs": 5360,
+          "finMs": 5680
+        },
+        {
+          "palabra": "morir",
+          "inicioMs": 5680,
+          "finMs": 6020
+        },
+        {
+          "palabra": "exhaustas",
+          "inicioMs": 6020,
+          "finMs": 6760
+        },
+        {
+          "palabra": "por",
+          "inicioMs": 6760,
+          "finMs": 6960
+        },
+        {
+          "palabra": "el",
+          "inicioMs": 6960,
+          "finMs": 7080
+        },
+        {
+          "palabra": "agotamiento",
+          "inicioMs": 7080,
+          "finMs": 7480
+        },
+        {
+          "palabra": "absoluto",
+          "inicioMs": 7480,
+          "finMs": 8240
+        },
+        {
+          "palabra": "La",
+          "inicioMs": 8860,
+          "finMs": 9040
+        },
+        {
+          "palabra": "naturaleza",
+          "inicioMs": 9040,
+          "finMs": 9580
+        },
+        {
+          "palabra": "esconde",
+          "inicioMs": 9580,
+          "finMs": 9780
+        },
+        {
+          "palabra": "trampas",
+          "inicioMs": 9780,
+          "finMs": 10260
+        },
+        {
+          "palabra": "aterradoras",
+          "inicioMs": 10260,
+          "finMs": 10980
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "texto": "Se conoce como el molino de la muerte, un fenómeno biológico tan aterrador como fascinante que atrapa a las temibles hormigas legionarias. Si intentas bloquearles el paso con una rama... ¡simplemente la trepan sin frenar!",
+      "icono": "AlertTriangle",
+      "colorIcono": "#F59E0B",
+      "tituloVisual": "MOLINO DE LA MUERTE",
+      "composicionVisual": "plano_general",
+      "escenario": "selva_suelo_macro_fila",
+      "layout": "narrativo",
+      "transicion": "whip_right",
+      "efectosCamara": [
+        "punch",
+        "drift"
+      ],
+      "sfx": "sfx/sfx_patitas_motor_quejido.wav",
+      "volumenSfx": 0.25,
+      "palabrasClave": [
+        "MOLINO DE LA MUERTE",
+        "FENÓMENO BIOLÓGICO",
+        "HORMIGAS LEGIONARIAS",
+        "BLOQUEARLES EL PASO",
+        "LA TREPAN SIN FRENAR"
+      ],
+      "personajes": [
+        {
+          "id": "stickman",
+          "nombre": "Explorador",
+          "posicion": {
+            "x": -220,
+            "y": 60
+          },
+          "escala": 1.0,
+          "orientacion": "derecha",
+          "habla": true,
+          "capaZ": 15,
+          "acciones": [
+            {
+              "tipo": "personalizada",
+              "pasos": [
+                {
+                  "inicioProgreso": 0,
+                  "finProgreso": 0.4,
+                  "poseId": "kneeling",
+                  "expresion": "talking",
+                  "posicion": {
+                    "x": -180,
+                    "y": 70
+                  },
+                  "prop": "ramita_bloqueo_hormigas",
+                  "curva": "suave",
+                  "procedural": "estatico"
+                },
+                {
+                  "inicioProgreso": 0.4,
+                  "finProgreso": 0.75,
+                  "poseId": "frustrated_head_grab",
+                  "expresion": "frustrated",
+                  "posicion": {
+                    "x": -200,
+                    "y": 60
+                  },
+                  "curva": "suave",
+                  "procedural": "temblar"
+                },
+                {
+                  "inicioProgreso": 0.75,
+                  "finProgreso": 1.0,
+                  "poseId": "shrugging",
+                  "expresion": "confused",
+                  "posicion": {
+                    "x": -200,
+                    "y": 60
+                  },
+                  "curva": "suave",
+                  "procedural": "estatico"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "objetos": [
+        {
+          "id": "rama_hormigas",
+          "propId": "ramita_bloqueo_hormigas",
+          "posicion": {
+            "x": 160,
+            "y": 90
+          },
+          "escala": 1.4,
+          "animacion": {
+            "tipo": "flotar"
+          }
+        }
+      ],
+      "duracionSegundos": 11.146,
+      "palabras": [
+        {
+          "palabra": "Se",
+          "inicioMs": 0,
+          "finMs": 160
+        },
+        {
+          "palabra": "conoce",
+          "inicioMs": 160,
+          "finMs": 500
+        },
+        {
+          "palabra": "como",
+          "inicioMs": 500,
+          "finMs": 640
+        },
+        {
+          "palabra": "el",
+          "inicioMs": 640,
+          "finMs": 760
+        },
+        {
+          "palabra": "molino",
+          "inicioMs": 760,
+          "finMs": 1040
+        },
+        {
+          "palabra": "de",
+          "inicioMs": 1040,
+          "finMs": 1160
+        },
+        {
+          "palabra": "la",
+          "inicioMs": 1160,
+          "finMs": 1260
+        },
+        {
+          "palabra": "muerte",
+          "inicioMs": 1260,
+          "finMs": 1680
+        },
+        {
+          "palabra": "un",
+          "inicioMs": 1920,
+          "finMs": 2040
+        },
+        {
+          "palabra": "fenómeno",
+          "inicioMs": 2040,
+          "finMs": 2480
+        },
+        {
+          "palabra": "biológico",
+          "inicioMs": 2480,
+          "finMs": 3000
+        },
+        {
+          "palabra": "tan",
+          "inicioMs": 3000,
+          "finMs": 3240
+        },
+        {
+          "palabra": "aterrador",
+          "inicioMs": 3240,
+          "finMs": 3640
+        },
+        {
+          "palabra": "como",
+          "inicioMs": 3640,
+          "finMs": 3860
+        },
+        {
+          "palabra": "fascinante",
+          "inicioMs": 3860,
+          "finMs": 4440
+        },
+        {
+          "palabra": "que",
+          "inicioMs": 4440,
+          "finMs": 4580
+        },
+        {
+          "palabra": "atrapa",
+          "inicioMs": 4580,
+          "finMs": 4940
+        },
+        {
+          "palabra": "a",
+          "inicioMs": 4940,
+          "finMs": 5080
+        },
+        {
+          "palabra": "las",
+          "inicioMs": 5080,
+          "finMs": 5460
+        },
+        {
+          "palabra": "temibles",
+          "inicioMs": 5460,
+          "finMs": 5900
+        },
+        {
+          "palabra": "hormigas",
+          "inicioMs": 5900,
+          "finMs": 6460
+        },
+        {
+          "palabra": "legionarias",
+          "inicioMs": 6680,
+          "finMs": 6780
+        },
+        {
+          "palabra": "Si",
+          "inicioMs": 6780,
+          "finMs": 7260
+        },
+        {
+          "palabra": "intentas",
+          "inicioMs": 7260,
+          "finMs": 7760
+        },
+        {
+          "palabra": "bloquearles",
+          "inicioMs": 7760,
+          "finMs": 7900
+        },
+        {
+          "palabra": "el",
+          "inicioMs": 7900,
+          "finMs": 8080
+        },
+        {
+          "palabra": "paso",
+          "inicioMs": 8080,
+          "finMs": 8260
+        },
+        {
+          "palabra": "con",
+          "inicioMs": 8260,
+          "finMs": 8420
+        },
+        {
+          "palabra": "una",
+          "inicioMs": 8420,
+          "finMs": 8740
+        },
+        {
+          "palabra": "rama",
+          "inicioMs": 8860,
+          "finMs": 9300
+        },
+        {
+          "palabra": "simplemente",
+          "inicioMs": 9300,
+          "finMs": 9620
+        },
+        {
+          "palabra": "la",
+          "inicioMs": 9620,
+          "finMs": 9980
+        },
+        {
+          "palabra": "trepan",
+          "inicioMs": 9980,
+          "finMs": 10200
+        },
+        {
+          "palabra": "sin",
+          "inicioMs": 10200,
+          "finMs": 10660
+        },
+        {
+          "palabra": "frenar",
+          "inicioMs": 10660,
+          "finMs": 10896
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "texto": "Estas hormigas son casi completamente ciegas. No poseen ojos funcionales para ver el camino ni distinguir obstáculos: dependen al cien por ciento de una sola herramienta de navegación... sus antenas olfativas ultra sensibles.",
+      "icono": "EyeOff",
+      "colorIcono": "#38BDF8",
+      "tituloVisual": "CIEGAS TOTALES",
+      "composicionVisual": "plano_general",
+      "escenario": "macro_anatomia_cabeza_hormiga",
+      "layout": "narrativo",
+      "transicion": "whip_left",
+      "efectosCamara": [
+        "punch",
+        "drift"
+      ],
+      "sfx": "sfx/sfx_linterna_antena_campana.wav",
+      "volumenSfx": 0.25,
+      "palabrasClave": [
+        "COMPLETAMENTE CIEGAS",
+        "NO POSEEN OJOS",
+        "DISTINGUIR OBSTÁCULOS",
+        "AL CIEN POR CIENTO",
+        "ANTENAS OLFATIVAS"
+      ],
+      "personajes": [
+        {
+          "id": "stickman",
+          "nombre": "Explorador",
+          "posicion": {
+            "x": -210,
+            "y": 60
+          },
+          "escala": 1.0,
+          "orientacion": "derecha",
+          "habla": true,
+          "capaZ": 15,
+          "acciones": [
+            {
+              "tipo": "personalizada",
+              "pasos": [
+                {
+                  "inicioProgreso": 0,
+                  "finProgreso": 0.35,
+                  "poseId": "taking_notes",
+                  "expresion": "analytical",
+                  "posicion": {
+                    "x": -220,
+                    "y": 60
+                  },
+                  "prop": "lampara_tactica_explorador",
+                  "curva": "suave",
+                  "procedural": "estatico"
+                },
+                {
+                  "inicioProgreso": 0.35,
+                  "finProgreso": 0.7,
+                  "poseId": "investigating_magnifier",
+                  "expresion": "surprised",
+                  "posicion": {
+                    "x": -190,
+                    "y": 60
+                  },
+                  "prop": "lampara_tactica_explorador",
+                  "curva": "suave",
+                  "procedural": "estatico"
+                },
+                {
+                  "inicioProgreso": 0.7,
+                  "finProgreso": 1.0,
+                  "poseId": "pointing_up",
+                  "expresion": "eureka",
+                  "posicion": {
+                    "x": -190,
+                    "y": 60
+                  },
+                  "curva": "suave",
+                  "procedural": "estatico"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "objetos": [
+        {
+          "id": "cabeza_macro_hormiga",
+          "propId": "hormiga_legionaria_cabeza_macro",
+          "posicion": {
+            "x": 160,
+            "y": 40
+          },
+          "escala": 1.45,
+          "animacion": {
+            "tipo": "pulso"
+          }
+        }
+      ],
+      "duracionSegundos": 12.082,
+      "palabras": [
+        {
+          "palabra": "Estas",
+          "inicioMs": 0,
+          "finMs": 360
+        },
+        {
+          "palabra": "hormigas",
+          "inicioMs": 360,
+          "finMs": 820
+        },
+        {
+          "palabra": "son",
+          "inicioMs": 820,
+          "finMs": 920
+        },
+        {
+          "palabra": "casi",
+          "inicioMs": 920,
+          "finMs": 1220
+        },
+        {
+          "palabra": "completamente",
+          "inicioMs": 1220,
+          "finMs": 1700
+        },
+        {
+          "palabra": "ciegas",
+          "inicioMs": 1700,
+          "finMs": 2320
+        },
+        {
+          "palabra": "No",
+          "inicioMs": 2620,
+          "finMs": 2780
+        },
+        {
+          "palabra": "poseen",
+          "inicioMs": 2780,
+          "finMs": 3180
+        },
+        {
+          "palabra": "ojos",
+          "inicioMs": 3180,
+          "finMs": 3380
+        },
+        {
+          "palabra": "funcionales",
+          "inicioMs": 3380,
+          "finMs": 4020
+        },
+        {
+          "palabra": "para",
+          "inicioMs": 4020,
+          "finMs": 4160
+        },
+        {
+          "palabra": "ver",
+          "inicioMs": 4160,
+          "finMs": 4320
+        },
+        {
+          "palabra": "el",
+          "inicioMs": 4320,
+          "finMs": 4460
+        },
+        {
+          "palabra": "camino",
+          "inicioMs": 4460,
+          "finMs": 4700
+        },
+        {
+          "palabra": "ni",
+          "inicioMs": 4700,
+          "finMs": 4940
+        },
+        {
+          "palabra": "distinguir",
+          "inicioMs": 4940,
+          "finMs": 5460
+        },
+        {
+          "palabra": "obstáculos",
+          "inicioMs": 5460,
+          "finMs": 6020
+        },
+        {
+          "palabra": "dependen",
+          "inicioMs": 6240,
+          "finMs": 6620
+        },
+        {
+          "palabra": "al",
+          "inicioMs": 6620,
+          "finMs": 6740
+        },
+        {
+          "palabra": "cien",
+          "inicioMs": 6740,
+          "finMs": 6940
+        },
+        {
+          "palabra": "por",
+          "inicioMs": 6940,
+          "finMs": 7540
+        },
+        {
+          "palabra": "ciento",
+          "inicioMs": 7540,
+          "finMs": 7680
+        },
+        {
+          "palabra": "de",
+          "inicioMs": 7680,
+          "finMs": 7840
+        },
+        {
+          "palabra": "una",
+          "inicioMs": 7840,
+          "finMs": 8020
+        },
+        {
+          "palabra": "sola",
+          "inicioMs": 8020,
+          "finMs": 8560
+        },
+        {
+          "palabra": "herramienta",
+          "inicioMs": 8560,
+          "finMs": 8640
+        },
+        {
+          "palabra": "de",
+          "inicioMs": 8640,
+          "finMs": 9160
+        },
+        {
+          "palabra": "navegación",
+          "inicioMs": 9400,
+          "finMs": 9500
+        },
+        {
+          "palabra": "sus",
+          "inicioMs": 9500,
+          "finMs": 10000
+        },
+        {
+          "palabra": "antenas",
+          "inicioMs": 10000,
+          "finMs": 10520
+        },
+        {
+          "palabra": "olfativas",
+          "inicioMs": 10520,
+          "finMs": 11580
+        },
+        {
+          "palabra": "ultra",
+          "inicioMs": 11580,
+          "finMs": 11706
+        },
+        {
+          "palabra": "sensibles",
+          "inicioMs": 11580,
+          "finMs": 11706
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "texto": "Cada soldado sigue una regla biológica simple: avanza hacia adelante siguiendo ciegamente el rastro de feromonas de la compañera que tiene enfrente. En condiciones normales, es un algoritmo colectivo infalible y perfecto.",
+      "icono": "Compass",
+      "colorIcono": "#22C55E",
+      "tituloVisual": "ALGORITMO COLECTIVO",
+      "composicionVisual": "plano_general",
+      "escenario": "diagrama_quimico_feromonas",
+      "layout": "narrativo",
+      "transicion": "zoom_in",
+      "efectosCamara": [
+        "punch",
+        "drift"
+      ],
+      "sfx": "sfx/sfx_sniff_radar_feromona.wav",
+      "volumenSfx": 0.25,
+      "palabrasClave": [
+        "REGLA BIOLÓGICA",
+        "CIEGAMENTE",
+        "RASTRO DE FEROMONAS",
+        "COMPAÑERA DE ENFRENTE",
+        "ALGORITMO COLECTIVO"
+      ],
+      "personajes": [
+        {
+          "id": "stickman",
+          "nombre": "Explorador",
+          "posicion": {
+            "x": -220,
+            "y": 60
+          },
+          "escala": 1.0,
+          "orientacion": "derecha",
+          "habla": true,
+          "capaZ": 15,
+          "acciones": [
+            {
+              "tipo": "personalizada",
+              "pasos": [
+                {
+                  "inicioProgreso": 0,
+                  "finProgreso": 0.4,
+                  "poseId": "walking",
+                  "expresion": "talking",
+                  "posicion": {
+                    "x": -230,
+                    "y": 60
+                  },
+                  "deltaPosicion": {
+                    "x": 60,
+                    "y": 0
+                  },
+                  "curva": "suave",
+                  "procedural": "caminar"
+                },
+                {
+                  "inicioProgreso": 0.4,
+                  "finProgreso": 0.75,
+                  "poseId": "nodding_yes",
+                  "expresion": "talking_enthusiastic",
+                  "posicion": {
+                    "x": -170,
+                    "y": 60
+                  },
+                  "curva": "suave",
+                  "procedural": "estatico"
+                },
+                {
+                  "inicioProgreso": 0.75,
+                  "finProgreso": 1.0,
+                  "poseId": "thumbs_up_approval",
+                  "expresion": "smile_wide",
+                  "posicion": {
+                    "x": -170,
+                    "y": 60
+                  },
+                  "curva": "suave",
+                  "procedural": "estatico"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "objetos": [
+        {
+          "id": "feromona_linea",
+          "propId": "estela_feromona_vector_verde",
+          "posicion": {
+            "x": 160,
+            "y": 40
+          },
+          "escala": 1.35,
+          "animacion": {
+            "tipo": "flotar"
+          }
+        }
+      ],
+      "duracionSegundos": 11.746,
+      "palabras": [
+        {
+          "palabra": "Cada",
+          "inicioMs": 0,
+          "finMs": 260
+        },
+        {
+          "palabra": "soldado",
+          "inicioMs": 260,
+          "finMs": 680
+        },
+        {
+          "palabra": "sigue",
+          "inicioMs": 680,
+          "finMs": 940
+        },
+        {
+          "palabra": "una",
+          "inicioMs": 940,
+          "finMs": 1160
+        },
+        {
+          "palabra": "regla",
+          "inicioMs": 1160,
+          "finMs": 1480
+        },
+        {
+          "palabra": "biológica",
+          "inicioMs": 1480,
+          "finMs": 1960
+        },
+        {
+          "palabra": "simple",
+          "inicioMs": 1960,
+          "finMs": 2440
+        },
+        {
+          "palabra": "avanza",
+          "inicioMs": 2580,
+          "finMs": 2960
+        },
+        {
+          "palabra": "hacia",
+          "inicioMs": 2960,
+          "finMs": 3240
+        },
+        {
+          "palabra": "adelante",
+          "inicioMs": 3240,
+          "finMs": 3720
+        },
+        {
+          "palabra": "siguiendo",
+          "inicioMs": 3720,
+          "finMs": 4200
+        },
+        {
+          "palabra": "ciegamente",
+          "inicioMs": 4200,
+          "finMs": 4860
+        },
+        {
+          "palabra": "el",
+          "inicioMs": 4860,
+          "finMs": 5240
+        },
+        {
+          "palabra": "rastro",
+          "inicioMs": 5240,
+          "finMs": 5360
+        },
+        {
+          "palabra": "de",
+          "inicioMs": 5360,
+          "finMs": 5820
+        },
+        {
+          "palabra": "feromonas",
+          "inicioMs": 5820,
+          "finMs": 5980
+        },
+        {
+          "palabra": "de",
+          "inicioMs": 5980,
+          "finMs": 6080
+        },
+        {
+          "palabra": "la",
+          "inicioMs": 6080,
+          "finMs": 6560
+        },
+        {
+          "palabra": "compañera",
+          "inicioMs": 6560,
+          "finMs": 6700
+        },
+        {
+          "palabra": "que",
+          "inicioMs": 6700,
+          "finMs": 6880
+        },
+        {
+          "palabra": "tiene",
+          "inicioMs": 6880,
+          "finMs": 7060
+        },
+        {
+          "palabra": "enfrente",
+          "inicioMs": 7060,
+          "finMs": 7400
+        },
+        {
+          "palabra": "En",
+          "inicioMs": 7560,
+          "finMs": 7640
+        },
+        {
+          "palabra": "condiciones",
+          "inicioMs": 7640,
+          "finMs": 7940
+        },
+        {
+          "palabra": "normales",
+          "inicioMs": 7940,
+          "finMs": 8640
+        },
+        {
+          "palabra": "es",
+          "inicioMs": 8880,
+          "finMs": 8980
+        },
+        {
+          "palabra": "un",
+          "inicioMs": 8980,
+          "finMs": 9100
+        },
+        {
+          "palabra": "algoritmo",
+          "inicioMs": 9100,
+          "finMs": 9520
+        },
+        {
+          "palabra": "colectivo",
+          "inicioMs": 9520,
+          "finMs": 9980
+        },
+        {
+          "palabra": "infalible",
+          "inicioMs": 9980,
+          "finMs": 10460
+        },
+        {
+          "palabra": "y",
+          "inicioMs": 10460,
+          "finMs": 10700
+        },
+        {
+          "palabra": "perfecto",
+          "inicioMs": 10700,
+          "finMs": 11260
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "texto": "Pero si la líder se desorienta, gira en curva y tropieza con su propio rastro trasero... el sistema colapsa en un bucle infinito mortal. El olor se intensifica y quedan atrapadas para siempre.",
+      "icono": "Repeat",
+      "colorIcono": "#EC4899",
+      "tituloVisual": "BUCLE INFINITO",
+      "composicionVisual": "plano_general",
+      "escenario": "diagrama_bucle_cerrado_glitch",
+      "layout": "narrativo",
+      "transicion": "whip_right",
+      "efectosCamara": [
+        "punch",
+        "drift"
+      ],
+      "sfx": "sfx/sfx_bucle_infinito_glitch.wav",
+      "volumenSfx": 0.25,
+      "palabrasClave": [
+        "SE DESORIENTA",
+        "GIRA EN CURVA",
+        "PROPIO RASTRO TRASERO",
+        "BUCLE INFINITO",
+        "ATRAPADAS PARA SIEMPRE"
+      ],
+      "personajes": [
+        {
+          "id": "stickman",
+          "nombre": "Explorador",
+          "posicion": {
+            "x": -210,
+            "y": 60
+          },
+          "escala": 1.0,
+          "orientacion": "derecha",
+          "habla": true,
+          "capaZ": 15,
+          "acciones": [
+            {
+              "tipo": "personalizada",
+              "pasos": [
+                {
+                  "inicioProgreso": 0,
+                  "finProgreso": 0.35,
+                  "poseId": "eureka_idea",
+                  "expresion": "eureka",
+                  "posicion": {
+                    "x": -210,
+                    "y": 60
+                  },
+                  "curva": "suave",
+                  "procedural": "estatico"
+                },
+                {
+                  "inicioProgreso": 0.35,
+                  "finProgreso": 0.7,
+                  "poseId": "doubting_open_hands",
+                  "expresion": "confused",
+                  "posicion": {
+                    "x": -190,
+                    "y": 60
+                  },
+                  "curva": "suave",
+                  "procedural": "estatico"
+                },
+                {
+                  "inicioProgreso": 0.7,
+                  "finProgreso": 1.0,
+                  "poseId": "shock_explosion",
+                  "expresion": "shocked",
+                  "posicion": {
+                    "x": -190,
+                    "y": 30
+                  },
+                  "curva": "rebote",
+                  "procedural": "rebotar"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "objetos": [
+        {
+          "id": "bucle_vortice",
+          "propId": "vortice_ant_mill_anillo",
+          "posicion": {
+            "x": 170,
+            "y": 40
+          },
+          "escala": 1.4,
+          "animacion": {
+            "tipo": "pulso"
+          }
+        }
+      ],
+      "duracionSegundos": 10.354,
+      "palabras": [
+        {
+          "palabra": "Pero",
+          "inicioMs": 0,
+          "finMs": 240
+        },
+        {
+          "palabra": "si",
+          "inicioMs": 240,
+          "finMs": 400
+        },
+        {
+          "palabra": "la",
+          "inicioMs": 400,
+          "finMs": 540
+        },
+        {
+          "palabra": "líder",
+          "inicioMs": 540,
+          "finMs": 740
+        },
+        {
+          "palabra": "se",
+          "inicioMs": 740,
+          "finMs": 980
+        },
+        {
+          "palabra": "desorienta",
+          "inicioMs": 980,
+          "finMs": 1660
+        },
+        {
+          "palabra": "gira",
+          "inicioMs": 1760,
+          "finMs": 1900
+        },
+        {
+          "palabra": "en",
+          "inicioMs": 1900,
+          "finMs": 2040
+        },
+        {
+          "palabra": "curva",
+          "inicioMs": 2040,
+          "finMs": 2380
+        },
+        {
+          "palabra": "y",
+          "inicioMs": 2380,
+          "finMs": 2480
+        },
+        {
+          "palabra": "tropieza",
+          "inicioMs": 2480,
+          "finMs": 2820
+        },
+        {
+          "palabra": "con",
+          "inicioMs": 2820,
+          "finMs": 3120
+        },
+        {
+          "palabra": "su",
+          "inicioMs": 3120,
+          "finMs": 3280
+        },
+        {
+          "palabra": "propio",
+          "inicioMs": 3280,
+          "finMs": 3600
+        },
+        {
+          "palabra": "rastro",
+          "inicioMs": 3600,
+          "finMs": 4000
+        },
+        {
+          "palabra": "trasero",
+          "inicioMs": 4000,
+          "finMs": 4460
+        },
+        {
+          "palabra": "el",
+          "inicioMs": 4800,
+          "finMs": 4900
+        },
+        {
+          "palabra": "sistema",
+          "inicioMs": 4900,
+          "finMs": 5220
+        },
+        {
+          "palabra": "colapsa",
+          "inicioMs": 5220,
+          "finMs": 5800
+        },
+        {
+          "palabra": "en",
+          "inicioMs": 5800,
+          "finMs": 5900
+        },
+        {
+          "palabra": "un",
+          "inicioMs": 5900,
+          "finMs": 6020
+        },
+        {
+          "palabra": "bucle",
+          "inicioMs": 6020,
+          "finMs": 6360
+        },
+        {
+          "palabra": "infinito",
+          "inicioMs": 6360,
+          "finMs": 6940
+        },
+        {
+          "palabra": "mortal",
+          "inicioMs": 6940,
+          "finMs": 7280
+        },
+        {
+          "palabra": "El",
+          "inicioMs": 7520,
+          "finMs": 7620
+        },
+        {
+          "palabra": "olor",
+          "inicioMs": 7620,
+          "finMs": 7820
+        },
+        {
+          "palabra": "se",
+          "inicioMs": 7820,
+          "finMs": 7920
+        },
+        {
+          "palabra": "intensifica",
+          "inicioMs": 7920,
+          "finMs": 8520
+        },
+        {
+          "palabra": "y",
+          "inicioMs": 8520,
+          "finMs": 8700
+        },
+        {
+          "palabra": "quedan",
+          "inicioMs": 8700,
+          "finMs": 8920
+        },
+        {
+          "palabra": "atrapadas",
+          "inicioMs": 8920,
+          "finMs": 9360
+        },
+        {
+          "palabra": "para",
+          "inicioMs": 9360,
+          "finMs": 9520
+        },
+        {
+          "palabra": "siempre",
+          "inicioMs": 9520,
+          "finMs": 9860
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "texto": "No hay ninguna reina ni jefe que ordene frenar la marcha. Si nadie interrumpe la pista química, correrán sin agua ni descanso durante días enteros hasta colapsar muertas... a menos que usemos química.",
+      "icono": "Sparkles",
+      "colorIcono": "#38BDF8",
+      "tituloVisual": "SIN RETORNO",
+      "composicionVisual": "plano_general",
+      "escenario": "selva_atomizador_corte_quimico",
+      "layout": "narrativo",
+      "transicion": "whip_left",
+      "efectosCamara": [
+        "punch",
+        "drift"
+      ],
+      "sfx": "sfx/sfx_atomizador_espuma_spray.wav",
+      "volumenSfx": 0.25,
+      "palabrasClave": [
+        "NINGUNA REINA",
+        "ORDENE FRENAR",
+        "SIN AGUA NI DESCANSO",
+        "DÍAS ENTEROS",
+        "HASTA COLAPSAR",
+        "USEMOS QUÍMICA"
+      ],
+      "personajes": [
+        {
+          "id": "stickman",
+          "nombre": "Explorador",
+          "posicion": {
+            "x": -220,
+            "y": 60
+          },
+          "escala": 1.0,
+          "orientacion": "derecha",
+          "habla": true,
+          "capaZ": 15,
+          "acciones": [
+            {
+              "tipo": "personalizada",
+              "pasos": [
+                {
+                  "inicioProgreso": 0,
+                  "finProgreso": 0.35,
+                  "poseId": "backing_away_scared",
+                  "expresion": "worried",
+                  "posicion": {
+                    "x": -220,
+                    "y": 60
+                  },
+                  "curva": "suave",
+                  "procedural": "temblar"
+                },
+                {
+                  "inicioProgreso": 0.35,
+                  "finProgreso": 0.7,
+                  "poseId": "presenting_object",
+                  "expresion": "analytical",
+                  "posicion": {
+                    "x": -180,
+                    "y": 60
+                  },
+                  "prop": "atomizador_spray_jabon",
+                  "curva": "suave",
+                  "procedural": "estatico"
+                },
+                {
+                  "inicioProgreso": 0.7,
+                  "finProgreso": 1.0,
+                  "poseId": "explaining_both_hands",
+                  "expresion": "talking_enthusiastic",
+                  "posicion": {
+                    "x": -180,
+                    "y": 60
+                  },
+                  "prop": "atomizador_spray_jabon",
+                  "curva": "suave",
+                  "procedural": "estatico"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "objetos": [
+        {
+          "id": "spray_objeto",
+          "propId": "atomizador_spray_jabon",
+          "posicion": {
+            "x": 160,
+            "y": 60
+          },
+          "escala": 1.4,
+          "animacion": {
+            "tipo": "vibrar"
+          }
+        }
+      ],
+      "duracionSegundos": 9.202,
+      "palabras": [
+        {
+          "palabra": "No",
+          "inicioMs": 0,
+          "finMs": 160
+        },
+        {
+          "palabra": "hay",
+          "inicioMs": 160,
+          "finMs": 240
+        },
+        {
+          "palabra": "ninguna",
+          "inicioMs": 240,
+          "finMs": 560
+        },
+        {
+          "palabra": "reina",
+          "inicioMs": 560,
+          "finMs": 940
+        },
+        {
+          "palabra": "ni",
+          "inicioMs": 940,
+          "finMs": 1080
+        },
+        {
+          "palabra": "jefe",
+          "inicioMs": 1080,
+          "finMs": 1380
+        },
+        {
+          "palabra": "que",
+          "inicioMs": 1380,
+          "finMs": 1500
+        },
+        {
+          "palabra": "ordene",
+          "inicioMs": 1500,
+          "finMs": 1820
+        },
+        {
+          "palabra": "frenar",
+          "inicioMs": 1820,
+          "finMs": 2100
+        },
+        {
+          "palabra": "la",
+          "inicioMs": 2100,
+          "finMs": 2220
+        },
+        {
+          "palabra": "marcha",
+          "inicioMs": 2220,
+          "finMs": 2620
+        },
+        {
+          "palabra": "Si",
+          "inicioMs": 2720,
+          "finMs": 2820
+        },
+        {
+          "palabra": "nadie",
+          "inicioMs": 2820,
+          "finMs": 2940
+        },
+        {
+          "palabra": "interrumpe",
+          "inicioMs": 2940,
+          "finMs": 3440
+        },
+        {
+          "palabra": "la",
+          "inicioMs": 3440,
+          "finMs": 3540
+        },
+        {
+          "palabra": "pista",
+          "inicioMs": 3540,
+          "finMs": 3760
+        },
+        {
+          "palabra": "química",
+          "inicioMs": 3760,
+          "finMs": 4200
+        },
+        {
+          "palabra": "correrán",
+          "inicioMs": 4300,
+          "finMs": 4600
+        },
+        {
+          "palabra": "sin",
+          "inicioMs": 4600,
+          "finMs": 4760
+        },
+        {
+          "palabra": "agua",
+          "inicioMs": 4760,
+          "finMs": 4960
+        },
+        {
+          "palabra": "ni",
+          "inicioMs": 4960,
+          "finMs": 5080
+        },
+        {
+          "palabra": "descanso",
+          "inicioMs": 5080,
+          "finMs": 5520
+        },
+        {
+          "palabra": "durante",
+          "inicioMs": 5520,
+          "finMs": 5720
+        },
+        {
+          "palabra": "días",
+          "inicioMs": 5720,
+          "finMs": 6000
+        },
+        {
+          "palabra": "enteros",
+          "inicioMs": 6000,
+          "finMs": 6420
+        },
+        {
+          "palabra": "hasta",
+          "inicioMs": 6420,
+          "finMs": 6620
+        },
+        {
+          "palabra": "colapsar",
+          "inicioMs": 6620,
+          "finMs": 7020
+        },
+        {
+          "palabra": "muertas",
+          "inicioMs": 7020,
+          "finMs": 7400
+        },
+        {
+          "palabra": "a",
+          "inicioMs": 7560,
+          "finMs": 7640
+        },
+        {
+          "palabra": "menos",
+          "inicioMs": 7640,
+          "finMs": 7820
+        },
+        {
+          "palabra": "que",
+          "inicioMs": 7820,
+          "finMs": 8020
+        },
+        {
+          "palabra": "usemos",
+          "inicioMs": 8020,
+          "finMs": 8280
+        },
+        {
+          "palabra": "química",
+          "inicioMs": 8280,
+          "finMs": 8760
+        }
+      ]
+    },
+    {
+      "id": 7,
+      "texto": "Al rociar agua y jabón, la pista se borra, las hormigas despiertan del trance y escapan a salvo. Una prueba fascinante de que la inteligencia colectiva... ¡también puede tropezar con su propia cola!",
+      "icono": "CheckCircle2",
+      "colorIcono": "#10B981",
+      "tituloVisual": "CADENA ROTA",
+      "composicionVisual": "plano_general",
+      "escenario": "selva_colonia_liberada_cierre",
+      "layout": "narrativo",
+      "transicion": "zoom_in",
+      "efectosCamara": [
+        "punch",
+        "drift"
+      ],
+      "sfx": "sfx/sfx_dispersion_hojarasca_triunfo.wav",
+      "volumenSfx": 0.25,
+      "palabrasClave": [
+        "AGUA Y JABÓN",
+        "LA PISTA SE BORRA",
+        "DESPIERTAN DEL TRANCE",
+        "ESCAPAN A SALVO",
+        "INTELIGENCIA COLECTIVA",
+        "PROPIA COLA"
+      ],
+      "personajes": [
+        {
+          "id": "stickman",
+          "nombre": "Explorador",
+          "posicion": {
+            "x": -210,
+            "y": 60
+          },
+          "escala": 1.0,
+          "orientacion": "derecha",
+          "habla": true,
+          "capaZ": 15,
+          "acciones": [
+            {
+              "tipo": "personalizada",
+              "pasos": [
+                {
+                  "inicioProgreso": 0,
+                  "finProgreso": 0.35,
+                  "poseId": "celebrating_arms_up",
+                  "expresion": "smile_wide",
+                  "posicion": {
+                    "x": -200,
+                    "y": 50
+                  },
+                  "curva": "suave",
+                  "procedural": "estatico"
+                },
+                {
+                  "inicioProgreso": 0.35,
+                  "finProgreso": 0.65,
+                  "poseId": "tripping_falling",
+                  "expresion": "confused",
+                  "posicion": {
+                    "x": -100,
+                    "y": 70
+                  },
+                  "prop": "stickman_ojos_mareo_espiral",
+                  "curva": "suave",
+                  "procedural": "temblar"
+                },
+                {
+                  "inicioProgreso": 0.65,
+                  "finProgreso": 1.0,
+                  "poseId": "sitting",
+                  "expresion": "smile_soft",
+                  "posicion": {
+                    "x": -80,
+                    "y": 140
+                  },
+                  "prop": "stickman_ojos_mareo_espiral",
+                  "curva": "impacto",
+                  "procedural": "estatico"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "objetos": [
+        {
+          "id": "estela_rota",
+          "propId": "estela_feromona_vector_verde",
+          "posicion": {
+            "x": 190,
+            "y": 80
+          },
+          "escala": 1.25,
+          "animacion": {
+            "tipo": "flotar"
+          }
+        }
+      ],
+      "duracionSegundos": 10.978,
+      "palabras": [
+        {
+          "palabra": "Al",
+          "inicioMs": 0,
+          "finMs": 220
+        },
+        {
+          "palabra": "rociar",
+          "inicioMs": 220,
+          "finMs": 600
+        },
+        {
+          "palabra": "agua",
+          "inicioMs": 600,
+          "finMs": 940
+        },
+        {
+          "palabra": "y",
+          "inicioMs": 940,
+          "finMs": 1080
+        },
+        {
+          "palabra": "jabón",
+          "inicioMs": 1080,
+          "finMs": 1380
+        },
+        {
+          "palabra": "la",
+          "inicioMs": 1520,
+          "finMs": 1780
+        },
+        {
+          "palabra": "pista",
+          "inicioMs": 1780,
+          "finMs": 1980
+        },
+        {
+          "palabra": "se",
+          "inicioMs": 1980,
+          "finMs": 2320
+        },
+        {
+          "palabra": "borra",
+          "inicioMs": 2540,
+          "finMs": 2740
+        },
+        {
+          "palabra": "las",
+          "inicioMs": 2740,
+          "finMs": 3160
+        },
+        {
+          "palabra": "hormigas",
+          "inicioMs": 3160,
+          "finMs": 3760
+        },
+        {
+          "palabra": "despiertan",
+          "inicioMs": 3760,
+          "finMs": 3940
+        },
+        {
+          "palabra": "del",
+          "inicioMs": 3940,
+          "finMs": 4280
+        },
+        {
+          "palabra": "trance",
+          "inicioMs": 4280,
+          "finMs": 4540
+        },
+        {
+          "palabra": "y",
+          "inicioMs": 4540,
+          "finMs": 4900
+        },
+        {
+          "palabra": "escapan",
+          "inicioMs": 4900,
+          "finMs": 5020
+        },
+        {
+          "palabra": "a",
+          "inicioMs": 5020,
+          "finMs": 5360
+        },
+        {
+          "palabra": "salvo",
+          "inicioMs": 5620,
+          "finMs": 5780
+        },
+        {
+          "palabra": "Una",
+          "inicioMs": 5780,
+          "finMs": 6040
+        },
+        {
+          "palabra": "prueba",
+          "inicioMs": 6040,
+          "finMs": 6680
+        },
+        {
+          "palabra": "fascinante",
+          "inicioMs": 6680,
+          "finMs": 6800
+        },
+        {
+          "palabra": "de",
+          "inicioMs": 6800,
+          "finMs": 6900
+        },
+        {
+          "palabra": "que",
+          "inicioMs": 6900,
+          "finMs": 7000
+        },
+        {
+          "palabra": "la",
+          "inicioMs": 7000,
+          "finMs": 7540
+        },
+        {
+          "palabra": "inteligencia",
+          "inicioMs": 7540,
+          "finMs": 7600
+        },
+        {
+          "palabra": "colectiva",
+          "inicioMs": 7600,
+          "finMs": 8080
+        },
+        {
+          "palabra": "también",
+          "inicioMs": 8460,
+          "finMs": 8760
+        },
+        {
+          "palabra": "puede",
+          "inicioMs": 8760,
+          "finMs": 9040
+        },
+        {
+          "palabra": "tropezar",
+          "inicioMs": 9040,
+          "finMs": 9580
+        },
+        {
+          "palabra": "con",
+          "inicioMs": 9580,
+          "finMs": 9720
+        },
+        {
+          "palabra": "su",
+          "inicioMs": 9720,
+          "finMs": 9880
+        },
+        {
+          "palabra": "propia",
+          "inicioMs": 9880,
+          "finMs": 10160
+        },
+        {
+          "palabra": "cola",
+          "inicioMs": 10160,
+          "finMs": 10480
+        }
+      ]
+    }
+  ]
+}

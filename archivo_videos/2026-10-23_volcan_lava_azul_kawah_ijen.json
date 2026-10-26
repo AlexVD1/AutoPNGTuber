@@ -1,0 +1,1466 @@
+{
+  "meta": {
+    "id": "volcan_lava_azul_kawah_ijen",
+    "slug": "volcan_lava_azul_kawah_ijen",
+    "temaResumen": "El volcán de lava azul (El misterio de Kawah Ijen)",
+    "duracionObjetivo": [
+      62,
+      78
+    ],
+    "titulo": "El volcán de lava azul: El misterio de Kawah Ijen",
+    "titulo_corto": "El volcán de lava azul",
+    "gancho": "Hay un volcán en la Tierra que de noche brilla con fuego azul eléctrico... y no, no es lava extraterrestre.",
+    "fuentes": [
+      "Smithsonian Global Volcanism Program: Ijen Complex",
+      "Journal of Volcanology and Geothermal Research: Sulfuric Combustion at Kawah Ijen",
+      "National Geographic: The Electric Blue Volcano of Java"
+    ],
+    "genero": "Ciencia y Naturaleza",
+    "playlist": "Fenómenos Geológicos y Extremos"
+  },
+  "escenas": [
+    {
+      "id": 1,
+      "texto": "Hay un volcán en la Tierra que de noche brilla con fuego azul eléctrico... y no, no es lava extraterrestre. En la oscuridad, ríos de llamas azules parecen un portal alienígena.",
+      "icono": "Flame",
+      "colorIcono": "#38BDF8",
+      "tituloVisual": "FUEGO AZUL ELÉCTRICO",
+      "composicionVisual": "plano_general",
+      "escenario": "crater_kawah_ijen_noche",
+      "layout": "narrativo",
+      "transicion": "zoom_in",
+      "efectosCamara": [
+        "punch",
+        "drift"
+      ],
+      "sfx": "sfx/sfx_fuego_azul_presion.wav",
+      "volumenSfx": 0.25,
+      "palabrasClave": [
+        "FUEGO AZUL",
+        "DE NOCHE",
+        "NO ES LAVA EXTRATERRESTRE",
+        "LLAMAS AZULES",
+        "PORTAL"
+      ],
+      "personajes": [
+        {
+          "id": "explorador",
+          "nombre": "Explorador",
+          "posicion": {
+            "x": -220,
+            "y": 70
+          },
+          "escala": 1.0,
+          "orientacion": "derecha",
+          "poseId": "looking_up_pose",
+          "expresion": "shocked",
+          "props": {
+            "sombrero": "gorra_detective_explorador",
+            "derecha": "flashlight"
+          },
+          "capaZ": 10
+        }
+      ],
+      "duracionSegundos": 9.01,
+      "palabras": [
+        {
+          "palabra": "Hay",
+          "inicioMs": 0,
+          "finMs": 240
+        },
+        {
+          "palabra": "un",
+          "inicioMs": 240,
+          "finMs": 360
+        },
+        {
+          "palabra": "volcán",
+          "inicioMs": 360,
+          "finMs": 720
+        },
+        {
+          "palabra": "en",
+          "inicioMs": 720,
+          "finMs": 820
+        },
+        {
+          "palabra": "la",
+          "inicioMs": 820,
+          "finMs": 940
+        },
+        {
+          "palabra": "Tierra",
+          "inicioMs": 940,
+          "finMs": 1240
+        },
+        {
+          "palabra": "que",
+          "inicioMs": 1240,
+          "finMs": 1480
+        },
+        {
+          "palabra": "de",
+          "inicioMs": 1480,
+          "finMs": 1580
+        },
+        {
+          "palabra": "noche",
+          "inicioMs": 1580,
+          "finMs": 1800
+        },
+        {
+          "palabra": "brilla",
+          "inicioMs": 1800,
+          "finMs": 2160
+        },
+        {
+          "palabra": "con",
+          "inicioMs": 2160,
+          "finMs": 2360
+        },
+        {
+          "palabra": "fuego",
+          "inicioMs": 2360,
+          "finMs": 2600
+        },
+        {
+          "palabra": "azul",
+          "inicioMs": 2600,
+          "finMs": 2720
+        },
+        {
+          "palabra": "eléctrico",
+          "inicioMs": 2720,
+          "finMs": 3420
+        },
+        {
+          "palabra": "y",
+          "inicioMs": 3700,
+          "finMs": 3800
+        },
+        {
+          "palabra": "no",
+          "inicioMs": 3800,
+          "finMs": 3920
+        },
+        {
+          "palabra": "no",
+          "inicioMs": 4060,
+          "finMs": 4160
+        },
+        {
+          "palabra": "es",
+          "inicioMs": 4160,
+          "finMs": 4300
+        },
+        {
+          "palabra": "lava",
+          "inicioMs": 4300,
+          "finMs": 4420
+        },
+        {
+          "palabra": "extraterrestre",
+          "inicioMs": 4420,
+          "finMs": 5200
+        },
+        {
+          "palabra": "En",
+          "inicioMs": 5440,
+          "finMs": 5500
+        },
+        {
+          "palabra": "la",
+          "inicioMs": 5500,
+          "finMs": 5580
+        },
+        {
+          "palabra": "oscuridad",
+          "inicioMs": 5580,
+          "finMs": 5980
+        },
+        {
+          "palabra": "ríos",
+          "inicioMs": 5980,
+          "finMs": 6340
+        },
+        {
+          "palabra": "de",
+          "inicioMs": 6340,
+          "finMs": 6440
+        },
+        {
+          "palabra": "llamas",
+          "inicioMs": 6440,
+          "finMs": 6720
+        },
+        {
+          "palabra": "azules",
+          "inicioMs": 6720,
+          "finMs": 7020
+        },
+        {
+          "palabra": "parecen",
+          "inicioMs": 7020,
+          "finMs": 7460
+        },
+        {
+          "palabra": "un",
+          "inicioMs": 7460,
+          "finMs": 7580
+        },
+        {
+          "palabra": "portal",
+          "inicioMs": 7580,
+          "finMs": 7860
+        },
+        {
+          "palabra": "alienígena",
+          "inicioMs": 7860,
+          "finMs": 8520
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "texto": "Se trata del volcán Kawah Ijen en Indonesia. Si te acercas pensando que es magia, lo primero que vas a recibir es un puñetazo tóxico en los pulmones por el humo de azufre.",
+      "icono": "AlertTriangle",
+      "colorIcono": "#EF4444",
+      "tituloVisual": "HUMO TÓXICO",
+      "composicionVisual": "primer_plano",
+      "escenario": "crater_gas_toxico_azufre",
+      "layout": "narrativo",
+      "transicion": "whip_right",
+      "efectosCamara": [
+        "shake",
+        "punch"
+      ],
+      "sfx": "sfx/sfx_tos_mascara_antigas.wav",
+      "volumenSfx": 0.28,
+      "palabrasClave": [
+        "KAWAH IJEN",
+        "INDONESIA",
+        "PUÑETAZO TÓXICO",
+        "PULMONES",
+        "HUMO DE AZUFRE"
+      ],
+      "personajes": [
+        {
+          "id": "explorador_tosiendo",
+          "nombre": "Explorador Tosiendo",
+          "posicion": {
+            "x": 0,
+            "y": 70
+          },
+          "escala": 1.15,
+          "orientacion": "derecha",
+          "poseId": "tripping_falling",
+          "expresion": "frustrated",
+          "props": {
+            "cara": "mascara_antigas_industrial",
+            "derecha": "cuchara_larga_muestreo"
+          },
+          "capaZ": 12
+        }
+      ],
+      "objetos": [
+        {
+          "id": "frasco_muestra",
+          "propId": "frasco_muestra_cristal",
+          "posicion": {
+            "x": 160,
+            "y": 140
+          },
+          "escala": 1.2,
+          "animacion": {
+            "tipo": "fijo"
+          }
+        }
+      ],
+      "duracionSegundos": 9.202,
+      "palabras": [
+        {
+          "palabra": "Se",
+          "inicioMs": 0,
+          "finMs": 200
+        },
+        {
+          "palabra": "trata",
+          "inicioMs": 200,
+          "finMs": 480
+        },
+        {
+          "palabra": "del",
+          "inicioMs": 480,
+          "finMs": 680
+        },
+        {
+          "palabra": "volcán",
+          "inicioMs": 680,
+          "finMs": 1040
+        },
+        {
+          "palabra": "Kawah",
+          "inicioMs": 1040,
+          "finMs": 1700
+        },
+        {
+          "palabra": "Ijen",
+          "inicioMs": 1700,
+          "finMs": 1900
+        },
+        {
+          "palabra": "en",
+          "inicioMs": 1900,
+          "finMs": 2400
+        },
+        {
+          "palabra": "Indonesia",
+          "inicioMs": 2700,
+          "finMs": 2780
+        },
+        {
+          "palabra": "Si",
+          "inicioMs": 2780,
+          "finMs": 2900
+        },
+        {
+          "palabra": "te",
+          "inicioMs": 2900,
+          "finMs": 3320
+        },
+        {
+          "palabra": "acercas",
+          "inicioMs": 3320,
+          "finMs": 3640
+        },
+        {
+          "palabra": "pensando",
+          "inicioMs": 3640,
+          "finMs": 3900
+        },
+        {
+          "palabra": "que",
+          "inicioMs": 3900,
+          "finMs": 4020
+        },
+        {
+          "palabra": "es",
+          "inicioMs": 4020,
+          "finMs": 4440
+        },
+        {
+          "palabra": "magia",
+          "inicioMs": 4540,
+          "finMs": 4620
+        },
+        {
+          "palabra": "lo",
+          "inicioMs": 4620,
+          "finMs": 4840
+        },
+        {
+          "palabra": "primero",
+          "inicioMs": 4840,
+          "finMs": 5040
+        },
+        {
+          "palabra": "que",
+          "inicioMs": 5040,
+          "finMs": 5140
+        },
+        {
+          "palabra": "vas",
+          "inicioMs": 5140,
+          "finMs": 5280
+        },
+        {
+          "palabra": "a",
+          "inicioMs": 5280,
+          "finMs": 5580
+        },
+        {
+          "palabra": "recibir",
+          "inicioMs": 5580,
+          "finMs": 5920
+        },
+        {
+          "palabra": "es",
+          "inicioMs": 5920,
+          "finMs": 6060
+        },
+        {
+          "palabra": "un",
+          "inicioMs": 6060,
+          "finMs": 6560
+        },
+        {
+          "palabra": "puñetazo",
+          "inicioMs": 6560,
+          "finMs": 7060
+        },
+        {
+          "palabra": "tóxico",
+          "inicioMs": 7060,
+          "finMs": 7180
+        },
+        {
+          "palabra": "en",
+          "inicioMs": 7180,
+          "finMs": 7260
+        },
+        {
+          "palabra": "los",
+          "inicioMs": 7260,
+          "finMs": 7740
+        },
+        {
+          "palabra": "pulmones",
+          "inicioMs": 7740,
+          "finMs": 7920
+        },
+        {
+          "palabra": "por",
+          "inicioMs": 7920,
+          "finMs": 8040
+        },
+        {
+          "palabra": "el",
+          "inicioMs": 8040,
+          "finMs": 8220
+        },
+        {
+          "palabra": "humo",
+          "inicioMs": 8220,
+          "finMs": 8300
+        },
+        {
+          "palabra": "de",
+          "inicioMs": 8300,
+          "finMs": 8740
+        },
+        {
+          "palabra": "azufre",
+          "inicioMs": 8740,
+          "finMs": 8952
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "texto": "Porque aquí la roca fundida subterránea sigue siendo del mismo rojo incandescente de siempre. Lo que arde en la superficie no es piedra: es puro gas de azufre a enorme presión.",
+      "icono": "Activity",
+      "colorIcono": "#F59E0B",
+      "tituloVisual": "AZUFRE A PRESIÓN",
+      "composicionVisual": "cifras_concepto",
+      "escenario": "corte_subsuelo_olla_presion",
+      "layout": "narrativo",
+      "transicion": "flash",
+      "efectosCamara": [
+        "punch",
+        "drift"
+      ],
+      "sfx": "sfx/sfx_subsuelo_olla_presion.wav",
+      "volumenSfx": 0.26,
+      "palabrasClave": [
+        "ROCA FUNDIDA",
+        "ROJO INCANDESCENTE",
+        "NO ES PIEDRA",
+        "GAS DE AZUFRE",
+        "ENORME PRESIÓN"
+      ],
+      "personajes": [
+        {
+          "id": "geologo",
+          "nombre": "Geólogo",
+          "posicion": {
+            "x": -240,
+            "y": 70
+          },
+          "escala": 1.05,
+          "orientacion": "derecha",
+          "poseId": "explaining_pointing_up",
+          "expresion": "analytical",
+          "props": {
+            "derecha": "puntero_divulgador",
+            "cara": "mascara_antigas_industrial"
+          },
+          "capaZ": 10
+        }
+      ],
+      "duracionSegundos": 9.778,
+      "palabras": [
+        {
+          "palabra": "Porque",
+          "inicioMs": 0,
+          "finMs": 240
+        },
+        {
+          "palabra": "aquí",
+          "inicioMs": 240,
+          "finMs": 520
+        },
+        {
+          "palabra": "la",
+          "inicioMs": 520,
+          "finMs": 680
+        },
+        {
+          "palabra": "roca",
+          "inicioMs": 680,
+          "finMs": 980
+        },
+        {
+          "palabra": "fundida",
+          "inicioMs": 980,
+          "finMs": 1400
+        },
+        {
+          "palabra": "subterránea",
+          "inicioMs": 1400,
+          "finMs": 2080
+        },
+        {
+          "palabra": "sigue",
+          "inicioMs": 2080,
+          "finMs": 2340
+        },
+        {
+          "palabra": "siendo",
+          "inicioMs": 2340,
+          "finMs": 2740
+        },
+        {
+          "palabra": "del",
+          "inicioMs": 2740,
+          "finMs": 2940
+        },
+        {
+          "palabra": "mismo",
+          "inicioMs": 2940,
+          "finMs": 3240
+        },
+        {
+          "palabra": "rojo",
+          "inicioMs": 3240,
+          "finMs": 3600
+        },
+        {
+          "palabra": "incandescente",
+          "inicioMs": 3600,
+          "finMs": 4280
+        },
+        {
+          "palabra": "de",
+          "inicioMs": 4280,
+          "finMs": 4380
+        },
+        {
+          "palabra": "siempre",
+          "inicioMs": 4380,
+          "finMs": 4800
+        },
+        {
+          "palabra": "Lo",
+          "inicioMs": 5080,
+          "finMs": 5180
+        },
+        {
+          "palabra": "que",
+          "inicioMs": 5180,
+          "finMs": 5360
+        },
+        {
+          "palabra": "arde",
+          "inicioMs": 5360,
+          "finMs": 5600
+        },
+        {
+          "palabra": "en",
+          "inicioMs": 5600,
+          "finMs": 5740
+        },
+        {
+          "palabra": "la",
+          "inicioMs": 5740,
+          "finMs": 6320
+        },
+        {
+          "palabra": "superficie",
+          "inicioMs": 6320,
+          "finMs": 6480
+        },
+        {
+          "palabra": "no",
+          "inicioMs": 6480,
+          "finMs": 6620
+        },
+        {
+          "palabra": "es",
+          "inicioMs": 6620,
+          "finMs": 7040
+        },
+        {
+          "palabra": "piedra",
+          "inicioMs": 7160,
+          "finMs": 7280
+        },
+        {
+          "palabra": "es",
+          "inicioMs": 7280,
+          "finMs": 7580
+        },
+        {
+          "palabra": "puro",
+          "inicioMs": 7580,
+          "finMs": 7780
+        },
+        {
+          "palabra": "gas",
+          "inicioMs": 7780,
+          "finMs": 7940
+        },
+        {
+          "palabra": "de",
+          "inicioMs": 7940,
+          "finMs": 8360
+        },
+        {
+          "palabra": "azufre",
+          "inicioMs": 8360,
+          "finMs": 8520
+        },
+        {
+          "palabra": "a",
+          "inicioMs": 8520,
+          "finMs": 8820
+        },
+        {
+          "palabra": "enorme",
+          "inicioMs": 8820,
+          "finMs": 9300
+        },
+        {
+          "palabra": "presión",
+          "inicioMs": 9300,
+          "finMs": 9528
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "texto": "El gas sale disparado por las grietas a más de seiscientos grados centígrados, y en el segundo exacto en que toca el oxígeno de la atmósfera... ¡se autoenciende en llamas como un soplete gigante!",
+      "icono": "Zap",
+      "colorIcono": "#38BDF8",
+      "tituloVisual": "SOPLETE NATURAL",
+      "composicionVisual": "primer_plano",
+      "escenario": "macro_soplete_autoignicion",
+      "layout": "narrativo",
+      "transicion": "zoom_in",
+      "efectosCamara": [
+        "shake",
+        "punch"
+      ],
+      "sfx": "sfx/sfx_soplete_ignicion_fwoosh.wav",
+      "volumenSfx": 0.28,
+      "palabrasClave": [
+        "SEISCIENTOS GRADOS",
+        "TOCA EL OXÍGENO",
+        "AUTOENCIENDE",
+        "LLAMAS",
+        "SOPLETE GIGANTE"
+      ],
+      "personajes": [
+        {
+          "id": "explorador_escudo",
+          "nombre": "Explorador con Escudo",
+          "posicion": {
+            "x": -180,
+            "y": 70
+          },
+          "escala": 1.1,
+          "orientacion": "derecha",
+          "poseId": "protecting_shielding",
+          "expresion": "scared",
+          "props": {
+            "izquierda": "escudo_acrilico_proteccion",
+            "cara": "mascara_antigas_industrial"
+          },
+          "capaZ": 10
+        }
+      ],
+      "duracionSegundos": 10.786,
+      "palabras": [
+        {
+          "palabra": "El",
+          "inicioMs": 0,
+          "finMs": 240
+        },
+        {
+          "palabra": "gas",
+          "inicioMs": 240,
+          "finMs": 340
+        },
+        {
+          "palabra": "sale",
+          "inicioMs": 340,
+          "finMs": 600
+        },
+        {
+          "palabra": "disparado",
+          "inicioMs": 600,
+          "finMs": 1100
+        },
+        {
+          "palabra": "por",
+          "inicioMs": 1100,
+          "finMs": 1280
+        },
+        {
+          "palabra": "las",
+          "inicioMs": 1280,
+          "finMs": 1500
+        },
+        {
+          "palabra": "grietas",
+          "inicioMs": 1500,
+          "finMs": 1800
+        },
+        {
+          "palabra": "a",
+          "inicioMs": 1800,
+          "finMs": 1980
+        },
+        {
+          "palabra": "más",
+          "inicioMs": 1980,
+          "finMs": 2140
+        },
+        {
+          "palabra": "de",
+          "inicioMs": 2140,
+          "finMs": 2300
+        },
+        {
+          "palabra": "seiscientos",
+          "inicioMs": 2300,
+          "finMs": 2660
+        },
+        {
+          "palabra": "grados",
+          "inicioMs": 2660,
+          "finMs": 3300
+        },
+        {
+          "palabra": "centígrados",
+          "inicioMs": 3300,
+          "finMs": 3960
+        },
+        {
+          "palabra": "y",
+          "inicioMs": 3960,
+          "finMs": 4820
+        },
+        {
+          "palabra": "en",
+          "inicioMs": 4820,
+          "finMs": 4920
+        },
+        {
+          "palabra": "el",
+          "inicioMs": 4920,
+          "finMs": 5040
+        },
+        {
+          "palabra": "segundo",
+          "inicioMs": 5040,
+          "finMs": 5300
+        },
+        {
+          "palabra": "exacto",
+          "inicioMs": 5300,
+          "finMs": 5960
+        },
+        {
+          "palabra": "en",
+          "inicioMs": 5960,
+          "finMs": 6060
+        },
+        {
+          "palabra": "que",
+          "inicioMs": 6060,
+          "finMs": 6180
+        },
+        {
+          "palabra": "toca",
+          "inicioMs": 6180,
+          "finMs": 6380
+        },
+        {
+          "palabra": "el",
+          "inicioMs": 6380,
+          "finMs": 6560
+        },
+        {
+          "palabra": "oxígeno",
+          "inicioMs": 6560,
+          "finMs": 7020
+        },
+        {
+          "palabra": "de",
+          "inicioMs": 7020,
+          "finMs": 7120
+        },
+        {
+          "palabra": "la",
+          "inicioMs": 7120,
+          "finMs": 7200
+        },
+        {
+          "palabra": "atmósfera",
+          "inicioMs": 7200,
+          "finMs": 7620
+        },
+        {
+          "palabra": "se",
+          "inicioMs": 7880,
+          "finMs": 7960
+        },
+        {
+          "palabra": "autoenciende",
+          "inicioMs": 7960,
+          "finMs": 8580
+        },
+        {
+          "palabra": "en",
+          "inicioMs": 8580,
+          "finMs": 9040
+        },
+        {
+          "palabra": "llamas",
+          "inicioMs": 9040,
+          "finMs": 9180
+        },
+        {
+          "palabra": "como",
+          "inicioMs": 9180,
+          "finMs": 9340
+        },
+        {
+          "palabra": "un",
+          "inicioMs": 9340,
+          "finMs": 9640
+        },
+        {
+          "palabra": "soplete",
+          "inicioMs": 9640,
+          "finMs": 10300
+        },
+        {
+          "palabra": "gigante",
+          "inicioMs": 10300,
+          "finMs": 10536
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "texto": "Y aquí está la ilusión: parte de ese gas se condensa al enfriarse, convirtiéndose en azufre líquido viscoso que sigue ardiendo en azul cobalto mientras se derrama por las laderas del cráter.",
+      "icono": "Droplets",
+      "colorIcono": "#60A5FA",
+      "tituloVisual": "LÍQUIDO ARDIENTE",
+      "composicionVisual": "escenario_ilustrado",
+      "escenario": "ladera_azufre_liquido_flujo",
+      "layout": "narrativo",
+      "transicion": "whip_right",
+      "efectosCamara": [
+        "punch",
+        "drift"
+      ],
+      "sfx": "sfx/sfx_goteo_azufre_crepitar.wav",
+      "volumenSfx": 0.26,
+      "palabrasClave": [
+        "SE CONDENSA",
+        "AZUFRE LÍQUIDO",
+        "ARDIENDO",
+        "AZUL COBALTO",
+        "SE DERRAMA"
+      ],
+      "personajes": [
+        {
+          "id": "observador_flujo",
+          "nombre": "Observador de Flujo",
+          "posicion": {
+            "x": -220,
+            "y": 70
+          },
+          "escala": 1.0,
+          "orientacion": "derecha",
+          "poseId": "investigating_magnifier",
+          "expresion": "analytical",
+          "props": {
+            "derecha": "magnifier",
+            "cara": "mascara_antigas_industrial"
+          },
+          "capaZ": 10
+        }
+      ],
+      "duracionSegundos": 9.97,
+      "palabras": [
+        {
+          "palabra": "Y",
+          "inicioMs": 0,
+          "finMs": 200
+        },
+        {
+          "palabra": "aquí",
+          "inicioMs": 200,
+          "finMs": 420
+        },
+        {
+          "palabra": "está",
+          "inicioMs": 420,
+          "finMs": 700
+        },
+        {
+          "palabra": "la",
+          "inicioMs": 700,
+          "finMs": 820
+        },
+        {
+          "palabra": "ilusión",
+          "inicioMs": 820,
+          "finMs": 1280
+        },
+        {
+          "palabra": "parte",
+          "inicioMs": 1440,
+          "finMs": 1660
+        },
+        {
+          "palabra": "de",
+          "inicioMs": 1660,
+          "finMs": 1860
+        },
+        {
+          "palabra": "ese",
+          "inicioMs": 1860,
+          "finMs": 2040
+        },
+        {
+          "palabra": "gas",
+          "inicioMs": 2040,
+          "finMs": 2240
+        },
+        {
+          "palabra": "se",
+          "inicioMs": 2240,
+          "finMs": 2440
+        },
+        {
+          "palabra": "condensa",
+          "inicioMs": 2440,
+          "finMs": 2900
+        },
+        {
+          "palabra": "al",
+          "inicioMs": 2900,
+          "finMs": 3020
+        },
+        {
+          "palabra": "enfriarse",
+          "inicioMs": 3020,
+          "finMs": 3600
+        },
+        {
+          "palabra": "convirtiéndose",
+          "inicioMs": 3640,
+          "finMs": 4200
+        },
+        {
+          "palabra": "en",
+          "inicioMs": 4200,
+          "finMs": 4340
+        },
+        {
+          "palabra": "azufre",
+          "inicioMs": 4340,
+          "finMs": 4740
+        },
+        {
+          "palabra": "líquido",
+          "inicioMs": 4740,
+          "finMs": 5160
+        },
+        {
+          "palabra": "viscoso",
+          "inicioMs": 5160,
+          "finMs": 5700
+        },
+        {
+          "palabra": "que",
+          "inicioMs": 5700,
+          "finMs": 5860
+        },
+        {
+          "palabra": "sigue",
+          "inicioMs": 5860,
+          "finMs": 6100
+        },
+        {
+          "palabra": "ardiendo",
+          "inicioMs": 6100,
+          "finMs": 6440
+        },
+        {
+          "palabra": "en",
+          "inicioMs": 6440,
+          "finMs": 6640
+        },
+        {
+          "palabra": "azul",
+          "inicioMs": 6640,
+          "finMs": 6840
+        },
+        {
+          "palabra": "cobalto",
+          "inicioMs": 6840,
+          "finMs": 7400
+        },
+        {
+          "palabra": "mientras",
+          "inicioMs": 7400,
+          "finMs": 7640
+        },
+        {
+          "palabra": "se",
+          "inicioMs": 7640,
+          "finMs": 7900
+        },
+        {
+          "palabra": "derrama",
+          "inicioMs": 7900,
+          "finMs": 8220
+        },
+        {
+          "palabra": "por",
+          "inicioMs": 8220,
+          "finMs": 8420
+        },
+        {
+          "palabra": "las",
+          "inicioMs": 8420,
+          "finMs": 8560
+        },
+        {
+          "palabra": "laderas",
+          "inicioMs": 8560,
+          "finMs": 8880
+        },
+        {
+          "palabra": "del",
+          "inicioMs": 8880,
+          "finMs": 9060
+        },
+        {
+          "palabra": "cráter",
+          "inicioMs": 9060,
+          "finMs": 9500
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "texto": "Pero si vuelves a plena luz del día, el truco desaparece por completo. La llama sigue encendida, pero la intensa luz solar la vuelve invisible, revelando solo gigantescas rocas de azufre amarillo sólido.",
+      "icono": "Sun",
+      "colorIcono": "#FDE047",
+      "tituloVisual": "DE DÍA ES INVISIBLE",
+      "composicionVisual": "plano_general",
+      "escenario": "crater_kawah_ijen_dia",
+      "layout": "narrativo",
+      "transicion": "zoom_in",
+      "efectosCamara": [
+        "punch",
+        "drift"
+      ],
+      "sfx": "sfx/sfx_amanecer_timelapse_fumarola.wav",
+      "volumenSfx": 0.25,
+      "palabrasClave": [
+        "A PLENA LUZ DEL DÍA",
+        "DESAPARECE",
+        "LLAMA INVISIBLE",
+        "AZUFRE AMARILLO SÓLIDO"
+      ],
+      "personajes": [
+        {
+          "id": "explorador_dia",
+          "nombre": "Explorador de Día",
+          "posicion": {
+            "x": -220,
+            "y": 70
+          },
+          "escala": 1.0,
+          "orientacion": "derecha",
+          "poseId": "scratching_head",
+          "expresion": "confused",
+          "props": {
+            "derecha": "roca_azufre_amarillo_solido"
+          },
+          "capaZ": 10
+        }
+      ],
+      "duracionSegundos": 10.402,
+      "palabras": [
+        {
+          "palabra": "Pero",
+          "inicioMs": 0,
+          "finMs": 220
+        },
+        {
+          "palabra": "si",
+          "inicioMs": 220,
+          "finMs": 380
+        },
+        {
+          "palabra": "vuelves",
+          "inicioMs": 380,
+          "finMs": 680
+        },
+        {
+          "palabra": "a",
+          "inicioMs": 680,
+          "finMs": 800
+        },
+        {
+          "palabra": "plena",
+          "inicioMs": 800,
+          "finMs": 1060
+        },
+        {
+          "palabra": "luz",
+          "inicioMs": 1060,
+          "finMs": 1260
+        },
+        {
+          "palabra": "del",
+          "inicioMs": 1260,
+          "finMs": 1480
+        },
+        {
+          "palabra": "día",
+          "inicioMs": 1480,
+          "finMs": 1740
+        },
+        {
+          "palabra": "el",
+          "inicioMs": 1980,
+          "finMs": 2100
+        },
+        {
+          "palabra": "truco",
+          "inicioMs": 2100,
+          "finMs": 2380
+        },
+        {
+          "palabra": "desaparece",
+          "inicioMs": 2380,
+          "finMs": 2960
+        },
+        {
+          "palabra": "por",
+          "inicioMs": 2960,
+          "finMs": 3120
+        },
+        {
+          "palabra": "completo",
+          "inicioMs": 3120,
+          "finMs": 3620
+        },
+        {
+          "palabra": "La",
+          "inicioMs": 3940,
+          "finMs": 4020
+        },
+        {
+          "palabra": "llama",
+          "inicioMs": 4020,
+          "finMs": 4240
+        },
+        {
+          "palabra": "sigue",
+          "inicioMs": 4240,
+          "finMs": 4480
+        },
+        {
+          "palabra": "encendida",
+          "inicioMs": 4480,
+          "finMs": 5020
+        },
+        {
+          "palabra": "pero",
+          "inicioMs": 5140,
+          "finMs": 5240
+        },
+        {
+          "palabra": "la",
+          "inicioMs": 5240,
+          "finMs": 5340
+        },
+        {
+          "palabra": "intensa",
+          "inicioMs": 5340,
+          "finMs": 5720
+        },
+        {
+          "palabra": "luz",
+          "inicioMs": 5720,
+          "finMs": 5840
+        },
+        {
+          "palabra": "solar",
+          "inicioMs": 5840,
+          "finMs": 6120
+        },
+        {
+          "palabra": "la",
+          "inicioMs": 6120,
+          "finMs": 6300
+        },
+        {
+          "palabra": "vuelve",
+          "inicioMs": 6300,
+          "finMs": 6580
+        },
+        {
+          "palabra": "invisible",
+          "inicioMs": 6580,
+          "finMs": 6980
+        },
+        {
+          "palabra": "revelando",
+          "inicioMs": 7120,
+          "finMs": 7520
+        },
+        {
+          "palabra": "solo",
+          "inicioMs": 7520,
+          "finMs": 7720
+        },
+        {
+          "palabra": "gigantescas",
+          "inicioMs": 7720,
+          "finMs": 8340
+        },
+        {
+          "palabra": "rocas",
+          "inicioMs": 8340,
+          "finMs": 8680
+        },
+        {
+          "palabra": "de",
+          "inicioMs": 8680,
+          "finMs": 8800
+        },
+        {
+          "palabra": "azufre",
+          "inicioMs": 8800,
+          "finMs": 9120
+        },
+        {
+          "palabra": "amarillo",
+          "inicioMs": 9120,
+          "finMs": 9480
+        },
+        {
+          "palabra": "sólido",
+          "inicioMs": 9480,
+          "finMs": 9900
+        }
+      ]
+    },
+    {
+      "id": 7,
+      "texto": "No hay magia ni portales a otra dimensión: es solo la Tierra encendiendo en la penumbra el soplete natural más hermoso, hipnótico y letal de todo nuestro planeta.",
+      "icono": "Sparkles",
+      "colorIcono": "#A78BFA",
+      "tituloVisual": "SOPLETE NATURAL",
+      "composicionVisual": "plano_general",
+      "escenario": "panoramica_kawah_ijen_cierre",
+      "layout": "narrativo",
+      "transicion": "whip_left",
+      "efectosCamara": [
+        "punch",
+        "drift"
+      ],
+      "sfx": "sfx/sfx_remate_volcan_azul_soplete.wav",
+      "volumenSfx": 0.25,
+      "palabrasClave": [
+        "NO HAY MAGIA",
+        "EN LA PENUMBRA",
+        "SOPLETE NATURAL",
+        "HERMOSO",
+        "LETAL"
+      ],
+      "personajes": [
+        {
+          "id": "explorador_cierre",
+          "nombre": "Explorador Cierre",
+          "posicion": {
+            "x": -200,
+            "y": 70
+          },
+          "escala": 1.0,
+          "orientacion": "derecha",
+          "poseId": "thumbs_up_approval",
+          "expresion": "smile_wide",
+          "props": {
+            "cara": "mascara_antigas_industrial"
+          },
+          "capaZ": 10
+        }
+      ],
+      "duracionSegundos": 8.218,
+      "palabras": [
+        {
+          "palabra": "No",
+          "inicioMs": 0,
+          "finMs": 220
+        },
+        {
+          "palabra": "hay",
+          "inicioMs": 220,
+          "finMs": 580
+        },
+        {
+          "palabra": "magia",
+          "inicioMs": 580,
+          "finMs": 860
+        },
+        {
+          "palabra": "ni",
+          "inicioMs": 860,
+          "finMs": 1260
+        },
+        {
+          "palabra": "portales",
+          "inicioMs": 1260,
+          "finMs": 1420
+        },
+        {
+          "palabra": "a",
+          "inicioMs": 1420,
+          "finMs": 1580
+        },
+        {
+          "palabra": "otra",
+          "inicioMs": 1580,
+          "finMs": 2180
+        },
+        {
+          "palabra": "dimensión",
+          "inicioMs": 2180,
+          "finMs": 2380
+        },
+        {
+          "palabra": "es",
+          "inicioMs": 2380,
+          "finMs": 2580
+        },
+        {
+          "palabra": "solo",
+          "inicioMs": 2580,
+          "finMs": 2760
+        },
+        {
+          "palabra": "la",
+          "inicioMs": 2760,
+          "finMs": 2980
+        },
+        {
+          "palabra": "Tierra",
+          "inicioMs": 2980,
+          "finMs": 3560
+        },
+        {
+          "palabra": "encendiendo",
+          "inicioMs": 3560,
+          "finMs": 3660
+        },
+        {
+          "palabra": "en",
+          "inicioMs": 3660,
+          "finMs": 3720
+        },
+        {
+          "palabra": "la",
+          "inicioMs": 3720,
+          "finMs": 4160
+        },
+        {
+          "palabra": "penumbra",
+          "inicioMs": 4160,
+          "finMs": 4260
+        },
+        {
+          "palabra": "el",
+          "inicioMs": 4260,
+          "finMs": 4500
+        },
+        {
+          "palabra": "soplete",
+          "inicioMs": 4500,
+          "finMs": 4900
+        },
+        {
+          "palabra": "natural",
+          "inicioMs": 4900,
+          "finMs": 5140
+        },
+        {
+          "palabra": "más",
+          "inicioMs": 5140,
+          "finMs": 5760
+        },
+        {
+          "palabra": "hermoso",
+          "inicioMs": 5760,
+          "finMs": 6080
+        },
+        {
+          "palabra": "hipnótico",
+          "inicioMs": 6080,
+          "finMs": 6560
+        },
+        {
+          "palabra": "y",
+          "inicioMs": 6560,
+          "finMs": 6620
+        },
+        {
+          "palabra": "letal",
+          "inicioMs": 6620,
+          "finMs": 6880
+        },
+        {
+          "palabra": "de",
+          "inicioMs": 6880,
+          "finMs": 7020
+        },
+        {
+          "palabra": "todo",
+          "inicioMs": 7020,
+          "finMs": 7180
+        },
+        {
+          "palabra": "nuestro",
+          "inicioMs": 7180,
+          "finMs": 7460
+        },
+        {
+          "palabra": "planeta",
+          "inicioMs": 7460,
+          "finMs": 7720
+        }
+      ]
+    }
+  ]
+}

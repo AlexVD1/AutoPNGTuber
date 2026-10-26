@@ -2,7 +2,19 @@
   "meta": {
     "id": "tiempo_bajo_tierra_gravedad",
     "slug": "tiempo_bajo_tierra_gravedad",
-    "temaResumen": "¿Por qué el centro de la Tierra es 2.5 años más joven que la corteza debido a la dilatación gravitacional de Einstein?"
+    "temaResumen": "¿Por qué el centro de la Tierra es 2.5 años más joven que la corteza debido a la dilatación gravitacional de Einstein?",
+    "titulo": "¿Por qué el centro de la Tierra es más joven que el suelo?",
+    "titulo_corto": "CENTRO TIERRA TIEMPO",
+    "gancho": "¿Sabías que el centro de la Tierra es dos años y medio más joven que la superficie donde estás parado en este momento?",
+    "fuentes": [
+      "Uggerhøj, Møller & Pesce (European Journal of Physics, 2016: The young centre of the Earth)",
+      "Richard Feynman: Lectures on Physics (Gravitational Potential & Time Dilation)"
+    ],
+    "genero": "SCIENCE",
+    "duracionObjetivo": [
+      62,
+      110
+    ]
   },
   "escenas": [
     {
@@ -47,122 +59,122 @@
           "habla": true
         }
       ],
-      "duracionSegundos": 4.954,
+      "duracionSegundos": 5.746,
       "palabras": [
         {
           "palabra": "Sabías",
           "inicioMs": 0,
-          "finMs": 340
+          "finMs": 440
         },
         {
           "palabra": "que",
-          "inicioMs": 340,
-          "finMs": 480
+          "inicioMs": 440,
+          "finMs": 600
         },
         {
           "palabra": "el",
-          "inicioMs": 480,
-          "finMs": 560
+          "inicioMs": 600,
+          "finMs": 700
         },
         {
           "palabra": "centro",
-          "inicioMs": 560,
-          "finMs": 800
+          "inicioMs": 700,
+          "finMs": 940
         },
         {
           "palabra": "de",
-          "inicioMs": 800,
-          "finMs": 900
+          "inicioMs": 940,
+          "finMs": 1100
         },
         {
           "palabra": "la",
-          "inicioMs": 900,
-          "finMs": 1000
+          "inicioMs": 1100,
+          "finMs": 1200
         },
         {
           "palabra": "Tierra",
-          "inicioMs": 1000,
-          "finMs": 1240
+          "inicioMs": 1200,
+          "finMs": 1480
         },
         {
           "palabra": "es",
-          "inicioMs": 1240,
-          "finMs": 1360
+          "inicioMs": 1480,
+          "finMs": 1600
         },
         {
           "palabra": "dos",
-          "inicioMs": 1360,
-          "finMs": 1520
+          "inicioMs": 1600,
+          "finMs": 1720
         },
         {
           "palabra": "años",
-          "inicioMs": 1520,
-          "finMs": 1780
+          "inicioMs": 1720,
+          "finMs": 2000
         },
         {
           "palabra": "y",
-          "inicioMs": 1780,
-          "finMs": 1940
+          "inicioMs": 2000,
+          "finMs": 2160
         },
         {
           "palabra": "medio",
-          "inicioMs": 1940,
-          "finMs": 2100
+          "inicioMs": 2160,
+          "finMs": 2360
         },
         {
           "palabra": "más",
-          "inicioMs": 2100,
-          "finMs": 2280
+          "inicioMs": 2360,
+          "finMs": 2600
         },
         {
           "palabra": "joven",
-          "inicioMs": 2280,
-          "finMs": 2520
+          "inicioMs": 2600,
+          "finMs": 2940
         },
         {
           "palabra": "que",
-          "inicioMs": 2520,
-          "finMs": 2620
+          "inicioMs": 2940,
+          "finMs": 3040
         },
         {
           "palabra": "la",
-          "inicioMs": 2620,
-          "finMs": 2720
+          "inicioMs": 3040,
+          "finMs": 3140
         },
         {
           "palabra": "superficie",
-          "inicioMs": 2720,
-          "finMs": 3240
+          "inicioMs": 3140,
+          "finMs": 3720
         },
         {
           "palabra": "donde",
-          "inicioMs": 3240,
-          "finMs": 3360
-        },
-        {
-          "palabra": "estás",
-          "inicioMs": 3360,
-          "finMs": 3560
-        },
-        {
-          "palabra": "parado",
-          "inicioMs": 3560,
+          "inicioMs": 3720,
           "finMs": 3880
         },
         {
-          "palabra": "en",
+          "palabra": "estás",
           "inicioMs": 3880,
-          "finMs": 3960
+          "finMs": 4140
+        },
+        {
+          "palabra": "parado",
+          "inicioMs": 4140,
+          "finMs": 4560
+        },
+        {
+          "palabra": "en",
+          "inicioMs": 4560,
+          "finMs": 4660
         },
         {
           "palabra": "este",
-          "inicioMs": 3960,
-          "finMs": 4100
+          "inicioMs": 4660,
+          "finMs": 4820
         },
         {
           "palabra": "momento",
-          "inicioMs": 4100,
-          "finMs": 4440
+          "inicioMs": 4820,
+          "finMs": 5220
         }
       ]
     },
@@ -198,122 +210,122 @@
           "habla": true
         }
       ],
-      "duracionSegundos": 6.73,
+      "duracionSegundos": 7.162,
       "palabras": [
         {
           "palabra": "Parece",
           "inicioMs": 0,
-          "finMs": 300
+          "finMs": 320
         },
         {
           "palabra": "un",
-          "inicioMs": 300,
-          "finMs": 460
+          "inicioMs": 320,
+          "finMs": 520
         },
         {
           "palabra": "disparate",
-          "inicioMs": 460,
-          "finMs": 900
+          "inicioMs": 520,
+          "finMs": 980
         },
         {
           "palabra": "imposible",
-          "inicioMs": 900,
-          "finMs": 1460
+          "inicioMs": 980,
+          "finMs": 1580
         },
         {
           "palabra": "todo",
-          "inicioMs": 1540,
-          "finMs": 1660
+          "inicioMs": 1840,
+          "finMs": 1980
         },
         {
           "palabra": "el",
-          "inicioMs": 1660,
-          "finMs": 1800
+          "inicioMs": 1980,
+          "finMs": 2100
         },
         {
           "palabra": "planeta",
-          "inicioMs": 1800,
-          "finMs": 2040
+          "inicioMs": 2100,
+          "finMs": 2400
         },
         {
           "palabra": "se",
-          "inicioMs": 2040,
-          "finMs": 2260
+          "inicioMs": 2400,
+          "finMs": 2640
         },
         {
           "palabra": "formó",
-          "inicioMs": 2260,
-          "finMs": 2600
+          "inicioMs": 2640,
+          "finMs": 2980
         },
         {
           "palabra": "hace",
-          "inicioMs": 2600,
-          "finMs": 2760
+          "inicioMs": 2980,
+          "finMs": 3140
         },
         {
           "palabra": "cuatro",
-          "inicioMs": 2760,
-          "finMs": 3740
+          "inicioMs": 3140,
+          "finMs": 3520
         },
         {
           "palabra": "mil",
-          "inicioMs": 3740,
-          "finMs": 4180
+          "inicioMs": 3520,
+          "finMs": 4060
         },
         {
           "palabra": "quinientos",
-          "inicioMs": 4180,
-          "finMs": 4360
+          "inicioMs": 4060,
+          "finMs": 4460
         },
         {
           "palabra": "millones",
-          "inicioMs": 4360,
-          "finMs": 4580
+          "inicioMs": 4460,
+          "finMs": 4700
         },
         {
           "palabra": "de",
-          "inicioMs": 4580,
-          "finMs": 4740
+          "inicioMs": 4700,
+          "finMs": 4920
         },
         {
           "palabra": "años",
-          "inicioMs": 4740,
-          "finMs": 4960
+          "inicioMs": 4920,
+          "finMs": 5080
         },
         {
           "palabra": "a",
-          "inicioMs": 4960,
-          "finMs": 5160
+          "inicioMs": 5080,
+          "finMs": 5320
         },
         {
           "palabra": "partir",
-          "inicioMs": 5160,
-          "finMs": 5240
+          "inicioMs": 5320,
+          "finMs": 5520
         },
         {
           "palabra": "de",
-          "inicioMs": 5240,
-          "finMs": 5460
+          "inicioMs": 5520,
+          "finMs": 5620
         },
         {
           "palabra": "la",
-          "inicioMs": 5460,
-          "finMs": 5740
+          "inicioMs": 5620,
+          "finMs": 5840
         },
         {
           "palabra": "misma",
-          "inicioMs": 5740,
-          "finMs": 6240
+          "inicioMs": 5840,
+          "finMs": 6120
         },
         {
           "palabra": "nube",
-          "inicioMs": 6240,
-          "finMs": 6360
+          "inicioMs": 6120,
+          "finMs": 6680
         },
         {
           "palabra": "cósmica",
-          "inicioMs": 6240,
-          "finMs": 6360
+          "inicioMs": 6680,
+          "finMs": 6912
         }
       ]
     },
@@ -368,7 +380,7 @@
           "capaZ": 25
         }
       ],
-      "duracionSegundos": 7.498,
+      "duracionSegundos": 7.066,
       "palabras": [
         {
           "palabra": "Pero",
@@ -388,16 +400,16 @@
         {
           "palabra": "se",
           "inicioMs": 860,
-          "finMs": 1040
+          "finMs": 1020
         },
         {
           "palabra": "oculta",
-          "inicioMs": 1040,
-          "finMs": 1440
+          "inicioMs": 1020,
+          "finMs": 1420
         },
         {
           "palabra": "en",
-          "inicioMs": 1440,
+          "inicioMs": 1420,
           "finMs": 1480
         },
         {
@@ -408,97 +420,97 @@
         {
           "palabra": "Teoría",
           "inicioMs": 1540,
-          "finMs": 1920
+          "finMs": 1860
         },
         {
           "palabra": "de",
-          "inicioMs": 1920,
+          "inicioMs": 1860,
+          "finMs": 1940
+        },
+        {
+          "palabra": "la",
+          "inicioMs": 1940,
           "finMs": 2020
         },
         {
-          "palabra": "la",
-          "inicioMs": 2020,
-          "finMs": 2140
-        },
-        {
           "palabra": "Relatividad",
-          "inicioMs": 2140,
-          "finMs": 2580
+          "inicioMs": 2020,
+          "finMs": 2520
         },
         {
           "palabra": "General",
-          "inicioMs": 2580,
-          "finMs": 2960
+          "inicioMs": 2520,
+          "finMs": 2880
         },
         {
           "palabra": "de",
-          "inicioMs": 2960,
-          "finMs": 3260
+          "inicioMs": 2880,
+          "finMs": 3080
         },
         {
           "palabra": "Albert",
-          "inicioMs": 3260,
-          "finMs": 3600
+          "inicioMs": 3080,
+          "finMs": 3320
         },
         {
           "palabra": "Einstein",
-          "inicioMs": 3600,
-          "finMs": 4180
+          "inicioMs": 3320,
+          "finMs": 3820
         },
         {
           "palabra": "la",
-          "inicioMs": 4340,
-          "finMs": 4420
+          "inicioMs": 3980,
+          "finMs": 4040
         },
         {
           "palabra": "masa",
-          "inicioMs": 4420,
-          "finMs": 4720
+          "inicioMs": 4040,
+          "finMs": 4280
         },
         {
           "palabra": "y",
-          "inicioMs": 4720,
-          "finMs": 4840
+          "inicioMs": 4280,
+          "finMs": 4380
         },
         {
           "palabra": "la",
-          "inicioMs": 4840,
-          "finMs": 4920
+          "inicioMs": 4380,
+          "finMs": 4460
         },
         {
           "palabra": "gravedad",
-          "inicioMs": 4920,
-          "finMs": 5360
+          "inicioMs": 4460,
+          "finMs": 4920
         },
         {
           "palabra": "curvan",
-          "inicioMs": 5360,
-          "finMs": 5700
+          "inicioMs": 4920,
+          "finMs": 5240
         },
         {
           "palabra": "el",
-          "inicioMs": 5700,
-          "finMs": 5860
+          "inicioMs": 5240,
+          "finMs": 5420
         },
         {
           "palabra": "propio",
-          "inicioMs": 5860,
-          "finMs": 6080
+          "inicioMs": 5420,
+          "finMs": 5660
         },
         {
           "palabra": "tejido",
-          "inicioMs": 6080,
-          "finMs": 6500
+          "inicioMs": 5660,
+          "finMs": 6080
         },
         {
           "palabra": "del",
-          "inicioMs": 6500,
-          "finMs": 6660
+          "inicioMs": 6080,
+          "finMs": 6240
         },
         {
           "palabra": "tiempo",
-          "inicioMs": 6660,
-          "finMs": 7020
+          "inicioMs": 6240,
+          "finMs": 6600
         }
       ]
     },
@@ -535,7 +547,7 @@
           "habla": true
         }
       ],
-      "duracionSegundos": 6.658,
+      "duracionSegundos": 6.466,
       "palabras": [
         {
           "palabra": "La",
@@ -545,97 +557,97 @@
         {
           "palabra": "regla",
           "inicioMs": 180,
-          "finMs": 460
+          "finMs": 440
         },
         {
           "palabra": "cósmica",
-          "inicioMs": 460,
+          "inicioMs": 440,
           "finMs": 880
         },
         {
           "palabra": "es",
           "inicioMs": 880,
-          "finMs": 1020
+          "finMs": 980
         },
         {
           "palabra": "implacable",
-          "inicioMs": 1020,
-          "finMs": 1600
+          "inicioMs": 980,
+          "finMs": 1540
         },
         {
           "palabra": "cuanto",
-          "inicioMs": 1720,
-          "finMs": 1840
+          "inicioMs": 1680,
+          "finMs": 1820
         },
         {
           "palabra": "más",
-          "inicioMs": 1840,
-          "finMs": 2080
+          "inicioMs": 1820,
+          "finMs": 2040
         },
         {
           "palabra": "profundo",
-          "inicioMs": 2080,
-          "finMs": 2480
+          "inicioMs": 2040,
+          "finMs": 2460
         },
         {
           "palabra": "estés",
-          "inicioMs": 2480,
-          "finMs": 2660
+          "inicioMs": 2460,
+          "finMs": 2760
         },
         {
           "palabra": "dentro",
-          "inicioMs": 2660,
-          "finMs": 2960
+          "inicioMs": 2760,
+          "finMs": 2940
         },
         {
           "palabra": "de",
-          "inicioMs": 2960,
-          "finMs": 3120
+          "inicioMs": 2940,
+          "finMs": 3060
         },
         {
           "palabra": "un",
-          "inicioMs": 3120,
-          "finMs": 3200
+          "inicioMs": 3060,
+          "finMs": 3140
         },
         {
           "palabra": "pozo",
-          "inicioMs": 3200,
-          "finMs": 3460
+          "inicioMs": 3140,
+          "finMs": 3400
         },
         {
           "palabra": "gravitacional",
-          "inicioMs": 3460,
-          "finMs": 4160
+          "inicioMs": 3400,
+          "finMs": 4080
         },
         {
           "palabra": "el",
-          "inicioMs": 4240,
-          "finMs": 4340
+          "inicioMs": 4160,
+          "finMs": 4220
         },
         {
           "palabra": "reloj",
-          "inicioMs": 4340,
-          "finMs": 4720
+          "inicioMs": 4220,
+          "finMs": 4740
         },
         {
           "palabra": "corre",
-          "inicioMs": 4720,
-          "finMs": 4860
+          "inicioMs": 4740,
+          "finMs": 5160
         },
         {
           "palabra": "físicamente",
-          "inicioMs": 4860,
-          "finMs": 5360
+          "inicioMs": 5160,
+          "finMs": 5480
         },
         {
           "palabra": "más",
-          "inicioMs": 5360,
-          "finMs": 5680
+          "inicioMs": 5480,
+          "finMs": 6000
         },
         {
           "palabra": "despacio",
-          "inicioMs": 5680,
-          "finMs": 6200
+          "inicioMs": 6000,
+          "finMs": 6216
         }
       ]
     },
@@ -672,7 +684,7 @@
           "habla": true
         }
       ],
-      "duracionSegundos": 6.394,
+      "duracionSegundos": 6.61,
       "palabras": [
         {
           "palabra": "En",
@@ -687,112 +699,112 @@
         {
           "palabra": "años",
           "inicioMs": 280,
-          "finMs": 520
+          "finMs": 540
         },
         {
           "palabra": "sesenta",
-          "inicioMs": 520,
-          "finMs": 1000
+          "inicioMs": 540,
+          "finMs": 1040
         },
         {
           "palabra": "el",
-          "inicioMs": 1120,
-          "finMs": 1220
+          "inicioMs": 1160,
+          "finMs": 1240
         },
         {
           "palabra": "genial",
-          "inicioMs": 1220,
-          "finMs": 1440
+          "inicioMs": 1240,
+          "finMs": 1480
         },
         {
           "palabra": "físico",
-          "inicioMs": 1440,
-          "finMs": 1860
+          "inicioMs": 1480,
+          "finMs": 1960
         },
         {
           "palabra": "Richard",
-          "inicioMs": 1860,
-          "finMs": 2120
+          "inicioMs": 1960,
+          "finMs": 2200
         },
         {
           "palabra": "Feynman",
-          "inicioMs": 2120,
-          "finMs": 2580
+          "inicioMs": 2200,
+          "finMs": 2680
         },
         {
           "palabra": "calculó",
-          "inicioMs": 2580,
-          "finMs": 3060
-        },
-        {
-          "palabra": "que",
-          "inicioMs": 3060,
+          "inicioMs": 2680,
           "finMs": 3180
         },
         {
-          "palabra": "el",
+          "palabra": "que",
           "inicioMs": 3180,
-          "finMs": 3280
+          "finMs": 3300
+        },
+        {
+          "palabra": "el",
+          "inicioMs": 3300,
+          "finMs": 3380
         },
         {
           "palabra": "núcleo",
-          "inicioMs": 3280,
-          "finMs": 3520
+          "inicioMs": 3380,
+          "finMs": 3720
         },
         {
           "palabra": "de",
-          "inicioMs": 3520,
-          "finMs": 3640
+          "inicioMs": 3720,
+          "finMs": 3800
         },
         {
           "palabra": "la",
-          "inicioMs": 3640,
-          "finMs": 3740
+          "inicioMs": 3800,
+          "finMs": 3900
         },
         {
           "palabra": "Tierra",
-          "inicioMs": 3740,
-          "finMs": 3940
+          "inicioMs": 3900,
+          "finMs": 4120
         },
         {
           "palabra": "debía",
-          "inicioMs": 3940,
-          "finMs": 4260
+          "inicioMs": 4120,
+          "finMs": 4480
         },
         {
           "palabra": "ser",
-          "inicioMs": 4260,
-          "finMs": 4400
+          "inicioMs": 4480,
+          "finMs": 4620
         },
         {
           "palabra": "más",
-          "inicioMs": 4400,
-          "finMs": 4560
+          "inicioMs": 4620,
+          "finMs": 4820
         },
         {
           "palabra": "joven",
-          "inicioMs": 4560,
-          "finMs": 4900
+          "inicioMs": 4820,
+          "finMs": 5140
         },
         {
           "palabra": "que",
-          "inicioMs": 4900,
-          "finMs": 5040
+          "inicioMs": 5140,
+          "finMs": 5260
         },
         {
           "palabra": "su",
-          "inicioMs": 5040,
-          "finMs": 5180
+          "inicioMs": 5260,
+          "finMs": 5400
         },
         {
           "palabra": "corteza",
-          "inicioMs": 5180,
-          "finMs": 5540
+          "inicioMs": 5400,
+          "finMs": 5760
         },
         {
           "palabra": "exterior",
-          "inicioMs": 5540,
-          "finMs": 5920
+          "inicioMs": 5760,
+          "finMs": 6120
         }
       ]
     },
@@ -829,112 +841,112 @@
           "habla": true
         }
       ],
-      "duracionSegundos": 8.314,
+      "duracionSegundos": 8.458,
       "palabras": [
         {
           "palabra": "En",
           "inicioMs": 0,
-          "finMs": 200
+          "finMs": 220
         },
         {
           "palabra": "dos",
-          "inicioMs": 200,
-          "finMs": 840
+          "inicioMs": 220,
+          "finMs": 900
         },
         {
           "palabra": "mil",
-          "inicioMs": 1060,
-          "finMs": 1640
+          "inicioMs": 1240,
+          "finMs": 1840
         },
         {
           "palabra": "dieciséis",
-          "inicioMs": 1640,
-          "finMs": 1740
+          "inicioMs": 1840,
+          "finMs": 1960
         },
         {
           "palabra": "astrofísicos",
-          "inicioMs": 1740,
-          "finMs": 1820
+          "inicioMs": 1960,
+          "finMs": 2060
         },
         {
           "palabra": "de",
-          "inicioMs": 1820,
-          "finMs": 2320
+          "inicioMs": 2060,
+          "finMs": 2540
         },
         {
           "palabra": "la",
-          "inicioMs": 2320,
-          "finMs": 2580
+          "inicioMs": 2540,
+          "finMs": 2760
         },
         {
           "palabra": "Universidad",
-          "inicioMs": 2580,
-          "finMs": 2860
+          "inicioMs": 2760,
+          "finMs": 3120
         },
         {
           "palabra": "de",
-          "inicioMs": 2860,
-          "finMs": 3060
+          "inicioMs": 3120,
+          "finMs": 3420
         },
         {
           "palabra": "Aarhus",
-          "inicioMs": 3060,
-          "finMs": 3580
+          "inicioMs": 3420,
+          "finMs": 4000
         },
         {
           "palabra": "en",
-          "inicioMs": 3580,
-          "finMs": 4140
+          "inicioMs": 4000,
+          "finMs": 4580
         },
         {
           "palabra": "Dinamarca",
-          "inicioMs": 4140,
-          "finMs": 4600
+          "inicioMs": 4580,
+          "finMs": 5000
         },
         {
           "palabra": "utilizaron",
-          "inicioMs": 4600,
-          "finMs": 5320
+          "inicioMs": 5000,
+          "finMs": 5680
         },
         {
           "palabra": "mediciones",
-          "inicioMs": 5320,
-          "finMs": 6100
-        },
-        {
-          "palabra": "geofísicas",
-          "inicioMs": 6100,
+          "inicioMs": 5680,
           "finMs": 6280
         },
         {
-          "palabra": "precisas",
+          "palabra": "geofísicas",
           "inicioMs": 6280,
-          "finMs": 6640
+          "finMs": 6460
+        },
+        {
+          "palabra": "precisas",
+          "inicioMs": 6460,
+          "finMs": 6820
         },
         {
           "palabra": "para",
-          "inicioMs": 6640,
-          "finMs": 6880
+          "inicioMs": 6820,
+          "finMs": 7080
         },
         {
           "palabra": "resolver",
-          "inicioMs": 6880,
-          "finMs": 7200
+          "inicioMs": 7080,
+          "finMs": 7360
         },
         {
           "palabra": "la",
-          "inicioMs": 7200,
-          "finMs": 7840
+          "inicioMs": 7360,
+          "finMs": 7980
         },
         {
           "palabra": "ecuación",
-          "inicioMs": 7840,
-          "finMs": 7952
+          "inicioMs": 7980,
+          "finMs": 8094
         },
         {
           "palabra": "definitiva",
-          "inicioMs": 7840,
-          "finMs": 7952
+          "inicioMs": 7980,
+          "finMs": 8094
         }
       ]
     },
@@ -971,7 +983,7 @@
           "habla": true
         }
       ],
-      "duracionSegundos": 7.402,
+      "duracionSegundos": 7.282,
       "palabras": [
         {
           "palabra": "Descubrieron",
@@ -986,76 +998,76 @@
         {
           "palabra": "la",
           "inicioMs": 760,
-          "finMs": 860
+          "finMs": 840
         },
         {
           "palabra": "diferencia",
-          "inicioMs": 860,
-          "finMs": 1260
+          "inicioMs": 840,
+          "finMs": 1200
         },
         {
           "palabra": "de",
-          "inicioMs": 1260,
-          "finMs": 1460
+          "inicioMs": 1200,
+          "finMs": 1440
         },
         {
           "palabra": "potencial",
-          "inicioMs": 1460,
-          "finMs": 1960
+          "inicioMs": 1440,
+          "finMs": 1920
         },
         {
           "palabra": "gravitatorio",
-          "inicioMs": 1960,
-          "finMs": 2660
+          "inicioMs": 1920,
+          "finMs": 2600
         },
         {
           "palabra": "hace",
-          "inicioMs": 2660,
-          "finMs": 3000
+          "inicioMs": 2600,
+          "finMs": 2860
         },
         {
           "palabra": "que",
-          "inicioMs": 3000,
-          "finMs": 3160
+          "inicioMs": 2860,
+          "finMs": 3040
         },
         {
           "palabra": "el",
-          "inicioMs": 3160,
-          "finMs": 3260
+          "inicioMs": 3040,
+          "finMs": 3160
         },
         {
           "palabra": "tiempo",
-          "inicioMs": 3260,
-          "finMs": 3560
+          "inicioMs": 3160,
+          "finMs": 3460
         },
         {
           "palabra": "en",
+          "inicioMs": 3460,
+          "finMs": 3560
+        },
+        {
+          "palabra": "el",
           "inicioMs": 3560,
           "finMs": 3680
         },
         {
-          "palabra": "el",
-          "inicioMs": 3680,
-          "finMs": 3780
-        },
-        {
           "palabra": "núcleo",
-          "inicioMs": 3780,
-          "finMs": 4200
+          "inicioMs": 3680,
+          "finMs": 4040
         },
         {
           "palabra": "se",
-          "inicioMs": 4200,
-          "finMs": 4280
+          "inicioMs": 4040,
+          "finMs": 4140
         },
         {
           "palabra": "retrase",
-          "inicioMs": 4280,
-          "finMs": 4700
+          "inicioMs": 4140,
+          "finMs": 4620
         },
         {
           "palabra": "una",
-          "inicioMs": 4700,
+          "inicioMs": 4620,
           "finMs": 4820
         },
         {
@@ -1066,27 +1078,27 @@
         {
           "palabra": "fracción",
           "inicioMs": 5180,
-          "finMs": 5680
+          "finMs": 5620
         },
         {
           "palabra": "de",
-          "inicioMs": 5680,
-          "finMs": 5840
+          "inicioMs": 5620,
+          "finMs": 5780
         },
         {
           "palabra": "segundo",
-          "inicioMs": 5840,
-          "finMs": 6260
+          "inicioMs": 5780,
+          "finMs": 6160
         },
         {
           "palabra": "cada",
-          "inicioMs": 6400,
-          "finMs": 6600
+          "inicioMs": 6300,
+          "finMs": 6480
         },
         {
           "palabra": "día",
-          "inicioMs": 6600,
-          "finMs": 6900
+          "inicioMs": 6480,
+          "finMs": 6820
         }
       ]
     },
@@ -1141,7 +1153,7 @@
           "capaZ": 25
         }
       ],
-      "duracionSegundos": 7.69,
+      "duracionSegundos": 8.41,
       "palabras": [
         {
           "palabra": "A",
@@ -1156,97 +1168,97 @@
         {
           "palabra": "vista",
           "inicioMs": 440,
-          "finMs": 720
+          "finMs": 740
         },
         {
           "palabra": "parece",
-          "inicioMs": 720,
-          "finMs": 940
+          "inicioMs": 740,
+          "finMs": 1000
         },
         {
           "palabra": "nada",
-          "inicioMs": 940,
-          "finMs": 1340
+          "inicioMs": 1000,
+          "finMs": 1420
         },
         {
           "palabra": "Pero",
-          "inicioMs": 1780,
-          "finMs": 1980
+          "inicioMs": 1700,
+          "finMs": 2700
         },
         {
           "palabra": "al",
-          "inicioMs": 1980,
-          "finMs": 2120
+          "inicioMs": 2700,
+          "finMs": 2960
         },
         {
           "palabra": "acumular",
-          "inicioMs": 2120,
-          "finMs": 2560
+          "inicioMs": 2960,
+          "finMs": 3420
         },
         {
           "palabra": "ese",
-          "inicioMs": 2560,
-          "finMs": 2820
+          "inicioMs": 3420,
+          "finMs": 3800
         },
         {
           "palabra": "micro-desfase",
-          "inicioMs": 2820,
-          "finMs": 3100
+          "inicioMs": 3800,
+          "finMs": 4900
         },
         {
           "palabra": "diario",
-          "inicioMs": 3100,
-          "finMs": 3940
+          "inicioMs": 4900,
+          "finMs": 5200
         },
         {
           "palabra": "durante",
-          "inicioMs": 3940,
-          "finMs": 4300
+          "inicioMs": 5200,
+          "finMs": 5480
         },
         {
           "palabra": "más",
-          "inicioMs": 4300,
-          "finMs": 4580
+          "inicioMs": 5480,
+          "finMs": 5640
         },
         {
           "palabra": "de",
-          "inicioMs": 4580,
-          "finMs": 4740
+          "inicioMs": 5640,
+          "finMs": 5960
         },
         {
           "palabra": "cuatro",
-          "inicioMs": 4740,
-          "finMs": 5100
+          "inicioMs": 5960,
+          "finMs": 6440
         },
         {
           "palabra": "mil",
-          "inicioMs": 5100,
-          "finMs": 5580
+          "inicioMs": 6440,
+          "finMs": 6860
         },
         {
           "palabra": "quinientos",
-          "inicioMs": 5580,
-          "finMs": 6060
+          "inicioMs": 6860,
+          "finMs": 7080
         },
         {
           "palabra": "millones",
-          "inicioMs": 6060,
-          "finMs": 6360
+          "inicioMs": 7080,
+          "finMs": 7240
         },
         {
           "palabra": "de",
-          "inicioMs": 6360,
-          "finMs": 6540
+          "inicioMs": 7240,
+          "finMs": 7940
         },
         {
           "palabra": "años",
-          "inicioMs": 6540,
-          "finMs": 7220
+          "inicioMs": 7940,
+          "finMs": 8050
         },
         {
           "palabra": "continuos",
-          "inicioMs": 7220,
-          "finMs": 7440
+          "inicioMs": 7940,
+          "finMs": 8050
         }
       ]
     },
@@ -1286,122 +1298,122 @@
           "habla": true
         }
       ],
-      "duracionSegundos": 6.682,
+      "duracionSegundos": 7.162,
       "palabras": [
         {
           "palabra": "El",
           "inicioMs": 0,
-          "finMs": 180
+          "finMs": 200
         },
         {
           "palabra": "corazón",
-          "inicioMs": 180,
-          "finMs": 420
+          "inicioMs": 200,
+          "finMs": 520
         },
         {
           "palabra": "ardiente",
-          "inicioMs": 420,
-          "finMs": 920
+          "inicioMs": 520,
+          "finMs": 940
         },
         {
           "palabra": "de",
-          "inicioMs": 920,
-          "finMs": 1060
+          "inicioMs": 940,
+          "finMs": 1100
         },
         {
           "palabra": "la",
-          "inicioMs": 1060,
-          "finMs": 1160
+          "inicioMs": 1100,
+          "finMs": 1200
         },
         {
           "palabra": "Tierra",
-          "inicioMs": 1160,
-          "finMs": 1460
+          "inicioMs": 1200,
+          "finMs": 1500
         },
         {
           "palabra": "ha",
-          "inicioMs": 1460,
-          "finMs": 1680
+          "inicioMs": 1500,
+          "finMs": 1960
         },
         {
           "palabra": "vivido",
-          "inicioMs": 1680,
-          "finMs": 2440
+          "inicioMs": 1960,
+          "finMs": 2280
         },
         {
           "palabra": "exactamente",
-          "inicioMs": 2440,
-          "finMs": 2840
+          "inicioMs": 2280,
+          "finMs": 2640
         },
         {
           "palabra": "dos",
-          "inicioMs": 2840,
-          "finMs": 3200
+          "inicioMs": 2640,
+          "finMs": 3140
         },
         {
           "palabra": "años",
-          "inicioMs": 3200,
-          "finMs": 3400
+          "inicioMs": 3140,
+          "finMs": 3460
         },
         {
           "palabra": "y",
-          "inicioMs": 3400,
-          "finMs": 3580
+          "inicioMs": 3460,
+          "finMs": 3640
         },
         {
           "palabra": "medio",
-          "inicioMs": 3580,
-          "finMs": 3900
+          "inicioMs": 3640,
+          "finMs": 3860
         },
         {
           "palabra": "menos",
-          "inicioMs": 3900,
-          "finMs": 4100
+          "inicioMs": 3860,
+          "finMs": 4160
         },
         {
           "palabra": "que",
-          "inicioMs": 4100,
-          "finMs": 4180
+          "inicioMs": 4160,
+          "finMs": 4340
         },
         {
           "palabra": "la",
-          "inicioMs": 4180,
-          "finMs": 4680
+          "inicioMs": 4340,
+          "finMs": 4420
         },
         {
           "palabra": "superficie",
-          "inicioMs": 4680,
-          "finMs": 5100
+          "inicioMs": 4420,
+          "finMs": 5000
         },
         {
           "palabra": "rocosa",
-          "inicioMs": 5100,
-          "finMs": 5320
+          "inicioMs": 5000,
+          "finMs": 5480
         },
         {
           "palabra": "sobre",
-          "inicioMs": 5320,
-          "finMs": 5440
+          "inicioMs": 5480,
+          "finMs": 5720
         },
         {
           "palabra": "la",
-          "inicioMs": 5440,
-          "finMs": 5540
+          "inicioMs": 5720,
+          "finMs": 5840
         },
         {
           "palabra": "que",
-          "inicioMs": 5540,
-          "finMs": 5760
+          "inicioMs": 5840,
+          "finMs": 5980
         },
         {
           "palabra": "estamos",
-          "inicioMs": 5760,
-          "finMs": 6220
+          "inicioMs": 5980,
+          "finMs": 6200
         },
         {
           "palabra": "parados",
-          "inicioMs": 6220,
-          "finMs": 6432
+          "inicioMs": 6200,
+          "finMs": 6700
         }
       ]
     },
@@ -1438,137 +1450,137 @@
           "habla": true
         }
       ],
-      "duracionSegundos": 7.834,
+      "duracionSegundos": 8.05,
       "palabras": [
         {
           "palabra": "El",
           "inicioMs": 0,
-          "finMs": 220
+          "finMs": 240
         },
         {
           "palabra": "tiempo",
-          "inicioMs": 220,
-          "finMs": 420
+          "inicioMs": 240,
+          "finMs": 540
         },
         {
           "palabra": "no",
-          "inicioMs": 420,
-          "finMs": 660
+          "inicioMs": 540,
+          "finMs": 700
         },
         {
           "palabra": "es",
-          "inicioMs": 660,
-          "finMs": 780
+          "inicioMs": 700,
+          "finMs": 840
         },
         {
           "palabra": "un",
-          "inicioMs": 780,
-          "finMs": 920
+          "inicioMs": 840,
+          "finMs": 960
         },
         {
           "palabra": "río",
-          "inicioMs": 920,
-          "finMs": 1060
+          "inicioMs": 960,
+          "finMs": 1140
         },
         {
           "palabra": "constante",
-          "inicioMs": 1060,
-          "finMs": 1440
+          "inicioMs": 1140,
+          "finMs": 1500
         },
         {
           "palabra": "la",
-          "inicioMs": 2100,
+          "inicioMs": 2120,
           "finMs": 2240
         },
         {
           "palabra": "masa",
           "inicioMs": 2240,
-          "finMs": 2460
+          "finMs": 2440
         },
         {
           "palabra": "descomunal",
-          "inicioMs": 2460,
-          "finMs": 2980
+          "inicioMs": 2440,
+          "finMs": 3040
         },
         {
           "palabra": "de",
-          "inicioMs": 2980,
-          "finMs": 3160
+          "inicioMs": 3040,
+          "finMs": 3240
         },
         {
           "palabra": "nuestro",
-          "inicioMs": 3160,
-          "finMs": 3420
+          "inicioMs": 3240,
+          "finMs": 3560
         },
         {
           "palabra": "propio",
-          "inicioMs": 3420,
-          "finMs": 3760
+          "inicioMs": 3560,
+          "finMs": 3900
         },
         {
           "palabra": "planeta",
-          "inicioMs": 3760,
-          "finMs": 4040
+          "inicioMs": 3900,
+          "finMs": 4220
         },
         {
           "palabra": "lo",
-          "inicioMs": 4040,
-          "finMs": 4300
+          "inicioMs": 4220,
+          "finMs": 4460
         },
         {
           "palabra": "estira",
-          "inicioMs": 4300,
-          "finMs": 4660
-        },
-        {
-          "palabra": "y",
-          "inicioMs": 4660,
+          "inicioMs": 4460,
           "finMs": 4840
         },
         {
-          "palabra": "lo",
+          "palabra": "y",
           "inicioMs": 4840,
-          "finMs": 4940
+          "finMs": 5060
+        },
+        {
+          "palabra": "lo",
+          "inicioMs": 5060,
+          "finMs": 5160
         },
         {
           "palabra": "frena",
-          "inicioMs": 4940,
-          "finMs": 5260
+          "inicioMs": 5160,
+          "finMs": 5460
         },
         {
           "palabra": "bajo",
-          "inicioMs": 5260,
-          "finMs": 5420
+          "inicioMs": 5460,
+          "finMs": 5660
         },
         {
           "palabra": "nuestros",
-          "inicioMs": 5420,
-          "finMs": 5780
+          "inicioMs": 5660,
+          "finMs": 6020
         },
         {
           "palabra": "pies",
-          "inicioMs": 5780,
-          "finMs": 6000
+          "inicioMs": 6020,
+          "finMs": 6220
         },
         {
           "palabra": "en",
-          "inicioMs": 6000,
-          "finMs": 6300
+          "inicioMs": 6220,
+          "finMs": 6540
         },
         {
           "palabra": "este",
-          "inicioMs": 6300,
-          "finMs": 6500
+          "inicioMs": 6540,
+          "finMs": 6760
         },
         {
           "palabra": "exacto",
-          "inicioMs": 6500,
-          "finMs": 6940
+          "inicioMs": 6760,
+          "finMs": 7180
         },
         {
           "palabra": "segundo",
-          "inicioMs": 6940,
-          "finMs": 7340
+          "inicioMs": 7180,
+          "finMs": 7560
         }
       ]
     }

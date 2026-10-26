@@ -1,0 +1,2069 @@
+{
+  "meta": {
+    "id": "el_abismo_oceanico",
+    "slug": "el_abismo_oceanico",
+    "temaResumen": "¿Qué le pasaría a tu cuerpo en el fondo de la Fosa de las Marianas? Presión hidrostática extrema",
+    "titulo": "¿Qué le pasaría a tu cuerpo en la Fosa de las Marianas?",
+    "titulo_corto": "FOSA DE LAS MARIANAS",
+    "gancho": "¿Qué le sucedería realmente a tu cuerpo si descendieras a la Fosa de las Marianas a once mil metros de profundidad?",
+    "fuentes": [
+      "Paul Yancey et al. (PNAS: Marine Piezo-osmolyte TMAO in Deep-Sea Animals)",
+      "NOAA Ocean Exploration (Mariana Trench Hydrostatic Pressures)"
+    ],
+    "genero": "SCIENCE",
+    "duracionObjetivo": [
+      62,
+      110
+    ]
+  },
+  "escenas": [
+    {
+      "id": 1,
+      "texto": "¿Qué le pasaría exactamente a tu cuerpo si te sumergieras sin protección hasta el fondo de la Fosa de las Marianas, a casi once kilómetros de profundidad?",
+      "icono": "Compass",
+      "colorIcono": "#0284C7",
+      "tituloVisual": "EL ABISMO OCÉANICO",
+      "composicionVisual": "plano_general",
+      "escenario": "abismo_oceanico",
+      "layout": "narrativo",
+      "transicion": "zoom_in",
+      "palabrasClave": [
+        "cuerpo",
+        "Fosa",
+        "Marianas",
+        "once",
+        "kilómetros"
+      ],
+      "objetos": [
+        {
+          "id": "sonar",
+          "propId": "depth_sonar_marker",
+          "posicion": {
+            "x": 220,
+            "y": -40
+          },
+          "escala": 1.8,
+          "animacion": {
+            "tipo": "flotar"
+          }
+        }
+      ],
+      "personajes": [
+        {
+          "id": "narrador",
+          "nombre": "Narrador",
+          "posicion": {
+            "x": -200,
+            "y": 70
+          },
+          "escala": 1.0,
+          "orientacion": "derecha",
+          "acciones": [
+            {
+              "tipo": "personalizada",
+              "pasos": [
+                {
+                  "inicioProgreso": 0,
+                  "finProgreso": 0.45,
+                  "poseId": "walking",
+                  "expresion": "talking",
+                  "posicion": {
+                    "x": -220,
+                    "y": 70
+                  },
+                  "curva": "lineal",
+                  "procedural": "caminar"
+                },
+                {
+                  "inicioProgreso": 0.45,
+                  "finProgreso": 1.0,
+                  "poseId": "looking_down_pose",
+                  "expresion": "worried",
+                  "posicion": {
+                    "x": -180,
+                    "y": 70
+                  },
+                  "curva": "suave",
+                  "procedural": "estatico"
+                }
+              ]
+            }
+          ],
+          "habla": true,
+          "capaZ": 10
+        }
+      ],
+      "duracionSegundos": 7.522,
+      "palabras": [
+        {
+          "palabra": "Qué",
+          "inicioMs": 0,
+          "finMs": 180
+        },
+        {
+          "palabra": "le",
+          "inicioMs": 180,
+          "finMs": 260
+        },
+        {
+          "palabra": "pasaría",
+          "inicioMs": 260,
+          "finMs": 660
+        },
+        {
+          "palabra": "exactamente",
+          "inicioMs": 660,
+          "finMs": 960
+        },
+        {
+          "palabra": "a",
+          "inicioMs": 960,
+          "finMs": 1340
+        },
+        {
+          "palabra": "tu",
+          "inicioMs": 1340,
+          "finMs": 1420
+        },
+        {
+          "palabra": "cuerpo",
+          "inicioMs": 1420,
+          "finMs": 1680
+        },
+        {
+          "palabra": "si",
+          "inicioMs": 1680,
+          "finMs": 1960
+        },
+        {
+          "palabra": "te",
+          "inicioMs": 1960,
+          "finMs": 2060
+        },
+        {
+          "palabra": "sumergieras",
+          "inicioMs": 2060,
+          "finMs": 2660
+        },
+        {
+          "palabra": "sin",
+          "inicioMs": 2660,
+          "finMs": 2840
+        },
+        {
+          "palabra": "protección",
+          "inicioMs": 2840,
+          "finMs": 3380
+        },
+        {
+          "palabra": "hasta",
+          "inicioMs": 3380,
+          "finMs": 3640
+        },
+        {
+          "palabra": "el",
+          "inicioMs": 3640,
+          "finMs": 3740
+        },
+        {
+          "palabra": "fondo",
+          "inicioMs": 3740,
+          "finMs": 3900
+        },
+        {
+          "palabra": "de",
+          "inicioMs": 3900,
+          "finMs": 4120
+        },
+        {
+          "palabra": "la",
+          "inicioMs": 4120,
+          "finMs": 4220
+        },
+        {
+          "palabra": "Fosa",
+          "inicioMs": 4220,
+          "finMs": 4460
+        },
+        {
+          "palabra": "de",
+          "inicioMs": 4460,
+          "finMs": 4600
+        },
+        {
+          "palabra": "las",
+          "inicioMs": 4600,
+          "finMs": 4740
+        },
+        {
+          "palabra": "Marianas",
+          "inicioMs": 4740,
+          "finMs": 5260
+        },
+        {
+          "palabra": "a",
+          "inicioMs": 5380,
+          "finMs": 5460
+        },
+        {
+          "palabra": "casi",
+          "inicioMs": 5460,
+          "finMs": 5680
+        },
+        {
+          "palabra": "once",
+          "inicioMs": 5680,
+          "finMs": 5940
+        },
+        {
+          "palabra": "kilómetros",
+          "inicioMs": 5940,
+          "finMs": 6420
+        },
+        {
+          "palabra": "de",
+          "inicioMs": 6420,
+          "finMs": 6560
+        },
+        {
+          "palabra": "profundidad",
+          "inicioMs": 6560,
+          "finMs": 7060
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "texto": "A esa profundidad, la masa de agua ejerce una presión hidrostática brutal de más de mil cien atmósferas. Eso supera una tonelada sobre cada centímetro de piel.",
+      "icono": "Gauge",
+      "colorIcono": "#38BDF8",
+      "tituloVisual": "PRESIÓN BRUTAL",
+      "composicionVisual": "plano_general",
+      "escenario": "abismo_oceanico",
+      "layout": "narrativo",
+      "transicion": "whip_right",
+      "palabrasClave": [
+        "presión",
+        "hidrostática",
+        "mil",
+        "cien",
+        "tonelada"
+      ],
+      "objetos": [
+        {
+          "id": "presion_gauge",
+          "propId": "pressure_gauge_bursting",
+          "posicion": {
+            "x": 220,
+            "y": -40
+          },
+          "escala": 1.8,
+          "animacion": {
+            "tipo": "vibrar"
+          }
+        }
+      ],
+      "personajes": [
+        {
+          "id": "narrador",
+          "nombre": "Narrador",
+          "posicion": {
+            "x": -180,
+            "y": 70
+          },
+          "escala": 1.0,
+          "orientacion": "derecha",
+          "acciones": [
+            {
+              "tipo": "personalizada",
+              "pasos": [
+                {
+                  "inicioProgreso": 0,
+                  "finProgreso": 1.0,
+                  "poseId": "presenting_object",
+                  "expresion": "eureka",
+                  "posicion": {
+                    "x": -180,
+                    "y": 70
+                  },
+                  "curva": "suave",
+                  "procedural": "estatico"
+                }
+              ]
+            }
+          ],
+          "habla": true,
+          "capaZ": 10
+        }
+      ],
+      "duracionSegundos": 9.034,
+      "palabras": [
+        {
+          "palabra": "A",
+          "inicioMs": 0,
+          "finMs": 200
+        },
+        {
+          "palabra": "esa",
+          "inicioMs": 200,
+          "finMs": 400
+        },
+        {
+          "palabra": "profundidad",
+          "inicioMs": 400,
+          "finMs": 1040
+        },
+        {
+          "palabra": "la",
+          "inicioMs": 1180,
+          "finMs": 1220
+        },
+        {
+          "palabra": "masa",
+          "inicioMs": 1220,
+          "finMs": 1440
+        },
+        {
+          "palabra": "de",
+          "inicioMs": 1440,
+          "finMs": 1660
+        },
+        {
+          "palabra": "agua",
+          "inicioMs": 1660,
+          "finMs": 1860
+        },
+        {
+          "palabra": "ejerce",
+          "inicioMs": 1860,
+          "finMs": 2280
+        },
+        {
+          "palabra": "una",
+          "inicioMs": 2280,
+          "finMs": 2400
+        },
+        {
+          "palabra": "presión",
+          "inicioMs": 2400,
+          "finMs": 2760
+        },
+        {
+          "palabra": "hidrostática",
+          "inicioMs": 2760,
+          "finMs": 3320
+        },
+        {
+          "palabra": "brutal",
+          "inicioMs": 3320,
+          "finMs": 3760
+        },
+        {
+          "palabra": "de",
+          "inicioMs": 3760,
+          "finMs": 4020
+        },
+        {
+          "palabra": "más",
+          "inicioMs": 4020,
+          "finMs": 4180
+        },
+        {
+          "palabra": "de",
+          "inicioMs": 4180,
+          "finMs": 4340
+        },
+        {
+          "palabra": "mil",
+          "inicioMs": 4340,
+          "finMs": 4480
+        },
+        {
+          "palabra": "cien",
+          "inicioMs": 4480,
+          "finMs": 4800
+        },
+        {
+          "palabra": "atmósferas",
+          "inicioMs": 4800,
+          "finMs": 5580
+        },
+        {
+          "palabra": "Eso",
+          "inicioMs": 5780,
+          "finMs": 6040
+        },
+        {
+          "palabra": "supera",
+          "inicioMs": 6040,
+          "finMs": 6520
+        },
+        {
+          "palabra": "una",
+          "inicioMs": 6520,
+          "finMs": 6680
+        },
+        {
+          "palabra": "tonelada",
+          "inicioMs": 6680,
+          "finMs": 7160
+        },
+        {
+          "palabra": "sobre",
+          "inicioMs": 7160,
+          "finMs": 7440
+        },
+        {
+          "palabra": "cada",
+          "inicioMs": 7440,
+          "finMs": 7680
+        },
+        {
+          "palabra": "centímetro",
+          "inicioMs": 7680,
+          "finMs": 8200
+        },
+        {
+          "palabra": "de",
+          "inicioMs": 8200,
+          "finMs": 8360
+        },
+        {
+          "palabra": "piel",
+          "inicioMs": 8360,
+          "finMs": 8560
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "texto": "Para que te hagas una idea física, equivale a que colocaran cincuenta aviones comerciales gigantes apilados directamente sobre tu pecho.",
+      "icono": "Scale",
+      "colorIcono": "#EF4444",
+      "tituloVisual": "PESO APLASTANTE",
+      "composicionVisual": "plano_general",
+      "escenario": "abismo_oceanico",
+      "layout": "narrativo",
+      "transicion": "zoom_in",
+      "efectosCamara": [
+        "punch"
+      ],
+      "palabrasClave": [
+        "cincuenta",
+        "aviones",
+        "gigantes",
+        "pecho"
+      ],
+      "objetos": [
+        {
+          "id": "aviones",
+          "propId": "airliner_stack",
+          "posicion": {
+            "x": 220,
+            "y": -40
+          },
+          "escala": 1.8,
+          "animacion": {
+            "tipo": "pulso"
+          }
+        }
+      ],
+      "personajes": [
+        {
+          "id": "narrador",
+          "nombre": "Narrador",
+          "posicion": {
+            "x": -180,
+            "y": 60
+          },
+          "escala": 1.0,
+          "orientacion": "derecha",
+          "acciones": [
+            {
+              "tipo": "personalizada",
+              "pasos": [
+                {
+                  "inicioProgreso": 0,
+                  "finProgreso": 1.0,
+                  "poseId": "warning_danger",
+                  "expresion": "shocked",
+                  "posicion": {
+                    "x": -180,
+                    "y": 60
+                  },
+                  "curva": "suave",
+                  "procedural": "estatico"
+                }
+              ]
+            }
+          ],
+          "habla": true,
+          "capaZ": 10
+        }
+      ],
+      "duracionSegundos": 6.826,
+      "palabras": [
+        {
+          "palabra": "Para",
+          "inicioMs": 0,
+          "finMs": 200
+        },
+        {
+          "palabra": "que",
+          "inicioMs": 200,
+          "finMs": 320
+        },
+        {
+          "palabra": "te",
+          "inicioMs": 320,
+          "finMs": 420
+        },
+        {
+          "palabra": "hagas",
+          "inicioMs": 420,
+          "finMs": 600
+        },
+        {
+          "palabra": "una",
+          "inicioMs": 600,
+          "finMs": 740
+        },
+        {
+          "palabra": "idea",
+          "inicioMs": 740,
+          "finMs": 900
+        },
+        {
+          "palabra": "física",
+          "inicioMs": 900,
+          "finMs": 1400
+        },
+        {
+          "palabra": "equivale",
+          "inicioMs": 1780,
+          "finMs": 2200
+        },
+        {
+          "palabra": "a",
+          "inicioMs": 2200,
+          "finMs": 2300
+        },
+        {
+          "palabra": "que",
+          "inicioMs": 2300,
+          "finMs": 2380
+        },
+        {
+          "palabra": "colocaran",
+          "inicioMs": 2380,
+          "finMs": 2840
+        },
+        {
+          "palabra": "cincuenta",
+          "inicioMs": 2840,
+          "finMs": 3120
+        },
+        {
+          "palabra": "aviones",
+          "inicioMs": 3120,
+          "finMs": 3560
+        },
+        {
+          "palabra": "comerciales",
+          "inicioMs": 3560,
+          "finMs": 4200
+        },
+        {
+          "palabra": "gigantes",
+          "inicioMs": 4200,
+          "finMs": 4600
+        },
+        {
+          "palabra": "apilados",
+          "inicioMs": 4600,
+          "finMs": 5060
+        },
+        {
+          "palabra": "directamente",
+          "inicioMs": 5060,
+          "finMs": 5260
+        },
+        {
+          "palabra": "sobre",
+          "inicioMs": 5260,
+          "finMs": 5900
+        },
+        {
+          "palabra": "tu",
+          "inicioMs": 5900,
+          "finMs": 6060
+        },
+        {
+          "palabra": "pecho",
+          "inicioMs": 6060,
+          "finMs": 6360
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "texto": "En los primeros instantes, cualquier espacio con gas en tu organismo colapsaría. Tus pulmones se comprimirían hasta el tamaño de una pequeña manzana arrugada.",
+      "icono": "Minimize2",
+      "colorIcono": "#F59E0B",
+      "tituloVisual": "PULMONES COLAPSADOS",
+      "composicionVisual": "cifras_concepto",
+      "escenario": "interior_cuerpo",
+      "layout": "narrativo",
+      "transicion": "whip_left",
+      "palabrasClave": [
+        "gas",
+        "organismo",
+        "pulmones",
+        "manzana"
+      ],
+      "objetos": [
+        {
+          "id": "pulmones",
+          "propId": "lungs_compressing",
+          "posicion": {
+            "x": 220,
+            "y": -40
+          },
+          "escala": 1.8,
+          "animacion": {
+            "tipo": "pulso"
+          }
+        }
+      ],
+      "personajes": [
+        {
+          "id": "narrador",
+          "nombre": "Narrador",
+          "posicion": {
+            "x": -180,
+            "y": 60
+          },
+          "escala": 1.0,
+          "orientacion": "derecha",
+          "acciones": [
+            {
+              "tipo": "personalizada",
+              "pasos": [
+                {
+                  "inicioProgreso": 0,
+                  "finProgreso": 1.0,
+                  "poseId": "raising_one_finger",
+                  "expresion": "analytical",
+                  "posicion": {
+                    "x": -180,
+                    "y": 60
+                  },
+                  "curva": "suave",
+                  "procedural": "estatico"
+                }
+              ]
+            }
+          ],
+          "habla": true,
+          "capaZ": 10
+        }
+      ],
+      "duracionSegundos": 8.194,
+      "palabras": [
+        {
+          "palabra": "En",
+          "inicioMs": 0,
+          "finMs": 180
+        },
+        {
+          "palabra": "los",
+          "inicioMs": 180,
+          "finMs": 260
+        },
+        {
+          "palabra": "primeros",
+          "inicioMs": 260,
+          "finMs": 660
+        },
+        {
+          "palabra": "instantes",
+          "inicioMs": 660,
+          "finMs": 1220
+        },
+        {
+          "palabra": "cualquier",
+          "inicioMs": 1380,
+          "finMs": 1580
+        },
+        {
+          "palabra": "espacio",
+          "inicioMs": 1580,
+          "finMs": 1980
+        },
+        {
+          "palabra": "con",
+          "inicioMs": 1980,
+          "finMs": 2180
+        },
+        {
+          "palabra": "gas",
+          "inicioMs": 2180,
+          "finMs": 2400
+        },
+        {
+          "palabra": "en",
+          "inicioMs": 2400,
+          "finMs": 2600
+        },
+        {
+          "palabra": "tu",
+          "inicioMs": 2600,
+          "finMs": 2700
+        },
+        {
+          "palabra": "organismo",
+          "inicioMs": 2700,
+          "finMs": 3080
+        },
+        {
+          "palabra": "colapsaría",
+          "inicioMs": 3080,
+          "finMs": 3760
+        },
+        {
+          "palabra": "Tus",
+          "inicioMs": 3960,
+          "finMs": 4060
+        },
+        {
+          "palabra": "pulmones",
+          "inicioMs": 4060,
+          "finMs": 4520
+        },
+        {
+          "palabra": "se",
+          "inicioMs": 4520,
+          "finMs": 4680
+        },
+        {
+          "palabra": "comprimirían",
+          "inicioMs": 4680,
+          "finMs": 5340
+        },
+        {
+          "palabra": "hasta",
+          "inicioMs": 5340,
+          "finMs": 5600
+        },
+        {
+          "palabra": "el",
+          "inicioMs": 5600,
+          "finMs": 5700
+        },
+        {
+          "palabra": "tamaño",
+          "inicioMs": 5700,
+          "finMs": 6140
+        },
+        {
+          "palabra": "de",
+          "inicioMs": 6140,
+          "finMs": 6240
+        },
+        {
+          "palabra": "una",
+          "inicioMs": 6240,
+          "finMs": 6400
+        },
+        {
+          "palabra": "pequeña",
+          "inicioMs": 6400,
+          "finMs": 6680
+        },
+        {
+          "palabra": "manzana",
+          "inicioMs": 6680,
+          "finMs": 7240
+        },
+        {
+          "palabra": "arrugada",
+          "inicioMs": 7240,
+          "finMs": 7700
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "texto": "Tus tímpanos se romperían al instante y los senos nasales se inundarían de líquido al no poder resistir semejante choque de presiones.",
+      "icono": "VolumeX",
+      "colorIcono": "#EC4899",
+      "tituloVisual": "COLAPSO DE GAS",
+      "composicionVisual": "primer_plano",
+      "escenario": "interior_cuerpo",
+      "layout": "narrativo",
+      "transicion": "corte",
+      "efectosCamara": [
+        "drift"
+      ],
+      "palabrasClave": [
+        "tímpanos",
+        "romperían",
+        "senos",
+        "presiones"
+      ],
+      "objetos": [
+        {
+          "id": "timpano",
+          "propId": "eardrum_rupture",
+          "posicion": {
+            "x": 220,
+            "y": -30
+          },
+          "escala": 1.7,
+          "animacion": {
+            "tipo": "vibrar"
+          }
+        }
+      ],
+      "personajes": [
+        {
+          "id": "narrador",
+          "nombre": "Narrador",
+          "posicion": {
+            "x": -160,
+            "y": 60
+          },
+          "escala": 1.05,
+          "orientacion": "derecha",
+          "acciones": [
+            {
+              "tipo": "personalizada",
+              "pasos": [
+                {
+                  "inicioProgreso": 0,
+                  "finProgreso": 1.0,
+                  "poseId": "covering_eyes",
+                  "expresion": "worried",
+                  "posicion": {
+                    "x": -160,
+                    "y": 60
+                  },
+                  "curva": "suave",
+                  "procedural": "estatico"
+                }
+              ]
+            }
+          ],
+          "habla": true,
+          "capaZ": 10
+        }
+      ],
+      "duracionSegundos": 7.138,
+      "palabras": [
+        {
+          "palabra": "Tus",
+          "inicioMs": 0,
+          "finMs": 180
+        },
+        {
+          "palabra": "tímpanos",
+          "inicioMs": 180,
+          "finMs": 600
+        },
+        {
+          "palabra": "se",
+          "inicioMs": 600,
+          "finMs": 780
+        },
+        {
+          "palabra": "romperían",
+          "inicioMs": 780,
+          "finMs": 1260
+        },
+        {
+          "palabra": "al",
+          "inicioMs": 1260,
+          "finMs": 1400
+        },
+        {
+          "palabra": "instante",
+          "inicioMs": 1400,
+          "finMs": 1920
+        },
+        {
+          "palabra": "y",
+          "inicioMs": 2080,
+          "finMs": 2140
+        },
+        {
+          "palabra": "los",
+          "inicioMs": 2140,
+          "finMs": 2240
+        },
+        {
+          "palabra": "senos",
+          "inicioMs": 2240,
+          "finMs": 2500
+        },
+        {
+          "palabra": "nasales",
+          "inicioMs": 2500,
+          "finMs": 2960
+        },
+        {
+          "palabra": "se",
+          "inicioMs": 2960,
+          "finMs": 3160
+        },
+        {
+          "palabra": "inundarían",
+          "inicioMs": 3160,
+          "finMs": 3640
+        },
+        {
+          "palabra": "de",
+          "inicioMs": 3640,
+          "finMs": 3820
+        },
+        {
+          "palabra": "líquido",
+          "inicioMs": 3820,
+          "finMs": 4180
+        },
+        {
+          "palabra": "al",
+          "inicioMs": 4180,
+          "finMs": 4240
+        },
+        {
+          "palabra": "no",
+          "inicioMs": 4240,
+          "finMs": 4380
+        },
+        {
+          "palabra": "poder",
+          "inicioMs": 4380,
+          "finMs": 4700
+        },
+        {
+          "palabra": "resistir",
+          "inicioMs": 4700,
+          "finMs": 5220
+        },
+        {
+          "palabra": "semejante",
+          "inicioMs": 5220,
+          "finMs": 5780
+        },
+        {
+          "palabra": "choque",
+          "inicioMs": 5780,
+          "finMs": 6080
+        },
+        {
+          "palabra": "de",
+          "inicioMs": 6080,
+          "finMs": 6180
+        },
+        {
+          "palabra": "presiones",
+          "inicioMs": 6180,
+          "finMs": 6660
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "texto": "Pero a nivel celular ocurre algo aún más dramático: la presión abisal es tan feroz que altera la propia estructura física del agua en tus tejidos.",
+      "icono": "Atom",
+      "colorIcono": "#A855F7",
+      "tituloVisual": "ALTERACIÓN CELULAR",
+      "composicionVisual": "plano_general",
+      "escenario": "interior_cuerpo",
+      "layout": "narrativo",
+      "transicion": "whip_right",
+      "palabrasClave": [
+        "celular",
+        "presión",
+        "estructura",
+        "tejidos"
+      ],
+      "objetos": [
+        {
+          "id": "celula",
+          "propId": "cell_water_pressure",
+          "posicion": {
+            "x": 220,
+            "y": -40
+          },
+          "escala": 1.8,
+          "animacion": {
+            "tipo": "pulso"
+          }
+        }
+      ],
+      "personajes": [
+        {
+          "id": "narrador",
+          "nombre": "Narrador",
+          "posicion": {
+            "x": -180,
+            "y": 70
+          },
+          "escala": 1.0,
+          "orientacion": "derecha",
+          "acciones": [
+            {
+              "tipo": "personalizada",
+              "pasos": [
+                {
+                  "inicioProgreso": 0,
+                  "finProgreso": 1.0,
+                  "poseId": "explaining_both_hands",
+                  "expresion": "talking_enthusiastic",
+                  "posicion": {
+                    "x": -180,
+                    "y": 70
+                  },
+                  "curva": "suave",
+                  "procedural": "estatico"
+                }
+              ]
+            }
+          ],
+          "habla": true,
+          "capaZ": 10
+        }
+      ],
+      "duracionSegundos": 7.522,
+      "palabras": [
+        {
+          "palabra": "Pero",
+          "inicioMs": 0,
+          "finMs": 220
+        },
+        {
+          "palabra": "a",
+          "inicioMs": 220,
+          "finMs": 300
+        },
+        {
+          "palabra": "nivel",
+          "inicioMs": 300,
+          "finMs": 460
+        },
+        {
+          "palabra": "celular",
+          "inicioMs": 460,
+          "finMs": 860
+        },
+        {
+          "palabra": "ocurre",
+          "inicioMs": 860,
+          "finMs": 1120
+        },
+        {
+          "palabra": "algo",
+          "inicioMs": 1120,
+          "finMs": 1400
+        },
+        {
+          "palabra": "aún",
+          "inicioMs": 1400,
+          "finMs": 1620
+        },
+        {
+          "palabra": "más",
+          "inicioMs": 1620,
+          "finMs": 2020
+        },
+        {
+          "palabra": "dramático",
+          "inicioMs": 2020,
+          "finMs": 2580
+        },
+        {
+          "palabra": "la",
+          "inicioMs": 2840,
+          "finMs": 2960
+        },
+        {
+          "palabra": "presión",
+          "inicioMs": 2960,
+          "finMs": 3300
+        },
+        {
+          "palabra": "abisal",
+          "inicioMs": 3300,
+          "finMs": 3580
+        },
+        {
+          "palabra": "es",
+          "inicioMs": 3580,
+          "finMs": 3700
+        },
+        {
+          "palabra": "tan",
+          "inicioMs": 3700,
+          "finMs": 3900
+        },
+        {
+          "palabra": "feroz",
+          "inicioMs": 3900,
+          "finMs": 4280
+        },
+        {
+          "palabra": "que",
+          "inicioMs": 4280,
+          "finMs": 4400
+        },
+        {
+          "palabra": "altera",
+          "inicioMs": 4400,
+          "finMs": 4740
+        },
+        {
+          "palabra": "la",
+          "inicioMs": 4740,
+          "finMs": 4840
+        },
+        {
+          "palabra": "propia",
+          "inicioMs": 4840,
+          "finMs": 5140
+        },
+        {
+          "palabra": "estructura",
+          "inicioMs": 5140,
+          "finMs": 5640
+        },
+        {
+          "palabra": "física",
+          "inicioMs": 5640,
+          "finMs": 5940
+        },
+        {
+          "palabra": "del",
+          "inicioMs": 5940,
+          "finMs": 6180
+        },
+        {
+          "palabra": "agua",
+          "inicioMs": 6180,
+          "finMs": 6420
+        },
+        {
+          "palabra": "en",
+          "inicioMs": 6420,
+          "finMs": 6520
+        },
+        {
+          "palabra": "tus",
+          "inicioMs": 6520,
+          "finMs": 6640
+        },
+        {
+          "palabra": "tejidos",
+          "inicioMs": 6640,
+          "finMs": 7080
+        }
+      ]
+    },
+    {
+      "id": 7,
+      "texto": "Incrusta moléculas de agua dentro de las proteínas de tus células, deformando su forma y bloqueando todas las reacciones químicas vitales.",
+      "icono": "Dna",
+      "colorIcono": "#6366F1",
+      "tituloVisual": "PROTEÍNAS ROTAS",
+      "composicionVisual": "primer_plano",
+      "escenario": "interior_cuerpo",
+      "layout": "narrativo",
+      "transicion": "zoom_in",
+      "efectosCamara": [
+        "drift"
+      ],
+      "palabrasClave": [
+        "moléculas",
+        "proteínas",
+        "deformando",
+        "vitales"
+      ],
+      "objetos": [
+        {
+          "id": "proteina",
+          "propId": "protein_deforming",
+          "posicion": {
+            "x": 220,
+            "y": -30
+          },
+          "escala": 1.8,
+          "animacion": {
+            "tipo": "vibrar"
+          }
+        }
+      ],
+      "personajes": [
+        {
+          "id": "narrador",
+          "nombre": "Narrador",
+          "posicion": {
+            "x": -160,
+            "y": 60
+          },
+          "escala": 1.05,
+          "orientacion": "derecha",
+          "acciones": [
+            {
+              "tipo": "personalizada",
+              "pasos": [
+                {
+                  "inicioProgreso": 0,
+                  "finProgreso": 1.0,
+                  "poseId": "explaining_pointing_up",
+                  "expresion": "analytical",
+                  "posicion": {
+                    "x": -160,
+                    "y": 60
+                  },
+                  "curva": "suave",
+                  "procedural": "estatico"
+                }
+              ]
+            }
+          ],
+          "habla": true,
+          "capaZ": 10
+        }
+      ],
+      "duracionSegundos": 7.522,
+      "palabras": [
+        {
+          "palabra": "Incrusta",
+          "inicioMs": 0,
+          "finMs": 540
+        },
+        {
+          "palabra": "moléculas",
+          "inicioMs": 540,
+          "finMs": 1140
+        },
+        {
+          "palabra": "de",
+          "inicioMs": 1140,
+          "finMs": 1260
+        },
+        {
+          "palabra": "agua",
+          "inicioMs": 1260,
+          "finMs": 1520
+        },
+        {
+          "palabra": "dentro",
+          "inicioMs": 1520,
+          "finMs": 1880
+        },
+        {
+          "palabra": "de",
+          "inicioMs": 1880,
+          "finMs": 2060
+        },
+        {
+          "palabra": "las",
+          "inicioMs": 2060,
+          "finMs": 2180
+        },
+        {
+          "palabra": "proteínas",
+          "inicioMs": 2180,
+          "finMs": 2780
+        },
+        {
+          "palabra": "de",
+          "inicioMs": 2780,
+          "finMs": 2880
+        },
+        {
+          "palabra": "tus",
+          "inicioMs": 2880,
+          "finMs": 2980
+        },
+        {
+          "palabra": "células",
+          "inicioMs": 2980,
+          "finMs": 3440
+        },
+        {
+          "palabra": "deformando",
+          "inicioMs": 3540,
+          "finMs": 4020
+        },
+        {
+          "palabra": "su",
+          "inicioMs": 4020,
+          "finMs": 4160
+        },
+        {
+          "palabra": "forma",
+          "inicioMs": 4160,
+          "finMs": 4520
+        },
+        {
+          "palabra": "y",
+          "inicioMs": 4520,
+          "finMs": 4600
+        },
+        {
+          "palabra": "bloqueando",
+          "inicioMs": 4600,
+          "finMs": 5160
+        },
+        {
+          "palabra": "todas",
+          "inicioMs": 5160,
+          "finMs": 5440
+        },
+        {
+          "palabra": "las",
+          "inicioMs": 5440,
+          "finMs": 5620
+        },
+        {
+          "palabra": "reacciones",
+          "inicioMs": 5620,
+          "finMs": 6080
+        },
+        {
+          "palabra": "químicas",
+          "inicioMs": 6080,
+          "finMs": 6520
+        },
+        {
+          "palabra": "vitales",
+          "inicioMs": 6520,
+          "finMs": 7060
+        }
+      ]
+    },
+    {
+      "id": 8,
+      "texto": "Sin embargo, lo verdaderamente fascinante es que en esta oscuridad gélida y aplastante, la vida abisal prospera con total comodidad.",
+      "icono": "Eye",
+      "colorIcono": "#10B981",
+      "tituloVisual": "VIDA EXTREMA",
+      "composicionVisual": "plano_general",
+      "escenario": "abismo_oceanico",
+      "layout": "narrativo",
+      "transicion": "corte",
+      "palabrasClave": [
+        "fascinante",
+        "oscuridad",
+        "vida",
+        "abisal"
+      ],
+      "objetos": [
+        {
+          "id": "pez_abismo",
+          "propId": "anglerfish_abyssal",
+          "posicion": {
+            "x": 220,
+            "y": -30
+          },
+          "escala": 1.9,
+          "animacion": {
+            "tipo": "flotar"
+          }
+        }
+      ],
+      "personajes": [
+        {
+          "id": "narrador",
+          "nombre": "Narrador",
+          "posicion": {
+            "x": -180,
+            "y": 70
+          },
+          "escala": 1.0,
+          "orientacion": "derecha",
+          "acciones": [
+            {
+              "tipo": "personalizada",
+              "pasos": [
+                {
+                  "inicioProgreso": 0,
+                  "finProgreso": 1.0,
+                  "poseId": "presenting_object",
+                  "expresion": "eureka",
+                  "posicion": {
+                    "x": -180,
+                    "y": 70
+                  },
+                  "curva": "suave",
+                  "procedural": "estatico"
+                }
+              ]
+            }
+          ],
+          "habla": true,
+          "capaZ": 10
+        }
+      ],
+      "duracionSegundos": 6.874,
+      "palabras": [
+        {
+          "palabra": "Sin",
+          "inicioMs": 0,
+          "finMs": 200
+        },
+        {
+          "palabra": "embargo",
+          "inicioMs": 200,
+          "finMs": 560
+        },
+        {
+          "palabra": "lo",
+          "inicioMs": 660,
+          "finMs": 740
+        },
+        {
+          "palabra": "verdaderamente",
+          "inicioMs": 740,
+          "finMs": 1260
+        },
+        {
+          "palabra": "fascinante",
+          "inicioMs": 1260,
+          "finMs": 1980
+        },
+        {
+          "palabra": "es",
+          "inicioMs": 1980,
+          "finMs": 2240
+        },
+        {
+          "palabra": "que",
+          "inicioMs": 2240,
+          "finMs": 2360
+        },
+        {
+          "palabra": "en",
+          "inicioMs": 2360,
+          "finMs": 2480
+        },
+        {
+          "palabra": "esta",
+          "inicioMs": 2480,
+          "finMs": 2700
+        },
+        {
+          "palabra": "oscuridad",
+          "inicioMs": 2700,
+          "finMs": 3120
+        },
+        {
+          "palabra": "gélida",
+          "inicioMs": 3120,
+          "finMs": 3580
+        },
+        {
+          "palabra": "y",
+          "inicioMs": 3580,
+          "finMs": 3680
+        },
+        {
+          "palabra": "aplastante",
+          "inicioMs": 3680,
+          "finMs": 4300
+        },
+        {
+          "palabra": "la",
+          "inicioMs": 4300,
+          "finMs": 4460
+        },
+        {
+          "palabra": "vida",
+          "inicioMs": 4460,
+          "finMs": 4660
+        },
+        {
+          "palabra": "abisal",
+          "inicioMs": 4660,
+          "finMs": 5000
+        },
+        {
+          "palabra": "prospera",
+          "inicioMs": 5000,
+          "finMs": 5520
+        },
+        {
+          "palabra": "con",
+          "inicioMs": 5520,
+          "finMs": 5640
+        },
+        {
+          "palabra": "total",
+          "inicioMs": 5640,
+          "finMs": 5900
+        },
+        {
+          "palabra": "comodidad",
+          "inicioMs": 5900,
+          "finMs": 6400
+        }
+      ]
+    },
+    {
+      "id": 9,
+      "texto": "Criaturas como el pez de las profundidades no tienen vejiga natatoria ni huesos duros. Sus cuerpos son de cartílago gelatinoso y sus membranas son casi líquidas.",
+      "icono": "Waves",
+      "colorIcono": "#14B8A6",
+      "tituloVisual": "CUERPOS DE GEL",
+      "composicionVisual": "cifras_concepto",
+      "escenario": "abismo_oceanico",
+      "layout": "narrativo",
+      "transicion": "whip_left",
+      "palabrasClave": [
+        "vejiga",
+        "huesos",
+        "cartílago",
+        "gelatinoso"
+      ],
+      "objetos": [
+        {
+          "id": "snailfish",
+          "propId": "snailfish_gelatinous",
+          "posicion": {
+            "x": 220,
+            "y": -30
+          },
+          "escala": 1.9,
+          "animacion": {
+            "tipo": "flotar"
+          }
+        }
+      ],
+      "personajes": [
+        {
+          "id": "narrador",
+          "nombre": "Narrador",
+          "posicion": {
+            "x": -180,
+            "y": 60
+          },
+          "escala": 1.0,
+          "orientacion": "derecha",
+          "acciones": [
+            {
+              "tipo": "personalizada",
+              "pasos": [
+                {
+                  "inicioProgreso": 0,
+                  "finProgreso": 1.0,
+                  "poseId": "raising_one_finger",
+                  "expresion": "talking_enthusiastic",
+                  "posicion": {
+                    "x": -180,
+                    "y": 60
+                  },
+                  "curva": "suave",
+                  "procedural": "estatico"
+                }
+              ]
+            }
+          ],
+          "habla": true,
+          "capaZ": 10
+        }
+      ],
+      "duracionSegundos": 8.626,
+      "palabras": [
+        {
+          "palabra": "Criaturas",
+          "inicioMs": 0,
+          "finMs": 500
+        },
+        {
+          "palabra": "como",
+          "inicioMs": 500,
+          "finMs": 760
+        },
+        {
+          "palabra": "el",
+          "inicioMs": 760,
+          "finMs": 900
+        },
+        {
+          "palabra": "pez",
+          "inicioMs": 900,
+          "finMs": 1120
+        },
+        {
+          "palabra": "de",
+          "inicioMs": 1120,
+          "finMs": 1220
+        },
+        {
+          "palabra": "las",
+          "inicioMs": 1220,
+          "finMs": 1280
+        },
+        {
+          "palabra": "profundidades",
+          "inicioMs": 1280,
+          "finMs": 1840
+        },
+        {
+          "palabra": "no",
+          "inicioMs": 1840,
+          "finMs": 2080
+        },
+        {
+          "palabra": "tienen",
+          "inicioMs": 2080,
+          "finMs": 2360
+        },
+        {
+          "palabra": "vejiga",
+          "inicioMs": 2360,
+          "finMs": 2760
+        },
+        {
+          "palabra": "natatoria",
+          "inicioMs": 2760,
+          "finMs": 3260
+        },
+        {
+          "palabra": "ni",
+          "inicioMs": 3260,
+          "finMs": 3380
+        },
+        {
+          "palabra": "huesos",
+          "inicioMs": 3380,
+          "finMs": 3720
+        },
+        {
+          "palabra": "duros",
+          "inicioMs": 3720,
+          "finMs": 4180
+        },
+        {
+          "palabra": "Sus",
+          "inicioMs": 4400,
+          "finMs": 4500
+        },
+        {
+          "palabra": "cuerpos",
+          "inicioMs": 4500,
+          "finMs": 4920
+        },
+        {
+          "palabra": "son",
+          "inicioMs": 4920,
+          "finMs": 5120
+        },
+        {
+          "palabra": "de",
+          "inicioMs": 5120,
+          "finMs": 5240
+        },
+        {
+          "palabra": "cartílago",
+          "inicioMs": 5240,
+          "finMs": 5640
+        },
+        {
+          "palabra": "gelatinoso",
+          "inicioMs": 5640,
+          "finMs": 6460
+        },
+        {
+          "palabra": "y",
+          "inicioMs": 6460,
+          "finMs": 6600
+        },
+        {
+          "palabra": "sus",
+          "inicioMs": 6600,
+          "finMs": 6720
+        },
+        {
+          "palabra": "membranas",
+          "inicioMs": 6720,
+          "finMs": 7200
+        },
+        {
+          "palabra": "son",
+          "inicioMs": 7200,
+          "finMs": 7380
+        },
+        {
+          "palabra": "casi",
+          "inicioMs": 7380,
+          "finMs": 7640
+        },
+        {
+          "palabra": "líquidas",
+          "inicioMs": 7640,
+          "finMs": 8160
+        }
+      ]
+    },
+    {
+      "id": 10,
+      "texto": "Además, generan una molécula milagrosa llamada trimetilamina que actúa como un escudo molecular, impidiendo que la presión rompa sus proteínas.",
+      "icono": "Shield",
+      "colorIcono": "#FFE600",
+      "tituloVisual": "ESCUDO MOLECULAR",
+      "composicionVisual": "primer_plano",
+      "escenario": "abismo_oceanico",
+      "layout": "narrativo",
+      "transicion": "zoom_in",
+      "efectosCamara": [
+        "punch"
+      ],
+      "palabrasClave": [
+        "trimetilamina",
+        "escudo",
+        "molecular",
+        "proteínas"
+      ],
+      "objetos": [
+        {
+          "id": "tmao",
+          "propId": "tmao_molecule_shield",
+          "posicion": {
+            "x": 220,
+            "y": -30
+          },
+          "escala": 1.8,
+          "animacion": {
+            "tipo": "pulso"
+          }
+        }
+      ],
+      "personajes": [
+        {
+          "id": "narrador",
+          "nombre": "Narrador",
+          "posicion": {
+            "x": -160,
+            "y": 60
+          },
+          "escala": 1.05,
+          "orientacion": "derecha",
+          "acciones": [
+            {
+              "tipo": "personalizada",
+              "pasos": [
+                {
+                  "inicioProgreso": 0,
+                  "finProgreso": 1.0,
+                  "poseId": "standing_confident",
+                  "expresion": "proud",
+                  "posicion": {
+                    "x": -160,
+                    "y": 60
+                  },
+                  "curva": "suave",
+                  "procedural": "estatico"
+                }
+              ]
+            }
+          ],
+          "habla": true,
+          "capaZ": 10
+        }
+      ],
+      "duracionSegundos": 8.314,
+      "palabras": [
+        {
+          "palabra": "Además",
+          "inicioMs": 0,
+          "finMs": 420
+        },
+        {
+          "palabra": "generan",
+          "inicioMs": 580,
+          "finMs": 920
+        },
+        {
+          "palabra": "una",
+          "inicioMs": 920,
+          "finMs": 1080
+        },
+        {
+          "palabra": "molécula",
+          "inicioMs": 1080,
+          "finMs": 1540
+        },
+        {
+          "palabra": "milagrosa",
+          "inicioMs": 1540,
+          "finMs": 2060
+        },
+        {
+          "palabra": "llamada",
+          "inicioMs": 2060,
+          "finMs": 2400
+        },
+        {
+          "palabra": "trimetilamina",
+          "inicioMs": 2400,
+          "finMs": 3160
+        },
+        {
+          "palabra": "que",
+          "inicioMs": 3160,
+          "finMs": 3320
+        },
+        {
+          "palabra": "actúa",
+          "inicioMs": 3320,
+          "finMs": 3640
+        },
+        {
+          "palabra": "como",
+          "inicioMs": 3640,
+          "finMs": 3860
+        },
+        {
+          "palabra": "un",
+          "inicioMs": 3860,
+          "finMs": 4000
+        },
+        {
+          "palabra": "escudo",
+          "inicioMs": 4000,
+          "finMs": 4320
+        },
+        {
+          "palabra": "molecular",
+          "inicioMs": 4320,
+          "finMs": 4800
+        },
+        {
+          "palabra": "impidiendo",
+          "inicioMs": 5180,
+          "finMs": 5940
+        },
+        {
+          "palabra": "que",
+          "inicioMs": 5940,
+          "finMs": 6100
+        },
+        {
+          "palabra": "la",
+          "inicioMs": 6100,
+          "finMs": 6200
+        },
+        {
+          "palabra": "presión",
+          "inicioMs": 6200,
+          "finMs": 6580
+        },
+        {
+          "palabra": "rompa",
+          "inicioMs": 6580,
+          "finMs": 6940
+        },
+        {
+          "palabra": "sus",
+          "inicioMs": 6940,
+          "finMs": 7140
+        },
+        {
+          "palabra": "proteínas",
+          "inicioMs": 7140,
+          "finMs": 7820
+        }
+      ]
+    },
+    {
+      "id": 11,
+      "texto": "Lo que para nosotros sería colapso absoluto, para ellos es el hogar perfecto en el límite de la Tierra. ¿Bajarías a explorar el abismo?",
+      "icono": "Sparkles",
+      "colorIcono": "#0284C7",
+      "tituloVisual": "FRONTERA OSCURA",
+      "composicionVisual": "plano_general",
+      "escenario": "abismo_oceanico",
+      "layout": "narrativo",
+      "transicion": "corte",
+      "palabrasClave": [
+        "colapso",
+        "hogar",
+        "perfecto",
+        "abismo"
+      ],
+      "objetos": [
+        {
+          "id": "batiscafo",
+          "propId": "bathyscaphe_explorer",
+          "posicion": {
+            "x": 220,
+            "y": -40
+          },
+          "escala": 1.8,
+          "animacion": {
+            "tipo": "flotar"
+          }
+        }
+      ],
+      "personajes": [
+        {
+          "id": "narrador",
+          "nombre": "Narrador",
+          "posicion": {
+            "x": -180,
+            "y": 70
+          },
+          "escala": 1.0,
+          "orientacion": "derecha",
+          "acciones": [
+            {
+              "tipo": "personalizada",
+              "pasos": [
+                {
+                  "inicioProgreso": 0,
+                  "finProgreso": 1.0,
+                  "poseId": "pointing_at_viewer",
+                  "expresion": "smile_wide",
+                  "posicion": {
+                    "x": -180,
+                    "y": 70
+                  },
+                  "curva": "suave",
+                  "procedural": "estatico"
+                }
+              ]
+            }
+          ],
+          "habla": true,
+          "capaZ": 10
+        }
+      ],
+      "duracionSegundos": 6.514,
+      "palabras": [
+        {
+          "palabra": "Lo",
+          "inicioMs": 0,
+          "finMs": 200
+        },
+        {
+          "palabra": "que",
+          "inicioMs": 200,
+          "finMs": 340
+        },
+        {
+          "palabra": "para",
+          "inicioMs": 340,
+          "finMs": 500
+        },
+        {
+          "palabra": "nosotros",
+          "inicioMs": 500,
+          "finMs": 860
+        },
+        {
+          "palabra": "sería",
+          "inicioMs": 860,
+          "finMs": 1160
+        },
+        {
+          "palabra": "colapso",
+          "inicioMs": 1160,
+          "finMs": 1660
+        },
+        {
+          "palabra": "absoluto",
+          "inicioMs": 1660,
+          "finMs": 2160
+        },
+        {
+          "palabra": "para",
+          "inicioMs": 2200,
+          "finMs": 2320
+        },
+        {
+          "palabra": "ellos",
+          "inicioMs": 2320,
+          "finMs": 2520
+        },
+        {
+          "palabra": "es",
+          "inicioMs": 2520,
+          "finMs": 2720
+        },
+        {
+          "palabra": "el",
+          "inicioMs": 2720,
+          "finMs": 2860
+        },
+        {
+          "palabra": "hogar",
+          "inicioMs": 2860,
+          "finMs": 3100
+        },
+        {
+          "palabra": "perfecto",
+          "inicioMs": 3100,
+          "finMs": 3580
+        },
+        {
+          "palabra": "en",
+          "inicioMs": 3580,
+          "finMs": 3640
+        },
+        {
+          "palabra": "el",
+          "inicioMs": 3640,
+          "finMs": 3780
+        },
+        {
+          "palabra": "límite",
+          "inicioMs": 3780,
+          "finMs": 4040
+        },
+        {
+          "palabra": "de",
+          "inicioMs": 4040,
+          "finMs": 4180
+        },
+        {
+          "palabra": "la",
+          "inicioMs": 4180,
+          "finMs": 4280
+        },
+        {
+          "palabra": "Tierra",
+          "inicioMs": 4280,
+          "finMs": 4580
+        },
+        {
+          "palabra": "Bajarías",
+          "inicioMs": 4720,
+          "finMs": 5080
+        },
+        {
+          "palabra": "a",
+          "inicioMs": 5080,
+          "finMs": 5200
+        },
+        {
+          "palabra": "explorar",
+          "inicioMs": 5200,
+          "finMs": 5600
+        },
+        {
+          "palabra": "el",
+          "inicioMs": 5600,
+          "finMs": 5720
+        },
+        {
+          "palabra": "abismo",
+          "inicioMs": 5720,
+          "finMs": 6040
+        }
+      ]
+    }
+  ]
+}

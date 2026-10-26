@@ -1,0 +1,1990 @@
+{
+  "meta": {
+    "id": "reflejo_felino",
+    "slug": "reflejo_felino",
+    "temaResumen": "¿Cómo logran los gatos girar en el aire y caer de pie sin punto de apoyo? Conservación del momento angular",
+    "titulo": "La física imposible que usan los gatos para caer de pie",
+    "titulo_corto": "REFLEJO FELINO GATOS",
+    "gancho": "¿Alguna vez te has preguntado cómo un gato puede caer boca arriba desde varios metros y aun así aterrizar de pie como si nada?",
+    "fuentes": [
+      "Kane & Scher (Int. Journal of Solids & Structures, 1969: A Dynamical Explanation of the Falling Cat Phenomenon)",
+      "American Journal of Physics: Angular Momentum Conservation in Free-Fall Twisting"
+    ],
+    "genero": "SCIENCE",
+    "duracionObjetivo": [
+      62,
+      110
+    ]
+  },
+  "escenas": [
+    {
+      "id": 1,
+      "texto": "¿Alguna vez te has preguntado cómo un gato puede caer boca arriba desde varios metros y aun así aterrizar de pie como si nada?",
+      "icono": "Cat",
+      "colorIcono": "#F97316",
+      "tituloVisual": "REFLEJO FELINO",
+      "composicionVisual": "plano_general",
+      "layout": "narrativo",
+      "transicion": "zoom_in",
+      "palabrasClave": [
+        "gato",
+        "caer",
+        "aterrizar",
+        "pie"
+      ],
+      "personajes": [
+        {
+          "id": "narrador",
+          "nombre": "Narrador",
+          "posicion": {
+            "x": -220,
+            "y": 70
+          },
+          "escala": 1,
+          "orientacion": "derecha",
+          "acciones": [
+            {
+              "tipo": "personalizada",
+              "pasos": [
+                {
+                  "inicioProgreso": 0,
+                  "finProgreso": 0.45,
+                  "poseId": "walking",
+                  "expresion": "talking",
+                  "posicion": {
+                    "x": -220,
+                    "y": 70
+                  },
+                  "curva": "lineal",
+                  "procedural": "caminar"
+                },
+                {
+                  "inicioProgreso": 0.45,
+                  "finProgreso": 1,
+                  "poseId": "looking_up_pose",
+                  "expresion": "surprised",
+                  "posicion": {
+                    "x": -160,
+                    "y": 70
+                  },
+                  "curva": "suave",
+                  "procedural": "estatico"
+                }
+              ]
+            }
+          ],
+          "habla": true,
+          "capaZ": 10
+        }
+      ],
+      "duracionSegundos": 6.826,
+      "palabras": [
+        {
+          "palabra": "Alguna",
+          "inicioMs": 0,
+          "finMs": 400
+        },
+        {
+          "palabra": "vez",
+          "inicioMs": 400,
+          "finMs": 560
+        },
+        {
+          "palabra": "te",
+          "inicioMs": 560,
+          "finMs": 700
+        },
+        {
+          "palabra": "has",
+          "inicioMs": 700,
+          "finMs": 780
+        },
+        {
+          "palabra": "preguntado",
+          "inicioMs": 780,
+          "finMs": 1320
+        },
+        {
+          "palabra": "cómo",
+          "inicioMs": 1320,
+          "finMs": 1560
+        },
+        {
+          "palabra": "un",
+          "inicioMs": 1560,
+          "finMs": 1760
+        },
+        {
+          "palabra": "gato",
+          "inicioMs": 1760,
+          "finMs": 2000
+        },
+        {
+          "palabra": "puede",
+          "inicioMs": 2000,
+          "finMs": 2260
+        },
+        {
+          "palabra": "caer",
+          "inicioMs": 2260,
+          "finMs": 2580
+        },
+        {
+          "palabra": "boca",
+          "inicioMs": 2580,
+          "finMs": 2740
+        },
+        {
+          "palabra": "arriba",
+          "inicioMs": 2740,
+          "finMs": 3080
+        },
+        {
+          "palabra": "desde",
+          "inicioMs": 3080,
+          "finMs": 3300
+        },
+        {
+          "palabra": "varios",
+          "inicioMs": 3300,
+          "finMs": 3600
+        },
+        {
+          "palabra": "metros",
+          "inicioMs": 3600,
+          "finMs": 4020
+        },
+        {
+          "palabra": "y",
+          "inicioMs": 4020,
+          "finMs": 4320
+        },
+        {
+          "palabra": "aun",
+          "inicioMs": 4320,
+          "finMs": 4480
+        },
+        {
+          "palabra": "así",
+          "inicioMs": 4480,
+          "finMs": 4780
+        },
+        {
+          "palabra": "aterrizar",
+          "inicioMs": 4780,
+          "finMs": 5440
+        },
+        {
+          "palabra": "de",
+          "inicioMs": 5440,
+          "finMs": 5540
+        },
+        {
+          "palabra": "pie",
+          "inicioMs": 5540,
+          "finMs": 5720
+        },
+        {
+          "palabra": "como",
+          "inicioMs": 5720,
+          "finMs": 5920
+        },
+        {
+          "palabra": "si",
+          "inicioMs": 5920,
+          "finMs": 6360
+        },
+        {
+          "palabra": "nada",
+          "inicioMs": 6360,
+          "finMs": 6576
+        }
+      ],
+      "escenario": "sala_estar"
+    },
+    {
+      "id": 2,
+      "texto": "A primera vista parece desafiar la física. En caída libre, la conservación del momento angular dice que nada puede rotar sin un punto de apoyo donde impulsarse.",
+      "icono": "Compass",
+      "colorIcono": "#38BDF8",
+      "tituloVisual": "PARADOJA FÍSICA",
+      "composicionVisual": "primer_plano",
+      "layout": "narrativo",
+      "transicion": "whip_right",
+      "efectosCamara": [
+        "drift"
+      ],
+      "palabrasClave": [
+        "física",
+        "momento",
+        "angular",
+        "apoyo"
+      ],
+      "personajes": [
+        {
+          "id": "narrador",
+          "nombre": "Narrador",
+          "posicion": {
+            "x": 0,
+            "y": 60
+          },
+          "escala": 1.05,
+          "orientacion": "derecha",
+          "acciones": [
+            {
+              "tipo": "personalizada",
+              "pasos": [
+                {
+                  "inicioProgreso": 0,
+                  "finProgreso": 0.5,
+                  "poseId": "thinking_chin_hand",
+                  "expresion": "analytical",
+                  "posicion": {
+                    "x": 0,
+                    "y": 60
+                  },
+                  "curva": "suave",
+                  "procedural": "estatico"
+                },
+                {
+                  "inicioProgreso": 0.5,
+                  "finProgreso": 1,
+                  "poseId": "explaining_both_hands",
+                  "expresion": "talking_enthusiastic",
+                  "posicion": {
+                    "x": 20,
+                    "y": 60
+                  },
+                  "curva": "suave",
+                  "procedural": "estatico"
+                }
+              ]
+            }
+          ],
+          "habla": true,
+          "capaZ": 10
+        }
+      ],
+      "duracionSegundos": 8.002,
+      "palabras": [
+        {
+          "palabra": "A",
+          "inicioMs": 0,
+          "finMs": 180
+        },
+        {
+          "palabra": "primera",
+          "inicioMs": 180,
+          "finMs": 440
+        },
+        {
+          "palabra": "vista",
+          "inicioMs": 440,
+          "finMs": 820
+        },
+        {
+          "palabra": "parece",
+          "inicioMs": 820,
+          "finMs": 1120
+        },
+        {
+          "palabra": "desafiar",
+          "inicioMs": 1120,
+          "finMs": 1720
+        },
+        {
+          "palabra": "la",
+          "inicioMs": 1720,
+          "finMs": 1840
+        },
+        {
+          "palabra": "física",
+          "inicioMs": 1840,
+          "finMs": 2180
+        },
+        {
+          "palabra": "En",
+          "inicioMs": 2400,
+          "finMs": 2740
+        },
+        {
+          "palabra": "caída",
+          "inicioMs": 2740,
+          "finMs": 2860
+        },
+        {
+          "palabra": "libre",
+          "inicioMs": 2860,
+          "finMs": 3080
+        },
+        {
+          "palabra": "la",
+          "inicioMs": 3180,
+          "finMs": 3260
+        },
+        {
+          "palabra": "conservación",
+          "inicioMs": 3260,
+          "finMs": 3800
+        },
+        {
+          "palabra": "del",
+          "inicioMs": 3800,
+          "finMs": 3940
+        },
+        {
+          "palabra": "momento",
+          "inicioMs": 3940,
+          "finMs": 4140
+        },
+        {
+          "palabra": "angular",
+          "inicioMs": 4140,
+          "finMs": 4620
+        },
+        {
+          "palabra": "dice",
+          "inicioMs": 4620,
+          "finMs": 4940
+        },
+        {
+          "palabra": "que",
+          "inicioMs": 4940,
+          "finMs": 5100
+        },
+        {
+          "palabra": "nada",
+          "inicioMs": 5100,
+          "finMs": 5280
+        },
+        {
+          "palabra": "puede",
+          "inicioMs": 5280,
+          "finMs": 5460
+        },
+        {
+          "palabra": "rotar",
+          "inicioMs": 5460,
+          "finMs": 5880
+        },
+        {
+          "palabra": "sin",
+          "inicioMs": 5880,
+          "finMs": 5980
+        },
+        {
+          "palabra": "un",
+          "inicioMs": 5980,
+          "finMs": 6060
+        },
+        {
+          "palabra": "punto",
+          "inicioMs": 6060,
+          "finMs": 6240
+        },
+        {
+          "palabra": "de",
+          "inicioMs": 6240,
+          "finMs": 6440
+        },
+        {
+          "palabra": "apoyo",
+          "inicioMs": 6440,
+          "finMs": 6660
+        },
+        {
+          "palabra": "donde",
+          "inicioMs": 6660,
+          "finMs": 6900
+        },
+        {
+          "palabra": "impulsarse",
+          "inicioMs": 6900,
+          "finMs": 7540
+        }
+      ],
+      "escenario": "sala_estar"
+    },
+    {
+      "id": 3,
+      "texto": "Pero los felinos tienen el reflejo de enderezamiento. En su oído interno, el sistema vestibular detecta la aceleración y la posición en milésimas de segundo.",
+      "icono": "Activity",
+      "colorIcono": "#A855F7",
+      "tituloVisual": "OÍDO INTERNO",
+      "composicionVisual": "plano_general",
+      "layout": "narrativo",
+      "transicion": "corte",
+      "palabrasClave": [
+        "reflejo",
+        "enderezamiento",
+        "oído",
+        "vestibular"
+      ],
+      "objetos": [
+        {
+          "id": "aparato_vestibular",
+          "propId": "vestibular_system",
+          "posicion": {
+            "x": 220,
+            "y": -40
+          },
+          "escala": 1.8,
+          "animacion": "pulso"
+        }
+      ],
+      "personajes": [
+        {
+          "id": "narrador",
+          "nombre": "Narrador",
+          "posicion": {
+            "x": -200,
+            "y": 70
+          },
+          "escala": 1,
+          "orientacion": "derecha",
+          "acciones": [
+            {
+              "tipo": "personalizada",
+              "pasos": [
+                {
+                  "inicioProgreso": 0,
+                  "finProgreso": 1,
+                  "poseId": "presenting_object",
+                  "expresion": "eureka",
+                  "posicion": {
+                    "x": -180,
+                    "y": 70
+                  },
+                  "curva": "suave",
+                  "procedural": "estatico"
+                }
+              ]
+            }
+          ],
+          "habla": true,
+          "capaZ": 10
+        }
+      ],
+      "duracionSegundos": 8.962,
+      "palabras": [
+        {
+          "palabra": "Pero",
+          "inicioMs": 0,
+          "finMs": 240
+        },
+        {
+          "palabra": "los",
+          "inicioMs": 240,
+          "finMs": 420
+        },
+        {
+          "palabra": "felinos",
+          "inicioMs": 420,
+          "finMs": 700
+        },
+        {
+          "palabra": "tienen",
+          "inicioMs": 700,
+          "finMs": 1020
+        },
+        {
+          "palabra": "el",
+          "inicioMs": 1020,
+          "finMs": 1200
+        },
+        {
+          "palabra": "reflejo",
+          "inicioMs": 1200,
+          "finMs": 1560
+        },
+        {
+          "palabra": "de",
+          "inicioMs": 1560,
+          "finMs": 1680
+        },
+        {
+          "palabra": "enderezamiento",
+          "inicioMs": 1680,
+          "finMs": 2480
+        },
+        {
+          "palabra": "En",
+          "inicioMs": 2860,
+          "finMs": 3040
+        },
+        {
+          "palabra": "su",
+          "inicioMs": 3040,
+          "finMs": 3180
+        },
+        {
+          "palabra": "oído",
+          "inicioMs": 3180,
+          "finMs": 3380
+        },
+        {
+          "palabra": "interno",
+          "inicioMs": 3380,
+          "finMs": 3940
+        },
+        {
+          "palabra": "el",
+          "inicioMs": 4100,
+          "finMs": 4200
+        },
+        {
+          "palabra": "sistema",
+          "inicioMs": 4200,
+          "finMs": 4540
+        },
+        {
+          "palabra": "vestibular",
+          "inicioMs": 4540,
+          "finMs": 5140
+        },
+        {
+          "palabra": "detecta",
+          "inicioMs": 5140,
+          "finMs": 5660
+        },
+        {
+          "palabra": "la",
+          "inicioMs": 5660,
+          "finMs": 5780
+        },
+        {
+          "palabra": "aceleración",
+          "inicioMs": 5780,
+          "finMs": 6420
+        },
+        {
+          "palabra": "y",
+          "inicioMs": 6420,
+          "finMs": 6640
+        },
+        {
+          "palabra": "la",
+          "inicioMs": 6640,
+          "finMs": 6740
+        },
+        {
+          "palabra": "posición",
+          "inicioMs": 6740,
+          "finMs": 7160
+        },
+        {
+          "palabra": "en",
+          "inicioMs": 7160,
+          "finMs": 7460
+        },
+        {
+          "palabra": "milésimas",
+          "inicioMs": 7460,
+          "finMs": 7960
+        },
+        {
+          "palabra": "de",
+          "inicioMs": 7960,
+          "finMs": 8100
+        },
+        {
+          "palabra": "segundo",
+          "inicioMs": 8100,
+          "finMs": 8500
+        }
+      ],
+      "escenario": "laboratorio_neuro"
+    },
+    {
+      "id": 4,
+      "texto": "Al registrar que está boca arriba, no intenta girar en bloque. Lo que hace es doblar su cuerpo en dos mitades independientes.",
+      "icono": "Scissors",
+      "colorIcono": "#EF4444",
+      "tituloVisual": "CUERPO FLEXIBLE",
+      "composicionVisual": "plano_general",
+      "layout": "narrativo",
+      "transicion": "whip_right",
+      "palabrasClave": [
+        "boca",
+        "arriba",
+        "dos",
+        "mitades"
+      ],
+      "personajes": [
+        {
+          "id": "narrador",
+          "nombre": "Narrador",
+          "posicion": {
+            "x": 0,
+            "y": 70
+          },
+          "escala": 1,
+          "orientacion": "derecha",
+          "acciones": [
+            {
+              "tipo": "personalizada",
+              "pasos": [
+                {
+                  "inicioProgreso": 0,
+                  "finProgreso": 0.5,
+                  "poseId": "shaking_no",
+                  "expresion": "skeptical",
+                  "posicion": {
+                    "x": -40,
+                    "y": 70
+                  },
+                  "curva": "suave",
+                  "procedural": "estatico"
+                },
+                {
+                  "inicioProgreso": 0.5,
+                  "finProgreso": 1,
+                  "poseId": "comparing_two_objects",
+                  "expresion": "talking",
+                  "posicion": {
+                    "x": 0,
+                    "y": 70
+                  },
+                  "curva": "suave",
+                  "procedural": "estatico"
+                }
+              ]
+            }
+          ],
+          "habla": true,
+          "capaZ": 10
+        }
+      ],
+      "duracionSegundos": 6.73,
+      "palabras": [
+        {
+          "palabra": "Al",
+          "inicioMs": 0,
+          "finMs": 520
+        },
+        {
+          "palabra": "registrar",
+          "inicioMs": 520,
+          "finMs": 720
+        },
+        {
+          "palabra": "que",
+          "inicioMs": 720,
+          "finMs": 920
+        },
+        {
+          "palabra": "está",
+          "inicioMs": 920,
+          "finMs": 1100
+        },
+        {
+          "palabra": "boca",
+          "inicioMs": 1100,
+          "finMs": 1480
+        },
+        {
+          "palabra": "arriba",
+          "inicioMs": 1480,
+          "finMs": 1940
+        },
+        {
+          "palabra": "no",
+          "inicioMs": 1940,
+          "finMs": 2320
+        },
+        {
+          "palabra": "intenta",
+          "inicioMs": 2320,
+          "finMs": 2620
+        },
+        {
+          "palabra": "girar",
+          "inicioMs": 2620,
+          "finMs": 2720
+        },
+        {
+          "palabra": "en",
+          "inicioMs": 2720,
+          "finMs": 2960
+        },
+        {
+          "palabra": "bloque",
+          "inicioMs": 3140,
+          "finMs": 3360
+        },
+        {
+          "palabra": "Lo",
+          "inicioMs": 3360,
+          "finMs": 3600
+        },
+        {
+          "palabra": "que",
+          "inicioMs": 3600,
+          "finMs": 3960
+        },
+        {
+          "palabra": "hace",
+          "inicioMs": 3960,
+          "finMs": 4240
+        },
+        {
+          "palabra": "es",
+          "inicioMs": 4240,
+          "finMs": 4420
+        },
+        {
+          "palabra": "doblar",
+          "inicioMs": 4420,
+          "finMs": 4660
+        },
+        {
+          "palabra": "su",
+          "inicioMs": 4660,
+          "finMs": 4900
+        },
+        {
+          "palabra": "cuerpo",
+          "inicioMs": 4900,
+          "finMs": 5080
+        },
+        {
+          "palabra": "en",
+          "inicioMs": 5080,
+          "finMs": 5480
+        },
+        {
+          "palabra": "dos",
+          "inicioMs": 5480,
+          "finMs": 6200
+        },
+        {
+          "palabra": "mitades",
+          "inicioMs": 6200,
+          "finMs": 6340
+        },
+        {
+          "palabra": "independientes",
+          "inicioMs": 6200,
+          "finMs": 6340
+        }
+      ],
+      "escenario": "sala_estar"
+    },
+    {
+      "id": 5,
+      "texto": "Gracias a una columna vertebral hiperflexible con discos gelatinosos y sin clavículas rígidas, el gato dobla su torso formando un ángulo en el aire.",
+      "icono": "Bone",
+      "colorIcono": "#F59E0B",
+      "tituloVisual": "COLUMNA ELÁSTICA",
+      "composicionVisual": "primer_plano",
+      "layout": "narrativo",
+      "transicion": "zoom_in",
+      "efectosCamara": [
+        "drift"
+      ],
+      "palabrasClave": [
+        "columna",
+        "vertebral",
+        "flexible",
+        "clavículas"
+      ],
+      "personajes": [
+        {
+          "id": "narrador",
+          "nombre": "Narrador",
+          "posicion": {
+            "x": -30,
+            "y": 60
+          },
+          "escala": 1.05,
+          "orientacion": "derecha",
+          "acciones": [
+            {
+              "tipo": "personalizada",
+              "pasos": [
+                {
+                  "inicioProgreso": 0,
+                  "finProgreso": 1,
+                  "poseId": "explaining_both_hands",
+                  "expresion": "talking_enthusiastic",
+                  "posicion": {
+                    "x": 0,
+                    "y": 60
+                  },
+                  "curva": "suave",
+                  "procedural": "estatico"
+                }
+              ]
+            }
+          ],
+          "habla": true,
+          "capaZ": 10
+        }
+      ],
+      "duracionSegundos": 8.29,
+      "palabras": [
+        {
+          "palabra": "Gracias",
+          "inicioMs": 0,
+          "finMs": 420
+        },
+        {
+          "palabra": "a",
+          "inicioMs": 420,
+          "finMs": 580
+        },
+        {
+          "palabra": "una",
+          "inicioMs": 580,
+          "finMs": 700
+        },
+        {
+          "palabra": "columna",
+          "inicioMs": 700,
+          "finMs": 1120
+        },
+        {
+          "palabra": "vertebral",
+          "inicioMs": 1120,
+          "finMs": 1560
+        },
+        {
+          "palabra": "hiperflexible",
+          "inicioMs": 1560,
+          "finMs": 2440
+        },
+        {
+          "palabra": "con",
+          "inicioMs": 2440,
+          "finMs": 2720
+        },
+        {
+          "palabra": "discos",
+          "inicioMs": 2720,
+          "finMs": 3140
+        },
+        {
+          "palabra": "gelatinosos",
+          "inicioMs": 3140,
+          "finMs": 3880
+        },
+        {
+          "palabra": "y",
+          "inicioMs": 3880,
+          "finMs": 4000
+        },
+        {
+          "palabra": "sin",
+          "inicioMs": 4000,
+          "finMs": 4180
+        },
+        {
+          "palabra": "clavículas",
+          "inicioMs": 4180,
+          "finMs": 4760
+        },
+        {
+          "palabra": "rígidas",
+          "inicioMs": 4760,
+          "finMs": 5220
+        },
+        {
+          "palabra": "el",
+          "inicioMs": 5380,
+          "finMs": 5500
+        },
+        {
+          "palabra": "gato",
+          "inicioMs": 5500,
+          "finMs": 5740
+        },
+        {
+          "palabra": "dobla",
+          "inicioMs": 5740,
+          "finMs": 6440
+        },
+        {
+          "palabra": "su",
+          "inicioMs": 6440,
+          "finMs": 6900
+        },
+        {
+          "palabra": "torso",
+          "inicioMs": 6900,
+          "finMs": 7020
+        },
+        {
+          "palabra": "formando",
+          "inicioMs": 7020,
+          "finMs": 7260
+        },
+        {
+          "palabra": "un",
+          "inicioMs": 7260,
+          "finMs": 7420
+        },
+        {
+          "palabra": "ángulo",
+          "inicioMs": 7420,
+          "finMs": 7560
+        },
+        {
+          "palabra": "en",
+          "inicioMs": 7560,
+          "finMs": 7800
+        },
+        {
+          "palabra": "el",
+          "inicioMs": 7800,
+          "finMs": 7920
+        },
+        {
+          "palabra": "aire",
+          "inicioMs": 7800,
+          "finMs": 7920
+        }
+      ],
+      "escenario": "laboratorio_neuro"
+    },
+    {
+      "id": 6,
+      "texto": "Aquí viene la genialidad mecánica: para girar la parte delantera, encoge las patas de adelante muy pegadas al pecho mientras estira por completo las patas traseras hacia afuera.",
+      "icono": "Move",
+      "colorIcono": "#10B981",
+      "tituloVisual": "MOMENTO DE INERCIA",
+      "composicionVisual": "plano_general",
+      "layout": "narrativo",
+      "transicion": "corte",
+      "palabrasClave": [
+        "genialidad",
+        "patas",
+        "pecho",
+        "traseras"
+      ],
+      "objetos": [
+        {
+          "id": "gato_en_el_aire",
+          "propId": "cat_falling_physics",
+          "posicion": {
+            "x": 220,
+            "y": -20
+          },
+          "escala": 2,
+          "animacion": "flotar"
+        }
+      ],
+      "personajes": [
+        {
+          "id": "narrador",
+          "nombre": "Narrador",
+          "posicion": {
+            "x": -220,
+            "y": 70
+          },
+          "escala": 1,
+          "orientacion": "derecha",
+          "acciones": [
+            {
+              "tipo": "personalizada",
+              "pasos": [
+                {
+                  "inicioProgreso": 0,
+                  "finProgreso": 1,
+                  "poseId": "presenting_object",
+                  "expresion": "eureka",
+                  "posicion": {
+                    "x": -180,
+                    "y": 70
+                  },
+                  "curva": "suave",
+                  "procedural": "estatico"
+                }
+              ]
+            }
+          ],
+          "habla": true,
+          "capaZ": 10
+        }
+      ],
+      "duracionSegundos": 9.298,
+      "palabras": [
+        {
+          "palabra": "Aquí",
+          "inicioMs": 0,
+          "finMs": 340
+        },
+        {
+          "palabra": "viene",
+          "inicioMs": 340,
+          "finMs": 580
+        },
+        {
+          "palabra": "la",
+          "inicioMs": 580,
+          "finMs": 740
+        },
+        {
+          "palabra": "genialidad",
+          "inicioMs": 740,
+          "finMs": 1240
+        },
+        {
+          "palabra": "mecánica",
+          "inicioMs": 1240,
+          "finMs": 1800
+        },
+        {
+          "palabra": "para",
+          "inicioMs": 1800,
+          "finMs": 2040
+        },
+        {
+          "palabra": "girar",
+          "inicioMs": 2040,
+          "finMs": 2340
+        },
+        {
+          "palabra": "la",
+          "inicioMs": 2340,
+          "finMs": 2460
+        },
+        {
+          "palabra": "parte",
+          "inicioMs": 2460,
+          "finMs": 2700
+        },
+        {
+          "palabra": "delantera",
+          "inicioMs": 2700,
+          "finMs": 3260
+        },
+        {
+          "palabra": "encoge",
+          "inicioMs": 3380,
+          "finMs": 3720
+        },
+        {
+          "palabra": "las",
+          "inicioMs": 3720,
+          "finMs": 3900
+        },
+        {
+          "palabra": "patas",
+          "inicioMs": 3900,
+          "finMs": 4200
+        },
+        {
+          "palabra": "de",
+          "inicioMs": 4200,
+          "finMs": 4360
+        },
+        {
+          "palabra": "adelante",
+          "inicioMs": 4360,
+          "finMs": 4600
+        },
+        {
+          "palabra": "muy",
+          "inicioMs": 4600,
+          "finMs": 5000
+        },
+        {
+          "palabra": "pegadas",
+          "inicioMs": 5000,
+          "finMs": 5380
+        },
+        {
+          "palabra": "al",
+          "inicioMs": 5380,
+          "finMs": 5580
+        },
+        {
+          "palabra": "pecho",
+          "inicioMs": 5580,
+          "finMs": 5940
+        },
+        {
+          "palabra": "mientras",
+          "inicioMs": 5940,
+          "finMs": 6160
+        },
+        {
+          "palabra": "estira",
+          "inicioMs": 6160,
+          "finMs": 6620
+        },
+        {
+          "palabra": "por",
+          "inicioMs": 6620,
+          "finMs": 6800
+        },
+        {
+          "palabra": "completo",
+          "inicioMs": 6800,
+          "finMs": 7260
+        },
+        {
+          "palabra": "las",
+          "inicioMs": 7260,
+          "finMs": 7500
+        },
+        {
+          "palabra": "patas",
+          "inicioMs": 7500,
+          "finMs": 7820
+        },
+        {
+          "palabra": "traseras",
+          "inicioMs": 7820,
+          "finMs": 8240
+        },
+        {
+          "palabra": "hacia",
+          "inicioMs": 8240,
+          "finMs": 8460
+        },
+        {
+          "palabra": "afuera",
+          "inicioMs": 8460,
+          "finMs": 8800
+        }
+      ],
+      "escenario": "laboratorio_neuro"
+    },
+    {
+      "id": 7,
+      "texto": "Al encoger las patas delanteras reduce su resistencia al giro, igual que una patinadora sobre hielo que gira veloz pegando los brazos al pecho.",
+      "icono": "Zap",
+      "colorIcono": "#FFE600",
+      "tituloVisual": "EFECTO PATINADORA",
+      "composicionVisual": "cifras_concepto",
+      "layout": "narrativo",
+      "transicion": "whip_left",
+      "palabrasClave": [
+        "resistencia",
+        "giro",
+        "patinadora",
+        "brazos"
+      ],
+      "personajes": [
+        {
+          "id": "narrador",
+          "nombre": "Narrador",
+          "posicion": {
+            "x": 0,
+            "y": 60
+          },
+          "escala": 1,
+          "orientacion": "derecha",
+          "acciones": [
+            {
+              "tipo": "personalizada",
+              "pasos": [
+                {
+                  "inicioProgreso": 0,
+                  "finProgreso": 1,
+                  "poseId": "raising_one_finger",
+                  "expresion": "analytical",
+                  "posicion": {
+                    "x": 0,
+                    "y": 60
+                  },
+                  "curva": "suave",
+                  "procedural": "estatico"
+                }
+              ]
+            }
+          ],
+          "habla": true,
+          "capaZ": 10
+        }
+      ],
+      "duracionSegundos": 7.474,
+      "palabras": [
+        {
+          "palabra": "Al",
+          "inicioMs": 0,
+          "finMs": 240
+        },
+        {
+          "palabra": "encoger",
+          "inicioMs": 240,
+          "finMs": 580
+        },
+        {
+          "palabra": "las",
+          "inicioMs": 580,
+          "finMs": 760
+        },
+        {
+          "palabra": "patas",
+          "inicioMs": 760,
+          "finMs": 1060
+        },
+        {
+          "palabra": "delanteras",
+          "inicioMs": 1060,
+          "finMs": 1660
+        },
+        {
+          "palabra": "reduce",
+          "inicioMs": 1740,
+          "finMs": 1980
+        },
+        {
+          "palabra": "su",
+          "inicioMs": 1980,
+          "finMs": 2140
+        },
+        {
+          "palabra": "resistencia",
+          "inicioMs": 2140,
+          "finMs": 2660
+        },
+        {
+          "palabra": "al",
+          "inicioMs": 2660,
+          "finMs": 2800
+        },
+        {
+          "palabra": "giro",
+          "inicioMs": 2800,
+          "finMs": 3100
+        },
+        {
+          "palabra": "igual",
+          "inicioMs": 3280,
+          "finMs": 3360
+        },
+        {
+          "palabra": "que",
+          "inicioMs": 3360,
+          "finMs": 3540
+        },
+        {
+          "palabra": "una",
+          "inicioMs": 3540,
+          "finMs": 3780
+        },
+        {
+          "palabra": "patinadora",
+          "inicioMs": 3780,
+          "finMs": 4300
+        },
+        {
+          "palabra": "sobre",
+          "inicioMs": 4300,
+          "finMs": 4940
+        },
+        {
+          "palabra": "hielo",
+          "inicioMs": 4940,
+          "finMs": 5040
+        },
+        {
+          "palabra": "que",
+          "inicioMs": 5040,
+          "finMs": 5280
+        },
+        {
+          "palabra": "gira",
+          "inicioMs": 5280,
+          "finMs": 5660
+        },
+        {
+          "palabra": "veloz",
+          "inicioMs": 5660,
+          "finMs": 6000
+        },
+        {
+          "palabra": "pegando",
+          "inicioMs": 6000,
+          "finMs": 6140
+        },
+        {
+          "palabra": "los",
+          "inicioMs": 6140,
+          "finMs": 6460
+        },
+        {
+          "palabra": "brazos",
+          "inicioMs": 6460,
+          "finMs": 6660
+        },
+        {
+          "palabra": "al",
+          "inicioMs": 6660,
+          "finMs": 7020
+        },
+        {
+          "palabra": "pecho",
+          "inicioMs": 7020,
+          "finMs": 7224
+        }
+      ],
+      "escenario": "sala_estar"
+    },
+    {
+      "id": 8,
+      "texto": "Así, el frente rota ciento ochenta grados sin esfuerzo, mientras la parte trasera apenas gira unos grados en sentido opuesto.",
+      "icono": "RotateCcw",
+      "colorIcono": "#EC4899",
+      "tituloVisual": "GIRO TRASERO",
+      "composicionVisual": "plano_general",
+      "layout": "narrativo",
+      "transicion": "corte",
+      "palabrasClave": [
+        "frente",
+        "ciento",
+        "ochenta",
+        "opuesto"
+      ],
+      "personajes": [
+        {
+          "id": "narrador",
+          "nombre": "Narrador",
+          "posicion": {
+            "x": -100,
+            "y": 70
+          },
+          "escala": 1,
+          "orientacion": "derecha",
+          "acciones": [
+            {
+              "tipo": "personalizada",
+              "pasos": [
+                {
+                  "inicioProgreso": 0,
+                  "finProgreso": 0.5,
+                  "poseId": "pointing_right",
+                  "expresion": "talking",
+                  "posicion": {
+                    "x": -100,
+                    "y": 70
+                  },
+                  "curva": "suave",
+                  "procedural": "estatico"
+                },
+                {
+                  "inicioProgreso": 0.5,
+                  "finProgreso": 1,
+                  "poseId": "pointing_left",
+                  "expresion": "surprised",
+                  "posicion": {
+                    "x": -40,
+                    "y": 70
+                  },
+                  "curva": "suave",
+                  "procedural": "estatico"
+                }
+              ]
+            }
+          ],
+          "habla": true,
+          "capaZ": 10
+        }
+      ],
+      "duracionSegundos": 6.634,
+      "palabras": [
+        {
+          "palabra": "Así",
+          "inicioMs": 0,
+          "finMs": 320
+        },
+        {
+          "palabra": "el",
+          "inicioMs": 440,
+          "finMs": 560
+        },
+        {
+          "palabra": "frente",
+          "inicioMs": 560,
+          "finMs": 820
+        },
+        {
+          "palabra": "rota",
+          "inicioMs": 820,
+          "finMs": 1180
+        },
+        {
+          "palabra": "ciento",
+          "inicioMs": 1180,
+          "finMs": 2040
+        },
+        {
+          "palabra": "ochenta",
+          "inicioMs": 2040,
+          "finMs": 2360
+        },
+        {
+          "palabra": "grados",
+          "inicioMs": 2360,
+          "finMs": 2940
+        },
+        {
+          "palabra": "sin",
+          "inicioMs": 3140,
+          "finMs": 3320
+        },
+        {
+          "palabra": "esfuerzo",
+          "inicioMs": 3320,
+          "finMs": 3480
+        },
+        {
+          "palabra": "mientras",
+          "inicioMs": 3480,
+          "finMs": 3700
+        },
+        {
+          "palabra": "la",
+          "inicioMs": 3700,
+          "finMs": 4080
+        },
+        {
+          "palabra": "parte",
+          "inicioMs": 4080,
+          "finMs": 4340
+        },
+        {
+          "palabra": "trasera",
+          "inicioMs": 4340,
+          "finMs": 4680
+        },
+        {
+          "palabra": "apenas",
+          "inicioMs": 4680,
+          "finMs": 4760
+        },
+        {
+          "palabra": "gira",
+          "inicioMs": 4760,
+          "finMs": 4920
+        },
+        {
+          "palabra": "unos",
+          "inicioMs": 4920,
+          "finMs": 5260
+        },
+        {
+          "palabra": "grados",
+          "inicioMs": 5260,
+          "finMs": 5360
+        },
+        {
+          "palabra": "en",
+          "inicioMs": 5360,
+          "finMs": 5720
+        },
+        {
+          "palabra": "sentido",
+          "inicioMs": 5720,
+          "finMs": 6160
+        },
+        {
+          "palabra": "opuesto",
+          "inicioMs": 6160,
+          "finMs": 6384
+        }
+      ],
+      "escenario": "sala_estar"
+    },
+    {
+      "id": 9,
+      "texto": "Luego estira las patas delanteras para frenar el frente, y encoge las traseras para que la cadera y la cola giren hacia el suelo.",
+      "icono": "Layers",
+      "colorIcono": "#6366F1",
+      "tituloVisual": "ALINEACIÓN TOTAL",
+      "composicionVisual": "plano_general",
+      "layout": "narrativo",
+      "transicion": "whip_right",
+      "palabrasClave": [
+        "frenar",
+        "cola",
+        "cadera",
+        "suelo"
+      ],
+      "personajes": [
+        {
+          "id": "narrador",
+          "nombre": "Narrador",
+          "posicion": {
+            "x": 0,
+            "y": 70
+          },
+          "escala": 1,
+          "orientacion": "derecha",
+          "acciones": [
+            {
+              "tipo": "personalizada",
+              "pasos": [
+                {
+                  "inicioProgreso": 0,
+                  "finProgreso": 1,
+                  "poseId": "explaining_both_hands",
+                  "expresion": "talking_enthusiastic",
+                  "posicion": {
+                    "x": 0,
+                    "y": 70
+                  },
+                  "curva": "suave",
+                  "procedural": "estatico"
+                }
+              ]
+            }
+          ],
+          "habla": true,
+          "capaZ": 10
+        }
+      ],
+      "duracionSegundos": 6.058,
+      "palabras": [
+        {
+          "palabra": "Luego",
+          "inicioMs": 0,
+          "finMs": 280
+        },
+        {
+          "palabra": "estira",
+          "inicioMs": 280,
+          "finMs": 560
+        },
+        {
+          "palabra": "las",
+          "inicioMs": 560,
+          "finMs": 720
+        },
+        {
+          "palabra": "patas",
+          "inicioMs": 720,
+          "finMs": 980
+        },
+        {
+          "palabra": "delanteras",
+          "inicioMs": 980,
+          "finMs": 1480
+        },
+        {
+          "palabra": "para",
+          "inicioMs": 1480,
+          "finMs": 1640
+        },
+        {
+          "palabra": "frenar",
+          "inicioMs": 1640,
+          "finMs": 1940
+        },
+        {
+          "palabra": "el",
+          "inicioMs": 1940,
+          "finMs": 2060
+        },
+        {
+          "palabra": "frente",
+          "inicioMs": 2060,
+          "finMs": 2380
+        },
+        {
+          "palabra": "y",
+          "inicioMs": 2380,
+          "finMs": 2820
+        },
+        {
+          "palabra": "encoge",
+          "inicioMs": 2820,
+          "finMs": 3140
+        },
+        {
+          "palabra": "las",
+          "inicioMs": 3140,
+          "finMs": 3280
+        },
+        {
+          "palabra": "traseras",
+          "inicioMs": 3280,
+          "finMs": 3700
+        },
+        {
+          "palabra": "para",
+          "inicioMs": 3700,
+          "finMs": 3860
+        },
+        {
+          "palabra": "que",
+          "inicioMs": 3860,
+          "finMs": 3960
+        },
+        {
+          "palabra": "la",
+          "inicioMs": 3960,
+          "finMs": 4080
+        },
+        {
+          "palabra": "cadera",
+          "inicioMs": 4080,
+          "finMs": 4360
+        },
+        {
+          "palabra": "y",
+          "inicioMs": 4360,
+          "finMs": 4420
+        },
+        {
+          "palabra": "la",
+          "inicioMs": 4420,
+          "finMs": 4520
+        },
+        {
+          "palabra": "cola",
+          "inicioMs": 4520,
+          "finMs": 4700
+        },
+        {
+          "palabra": "giren",
+          "inicioMs": 4700,
+          "finMs": 5000
+        },
+        {
+          "palabra": "hacia",
+          "inicioMs": 5000,
+          "finMs": 5180
+        },
+        {
+          "palabra": "el",
+          "inicioMs": 5180,
+          "finMs": 5340
+        },
+        {
+          "palabra": "suelo",
+          "inicioMs": 5340,
+          "finMs": 5600
+        }
+      ],
+      "escenario": "sala_estar"
+    },
+    {
+      "id": 10,
+      "texto": "Todo este baile mecánico toma menos de medio segundo. Y al aterrizar, flexiona sus patas como resortes amortiguadores que absorben el impacto.",
+      "icono": "Shield",
+      "colorIcono": "#14B8A6",
+      "tituloVisual": "RESORTE NATURAL",
+      "composicionVisual": "primer_plano",
+      "layout": "narrativo",
+      "transicion": "zoom_in",
+      "efectosCamara": [
+        "punch"
+      ],
+      "palabrasClave": [
+        "medio",
+        "segundo",
+        "resortes",
+        "impacto"
+      ],
+      "personajes": [
+        {
+          "id": "narrador",
+          "nombre": "Narrador",
+          "posicion": {
+            "x": 0,
+            "y": 60
+          },
+          "escala": 1.05,
+          "orientacion": "derecha",
+          "acciones": [
+            {
+              "tipo": "personalizada",
+              "pasos": [
+                {
+                  "inicioProgreso": 0,
+                  "finProgreso": 1,
+                  "poseId": "thumbs_up_approval",
+                  "expresion": "proud",
+                  "posicion": {
+                    "x": 0,
+                    "y": 60
+                  },
+                  "curva": "suave",
+                  "procedural": "estatico"
+                }
+              ]
+            }
+          ],
+          "habla": true,
+          "capaZ": 10
+        }
+      ],
+      "duracionSegundos": 8.386,
+      "palabras": [
+        {
+          "palabra": "Todo",
+          "inicioMs": 0,
+          "finMs": 280
+        },
+        {
+          "palabra": "este",
+          "inicioMs": 280,
+          "finMs": 640
+        },
+        {
+          "palabra": "baile",
+          "inicioMs": 640,
+          "finMs": 900
+        },
+        {
+          "palabra": "mecánico",
+          "inicioMs": 900,
+          "finMs": 1420
+        },
+        {
+          "palabra": "toma",
+          "inicioMs": 1420,
+          "finMs": 1660
+        },
+        {
+          "palabra": "menos",
+          "inicioMs": 1660,
+          "finMs": 2020
+        },
+        {
+          "palabra": "de",
+          "inicioMs": 2020,
+          "finMs": 2240
+        },
+        {
+          "palabra": "medio",
+          "inicioMs": 2240,
+          "finMs": 2460
+        },
+        {
+          "palabra": "segundo",
+          "inicioMs": 2460,
+          "finMs": 2980
+        },
+        {
+          "palabra": "Y",
+          "inicioMs": 3380,
+          "finMs": 3600
+        },
+        {
+          "palabra": "al",
+          "inicioMs": 3600,
+          "finMs": 3740
+        },
+        {
+          "palabra": "aterrizar",
+          "inicioMs": 3740,
+          "finMs": 4280
+        },
+        {
+          "palabra": "flexiona",
+          "inicioMs": 4280,
+          "finMs": 4700
+        },
+        {
+          "palabra": "sus",
+          "inicioMs": 4700,
+          "finMs": 4920
+        },
+        {
+          "palabra": "patas",
+          "inicioMs": 4920,
+          "finMs": 5300
+        },
+        {
+          "palabra": "como",
+          "inicioMs": 5300,
+          "finMs": 5500
+        },
+        {
+          "palabra": "resortes",
+          "inicioMs": 5500,
+          "finMs": 6020
+        },
+        {
+          "palabra": "amortiguadores",
+          "inicioMs": 6020,
+          "finMs": 6700
+        },
+        {
+          "palabra": "que",
+          "inicioMs": 6700,
+          "finMs": 6940
+        },
+        {
+          "palabra": "absorben",
+          "inicioMs": 6940,
+          "finMs": 7380
+        },
+        {
+          "palabra": "el",
+          "inicioMs": 7380,
+          "finMs": 7500
+        },
+        {
+          "palabra": "impacto",
+          "inicioMs": 7500,
+          "finMs": 7900
+        }
+      ],
+      "escenario": "sala_estar"
+    },
+    {
+      "id": 11,
+      "texto": "Así es como la evolución convirtió a los gatos en auténticos maestros de la biomecánica. ¿Conocías este secreto de tus mascotas?",
+      "icono": "Sparkles",
+      "colorIcono": "#F97316",
+      "tituloVisual": "MAESTROS FELINOS",
+      "composicionVisual": "plano_general",
+      "layout": "narrativo",
+      "transicion": "corte",
+      "palabrasClave": [
+        "evolución",
+        "gatos",
+        "maestros",
+        "biomecánica"
+      ],
+      "personajes": [
+        {
+          "id": "narrador",
+          "nombre": "Narrador",
+          "posicion": {
+            "x": 0,
+            "y": 70
+          },
+          "escala": 1,
+          "orientacion": "derecha",
+          "acciones": [
+            {
+              "tipo": "personalizada",
+              "pasos": [
+                {
+                  "inicioProgreso": 0,
+                  "finProgreso": 1,
+                  "poseId": "pointing_at_viewer",
+                  "expresion": "smile_wide",
+                  "posicion": {
+                    "x": 0,
+                    "y": 70
+                  },
+                  "curva": "suave",
+                  "procedural": "estatico"
+                }
+              ]
+            }
+          ],
+          "habla": true,
+          "capaZ": 10
+        }
+      ],
+      "duracionSegundos": 6.778,
+      "palabras": [
+        {
+          "palabra": "Así",
+          "inicioMs": 0,
+          "finMs": 360
+        },
+        {
+          "palabra": "es",
+          "inicioMs": 360,
+          "finMs": 480
+        },
+        {
+          "palabra": "como",
+          "inicioMs": 480,
+          "finMs": 660
+        },
+        {
+          "palabra": "la",
+          "inicioMs": 660,
+          "finMs": 820
+        },
+        {
+          "palabra": "evolución",
+          "inicioMs": 820,
+          "finMs": 1220
+        },
+        {
+          "palabra": "convirtió",
+          "inicioMs": 1220,
+          "finMs": 1780
+        },
+        {
+          "palabra": "a",
+          "inicioMs": 1780,
+          "finMs": 1860
+        },
+        {
+          "palabra": "los",
+          "inicioMs": 1860,
+          "finMs": 1920
+        },
+        {
+          "palabra": "gatos",
+          "inicioMs": 1920,
+          "finMs": 2180
+        },
+        {
+          "palabra": "en",
+          "inicioMs": 2180,
+          "finMs": 2380
+        },
+        {
+          "palabra": "auténticos",
+          "inicioMs": 2380,
+          "finMs": 2880
+        },
+        {
+          "palabra": "maestros",
+          "inicioMs": 2880,
+          "finMs": 3340
+        },
+        {
+          "palabra": "de",
+          "inicioMs": 3340,
+          "finMs": 3460
+        },
+        {
+          "palabra": "la",
+          "inicioMs": 3460,
+          "finMs": 3560
+        },
+        {
+          "palabra": "biomecánica",
+          "inicioMs": 3560,
+          "finMs": 4260
+        },
+        {
+          "palabra": "Conocías",
+          "inicioMs": 4380,
+          "finMs": 4780
+        },
+        {
+          "palabra": "este",
+          "inicioMs": 4780,
+          "finMs": 5060
+        },
+        {
+          "palabra": "secreto",
+          "inicioMs": 5060,
+          "finMs": 5500
+        },
+        {
+          "palabra": "de",
+          "inicioMs": 5500,
+          "finMs": 5600
+        },
+        {
+          "palabra": "tus",
+          "inicioMs": 5600,
+          "finMs": 5740
+        },
+        {
+          "palabra": "mascotas",
+          "inicioMs": 5740,
+          "finMs": 6340
+        }
+      ],
+      "escenario": "sala_estar"
+    }
+  ]
+}

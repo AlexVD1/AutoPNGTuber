@@ -1,0 +1,1819 @@
+{
+  "meta": {
+    "id": "ilusion_rueda_carruaje_estroboscopico",
+    "slug": "ilusion_rueda_carruaje_estroboscopico",
+    "temaResumen": "La ilusión del abanico de luz (El misterio de la rueda de carruaje)",
+    "duracionObjetivo": [
+      62,
+      78
+    ],
+    "titulo": "La ilusión de la rueda de carruaje: Efecto estroboscópico",
+    "titulo_corto": "La ilusión de la rueda",
+    "gancho": "Vas en plena carretera, miras fijamente las ruedas del auto de al lado... ¿y por qué demonios parece que están girando hacia atrás?",
+    "fuentes": [
+      "Purves et al. (1996) - The wagon-wheel effect in continuous light, PNAS",
+      "Kline et al. (2004) - The wagon wheel illusion in visual perception",
+      "Andrews & Purves (2005) - Temporal sampling in human vision, Trends in Cognitive Sciences"
+    ],
+    "genero": "Ciencia y Percepción Visual",
+    "playlist": "Ilusiones Ópticas y Neurociencia"
+  },
+  "escenas": [
+    {
+      "id": 1,
+      "texto": "Vas en plena carretera, miras fijamente las ruedas del auto de al lado... ¿y por qué demonios parece que los rines están girando hacia atrás? ¡Avanza a toda prisa, pero parece romper la física!",
+      "icono": "Car",
+      "colorIcono": "#38BDF8",
+      "tituloVisual": "¿GIRANDO AL REVÉS?",
+      "composicionVisual": "plano_general",
+      "escenario": "autopista_en_fuga",
+      "layout": "narrativo",
+      "transicion": "zoom_in",
+      "efectosCamara": [
+        "punch",
+        "drift"
+      ],
+      "sfx": "sfx/sfx_auto_rewind_rueda.wav",
+      "volumenSfx": 0.25,
+      "palabrasClave": [
+        "CARRETERA",
+        "RUEDAS DEL AUTO",
+        "GIRANDO HACIA ATRÁS",
+        "A TODA PRISA",
+        "ROMPER LA FÍSICA"
+      ],
+      "personajes": [
+        {
+          "id": "stickman",
+          "nombre": "Stickman",
+          "posicion": {
+            "x": -210,
+            "y": 60
+          },
+          "escala": 1.0,
+          "orientacion": "derecha",
+          "habla": true,
+          "capaZ": 15,
+          "acciones": [
+            {
+              "tipo": "personalizada",
+              "pasos": [
+                {
+                  "inicioProgreso": 0,
+                  "finProgreso": 0.4,
+                  "poseId": "leaning_forward",
+                  "expresion": "surprised",
+                  "posicion": {
+                    "x": -220,
+                    "y": 60
+                  },
+                  "curva": "suave",
+                  "procedural": "estatico"
+                },
+                {
+                  "inicioProgreso": 0.4,
+                  "finProgreso": 0.75,
+                  "poseId": "covering_eyes",
+                  "expresion": "confused",
+                  "posicion": {
+                    "x": -220,
+                    "y": 60
+                  },
+                  "curva": "suave",
+                  "procedural": "temblar"
+                },
+                {
+                  "inicioProgreso": 0.75,
+                  "finProgreso": 1.0,
+                  "poseId": "doubting_open_hands",
+                  "expresion": "confused",
+                  "posicion": {
+                    "x": -200,
+                    "y": 60
+                  },
+                  "curva": "suave",
+                  "procedural": "estatico"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "objetos": [
+        {
+          "id": "rueda_deportiva",
+          "propId": "rueda_auto_deportivo_girando",
+          "posicion": {
+            "x": 190,
+            "y": 140
+          },
+          "escala": 1.35,
+          "animacion": {
+            "tipo": "vibrar"
+          }
+        }
+      ],
+      "duracionSegundos": 9.154,
+      "palabras": [
+        {
+          "palabra": "Vas",
+          "inicioMs": 0,
+          "finMs": 220
+        },
+        {
+          "palabra": "en",
+          "inicioMs": 220,
+          "finMs": 420
+        },
+        {
+          "palabra": "plena",
+          "inicioMs": 420,
+          "finMs": 660
+        },
+        {
+          "palabra": "carretera",
+          "inicioMs": 660,
+          "finMs": 1180
+        },
+        {
+          "palabra": "miras",
+          "inicioMs": 1280,
+          "finMs": 1460
+        },
+        {
+          "palabra": "fijamente",
+          "inicioMs": 1460,
+          "finMs": 1880
+        },
+        {
+          "palabra": "las",
+          "inicioMs": 1880,
+          "finMs": 2140
+        },
+        {
+          "palabra": "ruedas",
+          "inicioMs": 2140,
+          "finMs": 2460
+        },
+        {
+          "palabra": "del",
+          "inicioMs": 2460,
+          "finMs": 2560
+        },
+        {
+          "palabra": "auto",
+          "inicioMs": 2560,
+          "finMs": 2820
+        },
+        {
+          "palabra": "de",
+          "inicioMs": 2820,
+          "finMs": 2940
+        },
+        {
+          "palabra": "al",
+          "inicioMs": 2940,
+          "finMs": 3020
+        },
+        {
+          "palabra": "lado",
+          "inicioMs": 3020,
+          "finMs": 3320
+        },
+        {
+          "palabra": "y",
+          "inicioMs": 3560,
+          "finMs": 3620
+        },
+        {
+          "palabra": "por",
+          "inicioMs": 3620,
+          "finMs": 3760
+        },
+        {
+          "palabra": "qué",
+          "inicioMs": 3760,
+          "finMs": 3940
+        },
+        {
+          "palabra": "demonios",
+          "inicioMs": 3940,
+          "finMs": 4300
+        },
+        {
+          "palabra": "parece",
+          "inicioMs": 4300,
+          "finMs": 4540
+        },
+        {
+          "palabra": "que",
+          "inicioMs": 4540,
+          "finMs": 4800
+        },
+        {
+          "palabra": "los",
+          "inicioMs": 4800,
+          "finMs": 4940
+        },
+        {
+          "palabra": "rines",
+          "inicioMs": 4940,
+          "finMs": 5240
+        },
+        {
+          "palabra": "están",
+          "inicioMs": 5240,
+          "finMs": 5480
+        },
+        {
+          "palabra": "girando",
+          "inicioMs": 5480,
+          "finMs": 5880
+        },
+        {
+          "palabra": "hacia",
+          "inicioMs": 5880,
+          "finMs": 6020
+        },
+        {
+          "palabra": "atrás",
+          "inicioMs": 6020,
+          "finMs": 6280
+        },
+        {
+          "palabra": "Avanza",
+          "inicioMs": 6420,
+          "finMs": 6780
+        },
+        {
+          "palabra": "a",
+          "inicioMs": 6780,
+          "finMs": 7020
+        },
+        {
+          "palabra": "toda",
+          "inicioMs": 7020,
+          "finMs": 7480
+        },
+        {
+          "palabra": "prisa",
+          "inicioMs": 7560,
+          "finMs": 7660
+        },
+        {
+          "palabra": "pero",
+          "inicioMs": 7660,
+          "finMs": 7880
+        },
+        {
+          "palabra": "parece",
+          "inicioMs": 7880,
+          "finMs": 8000
+        },
+        {
+          "palabra": "romper",
+          "inicioMs": 8000,
+          "finMs": 8220
+        },
+        {
+          "palabra": "la",
+          "inicioMs": 8220,
+          "finMs": 8360
+        },
+        {
+          "palabra": "física",
+          "inicioMs": 8360,
+          "finMs": 8640
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "texto": "Tranquilo, no es un fallo en la realidad: es el famoso efecto estroboscópico. Y demuestra algo perturbador: tus ojos y tu cerebro no capturan el mundo como un video continuo, sino en ráfagas discretas.",
+      "icono": "Pause",
+      "colorIcono": "#FDE047",
+      "tituloVisual": "EFECTO ESTROBOSCÓPICO",
+      "composicionVisual": "plano_general",
+      "escenario": "estudio_pausa_fotogramas",
+      "layout": "narrativo",
+      "transicion": "whip_right",
+      "efectosCamara": [
+        "punch",
+        "drift"
+      ],
+      "sfx": "sfx/sfx_pausa_proyector_cine.wav",
+      "volumenSfx": 0.25,
+      "palabrasClave": [
+        "NO ES UN FALLO",
+        "EFECTO ESTROBOSCÓPICO",
+        "TUS OJOS",
+        "TU CEREBRO",
+        "VIDEO CONTINUO",
+        "RÁFAGAS DISCRETAS"
+      ],
+      "personajes": [
+        {
+          "id": "stickman",
+          "nombre": "Stickman",
+          "posicion": {
+            "x": -240,
+            "y": 60
+          },
+          "escala": 1.0,
+          "orientacion": "derecha",
+          "habla": true,
+          "capaZ": 15,
+          "acciones": [
+            {
+              "tipo": "personalizada",
+              "pasos": [
+                {
+                  "inicioProgreso": 0,
+                  "finProgreso": 0.35,
+                  "poseId": "walking",
+                  "expresion": "talking",
+                  "posicion": {
+                    "x": -240,
+                    "y": 60
+                  },
+                  "deltaPosicion": {
+                    "x": 100,
+                    "y": 0
+                  },
+                  "curva": "suave",
+                  "procedural": "caminar"
+                },
+                {
+                  "inicioProgreso": 0.35,
+                  "finProgreso": 0.7,
+                  "poseId": "thinking_chin_hand",
+                  "expresion": "analytical",
+                  "posicion": {
+                    "x": -140,
+                    "y": 60
+                  },
+                  "curva": "suave",
+                  "procedural": "estatico"
+                },
+                {
+                  "inicioProgreso": 0.7,
+                  "finProgreso": 1.0,
+                  "poseId": "presenting_object",
+                  "expresion": "eureka",
+                  "posicion": {
+                    "x": -110,
+                    "y": 60
+                  },
+                  "curva": "suave",
+                  "procedural": "estatico"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "objetos": [
+        {
+          "id": "rueda_congelada",
+          "propId": "rueda_auto_deportivo_girando",
+          "posicion": {
+            "x": 140,
+            "y": 80
+          },
+          "escala": 1.25,
+          "animacion": {
+            "tipo": "flotar"
+          }
+        },
+        {
+          "id": "tira_celuloide",
+          "propId": "tira_pelicula_celuloide",
+          "posicion": {
+            "x": 0,
+            "y": -220
+          },
+          "escala": 1.25,
+          "animacion": {
+            "tipo": "pulso"
+          }
+        }
+      ],
+      "duracionSegundos": 10.834,
+      "palabras": [
+        {
+          "palabra": "Tranquilo",
+          "inicioMs": 0,
+          "finMs": 540
+        },
+        {
+          "palabra": "no",
+          "inicioMs": 660,
+          "finMs": 740
+        },
+        {
+          "palabra": "es",
+          "inicioMs": 740,
+          "finMs": 860
+        },
+        {
+          "palabra": "un",
+          "inicioMs": 860,
+          "finMs": 960
+        },
+        {
+          "palabra": "fallo",
+          "inicioMs": 960,
+          "finMs": 1240
+        },
+        {
+          "palabra": "en",
+          "inicioMs": 1240,
+          "finMs": 1320
+        },
+        {
+          "palabra": "la",
+          "inicioMs": 1320,
+          "finMs": 1380
+        },
+        {
+          "palabra": "realidad",
+          "inicioMs": 1380,
+          "finMs": 1640
+        },
+        {
+          "palabra": "es",
+          "inicioMs": 1820,
+          "finMs": 1900
+        },
+        {
+          "palabra": "el",
+          "inicioMs": 1900,
+          "finMs": 2020
+        },
+        {
+          "palabra": "famoso",
+          "inicioMs": 2020,
+          "finMs": 2300
+        },
+        {
+          "palabra": "efecto",
+          "inicioMs": 2300,
+          "finMs": 2680
+        },
+        {
+          "palabra": "estroboscópico",
+          "inicioMs": 2680,
+          "finMs": 3540
+        },
+        {
+          "palabra": "Y",
+          "inicioMs": 3900,
+          "finMs": 4220
+        },
+        {
+          "palabra": "demuestra",
+          "inicioMs": 4220,
+          "finMs": 4620
+        },
+        {
+          "palabra": "algo",
+          "inicioMs": 4620,
+          "finMs": 4820
+        },
+        {
+          "palabra": "perturbador",
+          "inicioMs": 4820,
+          "finMs": 5480
+        },
+        {
+          "palabra": "tus",
+          "inicioMs": 5600,
+          "finMs": 5700
+        },
+        {
+          "palabra": "ojos",
+          "inicioMs": 5700,
+          "finMs": 5980
+        },
+        {
+          "palabra": "y",
+          "inicioMs": 5980,
+          "finMs": 6140
+        },
+        {
+          "palabra": "tu",
+          "inicioMs": 6140,
+          "finMs": 6300
+        },
+        {
+          "palabra": "cerebro",
+          "inicioMs": 6300,
+          "finMs": 6600
+        },
+        {
+          "palabra": "no",
+          "inicioMs": 6600,
+          "finMs": 6780
+        },
+        {
+          "palabra": "capturan",
+          "inicioMs": 6780,
+          "finMs": 7180
+        },
+        {
+          "palabra": "el",
+          "inicioMs": 7180,
+          "finMs": 7340
+        },
+        {
+          "palabra": "mundo",
+          "inicioMs": 7340,
+          "finMs": 7620
+        },
+        {
+          "palabra": "como",
+          "inicioMs": 7620,
+          "finMs": 7880
+        },
+        {
+          "palabra": "un",
+          "inicioMs": 7880,
+          "finMs": 8020
+        },
+        {
+          "palabra": "video",
+          "inicioMs": 8020,
+          "finMs": 8220
+        },
+        {
+          "palabra": "continuo",
+          "inicioMs": 8220,
+          "finMs": 8920
+        },
+        {
+          "palabra": "sino",
+          "inicioMs": 9120,
+          "finMs": 9240
+        },
+        {
+          "palabra": "en",
+          "inicioMs": 9240,
+          "finMs": 9360
+        },
+        {
+          "palabra": "ráfagas",
+          "inicioMs": 9360,
+          "finMs": 9720
+        },
+        {
+          "palabra": "discretas",
+          "inicioMs": 9720,
+          "finMs": 10320
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "texto": "Tu mente procesa pequeños paquetes de imágenes como si disparara fotos fijas por segundo. Si un objeto gira demasiado rápido, el cerebro tiene que adivinar e inventar lo que ocurrió en medio de cada cuadro.",
+      "icono": "Clock",
+      "colorIcono": "#EF4444",
+      "tituloVisual": "FOTOS POR SEGUNDO",
+      "composicionVisual": "plano_general",
+      "escenario": "estudio_reloj_estroboscopico",
+      "layout": "narrativo",
+      "transicion": "whip_left",
+      "efectosCamara": [
+        "punch",
+        "drift"
+      ],
+      "sfx": "sfx/sfx_obturador_camara_reloj.wav",
+      "volumenSfx": 0.25,
+      "palabrasClave": [
+        "PAQUETES DE IMÁGENES",
+        "FOTOS FIJAS",
+        "DEMASIADO RÁPIDO",
+        "EL CEREBRO",
+        "ADIVINAR E INVENTAR",
+        "CADA CUADRO"
+      ],
+      "personajes": [
+        {
+          "id": "stickman",
+          "nombre": "Stickman",
+          "posicion": {
+            "x": -210,
+            "y": 60
+          },
+          "escala": 1.0,
+          "orientacion": "derecha",
+          "habla": true,
+          "capaZ": 15,
+          "acciones": [
+            {
+              "tipo": "personalizada",
+              "pasos": [
+                {
+                  "inicioProgreso": 0,
+                  "finProgreso": 0.4,
+                  "poseId": "explaining_pointing_up",
+                  "expresion": "talking_enthusiastic",
+                  "posicion": {
+                    "x": -210,
+                    "y": 60
+                  },
+                  "prop": "puntero_docente_laser",
+                  "curva": "suave",
+                  "procedural": "estatico"
+                },
+                {
+                  "inicioProgreso": 0.4,
+                  "finProgreso": 0.75,
+                  "poseId": "presenting_object",
+                  "expresion": "analytical",
+                  "posicion": {
+                    "x": -190,
+                    "y": 60
+                  },
+                  "prop": "puntero_docente_laser",
+                  "curva": "suave",
+                  "procedural": "estatico"
+                },
+                {
+                  "inicioProgreso": 0.75,
+                  "finProgreso": 1.0,
+                  "poseId": "eureka_idea",
+                  "expresion": "eureka",
+                  "posicion": {
+                    "x": -190,
+                    "y": 60
+                  },
+                  "curva": "suave",
+                  "procedural": "estatico"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "objetos": [
+        {
+          "id": "reloj_diagrama",
+          "propId": "reloj_estroboscopico_circular",
+          "posicion": {
+            "x": 170,
+            "y": 40
+          },
+          "escala": 1.35,
+          "animacion": {
+            "tipo": "pulso"
+          }
+        }
+      ],
+      "duracionSegundos": 10.93,
+      "palabras": [
+        {
+          "palabra": "Tu",
+          "inicioMs": 0,
+          "finMs": 160
+        },
+        {
+          "palabra": "mente",
+          "inicioMs": 160,
+          "finMs": 380
+        },
+        {
+          "palabra": "procesa",
+          "inicioMs": 380,
+          "finMs": 900
+        },
+        {
+          "palabra": "pequeños",
+          "inicioMs": 900,
+          "finMs": 1240
+        },
+        {
+          "palabra": "paquetes",
+          "inicioMs": 1240,
+          "finMs": 1680
+        },
+        {
+          "palabra": "de",
+          "inicioMs": 1680,
+          "finMs": 1760
+        },
+        {
+          "palabra": "imágenes",
+          "inicioMs": 1760,
+          "finMs": 2200
+        },
+        {
+          "palabra": "como",
+          "inicioMs": 2200,
+          "finMs": 2640
+        },
+        {
+          "palabra": "si",
+          "inicioMs": 2640,
+          "finMs": 2820
+        },
+        {
+          "palabra": "disparara",
+          "inicioMs": 2820,
+          "finMs": 3240
+        },
+        {
+          "palabra": "fotos",
+          "inicioMs": 3240,
+          "finMs": 3800
+        },
+        {
+          "palabra": "fijas",
+          "inicioMs": 3800,
+          "finMs": 4020
+        },
+        {
+          "palabra": "por",
+          "inicioMs": 4020,
+          "finMs": 4480
+        },
+        {
+          "palabra": "segundo",
+          "inicioMs": 4720,
+          "finMs": 4780
+        },
+        {
+          "palabra": "Si",
+          "inicioMs": 4780,
+          "finMs": 4900
+        },
+        {
+          "palabra": "un",
+          "inicioMs": 4900,
+          "finMs": 5120
+        },
+        {
+          "palabra": "objeto",
+          "inicioMs": 5120,
+          "finMs": 5540
+        },
+        {
+          "palabra": "gira",
+          "inicioMs": 5540,
+          "finMs": 5880
+        },
+        {
+          "palabra": "demasiado",
+          "inicioMs": 5880,
+          "finMs": 6360
+        },
+        {
+          "palabra": "rápido",
+          "inicioMs": 6580,
+          "finMs": 6680
+        },
+        {
+          "palabra": "el",
+          "inicioMs": 6680,
+          "finMs": 6980
+        },
+        {
+          "palabra": "cerebro",
+          "inicioMs": 6980,
+          "finMs": 7220
+        },
+        {
+          "palabra": "tiene",
+          "inicioMs": 7220,
+          "finMs": 7420
+        },
+        {
+          "palabra": "que",
+          "inicioMs": 7420,
+          "finMs": 7860
+        },
+        {
+          "palabra": "adivinar",
+          "inicioMs": 7860,
+          "finMs": 8100
+        },
+        {
+          "palabra": "e",
+          "inicioMs": 8100,
+          "finMs": 8580
+        },
+        {
+          "palabra": "inventar",
+          "inicioMs": 8580,
+          "finMs": 8700
+        },
+        {
+          "palabra": "lo",
+          "inicioMs": 8700,
+          "finMs": 8860
+        },
+        {
+          "palabra": "que",
+          "inicioMs": 8860,
+          "finMs": 9240
+        },
+        {
+          "palabra": "ocurrió",
+          "inicioMs": 9240,
+          "finMs": 9440
+        },
+        {
+          "palabra": "en",
+          "inicioMs": 9440,
+          "finMs": 9660
+        },
+        {
+          "palabra": "medio",
+          "inicioMs": 9660,
+          "finMs": 9800
+        },
+        {
+          "palabra": "de",
+          "inicioMs": 9800,
+          "finMs": 10000
+        },
+        {
+          "palabra": "cada",
+          "inicioMs": 10000,
+          "finMs": 10460
+        },
+        {
+          "palabra": "cuadro",
+          "inicioMs": 10460,
+          "finMs": 10680
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "texto": "Imagina que las aspas de este helicóptero dan casi una vuelta entera entre foto y foto. Tu cerebro es flojo: asume el camino más corto... y ve la hélice retroceder.",
+      "icono": "Wind",
+      "colorIcono": "#F59E0B",
+      "tituloVisual": "CAMINO MÁS CORTO",
+      "composicionVisual": "plano_general",
+      "escenario": "helipuerto_despegue_exterior",
+      "layout": "narrativo",
+      "transicion": "zoom_in",
+      "efectosCamara": [
+        "punch",
+        "drift"
+      ],
+      "sfx": "sfx/sfx_helicoptero_aspas_reversa.wav",
+      "volumenSfx": 0.25,
+      "palabrasClave": [
+        "ASPAS",
+        "HELICÓPTERO",
+        "VUELTA ENTERA",
+        "CEREBRO ES FLOJO",
+        "CAMINO MÁS CORTO",
+        "RETROCEDER"
+      ],
+      "personajes": [
+        {
+          "id": "stickman",
+          "nombre": "Stickman",
+          "posicion": {
+            "x": -210,
+            "y": 60
+          },
+          "escala": 1.0,
+          "orientacion": "derecha",
+          "habla": true,
+          "capaZ": 15,
+          "acciones": [
+            {
+              "tipo": "personalizada",
+              "pasos": [
+                {
+                  "inicioProgreso": 0,
+                  "finProgreso": 0.4,
+                  "poseId": "protecting_shielding",
+                  "expresion": "scared",
+                  "posicion": {
+                    "x": -220,
+                    "y": 60
+                  },
+                  "curva": "suave",
+                  "procedural": "temblar"
+                },
+                {
+                  "inicioProgreso": 0.4,
+                  "finProgreso": 0.75,
+                  "poseId": "pointing_up",
+                  "expresion": "analytical",
+                  "posicion": {
+                    "x": -200,
+                    "y": 60
+                  },
+                  "curva": "suave",
+                  "procedural": "estatico"
+                },
+                {
+                  "inicioProgreso": 0.75,
+                  "finProgreso": 1.0,
+                  "poseId": "nodding_yes",
+                  "expresion": "talking_enthusiastic",
+                  "posicion": {
+                    "x": -200,
+                    "y": 60
+                  },
+                  "curva": "suave",
+                  "procedural": "estatico"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "objetos": [
+        {
+          "id": "helicoptero_rotor",
+          "propId": "helicoptero_rotor_animado",
+          "posicion": {
+            "x": 180,
+            "y": -40
+          },
+          "escala": 1.35,
+          "animacion": {
+            "tipo": "vibrar"
+          }
+        }
+      ],
+      "duracionSegundos": 9.586,
+      "palabras": [
+        {
+          "palabra": "Imagina",
+          "inicioMs": 0,
+          "finMs": 480
+        },
+        {
+          "palabra": "que",
+          "inicioMs": 480,
+          "finMs": 640
+        },
+        {
+          "palabra": "las",
+          "inicioMs": 640,
+          "finMs": 780
+        },
+        {
+          "palabra": "aspas",
+          "inicioMs": 780,
+          "finMs": 1140
+        },
+        {
+          "palabra": "de",
+          "inicioMs": 1140,
+          "finMs": 1280
+        },
+        {
+          "palabra": "este",
+          "inicioMs": 1280,
+          "finMs": 1480
+        },
+        {
+          "palabra": "helicóptero",
+          "inicioMs": 1480,
+          "finMs": 2100
+        },
+        {
+          "palabra": "dan",
+          "inicioMs": 2100,
+          "finMs": 2240
+        },
+        {
+          "palabra": "casi",
+          "inicioMs": 2240,
+          "finMs": 2540
+        },
+        {
+          "palabra": "una",
+          "inicioMs": 2540,
+          "finMs": 2740
+        },
+        {
+          "palabra": "vuelta",
+          "inicioMs": 2740,
+          "finMs": 2900
+        },
+        {
+          "palabra": "entera",
+          "inicioMs": 2900,
+          "finMs": 3420
+        },
+        {
+          "palabra": "entre",
+          "inicioMs": 3420,
+          "finMs": 3780
+        },
+        {
+          "palabra": "foto",
+          "inicioMs": 3780,
+          "finMs": 4120
+        },
+        {
+          "palabra": "y",
+          "inicioMs": 4120,
+          "finMs": 4360
+        },
+        {
+          "palabra": "foto",
+          "inicioMs": 4360,
+          "finMs": 4720
+        },
+        {
+          "palabra": "Tu",
+          "inicioMs": 5160,
+          "finMs": 5340
+        },
+        {
+          "palabra": "cerebro",
+          "inicioMs": 5340,
+          "finMs": 5740
+        },
+        {
+          "palabra": "es",
+          "inicioMs": 5740,
+          "finMs": 5880
+        },
+        {
+          "palabra": "flojo",
+          "inicioMs": 5880,
+          "finMs": 6200
+        },
+        {
+          "palabra": "asume",
+          "inicioMs": 6420,
+          "finMs": 6660
+        },
+        {
+          "palabra": "el",
+          "inicioMs": 6660,
+          "finMs": 6800
+        },
+        {
+          "palabra": "camino",
+          "inicioMs": 6800,
+          "finMs": 7000
+        },
+        {
+          "palabra": "más",
+          "inicioMs": 7000,
+          "finMs": 7220
+        },
+        {
+          "palabra": "corto",
+          "inicioMs": 7220,
+          "finMs": 7700
+        },
+        {
+          "palabra": "y",
+          "inicioMs": 7880,
+          "finMs": 7900
+        },
+        {
+          "palabra": "ve",
+          "inicioMs": 7900,
+          "finMs": 8000
+        },
+        {
+          "palabra": "la",
+          "inicioMs": 8000,
+          "finMs": 8180
+        },
+        {
+          "palabra": "hélice",
+          "inicioMs": 8180,
+          "finMs": 8520
+        },
+        {
+          "palabra": "retroceder",
+          "inicioMs": 8520,
+          "finMs": 9140
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "texto": "Pero el truco definitivo ocurre cuando la velocidad del aspa coincide exactamente con los fotogramas de la cámara: ¡el helicóptero parece volar con las hélices completamente congeladas!",
+      "icono": "Camera",
+      "colorIcono": "#22C55E",
+      "tituloVisual": "HÉLICES CONGELADAS",
+      "composicionVisual": "plano_general",
+      "escenario": "helipuerto_camara_tripode",
+      "layout": "narrativo",
+      "transicion": "whip_right",
+      "efectosCamara": [
+        "punch",
+        "drift"
+      ],
+      "sfx": "sfx/sfx_camara_beep_congelado.wav",
+      "volumenSfx": 0.25,
+      "palabrasClave": [
+        "TRUCO DEFINITIVO",
+        "VELOCIDAD DEL ASPA",
+        "FOTOGRAMAS",
+        "CÁMARA",
+        "TOTALMENTE CONGELADAS"
+      ],
+      "personajes": [
+        {
+          "id": "stickman",
+          "nombre": "Stickman",
+          "posicion": {
+            "x": -230,
+            "y": 60
+          },
+          "escala": 1.0,
+          "orientacion": "derecha",
+          "habla": true,
+          "capaZ": 15,
+          "acciones": [
+            {
+              "tipo": "personalizada",
+              "pasos": [
+                {
+                  "inicioProgreso": 0,
+                  "finProgreso": 0.35,
+                  "poseId": "taking_notes",
+                  "expresion": "analytical",
+                  "posicion": {
+                    "x": -230,
+                    "y": 60
+                  },
+                  "prop": "camara_tripode_visor_lcd",
+                  "curva": "suave",
+                  "procedural": "estatico"
+                },
+                {
+                  "inicioProgreso": 0.35,
+                  "finProgreso": 0.65,
+                  "poseId": "investigating_magnifier",
+                  "expresion": "surprised",
+                  "posicion": {
+                    "x": -210,
+                    "y": 60
+                  },
+                  "curva": "suave",
+                  "procedural": "estatico"
+                },
+                {
+                  "inicioProgreso": 0.65,
+                  "finProgreso": 1.0,
+                  "poseId": "jumping_joy",
+                  "expresion": "laugh",
+                  "posicion": {
+                    "x": -190,
+                    "y": 20
+                  },
+                  "curva": "rebote",
+                  "procedural": "rebotar"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "objetos": [
+        {
+          "id": "helicoptero_estatico",
+          "propId": "helicoptero_rotor_animado",
+          "posicion": {
+            "x": 160,
+            "y": -80
+          },
+          "escala": 1.35,
+          "animacion": {
+            "tipo": "flotar"
+          }
+        }
+      ],
+      "duracionSegundos": 9.298,
+      "palabras": [
+        {
+          "palabra": "Pero",
+          "inicioMs": 0,
+          "finMs": 140
+        },
+        {
+          "palabra": "el",
+          "inicioMs": 140,
+          "finMs": 240
+        },
+        {
+          "palabra": "truco",
+          "inicioMs": 240,
+          "finMs": 440
+        },
+        {
+          "palabra": "definitivo",
+          "inicioMs": 440,
+          "finMs": 1000
+        },
+        {
+          "palabra": "ocurre",
+          "inicioMs": 1000,
+          "finMs": 1400
+        },
+        {
+          "palabra": "cuando",
+          "inicioMs": 1400,
+          "finMs": 1580
+        },
+        {
+          "palabra": "la",
+          "inicioMs": 1580,
+          "finMs": 1780
+        },
+        {
+          "palabra": "velocidad",
+          "inicioMs": 1780,
+          "finMs": 2100
+        },
+        {
+          "palabra": "del",
+          "inicioMs": 2100,
+          "finMs": 2340
+        },
+        {
+          "palabra": "aspa",
+          "inicioMs": 2340,
+          "finMs": 2660
+        },
+        {
+          "palabra": "coincide",
+          "inicioMs": 2660,
+          "finMs": 3160
+        },
+        {
+          "palabra": "exactamente",
+          "inicioMs": 3160,
+          "finMs": 3600
+        },
+        {
+          "palabra": "con",
+          "inicioMs": 3600,
+          "finMs": 4080
+        },
+        {
+          "palabra": "los",
+          "inicioMs": 4080,
+          "finMs": 4220
+        },
+        {
+          "palabra": "fotogramas",
+          "inicioMs": 4220,
+          "finMs": 4700
+        },
+        {
+          "palabra": "de",
+          "inicioMs": 4700,
+          "finMs": 4760
+        },
+        {
+          "palabra": "la",
+          "inicioMs": 4760,
+          "finMs": 4840
+        },
+        {
+          "palabra": "cámara",
+          "inicioMs": 4840,
+          "finMs": 5160
+        },
+        {
+          "palabra": "el",
+          "inicioMs": 5380,
+          "finMs": 5480
+        },
+        {
+          "palabra": "helicóptero",
+          "inicioMs": 5480,
+          "finMs": 6060
+        },
+        {
+          "palabra": "parece",
+          "inicioMs": 6060,
+          "finMs": 6260
+        },
+        {
+          "palabra": "volar",
+          "inicioMs": 6260,
+          "finMs": 6680
+        },
+        {
+          "palabra": "con",
+          "inicioMs": 6680,
+          "finMs": 6820
+        },
+        {
+          "palabra": "las",
+          "inicioMs": 6820,
+          "finMs": 6980
+        },
+        {
+          "palabra": "hélices",
+          "inicioMs": 6980,
+          "finMs": 7440
+        },
+        {
+          "palabra": "completamente",
+          "inicioMs": 7440,
+          "finMs": 7920
+        },
+        {
+          "palabra": "congeladas",
+          "inicioMs": 7920,
+          "finMs": 8820
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "texto": "¿Y puedes hacer esto con tus propios ojos? ¡Claro! Si parpadeas a toda velocidad o miras bajo una luz que parpadea en la oscuridad, puedes congelar ventiladores enteros.",
+      "icono": "Eye",
+      "colorIcono": "#38BDF8",
+      "tituloVisual": "PARPADEO HUMANO",
+      "composicionVisual": "plano_general",
+      "escenario": "habitacion_ventilador_pov",
+      "layout": "narrativo",
+      "transicion": "whip_left",
+      "efectosCamara": [
+        "punch",
+        "drift"
+      ],
+      "sfx": "sfx/sfx_parpadeo_estroboscopico.wav",
+      "volumenSfx": 0.25,
+      "palabrasClave": [
+        "PROPIOS OJOS",
+        "PARPADEAS",
+        "A TODA VELOCIDAD",
+        "LUZ QUE PARPADEA",
+        "CONGELAR VENTILADORES"
+      ],
+      "personajes": [
+        {
+          "id": "stickman",
+          "nombre": "Stickman",
+          "posicion": {
+            "x": -200,
+            "y": 60
+          },
+          "escala": 1.0,
+          "orientacion": "derecha",
+          "habla": true,
+          "capaZ": 15,
+          "acciones": [
+            {
+              "tipo": "personalizada",
+              "pasos": [
+                {
+                  "inicioProgreso": 0,
+                  "finProgreso": 0.45,
+                  "poseId": "facepalm",
+                  "expresion": "shocked",
+                  "posicion": {
+                    "x": -200,
+                    "y": 60
+                  },
+                  "curva": "suave",
+                  "procedural": "rebotar"
+                },
+                {
+                  "inicioProgreso": 0.45,
+                  "finProgreso": 0.75,
+                  "poseId": "surprised_hands_up",
+                  "expresion": "surprised",
+                  "posicion": {
+                    "x": -200,
+                    "y": 60
+                  },
+                  "curva": "suave",
+                  "procedural": "estatico"
+                },
+                {
+                  "inicioProgreso": 0.75,
+                  "finProgreso": 1.0,
+                  "poseId": "thumbs_up_approval",
+                  "expresion": "smile_wide",
+                  "posicion": {
+                    "x": -180,
+                    "y": 60
+                  },
+                  "curva": "suave",
+                  "procedural": "estatico"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "objetos": [
+        {
+          "id": "ventilador_activo",
+          "propId": "ventilador_pedestal_aspas",
+          "posicion": {
+            "x": 180,
+            "y": 100
+          },
+          "escala": 1.3,
+          "animacion": {
+            "tipo": "vibrar"
+          }
+        }
+      ],
+      "duracionSegundos": 8.986,
+      "palabras": [
+        {
+          "palabra": "Y",
+          "inicioMs": 0,
+          "finMs": 60
+        },
+        {
+          "palabra": "puedes",
+          "inicioMs": 60,
+          "finMs": 280
+        },
+        {
+          "palabra": "hacer",
+          "inicioMs": 280,
+          "finMs": 540
+        },
+        {
+          "palabra": "esto",
+          "inicioMs": 540,
+          "finMs": 800
+        },
+        {
+          "palabra": "con",
+          "inicioMs": 800,
+          "finMs": 980
+        },
+        {
+          "palabra": "tus",
+          "inicioMs": 980,
+          "finMs": 1140
+        },
+        {
+          "palabra": "propios",
+          "inicioMs": 1140,
+          "finMs": 1480
+        },
+        {
+          "palabra": "ojos",
+          "inicioMs": 1480,
+          "finMs": 1720
+        },
+        {
+          "palabra": "Claro",
+          "inicioMs": 2020,
+          "finMs": 2320
+        },
+        {
+          "palabra": "Si",
+          "inicioMs": 2600,
+          "finMs": 2680
+        },
+        {
+          "palabra": "parpadeas",
+          "inicioMs": 2680,
+          "finMs": 3200
+        },
+        {
+          "palabra": "a",
+          "inicioMs": 3200,
+          "finMs": 3280
+        },
+        {
+          "palabra": "toda",
+          "inicioMs": 3280,
+          "finMs": 3420
+        },
+        {
+          "palabra": "velocidad",
+          "inicioMs": 3420,
+          "finMs": 3920
+        },
+        {
+          "palabra": "o",
+          "inicioMs": 3920,
+          "finMs": 4220
+        },
+        {
+          "palabra": "miras",
+          "inicioMs": 4220,
+          "finMs": 4520
+        },
+        {
+          "palabra": "bajo",
+          "inicioMs": 4520,
+          "finMs": 4720
+        },
+        {
+          "palabra": "una",
+          "inicioMs": 4720,
+          "finMs": 4940
+        },
+        {
+          "palabra": "luz",
+          "inicioMs": 4940,
+          "finMs": 5120
+        },
+        {
+          "palabra": "que",
+          "inicioMs": 5120,
+          "finMs": 5320
+        },
+        {
+          "palabra": "parpadea",
+          "inicioMs": 5320,
+          "finMs": 5880
+        },
+        {
+          "palabra": "en",
+          "inicioMs": 5880,
+          "finMs": 6000
+        },
+        {
+          "palabra": "la",
+          "inicioMs": 6000,
+          "finMs": 6440
+        },
+        {
+          "palabra": "oscuridad",
+          "inicioMs": 6540,
+          "finMs": 6720
+        },
+        {
+          "palabra": "puedes",
+          "inicioMs": 6720,
+          "finMs": 7280
+        },
+        {
+          "palabra": "congelar",
+          "inicioMs": 7280,
+          "finMs": 7860
+        },
+        {
+          "palabra": "ventiladores",
+          "inicioMs": 7860,
+          "finMs": 8480
+        },
+        {
+          "palabra": "enteros",
+          "inicioMs": 8480,
+          "finMs": 8736
+        }
+      ]
+    },
+    {
+      "id": 7,
+      "texto": "Así que no confíes tanto en lo que ves: tus ojos no transmiten una película perfecta, solo te muestran las fotos que tu cerebro puede alcanzar a revelar.",
+      "icono": "Sparkles",
+      "colorIcono": "#A855F7",
+      "tituloVisual": "ILUSIÓN REVELADA",
+      "composicionVisual": "plano_general",
+      "escenario": "habitacion_mareo_cierre",
+      "layout": "narrativo",
+      "transicion": "zoom_in",
+      "efectosCamara": [
+        "punch",
+        "drift"
+      ],
+      "sfx": "sfx/sfx_mareo_estrellas_thud.wav",
+      "volumenSfx": 0.25,
+      "palabrasClave": [
+        "NO CONFÍES",
+        "PELÍCULA PERFECTA",
+        "SOLO TE MUESTRAN",
+        "FOTOS",
+        "TU CEREBRO",
+        "REVELAR"
+      ],
+      "personajes": [
+        {
+          "id": "stickman",
+          "nombre": "Stickman",
+          "posicion": {
+            "x": -210,
+            "y": 60
+          },
+          "escala": 1.0,
+          "orientacion": "derecha",
+          "habla": true,
+          "capaZ": 15,
+          "acciones": [
+            {
+              "tipo": "personalizada",
+              "pasos": [
+                {
+                  "inicioProgreso": 0,
+                  "finProgreso": 0.35,
+                  "poseId": "tripping_falling",
+                  "expresion": "confused",
+                  "posicion": {
+                    "x": -210,
+                    "y": 60
+                  },
+                  "deltaPosicion": {
+                    "x": 130,
+                    "y": 0
+                  },
+                  "prop": "stickman_ojos_mareo_espiral",
+                  "curva": "suave",
+                  "procedural": "temblar"
+                },
+                {
+                  "inicioProgreso": 0.35,
+                  "finProgreso": 0.65,
+                  "poseId": "sitting",
+                  "expresion": "exhausted",
+                  "posicion": {
+                    "x": -80,
+                    "y": 130
+                  },
+                  "prop": "stickman_ojos_mareo_espiral",
+                  "curva": "impacto",
+                  "procedural": "estatico"
+                },
+                {
+                  "inicioProgreso": 0.65,
+                  "finProgreso": 1.0,
+                  "poseId": "thumbs_up_approval",
+                  "expresion": "smile_soft",
+                  "posicion": {
+                    "x": -80,
+                    "y": 130
+                  },
+                  "prop": "stickman_ojos_mareo_espiral",
+                  "curva": "suave",
+                  "procedural": "temblar"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "objetos": [
+        {
+          "id": "ventilador_apagado",
+          "propId": "ventilador_pedestal_aspas",
+          "posicion": {
+            "x": 220,
+            "y": 100
+          },
+          "escala": 1.15,
+          "animacion": {
+            "tipo": "fijo"
+          }
+        }
+      ],
+      "duracionSegundos": 8.002,
+      "palabras": [
+        {
+          "palabra": "Así",
+          "inicioMs": 0,
+          "finMs": 280
+        },
+        {
+          "palabra": "que",
+          "inicioMs": 280,
+          "finMs": 420
+        },
+        {
+          "palabra": "no",
+          "inicioMs": 420,
+          "finMs": 520
+        },
+        {
+          "palabra": "confíes",
+          "inicioMs": 520,
+          "finMs": 840
+        },
+        {
+          "palabra": "tanto",
+          "inicioMs": 840,
+          "finMs": 1120
+        },
+        {
+          "palabra": "en",
+          "inicioMs": 1120,
+          "finMs": 1240
+        },
+        {
+          "palabra": "lo",
+          "inicioMs": 1240,
+          "finMs": 1300
+        },
+        {
+          "palabra": "que",
+          "inicioMs": 1300,
+          "finMs": 1420
+        },
+        {
+          "palabra": "ves",
+          "inicioMs": 1420,
+          "finMs": 1600
+        },
+        {
+          "palabra": "tus",
+          "inicioMs": 1740,
+          "finMs": 1800
+        },
+        {
+          "palabra": "ojos",
+          "inicioMs": 1800,
+          "finMs": 2060
+        },
+        {
+          "palabra": "no",
+          "inicioMs": 2060,
+          "finMs": 2220
+        },
+        {
+          "palabra": "transmiten",
+          "inicioMs": 2220,
+          "finMs": 2600
+        },
+        {
+          "palabra": "una",
+          "inicioMs": 2600,
+          "finMs": 2840
+        },
+        {
+          "palabra": "película",
+          "inicioMs": 2840,
+          "finMs": 3140
+        },
+        {
+          "palabra": "perfecta",
+          "inicioMs": 3140,
+          "finMs": 3860
+        },
+        {
+          "palabra": "solo",
+          "inicioMs": 4060,
+          "finMs": 4240
+        },
+        {
+          "palabra": "te",
+          "inicioMs": 4240,
+          "finMs": 4440
+        },
+        {
+          "palabra": "muestran",
+          "inicioMs": 4440,
+          "finMs": 4820
+        },
+        {
+          "palabra": "las",
+          "inicioMs": 4820,
+          "finMs": 5000
+        },
+        {
+          "palabra": "fotos",
+          "inicioMs": 5000,
+          "finMs": 5360
+        },
+        {
+          "palabra": "que",
+          "inicioMs": 5360,
+          "finMs": 5560
+        },
+        {
+          "palabra": "tu",
+          "inicioMs": 5560,
+          "finMs": 5680
+        },
+        {
+          "palabra": "cerebro",
+          "inicioMs": 5680,
+          "finMs": 6080
+        },
+        {
+          "palabra": "puede",
+          "inicioMs": 6080,
+          "finMs": 6360
+        },
+        {
+          "palabra": "alcanzar",
+          "inicioMs": 6360,
+          "finMs": 6940
+        },
+        {
+          "palabra": "a",
+          "inicioMs": 6940,
+          "finMs": 7020
+        },
+        {
+          "palabra": "revelar",
+          "inicioMs": 7020,
+          "finMs": 7520
+        }
+      ]
+    }
+  ]
+}

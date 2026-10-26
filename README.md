@@ -2,7 +2,7 @@
 
 > **Motor automatizado de producción y renderizado de videos verticales (YouTube Shorts, TikTok, Instagram Reels) en formato 9:16 (1080×1920 a 30 FPS), con animación procedural, síntesis de voz neuronal y subtítulos karaoke sincronizados al milisegundo.**
 
-Desarrollado sobre **[Remotion](https://remotion.dev/)**, **React 18**, **TypeScript**, **Tailwind CSS** y **Python (edge-tts + mutagen)**, AutoPNGTuber transforma un guion estructurado en JSON en una pieza audiovisual animada, dinámica y con estilo neo-brutalista lista para su publicación en redes sociales.
+Desarrollado sobre **[Remotion](https://remotion.dev/)**, **React 18**, **TypeScript**, **Tailwind CSS** y **Python (Chatterbox Multilingual TTS + Faster-Whisper + Mutagen)**, AutoPNGTuber transforma un guion estructurado en JSON en una pieza audiovisual animada, dinámica y con estilo neo-brutalista lista para su publicación en redes sociales.
 
 ---
 
@@ -92,17 +92,28 @@ flowchart TD
 ```text
 AutoPNGTuber/
 ├── archivo_videos/             # Histórico de guiones respaldados ({fecha}_{slug}.json)
+├── docs/                       # Licencias, checklist de publicación y seguimiento
+│   ├── CHECKLIST_PUBLICACION.md # Protocolo de 2 minutos antes de publicar y experimento A/B
+│   ├── LICENCIAS.md            # Registro de voces, música, SFX y políticas de monetización
+│   └── SEGUIMIENTO.csv         # Registro de métricas a 48h
+├── out/                        # Videos renderizados organizados
+│   ├── pendientes/             # Videos y metadatos listos para publicar
+│   ├── publicados/             # Videos ya subidos
+│   └── pruebas/                # Renders de test y archivos temporales
 ├── public/
 │   ├── audios/                 # Audios generados por escena (escena_{id}.mp3) y caché TTS
-│   ├── bgm/                    # Pistas musicales de fondo
+│   ├── bgm/                    # Pistas musicales de fondo (bgm.mp3)
 │   ├── poses/                  # Catálogo de 357 SVGs del stickman + contact_sheet.html
 │   └── sfx/                    # Efectos de sonido (whooshes, impactos, hits dramáticos)
 ├── scripts/
 │   ├── exportar_metadata.js    # Generador de metadatos JSON para redes sociales
 │   ├── generar_biblioteca_poses.mjs # Compilador del catálogo de poses y hoja de contacto
-│   ├── generar_voz.py          # Generador TTS (Edge-TTS + Mutagen) y extractor de timestamps
+│   ├── generar_voz.py          # Generador TTS (Chatterbox + Faster-Whisper + Mutagen)
+│   ├── legacy/                 # Scripts archivados de un solo uso
+│   ├── qa_video.js             # Chequeo QA automático con ffprobe y ffmpeg
 │   ├── registrar_historia.py   # Auditor de similitud, registro en historial y respaldo
-│   └── render_short.js         # Orquestador de renderizado, purga de caché y sincronización
+│   ├── render_short.js         # Orquestador de renderizado con pre-validación y post-QA
+│   └── validar_guion.js        # Validador de guion con esquema Zod y lint visual
 ├── src/
 │   ├── components/
 │   │   ├── AnimatedIcon.tsx    # Rótulo e icono neo-brutalista animado superior
@@ -165,12 +176,23 @@ AutoPNGTuber/
 
 | Comando | Descripción |
 | :--- | :--- |
-| `npm run tts` | Sintetiza los audios con `edge-tts`, mide duraciones, inyecta palabras clave en `guion.json` y archiva el historial. |
+| `npm run validar` | Valida el esquema zod de `src/data/guion.json` (poses, props, escenarios, duraciones, tiempos) y avisa de ritmo visual. |
+| `npm run tts` | Sintetiza los audios con voz clonada local (Chatterbox), alinea timestamps fonéticos con faster-whisper y archiva el historial. |
 | `npm run dev` | Inicia el entorno de desarrollo visual en vivo en **Remotion Studio** (`http://localhost:3000`). |
-| `npm run render` | Renderiza el video completo (1080×1920 a 30fps), exporta la metadata JSON y lo copia a la unidad compartida. |
+| `npm run qa` | Chequea el MP4 con ffprobe/ffmpeg (duración, resolución 1080×1920, 30fps, loudness ≈ -14 LUFS, silencios y tamaño). |
+| `npm run render` | Valida el guion, renderiza el video con Remotion (CRF 22), ejecuta el QA, exporta metadata `.json` y copia a `DESTINO_DIR`. |
+| `npm run render:all` | Atajo que ejecuta `npm run tts` seguido de `npm run render`. |
 | `npm run metadata` | Genera o actualiza el archivo de metadatos `.json` para YouTube/TikTok sin necesidad de renderizar el video. |
 | `npm run poses:build` | Recompila los SVGs modulares del Stickman, actualiza `src/data/poses.json` y genera la hoja de contacto visual. |
 | `npm run historial` | Ejecuta de forma aislada la verificación de similitud y el respaldo del guion actual en el historial. |
+
+---
+
+## 📚 Documentación de Publicación y Operación
+
+- **[docs/LICENCIAS.md](docs/LICENCIAS.md)**: Inventario de origen de voces, música, SFX y políticas de contenido sintético / inauténtico de YouTube y TikTok.
+- **[docs/CHECKLIST_PUBLICACION.md](docs/CHECKLIST_PUBLICACION.md)**: Protocolo de revisión de 2 minutos antes de publicar y guía del experimento A/B de duración.
+- **[docs/SEGUIMIENTO.csv](docs/SEGUIMIENTO.csv)**: Hoja de registro de métricas a 48h (retención, vistas, suscriptores, grupo A/B).
 
 ---
 

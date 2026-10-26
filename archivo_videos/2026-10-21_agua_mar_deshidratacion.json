@@ -2,7 +2,19 @@
   "meta": {
     "id": "agua_mar_deshidratacion",
     "slug": "agua_mar_deshidratacion",
-    "temaResumen": "¿Por qué no podemos tomar agua de mar para sobrevivir?"
+    "temaResumen": "¿Por qué no podemos tomar agua de mar para sobrevivir? Ósmosis y deshidratación celular",
+    "titulo": "¿Por qué tomar agua de mar te deshidrata hasta morir?",
+    "titulo_corto": "AGUA DE MAR MORTAL",
+    "gancho": "¿Sabías por qué tomar agua de mar puede matarte de sed en lugar de salvarte la vida?",
+    "fuentes": [
+      "Guyton & Hall: Tratado de Fisiología Médica (Mecanismos Renales)",
+      "National Oceanic and Atmospheric Administration (NOAA)"
+    ],
+    "genero": "SCIENCE",
+    "duracionObjetivo": [
+      62,
+      110
+    ]
   },
   "escenas": [
     {
@@ -64,41 +76,41 @@
         "matarte de sed",
         "salvarte la vida"
       ],
-      "duracionSegundos": 4.258,
+      "duracionSegundos": 4.21,
       "palabras": [
         {
           "palabra": "Sabías",
           "inicioMs": 0,
-          "finMs": 400
+          "finMs": 440
         },
         {
           "palabra": "por",
-          "inicioMs": 400,
-          "finMs": 560
+          "inicioMs": 440,
+          "finMs": 600
         },
         {
           "palabra": "qué",
-          "inicioMs": 560,
-          "finMs": 700
+          "inicioMs": 600,
+          "finMs": 720
         },
         {
           "palabra": "tomar",
-          "inicioMs": 700,
-          "finMs": 900
+          "inicioMs": 720,
+          "finMs": 960
         },
         {
           "palabra": "agua",
-          "inicioMs": 900,
-          "finMs": 1100
+          "inicioMs": 960,
+          "finMs": 1140
         },
         {
           "palabra": "de",
-          "inicioMs": 1100,
-          "finMs": 1220
+          "inicioMs": 1140,
+          "finMs": 1240
         },
         {
           "palabra": "mar",
-          "inicioMs": 1220,
+          "inicioMs": 1240,
           "finMs": 1400
         },
         {
@@ -114,42 +126,42 @@
         {
           "palabra": "de",
           "inicioMs": 2080,
-          "finMs": 2220
+          "finMs": 2240
         },
         {
           "palabra": "sed",
-          "inicioMs": 2220,
+          "inicioMs": 2240,
           "finMs": 2420
         },
         {
           "palabra": "en",
           "inicioMs": 2420,
-          "finMs": 2660
+          "finMs": 2640
         },
         {
           "palabra": "lugar",
-          "inicioMs": 2660,
-          "finMs": 2860
+          "inicioMs": 2640,
+          "finMs": 2840
         },
         {
           "palabra": "de",
-          "inicioMs": 2860,
-          "finMs": 3040
+          "inicioMs": 2840,
+          "finMs": 3000
         },
         {
           "palabra": "salvarte",
-          "inicioMs": 3040,
-          "finMs": 3420
+          "inicioMs": 3000,
+          "finMs": 3380
         },
         {
           "palabra": "la",
-          "inicioMs": 3420,
-          "finMs": 3560
+          "inicioMs": 3380,
+          "finMs": 3500
         },
         {
           "palabra": "vida",
-          "inicioMs": 3560,
-          "finMs": 3760
+          "inicioMs": 3500,
+          "finMs": 3720
         }
       ]
     },
@@ -206,112 +218,112 @@
         "millones de litros",
         "sin poder beber"
       ],
-      "duracionSegundos": 5.53,
+      "duracionSegundos": 6.346,
       "palabras": [
         {
           "palabra": "Imagina",
           "inicioMs": 0,
-          "finMs": 440
+          "finMs": 460
         },
         {
           "palabra": "estar",
-          "inicioMs": 440,
-          "finMs": 600
+          "inicioMs": 460,
+          "finMs": 660
         },
         {
           "palabra": "perdido",
-          "inicioMs": 600,
-          "finMs": 1000
+          "inicioMs": 660,
+          "finMs": 1040
         },
         {
           "palabra": "en",
-          "inicioMs": 1000,
-          "finMs": 1100
+          "inicioMs": 1040,
+          "finMs": 1160
         },
         {
           "palabra": "medio",
-          "inicioMs": 1100,
-          "finMs": 1240
+          "inicioMs": 1160,
+          "finMs": 1340
         },
         {
           "palabra": "del",
-          "inicioMs": 1240,
-          "finMs": 1380
+          "inicioMs": 1340,
+          "finMs": 1480
         },
         {
           "palabra": "océano",
-          "inicioMs": 1380,
-          "finMs": 1820
+          "inicioMs": 1480,
+          "finMs": 1580
         },
         {
           "palabra": "rodeado",
-          "inicioMs": 1920,
-          "finMs": 2220
+          "inicioMs": 1580,
+          "finMs": 1800
         },
         {
           "palabra": "de",
-          "inicioMs": 2220,
-          "finMs": 2340
+          "inicioMs": 1800,
+          "finMs": 1980
         },
         {
           "palabra": "millones",
-          "inicioMs": 2340,
-          "finMs": 2540
+          "inicioMs": 2060,
+          "finMs": 2160
         },
         {
           "palabra": "de",
-          "inicioMs": 2540,
-          "finMs": 2780
+          "inicioMs": 2160,
+          "finMs": 2440
         },
         {
           "palabra": "litros",
-          "inicioMs": 2780,
-          "finMs": 3020
+          "inicioMs": 2440,
+          "finMs": 2560
         },
         {
           "palabra": "de",
-          "inicioMs": 3020,
-          "finMs": 3120
+          "inicioMs": 2560,
+          "finMs": 2760
         },
         {
           "palabra": "agua",
-          "inicioMs": 3120,
-          "finMs": 3220
+          "inicioMs": 2760,
+          "finMs": 3020
         },
         {
           "palabra": "cristalina",
-          "inicioMs": 3220,
-          "finMs": 3720
+          "inicioMs": 3020,
+          "finMs": 3300
         },
         {
           "palabra": "sin",
-          "inicioMs": 3720,
-          "finMs": 3860
+          "inicioMs": 3300,
+          "finMs": 3420
         },
         {
           "palabra": "poder",
-          "inicioMs": 3860,
-          "finMs": 4100
+          "inicioMs": 3420,
+          "finMs": 3540
         },
         {
           "palabra": "beber",
-          "inicioMs": 4100,
-          "finMs": 4300
+          "inicioMs": 3540,
+          "finMs": 4160
         },
         {
           "palabra": "una",
-          "inicioMs": 4300,
-          "finMs": 4480
+          "inicioMs": 4260,
+          "finMs": 4360
         },
         {
           "palabra": "sola",
-          "inicioMs": 4480,
-          "finMs": 4660
+          "inicioMs": 4360,
+          "finMs": 4640
         },
         {
           "palabra": "gota",
-          "inicioMs": 4660,
-          "finMs": 5060
+          "inicioMs": 4640,
+          "finMs": 4900
         }
       ]
     },
@@ -362,117 +374,117 @@
         "sal marina",
         "cada litro"
       ],
-      "duracionSegundos": 6.37,
+      "duracionSegundos": 6.922,
       "palabras": [
         {
           "palabra": "A",
           "inicioMs": 0,
-          "finMs": 180
+          "finMs": 200
         },
         {
           "palabra": "simple",
-          "inicioMs": 180,
-          "finMs": 460
+          "inicioMs": 200,
+          "finMs": 520
         },
         {
           "palabra": "vista",
-          "inicioMs": 460,
-          "finMs": 760
+          "inicioMs": 520,
+          "finMs": 840
         },
         {
           "palabra": "parece",
-          "inicioMs": 760,
-          "finMs": 1000
+          "inicioMs": 840,
+          "finMs": 1120
         },
         {
           "palabra": "agua",
-          "inicioMs": 1000,
-          "finMs": 1280
+          "inicioMs": 1120,
+          "finMs": 1420
         },
         {
           "palabra": "normal",
-          "inicioMs": 1280,
-          "finMs": 1660
+          "inicioMs": 1420,
+          "finMs": 1900
         },
         {
           "palabra": "pero",
-          "inicioMs": 1840,
-          "finMs": 1940
+          "inicioMs": 2100,
+          "finMs": 2220
         },
         {
           "palabra": "contiene",
-          "inicioMs": 1940,
-          "finMs": 2340
+          "inicioMs": 2220,
+          "finMs": 2600
         },
         {
           "palabra": "una",
-          "inicioMs": 2340,
-          "finMs": 2500
+          "inicioMs": 2600,
+          "finMs": 2760
         },
         {
           "palabra": "concentración",
-          "inicioMs": 2500,
-          "finMs": 3060
+          "inicioMs": 2760,
+          "finMs": 3400
         },
         {
           "palabra": "masiva",
-          "inicioMs": 3060,
-          "finMs": 3440
+          "inicioMs": 3400,
+          "finMs": 3840
         },
         {
           "palabra": "de",
-          "inicioMs": 3440,
-          "finMs": 3580
+          "inicioMs": 3840,
+          "finMs": 3980
         },
         {
           "palabra": "casi",
-          "inicioMs": 3580,
-          "finMs": 3780
+          "inicioMs": 3980,
+          "finMs": 4200
         },
         {
           "palabra": "treinta",
-          "inicioMs": 3780,
-          "finMs": 4400
+          "inicioMs": 4200,
+          "finMs": 4880
         },
         {
           "palabra": "y",
-          "inicioMs": 4400,
-          "finMs": 4800
+          "inicioMs": 4880,
+          "finMs": 5280
         },
         {
           "palabra": "cinco",
-          "inicioMs": 4800,
-          "finMs": 4920
+          "inicioMs": 5280,
+          "finMs": 5400
         },
         {
           "palabra": "gramos",
-          "inicioMs": 4920,
-          "finMs": 5100
+          "inicioMs": 5400,
+          "finMs": 5620
         },
         {
           "palabra": "de",
-          "inicioMs": 5100,
-          "finMs": 5320
+          "inicioMs": 5620,
+          "finMs": 5860
         },
         {
           "palabra": "sal",
-          "inicioMs": 5320,
-          "finMs": 5520
+          "inicioMs": 5860,
+          "finMs": 6080
         },
         {
           "palabra": "por",
-          "inicioMs": 5520,
-          "finMs": 5900
+          "inicioMs": 6080,
+          "finMs": 6460
         },
         {
           "palabra": "cada",
-          "inicioMs": 5900,
-          "finMs": 6010
+          "inicioMs": 6460,
+          "finMs": 6566
         },
         {
           "palabra": "litro",
-          "inicioMs": 5900,
-          "finMs": 6010
+          "inicioMs": 6460,
+          "finMs": 6566
         }
       ]
     },
@@ -527,92 +539,92 @@
         "filtros biológicos",
         "límite estricto"
       ],
-      "duracionSegundos": 6.106,
+      "duracionSegundos": 6.346,
       "palabras": [
         {
           "palabra": "Nuestros",
           "inicioMs": 0,
-          "finMs": 420
+          "finMs": 400
         },
         {
           "palabra": "riñones",
-          "inicioMs": 420,
-          "finMs": 800
+          "inicioMs": 400,
+          "finMs": 740
         },
         {
           "palabra": "son",
-          "inicioMs": 800,
-          "finMs": 960
+          "inicioMs": 740,
+          "finMs": 920
         },
         {
           "palabra": "los",
-          "inicioMs": 960,
+          "inicioMs": 920,
           "finMs": 1080
         },
         {
           "palabra": "filtros",
           "inicioMs": 1080,
-          "finMs": 1360
+          "finMs": 1940
         },
         {
           "palabra": "biológicos",
-          "inicioMs": 1360,
-          "finMs": 1900
+          "inicioMs": 1940,
+          "finMs": 2120
         },
         {
           "palabra": "más",
-          "inicioMs": 1900,
-          "finMs": 2060
+          "inicioMs": 2120,
+          "finMs": 2680
         },
         {
           "palabra": "eficientes",
-          "inicioMs": 2060,
-          "finMs": 2560
+          "inicioMs": 2680,
+          "finMs": 2860
         },
         {
           "palabra": "del",
-          "inicioMs": 2560,
-          "finMs": 2760
+          "inicioMs": 2860,
+          "finMs": 3260
         },
         {
           "palabra": "cuerpo",
-          "inicioMs": 2760,
-          "finMs": 3120
+          "inicioMs": 3400,
+          "finMs": 3500
         },
         {
           "palabra": "pero",
-          "inicioMs": 3240,
-          "finMs": 3340
-        },
-        {
-          "palabra": "tienen",
-          "inicioMs": 3340,
-          "finMs": 3580
-        },
-        {
-          "palabra": "un",
-          "inicioMs": 3580,
+          "inicioMs": 3500,
           "finMs": 3760
         },
         {
-          "palabra": "límite",
+          "palabra": "tienen",
           "inicioMs": 3760,
-          "finMs": 4060
+          "finMs": 3920
+        },
+        {
+          "palabra": "un",
+          "inicioMs": 3920,
+          "finMs": 4260
+        },
+        {
+          "palabra": "límite",
+          "inicioMs": 4260,
+          "finMs": 4960
         },
         {
           "palabra": "fisiológico",
-          "inicioMs": 4060,
-          "finMs": 4760
+          "inicioMs": 4960,
+          "finMs": 5200
         },
         {
           "palabra": "muy",
-          "inicioMs": 4760,
-          "finMs": 5000
+          "inicioMs": 5200,
+          "finMs": 5880
         },
         {
           "palabra": "estricto",
-          "inicioMs": 5000,
-          "finMs": 5640
+          "inicioMs": 5880,
+          "finMs": 6096
         }
       ]
     },
@@ -663,7 +675,7 @@
         "cuatro veces menor",
         "sal marina"
       ],
-      "duracionSegundos": 6.586,
+      "duracionSegundos": 6.538,
       "palabras": [
         {
           "palabra": "La",
@@ -673,11 +685,11 @@
         {
           "palabra": "sangre",
           "inicioMs": 180,
-          "finMs": 440
+          "finMs": 480
         },
         {
           "palabra": "humana",
-          "inicioMs": 440,
+          "inicioMs": 480,
           "finMs": 820
         },
         {
@@ -693,87 +705,87 @@
         {
           "palabra": "concentración",
           "inicioMs": 1200,
-          "finMs": 1820
+          "finMs": 1840
         },
         {
           "palabra": "de",
-          "inicioMs": 1820,
-          "finMs": 1980
+          "inicioMs": 1840,
+          "finMs": 2040
         },
         {
           "palabra": "sal",
-          "inicioMs": 1980,
-          "finMs": 2180
+          "inicioMs": 2040,
+          "finMs": 2260
         },
         {
           "palabra": "de",
-          "inicioMs": 2180,
-          "finMs": 2460
+          "inicioMs": 2260,
+          "finMs": 2420
         },
         {
           "palabra": "apenas",
-          "inicioMs": 2460,
-          "finMs": 2760
+          "inicioMs": 2420,
+          "finMs": 2700
         },
         {
           "palabra": "el",
-          "inicioMs": 2760,
-          "finMs": 2960
+          "inicioMs": 2700,
+          "finMs": 2900
         },
         {
           "palabra": "cero",
-          "inicioMs": 2960,
-          "finMs": 3240
+          "inicioMs": 2900,
+          "finMs": 3140
         },
         {
           "palabra": "punto",
-          "inicioMs": 3240,
-          "finMs": 4560
+          "inicioMs": 3140,
+          "finMs": 4460
         },
         {
           "palabra": "nueve",
-          "inicioMs": 4560,
-          "finMs": 5040
+          "inicioMs": 4460,
+          "finMs": 4960
         },
         {
           "palabra": "por",
-          "inicioMs": 5040,
-          "finMs": 5280
+          "inicioMs": 4960,
+          "finMs": 5260
         },
         {
           "palabra": "ciento",
-          "inicioMs": 5280,
-          "finMs": 5640
+          "inicioMs": 5260,
+          "finMs": 5600
         },
         {
           "palabra": "cuatro",
-          "inicioMs": 5640,
-          "finMs": 5860
+          "inicioMs": 5600,
+          "finMs": 5820
         },
         {
           "palabra": "veces",
-          "inicioMs": 5860,
-          "finMs": 5960
+          "inicioMs": 5820,
+          "finMs": 5900
         },
         {
           "palabra": "menor",
-          "inicioMs": 5960,
-          "finMs": 6120
+          "inicioMs": 5900,
+          "finMs": 6060
         },
         {
           "palabra": "que",
-          "inicioMs": 6120,
-          "finMs": 6200
+          "inicioMs": 6060,
+          "finMs": 6140
         },
         {
           "palabra": "el",
-          "inicioMs": 6120,
-          "finMs": 6200
+          "inicioMs": 6060,
+          "finMs": 6140
         },
         {
           "palabra": "mar",
-          "inicioMs": 6120,
-          "finMs": 6200
+          "inicioMs": 6060,
+          "finMs": 6140
         }
       ]
     },
@@ -813,112 +825,112 @@
         "producir orina",
         "deshidratación"
       ],
-      "duracionSegundos": 6.178,
+      "duracionSegundos": 6.082,
       "palabras": [
         {
           "palabra": "Para",
           "inicioMs": 0,
-          "finMs": 240
+          "finMs": 200
         },
         {
           "palabra": "expulsar",
-          "inicioMs": 240,
-          "finMs": 800
+          "inicioMs": 200,
+          "finMs": 780
         },
         {
           "palabra": "toda",
-          "inicioMs": 800,
-          "finMs": 980
+          "inicioMs": 780,
+          "finMs": 1000
         },
         {
           "palabra": "esa",
-          "inicioMs": 980,
-          "finMs": 1220
+          "inicioMs": 1000,
+          "finMs": 1180
         },
         {
           "palabra": "sal",
-          "inicioMs": 1220,
+          "inicioMs": 1180,
           "finMs": 1420
         },
         {
           "palabra": "marina",
           "inicioMs": 1420,
-          "finMs": 1800
+          "finMs": 1780
         },
         {
           "palabra": "extra",
-          "inicioMs": 1800,
-          "finMs": 2180
+          "inicioMs": 1780,
+          "finMs": 2120
         },
         {
           "palabra": "tus",
-          "inicioMs": 2280,
-          "finMs": 2340
+          "inicioMs": 2220,
+          "finMs": 2300
         },
         {
           "palabra": "riñones",
-          "inicioMs": 2340,
-          "finMs": 2740
+          "inicioMs": 2300,
+          "finMs": 2660
         },
         {
           "palabra": "se",
-          "inicioMs": 2740,
-          "finMs": 2880
+          "inicioMs": 2660,
+          "finMs": 2800
         },
         {
           "palabra": "ven",
-          "inicioMs": 2880,
-          "finMs": 2960
+          "inicioMs": 2800,
+          "finMs": 2900
         },
         {
           "palabra": "obligados",
-          "inicioMs": 2960,
-          "finMs": 3440
+          "inicioMs": 2900,
+          "finMs": 3360
         },
         {
           "palabra": "a",
-          "inicioMs": 3440,
-          "finMs": 3600
+          "inicioMs": 3360,
+          "finMs": 3500
         },
         {
           "palabra": "producir",
-          "inicioMs": 3600,
-          "finMs": 3960
+          "inicioMs": 3500,
+          "finMs": 3840
         },
         {
           "palabra": "muchísima",
-          "inicioMs": 3960,
-          "finMs": 4500
+          "inicioMs": 3840,
+          "finMs": 4360
         },
         {
           "palabra": "más",
-          "inicioMs": 4500,
-          "finMs": 4680
+          "inicioMs": 4360,
+          "finMs": 4580
         },
         {
           "palabra": "orina",
-          "inicioMs": 4680,
-          "finMs": 5020
+          "inicioMs": 4580,
+          "finMs": 4880
         },
         {
           "palabra": "de",
-          "inicioMs": 5020,
-          "finMs": 5120
+          "inicioMs": 4880,
+          "finMs": 4980
         },
         {
           "palabra": "la",
-          "inicioMs": 5120,
-          "finMs": 5200
+          "inicioMs": 4980,
+          "finMs": 5060
         },
         {
           "palabra": "que",
-          "inicioMs": 5200,
-          "finMs": 5300
+          "inicioMs": 5060,
+          "finMs": 5180
         },
         {
           "palabra": "bebiste",
-          "inicioMs": 5300,
-          "finMs": 5700
+          "inicioMs": 5180,
+          "finMs": 5620
         }
       ]
     },
@@ -963,7 +975,7 @@
         "vaso y medio",
         "agua pura"
       ],
-      "duracionSegundos": 6.322,
+      "duracionSegundos": 6.73,
       "palabras": [
         {
           "palabra": "Es",
@@ -978,112 +990,112 @@
         {
           "palabra": "trampa",
           "inicioMs": 380,
-          "finMs": 720
+          "finMs": 680
         },
         {
           "palabra": "matemática",
-          "inicioMs": 720,
-          "finMs": 1240
+          "inicioMs": 680,
+          "finMs": 1220
         },
         {
           "palabra": "cruel",
-          "inicioMs": 1240,
-          "finMs": 1540
+          "inicioMs": 1220,
+          "finMs": 1660
         },
         {
           "palabra": "por",
-          "inicioMs": 1540,
-          "finMs": 1700
+          "inicioMs": 1660,
+          "finMs": 1760
         },
         {
           "palabra": "cada",
-          "inicioMs": 1700,
-          "finMs": 1960
+          "inicioMs": 1760,
+          "finMs": 2000
         },
         {
           "palabra": "vaso",
-          "inicioMs": 1960,
-          "finMs": 2300
+          "inicioMs": 2000,
+          "finMs": 2340
         },
         {
           "palabra": "de",
-          "inicioMs": 2300,
-          "finMs": 2400
+          "inicioMs": 2340,
+          "finMs": 2420
         },
         {
           "palabra": "agua",
-          "inicioMs": 2400,
-          "finMs": 2540
+          "inicioMs": 2420,
+          "finMs": 2580
         },
         {
           "palabra": "salada",
-          "inicioMs": 2540,
-          "finMs": 2900
+          "inicioMs": 2580,
+          "finMs": 2940
         },
         {
           "palabra": "que",
-          "inicioMs": 2900,
-          "finMs": 3040
+          "inicioMs": 2940,
+          "finMs": 3100
         },
         {
           "palabra": "tomas",
-          "inicioMs": 3040,
-          "finMs": 3420
+          "inicioMs": 3100,
+          "finMs": 3540
         },
         {
           "palabra": "tu",
-          "inicioMs": 3560,
-          "finMs": 3620
+          "inicioMs": 3780,
+          "finMs": 3860
         },
         {
           "palabra": "cuerpo",
-          "inicioMs": 3620,
-          "finMs": 3800
+          "inicioMs": 3860,
+          "finMs": 4080
         },
         {
           "palabra": "pierde",
-          "inicioMs": 3800,
-          "finMs": 4280
+          "inicioMs": 4080,
+          "finMs": 4540
         },
         {
           "palabra": "casi",
-          "inicioMs": 4280,
-          "finMs": 4480
+          "inicioMs": 4540,
+          "finMs": 4740
         },
         {
           "palabra": "un",
-          "inicioMs": 4480,
-          "finMs": 4680
+          "inicioMs": 4740,
+          "finMs": 4920
         },
         {
           "palabra": "vaso",
-          "inicioMs": 4680,
-          "finMs": 4960
+          "inicioMs": 4920,
+          "finMs": 5220
         },
         {
           "palabra": "y",
-          "inicioMs": 4960,
-          "finMs": 5020
+          "inicioMs": 5220,
+          "finMs": 5280
         },
         {
           "palabra": "medio",
-          "inicioMs": 5020,
-          "finMs": 5120
+          "inicioMs": 5280,
+          "finMs": 5420
         },
         {
           "palabra": "de",
-          "inicioMs": 5120,
-          "finMs": 5320
+          "inicioMs": 5420,
+          "finMs": 5660
         },
         {
           "palabra": "agua",
-          "inicioMs": 5320,
-          "finMs": 5460
+          "inicioMs": 5660,
+          "finMs": 5820
         },
         {
           "palabra": "pura",
-          "inicioMs": 5460,
-          "finMs": 5860
+          "inicioMs": 5820,
+          "finMs": 6240
         }
       ]
     },
@@ -1138,107 +1150,107 @@
         "deshidrata",
         "encoge células"
       ],
-      "duracionSegundos": 6.394,
+      "duracionSegundos": 7.402,
       "palabras": [
         {
           "palabra": "A",
           "inicioMs": 0,
-          "finMs": 180
+          "finMs": 160
         },
         {
           "palabra": "nivel",
-          "inicioMs": 180,
+          "inicioMs": 160,
           "finMs": 380
         },
         {
           "palabra": "celular",
           "inicioMs": 380,
-          "finMs": 660
+          "finMs": 820
         },
         {
           "palabra": "ocurre",
-          "inicioMs": 660,
-          "finMs": 1160
+          "inicioMs": 820,
+          "finMs": 1380
         },
         {
           "palabra": "un",
-          "inicioMs": 1160,
-          "finMs": 1240
+          "inicioMs": 1380,
+          "finMs": 1460
         },
         {
           "palabra": "fenómeno",
-          "inicioMs": 1240,
-          "finMs": 1620
+          "inicioMs": 1460,
+          "finMs": 1900
         },
         {
           "palabra": "brutal",
-          "inicioMs": 1620,
-          "finMs": 1940
-        },
-        {
-          "palabra": "llamado",
-          "inicioMs": 1940,
+          "inicioMs": 1900,
           "finMs": 2260
         },
         {
-          "palabra": "ósmosis",
+          "palabra": "llamado",
           "inicioMs": 2260,
-          "finMs": 3080
+          "finMs": 2660
+        },
+        {
+          "palabra": "ósmosis",
+          "inicioMs": 2660,
+          "finMs": 3600
         },
         {
           "palabra": "la",
-          "inicioMs": 3180,
-          "finMs": 3240
+          "inicioMs": 3720,
+          "finMs": 3780
         },
         {
           "palabra": "sal",
-          "inicioMs": 3240,
-          "finMs": 3540
+          "inicioMs": 3780,
+          "finMs": 4060
         },
         {
           "palabra": "en",
-          "inicioMs": 3540,
-          "finMs": 3640
+          "inicioMs": 4220,
+          "finMs": 4300
         },
         {
           "palabra": "la",
-          "inicioMs": 3640,
-          "finMs": 3880
+          "inicioMs": 4300,
+          "finMs": 4400
         },
         {
           "palabra": "sangre",
-          "inicioMs": 3880,
-          "finMs": 4040
+          "inicioMs": 4400,
+          "finMs": 4700
         },
         {
           "palabra": "deshidrata",
-          "inicioMs": 4040,
-          "finMs": 4460
+          "inicioMs": 4700,
+          "finMs": 5360
         },
         {
           "palabra": "y",
-          "inicioMs": 4460,
-          "finMs": 4580
+          "inicioMs": 5360,
+          "finMs": 5500
         },
         {
           "palabra": "encoge",
-          "inicioMs": 4580,
-          "finMs": 4920
+          "inicioMs": 5500,
+          "finMs": 5880
         },
         {
           "palabra": "tus",
-          "inicioMs": 4920,
-          "finMs": 5100
+          "inicioMs": 5880,
+          "finMs": 6040
         },
         {
           "palabra": "células",
-          "inicioMs": 5100,
-          "finMs": 5380
+          "inicioMs": 6040,
+          "finMs": 6320
         },
         {
           "palabra": "vivas",
-          "inicioMs": 5380,
-          "finMs": 5920
+          "inicioMs": 6320,
+          "finMs": 6920
         }
       ]
     },
@@ -1285,102 +1297,102 @@
         "sangre espesa",
         "presión cae"
       ],
-      "duracionSegundos": 6.538,
+      "duracionSegundos": 6.322,
       "palabras": [
         {
           "palabra": "Tus",
           "inicioMs": 0,
-          "finMs": 160
+          "finMs": 80
         },
         {
           "palabra": "órganos",
-          "inicioMs": 160,
-          "finMs": 560
+          "inicioMs": 80,
+          "finMs": 480
         },
         {
           "palabra": "vitales",
-          "inicioMs": 560,
-          "finMs": 840
+          "inicioMs": 480,
+          "finMs": 980
         },
         {
           "palabra": "pierden",
-          "inicioMs": 840,
-          "finMs": 1320
+          "inicioMs": 980,
+          "finMs": 1280
         },
         {
           "palabra": "humedad",
-          "inicioMs": 1320,
-          "finMs": 1700
+          "inicioMs": 1280,
+          "finMs": 1660
         },
         {
           "palabra": "crítica",
-          "inicioMs": 1700,
-          "finMs": 2160
+          "inicioMs": 1660,
+          "finMs": 2120
         },
         {
           "palabra": "rápidamente",
-          "inicioMs": 2160,
+          "inicioMs": 2120,
           "finMs": 2740
         },
         {
           "palabra": "la",
-          "inicioMs": 2940,
-          "finMs": 3000
+          "inicioMs": 2900,
+          "finMs": 2960
         },
         {
           "palabra": "sangre",
-          "inicioMs": 3000,
-          "finMs": 3260
+          "inicioMs": 2960,
+          "finMs": 3240
         },
         {
           "palabra": "se",
-          "inicioMs": 3260,
-          "finMs": 3460
+          "inicioMs": 3240,
+          "finMs": 3420
         },
         {
           "palabra": "vuelve",
-          "inicioMs": 3460,
-          "finMs": 3760
+          "inicioMs": 3420,
+          "finMs": 3700
         },
         {
           "palabra": "espesa",
-          "inicioMs": 3760,
-          "finMs": 4260
+          "inicioMs": 3700,
+          "finMs": 4100
         },
         {
           "palabra": "y",
-          "inicioMs": 4260,
-          "finMs": 4380
+          "inicioMs": 4100,
+          "finMs": 4180
         },
         {
           "palabra": "la",
-          "inicioMs": 4380,
-          "finMs": 4480
+          "inicioMs": 4180,
+          "finMs": 4260
         },
         {
           "palabra": "presión",
-          "inicioMs": 4480,
-          "finMs": 4800
+          "inicioMs": 4260,
+          "finMs": 4600
         },
         {
           "palabra": "arterial",
-          "inicioMs": 4800,
-          "finMs": 5260
+          "inicioMs": 4600,
+          "finMs": 5020
         },
         {
           "palabra": "cae",
-          "inicioMs": 5260,
-          "finMs": 5560
+          "inicioMs": 5020,
+          "finMs": 5340
         },
         {
           "palabra": "en",
-          "inicioMs": 5560,
-          "finMs": 6080
+          "inicioMs": 5340,
+          "finMs": 5840
         },
         {
           "palabra": "picada",
-          "inicioMs": 6080,
-          "finMs": 6288
+          "inicioMs": 5840,
+          "finMs": 6072
         }
       ]
     },
@@ -1428,21 +1440,21 @@
         "fallo renal",
         "exceso de sodio"
       ],
-      "duracionSegundos": 6.154,
+      "duracionSegundos": 6.082,
       "palabras": [
         {
           "palabra": "En",
           "inicioMs": 0,
-          "finMs": 560
+          "finMs": 580
         },
         {
           "palabra": "pocas",
-          "inicioMs": 560,
-          "finMs": 740
+          "inicioMs": 580,
+          "finMs": 760
         },
         {
           "palabra": "horas",
-          "inicioMs": 740,
+          "inicioMs": 760,
           "finMs": 1220
         },
         {
@@ -1453,72 +1465,72 @@
         {
           "palabra": "alucinaciones",
           "inicioMs": 1360,
-          "finMs": 1980
+          "finMs": 2000
         },
         {
           "palabra": "fallo",
           "inicioMs": 2100,
-          "finMs": 2360
+          "finMs": 2320
         },
         {
           "palabra": "renal",
-          "inicioMs": 2360,
-          "finMs": 2580
+          "inicioMs": 2340,
+          "finMs": 2620
         },
         {
           "palabra": "severo",
-          "inicioMs": 2580,
-          "finMs": 3120
+          "inicioMs": 2700,
+          "finMs": 3100
         },
         {
           "palabra": "y",
-          "inicioMs": 3120,
-          "finMs": 3220
+          "inicioMs": 3100,
+          "finMs": 3200
         },
         {
           "palabra": "el",
-          "inicioMs": 3220,
+          "inicioMs": 3200,
           "finMs": 3320
         },
         {
           "palabra": "corazón",
           "inicioMs": 3320,
-          "finMs": 3620
+          "finMs": 3580
         },
         {
           "palabra": "colapsa",
-          "inicioMs": 3620,
-          "finMs": 4200
+          "inicioMs": 3580,
+          "finMs": 4140
         },
         {
           "palabra": "por",
-          "inicioMs": 4200,
-          "finMs": 4360
+          "inicioMs": 4140,
+          "finMs": 4260
         },
         {
           "palabra": "el",
-          "inicioMs": 4360,
-          "finMs": 4460
+          "inicioMs": 4260,
+          "finMs": 4400
         },
         {
           "palabra": "exceso",
-          "inicioMs": 4460,
-          "finMs": 4800
+          "inicioMs": 4400,
+          "finMs": 4760
         },
         {
           "palabra": "extremo",
-          "inicioMs": 4800,
-          "finMs": 5200
+          "inicioMs": 4760,
+          "finMs": 5160
         },
         {
           "palabra": "de",
-          "inicioMs": 5200,
-          "finMs": 5280
+          "inicioMs": 5160,
+          "finMs": 5240
         },
         {
           "palabra": "sodio",
-          "inicioMs": 5280,
-          "finMs": 5680
+          "inicioMs": 5240,
+          "finMs": 5620
         }
       ]
     },
@@ -1565,122 +1577,122 @@
         "nunca tomes agua de mar",
         "física corporal"
       ],
-      "duracionSegundos": 6.25,
+      "duracionSegundos": 6.418,
       "palabras": [
         {
           "palabra": "Por",
           "inicioMs": 0,
-          "finMs": 200
+          "finMs": 220
         },
         {
           "palabra": "eso",
-          "inicioMs": 200,
-          "finMs": 340
+          "inicioMs": 220,
+          "finMs": 420
         },
         {
           "palabra": "los",
-          "inicioMs": 340,
-          "finMs": 460
+          "inicioMs": 420,
+          "finMs": 580
         },
         {
           "palabra": "náufragos",
-          "inicioMs": 460,
-          "finMs": 920
+          "inicioMs": 580,
+          "finMs": 1140
         },
         {
           "palabra": "sobreviven",
-          "inicioMs": 920,
-          "finMs": 1300
+          "inicioMs": 1140,
+          "finMs": 1540
         },
         {
           "palabra": "más",
-          "inicioMs": 1300,
-          "finMs": 1440
+          "inicioMs": 1540,
+          "finMs": 1740
         },
         {
           "palabra": "tiempo",
-          "inicioMs": 1440,
-          "finMs": 1780
+          "inicioMs": 1740,
+          "finMs": 2020
         },
         {
           "palabra": "sin",
-          "inicioMs": 1780,
-          "finMs": 1980
+          "inicioMs": 2020,
+          "finMs": 2260
         },
         {
           "palabra": "beber",
-          "inicioMs": 1980,
-          "finMs": 2160
+          "inicioMs": 2260,
+          "finMs": 2520
         },
         {
           "palabra": "nada",
-          "inicioMs": 2160,
-          "finMs": 2500
+          "inicioMs": 2520,
+          "finMs": 2880
         },
         {
           "palabra": "que",
-          "inicioMs": 2500,
-          "finMs": 2680
+          "inicioMs": 2880,
+          "finMs": 3060
         },
         {
           "palabra": "si",
-          "inicioMs": 2680,
-          "finMs": 2820
+          "inicioMs": 3060,
+          "finMs": 3180
         },
         {
           "palabra": "bebieran",
-          "inicioMs": 2820,
-          "finMs": 3120
+          "inicioMs": 3180,
+          "finMs": 3520
         },
         {
           "palabra": "agua",
-          "inicioMs": 3120,
-          "finMs": 3300
+          "inicioMs": 3520,
+          "finMs": 3760
         },
         {
           "palabra": "de",
-          "inicioMs": 3300,
-          "finMs": 3440
+          "inicioMs": 3760,
+          "finMs": 3900
         },
         {
           "palabra": "mar",
-          "inicioMs": 3440,
-          "finMs": 3620
+          "inicioMs": 3900,
+          "finMs": 4100
         },
         {
           "palabra": "La",
-          "inicioMs": 3820,
-          "finMs": 3920
+          "inicioMs": 4260,
+          "finMs": 4340
         },
         {
           "palabra": "física",
-          "inicioMs": 3920,
-          "finMs": 4260
+          "inicioMs": 4340,
+          "finMs": 4580
         },
         {
           "palabra": "de",
-          "inicioMs": 4260,
-          "finMs": 4480
+          "inicioMs": 4580,
+          "finMs": 4800
         },
         {
           "palabra": "tu",
-          "inicioMs": 4480,
-          "finMs": 4600
+          "inicioMs": 4800,
+          "finMs": 4900
         },
         {
           "palabra": "cuerpo",
-          "inicioMs": 4600,
-          "finMs": 4860
+          "inicioMs": 4900,
+          "finMs": 5140
         },
         {
           "palabra": "nunca",
-          "inicioMs": 4860,
-          "finMs": 5200
+          "inicioMs": 5140,
+          "finMs": 5440
         },
         {
           "palabra": "perdona",
-          "inicioMs": 5200,
-          "finMs": 5800
+          "inicioMs": 5440,
+          "finMs": 5940
         }
       ]
     }

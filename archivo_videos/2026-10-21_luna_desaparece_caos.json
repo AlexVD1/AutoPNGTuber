@@ -2,7 +2,19 @@
   "meta": {
     "id": "luna_desaparece_caos",
     "slug": "luna_desaparece_caos",
-    "temaResumen": "¿Qué pasaría en la Tierra si la Luna desapareciera repentinamente?"
+    "temaResumen": "¿Qué pasaría en la Tierra si la Luna desapareciera repentinamente? Estabilización del eje e inclinación",
+    "titulo": "¿Qué pasaría en la Tierra si la Luna desapareciera?",
+    "titulo_corto": "TIERRA SIN LUNA",
+    "gancho": "¿Alguna vez te has preguntado qué le ocurriría a nuestro planeta si una noche voltearas a mirar al cielo y la Luna simplemente hubiera desaparecido de la faz del cosmos?",
+    "fuentes": [
+      "Jacques Laskar et al. (Nature, 1993: Stabilization of the Earth's obliquity by the Moon)",
+      "NASA Solar System Exploration: Lunar Orbital Mechanics"
+    ],
+    "genero": "SCIENCE",
+    "duracionObjetivo": [
+      62,
+      110
+    ]
   },
   "escenas": [
     {
@@ -59,7 +71,7 @@
         "desapareciera",
         "noche a la mañana"
       ],
-      "duracionSegundos": 7.018,
+      "duracionSegundos": 5.29,
       "palabras": [
         {
           "palabra": "Alguna",
@@ -69,107 +81,107 @@
         {
           "palabra": "vez",
           "inicioMs": 360,
-          "finMs": 500
+          "finMs": 460
         },
         {
           "palabra": "te",
-          "inicioMs": 500,
-          "finMs": 660
+          "inicioMs": 460,
+          "finMs": 600
         },
         {
           "palabra": "has",
-          "inicioMs": 660,
-          "finMs": 720
+          "inicioMs": 600,
+          "finMs": 640
         },
         {
           "palabra": "preguntado",
-          "inicioMs": 720,
-          "finMs": 1300
+          "inicioMs": 640,
+          "finMs": 1060
         },
         {
           "palabra": "qué",
-          "inicioMs": 1300,
-          "finMs": 1500
+          "inicioMs": 1060,
+          "finMs": 1200
         },
         {
           "palabra": "le",
-          "inicioMs": 1500,
-          "finMs": 1600
+          "inicioMs": 1200,
+          "finMs": 1320
         },
         {
           "palabra": "ocurriría",
-          "inicioMs": 1600,
-          "finMs": 2120
+          "inicioMs": 1320,
+          "finMs": 1740
         },
         {
           "palabra": "a",
-          "inicioMs": 2120,
-          "finMs": 2220
+          "inicioMs": 1740,
+          "finMs": 1800
         },
         {
           "palabra": "nuestro",
-          "inicioMs": 2220,
-          "finMs": 2420
+          "inicioMs": 1800,
+          "finMs": 1980
         },
         {
           "palabra": "planeta",
-          "inicioMs": 2420,
-          "finMs": 2700
+          "inicioMs": 1980,
+          "finMs": 2220
         },
         {
           "palabra": "si",
-          "inicioMs": 2920,
-          "finMs": 2960
+          "inicioMs": 2220,
+          "finMs": 2500
         },
         {
           "palabra": "la",
-          "inicioMs": 2960,
-          "finMs": 3100
+          "inicioMs": 2500,
+          "finMs": 2580
         },
         {
           "palabra": "Luna",
-          "inicioMs": 3100,
-          "finMs": 4060
+          "inicioMs": 2580,
+          "finMs": 2720
         },
         {
           "palabra": "simplemente",
-          "inicioMs": 4060,
-          "finMs": 4520
+          "inicioMs": 2720,
+          "finMs": 3260
         },
         {
           "palabra": "desapareciera",
-          "inicioMs": 4520,
-          "finMs": 5140
+          "inicioMs": 3260,
+          "finMs": 4020
         },
         {
           "palabra": "de",
-          "inicioMs": 5140,
-          "finMs": 5240
+          "inicioMs": 4020,
+          "finMs": 4120
         },
         {
           "palabra": "la",
-          "inicioMs": 5240,
-          "finMs": 5360
+          "inicioMs": 4120,
+          "finMs": 4200
         },
         {
           "palabra": "noche",
-          "inicioMs": 5360,
-          "finMs": 5560
+          "inicioMs": 4200,
+          "finMs": 4420
         },
         {
           "palabra": "a",
-          "inicioMs": 5560,
-          "finMs": 5680
+          "inicioMs": 4420,
+          "finMs": 4560
         },
         {
           "palabra": "la",
-          "inicioMs": 5680,
-          "finMs": 5700
+          "inicioMs": 4560,
+          "finMs": 4580
         },
         {
           "palabra": "mañana",
-          "inicioMs": 5700,
-          "finMs": 5960
+          "inicioMs": 4580,
+          "finMs": 4780
         }
       ]
     },
@@ -207,41 +219,41 @@
         "oscuridad absoluta",
         "historia humana"
       ],
-      "duracionSegundos": 7.378,
+      "duracionSegundos": 6.634,
       "palabras": [
         {
           "palabra": "El",
           "inicioMs": 0,
-          "finMs": 200
+          "finMs": 180
         },
         {
           "palabra": "primer",
-          "inicioMs": 200,
-          "finMs": 420
+          "inicioMs": 180,
+          "finMs": 440
         },
         {
           "palabra": "impacto",
-          "inicioMs": 420,
-          "finMs": 800
+          "inicioMs": 440,
+          "finMs": 840
         },
         {
           "palabra": "inmediato",
-          "inicioMs": 800,
-          "finMs": 1300
+          "inicioMs": 840,
+          "finMs": 1380
         },
         {
           "palabra": "ocurriría",
-          "inicioMs": 1300,
-          "finMs": 1940
+          "inicioMs": 1380,
+          "finMs": 1980
         },
         {
           "palabra": "esa",
-          "inicioMs": 1940,
-          "finMs": 2200
+          "inicioMs": 1980,
+          "finMs": 2120
         },
         {
           "palabra": "misma",
-          "inicioMs": 2200,
+          "inicioMs": 2120,
           "finMs": 2380
         },
         {
@@ -251,58 +263,58 @@
         },
         {
           "palabra": "una",
-          "inicioMs": 3020,
-          "finMs": 3220
+          "inicioMs": 2840,
+          "finMs": 2960
         },
         {
           "palabra": "oscuridad",
-          "inicioMs": 3220,
-          "finMs": 3760
+          "inicioMs": 2960,
+          "finMs": 3420
         },
         {
           "palabra": "absoluta",
-          "inicioMs": 3760,
-          "finMs": 4400
+          "inicioMs": 3420,
+          "finMs": 4020
         },
         {
           "palabra": "como",
-          "inicioMs": 4400,
-          "finMs": 4560
+          "inicioMs": 4020,
+          "finMs": 4200
         },
         {
           "palabra": "jamás",
-          "inicioMs": 4560,
-          "finMs": 4960
+          "inicioMs": 4200,
+          "finMs": 4520
         },
         {
           "palabra": "hemos",
-          "inicioMs": 4960,
-          "finMs": 5100
+          "inicioMs": 4520,
+          "finMs": 4640
         },
         {
           "palabra": "experimentado",
-          "inicioMs": 5100,
-          "finMs": 5880
+          "inicioMs": 4640,
+          "finMs": 5360
         },
         {
           "palabra": "en",
-          "inicioMs": 5880,
-          "finMs": 5980
+          "inicioMs": 5360,
+          "finMs": 5460
         },
         {
           "palabra": "la",
-          "inicioMs": 5980,
-          "finMs": 6020
+          "inicioMs": 5460,
+          "finMs": 5500
         },
         {
           "palabra": "historia",
-          "inicioMs": 6020,
-          "finMs": 6240
+          "inicioMs": 5500,
+          "finMs": 5700
         },
         {
           "palabra": "humana",
-          "inicioMs": 6240,
-          "finMs": 6700
+          "inicioMs": 5700,
+          "finMs": 6160
         }
       ]
     },
@@ -352,122 +364,122 @@
         "noches negras",
         "ecosistemas nocturnos"
       ],
-      "duracionSegundos": 7.69,
+      "duracionSegundos": 7.45,
       "palabras": [
         {
           "palabra": "Sin",
           "inicioMs": 0,
-          "finMs": 220
+          "finMs": 160
         },
         {
           "palabra": "el",
-          "inicioMs": 220,
-          "finMs": 360
+          "inicioMs": 160,
+          "finMs": 300
         },
         {
           "palabra": "reflejo",
-          "inicioMs": 360,
-          "finMs": 820
+          "inicioMs": 300,
+          "finMs": 740
         },
         {
           "palabra": "de",
-          "inicioMs": 820,
+          "inicioMs": 740,
+          "finMs": 840
+        },
+        {
+          "palabra": "la",
+          "inicioMs": 840,
           "finMs": 960
         },
         {
-          "palabra": "la",
-          "inicioMs": 960,
-          "finMs": 1060
-        },
-        {
           "palabra": "luz",
-          "inicioMs": 1060,
-          "finMs": 1240
+          "inicioMs": 960,
+          "finMs": 1120
         },
         {
           "palabra": "solar",
-          "inicioMs": 1240,
-          "finMs": 1560
+          "inicioMs": 1120,
+          "finMs": 1400
         },
         {
           "palabra": "en",
-          "inicioMs": 1560,
-          "finMs": 1740
+          "inicioMs": 1400,
+          "finMs": 1560
         },
         {
           "palabra": "la",
-          "inicioMs": 1740,
-          "finMs": 1780
+          "inicioMs": 1560,
+          "finMs": 1620
         },
         {
           "palabra": "superficie",
-          "inicioMs": 1780,
-          "finMs": 2300
+          "inicioMs": 1620,
+          "finMs": 2180
         },
         {
           "palabra": "lunar",
-          "inicioMs": 2300,
-          "finMs": 2560
+          "inicioMs": 2180,
+          "finMs": 2420
         },
         {
           "palabra": "las",
           "inicioMs": 2880,
-          "finMs": 2980
+          "finMs": 2960
         },
         {
           "palabra": "noches",
-          "inicioMs": 2980,
-          "finMs": 3300
+          "inicioMs": 2960,
+          "finMs": 3220
         },
         {
           "palabra": "serían",
-          "inicioMs": 3300,
-          "finMs": 3600
+          "inicioMs": 3220,
+          "finMs": 3620
         },
         {
           "palabra": "tan",
-          "inicioMs": 3600,
-          "finMs": 3860
+          "inicioMs": 3620,
+          "finMs": 3840
         },
         {
           "palabra": "negras",
-          "inicioMs": 3860,
-          "finMs": 4300
+          "inicioMs": 3840,
+          "finMs": 4260
         },
         {
           "palabra": "que",
-          "inicioMs": 4300,
-          "finMs": 4440
+          "inicioMs": 4260,
+          "finMs": 4380
         },
         {
           "palabra": "los",
-          "inicioMs": 4440,
-          "finMs": 4580
+          "inicioMs": 4380,
+          "finMs": 4520
         },
         {
           "palabra": "ecosistemas",
-          "inicioMs": 4580,
-          "finMs": 5120
+          "inicioMs": 4520,
+          "finMs": 5100
         },
         {
           "palabra": "nocturnos",
-          "inicioMs": 5120,
+          "inicioMs": 5100,
           "finMs": 5720
         },
         {
           "palabra": "colapsarían",
           "inicioMs": 5720,
-          "finMs": 6280
+          "finMs": 6340
         },
         {
           "palabra": "al",
-          "inicioMs": 6280,
-          "finMs": 6400
+          "inicioMs": 6340,
+          "finMs": 6460
         },
         {
           "palabra": "instante",
-          "inicioMs": 6400,
-          "finMs": 6920
+          "inicioMs": 6460,
+          "finMs": 6980
         }
       ]
     },
@@ -508,112 +520,112 @@
         "atracción gravitatoria",
         "motor de las mareas"
       ],
-      "duracionSegundos": 7.81,
+      "duracionSegundos": 6.562,
       "palabras": [
         {
           "palabra": "Pero",
           "inicioMs": 0,
-          "finMs": 260
+          "finMs": 200
         },
         {
           "palabra": "el",
-          "inicioMs": 260,
-          "finMs": 440
+          "inicioMs": 200,
+          "finMs": 320
         },
         {
           "palabra": "verdadero",
-          "inicioMs": 440,
-          "finMs": 840
+          "inicioMs": 320,
+          "finMs": 740
         },
         {
           "palabra": "desastre",
-          "inicioMs": 840,
-          "finMs": 1240
+          "inicioMs": 740,
+          "finMs": 1200
         },
         {
           "palabra": "planetario",
-          "inicioMs": 1240,
-          "finMs": 1820
+          "inicioMs": 1200,
+          "finMs": 1760
         },
         {
           "palabra": "comenzaría",
-          "inicioMs": 1820,
-          "finMs": 2380
+          "inicioMs": 1760,
+          "finMs": 2280
         },
         {
           "palabra": "en",
-          "inicioMs": 2380,
-          "finMs": 2500
+          "inicioMs": 2280,
+          "finMs": 2400
         },
         {
           "palabra": "los",
-          "inicioMs": 2500,
-          "finMs": 2580
+          "inicioMs": 2400,
+          "finMs": 2480
         },
         {
           "palabra": "océanos",
-          "inicioMs": 2580,
-          "finMs": 3020
+          "inicioMs": 2480,
+          "finMs": 2960
         },
         {
           "palabra": "La",
-          "inicioMs": 3240,
-          "finMs": 3340
+          "inicioMs": 3060,
+          "finMs": 3140
         },
         {
           "palabra": "atracción",
-          "inicioMs": 3340,
-          "finMs": 3780
+          "inicioMs": 3140,
+          "finMs": 3540
         },
         {
           "palabra": "gravitatoria",
-          "inicioMs": 3780,
-          "finMs": 4480
+          "inicioMs": 3540,
+          "finMs": 4220
         },
         {
           "palabra": "de",
-          "inicioMs": 4480,
-          "finMs": 4580
+          "inicioMs": 4220,
+          "finMs": 4300
         },
         {
           "palabra": "la",
-          "inicioMs": 4580,
-          "finMs": 4700
+          "inicioMs": 4300,
+          "finMs": 4420
         },
         {
           "palabra": "Luna",
-          "inicioMs": 4700,
-          "finMs": 4880
+          "inicioMs": 4420,
+          "finMs": 4640
         },
         {
           "palabra": "es",
-          "inicioMs": 4880,
-          "finMs": 5200
+          "inicioMs": 4640,
+          "finMs": 4980
         },
         {
           "palabra": "el",
-          "inicioMs": 5200,
-          "finMs": 5340
+          "inicioMs": 4980,
+          "finMs": 5120
         },
         {
           "palabra": "motor",
-          "inicioMs": 5340,
-          "finMs": 5600
+          "inicioMs": 5120,
+          "finMs": 5360
         },
         {
           "palabra": "de",
-          "inicioMs": 5600,
-          "finMs": 5800
+          "inicioMs": 5360,
+          "finMs": 5520
         },
         {
           "palabra": "las",
-          "inicioMs": 5800,
-          "finMs": 5960
+          "inicioMs": 5520,
+          "finMs": 5620
         },
         {
           "palabra": "mareas",
-          "inicioMs": 5960,
-          "finMs": 6420
+          "inicioMs": 5620,
+          "finMs": 6100
         }
       ]
     },
@@ -642,7 +654,7 @@
           "escala": 1,
           "orientacion": "derecha",
           "poseId": "pointing_right",
-          "expresion": "serious",
+          "expresion": "analytical",
           "habla": true
         }
       ],
@@ -665,7 +677,7 @@
         "fuerza",
         "ondulaciones del Sol"
       ],
-      "duracionSegundos": 8.194,
+      "duracionSegundos": 7.474,
       "palabras": [
         {
           "palabra": "Sin",
@@ -675,26 +687,26 @@
         {
           "palabra": "ella",
           "inicioMs": 200,
-          "finMs": 460
+          "finMs": 500
         },
         {
           "palabra": "las",
-          "inicioMs": 800,
-          "finMs": 880
+          "inicioMs": 600,
+          "finMs": 740
         },
         {
           "palabra": "mareas",
-          "inicioMs": 880,
-          "finMs": 1180
+          "inicioMs": 740,
+          "finMs": 1040
         },
         {
           "palabra": "oceánicas",
-          "inicioMs": 1180,
-          "finMs": 1620
+          "inicioMs": 1040,
+          "finMs": 1580
         },
         {
           "palabra": "perderían",
-          "inicioMs": 1620,
+          "inicioMs": 1580,
           "finMs": 2080
         },
         {
@@ -705,82 +717,82 @@
         {
           "palabra": "el",
           "inicioMs": 2380,
-          "finMs": 2520
+          "finMs": 2580
         },
         {
           "palabra": "sesenta",
-          "inicioMs": 2520,
-          "finMs": 2920
+          "inicioMs": 2580,
+          "finMs": 3020
         },
         {
           "palabra": "y",
-          "inicioMs": 2920,
-          "finMs": 3620
+          "inicioMs": 3020,
+          "finMs": 3700
         },
         {
           "palabra": "siete",
-          "inicioMs": 3620,
-          "finMs": 3860
+          "inicioMs": 3700,
+          "finMs": 3980
         },
         {
           "palabra": "por",
-          "inicioMs": 3860,
-          "finMs": 4000
+          "inicioMs": 3980,
+          "finMs": 4100
         },
         {
           "palabra": "ciento",
-          "inicioMs": 4000,
-          "finMs": 4360
+          "inicioMs": 4100,
+          "finMs": 4460
         },
         {
           "palabra": "de",
-          "inicioMs": 4760,
-          "finMs": 5060
+          "inicioMs": 4660,
+          "finMs": 4980
         },
         {
           "palabra": "su",
-          "inicioMs": 5060,
-          "finMs": 5680
+          "inicioMs": 4980,
+          "finMs": 5520
         },
         {
           "palabra": "fuerza",
-          "inicioMs": 5680,
-          "finMs": 5920
+          "inicioMs": 5520,
+          "finMs": 5660
         },
         {
           "palabra": "quedando",
-          "inicioMs": 5920,
-          "finMs": 6140
+          "inicioMs": 5660,
+          "finMs": 5900
         },
         {
           "palabra": "reducidas",
-          "inicioMs": 6140,
-          "finMs": 6720
+          "inicioMs": 5900,
+          "finMs": 6500
         },
         {
           "palabra": "a",
-          "inicioMs": 6720,
-          "finMs": 7020
+          "inicioMs": 6500,
+          "finMs": 6740
         },
         {
           "palabra": "leves",
-          "inicioMs": 7020,
-          "finMs": 7300
+          "inicioMs": 6740,
+          "finMs": 7020
         },
         {
           "palabra": "ondulaciones",
-          "inicioMs": 7300,
-          "finMs": 7515
+          "inicioMs": 7020,
+          "finMs": 7100
         },
         {
           "palabra": "del",
-          "inicioMs": 7300,
-          "finMs": 7515
+          "inicioMs": 7020,
+          "finMs": 7100
         },
         {
           "palabra": "Sol",
-          "inicioMs": 7300,
-          "finMs": 7515
+          "inicioMs": 7020,
+          "finMs": 7100
         }
       ]
     },
@@ -822,21 +834,21 @@
         "transporte de nutrientes",
         "muerte masiva"
       ],
-      "duracionSegundos": 6.634,
+      "duracionSegundos": 6.898,
       "palabras": [
         {
           "palabra": "Las",
           "inicioMs": 0,
-          "finMs": 260
+          "finMs": 220
         },
         {
           "palabra": "corrientes",
-          "inicioMs": 260,
-          "finMs": 700
+          "inicioMs": 220,
+          "finMs": 680
         },
         {
           "palabra": "marinas",
-          "inicioMs": 700,
+          "inicioMs": 680,
           "finMs": 1060
         },
         {
@@ -847,77 +859,77 @@
         {
           "palabra": "se",
           "inicioMs": 1560,
-          "finMs": 1680
+          "finMs": 1640
         },
         {
           "palabra": "detendrían",
-          "inicioMs": 1680,
-          "finMs": 2220
+          "inicioMs": 1640,
+          "finMs": 2200
         },
         {
           "palabra": "interrumpiendo",
-          "inicioMs": 2420,
-          "finMs": 2920
+          "inicioMs": 2360,
+          "finMs": 2960
         },
         {
           "palabra": "el",
-          "inicioMs": 2920,
-          "finMs": 3380
+          "inicioMs": 2960,
+          "finMs": 3040
         },
         {
           "palabra": "transporte",
-          "inicioMs": 3380,
-          "finMs": 3500
+          "inicioMs": 3040,
+          "finMs": 3640
         },
         {
           "palabra": "de",
-          "inicioMs": 3500,
-          "finMs": 3900
+          "inicioMs": 3640,
+          "finMs": 3680
         },
         {
           "palabra": "nutrientes",
-          "inicioMs": 3900,
-          "finMs": 4040
+          "inicioMs": 3680,
+          "finMs": 4220
         },
         {
           "palabra": "y",
-          "inicioMs": 4040,
-          "finMs": 4460
+          "inicioMs": 4220,
+          "finMs": 4360
         },
         {
           "palabra": "provocando",
-          "inicioMs": 4460,
-          "finMs": 4580
+          "inicioMs": 4360,
+          "finMs": 4860
         },
         {
           "palabra": "la",
-          "inicioMs": 4580,
-          "finMs": 4780
+          "inicioMs": 4860,
+          "finMs": 4980
         },
         {
           "palabra": "muerte",
-          "inicioMs": 4780,
-          "finMs": 5200
+          "inicioMs": 4980,
+          "finMs": 5220
         },
         {
           "palabra": "masiva",
-          "inicioMs": 5200,
-          "finMs": 5300
+          "inicioMs": 5220,
+          "finMs": 5720
         },
         {
           "palabra": "de",
-          "inicioMs": 5300,
-          "finMs": 5460
+          "inicioMs": 5720,
+          "finMs": 5860
         },
         {
           "palabra": "vida",
-          "inicioMs": 5460,
-          "finMs": 5820
+          "inicioMs": 5860,
+          "finMs": 5980
         },
         {
           "palabra": "marina",
-          "inicioMs": 5820,
-          "finMs": 6384
+          "inicioMs": 5980,
+          "finMs": 6420
         }
       ]
     },
@@ -967,122 +979,122 @@
         "eje de rotación",
         "Tierra"
       ],
-      "duracionSegundos": 7.498,
+      "duracionSegundos": 6.778,
       "palabras": [
         {
           "palabra": "Y",
           "inicioMs": 0,
-          "finMs": 80
+          "finMs": 160
         },
         {
           "palabra": "lo",
-          "inicioMs": 80,
-          "finMs": 180
+          "inicioMs": 160,
+          "finMs": 280
         },
         {
           "palabra": "peor",
-          "inicioMs": 180,
-          "finMs": 500
+          "inicioMs": 280,
+          "finMs": 560
         },
         {
           "palabra": "aún",
-          "inicioMs": 500,
-          "finMs": 660
+          "inicioMs": 560,
+          "finMs": 720
         },
         {
           "palabra": "estaría",
-          "inicioMs": 660,
-          "finMs": 1120
+          "inicioMs": 720,
+          "finMs": 1160
         },
         {
           "palabra": "por",
-          "inicioMs": 1120,
-          "finMs": 1300
+          "inicioMs": 1160,
+          "finMs": 1340
         },
         {
           "palabra": "llegar",
-          "inicioMs": 1300,
-          "finMs": 1580
+          "inicioMs": 1340,
+          "finMs": 1600
         },
         {
           "palabra": "la",
-          "inicioMs": 2180,
-          "finMs": 2240
+          "inicioMs": 1760,
+          "finMs": 1800
         },
         {
           "palabra": "Luna",
-          "inicioMs": 2240,
-          "finMs": 2500
+          "inicioMs": 1800,
+          "finMs": 2040
         },
         {
           "palabra": "actúa",
-          "inicioMs": 2500,
-          "finMs": 2760
+          "inicioMs": 2040,
+          "finMs": 2380
         },
         {
           "palabra": "como",
-          "inicioMs": 2760,
-          "finMs": 3000
+          "inicioMs": 2380,
+          "finMs": 2640
         },
         {
           "palabra": "un",
-          "inicioMs": 3000,
-          "finMs": 3120
+          "inicioMs": 2640,
+          "finMs": 2800
         },
         {
           "palabra": "estabilizador",
-          "inicioMs": 3120,
-          "finMs": 3740
+          "inicioMs": 2800,
+          "finMs": 3460
         },
         {
           "palabra": "giroscópico",
-          "inicioMs": 3740,
-          "finMs": 4380
+          "inicioMs": 3460,
+          "finMs": 4120
         },
         {
           "palabra": "fundamental",
-          "inicioMs": 4380,
-          "finMs": 4740
+          "inicioMs": 4120,
+          "finMs": 4640
         },
         {
           "palabra": "para",
-          "inicioMs": 4740,
-          "finMs": 5200
+          "inicioMs": 4640,
+          "finMs": 4940
         },
         {
           "palabra": "el",
-          "inicioMs": 5200,
-          "finMs": 5320
+          "inicioMs": 4940,
+          "finMs": 5240
         },
         {
           "palabra": "eje",
-          "inicioMs": 5320,
-          "finMs": 5460
+          "inicioMs": 5240,
+          "finMs": 5360
         },
         {
           "palabra": "de",
-          "inicioMs": 5460,
-          "finMs": 5580
+          "inicioMs": 5360,
+          "finMs": 5760
         },
         {
           "palabra": "rotación",
-          "inicioMs": 5580,
-          "finMs": 5980
+          "inicioMs": 5760,
+          "finMs": 5920
         },
         {
           "palabra": "de",
-          "inicioMs": 5980,
-          "finMs": 6160
+          "inicioMs": 5920,
+          "finMs": 6020
         },
         {
           "palabra": "la",
-          "inicioMs": 6160,
-          "finMs": 6260
+          "inicioMs": 6020,
+          "finMs": 6300
         },
         {
           "palabra": "Tierra",
-          "inicioMs": 6260,
-          "finMs": 6560
+          "inicioMs": 6300,
+          "finMs": 6528
         }
       ]
     },
@@ -1132,112 +1144,112 @@
         "inclinación",
         "estaciones climáticas"
       ],
-      "duracionSegundos": 8.722,
+      "duracionSegundos": 7.81,
       "palabras": [
         {
           "palabra": "Actualmente",
           "inicioMs": 0,
-          "finMs": 700
+          "finMs": 640
         },
         {
           "palabra": "nuestro",
-          "inicioMs": 700,
-          "finMs": 1000
+          "inicioMs": 660,
+          "finMs": 940
         },
         {
           "palabra": "planeta",
-          "inicioMs": 1000,
-          "finMs": 1240
+          "inicioMs": 940,
+          "finMs": 1200
         },
         {
           "palabra": "se",
-          "inicioMs": 1240,
-          "finMs": 1500
+          "inicioMs": 1200,
+          "finMs": 1460
         },
         {
           "palabra": "mantiene",
-          "inicioMs": 1500,
-          "finMs": 1820
+          "inicioMs": 1460,
+          "finMs": 1760
         },
         {
           "palabra": "firme",
-          "inicioMs": 1820,
-          "finMs": 2180
+          "inicioMs": 1760,
+          "finMs": 2100
         },
         {
           "palabra": "a",
-          "inicioMs": 2180,
-          "finMs": 2260
+          "inicioMs": 2100,
+          "finMs": 2160
         },
         {
           "palabra": "veintitrés",
-          "inicioMs": 2260,
-          "finMs": 2560
+          "inicioMs": 2160,
+          "finMs": 2500
         },
         {
           "palabra": "punto",
-          "inicioMs": 2560,
-          "finMs": 3440
+          "inicioMs": 2500,
+          "finMs": 3260
         },
         {
           "palabra": "cinco",
-          "inicioMs": 3440,
-          "finMs": 3880
+          "inicioMs": 3260,
+          "finMs": 3720
         },
         {
           "palabra": "grados",
-          "inicioMs": 3880,
-          "finMs": 3980
+          "inicioMs": 3720,
+          "finMs": 3840
         },
         {
           "palabra": "de",
-          "inicioMs": 3980,
-          "finMs": 4520
+          "inicioMs": 3840,
+          "finMs": 4420
         },
         {
           "palabra": "inclinación",
-          "inicioMs": 5020,
-          "finMs": 5180
+          "inicioMs": 4620,
+          "finMs": 4780
         },
         {
           "palabra": "lo",
-          "inicioMs": 5180,
-          "finMs": 5300
+          "inicioMs": 4780,
+          "finMs": 4900
         },
         {
           "palabra": "que",
-          "inicioMs": 5300,
-          "finMs": 5580
+          "inicioMs": 4900,
+          "finMs": 5180
         },
         {
           "palabra": "permite",
-          "inicioMs": 5580,
-          "finMs": 5800
+          "inicioMs": 5180,
+          "finMs": 5400
         },
         {
           "palabra": "que",
-          "inicioMs": 5800,
-          "finMs": 6220
+          "inicioMs": 5400,
+          "finMs": 5800
         },
         {
           "palabra": "existan",
-          "inicioMs": 6220,
-          "finMs": 6620
+          "inicioMs": 5800,
+          "finMs": 6200
         },
         {
           "palabra": "estaciones",
-          "inicioMs": 6620,
-          "finMs": 7180
+          "inicioMs": 6200,
+          "finMs": 6660
         },
         {
           "palabra": "climáticas",
-          "inicioMs": 7180,
-          "finMs": 7820
+          "inicioMs": 6660,
+          "finMs": 7320
         },
         {
           "palabra": "predecibles",
-          "inicioMs": 7820,
-          "finMs": 8472
+          "inicioMs": 7320,
+          "finMs": 7560
         }
       ]
     },
@@ -1275,107 +1287,107 @@
         "tambalearse descontroladamente",
         "noventa grados"
       ],
-      "duracionSegundos": 7.666,
+      "duracionSegundos": 7.45,
       "palabras": [
         {
           "palabra": "Sin",
           "inicioMs": 0,
-          "finMs": 240
+          "finMs": 280
         },
         {
           "palabra": "el",
-          "inicioMs": 240,
-          "finMs": 400
+          "inicioMs": 280,
+          "finMs": 460
         },
         {
           "palabra": "ancla",
-          "inicioMs": 400,
-          "finMs": 640
+          "inicioMs": 460,
+          "finMs": 740
         },
         {
           "palabra": "gravitacional",
-          "inicioMs": 640,
-          "finMs": 1200
+          "inicioMs": 740,
+          "finMs": 1340
         },
         {
           "palabra": "de",
-          "inicioMs": 1200,
-          "finMs": 1440
+          "inicioMs": 1340,
+          "finMs": 1540
         },
         {
           "palabra": "la",
-          "inicioMs": 1440,
-          "finMs": 1560
+          "inicioMs": 1540,
+          "finMs": 1640
         },
         {
           "palabra": "Luna",
-          "inicioMs": 1560,
-          "finMs": 1780
+          "inicioMs": 1640,
+          "finMs": 1940
         },
         {
           "palabra": "el",
-          "inicioMs": 1900,
-          "finMs": 2020
+          "inicioMs": 1980,
+          "finMs": 2100
         },
         {
           "palabra": "eje",
-          "inicioMs": 2020,
-          "finMs": 2140
+          "inicioMs": 2100,
+          "finMs": 2280
         },
         {
           "palabra": "terrestre",
-          "inicioMs": 2140,
-          "finMs": 2620
+          "inicioMs": 2280,
+          "finMs": 2820
         },
         {
           "palabra": "comenzaría",
-          "inicioMs": 2620,
-          "finMs": 3160
+          "inicioMs": 2820,
+          "finMs": 3360
         },
         {
           "palabra": "a",
-          "inicioMs": 3160,
-          "finMs": 3320
+          "inicioMs": 3360,
+          "finMs": 3480
         },
         {
           "palabra": "tambalearse",
-          "inicioMs": 3320,
-          "finMs": 3820
+          "inicioMs": 3480,
+          "finMs": 4020
         },
         {
           "palabra": "descontroladamente",
-          "inicioMs": 3820,
-          "finMs": 4580
+          "inicioMs": 4020,
+          "finMs": 4860
         },
         {
           "palabra": "entre",
-          "inicioMs": 4580,
-          "finMs": 5000
+          "inicioMs": 4860,
+          "finMs": 5200
         },
         {
           "palabra": "cero",
-          "inicioMs": 5000,
-          "finMs": 5300
-        },
-        {
-          "palabra": "y",
-          "inicioMs": 5300,
-          "finMs": 5380
-        },
-        {
-          "palabra": "casi",
-          "inicioMs": 5380,
+          "inicioMs": 5200,
           "finMs": 5580
         },
         {
-          "palabra": "noventa",
+          "palabra": "y",
           "inicioMs": 5580,
-          "finMs": 5880
+          "finMs": 5740
+        },
+        {
+          "palabra": "casi",
+          "inicioMs": 5740,
+          "finMs": 6060
+        },
+        {
+          "palabra": "noventa",
+          "inicioMs": 6060,
+          "finMs": 6340
         },
         {
           "palabra": "grados",
-          "inicioMs": 5880,
-          "finMs": 6380
+          "inicioMs": 6340,
+          "finMs": 6980
         }
       ]
     },
@@ -1417,112 +1429,112 @@
         "polos hervirían",
         "vientos huracanados"
       ],
-      "duracionSegundos": 8.266,
+      "duracionSegundos": 7.21,
       "palabras": [
         {
           "palabra": "El",
           "inicioMs": 0,
-          "finMs": 220
+          "finMs": 200
         },
         {
           "palabra": "ecuador",
-          "inicioMs": 220,
-          "finMs": 560
+          "inicioMs": 200,
+          "finMs": 520
         },
         {
           "palabra": "se",
-          "inicioMs": 560,
-          "finMs": 780
+          "inicioMs": 520,
+          "finMs": 680
         },
         {
           "palabra": "congelaría",
-          "inicioMs": 780,
-          "finMs": 1340
+          "inicioMs": 680,
+          "finMs": 1200
         },
         {
           "palabra": "por",
-          "inicioMs": 1340,
-          "finMs": 1580
+          "inicioMs": 1200,
+          "finMs": 1380
         },
         {
           "palabra": "completo",
-          "inicioMs": 1580,
-          "finMs": 2040
+          "inicioMs": 1380,
+          "finMs": 1840
         },
         {
           "palabra": "bajo",
-          "inicioMs": 2040,
-          "finMs": 2300
+          "inicioMs": 1840,
+          "finMs": 2080
         },
         {
           "palabra": "glaciares",
-          "inicioMs": 2300,
-          "finMs": 2820
+          "inicioMs": 2080,
+          "finMs": 2600
         },
         {
           "palabra": "polares",
-          "inicioMs": 2820,
-          "finMs": 3260
+          "inicioMs": 2600,
+          "finMs": 3060
         },
         {
           "palabra": "mientras",
-          "inicioMs": 3460,
-          "finMs": 3640
+          "inicioMs": 3160,
+          "finMs": 3320
         },
         {
           "palabra": "los",
-          "inicioMs": 3640,
-          "finMs": 3940
+          "inicioMs": 3320,
+          "finMs": 3500
         },
         {
           "palabra": "polos",
-          "inicioMs": 3940,
-          "finMs": 4300
+          "inicioMs": 3500,
+          "finMs": 3820
         },
         {
           "palabra": "hervirían",
-          "inicioMs": 4300,
-          "finMs": 4800
+          "inicioMs": 3820,
+          "finMs": 4240
         },
         {
           "palabra": "al",
-          "inicioMs": 4800,
-          "finMs": 4940
+          "inicioMs": 4240,
+          "finMs": 4360
         },
         {
           "palabra": "sol",
-          "inicioMs": 4940,
-          "finMs": 5240
+          "inicioMs": 4360,
+          "finMs": 4620
         },
         {
           "palabra": "desatando",
-          "inicioMs": 5240,
-          "finMs": 5760
+          "inicioMs": 4740,
+          "finMs": 5180
         },
         {
           "palabra": "vientos",
-          "inicioMs": 5760,
-          "finMs": 6160
+          "inicioMs": 5180,
+          "finMs": 5520
         },
         {
           "palabra": "huracanados",
-          "inicioMs": 6160,
-          "finMs": 6780
+          "inicioMs": 5520,
+          "finMs": 6080
         },
         {
           "palabra": "a",
-          "inicioMs": 6780,
-          "finMs": 6920
+          "inicioMs": 6080,
+          "finMs": 6220
         },
         {
           "palabra": "nivel",
-          "inicioMs": 6920,
-          "finMs": 7100
+          "inicioMs": 6220,
+          "finMs": 6400
         },
         {
           "palabra": "global",
-          "inicioMs": 7100,
-          "finMs": 7440
+          "inicioMs": 6400,
+          "finMs": 6700
         }
       ]
     },
@@ -1564,137 +1576,137 @@
         "ancla gravitacional",
         "vida en la Tierra"
       ],
-      "duracionSegundos": 7.378,
+      "duracionSegundos": 6.442,
       "palabras": [
         {
           "palabra": "La",
           "inicioMs": 0,
-          "finMs": 160
+          "finMs": 200
         },
         {
           "palabra": "Luna",
-          "inicioMs": 160,
-          "finMs": 380
+          "inicioMs": 200,
+          "finMs": 440
         },
         {
           "palabra": "no",
-          "inicioMs": 380,
-          "finMs": 600
+          "inicioMs": 440,
+          "finMs": 620
         },
         {
           "palabra": "es",
-          "inicioMs": 600,
-          "finMs": 740
+          "inicioMs": 620,
+          "finMs": 780
         },
         {
           "palabra": "un",
-          "inicioMs": 740,
-          "finMs": 920
+          "inicioMs": 780,
+          "finMs": 900
         },
         {
           "palabra": "simple",
-          "inicioMs": 920,
-          "finMs": 1300
+          "inicioMs": 900,
+          "finMs": 1180
         },
         {
           "palabra": "adorno",
-          "inicioMs": 1300,
-          "finMs": 1620
+          "inicioMs": 1180,
+          "finMs": 1500
         },
         {
           "palabra": "en",
-          "inicioMs": 1620,
-          "finMs": 1780
+          "inicioMs": 1500,
+          "finMs": 1640
         },
         {
           "palabra": "el",
-          "inicioMs": 1780,
-          "finMs": 1940
+          "inicioMs": 1640,
+          "finMs": 1820
         },
         {
           "palabra": "cielo",
-          "inicioMs": 1940,
-          "finMs": 2080
+          "inicioMs": 1820,
+          "finMs": 1940
         },
         {
           "palabra": "nocturno",
-          "inicioMs": 2080,
-          "finMs": 2780
+          "inicioMs": 1940,
+          "finMs": 2620
         },
         {
           "palabra": "es",
-          "inicioMs": 3060,
-          "finMs": 3240
+          "inicioMs": 2780,
+          "finMs": 2920
         },
         {
           "palabra": "el",
-          "inicioMs": 3240,
-          "finMs": 3360
+          "inicioMs": 2920,
+          "finMs": 3040
         },
         {
           "palabra": "escudo",
-          "inicioMs": 3360,
-          "finMs": 3700
+          "inicioMs": 3040,
+          "finMs": 3360
         },
         {
           "palabra": "protector",
-          "inicioMs": 3700,
-          "finMs": 4040
+          "inicioMs": 3360,
+          "finMs": 3860
         },
         {
           "palabra": "y",
-          "inicioMs": 4040,
-          "finMs": 4480
+          "inicioMs": 3860,
+          "finMs": 4160
         },
         {
           "palabra": "el",
-          "inicioMs": 4480,
-          "finMs": 4620
+          "inicioMs": 4160,
+          "finMs": 4280
         },
         {
           "palabra": "ancla",
-          "inicioMs": 4620,
-          "finMs": 4880
+          "inicioMs": 4280,
+          "finMs": 4520
         },
         {
           "palabra": "que",
-          "inicioMs": 4880,
-          "finMs": 5020
+          "inicioMs": 4520,
+          "finMs": 4660
         },
         {
           "palabra": "hace",
-          "inicioMs": 5020,
-          "finMs": 5180
+          "inicioMs": 4660,
+          "finMs": 4800
         },
         {
           "palabra": "posible",
-          "inicioMs": 5180,
-          "finMs": 5520
+          "inicioMs": 4800,
+          "finMs": 5140
         },
         {
           "palabra": "la",
-          "inicioMs": 5520,
-          "finMs": 5760
+          "inicioMs": 5140,
+          "finMs": 5360
         },
         {
           "palabra": "vida",
-          "inicioMs": 5760,
-          "finMs": 5940
+          "inicioMs": 5360,
+          "finMs": 5520
         },
         {
           "palabra": "en",
-          "inicioMs": 5940,
-          "finMs": 6060
+          "inicioMs": 5520,
+          "finMs": 5620
         },
         {
           "palabra": "la",
-          "inicioMs": 6060,
-          "finMs": 6160
+          "inicioMs": 5620,
+          "finMs": 5700
         },
         {
           "palabra": "Tierra",
-          "inicioMs": 6160,
-          "finMs": 6460
+          "inicioMs": 5700,
+          "finMs": 5960
         }
       ]
     }

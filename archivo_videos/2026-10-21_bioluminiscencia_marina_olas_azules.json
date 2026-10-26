@@ -2,7 +2,19 @@
   "meta": {
     "id": "bioluminiscencia_marina_olas_azules",
     "slug": "bioluminiscencia_marina_olas_azules",
-    "temaResumen": "¿Por qué el océano puede brillar en azul neón por millones de organismos microscópicos que reaccionan al movimiento?"
+    "temaResumen": "¿Por qué el océano brilla en azul neón por dinoflagelados bioluminiscentes que reaccionan al movimiento?",
+    "titulo": "¿Por qué el océano brilla en azul neón por la noche?",
+    "titulo_corto": "OCÉANO AZUL NEÓN",
+    "gancho": "¿Sabías que el océano puede brillar en azul neón por millones de organismos microscópicos que reaccionan al movimiento?",
+    "fuentes": [
+      "Scripps Institution of Oceanography (Marine Bioluminescence Program)",
+      "Journal of Cell Science: Dinoflagellate Luciferin-Luciferase Shear Stress Reaction"
+    ],
+    "genero": "SCIENCE",
+    "duracionObjetivo": [
+      62,
+      110
+    ]
   },
   "escenas": [
     {
@@ -48,97 +60,97 @@
           "habla": true
         }
       ],
-      "duracionSegundos": 5.842,
+      "duracionSegundos": 5.218,
       "palabras": [
         {
           "palabra": "Sabías",
           "inicioMs": 0,
-          "finMs": 400
+          "finMs": 340
         },
         {
           "palabra": "que",
-          "inicioMs": 400,
-          "finMs": 560
+          "inicioMs": 340,
+          "finMs": 500
         },
         {
           "palabra": "el",
-          "inicioMs": 560,
-          "finMs": 700
+          "inicioMs": 500,
+          "finMs": 600
         },
         {
           "palabra": "océano",
-          "inicioMs": 700,
-          "finMs": 900
+          "inicioMs": 600,
+          "finMs": 740
         },
         {
           "palabra": "puede",
-          "inicioMs": 900,
-          "finMs": 1240
+          "inicioMs": 740,
+          "finMs": 1040
         },
         {
           "palabra": "brillar",
-          "inicioMs": 1240,
-          "finMs": 1700
+          "inicioMs": 1040,
+          "finMs": 1420
         },
         {
           "palabra": "en",
-          "inicioMs": 1700,
-          "finMs": 1860
+          "inicioMs": 1420,
+          "finMs": 1520
         },
         {
           "palabra": "azul",
-          "inicioMs": 1860,
-          "finMs": 2080
+          "inicioMs": 1520,
+          "finMs": 1720
         },
         {
           "palabra": "neón",
-          "inicioMs": 2080,
-          "finMs": 2380
+          "inicioMs": 1720,
+          "finMs": 1960
         },
         {
           "palabra": "por",
-          "inicioMs": 2380,
-          "finMs": 2680
+          "inicioMs": 1960,
+          "finMs": 2140
         },
         {
           "palabra": "millones",
-          "inicioMs": 2680,
-          "finMs": 2900
+          "inicioMs": 2140,
+          "finMs": 2380
         },
         {
           "palabra": "de",
-          "inicioMs": 2900,
-          "finMs": 3160
+          "inicioMs": 2380,
+          "finMs": 2620
         },
         {
           "palabra": "organismos",
-          "inicioMs": 3160,
-          "finMs": 3580
+          "inicioMs": 2620,
+          "finMs": 3000
         },
         {
           "palabra": "microscópicos",
-          "inicioMs": 3580,
-          "finMs": 4220
+          "inicioMs": 3000,
+          "finMs": 3660
         },
         {
           "palabra": "que",
-          "inicioMs": 4220,
-          "finMs": 4340
+          "inicioMs": 3660,
+          "finMs": 3800
         },
         {
           "palabra": "reaccionan",
-          "inicioMs": 4340,
-          "finMs": 4820
+          "inicioMs": 3800,
+          "finMs": 4240
         },
         {
           "palabra": "al",
-          "inicioMs": 4820,
-          "finMs": 5020
+          "inicioMs": 4240,
+          "finMs": 4380
         },
         {
           "palabra": "movimiento",
-          "inicioMs": 5020,
-          "finMs": 5280
+          "inicioMs": 4380,
+          "finMs": 4620
         }
       ]
     },
@@ -178,157 +190,157 @@
           "habla": true
         }
       ],
-      "duracionSegundos": 8.914,
+      "duracionSegundos": 8.722,
       "palabras": [
         {
           "palabra": "En",
           "inicioMs": 0,
-          "finMs": 140
+          "finMs": 600
         },
         {
           "palabra": "ciertas",
-          "inicioMs": 140,
-          "finMs": 540
+          "inicioMs": 600,
+          "finMs": 1000
         },
         {
           "palabra": "playas",
-          "inicioMs": 540,
-          "finMs": 920
+          "inicioMs": 1000,
+          "finMs": 1100
         },
         {
           "palabra": "del",
-          "inicioMs": 920,
-          "finMs": 1060
+          "inicioMs": 1100,
+          "finMs": 1440
         },
         {
           "palabra": "mundo",
-          "inicioMs": 1060,
-          "finMs": 1380
+          "inicioMs": 1540,
+          "finMs": 1720
         },
         {
           "palabra": "cuando",
-          "inicioMs": 1740,
+          "inicioMs": 1720,
           "finMs": 1880
         },
         {
           "palabra": "las",
           "inicioMs": 1880,
-          "finMs": 2040
+          "finMs": 2060
         },
         {
           "palabra": "olas",
-          "inicioMs": 2040,
-          "finMs": 2260
+          "inicioMs": 2060,
+          "finMs": 2520
         },
         {
           "palabra": "rompen",
-          "inicioMs": 2260,
-          "finMs": 2860
+          "inicioMs": 2520,
+          "finMs": 2620
         },
         {
           "palabra": "en",
-          "inicioMs": 2860,
-          "finMs": 2960
+          "inicioMs": 2620,
+          "finMs": 2760
         },
         {
           "palabra": "la",
-          "inicioMs": 2960,
-          "finMs": 3060
+          "inicioMs": 2760,
+          "finMs": 3100
         },
         {
           "palabra": "orilla",
-          "inicioMs": 3060,
-          "finMs": 3440
+          "inicioMs": 3220,
+          "finMs": 3320
         },
         {
           "palabra": "el",
-          "inicioMs": 3660,
-          "finMs": 3780
+          "inicioMs": 3320,
+          "finMs": 3480
         },
         {
           "palabra": "agua",
-          "inicioMs": 3780,
-          "finMs": 3920
+          "inicioMs": 3480,
+          "finMs": 3660
         },
         {
           "palabra": "se",
-          "inicioMs": 3920,
-          "finMs": 4080
+          "inicioMs": 3660,
+          "finMs": 4000
         },
         {
           "palabra": "enciende",
-          "inicioMs": 4080,
-          "finMs": 4420
+          "inicioMs": 4000,
+          "finMs": 4180
         },
         {
           "palabra": "con",
-          "inicioMs": 4420,
-          "finMs": 4580
+          "inicioMs": 4180,
+          "finMs": 4300
         },
         {
           "palabra": "un",
-          "inicioMs": 4580,
-          "finMs": 4720
+          "inicioMs": 4300,
+          "finMs": 4820
         },
         {
           "palabra": "resplandor",
-          "inicioMs": 4720,
-          "finMs": 5200
+          "inicioMs": 4820,
+          "finMs": 5040
         },
         {
           "palabra": "azul",
-          "inicioMs": 5200,
-          "finMs": 5400
+          "inicioMs": 5040,
+          "finMs": 5560
         },
         {
           "palabra": "eléctrico",
-          "inicioMs": 5400,
-          "finMs": 5900
+          "inicioMs": 5560,
+          "finMs": 5760
         },
         {
           "palabra": "que",
-          "inicioMs": 5900,
-          "finMs": 6060
+          "inicioMs": 5760,
+          "finMs": 6020
         },
         {
           "palabra": "parece",
-          "inicioMs": 6060,
-          "finMs": 6320
+          "inicioMs": 6020,
+          "finMs": 6520
         },
         {
           "palabra": "sacado",
-          "inicioMs": 6320,
-          "finMs": 6800
+          "inicioMs": 6520,
+          "finMs": 6660
         },
         {
           "palabra": "de",
-          "inicioMs": 6800,
-          "finMs": 6920
+          "inicioMs": 6660,
+          "finMs": 6820
         },
         {
           "palabra": "una",
-          "inicioMs": 6920,
-          "finMs": 7080
+          "inicioMs": 6820,
+          "finMs": 7160
         },
         {
           "palabra": "película",
-          "inicioMs": 7080,
-          "finMs": 7420
+          "inicioMs": 7160,
+          "finMs": 7440
         },
         {
           "palabra": "de",
-          "inicioMs": 7420,
-          "finMs": 7680
+          "inicioMs": 7440,
+          "finMs": 7760
         },
         {
           "palabra": "ciencia",
-          "inicioMs": 7680,
-          "finMs": 7980
+          "inicioMs": 7760,
+          "finMs": 8240
         },
         {
           "palabra": "ficción",
-          "inicioMs": 7980,
-          "finMs": 8440
+          "inicioMs": 8240,
+          "finMs": 8472
         }
       ]
     },
@@ -382,117 +394,117 @@
           "capaZ": 25
         }
       ],
-      "duracionSegundos": 9.01,
+      "duracionSegundos": 9.37,
       "palabras": [
         {
           "palabra": "Este",
           "inicioMs": 0,
-          "finMs": 320
+          "finMs": 300
         },
         {
           "palabra": "fenómeno",
-          "inicioMs": 320,
-          "finMs": 740
+          "inicioMs": 300,
+          "finMs": 640
         },
         {
           "palabra": "se",
-          "inicioMs": 740,
-          "finMs": 940
+          "inicioMs": 640,
+          "finMs": 820
         },
         {
           "palabra": "llama",
-          "inicioMs": 940,
-          "finMs": 1160
+          "inicioMs": 820,
+          "finMs": 1020
         },
         {
           "palabra": "bioluminiscencia",
-          "inicioMs": 1160,
-          "finMs": 1960
+          "inicioMs": 1020,
+          "finMs": 1820
         },
         {
           "palabra": "marina",
-          "inicioMs": 1960,
-          "finMs": 2460
+          "inicioMs": 1820,
+          "finMs": 2280
         },
         {
           "palabra": "y",
-          "inicioMs": 2460,
-          "finMs": 3340
+          "inicioMs": 2280,
+          "finMs": 3280
         },
         {
           "palabra": "es",
-          "inicioMs": 3340,
-          "finMs": 3480
+          "inicioMs": 3280,
+          "finMs": 3340
         },
         {
           "palabra": "producido",
-          "inicioMs": 3480,
-          "finMs": 3920
+          "inicioMs": 3340,
+          "finMs": 3820
         },
         {
           "palabra": "por",
-          "inicioMs": 3920,
-          "finMs": 4140
+          "inicioMs": 3820,
+          "finMs": 4020
         },
         {
           "palabra": "millones",
-          "inicioMs": 4140,
-          "finMs": 4360
+          "inicioMs": 4020,
+          "finMs": 4320
         },
         {
           "palabra": "de",
-          "inicioMs": 4360,
-          "finMs": 4620
+          "inicioMs": 4320,
+          "finMs": 4580
         },
         {
           "palabra": "organismos",
-          "inicioMs": 4620,
-          "finMs": 5080
+          "inicioMs": 4580,
+          "finMs": 5040
         },
         {
           "palabra": "microscópicos",
-          "inicioMs": 5080,
-          "finMs": 5840
+          "inicioMs": 5040,
+          "finMs": 5800
         },
         {
           "palabra": "llamados",
-          "inicioMs": 5840,
-          "finMs": 6240
+          "inicioMs": 5800,
+          "finMs": 6500
         },
         {
           "palabra": "dinoflagelados",
-          "inicioMs": 6240,
-          "finMs": 7040
+          "inicioMs": 6500,
+          "finMs": 7360
         },
         {
           "palabra": "que",
-          "inicioMs": 7040,
-          "finMs": 7200
+          "inicioMs": 7360,
+          "finMs": 7580
         },
         {
           "palabra": "viven",
-          "inicioMs": 7200,
-          "finMs": 7440
+          "inicioMs": 7580,
+          "finMs": 7820
         },
         {
           "palabra": "suspendidos",
-          "inicioMs": 7440,
-          "finMs": 8020
+          "inicioMs": 7820,
+          "finMs": 8360
         },
         {
           "palabra": "en",
-          "inicioMs": 8020,
-          "finMs": 8160
+          "inicioMs": 8360,
+          "finMs": 8540
         },
         {
           "palabra": "el",
-          "inicioMs": 8160,
-          "finMs": 8280
+          "inicioMs": 8540,
+          "finMs": 8660
         },
         {
           "palabra": "agua",
-          "inicioMs": 8280,
-          "finMs": 8520
+          "inicioMs": 8660,
+          "finMs": 8900
         }
       ]
     },
@@ -530,132 +542,132 @@
           "habla": true
         }
       ],
-      "duracionSegundos": 8.386,
+      "duracionSegundos": 9.37,
       "palabras": [
         {
           "palabra": "Cada",
           "inicioMs": 0,
-          "finMs": 260
+          "finMs": 320
         },
         {
           "palabra": "dinoflagelado",
-          "inicioMs": 260,
-          "finMs": 940
+          "inicioMs": 320,
+          "finMs": 1180
         },
         {
           "palabra": "es",
-          "inicioMs": 940,
-          "finMs": 1080
+          "inicioMs": 1180,
+          "finMs": 1420
         },
         {
           "palabra": "una",
-          "inicioMs": 1080,
-          "finMs": 1220
+          "inicioMs": 1420,
+          "finMs": 1580
         },
         {
           "palabra": "célula",
-          "inicioMs": 1220,
-          "finMs": 1560
+          "inicioMs": 1580,
+          "finMs": 2000
         },
         {
           "palabra": "unicelular",
-          "inicioMs": 1560,
-          "finMs": 2100
+          "inicioMs": 2000,
+          "finMs": 2660
         },
         {
           "palabra": "que",
-          "inicioMs": 2100,
-          "finMs": 2340
+          "inicioMs": 2660,
+          "finMs": 2900
         },
         {
           "palabra": "mide",
-          "inicioMs": 2340,
-          "finMs": 2580
+          "inicioMs": 2900,
+          "finMs": 3180
         },
         {
           "palabra": "apenas",
-          "inicioMs": 2580,
-          "finMs": 2780
+          "inicioMs": 3180,
+          "finMs": 3480
         },
         {
           "palabra": "un",
-          "inicioMs": 2780,
-          "finMs": 3120
+          "inicioMs": 3480,
+          "finMs": 3820
         },
         {
           "palabra": "cuarto",
-          "inicioMs": 3120,
-          "finMs": 3320
+          "inicioMs": 3820,
+          "finMs": 4040
         },
         {
           "palabra": "de",
-          "inicioMs": 3320,
-          "finMs": 3520
+          "inicioMs": 4040,
+          "finMs": 4280
         },
         {
           "palabra": "milímetro",
-          "inicioMs": 3520,
-          "finMs": 3980
+          "inicioMs": 4280,
+          "finMs": 4820
         },
         {
           "palabra": "pero",
-          "inicioMs": 4300,
-          "finMs": 4620
+          "inicioMs": 5280,
+          "finMs": 5540
         },
         {
           "palabra": "que",
-          "inicioMs": 4620,
-          "finMs": 4740
-        },
-        {
-          "palabra": "contiene",
-          "inicioMs": 4740,
-          "finMs": 5140
-        },
-        {
-          "palabra": "una",
-          "inicioMs": 5140,
-          "finMs": 5320
-        },
-        {
-          "palabra": "reacción",
-          "inicioMs": 5320,
+          "inicioMs": 5540,
           "finMs": 5660
         },
         {
-          "palabra": "química",
+          "palabra": "contiene",
           "inicioMs": 5660,
-          "finMs": 6160
+          "finMs": 6120
+        },
+        {
+          "palabra": "una",
+          "inicioMs": 6120,
+          "finMs": 6320
+        },
+        {
+          "palabra": "reacción",
+          "inicioMs": 6320,
+          "finMs": 6680
+        },
+        {
+          "palabra": "química",
+          "inicioMs": 6680,
+          "finMs": 7120
         },
         {
           "palabra": "capaz",
-          "inicioMs": 6160,
-          "finMs": 6400
+          "inicioMs": 7120,
+          "finMs": 7400
         },
         {
           "palabra": "de",
-          "inicioMs": 6400,
-          "finMs": 6600
+          "inicioMs": 7400,
+          "finMs": 7620
         },
         {
           "palabra": "emitir",
-          "inicioMs": 6600,
-          "finMs": 7100
+          "inicioMs": 7620,
+          "finMs": 8140
         },
         {
           "palabra": "luz",
-          "inicioMs": 7100,
-          "finMs": 7300
+          "inicioMs": 8140,
+          "finMs": 8360
         },
         {
           "palabra": "azul",
-          "inicioMs": 7300,
-          "finMs": 7920
+          "inicioMs": 8360,
+          "finMs": 8900
         },
         {
           "palabra": "brillante",
-          "inicioMs": 7920,
-          "finMs": 8136
+          "inicioMs": 8900,
+          "finMs": 9120
         }
       ]
     },
@@ -711,167 +723,167 @@
           "capaZ": 25
         }
       ],
-      "duracionSegundos": 9.586,
+      "duracionSegundos": 9.226,
       "palabras": [
         {
           "palabra": "La",
           "inicioMs": 0,
-          "finMs": 180
+          "finMs": 200
         },
         {
           "palabra": "magia",
-          "inicioMs": 180,
-          "finMs": 520
+          "inicioMs": 200,
+          "finMs": 580
         },
         {
           "palabra": "ocurre",
-          "inicioMs": 520,
-          "finMs": 960
+          "inicioMs": 580,
+          "finMs": 1080
         },
         {
           "palabra": "cuando",
-          "inicioMs": 960,
-          "finMs": 1180
+          "inicioMs": 1080,
+          "finMs": 1280
         },
         {
           "palabra": "estos",
-          "inicioMs": 1180,
-          "finMs": 1460
+          "inicioMs": 1280,
+          "finMs": 1640
         },
         {
           "palabra": "organismos",
-          "inicioMs": 1460,
-          "finMs": 2060
+          "inicioMs": 1640,
+          "finMs": 2320
         },
         {
           "palabra": "detectan",
-          "inicioMs": 2060,
-          "finMs": 2500
+          "inicioMs": 2320,
+          "finMs": 2800
         },
         {
           "palabra": "una",
-          "inicioMs": 2500,
-          "finMs": 2680
+          "inicioMs": 2800,
+          "finMs": 2940
         },
         {
           "palabra": "perturbación",
-          "inicioMs": 2680,
-          "finMs": 3280
+          "inicioMs": 2940,
+          "finMs": 3540
         },
         {
           "palabra": "mecánica",
-          "inicioMs": 3280,
-          "finMs": 3780
+          "inicioMs": 3540,
+          "finMs": 4020
         },
         {
           "palabra": "en",
-          "inicioMs": 3780,
-          "finMs": 3880
+          "inicioMs": 4020,
+          "finMs": 4140
         },
         {
           "palabra": "el",
-          "inicioMs": 3880,
-          "finMs": 4000
-        },
-        {
-          "palabra": "agua",
-          "inicioMs": 4000,
+          "inicioMs": 4140,
           "finMs": 4240
         },
         {
-          "palabra": "como",
+          "palabra": "agua",
           "inicioMs": 4240,
-          "finMs": 4680
+          "finMs": 4520
+        },
+        {
+          "palabra": "como",
+          "inicioMs": 4640,
+          "finMs": 4780
         },
         {
           "palabra": "el",
-          "inicioMs": 4680,
-          "finMs": 4840
+          "inicioMs": 4780,
+          "finMs": 4900
         },
         {
           "palabra": "golpe",
-          "inicioMs": 4840,
-          "finMs": 5020
+          "inicioMs": 4900,
+          "finMs": 5100
         },
         {
           "palabra": "de",
-          "inicioMs": 5020,
-          "finMs": 5200
+          "inicioMs": 5100,
+          "finMs": 5260
         },
         {
           "palabra": "una",
-          "inicioMs": 5200,
-          "finMs": 5380
+          "inicioMs": 5260,
+          "finMs": 5420
         },
         {
           "palabra": "ola",
-          "inicioMs": 5380,
-          "finMs": 5720
+          "inicioMs": 5420,
+          "finMs": 5700
         },
         {
           "palabra": "el",
-          "inicioMs": 6100,
-          "finMs": 6420
+          "inicioMs": 5860,
+          "finMs": 6000
         },
         {
           "palabra": "remo",
-          "inicioMs": 6420,
-          "finMs": 6560
+          "inicioMs": 6000,
+          "finMs": 6200
         },
         {
           "palabra": "de",
-          "inicioMs": 6560,
-          "finMs": 6700
+          "inicioMs": 6200,
+          "finMs": 6380
         },
         {
           "palabra": "un",
-          "inicioMs": 6700,
-          "finMs": 6940
+          "inicioMs": 6380,
+          "finMs": 6480
         },
         {
           "palabra": "kayak",
-          "inicioMs": 6940,
-          "finMs": 7340
+          "inicioMs": 6480,
+          "finMs": 6760
         },
         {
           "palabra": "o",
-          "inicioMs": 7340,
-          "finMs": 7660
+          "inicioMs": 6760,
+          "finMs": 7040
         },
         {
           "palabra": "incluso",
-          "inicioMs": 7660,
-          "finMs": 7900
+          "inicioMs": 7040,
+          "finMs": 7340
         },
         {
           "palabra": "tus",
-          "inicioMs": 7900,
-          "finMs": 8260
+          "inicioMs": 7340,
+          "finMs": 7600
         },
         {
           "palabra": "propios",
-          "inicioMs": 8260,
-          "finMs": 8580
+          "inicioMs": 7600,
+          "finMs": 7940
         },
         {
           "palabra": "pasos",
-          "inicioMs": 8580,
-          "finMs": 8720
+          "inicioMs": 7940,
+          "finMs": 8260
         },
         {
           "palabra": "en",
-          "inicioMs": 8720,
-          "finMs": 8820
+          "inicioMs": 8260,
+          "finMs": 8380
         },
         {
           "palabra": "la",
-          "inicioMs": 8820,
-          "finMs": 9100
+          "inicioMs": 8380,
+          "finMs": 8480
         },
         {
           "palabra": "orilla",
-          "inicioMs": 9100,
-          "finMs": 9336
+          "inicioMs": 8480,
+          "finMs": 8760
         }
       ]
     },
@@ -912,7 +924,7 @@
           "habla": true
         }
       ],
-      "duracionSegundos": 8.578,
+      "duracionSegundos": 9.082,
       "palabras": [
         {
           "palabra": "Al",
@@ -922,127 +934,127 @@
         {
           "palabra": "sentir",
           "inicioMs": 180,
-          "finMs": 500
+          "finMs": 440
         },
         {
           "palabra": "la",
-          "inicioMs": 500,
-          "finMs": 660
+          "inicioMs": 440,
+          "finMs": 600
         },
         {
           "palabra": "presión",
-          "inicioMs": 660,
-          "finMs": 980
+          "inicioMs": 600,
+          "finMs": 940
         },
         {
           "palabra": "del",
-          "inicioMs": 980,
-          "finMs": 1140
+          "inicioMs": 940,
+          "finMs": 1100
         },
         {
           "palabra": "agua",
-          "inicioMs": 1140,
-          "finMs": 1400
+          "inicioMs": 1100,
+          "finMs": 1380
         },
         {
           "palabra": "la",
-          "inicioMs": 1480,
+          "inicioMs": 1500,
           "finMs": 1560
         },
         {
           "palabra": "célula",
           "inicioMs": 1560,
-          "finMs": 1800
+          "finMs": 1900
         },
         {
           "palabra": "libera",
-          "inicioMs": 1800,
-          "finMs": 1820
+          "inicioMs": 1900,
+          "finMs": 2400
         },
         {
           "palabra": "una",
-          "inicioMs": 1820,
-          "finMs": 1920
+          "inicioMs": 2440,
+          "finMs": 2620
         },
         {
           "palabra": "enzima",
-          "inicioMs": 1920,
-          "finMs": 2320
+          "inicioMs": 2620,
+          "finMs": 2980
         },
         {
           "palabra": "llamada",
-          "inicioMs": 2320,
-          "finMs": 2480
+          "inicioMs": 2980,
+          "finMs": 3340
         },
         {
           "palabra": "luciferasa",
-          "inicioMs": 2480,
-          "finMs": 2880
+          "inicioMs": 3340,
+          "finMs": 4000
         },
         {
           "palabra": "que",
-          "inicioMs": 2880,
-          "finMs": 3180
+          "inicioMs": 4120,
+          "finMs": 4200
         },
         {
           "palabra": "oxida",
-          "inicioMs": 3180,
-          "finMs": 3820
+          "inicioMs": 4200,
+          "finMs": 4240
         },
         {
           "palabra": "una",
-          "inicioMs": 3820,
-          "finMs": 3980
-        },
-        {
-          "palabra": "molécula",
-          "inicioMs": 3980,
-          "finMs": 4280
-        },
-        {
-          "palabra": "llamada",
-          "inicioMs": 4280,
+          "inicioMs": 4240,
           "finMs": 4460
         },
         {
-          "palabra": "luciferina",
+          "palabra": "molécula",
           "inicioMs": 4460,
-          "finMs": 4980
+          "finMs": 5140
+        },
+        {
+          "palabra": "llamada",
+          "inicioMs": 5140,
+          "finMs": 5440
+        },
+        {
+          "palabra": "luciferina",
+          "inicioMs": 5440,
+          "finMs": 6120
         },
         {
           "palabra": "produciendo",
-          "inicioMs": 4980,
-          "finMs": 5260
+          "inicioMs": 6320,
+          "finMs": 6840
         },
         {
           "palabra": "un",
-          "inicioMs": 5260,
-          "finMs": 5920
+          "inicioMs": 6840,
+          "finMs": 7140
         },
         {
           "palabra": "destello",
-          "inicioMs": 6100,
-          "finMs": 6520
+          "inicioMs": 7140,
+          "finMs": 7580
         },
         {
           "palabra": "de",
-          "inicioMs": 6520,
-          "finMs": 6740
+          "inicioMs": 7580,
+          "finMs": 7720
         },
         {
           "palabra": "luz",
-          "inicioMs": 6740,
-          "finMs": 7180
+          "inicioMs": 7720,
+          "finMs": 7880
         },
         {
           "palabra": "azul",
-          "inicioMs": 7180,
-          "finMs": 7300
+          "inicioMs": 7880,
+          "finMs": 8160
         },
         {
           "palabra": "visible",
-          "inicioMs": 7300,
-          "finMs": 7460
+          "inicioMs": 8160,
+          "finMs": 8560
         }
       ]
     },
@@ -1101,141 +1113,141 @@
         {
           "palabra": "Cada",
           "inicioMs": 0,
-          "finMs": 240
+          "finMs": 300
         },
         {
           "palabra": "destello",
-          "inicioMs": 240,
-          "finMs": 720
+          "inicioMs": 300,
+          "finMs": 760
         },
         {
           "palabra": "dura",
-          "inicioMs": 720,
-          "finMs": 940
+          "inicioMs": 760,
+          "finMs": 1000
         },
         {
           "palabra": "apenas",
-          "inicioMs": 940,
-          "finMs": 1220
+          "inicioMs": 1000,
+          "finMs": 1260
         },
         {
           "palabra": "una",
-          "inicioMs": 1220,
-          "finMs": 1440
+          "inicioMs": 1260,
+          "finMs": 1560
         },
         {
           "palabra": "fracción",
-          "inicioMs": 1440,
-          "finMs": 1720
+          "inicioMs": 1560,
+          "finMs": 1920
         },
         {
           "palabra": "de",
-          "inicioMs": 1720,
-          "finMs": 1860
+          "inicioMs": 1920,
+          "finMs": 2080
         },
         {
           "palabra": "segundo",
-          "inicioMs": 1860,
-          "finMs": 2260
+          "inicioMs": 2080,
+          "finMs": 2480
         },
         {
           "palabra": "pero",
-          "inicioMs": 2340,
-          "finMs": 2460
+          "inicioMs": 2680,
+          "finMs": 2800
         },
         {
           "palabra": "cuando",
-          "inicioMs": 2460,
-          "finMs": 2680
+          "inicioMs": 2800,
+          "finMs": 3000
         },
         {
           "palabra": "millones",
-          "inicioMs": 2680,
-          "finMs": 2960
+          "inicioMs": 3000,
+          "finMs": 3380
         },
         {
           "palabra": "de",
-          "inicioMs": 2960,
-          "finMs": 3160
+          "inicioMs": 3380,
+          "finMs": 3560
         },
         {
           "palabra": "células",
-          "inicioMs": 3160,
-          "finMs": 3400
+          "inicioMs": 3560,
+          "finMs": 3820
         },
         {
           "palabra": "lo",
-          "inicioMs": 3400,
-          "finMs": 3720
+          "inicioMs": 3820,
+          "finMs": 4120
         },
         {
           "palabra": "hacen",
-          "inicioMs": 3720,
-          "finMs": 3880
+          "inicioMs": 4120,
+          "finMs": 4280
         },
         {
           "palabra": "al",
-          "inicioMs": 3880,
-          "finMs": 4040
+          "inicioMs": 4280,
+          "finMs": 4420
         },
         {
           "palabra": "mismo",
-          "inicioMs": 4040,
-          "finMs": 4240
+          "inicioMs": 4420,
+          "finMs": 4640
         },
         {
           "palabra": "tiempo",
-          "inicioMs": 4240,
-          "finMs": 4900
+          "inicioMs": 4640,
+          "finMs": 5220
         },
         {
           "palabra": "el",
-          "inicioMs": 5300,
-          "finMs": 5520
+          "inicioMs": 5480,
+          "finMs": 5580
         },
         {
           "palabra": "resultado",
-          "inicioMs": 5520,
-          "finMs": 5920
+          "inicioMs": 5580,
+          "finMs": 5980
         },
         {
           "palabra": "es",
-          "inicioMs": 5920,
-          "finMs": 6160
+          "inicioMs": 5980,
+          "finMs": 6200
         },
         {
           "palabra": "una",
-          "inicioMs": 6160,
-          "finMs": 6340
+          "inicioMs": 6200,
+          "finMs": 6400
         },
         {
           "palabra": "ola",
-          "inicioMs": 6340,
-          "finMs": 6600
+          "inicioMs": 6400,
+          "finMs": 6660
         },
         {
           "palabra": "de",
-          "inicioMs": 6600,
-          "finMs": 6720
+          "inicioMs": 6660,
+          "finMs": 6780
         },
         {
           "palabra": "luz",
-          "inicioMs": 6720,
-          "finMs": 6860
+          "inicioMs": 6780,
+          "finMs": 6920
         },
         {
           "palabra": "azul",
-          "inicioMs": 6860,
-          "finMs": 7180
+          "inicioMs": 6920,
+          "finMs": 7220
         },
         {
           "palabra": "que",
-          "inicioMs": 7180,
-          "finMs": 7380
+          "inicioMs": 7220,
+          "finMs": 7420
         },
         {
           "palabra": "recorre",
-          "inicioMs": 7380,
+          "inicioMs": 7420,
           "finMs": 7820
         },
         {
@@ -1246,11 +1258,11 @@
         {
           "palabra": "la",
           "inicioMs": 8040,
-          "finMs": 8260
+          "finMs": 8240
         },
         {
           "palabra": "orilla",
-          "inicioMs": 8260,
+          "inicioMs": 8240,
           "finMs": 8580
         }
       ]
@@ -1289,157 +1301,157 @@
           "habla": true
         }
       ],
-      "duracionSegundos": 9.538,
+      "duracionSegundos": 9.946,
       "palabras": [
         {
           "palabra": "Pero",
           "inicioMs": 0,
-          "finMs": 220
+          "finMs": 240
         },
         {
           "palabra": "por",
-          "inicioMs": 220,
-          "finMs": 380
+          "inicioMs": 240,
+          "finMs": 400
         },
         {
           "palabra": "qué",
-          "inicioMs": 380,
-          "finMs": 540
+          "inicioMs": 400,
+          "finMs": 560
         },
         {
           "palabra": "brillan",
-          "inicioMs": 540,
+          "inicioMs": 560,
           "finMs": 1040
         },
         {
           "palabra": "La",
-          "inicioMs": 1220,
-          "finMs": 1320
+          "inicioMs": 1320,
+          "finMs": 1420
         },
         {
           "palabra": "respuesta",
-          "inicioMs": 1320,
-          "finMs": 1720
+          "inicioMs": 1420,
+          "finMs": 1800
         },
         {
           "palabra": "es",
-          "inicioMs": 1720,
-          "finMs": 2000
+          "inicioMs": 1800,
+          "finMs": 2260
         },
         {
           "palabra": "supervivencia",
-          "inicioMs": 2000,
-          "finMs": 2780
+          "inicioMs": 2260,
+          "finMs": 3000
         },
         {
           "palabra": "Cuando",
-          "inicioMs": 2960,
-          "finMs": 3160
+          "inicioMs": 3460,
+          "finMs": 3660
         },
         {
           "palabra": "un",
-          "inicioMs": 3160,
-          "finMs": 3360
+          "inicioMs": 3660,
+          "finMs": 3920
         },
         {
           "palabra": "depredador",
-          "inicioMs": 3360,
-          "finMs": 3860
+          "inicioMs": 3920,
+          "finMs": 4380
         },
         {
           "palabra": "intenta",
-          "inicioMs": 3860,
-          "finMs": 4300
-        },
-        {
-          "palabra": "comerse",
-          "inicioMs": 4300,
-          "finMs": 4700
-        },
-        {
-          "palabra": "a",
-          "inicioMs": 4700,
+          "inicioMs": 4380,
           "finMs": 4840
         },
         {
-          "palabra": "un",
+          "palabra": "comerse",
           "inicioMs": 4840,
-          "finMs": 5320
-        },
-        {
-          "palabra": "dinoflagelado",
-          "inicioMs": 5320,
-          "finMs": 5600
-        },
-        {
-          "palabra": "este",
-          "inicioMs": 5700,
-          "finMs": 5920
-        },
-        {
-          "palabra": "emite",
-          "inicioMs": 5920,
-          "finMs": 6220
-        },
-        {
-          "palabra": "luz",
-          "inicioMs": 6220,
-          "finMs": 6440
-        },
-        {
-          "palabra": "para",
-          "inicioMs": 6440,
-          "finMs": 6720
-        },
-        {
-          "palabra": "atraer",
-          "inicioMs": 6720,
-          "finMs": 7040
+          "finMs": 5280
         },
         {
           "palabra": "a",
-          "inicioMs": 7040,
-          "finMs": 7140
+          "inicioMs": 5280,
+          "finMs": 5340
         },
         {
           "palabra": "un",
-          "inicioMs": 7140,
-          "finMs": 7240
+          "inicioMs": 5340,
+          "finMs": 5440
+        },
+        {
+          "palabra": "dinoflagelado",
+          "inicioMs": 5440,
+          "finMs": 5900
+        },
+        {
+          "palabra": "este",
+          "inicioMs": 5900,
+          "finMs": 6500
+        },
+        {
+          "palabra": "emite",
+          "inicioMs": 6500,
+          "finMs": 6800
+        },
+        {
+          "palabra": "luz",
+          "inicioMs": 6800,
+          "finMs": 6940
+        },
+        {
+          "palabra": "para",
+          "inicioMs": 6940,
+          "finMs": 7180
+        },
+        {
+          "palabra": "atraer",
+          "inicioMs": 7180,
+          "finMs": 7500
+        },
+        {
+          "palabra": "a",
+          "inicioMs": 7500,
+          "finMs": 7580
+        },
+        {
+          "palabra": "un",
+          "inicioMs": 7580,
+          "finMs": 7680
         },
         {
           "palabra": "depredador",
-          "inicioMs": 7240,
-          "finMs": 7720
+          "inicioMs": 7680,
+          "finMs": 8140
         },
         {
           "palabra": "más",
-          "inicioMs": 7720,
-          "finMs": 7920
+          "inicioMs": 8140,
+          "finMs": 8340
         },
         {
           "palabra": "grande",
-          "inicioMs": 7920,
-          "finMs": 8260
+          "inicioMs": 8340,
+          "finMs": 8680
         },
         {
           "palabra": "que",
-          "inicioMs": 8260,
-          "finMs": 8420
+          "inicioMs": 8680,
+          "finMs": 8860
         },
         {
           "palabra": "ataque",
-          "inicioMs": 8420,
-          "finMs": 8620
+          "inicioMs": 8860,
+          "finMs": 9040
         },
         {
           "palabra": "al",
-          "inicioMs": 8620,
-          "finMs": 8800
+          "inicioMs": 9040,
+          "finMs": 9220
         },
         {
           "palabra": "primero",
-          "inicioMs": 8800,
-          "finMs": 9040
+          "inicioMs": 9220,
+          "finMs": 9460
         }
       ]
     },
@@ -1477,7 +1489,7 @@
           "habla": true
         }
       ],
-      "duracionSegundos": 6.73,
+      "duracionSegundos": 7.81,
       "palabras": [
         {
           "palabra": "Es",
@@ -1492,112 +1504,112 @@
         {
           "palabra": "estrategia",
           "inicioMs": 380,
-          "finMs": 840
+          "finMs": 880
         },
         {
           "palabra": "evolutiva",
-          "inicioMs": 840,
-          "finMs": 1260
+          "inicioMs": 880,
+          "finMs": 1280
         },
         {
           "palabra": "brillante",
-          "inicioMs": 1260,
-          "finMs": 1780
+          "inicioMs": 1280,
+          "finMs": 1820
         },
         {
           "palabra": "si",
-          "inicioMs": 1780,
-          "finMs": 1960
+          "inicioMs": 1820,
+          "finMs": 2200
         },
         {
           "palabra": "no",
-          "inicioMs": 1960,
-          "finMs": 2080
+          "inicioMs": 2200,
+          "finMs": 2340
         },
         {
           "palabra": "puedes",
-          "inicioMs": 2080,
-          "finMs": 2320
+          "inicioMs": 2340,
+          "finMs": 2600
         },
         {
           "palabra": "escapar",
-          "inicioMs": 2320,
-          "finMs": 2800
-        },
-        {
-          "palabra": "al",
-          "inicioMs": 2980,
+          "inicioMs": 2600,
           "finMs": 3160
         },
         {
-          "palabra": "menos",
+          "palabra": "al",
           "inicioMs": 3160,
-          "finMs": 3340
+          "finMs": 3980
+        },
+        {
+          "palabra": "menos",
+          "inicioMs": 3980,
+          "finMs": 4240
         },
         {
           "palabra": "haz",
-          "inicioMs": 3340,
-          "finMs": 3560
+          "inicioMs": 4240,
+          "finMs": 4500
         },
         {
           "palabra": "que",
-          "inicioMs": 3560,
-          "finMs": 3740
+          "inicioMs": 4500,
+          "finMs": 4640
         },
         {
           "palabra": "tu",
-          "inicioMs": 3740,
-          "finMs": 3840
+          "inicioMs": 4640,
+          "finMs": 4760
         },
         {
           "palabra": "atacante",
-          "inicioMs": 3840,
-          "finMs": 4300
+          "inicioMs": 4760,
+          "finMs": 5200
         },
         {
           "palabra": "se",
-          "inicioMs": 4300,
-          "finMs": 4440
+          "inicioMs": 5200,
+          "finMs": 5380
         },
         {
           "palabra": "convierta",
-          "inicioMs": 4440,
-          "finMs": 4860
+          "inicioMs": 5380,
+          "finMs": 5900
         },
         {
           "palabra": "en",
-          "inicioMs": 4860,
-          "finMs": 4960
+          "inicioMs": 5900,
+          "finMs": 5980
         },
         {
           "palabra": "la",
-          "inicioMs": 4960,
-          "finMs": 5020
+          "inicioMs": 5980,
+          "finMs": 6040
         },
         {
           "palabra": "presa",
-          "inicioMs": 5020,
-          "finMs": 5360
+          "inicioMs": 6040,
+          "finMs": 6400
         },
         {
           "palabra": "de",
-          "inicioMs": 5360,
-          "finMs": 5440
+          "inicioMs": 6400,
+          "finMs": 6500
         },
         {
           "palabra": "alguien",
-          "inicioMs": 5440,
-          "finMs": 5640
+          "inicioMs": 6500,
+          "finMs": 6680
         },
         {
           "palabra": "más",
-          "inicioMs": 5640,
-          "finMs": 5840
+          "inicioMs": 6680,
+          "finMs": 6920
         },
         {
           "palabra": "grande",
-          "inicioMs": 5840,
-          "finMs": 6240
+          "inicioMs": 6920,
+          "finMs": 7340
         }
       ]
     },
@@ -1635,157 +1647,157 @@
           "habla": true
         }
       ],
-      "duracionSegundos": 9.682,
+      "duracionSegundos": 9.25,
       "palabras": [
         {
           "palabra": "Las",
           "inicioMs": 0,
-          "finMs": 260
+          "finMs": 200
         },
         {
           "palabra": "playas",
-          "inicioMs": 260,
-          "finMs": 620
+          "inicioMs": 200,
+          "finMs": 580
         },
         {
           "palabra": "más",
-          "inicioMs": 620,
-          "finMs": 780
+          "inicioMs": 580,
+          "finMs": 700
         },
         {
           "palabra": "famosas",
-          "inicioMs": 780,
-          "finMs": 1260
+          "inicioMs": 700,
+          "finMs": 1080
         },
         {
           "palabra": "por",
-          "inicioMs": 1260,
-          "finMs": 1500
+          "inicioMs": 1080,
+          "finMs": 1260
         },
         {
           "palabra": "este",
-          "inicioMs": 1500,
-          "finMs": 1720
+          "inicioMs": 1260,
+          "finMs": 1420
         },
         {
           "palabra": "espectáculo",
-          "inicioMs": 1720,
-          "finMs": 2300
+          "inicioMs": 1420,
+          "finMs": 1880
         },
         {
           "palabra": "están",
-          "inicioMs": 2300,
-          "finMs": 2560
+          "inicioMs": 1880,
+          "finMs": 2100
         },
         {
           "palabra": "en",
-          "inicioMs": 2560,
-          "finMs": 2700
+          "inicioMs": 2100,
+          "finMs": 2220
         },
         {
           "palabra": "Puerto",
-          "inicioMs": 2700,
-          "finMs": 2840
+          "inicioMs": 2220,
+          "finMs": 2320
         },
         {
           "palabra": "Rico",
-          "inicioMs": 2840,
-          "finMs": 3340
+          "inicioMs": 2320,
+          "finMs": 2720
         },
         {
           "palabra": "Jamaica",
-          "inicioMs": 3600,
-          "finMs": 3760
+          "inicioMs": 2900,
+          "finMs": 3080
         },
         {
           "palabra": "y",
-          "inicioMs": 3760,
-          "finMs": 4200
+          "inicioMs": 3080,
+          "finMs": 3440
         },
         {
           "palabra": "las",
-          "inicioMs": 4200,
-          "finMs": 4360
+          "inicioMs": 3440,
+          "finMs": 3540
         },
         {
           "palabra": "Maldivas",
-          "inicioMs": 4360,
-          "finMs": 4860
+          "inicioMs": 3540,
+          "finMs": 3980
         },
         {
           "palabra": "donde",
-          "inicioMs": 5280,
-          "finMs": 5540
+          "inicioMs": 4360,
+          "finMs": 4780
         },
         {
           "palabra": "las",
-          "inicioMs": 5540,
-          "finMs": 5760
+          "inicioMs": 4780,
+          "finMs": 5000
         },
         {
           "palabra": "noches",
-          "inicioMs": 5760,
-          "finMs": 6120
+          "inicioMs": 5000,
+          "finMs": 5360
         },
         {
           "palabra": "sin",
-          "inicioMs": 6120,
-          "finMs": 6300
+          "inicioMs": 5360,
+          "finMs": 5560
         },
         {
           "palabra": "luna",
-          "inicioMs": 6300,
-          "finMs": 6540
+          "inicioMs": 5560,
+          "finMs": 5840
         },
         {
           "palabra": "revelan",
-          "inicioMs": 6540,
-          "finMs": 7000
+          "inicioMs": 5840,
+          "finMs": 6320
         },
         {
           "palabra": "un",
-          "inicioMs": 7000,
-          "finMs": 7120
+          "inicioMs": 6320,
+          "finMs": 6440
         },
         {
           "palabra": "mar",
-          "inicioMs": 7120,
-          "finMs": 7300
+          "inicioMs": 6440,
+          "finMs": 6620
         },
         {
           "palabra": "que",
-          "inicioMs": 7300,
-          "finMs": 7480
+          "inicioMs": 6620,
+          "finMs": 6800
         },
         {
           "palabra": "parece",
-          "inicioMs": 7480,
-          "finMs": 7700
+          "inicioMs": 6800,
+          "finMs": 7060
         },
         {
           "palabra": "estar",
-          "inicioMs": 7700,
-          "finMs": 8020
+          "inicioMs": 7060,
+          "finMs": 7460
         },
         {
           "palabra": "lleno",
-          "inicioMs": 8020,
-          "finMs": 8240
+          "inicioMs": 7460,
+          "finMs": 7740
         },
         {
           "palabra": "de",
-          "inicioMs": 8240,
-          "finMs": 8360
+          "inicioMs": 7740,
+          "finMs": 7880
         },
         {
           "palabra": "estrellas",
-          "inicioMs": 8360,
-          "finMs": 8780
+          "inicioMs": 7880,
+          "finMs": 8340
         },
         {
           "palabra": "líquidas",
-          "inicioMs": 8780,
-          "finMs": 9200
+          "inicioMs": 8340,
+          "finMs": 8780
         }
       ]
     },
@@ -1823,162 +1835,162 @@
           "habla": true
         }
       ],
-      "duracionSegundos": 8.842,
+      "duracionSegundos": 8.218,
       "palabras": [
         {
           "palabra": "Los",
           "inicioMs": 0,
-          "finMs": 200
+          "finMs": 180
         },
         {
           "palabra": "marineros",
-          "inicioMs": 200,
-          "finMs": 620
+          "inicioMs": 180,
+          "finMs": 560
         },
         {
           "palabra": "antiguos",
-          "inicioMs": 620,
-          "finMs": 1140
+          "inicioMs": 560,
+          "finMs": 1040
         },
         {
           "palabra": "pensaban",
-          "inicioMs": 1140,
-          "finMs": 1540
+          "inicioMs": 1040,
+          "finMs": 1460
         },
         {
           "palabra": "que",
-          "inicioMs": 1540,
+          "inicioMs": 1460,
+          "finMs": 1620
+        },
+        {
+          "palabra": "el",
+          "inicioMs": 1620,
           "finMs": 1700
         },
         {
-          "palabra": "el",
-          "inicioMs": 1700,
-          "finMs": 1800
-        },
-        {
           "palabra": "mar",
-          "inicioMs": 1800,
-          "finMs": 1920
+          "inicioMs": 1700,
+          "finMs": 1820
         },
         {
           "palabra": "estaba",
-          "inicioMs": 1920,
-          "finMs": 2220
+          "inicioMs": 1820,
+          "finMs": 2020
         },
         {
           "palabra": "embrujado",
-          "inicioMs": 2220,
-          "finMs": 2700
+          "inicioMs": 2020,
+          "finMs": 2480
         },
         {
           "palabra": "cuando",
-          "inicioMs": 2700,
-          "finMs": 2920
+          "inicioMs": 2480,
+          "finMs": 2700
         },
         {
           "palabra": "veían",
-          "inicioMs": 2920,
-          "finMs": 3340
+          "inicioMs": 2700,
+          "finMs": 3000
         },
         {
           "palabra": "el",
-          "inicioMs": 3340,
-          "finMs": 3460
+          "inicioMs": 3000,
+          "finMs": 3160
         },
         {
           "palabra": "agua",
-          "inicioMs": 3460,
-          "finMs": 3660
+          "inicioMs": 3160,
+          "finMs": 3300
         },
         {
           "palabra": "brillar",
-          "inicioMs": 3660,
-          "finMs": 4060
+          "inicioMs": 3300,
+          "finMs": 3720
         },
         {
           "palabra": "en",
-          "inicioMs": 4060,
-          "finMs": 4160
+          "inicioMs": 3720,
+          "finMs": 3800
         },
         {
           "palabra": "la",
-          "inicioMs": 4160,
-          "finMs": 4240
+          "inicioMs": 3800,
+          "finMs": 3880
         },
         {
           "palabra": "oscuridad",
-          "inicioMs": 4240,
-          "finMs": 4680
+          "inicioMs": 3880,
+          "finMs": 4260
         },
         {
           "palabra": "Hoy",
-          "inicioMs": 4880,
-          "finMs": 5020
+          "inicioMs": 4400,
+          "finMs": 4520
         },
         {
           "palabra": "sabemos",
-          "inicioMs": 5020,
-          "finMs": 5300
+          "inicioMs": 4520,
+          "finMs": 4840
         },
         {
           "palabra": "que",
-          "inicioMs": 5300,
-          "finMs": 5640
+          "inicioMs": 4840,
+          "finMs": 5160
         },
         {
           "palabra": "es",
-          "inicioMs": 5640,
-          "finMs": 5800
+          "inicioMs": 5160,
+          "finMs": 5320
         },
         {
           "palabra": "una",
-          "inicioMs": 5800,
-          "finMs": 5980
+          "inicioMs": 5320,
+          "finMs": 5460
         },
         {
           "palabra": "de",
-          "inicioMs": 5980,
-          "finMs": 6060
+          "inicioMs": 5460,
+          "finMs": 5580
         },
         {
           "palabra": "las",
-          "inicioMs": 6060,
-          "finMs": 6200
+          "inicioMs": 5580,
+          "finMs": 5720
         },
         {
           "palabra": "maravillas",
-          "inicioMs": 6200,
-          "finMs": 6660
+          "inicioMs": 5720,
+          "finMs": 6180
         },
         {
           "palabra": "más",
-          "inicioMs": 6660,
-          "finMs": 6880
+          "inicioMs": 6180,
+          "finMs": 6380
         },
         {
           "palabra": "hermosas",
-          "inicioMs": 6880,
-          "finMs": 7400
+          "inicioMs": 6380,
+          "finMs": 6840
         },
         {
           "palabra": "de",
-          "inicioMs": 7400,
-          "finMs": 7500
+          "inicioMs": 6840,
+          "finMs": 6940
         },
         {
           "palabra": "la",
-          "inicioMs": 7500,
-          "finMs": 7600
+          "inicioMs": 6940,
+          "finMs": 7020
         },
         {
           "palabra": "biología",
-          "inicioMs": 7600,
-          "finMs": 7940
+          "inicioMs": 7020,
+          "finMs": 7360
         },
         {
           "palabra": "marina",
-          "inicioMs": 7940,
-          "finMs": 8360
+          "inicioMs": 7360,
+          "finMs": 7740
         }
       ]
     },

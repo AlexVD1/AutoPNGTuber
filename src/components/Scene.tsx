@@ -3,6 +3,7 @@ import {
   AbsoluteFill,
   Audio,
   getStaticFiles,
+  interpolate,
   Sequence,
   staticFile,
   useCurrentFrame,
@@ -110,6 +111,18 @@ export const Scene: React.FC<SceneProps> = ({ escena }) => {
   const escenarioFinal = useMemo(() => {
     if (escena.escenario) return escena.escenario;
     const t = (escena.texto || "").toLowerCase();
+    if (/paramo|celta|niebla|samhain|irlanda|nabo|linterna/i.test(t)) {
+      return "paramo_celta_niebla";
+    }
+    if (/cielo.*infierno|puertas.*cielo|purgatorio|averno|inframundo/i.test(t)) {
+      return "umbral_cielo_infierno";
+    }
+    if (/ofrenda|altar|muertos|calavera|cempas[uú]chil|pan de muerto|azahar/i.test(t)) {
+      return "ofrenda_dia_muertos";
+    }
+    if (/cosmogon|cardinal|rumbos|prehisp[aá]nic|mexica|azteca/i.test(t)) {
+      return "cosmogonia_prehispanica";
+    }
     if (/volc[aá]n|lava|cr[aá]ter|caldera|basalto|erupci[oó]n|magm[aá]tico/i.test(t)) {
       return "crater_volcanico";
     }
@@ -241,6 +254,15 @@ export const Scene: React.FC<SceneProps> = ({ escena }) => {
           <div className="absolute inset-0 flex items-center justify-center pointer-events-none z-20">
             {evaluatedCharacters.map((char) => {
               const ev = char.evaluated;
+              const isAnima =
+                char.id.toLowerCase().includes("anima") ||
+                char.id.toLowerCase().includes("fantasma") ||
+                char.id.toLowerCase().includes("espiritu") ||
+                Boolean(char.espectral);
+              const isDiablo =
+                char.id.toLowerCase().includes("diablo") ||
+                char.id.toLowerCase().includes("demonio") ||
+                Boolean((char as any).esDiablo);
               return (
                 <div
                   key={char.id}
@@ -248,6 +270,12 @@ export const Scene: React.FC<SceneProps> = ({ escena }) => {
                   style={{
                     zIndex: char.capaZ ?? 10,
                     transform: `translate(${ev.x}px, ${ev.y}px)`,
+                    opacity: char.opacidad ?? (isAnima ? 0.85 : 1),
+                    filter: isAnima
+                      ? "invert(1) drop-shadow(0 0 16px #38BDF8) drop-shadow(0 0 32px #60A5FA)"
+                      : isDiablo
+                      ? "drop-shadow(0 0 16px #EF4444) drop-shadow(0 0 30px #B91C1C)"
+                      : undefined,
                   }}
                 >
                   <Stickman
@@ -263,7 +291,7 @@ export const Scene: React.FC<SceneProps> = ({ escena }) => {
                     vibrationOffset={ev.vibrationX}
                     animacionEntrada={char.animacionEntrada ?? "ninguna"}
                     palabras={escena.palabras}
-                    halo={halo}
+                    halo={halo && !isAnima && !isDiablo}
                     overrideIsSpeaking={
                       char.habla !== undefined ? (char.habla ? undefined : false) : undefined
                     }
@@ -319,11 +347,38 @@ export const Scene: React.FC<SceneProps> = ({ escena }) => {
           </div>
         )}
 
-        {/* Abajo: Subtítulos de alto contraste con margen seguro adaptativo */}
+        {/* Gancho: título corto grande, visible desde el frame 0 y durante los primeros 1.5 s */}
+        {escena.id === 1 && frame < 45 && (
+          <div
+            className="absolute left-0 right-0 flex justify-center text-center"
+            style={{
+              top: 260,
+              padding: "0 60px",
+              opacity: interpolate(frame, [33, 45], [1, 0], { extrapolateLeft: "clamp" }),
+            }}
+          >
+            <span
+              className="uppercase"
+              style={{
+                fontFamily: "'Arial Black', 'Impact', 'Inter', system-ui, sans-serif",
+                fontWeight: 900,
+                fontSize: 130,
+                lineHeight: 1.05,
+                color: "#FFE600",
+                WebkitTextStroke: "12px #000000",
+                paintOrder: "stroke fill",
+                textShadow: "8px 8px 0px #000000",
+              }}
+            >
+              {escena.tituloVisual}
+            </span>
+          </div>
+        )}
+
+        {/* Subtítulos en zona segura: franja y≈1400-1600 (los últimos ~250px los tapa la interfaz) */}
         <div
-          className={`w-full flex items-center justify-center pb-20 ${
-            isNarrativeMode ? "h-[320px]" : "h-[360px]"
-          }`}
+          className="absolute left-0 right-0 flex items-center justify-center"
+          style={{ top: 1400, height: 200 }}
         >
           <WordSubtitles
             palabras={escena.palabras ?? []}

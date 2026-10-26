@@ -36,7 +36,7 @@ export const ShortVideo: React.FC<ShortProps> = ({ escenas }) => {
   const { fps, durationInFrames } = useVideoConfig();
 
   // Comprobación segura de BGM en loop
-  const hasBgm = useMemo(() => fileExistsInStatic("sfx/bgm.mp3"), []);
+  const hasBgm = useMemo(() => fileExistsInStatic("bgm/bgm.mp3"), []);
 
   // Progreso general del video del 0% al 100%
   const progressRatio = Math.min(
@@ -53,7 +53,7 @@ export const ShortVideo: React.FC<ShortProps> = ({ escenas }) => {
       }}
     >
       {/* Música de fondo ambiental continua en loop */}
-      {hasBgm && <Audio src={staticFile("sfx/bgm.mp3")} volume={0.07} loop />}
+      {hasBgm && <Audio src={staticFile("bgm/bgm.mp3")} volume={0.07} loop />}
 
       {/* Barra de progreso neo-brutalista superior de 10px */}
       <div

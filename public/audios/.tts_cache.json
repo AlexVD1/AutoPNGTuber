@@ -1,49 +1,1267 @@
 {
   "escena_1": {
-    "sha256": "b9c6ad934981db2ad2c5b0c8eb3eb73f1d6e2f7bf648f49f79a6704c33fad8ba",
+    "sha256": "51761af3ba28ece25895bbbc71413808a2122255b147946c17257cc7f5802bcc",
     "pipelineVersion": "v3_sentence_tailcut",
-    "texto": "En las películas de Hollywood, cuando alguien cae a un volcán se hunde lentamente en la lava como si fuera una piscina. ¡Pero la física real dice que eso es completamente imposible!",
+    "texto": "Bajo el desierto de Chihuahua existe una cueva con cristales de selenita de once metros de largo, pero respirar su aire sin protección especial te ahogaría en cuestión de minutos. ¿Cómo es posible?",
     "voiceConds": "alex.conds.pt",
-    "duracionSegundos": 8.602,
+    "duracionSegundos": 10.81,
     "palabras": [
       {
-        "palabra": "En",
+        "palabra": "Bajo",
+        "inicioMs": 0,
+        "finMs": 300
+      },
+      {
+        "palabra": "el",
+        "inicioMs": 300,
+        "finMs": 460
+      },
+      {
+        "palabra": "desierto",
+        "inicioMs": 460,
+        "finMs": 780
+      },
+      {
+        "palabra": "de",
+        "inicioMs": 780,
+        "finMs": 1000
+      },
+      {
+        "palabra": "Chihuahua",
+        "inicioMs": 1000,
+        "finMs": 1580
+      },
+      {
+        "palabra": "existe",
+        "inicioMs": 1580,
+        "finMs": 1980
+      },
+      {
+        "palabra": "una",
+        "inicioMs": 1980,
+        "finMs": 2300
+      },
+      {
+        "palabra": "cueva",
+        "inicioMs": 2300,
+        "finMs": 2620
+      },
+      {
+        "palabra": "con",
+        "inicioMs": 2620,
+        "finMs": 2820
+      },
+      {
+        "palabra": "cristales",
+        "inicioMs": 2820,
+        "finMs": 3300
+      },
+      {
+        "palabra": "de",
+        "inicioMs": 3300,
+        "finMs": 3480
+      },
+      {
+        "palabra": "selenita",
+        "inicioMs": 3480,
+        "finMs": 4040
+      },
+      {
+        "palabra": "de",
+        "inicioMs": 4040,
+        "finMs": 4180
+      },
+      {
+        "palabra": "once",
+        "inicioMs": 4180,
+        "finMs": 4440
+      },
+      {
+        "palabra": "metros",
+        "inicioMs": 4440,
+        "finMs": 4760
+      },
+      {
+        "palabra": "de",
+        "inicioMs": 4760,
+        "finMs": 4920
+      },
+      {
+        "palabra": "largo",
+        "inicioMs": 4920,
+        "finMs": 5280
+      },
+      {
+        "palabra": "pero",
+        "inicioMs": 5540,
+        "finMs": 5700
+      },
+      {
+        "palabra": "respirar",
+        "inicioMs": 5700,
+        "finMs": 6180
+      },
+      {
+        "palabra": "su",
+        "inicioMs": 6180,
+        "finMs": 6400
+      },
+      {
+        "palabra": "aire",
+        "inicioMs": 6400,
+        "finMs": 6580
+      },
+      {
+        "palabra": "sin",
+        "inicioMs": 6580,
+        "finMs": 6800
+      },
+      {
+        "palabra": "protección",
+        "inicioMs": 6800,
+        "finMs": 7260
+      },
+      {
+        "palabra": "especial",
+        "inicioMs": 7260,
+        "finMs": 7880
+      },
+      {
+        "palabra": "te",
+        "inicioMs": 7880,
+        "finMs": 8220
+      },
+      {
+        "palabra": "ahogaría",
+        "inicioMs": 8220,
+        "finMs": 8520
+      },
+      {
+        "palabra": "en",
+        "inicioMs": 8520,
+        "finMs": 8620
+      },
+      {
+        "palabra": "cuestión",
+        "inicioMs": 8620,
+        "finMs": 8920
+      },
+      {
+        "palabra": "de",
+        "inicioMs": 8920,
+        "finMs": 9080
+      },
+      {
+        "palabra": "minutos",
+        "inicioMs": 9080,
+        "finMs": 9460
+      },
+      {
+        "palabra": "Cómo",
+        "inicioMs": 9620,
+        "finMs": 9780
+      },
+      {
+        "palabra": "es",
+        "inicioMs": 9780,
+        "finMs": 9900
+      },
+      {
+        "palabra": "posible",
+        "inicioMs": 9900,
+        "finMs": 10280
+      }
+    ]
+  },
+  "escena_2": {
+    "sha256": "3098e512b2253d337269d6eb34e22e3b630c8033b1c3b3347547f46f2fc29d22",
+    "pipelineVersion": "v3_sentence_tailcut",
+    "texto": "Descubierta a trescientos metros bajo tierra en la mina de Naica, esta cámara alberga columnas colosales de cincuenta y cinco toneladas. Un bosque subterráneo de fantasía que parece sacado de otro planeta.",
+    "voiceConds": "alex.conds.pt",
+    "duracionSegundos": 10.018,
+    "palabras": [
+      {
+        "palabra": "Descubierta",
+        "inicioMs": 0,
+        "finMs": 620
+      },
+      {
+        "palabra": "a",
+        "inicioMs": 620,
+        "finMs": 1080
+      },
+      {
+        "palabra": "trescientos",
+        "inicioMs": 1080,
+        "finMs": 1480
+      },
+      {
+        "palabra": "metros",
+        "inicioMs": 1480,
+        "finMs": 1760
+      },
+      {
+        "palabra": "bajo",
+        "inicioMs": 1760,
+        "finMs": 2100
+      },
+      {
+        "palabra": "tierra",
+        "inicioMs": 2100,
+        "finMs": 2240
+      },
+      {
+        "palabra": "en",
+        "inicioMs": 2240,
+        "finMs": 2300
+      },
+      {
+        "palabra": "la",
+        "inicioMs": 2300,
+        "finMs": 2480
+      },
+      {
+        "palabra": "mina",
+        "inicioMs": 2480,
+        "finMs": 2640
+      },
+      {
+        "palabra": "de",
+        "inicioMs": 2640,
+        "finMs": 2840
+      },
+      {
+        "palabra": "Naica",
+        "inicioMs": 3060,
+        "finMs": 3240
+      },
+      {
+        "palabra": "esta",
+        "inicioMs": 3240,
+        "finMs": 3500
+      },
+      {
+        "palabra": "cámara",
+        "inicioMs": 3500,
+        "finMs": 3940
+      },
+      {
+        "palabra": "alberga",
+        "inicioMs": 3940,
+        "finMs": 4360
+      },
+      {
+        "palabra": "columnas",
+        "inicioMs": 4360,
+        "finMs": 4500
+      },
+      {
+        "palabra": "colosales",
+        "inicioMs": 4500,
+        "finMs": 4820
+      },
+      {
+        "palabra": "de",
+        "inicioMs": 4820,
+        "finMs": 4920
+      },
+      {
+        "palabra": "cincuenta",
+        "inicioMs": 4920,
+        "finMs": 5520
+      },
+      {
+        "palabra": "y",
+        "inicioMs": 5520,
+        "finMs": 6220
+      },
+      {
+        "palabra": "cinco",
+        "inicioMs": 6440,
+        "finMs": 6580
+      },
+      {
+        "palabra": "toneladas",
+        "inicioMs": 6580,
+        "finMs": 6880
+      },
+      {
+        "palabra": "Un",
+        "inicioMs": 6880,
+        "finMs": 7460
+      },
+      {
+        "palabra": "bosque",
+        "inicioMs": 7460,
+        "finMs": 7580
+      },
+      {
+        "palabra": "subterráneo",
+        "inicioMs": 7580,
+        "finMs": 8120
+      },
+      {
+        "palabra": "de",
+        "inicioMs": 8120,
+        "finMs": 8260
+      },
+      {
+        "palabra": "fantasía",
+        "inicioMs": 8260,
+        "finMs": 8520
+      },
+      {
+        "palabra": "que",
+        "inicioMs": 8520,
+        "finMs": 8960
+      },
+      {
+        "palabra": "parece",
+        "inicioMs": 8960,
+        "finMs": 9060
+      },
+      {
+        "palabra": "sacado",
+        "inicioMs": 9060,
+        "finMs": 9220
+      },
+      {
+        "palabra": "de",
+        "inicioMs": 9220,
+        "finMs": 9480
+      },
+      {
+        "palabra": "otro",
+        "inicioMs": 9480,
+        "finMs": 9624
+      },
+      {
+        "palabra": "planeta",
+        "inicioMs": 9480,
+        "finMs": 9624
+      }
+    ]
+  },
+  "escena_3": {
+    "sha256": "a53055baa85d6573e4bce393b1d3b568911a26692be8d7f06ee602f67296fb5a",
+    "pipelineVersion": "v3_sentence_tailcut",
+    "texto": "Durante medio millón de años, una bolsa de magma a tres kilómetros de profundidad mantuvo un acuífero termal hirviendo a más de cincuenta grados, nutriendo lentamente el crecimiento de este cristal perfecto.",
+    "voiceConds": "alex.conds.pt",
+    "duracionSegundos": 11.194,
+    "palabras": [
+      {
+        "palabra": "Durante",
+        "inicioMs": 0,
+        "finMs": 440
+      },
+      {
+        "palabra": "medio",
+        "inicioMs": 440,
+        "finMs": 780
+      },
+      {
+        "palabra": "millón",
+        "inicioMs": 780,
+        "finMs": 1100
+      },
+      {
+        "palabra": "de",
+        "inicioMs": 1100,
+        "finMs": 1280
+      },
+      {
+        "palabra": "años",
+        "inicioMs": 1280,
+        "finMs": 1540
+      },
+      {
+        "palabra": "una",
+        "inicioMs": 1780,
+        "finMs": 1940
+      },
+      {
+        "palabra": "bolsa",
+        "inicioMs": 1940,
+        "finMs": 2220
+      },
+      {
+        "palabra": "de",
+        "inicioMs": 2220,
+        "finMs": 2380
+      },
+      {
+        "palabra": "magma",
+        "inicioMs": 2380,
+        "finMs": 2740
+      },
+      {
+        "palabra": "a",
+        "inicioMs": 2740,
+        "finMs": 2880
+      },
+      {
+        "palabra": "tres",
+        "inicioMs": 2880,
+        "finMs": 3060
+      },
+      {
+        "palabra": "kilómetros",
+        "inicioMs": 3060,
+        "finMs": 3480
+      },
+      {
+        "palabra": "de",
+        "inicioMs": 3480,
+        "finMs": 3660
+      },
+      {
+        "palabra": "profundidad",
+        "inicioMs": 3660,
+        "finMs": 4240
+      },
+      {
+        "palabra": "mantuvo",
+        "inicioMs": 4420,
+        "finMs": 4660
+      },
+      {
+        "palabra": "un",
+        "inicioMs": 4660,
+        "finMs": 4820
+      },
+      {
+        "palabra": "acuífero",
+        "inicioMs": 4820,
+        "finMs": 5180
+      },
+      {
+        "palabra": "termal",
+        "inicioMs": 5180,
+        "finMs": 5580
+      },
+      {
+        "palabra": "hirviendo",
+        "inicioMs": 5580,
+        "finMs": 6020
+      },
+      {
+        "palabra": "a",
+        "inicioMs": 6020,
+        "finMs": 6120
+      },
+      {
+        "palabra": "más",
+        "inicioMs": 6120,
+        "finMs": 6240
+      },
+      {
+        "palabra": "de",
+        "inicioMs": 6240,
+        "finMs": 6360
+      },
+      {
+        "palabra": "cincuenta",
+        "inicioMs": 6360,
+        "finMs": 6700
+      },
+      {
+        "palabra": "grados",
+        "inicioMs": 6700,
+        "finMs": 7240
+      },
+      {
+        "palabra": "nutriendo",
+        "inicioMs": 7580,
+        "finMs": 8020
+      },
+      {
+        "palabra": "lentamente",
+        "inicioMs": 8020,
+        "finMs": 8520
+      },
+      {
+        "palabra": "el",
+        "inicioMs": 8520,
+        "finMs": 8780
+      },
+      {
+        "palabra": "crecimiento",
+        "inicioMs": 8780,
+        "finMs": 9220
+      },
+      {
+        "palabra": "de",
+        "inicioMs": 9220,
+        "finMs": 9460
+      },
+      {
+        "palabra": "este",
+        "inicioMs": 9460,
+        "finMs": 9640
+      },
+      {
+        "palabra": "cristal",
+        "inicioMs": 9640,
+        "finMs": 10020
+      },
+      {
+        "palabra": "perfecto",
+        "inicioMs": 10020,
+        "finMs": 10700
+      }
+    ]
+  },
+  "escena_4": {
+    "sha256": "dea80633e690630ac96cf204eb3faf349e544967b4054391abfa5a096c72524a",
+    "pipelineVersion": "v3_sentence_tailcut",
+    "texto": "Pero cuando los mineros drenaron el agua subterránea para extraer plomo, la cueva quedó expuesta al aire, convirtiéndose súbitamente en un horno asfixiante a cincuenta y ocho grados y noventa y cinco por ciento de humedad.",
+    "voiceConds": "alex.conds.pt",
+    "duracionSegundos": 10.306,
+    "palabras": [
+      {
+        "palabra": "Pero",
         "inicioMs": 0,
         "finMs": 200
       },
       {
-        "palabra": "las",
+        "palabra": "cuando",
         "inicioMs": 200,
-        "finMs": 300
+        "finMs": 400
       },
       {
-        "palabra": "películas",
-        "inicioMs": 300,
-        "finMs": 580
+        "palabra": "los",
+        "inicioMs": 400,
+        "finMs": 600
+      },
+      {
+        "palabra": "mineros",
+        "inicioMs": 600,
+        "finMs": 900
+      },
+      {
+        "palabra": "drenaron",
+        "inicioMs": 900,
+        "finMs": 1340
+      },
+      {
+        "palabra": "el",
+        "inicioMs": 1340,
+        "finMs": 1500
+      },
+      {
+        "palabra": "agua",
+        "inicioMs": 1500,
+        "finMs": 1660
+      },
+      {
+        "palabra": "subterránea",
+        "inicioMs": 1660,
+        "finMs": 2240
+      },
+      {
+        "palabra": "para",
+        "inicioMs": 2240,
+        "finMs": 2440
+      },
+      {
+        "palabra": "extraer",
+        "inicioMs": 2440,
+        "finMs": 2800
+      },
+      {
+        "palabra": "plomo",
+        "inicioMs": 2800,
+        "finMs": 3180
+      },
+      {
+        "palabra": "la",
+        "inicioMs": 3260,
+        "finMs": 3340
+      },
+      {
+        "palabra": "cueva",
+        "inicioMs": 3340,
+        "finMs": 3580
+      },
+      {
+        "palabra": "quedó",
+        "inicioMs": 3580,
+        "finMs": 3820
+      },
+      {
+        "palabra": "expuesta",
+        "inicioMs": 3820,
+        "finMs": 4260
+      },
+      {
+        "palabra": "al",
+        "inicioMs": 4260,
+        "finMs": 4420
+      },
+      {
+        "palabra": "aire",
+        "inicioMs": 4420,
+        "finMs": 4620
+      },
+      {
+        "palabra": "convirtiéndose",
+        "inicioMs": 4700,
+        "finMs": 5200
+      },
+      {
+        "palabra": "súbitamente",
+        "inicioMs": 5200,
+        "finMs": 5800
+      },
+      {
+        "palabra": "en",
+        "inicioMs": 5800,
+        "finMs": 6060
+      },
+      {
+        "palabra": "un",
+        "inicioMs": 6060,
+        "finMs": 6140
+      },
+      {
+        "palabra": "horno",
+        "inicioMs": 6140,
+        "finMs": 6420
+      },
+      {
+        "palabra": "asfixiante",
+        "inicioMs": 6420,
+        "finMs": 7000
+      },
+      {
+        "palabra": "a",
+        "inicioMs": 7000,
+        "finMs": 7120
+      },
+      {
+        "palabra": "cincuenta",
+        "inicioMs": 7120,
+        "finMs": 8240
+      },
+      {
+        "palabra": "y",
+        "inicioMs": 8240,
+        "finMs": 8280
+      },
+      {
+        "palabra": "ocho",
+        "inicioMs": 8280,
+        "finMs": 8800
+      },
+      {
+        "palabra": "grados",
+        "inicioMs": 8800,
+        "finMs": 9320
+      },
+      {
+        "palabra": "y",
+        "inicioMs": 9320,
+        "finMs": 9520
+      },
+      {
+        "palabra": "noventa",
+        "inicioMs": 9520,
+        "finMs": 9860
+      },
+      {
+        "palabra": "y",
+        "inicioMs": 9860,
+        "finMs": 9940
+      },
+      {
+        "palabra": "cinco",
+        "inicioMs": 9860,
+        "finMs": 9940
+      },
+      {
+        "palabra": "por",
+        "inicioMs": 9860,
+        "finMs": 9940
+      },
+      {
+        "palabra": "ciento",
+        "inicioMs": 9860,
+        "finMs": 9940
       },
       {
         "palabra": "de",
-        "inicioMs": 580,
-        "finMs": 840
+        "inicioMs": 9860,
+        "finMs": 9940
       },
       {
-        "palabra": "Hollywood",
-        "inicioMs": 840,
-        "finMs": 1220
+        "palabra": "humedad",
+        "inicioMs": 9860,
+        "finMs": 9940
+      }
+    ]
+  },
+  "escena_5": {
+    "sha256": "d3de410f8a5a9ac08a229984ec50fe4e84bbcaa5ec5ccd49d93f454b5cdc92a9",
+    "pipelineVersion": "v3_sentence_tailcut",
+    "texto": "Aquí la física es letal. Como una lata fría de refresco que se empapa de agua en un día caliente, tus pulmones a treinta y siete grados condensan el vapor ambiental... ¡llenándote de agua por dentro!",
+    "voiceConds": "alex.conds.pt",
+    "duracionSegundos": 11.002,
+    "palabras": [
+      {
+        "palabra": "Aquí",
+        "inicioMs": 0,
+        "finMs": 300
       },
       {
-        "palabra": "cuando",
-        "inicioMs": 1320,
-        "finMs": 1480
+        "palabra": "la",
+        "inicioMs": 300,
+        "finMs": 440
       },
       {
-        "palabra": "alguien",
-        "inicioMs": 1480,
-        "finMs": 1860
+        "palabra": "física",
+        "inicioMs": 440,
+        "finMs": 740
       },
       {
-        "palabra": "cae",
-        "inicioMs": 1860,
+        "palabra": "es",
+        "inicioMs": 740,
+        "finMs": 1200
+      },
+      {
+        "palabra": "letal",
+        "inicioMs": 1200,
+        "finMs": 1780
+      },
+      {
+        "palabra": "Como",
+        "inicioMs": 1940,
+        "finMs": 2280
+      },
+      {
+        "palabra": "una",
+        "inicioMs": 2280,
+        "finMs": 2500
+      },
+      {
+        "palabra": "lata",
+        "inicioMs": 2500,
+        "finMs": 2680
+      },
+      {
+        "palabra": "fría",
+        "inicioMs": 2680,
+        "finMs": 3060
+      },
+      {
+        "palabra": "de",
+        "inicioMs": 3060,
+        "finMs": 3180
+      },
+      {
+        "palabra": "refresco",
+        "inicioMs": 3180,
+        "finMs": 3700
+      },
+      {
+        "palabra": "que",
+        "inicioMs": 3700,
+        "finMs": 3840
+      },
+      {
+        "palabra": "se",
+        "inicioMs": 3840,
+        "finMs": 3960
+      },
+      {
+        "palabra": "empapa",
+        "inicioMs": 3960,
+        "finMs": 4280
+      },
+      {
+        "palabra": "de",
+        "inicioMs": 4280,
+        "finMs": 4460
+      },
+      {
+        "palabra": "agua",
+        "inicioMs": 4460,
+        "finMs": 4660
+      },
+      {
+        "palabra": "en",
+        "inicioMs": 4660,
+        "finMs": 4780
+      },
+      {
+        "palabra": "un",
+        "inicioMs": 4780,
+        "finMs": 4860
+      },
+      {
+        "palabra": "día",
+        "inicioMs": 4860,
+        "finMs": 5020
+      },
+      {
+        "palabra": "caliente",
+        "inicioMs": 5020,
+        "finMs": 5560
+      },
+      {
+        "palabra": "tus",
+        "inicioMs": 5760,
+        "finMs": 5840
+      },
+      {
+        "palabra": "pulmones",
+        "inicioMs": 5840,
+        "finMs": 6460
+      },
+      {
+        "palabra": "a",
+        "inicioMs": 6460,
+        "finMs": 6960
+      },
+      {
+        "palabra": "treinta",
+        "inicioMs": 6960,
+        "finMs": 7560
+      },
+      {
+        "palabra": "y",
+        "inicioMs": 7560,
+        "finMs": 8040
+      },
+      {
+        "palabra": "siete",
+        "inicioMs": 8040,
+        "finMs": 8200
+      },
+      {
+        "palabra": "grados",
+        "inicioMs": 8200,
+        "finMs": 8380
+      },
+      {
+        "palabra": "condensan",
+        "inicioMs": 8380,
+        "finMs": 9040
+      },
+      {
+        "palabra": "el",
+        "inicioMs": 9160,
+        "finMs": 9620
+      },
+      {
+        "palabra": "vapor",
+        "inicioMs": 9620,
+        "finMs": 9760
+      },
+      {
+        "palabra": "ambiental",
+        "inicioMs": 9760,
+        "finMs": 9920
+      },
+      {
+        "palabra": "llenándote",
+        "inicioMs": 9920,
+        "finMs": 10140
+      },
+      {
+        "palabra": "de",
+        "inicioMs": 10140,
+        "finMs": 10440
+      },
+      {
+        "palabra": "agua",
+        "inicioMs": 10440,
+        "finMs": 10544
+      },
+      {
+        "palabra": "por",
+        "inicioMs": 10440,
+        "finMs": 10544
+      },
+      {
+        "palabra": "dentro",
+        "inicioMs": 10440,
+        "finMs": 10544
+      }
+    ]
+  },
+  "escena_6": {
+    "sha256": "ba21211f0e08045a08f194af57f57ff7b9ce42b561df861406a4ead2de380933",
+    "pipelineVersion": "v3_sentence_tailcut",
+    "texto": "Para sobrevivir más de diez minutos, los científicos diseñaron trajes espaciales Tolomea con mochilas de veinte kilos de hielo, inyectando aire fresco a quince grados directo al respirador para evitar el colapso pulmonar.",
+    "voiceConds": "alex.conds.pt",
+    "duracionSegundos": 10.642,
+    "palabras": [
+      {
+        "palabra": "Para",
+        "inicioMs": 0,
+        "finMs": 220
+      },
+      {
+        "palabra": "sobrevivir",
+        "inicioMs": 220,
+        "finMs": 760
+      },
+      {
+        "palabra": "más",
+        "inicioMs": 760,
+        "finMs": 860
+      },
+      {
+        "palabra": "de",
+        "inicioMs": 860,
+        "finMs": 1000
+      },
+      {
+        "palabra": "diez",
+        "inicioMs": 1000,
+        "finMs": 1160
+      },
+      {
+        "palabra": "minutos",
+        "inicioMs": 1160,
+        "finMs": 1440
+      },
+      {
+        "palabra": "los",
+        "inicioMs": 1580,
+        "finMs": 1660
+      },
+      {
+        "palabra": "científicos",
+        "inicioMs": 1660,
+        "finMs": 2180
+      },
+      {
+        "palabra": "diseñaron",
+        "inicioMs": 2180,
+        "finMs": 2580
+      },
+      {
+        "palabra": "trajes",
+        "inicioMs": 2580,
+        "finMs": 2920
+      },
+      {
+        "palabra": "espaciales",
+        "inicioMs": 2920,
+        "finMs": 3540
+      },
+      {
+        "palabra": "Tolomea",
+        "inicioMs": 3540,
+        "finMs": 3940
+      },
+      {
+        "palabra": "con",
+        "inicioMs": 3940,
+        "finMs": 4080
+      },
+      {
+        "palabra": "mochilas",
+        "inicioMs": 4080,
+        "finMs": 4480
+      },
+      {
+        "palabra": "de",
+        "inicioMs": 4480,
+        "finMs": 4560
+      },
+      {
+        "palabra": "veinte",
+        "inicioMs": 4560,
+        "finMs": 4780
+      },
+      {
+        "palabra": "kilos",
+        "inicioMs": 4780,
+        "finMs": 5020
+      },
+      {
+        "palabra": "de",
+        "inicioMs": 5020,
+        "finMs": 5220
+      },
+      {
+        "palabra": "hielo",
+        "inicioMs": 5220,
+        "finMs": 5520
+      },
+      {
+        "palabra": "inyectando",
+        "inicioMs": 5640,
+        "finMs": 6180
+      },
+      {
+        "palabra": "aire",
+        "inicioMs": 6180,
+        "finMs": 6380
+      },
+      {
+        "palabra": "fresco",
+        "inicioMs": 6380,
+        "finMs": 6860
+      },
+      {
+        "palabra": "a",
+        "inicioMs": 6860,
+        "finMs": 7000
+      },
+      {
+        "palabra": "quince",
+        "inicioMs": 7000,
+        "finMs": 7180
+      },
+      {
+        "palabra": "grados",
+        "inicioMs": 7180,
+        "finMs": 7660
+      },
+      {
+        "palabra": "directo",
+        "inicioMs": 7660,
+        "finMs": 8060
+      },
+      {
+        "palabra": "al",
+        "inicioMs": 8060,
+        "finMs": 8120
+      },
+      {
+        "palabra": "respirador",
+        "inicioMs": 8120,
+        "finMs": 8620
+      },
+      {
+        "palabra": "para",
+        "inicioMs": 8620,
+        "finMs": 8860
+      },
+      {
+        "palabra": "evitar",
+        "inicioMs": 8860,
+        "finMs": 9100
+      },
+      {
+        "palabra": "el",
+        "inicioMs": 9100,
+        "finMs": 9260
+      },
+      {
+        "palabra": "colapso",
+        "inicioMs": 9260,
+        "finMs": 9640
+      },
+      {
+        "palabra": "pulmonar",
+        "inicioMs": 9640,
+        "finMs": 10180
+      }
+    ]
+  },
+  "escena_7": {
+    "sha256": "350ce5c15ce971c564a775864612a8f8f1ff11f1d71201c61731619eaf7997e3",
+    "pipelineVersion": "v3_sentence_tailcut",
+    "texto": "Hoy Naica volvió a inundarse de forma natural, protegiendo para siempre sus megacristales en la oscuridad del abismo. Una maravilla geológica donde la belleza infinita convive con una trampa mortal absoluta.",
+    "voiceConds": "alex.conds.pt",
+    "duracionSegundos": 10.546,
+    "palabras": [
+      {
+        "palabra": "Hoy",
+        "inicioMs": 0,
+        "finMs": 240
+      },
+      {
+        "palabra": "Naica",
+        "inicioMs": 240,
+        "finMs": 520
+      },
+      {
+        "palabra": "volvió",
+        "inicioMs": 520,
+        "finMs": 960
+      },
+      {
+        "palabra": "a",
+        "inicioMs": 960,
+        "finMs": 1040
+      },
+      {
+        "palabra": "inundarse",
+        "inicioMs": 1040,
+        "finMs": 1440
+      },
+      {
+        "palabra": "de",
+        "inicioMs": 1440,
+        "finMs": 1600
+      },
+      {
+        "palabra": "forma",
+        "inicioMs": 1600,
+        "finMs": 1800
+      },
+      {
+        "palabra": "natural",
+        "inicioMs": 1800,
+        "finMs": 2200
+      },
+      {
+        "palabra": "protegiendo",
+        "inicioMs": 2420,
+        "finMs": 2860
+      },
+      {
+        "palabra": "para",
+        "inicioMs": 2860,
+        "finMs": 3040
+      },
+      {
+        "palabra": "siempre",
+        "inicioMs": 3040,
+        "finMs": 3380
+      },
+      {
+        "palabra": "sus",
+        "inicioMs": 3380,
+        "finMs": 3560
+      },
+      {
+        "palabra": "megacristales",
+        "inicioMs": 3560,
+        "finMs": 4240
+      },
+      {
+        "palabra": "en",
+        "inicioMs": 4240,
+        "finMs": 4460
+      },
+      {
+        "palabra": "la",
+        "inicioMs": 4460,
+        "finMs": 4520
+      },
+      {
+        "palabra": "oscuridad",
+        "inicioMs": 4520,
+        "finMs": 4860
+      },
+      {
+        "palabra": "del",
+        "inicioMs": 4860,
+        "finMs": 5000
+      },
+      {
+        "palabra": "abismo",
+        "inicioMs": 5000,
+        "finMs": 5400
+      },
+      {
+        "palabra": "Una",
+        "inicioMs": 5720,
+        "finMs": 5880
+      },
+      {
+        "palabra": "maravilla",
+        "inicioMs": 5880,
+        "finMs": 6300
+      },
+      {
+        "palabra": "geológica",
+        "inicioMs": 6300,
+        "finMs": 6880
+      },
+      {
+        "palabra": "donde",
+        "inicioMs": 6880,
+        "finMs": 7080
+      },
+      {
+        "palabra": "la",
+        "inicioMs": 7080,
+        "finMs": 7240
+      },
+      {
+        "palabra": "belleza",
+        "inicioMs": 7240,
+        "finMs": 7580
+      },
+      {
+        "palabra": "infinita",
+        "inicioMs": 7580,
+        "finMs": 8060
+      },
+      {
+        "palabra": "convive",
+        "inicioMs": 8060,
+        "finMs": 8460
+      },
+      {
+        "palabra": "con",
+        "inicioMs": 8460,
+        "finMs": 8620
+      },
+      {
+        "palabra": "una",
+        "inicioMs": 8620,
+        "finMs": 8800
+      },
+      {
+        "palabra": "trampa",
+        "inicioMs": 8800,
+        "finMs": 9080
+      },
+      {
+        "palabra": "mortal",
+        "inicioMs": 9080,
+        "finMs": 9380
+      },
+      {
+        "palabra": "absoluta",
+        "inicioMs": 9380,
+        "finMs": 10060
+      }
+    ]
+  },
+  "escena_8": {
+    "sha256": "badbd042785323f45c549bbed3e7a77b0818108fb44594039cbb2be8ea10c4ae",
+    "pipelineVersion": "v3_sentence_tailcut",
+    "texto": "Actualmente nuestro planeta se mantiene firme a veintitrés punto cinco grados de inclinación, lo que permite que existan estaciones climáticas predecibles.",
+    "voiceConds": "alex.conds.pt",
+    "duracionSegundos": 7.81,
+    "palabras": [
+      {
+        "palabra": "Actualmente",
+        "inicioMs": 0,
+        "finMs": 640
+      },
+      {
+        "palabra": "nuestro",
+        "inicioMs": 660,
+        "finMs": 940
+      },
+      {
+        "palabra": "planeta",
+        "inicioMs": 940,
+        "finMs": 1200
+      },
+      {
+        "palabra": "se",
+        "inicioMs": 1200,
+        "finMs": 1460
+      },
+      {
+        "palabra": "mantiene",
+        "inicioMs": 1460,
+        "finMs": 1760
+      },
+      {
+        "palabra": "firme",
+        "inicioMs": 1760,
         "finMs": 2100
       },
       {
@@ -52,1569 +1270,436 @@
         "finMs": 2160
       },
       {
-        "palabra": "un",
+        "palabra": "veintitrés",
         "inicioMs": 2160,
-        "finMs": 2240
+        "finMs": 2500
       },
       {
-        "palabra": "volcán",
-        "inicioMs": 2240,
-        "finMs": 2620
-      },
-      {
-        "palabra": "se",
-        "inicioMs": 2620,
-        "finMs": 2800
-      },
-      {
-        "palabra": "hunde",
-        "inicioMs": 2800,
-        "finMs": 3040
-      },
-      {
-        "palabra": "lentamente",
-        "inicioMs": 3040,
-        "finMs": 3480
-      },
-      {
-        "palabra": "en",
-        "inicioMs": 3480,
-        "finMs": 3720
-      },
-      {
-        "palabra": "la",
-        "inicioMs": 3720,
-        "finMs": 3780
-      },
-      {
-        "palabra": "lava",
-        "inicioMs": 3780,
-        "finMs": 4000
-      },
-      {
-        "palabra": "como",
-        "inicioMs": 4000,
-        "finMs": 4240
-      },
-      {
-        "palabra": "si",
-        "inicioMs": 4240,
-        "finMs": 4380
-      },
-      {
-        "palabra": "fuera",
-        "inicioMs": 4380,
-        "finMs": 4600
-      },
-      {
-        "palabra": "una",
-        "inicioMs": 4600,
-        "finMs": 4740
-      },
-      {
-        "palabra": "piscina",
-        "inicioMs": 4740,
-        "finMs": 5180
-      },
-      {
-        "palabra": "Pero",
-        "inicioMs": 5360,
-        "finMs": 5480
-      },
-      {
-        "palabra": "la",
-        "inicioMs": 5480,
-        "finMs": 5600
-      },
-      {
-        "palabra": "física",
-        "inicioMs": 5600,
-        "finMs": 5900
-      },
-      {
-        "palabra": "real",
-        "inicioMs": 5900,
-        "finMs": 6140
-      },
-      {
-        "palabra": "dice",
-        "inicioMs": 6140,
-        "finMs": 6360
-      },
-      {
-        "palabra": "que",
-        "inicioMs": 6360,
-        "finMs": 6600
-      },
-      {
-        "palabra": "eso",
-        "inicioMs": 6600,
-        "finMs": 6780
-      },
-      {
-        "palabra": "es",
-        "inicioMs": 6780,
-        "finMs": 6920
-      },
-      {
-        "palabra": "completamente",
-        "inicioMs": 6920,
-        "finMs": 7380
-      },
-      {
-        "palabra": "imposible",
-        "inicioMs": 7380,
-        "finMs": 8120
-      }
-    ]
-  },
-  "escena_2": {
-    "sha256": "4f635f3b82d1e84c14426e7991d3d0415fa36201054d0e842d85f7ab9c60bb4c",
-    "pipelineVersion": "v3_sentence_tailcut",
-    "texto": "Para empezar, la lava no es un líquido ligero como el agua: es roca basáltica pesada fundida a más de mil doscientos grados centígrados.",
-    "voiceConds": "alex.conds.pt",
-    "duracionSegundos": 8.218,
-    "palabras": [
-      {
-        "palabra": "Para",
-        "inicioMs": 0,
-        "finMs": 220
-      },
-      {
-        "palabra": "empezar",
-        "inicioMs": 220,
-        "finMs": 580
-      },
-      {
-        "palabra": "la",
-        "inicioMs": 820,
-        "finMs": 920
-      },
-      {
-        "palabra": "lava",
-        "inicioMs": 920,
-        "finMs": 1120
-      },
-      {
-        "palabra": "no",
-        "inicioMs": 1120,
-        "finMs": 1340
-      },
-      {
-        "palabra": "es",
-        "inicioMs": 1340,
-        "finMs": 1500
-      },
-      {
-        "palabra": "un",
-        "inicioMs": 1500,
-        "finMs": 1600
-      },
-      {
-        "palabra": "líquido",
-        "inicioMs": 1600,
-        "finMs": 1900
-      },
-      {
-        "palabra": "ligero",
-        "inicioMs": 1900,
-        "finMs": 2260
-      },
-      {
-        "palabra": "como",
-        "inicioMs": 2260,
-        "finMs": 2460
-      },
-      {
-        "palabra": "el",
-        "inicioMs": 2460,
-        "finMs": 2580
-      },
-      {
-        "palabra": "agua",
-        "inicioMs": 2580,
-        "finMs": 2840
-      },
-      {
-        "palabra": "es",
-        "inicioMs": 3080,
+        "palabra": "punto",
+        "inicioMs": 2500,
         "finMs": 3260
       },
       {
-        "palabra": "roca",
+        "palabra": "cinco",
         "inicioMs": 3260,
-        "finMs": 3740
-      },
-      {
-        "palabra": "basáltica",
-        "inicioMs": 3740,
-        "finMs": 4360
-      },
-      {
-        "palabra": "pesada",
-        "inicioMs": 4360,
-        "finMs": 4880
-      },
-      {
-        "palabra": "fundida",
-        "inicioMs": 5020,
-        "finMs": 5420
-      },
-      {
-        "palabra": "a",
-        "inicioMs": 5420,
-        "finMs": 5560
-      },
-      {
-        "palabra": "más",
-        "inicioMs": 5560,
-        "finMs": 5680
-      },
-      {
-        "palabra": "de",
-        "inicioMs": 5680,
-        "finMs": 5820
-      },
-      {
-        "palabra": "mil",
-        "inicioMs": 5820,
-        "finMs": 5980
-      },
-      {
-        "palabra": "doscientos",
-        "inicioMs": 5980,
-        "finMs": 6480
-      },
-      {
-        "palabra": "grados",
-        "inicioMs": 6480,
-        "finMs": 7080
-      },
-      {
-        "palabra": "centígrados",
-        "inicioMs": 7080,
-        "finMs": 7760
-      }
-    ]
-  },
-  "escena_3": {
-    "sha256": "74d18e5200b2031c70ba3b995207295e4b138f0bb6be182e88b37880034e4c28",
-    "pipelineVersion": "v3_sentence_tailcut",
-    "texto": "Aquí entra en juego la física de la densidad: el cuerpo humano tiene una densidad de un gramo por centímetro cúbico, mientras que la roca fundida supera los tres gramos por centímetro cúbico.",
-    "voiceConds": "alex.conds.pt",
-    "duracionSegundos": 9.154,
-    "palabras": [
-      {
-        "palabra": "Aquí",
-        "inicioMs": 0,
-        "finMs": 320
-      },
-      {
-        "palabra": "entra",
-        "inicioMs": 320,
-        "finMs": 560
-      },
-      {
-        "palabra": "en",
-        "inicioMs": 560,
-        "finMs": 640
-      },
-      {
-        "palabra": "juego",
-        "inicioMs": 640,
-        "finMs": 820
-      },
-      {
-        "palabra": "la",
-        "inicioMs": 820,
-        "finMs": 1020
-      },
-      {
-        "palabra": "física",
-        "inicioMs": 1020,
-        "finMs": 1260
-      },
-      {
-        "palabra": "de",
-        "inicioMs": 1260,
-        "finMs": 1500
-      },
-      {
-        "palabra": "la",
-        "inicioMs": 1500,
-        "finMs": 1580
-      },
-      {
-        "palabra": "densidad",
-        "inicioMs": 1580,
-        "finMs": 2000
-      },
-      {
-        "palabra": "el",
-        "inicioMs": 2140,
-        "finMs": 2220
-      },
-      {
-        "palabra": "cuerpo",
-        "inicioMs": 2220,
-        "finMs": 2380
-      },
-      {
-        "palabra": "humano",
-        "inicioMs": 2380,
-        "finMs": 2740
-      },
-      {
-        "palabra": "tiene",
-        "inicioMs": 2740,
-        "finMs": 2960
-      },
-      {
-        "palabra": "una",
-        "inicioMs": 2960,
-        "finMs": 3140
-      },
-      {
-        "palabra": "densidad",
-        "inicioMs": 3140,
-        "finMs": 3540
-      },
-      {
-        "palabra": "de",
-        "inicioMs": 3540,
-        "finMs": 3640
-      },
-      {
-        "palabra": "un",
-        "inicioMs": 3640,
         "finMs": 3720
       },
       {
-        "palabra": "gramo",
+        "palabra": "grados",
         "inicioMs": 3720,
-        "finMs": 3960
-      },
-      {
-        "palabra": "por",
-        "inicioMs": 3960,
-        "finMs": 4140
-      },
-      {
-        "palabra": "centímetro",
-        "inicioMs": 4140,
-        "finMs": 4600
-      },
-      {
-        "palabra": "cúbico",
-        "inicioMs": 4600,
-        "finMs": 5140
-      },
-      {
-        "palabra": "mientras",
-        "inicioMs": 5360,
-        "finMs": 5540
-      },
-      {
-        "palabra": "que",
-        "inicioMs": 5540,
-        "finMs": 5740
-      },
-      {
-        "palabra": "la",
-        "inicioMs": 5740,
-        "finMs": 5840
-      },
-      {
-        "palabra": "roca",
-        "inicioMs": 5840,
-        "finMs": 6100
-      },
-      {
-        "palabra": "fundida",
-        "inicioMs": 6100,
-        "finMs": 6500
-      },
-      {
-        "palabra": "supera",
-        "inicioMs": 6500,
-        "finMs": 6880
-      },
-      {
-        "palabra": "los",
-        "inicioMs": 6880,
-        "finMs": 6960
-      },
-      {
-        "palabra": "tres",
-        "inicioMs": 6960,
-        "finMs": 7240
-      },
-      {
-        "palabra": "gramos",
-        "inicioMs": 7240,
-        "finMs": 7500
-      },
-      {
-        "palabra": "por",
-        "inicioMs": 7500,
-        "finMs": 7640
-      },
-      {
-        "palabra": "centímetro",
-        "inicioMs": 7640,
-        "finMs": 8160
-      },
-      {
-        "palabra": "cúbico",
-        "inicioMs": 8160,
-        "finMs": 8680
-      }
-    ]
-  },
-  "escena_4": {
-    "sha256": "bbc3c67279c4ac432958709dba4142058eb5431783f06b2cc60332a1b7af64b1",
-    "pipelineVersion": "v3_sentence_tailcut",
-    "texto": "¡Eres tres veces más ligero que la lava! Si cayeras desde lo alto, no te hundirías ni un solo centímetro: chocarías contra una superficie dura y viscosa con la fuerza de un golpe contra concreto.",
-    "voiceConds": "alex.conds.pt",
-    "duracionSegundos": 10.066,
-    "palabras": [
-      {
-        "palabra": "Eres",
-        "inicioMs": 0,
-        "finMs": 280
-      },
-      {
-        "palabra": "tres",
-        "inicioMs": 280,
-        "finMs": 620
-      },
-      {
-        "palabra": "veces",
-        "inicioMs": 620,
-        "finMs": 860
-      },
-      {
-        "palabra": "más",
-        "inicioMs": 860,
-        "finMs": 1140
-      },
-      {
-        "palabra": "ligero",
-        "inicioMs": 1140,
-        "finMs": 1540
-      },
-      {
-        "palabra": "que",
-        "inicioMs": 1540,
-        "finMs": 1680
-      },
-      {
-        "palabra": "la",
-        "inicioMs": 1680,
-        "finMs": 1800
-      },
-      {
-        "palabra": "lava",
-        "inicioMs": 1800,
-        "finMs": 2080
-      },
-      {
-        "palabra": "Si",
-        "inicioMs": 2300,
-        "finMs": 2380
-      },
-      {
-        "palabra": "cayeras",
-        "inicioMs": 2380,
-        "finMs": 2740
-      },
-      {
-        "palabra": "desde",
-        "inicioMs": 2740,
-        "finMs": 3000
-      },
-      {
-        "palabra": "lo",
-        "inicioMs": 3000,
-        "finMs": 3200
-      },
-      {
-        "palabra": "alto",
-        "inicioMs": 3200,
-        "finMs": 3540
-      },
-      {
-        "palabra": "no",
-        "inicioMs": 3700,
-        "finMs": 3800
-      },
-      {
-        "palabra": "te",
-        "inicioMs": 3800,
-        "finMs": 3940
-      },
-      {
-        "palabra": "hundirías",
-        "inicioMs": 3940,
-        "finMs": 4360
-      },
-      {
-        "palabra": "ni",
-        "inicioMs": 4360,
-        "finMs": 4640
-      },
-      {
-        "palabra": "un",
-        "inicioMs": 4640,
-        "finMs": 4800
-      },
-      {
-        "palabra": "solo",
-        "inicioMs": 4800,
-        "finMs": 4960
-      },
-      {
-        "palabra": "centímetro",
-        "inicioMs": 4960,
-        "finMs": 5600
-      },
-      {
-        "palabra": "chocarías",
-        "inicioMs": 5720,
-        "finMs": 6160
-      },
-      {
-        "palabra": "contra",
-        "inicioMs": 6160,
-        "finMs": 6440
-      },
-      {
-        "palabra": "una",
-        "inicioMs": 6440,
-        "finMs": 6580
-      },
-      {
-        "palabra": "superficie",
-        "inicioMs": 6580,
-        "finMs": 7180
-      },
-      {
-        "palabra": "dura",
-        "inicioMs": 7180,
-        "finMs": 7380
-      },
-      {
-        "palabra": "y",
-        "inicioMs": 7380,
-        "finMs": 7900
-      },
-      {
-        "palabra": "viscosa",
-        "inicioMs": 7900,
-        "finMs": 8040
-      },
-      {
-        "palabra": "con",
-        "inicioMs": 8040,
-        "finMs": 8160
-      },
-      {
-        "palabra": "la",
-        "inicioMs": 8160,
-        "finMs": 8400
-      },
-      {
-        "palabra": "fuerza",
-        "inicioMs": 8400,
-        "finMs": 8560
-      },
-      {
-        "palabra": "de",
-        "inicioMs": 8560,
-        "finMs": 8680
-      },
-      {
-        "palabra": "un",
-        "inicioMs": 8680,
-        "finMs": 8900
-      },
-      {
-        "palabra": "golpe",
-        "inicioMs": 8900,
-        "finMs": 9100
-      },
-      {
-        "palabra": "contra",
-        "inicioMs": 9100,
-        "finMs": 9240
-      },
-      {
-        "palabra": "concreto",
-        "inicioMs": 9240,
-        "finMs": 9600
-      }
-    ]
-  },
-  "escena_5": {
-    "sha256": "5af55c8487c469d6aedced78630f79c267d0b0e79deab2763eb4046b8e028c9e",
-    "pipelineVersion": "v3_sentence_tailcut",
-    "texto": "Inmediatamente después del choque ocurre un fenómeno termodinámico fascinante llamado Efecto Leidenfrost.",
-    "voiceConds": "alex.conds.pt",
-    "duracionSegundos": 6.01,
-    "palabras": [
-      {
-        "palabra": "Inmediatamente",
-        "inicioMs": 0,
-        "finMs": 660
-      },
-      {
-        "palabra": "después",
-        "inicioMs": 660,
-        "finMs": 1040
-      },
-      {
-        "palabra": "del",
-        "inicioMs": 1040,
-        "finMs": 1240
-      },
-      {
-        "palabra": "choque",
-        "inicioMs": 1240,
-        "finMs": 1600
-      },
-      {
-        "palabra": "ocurre",
-        "inicioMs": 1600,
-        "finMs": 2080
-      },
-      {
-        "palabra": "un",
-        "inicioMs": 2080,
-        "finMs": 2180
-      },
-      {
-        "palabra": "fenómeno",
-        "inicioMs": 2180,
-        "finMs": 2580
-      },
-      {
-        "palabra": "termodinámico",
-        "inicioMs": 2580,
-        "finMs": 3280
-      },
-      {
-        "palabra": "fascinante",
-        "inicioMs": 3280,
         "finMs": 3840
       },
       {
-        "palabra": "llamado",
+        "palabra": "de",
         "inicioMs": 3840,
-        "finMs": 4180
+        "finMs": 4420
       },
       {
-        "palabra": "Efecto",
-        "inicioMs": 4180,
-        "finMs": 4840
+        "palabra": "inclinación",
+        "inicioMs": 4620,
+        "finMs": 4780
       },
       {
-        "palabra": "Leidenfrost",
-        "inicioMs": 4840,
-        "finMs": 5500
-      }
-    ]
-  },
-  "escena_6": {
-    "sha256": "f61fa763c0a2807fdd2a0630065cae40339ef3f7a8a8b57382eeb53540cc3708",
-    "pipelineVersion": "v3_sentence_tailcut",
-    "texto": "El agua y la humedad de tu cuerpo entrarían en ebullición instantánea, creando una capa de vapor hirviente que te mantendría flotando suspendido sobre la roca líquida durante unos segundos.",
-    "voiceConds": "alex.conds.pt",
-    "duracionSegundos": 9.418,
-    "palabras": [
-      {
-        "palabra": "El",
-        "inicioMs": 0,
-        "finMs": 240
-      },
-      {
-        "palabra": "agua",
-        "inicioMs": 240,
-        "finMs": 440
-      },
-      {
-        "palabra": "y",
-        "inicioMs": 440,
-        "finMs": 540
-      },
-      {
-        "palabra": "la",
-        "inicioMs": 540,
-        "finMs": 600
-      },
-      {
-        "palabra": "humedad",
-        "inicioMs": 600,
-        "finMs": 960
-      },
-      {
-        "palabra": "de",
-        "inicioMs": 960,
-        "finMs": 1060
-      },
-      {
-        "palabra": "tu",
-        "inicioMs": 1060,
-        "finMs": 1180
-      },
-      {
-        "palabra": "cuerpo",
-        "inicioMs": 1180,
-        "finMs": 1560
-      },
-      {
-        "palabra": "entrarían",
-        "inicioMs": 1560,
-        "finMs": 2140
-      },
-      {
-        "palabra": "en",
-        "inicioMs": 2140,
-        "finMs": 2320
-      },
-      {
-        "palabra": "ebullición",
-        "inicioMs": 2320,
-        "finMs": 2760
-      },
-      {
-        "palabra": "instantánea",
-        "inicioMs": 2760,
-        "finMs": 3480
-      },
-      {
-        "palabra": "creando",
-        "inicioMs": 3760,
-        "finMs": 4100
-      },
-      {
-        "palabra": "una",
-        "inicioMs": 4100,
-        "finMs": 4280
-      },
-      {
-        "palabra": "capa",
-        "inicioMs": 4280,
-        "finMs": 4600
-      },
-      {
-        "palabra": "de",
-        "inicioMs": 4600,
-        "finMs": 4660
-      },
-      {
-        "palabra": "vapor",
-        "inicioMs": 4660,
-        "finMs": 4880
-      },
-      {
-        "palabra": "hirviente",
-        "inicioMs": 4880,
-        "finMs": 5340
+        "palabra": "lo",
+        "inicioMs": 4780,
+        "finMs": 4900
       },
       {
         "palabra": "que",
-        "inicioMs": 5340,
-        "finMs": 5460
+        "inicioMs": 4900,
+        "finMs": 5180
       },
       {
-        "palabra": "te",
-        "inicioMs": 5460,
-        "finMs": 5580
+        "palabra": "permite",
+        "inicioMs": 5180,
+        "finMs": 5400
       },
       {
-        "palabra": "mantendría",
-        "inicioMs": 5580,
-        "finMs": 6020
+        "palabra": "que",
+        "inicioMs": 5400,
+        "finMs": 5800
       },
       {
-        "palabra": "flotando",
-        "inicioMs": 6020,
-        "finMs": 6480
-      },
-      {
-        "palabra": "suspendido",
-        "inicioMs": 6480,
-        "finMs": 7100
-      },
-      {
-        "palabra": "sobre",
-        "inicioMs": 7100,
-        "finMs": 7320
-      },
-      {
-        "palabra": "la",
-        "inicioMs": 7320,
-        "finMs": 7440
-      },
-      {
-        "palabra": "roca",
-        "inicioMs": 7440,
-        "finMs": 7700
-      },
-      {
-        "palabra": "líquida",
-        "inicioMs": 7700,
-        "finMs": 8080
-      },
-      {
-        "palabra": "durante",
-        "inicioMs": 8080,
-        "finMs": 8340
-      },
-      {
-        "palabra": "unos",
-        "inicioMs": 8340,
-        "finMs": 8540
-      },
-      {
-        "palabra": "segundos",
-        "inicioMs": 8540,
-        "finMs": 8880
-      }
-    ]
-  },
-  "escena_7": {
-    "sha256": "90c1825d935361cd204c856a1f0937981f6c907cd271eb4fc4ffca96530ddd8a",
-    "pipelineVersion": "v3_sentence_tailcut",
-    "texto": "Pero flotar sobre vapor no te salvaría. A mil doscientos grados, la radiación térmica es tan bestial que el aire que respiras quemaría tus pulmones antes de que puedas tocar el magma.",
-    "voiceConds": "alex.conds.pt",
-    "duracionSegundos": 10.546,
-    "palabras": [
-      {
-        "palabra": "Pero",
-        "inicioMs": 0,
-        "finMs": 260
-      },
-      {
-        "palabra": "flotar",
-        "inicioMs": 260,
-        "finMs": 720
-      },
-      {
-        "palabra": "sobre",
-        "inicioMs": 720,
-        "finMs": 980
-      },
-      {
-        "palabra": "vapor",
-        "inicioMs": 980,
-        "finMs": 1280
-      },
-      {
-        "palabra": "no",
-        "inicioMs": 1280,
-        "finMs": 1760
-      },
-      {
-        "palabra": "te",
-        "inicioMs": 1760,
-        "finMs": 1900
-      },
-      {
-        "palabra": "salvaría",
-        "inicioMs": 1900,
-        "finMs": 2480
-      },
-      {
-        "palabra": "A",
-        "inicioMs": 2480,
-        "finMs": 3360
-      },
-      {
-        "palabra": "mil",
-        "inicioMs": 3360,
-        "finMs": 3520
-      },
-      {
-        "palabra": "doscientos",
-        "inicioMs": 3520,
-        "finMs": 4060
-      },
-      {
-        "palabra": "grados",
-        "inicioMs": 4060,
-        "finMs": 4760
-      },
-      {
-        "palabra": "la",
-        "inicioMs": 5200,
-        "finMs": 5380
-      },
-      {
-        "palabra": "radiación",
-        "inicioMs": 5380,
-        "finMs": 5780
-      },
-      {
-        "palabra": "térmica",
-        "inicioMs": 5780,
+        "palabra": "existan",
+        "inicioMs": 5800,
         "finMs": 6200
       },
       {
-        "palabra": "es",
+        "palabra": "estaciones",
         "inicioMs": 6200,
-        "finMs": 6360
+        "finMs": 6660
       },
       {
-        "palabra": "tan",
-        "inicioMs": 6360,
-        "finMs": 6440
+        "palabra": "climáticas",
+        "inicioMs": 6660,
+        "finMs": 7320
       },
       {
-        "palabra": "bestial",
-        "inicioMs": 6440,
-        "finMs": 6740
-      },
-      {
-        "palabra": "que",
-        "inicioMs": 6740,
-        "finMs": 6920
-      },
-      {
-        "palabra": "el",
-        "inicioMs": 6920,
-        "finMs": 7040
-      },
-      {
-        "palabra": "aire",
-        "inicioMs": 7040,
-        "finMs": 7120
-      },
-      {
-        "palabra": "que",
-        "inicioMs": 7120,
-        "finMs": 7280
-      },
-      {
-        "palabra": "respiras",
-        "inicioMs": 7280,
-        "finMs": 7680
-      },
-      {
-        "palabra": "quemaría",
-        "inicioMs": 7680,
-        "finMs": 7820
-      },
-      {
-        "palabra": "tus",
-        "inicioMs": 7820,
-        "finMs": 8220
-      },
-      {
-        "palabra": "pulmones",
-        "inicioMs": 8220,
-        "finMs": 8640
-      },
-      {
-        "palabra": "antes",
-        "inicioMs": 8640,
-        "finMs": 8900
-      },
-      {
-        "palabra": "de",
-        "inicioMs": 8900,
-        "finMs": 9000
-      },
-      {
-        "palabra": "que",
-        "inicioMs": 9000,
-        "finMs": 9100
-      },
-      {
-        "palabra": "puedas",
-        "inicioMs": 9100,
-        "finMs": 9360
-      },
-      {
-        "palabra": "tocar",
-        "inicioMs": 9360,
-        "finMs": 9560
-      },
-      {
-        "palabra": "el",
-        "inicioMs": 9560,
-        "finMs": 9740
-      },
-      {
-        "palabra": "magma",
-        "inicioMs": 9740,
-        "finMs": 10060
-      }
-    ]
-  },
-  "escena_8": {
-    "sha256": "fef21b1e0694dc763b2db72a6aa4bb7602b1dd5a2bef96440a5c2bd8e3d199f2",
-    "pipelineVersion": "v3_sentence_tailcut",
-    "texto": "A medida que el calor penetra, los fluidos orgánicos atrapados se expanden violentamente, generando micro-explosiones de vapor que rompen la corteza volcánica a tu alrededor.",
-    "voiceConds": "alex.conds.pt",
-    "duracionSegundos": 9.634,
-    "palabras": [
-      {
-        "palabra": "A",
-        "inicioMs": 0,
-        "finMs": 180
-      },
-      {
-        "palabra": "medida",
-        "inicioMs": 180,
-        "finMs": 340
-      },
-      {
-        "palabra": "que",
-        "inicioMs": 340,
-        "finMs": 580
-      },
-      {
-        "palabra": "el",
-        "inicioMs": 580,
-        "finMs": 660
-      },
-      {
-        "palabra": "calor",
-        "inicioMs": 660,
-        "finMs": 920
-      },
-      {
-        "palabra": "penetra",
-        "inicioMs": 920,
-        "finMs": 1440
-      },
-      {
-        "palabra": "los",
-        "inicioMs": 1680,
-        "finMs": 1840
-      },
-      {
-        "palabra": "fluidos",
-        "inicioMs": 1840,
-        "finMs": 2200
-      },
-      {
-        "palabra": "orgánicos",
-        "inicioMs": 2200,
-        "finMs": 2680
-      },
-      {
-        "palabra": "atrapados",
-        "inicioMs": 2680,
-        "finMs": 3300
-      },
-      {
-        "palabra": "se",
-        "inicioMs": 3300,
-        "finMs": 3560
-      },
-      {
-        "palabra": "expanden",
-        "inicioMs": 3560,
-        "finMs": 4000
-      },
-      {
-        "palabra": "violentamente",
-        "inicioMs": 4000,
-        "finMs": 4820
-      },
-      {
-        "palabra": "generando",
-        "inicioMs": 5060,
-        "finMs": 5500
-      },
-      {
-        "palabra": "micro-explosiones",
-        "inicioMs": 5500,
-        "finMs": 6360
-      },
-      {
-        "palabra": "de",
-        "inicioMs": 6360,
-        "finMs": 6520
-      },
-      {
-        "palabra": "vapor",
-        "inicioMs": 6520,
-        "finMs": 6760
-      },
-      {
-        "palabra": "que",
-        "inicioMs": 6760,
-        "finMs": 7000
-      },
-      {
-        "palabra": "rompen",
-        "inicioMs": 7000,
-        "finMs": 7340
-      },
-      {
-        "palabra": "la",
-        "inicioMs": 7340,
-        "finMs": 7500
-      },
-      {
-        "palabra": "corteza",
-        "inicioMs": 7500,
-        "finMs": 7920
-      },
-      {
-        "palabra": "volcánica",
-        "inicioMs": 7920,
-        "finMs": 8500
-      },
-      {
-        "palabra": "a",
-        "inicioMs": 8500,
-        "finMs": 8680
-      },
-      {
-        "palabra": "tu",
-        "inicioMs": 8680,
-        "finMs": 8780
-      },
-      {
-        "palabra": "alrededor",
-        "inicioMs": 8780,
-        "finMs": 9080
+        "palabra": "predecibles",
+        "inicioMs": 7320,
+        "finMs": 7560
       }
     ]
   },
   "escena_9": {
-    "sha256": "7d0990731d55a3ab4e99df012fac5030c78603c5eda051f81e71995a82ba5fa6",
+    "sha256": "04a7b60d8b7b6df14745cc1bca4abe2f40e1a0e64467a650744a4fef3d7b062f",
     "pipelineVersion": "v3_sentence_tailcut",
-    "texto": "Los vulcanólogos lo comprobaron arrojando una bolsa de basura orgánica de treinta kilos a un lago de lava en Etiopía: el impacto desató una erupción caótica de fuentes de lava que duró varios minutos.",
+    "texto": "Sin el ancla gravitacional de la Luna, el eje terrestre comenzaría a tambalearse descontroladamente entre cero y casi noventa grados.",
     "voiceConds": "alex.conds.pt",
-    "duracionSegundos": 10.018,
+    "duracionSegundos": 7.45,
     "palabras": [
       {
-        "palabra": "Los",
+        "palabra": "Sin",
         "inicioMs": 0,
-        "finMs": 220
-      },
-      {
-        "palabra": "vulcanólogos",
-        "inicioMs": 220,
-        "finMs": 900
-      },
-      {
-        "palabra": "lo",
-        "inicioMs": 900,
-        "finMs": 1000
-      },
-      {
-        "palabra": "comprobaron",
-        "inicioMs": 1000,
-        "finMs": 1580
-      },
-      {
-        "palabra": "arrojando",
-        "inicioMs": 1580,
-        "finMs": 2060
-      },
-      {
-        "palabra": "una",
-        "inicioMs": 2060,
-        "finMs": 2200
-      },
-      {
-        "palabra": "bolsa",
-        "inicioMs": 2200,
-        "finMs": 2520
-      },
-      {
-        "palabra": "de",
-        "inicioMs": 2520,
-        "finMs": 2620
-      },
-      {
-        "palabra": "basura",
-        "inicioMs": 2620,
-        "finMs": 2900
-      },
-      {
-        "palabra": "orgánica",
-        "inicioMs": 2900,
-        "finMs": 3340
-      },
-      {
-        "palabra": "de",
-        "inicioMs": 3340,
-        "finMs": 3440
-      },
-      {
-        "palabra": "treinta",
-        "inicioMs": 3440,
-        "finMs": 3720
-      },
-      {
-        "palabra": "kilos",
-        "inicioMs": 3720,
-        "finMs": 4020
-      },
-      {
-        "palabra": "a",
-        "inicioMs": 4020,
-        "finMs": 4200
-      },
-      {
-        "palabra": "un",
-        "inicioMs": 4200,
-        "finMs": 4300
-      },
-      {
-        "palabra": "lago",
-        "inicioMs": 4300,
-        "finMs": 4500
-      },
-      {
-        "palabra": "de",
-        "inicioMs": 4500,
-        "finMs": 4640
-      },
-      {
-        "palabra": "lava",
-        "inicioMs": 4640,
-        "finMs": 4780
-      },
-      {
-        "palabra": "en",
-        "inicioMs": 4780,
-        "finMs": 4920
-      },
-      {
-        "palabra": "Etiopía",
-        "inicioMs": 4920,
-        "finMs": 5400
+        "finMs": 280
       },
       {
         "palabra": "el",
-        "inicioMs": 5540,
-        "finMs": 5660
+        "inicioMs": 280,
+        "finMs": 460
       },
       {
-        "palabra": "impacto",
-        "inicioMs": 5660,
-        "finMs": 6040
+        "palabra": "ancla",
+        "inicioMs": 460,
+        "finMs": 740
       },
       {
-        "palabra": "desató",
-        "inicioMs": 6040,
-        "finMs": 6520
-      },
-      {
-        "palabra": "una",
-        "inicioMs": 6520,
-        "finMs": 6680
-      },
-      {
-        "palabra": "erupción",
-        "inicioMs": 6680,
-        "finMs": 7020
-      },
-      {
-        "palabra": "caótica",
-        "inicioMs": 7020,
-        "finMs": 7620
+        "palabra": "gravitacional",
+        "inicioMs": 740,
+        "finMs": 1340
       },
       {
         "palabra": "de",
-        "inicioMs": 7620,
-        "finMs": 7740
+        "inicioMs": 1340,
+        "finMs": 1540
       },
       {
-        "palabra": "fuentes",
-        "inicioMs": 7740,
-        "finMs": 8080
+        "palabra": "la",
+        "inicioMs": 1540,
+        "finMs": 1640
       },
       {
-        "palabra": "de",
-        "inicioMs": 8080,
-        "finMs": 8220
+        "palabra": "Luna",
+        "inicioMs": 1640,
+        "finMs": 1940
       },
       {
-        "palabra": "lava",
-        "inicioMs": 8220,
-        "finMs": 8440
+        "palabra": "el",
+        "inicioMs": 1980,
+        "finMs": 2100
       },
       {
-        "palabra": "que",
-        "inicioMs": 8440,
-        "finMs": 8700
+        "palabra": "eje",
+        "inicioMs": 2100,
+        "finMs": 2280
       },
       {
-        "palabra": "duró",
-        "inicioMs": 8700,
-        "finMs": 8960
+        "palabra": "terrestre",
+        "inicioMs": 2280,
+        "finMs": 2820
       },
       {
-        "palabra": "varios",
-        "inicioMs": 8960,
-        "finMs": 9200
+        "palabra": "comenzaría",
+        "inicioMs": 2820,
+        "finMs": 3360
       },
       {
-        "palabra": "minutos",
-        "inicioMs": 9200,
-        "finMs": 9500
+        "palabra": "a",
+        "inicioMs": 3360,
+        "finMs": 3480
+      },
+      {
+        "palabra": "tambalearse",
+        "inicioMs": 3480,
+        "finMs": 4020
+      },
+      {
+        "palabra": "descontroladamente",
+        "inicioMs": 4020,
+        "finMs": 4860
+      },
+      {
+        "palabra": "entre",
+        "inicioMs": 4860,
+        "finMs": 5200
+      },
+      {
+        "palabra": "cero",
+        "inicioMs": 5200,
+        "finMs": 5580
+      },
+      {
+        "palabra": "y",
+        "inicioMs": 5580,
+        "finMs": 5740
+      },
+      {
+        "palabra": "casi",
+        "inicioMs": 5740,
+        "finMs": 6060
+      },
+      {
+        "palabra": "noventa",
+        "inicioMs": 6060,
+        "finMs": 6340
+      },
+      {
+        "palabra": "grados",
+        "inicioMs": 6340,
+        "finMs": 6980
       }
     ]
   },
   "escena_10": {
-    "sha256": "26c3e4774e7b515795ed8d90fcc48b4ed2c9bdc91114a9324ca683c689857c73",
+    "sha256": "22a593c462438ba48f6ee38ed6f199b3805cb6b15f9ac8f21a9a4a404adf956a",
     "pipelineVersion": "v3_sentence_tailcut",
-    "texto": "Así que olvídate de hundirte despacio levantando el pulgar como Terminator: la física de la materia y la termodinámica son infinitamente más violentas y espectaculares.",
+    "texto": "El ecuador se congelaría por completo bajo glaciares polares, mientras los polos hervirían al sol, desatando vientos huracanados a nivel global.",
     "voiceConds": "alex.conds.pt",
-    "duracionSegundos": 8.434,
+    "duracionSegundos": 7.21,
     "palabras": [
       {
-        "palabra": "Así",
+        "palabra": "El",
         "inicioMs": 0,
-        "finMs": 300
+        "finMs": 200
       },
       {
-        "palabra": "que",
-        "inicioMs": 300,
-        "finMs": 440
+        "palabra": "ecuador",
+        "inicioMs": 200,
+        "finMs": 520
       },
       {
-        "palabra": "olvídate",
-        "inicioMs": 440,
-        "finMs": 820
+        "palabra": "se",
+        "inicioMs": 520,
+        "finMs": 680
       },
       {
-        "palabra": "de",
-        "inicioMs": 820,
-        "finMs": 960
+        "palabra": "congelaría",
+        "inicioMs": 680,
+        "finMs": 1200
       },
       {
-        "palabra": "hundirte",
-        "inicioMs": 960,
-        "finMs": 1300
+        "palabra": "por",
+        "inicioMs": 1200,
+        "finMs": 1380
       },
       {
-        "palabra": "despacio",
-        "inicioMs": 1300,
-        "finMs": 1740
+        "palabra": "completo",
+        "inicioMs": 1380,
+        "finMs": 1840
       },
       {
-        "palabra": "levantando",
-        "inicioMs": 1740,
-        "finMs": 2280
+        "palabra": "bajo",
+        "inicioMs": 1840,
+        "finMs": 2080
       },
       {
-        "palabra": "el",
-        "inicioMs": 2280,
-        "finMs": 2380
+        "palabra": "glaciares",
+        "inicioMs": 2080,
+        "finMs": 2600
       },
       {
-        "palabra": "pulgar",
-        "inicioMs": 2380,
-        "finMs": 2660
+        "palabra": "polares",
+        "inicioMs": 2600,
+        "finMs": 3060
       },
       {
-        "palabra": "como",
-        "inicioMs": 2660,
-        "finMs": 2880
+        "palabra": "mientras",
+        "inicioMs": 3160,
+        "finMs": 3320
       },
       {
-        "palabra": "Terminator",
-        "inicioMs": 2880,
+        "palabra": "los",
+        "inicioMs": 3320,
         "finMs": 3500
       },
       {
-        "palabra": "la",
-        "inicioMs": 3800,
-        "finMs": 3880
+        "palabra": "polos",
+        "inicioMs": 3500,
+        "finMs": 3820
       },
       {
-        "palabra": "física",
-        "inicioMs": 3880,
-        "finMs": 4120
+        "palabra": "hervirían",
+        "inicioMs": 3820,
+        "finMs": 4240
       },
       {
-        "palabra": "de",
-        "inicioMs": 4120,
-        "finMs": 4300
+        "palabra": "al",
+        "inicioMs": 4240,
+        "finMs": 4360
       },
       {
-        "palabra": "la",
-        "inicioMs": 4300,
-        "finMs": 4420
+        "palabra": "sol",
+        "inicioMs": 4360,
+        "finMs": 4620
       },
       {
-        "palabra": "materia",
-        "inicioMs": 4420,
-        "finMs": 4680
+        "palabra": "desatando",
+        "inicioMs": 4740,
+        "finMs": 5180
       },
       {
-        "palabra": "y",
-        "inicioMs": 4680,
-        "finMs": 4840
+        "palabra": "vientos",
+        "inicioMs": 5180,
+        "finMs": 5520
       },
       {
-        "palabra": "la",
-        "inicioMs": 4840,
-        "finMs": 4900
+        "palabra": "huracanados",
+        "inicioMs": 5520,
+        "finMs": 6080
       },
       {
-        "palabra": "termodinámica",
-        "inicioMs": 4900,
-        "finMs": 5560
+        "palabra": "a",
+        "inicioMs": 6080,
+        "finMs": 6220
       },
       {
-        "palabra": "son",
-        "inicioMs": 5560,
-        "finMs": 5740
+        "palabra": "nivel",
+        "inicioMs": 6220,
+        "finMs": 6400
       },
       {
-        "palabra": "infinitamente",
-        "inicioMs": 5740,
-        "finMs": 6240
-      },
-      {
-        "palabra": "más",
-        "inicioMs": 6240,
-        "finMs": 6580
-      },
-      {
-        "palabra": "violentas",
-        "inicioMs": 6580,
-        "finMs": 7080
-      },
-      {
-        "palabra": "y",
-        "inicioMs": 7080,
-        "finMs": 7200
-      },
-      {
-        "palabra": "espectaculares",
-        "inicioMs": 7200,
-        "finMs": 7920
+        "palabra": "global",
+        "inicioMs": 6400,
+        "finMs": 6700
       }
     ]
   },
   "escena_11": {
-    "sha256": "fd735da8209ac9b7485edbe847c6c295f1182d9fec76ac854d2cf203656b32c0",
+    "sha256": "c3ef0cbef2f0a5632b639201213c7c1468ec62c3b8f5f66d763d3054b7e71918",
     "pipelineVersion": "v3_sentence_tailcut",
-    "texto": "La naturaleza nunca perdona las leyes de la física. ¿Qué otro gran mito de las películas quieres que desmintamos con ciencia real?",
+    "texto": "La Luna no es un simple adorno en el cielo nocturno: es el escudo protector y el ancla que hace posible la vida en la Tierra.",
     "voiceConds": "alex.conds.pt",
-    "duracionSegundos": 6.85,
+    "duracionSegundos": 6.442,
     "palabras": [
       {
         "palabra": "La",
         "inicioMs": 0,
-        "finMs": 180
+        "finMs": 200
       },
       {
-        "palabra": "naturaleza",
-        "inicioMs": 180,
-        "finMs": 760
+        "palabra": "Luna",
+        "inicioMs": 200,
+        "finMs": 440
       },
       {
-        "palabra": "nunca",
-        "inicioMs": 760,
-        "finMs": 1060
+        "palabra": "no",
+        "inicioMs": 440,
+        "finMs": 620
       },
       {
-        "palabra": "perdona",
-        "inicioMs": 1060,
-        "finMs": 1460
+        "palabra": "es",
+        "inicioMs": 620,
+        "finMs": 780
       },
       {
-        "palabra": "las",
-        "inicioMs": 1460,
-        "finMs": 1680
+        "palabra": "un",
+        "inicioMs": 780,
+        "finMs": 900
       },
       {
-        "palabra": "leyes",
-        "inicioMs": 1680,
-        "finMs": 1920
+        "palabra": "simple",
+        "inicioMs": 900,
+        "finMs": 1180
       },
       {
-        "palabra": "de",
-        "inicioMs": 1920,
-        "finMs": 2060
+        "palabra": "adorno",
+        "inicioMs": 1180,
+        "finMs": 1500
       },
       {
-        "palabra": "la",
-        "inicioMs": 2060,
-        "finMs": 2160
+        "palabra": "en",
+        "inicioMs": 1500,
+        "finMs": 1640
       },
       {
-        "palabra": "física",
-        "inicioMs": 2160,
-        "finMs": 2540
+        "palabra": "el",
+        "inicioMs": 1640,
+        "finMs": 1820
       },
       {
-        "palabra": "Qué",
-        "inicioMs": 2880,
+        "palabra": "cielo",
+        "inicioMs": 1820,
+        "finMs": 1940
+      },
+      {
+        "palabra": "nocturno",
+        "inicioMs": 1940,
+        "finMs": 2620
+      },
+      {
+        "palabra": "es",
+        "inicioMs": 2780,
+        "finMs": 2920
+      },
+      {
+        "palabra": "el",
+        "inicioMs": 2920,
         "finMs": 3040
       },
       {
-        "palabra": "otro",
+        "palabra": "escudo",
         "inicioMs": 3040,
-        "finMs": 3240
+        "finMs": 3360
       },
       {
-        "palabra": "gran",
-        "inicioMs": 3240,
-        "finMs": 3460
+        "palabra": "protector",
+        "inicioMs": 3360,
+        "finMs": 3860
       },
       {
-        "palabra": "mito",
-        "inicioMs": 3460,
-        "finMs": 3780
+        "palabra": "y",
+        "inicioMs": 3860,
+        "finMs": 4160
       },
       {
-        "palabra": "de",
-        "inicioMs": 3780,
-        "finMs": 3880
+        "palabra": "el",
+        "inicioMs": 4160,
+        "finMs": 4280
       },
       {
-        "palabra": "las",
-        "inicioMs": 3880,
-        "finMs": 3980
-      },
-      {
-        "palabra": "películas",
-        "inicioMs": 3980,
-        "finMs": 4500
-      },
-      {
-        "palabra": "quieres",
-        "inicioMs": 4500,
-        "finMs": 4720
+        "palabra": "ancla",
+        "inicioMs": 4280,
+        "finMs": 4520
       },
       {
         "palabra": "que",
-        "inicioMs": 4720,
-        "finMs": 4900
+        "inicioMs": 4520,
+        "finMs": 4660
       },
       {
-        "palabra": "desmintamos",
-        "inicioMs": 4900,
+        "palabra": "hace",
+        "inicioMs": 4660,
+        "finMs": 4800
+      },
+      {
+        "palabra": "posible",
+        "inicioMs": 4800,
+        "finMs": 5140
+      },
+      {
+        "palabra": "la",
+        "inicioMs": 5140,
+        "finMs": 5360
+      },
+      {
+        "palabra": "vida",
+        "inicioMs": 5360,
         "finMs": 5520
       },
       {
-        "palabra": "con",
+        "palabra": "en",
         "inicioMs": 5520,
+        "finMs": 5620
+      },
+      {
+        "palabra": "la",
+        "inicioMs": 5620,
         "finMs": 5700
       },
       {
-        "palabra": "ciencia",
+        "palabra": "Tierra",
         "inicioMs": 5700,
-        "finMs": 6080
-      },
-      {
-        "palabra": "real",
-        "inicioMs": 6080,
-        "finMs": 6340
+        "finMs": 5960
       }
     ]
   },

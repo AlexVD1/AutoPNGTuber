@@ -22,23 +22,27 @@ function agruparEnBloques(palabras: PalabraTiming[]): PalabraConIndice[][] {
     index,
   }));
 
+  // Bloques de hasta 3 palabras y ~20 caracteres: con fontSize 74px caben en 2 líneas
+  // dentro de la zona segura (tres palabras largas se partían en 3 líneas y se desbordaban).
+  const MAX_PALABRAS = 3;
+  const MAX_CARACTERES = 20;
   const bloques: PalabraConIndice[][] = [];
-  let i = 0;
+  let actual: PalabraConIndice[] = [];
+  let caracteres = 0;
 
-  while (i < conIndice.length) {
-    const restantes = conIndice.length - i;
-    if (restantes === 4) {
-      bloques.push(conIndice.slice(i, i + 2));
-      bloques.push(conIndice.slice(i + 2, i + 4));
-      break;
-    } else if (restantes === 2) {
-      bloques.push(conIndice.slice(i, i + 2));
-      break;
-    } else {
-      bloques.push(conIndice.slice(i, i + 3));
-      i += 3;
+  for (const p of conIndice) {
+    if (
+      actual.length > 0 &&
+      (actual.length >= MAX_PALABRAS || caracteres + p.palabra.length > MAX_CARACTERES)
+    ) {
+      bloques.push(actual);
+      actual = [];
+      caracteres = 0;
     }
+    actual.push(p);
+    caracteres += p.palabra.length;
   }
+  if (actual.length > 0) bloques.push(actual);
 
   return bloques;
 }
@@ -84,7 +88,11 @@ export const WordSubtitles: React.FC<WordSubtitlesProps> = ({
   }
 
   return (
-    <div className="w-full px-8 flex items-center justify-center">
+    // Margen derecho +120px: los botones de la interfaz de TikTok/Shorts cubren ese borde.
+    <div
+      className="w-full flex items-center justify-center"
+      style={{ paddingLeft: 32, paddingRight: 152 }}
+    >
       {/* Contenedor flex con espaciado generoso para evitar solapamiento entre palabras */}
       <div className="flex flex-wrap justify-center items-center gap-x-6 gap-y-3 text-center">
         {bloqueActual.map((item) => {
@@ -145,7 +153,10 @@ export const WordSubtitles: React.FC<WordSubtitlesProps> = ({
                   fontFamily:
                     "'Arial Black', 'Impact', 'Inter', system-ui, sans-serif",
                   fontWeight: 900,
-                  fontSize: isNumeric ? "78px" : "74px",
+                  fontSize: `${Math.min(
+                    isNumeric ? 78 : 74,
+                    Math.floor(800 / (Math.max(1, item.palabra.length) * 0.74))
+                  )}px`,
                   lineHeight: 1.15,
                   letterSpacing: "0.025em",
                   color: textColor,

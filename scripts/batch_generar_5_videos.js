@@ -4,7 +4,7 @@ const { spawnSync } = require("child_process");
 
 const GUION_PATH = path.resolve(__dirname, "../src/data/guion.json");
 const OUT_DIR = path.resolve(__dirname, "../out");
-const DESTINO_DIR = "H:\\Mi unidad\\ShortsMotionGraphics";
+const { DESTINO_DIR } = require("./exportar_metadata");
 
 const VIDEOS = [
   // =========================================================================
@@ -1553,7 +1553,7 @@ async function main() {
 
     // 4. Verificar salida
     const mp4Local = path.join(OUT_DIR, `${slug}.mp4`);
-    const mp4Destino = path.join(DESTINO_DIR, `${slug}.mp4`);
+    const mp4Destino = DESTINO_DIR ? path.join(DESTINO_DIR, `${slug}.mp4`) : "";
     if (fs.existsSync(mp4Local)) {
       const mb = (fs.statSync(mp4Local).size / (1024 * 1024)).toFixed(1);
       console.log(`\n[COMPLETADO] ✅ [${i + 1}/5] "${slug}.mp4" generado exitosamente (${mb} MB).`);

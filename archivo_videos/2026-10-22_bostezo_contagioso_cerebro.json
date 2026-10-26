@@ -1,0 +1,1704 @@
+{
+  "meta": {
+    "id": "bostezo_contagioso_cerebro",
+    "slug": "bostezo_contagioso_cerebro",
+    "temaResumen": "¿Por qué bostezar es tan contagioso y qué función cumple en el cerebro?",
+    "titulo": "¿Por qué el bostezo es contagioso según la neurociencia?",
+    "titulo_corto": "EL MISTERIO DEL BOSTEZO",
+    "gancho": "¿Por qué basta con ver a alguien bostezar, o incluso con solo leer la palabra bostezo, para que sientas unas ganas incontrolables de abrir la boca?",
+    "fuentes": [
+      "Gallup et al.: Evolutionary Psychology (Brain Thermoregulation Hypothesis)",
+      "Frontiers in Psychology (Contagious Yawning & Social Empathy)"
+    ],
+    "genero": "SCIENCE",
+    "duracionObjetivo": [
+      62,
+      110
+    ]
+  },
+  "escenas": [
+    {
+      "id": 1,
+      "texto": "¿Por qué basta con ver a alguien bostezar, o incluso con solo leer la palabra bostezo, para que sientas unas ganas incontrolables de abrir la boca?",
+      "icono": "Smile",
+      "colorIcono": "#F59E0B",
+      "tituloVisual": "¿POR QUÉ BOSTEZAS?",
+      "composicionVisual": "plano_general",
+      "escenario": "laboratorio_neuro",
+      "layout": "narrativo",
+      "transicion": "zoom_in",
+      "efectosCamara": [
+        "drift"
+      ],
+      "sfx": "sfx/sfx_tension_riser.wav",
+      "volumenSfx": 0.22,
+      "personajes": [
+        {
+          "id": "narrador_bostezo",
+          "posicion": {
+            "x": -240,
+            "y": 40
+          },
+          "escala": 1,
+          "orientacion": "derecha",
+          "acciones": [
+            {
+              "tipo": "caminar_hacia",
+              "desdeX": -300,
+              "haciaX": -80
+            }
+          ],
+          "habla": true
+        }
+      ],
+      "objetos": [
+        {
+          "id": "bostezo_cerebro",
+          "propId": "brain_radiator",
+          "posicion": {
+            "x": 260,
+            "y": -70
+          },
+          "escala": 1.5,
+          "animacion": {
+            "tipo": "flotar"
+          }
+        }
+      ],
+      "palabrasClave": [
+        "ver a alguien bostezar",
+        "ganas incontrolables",
+        "abrir la boca"
+      ],
+      "duracionSegundos": 7.33,
+      "palabras": [
+        {
+          "palabra": "Por",
+          "inicioMs": 0,
+          "finMs": 220
+        },
+        {
+          "palabra": "qué",
+          "inicioMs": 220,
+          "finMs": 380
+        },
+        {
+          "palabra": "basta",
+          "inicioMs": 380,
+          "finMs": 640
+        },
+        {
+          "palabra": "con",
+          "inicioMs": 640,
+          "finMs": 880
+        },
+        {
+          "palabra": "ver",
+          "inicioMs": 880,
+          "finMs": 1060
+        },
+        {
+          "palabra": "a",
+          "inicioMs": 1060,
+          "finMs": 1180
+        },
+        {
+          "palabra": "alguien",
+          "inicioMs": 1180,
+          "finMs": 1360
+        },
+        {
+          "palabra": "bostezar",
+          "inicioMs": 1360,
+          "finMs": 2020
+        },
+        {
+          "palabra": "o",
+          "inicioMs": 2020,
+          "finMs": 2240
+        },
+        {
+          "palabra": "incluso",
+          "inicioMs": 2240,
+          "finMs": 2620
+        },
+        {
+          "palabra": "con",
+          "inicioMs": 2620,
+          "finMs": 2840
+        },
+        {
+          "palabra": "solo",
+          "inicioMs": 2840,
+          "finMs": 3100
+        },
+        {
+          "palabra": "leer",
+          "inicioMs": 3100,
+          "finMs": 3380
+        },
+        {
+          "palabra": "la",
+          "inicioMs": 3380,
+          "finMs": 3540
+        },
+        {
+          "palabra": "palabra",
+          "inicioMs": 3540,
+          "finMs": 3840
+        },
+        {
+          "palabra": "bostezo",
+          "inicioMs": 3840,
+          "finMs": 4500
+        },
+        {
+          "palabra": "para",
+          "inicioMs": 4500,
+          "finMs": 4660
+        },
+        {
+          "palabra": "que",
+          "inicioMs": 4660,
+          "finMs": 4800
+        },
+        {
+          "palabra": "sientas",
+          "inicioMs": 4800,
+          "finMs": 5140
+        },
+        {
+          "palabra": "unas",
+          "inicioMs": 5140,
+          "finMs": 5280
+        },
+        {
+          "palabra": "ganas",
+          "inicioMs": 5280,
+          "finMs": 5580
+        },
+        {
+          "palabra": "incontrolables",
+          "inicioMs": 5580,
+          "finMs": 6140
+        },
+        {
+          "palabra": "de",
+          "inicioMs": 6140,
+          "finMs": 6320
+        },
+        {
+          "palabra": "abrir",
+          "inicioMs": 6320,
+          "finMs": 6460
+        },
+        {
+          "palabra": "la",
+          "inicioMs": 6460,
+          "finMs": 6620
+        },
+        {
+          "palabra": "boca",
+          "inicioMs": 6620,
+          "finMs": 6840
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "texto": "Este fenómeno no es una simple señal de aburrimiento: es uno de los reflejos biológicos y sociales más fascinantes de la evolución humana.",
+      "icono": "Sparkles",
+      "colorIcono": "#8B5CF6",
+      "tituloVisual": "REFLEJO SOCIAL",
+      "composicionVisual": "plano_general",
+      "escenario": "sala_estar",
+      "layout": "narrativo",
+      "transicion": "whip_right",
+      "efectosCamara": [
+        "drift"
+      ],
+      "personajes": [
+        {
+          "id": "explicador_social",
+          "posicion": {
+            "x": -140,
+            "y": 25
+          },
+          "escala": 1,
+          "orientacion": "derecha",
+          "poseId": "explaining_both_hands",
+          "expresion": "analytical",
+          "habla": true
+        }
+      ],
+      "palabrasClave": [
+        "reflejos biológicos",
+        "sociales",
+        "evolución humana"
+      ],
+      "duracionSegundos": 6.922,
+      "palabras": [
+        {
+          "palabra": "Este",
+          "inicioMs": 0,
+          "finMs": 320
+        },
+        {
+          "palabra": "fenómeno",
+          "inicioMs": 320,
+          "finMs": 740
+        },
+        {
+          "palabra": "no",
+          "inicioMs": 740,
+          "finMs": 900
+        },
+        {
+          "palabra": "es",
+          "inicioMs": 900,
+          "finMs": 1060
+        },
+        {
+          "palabra": "una",
+          "inicioMs": 1060,
+          "finMs": 1200
+        },
+        {
+          "palabra": "simple",
+          "inicioMs": 1200,
+          "finMs": 1480
+        },
+        {
+          "palabra": "señal",
+          "inicioMs": 1480,
+          "finMs": 1880
+        },
+        {
+          "palabra": "de",
+          "inicioMs": 1880,
+          "finMs": 1960
+        },
+        {
+          "palabra": "aburrimiento",
+          "inicioMs": 1960,
+          "finMs": 2600
+        },
+        {
+          "palabra": "es",
+          "inicioMs": 2920,
+          "finMs": 3060
+        },
+        {
+          "palabra": "uno",
+          "inicioMs": 3060,
+          "finMs": 3260
+        },
+        {
+          "palabra": "de",
+          "inicioMs": 3260,
+          "finMs": 3320
+        },
+        {
+          "palabra": "los",
+          "inicioMs": 3320,
+          "finMs": 3440
+        },
+        {
+          "palabra": "reflejos",
+          "inicioMs": 3440,
+          "finMs": 3820
+        },
+        {
+          "palabra": "biológicos",
+          "inicioMs": 3820,
+          "finMs": 4400
+        },
+        {
+          "palabra": "y",
+          "inicioMs": 4400,
+          "finMs": 4500
+        },
+        {
+          "palabra": "sociales",
+          "inicioMs": 4500,
+          "finMs": 4840
+        },
+        {
+          "palabra": "más",
+          "inicioMs": 4840,
+          "finMs": 5040
+        },
+        {
+          "palabra": "fascinantes",
+          "inicioMs": 5040,
+          "finMs": 5540
+        },
+        {
+          "palabra": "de",
+          "inicioMs": 5540,
+          "finMs": 5660
+        },
+        {
+          "palabra": "la",
+          "inicioMs": 5660,
+          "finMs": 5740
+        },
+        {
+          "palabra": "evolución",
+          "inicioMs": 5740,
+          "finMs": 6080
+        },
+        {
+          "palabra": "humana",
+          "inicioMs": 6080,
+          "finMs": 6460
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "texto": "En primer lugar, los neurólogos descubrieron que el contagio está impulsado por nuestras neuronas espejo en la corteza frontal.",
+      "icono": "Zap",
+      "colorIcono": "#3B82F6",
+      "tituloVisual": "NEURONAS ESPEJO",
+      "composicionVisual": "plano_general",
+      "escenario": "laboratorio_neuro",
+      "layout": "narrativo",
+      "transicion": "zoom_in",
+      "efectosCamara": [
+        "punch"
+      ],
+      "sfx": "sfx/sfx_whoosh.wav",
+      "volumenSfx": 0.2,
+      "personajes": [
+        {
+          "id": "analisis_neuronal",
+          "posicion": {
+            "x": -150,
+            "y": 30
+          },
+          "escala": 1,
+          "orientacion": "derecha",
+          "poseId": "presenting_object",
+          "expresion": "analytical",
+          "habla": true
+        }
+      ],
+      "objetos": [
+        {
+          "id": "neuronas_red",
+          "propId": "mirror_neurons",
+          "posicion": {
+            "x": 240,
+            "y": -70
+          },
+          "escala": 1.5,
+          "animacion": {
+            "tipo": "pulso"
+          }
+        }
+      ],
+      "palabrasClave": [
+        "neurólogos",
+        "neuronas espejo",
+        "corteza frontal"
+      ],
+      "duracionSegundos": 7.258,
+      "palabras": [
+        {
+          "palabra": "En",
+          "inicioMs": 0,
+          "finMs": 200
+        },
+        {
+          "palabra": "primer",
+          "inicioMs": 200,
+          "finMs": 420
+        },
+        {
+          "palabra": "lugar",
+          "inicioMs": 420,
+          "finMs": 780
+        },
+        {
+          "palabra": "los",
+          "inicioMs": 940,
+          "finMs": 1080
+        },
+        {
+          "palabra": "neurólogos",
+          "inicioMs": 1080,
+          "finMs": 1640
+        },
+        {
+          "palabra": "descubrieron",
+          "inicioMs": 1640,
+          "finMs": 2340
+        },
+        {
+          "palabra": "que",
+          "inicioMs": 2340,
+          "finMs": 2500
+        },
+        {
+          "palabra": "el",
+          "inicioMs": 2500,
+          "finMs": 2600
+        },
+        {
+          "palabra": "contagio",
+          "inicioMs": 2600,
+          "finMs": 3100
+        },
+        {
+          "palabra": "está",
+          "inicioMs": 3100,
+          "finMs": 3300
+        },
+        {
+          "palabra": "impulsado",
+          "inicioMs": 3300,
+          "finMs": 3840
+        },
+        {
+          "palabra": "por",
+          "inicioMs": 3840,
+          "finMs": 4060
+        },
+        {
+          "palabra": "nuestras",
+          "inicioMs": 4060,
+          "finMs": 4420
+        },
+        {
+          "palabra": "neuronas",
+          "inicioMs": 4420,
+          "finMs": 5080
+        },
+        {
+          "palabra": "espejo",
+          "inicioMs": 5260,
+          "finMs": 5760
+        },
+        {
+          "palabra": "en",
+          "inicioMs": 5760,
+          "finMs": 5860
+        },
+        {
+          "palabra": "la",
+          "inicioMs": 5860,
+          "finMs": 5960
+        },
+        {
+          "palabra": "corteza",
+          "inicioMs": 5960,
+          "finMs": 6380
+        },
+        {
+          "palabra": "frontal",
+          "inicioMs": 6380,
+          "finMs": 6760
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "texto": "Estas células cerebrales reproducen internamente las acciones y emociones que vemos en los demás, conectándonos mediante pura empatía involuntaria.",
+      "icono": "Heart",
+      "colorIcono": "#EC4899",
+      "tituloVisual": "EMPATÍA CEREBRAL",
+      "composicionVisual": "plano_general",
+      "escenario": "sala_estar",
+      "layout": "narrativo",
+      "transicion": "whip_left",
+      "efectosCamara": [
+        "drift"
+      ],
+      "personajes": [
+        {
+          "id": "empatia_gesto",
+          "posicion": {
+            "x": -140,
+            "y": 25
+          },
+          "escala": 1,
+          "orientacion": "derecha",
+          "poseId": "explaining_pointing_up",
+          "expresion": "smile_soft",
+          "habla": true
+        }
+      ],
+      "palabrasClave": [
+        "reproducen internamente",
+        "emociones",
+        "empatía involuntaria"
+      ],
+      "duracionSegundos": 7.762,
+      "palabras": [
+        {
+          "palabra": "Estas",
+          "inicioMs": 0,
+          "finMs": 440
+        },
+        {
+          "palabra": "células",
+          "inicioMs": 440,
+          "finMs": 680
+        },
+        {
+          "palabra": "cerebrales",
+          "inicioMs": 680,
+          "finMs": 1400
+        },
+        {
+          "palabra": "reproducen",
+          "inicioMs": 1400,
+          "finMs": 2060
+        },
+        {
+          "palabra": "internamente",
+          "inicioMs": 2060,
+          "finMs": 2640
+        },
+        {
+          "palabra": "las",
+          "inicioMs": 2640,
+          "finMs": 2920
+        },
+        {
+          "palabra": "acciones",
+          "inicioMs": 2920,
+          "finMs": 3320
+        },
+        {
+          "palabra": "y",
+          "inicioMs": 3320,
+          "finMs": 3480
+        },
+        {
+          "palabra": "emociones",
+          "inicioMs": 3480,
+          "finMs": 3820
+        },
+        {
+          "palabra": "que",
+          "inicioMs": 3820,
+          "finMs": 4000
+        },
+        {
+          "palabra": "vemos",
+          "inicioMs": 4000,
+          "finMs": 4180
+        },
+        {
+          "palabra": "en",
+          "inicioMs": 4180,
+          "finMs": 4380
+        },
+        {
+          "palabra": "los",
+          "inicioMs": 4380,
+          "finMs": 4480
+        },
+        {
+          "palabra": "demás",
+          "inicioMs": 4480,
+          "finMs": 4700
+        },
+        {
+          "palabra": "conectándonos",
+          "inicioMs": 4960,
+          "finMs": 5540
+        },
+        {
+          "palabra": "mediante",
+          "inicioMs": 5540,
+          "finMs": 5960
+        },
+        {
+          "palabra": "pura",
+          "inicioMs": 5960,
+          "finMs": 6280
+        },
+        {
+          "palabra": "empatía",
+          "inicioMs": 6280,
+          "finMs": 6660
+        },
+        {
+          "palabra": "involuntaria",
+          "inicioMs": 6660,
+          "finMs": 7320
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "texto": "De hecho, está demostrado científicamente: mientras más empatía o cercanía emocional sientes por alguien, más rápido te contagias de su bostezo.",
+      "icono": "Users",
+      "colorIcono": "#10B981",
+      "tituloVisual": "VÍNCULO CERCANO",
+      "composicionVisual": "primer_plano",
+      "escenario": "sala_estar",
+      "layout": "narrativo",
+      "transicion": "zoom_in",
+      "efectosCamara": [
+        "drift"
+      ],
+      "personajes": [
+        {
+          "id": "vinculo_cercano",
+          "posicion": {
+            "x": 0,
+            "y": 20
+          },
+          "escala": 1.15,
+          "orientacion": "derecha",
+          "poseId": "nodding_yes",
+          "expresion": "smile_wide",
+          "habla": true
+        }
+      ],
+      "palabrasClave": [
+        "demostrado científicamente",
+        "cercanía emocional",
+        "más rápido te contagias"
+      ],
+      "duracionSegundos": 9.082,
+      "palabras": [
+        {
+          "palabra": "De",
+          "inicioMs": 0,
+          "finMs": 240
+        },
+        {
+          "palabra": "hecho",
+          "inicioMs": 240,
+          "finMs": 540
+        },
+        {
+          "palabra": "está",
+          "inicioMs": 840,
+          "finMs": 1120
+        },
+        {
+          "palabra": "demostrado",
+          "inicioMs": 1120,
+          "finMs": 1660
+        },
+        {
+          "palabra": "científicamente",
+          "inicioMs": 1660,
+          "finMs": 2760
+        },
+        {
+          "palabra": "mientras",
+          "inicioMs": 2900,
+          "finMs": 3100
+        },
+        {
+          "palabra": "más",
+          "inicioMs": 3100,
+          "finMs": 3360
+        },
+        {
+          "palabra": "empatía",
+          "inicioMs": 3360,
+          "finMs": 3960
+        },
+        {
+          "palabra": "o",
+          "inicioMs": 3960,
+          "finMs": 4140
+        },
+        {
+          "palabra": "cercanía",
+          "inicioMs": 4140,
+          "finMs": 4620
+        },
+        {
+          "palabra": "emocional",
+          "inicioMs": 4620,
+          "finMs": 5080
+        },
+        {
+          "palabra": "sientes",
+          "inicioMs": 5080,
+          "finMs": 5580
+        },
+        {
+          "palabra": "por",
+          "inicioMs": 5580,
+          "finMs": 5860
+        },
+        {
+          "palabra": "alguien",
+          "inicioMs": 5860,
+          "finMs": 6160
+        },
+        {
+          "palabra": "más",
+          "inicioMs": 6400,
+          "finMs": 6560
+        },
+        {
+          "palabra": "rápido",
+          "inicioMs": 6560,
+          "finMs": 6960
+        },
+        {
+          "palabra": "te",
+          "inicioMs": 6960,
+          "finMs": 7240
+        },
+        {
+          "palabra": "contagias",
+          "inicioMs": 7240,
+          "finMs": 7840
+        },
+        {
+          "palabra": "de",
+          "inicioMs": 7840,
+          "finMs": 7940
+        },
+        {
+          "palabra": "su",
+          "inicioMs": 7940,
+          "finMs": 8060
+        },
+        {
+          "palabra": "bostezo",
+          "inicioMs": 8060,
+          "finMs": 8620
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "texto": "Pero hay una segunda razón puramente biológica y termodinámica: tu cerebro utiliza el bostezo como si fuera un radiador de automóvil.",
+      "icono": "Cpu",
+      "colorIcono": "#06B6D4",
+      "tituloVisual": "RADIADOR BIOLÓGICO",
+      "composicionVisual": "plano_general",
+      "escenario": "laboratorio_neuro",
+      "layout": "narrativo",
+      "transicion": "whip_right",
+      "efectosCamara": [
+        "drift"
+      ],
+      "personajes": [
+        {
+          "id": "explicador_radiador",
+          "posicion": {
+            "x": -150,
+            "y": 30
+          },
+          "escala": 1,
+          "orientacion": "derecha",
+          "poseId": "comparing_two_objects",
+          "expresion": "analytical",
+          "habla": true
+        }
+      ],
+      "objetos": [
+        {
+          "id": "radiador_cerebro",
+          "propId": "brain_radiator",
+          "posicion": {
+            "x": 250,
+            "y": -70
+          },
+          "escala": 1.5,
+          "animacion": {
+            "tipo": "flotar"
+          }
+        }
+      ],
+      "palabrasClave": [
+        "razón biológica",
+        "termodinámica",
+        "radiador de automóvil"
+      ],
+      "duracionSegundos": 7.378,
+      "palabras": [
+        {
+          "palabra": "Pero",
+          "inicioMs": 0,
+          "finMs": 240
+        },
+        {
+          "palabra": "hay",
+          "inicioMs": 240,
+          "finMs": 460
+        },
+        {
+          "palabra": "una",
+          "inicioMs": 460,
+          "finMs": 620
+        },
+        {
+          "palabra": "segunda",
+          "inicioMs": 620,
+          "finMs": 900
+        },
+        {
+          "palabra": "razón",
+          "inicioMs": 900,
+          "finMs": 1300
+        },
+        {
+          "palabra": "puramente",
+          "inicioMs": 1300,
+          "finMs": 1920
+        },
+        {
+          "palabra": "biológica",
+          "inicioMs": 1920,
+          "finMs": 2560
+        },
+        {
+          "palabra": "y",
+          "inicioMs": 2560,
+          "finMs": 2640
+        },
+        {
+          "palabra": "termodinámica",
+          "inicioMs": 2640,
+          "finMs": 3460
+        },
+        {
+          "palabra": "tu",
+          "inicioMs": 3580,
+          "finMs": 3680
+        },
+        {
+          "palabra": "cerebro",
+          "inicioMs": 3680,
+          "finMs": 4080
+        },
+        {
+          "palabra": "utiliza",
+          "inicioMs": 4080,
+          "finMs": 4580
+        },
+        {
+          "palabra": "el",
+          "inicioMs": 4580,
+          "finMs": 4700
+        },
+        {
+          "palabra": "bostezo",
+          "inicioMs": 4700,
+          "finMs": 5200
+        },
+        {
+          "palabra": "como",
+          "inicioMs": 5200,
+          "finMs": 5360
+        },
+        {
+          "palabra": "si",
+          "inicioMs": 5360,
+          "finMs": 5540
+        },
+        {
+          "palabra": "fuera",
+          "inicioMs": 5540,
+          "finMs": 5760
+        },
+        {
+          "palabra": "un",
+          "inicioMs": 5760,
+          "finMs": 5880
+        },
+        {
+          "palabra": "radiador",
+          "inicioMs": 5880,
+          "finMs": 6220
+        },
+        {
+          "palabra": "de",
+          "inicioMs": 6220,
+          "finMs": 6420
+        },
+        {
+          "palabra": "automóvil",
+          "inicioMs": 6420,
+          "finMs": 6920
+        }
+      ]
+    },
+    {
+      "id": 7,
+      "texto": "Cuando tu cerebro trabaja intensamente, acumula calor y su temperatura interna sube ligeramente, lo que reduce su rendimiento y velocidad cognitiva.",
+      "icono": "Thermometer",
+      "colorIcono": "#EF4444",
+      "tituloVisual": "CALOR CEREBRAL",
+      "composicionVisual": "primer_plano",
+      "escenario": "laboratorio_neuro",
+      "layout": "narrativo",
+      "transicion": "flash",
+      "efectosCamara": [
+        "shake"
+      ],
+      "sfx": "sfx/sfx_dramatic_hit.wav",
+      "volumenSfx": 0.22,
+      "personajes": [
+        {
+          "id": "sobrecalentamiento",
+          "posicion": {
+            "x": 0,
+            "y": 15
+          },
+          "escala": 1.15,
+          "orientacion": "derecha",
+          "poseId": "exhausted_slouch",
+          "expresion": "exhausted",
+          "habla": true
+        }
+      ],
+      "palabrasClave": [
+        "acumula calor",
+        "temperatura interna",
+        "rendimiento y velocidad"
+      ],
+      "duracionSegundos": 8.53,
+      "palabras": [
+        {
+          "palabra": "Cuando",
+          "inicioMs": 0,
+          "finMs": 280
+        },
+        {
+          "palabra": "tu",
+          "inicioMs": 280,
+          "finMs": 440
+        },
+        {
+          "palabra": "cerebro",
+          "inicioMs": 440,
+          "finMs": 740
+        },
+        {
+          "palabra": "trabaja",
+          "inicioMs": 740,
+          "finMs": 1140
+        },
+        {
+          "palabra": "intensamente",
+          "inicioMs": 1140,
+          "finMs": 1640
+        },
+        {
+          "palabra": "acumula",
+          "inicioMs": 1920,
+          "finMs": 2200
+        },
+        {
+          "palabra": "calor",
+          "inicioMs": 2200,
+          "finMs": 2520
+        },
+        {
+          "palabra": "y",
+          "inicioMs": 2520,
+          "finMs": 2780
+        },
+        {
+          "palabra": "su",
+          "inicioMs": 2780,
+          "finMs": 2900
+        },
+        {
+          "palabra": "temperatura",
+          "inicioMs": 2900,
+          "finMs": 3240
+        },
+        {
+          "palabra": "interna",
+          "inicioMs": 3240,
+          "finMs": 3840
+        },
+        {
+          "palabra": "sube",
+          "inicioMs": 3840,
+          "finMs": 4820
+        },
+        {
+          "palabra": "ligeramente",
+          "inicioMs": 5320,
+          "finMs": 5540
+        },
+        {
+          "palabra": "lo",
+          "inicioMs": 5540,
+          "finMs": 5680
+        },
+        {
+          "palabra": "que",
+          "inicioMs": 5680,
+          "finMs": 5980
+        },
+        {
+          "palabra": "reduce",
+          "inicioMs": 5980,
+          "finMs": 6260
+        },
+        {
+          "palabra": "su",
+          "inicioMs": 6260,
+          "finMs": 6700
+        },
+        {
+          "palabra": "rendimiento",
+          "inicioMs": 6700,
+          "finMs": 6980
+        },
+        {
+          "palabra": "y",
+          "inicioMs": 6980,
+          "finMs": 7360
+        },
+        {
+          "palabra": "velocidad",
+          "inicioMs": 7360,
+          "finMs": 8060
+        },
+        {
+          "palabra": "cognitiva",
+          "inicioMs": 8060,
+          "finMs": 8280
+        }
+      ]
+    },
+    {
+      "id": 8,
+      "texto": "Al bostezar, inhalas una corriente profunda de aire fresco que enfría la sangre de la cavidad nasal antes de que viaje hacia tu cabeza.",
+      "icono": "Wind",
+      "colorIcono": "#38BDF8",
+      "tituloVisual": "AIRE REFRIGERANTE",
+      "composicionVisual": "plano_general",
+      "escenario": "cielo_dia",
+      "layout": "narrativo",
+      "transicion": "zoom_in",
+      "efectosCamara": [
+        "drift"
+      ],
+      "elementosNarrativos": [
+        {
+          "tipo": "speed_lines"
+        }
+      ],
+      "personajes": [
+        {
+          "id": "inhalacion_profunda",
+          "posicion": {
+            "x": -150,
+            "y": 30
+          },
+          "escala": 1,
+          "orientacion": "derecha",
+          "poseId": "looking_up_pose",
+          "expresion": "talking_enthusiastic",
+          "habla": true
+        }
+      ],
+      "palabrasClave": [
+        "corriente profunda",
+        "aire fresco",
+        "enfría la sangre"
+      ],
+      "duracionSegundos": 6.994,
+      "palabras": [
+        {
+          "palabra": "Al",
+          "inicioMs": 0,
+          "finMs": 220
+        },
+        {
+          "palabra": "bostezar",
+          "inicioMs": 220,
+          "finMs": 840
+        },
+        {
+          "palabra": "inhalas",
+          "inicioMs": 1000,
+          "finMs": 1380
+        },
+        {
+          "palabra": "una",
+          "inicioMs": 1380,
+          "finMs": 1520
+        },
+        {
+          "palabra": "corriente",
+          "inicioMs": 1520,
+          "finMs": 1980
+        },
+        {
+          "palabra": "profunda",
+          "inicioMs": 1980,
+          "finMs": 2480
+        },
+        {
+          "palabra": "de",
+          "inicioMs": 2480,
+          "finMs": 2620
+        },
+        {
+          "palabra": "aire",
+          "inicioMs": 2620,
+          "finMs": 2780
+        },
+        {
+          "palabra": "fresco",
+          "inicioMs": 2780,
+          "finMs": 3260
+        },
+        {
+          "palabra": "que",
+          "inicioMs": 3260,
+          "finMs": 3400
+        },
+        {
+          "palabra": "enfría",
+          "inicioMs": 3400,
+          "finMs": 3680
+        },
+        {
+          "palabra": "la",
+          "inicioMs": 3680,
+          "finMs": 3820
+        },
+        {
+          "palabra": "sangre",
+          "inicioMs": 3820,
+          "finMs": 4120
+        },
+        {
+          "palabra": "de",
+          "inicioMs": 4120,
+          "finMs": 4240
+        },
+        {
+          "palabra": "la",
+          "inicioMs": 4240,
+          "finMs": 4340
+        },
+        {
+          "palabra": "cavidad",
+          "inicioMs": 4340,
+          "finMs": 4640
+        },
+        {
+          "palabra": "nasal",
+          "inicioMs": 4640,
+          "finMs": 5000
+        },
+        {
+          "palabra": "antes",
+          "inicioMs": 5000,
+          "finMs": 5440
+        },
+        {
+          "palabra": "de",
+          "inicioMs": 5440,
+          "finMs": 5580
+        },
+        {
+          "palabra": "que",
+          "inicioMs": 5580,
+          "finMs": 5700
+        },
+        {
+          "palabra": "viaje",
+          "inicioMs": 5700,
+          "finMs": 6100
+        },
+        {
+          "palabra": "hacia",
+          "inicioMs": 6100,
+          "finMs": 6180
+        },
+        {
+          "palabra": "tu",
+          "inicioMs": 6180,
+          "finMs": 6260
+        },
+        {
+          "palabra": "cabeza",
+          "inicioMs": 6260,
+          "finMs": 6480
+        }
+      ]
+    },
+    {
+      "id": 9,
+      "texto": "Ese flujo de sangre refrigerada actúa como un shock de frescura que despierta tus neuronas y mantiene tu cerebro en estado óptimo de alerta.",
+      "icono": "BatteryCharging",
+      "colorIcono": "#22C55E",
+      "tituloVisual": "RECARGA COGNITIVA",
+      "composicionVisual": "plano_general",
+      "escenario": "laboratorio_neuro",
+      "layout": "narrativo",
+      "transicion": "whip_left",
+      "efectosCamara": [
+        "punch"
+      ],
+      "sfx": "sfx/sfx_impact.wav",
+      "volumenSfx": 0.2,
+      "personajes": [
+        {
+          "id": "alerta_optima",
+          "posicion": {
+            "x": -140,
+            "y": 25
+          },
+          "escala": 1,
+          "orientacion": "derecha",
+          "poseId": "eureka_idea",
+          "expresion": "eureka",
+          "habla": true
+        }
+      ],
+      "palabrasClave": [
+        "shock de frescura",
+        "despierta tus neuronas",
+        "estado óptimo de alerta"
+      ],
+      "duracionSegundos": 8.698,
+      "palabras": [
+        {
+          "palabra": "Ese",
+          "inicioMs": 0,
+          "finMs": 320
+        },
+        {
+          "palabra": "flujo",
+          "inicioMs": 320,
+          "finMs": 660
+        },
+        {
+          "palabra": "de",
+          "inicioMs": 660,
+          "finMs": 780
+        },
+        {
+          "palabra": "sangre",
+          "inicioMs": 780,
+          "finMs": 1060
+        },
+        {
+          "palabra": "refrigerada",
+          "inicioMs": 1060,
+          "finMs": 1740
+        },
+        {
+          "palabra": "actúa",
+          "inicioMs": 1740,
+          "finMs": 2020
+        },
+        {
+          "palabra": "como",
+          "inicioMs": 2020,
+          "finMs": 2300
+        },
+        {
+          "palabra": "un",
+          "inicioMs": 2300,
+          "finMs": 2420
+        },
+        {
+          "palabra": "shock",
+          "inicioMs": 2420,
+          "finMs": 2600
+        },
+        {
+          "palabra": "de",
+          "inicioMs": 2600,
+          "finMs": 2780
+        },
+        {
+          "palabra": "frescura",
+          "inicioMs": 2780,
+          "finMs": 3240
+        },
+        {
+          "palabra": "que",
+          "inicioMs": 3240,
+          "finMs": 3420
+        },
+        {
+          "palabra": "despierta",
+          "inicioMs": 3420,
+          "finMs": 3880
+        },
+        {
+          "palabra": "tus",
+          "inicioMs": 3880,
+          "finMs": 4080
+        },
+        {
+          "palabra": "neuronas",
+          "inicioMs": 4080,
+          "finMs": 4600
+        },
+        {
+          "palabra": "y",
+          "inicioMs": 4600,
+          "finMs": 4700
+        },
+        {
+          "palabra": "mantiene",
+          "inicioMs": 4700,
+          "finMs": 5060
+        },
+        {
+          "palabra": "tu",
+          "inicioMs": 5060,
+          "finMs": 5240
+        },
+        {
+          "palabra": "cerebro",
+          "inicioMs": 5240,
+          "finMs": 5620
+        },
+        {
+          "palabra": "en",
+          "inicioMs": 5620,
+          "finMs": 5820
+        },
+        {
+          "palabra": "estado",
+          "inicioMs": 5820,
+          "finMs": 6140
+        },
+        {
+          "palabra": "óptimo",
+          "inicioMs": 6140,
+          "finMs": 6660
+        },
+        {
+          "palabra": "de",
+          "inicioMs": 6660,
+          "finMs": 6860
+        },
+        {
+          "palabra": "alerta",
+          "inicioMs": 6860,
+          "finMs": 8240
+        }
+      ]
+    },
+    {
+      "id": 10,
+      "texto": "Y en nuestros antepasados primitivos, sincronizar el bostezo en la tribu servía para que todo el grupo mantuviera la guardia alta frente a depredadores.",
+      "icono": "ShieldAlert",
+      "colorIcono": "#F59E0B",
+      "tituloVisual": "GUARDIA COLECTIVA",
+      "composicionVisual": "plano_general",
+      "escenario": "bosque_frio_nocturno",
+      "layout": "narrativo",
+      "transicion": "zoom_in",
+      "efectosCamara": [
+        "drift"
+      ],
+      "personajes": [
+        {
+          "id": "guardia_tribu",
+          "posicion": {
+            "x": -150,
+            "y": 30
+          },
+          "escala": 1,
+          "orientacion": "derecha",
+          "prop": "shield",
+          "poseId": "protecting_shielding",
+          "expresion": "analytical",
+          "habla": true
+        }
+      ],
+      "palabrasClave": [
+        "antepasados primitivos",
+        "sincronizar el bostezo",
+        "guardia alta"
+      ],
+      "duracionSegundos": 7.93,
+      "palabras": [
+        {
+          "palabra": "Y",
+          "inicioMs": 0,
+          "finMs": 180
+        },
+        {
+          "palabra": "en",
+          "inicioMs": 180,
+          "finMs": 300
+        },
+        {
+          "palabra": "nuestros",
+          "inicioMs": 300,
+          "finMs": 600
+        },
+        {
+          "palabra": "antepasados",
+          "inicioMs": 600,
+          "finMs": 1280
+        },
+        {
+          "palabra": "primitivos",
+          "inicioMs": 1280,
+          "finMs": 1980
+        },
+        {
+          "palabra": "sincronizar",
+          "inicioMs": 2200,
+          "finMs": 2760
+        },
+        {
+          "palabra": "el",
+          "inicioMs": 2760,
+          "finMs": 2920
+        },
+        {
+          "palabra": "bostezo",
+          "inicioMs": 2920,
+          "finMs": 3380
+        },
+        {
+          "palabra": "en",
+          "inicioMs": 3380,
+          "finMs": 3420
+        },
+        {
+          "palabra": "la",
+          "inicioMs": 3420,
+          "finMs": 3500
+        },
+        {
+          "palabra": "tribu",
+          "inicioMs": 3500,
+          "finMs": 3840
+        },
+        {
+          "palabra": "servía",
+          "inicioMs": 3840,
+          "finMs": 4260
+        },
+        {
+          "palabra": "para",
+          "inicioMs": 4260,
+          "finMs": 4440
+        },
+        {
+          "palabra": "que",
+          "inicioMs": 4440,
+          "finMs": 4600
+        },
+        {
+          "palabra": "todo",
+          "inicioMs": 4600,
+          "finMs": 4800
+        },
+        {
+          "palabra": "el",
+          "inicioMs": 4800,
+          "finMs": 4960
+        },
+        {
+          "palabra": "grupo",
+          "inicioMs": 4960,
+          "finMs": 5120
+        },
+        {
+          "palabra": "mantuviera",
+          "inicioMs": 5120,
+          "finMs": 5720
+        },
+        {
+          "palabra": "la",
+          "inicioMs": 5720,
+          "finMs": 5840
+        },
+        {
+          "palabra": "guardia",
+          "inicioMs": 5840,
+          "finMs": 6260
+        },
+        {
+          "palabra": "alta",
+          "inicioMs": 6260,
+          "finMs": 6480
+        },
+        {
+          "palabra": "frente",
+          "inicioMs": 6480,
+          "finMs": 6740
+        },
+        {
+          "palabra": "a",
+          "inicioMs": 6740,
+          "finMs": 6940
+        },
+        {
+          "palabra": "depredadores",
+          "inicioMs": 6940,
+          "finMs": 7460
+        }
+      ]
+    },
+    {
+      "id": 11,
+      "texto": "Así que si este video te hizo bostezar, ¡felicidades! Significa que tu cerebro funciona a la perfección y tienes una empatía extraordinaria.",
+      "icono": "CheckCircle",
+      "colorIcono": "#10B981",
+      "tituloVisual": "¡CEREBRO PERFECTO!",
+      "composicionVisual": "plano_general",
+      "escenario": "laboratorio_neuro",
+      "layout": "narrativo",
+      "transicion": "zoom_in",
+      "efectosCamara": [
+        "drift"
+      ],
+      "personajes": [
+        {
+          "id": "conclusion_bostezo",
+          "posicion": {
+            "x": -160,
+            "y": 30
+          },
+          "escala": 1,
+          "orientacion": "derecha",
+          "prop": "trophy",
+          "acciones": [
+            {
+              "tipo": "caminar_hacia",
+              "desdeX": -220,
+              "haciaX": 0
+            }
+          ],
+          "habla": true
+        }
+      ],
+      "palabrasClave": [
+        "cerebro funciona a la perfección",
+        "empatía extraordinaria",
+        "felicidades"
+      ],
+      "duracionSegundos": 7.834,
+      "palabras": [
+        {
+          "palabra": "Así",
+          "inicioMs": 0,
+          "finMs": 300
+        },
+        {
+          "palabra": "que",
+          "inicioMs": 300,
+          "finMs": 460
+        },
+        {
+          "palabra": "si",
+          "inicioMs": 460,
+          "finMs": 600
+        },
+        {
+          "palabra": "este",
+          "inicioMs": 600,
+          "finMs": 840
+        },
+        {
+          "palabra": "video",
+          "inicioMs": 840,
+          "finMs": 1080
+        },
+        {
+          "palabra": "te",
+          "inicioMs": 1080,
+          "finMs": 1320
+        },
+        {
+          "palabra": "hizo",
+          "inicioMs": 1320,
+          "finMs": 1500
+        },
+        {
+          "palabra": "bostezar",
+          "inicioMs": 1500,
+          "finMs": 2140
+        },
+        {
+          "palabra": "felicidades",
+          "inicioMs": 2360,
+          "finMs": 3020
+        },
+        {
+          "palabra": "Significa",
+          "inicioMs": 3240,
+          "finMs": 3540
+        },
+        {
+          "palabra": "que",
+          "inicioMs": 3540,
+          "finMs": 3800
+        },
+        {
+          "palabra": "tu",
+          "inicioMs": 3800,
+          "finMs": 3900
+        },
+        {
+          "palabra": "cerebro",
+          "inicioMs": 3900,
+          "finMs": 4260
+        },
+        {
+          "palabra": "funciona",
+          "inicioMs": 4260,
+          "finMs": 4660
+        },
+        {
+          "palabra": "a",
+          "inicioMs": 4660,
+          "finMs": 4860
+        },
+        {
+          "palabra": "la",
+          "inicioMs": 4860,
+          "finMs": 5400
+        },
+        {
+          "palabra": "perfección",
+          "inicioMs": 5400,
+          "finMs": 5620
+        },
+        {
+          "palabra": "y",
+          "inicioMs": 5620,
+          "finMs": 5840
+        },
+        {
+          "palabra": "tienes",
+          "inicioMs": 5840,
+          "finMs": 6040
+        },
+        {
+          "palabra": "una",
+          "inicioMs": 6040,
+          "finMs": 6460
+        },
+        {
+          "palabra": "empatía",
+          "inicioMs": 6460,
+          "finMs": 7360
+        },
+        {
+          "palabra": "extraordinaria",
+          "inicioMs": 7360,
+          "finMs": 7584
+        }
+      ]
+    }
+  ]
+}

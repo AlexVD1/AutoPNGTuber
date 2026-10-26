@@ -1,0 +1,1502 @@
+{
+  "meta": {
+    "id": "gota_prince_rupert_paradoja",
+    "slug": "gota_prince_rupert_paradoja",
+    "temaResumen": "La paradoja de la gota de Prince Rupert: indestructible ante balas y martillos en su cabeza pero pulverizada instantáneamente si se quiebra la cola a 5,000 km/h",
+    "titulo": "El truco del vidrio flotante (La paradoja de Prince Rupert)",
+    "titulo_corto": "GOTA DE PRINCE RUPERT",
+    "gancho": "Este diminuto trozo de cristal puede aguantar el impacto directo de una bala a quemarropa... pero se destruye por completo si apenas le pellizcas la cola.",
+    "fuentes": [
+      "Nature Materials: Residual Stress and Failure Dynamics in Prince Rupert's Drops",
+      "Purdue University Ballistics Lab: High-Speed Crack Propagation in Tempered Glass",
+      "Royal Society Philosophical Transactions: Mechanics of Thermal Shock and Compressive Shells"
+    ],
+    "genero": "SCIENCE_PHYSICS",
+    "duracionObjetivo": [
+      65,
+      78
+    ]
+  },
+  "escenas": [
+    {
+      "id": 1,
+      "texto": "Este diminuto trozo de cristal puede aguantar el impacto directo de una bala a quemarropa... pero se destruye por completo si apenas le pellizcas la cola.",
+      "icono": "ShieldAlert",
+      "colorIcono": "#38BDF8",
+      "tituloVisual": "CRISTAL IMPENETRABLE",
+      "composicionVisual": "primer_plano",
+      "escenario": "laboratorio_balistica",
+      "layout": "narrativo",
+      "transicion": "zoom_in",
+      "efectosCamara": [
+        "punch",
+        "drift"
+      ],
+      "sfx": "sfx/sfx_bullet_clang.wav",
+      "volumenSfx": 0.26,
+      "palabrasClave": [
+        "impacto directo",
+        "bala",
+        "destruye",
+        "pellizcas",
+        "cola"
+      ],
+      "personajes": [
+        {
+          "id": "investigador",
+          "posicion": {
+            "x": -260,
+            "y": 60
+          },
+          "escala": 0.95,
+          "orientacion": "derecha",
+          "poseId": "investigating_magnifier",
+          "expresion": "shocked",
+          "prop": "magnifier",
+          "habla": true
+        }
+      ],
+      "objetos": [
+        {
+          "id": "gota_rupert",
+          "propId": "gota_rupert_hero",
+          "posicion": {
+            "x": 140,
+            "y": -40
+          },
+          "escala": 1.45,
+          "animacionFisica": "pulso"
+        },
+        {
+          "id": "bala_aplastada",
+          "propId": "bala_impacto_aplastada",
+          "posicion": {
+            "x": -20,
+            "y": -40
+          },
+          "escala": 1.2,
+          "animacionFisica": "vibrar"
+        }
+      ],
+      "duracionSegundos": 8.218,
+      "palabras": [
+        {
+          "palabra": "Este",
+          "inicioMs": 0,
+          "finMs": 340
+        },
+        {
+          "palabra": "diminuto",
+          "inicioMs": 340,
+          "finMs": 780
+        },
+        {
+          "palabra": "trozo",
+          "inicioMs": 780,
+          "finMs": 1100
+        },
+        {
+          "palabra": "de",
+          "inicioMs": 1100,
+          "finMs": 1240
+        },
+        {
+          "palabra": "cristal",
+          "inicioMs": 1240,
+          "finMs": 1600
+        },
+        {
+          "palabra": "puede",
+          "inicioMs": 1600,
+          "finMs": 1840
+        },
+        {
+          "palabra": "aguantar",
+          "inicioMs": 1840,
+          "finMs": 2220
+        },
+        {
+          "palabra": "el",
+          "inicioMs": 2220,
+          "finMs": 2360
+        },
+        {
+          "palabra": "impacto",
+          "inicioMs": 2360,
+          "finMs": 2620
+        },
+        {
+          "palabra": "directo",
+          "inicioMs": 2620,
+          "finMs": 3140
+        },
+        {
+          "palabra": "de",
+          "inicioMs": 3140,
+          "finMs": 3220
+        },
+        {
+          "palabra": "una",
+          "inicioMs": 3220,
+          "finMs": 3360
+        },
+        {
+          "palabra": "bala",
+          "inicioMs": 3360,
+          "finMs": 3600
+        },
+        {
+          "palabra": "a",
+          "inicioMs": 3600,
+          "finMs": 3700
+        },
+        {
+          "palabra": "quemarropa",
+          "inicioMs": 3700,
+          "finMs": 4320
+        },
+        {
+          "palabra": "pero",
+          "inicioMs": 4560,
+          "finMs": 5040
+        },
+        {
+          "palabra": "se",
+          "inicioMs": 5040,
+          "finMs": 5200
+        },
+        {
+          "palabra": "destruye",
+          "inicioMs": 5200,
+          "finMs": 5620
+        },
+        {
+          "palabra": "por",
+          "inicioMs": 5620,
+          "finMs": 5800
+        },
+        {
+          "palabra": "completo",
+          "inicioMs": 5800,
+          "finMs": 6240
+        },
+        {
+          "palabra": "si",
+          "inicioMs": 6240,
+          "finMs": 6440
+        },
+        {
+          "palabra": "apenas",
+          "inicioMs": 6440,
+          "finMs": 6680
+        },
+        {
+          "palabra": "le",
+          "inicioMs": 6680,
+          "finMs": 6880
+        },
+        {
+          "palabra": "pellizcas",
+          "inicioMs": 6880,
+          "finMs": 7300
+        },
+        {
+          "palabra": "la",
+          "inicioMs": 7300,
+          "finMs": 7420
+        },
+        {
+          "palabra": "cola",
+          "inicioMs": 7420,
+          "finMs": 7720
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "texto": "Se le conoce como la Gota del Príncipe Ruperto. A simple vista parece una lágrima inofensiva, pero si tomas un mazo de demolición y descargas un golpe brutal, prepárate para la sorpresa.",
+      "icono": "Hammer",
+      "colorIcono": "#F59E0B",
+      "tituloVisual": "LA GOTA DE RUPERTO",
+      "composicionVisual": "plano_general",
+      "escenario": "laboratorio_balistica",
+      "layout": "narrativo",
+      "transicion": "whip_right",
+      "efectosCamara": [
+        "shake",
+        "drift"
+      ],
+      "sfx": "sfx/sfx_mazo_impacto.wav",
+      "volumenSfx": 0.25,
+      "palabrasClave": [
+        "Príncipe Ruperto",
+        "lágrima",
+        "mazo",
+        "golpe brutal",
+        "sorpresa"
+      ],
+      "personajes": [
+        {
+          "id": "martillador",
+          "posicion": {
+            "x": -200,
+            "y": 40
+          },
+          "escala": 1.0,
+          "orientacion": "derecha",
+          "poseId": "lifting_heavy",
+          "expresion": "angry",
+          "prop": "sledgehammer",
+          "acciones": [
+            {
+              "tipo": "caminar_hacia",
+              "desdeX": -300,
+              "haciaX": -180,
+              "desdeY": 40,
+              "haciaY": 40
+            }
+          ],
+          "habla": true
+        }
+      ],
+      "objetos": [
+        {
+          "id": "gota_mesa",
+          "propId": "gota_rupert_hero",
+          "posicion": {
+            "x": 160,
+            "y": 80
+          },
+          "escala": 1.2,
+          "animacionFisica": "ninguna"
+        }
+      ],
+      "duracionSegundos": 9.946,
+      "palabras": [
+        {
+          "palabra": "Se",
+          "inicioMs": 0,
+          "finMs": 160
+        },
+        {
+          "palabra": "le",
+          "inicioMs": 160,
+          "finMs": 280
+        },
+        {
+          "palabra": "conoce",
+          "inicioMs": 280,
+          "finMs": 800
+        },
+        {
+          "palabra": "como",
+          "inicioMs": 800,
+          "finMs": 1020
+        },
+        {
+          "palabra": "la",
+          "inicioMs": 1020,
+          "finMs": 1200
+        },
+        {
+          "palabra": "Gota",
+          "inicioMs": 1200,
+          "finMs": 1600
+        },
+        {
+          "palabra": "del",
+          "inicioMs": 1600,
+          "finMs": 1760
+        },
+        {
+          "palabra": "Príncipe",
+          "inicioMs": 1760,
+          "finMs": 2240
+        },
+        {
+          "palabra": "Ruperto",
+          "inicioMs": 2240,
+          "finMs": 2840
+        },
+        {
+          "palabra": "A",
+          "inicioMs": 3040,
+          "finMs": 3140
+        },
+        {
+          "palabra": "simple",
+          "inicioMs": 3140,
+          "finMs": 3340
+        },
+        {
+          "palabra": "vista",
+          "inicioMs": 3340,
+          "finMs": 3700
+        },
+        {
+          "palabra": "parece",
+          "inicioMs": 3700,
+          "finMs": 3940
+        },
+        {
+          "palabra": "una",
+          "inicioMs": 3940,
+          "finMs": 4180
+        },
+        {
+          "palabra": "lágrima",
+          "inicioMs": 4180,
+          "finMs": 4580
+        },
+        {
+          "palabra": "inofensiva",
+          "inicioMs": 4580,
+          "finMs": 5180
+        },
+        {
+          "palabra": "pero",
+          "inicioMs": 5280,
+          "finMs": 5380
+        },
+        {
+          "palabra": "si",
+          "inicioMs": 5380,
+          "finMs": 5500
+        },
+        {
+          "palabra": "tomas",
+          "inicioMs": 5500,
+          "finMs": 5760
+        },
+        {
+          "palabra": "un",
+          "inicioMs": 5760,
+          "finMs": 5900
+        },
+        {
+          "palabra": "mazo",
+          "inicioMs": 5900,
+          "finMs": 6160
+        },
+        {
+          "palabra": "de",
+          "inicioMs": 6160,
+          "finMs": 6260
+        },
+        {
+          "palabra": "demolición",
+          "inicioMs": 6260,
+          "finMs": 6720
+        },
+        {
+          "palabra": "y",
+          "inicioMs": 6720,
+          "finMs": 6940
+        },
+        {
+          "palabra": "descargas",
+          "inicioMs": 6940,
+          "finMs": 7360
+        },
+        {
+          "palabra": "un",
+          "inicioMs": 7360,
+          "finMs": 7560
+        },
+        {
+          "palabra": "golpe",
+          "inicioMs": 7560,
+          "finMs": 7760
+        },
+        {
+          "palabra": "brutal",
+          "inicioMs": 7760,
+          "finMs": 8120
+        },
+        {
+          "palabra": "prepárate",
+          "inicioMs": 8240,
+          "finMs": 8700
+        },
+        {
+          "palabra": "para",
+          "inicioMs": 8700,
+          "finMs": 8940
+        },
+        {
+          "palabra": "la",
+          "inicioMs": 8940,
+          "finMs": 9040
+        },
+        {
+          "palabra": "sorpresa",
+          "inicioMs": 9040,
+          "finMs": 9440
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "texto": "El mazo rebota como si golpeara titanio puro. ¡Ni una sola fisura! Puedes aplastarla bajo una prensa hidráulica industrial de veinte toneladas y la cabeza de la gota simplemente no cede.",
+      "icono": "Sparkles",
+      "colorIcono": "#06B6D4",
+      "tituloVisual": "REBOTE DE TITANIO",
+      "composicionVisual": "escenario_ilustrado",
+      "escenario": "laboratorio_balistica",
+      "layout": "narrativo",
+      "transicion": "corte",
+      "efectosCamara": [
+        "shake",
+        "punch"
+      ],
+      "sfx": "sfx/sfx_boing_rebound.wav",
+      "volumenSfx": 0.28,
+      "palabrasClave": [
+        "mazo rebota",
+        "titanio",
+        "prensa hidráulica",
+        "veinte toneladas",
+        "no cede"
+      ],
+      "personajes": [
+        {
+          "id": "volando_retroceso",
+          "posicion": {
+            "x": -280,
+            "y": 80
+          },
+          "escala": 0.95,
+          "orientacion": "derecha",
+          "poseId": "tripping_falling",
+          "expresion": "exhausted",
+          "acciones": [
+            {
+              "tipo": "sorpresa_y_retroceso",
+              "desdeX": -160,
+              "haciaX": -280,
+              "desdeY": 40,
+              "haciaY": 80
+            }
+          ],
+          "habla": true
+        }
+      ],
+      "objetos": [
+        {
+          "id": "mazo_rebotado",
+          "propId": "mazo_demolicion_rebote",
+          "posicion": {
+            "x": 120,
+            "y": 20
+          },
+          "escala": 1.3,
+          "animacionFisica": "vibrar"
+        }
+      ],
+      "duracionSegundos": 9.826,
+      "palabras": [
+        {
+          "palabra": "El",
+          "inicioMs": 0,
+          "finMs": 220
+        },
+        {
+          "palabra": "mazo",
+          "inicioMs": 220,
+          "finMs": 480
+        },
+        {
+          "palabra": "rebota",
+          "inicioMs": 480,
+          "finMs": 820
+        },
+        {
+          "palabra": "como",
+          "inicioMs": 820,
+          "finMs": 1100
+        },
+        {
+          "palabra": "si",
+          "inicioMs": 1100,
+          "finMs": 1340
+        },
+        {
+          "palabra": "golpeara",
+          "inicioMs": 1340,
+          "finMs": 1660
+        },
+        {
+          "palabra": "titanio",
+          "inicioMs": 1660,
+          "finMs": 2120
+        },
+        {
+          "palabra": "puro",
+          "inicioMs": 2120,
+          "finMs": 2500
+        },
+        {
+          "palabra": "Ni",
+          "inicioMs": 3000,
+          "finMs": 3200
+        },
+        {
+          "palabra": "una",
+          "inicioMs": 3200,
+          "finMs": 3380
+        },
+        {
+          "palabra": "sola",
+          "inicioMs": 3380,
+          "finMs": 3580
+        },
+        {
+          "palabra": "fisura",
+          "inicioMs": 3580,
+          "finMs": 4100
+        },
+        {
+          "palabra": "Puedes",
+          "inicioMs": 4300,
+          "finMs": 4460
+        },
+        {
+          "palabra": "aplastarla",
+          "inicioMs": 4460,
+          "finMs": 4940
+        },
+        {
+          "palabra": "bajo",
+          "inicioMs": 4940,
+          "finMs": 5180
+        },
+        {
+          "palabra": "una",
+          "inicioMs": 5180,
+          "finMs": 5340
+        },
+        {
+          "palabra": "prensa",
+          "inicioMs": 5340,
+          "finMs": 5640
+        },
+        {
+          "palabra": "hidráulica",
+          "inicioMs": 5640,
+          "finMs": 6100
+        },
+        {
+          "palabra": "industrial",
+          "inicioMs": 6100,
+          "finMs": 6480
+        },
+        {
+          "palabra": "de",
+          "inicioMs": 6480,
+          "finMs": 6660
+        },
+        {
+          "palabra": "veinte",
+          "inicioMs": 6660,
+          "finMs": 6880
+        },
+        {
+          "palabra": "toneladas",
+          "inicioMs": 6880,
+          "finMs": 7420
+        },
+        {
+          "palabra": "y",
+          "inicioMs": 7420,
+          "finMs": 7620
+        },
+        {
+          "palabra": "la",
+          "inicioMs": 7620,
+          "finMs": 7720
+        },
+        {
+          "palabra": "cabeza",
+          "inicioMs": 7720,
+          "finMs": 7900
+        },
+        {
+          "palabra": "de",
+          "inicioMs": 7900,
+          "finMs": 8080
+        },
+        {
+          "palabra": "la",
+          "inicioMs": 8080,
+          "finMs": 8160
+        },
+        {
+          "palabra": "gota",
+          "inicioMs": 8160,
+          "finMs": 8400
+        },
+        {
+          "palabra": "simplemente",
+          "inicioMs": 8400,
+          "finMs": 8760
+        },
+        {
+          "palabra": "no",
+          "inicioMs": 8760,
+          "finMs": 9080
+        },
+        {
+          "palabra": "cede",
+          "inicioMs": 9080,
+          "finMs": 9340
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "texto": "El secreto de este superpoder está en su nacimiento: dejan caer una bola de vidrio fundido a mil grados dentro de agua helada. La capa exterior se congela y encoge al segundo, pero el interior sigue ardiendo.",
+      "icono": "Flame",
+      "colorIcono": "#EF4444",
+      "tituloVisual": "TEMPLE TÉRMICO",
+      "composicionVisual": "cifras_concepto",
+      "escenario": "diagrama_termico_rupert",
+      "layout": "narrativo",
+      "transicion": "zoom_in",
+      "efectosCamara": [
+        "drift"
+      ],
+      "sfx": "sfx/sfx_thermal_hiss.wav",
+      "volumenSfx": 0.24,
+      "palabrasClave": [
+        "vidrio fundido",
+        "mil grados",
+        "agua helada",
+        "se congela",
+        "sigue ardiendo"
+      ],
+      "personajes": [
+        {
+          "id": "cientifico",
+          "posicion": {
+            "x": -280,
+            "y": 60
+          },
+          "escala": 0.95,
+          "orientacion": "derecha",
+          "poseId": "explaining_pointing_up",
+          "expresion": "analytical",
+          "prop": "flask",
+          "habla": true
+        }
+      ],
+      "objetos": [
+        {
+          "id": "tanque_temple",
+          "propId": "tanque_temple_vidrio",
+          "posicion": {
+            "x": 140,
+            "y": -20
+          },
+          "escala": 1.35,
+          "animacionFisica": "pulso"
+        }
+      ],
+      "duracionSegundos": 10.45,
+      "palabras": [
+        {
+          "palabra": "El",
+          "inicioMs": 0,
+          "finMs": 180
+        },
+        {
+          "palabra": "secreto",
+          "inicioMs": 180,
+          "finMs": 580
+        },
+        {
+          "palabra": "de",
+          "inicioMs": 580,
+          "finMs": 700
+        },
+        {
+          "palabra": "este",
+          "inicioMs": 700,
+          "finMs": 860
+        },
+        {
+          "palabra": "superpoder",
+          "inicioMs": 860,
+          "finMs": 1480
+        },
+        {
+          "palabra": "está",
+          "inicioMs": 1480,
+          "finMs": 1860
+        },
+        {
+          "palabra": "en",
+          "inicioMs": 1860,
+          "finMs": 1940
+        },
+        {
+          "palabra": "su",
+          "inicioMs": 1940,
+          "finMs": 2040
+        },
+        {
+          "palabra": "nacimiento",
+          "inicioMs": 2040,
+          "finMs": 2540
+        },
+        {
+          "palabra": "dejan",
+          "inicioMs": 2740,
+          "finMs": 2940
+        },
+        {
+          "palabra": "caer",
+          "inicioMs": 2940,
+          "finMs": 3160
+        },
+        {
+          "palabra": "una",
+          "inicioMs": 3160,
+          "finMs": 3320
+        },
+        {
+          "palabra": "bola",
+          "inicioMs": 3320,
+          "finMs": 3540
+        },
+        {
+          "palabra": "de",
+          "inicioMs": 3540,
+          "finMs": 3720
+        },
+        {
+          "palabra": "vidrio",
+          "inicioMs": 3720,
+          "finMs": 4040
+        },
+        {
+          "palabra": "fundido",
+          "inicioMs": 4040,
+          "finMs": 4520
+        },
+        {
+          "palabra": "a",
+          "inicioMs": 4520,
+          "finMs": 4600
+        },
+        {
+          "palabra": "mil",
+          "inicioMs": 4600,
+          "finMs": 4740
+        },
+        {
+          "palabra": "grados",
+          "inicioMs": 4740,
+          "finMs": 5180
+        },
+        {
+          "palabra": "dentro",
+          "inicioMs": 5180,
+          "finMs": 5460
+        },
+        {
+          "palabra": "de",
+          "inicioMs": 5460,
+          "finMs": 5660
+        },
+        {
+          "palabra": "agua",
+          "inicioMs": 5660,
+          "finMs": 5800
+        },
+        {
+          "palabra": "helada",
+          "inicioMs": 5800,
+          "finMs": 6180
+        },
+        {
+          "palabra": "La",
+          "inicioMs": 6380,
+          "finMs": 6480
+        },
+        {
+          "palabra": "capa",
+          "inicioMs": 6480,
+          "finMs": 6740
+        },
+        {
+          "palabra": "exterior",
+          "inicioMs": 6740,
+          "finMs": 7020
+        },
+        {
+          "palabra": "se",
+          "inicioMs": 7020,
+          "finMs": 7220
+        },
+        {
+          "palabra": "congela",
+          "inicioMs": 7220,
+          "finMs": 7620
+        },
+        {
+          "palabra": "y",
+          "inicioMs": 7620,
+          "finMs": 7720
+        },
+        {
+          "palabra": "encoge",
+          "inicioMs": 7720,
+          "finMs": 8000
+        },
+        {
+          "palabra": "al",
+          "inicioMs": 8000,
+          "finMs": 8080
+        },
+        {
+          "palabra": "segundo",
+          "inicioMs": 8080,
+          "finMs": 8480
+        },
+        {
+          "palabra": "pero",
+          "inicioMs": 8700,
+          "finMs": 8820
+        },
+        {
+          "palabra": "el",
+          "inicioMs": 8820,
+          "finMs": 8920
+        },
+        {
+          "palabra": "interior",
+          "inicioMs": 8920,
+          "finMs": 9240
+        },
+        {
+          "palabra": "sigue",
+          "inicioMs": 9240,
+          "finMs": 9520
+        },
+        {
+          "palabra": "ardiendo",
+          "inicioMs": 9520,
+          "finMs": 9980
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "texto": "Conforme el núcleo se enfría, intenta contraerse y jala todo hacia adentro, dejando a la cabeza bajo una tensión molecular tan descomunal que la vuelve una armadura impenetrable.",
+      "icono": "Cpu",
+      "colorIcono": "#6366F1",
+      "tituloVisual": "TENSIÓN MOLECULAR",
+      "composicionVisual": "primer_plano",
+      "escenario": "diagrama_termico_rupert",
+      "layout": "narrativo",
+      "transicion": "corte",
+      "efectosCamara": [
+        "drift"
+      ],
+      "sfx": "sfx/sfx_tension_creak.wav",
+      "volumenSfx": 0.25,
+      "palabrasClave": [
+        "núcleo",
+        "contraerse",
+        "jala hacia adentro",
+        "tensión molecular",
+        "armadura"
+      ],
+      "personajes": [
+        {
+          "id": "analista",
+          "posicion": {
+            "x": -260,
+            "y": 60
+          },
+          "escala": 0.95,
+          "orientacion": "derecha",
+          "poseId": "arms_crossed",
+          "expresion": "analytical",
+          "habla": true
+        }
+      ],
+      "objetos": [
+        {
+          "id": "corte_mol",
+          "propId": "corte_molecular_tension",
+          "posicion": {
+            "x": 120,
+            "y": -30
+          },
+          "escala": 1.35,
+          "animacionFisica": "pulso"
+        }
+      ],
+      "duracionSegundos": 9.01,
+      "palabras": [
+        {
+          "palabra": "Conforme",
+          "inicioMs": 0,
+          "finMs": 420
+        },
+        {
+          "palabra": "el",
+          "inicioMs": 420,
+          "finMs": 600
+        },
+        {
+          "palabra": "núcleo",
+          "inicioMs": 600,
+          "finMs": 840
+        },
+        {
+          "palabra": "se",
+          "inicioMs": 840,
+          "finMs": 1020
+        },
+        {
+          "palabra": "enfría",
+          "inicioMs": 1020,
+          "finMs": 1460
+        },
+        {
+          "palabra": "intenta",
+          "inicioMs": 1640,
+          "finMs": 2060
+        },
+        {
+          "palabra": "contraerse",
+          "inicioMs": 2060,
+          "finMs": 2660
+        },
+        {
+          "palabra": "y",
+          "inicioMs": 2660,
+          "finMs": 2760
+        },
+        {
+          "palabra": "jala",
+          "inicioMs": 2760,
+          "finMs": 3000
+        },
+        {
+          "palabra": "todo",
+          "inicioMs": 3000,
+          "finMs": 3280
+        },
+        {
+          "palabra": "hacia",
+          "inicioMs": 3280,
+          "finMs": 3560
+        },
+        {
+          "palabra": "adentro",
+          "inicioMs": 3560,
+          "finMs": 4040
+        },
+        {
+          "palabra": "dejando",
+          "inicioMs": 4280,
+          "finMs": 4580
+        },
+        {
+          "palabra": "a",
+          "inicioMs": 4580,
+          "finMs": 4660
+        },
+        {
+          "palabra": "la",
+          "inicioMs": 4660,
+          "finMs": 4700
+        },
+        {
+          "palabra": "cabeza",
+          "inicioMs": 4700,
+          "finMs": 4960
+        },
+        {
+          "palabra": "bajo",
+          "inicioMs": 4960,
+          "finMs": 5260
+        },
+        {
+          "palabra": "una",
+          "inicioMs": 5260,
+          "finMs": 5440
+        },
+        {
+          "palabra": "tensión",
+          "inicioMs": 5440,
+          "finMs": 5720
+        },
+        {
+          "palabra": "molecular",
+          "inicioMs": 5720,
+          "finMs": 6160
+        },
+        {
+          "palabra": "tan",
+          "inicioMs": 6160,
+          "finMs": 6440
+        },
+        {
+          "palabra": "descomunal",
+          "inicioMs": 6440,
+          "finMs": 6900
+        },
+        {
+          "palabra": "que",
+          "inicioMs": 6900,
+          "finMs": 7080
+        },
+        {
+          "palabra": "la",
+          "inicioMs": 7080,
+          "finMs": 7180
+        },
+        {
+          "palabra": "vuelve",
+          "inicioMs": 7180,
+          "finMs": 7460
+        },
+        {
+          "palabra": "una",
+          "inicioMs": 7460,
+          "finMs": 7580
+        },
+        {
+          "palabra": "armadura",
+          "inicioMs": 7580,
+          "finMs": 7880
+        },
+        {
+          "palabra": "impenetrable",
+          "inicioMs": 7880,
+          "finMs": 8560
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "texto": "Sin embargo, toda esa energía tiene un punto ciego fatal. Si viajas hasta el final de su cola delgada, las capas protectoras desaparecen y la tensión se convierte en un detonador.",
+      "icono": "AlertTriangle",
+      "colorIcono": "#F97316",
+      "tituloVisual": "EL GATILLO OCULTO",
+      "composicionVisual": "primer_plano",
+      "escenario": "laboratorio_balistica",
+      "layout": "narrativo",
+      "transicion": "whip_left",
+      "efectosCamara": [
+        "punch",
+        "drift"
+      ],
+      "sfx": "sfx/sfx_glass_snap.wav",
+      "volumenSfx": 0.25,
+      "palabrasClave": [
+        "punto ciego",
+        "cola delgada",
+        "capas protectoras",
+        "tensión",
+        "detonador"
+      ],
+      "personajes": [
+        {
+          "id": "descubridor",
+          "posicion": {
+            "x": -240,
+            "y": 60
+          },
+          "escala": 0.95,
+          "orientacion": "derecha",
+          "poseId": "warning_danger",
+          "expresion": "shocked",
+          "habla": true
+        }
+      ],
+      "objetos": [
+        {
+          "id": "fractura_gota",
+          "propId": "gota_fractura_rayos",
+          "posicion": {
+            "x": 140,
+            "y": -20
+          },
+          "escala": 1.35,
+          "animacionFisica": "vibrar"
+        }
+      ],
+      "duracionSegundos": 9.01,
+      "palabras": [
+        {
+          "palabra": "Sin",
+          "inicioMs": 0,
+          "finMs": 260
+        },
+        {
+          "palabra": "embargo",
+          "inicioMs": 260,
+          "finMs": 440
+        },
+        {
+          "palabra": "toda",
+          "inicioMs": 780,
+          "finMs": 800
+        },
+        {
+          "palabra": "esa",
+          "inicioMs": 800,
+          "finMs": 980
+        },
+        {
+          "palabra": "energía",
+          "inicioMs": 980,
+          "finMs": 1280
+        },
+        {
+          "palabra": "tiene",
+          "inicioMs": 1280,
+          "finMs": 1640
+        },
+        {
+          "palabra": "un",
+          "inicioMs": 1640,
+          "finMs": 1800
+        },
+        {
+          "palabra": "punto",
+          "inicioMs": 1800,
+          "finMs": 2020
+        },
+        {
+          "palabra": "ciego",
+          "inicioMs": 2020,
+          "finMs": 2400
+        },
+        {
+          "palabra": "fatal",
+          "inicioMs": 2400,
+          "finMs": 2780
+        },
+        {
+          "palabra": "Si",
+          "inicioMs": 3200,
+          "finMs": 3400
+        },
+        {
+          "palabra": "viajas",
+          "inicioMs": 3400,
+          "finMs": 3680
+        },
+        {
+          "palabra": "hasta",
+          "inicioMs": 3680,
+          "finMs": 3920
+        },
+        {
+          "palabra": "el",
+          "inicioMs": 3920,
+          "finMs": 4000
+        },
+        {
+          "palabra": "final",
+          "inicioMs": 4000,
+          "finMs": 4160
+        },
+        {
+          "palabra": "de",
+          "inicioMs": 4160,
+          "finMs": 4320
+        },
+        {
+          "palabra": "su",
+          "inicioMs": 4320,
+          "finMs": 4440
+        },
+        {
+          "palabra": "cola",
+          "inicioMs": 4440,
+          "finMs": 4620
+        },
+        {
+          "palabra": "delgada",
+          "inicioMs": 4620,
+          "finMs": 5100
+        },
+        {
+          "palabra": "las",
+          "inicioMs": 5220,
+          "finMs": 5320
+        },
+        {
+          "palabra": "capas",
+          "inicioMs": 5320,
+          "finMs": 5600
+        },
+        {
+          "palabra": "protectoras",
+          "inicioMs": 5600,
+          "finMs": 6060
+        },
+        {
+          "palabra": "desaparecen",
+          "inicioMs": 6060,
+          "finMs": 6700
+        },
+        {
+          "palabra": "y",
+          "inicioMs": 6700,
+          "finMs": 6900
+        },
+        {
+          "palabra": "la",
+          "inicioMs": 6900,
+          "finMs": 6980
+        },
+        {
+          "palabra": "tensión",
+          "inicioMs": 6980,
+          "finMs": 7240
+        },
+        {
+          "palabra": "se",
+          "inicioMs": 7240,
+          "finMs": 7440
+        },
+        {
+          "palabra": "convierte",
+          "inicioMs": 7440,
+          "finMs": 7840
+        },
+        {
+          "palabra": "en",
+          "inicioMs": 7840,
+          "finMs": 7960
+        },
+        {
+          "palabra": "un",
+          "inicioMs": 7960,
+          "finMs": 8020
+        },
+        {
+          "palabra": "detonador",
+          "inicioMs": 8020,
+          "finMs": 8520
+        }
+      ]
+    },
+    {
+      "id": 7,
+      "texto": "Al quebrar la punta, la fractura corre a más de cinco mil kilómetros por hora, liberando toda la fuerza atrapada hasta pulverizar el cristal en una nube de polvo en microsegundos.",
+      "icono": "Zap",
+      "colorIcono": "#FBBF24",
+      "tituloVisual": "PULVERIZACIÓN TOTAL",
+      "composicionVisual": "plano_general",
+      "escenario": "laboratorio_balistica",
+      "layout": "narrativo",
+      "transicion": "flash",
+      "efectosCamara": [
+        "shake",
+        "punch"
+      ],
+      "sfx": "sfx/sfx_glass_shatter_boom.wav",
+      "volumenSfx": 0.28,
+      "palabrasClave": [
+        "quebrar la punta",
+        "cinco mil kilómetros",
+        "fuerza atrapada",
+        "pulverizar",
+        "microsegundos"
+      ],
+      "personajes": [
+        {
+          "id": "asombrado",
+          "posicion": {
+            "x": -180,
+            "y": 60
+          },
+          "escala": 1.0,
+          "orientacion": "derecha",
+          "poseId": "surprised_hands_up",
+          "expresion": "confused",
+          "habla": true
+        }
+      ],
+      "objetos": [
+        {
+          "id": "nube_polvo",
+          "propId": "pulverizacion_vidrio_nube",
+          "posicion": {
+            "x": 140,
+            "y": 0
+          },
+          "escala": 1.45,
+          "animacionFisica": "vibrar"
+        }
+      ],
+      "duracionSegundos": 8.986,
+      "palabras": [
+        {
+          "palabra": "Al",
+          "inicioMs": 0,
+          "finMs": 240
+        },
+        {
+          "palabra": "quebrar",
+          "inicioMs": 240,
+          "finMs": 540
+        },
+        {
+          "palabra": "la",
+          "inicioMs": 540,
+          "finMs": 700
+        },
+        {
+          "palabra": "punta",
+          "inicioMs": 700,
+          "finMs": 1120
+        },
+        {
+          "palabra": "la",
+          "inicioMs": 1300,
+          "finMs": 1380
+        },
+        {
+          "palabra": "fractura",
+          "inicioMs": 1380,
+          "finMs": 1820
+        },
+        {
+          "palabra": "corre",
+          "inicioMs": 1820,
+          "finMs": 2040
+        },
+        {
+          "palabra": "a",
+          "inicioMs": 2040,
+          "finMs": 2240
+        },
+        {
+          "palabra": "más",
+          "inicioMs": 2240,
+          "finMs": 2340
+        },
+        {
+          "palabra": "de",
+          "inicioMs": 2340,
+          "finMs": 2480
+        },
+        {
+          "palabra": "cinco",
+          "inicioMs": 2480,
+          "finMs": 2760
+        },
+        {
+          "palabra": "mil",
+          "inicioMs": 2760,
+          "finMs": 3020
+        },
+        {
+          "palabra": "kilómetros",
+          "inicioMs": 3020,
+          "finMs": 3420
+        },
+        {
+          "palabra": "por",
+          "inicioMs": 3420,
+          "finMs": 3680
+        },
+        {
+          "palabra": "hora",
+          "inicioMs": 3680,
+          "finMs": 3900
+        },
+        {
+          "palabra": "liberando",
+          "inicioMs": 4120,
+          "finMs": 4520
+        },
+        {
+          "palabra": "toda",
+          "inicioMs": 4520,
+          "finMs": 4700
+        },
+        {
+          "palabra": "la",
+          "inicioMs": 4700,
+          "finMs": 4880
+        },
+        {
+          "palabra": "fuerza",
+          "inicioMs": 4880,
+          "finMs": 5100
+        },
+        {
+          "palabra": "atrapada",
+          "inicioMs": 5100,
+          "finMs": 5560
+        },
+        {
+          "palabra": "hasta",
+          "inicioMs": 5560,
+          "finMs": 5740
+        },
+        {
+          "palabra": "pulverizar",
+          "inicioMs": 5740,
+          "finMs": 6280
+        },
+        {
+          "palabra": "el",
+          "inicioMs": 6280,
+          "finMs": 6400
+        },
+        {
+          "palabra": "cristal",
+          "inicioMs": 6400,
+          "finMs": 6740
+        },
+        {
+          "palabra": "en",
+          "inicioMs": 6740,
+          "finMs": 6840
+        },
+        {
+          "palabra": "una",
+          "inicioMs": 6840,
+          "finMs": 7000
+        },
+        {
+          "palabra": "nube",
+          "inicioMs": 7000,
+          "finMs": 7200
+        },
+        {
+          "palabra": "de",
+          "inicioMs": 7200,
+          "finMs": 7340
+        },
+        {
+          "palabra": "polvo",
+          "inicioMs": 7340,
+          "finMs": 7720
+        },
+        {
+          "palabra": "en",
+          "inicioMs": 7720,
+          "finMs": 7820
+        },
+        {
+          "palabra": "microsegundos",
+          "inicioMs": 7820,
+          "finMs": 8480
+        }
+      ]
+    }
+  ]
+}

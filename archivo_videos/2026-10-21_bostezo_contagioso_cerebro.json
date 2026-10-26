@@ -2,7 +2,19 @@
   "meta": {
     "id": "bostezo_contagioso_cerebro",
     "slug": "bostezo_contagioso_cerebro",
-    "temaResumen": "¿Por qué bostezar es tan contagioso y qué función cumple en el cerebro?"
+    "temaResumen": "¿Por qué bostezar es tan contagioso y qué función cumple en el cerebro?",
+    "titulo": "¿Por qué el bostezo es contagioso según la neurociencia?",
+    "titulo_corto": "EL MISTERIO DEL BOSTEZO",
+    "gancho": "¿Por qué basta con ver a alguien bostezar, o incluso con solo leer la palabra bostezo, para que sientas unas ganas incontrolables de abrir la boca?",
+    "fuentes": [
+      "Gallup et al.: Evolutionary Psychology (Brain Thermoregulation Hypothesis)",
+      "Frontiers in Psychology (Contagious Yawning & Social Empathy)"
+    ],
+    "genero": "SCIENCE",
+    "duracionObjetivo": [
+      62,
+      110
+    ]
   },
   "escenas": [
     {
@@ -58,137 +70,137 @@
         "ganas incontrolables",
         "abrir la boca"
       ],
-      "duracionSegundos": 8.698,
+      "duracionSegundos": 7.33,
       "palabras": [
         {
           "palabra": "Por",
           "inicioMs": 0,
-          "finMs": 160
+          "finMs": 220
         },
         {
           "palabra": "qué",
-          "inicioMs": 160,
-          "finMs": 320
+          "inicioMs": 220,
+          "finMs": 380
         },
         {
           "palabra": "basta",
-          "inicioMs": 320,
-          "finMs": 580
+          "inicioMs": 380,
+          "finMs": 640
         },
         {
           "palabra": "con",
-          "inicioMs": 580,
-          "finMs": 780
+          "inicioMs": 640,
+          "finMs": 880
         },
         {
           "palabra": "ver",
-          "inicioMs": 780,
-          "finMs": 980
+          "inicioMs": 880,
+          "finMs": 1060
         },
         {
           "palabra": "a",
-          "inicioMs": 980,
-          "finMs": 1100
+          "inicioMs": 1060,
+          "finMs": 1180
         },
         {
           "palabra": "alguien",
-          "inicioMs": 1100,
-          "finMs": 1320
+          "inicioMs": 1180,
+          "finMs": 1360
         },
         {
           "palabra": "bostezar",
-          "inicioMs": 1320,
-          "finMs": 2040
+          "inicioMs": 1360,
+          "finMs": 2020
         },
         {
           "palabra": "o",
-          "inicioMs": 2040,
-          "finMs": 2400
+          "inicioMs": 2020,
+          "finMs": 2240
         },
         {
           "palabra": "incluso",
-          "inicioMs": 2400,
-          "finMs": 2880
+          "inicioMs": 2240,
+          "finMs": 2620
         },
         {
           "palabra": "con",
-          "inicioMs": 2880,
-          "finMs": 3180
+          "inicioMs": 2620,
+          "finMs": 2840
         },
         {
           "palabra": "solo",
-          "inicioMs": 3180,
-          "finMs": 3520
+          "inicioMs": 2840,
+          "finMs": 3100
         },
         {
           "palabra": "leer",
-          "inicioMs": 3520,
-          "finMs": 3880
+          "inicioMs": 3100,
+          "finMs": 3380
         },
         {
           "palabra": "la",
-          "inicioMs": 3880,
-          "finMs": 4080
+          "inicioMs": 3380,
+          "finMs": 3540
         },
         {
           "palabra": "palabra",
-          "inicioMs": 4080,
-          "finMs": 4500
+          "inicioMs": 3540,
+          "finMs": 3840
         },
         {
           "palabra": "bostezo",
-          "inicioMs": 4500,
-          "finMs": 5160
+          "inicioMs": 3840,
+          "finMs": 4500
         },
         {
           "palabra": "para",
-          "inicioMs": 5160,
-          "finMs": 5540
+          "inicioMs": 4500,
+          "finMs": 4660
         },
         {
           "palabra": "que",
-          "inicioMs": 5540,
-          "finMs": 5700
+          "inicioMs": 4660,
+          "finMs": 4800
         },
         {
           "palabra": "sientas",
-          "inicioMs": 5700,
-          "finMs": 6040
+          "inicioMs": 4800,
+          "finMs": 5140
         },
         {
           "palabra": "unas",
-          "inicioMs": 6040,
-          "finMs": 6200
+          "inicioMs": 5140,
+          "finMs": 5280
         },
         {
           "palabra": "ganas",
-          "inicioMs": 6200,
-          "finMs": 6540
+          "inicioMs": 5280,
+          "finMs": 5580
         },
         {
           "palabra": "incontrolables",
-          "inicioMs": 6540,
-          "finMs": 7120
+          "inicioMs": 5580,
+          "finMs": 6140
         },
         {
           "palabra": "de",
-          "inicioMs": 7120,
-          "finMs": 7300
+          "inicioMs": 6140,
+          "finMs": 6320
         },
         {
           "palabra": "abrir",
-          "inicioMs": 7300,
-          "finMs": 7440
+          "inicioMs": 6320,
+          "finMs": 6460
         },
         {
           "palabra": "la",
-          "inicioMs": 7440,
-          "finMs": 7600
+          "inicioMs": 6460,
+          "finMs": 6620
         },
         {
           "palabra": "boca",
-          "inicioMs": 7600,
-          "finMs": 7840
+          "inicioMs": 6620,
+          "finMs": 6840
         }
       ]
     },
@@ -224,122 +236,122 @@
         "sociales",
         "evolución humana"
       ],
-      "duracionSegundos": 7.426,
+      "duracionSegundos": 6.922,
       "palabras": [
         {
           "palabra": "Este",
           "inicioMs": 0,
-          "finMs": 300
+          "finMs": 320
         },
         {
           "palabra": "fenómeno",
-          "inicioMs": 300,
-          "finMs": 680
+          "inicioMs": 320,
+          "finMs": 740
         },
         {
           "palabra": "no",
-          "inicioMs": 680,
-          "finMs": 880
+          "inicioMs": 740,
+          "finMs": 900
         },
         {
           "palabra": "es",
-          "inicioMs": 880,
-          "finMs": 1020
+          "inicioMs": 900,
+          "finMs": 1060
         },
         {
           "palabra": "una",
-          "inicioMs": 1020,
-          "finMs": 1140
+          "inicioMs": 1060,
+          "finMs": 1200
         },
         {
           "palabra": "simple",
-          "inicioMs": 1140,
-          "finMs": 1460
+          "inicioMs": 1200,
+          "finMs": 1480
         },
         {
           "palabra": "señal",
-          "inicioMs": 1460,
-          "finMs": 1800
-        },
-        {
-          "palabra": "de",
-          "inicioMs": 1800,
+          "inicioMs": 1480,
           "finMs": 1880
         },
         {
-          "palabra": "aburrimiento",
+          "palabra": "de",
           "inicioMs": 1880,
-          "finMs": 2480
+          "finMs": 1960
+        },
+        {
+          "palabra": "aburrimiento",
+          "inicioMs": 1960,
+          "finMs": 2600
         },
         {
           "palabra": "es",
-          "inicioMs": 2880,
-          "finMs": 3180
+          "inicioMs": 2920,
+          "finMs": 3060
         },
         {
           "palabra": "uno",
-          "inicioMs": 3180,
-          "finMs": 3360
+          "inicioMs": 3060,
+          "finMs": 3260
         },
         {
           "palabra": "de",
-          "inicioMs": 3360,
-          "finMs": 3440
+          "inicioMs": 3260,
+          "finMs": 3320
         },
         {
           "palabra": "los",
-          "inicioMs": 3440,
-          "finMs": 3580
+          "inicioMs": 3320,
+          "finMs": 3440
         },
         {
           "palabra": "reflejos",
-          "inicioMs": 3580,
-          "finMs": 3960
+          "inicioMs": 3440,
+          "finMs": 3820
         },
         {
           "palabra": "biológicos",
-          "inicioMs": 3960,
-          "finMs": 4500
+          "inicioMs": 3820,
+          "finMs": 4400
         },
         {
           "palabra": "y",
-          "inicioMs": 4500,
-          "finMs": 4640
+          "inicioMs": 4400,
+          "finMs": 4500
         },
         {
           "palabra": "sociales",
-          "inicioMs": 4640,
-          "finMs": 5020
+          "inicioMs": 4500,
+          "finMs": 4840
         },
         {
           "palabra": "más",
-          "inicioMs": 5020,
-          "finMs": 5240
+          "inicioMs": 4840,
+          "finMs": 5040
         },
         {
           "palabra": "fascinantes",
-          "inicioMs": 5240,
-          "finMs": 5780
+          "inicioMs": 5040,
+          "finMs": 5540
         },
         {
           "palabra": "de",
-          "inicioMs": 5780,
-          "finMs": 5920
+          "inicioMs": 5540,
+          "finMs": 5660
         },
         {
           "palabra": "la",
-          "inicioMs": 5920,
-          "finMs": 6000
+          "inicioMs": 5660,
+          "finMs": 5740
         },
         {
           "palabra": "evolución",
-          "inicioMs": 6000,
-          "finMs": 6340
+          "inicioMs": 5740,
+          "finMs": 6080
         },
         {
           "palabra": "humana",
-          "inicioMs": 6340,
-          "finMs": 6760
+          "inicioMs": 6080,
+          "finMs": 6460
         }
       ]
     },
@@ -391,102 +403,102 @@
         "neuronas espejo",
         "corteza frontal"
       ],
-      "duracionSegundos": 7.306,
+      "duracionSegundos": 7.258,
       "palabras": [
         {
           "palabra": "En",
           "inicioMs": 0,
-          "finMs": 220
+          "finMs": 200
         },
         {
           "palabra": "primer",
-          "inicioMs": 220,
-          "finMs": 440
+          "inicioMs": 200,
+          "finMs": 420
         },
         {
           "palabra": "lugar",
-          "inicioMs": 440,
-          "finMs": 840
+          "inicioMs": 420,
+          "finMs": 780
         },
         {
           "palabra": "los",
-          "inicioMs": 1360,
-          "finMs": 1520
+          "inicioMs": 940,
+          "finMs": 1080
         },
         {
           "palabra": "neurólogos",
-          "inicioMs": 1520,
-          "finMs": 2040
+          "inicioMs": 1080,
+          "finMs": 1640
         },
         {
           "palabra": "descubrieron",
-          "inicioMs": 2040,
-          "finMs": 2580
+          "inicioMs": 1640,
+          "finMs": 2340
         },
         {
           "palabra": "que",
-          "inicioMs": 2580,
-          "finMs": 2760
+          "inicioMs": 2340,
+          "finMs": 2500
         },
         {
           "palabra": "el",
-          "inicioMs": 2760,
-          "finMs": 2900
+          "inicioMs": 2500,
+          "finMs": 2600
         },
         {
           "palabra": "contagio",
-          "inicioMs": 2900,
-          "finMs": 3400
+          "inicioMs": 2600,
+          "finMs": 3100
         },
         {
           "palabra": "está",
-          "inicioMs": 3400,
-          "finMs": 3560
+          "inicioMs": 3100,
+          "finMs": 3300
         },
         {
           "palabra": "impulsado",
-          "inicioMs": 3560,
-          "finMs": 3940
+          "inicioMs": 3300,
+          "finMs": 3840
         },
         {
           "palabra": "por",
-          "inicioMs": 3940,
-          "finMs": 4140
+          "inicioMs": 3840,
+          "finMs": 4060
         },
         {
           "palabra": "nuestras",
-          "inicioMs": 4140,
-          "finMs": 4380
+          "inicioMs": 4060,
+          "finMs": 4420
         },
         {
           "palabra": "neuronas",
-          "inicioMs": 4380,
-          "finMs": 4840
+          "inicioMs": 4420,
+          "finMs": 5080
         },
         {
           "palabra": "espejo",
-          "inicioMs": 5000,
-          "finMs": 5180
+          "inicioMs": 5260,
+          "finMs": 5760
         },
         {
           "palabra": "en",
-          "inicioMs": 5180,
-          "finMs": 5280
+          "inicioMs": 5760,
+          "finMs": 5860
         },
         {
           "palabra": "la",
-          "inicioMs": 5280,
-          "finMs": 5320
+          "inicioMs": 5860,
+          "finMs": 5960
         },
         {
           "palabra": "corteza",
-          "inicioMs": 5320,
-          "finMs": 5680
+          "inicioMs": 5960,
+          "finMs": 6380
         },
         {
           "palabra": "frontal",
-          "inicioMs": 5680,
-          "finMs": 6060
+          "inicioMs": 6380,
+          "finMs": 6760
         }
       ]
     },
@@ -522,102 +534,102 @@
         "emociones",
         "empatía involuntaria"
       ],
-      "duracionSegundos": 8.146,
+      "duracionSegundos": 7.762,
       "palabras": [
         {
           "palabra": "Estas",
           "inicioMs": 0,
-          "finMs": 400
+          "finMs": 440
         },
         {
           "palabra": "células",
-          "inicioMs": 400,
-          "finMs": 620
+          "inicioMs": 440,
+          "finMs": 680
         },
         {
           "palabra": "cerebrales",
-          "inicioMs": 620,
-          "finMs": 1220
+          "inicioMs": 680,
+          "finMs": 1400
         },
         {
           "palabra": "reproducen",
-          "inicioMs": 1220,
-          "finMs": 1800
+          "inicioMs": 1400,
+          "finMs": 2060
         },
         {
           "palabra": "internamente",
-          "inicioMs": 1800,
-          "finMs": 2300
+          "inicioMs": 2060,
+          "finMs": 2640
         },
         {
           "palabra": "las",
-          "inicioMs": 2300,
-          "finMs": 2560
+          "inicioMs": 2640,
+          "finMs": 2920
         },
         {
           "palabra": "acciones",
-          "inicioMs": 2560,
-          "finMs": 2940
+          "inicioMs": 2920,
+          "finMs": 3320
         },
         {
           "palabra": "y",
-          "inicioMs": 2940,
-          "finMs": 3140
+          "inicioMs": 3320,
+          "finMs": 3480
         },
         {
           "palabra": "emociones",
-          "inicioMs": 3140,
-          "finMs": 3460
+          "inicioMs": 3480,
+          "finMs": 3820
         },
         {
           "palabra": "que",
-          "inicioMs": 3460,
-          "finMs": 3620
+          "inicioMs": 3820,
+          "finMs": 4000
         },
         {
           "palabra": "vemos",
-          "inicioMs": 3620,
-          "finMs": 3800
+          "inicioMs": 4000,
+          "finMs": 4180
         },
         {
           "palabra": "en",
-          "inicioMs": 3800,
-          "finMs": 3940
+          "inicioMs": 4180,
+          "finMs": 4380
         },
         {
           "palabra": "los",
-          "inicioMs": 3940,
-          "finMs": 4020
+          "inicioMs": 4380,
+          "finMs": 4480
         },
         {
           "palabra": "demás",
-          "inicioMs": 4020,
-          "finMs": 4240
+          "inicioMs": 4480,
+          "finMs": 4700
         },
         {
           "palabra": "conectándonos",
-          "inicioMs": 4660,
-          "finMs": 5200
+          "inicioMs": 4960,
+          "finMs": 5540
         },
         {
           "palabra": "mediante",
-          "inicioMs": 5200,
-          "finMs": 5560
+          "inicioMs": 5540,
+          "finMs": 5960
         },
         {
           "palabra": "pura",
-          "inicioMs": 5560,
-          "finMs": 5940
+          "inicioMs": 5960,
+          "finMs": 6280
         },
         {
           "palabra": "empatía",
-          "inicioMs": 5940,
-          "finMs": 6520
+          "inicioMs": 6280,
+          "finMs": 6660
         },
         {
           "palabra": "involuntaria",
-          "inicioMs": 6520,
-          "finMs": 7240
+          "inicioMs": 6660,
+          "finMs": 7320
         }
       ]
     },
@@ -653,112 +665,112 @@
         "cercanía emocional",
         "más rápido te contagias"
       ],
-      "duracionSegundos": 9.802,
+      "duracionSegundos": 9.082,
       "palabras": [
         {
           "palabra": "De",
           "inicioMs": 0,
-          "finMs": 260
+          "finMs": 240
         },
         {
           "palabra": "hecho",
-          "inicioMs": 260,
+          "inicioMs": 240,
           "finMs": 540
         },
         {
           "palabra": "está",
-          "inicioMs": 720,
-          "finMs": 940
+          "inicioMs": 840,
+          "finMs": 1120
         },
         {
           "palabra": "demostrado",
-          "inicioMs": 940,
-          "finMs": 1400
+          "inicioMs": 1120,
+          "finMs": 1660
         },
         {
           "palabra": "científicamente",
-          "inicioMs": 1400,
-          "finMs": 2420
+          "inicioMs": 1660,
+          "finMs": 2760
         },
         {
           "palabra": "mientras",
-          "inicioMs": 2720,
-          "finMs": 2940
+          "inicioMs": 2900,
+          "finMs": 3100
         },
         {
           "palabra": "más",
-          "inicioMs": 2940,
-          "finMs": 3200
+          "inicioMs": 3100,
+          "finMs": 3360
         },
         {
           "palabra": "empatía",
-          "inicioMs": 3200,
-          "finMs": 3740
-        },
-        {
-          "palabra": "o",
-          "inicioMs": 3740,
+          "inicioMs": 3360,
           "finMs": 3960
         },
         {
-          "palabra": "cercanía",
+          "palabra": "o",
           "inicioMs": 3960,
-          "finMs": 4480
+          "finMs": 4140
+        },
+        {
+          "palabra": "cercanía",
+          "inicioMs": 4140,
+          "finMs": 4620
         },
         {
           "palabra": "emocional",
-          "inicioMs": 4480,
-          "finMs": 4960
+          "inicioMs": 4620,
+          "finMs": 5080
         },
         {
           "palabra": "sientes",
-          "inicioMs": 4960,
-          "finMs": 5320
-        },
-        {
-          "palabra": "por",
-          "inicioMs": 5320,
+          "inicioMs": 5080,
           "finMs": 5580
         },
         {
-          "palabra": "alguien",
+          "palabra": "por",
           "inicioMs": 5580,
-          "finMs": 5900
+          "finMs": 5860
+        },
+        {
+          "palabra": "alguien",
+          "inicioMs": 5860,
+          "finMs": 6160
         },
         {
           "palabra": "más",
-          "inicioMs": 6040,
-          "finMs": 6140
+          "inicioMs": 6400,
+          "finMs": 6560
         },
         {
           "palabra": "rápido",
-          "inicioMs": 6140,
-          "finMs": 6480
+          "inicioMs": 6560,
+          "finMs": 6960
         },
         {
           "palabra": "te",
-          "inicioMs": 6480,
-          "finMs": 6680
+          "inicioMs": 6960,
+          "finMs": 7240
         },
         {
           "palabra": "contagias",
-          "inicioMs": 6680,
-          "finMs": 7180
+          "inicioMs": 7240,
+          "finMs": 7840
         },
         {
           "palabra": "de",
-          "inicioMs": 7180,
-          "finMs": 7280
+          "inicioMs": 7840,
+          "finMs": 7940
         },
         {
           "palabra": "su",
-          "inicioMs": 7280,
-          "finMs": 7440
+          "inicioMs": 7940,
+          "finMs": 8060
         },
         {
           "palabra": "bostezo",
-          "inicioMs": 7440,
-          "finMs": 8040
+          "inicioMs": 8060,
+          "finMs": 8620
         }
       ]
     },
@@ -808,112 +820,112 @@
         "termodinámica",
         "radiador de automóvil"
       ],
-      "duracionSegundos": 7.426,
+      "duracionSegundos": 7.378,
       "palabras": [
         {
           "palabra": "Pero",
           "inicioMs": 0,
-          "finMs": 180
+          "finMs": 240
         },
         {
           "palabra": "hay",
-          "inicioMs": 180,
-          "finMs": 320
-        },
-        {
-          "palabra": "una",
-          "inicioMs": 320,
+          "inicioMs": 240,
           "finMs": 460
         },
         {
-          "palabra": "segunda",
+          "palabra": "una",
           "inicioMs": 460,
-          "finMs": 700
+          "finMs": 620
+        },
+        {
+          "palabra": "segunda",
+          "inicioMs": 620,
+          "finMs": 900
         },
         {
           "palabra": "razón",
-          "inicioMs": 700,
-          "finMs": 1080
+          "inicioMs": 900,
+          "finMs": 1300
         },
         {
           "palabra": "puramente",
           "inicioMs": 1300,
-          "finMs": 1600
+          "finMs": 1920
         },
         {
           "palabra": "biológica",
-          "inicioMs": 1600,
-          "finMs": 2280
+          "inicioMs": 1920,
+          "finMs": 2560
         },
         {
           "palabra": "y",
-          "inicioMs": 2280,
-          "finMs": 2380
+          "inicioMs": 2560,
+          "finMs": 2640
         },
         {
           "palabra": "termodinámica",
-          "inicioMs": 2380,
-          "finMs": 3160
+          "inicioMs": 2640,
+          "finMs": 3460
         },
         {
           "palabra": "tu",
-          "inicioMs": 3540,
-          "finMs": 3660
+          "inicioMs": 3580,
+          "finMs": 3680
         },
         {
           "palabra": "cerebro",
-          "inicioMs": 3660,
-          "finMs": 4020
+          "inicioMs": 3680,
+          "finMs": 4080
         },
         {
           "palabra": "utiliza",
-          "inicioMs": 4020,
-          "finMs": 4460
+          "inicioMs": 4080,
+          "finMs": 4580
         },
         {
           "palabra": "el",
-          "inicioMs": 4460,
-          "finMs": 4600
+          "inicioMs": 4580,
+          "finMs": 4700
         },
         {
           "palabra": "bostezo",
-          "inicioMs": 4600,
-          "finMs": 5040
+          "inicioMs": 4700,
+          "finMs": 5200
         },
         {
           "palabra": "como",
-          "inicioMs": 5040,
-          "finMs": 5220
+          "inicioMs": 5200,
+          "finMs": 5360
         },
         {
           "palabra": "si",
-          "inicioMs": 5220,
-          "finMs": 5380
+          "inicioMs": 5360,
+          "finMs": 5540
         },
         {
           "palabra": "fuera",
-          "inicioMs": 5380,
-          "finMs": 5580
+          "inicioMs": 5540,
+          "finMs": 5760
         },
         {
           "palabra": "un",
-          "inicioMs": 5580,
-          "finMs": 5700
+          "inicioMs": 5760,
+          "finMs": 5880
         },
         {
           "palabra": "radiador",
-          "inicioMs": 5700,
-          "finMs": 6100
-        },
-        {
-          "palabra": "de",
-          "inicioMs": 6100,
+          "inicioMs": 5880,
           "finMs": 6220
         },
         {
-          "palabra": "automóvil",
+          "palabra": "de",
           "inicioMs": 6220,
-          "finMs": 6720
+          "finMs": 6420
+        },
+        {
+          "palabra": "automóvil",
+          "inicioMs": 6420,
+          "finMs": 6920
         }
       ]
     },
@@ -951,7 +963,7 @@
         "temperatura interna",
         "rendimiento y velocidad"
       ],
-      "duracionSegundos": 8.65,
+      "duracionSegundos": 8.53,
       "palabras": [
         {
           "palabra": "Cuando",
@@ -961,102 +973,102 @@
         {
           "palabra": "tu",
           "inicioMs": 280,
-          "finMs": 420
+          "finMs": 440
         },
         {
           "palabra": "cerebro",
-          "inicioMs": 420,
+          "inicioMs": 440,
           "finMs": 740
         },
         {
           "palabra": "trabaja",
           "inicioMs": 740,
-          "finMs": 1160
+          "finMs": 1140
         },
         {
           "palabra": "intensamente",
-          "inicioMs": 1160,
-          "finMs": 1920
+          "inicioMs": 1140,
+          "finMs": 1640
         },
         {
           "palabra": "acumula",
-          "inicioMs": 2080,
-          "finMs": 2440
+          "inicioMs": 1920,
+          "finMs": 2200
         },
         {
           "palabra": "calor",
-          "inicioMs": 2440,
-          "finMs": 2760
+          "inicioMs": 2200,
+          "finMs": 2520
         },
         {
           "palabra": "y",
-          "inicioMs": 2760,
-          "finMs": 3040
+          "inicioMs": 2520,
+          "finMs": 2780
         },
         {
           "palabra": "su",
-          "inicioMs": 3040,
-          "finMs": 3160
+          "inicioMs": 2780,
+          "finMs": 2900
         },
         {
           "palabra": "temperatura",
-          "inicioMs": 3160,
-          "finMs": 3500
+          "inicioMs": 2900,
+          "finMs": 3240
         },
         {
           "palabra": "interna",
-          "inicioMs": 3500,
-          "finMs": 4080
+          "inicioMs": 3240,
+          "finMs": 3840
         },
         {
           "palabra": "sube",
-          "inicioMs": 4080,
-          "finMs": 5100
+          "inicioMs": 3840,
+          "finMs": 4820
         },
         {
           "palabra": "ligeramente",
-          "inicioMs": 5380,
-          "finMs": 5520
+          "inicioMs": 5320,
+          "finMs": 5540
         },
         {
           "palabra": "lo",
-          "inicioMs": 5520,
-          "finMs": 5660
+          "inicioMs": 5540,
+          "finMs": 5680
         },
         {
           "palabra": "que",
-          "inicioMs": 5660,
-          "finMs": 5920
+          "inicioMs": 5680,
+          "finMs": 5980
         },
         {
           "palabra": "reduce",
-          "inicioMs": 5920,
-          "finMs": 6180
+          "inicioMs": 5980,
+          "finMs": 6260
         },
         {
           "palabra": "su",
-          "inicioMs": 6180,
-          "finMs": 6540
+          "inicioMs": 6260,
+          "finMs": 6700
         },
         {
           "palabra": "rendimiento",
-          "inicioMs": 6540,
-          "finMs": 6720
+          "inicioMs": 6700,
+          "finMs": 6980
         },
         {
           "palabra": "y",
-          "inicioMs": 6720,
-          "finMs": 7060
+          "inicioMs": 6980,
+          "finMs": 7360
         },
         {
           "palabra": "velocidad",
-          "inicioMs": 7060,
-          "finMs": 7740
+          "inicioMs": 7360,
+          "finMs": 8060
         },
         {
           "palabra": "cognitiva",
-          "inicioMs": 7740,
-          "finMs": 8400
+          "inicioMs": 8060,
+          "finMs": 8280
         }
       ]
     },
@@ -1097,127 +1109,127 @@
         "aire fresco",
         "enfría la sangre"
       ],
-      "duracionSegundos": 9.178,
+      "duracionSegundos": 6.994,
       "palabras": [
         {
           "palabra": "Al",
           "inicioMs": 0,
-          "finMs": 260
+          "finMs": 220
         },
         {
           "palabra": "bostezar",
-          "inicioMs": 260,
+          "inicioMs": 220,
           "finMs": 840
         },
         {
           "palabra": "inhalas",
-          "inicioMs": 840,
-          "finMs": 2120
+          "inicioMs": 1000,
+          "finMs": 1380
         },
         {
           "palabra": "una",
-          "inicioMs": 2120,
-          "finMs": 2420
+          "inicioMs": 1380,
+          "finMs": 1520
         },
         {
           "palabra": "corriente",
-          "inicioMs": 2420,
-          "finMs": 3040
+          "inicioMs": 1520,
+          "finMs": 1980
         },
         {
           "palabra": "profunda",
-          "inicioMs": 3040,
-          "finMs": 3520
+          "inicioMs": 1980,
+          "finMs": 2480
         },
         {
           "palabra": "de",
-          "inicioMs": 3520,
-          "finMs": 3700
+          "inicioMs": 2480,
+          "finMs": 2620
         },
         {
           "palabra": "aire",
-          "inicioMs": 3700,
-          "finMs": 3840
+          "inicioMs": 2620,
+          "finMs": 2780
         },
         {
           "palabra": "fresco",
-          "inicioMs": 3840,
-          "finMs": 4320
+          "inicioMs": 2780,
+          "finMs": 3260
         },
         {
           "palabra": "que",
-          "inicioMs": 4320,
-          "finMs": 4480
+          "inicioMs": 3260,
+          "finMs": 3400
         },
         {
           "palabra": "enfría",
-          "inicioMs": 4480,
-          "finMs": 4800
+          "inicioMs": 3400,
+          "finMs": 3680
         },
         {
           "palabra": "la",
-          "inicioMs": 4800,
-          "finMs": 4980
+          "inicioMs": 3680,
+          "finMs": 3820
         },
         {
           "palabra": "sangre",
-          "inicioMs": 4980,
-          "finMs": 5260
+          "inicioMs": 3820,
+          "finMs": 4120
         },
         {
           "palabra": "de",
-          "inicioMs": 5260,
-          "finMs": 5400
+          "inicioMs": 4120,
+          "finMs": 4240
         },
         {
           "palabra": "la",
-          "inicioMs": 5400,
-          "finMs": 5520
+          "inicioMs": 4240,
+          "finMs": 4340
         },
         {
           "palabra": "cavidad",
-          "inicioMs": 5520,
-          "finMs": 5800
+          "inicioMs": 4340,
+          "finMs": 4640
         },
         {
           "palabra": "nasal",
-          "inicioMs": 5800,
-          "finMs": 6160
+          "inicioMs": 4640,
+          "finMs": 5000
         },
         {
           "palabra": "antes",
-          "inicioMs": 6160,
-          "finMs": 6740
+          "inicioMs": 5000,
+          "finMs": 5440
         },
         {
           "palabra": "de",
-          "inicioMs": 6740,
-          "finMs": 6900
+          "inicioMs": 5440,
+          "finMs": 5580
         },
         {
           "palabra": "que",
-          "inicioMs": 6900,
-          "finMs": 7040
+          "inicioMs": 5580,
+          "finMs": 5700
         },
         {
           "palabra": "viaje",
-          "inicioMs": 7040,
-          "finMs": 7320
+          "inicioMs": 5700,
+          "finMs": 6100
         },
         {
           "palabra": "hacia",
-          "inicioMs": 7320,
-          "finMs": 7480
+          "inicioMs": 6100,
+          "finMs": 6180
         },
         {
           "palabra": "tu",
-          "inicioMs": 7480,
-          "finMs": 7600
+          "inicioMs": 6180,
+          "finMs": 6260
         },
         {
           "palabra": "cabeza",
-          "inicioMs": 7600,
-          "finMs": 7880
+          "inicioMs": 6260,
+          "finMs": 6480
         }
       ]
     },
@@ -1255,127 +1267,127 @@
         "despierta tus neuronas",
         "estado óptimo de alerta"
       ],
-      "duracionSegundos": 12.394,
+      "duracionSegundos": 8.698,
       "palabras": [
         {
           "palabra": "Ese",
           "inicioMs": 0,
-          "finMs": 260
+          "finMs": 320
         },
         {
           "palabra": "flujo",
-          "inicioMs": 260,
-          "finMs": 700
+          "inicioMs": 320,
+          "finMs": 660
         },
         {
           "palabra": "de",
-          "inicioMs": 700,
-          "finMs": 800
+          "inicioMs": 660,
+          "finMs": 780
         },
         {
           "palabra": "sangre",
-          "inicioMs": 800,
-          "finMs": 1100
+          "inicioMs": 780,
+          "finMs": 1060
         },
         {
           "palabra": "refrigerada",
-          "inicioMs": 1100,
-          "finMs": 1760
+          "inicioMs": 1060,
+          "finMs": 1740
         },
         {
           "palabra": "actúa",
-          "inicioMs": 1760,
-          "finMs": 2340
+          "inicioMs": 1740,
+          "finMs": 2020
         },
         {
           "palabra": "como",
-          "inicioMs": 2340,
-          "finMs": 2580
+          "inicioMs": 2020,
+          "finMs": 2300
         },
         {
           "palabra": "un",
-          "inicioMs": 2580,
-          "finMs": 2740
+          "inicioMs": 2300,
+          "finMs": 2420
         },
         {
           "palabra": "shock",
-          "inicioMs": 2740,
-          "finMs": 2900
+          "inicioMs": 2420,
+          "finMs": 2600
         },
         {
           "palabra": "de",
-          "inicioMs": 2900,
-          "finMs": 3080
+          "inicioMs": 2600,
+          "finMs": 2780
         },
         {
           "palabra": "frescura",
-          "inicioMs": 3080,
-          "finMs": 3540
+          "inicioMs": 2780,
+          "finMs": 3240
         },
         {
           "palabra": "que",
-          "inicioMs": 3540,
-          "finMs": 3800
+          "inicioMs": 3240,
+          "finMs": 3420
         },
         {
           "palabra": "despierta",
-          "inicioMs": 3800,
-          "finMs": 5740
+          "inicioMs": 3420,
+          "finMs": 3880
         },
         {
           "palabra": "tus",
-          "inicioMs": 5740,
-          "finMs": 5980
+          "inicioMs": 3880,
+          "finMs": 4080
         },
         {
           "palabra": "neuronas",
-          "inicioMs": 5980,
-          "finMs": 6540
+          "inicioMs": 4080,
+          "finMs": 4600
         },
         {
           "palabra": "y",
-          "inicioMs": 6540,
-          "finMs": 6640
+          "inicioMs": 4600,
+          "finMs": 4700
         },
         {
           "palabra": "mantiene",
-          "inicioMs": 6640,
-          "finMs": 7040
+          "inicioMs": 4700,
+          "finMs": 5060
         },
         {
           "palabra": "tu",
-          "inicioMs": 7040,
-          "finMs": 7220
+          "inicioMs": 5060,
+          "finMs": 5240
         },
         {
           "palabra": "cerebro",
-          "inicioMs": 7220,
-          "finMs": 7620
+          "inicioMs": 5240,
+          "finMs": 5620
         },
         {
           "palabra": "en",
-          "inicioMs": 7620,
-          "finMs": 7720
+          "inicioMs": 5620,
+          "finMs": 5820
         },
         {
           "palabra": "estado",
-          "inicioMs": 7720,
-          "finMs": 7980
+          "inicioMs": 5820,
+          "finMs": 6140
         },
         {
           "palabra": "óptimo",
-          "inicioMs": 7980,
-          "finMs": 8500
+          "inicioMs": 6140,
+          "finMs": 6660
         },
         {
           "palabra": "de",
-          "inicioMs": 8500,
-          "finMs": 8740
+          "inicioMs": 6660,
+          "finMs": 6860
         },
         {
           "palabra": "alerta",
-          "inicioMs": 8740,
-          "finMs": 10080
+          "inicioMs": 6860,
+          "finMs": 8240
         }
       ]
     },
@@ -1403,7 +1415,7 @@
           "orientacion": "derecha",
           "prop": "shield",
           "poseId": "protecting_shielding",
-          "expresion": "serious",
+          "expresion": "analytical",
           "habla": true
         }
       ],
@@ -1412,127 +1424,127 @@
         "sincronizar el bostezo",
         "guardia alta"
       ],
-      "duracionSegundos": 8.386,
+      "duracionSegundos": 7.93,
       "palabras": [
         {
           "palabra": "Y",
           "inicioMs": 0,
-          "finMs": 200
+          "finMs": 180
         },
         {
           "palabra": "en",
-          "inicioMs": 200,
-          "finMs": 280
+          "inicioMs": 180,
+          "finMs": 300
         },
         {
           "palabra": "nuestros",
-          "inicioMs": 280,
-          "finMs": 580
+          "inicioMs": 300,
+          "finMs": 600
         },
         {
           "palabra": "antepasados",
-          "inicioMs": 580,
-          "finMs": 1260
+          "inicioMs": 600,
+          "finMs": 1280
         },
         {
           "palabra": "primitivos",
-          "inicioMs": 1260,
-          "finMs": 1940
+          "inicioMs": 1280,
+          "finMs": 1980
         },
         {
           "palabra": "sincronizar",
-          "inicioMs": 2220,
-          "finMs": 2900
+          "inicioMs": 2200,
+          "finMs": 2760
         },
         {
           "palabra": "el",
-          "inicioMs": 2900,
-          "finMs": 3080
+          "inicioMs": 2760,
+          "finMs": 2920
         },
         {
           "palabra": "bostezo",
-          "inicioMs": 3080,
-          "finMs": 3480
+          "inicioMs": 2920,
+          "finMs": 3380
         },
         {
           "palabra": "en",
-          "inicioMs": 3480,
-          "finMs": 3560
+          "inicioMs": 3380,
+          "finMs": 3420
         },
         {
           "palabra": "la",
-          "inicioMs": 3560,
-          "finMs": 3660
+          "inicioMs": 3420,
+          "finMs": 3500
         },
         {
           "palabra": "tribu",
-          "inicioMs": 3660,
-          "finMs": 3940
+          "inicioMs": 3500,
+          "finMs": 3840
         },
         {
           "palabra": "servía",
-          "inicioMs": 3940,
-          "finMs": 4360
+          "inicioMs": 3840,
+          "finMs": 4260
         },
         {
           "palabra": "para",
-          "inicioMs": 4360,
-          "finMs": 4560
+          "inicioMs": 4260,
+          "finMs": 4440
         },
         {
           "palabra": "que",
-          "inicioMs": 4560,
-          "finMs": 4700
+          "inicioMs": 4440,
+          "finMs": 4600
         },
         {
           "palabra": "todo",
-          "inicioMs": 4700,
-          "finMs": 4900
+          "inicioMs": 4600,
+          "finMs": 4800
         },
         {
           "palabra": "el",
-          "inicioMs": 4900,
-          "finMs": 5060
+          "inicioMs": 4800,
+          "finMs": 4960
         },
         {
           "palabra": "grupo",
-          "inicioMs": 5060,
-          "finMs": 5220
+          "inicioMs": 4960,
+          "finMs": 5120
         },
         {
           "palabra": "mantuviera",
-          "inicioMs": 5220,
-          "finMs": 5800
+          "inicioMs": 5120,
+          "finMs": 5720
         },
         {
           "palabra": "la",
-          "inicioMs": 5800,
-          "finMs": 5920
+          "inicioMs": 5720,
+          "finMs": 5840
         },
         {
           "palabra": "guardia",
-          "inicioMs": 5920,
-          "finMs": 6240
+          "inicioMs": 5840,
+          "finMs": 6260
         },
         {
           "palabra": "alta",
-          "inicioMs": 6240,
-          "finMs": 6520
+          "inicioMs": 6260,
+          "finMs": 6480
         },
         {
           "palabra": "frente",
-          "inicioMs": 6520,
-          "finMs": 6760
+          "inicioMs": 6480,
+          "finMs": 6740
         },
         {
           "palabra": "a",
-          "inicioMs": 6760,
-          "finMs": 6960
+          "inicioMs": 6740,
+          "finMs": 6940
         },
         {
           "palabra": "depredadores",
-          "inicioMs": 6960,
-          "finMs": 7520
+          "inicioMs": 6940,
+          "finMs": 7460
         }
       ]
     },
@@ -1574,7 +1586,7 @@
         "empatía extraordinaria",
         "felicidades"
       ],
-      "duracionSegundos": 9.634,
+      "duracionSegundos": 7.834,
       "palabras": [
         {
           "palabra": "Así",
@@ -1604,87 +1616,87 @@
         {
           "palabra": "te",
           "inicioMs": 1080,
-          "finMs": 1300
+          "finMs": 1320
         },
         {
           "palabra": "hizo",
-          "inicioMs": 1300,
-          "finMs": 1480
+          "inicioMs": 1320,
+          "finMs": 1500
         },
         {
           "palabra": "bostezar",
-          "inicioMs": 1480,
-          "finMs": 2080
+          "inicioMs": 1500,
+          "finMs": 2140
         },
         {
           "palabra": "felicidades",
-          "inicioMs": 2280,
-          "finMs": 2900
+          "inicioMs": 2360,
+          "finMs": 3020
         },
         {
           "palabra": "Significa",
-          "inicioMs": 3360,
-          "finMs": 3620
+          "inicioMs": 3240,
+          "finMs": 3540
         },
         {
           "palabra": "que",
-          "inicioMs": 3620,
-          "finMs": 3860
+          "inicioMs": 3540,
+          "finMs": 3800
         },
         {
           "palabra": "tu",
-          "inicioMs": 3860,
-          "finMs": 4000
+          "inicioMs": 3800,
+          "finMs": 3900
         },
         {
           "palabra": "cerebro",
-          "inicioMs": 4000,
+          "inicioMs": 3900,
           "finMs": 4260
         },
         {
           "palabra": "funciona",
           "inicioMs": 4260,
-          "finMs": 4620
+          "finMs": 4660
         },
         {
           "palabra": "a",
-          "inicioMs": 4620,
-          "finMs": 4800
+          "inicioMs": 4660,
+          "finMs": 4860
         },
         {
           "palabra": "la",
-          "inicioMs": 4800,
-          "finMs": 5260
+          "inicioMs": 4860,
+          "finMs": 5400
         },
         {
           "palabra": "perfección",
-          "inicioMs": 5260,
-          "finMs": 5500
+          "inicioMs": 5400,
+          "finMs": 5620
         },
         {
           "palabra": "y",
-          "inicioMs": 5500,
-          "finMs": 5680
-        },
-        {
-          "palabra": "tienes",
-          "inicioMs": 5680,
+          "inicioMs": 5620,
           "finMs": 5840
         },
         {
-          "palabra": "una",
+          "palabra": "tienes",
           "inicioMs": 5840,
-          "finMs": 6300
+          "finMs": 6040
+        },
+        {
+          "palabra": "una",
+          "inicioMs": 6040,
+          "finMs": 6460
         },
         {
           "palabra": "empatía",
-          "inicioMs": 6300,
-          "finMs": 7800
+          "inicioMs": 6460,
+          "finMs": 7360
         },
         {
           "palabra": "extraordinaria",
-          "inicioMs": 7800,
-          "finMs": 9384
+          "inicioMs": 7360,
+          "finMs": 7584
         }
       ]
     }

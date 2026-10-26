@@ -2,7 +2,19 @@
   "meta": {
     "id": "metales_brillantes_conductores",
     "slug": "metales_brillantes_conductores",
-    "temaResumen": "¿Por qué los metales son brillantes y conducen electricidad gracias al mar de electrones libres?"
+    "temaResumen": "¿Por qué los metales son brillantes y conducen electricidad gracias al mar de electrones libres?",
+    "titulo": "¿Por qué los metales brillan y conducen electricidad?",
+    "titulo_corto": "MAR DE ELECTRONES",
+    "gancho": "¿Sabías que un simple trozo de cobre o aluminio esconde un océano de electrones que se mueven libremente a velocidades cercanas a la luz?",
+    "fuentes": [
+      "Ashcroft & Mermin: Solid State Physics (Drude-Sommerfeld Model)",
+      "Charles Kittel: Introduction to Solid State Physics (Plasma Frequency of Metals)"
+    ],
+    "genero": "SCIENCE",
+    "duracionObjetivo": [
+      62,
+      110
+    ]
   },
   "escenas": [
     {
@@ -47,7 +59,7 @@
           "habla": true
         }
       ],
-      "duracionSegundos": 7.93,
+      "duracionSegundos": 7.018,
       "palabras": [
         {
           "palabra": "Sabías",
@@ -57,117 +69,117 @@
         {
           "palabra": "que",
           "inicioMs": 420,
-          "finMs": 560
+          "finMs": 600
         },
         {
           "palabra": "un",
-          "inicioMs": 560,
-          "finMs": 640
+          "inicioMs": 600,
+          "finMs": 700
         },
         {
           "palabra": "simple",
-          "inicioMs": 640,
-          "finMs": 960
+          "inicioMs": 700,
+          "finMs": 1020
         },
         {
           "palabra": "trozo",
-          "inicioMs": 960,
-          "finMs": 1280
+          "inicioMs": 1020,
+          "finMs": 1360
         },
         {
           "palabra": "de",
-          "inicioMs": 1280,
-          "finMs": 1400
+          "inicioMs": 1360,
+          "finMs": 1480
         },
         {
           "palabra": "cobre",
-          "inicioMs": 1400,
-          "finMs": 1720
+          "inicioMs": 1480,
+          "finMs": 1800
         },
         {
           "palabra": "o",
-          "inicioMs": 1720,
-          "finMs": 1840
+          "inicioMs": 1800,
+          "finMs": 1900
         },
         {
           "palabra": "aluminio",
-          "inicioMs": 1840,
-          "finMs": 2320
+          "inicioMs": 1900,
+          "finMs": 2400
         },
         {
           "palabra": "esconde",
-          "inicioMs": 2320,
-          "finMs": 2680
+          "inicioMs": 2400,
+          "finMs": 2840
         },
         {
           "palabra": "un",
-          "inicioMs": 2680,
-          "finMs": 2900
+          "inicioMs": 2840,
+          "finMs": 3060
         },
         {
           "palabra": "océano",
-          "inicioMs": 2900,
-          "finMs": 3320
+          "inicioMs": 3060,
+          "finMs": 3420
         },
         {
           "palabra": "de",
-          "inicioMs": 3320,
-          "finMs": 3400
+          "inicioMs": 3420,
+          "finMs": 3500
         },
         {
           "palabra": "electrones",
-          "inicioMs": 3400,
-          "finMs": 3920
+          "inicioMs": 3500,
+          "finMs": 4060
         },
         {
           "palabra": "que",
-          "inicioMs": 3920,
-          "finMs": 4020
+          "inicioMs": 4060,
+          "finMs": 4140
         },
         {
           "palabra": "se",
-          "inicioMs": 4020,
-          "finMs": 4120
+          "inicioMs": 4140,
+          "finMs": 4260
         },
         {
           "palabra": "mueven",
-          "inicioMs": 4120,
-          "finMs": 4380
+          "inicioMs": 4260,
+          "finMs": 4520
         },
         {
           "palabra": "libremente",
-          "inicioMs": 4380,
-          "finMs": 4940
+          "inicioMs": 4520,
+          "finMs": 5100
         },
         {
           "palabra": "a",
-          "inicioMs": 4940,
-          "finMs": 5140
+          "inicioMs": 5100,
+          "finMs": 5280
         },
         {
           "palabra": "velocidades",
-          "inicioMs": 5140,
-          "finMs": 5620
+          "inicioMs": 5280,
+          "finMs": 5800
         },
         {
           "palabra": "cercanas",
-          "inicioMs": 5620,
-          "finMs": 6120
+          "inicioMs": 5800,
+          "finMs": 6260
         },
         {
           "palabra": "a",
-          "inicioMs": 6120,
-          "finMs": 6280
+          "inicioMs": 6260,
+          "finMs": 6420
         },
         {
           "palabra": "la",
-          "inicioMs": 6280,
-          "finMs": 6440
+          "inicioMs": 6420,
+          "finMs": 6500
         },
         {
           "palabra": "luz",
-          "inicioMs": 6440,
-          "finMs": 7460
+          "inicioMs": 6500,
+          "finMs": 6768
         }
       ]
     },
@@ -220,16 +232,16 @@
           "capaZ": 25
         }
       ],
-      "duracionSegundos": 9.898,
+      "duracionSegundos": 9.634,
       "palabras": [
         {
           "palabra": "Los",
           "inicioMs": 0,
-          "finMs": 220
+          "finMs": 240
         },
         {
           "palabra": "metales",
-          "inicioMs": 220,
+          "inicioMs": 240,
           "finMs": 580
         },
         {
@@ -240,16 +252,16 @@
         {
           "palabra": "brillantes",
           "inicioMs": 780,
-          "finMs": 1280
+          "finMs": 1300
         },
         {
           "palabra": "y",
-          "inicioMs": 1280,
-          "finMs": 1440
+          "inicioMs": 1300,
+          "finMs": 1460
         },
         {
           "palabra": "conducen",
-          "inicioMs": 1440,
+          "inicioMs": 1460,
           "finMs": 1820
         },
         {
@@ -259,98 +271,98 @@
         },
         {
           "palabra": "porque",
-          "inicioMs": 2660,
-          "finMs": 2800
+          "inicioMs": 2480,
+          "finMs": 2780
         },
         {
           "palabra": "sus",
-          "inicioMs": 2800,
+          "inicioMs": 2780,
           "finMs": 3040
         },
         {
           "palabra": "átomos",
           "inicioMs": 3040,
-          "finMs": 3380
+          "finMs": 3340
         },
         {
           "palabra": "comparten",
-          "inicioMs": 3380,
-          "finMs": 3820
+          "inicioMs": 3340,
+          "finMs": 3800
         },
         {
           "palabra": "sus",
-          "inicioMs": 3820,
+          "inicioMs": 3800,
           "finMs": 4040
         },
         {
           "palabra": "electrones",
           "inicioMs": 4040,
-          "finMs": 4600
+          "finMs": 4520
         },
         {
           "palabra": "externos",
-          "inicioMs": 4600,
-          "finMs": 5200
+          "inicioMs": 4520,
+          "finMs": 5100
         },
         {
           "palabra": "en",
-          "inicioMs": 5200,
-          "finMs": 5360
+          "inicioMs": 5100,
+          "finMs": 5380
         },
         {
           "palabra": "una",
-          "inicioMs": 5360,
+          "inicioMs": 5380,
           "finMs": 5560
         },
         {
           "palabra": "nube",
           "inicioMs": 5560,
-          "finMs": 5800
+          "finMs": 5760
         },
         {
           "palabra": "colectiva",
-          "inicioMs": 5800,
-          "finMs": 6360
+          "inicioMs": 5760,
+          "finMs": 6260
         },
         {
           "palabra": "que",
-          "inicioMs": 6360,
-          "finMs": 6500
+          "inicioMs": 6260,
+          "finMs": 6420
         },
         {
           "palabra": "se",
-          "inicioMs": 6500,
-          "finMs": 6720
+          "inicioMs": 6420,
+          "finMs": 6700
         },
         {
           "palabra": "mueve",
-          "inicioMs": 6720,
-          "finMs": 7720
+          "inicioMs": 6700,
+          "finMs": 7600
         },
         {
           "palabra": "libremente",
-          "inicioMs": 7720,
-          "finMs": 8240
+          "inicioMs": 7600,
+          "finMs": 8100
         },
         {
           "palabra": "por",
-          "inicioMs": 8240,
-          "finMs": 8500
+          "inicioMs": 8100,
+          "finMs": 8320
         },
         {
           "palabra": "toda",
-          "inicioMs": 8500,
-          "finMs": 8720
+          "inicioMs": 8320,
+          "finMs": 8540
         },
         {
           "palabra": "la",
-          "inicioMs": 8720,
-          "finMs": 8900
+          "inicioMs": 8540,
+          "finMs": 8660
         },
         {
           "palabra": "estructura",
-          "inicioMs": 8900,
-          "finMs": 9420
+          "inicioMs": 8660,
+          "finMs": 9160
         }
       ]
     },
@@ -387,151 +399,151 @@
           "habla": true
         }
       ],
-      "duracionSegundos": 9.778,
+      "duracionSegundos": 9.85,
       "palabras": [
         {
           "palabra": "Esta",
           "inicioMs": 0,
-          "finMs": 340
+          "finMs": 320
         },
         {
           "palabra": "teoría",
-          "inicioMs": 340,
-          "finMs": 700
+          "inicioMs": 320,
+          "finMs": 660
         },
         {
           "palabra": "se",
-          "inicioMs": 700,
-          "finMs": 820
+          "inicioMs": 660,
+          "finMs": 800
         },
         {
           "palabra": "llama",
-          "inicioMs": 820,
-          "finMs": 1020
+          "inicioMs": 800,
+          "finMs": 1000
         },
         {
           "palabra": "modelo",
-          "inicioMs": 1020,
-          "finMs": 1340
+          "inicioMs": 1000,
+          "finMs": 1300
         },
         {
           "palabra": "del",
-          "inicioMs": 1340,
-          "finMs": 1560
+          "inicioMs": 1300,
+          "finMs": 1580
         },
         {
           "palabra": "gas",
-          "inicioMs": 1560,
-          "finMs": 1780
+          "inicioMs": 1580,
+          "finMs": 1720
         },
         {
           "palabra": "de",
-          "inicioMs": 1780,
+          "inicioMs": 1720,
           "finMs": 1920
         },
         {
           "palabra": "electrones",
           "inicioMs": 1920,
-          "finMs": 2480
+          "finMs": 2560
         },
         {
           "palabra": "o",
-          "inicioMs": 2480,
-          "finMs": 2600
+          "inicioMs": 2560,
+          "finMs": 2760
         },
         {
           "palabra": "mar",
-          "inicioMs": 2600,
-          "finMs": 2800
-        },
-        {
-          "palabra": "de",
-          "inicioMs": 2800,
+          "inicioMs": 2760,
           "finMs": 2940
         },
         {
-          "palabra": "electrones",
+          "palabra": "de",
           "inicioMs": 2940,
-          "finMs": 3580
+          "finMs": 3100
+        },
+        {
+          "palabra": "electrones",
+          "inicioMs": 3100,
+          "finMs": 3820
         },
         {
           "palabra": "y",
-          "inicioMs": 3580,
-          "finMs": 3920
+          "inicioMs": 4320,
+          "finMs": 4520
         },
         {
           "palabra": "explica",
-          "inicioMs": 3920,
-          "finMs": 4460
+          "inicioMs": 4520,
+          "finMs": 4980
         },
         {
           "palabra": "por",
-          "inicioMs": 4460,
-          "finMs": 4640
+          "inicioMs": 4980,
+          "finMs": 5180
         },
         {
           "palabra": "qué",
-          "inicioMs": 4640,
-          "finMs": 4880
+          "inicioMs": 5180,
+          "finMs": 5400
         },
         {
           "palabra": "todos",
-          "inicioMs": 4880,
-          "finMs": 5200
+          "inicioMs": 5400,
+          "finMs": 5760
         },
         {
           "palabra": "los",
-          "inicioMs": 5200,
-          "finMs": 5460
+          "inicioMs": 5760,
+          "finMs": 5940
         },
         {
           "palabra": "metales",
-          "inicioMs": 5460,
-          "finMs": 5900
+          "inicioMs": 5940,
+          "finMs": 6320
         },
         {
           "palabra": "tienen",
-          "inicioMs": 5900,
-          "finMs": 6260
+          "inicioMs": 6320,
+          "finMs": 6660
         },
         {
           "palabra": "propiedades",
-          "inicioMs": 6260,
-          "finMs": 6820
+          "inicioMs": 6660,
+          "finMs": 7260
         },
         {
           "palabra": "similares",
-          "inicioMs": 6820,
-          "finMs": 7440
+          "inicioMs": 7260,
+          "finMs": 7780
         },
         {
           "palabra": "a",
-          "inicioMs": 7440,
-          "finMs": 7600
+          "inicioMs": 7780,
+          "finMs": 7920
         },
         {
           "palabra": "pesar",
-          "inicioMs": 7600,
-          "finMs": 7840
+          "inicioMs": 7920,
+          "finMs": 8100
         },
         {
           "palabra": "de",
-          "inicioMs": 7840,
-          "finMs": 8080
+          "inicioMs": 8100,
+          "finMs": 8320
         },
         {
           "palabra": "ser",
-          "inicioMs": 8080,
-          "finMs": 8280
+          "inicioMs": 8320,
+          "finMs": 8520
         },
         {
           "palabra": "elementos",
-          "inicioMs": 8280,
-          "finMs": 8700
+          "inicioMs": 8520,
+          "finMs": 8860
         },
         {
           "palabra": "diferentes",
-          "inicioMs": 8700,
+          "inicioMs": 8860,
           "finMs": 9200
         }
       ]
@@ -581,16 +593,16 @@
         {
           "palabra": "un",
           "inicioMs": 240,
-          "finMs": 420
+          "finMs": 400
         },
         {
           "palabra": "fotón",
-          "inicioMs": 420,
-          "finMs": 720
+          "inicioMs": 400,
+          "finMs": 700
         },
         {
           "palabra": "de",
-          "inicioMs": 720,
+          "inicioMs": 700,
           "finMs": 820
         },
         {
@@ -601,97 +613,97 @@
         {
           "palabra": "choca",
           "inicioMs": 980,
-          "finMs": 1300
+          "finMs": 1380
         },
         {
           "palabra": "contra",
-          "inicioMs": 1300,
-          "finMs": 1560
+          "inicioMs": 1380,
+          "finMs": 1620
         },
         {
           "palabra": "la",
-          "inicioMs": 1560,
-          "finMs": 1700
+          "inicioMs": 1620,
+          "finMs": 1760
         },
         {
           "palabra": "superficie",
-          "inicioMs": 1700,
-          "finMs": 2220
+          "inicioMs": 1760,
+          "finMs": 2300
         },
         {
           "palabra": "metálica",
-          "inicioMs": 2220,
-          "finMs": 2760
+          "inicioMs": 2300,
+          "finMs": 2820
         },
         {
           "palabra": "los",
-          "inicioMs": 3020,
-          "finMs": 3140
+          "inicioMs": 3080,
+          "finMs": 3220
         },
         {
           "palabra": "electrones",
-          "inicioMs": 3140,
-          "finMs": 3680
+          "inicioMs": 3220,
+          "finMs": 3740
         },
         {
           "palabra": "libres",
-          "inicioMs": 3680,
-          "finMs": 4000
+          "inicioMs": 3740,
+          "finMs": 4020
         },
         {
           "palabra": "absorben",
-          "inicioMs": 4000,
-          "finMs": 4520
+          "inicioMs": 4020,
+          "finMs": 4480
         },
         {
           "palabra": "esa",
-          "inicioMs": 4520,
-          "finMs": 4700
+          "inicioMs": 4480,
+          "finMs": 4660
         },
         {
           "palabra": "energía",
-          "inicioMs": 4700,
-          "finMs": 5000
+          "inicioMs": 4660,
+          "finMs": 4980
         },
         {
           "palabra": "y",
-          "inicioMs": 5000,
+          "inicioMs": 4980,
           "finMs": 5300
         },
         {
           "palabra": "la",
           "inicioMs": 5300,
-          "finMs": 5400
+          "finMs": 5420
         },
         {
           "palabra": "reemiten",
-          "inicioMs": 5400,
-          "finMs": 5760
+          "inicioMs": 5420,
+          "finMs": 5820
         },
         {
           "palabra": "instantáneamente",
-          "inicioMs": 5760,
-          "finMs": 6640
+          "inicioMs": 5820,
+          "finMs": 6680
         },
         {
           "palabra": "creando",
-          "inicioMs": 6780,
-          "finMs": 7060
+          "inicioMs": 6840,
+          "finMs": 7160
         },
         {
           "palabra": "el",
-          "inicioMs": 7060,
-          "finMs": 7220
+          "inicioMs": 7160,
+          "finMs": 7280
         },
         {
           "palabra": "brillo",
-          "inicioMs": 7220,
-          "finMs": 7580
+          "inicioMs": 7280,
+          "finMs": 7600
         },
         {
           "palabra": "característico",
-          "inicioMs": 7580,
-          "finMs": 8420
+          "inicioMs": 7600,
+          "finMs": 8400
         }
       ]
     },
@@ -727,132 +739,132 @@
           "habla": true
         }
       ],
-      "duracionSegundos": 6.922,
+      "duracionSegundos": 7.978,
       "palabras": [
         {
           "palabra": "Por",
           "inicioMs": 0,
-          "finMs": 120
+          "finMs": 140
         },
         {
           "palabra": "eso",
-          "inicioMs": 120,
-          "finMs": 220
+          "inicioMs": 140,
+          "finMs": 320
         },
         {
           "palabra": "los",
-          "inicioMs": 220,
-          "finMs": 340
+          "inicioMs": 320,
+          "finMs": 480
         },
         {
           "palabra": "metales",
-          "inicioMs": 340,
-          "finMs": 640
+          "inicioMs": 480,
+          "finMs": 840
         },
         {
           "palabra": "son",
-          "inicioMs": 640,
-          "finMs": 820
+          "inicioMs": 840,
+          "finMs": 1020
         },
         {
           "palabra": "opacos",
-          "inicioMs": 820,
-          "finMs": 1200
+          "inicioMs": 1020,
+          "finMs": 1540
         },
         {
           "palabra": "y",
-          "inicioMs": 1200,
-          "finMs": 1320
+          "inicioMs": 1540,
+          "finMs": 1640
         },
         {
           "palabra": "brillantes",
-          "inicioMs": 1320,
-          "finMs": 1800
+          "inicioMs": 1640,
+          "finMs": 2180
         },
         {
           "palabra": "los",
-          "inicioMs": 2040,
-          "finMs": 2140
+          "inicioMs": 2440,
+          "finMs": 2540
         },
         {
           "palabra": "electrones",
-          "inicioMs": 2140,
-          "finMs": 2580
+          "inicioMs": 2540,
+          "finMs": 3140
         },
         {
           "palabra": "libres",
-          "inicioMs": 2580,
-          "finMs": 2960
+          "inicioMs": 3140,
+          "finMs": 3480
         },
         {
           "palabra": "bloquean",
-          "inicioMs": 2960,
-          "finMs": 3660
+          "inicioMs": 3480,
+          "finMs": 4160
         },
         {
           "palabra": "la",
-          "inicioMs": 3660,
-          "finMs": 3760
+          "inicioMs": 4160,
+          "finMs": 4260
         },
         {
           "palabra": "luz",
-          "inicioMs": 3760,
-          "finMs": 3920
+          "inicioMs": 4260,
+          "finMs": 4460
         },
         {
           "palabra": "que",
-          "inicioMs": 3920,
-          "finMs": 4040
+          "inicioMs": 4460,
+          "finMs": 4600
         },
         {
           "palabra": "intenta",
-          "inicioMs": 4040,
-          "finMs": 4360
+          "inicioMs": 4600,
+          "finMs": 4980
         },
         {
           "palabra": "atravesarlos",
-          "inicioMs": 4360,
-          "finMs": 4880
+          "inicioMs": 4980,
+          "finMs": 5600
         },
         {
           "palabra": "y",
-          "inicioMs": 4880,
-          "finMs": 5040
+          "inicioMs": 5600,
+          "finMs": 5960
         },
         {
           "palabra": "la",
-          "inicioMs": 5040,
-          "finMs": 5140
+          "inicioMs": 5960,
+          "finMs": 6040
         },
         {
           "palabra": "reflejan",
-          "inicioMs": 5140,
-          "finMs": 5520
+          "inicioMs": 6040,
+          "finMs": 6460
         },
         {
           "palabra": "de",
-          "inicioMs": 5520,
-          "finMs": 5640
+          "inicioMs": 6460,
+          "finMs": 6600
         },
         {
           "palabra": "vuelta",
-          "inicioMs": 5640,
-          "finMs": 5840
+          "inicioMs": 6600,
+          "finMs": 6820
         },
         {
           "palabra": "hacia",
-          "inicioMs": 5840,
-          "finMs": 6020
+          "inicioMs": 6820,
+          "finMs": 7080
         },
         {
           "palabra": "tus",
-          "inicioMs": 6020,
-          "finMs": 6240
+          "inicioMs": 7080,
+          "finMs": 7260
         },
         {
           "palabra": "ojos",
-          "inicioMs": 6240,
-          "finMs": 6460
+          "inicioMs": 7260,
+          "finMs": 7480
         }
       ]
     },
@@ -889,127 +901,127 @@
           "habla": true
         }
       ],
-      "duracionSegundos": 9.178,
+      "duracionSegundos": 9.61,
       "palabras": [
         {
           "palabra": "En",
           "inicioMs": 0,
-          "finMs": 200
+          "finMs": 220
         },
         {
           "palabra": "cuanto",
-          "inicioMs": 200,
-          "finMs": 400
+          "inicioMs": 220,
+          "finMs": 380
         },
         {
           "palabra": "a",
-          "inicioMs": 400,
-          "finMs": 680
+          "inicioMs": 380,
+          "finMs": 600
         },
         {
           "palabra": "la",
-          "inicioMs": 680,
-          "finMs": 760
+          "inicioMs": 600,
+          "finMs": 680
         },
         {
           "palabra": "conductividad",
-          "inicioMs": 760,
+          "inicioMs": 680,
           "finMs": 1400
         },
         {
           "palabra": "eléctrica",
           "inicioMs": 1400,
-          "finMs": 1940
+          "finMs": 2000
         },
         {
           "palabra": "cuando",
-          "inicioMs": 1940,
-          "finMs": 2200
+          "inicioMs": 2260,
+          "finMs": 2400
         },
         {
           "palabra": "aplicas",
-          "inicioMs": 2200,
-          "finMs": 2700
+          "inicioMs": 2400,
+          "finMs": 2780
         },
         {
           "palabra": "un",
-          "inicioMs": 2700,
-          "finMs": 2820
+          "inicioMs": 2780,
+          "finMs": 2920
         },
         {
           "palabra": "voltaje",
-          "inicioMs": 2820,
-          "finMs": 3360
+          "inicioMs": 2920,
+          "finMs": 3620
         },
         {
           "palabra": "los",
-          "inicioMs": 3700,
-          "finMs": 3860
+          "inicioMs": 4360,
+          "finMs": 4580
         },
         {
           "palabra": "electrones",
-          "inicioMs": 3860,
-          "finMs": 4320
+          "inicioMs": 4580,
+          "finMs": 5080
         },
         {
           "palabra": "libres",
-          "inicioMs": 4320,
-          "finMs": 4600
+          "inicioMs": 5080,
+          "finMs": 5280
         },
         {
           "palabra": "fluyen",
-          "inicioMs": 4600,
-          "finMs": 5060
+          "inicioMs": 5280,
+          "finMs": 5700
         },
         {
           "palabra": "en",
-          "inicioMs": 5060,
-          "finMs": 5220
+          "inicioMs": 5700,
+          "finMs": 5820
         },
         {
           "palabra": "una",
-          "inicioMs": 5220,
-          "finMs": 5380
+          "inicioMs": 5820,
+          "finMs": 5980
         },
         {
           "palabra": "dirección",
-          "inicioMs": 5380,
-          "finMs": 5800
+          "inicioMs": 5980,
+          "finMs": 6400
         },
         {
           "palabra": "creando",
-          "inicioMs": 5800,
-          "finMs": 6260
+          "inicioMs": 6400,
+          "finMs": 6860
         },
         {
           "palabra": "una",
-          "inicioMs": 6260,
-          "finMs": 6460
+          "inicioMs": 6860,
+          "finMs": 7020
         },
         {
           "palabra": "corriente",
-          "inicioMs": 6460,
-          "finMs": 6920
+          "inicioMs": 7020,
+          "finMs": 7380
         },
         {
           "palabra": "eléctrica",
-          "inicioMs": 6920,
-          "finMs": 7460
+          "inicioMs": 7380,
+          "finMs": 7820
         },
         {
           "palabra": "sin",
-          "inicioMs": 7460,
-          "finMs": 7640
+          "inicioMs": 7820,
+          "finMs": 8040
         },
         {
           "palabra": "apenas",
-          "inicioMs": 7640,
-          "finMs": 7980
+          "inicioMs": 8040,
+          "finMs": 8360
         },
         {
           "palabra": "resistencia",
-          "inicioMs": 7980,
-          "finMs": 8720
+          "inicioMs": 8360,
+          "finMs": 9140
         }
       ]
     },
@@ -1046,137 +1058,137 @@
           "habla": true
         }
       ],
-      "duracionSegundos": 9.802,
+      "duracionSegundos": 8.77,
       "palabras": [
         {
           "palabra": "El",
           "inicioMs": 0,
-          "finMs": 260
+          "finMs": 220
         },
         {
           "palabra": "cobre",
-          "inicioMs": 260,
+          "inicioMs": 220,
           "finMs": 580
         },
         {
           "palabra": "es",
           "inicioMs": 580,
-          "finMs": 880
+          "finMs": 760
         },
         {
           "palabra": "el",
-          "inicioMs": 880,
-          "finMs": 1020
+          "inicioMs": 760,
+          "finMs": 900
         },
         {
           "palabra": "mejor",
-          "inicioMs": 1020,
-          "finMs": 1260
+          "inicioMs": 900,
+          "finMs": 1140
         },
         {
           "palabra": "conductor",
-          "inicioMs": 1260,
-          "finMs": 1600
+          "inicioMs": 1140,
+          "finMs": 1460
         },
         {
           "palabra": "eléctrico",
-          "inicioMs": 1600,
-          "finMs": 2300
+          "inicioMs": 1460,
+          "finMs": 2180
         },
         {
           "palabra": "después",
-          "inicioMs": 2300,
-          "finMs": 2660
+          "inicioMs": 2180,
+          "finMs": 2460
         },
         {
           "palabra": "de",
-          "inicioMs": 2660,
-          "finMs": 2840
+          "inicioMs": 2460,
+          "finMs": 2640
         },
         {
           "palabra": "la",
-          "inicioMs": 2840,
-          "finMs": 2940
+          "inicioMs": 2640,
+          "finMs": 2740
         },
         {
           "palabra": "plata",
-          "inicioMs": 2940,
-          "finMs": 3280
+          "inicioMs": 2740,
+          "finMs": 3040
         },
         {
           "palabra": "porque",
-          "inicioMs": 3600,
-          "finMs": 3760
+          "inicioMs": 3040,
+          "finMs": 3300
         },
         {
           "palabra": "sus",
-          "inicioMs": 3760,
-          "finMs": 3980
+          "inicioMs": 3300,
+          "finMs": 3540
         },
         {
           "palabra": "electrones",
-          "inicioMs": 3980,
-          "finMs": 4540
+          "inicioMs": 3540,
+          "finMs": 4160
         },
         {
           "palabra": "están",
-          "inicioMs": 4540,
-          "finMs": 4820
+          "inicioMs": 4160,
+          "finMs": 4380
         },
         {
           "palabra": "menos",
-          "inicioMs": 4820,
-          "finMs": 5120
+          "inicioMs": 4380,
+          "finMs": 4660
         },
         {
           "palabra": "atrapados",
-          "inicioMs": 5120,
-          "finMs": 5740
+          "inicioMs": 4660,
+          "finMs": 5260
         },
         {
           "palabra": "por",
-          "inicioMs": 5740,
-          "finMs": 5900
+          "inicioMs": 5260,
+          "finMs": 5420
         },
         {
           "palabra": "los",
-          "inicioMs": 5900,
-          "finMs": 6080
+          "inicioMs": 5420,
+          "finMs": 5600
         },
         {
           "palabra": "núcleos",
-          "inicioMs": 6080,
-          "finMs": 6440
+          "inicioMs": 5600,
+          "finMs": 5980
         },
         {
           "palabra": "atómicos",
-          "inicioMs": 6440,
-          "finMs": 6980
+          "inicioMs": 5980,
+          "finMs": 6540
         },
         {
           "palabra": "permitiendo",
-          "inicioMs": 7240,
-          "finMs": 7880
+          "inicioMs": 6680,
+          "finMs": 7220
         },
         {
           "palabra": "un",
-          "inicioMs": 7880,
-          "finMs": 8120
+          "inicioMs": 7220,
+          "finMs": 7340
         },
         {
           "palabra": "flujo",
-          "inicioMs": 8120,
-          "finMs": 8580
+          "inicioMs": 7340,
+          "finMs": 7660
         },
         {
           "palabra": "más",
-          "inicioMs": 8580,
-          "finMs": 8740
+          "inicioMs": 7660,
+          "finMs": 7760
         },
         {
           "palabra": "eficiente",
-          "inicioMs": 8740,
-          "finMs": 9220
+          "inicioMs": 7760,
+          "finMs": 8240
         }
       ]
     },
@@ -1213,7 +1225,7 @@
           "habla": true
         }
       ],
-      "duracionSegundos": 8.338,
+      "duracionSegundos": 8.074,
       "palabras": [
         {
           "palabra": "Por",
@@ -1233,112 +1245,112 @@
         {
           "palabra": "cables",
           "inicioMs": 580,
-          "finMs": 800
+          "finMs": 760
         },
         {
           "palabra": "eléctricos",
-          "inicioMs": 800,
-          "finMs": 1420
+          "inicioMs": 760,
+          "finMs": 1400
         },
         {
           "palabra": "están",
-          "inicioMs": 1420,
-          "finMs": 1660
+          "inicioMs": 1400,
+          "finMs": 1620
         },
         {
           "palabra": "hechos",
-          "inicioMs": 1660,
-          "finMs": 1900
+          "inicioMs": 1620,
+          "finMs": 1840
         },
         {
           "palabra": "de",
-          "inicioMs": 1900,
-          "finMs": 2060
+          "inicioMs": 1840,
+          "finMs": 1980
         },
         {
           "palabra": "cobre",
-          "inicioMs": 2060,
-          "finMs": 2380
+          "inicioMs": 1980,
+          "finMs": 2280
         },
         {
           "palabra": "cada",
-          "inicioMs": 2640,
-          "finMs": 3080
+          "inicioMs": 2480,
+          "finMs": 3120
         },
         {
           "palabra": "electrón",
-          "inicioMs": 3080,
-          "finMs": 3540
+          "inicioMs": 3120,
+          "finMs": 3560
         },
         {
           "palabra": "libre",
-          "inicioMs": 3540,
-          "finMs": 3740
+          "inicioMs": 3560,
+          "finMs": 3800
         },
         {
           "palabra": "puede",
-          "inicioMs": 3740,
-          "finMs": 4040
+          "inicioMs": 3800,
+          "finMs": 4120
         },
         {
           "palabra": "recorrer",
-          "inicioMs": 4040,
+          "inicioMs": 4120,
           "finMs": 4520
         },
         {
           "palabra": "kilómetros",
           "inicioMs": 4520,
-          "finMs": 5000
+          "finMs": 5020
         },
         {
           "palabra": "de",
-          "inicioMs": 5000,
+          "inicioMs": 5020,
           "finMs": 5200
         },
         {
           "palabra": "cable",
           "inicioMs": 5200,
-          "finMs": 5520
+          "finMs": 5440
         },
         {
           "palabra": "en",
-          "inicioMs": 5520,
-          "finMs": 5800
+          "inicioMs": 5440,
+          "finMs": 5660
         },
         {
           "palabra": "una",
-          "inicioMs": 5800,
-          "finMs": 5960
+          "inicioMs": 5660,
+          "finMs": 5800
         },
         {
           "palabra": "fracción",
-          "inicioMs": 5960,
-          "finMs": 6300
+          "inicioMs": 5800,
+          "finMs": 6140
         },
         {
           "palabra": "de",
-          "inicioMs": 6300,
-          "finMs": 6480
+          "inicioMs": 6140,
+          "finMs": 6280
         },
         {
           "palabra": "segundo",
-          "inicioMs": 6480,
-          "finMs": 6800
+          "inicioMs": 6280,
+          "finMs": 6580
         },
         {
           "palabra": "sin",
-          "inicioMs": 6800,
-          "finMs": 7140
+          "inicioMs": 6580,
+          "finMs": 6860
         },
         {
           "palabra": "perder",
-          "inicioMs": 7140,
-          "finMs": 7420
+          "inicioMs": 6860,
+          "finMs": 7160
         },
         {
           "palabra": "energía",
-          "inicioMs": 7420,
-          "finMs": 7820
+          "inicioMs": 7160,
+          "finMs": 7560
         }
       ]
     },
@@ -1375,7 +1387,7 @@
           "habla": true
         }
       ],
-      "duracionSegundos": 8.338,
+      "duracionSegundos": 8.746,
       "palabras": [
         {
           "palabra": "La",
@@ -1390,122 +1402,122 @@
         {
           "palabra": "térmica",
           "inicioMs": 820,
-          "finMs": 1320
+          "finMs": 1300
         },
         {
           "palabra": "también",
-          "inicioMs": 1320,
-          "finMs": 1620
+          "inicioMs": 1300,
+          "finMs": 1600
         },
         {
           "palabra": "funciona",
-          "inicioMs": 1620,
+          "inicioMs": 1600,
           "finMs": 2020
         },
         {
           "palabra": "igual",
           "inicioMs": 2020,
-          "finMs": 2300
+          "finMs": 2320
         },
         {
           "palabra": "los",
-          "inicioMs": 2480,
-          "finMs": 2560
+          "inicioMs": 2540,
+          "finMs": 2680
         },
         {
           "palabra": "electrones",
-          "inicioMs": 2560,
-          "finMs": 3060
+          "inicioMs": 2680,
+          "finMs": 3200
         },
         {
           "palabra": "libres",
-          "inicioMs": 3060,
-          "finMs": 3380
+          "inicioMs": 3200,
+          "finMs": 3500
         },
         {
           "palabra": "transportan",
-          "inicioMs": 3380,
-          "finMs": 4020
-        },
-        {
-          "palabra": "el",
-          "inicioMs": 4020,
+          "inicioMs": 3500,
           "finMs": 4120
         },
         {
-          "palabra": "calor",
+          "palabra": "el",
           "inicioMs": 4120,
-          "finMs": 4340
+          "finMs": 4260
+        },
+        {
+          "palabra": "calor",
+          "inicioMs": 4260,
+          "finMs": 4480
         },
         {
           "palabra": "rápidamente",
-          "inicioMs": 4340,
-          "finMs": 5060
+          "inicioMs": 4480,
+          "finMs": 5220
         },
         {
           "palabra": "por",
-          "inicioMs": 5360,
-          "finMs": 5500
+          "inicioMs": 5500,
+          "finMs": 5720
         },
         {
           "palabra": "eso",
-          "inicioMs": 5500,
-          "finMs": 5660
+          "inicioMs": 5720,
+          "finMs": 5900
         },
         {
           "palabra": "una",
-          "inicioMs": 5660,
-          "finMs": 5800
+          "inicioMs": 5900,
+          "finMs": 6080
         },
         {
           "palabra": "cuchara",
-          "inicioMs": 5800,
-          "finMs": 6120
+          "inicioMs": 6080,
+          "finMs": 6440
         },
         {
           "palabra": "de",
-          "inicioMs": 6120,
-          "finMs": 6260
+          "inicioMs": 6440,
+          "finMs": 6600
         },
         {
           "palabra": "metal",
-          "inicioMs": 6260,
-          "finMs": 6460
+          "inicioMs": 6600,
+          "finMs": 6800
         },
         {
           "palabra": "se",
-          "inicioMs": 6460,
-          "finMs": 6640
-        },
-        {
-          "palabra": "calienta",
-          "inicioMs": 6640,
+          "inicioMs": 6800,
           "finMs": 7020
         },
         {
-          "palabra": "al",
+          "palabra": "calienta",
           "inicioMs": 7020,
-          "finMs": 7100
+          "finMs": 7420
+        },
+        {
+          "palabra": "al",
+          "inicioMs": 7420,
+          "finMs": 7500
         },
         {
           "palabra": "instante",
-          "inicioMs": 7100,
-          "finMs": 7480
+          "inicioMs": 7500,
+          "finMs": 7840
         },
         {
           "palabra": "en",
-          "inicioMs": 7480,
-          "finMs": 7580
+          "inicioMs": 7840,
+          "finMs": 7940
         },
         {
           "palabra": "el",
-          "inicioMs": 7580,
-          "finMs": 7680
+          "inicioMs": 7940,
+          "finMs": 8040
         },
         {
           "palabra": "café",
-          "inicioMs": 7680,
-          "finMs": 7840
+          "inicioMs": 8040,
+          "finMs": 8240
         }
       ]
     },
@@ -1541,137 +1553,137 @@
           "habla": true
         }
       ],
-      "duracionSegundos": 7.738,
+      "duracionSegundos": 7.186,
       "palabras": [
         {
           "palabra": "Los",
           "inicioMs": 0,
-          "finMs": 260
+          "finMs": 200
         },
         {
           "palabra": "no",
-          "inicioMs": 260,
-          "finMs": 420
+          "inicioMs": 200,
+          "finMs": 380
         },
         {
           "palabra": "metales",
-          "inicioMs": 420,
-          "finMs": 780
+          "inicioMs": 380,
+          "finMs": 760
         },
         {
           "palabra": "como",
-          "inicioMs": 780,
-          "finMs": 1040
+          "inicioMs": 760,
+          "finMs": 980
         },
         {
           "palabra": "el",
-          "inicioMs": 1040,
-          "finMs": 1180
+          "inicioMs": 980,
+          "finMs": 1100
         },
         {
           "palabra": "plástico",
-          "inicioMs": 1180,
-          "finMs": 1560
+          "inicioMs": 1100,
+          "finMs": 1520
         },
         {
           "palabra": "o",
-          "inicioMs": 1560,
-          "finMs": 1820
+          "inicioMs": 1640,
+          "finMs": 1740
         },
         {
           "palabra": "la",
-          "inicioMs": 1820,
-          "finMs": 1920
+          "inicioMs": 1740,
+          "finMs": 2040
         },
         {
           "palabra": "madera",
-          "inicioMs": 1920,
-          "finMs": 2280
+          "inicioMs": 2040,
+          "finMs": 2160
         },
         {
           "palabra": "no",
-          "inicioMs": 2280,
-          "finMs": 2680
+          "inicioMs": 2160,
+          "finMs": 2340
         },
         {
           "palabra": "tienen",
-          "inicioMs": 2680,
-          "finMs": 2900
+          "inicioMs": 2340,
+          "finMs": 2840
         },
         {
           "palabra": "electrones",
-          "inicioMs": 2900,
-          "finMs": 3520
+          "inicioMs": 2840,
+          "finMs": 3280
         },
         {
           "palabra": "libres",
-          "inicioMs": 3520,
-          "finMs": 3880
+          "inicioMs": 3400,
+          "finMs": 3500
         },
         {
           "palabra": "por",
-          "inicioMs": 4020,
-          "finMs": 4120
+          "inicioMs": 3500,
+          "finMs": 3680
         },
         {
           "palabra": "eso",
-          "inicioMs": 4120,
-          "finMs": 4260
+          "inicioMs": 3680,
+          "finMs": 3880
         },
         {
           "palabra": "son",
-          "inicioMs": 4260,
-          "finMs": 4480
+          "inicioMs": 3880,
+          "finMs": 4380
         },
         {
           "palabra": "aislantes",
-          "inicioMs": 4480,
-          "finMs": 4980
+          "inicioMs": 4640,
+          "finMs": 4720
         },
         {
           "palabra": "la",
-          "inicioMs": 5200,
-          "finMs": 5260
+          "inicioMs": 4720,
+          "finMs": 5280
         },
         {
           "palabra": "electricidad",
-          "inicioMs": 5260,
-          "finMs": 5820
+          "inicioMs": 5280,
+          "finMs": 5460
         },
         {
           "palabra": "no",
-          "inicioMs": 5820,
-          "finMs": 6000
+          "inicioMs": 5460,
+          "finMs": 5680
         },
         {
           "palabra": "puede",
-          "inicioMs": 6000,
-          "finMs": 6220
+          "inicioMs": 5680,
+          "finMs": 6000
         },
         {
           "palabra": "fluir",
-          "inicioMs": 6220,
-          "finMs": 6560
+          "inicioMs": 6000,
+          "finMs": 6080
         },
         {
           "palabra": "a",
-          "inicioMs": 6560,
-          "finMs": 6640
+          "inicioMs": 6080,
+          "finMs": 6280
         },
         {
           "palabra": "través",
-          "inicioMs": 6640,
-          "finMs": 6880
+          "inicioMs": 6280,
+          "finMs": 6480
         },
         {
           "palabra": "de",
-          "inicioMs": 6880,
-          "finMs": 7040
+          "inicioMs": 6480,
+          "finMs": 6700
         },
         {
           "palabra": "ellos",
-          "inicioMs": 7040,
-          "finMs": 7260
+          "inicioMs": 6700,
+          "finMs": 6936
         }
       ]
     },
@@ -1710,7 +1722,7 @@
           "habla": true
         }
       ],
-      "duracionSegundos": 8.29,
+      "duracionSegundos": 8.434,
       "palabras": [
         {
           "palabra": "Así",
@@ -1720,167 +1732,167 @@
         {
           "palabra": "que",
           "inicioMs": 300,
-          "finMs": 420
+          "finMs": 440
         },
         {
           "palabra": "la",
-          "inicioMs": 420,
-          "finMs": 500
+          "inicioMs": 440,
+          "finMs": 540
         },
         {
           "palabra": "próxima",
-          "inicioMs": 500,
-          "finMs": 780
+          "inicioMs": 540,
+          "finMs": 840
         },
         {
           "palabra": "vez",
-          "inicioMs": 780,
-          "finMs": 980
+          "inicioMs": 840,
+          "finMs": 1060
         },
         {
           "palabra": "que",
-          "inicioMs": 980,
-          "finMs": 1100
+          "inicioMs": 1060,
+          "finMs": 1200
         },
         {
           "palabra": "toques",
-          "inicioMs": 1100,
-          "finMs": 1360
-        },
-        {
-          "palabra": "un",
-          "inicioMs": 1360,
+          "inicioMs": 1200,
           "finMs": 1460
         },
         {
-          "palabra": "metal",
+          "palabra": "un",
           "inicioMs": 1460,
-          "finMs": 1640
+          "finMs": 1580
+        },
+        {
+          "palabra": "metal",
+          "inicioMs": 1580,
+          "finMs": 1820
         },
         {
           "palabra": "brillante",
-          "inicioMs": 1640,
-          "finMs": 2160
+          "inicioMs": 1820,
+          "finMs": 2360
         },
         {
           "palabra": "recuerda",
-          "inicioMs": 2380,
-          "finMs": 2780
+          "inicioMs": 2580,
+          "finMs": 2980
         },
         {
           "palabra": "que",
-          "inicioMs": 2780,
-          "finMs": 2880
+          "inicioMs": 2980,
+          "finMs": 3080
         },
         {
           "palabra": "estás",
-          "inicioMs": 2880,
-          "finMs": 3040
+          "inicioMs": 3080,
+          "finMs": 3260
         },
         {
           "palabra": "tocando",
-          "inicioMs": 3040,
-          "finMs": 3440
+          "inicioMs": 3260,
+          "finMs": 3680
         },
         {
           "palabra": "un",
-          "inicioMs": 3440,
-          "finMs": 3620
+          "inicioMs": 3680,
+          "finMs": 3860
         },
         {
           "palabra": "mar",
-          "inicioMs": 3620,
-          "finMs": 3740
+          "inicioMs": 3860,
+          "finMs": 3960
         },
         {
           "palabra": "de",
-          "inicioMs": 3740,
-          "finMs": 3900
+          "inicioMs": 3960,
+          "finMs": 4100
         },
         {
           "palabra": "electrones",
-          "inicioMs": 3900,
-          "finMs": 4480
+          "inicioMs": 4100,
+          "finMs": 4700
         },
         {
           "palabra": "que",
-          "inicioMs": 4480,
-          "finMs": 4560
+          "inicioMs": 4700,
+          "finMs": 4780
         },
         {
           "palabra": "se",
-          "inicioMs": 4560,
-          "finMs": 4680
+          "inicioMs": 4780,
+          "finMs": 4880
         },
         {
           "palabra": "mueven",
-          "inicioMs": 4680,
-          "finMs": 5000
+          "inicioMs": 4880,
+          "finMs": 5200
         },
         {
           "palabra": "a",
-          "inicioMs": 5000,
-          "finMs": 5060
+          "inicioMs": 5200,
+          "finMs": 5240
         },
         {
           "palabra": "la",
-          "inicioMs": 5060,
-          "finMs": 5140
+          "inicioMs": 5240,
+          "finMs": 5340
         },
         {
           "palabra": "velocidad",
-          "inicioMs": 5140,
-          "finMs": 5440
+          "inicioMs": 5340,
+          "finMs": 5620
         },
         {
           "palabra": "de",
-          "inicioMs": 5440,
-          "finMs": 5720
+          "inicioMs": 5620,
+          "finMs": 5880
         },
         {
           "palabra": "la",
-          "inicioMs": 5720,
-          "finMs": 5800
+          "inicioMs": 5880,
+          "finMs": 5980
         },
         {
           "palabra": "luz",
-          "inicioMs": 5800,
-          "finMs": 6020
+          "inicioMs": 5980,
+          "finMs": 6160
         },
         {
           "palabra": "La",
-          "inicioMs": 6280,
-          "finMs": 6340
+          "inicioMs": 6340,
+          "finMs": 6400
         },
         {
           "palabra": "física",
-          "inicioMs": 6340,
-          "finMs": 6660
+          "inicioMs": 6400,
+          "finMs": 6740
         },
         {
           "palabra": "cuántica",
-          "inicioMs": 6660,
-          "finMs": 7160
+          "inicioMs": 6740,
+          "finMs": 7320
         },
         {
           "palabra": "está",
-          "inicioMs": 7160,
-          "finMs": 7380
-        },
-        {
-          "palabra": "en",
-          "inicioMs": 7380,
+          "inicioMs": 7320,
           "finMs": 7500
         },
         {
-          "palabra": "tus",
+          "palabra": "en",
           "inicioMs": 7500,
-          "finMs": 7780
+          "finMs": 7540
+        },
+        {
+          "palabra": "tus",
+          "inicioMs": 7540,
+          "finMs": 7720
         },
         {
           "palabra": "manos",
-          "inicioMs": 7780,
-          "finMs": 8040
+          "inicioMs": 7720,
+          "finMs": 7940
         }
       ]
     }

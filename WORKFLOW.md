@@ -4,10 +4,11 @@
 
 > **REGLA DE ORO ANTES DE CREAR UN GUION**: Siempre que el usuario pida un nuevo video o una idea de historia, el agente DEBE leer primero `src/data/historial_temas.json`, revisar los temas y ganchos existentes, y asegurarse de proponer un tema, enfoque científico o fenómeno completamente distinto a los ya registrados.
 >
-> ⏱️ **REGLA DE DURACIÓN OBLIGATORIA DEL GUION**:
-> - **Mínimo obligatorio forzoso**: El guion DEBE durar **mínimo 1:02 (62 segundos)**.
-> - **Rango objetivo**: Entre **1:02** (62s) y **1:30** (90s).
-> - **Tope esperado y holgura**: 1:30 es el techo esperado de referencia. Puede pasarse con holgura por no más de 10-20 segundos (máximo ~1:40 a ~1:50). El mínimo de 1:02 es estricto.
+> ⏱️ **REGLA DE DURACIÓN DEL GUION (configurable por video)**:
+> - **Duración configurable**: Cada guion declara `meta.duracionObjetivo: [min, max]` en segundos (ej. `[35, 45]`, `[60, 75]`, `[80, 95]`). Por defecto: **62-110 s**.
+> - **Monetización**: TikTok exige videos de **más de 60 s**. La duración estándar se decide con los datos del experimento A/B (`docs/CHECKLIST_PUBLICACION.md`, `docs/SEGUIMIENTO.csv`).
+> - **Estructura recomendada**: gancho en 1-2 s, dato clave en 5-10 s, giro a la mitad y cierre circular.
+> - **Garantía técnica**: `npm run validar` y `npm run qa` validan contra ese mismo rango objetivo.
 >
 > 🎨 **CONGRUENCIA, ENFOQUE VISUAL Y ANIMACIÓN DINÁMICA**:
 > - Prohibido el contenido visual estático (personaje inmóvil en `{x: 0, y: 0}`).
@@ -22,16 +23,16 @@
 
 ```mermaid
 flowchart TD
-    A["1. Leer src/data/historial_temas.json"] --> B{"¿Tema duplicado >65%?"}
-    B -- Sí --> C["Proponer tema o enfoque diferente"]
+    A["1. Revisar Historial y Licencias<br>(historial_temas.json & docs/LICENCIAS.md)"] --> B{"¿Tema nuevo?<br>(Similitud < 65%)"}
+    B -- No --> C["Proponer tema o enfoque diferente"]
     C --> A
-    B -- No --> D["2. Redactar src/data/guion.json"]
-    D --> E["3. Generar voz: npm run tts"]
-    E --> F["scripts/registrar_historia.py"]
-    F --> G["Verifica difflib.SequenceMatcher"]
-    F --> H["Respalda en archivo_videos/{fecha}_{slug}.json"]
-    F --> I["Actualiza src/data/historial_temas.json"]
-    E --> J["4. Previsualizar (npm run dev) o Renderizar (npm run render)"]
+    B -- Sí --> D["2. Redactar src/data/guion.json<br>(meta.duracionObjetivo, escenas)"]
+    D --> E["3. Validar guion: npm run validar"]
+    E --> F["4. Generar voz: npm run tts"]
+    F --> G["scripts/registrar_historia.py<br>(Verifica duplicados, respalda y actualiza historial)"]
+    G --> H["5. Previsualizar (npm run dev) o Renderizar (npm run render)"]
+    H --> I["6. QA Automático (npm run qa) + Exportar Metadata"]
+    I --> J["7. Publicar según docs/CHECKLIST_PUBLICACION.md"]
 ```
 
 ---
