@@ -1,0 +1,1648 @@
+{
+  "meta": {
+    "id": "el_efecto_foco_nadie_te_mira",
+    "slug": "el_efecto_foco_nadie_te_mira",
+    "temaResumen": "El efecto foco (Spotlight Effect): el sesgo cognitivo de Gilovich en Cornell que demuestra que la gente nota nuestros errores mucho menos de lo que creemos, porque todos están absortos en sus propias inseguridades",
+    "duracionObjetivo": [
+      62,
+      76
+    ],
+    "titulo": "El efecto foco: Nadie te está mirando (La ilusión del escenario)",
+    "titulo_corto": "El efecto foco",
+    "gancho": "Te manchas la camisa, tropiezas en la calle... y sientes que todo el mundo te mira y se burlará de ti para siempre.",
+    "genero": "Psicología Social y Sesgos Cognitivos",
+    "playlist": "Psicología, Ansiedad Social y Comportamiento Humano",
+    "fuentes": [
+      "Thomas Gilovich, Victoria Husted Medvec & Kenneth Savitsky (Journal of Personality and Social Psychology, 2000) - The Spotlight Effect in Social Judgment: An Egocentric Bias in Estimates of the Salience of One's Own Actions and Appearance",
+      "Kenneth Savitsky, Nicholas Epley & Thomas Gilovich (2001) - Do others judge us as harshly as we think? Overestimating the impact of our blunders",
+      "David Myers & Jean Twenge (McGraw-Hill, 2021) - Social Psychology: The Illusion of Transparency and the Spotlight Effect"
+    ]
+  },
+  "escenas": [
+    {
+      "id": 1,
+      "texto": "Te manchas la camisa de café, tropiezas en plena calle... y sientes de inmediato que todo el mundo te clava la mirada y se burlará de ti para siempre.",
+      "icono": "Coffee",
+      "colorIcono": "#EF4444",
+      "tituloVisual": "EL JUICIO SOCIAL",
+      "composicionVisual": "escenario_ilustrado",
+      "escenario": "plaza_publica_tropiezo_foco",
+      "layout": "narrativo",
+      "transicion": "corte",
+      "efectosCamara": [
+        "punch",
+        "drift"
+      ],
+      "sfx": "sfx/sfx_foco_tropiezo_spotlight.wav",
+      "volumenSfx": 0.25,
+      "palabrasClave": [
+        "manchas la camisa",
+        "tropiezas",
+        "todo el mundo",
+        "te mira",
+        "burlará de ti"
+      ],
+      "personajes": [
+        {
+          "id": "stickman_tropiezo",
+          "nombre": "Stickman",
+          "posicion": {
+            "x": 0,
+            "y": 140
+          },
+          "escala": 1.0,
+          "orientacion": "derecha",
+          "prop": "vaso_cafe_carton_salpicadura",
+          "habla": true,
+          "capaZ": 20,
+          "acciones": [
+            {
+              "tipo": "personalizada",
+              "pasos": [
+                {
+                  "inicioProgreso": 0,
+                  "finProgreso": 0.35,
+                  "poseId": "tripping_falling",
+                  "expresion": "shocked",
+                  "posicion": {
+                    "x": 0,
+                    "y": 140
+                  },
+                  "curva": "impacto",
+                  "procedural": "estatico"
+                },
+                {
+                  "inicioProgreso": 0.35,
+                  "finProgreso": 0.7,
+                  "poseId": "covering_mouth",
+                  "expresion": "scared",
+                  "posicion": {
+                    "x": 0,
+                    "y": 140
+                  },
+                  "curva": "suave",
+                  "procedural": "temblar"
+                },
+                {
+                  "inicioProgreso": 0.7,
+                  "finProgreso": 1.0,
+                  "poseId": "scratching_head",
+                  "expresion": "worried",
+                  "posicion": {
+                    "x": 0,
+                    "y": 140
+                  },
+                  "curva": "suave",
+                  "procedural": "estatico"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "duracionSegundos": 8.002,
+      "palabras": [
+        {
+          "palabra": "Te",
+          "inicioMs": 0,
+          "finMs": 180
+        },
+        {
+          "palabra": "manchas",
+          "inicioMs": 180,
+          "finMs": 500
+        },
+        {
+          "palabra": "la",
+          "inicioMs": 500,
+          "finMs": 680
+        },
+        {
+          "palabra": "camisa",
+          "inicioMs": 680,
+          "finMs": 980
+        },
+        {
+          "palabra": "de",
+          "inicioMs": 980,
+          "finMs": 1120
+        },
+        {
+          "palabra": "café",
+          "inicioMs": 1120,
+          "finMs": 1360
+        },
+        {
+          "palabra": "tropiezas",
+          "inicioMs": 1640,
+          "finMs": 1840
+        },
+        {
+          "palabra": "en",
+          "inicioMs": 1840,
+          "finMs": 1980
+        },
+        {
+          "palabra": "plena",
+          "inicioMs": 1980,
+          "finMs": 2240
+        },
+        {
+          "palabra": "calle",
+          "inicioMs": 2240,
+          "finMs": 3240
+        },
+        {
+          "palabra": "y",
+          "inicioMs": 3240,
+          "finMs": 3380
+        },
+        {
+          "palabra": "sientes",
+          "inicioMs": 3380,
+          "finMs": 3640
+        },
+        {
+          "palabra": "de",
+          "inicioMs": 3640,
+          "finMs": 3800
+        },
+        {
+          "palabra": "inmediato",
+          "inicioMs": 3800,
+          "finMs": 4220
+        },
+        {
+          "palabra": "que",
+          "inicioMs": 4220,
+          "finMs": 4360
+        },
+        {
+          "palabra": "todo",
+          "inicioMs": 4360,
+          "finMs": 4600
+        },
+        {
+          "palabra": "el",
+          "inicioMs": 4600,
+          "finMs": 4720
+        },
+        {
+          "palabra": "mundo",
+          "inicioMs": 4720,
+          "finMs": 4880
+        },
+        {
+          "palabra": "te",
+          "inicioMs": 4880,
+          "finMs": 5080
+        },
+        {
+          "palabra": "clava",
+          "inicioMs": 5080,
+          "finMs": 5300
+        },
+        {
+          "palabra": "la",
+          "inicioMs": 5300,
+          "finMs": 5420
+        },
+        {
+          "palabra": "mirada",
+          "inicioMs": 5420,
+          "finMs": 5740
+        },
+        {
+          "palabra": "y",
+          "inicioMs": 5740,
+          "finMs": 5960
+        },
+        {
+          "palabra": "se",
+          "inicioMs": 5960,
+          "finMs": 6080
+        },
+        {
+          "palabra": "burlará",
+          "inicioMs": 6080,
+          "finMs": 6480
+        },
+        {
+          "palabra": "de",
+          "inicioMs": 6480,
+          "finMs": 6580
+        },
+        {
+          "palabra": "ti",
+          "inicioMs": 6580,
+          "finMs": 6720
+        },
+        {
+          "palabra": "para",
+          "inicioMs": 6720,
+          "finMs": 6880
+        },
+        {
+          "palabra": "siempre",
+          "inicioMs": 6880,
+          "finMs": 7300
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "texto": "Tranquilo, en realidad no eres tan importante para los demás: la psicología lo llama «efecto foco», y demuestra que vivimos atrapados en la trampa de nuestra propia mente.",
+      "icono": "Lightbulb",
+      "colorIcono": "#A855F7",
+      "tituloVisual": "EL EFECTO FOCO",
+      "composicionVisual": "plano_general",
+      "escenario": "plaza_publica_persecucion_casco_foco",
+      "layout": "narrativo",
+      "transicion": "zoom_in",
+      "efectosCamara": [
+        "punch",
+        "drift"
+      ],
+      "sfx": "sfx/sfx_foco_carreras_linterna_casco.wav",
+      "volumenSfx": 0.25,
+      "palabrasClave": [
+        "no eres tan importante",
+        "efecto foco",
+        "atrapados",
+        "trampa",
+        "propia mente"
+      ],
+      "personajes": [
+        {
+          "id": "stickman_carreras_foco",
+          "nombre": "Stickman",
+          "posicion": {
+            "x": -200,
+            "y": 130
+          },
+          "escala": 1.0,
+          "orientacion": "derecha",
+          "prop": "casco_minero_linterna_foco",
+          "habla": true,
+          "capaZ": 20,
+          "acciones": [
+            {
+              "tipo": "personalizada",
+              "pasos": [
+                {
+                  "inicioProgreso": 0,
+                  "finProgreso": 0.35,
+                  "poseId": "running_escape",
+                  "expresion": "worried",
+                  "posicion": {
+                    "x": -200,
+                    "y": 130
+                  },
+                  "curva": "suave",
+                  "procedural": "correr"
+                },
+                {
+                  "inicioProgreso": 0.35,
+                  "finProgreso": 0.7,
+                  "poseId": "scratching_head",
+                  "expresion": "confused",
+                  "posicion": {
+                    "x": -150,
+                    "y": 130
+                  },
+                  "curva": "suave",
+                  "procedural": "estatico"
+                },
+                {
+                  "inicioProgreso": 0.7,
+                  "finProgreso": 1.0,
+                  "poseId": "explaining_both_hands",
+                  "expresion": "talking_enthusiastic",
+                  "posicion": {
+                    "x": -140,
+                    "y": 130
+                  },
+                  "curva": "suave",
+                  "procedural": "estatico"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "duracionSegundos": 9.13,
+      "palabras": [
+        {
+          "palabra": "Tranquilo",
+          "inicioMs": 0,
+          "finMs": 560
+        },
+        {
+          "palabra": "en",
+          "inicioMs": 700,
+          "finMs": 760
+        },
+        {
+          "palabra": "realidad",
+          "inicioMs": 760,
+          "finMs": 1040
+        },
+        {
+          "palabra": "no",
+          "inicioMs": 1040,
+          "finMs": 1320
+        },
+        {
+          "palabra": "eres",
+          "inicioMs": 1320,
+          "finMs": 1440
+        },
+        {
+          "palabra": "tan",
+          "inicioMs": 1440,
+          "finMs": 1640
+        },
+        {
+          "palabra": "importante",
+          "inicioMs": 1640,
+          "finMs": 2060
+        },
+        {
+          "palabra": "para",
+          "inicioMs": 2060,
+          "finMs": 2360
+        },
+        {
+          "palabra": "los",
+          "inicioMs": 2360,
+          "finMs": 2520
+        },
+        {
+          "palabra": "demás",
+          "inicioMs": 2520,
+          "finMs": 2740
+        },
+        {
+          "palabra": "la",
+          "inicioMs": 2940,
+          "finMs": 3000
+        },
+        {
+          "palabra": "psicología",
+          "inicioMs": 3000,
+          "finMs": 3440
+        },
+        {
+          "palabra": "lo",
+          "inicioMs": 3440,
+          "finMs": 3580
+        },
+        {
+          "palabra": "llama",
+          "inicioMs": 3580,
+          "finMs": 3800
+        },
+        {
+          "palabra": "efecto",
+          "inicioMs": 3800,
+          "finMs": 4420
+        },
+        {
+          "palabra": "foco",
+          "inicioMs": 4420,
+          "finMs": 5180
+        },
+        {
+          "palabra": "y",
+          "inicioMs": 5180,
+          "finMs": 5280
+        },
+        {
+          "palabra": "demuestra",
+          "inicioMs": 5280,
+          "finMs": 5760
+        },
+        {
+          "palabra": "que",
+          "inicioMs": 5760,
+          "finMs": 5900
+        },
+        {
+          "palabra": "vivimos",
+          "inicioMs": 5900,
+          "finMs": 6280
+        },
+        {
+          "palabra": "atrapados",
+          "inicioMs": 6280,
+          "finMs": 6840
+        },
+        {
+          "palabra": "en",
+          "inicioMs": 6840,
+          "finMs": 7000
+        },
+        {
+          "palabra": "la",
+          "inicioMs": 7000,
+          "finMs": 7100
+        },
+        {
+          "palabra": "trampa",
+          "inicioMs": 7100,
+          "finMs": 7420
+        },
+        {
+          "palabra": "de",
+          "inicioMs": 7420,
+          "finMs": 7560
+        },
+        {
+          "palabra": "nuestra",
+          "inicioMs": 7560,
+          "finMs": 7820
+        },
+        {
+          "palabra": "propia",
+          "inicioMs": 7820,
+          "finMs": 8140
+        },
+        {
+          "palabra": "mente",
+          "inicioMs": 8140,
+          "finMs": 8560
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "texto": "En el año dos mil, un famoso experimento de la Universidad de Cornell vistió a estudiantes con una camiseta vergonzosa de Barry Manilow antes de meterlos a un salón lleno de gente.",
+      "icono": "Shirt",
+      "colorIcono": "#F59E0B",
+      "tituloVisual": "CAMISETA VERGONZOSA",
+      "composicionVisual": "escenario_ilustrado",
+      "escenario": "aula_universitaria_barry_manilow",
+      "layout": "narrativo",
+      "transicion": "zoom_in",
+      "efectosCamara": [
+        "punch",
+        "drift"
+      ],
+      "sfx": "sfx/sfx_foco_puerta_aula_reloj.wav",
+      "volumenSfx": 0.24,
+      "palabrasClave": [
+        "experimento",
+        "Cornell",
+        "camiseta vergonzosa",
+        "Barry Manilow",
+        "salón lleno"
+      ],
+      "personajes": [
+        {
+          "id": "stickman_barry_manilow",
+          "nombre": "Stickman Avergonzado",
+          "posicion": {
+            "x": -160,
+            "y": 120
+          },
+          "escala": 1.0,
+          "orientacion": "derecha",
+          "prop": "carpeta_escolar_universidad",
+          "habla": true,
+          "capaZ": 20,
+          "acciones": [
+            {
+              "tipo": "personalizada",
+              "pasos": [
+                {
+                  "inicioProgreso": 0,
+                  "finProgreso": 0.4,
+                  "poseId": "holding_board",
+                  "expresion": "embarrassed",
+                  "posicion": {
+                    "x": -160,
+                    "y": 120
+                  },
+                  "curva": "suave",
+                  "procedural": "temblar"
+                },
+                {
+                  "inicioProgreso": 0.4,
+                  "finProgreso": 0.75,
+                  "poseId": "hiding_scared",
+                  "expresion": "scared",
+                  "posicion": {
+                    "x": -140,
+                    "y": 120
+                  },
+                  "curva": "suave",
+                  "procedural": "estatico"
+                },
+                {
+                  "inicioProgreso": 0.75,
+                  "finProgreso": 1.0,
+                  "poseId": "crouching",
+                  "expresion": "embarrassed",
+                  "posicion": {
+                    "x": -120,
+                    "y": 130
+                  },
+                  "curva": "suave",
+                  "procedural": "estatico"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "duracionSegundos": 9.85,
+      "palabras": [
+        {
+          "palabra": "En",
+          "inicioMs": 0,
+          "finMs": 120
+        },
+        {
+          "palabra": "el",
+          "inicioMs": 120,
+          "finMs": 220
+        },
+        {
+          "palabra": "año",
+          "inicioMs": 220,
+          "finMs": 440
+        },
+        {
+          "palabra": "dos",
+          "inicioMs": 440,
+          "finMs": 700
+        },
+        {
+          "palabra": "mil",
+          "inicioMs": 700,
+          "finMs": 880
+        },
+        {
+          "palabra": "un",
+          "inicioMs": 1120,
+          "finMs": 1240
+        },
+        {
+          "palabra": "famoso",
+          "inicioMs": 1240,
+          "finMs": 1540
+        },
+        {
+          "palabra": "experimento",
+          "inicioMs": 1540,
+          "finMs": 2280
+        },
+        {
+          "palabra": "de",
+          "inicioMs": 2280,
+          "finMs": 2340
+        },
+        {
+          "palabra": "la",
+          "inicioMs": 2340,
+          "finMs": 2440
+        },
+        {
+          "palabra": "Universidad",
+          "inicioMs": 2440,
+          "finMs": 2940
+        },
+        {
+          "palabra": "de",
+          "inicioMs": 2940,
+          "finMs": 3120
+        },
+        {
+          "palabra": "Cornell",
+          "inicioMs": 3120,
+          "finMs": 3380
+        },
+        {
+          "palabra": "vistió",
+          "inicioMs": 3380,
+          "finMs": 4100
+        },
+        {
+          "palabra": "a",
+          "inicioMs": 4100,
+          "finMs": 4180
+        },
+        {
+          "palabra": "estudiantes",
+          "inicioMs": 4180,
+          "finMs": 4660
+        },
+        {
+          "palabra": "con",
+          "inicioMs": 4660,
+          "finMs": 4880
+        },
+        {
+          "palabra": "una",
+          "inicioMs": 4880,
+          "finMs": 5060
+        },
+        {
+          "palabra": "camiseta",
+          "inicioMs": 5060,
+          "finMs": 5500
+        },
+        {
+          "palabra": "vergonzosa",
+          "inicioMs": 5500,
+          "finMs": 6020
+        },
+        {
+          "palabra": "de",
+          "inicioMs": 6020,
+          "finMs": 6220
+        },
+        {
+          "palabra": "Barry",
+          "inicioMs": 6220,
+          "finMs": 6480
+        },
+        {
+          "palabra": "Manilow",
+          "inicioMs": 6480,
+          "finMs": 6980
+        },
+        {
+          "palabra": "antes",
+          "inicioMs": 6980,
+          "finMs": 7460
+        },
+        {
+          "palabra": "de",
+          "inicioMs": 7460,
+          "finMs": 7620
+        },
+        {
+          "palabra": "meterlos",
+          "inicioMs": 7620,
+          "finMs": 8040
+        },
+        {
+          "palabra": "a",
+          "inicioMs": 8040,
+          "finMs": 8180
+        },
+        {
+          "palabra": "un",
+          "inicioMs": 8180,
+          "finMs": 8300
+        },
+        {
+          "palabra": "salón",
+          "inicioMs": 8300,
+          "finMs": 8600
+        },
+        {
+          "palabra": "lleno",
+          "inicioMs": 8600,
+          "finMs": 8820
+        },
+        {
+          "palabra": "de",
+          "inicioMs": 8820,
+          "finMs": 8980
+        },
+        {
+          "palabra": "gente",
+          "inicioMs": 8980,
+          "finMs": 9240
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "texto": "Los que llevaban la camiseta estaban convencidos de que más de la mitad del salón se había burlado de ellos. ¿La realidad? Menos del veintitrés por ciento siquiera lo notó.",
+      "icono": "PieChart",
+      "colorIcono": "#22C55E",
+      "tituloVisual": "PARANOIA VS REALIDAD",
+      "composicionVisual": "plano_general",
+      "escenario": "aula_comparativa_graficos_pastel",
+      "layout": "narrativo",
+      "transicion": "zoom_in",
+      "efectosCamara": [
+        "punch",
+        "drift"
+      ],
+      "sfx": "sfx/sfx_foco_carpeta_thud_grafica.wav",
+      "volumenSfx": 0.25,
+      "palabrasClave": [
+        "mitad del salón",
+        "burlado",
+        "realidad",
+        "veintitrés por ciento",
+        "siquiera lo notó"
+      ],
+      "personajes": [
+        {
+          "id": "stickman_comparativa",
+          "nombre": "Stickman",
+          "posicion": {
+            "x": 0,
+            "y": 140
+          },
+          "escala": 1.0,
+          "orientacion": "derecha",
+          "prop": "grafico_pastel_50_vs_23",
+          "habla": true,
+          "capaZ": 20,
+          "acciones": [
+            {
+              "tipo": "personalizada",
+              "pasos": [
+                {
+                  "inicioProgreso": 0,
+                  "finProgreso": 0.35,
+                  "poseId": "surprised_hands_up",
+                  "expresion": "surprised",
+                  "posicion": {
+                    "x": 0,
+                    "y": 140
+                  },
+                  "curva": "suave",
+                  "procedural": "estatico"
+                },
+                {
+                  "inicioProgreso": 0.35,
+                  "finProgreso": 0.7,
+                  "poseId": "comparing_two_objects",
+                  "expresion": "analytical",
+                  "posicion": {
+                    "x": 0,
+                    "y": 140
+                  },
+                  "curva": "suave",
+                  "procedural": "estatico"
+                },
+                {
+                  "inicioProgreso": 0.7,
+                  "finProgreso": 1.0,
+                  "poseId": "shrugging",
+                  "expresion": "smile_wide",
+                  "posicion": {
+                    "x": 0,
+                    "y": 140
+                  },
+                  "curva": "rebote",
+                  "procedural": "estatico"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "duracionSegundos": 7.762,
+      "palabras": [
+        {
+          "palabra": "Los",
+          "inicioMs": 0,
+          "finMs": 180
+        },
+        {
+          "palabra": "que",
+          "inicioMs": 180,
+          "finMs": 340
+        },
+        {
+          "palabra": "llevaban",
+          "inicioMs": 340,
+          "finMs": 640
+        },
+        {
+          "palabra": "la",
+          "inicioMs": 640,
+          "finMs": 740
+        },
+        {
+          "palabra": "camiseta",
+          "inicioMs": 740,
+          "finMs": 1220
+        },
+        {
+          "palabra": "estaban",
+          "inicioMs": 1220,
+          "finMs": 1520
+        },
+        {
+          "palabra": "convencidos",
+          "inicioMs": 1520,
+          "finMs": 2120
+        },
+        {
+          "palabra": "de",
+          "inicioMs": 2120,
+          "finMs": 2340
+        },
+        {
+          "palabra": "que",
+          "inicioMs": 2340,
+          "finMs": 2460
+        },
+        {
+          "palabra": "más",
+          "inicioMs": 2460,
+          "finMs": 2660
+        },
+        {
+          "palabra": "de",
+          "inicioMs": 2660,
+          "finMs": 2800
+        },
+        {
+          "palabra": "la",
+          "inicioMs": 2800,
+          "finMs": 2900
+        },
+        {
+          "palabra": "mitad",
+          "inicioMs": 2900,
+          "finMs": 3120
+        },
+        {
+          "palabra": "del",
+          "inicioMs": 3120,
+          "finMs": 3320
+        },
+        {
+          "palabra": "salón",
+          "inicioMs": 3320,
+          "finMs": 3620
+        },
+        {
+          "palabra": "se",
+          "inicioMs": 3620,
+          "finMs": 3760
+        },
+        {
+          "palabra": "había",
+          "inicioMs": 3760,
+          "finMs": 3900
+        },
+        {
+          "palabra": "burlado",
+          "inicioMs": 3900,
+          "finMs": 4340
+        },
+        {
+          "palabra": "de",
+          "inicioMs": 4340,
+          "finMs": 4500
+        },
+        {
+          "palabra": "ellos",
+          "inicioMs": 4500,
+          "finMs": 4760
+        },
+        {
+          "palabra": "La",
+          "inicioMs": 4760,
+          "finMs": 4920
+        },
+        {
+          "palabra": "realidad",
+          "inicioMs": 4920,
+          "finMs": 5080
+        },
+        {
+          "palabra": "Menos",
+          "inicioMs": 5080,
+          "finMs": 5380
+        },
+        {
+          "palabra": "del",
+          "inicioMs": 5380,
+          "finMs": 5480
+        },
+        {
+          "palabra": "veintitrés",
+          "inicioMs": 5480,
+          "finMs": 5920
+        },
+        {
+          "palabra": "por",
+          "inicioMs": 5920,
+          "finMs": 6120
+        },
+        {
+          "palabra": "ciento",
+          "inicioMs": 6120,
+          "finMs": 6440
+        },
+        {
+          "palabra": "siquiera",
+          "inicioMs": 6440,
+          "finMs": 6780
+        },
+        {
+          "palabra": "lo",
+          "inicioMs": 6780,
+          "finMs": 6940
+        },
+        {
+          "palabra": "notó",
+          "inicioMs": 6940,
+          "finMs": 7260
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "texto": "¿Por qué ocurre esto? Porque eres el protagonista absoluto de tu propia vida. Como tú estás hiperconsciente de ti mismo las veinticuatro horas, asumes erróneamente que los demás también.",
+      "icono": "Film",
+      "colorIcono": "#EC4899",
+      "tituloVisual": "TU PROPIA PELÍCULA",
+      "composicionVisual": "escenario_ilustrado",
+      "escenario": "cine_mental_sala_egocentrica",
+      "layout": "narrativo",
+      "transicion": "zoom_in",
+      "efectosCamara": [
+        "punch",
+        "drift"
+      ],
+      "sfx": "sfx/sfx_foco_cine_proyector_palomitas.wav",
+      "volumenSfx": 0.24,
+      "palabrasClave": [
+        "protagonista",
+        "propia vida",
+        "hiperconsciente",
+        "veinticuatro horas",
+        "los demás"
+      ],
+      "personajes": [
+        {
+          "id": "stickman_cine_butaca",
+          "nombre": "Stickman",
+          "posicion": {
+            "x": 0,
+            "y": 140
+          },
+          "escala": 1.0,
+          "orientacion": "derecha",
+          "prop": "lentes_3d_cine_palomitas",
+          "habla": true,
+          "capaZ": 20,
+          "acciones": [
+            {
+              "tipo": "personalizada",
+              "pasos": [
+                {
+                  "inicioProgreso": 0,
+                  "finProgreso": 0.4,
+                  "poseId": "sitting",
+                  "expresion": "talking_enthusiastic",
+                  "posicion": {
+                    "x": 0,
+                    "y": 140
+                  },
+                  "curva": "suave",
+                  "procedural": "estatico"
+                },
+                {
+                  "inicioProgreso": 0.4,
+                  "finProgreso": 0.75,
+                  "poseId": "pointing_right",
+                  "expresion": "eureka",
+                  "posicion": {
+                    "x": 0,
+                    "y": 135
+                  },
+                  "curva": "suave",
+                  "procedural": "estatico"
+                },
+                {
+                  "inicioProgreso": 0.75,
+                  "finProgreso": 1.0,
+                  "poseId": "standing_confident",
+                  "expresion": "smile_wide",
+                  "posicion": {
+                    "x": 0,
+                    "y": 130
+                  },
+                  "curva": "suave",
+                  "procedural": "estatico"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "duracionSegundos": 10.114,
+      "palabras": [
+        {
+          "palabra": "Por",
+          "inicioMs": 0,
+          "finMs": 180
+        },
+        {
+          "palabra": "qué",
+          "inicioMs": 180,
+          "finMs": 300
+        },
+        {
+          "palabra": "ocurre",
+          "inicioMs": 300,
+          "finMs": 640
+        },
+        {
+          "palabra": "esto",
+          "inicioMs": 640,
+          "finMs": 960
+        },
+        {
+          "palabra": "Porque",
+          "inicioMs": 1180,
+          "finMs": 1440
+        },
+        {
+          "palabra": "eres",
+          "inicioMs": 1440,
+          "finMs": 1620
+        },
+        {
+          "palabra": "el",
+          "inicioMs": 1620,
+          "finMs": 1820
+        },
+        {
+          "palabra": "protagonista",
+          "inicioMs": 1820,
+          "finMs": 2500
+        },
+        {
+          "palabra": "absoluto",
+          "inicioMs": 2500,
+          "finMs": 2980
+        },
+        {
+          "palabra": "de",
+          "inicioMs": 2980,
+          "finMs": 3080
+        },
+        {
+          "palabra": "tu",
+          "inicioMs": 3080,
+          "finMs": 3180
+        },
+        {
+          "palabra": "propia",
+          "inicioMs": 3180,
+          "finMs": 3400
+        },
+        {
+          "palabra": "vida",
+          "inicioMs": 3400,
+          "finMs": 3780
+        },
+        {
+          "palabra": "Como",
+          "inicioMs": 4060,
+          "finMs": 4260
+        },
+        {
+          "palabra": "tú",
+          "inicioMs": 4260,
+          "finMs": 4400
+        },
+        {
+          "palabra": "estás",
+          "inicioMs": 4400,
+          "finMs": 4620
+        },
+        {
+          "palabra": "hiperconsciente",
+          "inicioMs": 4620,
+          "finMs": 5420
+        },
+        {
+          "palabra": "de",
+          "inicioMs": 5420,
+          "finMs": 5600
+        },
+        {
+          "palabra": "ti",
+          "inicioMs": 5600,
+          "finMs": 5780
+        },
+        {
+          "palabra": "mismo",
+          "inicioMs": 5780,
+          "finMs": 6040
+        },
+        {
+          "palabra": "las",
+          "inicioMs": 6040,
+          "finMs": 6220
+        },
+        {
+          "palabra": "veinticuatro",
+          "inicioMs": 6220,
+          "finMs": 6740
+        },
+        {
+          "palabra": "horas",
+          "inicioMs": 6740,
+          "finMs": 7040
+        },
+        {
+          "palabra": "asumes",
+          "inicioMs": 7320,
+          "finMs": 7680
+        },
+        {
+          "palabra": "erróneamente",
+          "inicioMs": 7680,
+          "finMs": 8440
+        },
+        {
+          "palabra": "que",
+          "inicioMs": 8440,
+          "finMs": 8620
+        },
+        {
+          "palabra": "los",
+          "inicioMs": 8620,
+          "finMs": 8780
+        },
+        {
+          "palabra": "demás",
+          "inicioMs": 8780,
+          "finMs": 8920
+        },
+        {
+          "palabra": "también",
+          "inicioMs": 8920,
+          "finMs": 9420
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "texto": "Pero la gran verdad científica es liberadora: nadie se fija en tu mancha de café porque cada persona a tu alrededor tiene su propio foco apuntándole a la cabeza.",
+      "icono": "Users",
+      "colorIcono": "#38BDF8",
+      "tituloVisual": "TODOS TIENEN UN FOCO",
+      "composicionVisual": "plano_general",
+      "escenario": "plaza_multitud_focos_inseguridades",
+      "layout": "narrativo",
+      "transicion": "whip_right",
+      "efectosCamara": [
+        "punch",
+        "drift"
+      ],
+      "sfx": "sfx/sfx_foco_multitud_bombillas_piano.wav",
+      "volumenSfx": 0.25,
+      "palabrasClave": [
+        "verdad científica",
+        "liberadora",
+        "mancha de café",
+        "cada persona",
+        "propio foco"
+      ],
+      "personajes": [
+        {
+          "id": "stickman_alivio_multitud",
+          "nombre": "Stickman",
+          "posicion": {
+            "x": 0,
+            "y": 140
+          },
+          "escala": 1.0,
+          "orientacion": "derecha",
+          "prop": "nube_inseguridad_grano",
+          "habla": true,
+          "capaZ": 20,
+          "acciones": [
+            {
+              "tipo": "personalizada",
+              "pasos": [
+                {
+                  "inicioProgreso": 0,
+                  "finProgreso": 0.4,
+                  "poseId": "showing_both_hands",
+                  "expresion": "talking_enthusiastic",
+                  "posicion": {
+                    "x": 0,
+                    "y": 140
+                  },
+                  "curva": "suave",
+                  "procedural": "estatico"
+                },
+                {
+                  "inicioProgreso": 0.4,
+                  "finProgreso": 0.75,
+                  "poseId": "laughing_belly",
+                  "expresion": "laugh",
+                  "posicion": {
+                    "x": 0,
+                    "y": 140
+                  },
+                  "curva": "suave",
+                  "procedural": "rebotar"
+                },
+                {
+                  "inicioProgreso": 0.75,
+                  "finProgreso": 1.0,
+                  "poseId": "eureka_idea",
+                  "expresion": "smile_wide",
+                  "posicion": {
+                    "x": 0,
+                    "y": 130
+                  },
+                  "curva": "suave",
+                  "procedural": "estatico"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "duracionSegundos": 8.722,
+      "palabras": [
+        {
+          "palabra": "Pero",
+          "inicioMs": 0,
+          "finMs": 200
+        },
+        {
+          "palabra": "la",
+          "inicioMs": 200,
+          "finMs": 320
+        },
+        {
+          "palabra": "gran",
+          "inicioMs": 320,
+          "finMs": 480
+        },
+        {
+          "palabra": "verdad",
+          "inicioMs": 480,
+          "finMs": 720
+        },
+        {
+          "palabra": "científica",
+          "inicioMs": 720,
+          "finMs": 1400
+        },
+        {
+          "palabra": "es",
+          "inicioMs": 1400,
+          "finMs": 1640
+        },
+        {
+          "palabra": "liberadora",
+          "inicioMs": 1640,
+          "finMs": 2340
+        },
+        {
+          "palabra": "nadie",
+          "inicioMs": 2620,
+          "finMs": 2880
+        },
+        {
+          "palabra": "se",
+          "inicioMs": 2880,
+          "finMs": 3120
+        },
+        {
+          "palabra": "fija",
+          "inicioMs": 3120,
+          "finMs": 3400
+        },
+        {
+          "palabra": "en",
+          "inicioMs": 3400,
+          "finMs": 3540
+        },
+        {
+          "palabra": "tu",
+          "inicioMs": 3540,
+          "finMs": 3600
+        },
+        {
+          "palabra": "mancha",
+          "inicioMs": 3600,
+          "finMs": 3900
+        },
+        {
+          "palabra": "de",
+          "inicioMs": 3900,
+          "finMs": 3980
+        },
+        {
+          "palabra": "café",
+          "inicioMs": 3980,
+          "finMs": 4260
+        },
+        {
+          "palabra": "porque",
+          "inicioMs": 4260,
+          "finMs": 4540
+        },
+        {
+          "palabra": "cada",
+          "inicioMs": 4540,
+          "finMs": 4840
+        },
+        {
+          "palabra": "persona",
+          "inicioMs": 4840,
+          "finMs": 5260
+        },
+        {
+          "palabra": "a",
+          "inicioMs": 5260,
+          "finMs": 5440
+        },
+        {
+          "palabra": "tu",
+          "inicioMs": 5440,
+          "finMs": 5680
+        },
+        {
+          "palabra": "alrededor",
+          "inicioMs": 5680,
+          "finMs": 5880
+        },
+        {
+          "palabra": "tiene",
+          "inicioMs": 5880,
+          "finMs": 6200
+        },
+        {
+          "palabra": "su",
+          "inicioMs": 6200,
+          "finMs": 6400
+        },
+        {
+          "palabra": "propio",
+          "inicioMs": 6400,
+          "finMs": 6640
+        },
+        {
+          "palabra": "foco",
+          "inicioMs": 6640,
+          "finMs": 7000
+        },
+        {
+          "palabra": "apuntándole",
+          "inicioMs": 7000,
+          "finMs": 7580
+        },
+        {
+          "palabra": "a",
+          "inicioMs": 7580,
+          "finMs": 7640
+        },
+        {
+          "palabra": "la",
+          "inicioMs": 7640,
+          "finMs": 7700
+        },
+        {
+          "palabra": "cabeza",
+          "inicioMs": 7700,
+          "finMs": 8020
+        }
+      ]
+    },
+    {
+      "id": 7,
+      "texto": "Así que camina tranquilo, tropieza, di tonterías y viste lo que quieras: a nadie le importa tanto como a ti mismo. Apaga tu reflector mental... y sé completamente libre.",
+      "icono": "Sun",
+      "colorIcono": "#22C55E",
+      "tituloVisual": "APAGA TU REFLECTOR",
+      "composicionVisual": "escenario_ilustrado",
+      "escenario": "plaza_atardecer_interruptor_libertad",
+      "layout": "narrativo",
+      "transicion": "zoom_in",
+      "efectosCamara": [
+        "punch",
+        "drift"
+      ],
+      "sfx": "sfx/sfx_foco_palanca_enceste_guitarra.wav",
+      "volumenSfx": 0.26,
+      "palabrasClave": [
+        "tropieza",
+        "viste lo que quieras",
+        "a nadie le importa",
+        "apaga tu reflector",
+        "sé libre"
+      ],
+      "personajes": [
+        {
+          "id": "stickman_libertad_final",
+          "nombre": "Stickman",
+          "posicion": {
+            "x": -160,
+            "y": 130
+          },
+          "escala": 1.0,
+          "orientacion": "derecha",
+          "prop": "interruptor_palanca_industrial",
+          "habla": true,
+          "capaZ": 20,
+          "acciones": [
+            {
+              "tipo": "personalizada",
+              "pasos": [
+                {
+                  "inicioProgreso": 0,
+                  "finProgreso": 0.35,
+                  "poseId": "pulling",
+                  "expresion": "talking_enthusiastic",
+                  "posicion": {
+                    "x": -160,
+                    "y": 130
+                  },
+                  "curva": "impacto",
+                  "procedural": "estatico"
+                },
+                {
+                  "inicioProgreso": 0.35,
+                  "finProgreso": 0.7,
+                  "poseId": "throwing_object",
+                  "expresion": "smile_wide",
+                  "posicion": {
+                    "x": -120,
+                    "y": 130
+                  },
+                  "curva": "suave",
+                  "procedural": "estatico"
+                },
+                {
+                  "inicioProgreso": 0.7,
+                  "finProgreso": 1.0,
+                  "poseId": "waving_goodbye",
+                  "expresion": "proud",
+                  "posicion": {
+                    "x": -90,
+                    "y": 130
+                  },
+                  "curva": "suave",
+                  "procedural": "caminar"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "duracionSegundos": 9.73,
+      "palabras": [
+        {
+          "palabra": "Así",
+          "inicioMs": 0,
+          "finMs": 280
+        },
+        {
+          "palabra": "que",
+          "inicioMs": 280,
+          "finMs": 420
+        },
+        {
+          "palabra": "camina",
+          "inicioMs": 420,
+          "finMs": 720
+        },
+        {
+          "palabra": "tranquilo",
+          "inicioMs": 720,
+          "finMs": 1240
+        },
+        {
+          "palabra": "tropieza",
+          "inicioMs": 1400,
+          "finMs": 1780
+        },
+        {
+          "palabra": "di",
+          "inicioMs": 1940,
+          "finMs": 1980
+        },
+        {
+          "palabra": "tonterías",
+          "inicioMs": 1980,
+          "finMs": 2540
+        },
+        {
+          "palabra": "y",
+          "inicioMs": 2540,
+          "finMs": 2800
+        },
+        {
+          "palabra": "viste",
+          "inicioMs": 2800,
+          "finMs": 3040
+        },
+        {
+          "palabra": "lo",
+          "inicioMs": 3040,
+          "finMs": 3160
+        },
+        {
+          "palabra": "que",
+          "inicioMs": 3160,
+          "finMs": 3300
+        },
+        {
+          "palabra": "quieras",
+          "inicioMs": 3300,
+          "finMs": 3780
+        },
+        {
+          "palabra": "a",
+          "inicioMs": 3900,
+          "finMs": 3960
+        },
+        {
+          "palabra": "nadie",
+          "inicioMs": 3960,
+          "finMs": 4200
+        },
+        {
+          "palabra": "le",
+          "inicioMs": 4200,
+          "finMs": 4340
+        },
+        {
+          "palabra": "importa",
+          "inicioMs": 4340,
+          "finMs": 4580
+        },
+        {
+          "palabra": "tanto",
+          "inicioMs": 4580,
+          "finMs": 5080
+        },
+        {
+          "palabra": "como",
+          "inicioMs": 5080,
+          "finMs": 5360
+        },
+        {
+          "palabra": "a",
+          "inicioMs": 5360,
+          "finMs": 5500
+        },
+        {
+          "palabra": "ti",
+          "inicioMs": 5500,
+          "finMs": 5560
+        },
+        {
+          "palabra": "mismo",
+          "inicioMs": 5560,
+          "finMs": 5940
+        },
+        {
+          "palabra": "Apaga",
+          "inicioMs": 6180,
+          "finMs": 6500
+        },
+        {
+          "palabra": "tu",
+          "inicioMs": 6500,
+          "finMs": 6660
+        },
+        {
+          "palabra": "reflector",
+          "inicioMs": 6660,
+          "finMs": 7120
+        },
+        {
+          "palabra": "mental",
+          "inicioMs": 7120,
+          "finMs": 7560
+        },
+        {
+          "palabra": "y",
+          "inicioMs": 7560,
+          "finMs": 7840
+        },
+        {
+          "palabra": "sé",
+          "inicioMs": 7840,
+          "finMs": 7960
+        },
+        {
+          "palabra": "completamente",
+          "inicioMs": 7960,
+          "finMs": 8500
+        },
+        {
+          "palabra": "libre",
+          "inicioMs": 8500,
+          "finMs": 9020
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,1804 @@
+{
+  "meta": {
+    "id": "efecto_mandela_memoria_falsa",
+    "slug": "efecto_mandela_memoria_falsa",
+    "temaResumen": "El efecto Mandela: por qué millones de personas recuerdan hechos que nunca ocurrieron, la memoria como reconstructora y el truco del sombrero",
+    "duracionObjetivo": [
+      62,
+      76
+    ],
+    "titulo": "Millones recuerdan algo que nunca pasó (El efecto Mandela)",
+    "titulo_corto": "El efecto Mandela",
+    "gancho": "¿Recuerdas que Nelson Mandela murió en prisión en los años ochenta? Millones de personas lo recuerdan así. Y todas se equivocan.",
+    "genero": "Psicología Cognitiva y Neurociencia",
+    "playlist": "Sesgos Cognitivos y Misterios de la Mente",
+    "fuentes": [
+      "Elizabeth F. Loftus (1974) - Reconstruction of Automobile Destruction: An Example of the Interaction Between Language and Memory",
+      "Fiona Broome (2009) - The Mandela Effect: A Collective False Memory Phenomenon",
+      "Daniel Schacter (2001) - The Seven Sins of Memory: How the Mind Forgets and Remembers",
+      "Cognitive Research: Principles and Implications (2022) - The Visual Mandela Effect as Evidence for Shared False Memories"
+    ]
+  },
+  "escenas": [
+    {
+      "id": 1,
+      "texto": "¿Recuerdas que Nelson Mandela murió en prisión en los años ochenta? Millones de personas lo recuerdan así. Y todas se equivocan.",
+      "icono": "HelpCircle",
+      "colorIcono": "#38BDF8",
+      "tituloVisual": "¿MANDELA EN PRISIÓN?",
+      "composicionVisual": "plano_general",
+      "escenario": "estudio_blanco_celda_mandela",
+      "layout": "narrativo",
+      "transicion": "corte",
+      "efectosCamara": [
+        "punch",
+        "drift"
+      ],
+      "sfx": "sfx/sfx_mandela_barrotes_poof.wav",
+      "volumenSfx": 0.24,
+      "palabrasClave": [
+        "Mandela",
+        "prisión",
+        "ochenta",
+        "Millones",
+        "equivocan"
+      ],
+      "personajes": [
+        {
+          "id": "stickman_protagonista",
+          "nombre": "Stickman Narrador",
+          "posicion": {
+            "x": -160,
+            "y": 80
+          },
+          "escala": 1,
+          "orientacion": "derecha",
+          "acciones": [
+            {
+              "tipo": "personalizada",
+              "pasos": [
+                {
+                  "inicioProgreso": 0,
+                  "finProgreso": 0.35,
+                  "poseId": "walking",
+                  "expresion": "talking",
+                  "posicion": {
+                    "x": -260,
+                    "y": 80
+                  },
+                  "curva": "suave",
+                  "procedural": "caminar"
+                },
+                {
+                  "inicioProgreso": 0.35,
+                  "finProgreso": 0.65,
+                  "poseId": "scratching_head",
+                  "expresion": "confused",
+                  "posicion": {
+                    "x": -160,
+                    "y": 80
+                  },
+                  "curva": "suave",
+                  "procedural": "estatico"
+                },
+                {
+                  "inicioProgreso": 0.65,
+                  "finProgreso": 1,
+                  "poseId": "shaking_no",
+                  "expresion": "skeptical",
+                  "posicion": {
+                    "x": -160,
+                    "y": 80
+                  },
+                  "curva": "impacto",
+                  "procedural": "estatico"
+                }
+              ]
+            }
+          ],
+          "habla": false,
+          "capaZ": 10
+        }
+      ],
+      "objetos": [
+        {
+          "id": "celda_recuerdo_falso",
+          "propId": "celda_prision_mandela",
+          "posicion": {
+            "x": 200,
+            "y": 0
+          },
+          "escala": 1.3,
+          "animacion": "pulso",
+          "capaZ": 12
+        }
+      ],
+      "duracionSegundos": 7.45,
+      "palabras": [
+        {
+          "palabra": "Recuerdas",
+          "inicioMs": 0,
+          "finMs": 540
+        },
+        {
+          "palabra": "que",
+          "inicioMs": 540,
+          "finMs": 700
+        },
+        {
+          "palabra": "Nelson",
+          "inicioMs": 700,
+          "finMs": 940
+        },
+        {
+          "palabra": "Mandela",
+          "inicioMs": 940,
+          "finMs": 1420
+        },
+        {
+          "palabra": "murió",
+          "inicioMs": 1420,
+          "finMs": 1720
+        },
+        {
+          "palabra": "en",
+          "inicioMs": 1720,
+          "finMs": 1820
+        },
+        {
+          "palabra": "prisión",
+          "inicioMs": 1820,
+          "finMs": 2180
+        },
+        {
+          "palabra": "en",
+          "inicioMs": 2180,
+          "finMs": 2280
+        },
+        {
+          "palabra": "los",
+          "inicioMs": 2280,
+          "finMs": 2380
+        },
+        {
+          "palabra": "años",
+          "inicioMs": 2380,
+          "finMs": 2580
+        },
+        {
+          "palabra": "ochenta",
+          "inicioMs": 2580,
+          "finMs": 3100
+        },
+        {
+          "palabra": "Millones",
+          "inicioMs": 3280,
+          "finMs": 3580
+        },
+        {
+          "palabra": "de",
+          "inicioMs": 3580,
+          "finMs": 3760
+        },
+        {
+          "palabra": "personas",
+          "inicioMs": 3760,
+          "finMs": 4160
+        },
+        {
+          "palabra": "lo",
+          "inicioMs": 4160,
+          "finMs": 4360
+        },
+        {
+          "palabra": "recuerdan",
+          "inicioMs": 4360,
+          "finMs": 4840
+        },
+        {
+          "palabra": "así",
+          "inicioMs": 4840,
+          "finMs": 5120
+        },
+        {
+          "palabra": "Y",
+          "inicioMs": 5520,
+          "finMs": 5620
+        },
+        {
+          "palabra": "todas",
+          "inicioMs": 5620,
+          "finMs": 5980
+        },
+        {
+          "palabra": "se",
+          "inicioMs": 5980,
+          "finMs": 6120
+        },
+        {
+          "palabra": "equivocan",
+          "inicioMs": 6120,
+          "finMs": 6800
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "texto": "Mandela salió libre en mil novecientos noventa, fue presidente y murió en dos mil trece, en su casa. Aun así, mucha gente recuerda haber visto noticias de su muerte en prisión. A esto se le conoce como el efecto Mandela.",
+      "icono": "Tv",
+      "colorIcono": "#F59E0B",
+      "tituloVisual": "EFECTO MANDELA",
+      "composicionVisual": "plano_general",
+      "escenario": "estudio_linea_tiempo_mandela",
+      "layout": "narrativo",
+      "transicion": "whip_right",
+      "efectosCamara": [
+        "punch",
+        "drift"
+      ],
+      "sfx": "sfx/sfx_timeline_clic_tv_estatica.wav",
+      "volumenSfx": 0.22,
+      "palabrasClave": [
+        "libre",
+        "presidente",
+        "casa",
+        "noticias",
+        "prisión",
+        "Mandela"
+      ],
+      "personajes": [
+        {
+          "id": "stickman_protagonista",
+          "nombre": "Stickman Narrador",
+          "posicion": {
+            "x": -180,
+            "y": 80
+          },
+          "escala": 1,
+          "orientacion": "derecha",
+          "acciones": [
+            {
+              "tipo": "personalizada",
+              "pasos": [
+                {
+                  "inicioProgreso": 0,
+                  "finProgreso": 0.45,
+                  "poseId": "explaining_pointing_up",
+                  "expresion": "talking_enthusiastic",
+                  "posicion": {
+                    "x": -180,
+                    "y": 80
+                  },
+                  "curva": "suave",
+                  "procedural": "estatico"
+                },
+                {
+                  "inicioProgreso": 0.45,
+                  "finProgreso": 0.75,
+                  "poseId": "pointing_right",
+                  "expresion": "analytical",
+                  "posicion": {
+                    "x": -140,
+                    "y": 80
+                  },
+                  "curva": "suave",
+                  "procedural": "estatico"
+                },
+                {
+                  "inicioProgreso": 0.75,
+                  "finProgreso": 1,
+                  "poseId": "shrugging",
+                  "expresion": "confused",
+                  "posicion": {
+                    "x": -140,
+                    "y": 80
+                  },
+                  "curva": "impacto",
+                  "procedural": "estatico"
+                }
+              ]
+            }
+          ],
+          "habla": false,
+          "capaZ": 10
+        }
+      ],
+      "objetos": [
+        {
+          "id": "tv_noticiero_falso",
+          "propId": "linea_tiempo_mandela_tv",
+          "posicion": {
+            "x": 220,
+            "y": -20
+          },
+          "escala": 1.35,
+          "animacion": "vibrar",
+          "capaZ": 14
+        }
+      ],
+      "duracionSegundos": 12.274,
+      "palabras": [
+        {
+          "palabra": "Mandela",
+          "inicioMs": 0,
+          "finMs": 440
+        },
+        {
+          "palabra": "salió",
+          "inicioMs": 440,
+          "finMs": 760
+        },
+        {
+          "palabra": "libre",
+          "inicioMs": 760,
+          "finMs": 1040
+        },
+        {
+          "palabra": "en",
+          "inicioMs": 1040,
+          "finMs": 1260
+        },
+        {
+          "palabra": "mil",
+          "inicioMs": 1260,
+          "finMs": 1400
+        },
+        {
+          "palabra": "novecientos",
+          "inicioMs": 1400,
+          "finMs": 1960
+        },
+        {
+          "palabra": "noventa",
+          "inicioMs": 1960,
+          "finMs": 2440
+        },
+        {
+          "palabra": "fue",
+          "inicioMs": 2560,
+          "finMs": 2640
+        },
+        {
+          "palabra": "presidente",
+          "inicioMs": 2640,
+          "finMs": 3040
+        },
+        {
+          "palabra": "y",
+          "inicioMs": 3040,
+          "finMs": 3440
+        },
+        {
+          "palabra": "murió",
+          "inicioMs": 3440,
+          "finMs": 3700
+        },
+        {
+          "palabra": "en",
+          "inicioMs": 3700,
+          "finMs": 3840
+        },
+        {
+          "palabra": "dos",
+          "inicioMs": 3840,
+          "finMs": 4000
+        },
+        {
+          "palabra": "mil",
+          "inicioMs": 4000,
+          "finMs": 4160
+        },
+        {
+          "palabra": "trece",
+          "inicioMs": 4160,
+          "finMs": 4620
+        },
+        {
+          "palabra": "en",
+          "inicioMs": 4620,
+          "finMs": 4840
+        },
+        {
+          "palabra": "su",
+          "inicioMs": 4840,
+          "finMs": 4980
+        },
+        {
+          "palabra": "casa",
+          "inicioMs": 4980,
+          "finMs": 5300
+        },
+        {
+          "palabra": "Aun",
+          "inicioMs": 5600,
+          "finMs": 5780
+        },
+        {
+          "palabra": "así",
+          "inicioMs": 5780,
+          "finMs": 6100
+        },
+        {
+          "palabra": "mucha",
+          "inicioMs": 6320,
+          "finMs": 6560
+        },
+        {
+          "palabra": "gente",
+          "inicioMs": 6560,
+          "finMs": 6820
+        },
+        {
+          "palabra": "recuerda",
+          "inicioMs": 6820,
+          "finMs": 7400
+        },
+        {
+          "palabra": "haber",
+          "inicioMs": 7400,
+          "finMs": 7580
+        },
+        {
+          "palabra": "visto",
+          "inicioMs": 7580,
+          "finMs": 7860
+        },
+        {
+          "palabra": "noticias",
+          "inicioMs": 7860,
+          "finMs": 8280
+        },
+        {
+          "palabra": "de",
+          "inicioMs": 8280,
+          "finMs": 8440
+        },
+        {
+          "palabra": "su",
+          "inicioMs": 8440,
+          "finMs": 8580
+        },
+        {
+          "palabra": "muerte",
+          "inicioMs": 8580,
+          "finMs": 8820
+        },
+        {
+          "palabra": "en",
+          "inicioMs": 8820,
+          "finMs": 9060
+        },
+        {
+          "palabra": "prisión",
+          "inicioMs": 9060,
+          "finMs": 9460
+        },
+        {
+          "palabra": "A",
+          "inicioMs": 9720,
+          "finMs": 9820
+        },
+        {
+          "palabra": "esto",
+          "inicioMs": 9820,
+          "finMs": 10040
+        },
+        {
+          "palabra": "se",
+          "inicioMs": 10040,
+          "finMs": 10200
+        },
+        {
+          "palabra": "le",
+          "inicioMs": 10200,
+          "finMs": 10280
+        },
+        {
+          "palabra": "conoce",
+          "inicioMs": 10280,
+          "finMs": 10640
+        },
+        {
+          "palabra": "como",
+          "inicioMs": 10640,
+          "finMs": 10820
+        },
+        {
+          "palabra": "el",
+          "inicioMs": 10820,
+          "finMs": 10920
+        },
+        {
+          "palabra": "efecto",
+          "inicioMs": 10920,
+          "finMs": 11140
+        },
+        {
+          "palabra": "Mandela",
+          "inicioMs": 11140,
+          "finMs": 11680
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "texto": "El nombre lo creó en dos mil nueve la autora Fiona Broome, al descubrir que otras personas compartían su recuerdo falso. Y no solo pasa con Mandela.",
+      "icono": "Users",
+      "colorIcono": "#F43F5E",
+      "tituloVisual": "RED DE RECUERDOS",
+      "composicionVisual": "plano_general",
+      "escenario": "red_mental_siluetas_mandela",
+      "layout": "narrativo",
+      "transicion": "whip_right",
+      "efectosCamara": [
+        "punch",
+        "drift"
+      ],
+      "sfx": "sfx/sfx_burbujas_pop_multitud.wav",
+      "volumenSfx": 0.22,
+      "palabrasClave": [
+        "Fiona",
+        "Broome",
+        "compartían",
+        "recuerdo",
+        "falso",
+        "Mandela"
+      ],
+      "personajes": [
+        {
+          "id": "stickman_protagonista",
+          "nombre": "Stickman Narrador",
+          "posicion": {
+            "x": -160,
+            "y": 80
+          },
+          "escala": 1,
+          "orientacion": "derecha",
+          "acciones": [
+            {
+              "tipo": "personalizada",
+              "pasos": [
+                {
+                  "inicioProgreso": 0,
+                  "finProgreso": 0.45,
+                  "poseId": "surprised_hands_up",
+                  "expresion": "surprised",
+                  "posicion": {
+                    "x": -160,
+                    "y": 80
+                  },
+                  "curva": "suave",
+                  "procedural": "estatico"
+                },
+                {
+                  "inicioProgreso": 0.45,
+                  "finProgreso": 0.75,
+                  "poseId": "counting_fingers",
+                  "expresion": "analytical",
+                  "posicion": {
+                    "x": -140,
+                    "y": 80
+                  },
+                  "curva": "suave",
+                  "procedural": "estatico"
+                },
+                {
+                  "inicioProgreso": 0.75,
+                  "finProgreso": 1,
+                  "poseId": "explaining_both_hands",
+                  "expresion": "talking",
+                  "posicion": {
+                    "x": -140,
+                    "y": 80
+                  },
+                  "curva": "impacto",
+                  "procedural": "estatico"
+                }
+              ]
+            }
+          ],
+          "habla": false,
+          "capaZ": 10
+        }
+      ],
+      "objetos": [
+        {
+          "id": "red_fiona_nodos",
+          "propId": "red_pensamientos_fiona_siluetas",
+          "posicion": {
+            "x": 200,
+            "y": 10
+          },
+          "escala": 1.35,
+          "animacion": "flotar",
+          "capaZ": 14
+        }
+      ],
+      "duracionSegundos": 8.338,
+      "palabras": [
+        {
+          "palabra": "El",
+          "inicioMs": 0,
+          "finMs": 200
+        },
+        {
+          "palabra": "nombre",
+          "inicioMs": 200,
+          "finMs": 400
+        },
+        {
+          "palabra": "lo",
+          "inicioMs": 400,
+          "finMs": 620
+        },
+        {
+          "palabra": "creó",
+          "inicioMs": 620,
+          "finMs": 900
+        },
+        {
+          "palabra": "en",
+          "inicioMs": 900,
+          "finMs": 1000
+        },
+        {
+          "palabra": "dos",
+          "inicioMs": 1000,
+          "finMs": 1180
+        },
+        {
+          "palabra": "mil",
+          "inicioMs": 1180,
+          "finMs": 1340
+        },
+        {
+          "palabra": "nueve",
+          "inicioMs": 1340,
+          "finMs": 1680
+        },
+        {
+          "palabra": "la",
+          "inicioMs": 1680,
+          "finMs": 1820
+        },
+        {
+          "palabra": "autora",
+          "inicioMs": 1820,
+          "finMs": 2100
+        },
+        {
+          "palabra": "Fiona",
+          "inicioMs": 2100,
+          "finMs": 2400
+        },
+        {
+          "palabra": "Broome",
+          "inicioMs": 2400,
+          "finMs": 2840
+        },
+        {
+          "palabra": "al",
+          "inicioMs": 3180,
+          "finMs": 3300
+        },
+        {
+          "palabra": "descubrir",
+          "inicioMs": 3300,
+          "finMs": 3780
+        },
+        {
+          "palabra": "que",
+          "inicioMs": 3780,
+          "finMs": 3940
+        },
+        {
+          "palabra": "otras",
+          "inicioMs": 3940,
+          "finMs": 4120
+        },
+        {
+          "palabra": "personas",
+          "inicioMs": 4120,
+          "finMs": 4580
+        },
+        {
+          "palabra": "compartían",
+          "inicioMs": 4580,
+          "finMs": 5160
+        },
+        {
+          "palabra": "su",
+          "inicioMs": 5160,
+          "finMs": 5320
+        },
+        {
+          "palabra": "recuerdo",
+          "inicioMs": 5320,
+          "finMs": 5660
+        },
+        {
+          "palabra": "falso",
+          "inicioMs": 5660,
+          "finMs": 6220
+        },
+        {
+          "palabra": "Y",
+          "inicioMs": 6460,
+          "finMs": 6520
+        },
+        {
+          "palabra": "no",
+          "inicioMs": 6520,
+          "finMs": 6620
+        },
+        {
+          "palabra": "solo",
+          "inicioMs": 6620,
+          "finMs": 6820
+        },
+        {
+          "palabra": "pasa",
+          "inicioMs": 6820,
+          "finMs": 7060
+        },
+        {
+          "palabra": "con",
+          "inicioMs": 7060,
+          "finMs": 7260
+        },
+        {
+          "palabra": "Mandela",
+          "inicioMs": 7260,
+          "finMs": 7660
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "texto": "¿El señor del Monopoly lleva monóculo? Nunca lo llevó. ¿Pikachu tiene la punta de la cola negra? Tampoco. Pero muchísima gente jura que sí.",
+      "icono": "Palette",
+      "colorIcono": "#EAB308",
+      "tituloVisual": "¿MONÓCULO O COLA?",
+      "composicionVisual": "plano_general",
+      "escenario": "estudio_caballete_monopoly_pikachu",
+      "layout": "narrativo",
+      "transicion": "whip_left",
+      "efectosCamara": [
+        "punch",
+        "drift"
+      ],
+      "sfx": "sfx/sfx_pincel_goma_sorpresa.wav",
+      "volumenSfx": 0.24,
+      "palabrasClave": [
+        "Monopoly",
+        "monóculo",
+        "Nunca",
+        "Pikachu",
+        "cola",
+        "negra"
+      ],
+      "personajes": [
+        {
+          "id": "stickman_protagonista",
+          "nombre": "Stickman Artista",
+          "posicion": {
+            "x": -270,
+            "y": 80
+          },
+          "escala": 1,
+          "orientacion": "derecha",
+          "acciones": [
+            {
+              "tipo": "personalizada",
+              "pasos": [
+                {
+                  "inicioProgreso": 0,
+                  "finProgreso": 0.4,
+                  "poseId": "taking_notes",
+                  "expresion": "smile_soft",
+                  "posicion": {
+                    "x": -270,
+                    "y": 80
+                  },
+                  "curva": "suave",
+                  "procedural": "estatico"
+                },
+                {
+                  "inicioProgreso": 0.4,
+                  "finProgreso": 0.7,
+                  "poseId": "thumbs_up_approval",
+                  "expresion": "proud",
+                  "posicion": {
+                    "x": -240,
+                    "y": 80
+                  },
+                  "curva": "suave",
+                  "procedural": "estatico"
+                },
+                {
+                  "inicioProgreso": 0.7,
+                  "finProgreso": 1,
+                  "poseId": "shock_explosion",
+                  "expresion": "shocked",
+                  "posicion": {
+                    "x": -240,
+                    "y": 70
+                  },
+                  "curva": "impacto",
+                  "procedural": "temblar"
+                }
+              ]
+            }
+          ],
+          "habla": false,
+          "capaZ": 10
+        }
+      ],
+      "objetos": [],
+      "duracionSegundos": 7.954,
+      "palabras": [
+        {
+          "palabra": "El",
+          "inicioMs": 0,
+          "finMs": 180
+        },
+        {
+          "palabra": "señor",
+          "inicioMs": 180,
+          "finMs": 400
+        },
+        {
+          "palabra": "del",
+          "inicioMs": 400,
+          "finMs": 580
+        },
+        {
+          "palabra": "Monopoly",
+          "inicioMs": 580,
+          "finMs": 940
+        },
+        {
+          "palabra": "lleva",
+          "inicioMs": 940,
+          "finMs": 1160
+        },
+        {
+          "palabra": "monóculo",
+          "inicioMs": 1160,
+          "finMs": 1600
+        },
+        {
+          "palabra": "Nunca",
+          "inicioMs": 1960,
+          "finMs": 2180
+        },
+        {
+          "palabra": "lo",
+          "inicioMs": 2180,
+          "finMs": 2280
+        },
+        {
+          "palabra": "llevó",
+          "inicioMs": 2280,
+          "finMs": 2660
+        },
+        {
+          "palabra": "Pikachu",
+          "inicioMs": 2940,
+          "finMs": 3300
+        },
+        {
+          "palabra": "tiene",
+          "inicioMs": 3300,
+          "finMs": 3500
+        },
+        {
+          "palabra": "la",
+          "inicioMs": 3500,
+          "finMs": 3640
+        },
+        {
+          "palabra": "punta",
+          "inicioMs": 3640,
+          "finMs": 3880
+        },
+        {
+          "palabra": "de",
+          "inicioMs": 3880,
+          "finMs": 3940
+        },
+        {
+          "palabra": "la",
+          "inicioMs": 3940,
+          "finMs": 4020
+        },
+        {
+          "palabra": "cola",
+          "inicioMs": 4020,
+          "finMs": 4160
+        },
+        {
+          "palabra": "negra",
+          "inicioMs": 4160,
+          "finMs": 4540
+        },
+        {
+          "palabra": "Tampoco",
+          "inicioMs": 4800,
+          "finMs": 5260
+        },
+        {
+          "palabra": "Pero",
+          "inicioMs": 5620,
+          "finMs": 5780
+        },
+        {
+          "palabra": "muchísima",
+          "inicioMs": 5780,
+          "finMs": 6340
+        },
+        {
+          "palabra": "gente",
+          "inicioMs": 6340,
+          "finMs": 6600
+        },
+        {
+          "palabra": "jura",
+          "inicioMs": 6600,
+          "finMs": 6920
+        },
+        {
+          "palabra": "que",
+          "inicioMs": 6920,
+          "finMs": 7060
+        },
+        {
+          "palabra": "sí",
+          "inicioMs": 7060,
+          "finMs": 7260
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "texto": "En los años setenta, Elizabeth Loftus mostró choques de autos grabados. Quienes oyeron la palabra tocaron estimaron poca velocidad. Pero al usar la palabra estrellaron, recordaron cristales rotos que nunca existieron.",
+      "icono": "Car",
+      "colorIcono": "#EF4444",
+      "tituloVisual": "MEMORIA ALTERADA",
+      "composicionVisual": "plano_general",
+      "escenario": "pantalla_dividida_choque_loftus",
+      "layout": "narrativo",
+      "transicion": "zoom_in",
+      "efectosCamara": [
+        "punch",
+        "drift"
+      ],
+      "sfx": "sfx/sfx_choque_suave_vs_fuerte_vidrios.wav",
+      "volumenSfx": 0.24,
+      "palabrasClave": [
+        "Elizabeth",
+        "Loftus",
+        "choques",
+        "velocidad",
+        "estrellaron",
+        "cristales"
+      ],
+      "personajes": [
+        {
+          "id": "stickman_protagonista",
+          "nombre": "Stickman Investigador",
+          "posicion": {
+            "x": -150,
+            "y": 80
+          },
+          "escala": 1,
+          "orientacion": "derecha",
+          "acciones": [
+            {
+              "tipo": "personalizada",
+              "pasos": [
+                {
+                  "inicioProgreso": 0,
+                  "finProgreso": 0.45,
+                  "poseId": "investigating_magnifier",
+                  "expresion": "analytical",
+                  "posicion": {
+                    "x": -150,
+                    "y": 80
+                  },
+                  "curva": "suave",
+                  "procedural": "estatico"
+                },
+                {
+                  "inicioProgreso": 0.45,
+                  "finProgreso": 0.75,
+                  "poseId": "comparing_two_objects",
+                  "expresion": "confused",
+                  "posicion": {
+                    "x": -120,
+                    "y": 80
+                  },
+                  "curva": "suave",
+                  "procedural": "estatico"
+                },
+                {
+                  "inicioProgreso": 0.75,
+                  "finProgreso": 1,
+                  "poseId": "warning_danger",
+                  "expresion": "worried",
+                  "posicion": {
+                    "x": -120,
+                    "y": 80
+                  },
+                  "curva": "impacto",
+                  "procedural": "estatico"
+                }
+              ]
+            }
+          ],
+          "habla": false,
+          "capaZ": 10
+        }
+      ],
+      "objetos": [
+        {
+          "id": "experimento_loftus_pantalla",
+          "propId": "experimento_loftus_choque_autos",
+          "posicion": {
+            "x": 200,
+            "y": 10
+          },
+          "escala": 1.4,
+          "animacion": "vibrar",
+          "capaZ": 14
+        }
+      ],
+      "duracionSegundos": 11.77,
+      "palabras": [
+        {
+          "palabra": "En",
+          "inicioMs": 0,
+          "finMs": 200
+        },
+        {
+          "palabra": "los",
+          "inicioMs": 200,
+          "finMs": 300
+        },
+        {
+          "palabra": "años",
+          "inicioMs": 300,
+          "finMs": 540
+        },
+        {
+          "palabra": "setenta",
+          "inicioMs": 540,
+          "finMs": 1080
+        },
+        {
+          "palabra": "Elizabeth",
+          "inicioMs": 1180,
+          "finMs": 1420
+        },
+        {
+          "palabra": "Loftus",
+          "inicioMs": 1420,
+          "finMs": 2040
+        },
+        {
+          "palabra": "mostró",
+          "inicioMs": 2040,
+          "finMs": 2380
+        },
+        {
+          "palabra": "choques",
+          "inicioMs": 2380,
+          "finMs": 2740
+        },
+        {
+          "palabra": "de",
+          "inicioMs": 2740,
+          "finMs": 2880
+        },
+        {
+          "palabra": "autos",
+          "inicioMs": 2880,
+          "finMs": 3200
+        },
+        {
+          "palabra": "grabados",
+          "inicioMs": 3200,
+          "finMs": 3680
+        },
+        {
+          "palabra": "Quienes",
+          "inicioMs": 3920,
+          "finMs": 4200
+        },
+        {
+          "palabra": "oyeron",
+          "inicioMs": 4200,
+          "finMs": 4500
+        },
+        {
+          "palabra": "la",
+          "inicioMs": 4500,
+          "finMs": 4600
+        },
+        {
+          "palabra": "palabra",
+          "inicioMs": 4600,
+          "finMs": 4880
+        },
+        {
+          "palabra": "tocaron",
+          "inicioMs": 4880,
+          "finMs": 5480
+        },
+        {
+          "palabra": "estimaron",
+          "inicioMs": 5480,
+          "finMs": 6060
+        },
+        {
+          "palabra": "poca",
+          "inicioMs": 6060,
+          "finMs": 6420
+        },
+        {
+          "palabra": "velocidad",
+          "inicioMs": 6420,
+          "finMs": 6760
+        },
+        {
+          "palabra": "Pero",
+          "inicioMs": 7060,
+          "finMs": 7180
+        },
+        {
+          "palabra": "al",
+          "inicioMs": 7180,
+          "finMs": 7280
+        },
+        {
+          "palabra": "usar",
+          "inicioMs": 7280,
+          "finMs": 7500
+        },
+        {
+          "palabra": "la",
+          "inicioMs": 7500,
+          "finMs": 7700
+        },
+        {
+          "palabra": "palabra",
+          "inicioMs": 7700,
+          "finMs": 8040
+        },
+        {
+          "palabra": "estrellaron",
+          "inicioMs": 8040,
+          "finMs": 8700
+        },
+        {
+          "palabra": "recordaron",
+          "inicioMs": 8880,
+          "finMs": 9300
+        },
+        {
+          "palabra": "cristales",
+          "inicioMs": 9300,
+          "finMs": 9760
+        },
+        {
+          "palabra": "rotos",
+          "inicioMs": 9760,
+          "finMs": 10140
+        },
+        {
+          "palabra": "que",
+          "inicioMs": 10140,
+          "finMs": 10280
+        },
+        {
+          "palabra": "nunca",
+          "inicioMs": 10280,
+          "finMs": 10500
+        },
+        {
+          "palabra": "existieron",
+          "inicioMs": 10500,
+          "finMs": 11100
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "texto": "La memoria humana no es una grabación. Cada vez que recuerdas algo, tu cerebro lo reconstruye, rellena huecos con lo que parece lógico y lo guarda ya modificado.",
+      "icono": "Cpu",
+      "colorIcono": "#10B981",
+      "tituloVisual": "RECONSTRUCCIÓN",
+      "composicionVisual": "plano_general",
+      "escenario": "mesa_trabajo_vhs_rompecabezas",
+      "layout": "narrativo",
+      "transicion": "whip_right",
+      "efectosCamara": [
+        "punch",
+        "drift"
+      ],
+      "sfx": "sfx/sfx_vhs_crujido_rompecabezas_cajon.wav",
+      "volumenSfx": 0.22,
+      "palabrasClave": [
+        "memoria",
+        "grabación",
+        "cerebro",
+        "reconstruye",
+        "huecos",
+        "modificado"
+      ],
+      "personajes": [
+        {
+          "id": "stickman_protagonista",
+          "nombre": "Stickman Artesano",
+          "posicion": {
+            "x": -140,
+            "y": 80
+          },
+          "escala": 1,
+          "orientacion": "derecha",
+          "acciones": [
+            {
+              "tipo": "personalizada",
+              "pasos": [
+                {
+                  "inicioProgreso": 0,
+                  "finProgreso": 0.35,
+                  "poseId": "pushing",
+                  "expresion": "frustrated",
+                  "posicion": {
+                    "x": -140,
+                    "y": 80
+                  },
+                  "curva": "suave",
+                  "procedural": "estatico"
+                },
+                {
+                  "inicioProgreso": 0.35,
+                  "finProgreso": 0.7,
+                  "poseId": "lifting_heavy",
+                  "expresion": "exhausted",
+                  "posicion": {
+                    "x": -110,
+                    "y": 85
+                  },
+                  "curva": "anticipacion",
+                  "procedural": "esfuerzo"
+                },
+                {
+                  "inicioProgreso": 0.7,
+                  "finProgreso": 1,
+                  "poseId": "standing_confident",
+                  "expresion": "smile_wide",
+                  "posicion": {
+                    "x": -110,
+                    "y": 80
+                  },
+                  "curva": "impacto",
+                  "procedural": "estatico"
+                }
+              ]
+            }
+          ],
+          "habla": false,
+          "capaZ": 10
+        }
+      ],
+      "objetos": [
+        {
+          "id": "vhs_rompecabezas_cajon",
+          "propId": "vhs_rompecabezas_cajon_memoria",
+          "posicion": {
+            "x": 200,
+            "y": 20
+          },
+          "escala": 1.35,
+          "animacion": "pulso",
+          "capaZ": 14
+        }
+      ],
+      "duracionSegundos": 8.746,
+      "palabras": [
+        {
+          "palabra": "La",
+          "inicioMs": 0,
+          "finMs": 180
+        },
+        {
+          "palabra": "memoria",
+          "inicioMs": 180,
+          "finMs": 500
+        },
+        {
+          "palabra": "humana",
+          "inicioMs": 500,
+          "finMs": 820
+        },
+        {
+          "palabra": "no",
+          "inicioMs": 820,
+          "finMs": 980
+        },
+        {
+          "palabra": "es",
+          "inicioMs": 980,
+          "finMs": 1140
+        },
+        {
+          "palabra": "una",
+          "inicioMs": 1140,
+          "finMs": 1300
+        },
+        {
+          "palabra": "grabación",
+          "inicioMs": 1300,
+          "finMs": 1780
+        },
+        {
+          "palabra": "Cada",
+          "inicioMs": 2060,
+          "finMs": 2160
+        },
+        {
+          "palabra": "vez",
+          "inicioMs": 2160,
+          "finMs": 2300
+        },
+        {
+          "palabra": "que",
+          "inicioMs": 2300,
+          "finMs": 2460
+        },
+        {
+          "palabra": "recuerdas",
+          "inicioMs": 2460,
+          "finMs": 2920
+        },
+        {
+          "palabra": "algo",
+          "inicioMs": 2920,
+          "finMs": 3260
+        },
+        {
+          "palabra": "tu",
+          "inicioMs": 3420,
+          "finMs": 3480
+        },
+        {
+          "palabra": "cerebro",
+          "inicioMs": 3480,
+          "finMs": 3840
+        },
+        {
+          "palabra": "lo",
+          "inicioMs": 3840,
+          "finMs": 3960
+        },
+        {
+          "palabra": "reconstruye",
+          "inicioMs": 3960,
+          "finMs": 4600
+        },
+        {
+          "palabra": "rellena",
+          "inicioMs": 4860,
+          "finMs": 5200
+        },
+        {
+          "palabra": "huecos",
+          "inicioMs": 5200,
+          "finMs": 5640
+        },
+        {
+          "palabra": "con",
+          "inicioMs": 5640,
+          "finMs": 5780
+        },
+        {
+          "palabra": "lo",
+          "inicioMs": 5780,
+          "finMs": 5860
+        },
+        {
+          "palabra": "que",
+          "inicioMs": 5860,
+          "finMs": 5980
+        },
+        {
+          "palabra": "parece",
+          "inicioMs": 5980,
+          "finMs": 6240
+        },
+        {
+          "palabra": "lógico",
+          "inicioMs": 6240,
+          "finMs": 6760
+        },
+        {
+          "palabra": "y",
+          "inicioMs": 6760,
+          "finMs": 6920
+        },
+        {
+          "palabra": "lo",
+          "inicioMs": 6920,
+          "finMs": 7020
+        },
+        {
+          "palabra": "guarda",
+          "inicioMs": 7020,
+          "finMs": 7360
+        },
+        {
+          "palabra": "ya",
+          "inicioMs": 7360,
+          "finMs": 7440
+        },
+        {
+          "palabra": "modificado",
+          "inicioMs": 7440,
+          "finMs": 8080
+        }
+      ]
+    },
+    {
+      "id": 7,
+      "texto": "Y si millones de personas rellenan el hueco igual, el error parece un recuerdo compartido. Pero compartirlo no lo hace verdadero.",
+      "icono": "AlertCircle",
+      "colorIcono": "#F59E0B",
+      "tituloVisual": "ILUSIÓN COLECTIVA",
+      "composicionVisual": "plano_general",
+      "escenario": "multitud_siluetas_pieza_falsa",
+      "layout": "narrativo",
+      "transicion": "zoom_in",
+      "efectosCamara": [
+        "punch",
+        "drift"
+      ],
+      "sfx": "sfx/sfx_multitud_murmullo_corte_x.wav",
+      "volumenSfx": 0.24,
+      "palabrasClave": [
+        "millones",
+        "hueco",
+        "error",
+        "recuerdo",
+        "compartido",
+        "verdadero"
+      ],
+      "personajes": [
+        {
+          "id": "stickman_protagonista",
+          "nombre": "Stickman Ante la Multitud",
+          "posicion": {
+            "x": -150,
+            "y": 80
+          },
+          "escala": 1,
+          "orientacion": "derecha",
+          "acciones": [
+            {
+              "tipo": "personalizada",
+              "pasos": [
+                {
+                  "inicioProgreso": 0,
+                  "finProgreso": 0.45,
+                  "poseId": "backing_away_scared",
+                  "expresion": "worried",
+                  "posicion": {
+                    "x": -180,
+                    "y": 80
+                  },
+                  "curva": "anticipacion",
+                  "procedural": "temblar"
+                },
+                {
+                  "inicioProgreso": 0.45,
+                  "finProgreso": 0.8,
+                  "poseId": "investigating_magnifier",
+                  "expresion": "analytical",
+                  "posicion": {
+                    "x": -140,
+                    "y": 80
+                  },
+                  "curva": "suave",
+                  "procedural": "estatico"
+                },
+                {
+                  "inicioProgreso": 0.8,
+                  "finProgreso": 1,
+                  "poseId": "pointing_right",
+                  "expresion": "eureka",
+                  "posicion": {
+                    "x": -130,
+                    "y": 80
+                  },
+                  "curva": "impacto",
+                  "procedural": "estatico"
+                }
+              ]
+            }
+          ],
+          "habla": false,
+          "capaZ": 10
+        }
+      ],
+      "objetos": [
+        {
+          "id": "lupa_pieza_falsa",
+          "propId": "multitud_piezas_falsas_lupa",
+          "posicion": {
+            "x": 190,
+            "y": 10
+          },
+          "escala": 1.35,
+          "animacion": "flotar",
+          "capaZ": 14
+        }
+      ],
+      "duracionSegundos": 6.778,
+      "palabras": [
+        {
+          "palabra": "Y",
+          "inicioMs": 0,
+          "finMs": 180
+        },
+        {
+          "palabra": "si",
+          "inicioMs": 180,
+          "finMs": 300
+        },
+        {
+          "palabra": "millones",
+          "inicioMs": 300,
+          "finMs": 580
+        },
+        {
+          "palabra": "de",
+          "inicioMs": 580,
+          "finMs": 800
+        },
+        {
+          "palabra": "personas",
+          "inicioMs": 800,
+          "finMs": 1120
+        },
+        {
+          "palabra": "rellenan",
+          "inicioMs": 1120,
+          "finMs": 1540
+        },
+        {
+          "palabra": "el",
+          "inicioMs": 1540,
+          "finMs": 1680
+        },
+        {
+          "palabra": "hueco",
+          "inicioMs": 1680,
+          "finMs": 1940
+        },
+        {
+          "palabra": "igual",
+          "inicioMs": 1940,
+          "finMs": 2160
+        },
+        {
+          "palabra": "el",
+          "inicioMs": 2420,
+          "finMs": 2560
+        },
+        {
+          "palabra": "error",
+          "inicioMs": 2560,
+          "finMs": 2740
+        },
+        {
+          "palabra": "parece",
+          "inicioMs": 2740,
+          "finMs": 3040
+        },
+        {
+          "palabra": "un",
+          "inicioMs": 3040,
+          "finMs": 3240
+        },
+        {
+          "palabra": "recuerdo",
+          "inicioMs": 3240,
+          "finMs": 3540
+        },
+        {
+          "palabra": "compartido",
+          "inicioMs": 3540,
+          "finMs": 4180
+        },
+        {
+          "palabra": "Pero",
+          "inicioMs": 4460,
+          "finMs": 4600
+        },
+        {
+          "palabra": "compartirlo",
+          "inicioMs": 4600,
+          "finMs": 5280
+        },
+        {
+          "palabra": "no",
+          "inicioMs": 5280,
+          "finMs": 5420
+        },
+        {
+          "palabra": "lo",
+          "inicioMs": 5420,
+          "finMs": 5540
+        },
+        {
+          "palabra": "hace",
+          "inicioMs": 5540,
+          "finMs": 5720
+        },
+        {
+          "palabra": "verdadero",
+          "inicioMs": 5720,
+          "finMs": 6280
+        }
+      ]
+    },
+    {
+      "id": 8,
+      "texto": "Última prueba: ¿llevaba sombrero el Stickman al empezar este video?",
+      "icono": "Sparkles",
+      "colorIcono": "#22C55E",
+      "tituloVisual": "¿LLEVABA SOMBRERO?",
+      "composicionVisual": "plano_general",
+      "escenario": "estudio_blanco_rebobinado_sombrero",
+      "layout": "narrativo",
+      "transicion": "flash",
+      "efectosCamara": [
+        "punch",
+        "drift"
+      ],
+      "sfx": "sfx/sfx_reloj_silencio_suspenso.wav",
+      "volumenSfx": 0.22,
+      "palabrasClave": [
+        "sombrero",
+        "Stickman",
+        "empezar",
+        "video"
+      ],
+      "personajes": [
+        {
+          "id": "stickman_protagonista",
+          "nombre": "Stickman Revelador",
+          "posicion": {
+            "x": -140,
+            "y": 80
+          },
+          "escala": 1,
+          "orientacion": "derecha",
+          "acciones": [
+            {
+              "tipo": "personalizada",
+              "pasos": [
+                {
+                  "inicioProgreso": 0,
+                  "finProgreso": 0.45,
+                  "poseId": "thinking_chin_hand",
+                  "expresion": "confused",
+                  "posicion": {
+                    "x": -140,
+                    "y": 80
+                  },
+                  "curva": "suave",
+                  "procedural": "estatico"
+                },
+                {
+                  "inicioProgreso": 0.45,
+                  "finProgreso": 0.75,
+                  "poseId": "scratching_head",
+                  "expresion": "surprised",
+                  "posicion": {
+                    "x": -140,
+                    "y": 80
+                  },
+                  "curva": "suave",
+                  "procedural": "estatico"
+                },
+                {
+                  "inicioProgreso": 0.75,
+                  "finProgreso": 1.0,
+                  "poseId": "asking_question",
+                  "expresion": "skeptical",
+                  "posicion": {
+                    "x": -120,
+                    "y": 80
+                  },
+                  "curva": "impacto",
+                  "procedural": "estatico"
+                }
+              ]
+            }
+          ],
+          "habla": false,
+          "capaZ": 10
+        }
+      ],
+      "objetos": [
+        {
+          "id": "nube_sombrero_rebobinado",
+          "propId": "nube_sombrero_rebobinado_vhs",
+          "posicion": {
+            "x": 200,
+            "y": 10
+          },
+          "escala": 1.4,
+          "animacion": "pulso",
+          "capaZ": 14
+        }
+      ],
+      "silencioFinalSegundos": 4.2,
+      "duracionSegundos": 8.266,
+      "palabras": [
+        {
+          "palabra": "Última",
+          "inicioMs": 0,
+          "finMs": 440
+        },
+        {
+          "palabra": "prueba",
+          "inicioMs": 440,
+          "finMs": 780
+        },
+        {
+          "palabra": "llevaba",
+          "inicioMs": 1140,
+          "finMs": 1440
+        },
+        {
+          "palabra": "sombrero",
+          "inicioMs": 1440,
+          "finMs": 1880
+        },
+        {
+          "palabra": "el",
+          "inicioMs": 1880,
+          "finMs": 2000
+        },
+        {
+          "palabra": "Stickman",
+          "inicioMs": 2000,
+          "finMs": 2380
+        },
+        {
+          "palabra": "al",
+          "inicioMs": 2380,
+          "finMs": 2520
+        },
+        {
+          "palabra": "empezar",
+          "inicioMs": 2520,
+          "finMs": 2840
+        },
+        {
+          "palabra": "este",
+          "inicioMs": 2840,
+          "finMs": 3120
+        },
+        {
+          "palabra": "video",
+          "inicioMs": 3120,
+          "finMs": 3360
+        }
+      ]
+    }
+  ]
+}

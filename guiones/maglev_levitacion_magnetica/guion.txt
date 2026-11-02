@@ -1,0 +1,36 @@
+ID / SLUG: maglev_levitacion_magnetica
+Título: ¿Cómo levita un tren a 600 km/h sin tocar las vías?
+Gancho: ¿Te imaginas viajar en un tren de cientos de toneladas que no toca las vías, sino que flota flotando en el aire a más de seiscientos kilómetros por hora?
+Tema: ¿Cómo es posible que un imán pueda levitar un tren a 600 km/h sin tocar las vías? Superconductores y Efecto Meissner
+============================================================
+
+[Escena 1] TREN MAGLEV
+¿Sabías que en Japón existe un tren que flota sobre las vías a más de seiscientos kilómetros por hora sin tocarlas jamás?
+
+[Escena 2] LEVITACIÓN MAGNÉTICA
+Se llama tren Maglev y funciona mediante levitación magnética: el tren flota sobre las vías gracias a la repulsión entre imanes superconductores.
+
+[Escena 3] SUPERCONDUCTORES
+El secreto está en los superconductores: materiales que a temperaturas extremadamente bajas pierden toda su resistencia eléctrica.
+
+[Escena 4] CAMPOS MAGNÉTICOS
+Al enfriar los imanes del tren a menos de doscientos grados bajo cero, se convierten en superconductores perfectos que generan campos magnéticos increíblemente intensos.
+
+[Escena 5] FUERZA DE REPULSIÓN
+Estos campos magnéticos interactúan con las bobinas de las vías, creando una fuerza de repulsión que levanta el tren unos diez centímetros del suelo.
+
+[Escena 6] CERO FRICCIÓN
+Al no haber contacto físico entre el tren y las vías, no existe fricción, lo que permite alcanzar velocidades imposibles para los trenes convencionales.
+
+[Escena 7] PROPULSIÓN LINEAL
+Además, los trenes Maglev usan propulsión magnética lineal: las bobinas de las vías crean un campo magnético móvil que empuja el tren hacia adelante.
+
+[Escena 8] RÉCORD MUNDIAL
+El tren japonés Chuo Shinkansen Maglev alcanzó un récord de seiscientos tres kilómetros por hora en pruebas, convirtiéndose en el tren más rápido del mundo.
+
+[Escena 9] COSTO ELEVADO
+La única desventaja es el costo: construir las vías magnéticas cuesta hasta diez veces más que las vías convencionales de acero.
+
+[Escena 10] FUTURO DEL TRANSPORTE
+Pero la tecnología Maglev ya se usa en China y Japón, y en el futuro podría revolucionar el transporte aéreo con trenes que viajan a la velocidad del sonido.
+

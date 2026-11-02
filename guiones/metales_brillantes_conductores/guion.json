@@ -1,0 +1,1900 @@
+{
+  "meta": {
+    "id": "metales_brillantes_conductores",
+    "slug": "metales_brillantes_conductores",
+    "temaResumen": "¿Por qué los metales son brillantes y conducen electricidad gracias al mar de electrones libres?",
+    "titulo": "¿Por qué los metales brillan y conducen electricidad?",
+    "titulo_corto": "MAR DE ELECTRONES",
+    "gancho": "¿Sabías que un simple trozo de cobre o aluminio esconde un océano de electrones que se mueven libremente a velocidades cercanas a la luz?",
+    "fuentes": [
+      "Ashcroft & Mermin: Solid State Physics (Drude-Sommerfeld Model)",
+      "Charles Kittel: Introduction to Solid State Physics (Plasma Frequency of Metals)"
+    ],
+    "genero": "SCIENCE",
+    "duracionObjetivo": [
+      62,
+      110
+    ]
+  },
+  "escenas": [
+    {
+      "id": 1,
+      "texto": "¿Sabías que un simple trozo de cobre o aluminio esconde un océano de electrones que se mueven libremente a velocidades cercanas a la luz?",
+      "icono": "Zap",
+      "colorIcono": "#F59E0B",
+      "tituloVisual": "MAR DE ELECTRONES",
+      "composicionVisual": "plano_general",
+      "escenario": "laboratorio",
+      "layout": "narrativo",
+      "transicion": "zoom_in",
+      "efectosCamara": [
+        "drift"
+      ],
+      "sfx": "sfx/sfx_whoosh.wav",
+      "volumenSfx": 0.2,
+      "palabrasClave": [
+        "trozo de cobre",
+        "océano de electrones",
+        "velocidades cercanas a la luz"
+      ],
+      "personajes": [
+        {
+          "id": "fisico",
+          "posicion": {
+            "x": -160,
+            "y": 70
+          },
+          "escala": 1.05,
+          "orientacion": "derecha",
+          "prop": "atom",
+          "poseId": "presenting_object",
+          "expresion": "eureka",
+          "acciones": [
+            {
+              "tipo": "caminar_hacia",
+              "desdeX": -260,
+              "haciaX": -120
+            }
+          ],
+          "habla": true
+        }
+      ],
+      "duracionSegundos": 7.018,
+      "palabras": [
+        {
+          "palabra": "Sabías",
+          "inicioMs": 0,
+          "finMs": 420
+        },
+        {
+          "palabra": "que",
+          "inicioMs": 420,
+          "finMs": 600
+        },
+        {
+          "palabra": "un",
+          "inicioMs": 600,
+          "finMs": 700
+        },
+        {
+          "palabra": "simple",
+          "inicioMs": 700,
+          "finMs": 1020
+        },
+        {
+          "palabra": "trozo",
+          "inicioMs": 1020,
+          "finMs": 1360
+        },
+        {
+          "palabra": "de",
+          "inicioMs": 1360,
+          "finMs": 1480
+        },
+        {
+          "palabra": "cobre",
+          "inicioMs": 1480,
+          "finMs": 1800
+        },
+        {
+          "palabra": "o",
+          "inicioMs": 1800,
+          "finMs": 1900
+        },
+        {
+          "palabra": "aluminio",
+          "inicioMs": 1900,
+          "finMs": 2400
+        },
+        {
+          "palabra": "esconde",
+          "inicioMs": 2400,
+          "finMs": 2840
+        },
+        {
+          "palabra": "un",
+          "inicioMs": 2840,
+          "finMs": 3060
+        },
+        {
+          "palabra": "océano",
+          "inicioMs": 3060,
+          "finMs": 3420
+        },
+        {
+          "palabra": "de",
+          "inicioMs": 3420,
+          "finMs": 3500
+        },
+        {
+          "palabra": "electrones",
+          "inicioMs": 3500,
+          "finMs": 4060
+        },
+        {
+          "palabra": "que",
+          "inicioMs": 4060,
+          "finMs": 4140
+        },
+        {
+          "palabra": "se",
+          "inicioMs": 4140,
+          "finMs": 4260
+        },
+        {
+          "palabra": "mueven",
+          "inicioMs": 4260,
+          "finMs": 4520
+        },
+        {
+          "palabra": "libremente",
+          "inicioMs": 4520,
+          "finMs": 5100
+        },
+        {
+          "palabra": "a",
+          "inicioMs": 5100,
+          "finMs": 5280
+        },
+        {
+          "palabra": "velocidades",
+          "inicioMs": 5280,
+          "finMs": 5800
+        },
+        {
+          "palabra": "cercanas",
+          "inicioMs": 5800,
+          "finMs": 6260
+        },
+        {
+          "palabra": "a",
+          "inicioMs": 6260,
+          "finMs": 6420
+        },
+        {
+          "palabra": "la",
+          "inicioMs": 6420,
+          "finMs": 6500
+        },
+        {
+          "palabra": "luz",
+          "inicioMs": 6500,
+          "finMs": 6768
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "texto": "Los metales son brillantes y conducen electricidad porque sus átomos comparten sus electrones externos en una nube colectiva que se mueve libremente por toda la estructura.",
+      "icono": "Atom",
+      "colorIcono": "#38BDF8",
+      "tituloVisual": "ELECTRONES LIBRES",
+      "composicionVisual": "primer_plano",
+      "escenario": "laboratorio",
+      "layout": "narrativo",
+      "transicion": "whip_right",
+      "efectosCamara": [
+        "drift"
+      ],
+      "palabrasClave": [
+        "comparten sus electrones",
+        "nube colectiva",
+        "estructura metálica"
+      ],
+      "personajes": [
+        {
+          "id": "fisico",
+          "posicion": {
+            "x": 0,
+            "y": 50
+          },
+          "escala": 1.15,
+          "orientacion": "derecha",
+          "poseId": "explaining_both_hands",
+          "expresion": "talking_enthusiastic",
+          "habla": true
+        }
+      ],
+      "objetos": [
+        {
+          "id": "modelo_atomo",
+          "propId": "atom",
+          "posicion": {
+            "x": 200,
+            "y": -40
+          },
+          "escala": 1.5,
+          "animacion": {
+            "tipo": "pulso",
+            "inicioFrame": 0,
+            "finFrame": 9999
+          },
+          "capaZ": 25
+        }
+      ],
+      "duracionSegundos": 9.634,
+      "palabras": [
+        {
+          "palabra": "Los",
+          "inicioMs": 0,
+          "finMs": 240
+        },
+        {
+          "palabra": "metales",
+          "inicioMs": 240,
+          "finMs": 580
+        },
+        {
+          "palabra": "son",
+          "inicioMs": 580,
+          "finMs": 780
+        },
+        {
+          "palabra": "brillantes",
+          "inicioMs": 780,
+          "finMs": 1300
+        },
+        {
+          "palabra": "y",
+          "inicioMs": 1300,
+          "finMs": 1460
+        },
+        {
+          "palabra": "conducen",
+          "inicioMs": 1460,
+          "finMs": 1820
+        },
+        {
+          "palabra": "electricidad",
+          "inicioMs": 1820,
+          "finMs": 2480
+        },
+        {
+          "palabra": "porque",
+          "inicioMs": 2480,
+          "finMs": 2780
+        },
+        {
+          "palabra": "sus",
+          "inicioMs": 2780,
+          "finMs": 3040
+        },
+        {
+          "palabra": "átomos",
+          "inicioMs": 3040,
+          "finMs": 3340
+        },
+        {
+          "palabra": "comparten",
+          "inicioMs": 3340,
+          "finMs": 3800
+        },
+        {
+          "palabra": "sus",
+          "inicioMs": 3800,
+          "finMs": 4040
+        },
+        {
+          "palabra": "electrones",
+          "inicioMs": 4040,
+          "finMs": 4520
+        },
+        {
+          "palabra": "externos",
+          "inicioMs": 4520,
+          "finMs": 5100
+        },
+        {
+          "palabra": "en",
+          "inicioMs": 5100,
+          "finMs": 5380
+        },
+        {
+          "palabra": "una",
+          "inicioMs": 5380,
+          "finMs": 5560
+        },
+        {
+          "palabra": "nube",
+          "inicioMs": 5560,
+          "finMs": 5760
+        },
+        {
+          "palabra": "colectiva",
+          "inicioMs": 5760,
+          "finMs": 6260
+        },
+        {
+          "palabra": "que",
+          "inicioMs": 6260,
+          "finMs": 6420
+        },
+        {
+          "palabra": "se",
+          "inicioMs": 6420,
+          "finMs": 6700
+        },
+        {
+          "palabra": "mueve",
+          "inicioMs": 6700,
+          "finMs": 7600
+        },
+        {
+          "palabra": "libremente",
+          "inicioMs": 7600,
+          "finMs": 8100
+        },
+        {
+          "palabra": "por",
+          "inicioMs": 8100,
+          "finMs": 8320
+        },
+        {
+          "palabra": "toda",
+          "inicioMs": 8320,
+          "finMs": 8540
+        },
+        {
+          "palabra": "la",
+          "inicioMs": 8540,
+          "finMs": 8660
+        },
+        {
+          "palabra": "estructura",
+          "inicioMs": 8660,
+          "finMs": 9160
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "texto": "Esta teoría se llama modelo del gas de electrones o mar de electrones, y explica por qué todos los metales tienen propiedades similares a pesar de ser elementos diferentes.",
+      "icono": "Waves",
+      "colorIcono": "#8B5CF6",
+      "tituloVisual": "MODELO DEL GAS",
+      "composicionVisual": "plano_general",
+      "escenario": "laboratorio",
+      "layout": "narrativo",
+      "transicion": "whip_left",
+      "efectosCamara": [
+        "drift"
+      ],
+      "palabrasClave": [
+        "modelo del gas de electrones",
+        "mar de electrones",
+        "propiedades similares"
+      ],
+      "personajes": [
+        {
+          "id": "fisico",
+          "posicion": {
+            "x": -160,
+            "y": 70
+          },
+          "escala": 1.05,
+          "orientacion": "derecha",
+          "prop": "molecule",
+          "poseId": "presenting_object",
+          "expresion": "analytical",
+          "habla": true
+        }
+      ],
+      "duracionSegundos": 9.85,
+      "palabras": [
+        {
+          "palabra": "Esta",
+          "inicioMs": 0,
+          "finMs": 320
+        },
+        {
+          "palabra": "teoría",
+          "inicioMs": 320,
+          "finMs": 660
+        },
+        {
+          "palabra": "se",
+          "inicioMs": 660,
+          "finMs": 800
+        },
+        {
+          "palabra": "llama",
+          "inicioMs": 800,
+          "finMs": 1000
+        },
+        {
+          "palabra": "modelo",
+          "inicioMs": 1000,
+          "finMs": 1300
+        },
+        {
+          "palabra": "del",
+          "inicioMs": 1300,
+          "finMs": 1580
+        },
+        {
+          "palabra": "gas",
+          "inicioMs": 1580,
+          "finMs": 1720
+        },
+        {
+          "palabra": "de",
+          "inicioMs": 1720,
+          "finMs": 1920
+        },
+        {
+          "palabra": "electrones",
+          "inicioMs": 1920,
+          "finMs": 2560
+        },
+        {
+          "palabra": "o",
+          "inicioMs": 2560,
+          "finMs": 2760
+        },
+        {
+          "palabra": "mar",
+          "inicioMs": 2760,
+          "finMs": 2940
+        },
+        {
+          "palabra": "de",
+          "inicioMs": 2940,
+          "finMs": 3100
+        },
+        {
+          "palabra": "electrones",
+          "inicioMs": 3100,
+          "finMs": 3820
+        },
+        {
+          "palabra": "y",
+          "inicioMs": 4320,
+          "finMs": 4520
+        },
+        {
+          "palabra": "explica",
+          "inicioMs": 4520,
+          "finMs": 4980
+        },
+        {
+          "palabra": "por",
+          "inicioMs": 4980,
+          "finMs": 5180
+        },
+        {
+          "palabra": "qué",
+          "inicioMs": 5180,
+          "finMs": 5400
+        },
+        {
+          "palabra": "todos",
+          "inicioMs": 5400,
+          "finMs": 5760
+        },
+        {
+          "palabra": "los",
+          "inicioMs": 5760,
+          "finMs": 5940
+        },
+        {
+          "palabra": "metales",
+          "inicioMs": 5940,
+          "finMs": 6320
+        },
+        {
+          "palabra": "tienen",
+          "inicioMs": 6320,
+          "finMs": 6660
+        },
+        {
+          "palabra": "propiedades",
+          "inicioMs": 6660,
+          "finMs": 7260
+        },
+        {
+          "palabra": "similares",
+          "inicioMs": 7260,
+          "finMs": 7780
+        },
+        {
+          "palabra": "a",
+          "inicioMs": 7780,
+          "finMs": 7920
+        },
+        {
+          "palabra": "pesar",
+          "inicioMs": 7920,
+          "finMs": 8100
+        },
+        {
+          "palabra": "de",
+          "inicioMs": 8100,
+          "finMs": 8320
+        },
+        {
+          "palabra": "ser",
+          "inicioMs": 8320,
+          "finMs": 8520
+        },
+        {
+          "palabra": "elementos",
+          "inicioMs": 8520,
+          "finMs": 8860
+        },
+        {
+          "palabra": "diferentes",
+          "inicioMs": 8860,
+          "finMs": 9200
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "texto": "Cuando un fotón de luz choca contra la superficie metálica, los electrones libres absorben esa energía y la reemiten instantáneamente, creando el brillo característico.",
+      "icono": "Sun",
+      "colorIcono": "#FACC15",
+      "tituloVisual": "REFLEJO DE LUZ",
+      "composicionVisual": "primer_plano",
+      "escenario": "laboratorio",
+      "layout": "narrativo",
+      "transicion": "zoom_in",
+      "efectosCamara": [
+        "punch"
+      ],
+      "sfx": "sfx/sfx_dramatic_hit.wav",
+      "volumenSfx": 0.25,
+      "palabrasClave": [
+        "fotón de luz",
+        "absorben esa energía",
+        "brillo característico"
+      ],
+      "personajes": [
+        {
+          "id": "fisico",
+          "posicion": {
+            "x": 0,
+            "y": 50
+          },
+          "escala": 1.15,
+          "orientacion": "derecha",
+          "prop": "prism_spectrum",
+          "poseId": "presenting_object",
+          "expresion": "eureka",
+          "habla": true
+        }
+      ],
+      "duracionSegundos": 8.866,
+      "palabras": [
+        {
+          "palabra": "Cuando",
+          "inicioMs": 0,
+          "finMs": 240
+        },
+        {
+          "palabra": "un",
+          "inicioMs": 240,
+          "finMs": 400
+        },
+        {
+          "palabra": "fotón",
+          "inicioMs": 400,
+          "finMs": 700
+        },
+        {
+          "palabra": "de",
+          "inicioMs": 700,
+          "finMs": 820
+        },
+        {
+          "palabra": "luz",
+          "inicioMs": 820,
+          "finMs": 980
+        },
+        {
+          "palabra": "choca",
+          "inicioMs": 980,
+          "finMs": 1380
+        },
+        {
+          "palabra": "contra",
+          "inicioMs": 1380,
+          "finMs": 1620
+        },
+        {
+          "palabra": "la",
+          "inicioMs": 1620,
+          "finMs": 1760
+        },
+        {
+          "palabra": "superficie",
+          "inicioMs": 1760,
+          "finMs": 2300
+        },
+        {
+          "palabra": "metálica",
+          "inicioMs": 2300,
+          "finMs": 2820
+        },
+        {
+          "palabra": "los",
+          "inicioMs": 3080,
+          "finMs": 3220
+        },
+        {
+          "palabra": "electrones",
+          "inicioMs": 3220,
+          "finMs": 3740
+        },
+        {
+          "palabra": "libres",
+          "inicioMs": 3740,
+          "finMs": 4020
+        },
+        {
+          "palabra": "absorben",
+          "inicioMs": 4020,
+          "finMs": 4480
+        },
+        {
+          "palabra": "esa",
+          "inicioMs": 4480,
+          "finMs": 4660
+        },
+        {
+          "palabra": "energía",
+          "inicioMs": 4660,
+          "finMs": 4980
+        },
+        {
+          "palabra": "y",
+          "inicioMs": 4980,
+          "finMs": 5300
+        },
+        {
+          "palabra": "la",
+          "inicioMs": 5300,
+          "finMs": 5420
+        },
+        {
+          "palabra": "reemiten",
+          "inicioMs": 5420,
+          "finMs": 5820
+        },
+        {
+          "palabra": "instantáneamente",
+          "inicioMs": 5820,
+          "finMs": 6680
+        },
+        {
+          "palabra": "creando",
+          "inicioMs": 6840,
+          "finMs": 7160
+        },
+        {
+          "palabra": "el",
+          "inicioMs": 7160,
+          "finMs": 7280
+        },
+        {
+          "palabra": "brillo",
+          "inicioMs": 7280,
+          "finMs": 7600
+        },
+        {
+          "palabra": "característico",
+          "inicioMs": 7600,
+          "finMs": 8400
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "texto": "Por eso los metales son opacos y brillantes: los electrones libres bloquean la luz que intenta atravesarlos y la reflejan de vuelta hacia tus ojos.",
+      "icono": "Eye",
+      "colorIcono": "#EC4899",
+      "tituloVisual": "OPACOS Y BRILLANTES",
+      "composicionVisual": "plano_general",
+      "escenario": "laboratorio",
+      "layout": "narrativo",
+      "transicion": "corte",
+      "efectosCamara": [
+        "drift"
+      ],
+      "palabrasClave": [
+        "opacos y brillantes",
+        "bloquean la luz",
+        "reflejan de vuelta"
+      ],
+      "personajes": [
+        {
+          "id": "fisico",
+          "posicion": {
+            "x": -160,
+            "y": 70
+          },
+          "escala": 1.05,
+          "orientacion": "derecha",
+          "poseId": "explaining_both_hands",
+          "expresion": "analytical",
+          "habla": true
+        }
+      ],
+      "duracionSegundos": 7.978,
+      "palabras": [
+        {
+          "palabra": "Por",
+          "inicioMs": 0,
+          "finMs": 140
+        },
+        {
+          "palabra": "eso",
+          "inicioMs": 140,
+          "finMs": 320
+        },
+        {
+          "palabra": "los",
+          "inicioMs": 320,
+          "finMs": 480
+        },
+        {
+          "palabra": "metales",
+          "inicioMs": 480,
+          "finMs": 840
+        },
+        {
+          "palabra": "son",
+          "inicioMs": 840,
+          "finMs": 1020
+        },
+        {
+          "palabra": "opacos",
+          "inicioMs": 1020,
+          "finMs": 1540
+        },
+        {
+          "palabra": "y",
+          "inicioMs": 1540,
+          "finMs": 1640
+        },
+        {
+          "palabra": "brillantes",
+          "inicioMs": 1640,
+          "finMs": 2180
+        },
+        {
+          "palabra": "los",
+          "inicioMs": 2440,
+          "finMs": 2540
+        },
+        {
+          "palabra": "electrones",
+          "inicioMs": 2540,
+          "finMs": 3140
+        },
+        {
+          "palabra": "libres",
+          "inicioMs": 3140,
+          "finMs": 3480
+        },
+        {
+          "palabra": "bloquean",
+          "inicioMs": 3480,
+          "finMs": 4160
+        },
+        {
+          "palabra": "la",
+          "inicioMs": 4160,
+          "finMs": 4260
+        },
+        {
+          "palabra": "luz",
+          "inicioMs": 4260,
+          "finMs": 4460
+        },
+        {
+          "palabra": "que",
+          "inicioMs": 4460,
+          "finMs": 4600
+        },
+        {
+          "palabra": "intenta",
+          "inicioMs": 4600,
+          "finMs": 4980
+        },
+        {
+          "palabra": "atravesarlos",
+          "inicioMs": 4980,
+          "finMs": 5600
+        },
+        {
+          "palabra": "y",
+          "inicioMs": 5600,
+          "finMs": 5960
+        },
+        {
+          "palabra": "la",
+          "inicioMs": 5960,
+          "finMs": 6040
+        },
+        {
+          "palabra": "reflejan",
+          "inicioMs": 6040,
+          "finMs": 6460
+        },
+        {
+          "palabra": "de",
+          "inicioMs": 6460,
+          "finMs": 6600
+        },
+        {
+          "palabra": "vuelta",
+          "inicioMs": 6600,
+          "finMs": 6820
+        },
+        {
+          "palabra": "hacia",
+          "inicioMs": 6820,
+          "finMs": 7080
+        },
+        {
+          "palabra": "tus",
+          "inicioMs": 7080,
+          "finMs": 7260
+        },
+        {
+          "palabra": "ojos",
+          "inicioMs": 7260,
+          "finMs": 7480
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "texto": "En cuanto a la conductividad eléctrica, cuando aplicas un voltaje, los electrones libres fluyen en una dirección creando una corriente eléctrica sin apenas resistencia.",
+      "icono": "Activity",
+      "colorIcono": "#10B981",
+      "tituloVisual": "CORRIENTE ELÉCTRICA",
+      "composicionVisual": "primer_plano",
+      "escenario": "laboratorio",
+      "layout": "narrativo",
+      "transicion": "whip_right",
+      "efectosCamara": [
+        "drift"
+      ],
+      "palabrasClave": [
+        "aplicas un voltaje",
+        "fluyen en una dirección",
+        "sin apenas resistencia"
+      ],
+      "personajes": [
+        {
+          "id": "fisico",
+          "posicion": {
+            "x": 0,
+            "y": 50
+          },
+          "escala": 1.15,
+          "orientacion": "derecha",
+          "prop": "battery",
+          "poseId": "presenting_object",
+          "expresion": "talking_enthusiastic",
+          "habla": true
+        }
+      ],
+      "duracionSegundos": 9.61,
+      "palabras": [
+        {
+          "palabra": "En",
+          "inicioMs": 0,
+          "finMs": 220
+        },
+        {
+          "palabra": "cuanto",
+          "inicioMs": 220,
+          "finMs": 380
+        },
+        {
+          "palabra": "a",
+          "inicioMs": 380,
+          "finMs": 600
+        },
+        {
+          "palabra": "la",
+          "inicioMs": 600,
+          "finMs": 680
+        },
+        {
+          "palabra": "conductividad",
+          "inicioMs": 680,
+          "finMs": 1400
+        },
+        {
+          "palabra": "eléctrica",
+          "inicioMs": 1400,
+          "finMs": 2000
+        },
+        {
+          "palabra": "cuando",
+          "inicioMs": 2260,
+          "finMs": 2400
+        },
+        {
+          "palabra": "aplicas",
+          "inicioMs": 2400,
+          "finMs": 2780
+        },
+        {
+          "palabra": "un",
+          "inicioMs": 2780,
+          "finMs": 2920
+        },
+        {
+          "palabra": "voltaje",
+          "inicioMs": 2920,
+          "finMs": 3620
+        },
+        {
+          "palabra": "los",
+          "inicioMs": 4360,
+          "finMs": 4580
+        },
+        {
+          "palabra": "electrones",
+          "inicioMs": 4580,
+          "finMs": 5080
+        },
+        {
+          "palabra": "libres",
+          "inicioMs": 5080,
+          "finMs": 5280
+        },
+        {
+          "palabra": "fluyen",
+          "inicioMs": 5280,
+          "finMs": 5700
+        },
+        {
+          "palabra": "en",
+          "inicioMs": 5700,
+          "finMs": 5820
+        },
+        {
+          "palabra": "una",
+          "inicioMs": 5820,
+          "finMs": 5980
+        },
+        {
+          "palabra": "dirección",
+          "inicioMs": 5980,
+          "finMs": 6400
+        },
+        {
+          "palabra": "creando",
+          "inicioMs": 6400,
+          "finMs": 6860
+        },
+        {
+          "palabra": "una",
+          "inicioMs": 6860,
+          "finMs": 7020
+        },
+        {
+          "palabra": "corriente",
+          "inicioMs": 7020,
+          "finMs": 7380
+        },
+        {
+          "palabra": "eléctrica",
+          "inicioMs": 7380,
+          "finMs": 7820
+        },
+        {
+          "palabra": "sin",
+          "inicioMs": 7820,
+          "finMs": 8040
+        },
+        {
+          "palabra": "apenas",
+          "inicioMs": 8040,
+          "finMs": 8360
+        },
+        {
+          "palabra": "resistencia",
+          "inicioMs": 8360,
+          "finMs": 9140
+        }
+      ]
+    },
+    {
+      "id": 7,
+      "texto": "El cobre es el mejor conductor eléctrico después de la plata porque sus electrones están menos atrapados por los núcleos atómicos, permitiendo un flujo más eficiente.",
+      "icono": "Award",
+      "colorIcono": "#F59E0B",
+      "tituloVisual": "EL MEJOR CONDUCTOR",
+      "composicionVisual": "plano_general",
+      "escenario": "laboratorio",
+      "layout": "narrativo",
+      "transicion": "corte",
+      "efectosCamara": [
+        "drift"
+      ],
+      "palabrasClave": [
+        "cobre es el mejor",
+        "menos atrapados",
+        "flujo más eficiente"
+      ],
+      "personajes": [
+        {
+          "id": "fisico",
+          "posicion": {
+            "x": -160,
+            "y": 70
+          },
+          "escala": 1.05,
+          "orientacion": "derecha",
+          "prop": "magnet",
+          "poseId": "explaining_pointing_up",
+          "expresion": "analytical",
+          "habla": true
+        }
+      ],
+      "duracionSegundos": 8.77,
+      "palabras": [
+        {
+          "palabra": "El",
+          "inicioMs": 0,
+          "finMs": 220
+        },
+        {
+          "palabra": "cobre",
+          "inicioMs": 220,
+          "finMs": 580
+        },
+        {
+          "palabra": "es",
+          "inicioMs": 580,
+          "finMs": 760
+        },
+        {
+          "palabra": "el",
+          "inicioMs": 760,
+          "finMs": 900
+        },
+        {
+          "palabra": "mejor",
+          "inicioMs": 900,
+          "finMs": 1140
+        },
+        {
+          "palabra": "conductor",
+          "inicioMs": 1140,
+          "finMs": 1460
+        },
+        {
+          "palabra": "eléctrico",
+          "inicioMs": 1460,
+          "finMs": 2180
+        },
+        {
+          "palabra": "después",
+          "inicioMs": 2180,
+          "finMs": 2460
+        },
+        {
+          "palabra": "de",
+          "inicioMs": 2460,
+          "finMs": 2640
+        },
+        {
+          "palabra": "la",
+          "inicioMs": 2640,
+          "finMs": 2740
+        },
+        {
+          "palabra": "plata",
+          "inicioMs": 2740,
+          "finMs": 3040
+        },
+        {
+          "palabra": "porque",
+          "inicioMs": 3040,
+          "finMs": 3300
+        },
+        {
+          "palabra": "sus",
+          "inicioMs": 3300,
+          "finMs": 3540
+        },
+        {
+          "palabra": "electrones",
+          "inicioMs": 3540,
+          "finMs": 4160
+        },
+        {
+          "palabra": "están",
+          "inicioMs": 4160,
+          "finMs": 4380
+        },
+        {
+          "palabra": "menos",
+          "inicioMs": 4380,
+          "finMs": 4660
+        },
+        {
+          "palabra": "atrapados",
+          "inicioMs": 4660,
+          "finMs": 5260
+        },
+        {
+          "palabra": "por",
+          "inicioMs": 5260,
+          "finMs": 5420
+        },
+        {
+          "palabra": "los",
+          "inicioMs": 5420,
+          "finMs": 5600
+        },
+        {
+          "palabra": "núcleos",
+          "inicioMs": 5600,
+          "finMs": 5980
+        },
+        {
+          "palabra": "atómicos",
+          "inicioMs": 5980,
+          "finMs": 6540
+        },
+        {
+          "palabra": "permitiendo",
+          "inicioMs": 6680,
+          "finMs": 7220
+        },
+        {
+          "palabra": "un",
+          "inicioMs": 7220,
+          "finMs": 7340
+        },
+        {
+          "palabra": "flujo",
+          "inicioMs": 7340,
+          "finMs": 7660
+        },
+        {
+          "palabra": "más",
+          "inicioMs": 7660,
+          "finMs": 7760
+        },
+        {
+          "palabra": "eficiente",
+          "inicioMs": 7760,
+          "finMs": 8240
+        }
+      ]
+    },
+    {
+      "id": 8,
+      "texto": "Por eso los cables eléctricos están hechos de cobre: cada electrón libre puede recorrer kilómetros de cable en una fracción de segundo sin perder energía.",
+      "icono": "Cable",
+      "colorIcono": "#10B981",
+      "tituloVisual": "CABLES DE COBRE",
+      "composicionVisual": "plano_general",
+      "escenario": "laboratorio",
+      "layout": "narrativo",
+      "transicion": "whip_left",
+      "efectosCamara": [
+        "drift"
+      ],
+      "palabrasClave": [
+        "cables eléctricos",
+        "cobre",
+        "sin perder energía"
+      ],
+      "personajes": [
+        {
+          "id": "fisico",
+          "posicion": {
+            "x": -160,
+            "y": 70
+          },
+          "escala": 1.05,
+          "orientacion": "derecha",
+          "prop": "cable",
+          "poseId": "presenting_object",
+          "expresion": "talking_enthusiastic",
+          "habla": true
+        }
+      ],
+      "duracionSegundos": 8.074,
+      "palabras": [
+        {
+          "palabra": "Por",
+          "inicioMs": 0,
+          "finMs": 220
+        },
+        {
+          "palabra": "eso",
+          "inicioMs": 220,
+          "finMs": 380
+        },
+        {
+          "palabra": "los",
+          "inicioMs": 380,
+          "finMs": 580
+        },
+        {
+          "palabra": "cables",
+          "inicioMs": 580,
+          "finMs": 760
+        },
+        {
+          "palabra": "eléctricos",
+          "inicioMs": 760,
+          "finMs": 1400
+        },
+        {
+          "palabra": "están",
+          "inicioMs": 1400,
+          "finMs": 1620
+        },
+        {
+          "palabra": "hechos",
+          "inicioMs": 1620,
+          "finMs": 1840
+        },
+        {
+          "palabra": "de",
+          "inicioMs": 1840,
+          "finMs": 1980
+        },
+        {
+          "palabra": "cobre",
+          "inicioMs": 1980,
+          "finMs": 2280
+        },
+        {
+          "palabra": "cada",
+          "inicioMs": 2480,
+          "finMs": 3120
+        },
+        {
+          "palabra": "electrón",
+          "inicioMs": 3120,
+          "finMs": 3560
+        },
+        {
+          "palabra": "libre",
+          "inicioMs": 3560,
+          "finMs": 3800
+        },
+        {
+          "palabra": "puede",
+          "inicioMs": 3800,
+          "finMs": 4120
+        },
+        {
+          "palabra": "recorrer",
+          "inicioMs": 4120,
+          "finMs": 4520
+        },
+        {
+          "palabra": "kilómetros",
+          "inicioMs": 4520,
+          "finMs": 5020
+        },
+        {
+          "palabra": "de",
+          "inicioMs": 5020,
+          "finMs": 5200
+        },
+        {
+          "palabra": "cable",
+          "inicioMs": 5200,
+          "finMs": 5440
+        },
+        {
+          "palabra": "en",
+          "inicioMs": 5440,
+          "finMs": 5660
+        },
+        {
+          "palabra": "una",
+          "inicioMs": 5660,
+          "finMs": 5800
+        },
+        {
+          "palabra": "fracción",
+          "inicioMs": 5800,
+          "finMs": 6140
+        },
+        {
+          "palabra": "de",
+          "inicioMs": 6140,
+          "finMs": 6280
+        },
+        {
+          "palabra": "segundo",
+          "inicioMs": 6280,
+          "finMs": 6580
+        },
+        {
+          "palabra": "sin",
+          "inicioMs": 6580,
+          "finMs": 6860
+        },
+        {
+          "palabra": "perder",
+          "inicioMs": 6860,
+          "finMs": 7160
+        },
+        {
+          "palabra": "energía",
+          "inicioMs": 7160,
+          "finMs": 7560
+        }
+      ]
+    },
+    {
+      "id": 9,
+      "texto": "La conductividad térmica también funciona igual: los electrones libres transportan el calor rápidamente, por eso una cuchara de metal se calienta al instante en el café.",
+      "icono": "Thermometer",
+      "colorIcono": "#EF4444",
+      "tituloVisual": "CONDUCTIVIDAD TÉRMICA",
+      "composicionVisual": "primer_plano",
+      "escenario": "laboratorio",
+      "layout": "narrativo",
+      "transicion": "zoom_in",
+      "efectosCamara": [
+        "drift"
+      ],
+      "palabrasClave": [
+        "conductividad térmica",
+        "transportan el calor",
+        "cuchara de metal"
+      ],
+      "personajes": [
+        {
+          "id": "fisico",
+          "posicion": {
+            "x": 0,
+            "y": 50
+          },
+          "escala": 1.15,
+          "orientacion": "derecha",
+          "prop": "spoon",
+          "poseId": "presenting_object",
+          "expresion": "analytical",
+          "habla": true
+        }
+      ],
+      "duracionSegundos": 8.746,
+      "palabras": [
+        {
+          "palabra": "La",
+          "inicioMs": 0,
+          "finMs": 180
+        },
+        {
+          "palabra": "conductividad",
+          "inicioMs": 180,
+          "finMs": 820
+        },
+        {
+          "palabra": "térmica",
+          "inicioMs": 820,
+          "finMs": 1300
+        },
+        {
+          "palabra": "también",
+          "inicioMs": 1300,
+          "finMs": 1600
+        },
+        {
+          "palabra": "funciona",
+          "inicioMs": 1600,
+          "finMs": 2020
+        },
+        {
+          "palabra": "igual",
+          "inicioMs": 2020,
+          "finMs": 2320
+        },
+        {
+          "palabra": "los",
+          "inicioMs": 2540,
+          "finMs": 2680
+        },
+        {
+          "palabra": "electrones",
+          "inicioMs": 2680,
+          "finMs": 3200
+        },
+        {
+          "palabra": "libres",
+          "inicioMs": 3200,
+          "finMs": 3500
+        },
+        {
+          "palabra": "transportan",
+          "inicioMs": 3500,
+          "finMs": 4120
+        },
+        {
+          "palabra": "el",
+          "inicioMs": 4120,
+          "finMs": 4260
+        },
+        {
+          "palabra": "calor",
+          "inicioMs": 4260,
+          "finMs": 4480
+        },
+        {
+          "palabra": "rápidamente",
+          "inicioMs": 4480,
+          "finMs": 5220
+        },
+        {
+          "palabra": "por",
+          "inicioMs": 5500,
+          "finMs": 5720
+        },
+        {
+          "palabra": "eso",
+          "inicioMs": 5720,
+          "finMs": 5900
+        },
+        {
+          "palabra": "una",
+          "inicioMs": 5900,
+          "finMs": 6080
+        },
+        {
+          "palabra": "cuchara",
+          "inicioMs": 6080,
+          "finMs": 6440
+        },
+        {
+          "palabra": "de",
+          "inicioMs": 6440,
+          "finMs": 6600
+        },
+        {
+          "palabra": "metal",
+          "inicioMs": 6600,
+          "finMs": 6800
+        },
+        {
+          "palabra": "se",
+          "inicioMs": 6800,
+          "finMs": 7020
+        },
+        {
+          "palabra": "calienta",
+          "inicioMs": 7020,
+          "finMs": 7420
+        },
+        {
+          "palabra": "al",
+          "inicioMs": 7420,
+          "finMs": 7500
+        },
+        {
+          "palabra": "instante",
+          "inicioMs": 7500,
+          "finMs": 7840
+        },
+        {
+          "palabra": "en",
+          "inicioMs": 7840,
+          "finMs": 7940
+        },
+        {
+          "palabra": "el",
+          "inicioMs": 7940,
+          "finMs": 8040
+        },
+        {
+          "palabra": "café",
+          "inicioMs": 8040,
+          "finMs": 8240
+        }
+      ]
+    },
+    {
+      "id": 10,
+      "texto": "Los no metales como el plástico o la madera no tienen electrones libres, por eso son aislantes: la electricidad no puede fluir a través de ellos.",
+      "icono": "Shield",
+      "colorIcono": "#64748B",
+      "tituloVisual": "AISLANTES",
+      "composicionVisual": "plano_general",
+      "escenario": "laboratorio",
+      "layout": "narrativo",
+      "transicion": "corte",
+      "efectosCamara": [
+        "drift"
+      ],
+      "palabrasClave": [
+        "no metales",
+        "no tienen electrones libres",
+        "aislantes"
+      ],
+      "personajes": [
+        {
+          "id": "fisico",
+          "posicion": {
+            "x": -160,
+            "y": 70
+          },
+          "escala": 1.05,
+          "orientacion": "derecha",
+          "poseId": "explaining_both_hands",
+          "expresion": "analytical",
+          "habla": true
+        }
+      ],
+      "duracionSegundos": 7.186,
+      "palabras": [
+        {
+          "palabra": "Los",
+          "inicioMs": 0,
+          "finMs": 200
+        },
+        {
+          "palabra": "no",
+          "inicioMs": 200,
+          "finMs": 380
+        },
+        {
+          "palabra": "metales",
+          "inicioMs": 380,
+          "finMs": 760
+        },
+        {
+          "palabra": "como",
+          "inicioMs": 760,
+          "finMs": 980
+        },
+        {
+          "palabra": "el",
+          "inicioMs": 980,
+          "finMs": 1100
+        },
+        {
+          "palabra": "plástico",
+          "inicioMs": 1100,
+          "finMs": 1520
+        },
+        {
+          "palabra": "o",
+          "inicioMs": 1640,
+          "finMs": 1740
+        },
+        {
+          "palabra": "la",
+          "inicioMs": 1740,
+          "finMs": 2040
+        },
+        {
+          "palabra": "madera",
+          "inicioMs": 2040,
+          "finMs": 2160
+        },
+        {
+          "palabra": "no",
+          "inicioMs": 2160,
+          "finMs": 2340
+        },
+        {
+          "palabra": "tienen",
+          "inicioMs": 2340,
+          "finMs": 2840
+        },
+        {
+          "palabra": "electrones",
+          "inicioMs": 2840,
+          "finMs": 3280
+        },
+        {
+          "palabra": "libres",
+          "inicioMs": 3400,
+          "finMs": 3500
+        },
+        {
+          "palabra": "por",
+          "inicioMs": 3500,
+          "finMs": 3680
+        },
+        {
+          "palabra": "eso",
+          "inicioMs": 3680,
+          "finMs": 3880
+        },
+        {
+          "palabra": "son",
+          "inicioMs": 3880,
+          "finMs": 4380
+        },
+        {
+          "palabra": "aislantes",
+          "inicioMs": 4640,
+          "finMs": 4720
+        },
+        {
+          "palabra": "la",
+          "inicioMs": 4720,
+          "finMs": 5280
+        },
+        {
+          "palabra": "electricidad",
+          "inicioMs": 5280,
+          "finMs": 5460
+        },
+        {
+          "palabra": "no",
+          "inicioMs": 5460,
+          "finMs": 5680
+        },
+        {
+          "palabra": "puede",
+          "inicioMs": 5680,
+          "finMs": 6000
+        },
+        {
+          "palabra": "fluir",
+          "inicioMs": 6000,
+          "finMs": 6080
+        },
+        {
+          "palabra": "a",
+          "inicioMs": 6080,
+          "finMs": 6280
+        },
+        {
+          "palabra": "través",
+          "inicioMs": 6280,
+          "finMs": 6480
+        },
+        {
+          "palabra": "de",
+          "inicioMs": 6480,
+          "finMs": 6700
+        },
+        {
+          "palabra": "ellos",
+          "inicioMs": 6700,
+          "finMs": 6936
+        }
+      ]
+    },
+    {
+      "id": 11,
+      "texto": "Así que la próxima vez que toques un metal brillante, recuerda que estás tocando un mar de electrones que se mueven a la velocidad de la luz. ¡La física cuántica está en tus manos!",
+      "icono": "Sparkles",
+      "colorIcono": "#F59E0B",
+      "tituloVisual": "FÍSICA CUÁNTICA",
+      "composicionVisual": "plano_general",
+      "escenario": "laboratorio",
+      "layout": "narrativo",
+      "transicion": "zoom_in",
+      "efectosCamara": [
+        "drift"
+      ],
+      "sfx": "sfx/sfx_whoosh.wav",
+      "volumenSfx": 0.2,
+      "palabrasClave": [
+        "metal brillante",
+        "mar de electrones",
+        "velocidad de la luz"
+      ],
+      "personajes": [
+        {
+          "id": "fisico",
+          "posicion": {
+            "x": 0,
+            "y": 50
+          },
+          "escala": 1.15,
+          "orientacion": "derecha",
+          "prop": "trophy",
+          "poseId": "celebrating_arms_up",
+          "expresion": "eureka",
+          "habla": true
+        }
+      ],
+      "duracionSegundos": 8.434,
+      "palabras": [
+        {
+          "palabra": "Así",
+          "inicioMs": 0,
+          "finMs": 300
+        },
+        {
+          "palabra": "que",
+          "inicioMs": 300,
+          "finMs": 440
+        },
+        {
+          "palabra": "la",
+          "inicioMs": 440,
+          "finMs": 540
+        },
+        {
+          "palabra": "próxima",
+          "inicioMs": 540,
+          "finMs": 840
+        },
+        {
+          "palabra": "vez",
+          "inicioMs": 840,
+          "finMs": 1060
+        },
+        {
+          "palabra": "que",
+          "inicioMs": 1060,
+          "finMs": 1200
+        },
+        {
+          "palabra": "toques",
+          "inicioMs": 1200,
+          "finMs": 1460
+        },
+        {
+          "palabra": "un",
+          "inicioMs": 1460,
+          "finMs": 1580
+        },
+        {
+          "palabra": "metal",
+          "inicioMs": 1580,
+          "finMs": 1820
+        },
+        {
+          "palabra": "brillante",
+          "inicioMs": 1820,
+          "finMs": 2360
+        },
+        {
+          "palabra": "recuerda",
+          "inicioMs": 2580,
+          "finMs": 2980
+        },
+        {
+          "palabra": "que",
+          "inicioMs": 2980,
+          "finMs": 3080
+        },
+        {
+          "palabra": "estás",
+          "inicioMs": 3080,
+          "finMs": 3260
+        },
+        {
+          "palabra": "tocando",
+          "inicioMs": 3260,
+          "finMs": 3680
+        },
+        {
+          "palabra": "un",
+          "inicioMs": 3680,
+          "finMs": 3860
+        },
+        {
+          "palabra": "mar",
+          "inicioMs": 3860,
+          "finMs": 3960
+        },
+        {
+          "palabra": "de",
+          "inicioMs": 3960,
+          "finMs": 4100
+        },
+        {
+          "palabra": "electrones",
+          "inicioMs": 4100,
+          "finMs": 4700
+        },
+        {
+          "palabra": "que",
+          "inicioMs": 4700,
+          "finMs": 4780
+        },
+        {
+          "palabra": "se",
+          "inicioMs": 4780,
+          "finMs": 4880
+        },
+        {
+          "palabra": "mueven",
+          "inicioMs": 4880,
+          "finMs": 5200
+        },
+        {
+          "palabra": "a",
+          "inicioMs": 5200,
+          "finMs": 5240
+        },
+        {
+          "palabra": "la",
+          "inicioMs": 5240,
+          "finMs": 5340
+        },
+        {
+          "palabra": "velocidad",
+          "inicioMs": 5340,
+          "finMs": 5620
+        },
+        {
+          "palabra": "de",
+          "inicioMs": 5620,
+          "finMs": 5880
+        },
+        {
+          "palabra": "la",
+          "inicioMs": 5880,
+          "finMs": 5980
+        },
+        {
+          "palabra": "luz",
+          "inicioMs": 5980,
+          "finMs": 6160
+        },
+        {
+          "palabra": "La",
+          "inicioMs": 6340,
+          "finMs": 6400
+        },
+        {
+          "palabra": "física",
+          "inicioMs": 6400,
+          "finMs": 6740
+        },
+        {
+          "palabra": "cuántica",
+          "inicioMs": 6740,
+          "finMs": 7320
+        },
+        {
+          "palabra": "está",
+          "inicioMs": 7320,
+          "finMs": 7500
+        },
+        {
+          "palabra": "en",
+          "inicioMs": 7500,
+          "finMs": 7540
+        },
+        {
+          "palabra": "tus",
+          "inicioMs": 7540,
+          "finMs": 7720
+        },
+        {
+          "palabra": "manos",
+          "inicioMs": 7720,
+          "finMs": 7940
+        }
+      ]
+    }
+  ]
+}

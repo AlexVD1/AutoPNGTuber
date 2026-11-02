@@ -1,0 +1,28 @@
+ID / SLUG: sangre_nunca_azul_optica_piel
+Título: ¿Por qué tus venas se ven azules si la sangre NUNCA es azul?
+Gancho: ¿Alguna vez te dijeron en la escuela que la sangre desoxigenada que viaja por tus venas es de color azul? ¡Pues te mintieron toda la vida!
+Tema: ¿Por qué tus venas se ven azules si la sangre NUNCA es azul? (Óptica subcutánea, dispersión Rayleigh de luz roja vs azul, absorción de hemoglobina y el gran mito escolar)
+Duración objetivo: [62, 75]
+============================================================
+
+[Escena 1] EL MITO ESCOLAR
+¿Alguna vez te dijeron en la escuela que la sangre desoxigenada que viaja por tus venas es de color azul? ¡Pues te mintieron toda la vida!
+
+[Escena 2] SIEMPRE ES ROJA
+Si un enfermero te saca sangre con una jeringa, jamás sale líquido azul. La sangre arterial rica en oxígeno es de un rojo brillante, y la sangre venosa es de un rojo vino muy oscuro.
+
+[Escena 3] HIERRO Y HEMOGLOBINA
+El motivo es químico: los glóbulos rojos están llenos de hemoglobina, una proteína cargada de átomos de hierro que al contacto con el oxígeno o el dióxido de carbono siempre refleja luz roja.
+
+[Escena 4] ¿POR QUÉ SE VEN AZULES?
+Entonces, ¿por qué demonios tus venas en la muñeca se ven tan claramente azules? La respuesta no está en tu biología, ¡sino en la física de la luz y las capas de tu piel!
+
+[Escena 5] DISPERSIÓN DE LUZ
+La luz blanca del sol contiene todos los colores. La luz roja tiene ondas largas que penetran profundo en la carne y son absorbidas por la sangre, mientras que la luz azul choca y rebota hacia afuera.
+
+[Escena 6] ILUSIÓN ÓPTICA
+Como la vena oscura absorbe los tonos rojos, el tejido que está justo encima refleja proporcionalmente más fotones azules hacia tus ojos. ¡Tus venas parecen azules solo por un truco óptico de contraste!
+
+[Escena 7] 100% SANGRE ROJA
+Si pones una linterna potente detrás de tus dedos, verás que todo tu cuerpo brilla en rojo puro. Tu sangre siempre ha sido roja, viva y corriendo por tus venas en cada latido.
+

@@ -1,0 +1,36 @@
+ID / SLUG: color_agua_azul_hielo
+Título: ¿Por qué el agua es azul pero el hielo es transparente?
+Gancho: ¿Te has fijado en que si llenas un vaso con agua de la llave parece totalmente transparente, pero cuando miras el mar abierto o una alberca profunda se ve intensamente azul?
+Tema: ¿Por qué el agua es azul pero el hielo es transparente? El secreto de la absorción de luz
+============================================================
+
+[Escena 1] AGUA AZUL
+¿Alguna vez te has preguntado por qué el agua del mar es de un azul profundo, pero un cubo de hielo es completamente transparente?
+
+[Escena 2] NO ES EL CIELO
+Contrario a lo que muchos creen, el agua no es azul por reflejar el cielo: tiene un color azul propio causado por la absorción selectiva de la luz.
+
+[Escena 3] ABSORCIÓN SELECTIVA
+La molécula de agua absorbe las longitudes de onda rojas, naranjas y amarillas de la luz, pero deja pasar las longitudes de onda azules y verdes.
+
+[Escena 4] VASO TRANSPARENTE
+En un vaso de agua, la cantidad de moléculas es tan pequeña que la absorción es imperceptible, por eso el agua parece transparente.
+
+[Escena 5] OCÉANO PROFUNDO
+Pero en el océano, la luz debe atravesar cientos de metros de agua, acumulando la absorción hasta que solo sobrevive el color azul.
+
+[Escena 6] PROFUNDIDAD AZUL
+A partir de los veinte metros de profundidad, el color rojo desaparece por completo, y a cien metros solo queda el azul oscuro.
+
+[Escena 7] HIELO TRANSPARENTE
+El hielo es transparente porque en estado sólido, las moléculas de agua se organizan en una estructura cristalina ordenada que no absorbe luz visible.
+
+[Escena 8] BURBUJAS DE AIRE
+Además, el hielo tiene burbujas de aire atrapadas que dispersan la luz en todas las direcciones, haciéndolo parecer blanco y opaco.
+
+[Escena 9] GLACIARES AZULES
+Por eso los glaciares antiguos, que tienen menos burbujas, son de un azul intenso: la luz azul puede penetrar profundamente antes de ser absorbida.
+
+[Escena 10] FÍSICA ÓPTICA
+Así que la próxima vez que veas el mar azul, recuerda que estás viendo la luz solar filtrada por millones de moléculas de agua. ¡La física óptica está en cada gota!
+

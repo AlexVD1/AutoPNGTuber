@@ -32,6 +32,7 @@ ROOT_DIR = Path(__file__).resolve().parent.parent
 GUION_PATH = ROOT_DIR / "src" / "data" / "guion.json"
 HISTORIAL_PATH = ROOT_DIR / "src" / "data" / "historial_temas.json"
 ARCHIVO_VIDEOS_DIR = ROOT_DIR / "archivo_videos"
+GUIONES_DIR = ROOT_DIR / "guiones"
 
 PUNCT_STRIP = "¿?¡!.,;:()\"'«»—–-[]{}"
 UMBRAL_SIMILITUD_DEFECTO = 0.65
@@ -226,6 +227,36 @@ def respaldar_guion(guion_raw: Any, id_slug: str, fecha_str: Optional[str] = Non
     return ruta_relativa
 
 
+def guardar_carpeta_personalizada(guion_raw: Any, id_slug: str) -> Path:
+    """Guarda el guion y un resumen en guiones/{id_slug}/ para facilitar edición y re-generación."""
+    carpeta = GUIONES_DIR / id_slug
+    carpeta.mkdir(parents=True, exist_ok=True)
+
+    ruta_json = carpeta / "guion.json"
+    with open(ruta_json, "w", encoding="utf-8") as f:
+        json.dump(guion_raw, f, ensure_ascii=False, indent=2)
+
+    meta, escenas = descomponer_guion(guion_raw)
+    ruta_txt = carpeta / "guion.txt"
+    with open(ruta_txt, "w", encoding="utf-8") as f:
+        f.write(f"ID / SLUG: {id_slug}\n")
+        if meta:
+            if "titulo" in meta:
+                f.write(f"Título: {meta['titulo']}\n")
+            if "gancho" in meta:
+                f.write(f"Gancho: {meta['gancho']}\n")
+            if "temaResumen" in meta:
+                f.write(f"Tema: {meta['temaResumen']}\n")
+            if "duracionObjetivo" in meta:
+                f.write(f"Duración objetivo: {meta['duracionObjetivo']}\n")
+        f.write("=" * 60 + "\n\n")
+        for esc in escenas:
+            f.write(f"[Escena {esc.get('id')}] {esc.get('tituloVisual', '')}\n")
+            f.write(f"{esc.get('texto', '')}\n\n")
+
+    return carpeta
+
+
 def rango_duracion(guion_raw: Any) -> tuple:
     """Rango (min, max) en segundos: meta.duracionObjetivo = [min, max] o 62-110 por defecto."""
     meta = guion_raw.get("meta") if isinstance(guion_raw, dict) else None
@@ -292,8 +323,10 @@ def registrar_historia(
             print(f"⏱️  [DURACIÓN] ⚠️ AVISO: {tiempo_fmt} ({total_duracion:.1f}s) excede el máximo del objetivo ({maximo:.0f}s).\n")
         else:
             print(f"⏱️  [DURACIÓN] ✅ {tiempo_fmt} ({total_duracion:.1f}s) dentro del objetivo [{minimo:.0f}-{maximo:.0f}s]\n")
-    # Respaldo en archivo_videos/
+    # Respaldo en archivo_videos/ y en guiones/{nuevo_id}/
     archivo_respaldo = respaldar_guion(guion_raw, nuevo_id, fecha_str)
+    carpeta_guion = guardar_carpeta_personalizada(guion_raw, nuevo_id)
+    print(f"📁 [GUION GUARDADO] Carpeta accesible: guiones/{nuevo_id}/")
 
     # Registro en historial_temas.json
     nuevo_registro = {

@@ -9,6 +9,7 @@ export interface NarrativeStageProps {
 
 /** Escenarios de fondo oscuro: el Stickman recibe halo blanco automático para no perderse. */
 export const ESCENARIOS_OSCUROS: ReadonlySet<TipoEscenario> = new Set<TipoEscenario>([
+  "archivo_memorias_futurista",
   "abismo_oceanico",
   "interior_cuerpo",
   "lunar",
@@ -71,6 +72,65 @@ export const ESCENARIOS_OSCUROS: ReadonlySet<TipoEscenario> = new Set<TipoEscena
   "diagrama_condensacion_lata_pulmon",
   "cueva_naica_rescate_traje_hielo",
   "mina_naica_compuerta_escape",
+  "estudio_conteo_anumerico",
+  "microcosmos_cerebral_memoria",
+  "estudio_engranajes_hack_mental",
+  "vacio_filosofico_cosmos_ideas",
+  "abismo_vacio_interestelar_grid",
+  "vacio_cosmos_soledad_canica",
+  "macro_lupa_mota_tierra",
+  "mapa_satelital_carretera_proxima",
+  "caja_maxwell_gradiente_extremo",
+  "cerebro_digital_sobrecarga_bits",
+  "borrado_bits_principio_landauer",
+  "sala_archivos_cerebro_rutina",
+  "rueda_hamster_oficina_gris",
+  "colina_nocturna_estrellas_contador",
+  "laboratorio_fermi_holograma_galaxia",
+  "escalera_evolutiva_gran_filtro",
+  "abismo_futuro_amenazas_tecnologicas",
+  "bosque_oscuro_depredadores_silencio",
+  "espacio_orbital_palido_punto_azul",
+  "estacion_telegrafo_victoriana_1859",
+  "campo_auroras_caribe_medianoche",
+  "observatorio_astronomico_carrington_1859",
+  "espacio_cme_impacto_magnetosfera",
+  "transicion_cables_1859_a_metropolis",
+  "metropolis_apagon_catastrofe_electrica",
+  "ciudad_oscura_auroras_vela",
+  "habitacion_noche_proyector_recuerdos",
+  "sala_control_corteza_prefrontal",
+  "sala_control_amigdala_emergencia",
+  "consola_amigdala_engranajes_ansiedad",
+  "cueva_prehistorica_fuego_tigre",
+  "habitacion_noche_amigdala_facturas",
+  "habitacion_noche_calma_sueno",
+  "altar_morado_cuatro_luces",
+  "panoramica_cuatro_destinos_mexicas",
+  "escalones_mictlan_perro_guia",
+  "obstaculos_montanas_viento_obsidiana",
+  "rio_apanohuayan_cruce_ofrenda",
+  "cempasuchil_cruz_codice_historia",
+  "ofrenda_final_camino_petalos",
+  "escritorio_procrastinacion_smartphone",
+  "ring_boxeo_cerebral_corteza_vs_limbico",
+  "corteza_prefrontal_pizarron_metas",
+  "sistema_limbico_cavernicola_dopamina",
+  "laboratorio_fmri_desconocido_yo_futuro",
+  "pantalla_dividida_sofa_vs_tormenta_futuro",
+  "escritorio_regla_cinco_minutos_exito",
+  "microcosmos_esofago_red_nerviosa",
+  "tronco_encefalico_farmacia_interna",
+  "torso_radiografico_medidores_salud",
+  "plaza_publica_tropiezo_foco",
+  "cine_mental_sala_egocentrica",
+  "espacio_agujero_negro_hawking",
+  "horizonte_cuantico_evaporacion",
+  "laboratorio_reconstruccion_cuantica",
+  "espacio_glitch_realidad_rota",
+  "superficie_holografica_agujero",
+  "cosmos_radiacion_informada_paz",
+  "microcosmos_cerebro_area_fusiforme",
 ]);
 
 /** Pseudo-aleatorio determinista (mismo valor en cada render del mismo índice). */
@@ -4460,12 +4520,1681 @@ const CierreOrbitalTierra: React.FC<{ frame: number; isPrimerPlano: boolean }> =
   );
 };
 
+
+// =========================================================================
+// ESCENARIOS: TU MEMORIA TE MIENTE (FALSOS RECUERDOS Y RECONSOLIDACIÓN)
+// =========================================================================
+
+/** Escenario 1: Calle urbana con choque suave de autos de juguete y cristales falsos */
+const CalleChoqueJuguete: React.FC<{ frame: number; isPrimerPlano: boolean }> = ({ frame, isPrimerPlano }) => {
+  const f = frame;
+  const holoBlink = Math.sin(f * 0.35) > 0;
+  const glassBob1 = Math.sin(f * 0.15) * 6;
+  const glassBob2 = Math.cos(f * 0.2) * 5;
+
+  return (
+    <div className="absolute inset-0 pointer-events-none z-0 overflow-hidden bg-[#BAE6FD]">
+      <svg viewBox="0 0 1080 1920" className="absolute inset-0 w-full h-full" preserveAspectRatio="xMidYMid slice">
+        {/* Cielo diurno limpio */}
+        <rect width="1080" height="720" fill="#BAE6FD" />
+        {/* Nubes esponjosas neo-brutalistas */}
+        <path d="M 80 140 Q 140 90 200 140 Q 260 100 320 140 L 320 180 L 80 180 Z" fill="#FFFFFF" stroke="#000000" strokeWidth="6" />
+        <path d="M 720 160 Q 780 110 840 160 Q 900 120 960 160 L 960 200 L 720 200 Z" fill="#FFFFFF" stroke="#000000" strokeWidth="6" />
+
+        {/* Edificios de fondo con ventanas */}
+        <rect x="60" y="240" width="220" height="480" fill="#CBD5E1" stroke="#000000" strokeWidth="8" />
+        {[0, 1, 2, 3].map((row) => (
+          <rect key={`w1_${row}`} x="90" y={280 + row * 80} width="60" height="45" rx="4" fill="#FEF08A" stroke="#000000" strokeWidth="4" />
+        ))}
+        {[0, 1, 2, 3].map((row) => (
+          <rect key={`w2_${row}`} x="180" y={280 + row * 80} width="60" height="45" rx="4" fill="#38BDF8" stroke="#000000" strokeWidth="4" />
+        ))}
+
+        <rect x="340" y="180" width="380" height="540" fill="#94A3B8" stroke="#000000" strokeWidth="8" />
+        {[0, 1, 2, 3].map((row) => (
+          <g key={`w_mid_${row}`}>
+            <rect x="380" y={220 + row * 85} width="70" height="48" rx="4" fill="#FFFFFF" stroke="#000000" strokeWidth="4" />
+            <rect x="490" y={220 + row * 85} width="70" height="48" rx="4" fill="#FEF08A" stroke="#000000" strokeWidth="4" />
+            <rect x="600" y={220 + row * 85} width="70" height="48" rx="4" fill="#93C5FD" stroke="#000000" strokeWidth="4" />
+          </g>
+        ))}
+
+        <rect x="780" y="260" width="240" height="460" fill="#E2E8F0" stroke="#000000" strokeWidth="8" />
+        {[0, 1, 2].map((row) => (
+          <rect key={`w3_${row}`} x="820" y={300 + row * 85} width="160" height="50" rx="4" fill="#F8FAFC" stroke="#000000" strokeWidth="4" />
+        ))}
+
+        {/* Acera de hormigón con bordillo */}
+        <rect y="720" width="1080" height="110" fill="#E2E8F0" stroke="#000000" strokeWidth="8" />
+        {[0, 180, 360, 540, 720, 900, 1080].map((cx) => (
+          <line key={`curb_${cx}`} x1={cx} y1="720" x2={cx} y2="830" stroke="#94A3B8" strokeWidth="4" />
+        ))}
+
+        {/* Calzada de asfalto oscuro */}
+        <rect y="830" width="1080" height="1090" fill="#334155" stroke="#000000" strokeWidth="8" />
+        {/* Línea divisoria amarilla discontinua */}
+        {[0, 160, 320, 480, 640, 800, 960].map((lx) => (
+          <rect key={`dash_${lx}`} x={lx + 20} y="1320" width="100" height="24" rx="4" fill="#FACC15" stroke="#000000" strokeWidth="4" />
+        ))}
+
+        {/* ESCENA DEL ACCIDENTE CONGELADO (PLANO MEDIO ELEVADO EN y=830) */}
+        {/* Auto azul de juguete a la izquierda */}
+        <g transform="translate(360, 830)">
+          <ellipse cx="140" cy="180" rx="150" ry="22" fill="#0F172A" opacity="0.4" />
+          <path d="M 0,110 L 30,50 L 110,40 L 190,40 L 250,90 L 290,110 L 290,150 L 0,150 Z" fill="#0284C7" stroke="#000000" strokeWidth="8" strokeLinejoin="round" />
+          <polygon points="40,55 105,48 105,95 30,95" fill="#BAE6FD" stroke="#000000" strokeWidth="5" />
+          <polygon points="120,48 185,48 235,95 120,95" fill="#BAE6FD" stroke="#000000" strokeWidth="5" />
+          <rect x="270" y="125" width="25" height="22" rx="4" fill="#94A3B8" stroke="#000000" strokeWidth="4" />
+          <circle cx="270" cy="105" r="12" fill="#FEF08A" stroke="#000000" strokeWidth="4" />
+          <circle cx="65" cy="150" r="32" fill="#020617" stroke="#000000" strokeWidth="6" />
+          <circle cx="65" cy="150" r="14" fill="#94A3B8" stroke="#000000" strokeWidth="4" />
+          <circle cx="225" cy="150" r="32" fill="#020617" stroke="#000000" strokeWidth="6" />
+          <circle cx="225" cy="150" r="14" fill="#94A3B8" stroke="#000000" strokeWidth="4" />
+        </g>
+
+        {/* Auto rojo de juguete a la derecha (chocando suavemente) */}
+        <g transform="translate(650, 830)">
+          <ellipse cx="150" cy="180" rx="150" ry="22" fill="#0F172A" opacity="0.4" />
+          <path d="M 290,110 L 260,50 L 180,40 L 100,40 L 40,90 L 0,110 L 0,150 L 290,150 Z" fill="#EF4444" stroke="#000000" strokeWidth="8" strokeLinejoin="round" />
+          <polygon points="250,55 185,48 185,95 260,95" fill="#FED7AA" stroke="#000000" strokeWidth="5" />
+          <polygon points="170,48 105,48 55,95 170,95" fill="#FED7AA" stroke="#000000" strokeWidth="5" />
+          <rect x="-5" y="125" width="25" height="22" rx="4" fill="#94A3B8" stroke="#000000" strokeWidth="4" />
+          <circle cx="20" cy="105" r="12" fill="#FEF08A" stroke="#000000" strokeWidth="4" />
+          <circle cx="65" cy="150" r="32" fill="#020617" stroke="#000000" strokeWidth="6" />
+          <circle cx="65" cy="150" r="14" fill="#94A3B8" stroke="#000000" strokeWidth="4" />
+          <circle cx="225" cy="150" r="32" fill="#020617" stroke="#000000" strokeWidth="6" />
+          <circle cx="225" cy="150" r="14" fill="#94A3B8" stroke="#000000" strokeWidth="4" />
+        </g>
+
+        {/* PUNTO DE CONTACTO SUAVE (SIN DAÑOS) */}
+        <g transform="translate(650, 955)">
+          <circle cx="0" cy="0" r="18" fill="#FACC15" stroke="#000000" strokeWidth="4" />
+          <text x="0" y="6" textAnchor="middle" fill="#000000" fontSize="13" fontWeight="900" fontFamily="'Arial Black', sans-serif">CLACK</text>
+        </g>
+
+        {/* NUBE HOLOGRÁFICA DE CRISTALES FALSOS INVENTADOS SOBRE EL AUTO ROJO */}
+        <g transform="translate(740, 680)">
+          <ellipse cx="60" cy="40" rx="180" ry="100" fill="#EF4444" opacity={holoBlink ? "0.25" : "0.10"} />
+          <polygon points={`-20,${10 + glassBob1} 15,${-25 + glassBob1} 35,${15 + glassBob1} 5,${30 + glassBob1}`} fill="#38BDF8" stroke="#000000" strokeWidth="4" strokeLinejoin="round" />
+          <polygon points={`90,${-15 + glassBob2} 140,${-5 + glassBob2} 115,${35 + glassBob2} 70,${20 + glassBob2}`} fill="#BAE6FD" stroke="#000000" strokeWidth="4" strokeLinejoin="round" />
+          <polygon points={`40,${45 + glassBob1} 75,${35 + glassBob1} 85,${75 + glassBob1} 45,${80 + glassBob1}`} fill="#67E8F9" stroke="#000000" strokeWidth="4" strokeLinejoin="round" />
+          <polygon points={`150,${40 + glassBob2} 185,${60 + glassBob2} 165,${90 + glassBob2}`} fill="#E0F2FE" stroke="#000000" strokeWidth="3" />
+          {/* Cartel flotante de advertencia científica */}
+          <rect x="-40" y="-85" width="280" height="48" rx="8" fill="#EF4444" stroke="#000000" strokeWidth="5" />
+          <text x="100" y="-55" textAnchor="middle" fill="#FEF08A" fontSize="17" fontWeight="900" fontFamily="'Arial Black', sans-serif">
+            ¡VIDRIO ROTO INVENTADO!
+          </text>
+        </g>
+      </svg>
+    </div>
+  );
+};
+
+/** Escenario 2: Bóveda de archivo mental futurista con caja fuerte y monitor CRT glitch */
+const ArchivoMemoriasFuturista: React.FC<{ frame: number; isPrimerPlano: boolean }> = ({ frame, isPrimerPlano }) => {
+  const f = frame;
+  const glitchX = Math.sin(f * 0.45) * 6;
+  const glitchColor = f % 6 < 3 ? "#EF4444" : "#38BDF8";
+  const safeDialAngle = (f * 3) % 360;
+
+  return (
+    <div className="absolute inset-0 pointer-events-none z-0 overflow-hidden bg-[#0F172A]">
+      <svg viewBox="0 0 1080 1920" className="absolute inset-0 w-full h-full" preserveAspectRatio="xMidYMid slice">
+        {/* Pared metálica con paneles de aleación fría */}
+        <rect width="1080" height="1920" fill="#0B132B" />
+        <line x1="0" y1="1240" x2="1080" y2="1240" stroke="#000000" strokeWidth="8" />
+        <rect y="1240" width="1080" height="680" fill="#1C2541" />
+
+        {/* Estanterías de acero para archivo de memoria en el fondo */}
+        <g transform="translate(80, 360)">
+          <rect x="0" y="0" width="400" height="750" fill="#1E293B" stroke="#000000" strokeWidth="8" />
+          {[0, 1, 2, 3].map((shelf) => (
+            <g key={`shelf_${shelf}`}>
+              <line x1="0" y1={180 + shelf * 170} x2="400" y2={180 + shelf * 170} stroke="#000000" strokeWidth="6" />
+              {/* Cajas de archivo numeradas */}
+              {[20, 110, 200, 290].map((bx, idx) => (
+                <rect key={`box_${shelf}_${idx}`} x={bx} y={70 + shelf * 170} width="75" height="110" rx="4" fill={idx % 2 === 0 ? "#334155" : "#475569"} stroke="#000000" strokeWidth="4" />
+              ))}
+            </g>
+          ))}
+          {/* Rótulo de la estantería */}
+          <rect x="50" y="-35" width="300" height="45" rx="6" fill="#0284C7" stroke="#000000" strokeWidth="4" />
+          <text x="200" y="-6" textAnchor="middle" fill="#FFFFFF" fontSize="16" fontWeight="900" fontFamily="'Arial Black', sans-serif">
+            MEMORIAS EPISÓDICAS (AÑOS 70)
+          </text>
+        </g>
+
+        {/* GRAN CAJA FUERTE ABIERTA "RECUERDO ORIGINAL" */}
+        <g transform="translate(560, 360)">
+          {/* Marco exterior de la caja fuerte */}
+          <rect x="0" y="0" width="440" height="420" rx="14" fill="#334155" stroke="#000000" strokeWidth="9" />
+          <rect x="18" y="18" width="404" height="384" rx="8" fill="#1E293B" stroke="#000000" strokeWidth="5" />
+          {/* Interior iluminado con luz dorada */}
+          <rect x="35" y="35" width="370" height="350" fill="#451A03" opacity="0.8" />
+          <ellipse cx="220" cy="210" rx="150" ry="120" fill="#F59E0B" opacity="0.25" />
+
+          {/* Pedestal interior para el casete de oro */}
+          <rect x="120" y="270" width="200" height="60" rx="6" fill="#78350F" stroke="#000000" strokeWidth="5" />
+          <text x="220" y="308" textAnchor="middle" fill="#FEF08A" fontSize="15" fontWeight="900" fontFamily="'Arial Black', sans-serif">
+            VACÍO: EN LECTURA
+          </text>
+
+          {/* Puerta gruesa abierta de la caja fuerte girada hacia afuera */}
+          <polygon points="400,20 480,-20 480,440 400,400" fill="#475569" stroke="#000000" strokeWidth="8" />
+          <circle cx="440" cy="210" r="38" fill="#94A3B8" stroke="#000000" strokeWidth="6" />
+          {/* Volante de combinación giratorio */}
+          <g transform={`translate(440, 210) rotate(${safeDialAngle})`}>
+            <circle cx="0" cy="0" r="16" fill="#0F172A" stroke="#000000" strokeWidth="4" />
+            <line x1="-30" y1="0" x2="30" y2="0" stroke="#000000" strokeWidth="6" strokeLinecap="round" />
+            <line x1="0" y1="-30" x2="0" y2="30" stroke="#000000" strokeWidth="6" strokeLinecap="round" />
+          </g>
+          {/* Cartel en la caja */}
+          <rect x="40" y="-35" width="360" height="45" rx="6" fill="#D97706" stroke="#000000" strokeWidth="4" />
+          <text x="220" y="-6" textAnchor="middle" fill="#FEF08A" fontSize="17" fontWeight="900" fontFamily="'Arial Black', sans-serif">
+            BÓVEDA DE RECUERDOS «INTACTOS»
+          </text>
+        </g>
+
+        {/* MONITOR CRT CON ESTÁTICA ANALÓGICA VHS Y GLITCH */}
+        <g transform="translate(550, 830)">
+          {/* Carcasa retro de plástico beige oscuro */}
+          <rect x="0" y="0" width="460" height="380" rx="20" fill="#475569" stroke="#000000" strokeWidth="9" />
+          {/* Pantalla curva con scanlines */}
+          <rect x="25" y="25" width="410" height="290" rx="14" fill="#020617" stroke="#000000" strokeWidth="6" />
+          {/* Barras de color VHS distorsionadas */}
+          {["#EF4444", "#3B82F6", "#22C55E", "#FACC15", "#A855F7"].map((col, idx) => (
+            <rect
+              key={`bar_${idx}`}
+              x={35 + idx * 78 + (idx % 2 === 0 ? glitchX : -glitchX)}
+              y="35"
+              width="74"
+              height="270"
+              fill={col}
+              opacity="0.35"
+            />
+          ))}
+          {/* Líneas de barrido CRT */}
+          {[0, 1, 2, 3, 4, 5, 6, 7].map((sl) => (
+            <line key={`sl_${sl}`} x1="30" y1={45 + sl * 34} x2="430" y2={45 + sl * 34} stroke="#000000" strokeWidth="2.5" opacity="0.6" />
+          ))}
+          {/* Glitch de texto central */}
+          <rect x="50" y="145" width="360" height="55" rx="8" fill="#000000" stroke={glitchColor} strokeWidth="4" />
+          <text x="230" y="180" textAnchor="middle" fill="#FEF08A" fontSize="18" fontWeight="900" fontFamily="'Courier New', monospace">
+            ERROR: CINTA MUTADA ⚠
+          </text>
+          {/* Botones frontales del monitor */}
+          <circle cx="80" cy="345" r="14" fill="#EF4444" stroke="#000000" strokeWidth="3.5" />
+          <circle cx="130" cy="345" r="14" fill="#22C55E" stroke="#000000" strokeWidth="3.5" />
+          <rect x="200" y="336" width="220" height="18" rx="4" fill="#1E293B" stroke="#000000" strokeWidth="3" />
+        </g>
+
+
+      </svg>
+    </div>
+  );
+};
+
+/** Escenario 3: Escritorio del escribano en el Hipocampo reescribiendo la memoria en lápiz */
+const EscritorioHipocampoReconsolidacion: React.FC<{ frame: number; isPrimerPlano: boolean }> = ({ frame, isPrimerPlano }) => {
+  const f = frame;
+  const lampSway = Math.sin(f * 0.1) * 3;
+  const eraserScatter = Math.sin(f * 0.3) * 8;
+
+  return (
+    <div className="absolute inset-0 pointer-events-none z-0 overflow-hidden bg-[#261005]">
+      <svg viewBox="0 0 1080 1920" className="absolute inset-0 w-full h-full" preserveAspectRatio="xMidYMid slice">
+        <defs>
+          <radialGradient id="flexoBeam" cx="50%" cy="30%" r="60%">
+            <stop offset="0%" stopColor="#FEF3C7" stopOpacity="0.85" />
+            <stop offset="45%" stopColor="#FDE68A" stopOpacity="0.45" />
+            <stop offset="100%" stopColor="#261005" stopOpacity="0.0" />
+          </radialGradient>
+        </defs>
+
+        {/* Fondo oscuro biológico con red neuronal tenue */}
+        <rect width="1080" height="1920" fill="#261005" />
+        <rect x="60" y="240" width="960" height="1200" fill="url(#flexoBeam)" />
+
+        {/* Ramificaciones neuronales púrpuras en la penumbra del fondo */}
+        <path d="M 120 180 Q 250 260 200 400 Q 150 540 300 620" fill="none" stroke="#A855F7" strokeWidth="6" opacity="0.3" />
+        <path d="M 960 200 Q 820 280 860 460 Q 900 600 780 700" fill="none" stroke="#A855F7" strokeWidth="6" opacity="0.3" />
+
+        {/* TABLERO DE MADERA DEL ESCRITORIO DEL HIPOCAMPO */}
+        <rect y="1120" width="1080" height="800" fill="#78350F" stroke="#000000" strokeWidth="9" />
+        <line x1="0" y1="1120" x2="1080" y2="1120" stroke="#000000" strokeWidth="9" />
+        {[1220, 1360, 1500, 1680].map((wy) => (
+          <line key={`wood_${wy}`} x1="0" y1={wy} x2="1080" y2={wy} stroke="#92400E" strokeWidth="4" />
+        ))}
+
+        {/* PLIEGO GIGANTE DE PAPEL MANUSCRITO EN LA DERECHA (x=360) */}
+        <g transform="translate(360, 380)">
+          <rect x="16" y="16" width="660" height="700" rx="14" fill="#000000" opacity="0.4" />
+          <rect x="0" y="0" width="660" height="700" rx="14" fill="#FEF3C7" stroke="#000000" strokeWidth="8" />
+          <rect x="35" y="35" width="590" height="60" rx="8" fill="#FDE68A" stroke="#000000" strokeWidth="4" />
+          <text x="330" y="73" textAnchor="middle" fill="#78350F" fontSize="21" fontWeight="900" fontFamily="'Arial Black', sans-serif">
+            MEMORIA AUTOBIOGRÁFICA #4829
+          </text>
+
+          {/* Líneas de texto originales manuscritas */}
+          {[130, 175, 220, 265].map((ly) => (
+            <line key={`orig_${ly}`} x1="45" y1={ly} x2="615" y2={ly} stroke="#475569" strokeWidth="5" strokeLinecap="round" />
+          ))}
+
+          {/* ZONA CENTRAL BORRADA CON GOMA Y REESCRITA EN GRAFITO FRESCO */}
+          <rect x="40" y="305" width="580" height="150" rx="8" fill="#FFFFFF" stroke="#EF4444" strokeWidth="4" strokeDasharray="10 8" />
+          <text x="60" y="340" fill="#DC2626" fontSize="16" fontWeight="900" fontFamily="'Courier New', monospace">
+            [DATO ORIGINAL BORRADO POR EL HIPOCAMPO]
+          </text>
+          <line x1="55" y1="370" x2="600" y2="370" stroke="#0F172A" strokeWidth="6" strokeLinecap="round" />
+          <line x1="55" y1="415" x2="480" y2="415" stroke="#0F172A" strokeWidth="6" strokeLinecap="round" />
+
+          {/* Virutas de goma de borrar cayendo */}
+          {[-20, 30, 80, 140, 200, 280].map((vx, i) => (
+            <g key={`shaving_${i}`} transform={`translate(${vx + eraserScatter}, ${480 + (i % 3) * 15})`}>
+              <ellipse cx="0" cy="0" rx="9" ry="5" fill="#F43F5E" stroke="#000000" strokeWidth="2" />
+              <ellipse cx="12" cy="6" rx="7" ry="4" fill="#3B82F6" stroke="#000000" strokeWidth="1.5" />
+            </g>
+          ))}
+
+          {/* SELLO GIGANTE DE TINTA ROJA ESTAMPADO: RECONSOLIDADO */}
+          <g transform="translate(420, 540) rotate(-12)">
+            <rect x="-170" y="-45" width="340" height="90" rx="10" fill="#FEE2E2" stroke="#DC2626" strokeWidth="8" />
+            <rect x="-160" y="-35" width="320" height="70" rx="6" fill="none" stroke="#DC2626" strokeWidth="4" strokeDasharray="8 6" />
+            <text x="0" y="12" textAnchor="middle" fill="#DC2626" fontSize="26" fontWeight="900" fontFamily="'Impact', 'Arial Black', sans-serif">
+              ★ RECONSOLIDADO ★
+            </text>
+          </g>
+        </g>
+
+        {/* LÁMPARA FLEXO METÁLICA PROYECTANDO LUZ DESDE ARRIBA */}
+        <g transform={`translate(160, 180) rotate(${lampSway})`}>
+          <rect x="-12" y="-120" width="24" height="150" fill="#1E293B" stroke="#000000" strokeWidth="6" />
+          <path d="M -50,30 L 50,30 L 90,90 L -90,90 Z" fill="#0284C7" stroke="#000000" strokeWidth="7" />
+          <ellipse cx="0" cy="90" rx="90" ry="24" fill="#FEF08A" stroke="#000000" strokeWidth="5" />
+        </g>
+      </svg>
+    </div>
+  );
+};
+
+/** Escenario 4: Sala de tribunal de justicia minimalista con estrado de Elizabeth Loftus */
+const SalaTribunalLoftus: React.FC<{ frame: number; isPrimerPlano: boolean }> = ({ frame, isPrimerPlano }) => {
+  const f = frame;
+  const gavelImpact = Math.sin(f * 0.25) > 0.6;
+
+  return (
+    <div className="absolute inset-0 pointer-events-none z-0 overflow-hidden bg-[#3E1A08]">
+      <svg viewBox="0 0 1080 1920" className="absolute inset-0 w-full h-full" preserveAspectRatio="xMidYMid slice">
+        {/* Pared solemne con paneles de caoba */}
+        <rect width="1080" height="1920" fill="#451A03" />
+        <rect y="1260" width="1080" height="660" fill="#2E0E02" stroke="#000000" strokeWidth="9" />
+
+        {/* Cortina clásica azul solemne en el fondo */}
+        <path d="M 0 0 L 260 0 Q 230 360 270 740 L 0 740 Z" fill="#0F172A" stroke="#000000" strokeWidth="6" />
+        <path d="M 820 0 L 1080 0 L 1080 740 Q 850 360 810 740 Z" fill="#0F172A" stroke="#000000" strokeWidth="6" />
+
+        {/* MESA DEL JUEZ / ESTRADO SUPERIOR */}
+        <g transform="translate(140, 360)">
+          <rect x="0" y="0" width="800" height="340" rx="10" fill="#78350F" stroke="#000000" strokeWidth="9" />
+          <rect x="25" y="25" width="750" height="290" rx="6" fill="#92400E" stroke="#000000" strokeWidth="5" />
+          {/* Molduras clásicas de madera */}
+          {[80, 320, 560].map((px) => (
+            <rect key={`pan_${px}`} x={px} y="55" width="160" height="220" rx="6" fill="#451A03" stroke="#000000" strokeWidth="5" />
+          ))}
+
+          {/* Mazo judicial sobre su base de impacto */}
+          <g transform="translate(620, 170)">
+            {/* Peana de golpe */}
+            <ellipse cx="0" cy="50" rx="55" ry="18" fill="#1C1917" stroke="#000000" strokeWidth="5" />
+            {/* Mazo de madera noble oscilando */}
+            <g transform={`translate(0, ${gavelImpact ? "18" : "-8"}) rotate(${gavelImpact ? "0" : "-24"})`}>
+              <rect x="-35" y="-18" width="70" height="36" rx="6" fill="#B45309" stroke="#000000" strokeWidth="5" />
+              <rect x="-6" y="-80" width="12" height="70" rx="4" fill="#92400E" stroke="#000000" strokeWidth="4" />
+            </g>
+            {gavelImpact && (
+              <circle cx="0" cy="50" r="42" fill="none" stroke="#EF4444" strokeWidth="5" strokeDasharray="8 6" />
+            )}
+          </g>
+
+          {/* Rótulo del estrado */}
+          <rect x="180" y="280" width="440" height="48" rx="6" fill="#020617" stroke="#FACC15" strokeWidth="4" />
+          <text x="400" y="312" textAnchor="middle" fill="#FEF08A" fontSize="18" fontWeight="900" fontFamily="'Arial Black', sans-serif">
+            ESTRADO JUDICIAL · EXP. LOFTUS (1974)
+          </text>
+        </g>
+
+        {/* ESTRADO DE TESTIGOS A LA IZQUIERDA (DONDE ACTÚA EL TESTIGO) */}
+        <g transform="translate(60, 860)">
+          {/* Atril de madera del testigo */}
+          <rect x="0" y="0" width="320" height="420" rx="8" fill="#78350F" stroke="#000000" strokeWidth="8" />
+          <rect x="15" y="15" width="290" height="390" rx="4" fill="#92400E" stroke="#000000" strokeWidth="4" />
+          {/* Micrófono plateado de cuello de ganso */}
+          <path d="M 70 0 Q 110 -60 140 -50" fill="none" stroke="#000000" strokeWidth="6" strokeLinecap="round" />
+          <ellipse cx="140" cy="-50" rx="14" ry="10" fill="#94A3B8" stroke="#000000" strokeWidth="3" />
+          {/* Letrero del banquillo */}
+          <rect x="30" y="340" width="260" height="42" rx="4" fill="#0F172A" stroke="#000000" strokeWidth="3.5" />
+          <text x="160" y="367" textAnchor="middle" fill="#FFFFFF" fontSize="15" fontWeight="900" fontFamily="'Arial Black', sans-serif">
+            BANQUILLO DE TESTIGOS
+          </text>
+        </g>
+
+        {/* DOS GRANDES TARJETAS EXPERIMENTALES EN EL LADO DERECHO */}
+        <g transform="translate(560, 840)">
+          {/* Tarjeta 1: CONTACTARON (Verde) */}
+          <g transform="translate(0, 0)">
+            <rect x="0" y="0" width="450" height="180" rx="12" fill="#DCFCE7" stroke="#16A34A" strokeWidth="7" />
+            <rect x="16" y="16" width="418" height="48" rx="6" fill="#16A34A" />
+            <text x="225" y="50" textAnchor="middle" fill="#FFFFFF" fontSize="21" fontWeight="900" fontFamily="'Arial Black', sans-serif">
+              PREGUNTA: «¿CONTACTARON?»
+            </text>
+            <text x="225" y="112" textAnchor="middle" fill="#15803D" fontSize="36" fontWeight="900" fontFamily="'Impact', sans-serif">
+              51.2 km/h
+            </text>
+            <text x="225" y="155" textAnchor="middle" fill="#166534" fontSize="17" fontWeight="900" fontFamily="'Arial Black', sans-serif">
+              0% VIDRIOS ROTOS OBSERVADOS
+            </text>
+          </g>
+
+          {/* Tarjeta 2: SE ESTRELLARON (Roja con alerta) */}
+          <g transform="translate(0, 220)">
+            <rect x="0" y="0" width="450" height="210" rx="12" fill="#FEE2E2" stroke="#DC2626" strokeWidth="8" />
+            <rect x="16" y="16" width="418" height="52" rx="6" fill="#DC2626" />
+            <text x="225" y="52" textAnchor="middle" fill="#FEF08A" fontSize="22" fontWeight="900" fontFamily="'Arial Black', sans-serif">
+              PREGUNTA: «¿SE ESTRELLARON?»
+            </text>
+            <text x="225" y="125" textAnchor="middle" fill="#B91C1C" fontSize="44" fontWeight="900" fontFamily="'Impact', sans-serif">
+              65.3 km/h
+            </text>
+            <rect x="25" y="145" width="400" height="45" rx="6" fill="#DC2626" />
+            <text x="225" y="176" textAnchor="middle" fill="#FEF08A" fontSize="17" fontWeight="900" fontFamily="'Arial Black', sans-serif">
+              ¡32% JURA HABER VISTO VIDRIOS!
+            </text>
+          </g>
+        </g>
+
+
+      </svg>
+    </div>
+  );
+};
+
+/** Escenario 5: Pantalla dividida interactiva con velocímetros comparativos (50 vs 65 km/h) */
+const DiagramaVelocimetroLoftus: React.FC<{ frame: number; isPrimerPlano: boolean }> = ({ frame, isPrimerPlano }) => {
+  const f = frame;
+  const needleTremble = Math.sin(f * 0.4) * 4;
+  const sparkFlash = Math.sin(f * 0.3) > 0.2;
+
+  return (
+    <div className="absolute inset-0 pointer-events-none z-0 overflow-hidden bg-[#0F172A]">
+      <svg viewBox="0 0 1080 1920" className="absolute inset-0 w-full h-full" preserveAspectRatio="xMidYMid slice">
+        {/* Fondo dividido verticalmente en dos mitades */}
+        <rect x="0" y="0" width="536" height="1920" fill="#ECFDF5" />
+        <rect x="544" y="0" width="536" height="1920" fill="#FEF2F2" />
+        <rect x="532" y="0" width="16" height="1920" fill="#000000" />
+
+        {/* =========================================================================
+            LADO IZQUIERDO: VERBO "CONTACTARON" (50 km/h)
+            ========================================================================= */}
+        <g transform="translate(40, 240)">
+          <rect x="0" y="0" width="460" height="68" rx="12" fill="#15803D" stroke="#000000" strokeWidth="6" />
+          <text x="230" y="44" textAnchor="middle" fill="#FFFFFF" fontSize="22" fontWeight="900" fontFamily="'Arial Black', sans-serif">
+            VERBO: «CONTACTARON»
+          </text>
+
+          {/* Gran velocímetro circular verde */}
+          <g transform="translate(230, 240)">
+            <circle cx="0" cy="0" r="135" fill="#020617" stroke="#000000" strokeWidth="8" />
+            <circle cx="0" cy="0" r="120" fill="#064E3B" stroke="#15803D" strokeWidth="5" />
+            {[0, 30, 60, 90, 120, 150, 180, 210, 240].map((deg) => (
+              <line
+                key={`g1_${deg}`}
+                x1={Math.cos((deg - 120) * Math.PI / 180) * 100}
+                y1={Math.sin((deg - 120) * Math.PI / 180) * 100}
+                x2={Math.cos((deg - 120) * Math.PI / 180) * 115}
+                y2={Math.sin((deg - 120) * Math.PI / 180) * 115}
+                stroke="#A7F3D0"
+                strokeWidth="4"
+              />
+            ))}
+            <g transform="rotate(-30)">
+              <line x1="0" y1="20" x2="0" y2="-95" stroke="#22C55E" strokeWidth="8" strokeLinecap="round" />
+              <polygon points="-7,-85 7,-85 0,-110" fill="#22C55E" />
+              <circle cx="0" cy="0" r="15" fill="#FFFFFF" stroke="#000000" strokeWidth="4" />
+            </g>
+            <rect x="-75" y="50" width="150" height="44" rx="8" fill="#000000" stroke="#22C55E" strokeWidth="4" />
+            <text x="0" y="81" textAnchor="middle" fill="#22C55E" fontSize="22" fontWeight="900" fontFamily="'Impact', monospace">
+              51.2 km/h
+            </text>
+          </g>
+
+          {/* Mini choque ilustrado suave */}
+          <g transform="translate(230, 460)">
+            <g transform="translate(-110, 0)">
+              <path d="M 0,20 L 15,0 L 60,0 L 75,15 L 85,20 L 85,35 L 0,35 Z" fill="#0284C7" stroke="#000000" strokeWidth="4" />
+              <circle cx="20" cy="35" r="10" fill="#000" stroke="#94A3B8" strokeWidth="2" />
+              <circle cx="65" cy="35" r="10" fill="#000" stroke="#94A3B8" strokeWidth="2" />
+            </g>
+            <g transform="translate(25, 0)">
+              <path d="M 85,20 L 70,0 L 25,0 L 10,15 L 0,20 L 0,35 L 85,35 Z" fill="#EF4444" stroke="#000000" strokeWidth="4" />
+              <circle cx="20" cy="35" r="10" fill="#000" stroke="#94A3B8" strokeWidth="2" />
+              <circle cx="65" cy="35" r="10" fill="#000" stroke="#94A3B8" strokeWidth="2" />
+            </g>
+            <circle cx="0" cy="20" r="14" fill="#22C55E" stroke="#000000" strokeWidth="3" />
+            <text x="0" y="25" textAnchor="middle" fill="#FFFFFF" fontSize="10" fontWeight="900">CLACK</text>
+          </g>
+
+          {/* Resultado científico de vidrios */}
+          <g transform="translate(230, 560)">
+            <rect x="-190" y="0" width="380" height="140" rx="12" fill="#FFFFFF" stroke="#16A34A" strokeWidth="6" />
+            <text x="0" y="38" textAnchor="middle" fill="#15803D" fontSize="17" fontWeight="900" fontFamily="'Arial Black', sans-serif">
+              VIDRIOS EN EL RECUERDO:
+            </text>
+            <text x="0" y="88" textAnchor="middle" fill="#166534" fontSize="42" fontWeight="900" fontFamily="'Impact', sans-serif">
+              0% VIDRIOS
+            </text>
+            <text x="0" y="120" textAnchor="middle" fill="#475569" fontSize="14" fontWeight="800">
+              «Nadie juró ver vidrios rotos»
+            </text>
+          </g>
+        </g>
+
+        {/* =========================================================================
+            LADO DERECHO: VERBO "ESTRELLARON" (65 km/h)
+            ========================================================================= */}
+        <g transform="translate(580, 240)">
+          <rect x="0" y="0" width="460" height="68" rx="12" fill="#DC2626" stroke="#000000" strokeWidth="6" />
+          <text x="230" y="44" textAnchor="middle" fill="#FEF08A" fontSize="22" fontWeight="900" fontFamily="'Arial Black', sans-serif">
+            VERBO: «ESTRELLARON»
+          </text>
+
+          {/* Gran velocímetro circular rojo violento */}
+          <g transform="translate(230, 240)">
+            <circle cx="0" cy="0" r="135" fill="#020617" stroke="#000000" strokeWidth="8" />
+            <circle cx="0" cy="0" r="120" fill="#450A0A" stroke="#DC2626" strokeWidth="5" />
+            {[0, 30, 60, 90, 120, 150, 180, 210, 240].map((deg) => (
+              <line
+                key={`g2_${deg}`}
+                x1={Math.cos((deg - 120) * Math.PI / 180) * 100}
+                y1={Math.sin((deg - 120) * Math.PI / 180) * 100}
+                x2={Math.cos((deg - 120) * Math.PI / 180) * 115}
+                y2={Math.sin((deg - 120) * Math.PI / 180) * 115}
+                stroke="#FCA5A5"
+                strokeWidth="4"
+              />
+            ))}
+            <g transform={`rotate(${38 + needleTremble})`}>
+              <line x1="0" y1="20" x2="0" y2="-95" stroke="#EF4444" strokeWidth="9" strokeLinecap="round" />
+              <polygon points="-8,-85 8,-85 0,-110" fill="#EF4444" />
+              <circle cx="0" cy="0" r="15" fill="#FEF08A" stroke="#000000" strokeWidth="4" />
+            </g>
+            <rect x="-75" y="50" width="150" height="44" rx="8" fill="#000000" stroke="#EF4444" strokeWidth="4" />
+            <text x="0" y="81" textAnchor="middle" fill="#FEF08A" fontSize="22" fontWeight="900" fontFamily="'Impact', monospace">
+              65.3 km/h
+            </text>
+          </g>
+
+          {/* Mini choque con chispas violentas */}
+          <g transform="translate(230, 460)">
+            <g transform="translate(-110, 0)">
+              <path d="M 0,20 L 15,0 L 60,0 L 75,15 L 85,20 L 85,35 L 0,35 Z" fill="#0284C7" stroke="#000000" strokeWidth="4" />
+              <circle cx="20" cy="35" r="10" fill="#000" stroke="#94A3B8" strokeWidth="2" />
+              <circle cx="65" cy="35" r="10" fill="#000" stroke="#94A3B8" strokeWidth="2" />
+            </g>
+            <g transform="translate(25, 0)">
+              <path d="M 85,20 L 70,0 L 25,0 L 10,15 L 0,20 L 0,35 L 85,35 Z" fill="#EF4444" stroke="#000000" strokeWidth="4" />
+              <circle cx="20" cy="35" r="10" fill="#000" stroke="#94A3B8" strokeWidth="2" />
+              <circle cx="65" cy="35" r="10" fill="#000" stroke="#94A3B8" strokeWidth="2" />
+            </g>
+            {sparkFlash && (
+              <polygon points="0,-25 10,-8 25,-10 15,4 20,20 4,10 -10,22 -5,5 -22,1 -7,-8" fill="#FEF08A" stroke="#000000" strokeWidth="2.5" />
+            )}
+            <text x="0" y="25" textAnchor="middle" fill="#000000" fontSize="11" fontWeight="900">¡BOOM!</text>
+          </g>
+
+          {/* Resultado científico de vidrios inventados */}
+          <g transform="translate(230, 560)">
+            <rect x="-190" y="0" width="380" height="140" rx="12" fill="#FEF2F2" stroke="#DC2626" strokeWidth="6" />
+            <text x="0" y="38" textAnchor="middle" fill="#991B1B" fontSize="17" fontWeight="900" fontFamily="'Arial Black', sans-serif">
+              VIDRIOS EN EL RECUERDO:
+            </text>
+            <text x="0" y="88" textAnchor="middle" fill="#DC2626" fontSize="42" fontWeight="900" fontFamily="'Impact', sans-serif">
+              ¡32% JURÓ VERLOS!
+            </text>
+            <text x="0" y="120" textAnchor="middle" fill="#B91C1C" fontSize="14" fontWeight="900">
+              ¡El cerebro inventó cristales rotos!
+            </text>
+          </g>
+        </g>
+      </svg>
+    </div>
+  );
+};
+
+/** Escenario 6: Mesa de trabajo cenital con rompecabezas gigante y parche de plastilina */
+const MesaRompecabezasConfabulacion: React.FC<{ frame: number; isPrimerPlano: boolean }> = ({ frame, isPrimerPlano }) => {
+  const f = frame;
+  const seamOpacity = Math.max(0.12, 0.9 - (f % 120) / 120 * 0.85);
+  const brushAngle = Math.sin(f * 0.25) * 8;
+
+  return (
+    <div className="absolute inset-0 pointer-events-none z-0 overflow-hidden bg-[#FEF3C7]">
+      <svg viewBox="0 0 1080 1920" className="absolute inset-0 w-full h-full" preserveAspectRatio="xMidYMid slice">
+        {/* Mesa de madera clara estilo taller */}
+        <rect width="1080" height="1920" fill="#FDF6B2" />
+        <rect y="1240" width="1080" height="680" fill="#B45309" stroke="#000000" strokeWidth="8" />
+
+        {/* GRAN TABLERO DE ROMPECABEZAS ILUSTRADO EN LA DERECHA (x=260) */}
+        <g transform="translate(260, 340)">
+          <rect x="-16" y="-16" width="780" height="640" rx="18" fill="#78350F" stroke="#000000" strokeWidth="9" />
+          <rect x="0" y="0" width="748" height="608" rx="8" fill="#93C5FD" stroke="#000000" strokeWidth="5" />
+
+          {/* Paisaje infantil ilustrado */}
+          <path d="M 0 440 Q 380 300 748 460 L 748 608 L 0 608 Z" fill="#22C55E" stroke="#000000" strokeWidth="6" />
+          <circle cx="140" cy="140" r="60" fill="#FACC15" stroke="#000000" strokeWidth="6" />
+          <g transform="translate(480, 270)">
+            <rect x="0" y="60" width="170" height="140" fill="#F8FAFC" stroke="#000000" strokeWidth="6" />
+            <polygon points="-20,60 85,-20 190,60" fill="#DC2626" stroke="#000000" strokeWidth="6" />
+            <rect x="60" y="115" width="50" height="85" fill="#B45309" stroke="#000000" strokeWidth="4" />
+            <rect x="25" y="80" width="38" height="38" rx="4" fill="#38BDF8" stroke="#000000" strokeWidth="4" />
+          </g>
+
+          {/* Líneas de corte del puzzle */}
+          <line x1="250" y1="0" x2="250" y2="608" stroke="#000000" strokeWidth="5" strokeDasharray="16 10" />
+          <line x1="500" y1="0" x2="500" y2="608" stroke="#000000" strokeWidth="5" strokeDasharray="16 10" />
+          <line x1="0" y1="200" x2="748" y2="200" stroke="#000000" strokeWidth="5" strokeDasharray="16 10" />
+          <line x1="0" y1="400" x2="748" y2="400" stroke="#000000" strokeWidth="5" strokeDasharray="16 10" />
+
+          {/* HUECO CENTRAL RELLENADO CON PLASTILINA */}
+          <g transform="translate(290, 220)">
+            <polygon
+              points="0,0 140,-20 180,110 50,140"
+              fill="#86EFAC"
+              stroke="#000000"
+              strokeWidth="5"
+              strokeDasharray="6 4"
+              strokeOpacity={seamOpacity}
+            />
+            <path d="M 10,20 Q 80,0 150,30" fill="none" stroke="#22C55E" strokeWidth="6" />
+            <ellipse cx="85" cy="55" rx="22" ry="14" fill="none" stroke="#15803D" strokeWidth="2.5" opacity={seamOpacity} />
+            <rect x="-20" y="150" width="240" height="38" rx="6" fill="#0284C7" stroke="#000000" strokeWidth="3.5" />
+            <text x="100" y="175" textAnchor="middle" fill="#FFFFFF" fontSize="13" fontWeight="900" fontFamily="'Arial Black', sans-serif">
+              COSTURA INVISIBLE AL RECORDAR
+            </text>
+          </g>
+        </g>
+
+        {/* PINCEL DE ACUARELA Y BOTE DE PLASTILINA SOBRE LA MESA */}
+        <g transform="translate(420, 1040)">
+          <rect x="0" y="0" width="130" height="110" rx="10" fill="#E2E8F0" stroke="#000000" strokeWidth="6" />
+          <ellipse cx="65" cy="0" rx="65" ry="22" fill="#FFFFFF" stroke="#000000" strokeWidth="5" />
+          <text x="65" y="60" textAnchor="middle" fill="#1E293B" fontSize="14" fontWeight="900" fontFamily="'Impact', sans-serif">PLASTILINA</text>
+          <text x="65" y="85" textAnchor="middle" fill="#0284C7" fontSize="11" fontWeight="900">RELLENO MENTAL</text>
+
+          <g transform={`translate(240, 35) rotate(${brushAngle})`}>
+            <rect x="-8" y="-110" width="16" height="140" rx="4" fill="#B45309" stroke="#000000" strokeWidth="5" />
+            <rect x="-10" y="28" width="20" height="24" fill="#94A3B8" stroke="#000000" strokeWidth="3" />
+            <polygon points="-10,52 10,52 0,90" fill="#0284C7" stroke="#000000" strokeWidth="4" />
+          </g>
+        </g>
+      </svg>
+    </div>
+  );
+};
+
+/** Escenario 7: Sala de estar cálida y reflexiva con lámpara de pie y el álbum del perro verde */
+const SalaEstarAlbumMemoria: React.FC<{ frame: number; isPrimerPlano: boolean }> = ({ frame, isPrimerPlano }) => {
+  const f = frame;
+  const steamY = (f * 1.5) % 40;
+  const lampGlow = (0.75 + Math.sin(f * 0.15) * 0.15).toFixed(2);
+  const dogTail = Math.sin(f * 0.3) * 12;
+
+  return (
+    <div className="absolute inset-0 pointer-events-none z-0 overflow-hidden bg-[#FEF3C7]">
+      <svg viewBox="0 0 1080 1920" className="absolute inset-0 w-full h-full" preserveAspectRatio="xMidYMid slice">
+        {/* Pared con papel tapiz cálido a rayas verticales */}
+        <rect width="1080" height="1920" fill="#FEF9C3" />
+        {[0, 80, 160, 240, 320, 400, 480, 560, 640, 720, 800, 880, 960, 1040].map((lx) => (
+          <line key={`stripe_${lx}`} x1={lx} y1="0" x2={lx} y2="1260" stroke="#FDE68A" strokeWidth="12" opacity="0.6" />
+        ))}
+        {/* Zócalo de madera y piso de parqué */}
+        <rect y="1260" width="1080" height="660" fill="#78350F" stroke="#000000" strokeWidth="8" />
+        {[1360, 1480, 1600, 1720, 1840].map((fy) => (
+          <line key={`floor_${fy}`} x1="0" y1={fy} x2="1080" y2={fy} stroke="#542106" strokeWidth="4" />
+        ))}
+
+        {/* Ventana con cielo nocturno estrellado a la izquierda */}
+        <g transform="translate(80, 280)">
+          <rect x="0" y="0" width="260" height="360" rx="16" fill="#0F172A" stroke="#000000" strokeWidth="8" />
+          <circle cx="180" cy="100" r="38" fill="#FEF08A" stroke="#000000" strokeWidth="4" />
+          <circle cx="196" cy="94" r="34" fill="#0F172A" />
+          {[
+            { x: 50, y: 70 },
+            { x: 90, y: 140 },
+            { x: 140, y: 220 },
+            { x: 60, y: 260 },
+          ].map((st, i) => (
+            <polygon key={`st_${i}`} points={`${st.x},${st.y-8} ${st.x+2},${st.y-2} ${st.x+8},${st.y} ${st.x+2},${st.y+2} ${st.x},${st.y+8} ${st.x-2},${st.y+2} ${st.x-8},${st.y} ${st.x-2},${st.y-2}`} fill="#FFFFFF" />
+          ))}
+          <line x1="130" y1="0" x2="130" y2="360" stroke="#78350F" strokeWidth="8" />
+          <line x1="0" y1="180" x2="260" y2="180" stroke="#78350F" strokeWidth="8" />
+        </g>
+
+        {/* RETRATO ENMARCADO EN LA PARED: ¡EL PERRO VERDE FAMILIAR! */}
+        <g transform="translate(400, 260)">
+          <rect x="0" y="0" width="340" height="280" rx="14" fill="#F8FAFC" stroke="#B45309" strokeWidth="9" />
+          <rect x="14" y="14" width="312" height="252" rx="8" fill="#FEF3C7" stroke="#000000" strokeWidth="4" />
+
+          {/* Stickman niño y perro verde juntos */}
+          <g transform="translate(80, 140)">
+            {/* Stickman niño */}
+            <circle cx="0" cy="-40" r="28" fill="#FED7AA" stroke="#000000" strokeWidth="4" />
+            <path d="M -12,-44 Q 0,-34 12,-44" fill="none" stroke="#000000" strokeWidth="3" />
+            <rect x="-18" y="-12" width="36" height="50" rx="4" fill="#3B82F6" stroke="#000000" strokeWidth="4" />
+          </g>
+
+          {/* Perro verde caricaturesco */}
+          <g transform="translate(220, 150)">
+            <ellipse cx="0" cy="0" rx="36" ry="26" fill="#22C55E" stroke="#000000" strokeWidth="4" />
+            <circle cx="28" cy="-16" r="20" fill="#22C55E" stroke="#000000" strokeWidth="4" />
+            {/* Oreja caída */}
+            <path d="M 24,-28 C 42,-36 46,-8 34,-4 Z" fill="#15803D" stroke="#000000" strokeWidth="3" />
+            <circle cx="34" cy="-20" r="4" fill="#000" />
+            <circle cx="44" cy="-12" r="5" fill="#000" />
+            {/* Patas */}
+            <line x1="-16" y1="24" x2="-16" y2="44" stroke="#000000" strokeWidth="5" strokeLinecap="round" />
+            <line x1="16" y1="24" x2="16" y2="44" stroke="#000000" strokeWidth="5" strokeLinecap="round" />
+            {/* Cola moviéndose feliz */}
+            <path d={`M -34,-6 Q -50,${-22 + dogTail} -45,-36`} fill="none" stroke="#000000" strokeWidth="5" strokeLinecap="round" />
+          </g>
+
+          {/* Rótulo de la foto */}
+          <rect x="25" y="215" width="290" height="38" rx="6" fill="#15803D" stroke="#000000" strokeWidth="3" />
+          <text x="170" y="240" textAnchor="middle" fill="#FFFFFF" fontSize="13" fontWeight="900" fontFamily="'Arial Black', sans-serif">
+            FOTO FAMILIAR: ¿EL PERRO VERDE?
+          </text>
+        </g>
+
+        {/* LÁMPARA DE PIE CON PANTALLA ÁMBAR PROYECTANDO LUZ CÁLIDA */}
+        <g transform="translate(860, 440)">
+          <circle cx="0" cy="80" r="220" fill="#F59E0B" opacity={Number(lampGlow) * 0.28} />
+          <polygon points="-70,90 70,90 45,20 -45,20" fill="#F59E0B" stroke="#000000" strokeWidth="6" />
+          <ellipse cx="0" cy="90" rx="70" ry="18" fill="#FEF08A" stroke="#000000" strokeWidth="4" />
+          <line x1="0" y1="90" x2="0" y2="900" stroke="#000000" strokeWidth="10" strokeLinecap="round" />
+          <ellipse cx="0" cy="900" rx="75" ry="20" fill="#1C1917" stroke="#000000" strokeWidth="6" />
+        </g>
+
+        {/* CÓMODO SILLÓN DE LECTURA VERDE SALVIA EN EL CENTRO */}
+        <g transform="translate(380, 860)">
+          <ellipse cx="160" cy="400" rx="200" ry="28" fill="#000000" opacity="0.35" />
+          <rect x="20" y="0" width="280" height="340" rx="28" fill="#065F46" stroke="#000000" strokeWidth="8" />
+          <path d="M 20,40 C -30,60 -30,220 20,260 Z" fill="#047857" stroke="#000000" strokeWidth="6" />
+          <path d="M 300,40 C 350,60 350,220 300,260 Z" fill="#047857" stroke="#000000" strokeWidth="6" />
+          <rect x="-10" y="240" width="340" height="90" rx="18" fill="#047857" stroke="#000000" strokeWidth="7" />
+          <line x1="30" y1="330" x2="10" y2="390" stroke="#451A03" strokeWidth="10" strokeLinecap="round" />
+          <line x1="290" y1="330" x2="310" y2="390" stroke="#451A03" strokeWidth="10" strokeLinecap="round" />
+        </g>
+
+        {/* MESA AUXILIAR CON TAZA DE TÉ HUMEANTE */}
+        <g transform="translate(180, 1140)">
+          <ellipse cx="0" cy="0" rx="90" ry="32" fill="#92400E" stroke="#000000" strokeWidth="6" />
+          <line x1="0" y1="0" x2="0" y2="280" stroke="#000000" strokeWidth="10" strokeLinecap="round" />
+          <ellipse cx="0" cy="280" rx="60" ry="16" fill="#451A03" stroke="#000000" strokeWidth="5" />
+          <g transform="translate(0, -25)">
+            <ellipse cx="0" cy="20" rx="28" ry="10" fill="#E2E8F0" stroke="#000000" strokeWidth="3" />
+            <rect x="-20" y="-15" width="40" height="32" rx="6" fill="#F8FAFC" stroke="#000000" strokeWidth="4" />
+            <path d="M 20,-8 Q 36,0 20,10" fill="none" stroke="#000000" strokeWidth="4" />
+            <path d={`M -6,${-22 - steamY} Q 0,${-32 - steamY} -4,${-45 - steamY}`} fill="none" stroke="#CBD5E1" strokeWidth="3" strokeLinecap="round" opacity="0.7" />
+            <path d={`M 6,${-22 - steamY} Q 12,${-32 - steamY} 8,${-45 - steamY}`} fill="none" stroke="#CBD5E1" strokeWidth="3" strokeLinecap="round" opacity="0.7" />
+          </g>
+        </g>
+      </svg>
+    </div>
+  );
+};
+
+
+/** Escenario 1: Espacio cósmico con agujero negro y fuga de radiación de Hawking */
+const EspacioAgujeroNegroHawking: React.FC<{ frame: number; isPrimerPlano: boolean }> = ({ frame, isPrimerPlano }) => {
+  const f = frame;
+  const diskRot = (f * 0.4) % 360;
+  const sweatGlow = 0.7 + Math.sin(f * 0.2) * 0.3;
+  const leakOffset = (Math.sin(f * 0.15) * 6).toFixed(1);
+
+  return (
+    <div className="absolute inset-0 pointer-events-none z-0 overflow-hidden bg-[#030712]">
+      <svg viewBox="0 0 1080 1920" className="absolute inset-0 w-full h-full" preserveAspectRatio="xMidYMid slice">
+        <defs>
+          <radialGradient id="hawkingSpaceGlow" cx="50%" cy="45%" r="65%">
+            <stop offset="0%" stopColor="#1E1B4B" stopOpacity="0.8" />
+            <stop offset="45%" stopColor="#0F172A" stopOpacity="0.9" />
+            <stop offset="100%" stopColor="#030712" stopOpacity="1" />
+          </radialGradient>
+          <radialGradient id="accretionDiskGrad" cx="50%" cy="50%" r="50%">
+            <stop offset="40%" stopColor="#000000" stopOpacity="0" />
+            <stop offset="65%" stopColor="#F97316" stopOpacity="0.85" />
+            <stop offset="85%" stopColor="#FDE047" stopOpacity="0.95" />
+            <stop offset="100%" stopColor="#EF4444" stopOpacity="0" />
+          </radialGradient>
+        </defs>
+
+        <rect width="1080" height="1920" fill="url(#hawkingSpaceGlow)" />
+
+        {/* Campo de estrellas neo-brutalistas */}
+        {[
+          { x: 120, y: 220, r: 3, c: "#BAE6FD" },
+          { x: 920, y: 180, r: 4, c: "#FDE047" },
+          { x: 260, y: 440, r: 2.5, c: "#FFFFFF" },
+          { x: 840, y: 520, r: 3, c: "#93C5FD" },
+          { x: 160, y: 780, r: 4, c: "#FDE047" },
+          { x: 940, y: 860, r: 2.5, c: "#FFFFFF" },
+          { x: 100, y: 1100, r: 3, c: "#38BDF8" },
+          { x: 980, y: 1160, r: 3.5, c: "#FDE047" },
+        ].map((s, idx) => {
+          const sp = Math.sin((f + idx * 20) * 0.1) * 1.5;
+          return <circle key={`star_${idx}`} cx={s.x} cy={s.y} r={s.r + sp * 0.4} fill={s.c} />;
+        })}
+
+        {/* Disco de Acreción giratorio inclinado */}
+        <g transform="translate(540, 820) rotate(-18)">
+          <ellipse cx="0" cy="0" rx="420" ry="120" fill="url(#accretionDiskGrad)" stroke="#F59E0B" strokeWidth="4" opacity="0.9" />
+          {/* Rayos de deformación gravitacional de gas estelar */}
+          <ellipse cx="0" cy="0" rx="380" ry="90" fill="none" stroke="#FDE047" strokeWidth="6" strokeDasharray="60 30" transform={`rotate(${diskRot})`} />
+        </g>
+
+        {/* Sombra del Agujero Negro (Horizonte de Sucesos) */}
+        <g transform="translate(540, 820)">
+          {/* Halo de lente gravitacional exterior */}
+          <circle cx="0" cy="0" r="230" fill="none" stroke="#38BDF8" strokeWidth="12" opacity="0.4" />
+          <circle cx="0" cy="0" r="215" fill="none" stroke="#FDE047" strokeWidth="8" opacity="0.8" />
+          {/* Horizonte puro negro */}
+          <circle cx="0" cy="0" r="200" fill="#000000" stroke="#000000" strokeWidth="6" />
+
+          {/* Fuga de Radiación de Hawking: Gotas de luz cuántica desprendiéndose */}
+          {[
+            { angle: -45, dist: 215, r: 8, col: "#38BDF8" },
+            { angle: 30, dist: 220, r: 10, col: "#FDE047" },
+            { angle: 120, dist: 225, r: 9, col: "#67E8F9" },
+            { angle: 210, dist: 218, r: 7, col: "#FACC15" },
+            { angle: -130, dist: 230, r: 11, col: "#38BDF8" },
+          ].map((drip, idx) => {
+            const rad = ((drip.angle + f * 0.8) * Math.PI) / 180;
+            const extraDist = ((f * 1.5 + idx * 30) % 70);
+            const dx = Math.cos(rad) * (drip.dist + extraDist);
+            const dy = Math.sin(rad) * (drip.dist + extraDist);
+            return (
+              <g key={`drip_${idx}`} transform={`translate(${dx.toFixed(1)}, ${dy.toFixed(1)})`}>
+                <circle cx="0" cy="0" r={drip.r} fill={drip.col} opacity={sweatGlow} />
+                <circle cx="0" cy="0" r={drip.r * 0.5} fill="#FFFFFF" />
+              </g>
+            );
+          })}
+        </g>
+
+        {/* Rótulo diegético superior cósmico */}
+        <g transform="translate(540, 380)">
+          <rect x="-300" y="-45" width="600" height="90" rx="16" fill="#0F172A" stroke="#38BDF8" strokeWidth="6" />
+          <text x="0" y="-8" textAnchor="middle" fill="#FFFFFF" fontSize="28" fontWeight="900" fontFamily="'Impact', 'Arial Black', sans-serif">
+            AGUJERO NEGRO: NO ES ETERNO
+          </text>
+          <text x="0" y="28" textAnchor="middle" fill="#FDE047" fontSize="20" fontWeight="900" fontFamily="'Impact', 'Arial Black', sans-serif">
+            GOTEA ENERGÍA HASTA EVAPORARSE
+          </text>
+        </g>
+      </svg>
+    </div>
+  );
+};
+
+/** Escenario 2: Límite cuántico del horizonte con pares virtuales materia/antimateria */
+const HorizonteCuanticoEvaporacion: React.FC<{ frame: number; isPrimerPlano: boolean }> = ({ frame, isPrimerPlano }) => {
+  const f = frame;
+  const pulseGrid = 0.8 + Math.sin(f * 0.2) * 0.2;
+  const pairY1 = ((f * 2.2) % 180);
+
+  return (
+    <div className="absolute inset-0 pointer-events-none z-0 overflow-hidden bg-[#090D16]">
+      <svg viewBox="0 0 1080 1920" className="absolute inset-0 w-full h-full" preserveAspectRatio="xMidYMid slice">
+        <defs>
+          <linearGradient id="quantumHorizonGrad" x1="0" y1="0" x2="1" y2="0">
+            <stop offset="0%" stopColor="#000000" />
+            <stop offset="48%" stopColor="#0B132B" />
+            <stop offset="50%" stopColor="#38BDF8" />
+            <stop offset="100%" stopColor="#1E1B4B" />
+          </linearGradient>
+        </defs>
+
+        <rect width="1080" height="1920" fill="url(#quantumHorizonGrad)" />
+
+        {/* Frontera vertical del horizonte de sucesos con grosor y curvatura */}
+        <path d="M 540,0 Q 480,960 540,1920" fill="none" stroke="#000000" strokeWidth="18" />
+        <path d="M 540,0 Q 480,960 540,1920" fill="none" stroke="#38BDF8" strokeWidth="6" strokeDasharray="16 12" />
+
+        {/* Zona Izquierda: Interior del agujero negro (Sin retorno) */}
+        <g transform="translate(330, 480)">
+          <rect x="-140" y="-35" width="280" height="70" rx="12" fill="#000000" stroke="#EF4444" strokeWidth="4" />
+          <text x="0" y="7" textAnchor="middle" fill="#EF4444" fontSize="18" fontWeight="900" fontFamily="'Impact', 'Arial Black', sans-serif">
+            INTERIOR (GRAVEDAD)
+          </text>
+        </g>
+
+        {/* Zona Derecha: Exterior (Universo libre) */}
+        <g transform="translate(750, 480)">
+          <rect x="-140" y="-35" width="280" height="70" rx="12" fill="#0F172A" stroke="#34D399" strokeWidth="4" />
+          <text x="0" y="7" textAnchor="middle" fill="#34D399" fontSize="18" fontWeight="900" fontFamily="'Impact', 'Arial Black', sans-serif">
+            EXTERIOR (CUÁNTICO)
+          </text>
+        </g>
+
+        {/* Representación de pares virtuales brotando del vacío en el borde */}
+        {[300, 750, 1200].map((baseY, idx) => {
+          const separation = Math.sin((f + idx * 30) * 0.15) * 90;
+          return (
+            <g key={`qpair_${idx}`} transform={`translate(520, ${baseY})`}>
+              {/* Línea de entrelazamiento cuántico rota */}
+              <line x1={-separation} y1="0" x2={separation} y2="0" stroke="#FDE047" strokeWidth="3" strokeDasharray="6 4" opacity={pulseGrid} />
+              {/* Partícula que cae (-) al abismo */}
+              <g transform={`translate(${-separation - 40}, 0)`}>
+                <circle cx="0" cy="0" r="22" fill="#3B82F6" stroke="#000000" strokeWidth="4" />
+                <text x="0" y="7" textAnchor="middle" fill="#FFFFFF" fontSize="22" fontWeight="900" fontFamily="'Arial Black', sans-serif">-</text>
+                <text x="0" y="38" textAnchor="middle" fill="#93C5FD" fontSize="14" fontWeight="900" fontFamily="'Arial Black', sans-serif">ENERGÍA NEGATIVA</text>
+              </g>
+              {/* Partícula que escapa (+) como Radiación de Hawking */}
+              <g transform={`translate(${separation + 40}, 0)`}>
+                <circle cx="0" cy="0" r="24" fill="#EF4444" stroke="#000000" strokeWidth="4" />
+                <text x="0" y="8" textAnchor="middle" fill="#FFFFFF" fontSize="24" fontWeight="900" fontFamily="'Arial Black', sans-serif">+</text>
+                <text x="0" y="40" textAnchor="middle" fill="#FCA5A5" fontSize="14" fontWeight="900" fontFamily="'Arial Black', sans-serif">RADIACIÓN HAWKING</text>
+              </g>
+            </g>
+          );
+        })}
+
+        {/* Destellos cuánticos de punto cero */}
+        <circle cx="510" cy="960" r="8" fill="#FDE047" />
+        <circle cx="530" cy="400" r="6" fill="#38BDF8" />
+        <circle cx="490" cy="1400" r="7" fill="#FFFFFF" />
+      </svg>
+    </div>
+  );
+};
+
+/** Escenario 3: Laboratorio científico donde el fuego quema un libro (Información cuántica intacta) */
+const LaboratorioCosmicoQuemaLibro: React.FC<{ frame: number; isPrimerPlano: boolean }> = ({ frame, isPrimerPlano }) => {
+  const f = frame;
+  const flameH = Math.sin(f * 0.4) * 8;
+  const smokeDrift = ((f * 1.6) % 90);
+
+  return (
+    <div className="absolute inset-0 pointer-events-none z-0 overflow-hidden bg-[#1E293B]">
+      <svg viewBox="0 0 1080 1920" className="absolute inset-0 w-full h-full" preserveAspectRatio="xMidYMid slice">
+        {/* Fondo de pared de laboratorio con cuadrícula técnica */}
+        <rect width="1080" height="1920" fill="#0F172A" />
+        <defs>
+          <pattern id="labGridPattern" width="60" height="60" patternUnits="userSpaceOnUse">
+            <path d="M 60 0 L 0 0 0 60" fill="none" stroke="#334155" strokeWidth="1.5" />
+          </pattern>
+        </defs>
+        <rect width="1080" height="1920" fill="url(#labGridPattern)" />
+
+        {/* Campana de cristal reforzado para experimento de fuego */}
+        <g transform="translate(540, 740)">
+          {/* Base metálica con quemador */}
+          <rect x="-240" y="160" width="480" height="60" rx="8" fill="#334155" stroke="#000000" strokeWidth="7" />
+          <rect x="-180" y="140" width="360" height="24" rx="4" fill="#64748B" stroke="#000000" strokeWidth="4" />
+
+          {/* Domo de cristal con reflejos neo-brutalistas */}
+          <path d="M -200,140 C -200,-160 200,-160 200,140 Z" fill="#38BDF8" fillOpacity="0.12" stroke="#38BDF8" strokeWidth="8" />
+          <path d="M -160,80 C -160,-100 0,-140 0,-140" fill="none" stroke="#FFFFFF" strokeWidth="6" opacity="0.6" strokeLinecap="round" />
+
+          {/* Fuego y humo ascendente */}
+          <g transform={`translate(0, ${70 + flameH})`}>
+            <polygon points="-40,40 0,-50 40,40" fill="#EF4444" stroke="#000000" strokeWidth="4" />
+            <polygon points="-25,40 0,-30 25,40" fill="#F59E0B" />
+            <polygon points="-12,40 0,-15 12,40" fill="#FEF08A" />
+          </g>
+
+          {/* Cenizas y partículas moleculares que ascienden */}
+          <circle cx="-30" cy={-smokeDrift} r="5" fill="#94A3B8" />
+          <circle cx="40" cy={-smokeDrift - 25} r="6" fill="#64748B" />
+          <text x="-60" y={-smokeDrift - 40} fill="#38BDF8" fontSize="16" fontWeight="900" fontFamily="'Courier New', monospace">DATOS</text>
+        </g>
+
+        {/* Mesa de laboratorio */}
+        <rect y="1280" width="1080" height="640" fill="#1E293B" stroke="#000000" strokeWidth="10" />
+        <rect y="1280" width="1080" height="40" fill="#475569" stroke="#000000" strokeWidth="6" />
+
+        {/* Gran cartel explicativo */}
+        <g transform="translate(540, 400)">
+          <rect x="-310" y="-55" width="620" height="110" rx="16" fill="#D97706" stroke="#000000" strokeWidth="8" />
+          <text x="0" y="-10" textAnchor="middle" fill="#FFFFFF" fontSize="30" fontWeight="900" fontFamily="'Impact', 'Arial Black', sans-serif">
+            EN LA TIERRA: EL FUEGO NO BORRA NADA
+          </text>
+          <text x="0" y="32" textAnchor="middle" fill="#FEF08A" fontSize="20" fontWeight="900" fontFamily="'Impact', 'Arial Black', sans-serif">
+            CADA ÁTOMO DE HUMO Y CENIZA GUARDA EL TEXTO
+          </text>
+        </g>
+      </svg>
+    </div>
+  );
+};
+
+/** Escenario 4: Reconstrucción cuántica total con láseres y fórmulas de física intacta */
+const LaboratorioReconstruccionCuantica: React.FC<{ frame: number; isPrimerPlano: boolean }> = ({ frame, isPrimerPlano }) => {
+  const f = frame;
+  const scanLine = ((f * 3) % 220);
+  const wavePulse = Math.sin(f * 0.2) * 10;
+
+  return (
+    <div className="absolute inset-0 pointer-events-none z-0 overflow-hidden bg-[#022C22]">
+      <svg viewBox="0 0 1080 1920" className="absolute inset-0 w-full h-full" preserveAspectRatio="xMidYMid slice">
+        <rect width="1080" height="1920" fill="#022C22" />
+
+        {/* Malla cuántica de computación holográfica */}
+        <g opacity="0.35">
+          {[0, 1, 2, 3, 4, 5, 6].map((i) => (
+            <line key={`v_line_${i}`} x1={i * 180} y1="0" x2={i * 180} y2="1920" stroke="#10B981" strokeWidth="2" strokeDasharray="10 8" />
+          ))}
+          {[0, 1, 2, 3, 4, 5, 6, 7, 8].map((j) => (
+            <line key={`h_line_${j}`} x1="0" y1={j * 220} x2="1080" y2={j * 220} stroke="#10B981" strokeWidth="2" strokeDasharray="10 8" />
+          ))}
+        </g>
+
+        {/* Haz de láser de escaneo cuántico reversor de entropía */}
+        <g transform="translate(540, 780)">
+          {/* Proyector cenital */}
+          <polygon points="-80,-200 80,-200 140,-150 -140,-150" fill="#047857" stroke="#000000" strokeWidth="6" />
+          {/* Cono de luz de escaneo */}
+          <polygon points="-80,-150 80,-150 280,220 -280,220" fill="#10B981" fillOpacity="0.2" stroke="#34D399" strokeWidth="3" strokeDasharray="6 6" />
+          {/* Línea horizontal de escaneo activo */}
+          <line x1="-240" y1={-150 + scanLine} x2="240" y2={-150 + scanLine} stroke="#FDE047" strokeWidth="4" />
+
+          {/* Símbolos cuánticos y letras reconstruidas flotando */}
+          <g transform={`translate(0, ${wavePulse})`}>
+            <rect x="-140" y="-20" width="280" height="70" rx="10" fill="#065F46" stroke="#34D399" strokeWidth="4" />
+            <text x="0" y="26" textAnchor="middle" fill="#FFFFFF" fontSize="32" fontWeight="900" fontFamily="'Impact', 'Arial Black', sans-serif">
+              A-B-C RECONSTRUIDO
+            </text>
+          </g>
+        </g>
+
+        {/* Ecuación cuántica sagrada: Unitariedad (La información se conserva) */}
+        <g transform="translate(540, 390)">
+          <rect x="-310" y="-50" width="620" height="100" rx="16" fill="#059669" stroke="#000000" strokeWidth="8" />
+          <text x="0" y="-8" textAnchor="middle" fill="#FFFFFF" fontSize="28" fontWeight="900" fontFamily="'Impact', 'Arial Black', sans-serif">
+            LEY CUÁNTICA SAGRADA
+          </text>
+          <text x="0" y="28" textAnchor="middle" fill="#FEF08A" fontSize="22" fontWeight="900" fontFamily="'Courier New', monospace">
+            INFORMACIÓN INICIAL = INFORMACIÓN FINAL
+          </text>
+        </g>
+      </svg>
+    </div>
+  );
+};
+
+/** Escenario 5: Agujero negro evaporado por completo en radiación térmica (Glitch y paradoja) */
+const EspacioGlitchRealidadRota: React.FC<{ frame: number; isPrimerPlano: boolean }> = ({ frame, isPrimerPlano }) => {
+  const f = frame;
+  const glitchBlink = (f % 6 < 3);
+  const shakeX = glitchBlink ? 8 : -8;
+
+  return (
+    <div className="absolute inset-0 pointer-events-none z-0 overflow-hidden bg-[#450A0A]">
+      <svg viewBox="0 0 1080 1920" className="absolute inset-0 w-full h-full" preserveAspectRatio="xMidYMid slice">
+        <rect width="1080" height="1920" fill="#450A0A" />
+
+        {/* Grietas de rotura de la realidad y glitch en el tejido espacio-temporal */}
+        <g transform={`translate(${shakeX}, 0)`}>
+          <path d="M 120,200 L 320,680 L 260,940 L 480,1400 L 410,1800" fill="none" stroke="#EF4444" strokeWidth="8" strokeDasharray="30 15" />
+          <path d="M 940,300 L 760,780 L 820,1100 L 620,1540 L 710,1860" fill="none" stroke="#FDE047" strokeWidth="6" strokeDasharray="20 10" />
+          <path d="M 280,720 L 780,780" fill="none" stroke="#FFFFFF" strokeWidth="5" />
+        </g>
+
+        {/* Nube de gas residual térmico desordenado donde antes estaba el agujero */}
+        <g transform="translate(540, 800)">
+          <ellipse cx="0" cy="0" rx="340" ry="220" fill="#7F1D1D" stroke="#EF4444" strokeWidth="8" opacity="0.6" />
+          <ellipse cx="0" cy="0" rx="220" ry="140" fill="#991B1B" opacity="0.7" />
+          {/* Silueta fantasma vacía con signo de interrogación colosal */}
+          <circle cx="0" cy="0" r="140" fill="#000000" stroke="#F87171" strokeWidth="6" strokeDasharray="14 10" />
+          <text x="0" y="45" textAnchor="middle" fill="#FFFFFF" fontSize="120" fontWeight="900" fontFamily="'Impact', 'Arial Black', sans-serif">
+            ?
+          </text>
+        </g>
+
+        {/* Rótulo de catástrofe teórica */}
+        <g transform="translate(540, 390)">
+          <rect x="-310" y="-55" width="620" height="110" rx="16" fill="#DC2626" stroke="#000000" strokeWidth="8" />
+          <text x="0" y="-10" textAnchor="middle" fill="#FFFFFF" fontSize="32" fontWeight="900" fontFamily="'Impact', 'Arial Black', sans-serif">
+            ¡LA FÍSICA SE HA ROTO!
+          </text>
+          <text x="0" y="32" textAnchor="middle" fill="#FEF08A" fontSize="20" fontWeight="900" fontFamily="'Impact', 'Arial Black', sans-serif">
+            SI SE BORRÓ EL LIBRO, LAS LEYES DEL UNIVERSO CAEN
+          </text>
+        </g>
+      </svg>
+    </div>
+  );
+};
+
+/** Escenario 6: Superficie 2D del agujero negro convertida en pantalla de píxeles de Planck (Principio Holográfico) */
+const SuperficieHolograficaAgujero: React.FC<{ frame: number; isPrimerPlano: boolean }> = ({ frame, isPrimerPlano }) => {
+  const f = frame;
+  const bitWave = (f * 0.15);
+
+  return (
+    <div className="absolute inset-0 pointer-events-none z-0 overflow-hidden bg-[#042F2E]">
+      <svg viewBox="0 0 1080 1920" className="absolute inset-0 w-full h-full" preserveAspectRatio="xMidYMid slice">
+        <rect width="1080" height="1920" fill="#042F2E" />
+
+        {/* Malla masiva holográfica de bits en el horizonte */}
+        <g transform="translate(540, 800)">
+          {/* Gran esfera de contorno de Planck */}
+          <circle cx="0" cy="0" r="380" fill="#064E3B" stroke="#10B981" strokeWidth="10" />
+          {/* Líneas de latitud y longitud holográficas */}
+          {[-260, -130, 0, 130, 260].map((yVal, i) => (
+            <ellipse key={`lat_${i}`} cx="0" cy={yVal} rx={Math.sqrt(380 * 380 - yVal * yVal)} ry={35} fill="none" stroke="#34D399" strokeWidth="3" opacity="0.6" />
+          ))}
+          {[-260, -130, 0, 130, 260].map((xVal, j) => (
+            <ellipse key={`lon_${j}`} cx={xVal} cy="0" rx={35} ry={Math.sqrt(380 * 380 - xVal * xVal)} fill="none" stroke="#34D399" strokeWidth="3" opacity="0.6" />
+          ))}
+
+          {/* Bits binarios impresos en la superficie exterior */}
+          {[
+            { x: -160, y: -120, b: "1" }, { x: 0, y: -180, b: "0" }, { x: 180, y: -100, b: "1" },
+            { x: -220, y: 0, b: "0" }, { x: -80, y: 20, b: "1" }, { x: 90, y: -20, b: "1" }, { x: 220, y: 30, b: "0" },
+            { x: -150, y: 150, b: "1" }, { x: 0, y: 180, b: "0" }, { x: 160, y: 160, b: "1" },
+          ].map((bit, k) => {
+            const glow = 0.6 + Math.sin(bitWave + k) * 0.4;
+            return (
+              <text key={`bit_mat_${k}`} x={bit.x} y={bit.y} textAnchor="middle" fill="#A7F3D0" fontSize="36" fontWeight="900" fontFamily="'Courier New', monospace" opacity={glow}>
+                {bit.b}
+              </text>
+            );
+          })}
+        </g>
+
+        {/* Rótulo del Principio Holográfico */}
+        <g transform="translate(540, 390)">
+          <rect x="-310" y="-55" width="620" height="110" rx="16" fill="#047857" stroke="#000000" strokeWidth="8" />
+          <text x="0" y="-10" textAnchor="middle" fill="#FFFFFF" fontSize="30" fontWeight="900" fontFamily="'Impact', 'Arial Black', sans-serif">
+            EL PRINCIPIO HOLOGRÁFICO
+          </text>
+          <text x="0" y="32" textAnchor="middle" fill="#FEF08A" fontSize="22" fontWeight="900" fontFamily="'Impact', 'Arial Black', sans-serif">
+            TODO LO QUE CAE QUEDA GRABADO EN LA SUPERFICIE 2D
+          </text>
+        </g>
+      </svg>
+    </div>
+  );
+};
+
+/** Escenario 7: Cierre en el cosmos armónico con radiación informada y memoria preservada */
+const CosmosRadiacionInformadaPaz: React.FC<{ frame: number; isPrimerPlano: boolean }> = ({ frame, isPrimerPlano }) => {
+  const f = frame;
+  const peaceGlow = Math.sin(f * 0.12) * 12;
+
+  return (
+    <div className="absolute inset-0 pointer-events-none z-0 overflow-hidden bg-[#0A0F1D]">
+      <svg viewBox="0 0 1080 1920" className="absolute inset-0 w-full h-full" preserveAspectRatio="xMidYMid slice">
+        <defs>
+          <radialGradient id="cosmosPeaceGrad" cx="50%" cy="50%" r="60%">
+            <stop offset="0%" stopColor="#1E3A8A" stopOpacity="0.8" />
+            <stop offset="50%" stopColor="#0F172A" stopOpacity="0.9" />
+            <stop offset="100%" stopColor="#0A0F1D" stopOpacity="1" />
+          </radialGradient>
+        </defs>
+
+        <rect width="1080" height="1920" fill="url(#cosmosPeaceGrad)" />
+
+        {/* Estelas cósmicas luminosas de radiación informada que llenan el espacio con calma */}
+        <g transform={`translate(0, ${peaceGlow})`}>
+          <path d="M 0,600 Q 340,480 540,680 T 1080,600" fill="none" stroke="#38BDF8" strokeWidth="6" opacity="0.7" />
+          <path d="M 0,840 Q 280,980 540,820 T 1080,860" fill="none" stroke="#FDE047" strokeWidth="5" opacity="0.8" />
+          <path d="M 0,1100 Q 380,1200 540,1050 T 1080,1120" fill="none" stroke="#60A5FA" strokeWidth="6" opacity="0.6" />
+        </g>
+
+        {/* Partículas y datos de luz cuántica flotando como luciérnagas galácticas */}
+        {[
+          { x: 220, y: 640, r: 8, col: "#38BDF8" },
+          { x: 420, y: 760, r: 12, col: "#FDE047" },
+          { x: 680, y: 720, r: 10, col: "#FACC15" },
+          { x: 860, y: 840, r: 7, col: "#60A5FA" },
+          { x: 300, y: 1020, r: 11, col: "#38BDF8" },
+          { x: 740, y: 1080, r: 9, col: "#FDE047" },
+        ].map((pt, m) => {
+          const puls = Math.sin((f + m * 25) * 0.15) * 2;
+          return (
+            <g key={`peace_pt_${m}`} transform={`translate(${pt.x}, ${pt.y})`}>
+              <circle cx="0" cy="0" r={pt.r + puls} fill={pt.col} opacity="0.9" />
+              <circle cx="0" cy="0" r={(pt.r + puls) * 0.5} fill="#FFFFFF" />
+            </g>
+          );
+        })}
+
+        {/* Símbolo de infinito cuántico central armónico */}
+        <g transform="translate(540, 820)" opacity="0.85">
+          <path d="M -120,0 C -120,-80 -40,-80 0,0 C 40,80 120,80 120,0 C 120,-80 40,-80 0,0 C -40,80 -120,80 -120,0 Z" fill="none" stroke="#FDE047" strokeWidth="8" />
+          <path d="M -120,0 C -120,-80 -40,-80 0,0 C 40,80 120,80 120,0 C 120,-80 40,-80 0,0 C -40,80 -120,80 -120,0 Z" fill="none" stroke="#38BDF8" strokeWidth="3" strokeDasharray="10 8" />
+        </g>
+
+        {/* Rótulo de cierre cósmico */}
+        <g transform="translate(540, 400)">
+          <rect x="-310" y="-55" width="620" height="110" rx="16" fill="#1D4ED8" stroke="#000000" strokeWidth="8" />
+          <text x="0" y="-10" textAnchor="middle" fill="#FFFFFF" fontSize="30" fontWeight="900" fontFamily="'Impact', 'Arial Black', sans-serif">
+            EL UNIVERSO TIENE MEMORIA ETERNA
+          </text>
+          <text x="0" y="32" textAnchor="middle" fill="#FEF08A" fontSize="22" fontWeight="900" fontFamily="'Impact', 'Arial Black', sans-serif">
+            NI EL AGUJERO NEGRO MÁS SALVAJE PUEDE BORRARTE
+          </text>
+        </g>
+      </svg>
+    </div>
+  );
+};
+
+
+/** Escenario 1: Habitación con enchufe asustado, coche agresivo y pareidolia cotidiana */
+const HabitacionObjetosPareidolia: React.FC<{ frame: number; isPrimerPlano: boolean }> = ({ frame, isPrimerPlano }) => {
+  const f = frame;
+  const plugShake = Math.sin(f * 0.35) * 1.5;
+
+  return (
+    <div className="absolute inset-0 pointer-events-none z-0 overflow-hidden bg-[#FEF3C7]">
+      <svg viewBox="0 0 1080 1920" className="absolute inset-0 w-full h-full" preserveAspectRatio="xMidYMid slice">
+        {/* Pared empapelada neo-brutalista con textura */}
+        <rect width="1080" height="1920" fill="#FEF3C7" />
+        <defs>
+          <pattern id="pareidoliaWallGrid" width="60" height="60" patternUnits="userSpaceOnUse">
+            <line x1="0" y1="0" x2="60" y2="0" stroke="#FDE68A" strokeWidth="2" />
+            <line x1="0" y1="0" x2="0" y2="60" stroke="#FDE68A" strokeWidth="2" />
+          </pattern>
+        </defs>
+        <rect width="1080" height="1340" fill="url(#pareidoliaWallGrid)" />
+
+        {/* Gran Enchufe de pared asustado (ojos redondos y boca de pánico) */}
+        <g transform={`translate(160, 720) translate(0, ${plugShake})`}>
+          {/* Placa de plástico rectangular */}
+          <rect x="-100" y="-120" width="200" height="240" rx="20" fill="#FFFFFF" stroke="#000000" strokeWidth="8" />
+          <rect x="-85" y="-105" width="170" height="210" rx="14" fill="#F8FAFC" stroke="#CBD5E1" strokeWidth="3" />
+
+          {/* Ranura ojo izquierdo */}
+          <rect x="-45" y="-55" width="16" height="42" rx="6" fill="#000000" />
+          {/* Ranura ojo derecho */}
+          <rect x="29" y="-55" width="16" height="42" rx="6" fill="#000000" />
+
+          {/* Orificio boca redonda abierta gritando de pánico */}
+          <circle cx="0" cy="35" r="24" fill="#000000" />
+          <circle cx="0" cy="35" r="14" fill="#EF4444" opacity="0.6" />
+
+          {/* Líneas de sudor / terror cómico */}
+          <path d="M 60,-90 Q 75,-105 70,-80" fill="#38BDF8" stroke="#000000" strokeWidth="2" />
+        </g>
+
+        {/* Parrilla de coche con faros enojados a la derecha */}
+        <g transform="translate(800, 740)">
+          <rect x="-160" y="-70" width="320" height="160" rx="16" fill="#18181B" stroke="#000000" strokeWidth="7" />
+          {/* Faros afilados hostiles (ojos con ceño fruncido) */}
+          <polygon points="-120,-30 -50,-45 -40,-10 -110,0" fill="#FDE047" stroke="#000000" strokeWidth="4" />
+          <polygon points="120,-30 50,-45 40,-10 110,0" fill="#FDE047" stroke="#000000" strokeWidth="4" />
+          {/* Parrilla con dientes agresivos */}
+          <rect x="-90" y="25" width="180" height="40" rx="6" fill="#3F3F46" stroke="#000000" strokeWidth="3" />
+          <line x1="-60" y1="25" x2="-60" y2="65" stroke="#FFFFFF" strokeWidth="3" />
+          <line x1="0" y1="25" x2="0" y2="65" stroke="#FFFFFF" strokeWidth="3" />
+          <line x1="60" y1="25" x2="60" y2="65" stroke="#FFFFFF" strokeWidth="3" />
+        </g>
+
+        {/* Piso de parqué */}
+        <rect y="1340" width="1080" height="580" fill="#D97706" stroke="#000000" strokeWidth="10" />
+        <line x1="0" y1="1340" x2="1080" y2="1340" stroke="#000000" strokeWidth="10" />
+
+        {/* Rótulo superior */}
+        <g transform="translate(540, 390)">
+          <rect x="-310" y="-55" width="620" height="110" rx="16" fill="#0284C7" stroke="#000000" strokeWidth="8" />
+          <text x="0" y="-10" textAnchor="middle" fill="#FFFFFF" fontSize="30" fontWeight="900" fontFamily="'Impact', 'Arial Black', sans-serif">
+            ¿POR QUÉ VES CARAS EN TODOS LADOS?
+          </text>
+          <text x="0" y="32" textAnchor="middle" fill="#FEF08A" fontSize="22" fontWeight="900" fontFamily="'Impact', 'Arial Black', sans-serif">
+            EL EXTRAÑO FENÓMENO DE LA PAREIDOLIA
+          </text>
+        </g>
+      </svg>
+    </div>
+  );
+};
+
+/** Escenario 2: Sabana africana primitiva al crepúsculo con pastizales y acacias */
+const SabanaAfricanaCrepusculo: React.FC<{ frame: number; isPrimerPlano: boolean }> = ({ frame, isPrimerPlano }) => {
+  const f = frame;
+  const grassWave = Math.sin(f * 0.12) * 8;
+
+  return (
+    <div className="absolute inset-0 pointer-events-none z-0 overflow-hidden bg-[#7C2D12]">
+      <svg viewBox="0 0 1080 1920" className="absolute inset-0 w-full h-full" preserveAspectRatio="xMidYMid slice">
+        <defs>
+          <linearGradient id="savannaSunset" x1="0" y1="0" x2="0" y2="1">
+            <stop offset="0%" stopColor="#7C2D12" />
+            <stop offset="45%" stopColor="#EA580C" />
+            <stop offset="75%" stopColor="#F59E0B" />
+            <stop offset="100%" stopColor="#78350F" />
+          </linearGradient>
+        </defs>
+
+        <rect width="1080" height="1920" fill="url(#savannaSunset)" />
+
+        {/* Sol crepuscular colosal */}
+        <circle cx="540" cy="720" r="220" fill="#FEF08A" opacity="0.85" />
+
+        {/* Siluetas de acacias africanas */}
+        <g transform="translate(220, 920)">
+          {/* Tronco */}
+          <path d="M 0,160 Q -15,80 -30,0 Q 0,-40 30,-20 Q 20,80 0,160 Z" fill="#18181B" />
+          {/* Copa aplanada horizontal de acacia */}
+          <ellipse cx="-40" cy="-30" rx="140" ry="28" fill="#18181B" />
+          <ellipse cx="60" cy="-20" rx="110" ry="24" fill="#18181B" />
+        </g>
+        <g transform="translate(860, 940)">
+          <path d="M 0,140 Q 20,60 10,0 Q -10,-30 0,-10 Q -5,60 0,140 Z" fill="#18181B" />
+          <ellipse cx="0" cy="-20" rx="120" ry="25" fill="#18181B" />
+        </g>
+
+        {/* Colinas de pastizal seco en el horizonte */}
+        <path d="M 0,1050 Q 360,980 720,1060 T 1080,1020 L 1080,1920 L 0,1920 Z" fill="#B45309" stroke="#000000" strokeWidth="8" />
+
+        {/* Pastizales altos animados en primer término */}
+        <g transform={`translate(${grassWave}, 0)`}>
+          {[40, 120, 240, 360, 480, 600, 720, 840, 960, 1040].map((gx, idx) => (
+            <path key={`grass_${idx}`} d={`M ${gx},1360 Q ${gx + 25},1260 ${gx + 10},1200 Q ${gx - 15},1270 ${gx},1360 Z`} fill="#D97706" stroke="#451A03" strokeWidth="3" />
+          ))}
+        </g>
+
+        {/* Rótulo sabana ancestral */}
+        <g transform="translate(540, 390)">
+          <rect x="-310" y="-55" width="620" height="110" rx="16" fill="#451A03" stroke="#F59E0B" strokeWidth="7" />
+          <text x="0" y="-10" textAnchor="middle" fill="#FFFFFF" fontSize="30" fontWeight="900" fontFamily="'Impact', 'Arial Black', sans-serif">
+            HACE 200,000 AÑOS EN ÁFRICA
+          </text>
+          <text x="0" y="32" textAnchor="middle" fill="#FDE047" fontSize="20" fontWeight="900" fontFamily="'Impact', 'Arial Black', sans-serif">
+            UN ERROR VISUAL PODÍA COSTARTE LA VIDA
+          </text>
+        </g>
+      </svg>
+    </div>
+  );
+};
+
+/** Escenario 3: Pantalla dividida diagonal de la teoría de detección de señales (Asimetría del error) */
+const PantallaDivididaAsimetriaError: React.FC<{ frame: number; isPrimerPlano: boolean }> = ({ frame, isPrimerPlano }) => {
+  const f = frame;
+  const eyesBlink = (f % 40 < 5) ? 0.2 : 1;
+
+  return (
+    <div className="absolute inset-0 pointer-events-none z-0 overflow-hidden bg-[#0F172A]">
+      <svg viewBox="0 0 1080 1920" className="absolute inset-0 w-full h-full" preserveAspectRatio="xMidYMid slice">
+        {/* Mitad Superior / Izquierda: VERDE (Falso positivo = Vida) */}
+        <polygon points="0,0 1080,0 0,1400" fill="#064E3B" />
+        <g transform="translate(280, 660)">
+          <rect x="-220" y="-80" width="440" height="160" rx="16" fill="#047857" stroke="#10B981" strokeWidth="6" />
+          <text x="0" y="-28" textAnchor="middle" fill="#FFFFFF" fontSize="28" fontWeight="900" fontFamily="'Impact', 'Arial Black', sans-serif">
+            FALSO POSITIVO
+          </text>
+          <text x="0" y="8" textAnchor="middle" fill="#A7F3D0" fontSize="20" fontWeight="900" fontFamily="'Arial Black', sans-serif">
+            VES UN MONSTRUO EN HOJAS
+          </text>
+          <text x="0" y="44" textAnchor="middle" fill="#FEF08A" fontSize="22" fontWeight="900" fontFamily="'Impact', 'Arial Black', sans-serif">
+            COSTE = 0 ¡SIGUES VIVO!
+          </text>
+        </g>
+
+        {/* Mitad Inferior / Derecha: ROJO (Falso negativo = Muerte) */}
+        <polygon points="1080,0 1080,1920 0,1400" fill="#7F1D1D" />
+        <g transform="translate(700, 1080)">
+          <rect x="-180" y="-75" width="360" height="150" rx="16" fill="#991B1B" stroke="#EF4444" strokeWidth="6" />
+          <text x="0" y="-24" textAnchor="middle" fill="#FFFFFF" fontSize="24" fontWeight="900" fontFamily="'Impact', 'Arial Black', sans-serif">
+            FALSO NEGATIVO
+          </text>
+          <text x="0" y="8" textAnchor="middle" fill="#FECACA" fontSize="17" fontWeight="900" fontFamily="'Arial Black', sans-serif">
+            CONFUNDES DEPREDADOR
+          </text>
+          <text x="0" y="42" textAnchor="middle" fill="#FDE047" fontSize="22" fontWeight="900" fontFamily="'Impact', 'Arial Black', sans-serif">
+            COSTE = MUERTE
+          </text>
+        </g>
+
+        {/* Silueta de ojos de leopardo acechando en la zona roja */}
+        <g transform="translate(920, 840) scale(1, ${eyesBlink})">
+          <ellipse cx="-25" cy="0" rx="14" ry="9" fill="#FACC15" stroke="#000000" strokeWidth="3" />
+          <ellipse cx="25" cy="0" rx="14" ry="9" fill="#FACC15" stroke="#000000" strokeWidth="3" />
+          <line x1="-25" y1="-8" x2="-25" y2="8" stroke="#000000" strokeWidth="4" />
+          <line x1="25" y1="-8" x2="25" y2="8" stroke="#000000" strokeWidth="4" />
+        </g>
+
+        {/* Línea divisoria diagonal neo-brutalista gruesa */}
+        <line x1="0" y1="1400" x2="1080" y2="0" stroke="#000000" strokeWidth="16" />
+        <line x1="0" y1="1400" x2="1080" y2="0" stroke="#FDE047" strokeWidth="6" strokeDasharray="24 16" />
+
+        {/* Rótulo superior */}
+        <g transform="translate(540, 390)">
+          <rect x="-310" y="-55" width="620" height="110" rx="16" fill="#0F172A" stroke="#FDE047" strokeWidth="8" />
+          <text x="0" y="-10" textAnchor="middle" fill="#FFFFFF" fontSize="30" fontWeight="900" fontFamily="'Impact', 'Arial Black', sans-serif">
+            LA REGLA BRUTAL DE LA EVOLUCIÓN
+          </text>
+          <text x="0" y="32" textAnchor="middle" fill="#FEF08A" fontSize="20" fontWeight="900" fontFamily="'Impact', 'Arial Black', sans-serif">
+            MÁS VALE SER PARANOICO QUE COMIDA DE DEPREDADOR
+          </text>
+        </g>
+      </svg>
+    </div>
+  );
+};
+
+/** Escenario 4: Microcosmos anatómico del cerebro con el Área Fusiforme Facial (FFA) */
+const MicrocosmosCerebroAreaFusiforme: React.FC<{ frame: number; isPrimerPlano: boolean }> = ({ frame, isPrimerPlano }) => {
+  const f = frame;
+  const pulseFFA = (1 + Math.sin(f * 0.3) * 0.12).toFixed(2);
+  const signalY = ((f * 4) % 180);
+
+  return (
+    <div className="absolute inset-0 pointer-events-none z-0 overflow-hidden bg-[#090D16]">
+      <svg viewBox="0 0 1080 1920" className="absolute inset-0 w-full h-full" preserveAspectRatio="xMidYMid slice">
+        <rect width="1080" height="1920" fill="#090D16" />
+
+        {/* Red de neuronas y circuitos bioeléctricos de fondo */}
+        <g opacity="0.35">
+          {[0, 1, 2, 3, 4, 5].map((i) => (
+            <line key={`bline_v_${i}`} x1={i * 200 + 40} y1="0" x2={i * 200 + 40} y2="1920" stroke="#38BDF8" strokeWidth="2" strokeDasharray="14 10" />
+          ))}
+        </g>
+
+        {/* Silueta esquemática del cerebro vista de perfil */}
+        <g transform="translate(540, 780)">
+          {/* Contorno cerebral */}
+          <path
+            d="M -260,60 C -280,-80 -180,-200 0,-200 C 180,-200 280,-80 260,60 C 240,160 140,200 0,200 C -140,200 -240,160 -260,60 Z"
+            fill="#1E1B4B"
+            stroke="#6366F1"
+            strokeWidth="10"
+          />
+
+          {/* Trayectoria de señal visual desde el ojo al FFA */}
+          <path d="M -240,40 Q -140,-40 20,80" fill="none" stroke="#FDE047" strokeWidth="6" strokeDasharray="8 6" />
+
+          {/* El chip biológico del Área Fusiforme Facial (FFA) en la base temporal */}
+          <g transform={`translate(40, 90) scale(${pulseFFA})`}>
+            <circle cx="0" cy="0" r="75" fill="#4338CA" stroke="#38BDF8" strokeWidth="8" />
+            <circle cx="0" cy="0" r="50" fill="#06B6D4" opacity="0.8" />
+            <text x="0" y="-8" textAnchor="middle" fill="#FFFFFF" fontSize="24" fontWeight="900" fontFamily="'Impact', 'Arial Black', sans-serif">
+              ÁREA FFA
+            </text>
+            <text x="0" y="18" textAnchor="middle" fill="#FDE047" fontSize="16" fontWeight="900" fontFamily="'Courier New', monospace">
+              150 MS
+            </text>
+          </g>
+
+          {/* Alarma verde de detección instantánea */}
+          <g transform="translate(180, -80)">
+            <rect x="-80" y="-30" width="160" height="60" rx="10" fill="#059669" stroke="#10B981" strokeWidth="4" />
+            <text x="0" y="8" textAnchor="middle" fill="#FFFFFF" fontSize="16" fontWeight="900" fontFamily="'Impact', 'Arial Black', sans-serif">
+              ¡CARA DETECTADA!
+            </text>
+          </g>
+        </g>
+
+        {/* Rótulo superior */}
+        <g transform="translate(540, 390)">
+          <rect x="-310" y="-55" width="620" height="110" rx="16" fill="#4338CA" stroke="#000000" strokeWidth="8" />
+          <text x="0" y="-10" textAnchor="middle" fill="#FFFFFF" fontSize="30" fontWeight="900" fontFamily="'Impact', 'Arial Black', sans-serif">
+            EL ÁREA FUSIFORME FACIAL (FFA)
+          </text>
+          <text x="0" y="32" textAnchor="middle" fill="#FEF08A" fontSize="20" fontWeight="900" fontFamily="'Impact', 'Arial Black', sans-serif">
+            PROCESADOR BIOLÓGICO ULTRARRÁPIDO A 150 MS
+          </text>
+        </g>
+      </svg>
+    </div>
+  );
+};
+
+/** Escenario 5: Laboratorio de escaneo de intenciones (Amigo vs Amenaza) */
+const LaboratorioEscaneoIntenciones: React.FC<{ frame: number; isPrimerPlano: boolean }> = ({ frame, isPrimerPlano }) => {
+  const f = frame;
+  const isAngry = (Math.sin(f * 0.16) > 0);
+  const screenBg = isAngry ? "#7F1D1D" : "#064E3B";
+  const glowCol = isAngry ? "#EF4444" : "#10B981";
+
+  return (
+    <div className="absolute inset-0 pointer-events-none z-0 overflow-hidden bg-[#0F172A]">
+      <svg viewBox="0 0 1080 1920" className="absolute inset-0 w-full h-full" preserveAspectRatio="xMidYMid slice">
+        <rect width="1080" height="1920" fill="#0F172A" />
+
+        {/* Gran pantalla de escáner biométrico */}
+        <g transform="translate(540, 780)">
+          <rect x="-360" y="-220" width="720" height="440" rx="24" fill={screenBg} stroke="#000000" strokeWidth="10" />
+          <rect x="-330" y="-190" width="660" height="380" rx="16" fill="#020617" stroke={glowCol} strokeWidth="5" />
+
+          {/* Rostro geométrico paramétrico proyectado */}
+          <g transform="translate(0, -20)">
+            {/* Ojos mínimos */}
+            <circle cx="-60" cy="-30" r="14" fill={glowCol} />
+            <circle cx="60" cy="-30" r="14" fill={glowCol} />
+
+            {isAngry ? (
+              <g stroke={glowCol} strokeWidth="8" strokeLinecap="round">
+                {/* Ceño fruncido amenazante */}
+                <line x1="-90" y1="-60" x2="-30" y2="-40" />
+                <line x1="90" y1="-60" x2="30" y2="-40" />
+                {/* Boca hostil curvada hacia abajo */}
+                <path d="M -70,50 Q 0,10 70,50" fill="none" />
+              </g>
+            ) : (
+              <g stroke={glowCol} strokeWidth="8" strokeLinecap="round">
+                {/* Cejas sonrientes amables */}
+                <path d="M -80,-55 Q -60,-65 -40,-55" fill="none" />
+                <path d="M 40,-55 Q 60,-65 80,-55" fill="none" />
+                {/* Boca sonriente amplia */}
+                <path d="M -70,30 Q 0,80 70,30" fill="none" />
+              </g>
+            )}
+          </g>
+
+          {/* Veredicto de milisegundos en pantalla */}
+          <rect x="-200" y="110" width="400" height="60" rx="10" fill={glowCol} stroke="#000000" strokeWidth="4" />
+          <text x="0" y="148" textAnchor="middle" fill="#FFFFFF" fontSize="24" fontWeight="900" fontFamily="'Impact', 'Arial Black', sans-serif">
+            {isAngry ? "¡AMENAZA DETECTADA!" : "AMIGO Y CONFIABLE"}
+          </text>
+        </g>
+
+        {/* Rótulo superior */}
+        <g transform="translate(540, 390)">
+          <rect x="-310" y="-55" width="620" height="110" rx="16" fill="#334155" stroke="#000000" strokeWidth="8" />
+          <text x="0" y="-10" textAnchor="middle" fill="#FFFFFF" fontSize="30" fontWeight="900" fontFamily="'Impact', 'Arial Black', sans-serif">
+            DESCIFRANDO INTENCIONES SOCIALES
+          </text>
+          <text x="0" y="32" textAnchor="middle" fill="#FEF08A" fontSize="20" fontWeight="900" fontFamily="'Impact', 'Arial Black', sans-serif">
+            ¿ESTÁ ENOJADO? ¿PUEDO CONFIAR EN ÉL?
+          </text>
+        </g>
+      </svg>
+    </div>
+  );
+};
+
+/** Escenario 6: Calle moderna con fachada de casa sorprendida y humanización */
+const CalleUrbanaHumanizacion: React.FC<{ frame: number; isPrimerPlano: boolean }> = ({ frame, isPrimerPlano }) => {
+  const f = frame;
+  const sunPulse = (1 + Math.sin(f * 0.2) * 0.08).toFixed(2);
+
+  return (
+    <div className="absolute inset-0 pointer-events-none z-0 overflow-hidden bg-[#BAE6FD]">
+      <svg viewBox="0 0 1080 1920" className="absolute inset-0 w-full h-full" preserveAspectRatio="xMidYMid slice">
+        {/* Cielo azul limpio */}
+        <rect width="1080" height="1920" fill="#BAE6FD" />
+        <circle cx="920" cy="220" r="80" fill="#FDE047" transform={`scale(${sunPulse})`} />
+
+        {/* Fachada de la casa de dos pisos con cara pareidólica de sorpresa */}
+        <g transform="translate(200, 760)">
+          {/* Techo a dos aguas */}
+          <polygon points="-180,-140 0,-240 180,-140" fill="#DC2626" stroke="#000000" strokeWidth="8" />
+          {/* Pared frontal de la casa */}
+          <rect x="-160" y="-140" width="320" height="340" rx="8" fill="#F8FAFC" stroke="#000000" strokeWidth="8" />
+
+          {/* Dos ventanas cuadradas superiores (ojos muy abiertos) */}
+          <rect x="-110" y="-80" width="70" height="70" rx="6" fill="#38BDF8" stroke="#000000" strokeWidth="6" />
+          <line x1="-75" y1="-80" x2="-75" y2="-10" stroke="#000000" strokeWidth="4" />
+          <line x1="-110" y1="-45" x2="-40" y2="-45" stroke="#000000" strokeWidth="4" />
+
+          <rect x="40" y="-80" width="70" height="70" rx="6" fill="#38BDF8" stroke="#000000" strokeWidth="6" />
+          <line x1="75" y1="-80" x2="75" y2="-10" stroke="#000000" strokeWidth="4" />
+          <line x1="40" y1="-45" x2="110" y2="-45" stroke="#000000" strokeWidth="4" />
+
+          {/* Puerta abierta inferior centrada (boca abierta de asombro 'O') */}
+          <rect x="-35" y="60" width="70" height="140" rx="8" fill="#451A03" stroke="#000000" strokeWidth="6" />
+          <ellipse cx="0" cy="110" rx="20" ry="28" fill="#000000" />
+        </g>
+
+        {/* Coche estacionado a la derecha con faros amigables */}
+        <g transform="translate(820, 920)">
+          <rect x="-140" y="-50" width="280" height="140" rx="20" fill="#3B82F6" stroke="#000000" strokeWidth="7" />
+          {/* Faros redondos amigables */}
+          <circle cx="-90" cy="-10" r="22" fill="#FEF08A" stroke="#000000" strokeWidth="4" />
+          <circle cx="90" cy="-10" r="22" fill="#FEF08A" stroke="#000000" strokeWidth="4" />
+          {/* Parrilla sonriente */}
+          <path d="M -50,40 Q 0,70 50,40" fill="none" stroke="#000000" strokeWidth="5" strokeLinecap="round" />
+        </g>
+
+        {/* Acera y calle */}
+        <rect y="1280" width="1080" height="640" fill="#64748B" stroke="#000000" strokeWidth="10" />
+        <rect y="1240" width="1080" height="40" fill="#94A3B8" stroke="#000000" strokeWidth="6" />
+
+        {/* Rótulo superior */}
+        <g transform="translate(540, 390)">
+          <rect x="-310" y="-55" width="620" height="110" rx="16" fill="#2563EB" stroke="#000000" strokeWidth="8" />
+          <text x="0" y="-10" textAnchor="middle" fill="#FFFFFF" fontSize="30" fontWeight="900" fontFamily="'Impact', 'Arial Black', sans-serif">
+            HUMANIZACIÓN TECNOLÓGICA
+          </text>
+          <text x="0" y="32" textAnchor="middle" fill="#FEF08A" fontSize="20" fontWeight="900" fontFamily="'Impact', 'Arial Black', sans-serif">
+            LE HABLAS AL AUTO Y VES OJOS EN LA CASA
+          </text>
+        </g>
+      </svg>
+    </div>
+  );
+};
+
+/** Escenario 7: Cafetería cálida con taza sonriente y cierre de evolución */
+const CafeteriaTazaSonrienteCierre: React.FC<{ frame: number; isPrimerPlano: boolean }> = ({ frame, isPrimerPlano }) => {
+  const f = frame;
+  const steamBob = ((f * 1.4) % 30);
+
+  return (
+    <div className="absolute inset-0 pointer-events-none z-0 overflow-hidden bg-[#FEF3C7]">
+      <svg viewBox="0 0 1080 1920" className="absolute inset-0 w-full h-full" preserveAspectRatio="xMidYMid slice">
+        <defs>
+          <linearGradient id="cafeMorningBg" x1="0" y1="0" x2="0" y2="1">
+            <stop offset="0%" stopColor="#FEF3C7" />
+            <stop offset="50%" stopColor="#FDE68A" />
+            <stop offset="100%" stopColor="#D97706" />
+          </linearGradient>
+        </defs>
+
+        <rect width="1080" height="1920" fill="url(#cafeMorningBg)" />
+
+        {/* Ventana de cafetería con luz suave */}
+        <g transform="translate(540, 680)">
+          <rect x="-240" y="-180" width="480" height="320" rx="16" fill="#BAE6FD" stroke="#000000" strokeWidth="8" />
+          <line x1="0" y1="-180" x2="0" y2="140" stroke="#000000" strokeWidth="6" />
+          <line x1="-240" y1="-20" x2="240" y2="-20" stroke="#000000" strokeWidth="6" />
+        </g>
+
+        {/* Barra de cafetería de madera cálida */}
+        <rect y="1280" width="1080" height="640" fill="#78350F" stroke="#000000" strokeWidth="10" />
+        <rect y="1280" width="1080" height="40" fill="#B45309" stroke="#000000" strokeWidth="6" />
+
+        {/* Rótulo de cierre */}
+        <g transform="translate(540, 390)">
+          <rect x="-310" y="-55" width="620" height="110" rx="16" fill="#B45309" stroke="#000000" strokeWidth="8" />
+          <text x="0" y="-10" textAnchor="middle" fill="#FFFFFF" fontSize="30" fontWeight="900" fontFamily="'Impact', 'Arial Black', sans-serif">
+            MILLONES DE AÑOS DE EVOLUCIÓN
+          </text>
+          <text x="0" y="32" textAnchor="middle" fill="#FEF08A" fontSize="20" fontWeight="900" fontFamily="'Impact', 'Arial Black', sans-serif">
+            TU CEREBRO PREFIERE PREVENIR QUE LAMENTAR
+          </text>
+        </g>
+      </svg>
+    </div>
+  );
+};
+
 export const NarrativeStage: React.FC<NarrativeStageProps> = ({
   escenario = "vacio",
   composicionVisual = "minimalista",
   frame,
 }) => {
   const isPrimerPlano = composicionVisual === "primer_plano";
+
+  if (escenario === "habitacion_objetos_pareidolia") {
+    return <HabitacionObjetosPareidolia frame={frame} isPrimerPlano={isPrimerPlano} />;
+  }
+  if (escenario === "sabana_africana_crepusculo") {
+    return <SabanaAfricanaCrepusculo frame={frame} isPrimerPlano={isPrimerPlano} />;
+  }
+  if (escenario === "pantalla_dividida_asimetria_error") {
+    return <PantallaDivididaAsimetriaError frame={frame} isPrimerPlano={isPrimerPlano} />;
+  }
+  if (escenario === "microcosmos_cerebro_area_fusiforme") {
+    return <MicrocosmosCerebroAreaFusiforme frame={frame} isPrimerPlano={isPrimerPlano} />;
+  }
+  if (escenario === "laboratorio_escaneo_intenciones") {
+    return <LaboratorioEscaneoIntenciones frame={frame} isPrimerPlano={isPrimerPlano} />;
+  }
+  if (escenario === "calle_urbana_humanizacion") {
+    return <CalleUrbanaHumanizacion frame={frame} isPrimerPlano={isPrimerPlano} />;
+  }
+  if (escenario === "cafeteria_taza_sonriente_cierre") {
+    return <CafeteriaTazaSonrienteCierre frame={frame} isPrimerPlano={isPrimerPlano} />;
+  }
+
+  if (escenario === "espacio_agujero_negro_hawking") {
+    return <EspacioAgujeroNegroHawking frame={frame} isPrimerPlano={isPrimerPlano} />;
+  }
+  if (escenario === "horizonte_cuantico_evaporacion") {
+    return <HorizonteCuanticoEvaporacion frame={frame} isPrimerPlano={isPrimerPlano} />;
+  }
+  if (escenario === "laboratorio_cosmico_quema_libro") {
+    return <LaboratorioCosmicoQuemaLibro frame={frame} isPrimerPlano={isPrimerPlano} />;
+  }
+  if (escenario === "laboratorio_reconstruccion_cuantica") {
+    return <LaboratorioReconstruccionCuantica frame={frame} isPrimerPlano={isPrimerPlano} />;
+  }
+  if (escenario === "espacio_glitch_realidad_rota") {
+    return <EspacioGlitchRealidadRota frame={frame} isPrimerPlano={isPrimerPlano} />;
+  }
+  if (escenario === "superficie_holografica_agujero") {
+    return <SuperficieHolograficaAgujero frame={frame} isPrimerPlano={isPrimerPlano} />;
+  }
+  if (escenario === "cosmos_radiacion_informada_paz") {
+    return <CosmosRadiacionInformadaPaz frame={frame} isPrimerPlano={isPrimerPlano} />;
+  }
+
+  if (escenario === "calle_choque_juguete") {
+    return <CalleChoqueJuguete frame={frame} isPrimerPlano={isPrimerPlano} />;
+  }
+  if (escenario === "archivo_memorias_futurista") {
+    return <ArchivoMemoriasFuturista frame={frame} isPrimerPlano={isPrimerPlano} />;
+  }
+  if (escenario === "escritorio_hipocampo_reconsolidacion") {
+    return <EscritorioHipocampoReconsolidacion frame={frame} isPrimerPlano={isPrimerPlano} />;
+  }
+  if (escenario === "sala_tribunal_loftus") {
+    return <SalaTribunalLoftus frame={frame} isPrimerPlano={isPrimerPlano} />;
+  }
+  if (escenario === "diagrama_velocimetro_loftus") {
+    return <DiagramaVelocimetroLoftus frame={frame} isPrimerPlano={isPrimerPlano} />;
+  }
+  if (escenario === "mesa_rompecabezas_confabulacion") {
+    return <MesaRompecabezasConfabulacion frame={frame} isPrimerPlano={isPrimerPlano} />;
+  }
+  if (escenario === "sala_estar_album_memoria") {
+    return <SalaEstarAlbumMemoria frame={frame} isPrimerPlano={isPrimerPlano} />;
+  }
 
   if (escenario === "modulo_iss_gravedad_cero") {
     return <ModuloIssGravedadCero frame={frame} isPrimerPlano={isPrimerPlano} />;
@@ -8127,6 +9856,10235 @@ export const NarrativeStage: React.FC<NarrativeStageProps> = ({
     );
   }
 
+  // ==========================================
+  // ESCENARIOS: EL IDIOMA QUE BORRÓ LOS NÚMEROS (PIRAHÃ / ANS)
+  // ==========================================
+
+  // 1. ESTUDIO CONTEO ANUMÉRICO (Estudio minimalista, números 1, 2, 3 neón y 4, 5, 6 disolviéndose en estática y ceniza roja)
+  if (escenario === "estudio_conteo_anumerico") {
+    const glitchShake = (frame % 8 < 4 ? 4 : -4) * (frame > 30 ? 1 : 0.2);
+    const ashDrift = (frame * 3) % 180;
+    return (
+      <div className="absolute inset-0 pointer-events-none z-0 overflow-hidden bg-[#0B0F19]">
+        <svg className="absolute inset-0 w-full h-full" viewBox="0 0 1080 1920" preserveAspectRatio="xMidYMid slice">
+          <defs>
+            <linearGradient id="estudioFondoGrad" x1="0" y1="0" x2="0" y2="1">
+              <stop offset="0%" stopColor="#0B0F19" />
+              <stop offset="60%" stopColor="#1E1B4B" />
+              <stop offset="100%" stopColor="#030712" />
+            </linearGradient>
+            <radialGradient id="glitchAura">
+              <stop offset="0%" stopColor="#EF4444" stopOpacity="0.4" />
+              <stop offset="100%" stopColor="#0B0F19" stopOpacity="0" />
+            </radialGradient>
+          </defs>
+
+          <rect width="1080" height="1920" fill="url(#estudioFondoGrad)" />
+
+          {/* Foco de luz cenital minimalista sobre la mesa */}
+          <polygon points="340,0 740,0 960,1920 120,1920" fill="#FFFFFF" opacity="0.04" />
+
+          {/* Halo de estática roja en zona de números superiores */}
+          <circle cx="760" cy="540" r="320" fill="url(#glitchAura)" />
+
+          {/* Números 1, 2, 3 estables y brillantes en azul cian */}
+          <g transform="translate(180, 480)">
+            {/* Dígito 1 */}
+            <g transform="translate(0, 0)">
+              <rect x="-10" y="-70" width="70" height="90" rx="14" fill="#0284C7" stroke="#38BDF8" strokeWidth="4" />
+              <text x="14" y="-8" fill="#F0F9FF" fontSize="64" fontWeight="900" fontFamily="'Arial Black', sans-serif">1</text>
+            </g>
+            {/* Dígito 2 */}
+            <g transform="translate(90, 0)">
+              <rect x="-10" y="-70" width="70" height="90" rx="14" fill="#0284C7" stroke="#38BDF8" strokeWidth="4" />
+              <text x="12" y="-8" fill="#F0F9FF" fontSize="64" fontWeight="900" fontFamily="'Arial Black', sans-serif">2</text>
+            </g>
+            {/* Dígito 3 */}
+            <g transform="translate(180, 0)">
+              <rect x="-10" y="-70" width="70" height="90" rx="14" fill="#0284C7" stroke="#38BDF8" strokeWidth="4" />
+              <text x="12" y="-8" fill="#F0F9FF" fontSize="64" fontWeight="900" fontFamily="'Arial Black', sans-serif">3</text>
+            </g>
+          </g>
+
+          {/* Números 4, 5, 6 agrietándose y disolviéndose en estática y cenizas */}
+          <g transform={`translate(${520 + glitchShake}, 480)`}>
+            {/* Dígito 4 con corte de estática */}
+            <g transform="translate(0, 0)">
+              <rect x="-10" y="-70" width="70" height="90" rx="14" fill="#7F1D1D" stroke="#EF4444" strokeWidth="4" strokeDasharray="12 6" />
+              <text x="12" y="-8" fill="#F87171" fontSize="64" fontWeight="900" fontFamily="'Arial Black', sans-serif">4</text>
+              <line x1="-15" y1="-25" x2="65" y2="-25" stroke="#FFFFFF" strokeWidth="4" />
+            </g>
+            {/* Dígito 5 fragmentado */}
+            <g transform="translate(90, 0)" opacity="0.65">
+              <rect x="-10" y="-70" width="70" height="90" rx="14" fill="#450A0A" stroke="#DC2626" strokeWidth="3" />
+              <text x="12" y="-8" fill="#FCA5A5" fontSize="64" fontWeight="900" fontFamily="'Arial Black', sans-serif">5</text>
+              <line x1="-5" y1="-50" x2="60" y2="0" stroke="#000000" strokeWidth="5" />
+            </g>
+            {/* Dígito 6 casi pulverizado */}
+            <g transform="translate(180, 0)" opacity="0.4">
+              <rect x="-10" y="-70" width="70" height="90" rx="14" fill="#1C0404" stroke="#B91C1C" strokeWidth="2" strokeDasharray="6 6" />
+              <text x="12" y="-8" fill="#EF4444" fontSize="64" fontWeight="900" fontFamily="'Arial Black', sans-serif">6</text>
+            </g>
+
+            {/* Partículas de ceniza roja flotando hacia arriba */}
+            {[20, 80, 140, 200, 260].map((px, idx) => (
+              <circle
+                key={idx}
+                cx={px}
+                cy={-40 - (ashDrift + idx * 30) % 180}
+                r={3 + (idx % 3)}
+                fill="#F87171"
+                opacity={0.8 - ((ashDrift + idx * 30) % 180) / 220}
+              />
+            ))}
+          </g>
+
+          {/* Mesa de conteo minimalista en el suelo */}
+          <polygon points="-50,1420 1130,1420 1130,1920 -50,1920" fill="#1E293B" stroke="#000000" strokeWidth="8" />
+          <rect x="140" y="1390" width="800" height="30" rx="8" fill="#334155" stroke="#000000" strokeWidth="6" />
+
+          {/* Rótulo superior */}
+          <g transform="translate(80, 160)">
+            <rect x="0" y="0" width="620" height="74" rx="14" fill="#020617" stroke="#EF4444" strokeWidth="5" />
+            <text x="24" y="47" fill="#FCA5A5" fontSize="24" fontWeight="900" fontFamily="'Arial Black', sans-serif">
+              ANOMALÍA: EL CONTEO SE ROMPE EN 3
+            </text>
+          </g>
+        </svg>
+      </div>
+    );
+  }
+
+  // 2. RIBERA AMAZÓNICA PIRAHÃ (Vegetación densa tropical, río a contraluz, canastas y etiquetas Hói / Hoí)
+  if (escenario === "ribera_amazonica_piraha") {
+    const riverWave = Math.sin(frame / 8) * 12;
+    return (
+      <div className="absolute inset-0 pointer-events-none z-0 overflow-hidden bg-[#064E3B]">
+        <svg className="absolute inset-0 w-full h-full" viewBox="0 0 1080 1920" preserveAspectRatio="xMidYMid slice">
+          <defs>
+            <linearGradient id="cieloAmazonas" x1="0" y1="0" x2="0" y2="1">
+              <stop offset="0%" stopColor="#065F46" />
+              <stop offset="40%" stopColor="#047857" />
+              <stop offset="70%" stopColor="#0284C7" />
+              <stop offset="100%" stopColor="#0C4A6E" />
+            </linearGradient>
+            <linearGradient id="rioReflejo" x1="0" y1="0" x2="1" y2="0">
+              <stop offset="0%" stopColor="#0369A1" />
+              <stop offset="50%" stopColor="#38BDF8" />
+              <stop offset="100%" stopColor="#0284C7" />
+            </linearGradient>
+          </defs>
+
+          <rect width="1080" height="1920" fill="url(#cieloAmazonas)" />
+
+          {/* Siluetas de árboles y lianas del Amazonas en capas */}
+          {/* Fondo lejano */}
+          <path d="M 0,520 Q 200,420 400,500 T 800,440 T 1080,480 L 1080,1100 L 0,1100 Z" fill="#064E3B" opacity="0.7" />
+          {/* Frondosidad media */}
+          <path d="M 0,620 Q 250,560 500,640 T 1000,580 L 1080,1200 L 0,1200 Z" fill="#047857" opacity="0.85" />
+
+          {/* Río Amazonas con reflejos ondulantes */}
+          <rect x="0" y="880" width="1080" height="540" fill="url(#rioReflejo)" opacity="0.8" />
+          <path
+            d={`M -50,960 Q 270,${940 + riverWave} 540,960 T 1130,${950 - riverWave}`}
+            fill="none"
+            stroke="#BAE6FD"
+            strokeWidth="10"
+            opacity="0.6"
+          />
+          <path
+            d={`M -50,1080 Q 320,${1060 - riverWave} 680,1080 T 1130,${1070 + riverWave}`}
+            fill="none"
+            stroke="#E0F2FE"
+            strokeWidth="8"
+            opacity="0.5"
+          />
+
+          {/* Orilla arenosa y vegetación baja */}
+          <polygon points="-50,1360 1130,1360 1130,1920 -50,1920" fill="#78350F" stroke="#000000" strokeWidth="8" />
+          {/* Vegetación de ribera */}
+          <polygon points="40,1360 80,1260 120,1360" fill="#15803D" stroke="#000000" strokeWidth="4" />
+          <polygon points="100,1360 150,1220 200,1360" fill="#166534" stroke="#000000" strokeWidth="4" />
+          <polygon points="880,1360 930,1240 980,1360" fill="#15803D" stroke="#000000" strokeWidth="4" />
+          <polygon points="950,1360 1000,1270 1040,1360" fill="#166534" stroke="#000000" strokeWidth="4" />
+
+          {/* Rótulos lingüísticos flotantes: HÓI (poco) vs HOÍ (mucho) */}
+          <g transform="translate(180, 680)">
+            <rect x="0" y="0" width="280" height="110" rx="16" fill="#020617" stroke="#22C55E" strokeWidth="5" />
+            <text x="30" y="52" fill="#4ADE80" fontSize="38" fontWeight="900" fontFamily="'Arial Black', sans-serif">HÓI</text>
+            <text x="30" y="88" fill="#F8FAFC" fontSize="18" fontWeight="800" fontFamily="'Arial Black', sans-serif">CANTIDAD PEQUEÑA (POCOS)</text>
+          </g>
+
+          <g transform="translate(620, 680)">
+            <rect x="0" y="0" width="280" height="110" rx="16" fill="#020617" stroke="#F59E0B" strokeWidth="5" />
+            <text x="30" y="52" fill="#FBBF24" fontSize="38" fontWeight="900" fontFamily="'Arial Black', sans-serif">HOÍ</text>
+            <text x="30" y="88" fill="#F8FAFC" fontSize="18" fontWeight="800" fontFamily="'Arial Black', sans-serif">CANTIDAD MAYOR (MUCHOS)</text>
+          </g>
+
+          {/* Rótulo superior */}
+          <g transform="translate(80, 160)">
+            <rect x="0" y="0" width="600" height="74" rx="14" fill="#020617" stroke="#22C55E" strokeWidth="5" />
+            <text x="24" y="47" fill="#4ADE80" fontSize="24" fontWeight="900" fontFamily="'Arial Black', sans-serif">
+              PUEBLO PIRAHÃ: SELVA DEL AMAZONAS
+            </text>
+          </g>
+        </svg>
+      </div>
+    );
+  }
+
+  // 3. LABORATORIO CAMPO FICHAS GRID (Experimento empírico de correspondencia uno a uno con cuadrícula y cotejo)
+  if (escenario === "laboratorio_campo_fichas_grid") {
+    return (
+      <div className="absolute inset-0 pointer-events-none z-0 overflow-hidden bg-[#0F172A]">
+        <svg className="absolute inset-0 w-full h-full" viewBox="0 0 1080 1920" preserveAspectRatio="xMidYMid slice">
+          <defs>
+            <linearGradient id="labMesaFondo" x1="0" y1="0" x2="0" y2="1">
+              <stop offset="0%" stopColor="#1E293B" />
+              <stop offset="100%" stopColor="#0F172A" />
+            </linearGradient>
+          </defs>
+
+          <rect width="1080" height="1920" fill="url(#labMesaFondo)" />
+
+          {/* Cuadrícula de precisión de laboratorio de campo */}
+          <g stroke="#334155" strokeWidth="2" opacity="0.4">
+            {[200, 400, 600, 800, 1000, 1200, 1400].map((y, idx) => (
+              <line key={idx} x1="0" y1={y} x2="1080" y2={y} />
+            ))}
+            {[180, 360, 540, 720, 900].map((x, idx) => (
+              <line key={idx} x1={x} y1="0" x2={x} y2="1920" />
+            ))}
+          </g>
+
+          {/* MESA DE EXPERIMENTO DIVIDIDA */}
+          <g transform="translate(100, 440)">
+            <rect x="0" y="0" width="880" height="880" rx="24" fill="#020617" stroke="#38BDF8" strokeWidth="6" />
+
+            {/* SECCIÓN SUPERIOR: FILA DEL INVESTIGADOR (7 FICHAS) */}
+            <text x="40" y="60" fill="#38BDF8" fontSize="24" fontWeight="900" fontFamily="'Arial Black', sans-serif">
+              FILA MUESTRA (INVESTIGADOR: 7 FICHAS)
+            </text>
+            {[0, 1, 2, 3, 4, 5, 6].map((i) => (
+              <g key={i} transform={`translate(${60 + i * 110}, 120)`}>
+                <rect x="0" y="0" width="80" height="120" rx="16" fill="#D97706" stroke="#000000" strokeWidth="4" />
+                <ellipse cx="40" cy="30" rx="30" ry="14" fill="#FBBF24" />
+                <circle cx="40" cy="80" r="14" fill="#B45309" />
+              </g>
+            ))}
+
+            {/* LÍNEA DIVISORIA CENTRAL CON FLECHAS */}
+            <line x1="40" y1="360" x2="840" y2="360" stroke="#F59E0B" strokeWidth="5" strokeDasharray="14 10" />
+            <text x="320" y="350" fill="#FBBF24" fontSize="20" fontWeight="900" fontFamily="'Arial Black', sans-serif">
+              RÉPLICA UNO A UNO
+            </text>
+
+            {/* SECCIÓN INFERIOR: RESPUESTA HABLANTE ANUMÉRICO (COLOCA 8 O 6 CON ERROR) */}
+            <text x="40" y="440" fill="#EF4444" fontSize="24" fontWeight="900" fontFamily="'Arial Black', sans-serif">
+              RÉPLICA DEL PARTICIPANTE (COLOCA 8 FICHAS — ERROR ASOCIATIVO)
+            </text>
+            {[0, 1, 2, 3, 4, 5, 6, 7].map((i) => (
+              <g key={i} transform={`translate(${50 + i * 98}, 500)`}>
+                <rect x="0" y="0" width="75" height="120" rx="16" fill="#0284C7" stroke="#000000" strokeWidth="4" />
+                <ellipse cx="37" cy="30" rx="28" ry="14" fill="#38BDF8" />
+                <circle cx="37" cy="80" r="14" fill="#0369A1" />
+              </g>
+            ))}
+
+            {/* MARCADORES DE COTEJO */}
+            <g transform="translate(50, 720)">
+              <rect x="0" y="0" width="360" height="80" rx="12" fill="#0F172A" stroke="#22C55E" strokeWidth="4" />
+              <text x="24" y="48" fill="#4ADE80" fontSize="22" fontWeight="900" fontFamily="'Arial Black', sans-serif">
+                1, 2, 3 FICHAS: 100% ACIERTO ✓
+              </text>
+            </g>
+
+            <g transform="translate(470, 720)">
+              <rect x="0" y="0" width="360" height="80" rx="12" fill="#0F172A" stroke="#EF4444" strokeWidth="4" />
+              <text x="24" y="48" fill="#F87171" fontSize="22" fontWeight="900" fontFamily="'Arial Black', sans-serif">
+                &gt; 4 FICHAS: ERROR FRECUENTE ?
+              </text>
+            </g>
+          </g>
+
+          {/* Suelo del laboratorio de campo */}
+          <polygon points="-50,1460 1130,1460 1130,1920 -50,1920" fill="#020617" stroke="#000000" strokeWidth="8" />
+
+          {/* Rótulo superior */}
+          <g transform="translate(80, 160)">
+            <rect x="0" y="0" width="600" height="74" rx="14" fill="#020617" stroke="#38BDF8" strokeWidth="5" />
+            <text x="24" y="47" fill="#38BDF8" fontSize="24" fontWeight="900" fontFamily="'Arial Black', sans-serif">
+              EXPERIMENTO DE CORRESPONDENCIA
+            </text>
+          </g>
+        </svg>
+      </div>
+    );
+  }
+
+  // 4. MICROCOSMOS CEREBRAL MEMORIA (Vista de circuitos neuronales, caja fuerte de memoria y número 7 en nube disipándose)
+  if (escenario === "microcosmos_cerebral_memoria") {
+    const pulseLight = Math.sin(frame / 6) * 10;
+    const cloudVapor = Math.sin(frame / 10) * 16;
+    return (
+      <div className="absolute inset-0 pointer-events-none z-0 overflow-hidden bg-[#030712]">
+        <svg className="absolute inset-0 w-full h-full" viewBox="0 0 1080 1920" preserveAspectRatio="xMidYMid slice">
+          <defs>
+            <linearGradient id="cerebroGrad" x1="0" y1="0" x2="0" y2="1">
+              <stop offset="0%" stopColor="#0B132B" />
+              <stop offset="60%" stopColor="#1E1B4B" />
+              <stop offset="100%" stopColor="#020617" />
+            </linearGradient>
+            <radialGradient id="safeGlow">
+              <stop offset="0%" stopColor="#A855F7" stopOpacity="0.4" />
+              <stop offset="100%" stopColor="#030712" stopOpacity="0" />
+            </radialGradient>
+          </defs>
+
+          <rect width="1080" height="1920" fill="url(#cerebroGrad)" />
+
+          {/* Redes neuronales de fondo con pulsos */}
+          <g stroke="#38BDF8" strokeWidth="3" opacity="0.4" fill="none">
+            <path d="M 120,400 Q 280,300 440,480 T 800,420 T 980,560" />
+            <path d="M 160,800 Q 320,680 500,820 T 840,760 T 1000,900" />
+            <path d="M 100,1200 Q 300,1050 520,1240 T 900,1180" />
+          </g>
+          {/* Nodos sinápticos pulsantes */}
+          {[
+            [280, 300],
+            [440, 480],
+            [800, 420],
+            [320, 680],
+            [500, 820],
+            [840, 760],
+          ].map(([nx, ny], idx) => (
+            <circle key={idx} cx={nx} cy={ny} r={8 + (idx % 2) * pulseLight * 0.3} fill="#C084FC" />
+          ))}
+
+          {/* Silueta translúcida estilizada de cráneo/cerebro */}
+          <path
+            d="M 240,420 C 240,240 840,240 840,420 C 880,560 880,800 800,940 C 720,1080 620,1200 540,1240 C 460,1200 360,1080 280,940 C 200,800 200,560 240,420 Z"
+            fill="#1E1B4B"
+            stroke="#6366F1"
+            strokeWidth="6"
+            opacity="0.5"
+          />
+
+          {/* CAJA FUERTE CENTRAL: "MEMORIA DE TRABAJO" */}
+          <circle cx="540" cy="800" r="260" fill="url(#safeGlow)" />
+          <g transform="translate(360, 660)">
+            <rect x="0" y="0" width="360" height="320" rx="24" fill="#0F172A" stroke="#A855F7" strokeWidth="8" />
+            <rect x="25" y="25" width="310" height="270" rx="16" fill="#1E1B4B" stroke="#000000" strokeWidth="4" />
+            {/* Puerta abierta de la caja fuerte */}
+            <line x1="25" y1="25" x2="-80" y2="80" stroke="#C084FC" strokeWidth="8" strokeLinecap="round" />
+            <line x1="25" y1="295" x2="-80" y2="350" stroke="#C084FC" strokeWidth="8" strokeLinecap="round" />
+            <polygon points="25,25 -80,80 -80,350 25,295" fill="#3B0764" stroke="#C084FC" strokeWidth="5" opacity="0.8" />
+
+            <text x="45" y="70" fill="#E9D5FF" fontSize="20" fontWeight="900" fontFamily="'Arial Black', sans-serif">
+              MEMORIA DE TRABAJO
+            </text>
+            <text x="45" y="100" fill="#F472B6" fontSize="16" fontWeight="800" fontFamily="'Arial Black', sans-serif">
+              SIN ETIQUETA SIMBÓLICA
+            </text>
+          </g>
+
+          {/* CONCEPTO "7" DEFORMÁNDOSE EN NUBE BORROSA QUE SE ESCURRE */}
+          <g transform={`translate(${560 + cloudVapor}, ${720})`}>
+            {/* Nube abstracta de vapor rosa/cian */}
+            <ellipse cx="60" cy="40" rx="90" ry="50" fill="#FB7185" opacity="0.6" />
+            <ellipse cx="110" cy="20" rx="70" ry="40" fill="#F43F5E" opacity="0.5" />
+            <ellipse cx="20" cy="60" rx="80" ry="45" fill="#FDA4AF" opacity="0.5" />
+
+            {/* Número 7 difuso desarmándose en trazos sueltos */}
+            <path d="M 30,10 L 90,10 L 50,80" fill="none" stroke="#FFFFFF" strokeWidth="8" strokeLinecap="round" strokeDasharray="8 8" opacity="0.85" />
+            <text x="120" y="55" fill="#FFE4E6" fontSize="22" fontWeight="900" fontFamily="'Arial Black', sans-serif">
+              ¿¿??
+            </text>
+          </g>
+
+          {/* Rótulo superior */}
+          <g transform="translate(80, 160)">
+            <rect x="0" y="0" width="600" height="74" rx="14" fill="#020617" stroke="#A855F7" strokeWidth="5" />
+            <text x="24" y="47" fill="#C084FC" fontSize="24" fontWeight="900" fontFamily="'Arial Black', sans-serif">
+              EL CEREBRO SIN ETIQUETAS EXACTAS
+            </text>
+          </g>
+        </svg>
+      </div>
+    );
+  }
+
+  // 5. PEDESTALES ANS COMPARATIVO (Chimpancé, Paloma y Bebé con bandejas de moras y discriminación ANS)
+  if (escenario === "pedestales_ans_comparativo") {
+    const berryPulse = Math.sin(frame / 6) * 4;
+    return (
+      <div className="absolute inset-0 pointer-events-none z-0 overflow-hidden bg-[#0F172A]">
+        <svg className="absolute inset-0 w-full h-full" viewBox="0 0 1080 1920" preserveAspectRatio="xMidYMid slice">
+          <defs>
+            <linearGradient id="ansFondoGrad" x1="0" y1="0" x2="0" y2="1">
+              <stop offset="0%" stopColor="#1E293B" />
+              <stop offset="60%" stopColor="#0F172A" />
+              <stop offset="100%" stopColor="#020617" />
+            </linearGradient>
+            <linearGradient id="pedestalMetal" x1="0" y1="0" x2="1" y2="0">
+              <stop offset="0%" stopColor="#475569" />
+              <stop offset="50%" stopColor="#64748B" />
+              <stop offset="100%" stopColor="#334155" />
+            </linearGradient>
+          </defs>
+
+          <rect width="1080" height="1920" fill="url(#ansFondoGrad)" />
+
+          {/* ILUMINACIÓN CENITAL SOBRE LOS TRES PEDESTALES */}
+          <polygon points="180,0 260,0 320,1400 120,1400" fill="#FEF08A" opacity="0.06" />
+          <polygon points="500,0 580,0 640,1400 440,1400" fill="#FEF08A" opacity="0.06" />
+          <polygon points="820,0 900,0 960,1400 760,1400" fill="#FEF08A" opacity="0.06" />
+
+          {/* TRES PEDESTALES PARALELOS */}
+          {/* Pedestal 1: Chimpancé */}
+          <g transform="translate(120, 840)">
+            <rect x="0" y="240" width="220" height="380" rx="16" fill="url(#pedestalMetal)" stroke="#000000" strokeWidth="6" />
+            <ellipse cx="110" cy="240" rx="120" ry="30" fill="#94A3B8" stroke="#000000" strokeWidth="5" />
+            {/* Silueta Chimpancé */}
+            <circle cx="110" cy="120" r="42" fill="#78350F" stroke="#000000" strokeWidth="4" />
+            <circle cx="78" cy="110" r="16" fill="#78350F" stroke="#000000" strokeWidth="3" />
+            <circle cx="142" cy="110" r="16" fill="#78350F" stroke="#000000" strokeWidth="3" />
+            <text x="45" y="340" fill="#F8FAFC" fontSize="22" fontWeight="900" fontFamily="'Arial Black', sans-serif">
+              CHIMPANCÉ
+            </text>
+          </g>
+
+          {/* Pedestal 2: Paloma */}
+          <g transform="translate(430, 840)">
+            <rect x="0" y="240" width="220" height="380" rx="16" fill="url(#pedestalMetal)" stroke="#000000" strokeWidth="6" />
+            <ellipse cx="110" cy="240" rx="120" ry="30" fill="#94A3B8" stroke="#000000" strokeWidth="5" />
+            {/* Silueta Paloma */}
+            <path d="M 80,140 Q 110,90 140,130 Q 150,150 120,160 Z" fill="#64748B" stroke="#000000" strokeWidth="4" />
+            <polygon points="140,125 155,130 140,135" fill="#F59E0B" />
+            <text x="65" y="340" fill="#F8FAFC" fontSize="22" fontWeight="900" fontFamily="'Arial Black', sans-serif">
+              PALOMA
+            </text>
+          </g>
+
+          {/* Pedestal 3: Bebé Humano */}
+          <g transform="translate(740, 840)">
+            <rect x="0" y="240" width="220" height="380" rx="16" fill="url(#pedestalMetal)" stroke="#000000" strokeWidth="6" />
+            <ellipse cx="110" cy="240" rx="120" ry="30" fill="#94A3B8" stroke="#000000" strokeWidth="5" />
+            {/* Silueta Bebé */}
+            <circle cx="110" cy="110" r="40" fill="#FDE047" stroke="#000000" strokeWidth="4" />
+            <circle cx="98" cy="105" r="5" fill="#000000" />
+            <circle cx="122" cy="105" r="5" fill="#000000" />
+            <path d="M 102,125 Q 110,135 118,125" fill="none" stroke="#000000" strokeWidth="3" />
+            <text x="80" y="340" fill="#F8FAFC" fontSize="22" fontWeight="900" fontFamily="'Arial Black', sans-serif">
+              BEBÉ
+            </text>
+          </g>
+
+          {/* PANEL INDICADOR: SISTEMA DE APROXIMACIÓN NUMÉRICA (ANS) */}
+          <g transform="translate(120, 440)">
+            <rect x="0" y="0" width="840" height="200" rx="20" fill="#020617" stroke="#F59E0B" strokeWidth="6" />
+            <text x="40" y="50" fill="#FBBF24" fontSize="26" fontWeight="900" fontFamily="'Arial Black', sans-serif">
+              SISTEMA DE APROXIMACIÓN NUMÉRICA (ANS)
+            </text>
+
+            {/* Barra 1: Ratio 2:1 (10 moras vs 5 moras) -> 100% discriminación */}
+            <text x="40" y="100" fill="#E2E8F0" fontSize="18" fontWeight="800" fontFamily="'Arial Black', sans-serif">
+              RATIO 2:1 (10 VS 5 MORAS):
+            </text>
+            <rect x="360" y="80" width="380" height="26" rx="8" fill="#15803D" stroke="#000000" strokeWidth="3" />
+            <text x="760" y="100" fill="#4ADE80" fontSize="18" fontWeight="900" fontFamily="'Arial Black', sans-serif">
+              100% INNATO
+            </text>
+
+            {/* Barra 2: Ratio 10:9 (10 moras vs 9 moras) -> Falla y duda total */}
+            <text x="40" y="150" fill="#E2E8F0" fontSize="18" fontWeight="800" fontFamily="'Arial Black', sans-serif">
+              RATIO 10:9 (10 VS 9 MORAS):
+            </text>
+            <rect x="360" y="130" width="140" height="26" rx="8" fill="#DC2626" stroke="#000000" strokeWidth="3" />
+            <text x="520" y="150" fill="#F87171" fontSize="18" fontWeight="900" fontFamily="'Arial Black', sans-serif">
+              FALLA SIN CONTAR
+            </text>
+          </g>
+
+          {/* Suelo */}
+          <polygon points="-50,1460 1130,1460 1130,1920 -50,1920" fill="#0B132B" stroke="#000000" strokeWidth="8" />
+
+          {/* Rótulo superior */}
+          <g transform="translate(80, 160)">
+            <rect x="0" y="0" width="600" height="74" rx="14" fill="#020617" stroke="#F59E0B" strokeWidth="5" />
+            <text x="24" y="47" fill="#FBBF24" fontSize="24" fontWeight="900" fontFamily="'Arial Black', sans-serif">
+              MISMA BIOLOGÍA: SOLO ESTIMAMOS A OJO
+            </text>
+          </g>
+        </svg>
+      </div>
+    );
+  }
+
+  // 6. ESTUDIO ENGRANAJES HACK MENTAL (Atmósfera dorada majestuosa, palabras origami convirtiéndose en engranajes mecánicos)
+  if (escenario === "estudio_engranajes_hack_mental") {
+    const gearRot1 = (frame * 3) % 360;
+    const gearRot2 = (-frame * 3) % 360;
+    const wordFloat = Math.sin(frame / 8) * 14;
+    return (
+      <div className="absolute inset-0 pointer-events-none z-0 overflow-hidden bg-[#181005]">
+        <svg className="absolute inset-0 w-full h-full" viewBox="0 0 1080 1920" preserveAspectRatio="xMidYMid slice">
+          <defs>
+            <linearGradient id="oroFondoGrad" x1="0" y1="0" x2="0" y2="1">
+              <stop offset="0%" stopColor="#2E1B05" />
+              <stop offset="50%" stopColor="#452707" />
+              <stop offset="100%" stopColor="#181005" />
+            </linearGradient>
+            <radialGradient id="oroGlow">
+              <stop offset="0%" stopColor="#FDE047" stopOpacity="0.4" />
+              <stop offset="100%" stopColor="#181005" stopOpacity="0" />
+            </radialGradient>
+          </defs>
+
+          <rect width="1080" height="1920" fill="url(#oroFondoGrad)" />
+
+          {/* Gran resplandor de iluminación dorada y empoderamiento */}
+          <circle cx="540" cy="800" r="480" fill="url(#oroGlow)" />
+
+          {/* LÍNEAS DE VELOCIDAD COGNITIVA */}
+          <g stroke="#FDE047" strokeWidth="3" opacity="0.25">
+            {[200, 350, 500, 650, 800, 950].map((y, idx) => (
+              <line key={idx} x1="0" y1={y} x2="1080" y2={y} strokeDasharray="20 15" />
+            ))}
+          </g>
+
+          {/* PALABRAS LUMINOSAS MULTILINGÜES FLOTANTES DESCENDIENDO */}
+          <g transform={`translate(140, ${460 + wordFloat})`}>
+            <rect x="0" y="0" width="160" height="60" rx="14" fill="#020617" stroke="#FDE047" strokeWidth="4" />
+            <text x="35" y="42" fill="#FEF08A" fontSize="32" fontWeight="900" fontFamily="'Arial Black', sans-serif">UNO</text>
+          </g>
+          <g transform={`translate(740, ${420 - wordFloat})`}>
+            <rect x="0" y="0" width="180" height="60" rx="14" fill="#020617" stroke="#FDE047" strokeWidth="4" />
+            <text x="35" y="42" fill="#FEF08A" fontSize="32" fontWeight="900" fontFamily="'Arial Black', sans-serif">SIETE</text>
+          </g>
+          <g transform={`translate(180, ${640 - wordFloat})`}>
+            <rect x="0" y="0" width="160" height="60" rx="14" fill="#020617" stroke="#F59E0B" strokeWidth="4" />
+            <text x="35" y="42" fill="#FBBF24" fontSize="32" fontWeight="900" fontFamily="'Arial Black', sans-serif">ONE</text>
+          </g>
+          <g transform={`translate(720, ${660 + wordFloat})`}>
+            <rect x="0" y="0" width="180" height="60" rx="14" fill="#020617" stroke="#F59E0B" strokeWidth="4" />
+            <text x="40" y="42" fill="#FBBF24" fontSize="32" fontWeight="900" fontFamily="'Arial Black', sans-serif">TEN</text>
+          </g>
+
+          {/* ENGRANAJES MECÁNICOS DORADOS ENGRANANDO */}
+          {/* Engranaje 1 (Izquierdo) */}
+          <g transform={`translate(380, 860) rotate(${gearRot1})`}>
+            <circle cx="0" cy="0" r="100" fill="#F59E0B" stroke="#000000" strokeWidth="8" />
+            <circle cx="0" cy="0" r="35" fill="#FEF08A" stroke="#000000" strokeWidth="6" />
+            {[0, 45, 90, 135, 180, 225, 270, 315].map((ang, idx) => (
+              <rect
+                key={idx}
+                x="-16"
+                y="-125"
+                width="32"
+                height="35"
+                rx="6"
+                fill="#D97706"
+                stroke="#000000"
+                strokeWidth="5"
+                transform={`rotate(${ang})`}
+              />
+            ))}
+          </g>
+
+          {/* Engranaje 2 (Derecho entrelazado) */}
+          <g transform={`translate(590, 860) rotate(${gearRot2})`}>
+            <circle cx="0" cy="0" r="100" fill="#FDE047" stroke="#000000" strokeWidth="8" />
+            <circle cx="0" cy="0" r="35" fill="#B45309" stroke="#000000" strokeWidth="6" />
+            {[22.5, 67.5, 112.5, 157.5, 202.5, 247.5, 292.5, 337.5].map((ang, idx) => (
+              <rect
+                key={idx}
+                x="-16"
+                y="-125"
+                width="32"
+                height="35"
+                rx="6"
+                fill="#F59E0B"
+                stroke="#000000"
+                strokeWidth="5"
+                transform={`rotate(${ang})`}
+              />
+            ))}
+          </g>
+
+          {/* Suelo dorado neo-brutalista */}
+          <polygon points="-50,1460 1130,1460 1130,1920 -50,1920" fill="#2E1B05" stroke="#000000" strokeWidth="8" />
+
+          {/* Rótulo superior */}
+          <g transform="translate(80, 160)">
+            <rect x="0" y="0" width="600" height="74" rx="14" fill="#020617" stroke="#FDE047" strokeWidth="5" />
+            <text x="24" y="47" fill="#FEF08A" fontSize="24" fontWeight="900" fontFamily="'Arial Black', sans-serif">
+              TECNOLOGÍA LINGÜÍSTICA: REPROGRAMAR LA MENTE
+            </text>
+          </g>
+        </svg>
+      </div>
+    );
+  }
+
+  // 7. VACÍO FILOSÓFICO COSMOS IDEAS (Penumbra cósmica profunda, formas geométricas multidimensionales titilando sin nombre)
+  if (escenario === "vacio_filosofico_cosmos_ideas") {
+    const starTwinkle = Math.sin(frame / 10) * 0.4 + 0.6;
+    const shapeSpin = (frame * 1.5) % 360;
+    return (
+      <div className="absolute inset-0 pointer-events-none z-0 overflow-hidden bg-[#020617]">
+        <svg className="absolute inset-0 w-full h-full" viewBox="0 0 1080 1920" preserveAspectRatio="xMidYMid slice">
+          <defs>
+            <radialGradient id="cosmosProfundo">
+              <stop offset="0%" stopColor="#1E1B4B" stopOpacity="0.6" />
+              <stop offset="60%" stopColor="#0B0F19" stopOpacity="0.8" />
+              <stop offset="100%" stopColor="#020617" />
+            </radialGradient>
+          </defs>
+
+          <rect width="1080" height="1920" fill="url(#cosmosProfundo)" />
+
+          {/* CAMPO DE CONSTELACIONES Y ESTRELLAS TITILANTES */}
+          {[
+            [120, 320], [240, 480], [380, 260], [700, 340], [880, 460], [960, 280],
+            [150, 780], [280, 920], [800, 840], [940, 960],
+            [180, 1280], [340, 1400], [740, 1340], [880, 1480],
+          ].map(([sx, sy], idx) => (
+            <circle
+              key={idx}
+              cx={sx}
+              cy={sy}
+              r={2 + (idx % 4)}
+              fill="#F8FAFC"
+              opacity={(starTwinkle * (0.4 + (idx % 5) * 0.15)).toFixed(2)}
+            />
+          ))}
+
+          {/* FORMAS GEOMÉTRICAS MULTIDIMENSIONALES ABSTRACTAS SIN NOMBRE */}
+          {/* Forma 1: Icosaedro / Cristal cuatridimensional giratorio (Izquierda) */}
+          <g transform={`translate(240, 680) rotate(${shapeSpin})`}>
+            <polygon points="0,-80 70,-20 50,70 -50,70 -70,-20" fill="#C084FC" stroke="#FFFFFF" strokeWidth="4" opacity="0.75" />
+            <line x1="0" y1="-80" x2="50" y2="70" stroke="#FFFFFF" strokeWidth="2.5" />
+            <line x1="0" y1="-80" x2="-50" y2="70" stroke="#FFFFFF" strokeWidth="2.5" />
+            <line x1="70" y1="-20" x2="-70" y2="-20" stroke="#FFFFFF" strokeWidth="2.5" />
+            <circle cx="0" cy="0" r="14" fill="#F472B6" />
+          </g>
+
+          {/* Forma 2: Hipercubo tesseract de alambre titilante (Derecha) */}
+          <g transform={`translate(820, 680) rotate(${-shapeSpin * 1.2})`}>
+            <rect x="-60" y="-60" width="120" height="120" fill="none" stroke="#38BDF8" strokeWidth="4" />
+            <rect x="-30" y="-30" width="60" height="60" fill="#0284C7" stroke="#E0F2FE" strokeWidth="3" opacity="0.6" />
+            <line x1="-60" y1="-60" x2="-30" y2="-30" stroke="#38BDF8" strokeWidth="3" />
+            <line x1="60" y1="-60" x2="30" y2="-30" stroke="#38BDF8" strokeWidth="3" />
+            <line x1="60" y1="60" x2="30" y2="30" stroke="#38BDF8" strokeWidth="3" />
+            <line x1="-60" y1="60" x2="-30" y2="30" stroke="#38BDF8" strokeWidth="3" />
+          </g>
+
+          {/* Forma 3: Flor fractal dorada sutil (Centro superior) */}
+          <g transform={`translate(540, 480) rotate(${shapeSpin * 0.8})`} opacity="0.7">
+            <polygon points="0,-50 35,-15 50,30 0,20 -50,30 -35,-15" fill="#FDE047" stroke="#F59E0B" strokeWidth="3" />
+            <circle cx="0" cy="0" r="18" fill="#FFFFFF" />
+          </g>
+
+          {/* Suelo del abismo cósmico */}
+          <polygon points="-50,1460 1130,1460 1130,1920 -50,1920" fill="#030712" stroke="#000000" strokeWidth="8" />
+
+          {/* Rótulo superior */}
+          <g transform="translate(80, 160)">
+            <rect x="0" y="0" width="600" height="74" rx="14" fill="#020617" stroke="#C084FC" strokeWidth="5" />
+            <text x="24" y="47" fill="#E9D5FF" fontSize="24" fontWeight="900" fontFamily="'Arial Black', sans-serif">
+              ¿QUÉ PENSAMIENTOS NO PODEMOS NOMBRAR?
+            </text>
+          </g>
+        </svg>
+      </div>
+    );
+  }
+
+  // ==========================================
+  // ESCENARIOS: SI EL SOL FUERA UNA CANICA (ESCALA CÓSMICA)
+  // ==========================================
+
+  // 1. AULA ESCOLAR PIZARRÓN SOLAR (Pizarrón escolar verde, tiza ingenua con planetas apiñados y lámina arrugada)
+  if (escenario === "aula_escolar_pizarron_solar") {
+    const chalkGleam = Math.sin(frame / 12) * 4;
+    return (
+      <div className="absolute inset-0 pointer-events-none z-0 overflow-hidden bg-[#064E3B]">
+        <svg className="absolute inset-0 w-full h-full" viewBox="0 0 1080 1920" preserveAspectRatio="xMidYMid slice">
+          <defs>
+            <linearGradient id="aulaMaderaPiso" x1="0" y1="0" x2="0" y2="1">
+              <stop offset="0%" stopColor="#78350F" />
+              <stop offset="100%" stopColor="#451A03" />
+            </linearGradient>
+            <linearGradient id="pizarronVerde" x1="0" y1="0" x2="0" y2="1">
+              <stop offset="0%" stopColor="#064E3B" />
+              <stop offset="60%" stopColor="#047857" />
+              <stop offset="100%" stopColor="#022C22" />
+            </linearGradient>
+          </defs>
+
+          {/* Pared del aula escolar */}
+          <rect width="1080" height="1920" fill="#E2E8F0" />
+
+          {/* GRAN PIZARRÓN ESCOLAR */}
+          <g transform="translate(90, 360)">
+            {/* Marco de madera pesada */}
+            <rect x="-24" y="-24" width="948" height="968" rx="20" fill="#78350F" stroke="#000000" strokeWidth="8" />
+            {/* Superficie verde del pizarrón */}
+            <rect x="0" y="0" width="900" height="920" rx="12" fill="url(#pizarronVerde)" stroke="#000000" strokeWidth="6" />
+
+            {/* DIBUJO ESCOLAR FALSO: PLANETAS APIÑADOS Y GIGANTES EN TIZA */}
+            <g opacity="0.85">
+              {/* Título en tiza blanca */}
+              <text x="50" y="70" fill="#F8FAFC" fontSize="28" fontWeight="900" fontFamily="'Comic Sans MS', cursive, sans-serif">
+                EL SISTEMA SOLAR (MODELO ESCOLAR)
+              </text>
+              <line x1="50" y1="85" x2="680" y2="85" stroke="#FDE047" strokeWidth="4" strokeDasharray="10 6" />
+
+              {/* Órbitas en tiza blanca apiñadas */}
+              {[120, 190, 260, 340, 440, 560, 680, 780].map((r, idx) => (
+                <circle key={idx} cx="120" cy="500" r={r} fill="none" stroke="#FFFFFF" strokeWidth="3" strokeDasharray="8 8" opacity="0.4" />
+              ))}
+
+              {/* Sol gigante en la esquina izquierda */}
+              <circle cx="120" cy="500" r="100" fill="#F59E0B" stroke="#000000" strokeWidth="5" />
+              <text x="80" y="510" fill="#FEF08A" fontSize="22" fontWeight="900">SOL</text>
+
+              {/* Planetas gigantes absurdamente juntos */}
+              <circle cx="240" cy="500" r="16" fill="#94A3B8" stroke="#000000" strokeWidth="3" />
+              <text x="220" y="540" fill="#F8FAFC" fontSize="14" fontWeight="800">Mercurio</text>
+
+              <circle cx="310" cy="500" r="24" fill="#FDE047" stroke="#000000" strokeWidth="3" />
+              <text x="295" y="550" fill="#F8FAFC" fontSize="14" fontWeight="800">Venus</text>
+
+              <circle cx="380" cy="500" r="26" fill="#38BDF8" stroke="#000000" strokeWidth="3.5" />
+              <text x="365" y="555" fill="#38BDF8" fontSize="16" fontWeight="900">Tierra</text>
+
+              <circle cx="460" cy="500" r="20" fill="#EF4444" stroke="#000000" strokeWidth="3" />
+              <text x="445" y="545" fill="#F87171" fontSize="14" fontWeight="800">Marte</text>
+
+              <circle cx="560" cy="500" r="60" fill="#D97706" stroke="#000000" strokeWidth="5" />
+              <text x="535" y="510" fill="#FEF08A" fontSize="20" fontWeight="900">Júpiter</text>
+
+              <circle cx="700" cy="500" r="48" fill="#FBBF24" stroke="#000000" strokeWidth="4" />
+              <ellipse cx="700" cy="500" rx="75" ry="16" fill="none" stroke="#FEF08A" strokeWidth="4" />
+
+              <circle cx="810" cy="500" r="32" fill="#67E8F9" stroke="#000000" strokeWidth="3.5" />
+
+              {/* Tachón rojo de MENTIRA */}
+              <g transform="translate(180, 280) rotate(-14)">
+                <rect x="0" y="0" width="480" height="90" rx="14" fill="#DC2626" stroke="#000000" strokeWidth="6" />
+                <text x="30" y="60" fill="#FFFFFF" fontSize="42" fontWeight="900" fontFamily="'Arial Black', sans-serif">
+                  ¡TOTALMENTE FALSO!
+                </text>
+              </g>
+            </g>
+
+            {/* Repisa para tizas y borrador */}
+            <rect x="0" y="910" width="900" height="26" fill="#451A03" stroke="#000000" strokeWidth="4" />
+            <rect x="120" y="890" width="80" height="20" rx="4" fill="#F8FAFC" stroke="#000000" strokeWidth="3" />
+            <rect x="230" y="896" width="40" height="14" rx="3" fill="#FDE047" />
+          </g>
+
+          {/* Suelo de madera del aula escolar */}
+          <polygon points="-50,1440 1130,1440 1130,1920 -50,1920" fill="url(#aulaMaderaPiso)" stroke="#000000" strokeWidth="8" />
+
+          {/* Rótulo superior */}
+          <g transform="translate(80, 160)">
+            <rect x="0" y="0" width="600" height="74" rx="14" fill="#020617" stroke="#EF4444" strokeWidth="5" />
+            <text x="24" y="47" fill="#FCA5A5" fontSize="24" fontWeight="900" fontFamily="'Arial Black', sans-serif">
+              LA GRAN MENTIRA DE LOS DIAGRAMAS
+            </text>
+          </g>
+        </svg>
+      </div>
+    );
+  }
+
+  // 2. HABITACIÓN MEDICIÓN DISTANCIA SOLAR (Perspectiva de habitación con cinta métrica de 2.15 m en el suelo)
+  if (escenario === "habitacion_medicion_distancia_solar") {
+    const pulseMeter = Math.sin(frame / 8) * 8;
+    return (
+      <div className="absolute inset-0 pointer-events-none z-0 overflow-hidden bg-[#0F172A]">
+        <svg className="absolute inset-0 w-full h-full" viewBox="0 0 1080 1920" preserveAspectRatio="xMidYMid slice">
+          <defs>
+            <linearGradient id="pisoHabitacion" x1="0" y1="0" x2="0" y2="1">
+              <stop offset="0%" stopColor="#334155" />
+              <stop offset="100%" stopColor="#0F172A" />
+            </linearGradient>
+            <radialGradient id="solGlowMini">
+              <stop offset="0%" stopColor="#FEF08A" stopOpacity="0.8" />
+              <stop offset="100%" stopColor="#F59E0B" stopOpacity="0" />
+            </radialGradient>
+          </defs>
+
+          <rect width="1080" height="1920" fill="#1E293B" />
+
+          {/* Líneas de fuga en perspectiva de la sala */}
+          <polygon points="120,400 960,400 1130,1920 -50,1920" fill="url(#pisoHabitacion)" stroke="#000000" strokeWidth="6" />
+          <line x1="540" y1="400" x2="180" y2="1920" stroke="#475569" strokeWidth="3" strokeDasharray="14 10" />
+          <line x1="540" y1="400" x2="540" y2="1920" stroke="#475569" strokeWidth="3" strokeDasharray="14 10" />
+          <line x1="540" y1="400" x2="900" y2="1920" stroke="#475569" strokeWidth="3" strokeDasharray="14 10" />
+
+          {/* PEDESTAL AL FONDO CON LA CANICA SOLAR (SOL = 2 CM) */}
+          <g transform="translate(180, 780)">
+            {/* Pedestal */}
+            <rect x="-30" y="0" width="60" height="240" rx="8" fill="#475569" stroke="#000000" strokeWidth="5" />
+            <ellipse cx="0" cy="0" rx="45" ry="14" fill="#64748B" stroke="#000000" strokeWidth="4" />
+            {/* Resplandor de la canica */}
+            <circle cx="0" cy="-24" r="50" fill="url(#solGlowMini)" />
+            {/* Canica amarilla */}
+            <circle cx="0" cy="-24" r="18" fill="#FDE047" stroke="#F59E0B" strokeWidth="3" />
+            <circle cx="-5" cy="-29" r="4" fill="#FFFFFF" />
+
+            <g transform="translate(-110, -90)">
+              <rect x="0" y="0" width="220" height="50" rx="10" fill="#020617" stroke="#F59E0B" strokeWidth="4" />
+              <text x="18" y="32" fill="#FEF08A" fontSize="18" fontWeight="900" fontFamily="'Arial Black', sans-serif">
+                SOL: CANICA 2 CM
+              </text>
+            </g>
+          </g>
+
+          {/* CINTA MÉTRICA AMARILLA EXTENDIÉNDOSE POR EL SUELO HASTA EL PRIMER PLANO */}
+          <g>
+            {/* Línea de cinta extendida */}
+            <polygon points="180,1020 200,1020 840,1460 780,1460" fill="#FACC15" stroke="#000000" strokeWidth="5" />
+            {/* Marcas de centímetros */}
+            {[0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10].map((idx) => (
+              <line
+                key={idx}
+                x1={190 + idx * 60}
+                y1={1030 + idx * 40}
+                x2={190 + idx * 60 + 10}
+                y2={1030 + idx * 40 - 15}
+                stroke="#000000"
+                strokeWidth="4"
+              />
+            ))}
+          </g>
+
+          {/* CARTEL LUMINOSO EN PRIMER PLANO: TIERRA A 2.15 METROS */}
+          <g transform={`translate(${480 + pulseMeter}, 1280)`}>
+            <rect x="0" y="0" width="460" height="110" rx="16" fill="#020617" stroke="#38BDF8" strokeWidth="6" />
+            <text x="24" y="44" fill="#38BDF8" fontSize="24" fontWeight="900" fontFamily="'Arial Black', sans-serif">
+              DISTANCIA REAL A ESCALA:
+            </text>
+            <text x="24" y="86" fill="#F8FAFC" fontSize="36" fontWeight="900" fontFamily="'Arial Black', sans-serif">
+              2.15 METROS
+            </text>
+          </g>
+
+          {/* Rótulo superior */}
+          <g transform="translate(80, 160)">
+            <rect x="0" y="0" width="600" height="74" rx="14" fill="#020617" stroke="#38BDF8" strokeWidth="5" />
+            <text x="24" y="47" fill="#38BDF8" fontSize="24" fontWeight="900" fontFamily="'Arial Black', sans-serif">
+              LA TIERRA NO CABE EN LA MESA
+            </text>
+          </g>
+        </svg>
+      </div>
+    );
+  }
+
+  // 3. MACRO LUPA MOTA TIERRA (Enfoque extremo a través de la lente de lupa mostrando la Tierra como mota de 0.18 mm)
+  if (escenario === "macro_lupa_mota_tierra") {
+    const earthSpin = (frame * 2) % 360;
+    const lensJitter = Math.sin(frame / 6) * 5;
+    return (
+      <div className="absolute inset-0 pointer-events-none z-0 overflow-hidden bg-[#090D16]">
+        <svg className="absolute inset-0 w-full h-full" viewBox="0 0 1080 1920" preserveAspectRatio="xMidYMid slice">
+          <defs>
+            <radialGradient id="lupaVidrio">
+              <stop offset="0%" stopColor="#38BDF8" stopOpacity="0.25" />
+              <stop offset="70%" stopColor="#0284C7" stopOpacity="0.4" />
+              <stop offset="100%" stopColor="#0369A1" stopOpacity="0.7" />
+            </radialGradient>
+            <radialGradient id="tierraPlanetaGrad">
+              <stop offset="0%" stopColor="#60A5FA" />
+              <stop offset="50%" stopColor="#2563EB" />
+              <stop offset="100%" stopColor="#1E3A8A" />
+            </radialGradient>
+          </defs>
+
+          {/* Fondo desenfocado de la habitación */}
+          <rect width="1080" height="1920" fill="#0B132B" opacity="0.9" />
+
+          {/* LENTE GIGANTE DE AUMENTO EN EL CENTRO */}
+          <g transform={`translate(${540 + lensJitter}, 880)`}>
+            {/* Sombra de la lente */}
+            <circle cx="10" cy="10" r="380" fill="#000000" opacity="0.5" />
+
+            {/* Borde metálico de la lupa */}
+            <circle cx="0" cy="0" r="380" fill="none" stroke="#94A3B8" strokeWidth="28" />
+            <circle cx="0" cy="0" r="394" fill="none" stroke="#000000" strokeWidth="8" />
+            <circle cx="0" cy="0" r="366" fill="none" stroke="#000000" strokeWidth="8" />
+
+            {/* Mango de la lupa saliendo hacia la esquina inferior derecha */}
+            <line x1="270" y1="270" x2="520" y2="520" stroke="#78350F" strokeWidth="60" strokeLinecap="round" />
+            <line x1="270" y1="270" x2="520" y2="520" stroke="#000000" strokeWidth="72" strokeLinecap="round" opacity="0.3" />
+
+            {/* Cristal óptico con reflejo cian */}
+            <circle cx="0" cy="0" r="364" fill="url(#lupaVidrio)" />
+            {/* Destello curvo en el cristal */}
+            <path d="M -220,-220 Q 0,-340 220,-220" fill="none" stroke="#FFFFFF" strokeWidth="16" opacity="0.4" strokeLinecap="round" />
+
+            {/* SILUETA DE LA YEMA DEL DEDO ÍNDICE HUMANO EN PRIMER PLANO */}
+            <g transform="translate(0, 160)">
+              <ellipse cx="0" cy="180" rx="260" ry="200" fill="#F1F5F9" stroke="#000000" strokeWidth="8" />
+              {/* Huellas dactilares estilizadas */}
+              <path d="M -180,180 Q 0,110 180,180" fill="none" stroke="#CBD5E1" strokeWidth="6" />
+              <path d="M -150,220 Q 0,160 150,220" fill="none" stroke="#CBD5E1" strokeWidth="6" />
+              <path d="M -120,260 Q 0,210 120,260" fill="none" stroke="#CBD5E1" strokeWidth="6" />
+            </g>
+
+            {/* LA MOTA DE POLVO: LA TIERRA ENTERA (0.18 MM) CON ZOOM MACRO */}
+            <g transform="translate(0, 100)">
+              {/* Retícula de mira telescópica */}
+              <circle cx="0" cy="0" r="110" fill="none" stroke="#EF4444" strokeWidth="4" strokeDasharray="14 8" />
+              <line x1="-140" y1="0" x2="140" y2="0" stroke="#EF4444" strokeWidth="3" />
+              <line x1="0" y1="-140" x2="0" y2="140" stroke="#EF4444" strokeWidth="3" />
+
+              {/* El planeta Tierra aumentado dentro del punto de mira */}
+              <g transform={`rotate(${earthSpin})`}>
+                <circle cx="0" cy="0" r="48" fill="url(#tierraPlanetaGrad)" stroke="#000000" strokeWidth="5" />
+                {/* Continentes verdes */}
+                <path d="M -24,-20 Q 0,-36 24,-16 Q 16,10 -10,24 Z" fill="#22C55E" />
+                <circle cx="18" cy="16" r="10" fill="#16A34A" />
+                {/* Espirales de nubes blancas */}
+                <path d="M -35,5 Q 0,-15 35,-5" fill="none" stroke="#FFFFFF" strokeWidth="6" opacity="0.75" strokeLinecap="round" />
+              </g>
+
+              {/* Flecha indicadora */}
+              <g transform="translate(130, -110)">
+                <rect x="0" y="0" width="310" height="90" rx="14" fill="#020617" stroke="#38BDF8" strokeWidth="5" />
+                <text x="20" y="36" fill="#38BDF8" fontSize="20" fontWeight="900" fontFamily="'Arial Black', sans-serif">
+                  DIÁMETRO: 0.18 MM
+                </text>
+                <text x="20" y="68" fill="#F8FAFC" fontSize="18" fontWeight="800" fontFamily="'Arial Black', sans-serif">
+                  (MOTA DE POLVO)
+                </text>
+              </g>
+            </g>
+          </g>
+
+          {/* Rótulo superior */}
+          <g transform="translate(80, 160)">
+            <rect x="0" y="0" width="600" height="74" rx="14" fill="#020617" stroke="#38BDF8" strokeWidth="5" />
+            <text x="24" y="47" fill="#38BDF8" fontSize="24" fontWeight="900" fontFamily="'Arial Black', sans-serif">
+              LA TIERRA ES UNA MOTA DE POLVO
+            </text>
+          </g>
+        </svg>
+      </div>
+    );
+  }
+
+  // 4. AVENIDA URBANA ESCALA PLANETARIA (Avenida recta en perspectiva con marcas a 11 m para Júpiter y 65 m para Neptuno)
+  if (escenario === "avenida_urbana_escala_planetaria") {
+    const roadDashes = (frame * 6) % 100;
+    return (
+      <div className="absolute inset-0 pointer-events-none z-0 overflow-hidden bg-[#0F172A]">
+        <svg className="absolute inset-0 w-full h-full" viewBox="0 0 1080 1920" preserveAspectRatio="xMidYMid slice">
+          <defs>
+            <linearGradient id="cieloCiudad" x1="0" y1="0" x2="0" y2="1">
+              <stop offset="0%" stopColor="#0284C7" />
+              <stop offset="60%" stopColor="#38BDF8" />
+              <stop offset="100%" stopColor="#BAE6FD" />
+            </linearGradient>
+            <linearGradient id="asfaltoCarretera" x1="0" y1="0" x2="0" y2="1">
+              <stop offset="0%" stopColor="#334155" />
+              <stop offset="100%" stopColor="#0F172A" />
+            </linearGradient>
+          </defs>
+
+          {/* Cielo urbano abierto */}
+          <rect width="1080" height="960" fill="url(#cieloCiudad)" />
+
+          {/* Siluetas lejanas de edificios urbanos */}
+          <g fill="#64748B" opacity="0.6">
+            <rect x="80" y="580" width="120" height="380" />
+            <rect x="240" y="660" width="90" height="300" />
+            <rect x="740" y="620" width="110" height="340" />
+            <rect x="880" y="540" width="140" height="420" />
+          </g>
+
+          {/* GRAN AVENIDA EN PERSPECTIVA DE UN PUNTO DE FUGA */}
+          <polygon points="540,680 540,680 1130,1920 -50,1920" fill="url(#asfaltoCarretera)" stroke="#000000" strokeWidth="8" />
+
+          {/* Aceras laterales */}
+          <polygon points="540,680 480,680 -50,1920 -150,1920" fill="#94A3B8" stroke="#000000" strokeWidth="6" />
+          <polygon points="540,680 600,680 1230,1920 1130,1920" fill="#94A3B8" stroke="#000000" strokeWidth="6" />
+
+          {/* Líneas divisorias centrales amarillas */}
+          {[0, 1, 2, 3, 4, 5, 6].map((idx) => {
+            const py = 760 + idx * 170 + roadDashes;
+            if (py > 1850) return null;
+            return (
+              <line
+                key={idx}
+                x1="540"
+                y1={py}
+                x2="540"
+                y2={py + 80}
+                stroke="#FACC15"
+                strokeWidth={6 + idx * 2.5}
+                strokeLinecap="round"
+              />
+            );
+          })}
+
+          {/* PUNTO DE ORIGEN AL FONDO: SOL (0 METROS) */}
+          <circle cx="540" cy="680" r="12" fill="#FDE047" stroke="#F59E0B" strokeWidth="3" />
+
+          {/* MARCADOR 1: JÚPITER A 11 METROS (SEMILLA DE MANZANA) */}
+          <g transform="translate(240, 1020)">
+            <line x1="0" y1="0" x2="160" y2="0" stroke="#F59E0B" strokeWidth="5" />
+            <rect x="-180" y="-35" width="280" height="70" rx="12" fill="#020617" stroke="#F59E0B" strokeWidth="4" />
+            <text x="-160" y="10" fill="#FEF08A" fontSize="22" fontWeight="900" fontFamily="'Arial Black', sans-serif">
+              JÚPITER: 11 METROS
+            </text>
+            <text x="-160" y="28" fill="#F8FAFC" fontSize="14" fontWeight="800">
+              (Semilla de 2.0 mm)
+            </text>
+            <circle cx="160" cy="0" r="8" fill="#D97706" stroke="#000000" strokeWidth="2" />
+          </g>
+
+          {/* MARCADOR 2: NEPTUNO A 65 METROS (CABEZA DE ALFILER) */}
+          <g transform="translate(620, 1340)">
+            <line x1="0" y1="0" x2="-140" y2="0" stroke="#38BDF8" strokeWidth="5" />
+            <rect x="0" y="-35" width="300" height="70" rx="12" fill="#020617" stroke="#38BDF8" strokeWidth="4" />
+            <text x="20" y="10" fill="#38BDF8" fontSize="22" fontWeight="900" fontFamily="'Arial Black', sans-serif">
+              NEPTUNO: 65 METROS
+            </text>
+            <text x="20" y="28" fill="#F8FAFC" fontSize="14" fontWeight="800">
+              (Alfiler de 0.7 mm)
+            </text>
+            <circle cx="-140" cy="0" r="5" fill="#0284C7" stroke="#000000" strokeWidth="2" />
+          </g>
+
+          {/* Rótulo superior */}
+          <g transform="translate(80, 160)">
+            <rect x="0" y="0" width="600" height="74" rx="14" fill="#020617" stroke="#F59E0B" strokeWidth="5" />
+            <text x="24" y="47" fill="#FBBF24" fontSize="24" fontWeight="900" fontFamily="'Arial Black', sans-serif">
+              CRUZANDO LA CALLE: ESCALA PLANETARIA
+            </text>
+          </g>
+        </svg>
+      </div>
+    );
+  }
+
+  // 5. ABISMO VACÍO INTERESTELAR GRID (Cuadrícula 3D de vacío cósmico, porcentaje 99.9999% y cono de radar)
+  if (escenario === "abismo_vacio_interestelar_grid") {
+    const radarSweep = (frame * 4) % 360;
+    return (
+      <div className="absolute inset-0 pointer-events-none z-0 overflow-hidden bg-[#020617]">
+        <svg className="absolute inset-0 w-full h-full" viewBox="0 0 1080 1920" preserveAspectRatio="xMidYMid slice">
+          <defs>
+            <linearGradient id="vacioAbismo" x1="0" y1="0" x2="0" y2="1">
+              <stop offset="0%" stopColor="#0B132B" />
+              <stop offset="50%" stopColor="#030712" />
+              <stop offset="100%" stopColor="#020617" />
+            </linearGradient>
+          </defs>
+
+          <rect width="1080" height="1920" fill="url(#vacioAbismo)" />
+
+          {/* CUADRÍCULA 3D DE PERSPECTIVA DE VACÍO CÓSMICO */}
+          <g stroke="#1E293B" strokeWidth="2" opacity="0.6">
+            {[400, 600, 800, 1000, 1200, 1400, 1600].map((y, idx) => (
+              <line key={idx} x1="0" y1={y} x2="1080" y2={y} />
+            ))}
+            {[100, 250, 400, 540, 680, 830, 980].map((x, idx) => (
+              <line key={idx} x1={x} y1="350" x2={x} y2="1920" />
+            ))}
+          </g>
+
+          {/* CONO DE BÚSQUEDA DE RADAR / SONAR ESPACIAL */}
+          <g transform="translate(540, 960)">
+            <circle cx="0" cy="0" r="340" fill="none" stroke="#0284C7" strokeWidth="4" strokeDasharray="16 12" opacity="0.5" />
+            <circle cx="0" cy="0" r="220" fill="none" stroke="#38BDF8" strokeWidth="3" opacity="0.6" />
+            <circle cx="0" cy="0" r="100" fill="none" stroke="#67E8F9" strokeWidth="3" />
+
+            {/* Haz de radar girando */}
+            <g transform={`rotate(${radarSweep})`}>
+              <polygon points="0,0 240,-120 340,0" fill="#38BDF8" opacity="0.25" />
+              <line x1="0" y1="0" x2="340" y2="0" stroke="#38BDF8" strokeWidth="4" />
+            </g>
+          </g>
+
+          {/* PANEL CENTRAL: 99.999999% VACÍO */}
+          <g transform="translate(140, 480)">
+            <rect x="0" y="0" width="800" height="160" rx="24" fill="#020617" stroke="#EF4444" strokeWidth="6" />
+            <text x="50" y="65" fill="#EF4444" fontSize="36" fontWeight="900" fontFamily="'Arial Black', sans-serif">
+              99.9999999% VACÍO PURO
+            </text>
+            <text x="50" y="115" fill="#F8FAFC" fontSize="22" fontWeight="800" fontFamily="'Arial Black', sans-serif">
+              NADA ENTRE LOS PLANETAS: CERO ÁTOMOS SÓLIDOS
+            </text>
+          </g>
+
+          {/* Suelo del abismo */}
+          <polygon points="-50,1460 1130,1460 1130,1920 -50,1920" fill="#030712" stroke="#000000" strokeWidth="8" />
+
+          {/* Rótulo superior */}
+          <g transform="translate(80, 160)">
+            <rect x="0" y="0" width="600" height="74" rx="14" fill="#020617" stroke="#EF4444" strokeWidth="5" />
+            <text x="24" y="47" fill="#FCA5A5" fontSize="24" fontWeight="900" fontFamily="'Arial Black', sans-serif">
+              EL SISTEMA SOLAR ES PURO SILENCIO
+            </text>
+          </g>
+        </svg>
+      </div>
+    );
+  }
+
+  // 6. MAPA SATELITAL CARRETERA PRÓXIMA (Mapa satelital interurbano, ruta de 570 km y segunda canica en otra metrópoli)
+  if (escenario === "mapa_satelital_carretera_proxima") {
+    const routeDash = (frame * 5) % 120;
+    return (
+      <div className="absolute inset-0 pointer-events-none z-0 overflow-hidden bg-[#0B132B]">
+        <svg className="absolute inset-0 w-full h-full" viewBox="0 0 1080 1920" preserveAspectRatio="xMidYMid slice">
+          <defs>
+            <linearGradient id="mapaRelieve" x1="0" y1="0" x2="0" y2="1">
+              <stop offset="0%" stopColor="#1E293B" />
+              <stop offset="50%" stopColor="#0F172A" />
+              <stop offset="100%" stopColor="#020617" />
+            </linearGradient>
+          </defs>
+
+          <rect width="1080" height="1920" fill="url(#mapaRelieve)" />
+
+          {/* Cuadrícula cartográfica de GPS */}
+          <g stroke="#334155" strokeWidth="2" opacity="0.4">
+            {[300, 500, 700, 900, 1100, 1300].map((y, idx) => (
+              <line key={idx} x1="0" y1={y} x2="1080" y2={y} />
+            ))}
+            {[180, 360, 540, 720, 900].map((x, idx) => (
+              <line key={idx} x1={x} y1="0" x2={x} y2="1920" />
+            ))}
+          </g>
+
+          {/* CURVA DE AUTOPISTA INTERESTELAR ENTRE CIUDADES */}
+          <path
+            d="M 180,1260 C 320,1100 280,850 540,780 C 760,720 780,520 860,420"
+            fill="none"
+            stroke="#DC2626"
+            strokeWidth="16"
+            strokeLinecap="round"
+          />
+          <path
+            d="M 180,1260 C 320,1100 280,850 540,780 C 760,720 780,520 860,420"
+            fill="none"
+            stroke="#FEF08A"
+            strokeWidth="6"
+            strokeDasharray="24 16"
+            strokeDashoffset={-routeDash}
+            strokeLinecap="round"
+          />
+
+          {/* PUNTO DE SALIDA: CIUDAD ORIGEN (SOL) */}
+          <g transform="translate(180, 1260)">
+            <circle cx="0" cy="0" r="32" fill="#F59E0B" stroke="#000000" strokeWidth="5" />
+            <circle cx="0" cy="0" r="12" fill="#FEF08A" />
+            <rect x="-140" y="45" width="280" height="60" rx="12" fill="#020617" stroke="#F59E0B" strokeWidth="4" />
+            <text x="-120" y="82" fill="#FEF08A" fontSize="20" fontWeight="900" fontFamily="'Arial Black', sans-serif">
+              SOL (CANICA 1: 0 KM)
+            </text>
+          </g>
+
+          {/* PUNTO DE LLEGADA: OTRA METRÓPOLI A 570 KM (PRÓXIMA CENTAURI) */}
+          <g transform="translate(860, 420)">
+            <circle cx="0" cy="0" r="36" fill="#EF4444" stroke="#000000" strokeWidth="6" />
+            <circle cx="0" cy="0" r="14" fill="#FFFFFF" />
+            <rect x="-240" y="-85" width="340" height="65" rx="12" fill="#020617" stroke="#EF4444" strokeWidth="4" />
+            <text x="-220" y="-45" fill="#FCA5A5" fontSize="20" fontWeight="900" fontFamily="'Arial Black', sans-serif">
+              PRÓXIMA CENTAURI: 574 KM
+            </text>
+          </g>
+
+          {/* INDICADOR DIGITAL DE RUTA: 574 KILÓMETROS */}
+          <g transform="translate(140, 1420)">
+            <rect x="0" y="0" width="800" height="110" rx="18" fill="#020617" stroke="#22C55E" strokeWidth="6" />
+            <text x="35" y="46" fill="#22C55E" fontSize="24" fontWeight="900" fontFamily="'Arial Black', sans-serif">
+              DISTANCIA A LA ESTRELLA MÁS CERCANA:
+            </text>
+            <text x="35" y="88" fill="#F8FAFC" fontSize="34" fontWeight="900" fontFamily="'Arial Black', sans-serif">
+              574 KM EN AUTO (OTRA CIUDAD)
+            </text>
+          </g>
+
+          {/* Rótulo superior */}
+          <g transform="translate(80, 160)">
+            <rect x="0" y="0" width="600" height="74" rx="14" fill="#020617" stroke="#F59E0B" strokeWidth="5" />
+            <text x="24" y="47" fill="#FBBF24" fontSize="24" fontWeight="900" fontFamily="'Arial Black', sans-serif">
+              VIAJE INTERESTELAR POR CARRETERA
+            </text>
+          </g>
+        </svg>
+      </div>
+    );
+  }
+
+  // 7. VACÍO COSMOS SOLEDAD CANICA (Gravedad cero, negro azabache puro y canica solar brillando como luciérnaga)
+  if (escenario === "vacio_cosmos_soledad_canica") {
+    const starBlink = Math.sin(frame / 8) * 0.3 + 0.7;
+    const dustDrift = (frame * 2) % 180;
+    return (
+      <div className="absolute inset-0 pointer-events-none z-0 overflow-hidden bg-[#000000]">
+        <svg className="absolute inset-0 w-full h-full" viewBox="0 0 1080 1920" preserveAspectRatio="xMidYMid slice">
+          <defs>
+            <radialGradient id="solLuciernaga">
+              <stop offset="0%" stopColor="#FEF08A" stopOpacity="0.95" />
+              <stop offset="30%" stopColor="#F59E0B" stopOpacity="0.5" />
+              <stop offset="70%" stopColor="#D97706" stopOpacity="0.15" />
+              <stop offset="100%" stopColor="#000000" stopOpacity="0" />
+            </radialGradient>
+          </defs>
+
+          {/* Negro cósmico absoluto */}
+          <rect width="1080" height="1920" fill="#000000" />
+
+          {/* Halo cálido dorado emanando de la canica en el centro */}
+          <circle cx="540" cy="980" r="500" fill="url(#solLuciernaga)" />
+
+          {/* Partículas de polvo de luz dorada flotando suavemente en la penumbra */}
+          {[
+            [240, 780], [380, 620], [700, 720], [820, 880],
+            [300, 1180], [440, 1340], [680, 1260], [840, 1120],
+          ].map(([dx, dy], idx) => (
+            <circle
+              key={idx}
+              cx={dx}
+              cy={dy - (dustDrift + idx * 25) % 180}
+              r={2.5 + (idx % 3)}
+              fill="#FEF08A"
+              opacity={((starBlink * 0.8) - ((dustDrift + idx * 25) % 180) / 220).toFixed(2)}
+            />
+          ))}
+
+          {/* Rótulo superior */}
+          <g transform="translate(80, 160)">
+            <rect x="0" y="0" width="600" height="74" rx="14" fill="#020617" stroke="#FEF08A" strokeWidth="5" />
+            <text x="24" y="47" fill="#FEF08A" fontSize="24" fontWeight="900" fontFamily="'Arial Black', sans-serif">
+              UN OCÉANO INFINITO DE SILENCIO
+            </text>
+          </g>
+        </svg>
+      </div>
+    );
+  }
+
+  // ==========================================
+  // ESCENARIOS: EL DEMONIO DE MAXWELL Y EL PRINCIPIO DE LANDAUER
+  // ==========================================
+
+  // 1. MESA LABORATORIO CAFÉ VAPOR (Mesa de madera, café enfriándose, ondas térmicas y sello SEGUNDA LEY)
+  if (escenario === "mesa_laboratorio_cafe_vapor") {
+    const steamWave1 = Math.sin(frame / 6) * 15;
+    const steamWave2 = Math.cos(frame / 8) * 18;
+    return (
+      <div className="absolute inset-0 pointer-events-none z-0 overflow-hidden bg-[#1E293B]">
+        <svg className="absolute inset-0 w-full h-full" viewBox="0 0 1080 1920" preserveAspectRatio="xMidYMid slice">
+          <defs>
+            <linearGradient id="paredLaboratorioTermo" x1="0" y1="0" x2="0" y2="1">
+              <stop offset="0%" stopColor="#0F172A" />
+              <stop offset="60%" stopColor="#1E293B" />
+              <stop offset="100%" stopColor="#334155" />
+            </linearGradient>
+            <linearGradient id="maderaMesaTermo" x1="0" y1="0" x2="0" y2="1">
+              <stop offset="0%" stopColor="#78350F" />
+              <stop offset="100%" stopColor="#451A03" />
+            </linearGradient>
+          </defs>
+
+          {/* Pared de laboratorio sobria */}
+          <rect width="1080" height="1920" fill="url(#paredLaboratorioTermo)" />
+
+          {/* Pizarra o cuadro esquemático al fondo */}
+          <g transform="translate(140, 380)">
+            <rect x="0" y="0" width="800" height="420" rx="16" fill="#0B132B" stroke="#000000" strokeWidth="6" />
+            <text x="50" y="70" fill="#38BDF8" fontSize="28" fontWeight="900" fontFamily="'Arial Black', sans-serif">
+              TERMODINÁMICA CLÁSICA:
+            </text>
+            <text x="50" y="130" fill="#F8FAFC" fontSize="24" fontWeight="800">
+              ΔS ≥ 0 (La entropía siempre aumenta)
+            </text>
+            <line x1="50" y1="160" x2="750" y2="160" stroke="#334155" strokeWidth="4" />
+            <text x="50" y="220" fill="#FCA5A5" fontSize="22" fontWeight="800">
+              • El calor jamás fluye espontáneamente de lo frío a lo caliente.
+            </text>
+            <text x="50" y="270" fill="#FCA5A5" fontSize="22" fontWeight="800">
+              • El café se enfría; el cuarto se calienta de forma irreversible.
+            </text>
+          </g>
+
+          {/* ONDAS DISIPADAS DE VAPOR TÉRMICO ASCENDIENDO */}
+          <g stroke="#94A3B8" strokeWidth="8" fill="none" opacity="0.65" strokeLinecap="round">
+            <path d={`M 540,1280 Q ${520 + steamWave1},1140 ${560 + steamWave2},1000 T ${540 + steamWave1},860`} />
+            <path d={`M 590,1290 Q ${630 + steamWave2},1160 ${580 + steamWave1},1030 T ${620 + steamWave2},890`} strokeWidth="6" opacity="0.45" />
+          </g>
+
+          {/* GRAN MESA DE MADERA DE LABORATORIO */}
+          <polygon points="-50,1320 1130,1320 1130,1920 -50,1920" fill="url(#maderaMesaTermo)" stroke="#000000" strokeWidth="8" />
+          <line x1="-50" y1="1340" x2="1130" y2="1340" stroke="#B45309" strokeWidth="4" />
+
+          {/* TRAMPILLA ROJIZA EN LA MESA CON HUMO MISTERIOSO */}
+          <g transform="translate(180, 1330)">
+            <rect x="0" y="0" width="160" height="24" rx="4" fill="#000000" />
+            <polygon points="10,0 150,0 140,-35 20,-35" fill="#DC2626" opacity="0.3" />
+            <circle cx="80" cy="-20" r="16" fill="#EF4444" opacity="0.6" />
+            <text x="35" y="-14" fill="#FEF08A" fontSize="16" fontWeight="900">DEMON</text>
+          </g>
+
+          {/* GRAN SELLO ROJO ESTAMPADO: SEGUNDA LEY: PROHIBIDO */}
+          <g transform="translate(560, 940) rotate(-12)">
+            <rect x="0" y="0" width="460" height="150" rx="20" fill="#DC2626" stroke="#000000" strokeWidth="8" />
+            <rect x="12" y="12" width="436" height="126" rx="14" fill="none" stroke="#FFFFFF" strokeWidth="4" strokeDasharray="14 10" />
+            <text x="40" y="62" fill="#FFFFFF" fontSize="32" fontWeight="900" fontFamily="'Arial Black', sans-serif">
+              SEGUNDA LEY:
+            </text>
+            <text x="40" y="112" fill="#FEF08A" fontSize="42" fontWeight="900" fontFamily="'Arial Black', sans-serif">
+              ¡PROHIBIDO!
+            </text>
+          </g>
+
+          {/* Rótulo superior */}
+          <g transform="translate(80, 160)">
+            <rect x="0" y="0" width="600" height="74" rx="14" fill="#020617" stroke="#EF4444" strokeWidth="5" />
+            <text x="24" y="47" fill="#FCA5A5" fontSize="24" fontWeight="900" fontFamily="'Arial Black', sans-serif">
+              EL CALOR JAMÁS VUELVE SOLO
+            </text>
+          </g>
+        </svg>
+      </div>
+    );
+  }
+
+  // 2. CAJA MAXWELL EQUILIBRIO TÉRMICO (Caja acrílica transparente, compartimentos A y B, compuerta central y moléculas caóticas)
+  if (escenario === "caja_maxwell_equilibrio_termico") {
+    return (
+      <div className="absolute inset-0 pointer-events-none z-0 overflow-hidden bg-[#0F172A]">
+        <svg className="absolute inset-0 w-full h-full" viewBox="0 0 1080 1920" preserveAspectRatio="xMidYMid slice">
+          <defs>
+            <linearGradient id="vidrioAcrilico" x1="0" y1="0" x2="1" y2="1">
+              <stop offset="0%" stopColor="#38BDF8" stopOpacity="0.2" />
+              <stop offset="100%" stopColor="#0284C7" stopOpacity="0.05" />
+            </linearGradient>
+          </defs>
+
+          {/* Fondo oscuro esquemático */}
+          <rect width="1080" height="1920" fill="#0B132B" />
+
+          {/* Cuadrícula de coordenadas tenue */}
+          <g stroke="#1E293B" strokeWidth="2" opacity="0.5">
+            {[400, 600, 800, 1000, 1200, 1400].map((y, idx) => (
+              <line key={idx} x1="60" y1={y} x2="1020" y2={y} />
+            ))}
+          </g>
+
+          {/* LA GRAN CAJA DE GAS DE MAXWELL EN CORTE TRANSVERSAL */}
+          <g transform="translate(90, 520)">
+            {/* Sombra de la caja */}
+            <rect x="14" y="14" width="900" height="820" rx="20" fill="#000000" opacity="0.6" />
+
+            {/* Contenedor transparente de acrílico */}
+            <rect x="0" y="0" width="900" height="820" rx="18" fill="url(#vidrioAcrilico)" stroke="#94A3B8" strokeWidth="12" />
+            <rect x="0" y="0" width="900" height="820" rx="18" fill="none" stroke="#000000" strokeWidth="6" />
+
+            {/* TABIQUE DIVISOR CENTRAL AISLADO */}
+            <rect x="430" y="0" width="40" height="820" fill="#334155" stroke="#000000" strokeWidth="6" />
+
+            {/* ORIFICIO / COMPUERTA CENTRAL */}
+            <rect x="430" y="330" width="40" height="160" fill="#0B132B" stroke="#F59E0B" strokeWidth="4" />
+            {/* Puerta corrediza milimétrica */}
+            <rect x="436" y="340" width="28" height="70" rx="4" fill="#FACC15" stroke="#000000" strokeWidth="3" />
+
+            {/* ETIQUETAS DE COMPARTIMENTOS */}
+            <g transform="translate(60, 60)">
+              <rect x="0" y="0" width="200" height="60" rx="12" fill="#020617" stroke="#EF4444" strokeWidth="4" />
+              <text x="25" y="40" fill="#EF4444" fontSize="28" fontWeight="900" fontFamily="'Arial Black', sans-serif">
+                CÁMARA A
+              </text>
+            </g>
+            <g transform="translate(640, 60)">
+              <rect x="0" y="0" width="200" height="60" rx="12" fill="#020617" stroke="#38BDF8" strokeWidth="4" />
+              <text x="25" y="40" fill="#38BDF8" fontSize="28" fontWeight="900" fontFamily="'Arial Black', sans-serif">
+                CÁMARA B
+              </text>
+            </g>
+
+            {/* PARTÍCULAS EN EQUILIBRIO TÉRMICO (MEZCLADAS ROJAS RÁPIDAS Y AZULES LENTAS) */}
+            {/* Lado izquierdo mezclado */}
+            {[
+              { cx: 140, cy: 220, r: true, sp: 8 },
+              { cx: 320, cy: 260, r: false, sp: 2 },
+              { cx: 200, cy: 460, r: true, sp: 9 },
+              { cx: 360, cy: 620, r: false, sp: 2 },
+              { cx: 120, cy: 680, r: true, sp: 7 },
+              { cx: 270, cy: 740, r: false, sp: 3 },
+            ].map((p, idx) => {
+              const ox = Math.sin((frame + idx * 10) * (p.sp * 0.05)) * 35;
+              const oy = Math.cos((frame + idx * 8) * (p.sp * 0.05)) * 30;
+              return (
+                <g key={`l-${idx}`} transform={`translate(${p.cx + ox}, ${p.cy + oy})`}>
+                  <circle cx="0" cy="0" r={p.r ? 16 : 14} fill={p.r ? '#EF4444' : '#38BDF8'} stroke="#000000" strokeWidth="4" />
+                  {p.r && <line x1="0" y1="0" x2="28" y2="-18" stroke="#FDE047" strokeWidth="4" strokeLinecap="round" />}
+                </g>
+              );
+            })}
+
+            {/* Lado derecho mezclado */}
+            {[
+              { cx: 560, cy: 200, r: false, sp: 3 },
+              { cx: 760, cy: 260, r: true, sp: 9 },
+              { cx: 620, cy: 480, r: true, sp: 8 },
+              { cx: 800, cy: 520, r: false, sp: 2 },
+              { cx: 580, cy: 700, r: false, sp: 2 },
+              { cx: 780, cy: 730, r: true, sp: 8 },
+            ].map((p, idx) => {
+              const ox = Math.sin((frame + idx * 12) * (p.sp * 0.05)) * 35;
+              const oy = Math.cos((frame + idx * 9) * (p.sp * 0.05)) * 30;
+              return (
+                <g key={`r-${idx}`} transform={`translate(${p.cx + ox}, ${p.cy + oy})`}>
+                  <circle cx="0" cy="0" r={p.r ? 16 : 14} fill={p.r ? '#EF4444' : '#38BDF8'} stroke="#000000" strokeWidth="4" />
+                  {p.r && <line x1="0" y1="0" x2="-24" y2="18" stroke="#FDE047" strokeWidth="4" strokeLinecap="round" />}
+                </g>
+              );
+            })}
+          </g>
+
+          {/* Soporte de laboratorio inferior */}
+          <polygon points="-50,1460 1130,1460 1130,1920 -50,1920" fill="#1E293B" stroke="#000000" strokeWidth="8" />
+
+          {/* Rótulo superior */}
+          <g transform="translate(80, 160)">
+            <rect x="0" y="0" width="600" height="74" rx="14" fill="#020617" stroke="#38BDF8" strokeWidth="5" />
+            <text x="24" y="47" fill="#38BDF8" fontSize="24" fontWeight="900" fontFamily="'Arial Black', sans-serif">
+              LA CAJA SELLADA DE MAXWELL (1867)
+            </text>
+          </g>
+        </svg>
+      </div>
+    );
+  }
+
+  // 3. MACRO COMPUERTA FILTRO MAXWELL (Primer plano extremo de la compuerta, palanca milimétrica y vectores selectivos)
+  if (escenario === "macro_compuerta_filtro_maxwell") {
+    const gateY = Math.sin(frame * 0.25) > 0.3 ? -120 : 0;
+    const fastBallX = 780 - ((frame * 28) % 1100);
+    return (
+      <div className="absolute inset-0 pointer-events-none z-0 overflow-hidden bg-[#0A0F1D]">
+        <svg className="absolute inset-0 w-full h-full" viewBox="0 0 1080 1920" preserveAspectRatio="xMidYMid slice">
+          {/* Fondo oscuro industrial */}
+          <rect width="1080" height="1920" fill="#0B132B" />
+
+          {/* LÍNEA DE TABIQUE CENTRAL ENORME */}
+          <rect x="500" y="240" width="80" height="1400" fill="#1E293B" stroke="#000000" strokeWidth="8" />
+
+          {/* UMBRAL DE LA COMPUERTA ABIERTA/CERRADA */}
+          <rect x="490" y="700" width="100" height="380" fill="#020617" stroke="#F59E0B" strokeWidth="6" />
+
+          {/* HOJA DE LA COMPUERTA DESLIZÁNDOSE VERTICALMENTE */}
+          <g transform={`translate(0, ${gateY})`}>
+            <rect x="505" y="710" width="70" height="360" rx="8" fill="#FACC15" stroke="#000000" strokeWidth="6" />
+            {/* Rayas de advertencia industrial */}
+            {[740, 800, 860, 920, 980].map((py, idx) => (
+              <line key={idx} x1="510" y1={py} x2="570" y2={py + 30} stroke="#000000" strokeWidth="8" />
+            ))}
+          </g>
+
+          {/* PALANCA DE CONTROL OPERADA EN PRIMER PLANO */}
+          <g transform="translate(540, 580)">
+            <rect x="-40" y="0" width="80" height="50" rx="10" fill="#475569" stroke="#000000" strokeWidth="5" />
+            <line x1="0" y1="20" x2={gateY < -50 ? 50 : -50} y2="-90" stroke="#CBD5E1" strokeWidth="12" strokeLinecap="round" />
+            <circle cx={gateY < -50 ? 50 : -50} cy="-90" r="22" fill="#DC2626" stroke="#000000" strokeWidth="5" />
+          </g>
+
+          {/* PARTÍCULA ROJA RÁPIDA CRUZANDO DISPARADA */}
+          <g transform={`translate(${fastBallX}, 880)`}>
+            {/* Estela de velocidad */}
+            <line x1="0" y1="0" x2="160" y2="0" stroke="#EF4444" strokeWidth="14" strokeLinecap="round" opacity="0.6" />
+            <line x1="0" y1="0" x2="90" y2="0" stroke="#FEF08A" strokeWidth="8" strokeLinecap="round" />
+            <circle cx="0" cy="0" r="38" fill="#EF4444" stroke="#000000" strokeWidth="6" />
+            <circle cx="-8" cy="-10" r="10" fill="#FFFFFF" />
+            <text x="-32" y="80" fill="#FEF08A" fontSize="22" fontWeight="900" fontFamily="'Arial Black', sans-serif">
+              ¡CALIENTE!
+            </text>
+          </g>
+
+          {/* PARTÍCULA AZUL LENTA EN ESPERA */}
+          <g transform="translate(240, 880)">
+            <circle cx="0" cy="0" r="32" fill="#38BDF8" stroke="#000000" strokeWidth="6" />
+            <text x="-26" y="70" fill="#38BDF8" fontSize="20" fontWeight="900" fontFamily="'Arial Black', sans-serif">
+              FRÍA
+            </text>
+          </g>
+
+          {/* RETÍCULA DE RADAR ÓPTICO MILIMÉTRICO */}
+          <g transform="translate(540, 890)">
+            <circle cx="0" cy="0" r="240" fill="none" stroke="#22C55E" strokeWidth="3" strokeDasharray="14 10" opacity="0.4" />
+            <line x1="-280" y1="0" x2="280" y2="0" stroke="#22C55E" strokeWidth="2" opacity="0.3" />
+            <line x1="0" y1="-280" x2="0" y2="280" stroke="#22C55E" strokeWidth="2" opacity="0.3" />
+          </g>
+
+          {/* Rótulo superior */}
+          <g transform="translate(80, 160)">
+            <rect x="0" y="0" width="600" height="74" rx="14" fill="#020617" stroke="#F59E0B" strokeWidth="5" />
+            <text x="24" y="47" fill="#FBBF24" fontSize="24" fontWeight="900" fontFamily="'Arial Black', sans-serif">
+              DISCERNIMIENTO EN MILISEGUNDOS
+            </text>
+          </g>
+        </svg>
+      </div>
+    );
+  }
+
+  // 4. CAJA MAXWELL GRADIENTE EXTREMO (Izquierda hirviendo en fuego 100°C vs Derecha congelada con estalactitas 0°C)
+  if (escenario === "caja_maxwell_gradiente_extremo") {
+    const flameFlicker = Math.sin(frame / 3) * 12;
+    const iceGlint = Math.sin(frame / 6) * 0.3 + 0.7;
+    return (
+      <div className="absolute inset-0 pointer-events-none z-0 overflow-hidden bg-[#020617]">
+        <svg className="absolute inset-0 w-full h-full" viewBox="0 0 1080 1920" preserveAspectRatio="xMidYMid slice">
+          <defs>
+            <linearGradient id="camaraHirviendo" x1="0" y1="0" x2="1" y2="0">
+              <stop offset="0%" stopColor="#7F1D1D" stopOpacity="0.85" />
+              <stop offset="100%" stopColor="#DC2626" stopOpacity="0.7" />
+            </linearGradient>
+            <linearGradient id="camaraCongelada" x1="0" y1="0" x2="1" y2="0">
+              <stop offset="0%" stopColor="#0369A1" stopOpacity="0.7" />
+              <stop offset="100%" stopColor="#0C4A6E" stopOpacity="0.9" />
+            </linearGradient>
+          </defs>
+
+          {/* Fondo oscuro del laboratorio */}
+          <rect width="1080" height="1920" fill="#030712" />
+
+          {/* LA GRAN CAJA DE MAXWELL EN CONTRASTE TÉRMICO BRUTAL */}
+          <g transform="translate(90, 500)">
+            {/* LADO IZQUIERDO: HIRVIENDO AL ROJO VIVO (100 °C) */}
+            <rect x="0" y="0" width="450" height="840" rx="16" fill="url(#camaraHirviendo)" stroke="#EF4444" strokeWidth="8" />
+            {/* Llamaradas de fuego en la base izquierda */}
+            <path
+              d={`M 20,840 Q 60,${740 + flameFlicker} 100,840 Q 140,${720 - flameFlicker} 180,840 Q 240,${750 + flameFlicker} 300,840 Q 360,${730 - flameFlicker} 420,840 Z`}
+              fill="#F59E0B"
+              opacity="0.85"
+            />
+            {/* Partículas rojas frenéticas rebotando */}
+            {[
+              [80, 200], [220, 260], [340, 180], [120, 420], [280, 480], [160, 640], [350, 620]
+            ].map(([px, py], idx) => (
+              <circle
+                key={idx}
+                cx={px + Math.sin(frame * 0.4 + idx) * 20}
+                cy={py + Math.cos(frame * 0.5 + idx) * 20}
+                r="18"
+                fill="#EF4444"
+                stroke="#000000"
+                strokeWidth="4"
+              />
+            ))}
+            {/* Termómetro al máximo: 100 °C */}
+            <g transform="translate(40, 60)">
+              <rect x="0" y="0" width="160" height="60" rx="12" fill="#020617" stroke="#EF4444" strokeWidth="4" />
+              <text x="20" y="42" fill="#FEF08A" fontSize="30" fontWeight="900" fontFamily="'Arial Black', sans-serif">
+                100 °C 🔥
+              </text>
+            </g>
+
+            {/* TABIQUE DIVISOR CENTRAL */}
+            <rect x="430" y="0" width="40" height="840" fill="#000000" stroke="#94A3B8" strokeWidth="6" />
+
+            {/* LADO DERECHO: CONGELADO Y CUBIERTO DE HIELO (0 °C) */}
+            <rect x="450" y="0" width="450" height="840" rx="16" fill="url(#camaraCongelada)" stroke="#38BDF8" strokeWidth="8" />
+            {/* Estalactitas de hielo en el techo */}
+            <polygon points="480,0 510,120 540,0 580,180 620,0 680,140 740,0 800,190 860,0" fill="#E0F2FE" opacity={iceGlint.toFixed(2)} />
+            {/* Partículas azules casi inmóviles con temblor de frío */}
+            {[
+              [520, 320], [680, 280], [820, 340], [560, 520], [740, 490], [600, 700], [800, 680]
+            ].map(([px, py], idx) => (
+              <g key={idx} transform={`translate(${px + Math.sin(frame * 0.08 + idx) * 3}, ${py + Math.cos(frame * 0.08 + idx) * 3})`}>
+                <circle cx="0" cy="0" r="16" fill="#38BDF8" stroke="#000000" strokeWidth="4" />
+                <path d="M -6,-6 L 6,6 M -6,6 L 6,-6" stroke="#FFFFFF" strokeWidth="2" />
+              </g>
+            ))}
+            {/* Termómetro al mínimo: 0 °C */}
+            <g transform="translate(700, 60)">
+              <rect x="0" y="0" width="160" height="60" rx="12" fill="#020617" stroke="#38BDF8" strokeWidth="4" />
+              <text x="30" y="42" fill="#E0F2FE" fontSize="30" fontWeight="900" fontFamily="'Arial Black', sans-serif">
+                0 °C ❄️
+              </text>
+            </g>
+          </g>
+
+          {/* BANNER CENTRAL DE VICTORIA APARENTE */}
+          <g transform="translate(140, 1380)">
+            <rect x="0" y="0" width="800" height="110" rx="18" fill="#020617" stroke="#22C55E" strokeWidth="6" />
+            <text x="40" y="46" fill="#22C55E" fontSize="24" fontWeight="900" fontFamily="'Arial Black', sans-serif">
+              ENERGÍA TÉRMICA SEPARADA SIN TRABAJO:
+            </text>
+            <text x="40" y="88" fill="#F8FAFC" fontSize="32" fontWeight="900" fontFamily="'Arial Black', sans-serif">
+              ¡LA FÍSICA PARECE DERROTADA!
+            </text>
+          </g>
+
+          {/* Rótulo superior */}
+          <g transform="translate(80, 160)">
+            <rect x="0" y="0" width="600" height="74" rx="14" fill="#020617" stroke="#22C55E" strokeWidth="5" />
+            <text x="24" y="47" fill="#86EFAC" fontSize="24" fontWeight="900" fontFamily="'Arial Black', sans-serif">
+              EL MILAGRO DE LA ENERGÍA GRATIS
+            </text>
+          </g>
+        </svg>
+      </div>
+    );
+  }
+
+  // 5. CEREBRO DIGITAL SOBRECARGA BITS (Entorno tecnológico cognitivo, discos duros, cascada binaria y STORAGE FULL 100%)
+  if (escenario === "cerebro_digital_sobrecarga_bits") {
+    const alertBlink = (frame % 8 < 4);
+    const bitScroll = (frame * 12) % 180;
+    return (
+      <div className="absolute inset-0 pointer-events-none z-0 overflow-hidden bg-[#030712]">
+        <svg className="absolute inset-0 w-full h-full" viewBox="0 0 1080 1920" preserveAspectRatio="xMidYMid slice">
+          {/* Malla digital de circuitos */}
+          <rect width="1080" height="1920" fill="#030712" />
+
+          {/* Cuadrícula de matriz de datos */}
+          <g stroke="#1E293B" strokeWidth="2" opacity="0.6">
+            {[300, 500, 700, 900, 1100, 1300, 1500].map((y, idx) => (
+              <line key={idx} x1="0" y1={y} x2="1080" y2={y} />
+            ))}
+            {[180, 360, 540, 720, 900].map((x, idx) => (
+              <line key={idx} x1={x} y1="0" x2={x} y2="1920" />
+            ))}
+          </g>
+
+          {/* CASCADAS DE BITS BINARIOS DESBORDÁNDOSE (0 y 1 en verde y cian) */}
+          <g fontFamily="monospace" fontSize="26" fontWeight="900" fill="#22C55E" opacity="0.75">
+            {[120, 240, 380, 520, 680, 840, 960].map((colX, cIdx) => (
+              <g key={cIdx} transform={`translate(${colX}, ${bitScroll + cIdx * 40})`}>
+                <text x="0" y="400">101100101</text>
+                <text x="0" y="550">010011010</text>
+                <text x="0" y="700">111010011</text>
+                <text x="0" y="850">001011100</text>
+                <text x="0" y="1000">100101011</text>
+                <text x="0" y="1150">110110101</text>
+              </g>
+            ))}
+          </g>
+
+          {/* DISCO DURO / CHIP GIGANTE CENTRAL SATURADO */}
+          <g transform="translate(140, 640)">
+            <rect x="0" y="0" width="800" height="380" rx="24" fill="#0F172A" stroke="#EF4444" strokeWidth="8" />
+            <rect x="20" y="20" width="760" height="340" rx="16" fill="#020617" />
+
+            {/* ALERTA: STORAGE FULL 100% */}
+            <g transform="translate(60, 60)">
+              <rect
+                x="0"
+                y="0"
+                width="640"
+                height="80"
+                rx="14"
+                fill={alertBlink ? '#DC2626' : '#7F1D1D'}
+                stroke="#000000"
+                strokeWidth="6"
+              />
+              <text x="45" y="54" fill="#FFFFFF" fontSize="36" fontWeight="900" fontFamily="'Arial Black', sans-serif">
+                ⚠️ STORAGE FULL: 100%
+              </text>
+            </g>
+
+            {/* BARRA DE PROGRESO DESBORDADA */}
+            <g transform="translate(60, 180)">
+              <rect x="0" y="0" width="640" height="50" rx="10" fill="#1E293B" stroke="#000000" strokeWidth="4" />
+              <rect x="0" y="0" width="640" height="50" rx="10" fill="#DC2626" />
+              <text x="180" y="34" fill="#FEF08A" fontSize="22" fontWeight="900" fontFamily="'Arial Black', sans-serif">
+                MEMORIA AGOTADA
+              </text>
+            </g>
+
+            <text x="60" y="290" fill="#94A3B8" fontSize="22" fontWeight="800">
+              CADA MOLÉCULA MEDIDA EXIGE 1 BIT DE MEMORIA
+            </text>
+            <text x="60" y="330" fill="#FCA5A5" fontSize="22" fontWeight="900">
+              ¿DÓNDE GUARDAR LA SIGUIENTE MEDICIÓN?
+            </text>
+          </g>
+
+          {/* Rótulo superior */}
+          <g transform="translate(80, 160)">
+            <rect x="0" y="0" width="600" height="74" rx="14" fill="#020617" stroke="#EF4444" strokeWidth="5" />
+            <text x="24" y="47" fill="#FCA5A5" fontSize="24" fontWeight="900" fontFamily="'Arial Black', sans-serif">
+              EL CEREBRO DEL DEMONIO SE COLAPSA
+            </text>
+          </g>
+        </svg>
+      </div>
+    );
+  }
+
+  // 6. BORRADO BITS PRINCIPIO LANDAUER (Plano dividido: Goma borrando bits a la izq, calor disipado a la der y Principio de Landauer)
+  if (escenario === "borrado_bits_principio_landauer") {
+    const heatWave = Math.sin(frame / 4) * 20;
+    return (
+      <div className="absolute inset-0 pointer-events-none z-0 overflow-hidden bg-[#0F172A]">
+        <svg className="absolute inset-0 w-full h-full" viewBox="0 0 1080 1920" preserveAspectRatio="xMidYMid slice">
+          <defs>
+            <linearGradient id="calorLandauer" x1="0" y1="0" x2="1" y2="0">
+              <stop offset="0%" stopColor="#0F172A" />
+              <stop offset="60%" stopColor="#7F1D1D" />
+              <stop offset="100%" stopColor="#EF4444" />
+            </linearGradient>
+          </defs>
+
+          {/* Fondo con gradiente térmico de disipación hacia la derecha */}
+          <rect width="1080" height="1920" fill="url(#calorLandauer)" />
+
+          {/* LADO IZQUIERDO: LIBRETA DIGITAL DE BITS SIENDO BORRADA */}
+          <g transform="translate(80, 480)">
+            <rect x="0" y="0" width="440" height="660" rx="20" fill="#F8FAFC" stroke="#000000" strokeWidth="8" />
+            <text x="30" y="60" fill="#0F172A" fontSize="28" fontWeight="900" fontFamily="'Arial Black', sans-serif">
+              REGISTRO DE BITS:
+            </text>
+
+            {/* Renglones tachados / borrados */}
+            {[130, 200, 270, 340, 410, 480].map((ry, idx) => (
+              <g key={idx} transform={`translate(30, ${ry})`}>
+                <text x="0" y="0" fill="#94A3B8" fontSize="24" fontWeight="800" fontFamily="monospace">
+                  BIT_{idx + 1}: 1001 0110
+                </text>
+                <line x1="0" y1="-8" x2="380" y2="-8" stroke="#DC2626" strokeWidth="6" strokeLinecap="round" />
+                <text x="240" y="-12" fill="#DC2626" fontSize="16" fontWeight="900">
+                  ¡BORRADO!
+                </text>
+              </g>
+            ))}
+          </g>
+
+          {/* LADO DERECHO: DISIPACIÓN INEVITABLE DE CALOR AL AMBIENTE */}
+          <g transform="translate(600, 520)">
+            {/* Llamaradas y ondas de calor expulsadas */}
+            <path
+              d={`M 0,100 Q ${80 + heatWave},40 180,120 T ${320 + heatWave},80`}
+              fill="none"
+              stroke="#FEF08A"
+              strokeWidth="10"
+              strokeLinecap="round"
+            />
+            <path
+              d={`M 0,260 Q ${100 - heatWave},200 220,280 T ${360 - heatWave},220`}
+              fill="none"
+              stroke="#F59E0B"
+              strokeWidth="12"
+              strokeLinecap="round"
+            />
+            <path
+              d={`M 0,420 Q ${90 + heatWave},360 200,440 T ${340 + heatWave},390`}
+              fill="none"
+              stroke="#EF4444"
+              strokeWidth="14"
+              strokeLinecap="round"
+            />
+
+            {/* Chispas incandescentes de Landauer */}
+            {[
+              [80, 80], [240, 140], [140, 220], [300, 310], [180, 390], [290, 470]
+            ].map(([cx, cy], idx) => (
+              <circle key={idx} cx={cx} cy={cy} r="6" fill="#FEF08A" stroke="#DC2626" strokeWidth="2" />
+            ))}
+
+            <rect x="20" y="520" width="400" height="90" rx="16" fill="#020617" stroke="#EF4444" strokeWidth="5" />
+            <text x="45" y="575" fill="#FEF08A" fontSize="28" fontWeight="900" fontFamily="'Arial Black', sans-serif">
+              🔥 CALOR EXPULSADO
+            </text>
+          </g>
+
+          {/* GRAN PANEL CIENTÍFICO CENTRAL: PRINCIPIO DE LANDAUER */}
+          <g transform="translate(100, 1260)">
+            <rect x="0" y="0" width="880" height="190" rx="24" fill="#020617" stroke="#F59E0B" strokeWidth="7" />
+            <text x="40" y="60" fill="#F59E0B" fontSize="32" fontWeight="900" fontFamily="'Arial Black', sans-serif">
+              PRINCIPIO DE LANDAUER (1961):
+            </text>
+            <text x="40" y="110" fill="#F8FAFC" fontSize="26" fontWeight="800">
+              Borrar 1 bit de información disipa:
+            </text>
+            <text x="40" y="160" fill="#FEF08A" fontSize="34" fontWeight="900" fontFamily="monospace">
+              Q ≥ k_B · T · ln(2)
+            </text>
+          </g>
+
+          {/* Rótulo superior */}
+          <g transform="translate(80, 160)">
+            <rect x="0" y="0" width="600" height="74" rx="14" fill="#020617" stroke="#F59E0B" strokeWidth="5" />
+            <text x="24" y="47" fill="#FBBF24" fontSize="24" fontWeight="900" fontFamily="'Arial Black', sans-serif">
+              BORRAR DATOS CUESTA CALOR FÍSICO
+            </text>
+          </g>
+        </svg>
+      </div>
+    );
+  }
+
+  // 7. MESA REMATE TECLA DELETE CAFÉ (Mesa de vuelta, taza de café tibia, teclado con tecla DELETE chamuscada y física en paz)
+  if (escenario === "mesa_remate_tecla_delete_cafe") {
+    const smokeDrift = (frame * 3) % 140;
+    return (
+      <div className="absolute inset-0 pointer-events-none z-0 overflow-hidden bg-[#1E293B]">
+        <svg className="absolute inset-0 w-full h-full" viewBox="0 0 1080 1920" preserveAspectRatio="xMidYMid slice">
+          <defs>
+            <linearGradient id="paredCierreTermo" x1="0" y1="0" x2="0" y2="1">
+              <stop offset="0%" stopColor="#0B132B" />
+              <stop offset="70%" stopColor="#1E293B" />
+              <stop offset="100%" stopColor="#334155" />
+            </linearGradient>
+            <linearGradient id="maderaMesaCierre" x1="0" y1="0" x2="0" y2="1">
+              <stop offset="0%" stopColor="#78350F" />
+              <stop offset="100%" stopColor="#451A03" />
+            </linearGradient>
+          </defs>
+
+          {/* Pared de laboratorio */}
+          <rect width="1080" height="1920" fill="url(#paredCierreTermo)" />
+
+          {/* Cuadro final reconciliando la física */}
+          <g transform="translate(140, 380)">
+            <rect x="0" y="0" width="800" height="340" rx="18" fill="#020617" stroke="#22C55E" strokeWidth="6" />
+            <text x="50" y="70" fill="#22C55E" fontSize="30" fontWeight="900" fontFamily="'Arial Black', sans-serif">
+              LA SEGUNDA LEY SOBREVIVE INTACTA
+            </text>
+            <text x="50" y="130" fill="#F8FAFC" fontSize="24" fontWeight="800">
+              La información es física, no un concepto etéreo.
+            </text>
+            <text x="50" y="180" fill="#FEF08A" fontSize="24" fontWeight="800">
+              Todo el calor ahorrado en la caja...
+            </text>
+            <text x="50" y="230" fill="#FCA5A5" fontSize="28" fontWeight="900" fontFamily="'Arial Black', sans-serif">
+              ¡Se disipó borrando la memoria del demonio!
+            </text>
+          </g>
+
+          {/* GRAN MESA DE MADERA */}
+          <polygon points="-50,1280 1130,1280 1130,1920 -50,1920" fill="url(#maderaMesaCierre)" stroke="#000000" strokeWidth="8" />
+
+          {/* TECLADO DE COMPUTADORA CON TECLA DELETE HUMEANDO */}
+          <g transform="translate(620, 1340)">
+            <rect x="0" y="0" width="360" height="160" rx="18" fill="#0F172A" stroke="#000000" strokeWidth="6" />
+            {/* Tecla DELETE en rojo brillante */}
+            <rect x="220" y="30" width="100" height="80" rx="10" fill="#DC2626" stroke="#000000" strokeWidth="5" />
+            <text x="235" y="76" fill="#FFFFFF" fontSize="20" fontWeight="900" fontFamily="'Arial Black', sans-serif">
+              DEL
+            </text>
+            {/* Humo cómico saliendo de la tecla */}
+            <path
+              d={`M 270,30 Q 250,${-smokeDrift} 290,${-smokeDrift - 60}`}
+              fill="none"
+              stroke="#64748B"
+              strokeWidth="6"
+              strokeLinecap="round"
+              opacity="0.6"
+            />
+          </g>
+
+          {/* Rótulo superior */}
+          <g transform="translate(80, 160)">
+            <rect x="0" y="0" width="600" height="74" rx="14" fill="#020617" stroke="#22C55E" strokeWidth="5" />
+            <text x="24" y="47" fill="#86EFAC" fontSize="24" fontWeight="900" fontFamily="'Arial Black', sans-serif">
+              EL UNIVERSO SIEMPRE COBRA SUS DEUDAS
+            </text>
+          </g>
+        </svg>
+      </div>
+    );
+  }
+
+  // ==========================================
+  // ESCENARIOS: POR QUÉ EL TIEMPO VUELA CUANDO CRECES
+  // ==========================================
+
+  // 1. PANTALLA DIVIDIDA INFANCIA ADULTEZ (Mitad izquierda verano infantil dorado vs Mitad derecha oficina gris acelerada)
+  if (escenario === "pantalla_dividida_infancia_adultez") {
+    const clockHand = (frame * 16) % 360;
+    const leafFly = (frame * 10) % 100;
+    const waterRipple = Math.sin(frame / 6) * 6;
+    return (
+      <div className="absolute inset-0 pointer-events-none z-0 overflow-hidden bg-[#0F172A]">
+        <svg className="absolute inset-0 w-full h-full" viewBox="0 0 1080 1920" preserveAspectRatio="xMidYMid slice">
+          <defs>
+            <linearGradient id="solInfancia" x1="0" y1="0" x2="0" y2="1">
+              <stop offset="0%" stopColor="#FEF08A" />
+              <stop offset="50%" stopColor="#F59E0B" />
+              <stop offset="100%" stopColor="#EA580C" />
+            </linearGradient>
+            <linearGradient id="oficinaGris" x1="0" y1="0" x2="0" y2="1">
+              <stop offset="0%" stopColor="#1E293B" />
+              <stop offset="60%" stopColor="#334155" />
+              <stop offset="100%" stopColor="#0F172A" />
+            </linearGradient>
+          </defs>
+
+          {/* MITAD IZQUIERDA: INFANCIA DORADA Y VERANO INTERMINABLE (x: 0 a 540) */}
+          <g>
+            <rect x="0" y="0" width="540" height="1920" fill="#BAE6FD" />
+            {/* Sol cálido dorado inmóvil */}
+            <circle cx="200" cy="460" r="140" fill="url(#solInfancia)" opacity="0.85" />
+            <circle cx="200" cy="460" r="170" fill="none" stroke="#FDE047" strokeWidth="6" opacity="0.4" />
+            {/* Pasto verde y colina de verano */}
+            <path d="M 0,1320 Q 240,1260 540,1360 L 540,1920 L 0,1920 Z" fill="#22C55E" stroke="#000000" strokeWidth="6" />
+            {/* Gran charco azul cristalino en el suelo */}
+            <ellipse cx="260" cy="1540" rx="190" ry="60" fill="#38BDF8" fillOpacity="0.75" stroke="#0284C7" strokeWidth="5" />
+            {/* Ondas lentas en el charco */}
+            <ellipse cx="260" cy="1540" rx={140 + waterRipple} ry={40 + waterRipple * 0.3} fill="none" stroke="#FFFFFF" strokeWidth="4" opacity="0.6" />
+            {/* Rótulo infancia */}
+            <g transform="translate(60, 280)">
+              <rect x="0" y="0" width="400" height="60" rx="12" fill="#020617" stroke="#F59E0B" strokeWidth="4" />
+              <text x="30" y="40" fill="#FEF08A" fontSize="24" fontWeight="900" fontFamily="'Arial Black', sans-serif">
+                INFANCIA: ETERNA ☀️
+              </text>
+            </g>
+          </g>
+
+          {/* MITAD DERECHA: ADULTEZ GRIS Y TIEMPO ACELERADO (x: 540 a 1080) */}
+          <g>
+            <rect x="540" y="0" width="540" height="1920" fill="url(#oficinaGris)" />
+            {/* Suelo de oficina de linóleo */}
+            <rect x="540" y="1360" width="540" height="560" fill="#0F172A" stroke="#000000" strokeWidth="6" />
+            {/* Escritorio de trabajo */}
+            <polygon points="560,1440 1060,1440 1080,1660 540,1660" fill="#475569" stroke="#000000" strokeWidth="5" />
+
+            {/* Reloj de pared girando a toda prisa */}
+            <g transform="translate(810, 480)">
+              <circle cx="0" cy="0" r="110" fill="#F8FAFC" stroke="#000000" strokeWidth="8" />
+              <circle cx="0" cy="0" r="12" fill="#000000" />
+              {/* Manecillas girando en torbellino */}
+              <g transform={`rotate(${clockHand})`}>
+                <line x1="0" y1="0" x2="0" y2="-75" stroke="#000000" strokeWidth="8" strokeLinecap="round" />
+              </g>
+              <g transform={`rotate(${clockHand * 12})`}>
+                <line x1="0" y1="0" x2="70" y2="0" stroke="#DC2626" strokeWidth="6" strokeLinecap="round" />
+              </g>
+            </g>
+
+            {/* Hojas de calendario volando como ventisca */}
+            {[0, 1, 2, 3].map((idx) => {
+              const py = 680 + idx * 110 + leafFly;
+              const px = 640 + idx * 90;
+              return (
+                <g key={idx} transform={`translate(${px}, ${py}) rotate(${-15 + idx * 10})`}>
+                  <rect x="0" y="0" width="80" height="60" rx="4" fill="#F8FAFC" stroke="#000000" strokeWidth="3" />
+                  <rect x="0" y="0" width="80" height="16" fill="#DC2626" />
+                  <text x="12" y="44" fill="#020617" fontSize="16" fontWeight="900">DAY</text>
+                </g>
+              );
+            })}
+
+            {/* Rótulo adultez */}
+            <g transform="translate(600, 280)">
+              <rect x="0" y="0" width="400" height="60" rx="12" fill="#020617" stroke="#38BDF8" strokeWidth="4" />
+              <text x="30" y="40" fill="#38BDF8" fontSize="24" fontWeight="900" fontFamily="'Arial Black', sans-serif">
+                ADULTEZ: UN PARPADEO ⚡
+              </text>
+            </g>
+          </g>
+
+          {/* LÍNEA DIVISORIA CENTRAL GRUESA */}
+          <line x1="540" y1="0" x2="540" y2="1920" stroke="#000000" strokeWidth="8" />
+
+          {/* Rótulo superior */}
+          <g transform="translate(80, 160)">
+            <rect x="0" y="0" width="600" height="74" rx="14" fill="#020617" stroke="#F59E0B" strokeWidth="5" />
+            <text x="24" y="47" fill="#FEF08A" fontSize="24" fontWeight="900" fontFamily="'Arial Black', sans-serif">
+              ¿POR QUÉ EL TIEMPO VUELA?
+            </text>
+          </g>
+        </svg>
+      </div>
+    );
+  }
+
+  // 2. ESTUDIO PASTEL CINCO REBANADAS (Fondo azul pastel, gráfico circular de 5 rebanadas con 20% gigante y reloj de arena lento)
+  if (escenario === "estudio_pastel_cinco_rebanadas") {
+    const sandFall = (frame * 1.5) % 180;
+    return (
+      <div className="absolute inset-0 pointer-events-none z-0 overflow-hidden bg-[#38BDF8]">
+        <svg className="absolute inset-0 w-full h-full" viewBox="0 0 1080 1920" preserveAspectRatio="xMidYMid slice">
+          <defs>
+            <linearGradient id="cieloEstudioPastel" x1="0" y1="0" x2="0" y2="1">
+              <stop offset="0%" stopColor="#0284C7" />
+              <stop offset="60%" stopColor="#38BDF8" />
+              <stop offset="100%" stopColor="#BAE6FD" />
+            </linearGradient>
+          </defs>
+
+          {/* Fondo limpio de estudio */}
+          <rect width="1080" height="1920" fill="url(#cieloEstudioPastel)" />
+
+          {/* Suelo blanco neo-brutalista */}
+          <polygon points="-50,1460 1130,1460 1130,1920 -50,1920" fill="#F8FAFC" stroke="#000000" strokeWidth="8" />
+
+          {/* GRAN PASTEL CIRCULAR DE 5 AÑOS (A LA IZQUIERDA) */}
+          <g transform="translate(340, 840)">
+            <circle cx="10" cy="10" r="260" fill="#000000" opacity="0.3" />
+            <circle cx="0" cy="0" r="260" fill="#F1F5F9" stroke="#000000" strokeWidth="8" />
+            {/* Divisiones en 5 partes (72° cada una) */}
+            <line x1="0" y1="0" x2="0" y2="-260" stroke="#000000" strokeWidth="6" />
+            <line x1="0" y1="0" x2="247" y2="-80" stroke="#000000" strokeWidth="6" />
+            <line x1="0" y1="0" x2="153" y2="210" stroke="#000000" strokeWidth="6" />
+            <line x1="0" y1="0" x2="-153" y2="210" stroke="#000000" strokeWidth="6" />
+            <line x1="0" y1="0" x2="-247" y2="-80" stroke="#000000" strokeWidth="6" />
+
+            {/* REBANADA GIGANTE DEL 20% EN RELIEVE DORADO */}
+            <g transform="translate(14, -14)">
+              <path d="M 0,0 L 247,-80 A 260,260 0 0,1 153,210 Z" fill="#F59E0B" stroke="#000000" strokeWidth="8" />
+              <text x="70" y="65" fill="#FEF08A" fontSize="56" fontWeight="900" fontFamily="'Arial Black', sans-serif">
+                20%
+              </text>
+              <text x="60" y="115" fill="#020617" fontSize="24" fontWeight="900" fontFamily="'Arial Black', sans-serif">
+                DE TU VIDA
+              </text>
+            </g>
+          </g>
+
+          {/* RELOJ DE ARENA GIGANTE A LA DERECHA CON FLUJO LENTO */}
+          <g transform="translate(820, 840)">
+            {/* Marco de madera del reloj */}
+            <rect x="-80" y="-240" width="160" height="24" rx="6" fill="#78350F" stroke="#000000" strokeWidth="6" />
+            <rect x="-80" y="216" width="160" height="24" rx="6" fill="#78350F" stroke="#000000" strokeWidth="6" />
+            <line x1="-60" y1="-220" x2="-60" y2="220" stroke="#451A03" strokeWidth="8" />
+            <line x1="60" y1="-220" x2="60" y2="220" stroke="#451A03" strokeWidth="8" />
+
+            {/* Cristal del reloj de arena */}
+            <polygon points="-70,-216 70,-216 16,-10 70,216 -70,216 -16,-10" fill="#E0F2FE" fillOpacity="0.7" stroke="#000000" strokeWidth="6" />
+            {/* Arena dorada arriba */}
+            <polygon points="-55,-190 55,-190 0,-10" fill="#FACC15" />
+            {/* Grano grueso cayendo lento y denso */}
+            <circle cx="0" cy={-10 + sandFall} r="10" fill="#F59E0B" stroke="#000000" strokeWidth="3" />
+            {/* Montículo de arena acumulada abajo */}
+            <polygon points="-60,216 60,216 0,90" fill="#FACC15" stroke="#F59E0B" strokeWidth="4" />
+          </g>
+
+          {/* CARTEL INFORMATIVO INFERIOR */}
+          <g transform="translate(140, 1340)">
+            <rect x="0" y="0" width="800" height="100" rx="18" fill="#020617" stroke="#F59E0B" strokeWidth="6" />
+            <text x="40" y="42" fill="#FEF08A" fontSize="24" fontWeight="900" fontFamily="'Arial Black', sans-serif">
+              A LOS 5 AÑOS DE EDAD:
+            </text>
+            <text x="40" y="78" fill="#F8FAFC" fontSize="30" fontWeight="900" fontFamily="'Arial Black', sans-serif">
+              1 AÑO = 20% DE TODA TU EXISTENCIA
+            </text>
+          </g>
+
+          {/* Rótulo superior */}
+          <g transform="translate(80, 160)">
+            <rect x="0" y="0" width="600" height="74" rx="14" fill="#020617" stroke="#F59E0B" strokeWidth="5" />
+            <text x="24" y="47" fill="#FBBF24" fontSize="24" fontWeight="900" fontFamily="'Arial Black', sans-serif">
+              TEORÍA PROPORCIONAL DE PAUL JANET
+            </text>
+          </g>
+        </svg>
+      </div>
+    );
+  }
+
+  // 3. ESTUDIO PASTEL CINCUENTA REBANADAS (Fondo gris neutro, pastel dividido en 50 rodajas delgadísimas y reloj acelerado)
+  if (escenario === "estudio_pastel_cincuenta_rebanadas") {
+    return (
+      <div className="absolute inset-0 pointer-events-none z-0 overflow-hidden bg-[#1E293B]">
+        <svg className="absolute inset-0 w-full h-full" viewBox="0 0 1080 1920" preserveAspectRatio="xMidYMid slice">
+          {/* Fondo gris frío de madurez */}
+          <rect width="1080" height="1920" fill="#1E293B" />
+
+          {/* Suelo oscuro */}
+          <polygon points="-50,1460 1130,1460 1130,1920 -50,1920" fill="#0F172A" stroke="#000000" strokeWidth="8" />
+
+          {/* PASTEL DE 50 RODAJAS FINAS COMO HOJAS DE PAPEL (A LA IZQUIERDA) */}
+          <g transform="translate(340, 840)">
+            <circle cx="10" cy="10" r="260" fill="#000000" opacity="0.4" />
+            <circle cx="0" cy="0" r="260" fill="#64748B" stroke="#000000" strokeWidth="8" />
+            {/* Decenas de radios finos como papel (cada 7.2°) */}
+            {[...Array(50)].map((_, idx) => {
+              const rad = (idx * 7.2 * Math.PI) / 180;
+              return (
+                <line
+                  key={idx}
+                  x1="0"
+                  y1="0"
+                  x2={(Math.cos(rad) * 260).toFixed(1)}
+                  y2={(Math.sin(rad) * 260).toFixed(1)}
+                  stroke="#334155"
+                  strokeWidth="2.5"
+                />
+              );
+            })}
+
+            {/* RODAJITA MINÚSCULA EXTRAÍDA: 2% COMO UN FIDEO */}
+            <g transform="translate(26, -14)">
+              <polygon points="0,0 260,-18 258,0" fill="#EF4444" stroke="#000000" strokeWidth="4" />
+              <rect x="180" y="-70" width="160" height="60" rx="10" fill="#020617" stroke="#EF4444" strokeWidth="4" />
+              <text x="200" y="-30" fill="#FEF08A" fontSize="34" fontWeight="900" fontFamily="'Arial Black', sans-serif">
+                2% 🤏
+              </text>
+            </g>
+          </g>
+
+          {/* RELOJ DE ARENA INCLINADO CON CHORRO LÍQUIDO A TODA VELOCIDAD */}
+          <g transform="translate(820, 840) rotate(18)">
+            <rect x="-80" y="-240" width="160" height="24" rx="6" fill="#475569" stroke="#000000" strokeWidth="6" />
+            <rect x="-80" y="216" width="160" height="24" rx="6" fill="#475569" stroke="#000000" strokeWidth="6" />
+            <polygon points="-70,-216 70,-216 16,-10 70,216 -70,216 -16,-10" fill="#94A3B8" fillOpacity="0.6" stroke="#000000" strokeWidth="6" />
+            {/* Chorro torrencial líquido continuo de arena */}
+            <line x1="0" y1="-80" x2="0" y2="180" stroke="#D97706" strokeWidth="18" strokeLinecap="round" />
+            <polygon points="-65,216 65,216 0,40" fill="#FACC15" />
+          </g>
+
+          {/* CARTEL INFORMATIVO */}
+          <g transform="translate(140, 1340)">
+            <rect x="0" y="0" width="800" height="100" rx="18" fill="#020617" stroke="#EF4444" strokeWidth="6" />
+            <text x="40" y="42" fill="#FCA5A5" fontSize="24" fontWeight="900" fontFamily="'Arial Black', sans-serif">
+              A LOS 50 AÑOS DE EDAD:
+            </text>
+            <text x="40" y="78" fill="#F8FAFC" fontSize="30" fontWeight="900" fontFamily="'Arial Black', sans-serif">
+              1 AÑO = APENAS EL 2% DE TU EXISTENCIA
+            </text>
+          </g>
+
+          {/* Rótulo superior */}
+          <g transform="translate(80, 160)">
+            <rect x="0" y="0" width="600" height="74" rx="14" fill="#020617" stroke="#EF4444" strokeWidth="5" />
+            <text x="24" y="47" fill="#FCA5A5" fontSize="24" fontWeight="900" fontFamily="'Arial Black', sans-serif">
+              EL VALOR SUBJETIVO DEL TIEMPO
+            </text>
+          </g>
+        </svg>
+      </div>
+    );
+  }
+
+  // 4. SALA ARCHIVOS CEREBRO RUTINA (Espacio mental, archivadores, sello REPETIDO aplastando carpetas a 1 KB)
+  if (escenario === "sala_archivos_cerebro_rutina") {
+    const pressSlam = (frame % 14 < 7) ? 8 : -20;
+    return (
+      <div className="absolute inset-0 pointer-events-none z-0 overflow-hidden bg-[#0A0F1D]">
+        <svg className="absolute inset-0 w-full h-full" viewBox="0 0 1080 1920" preserveAspectRatio="xMidYMid slice">
+          {/* Fondo oscuro mental tecnológico */}
+          <rect width="1080" height="1920" fill="#0F172A" />
+
+          {/* Tuberías de datos y circuitos cerebrales */}
+          <g stroke="#334155" strokeWidth="4" opacity="0.4" fill="none">
+            <path d="M 120,300 L 120,700 L 320,700" />
+            <path d="M 960,300 L 960,700 L 760,700" />
+            <path d="M 540,240 L 540,600" />
+          </g>
+
+          {/* FILAS DE ARCHIVADORES METÁLICOS GIGANTES */}
+          <g transform="translate(100, 520)">
+            <rect x="0" y="0" width="880" height="420" rx="20" fill="#1E293B" stroke="#000000" strokeWidth="8" />
+            {/* Gavetas de archivo */}
+            {[40, 160, 280].map((gy, idx) => (
+              <g key={idx} transform={`translate(40, ${gy})`}>
+                <rect x="0" y="0" width="800" height="90" rx="10" fill="#334155" stroke="#000000" strokeWidth="5" />
+                <rect x="360" y="25" width="80" height="40" rx="6" fill="#64748B" stroke="#000000" strokeWidth="3" />
+                <text x="40" y="55" fill="#94A3B8" fontSize="22" fontWeight="900" fontFamily="monospace">
+                  {`SECTOR_0${idx + 1}: MEMORIA RETROSPECTIVA`}
+                </text>
+              </g>
+            ))}
+          </g>
+
+          {/* MAZO HIDRÁULICO APLASTANDO CARPETAS DE DÍAS ("LUNES, MARTES, MIÉRCOLES") */}
+          <g transform="translate(540, 1160)">
+            {/* Carpeta comprimida plana en la mesa */}
+            <rect x="-240" y="60" width="480" height="70" rx="12" fill="#E2E8F0" stroke="#000000" strokeWidth="6" />
+            <text x="-210" y="105" fill="#DC2626" fontSize="28" fontWeight="900" fontFamily="'Arial Black', sans-serif">
+              LUNES - VIERNES: 1 KB (RUTINA)
+            </text>
+
+            {/* Gran sello / estampador cayendo */}
+            <g transform={`translate(0, ${pressSlam})`}>
+              <rect x="-18" y="-140" width="36" height="120" rx="8" fill="#451A03" stroke="#000000" strokeWidth="6" />
+              <rect x="-220" y="-20" width="440" height="80" rx="16" fill="#DC2626" stroke="#000000" strokeWidth="8" />
+              <text x="-160" y="32" fill="#FEF08A" fontSize="36" fontWeight="900" fontFamily="'Arial Black', sans-serif">
+                ¡REPETIDO!
+              </text>
+            </g>
+          </g>
+
+          {/* Rótulo explicativo inferior */}
+          <g transform="translate(140, 1420)">
+            <rect x="0" y="0" width="800" height="100" rx="18" fill="#020617" stroke="#EF4444" strokeWidth="6" />
+            <text x="40" y="42" fill="#EF4444" fontSize="24" fontWeight="900" fontFamily="'Arial Black', sans-serif">
+              COMPRESIÓN DE DATOS CEREBRAL:
+            </text>
+            <text x="40" y="78" fill="#F8FAFC" fontSize="26" fontWeight="800" fontFamily="'Arial Black', sans-serif">
+              EL CEREBRO BORRA LOS DÍAS PREDECIBLES
+            </text>
+          </g>
+
+          {/* Rótulo superior */}
+          <g transform="translate(80, 160)">
+            <rect x="0" y="0" width="600" height="74" rx="14" fill="#020617" stroke="#EF4444" strokeWidth="5" />
+            <text x="24" y="47" fill="#FCA5A5" fontSize="24" fontWeight="900" fontFamily="'Arial Black', sans-serif">
+              EL CEREBRO AHORRA MEMORIA
+            </text>
+          </g>
+        </svg>
+      </div>
+    );
+  }
+
+  // 5. MONTAJE RECUERDOS INFANCIA 4K (Playa luminosa, mar turquesa, destellos y marco cinematográfico REC 4K)
+  if (escenario === "montaje_recuerdos_infancia_4k") {
+    const waveSlide = Math.sin(frame / 5) * 16;
+    return (
+      <div className="absolute inset-0 pointer-events-none z-0 overflow-hidden bg-[#0284C7]">
+        <svg className="absolute inset-0 w-full h-full" viewBox="0 0 1080 1920" preserveAspectRatio="xMidYMid slice">
+          <defs>
+            <linearGradient id="cieloPlayaRecuerdo" x1="0" y1="0" x2="0" y2="1">
+              <stop offset="0%" stopColor="#38BDF8" />
+              <stop offset="50%" stopColor="#7DD3FC" />
+              <stop offset="100%" stopColor="#FEF08A" />
+            </linearGradient>
+            <linearGradient id="marTurquesa" x1="0" y1="0" x2="0" y2="1">
+              <stop offset="0%" stopColor="#0284C7" />
+              <stop offset="100%" stopColor="#06B6D4" />
+            </linearGradient>
+          </defs>
+
+          {/* Cielo radiante de vacaciones */}
+          <rect width="1080" height="1920" fill="url(#cieloPlayaRecuerdo)" />
+
+          {/* Mar turquesa cristalino */}
+          <path
+            d={`M 0,920 Q 280,${880 + waveSlide} 540,920 T 1080,${900 - waveSlide} L 1080,1920 L 0,1920 Z`}
+            fill="url(#marTurquesa)"
+            stroke="#000000"
+            strokeWidth="6"
+          />
+
+          {/* Playa de arena dorada en primer plano */}
+          <path
+            d={`M -50,1320 Q 400,${1260 + waveSlide} 1130,1380 L 1130,1920 L -50,1920 Z`}
+            fill="#FDE047"
+            stroke="#000000"
+            strokeWidth="8"
+          />
+
+          {/* Sol con destellos de colores */}
+          <circle cx="860" cy="460" r="100" fill="#F59E0B" stroke="#000000" strokeWidth="6" />
+
+          {/* MARCO HOLOGRÁFICO DE VÍDEO EN 4K (ALTA RESOLUCIÓN COGNITIVA) */}
+          <g transform="translate(60, 260)">
+            <rect x="0" y="0" width="960" height="1380" rx="24" fill="none" stroke="#22C55E" strokeWidth="6" strokeDasharray="30 20" opacity="0.6" />
+            {/* Mira de cámara en esquinas */}
+            <path d="M 30,80 L 30,30 L 80,30" fill="none" stroke="#22C55E" strokeWidth="8" strokeLinecap="round" />
+            <path d="M 930,80 L 930,30 L 880,30" fill="none" stroke="#22C55E" strokeWidth="8" strokeLinecap="round" />
+            <path d="M 30,1300 L 30,1350 L 80,1350" fill="none" stroke="#22C55E" strokeWidth="8" strokeLinecap="round" />
+            <path d="M 930,1300 L 930,1350 L 880,1350" fill="none" stroke="#22C55E" strokeWidth="8" strokeLinecap="round" />
+
+            {/* Rótulo indicador REC 4K */}
+            <g transform="translate(60, 60)">
+              <rect x="0" y="0" width="380" height="60" rx="12" fill="#020617" stroke="#22C55E" strokeWidth="4" />
+              <circle cx="30" cy="30" r="12" fill="#EF4444" />
+              <text x="60" y="40" fill="#22C55E" fontSize="24" fontWeight="900" fontFamily="monospace">
+                REC: 4K MÁXIMA RES
+              </text>
+            </g>
+          </g>
+
+          {/* Rótulo superior */}
+          <g transform="translate(80, 160)">
+            <rect x="0" y="0" width="600" height="74" rx="14" fill="#020617" stroke="#22C55E" strokeWidth="5" />
+            <text x="24" y="47" fill="#86EFAC" fontSize="24" fontWeight="900" fontFamily="'Arial Black', sans-serif">
+              PRIMERAS VECES: DENSIDAD TOTAL
+            </text>
+          </g>
+        </svg>
+      </div>
+    );
+  }
+
+  // 6. RUEDA HAMSTER OFICINA GRIS (Cubículo desaturado, rueda infinita, luz azul y calendario cayendo a diciembre)
+  if (escenario === "rueda_hamster_oficina_gris") {
+    const wheelRot = (frame * 5) % 360;
+    return (
+      <div className="absolute inset-0 pointer-events-none z-0 overflow-hidden bg-[#0F172A]">
+        <svg className="absolute inset-0 w-full h-full" viewBox="0 0 1080 1920" preserveAspectRatio="xMidYMid slice">
+          {/* Fondo gris monótono */}
+          <rect width="1080" height="1920" fill="#0F172A" />
+
+          {/* Pared con ventanas de cubículo idénticas */}
+          <g fill="#1E293B" stroke="#000000" strokeWidth="4">
+            <rect x="60" y="400" width="280" height="200" rx="8" />
+            <rect x="400" y="400" width="280" height="200" rx="8" />
+            <rect x="740" y="400" width="280" height="200" rx="8" />
+          </g>
+
+          {/* GRAN RUEDA DE HÁMSTER DE OFICINA EN EL CENTRO */}
+          <g transform="translate(540, 1020)">
+            {/* Soporte triangular de la rueda */}
+            <polygon points="-240,420 240,420 0,0" fill="#334155" stroke="#000000" strokeWidth="8" />
+
+            {/* Rueda girando */}
+            <g transform={`rotate(${wheelRot})`}>
+              <circle cx="0" cy="0" r="380" fill="none" stroke="#64748B" strokeWidth="24" />
+              <circle cx="0" cy="0" r="392" fill="none" stroke="#000000" strokeWidth="6" />
+              <circle cx="0" cy="0" r="368" fill="none" stroke="#000000" strokeWidth="6" />
+              {/* Radios de la rueda */}
+              {[0, 45, 90, 135, 180, 225, 270, 315].map((ang) => {
+                const rad = (ang * Math.PI) / 180;
+                return (
+                  <line
+                    key={ang}
+                    x1="0"
+                    y1="0"
+                    x2={(Math.cos(rad) * 370).toFixed(1)}
+                    y2={(Math.sin(rad) * 370).toFixed(1)}
+                    stroke="#475569"
+                    strokeWidth="6"
+                  />
+                );
+              })}
+            </g>
+          </g>
+
+          {/* Cartel: BUCLE INFINITO DE LA RUTINA */}
+          <g transform="translate(140, 1460)">
+            <rect x="0" y="0" width="800" height="90" rx="16" fill="#020617" stroke="#64748B" strokeWidth="5" />
+            <text x="40" y="55" fill="#94A3B8" fontSize="26" fontWeight="900" fontFamily="'Arial Black', sans-serif">
+              DESPERTAR → TRABAJAR → PANTALLA → REPETIR
+            </text>
+          </g>
+
+          {/* Rótulo superior */}
+          <g transform="translate(80, 160)">
+            <rect x="0" y="0" width="600" height="74" rx="14" fill="#020617" stroke="#64748B" strokeWidth="5" />
+            <text x="24" y="47" fill="#E2E8F0" fontSize="24" fontWeight="900" fontFamily="'Arial Black', sans-serif">
+              LA RUTINA APAGA EL RELOJ MENTAL
+            </text>
+          </g>
+        </svg>
+      </div>
+    );
+  }
+
+  // 7. MONTAÑA ATARDECER DESPERTAR MENTE (Cima de montaña épica, atardecer naranja y reloj de arena ralentizado con partículas)
+  if (escenario === "montana_atardecer_despertar_mente") {
+    const goldGleam = Math.sin(frame / 6) * 0.3 + 0.7;
+    return (
+      <div className="absolute inset-0 pointer-events-none z-0 overflow-hidden bg-[#C2410C]">
+        <svg className="absolute inset-0 w-full h-full" viewBox="0 0 1080 1920" preserveAspectRatio="xMidYMid slice">
+          <defs>
+            <linearGradient id="cieloAtardecerEpico" x1="0" y1="0" x2="0" y2="1">
+              <stop offset="0%" stopColor="#4C1D95" />
+              <stop offset="40%" stopColor="#C2410C" />
+              <stop offset="80%" stopColor="#F59E0B" />
+              <stop offset="100%" stopColor="#FEF08A" />
+            </linearGradient>
+            <linearGradient id="montanaGrad" x1="0" y1="0" x2="0" y2="1">
+              <stop offset="0%" stopColor="#78350F" />
+              <stop offset="100%" stopColor="#1E293B" />
+            </linearGradient>
+          </defs>
+
+          {/* Gran cielo al atardecer */}
+          <rect width="1080" height="1920" fill="url(#cieloAtardecerEpico)" />
+
+          {/* Sol poniente enorme dorado */}
+          <circle cx="540" cy="880" r="180" fill="#FEF08A" opacity={goldGleam.toFixed(2)} />
+          <circle cx="540" cy="880" r="240" fill="none" stroke="#F59E0B" strokeWidth="8" opacity="0.4" />
+
+          {/* Cordillera de montañas al fondo */}
+          <polygon points="-50,1180 260,940 580,1120 860,920 1130,1180 1130,1920 -50,1920" fill="#831843" opacity="0.6" />
+
+          {/* Pico de montaña en primer plano */}
+          <polygon points="-50,1420 540,1260 1130,1440 1130,1920 -50,1920" fill="url(#montanaGrad)" stroke="#000000" strokeWidth="8" />
+
+          {/* Partículas doradas de tiempo que flotan suspendidas en el aire */}
+          {[
+            [220, 680], [380, 560], [700, 620], [860, 740],
+            [260, 1020], [420, 1140], [680, 1060], [820, 960]
+          ].map(([gx, gy], idx) => (
+            <circle
+              key={idx}
+              cx={gx + Math.sin(frame * 0.1 + idx) * 12}
+              cy={gy - (frame * 1.5 + idx * 30) % 220}
+              r={4 + (idx % 3)}
+              fill="#FEF08A"
+              stroke="#F59E0B"
+              strokeWidth="1.5"
+            />
+          ))}
+
+          {/* CARTEL DE CIERRE INSPIRADOR */}
+          <g transform="translate(140, 1460)">
+            <rect x="0" y="0" width="800" height="110" rx="20" fill="#020617" stroke="#22C55E" strokeWidth="6" />
+            <text x="40" y="46" fill="#22C55E" fontSize="24" fontWeight="900" fontFamily="'Arial Black', sans-serif">
+              EL ANTÍDOTO DEFINITIVO:
+            </text>
+            <text x="40" y="88" fill="#F8FAFC" fontSize="32" fontWeight="900" fontFamily="'Arial Black', sans-serif">
+              LA VIDA SE MIDE EN RECUERDOS NUEVOS
+            </text>
+          </g>
+
+          {/* Rótulo superior */}
+          <g transform="translate(80, 160)">
+            <rect x="0" y="0" width="600" height="74" rx="14" fill="#020617" stroke="#22C55E" strokeWidth="5" />
+            <text x="24" y="47" fill="#86EFAC" fontSize="24" fontWeight="900" fontFamily="'Arial Black', sans-serif">
+              EL ANTÍDOTO: DESPIERTA TU MENTE
+            </text>
+          </g>
+        </svg>
+      </div>
+    );
+  }
+
+  // ==========================================
+  // ESCENARIOS: LA PARADOJA DE FERMI Y EL GRAN SILENCIO
+  // ==========================================
+
+  // 1. COLINA NOCTURNA ESTRELLAS CONTADOR (Cielo hiperdenso estrellado, colina solitaria y contador de 300 mil millones)
+  if (escenario === "colina_nocturna_estrellas_contador") {
+    const starBlink = Math.sin(frame / 6) * 0.3 + 0.7;
+    return (
+      <div className="absolute inset-0 pointer-events-none z-0 overflow-hidden bg-[#020617]">
+        <svg className="absolute inset-0 w-full h-full" viewBox="0 0 1080 1920" preserveAspectRatio="xMidYMid slice">
+          <defs>
+            <linearGradient id="cieloNocheEstrellada" x1="0" y1="0" x2="0" y2="1">
+              <stop offset="0%" stopColor="#020617" />
+              <stop offset="50%" stopColor="#0B132B" />
+              <stop offset="100%" stopColor="#1E293B" />
+            </linearGradient>
+          </defs>
+
+          {/* Cielo estrellado profundo */}
+          <rect width="1080" height="1920" fill="url(#cieloNocheEstrellada)" />
+
+          {/* Manto de estrellas parpadeantes en el firmamento */}
+          {[
+            [120, 360], [240, 280], [380, 420], [520, 310], [680, 260], [840, 390], [960, 300],
+            [160, 560], [320, 640], [480, 520], [640, 600], [780, 540], [920, 680],
+            [100, 780], [260, 860], [420, 740], [580, 820], [740, 760], [900, 840],
+            [200, 980], [360, 1060], [540, 960], [700, 1040], [860, 980]
+          ].map(([sx, sy], idx) => (
+            <circle
+              key={idx}
+              cx={sx}
+              cy={sy}
+              r={2 + (idx % 3)}
+              fill="#F8FAFC"
+              opacity={((starBlink + (idx % 4) * 0.2) % 1).toFixed(2)}
+            />
+          ))}
+
+          {/* CONTADOR GIGANTESCO EN EL FIRMAMENTO: 300,000,000,000 */}
+          <g transform="translate(100, 480)">
+            <rect x="0" y="0" width="880" height="180" rx="24" fill="#020617" stroke="#38BDF8" strokeWidth="6" />
+            <text x="40" y="75" fill="#38BDF8" fontSize="48" fontWeight="900" fontFamily="'Arial Black', sans-serif">
+              300,000,000,000
+            </text>
+            <text x="40" y="130" fill="#FEF08A" fontSize="24" fontWeight="900" fontFamily="'Arial Black', sans-serif">
+              PLANETAS HABITABLES EN NUESTRA GALAXIA
+            </text>
+          </g>
+
+          {/* Colina oscura solitaria en primer plano */}
+          <path d="M -50,1380 Q 540,1240 1130,1420 L 1130,1920 L -50,1920 Z" fill="#0F172A" stroke="#000000" strokeWidth="8" />
+
+          {/* Rótulo superior */}
+          <g transform="translate(80, 160)">
+            <rect x="0" y="0" width="600" height="74" rx="14" fill="#020617" stroke="#38BDF8" strokeWidth="5" />
+            <text x="24" y="47" fill="#38BDF8" fontSize="24" fontWeight="900" fontFamily="'Arial Black', sans-serif">
+              EL GRAN SILENCIO DEL COSMOS
+            </text>
+          </g>
+        </svg>
+      </div>
+    );
+  }
+
+  // 2. LABORATORIO FERMI HOLOGRAMA GALAXIA (Sala circular, proyección 3D de la Vía Láctea y ramificaciones de colonización)
+  if (escenario === "laboratorio_fermi_holograma_galaxia") {
+    const galaxyRot = (frame * 1.5) % 360;
+    const pulseBranch = Math.sin(frame / 4) * 0.15 + 0.85;
+    return (
+      <div className="absolute inset-0 pointer-events-none z-0 overflow-hidden bg-[#0A0F1D]">
+        <svg className="absolute inset-0 w-full h-full" viewBox="0 0 1080 1920" preserveAspectRatio="xMidYMid slice">
+          <defs>
+            <linearGradient id="pisoLaboratorioFermi" x1="0" y1="0" x2="0" y2="1">
+              <stop offset="0%" stopColor="#1E293B" />
+              <stop offset="100%" stopColor="#0B132B" />
+            </linearGradient>
+            <radialGradient id="centroGalaxia">
+              <stop offset="0%" stopColor="#FEF08A" stopOpacity="0.95" />
+              <stop offset="40%" stopColor="#F59E0B" stopOpacity="0.6" />
+              <stop offset="100%" stopColor="#0284C7" stopOpacity="0" />
+            </radialGradient>
+          </defs>
+
+          {/* Sala de proyección oscura */}
+          <rect width="1080" height="1920" fill="#0F172A" />
+
+          {/* Cuadro histórico de Enrico Fermi */}
+          <g transform="translate(140, 360)">
+            <rect x="0" y="0" width="800" height="140" rx="18" fill="#020617" stroke="#22C55E" strokeWidth="6" />
+            <text x="40" y="55" fill="#22C55E" fontSize="28" fontWeight="900" fontFamily="'Arial Black', sans-serif">
+              ENRICO FERMI (1950):
+            </text>
+            <text x="40" y="105" fill="#F8FAFC" fontSize="30" fontWeight="900" fontFamily="'Arial Black', sans-serif">
+              "¿DÓNDE ESTÁ TODO EL MUNDO?"
+            </text>
+          </g>
+
+          {/* DISCO HOLOGRÁFICO 3D DE LA VÍA LÁCTEA EN ROTACIÓN */}
+          <g transform="translate(540, 920)">
+            {/* Base de proyección holográfica */}
+            <ellipse cx="0" cy="220" rx="380" ry="90" fill="#1E293B" stroke="#000000" strokeWidth="8" />
+            <ellipse cx="0" cy="220" rx="320" ry="70" fill="#020617" stroke="#22C55E" strokeWidth="4" />
+
+            {/* Haz de luz cónico ascendente */}
+            <polygon points="-320,220 320,220 200,-160 -200,-160" fill="#0284C7" opacity="0.12" />
+
+            {/* Disco espiral galáctico */}
+            <g transform={`rotate(${galaxyRot})`}>
+              <ellipse cx="0" cy="0" rx="360" ry="140" fill="none" stroke="#38BDF8" strokeWidth="3" strokeDasharray="14 10" opacity="0.5" />
+              <ellipse cx="0" cy="0" rx="260" ry="100" fill="none" stroke="#22C55E" strokeWidth="4" opacity="0.6" />
+              <circle cx="0" cy="0" r="45" fill="url(#centroGalaxia)" />
+
+              {/* Ramificaciones luminosas de colonización interestelar */}
+              <g stroke="#22C55E" strokeWidth="5" fill="none" opacity={pulseBranch.toFixed(2)}>
+                <path d="M 0,0 Q 80,-60 180,-40 T 290,-80" />
+                <path d="M 0,0 Q -90,50 -190,40 T -280,70" />
+                <path d="M 0,0 Q 120,70 210,60" />
+                <path d="M 0,0 Q -110,-70 -220,-50" />
+              </g>
+              <circle cx="290" cy="-80" r="12" fill="#22C55E" stroke="#000000" strokeWidth="3" />
+              <circle cx="-280" cy="70" r="12" fill="#22C55E" stroke="#000000" strokeWidth="3" />
+            </g>
+          </g>
+
+          {/* Suelo del laboratorio */}
+          <polygon points="-50,1440 1130,1440 1130,1920 -50,1920" fill="url(#pisoLaboratorioFermi)" stroke="#000000" strokeWidth="8" />
+
+          {/* Rótulo superior */}
+          <g transform="translate(80, 160)">
+            <rect x="0" y="0" width="600" height="74" rx="14" fill="#020617" stroke="#22C55E" strokeWidth="5" />
+            <text x="24" y="47" fill="#86EFAC" fontSize="24" fontWeight="900" fontFamily="'Arial Black', sans-serif">
+              LA PREGUNTA DE ENRICO FERMI
+            </text>
+          </g>
+        </svg>
+      </div>
+    );
+  }
+
+  // 3. ESTACIÓN RADIOTELESCOPIO FLATLINE (Antena parabólica gigante, cielo crepuscular frío y osciloscopio en línea plana)
+  if (escenario === "estacion_radiotelescopio_flatline") {
+    return (
+      <div className="absolute inset-0 pointer-events-none z-0 overflow-hidden bg-[#030712]">
+        <svg className="absolute inset-0 w-full h-full" viewBox="0 0 1080 1920" preserveAspectRatio="xMidYMid slice">
+          <defs>
+            <linearGradient id="cieloCrepusculoFrio" x1="0" y1="0" x2="0" y2="1">
+              <stop offset="0%" stopColor="#0B132B" />
+              <stop offset="60%" stopColor="#1E293B" />
+              <stop offset="100%" stopColor="#334155" />
+            </linearGradient>
+          </defs>
+
+          {/* Cielo crepuscular frío */}
+          <rect width="1080" height="1920" fill="url(#cieloCrepusculoFrio)" />
+
+          {/* GRAN PLATO DE RADIOTELESCOPIO PARABÓLICO EN EL FONDO (A LA DERECHA) */}
+          <g transform="translate(740, 720) rotate(-22)">
+            {/* Soporte de la antena */}
+            <polygon points="-80,320 80,320 0,160" fill="#475569" stroke="#000000" strokeWidth="8" />
+            {/* Plato reflector parabólico */}
+            <path d="M -320,160 Q 0,40 320,160 Q 0,0 -320,160 Z" fill="#E2E8F0" stroke="#000000" strokeWidth="8" />
+            {/* Celosía de la antena */}
+            <line x1="-200" y1="120" x2="200" y2="120" stroke="#94A3B8" strokeWidth="4" />
+            {/* Receptor en el foco central */}
+            <line x1="0" y1="60" x2="0" y2="-120" stroke="#000000" strokeWidth="6" />
+            <circle cx="0" cy="-120" r="22" fill="#DC2626" stroke="#000000" strokeWidth="4" />
+          </g>
+
+          {/* MONITOR GIGANTE DE OSCILOSCOPIO SETI EN PRIMER PLANO */}
+          <g transform="translate(100, 1020)">
+            <rect x="0" y="0" width="880" height="380" rx="24" fill="#020617" stroke="#38BDF8" strokeWidth="8" />
+            {/* Rejilla de coordenadas verdes del osciloscopio */}
+            <g stroke="#14532D" strokeWidth="2" opacity="0.6">
+              {[60, 120, 180, 240, 300].map((ly, idx) => (
+                <line key={idx} x1="40" y1={ly} x2="840" y2={ly} />
+              ))}
+              {[140, 240, 340, 440, 540, 640, 740].map((lx, idx) => (
+                <line key={idx} x1={lx} y1="40" x2={lx} y2="340" />
+              ))}
+            </g>
+
+            {/* LÍNEA PLANA CONTINUA (FLATLINE: CERO SEÑAL EN 70 AÑOS) */}
+            <line x1="40" y1="190" x2="840" y2="190" stroke="#22C55E" strokeWidth="8" strokeLinecap="round" />
+
+            {/* Rótulo de alerta de señal */}
+            <g transform="translate(60, 50)">
+              <rect x="0" y="0" width="360" height="54" rx="10" fill="#020617" stroke="#EF4444" strokeWidth="4" />
+              <text x="25" y="36" fill="#EF4444" fontSize="22" fontWeight="900" fontFamily="monospace">
+                STATUS: FLATLINE 0.0 Hz
+              </text>
+            </g>
+            <text x="60" y="320" fill="#F8FAFC" fontSize="24" fontWeight="800">
+              70 AÑOS DE BÚSQUEDA SETI: CERO MENSAJES
+            </text>
+          </g>
+
+          {/* Suelo de concreto */}
+          <polygon points="-50,1460 1130,1460 1130,1920 -50,1920" fill="#1E293B" stroke="#000000" strokeWidth="8" />
+
+          {/* Rótulo superior */}
+          <g transform="translate(80, 160)">
+            <rect x="0" y="0" width="600" height="74" rx="14" fill="#020617" stroke="#38BDF8" strokeWidth="5" />
+            <text x="24" y="47" fill="#38BDF8" fontSize="24" fontWeight="900" fontFamily="'Arial Black', sans-serif">
+              DÉCADAS DE ESCUCHA: CERO MENSAJES
+            </text>
+          </g>
+        </svg>
+      </div>
+    );
+  }
+
+  // 4. ESCALERA EVOLUTIVA GRAN FILTRO (Cuatro peldaños hacia el cosmos bloqueados por un muro colosal de obsidiana con picos)
+  if (escenario === "escalera_evolutiva_gran_filtro") {
+    const smokeDrift = (frame * 2) % 120;
+    return (
+      <div className="absolute inset-0 pointer-events-none z-0 overflow-hidden bg-[#0A050A]">
+        <svg className="absolute inset-0 w-full h-full" viewBox="0 0 1080 1920" preserveAspectRatio="xMidYMid slice">
+          {/* Fondo oscuro dramático */}
+          <rect width="1080" height="1920" fill="#0B0914" />
+
+          {/* LÍNEA DE PELDAÑOS EVOLUTIVOS EN ASCENSO */}
+          <g>
+            {/* Peldaño 1: Sopa primordial */}
+            <rect x="60" y="1320" width="220" height="180" fill="#1E293B" stroke="#000000" strokeWidth="6" />
+            <text x="80" y="1370" fill="#38BDF8" fontSize="20" fontWeight="900" fontFamily="'Arial Black', sans-serif">
+              1. VIDA CELULAR
+            </text>
+
+            {/* Peldaño 2: Vida compleja */}
+            <rect x="280" y="1160" width="220" height="340" fill="#334155" stroke="#000000" strokeWidth="6" />
+            <text x="300" y="1210" fill="#22C55E" fontSize="20" fontWeight="900" fontFamily="'Arial Black', sans-serif">
+              2. VIDA COMPLEJA
+            </text>
+
+            {/* Peldaño 3: Inteligencia actual */}
+            <rect x="500" y="1000" width="220" height="500" fill="#475569" stroke="#000000" strokeWidth="6" />
+            <text x="520" y="1050" fill="#FEF08A" fontSize="20" fontWeight="900" fontFamily="'Arial Black', sans-serif">
+              3. INTELIGENCIA
+            </text>
+
+            {/* Peldaño 4: Civilización interestelar al otro lado */}
+            <rect x="800" y="840" width="220" height="660" fill="#0284C7" stroke="#000000" strokeWidth="6" />
+            <text x="820" y="890" fill="#FFFFFF" fontSize="18" fontWeight="900" fontFamily="'Arial Black', sans-serif">
+              4. INTERESTELAR
+            </text>
+          </g>
+
+          {/* EL GRAN FILTRO: MURO MONOLÍTICO NEGRO ENTRE EL PELDAÑO 3 Y 4 */}
+          <g transform="translate(710, 480)">
+            <rect x="0" y="0" width="90" height="1020" fill="#000000" stroke="#EF4444" strokeWidth="8" />
+            {/* Picos afilados en la cima del muro */}
+            <polygon points="0,0 22,-40 45,0 68,-40 90,0" fill="#000000" stroke="#EF4444" strokeWidth="5" />
+            {/* Rótulo vertical: GRAN FILTRO */}
+            <g transform="translate(55, 380) rotate(90)">
+              <text x="0" y="0" fill="#FEF08A" fontSize="42" fontWeight="900" fontFamily="'Arial Black', sans-serif">
+                EL GRAN FILTRO
+              </text>
+            </g>
+          </g>
+
+          {/* Humo saliendo del impacto contra el muro */}
+          <circle cx="680" cy={980 - smokeDrift} r="28" fill="#64748B" opacity="0.4" />
+          <circle cx="700" cy={930 - smokeDrift} r="38" fill="#64748B" opacity="0.3" />
+
+          {/* Rótulo superior */}
+          <g transform="translate(80, 160)">
+            <rect x="0" y="0" width="600" height="74" rx="14" fill="#020617" stroke="#EF4444" strokeWidth="5" />
+            <text x="24" y="47" fill="#FCA5A5" fontSize="24" fontWeight="900" fontFamily="'Arial Black', sans-serif">
+              EL GRAN FILTRO: BARRERA LETAL
+            </text>
+          </g>
+        </svg>
+      </div>
+    );
+  }
+
+  // 5. ABISMO FUTURO AMENAZAS TECNOLÓGICAS (Borde del abismo, advertencias parpadeantes: hongo nuclear, IA sin control)
+  if (escenario === "abismo_futuro_amenazas_tecnologicas") {
+    const alertGlow = (frame % 8 < 4);
+    return (
+      <div className="absolute inset-0 pointer-events-none z-0 overflow-hidden bg-[#0A050A]">
+        <svg className="absolute inset-0 w-full h-full" viewBox="0 0 1080 1920" preserveAspectRatio="xMidYMid slice">
+          {/* Fondo de abismo en degradado rojo oscuro */}
+          <rect width="1080" height="1920" fill="#0B0914" />
+
+          {/* PRECIPICIO EN EL LADO IZQUIERDO */}
+          <polygon points="-50,1180 440,1180 340,1920 -50,1920" fill="#1E293B" stroke="#000000" strokeWidth="8" />
+
+          {/* ABISMO PROFUNDO A LA DERECHA CON NIEBLA TÉRMICA */}
+          <rect x="440" y="1180" width="690" height="740" fill="#020617" />
+          <line x1="440" y1="1180" x2="340" y2="1920" stroke="#EF4444" strokeWidth="8" />
+
+          {/* HOLOGRAMAS DE AMENAZAS EMERGENTES EN EL ABISMO */}
+          <g transform="translate(560, 520)">
+            {/* Panel 1: Amenaza nuclear */}
+            <g transform="translate(0, 0)">
+              <rect x="0" y="0" width="440" height="150" rx="20" fill="#020617" stroke={alertGlow ? '#DC2626' : '#7F1D1D'} strokeWidth="6" />
+              <text x="30" y="55" fill="#EF4444" fontSize="26" fontWeight="900" fontFamily="'Arial Black', sans-serif">
+                ☢️ GUERRA NUCLEAR
+              </text>
+              <text x="30" y="105" fill="#F8FAFC" fontSize="20" fontWeight="800">
+                AUTODESTRUCCIÓN ATÓMICA
+              </text>
+            </g>
+
+            {/* Panel 2: Inteligencia Artificial Fuera de Control */}
+            <g transform="translate(0, 200)">
+              <rect x="0" y="0" width="440" height="150" rx="20" fill="#020617" stroke={alertGlow ? '#F59E0B' : '#78350F'} strokeWidth="6" />
+              <text x="30" y="55" fill="#F59E0B" fontSize="26" fontWeight="900" fontFamily="'Arial Black', sans-serif">
+                🤖 I.A. DESCONTROLADA
+              </text>
+              <text x="30" y="105" fill="#F8FAFC" fontSize="20" fontWeight="800">
+                COLAPSO TECNOLÓGICO
+              </text>
+            </g>
+
+            {/* Panel 3: Colapso Biosférico */}
+            <g transform="translate(0, 400)">
+              <rect x="0" y="0" width="440" height="150" rx="20" fill="#020617" stroke={alertGlow ? '#DC2626' : '#7F1D1D'} strokeWidth="6" />
+              <text x="30" y="55" fill="#EF4444" fontSize="26" fontWeight="900" fontFamily="'Arial Black', sans-serif">
+                🔥 COLAPSO PLANETARIO
+              </text>
+              <text x="30" y="105" fill="#F8FAFC" fontSize="20" fontWeight="800">
+                EXTINCIÓN DE RECURSOS
+              </text>
+            </g>
+          </g>
+
+          {/* Rótulo superior */}
+          <g transform="translate(80, 160)">
+            <rect x="0" y="0" width="600" height="74" rx="14" fill="#020617" stroke="#EF4444" strokeWidth="5" />
+            <text x="24" y="47" fill="#FCA5A5" fontSize="24" fontWeight="900" fontFamily="'Arial Black', sans-serif">
+              ¿NUESTRA PROPIA EXTINCIÓN?
+            </text>
+          </g>
+        </svg>
+      </div>
+    );
+  }
+
+  // 6. BOSQUE OSCURO DEPREDADORES SILENCIO (Árboles oscuros, niebla baja y docenas de ojos rojos acechantes en la penumbra)
+  if (escenario === "bosque_oscuro_depredadores_silencio") {
+    const eyeBlink = (frame % 12 < 6);
+    return (
+      <div className="absolute inset-0 pointer-events-none z-0 overflow-hidden bg-[#020617]">
+        <svg className="absolute inset-0 w-full h-full" viewBox="0 0 1080 1920" preserveAspectRatio="xMidYMid slice">
+          <defs>
+            <linearGradient id="nieblaBosqueOscuro" x1="0" y1="0" x2="0" y2="1">
+              <stop offset="0%" stopColor="#0B132B" stopOpacity="0" />
+              <stop offset="70%" stopColor="#020617" stopOpacity="0.8" />
+              <stop offset="100%" stopColor="#000000" />
+            </linearGradient>
+          </defs>
+
+          {/* Fondo nocturno cerrado */}
+          <rect width="1080" height="1920" fill="#020617" />
+
+          {/* SILUETAS DE ÁRBOLES CÓSMICOS RETORCIDOS */}
+          <g fill="#0B132B" stroke="#000000" strokeWidth="8">
+            <path d="M 60,1920 L 90,620 L 40,420 L 90,620 L 140,500 L 90,620 L 120,1920 Z" />
+            <path d="M 320,1920 L 350,560 L 290,380 L 350,560 L 410,440 L 350,560 L 380,1920 Z" />
+            <path d="M 720,1920 L 750,500 L 680,320 L 750,500 L 820,400 L 750,500 L 780,1920 Z" />
+            <path d="M 960,1920 L 990,580 L 940,420 L 990,580 L 1040,480 L 990,580 L 1020,1920 Z" />
+          </g>
+
+          {/* PARES DE OJOS ROJOS ACECHANTES EN LA OSCURIDAD */}
+          {[
+            [180, 520], [260, 740], [460, 480], [620, 620], [840, 560], [920, 720],
+            [140, 880], [420, 840], [680, 820], [880, 920]
+          ].map(([ex, ey], idx) => (
+            <g key={idx} transform={`translate(${ex}, ${ey})`} opacity={eyeBlink ? 0.95 : 0.4}>
+              <ellipse cx="-10" cy="0" rx="7" ry="4" fill="#DC2626" />
+              <ellipse cx="10" cy="0" rx="7" ry="4" fill="#DC2626" />
+              <circle cx="-10" cy="0" r="2" fill="#FEF08A" />
+              <circle cx="10" cy="0" r="2" fill="#FEF08A" />
+            </g>
+          ))}
+
+          {/* Niebla baja espesa en el suelo */}
+          <rect y="1260" width="1080" height="660" fill="url(#nieblaBosqueOscuro)" />
+
+          {/* Rótulo superior */}
+          <g transform="translate(80, 160)">
+            <rect x="0" y="0" width="600" height="74" rx="14" fill="#020617" stroke="#DC2626" strokeWidth="5" />
+            <text x="24" y="47" fill="#FCA5A5" fontSize="24" fontWeight="900" fontFamily="'Arial Black', sans-serif">
+              TEORÍA DEL BOSQUE OSCURO
+            </text>
+          </g>
+        </svg>
+      </div>
+    );
+  }
+
+  // 7. ESPACIO ORBITAL PÁLIDO PUNTO AZUL (Gravedad cero, estrellas tenues, esfera de la Tierra protegida y calidez final)
+  if (escenario === "espacio_orbital_palido_punto_azul") {
+    const earthGlow = Math.sin(frame / 6) * 4 + 24;
+    return (
+      <div className="absolute inset-0 pointer-events-none z-0 overflow-hidden bg-[#000000]">
+        <svg className="absolute inset-0 w-full h-full" viewBox="0 0 1080 1920" preserveAspectRatio="xMidYMid slice">
+          <defs>
+            <radialGradient id="haloTierraProtegida">
+              <stop offset="0%" stopColor="#38BDF8" stopOpacity="0.75" />
+              <stop offset="50%" stopColor="#0284C7" stopOpacity="0.3" />
+              <stop offset="100%" stopColor="#000000" stopOpacity="0" />
+            </radialGradient>
+          </defs>
+
+          {/* Negro espacial puro */}
+          <rect width="1080" height="1920" fill="#000000" />
+
+          {/* Estrellas distantes en calma */}
+          {[
+            [140, 320], [280, 480], [420, 260], [680, 360], [840, 240], [940, 460],
+            [180, 820], [320, 720], [760, 780], [900, 860],
+            [120, 1260], [260, 1420], [800, 1340], [920, 1220], [860, 1540]
+          ].map(([sx, sy], idx) => (
+            <circle key={idx} cx={sx} cy={sy} r={1.5 + (idx % 2)} fill="#F8FAFC" opacity="0.6" />
+          ))}
+
+          {/* RESPLANDOR AZUL EN EL CENTRO ALREDEDOR DEL PLANETA TIERRA */}
+          <circle cx="540" cy="980" r={earthGlow + 340} fill="url(#haloTierraProtegida)" />
+
+          {/* CARTEL DE CIERRE HUMANISTA */}
+          <g transform="translate(140, 1460)">
+            <rect x="0" y="0" width="800" height="110" rx="20" fill="#020617" stroke="#38BDF8" strokeWidth="6" />
+            <text x="40" y="46" fill="#38BDF8" fontSize="24" fontWeight="900" fontFamily="'Arial Black', sans-serif">
+              NUESTRO ÚNICO HOGAR:
+            </text>
+            <text x="40" y="88" fill="#F8FAFC" fontSize="32" fontWeight="900" fontFamily="'Arial Black', sans-serif">
+              CUIDEMOS EL PÁLIDO PUNTO AZUL
+            </text>
+          </g>
+
+          {/* Rótulo superior */}
+          <g transform="translate(80, 160)">
+            <rect x="0" y="0" width="600" height="74" rx="14" fill="#020617" stroke="#38BDF8" strokeWidth="5" />
+            <text x="24" y="47" fill="#7DD3FC" fontSize="24" fontWeight="900" fontFamily="'Arial Black', sans-serif">
+              EL PÁLIDO PUNTO AZUL
+            </text>
+          </g>
+        </svg>
+      </div>
+    );
+  }
+
+  // 8. ESTACIÓN TELEGRÁFICA VICTORIANA 1859
+  if (escenario === "estacion_telegrafo_victoriana_1859") {
+    const sparkFlicker = Math.sin(frame * 0.8) > 0.2;
+    const conduitGlow = Math.sin(frame * 0.2) * 5 + 15;
+    return (
+      <div className="absolute inset-0 pointer-events-none z-0 overflow-hidden bg-[#1E1611]">
+        <svg className="absolute inset-0 w-full h-full" viewBox="0 0 1080 1920" preserveAspectRatio="xMidYMid slice">
+          <defs>
+            <linearGradient id="paredMadera1859" x1="0" y1="0" x2="0" y2="1">
+              <stop offset="0%" stopColor="#2B1D15" />
+              <stop offset="65%" stopColor="#1C120C" />
+              <stop offset="100%" stopColor="#120A06" />
+            </linearGradient>
+            <linearGradient id="sueloTablones1859" x1="0" y1="0" x2="0" y2="1">
+              <stop offset="0%" stopColor="#3F291D" />
+              <stop offset="100%" stopColor="#1F120A" />
+            </linearGradient>
+            <radialGradient id="luzLamparaAceite" cx="0.82" cy="0.32" r="0.45">
+              <stop offset="0%" stopColor="#F59E0B" stopOpacity="0.55" />
+              <stop offset="45%" stopColor="#D97706" stopOpacity="0.2" />
+              <stop offset="100%" stopColor="#000000" stopOpacity="0" />
+            </radialGradient>
+          </defs>
+
+          {/* Pared rústica de madera */}
+          <rect width="1080" height="1320" fill="url(#paredMadera1859)" />
+          {/* Líneas de tablones de madera */}
+          {[120, 240, 360, 480, 600, 720, 840, 960, 1080, 1200].map((y, i) => (
+            <line key={i} x1="0" y1={y} x2="1080" y2={y} stroke="#0D0704" strokeWidth="4" opacity="0.7" />
+          ))}
+
+          {/* Ventana hacia la noche con postes telegráficos */}
+          <g transform="translate(80, 340)">
+            <rect width="280" height="420" rx="140" fill="#0F172A" stroke="#451A03" strokeWidth="12" />
+            {/* Vidrio con cielo crepuscular */}
+            <path d="M 12 140 A 128 128 0 0 1 268 140 L 268 408 L 12 408 Z" fill="#1E293B" />
+            {/* Silueta de poste telegráfico exterior con cables */}
+            <line x1="140" y1="180" x2="140" y2="408" stroke="#020617" strokeWidth="8" />
+            <line x1="80" y1="220" x2="200" y2="220" stroke="#020617" strokeWidth="6" />
+            <path d="M 20 210 Q 140 250 260 210" fill="none" stroke="#020617" strokeWidth="3" />
+            {/* Marco de cruz */}
+            <line x1="140" y1="12" x2="140" y2="408" stroke="#451A03" strokeWidth="8" />
+            <line x1="12" y1="240" x2="268" y2="240" stroke="#451A03" strokeWidth="8" />
+          </g>
+
+          {/* Resplandor de lámpara de aceite victoriana */}
+          <rect width="1080" height="1320" fill="url(#luzLamparaAceite)" />
+
+          {/* Lámpara de aceite colgante en la derecha */}
+          <g transform="translate(880, 180)">
+            <line x1="0" y1="-180" x2="0" y2="60" stroke="#78350F" strokeWidth="5" />
+            <path d="M -30,60 L 30,60 L 45,110 L -45,110 Z" fill="#92400E" stroke="#000000" strokeWidth="5" />
+            <ellipse cx="0" cy="110" rx="35" ry="12" fill="#B45309" stroke="#000000" strokeWidth="4" />
+            <path d="M -15,110 Q 0,160 0,180 Q 0,160 15,110 Z" fill="#FDE047" opacity="0.85" />
+          </g>
+
+          {/* Tuberías/cables de cobre en la pared con chispas inducidas */}
+          <path d="M 0,260 L 640,260 L 640,980 L 1080,980" fill="none" stroke="#B45309" strokeWidth="10" />
+          <path d="M 0,280 L 620,280 L 620,1000 L 1080,1000" fill="none" stroke="#78350F" strokeWidth="6" />
+          {/* Chispas espontáneas en los bornes */}
+          {sparkFlicker && (
+            <g transform="translate(630, 620)">
+              <circle cx="0" cy="0" r={conduitGlow} fill="#00F0FF" opacity="0.6" />
+              <path d="M -20,-15 L 0,0 L 25,-20 L 10,15 L 30,25" fill="none" stroke="#FFFFFF" strokeWidth="4" />
+            </g>
+          )}
+
+          {/* Suelo de tablones rústicos */}
+          <rect y="1320" width="1080" height="600" fill="url(#sueloTablones1859)" />
+          <line x1="0" y1="1320" x2="1080" y2="1320" stroke="#000000" strokeWidth="8" />
+          {[1440, 1580, 1720, 1860].map((y, i) => (
+            <line key={i} x1="0" y1={y} x2="1080" y2={y} stroke="#0D0704" strokeWidth="5" opacity="0.8" />
+          ))}
+
+          {/* Rótulo superior */}
+          <g transform="translate(80, 160)">
+            <rect x="0" y="0" width="620" height="74" rx="14" fill="#1E1611" stroke="#F59E0B" strokeWidth="5" />
+            <text x="24" y="47" fill="#FDE047" fontSize="24" fontWeight="900" fontFamily="'Arial Black', sans-serif">
+              ESTACIÓN TELEGRÁFICA 1859
+            </text>
+          </g>
+        </svg>
+      </div>
+    );
+  }
+
+  // 9. CAMPO AURORAS CARIBE MEDIANOCHE (Auroras rojas y verdes tropicales, cerca rústica y gallo)
+  if (escenario === "campo_auroras_caribe_medianoche") {
+    const wave1 = Math.sin(frame * 0.04) * 40;
+    const wave2 = Math.sin(frame * 0.05 + 1.2) * 55;
+    const wave3 = Math.cos(frame * 0.035) * 45;
+    return (
+      <div className="absolute inset-0 pointer-events-none z-0 overflow-hidden bg-[#0A0518]">
+        <svg className="absolute inset-0 w-full h-full" viewBox="0 0 1080 1920" preserveAspectRatio="xMidYMid slice">
+          <defs>
+            <linearGradient id="auroraVerde" x1="0" y1="0" x2="0" y2="1">
+              <stop offset="0%" stopColor="#10B981" stopOpacity="0.85" />
+              <stop offset="45%" stopColor="#059669" stopOpacity="0.45" />
+              <stop offset="100%" stopColor="#064E3B" stopOpacity="0" />
+            </linearGradient>
+            <linearGradient id="auroraRoja" x1="0" y1="0" x2="0" y2="1">
+              <stop offset="0%" stopColor="#E11D48" stopOpacity="0.8" />
+              <stop offset="50%" stopColor="#BE123C" stopOpacity="0.4" />
+              <stop offset="100%" stopColor="#881337" stopOpacity="0" />
+            </linearGradient>
+            <linearGradient id="colinaCaribe" x1="0" y1="0" x2="0" y2="1">
+              <stop offset="0%" stopColor="#1E293B" />
+              <stop offset="40%" stopColor="#0F172A" />
+              <stop offset="100%" stopColor="#020617" />
+            </linearGradient>
+          </defs>
+
+          {/* Firmamento nocturno profundo con estrellas */}
+          <rect width="1080" height="1920" fill="#0A0518" />
+          {[
+            [120, 240], [280, 180], [460, 310], [680, 200], [840, 290], [960, 170],
+            [190, 520], [380, 480], [620, 540], [820, 470], [920, 610]
+          ].map(([sx, sy], i) => (
+            <circle key={i} cx={sx} cy={sy} r={1.5 + (i % 2)} fill="#FFFFFF" opacity="0.6" />
+          ))}
+
+          {/* CORTINAS ONDULANTES DE AURORAS BOREALES GIGANTES */}
+          {/* Capa 1: Resplandor rojo carmesí alto */}
+          <path
+            d={`M -80,100 Q 240,${220 + wave1} 540,${160 + wave2} T 1160,${200 + wave3} L 1160,960 L -80,960 Z`}
+            fill="url(#auroraRoja)"
+          />
+          {/* Capa 2: Resplandor verde esmeralda brillante */}
+          <path
+            d={`M -80,260 Q 300,${420 + wave2} 600,${340 + wave1} T 1160,${400 + wave2} L 1160,1100 L -80,1100 Z`}
+            fill="url(#auroraVerde)"
+          />
+          {/* Capa 3: Rayos verticales de luz titilante */}
+          {[160, 340, 520, 700, 880].map((rx, idx) => (
+            <line
+              key={idx}
+              x1={rx + Math.sin(frame * 0.08 + idx) * 20}
+              y1="120"
+              x2={rx + Math.sin(frame * 0.08 + idx) * 35}
+              y2="880"
+              stroke="#A7F3D0"
+              strokeWidth="16"
+              opacity={0.35 + Math.sin(frame * 0.1 + idx) * 0.2}
+              strokeDasharray="40 20"
+            />
+          ))}
+
+          {/* Siluetas de palmeras tropicales en el horizonte (Caribe / Latitud 20°N) */}
+          <g transform="translate(120, 1020)" fill="#0F172A">
+            {/* Tronco */}
+            <path d="M 40,320 Q 70,160 100,0 L 115,0 Q 85,160 55,320 Z" />
+            {/* Hojas */}
+            <path d="M 105,0 Q 30,-50 -20,-30 Q 30,-20 105,0" />
+            <path d="M 105,0 Q 80,-80 40,-90 Q 80,-50 105,0" />
+            <path d="M 105,0 Q 170,-80 210,-60 Q 160,-40 105,0" />
+            <path d="M 105,0 Q 190,-30 230,10 Q 170,0 105,0" />
+          </g>
+
+          {/* Colina iluminada por el resplandor de medianoche */}
+          <path d="M -100,1260 Q 420,1140 1180,1260 L 1180,1920 L -100,1920 Z" fill="url(#colinaCaribe)" />
+
+          {/* Cerca de madera con poste */}
+          <g transform="translate(680, 1140)">
+            <line x1="-120" y1="90" x2="320" y2="90" stroke="#020617" strokeWidth="10" />
+            <line x1="-120" y1="170" x2="320" y2="170" stroke="#020617" strokeWidth="10" />
+            <rect x="80" y="20" width="30" height="240" fill="#020617" stroke="#000000" strokeWidth="4" />
+
+            {/* Silueta de gallo cantando a deshoras */}
+            <g transform="translate(95, 20) scale(0.65)">
+              {/* Cuerpo y cola */}
+              <ellipse cx="0" cy="-25" rx="22" ry="16" fill="#020617" />
+              <path d="M -18,-30 Q -50,-60 -35,-80 Q -15,-50 -10,-35 Z" fill="#020617" />
+              <path d="M -22,-25 Q -60,-45 -45,-70 Q -20,-35 -12,-25 Z" fill="#020617" />
+              {/* Cuello y cabeza cantando hacia arriba */}
+              <path d="M 10,-32 Q 22,-55 30,-70 L 42,-65 Q 26,-40 16,-25 Z" fill="#020617" />
+              <circle cx="34" cy="-72" r="10" fill="#020617" />
+              {/* Pico abierto kikiriki */}
+              <path d="M 42,-74 L 56,-80 L 46,-70 L 54,-64 L 40,-66 Z" fill="#020617" />
+              {/* Cresta */}
+              <path d="M 26,-80 Q 30,-94 38,-92 Q 42,-80 34,-74 Z" fill="#DC2626" />
+              {/* Ondas sonoras de canto */}
+              <path
+                d="M 64,-74 Q 75,-82 72,-92"
+                fill="none"
+                stroke="#FDE047"
+                strokeWidth="3"
+                opacity={Math.sin(frame * 0.3) > 0 ? 0.9 : 0.2}
+              />
+            </g>
+          </g>
+
+          {/* Rótulo superior */}
+          <g transform="translate(80, 160)">
+            <rect x="0" y="0" width="620" height="74" rx="14" fill="#020617" stroke="#10B981" strokeWidth="5" />
+            <text x="24" y="47" fill="#6EE7B7" fontSize="24" fontWeight="900" fontFamily="'Arial Black', sans-serif">
+              AURORAS EN EL CARIBE (1859)
+            </text>
+          </g>
+        </svg>
+      </div>
+    );
+  }
+
+  // 10. OBSERVATORIO ASTRONÓMICO DE CARRINGTON (Cúpula clásica, telescopio de latón y pantalla solar)
+  if (escenario === "observatorio_astronomico_carrington_1859") {
+    const flarePulse = Math.sin(frame * 0.4) * 6 + 18;
+    return (
+      <div className="absolute inset-0 pointer-events-none z-0 overflow-hidden bg-[#1E110A]">
+        <svg className="absolute inset-0 w-full h-full" viewBox="0 0 1080 1920" preserveAspectRatio="xMidYMid slice">
+          <defs>
+            <linearGradient id="cupulaMadera" x1="0" y1="0" x2="0" y2="1">
+              <stop offset="0%" stopColor="#3B1E13" />
+              <stop offset="70%" stopColor="#1E0E08" />
+              <stop offset="100%" stopColor="#100704" />
+            </linearGradient>
+            <radialGradient id="solProyectado" cx="0.5" cy="0.5" r="0.5">
+              <stop offset="0%" stopColor="#FEF08A" />
+              <stop offset="75%" stopColor="#F59E0B" />
+              <stop offset="100%" stopColor="#D97706" />
+            </radialGradient>
+          </defs>
+
+          {/* Cúpula de madera */}
+          <rect width="1080" height="1920" fill="url(#cupulaMadera)" />
+          {/* Costillas de la cúpula */}
+          {[160, 360, 560, 760, 960].map((cx, i) => (
+            <path key={i} d={`M ${cx},0 Q 540,800 ${cx},1400`} fill="none" stroke="#0A0402" strokeWidth="8" opacity="0.6" />
+          ))}
+
+          {/* Abertura de la cúpula hacia el cielo crepuscular */}
+          <path d="M 440,0 L 440,780 L 640,780 L 640,0 Z" fill="#090E1A" stroke="#B45309" strokeWidth="10" />
+          {/* Estrellas diurnas/crepusculares a través de la rendija */}
+          <circle cx="500" cy="220" r="2" fill="#FFFFFF" />
+          <circle cx="580" cy="380" r="2.5" fill="#FFFFFF" />
+          <circle cx="520" cy="560" r="1.5" fill="#FFFFFF" />
+
+          {/* Gran telescopio de latón victoriano montado */}
+          <g transform="translate(540, 520) rotate(-32)">
+            {/* Tubo principal */}
+            <rect x="-35" y="-380" width="70" height="760" rx="8" fill="#D97706" stroke="#000000" strokeWidth="6" />
+            {/* Anillos dorados decorativos */}
+            <rect x="-38" y="-220" width="76" height="24" fill="#FDE047" stroke="#000000" strokeWidth="4" />
+            <rect x="-38" y="100" width="76" height="24" fill="#FDE047" stroke="#000000" strokeWidth="4" />
+            {/* Ocular */}
+            <rect x="-18" y="380" width="36" height="90" fill="#78350F" stroke="#000000" strokeWidth="5" />
+          </g>
+
+          {/* Soporte/eje montura ecuatorial de hierro fundido */}
+          <path d="M 480,680 L 600,680 L 660,1400 L 420,1400 Z" fill="#0F172A" stroke="#000000" strokeWidth="8" />
+
+          {/* Pantalla blanca de proyección solar donde Carrington observa */}
+          <g transform="translate(680, 760)">
+            {/* Trípode de la pantalla */}
+            <line x1="140" y1="280" x2="60" y2="640" stroke="#451A03" strokeWidth="8" />
+            <line x1="140" y1="280" x2="220" y2="640" stroke="#451A03" strokeWidth="8" />
+            {/* Marco de pantalla */}
+            <rect x="0" y="0" width="280" height="280" rx="16" fill="#F8FAFC" stroke="#000000" strokeWidth="8" />
+            {/* Disco del Sol proyectado */}
+            <circle cx="140" cy="140" r="105" fill="url(#solProyectado)" stroke="#000000" strokeWidth="4" />
+            {/* Grupo de manchas solares oscuras históricas de Carrington */}
+            <ellipse cx="120" cy="130" rx="12" ry="7" fill="#451A03" />
+            <circle cx="138" cy="126" r="6" fill="#451A03" />
+            <circle cx="112" cy="142" r="5" fill="#451A03" />
+            {/* DOS PARCHES DE LUZ BLANCA INCANDESCENTE (Fulguración de Carrington) */}
+            <circle cx="128" cy="115" r={flarePulse} fill="#FFFFFF" stroke="#FEF08A" strokeWidth="4" />
+            <circle cx="152" cy="132" r={flarePulse * 0.8} fill="#FFFFFF" stroke="#FEF08A" strokeWidth="3" />
+          </g>
+
+          {/* Piso del observatorio */}
+          <rect y="1380" width="1080" height="540" fill="#26150D" />
+          <line x1="0" y1="1380" x2="1080" y2="1380" stroke="#000000" strokeWidth="8" />
+
+          {/* Rótulo superior */}
+          <g transform="translate(80, 160)">
+            <rect x="0" y="0" width="620" height="74" rx="14" fill="#000000" stroke="#F59E0B" strokeWidth="5" />
+            <text x="24" y="47" fill="#FDE047" fontSize="24" fontWeight="900" fontFamily="'Arial Black', sans-serif">
+              OBSERVATORIO DE CARRINGTON (1859)
+            </text>
+          </g>
+        </svg>
+      </div>
+    );
+  }
+
+  // 11. ESPACIO CME IMPACTO MAGNETOSFERA (Eyección solar de plasma vs escudo azul de la Tierra)
+  if (escenario === "espacio_cme_impacto_magnetosfera") {
+    const cmePulse = Math.sin(frame * 0.25) * 20;
+    const shieldWave = Math.sin(frame * 0.4) * 8 + 35;
+    return (
+      <div className="absolute inset-0 pointer-events-none z-0 overflow-hidden bg-[#020208]">
+        <svg className="absolute inset-0 w-full h-full" viewBox="0 0 1080 1920" preserveAspectRatio="xMidYMid slice">
+          <defs>
+            <radialGradient id="solFuriaCME" cx="0.1" cy="0.45" r="0.6">
+              <stop offset="0%" stopColor="#FFFFFF" />
+              <stop offset="25%" stopColor="#FEF08A" />
+              <stop offset="55%" stopColor="#F97316" />
+              <stop offset="85%" stopColor="#DC2626" />
+              <stop offset="100%" stopColor="#000000" stopOpacity="0" />
+            </radialGradient>
+            <linearGradient id="ondaPlasmaCME" x1="0" y1="0" x2="1" y2="0">
+              <stop offset="0%" stopColor="#F97316" stopOpacity="0.95" />
+              <stop offset="60%" stopColor="#EF4444" stopOpacity="0.75" />
+              <stop offset="100%" stopColor="#7F1D1D" stopOpacity="0" />
+            </linearGradient>
+            <radialGradient id="tierraPlaneta" cx="0.4" cy="0.4" r="0.6">
+              <stop offset="0%" stopColor="#38BDF8" />
+              <stop offset="60%" stopColor="#0284C7" />
+              <stop offset="100%" stopColor="#082F49" />
+            </radialGradient>
+          </defs>
+
+          {/* Cosmos profundo */}
+          <rect width="1080" height="1920" fill="#020208" />
+          {[
+            [180, 220], [340, 160], [520, 280], [740, 190], [920, 260],
+            [260, 680], [440, 720], [680, 640], [880, 750],
+            [140, 1260], [320, 1340], [640, 1420], [860, 1320]
+          ].map(([sx, sy], i) => (
+            <circle key={i} cx={sx} cy={sy} r={1.5 + (i % 2)} fill="#F8FAFC" opacity="0.6" />
+          ))}
+
+          {/* SOL COLOSAL A LA IZQUIERDA DISPARANDO CME */}
+          <circle cx="-60" cy="880" r={420 + cmePulse} fill="url(#solFuriaCME)" />
+          {/* Filamentos y bucles de plasma saliendo del Sol */}
+          <path
+            d={`M 140,740 Q ${380 + cmePulse},720 ${560 + cmePulse},840 Q 380,940 160,980`}
+            fill="url(#ondaPlasmaCME)"
+            stroke="#FEF08A"
+            strokeWidth="8"
+          />
+          <path
+            d={`M 120,620 Q ${460 + cmePulse},680 ${680 + cmePulse},860 Q 420,1040 110,1080`}
+            fill="none"
+            stroke="#F97316"
+            strokeWidth="12"
+            strokeDasharray="20 10"
+            opacity="0.85"
+          />
+
+          {/* PLANETA TIERRA A LA DERECHA */}
+          <g transform="translate(860, 880)">
+            {/* Esfera terrestre */}
+            <circle cx="0" cy="0" r="110" fill="url(#tierraPlaneta)" stroke="#000000" strokeWidth="6" />
+            {/* Continentes estilizados */}
+            <path d="M -50,-40 Q -10,-80 40,-40 Q 60,10 20,40 Q -30,60 -60,0 Z" fill="#22C55E" opacity="0.75" />
+            <path d="M 0,40 Q 30,30 40,70 Q 10,90 -10,80 Z" fill="#22C55E" opacity="0.75" />
+
+            {/* MAGNETOSFERA AZUL COMPRIMIÉNDOSE ANTE EL IMPACTO */}
+            <path
+              d={`M -${160 - shieldWave},-240 Q -${240 - shieldWave},0 -${160 - shieldWave},240`}
+              fill="none"
+              stroke="#00F0FF"
+              strokeWidth="14"
+              strokeLinecap="round"
+            />
+            <path
+              d={`M -${190 - shieldWave},-300 Q -${300 - shieldWave},0 -${190 - shieldWave},300`}
+              fill="none"
+              stroke="#38BDF8"
+              strokeWidth="8"
+              strokeLinecap="round"
+              opacity="0.7"
+            />
+            <path
+              d={`M -${220 - shieldWave},-360 Q -${360 - shieldWave},0 -${220 - shieldWave},360`}
+              fill="none"
+              stroke="#60A5FA"
+              strokeWidth="5"
+              strokeDasharray="16 10"
+              opacity="0.5"
+            />
+          </g>
+
+          {/* Rótulo de alerta científica */}
+          <g transform="translate(80, 160)">
+            <rect x="0" y="0" width="620" height="74" rx="14" fill="#000000" stroke="#F97316" strokeWidth="5" />
+            <text x="24" y="47" fill="#FDBA74" fontSize="24" fontWeight="900" fontFamily="'Arial Black', sans-serif">
+              EYECCIÓN DE MASA CORONAL (CME)
+            </text>
+          </g>
+        </svg>
+      </div>
+    );
+  }
+
+  // 12. TRANSICIÓN CABLES 1859 A METRÓPOLIS (Pantalla dividida temporal)
+  if (escenario === "transicion_cables_1859_a_metropolis") {
+    const seamGlow = Math.sin(frame * 0.3) * 6 + 10;
+    return (
+      <div className="absolute inset-0 pointer-events-none z-0 overflow-hidden bg-[#020617]">
+        <svg className="absolute inset-0 w-full h-full" viewBox="0 0 1080 1920" preserveAspectRatio="xMidYMid slice">
+          {/* LADO IZQUIERDO: 1859 (RÚSTICO / TELÉGRAFO DE COBRE) */}
+          <g>
+            <rect x="0" y="0" width="540" height="1920" fill="#2E1B10" />
+            {/* Cielo sepia */}
+            <rect x="0" y="0" width="540" height="1260" fill="#452718" opacity="0.6" />
+            {/* Postes de telégrafo de madera con aisladores de cerámica */}
+            <line x1="160" y1="520" x2="160" y2="1360" stroke="#1A0D06" strokeWidth="16" />
+            <line x1="80" y1="620" x2="240" y2="620" stroke="#1A0D06" strokeWidth="12" />
+            <line x1="100" y1="600" x2="100" y2="620" stroke="#E2E8F0" strokeWidth="8" />
+            <line x1="220" y1="600" x2="220" y2="620" stroke="#E2E8F0" strokeWidth="8" />
+            {/* Cables de cobre simples */}
+            <path d="M 0,590 Q 100,640 220,600 Q 380,680 540,610" fill="none" stroke="#B45309" strokeWidth="6" />
+            {/* Camino de tierra */}
+            <rect x="0" y="1360" width="540" height="560" fill="#3D2415" />
+            <text x="60" y="1480" fill="#D97706" fontSize="36" fontWeight="900" fontFamily="'Arial Black', sans-serif">
+              1859: COBRE BÁSICO
+            </text>
+          </g>
+
+          {/* LADO DERECHO: HOY (METRÓPOLIS HIPERCONECTADA) */}
+          <g>
+            <rect x="540" y="0" width="540" height="1920" fill="#0B1329" />
+            {/* Rascacielos con luces de neón */}
+            <rect x="580" y="440" width="140" height="920" fill="#1E293B" stroke="#000000" strokeWidth="6" />
+            <rect x="740" y="280" width="180" height="1080" fill="#0F172A" stroke="#000000" strokeWidth="6" />
+            <rect x="940" y="520" width="120" height="840" fill="#1E293B" stroke="#000000" strokeWidth="6" />
+            {/* Ventanas iluminadas en azul y amarillo */}
+            {[500, 600, 700, 800, 900, 1000, 1100].map((wy, idx) => (
+              <g key={idx}>
+                <rect x="600" y={wy} width="35" height="18" fill="#00F0FF" />
+                <rect x="660" y={wy} width="35" height="18" fill="#FDE047" />
+                <rect x="770" y={wy - 80} width="45" height="22" fill="#00F0FF" />
+                <rect x="840" y={wy - 80} width="45" height="22" fill="#FDE047" />
+              </g>
+            ))}
+            {/* Torre de alta tensión eléctrica */}
+            <path d="M 680,1360 L 760,820 L 840,1360" fill="none" stroke="#38BDF8" strokeWidth="8" />
+            <line x1="700" y1="960" x2="820" y2="960" stroke="#38BDF8" strokeWidth="6" />
+            {/* Asfalto moderno */}
+            <rect x="540" y="1360" width="540" height="560" fill="#020617" />
+            <text x="600" y="1480" fill="#38BDF8" fontSize="36" fontWeight="900" fontFamily="'Arial Black', sans-serif">
+              HOY: RED GLOBAL
+            </text>
+          </g>
+
+          {/* LÍNEA DE CORTE ELÉCTRICA ENTRE AMBOS MUNDOS */}
+          <line x1="540" y1="0" x2="540" y2="1920" stroke="#00F0FF" strokeWidth={seamGlow} />
+          <line x1="540" y1="0" x2="540" y2="1920" stroke="#FFFFFF" strokeWidth="4" />
+
+          {/* Rótulo superior */}
+          <g transform="translate(80, 160)">
+            <rect x="0" y="0" width="620" height="74" rx="14" fill="#020617" stroke="#38BDF8" strokeWidth="5" />
+            <text x="24" y="47" fill="#7DD3FC" fontSize="24" fontWeight="900" fontFamily="'Arial Black', sans-serif">
+              EL SALTO TECNOLÓGICO
+            </text>
+          </g>
+        </svg>
+      </div>
+    );
+  }
+
+  // 13. METRÓPOLIS APAGÓN CATÁSTROFE ELÉCTRICA (Transformadores explotando y ciudad apagándose)
+  if (escenario === "metropolis_apagon_catastrofe_electrica") {
+    const explosionFlash = Math.sin(frame * 0.7) > 0.3;
+    const blackoutPhase = Math.floor(frame / 20); // Dominó de apagón
+    return (
+      <div className="absolute inset-0 pointer-events-none z-0 overflow-hidden bg-[#030712]">
+        <svg className="absolute inset-0 w-full h-full" viewBox="0 0 1080 1920" preserveAspectRatio="xMidYMid slice">
+          <defs>
+            <radialGradient id="fuegoSubestacion" cx="0.5" cy="0.5" r="0.5">
+              <stop offset="0%" stopColor="#FFFFFF" />
+              <stop offset="35%" stopColor="#00F0FF" />
+              <stop offset="65%" stopColor="#EF4444" />
+              <stop offset="100%" stopColor="#000000" stopOpacity="0" />
+            </radialGradient>
+          </defs>
+
+          {/* Cielo nocturno sombrío */}
+          <rect width="1080" height="1920" fill="#030712" />
+
+          {/* Rascacielos sufriendo apagón en dominó */}
+          {/* Bloque 1 (Izquierda) */}
+          <rect x="60" y="420" width="220" height="960" fill="#0F172A" stroke="#000000" strokeWidth="6" />
+          {[520, 640, 760, 880, 1000].map((wy, idx) => (
+            <rect
+              key={idx}
+              x="100"
+              y={wy}
+              width="60"
+              height="25"
+              fill={blackoutPhase < 2 ? "#FDE047" : "#1E293B"}
+            />
+          ))}
+
+          {/* Bloque 2 (Centro) */}
+          <rect x="340" y="260" width="280" height="1120" fill="#0B1329" stroke="#000000" strokeWidth="6" />
+          {[380, 500, 620, 740, 860, 980].map((wy, idx) => (
+            <rect
+              key={idx}
+              x="400"
+              y={wy}
+              width="80"
+              height="30"
+              fill={blackoutPhase < 3 ? "#00F0FF" : "#1E293B"}
+            />
+          ))}
+
+          {/* Bloque 3 (Derecha) */}
+          <rect x="680" y="480" width="340" height="900" fill="#0F172A" stroke="#000000" strokeWidth="6" />
+          {[600, 720, 840, 960].map((wy, idx) => (
+            <rect
+              key={idx}
+              x="760"
+              y={wy}
+              width="70"
+              height="25"
+              fill={blackoutPhase < 1 ? "#EF4444" : "#1E293B"}
+            />
+          ))}
+
+          {/* SUBESTACIÓN ELÉCTRICA EN TIERRA ESTALLANDO */}
+          <g transform="translate(680, 1180)">
+            {/* Caja de transformador */}
+            <rect x="0" y="60" width="240" height="160" fill="#334155" stroke="#000000" strokeWidth="8" />
+            <text x="40" y="150" fill="#EF4444" fontSize="24" fontWeight="900">
+              ⚡ HIGH VOLTAGE
+            </text>
+            {/* Arcos y llamas de explosión */}
+            {explosionFlash && (
+              <g>
+                <circle cx="120" cy="40" r="160" fill="url(#fuegoSubestacion)" />
+                <path d="M 60,-40 L 120,40 L 180,-80 L 140,20 L 220,-20" fill="none" stroke="#FFFFFF" strokeWidth="6" />
+              </g>
+            )}
+          </g>
+
+          {/* Suelo urbano en tinieblas */}
+          <rect y="1380" width="1080" height="540" fill="#020617" />
+          <line x1="0" y1="1380" x2="1080" y2="1380" stroke="#000000" strokeWidth="8" />
+
+          {/* Rótulo superior */}
+          <g transform="translate(80, 160)">
+            <rect x="0" y="0" width="620" height="74" rx="14" fill="#000000" stroke="#EF4444" strokeWidth="5" />
+            <text x="24" y="47" fill="#FCA5A5" fontSize="24" fontWeight="900" fontFamily="'Arial Black', sans-serif">
+              COLAPSO ELÉCTRICO MODERNO
+            </text>
+          </g>
+        </svg>
+      </div>
+    );
+  }
+
+  // 14. CIUDAD OSCURA AURORAS VELA (Cierre a la luz de una vela bajo auroras rojas)
+  if (escenario === "ciudad_oscura_auroras_vela") {
+    const candleFlicker = Math.sin(frame * 0.35) * 4 + Math.cos(frame * 0.5) * 3;
+    const auroraGlow = Math.sin(frame * 0.05) * 30 + 180;
+    return (
+      <div className="absolute inset-0 pointer-events-none z-0 overflow-hidden bg-[#000000]">
+        <svg className="absolute inset-0 w-full h-full" viewBox="0 0 1080 1920" preserveAspectRatio="xMidYMid slice">
+          <defs>
+            <radialGradient id="haloVelaIntimo" cx="0.5" cy="0.68" r="0.32">
+              <stop offset="0%" stopColor="#FEF08A" stopOpacity="0.8" />
+              <stop offset="35%" stopColor="#F59E0B" stopOpacity="0.45" />
+              <stop offset="70%" stopColor="#B45309" stopOpacity="0.15" />
+              <stop offset="100%" stopColor="#000000" stopOpacity="0" />
+            </radialGradient>
+            <linearGradient id="auroraCierreRoja" x1="0" y1="0" x2="0" y2="1">
+              <stop offset="0%" stopColor="#DC2626" stopOpacity="0.65" />
+              <stop offset="60%" stopColor="#991B1B" stopOpacity="0.25" />
+              <stop offset="100%" stopColor="#000000" stopOpacity="0" />
+            </linearGradient>
+          </defs>
+
+          {/* Negro absoluto de fondo */}
+          <rect width="1080" height="1920" fill="#000000" />
+
+          {/* Auroras boreales rojas serpenteando silenciosamente sobre la ciudad muerta */}
+          <path
+            d={`M -60,${auroraGlow} Q 320,${auroraGlow + 80} 640,${auroraGlow - 40} T 1140,${auroraGlow + 60} L 1140,840 L -60,840 Z`}
+            fill="url(#auroraCierreRoja)"
+          />
+
+          {/* Siluetas de rascacielos totalmente apagados */}
+          <path
+            d="M 60,1420 L 60,580 L 220,580 L 220,1420 L 280,1420 L 280,440 L 460,440 L 460,1420 L 640,1420 L 640,360 L 820,360 L 820,1420 L 880,1420 L 880,620 L 1020,620 L 1020,1420 Z"
+            fill="#050811"
+            stroke="#000000"
+            strokeWidth="6"
+          />
+
+          {/* RESPLANDOR CÁLIDO DE LA VELA EN EL CENTRO */}
+          <circle cx="540" cy="1260" r={260 + candleFlicker * 3} fill="url(#haloVelaIntimo)" />
+
+          {/* Cartel de cierre reflexivo */}
+          <g transform="translate(140, 1480)">
+            <rect x="0" y="0" width="800" height="100" rx="20" fill="#020617" stroke="#F59E0B" strokeWidth="5" />
+            <text x="40" y="44" fill="#FDE047" fontSize="24" fontWeight="900" fontFamily="'Arial Black', sans-serif">
+              LA PRÓXIMA TORMENTA SOLAR:
+            </text>
+            <text x="40" y="80" fill="#F8FAFC" fontSize="28" fontWeight="900" fontFamily="'Arial Black', sans-serif">
+              NO NOS ENCONTRARÁ CON TANTA SUERTE
+            </text>
+          </g>
+
+          {/* Rótulo superior */}
+          <g transform="translate(80, 160)">
+            <rect x="0" y="0" width="620" height="74" rx="14" fill="#020617" stroke="#F59E0B" strokeWidth="5" />
+            <text x="24" y="47" fill="#FDE047" fontSize="24" fontWeight="900" fontFamily="'Arial Black', sans-serif">
+              LA FRAGILIDAD DE NUESTRA RED
+            </text>
+          </g>
+        </svg>
+      </div>
+    );
+  }
+
+  // 15. HABITACIÓN NOCHE PROYECTOR RECUERDOS (Cama en penumbra con haz cónico de proyector y recuerdo vergonzoso)
+  if (escenario === "habitacion_noche_proyector_recuerdos") {
+    const beamPulse = Math.sin(frame * 0.3) * 6 + 18;
+    const dustDrift = (frame * 1.2) % 300;
+    return (
+      <div className="absolute inset-0 pointer-events-none z-0 overflow-hidden bg-[#0A0F1D]">
+        <svg className="absolute inset-0 w-full h-full" viewBox="0 0 1080 1920" preserveAspectRatio="xMidYMid slice">
+          <defs>
+            <linearGradient id="paredDormitorio" x1="0" y1="0" x2="0" y2="1">
+              <stop offset="0%" stopColor="#1E293B" />
+              <stop offset="60%" stopColor="#0F172A" />
+              <stop offset="100%" stopColor="#020617" />
+            </linearGradient>
+            <linearGradient id="hazProyectorCine" x1="0" y1="0" x2="0" y2="1">
+              <stop offset="0%" stopColor="#FEF08A" stopOpacity="0.85" />
+              <stop offset="35%" stopColor="#FDE047" stopOpacity="0.45" />
+              <stop offset="100%" stopColor="#38BDF8" stopOpacity="0.05" />
+            </linearGradient>
+          </defs>
+
+          {/* Pared nocturna del dormitorio */}
+          <rect width="1080" height="1920" fill="url(#paredDormitorio)" />
+
+          {/* Ventana con cielo nocturno azul y luna creciente */}
+          <g transform="translate(100, 320)">
+            <rect width="220" height="340" rx="20" fill="#020617" stroke="#334155" strokeWidth="8" />
+            <path d="M 60,60 A 50,50 0 1 0 140,140 A 40,40 0 1 1 60,60 Z" fill="#FDE047" />
+            <circle cx="160" cy="80" r="2" fill="#FFFFFF" />
+            <circle cx="80" cy="220" r="1.5" fill="#FFFFFF" />
+            {/* Cortinas nocturnas */}
+            <path d="M 0,0 Q 40,160 10,340" fill="none" stroke="#1E293B" strokeWidth="16" />
+            <path d="M 220,0 Q 180,160 210,340" fill="none" stroke="#1E293B" strokeWidth="16" />
+          </g>
+
+          {/* HAZ DE LUZ CÓNICO DEL PROYECTOR ANTIGUO HACIA LA CAMA */}
+          <polygon points="540,380 140,1260 940,1260" fill="url(#hazProyectorCine)" />
+
+          {/* Motas de polvo flotando en el haz de luz */}
+          {[
+            [480, 520], [580, 640], [420, 780], [640, 860], [510, 980], [380, 1100], [680, 1140]
+          ].map(([dx, dy], idx) => (
+            <circle
+              key={idx}
+              cx={dx + Math.sin(frame * 0.1 + idx) * 15}
+              cy={(dy + dustDrift) % 800 + 420}
+              r={2 + (idx % 2)}
+              fill="#FEF08A"
+              opacity={0.7}
+            />
+          ))}
+
+          {/* CUADRO / PANTALLA FLOTANTE DEL RECUERDO VERGONZOSO (Tirando el pastel con risas) */}
+          <g transform="translate(360, 480)">
+            <rect x="0" y="0" width="360" height="220" rx="14" fill="#451A03" stroke="#FEF08A" strokeWidth="6" />
+            <rect x="10" y="10" width="340" height="200" rx="8" fill="#78350F" opacity="0.8" />
+            <text x="30" y="44" fill="#FEF08A" fontSize="18" fontWeight="900" fontFamily="'Arial Black'">
+              RECUERDO: HACE 5 AÑOS
+            </text>
+            {/* Stickman torpe cayendo */}
+            <circle cx="120" cy="110" r="14" fill="#FFFFFF" stroke="#000000" strokeWidth="3" />
+            <line x1="120" y1="124" x2="105" y2="160" stroke="#FFFFFF" strokeWidth="4" />
+            <line x1="105" y1="160" x2="80" y2="175" stroke="#FFFFFF" strokeWidth="4" />
+            {/* Pastel volando */}
+            <rect x="170" y="100" width="40" height="25" rx="4" fill="#EC4899" stroke="#000000" strokeWidth="2.5" />
+            <line x1="190" y1="100" x2="190" y2="88" stroke="#FDE047" strokeWidth="3" />
+            {/* Risas distorsionadas */}
+            <text x="230" y="125" fill="#F87171" fontSize="22" fontWeight="900" fontFamily="'Arial Black'">
+              ¡JA JA!
+            </text>
+          </g>
+
+          {/* Cabecera de la cama de madera */}
+          <g transform="translate(140, 1220)">
+            <rect x="0" y="0" width="800" height="180" rx="16" fill="#1E293B" stroke="#000000" strokeWidth="8" />
+            <rect x="40" y="30" width="720" height="120" rx="10" fill="#334155" />
+          </g>
+
+          {/* Cama con sábanas y almohadas */}
+          <rect y="1360" width="1080" height="560" fill="#0F172A" />
+          <path d="M 100,1360 L 980,1360 L 1020,1920 L 60,1920 Z" fill="#E2E8F0" stroke="#000000" strokeWidth="8" />
+          {/* Almohada */}
+          <rect x="220" y="1380" width="280" height="110" rx="25" fill="#FFFFFF" stroke="#000000" strokeWidth="6" />
+
+          {/* Rótulo superior */}
+          <g transform="translate(80, 160)">
+            <rect x="0" y="0" width="620" height="74" rx="14" fill="#0F172A" stroke="#F59E0B" strokeWidth="5" />
+            <text x="24" y="47" fill="#FDE047" fontSize="24" fontWeight="900" fontFamily="'Arial Black', sans-serif">
+              ¿POR QUÉ ANTES DE DORMIR?
+            </text>
+          </g>
+        </svg>
+      </div>
+    );
+  }
+
+  // 16. SALA DE CONTROL CORTEZA PREFRONTAL (Consola con pantallas CRT, guardia cansado y letrero)
+  if (escenario === "sala_control_corteza_prefrontal") {
+    const screenPulse = Math.sin(frame * 0.2) * 0.15 + 0.85;
+    return (
+      <div className="absolute inset-0 pointer-events-none z-0 overflow-hidden bg-[#0F172A]">
+        <svg className="absolute inset-0 w-full h-full" viewBox="0 0 1080 1920" preserveAspectRatio="xMidYMid slice">
+          <defs>
+            <linearGradient id="panelParedCerebral" x1="0" y1="0" x2="0" y2="1">
+              <stop offset="0%" stopColor="#1E293B" />
+              <stop offset="70%" stopColor="#0F172A" />
+              <stop offset="100%" stopColor="#020617" />
+            </linearGradient>
+            <radialGradient id="brilloMonitor" cx="0.5" cy="0.5" r="0.5">
+              <stop offset="0%" stopColor="#38BDF8" stopOpacity="0.4" />
+              <stop offset="100%" stopColor="#0284C7" stopOpacity="0" />
+            </radialGradient>
+          </defs>
+
+          {/* Pared de la sala de control */}
+          <rect width="1080" height="1920" fill="url(#panelParedCerebral)" />
+
+          {/* Cables neuronales en el techo */}
+          <path d="M 0,140 Q 300,240 600,160 T 1080,200" fill="none" stroke="#60A5FA" strokeWidth="8" opacity="0.5" />
+          <path d="M 0,180 Q 400,290 800,210 T 1080,250" fill="none" stroke="#38BDF8" strokeWidth="6" opacity="0.4" />
+
+          {/* BANCO DE MONITORES CRT DE LA CORTEZA PREFRONTAL */}
+          <g transform="translate(140, 360)">
+            {/* Monitor 1: Filtro racional */}
+            <rect x="0" y="0" width="380" height="260" rx="14" fill="#020617" stroke="#38BDF8" strokeWidth="8" />
+            <rect x="15" y="15" width="350" height="230" rx="8" fill="#0B132B" />
+            <path
+              d="M 30,130 Q 90,80 150,130 T 270,130 T 350,130"
+              fill="none"
+              stroke="#22C55E"
+              strokeWidth="5"
+              opacity={screenPulse}
+            />
+            <text x="35" y="55" fill="#22C55E" fontSize="18" fontWeight="900" fontFamily="'Arial Black'">
+              FILTRO RACIONAL: 12%
+            </text>
+            <text x="35" y="85" fill="#EF4444" fontSize="16" fontWeight="900">
+              FATIGA COGNITIVA ALTA
+            </text>
+
+            {/* Monitor 2: Sensores de realidad */}
+            <rect x="420" y="0" width="380" height="260" rx="14" fill="#020617" stroke="#38BDF8" strokeWidth="8" />
+            <rect x="435" y="15" width="350" height="230" rx="8" fill="#0B132B" />
+            <circle cx="595" cy="130" r="50" fill="url(#brilloMonitor)" />
+            <text x="460" y="55" fill="#38BDF8" fontSize="18" fontWeight="900" fontFamily="'Arial Black'">
+              ESTÍMULOS EXTERNOS: 0
+            </text>
+            <text x="460" y="85" fill="#FDE047" fontSize="16" fontWeight="900">
+              MODO: REPOSO
+            </text>
+          </g>
+
+          {/* LETRERO LUMINOSO CENTRAL */}
+          <g transform="translate(180, 680)">
+            <rect x="0" y="0" width="720" height="84" rx="16" fill="#020617" stroke="#38BDF8" strokeWidth="6" />
+            <text x="45" y="52" fill="#38BDF8" fontSize="28" fontWeight="900" fontFamily="'Arial Black', sans-serif">
+              CORTEZA PREFRONTAL (FILTRO DE LA RAZÓN)
+            </text>
+          </g>
+
+          {/* ESCRITORIO DE CONTROL DEL GUARDIA CON PALANCAS Y TAZA */}
+          <g transform="translate(100, 1180)">
+            {/* Superficie de la mesa */}
+            <rect x="0" y="0" width="880" height="240" rx="16" fill="#1E293B" stroke="#000000" strokeWidth="8" />
+            {/* Teclado iluminado */}
+            <rect x="180" y="40" width="260" height="70" rx="6" fill="#020617" stroke="#64748B" strokeWidth="4" />
+            {/* Taza de café vacía volcada */}
+            <ellipse cx="520" cy="80" rx="16" ry="10" fill="#475569" stroke="#000000" strokeWidth="3" />
+            <path d="M 520,80 Q 560,95 590,88" fill="none" stroke="#451A03" strokeWidth="6" strokeLinecap="round" />
+            {/* Luces de apagado */}
+            <circle cx="700" cy="70" r="10" fill="#EF4444" />
+            <circle cx="740" cy="70" r="10" fill="#475569" />
+            <circle cx="780" cy="70" r="10" fill="#475569" />
+          </g>
+
+          {/* Suelo de la sala de control */}
+          <rect y="1420" width="1080" height="500" fill="#090E17" />
+          <line x1="0" y1="1420" x2="1080" y2="1420" stroke="#000000" strokeWidth="8" />
+
+          {/* Rótulo superior */}
+          <g transform="translate(80, 160)">
+            <rect x="0" y="0" width="620" height="74" rx="14" fill="#020617" stroke="#38BDF8" strokeWidth="5" />
+            <text x="24" y="47" fill="#7DD3FC" fontSize="24" fontWeight="900" fontFamily="'Arial Black', sans-serif">
+              EL GUARDIA SE HA DORMIDO
+            </text>
+          </g>
+        </svg>
+      </div>
+    );
+  }
+
+  // 17. SALA DE CONTROL AMÍGDALA EMERGENCIA (Sirenas rojas giratorias, palanca de pánico y toma de control)
+  if (escenario === "sala_control_amigdala_emergencia") {
+    const alarmFlash = Math.sin(frame * 0.45) > 0.1;
+    const sirenAngle = (frame * 18) % 360;
+    return (
+      <div className="absolute inset-0 pointer-events-none z-0 overflow-hidden bg-[#1A0505]">
+        <svg className="absolute inset-0 w-full h-full" viewBox="0 0 1080 1920" preserveAspectRatio="xMidYMid slice">
+          <defs>
+            <radialGradient id="luzAlarmaRoja" cx="0.5" cy="0.4" r="0.6">
+              <stop offset="0%" stopColor="#EF4444" stopOpacity={alarmFlash ? 0.75 : 0.25} />
+              <stop offset="60%" stopColor="#991B1B" stopOpacity="0.3" />
+              <stop offset="100%" stopColor="#450A0A" stopOpacity="0" />
+            </radialGradient>
+          </defs>
+
+          {/* Pared tintada en rojo alarma */}
+          <rect width="1080" height="1920" fill="#1A0505" />
+          <rect width="1080" height="1920" fill="url(#luzAlarmaRoja)" />
+
+          {/* BALIZAS GIRATORIAS DE EMERGENCIA ROJAS */}
+          {[180, 900].map((bx, idx) => (
+            <g key={idx} transform={`translate(${bx}, 240)`}>
+              <rect x="-30" y="0" width="60" height="30" fill="#000000" stroke="#EF4444" strokeWidth="4" />
+              <path d="M -25,0 Q 0,-50 25,0 Z" fill="#EF4444" opacity="0.9" />
+              {/* Haz de luz de sirena giratorio */}
+              <g transform={`rotate(${sirenAngle} 0 -20)`}>
+                <polygon points="0,-20 -90,-280 90,-280" fill="#FCA5A5" fillOpacity="0.45" />
+              </g>
+            </g>
+          ))}
+
+          {/* COMPUERTA TRASERA DE EMERGENCIA DE LA AMÍGDALA ABIERTA DE GOLPE */}
+          <g transform="translate(540, 480)">
+            <rect x="-160" y="-120" width="320" height="240" rx="16" fill="#000000" stroke="#EF4444" strokeWidth="8" />
+            {/* Franjas diagonales de peligro amarillo/negro */}
+            <line x1="-150" y1="-110" x2="-90" y2="-110" stroke="#FDE047" strokeWidth="8" />
+            <line x1="-70" y1="-110" x2="-10" y2="-110" stroke="#FDE047" strokeWidth="8" />
+            <line x1="10" y1="-110" x2="70" y2="-110" stroke="#FDE047" strokeWidth="8" />
+            <line x1="90" y1="-110" x2="150" y2="-110" stroke="#FDE047" strokeWidth="8" />
+            {/* Interior ardiente de la amígdala */}
+            <rect x="-140" y="-80" width="280" height="180" fill="#7F1D1D" />
+            <text x="-120" y="25" fill="#FEF08A" fontSize="32" fontWeight="900" fontFamily="'Arial Black'">
+              AMÍGDALA
+            </text>
+            <text x="-120" y="65" fill="#FFFFFF" fontSize="20" fontWeight="900">
+              SISTEMA DE ALERTA
+            </text>
+          </g>
+
+          {/* PANTALLAS EN ROJO SATURADO DE PELIGRO */}
+          <g transform="translate(140, 780)">
+            <rect x="0" y="0" width="800" height="180" rx="14" fill="#000000" stroke="#EF4444" strokeWidth="8" />
+            <rect x="15" y="15" width="770" height="150" fill="#450A0A" />
+            <text x="40" y="70" fill="#FEF08A" fontSize="32" fontWeight="900" fontFamily="'Arial Black'">
+              ¡PELIGRO DESCONOCIDO DETECTADO!
+            </text>
+            <text x="40" y="115" fill="#FCA5A5" fontSize="22" fontWeight="900">
+              EL SILENCIO SIGNIFICA AMENAZA MORTAL
+            </text>
+          </g>
+
+          {/* PALANCA DE EMERGENCIA JALADA */}
+          <g transform="translate(740, 1180)">
+            <rect x="-30" y="0" width="60" height="80" fill="#1E293B" stroke="#000000" strokeWidth="5" />
+            <line x1="0" y1="40" x2="45" y2="10" stroke="#EF4444" strokeWidth="12" strokeLinecap="round" />
+            <circle cx="45" cy="10" r="16" fill="#DC2626" stroke="#000000" strokeWidth="4" />
+          </g>
+
+          {/* Suelo de metal */}
+          <rect y="1380" width="1080" height="540" fill="#0A0202" />
+          <line x1="0" y1="1380" x2="1080" y2="1380" stroke="#EF4444" strokeWidth="8" />
+
+          {/* Rótulo superior */}
+          <g transform="translate(80, 160)">
+            <rect x="0" y="0" width="620" height="74" rx="14" fill="#000000" stroke="#EF4444" strokeWidth="5" />
+            <text x="24" y="47" fill="#FCA5A5" fontSize="24" fontWeight="900" fontFamily="'Arial Black', sans-serif">
+              LA AMÍGDALA AL MANDO (ALERTA)
+            </text>
+          </g>
+        </svg>
+      </div>
+    );
+  }
+
+  // 18. CONSOLA AMÍGDALA ENGRANAJES ANSIEDAD (Ranura VHS, engranajes oxidados flotantes y chispas oscuras)
+  if (escenario === "consola_amigdala_engranajes_ansiedad") {
+    const gearRot1 = (frame * 6) % 360;
+    const gearRot2 = (-frame * 5) % 360;
+    const sparkBurst = Math.sin(frame * 0.7) > 0.2;
+    return (
+      <div className="absolute inset-0 pointer-events-none z-0 overflow-hidden bg-[#18080A]">
+        <svg className="absolute inset-0 w-full h-full" viewBox="0 0 1080 1920" preserveAspectRatio="xMidYMid slice">
+          <defs>
+            <radialGradient id="humoAnsiedad" cx="0.5" cy="0.5" r="0.5">
+              <stop offset="0%" stopColor="#450A0A" stopOpacity="0.8" />
+              <stop offset="60%" stopColor="#1C1917" stopOpacity="0.5" />
+              <stop offset="100%" stopColor="#000000" stopOpacity="0" />
+            </radialGradient>
+          </defs>
+
+          <rect width="1080" height="1920" fill="#18080A" />
+
+          {/* Nubes de humo oscuro de pensamientos intrusivos */}
+          <circle cx="340" cy="620" r="260" fill="url(#humoAnsiedad)" />
+          <circle cx="760" cy="580" r="280" fill="url(#humoAnsiedad)" />
+
+          {/* TUBERÍAS METÁLICAS EXPULSANDO PENSAMIENTOS */}
+          <path d="M 0,380 L 380,380 L 380,820 L 720,820" fill="none" stroke="#78350F" strokeWidth="24" strokeLinecap="round" />
+          <path d="M 1080,440 L 780,440 L 780,940" fill="none" stroke="#78350F" strokeWidth="20" strokeLinecap="round" />
+
+          {/* ENGRANAJES OXIDADOS GIRATORIOS CON PREOCUPACIONES */}
+          {/* Engranaje 1 */}
+          <g transform="translate(360, 520) rotate(${gearRot1})">
+            <circle cx="0" cy="0" r="90" fill="#78350F" stroke="#000000" strokeWidth="8" />
+            <circle cx="0" cy="0" r="30" fill="#18080A" stroke="#000000" strokeWidth="5" />
+            {[0, 45, 90, 135, 180, 225, 270, 315].map((ang, i) => (
+              <rect key={i} x="-14" y="-110" width="28" height="28" fill="#451A03" stroke="#000000" strokeWidth="4" transform={`rotate(${ang})`} />
+            ))}
+          </g>
+
+          {/* Engranaje 2 engranado */}
+          <g transform="translate(540, 680) rotate(${gearRot2})">
+            <circle cx="0" cy="0" r="75" fill="#92400E" stroke="#000000" strokeWidth="7" />
+            <circle cx="0" cy="0" r="25" fill="#18080A" stroke="#000000" strokeWidth="4" />
+            {[0, 60, 120, 180, 240, 300].map((ang, i) => (
+              <rect key={i} x="-12" y="-95" width="24" height="25" fill="#78350F" stroke="#000000" strokeWidth="4" transform={`rotate(${ang})`} />
+            ))}
+          </g>
+
+          {/* CARTELONES DE PREOCUPACIONES FLOTANTES */}
+          <g transform="translate(180, 840)">
+            <rect x="0" y="0" width="340" height="74" rx="12" fill="#000000" stroke="#EF4444" strokeWidth="5" />
+            <text x="25" y="47" fill="#FEF08A" fontSize="22" fontWeight="900" fontFamily="'Arial Black'">
+              ¿Y SI PIERDES EL TRABAJO?
+            </text>
+          </g>
+          <g transform="translate(560, 920)">
+            <rect x="0" y="0" width="360" height="74" rx="12" fill="#000000" stroke="#EF4444" strokeWidth="5" />
+            <text x="25" y="47" fill="#FCA5A5" fontSize="22" fontWeight="900" fontFamily="'Arial Black'">
+              ¿CERRARÁS BIEN LA PUERTA?
+            </text>
+          </g>
+
+          {/* Chispas y arcos de estrés */}
+          {sparkBurst && (
+            <g transform="translate(450, 600)">
+              <line x1="0" y1="0" x2="-35" y2="-45" stroke="#FDE047" strokeWidth="5" strokeLinecap="round" />
+              <line x1="0" y1="0" x2="40" y2="-30" stroke="#F97316" strokeWidth="4" strokeLinecap="round" />
+              <circle cx="0" cy="0" r="6" fill="#FFFFFF" />
+            </g>
+          )}
+
+          {/* Consola inferior con ranura VHS */}
+          <rect y="1320" width="1080" height="600" fill="#261014" />
+          <line x1="0" y1="1320" x2="1080" y2="1320" stroke="#000000" strokeWidth="8" />
+          <rect x="340" y="1420" width="400" height="70" rx="10" fill="#000000" stroke="#EF4444" strokeWidth="6" />
+          <text x="390" y="1465" fill="#EF4444" fontSize="24" fontWeight="900" fontFamily="'Arial Black'">
+            RANURA RECUERDOS VHS
+          </text>
+
+          {/* Rótulo superior */}
+          <g transform="translate(80, 160)">
+            <rect x="0" y="0" width="620" height="74" rx="14" fill="#000000" stroke="#EF4444" strokeWidth="5" />
+            <text x="24" y="47" fill="#FCA5A5" fontSize="24" fontWeight="900" fontFamily="'Arial Black', sans-serif">
+              RUMIACIÓN COGNITIVA NOCTURNA
+            </text>
+          </g>
+        </svg>
+      </div>
+    );
+  }
+
+  // 19. CUEVA PREHISTÓRICA FUEGO TIGRE (Interior rocoso, brasas de fogata y ojos amarillos de depredador)
+  if (escenario === "cueva_prehistorica_fuego_tigre") {
+    const fireFlicker = Math.sin(frame * 0.4) * 8 + Math.cos(frame * 0.6) * 6;
+    const eyeGlow = Math.sin(frame * 0.25) > -0.2;
+    return (
+      <div className="absolute inset-0 pointer-events-none z-0 overflow-hidden bg-[#0C0A09]">
+        <svg className="absolute inset-0 w-full h-full" viewBox="0 0 1080 1920" preserveAspectRatio="xMidYMid slice">
+          <defs>
+            <radialGradient id="brasaFogata" cx="0.45" cy="0.75" r="0.5">
+              <stop offset="0%" stopColor="#F97316" stopOpacity="0.8" />
+              <stop offset="35%" stopColor="#EA580C" stopOpacity="0.45" />
+              <stop offset="70%" stopColor="#7C2D12" stopOpacity="0.15" />
+              <stop offset="100%" stopColor="#000000" stopOpacity="0" />
+            </radialGradient>
+          </defs>
+
+          {/* Paredes de roca tosca de la cueva */}
+          <rect width="1080" height="1920" fill="#0C0A09" />
+          {/* Estalactitas y boca de la cueva */}
+          <path
+            d="M 0,0 L 140,240 L 260,80 L 380,320 L 520,120 L 680,280 L 820,90 L 960,260 L 1080,0 Z"
+            fill="#1C1917"
+            stroke="#000000"
+            strokeWidth="8"
+          />
+
+          {/* BOCA DE LA CUEVA HACIA LA SELVA NOCTURNA */}
+          <g transform="translate(620, 420)">
+            {/* Abertura hacia la niebla azul oscura */}
+            <path d="M 0,0 Q 180,-60 360,20 L 380,480 Q 200,520 -20,460 Z" fill="#020617" stroke="#292524" strokeWidth="10" />
+            <path d="M 0,0 Q 180,-60 360,20 L 380,480 Q 200,520 -20,460 Z" fill="#1E293B" opacity="0.4" />
+
+            {/* OJOS AMARILLOS BRILLANTES DEL TIGRE DIENTES DE SABLE */}
+            <g transform="translate(180, 220)" opacity={eyeGlow ? 1.0 : 0.2}>
+              <ellipse cx="-35" cy="0" rx="14" ry="8" fill="#FACC15" />
+              <ellipse cx="35" cy="0" rx="14" ry="8" fill="#FACC15" />
+              <circle cx="-35" cy="0" r="4" fill="#000000" />
+              <circle cx="35" cy="0" r="4" fill="#000000" />
+              {/* Colmillos curvos asomando en la penumbra */}
+              <path d="M -42,16 Q -48,45 -38,58 Q -30,45 -34,16 Z" fill="#F8FAFC" />
+              <path d="M 34,16 Q 30,45 38,58 Q 48,45 42,16 Z" fill="#F8FAFC" />
+            </g>
+          </g>
+
+          {/* RESPLANDOR CÁLIDO DE LAS BRASAS DE LA FOGATA */}
+          <circle cx="480" cy="1420" r={320 + fireFlicker * 3} fill="url(#brasaFogata)" />
+
+          {/* Pieles de oso en el suelo */}
+          <ellipse cx="340" cy="1460" rx="220" ry="80" fill="#292524" stroke="#000000" strokeWidth="6" />
+
+          {/* Restos de leña y brasas rojas */}
+          <g transform="translate(480, 1420)">
+            <line x1="-50" y1="10" x2="60" y2="-15" stroke="#1C1917" strokeWidth="14" strokeLinecap="round" />
+            <line x1="-30" y1="-20" x2="50" y2="15" stroke="#1C1917" strokeWidth="14" strokeLinecap="round" />
+            <circle cx="-10" cy="-5" r="14" fill="#F97316" />
+            <circle cx="15" cy="4" r="10" fill="#EF4444" />
+            <circle cx="2" cy="0" r="6" fill="#FEF08A" />
+          </g>
+
+          {/* Suelo rocoso */}
+          <rect y="1480" width="1080" height="440" fill="#1C1917" />
+          <line x1="0" y1="1480" x2="1080" y2="1480" stroke="#000000" strokeWidth="8" />
+
+          {/* Rótulo superior */}
+          <g transform="translate(80, 160)">
+            <rect x="0" y="0" width="620" height="74" rx="14" fill="#000000" stroke="#F97316" strokeWidth="5" />
+            <text x="24" y="47" fill="#FDBA74" fontSize="24" fontWeight="900" fontFamily="'Arial Black', sans-serif">
+              HACE CIEN MIL AÑOS (SUPERVIVENCIA)
+            </text>
+          </g>
+        </svg>
+      </div>
+    );
+  }
+
+  // 20. HABITACIÓN NOCHE AMÍGDALA FACTURAS (Dormitorio moderno, facturas flotantes y teléfono visto)
+  if (escenario === "habitacion_noche_amigdala_facturas") {
+    const billWobble = Math.sin(frame * 0.15) * 6;
+    return (
+      <div className="absolute inset-0 pointer-events-none z-0 overflow-hidden bg-[#0B1120]">
+        <svg className="absolute inset-0 w-full h-full" viewBox="0 0 1080 1920" preserveAspectRatio="xMidYMid slice">
+          <defs>
+            <radialGradient id="luzLamparaNoche" cx="0.82" cy="0.65" r="0.4">
+              <stop offset="0%" stopColor="#F59E0B" stopOpacity="0.65" />
+              <stop offset="50%" stopColor="#D97706" stopOpacity="0.25" />
+              <stop offset="100%" stopColor="#000000" stopOpacity="0" />
+            </radialGradient>
+          </defs>
+
+          {/* Pared de dormitorio en calma nocturna */}
+          <rect width="1080" height="1920" fill="#0B1120" />
+          <rect width="1080" height="1920" fill="url(#luzLamparaNoche)" />
+
+          {/* Ventana con cielo nocturno azul */}
+          <g transform="translate(120, 360)">
+            <rect width="200" height="300" rx="16" fill="#020617" stroke="#334155" strokeWidth="6" />
+            <circle cx="100" cy="100" r="30" fill="#FDE047" opacity="0.85" />
+          </g>
+
+          {/* FACTURAS FLOTANTES Y TELÉFONO MENSAJE EN VISTO */}
+          {/* Factura 1 */}
+          <g transform={`translate(280, ${520 + billWobble}) rotate(-8)`}>
+            <rect x="0" y="0" width="140" height="180" rx="6" fill="#FFFFFF" stroke="#000000" strokeWidth="4" />
+            <text x="18" y="32" fill="#EF4444" fontSize="16" fontWeight="900" fontFamily="'Arial Black'">FACTURA</text>
+            <text x="18" y="58" fill="#000000" fontSize="18" fontWeight="900">$ 450.00</text>
+            <line x1="18" y1="80" x2="120" y2="80" stroke="#94A3B8" strokeWidth="3" />
+            <line x1="18" y1="105" x2="120" y2="105" stroke="#94A3B8" strokeWidth="3" />
+          </g>
+
+          {/* Factura 2 */}
+          <g transform={`translate(480, ${460 - billWobble}) rotate(12)`}>
+            <rect x="0" y="0" width="130" height="160" rx="6" fill="#FEF08A" stroke="#000000" strokeWidth="4" />
+            <text x="15" y="30" fill="#B45309" fontSize="14" fontWeight="900" fontFamily="'Arial Black'">RENTA VENCIDA</text>
+            <line x1="15" y1="60" x2="110" y2="60" stroke="#78350F" strokeWidth="3" />
+          </g>
+
+          {/* Teléfono con mensaje no respondido (Doble check azul) */}
+          <g transform={`translate(680, ${540 + billWobble * 0.5}) rotate(-5)`}>
+            <rect x="0" y="0" width="120" height="200" rx="18" fill="#020617" stroke="#38BDF8" strokeWidth="5" />
+            <rect x="10" y="20" width="100" height="160" rx="6" fill="#0F172A" />
+            <text x="16" y="50" fill="#FFFFFF" fontSize="11" fontWeight="700">¿Hablamos?</text>
+            <text x="75" y="50" fill="#38BDF8" fontSize="14" fontWeight="900">✓✓</text>
+            <text x="25" y="110" fill="#94A3B8" fontSize="10" fontWeight="900">VISTO 23:45</text>
+          </g>
+
+          {/* Mesita de noche con lámpara cálida a la derecha */}
+          <g transform="translate(860, 1180)">
+            <rect x="0" y="60" width="180" height="220" rx="10" fill="#1E293B" stroke="#000000" strokeWidth="6" />
+            {/* Lámpara de noche */}
+            <path d="M 50,60 L 130,60 L 110,0 L 70,0 Z" fill="#F59E0B" stroke="#000000" strokeWidth="5" />
+            <rect x="85" y="0" width="10" height="60" fill="#D97706" />
+          </g>
+
+          {/* Cama del dormitorio */}
+          <rect y="1380" width="1080" height="540" fill="#0B132B" />
+          <path d="M 60,1380 L 860,1380 L 890,1920 L 30,1920 Z" fill="#CBD5E1" stroke="#000000" strokeWidth="8" />
+
+          {/* Rótulo superior */}
+          <g transform="translate(80, 160)">
+            <rect x="0" y="0" width="620" height="74" rx="14" fill="#020617" stroke="#F59E0B" strokeWidth="5" />
+            <text x="24" y="47" fill="#FDE047" fontSize="24" fontWeight="900" fontFamily="'Arial Black', sans-serif">
+              FALSAS ALARMAS MODERNAS
+            </text>
+          </g>
+        </svg>
+      </div>
+    );
+  }
+
+  // 21. HABITACIÓN NOCHE CALMA SUEÑO (Paz total, amígdala dormida y lámpara apagándose)
+  if (escenario === "habitacion_noche_calma_sueno") {
+    const calmPulse = Math.sin(frame * 0.15) * 4 + 18;
+    return (
+      <div className="absolute inset-0 pointer-events-none z-0 overflow-hidden bg-[#020617]">
+        <svg className="absolute inset-0 w-full h-full" viewBox="0 0 1080 1920" preserveAspectRatio="xMidYMid slice">
+          <defs>
+            <radialGradient id="haloPazFinal" cx="0.5" cy="0.65" r="0.45">
+              <stop offset="0%" stopColor="#38BDF8" stopOpacity="0.4" />
+              <stop offset="40%" stopColor="#1E293B" stopOpacity="0.2" />
+              <stop offset="100%" stopColor="#000000" stopOpacity="0" />
+            </radialGradient>
+          </defs>
+
+          {/* Negro profundo de paz nocturna */}
+          <rect width="1080" height="1920" fill="#020617" />
+          <rect width="1080" height="1920" fill="url(#haloPazFinal)" />
+
+          {/* Ventana con cielo sereno y estrellas titilando */}
+          <g transform="translate(140, 360)">
+            <rect width="220" height="320" rx="20" fill="#010409" stroke="#1E293B" strokeWidth="6" />
+            <path d="M 80,70 A 45,45 0 1 0 150,140 A 35,35 0 1 1 80,70 Z" fill="#FDE047" opacity="0.95" />
+            {[ [60, 220], [170, 90], [160, 240], [100, 180] ].map(([sx, sy], i) => (
+              <circle key={i} cx={sx} cy={sy} r={1.5} fill="#FFFFFF" opacity="0.8" />
+            ))}
+          </g>
+
+          {/* Destellos suaves de relajación flotando */}
+          {[
+            [380, 720], [540, 640], [720, 780], [460, 920], [680, 880]
+          ].map(([sx, sy], i) => (
+            <g key={i} transform={`translate(${sx}, ${sy})`}>
+              <circle cx="0" cy="0" r={3} fill="#38BDF8" opacity="0.6" />
+              <line x1="-8" y1="0" x2="8" y2="0" stroke="#7DD3FC" strokeWidth="1.5" opacity="0.4" />
+              <line x1="0" y1="-8" x2="0" y2="8" stroke="#7DD3FC" strokeWidth="1.5" opacity="0.4" />
+            </g>
+          ))}
+
+          {/* Cama arropada en paz */}
+          <rect y="1380" width="1080" height="540" fill="#0A0F1D" />
+          <path d="M 80,1380 L 920,1380 L 960,1920 L 40,1920 Z" fill="#334155" stroke="#000000" strokeWidth="8" />
+          {/* Almohada suave */}
+          <rect x="240" y="1400" width="280" height="100" rx="25" fill="#E2E8F0" stroke="#000000" strokeWidth="6" />
+
+          {/* Cartel de cierre terapéutico */}
+          <g transform="translate(140, 1480)">
+            <rect x="0" y="0" width="800" height="100" rx="20" fill="#020617" stroke="#38BDF8" strokeWidth="5" />
+            <text x="40" y="44" fill="#38BDF8" fontSize="24" fontWeight="900" fontFamily="'Arial Black', sans-serif">
+              ESTA NOCHE ESTAMOS A SALVO:
+            </text>
+            <text x="40" y="80" fill="#F8FAFC" fontSize="28" fontWeight="900" fontFamily="'Arial Black', sans-serif">
+              GRACIAS POR CUIDARME... Y DUERME
+            </text>
+          </g>
+
+          {/* Rótulo superior */}
+          <g transform="translate(80, 160)">
+            <rect x="0" y="0" width="620" height="74" rx="14" fill="#020617" stroke="#38BDF8" strokeWidth="5" />
+            <text x="24" y="47" fill="#7DD3FC" fontSize="24" fontWeight="900" fontFamily="'Arial Black', sans-serif">
+              APAGA LA LUZ EN PAZ
+            </text>
+          </g>
+        </svg>
+      </div>
+    );
+  }
+
+  // 22. ESTUDIO BLANCO CELDA MANDELA (Frag 1: Pregunta gancho, celda que se desvanece)
+  if (escenario === "estudio_blanco_celda_mandela") {
+    const fadeOut = Math.min(1.0, Math.max(0.0, (frame - 45) / 35));
+    const barsOpacity = 1.0 - fadeOut;
+    return (
+      <div className="absolute inset-0 pointer-events-none z-0 overflow-hidden bg-[#F8FAFC]">
+        <svg className="absolute inset-0 w-full h-full" viewBox="0 0 1080 1920" preserveAspectRatio="xMidYMid slice">
+          {/* Suelo y pared neo-brutalista limpia */}
+          <rect width="1080" height="1360" fill="#F8FAFC" />
+          <line x1="0" y1="1360" x2="1080" y2="1360" stroke="#000000" strokeWidth="8" />
+          <rect y="1360" width="1080" height="560" fill="#E2E8F0" />
+          
+          {/* Foco de luz de interrogatorio/misterio */}
+          <polygon points="540,0 220,1360 860,1360" fill="#FEF08A" fillOpacity="0.18" />
+
+          {/* Celda con silueta que se desvanece en 0:04 (frame ~45) */}
+          <g transform="translate(680, 560)">
+            {/* Silueta vacía que queda */}
+            <g opacity={barsOpacity > 0.1 ? 0.35 : 0.08}>
+              <ellipse cx="140" cy="180" rx="45" ry="45" fill="#64748B" />
+              <path d="M 60,380 C 60,260 220,260 220,380 Z" fill="#64748B" />
+            </g>
+            {/* Marco de barrotes de prisión con desvanecimiento */}
+            <g opacity={barsOpacity}>
+              <rect x="0" y="40" width="280" height="420" rx="8" fill="none" stroke="#0F172A" strokeWidth="12" />
+              <rect x="0" y="40" width="280" height="30" fill="#1E293B" stroke="#000000" strokeWidth="6" />
+              <rect x="0" y="430" width="280" height="30" fill="#1E293B" stroke="#000000" strokeWidth="6" />
+              {[50, 100, 150, 200, 240].map((bx, idx) => (
+                <line key={idx} x1={bx} y1="70" x2={bx} y2="430" stroke="#334155" strokeWidth="10" strokeLinecap="round" />
+              ))}
+            </g>
+            {/* Partículas de "puf" al desvanecerse */}
+            {fadeOut > 0 && fadeOut < 0.95 && (
+              <g transform="translate(140, 260)">
+                {[0, 60, 120, 180, 240, 300].map((angle, i) => {
+                  const rad = (angle * Math.PI) / 180;
+                  const dist = fadeOut * 130;
+                  return (
+                    <circle
+                      key={i}
+                      cx={Math.cos(rad) * dist}
+                      cy={Math.sin(rad) * dist}
+                      r={14 * (1 - fadeOut)}
+                      fill="#94A3B8"
+                      stroke="#000000"
+                      strokeWidth="3"
+                    />
+                  );
+                })}
+              </g>
+            )}
+          </g>
+
+          {/* Rótulo superior */}
+          <g transform="translate(80, 160)">
+            <rect x="0" y="0" width="620" height="74" rx="14" fill="#020617" stroke="#38BDF8" strokeWidth="5" />
+            <text x="24" y="47" fill="#38BDF8" fontSize="24" fontWeight="900" fontFamily="'Arial Black', sans-serif">
+              EXPEDIENTE: ¿RECUERDO O ILUSIÓN?
+            </text>
+          </g>
+        </svg>
+      </div>
+    );
+  }
+
+  // 23. ESTUDIO LÍNEA TIEMPO MANDELA (Frag 2: 1990, Presidencia, 2013 + TV con X)
+  if (escenario === "estudio_linea_tiempo_mandela") {
+    const tvGlow = (frame % 6 < 3);
+    return (
+      <div className="absolute inset-0 pointer-events-none z-0 overflow-hidden bg-[#F8FAFC]">
+        <svg className="absolute inset-0 w-full h-full" viewBox="0 0 1080 1920" preserveAspectRatio="xMidYMid slice">
+          <rect width="1080" height="1920" fill="#F8FAFC" />
+          <rect y="1360" width="1080" height="560" fill="#E2E8F0" stroke="#000000" strokeWidth="8" />
+
+          {/* Línea de tiempo horizontal animada en el suelo */}
+          <g transform="translate(60, 1240)">
+            <line x1="0" y1="40" x2="960" y2="40" stroke="#020617" strokeWidth="12" strokeLinecap="round" />
+            {/* Marca 1: 1990 - Libertad */}
+            <g transform="translate(140, 40)">
+              <circle cx="0" cy="0" r="22" fill="#22C55E" stroke="#000000" strokeWidth="6" />
+              <rect x="-70" y="-85" width="140" height="50" rx="8" fill="#DCFCE7" stroke="#166534" strokeWidth="4" />
+              <text x="0" y="-52" textAnchor="middle" fill="#15803D" fontSize="20" fontWeight="900" fontFamily="'Arial Black'">1990</text>
+              <text x="0" y="48" textAnchor="middle" fill="#0F172A" fontSize="16" fontWeight="900">LIBERACIÓN</text>
+            </g>
+            {/* Marca 2: 1994 - Presidente */}
+            <g transform="translate(480, 40)">
+              <circle cx="0" cy="0" r="22" fill="#3B82F6" stroke="#000000" strokeWidth="6" />
+              <rect x="-85" y="-85" width="170" height="50" rx="8" fill="#DBEAFE" stroke="#1E40AF" strokeWidth="4" />
+              <text x="0" y="-52" textAnchor="middle" fill="#1D4ED8" fontSize="20" fontWeight="900" fontFamily="'Arial Black'">PRESIDENTE</text>
+              <text x="0" y="48" textAnchor="middle" fill="#0F172A" fontSize="16" fontWeight="900">DEMOCRACIA</text>
+            </g>
+            {/* Marca 3: 2013 - En su casa */}
+            <g transform="translate(820, 40)">
+              <circle cx="0" cy="0" r="22" fill="#F59E0B" stroke="#000000" strokeWidth="6" />
+              <rect x="-70" y="-85" width="140" height="50" rx="8" fill="#FEF3C7" stroke="#B45309" strokeWidth="4" />
+              <text x="0" y="-52" textAnchor="middle" fill="#B45309" fontSize="20" fontWeight="900" fontFamily="'Arial Black'">2013</text>
+              <text x="0" y="48" textAnchor="middle" fill="#0F172A" fontSize="16" fontWeight="900">FALLECIMIENTO</text>
+            </g>
+          </g>
+
+          {/* Gran pancarta central: EFECTO MANDELA */}
+          <g transform="translate(240, 360)">
+            <rect x="0" y="0" width="600" height="90" rx="16" fill="#FFE600" stroke="#000000" strokeWidth="7" />
+            <text x="300" y="58" textAnchor="middle" fill="#000000" fontSize="36" fontWeight="900" fontFamily="'Arial Black', sans-serif">
+              EFECTO MANDELA
+            </text>
+          </g>
+
+          {/* Rótulo superior */}
+          <g transform="translate(80, 160)">
+            <rect x="0" y="0" width="620" height="74" rx="14" fill="#020617" stroke="#F59E0B" strokeWidth="5" />
+            <text x="24" y="47" fill="#FDE047" fontSize="24" fontWeight="900" fontFamily="'Arial Black', sans-serif">
+              LOS HECHOS REALES vs EL MITO
+            </text>
+          </g>
+        </svg>
+      </div>
+    );
+  }
+
+  // 24. RED MENTAL SILUETAS MANDELA (Frag 3: Fiona Broome y red social del recuerdo)
+  if (escenario === "red_mental_siluetas_mandela") {
+    const pulse = 0.5 + 0.5 * Math.sin(frame * 0.2);
+    return (
+      <div className="absolute inset-0 pointer-events-none z-0 overflow-hidden bg-[#F8FAFC]">
+        <svg className="absolute inset-0 w-full h-full" viewBox="0 0 1080 1920" preserveAspectRatio="xMidYMid slice">
+          <rect width="1080" height="1920" fill="#F8FAFC" />
+          <rect y="1360" width="1080" height="560" fill="#E2E8F0" stroke="#000000" strokeWidth="8" />
+
+          {/* Red de nodos conectando las mentes */}
+          <path
+            d="M 220,540 Q 540,420 820,580 M 540,420 L 540,820 M 220,540 L 400,900 M 820,580 L 680,920"
+            fill="none"
+            stroke="#94A3B8"
+            strokeWidth="4"
+            strokeDasharray="8 8"
+          />
+
+          {/* Siluetas anónimas al fondo asintiendo */}
+          {[ [180, 720], [860, 740], [540, 960] ].map(([sx, sy], i) => (
+            <g key={i} transform={`translate(${sx}, ${sy})`} opacity="0.45">
+              <circle cx="0" cy="-40" r="28" fill="#64748B" stroke="#000000" strokeWidth="3" />
+              <path d="M -40,40 C -40,-10 40,-10 40,40 Z" fill="#64748B" stroke="#000000" strokeWidth="3" />
+              {/* Brazo alzado compartiendo el error */}
+              <line x1="30" y1="10" x2="60" y2="-30" stroke="#000000" strokeWidth="6" strokeLinecap="round" />
+            </g>
+          ))}
+
+          {/* Nodos de contagio mental parpadeando */}
+          {[ [220, 540], [540, 420], [820, 580] ].map(([nx, ny], i) => (
+            <circle key={i} cx={nx} cy={ny} r={14 + pulse * 6} fill="#F43F5E" fillOpacity="0.4" stroke="#BE123C" strokeWidth="3" />
+          ))}
+
+          {/* Rótulo superior */}
+          <g transform="translate(80, 160)">
+            <rect x="0" y="0" width="620" height="74" rx="14" fill="#020617" stroke="#F43F5E" strokeWidth="5" />
+            <text x="24" y="47" fill="#FDA4AF" fontSize="24" fontWeight="900" fontFamily="'Arial Black', sans-serif">
+              CONTAGIO SOCIAL DE RECUERDOS
+            </text>
+          </g>
+        </svg>
+      </div>
+    );
+  }
+
+  // 25. ESTUDIO CABALLETE MONOPOLY PIKACHU (Frag 4: Monóculo y cola de Pikachu que se borran)
+  if (escenario === "estudio_caballete_monopoly_pikachu") {
+    // FASE 1: Monopoly se borra cuando la voz dice "Nunca lo llevó" (~59f / 1.96s)
+    const eraseMonopolyT = Math.min(1.0, Math.max(0.0, (frame - 59) / 22));
+    const monocleAlpha = Math.max(0.0, 1.0 - eraseMonopolyT * 1.35);
+    const stampMonopolyPop = eraseMonopolyT >= 0.85;
+
+    // FASE 2: Pikachu se borra EXACTAMENTE cuando la voz dice "Tampoco" (~144f / 4.80s)
+    // Antes de frame 144, la punta negra está 100% visible (blackTipAlpha = 1.0) para que el espectador la vea
+    const erasePikachuT = Math.min(1.0, Math.max(0.0, (frame - 144) / 22));
+    const blackTipAlpha = Math.max(0.0, 1.0 - erasePikachuT * 1.35);
+    const stampPikachuPop = erasePikachuT >= 0.85;
+
+    const isErasingMonopoly = frame >= 59 && frame <= 83;
+    const isErasingPikachu = frame >= 144 && frame <= 168;
+
+    const scrubX = Math.sin(frame * 0.8) * 24;
+    const scrubY = Math.cos(frame * 0.6) * 14;
+
+    return (
+      <div className="absolute inset-0 pointer-events-none z-0 overflow-hidden bg-[#F8FAFC]">
+        <svg className="absolute inset-0 w-full h-full" viewBox="0 0 1080 1920" preserveAspectRatio="xMidYMid slice">
+          {/* Suelo y pared de estudio */}
+          <rect width="1080" height="1920" fill="#F8FAFC" />
+          <rect y="1360" width="1080" height="560" fill="#E2E8F0" stroke="#000000" strokeWidth="8" />
+
+          {/* Gran Atril / Caballete de Madera de Artista (Ubicado a la derecha, dejando espacio al Stickman) */}
+          <g id="atril_madera">
+            {/* Pata central vertical trasera */}
+            <line x1="695" y1="360" x2="695" y2="1520" stroke="#5C2B10" strokeWidth="20" strokeLinecap="round" />
+            {/* Patas laterales en A */}
+            <line x1="695" y1="400" x2="360" y2="1520" stroke="#78350F" strokeWidth="22" strokeLinecap="round" />
+            <line x1="695" y1="400" x2="1030" y2="1520" stroke="#78350F" strokeWidth="22" strokeLinecap="round" />
+            
+            {/* Repisa horizontal de soporte donde reposa la pizarra */}
+            <rect x="340" y="1075" width="700" height="36" rx="6" fill="#B45309" stroke="#000000" strokeWidth="7" />
+            <rect x="360" y="1085" width="660" height="8" fill="#F59E0B" />
+            {/* Frascos de pintura y pinceles en la repisa */}
+            <rect x="375" y="1040" width="38" height="35" rx="5" fill="#3B82F6" stroke="#000000" strokeWidth="4" />
+            <rect x="425" y="1046" width="34" height="29" rx="5" fill="#EF4444" stroke="#000000" strokeWidth="4" />
+            <line x1="440" y1="1046" x2="465" y2="1000" stroke="#78350F" strokeWidth="6" strokeLinecap="round" />
+            <line x1="390" y1="1040" x2="410" y2="990" stroke="#D97706" strokeWidth="5" strokeLinecap="round" />
+            
+            {/* Abrazadera superior de madera que fija la pizarra */}
+            <rect x="635" y="465" width="120" height="32" rx="6" fill="#9A3412" stroke="#000000" strokeWidth="6" />
+            <circle cx="695" cy="481" r="8" fill="#FDE047" stroke="#000000" strokeWidth="3.5" />
+          </g>
+
+          {/* La Gran Pizarra / Lienzo (Montada firmemente sobre el atril) */}
+          <g id="gran_pizarra_dibujo" transform="translate(370, 495)">
+            {/* Tablero de madera y lienzo */}
+            <rect x="0" y="0" width="650" height="580" rx="16" fill="#FFFFFF" stroke="#000000" strokeWidth="9" />
+            <rect x="14" y="14" width="622" height="552" rx="10" fill="#FEFCE8" stroke="#E2E8F0" strokeWidth="4" />
+
+            {/* Encabezado del pizarrón */}
+            <rect x="14" y="14" width="622" height="55" rx="6" fill="#0F172A" />
+            <text x="325" y="50" textAnchor="middle" fill="#FDE047" fontSize="22" fontWeight="900" fontFamily="'Arial Black', sans-serif">
+              ¿CÓMO ERAN REALMENTE?
+            </text>
+
+            {/* Línea divisoria central en la pizarra */}
+            <line x1="325" y1="70" x2="325" y2="560" stroke="#CBD5E1" strokeWidth="5" strokeDasharray="14 10" />
+
+            {/* ======================================================== */}
+            {/* LADO IZQUIERDO: SEÑOR DEL MONOPOLY (RICH UNCLE PENNYBAGS) */}
+            {/* ======================================================== */}
+            <g transform="translate(162, 255)">
+              {/* Etiqueta nombre */}
+              <text x="0" y="-125" textAnchor="middle" fill="#0F172A" fontSize="20" fontWeight="900" fontFamily="'Arial Black'">
+                SEÑOR MONOPOLY
+              </text>
+
+              {/* Chistera clásica de copa */}
+              <rect x="-54" y="-122" width="108" height="84" rx="8" fill="#0F172A" stroke="#000000" strokeWidth="5.5" />
+              <rect x="-52" y="-55" width="104" height="18" fill="#DC2626" />
+              <ellipse cx="0" cy="-36" rx="76" ry="14" fill="#0F172A" stroke="#000000" strokeWidth="5.5" />
+
+              {/* Pelo canoso lateral */}
+              <circle cx="-50" cy="8" r="14" fill="#FFFFFF" stroke="#000000" strokeWidth="3.5" />
+              <circle cx="50" cy="8" r="14" fill="#FFFFFF" stroke="#000000" strokeWidth="3.5" />
+
+              {/* Rostro regordete sonriente */}
+              <circle cx="0" cy="22" r="52" fill="#FFE4E6" stroke="#000000" strokeWidth="5.5" />
+              {/* Orejas */}
+              <circle cx="-52" cy="22" r="12" fill="#FFE4E6" stroke="#000000" strokeWidth="4" />
+              <circle cx="52" cy="22" r="12" fill="#FFE4E6" stroke="#000000" strokeWidth="4" />
+              {/* Nariz redonda */}
+              <circle cx="0" cy="14" r="7" fill="#F43F5E" stroke="#000000" strokeWidth="2.5" />
+              {/* Ojo izquierdo */}
+              <ellipse cx="-22" cy="6" rx="8" ry="11" fill="#0F172A" />
+              <circle cx="-25" cy="3" r="3" fill="#FFFFFF" />
+              {/* Ojo derecho real (debajo del falso monóculo) */}
+              <ellipse cx="22" cy="6" rx="8" ry="11" fill="#0F172A" />
+              <circle cx="19" cy="3" r="3" fill="#FFFFFF" />
+              {/* Cejas blancas gruesas */}
+              <path d="M -34,-8 Q -22,-18 -10,-8" fill="none" stroke="#FFFFFF" strokeWidth="6" strokeLinecap="round" />
+              <path d="M 10,-8 Q 22,-18 34,-8" fill="none" stroke="#FFFFFF" strokeWidth="6" strokeLinecap="round" />
+
+              {/* Bigote blanco gigante rizado */}
+              <path
+                d="M 0,24 C -18,14 -46,16 -54,38 C -46,52 -18,40 0,30 C 18,40 46,52 54,38 C 46,16 18,14 0,24 Z"
+                fill="#FFFFFF"
+                stroke="#000000"
+                strokeWidth="5.5"
+              />
+
+              {/* Camisa y moño rojo */}
+              <polygon points="-26,68 0,54 26,68 0,76" fill="#FFFFFF" stroke="#000000" strokeWidth="3.5" />
+              <polygon points="-22,60 -22,74 0,67 22,74 22,60 0,66" fill="#EF4444" stroke="#000000" strokeWidth="3.5" />
+
+              {/* EL MONÓCULO DORADO QUE SE BORRA */}
+              <g opacity={monocleAlpha}>
+                <circle cx="22" cy="6" r="22" fill="#FEF08A" fillOpacity="0.45" stroke="#F59E0B" strokeWidth="5.5" />
+                <path d="M 14,-2 Q 22,-10 30,-2" stroke="#FFFFFF" strokeWidth="3.5" strokeLinecap="round" fill="none" />
+                {/* Cadena dorada colgante */}
+                <path d="M 44,6 Q 54,34 34,62" fill="none" stroke="#D97706" strokeWidth="3.5" strokeDasharray="4 3" />
+              </g>
+
+              {/* Dictamen / Sello Monopoly */}
+              {stampMonopolyPop && (
+                <g transform="translate(0, 108)">
+                  <rect x="-120" y="-18" width="240" height="38" rx="6" fill="#EF4444" stroke="#000000" strokeWidth="3.5" />
+                  <text x="0" y="7" textAnchor="middle" fill="#FFFFFF" fontSize="16" fontWeight="900" fontFamily="'Arial Black'">
+                    ❌ NUNCA TUVO MONÓCULO
+                  </text>
+                </g>
+              )}
+            </g>
+
+            {/* ======================================================== */}
+            {/* LADO DERECHO: PIKACHU CON SU COLA DE RAYO                */}
+            {/* ======================================================== */}
+            <g transform="translate(488, 255)">
+              {/* Etiqueta nombre */}
+              <text x="0" y="-125" textAnchor="middle" fill="#0F172A" fontSize="20" fontWeight="900" fontFamily="'Arial Black'">
+                PIKACHU Y SU COLA
+              </text>
+
+              {/* CABEZA DE PIKACHU CON OREJAS CON PUNTA NEGRA REAL */}
+              <g transform="translate(0, 50)">
+                {/* Oreja izquierda (¡SÍ tiene punta negra!) */}
+                <polygon points="-24,10 -48,-50 -26,-38 -12,4" fill="#FFE600" stroke="#000000" strokeWidth="4.5" />
+                <polygon points="-48,-50 -36,-26 -26,-38" fill="#000000" stroke="#000000" strokeWidth="3" />
+                {/* Oreja derecha (¡SÍ tiene punta negra!) */}
+                <polygon points="18,8 48,-52 32,-36 8,6" fill="#FFE600" stroke="#000000" strokeWidth="4.5" />
+                <polygon points="48,-52 40,-26 32,-36" fill="#000000" stroke="#000000" strokeWidth="3" />
+
+                {/* Cabeza redonda amarilla */}
+                <circle cx="0" cy="30" r="38" fill="#FFE600" stroke="#000000" strokeWidth="5" />
+                {/* Mejillas rojas */}
+                <circle cx="-25" cy="36" r="9" fill="#EF4444" stroke="#000000" strokeWidth="2.5" />
+                <circle cx="25" cy="36" r="9" fill="#EF4444" stroke="#000000" strokeWidth="2.5" />
+                {/* Ojos negros con brillo */}
+                <circle cx="-13" cy="24" r="5" fill="#000000" />
+                <circle cx="-15" cy="22" r="2" fill="#FFFFFF" />
+                <circle cx="13" cy="24" r="5" fill="#000000" />
+                <circle cx="11" cy="22" r="2" fill="#FFFFFF" />
+                {/* Nariz diminuta y boca */}
+                <polygon points="0,29 -2,27 2,27" fill="#000000" />
+                <path d="M -7,33 Q -3,37 0,34 Q 3,37 7,33" fill="none" stroke="#000000" strokeWidth="2.5" strokeLinecap="round" />
+              </g>
+
+              {/* COLA EN FORMA DE RAYO ELÉCTRICO (AMARILLO 100%) */}
+              <g transform="translate(18, -45)">
+                {/* Base marrón conectada al cuerpo */}
+                <polygon points="-16,70 -8,38 8,44 0,70" fill="#78350F" stroke="#000000" strokeWidth="5" />
+                {/* Segmento 2 amarillo */}
+                <polygon points="-8,38 24,10 38,16 8,44" fill="#FFE600" stroke="#000000" strokeWidth="5" />
+                {/* Segmento 3 amarillo */}
+                <polygon points="24,10 -12,-34 10,-42 38,16" fill="#FFE600" stroke="#000000" strokeWidth="5" />
+                {/* Pala grande superior (100% Amarilla real) */}
+                <polygon points="-12,-34 54,-105 -24,-105 -52,-44" fill="#FFE600" stroke="#000000" strokeWidth="5.5" />
+
+                {/* LA FALSA PUNTA NEGRA QUE SE BORRA */}
+                <g opacity={blackTipAlpha}>
+                  <polygon points="-32,-68 54,-105 -24,-105 -44,-72" fill="#000000" stroke="#000000" strokeWidth="5.5" />
+                  <rect x="-24" y="-124" width="70" height="20" rx="4" fill="#EF4444" stroke="#000000" strokeWidth="2" />
+                  <text x="11" y="-110" textAnchor="middle" fill="#FFFFFF" fontSize="11" fontWeight="900" fontFamily="'Arial Black'">
+                    ❌ FALSA
+                  </text>
+                </g>
+              </g>
+
+              {/* Dictamen / Sello Pikachu */}
+              {stampPikachuPop && (
+                <g transform="translate(0, 108)">
+                  <rect x="-120" y="-18" width="240" height="38" rx="6" fill="#15803D" stroke="#000000" strokeWidth="3.5" />
+                  <text x="0" y="7" textAnchor="middle" fill="#FFFFFF" fontSize="16" fontWeight="900" fontFamily="'Arial Black'">
+                    ✅ 100% AMARILLA
+                  </text>
+                </g>
+              )}
+            </g>
+
+            {/* GOMA DE BORRAR ANIMADA: FASE 1 MONOPOLY / FASE 2 PIKACHU */}
+            {isErasingMonopoly && (
+              <g transform={`translate(${162 + 22 + scrubX}, ${255 + 6 + scrubY}) rotate(-25)`}>
+                <rect x="-24" y="-14" width="48" height="28" rx="6" fill="#F43F5E" stroke="#000000" strokeWidth="4" />
+                <rect x="0" y="-14" width="24" height="28" rx="2" fill="#3B82F6" stroke="#000000" strokeWidth="4" />
+                <circle cx="-32" cy="12" r="3.5" fill="#F43F5E" />
+                <circle cx="-26" cy="22" r="2.5" fill="#3B82F6" />
+                <circle cx="28" cy="18" r="3" fill="#64748B" />
+              </g>
+            )}
+
+            {isErasingPikachu && (
+              <g transform={`translate(${488 + 18 + 12 + scrubX}, ${255 - 45 - 82 + scrubY}) rotate(-25)`}>
+                <rect x="-24" y="-14" width="48" height="28" rx="6" fill="#F43F5E" stroke="#000000" strokeWidth="4" />
+                <rect x="0" y="-14" width="24" height="28" rx="2" fill="#3B82F6" stroke="#000000" strokeWidth="4" />
+                <circle cx="-32" cy="12" r="3.5" fill="#F43F5E" />
+                <circle cx="-26" cy="22" r="2.5" fill="#3B82F6" />
+                <circle cx="28" cy="18" r="3" fill="#64748B" />
+              </g>
+            )}
+          </g>
+
+          {/* Rótulo superior */}
+          <g transform="translate(140, 160)">
+            <rect x="0" y="0" width="800" height="74" rx="14" fill="#020617" stroke="#EAB308" strokeWidth="5" />
+            <text x="400" y="48" textAnchor="middle" fill="#FDE047" fontSize="26" fontWeight="900" fontFamily="'Arial Black', sans-serif">
+              ¿MONÓCULO? ¿COLA NEGRA? NUNCA EXISTIERON
+            </text>
+          </g>
+        </svg>
+      </div>
+    );
+  }
+
+  // 26. PANTALLA DIVIDIDA CHOQUE LOFTUS (Frag 5: Experimento de Elizabeth Loftus)
+  if (escenario === "pantalla_dividida_choque_loftus") {
+    const redAlertPulse = (frame % 8 < 4);
+    return (
+      <div className="absolute inset-0 pointer-events-none z-0 overflow-hidden bg-[#F8FAFC]">
+        <svg className="absolute inset-0 w-full h-full" viewBox="0 0 1080 1920" preserveAspectRatio="xMidYMid slice">
+          {/* Mitad izquierda: ¿Se tocaron? (Calma azul) */}
+          <rect x="0" y="0" width="540" height="1360" fill="#EFF6FF" />
+          {/* Mitad derecha: ¿Se estrellaron? (Alerta roja) */}
+          <rect x="540" y="0" width="540" height="1360" fill="#FFF1F2" />
+          {/* Línea divisoria central con estilo neo-brutalista */}
+          <line x1="540" y1="240" x2="540" y2="1360" stroke="#000000" strokeWidth="8" strokeDasharray="16 12" />
+
+          {/* Suelo común */}
+          <rect y="1360" width="1080" height="560" fill="#E2E8F0" stroke="#000000" strokeWidth="8" />
+
+          {/* Cartel Izquierdo: PREGUNTA SUAVE */}
+          <g transform="translate(60, 360)">
+            <rect x="0" y="0" width="420" height="90" rx="12" fill="#3B82F6" stroke="#000000" strokeWidth="5" />
+            <text x="210" y="40" textAnchor="middle" fill="#FFFFFF" fontSize="18" fontWeight="900">PREGUNTA A:</text>
+            <text x="210" y="70" textAnchor="middle" fill="#FEF08A" fontSize="22" fontWeight="900" fontFamily="'Arial Black'">"¿SE TOCARON?"</text>
+            <text x="210" y="130" textAnchor="middle" fill="#1E40AF" fontSize="24" fontWeight="900">30 KM/H · SIN VIDRIOS</text>
+          </g>
+
+          {/* Cartel Derecho: PREGUNTA AGRESIVA */}
+          <g transform="translate(600, 360)">
+            <rect x="0" y="0" width="420" height="90" rx="12" fill="#EF4444" stroke="#000000" strokeWidth="5" />
+            <text x="210" y="40" textAnchor="middle" fill="#FFFFFF" fontSize="18" fontWeight="900">PREGUNTA B:</text>
+            <text x="210" y="70" textAnchor="middle" fill="#FEF08A" fontSize="22" fontWeight="900" fontFamily="'Arial Black'">"¿SE ESTRELLARON?"</text>
+            <text x="210" y="130" textAnchor="middle" fill="#B91C1C" fontSize="24" fontWeight="900">90 KM/H · VIDRIOS FALSOS</text>
+          </g>
+
+          {/* Círculo rojo de advertencia sobre los vidrios falsos en la derecha */}
+          <g transform="translate(820, 680)">
+            <circle cx="0" cy="0" r="70" fill="none" stroke="#DC2626" strokeWidth={redAlertPulse ? 8 : 4} strokeDasharray="12 8" />
+            <text x="0" y="100" textAnchor="middle" fill="#DC2626" fontSize="18" fontWeight="900" fontFamily="'Arial Black'">¡NUNCA HUBO VIDRIO!</text>
+          </g>
+
+          {/* Rótulo superior */}
+          <g transform="translate(80, 160)">
+            <rect x="0" y="0" width="620" height="74" rx="14" fill="#020617" stroke="#EF4444" strokeWidth="5" />
+            <text x="24" y="47" fill="#FCA5A5" fontSize="24" fontWeight="900" fontFamily="'Arial Black', sans-serif">
+              EL EXPERIMENTO DE ELIZABETH LOFTUS
+            </text>
+          </g>
+        </svg>
+      </div>
+    );
+  }
+
+  // 27. MESA TRABAJO VHS ROMPECABEZAS (Frag 6: Memoria reconstructiva, puzzle forzado y cajón)
+  if (escenario === "mesa_trabajo_vhs_rompecabezas") {
+    return (
+      <div className="absolute inset-0 pointer-events-none z-0 overflow-hidden bg-[#F8FAFC]">
+        <svg className="absolute inset-0 w-full h-full" viewBox="0 0 1080 1920" preserveAspectRatio="xMidYMid slice">
+          <rect width="1080" height="1920" fill="#F8FAFC" />
+
+          {/* Mesa de trabajo con textura blueprint */}
+          <rect y="1200" width="1080" height="720" fill="#1E293B" stroke="#000000" strokeWidth="8" />
+          {[1240, 1340, 1460, 1600, 1760].map((ly, i) => (
+            <line key={i} x1="0" y1={ly} x2="1080" y2={ly} stroke="#334155" strokeWidth="2" strokeDasharray="10 10" />
+          ))}
+
+          {/* Mueble archivador de cajones en el fondo */}
+          <g transform="translate(680, 840)">
+            <rect x="0" y="0" width="340" height="360" rx="8" fill="#475569" stroke="#000000" strokeWidth="6" />
+            {/* 3 cajones metálicos */}
+            {[20, 130, 240].map((cy, idx) => (
+              <g key={idx} transform={`translate(20, ${cy})`}>
+                <rect width="300" height="90" rx="4" fill="#64748B" stroke="#000000" strokeWidth="4" />
+                <rect x="110" y="32" width="80" height="25" rx="3" fill="#E2E8F0" stroke="#000000" strokeWidth="3" />
+                <text x="150" y="50" textAnchor="middle" fill="#000000" fontSize="13" fontWeight="900">
+                  {idx === 0 ? "RECUERDO" : idx === 1 ? "HUECOS" : "FICCIÓN"}
+                </text>
+              </g>
+            ))}
+          </g>
+
+          {/* Rótulo superior */}
+          <g transform="translate(80, 160)">
+            <rect x="0" y="0" width="620" height="74" rx="14" fill="#020617" stroke="#10B981" strokeWidth="5" />
+            <text x="24" y="47" fill="#6EE7B7" fontSize="24" fontWeight="900" fontFamily="'Arial Black', sans-serif">
+              RECONSTRUCCIÓN, NO GRABACIÓN
+            </text>
+          </g>
+        </svg>
+      </div>
+    );
+  }
+
+  // 28. MULTITUD SILUETAS PIEZA FALSA (Frag 7: Cientos de personas con la misma pieza errónea)
+  if (escenario === "multitud_siluetas_pieza_falsa") {
+    const sweep = (frame * 3) % 1080;
+    return (
+      <div className="absolute inset-0 pointer-events-none z-0 overflow-hidden bg-[#F8FAFC]">
+        <svg className="absolute inset-0 w-full h-full" viewBox="0 0 1080 1920" preserveAspectRatio="xMidYMid slice">
+          <rect width="1080" height="1920" fill="#F8FAFC" />
+          <rect y="1360" width="1080" height="560" fill="#CBD5E1" stroke="#000000" strokeWidth="8" />
+
+          {/* Filas de siluetas en perspectiva alzando la misma pieza */}
+          {[
+            { rowY: 580, count: 6, scale: 0.55, opacity: 0.35 },
+            { rowY: 740, count: 5, scale: 0.75, opacity: 0.55 },
+            { rowY: 960, count: 4, scale: 1.0, opacity: 0.85 },
+          ].map((row, rIdx) => (
+            <g key={rIdx}>
+              {[...Array(row.count)].map((_, cIdx) => {
+                const cx = (1080 / (row.count + 1)) * (cIdx + 1);
+                return (
+                  <g key={cIdx} transform={`translate(${cx}, ${row.rowY}) scale(${row.scale})`} opacity={row.opacity}>
+                    <circle cx="0" cy="-60" r="32" fill="#64748B" stroke="#000000" strokeWidth="4" />
+                    <path d="M -50,60 C -50,-20 50,-20 50,60 Z" fill="#64748B" stroke="#000000" strokeWidth="4" />
+                    {/* Brazo sosteniendo pieza amarilla/roja idéntica */}
+                    <line x1="30" y1="20" x2="60" y2="-50" stroke="#000000" strokeWidth="8" strokeLinecap="round" />
+                    <rect x="45" y="-80" width="36" height="36" rx="4" fill="#F59E0B" stroke="#000000" strokeWidth="4" />
+                  </g>
+                );
+              })}
+            </g>
+          ))}
+
+          {/* Haz de luz de lupa investigadora barriendo la multitud */}
+          <polygon points={`${sweep},0 ${sweep - 180},1360 ${sweep + 180},1360`} fill="#38BDF8" fillOpacity="0.14" />
+
+          {/* Rótulo superior */}
+          <g transform="translate(80, 160)">
+            <rect x="0" y="0" width="620" height="74" rx="14" fill="#020617" stroke="#F59E0B" strokeWidth="5" />
+            <text x="24" y="47" fill="#FDE047" fontSize="24" fontWeight="900" fontFamily="'Arial Black', sans-serif">
+              POPULARIDAD NO ES VERDAD
+            </text>
+          </g>
+        </svg>
+      </div>
+    );
+  }
+
+  // 29. ESTUDIO BLANCO REBOBINADO SOMBRERO (Frag 8: Efecto VHS rebobinado, revelación final)
+  if (escenario === "estudio_blanco_rebobinado_sombrero") {
+    const vhsBlink = (frame % 10 < 5);
+    const floatY = Math.sin(frame * 0.12) * 6;
+    const pulseScale = 1.0 + 0.03 * Math.sin(frame * 0.2);
+
+    return (
+      <div className="absolute inset-0 pointer-events-none z-0 overflow-hidden bg-[#F8FAFC]">
+        <svg className="absolute inset-0 w-full h-full" viewBox="0 0 1080 1920" preserveAspectRatio="xMidYMid slice">
+          {/* Suelo y pared del estudio */}
+          <rect width="1080" height="1920" fill="#F8FAFC" />
+          <rect y="1360" width="1080" height="560" fill="#E2E8F0" stroke="#000000" strokeWidth="8" />
+
+          {/* Líneas sutiles de interferencia y tracking de rebobinado VHS */}
+          {[320, 560, 880, 1160].map((scanY, idx) => (
+            <line
+              key={idx}
+              x1="0"
+              y1={scanY + (frame * 6) % 180}
+              x2="1080"
+              y2={scanY + (frame * 6) % 180}
+              stroke="#000000"
+              strokeWidth="2.5"
+              strokeDasharray="40 25 90 20"
+              opacity="0.18"
+            />
+          ))}
+
+          {/* Rótulo superior principal */}
+          <g transform="translate(140, 160)">
+            <rect x="0" y="0" width="800" height="74" rx="14" fill="#020617" stroke="#F59E0B" strokeWidth="5" />
+            <text x="400" y="48" textAnchor="middle" fill="#FDE047" fontSize="26" fontWeight="900" fontFamily="'Arial Black', sans-serif">
+              ¿QUÉ TAN SEGURA ESTÁ TU MENTE?
+            </text>
+          </g>
+
+          {/* BURBUJAS DE PENSAMIENTO QUE SALEN DESDE LA CABEZA DEL STICKMAN */}
+          <g id="burbujas_conexion">
+            <circle cx="390" cy="740" r="18" fill="#FFFFFF" stroke="#000000" strokeWidth="5" />
+            <circle cx="445" cy="685" r="28" fill="#FFFFFF" stroke="#000000" strokeWidth="6" />
+            <circle cx="510" cy="620" r="40" fill="#FFFFFF" stroke="#000000" strokeWidth="6.5" />
+          </g>
+
+          {/* GRAN NUBE DE PENSAMIENTO CON EL SOMBRERO PROTAGÓNICO (Centrada en X=710, Y=560) */}
+          <g id="gran_nube_pensamiento" transform={`translate(710, ${560 + floatY}) scale(${pulseScale})`}>
+            {/* Lóbulos exteriores de la nube esponjosa */}
+            <circle cx="-160" cy="-90" r="80" fill="#FFFFFF" stroke="#000000" strokeWidth="7" />
+            <circle cx="0" cy="-130" r="95" fill="#FFFFFF" stroke="#000000" strokeWidth="7" />
+            <circle cx="160" cy="-90" r="85" fill="#FFFFFF" stroke="#000000" strokeWidth="7" />
+            <circle cx="210" cy="20" r="85" fill="#FFFFFF" stroke="#000000" strokeWidth="7" />
+            <circle cx="160" cy="130" r="85" fill="#FFFFFF" stroke="#000000" strokeWidth="7" />
+            <circle cx="0" cy="150" r="95" fill="#FFFFFF" stroke="#000000" strokeWidth="7" />
+            <circle cx="-160" cy="120" r="85" fill="#FFFFFF" stroke="#000000" strokeWidth="7" />
+            <circle cx="-210" cy="15" r="85" fill="#FFFFFF" stroke="#000000" strokeWidth="7" />
+
+            {/* Centro blanco sólido que cubre las líneas internas */}
+            <rect x="-180" y="-110" width="360" height="240" rx="40" fill="#FFFFFF" />
+
+            {/* Cartel de pregunta dentro de la nube */}
+            <rect x="-190" y="-120" width="380" height="42" rx="8" fill="#0F172A" stroke="#F59E0B" strokeWidth="3" />
+            <text x="0" y="-93" textAnchor="middle" fill="#FDE047" fontSize="19" fontWeight="900" fontFamily="'Arial Black', sans-serif">
+              ¿LLEVABA ESTE SOMBRERO?
+            </text>
+
+            {/* ======================================================== */}
+            {/* EL GRAN SOMBRERO DE COPA: ULTRA NOTORIO Y DETALLADO       */}
+            {/* ======================================================== */}
+            <g id="sombrero_notorio" transform="translate(0, 10)">
+              {/* Sombra de apoyo del sombrero */}
+              <ellipse cx="0" cy="38" rx="145" ry="16" fill="#CBD5E1" opacity="0.6" />
+
+              {/* Ala ancha del sombrero */}
+              <ellipse cx="0" cy="30" rx="145" ry="24" fill="#0F172A" stroke="#000000" strokeWidth="7" />
+
+              {/* Copa alta estructurada */}
+              <path
+                d="M -90,24 L -76,-85 C -76,-105 76,-105 76,-85 L 90,24 Z"
+                fill="#0F172A"
+                stroke="#000000"
+                strokeWidth="7"
+              />
+
+              {/* Cinta roja de satén brillante */}
+              <path
+                d="M -88,22 L -84,-15 L 84,-15 L 88,22 Z"
+                fill="#EF4444"
+                stroke="#000000"
+                strokeWidth="5"
+              />
+
+              {/* Hebilla dorada central */}
+              <rect x="-20" y="-18" width="40" height="38" rx="6" fill="#F59E0B" stroke="#000000" strokeWidth="4" />
+              <rect x="-10" y="-10" width="20" height="22" rx="3" fill="#EF4444" />
+
+              {/* Brillos blancos de iluminación sobre la copa y el ala */}
+              <path d="M -55,-75 L -42,-10" stroke="#FFFFFF" strokeWidth="6" strokeLinecap="round" opacity="0.85" />
+              <path d="M -100,28 Q -40,38 40,28" stroke="#FFFFFF" strokeWidth="4" strokeLinecap="round" opacity="0.6" fill="none" />
+            </g>
+
+            {/* Signos de interrogación gigantes y llamativos a los costados del sombrero */}
+            <text x="-165" y="25" textAnchor="middle" fill="#F59E0B" stroke="#000000" strokeWidth="5" fontSize="82" fontWeight="900" fontFamily="'Arial Black', sans-serif">
+              ?
+            </text>
+            <text x="165" y="25" textAnchor="middle" fill="#F59E0B" stroke="#000000" strokeWidth="5" fontSize="82" fontWeight="900" fontFamily="'Arial Black', sans-serif">
+              ?
+            </text>
+
+            {/* Franja de duda inferior dentro de la nube */}
+            <rect x="-185" y="90" width="370" height="42" rx="8" fill="#DC2626" stroke="#000000" strokeWidth="3.5" />
+            <text x="0" y="118" textAnchor="middle" fill="#FFFFFF" fontSize="18" fontWeight="900" fontFamily="'Arial Black', sans-serif">
+              ¿O NUNCA LO TUVO PUESTO?
+            </text>
+          </g>
+
+          {/* BOTÓN INFERIOR DE RETENCIÓN: INVITA A REBOBINAR AL SEGUNDO 0:00 */}
+          <g transform="translate(140, 1100)">
+            <rect x="0" y="0" width="800" height="84" rx="18" fill="#020617" stroke="#F59E0B" strokeWidth="6" />
+            <text
+              x="400"
+              y="53"
+              textAnchor="middle"
+              fill={vhsBlink ? "#FDE047" : "#FFFFFF"}
+              fontSize="28"
+              fontWeight="900"
+              fontFamily="'Arial Black', sans-serif"
+            >
+              🔁 REGRESA AL SEGUNDO 0:00 Y REVISA
+            </text>
+          </g>
+        </svg>
+      </div>
+    );
+  }
+
+  // =========================================================================
+  // SERIE: EL HORMIGÓN QUE SE ARREGLA SOLO (PUERTOS ROMANOS)
+  // =========================================================================
+
+  // 30. PANTALLA DIVIDIDA: MUELLE MODERNO VS BLOQUE ROMANO (Frag 1)
+  if (escenario === "pantalla_dividida_muelle_moderno_romano") {
+    const wave = Math.sin(frame * 0.12) * 12;
+    const wave2 = Math.cos(frame * 0.15) * 10;
+    const crackGrow = Math.min(1.0, frame / 50);
+
+    return (
+      <div className="absolute inset-0 pointer-events-none z-0 overflow-hidden bg-[#0369A1]">
+        <svg className="absolute inset-0 w-full h-full" viewBox="0 0 1080 1920" preserveAspectRatio="xMidYMid slice">
+          {/* Fondo oceánico con gradiente de profundidad */}
+          <rect width="1080" height="1920" fill="#075985" />
+          <rect y="1250" width="1080" height="670" fill="#03496C" />
+
+          {/* Olas marinas en movimiento */}
+          <path
+            d={`M 0,${1260 + wave} Q 270,${1220 - wave} 540,${1260 + wave} T 1080,${1260 + wave} L 1080,1920 L 0,1920 Z`}
+            fill="#0284C7"
+            opacity="0.65"
+          />
+          <path
+            d={`M 0,${1280 + wave2} Q 270,${1310 - wave2} 540,${1280 + wave2} T 1080,${1280 + wave2} L 1080,1920 L 0,1920 Z`}
+            fill="#0369A1"
+            opacity="0.85"
+          />
+
+          {/* LADO IZQUIERDO: MUELLE MODERNO AGRIETADO CON VARILLA OXIDADA */}
+          <g transform="translate(60, 480)">
+            {/* Bloque moderno */}
+            <rect x="0" y="0" width="440" height="740" rx="14" fill="#94A3B8" stroke="#000000" strokeWidth="8" />
+            {/* Superficie de hormigón */}
+            <rect x="12" y="12" width="416" height="716" rx="8" fill="#64748B" />
+
+            {/* Etiqueta superior */}
+            <rect x="20" y="24" width="400" height="52" rx="8" fill="#020617" stroke="#EF4444" strokeWidth="4" />
+            <text x="220" y="58" textAnchor="middle" fill="#F87171" fontSize="20" fontWeight="900" fontFamily="'Arial Black'">
+              MUELLE ACTUAL: DÉCADAS
+            </text>
+
+            {/* Grieta estructural que crece y se abre */}
+            <path
+              d={`M 220,120 L 210,${220 * crackGrow} L 240,${340 * crackGrow} L 195,${480 * crackGrow} L 225,${620 * crackGrow} L 210,720`}
+              fill="none"
+              stroke="#000000"
+              strokeWidth="9"
+              strokeLinecap="round"
+            />
+            {/* Varilla de acero oxidada asomándose por la grieta */}
+            <rect x="226" y="260" width="22" height="180" rx="4" fill="#EA580C" stroke="#000000" strokeWidth="4" />
+            <path d="M 230,280 L 244,300 M 230,340 L 244,360 M 230,400 L 244,420" stroke="#7C2D12" strokeWidth="3" />
+            {/* Manchas de óxido filtrándose */}
+            <ellipse cx="237" cy="450" rx="35" ry="50" fill="#EA580C" opacity="0.45" />
+
+            {/* Alerta de degradación */}
+            <g transform="translate(40, 640)">
+              <rect x="0" y="0" width="360" height="48" rx="8" fill="#7F1D1D" stroke="#000000" strokeWidth="3" />
+              <text x="180" y="32" textAnchor="middle" fill="#FCA5A5" fontSize="17" fontWeight="900" fontFamily="'Arial Black'">
+                ⚠️ ACERO OXIDADO Y ROTURA
+              </text>
+            </g>
+          </g>
+
+          {/* LADO DERECHO: BLOQUE DE HORMIGÓN ROMANO FIRME (2000 AÑOS) */}
+          <g transform="translate(580, 480)">
+            {/* Bloque romano robusto y texturizado */}
+            <rect x="0" y="0" width="440" height="740" rx="14" fill="#B45309" stroke="#000000" strokeWidth="8" />
+            <rect x="12" y="12" width="416" height="716" rx="8" fill="#D97706" />
+
+            {/* Guijarros y piedras volcánicas incrustadas */}
+            <circle cx="80" cy="180" r="28" fill="#78350F" stroke="#000000" strokeWidth="3.5" />
+            <circle cx="280" cy="240" r="38" fill="#451A03" stroke="#000000" strokeWidth="4" />
+            <circle cx="160" cy="380" r="32" fill="#78350F" stroke="#000000" strokeWidth="3.5" />
+            <circle cx="340" cy="460" r="26" fill="#451A03" stroke="#000000" strokeWidth="3" />
+            <circle cx="110" cy="560" r="34" fill="#78350F" stroke="#000000" strokeWidth="3.5" />
+
+            {/* Algas marinas verdes adheridas en los bordes y base */}
+            <path
+              d="M 20,720 Q 35,620 20,540 Q 40,640 50,720"
+              fill="#15803D"
+              stroke="#000000"
+              strokeWidth="4"
+            />
+            <path
+              d="M 380,720 Q 410,630 390,560 Q 430,640 420,720"
+              fill="#15803D"
+              stroke="#000000"
+              strokeWidth="4"
+            />
+
+            {/* Etiqueta superior */}
+            <rect x="20" y="24" width="400" height="52" rx="8" fill="#020617" stroke="#22C55E" strokeWidth="4" />
+            <text x="220" y="58" textAnchor="middle" fill="#4ADE80" fontSize="20" fontWeight="900" fontFamily="'Arial Black'">
+              PUERTO ROMANO: 2000 AÑOS
+            </text>
+
+            {/* Sello de resistencia intacta */}
+            <g transform="translate(40, 640)">
+              <rect x="0" y="0" width="360" height="48" rx="8" fill="#14532D" stroke="#000000" strokeWidth="3" />
+              <text x="180" y="32" textAnchor="middle" fill="#86EFAC" fontSize="17" fontWeight="900" fontFamily="'Arial Black'">
+                ✅ SIN ACERO · 100% SÓLIDO
+              </text>
+            </g>
+          </g>
+
+          {/* LÍNEA DIVISORIA CENTRAL NEÓN */}
+          <line x1="540" y1="440" x2="540" y2="1280" stroke="#FDE047" strokeWidth="6" strokeDasharray="18 12" />
+
+          {/* Rótulo superior */}
+          <g transform="translate(140, 160)">
+            <rect x="0" y="0" width="800" height="74" rx="14" fill="#020617" stroke="#38BDF8" strokeWidth="5" />
+            <text x="400" y="48" textAnchor="middle" fill="#38BDF8" fontSize="25" fontWeight="900" fontFamily="'Arial Black', sans-serif">
+              ¿QUÉ SABÍAN LOS ROMANOS QUE OLVIDAMOS?
+            </text>
+          </g>
+        </svg>
+      </div>
+    );
+  }
+
+  // 31. CORTE TRANSVERSAL: VARILLA DE ACERO, ÓXIDO Y ROTURA (Frag 2)
+  if (escenario === "corte_transversal_hormigon_varilla_oxido") {
+    const crackP = Math.min(1.0, Math.max(0.0, (frame - 20) / 45));
+    const rebarW = 70 + crackP * 28;
+    const rebarGlow = crackP > 0.4 ? "#EA580C" : "#64748B";
+
+    return (
+      <div className="absolute inset-0 pointer-events-none z-0 overflow-hidden bg-[#0F172A]">
+        <svg className="absolute inset-0 w-full h-full" viewBox="0 0 1080 1920" preserveAspectRatio="xMidYMid slice">
+          <rect width="1080" height="1920" fill="#0F172A" />
+
+          {/* Gran bloque de hormigón en corte transversal */}
+          <g transform="translate(140, 420)">
+            {/* Masa de hormigón gris con poros */}
+            <rect x="0" y="0" width="800" height="780" rx="20" fill="#64748B" stroke="#000000" strokeWidth="9" />
+            <rect x="14" y="14" width="772" height="752" rx="12" fill="#475569" />
+
+            {/* Gotas de agua marina penetrando por canales capilares */}
+            {[0, 1, 2, 3].map((i) => {
+              const dropY = ((frame * 4 + i * 90) % 280) + 40;
+              return (
+                <g key={i} transform={`translate(${200 + i * 130}, ${dropY})`}>
+                  <ellipse cx="0" cy="0" rx="10" ry="14" fill="#38BDF8" stroke="#000000" strokeWidth="2.5" />
+                  <path d="M 0,-14 L -6,-4 L 6,-4 Z" fill="#38BDF8" />
+                </g>
+              );
+            })}
+
+            {/* VARILLA DE ACERO CENTRAL QUE SE HINCHA Y OXIDA */}
+            <g transform="translate(400, 400)">
+              {/* Núcleo de acero en expansión */}
+              <ellipse cx="0" cy="0" rx={rebarW} ry={rebarW * 1.25} fill={rebarGlow} stroke="#000000" strokeWidth="7" />
+              {/* Estrías corrugadas del acero */}
+              <ellipse cx="0" cy="0" rx={rebarW * 0.7} ry={rebarW * 0.9} fill="none" stroke="#7C2D12" strokeWidth="5" strokeDasharray="14 10" />
+
+              {/* GRIETAS JAGUARDIANAS QUE ROMPEN EL BLOQUE AL HINCHARSE */}
+              {crackP > 0.1 && (
+                <g stroke="#000000" strokeWidth={7 * crackP + 2} strokeLinecap="round" fill="none">
+                  {/* Grieta superior izquierda */}
+                  <path d={`M ${-rebarW},${-rebarW * 0.4} L ${-180 * crackP},${-120 * crackP} L ${-320 * crackP},${-260 * crackP}`} />
+                  {/* Grieta superior derecha */}
+                  <path d={`M ${rebarW},${-rebarW * 0.4} L ${190 * crackP},${-140 * crackP} L ${330 * crackP},${-250 * crackP}`} />
+                  {/* Grieta inferior izquierda */}
+                  <path d={`M ${-rebarW * 0.6},${rebarW * 0.8} L ${-160 * crackP},${220 * crackP} L ${-300 * crackP},${340 * crackP}`} />
+                  {/* Grieta inferior derecha */}
+                  <path d={`M ${rebarW * 0.6},${rebarW * 0.8} L ${180 * crackP},${210 * crackP} L ${320 * crackP},${330 * crackP}`} />
+                </g>
+              )}
+
+              {/* Etiqueta de la varilla */}
+              <rect x="-140" y="-22" width="280" height="44" rx="8" fill="#020617" stroke="#EF4444" strokeWidth="3" />
+              <text x="0" y="7" textAnchor="middle" fill="#FCA5A5" fontSize="18" fontWeight="900" fontFamily="'Arial Black'">
+                VARILLA CORROÍDA
+              </text>
+            </g>
+
+            {/* Cartel explicativo */}
+            <g transform="translate(140, 680)">
+              <rect x="0" y="0" width="520" height="60" rx="10" fill="#991B1B" stroke="#000000" strokeWidth="4" />
+              <text x="260" y="38" textAnchor="middle" fill="#FFFFFF" fontSize="20" fontWeight="900" fontFamily="'Arial Black'">
+                EL ÓXIDO SE EXPANDE Y FRACTURA
+              </text>
+            </g>
+          </g>
+
+          {/* CALENDARIO DE DURABILIDAD (50-100 AÑOS) */}
+          <g transform="translate(680, 260)">
+            <rect x="0" y="0" width="280" height="130" rx="14" fill="#020617" stroke="#F59E0B" strokeWidth="5" />
+            <rect x="0" y="0" width="280" height="38" rx="8" fill="#DC2626" />
+            <text x="140" y="27" textAnchor="middle" fill="#FFFFFF" fontSize="16" fontWeight="900" fontFamily="'Arial Black'">
+              LÍMITE MODERNO
+            </text>
+            <text x="140" y="85" textAnchor="middle" fill="#FDE047" fontSize="28" fontWeight="900" fontFamily="'Arial Black'">
+              50–100
+            </text>
+            <text x="140" y="115" textAnchor="middle" fill="#94A3B8" fontSize="15" fontWeight="900" fontFamily="'Arial Black'">
+              AÑOS DE VIDA ÚTIL
+            </text>
+          </g>
+
+          {/* Rótulo superior */}
+          <g transform="translate(140, 140)">
+            <rect x="0" y="0" width="800" height="74" rx="14" fill="#020617" stroke="#EF4444" strokeWidth="5" />
+            <text x="400" y="48" textAnchor="middle" fill="#F87171" fontSize="24" fontWeight="900" fontFamily="'Arial Black', sans-serif">
+              EL ACERO: EL TALÓN DE AQUILES DEL HORMIGÓN
+            </text>
+          </g>
+        </svg>
+      </div>
+    );
+  }
+
+  // 32. BARCA ROMANA, CALDERO Y VOLCÁN POZZUOLI (Frag 3)
+  if (escenario === "barca_mezcla_volcan_pozzuoli") {
+    const smokeY = (frame * 3) % 180;
+    const boatBob = Math.sin(frame * 0.14) * 8;
+    const boatTilt = Math.sin(frame * 0.1) * 2;
+
+    return (
+      <div className="absolute inset-0 pointer-events-none z-0 overflow-hidden bg-[#38BDF8]">
+        <svg className="absolute inset-0 w-full h-full" viewBox="0 0 1080 1920" preserveAspectRatio="xMidYMid slice">
+          {/* Cielo mediterráneo con sol brillante */}
+          <rect width="1080" height="1920" fill="#38BDF8" />
+          <circle cx="920" cy="280" r="75" fill="#FDE047" stroke="#000000" strokeWidth="6" />
+
+          {/* VOLCÁN POZZUOLI AL FONDO HUMEANDO */}
+          <g id="volcan_pozzuoli" transform="translate(480, 480)">
+            {/* Montaña volcánica */}
+            <polygon points="-360,340 0,60 360,340" fill="#475569" stroke="#000000" strokeWidth="8" />
+            {/* Capa de lava seca y ceniza */}
+            <polygon points="-180,340 0,60 180,340" fill="#334155" />
+            <polygon points="-80,120 0,60 80,120" fill="#78350F" />
+
+            {/* Bocanadas de ceniza y humo volcánico */}
+            <circle cx={-15 + Math.sin(frame * 0.1) * 15} cy={30 - smokeY} r={28 + smokeY * 0.25} fill="#64748B" opacity="0.8" />
+            <circle cx={15 + Math.cos(frame * 0.1) * 20} cy={-20 - smokeY} r={34 + smokeY * 0.3} fill="#94A3B8" opacity="0.7" />
+
+            {/* Etiqueta Pozzuoli */}
+            <rect x="-180" y="240" width="360" height="52" rx="10" fill="#020617" stroke="#F59E0B" strokeWidth="4" />
+            <text x="0" y="274" textAnchor="middle" fill="#FDE047" fontSize="20" fontWeight="900" fontFamily="'Arial Black'">
+              🌋 CENIZA DE POZZUOLI
+            </text>
+          </g>
+
+          {/* Mar mediterráneo con olas */}
+          <rect y="820" width="1080" height="1100" fill="#0284C7" />
+          <path d="M 0,820 Q 270,800 540,820 T 1080,820 L 1080,1920 L 0,1920 Z" fill="#0369A1" />
+
+          {/* BARCA DE MADERA ROMANA FLOTANDO */}
+          <g transform={`translate(480, ${960 + boatBob}) rotate(${boatTilt})`}>
+            {/* Casco de madera de la barca */}
+            <path
+              d="M -440,60 C -360,180 360,180 440,60 L 380,20 L -380,20 Z"
+              fill="#78350F"
+              stroke="#000000"
+              strokeWidth="9"
+            />
+            {/* Listones de madera */}
+            <line x1="-360" y1="70" x2="360" y2="70" stroke="#451A03" strokeWidth="5" />
+            <line x1="-320" y1="120" x2="320" y2="120" stroke="#451A03" strokeWidth="5" />
+
+            {/* Saco de Cal Viva (blanco) */}
+            <g transform="translate(-240, -40)">
+              <rect x="-45" y="-55" width="90" height="95" rx="14" fill="#FFFFFF" stroke="#000000" strokeWidth="6" />
+              <rect x="-35" y="-15" width="70" height="28" rx="4" fill="#E2E8F0" />
+              <text x="0" y="4" textAnchor="middle" fill="#0F172A" fontSize="13" fontWeight="900" fontFamily="'Arial Black'">CAL</text>
+            </g>
+
+            {/* Saco de Ceniza Volcánica (gris) */}
+            <g transform="translate(-130, -35)">
+              <rect x="-45" y="-50" width="90" height="85" rx="14" fill="#64748B" stroke="#000000" strokeWidth="6" />
+              <rect x="-35" y="-15" width="70" height="28" rx="4" fill="#334155" />
+              <text x="0" y="4" textAnchor="middle" fill="#F8FAFC" fontSize="12" fontWeight="900" fontFamily="'Arial Black'">CENIZA</text>
+            </g>
+
+            {/* Caldero grande con mezcla humeante */}
+            <g transform="translate(60, -50)">
+              {/* Olla de hierro negro */}
+              <ellipse cx="0" cy="40" rx="90" ry="24" fill="#020617" stroke="#000000" strokeWidth="6" />
+              <path d="M -90,40 C -85,120 85,120 90,40 Z" fill="#0F172A" stroke="#000000" strokeWidth="6" />
+              {/* Mezcla hidráulica burbujeando */}
+              <ellipse cx="0" cy="40" rx="80" ry="18" fill="#B45309" stroke="#000000" strokeWidth="4" />
+              <circle cx="-30" cy="38" r="10" fill="#D97706" />
+              <circle cx="25" cy="42" r="12" fill="#F59E0B" />
+              <circle cx="0" cy="35" r="7" fill="#FEF08A" />
+            </g>
+
+            {/* Obrero Romano en silueta vertiendo mezcla por un tubo al agua */}
+            <g transform="translate(260, -90)">
+              {/* Cabeza obrero */}
+              <circle cx="0" cy="-35" r="22" fill="#334155" stroke="#000000" strokeWidth="4" />
+              {/* Torso */}
+              <rect x="-18" y="-12" width="36" height="70" rx="6" fill="#334155" stroke="#000000" strokeWidth="4" />
+              {/* Brazo vertiendo */}
+              <line x1="10" y1="0" x2="60" y2="30" stroke="#334155" strokeWidth="9" strokeLinecap="round" />
+            </g>
+
+            {/* Tubo / vertedero de madera que baja al mar hacia el molde */}
+            <path d="M 180,60 L 320,380 L 260,380 L 140,60 Z" fill="#B45309" stroke="#000000" strokeWidth="6" />
+          </g>
+
+          {/* MOLDE DE MADERA SUMERGIDO BAJO EL AGUA */}
+          <g transform="translate(700, 1420)">
+            {/* Cajón de encofrado de madera en el lecho marino */}
+            <rect x="0" y="0" width="300" height="320" rx="10" fill="#92400E" stroke="#000000" strokeWidth="8" />
+            {/* Listones de madera clavados */}
+            <line x1="0" y1="80" x2="300" y2="80" stroke="#451A03" strokeWidth="5" />
+            <line x1="0" y1="160" x2="300" y2="160" stroke="#451A03" strokeWidth="5" />
+            <line x1="0" y1="240" x2="300" y2="240" stroke="#451A03" strokeWidth="5" />
+            {/* Hormigón hidráulico fraguando bajo el agua marina */}
+            <rect x="20" y="100" width="260" height="200" rx="6" fill="#D97706" opacity="0.9" />
+            <text x="150" y="210" textAnchor="middle" fill="#FFFFFF" fontSize="17" fontWeight="900" fontFamily="'Arial Black'">
+              MOLDE SUBMARINO
+            </text>
+          </g>
+
+          {/* Rótulo superior */}
+          <g transform="translate(140, 160)">
+            <rect x="0" y="0" width="800" height="74" rx="14" fill="#020617" stroke="#F59E0B" strokeWidth="5" />
+            <text x="400" y="48" textAnchor="middle" fill="#FDE047" fontSize="24" fontWeight="900" fontFamily="'Arial Black', sans-serif">
+              LA RECETA: CAL VIVA + CENIZA VOLCÁNICA
+            </text>
+          </g>
+        </svg>
+      </div>
+    );
+  }
+
+  // 33. MICROSCOPIO: CRISTALES DE TOBERMORITA CRECIENDO (Frag 4)
+  if (escenario === "microscopio_tobermorita_cristales") {
+    const growT = Math.min(1.0, Math.max(0.0, (frame - 15) / 55));
+    const glint = Math.sin(frame * 0.2) * 8;
+
+    return (
+      <div className="absolute inset-0 pointer-events-none z-0 overflow-hidden bg-[#020617]">
+        <svg className="absolute inset-0 w-full h-full" viewBox="0 0 1080 1920" preserveAspectRatio="xMidYMid slice">
+          <rect width="1080" height="1920" fill="#020617" />
+
+          {/* LENTE CIRCULAR DE MICROSCOPIO GIGANTE */}
+          <g transform="translate(540, 880)">
+            {/* Borde exterior dorado del ocular */}
+            <circle cx="0" cy="0" r="460" fill="#0B132B" stroke="#F59E0B" strokeWidth="18" />
+            <circle cx="0" cy="0" r="445" fill="#0F172A" stroke="#000000" strokeWidth="8" />
+
+            {/* Cuadrícula milimétrica científica */}
+            <circle cx="0" cy="0" r="300" fill="none" stroke="#1E293B" strokeWidth="2" strokeDasharray="10 8" />
+            <line x1="-420" y1="0" x2="420" y2="0" stroke="#334155" strokeWidth="2" strokeDasharray="12 12" />
+            <line x1="0" y1="-420" x2="0" y2="420" stroke="#334155" strokeWidth="2" strokeDasharray="12 12" />
+
+            {/* Poro interior cavernoso de hormigón */}
+            <path
+              d="M -340,-120 C -260,-320 220,-340 320,-140 C 420,80 340,320 120,340 C -140,360 -380,240 -340,-120 Z"
+              fill="#1E293B"
+              stroke="#000000"
+              strokeWidth="7"
+            />
+
+            {/* Agua de mar fluyendo con iones disueltos */}
+            {[0, 1, 2, 3, 4].map((idx) => (
+              <circle
+                key={idx}
+                cx={Math.sin(frame * 0.1 + idx) * 140}
+                cy={Math.cos(frame * 0.12 + idx * 1.5) * 120}
+                r={6 + (idx % 3) * 3}
+                fill="#38BDF8"
+                opacity="0.8"
+              />
+            ))}
+
+            {/* CRISTALES DE TOBERMORITA CRECIENDO EN FORMA DE PLACAS Y AGUJAS */}
+            {growT > 0.05 && (
+              <g stroke="#000000" strokeWidth="4">
+                {/* Cristal 1 (Placa superior izquierda) */}
+                <polygon
+                  points={`-180,-140 ${-180 + 90 * growT},${-140 - 70 * growT} ${-150 + 130 * growT},${-140 - 50 * growT} -150,-140`}
+                  fill="#E0F2FE"
+                />
+                {/* Cristal 2 (Placa inferior izquierda) */}
+                <polygon
+                  points={`-160,120 ${-160 + 110 * growT},${120 + 80 * growT} ${-130 + 140 * growT},${120 + 50 * growT} -130,120`}
+                  fill="#BAE6FD"
+                />
+                {/* Cristal 3 (Placa superior derecha) */}
+                <polygon
+                  points={`160,-120 ${160 - 110 * growT},${-120 - 60 * growT} ${130 - 140 * growT},${-120 - 40 * growT} 130,-120`}
+                  fill="#7DD3FC"
+                />
+                {/* Cristal 4 (Placa inferior derecha) */}
+                <polygon
+                  points={`140,140 ${140 - 120 * growT},${140 + 60 * growT} ${110 - 150 * growT},${140 + 40 * growT} 110,140`}
+                  fill="#38BDF8"
+                />
+                {/* Cristal central entrelazado de tobermorita */}
+                <polygon
+                  points={`-40,-50 ${-40 + 80 * growT},${-50 + 90 * growT} ${-20 + 100 * growT},${-50 + 70 * growT} 20,-30`}
+                  fill="#FFFFFF"
+                />
+              </g>
+            )}
+
+            {/* Brillos y destellos minerales */}
+            <circle cx={-40 + glint} cy={-20} r="4" fill="#FEF08A" />
+            <circle cx={60 - glint} cy={40} r="5" fill="#FEF08A" />
+
+            {/* Retícula de zoom */}
+            <rect x="-140" y="360" width="280" height="42" rx="8" fill="#020617" stroke="#38BDF8" strokeWidth="3" />
+            <text x="0" y="388" textAnchor="middle" fill="#38BDF8" fontSize="18" fontWeight="900" fontFamily="'Arial Black'">
+              AUMENTO 5000X
+            </text>
+          </g>
+
+          {/* Cartel explicativo inferior */}
+          <g transform="translate(140, 1420)">
+            <rect x="0" y="0" width="800" height="78" rx="14" fill="#020617" stroke="#38BDF8" strokeWidth="5" />
+            <text x="400" y="50" textAnchor="middle" fill="#F8FAFC" fontSize="23" fontWeight="900" fontFamily="'Arial Black', sans-serif">
+              CRISTALES DE AL-TOBERMORITA: REFUERZAN EL PORO
+            </text>
+          </g>
+
+          {/* Rótulo superior */}
+          <g transform="translate(140, 160)">
+            <rect x="0" y="0" width="800" height="74" rx="14" fill="#020617" stroke="#F59E0B" strokeWidth="5" />
+            <text x="400" y="48" textAnchor="middle" fill="#FDE047" fontSize="25" fontWeight="900" fontFamily="'Arial Black', sans-serif">
+              EL AGUA DE MAR DISUELVE LA CENIZA Y CREA MINERALES
+            </text>
+          </g>
+        </svg>
+      </div>
+    );
+  }
+
+  // 34. GRUMOS DE CAL: AUTORREPARACIÓN MIT (Frag 5)
+  if (escenario === "grumos_cal_autoreparacion_mit") {
+    const healT = Math.min(1.0, Math.max(0.0, (frame - 25) / 45));
+    const sealPop = healT >= 0.85;
+
+    return (
+      <div className="absolute inset-0 pointer-events-none z-0 overflow-hidden bg-[#0F172A]">
+        <svg className="absolute inset-0 w-full h-full" viewBox="0 0 1080 1920" preserveAspectRatio="xMidYMid slice">
+          <rect width="1080" height="1920" fill="#0F172A" />
+
+          {/* Matriz de hormigón romano con grumos blancos de cal */}
+          <g transform="translate(140, 440)">
+            <rect x="0" y="0" width="800" height="740" rx="18" fill="#B45309" stroke="#000000" strokeWidth="9" />
+            <rect x="14" y="14" width="772" height="712" rx="10" fill="#D97706" />
+
+            {/* GRUMOS BLANCOS DE CAL VIVA (LIME CLASTS) */}
+            {/* Grumo protagonista central */}
+            <g transform="translate(400, 360)">
+              <ellipse cx="0" cy="0" rx="75" ry="60" fill="#FFFFFF" stroke="#000000" strokeWidth="6" />
+              <ellipse cx="10" cy="-5" rx="55" ry="40" fill="#FEFCE8" />
+              <text x="0" y="8" textAnchor="middle" fill="#0F172A" fontSize="16" fontWeight="900" fontFamily="'Arial Black'">
+                GRUMO DE CAL
+              </text>
+            </g>
+
+            {/* Otros grumos secundarios */}
+            <ellipse cx="180" cy="180" rx="45" ry="36" fill="#FFFFFF" stroke="#000000" strokeWidth="4.5" />
+            <ellipse cx="640" cy="220" rx="52" ry="42" fill="#FFFFFF" stroke="#000000" strokeWidth="4.5" />
+            <ellipse cx="220" cy="560" rx="48" ry="38" fill="#FFFFFF" stroke="#000000" strokeWidth="4.5" />
+            <ellipse cx="620" cy="540" rx="42" ry="34" fill="#FFFFFF" stroke="#000000" strokeWidth="4.5" />
+
+            {/* Grieta que atraviesa el bloque y toca el grumo */}
+            <path
+              d="M 400,14 L 390,140 L 415,240 L 400,300 M 400,420 L 385,520 L 420,620 L 400,726"
+              fill="none"
+              stroke="#000000"
+              strokeWidth="9"
+              strokeLinecap="round"
+            />
+
+            {/* REACCIÓN QUÍMICA: HILOS DE CALCIO SELLANDO LA GRIETA */}
+            {healT > 0.05 && (
+              <g>
+                {/* Hilos blancos de calcio rellenando la fisura */}
+                <path
+                  d="M 400,14 L 390,140 L 415,240 L 400,300 M 400,420 L 385,520 L 420,620 L 400,726"
+                  fill="none"
+                  stroke="#FFFFFF"
+                  strokeWidth={9 * healT}
+                  strokeLinecap="round"
+                />
+                {/* Destellos y recristalización de carbonato cálcico */}
+                <circle cx="400" cy="240" r={8 * healT} fill="#FEF08A" />
+                <circle cx="400" cy="520" r={8 * healT} fill="#FEF08A" />
+              </g>
+            )}
+
+            {/* Dictamen / Sello de Error vs Descubrimiento MIT */}
+            <g transform="translate(400, 640)">
+              {!sealPop ? (
+                <g>
+                  <rect x="-190" y="-22" width="380" height="48" rx="8" fill="#DC2626" stroke="#000000" strokeWidth="4" />
+                  <text x="0" y="11" textAnchor="middle" fill="#FFFFFF" fontSize="18" fontWeight="900" fontFamily="'Arial Black'">
+                    ❌ ANTES: «ERROR DE MEZCLA»
+                  </text>
+                </g>
+              ) : (
+                <g>
+                  <rect x="-210" y="-22" width="420" height="48" rx="8" fill="#15803D" stroke="#000000" strokeWidth="4" />
+                  <text x="0" y="11" textAnchor="middle" fill="#FFFFFF" fontSize="18" fontWeight="900" fontFamily="'Arial Black'">
+                    ✅ MIT 2023: AUTO-REPARACIÓN ACTIVA
+                  </text>
+                </g>
+              )}
+            </g>
+          </g>
+
+          {/* Rótulo superior */}
+          <g transform="translate(140, 160)">
+            <rect x="0" y="0" width="800" height="74" rx="14" fill="#020617" stroke="#22C55E" strokeWidth="5" />
+            <text x="400" y="48" textAnchor="middle" fill="#4ADE80" fontSize="24" fontWeight="900" fontFamily="'Arial Black', sans-serif">
+              LOS GRUMOS DE CAL: RESERVAS DE CURACIÓN
+            </text>
+          </g>
+        </svg>
+      </div>
+    );
+  }
+
+  // 35. RUINAS PUERTO ROMANO SUBMARINO (Frag 6)
+  if (escenario === "ruinas_puerto_romano_submarino") {
+    const wave = Math.sin(frame * 0.1) * 8;
+    const fishX1 = ((frame * 3) % 1200) - 100;
+    const fishX2 = 1180 - ((frame * 2.5) % 1200);
+
+    return (
+      <div className="absolute inset-0 pointer-events-none z-0 overflow-hidden bg-[#075985]">
+        <svg className="absolute inset-0 w-full h-full" viewBox="0 0 1080 1920" preserveAspectRatio="xMidYMid slice">
+          {/* Fondo marino profundo */}
+          <rect width="1080" height="1920" fill="#075985" />
+          <rect y="1280" width="1080" height="640" fill="#0C4A6E" />
+
+          {/* Rayos de luz cáustica submarina */}
+          {[0, 1, 2, 3].map((i) => (
+            <polygon
+              key={i}
+              points={`${150 + i * 240 + wave},0 ${250 + i * 240 + wave},0 ${320 + i * 240 - wave},1400 ${180 + i * 240 - wave},1400`}
+              fill="#38BDF8"
+              opacity="0.12"
+            />
+          ))}
+
+          {/* RUINAS DEL MUELLE CAÍDO (Izquierda: derrumbe y terremotos) */}
+          <g transform="translate(60, 960)">
+            {/* Bloques caídos en el lecho marino */}
+            <polygon points="0,280 80,180 180,220 120,320" fill="#78350F" stroke="#000000" strokeWidth="6" />
+            <polygon points="110,320 220,200 320,260 210,360" fill="#92400E" stroke="#000000" strokeWidth="6" />
+            <polygon points="180,360 300,320 360,400 240,440" fill="#78350F" stroke="#000000" strokeWidth="6" />
+            {/* Algas cubriendo los escombros */}
+            <path d="M 60,260 Q 40,200 70,140 Q 90,200 80,260" fill="#15803D" />
+            <path d="M 240,320 Q 220,250 250,180 Q 270,250 260,320" fill="#15803D" />
+
+            <rect x="20" y="380" width="300" height="42" rx="8" fill="#020617" stroke="#EF4444" strokeWidth="3" />
+            <text x="170" y="408" textAnchor="middle" fill="#FCA5A5" fontSize="16" fontWeight="900" fontFamily="'Arial Black'">
+              DERRUMBE POR SISMOS
+            </text>
+          </g>
+
+          {/* TRAMO FIRME EN PIE (Derecha: intacto y majestuoso) */}
+          <g transform="translate(620, 680)">
+            <rect x="0" y="0" width="400" height="680" rx="14" fill="#B45309" stroke="#000000" strokeWidth="9" />
+            <rect x="14" y="14" width="372" height="652" rx="8" fill="#D97706" />
+
+            {/* Incrustaciones de conchas y algas centenarias */}
+            <circle cx="80" cy="220" r="28" fill="#78350F" stroke="#000000" strokeWidth="3.5" />
+            <circle cx="280" cy="340" r="34" fill="#451A03" stroke="#000000" strokeWidth="4" />
+            <path d="M 320,680 Q 350,560 330,480 Q 370,580 360,680" fill="#15803D" stroke="#000000" strokeWidth="3.5" />
+
+            <rect x="30" y="580" width="340" height="48" rx="8" fill="#14532D" stroke="#000000" strokeWidth="3" />
+            <text x="200" y="612" textAnchor="middle" fill="#86EFAC" fontSize="18" fontWeight="900" fontFamily="'Arial Black'">
+              TRAMO EN PIE (20 SIGLOS)
+            </text>
+          </g>
+
+          {/* Peces pequeños nadando en el arrecife */}
+          <g transform={`translate(${fishX1}, 1040)`}>
+            <ellipse cx="0" cy="0" rx="22" ry="12" fill="#F59E0B" stroke="#000000" strokeWidth="2.5" />
+            <polygon points="-20,0 -32,-10 -32,10" fill="#F59E0B" stroke="#000000" strokeWidth="2.5" />
+          </g>
+          <g transform={`translate(${fishX2}, 1180)`}>
+            <ellipse cx="0" cy="0" rx="18" ry="10" fill="#38BDF8" stroke="#000000" strokeWidth="2" />
+            <polygon points="16,0 26,-8 26,8" fill="#38BDF8" stroke="#000000" strokeWidth="2" />
+          </g>
+
+          {/* Rótulo superior */}
+          <g transform="translate(140, 160)">
+            <rect x="0" y="0" width="800" height="74" rx="14" fill="#020617" stroke="#38BDF8" strokeWidth="5" />
+            <text x="400" y="48" textAnchor="middle" fill="#38BDF8" fontSize="23" fontWeight="900" fontFamily="'Arial Black', sans-serif">
+              NO ERA INDESTRUCTIBLE... PERO LA QUÍMICA FUNCIONA
+            </text>
+          </g>
+        </svg>
+      </div>
+    );
+  }
+
+  // 36. BARCA LABORATORIO FUTURO Y CALENDARIO (Frag 7)
+  if (escenario === "barca_laboratorio_futuro_calendario") {
+    const flashHeal = frame > 45 && (frame % 8 < 4);
+    const calYear = 2024 + Math.min(2000, Math.floor(frame * 24));
+
+    return (
+      <div className="absolute inset-0 pointer-events-none z-0 overflow-hidden bg-[#0369A1]">
+        <svg className="absolute inset-0 w-full h-full" viewBox="0 0 1080 1920" preserveAspectRatio="xMidYMid slice">
+          {/* Cielo atardecer mediterráneo */}
+          <rect width="1080" height="1920" fill="#0284C7" />
+          <rect y="1260" width="1080" height="660" fill="#03496C" />
+
+          {/* Barca de investigación en la superficie */}
+          <g transform="translate(540, 980)">
+            {/* Casco barca */}
+            <path d="M -460,80 C -380,210 380,210 460,80 L 400,20 L -400,20 Z" fill="#78350F" stroke="#000000" strokeWidth="9" />
+
+            {/* MESA DE COMPARATIVA CON DOS BLOQUES */}
+            <rect x="-300" y="-40" width="600" height="60" rx="8" fill="#B45309" stroke="#000000" strokeWidth="6" />
+
+            {/* Muestra 1: Hormigón Moderno (Izquierda - Grieta abierta) */}
+            <g transform="translate(-180, -160)">
+              <rect x="-80" y="-60" width="160" height="180" rx="10" fill="#64748B" stroke="#000000" strokeWidth="6" />
+              <path d="M 0,-60 L -15,-10 L 15,40 L 0,120" fill="none" stroke="#000000" strokeWidth="7" />
+              <rect x="-70" y="70" width="140" height="34" rx="6" fill="#7F1D1D" stroke="#000000" strokeWidth="2.5" />
+              <text x="0" y="93" textAnchor="middle" fill="#FCA5A5" fontSize="13" fontWeight="900" fontFamily="'Arial Black'">
+                MODERNO (ROTO)
+              </text>
+            </g>
+
+            {/* Muestra 2: Hormigón Romano (Derecha - Grieta que se sella con destello) */}
+            <g transform="translate(180, -160)">
+              <rect x="-80" y="-60" width="160" height="180" rx="10" fill="#D97706" stroke="#000000" strokeWidth="6" />
+              {/* Grieta sellada con hilos de calcio dorados */}
+              <path d="M 0,-60 L -15,-10 L 15,40 L 0,120" fill="none" stroke={flashHeal ? "#FEF08A" : "#FFFFFF"} strokeWidth="8" />
+              {flashHeal && (
+                <polygon points="0,-10 6,10 24,14 8,24 12,42 0,30 -12,42 -8,24 -24,14 -6,10" fill="#22C55E" stroke="#000000" strokeWidth="3" />
+              )}
+              <rect x="-70" y="70" width="140" height="34" rx="6" fill="#14532D" stroke="#000000" strokeWidth="2.5" />
+              <text x="0" y="93" textAnchor="middle" fill="#86EFAC" fontSize="13" fontWeight="900" fontFamily="'Arial Black'">
+                ROMANO (SELLADO)
+              </text>
+            </g>
+          </g>
+
+          {/* CALENDARIO ACELERADO FLIP (2024 -> 4000+) */}
+          <g transform="translate(700, 320)">
+            <rect x="0" y="0" width="280" height="140" rx="14" fill="#020617" stroke="#F59E0B" strokeWidth="5" />
+            <rect x="0" y="0" width="280" height="38" rx="8" fill="#B45309" />
+            <text x="140" y="27" textAnchor="middle" fill="#FFFFFF" fontSize="16" fontWeight="900" fontFamily="'Arial Black'">
+              TIEMPO AVANZANDO
+            </text>
+            <text x="140" y="92" textAnchor="middle" fill="#FDE047" fontSize="32" fontWeight="900" fontFamily="'Arial Black'">
+              {calYear}
+            </text>
+            <text x="140" y="124" textAnchor="middle" fill="#94A3B8" fontSize="14" fontWeight="900" fontFamily="'Arial Black'">
+              QUÍMICA ACTIVA
+            </text>
+          </g>
+
+          {/* Rótulo superior */}
+          <g transform="translate(140, 160)">
+            <rect x="0" y="0" width="800" height="74" rx="14" fill="#020617" stroke="#22C55E" strokeWidth="5" />
+            <text x="400" y="48" textAnchor="middle" fill="#4ADE80" fontSize="24" fontWeight="900" fontFamily="'Arial Black', sans-serif">
+              CONSTRUCCIONES CON MENOS EMISIONES Y SIGLOS DE VIDA
+            </text>
+          </g>
+        </svg>
+      </div>
+    );
+  }
+
+  // =========================================================================
+  // 1. ALTAR MORADO CON CUATRO LUCES DIVIDIÉNDOSE
+  // =========================================================================
+  if (escenario === "altar_morado_cuatro_luces") {
+    const f = frame;
+    const splitT = Math.min(1, Math.max(0, (f - 30) / 75));
+    const flameWobble = Math.sin(f * 0.4) * 3;
+    const l1X = 540 + splitT * 340;
+    const l1Y = 780 - splitT * 320;
+    const l2X = 540 - splitT * 340;
+    const l2Y = 780 - splitT * 320;
+    const l3X = 540 - splitT * 340;
+    const l3Y = 780 + splitT * 320;
+    const l4X = 540 + splitT * 340;
+    const l4Y = 780 + splitT * 320;
+
+    return (
+      <div className="absolute inset-0 pointer-events-none z-0 overflow-hidden bg-[#0F071D]">
+        <svg className="absolute inset-0 w-full h-full" viewBox="0 0 1080 1920" preserveAspectRatio="xMidYMid slice">
+          <defs>
+            <linearGradient id="moradoMictlanBg" x1="0" y1="0" x2="0" y2="1">
+              <stop offset="0%" stopColor="#1E1035" />
+              <stop offset="60%" stopColor="#0F071D" />
+              <stop offset="100%" stopColor="#05020A" />
+            </linearGradient>
+            <radialGradient id="velaGlow" cx="50%" cy="50%" r="50%">
+              <stop offset="0%" stopColor="#F59E0B" stopOpacity="0.8" />
+              <stop offset="40%" stopColor="#EA580C" stopOpacity="0.4" />
+              <stop offset="100%" stopColor="#0F071D" stopOpacity="0" />
+            </radialGradient>
+            <radialGradient id="luzOroGlow" cx="50%" cy="50%" r="50%">
+              <stop offset="0%" stopColor="#FDE047" stopOpacity="0.9" />
+              <stop offset="100%" stopColor="#EAB308" stopOpacity="0" />
+            </radialGradient>
+            <radialGradient id="luzCyanGlow" cx="50%" cy="50%" r="50%">
+              <stop offset="0%" stopColor="#38BDF8" stopOpacity="0.9" />
+              <stop offset="100%" stopColor="#0284C7" stopOpacity="0" />
+            </radialGradient>
+            <radialGradient id="luzVerdeGlow" cx="50%" cy="50%" r="50%">
+              <stop offset="0%" stopColor="#86EFAC" stopOpacity="0.9" />
+              <stop offset="100%" stopColor="#16A34A" stopOpacity="0" />
+            </radialGradient>
+            <radialGradient id="luzRojaGlow" cx="50%" cy="50%" r="50%">
+              <stop offset="0%" stopColor="#F43F5E" stopOpacity="0.9" />
+              <stop offset="100%" stopColor="#BE123C" stopOpacity="0" />
+            </radialGradient>
+          </defs>
+
+          <rect width="1080" height="1920" fill="url(#moradoMictlanBg)" />
+
+          {/* Guirnaldas de Papel Picado tradicional en el techo */}
+          <g opacity="0.75">
+            <path d="M 0,90 Q 270,140 540,90 Q 810,140 1080,90" fill="none" stroke="#000000" strokeWidth="4" />
+            {[0, 1, 2, 3, 4, 5, 6, 7].map((i) => {
+              const px = 60 + i * 135;
+              const py = 95 + Math.sin((i / 7) * Math.PI) * 25;
+              const colors = ["#F97316", "#EC4899", "#EAB308", "#8B5CF6"];
+              const col = colors[i % colors.length];
+              return (
+                <g key={i} transform={`translate(${px}, ${py}) rotate(${Math.sin(f * 0.08 + i) * 3})`}>
+                  <polygon points="-45,0 45,0 45,75 -45,75" fill={col} stroke="#000000" strokeWidth="3" />
+                  <circle cx="0" cy="35" r="14" fill="#0F071D" />
+                </g>
+              );
+            })}
+          </g>
+
+          {/* Resplandor cálido de la vela central */}
+          <circle cx="540" cy="780" r={220 + Math.sin(f * 0.2) * 15} fill="url(#velaGlow)" />
+
+          {/* Altar de tres niveles base estilizado */}
+          <g transform="translate(540, 1380)">
+            <rect x="-380" y="80" width="760" height="120" rx="14" fill="#581C87" stroke="#000000" strokeWidth="6" />
+            <rect x="-280" y="-30" width="560" height="110" rx="12" fill="#C2410C" stroke="#000000" strokeWidth="6" />
+            <rect x="-180" y="-130" width="360" height="100" rx="10" fill="#D97706" stroke="#000000" strokeWidth="6" />
+
+            {[-320, -220, -120, 0, 120, 220, 320].map((cx, idx) => (
+              <circle key={idx} cx={cx} cy="100" r="16" fill="#F97316" stroke="#000000" strokeWidth="3.5" />
+            ))}
+            {[-240, -140, 0, 140, 240].map((cx, idx) => (
+              <circle key={idx} cx={cx} cy="-10" r="15" fill="#FBBF24" stroke="#000000" strokeWidth="3.5" />
+            ))}
+
+            <g transform="translate(-120, -130)">
+              <path d="M -22,0 L -12,-35 L 12,-35 L 22,0 Z" fill="#9A3412" stroke="#000000" strokeWidth="3.5" />
+              <ellipse cx="0" cy="-35" rx="14" ry="4" fill="#451A03" stroke="#000000" strokeWidth="2.5" />
+              <path
+                d={`M 0,-40 Q ${Math.sin(f * 0.15) * 20},-70 0,-110 Q ${-Math.sin(f * 0.15) * 25},-150 0,-200`}
+                fill="none"
+                stroke="#E2E8F0"
+                strokeWidth="6"
+                strokeLinecap="round"
+                opacity="0.45"
+              />
+            </g>
+
+            <rect x="-14" y="-210" width="28" height="80" rx="4" fill="#F8FAFC" stroke="#000000" strokeWidth="4" />
+            <line x1="0" y1="-210" x2="0" y2="-225" stroke="#000000" strokeWidth="3.5" />
+          </g>
+
+          {splitT < 0.95 && (
+            <g transform={`translate(540, 1150)`}>
+              <ellipse cx="0" cy="0" rx="18" ry="32" fill="#F59E0B" opacity="0.9" />
+              <ellipse cx={flameWobble} cy="-8" rx="10" ry="22" fill="#FEF08A" />
+            </g>
+          )}
+
+          {splitT > 0.05 && (
+            <>
+              <line x1="540" y1="1150" x2={l1X} y2={l1Y} stroke="#FDE047" strokeWidth="6" strokeDasharray="10 8" opacity={splitT * 0.8} />
+              <line x1="540" y1="1150" x2={l2X} y2={l2Y} stroke="#38BDF8" strokeWidth="6" strokeDasharray="10 8" opacity={splitT * 0.8} />
+              <line x1="540" y1="1150" x2={l3X} y2={l3Y} stroke="#86EFAC" strokeWidth="6" strokeDasharray="10 8" opacity={splitT * 0.8} />
+              <line x1="540" y1="1150" x2={l4X} y2={l4Y} stroke="#F43F5E" strokeWidth="7" strokeDasharray="10 8" opacity={splitT * 0.8} />
+
+              <g transform={`translate(${l1X}, ${l1Y})`}>
+                <circle cx="0" cy="0" r="55" fill="url(#luzOroGlow)" />
+                <circle cx="0" cy="0" r="22" fill="#FDE047" stroke="#000000" strokeWidth="4" />
+                <rect x="-110" y="32" width="220" height="34" rx="8" fill="#78350F" stroke="#FDE047" strokeWidth="2.5" />
+                <text x="0" y="55" textAnchor="middle" fill="#FEF08A" fontSize="13" fontWeight="900" fontFamily="'Arial Black'">
+                  SOL (GUERREROS Y PARTOS)
+                </text>
+              </g>
+
+              <g transform={`translate(${l2X}, ${l2Y})`}>
+                <circle cx="0" cy="0" r="55" fill="url(#luzCyanGlow)" />
+                <circle cx="0" cy="0" r="22" fill="#38BDF8" stroke="#000000" strokeWidth="4" />
+                <rect x="-110" y="32" width="220" height="34" rx="8" fill="#0C4A6E" stroke="#38BDF8" strokeWidth="2.5" />
+                <text x="0" y="55" textAnchor="middle" fill="#BAE6FD" fontSize="13" fontWeight="900" fontFamily="'Arial Black'">
+                  TLALOCAN (AGUA Y RAYO)
+                </text>
+              </g>
+
+              <g transform={`translate(${l3X}, ${l3Y})`}>
+                <circle cx="0" cy="0" r="55" fill="url(#luzVerdeGlow)" />
+                <circle cx="0" cy="0" r="22" fill="#86EFAC" stroke="#000000" strokeWidth="4" />
+                <rect x="-110" y="32" width="220" height="34" rx="8" fill="#14532D" stroke="#86EFAC" strokeWidth="2.5" />
+                <text x="0" y="55" textAnchor="middle" fill="#DCFCE7" fontSize="13" fontWeight="900" fontFamily="'Arial Black'">
+                  CHICHIHUACUAUHCO (BEBÉS)
+                </text>
+              </g>
+
+              <g transform={`translate(${l4X}, ${l4Y})`}>
+                <circle cx="0" cy="0" r="70" fill="url(#luzRojaGlow)" />
+                <circle cx="0" cy="0" r="28" fill="#F43F5E" stroke="#000000" strokeWidth="5" />
+                <rect x="-120" y="38" width="240" height="38" rx="8" fill="#4C0519" stroke="#FB7185" strokeWidth="3" />
+                <text x="0" y="63" textAnchor="middle" fill="#FFE4E6" fontSize="14" fontWeight="900" fontFamily="'Arial Black'">
+                  MICTLÁN (TODOS LOS DEMÁS)
+                </text>
+              </g>
+            </>
+          )}
+
+          <g transform="translate(140, 160)">
+            <rect x="0" y="0" width="800" height="74" rx="14" fill="#0F071D" stroke="#F59E0B" strokeWidth="5" />
+            <text x="400" y="48" textAnchor="middle" fill="#FDE047" fontSize="25" fontWeight="900" fontFamily="'Arial Black', sans-serif">
+              EL DESTINO DEL ALMA: ¿CÓMO MORISTE?
+            </text>
+          </g>
+        </svg>
+      </div>
+    );
+  }
+
+  // =========================================================================
+  // 2. PANORÁMICA DE LOS CUATRO DESTINOS MEXICAS
+  // =========================================================================
+  if (escenario === "panoramica_cuatro_destinos_mexicas") {
+    const f = frame;
+    const sunPulse = 1 + Math.sin(f * 0.15) * 0.06;
+    const rainY = (f * 14) % 60;
+    const milkDropY = (f * 4) % 45;
+    const doorGlow = 0.6 + Math.sin(f * 0.2) * 0.3;
+
+    return (
+      <div className="absolute inset-0 pointer-events-none z-0 overflow-hidden bg-[#020617]">
+        <svg className="absolute inset-0 w-full h-full" viewBox="0 0 1080 1920" preserveAspectRatio="xMidYMid slice">
+          <g>
+            <rect x="540" y="240" width="540" height="720" fill="#78350F" />
+            <g transform={`translate(810, 560) scale(${sunPulse})`}>
+              <circle cx="0" cy="0" r="110" fill="#F59E0B" stroke="#000000" strokeWidth="6" />
+              <circle cx="0" cy="0" r="75" fill="#FEF08A" stroke="#000000" strokeWidth="4" />
+              {[0, 45, 90, 135, 180, 225, 270, 315].map((ang, i) => (
+                <polygon
+                  key={i}
+                  points="0,-135 18,-110 -18,-110"
+                  fill="#FDE047"
+                  stroke="#000000"
+                  strokeWidth="3.5"
+                  transform={`rotate(${ang})`}
+                />
+              ))}
+            </g>
+            <g transform="translate(810, 780)">
+              <path d="M -30,60 L 0,0 L 30,60 Z" fill="#000000" />
+              <circle cx="0" cy="-18" r="16" fill="#000000" />
+              <path d="M 0,-34 L 20,-48 L 10,-24 Z" fill="#EAB308" stroke="#000000" strokeWidth="2.5" />
+            </g>
+            <rect x="570" y="260" width="480" height="48" rx="8" fill="#451A03" stroke="#FDE047" strokeWidth="3" />
+            <text x="810" y="293" textAnchor="middle" fill="#FEF08A" fontSize="18" fontWeight="900" fontFamily="'Arial Black'">
+              1. EL SOL: GUERREROS Y PARTOS
+            </text>
+          </g>
+
+          <g>
+            <rect x="0" y="240" width="540" height="720" fill="#064E3B" />
+            <g transform="translate(270, 380)">
+              <ellipse cx="-40" cy="0" rx="70" ry="40" fill="#0284C7" stroke="#000000" strokeWidth="5" />
+              <ellipse cx="30" cy="-10" rx="80" ry="50" fill="#38BDF8" stroke="#000000" strokeWidth="5" />
+              {[-80, -40, 0, 40, 80].map((rx, idx) => (
+                <line
+                  key={idx}
+                  x1={rx}
+                  y1={50 + rainY}
+                  x2={rx - 10}
+                  y2={80 + rainY}
+                  stroke="#BAE6FD"
+                  strokeWidth="4.5"
+                  strokeLinecap="round"
+                />
+              ))}
+            </g>
+            <path d="M 0,820 Q 140,730 280,800 Q 420,740 540,820 L 540,960 L 0,960 Z" fill="#047857" stroke="#000000" strokeWidth="5" />
+            <circle cx="160" cy="790" r="18" fill="#F43F5E" stroke="#000000" strokeWidth="3.5" />
+            <circle cx="380" cy="780" r="16" fill="#FBBF24" stroke="#000000" strokeWidth="3.5" />
+            <rect x="30" y="260" width="480" height="48" rx="8" fill="#064E3B" stroke="#38BDF8" strokeWidth="3" />
+            <text x="270" y="293" textAnchor="middle" fill="#7DD3FC" fontSize="18" fontWeight="900" fontFamily="'Arial Black'">
+              2. TLALOCAN: AGUA Y RAYOS
+            </text>
+          </g>
+
+          <g>
+            <rect x="0" y="960" width="540" height="720" fill="#14532D" />
+            <g transform="translate(270, 1380)">
+              <path d="M -30,220 L -20,60 L 20,60 L 30,220 Z" fill="#78350F" stroke="#000000" strokeWidth="5" />
+              <circle cx="0" cy="0" r="100" fill="#16A34A" stroke="#000000" strokeWidth="5" />
+              <circle cx="-70" cy="30" r="70" fill="#22C55E" stroke="#000000" strokeWidth="4.5" />
+              <circle cx="70" cy="30" r="70" fill="#22C55E" stroke="#000000" strokeWidth="4.5" />
+              {[-50, 0, 50].map((dx, i) => (
+                <ellipse key={i} cx={dx} cy={90 + milkDropY} rx="7" ry="12" fill="#FFFFFF" stroke="#000000" strokeWidth="2.5" />
+              ))}
+              <g transform="translate(-70, 170)">
+                <ellipse cx="0" cy="0" rx="22" ry="12" fill="#FEF08A" stroke="#000000" strokeWidth="3" />
+                <circle cx="10" cy="-6" r="6" fill="#F8FAFC" />
+              </g>
+              <g transform="translate(70, 170)">
+                <ellipse cx="0" cy="0" rx="22" ry="12" fill="#FEF08A" stroke="#000000" strokeWidth="3" />
+                <circle cx="-10" cy="-6" r="6" fill="#F8FAFC" />
+              </g>
+            </g>
+            <rect x="30" y="980" width="480" height="48" rx="8" fill="#14532D" stroke="#86EFAC" strokeWidth="3" />
+            <text x="270" y="1013" textAnchor="middle" fill="#BBF7D0" fontSize="18" fontWeight="900" fontFamily="'Arial Black'">
+              3. ÁRBOL NODRIZA: BEBÉS
+            </text>
+          </g>
+
+          <g>
+            <rect x="540" y="960" width="540" height="720" fill="#0F172A" />
+            <g transform="translate(810, 1340)">
+              <path d="M -120,240 L -120,20 C -120,-80 120,-80 120,20 L 120,240 Z" fill="#020617" stroke="#334155" strokeWidth="8" />
+              <path d="M -85,240 L -85,30 C -85,-50 85,-50 85,30 L 85,240 Z" fill="#000000" />
+              <circle cx="0" cy="70" r="60" fill="#E11D48" opacity={doorGlow * 0.4} />
+              <circle cx="0" cy="80" r="26" fill="#F43F5E" stroke="#FFFFFF" strokeWidth="4" />
+              <line x1="-80" y1="130" x2="80" y2="130" stroke="#334155" strokeWidth="5" />
+              <line x1="-70" y1="170" x2="70" y2="170" stroke="#334155" strokeWidth="5" />
+              <line x1="-60" y1="210" x2="60" y2="210" stroke="#334155" strokeWidth="5" />
+            </g>
+            <rect x="570" y="980" width="480" height="48" rx="8" fill="#4C0519" stroke="#F43F5E" strokeWidth="3" />
+            <text x="810" y="1013" textAnchor="middle" fill="#FECDD3" fontSize="18" fontWeight="900" fontFamily="'Arial Black'">
+              4. MICTLÁN: LA GRAN MAYORÍA
+            </text>
+          </g>
+
+          <line x1="540" y1="240" x2="540" y2="1680" stroke="#000000" strokeWidth="8" />
+          <line x1="0" y1="960" x2="1080" y2="960" stroke="#000000" strokeWidth="8" />
+
+          <g transform="translate(140, 150)">
+            <rect x="0" y="0" width="800" height="74" rx="14" fill="#020617" stroke="#F59E0B" strokeWidth="5" />
+            <text x="400" y="48" textAnchor="middle" fill="#FFFFFF" fontSize="23" fontWeight="900" fontFamily="'Arial Black', sans-serif">
+              LOS CUATRO DESTINOS SEGÚN EL TIPO DE MUERTE
+            </text>
+          </g>
+        </svg>
+      </div>
+    );
+  }
+
+  // =========================================================================
+  // 3. ESCALONES DEL MICTLÁN Y PERRO GUÍA (9 NIVELES / 4 AÑOS)
+  // =========================================================================
+  if (escenario === "escalones_mictlan_perro_guia") {
+    const f = frame;
+    const calAngle = (f * 0.8) % 360;
+    const activeYear = 1 + Math.floor((f / 35) % 4);
+
+    return (
+      <div className="absolute inset-0 pointer-events-none z-0 overflow-hidden bg-[#090D16]">
+        <svg className="absolute inset-0 w-full h-full" viewBox="0 0 1080 1920" preserveAspectRatio="xMidYMid slice">
+          <defs>
+            <linearGradient id="mictlanCuevaBg" x1="0" y1="0" x2="0" y2="1">
+              <stop offset="0%" stopColor="#1E293B" />
+              <stop offset="50%" stopColor="#0F172A" />
+              <stop offset="100%" stopColor="#020617" />
+            </linearGradient>
+          </defs>
+
+          <rect width="1080" height="1920" fill="url(#mictlanCuevaBg)" />
+
+          <g fill="#0F172A" stroke="#000000" strokeWidth="4">
+            <polygon points="40,240 80,440 120,240" />
+            <polygon points="180,240 230,510 280,240" />
+            <polygon points="420,240 460,430 500,240" />
+            <polygon points="680,240 720,490 760,240" />
+            <polygon points="900,240 940,420 980,240" />
+          </g>
+
+          <g>
+            {[
+              { n: 1, name: "1. APANOHUAYAN (RÍO)", x: 80, y: 560, w: 920 },
+              { n: 2, name: "2. TÉPETL MONAMICYAN (CERROS)", x: 140, y: 680, w: 860 },
+              { n: 3, name: "3. ITZTÉPETL (OBSIDIANA)", x: 200, y: 800, w: 800 },
+              { n: 4, name: "4. CEHECAYAN (VIENTO HIELO)", x: 260, y: 920, w: 740 },
+              { n: 5, name: "5. PANCUECUETLACAYAN", x: 320, y: 1040, w: 680 },
+              { n: 6, name: "6. TEMIMINALOYAN (FLECHAS)", x: 380, y: 1160, w: 620 },
+              { n: 7, name: "7. TEYOLLOCUALOYAN (FIERAS)", x: 440, y: 1280, w: 560 },
+              { n: 8, name: "8. IZMICTLAN APOCALOYAN", x: 500, y: 1400, w: 500 },
+              { n: 9, name: "9. CHIGNAHUMICTLÁN (PAZ)", x: 560, y: 1520, w: 440 },
+            ].map((step) => {
+              const isSelected = step.n <= 3;
+              return (
+                <g key={step.n} transform={`translate(${step.x}, ${step.y})`}>
+                  <rect
+                    x="0"
+                    y="0"
+                    width={step.w}
+                    height="90"
+                    rx="6"
+                    fill={step.n === 9 ? "#451A03" : isSelected ? "#334155" : "#1E293B"}
+                    stroke="#000000"
+                    strokeWidth="5"
+                  />
+                  <line x1="6" y1="6" x2={step.w - 6} y2="6" stroke={step.n === 9 ? "#F59E0B" : "#64748B"} strokeWidth="4" />
+                  <text
+                    x="30"
+                    y="52"
+                    fill={step.n === 9 ? "#FDE047" : "#F8FAFC"}
+                    fontSize="20"
+                    fontWeight="900"
+                    fontFamily="'Arial Black'"
+                  >
+                    {step.name}
+                  </text>
+                </g>
+              );
+            })}
+          </g>
+
+          <g opacity="0.35">
+            <path
+              d={`M -200,${1100 + Math.sin(f * 0.05) * 30} Q 200,1050 600,1130 Q 1000,1080 1300,1120`}
+              fill="none"
+              stroke="#94A3B8"
+              strokeWidth="80"
+              strokeLinecap="round"
+            />
+            <path
+              d={`M -100,${1420 + Math.cos(f * 0.05) * 25} Q 300,1460 700,1390 Q 1100,1440 1300,1410`}
+              fill="none"
+              stroke="#64748B"
+              strokeWidth="90"
+              strokeLinecap="round"
+            />
+          </g>
+
+          <g transform="translate(740, 290)">
+            <rect x="0" y="0" width="300" height="150" rx="14" fill="#020617" stroke="#F59E0B" strokeWidth="5" />
+            <rect x="0" y="0" width="300" height="40" rx="8" fill="#B45309" />
+            <text x="150" y="28" textAnchor="middle" fill="#FFFFFF" fontSize="16" fontWeight="900" fontFamily="'Arial Black'">
+              DURACIÓN DEL VIAJE
+            </text>
+            <g transform="translate(60, 95)">
+              <circle cx="0" cy="0" r="28" fill="#FDE047" stroke="#000000" strokeWidth="4" />
+              <path
+                d="M 0,-24 L 6,-6 L 24,0 L 6,6 L 0,24 L -6,6 L -24,0 L -6,-6 Z"
+                fill="#EA580C"
+                transform={`rotate(${calAngle})`}
+              />
+            </g>
+            <text x="180" y="85" textAnchor="middle" fill="#F8FAFC" fontSize="24" fontWeight="900" fontFamily="'Arial Black'">
+              4 AÑOS
+            </text>
+            <text x="180" y="118" textAnchor="middle" fill="#F59E0B" fontSize="15" fontWeight="900" fontFamily="'Arial Black'">
+              AÑO {activeYear} DE 4
+            </text>
+          </g>
+
+          <g transform="translate(140, 150)">
+            <rect x="0" y="0" width="800" height="74" rx="14" fill="#020617" stroke="#F43F5E" strokeWidth="5" />
+            <text x="400" y="48" textAnchor="middle" fill="#FCA5A5" fontSize="23" fontWeight="900" fontFamily="'Arial Black', sans-serif">
+              EL VIAJE AL MICTLÁN: 9 NIVELES Y 4 AÑOS
+            </text>
+          </g>
+        </svg>
+      </div>
+    );
+  }
+
+  // =========================================================================
+  // 4. OBSTÁCULOS: MONTAÑAS QUE CHOCAN Y VIENTO DE OBSIDIANA
+  // =========================================================================
+  if (escenario === "obstaculos_montanas_viento_obsidiana") {
+    const f = frame;
+    const clashCycle = Math.abs(Math.sin(f * 0.12));
+    const clashDist = clashCycle * 210;
+    const isImpacting = clashCycle < 0.1;
+    const windSpeed = 35;
+
+    return (
+      <div className="absolute inset-0 pointer-events-none z-0 overflow-hidden bg-[#020617]">
+        <svg className="absolute inset-0 w-full h-full" viewBox="0 0 1080 1920" preserveAspectRatio="xMidYMid slice">
+          <defs>
+            <linearGradient id="vientoCielo" x1="0" y1="0" x2="0" y2="1">
+              <stop offset="0%" stopColor="#1E1B4B" />
+              <stop offset="45%" stopColor="#0F172A" />
+              <stop offset="100%" stopColor="#020617" />
+            </linearGradient>
+          </defs>
+
+          <rect width="1080" height="1920" fill="url(#vientoCielo)" />
+
+          <g fill="#0F172A" stroke="#000000" strokeWidth="4">
+            {[0, 90, 180, 270, 360, 450, 540, 630, 720, 810, 900, 990].map((bx, i) => (
+              <polygon key={i} points={`${bx},1620 ${bx + 45},1480 ${bx + 90},1620`} fill="#1E293B" />
+            ))}
+            <rect x="0" y="1600" width="1080" height="320" fill="#0F172A" />
+          </g>
+
+          <g transform={`translate(${-clashDist}, 0)`}>
+            <polygon
+              points="0,620 490,920 470,1260 0,1400"
+              fill="#334155"
+              stroke="#000000"
+              strokeWidth="8"
+              strokeLinejoin="round"
+            />
+            <path d="M 120,700 L 460,940 L 430,1200" fill="none" stroke="#64748B" strokeWidth="5" />
+          </g>
+          <g transform={`translate(${clashDist}, 0)`}>
+            <polygon
+              points="1080,620 590,920 610,1260 1080,1400"
+              fill="#1E293B"
+              stroke="#000000"
+              strokeWidth="8"
+              strokeLinejoin="round"
+            />
+            <path d="M 960,700 L 620,940 L 650,1200" fill="none" stroke="#475569" strokeWidth="5" />
+          </g>
+
+          {isImpacting && (
+            <g transform="translate(540, 1080)">
+              <circle cx="0" cy="0" r="160" fill="none" stroke="#FDE047" strokeWidth="12" opacity="0.9" />
+              <circle cx="0" cy="0" r="240" fill="none" stroke="#F97316" strokeWidth="8" opacity="0.6" />
+              <polygon points="0,-80 20,-20 80,0 20,20 0,80 -20,20 -80,0 -20,-20" fill="#FFFFFF" />
+            </g>
+          )}
+
+          <g>
+            {[0, 1, 2, 3, 4, 5, 6, 7].map((lineIdx) => {
+              const ly = 460 + lineIdx * 130;
+              const lx = ((f * windSpeed + lineIdx * 240) % 1500) - 300;
+              return (
+                <g key={lineIdx} transform={`translate(${lx}, ${ly})`}>
+                  <line x1="-180" y1="0" x2="60" y2="0" stroke="#38BDF8" strokeWidth="4.5" strokeDasharray="24 12" />
+                  <polygon points="60,0 30,-8 10,0 30,8" fill="#000000" stroke="#38BDF8" strokeWidth="2.5" />
+                </g>
+              );
+            })}
+          </g>
+
+          <g transform="translate(140, 270)">
+            <rect x="0" y="0" width="380" height="54" rx="10" fill="#020617" stroke="#EF4444" strokeWidth="4" />
+            <text x="190" y="35" textAnchor="middle" fill="#FCA5A5" fontSize="16" fontWeight="900" fontFamily="'Arial Black'">
+              TÉPETL MONAMICYAN (CERROS)
+            </text>
+          </g>
+          <g transform="translate(560, 270)">
+            <rect x="0" y="0" width="380" height="54" rx="10" fill="#020617" stroke="#38BDF8" strokeWidth="4" />
+            <text x="190" y="35" textAnchor="middle" fill="#7DD3FC" fontSize="16" fontWeight="900" fontFamily="'Arial Black'">
+              ITZEHECAYAN (VIENTO OBSIDIANA)
+            </text>
+          </g>
+
+          <g transform="translate(140, 150)">
+            <rect x="0" y="0" width="800" height="74" rx="14" fill="#020617" stroke="#F59E0B" strokeWidth="5" />
+            <text x="400" y="48" textAnchor="middle" fill="#FFFFFF" fontSize="23" fontWeight="900" fontFamily="'Arial Black', sans-serif">
+              PRUEBAS MORTALES: EL COMPAÑERO ES VITAL
+            </text>
+          </g>
+        </svg>
+      </div>
+    );
+  }
+
+  // =========================================================================
+  // 5. RÍO APANOHUAYAN (EL PERRO AYUDA A CRUZAR EL RÍO + CONEXIÓN OFRENDA)
+  // =========================================================================
+  if (escenario === "rio_apanohuayan_cruce_ofrenda") {
+    const f = frame;
+    const waveShift = (f * 4) % 180;
+    const bobbing = Math.sin(f * 0.25) * 8;
+    const legPaddle1 = Math.sin(f * 0.45) * 22;
+    const legPaddle2 = Math.sin(f * 0.45 + Math.PI) * 22;
+    const tailAngle = Math.sin(f * 0.5) * 20;
+
+    return (
+      <div className="absolute inset-0 pointer-events-none z-0 overflow-hidden bg-[#030712]">
+        <svg className="absolute inset-0 w-full h-full" viewBox="0 0 1080 1920" preserveAspectRatio="xMidYMid slice">
+          <defs>
+            <linearGradient id="rioApanohuayanBg" x1="0" y1="0" x2="0" y2="1">
+              <stop offset="0%" stopColor="#0B132B" />
+              <stop offset="60%" stopColor="#061A36" />
+              <stop offset="100%" stopColor="#020617" />
+            </linearGradient>
+            <radialGradient id="sacredGlow" cx="50%" cy="50%" r="50%">
+              <stop offset="0%" stopColor="#FEF08A" stopOpacity="0.8" />
+              <stop offset="100%" stopColor="#F59E0B" stopOpacity="0" />
+            </radialGradient>
+          </defs>
+
+          {/* SECCIÓN SUPERIOR: EL RÍO APANOHUAYAN CAUDALOSO */}
+          <rect x="0" y="0" width="1080" height="1260" fill="url(#rioApanohuayanBg)" />
+
+          {/* OLAS Y CORRIENTES TURBULENTAS */}
+          <g stroke="#38BDF8" strokeWidth="5" fill="none" opacity="0.7">
+            {[-100, 100, 300, 500, 700, 900, 1100].map((wy, i) => (
+              <path
+                key={i}
+                d={`M ${-180 + waveShift},${wy} Q ${180 + waveShift},${wy - 35} ${540 + waveShift},${wy} Q ${900 + waveShift},${wy + 35} ${1260 + waveShift},${wy}`}
+              />
+            ))}
+          </g>
+
+          {/* ESPUMA Y REMOLINOS FLOTANTES */}
+          <g fill="#E0F2FE" opacity="0.8">
+            {[0, 1, 2, 3, 4].map((idx) => {
+              const rx = 180 + idx * 190 + Math.sin(f * 0.1 + idx) * 40;
+              const ry = 620 + Math.cos(f * 0.15 + idx) * 120;
+              return <ellipse key={idx} cx={rx} cy={ry} rx="18" ry="6" />;
+            })}
+          </g>
+
+          {/* ============================================================= */}
+          {/* ILUSTRACIÓN DETALLADA: EL XOLOITZCUINTLE NADANDO CON EL ALMA */}
+          {/* ============================================================= */}
+          <g transform={`translate(${520 + Math.sin(f * 0.1) * 20}, ${680 + bobbing})`}>
+            {/* Estela y oleaje en la base */}
+            <ellipse cx="-40" cy="55" rx="200" ry="30" fill="#0284C7" opacity="0.35" />
+
+            {/* PATAS SUBACUÁTICAS DEL PERRO REMANDO (DOG-PADDLE) */}
+            {/* Pata delantera derecha braceando */}
+            <g transform={`translate(100, 40) rotate(${legPaddle1})`}>
+              <path d="M 0,0 L 18,32 L 32,34" stroke="#1E293B" strokeWidth="10" strokeLinecap="round" fill="none" />
+              <circle cx="32" cy="34" r="8" fill="#0F172A" />
+              <ellipse cx="36" cy="36" rx="14" ry="6" fill="#E0F2FE" opacity="0.75" />
+            </g>
+            {/* Pata delantera izquierda braceando (fase opuesta) */}
+            <g transform={`translate(75, 42) rotate(${legPaddle2})`}>
+              <path d="M 0,0 L 15,30 L 28,32" stroke="#334155" strokeWidth="10" strokeLinecap="round" fill="none" />
+              <circle cx="28" cy="32" r="8" fill="#1E293B" />
+              <ellipse cx="32" cy="34" rx="14" ry="6" fill="#E0F2FE" opacity="0.75" />
+            </g>
+            {/* Pata trasera impulsando */}
+            <g transform={`translate(-60, 42) rotate(${-legPaddle1 * 0.7})`}>
+              <path d="M 0,0 L -18,28 L -8,32" stroke="#334155" strokeWidth="9" strokeLinecap="round" fill="none" />
+              <circle cx="-8" cy="32" r="7" fill="#1E293B" />
+            </g>
+
+            {/* COLA DEL PERRO SALIENDO DEL AGUA CON SALPICADURAS */}
+            <g transform={`translate(-85, 24) rotate(${tailAngle})`}>
+              <path
+                d="M 0,0 C -18,-15 -28,-36 -18,-48 C -14,-34 -4,-16 0,0"
+                fill="#334155"
+                stroke="#000000"
+                strokeWidth="5"
+                strokeLinecap="round"
+              />
+              <circle cx="-16" cy="-44" r="4.5" fill="#38BDF8" opacity="0.8" />
+              <circle cx="-8" cy="-52" r="3.5" fill="#E0F2FE" opacity="0.9" />
+            </g>
+
+            {/* LOMO Y CUERPO MUSCULOSO DEL XOLOITZCUINTLE */}
+            <path
+              d="M -85,46 C -90,16 -35,6 15,10 C 60,14 95,24 115,46 Z"
+              fill="#334155"
+              stroke="#000000"
+              strokeWidth="6.5"
+            />
+
+            {/* MANCHA CLARA SAGRADA EN EL LOMO (IDENTIDAD DEL GUÍA) */}
+            <path
+              d="M -50,12 C -20,6 20,6 48,12 C 38,26 -8,28 -38,22 Z"
+              fill="#FDE047"
+              stroke="#000000"
+              strokeWidth="3.5"
+            />
+            {/* Resplandor áurico sagrado de la mancha */}
+            <ellipse cx="-2" cy="16" rx="42" ry="14" fill="url(#sacredGlow)" />
+
+            {/* CUELLO FUERTE Y ARQUEADO SALIENDO CON DETERMINACIÓN DEL AGUA */}
+            <path
+              d="M 60,18 L 100,-26 L 132,-16 L 110,44 Z"
+              fill="#334155"
+              stroke="#000000"
+              strokeWidth="6"
+            />
+
+            {/* CABEZA CANINA CON RAZA MEXICA XOLOITZCUINTLE INCONFUNDIBLE */}
+            <g transform="translate(108, -26)">
+              {/* Cráneo */}
+              <ellipse cx="14" cy="4" rx="24" ry="17" fill="#334155" stroke="#000000" strokeWidth="5.5" />
+
+              {/* Hocico alargado de perro */}
+              <path
+                d="M 28,-4 L 62,6 L 48,18 L 22,14 Z"
+                fill="#1E293B"
+                stroke="#000000"
+                strokeWidth="5"
+                strokeLinejoin="round"
+              />
+
+              {/* Trufa / Nariz negra brillante de perro */}
+              <ellipse cx="62" cy="6" rx="5" ry="4" fill="#000000" />
+              <circle cx="60.5" cy="5" r="1.5" fill="#FFFFFF" />
+
+              {/* Boca abierta jadeando por el esfuerzo de nado con lengua rosada */}
+              <path d="M 36,12 L 52,14 L 38,18 Z" fill="#000000" />
+              <path
+                d="M 42,14 C 45,24 37,28 32,18 Z"
+                fill="#F43F5E"
+                stroke="#000000"
+                strokeWidth="2.5"
+              />
+
+              {/* Bigotes caninos */}
+              <circle cx="48" cy="4" r="1.5" fill="#000000" />
+              <circle cx="52" cy="7" r="1.5" fill="#000000" />
+              <circle cx="46" cy="9" r="1.5" fill="#000000" />
+
+              {/* Ojo enfocado, inteligente y noble */}
+              <path
+                d="M 18,-3 Q 26,-8 34,-2 Q 26,4 18,-3 Z"
+                fill="#FFFFFF"
+                stroke="#000000"
+                strokeWidth="2.5"
+              />
+              <circle cx="27" cy="-2.5" r="4.5" fill="#F59E0B" />
+              <circle cx="27" cy="-2.5" r="2.5" fill="#000000" />
+              <circle cx="25.5" cy="-4" r="1.2" fill="#FFFFFF" />
+              {/* Ceja decidida */}
+              <path d="M 16,-8 Q 26,-12 36,-6" fill="none" stroke="#000000" strokeWidth="3.5" strokeLinecap="round" />
+
+              {/* Orejas puntiagudas distintivas (forma de llama prehispánica) */}
+              {/* Oreja trasera */}
+              <polygon points="-8,-4 -4,-46 10,-8" fill="#1E293B" stroke="#000000" strokeWidth="4.5" strokeLinejoin="round" />
+              {/* Oreja delantera erecta */}
+              <polygon points="2,-8 10,-55 24,-12" fill="#334155" stroke="#000000" strokeWidth="5.5" strokeLinejoin="round" />
+              <polygon points="6,-10 11,-42 19,-14" fill="#FDE047" opacity="0.8" />
+            </g>
+
+            {/* ===================================================== */}
+            {/* EL STICKMAN-ALMA SUJETÁNDOSE DEL LOMO DEL PERRO */}
+            {/* ===================================================== */}
+            <g transform="translate(-18, 0)">
+              {/* Cabeza con halo dorado */}
+              <circle cx="-10" cy="-65" r="28" fill="#FFFFFF" stroke="#000000" strokeWidth="5" />
+              <ellipse cx="-10" cy="-65" rx="36" ry="36" fill="none" stroke="#FDE047" strokeWidth="6" />
+              {/* Cara con expresión de gratitud y confianza */}
+              <path d="M -16,-68 Q -12,-72 -8,-68" fill="none" stroke="#000000" strokeWidth="3" strokeLinecap="round" />
+              <path d="M -4,-68 Q 0,-72 4,-68" fill="none" stroke="#000000" strokeWidth="3" strokeLinecap="round" />
+              <path d="M -12,-55 Q -6,-50 0,-55" fill="none" stroke="#000000" strokeWidth="3" strokeLinecap="round" />
+
+              {/* Torso inclinado contra el lomo */}
+              <path d="M -10,-37 L -25,24" stroke="#000000" strokeWidth="7" strokeLinecap="round" />
+
+              {/* Brazos abrazando con fuerza el cuello/hombros del perro */}
+              <path
+                d="M -10,-24 L 38,-4 L 75,12"
+                fill="none"
+                stroke="#000000"
+                strokeWidth="7"
+                strokeLinecap="round"
+              />
+              <path
+                d="M -10,-24 L 15,-10 L 45,6"
+                fill="none"
+                stroke="#000000"
+                strokeWidth="7"
+                strokeLinecap="round"
+              />
+
+              {/* Piernas flotando y pataleando en el agua */}
+              <path
+                d={`M -25,24 L -65,38 L ${-95 + Math.sin(f * 0.45) * 16},48`}
+                fill="none"
+                stroke="#000000"
+                strokeWidth="6.5"
+                strokeLinecap="round"
+              />
+              <circle cx="-92" cy="50" r="10" fill="#E0F2FE" opacity="0.85" />
+            </g>
+
+            {/* OLA DE PROA Y CRESTA DE ESPUMA CORTANDO EL AGUA */}
+            <path
+              d="M 120,44 Q 165,50 190,62 Q 155,70 115,58 Z"
+              fill="#E0F2FE"
+              stroke="#38BDF8"
+              strokeWidth="4"
+            />
+            {/* Espuma cubriendo la línea de flotación del cuerpo */}
+            <path
+              d="M -140,48 Q -70,36 0,46 Q 70,56 140,44 Q 185,38 220,52 L 220,95 L -140,95 Z"
+              fill="#061A36"
+              opacity="0.8"
+            />
+            <path
+              d="M -140,48 Q -70,36 0,46 Q 70,56 140,44 Q 185,38 220,52"
+              fill="none"
+              stroke="#E0F2FE"
+              strokeWidth="6.5"
+              strokeLinecap="round"
+            />
+            {/* Salpicaduras activas alrededor del nado */}
+            <circle cx="160" cy="38" r="5" fill="#BAE6FD" />
+            <circle cx="175" cy="46" r="3.5" fill="#FFFFFF" />
+            <circle cx="80" cy="36" r="4" fill="#FFFFFF" />
+          </g>
+
+          {/* SEPARACIÓN NEO-BRUTALISTA HACIA EL MUNDO VIVO */}
+          <line x1="0" y1="1260" x2="1080" y2="1260" stroke="#000000" strokeWidth="10" />
+
+          {/* SECCIÓN INFERIOR: ALTAR MODERNO CON EL PERRO DE BARRO */}
+          <rect x="0" y="1260" width="1080" height="660" fill="#1E1035" />
+
+          {/* Mesa del altar con mantel morado y cempasúchil */}
+          <rect x="140" y="1420" width="800" height="240" rx="14" fill="#6B21A8" stroke="#000000" strokeWidth="6" />
+          <path d="M 140,1660 L 940,1660 L 900,1920 L 180,1920 Z" fill="#4C1D95" stroke="#000000" strokeWidth="6" />
+
+          {/* Figurilla de barro tradicional estilo Colima del Xoloitzcuintle iluminada */}
+          <g transform="translate(680, 1410)">
+            {/* Resplandor de vela */}
+            <circle cx="70" cy="-60" r="60" fill="#F59E0B" opacity="0.35" />
+            {/* Vela encendida */}
+            <rect x="62" y="-50" width="16" height="50" fill="#F8FAFC" stroke="#000000" strokeWidth="3" />
+            <ellipse cx="70" cy="-60" rx="6" ry="12" fill="#FDE047" />
+
+            {/* Perro de barro cocido prehispánico estilizado y rechoncho */}
+            <ellipse cx="0" cy="0" rx="42" ry="26" fill="#C2410C" stroke="#000000" strokeWidth="4.5" />
+            {/* Mancha dorada o decoración en barro */}
+            <ellipse cx="-5" cy="-8" rx="16" ry="8" fill="#F59E0B" stroke="#000000" strokeWidth="2" />
+            {/* Cabeza de perro de barro */}
+            <circle cx="32" cy="-14" r="17" fill="#C2410C" stroke="#000000" strokeWidth="4" />
+            <polygon points="26,-26 32,-46 40,-26" fill="#C2410C" stroke="#000000" strokeWidth="3.5" strokeLinejoin="round" />
+            <polygon points="18,-24 24,-42 30,-24" fill="#9A3412" stroke="#000000" strokeWidth="3" strokeLinejoin="round" />
+            <path d="M 38,-16 L 54,-8 L 44,-2 Z" fill="#9A3412" stroke="#000000" strokeWidth="3" />
+            <circle cx="53" cy="-8" r="2" fill="#000000" />
+            <circle cx="36" cy="-15" r="3" fill="#FEF08A" />
+            <circle cx="36" cy="-15" r="1.5" fill="#000000" />
+            {/* Patas de barro */}
+            <rect x="-24" y="20" width="12" height="16" rx="4" fill="#C2410C" stroke="#000000" strokeWidth="3" />
+            <rect x="14" y="20" width="12" height="16" rx="4" fill="#C2410C" stroke="#000000" strokeWidth="3" />
+            {/* Cola curvada de barro */}
+            <path d="M -40,-2 C -52,-14 -46,-26 -38,-28 C -36,-22 -32,-10 -36,6" fill="#C2410C" stroke="#000000" strokeWidth="3.5" />
+
+            {/* Cuenco de agua a su lado */}
+            <path d="M -100,-5 C -95,25 -55,25 -50,-5 Z" fill="#9A3412" stroke="#000000" strokeWidth="3.5" />
+            <ellipse cx="-75" cy="-5" rx="25" ry="6" fill="#38BDF8" />
+          </g>
+
+          {/* Banner diegético conector */}
+          <g transform="translate(180, 1310)">
+            <rect x="0" y="0" width="720" height="60" rx="12" fill="#020617" stroke="#FBBF24" strokeWidth="4" />
+            <text x="360" y="40" textAnchor="middle" fill="#FEF08A" fontSize="19" fontWeight="900" fontFamily="'Arial Black'">
+              EL PERRO DEL ALTAR REPRESENTA AL GUÍA DEL RÍO
+            </text>
+          </g>
+
+          {/* Rótulo superior */}
+          <g transform="translate(140, 150)">
+            <rect x="0" y="0" width="800" height="74" rx="14" fill="#020617" stroke="#38BDF8" strokeWidth="5" />
+            <text x="400" y="48" textAnchor="middle" fill="#E0F2FE" fontSize="23" fontWeight="900" fontFamily="'Arial Black', sans-serif">
+              RÍO APANOHUAYAN: EL PRIMER GRAN OBSTÁCULO
+            </text>
+          </g>
+        </svg>
+      </div>
+    );
+  }
+
+  // =========================================================================
+  // 6. SALA BLANCA DE DESCANSO: CHIGNAHUMICTLÁN (PAZ TOTAL TRAS 4 AÑOS)
+  // =========================================================================
+  if (escenario === "sala_blanca_descanso_chignahumictlan") {
+    const f = frame;
+
+    return (
+      <div className="absolute inset-0 pointer-events-none z-0 overflow-hidden bg-[#F8FAFC]">
+        <svg className="absolute inset-0 w-full h-full" viewBox="0 0 1080 1920" preserveAspectRatio="xMidYMid slice">
+          <defs>
+            <linearGradient id="chignahuGlow" x1="0" y1="0" x2="0" y2="1">
+              <stop offset="0%" stopColor="#FEF9C3" stopOpacity="0.8" />
+              <stop offset="60%" stopColor="#F8FAFC" />
+              <stop offset="100%" stopColor="#E2E8F0" />
+            </linearGradient>
+          </defs>
+
+          <rect width="1080" height="1920" fill="url(#chignahuGlow)" />
+
+          <g transform="translate(540, 1480)" opacity="0.6">
+            <ellipse cx="0" cy="0" rx="420" ry="120" fill="none" stroke="#FBBF24" strokeWidth="4" />
+            <ellipse cx="0" cy="0" rx="300" ry="85" fill="none" stroke="#D97706" strokeWidth="3" />
+            <ellipse cx="0" cy="0" rx="160" ry="45" fill="none" stroke="#B45309" strokeWidth="2.5" />
+          </g>
+
+          <g>
+            {[0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11].map((pIdx) => {
+              const py = 1200 - ((f * 2 + pIdx * 70) % 900);
+              const px = 540 + Math.sin(f * 0.08 + pIdx) * (80 + pIdx * 15);
+              const pRad = 3 + (pIdx % 5);
+              return (
+                <circle
+                  key={pIdx}
+                  cx={px}
+                  cy={py}
+                  r={pRad}
+                  fill="#F59E0B"
+                  stroke="#000000"
+                  strokeWidth="1.5"
+                  opacity="0.8"
+                />
+              );
+            })}
+          </g>
+
+          <g transform="translate(180, 520)">
+            <rect x="0" y="0" width="720" height="90" rx="14" fill="#020617" stroke="#F59E0B" strokeWidth="5" />
+            <text x="360" y="40" textAnchor="middle" fill="#FEF08A" fontSize="22" fontWeight="900" fontFamily="'Arial Black'">
+              CHIGNAHUMICTLÁN: NOVENO NIVEL
+            </text>
+            <text x="360" y="72" textAnchor="middle" fill="#94A3B8" fontSize="16" fontWeight="900" fontFamily="'Arial Black'">
+              EL ALMA Y EL GUÍA DESCANSAN EN PAZ ETERNA
+            </text>
+          </g>
+
+          <g transform="translate(140, 150)">
+            <rect x="0" y="0" width="800" height="74" rx="14" fill="#020617" stroke="#22C55E" strokeWidth="5" />
+            <text x="400" y="48" textAnchor="middle" fill="#86EFAC" fontSize="24" fontWeight="900" fontFamily="'Arial Black', sans-serif">
+              LA META FINAL: EL REPOSO ABSOLUTO
+            </text>
+          </g>
+        </svg>
+      </div>
+    );
+  }
+
+  // =========================================================================
+  // 7. HISTORIA Y SINCRETISMO: CÓDICE COLONIAL + FLOR DE CEMPASÚCHIL
+  // =========================================================================
+  if (escenario === "cempasuchil_cruz_codice_historia") {
+    const f = frame;
+    const petalPulse = 1 + Math.sin(f * 0.15) * 0.05;
+
+    return (
+      <div className="absolute inset-0 pointer-events-none z-0 overflow-hidden bg-[#1E1035]">
+        <svg className="absolute inset-0 w-full h-full" viewBox="0 0 1080 1920" preserveAspectRatio="xMidYMid slice">
+          <defs>
+            <linearGradient id="codiceAmateBg" x1="0" y1="0" x2="0" y2="1">
+              <stop offset="0%" stopColor="#2E1065" />
+              <stop offset="60%" stopColor="#1E1035" />
+              <stop offset="100%" stopColor="#0B0518" />
+            </linearGradient>
+          </defs>
+
+          <rect width="1080" height="1920" fill="url(#codiceAmateBg)" />
+
+          <g transform="translate(90, 420)">
+            <rect x="0" y="0" width="900" height="720" rx="16" fill="#FEF3C7" stroke="#000000" strokeWidth="6" />
+            <line x1="300" y1="0" x2="300" y2="720" stroke="#D97706" strokeWidth="3" strokeDasharray="10 8" />
+            <line x1="600" y1="0" x2="600" y2="720" stroke="#D97706" strokeWidth="3" strokeDasharray="10 8" />
+
+            <rect x="20" y="25" width="860" height="50" rx="8" fill="#78350F" />
+            <text x="450" y="58" textAnchor="middle" fill="#FEF08A" fontSize="19" fontWeight="900" fontFamily="'Arial Black'">
+              CÓDICE FLORENTINO (FRAY BERNARDINO DE SAHAGÚN — 1577)
+            </text>
+
+            <g transform="translate(150, 240)">
+              <circle cx="0" cy="0" r="45" fill="#EF4444" stroke="#000000" strokeWidth="4" />
+              <text x="0" y="70" textAnchor="middle" fill="#451A03" fontSize="15" fontWeight="900" fontFamily="'Arial Black'">
+                TONATIUH
+              </text>
+            </g>
+            <g transform="translate(450, 240)">
+              <ellipse cx="0" cy="0" rx="55" ry="35" fill="#0284C7" stroke="#000000" strokeWidth="4" />
+              <text x="0" y="70" textAnchor="middle" fill="#451A03" fontSize="15" fontWeight="900" fontFamily="'Arial Black'">
+                TLALOCAN
+              </text>
+            </g>
+            <g transform="translate(750, 240)">
+              <polygon points="0,-40 35,30 -35,30" fill="#334155" stroke="#000000" strokeWidth="4" />
+              <text x="0" y="70" textAnchor="middle" fill="#451A03" fontSize="15" fontWeight="900" fontFamily="'Arial Black'">
+                MICTLÁN
+              </text>
+            </g>
+
+            <g transform={`translate(450, 520) scale(${petalPulse})`}>
+              <rect x="-12" y="-120" width="24" height="150" fill="#78350F" stroke="#000000" strokeWidth="4" rx="4" />
+              <rect x="-60" y="-85" width="120" height="24" fill="#78350F" stroke="#000000" strokeWidth="4" rx="4" />
+              <circle cx="0" cy="-70" r="42" fill="#F97316" stroke="#000000" strokeWidth="4" />
+              <circle cx="0" cy="-70" r="28" fill="#FDE047" stroke="#000000" strokeWidth="3" />
+              <circle cx="0" cy="-70" r="14" fill="#EA580C" stroke="#000000" strokeWidth="2.5" />
+            </g>
+          </g>
+
+          <g transform="translate(140, 1200)">
+            <rect x="0" y="0" width="380" height="100" rx="12" fill="#020617" stroke="#F59E0B" strokeWidth="4.5" />
+            <text x="190" y="40" textAnchor="middle" fill="#FEF08A" fontSize="16" fontWeight="900" fontFamily="'Arial Black'">
+              RAÍZ INDÍGENA
+            </text>
+            <text x="190" y="75" textAnchor="middle" fill="#E2E8F0" fontSize="14" fontWeight="900" fontFamily="'Arial Black'">
+              VIAJE DEL ALMA • AGUA Y PERRO
+            </text>
+          </g>
+
+          <g transform="translate(560, 1200)">
+            <rect x="0" y="0" width="380" height="100" rx="12" fill="#020617" stroke="#EC4899" strokeWidth="4.5" />
+            <text x="190" y="40" textAnchor="middle" fill="#FBCFE8" fontSize="16" fontWeight="900" fontFamily="'Arial Black'">
+              HERENCIA COLONIAL
+            </text>
+            <text x="190" y="75" textAnchor="middle" fill="#E2E8F0" fontSize="14" fontWeight="900" fontFamily="'Arial Black'">
+              TODOS LOS SANTOS (1 Y 2 NOV)
+            </text>
+          </g>
+
+          <g transform="translate(140, 150)">
+            <rect x="0" y="0" width="800" height="74" rx="14" fill="#020617" stroke="#F59E0B" strokeWidth="5" />
+            <text x="400" y="48" textAnchor="middle" fill="#FFFFFF" fontSize="23" fontWeight="900" fontFamily="'Arial Black', sans-serif">
+              LO QUE HOY CELEBRAMOS ES UNA MEZCLA DE HERENCIAS
+            </text>
+          </g>
+        </svg>
+      </div>
+    );
+  }
+
+  // =========================================================================
+  // 8. OFRENDA FINAL: CAMINO DE PÉTALOS, CUENCO DE AGUA Y EL PERRO FIEL
+  // =========================================================================
+  if (escenario === "ofrenda_final_camino_petalos") {
+    const f = frame;
+    const candleFlicker = Math.sin(f * 0.35) * 2.5;
+
+    return (
+      <div className="absolute inset-0 pointer-events-none z-0 overflow-hidden bg-[#0A0314]">
+        <svg className="absolute inset-0 w-full h-full" viewBox="0 0 1080 1920" preserveAspectRatio="xMidYMid slice">
+          <defs>
+            <radialGradient id="finalAltarGlow" cx="50%" cy="40%" r="60%">
+              <stop offset="0%" stopColor="#EA580C" stopOpacity="0.45" />
+              <stop offset="50%" stopColor="#581C87" stopOpacity="0.25" />
+              <stop offset="100%" stopColor="#0A0314" stopOpacity="0" />
+            </radialGradient>
+          </defs>
+
+          <rect width="1080" height="1920" fill="#0A0314" />
+          <circle cx="540" cy="800" r="700" fill="url(#finalAltarGlow)" />
+
+          <g>
+            <polygon points="540,1100 420,1920 660,1920" fill="#EA580C" opacity="0.85" />
+            <polygon points="540,1100 460,1920 620,1920" fill="#F97316" />
+            <polygon points="540,1100 500,1920 580,1920" fill="#FDE047" opacity="0.9" />
+            {[
+              { x: 440, y: 1300 },
+              { x: 630, y: 1350 },
+              { x: 410, y: 1500 },
+              { x: 660, y: 1560 },
+              { x: 380, y: 1720 },
+              { x: 690, y: 1780 },
+            ].map((pt, i) => (
+              <circle key={i} cx={pt.x} cy={pt.y} r="10" fill="#FEF08A" stroke="#000000" strokeWidth="2.5" />
+            ))}
+          </g>
+
+          <g transform="translate(540, 880)">
+            <rect x="-360" y="80" width="720" height="140" rx="12" fill="#581C87" stroke="#000000" strokeWidth="6" />
+            <rect x="-260" y="-30" width="520" height="110" rx="10" fill="#C2410C" stroke="#000000" strokeWidth="6" />
+            <rect x="-160" y="-140" width="320" height="110" rx="8" fill="#D97706" stroke="#000000" strokeWidth="6" />
+
+            <g transform="translate(0, -180)">
+              <rect x="-42" y="-55" width="84" height="100" rx="6" fill="#FDE68A" stroke="#78350F" strokeWidth="7" />
+              <rect x="-32" y="-45" width="64" height="80" fill="#1E293B" stroke="#000000" strokeWidth="2.5" />
+              <circle cx="0" cy="-15" r="15" fill="#E2E8F0" />
+              <path d="M -20,20 C -20,0 20,0 20,20 Z" fill="#E2E8F0" />
+            </g>
+
+            <g transform="translate(85, -170)">
+              <ellipse cx="0" cy="0" rx="28" ry="18" fill="#C2410C" stroke="#000000" strokeWidth="3.5" />
+              <circle cx="18" cy="-10" r="11" fill="#C2410C" stroke="#000000" strokeWidth="3" />
+              <polygon points="14,-18 18,-32 24,-18" fill="#C2410C" stroke="#000000" strokeWidth="2.5" />
+              <ellipse cx="-4" cy="-8" rx="8" ry="4" fill="#FDE047" />
+            </g>
+
+            <g transform="translate(-160, -30)">
+              <path d="M -30,0 C -25,35 25,35 30,0 Z" fill="#9A3412" stroke="#000000" strokeWidth="4" />
+              <ellipse cx="0" cy="0" rx="30" ry="9" fill="#38BDF8" stroke="#000000" strokeWidth="3" />
+              <ellipse cx="-5" cy="0" rx="5" ry="3" fill="#F97316" />
+              <ellipse cx="8" cy="1" rx="4" ry="2.5" fill="#FDE047" />
+            </g>
+
+            <g transform="translate(160, -25)">
+              <ellipse cx="0" cy="5" rx="32" ry="18" fill="#D97706" stroke="#000000" strokeWidth="3.5" />
+              <circle cx="0" cy="-6" r="6" fill="#FDE68A" stroke="#000000" strokeWidth="2" />
+              <line x1="-20" y1="5" x2="20" y2="5" stroke="#FDE68A" strokeWidth="3.5" />
+              <line x1="0" y1="-12" x2="0" y2="18" stroke="#FDE68A" strokeWidth="3.5" />
+            </g>
+
+            <g transform="translate(-240, 70)">
+              <rect x="-8" y="-45" width="16" height="45" fill="#F8FAFC" stroke="#000000" strokeWidth="3" />
+              <ellipse cx={candleFlicker} cy="-54" rx="6" ry="12" fill="#FEF08A" />
+            </g>
+            <g transform="translate(240, 70)">
+              <rect x="-8" y="-45" width="16" height="45" fill="#F8FAFC" stroke="#000000" strokeWidth="3" />
+              <ellipse cx={-candleFlicker} cy="-54" rx="6" ry="12" fill="#FEF08A" />
+            </g>
+          </g>
+
+          <g transform="translate(140, 360)">
+            <rect x="0" y="0" width="800" height="96" rx="14" fill="#020617" stroke="#F59E0B" strokeWidth="5" />
+            <text x="400" y="42" textAnchor="middle" fill="#FEF08A" fontSize="21" fontWeight="900" fontFamily="'Arial Black'">
+              EL AGUA CALMA LA SED DEL VIAJE
+            </text>
+            <text x="400" y="78" textAnchor="middle" fill="#FFFFFF" fontSize="18" fontWeight="900" fontFamily="'Arial Black'">
+              Y EL PERRO SIGUE CUIDANDO A QUIEN YA PARTIÓ
+            </text>
+          </g>
+
+          <g transform="translate(140, 150)">
+            <rect x="0" y="0" width="800" height="74" rx="14" fill="#020617" stroke="#EA580C" strokeWidth="5" />
+            <text x="400" y="48" textAnchor="middle" fill="#FDE047" fontSize="23" fontWeight="900" fontFamily="'Arial Black', sans-serif">
+              LA OFRENDA: MEMORIA DE UN VIAJE DIFÍCIL
+            </text>
+          </g>
+        </svg>
+      </div>
+    );
+  }
+
+  // =========================================================================
+  // 1. ESCRITORIO PROCRASTINACIÓN: EL BUCLE DEL SCROLL Y LA ATRACCIÓN MAGNÉTICA
+  // =========================================================================
+  if (escenario === "escritorio_procrastinacion_smartphone") {
+    const f = frame;
+    const magPulse = Math.sin(f * 0.3) * 6;
+    const phoneGlow = 0.6 + Math.sin(f * 0.2) * 0.35;
+    const cursorBlink = f % 20 < 10;
+    const magOffset = (f * 6) % 36;
+
+    return (
+      <div className="absolute inset-0 pointer-events-none z-0 overflow-hidden bg-[#070B14]">
+        <svg className="absolute inset-0 w-full h-full" viewBox="0 0 1080 1920" preserveAspectRatio="xMidYMid slice">
+          <defs>
+            <radialGradient id="phoneDopaAura" cx="50%" cy="50%" r="50%">
+              <stop offset="0%" stopColor="#FDE047" stopOpacity="0.8" />
+              <stop offset="60%" stopColor="#EA580C" stopOpacity="0.3" />
+              <stop offset="100%" stopColor="#070B14" stopOpacity="0" />
+            </radialGradient>
+            <linearGradient id="escritorioMadera" x1="0" y1="0" x2="0" y2="1">
+              <stop offset="0%" stopColor="#78350F" />
+              <stop offset="100%" stopColor="#451A03" />
+            </linearGradient>
+            <linearGradient id="luzAzulPantalla" x1="0.5" y1="1" x2="0.5" y2="0">
+              <stop offset="0%" stopColor="#38BDF8" stopOpacity="0.35" />
+              <stop offset="100%" stopColor="#38BDF8" stopOpacity="0" />
+            </linearGradient>
+          </defs>
+
+          {/* Habitación en penumbra */}
+          <rect width="1080" height="1920" fill="#070B14" />
+
+          {/* Cono de luz azul del smartphone que ilumina el rostro del Stickman */}
+          <polygon points="680,1220 280,480 820,480" fill="url(#luzAzulPantalla)" />
+
+          {/* Mesa de escritorio rústica de madera */}
+          <rect y="1220" width="1080" height="700" fill="url(#escritorioMadera)" stroke="#000000" strokeWidth="8" />
+          <line x1="0" y1="1220" x2="1080" y2="1220" stroke="#000000" strokeWidth="8" />
+
+          {/* Lámpara de escritorio apagada/atenuada en la esquina izquierda */}
+          <g transform="translate(140, 1060)">
+            <ellipse cx="0" cy="160" rx="36" ry="12" fill="#1E293B" stroke="#000000" strokeWidth="4" />
+            <path d="M 0,160 L 30,60 L -10,-40" fill="none" stroke="#475569" strokeWidth="8" strokeLinecap="round" />
+            <polygon points="-40,-40 20,-40 0,-90" fill="#334155" stroke="#000000" strokeWidth="4" />
+          </g>
+
+          {/* LAPTOP EN LA MESA CON DOCUMENTO EN BLANCO Y PLAZO DE ENTREGA */}
+          <g transform="translate(380, 1180)">
+            {/* Base teclado */}
+            <polygon points="-120,40 120,40 100,0 -100,0" fill="#64748B" stroke="#000000" strokeWidth="5" />
+            {/* Pantalla abierta */}
+            <rect x="-90" y="-120" width="180" height="120" rx="6" fill="#0F172A" stroke="#000000" strokeWidth="6" />
+            <rect x="-78" y="-110" width="156" height="100" fill="#F8FAFC" />
+            {/* Badge de entrega urgente: 11:59 PM */}
+            <rect x="-70" y="-104" width="140" height="22" rx="4" fill="#EF4444" />
+            <text x="0" y="-88" textAnchor="middle" fill="#FFFFFF" fontSize="11" fontWeight="900" fontFamily="'Arial Black'">
+              ENTREGA: HOY 11:59 PM
+            </text>
+            {/* Cursor parpadeante en el documento vacío */}
+            {cursorBlink && <line x1="-60" y1="-70" x2="-60" y2="-45" stroke="#000000" strokeWidth="4" />}
+          </g>
+
+          {/* LÍNEAS VECTORIALES DE ATRACCIÓN MAGNÉTICA HACIA EL CELULAR */}
+          <g>
+            {[0, 1, 2].map((idx) => {
+              const my = 1080 + idx * 35;
+              return (
+                <path
+                  key={idx}
+                  d={`M 460,${my} Q 580,${my - 40 + magPulse} 700,${1140 + idx * 20}`}
+                  fill="none"
+                  stroke="#FDE047"
+                  strokeWidth="5"
+                  strokeDasharray="14 10"
+                  strokeDashoffset={-magOffset}
+                  opacity="0.85"
+                />
+              );
+            })}
+            {/* Imán cómico invisible con chispas */}
+            <g transform={`translate(${630 + magPulse}, 1090)`}>
+              <polygon points="0,-12 4,-3 13,0 4,3 0,12 -4,3 -13,0 -4,-3" fill="#FDE047" />
+              <polygon points="20,-6 23,0 29,2 23,4 20,10 17,4 11,2 17,0" fill="#EA580C" />
+            </g>
+          </g>
+
+          {/* SMARTPHONE EN LA DERECHA CON AURA DORADA RADIANTE Y SCROLL */}
+          <g transform="translate(740, 1160)">
+            {/* Resplandor de dopamina */}
+            <circle cx="0" cy="0" r={160} fill="url(#phoneDopaAura)" opacity={phoneGlow} />
+            {/* Cuerpo del teléfono */}
+            <rect x="-45" y="-80" width="90" height="160" rx="14" fill="#0F172A" stroke="#000000" strokeWidth="6" />
+            <rect x="-36" y="-68" width="72" height="136" rx="6" fill="#1E293B" />
+            {/* Tarjetas de videos cortos de colores subiendo a toda velocidad */}
+            {[-50, -10, 30].map((cy, i) => (
+              <rect
+                key={i}
+                x="-30"
+                y={cy + ((f * 5) % 40) - 20}
+                width="60"
+                height="32"
+                rx="4"
+                fill={i === 0 ? "#E11D48" : i === 1 ? "#7C3AED" : "#0284C7"}
+              />
+            ))}
+            {/* Corazón flotando de likes */}
+            <path
+              d={`M 0,${-30 - ((f * 2) % 35)} C -4,-36 -10,-32 -10,-24 C -10,-16 0,-8 0,-8 C 0,-8 10,-16 10,-24 C 10,-32 4,-36 0,-30 Z`}
+              fill="#F43F5E"
+            />
+          </g>
+
+          {/* Rótulo superior */}
+          <g transform="translate(140, 150)">
+            <rect x="0" y="0" width="800" height="74" rx="14" fill="#020617" stroke="#EF4444" strokeWidth="5" />
+            <text x="400" y="48" textAnchor="middle" fill="#FCA5A5" fontSize="23" fontWeight="900" fontFamily="'Arial Black', sans-serif">
+              SABES QUE TIENES QUE TRABAJAR... Y HACES SCROLL
+            </text>
+          </g>
+        </svg>
+      </div>
+    );
+  }
+
+  // =========================================================================
+  // 2. RING DE BOXEO CEREBRAL: CORTEZA PREFRONTAL VS SISTEMA LÍMBICO
+  // =========================================================================
+  if (escenario === "ring_boxeo_cerebral_corteza_vs_limbico") {
+    const f = frame;
+    const spotFlash = 0.2 + (Math.sin(f * 0.3) > 0 ? 0.15 : 0);
+
+    return (
+      <div className="absolute inset-0 pointer-events-none z-0 overflow-hidden bg-[#0A0D18]">
+        <svg className="absolute inset-0 w-full h-full" viewBox="0 0 1080 1920" preserveAspectRatio="xMidYMid slice">
+          <defs>
+            <radialGradient id="ringSpotlight" cx="50%" cy="30%" r="60%">
+              <stop offset="0%" stopColor="#FEF08A" stopOpacity="0.4" />
+              <stop offset="70%" stopColor="#0A0D18" stopOpacity="0.1" />
+              <stop offset="100%" stopColor="#0A0D18" stopOpacity="0" />
+            </radialGradient>
+          </defs>
+
+          {/* Fondo de estadio con reflectores */}
+          <rect width="1080" height="1920" fill="#0A0D18" />
+
+          {/* Silueta de cerebro en la pared trasera */}
+          <g opacity="0.25" transform="translate(540, 680)">
+            <path
+              d="M -240,-80 C -280,-180 -140,-260 0,-240 C 140,-260 280,-180 240,-80 C 300,40 220,180 100,200 C 60,260 -60,260 -100,200 C -220,180 -300,40 -240,-80 Z"
+              fill="none"
+              stroke="#60A5FA"
+              strokeWidth="8"
+            />
+          </g>
+
+          {/* Haces de luz de los reflectores cenitales */}
+          <polygon points="120,240 380,1400 0,1400" fill="#FEF08A" opacity={spotFlash} />
+          <polygon points="960,240 700,1400 1080,1400" fill="#FEF08A" opacity={spotFlash} />
+
+          {/* LONA DEL RING DE BOXEO (Centro a Y: 1400) */}
+          <g transform="translate(540, 1420)">
+            {/* Base de la plataforma del ring */}
+            <polygon points="-460,0 460,0 520,380 -520,380" fill="#334155" stroke="#000000" strokeWidth="8" />
+            <polygon points="-420,20 420,20 470,360 -470,360" fill="#475569" />
+
+            {/* Postes de las esquinas */}
+            {/* Esquina Azul: Corteza Prefrontal (Izquierda) */}
+            <rect x="-470" y="-380" width="24" height="400" fill="#2563EB" stroke="#000000" strokeWidth="6" />
+            {/* Esquina Roja: Sistema Límbico (Derecha) */}
+            <rect x="446" y="-380" width="24" height="400" fill="#DC2626" stroke="#000000" strokeWidth="6" />
+
+            {/* 4 Cuerdas elásticas del ring */}
+            {[-320, -230, -140, -50].map((ry, i) => (
+              <g key={i}>
+                <line x1="-470" y1={ry} x2="470" y2={ry} stroke="#DC2626" strokeWidth="10" />
+                <line x1="-470" y1={ry} x2="470" y2={ry} stroke="#FFFFFF" strokeWidth="4" strokeDasharray="24 16" />
+              </g>
+            ))}
+          </g>
+
+          {/* RÓTULOS DE LAS ESQUINAS DEL COMBATE */}
+          {/* Esquina Izquierda: Corteza Prefrontal */}
+          <g transform="translate(180, 720)">
+            <rect x="-140" y="-40" width="280" height="80" rx="12" fill="#1E3A8A" stroke="#3B82F6" strokeWidth="5" />
+            <text x="0" y="-10" textAnchor="middle" fill="#93C5FD" fontSize="15" fontWeight="900" fontFamily="'Arial Black'">
+              ESQUINA AZUL
+            </text>
+            <text x="0" y="22" textAnchor="middle" fill="#FFFFFF" fontSize="18" fontWeight="900" fontFamily="'Arial Black'">
+              CORTEZA PREFRONTAL
+            </text>
+          </g>
+
+          {/* VS Central Gigante */}
+          <g transform="translate(540, 720)">
+            <circle cx="0" cy="0" r="42" fill="#FDE047" stroke="#000000" strokeWidth="6" />
+            <text x="0" y="14" textAnchor="middle" fill="#000000" fontSize="32" fontWeight="900" fontFamily="'Arial Black'">
+              VS
+            </text>
+          </g>
+
+          {/* Esquina Derecha: Sistema Límbico */}
+          <g transform="translate(900, 720)">
+            <rect x="-140" y="-40" width="280" height="80" rx="12" fill="#7F1D1D" stroke="#EF4444" strokeWidth="5" />
+            <text x="0" y="-10" textAnchor="middle" fill="#FCA5A5" fontSize="15" fontWeight="900" fontFamily="'Arial Black'">
+              ESQUINA ROJA
+            </text>
+            <text x="0" y="22" textAnchor="middle" fill="#FFFFFF" fontSize="18" fontWeight="900" fontFamily="'Arial Black'">
+              SISTEMA LÍMBICO
+            </text>
+          </g>
+
+          {/* Rótulo superior */}
+          <g transform="translate(140, 150)">
+            <rect x="0" y="0" width="800" height="74" rx="14" fill="#020617" stroke="#F59E0B" strokeWidth="5" />
+            <text x="400" y="48" textAnchor="middle" fill="#FEF08A" fontSize="23" fontWeight="900" fontFamily="'Arial Black', sans-serif">
+              UNA GUERRA BIOLÓGICA ENTRE DOS CEREBROS
+            </text>
+          </g>
+        </svg>
+      </div>
+    );
+  }
+
+  // =========================================================================
+  // 3. CORTEZA PREFRONTAL: EL PIZARRÓN DE METAS Y LA CARGA AL 15%
+  // =========================================================================
+  if (escenario === "corteza_prefrontal_pizarron_metas") {
+    const f = frame;
+    const progressW = 60 + Math.min(180, Math.floor(f * 0.8));
+    const gearRot = (f * 1.5) % 360;
+
+    return (
+      <div className="absolute inset-0 pointer-events-none z-0 overflow-hidden bg-[#03152E]">
+        <svg className="absolute inset-0 w-full h-full" viewBox="0 0 1080 1920" preserveAspectRatio="xMidYMid slice">
+          <defs>
+            <pattern id="gridTecnico" width="40" height="40" patternUnits="userSpaceOnUse">
+              <path d="M 40 0 L 0 0 0 40" fill="none" stroke="#0C4A6E" strokeWidth="1.5" />
+            </pattern>
+          </defs>
+
+          {/* Fondo técnico azul cuadriculado */}
+          <rect width="1080" height="1920" fill="#03152E" />
+          <rect width="1080" height="1920" fill="url(#gridTecnico)" opacity="0.65" />
+
+          {/* Engranajes de procesamiento pesado girando lentamente */}
+          <g transform="translate(880, 520) scale(1.4)">
+            <circle cx="0" cy="0" r="45" fill="none" stroke="#1E3A8A" strokeWidth="12" strokeDasharray="16 10" transform={`rotate(${gearRot})`} />
+            <circle cx="0" cy="0" r="28" fill="#0F172A" stroke="#3B82F6" strokeWidth="4" />
+          </g>
+
+          {/* GRAN PIZARRÓN DE PLANIFICACIÓN A 30 DÍAS (Centro-Derecha) */}
+          <g transform="translate(680, 920)">
+            {/* Patas soporte de aluminio */}
+            <line x1="-160" y1="180" x2="-220" y2="480" stroke="#334155" strokeWidth="12" strokeLinecap="round" />
+            <line x1="160" y1="180" x2="220" y2="480" stroke="#334155" strokeWidth="12" strokeLinecap="round" />
+            {/* Pizarra blanca */}
+            <rect x="-240" y="-220" width="480" height="400" rx="14" fill="#F8FAFC" stroke="#000000" strokeWidth="8" />
+            <rect x="-220" y="-200" width="440" height="46" rx="6" fill="#1E3A8A" />
+            <text x="0" y="-170" textAnchor="middle" fill="#FFFFFF" fontSize="20" fontWeight="900" fontFamily="'Arial Black'">
+              PLAN DE VIDA Y METAS A 30 DÍAS
+            </text>
+
+            {/* Pasos 1 al 5 */}
+            {["1. Terminar reporte hoy", "2. Pagar renta del mes", "3. Invertir y ahorrar", "4. Comprar casa con jardín"].map((txt, i) => (
+              <g key={i} transform={`translate(-200, ${-120 + i * 44})`}>
+                <rect x="0" y="0" width="22" height="22" rx="4" fill="#22C55E" stroke="#000000" strokeWidth="2.5" />
+                <path d="M 4,11 L 9,16 L 18,5" fill="none" stroke="#FFFFFF" strokeWidth="3" strokeLinecap="round" />
+                <text x="36" y="17" fill="#0F172A" fontSize="16" fontWeight="900" fontFamily="'Arial Black'">
+                  {txt}
+                </text>
+              </g>
+            ))}
+
+            {/* Gráfico de barras ascendente */}
+            <g transform="translate(100, 60)">
+              <rect x="-60" y="-10" width="24" height="60" fill="#3B82F6" stroke="#000000" strokeWidth="3" />
+              <rect x="-30" y="-30" width="24" height="80" fill="#3B82F6" stroke="#000000" strokeWidth="3" />
+              <rect x="0" y="-55" width="24" height="105" fill="#10B981" stroke="#000000" strokeWidth="3" />
+            </g>
+          </g>
+
+          {/* BARRA DE PROCESAMIENTO PESADO Y LENTO (15%) */}
+          <g transform="translate(180, 1420)">
+            <rect x="0" y="0" width="720" height="90" rx="14" fill="#020617" stroke="#38BDF8" strokeWidth="5" />
+            <text x="360" y="34" textAnchor="middle" fill="#7DD3FC" fontSize="16" fontWeight="900" fontFamily="'Arial Black'">
+              CALCULANDO FUTURO Y RIESGOS A LARGO PLAZO...
+            </text>
+            {/* Barra de progreso */}
+            <rect x="40" y="48" width="640" height="26" rx="6" fill="#1E293B" stroke="#000000" strokeWidth="2.5" />
+            <rect x="42" y="50" width={progressW} height="22" rx="4" fill="#2563EB" />
+            <text x="630" y="66" textAnchor="end" fill="#FEF08A" fontSize="14" fontWeight="900" fontFamily="'Arial Black'">
+              15%
+            </text>
+          </g>
+
+          {/* Rótulo superior */}
+          <g transform="translate(140, 150)">
+            <rect x="0" y="0" width="800" height="74" rx="14" fill="#020617" stroke="#38BDF8" strokeWidth="5" />
+            <text x="400" y="48" textAnchor="middle" fill="#E0F2FE" fontSize="22" fontWeight="900" fontFamily="'Arial Black', sans-serif">
+              CORTEZA PREFRONTAL: LÓGICA, PERO JOVEN Y LENTA
+            </text>
+          </g>
+        </svg>
+      </div>
+    );
+  }
+
+  // =========================================================================
+  // 4. SISTEMA LÍMBICO: LA FIESTA PRIMITIVA DE DOPAMINA
+  // =========================================================================
+  if (escenario === "sistema_limbico_cavernicola_dopamina") {
+    const f = frame;
+    const boomScale = 1 + Math.sin(f * 0.4) * 0.08;
+    const airplaneX = ((f * 14) % 1300) - 100;
+    const airplaneY = 680 + Math.sin(f * 0.15) * 60;
+
+    return (
+      <div className="absolute inset-0 pointer-events-none z-0 overflow-hidden bg-[#2A050D]">
+        <svg className="absolute inset-0 w-full h-full" viewBox="0 0 1080 1920" preserveAspectRatio="xMidYMid slice">
+          <defs>
+            <radialGradient id="dopaBlast" cx="50%" cy="50%" r="50%">
+              <stop offset="0%" stopColor="#F43F5E" stopOpacity="0.6" />
+              <stop offset="70%" stopColor="#FB7185" stopOpacity="0.2" />
+              <stop offset="100%" stopColor="#2A050D" stopOpacity="0" />
+            </radialGradient>
+          </defs>
+
+          {/* Fondo rojo fuego festivo */}
+          <rect width="1080" height="1920" fill="#2A050D" />
+          <circle cx="540" cy="880" r="500" fill="url(#dopaBlast)" />
+
+          {/* FUEGOS ARTIFICIALES Y CHISPAS DE DOPAMINA */}
+          {[
+            { cx: 240, cy: 460, col: "#FDE047" },
+            { cx: 840, cy: 520, col: "#38BDF8" },
+            { cx: 300, cy: 820, col: "#4ADE80" },
+            { cx: 780, cy: 960, col: "#EC4899" },
+          ].map((fw, idx) => (
+            <g key={idx} transform={`translate(${fw.cx}, ${fw.cy}) scale(${boomScale})`}>
+              {[0, 45, 90, 135, 180, 225, 270, 315].map((ang, i) => (
+                <polygon
+                  key={i}
+                  points="0,-45 8,-20 -8,-20"
+                  fill={fw.col}
+                  stroke="#000000"
+                  strokeWidth="2.5"
+                  transform={`rotate(${ang + f * 3})`}
+                />
+              ))}
+            </g>
+          ))}
+
+          {/* AVIONCITO DE PAPEL VOLANDO CON EL REPORTE */}
+          <g transform={`translate(${airplaneX}, ${airplaneY}) rotate(-12)`}>
+            <polygon points="0,0 80,-20 30,10" fill="#F8FAFC" stroke="#000000" strokeWidth="4" />
+            <polygon points="30,10 80,-20 40,24" fill="#E2E8F0" stroke="#000000" strokeWidth="3" />
+            <text x="35" y="-5" fill="#EF4444" fontSize="10" fontWeight="900">REPORTE</text>
+          </g>
+
+          {/* RESTOS DE LA PIZARRA DESTRUIDA EN EL SUELO */}
+          <g transform="translate(540, 1540)">
+            <rect x="-380" y="0" width="760" height="180" fill="#1C0409" stroke="#000000" strokeWidth="8" />
+            <polygon points="-240,60 -180,-20 -100,50" fill="#E2E8F0" stroke="#000000" strokeWidth="4" />
+            <polygon points="120,40 180,-30 240,50" fill="#E2E8F0" stroke="#000000" strokeWidth="4" />
+          </g>
+
+          {/* INSIGNIA BIOQUÍMICA: MOLÉCULA DE DOPAMINA PURA */}
+          <g transform="translate(540, 1340)">
+            <rect x="-260" y="-40" width="520" height="80" rx="14" fill="#020617" stroke="#FDE047" strokeWidth="5" />
+            <text x="0" y="-6" textAnchor="middle" fill="#FEF08A" fontSize="16" fontWeight="900" fontFamily="'Arial Black'">
+              RECOMPENSA QUÍMICA INSTANTÁNEA
+            </text>
+            <text x="0" y="24" textAnchor="middle" fill="#F43F5E" fontSize="22" fontWeight="900" fontFamily="'Arial Black'">
+              DOPAMINA INMEDIATA (C₈H₁₁NO₂)
+            </text>
+          </g>
+
+          {/* Rótulo superior */}
+          <g transform="translate(140, 150)">
+            <rect x="0" y="0" width="800" height="74" rx="14" fill="#020617" stroke="#EF4444" strokeWidth="5" />
+            <text x="400" y="48" textAnchor="middle" fill="#FCA5A5" fontSize="21" fontWeight="900" fontFamily="'Arial Black', sans-serif">
+              SISTEMA LÍMBICO: MILLONES DE AÑOS ADICTO AL PLACER
+            </text>
+          </g>
+        </svg>
+      </div>
+    );
+  }
+
+  // =========================================================================
+  // 5. LABORATORIO fMRI: EL EXTRAÑO VS EL YO DEL FUTURO
+  // =========================================================================
+  if (escenario === "laboratorio_fmri_desconocido_yo_futuro") {
+    const f = frame;
+    const pulseBeam = 0.6 + Math.sin(f * 0.3) * 0.35;
+
+    return (
+      <div className="absolute inset-0 pointer-events-none z-0 overflow-hidden bg-[#030712]">
+        <svg className="absolute inset-0 w-full h-full" viewBox="0 0 1080 1920" preserveAspectRatio="xMidYMid slice">
+          {/* Fondo oscuro clínico */}
+          <rect width="1080" height="1920" fill="#030712" />
+
+          {/* ESCÁNER fMRI CENTRAL: CEREBRO TRASLÚCIDO CON ACTIVACIÓN CORTICAL IDÉNTICA */}
+          <g transform="translate(540, 520)">
+            {/* Silueta del cerebro */}
+            <path
+              d="M -160,0 C -200,-90 -80,-150 0,-130 C 80,-150 200,-90 160,0 C 200,90 120,150 0,140 C -120,150 -200,90 -160,0 Z"
+              fill="#0F172A"
+              stroke="#38BDF8"
+              strokeWidth="6"
+            />
+            {/* Zona de activación idéntica (corteza prefrontal medial) */}
+            <circle cx="0" cy="-40" r="38" fill="#22C55E" opacity={pulseBeam} filter="blur(4px)" />
+            <circle cx="0" cy="-40" r="22" fill="#86EFAC" stroke="#000000" strokeWidth="3" />
+            <text x="0" y="60" textAnchor="middle" fill="#FDE047" fontSize="16" fontWeight="900" fontFamily="'Arial Black'">
+              ZONA fMRI ACTIVA
+            </text>
+          </g>
+
+          {/* HACES NEURONALES IDÉNTICOS CONECTANDO A AMBOS PERSONAJES */}
+          {/* Hacia el Yo del Futuro (Izquierda) */}
+          <path
+            d="M 540,480 Q 320,680 240,880"
+            fill="none"
+            stroke="#22C55E"
+            strokeWidth="7"
+            strokeDasharray="14 10"
+            opacity={pulseBeam}
+          />
+          {/* Hacia el Extraño en la Calle (Derecha) */}
+          <path
+            d="M 540,480 Q 760,680 840,880"
+            fill="none"
+            stroke="#22C55E"
+            strokeWidth="7"
+            strokeDasharray="14 10"
+            opacity={pulseBeam}
+          />
+
+          {/* TRES PEDESTALES DE COMPARACIÓN CIENTÍFICA */}
+          {/* Pedestal Izquierdo: Yo del Futuro */}
+          <g transform="translate(240, 1260)">
+            <rect x="-140" y="0" width="280" height="260" rx="14" fill="#1E293B" stroke="#EF4444" strokeWidth="5" />
+            <text x="0" y="45" textAnchor="middle" fill="#FCA5A5" fontSize="18" fontWeight="900" fontFamily="'Arial Black'">
+              TU YO DEL FUTURO
+            </text>
+            <text x="0" y="80" textAnchor="middle" fill="#94A3B8" fontSize="14" fontWeight="900" fontFamily="'Arial Black'">
+              (CON OJERA & ESTRÉS)
+            </text>
+            {/* Cara con ojeras moradas y sufrimiento */}
+            <circle cx="0" cy="150" r="32" fill="#FFFFFF" stroke="#000000" strokeWidth="4" />
+            <ellipse cx="-12" cy="156" rx="10" ry="5" fill="#A855F7" opacity="0.75" />
+            <ellipse cx="12" cy="156" rx="10" ry="5" fill="#A855F7" opacity="0.75" />
+          </g>
+
+          {/* Pedestal Central: Yo del Presente (Arrojando carpetas) */}
+          <g transform="translate(540, 1340)">
+            <rect x="-130" y="0" width="260" height="240" rx="14" fill="#0F172A" stroke="#FBBF24" strokeWidth="5" />
+            <text x="0" y="45" textAnchor="middle" fill="#FEF08A" fontSize="18" fontWeight="900" fontFamily="'Arial Black'">
+              YO DEL PRESENTE
+            </text>
+            <text x="0" y="80" textAnchor="middle" fill="#38BDF8" fontSize="14" fontWeight="900" fontFamily="'Arial Black'">
+              «¡QUE LO HAGA ÉL!»
+            </text>
+          </g>
+
+          {/* Pedestal Derecho: Un Extraño Desconocido */}
+          <g transform="translate(840, 1260)">
+            <rect x="-140" y="0" width="280" height="260" rx="14" fill="#1E293B" stroke="#22C55E" strokeWidth="5" />
+            <text x="0" y="45" textAnchor="middle" fill="#86EFAC" fontSize="18" fontWeight="900" fontFamily="'Arial Black'">
+              UN DESCONOCIDO
+            </text>
+            <text x="0" y="80" textAnchor="middle" fill="#94A3B8" fontSize="14" fontWeight="900" fontFamily="'Arial Black'">
+              (ALGUIEN EN LA CALLE)
+            </text>
+            {/* Silueta misteriosa con sombrero borsalino y gabardina */}
+            <g transform="translate(0, 150)">
+              <circle cx="0" cy="0" r="28" fill="#334155" stroke="#000000" strokeWidth="4" />
+              <ellipse cx="0" cy="-24" rx="36" ry="8" fill="#0F172A" stroke="#000000" strokeWidth="3" />
+              <rect x="-20" y="-42" width="40" height="20" rx="3" fill="#0F172A" stroke="#000000" strokeWidth="3" />
+            </g>
+          </g>
+
+          {/* Banner central diegético */}
+          <g transform="translate(180, 960)">
+            <rect x="0" y="0" width="720" height="66" rx="12" fill="#020617" stroke="#22C55E" strokeWidth="4.5" />
+            <text x="360" y="42" textAnchor="middle" fill="#86EFAC" fontSize="20" fontWeight="900" fontFamily="'Arial Black'">
+              MISMA ACTIVACIÓN: TRATAS A TU YO DE MAÑANA COMO A UN EXTRAÑO
+            </text>
+          </g>
+
+          {/* Rótulo superior */}
+          <g transform="translate(140, 150)">
+            <rect x="0" y="0" width="800" height="74" rx="14" fill="#020617" stroke="#F59E0B" strokeWidth="5" />
+            <text x="400" y="48" textAnchor="middle" fill="#FFFFFF" fontSize="23" fontWeight="900" fontFamily="'Arial Black', sans-serif">
+              LA TRAMPA: TU CEREBRO CREE QUE SUFRIRÁ OTRA PERSONA
+            </text>
+          </g>
+        </svg>
+      </div>
+    );
+  }
+
+  // =========================================================================
+  // 6. PANTALLA DIVIDIDA: SILLÓN DE RELAX HOY VS TORMENTA Y PÁNICO 3:42 AM
+  // =========================================================================
+  if (escenario === "pantalla_dividida_sofa_vs_tormenta_futuro") {
+    const f = frame;
+    const lightningFlash = f % 25 < 3;
+    const bombSpark = f % 6 < 3;
+
+    return (
+      <div className="absolute inset-0 pointer-events-none z-0 overflow-hidden bg-[#0F071D]">
+        <svg className="absolute inset-0 w-full h-full" viewBox="0 0 1080 1920" preserveAspectRatio="xMidYMid slice">
+          <defs>
+            <linearGradient id="cieloSoleado" x1="0" y1="1" x2="1" y2="0">
+              <stop offset="0%" stopColor="#EA580C" />
+              <stop offset="60%" stopColor="#FBBF24" />
+              <stop offset="100%" stopColor="#FEF08A" />
+            </linearGradient>
+            <linearGradient id="cieloTormenta" x1="0" y1="0" x2="1" y2="1">
+              <stop offset="0%" stopColor="#1E1035" />
+              <stop offset="60%" stopColor="#3B0764" />
+              <stop offset="100%" stopColor="#0B0314" />
+            </linearGradient>
+          </defs>
+
+          {/* MITAD INFERIOR IZQUIERDA: EL PRESENTE DE RELAX (09:00 PM) */}
+          <polygon points="0,240 1080,1400 1080,1920 0,1920" fill="url(#cieloSoleado)" />
+
+          {/* Sol sonriente en la esquina de paz */}
+          <circle cx="160" cy="1720" r="90" fill="#FDE047" stroke="#000000" strokeWidth="5" />
+
+          <g transform="translate(240, 1420)">
+            <rect x="0" y="0" width="460" height="54" rx="10" fill="#020617" stroke="#FEF08A" strokeWidth="4" />
+            <text x="230" y="36" textAnchor="middle" fill="#FEF08A" fontSize="18" fontWeight="900" fontFamily="'Arial Black'">
+              HOY: «QUE SUFRA ÉL, NOSOTROS A RELAJARNOS»
+            </text>
+          </g>
+
+          {/* MITAD SUPERIOR DERECHA: LA PESADILLA DE MAÑANA (03:42 AM) */}
+          <polygon points="0,240 1080,240 1080,1400" fill="url(#cieloTormenta)" />
+
+          {/* Relámpago en la tormenta */}
+          {lightningFlash && (
+            <polygon points="780,280 720,520 770,530 690,780 760,560 700,550" fill="#FEF08A" />
+          )}
+
+          {/* Nubes oscuras de pánico */}
+          <ellipse cx="800" cy="460" rx="160" ry="80" fill="#1E1B4B" stroke="#000000" strokeWidth="6" />
+          <ellipse cx="680" cy="520" rx="140" ry="70" fill="#312E81" stroke="#000000" strokeWidth="6" />
+
+          {/* RELOJ BOMBA DIGITAL TICKING: 03:42 AM */}
+          <g transform="translate(820, 620)">
+            <rect x="-100" y="-50" width="200" height="100" rx="12" fill="#020617" stroke="#EF4444" strokeWidth="6" />
+            <text x="0" y="16" textAnchor="middle" fill="#EF4444" fontSize="36" fontWeight="900" fontFamily="'Arial Black'">
+              03:42
+            </text>
+            <text x="0" y="38" textAnchor="middle" fill="#FCA5A5" fontSize="14" fontWeight="900" fontFamily="'Arial Black'">
+              AM • PÁNICO TOTAL
+            </text>
+            {/* Mecha de dinamita */}
+            <path d="M 60,-50 Q 90,-90 60,-110" fill="none" stroke="#F59E0B" strokeWidth="5" />
+            <circle cx="60" cy="-110" r={bombSpark ? 8 : 4} fill="#FEF08A" />
+          </g>
+
+          {/* BANDA DIAGONAL DIVISORIA NEO-BRUTALISTA */}
+          <line x1="0" y1="240" x2="1080" y2="1400" stroke="#000000" strokeWidth="14" />
+          <line x1="0" y1="240" x2="1080" y2="1400" stroke="#FDE047" strokeWidth="6" strokeDasharray="30 20" />
+
+          {/* Rótulo superior */}
+          <g transform="translate(140, 150)">
+            <rect x="0" y="0" width="800" height="74" rx="14" fill="#020617" stroke="#EF4444" strokeWidth="5" />
+            <text x="400" y="48" textAnchor="middle" fill="#FFFFFF" fontSize="23" fontWeight="900" fontFamily="'Arial Black', sans-serif">
+              PLACER INMEDIATO HOY... CUENTA CARA MAÑANA
+            </text>
+          </g>
+        </svg>
+      </div>
+    );
+  }
+
+  // =========================================================================
+  // 7. ESCRITORIO REGLA DE LOS 5 MINUTOS: CANDADO Y ÉXITO PRODUCTIVO
+  // =========================================================================
+  if (escenario === "escritorio_regla_cinco_minutos_exito") {
+    const f = frame;
+    const textFlow = Math.min(220, Math.floor(f * 2.5));
+
+    return (
+      <div className="absolute inset-0 pointer-events-none z-0 overflow-hidden bg-[#0A071E]">
+        <svg className="absolute inset-0 w-full h-full" viewBox="0 0 1080 1920" preserveAspectRatio="xMidYMid slice">
+          <defs>
+            <radialGradient id="warmFocusLamp" cx="45%" cy="35%" r="65%">
+              <stop offset="0%" stopColor="#FEF08A" stopOpacity="0.45" />
+              <stop offset="50%" stopColor="#D97706" stopOpacity="0.2" />
+              <stop offset="100%" stopColor="#0A071E" stopOpacity="0" />
+            </radialGradient>
+          </defs>
+
+          {/* Habitación con iluminación cálida de concentración */}
+          <rect width="1080" height="1920" fill="#0A071E" />
+          <circle cx="540" cy="780" r="720" fill="url(#warmFocusLamp)" />
+
+          {/* Mesa de escritorio limpia */}
+          <rect y="1220" width="1080" height="700" fill="#78350F" stroke="#000000" strokeWidth="8" />
+          <line x1="0" y1="1220" x2="1080" y2="1220" stroke="#000000" strokeWidth="8" />
+
+          {/* TELÉFONO BLOQUEADO DENTRO DE CAJA FUERTE CON CANDADO CERRADO */}
+          <g transform="translate(220, 1140)">
+            {/* Caja de seguridad */}
+            <rect x="-70" y="-50" width="140" height="110" rx="10" fill="#1E293B" stroke="#000000" strokeWidth="6" />
+            {/* Candado dorado cerrado grande */}
+            <rect x="-24" y="-8" width="48" height="42" rx="6" fill="#F59E0B" stroke="#000000" strokeWidth="4.5" />
+            <path d="M -14,-8 L -14,-32 A 14,14 0 0,1 14,-32 L 14,-8" fill="none" stroke="#CBD5E1" strokeWidth="7" strokeLinecap="round" />
+            <circle cx="0" cy="12" r="5" fill="#000000" />
+            {/* Rótulo de candado */}
+            <rect x="-60" y="-42" width="120" height="22" rx="4" fill="#22C55E" />
+            <text x="0" y="-26" textAnchor="middle" fill="#FFFFFF" fontSize="12" fontWeight="900" fontFamily="'Arial Black'">
+              BLOQUEADO
+            </text>
+          </g>
+
+          {/* LAPTOP CON DOCUMENTO LLENÁNDOSE DE LÍNEAS DE TEXTO */}
+          <g transform="translate(620, 1150)">
+            <polygon points="-140,40 140,40 120,0 -120,0" fill="#64748B" stroke="#000000" strokeWidth="6" />
+            <rect x="-110" y="-140" width="220" height="140" rx="8" fill="#0F172A" stroke="#000000" strokeWidth="6" />
+            <rect x="-96" y="-126" width="192" height="112" fill="#F8FAFC" />
+            {/* Líneas de texto fluyendo rápidamente */}
+            <g>
+              <line x1="-80" y1="-106" x2={-80 + Math.min(160, textFlow)} y2="-106" stroke="#2563EB" strokeWidth="5" strokeLinecap="round" />
+              {textFlow > 80 && (
+                <line x1="-80" y1="-86" x2={-80 + Math.min(150, textFlow - 60)} y2="-86" stroke="#0F172A" strokeWidth="4" strokeLinecap="round" />
+              )}
+              {textFlow > 140 && (
+                <line x1="-80" y1="-66" x2={-80 + Math.min(130, textFlow - 110)} y2="-66" stroke="#0F172A" strokeWidth="4" strokeLinecap="round" />
+              )}
+              {textFlow > 180 && (
+                <line x1="-80" y1="-46" x2={-80 + Math.min(100, textFlow - 150)} y2="-46" stroke="#10B981" strokeWidth="4" strokeLinecap="round" />
+              )}
+            </g>
+          </g>
+
+          {/* EL CAVERNÍCOLA EN LA ESQUINA DEL FONDO PACIFICADO Y SENTADO */}
+          <g transform="translate(920, 1080)">
+            {/* Burbuja de pensamiento con pulgar arriba */}
+            <ellipse cx="-20" cy="-60" rx="50" ry="30" fill="#FEF08A" stroke="#000000" strokeWidth="4" />
+            <text x="-20" y="-52" textAnchor="middle" fill="#000000" fontSize="14" fontWeight="900">
+              «OK, 5 MIN»
+            </text>
+            <circle cx="20" cy="-25" r="7" fill="#FEF08A" stroke="#000000" strokeWidth="2.5" />
+          </g>
+
+          {/* BANNER DIEGÉTICO RESOLUTIVO */}
+          <g transform="translate(140, 360)">
+            <rect x="0" y="0" width="800" height="96" rx="14" fill="#020617" stroke="#22C55E" strokeWidth="5" />
+            <text x="400" y="42" textAnchor="middle" fill="#86EFAC" fontSize="22" fontWeight="900" fontFamily="'Arial Black'">
+              LA REGLA DE LOS 5 MINUTOS
+            </text>
+            <text x="400" y="76" textAnchor="middle" fill="#FFFFFF" fontSize="17" fontWeight="900" fontFamily="'Arial Black'">
+              REDUCE LA FRICCIÓN INICIAL Y TU CEREBRO SEGUIRÁ ADELANTE
+            </text>
+          </g>
+
+          {/* Rótulo superior */}
+          <g transform="translate(140, 150)">
+            <rect x="0" y="0" width="800" height="74" rx="14" fill="#020617" stroke="#22C55E" strokeWidth="5" />
+            <text x="400" y="48" textAnchor="middle" fill="#86EFAC" fontSize="23" fontWeight="900" fontFamily="'Arial Black', sans-serif">
+              CÓMO HACKEARLO: SOLO EMPIEZA CINCO MINUTOS
+            </text>
+          </g>
+        </svg>
+      </div>
+    );
+  }
+
+  // =========================================================================
+  // PLACEBO 1: CONSULTORIO MÉDICO - DOLOR DE CABEZA AGUDO Y PÍLDORA MILAGROSA
+  // =========================================================================
+  if (escenario === "consultorio_medico_camilla_dolor") {
+    const f = frame;
+    const painPulse = 1 + Math.sin(f * 0.28) * 0.18;
+    const reliefFlash = Math.sin(f * 0.15) > 0.3;
+
+    return (
+      <div className="absolute inset-0 pointer-events-none z-0 overflow-hidden bg-[#F0FDF4]">
+        <svg className="absolute inset-0 w-full h-full" viewBox="0 0 1080 1920" preserveAspectRatio="xMidYMid slice">
+          <defs>
+            <radialGradient id="lampSpotlight" cx="50%" cy="25%" r="65%">
+              <stop offset="0%" stopColor="#FFFFFF" stopOpacity="0.8" />
+              <stop offset="60%" stopColor="#E0F2FE" stopOpacity="0.3" />
+              <stop offset="100%" stopColor="#F0FDF4" stopOpacity="0" />
+            </radialGradient>
+            <linearGradient id="painGlow" x1="0" y1="0" x2="0" y2="1">
+              <stop offset="0%" stopColor="#EF4444" stopOpacity="0.8" />
+              <stop offset="100%" stopColor="#EF4444" stopOpacity="0" />
+            </linearGradient>
+          </defs>
+
+          {/* Pared clínica con azulejos asépticos */}
+          <rect width="1080" height="1920" fill="#F8FAFC" />
+          <g opacity={0.35}>
+            {[300, 450, 600, 750, 900, 1050, 1200].map((y) => (
+              <line key={`tile_h_${y}`} x1="0" y1={y} x2="1080" y2={y} stroke="#94A3B8" strokeWidth="2" strokeDasharray="8 8" />
+            ))}
+            {[180, 360, 540, 720, 900].map((x) => (
+              <line key={`tile_v_${x}`} x1={x} y1="300" x2={x} y2="1350" stroke="#94A3B8" strokeWidth="2" strokeDasharray="8 8" />
+            ))}
+          </g>
+
+          {/* Cono de luz de la lámpara quirúrgica del techo */}
+          <polygon points="540,0 200,1400 880,1400" fill="url(#lampSpotlight)" />
+          {/* Lámpara médica en el techo */}
+          <ellipse cx="540" cy="40" rx="90" ry="24" fill="#0284C7" stroke="#000000" strokeWidth="6" />
+          <line x1="540" y1="0" x2="540" y2="24" stroke="#000000" strokeWidth="8" />
+
+          {/* Piso clínico de linóleo verde menta */}
+          <rect y="1350" width="1080" height="570" fill="#E2E8F0" stroke="#000000" strokeWidth="8" />
+          <line x1="0" y1="1350" x2="1080" y2="1350" stroke="#000000" strokeWidth="8" />
+          <rect y="1350" width="1080" height="30" fill="#0D9488" stroke="#000000" strokeWidth="4" />
+
+          {/* Camilla médica de exploración acolchada */}
+          <g transform="translate(180, 1160)">
+            {/* Patas metálicas de la camilla */}
+            <line x1="60" y1="90" x2="60" y2="220" stroke="#334155" strokeWidth="10" strokeLinecap="round" />
+            <line x1="480" y1="90" x2="480" y2="220" stroke="#334155" strokeWidth="10" strokeLinecap="round" />
+            <line x1="40" y1="210" x2="500" y2="210" stroke="#64748B" strokeWidth="6" />
+            {/* Colchón de vinilo azul clínico con cojín */}
+            <rect x="20" y="40" width="500" height="50" rx="12" fill="#0284C7" stroke="#000000" strokeWidth="6" />
+            <path d="M 30,40 Q 60,10 90,40 Z" fill="#38BDF8" stroke="#000000" strokeWidth="5" />
+            {/* Sábana protectora blanca de papel */}
+            <rect x="40" y="44" width="460" height="12" fill="#FFFFFF" opacity={0.8} />
+          </g>
+
+          {/* Soporte con bandeja quirúrgica a la derecha */}
+          <g transform="translate(860, 1120)">
+            <line x1="0" y1="0" x2="0" y2="260" stroke="#64748B" strokeWidth="8" />
+            <ellipse cx="0" cy="260" rx="40" ry="12" fill="#334155" stroke="#000000" strokeWidth="5" />
+            <rect x="-80" y="-12" width="160" height="24" rx="6" fill="#CBD5E1" stroke="#000000" strokeWidth="5" />
+            {/* Vaso de agua en la bandeja */}
+            <path d="M -50,-8 L -30,-8 L -34,10 L -46,10 Z" fill="#38BDF8" stroke="#000000" strokeWidth="3" />
+            {/* Frasquito en la bandeja */}
+            <rect x="20" y="-22" width="22" height="34" rx="4" fill="#F59E0B" stroke="#000000" strokeWidth="3" />
+          </g>
+
+          {/* MANO CON GUANTE QUIRÚRGICO OFRECIENDO LA CÁPSULA ROJA Y BLANCA */}
+          <g transform={`translate(${720 + Math.sin(f * 0.15) * 8}, 880)`}>
+            {/* Brazo con bata blanca de médico */}
+            <path d="M 160,-20 L 50,-10 L 50,40 L 160,50 Z" fill="#FFFFFF" stroke="#000000" strokeWidth="6" />
+            {/* Guante de látex quirúrgico cyan */}
+            <path d="M 50,-10 L -10,-6 Q -30,0 -40,16 Q -25,28 0,26 L 50,40 Z" fill="#06B6D4" stroke="#000000" strokeWidth="5" />
+            {/* Cápsula roja y blanca reposando en la palma abierta */}
+            <g transform="translate(-25, 0) rotate(-25)">
+              <rect x="-12" y="-26" width="24" height="26" rx="12" fill="#EF4444" stroke="#000000" strokeWidth="4" />
+              <rect x="-12" y="0" width="24" height="26" rx="12" fill="#FFFFFF" stroke="#000000" strokeWidth="4" />
+              <line x1="-12" y1="0" x2="12" y2="0" stroke="#000000" strokeWidth="3.5" />
+              {/* Destello de esperanza sobre la pastilla */}
+              <circle cx="0" cy="0" r="18" fill="#38BDF8" fillOpacity={reliefFlash ? 0.45 : 0.15} filter="blur(4px)" />
+            </g>
+          </g>
+
+          {/* ONDA EXPANSIVA DE DOLOR QUE SE DISIPA A COLOR AZUL DE ALIVIO */}
+          <g transform="translate(360, 680)">
+            <circle cx="0" cy="0" r={(50 * painPulse).toFixed(1)} fill="none" stroke="#EF4444" strokeWidth="4" strokeDasharray="6 4" opacity={0.7} />
+            <circle cx="0" cy="0" r={(85 * painPulse).toFixed(1)} fill="none" stroke={reliefFlash ? "#38BDF8" : "#EF4444"} strokeWidth="3" opacity={0.4} />
+          </g>
+
+          {/* Banner diegético superior */}
+          <g transform="translate(140, 150)">
+            <rect x="0" y="0" width="800" height="74" rx="14" fill="#020617" stroke="#EF4444" strokeWidth="5" />
+            <text x="400" y="48" textAnchor="middle" fill="#FFFFFF" fontSize="23" fontWeight="900" fontFamily="'Arial Black', sans-serif">
+              ¿UNA PASTILLA DE AZÚCAR PUEDE CURARTE?
+            </text>
+          </g>
+        </svg>
+      </div>
+    );
+  }
+
+  // =========================================================================
+  // PLACEBO 2: CONSULTORIO - GIRO CÓMICO: ETIQUETA 100% AZÚCAR GLUCOSA
+  // =========================================================================
+  if (escenario === "consultorio_revelacion_frasco_azucar") {
+    const f = frame;
+    const wobble = Math.sin(f * 0.22) * 4;
+
+    return (
+      <div className="absolute inset-0 pointer-events-none z-0 overflow-hidden bg-[#FEF2F2]">
+        <svg className="absolute inset-0 w-full h-full" viewBox="0 0 1080 1920" preserveAspectRatio="xMidYMid slice">
+          {/* Fondo de consultorio con iluminación dramática amarilla */}
+          <rect width="1080" height="1920" fill="#FFFBEB" />
+          {/* Rayos de asombro cómico en el fondo */}
+          {[0, 30, 60, 90, 120, 150, 180, 210, 240, 270, 300, 330].map((deg) => (
+            <line
+              key={`shock_ray_${deg}`}
+              x1="540"
+              y1="900"
+              x2={540 + Math.cos((deg * Math.PI) / 180) * 1200}
+              y2={900 + Math.sin((deg * Math.PI) / 180) * 1200}
+              stroke="#FDE68A"
+              strokeWidth="16"
+              opacity={0.35}
+            />
+          ))}
+
+          {/* Piso clínico */}
+          <rect y="1380" width="1080" height="540" fill="#E2E8F0" stroke="#000000" strokeWidth="8" />
+
+          {/* MÉDICO EN EL FONDO CON BATA BLANCA Y ESTETOSCOPIO ENCOGIÉNDOSE DE HOMBROS */}
+          <g transform="translate(860, 960)">
+            {/* Cabeza del médico */}
+            <circle cx="0" cy="-140" r="45" fill="#FFFFFF" stroke="#000000" strokeWidth="6" />
+            {/* Gorro médico quirúrgico */}
+            <path d="M -45,-140 Q 0,-195 45,-140 Z" fill="#0EA5E9" stroke="#000000" strokeWidth="5" />
+            {/* Ojos sonrientes relajados */}
+            <path d="M -22,-140 Q -15,-150 -8,-140" fill="none" stroke="#000000" strokeWidth="4" strokeLinecap="round" />
+            <path d="M 8,-140 Q 15,-150 22,-140" fill="none" stroke="#000000" strokeWidth="4" strokeLinecap="round" />
+            <path d="M -12,-120 Q 0,-110 12,-120" fill="none" stroke="#000000" strokeWidth="4" strokeLinecap="round" />
+            {/* Torso con bata blanca */}
+            <path d="M -50,-90 L 50,-90 L 65,120 L -65,120 Z" fill="#FFFFFF" stroke="#000000" strokeWidth="6" />
+            {/* Estetoscopio al cuello */}
+            <path d="M -30,-90 Q 0,-40 30,-90" fill="none" stroke="#334155" strokeWidth="5" />
+            <circle cx="0" cy="-40" r="8" fill="#94A3B8" stroke="#000000" strokeWidth="3" />
+            {/* Brazos abiertos con palmas hacia arriba: "¡Es solo azúcar!" */}
+            <line x1="-50" y1="-70" x2="-100" y2="-40" stroke="#000000" strokeWidth="6" strokeLinecap="round" />
+            <line x1="50" y1="-70" x2="100" y2="-40" stroke="#000000" strokeWidth="6" strokeLinecap="round" />
+          </g>
+
+          {/* FRASCO PROTAGÓNICO EN PRIMER PLANO REVELANDO LA ETIQUETA GIGANTE */}
+          <g transform={`translate(${540 + wobble}, 820)`}>
+            {/* Sombra proyectada */}
+            <ellipse cx="0" cy="220" rx="140" ry="24" fill="#000000" opacity={0.25} />
+            {/* Frasco de vidrio ámbar gigante */}
+            <rect x="-130" y="-180" width="260" height="380" rx="30" fill="#F8FAFC" stroke="#000000" strokeWidth="10" />
+            {/* Tapa rosca azul */}
+            <rect x="-90" y="-230" width="180" height="60" rx="12" fill="#0284C7" stroke="#000000" strokeWidth="8" />
+            <line x1="-60" y1="-230" x2="-60" y2="-170" stroke="#000000" strokeWidth="4" />
+            <line x1="0" y1="-230" x2="0" y2="-170" stroke="#000000" strokeWidth="4" />
+            <line x1="60" y1="-230" x2="60" y2="-170" stroke="#000000" strokeWidth="4" />
+            {/* Azúcar cristalina acumulada en el fondo */}
+            <path d="M -120,60 Q -50,30 0,50 Q 60,70 120,50 L 120,190 L -120,190 Z" fill="#F1F5F9" />
+            <circle cx="-60" cy="110" r="6" fill="#CBD5E1" />
+            <circle cx="20" cy="130" r="5" fill="#CBD5E1" />
+            <circle cx="80" cy="95" r="7" fill="#CBD5E1" />
+            {/* ETIQUETA REVELADORA EN AMARILLO VIBRANTE */}
+            <rect x="-110" y="-120" width="220" height="150" rx="14" fill="#FACC15" stroke="#000000" strokeWidth="7" />
+            <text x="0" y="-60" textAnchor="middle" fill="#000000" fontSize="34" fontWeight="900" fontFamily="'Arial Black', sans-serif">
+              100%
+            </text>
+            <text x="0" y="-15" textAnchor="middle" fill="#DC2626" fontSize="36" fontWeight="900" fontFamily="'Arial Black', sans-serif">
+              AZÚCAR
+            </text>
+            <rect x="-90" y="5" width="180" height="18" fill="#000000" />
+            <text x="0" y="19" textAnchor="middle" fill="#FFFFFF" fontSize="12" fontWeight="900" fontFamily="'Arial Black', sans-serif">
+              GLUCOSA DE COCINA
+            </text>
+          </g>
+
+          {/* SIGNOS DE INTERROGACIÓN CÓMICOS GIGANTES */}
+          <g transform="translate(240, 720)">
+            <text x="0" y="0" fill="#EF4444" fontSize="110" fontWeight="900" fontFamily="'Arial Black', sans-serif">
+              ¿?
+            </text>
+          </g>
+
+          {/* Rótulo superior */}
+          <g transform="translate(140, 150)">
+            <rect x="0" y="0" width="800" height="74" rx="14" fill="#020617" stroke="#F59E0B" strokeWidth="5" />
+            <text x="400" y="48" textAnchor="middle" fill="#FEF08A" fontSize="23" fontWeight="900" fontFamily="'Arial Black', sans-serif">
+              BIENVENIDO AL EFECTO PLACEBO
+            </text>
+          </g>
+        </svg>
+      </div>
+    );
+  }
+
+  // =========================================================================
+  // PLACEBO 3: MICROCOSMOS - ESÓFAGO TRANSPARENTE Y RED NERVIOSA EN ASCENSO
+  // =========================================================================
+  if (escenario === "microcosmos_esofago_red_nerviosa") {
+    const f = frame;
+    const capsuleY = 480 + ((f * 5) % 650);
+    const nervePulse = (f * 14) % 900;
+
+    return (
+      <div className="absolute inset-0 pointer-events-none z-0 overflow-hidden bg-[#030712]">
+        <svg className="absolute inset-0 w-full h-full" viewBox="0 0 1080 1920" preserveAspectRatio="xMidYMid slice">
+          <defs>
+            <linearGradient id="nerveBeam" x1="0" y1="1" x2="0" y2="0">
+              <stop offset="0%" stopColor="#0284C7" stopOpacity="0.1" />
+              <stop offset="70%" stopColor="#38BDF8" stopOpacity="0.9" />
+              <stop offset="100%" stopColor="#FFFFFF" stopOpacity="1" />
+            </linearGradient>
+            <radialGradient id="brainstemGlow" cx="50%" cy="20%" r="45%">
+              <stop offset="0%" stopColor="#38BDF8" stopOpacity="0.5" />
+              <stop offset="60%" stopColor="#1E3A8A" stopOpacity="0.2" />
+              <stop offset="100%" stopColor="#030712" stopOpacity="0" />
+            </radialGradient>
+          </defs>
+
+          {/* Fondo azul medianoche con malla bioeléctrica */}
+          <rect width="1080" height="1920" fill="#030712" />
+          <circle cx="540" cy="380" r="500" fill="url(#brainstemGlow)" />
+
+          {/* SILUETA ANATÓMICA TRANSLÚCIDA DEL TORSO Y COLUMNA VERTEBRAL */}
+          <g opacity={0.6}>
+            {/* Silueta del torso y cuello */}
+            <path
+              d="M 380,260 Q 380,480 320,680 Q 280,880 290,1400 L 790,1400 Q 800,880 760,680 Q 700,480 700,260 Z"
+              fill="none"
+              stroke="#1E293B"
+              strokeWidth="12"
+            />
+            {/* Tubo digestivo / Esófago (centro-izquierda) */}
+            <path
+              d="M 480,260 Q 480,600 460,950 Q 440,1150 420,1350"
+              fill="none"
+              stroke="#334155"
+              strokeWidth="48"
+              strokeLinecap="round"
+            />
+            <path
+              d="M 480,260 Q 480,600 460,950 Q 440,1150 420,1350"
+              fill="none"
+              stroke="#1E293B"
+              strokeWidth="38"
+              strokeLinecap="round"
+            />
+          </g>
+
+          {/* CÁPSULA ROJA Y BLANCA DESCENDIENDO POR EL ESÓFAGO (LENTA) */}
+          <g transform={`translate(470, ${capsuleY}) rotate(15)`}>
+            <rect x="-16" y="-34" width="32" height="34" rx="16" fill="#EF4444" stroke="#000000" strokeWidth="4" />
+            <rect x="-16" y="0" width="32" height="34" rx="16" fill="#FFFFFF" stroke="#000000" strokeWidth="4" />
+            <line x1="-16" y1="0" x2="16" y2="0" stroke="#000000" strokeWidth="3" />
+            {/* Rótulo diegético: AZÚCAR */}
+            <text x="0" y="16" textAnchor="middle" fill="#000000" fontSize="8" fontWeight="900">
+              AZÚCAR
+            </text>
+          </g>
+
+          {/* AUTOPISTA DE FIBRA ÓPTICA: MÉDULA ESPINAL EN ASCENSO SUPER RÁPIDO */}
+          <g transform="translate(600, 0)">
+            {/* Médula espinal dorsal */}
+            <line x1="0" y1="260" x2="0" y2="1350" stroke="#0369A1" strokeWidth="18" strokeLinecap="round" />
+            <line x1="0" y1="260" x2="0" y2="1350" stroke="#38BDF8" strokeWidth="8" strokeLinecap="round" />
+
+            {/* Ramificaciones nerviosas aferentes y eferentes */}
+            {[450, 600, 750, 900, 1050, 1200].map((y, i) => (
+              <g key={`nerve_branch_${i}`}>
+                <path d={`M 0,${y} Q 60,${y - 20} 120,${y - 40}`} fill="none" stroke="#0EA5E9" strokeWidth="4" strokeDasharray="6 4" />
+                <path d={`M 0,${y} Q -60,${y - 20} -100,${y - 30}`} fill="none" stroke="#0EA5E9" strokeWidth="4" strokeDasharray="6 4" />
+                <circle cx="120" cy={y - 40} r="4" fill="#38BDF8" />
+              </g>
+            ))}
+
+            {/* PULSO DE FIBRA ÓPTICA DISPARÁNDOSE A TODA VELOCIDAD HACIA EL CEREBRO */}
+            <circle cx="0" cy={1350 - nervePulse} r="14" fill="#FFFFFF" filter="blur(2px)" />
+            <line x1="0" y1={1350 - nervePulse} x2="0" y2={1420 - nervePulse} stroke="url(#nerveBeam)" strokeWidth="14" strokeLinecap="round" />
+          </g>
+
+          {/* CEREBRO ILUMINÁNDOSE AL TOPE CON LA SEÑAL DE ANTICIPACIÓN */}
+          <g transform="translate(540, 320)">
+            <ellipse cx="0" cy="0" rx="140" ry="90" fill="#1E3A8A" stroke="#38BDF8" strokeWidth="6" opacity={0.8} />
+            <text x="0" y="-10" textAnchor="middle" fill="#FFFFFF" fontSize="18" fontWeight="900" fontFamily="'Arial Black'">
+              CORTEZA PREFRONTAL
+            </text>
+            <text x="0" y="20" textAnchor="middle" fill="#67E8F9" fontSize="14" fontWeight="800">
+              «ORDEN DE ALIVIO ACTIVADA»
+            </text>
+          </g>
+
+          {/* Rótulo superior */}
+          <g transform="translate(140, 150)">
+            <rect x="0" y="0" width="800" height="74" rx="14" fill="#020617" stroke="#38BDF8" strokeWidth="5" />
+            <text x="400" y="48" textAnchor="middle" fill="#38BDF8" fontSize="23" fontWeight="900" fontFamily="'Arial Black', sans-serif">
+              EL RITUAL ENVÍA LA ORDEN A TU QUÍMICA INTERNA
+            </text>
+          </g>
+        </svg>
+      </div>
+    );
+  }
+
+  // =========================================================================
+  // PLACEBO 4: TRONCO ENCEFÁLICO - COMPUERTAS DE LA FARMACIA INTERNA (ENDORFINAS)
+  // =========================================================================
+  if (escenario === "tronco_encefalico_farmacia_interna") {
+    const f = frame;
+    const gateOpen = Math.min(180, f * 6);
+    const particleWave = (f * 12) % 800;
+
+    return (
+      <div className="absolute inset-0 pointer-events-none z-0 overflow-hidden bg-[#0A071E]">
+        <svg className="absolute inset-0 w-full h-full" viewBox="0 0 1080 1920" preserveAspectRatio="xMidYMid slice">
+          <defs>
+            <radialGradient id="goldVaultGlow" cx="50%" cy="35%" r="65%">
+              <stop offset="0%" stopColor="#FEF08A" stopOpacity="0.8" />
+              <stop offset="50%" stopColor="#F59E0B" stopOpacity="0.35" />
+              <stop offset="100%" stopColor="#0A071E" stopOpacity="0" />
+            </radialGradient>
+          </defs>
+
+          {/* Bóveda molecular oscura */}
+          <rect width="1080" height="1920" fill="#0A071E" />
+          <circle cx="540" cy="650" r="600" fill="url(#goldVaultGlow)" />
+
+          {/* COMPUERTAS BLINDADAS DE LA "FARMACIA INTERNA" ABRIÉNDOSE */}
+          <g transform="translate(540, 620)">
+            {/* Interior dorado de la farmacia */}
+            <rect x="-240" y="-180" width="480" height="360" rx="20" fill="#78350F" stroke="#F59E0B" strokeWidth="8" />
+
+            {/* Hoja izquierda de la compuerta abriéndose hacia afuera */}
+            <g transform={`translate(${-gateOpen}, 0)`}>
+              <rect x="-220" y="-170" width="220" height="340" rx="10" fill="#1E293B" stroke="#000000" strokeWidth="8" />
+              <line x1="-110" y1="-170" x2="-110" y2="170" stroke="#334155" strokeWidth="6" />
+              <circle cx="-50" cy="0" r="16" fill="#F59E0B" stroke="#000000" strokeWidth="4" />
+            </g>
+
+            {/* Hoja derecha de la compuerta abriéndose hacia afuera */}
+            <g transform={`translate(${gateOpen}, 0)`}>
+              <rect x="0" y="-170" width="220" height="340" rx="10" fill="#1E293B" stroke="#000000" strokeWidth="8" />
+              <line x1="110" y1="-170" x2="110" y2="170" stroke="#334155" strokeWidth="6" />
+              <circle cx="50" cy="0" r="16" fill="#F59E0B" stroke="#000000" strokeWidth="4" />
+            </g>
+
+            {/* Letrero superior de la compuerta */}
+            <rect x="-200" y="-230" width="400" height="50" rx="8" fill="#F59E0B" stroke="#000000" strokeWidth="5" />
+            <text x="0" y="-197" textAnchor="middle" fill="#000000" fontSize="22" fontWeight="900" fontFamily="'Arial Black', sans-serif">
+              FARMACIA INTERNA (PAG)
+            </text>
+          </g>
+
+          {/* RÁFAGA DE ESFERAS DORADAS DE ENDORFINAS Y OPIOIDES NATURALES */}
+          {[
+            { x: 380, y: 750, r: 24, label: "ENDORFINA" },
+            { x: 680, y: 720, r: 22, label: "OPIOIDE" },
+            { x: 500, y: 840, r: 28, label: "MORFINA INT." },
+            { x: 300, y: 920, r: 20, label: "DOPA" },
+            { x: 740, y: 900, r: 22, label: "ENDORFINA" },
+          ].map((sp, idx) => (
+            <g key={`endorfin_${idx}`} transform={`translate(${sp.x}, ${sp.y + ((particleWave + idx * 70) % 450)})`}>
+              <circle cx="0" cy="0" r={sp.r + 4} fill="#FEF08A" opacity={0.4} filter="blur(3px)" />
+              <circle cx="0" cy="0" r={sp.r} fill="#FACC15" stroke="#000000" strokeWidth="4" />
+              <circle cx="-sp.r/3" cy="-sp.r/3" r={sp.r / 3} fill="#FFFFFF" opacity={0.8} />
+              <text x="0" y="4" textAnchor="middle" fill="#78350F" fontSize={sp.r > 24 ? "8" : "7"} fontWeight="900">
+                {sp.label}
+              </text>
+            </g>
+          ))}
+
+          {/* RECEPTORES CELULARES EN LA PARTE INFERIOR SIENDO BLOQUEADOS POR CANDADOS */}
+          <g transform="translate(540, 1380)">
+            <rect x="-480" y="0" width="960" height="300" rx="20" fill="#1E1B4B" stroke="#000000" strokeWidth="8" />
+            <text x="0" y="40" textAnchor="middle" fill="#A5B4FC" fontSize="18" fontWeight="900" fontFamily="'Arial Black'">
+              RECEPTORES DE DOLOR EN LA MÉDULA ESPINAL
+            </text>
+            {[-320, -110, 110, 320].map((rx, i) => (
+              <g key={`receptor_lock_${i}`} transform={`translate(${rx}, 120)`}>
+                {/* Receptor celular en Y */}
+                <path d="M -24,-30 L -10,0 L -10,60 M 24,-30 L 10,0 L 10,60" fill="none" stroke="#EF4444" strokeWidth="8" strokeLinecap="round" />
+                {/* Candado dorado cerrando el receptor */}
+                <rect x="-20" y="-10" width="40" height="34" rx="6" fill="#F59E0B" stroke="#000000" strokeWidth="4.5" />
+                <path d="M -12,-10 L -12,-24 A 12,12 0 0,1 12,-24 L 12,-10" fill="none" stroke="#FDE047" strokeWidth="5" strokeLinecap="round" />
+                <circle cx="0" cy="8" r="4" fill="#000000" />
+                {/* Etiqueta de bloqueo */}
+                <rect x="-30" y="30" width="60" height="18" rx="4" fill="#22C55E" />
+                <text x="0" y="43" textAnchor="middle" fill="#FFFFFF" fontSize="9" fontWeight="900">
+                  BLOQUEADO
+                </text>
+              </g>
+            ))}
+          </g>
+
+          {/* Rótulo superior */}
+          <g transform="translate(140, 150)">
+            <rect x="0" y="0" width="800" height="74" rx="14" fill="#020617" stroke="#F59E0B" strokeWidth="5" />
+            <text x="400" y="48" textAnchor="middle" fill="#FDE68A" fontSize="23" fontWeight="900" fontFamily="'Arial Black', sans-serif">
+              ANALGÉSICOS NATURALES IDÉNTICOS A LA MORFINA
+            </text>
+          </g>
+        </svg>
+      </div>
+    );
+  }
+
+  // =========================================================================
+  // PLACEBO 5: TORSO RADIOGRÁFICO - PRESIÓN, CORAZÓN Y DESINFLAMACIÓN
+  // =========================================================================
+  if (escenario === "torso_radiografico_medidores_salud") {
+    const f = frame;
+    const heartBeat = 1 + Math.sin(f * 0.18) * 0.12;
+
+    return (
+      <div className="absolute inset-0 pointer-events-none z-0 overflow-hidden bg-[#020617]">
+        <svg className="absolute inset-0 w-full h-full" viewBox="0 0 1080 1920" preserveAspectRatio="xMidYMid slice">
+          <defs>
+            <radialGradient id="heartGlow" cx="50%" cy="50%" r="50%">
+              <stop offset="0%" stopColor="#10B981" stopOpacity="0.4" />
+              <stop offset="100%" stopColor="#020617" stopOpacity="0" />
+            </radialGradient>
+          </defs>
+
+          {/* Fondo azul profundo de pantalla de telemetría médica */}
+          <rect width="1080" height="1920" fill="#020617" />
+          <g opacity={0.2}>
+            {[200, 400, 600, 800, 1000, 1200, 1400].map((y) => (
+              <line key={`grid_y_${y}`} x1="0" y1={y} x2="1080" y2={y} stroke="#0EA5E9" strokeWidth="1.5" />
+            ))}
+            {[180, 360, 540, 720, 900].map((x) => (
+              <line key={`grid_x_${x}`} x1={x} y1="0" x2={x} y2="1920" stroke="#0EA5E9" strokeWidth="1.5" />
+            ))}
+          </g>
+
+          {/* CORAZÓN ILUSTRADO EN EL CENTRO LATIENDO TRANQUILO */}
+          <g transform={`translate(540, 820) scale(${heartBeat.toFixed(3)})`}>
+            <circle cx="0" cy="0" r="140" fill="url(#heartGlow)" />
+            {/* Silueta estilizada del corazón */}
+            <path
+              d="M 0,40 Q -70,-30 -70,-90 A 45,45 0 0,1 0,-60 A 45,45 0 0,1 70,-90 Q 70,-30 0,40 Z"
+              fill="#EF4444"
+              stroke="#000000"
+              strokeWidth="7"
+            />
+            {/* Arteria aorta saliendo con flujo azul relajado */}
+            <path d="M -15,-85 Q -30,-140 0,-150 Q 30,-140 15,-85" fill="#38BDF8" stroke="#000000" strokeWidth="6" />
+            {/* Monitor de ritmo cardiaco dentro */}
+            <text x="0" y="-10" textAnchor="middle" fill="#FFFFFF" fontSize="20" fontWeight="900" fontFamily="'Arial Black'">
+              65 BPM
+            </text>
+            <text x="0" y="16" textAnchor="middle" fill="#86EFAC" fontSize="13" fontWeight="900">
+              RITMO ESTABLE
+            </text>
+          </g>
+
+          {/* MEDIDOR DE PRESIÓN ARTERIAL: DE ROJO A VERDE (IZQUIERDA) */}
+          <g transform="translate(240, 840)">
+            <rect x="-120" y="-140" width="240" height="260" rx="16" fill="#0F172A" stroke="#000000" strokeWidth="6" />
+            <text x="0" y="-105" textAnchor="middle" fill="#94A3B8" fontSize="14" fontWeight="900">
+              PRESIÓN ARTERIAL
+            </text>
+            {/* Dial circular con zona roja y verde */}
+            <circle cx="0" cy="-20" r="65" fill="#1E293B" stroke="#000000" strokeWidth="4" />
+            {/* Aguja bajando a zona verde */}
+            <line x1="0" y1="-20" x2="-35" y2="-50" stroke="#22C55E" strokeWidth="5" strokeLinecap="round" />
+            <circle cx="0" cy="-20" r="8" fill="#FFFFFF" stroke="#000000" strokeWidth="3" />
+            {/* Valor en verde */}
+            <rect x="-80" y="60" width="160" height="36" rx="6" fill="#15803D" />
+            <text x="0" y="85" textAnchor="middle" fill="#FFFFFF" fontSize="18" fontWeight="900" fontFamily="'Arial Black'">
+              120 / 80 mmHg
+            </text>
+          </g>
+
+          {/* VASOS SANGUÍNEOS DESINFLAMÁNDOSE (DERECHA) */}
+          <g transform="translate(840, 840)">
+            <rect x="-120" y="-140" width="240" height="260" rx="16" fill="#0F172A" stroke="#000000" strokeWidth="6" />
+            <text x="0" y="-105" textAnchor="middle" fill="#94A3B8" fontSize="14" fontWeight="900">
+              INFLAMACIÓN
+            </text>
+            {/* Vaso sanguíneo normal recuperado */}
+            <g transform="translate(0, -20)">
+              <rect x="-70" y="-20" width="140" height="40" rx="10" fill="#0284C7" stroke="#000000" strokeWidth="4" />
+              <text x="0" y="6" textAnchor="middle" fill="#FFFFFF" fontSize="13" fontWeight="900">
+                VASO RELAJADO
+              </text>
+            </g>
+            <rect x="-80" y="60" width="160" height="36" rx="6" fill="#0284C7" />
+            <text x="0" y="85" textAnchor="middle" fill="#FFFFFF" fontSize="17" fontWeight="900" fontFamily="'Arial Black'">
+              DESINFLAMADO
+            </text>
+          </g>
+
+          {/* LLUVIA DE CHISPAS TURQUESAS DE DOPAMINA */}
+          {[180, 340, 520, 700, 880].map((x, i) => (
+            <circle
+              key={`dopa_spark_${i}`}
+              cx={x}
+              cy={500 + ((f * 8 + i * 90) % 700)}
+              r="6"
+              fill="#2DD4BF"
+              stroke="#000000"
+              strokeWidth="2"
+            />
+          ))}
+
+          {/* Rótulo superior */}
+          <g transform="translate(140, 150)">
+            <rect x="0" y="0" width="800" height="74" rx="14" fill="#020617" stroke="#10B981" strokeWidth="5" />
+            <text x="400" y="48" textAnchor="middle" fill="#86EFAC" fontSize="23" fontWeight="900" fontFamily="'Arial Black', sans-serif">
+              REDUCE LA PRESIÓN, EL DOLOR Y LA INFLAMACIÓN
+            </text>
+          </g>
+        </svg>
+      </div>
+    );
+  }
+
+  // =========================================================================
+  // PLACEBO 6: CONSULTORIO - PLACEBO DE ETIQUETA ABIERTA (ESTO ES SOLO AZÚCAR)
+  // =========================================================================
+  if (escenario === "consultorio_placebo_etiqueta_abierta") {
+    const f = frame;
+    const circuitGlow = 0.5 + Math.sin(f * 0.2) * 0.4;
+
+    return (
+      <div className="absolute inset-0 pointer-events-none z-0 overflow-hidden bg-[#F0FDF4]">
+        <svg className="absolute inset-0 w-full h-full" viewBox="0 0 1080 1920" preserveAspectRatio="xMidYMid slice">
+          {/* Pared clínica con luz dorada de circuito abierto */}
+          <rect width="1080" height="1920" fill="#F8FAFC" />
+
+          {/* Piso clínico */}
+          <rect y="1360" width="1080" height="560" fill="#E2E8F0" stroke="#000000" strokeWidth="8" />
+
+          {/* MÉDICO EN LA DERECHA SOSTENIENDO LA CAJA DE PLACEBO ABIERTO */}
+          <g transform="translate(820, 960)">
+            {/* Cabeza médico */}
+            <circle cx="0" cy="-140" r="42" fill="#FFFFFF" stroke="#000000" strokeWidth="6" />
+            <path d="M -42,-140 Q 0,-190 42,-140 Z" fill="#10B981" stroke="#000000" strokeWidth="5" />
+            <path d="M -15,-120 Q 0,-110 15,-120" fill="none" stroke="#000000" strokeWidth="4" />
+            {/* Torso con bata */}
+            <rect x="-45" y="-90" width="90" height="200" rx="8" fill="#FFFFFF" stroke="#000000" strokeWidth="6" />
+            {/* Brazo ofreciendo la caja transparente de acrílico */}
+            <path d="M -45,-60 L -120,-10 L -120,40 L -45,10 Z" fill="#FFFFFF" stroke="#000000" strokeWidth="5" />
+          </g>
+
+          {/* CAJA TRANSPARENTE CON RÓTULO GIGANTE: "PLACEBO DE ETIQUETA ABIERTA" */}
+          <g transform="translate(540, 840)">
+            <rect x="-180" y="-110" width="360" height="220" rx="16" fill="#ECFDF5" stroke="#000000" strokeWidth="8" />
+            <rect x="-165" y="-95" width="330" height="40" rx="6" fill="#10B981" />
+            <text x="0" y="-68" textAnchor="middle" fill="#FFFFFF" fontSize="18" fontWeight="900" fontFamily="'Arial Black', sans-serif">
+              ENSAYO CLÍNICO HARVARD
+            </text>
+            {/* Letrero honesto */}
+            <rect x="-160" y="-45" width="320" height="135" rx="8" fill="#FFFFFF" stroke="#000000" strokeWidth="4" />
+            <text x="0" y="-12" textAnchor="middle" fill="#0F172A" fontSize="19" fontWeight="900" fontFamily="'Arial Black', sans-serif">
+              ESTO ES SOLO AZÚCAR
+            </text>
+            <text x="0" y="24" textAnchor="middle" fill="#DC2626" fontSize="24" fontWeight="900" fontFamily="'Arial Black', sans-serif">
+              NO CONTIENE FÁRMACO
+            </text>
+            <text x="0" y="65" textAnchor="middle" fill="#059669" fontSize="16" fontWeight="900" fontFamily="'Arial Black', sans-serif">
+              ¡Y EL CUERPO SE CURA IGUAL!
+            </text>
+          </g>
+
+          {/* RED DORADA EN EL ESPACIO DEMOSTRANDO QUE EL RITUAL DISPARA LAS ENDORFINAS */}
+          <g opacity={circuitGlow}>
+            {[
+              "M 200,600 Q 350,750 500,600",
+              "M 500,600 Q 650,450 850,650",
+              "M 300,1050 Q 540,920 780,1050",
+            ].map((d, idx) => (
+              <path key={`gold_circuit_${idx}`} d={d} fill="none" stroke="#F59E0B" strokeWidth="6" strokeDasharray="10 6" />
+            ))}
+          </g>
+
+          {/* Rótulo superior */}
+          <g transform="translate(140, 150)">
+            <rect x="0" y="0" width="800" height="74" rx="14" fill="#020617" stroke="#10B981" strokeWidth="5" />
+            <text x="400" y="48" textAnchor="middle" fill="#A7F3D0" fontSize="23" fontWeight="900" fontFamily="'Arial Black', sans-serif">
+              PLACEBO DE ETIQUETA ABIERTA: EL RITUAL CURA
+            </text>
+          </g>
+        </svg>
+      </div>
+    );
+  }
+
+  // =========================================================================
+  // PLACEBO 7: CIERRE TRIUNFAL - LA FARMACIA INTERNA Y VIÑETA DE IRIS
+  // =========================================================================
+  if (escenario === "consultorio_cierre_triunfal_iris") {
+    const f = frame;
+    // Iris circular animado al final (se cierra sobre la sien del Stickman en los últimos segundos)
+    const irisR = f > 240 ? Math.max(90, 1200 - (f - 240) * 26) : 1200;
+
+    return (
+      <div className="absolute inset-0 pointer-events-none z-0 overflow-hidden bg-[#FEF08A]">
+        <svg className="absolute inset-0 w-full h-full" viewBox="0 0 1080 1920" preserveAspectRatio="xMidYMid slice">
+          <defs>
+            <mask id="irisMask">
+              <rect width="1080" height="1920" fill="#FFFFFF" />
+              <circle cx="500" cy="850" r={irisR} fill="#000000" />
+            </mask>
+            <radialGradient id="sunExitLight" cx="80%" cy="50%" r="60%">
+              <stop offset="0%" stopColor="#FEF08A" stopOpacity="0.8" />
+              <stop offset="50%" stopColor="#FDE68A" stopOpacity="0.3" />
+              <stop offset="100%" stopColor="#F8FAFC" stopOpacity="0" />
+            </radialGradient>
+          </defs>
+
+          {/* Consultorio bañado de luz solar matutina */}
+          <rect width="1080" height="1920" fill="#F8FAFC" />
+          <rect width="1080" height="1920" fill="url(#sunExitLight)" />
+
+          {/* Puerta abierta del consultorio a la derecha con sol radiante */}
+          <g transform="translate(820, 700)">
+            <rect x="0" y="0" width="220" height="660" rx="8" fill="#FEF08A" stroke="#000000" strokeWidth="8" />
+            <line x1="20" y1="330" x2="35" y2="330" stroke="#000000" strokeWidth="6" strokeLinecap="round" />
+            <polygon points="0,0 220,0 220,660 0,660" fill="#FACC15" opacity={0.3} />
+          </g>
+
+          {/* Piso clínico */}
+          <rect y="1360" width="1080" height="560" fill="#E2E8F0" stroke="#000000" strokeWidth="8" />
+
+          {/* Camilla médica vacía en el fondo a la izquierda */}
+          <g transform="translate(80, 1180)">
+            <rect x="0" y="60" width="380" height="40" rx="8" fill="#0284C7" stroke="#000000" strokeWidth="6" />
+            <line x1="40" y1="100" x2="40" y2="180" stroke="#334155" strokeWidth="8" />
+            <line x1="340" y1="100" x2="340" y2="180" stroke="#334155" strokeWidth="8" />
+          </g>
+
+          {/* HALO DORADO DE RESPETO Y EMPODERAMIENTO ALREDEDOR DE LA CABEZA */}
+          <g transform="translate(500, 840)">
+            <circle cx="0" cy="0" r="160" fill="none" stroke="#F59E0B" strokeWidth="5" strokeDasharray="8 6" opacity={0.7} />
+            <circle cx="0" cy="0" r="220" fill="none" stroke="#FDE047" strokeWidth="3" strokeDasharray="12 8" opacity={0.5} />
+          </g>
+
+          {/* BANNER INSPIRADOR DE CIERRE */}
+          <g transform="translate(140, 360)">
+            <rect x="0" y="0" width="800" height="96" rx="14" fill="#020617" stroke="#F59E0B" strokeWidth="5" />
+            <text x="400" y="42" textAnchor="middle" fill="#FEF08A" fontSize="22" fontWeight="900" fontFamily="'Arial Black'">
+              LA MEJOR FARMACIA DEL PLANETA
+            </text>
+            <text x="400" y="76" textAnchor="middle" fill="#FFFFFF" fontSize="17" fontWeight="900" fontFamily="'Arial Black'">
+              SIEMPRE ESTUVO INSTALADA DENTRO DE TU CRÁNEO
+            </text>
+          </g>
+
+          {/* Rótulo superior */}
+          <g transform="translate(140, 150)">
+            <rect x="0" y="0" width="800" height="74" rx="14" fill="#020617" stroke="#F59E0B" strokeWidth="5" />
+            <text x="400" y="48" textAnchor="middle" fill="#FEF08A" fontSize="23" fontWeight="900" fontFamily="'Arial Black', sans-serif">
+              NUNCA SUBESTIMES A TU MENTE
+            </text>
+          </g>
+
+          {/* VIÑETA DE IRIS CIRCULAR DE CARICATURA AL CIERRE */}
+          {f > 240 && <rect width="1080" height="1920" fill="#000000" mask="url(#irisMask)" />}
+        </svg>
+      </div>
+    );
+  }
+
+  // =========================================================================
+  // EFECTO FOCO 1: PLAZA URBANA - TROPIEZO CON CAFÉ Y REFLECTOR TEATRAL ACUSADOR
+  // =========================================================================
+  if (escenario === "plaza_publica_tropiezo_foco") {
+    const f = frame;
+    const spotPulse = 0.85 + Math.sin(f * 0.25) * 0.15;
+    const sweatY = 640 + ((f * 6) % 180);
+
+    return (
+      <div className="absolute inset-0 pointer-events-none z-0 overflow-hidden bg-[#020617]">
+        <svg className="absolute inset-0 w-full h-full" viewBox="0 0 1080 1920" preserveAspectRatio="xMidYMid slice">
+          <defs>
+            <radialGradient id="spotlightHard" cx="50%" cy="30%" r="65%">
+              <stop offset="0%" stopColor="#FFFFFF" stopOpacity="0.95" />
+              <stop offset="35%" stopColor="#FEF08A" stopOpacity="0.75" />
+              <stop offset="70%" stopColor="#FACC15" stopOpacity="0.25" />
+              <stop offset="100%" stopColor="#020617" stopOpacity="0" />
+            </radialGradient>
+            <linearGradient id="beamCone" x1="0" y1="0" x2="0" y2="1">
+              <stop offset="0%" stopColor="#FFFFFF" stopOpacity="0.85" />
+              <stop offset="40%" stopColor="#FEF9C3" stopOpacity="0.45" />
+              <stop offset="100%" stopColor="#020617" stopOpacity="0.05" />
+            </linearGradient>
+          </defs>
+
+          {/* Plaza urbana en penumbra dramática */}
+          <rect width="1080" height="1920" fill="#090D16" />
+
+          {/* Fachadas de edificios y cafetería al fondo */}
+          <g opacity={0.35}>
+            <rect x="0" y="550" width="420" height="850" fill="#1E293B" stroke="#000000" strokeWidth="6" />
+            <rect x="660" y="500" width="420" height="900" fill="#1E293B" stroke="#000000" strokeWidth="6" />
+            {/* Toldo de cafetería a rayas */}
+            <path d="M 0,820 L 420,820 L 390,900 L 0,900 Z" fill="#DC2626" />
+            <line x1="100" y1="820" x2="90" y2="900" stroke="#FFFFFF" strokeWidth="12" />
+            <line x1="220" y1="820" x2="200" y2="900" stroke="#FFFFFF" strokeWidth="12" />
+            <line x1="330" y1="820" x2="310" y2="900" stroke="#FFFFFF" strokeWidth="12" />
+          </g>
+
+          {/* Pavimento y acera de adoquines */}
+          <rect y="1360" width="1080" height="560" fill="#334155" stroke="#000000" strokeWidth="8" />
+          <g opacity={0.3}>
+            {[1440, 1540, 1640, 1740, 1840].map((y) => (
+              <line key={`pave_${y}`} x1="0" y1={y} x2="1080" y2={y} stroke="#000000" strokeWidth="4" />
+            ))}
+          </g>
+
+          {/* Farola clásica de hierro forjado a la izquierda */}
+          <g transform="translate(160, 920)">
+            <rect x="-8" y="0" width="16" height="460" fill="#0F172A" stroke="#000000" strokeWidth="4" />
+            <path d="M -24,0 Q 0,-30 24,0 Z" fill="#0F172A" stroke="#000000" strokeWidth="4" />
+            <polygon points="-18,0 18,0 12,40 -12,40" fill="#FEF08A" stroke="#000000" strokeWidth="3" opacity={0.6} />
+          </g>
+
+          {/* COLOSAL HAZ DE LUZ TEATRAL (SPOTLIGHT CONICAL) DIRECTO AL CENTRO */}
+          <polygon points="540,0 140,1500 940,1500" fill="url(#beamCone)" />
+          {/* Elipse en el suelo delimitando la zona iluminada de juicio */}
+          <ellipse cx="540" cy="1400" rx={240 * spotPulse} ry={70 * spotPulse} fill="url(#spotlightHard)" opacity={0.8} />
+
+          {/* SILUETAS OSCURAS DE TRANSEÚNTES SEÑALANDO CON OJOS ACUSADORES */}
+          {/* Silueta izquierda */}
+          <g transform="translate(180, 1260)">
+            <circle cx="0" cy="-140" r="38" fill="#020617" stroke="#334155" strokeWidth="4" />
+            {/* Ojos gigantes acusadores */}
+            <ellipse cx="-10" cy="-140" rx="10" ry="7" fill="#FFFFFF" />
+            <circle cx="-6" cy="-140" r="4" fill="#EF4444" />
+            <ellipse cx="14" cy="-140" rx="10" ry="7" fill="#FFFFFF" />
+            <circle cx="18" cy="-140" r="4" fill="#EF4444" />
+            {/* Cuerpo y brazo extendido señalando con dedo índice */}
+            <path d="M -40,-90 L 40,-90 L 30,120 L -30,120 Z" fill="#020617" />
+            <line x1="20" y1="-70" x2="160" y2="-40" stroke="#020617" strokeWidth="16" strokeLinecap="round" />
+            <circle cx="160" cy="-40" r="8" fill="#020617" />
+          </g>
+
+          {/* Silueta derecha */}
+          <g transform="translate(900, 1260)">
+            <circle cx="0" cy="-140" r="38" fill="#020617" stroke="#334155" strokeWidth="4" />
+            <ellipse cx="-14" cy="-140" rx="10" ry="7" fill="#FFFFFF" />
+            <circle cx="-18" cy="-140" r="4" fill="#EF4444" />
+            <ellipse cx="10" cy="-140" rx="10" ry="7" fill="#FFFFFF" />
+            <circle cx="6" cy="-140" r="4" fill="#EF4444" />
+            <path d="M -40,-90 L 40,-90 L 30,120 L -30,120 Z" fill="#020617" />
+            <line x1="-20" y1="-70" x2="-160" y2="-40" stroke="#020617" strokeWidth="16" strokeLinecap="round" />
+            <circle cx="-160" cy="-40" r="8" fill="#020617" />
+          </g>
+
+          {/* Gotas de sudor frío cómico cayendo */}
+          <path d={`M 480,${sweatY} Q 484,${sweatY - 14} 488,${sweatY} A 4,4 0 0,1 480,${sweatY} Z`} fill="#38BDF8" stroke="#000000" strokeWidth="1.5" />
+          <path d={`M 600,${sweatY + 30} Q 604,${sweatY + 16} 608,${sweatY + 30} A 4,4 0 0,1 600,${sweatY + 30} Z`} fill="#38BDF8" stroke="#000000" strokeWidth="1.5" />
+
+          {/* Banner diegético superior */}
+          <g transform="translate(140, 150)">
+            <rect x="0" y="0" width="800" height="74" rx="14" fill="#020617" stroke="#EF4444" strokeWidth="5" />
+            <text x="400" y="48" textAnchor="middle" fill="#FFFFFF" fontSize="23" fontWeight="900" fontFamily="'Arial Black', sans-serif">
+              ¿SIENTES QUE TODOS TE ESTÁN MIRANDO?
+            </text>
+          </g>
+        </svg>
+      </div>
+    );
+  }
+
+  // =========================================================================
+  // EFECTO FOCO 2: PLAZA - PERSECUCIÓN DEL FOCO Y REVELACIÓN DEL CASCO PROPIO
+  // =========================================================================
+  if (escenario === "plaza_publica_persecucion_casco_foco") {
+    const f = frame;
+    // Haz de reflector persiguiendo dinámicamente al Stickman en sus carreras
+    let beamTargetX = 540;
+    if (f < 82) {
+      // Carrera 1 hacia la derecha (de canvas X 220 a 760)
+      const t = f / 82;
+      beamTargetX = 220 + t * 540;
+    } else if (f < 160) {
+      // Carrera 2 hacia la izquierda (de canvas X 760 a 410)
+      const t = (f - 82) / 78;
+      beamTargetX = 760 - t * 350;
+    } else {
+      // Se frena y se señala la cabeza (centrado en canvas X = 420)
+      beamTargetX = 420 + Math.sin(f * 0.15) * 12;
+    }
+
+    const arrowOpacity = f >= 150 ? Math.min(1, (f - 150) * 0.1) : 0;
+
+    return (
+      <div className="absolute inset-0 pointer-events-none z-0 overflow-hidden bg-[#0A071E]">
+        <svg className="absolute inset-0 w-full h-full" viewBox="0 0 1080 1920" preserveAspectRatio="xMidYMid slice">
+          <defs>
+            <linearGradient id="neonGlow" x1="0" y1="0" x2="1" y2="0">
+              <stop offset="0%" stopColor="#EC4899" />
+              <stop offset="50%" stopColor="#8B5CF6" />
+              <stop offset="100%" stopColor="#06B6D4" />
+            </linearGradient>
+            <linearGradient id="farolaGlow" x1="0" y1="0" x2="0" y2="1">
+              <stop offset="0%" stopColor="#FEF08A" stopOpacity="0.85" />
+              <stop offset="40%" stopColor="#FDE047" stopOpacity="0.55" />
+              <stop offset="100%" stopColor="#FACC15" stopOpacity="0.32" />
+            </linearGradient>
+          </defs>
+
+          {/* Fondo nocturno urbano */}
+          <rect width="1080" height="1920" fill="#0B0914" />
+
+          {/* Acera urbana con adoquines */}
+          <rect y="1380" width="1080" height="540" fill="#1E293B" stroke="#000000" strokeWidth="8" />
+
+          {/* HAZ DE LUZ CÓNICO EMERGIENDO DIRECTAMENTE DE LA FAROLA */}
+          <polygon points={`495,626 585,626 ${beamTargetX + 260},1400 ${beamTargetX - 260},1400`} fill="url(#farolaGlow)" />
+
+          {/* GRAN FAROLA URBANA CLÁSICA */}
+          {/* Poste de hierro */}
+          <line x1="540" y1="630" x2="540" y2="1380" stroke="#334155" strokeWidth="22" strokeLinecap="round" />
+          <line x1="540" y1="630" x2="540" y2="1380" stroke="#000000" strokeWidth="6" />
+          {/* Base ornamentada de hierro fundido */}
+          <rect x="490" y="1310" width="100" height="70" rx="8" fill="#0F172A" stroke="#000000" strokeWidth="6" />
+          <rect x="505" y="1285" width="70" height="25" rx="4" fill="#1E293B" stroke="#000000" strokeWidth="5" />
+          {/* Farol / Linterna gigante */}
+          <g>
+            {/* Halo radiante de luz alrededor del farol */}
+            <circle cx="540" cy="565" r="95" fill="#FDE047" opacity="0.35" />
+            <circle cx="540" cy="565" r="140" fill="#FACC15" opacity="0.18" />
+            {/* Techo / Cúpula de hierro */}
+            <path d="M 465,510 L 540,430 L 615,510 Z" fill="#0F172A" stroke="#000000" strokeWidth="6" strokeLinejoin="round" />
+            <circle cx="540" cy="425" r="11" fill="#F59E0B" stroke="#000000" strokeWidth="4" />
+            {/* Cristal del farol iluminado en amarillo cálido */}
+            <polygon points="475,510 605,510 580,626 500,626" fill="#FEF08A" stroke="#000000" strokeWidth="6" strokeLinejoin="round" />
+            {/* Bombilla interior brillante */}
+            <circle cx="540" cy="565" r="26" fill="#FFFFFF" />
+            <circle cx="540" cy="565" r="38" fill="#FDE047" opacity="0.65" />
+            {/* Base del farol */}
+            <rect x="490" y="626" width="100" height="18" rx="4" fill="#0F172A" stroke="#000000" strokeWidth="5" />
+          </g>
+          {/* Mancha de luz elíptica sobre el pavimento siguiendo sus pies */}
+          <ellipse cx={beamTargetX} cy={1400} rx={220} ry={42} fill="#FDE047" opacity={0.42} />
+
+          {/* LETRERO DE NEÓN CONCEPTUAL GIGANTE */}
+          <g transform="translate(140, 320)">
+            <rect x="0" y="0" width="800" height="120" rx="16" fill="#020617" stroke="#A855F7" strokeWidth="6" />
+            <text x="400" y="55" textAnchor="middle" fill="#F472B6" fontSize="32" fontWeight="900" fontFamily="'Arial Black', sans-serif">
+              EFECTO FOCO
+            </text>
+            <text x="400" y="98" textAnchor="middle" fill="#38BDF8" fontSize="22" fontWeight="900" fontFamily="'Arial Black', sans-serif">
+              (SPOTLIGHT EFFECT)
+            </text>
+          </g>
+
+          {/* FLECHA DIEGÉTICA APUNTANDO AL CASCO CUANDO SE FRENA */}
+          {arrowOpacity > 0 && (
+            <g transform="translate(640, 780)" opacity={arrowOpacity}>
+              <path d="M 0,0 L 50,-40 L 50,-15 L 140,-15 L 140,15 L 50,15 L 50,40 Z" fill="#FACC15" stroke="#000000" strokeWidth="4" />
+              <text x="230" y="8" textAnchor="middle" fill="#FACC15" fontSize="17" fontWeight="900" fontFamily="'Arial Black'">
+                ¡EL FOCO ES TUYO!
+              </text>
+            </g>
+          )}
+
+          {/* Rótulo superior */}
+          <g transform="translate(140, 150)">
+            <rect x="0" y="0" width="800" height="74" rx="14" fill="#020617" stroke="#A855F7" strokeWidth="5" />
+            <text x="400" y="48" textAnchor="middle" fill="#E879F9" fontSize="23" fontWeight="900" fontFamily="'Arial Black', sans-serif">
+              TRANQUILO: NO ERES TAN IMPORTANTE
+            </text>
+          </g>
+        </svg>
+      </div>
+    );
+  }
+
+  // =========================================================================
+  // EFECTO FOCO 3: AULA UNIVERSITARIA - BARRY MANILOW Y MIEDO AL RIDÍCULO
+  // =========================================================================
+
+
+  if (escenario === "aula_universitaria_barry_manilow") {
+    const f = frame;
+    const doorAngle = Math.min(35, f * 1.5);
+    const clockTick = Math.floor(f / 30) % 2 === 0;
+    const doorLeafX = 14 + Math.min(48, doorAngle * 1.4);
+
+    return (
+      <div className="absolute inset-0 pointer-events-none z-0 overflow-hidden bg-[#FEF3C7]">
+        <svg className="absolute inset-0 w-full h-full" viewBox="0 0 1080 1920" preserveAspectRatio="xMidYMid slice">
+          {/* Pared académica clara */}
+          <rect width="1080" height="1920" fill="#FDF6B2" />
+
+          {/* Suelo del aula: baldosas de linóleo académico claro */}
+          <rect y="1120" width="1080" height="800" fill="#E2E8F0" />
+          <line x1="0" y1="1120" x2="1080" y2="1120" stroke="#000000" strokeWidth="8" />
+          {/* Rodapié oscuro */}
+          <rect y="1108" width="1080" height="14" fill="#334155" stroke="#000000" strokeWidth="3" />
+          {/* Cuadrícula de baldosas en el suelo */}
+          {[0, 180, 360, 540, 720, 900, 1080].map((tx) => (
+            <line key={`tile_v_${tx}`} x1={tx} y1="1120" x2={tx} y2="1920" stroke="#CBD5E1" strokeWidth="3" />
+          ))}
+          {[1260, 1400, 1540, 1680, 1820].map((ty) => (
+            <line key={`tile_h_${ty}`} x1="0" y1={ty} x2="1080" y2={ty} stroke="#CBD5E1" strokeWidth="3" />
+          ))}
+
+          {/* Rótulo superior del experimento */}
+          <g transform="translate(140, 140)">
+            <rect x="0" y="0" width="800" height="72" rx="14" fill="#020617" stroke="#F59E0B" strokeWidth="5" />
+            <text x="400" y="47" textAnchor="middle" fill="#FEF08A" fontSize="23" fontWeight="900" fontFamily="'Arial Black', sans-serif">
+              EL EXPERIMENTO DE LA CAMISETA VERGONZOSA
+            </text>
+          </g>
+
+          {/* RELOJ DE PARED REDONDO ANALÓGICO ARRIBA DE LA PUERTA */}
+          <g transform="translate(125, 275)">
+            <circle cx="0" cy="0" r="42" fill="#FFFFFF" stroke="#000000" strokeWidth="6" />
+            <line x1="0" y1="0" x2="0" y2="-26" stroke="#000000" strokeWidth="5" strokeLinecap="round" />
+            <line x1="0" y1="0" x2={clockTick ? "18" : "14"} y2="10" stroke="#DC2626" strokeWidth="3" strokeLinecap="round" />
+            <circle cx="0" cy="0" r="4" fill="#000000" />
+          </g>
+
+          {/* PUERTA DE ENTRADA AL AULA (CLARAMENTE VISIBLE A LA IZQUIERDA) */}
+          <g transform="translate(25, 380)">
+            {/* Letrero sobre la puerta */}
+            <rect x="0" y="-46" width="185" height="38" rx="6" fill="#0F172A" stroke="#000000" strokeWidth="3.5" />
+            <text x="92" y="-22" textAnchor="middle" fill="#FEF08A" fontSize="13" fontWeight="900" fontFamily="'Arial Black', sans-serif">
+              AULA 101 · ENTRADA
+            </text>
+
+            {/* Marco exterior de madera de la puerta */}
+            <rect x="0" y="0" width="185" height="740" rx="6" fill="#3E1608" stroke="#000000" strokeWidth="8" />
+
+            {/* Vano interior hacia el pasillo iluminado */}
+            <rect x="14" y="14" width="157" height="712" fill="#1E293B" stroke="#000000" strokeWidth="4" />
+            {/* Luz proyectada desde el pasillo al suelo */}
+            <polygon points="14,14 171,14 171,726 14,726" fill="#0F172A" />
+            <polygon points="14,340 171,280 171,726 14,726" fill="#FEF3C7" opacity="0.28" />
+
+            {/* Hoja de madera de la puerta abierta hacia el aula */}
+            <polygon
+              points={`14,14 ${doorLeafX},32 ${doorLeafX},708 14,726`}
+              fill="#92400E"
+              stroke="#000000"
+              strokeWidth="5"
+            />
+            {/* Relieve y moldura de paneles en la puerta */}
+            <polygon
+              points={`20,40 ${doorLeafX - 6},52 ${doorLeafX - 6},320 20,326`}
+              fill="#78350F"
+              stroke="#000000"
+              strokeWidth="3"
+            />
+            <polygon
+              points={`20,360 ${doorLeafX - 6},370 ${doorLeafX - 6},650 20,660`}
+              fill="#78350F"
+              stroke="#000000"
+              strokeWidth="3"
+            />
+
+            {/* Picaporte / Manija dorada de latón con brillo */}
+            <circle cx={doorLeafX - 5} cy="360" r="8" fill="#FACC15" stroke="#000000" strokeWidth="2.5" />
+            <rect x={doorLeafX - 16} y="356" width="12" height="8" rx="2" fill="#CA8A04" stroke="#000000" strokeWidth="2" />
+          </g>
+
+          {/* PIZARRÓN VERDE PRINCIPAL CON EXPLICACIÓN VISUAL DE BARRY MANILOW */}
+          <g transform="translate(230, 380)">
+            {/* Marco y fondo del pizarrón */}
+            <rect x="0" y="0" width="825" height="660" rx="14" fill="#064E3B" stroke="#92400E" strokeWidth="12" />
+            <rect x="10" y="10" width="805" height="640" rx="8" fill="none" stroke="#047857" strokeWidth="3" />
+
+            {/* Cabecera académica */}
+            <text x="412" y="48" textAnchor="middle" fill="#FFFFFF" fontSize="21" fontWeight="900" fontFamily="'Arial Black', sans-serif">
+              CORNELL UNIVERSITY (2000) · EXP. DE THOMAS GILOVICH
+            </text>
+            <line x1="40" y1="62" x2="785" y2="62" stroke="#A7F3D0" strokeWidth="2" strokeDasharray="8 6" />
+
+            {/* PANEL IZQUIERDO: ¿QUIÉN ES BARRY MANILOW? */}
+            <g transform="translate(18, 76)">
+              {/* Tarjeta tipo póster ilustrado */}
+              <rect x="0" y="0" width="380" height="465" rx="14" fill="#F8FAFC" stroke="#000000" strokeWidth="6" />
+              {/* Cinta adhesiva en esquinas */}
+              <rect x="10" y="-8" width="50" height="20" fill="rgba(254, 240, 138, 0.85)" stroke="#000000" strokeWidth="2" transform="rotate(-15 35 2)" />
+              <rect x="320" y="-8" width="50" height="20" fill="rgba(254, 240, 138, 0.85)" stroke="#000000" strokeWidth="2" transform="rotate(15 345 2)" />
+
+              {/* Rótulo de identificación */}
+              <rect x="16" y="16" width="348" height="40" rx="8" fill="#EF4444" stroke="#000000" strokeWidth="3.5" />
+              <text x="190" y="43" textAnchor="middle" fill="#FFFFFF" fontSize="17" fontWeight="900" fontFamily="'Arial Black', sans-serif">
+                ¿QUIÉN ES BARRY MANILOW?
+              </text>
+
+              {/* Retrato circular del cantante pop de los 70 */}
+              <g transform="translate(190, 155)">
+                <circle cx="0" cy="0" r="70" fill="#FEF08A" stroke="#000000" strokeWidth="5" />
+                {/* Melena dorada setentera con volumen */}
+                <path d="M -56,12 Q -65,-45 0,-48 Q 65,-45 56,12 Q 40,-20 0,-22 Q -40,-20 -56,12 Z" fill="#EAB308" stroke="#000000" strokeWidth="3" />
+                <path d="M -44,2 Q -52,-30 0,-34 Q 52,-30 44,2 Q 30,-14 0,-16 Q -30,-14 -44,2 Z" fill="#FDE047" />
+                {/* Rostro sonriente */}
+                <circle cx="0" cy="10" r="38" fill="#FED7AA" stroke="#000000" strokeWidth="3.5" />
+                {/* Cabello flequillo */}
+                <path d="M -30,-6 Q -34,-20 0,-22 Q 34,-20 30,-6 Q 16,-14 0,-14 Q -16,-14 -30,-6 Z" fill="#FDE047" stroke="#000000" strokeWidth="2.5" />
+                {/* Ojos guiñando */}
+                <path d="M -18,6 Q -12,-2 -6,6" fill="none" stroke="#000000" strokeWidth="3.5" strokeLinecap="round" />
+                <path d="M 6,6 Q 12,-2 18,6" fill="none" stroke="#000000" strokeWidth="3.5" strokeLinecap="round" />
+                <ellipse cx="0" cy="14" rx="4" ry="7" fill="#FDBA74" />
+                {/* Sonrisa enorme con dientes blancos */}
+                <path d="M -20,22 Q 0,44 20,22 Z" fill="#FFFFFF" stroke="#000000" strokeWidth="3" />
+                <line x1="0" y1="24" x2="0" y2="34" stroke="#CBD5E1" strokeWidth="2" />
+                {/* Destello estrella pop */}
+                <polygon points="46,-24 49,-16 57,-14 49,-12 46,-4 43,-12 35,-14 43,-16" fill="#F59E0B" stroke="#000000" strokeWidth="1.5" />
+                {/* Micrófono retro */}
+                <rect x="-42" y="32" width="16" height="24" rx="8" fill="#94A3B8" stroke="#000000" strokeWidth="2" />
+                <line x1="-34" y1="56" x2="-34" y2="70" stroke="#000000" strokeWidth="3" />
+              </g>
+
+              {/* Subtítulos de éxitos */}
+              <text x="190" y="254" textAnchor="middle" fill="#991B1B" fontSize="16" fontWeight="900" fontFamily="'Arial Black', sans-serif">
+                ÍCONO POP DE LOS 70
+              </text>
+              <text x="190" y="278" textAnchor="middle" fill="#2563EB" fontSize="14" fontWeight="800">
+                ♪ «MANDY» · «COPACABANA» ♪
+              </text>
+
+              {/* Explicación del contexto de Cornell */}
+              <rect x="14" y="300" width="352" height="145" rx="10" fill="#FEF3C7" stroke="#B45309" strokeWidth="3" />
+              <text x="190" y="328" textAnchor="middle" fill="#92400E" fontSize="14" fontWeight="900" fontFamily="'Arial Black', sans-serif">
+                ¿POR QUÉ LA CAMISETA?
+              </text>
+              <text x="190" y="356" textAnchor="middle" fill="#1E293B" fontSize="13" fontWeight="800">
+                Para los universitarios del 2000,
+              </text>
+              <text x="190" y="382" textAnchor="middle" fill="#DC2626" fontSize="14" fontWeight="900" fontFamily="'Arial Black', sans-serif">
+                ¡era la música más "anticool"
+              </text>
+              <text x="190" y="408" textAnchor="middle" fill="#DC2626" fontSize="14" fontWeight="900" fontFamily="'Arial Black', sans-serif">
+                y cursi del planeta!
+              </text>
+            </g>
+
+            {/* PANEL DERECHO: LA CAMISETA DEL EXPERIMENTO */}
+            <g transform="translate(418, 76)">
+              <rect x="0" y="0" width="388" height="465" rx="14" fill="#F8FAFC" stroke="#000000" strokeWidth="6" />
+              <rect x="10" y="-8" width="50" height="20" fill="rgba(254, 240, 138, 0.85)" stroke="#000000" strokeWidth="2" transform="rotate(-15 35 2)" />
+              <rect x="328" y="-8" width="50" height="20" fill="rgba(254, 240, 138, 0.85)" stroke="#000000" strokeWidth="2" transform="rotate(15 353 2)" />
+
+              {/* Rótulo de la camiseta */}
+              <rect x="16" y="16" width="356" height="40" rx="8" fill="#F59E0B" stroke="#000000" strokeWidth="3.5" />
+              <text x="194" y="43" textAnchor="middle" fill="#000000" fontSize="17" fontWeight="900" fontFamily="'Arial Black', sans-serif">
+                LA CAMISETA VERGONZOSA
+              </text>
+
+              {/* ILUSTRACIÓN GIGANTE DE LA CAMISETA AMARILLA KITSCH */}
+              <g transform="translate(194, 195)">
+                {/* Silueta de la camiseta amarilla estridente */}
+                <path
+                  d="M -50,-90 L -125,-75 L -165,15 L -115,30 L -105,150 L 105,150 L 115,30 L 165,15 L 125,-75 L 50,-90 Z"
+                  fill="#FDE047"
+                  stroke="#000000"
+                  strokeWidth="7"
+                  strokeLinejoin="round"
+                />
+                {/* Cuello acanalado */}
+                <path d="M -48,-90 Q 0,-50 48,-90" fill="#FEF08A" stroke="#000000" strokeWidth="5" />
+
+                {/* Estampado de letras arqueadas BARRY MANILOW */}
+                <text
+                  x="0"
+                  y="-10"
+                  textAnchor="middle"
+                  fill="#DC2626"
+                  fontSize="22"
+                  fontWeight="900"
+                  fontFamily="'Arial Black', sans-serif"
+                  stroke="#FFFFFF"
+                  strokeWidth="1.5"
+                >
+                  BARRY MANILOW
+                </text>
+
+                {/* Marco del estampado en el pecho */}
+                <rect x="-55" y="8" width="110" height="105" rx="10" fill="#F43F5E" stroke="#000000" strokeWidth="4" />
+                {/* Cabello rubio del estampado */}
+                <path d="M -44,60 Q -50,15 0,14 Q 50,15 44,60 Q 30,24 0,22 Q -30,24 -44,60 Z" fill="#FBBF24" stroke="#000000" strokeWidth="2.5" />
+                {/* Cara estampada */}
+                <circle cx="0" cy="56" r="28" fill="#FED7AA" stroke="#000000" strokeWidth="2.5" />
+                <path d="M -14,48 Q -8,42 -2,48" fill="none" stroke="#000000" strokeWidth="2.5" strokeLinecap="round" />
+                <path d="M 2,48 Q 8,42 14,48" fill="none" stroke="#000000" strokeWidth="2.5" strokeLinecap="round" />
+                <path d="M -15,66 Q 0,85 15,66 Z" fill="#FFFFFF" stroke="#000000" strokeWidth="2.5" />
+                <text x="0" y="102" textAnchor="middle" fill="#FFFFFF" fontSize="13" fontWeight="900" fontFamily="'Arial Black', sans-serif">
+                  «MANDY»
+                </text>
+              </g>
+
+              {/* Rótulo de la prueba psicológica */}
+              <rect x="16" y="375" width="356" height="68" rx="8" fill="#FEE2E2" stroke="#DC2626" strokeWidth="3" />
+              <text x="194" y="403" textAnchor="middle" fill="#991B1B" fontSize="14" fontWeight="900" fontFamily="'Arial Black', sans-serif">
+                PRUEBA: Entrar al salón de clases
+              </text>
+              <text x="194" y="427" textAnchor="middle" fill="#991B1B" fontSize="13" fontWeight="800">
+                con esta camiseta puesta ante todos.
+              </text>
+            </g>
+
+            {/* Texto de pie de pizarrón en tiza */}
+            <text x="412" y="605" textAnchor="middle" fill="#A7F3D0" fontSize="18" fontWeight="800" fontFamily="'Arial Black', sans-serif">
+              ✎ Predicción del alumno: «¡El 100% me va a mirar y se burlará de mí!»
+            </text>
+          </g>
+        </svg>
+      </div>
+    );
+  }
+
+    // EFECTO FOCO 4: AULA - GRÁFICOS DE PASTEL: 50% ESPERADO VS 23% REAL
+  // =========================================================================
+  if (escenario === "aula_comparativa_graficos_pastel") {
+    const f = frame;
+    const popScale = Math.min(1, f * 0.1);
+
+    return (
+      <div className="absolute inset-0 pointer-events-none z-0 overflow-hidden bg-[#0F172A]">
+        <svg className="absolute inset-0 w-full h-full" viewBox="0 0 1080 1920" preserveAspectRatio="xMidYMid slice">
+          {/* Fondo sobrio dividido con cuadrícula */}
+          <rect width="1080" height="1920" fill="#0F172A" />
+
+          {/* PANTALLA DIVIDIDA: GRÁFICO ROJO (PARANOIA) VS VERDE (REALIDAD) */}
+          {/* LADO IZQUIERDO: 50% CREÍAN QUE SE BURLABAN */}
+          <g transform={`translate(280, 780) scale(${popScale})`}>
+            {/* Tarjeta oscura con borde rojo */}
+            <rect x="-210" y="-220" width="420" height="440" rx="20" fill="#1E293B" stroke="#EF4444" strokeWidth="7" />
+            <text x="0" y="-160" textAnchor="middle" fill="#FCA5A5" fontSize="20" fontWeight="900" fontFamily="'Arial Black'">
+              PREDICCIÓN
+            </text>
+            <text x="0" y="-130" textAnchor="middle" fill="#FFFFFF" fontSize="16" fontWeight="800">
+              «LA MITAD ME JUZGÓ»
+            </text>
+            {/* Gráfico de pastel rojo 50% */}
+            <circle cx="0" cy="10" r="100" fill="#334155" stroke="#000000" strokeWidth="6" />
+            <path d="M 0,-90 A 100,100 0 0,1 0,110 Z" fill="#EF4444" stroke="#000000" strokeWidth="4" />
+            <text x="0" y="24" textAnchor="middle" fill="#FFFFFF" fontSize="48" fontWeight="900" fontFamily="'Arial Black'">
+              50%
+            </text>
+            <rect x="-160" y="140" width="320" height="42" rx="8" fill="#7F1D1D" />
+            <text x="0" y="168" textAnchor="middle" fill="#FECACA" fontSize="16" fontWeight="900">
+              PARANOIA EGOCÉNTRICA
+            </text>
+          </g>
+
+          {/* LADO DERECHO: 23% REAL QUE SE ENTERÓ */}
+          <g transform={`translate(800, 780) scale(${popScale})`}>
+            <rect x="-210" y="-220" width="420" height="440" rx="20" fill="#1E293B" stroke="#22C55E" strokeWidth="7" />
+            <text x="0" y="-160" textAnchor="middle" fill="#86EFAC" fontSize="20" fontWeight="900" fontFamily="'Arial Black'">
+              REALIDAD MEDIDA
+            </text>
+            <text x="0" y="-130" textAnchor="middle" fill="#FFFFFF" fontSize="16" fontWeight="800">
+              «MENOS DE 1 DE CADA 4»
+            </text>
+            {/* Gráfico de pastel verde 23% */}
+            <circle cx="0" cy="10" r="100" fill="#334155" stroke="#000000" strokeWidth="6" />
+            {/* Cuña del 23% (aprox 83 grados) */}
+            <path d="M 0,-90 A 100,100 0 0,1 98,28 L 0,10 Z" fill="#22C55E" stroke="#000000" strokeWidth="4" />
+            <text x="0" y="24" textAnchor="middle" fill="#FFFFFF" fontSize="48" fontWeight="900" fontFamily="'Arial Black'">
+              23%
+            </text>
+            <rect x="-160" y="140" width="320" height="42" rx="8" fill="#14532D" />
+            <text x="0" y="168" textAnchor="middle" fill="#BBF7D0" fontSize="16" fontWeight="900">
+              CASI NADIE LO NOTÓ
+            </text>
+          </g>
+
+          {/* ESTUDIANTES DISTRAÍDOS EN SUS PUPITRES (PARTE INFERIOR) */}
+          <g transform="translate(180, 1420)">
+            {/* Estudiante 1 bostezando */}
+            <circle cx="0" cy="0" r="32" fill="#64748B" stroke="#000000" strokeWidth="4" />
+            <ellipse cx="0" cy="8" rx="8" ry="12" fill="#000000" />
+            <text x="0" y="60" textAnchor="middle" fill="#94A3B8" fontSize="13" fontWeight="800">
+              Bostezando
+            </text>
+          </g>
+          <g transform="translate(540, 1420)">
+            {/* Estudiante 2 dibujando en su libreta */}
+            <circle cx="0" cy="0" r="32" fill="#64748B" stroke="#000000" strokeWidth="4" />
+            <rect x="-18" y="20" width="36" height="26" fill="#F8FAFC" stroke="#000000" strokeWidth="2" />
+            <text x="0" y="60" textAnchor="middle" fill="#94A3B8" fontSize="13" fontWeight="800">
+              Dibujando garabatos
+            </text>
+          </g>
+          <g transform="translate(900, 1420)">
+            {/* Estudiante 3 mirando su propio zapato */}
+            <circle cx="0" cy="0" r="32" fill="#64748B" stroke="#000000" strokeWidth="4" />
+            <text x="0" y="60" textAnchor="middle" fill="#94A3B8" fontSize="13" fontWeight="800">
+              Pensando en el almuerzo
+            </text>
+          </g>
+
+          {/* Rótulo superior */}
+          <g transform="translate(140, 150)">
+            <rect x="0" y="0" width="800" height="74" rx="14" fill="#020617" stroke="#22C55E" strokeWidth="5" />
+            <text x="400" y="48" textAnchor="middle" fill="#86EFAC" fontSize="23" fontWeight="900" fontFamily="'Arial Black', sans-serif">
+              ¿LA REALIDAD? MENOS DEL 23% SIQUIERA LO NOTÓ
+            </text>
+          </g>
+        </svg>
+      </div>
+    );
+  }
+
+  // =========================================================================
+  // EFECTO FOCO 5: CINE MENTAL - LA SALA EGOCÉNTRICA EN BUCLE
+  // =========================================================================
+  if (escenario === "cine_mental_sala_egocentrica") {
+    const f = frame;
+    const projectorFlicker = 0.75 + Math.sin(f * 0.4) * 0.25;
+
+    return (
+      <div className="absolute inset-0 pointer-events-none z-0 overflow-hidden bg-[#05050A]">
+        <svg className="absolute inset-0 w-full h-full" viewBox="0 0 1080 1920" preserveAspectRatio="xMidYMid slice">
+          <defs>
+            <linearGradient id="projectorBeam" x1="0" y1="0" x2="0" y2="1">
+              <stop offset="0%" stopColor="#FFFFFF" stopOpacity="0.8" />
+              <stop offset="60%" stopColor="#38BDF8" stopOpacity="0.3" />
+              <stop offset="100%" stopColor="#05050A" stopOpacity="0.05" />
+            </linearGradient>
+          </defs>
+
+          {/* Sala de cine mental oscura con cortinas de terciopelo morado */}
+          <rect width="1080" height="1920" fill="#05050A" />
+          <path d="M 0,300 Q 120,400 120,1500 L 0,1500 Z" fill="#4C1D95" stroke="#000000" strokeWidth="6" />
+          <path d="M 1080,300 Q 960,400 960,1500 L 1080,1500 Z" fill="#4C1D95" stroke="#000000" strokeWidth="6" />
+
+          {/* HAZ DE LUZ DEL PROYECTOR DESDE ARRIBA */}
+          <polygon points="540,150 160,820 920,820" fill="url(#projectorBeam)" opacity={projectorFlicker} />
+
+          {/* PANTALLA GIGANTE DE CINE CON SU PROPIA CARA EN ALTA DEFINICIÓN */}
+          <g transform="translate(540, 680)">
+            <rect x="-380" y="-220" width="760" height="420" rx="16" fill="#1E1B4B" stroke="#EC4899" strokeWidth="8" />
+            {/* Pantalla proyectando su propia cara con lupa egocéntrica */}
+            <circle cx="0" cy="-20" r="110" fill="#FEF08A" stroke="#000000" strokeWidth="6" />
+            <circle cx="-35" cy="-35" r="14" fill="#000000" />
+            <circle cx="35" cy="-35" r="14" fill="#000000" />
+            <path d="M -40,30 Q 0,70 40,30" fill="none" stroke="#000000" strokeWidth="8" strokeLinecap="round" />
+            {/* Texto en la pantalla: "MI VIDA 24/7 EN VIVO" */}
+            <rect x="-240" y="120" width="480" height="45" rx="8" fill="#EC4899" />
+            <text x="0" y="152" textAnchor="middle" fill="#FFFFFF" fontSize="20" fontWeight="900" fontFamily="'Arial Black'">
+              «PROTAGONISTA DE TU PROPIA PELÍCULA»
+            </text>
+          </g>
+
+          {/* BUTACA DE CINE SOLITARIA EN PRIMERA FILA (PARTE INFERIOR) */}
+          <g transform="translate(540, 1380)">
+            {/* Respaldo acolchado de terciopelo rojo */}
+            <rect x="-140" y="-120" width="280" height="220" rx="20" fill="#DC2626" stroke="#000000" strokeWidth="8" />
+            <line x1="-140" y1="-20" x2="140" y2="-20" stroke="#7F1D1D" strokeWidth="6" />
+            {/* Reposabrazos */}
+            <rect x="-170" y="-40" width="30" height="140" rx="8" fill="#991B1B" stroke="#000000" strokeWidth="5" />
+            <rect x="140" y="-40" width="30" height="140" rx="8" fill="#991B1B" stroke="#000000" strokeWidth="5" />
+            <text x="0" y="60" textAnchor="middle" fill="#FCA5A5" fontSize="16" fontWeight="900">
+              BUTACA VIP (SOLO TÚ)
+            </text>
+          </g>
+
+          {/* Rótulo superior */}
+          <g transform="translate(140, 150)">
+            <rect x="0" y="0" width="800" height="74" rx="14" fill="#020617" stroke="#EC4899" strokeWidth="5" />
+            <text x="400" y="48" textAnchor="middle" fill="#F472B6" fontSize="23" fontWeight="900" fontFamily="'Arial Black', sans-serif">
+              ESTÁS HIPERCONSCIENTE DE TI MISMO LAS 24 HORAS
+            </text>
+          </g>
+        </svg>
+      </div>
+    );
+  }
+
+  // =========================================================================
+  // EFECTO FOCO 6: PLAZA - LA MULTITUD CON SUS PROPIOS FOCOS E INSEGURIDADES
+  // =========================================================================
+  if (escenario === "plaza_multitud_focos_inseguridades") {
+    const f = frame;
+    const bulbBounce = Math.sin(f * 0.2) * 4;
+
+    return (
+      <div className="absolute inset-0 pointer-events-none z-0 overflow-hidden bg-[#FEF9C3]">
+        <svg className="absolute inset-0 w-full h-full" viewBox="0 0 1080 1920" preserveAspectRatio="xMidYMid slice">
+          {/* Plaza soleada abierta con adoquines */}
+          <rect width="1080" height="1920" fill="#F8FAFC" />
+          <rect y="1300" width="1080" height="620" fill="#E2E8F0" stroke="#000000" strokeWidth="8" />
+
+          {/* Farolas urbanas decorativas */}
+          <line x1="200" y1="900" x2="200" y2="1350" stroke="#475569" strokeWidth="8" />
+          <line x1="880" y1="900" x2="880" y2="1350" stroke="#475569" strokeWidth="8" />
+
+          {/* PERSONA 1 (IZQUIERDA): CHICA CON FOCO Y BOCADILLO "¡MI GRANO!" */}
+          <g transform={`translate(220, 1020)`}>
+            {/* Cono de luz sobre su cabeza */}
+            <polygon points="0,-220 -80,180 80,180" fill="#FEF08A" opacity={0.4} />
+            <circle cx="0" cy="-220" r="16" fill="#FACC15" stroke="#000000" strokeWidth="4" />
+            {/* Silueta de la chica */}
+            <circle cx="0" cy="-60" r="32" fill="#E2E8F0" stroke="#000000" strokeWidth="5" />
+            <path d="M -35,-20 L 35,-20 L 40,160 L -40,160 Z" fill="#F43F5E" stroke="#000000" strokeWidth="5" />
+            {/* Nube de pensamiento: grano */}
+            <g transform="translate(0, -130)">
+              <ellipse cx="0" cy="0" rx="70" ry="42" fill="#FFFFFF" stroke="#000000" strokeWidth="4" />
+              <circle cx="0" cy="-5" r="10" fill="#EF4444" />
+              <text x="0" y="24" textAnchor="middle" fill="#000000" fontSize="12" fontWeight="900">
+                «¿SE VE MI GRANO?»
+              </text>
+            </g>
+          </g>
+
+          {/* PERSONA 2 (CENTRO DERECHA): EJECUTIVO CON FOCO Y BOCADILLO "¿LA PLANCHA?" */}
+          <g transform={`translate(820, 1000)`}>
+            <polygon points="0,-220 -80,180 80,180" fill="#FEF08A" opacity={0.4} />
+            <circle cx="0" cy="-220" r="16" fill="#FACC15" stroke="#000000" strokeWidth="4" />
+            <circle cx="0" cy="-60" r="32" fill="#E2E8F0" stroke="#000000" strokeWidth="5" />
+            <path d="M -35,-20 L 35,-20 L 40,160 L -40,160 Z" fill="#0284C7" stroke="#000000" strokeWidth="5" />
+            {/* Nube de pensamiento: plancha encendida */}
+            <g transform="translate(0, -130)">
+              <ellipse cx="0" cy="0" rx="75" ry="42" fill="#FFFFFF" stroke="#000000" strokeWidth="4" />
+              <text x="0" y="4" textAnchor="middle" fill="#000000" fontSize="12" fontWeight="900">
+                «¿DEJÉ LA PLANCHA»
+              </text>
+              <text x="0" y="22" textAnchor="middle" fill="#DC2626" fontSize="12" fontWeight="900">
+                PRENDIDA?»
+              </text>
+            </g>
+          </g>
+
+          {/* PERSONA 3 (FONDO CENTRO): TRANSEÚNTE PENSANDO EN SU BILLETERA */}
+          <g transform="translate(540, 920)">
+            <polygon points="0,-160 -50,140 50,140" fill="#FEF08A" opacity={0.35} />
+            <circle cx="0" cy="-50" r="24" fill="#E2E8F0" stroke="#000000" strokeWidth="4" />
+            <g transform="translate(0, -110)">
+              <ellipse cx="0" cy="0" rx="65" ry="36" fill="#FFFFFF" stroke="#000000" strokeWidth="3.5" />
+              <text x="0" y="6" textAnchor="middle" fill="#000000" fontSize="10" fontWeight="900">
+                «¿Y MI BILLETERA?»
+              </text>
+            </g>
+          </g>
+
+          {/* BANNER DIEGÉTICO REVELADOR */}
+          <g transform="translate(140, 360)">
+            <rect x="0" y="0" width="800" height="96" rx="14" fill="#020617" stroke="#38BDF8" strokeWidth="5" />
+            <text x="400" y="42" textAnchor="middle" fill="#67E8F9" fontSize="22" fontWeight="900" fontFamily="'Arial Black'">
+              NADIE ESTÁ MIRANDO TU MANCHA
+            </text>
+            <text x="400" y="76" textAnchor="middle" fill="#FFFFFF" fontSize="17" fontWeight="900" fontFamily="'Arial Black'">
+              TODOS ESTÁN ATERRADOS PENSANDO EN SUS PROPIOS FOCOS
+            </text>
+          </g>
+
+          {/* Rótulo superior */}
+          <g transform="translate(140, 150)">
+            <rect x="0" y="0" width="800" height="74" rx="14" fill="#020617" stroke="#38BDF8" strokeWidth="5" />
+            <text x="400" y="48" textAnchor="middle" fill="#67E8F9" fontSize="23" fontWeight="900" fontFamily="'Arial Black', sans-serif">
+              CADA PERSONA TIENE SU PROPIO FOCO EN LA CABEZA
+            </text>
+          </g>
+        </svg>
+      </div>
+    );
+  }
+
+  // =========================================================================
+  // EFECTO FOCO 7: ATARDECER - INTERRUPTOR EN OFF, ENCESTE DE CAFÉ Y LIBERTAD
+  // =========================================================================
+  if (escenario === "plaza_atardecer_interruptor_libertad") {
+    const f = frame;
+    // Trayectoria del vaso de café encestando en el basurero
+    const cupArcT = Math.min(1, Math.max(0, (f - 30) / 45));
+    const cupX = 360 + cupArcT * 420;
+    const cupY = 1100 - Math.sin(cupArcT * Math.PI) * 260 + cupArcT * 180;
+
+    return (
+      <div className="absolute inset-0 pointer-events-none z-0 overflow-hidden bg-[#FEF08A]">
+        <svg className="absolute inset-0 w-full h-full" viewBox="0 0 1080 1920" preserveAspectRatio="xMidYMid slice">
+          <defs>
+            <linearGradient id="sunsetSky" x1="0" y1="0" x2="0" y2="1">
+              <stop offset="0%" stopColor="#FDE047" />
+              <stop offset="45%" stopColor="#F97316" />
+              <stop offset="85%" stopColor="#FEF08A" />
+              <stop offset="100%" stopColor="#FFFFFF" />
+            </linearGradient>
+          </defs>
+
+          {/* Atardecer soleado cálido y radiante */}
+          <rect width="1080" height="1920" fill="url(#sunsetSky)" />
+
+          {/* Silueta lejana de la ciudad y árboles en calma */}
+          <g opacity={0.25}>
+            <rect x="80" y="900" width="180" height="450" fill="#78350F" />
+            <rect x="300" y="820" width="220" height="530" fill="#78350F" />
+            <circle cx="820" cy="1100" r="110" fill="#15803D" />
+          </g>
+
+          {/* Pavimento amplio de la plaza */}
+          <rect y="1350" width="1080" height="570" fill="#E2E8F0" stroke="#000000" strokeWidth="8" />
+
+          {/* INTERRUPTOR INDUSTRIAL FLOTANTE JALADO A POSICIÓN "OFF" */}
+          <g transform="translate(320, 680)">
+            {/* Cable que sube al cielo cortado */}
+            <line x1="0" y1="-260" x2="0" y2="-50" stroke="#000000" strokeWidth="6" strokeDasharray="12 6" />
+            {/* Caja metálica con palanca en OFF */}
+            <rect x="-45" y="-50" width="90" height="110" rx="10" fill="#1E293B" stroke="#000000" strokeWidth="6" />
+            <circle cx="0" cy="-25" r="8" fill="#DC2626" />
+            <circle cx="0" cy="25" r="8" fill="#22C55E" />
+            {/* Palanca roja bajada en OFF */}
+            <line x1="0" y1="0" x2="36" y2="34" stroke="#DC2626" strokeWidth="12" strokeLinecap="round" />
+            <circle cx="36" cy="34" r="14" fill="#EF4444" stroke="#000000" strokeWidth="4" />
+            {/* Chispitas apagadas */}
+            <polygon points="50,20 60,10 56,26 68,22 58,34 50,20" fill="#FACC15" />
+            <rect x="-35" y="68" width="70" height="24" rx="4" fill="#DC2626" />
+            <text x="0" y="85" textAnchor="middle" fill="#FFFFFF" fontSize="13" fontWeight="900">
+              OFF
+            </text>
+          </g>
+
+          {/* CESTO DE BASURA URBANO DONDE CAE EL VASO */}
+          <g transform="translate(800, 1260)">
+            <path d="M -45,-30 L 45,-30 L 35,100 L -35,100 Z" fill="#334155" stroke="#000000" strokeWidth="6" />
+            <line x1="-30" y1="-10" x2="-22" y2="80" stroke="#64748B" strokeWidth="4" />
+            <line x1="0" y1="-10" x2="0" y2="80" stroke="#64748B" strokeWidth="4" />
+            <line x1="30" y1="-10" x2="22" y2="80" stroke="#64748B" strokeWidth="4" />
+            {/* Letrero: RECICLAJE */}
+            <circle cx="0" cy="35" r="16" fill="#22C55E" stroke="#000000" strokeWidth="2.5" />
+            <text x="0" y="41" textAnchor="middle" fill="#FFFFFF" fontSize="14" fontWeight="900">
+              ♻
+            </text>
+          </g>
+
+          {/* VASO DE CAFÉ EN PARÁBOLA LIMPIA ENCESTÁNDOSE */}
+          {f < 80 && (
+            <g transform={`translate(${cupX}, ${cupY}) rotate(${(cupArcT * 360).toFixed(1)})`}>
+              <path d="M -12,-16 L 12,-16 L 8,18 L -8,18 Z" fill="#FFFFFF" stroke="#000000" strokeWidth="3.5" />
+              <rect x="-10" y="-4" width="20" height="12" fill="#B45309" />
+              <circle cx="10" cy="-10" r="3" fill="#78350F" />
+            </g>
+          )}
+
+          {/* BANNER INSPIRADOR DE CIERRE */}
+          <g transform="translate(140, 360)">
+            <rect x="0" y="0" width="800" height="96" rx="14" fill="#020617" stroke="#22C55E" strokeWidth="5" />
+            <text x="400" y="42" textAnchor="middle" fill="#86EFAC" fontSize="22" fontWeight="900" fontFamily="'Arial Black'">
+              A NADIE LE IMPORTA TANTO COMO A TI
+            </text>
+            <text x="400" y="76" textAnchor="middle" fill="#FFFFFF" fontSize="17" fontWeight="900" fontFamily="'Arial Black'">
+              APAGA TU PROPIO REFLECTOR... Y VIVE LIBRE
+            </text>
+          </g>
+
+          {/* Rótulo superior */}
+          <g transform="translate(140, 150)">
+            <rect x="0" y="0" width="800" height="74" rx="14" fill="#020617" stroke="#22C55E" strokeWidth="5" />
+            <text x="400" y="48" textAnchor="middle" fill="#86EFAC" fontSize="23" fontWeight="900" fontFamily="'Arial Black', sans-serif">
+              APAGA TU REFLECTOR Y SÉ LIBRE
+            </text>
+          </g>
+        </svg>
+      </div>
+    );
+  }
+
+  // =========================================================================
+  // GALLINA GIROSCÓPICA 1: GRANJA CON CUADRÍCULA DE CALIBRACIÓN ÓPTICA
+  // =========================================================================
+  if (escenario === "granja_campo_giroscopio") {
+    return (
+      <div className="absolute inset-0 pointer-events-none z-0 overflow-hidden bg-[#E0F2FE]">
+        <svg className="absolute inset-0 w-full h-full" viewBox="0 0 1080 1920" preserveAspectRatio="xMidYMid slice">
+          <defs>
+            <linearGradient id="farmSkyGrad" x1="0" y1="0" x2="0" y2="1">
+              <stop offset="0%" stopColor="#38BDF8" />
+              <stop offset="65%" stopColor="#BAE6FD" />
+              <stop offset="100%" stopColor="#F0FDF4" />
+            </linearGradient>
+          </defs>
+          <rect width="1080" height="1920" fill="url(#farmSkyGrad)" />
+
+          {/* Colinas verdes al fondo */}
+          <path d="M -100 1200 Q 250 1000 600 1150 T 1200 1100 L 1200 1920 L -100 1920 Z" fill="#4ADE80" stroke="#000000" strokeWidth="6" />
+          <path d="M -50 1320 Q 350 1200 750 1300 T 1150 1250 L 1150 1920 L -50 1920 Z" fill="#22C55E" stroke="#000000" strokeWidth="6" />
+
+          {/* Silueta de granero rojo típico en la colina izquierda */}
+          <g transform="translate(100, 960)">
+            <polygon points="0,60 70,0 140,60" fill="#DC2626" stroke="#000000" strokeWidth="5" />
+            <rect x="15" y="60" width="110" height="100" fill="#EF4444" stroke="#000000" strokeWidth="5" />
+            <line x1="25" y1="70" x2="115" y2="150" stroke="#FFFFFF" strokeWidth="4" />
+            <line x1="115" y1="70" x2="25" y2="150" stroke="#FFFFFF" strokeWidth="4" />
+            <rect x="50" y="100" width="40" height="60" fill="#451A03" stroke="#000000" strokeWidth="4" />
+            <rect x="145" y="40" width="45" height="120" rx="6" fill="#94A3B8" stroke="#000000" strokeWidth="4" />
+            <ellipse cx="167.5" cy="40" rx="22.5" ry="12" fill="#CBD5E1" stroke="#000000" strokeWidth="4" />
+          </g>
+
+          {/* Suelo de pasto con valla rústica */}
+          <rect y="1400" width="1080" height="520" fill="#15803D" stroke="#000000" strokeWidth="8" />
+          {[120, 360, 600, 840, 1020].map((x, idx) => (
+            <g key={`fence_${idx}`} transform={`translate(${x}, 1310)`}>
+              <rect x="-10" y="0" width="20" height="130" fill="#78350F" stroke="#000000" strokeWidth="4" />
+            </g>
+          ))}
+          <line x1="0" y1="1340" x2="1080" y2="1340" stroke="#000000" strokeWidth="5" strokeDasharray="16 8" />
+          <line x1="0" y1="1390" x2="1080" y2="1390" stroke="#000000" strokeWidth="5" strokeDasharray="16 8" />
+
+          {/* MIRA HUD GIROSCÓPICA HOLOGRÁFICA EN EL CENTRO */}
+          <g transform="translate(540, 860)">
+            <circle cx="0" cy="0" r="280" fill="none" stroke="#06B6D4" strokeWidth="3" strokeDasharray="14 10" opacity="0.6" />
+            <circle cx="0" cy="0" r="160" fill="none" stroke="#06B6D4" strokeWidth="2.5" strokeDasharray="8 6" opacity="0.8" />
+            <line x1="-360" y1="0" x2="360" y2="0" stroke="#06B6D4" strokeWidth="2.5" strokeDasharray="6 4" opacity="0.75" />
+            <line x1="0" y1="-340" x2="0" y2="340" stroke="#06B6D4" strokeWidth="2.5" strokeDasharray="6 4" opacity="0.75" />
+            <rect x="-140" y="-380" width="280" height="36" rx="6" fill="#082F49" stroke="#06B6D4" strokeWidth="3" />
+            <text x="0" y="-356" textAnchor="middle" fill="#38BDF8" fontSize="16" fontWeight="900" fontFamily="'Arial Black'">
+              ESTABILIZACIÓN AVÍCOLA VOR
+            </text>
+          </g>
+
+          {/* Rótulo superior */}
+          <g transform="translate(140, 150)">
+            <rect x="0" y="0" width="800" height="74" rx="14" fill="#020617" stroke="#F59E0B" strokeWidth="5" />
+            <text x="400" y="48" textAnchor="middle" fill="#FEF08A" fontSize="23" fontWeight="900" fontFamily="'Arial Black', sans-serif">
+              EL MISTERIO DE LA CABEZA DE GALLINA
+            </text>
+          </g>
+        </svg>
+      </div>
+    );
+  }
+
+  // =========================================================================
+  // GALLINA GIROSCÓPICA 2: LABORATORIO DE ÓPTICA ANATÓMICA (HUMANO VS AVE)
+  // =========================================================================
+  if (escenario === "laboratorio_optica_aviar") {
+    return (
+      <div className="absolute inset-0 pointer-events-none z-0 overflow-hidden bg-[#0F172A]">
+        <svg className="absolute inset-0 w-full h-full" viewBox="0 0 1080 1920" preserveAspectRatio="xMidYMid slice">
+          <rect width="1080" height="1920" fill="#0F172A" />
+          <defs>
+            <pattern id="opticsGrid" width="60" height="60" patternUnits="userSpaceOnUse">
+              <path d="M 60 0 L 0 0 0 60" fill="none" stroke="#1E293B" strokeWidth="2" />
+            </pattern>
+          </defs>
+          <rect width="1080" height="1920" fill="url(#opticsGrid)" />
+
+          <g transform="translate(90, 480)">
+            <rect x="0" y="0" width="900" height="760" rx="16" fill="#020617" stroke="#38BDF8" strokeWidth="6" />
+            <rect x="20" y="20" width="860" height="50" rx="8" fill="#0369A1" />
+            <text x="450" y="54" textAnchor="middle" fill="#FFFFFF" fontSize="22" fontWeight="900" fontFamily="'Arial Black'">
+              ANATOMÍA OCULAR: ¿POR QUÉ NO GIRAN LA MIRADA?
+            </text>
+
+            <g transform="translate(230, 260)">
+              <circle cx="0" cy="0" r="100" fill="#FFFFFF" stroke="#000000" strokeWidth="6" />
+              <circle cx="30" cy="-10" r="48" fill="#38BDF8" stroke="#000000" strokeWidth="4" />
+              <circle cx="35" cy="-10" r="24" fill="#000000" />
+              <path d="M -100 -20 Q -140 -60 -100 -100" fill="none" stroke="#EF4444" strokeWidth="8" strokeLinecap="round" />
+              <path d="M 100 -20 Q 140 -60 100 -100" fill="none" stroke="#EF4444" strokeWidth="8" strokeLinecap="round" />
+              <rect x="-120" y="130" width="240" height="42" rx="6" fill="#15803D" />
+              <text x="0" y="158" textAnchor="middle" fill="#FFFFFF" fontSize="17" fontWeight="900" fontFamily="'Arial Black'">
+                HUMANO: 6 MÚSCULOS
+              </text>
+            </g>
+
+            <line x1="450" y1="100" x2="450" y2="700" stroke="#334155" strokeWidth="5" strokeDasharray="12 8" />
+
+            <g transform="translate(670, 260)">
+              <ellipse cx="0" cy="0" rx="110" ry="70" fill="#E2E8F0" stroke="#000000" strokeWidth="7" />
+              <ellipse cx="0" cy="0" rx="85" ry="50" fill="#FEF08A" stroke="#000000" strokeWidth="5" />
+              <circle cx="15" cy="0" r="30" fill="#F59E0B" stroke="#000000" strokeWidth="4" />
+              <circle cx="15" cy="0" r="14" fill="#000000" />
+              <rect x="-30" y="-130" width="60" height="40" rx="8" fill="#DC2626" stroke="#000000" strokeWidth="4" />
+              <path d="M -15 -130 L -15 -150 A 15 15 0 0 1 15 -150 L 15 -130" fill="none" stroke="#000000" strokeWidth="5" />
+              <rect x="-140" y="130" width="280" height="42" rx="6" fill="#DC2626" />
+              <text x="0" y="158" textAnchor="middle" fill="#FFFFFF" fontSize="16" fontWeight="900" fontFamily="'Arial Black'">
+                AVE: ANILLO ÓSEO FIJO (0°)
+              </text>
+            </g>
+          </g>
+
+          <rect y="1380" width="1080" height="540" fill="#1E293B" stroke="#000000" strokeWidth="8" />
+
+          <g transform="translate(140, 150)">
+            <rect x="0" y="0" width="800" height="74" rx="14" fill="#020617" stroke="#38BDF8" strokeWidth="5" />
+            <text x="400" y="48" textAnchor="middle" fill="#7DD3FC" fontSize="23" fontWeight="900" fontFamily="'Arial Black', sans-serif">
+              GLOBOS OCULARES RÍGIDOS
+            </text>
+          </g>
+        </svg>
+      </div>
+    );
+  }
+
+  // =========================================================================
+  // GALLINA GIROSCÓPICA 3: SUELO Y EFECTO DE DESENFOQUE DE MOVIMIENTO
+  // =========================================================================
+  if (escenario === "suelo_semillas_desenfoque") {
+    const blurShake = Math.sin(frame * 0.4) * 16;
+    return (
+      <div className="absolute inset-0 pointer-events-none z-0 overflow-hidden bg-[#7F1D1D]">
+        <svg className="absolute inset-0 w-full h-full" viewBox="0 0 1080 1920" preserveAspectRatio="xMidYMid slice">
+          <rect width="1080" height="1920" fill="#450A0A" />
+
+          {Array.from({ length: 18 }).map((_, idx) => {
+            const y = 300 + idx * 70;
+            const strokeW = idx % 3 === 0 ? 10 : 6;
+            const xShift = Math.sin(frame * 0.3 + idx) * 50;
+            return (
+              <line
+                key={`blur_line_${idx}`}
+                x1={-100 + xShift}
+                y1={y}
+                x2={1180 + xShift}
+                y2={y}
+                stroke={idx % 2 === 0 ? "#EF4444" : "#F59E0B"}
+                strokeWidth={strokeW}
+                opacity={0.65}
+                strokeDasharray="140 40 80 60"
+              />
+            );
+          })}
+
+          <g transform={`translate(${540 + blurShake}, 980)`}>
+            <ellipse cx="0" cy="80" rx="140" ry="35" fill="#000000" opacity="0.4" />
+            <path d="M 0 -90 C 80 -90, 90 90, 0 90 C -90 90, -80 -90, 0 -90 Z" fill="#DC2626" opacity="0.6" transform="translate(-25, 0)" />
+            <path d="M 0 -90 C 80 -90, 90 90, 0 90 C -90 90, -80 -90, 0 -90 Z" fill="#FDE047" stroke="#000000" strokeWidth="8" />
+            <circle cx="-15" cy="-25" r="16" fill="#FFFFFF" />
+            <circle cx="0" cy="0" r="160" fill="none" stroke="#DC2626" strokeWidth="6" strokeDasharray="16 12" />
+            <line x1="-200" y1="0" x2="200" y2="0" stroke="#DC2626" strokeWidth="6" />
+            <line x1="0" y1="-200" x2="0" y2="200" stroke="#DC2626" strokeWidth="6" />
+          </g>
+
+          <g transform="translate(140, 480)">
+            <rect x="0" y="0" width="800" height="90" rx="14" fill="#000000" stroke="#EF4444" strokeWidth="6" />
+            <text x="400" y="58" textAnchor="middle" fill="#EF4444" fontSize="28" fontWeight="900" fontFamily="'Arial Black'">
+              ¡SIN ESTABILIZADOR = CEGUERA TOTAL!
+            </text>
+          </g>
+
+          <rect y="1420" width="1080" height="500" fill="#292524" stroke="#000000" strokeWidth="8" />
+
+          <g transform="translate(140, 150)">
+            <rect x="0" y="0" width="800" height="74" rx="14" fill="#020617" stroke="#EF4444" strokeWidth="5" />
+            <text x="400" y="48" textAnchor="middle" fill="#FCA5A5" fontSize="23" fontWeight="900" fontFamily="'Arial Black', sans-serif">
+              PELIGRO: VISIÓN BORROSA
+            </text>
+          </g>
+        </svg>
+      </div>
+    );
+  }
+
+  // =========================================================================
+  // GALLINA GIROSCÓPICA 4: DIAGRAMA MECÁNICO DE 14 VÉRTEBRAS CERVICALES
+  // =========================================================================
+  // =========================================================================
+  // GALLINA GIROSCÓPICA 3.5: PISTA DE EXPERIMENTO DE CABECEO (THRUST & HOLD)
+  // =========================================================================
+  if (escenario === "pista_caminata_experimento") {
+    const cycle = (frame % 30) / 30;
+    const isHold = cycle >= 0.35;
+    return (
+      <div className="absolute inset-0 pointer-events-none z-0 overflow-hidden bg-[#0284C7]">
+        <svg className="absolute inset-0 w-full h-full" viewBox="0 0 1080 1920" preserveAspectRatio="xMidYMid slice">
+          <rect width="1080" height="1920" fill="#0369A1" />
+          <defs>
+            <pattern id="trackGrid" width="60" height="60" patternUnits="userSpaceOnUse">
+              <path d="M 60 0 L 0 0 0 60" fill="none" stroke="#0284C7" strokeWidth="2" />
+            </pattern>
+          </defs>
+          <rect width="1080" height="1920" fill="url(#trackGrid)" />
+
+          {/* Gráfico explicativo superior: THRUST vs HOLD */}
+          <g transform="translate(140, 440)">
+            <rect x="0" y="0" width="800" height="180" rx="16" fill="#0F172A" stroke="#38BDF8" strokeWidth="6" />
+            <text x="400" y="44" textAnchor="middle" fill="#38BDF8" fontSize="22" fontWeight="900" fontFamily="'Arial Black'">
+              EL ENIGMA DEL CABECEO AL CAMINAR
+            </text>
+            <rect x="40" y="70" width="340" height="70" rx="10" fill={!isHold ? "#2563EB" : "#1E293B"} stroke="#000000" strokeWidth="3" />
+            <text x="210" y="104" textAnchor="middle" fill="#FFFFFF" fontSize="16" fontWeight="900" fontFamily="'Arial Black'">
+              1. FASE DE EMPUJE
+            </text>
+            <text x="210" y="126" textAnchor="middle" fill="#93C5FD" fontSize="13" fontWeight="900">
+              Cuerpo y cabeza avanzan
+            </text>
+
+            <rect x="420" y="70" width="340" height="70" rx="10" fill={isHold ? "#15803D" : "#1E293B"} stroke="#000000" strokeWidth="3" />
+            <text x="590" y="104" textAnchor="middle" fill="#FFFFFF" fontSize="16" fontWeight="900" fontFamily="'Arial Black'">
+              2. FASE HOLD (CONGELADA)
+            </text>
+            <text x="590" y="126" textAnchor="middle" fill="#86EFAC" fontSize="13" fontWeight="900">
+              Retina inmóvil en el espacio
+            </text>
+          </g>
+
+          {/* Pista de atletismo / cinta caminadora con marcas métricas */}
+          <g transform="translate(0, 1340)">
+            <rect x="0" y="0" width="1080" height="580" fill="#1E293B" stroke="#000000" strokeWidth="8" />
+            <line x1="0" y1="40" x2="1080" y2="40" stroke="#F59E0B" strokeWidth="8" />
+            {[100, 260, 420, 580, 740, 900, 1060].map((x, idx) => (
+              <g key={`track_mark_${idx}`} transform={`translate(${x}, 40)`}>
+                <line x1="0" y1="0" x2="0" y2="35" stroke="#FFFFFF" strokeWidth="4" />
+                <text x="0" y="60" textAnchor="middle" fill="#94A3B8" fontSize="15" fontWeight="900" fontFamily="'Arial Black'">
+                  {idx * 20} cm
+                </text>
+              </g>
+            ))}
+          </g>
+
+          {/* Rótulo superior */}
+          <g transform="translate(140, 150)">
+            <rect x="0" y="0" width="800" height="74" rx="14" fill="#020617" stroke="#38BDF8" strokeWidth="5" />
+            <text x="400" y="48" textAnchor="middle" fill="#BAE6FD" fontSize="23" fontWeight="900" fontFamily="'Arial Black', sans-serif">
+              ¿POR QUÉ CABECEAN AL CAMINAR?
+            </text>
+          </g>
+        </svg>
+      </div>
+    );
+  }
+
+  if (escenario === "diagrama_cuello_resorte_mecanico") {
+    const springCompress = Math.sin(frame * 0.22);
+    return (
+      <div className="absolute inset-0 pointer-events-none z-0 overflow-hidden bg-[#064E3B]">
+        <svg className="absolute inset-0 w-full h-full" viewBox="0 0 1080 1920" preserveAspectRatio="xMidYMid slice">
+          <rect width="1080" height="1920" fill="#064E3B" />
+          <defs>
+            <pattern id="spineGrid" width="50" height="50" patternUnits="userSpaceOnUse">
+              <path d="M 50 0 L 0 0 0 50" fill="none" stroke="#065F46" strokeWidth="2" />
+            </pattern>
+          </defs>
+          <rect width="1080" height="1920" fill="url(#spineGrid)" />
+
+          <g transform="translate(140, 420)">
+            <rect x="0" y="0" width="800" height="920" rx="16" fill="#022C22" stroke="#10B981" strokeWidth="6" />
+            <rect x="20" y="20" width="760" height="60" rx="8" fill="#047857" />
+            <text x="400" y="60" textAnchor="middle" fill="#FFFFFF" fontSize="22" fontWeight="900" fontFamily="'Arial Black'">
+              14 VÉRTEBRAS: AMORTIGUADOR HIDRÁULICO
+            </text>
+
+            <g transform="translate(400, 240)">
+              {Array.from({ length: 14 }).map((_, idx) => {
+                const yPos = idx * 42 + springCompress * Math.sin(idx * 0.45) * 8;
+                const isEven = idx % 2 === 0;
+                return (
+                  <g key={`vert_${idx}`} transform={`translate(0, ${yPos.toFixed(1)})`}>
+                    <rect x="-140" y="-14" width="280" height="28" rx="8" fill={isEven ? "#F59E0B" : "#10B981"} stroke="#000000" strokeWidth="4" />
+                    <circle cx="-100" cy="0" r="7" fill="#FFFFFF" stroke="#000000" strokeWidth="2" />
+                    <circle cx="100" cy="0" r="7" fill="#FFFFFF" stroke="#000000" strokeWidth="2" />
+                    <text x="-40" y="6" fill="#000000" fontSize="13" fontWeight="900" fontFamily="'Arial Black'">
+                      V{idx + 1}
+                    </text>
+                  </g>
+                );
+              })}
+            </g>
+
+            <g transform="translate(400, 830)">
+              <rect x="-350" y="0" width="700" height="60" rx="10" fill="#DC2626" stroke="#000000" strokeWidth="4" />
+              <text x="0" y="40" textAnchor="middle" fill="#FFFFFF" fontSize="20" fontWeight="900" fontFamily="'Arial Black'">
+                ¡EL DOBLE QUE UNA JIRAFA (7 VÉRTEBRAS)!
+              </text>
+            </g>
+          </g>
+
+          <rect y="1420" width="1080" height="500" fill="#065F46" stroke="#000000" strokeWidth="8" />
+
+          <g transform="translate(140, 150)">
+            <rect x="0" y="0" width="800" height="74" rx="14" fill="#020617" stroke="#10B981" strokeWidth="5" />
+            <text x="400" y="48" textAnchor="middle" fill="#6EE7B7" fontSize="23" fontWeight="900" fontFamily="'Arial Black', sans-serif">
+              INGENIERÍA BIOLÓGICA DE 14 VÉRTEBRAS
+            </text>
+          </g>
+        </svg>
+      </div>
+    );
+  }
+
+  // =========================================================================
+  // GALLINA GIROSCÓPICA 5: ESTUDIO DE INGENIERÍA Y STEADYCAM AUTOMOTRIZ
+  // =========================================================================
+  if (escenario === "estudio_ingenieria_steadycam_auto") {
+    const gyroSpin = (frame * 3) % 360;
+    return (
+      <div className="absolute inset-0 pointer-events-none z-0 overflow-hidden bg-[#1E1B4B]">
+        <svg className="absolute inset-0 w-full h-full" viewBox="0 0 1080 1920" preserveAspectRatio="xMidYMid slice">
+          <rect width="1080" height="1920" fill="#1E1B4B" />
+          <polygon points="540,0 200,1400 880,1400" fill="#6366F1" opacity="0.2" />
+
+          <g transform="translate(140, 440)">
+            <rect x="0" y="0" width="800" height="110" rx="14" fill="#0F172A" stroke="#818CF8" strokeWidth="6" />
+            <text x="400" y="46" textAnchor="middle" fill="#A5B4FC" fontSize="20" fontWeight="900" fontFamily="'Arial Black'">
+              BIOMIMÉTICA: DE LA GALLINA AL MERCEDES
+            </text>
+            <text x="400" y="86" textAnchor="middle" fill="#FFFFFF" fontSize="18" fontWeight="900" fontFamily="'Arial Black'">
+              MAGIC BODY CONTROL & GIMBALS DE CINE
+            </text>
+          </g>
+
+          <g transform="translate(540, 920)">
+            <circle cx="0" cy="0" r="230" fill="none" stroke="#64748B" strokeWidth="12" />
+            <ellipse cx="0" cy="0" rx="200" ry="140" fill="none" stroke="#0284C7" strokeWidth="10" transform={`rotate(${gyroSpin.toFixed(1)})`} />
+            <rect x="-80" y="-60" width="160" height="120" rx="14" fill="#0F172A" stroke="#000000" strokeWidth="6" />
+            <circle cx="0" cy="0" r="38" fill="#38BDF8" stroke="#000000" strokeWidth="5" />
+            <circle cx="0" cy="0" r="16" fill="#000000" />
+            <circle cx="0" cy="-230" r="22" fill="#22C55E" stroke="#000000" strokeWidth="4" />
+            <circle cx="230" cy="0" r="22" fill="#22C55E" stroke="#000000" strokeWidth="4" />
+          </g>
+
+          <rect y="1380" width="1080" height="540" fill="#0F172A" stroke="#000000" strokeWidth="8" />
+
+          <g transform="translate(140, 150)">
+            <rect x="0" y="0" width="800" height="74" rx="14" fill="#020617" stroke="#6366F1" strokeWidth="5" />
+            <text x="400" y="48" textAnchor="middle" fill="#C7D2FE" fontSize="23" fontWeight="900" fontFamily="'Arial Black', sans-serif">
+              TECNOLOGÍA COPIADA DE LA NATURALEZA
+            </text>
+          </g>
+        </svg>
+      </div>
+    );
+  }
+
+  // =========================================================================
+  // GALLINA GIROSCÓPICA 6: CIERRE TRIUNFAL AL ATARDECER EN LA GRANJA
+  // =========================================================================
+  if (escenario === "granja_campo_atardecer_cierre") {
+    const sunPulse = Math.sin(frame * 0.15) * 10;
+    return (
+      <div className="absolute inset-0 pointer-events-none z-0 overflow-hidden bg-[#FEF08A]">
+        <svg className="absolute inset-0 w-full h-full" viewBox="0 0 1080 1920" preserveAspectRatio="xMidYMid slice">
+          <defs>
+            <linearGradient id="sunsetChickenGrad" x1="0" y1="0" x2="0" y2="1">
+              <stop offset="0%" stopColor="#F97316" />
+              <stop offset="45%" stopColor="#F59E0B" />
+              <stop offset="85%" stopColor="#FEF08A" />
+              <stop offset="100%" stopColor="#FFFFFF" />
+            </linearGradient>
+          </defs>
+          <rect width="1080" height="1920" fill="url(#sunsetChickenGrad)" />
+          <circle cx="540" cy="1150" r={220 + sunPulse} fill="#FEF08A" stroke="#F59E0B" strokeWidth="8" opacity="0.8" />
+          <path d="M -100 1250 Q 300 1120 700 1200 T 1200 1150 L 1200 1920 L -100 1920 Z" fill="#B45309" stroke="#000000" strokeWidth="6" />
+          <rect y="1380" width="1080" height="540" fill="#78350F" stroke="#000000" strokeWidth="8" />
+
+          <g transform="translate(140, 420)">
+            <rect x="0" y="0" width="800" height="110" rx="14" fill="#020617" stroke="#F59E0B" strokeWidth="6" />
+            <text x="400" y="48" textAnchor="middle" fill="#FDE047" fontSize="23" fontWeight="900" fontFamily="'Arial Black'">
+              EL MEJOR ESTABILIZADOR DEL MUNDO
+            </text>
+            <text x="400" y="88" textAnchor="middle" fill="#FFFFFF" fontSize="18" fontWeight="900" fontFamily="'Arial Black'">
+              ¡VIVE EN EL CORRAL DE TU VECINO!
+            </text>
+          </g>
+
+          <g transform="translate(140, 150)">
+            <rect x="0" y="0" width="800" height="74" rx="14" fill="#020617" stroke="#F59E0B" strokeWidth="5" />
+            <text x="400" y="48" textAnchor="middle" fill="#FEF08A" fontSize="23" fontWeight="900" fontFamily="'Arial Black', sans-serif">
+              EL STEADYCAM MÁS PERFECTO DEL PLANETA
+            </text>
+          </g>
+        </svg>
+      </div>
+    );
+  }
+
+  // =========================================================================
+  // PETRICOR 1: COMPARATIVA OLFATO TIBURÓN VS NARIZ HUMANA
+  // =========================================================================
+  if (escenario === "comparativa_olfato_tiburon_nariz") {
+    const waveShift = Math.sin(frame * 0.15) * 12;
+    return (
+      <div className="absolute inset-0 pointer-events-none z-0 overflow-hidden bg-[#0C4A6E]">
+        <svg className="absolute inset-0 w-full h-full" viewBox="0 0 1080 1920" preserveAspectRatio="xMidYMid slice">
+          <defs>
+            <linearGradient id="oceanRainSky" x1="0" y1="0" x2="0" y2="1">
+              <stop offset="0%" stopColor="#075985" />
+              <stop offset="60%" stopColor="#0369A1" />
+              <stop offset="100%" stopColor="#0284C7" />
+            </linearGradient>
+          </defs>
+          <rect width="1080" height="1920" fill="url(#oceanRainSky)" />
+
+          {/* Gotas de lluvia diagonales en el fondo */}
+          {Array.from({ length: 24 }).map((_, i) => (
+            <line
+              key={`rain_${i}`}
+              x1={(i * 50 + frame * 8) % 1180 - 50}
+              y1={(i * 80 + frame * 18) % 2000 - 100}
+              x2={(i * 50 + frame * 8) % 1180 - 70}
+              y2={(i * 80 + frame * 18) % 2000 - 40}
+              stroke="#BAE6FD"
+              strokeWidth="3.5"
+              strokeLinecap="round"
+              opacity="0.55"
+            />
+          ))}
+
+          {/* Olas oceánicas estilizadas al fondo */}
+          <path d="M -100 1350 Q 200 1300 500 1340 T 1180 1320 L 1180 1920 L -100 1920 Z" fill="#0369A1" stroke="#000000" strokeWidth="6" />
+          <path d={`M -100 1420 Q ${260 + waveShift} 1380 600 1410 T 1180 1390 L 1180 1920 L -100 1920 Z`} fill="#0284C7" stroke="#000000" strokeWidth="6" />
+
+          {/* Silueta de aleta de tiburón lejana en el horizonte marino */}
+          <g transform="translate(180, 1310)">
+            <path d="M 0 0 C 15 -35, 40 -50, 48 -50 C 45 -20, 55 0, 70 0 Z" fill="#0F172A" stroke="#000000" strokeWidth="4" />
+          </g>
+
+          {/* Suelo de muelle de madera */}
+          <rect y="1480" width="1080" height="440" fill="#78350F" stroke="#000000" strokeWidth="8" />
+
+          {/* Rótulo superior */}
+          <g transform="translate(140, 150)">
+            <rect x="0" y="0" width="800" height="74" rx="14" fill="#020617" stroke="#38BDF8" strokeWidth="5" />
+            <text x="400" y="48" textAnchor="middle" fill="#7DD3FC" fontSize="23" fontWeight="900" fontFamily="'Arial Black', sans-serif">
+              SUPERPODER OLFATIVO: PETRICOR
+            </text>
+          </g>
+        </svg>
+      </div>
+    );
+  }
+
+  // =========================================================================
+  // PETRICOR 2: 500 PISCINAS OLÍMPICAS Y PROPORCIÓN DE GEOSMINA
+  // =========================================================================
+  if (escenario === "piscina_olimpica_geosmina") {
+    return (
+      <div className="absolute inset-0 pointer-events-none z-0 overflow-hidden bg-[#0F172A]">
+        <svg className="absolute inset-0 w-full h-full" viewBox="0 0 1080 1920" preserveAspectRatio="xMidYMid slice">
+          <rect width="1080" height="1920" fill="#0F172A" />
+
+          {/* Gran cuadrícula isométrica de piscinas olímpicas iluminadas */}
+          <g transform="translate(140, 450)">
+            <rect x="0" y="0" width="800" height="880" rx="16" fill="#020617" stroke="#0284C7" strokeWidth="6" />
+            <rect x="20" y="20" width="760" height="60" rx="8" fill="#0369A1" />
+            <text x="400" y="60" textAnchor="middle" fill="#FFFFFF" fontSize="22" fontWeight="900" fontFamily="'Arial Black'">
+              5 PARTES POR BILLÓN: SENSIBILIDAD EXTREMA
+            </text>
+
+            {/* Cuadrícula de 12 piscinas en perspectiva */}
+            {[0, 1, 2, 3].map((row) =>
+              [0, 1, 2].map((col) => (
+                <g key={`pool_${row}_${col}`} transform={`translate(${60 + col * 240}, ${120 + row * 160})`}>
+                  <rect x="0" y="0" width="200" height="120" rx="8" fill="#0284C7" stroke="#000000" strokeWidth="4" />
+                  <line x1="20" y1="30" x2="180" y2="30" stroke="#38BDF8" strokeWidth="2.5" strokeDasharray="8 4" />
+                  <line x1="20" y1="60" x2="180" y2="60" stroke="#38BDF8" strokeWidth="2.5" strokeDasharray="8 4" />
+                  <line x1="20" y1="90" x2="180" y2="90" stroke="#38BDF8" strokeWidth="2.5" strokeDasharray="8 4" />
+                </g>
+              ))
+            )}
+
+            {/* Banner comparativo colosal */}
+            <g transform="translate(400, 800)">
+              <rect x="-350" y="0" width="700" height="60" rx="10" fill="#DC2626" stroke="#000000" strokeWidth="4" />
+              <text x="0" y="40" textAnchor="middle" fill="#FFFFFF" fontSize="20" fontWeight="900" fontFamily="'Arial Black'">
+                ¡1 SOLA GOTA DILUIDA EN 500 PISCINAS!
+              </text>
+            </g>
+          </g>
+
+          <rect y="1420" width="1080" height="500" fill="#1E293B" stroke="#000000" strokeWidth="8" />
+
+          {/* Rótulo superior */}
+          <g transform="translate(140, 150)">
+            <rect x="0" y="0" width="800" height="74" rx="14" fill="#020617" stroke="#F59E0B" strokeWidth="5" />
+            <text x="400" y="48" textAnchor="middle" fill="#FEF08A" fontSize="23" fontWeight="900" fontFamily="'Arial Black', sans-serif">
+              CONCENTRACIÓN MILIMÉTRICA
+            </text>
+          </g>
+        </svg>
+      </div>
+    );
+  }
+
+  // =========================================================================
+  // PETRICOR 3: MICROCOSMOS SUELO Y BACTERIAS STREPTOMYCES
+  // =========================================================================
+  if (escenario === "microcosmos_suelo_streptomyces") {
+    const pulseBacteria = Math.sin(frame * 0.2) * 6;
+    return (
+      <div className="absolute inset-0 pointer-events-none z-0 overflow-hidden bg-[#292524]">
+        <svg className="absolute inset-0 w-full h-full" viewBox="0 0 1080 1920" preserveAspectRatio="xMidYMid slice">
+          <rect width="1080" height="1920" fill="#1C1917" />
+
+          {/* Capas geológicas de tierra y humus */}
+          <path d="M 0 600 Q 300 560 600 620 T 1080 580 L 1080 1920 L 0 1920 Z" fill="#292524" stroke="#000000" strokeWidth="6" />
+          <path d="M 0 900 Q 400 840 700 910 T 1080 870 L 1080 1920 L 0 1920 Z" fill="#451A03" stroke="#000000" strokeWidth="6" />
+
+          {/* Colonia gigante de bacterias Streptomyces en ramificación */}
+          <g transform="translate(540, 950)">
+            <circle cx="0" cy="0" r={160 + pulseBacteria} fill="#064E3B" opacity="0.6" />
+            <g stroke="#10B981" strokeWidth="10" strokeLinecap="round" fill="none">
+              <path d="M -90,40 Q -40,-60 0,0 Q 60,40 110,-20" />
+              <path d="M -20,0 Q 0,-110 50,-120 Q 80,-80 120,-60" />
+              <path d="M -70,30 Q -120,-30 -140,-80" />
+              <path d="M 10,20 Q 30,100 80,120" />
+            </g>
+            {/* Esporas productoras de geosmina flotantes */}
+            {[-80, -30, 20, 70, 110].map((x, idx) => (
+              <circle key={`spore_${idx}`} cx={x} cy={-60 + (idx % 2) * 50} r="16" fill="#38BDF8" stroke="#000000" strokeWidth="4" />
+            ))}
+          </g>
+
+          {/* Rótulo de alerta científica: EL AGUA PURA NO HUELE */}
+          <g transform="translate(140, 420)">
+            <rect x="0" y="0" width="800" height="90" rx="14" fill="#000000" stroke="#10B981" strokeWidth="6" />
+            <text x="400" y="58" textAnchor="middle" fill="#34D399" fontSize="26" fontWeight="900" fontFamily="'Arial Black'">
+              EL AGUA NO HUELE... ¡SON BACTERIAS DEL SUELO!
+            </text>
+          </g>
+
+          <rect y="1420" width="1080" height="500" fill="#292524" stroke="#000000" strokeWidth="8" />
+
+          {/* Rótulo superior */}
+          <g transform="translate(140, 150)">
+            <rect x="0" y="0" width="800" height="74" rx="14" fill="#020617" stroke="#10B981" strokeWidth="5" />
+            <text x="400" y="48" textAnchor="middle" fill="#6EE7B7" fontSize="23" fontWeight="900" fontFamily="'Arial Black', sans-serif">
+              FÁBRICA VIVA: STREPTOMYCES
+            </text>
+          </g>
+        </svg>
+      </div>
+    );
+  }
+
+  // =========================================================================
+  // PETRICOR 4: MACRO IMPACTO DE GOTA Y AEROSOL DE BURBUJAS (MIT 2015)
+  // =========================================================================
+  if (escenario === "macro_impacto_gota_aerosol") {
+    const fizzRise = (frame * 12) % 360;
+    return (
+      <div className="absolute inset-0 pointer-events-none z-0 overflow-hidden bg-[#1E1B4B]">
+        <svg className="absolute inset-0 w-full h-full" viewBox="0 0 1080 1920" preserveAspectRatio="xMidYMid slice">
+          <rect width="1080" height="1920" fill="#1E1B4B" />
+
+          {/* Macro suelo de tierra porosa */}
+          <rect y="1200" width="1080" height="720" fill="#78350F" stroke="#000000" strokeWidth="8" />
+          {/* Poros en el suelo donde se atrapa el aire */}
+          {[160, 340, 540, 720, 920].map((x, idx) => (
+            <ellipse key={`pore_${idx}`} cx={x} cy="1200" rx="35" ry="18" fill="#451A03" stroke="#000000" strokeWidth="4" />
+          ))}
+
+          {/* Menisco gigante de agua estallando al chocar */}
+          <g transform="translate(540, 1180)">
+            <ellipse cx="0" cy="0" rx="320" ry="60" fill="#0284C7" stroke="#000000" strokeWidth="7" />
+            <ellipse cx="0" cy="-10" rx="260" ry="40" fill="#38BDF8" />
+
+            {/* Chorro de aerosol disparándose hacia arriba como champán */}
+            {Array.from({ length: 28 }).map((_, i) => {
+              const xPos = Math.sin(i * 1.3) * (60 + (i % 4) * 50);
+              const yPos = -60 - (i * 24 + fizzRise) % 550;
+              const r = 6 + (i % 3) * 4;
+              return (
+                <circle
+                  key={`champ_bubble_${i}`}
+                  cx={xPos}
+                  cy={yPos}
+                  r={r}
+                  fill={i % 2 === 0 ? "#FFFFFF" : "#FDE047"}
+                  stroke="#000000"
+                  strokeWidth="3"
+                  opacity="0.85"
+                />
+              );
+            })}
+          </g>
+
+          {/* Cartel explicativo del descubrimiento del MIT */}
+          <g transform="translate(140, 440)">
+            <rect x="0" y="0" width="800" height="110" rx="14" fill="#0F172A" stroke="#818CF8" strokeWidth="6" />
+            <text x="400" y="46" textAnchor="middle" fill="#A5B4FC" fontSize="21" fontWeight="900" fontFamily="'Arial Black'">
+              HALLAZGO DEL MIT (2015)
+            </text>
+            <text x="400" y="86" textAnchor="middle" fill="#FFFFFF" fontSize="18" fontWeight="900" fontFamily="'Arial Black'">
+              MICROBURBUJAS ATRAPADAS DISPARADAS COMO CHAMPÁN
+            </text>
+          </g>
+
+          {/* Rótulo superior */}
+          <g transform="translate(140, 150)">
+            <rect x="0" y="0" width="800" height="74" rx="14" fill="#020617" stroke="#6366F1" strokeWidth="5" />
+            <text x="400" y="48" textAnchor="middle" fill="#C7D2FE" fontSize="23" fontWeight="900" fontFamily="'Arial Black', sans-serif">
+              EL DISPARO EN AEROSOL
+            </text>
+          </g>
+        </svg>
+      </div>
+    );
+  }
+
+  // =========================================================================
+  // PETRICOR 5: SABANA AFRICANA ANCESTRAL Y SEQUÍA
+  // =========================================================================
+  if (escenario === "sabana_homonido_sequia") {
+    const heatWave = Math.sin(frame * 0.25) * 8;
+    return (
+      <div className="absolute inset-0 pointer-events-none z-0 overflow-hidden bg-[#78350F]">
+        <svg className="absolute inset-0 w-full h-full" viewBox="0 0 1080 1920" preserveAspectRatio="xMidYMid slice">
+          <defs>
+            <linearGradient id="savannaSkyGrad" x1="0" y1="0" x2="0" y2="1">
+              <stop offset="0%" stopColor="#EA580C" />
+              <stop offset="40%" stopColor="#F59E0B" />
+              <stop offset="85%" stopColor="#FEF08A" />
+              <stop offset="100%" stopColor="#D97706" />
+            </linearGradient>
+          </defs>
+          <rect width="1080" height="1920" fill="url(#savannaSkyGrad)" />
+
+          {/* Sol ardiente de la sabana en el horizonte */}
+          <circle cx="540" cy="980" r="180" fill="#FEF08A" stroke="#EA580C" strokeWidth="8" opacity="0.8" />
+
+          {/* Silueta lejana de un árbol baobab y acacia */}
+          <g transform="translate(820, 1020)">
+            {/* Tronco de acacia */}
+            <path d="M 0,160 L 10,40 L 40,-20 L 70,-40" stroke="#451A03" strokeWidth="14" strokeLinecap="round" fill="none" />
+            {/* Copa plana de acacia */}
+            <ellipse cx="60" cy="-45" rx="120" ry="25" fill="#451A03" />
+          </g>
+
+          {/* Nubes oscuras de tormenta lejanas en la esquina izquierda con lluvia cayendo */}
+          <g transform="translate(180, 520)">
+            <ellipse cx="0" cy="0" rx="160" ry="70" fill="#1E293B" stroke="#000000" strokeWidth="6" />
+            <ellipse cx="60" cy="-20" rx="110" ry="55" fill="#334155" />
+            {/* Cortina de lluvia lejana */}
+            {[-60, -20, 20, 60, 100].map((rx, idx) => (
+              <line key={`storm_rain_${idx}`} x1={rx} y1="60" x2={rx - 30} y2="280" stroke="#0284C7" strokeWidth="4" strokeDasharray="14 10" opacity="0.75" />
+            ))}
+            <rect x="-80" y="300" width="160" height="36" rx="6" fill="#0284C7" stroke="#000000" strokeWidth="3" />
+            <text x="0" y="324" textAnchor="middle" fill="#FFFFFF" fontSize="15" fontWeight="900" fontFamily="'Arial Black'">
+              AGUA A 40 KM
+            </text>
+          </g>
+
+          {/* Suelo árido y cuarteado de la sabana */}
+          <rect y="1380" width="1080" height="540" fill="#B45309" stroke="#000000" strokeWidth="8" />
+
+          {/* Rótulo superior */}
+          <g transform="translate(140, 150)">
+            <rect x="0" y="0" width="800" height="74" rx="14" fill="#020617" stroke="#EF4444" strokeWidth="5" />
+            <text x="400" y="48" textAnchor="middle" fill="#FCA5A5" fontSize="23" fontWeight="900" fontFamily="'Arial Black', sans-serif">
+              SUPERVIVENCIA EN LA SABANA
+            </text>
+          </g>
+        </svg>
+      </div>
+    );
+  }
+
+  // =========================================================================
+  // PETRICOR 6: PARQUE BAJO LA LLUVIA Y ARCOÍRIS DE CIERRE
+  // =========================================================================
+  if (escenario === "parque_lluvia_paraguas_cierre") {
+    return (
+      <div className="absolute inset-0 pointer-events-none z-0 overflow-hidden bg-[#FEF08A]">
+        <svg className="absolute inset-0 w-full h-full" viewBox="0 0 1080 1920" preserveAspectRatio="xMidYMid slice">
+          <defs>
+            <linearGradient id="rainbowSkyGrad" x1="0" y1="0" x2="0" y2="1">
+              <stop offset="0%" stopColor="#38BDF8" />
+              <stop offset="50%" stopColor="#BAE6FD" />
+              <stop offset="85%" stopColor="#FEF08A" />
+              <stop offset="100%" stopColor="#FFFFFF" />
+            </linearGradient>
+          </defs>
+          <rect width="1080" height="1920" fill="url(#rainbowSkyGrad)" />
+
+          {/* Arcoíris monumental sobre el cielo despejándose */}
+          <g transform="translate(540, 920)">
+            <path d="M -460 0 A 460 460 0 0 1 460 0" fill="none" stroke="#EF4444" strokeWidth="18" opacity="0.85" />
+            <path d="M -442 0 A 442 442 0 0 1 442 0" fill="none" stroke="#F59E0B" strokeWidth="18" opacity="0.85" />
+            <path d="M -424 0 A 424 424 0 0 1 424 0" fill="none" stroke="#22C55E" strokeWidth="18" opacity="0.85" />
+            <path d="M -406 0 A 406 406 0 0 1 406 0" fill="none" stroke="#38BDF8" strokeWidth="18" opacity="0.85" />
+            <path d="M -388 0 A 388 388 0 0 1 388 0" fill="none" stroke="#6366F1" strokeWidth="18" opacity="0.85" />
+          </g>
+
+          {/* Suelo mojado de parque brillante */}
+          <rect y="1380" width="1080" height="540" fill="#15803D" stroke="#000000" strokeWidth="8" />
+
+          {/* BANNER CELEBRATORIO DE CIERRE */}
+          <g transform="translate(140, 420)">
+            <rect x="0" y="0" width="800" height="110" rx="14" fill="#020617" stroke="#38BDF8" strokeWidth="6" />
+            <text x="400" y="48" textAnchor="middle" fill="#38BDF8" fontSize="23" fontWeight="900" fontFamily="'Arial Black'">
+              LA SEÑAL MÁS ANTIGUA DE VIDA
+            </text>
+            <text x="400" y="88" textAnchor="middle" fill="#FFFFFF" fontSize="18" fontWeight="900" fontFamily="'Arial Black'">
+              GRABADA PARA SIEMPRE EN TU NARIZ
+            </text>
+          </g>
+
+          {/* Rótulo superior */}
+          <g transform="translate(140, 150)">
+            <rect x="0" y="0" width="800" height="74" rx="14" fill="#020617" stroke="#38BDF8" strokeWidth="5" />
+            <text x="400" y="48" textAnchor="middle" fill="#BAE6FD" fontSize="23" fontWeight="900" fontFamily="'Arial Black', sans-serif">
+              EL OLOR MÁS PODEROSO DEL PLANETA
+            </text>
+          </g>
+        </svg>
+      </div>
+    );
+  }
+
+  // ==========================================
+  // ESCENARIO: ROCAS MINERALES Y ACEITE PETRICOR (ETIMOLOGÍA GRIEGA 1964)
+  // ==========================================
+  if (escenario === "rocas_minerales_aceite_petricor") {
+    const pulseGold = 0.8 + Math.sin(frame * 0.12) * 0.2;
+    const shimmer = Math.sin(frame * 0.18) * 6;
+    return (
+      <div className="absolute inset-0 pointer-events-none z-0 overflow-hidden bg-[#FEF3C7]">
+        <svg className="absolute inset-0 w-full h-full" viewBox="0 0 1080 1920" preserveAspectRatio="xMidYMid slice">
+          <defs>
+            <linearGradient id="skyGreekSunset" x1="0" y1="0" x2="0" y2="1">
+              <stop offset="0%" stopColor="#FEF3C7" />
+              <stop offset="45%" stopColor="#FDE68A" />
+              <stop offset="100%" stopColor="#F59E0B" />
+            </linearGradient>
+            <linearGradient id="goldOilShine" x1="0" y1="0" x2="1" y2="1">
+              <stop offset="0%" stopColor="#FDE047" />
+              <stop offset="50%" stopColor="#F59E0B" />
+              <stop offset="100%" stopColor="#D97706" />
+            </linearGradient>
+            <pattern id="greekDots" width="40" height="40" patternUnits="userSpaceOnUse">
+              <circle cx="20" cy="20" r="3" fill="#D97706" opacity="0.25" />
+            </pattern>
+          </defs>
+
+          {/* Cielo árido al atardecer con patrón de puntos */}
+          <rect width="1080" height="1920" fill="url(#skyGreekSunset)" />
+          <rect width="1080" height="1920" fill="url(#greekDots)" />
+
+          {/* Sol poniente neo-brutalista */}
+          <circle cx="540" cy="620" r="160" fill="#FBBF24" stroke="#000000" strokeWidth="8" />
+
+          {/* Parallax Capa 1: Columnas y Acrópolis griega al fondo */}
+          <g opacity="0.45">
+            <rect x="180" y="680" width="45" height="320" fill="#CA8A04" stroke="#000000" strokeWidth="6" />
+            <rect x="260" y="680" width="45" height="320" fill="#CA8A04" stroke="#000000" strokeWidth="6" />
+            <rect x="340" y="680" width="45" height="320" fill="#CA8A04" stroke="#000000" strokeWidth="6" />
+            <polygon points="150,680 270,600 390,680" fill="#B45309" stroke="#000000" strokeWidth="6" />
+            
+            <rect x="700" y="700" width="40" height="300" fill="#CA8A04" stroke="#000000" strokeWidth="6" />
+            <rect x="780" y="700" width="40" height="300" fill="#CA8A04" stroke="#000000" strokeWidth="6" />
+            <rect x="860" y="700" width="40" height="300" fill="#CA8A04" stroke="#000000" strokeWidth="6" />
+            <polygon points="670,700 780,620 890,700" fill="#B45309" stroke="#000000" strokeWidth="6" />
+          </g>
+
+          {/* Parallax Capa 2: Colinas minerales áridas */}
+          <path
+            d="M -50,1050 Q 240,920 540,1020 T 1130,950 L 1130,1920 L -50,1920 Z"
+            fill="#B45309"
+            stroke="#000000"
+            strokeWidth="10"
+          />
+
+          {/* Parallax Capa 3: Terreno rocoso con fisuras de aceite vegetal */}
+          <path
+            d="M -40,1280 Q 280,1180 580,1260 T 1120,1200 L 1120,1920 L -40,1920 Z"
+            fill="#78350F"
+            stroke="#000000"
+            strokeWidth="12"
+          />
+
+          {/* Grandes Rocas Neo-Brutalistas en primer plano con grietas doradas */}
+          <g transform="translate(180, 1420)">
+            <polygon points="-120,80 -80,-90 60,-130 140,-40 110,90" fill="#475569" stroke="#000000" strokeWidth="10" strokeLinejoin="round" />
+            <path d="M -50,-50 L 10,10 L -20,60" fill="none" stroke="#FBBF24" strokeWidth="8" strokeLinecap="round" />
+            <path d="M 30,-80 L 40,-10 L 80,40" fill="none" stroke="url(#goldOilShine)" strokeWidth="10" strokeLinecap="round" />
+            <circle cx="45" cy={10 + shimmer} r="14" fill="#FDE047" stroke="#000000" strokeWidth="5" opacity={pulseGold} />
+          </g>
+
+          <g transform="translate(860, 1400)">
+            <polygon points="-130,90 -90,-110 50,-140 130,-30 100,100" fill="#334155" stroke="#000000" strokeWidth="10" strokeLinejoin="round" />
+            <path d="M -40,-60 L 0,-10 L -20,50" fill="none" stroke="url(#goldOilShine)" strokeWidth="9" strokeLinecap="round" />
+            <circle cx="-10" cy={5 - shimmer} r="16" fill="#FDE047" stroke="#000000" strokeWidth="5" opacity={pulseGold} />
+          </g>
+
+          {/* Cartel flotante neo-brutalista 'PETRA + ÍCOR = PETRICOR' */}
+          <g transform="translate(540, 480)">
+            <rect x="-290" y="-55" width="580" height="110" rx="18" fill="#FFE600" stroke="#000000" strokeWidth="8" />
+            <text x="0" y="-12" textAnchor="middle" fill="#000000" fontSize="32" fontWeight="900" fontFamily="'Impact', 'Arial Black', sans-serif">
+              PETRA (ROCA) + ÍCOR (FLUIDO DIVINO)
+            </text>
+            <text x="0" y="32" textAnchor="middle" fill="#B45309" fontSize="24" fontWeight="900" fontFamily="'Impact', 'Arial Black', sans-serif">
+              ORIGEN DEL NOMBRE CIENTÍFICO (1964)
+            </text>
+          </g>
+        </svg>
+      </div>
+    );
+  }
+
+  // ==========================================
+  // ESCENARIO 1 (VIDEO 3): LABORATORIO NEUROCIENCIA MANO GOMA
+  // ==========================================
+  if (escenario === "laboratorio_neurociencia_mano_goma") {
+    const pulseLight = 0.8 + Math.sin(frame * 0.12) * 0.2;
+    return (
+      <div className="absolute inset-0 pointer-events-none z-0 overflow-hidden bg-[#1E1B4B]">
+        <svg className="absolute inset-0 w-full h-full" viewBox="0 0 1080 1920" preserveAspectRatio="xMidYMid slice">
+          <defs>
+            <linearGradient id="labNeuroBg" x1="0" y1="0" x2="0" y2="1">
+              <stop offset="0%" stopColor="#1E1B4B" />
+              <stop offset="60%" stopColor="#312E81" />
+              <stop offset="100%" stopColor="#4338CA" />
+            </linearGradient>
+            <pattern id="labGrid" width="60" height="60" patternUnits="userSpaceOnUse">
+              <line x1="0" y1="0" x2="60" y2="0" stroke="#6366F1" strokeWidth="2" opacity="0.25" />
+              <line x1="0" y1="0" x2="0" y2="60" stroke="#6366F1" strokeWidth="2" opacity="0.25" />
+            </pattern>
+          </defs>
+
+          {/* Fondo de laboratorio con cuadrícula blueprint */}
+          <rect width="1080" height="1920" fill="url(#labNeuroBg)" />
+          <rect width="1080" height="1920" fill="url(#labGrid)" />
+
+          {/* Luz de examen cenital focalizada */}
+          <polygon points="540,100 200,1400 880,1400" fill="#EEF2FF" opacity={0.12 * pulseLight} />
+          <line x1="540" y1="0" x2="540" y2="180" stroke="#000000" strokeWidth="8" />
+          <ellipse cx="540" cy="180" rx="90" ry="30" fill="#FBBF24" stroke="#000000" strokeWidth="6" />
+
+          {/* Parallax Capa 1: Pantalla holográfica de neuro-escaneo al fondo */}
+          <g transform="translate(540, 560)">
+            <rect x="-320" y="-140" width="640" height="280" rx="16" fill="#0F172A" stroke="#000000" strokeWidth="8" />
+            {/* Silueta de cerebro en escaneo */}
+            <path d="M -160,20 C -180,-80 0,-100 20,-50 C 60,-100 160,-60 150,20 C 160,80 50,110 0,70 C -60,110 -160,70 -160,20 Z" fill="#4338CA" stroke="#38BDF8" strokeWidth="5" />
+            <line x1="-280" y1={Math.sin(frame * 0.15) * 80} x2="280" y2={Math.sin(frame * 0.15) * 80} stroke="#22C55E" strokeWidth="4" strokeDasharray="6,4" />
+            <text x="0" y="115" textAnchor="middle" fill="#38BDF8" fontSize="22" fontWeight="900" fontFamily="'Impact', 'Arial Black', sans-serif">
+              BOTVINICK & COHEN · 1998
+            </text>
+          </g>
+
+          {/* Parallax Capa 2: Mesa de experimentación con mampara divisoria */}
+          <g transform="translate(540, 1380)">
+            {/* Patas de mesa */}
+            <rect x="-380" y="40" width="30" height="300" fill="#334155" stroke="#000000" strokeWidth="6" />
+            <rect x="350" y="40" width="30" height="300" fill="#334155" stroke="#000000" strokeWidth="6" />
+            {/* Tablero de mesa blanco clinical */}
+            <rect x="-440" y="0" width="880" height="50" rx="6" fill="#F8FAFC" stroke="#000000" strokeWidth="8" />
+            {/* Pantalla opaca de separación (oculta la mano real) */}
+            <rect x="-10" y="-280" width="20" height="280" rx="4" fill="#2563EB" stroke="#000000" strokeWidth="7" />
+            <rect x="-4" y="-270" width="8" height="260" fill="#60A5FA" />
+            {/* Rótulo diegético sobre la mesa */}
+            <rect x="-180" y="70" width="360" height="40" rx="8" fill="#FFE600" stroke="#000000" strokeWidth="5" />
+            <text x="0" y="97" textAnchor="middle" fill="#000000" fontSize="18" fontWeight="900" fontFamily="'Impact', 'Arial Black', sans-serif">
+              DIVISOR VISUAL: REAL VS GOMA
+            </text>
+          </g>
+
+          {/* Parallax Capa 3: Suelo de laboratorio con franjas de precaución */}
+          <rect y="1650" width="1080" height="270" fill="#0F172A" stroke="#000000" strokeWidth="10" />
+          <path d="M 0,1650 L 1080,1650" stroke="#FBBF24" strokeWidth="14" strokeDasharray="50,40" />
+        </svg>
+      </div>
+    );
+  }
+
+  // ==========================================
+  // ESCENARIO 2 (VIDEO 3): MACRO PINCELES Y DEDOS EN SINCRONÍA
+  // ==========================================
+  if (escenario === "macro_pinceles_dedos_sincronia") {
+    const waveX = Math.sin(frame * 0.18) * 40;
+    return (
+      <div className="absolute inset-0 pointer-events-none z-0 overflow-hidden bg-[#FFFBEB]">
+        <svg className="absolute inset-0 w-full h-full" viewBox="0 0 1080 1920" preserveAspectRatio="xMidYMid slice">
+          <defs>
+            <linearGradient id="warmStudioBg" x1="0" y1="0" x2="0" y2="1">
+              <stop offset="0%" stopColor="#FEF3C7" />
+              <stop offset="100%" stopColor="#FDE68A" />
+            </linearGradient>
+            <pattern id="macroDots" width="36" height="36" patternUnits="userSpaceOnUse">
+              <circle cx="18" cy="18" r="3" fill="#F59E0B" opacity="0.3" />
+            </pattern>
+          </defs>
+
+          <rect width="1080" height="1920" fill="url(#warmStudioBg)" />
+          <rect width="1080" height="1920" fill="url(#macroDots)" />
+
+          {/* Fondo: Monitor de osciloscopio táctil en sincronía */}
+          <g transform="translate(540, 520)">
+            <rect x="-340" y="-120" width="680" height="240" rx="14" fill="#022C22" stroke="#000000" strokeWidth="8" />
+            {/* Curvas sinusoidales en fase perfecta */}
+            <path
+              d={`M -300,${Math.sin(frame * 0.2) * 35} Q -150,${-50 + Math.sin(frame * 0.2) * 35} 0,${Math.sin(frame * 0.2) * 35} T 300,${Math.sin(frame * 0.2) * 35}`}
+              fill="none"
+              stroke="#22C55E"
+              strokeWidth="7"
+              strokeLinecap="round"
+            />
+            <path
+              d={`M -300,${Math.sin(frame * 0.2) * 35} Q -150,${-50 + Math.sin(frame * 0.2) * 35} 0,${Math.sin(frame * 0.2) * 35} T 300,${Math.sin(frame * 0.2) * 35}`}
+              fill="none"
+              stroke="#38BDF8"
+              strokeWidth="4"
+              strokeDasharray="8,6"
+            />
+            <text x="0" y="90" textAnchor="middle" fill="#22C55E" fontSize="22" fontWeight="900" fontFamily="'Impact', 'Arial Black', sans-serif">
+              SINCRONIZACIÓN MILIMÉTRICA = INTEGRACIÓN CEREBRAL
+            </text>
+          </g>
+
+          {/* Pinceladas gigantes estilizadas cruzando la pantalla */}
+          <g transform="translate(540, 1200)">
+            {/* Camino de caricia táctil */}
+            <path d={`M -350,0 Q 0,${-40 + waveX} 350,0`} fill="none" stroke="#FBBF24" strokeWidth="24" opacity="0.4" strokeLinecap="round" />
+            <circle cx={-180 + waveX} cy="-20" r="16" fill="#FDE047" stroke="#000000" strokeWidth="5" />
+            <circle cx={180 + waveX} cy="-20" r="16" fill="#FDE047" stroke="#000000" strokeWidth="5" />
+          </g>
+
+          {/* Gran pancarta explicativa neo-brutalista */}
+          <g transform="translate(540, 320)">
+            <rect x="-300" y="-45" width="600" height="90" rx="14" fill="#FFE600" stroke="#000000" strokeWidth="8" />
+            <text x="0" y="10" textAnchor="middle" fill="#000000" fontSize="30" fontWeight="900" fontFamily="'Impact', 'Arial Black', sans-serif">
+              ESTÍMULO TÁCTIL Y VISUAL IDÉNTICO
+            </text>
+          </g>
+        </svg>
+      </div>
+    );
+  }
+
+  // ==========================================
+  // ESCENARIO 3 (VIDEO 3): INTERIOR CORTEZA CEREBRAL Y REDES
+  // ==========================================
+  if (escenario === "interior_corteza_cerebral_redes") {
+    const spark = (0.7 + Math.sin(frame * 0.25) * 0.3).toFixed(2);
+    const flowY = (frame * 6) % 180;
+    return (
+      <div className="absolute inset-0 pointer-events-none z-0 overflow-hidden bg-[#0F051D]">
+        <svg className="absolute inset-0 w-full h-full" viewBox="0 0 1080 1920" preserveAspectRatio="xMidYMid slice">
+          <defs>
+            <linearGradient id="cortexDark" x1="0" y1="0" x2="0" y2="1">
+              <stop offset="0%" stopColor="#0F051D" />
+              <stop offset="50%" stopColor="#2E1065" />
+              <stop offset="100%" stopColor="#1E1B4B" />
+            </linearGradient>
+          </defs>
+
+          <rect width="1080" height="1920" fill="url(#cortexDark)" />
+
+          {/* Siluetas de circunvoluciones cerebrales en capas */}
+          <path
+            d="M -100,500 C 150,300 350,650 600,450 C 850,250 1150,550 1200,800 L 1200,1920 L -100,1920 Z"
+            fill="#3B0764"
+            stroke="#000000"
+            strokeWidth="10"
+          />
+          <path
+            d="M -50,900 C 200,750 400,1050 700,850 C 950,700 1100,1000 1150,1200 L 1150,1920 L -50,1920 Z"
+            fill="#581C87"
+            stroke="#000000"
+            strokeWidth="10"
+          />
+
+          {/* Redes neuronales y sinapsis disparando pulsos */}
+          <g stroke="#38BDF8" strokeWidth="6" strokeLinecap="round" opacity={spark}>
+            <line x1="240" y1="620" x2="440" y2="760" />
+            <line x1="440" y1="760" x2="680" y2="720" />
+            <line x1="680" y1="720" x2="840" y2="860" />
+            <line x1="440" y1="760" x2="520" y2="980" />
+            <line x1="520" y1="980" x2="360" y2="1140" />
+          </g>
+
+          {/* Nodos sinápticos amarillos brillantes */}
+          <circle cx="240" cy="620" r="18" fill="#FFE600" stroke="#000000" strokeWidth="6" />
+          <circle cx="440" cy="760" r="22" fill="#FFE600" stroke="#000000" strokeWidth="6" />
+          <circle cx="680" cy="720" r="20" fill="#38BDF8" stroke="#000000" strokeWidth="6" />
+          <circle cx="840" cy="860" r="18" fill="#FFE600" stroke="#000000" strokeWidth="6" />
+          <circle cx="520" cy="980" r="24" fill="#EC4899" stroke="#000000" strokeWidth="6" />
+          <circle cx="360" cy="1140" r="18" fill="#FFE600" stroke="#000000" strokeWidth="6" />
+
+          {/* Gran rótulo de reescritura somatosensorial */}
+          <g transform="translate(540, 420)">
+            <rect x="-310" y="-55" width="620" height="110" rx="16" fill="#F43F5E" stroke="#000000" strokeWidth="8" />
+            <text x="0" y="-12" textAnchor="middle" fill="#FFFFFF" fontSize="30" fontWeight="900" fontFamily="'Impact', 'Arial Black', sans-serif">
+              CORTEZA SOMATOSENSORIAL HACKEADA
+            </text>
+            <text x="0" y="32" textAnchor="middle" fill="#FFE600" fontSize="22" fontWeight="900" fontFamily="'Impact', 'Arial Black', sans-serif">
+              EL PLÁSTICO SE INTEGRA EN TU MAPA CORPORAL
+            </text>
+          </g>
+        </svg>
+      </div>
+    );
+  }
+
+  // ==========================================
+  // ESCENARIO 4 (VIDEO 3): CLÍMAX MARTILLO Y PÁNICO EN LA MESA
+  // ==========================================
+  if (escenario === "climax_martillo_panico_mesa") {
+    const flashAlert = (frame % 10 < 5 ? 1 : 0.4).toFixed(2);
+    const shakeY = Math.sin(frame * 0.4) * 8;
+    return (
+      <div className="absolute inset-0 pointer-events-none z-0 overflow-hidden bg-[#7F1D1D]">
+        <svg className="absolute inset-0 w-full h-full" viewBox="0 0 1080 1920" preserveAspectRatio="xMidYMid slice">
+          <defs>
+            <linearGradient id="alertBg" x1="0" y1="0" x2="0" y2="1">
+              <stop offset="0%" stopColor="#991B1B" />
+              <stop offset="50%" stopColor="#7F1D1D" />
+              <stop offset="100%" stopColor="#450A0A" />
+            </linearGradient>
+            <pattern id="dangerHazard" width="80" height="80" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+              <rect width="40" height="80" fill="#000000" />
+              <rect x="40" width="40" height="80" fill="#FBBF24" />
+            </pattern>
+          </defs>
+
+          <rect width="1080" height="1920" fill="url(#alertBg)" />
+
+          {/* Franjas diagonales de peligro en la parte superior e inferior */}
+          <rect y="160" width="1080" height="80" fill="url(#dangerHazard)" stroke="#000000" strokeWidth="6" />
+          <rect y="1680" width="1080" height="80" fill="url(#dangerHazard)" stroke="#000000" strokeWidth="6" />
+
+          {/* Foco de luz dramática cayendo sobre la mesa */}
+          <polygon points="540,120 160,1500 920,1500" fill="#FEF08A" opacity={0.25} />
+
+          {/* Anillos de choque / impacto inminente */}
+          <g transform={`translate(540, ${1280 + shakeY})`}>
+            <circle cx="0" cy="0" r="180" fill="none" stroke="#EF4444" strokeWidth="12" opacity={flashAlert} />
+            <circle cx="0" cy="0" r="240" fill="none" stroke="#FBBF24" strokeWidth="8" strokeDasharray="14,14" />
+            {/* Mancha de sombra en mesa */}
+            <ellipse cx="0" cy="40" rx="200" ry="40" fill="#000000" opacity="0.6" />
+          </g>
+
+          {/* Cartel de emergencia: '¡GOLPE INMINENTE!' */}
+          <g transform="translate(540, 440)">
+            <rect x="-300" y="-60" width="600" height="120" rx="18" fill="#EF4444" stroke="#000000" strokeWidth="9" />
+            <text x="0" y="-14" textAnchor="middle" fill="#FFFFFF" fontSize="36" fontWeight="900" fontFamily="'Impact', 'Arial Black', sans-serif">
+              ¡AMENAZA DE MARTILLO!
+            </text>
+            <text x="0" y="36" textAnchor="middle" fill="#FFE600" fontSize="26" fontWeight="900" fontFamily="'Impact', 'Arial Black', sans-serif">
+              RESPUESTA DE PROTECCIÓN INSTINTIVA
+            </text>
+          </g>
+        </svg>
+      </div>
+    );
+  }
+
+  // ==========================================
+  // ESCENARIO 5 (VIDEO 3): GRÁFICA ESTRÉS CARDÍACO Y FISIOLOGÍA
+  // ==========================================
+  if (escenario === "grafica_estres_cardiaco_laboratorio") {
+    const ecgOffset = (frame * 12) % 400;
+    return (
+      <div className="absolute inset-0 pointer-events-none z-0 overflow-hidden bg-[#022C22]">
+        <svg className="absolute inset-0 w-full h-full" viewBox="0 0 1080 1920" preserveAspectRatio="xMidYMid slice">
+          <defs>
+            <linearGradient id="monitorBg" x1="0" y1="0" x2="0" y2="1">
+              <stop offset="0%" stopColor="#022C22" />
+              <stop offset="100%" stopColor="#064E3B" />
+            </linearGradient>
+            <pattern id="ecgGrid" width="40" height="40" patternUnits="userSpaceOnUse">
+              <rect width="40" height="40" fill="none" stroke="#059669" strokeWidth="1.5" opacity="0.3" />
+            </pattern>
+          </defs>
+
+          <rect width="1080" height="1920" fill="url(#monitorBg)" />
+          <rect width="1080" height="1920" fill="url(#ecgGrid)" />
+
+          {/* Gran trazado electrocardiográfico de adrenalina */}
+          <g transform="translate(0, 780)">
+            <path
+              d="M 40,0 L 240,0 L 270,-180 L 310,120 L 340,-60 L 370,0 L 580,0 L 610,-240 L 650,160 L 690,-80 L 720,0 L 1040,0"
+              fill="none"
+              stroke="#22C55E"
+              strokeWidth="8"
+              strokeLinecap="round"
+              strokeLinejoin="round"
+            />
+            {/* Punto de barrido brillante */}
+            <circle cx={40 + ecgOffset} cy="0" r="14" fill="#86EFAC" stroke="#000000" strokeWidth="4" />
+          </g>
+
+          {/* Cajas de telemetría médica en estilo neo-brutalista */}
+          <g transform="translate(260, 1180)">
+            <rect x="-160" y="-70" width="320" height="140" rx="14" fill="#0F172A" stroke="#000000" strokeWidth="7" />
+            <text x="0" y="-20" textAnchor="middle" fill="#94A3B8" fontSize="20" fontWeight="900" fontFamily="'Impact', 'Arial Black', sans-serif">RITMO CARDÍACO</text>
+            <text x="0" y="38" textAnchor="middle" fill="#EF4444" fontSize="48" fontWeight="900" fontFamily="'Impact', 'Arial Black', sans-serif">142 BPM</text>
+          </g>
+
+          <g transform="translate(820, 1180)">
+            <rect x="-160" y="-70" width="320" height="140" rx="14" fill="#0F172A" stroke="#000000" strokeWidth="7" />
+            <text x="0" y="-20" textAnchor="middle" fill="#94A3B8" fontSize="20" fontWeight="900" fontFamily="'Impact', 'Arial Black', sans-serif">RESPUESTA GALVÁNICA</text>
+            <text x="0" y="38" textAnchor="middle" fill="#38BDF8" fontSize="44" fontWeight="900" fontFamily="'Impact', 'Arial Black', sans-serif">+380% SUDOR</text>
+          </g>
+
+          {/* Rótulo superior */}
+          <g transform="translate(540, 420)">
+            <rect x="-310" y="-50" width="620" height="100" rx="16" fill="#FFE600" stroke="#000000" strokeWidth="8" />
+            <text x="0" y="-10" textAnchor="middle" fill="#000000" fontSize="30" fontWeight="900" fontFamily="'Impact', 'Arial Black', sans-serif">
+              EL CUERPO REACCIONA DE VERDAD
+            </text>
+            <text x="0" y="30" textAnchor="middle" fill="#B91C1C" fontSize="22" fontWeight="900" fontFamily="'Impact', 'Arial Black', sans-serif">
+              SUBIDÓN REAL DE ADRENALINA POR UN PLÁSTICO
+            </text>
+          </g>
+        </svg>
+      </div>
+    );
+  }
+
+  // ==========================================
+  // ESCENARIO 6 (VIDEO 3): CIERRE EUREKA NEUROCIENCIA
+  // ==========================================
+  if (escenario === "laboratorio_cierre_eureka_neuro") {
+    const floatRing = Math.sin(frame * 0.15) * 8;
+    return (
+      <div className="absolute inset-0 pointer-events-none z-0 overflow-hidden bg-[#FAF5FF]">
+        <svg className="absolute inset-0 w-full h-full" viewBox="0 0 1080 1920" preserveAspectRatio="xMidYMid slice">
+          <defs>
+            <linearGradient id="eurekaBg" x1="0" y1="0" x2="0" y2="1">
+              <stop offset="0%" stopColor="#FAF5FF" />
+              <stop offset="50%" stopColor="#F3E8FF" />
+              <stop offset="100%" stopColor="#E9D5FF" />
+            </linearGradient>
+            <pattern id="eurekaStars" width="60" height="60" patternUnits="userSpaceOnUse">
+              <polygon points="30,22 32,28 38,30 32,32 30,38 28,32 22,30 28,28" fill="#C084FC" opacity="0.4" />
+            </pattern>
+          </defs>
+
+          <rect width="1080" height="1920" fill="url(#eurekaBg)" />
+          <rect width="1080" height="1920" fill="url(#eurekaStars)" />
+
+          {/* Gran halo de luz dorada reveladora */}
+          <circle cx="540" cy="800" r={280 + floatRing} fill="#FEF08A" stroke="#000000" strokeWidth="9" />
+          <circle cx="540" cy="800" r="220" fill="#FDE047" stroke="#000000" strokeWidth="6" opacity="0.6" />
+
+          {/* Destellos flotantes */}
+          <polygon points="260,650 270,680 300,690 270,700 260,730 250,700 220,690 250,680" fill="#FFE600" stroke="#000000" strokeWidth="4" />
+          <polygon points="820,720 830,750 860,760 830,770 820,800 810,770 780,760 810,750" fill="#38BDF8" stroke="#000000" strokeWidth="4" />
+
+          {/* Suelo decorativo con tarima de laboratorio */}
+          <rect y="1600" width="1080" height="320" fill="#581C87" stroke="#000000" strokeWidth="10" />
+          <line x1="0" y1="1600" x2="1080" y2="1600" stroke="#FFE600" strokeWidth="12" />
+
+          {/* Gran rótulo de cierre */}
+          <g transform="translate(540, 420)">
+            <rect x="-320" y="-55" width="640" height="110" rx="18" fill="#FFE600" stroke="#000000" strokeWidth="9" />
+            <text x="0" y="-12" textAnchor="middle" fill="#000000" fontSize="32" fontWeight="900" fontFamily="'Impact', 'Arial Black', sans-serif">
+              TU CUERPO ES MÁS MALEABLE DE LO QUE CREES
+            </text>
+            <text x="0" y="32" textAnchor="middle" fill="#6B21A8" fontSize="22" fontWeight="900" fontFamily="'Impact', 'Arial Black', sans-serif">
+              NEUROCIENCIA MULTISENSORIAL EN ACCIÓN
+            </text>
+          </g>
+        </svg>
+      </div>
+    );
+  }
+
+  // ==========================================
+  // ESCENARIO 1 (VIDEO 4): AULA DE CLASES Y ANATOMÍA
+  // ==========================================
+  if (escenario === "aula_clases_anatomia_pizarron") {
+    return (
+      <div className="absolute inset-0 pointer-events-none z-0 overflow-hidden bg-[#FEF3C7]">
+        <svg className="absolute inset-0 w-full h-full" viewBox="0 0 1080 1920" preserveAspectRatio="xMidYMid slice">
+          <defs>
+            <linearGradient id="classBg" x1="0" y1="0" x2="0" y2="1">
+              <stop offset="0%" stopColor="#FEF3C7" />
+              <stop offset="50%" stopColor="#FDE68A" />
+              <stop offset="100%" stopColor="#F59E0B" />
+            </linearGradient>
+          </defs>
+
+          <rect width="1080" height="1920" fill="url(#classBg)" />
+
+          {/* Gran Pizarrón Escolar Verde al centro */}
+          <g transform="translate(540, 520)">
+            <rect x="-380" y="-180" width="760" height="360" rx="16" fill="#78350F" stroke="#000000" strokeWidth="9" />
+            <rect x="-350" y="-150" width="700" height="300" rx="8" fill="#064E3B" stroke="#000000" strokeWidth="4" />
+            {/* Dibujo de esquema circulatorio escolar */}
+            <path d="M -120,-80 C -120,40 -40,80 0,100" fill="none" stroke="#EF4444" strokeWidth="8" strokeLinecap="round" />
+            <path d="M 120,-80 C 120,40 40,80 0,100" fill="none" stroke="#0284C7" strokeWidth="8" strokeLinecap="round" />
+            <text x="-120" y="-100" textAnchor="middle" fill="#EF4444" fontSize="24" fontWeight="900" fontFamily="'Impact', 'Arial Black', sans-serif">ARTERIAS (ROJO)</text>
+            <text x="120" y="-100" textAnchor="middle" fill="#38BDF8" fontSize="24" fontWeight="900" fontFamily="'Impact', 'Arial Black', sans-serif">VENAS (¿AZUL?)</text>
+            <text x="0" y="80" textAnchor="middle" fill="#FFE600" fontSize="28" fontWeight="900" fontFamily="'Impact', 'Arial Black', sans-serif">EL GRAN MITO ESCOLAR</text>
+          </g>
+
+          {/* Suelo de madera de aula escolar */}
+          <rect y="1520" width="1080" height="400" fill="#92400E" stroke="#000000" strokeWidth="10" />
+          <line x1="0" y1="1520" x2="1080" y2="1520" stroke="#000000" strokeWidth="12" />
+        </svg>
+      </div>
+    );
+  }
+
+  // ==========================================
+  // ESCENARIO 2 (VIDEO 4): LABORATORIO HEMATOLOGÍA Y TUBOS DE SANGRE
+  // ==========================================
+  if (escenario === "laboratorio_hematologia_tubos") {
+    const pulseTube = (0.7 + Math.sin(frame * 0.16) * 0.3).toFixed(2);
+    return (
+      <div className="absolute inset-0 pointer-events-none z-0 overflow-hidden bg-[#0F172A]">
+        <svg className="absolute inset-0 w-full h-full" viewBox="0 0 1080 1920" preserveAspectRatio="xMidYMid slice">
+          <defs>
+            <linearGradient id="hematoBg" x1="0" y1="0" x2="0" y2="1">
+              <stop offset="0%" stopColor="#0F172A" />
+              <stop offset="60%" stopColor="#1E293B" />
+              <stop offset="100%" stopColor="#334155" />
+            </linearGradient>
+          </defs>
+
+          <rect width="1080" height="1920" fill="url(#hematoBg)" />
+
+          {/* Gran pantalla digital de análisis de hemoglobina */}
+          <g transform="translate(540, 500)">
+            <rect x="-340" y="-130" width="680" height="260" rx="16" fill="#020617" stroke="#000000" strokeWidth="8" />
+            <text x="0" y="-50" textAnchor="middle" fill="#EF4444" fontSize="28" fontWeight="900" fontFamily="'Impact', 'Arial Black', sans-serif">
+              ANÁLISIS DE COLOR SANGUÍNEO
+            </text>
+            <rect x="-280" y="-20" width="240" height="90" rx="10" fill="#EF4444" stroke="#000000" strokeWidth="5" />
+            <text x="-160" y="32" textAnchor="middle" fill="#FFF" fontSize="22" fontWeight="900" fontFamily="'Impact', 'Arial Black', sans-serif">
+              ARTERIAL: 100% O2
+            </text>
+            <rect x="40" y="-20" width="240" height="90" rx="10" fill="#881337" stroke="#000000" strokeWidth="5" />
+            <text x="160" y="32" textAnchor="middle" fill="#FFF" fontSize="22" fontWeight="900" fontFamily="'Impact', 'Arial Black', sans-serif">
+              VENOSA: 75% O2
+            </text>
+            <text x="0" y="105" textAnchor="middle" fill="#FFE600" fontSize="20" fontWeight="900" fontFamily="'Impact', 'Arial Black', sans-serif">
+              ¡AMBAS MUESTRAS SON 100% ROJAS!
+            </text>
+          </g>
+
+          {/* Mesada de acero inoxidable neo-brutalista */}
+          <rect y="1450" width="1080" height="470" fill="#475569" stroke="#000000" strokeWidth="10" />
+          <line x1="0" y1="1450" x2="1080" y2="1450" stroke="#94A3B8" strokeWidth="12" />
+        </svg>
+      </div>
+    );
+  }
+
+  // ==========================================
+  // ESCENARIO 3 (VIDEO 4): MACRO ÓPTICA DE LA PIEL SUBCUTÁNEA
+  // ==========================================
+  if (escenario === "macro_optica_piel_subcutanea") {
+    const pulseVein = Math.sin(frame * 0.2) * 5;
+    return (
+      <div className="absolute inset-0 pointer-events-none z-0 overflow-hidden bg-[#FED7AA]">
+        <svg className="absolute inset-0 w-full h-full" viewBox="0 0 1080 1920" preserveAspectRatio="xMidYMid slice">
+          {/* Capa 1: Epidermis exterior */}
+          <rect y="0" width="1080" height="580" fill="#FED7AA" />
+          <line x1="0" y1="580" x2="1080" y2="580" stroke="#000000" strokeWidth="8" />
+
+          {/* Capa 2: Dermis vascular */}
+          <rect y="580" width="1080" height="520" fill="#FDBA74" />
+          <line x1="0" y1="1100" x2="1080" y2="1100" stroke="#000000" strokeWidth="8" />
+
+          {/* Capa 3: Tejido subcutáneo / grasa */}
+          <rect y="1100" width="1080" height="820" fill="#FEF08A" />
+
+          {/* Vena subcutánea profunda que transporta sangre roja oscura */}
+          <g transform={`translate(540, ${1360 + pulseVein})`}>
+            <rect x="-380" y="-80" width="760" height="160" rx="30" fill="#881337" stroke="#000000" strokeWidth="9" />
+            <path d="M -350,0 Q -150,-40 0,0 T 350,0" fill="none" stroke="#BE123C" strokeWidth="12" strokeLinecap="round" />
+            <text x="0" y="16" textAnchor="middle" fill="#FFFFFF" fontSize="32" fontWeight="900" fontFamily="'Impact', 'Arial Black', sans-serif">
+              VENA PROFUNDA (SANGRE ROJA OSCURA)
+            </text>
+          </g>
+
+          {/* Rótulos explicativos de capas diegéticas */}
+          <g transform="translate(180, 500)">
+            <rect x="-140" y="-35" width="280" height="70" rx="10" fill="#FFE600" stroke="#000000" strokeWidth="6" />
+            <text x="0" y="8" textAnchor="middle" fill="#000000" fontSize="22" fontWeight="900" fontFamily="'Impact', 'Arial Black', sans-serif">EPIDERMIS</text>
+          </g>
+          <g transform="translate(180, 1020)">
+            <rect x="-140" y="-35" width="280" height="70" rx="10" fill="#FFE600" stroke="#000000" strokeWidth="6" />
+            <text x="0" y="8" textAnchor="middle" fill="#000000" fontSize="22" fontWeight="900" fontFamily="'Impact', 'Arial Black', sans-serif">DERMIS</text>
+          </g>
+        </svg>
+      </div>
+    );
+  }
+
+  // ==========================================
+  // ESCENARIO 4 (VIDEO 4): ESPECTRO DISPERSIÓN RAYLEIGH
+  // ==========================================
+  if (escenario === "espectro_fotones_dispersion_rayleigh") {
+    const redWave = (frame * 8) % 120;
+    const blueWave = (frame * 14) % 90;
+    return (
+      <div className="absolute inset-0 pointer-events-none z-0 overflow-hidden bg-[#030712]">
+        <svg className="absolute inset-0 w-full h-full" viewBox="0 0 1080 1920" preserveAspectRatio="xMidYMid slice">
+          {/* Fondo espacial de física óptica */}
+          <rect width="1080" height="1920" fill="#030712" />
+
+          {/* Diagrama de luz roja (longitud de onda larga penetra profundo) */}
+          <g transform="translate(320, 600)">
+            <rect x="-180" y="-140" width="360" height="520" rx="18" fill="#1E1B4B" stroke="#000000" strokeWidth="8" />
+            <text x="0" y="-80" textAnchor="middle" fill="#EF4444" fontSize="26" fontWeight="900" fontFamily="'Impact', 'Arial Black', sans-serif">LUZ ROJA (700 nm)</text>
+            {/* Haz que viaja hacia abajo hasta la vena y es absorbido */}
+            <path d="M 0,-40 L 0,260" stroke="#EF4444" strokeWidth="14" strokeLinecap="round" strokeDasharray="16,8" />
+            <ellipse cx="0" cy="280" rx="60" ry="24" fill="#881337" stroke="#000000" strokeWidth="6" />
+            <text x="0" y="340" textAnchor="middle" fill="#EF4444" fontSize="20" fontWeight="900" fontFamily="'Impact', 'Arial Black', sans-serif">ABSORBIDA POR LA VENA</text>
+          </g>
+
+          {/* Diagrama de luz azul (longitud de onda corta se dispersa hacia el ojo) */}
+          <g transform="translate(760, 600)">
+            <rect x="-180" y="-140" width="360" height="520" rx="18" fill="#1E1B4B" stroke="#000000" strokeWidth="8" />
+            <text x="0" y="-80" textAnchor="middle" fill="#38BDF8" fontSize="26" fontWeight="900" fontFamily="'Impact', 'Arial Black', sans-serif">LUZ AZUL (450 nm)</text>
+            {/* Haz que rebota de vuelta arriba sin llegar a la vena */}
+            <path d="M 0,-40 L 0,100 L 40,-20" stroke="#0284C7" strokeWidth="14" strokeLinecap="round" />
+            <polygon points="40,-20 60,-10 30,10" fill="#38BDF8" />
+            <text x="0" y="340" textAnchor="middle" fill="#38BDF8" fontSize="20" fontWeight="900" fontFamily="'Impact', 'Arial Black', sans-serif">REBOTA HACIA TUS OJOS</text>
+          </g>
+
+          {/* Gran rótulo explicativo */}
+          <g transform="translate(540, 1420)">
+            <rect x="-340" y="-60" width="680" height="120" rx="18" fill="#FFE600" stroke="#000000" strokeWidth="8" />
+            <text x="0" y="-12" textAnchor="middle" fill="#000000" fontSize="32" fontWeight="900" fontFamily="'Impact', 'Arial Black', sans-serif">
+              DISPERSIÓN ÓPTICA EN LA PIEL
+            </text>
+            <text x="0" y="34" textAnchor="middle" fill="#0369A1" fontSize="24" fontWeight="900" fontFamily="'Impact', 'Arial Black', sans-serif">
+              LA PIEL REFLEJA EL AZUL, LA SANGRE TRAGA EL ROJO
+            </text>
+          </g>
+        </svg>
+      </div>
+    );
+  }
+
+  // ==========================================
+  // ESCENARIO 5 (VIDEO 4): ESTUDIO DESMENTIR MITO
+  // ==========================================
+  if (escenario === "estudio_desmentir_mito_escolar") {
+    const flash = (frame % 8 < 4 ? 1 : 0.4).toFixed(2);
+    return (
+      <div className="absolute inset-0 pointer-events-none z-0 overflow-hidden bg-[#7F1D1D]">
+        <svg className="absolute inset-0 w-full h-full" viewBox="0 0 1080 1920" preserveAspectRatio="xMidYMid slice">
+          <rect width="1080" height="1920" fill="#991B1B" />
+
+          {/* Gran sello estampado 'MITO DESTRUIDO' */}
+          <g transform="translate(540, 680) rotate(-12)">
+            <rect x="-320" y="-80" width="640" height="160" rx="20" fill="#EF4444" stroke="#000000" strokeWidth="10" />
+            <text x="0" y="16" textAnchor="middle" fill="#FFFFFF" fontSize="52" fontWeight="900" fontFamily="'Impact', 'Arial Black', sans-serif">
+              ¡MITO CAZADO!
+            </text>
+          </g>
+
+          {/* Señales de alerta en el fondo */}
+          <line x1="0" y1="200" x2="1080" y2="200" stroke="#FBBF24" strokeWidth="16" strokeDasharray="40,30" />
+          <line x1="0" y1="1600" x2="1080" y2="1600" stroke="#FBBF24" strokeWidth="16" strokeDasharray="40,30" />
+
+          <g transform="translate(540, 1320)">
+            <rect x="-300" y="-50" width="600" height="100" rx="14" fill="#000000" stroke="#FFE600" strokeWidth="8" />
+            <text x="0" y="14" textAnchor="middle" fill="#FFE600" fontSize="28" fontWeight="900" fontFamily="'Impact', 'Arial Black', sans-serif">
+              NUNCA HAS TENIDO SANGRE AZUL
+            </text>
+          </g>
+        </svg>
+      </div>
+    );
+  }
+
+  // ==========================================
+  // ESCENARIO 6 (VIDEO 4): CIERRE SANGRE ROJA VIVA
+  // ==========================================
+  if (escenario === "laboratorio_cierre_sangre_viva") {
+    const pulseHeart = (1 + Math.sin(frame * 0.18) * 0.08).toFixed(2);
+    return (
+      <div className="absolute inset-0 pointer-events-none z-0 overflow-hidden bg-[#FEF2F2]">
+        <svg className="absolute inset-0 w-full h-full" viewBox="0 0 1080 1920" preserveAspectRatio="xMidYMid slice">
+          <defs>
+            <linearGradient id="bloodCloseBg" x1="0" y1="0" x2="0" y2="1">
+              <stop offset="0%" stopColor="#FEF2F2" />
+              <stop offset="100%" stopColor="#FEE2E2" />
+            </linearGradient>
+          </defs>
+
+          <rect width="1080" height="1920" fill="url(#bloodCloseBg)" />
+
+          {/* Gran corazón/bucle circulatorio al centro */}
+          <g transform={`translate(540, 780) scale(${pulseHeart})`}>
+            <circle cx="0" cy="0" r="260" fill="#FCA5A5" stroke="#000000" strokeWidth="9" />
+            <circle cx="0" cy="0" r="210" fill="#EF4444" stroke="#000000" strokeWidth="6" />
+            <path d="M -120,-30 C -80,-120 0,-60 0,20 C 0,-60 80,-120 120,-30 C 160,60 0,140 0,170 C 0,140 -160,60 -120,-30 Z" fill="#DC2626" stroke="#000000" strokeWidth="6" />
+          </g>
+
+          {/* Tarima neo-brutalista de cierre */}
+          <rect y="1620" width="1080" height="300" fill="#991B1B" stroke="#000000" strokeWidth="10" />
+          <line x1="0" y1="1620" x2="1080" y2="1620" stroke="#FFE600" strokeWidth="12" />
+
+          {/* Rótulo superior */}
+          <g transform="translate(540, 400)">
+            <rect x="-310" y="-50" width="620" height="100" rx="16" fill="#FFE600" stroke="#000000" strokeWidth="8" />
+            <text x="0" y="-8" textAnchor="middle" fill="#000000" fontSize="30" fontWeight="900" fontFamily="'Impact', 'Arial Black', sans-serif">
+              100% ROJA EN CADA LATIDO
+            </text>
+            <text x="0" y="32" textAnchor="middle" fill="#991B1B" fontSize="22" fontWeight="900" fontFamily="'Impact', 'Arial Black', sans-serif">
+              UNA ILUSIÓN ÓPTICA DE TU PROPIA PIEL
+            </text>
+          </g>
+        </svg>
+      </div>
+    );
+  }
+
+  // ==========================================
+  // ESCENARIO 1 (VIDEO 5): TAQUERÍA Y SALSAS DE FUEGO
+  // ==========================================
+  if (escenario === "taqueria_mexicana_salsas_fuego") {
+    const flameFlicker = Math.sin(frame * 0.3) * 6;
+    return (
+      <div className="absolute inset-0 pointer-events-none z-0 overflow-hidden bg-[#FEF08A]">
+        <svg className="absolute inset-0 w-full h-full" viewBox="0 0 1080 1920" preserveAspectRatio="xMidYMid slice">
+          <defs>
+            <linearGradient id="taqueriaBg" x1="0" y1="0" x2="0" y2="1">
+              <stop offset="0%" stopColor="#FEF08A" />
+              <stop offset="60%" stopColor="#FDE047" />
+              <stop offset="100%" stopColor="#EA580C" />
+            </linearGradient>
+            <pattern id="awningStripes" width="60" height="100" patternUnits="userSpaceOnUse">
+              <rect width="30" height="100" fill="#EF4444" />
+              <rect x="30" width="30" height="100" fill="#FFFFFF" />
+            </pattern>
+          </defs>
+
+          <rect width="1080" height="1920" fill="url(#taqueriaBg)" />
+
+          {/* Toldo festivo de taquería a rayas rojas y blancas */}
+          <rect y="120" width="1080" height="160" fill="url(#awningStripes)" stroke="#000000" strokeWidth="8" />
+
+          {/* Guirnalda de chiles picantes y bombillas */}
+          <path d="M 0,280 Q 270,360 540,280 T 1080,280" fill="none" stroke="#000000" strokeWidth="6" />
+          <g transform={`translate(270, ${340 + flameFlicker})`}>
+            <polygon points="-12,-16 0,16 12,-16" fill="#EF4444" stroke="#000000" strokeWidth="3" />
+          </g>
+          <g transform={`translate(540, ${300 - flameFlicker})`}>
+            <polygon points="-12,-16 0,16 12,-16" fill="#F97316" stroke="#000000" strokeWidth="3" />
+          </g>
+          <g transform={`translate(810, ${340 + flameFlicker})`}>
+            <polygon points="-12,-16 0,16 12,-16" fill="#EF4444" stroke="#000000" strokeWidth="3" />
+          </g>
+
+          {/* Gran letrero neo-brutalista 'EL PICANTE NO ES UN SABOR' */}
+          <g transform="translate(540, 560)">
+            <rect x="-340" y="-70" width="680" height="140" rx="18" fill="#EF4444" stroke="#000000" strokeWidth="9" />
+            <text x="0" y="-12" textAnchor="middle" fill="#FFFFFF" fontSize="34" fontWeight="900" fontFamily="'Impact', 'Arial Black', sans-serif">
+              ¡EL PICANTE NO ES UN SABOR!
+            </text>
+            <text x="0" y="38" textAnchor="middle" fill="#FFE600" fontSize="26" fontWeight="900" fontFamily="'Impact', 'Arial Black', sans-serif">
+              ES UNA QUEMADURA QUÍMICA FANTASMA
+            </text>
+          </g>
+
+          {/* Barra del restaurante de tacos */}
+          <rect y="1520" width="1080" height="400" fill="#78350F" stroke="#000000" strokeWidth="10" />
+          <line x1="0" y1="1520" x2="1080" y2="1520" stroke="#000000" strokeWidth="12" />
+        </svg>
+      </div>
+    );
+  }
+
+  // ==========================================
+  // ESCENARIO 2 (VIDEO 5): MACRO LENGUA Y RECEPTOR TRPV1
+  // ==========================================
+  if (escenario === "macro_lengua_papilas_receptor") {
+    const pulsePore = Math.sin(frame * 0.22) * 8;
+    return (
+      <div className="absolute inset-0 pointer-events-none z-0 overflow-hidden bg-[#F43F5E]">
+        <svg className="absolute inset-0 w-full h-full" viewBox="0 0 1080 1920" preserveAspectRatio="xMidYMid slice">
+          <defs>
+            <linearGradient id="tongueBg" x1="0" y1="0" x2="0" y2="1">
+              <stop offset="0%" stopColor="#FB7185" />
+              <stop offset="60%" stopColor="#F43F5E" />
+              <stop offset="100%" stopColor="#BE123C" />
+            </linearGradient>
+          </defs>
+
+          <rect width="1080" height="1920" fill="url(#tongueBg)" />
+
+          {/* Papilas gustativas estilizadas como colinas rosadas */}
+          <path d="M -50,600 Q 150,450 350,600 T 750,600 T 1150,600 L 1150,1920 L -50,1920 Z" fill="#E11D48" stroke="#000000" strokeWidth="9" />
+          <path d="M -50,1000 Q 200,850 450,1000 T 950,1000 T 1150,1000 L 1150,1920 L -50,1920 Z" fill="#9F1239" stroke="#000000" strokeWidth="9" />
+
+          {/* Poro térmico TRPV1 activado con siseo de fuego */}
+          <g transform={`translate(540, ${1180 + pulsePore})`}>
+            <ellipse cx="0" cy="0" rx="140" ry="60" fill="#000000" stroke="#EF4444" strokeWidth="10" />
+            <ellipse cx="0" cy="0" rx="90" ry="36" fill="#FBBF24" opacity="0.85" />
+            <text x="0" y="10" textAnchor="middle" fill="#000000" fontSize="24" fontWeight="900" fontFamily="'Impact', 'Arial Black', sans-serif">
+              RECEPTOR TRPV1 (43°C)
+            </text>
+          </g>
+
+          {/* Rótulo superior */}
+          <g transform="translate(540, 420)">
+            <rect x="-310" y="-55" width="620" height="110" rx="18" fill="#FFE600" stroke="#000000" strokeWidth="9" />
+            <text x="0" y="-12" textAnchor="middle" fill="#000000" fontSize="32" fontWeight="900" fontFamily="'Impact', 'Arial Black', sans-serif">
+              ENGAÑO A LOS SENSORES DE CALOR
+            </text>
+            <text x="0" y="32" textAnchor="middle" fill="#BE123C" fontSize="22" fontWeight="900" fontFamily="'Impact', 'Arial Black', sans-serif">
+              CREE QUE ESTÁS COMIENDO BRASAS ARDIENDO
+            </text>
+          </g>
+        </svg>
+      </div>
+    );
+  }
+
+  // ==========================================
+  // ESCENARIO 3 (VIDEO 5): PÁNICO EN EL CEREBRO
+  // ==========================================
+  if (escenario === "interior_cerebro_panico_quemadura") {
+    const flashAlert = (frame % 8 < 4 ? 1 : 0.3).toFixed(2);
+    return (
+      <div className="absolute inset-0 pointer-events-none z-0 overflow-hidden bg-[#7F1D1D]">
+        <svg className="absolute inset-0 w-full h-full" viewBox="0 0 1080 1920" preserveAspectRatio="xMidYMid slice">
+          <rect width="1080" height="1920" fill="#7F1D1D" />
+
+          {/* Sirena de emergencia giratoria al fondo */}
+          <g transform="translate(540, 680)">
+            <circle cx="0" cy="0" r="260" fill="#EF4444" stroke="#000000" strokeWidth="10" opacity={flashAlert} />
+            <circle cx="0" cy="0" r="180" fill="#FBBF24" stroke="#000000" strokeWidth="6" />
+            <text x="0" y="18" textAnchor="middle" fill="#000000" fontSize="48" fontWeight="900" fontFamily="'Impact', 'Arial Black', sans-serif">
+              ¡ALARMA 100°C!
+            </text>
+          </g>
+
+          {/* Franjas de peligro diagonales */}
+          <line x1="0" y1="220" x2="1080" y2="220" stroke="#FBBF24" strokeWidth="16" strokeDasharray="50,40" />
+          <line x1="0" y1="1620" x2="1080" y2="1620" stroke="#FBBF24" strokeWidth="16" strokeDasharray="50,40" />
+
+          {/* Rótulo explicativo */}
+          <g transform="translate(540, 1340)">
+            <rect x="-310" y="-55" width="620" height="110" rx="16" fill="#0F172A" stroke="#EF4444" strokeWidth="8" />
+            <text x="0" y="-10" textAnchor="middle" fill="#FFFFFF" fontSize="30" fontWeight="900" fontFamily="'Impact', 'Arial Black', sans-serif">
+              EL CEREBRO ORDENA SALIVAR Y SUDAR
+            </text>
+            <text x="0" y="32" textAnchor="middle" fill="#FFE600" fontSize="22" fontWeight="900" fontFamily="'Impact', 'Arial Black', sans-serif">
+              INTENTA EXTINGUIR UN FUEGO QUE NO EXISTE
+            </text>
+          </g>
+        </svg>
+      </div>
+    );
+  }
+
+  // ==========================================
+  // ESCENARIO 4 (VIDEO 5): QUÍMICA AGUA VS ACEITE
+  // ==========================================
+  if (escenario === "laboratorio_quimica_agua_vs_aceite") {
+    const splashY = Math.sin(frame * 0.2) * 12;
+    return (
+      <div className="absolute inset-0 pointer-events-none z-0 overflow-hidden bg-[#0369A1]">
+        <svg className="absolute inset-0 w-full h-full" viewBox="0 0 1080 1920" preserveAspectRatio="xMidYMid slice">
+          <rect width="1080" height="1920" fill="#0369A1" />
+
+          {/* Gotas de capsaicina aceitosa flotando sobre agua */}
+          <g transform={`translate(540, ${760 + splashY})`}>
+            <rect x="-340" y="-120" width="680" height="240" rx="20" fill="#0284C7" stroke="#000000" strokeWidth="8" />
+            {/* Gotas insolubles rojas de capsaicina */}
+            <circle cx="-160" cy="0" r="35" fill="#EF4444" stroke="#000000" strokeWidth="6" />
+            <circle cx="0" cy="-20" r="45" fill="#F97316" stroke="#000000" strokeWidth="6" />
+            <circle cx="160" cy="10" r="38" fill="#EF4444" stroke="#000000" strokeWidth="6" />
+            <text x="0" y="85" textAnchor="middle" fill="#FFFFFF" fontSize="22" fontWeight="900" fontFamily="'Impact', 'Arial Black', sans-serif">
+              LA CAPSAICINA ES UN ACEITE LIPOFÍLICO (NO SE DISUELVE)
+            </text>
+          </g>
+
+          {/* Gran X de advertencia */}
+          <g transform="translate(540, 1380)">
+            <rect x="-300" y="-55" width="600" height="110" rx="16" fill="#EF4444" stroke="#000000" strokeWidth="8" />
+            <text x="0" y="-10" textAnchor="middle" fill="#FFFFFF" fontSize="32" fontWeight="900" fontFamily="'Impact', 'Arial Black', sans-serif">
+              ¡EL AGUA SOLO ESPARCE EL FUEGO!
+            </text>
+            <text x="0" y="32" textAnchor="middle" fill="#FFE600" fontSize="22" fontWeight="900" fontFamily="'Impact', 'Arial Black', sans-serif">
+              COMO ECHAR AGUA A UNA SARTÉN CON ACEITE
+            </text>
+          </g>
+        </svg>
+      </div>
+    );
+  }
+
+  // ==========================================
+  // ESCENARIO 5 (VIDEO 5): MACRO CASEÍNA Y MICELAS
+  // ==========================================
+  if (escenario === "macro_caseina_micelas_rescate") {
+    const pulseMicelle = (1 + Math.sin(frame * 0.16) * 0.08).toFixed(2);
+    return (
+      <div className="absolute inset-0 pointer-events-none z-0 overflow-hidden bg-[#F8FAFC]">
+        <svg className="absolute inset-0 w-full h-full" viewBox="0 0 1080 1920" preserveAspectRatio="xMidYMid slice">
+          <rect width="1080" height="1920" fill="#F8FAFC" />
+
+          {/* Micela gigante de caseína capturando la molécula picante */}
+          <g transform={`translate(540, 780) scale(${pulseMicelle})`}>
+            {/* Cápsula de caseína azul y blanca */}
+            <circle cx="0" cy="0" r="240" fill="#DBEAFE" stroke="#2563EB" strokeWidth="10" strokeDasharray="20,12" />
+            <circle cx="0" cy="0" r="160" fill="#93C5FD" stroke="#000000" strokeWidth="6" />
+            {/* Gota de capsaicina atrapada dentro */}
+            <circle cx="0" cy="0" r="70" fill="#EF4444" stroke="#000000" strokeWidth="6" />
+            <text x="0" y="10" textAnchor="middle" fill="#FFFFFF" fontSize="20" fontWeight="900" fontFamily="'Impact', 'Arial Black', sans-serif">
+              CAPSAICINA
+            </text>
+          </g>
+
+          {/* Rótulo explicativo */}
+          <g transform="translate(540, 1400)">
+            <rect x="-320" y="-55" width="640" height="110" rx="18" fill="#FFE600" stroke="#000000" strokeWidth="8" />
+            <text x="0" y="-12" textAnchor="middle" fill="#000000" fontSize="32" fontWeight="900" fontFamily="'Impact', 'Arial Black', sans-serif">
+              CASEÍNA: EL DETERGENTE BIOLÓGICO
+            </text>
+            <text x="0" y="32" textAnchor="middle" fill="#1D4ED8" fontSize="22" fontWeight="900" fontFamily="'Impact', 'Arial Black', sans-serif">
+              ARRANCA EL PICANTE DE TUS RECEPTORES
+            </text>
+          </g>
+        </svg>
+      </div>
+    );
+  }
+
+  // ==========================================
+  // ESCENARIO 6 (VIDEO 5): CIERRE Y ALIVIO TOTAL CON LECHE
+  // ==========================================
+  if (escenario === "taqueria_cierre_alivio_leche") {
+    const floatShine = Math.sin(frame * 0.18) * 8;
+    return (
+      <div className="absolute inset-0 pointer-events-none z-0 overflow-hidden bg-[#ECFDF5]">
+        <svg className="absolute inset-0 w-full h-full" viewBox="0 0 1080 1920" preserveAspectRatio="xMidYMid slice">
+          <defs>
+            <linearGradient id="reliefCloseBg" x1="0" y1="0" x2="0" y2="1">
+              <stop offset="0%" stopColor="#ECFDF5" />
+              <stop offset="60%" stopColor="#D1FAE5" />
+              <stop offset="100%" stopColor="#A7F3D0" />
+            </linearGradient>
+          </defs>
+
+          <rect width="1080" height="1920" fill="url(#reliefCloseBg)" />
+
+          {/* Gran halo de alivio fresco y mentolado */}
+          <g transform={`translate(540, ${760 + floatShine})`}>
+            <circle cx="0" cy="0" r="260" fill="#6EE7B7" stroke="#000000" strokeWidth="9" />
+            <circle cx="0" cy="0" r="200" fill="#A7F3D0" stroke="#000000" strokeWidth="6" />
+            {/* Destellos de frescura */}
+            <polygon points="-140,-120 -120,-80 -80,-100 -100,-140" fill="#FFE600" stroke="#000000" strokeWidth="3" />
+            <polygon points="120,-100 140,-60 180,-80 160,-120" fill="#FFE600" stroke="#000000" strokeWidth="3" />
+          </g>
+
+          {/* Tarima de restaurante */}
+          <rect y="1620" width="1080" height="300" fill="#047857" stroke="#000000" strokeWidth="10" />
+          <line x1="0" y1="1620" x2="1080" y2="1620" stroke="#FFE600" strokeWidth="12" />
+
+          {/* Rótulo de cierre */}
+          <g transform="translate(540, 400)">
+            <rect x="-310" y="-50" width="620" height="100" rx="16" fill="#FFE600" stroke="#000000" strokeWidth="8" />
+            <text x="0" y="-8" textAnchor="middle" fill="#000000" fontSize="30" fontWeight="900" fontFamily="'Impact', 'Arial Black', sans-serif">
+              LA CIENCIA SALVÓ TU LENGUA
+            </text>
+            <text x="0" y="32" textAnchor="middle" fill="#047857" fontSize="22" fontWeight="900" fontFamily="'Impact', 'Arial Black', sans-serif">
+              LECHE, YOGUR O HELADO CONTRA EL PICANTE
+            </text>
+          </g>
+        </svg>
+      </div>
+    );
+  }
+
   // Escenario por defecto con piso neo-brutalista
   return (
     <div className="absolute inset-0 pointer-events-none z-0 bg-[#F8FAFC]">
@@ -8141,4 +20099,124 @@ export const NarrativeStage: React.FC<NarrativeStageProps> = ({
       <div className="absolute bottom-0 left-0 right-0 h-[660px] bg-[#E2E8F0] border-t-8 border-black" />
     </div>
   );
+};
+
+export interface NarrativeStageForegroundProps {
+  escenario?: string;
+  frame: number;
+}
+
+export const NarrativeStageForeground: React.FC<NarrativeStageForegroundProps> = ({
+  escenario,
+  frame,
+}) => {
+  if (escenario === "sala_tribunal_loftus") {
+    return (
+      <div className="absolute inset-0 pointer-events-none overflow-hidden" style={{ zIndex: 35 }}>
+        <svg className="absolute inset-0 w-full h-full" viewBox="0 0 1080 1920" preserveAspectRatio="xMidYMid slice">
+          {/* Faldón frontal del banquillo de testigos que cubre las piernas del Stickman */}
+          <g transform="translate(60, 960)">
+            <rect x="0" y="0" width="340" height="420" rx="8" fill="#78350F" stroke="#000000" strokeWidth="8" />
+            <rect x="16" y="16" width="308" height="388" rx="4" fill="#92400E" stroke="#000000" strokeWidth="4" />
+            <rect x="30" y="45" width="280" height="48" rx="6" fill="#0F172A" stroke="#000000" strokeWidth="3.5" />
+            <text x="170" y="76" textAnchor="middle" fill="#FFFFFF" fontSize="16" fontWeight="900" fontFamily="'Arial Black', sans-serif">
+              BANQUILLO DE TESTIGOS
+            </text>
+          </g>
+        </svg>
+      </div>
+    );
+  }
+
+  if (escenario === "aula_universitaria_barry_manilow") {
+    const f = frame;
+    return (
+      <div className="absolute inset-0 pointer-events-none overflow-hidden" style={{ zIndex: 35 }}>
+        <svg
+          className="absolute inset-0 w-full h-full"
+          viewBox="0 0 1080 1920"
+          preserveAspectRatio="xMidYMid slice"
+        >
+          {/* Fila continua de pupitres de estudiantes en primer plano (capa superior a Stickman) */}
+          {/* Empieza en x=210 para dejar libre el pasillo de la puerta de entrada a la izquierda */}
+
+          {/* Faldón de madera de la bancada */}
+          <rect x="210" y="1160" width="870" height="260" fill="#78350F" stroke="#000000" strokeWidth="8" />
+
+          {/* Patas metálicas tubulares que bajan hasta el suelo */}
+          {[250, 480, 740, 980].map((legX) => (
+            <g key={`leg_${legX}`}>
+              <line x1={legX} y1="1160" x2={legX} y2="1520" stroke="#000000" strokeWidth="12" strokeLinecap="round" />
+              <ellipse cx={legX} cy="1520" rx="14" ry="6" fill="#1E293B" stroke="#000000" strokeWidth="3" />
+            </g>
+          ))}
+
+          {/* Tablero superior continuo de madera de la bancada del aula */}
+          <rect x="210" y="1050" width="870" height="115" rx="6" fill="#B45309" stroke="#000000" strokeWidth="8" />
+          <rect x="216" y="1056" width="860" height="18" fill="#D97706" />
+
+          {/* 3 Estudiantes sentados en sus sillas detrás de la bancada */}
+          {[
+            { x: 360, y: 1030, color: "#0284C7", hair: "#1E293B", style: "curly", seed: 1 },
+            { x: 630, y: 1010, color: "#B91C1C", hair: "#EAB308", style: "ponytail", seed: 2 },
+            { x: 900, y: 1030, color: "#15803D", hair: "#475569", style: "cap", seed: 3 },
+          ].map((dsk, idx) => {
+            const idleBob = Math.sin((f + dsk.seed * 20) * 0.08) * 2;
+            const idleTurn = Math.sin((f + dsk.seed * 30) * 0.05) * 1.5;
+            return (
+              <g key={`fg_student_${idx}`} transform={`translate(${dsk.x}, ${dsk.y})`}>
+                {/* Estudiante sentado de espaldas */}
+                <g transform={`translate(0, ${idleBob.toFixed(1)}) rotate(${idleTurn.toFixed(1)})`}>
+                  {/* Respaldo de madera de la silla */}
+                  <rect x="-70" y="-35" width="140" height="75" rx="8" fill="#451A03" stroke="#000000" strokeWidth="5" />
+
+                  {/* Espalda y hombros del estudiante */}
+                  <path
+                    d="M -65,35 C -60,-20 -45,-55 0,-55 C 45,-55 60,-20 65,35 Z"
+                    fill={dsk.color}
+                    stroke="#000000"
+                    strokeWidth="5"
+                  />
+                  {/* Cuello */}
+                  <rect x="-16" y="-72" width="32" height="24" fill="#FED7AA" stroke="#000000" strokeWidth="4" />
+
+                  {/* Cabeza de espaldas */}
+                  {dsk.style === "ponytail" ? (
+                    <g>
+                      <circle cx="0" cy="-98" r="38" fill={dsk.hair} stroke="#000000" strokeWidth="5" />
+                      <path d="M 0,-130 Q 32,-124 36,-80 Q 26,-58 16,-74 Z" fill={dsk.hair} stroke="#000000" strokeWidth="4" />
+                      <circle cx="0" cy="-128" r="8" fill="#F43F5E" />
+                    </g>
+                  ) : dsk.style === "cap" ? (
+                    <g>
+                      <circle cx="0" cy="-98" r="38" fill={dsk.hair} stroke="#000000" strokeWidth="5" />
+                      <ellipse cx="0" cy="-108" rx="40" ry="26" fill="#059669" stroke="#000000" strokeWidth="4" />
+                      <path d="M -20,-88 Q 0,-70 20,-88 Z" fill="#047857" stroke="#000000" strokeWidth="3.5" />
+                    </g>
+                  ) : (
+                    <g>
+                      <circle cx="0" cy="-98" r="38" fill={dsk.hair} stroke="#000000" strokeWidth="5" />
+                      <path d="M -38,-100 Q -42,-134 0,-134 Q 42,-134 38,-100 Q 26,-126 0,-126 Q -26,-126 -38,-100 Z" fill="#0F172A" />
+                    </g>
+                  )}
+                </g>
+
+                {/* Cuaderno escolar con renglones y lápiz sobre la mesa */}
+                <g transform="translate(-40, 32)">
+                  <rect x="-35" y="-14" width="70" height="48" rx="4" fill="#FFFFFF" stroke="#000000" strokeWidth="3.5" />
+                  <line x1="-30" y1="-14" x2="-30" y2="34" stroke="#EF4444" strokeWidth="2.5" />
+                  <line x1="-22" y1="-4" x2="28" y2="-4" stroke="#94A3B8" strokeWidth="2" />
+                  <line x1="-22" y1="8" x2="24" y2="8" stroke="#94A3B8" strokeWidth="2" />
+                  <line x1="-22" y1="20" x2="18" y2="20" stroke="#94A3B8" strokeWidth="2" />
+                  <line x1="26" y1="-10" x2="40" y2="24" stroke="#2563EB" strokeWidth="4" strokeLinecap="round" />
+                </g>
+              </g>
+            );
+          })}
+        </svg>
+      </div>
+    );
+  }
+
+  return null;
 };

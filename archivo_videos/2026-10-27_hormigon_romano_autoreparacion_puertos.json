@@ -1,0 +1,1679 @@
+{
+  "meta": {
+    "id": "hormigon_romano_autoreparacion_puertos",
+    "slug": "hormigon_romano_autoreparacion_puertos",
+    "temaResumen": "El hormigón romano que se arregla solo: ceniza de Pozzuoli, crecimiento de tobermorita marina y autorreparación por grumos de cal viva (MIT 2023)",
+    "duracionObjetivo": [
+      65,
+      78
+    ],
+    "titulo": "El hormigón que se arregla solo: el secreto de los puertos romanos",
+    "titulo_corto": "El hormigón romano",
+    "gancho": "¿Por qué algunos puertos romanos llevan dos mil años bajo el mar y los muelles modernos duran décadas?",
+    "genero": "Arqueología y Ciencia de Materiales",
+    "playlist": "Misterios de la Ciencia Antigua y Materiales",
+    "fuentes": [
+      "Linda Seymour et al. (MIT, 2023) - Hot mixing: Mechanistic insights into the extreme durability of Roman concrete",
+      "Marie Jackson et al. (2017) - Phillipsite and Al-tobermorite mineral cements produce robust durability in Roman marine concrete",
+      "Vitruvius (c. 15 a.C.) - De Architectura, Libro II: Pozzolana y cal hidráulica marina",
+      "Pliny the Elder (c. 79 d.C.) - Naturalis Historia: Durabilidad marina del pulvis Puteolanus"
+    ]
+  },
+  "escenas": [
+    {
+      "id": 1,
+      "texto": "Algunos puertos romanos llevan unos dos mil años bajo el mar y siguen en pie. Un muelle moderno suele durar décadas. ¿Qué sabían ellos que nosotros no?",
+      "icono": "Anchor",
+      "colorIcono": "#38BDF8",
+      "tituloVisual": "PUERTOS DE 2000 AÑOS",
+      "composicionVisual": "plano_general",
+      "escenario": "pantalla_dividida_muelle_moderno_romano",
+      "layout": "narrativo",
+      "transicion": "corte",
+      "efectosCamara": [
+        "punch",
+        "drift"
+      ],
+      "sfx": "sfx/sfx_hormigon_olas_crujido.wav",
+      "volumenSfx": 0.22,
+      "palabrasClave": [
+        "puertos",
+        "romanos",
+        "años",
+        "mar",
+        "moderno",
+        "décadas"
+      ],
+      "personajes": [
+        {
+          "id": "stickman_protagonista",
+          "nombre": "Stickman Buzo Arqueólogo",
+          "posicion": {
+            "x": 0,
+            "y": 70
+          },
+          "escala": 1,
+          "orientacion": "derecha",
+          "prop": "mascara_buceo",
+          "habla": true,
+          "capaZ": 10,
+          "acciones": [
+            {
+              "tipo": "personalizada",
+              "pasos": [
+                {
+                  "inicioProgreso": 0,
+                  "finProgreso": 0.38,
+                  "poseId": "looking_down_pose",
+                  "expresion": "worried",
+                  "posicion": {
+                    "x": -80,
+                    "y": 70
+                  },
+                  "curva": "suave",
+                  "procedural": "estatico"
+                },
+                {
+                  "inicioProgreso": 0.38,
+                  "finProgreso": 0.68,
+                  "poseId": "scratching_head",
+                  "expresion": "confused",
+                  "posicion": {
+                    "x": 0,
+                    "y": 70
+                  },
+                  "curva": "suave",
+                  "procedural": "estatico"
+                },
+                {
+                  "inicioProgreso": 0.68,
+                  "finProgreso": 1,
+                  "poseId": "pointing_right",
+                  "expresion": "eureka",
+                  "posicion": {
+                    "x": 80,
+                    "y": 70
+                  },
+                  "curva": "impacto",
+                  "procedural": "estatico"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "duracionSegundos": 8.314,
+      "palabras": [
+        {
+          "palabra": "Algunos",
+          "inicioMs": 0,
+          "finMs": 460
+        },
+        {
+          "palabra": "puertos",
+          "inicioMs": 460,
+          "finMs": 760
+        },
+        {
+          "palabra": "romanos",
+          "inicioMs": 760,
+          "finMs": 1220
+        },
+        {
+          "palabra": "llevan",
+          "inicioMs": 1220,
+          "finMs": 1440
+        },
+        {
+          "palabra": "unos",
+          "inicioMs": 1440,
+          "finMs": 1620
+        },
+        {
+          "palabra": "dos",
+          "inicioMs": 1620,
+          "finMs": 1840
+        },
+        {
+          "palabra": "mil",
+          "inicioMs": 1840,
+          "finMs": 2060
+        },
+        {
+          "palabra": "años",
+          "inicioMs": 2060,
+          "finMs": 2300
+        },
+        {
+          "palabra": "bajo",
+          "inicioMs": 2300,
+          "finMs": 2540
+        },
+        {
+          "palabra": "el",
+          "inicioMs": 2540,
+          "finMs": 2680
+        },
+        {
+          "palabra": "mar",
+          "inicioMs": 2680,
+          "finMs": 2820
+        },
+        {
+          "palabra": "y",
+          "inicioMs": 2820,
+          "finMs": 3080
+        },
+        {
+          "palabra": "siguen",
+          "inicioMs": 3080,
+          "finMs": 3380
+        },
+        {
+          "palabra": "en",
+          "inicioMs": 3380,
+          "finMs": 3480
+        },
+        {
+          "palabra": "pie",
+          "inicioMs": 3480,
+          "finMs": 3720
+        },
+        {
+          "palabra": "Un",
+          "inicioMs": 3920,
+          "finMs": 4040
+        },
+        {
+          "palabra": "muelle",
+          "inicioMs": 4040,
+          "finMs": 4300
+        },
+        {
+          "palabra": "moderno",
+          "inicioMs": 4300,
+          "finMs": 4780
+        },
+        {
+          "palabra": "suele",
+          "inicioMs": 4780,
+          "finMs": 5080
+        },
+        {
+          "palabra": "durar",
+          "inicioMs": 5080,
+          "finMs": 5400
+        },
+        {
+          "palabra": "décadas",
+          "inicioMs": 5400,
+          "finMs": 6040
+        },
+        {
+          "palabra": "Qué",
+          "inicioMs": 6280,
+          "finMs": 6360
+        },
+        {
+          "palabra": "sabían",
+          "inicioMs": 6360,
+          "finMs": 6740
+        },
+        {
+          "palabra": "ellos",
+          "inicioMs": 6740,
+          "finMs": 6940
+        },
+        {
+          "palabra": "que",
+          "inicioMs": 6940,
+          "finMs": 7120
+        },
+        {
+          "palabra": "nosotros",
+          "inicioMs": 7120,
+          "finMs": 7420
+        },
+        {
+          "palabra": "no",
+          "inicioMs": 7720,
+          "finMs": 7760
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "texto": "El hormigón moderno lleva acero por dentro. Cuando el agua salada llega a esas varillas, se oxidan, se hinchan y rompen el material. Por eso se diseña para durar entre cincuenta y cien años.",
+      "icono": "AlertTriangle",
+      "colorIcono": "#EA580C",
+      "tituloVisual": "CORROSIÓN DEL ACERO",
+      "composicionVisual": "plano_general",
+      "escenario": "corte_transversal_hormigon_varilla_oxido",
+      "layout": "narrativo",
+      "transicion": "whip_right",
+      "efectosCamara": [
+        "punch",
+        "drift"
+      ],
+      "sfx": "sfx/sfx_varilla_oxido_fractura.wav",
+      "volumenSfx": 0.24,
+      "palabrasClave": [
+        "hormigón",
+        "acero",
+        "agua",
+        "salada",
+        "oxidan",
+        "rompen",
+        "años"
+      ],
+      "personajes": [
+        {
+          "id": "stickman_protagonista",
+          "nombre": "Stickman Investigador",
+          "posicion": {
+            "x": -260,
+            "y": 80
+          },
+          "escala": 0.95,
+          "orientacion": "derecha",
+          "habla": true,
+          "capaZ": 10,
+          "acciones": [
+            {
+              "tipo": "personalizada",
+              "pasos": [
+                {
+                  "inicioProgreso": 0,
+                  "finProgreso": 0.45,
+                  "poseId": "warning_danger",
+                  "expresion": "worried",
+                  "posicion": {
+                    "x": -260,
+                    "y": 80
+                  },
+                  "curva": "suave",
+                  "procedural": "estatico"
+                },
+                {
+                  "inicioProgreso": 0.45,
+                  "finProgreso": 1,
+                  "poseId": "protecting_shielding",
+                  "expresion": "shocked",
+                  "posicion": {
+                    "x": -280,
+                    "y": 80
+                  },
+                  "curva": "impacto",
+                  "procedural": "temblar"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "duracionSegundos": 10.426,
+      "palabras": [
+        {
+          "palabra": "El",
+          "inicioMs": 0,
+          "finMs": 240
+        },
+        {
+          "palabra": "hormigón",
+          "inicioMs": 240,
+          "finMs": 600
+        },
+        {
+          "palabra": "moderno",
+          "inicioMs": 600,
+          "finMs": 1080
+        },
+        {
+          "palabra": "lleva",
+          "inicioMs": 1080,
+          "finMs": 1220
+        },
+        {
+          "palabra": "acero",
+          "inicioMs": 1220,
+          "finMs": 1620
+        },
+        {
+          "palabra": "por",
+          "inicioMs": 1620,
+          "finMs": 1780
+        },
+        {
+          "palabra": "dentro",
+          "inicioMs": 1780,
+          "finMs": 2160
+        },
+        {
+          "palabra": "Cuando",
+          "inicioMs": 2380,
+          "finMs": 2540
+        },
+        {
+          "palabra": "el",
+          "inicioMs": 2540,
+          "finMs": 2680
+        },
+        {
+          "palabra": "agua",
+          "inicioMs": 2680,
+          "finMs": 2860
+        },
+        {
+          "palabra": "salada",
+          "inicioMs": 2860,
+          "finMs": 3280
+        },
+        {
+          "palabra": "llega",
+          "inicioMs": 3280,
+          "finMs": 3540
+        },
+        {
+          "palabra": "a",
+          "inicioMs": 3540,
+          "finMs": 3720
+        },
+        {
+          "palabra": "esas",
+          "inicioMs": 3720,
+          "finMs": 3920
+        },
+        {
+          "palabra": "varillas",
+          "inicioMs": 3920,
+          "finMs": 4420
+        },
+        {
+          "palabra": "se",
+          "inicioMs": 4600,
+          "finMs": 4660
+        },
+        {
+          "palabra": "oxidan",
+          "inicioMs": 4660,
+          "finMs": 5180
+        },
+        {
+          "palabra": "se",
+          "inicioMs": 5280,
+          "finMs": 5360
+        },
+        {
+          "palabra": "hinchan",
+          "inicioMs": 5360,
+          "finMs": 5680
+        },
+        {
+          "palabra": "y",
+          "inicioMs": 5680,
+          "finMs": 5820
+        },
+        {
+          "palabra": "rompen",
+          "inicioMs": 5820,
+          "finMs": 6160
+        },
+        {
+          "palabra": "el",
+          "inicioMs": 6160,
+          "finMs": 6300
+        },
+        {
+          "palabra": "material",
+          "inicioMs": 6300,
+          "finMs": 6740
+        },
+        {
+          "palabra": "Por",
+          "inicioMs": 6980,
+          "finMs": 7100
+        },
+        {
+          "palabra": "eso",
+          "inicioMs": 7100,
+          "finMs": 7260
+        },
+        {
+          "palabra": "se",
+          "inicioMs": 7260,
+          "finMs": 7440
+        },
+        {
+          "palabra": "diseña",
+          "inicioMs": 7440,
+          "finMs": 7820
+        },
+        {
+          "palabra": "para",
+          "inicioMs": 7820,
+          "finMs": 8000
+        },
+        {
+          "palabra": "durar",
+          "inicioMs": 8000,
+          "finMs": 8300
+        },
+        {
+          "palabra": "entre",
+          "inicioMs": 8300,
+          "finMs": 8520
+        },
+        {
+          "palabra": "cincuenta",
+          "inicioMs": 8520,
+          "finMs": 9020
+        },
+        {
+          "palabra": "y",
+          "inicioMs": 9020,
+          "finMs": 9160
+        },
+        {
+          "palabra": "cien",
+          "inicioMs": 9160,
+          "finMs": 9340
+        },
+        {
+          "palabra": "años",
+          "inicioMs": 9340,
+          "finMs": 9600
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "texto": "Los romanos no usaban acero. Mezclaban cal con ceniza volcánica, como la de Pozzuoli, junto a trozos de piedra, y lo vertían en moldes dentro del agua.",
+      "icono": "Flame",
+      "colorIcono": "#F59E0B",
+      "tituloVisual": "RECETA ROMANA SUBMARINA",
+      "composicionVisual": "plano_general",
+      "escenario": "barca_mezcla_volcan_pozzuoli",
+      "layout": "narrativo",
+      "transicion": "whip_left",
+      "efectosCamara": [
+        "punch",
+        "drift"
+      ],
+      "sfx": "sfx/sfx_volcan_mezcla_caldero.wav",
+      "volumenSfx": 0.22,
+      "palabrasClave": [
+        "romanos",
+        "acero",
+        "cal",
+        "ceniza",
+        "volcánica",
+        "Pozzuoli",
+        "piedra",
+        "moldes",
+        "agua"
+      ],
+      "personajes": [
+        {
+          "id": "stickman_protagonista",
+          "nombre": "Stickman Constructor Romano",
+          "posicion": {
+            "x": -170,
+            "y": 60
+          },
+          "escala": 0.95,
+          "orientacion": "derecha",
+          "habla": true,
+          "capaZ": 10,
+          "acciones": [
+            {
+              "tipo": "personalizada",
+              "pasos": [
+                {
+                  "inicioProgreso": 0,
+                  "finProgreso": 0.5,
+                  "poseId": "explaining_both_hands",
+                  "expresion": "talking_enthusiastic",
+                  "posicion": {
+                    "x": -170,
+                    "y": 60
+                  },
+                  "curva": "suave",
+                  "procedural": "estatico"
+                },
+                {
+                  "inicioProgreso": 0.5,
+                  "finProgreso": 1,
+                  "poseId": "pointing_right",
+                  "expresion": "eureka",
+                  "posicion": {
+                    "x": -140,
+                    "y": 60
+                  },
+                  "curva": "impacto",
+                  "procedural": "estatico"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "duracionSegundos": 8.362,
+      "palabras": [
+        {
+          "palabra": "Los",
+          "inicioMs": 0,
+          "finMs": 240
+        },
+        {
+          "palabra": "romanos",
+          "inicioMs": 240,
+          "finMs": 640
+        },
+        {
+          "palabra": "no",
+          "inicioMs": 640,
+          "finMs": 780
+        },
+        {
+          "palabra": "usaban",
+          "inicioMs": 780,
+          "finMs": 1060
+        },
+        {
+          "palabra": "acero",
+          "inicioMs": 1060,
+          "finMs": 1500
+        },
+        {
+          "palabra": "Mezclaban",
+          "inicioMs": 1760,
+          "finMs": 2180
+        },
+        {
+          "palabra": "cal",
+          "inicioMs": 2180,
+          "finMs": 2440
+        },
+        {
+          "palabra": "con",
+          "inicioMs": 2440,
+          "finMs": 2660
+        },
+        {
+          "palabra": "ceniza",
+          "inicioMs": 2660,
+          "finMs": 3020
+        },
+        {
+          "palabra": "volcánica",
+          "inicioMs": 3020,
+          "finMs": 3620
+        },
+        {
+          "palabra": "como",
+          "inicioMs": 3800,
+          "finMs": 3820
+        },
+        {
+          "palabra": "la",
+          "inicioMs": 3820,
+          "finMs": 3940
+        },
+        {
+          "palabra": "de",
+          "inicioMs": 3940,
+          "finMs": 4020
+        },
+        {
+          "palabra": "Pozzuoli",
+          "inicioMs": 4020,
+          "finMs": 4540
+        },
+        {
+          "palabra": "junto",
+          "inicioMs": 4860,
+          "finMs": 4980
+        },
+        {
+          "palabra": "a",
+          "inicioMs": 4980,
+          "finMs": 5160
+        },
+        {
+          "palabra": "trozos",
+          "inicioMs": 5160,
+          "finMs": 5420
+        },
+        {
+          "palabra": "de",
+          "inicioMs": 5420,
+          "finMs": 5560
+        },
+        {
+          "palabra": "piedra",
+          "inicioMs": 5560,
+          "finMs": 5980
+        },
+        {
+          "palabra": "y",
+          "inicioMs": 6100,
+          "finMs": 6160
+        },
+        {
+          "palabra": "lo",
+          "inicioMs": 6160,
+          "finMs": 6220
+        },
+        {
+          "palabra": "vertían",
+          "inicioMs": 6220,
+          "finMs": 6580
+        },
+        {
+          "palabra": "en",
+          "inicioMs": 6580,
+          "finMs": 6720
+        },
+        {
+          "palabra": "moldes",
+          "inicioMs": 6720,
+          "finMs": 7060
+        },
+        {
+          "palabra": "dentro",
+          "inicioMs": 7060,
+          "finMs": 7280
+        },
+        {
+          "palabra": "del",
+          "inicioMs": 7280,
+          "finMs": 7460
+        },
+        {
+          "palabra": "agua",
+          "inicioMs": 7460,
+          "finMs": 7740
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "texto": "Con los siglos, el agua marina se filtró, disolvió parte de la ceniza y dentro de los poros crecieron cristales de minerales como la tobermorita. Estudios de núcleos de puertos romanos los han encontrado reforzando el material.",
+      "icono": "Search",
+      "colorIcono": "#38BDF8",
+      "tituloVisual": "CRISTALES DE TOBERMORITA",
+      "composicionVisual": "plano_general",
+      "escenario": "microscopio_tobermorita_cristales",
+      "layout": "narrativo",
+      "transicion": "zoom_in",
+      "efectosCamara": [
+        "punch",
+        "drift"
+      ],
+      "sfx": "sfx/sfx_cristales_minerales_crecen.wav",
+      "volumenSfx": 0.24,
+      "palabrasClave": [
+        "siglos",
+        "agua",
+        "ceniza",
+        "cristales",
+        "minerales",
+        "tobermorita",
+        "reforzando"
+      ],
+      "personajes": [
+        {
+          "id": "stickman_protagonista",
+          "nombre": "Stickman Científico",
+          "posicion": {
+            "x": -270,
+            "y": 70
+          },
+          "escala": 0.92,
+          "orientacion": "derecha",
+          "prop": "lupa_gigante_arqueologia",
+          "habla": true,
+          "capaZ": 10,
+          "acciones": [
+            {
+              "tipo": "personalizada",
+              "pasos": [
+                {
+                  "inicioProgreso": 0,
+                  "finProgreso": 0.45,
+                  "poseId": "investigating_magnifier",
+                  "expresion": "analytical",
+                  "posicion": {
+                    "x": -270,
+                    "y": 70
+                  },
+                  "curva": "suave",
+                  "procedural": "estatico"
+                },
+                {
+                  "inicioProgreso": 0.45,
+                  "finProgreso": 0.75,
+                  "poseId": "surprised_hands_up",
+                  "expresion": "surprised",
+                  "posicion": {
+                    "x": -240,
+                    "y": 70
+                  },
+                  "curva": "suave",
+                  "procedural": "estatico"
+                },
+                {
+                  "inicioProgreso": 0.75,
+                  "finProgreso": 1,
+                  "poseId": "thumbs_up_approval",
+                  "expresion": "smile_wide",
+                  "posicion": {
+                    "x": -240,
+                    "y": 70
+                  },
+                  "curva": "impacto",
+                  "procedural": "estatico"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "duracionSegundos": 12.178,
+      "palabras": [
+        {
+          "palabra": "Con",
+          "inicioMs": 0,
+          "finMs": 200
+        },
+        {
+          "palabra": "los",
+          "inicioMs": 200,
+          "finMs": 380
+        },
+        {
+          "palabra": "siglos",
+          "inicioMs": 380,
+          "finMs": 720
+        },
+        {
+          "palabra": "el",
+          "inicioMs": 1020,
+          "finMs": 1160
+        },
+        {
+          "palabra": "agua",
+          "inicioMs": 1160,
+          "finMs": 1320
+        },
+        {
+          "palabra": "marina",
+          "inicioMs": 1320,
+          "finMs": 1720
+        },
+        {
+          "palabra": "se",
+          "inicioMs": 1720,
+          "finMs": 1860
+        },
+        {
+          "palabra": "filtró",
+          "inicioMs": 1860,
+          "finMs": 2300
+        },
+        {
+          "palabra": "disolvió",
+          "inicioMs": 2560,
+          "finMs": 3000
+        },
+        {
+          "palabra": "parte",
+          "inicioMs": 3000,
+          "finMs": 3320
+        },
+        {
+          "palabra": "de",
+          "inicioMs": 3320,
+          "finMs": 3440
+        },
+        {
+          "palabra": "la",
+          "inicioMs": 3440,
+          "finMs": 3540
+        },
+        {
+          "palabra": "ceniza",
+          "inicioMs": 3540,
+          "finMs": 3980
+        },
+        {
+          "palabra": "y",
+          "inicioMs": 3980,
+          "finMs": 4180
+        },
+        {
+          "palabra": "dentro",
+          "inicioMs": 4180,
+          "finMs": 4380
+        },
+        {
+          "palabra": "de",
+          "inicioMs": 4380,
+          "finMs": 4520
+        },
+        {
+          "palabra": "los",
+          "inicioMs": 4520,
+          "finMs": 4680
+        },
+        {
+          "palabra": "poros",
+          "inicioMs": 4680,
+          "finMs": 5000
+        },
+        {
+          "palabra": "crecieron",
+          "inicioMs": 5000,
+          "finMs": 5460
+        },
+        {
+          "palabra": "cristales",
+          "inicioMs": 5460,
+          "finMs": 5900
+        },
+        {
+          "palabra": "de",
+          "inicioMs": 5900,
+          "finMs": 6060
+        },
+        {
+          "palabra": "minerales",
+          "inicioMs": 6060,
+          "finMs": 6620
+        },
+        {
+          "palabra": "como",
+          "inicioMs": 6620,
+          "finMs": 6780
+        },
+        {
+          "palabra": "la",
+          "inicioMs": 6780,
+          "finMs": 6900
+        },
+        {
+          "palabra": "tobermorita",
+          "inicioMs": 6900,
+          "finMs": 7560
+        },
+        {
+          "palabra": "Estudios",
+          "inicioMs": 7780,
+          "finMs": 8180
+        },
+        {
+          "palabra": "de",
+          "inicioMs": 8180,
+          "finMs": 8300
+        },
+        {
+          "palabra": "núcleos",
+          "inicioMs": 8300,
+          "finMs": 8700
+        },
+        {
+          "palabra": "de",
+          "inicioMs": 8700,
+          "finMs": 8760
+        },
+        {
+          "palabra": "puertos",
+          "inicioMs": 8760,
+          "finMs": 9080
+        },
+        {
+          "palabra": "romanos",
+          "inicioMs": 9080,
+          "finMs": 9700
+        },
+        {
+          "palabra": "los",
+          "inicioMs": 9700,
+          "finMs": 9820
+        },
+        {
+          "palabra": "han",
+          "inicioMs": 9820,
+          "finMs": 9960
+        },
+        {
+          "palabra": "encontrado",
+          "inicioMs": 9960,
+          "finMs": 10420
+        },
+        {
+          "palabra": "reforzando",
+          "inicioMs": 10420,
+          "finMs": 11040
+        },
+        {
+          "palabra": "el",
+          "inicioMs": 11040,
+          "finMs": 11120
+        },
+        {
+          "palabra": "material",
+          "inicioMs": 11120,
+          "finMs": 11520
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "texto": "Y hay un giro. Esos grumos blancos de cal, que se creían una mezcla mal hecha, serían reservas. Según un estudio del MIT de dos mil veintitrés, cuando aparece una grieta y entra agua, el calcio se disuelve, recristaliza y la cierra.",
+      "icono": "Sparkles",
+      "colorIcono": "#22C55E",
+      "tituloVisual": "AUTO-REPARACIÓN (MIT 2023)",
+      "composicionVisual": "plano_general",
+      "escenario": "grumos_cal_autoreparacion_mit",
+      "layout": "narrativo",
+      "transicion": "flash",
+      "efectosCamara": [
+        "punch",
+        "drift"
+      ],
+      "sfx": "sfx/sfx_calcio_sellado_grieta.wav",
+      "volumenSfx": 0.24,
+      "palabrasClave": [
+        "grumos",
+        "cal",
+        "reservas",
+        "MIT",
+        "grieta",
+        "agua",
+        "calcio",
+        "cierra"
+      ],
+      "personajes": [
+        {
+          "id": "stickman_protagonista",
+          "nombre": "Stickman Revelador",
+          "posicion": {
+            "x": -270,
+            "y": 70
+          },
+          "escala": 0.95,
+          "orientacion": "derecha",
+          "habla": true,
+          "capaZ": 10,
+          "acciones": [
+            {
+              "tipo": "personalizada",
+              "pasos": [
+                {
+                  "inicioProgreso": 0,
+                  "finProgreso": 0.4,
+                  "poseId": "explaining_pointing_up",
+                  "expresion": "skeptical",
+                  "posicion": {
+                    "x": -270,
+                    "y": 70
+                  },
+                  "curva": "suave",
+                  "procedural": "estatico"
+                },
+                {
+                  "inicioProgreso": 0.4,
+                  "finProgreso": 0.75,
+                  "poseId": "eureka_idea",
+                  "expresion": "eureka",
+                  "posicion": {
+                    "x": -240,
+                    "y": 70
+                  },
+                  "curva": "suave",
+                  "procedural": "estatico"
+                },
+                {
+                  "inicioProgreso": 0.75,
+                  "finProgreso": 1,
+                  "poseId": "clapping",
+                  "expresion": "smile_wide",
+                  "posicion": {
+                    "x": -240,
+                    "y": 70
+                  },
+                  "curva": "impacto",
+                  "procedural": "estatico"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "duracionSegundos": 10.138,
+      "palabras": [
+        {
+          "palabra": "Y",
+          "inicioMs": 0,
+          "finMs": 160
+        },
+        {
+          "palabra": "hay",
+          "inicioMs": 160,
+          "finMs": 280
+        },
+        {
+          "palabra": "un",
+          "inicioMs": 280,
+          "finMs": 440
+        },
+        {
+          "palabra": "giro",
+          "inicioMs": 440,
+          "finMs": 720
+        },
+        {
+          "palabra": "Esos",
+          "inicioMs": 960,
+          "finMs": 1160
+        },
+        {
+          "palabra": "grumos",
+          "inicioMs": 1160,
+          "finMs": 1440
+        },
+        {
+          "palabra": "blancos",
+          "inicioMs": 1440,
+          "finMs": 1740
+        },
+        {
+          "palabra": "de",
+          "inicioMs": 1740,
+          "finMs": 1880
+        },
+        {
+          "palabra": "cal",
+          "inicioMs": 1880,
+          "finMs": 2040
+        },
+        {
+          "palabra": "que",
+          "inicioMs": 2040,
+          "finMs": 2082
+        },
+        {
+          "palabra": "se",
+          "inicioMs": 2082,
+          "finMs": 2124
+        },
+        {
+          "palabra": "creían",
+          "inicioMs": 2124,
+          "finMs": 2166
+        },
+        {
+          "palabra": "una",
+          "inicioMs": 2166,
+          "finMs": 2208
+        },
+        {
+          "palabra": "mezcla",
+          "inicioMs": 2208,
+          "finMs": 2250
+        },
+        {
+          "palabra": "mal",
+          "inicioMs": 2250,
+          "finMs": 2292
+        },
+        {
+          "palabra": "hecha",
+          "inicioMs": 2292,
+          "finMs": 2335
+        },
+        {
+          "palabra": "serían",
+          "inicioMs": 2335,
+          "finMs": 2378
+        },
+        {
+          "palabra": "reservas",
+          "inicioMs": 2378,
+          "finMs": 2420
+        },
+        {
+          "palabra": "Según",
+          "inicioMs": 2420,
+          "finMs": 2820
+        },
+        {
+          "palabra": "un",
+          "inicioMs": 2820,
+          "finMs": 3000
+        },
+        {
+          "palabra": "estudio",
+          "inicioMs": 3000,
+          "finMs": 3260
+        },
+        {
+          "palabra": "del",
+          "inicioMs": 3260,
+          "finMs": 3560
+        },
+        {
+          "palabra": "MIT",
+          "inicioMs": 3560,
+          "finMs": 3720
+        },
+        {
+          "palabra": "de",
+          "inicioMs": 3720,
+          "finMs": 3920
+        },
+        {
+          "palabra": "dos",
+          "inicioMs": 3920,
+          "finMs": 4040
+        },
+        {
+          "palabra": "mil",
+          "inicioMs": 4040,
+          "finMs": 4200
+        },
+        {
+          "palabra": "veintitrés",
+          "inicioMs": 4200,
+          "finMs": 4860
+        },
+        {
+          "palabra": "cuando",
+          "inicioMs": 5240,
+          "finMs": 5380
+        },
+        {
+          "palabra": "aparece",
+          "inicioMs": 5380,
+          "finMs": 5660
+        },
+        {
+          "palabra": "una",
+          "inicioMs": 5660,
+          "finMs": 5880
+        },
+        {
+          "palabra": "grieta",
+          "inicioMs": 5880,
+          "finMs": 6240
+        },
+        {
+          "palabra": "y",
+          "inicioMs": 6240,
+          "finMs": 6380
+        },
+        {
+          "palabra": "entra",
+          "inicioMs": 6380,
+          "finMs": 6580
+        },
+        {
+          "palabra": "agua",
+          "inicioMs": 6580,
+          "finMs": 6860
+        },
+        {
+          "palabra": "el",
+          "inicioMs": 7020,
+          "finMs": 7140
+        },
+        {
+          "palabra": "calcio",
+          "inicioMs": 7140,
+          "finMs": 7440
+        },
+        {
+          "palabra": "se",
+          "inicioMs": 7440,
+          "finMs": 7580
+        },
+        {
+          "palabra": "disuelve",
+          "inicioMs": 7580,
+          "finMs": 8060
+        },
+        {
+          "palabra": "recristaliza",
+          "inicioMs": 8500,
+          "finMs": 8940
+        },
+        {
+          "palabra": "y",
+          "inicioMs": 8940,
+          "finMs": 9040
+        },
+        {
+          "palabra": "la",
+          "inicioMs": 9040,
+          "finMs": 9100
+        },
+        {
+          "palabra": "cierra",
+          "inicioMs": 9100,
+          "finMs": 9400
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "texto": "No era mágico ni indestructible. Algunas obras se erosionaron o cayeron por terremotos. Pero las que sobrevivieron muestran que esta química funciona durante siglos.",
+      "icono": "Compass",
+      "colorIcono": "#38BDF8",
+      "tituloVisual": "HONESTIDAD CIENTÍFICA",
+      "composicionVisual": "plano_general",
+      "escenario": "ruinas_puerto_romano_submarino",
+      "layout": "narrativo",
+      "transicion": "whip_right",
+      "efectosCamara": [
+        "drift"
+      ],
+      "sfx": "sfx/sfx_submarino_peces_corriente.wav",
+      "volumenSfx": 0.2,
+      "palabrasClave": [
+        "mágico",
+        "indestructible",
+        "erosionaron",
+        "terremotos",
+        "sobrevivieron",
+        "química",
+        "siglos"
+      ],
+      "personajes": [
+        {
+          "id": "stickman_protagonista",
+          "nombre": "Stickman Arqueólogo Submarino",
+          "posicion": {
+            "x": -100,
+            "y": 70
+          },
+          "escala": 0.95,
+          "orientacion": "derecha",
+          "prop": "mascara_buceo",
+          "habla": true,
+          "capaZ": 10,
+          "acciones": [
+            {
+              "tipo": "personalizada",
+              "pasos": [
+                {
+                  "inicioProgreso": 0,
+                  "finProgreso": 0.48,
+                  "poseId": "sad_slumped",
+                  "expresion": "sad",
+                  "posicion": {
+                    "x": -180,
+                    "y": 70
+                  },
+                  "curva": "suave",
+                  "procedural": "estatico"
+                },
+                {
+                  "inicioProgreso": 0.48,
+                  "finProgreso": 1,
+                  "poseId": "standing_confident",
+                  "expresion": "proud",
+                  "posicion": {
+                    "x": -80,
+                    "y": 70
+                  },
+                  "curva": "suave",
+                  "procedural": "estatico"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "duracionSegundos": 9.658,
+      "palabras": [
+        {
+          "palabra": "No",
+          "inicioMs": 0,
+          "finMs": 220
+        },
+        {
+          "palabra": "era",
+          "inicioMs": 220,
+          "finMs": 380
+        },
+        {
+          "palabra": "mágico",
+          "inicioMs": 380,
+          "finMs": 900
+        },
+        {
+          "palabra": "ni",
+          "inicioMs": 900,
+          "finMs": 1040
+        },
+        {
+          "palabra": "indestructible",
+          "inicioMs": 1040,
+          "finMs": 1940
+        },
+        {
+          "palabra": "Algunas",
+          "inicioMs": 2200,
+          "finMs": 2600
+        },
+        {
+          "palabra": "obras",
+          "inicioMs": 2600,
+          "finMs": 2800
+        },
+        {
+          "palabra": "se",
+          "inicioMs": 2800,
+          "finMs": 3020
+        },
+        {
+          "palabra": "erosionaron",
+          "inicioMs": 3020,
+          "finMs": 3520
+        },
+        {
+          "palabra": "o",
+          "inicioMs": 3520,
+          "finMs": 3740
+        },
+        {
+          "palabra": "cayeron",
+          "inicioMs": 3740,
+          "finMs": 4020
+        },
+        {
+          "palabra": "por",
+          "inicioMs": 4020,
+          "finMs": 4240
+        },
+        {
+          "palabra": "terremotos",
+          "inicioMs": 4240,
+          "finMs": 4880
+        },
+        {
+          "palabra": "Pero",
+          "inicioMs": 5240,
+          "finMs": 5400
+        },
+        {
+          "palabra": "las",
+          "inicioMs": 5400,
+          "finMs": 5540
+        },
+        {
+          "palabra": "que",
+          "inicioMs": 5540,
+          "finMs": 5680
+        },
+        {
+          "palabra": "sobrevivieron",
+          "inicioMs": 5680,
+          "finMs": 6340
+        },
+        {
+          "palabra": "muestran",
+          "inicioMs": 6340,
+          "finMs": 6900
+        },
+        {
+          "palabra": "que",
+          "inicioMs": 6900,
+          "finMs": 7100
+        },
+        {
+          "palabra": "esta",
+          "inicioMs": 7100,
+          "finMs": 7320
+        },
+        {
+          "palabra": "química",
+          "inicioMs": 7320,
+          "finMs": 7740
+        },
+        {
+          "palabra": "funciona",
+          "inicioMs": 7740,
+          "finMs": 8160
+        },
+        {
+          "palabra": "durante",
+          "inicioMs": 8160,
+          "finMs": 8540
+        },
+        {
+          "palabra": "siglos",
+          "inicioMs": 8540,
+          "finMs": 8980
+        }
+      ]
+    },
+    {
+      "id": 7,
+      "texto": "Hoy los investigadores estudian esta receta para hacer construcciones más duraderas y con menos emisiones. Quizá el secreto romano no era un secreto, sino química con mucha paciencia.",
+      "icono": "Leaf",
+      "colorIcono": "#22C55E",
+      "tituloVisual": "LECCIÓN PARA EL FUTURO",
+      "composicionVisual": "plano_general",
+      "escenario": "barca_laboratorio_futuro_calendario",
+      "layout": "narrativo",
+      "transicion": "flash",
+      "efectosCamara": [
+        "punch",
+        "drift"
+      ],
+      "sfx": "sfx/sfx_reloj_campanilla_flash.wav",
+      "volumenSfx": 0.22,
+      "palabrasClave": [
+        "investigadores",
+        "receta",
+        "duraderas",
+        "emisiones",
+        "secreto",
+        "romano",
+        "química",
+        "paciencia"
+      ],
+      "personajes": [
+        {
+          "id": "stickman_protagonista",
+          "nombre": "Stickman Sabio Centenario",
+          "posicion": {
+            "x": -260,
+            "y": 70
+          },
+          "escala": 0.95,
+          "orientacion": "derecha",
+          "prop": "bloques_comparativa_hormigon",
+          "habla": true,
+          "capaZ": 10,
+          "acciones": [
+            {
+              "tipo": "personalizada",
+              "pasos": [
+                {
+                  "inicioProgreso": 0,
+                  "finProgreso": 0.45,
+                  "poseId": "presenting_object",
+                  "expresion": "talking_enthusiastic",
+                  "posicion": {
+                    "x": -260,
+                    "y": 70
+                  },
+                  "curva": "suave",
+                  "procedural": "estatico"
+                },
+                {
+                  "inicioProgreso": 0.45,
+                  "finProgreso": 1,
+                  "poseId": "standing_confident",
+                  "expresion": "smile_soft",
+                  "posicion": {
+                    "x": -240,
+                    "y": 70
+                  },
+                  "curva": "suave",
+                  "procedural": "estatico"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "duracionSegundos": 9.322,
+      "palabras": [
+        {
+          "palabra": "Hoy",
+          "inicioMs": 0,
+          "finMs": 200
+        },
+        {
+          "palabra": "los",
+          "inicioMs": 200,
+          "finMs": 360
+        },
+        {
+          "palabra": "investigadores",
+          "inicioMs": 360,
+          "finMs": 920
+        },
+        {
+          "palabra": "estudian",
+          "inicioMs": 920,
+          "finMs": 1400
+        },
+        {
+          "palabra": "esta",
+          "inicioMs": 1400,
+          "finMs": 1620
+        },
+        {
+          "palabra": "receta",
+          "inicioMs": 1620,
+          "finMs": 2000
+        },
+        {
+          "palabra": "para",
+          "inicioMs": 2000,
+          "finMs": 2180
+        },
+        {
+          "palabra": "hacer",
+          "inicioMs": 2180,
+          "finMs": 2360
+        },
+        {
+          "palabra": "construcciones",
+          "inicioMs": 2360,
+          "finMs": 2960
+        },
+        {
+          "palabra": "más",
+          "inicioMs": 2960,
+          "finMs": 3140
+        },
+        {
+          "palabra": "duraderas",
+          "inicioMs": 3140,
+          "finMs": 3580
+        },
+        {
+          "palabra": "y",
+          "inicioMs": 3580,
+          "finMs": 3840
+        },
+        {
+          "palabra": "con",
+          "inicioMs": 3840,
+          "finMs": 3980
+        },
+        {
+          "palabra": "menos",
+          "inicioMs": 3980,
+          "finMs": 4220
+        },
+        {
+          "palabra": "emisiones",
+          "inicioMs": 4220,
+          "finMs": 5180
+        },
+        {
+          "palabra": "Quizá",
+          "inicioMs": 5300,
+          "finMs": 5580
+        },
+        {
+          "palabra": "el",
+          "inicioMs": 5580,
+          "finMs": 5660
+        },
+        {
+          "palabra": "secreto",
+          "inicioMs": 5660,
+          "finMs": 5980
+        },
+        {
+          "palabra": "romano",
+          "inicioMs": 5980,
+          "finMs": 6300
+        },
+        {
+          "palabra": "no",
+          "inicioMs": 6300,
+          "finMs": 6480
+        },
+        {
+          "palabra": "era",
+          "inicioMs": 6480,
+          "finMs": 6600
+        },
+        {
+          "palabra": "un",
+          "inicioMs": 6600,
+          "finMs": 6680
+        },
+        {
+          "palabra": "secreto",
+          "inicioMs": 6680,
+          "finMs": 7100
+        },
+        {
+          "palabra": "sino",
+          "inicioMs": 7280,
+          "finMs": 7420
+        },
+        {
+          "palabra": "química",
+          "inicioMs": 7420,
+          "finMs": 7880
+        },
+        {
+          "palabra": "con",
+          "inicioMs": 7880,
+          "finMs": 8040
+        },
+        {
+          "palabra": "mucha",
+          "inicioMs": 8040,
+          "finMs": 8280
+        },
+        {
+          "palabra": "paciencia",
+          "inicioMs": 8280,
+          "finMs": 8760
+        }
+      ]
+    }
+  ]
+}

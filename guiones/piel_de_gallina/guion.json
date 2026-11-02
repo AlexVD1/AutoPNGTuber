@@ -1,0 +1,1983 @@
+{
+  "meta": {
+    "id": "piel_de_gallina",
+    "slug": "piel_de_gallina",
+    "temaResumen": "¿Por qué se nos pone la piel de gallina con el frío o la música? Reflejo pilomotor y evolución humana",
+    "titulo": "¿Por qué se nos pone la piel de gallina con el frío?",
+    "titulo_corto": "PIEL DE GALLINA",
+    "gancho": "¿Alguna vez has sentido un escalofrío con tu música favorita o en una noche fría y viste cómo tu piel se llenaba de diminutos bultos con los vellos erizados?",
+    "fuentes": [
+      "Scientific American: Why Do Humans Get Goosebumps?",
+      "Harvard University Department of Stem Cell & Regenerative Biology (Piloerection & Sympathetic Nerves)"
+    ],
+    "genero": "SCIENCE",
+    "duracionObjetivo": [
+      62,
+      110
+    ]
+  },
+  "escenas": [
+    {
+      "id": 1,
+      "texto": "¿Alguna vez has sentido un escalofrío con tu música favorita o en una noche fría y viste cómo tu piel se llenaba de diminutos bultos con los vellos erizados?",
+      "icono": "Sparkles",
+      "colorIcono": "#F59E0B",
+      "tituloVisual": "PIEL DE GALLINA",
+      "composicionVisual": "plano_general",
+      "layout": "narrativo",
+      "transicion": "zoom_in",
+      "palabrasClave": [
+        "escalofrío",
+        "música",
+        "piel",
+        "vellos",
+        "erizados"
+      ],
+      "personajes": [
+        {
+          "id": "narrador",
+          "nombre": "Narrador",
+          "posicion": {
+            "x": -220,
+            "y": 70
+          },
+          "escala": 1,
+          "orientacion": "derecha",
+          "acciones": [
+            {
+              "tipo": "personalizada",
+              "pasos": [
+                {
+                  "inicioProgreso": 0,
+                  "finProgreso": 0.45,
+                  "poseId": "walking",
+                  "expresion": "talking",
+                  "posicion": {
+                    "x": -220,
+                    "y": 70
+                  },
+                  "curva": "lineal",
+                  "procedural": "caminar"
+                },
+                {
+                  "inicioProgreso": 0.45,
+                  "finProgreso": 1,
+                  "poseId": "trembling_fear",
+                  "expresion": "surprised",
+                  "posicion": {
+                    "x": -160,
+                    "y": 70
+                  },
+                  "curva": "suave",
+                  "procedural": "temblar"
+                }
+              ]
+            }
+          ],
+          "habla": true,
+          "capaZ": 10
+        }
+      ],
+      "duracionSegundos": 8.866,
+      "palabras": [
+        {
+          "palabra": "Alguna",
+          "inicioMs": 0,
+          "finMs": 420
+        },
+        {
+          "palabra": "vez",
+          "inicioMs": 420,
+          "finMs": 560
+        },
+        {
+          "palabra": "has",
+          "inicioMs": 560,
+          "finMs": 700
+        },
+        {
+          "palabra": "sentido",
+          "inicioMs": 700,
+          "finMs": 1060
+        },
+        {
+          "palabra": "un",
+          "inicioMs": 1060,
+          "finMs": 1400
+        },
+        {
+          "palabra": "escalofrío",
+          "inicioMs": 1400,
+          "finMs": 1980
+        },
+        {
+          "palabra": "con",
+          "inicioMs": 1980,
+          "finMs": 2160
+        },
+        {
+          "palabra": "tu",
+          "inicioMs": 2160,
+          "finMs": 2300
+        },
+        {
+          "palabra": "música",
+          "inicioMs": 2300,
+          "finMs": 2560
+        },
+        {
+          "palabra": "favorita",
+          "inicioMs": 2560,
+          "finMs": 3180
+        },
+        {
+          "palabra": "o",
+          "inicioMs": 3180,
+          "finMs": 3360
+        },
+        {
+          "palabra": "en",
+          "inicioMs": 3360,
+          "finMs": 3480
+        },
+        {
+          "palabra": "una",
+          "inicioMs": 3480,
+          "finMs": 3640
+        },
+        {
+          "palabra": "noche",
+          "inicioMs": 3640,
+          "finMs": 3860
+        },
+        {
+          "palabra": "fría",
+          "inicioMs": 3860,
+          "finMs": 4280
+        },
+        {
+          "palabra": "y",
+          "inicioMs": 4280,
+          "finMs": 4640
+        },
+        {
+          "palabra": "viste",
+          "inicioMs": 4640,
+          "finMs": 4900
+        },
+        {
+          "palabra": "cómo",
+          "inicioMs": 4900,
+          "finMs": 5140
+        },
+        {
+          "palabra": "tu",
+          "inicioMs": 5140,
+          "finMs": 5320
+        },
+        {
+          "palabra": "piel",
+          "inicioMs": 5320,
+          "finMs": 5500
+        },
+        {
+          "palabra": "se",
+          "inicioMs": 5500,
+          "finMs": 5680
+        },
+        {
+          "palabra": "llenaba",
+          "inicioMs": 5680,
+          "finMs": 5980
+        },
+        {
+          "palabra": "de",
+          "inicioMs": 5980,
+          "finMs": 6100
+        },
+        {
+          "palabra": "diminutos",
+          "inicioMs": 6100,
+          "finMs": 6520
+        },
+        {
+          "palabra": "bultos",
+          "inicioMs": 6520,
+          "finMs": 7120
+        },
+        {
+          "palabra": "con",
+          "inicioMs": 7320,
+          "finMs": 7400
+        },
+        {
+          "palabra": "los",
+          "inicioMs": 7400,
+          "finMs": 7580
+        },
+        {
+          "palabra": "vellos",
+          "inicioMs": 7580,
+          "finMs": 7820
+        },
+        {
+          "palabra": "erizados",
+          "inicioMs": 7820,
+          "finMs": 8400
+        }
+      ],
+      "escenario": "bosque_frio_nocturno"
+    },
+    {
+      "id": 2,
+      "texto": "Esta curiosa reacción corporal se llama médicamente reflejo pilomotor. Aunque hoy parece inútil, en realidad es uno de los vestigios evolutivos más antiguos de la humanidad.",
+      "icono": "Dna",
+      "colorIcono": "#38BDF8",
+      "tituloVisual": "REFLEJO PILOMOTOR",
+      "composicionVisual": "primer_plano",
+      "layout": "narrativo",
+      "transicion": "whip_right",
+      "efectosCamara": [
+        "drift"
+      ],
+      "palabrasClave": [
+        "reflejo",
+        "pilomotor",
+        "vestigios",
+        "evolutivos"
+      ],
+      "personajes": [
+        {
+          "id": "narrador",
+          "nombre": "Narrador",
+          "posicion": {
+            "x": 0,
+            "y": 60
+          },
+          "escala": 1.05,
+          "orientacion": "derecha",
+          "acciones": [
+            {
+              "tipo": "personalizada",
+              "pasos": [
+                {
+                  "inicioProgreso": 0,
+                  "finProgreso": 1,
+                  "poseId": "explaining_both_hands",
+                  "expresion": "talking_enthusiastic",
+                  "posicion": {
+                    "x": 0,
+                    "y": 60
+                  },
+                  "curva": "suave",
+                  "procedural": "estatico"
+                }
+              ]
+            }
+          ],
+          "habla": true,
+          "capaZ": 10
+        }
+      ],
+      "duracionSegundos": 8.89,
+      "palabras": [
+        {
+          "palabra": "Esta",
+          "inicioMs": 0,
+          "finMs": 320
+        },
+        {
+          "palabra": "curiosa",
+          "inicioMs": 320,
+          "finMs": 720
+        },
+        {
+          "palabra": "reacción",
+          "inicioMs": 720,
+          "finMs": 980
+        },
+        {
+          "palabra": "corporal",
+          "inicioMs": 980,
+          "finMs": 1540
+        },
+        {
+          "palabra": "se",
+          "inicioMs": 1540,
+          "finMs": 1660
+        },
+        {
+          "palabra": "llama",
+          "inicioMs": 1660,
+          "finMs": 1840
+        },
+        {
+          "palabra": "médicamente",
+          "inicioMs": 1840,
+          "finMs": 2440
+        },
+        {
+          "palabra": "reflejo",
+          "inicioMs": 2440,
+          "finMs": 2960
+        },
+        {
+          "palabra": "pilomotor",
+          "inicioMs": 2960,
+          "finMs": 3560
+        },
+        {
+          "palabra": "Aunque",
+          "inicioMs": 3800,
+          "finMs": 4000
+        },
+        {
+          "palabra": "hoy",
+          "inicioMs": 4000,
+          "finMs": 4220
+        },
+        {
+          "palabra": "parece",
+          "inicioMs": 4220,
+          "finMs": 4480
+        },
+        {
+          "palabra": "inútil",
+          "inicioMs": 4480,
+          "finMs": 4980
+        },
+        {
+          "palabra": "en",
+          "inicioMs": 5140,
+          "finMs": 5240
+        },
+        {
+          "palabra": "realidad",
+          "inicioMs": 5240,
+          "finMs": 5420
+        },
+        {
+          "palabra": "es",
+          "inicioMs": 5420,
+          "finMs": 5840
+        },
+        {
+          "palabra": "uno",
+          "inicioMs": 5840,
+          "finMs": 6020
+        },
+        {
+          "palabra": "de",
+          "inicioMs": 6020,
+          "finMs": 6100
+        },
+        {
+          "palabra": "los",
+          "inicioMs": 6100,
+          "finMs": 6260
+        },
+        {
+          "palabra": "vestigios",
+          "inicioMs": 6260,
+          "finMs": 6700
+        },
+        {
+          "palabra": "evolutivos",
+          "inicioMs": 6700,
+          "finMs": 7240
+        },
+        {
+          "palabra": "más",
+          "inicioMs": 7240,
+          "finMs": 7420
+        },
+        {
+          "palabra": "antiguos",
+          "inicioMs": 7420,
+          "finMs": 7900
+        },
+        {
+          "palabra": "de",
+          "inicioMs": 7900,
+          "finMs": 7960
+        },
+        {
+          "palabra": "la",
+          "inicioMs": 7960,
+          "finMs": 8060
+        },
+        {
+          "palabra": "humanidad",
+          "inicioMs": 8060,
+          "finMs": 8420
+        }
+      ],
+      "escenario": "bosque_frio_nocturno"
+    },
+    {
+      "id": 3,
+      "texto": "Debajo de cada uno de tus vellos existe un músculo microscópico llamado erector del pelo, conectado directamente al sistema nervioso simpático.",
+      "icono": "Activity",
+      "colorIcono": "#EF4444",
+      "tituloVisual": "MÚSCULO ERECTOR",
+      "composicionVisual": "plano_general",
+      "layout": "narrativo",
+      "transicion": "corte",
+      "palabrasClave": [
+        "músculo",
+        "microscópico",
+        "erector",
+        "nervioso"
+      ],
+      "objetos": [
+        {
+          "id": "foliculo_musculo",
+          "propId": "hair_follicle_erector",
+          "posicion": {
+            "x": 220,
+            "y": -40
+          },
+          "escala": 1.8,
+          "animacion": "pulso"
+        }
+      ],
+      "personajes": [
+        {
+          "id": "narrador",
+          "nombre": "Narrador",
+          "posicion": {
+            "x": -200,
+            "y": 70
+          },
+          "escala": 1,
+          "orientacion": "derecha",
+          "acciones": [
+            {
+              "tipo": "personalizada",
+              "pasos": [
+                {
+                  "inicioProgreso": 0,
+                  "finProgreso": 1,
+                  "poseId": "presenting_object",
+                  "expresion": "eureka",
+                  "posicion": {
+                    "x": -180,
+                    "y": 70
+                  },
+                  "curva": "suave",
+                  "procedural": "estatico"
+                }
+              ]
+            }
+          ],
+          "habla": true,
+          "capaZ": 10
+        }
+      ],
+      "duracionSegundos": 7.498,
+      "palabras": [
+        {
+          "palabra": "Debajo",
+          "inicioMs": 0,
+          "finMs": 400
+        },
+        {
+          "palabra": "de",
+          "inicioMs": 400,
+          "finMs": 560
+        },
+        {
+          "palabra": "cada",
+          "inicioMs": 560,
+          "finMs": 760
+        },
+        {
+          "palabra": "uno",
+          "inicioMs": 760,
+          "finMs": 1000
+        },
+        {
+          "palabra": "de",
+          "inicioMs": 1000,
+          "finMs": 1140
+        },
+        {
+          "palabra": "tus",
+          "inicioMs": 1140,
+          "finMs": 1280
+        },
+        {
+          "palabra": "vellos",
+          "inicioMs": 1280,
+          "finMs": 1720
+        },
+        {
+          "palabra": "existe",
+          "inicioMs": 1800,
+          "finMs": 2020
+        },
+        {
+          "palabra": "un",
+          "inicioMs": 2020,
+          "finMs": 2220
+        },
+        {
+          "palabra": "músculo",
+          "inicioMs": 2220,
+          "finMs": 2580
+        },
+        {
+          "palabra": "microscópico",
+          "inicioMs": 2580,
+          "finMs": 3240
+        },
+        {
+          "palabra": "llamado",
+          "inicioMs": 3240,
+          "finMs": 3520
+        },
+        {
+          "palabra": "erector",
+          "inicioMs": 3520,
+          "finMs": 3900
+        },
+        {
+          "palabra": "del",
+          "inicioMs": 3900,
+          "finMs": 4120
+        },
+        {
+          "palabra": "pelo",
+          "inicioMs": 4120,
+          "finMs": 4400
+        },
+        {
+          "palabra": "conectado",
+          "inicioMs": 4640,
+          "finMs": 5060
+        },
+        {
+          "palabra": "directamente",
+          "inicioMs": 5060,
+          "finMs": 5380
+        },
+        {
+          "palabra": "al",
+          "inicioMs": 5380,
+          "finMs": 5780
+        },
+        {
+          "palabra": "sistema",
+          "inicioMs": 5780,
+          "finMs": 6020
+        },
+        {
+          "palabra": "nervioso",
+          "inicioMs": 6020,
+          "finMs": 6460
+        },
+        {
+          "palabra": "simpático",
+          "inicioMs": 6460,
+          "finMs": 6980
+        }
+      ],
+      "escenario": "interior_cuerpo"
+    },
+    {
+      "id": 4,
+      "texto": "Cuando sientes frío repentino o una emoción muy intensa, tu cerebro libera adrenalina, provocando que todos esos diminutos músculos se contraigan en sincronía.",
+      "icono": "Zap",
+      "colorIcono": "#FFE600",
+      "tituloVisual": "GOLPE DE ADRENALINA",
+      "composicionVisual": "cifras_concepto",
+      "layout": "narrativo",
+      "transicion": "whip_left",
+      "palabrasClave": [
+        "frío",
+        "adrenalina",
+        "músculos",
+        "sincronía"
+      ],
+      "personajes": [
+        {
+          "id": "narrador",
+          "nombre": "Narrador",
+          "posicion": {
+            "x": 0,
+            "y": 60
+          },
+          "escala": 1,
+          "orientacion": "derecha",
+          "acciones": [
+            {
+              "tipo": "personalizada",
+              "pasos": [
+                {
+                  "inicioProgreso": 0,
+                  "finProgreso": 1,
+                  "poseId": "raising_one_finger",
+                  "expresion": "analytical",
+                  "posicion": {
+                    "x": 0,
+                    "y": 60
+                  },
+                  "curva": "suave",
+                  "procedural": "estatico"
+                }
+              ]
+            }
+          ],
+          "habla": true,
+          "capaZ": 10
+        }
+      ],
+      "duracionSegundos": 8.506,
+      "palabras": [
+        {
+          "palabra": "Cuando",
+          "inicioMs": 0,
+          "finMs": 260
+        },
+        {
+          "palabra": "sientes",
+          "inicioMs": 260,
+          "finMs": 580
+        },
+        {
+          "palabra": "frío",
+          "inicioMs": 580,
+          "finMs": 980
+        },
+        {
+          "palabra": "repentino",
+          "inicioMs": 1060,
+          "finMs": 1640
+        },
+        {
+          "palabra": "o",
+          "inicioMs": 1640,
+          "finMs": 1880
+        },
+        {
+          "palabra": "una",
+          "inicioMs": 1880,
+          "finMs": 2080
+        },
+        {
+          "palabra": "emoción",
+          "inicioMs": 2080,
+          "finMs": 2420
+        },
+        {
+          "palabra": "muy",
+          "inicioMs": 2420,
+          "finMs": 2600
+        },
+        {
+          "palabra": "intensa",
+          "inicioMs": 2600,
+          "finMs": 3240
+        },
+        {
+          "palabra": "tu",
+          "inicioMs": 3340,
+          "finMs": 3380
+        },
+        {
+          "palabra": "cerebro",
+          "inicioMs": 3380,
+          "finMs": 3760
+        },
+        {
+          "palabra": "libera",
+          "inicioMs": 3760,
+          "finMs": 4140
+        },
+        {
+          "palabra": "adrenalina",
+          "inicioMs": 4140,
+          "finMs": 4740
+        },
+        {
+          "palabra": "provocando",
+          "inicioMs": 4880,
+          "finMs": 5320
+        },
+        {
+          "palabra": "que",
+          "inicioMs": 5320,
+          "finMs": 5460
+        },
+        {
+          "palabra": "todos",
+          "inicioMs": 5460,
+          "finMs": 5640
+        },
+        {
+          "palabra": "esos",
+          "inicioMs": 5640,
+          "finMs": 5900
+        },
+        {
+          "palabra": "diminutos",
+          "inicioMs": 5900,
+          "finMs": 6340
+        },
+        {
+          "palabra": "músculos",
+          "inicioMs": 6340,
+          "finMs": 6760
+        },
+        {
+          "palabra": "se",
+          "inicioMs": 6760,
+          "finMs": 6920
+        },
+        {
+          "palabra": "contraigan",
+          "inicioMs": 6920,
+          "finMs": 7340
+        },
+        {
+          "palabra": "en",
+          "inicioMs": 7340,
+          "finMs": 7480
+        },
+        {
+          "palabra": "sincronía",
+          "inicioMs": 7480,
+          "finMs": 8060
+        }
+      ],
+      "escenario": "interior_cuerpo"
+    },
+    {
+      "id": 5,
+      "texto": "Al tensarse el músculo, tira del folículo hacia arriba creando un pequeño montículo en la piel y obligando al vello a levantarse por completo.",
+      "icono": "ArrowUp",
+      "colorIcono": "#10B981",
+      "tituloVisual": "VELLOS DE PUNTA",
+      "composicionVisual": "primer_plano",
+      "layout": "narrativo",
+      "transicion": "zoom_in",
+      "efectosCamara": [
+        "drift"
+      ],
+      "palabrasClave": [
+        "folículo",
+        "montículo",
+        "piel",
+        "levantarse"
+      ],
+      "personajes": [
+        {
+          "id": "narrador",
+          "nombre": "Narrador",
+          "posicion": {
+            "x": -20,
+            "y": 60
+          },
+          "escala": 1.05,
+          "orientacion": "derecha",
+          "acciones": [
+            {
+              "tipo": "personalizada",
+              "pasos": [
+                {
+                  "inicioProgreso": 0,
+                  "finProgreso": 1,
+                  "poseId": "explaining_pointing_up",
+                  "expresion": "talking",
+                  "posicion": {
+                    "x": 0,
+                    "y": 60
+                  },
+                  "curva": "suave",
+                  "procedural": "estatico"
+                }
+              ]
+            }
+          ],
+          "habla": true,
+          "capaZ": 10
+        }
+      ],
+      "duracionSegundos": 7.522,
+      "palabras": [
+        {
+          "palabra": "Al",
+          "inicioMs": 0,
+          "finMs": 200
+        },
+        {
+          "palabra": "tensarse",
+          "inicioMs": 200,
+          "finMs": 660
+        },
+        {
+          "palabra": "el",
+          "inicioMs": 660,
+          "finMs": 860
+        },
+        {
+          "palabra": "músculo",
+          "inicioMs": 860,
+          "finMs": 1280
+        },
+        {
+          "palabra": "tira",
+          "inicioMs": 1740,
+          "finMs": 1920
+        },
+        {
+          "palabra": "del",
+          "inicioMs": 1920,
+          "finMs": 2120
+        },
+        {
+          "palabra": "folículo",
+          "inicioMs": 2120,
+          "finMs": 2480
+        },
+        {
+          "palabra": "hacia",
+          "inicioMs": 2480,
+          "finMs": 2740
+        },
+        {
+          "palabra": "arriba",
+          "inicioMs": 2740,
+          "finMs": 3020
+        },
+        {
+          "palabra": "creando",
+          "inicioMs": 3200,
+          "finMs": 3420
+        },
+        {
+          "palabra": "un",
+          "inicioMs": 3420,
+          "finMs": 3540
+        },
+        {
+          "palabra": "pequeño",
+          "inicioMs": 3540,
+          "finMs": 3780
+        },
+        {
+          "palabra": "montículo",
+          "inicioMs": 3780,
+          "finMs": 4360
+        },
+        {
+          "palabra": "en",
+          "inicioMs": 4360,
+          "finMs": 4520
+        },
+        {
+          "palabra": "la",
+          "inicioMs": 4520,
+          "finMs": 4600
+        },
+        {
+          "palabra": "piel",
+          "inicioMs": 4600,
+          "finMs": 4820
+        },
+        {
+          "palabra": "y",
+          "inicioMs": 4820,
+          "finMs": 5100
+        },
+        {
+          "palabra": "obligando",
+          "inicioMs": 5100,
+          "finMs": 5520
+        },
+        {
+          "palabra": "al",
+          "inicioMs": 5520,
+          "finMs": 5660
+        },
+        {
+          "palabra": "vello",
+          "inicioMs": 5660,
+          "finMs": 5900
+        },
+        {
+          "palabra": "a",
+          "inicioMs": 5900,
+          "finMs": 5980
+        },
+        {
+          "palabra": "levantarse",
+          "inicioMs": 5980,
+          "finMs": 6440
+        },
+        {
+          "palabra": "por",
+          "inicioMs": 6440,
+          "finMs": 6620
+        },
+        {
+          "palabra": "completo",
+          "inicioMs": 6620,
+          "finMs": 7040
+        }
+      ],
+      "escenario": "interior_cuerpo"
+    },
+    {
+      "id": 6,
+      "texto": "Hace millones de años, cuando nuestros antepasados estaban cubiertos de un pelaje espeso, este truco era una herramienta crucial de supervivencia térmica.",
+      "icono": "Flame",
+      "colorIcono": "#F97316",
+      "tituloVisual": "MANTA TÉRMICA",
+      "composicionVisual": "plano_general",
+      "layout": "narrativo",
+      "transicion": "corte",
+      "palabrasClave": [
+        "antepasados",
+        "pelaje",
+        "espeso",
+        "supervivencia"
+      ],
+      "objetos": [
+        {
+          "id": "barrera_termica",
+          "propId": "thermal_fur_barrier",
+          "posicion": {
+            "x": 220,
+            "y": -30
+          },
+          "escala": 1.9,
+          "animacion": "pulso"
+        }
+      ],
+      "personajes": [
+        {
+          "id": "narrador",
+          "nombre": "Narrador",
+          "posicion": {
+            "x": -200,
+            "y": 70
+          },
+          "escala": 1,
+          "orientacion": "derecha",
+          "acciones": [
+            {
+              "tipo": "personalizada",
+              "pasos": [
+                {
+                  "inicioProgreso": 0,
+                  "finProgreso": 1,
+                  "poseId": "presenting_object",
+                  "expresion": "eureka",
+                  "posicion": {
+                    "x": -180,
+                    "y": 70
+                  },
+                  "curva": "suave",
+                  "procedural": "estatico"
+                }
+              ]
+            }
+          ],
+          "habla": true,
+          "capaZ": 10
+        }
+      ],
+      "duracionSegundos": 8.458,
+      "palabras": [
+        {
+          "palabra": "Hace",
+          "inicioMs": 0,
+          "finMs": 300
+        },
+        {
+          "palabra": "millones",
+          "inicioMs": 300,
+          "finMs": 520
+        },
+        {
+          "palabra": "de",
+          "inicioMs": 520,
+          "finMs": 860
+        },
+        {
+          "palabra": "años",
+          "inicioMs": 860,
+          "finMs": 1100
+        },
+        {
+          "palabra": "cuando",
+          "inicioMs": 1320,
+          "finMs": 1440
+        },
+        {
+          "palabra": "nuestros",
+          "inicioMs": 1440,
+          "finMs": 1800
+        },
+        {
+          "palabra": "antepasados",
+          "inicioMs": 1800,
+          "finMs": 2540
+        },
+        {
+          "palabra": "estaban",
+          "inicioMs": 2540,
+          "finMs": 2900
+        },
+        {
+          "palabra": "cubiertos",
+          "inicioMs": 2900,
+          "finMs": 3480
+        },
+        {
+          "palabra": "de",
+          "inicioMs": 3480,
+          "finMs": 3580
+        },
+        {
+          "palabra": "un",
+          "inicioMs": 3580,
+          "finMs": 3700
+        },
+        {
+          "palabra": "pelaje",
+          "inicioMs": 3700,
+          "finMs": 4040
+        },
+        {
+          "palabra": "espeso",
+          "inicioMs": 4040,
+          "finMs": 4620
+        },
+        {
+          "palabra": "este",
+          "inicioMs": 4760,
+          "finMs": 4940
+        },
+        {
+          "palabra": "truco",
+          "inicioMs": 4940,
+          "finMs": 5300
+        },
+        {
+          "palabra": "era",
+          "inicioMs": 5300,
+          "finMs": 5560
+        },
+        {
+          "palabra": "una",
+          "inicioMs": 5560,
+          "finMs": 5760
+        },
+        {
+          "palabra": "herramienta",
+          "inicioMs": 5760,
+          "finMs": 6220
+        },
+        {
+          "palabra": "crucial",
+          "inicioMs": 6220,
+          "finMs": 6580
+        },
+        {
+          "palabra": "de",
+          "inicioMs": 6580,
+          "finMs": 6780
+        },
+        {
+          "palabra": "supervivencia",
+          "inicioMs": 6780,
+          "finMs": 7500
+        },
+        {
+          "palabra": "térmica",
+          "inicioMs": 7500,
+          "finMs": 8020
+        }
+      ],
+      "escenario": "bosque_frio_nocturno"
+    },
+    {
+      "id": 7,
+      "texto": "Al erizarse millones de pelos juntos, atrapaban una capa de aire tibio inmóvil pegada a la piel, creando un abrigo natural que aislaba contra el viento helado.",
+      "icono": "Shield",
+      "colorIcono": "#06B6D4",
+      "tituloVisual": "AISLANTE NATURAL",
+      "composicionVisual": "primer_plano",
+      "layout": "narrativo",
+      "transicion": "whip_right",
+      "efectosCamara": [
+        "drift"
+      ],
+      "palabrasClave": [
+        "aire",
+        "tibio",
+        "abrigo",
+        "aislaba"
+      ],
+      "personajes": [
+        {
+          "id": "narrador",
+          "nombre": "Narrador",
+          "posicion": {
+            "x": 0,
+            "y": 60
+          },
+          "escala": 1.05,
+          "orientacion": "derecha",
+          "acciones": [
+            {
+              "tipo": "personalizada",
+              "pasos": [
+                {
+                  "inicioProgreso": 0,
+                  "finProgreso": 1,
+                  "poseId": "explaining_both_hands",
+                  "expresion": "talking_enthusiastic",
+                  "posicion": {
+                    "x": 0,
+                    "y": 60
+                  },
+                  "curva": "suave",
+                  "procedural": "estatico"
+                }
+              ]
+            }
+          ],
+          "habla": true,
+          "capaZ": 10
+        }
+      ],
+      "duracionSegundos": 7.978,
+      "palabras": [
+        {
+          "palabra": "Al",
+          "inicioMs": 0,
+          "finMs": 640
+        },
+        {
+          "palabra": "erizarse",
+          "inicioMs": 640,
+          "finMs": 900
+        },
+        {
+          "palabra": "millones",
+          "inicioMs": 900,
+          "finMs": 1160
+        },
+        {
+          "palabra": "de",
+          "inicioMs": 1160,
+          "finMs": 1400
+        },
+        {
+          "palabra": "pelos",
+          "inicioMs": 1400,
+          "finMs": 1700
+        },
+        {
+          "palabra": "juntos",
+          "inicioMs": 1700,
+          "finMs": 2280
+        },
+        {
+          "palabra": "atrapaban",
+          "inicioMs": 2280,
+          "finMs": 2460
+        },
+        {
+          "palabra": "una",
+          "inicioMs": 2460,
+          "finMs": 2800
+        },
+        {
+          "palabra": "capa",
+          "inicioMs": 2800,
+          "finMs": 2900
+        },
+        {
+          "palabra": "de",
+          "inicioMs": 2900,
+          "finMs": 3060
+        },
+        {
+          "palabra": "aire",
+          "inicioMs": 3060,
+          "finMs": 3480
+        },
+        {
+          "palabra": "tibio",
+          "inicioMs": 3480,
+          "finMs": 3560
+        },
+        {
+          "palabra": "inmóvil",
+          "inicioMs": 3560,
+          "finMs": 3840
+        },
+        {
+          "palabra": "pegada",
+          "inicioMs": 3840,
+          "finMs": 4180
+        },
+        {
+          "palabra": "a",
+          "inicioMs": 4180,
+          "finMs": 4300
+        },
+        {
+          "palabra": "la",
+          "inicioMs": 4300,
+          "finMs": 4360
+        },
+        {
+          "palabra": "piel",
+          "inicioMs": 4360,
+          "finMs": 4580
+        },
+        {
+          "palabra": "creando",
+          "inicioMs": 4800,
+          "finMs": 5120
+        },
+        {
+          "palabra": "un",
+          "inicioMs": 5120,
+          "finMs": 5240
+        },
+        {
+          "palabra": "abrigo",
+          "inicioMs": 5240,
+          "finMs": 5540
+        },
+        {
+          "palabra": "natural",
+          "inicioMs": 5540,
+          "finMs": 5820
+        },
+        {
+          "palabra": "que",
+          "inicioMs": 5820,
+          "finMs": 6120
+        },
+        {
+          "palabra": "aislaba",
+          "inicioMs": 6120,
+          "finMs": 6460
+        },
+        {
+          "palabra": "contra",
+          "inicioMs": 6460,
+          "finMs": 6680
+        },
+        {
+          "palabra": "el",
+          "inicioMs": 6680,
+          "finMs": 6880
+        },
+        {
+          "palabra": "viento",
+          "inicioMs": 6880,
+          "finMs": 7140
+        },
+        {
+          "palabra": "helado",
+          "inicioMs": 7140,
+          "finMs": 7480
+        }
+      ],
+      "escenario": "bosque_frio_nocturno"
+    },
+    {
+      "id": 8,
+      "texto": "Pero había un segundo propósito todavía más importante: la intimidación visual frente a depredadores y rivales en la naturaleza salvaje.",
+      "icono": "Eye",
+      "colorIcono": "#EC4899",
+      "tituloVisual": "ARMA PSICOLÓGICA",
+      "composicionVisual": "plano_general",
+      "layout": "narrativo",
+      "transicion": "corte",
+      "palabrasClave": [
+        "intimidación",
+        "depredadores",
+        "rivales",
+        "salvaje"
+      ],
+      "personajes": [
+        {
+          "id": "narrador",
+          "nombre": "Narrador",
+          "posicion": {
+            "x": 0,
+            "y": 70
+          },
+          "escala": 1,
+          "orientacion": "derecha",
+          "acciones": [
+            {
+              "tipo": "personalizada",
+              "pasos": [
+                {
+                  "inicioProgreso": 0,
+                  "finProgreso": 1,
+                  "poseId": "warning_danger",
+                  "expresion": "analytical",
+                  "posicion": {
+                    "x": 0,
+                    "y": 70
+                  },
+                  "curva": "suave",
+                  "procedural": "estatico"
+                }
+              ]
+            }
+          ],
+          "habla": true,
+          "capaZ": 10
+        }
+      ],
+      "duracionSegundos": 7.018,
+      "palabras": [
+        {
+          "palabra": "Pero",
+          "inicioMs": 0,
+          "finMs": 220
+        },
+        {
+          "palabra": "había",
+          "inicioMs": 220,
+          "finMs": 380
+        },
+        {
+          "palabra": "un",
+          "inicioMs": 380,
+          "finMs": 480
+        },
+        {
+          "palabra": "segundo",
+          "inicioMs": 480,
+          "finMs": 820
+        },
+        {
+          "palabra": "propósito",
+          "inicioMs": 820,
+          "finMs": 1300
+        },
+        {
+          "palabra": "todavía",
+          "inicioMs": 1300,
+          "finMs": 1580
+        },
+        {
+          "palabra": "más",
+          "inicioMs": 1580,
+          "finMs": 1820
+        },
+        {
+          "palabra": "importante",
+          "inicioMs": 1820,
+          "finMs": 2460
+        },
+        {
+          "palabra": "la",
+          "inicioMs": 2720,
+          "finMs": 2800
+        },
+        {
+          "palabra": "intimidación",
+          "inicioMs": 2800,
+          "finMs": 3380
+        },
+        {
+          "palabra": "visual",
+          "inicioMs": 3380,
+          "finMs": 3660
+        },
+        {
+          "palabra": "frente",
+          "inicioMs": 3660,
+          "finMs": 4000
+        },
+        {
+          "palabra": "a",
+          "inicioMs": 4000,
+          "finMs": 4200
+        },
+        {
+          "palabra": "depredadores",
+          "inicioMs": 4200,
+          "finMs": 4720
+        },
+        {
+          "palabra": "y",
+          "inicioMs": 4720,
+          "finMs": 4920
+        },
+        {
+          "palabra": "rivales",
+          "inicioMs": 4920,
+          "finMs": 5360
+        },
+        {
+          "palabra": "en",
+          "inicioMs": 5360,
+          "finMs": 5520
+        },
+        {
+          "palabra": "la",
+          "inicioMs": 5520,
+          "finMs": 5600
+        },
+        {
+          "palabra": "naturaleza",
+          "inicioMs": 5600,
+          "finMs": 6100
+        },
+        {
+          "palabra": "salvaje",
+          "inicioMs": 6100,
+          "finMs": 6540
+        }
+      ],
+      "escenario": "bosque_frio_nocturno"
+    },
+    {
+      "id": 9,
+      "texto": "Igual que un gato que arquea el lomo y esponja su cola ante una amenaza, un homínido con el pelo de punta parecía instantáneamente más grande y temible.",
+      "icono": "Maximize2",
+      "colorIcono": "#A855F7",
+      "tituloVisual": "EFECTO AMENAZA",
+      "composicionVisual": "cifras_concepto",
+      "layout": "narrativo",
+      "transicion": "whip_left",
+      "palabrasClave": [
+        "gato",
+        "amenaza",
+        "homínido",
+        "temible"
+      ],
+      "personajes": [
+        {
+          "id": "narrador",
+          "nombre": "Narrador",
+          "posicion": {
+            "x": 0,
+            "y": 60
+          },
+          "escala": 1,
+          "orientacion": "derecha",
+          "acciones": [
+            {
+              "tipo": "personalizada",
+              "pasos": [
+                {
+                  "inicioProgreso": 0,
+                  "finProgreso": 1,
+                  "poseId": "standing_confident",
+                  "expresion": "talking_enthusiastic",
+                  "posicion": {
+                    "x": 0,
+                    "y": 60
+                  },
+                  "curva": "suave",
+                  "procedural": "estatico"
+                }
+              ]
+            }
+          ],
+          "habla": true,
+          "capaZ": 10
+        }
+      ],
+      "duracionSegundos": 7.834,
+      "palabras": [
+        {
+          "palabra": "Igual",
+          "inicioMs": 0,
+          "finMs": 280
+        },
+        {
+          "palabra": "que",
+          "inicioMs": 280,
+          "finMs": 420
+        },
+        {
+          "palabra": "un",
+          "inicioMs": 420,
+          "finMs": 520
+        },
+        {
+          "palabra": "gato",
+          "inicioMs": 520,
+          "finMs": 780
+        },
+        {
+          "palabra": "que",
+          "inicioMs": 780,
+          "finMs": 1160
+        },
+        {
+          "palabra": "arquea",
+          "inicioMs": 1160,
+          "finMs": 1280
+        },
+        {
+          "palabra": "el",
+          "inicioMs": 1280,
+          "finMs": 1500
+        },
+        {
+          "palabra": "lomo",
+          "inicioMs": 1500,
+          "finMs": 1620
+        },
+        {
+          "palabra": "y",
+          "inicioMs": 1620,
+          "finMs": 2020
+        },
+        {
+          "palabra": "esponja",
+          "inicioMs": 2020,
+          "finMs": 2160
+        },
+        {
+          "palabra": "su",
+          "inicioMs": 2160,
+          "finMs": 2440
+        },
+        {
+          "palabra": "cola",
+          "inicioMs": 2440,
+          "finMs": 2640
+        },
+        {
+          "palabra": "ante",
+          "inicioMs": 2640,
+          "finMs": 2820
+        },
+        {
+          "palabra": "una",
+          "inicioMs": 2820,
+          "finMs": 3280
+        },
+        {
+          "palabra": "amenaza",
+          "inicioMs": 3540,
+          "finMs": 3640
+        },
+        {
+          "palabra": "un",
+          "inicioMs": 3640,
+          "finMs": 4120
+        },
+        {
+          "palabra": "homínido",
+          "inicioMs": 4120,
+          "finMs": 4260
+        },
+        {
+          "palabra": "con",
+          "inicioMs": 4260,
+          "finMs": 4420
+        },
+        {
+          "palabra": "el",
+          "inicioMs": 4420,
+          "finMs": 4600
+        },
+        {
+          "palabra": "pelo",
+          "inicioMs": 4600,
+          "finMs": 4740
+        },
+        {
+          "palabra": "de",
+          "inicioMs": 4740,
+          "finMs": 5100
+        },
+        {
+          "palabra": "punta",
+          "inicioMs": 5100,
+          "finMs": 5500
+        },
+        {
+          "palabra": "parecía",
+          "inicioMs": 5500,
+          "finMs": 6260
+        },
+        {
+          "palabra": "instantáneamente",
+          "inicioMs": 6260,
+          "finMs": 6520
+        },
+        {
+          "palabra": "más",
+          "inicioMs": 6520,
+          "finMs": 6840
+        },
+        {
+          "palabra": "grande",
+          "inicioMs": 6840,
+          "finMs": 6980
+        },
+        {
+          "palabra": "y",
+          "inicioMs": 6980,
+          "finMs": 7360
+        },
+        {
+          "palabra": "temible",
+          "inicioMs": 7360,
+          "finMs": 7584
+        }
+      ],
+      "escenario": "sala_estar"
+    },
+    {
+      "id": 10,
+      "texto": "¿Y por qué te pasa con canciones conmovedoras? Porque tu cerebro límbico interpreta los acordes dramáticos como una señal de sorpresa o asombro primitivo.",
+      "icono": "Music",
+      "colorIcono": "#6366F1",
+      "tituloVisual": "MÚSICA Y CEREBRO",
+      "composicionVisual": "primer_plano",
+      "layout": "narrativo",
+      "transicion": "zoom_in",
+      "efectosCamara": [
+        "punch"
+      ],
+      "palabrasClave": [
+        "canciones",
+        "cerebro",
+        "acordes",
+        "asombro"
+      ],
+      "personajes": [
+        {
+          "id": "narrador",
+          "nombre": "Narrador",
+          "posicion": {
+            "x": 0,
+            "y": 60
+          },
+          "escala": 1.05,
+          "orientacion": "derecha",
+          "acciones": [
+            {
+              "tipo": "personalizada",
+              "pasos": [
+                {
+                  "inicioProgreso": 0,
+                  "finProgreso": 1,
+                  "poseId": "thumbs_up_approval",
+                  "expresion": "proud",
+                  "posicion": {
+                    "x": 0,
+                    "y": 60
+                  },
+                  "curva": "suave",
+                  "procedural": "estatico"
+                }
+              ]
+            }
+          ],
+          "habla": true,
+          "capaZ": 10
+        }
+      ],
+      "duracionSegundos": 8.026,
+      "palabras": [
+        {
+          "palabra": "Y",
+          "inicioMs": 0,
+          "finMs": 160
+        },
+        {
+          "palabra": "por",
+          "inicioMs": 160,
+          "finMs": 300
+        },
+        {
+          "palabra": "qué",
+          "inicioMs": 300,
+          "finMs": 440
+        },
+        {
+          "palabra": "te",
+          "inicioMs": 440,
+          "finMs": 680
+        },
+        {
+          "palabra": "pasa",
+          "inicioMs": 680,
+          "finMs": 900
+        },
+        {
+          "palabra": "con",
+          "inicioMs": 900,
+          "finMs": 1320
+        },
+        {
+          "palabra": "canciones",
+          "inicioMs": 1320,
+          "finMs": 1520
+        },
+        {
+          "palabra": "conmovedoras",
+          "inicioMs": 1520,
+          "finMs": 1960
+        },
+        {
+          "palabra": "Porque",
+          "inicioMs": 2120,
+          "finMs": 2320
+        },
+        {
+          "palabra": "tu",
+          "inicioMs": 2320,
+          "finMs": 2460
+        },
+        {
+          "palabra": "cerebro",
+          "inicioMs": 2460,
+          "finMs": 2840
+        },
+        {
+          "palabra": "límbico",
+          "inicioMs": 2840,
+          "finMs": 3320
+        },
+        {
+          "palabra": "interpreta",
+          "inicioMs": 3320,
+          "finMs": 3840
+        },
+        {
+          "palabra": "los",
+          "inicioMs": 3840,
+          "finMs": 3980
+        },
+        {
+          "palabra": "acordes",
+          "inicioMs": 3980,
+          "finMs": 4420
+        },
+        {
+          "palabra": "dramáticos",
+          "inicioMs": 4420,
+          "finMs": 5000
+        },
+        {
+          "palabra": "como",
+          "inicioMs": 5000,
+          "finMs": 5240
+        },
+        {
+          "palabra": "una",
+          "inicioMs": 5240,
+          "finMs": 5400
+        },
+        {
+          "palabra": "señal",
+          "inicioMs": 5400,
+          "finMs": 5760
+        },
+        {
+          "palabra": "de",
+          "inicioMs": 5760,
+          "finMs": 5840
+        },
+        {
+          "palabra": "sorpresa",
+          "inicioMs": 5840,
+          "finMs": 6300
+        },
+        {
+          "palabra": "o",
+          "inicioMs": 6300,
+          "finMs": 6560
+        },
+        {
+          "palabra": "asombro",
+          "inicioMs": 6560,
+          "finMs": 6960
+        },
+        {
+          "palabra": "primitivo",
+          "inicioMs": 6960,
+          "finMs": 7540
+        }
+      ],
+      "escenario": "sala_estar"
+    },
+    {
+      "id": 11,
+      "texto": "Perdimos el pelaje hace milenios, pero la memoria biológica sigue grabada en nuestra piel. ¿Qué canciones te erizan la piel a ti?",
+      "icono": "Heart",
+      "colorIcono": "#FB7185",
+      "tituloVisual": "ECO ANCESTRAL",
+      "composicionVisual": "plano_general",
+      "layout": "narrativo",
+      "transicion": "corte",
+      "palabrasClave": [
+        "memoria",
+        "biológica",
+        "piel",
+        "canciones"
+      ],
+      "personajes": [
+        {
+          "id": "narrador",
+          "nombre": "Narrador",
+          "posicion": {
+            "x": 0,
+            "y": 70
+          },
+          "escala": 1,
+          "orientacion": "derecha",
+          "acciones": [
+            {
+              "tipo": "personalizada",
+              "pasos": [
+                {
+                  "inicioProgreso": 0,
+                  "finProgreso": 1,
+                  "poseId": "pointing_at_viewer",
+                  "expresion": "smile_wide",
+                  "posicion": {
+                    "x": 0,
+                    "y": 70
+                  },
+                  "curva": "suave",
+                  "procedural": "estatico"
+                }
+              ]
+            }
+          ],
+          "habla": true,
+          "capaZ": 10
+        }
+      ],
+      "duracionSegundos": 6.538,
+      "palabras": [
+        {
+          "palabra": "Perdimos",
+          "inicioMs": 0,
+          "finMs": 420
+        },
+        {
+          "palabra": "el",
+          "inicioMs": 420,
+          "finMs": 600
+        },
+        {
+          "palabra": "pelaje",
+          "inicioMs": 600,
+          "finMs": 940
+        },
+        {
+          "palabra": "hace",
+          "inicioMs": 940,
+          "finMs": 1180
+        },
+        {
+          "palabra": "milenios",
+          "inicioMs": 1180,
+          "finMs": 1700
+        },
+        {
+          "palabra": "pero",
+          "inicioMs": 1960,
+          "finMs": 2060
+        },
+        {
+          "palabra": "la",
+          "inicioMs": 2060,
+          "finMs": 2200
+        },
+        {
+          "palabra": "memoria",
+          "inicioMs": 2200,
+          "finMs": 2500
+        },
+        {
+          "palabra": "biológica",
+          "inicioMs": 2500,
+          "finMs": 3020
+        },
+        {
+          "palabra": "sigue",
+          "inicioMs": 3020,
+          "finMs": 3280
+        },
+        {
+          "palabra": "grabada",
+          "inicioMs": 3280,
+          "finMs": 3660
+        },
+        {
+          "palabra": "en",
+          "inicioMs": 3660,
+          "finMs": 3760
+        },
+        {
+          "palabra": "nuestra",
+          "inicioMs": 3760,
+          "finMs": 4000
+        },
+        {
+          "palabra": "piel",
+          "inicioMs": 4000,
+          "finMs": 4200
+        },
+        {
+          "palabra": "Qué",
+          "inicioMs": 4560,
+          "finMs": 4640
+        },
+        {
+          "palabra": "canciones",
+          "inicioMs": 4640,
+          "finMs": 4980
+        },
+        {
+          "palabra": "te",
+          "inicioMs": 4980,
+          "finMs": 5520
+        },
+        {
+          "palabra": "erizan",
+          "inicioMs": 5520,
+          "finMs": 5620
+        },
+        {
+          "palabra": "la",
+          "inicioMs": 5620,
+          "finMs": 5800
+        },
+        {
+          "palabra": "piel",
+          "inicioMs": 5800,
+          "finMs": 5920
+        },
+        {
+          "palabra": "a",
+          "inicioMs": 5920,
+          "finMs": 6060
+        },
+        {
+          "palabra": "ti",
+          "inicioMs": 6060,
+          "finMs": 6288
+        }
+      ],
+      "escenario": "bosque_frio_nocturno"
+    }
+  ]
+}

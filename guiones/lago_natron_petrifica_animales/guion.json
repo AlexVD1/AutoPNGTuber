@@ -1,0 +1,1770 @@
+{
+  "meta": {
+    "id": "lago_natron_petrifica_animales",
+    "slug": "lago_natron_petrifica_animales",
+    "temaResumen": "El lago que petrifica animales (El misterio del Lago Natron)",
+    "duracionObjetivo": [
+      62,
+      78
+    ],
+    "titulo": "El lago que petrifica animales: El misterio del Lago Natron",
+    "titulo_corto": "El lago que petrifica",
+    "gancho": "Existe un lago mortal en la Tierra cuyas aguas son tan venenosas y cáusticas... que transforman a los animales en estatuas de piedra real.",
+    "fuentes": [
+      "Nick Brandt (2013) - Across the Ravaged Land: Calcified Wildlife of Lake Natron",
+      "Grant et al. (2014) - The Soda Lakes of East Africa: Extreme Limnology",
+      "Smithsonian Magazine: The Deadly Lake That Turns Animals to Stone"
+    ],
+    "genero": "Ciencia y Naturaleza Extrema",
+    "playlist": "Lugares Más Extremos del Planeta"
+  },
+  "escenas": [
+    {
+      "id": 1,
+      "texto": "Existe un lago mortal en la Tierra cuyas aguas son tan venenosas y cáusticas... que transforman a los animales que caen en él en estatuas de piedra real.",
+      "icono": "Skull",
+      "colorIcono": "#EF4444",
+      "tituloVisual": "LAGO DE PIEDRA",
+      "composicionVisual": "plano_general",
+      "escenario": "lago_natron_orilla_roja",
+      "layout": "narrativo",
+      "transicion": "zoom_in",
+      "efectosCamara": [
+        "punch",
+        "drift"
+      ],
+      "sfx": "sfx/sfx_viento_sal_suspenso.wav",
+      "volumenSfx": 0.25,
+      "palabrasClave": [
+        "LAGO MORTAL",
+        "AGUAS VENENOSAS",
+        "CÁUSTICAS",
+        "ESTATUAS DE PIEDRA",
+        "PIEDRA REAL"
+      ],
+      "personajes": [
+        {
+          "id": "stickman",
+          "nombre": "Explorador",
+          "posicion": {
+            "x": -220,
+            "y": 60
+          },
+          "escala": 1.0,
+          "orientacion": "derecha",
+          "habla": true,
+          "capaZ": 15,
+          "acciones": [
+            {
+              "tipo": "personalizada",
+              "pasos": [
+                {
+                  "inicioProgreso": 0,
+                  "finProgreso": 0.35,
+                  "poseId": "walking",
+                  "expresion": "worried",
+                  "posicion": {
+                    "x": -240,
+                    "y": 60
+                  },
+                  "deltaPosicion": {
+                    "x": 60,
+                    "y": 0
+                  },
+                  "curva": "suave",
+                  "procedural": "caminar"
+                },
+                {
+                  "inicioProgreso": 0.35,
+                  "finProgreso": 0.7,
+                  "poseId": "leaning_forward",
+                  "expresion": "surprised",
+                  "posicion": {
+                    "x": -180,
+                    "y": 60
+                  },
+                  "curva": "suave",
+                  "procedural": "estatico"
+                },
+                {
+                  "inicioProgreso": 0.7,
+                  "finProgreso": 1.0,
+                  "poseId": "pointing_right",
+                  "expresion": "analytical",
+                  "posicion": {
+                    "x": -170,
+                    "y": 60
+                  },
+                  "curva": "suave",
+                  "procedural": "estatico"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "objetos": [
+        {
+          "id": "ave_estatua_orilla",
+          "propId": "pajaro_petrificado_caliza",
+          "posicion": {
+            "x": 190,
+            "y": 120
+          },
+          "escala": 1.35,
+          "animacion": {
+            "tipo": "vibrar"
+          }
+        }
+      ],
+      "duracionSegundos": 8.386,
+      "palabras": [
+        {
+          "palabra": "Existe",
+          "inicioMs": 0,
+          "finMs": 400
+        },
+        {
+          "palabra": "un",
+          "inicioMs": 400,
+          "finMs": 580
+        },
+        {
+          "palabra": "lago",
+          "inicioMs": 580,
+          "finMs": 760
+        },
+        {
+          "palabra": "mortal",
+          "inicioMs": 760,
+          "finMs": 1100
+        },
+        {
+          "palabra": "en",
+          "inicioMs": 1100,
+          "finMs": 1340
+        },
+        {
+          "palabra": "la",
+          "inicioMs": 1340,
+          "finMs": 1440
+        },
+        {
+          "palabra": "Tierra",
+          "inicioMs": 1440,
+          "finMs": 1700
+        },
+        {
+          "palabra": "cuyas",
+          "inicioMs": 1700,
+          "finMs": 2140
+        },
+        {
+          "palabra": "aguas",
+          "inicioMs": 2140,
+          "finMs": 2480
+        },
+        {
+          "palabra": "son",
+          "inicioMs": 2480,
+          "finMs": 2680
+        },
+        {
+          "palabra": "tan",
+          "inicioMs": 2680,
+          "finMs": 2880
+        },
+        {
+          "palabra": "venenosas",
+          "inicioMs": 2880,
+          "finMs": 3480
+        },
+        {
+          "palabra": "y",
+          "inicioMs": 3480,
+          "finMs": 3620
+        },
+        {
+          "palabra": "cáusticas",
+          "inicioMs": 3620,
+          "finMs": 4180
+        },
+        {
+          "palabra": "que",
+          "inicioMs": 4540,
+          "finMs": 4700
+        },
+        {
+          "palabra": "transforman",
+          "inicioMs": 4700,
+          "finMs": 5280
+        },
+        {
+          "palabra": "a",
+          "inicioMs": 5280,
+          "finMs": 5340
+        },
+        {
+          "palabra": "los",
+          "inicioMs": 5340,
+          "finMs": 5460
+        },
+        {
+          "palabra": "animales",
+          "inicioMs": 5460,
+          "finMs": 5800
+        },
+        {
+          "palabra": "que",
+          "inicioMs": 5800,
+          "finMs": 6100
+        },
+        {
+          "palabra": "caen",
+          "inicioMs": 6100,
+          "finMs": 6400
+        },
+        {
+          "palabra": "en",
+          "inicioMs": 6400,
+          "finMs": 6500
+        },
+        {
+          "palabra": "él",
+          "inicioMs": 6500,
+          "finMs": 6660
+        },
+        {
+          "palabra": "en",
+          "inicioMs": 6660,
+          "finMs": 6880
+        },
+        {
+          "palabra": "estatuas",
+          "inicioMs": 6880,
+          "finMs": 7240
+        },
+        {
+          "palabra": "de",
+          "inicioMs": 7240,
+          "finMs": 7400
+        },
+        {
+          "palabra": "piedra",
+          "inicioMs": 7400,
+          "finMs": 7680
+        },
+        {
+          "palabra": "real",
+          "inicioMs": 7680,
+          "finMs": 7900
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "texto": "No es un mito ni una leyenda de terror: es el Lago Natron en Tanzania. Y si te atreves a tocar a una de estas aves... suena exactamente como cerámica sólida.",
+      "icono": "MapPin",
+      "colorIcono": "#FDE047",
+      "tituloVisual": "LAGO NATRON",
+      "composicionVisual": "plano_general",
+      "escenario": "lago_natron_macro_contacto",
+      "layout": "narrativo",
+      "transicion": "whip_right",
+      "efectosCamara": [
+        "punch",
+        "drift"
+      ],
+      "sfx": "sfx/sfx_golpe_ceramica_piedra.wav",
+      "volumenSfx": 0.25,
+      "palabrasClave": [
+        "NO ES UN MITO",
+        "LAGO NATRON",
+        "TANZANIA",
+        "TOCAR A ESTAS AVES",
+        "CERÁMICA SÓLIDA"
+      ],
+      "personajes": [
+        {
+          "id": "stickman",
+          "nombre": "Explorador",
+          "posicion": {
+            "x": -220,
+            "y": 60
+          },
+          "escala": 1.0,
+          "orientacion": "derecha",
+          "habla": true,
+          "capaZ": 15,
+          "acciones": [
+            {
+              "tipo": "personalizada",
+              "pasos": [
+                {
+                  "inicioProgreso": 0,
+                  "finProgreso": 0.35,
+                  "poseId": "presenting_object",
+                  "expresion": "talking",
+                  "posicion": {
+                    "x": -140,
+                    "y": 60
+                  },
+                  "curva": "suave",
+                  "procedural": "estatico"
+                },
+                {
+                  "inicioProgreso": 0.35,
+                  "finProgreso": 0.65,
+                  "poseId": "shock_explosion",
+                  "expresion": "shocked",
+                  "posicion": {
+                    "x": -210,
+                    "y": 30
+                  },
+                  "curva": "rebote",
+                  "procedural": "rebotar"
+                },
+                {
+                  "inicioProgreso": 0.65,
+                  "finProgreso": 1.0,
+                  "poseId": "backing_away_scared",
+                  "expresion": "scared",
+                  "posicion": {
+                    "x": -230,
+                    "y": 60
+                  },
+                  "curva": "suave",
+                  "procedural": "temblar"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "objetos": [
+        {
+          "id": "ave_petrificada_macro",
+          "propId": "pajaro_petrificado_caliza",
+          "posicion": {
+            "x": 160,
+            "y": 100
+          },
+          "escala": 1.45,
+          "animacion": {
+            "tipo": "flotar"
+          }
+        }
+      ],
+      "duracionSegundos": 8.482,
+      "palabras": [
+        {
+          "palabra": "No",
+          "inicioMs": 0,
+          "finMs": 200
+        },
+        {
+          "palabra": "es",
+          "inicioMs": 200,
+          "finMs": 320
+        },
+        {
+          "palabra": "un",
+          "inicioMs": 320,
+          "finMs": 420
+        },
+        {
+          "palabra": "mito",
+          "inicioMs": 420,
+          "finMs": 740
+        },
+        {
+          "palabra": "ni",
+          "inicioMs": 740,
+          "finMs": 860
+        },
+        {
+          "palabra": "una",
+          "inicioMs": 860,
+          "finMs": 1000
+        },
+        {
+          "palabra": "leyenda",
+          "inicioMs": 1000,
+          "finMs": 1360
+        },
+        {
+          "palabra": "de",
+          "inicioMs": 1360,
+          "finMs": 1480
+        },
+        {
+          "palabra": "terror",
+          "inicioMs": 1480,
+          "finMs": 1780
+        },
+        {
+          "palabra": "es",
+          "inicioMs": 1980,
+          "finMs": 2080
+        },
+        {
+          "palabra": "el",
+          "inicioMs": 2080,
+          "finMs": 2240
+        },
+        {
+          "palabra": "Lago",
+          "inicioMs": 2240,
+          "finMs": 2460
+        },
+        {
+          "palabra": "Natron",
+          "inicioMs": 2460,
+          "finMs": 2840
+        },
+        {
+          "palabra": "en",
+          "inicioMs": 2840,
+          "finMs": 2960
+        },
+        {
+          "palabra": "Tanzania",
+          "inicioMs": 2960,
+          "finMs": 3440
+        },
+        {
+          "palabra": "Y",
+          "inicioMs": 3740,
+          "finMs": 3840
+        },
+        {
+          "palabra": "si",
+          "inicioMs": 3840,
+          "finMs": 3940
+        },
+        {
+          "palabra": "te",
+          "inicioMs": 3940,
+          "finMs": 4080
+        },
+        {
+          "palabra": "atreves",
+          "inicioMs": 4080,
+          "finMs": 4380
+        },
+        {
+          "palabra": "a",
+          "inicioMs": 4380,
+          "finMs": 4560
+        },
+        {
+          "palabra": "tocar",
+          "inicioMs": 4560,
+          "finMs": 4820
+        },
+        {
+          "palabra": "a",
+          "inicioMs": 4820,
+          "finMs": 5080
+        },
+        {
+          "palabra": "una",
+          "inicioMs": 5080,
+          "finMs": 5280
+        },
+        {
+          "palabra": "de",
+          "inicioMs": 5280,
+          "finMs": 5400
+        },
+        {
+          "palabra": "estas",
+          "inicioMs": 5400,
+          "finMs": 5620
+        },
+        {
+          "palabra": "aves",
+          "inicioMs": 5620,
+          "finMs": 5880
+        },
+        {
+          "palabra": "suena",
+          "inicioMs": 6040,
+          "finMs": 6200
+        },
+        {
+          "palabra": "exactamente",
+          "inicioMs": 6200,
+          "finMs": 6600
+        },
+        {
+          "palabra": "como",
+          "inicioMs": 6600,
+          "finMs": 7060
+        },
+        {
+          "palabra": "cerámica",
+          "inicioMs": 7060,
+          "finMs": 7560
+        },
+        {
+          "palabra": "sólida",
+          "inicioMs": 7560,
+          "finMs": 8020
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "texto": "Pero tranquilos, esto no funciona como el rayo de Medusa al instante. La verdad científica es aún más fascinante y se esconde en su química volcánica extrema.",
+      "icono": "FlaskConical",
+      "colorIcono": "#A855F7",
+      "tituloVisual": "NO ES MAGIA",
+      "composicionVisual": "plano_general",
+      "escenario": "lago_natron_test_ph_alcalino",
+      "layout": "narrativo",
+      "transicion": "whip_left",
+      "efectosCamara": [
+        "punch",
+        "drift"
+      ],
+      "sfx": "sfx/sfx_siseo_alerta_quimica.wav",
+      "volumenSfx": 0.25,
+      "palabrasClave": [
+        "RAYO DE MEDUSA",
+        "VERDAD CIENTÍFICA",
+        "MÁS FASCINANTE",
+        "QUÍMICA VOLCÁNICA",
+        "EXTREMA"
+      ],
+      "personajes": [
+        {
+          "id": "stickman",
+          "nombre": "Explorador",
+          "posicion": {
+            "x": -200,
+            "y": 60
+          },
+          "escala": 1.0,
+          "orientacion": "derecha",
+          "habla": true,
+          "capaZ": 15,
+          "acciones": [
+            {
+              "tipo": "personalizada",
+              "pasos": [
+                {
+                  "inicioProgreso": 0,
+                  "finProgreso": 0.35,
+                  "poseId": "exhausted_slouch",
+                  "expresion": "sad",
+                  "posicion": {
+                    "x": -200,
+                    "y": 60
+                  },
+                  "curva": "suave",
+                  "procedural": "estatico"
+                },
+                {
+                  "inicioProgreso": 0.35,
+                  "finProgreso": 0.7,
+                  "poseId": "taking_notes",
+                  "expresion": "analytical",
+                  "posicion": {
+                    "x": -180,
+                    "y": 60
+                  },
+                  "prop": "tira_ph_morado_caustico",
+                  "curva": "suave",
+                  "procedural": "estatico"
+                },
+                {
+                  "inicioProgreso": 0.7,
+                  "finProgreso": 1.0,
+                  "poseId": "surprised_hands_up",
+                  "expresion": "surprised",
+                  "posicion": {
+                    "x": -180,
+                    "y": 60
+                  },
+                  "prop": "tira_ph_morado_caustico",
+                  "curva": "suave",
+                  "procedural": "estatico"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "objetos": [
+        {
+          "id": "indicador_ph_objeto",
+          "propId": "tira_ph_morado_caustico",
+          "posicion": {
+            "x": 160,
+            "y": 40
+          },
+          "escala": 1.35,
+          "animacion": {
+            "tipo": "pulso"
+          }
+        }
+      ],
+      "duracionSegundos": 8.866,
+      "palabras": [
+        {
+          "palabra": "Pero",
+          "inicioMs": 0,
+          "finMs": 220
+        },
+        {
+          "palabra": "tranquilos",
+          "inicioMs": 220,
+          "finMs": 820
+        },
+        {
+          "palabra": "esto",
+          "inicioMs": 1020,
+          "finMs": 1220
+        },
+        {
+          "palabra": "no",
+          "inicioMs": 1220,
+          "finMs": 1360
+        },
+        {
+          "palabra": "funciona",
+          "inicioMs": 1360,
+          "finMs": 1800
+        },
+        {
+          "palabra": "como",
+          "inicioMs": 1800,
+          "finMs": 2060
+        },
+        {
+          "palabra": "el",
+          "inicioMs": 2060,
+          "finMs": 2200
+        },
+        {
+          "palabra": "rayo",
+          "inicioMs": 2200,
+          "finMs": 2460
+        },
+        {
+          "palabra": "de",
+          "inicioMs": 2460,
+          "finMs": 2560
+        },
+        {
+          "palabra": "Medusa",
+          "inicioMs": 2560,
+          "finMs": 2860
+        },
+        {
+          "palabra": "al",
+          "inicioMs": 2860,
+          "finMs": 2980
+        },
+        {
+          "palabra": "instante",
+          "inicioMs": 2980,
+          "finMs": 3520
+        },
+        {
+          "palabra": "La",
+          "inicioMs": 3720,
+          "finMs": 3820
+        },
+        {
+          "palabra": "verdad",
+          "inicioMs": 3820,
+          "finMs": 4060
+        },
+        {
+          "palabra": "científica",
+          "inicioMs": 4060,
+          "finMs": 4800
+        },
+        {
+          "palabra": "es",
+          "inicioMs": 4800,
+          "finMs": 4940
+        },
+        {
+          "palabra": "aún",
+          "inicioMs": 4940,
+          "finMs": 5100
+        },
+        {
+          "palabra": "más",
+          "inicioMs": 5100,
+          "finMs": 5300
+        },
+        {
+          "palabra": "fascinante",
+          "inicioMs": 5300,
+          "finMs": 5960
+        },
+        {
+          "palabra": "y",
+          "inicioMs": 5960,
+          "finMs": 6180
+        },
+        {
+          "palabra": "se",
+          "inicioMs": 6180,
+          "finMs": 6320
+        },
+        {
+          "palabra": "esconde",
+          "inicioMs": 6320,
+          "finMs": 6680
+        },
+        {
+          "palabra": "en",
+          "inicioMs": 6680,
+          "finMs": 6860
+        },
+        {
+          "palabra": "su",
+          "inicioMs": 6860,
+          "finMs": 7000
+        },
+        {
+          "palabra": "química",
+          "inicioMs": 7000,
+          "finMs": 7380
+        },
+        {
+          "palabra": "volcánica",
+          "inicioMs": 7380,
+          "finMs": 7900
+        },
+        {
+          "palabra": "extrema",
+          "inicioMs": 7900,
+          "finMs": 8400
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "texto": "El volcán cercano arroja una mezcla letal de ceniza y carbonato de sodio llamada natrón, la misma sal mineral milenaria que usaban los sacerdotes egipcios para momificar a sus faraones.",
+      "icono": "Flame",
+      "colorIcono": "#F59E0B",
+      "tituloVisual": "SAL DE NATRÓN",
+      "composicionVisual": "plano_general",
+      "escenario": "volcan_ol_doinyo_lengai",
+      "layout": "narrativo",
+      "transicion": "zoom_in",
+      "efectosCamara": [
+        "punch",
+        "drift"
+      ],
+      "sfx": "sfx/sfx_retumbo_volcan_egipcio.wav",
+      "volumenSfx": 0.25,
+      "palabrasClave": [
+        "VOLCÁN",
+        "CARBONATO DE SODIO",
+        "NATRÓN",
+        "SACERDOTES EGIPCIOS",
+        "MOMIFICAR FARAONES"
+      ],
+      "personajes": [
+        {
+          "id": "stickman",
+          "nombre": "Explorador",
+          "posicion": {
+            "x": -210,
+            "y": 60
+          },
+          "escala": 1.0,
+          "orientacion": "derecha",
+          "habla": true,
+          "capaZ": 15,
+          "acciones": [
+            {
+              "tipo": "personalizada",
+              "pasos": [
+                {
+                  "inicioProgreso": 0,
+                  "finProgreso": 0.4,
+                  "poseId": "pointing_up",
+                  "expresion": "talking_enthusiastic",
+                  "posicion": {
+                    "x": -210,
+                    "y": 60
+                  },
+                  "curva": "suave",
+                  "procedural": "estatico"
+                },
+                {
+                  "inicioProgreso": 0.4,
+                  "finProgreso": 0.75,
+                  "poseId": "explaining_both_hands",
+                  "expresion": "analytical",
+                  "posicion": {
+                    "x": -190,
+                    "y": 60
+                  },
+                  "curva": "suave",
+                  "procedural": "estatico"
+                },
+                {
+                  "inicioProgreso": 0.75,
+                  "finProgreso": 1.0,
+                  "poseId": "nodding_yes",
+                  "expresion": "eureka",
+                  "posicion": {
+                    "x": -190,
+                    "y": 60
+                  },
+                  "curva": "suave",
+                  "procedural": "estatico"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "objetos": [
+        {
+          "id": "sarcofago_momia",
+          "propId": "sarcofago_egipcio_natron",
+          "posicion": {
+            "x": 180,
+            "y": 30
+          },
+          "escala": 1.35,
+          "animacion": {
+            "tipo": "flotar"
+          }
+        }
+      ],
+      "duracionSegundos": 9.346,
+      "palabras": [
+        {
+          "palabra": "El",
+          "inicioMs": 0,
+          "finMs": 180
+        },
+        {
+          "palabra": "volcán",
+          "inicioMs": 180,
+          "finMs": 440
+        },
+        {
+          "palabra": "cercano",
+          "inicioMs": 440,
+          "finMs": 860
+        },
+        {
+          "palabra": "arroja",
+          "inicioMs": 860,
+          "finMs": 1180
+        },
+        {
+          "palabra": "una",
+          "inicioMs": 1180,
+          "finMs": 1320
+        },
+        {
+          "palabra": "mezcla",
+          "inicioMs": 1320,
+          "finMs": 1620
+        },
+        {
+          "palabra": "letal",
+          "inicioMs": 1620,
+          "finMs": 1900
+        },
+        {
+          "palabra": "de",
+          "inicioMs": 1900,
+          "finMs": 2060
+        },
+        {
+          "palabra": "ceniza",
+          "inicioMs": 2060,
+          "finMs": 2400
+        },
+        {
+          "palabra": "y",
+          "inicioMs": 2400,
+          "finMs": 2520
+        },
+        {
+          "palabra": "carbonato",
+          "inicioMs": 2520,
+          "finMs": 2940
+        },
+        {
+          "palabra": "de",
+          "inicioMs": 2940,
+          "finMs": 3120
+        },
+        {
+          "palabra": "sodio",
+          "inicioMs": 3120,
+          "finMs": 3380
+        },
+        {
+          "palabra": "llamada",
+          "inicioMs": 3380,
+          "finMs": 3700
+        },
+        {
+          "palabra": "natrón",
+          "inicioMs": 3700,
+          "finMs": 4040
+        },
+        {
+          "palabra": "la",
+          "inicioMs": 4380,
+          "finMs": 4600
+        },
+        {
+          "palabra": "misma",
+          "inicioMs": 4600,
+          "finMs": 4880
+        },
+        {
+          "palabra": "sal",
+          "inicioMs": 4880,
+          "finMs": 5080
+        },
+        {
+          "palabra": "mineral",
+          "inicioMs": 5080,
+          "finMs": 5340
+        },
+        {
+          "palabra": "milenaria",
+          "inicioMs": 5340,
+          "finMs": 5920
+        },
+        {
+          "palabra": "que",
+          "inicioMs": 5920,
+          "finMs": 6100
+        },
+        {
+          "palabra": "usaban",
+          "inicioMs": 6100,
+          "finMs": 6380
+        },
+        {
+          "palabra": "los",
+          "inicioMs": 6380,
+          "finMs": 6520
+        },
+        {
+          "palabra": "sacerdotes",
+          "inicioMs": 6520,
+          "finMs": 6980
+        },
+        {
+          "palabra": "egipcios",
+          "inicioMs": 6980,
+          "finMs": 7500
+        },
+        {
+          "palabra": "para",
+          "inicioMs": 7500,
+          "finMs": 7680
+        },
+        {
+          "palabra": "momificar",
+          "inicioMs": 7680,
+          "finMs": 8140
+        },
+        {
+          "palabra": "a",
+          "inicioMs": 8140,
+          "finMs": 8280
+        },
+        {
+          "palabra": "sus",
+          "inicioMs": 8280,
+          "finMs": 8440
+        },
+        {
+          "palabra": "faraones",
+          "inicioMs": 8440,
+          "finMs": 8880
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "texto": "El agua es tan alcalina que roza el pH del amoníaco puro. Si un ave se estrella desorientada por el reflejo del lago y muere ahogada... la salmuera drena toda su humedad interna.",
+      "icono": "Droplets",
+      "colorIcono": "#38BDF8",
+      "tituloVisual": "ESPEJO REFLEJANTE",
+      "composicionVisual": "plano_general",
+      "escenario": "lago_natron_espejo_mortal",
+      "layout": "narrativo",
+      "transicion": "whip_right",
+      "efectosCamara": [
+        "punch",
+        "drift"
+      ],
+      "sfx": "sfx/sfx_impacto_espejo_agua_splat.wav",
+      "volumenSfx": 0.25,
+      "palabrasClave": [
+        "AMONÍACO PURO",
+        "SE ESTRELLA",
+        "REFLEJO DEL LAGO",
+        "SALMUERA",
+        "HUMEDAD INTERNA"
+      ],
+      "personajes": [
+        {
+          "id": "stickman",
+          "nombre": "Explorador",
+          "posicion": {
+            "x": -220,
+            "y": 60
+          },
+          "escala": 1.0,
+          "orientacion": "derecha",
+          "habla": true,
+          "capaZ": 15,
+          "acciones": [
+            {
+              "tipo": "personalizada",
+              "pasos": [
+                {
+                  "inicioProgreso": 0,
+                  "finProgreso": 0.35,
+                  "poseId": "looking_up_pose",
+                  "expresion": "surprised",
+                  "posicion": {
+                    "x": -220,
+                    "y": 60
+                  },
+                  "curva": "suave",
+                  "procedural": "estatico"
+                },
+                {
+                  "inicioProgreso": 0.35,
+                  "finProgreso": 0.7,
+                  "poseId": "covering_eyes",
+                  "expresion": "worried",
+                  "posicion": {
+                    "x": -200,
+                    "y": 60
+                  },
+                  "curva": "suave",
+                  "procedural": "temblar"
+                },
+                {
+                  "inicioProgreso": 0.7,
+                  "finProgreso": 1.0,
+                  "poseId": "backing_away_scared",
+                  "expresion": "scared",
+                  "posicion": {
+                    "x": -200,
+                    "y": 60
+                  },
+                  "curva": "suave",
+                  "procedural": "estatico"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "objetos": [
+        {
+          "id": "silueta_choque",
+          "propId": "silueta_ave_impacto_agua",
+          "posicion": {
+            "x": 160,
+            "y": 60
+          },
+          "escala": 1.35,
+          "animacion": {
+            "tipo": "vibrar"
+          }
+        }
+      ],
+      "duracionSegundos": 9.082,
+      "palabras": [
+        {
+          "palabra": "El",
+          "inicioMs": 0,
+          "finMs": 200
+        },
+        {
+          "palabra": "agua",
+          "inicioMs": 200,
+          "finMs": 360
+        },
+        {
+          "palabra": "es",
+          "inicioMs": 360,
+          "finMs": 560
+        },
+        {
+          "palabra": "tan",
+          "inicioMs": 560,
+          "finMs": 640
+        },
+        {
+          "palabra": "alcalina",
+          "inicioMs": 640,
+          "finMs": 1080
+        },
+        {
+          "palabra": "que",
+          "inicioMs": 1080,
+          "finMs": 1220
+        },
+        {
+          "palabra": "roza",
+          "inicioMs": 1220,
+          "finMs": 1480
+        },
+        {
+          "palabra": "el",
+          "inicioMs": 1480,
+          "finMs": 1580
+        },
+        {
+          "palabra": "pH",
+          "inicioMs": 1580,
+          "finMs": 1720
+        },
+        {
+          "palabra": "del",
+          "inicioMs": 1720,
+          "finMs": 1820
+        },
+        {
+          "palabra": "amoníaco",
+          "inicioMs": 1820,
+          "finMs": 2180
+        },
+        {
+          "palabra": "puro",
+          "inicioMs": 2180,
+          "finMs": 2640
+        },
+        {
+          "palabra": "Si",
+          "inicioMs": 2780,
+          "finMs": 2920
+        },
+        {
+          "palabra": "un",
+          "inicioMs": 2920,
+          "finMs": 3080
+        },
+        {
+          "palabra": "ave",
+          "inicioMs": 3080,
+          "finMs": 3260
+        },
+        {
+          "palabra": "se",
+          "inicioMs": 3260,
+          "finMs": 3720
+        },
+        {
+          "palabra": "estrella",
+          "inicioMs": 3720,
+          "finMs": 4360
+        },
+        {
+          "palabra": "desorientada",
+          "inicioMs": 4360,
+          "finMs": 4520
+        },
+        {
+          "palabra": "por",
+          "inicioMs": 4520,
+          "finMs": 4640
+        },
+        {
+          "palabra": "el",
+          "inicioMs": 4640,
+          "finMs": 5080
+        },
+        {
+          "palabra": "reflejo",
+          "inicioMs": 5080,
+          "finMs": 5220
+        },
+        {
+          "palabra": "del",
+          "inicioMs": 5220,
+          "finMs": 5500
+        },
+        {
+          "palabra": "lago",
+          "inicioMs": 5500,
+          "finMs": 5700
+        },
+        {
+          "palabra": "y",
+          "inicioMs": 5700,
+          "finMs": 5980
+        },
+        {
+          "palabra": "muere",
+          "inicioMs": 5980,
+          "finMs": 6380
+        },
+        {
+          "palabra": "ahogada",
+          "inicioMs": 6540,
+          "finMs": 6600
+        },
+        {
+          "palabra": "la",
+          "inicioMs": 6600,
+          "finMs": 6960
+        },
+        {
+          "palabra": "salmuera",
+          "inicioMs": 6960,
+          "finMs": 7100
+        },
+        {
+          "palabra": "drena",
+          "inicioMs": 7100,
+          "finMs": 7380
+        },
+        {
+          "palabra": "toda",
+          "inicioMs": 7380,
+          "finMs": 7560
+        },
+        {
+          "palabra": "su",
+          "inicioMs": 7560,
+          "finMs": 7800
+        },
+        {
+          "palabra": "humedad",
+          "inicioMs": 7800,
+          "finMs": 8040
+        },
+        {
+          "palabra": "interna",
+          "inicioMs": 8040,
+          "finMs": 8620
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "texto": "Las sales minerales se incrustan en cada pluma, hueso y tejido blando, recubriendo el cadáver con una coraza de cal tan impenetrable que resiste intacta a la intemperie durante años enteros.",
+      "icono": "Search",
+      "colorIcono": "#FACC15",
+      "tituloVisual": "CORAZA DE CAL",
+      "composicionVisual": "plano_general",
+      "escenario": "lago_natron_calcificacion_timelapse",
+      "layout": "narrativo",
+      "transicion": "whip_left",
+      "efectosCamara": [
+        "punch",
+        "drift"
+      ],
+      "sfx": "sfx/sfx_cristalizacion_timelapse.wav",
+      "volumenSfx": 0.25,
+      "palabrasClave": [
+        "SALES MINERALES",
+        "CADA PLUMA Y HUESO",
+        "CORAZA DE CAL",
+        "IMPENETRABLE",
+        "AÑOS ENTEROS"
+      ],
+      "personajes": [
+        {
+          "id": "stickman",
+          "nombre": "Explorador",
+          "posicion": {
+            "x": -200,
+            "y": 60
+          },
+          "escala": 1.0,
+          "orientacion": "derecha",
+          "habla": true,
+          "capaZ": 15,
+          "acciones": [
+            {
+              "tipo": "personalizada",
+              "pasos": [
+                {
+                  "inicioProgreso": 0,
+                  "finProgreso": 0.4,
+                  "poseId": "crouching",
+                  "expresion": "analytical",
+                  "posicion": {
+                    "x": -200,
+                    "y": 90
+                  },
+                  "prop": "lupa_inspeccion_fosil",
+                  "curva": "suave",
+                  "procedural": "estatico"
+                },
+                {
+                  "inicioProgreso": 0.4,
+                  "finProgreso": 0.75,
+                  "poseId": "investigating_magnifier",
+                  "expresion": "eureka",
+                  "posicion": {
+                    "x": -180,
+                    "y": 60
+                  },
+                  "prop": "lupa_inspeccion_fosil",
+                  "curva": "suave",
+                  "procedural": "estatico"
+                },
+                {
+                  "inicioProgreso": 0.75,
+                  "finProgreso": 1.0,
+                  "poseId": "thinking_chin_hand",
+                  "expresion": "analytical",
+                  "posicion": {
+                    "x": -180,
+                    "y": 60
+                  },
+                  "curva": "suave",
+                  "procedural": "estatico"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "objetos": [
+        {
+          "id": "estatua_pedestal",
+          "propId": "pajaro_petrificado_caliza",
+          "posicion": {
+            "x": 170,
+            "y": 100
+          },
+          "escala": 1.4,
+          "animacion": {
+            "tipo": "pulso"
+          }
+        }
+      ],
+      "duracionSegundos": 10.114,
+      "palabras": [
+        {
+          "palabra": "Las",
+          "inicioMs": 0,
+          "finMs": 220
+        },
+        {
+          "palabra": "sales",
+          "inicioMs": 220,
+          "finMs": 980
+        },
+        {
+          "palabra": "minerales",
+          "inicioMs": 980,
+          "finMs": 1080
+        },
+        {
+          "palabra": "se",
+          "inicioMs": 1080,
+          "finMs": 1580
+        },
+        {
+          "palabra": "incrustan",
+          "inicioMs": 1580,
+          "finMs": 1660
+        },
+        {
+          "palabra": "en",
+          "inicioMs": 1660,
+          "finMs": 1920
+        },
+        {
+          "palabra": "cada",
+          "inicioMs": 1920,
+          "finMs": 2380
+        },
+        {
+          "palabra": "pluma",
+          "inicioMs": 2440,
+          "finMs": 2760
+        },
+        {
+          "palabra": "hueso",
+          "inicioMs": 2760,
+          "finMs": 2920
+        },
+        {
+          "palabra": "y",
+          "inicioMs": 2920,
+          "finMs": 3260
+        },
+        {
+          "palabra": "tejido",
+          "inicioMs": 3260,
+          "finMs": 3680
+        },
+        {
+          "palabra": "blando",
+          "inicioMs": 3780,
+          "finMs": 4320
+        },
+        {
+          "palabra": "recubriendo",
+          "inicioMs": 4320,
+          "finMs": 4420
+        },
+        {
+          "palabra": "el",
+          "inicioMs": 4420,
+          "finMs": 4800
+        },
+        {
+          "palabra": "cadáver",
+          "inicioMs": 4800,
+          "finMs": 4960
+        },
+        {
+          "palabra": "con",
+          "inicioMs": 4960,
+          "finMs": 5120
+        },
+        {
+          "palabra": "una",
+          "inicioMs": 5120,
+          "finMs": 5480
+        },
+        {
+          "palabra": "coraza",
+          "inicioMs": 5480,
+          "finMs": 5620
+        },
+        {
+          "palabra": "de",
+          "inicioMs": 5620,
+          "finMs": 6100
+        },
+        {
+          "palabra": "cal",
+          "inicioMs": 6100,
+          "finMs": 6760
+        },
+        {
+          "palabra": "tan",
+          "inicioMs": 6760,
+          "finMs": 6920
+        },
+        {
+          "palabra": "impenetrable",
+          "inicioMs": 6920,
+          "finMs": 7380
+        },
+        {
+          "palabra": "que",
+          "inicioMs": 7380,
+          "finMs": 7960
+        },
+        {
+          "palabra": "resiste",
+          "inicioMs": 7960,
+          "finMs": 8080
+        },
+        {
+          "palabra": "intacta",
+          "inicioMs": 8080,
+          "finMs": 8480
+        },
+        {
+          "palabra": "a",
+          "inicioMs": 8480,
+          "finMs": 8780
+        },
+        {
+          "palabra": "la",
+          "inicioMs": 8780,
+          "finMs": 9040
+        },
+        {
+          "palabra": "intemperie",
+          "inicioMs": 9040,
+          "finMs": 9640
+        },
+        {
+          "palabra": "durante",
+          "inicioMs": 9640,
+          "finMs": 9720
+        },
+        {
+          "palabra": "años",
+          "inicioMs": 9640,
+          "finMs": 9720
+        },
+        {
+          "palabra": "enteros",
+          "inicioMs": 9640,
+          "finMs": 9720
+        }
+      ]
+    },
+    {
+      "id": 7,
+      "texto": "Un cementerio de piedra viviente donde solo los flamencos rosados son inmunes. Porque en este lago africano, la muerte no pudre la carne... ¡te convierte en arte eterno para siempre!",
+      "icono": "Sparkles",
+      "colorIcono": "#FB7185",
+      "tituloVisual": "REINO ROSADO",
+      "composicionVisual": "plano_general",
+      "escenario": "lago_natron_flamencos_paraiso",
+      "layout": "narrativo",
+      "transicion": "zoom_in",
+      "efectosCamara": [
+        "punch",
+        "drift"
+      ],
+      "sfx": "sfx/sfx_flamencos_orquesta_cierre.wav",
+      "volumenSfx": 0.25,
+      "palabrasClave": [
+        "CEMENTERIO DE PIEDRA",
+        "FLAMENCOS ROSADOS",
+        "SON INMUNES",
+        "NO PUDRE",
+        "ARTE ETERNO"
+      ],
+      "personajes": [
+        {
+          "id": "stickman",
+          "nombre": "Explorador",
+          "posicion": {
+            "x": -200,
+            "y": 60
+          },
+          "escala": 1.0,
+          "orientacion": "derecha",
+          "habla": true,
+          "capaZ": 15,
+          "acciones": [
+            {
+              "tipo": "personalizada",
+              "pasos": [
+                {
+                  "inicioProgreso": 0,
+                  "finProgreso": 0.35,
+                  "poseId": "kneeling",
+                  "expresion": "smile_soft",
+                  "posicion": {
+                    "x": -200,
+                    "y": 80
+                  },
+                  "prop": "botas_hule_amarillas",
+                  "curva": "suave",
+                  "procedural": "estatico"
+                },
+                {
+                  "inicioProgreso": 0.35,
+                  "finProgreso": 0.7,
+                  "poseId": "waving_goodbye",
+                  "expresion": "smile_wide",
+                  "posicion": {
+                    "x": -180,
+                    "y": 60
+                  },
+                  "prop": "botas_hule_amarillas",
+                  "curva": "suave",
+                  "procedural": "estatico"
+                },
+                {
+                  "inicioProgreso": 0.7,
+                  "finProgreso": 1.0,
+                  "poseId": "thumbs_up_approval",
+                  "expresion": "smile_wide",
+                  "posicion": {
+                    "x": -180,
+                    "y": 60
+                  },
+                  "prop": "botas_hule_amarillas",
+                  "curva": "suave",
+                  "procedural": "estatico"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "objetos": [
+        {
+          "id": "flamenco_protagonista",
+          "propId": "flamenco_rosado_elegante",
+          "posicion": {
+            "x": 180,
+            "y": 90
+          },
+          "escala": 1.35,
+          "animacion": {
+            "tipo": "flotar"
+          }
+        }
+      ],
+      "duracionSegundos": 9.898,
+      "palabras": [
+        {
+          "palabra": "Un",
+          "inicioMs": 0,
+          "finMs": 240
+        },
+        {
+          "palabra": "cementerio",
+          "inicioMs": 240,
+          "finMs": 840
+        },
+        {
+          "palabra": "de",
+          "inicioMs": 840,
+          "finMs": 920
+        },
+        {
+          "palabra": "piedra",
+          "inicioMs": 920,
+          "finMs": 1220
+        },
+        {
+          "palabra": "viviente",
+          "inicioMs": 1220,
+          "finMs": 1740
+        },
+        {
+          "palabra": "donde",
+          "inicioMs": 1840,
+          "finMs": 2000
+        },
+        {
+          "palabra": "solo",
+          "inicioMs": 2000,
+          "finMs": 2300
+        },
+        {
+          "palabra": "los",
+          "inicioMs": 2300,
+          "finMs": 2460
+        },
+        {
+          "palabra": "flamencos",
+          "inicioMs": 2460,
+          "finMs": 2900
+        },
+        {
+          "palabra": "rosados",
+          "inicioMs": 2900,
+          "finMs": 3300
+        },
+        {
+          "palabra": "son",
+          "inicioMs": 3300,
+          "finMs": 3560
+        },
+        {
+          "palabra": "inmunes",
+          "inicioMs": 3560,
+          "finMs": 4020
+        },
+        {
+          "palabra": "Porque",
+          "inicioMs": 4260,
+          "finMs": 4480
+        },
+        {
+          "palabra": "en",
+          "inicioMs": 4480,
+          "finMs": 4640
+        },
+        {
+          "palabra": "este",
+          "inicioMs": 4640,
+          "finMs": 4840
+        },
+        {
+          "palabra": "lago",
+          "inicioMs": 4840,
+          "finMs": 4960
+        },
+        {
+          "palabra": "africano",
+          "inicioMs": 4960,
+          "finMs": 5620
+        },
+        {
+          "palabra": "la",
+          "inicioMs": 5620,
+          "finMs": 5780
+        },
+        {
+          "palabra": "muerte",
+          "inicioMs": 5780,
+          "finMs": 6100
+        },
+        {
+          "palabra": "no",
+          "inicioMs": 6100,
+          "finMs": 6300
+        },
+        {
+          "palabra": "pudre",
+          "inicioMs": 6300,
+          "finMs": 6640
+        },
+        {
+          "palabra": "la",
+          "inicioMs": 6640,
+          "finMs": 6760
+        },
+        {
+          "palabra": "carne",
+          "inicioMs": 6760,
+          "finMs": 7120
+        },
+        {
+          "palabra": "te",
+          "inicioMs": 7320,
+          "finMs": 7400
+        },
+        {
+          "palabra": "convierte",
+          "inicioMs": 7400,
+          "finMs": 7940
+        },
+        {
+          "palabra": "en",
+          "inicioMs": 7940,
+          "finMs": 8140
+        },
+        {
+          "palabra": "arte",
+          "inicioMs": 8140,
+          "finMs": 8380
+        },
+        {
+          "palabra": "eterno",
+          "inicioMs": 8380,
+          "finMs": 8820
+        },
+        {
+          "palabra": "para",
+          "inicioMs": 8820,
+          "finMs": 8960
+        },
+        {
+          "palabra": "siempre",
+          "inicioMs": 8960,
+          "finMs": 9360
+        }
+      ]
+    }
+  ]
+}

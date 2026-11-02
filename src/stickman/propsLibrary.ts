@@ -4,7 +4,8 @@ export type PropFamily =
   | "vida_cotidiana"
   | "naturaleza_alimentos"
   | "historia_exploracion"
-  | "reacciones_humor";
+  | "reacciones_humor"
+  | "herramientas_objetos";
 
 export type PropPlacement = "right" | "left" | "overhead" | "both";
 
@@ -14,8 +15,8 @@ export interface PropDef {
   family: PropFamily;
   defaultPlacement: PropPlacement;
   svg: string;
-  /** Versión animada determinista (partes que laten, giran o vibran) usada por SceneObject según el frame. */
-  animatedSvg?: (frame: number) => string;
+  /** Versión animada determinista (partes que laten, giran, cambian de estado o evolucionan según progreso 0..1). */
+  animatedSvg?: (frame: number, progress?: number, state?: string) => string;
   tags: string[];
 }
 
@@ -3914,4 +3915,6134 @@ export const PROPS_LIBRARY: Record<string, PropDef> = {
     },
     tags: ["compuerta", "acero", "mina", "escotilla", "sellada", "seguridad", "rueda"],
   },
+  billiard_cue_ball: {
+    id: "billiard_cue_ball",
+    name: "Taco de Billar y Bola de Marfil",
+    family: "vida_cotidiana",
+    defaultPlacement: "right",
+    svg: `<line x1="-45" y1="35" x2="15" y2="-15" stroke="#92400E" stroke-width="6" stroke-linecap="round"/><line x1="15" y1="-15" x2="22" y2="-21" stroke="#FEF3C7" stroke-width="6" stroke-linecap="round"/><circle cx="34" cy="-31" r="14" fill="#F8FAFC" stroke="${S}" stroke-width="4.5"/><circle cx="30" cy="-35" r="4" fill="#FFFFFF"/>`,
+    animatedSvg: (f: number) => {
+      const hit = Math.sin(f / 3) * 6;
+      return `<g transform="translate(${hit.toFixed(1)} ${(-hit).toFixed(1)})"><line x1="-45" y1="35" x2="15" y2="-15" stroke="#92400E" stroke-width="6.5" stroke-linecap="round"/><line x1="15" y1="-15" x2="22" y2="-21" stroke="#FEF3C7" stroke-width="6.5" stroke-linecap="round"/></g><circle cx="34" cy="-31" r="14" fill="#F8FAFC" stroke="${S}" stroke-width="4.5"/><circle cx="30" cy="-35" r="4" fill="#FFFFFF"/>`;
+    },
+    tags: ["billar", "taco", "bola", "marfil", "celuloide", "juego", "victoriano"],
+  },
+  elephant_tusk_cut: {
+    id: "elephant_tusk_cut",
+    name: "Colmillo de Elefante con Cortes",
+    family: "historia_exploracion",
+    defaultPlacement: "right",
+    svg: `<path d="M -35 35 Q -10 10 15 -35 Q 22 -38 25 -32 Q 5 20 -25 42 Z" fill="#FEF3C7" stroke="${S}" stroke-width="4.5"/><line x1="-15" y1="20" x2="-2" y2="28" stroke="#EF4444" stroke-width="3" stroke-dasharray="3 3"/><line x1="-2" y1="2" x2="10" y2="10" stroke="#EF4444" stroke-width="3" stroke-dasharray="3 3"/><circle cx="28" cy="-10" r="7" fill="#F8FAFC" stroke="${S}" stroke-width="2.5"/><circle cx="35" cy="8" r="7" fill="#F8FAFC" stroke="${S}" stroke-width="2.5"/><text x="-38" y="-15" font-size="9" font-weight="900" fill="#EF4444">4 BOLAS</text>`,
+    animatedSvg: (f: number) => {
+      const pulse = 0.9 + Math.sin(f / 4) * 0.1;
+      return `<path d="M -35 35 Q -10 10 15 -35 Q 22 -38 25 -32 Q 5 20 -25 42 Z" fill="#FEF3C7" stroke="${S}" stroke-width="4.5"/><line x1="-15" y1="20" x2="-2" y2="28" stroke="#EF4444" stroke-width="3.5" stroke-dasharray="3 3"/><line x1="-2" y1="2" x2="10" y2="10" stroke="#EF4444" stroke-width="3.5" stroke-dasharray="3 3"/><g transform="scale(${pulse.toFixed(2)})"><circle cx="28" cy="-10" r="7.5" fill="#F8FAFC" stroke="${S}" stroke-width="2.5"/><circle cx="35" cy="8" r="7.5" fill="#F8FAFC" stroke="${S}" stroke-width="2.5"/></g><text x="-38" y="-15" font-size="9" font-weight="900" fill="#EF4444" stroke="${S}" stroke-width="1.5" paint-order="stroke">4 BOLAS</text>`;
+    },
+    tags: ["colmillo", "marfil", "elefante", "caza", "billar", "escasez"],
+  },
+  celluloid_press: {
+    id: "celluloid_press",
+    name: "Prensa Térmica de Celuloide Hyatt",
+    family: "tecnologia",
+    defaultPlacement: "right",
+    svg: `<rect x="-34" y="-44" width="68" height="88" rx="6" fill="#334155" stroke="${S}" stroke-width="4.5"/><circle cx="0" cy="-46" r="18" fill="#64748B" stroke="${S}" stroke-width="4"/><line x1="-14" y1="-46" x2="14" y2="-46" stroke="${S}" stroke-width="4"/><rect x="-20" y="-12" width="40" height="34" fill="#F8FAFC" stroke="${S}" stroke-width="3.5"/><circle cx="0" cy="6" r="8" fill="#FDE047"/>`,
+    animatedSvg: (f: number, progress = 0, state = "prensando") => {
+      const p = Math.min(1, Math.max(0, progress));
+      // Estado 1: Espera abierta
+      if (state === "espera") {
+        return `<g>
+          <rect x="-38" y="-42" width="76" height="88" rx="6" fill="#334155" stroke="${S}" stroke-width="4.5"/>
+          <rect x="-26" y="-20" width="52" height="44" rx="3" fill="#0F172A" stroke="${S}" stroke-width="3.5"/>
+          <rect x="-22" y="-18" width="44" height="10" fill="#64748B" stroke="${S}" stroke-width="3"/>
+          <line x1="0" y1="-42" x2="0" y2="-18" stroke="#94A3B8" stroke-width="6"/>
+          <circle cx="0" cy="-46" r="18" fill="#64748B" stroke="${S}" stroke-width="4"/>
+          <line x1="-14" y1="-46" x2="14" y2="-46" stroke="${S}" stroke-width="4"/>
+          <rect x="-30" y="28" width="60" height="12" rx="3" fill="#475569" stroke="${S}" stroke-width="3"/>
+          <text x="0" y="-26" text-anchor="middle" font-size="7.5" font-weight="900" fill="#F8FAFC">PRENSA HYATT</text>
+        </g>`;
+      }
+      // Estado 2: Carga de masa de alcanfor + piroxilina y encendido térmico
+      if (state === "carga_calor") {
+        const dropY = -12 + p * 16;
+        const glow = 0.5 + 0.5 * Math.sin(f / 3);
+        return `<g>
+          <rect x="-38" y="-42" width="76" height="88" rx="6" fill="#334155" stroke="${S}" stroke-width="4.5"/>
+          <rect x="-26" y="-20" width="52" height="44" rx="3" fill="#0F172A" stroke="${S}" stroke-width="3.5"/>
+          <!-- Masa de alcanfor + nitrocelulosa entrando en la cámara -->
+          <ellipse cx="0" cy="${dropY.toFixed(1)}" rx="16" ry="11" fill="#FDE047" stroke="${S}" stroke-width="3"/>
+          <!-- Resistencias térmicas encendidas abajo -->
+          <rect x="-24" y="18" width="48" height="6" rx="2" fill="#EF4444" opacity="${glow.toFixed(2)}"/>
+          <rect x="-22" y="-18" width="44" height="10" fill="#64748B" stroke="${S}" stroke-width="3"/>
+          <g transform="rotate(${(f * 4) % 360} 0 -46)">
+            <circle cx="0" cy="-46" r="18" fill="#64748B" stroke="${S}" stroke-width="4"/>
+            <line x1="-14" y1="-46" x2="14" y2="-46" stroke="${S}" stroke-width="4"/>
+          </g>
+          <text x="0" y="38" text-anchor="middle" font-size="7.5" font-weight="900" fill="#FDE047">CALOR + PRESIÓN</text>
+        </g>`;
+      }
+      // Estado 3: Prensado mecánico activo (pistón baja y comprime la masa con vapor)
+      if (state === "prensando") {
+        const pistonY = -18 + p * 22;
+        const massH = Math.max(8, 24 - p * 14);
+        const massY = 22 - massH;
+        const steamX = 42 + (f % 14);
+        return `<g>
+          <rect x="-38" y="-42" width="76" height="88" rx="6" fill="#334155" stroke="${S}" stroke-width="4.5"/>
+          <rect x="-26" y="-20" width="52" height="44" rx="3" fill="#1E293B" stroke="${S}" stroke-width="3.5"/>
+          <!-- Tornillo y pistón bajando bajo presión -->
+          <line x1="0" y1="-42" x2="0" y2="${pistonY.toFixed(1)}" stroke="#CBD5E1" stroke-width="7"/>
+          <rect x="-23" y="${pistonY.toFixed(1)}" width="46" height="10" fill="#94A3B8" stroke="${S}" stroke-width="3"/>
+          <!-- Masa comprimida transformándose en marfil sintético -->
+          <rect x="-21" y="${massY.toFixed(1)}" width="42" height="${massH.toFixed(1)}" rx="4" fill="#FEF9C3" stroke="${S}" stroke-width="3"/>
+          <rect x="-24" y="19" width="48" height="5" rx="2" fill="#EF4444"/>
+          <g transform="rotate(${(f * 14) % 360} 0 -46)">
+            <circle cx="0" cy="-46" r="18" fill="#F59E0B" stroke="${S}" stroke-width="4"/>
+            <line x1="-14" y1="-46" x2="14" y2="-46" stroke="${S}" stroke-width="4"/>
+            <line x1="0" y1="-60" x2="0" y2="-32" stroke="${S}" stroke-width="4"/>
+          </g>
+          <!-- Chorros laterales de vapor contenido -->
+          <circle cx="${steamX}" cy="0" r="6" fill="#F8FAFC" opacity="0.75"/>
+          <circle cx="${-steamX}" cy="-6" r="5" fill="#F8FAFC" opacity="0.75"/>
+          <text x="0" y="38" text-anchor="middle" font-size="7.5" font-weight="900" fill="#38BDF8">PRENSANDO PASTA</text>
+        </g>`;
+      }
+      // Estado 4: Extrusión del bloque/bola sólida de celuloide color marfil
+      const outX = p * 26;
+      const shine = Math.sin(f / 4) * 3;
+      return `<g>
+        <rect x="-38" y="-42" width="76" height="88" rx="6" fill="#334155" stroke="${S}" stroke-width="4.5"/>
+        <rect x="-26" y="-20" width="52" height="44" rx="3" fill="#0F172A" stroke="${S}" stroke-width="3.5"/>
+        <line x1="0" y1="-42" x2="0" y2="2" stroke="#CBD5E1" stroke-width="7"/>
+        <rect x="-23" y="2" width="46" height="10" fill="#94A3B8" stroke="${S}" stroke-width="3"/>
+        <circle cx="0" cy="-46" r="18" fill="#10B981" stroke="${S}" stroke-width="4"/>
+        <!-- Bandeja de salida y cilindro/esfera de celuloide recién moldeado -->
+        <path d="M -52 34 L 40 34" stroke="${S}" stroke-width="5" stroke-linecap="round"/>
+        <rect x="${(-18 - outX * 0.5).toFixed(1)}" y="14" width="24" height="16" rx="4" fill="#FEFCE8" stroke="${S}" stroke-width="3.5"/>
+        <circle cx="${(-24 - outX).toFixed(1)}" cy="20" r="13" fill="#FEF9C3" stroke="${S}" stroke-width="4"/>
+        <circle cx="${(-28 - outX).toFixed(1)}" cy="15" r="4" fill="#FFFFFF"/>
+        <path d="M ${(-24 - outX).toFixed(1)} ${(2 + shine).toFixed(1)} L ${(-24 - outX).toFixed(1)} ${(-6 + shine).toFixed(1)}" stroke="#FFE600" stroke-width="3" stroke-linecap="round"/>
+        <text x="0" y="45" text-anchor="middle" font-size="8" font-weight="900" fill="#FFE600" stroke="${S}" stroke-width="2" paint-order="stroke">¡CELULOIDE SÓLIDO!</text>
+      </g>`;
+    },
+    tags: ["prensa", "celuloide", "hyatt", "quimica", "termoplastico", "inventor"],
+  },
+  mesa_quimica_celuloide: {
+    id: "mesa_quimica_celuloide",
+    name: "Estación Química de Nitrocelulosa y Alcanfor",
+    family: "educacion_ciencia",
+    defaultPlacement: "left",
+    svg: `<rect x="-42" y="16" width="84" height="12" rx="3" fill="#78350F" stroke="${S}" stroke-width="4"/><rect x="-24" y="-26" width="48" height="42" rx="4" fill="#E0F2FE" stroke="${S}" stroke-width="4"/><rect x="-20" y="-8" width="40" height="22" fill="#84CC16"/>`,
+    animatedSvg: (f: number, progress = 0, state = "algodon_acido") => {
+      const p = Math.min(1, Math.max(0, progress));
+      // Fase 1: Algodón sumergiéndose en ácido nítrico y sulfúrico -> gel burbujeante
+      if (state === "algodon_acido") {
+        const cottonY = -34 + p * 26;
+        const cottonColor = p > 0.55 ? "#FDE047" : "#FFFFFF";
+        const b1 = ((f * 2) % 18);
+        return `<g>
+          <rect x="-46" y="18" width="92" height="12" rx="3" fill="#78350F" stroke="${S}" stroke-width="4"/>
+          <!-- Cuba de vidrio con ácido nítrico -->
+          <rect x="-28" y="-28" width="56" height="46" rx="5" fill="#E0F2FE" fill-opacity="0.85" stroke="${S}" stroke-width="4"/>
+          <rect x="-24" y="-6" width="48" height="22" rx="2" fill="#84CC16" stroke="${S}" stroke-width="2.5"/>
+          <!-- Copo de algodón sumergiéndose y reaccionando -->
+          <g transform="translate(0, ${cottonY.toFixed(1)})">
+            <circle cx="-7" cy="0" r="9" fill="${cottonColor}" stroke="${S}" stroke-width="3"/>
+            <circle cx="7" cy="2" r="8" fill="${cottonColor}" stroke="${S}" stroke-width="3"/>
+            <circle cx="0" cy="-6" r="8" fill="${cottonColor}" stroke="${S}" stroke-width="3"/>
+          </g>
+          <!-- Burbujas y vapores ácidos -->
+          <circle cx="-10" cy="${(8 - b1).toFixed(1)}" r="3.5" fill="#ECFCCB" stroke="${S}" stroke-width="1.5"/>
+          <circle cx="11" cy="${(12 - b1 * 0.8).toFixed(1)}" r="4" fill="#ECFCCB" stroke="${S}" stroke-width="1.5"/>
+          <text x="0" y="40" text-anchor="middle" font-size="7.5" font-weight="900" fill="#BEF264" stroke="${S}" stroke-width="2" paint-order="stroke">ALGODÓN + ÁCIDO NÍTRICO</text>
+        </g>`;
+      }
+      // Fase 2: Al secarse se encoge y se quiebra en una costra frágil (fracaso de Parkes)
+      if (state === "costra_fragil") {
+        const shrink = 1 - p * 0.25;
+        return `<g>
+          <rect x="-46" y="18" width="92" height="12" rx="3" fill="#78350F" stroke="${S}" stroke-width="4"/>
+          <rect x="-28" y="-28" width="56" height="46" rx="5" fill="#1E293B" fill-opacity="0.5" stroke="${S}" stroke-width="4"/>
+          <g transform="translate(0, 4) scale(${shrink.toFixed(2)})">
+            <polygon points="-22,10 -16,-8 4,-12 22,-4 18,12 -6,14" fill="#D97706" stroke="${S}" stroke-width="3.5"/>
+            <!-- Grietas de fragilidad -->
+            <path d="M -8 -8 L 0 2 L -6 11 M 6 -6 L 2 4 L 12 10" stroke="#EF4444" stroke-width="3" fill="none" stroke-linecap="round"/>
+          </g>
+          <text x="0" y="40" text-anchor="middle" font-size="7.5" font-weight="900" fill="#F87171" stroke="${S}" stroke-width="2" paint-order="stroke">COSTRA SECA Y QUEBRADIZA</text>
+        </g>`;
+      }
+      // Fase 3: Hyatt añade cristales de alcanfor -> masa dorada maleable
+      const crystalY = -36 + ((f * 2.5) % 28);
+      return `<g>
+        <rect x="-46" y="18" width="92" height="12" rx="3" fill="#78350F" stroke="${S}" stroke-width="4"/>
+        <rect x="-28" y="-28" width="56" height="46" rx="5" fill="#E0F2FE" fill-opacity="0.85" stroke="${S}" stroke-width="4"/>
+        <!-- Cristales blancos de alcanfor cayendo -->
+        <rect x="-8" y="${crystalY.toFixed(1)}" width="7" height="7" transform="rotate(25 -5 ${crystalY.toFixed(1)})" fill="#FFFFFF" stroke="${S}" stroke-width="2"/>
+        <rect x="8" y="${(crystalY - 8).toFixed(1)}" width="6" height="6" fill="#FFFFFF" stroke="${S}" stroke-width="2"/>
+        <!-- Masa cálida y maleable -->
+        <path d="M -20 12 Q -10 ${(-4 - Math.sin(f / 3) * 4).toFixed(1)} 0 2 Q 12 ${(-6 + Math.sin(f / 3) * 4).toFixed(1)} 20 12 Z" fill="#FDE047" stroke="${S}" stroke-width="3.5"/>
+        <text x="0" y="40" text-anchor="middle" font-size="7.5" font-weight="900" fill="#FDE047" stroke="${S}" stroke-width="2" paint-order="stroke">+ ALCANFOR = MASA MALEABLE</text>
+      </g>`;
+    },
+    tags: ["quimica", "algodon", "acido", "alcanfor", "celuloide", "parkes", "hyatt"],
+  },
+  celluloid_ivory_ball: {
+    id: "celluloid_ivory_ball",
+    name: "Bola de Celuloide Marfil Sintético",
+    family: "educacion_ciencia",
+    defaultPlacement: "right",
+    svg: `<circle cx="0" cy="0" r="22" fill="#FEF9C3" stroke="${S}" stroke-width="5"/><circle cx="-7" cy="-8" r="6" fill="#FFFFFF"/><path d="M 18 -24 L 26 -32 M 24 -12 L 34 -14" stroke="#FFE600" stroke-width="4" stroke-linecap="round"/>`,
+    tags: ["celuloide", "bola", "marfil", "billar", "sintetico"],
+  },
+  paperclip_polymer_chain: {
+    id: "paperclip_polymer_chain",
+    name: "Demostrador Interactivo Monómero a Polímero",
+    family: "educacion_ciencia",
+    defaultPlacement: "both",
+    svg: `<rect x="-42" y="-12" width="26" height="24" rx="8" fill="none" stroke="#94A3B8" stroke-width="5"/><rect x="-22" y="-12" width="26" height="24" rx="8" fill="none" stroke="#38BDF8" stroke-width="5"/><rect x="-2" y="-12" width="26" height="24" rx="8" fill="none" stroke="#FBBF24" stroke-width="5"/><rect x="18" y="-12" width="26" height="24" rx="8" fill="none" stroke="#10B981" stroke-width="5"/>`,
+    animatedSvg: (f: number, progress = 0, state = "ensamblaje_progresivo") => {
+      const p = Math.min(1, Math.max(0, progress));
+      const clipColors = [
+        "#38BDF8",
+        "#FBBF24",
+        "#10B981",
+        "#F43F5E",
+        "#A855F7",
+        "#38BDF8",
+        "#FBBF24",
+        "#10B981",
+      ];
+
+      // FASE 1: Un solo clip solitario (monómero) que cae sobre la mesa sin fuerza ni estructura
+      if (state === "monomero_suelto") {
+        const dropProgress = Math.min(1, p * 1.6);
+        const clipY = -22 + dropProgress * 30 - Math.abs(Math.sin(dropProgress * Math.PI * 2)) * (1 - dropProgress) * 12;
+        const clipRot = dropProgress * 18;
+        return `<g>
+          <!-- Mesa de prueba molecular -->
+          <rect x="-75" y="18" width="150" height="8" rx="3" fill="#334155" stroke="${S}" stroke-width="3.5"/>
+          <!-- Único clip aislado (Monómero) -->
+          <g transform="translate(0, ${clipY.toFixed(1)}) rotate(${clipRot.toFixed(1)})">
+            <rect x="-18" y="-9" width="36" height="18" rx="8" fill="#0F172A" stroke="#38BDF8" stroke-width="5"/>
+            <rect x="-10" y="-4" width="20" height="8" rx="4" fill="none" stroke="#E2E8F0" stroke-width="2.5"/>
+          </g>
+          <rect x="-62" y="-44" width="124" height="18" rx="4" fill="#0F172A" stroke="#38BDF8" stroke-width="2.5"/>
+          <text x="0" y="-32" text-anchor="middle" font-size="8.5" font-weight="900" fill="#38BDF8">MONÓMERO: 1 ESLABÓN SUELTO</text>
+          <text x="0" y="38" text-anchor="middle" font-size="7.5" font-weight="900" fill="#94A3B8">SIN FUERZA NI ESTRUCTURA</text>
+        </g>`;
+      }
+
+      // FASE 2: Ensamblaje progresivo eslabón por eslabón ("unes ese clip con otro, y con otro...")
+      if (state === "ensamblaje_progresivo") {
+        const totalClips = 8;
+        const activeCount = Math.max(1, Math.min(totalClips, Math.ceil(p * totalClips)));
+        let clipsMarkup = "";
+        for (let i = 0; i < activeCount; i++) {
+          const baseX = -70 + i * 18;
+          const isNewest = i === activeCount - 1 && p < 0.96;
+          const localFrac = (p * totalClips) - Math.floor(p * totalClips);
+          const flyOffsetX = isNewest ? (1 - localFrac) * 24 : 0;
+          const flyOffsetY = isNewest ? -(1 - localFrac) * 18 : Math.sin((f + i * 5) / 5) * 2;
+          const col = clipColors[i % clipColors.length];
+          clipsMarkup += `<g transform="translate(${(baseX + flyOffsetX).toFixed(1)}, ${flyOffsetY.toFixed(1)})">
+            <rect x="-12" y="-9" width="24" height="18" rx="7" fill="#0F172A" fill-opacity="0.75" stroke="${col}" stroke-width="4.5"/>
+            <circle cx="-6" cy="0" r="2.5" fill="#FFFFFF"/>
+          </g>`;
+          if (isNewest) {
+            clipsMarkup += `<circle cx="${baseX - 8}" cy="0" r="7" fill="#FFE600" opacity="0.85"/>`;
+          }
+        }
+        const displayedCount = p > 0.85 ? "10.000" : String(activeCount);
+        return `<g>
+          ${clipsMarkup}
+          <rect x="-68" y="-42" width="136" height="18" rx="4" fill="#0F172A" stroke="#FFE600" stroke-width="2.5"/>
+          <text x="0" y="-30" text-anchor="middle" font-size="8" font-weight="900" fill="#FFE600">UNIENDO CLIPS: ${displayedCount} ESLABONES</text>
+          <text x="0" y="32" text-anchor="middle" font-size="7.5" font-weight="900" fill="#E2E8F0">CADENA DE CARBONO [-C-C-C-]n</text>
+        </g>`;
+      }
+
+      // FASE 3: Prueba de tensión y resistencia ("cuerda flexible, resistente y capaz de soportar peso")
+      const stretch = 1 + Math.min(0.16, p * 0.16) + Math.sin(f / 3) * 0.02;
+      let tautClips = "";
+      for (let i = 0; i < 8; i++) {
+        const cx = (-68 + i * 18.5) * stretch;
+        const sagY = Math.sin((i / 7) * Math.PI) * 5;
+        const col = clipColors[i % clipColors.length];
+        tautClips += `<g transform="translate(${cx.toFixed(1)}, ${sagY.toFixed(1)})">
+          <rect x="-12" y="-8" width="24" height="16" rx="6" fill="#0F172A" stroke="${col}" stroke-width="4.5"/>
+        </g>`;
+      }
+      return `<g>
+        <!-- Flechas de tensión en ambos extremos -->
+        <path d="M -88 0 L -74 0 M -82 -6 L -88 0 L -82 6" stroke="#FFE600" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"/>
+        <path d="M 74 0 L 88 0 M 82 -6 L 88 0 L 82 6" stroke="#FFE600" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"/>
+        ${tautClips}
+        <!-- Pesa suspendida del centro demostrando resistencia estructural -->
+        <line x1="0" y1="6" x2="0" y2="20" stroke="#FFE600" stroke-width="3.5"/>
+        <polygon points="-14,20 14,20 18,36 -18,36" fill="#475569" stroke="${S}" stroke-width="3.5"/>
+        <text x="0" y="31" text-anchor="middle" font-size="6.5" font-weight="900" fill="#FFFFFF">100 KG</text>
+        <rect x="-68" y="-42" width="136" height="18" rx="4" fill="#065F46" stroke="#10B981" stroke-width="2.5"/>
+        <text x="0" y="-30" text-anchor="middle" font-size="8" font-weight="900" fill="#FFFFFF">POLÍMERO: CADENA RESISTENTE</text>
+      </g>`;
+    },
+    tags: ["polimero", "monomero", "clips", "cadena", "carbono", "quimica", "molecula"],
+  },
+  phenol_formaldehyde_bottles: {
+    id: "phenol_formaldehyde_bottles",
+    name: "Botellas de Fenol y Formaldehído",
+    family: "educacion_ciencia",
+    defaultPlacement: "right",
+    svg: `<rect x="-28" y="-15" width="24" height="42" rx="4" fill="#78350F" stroke="${S}" stroke-width="4"/><rect x="-22" y="-24" width="12" height="9" fill="#D97706" stroke="${S}" stroke-width="3"/><rect x="4" y="-18" width="24" height="45" rx="4" fill="#047857" stroke="${S}" stroke-width="4"/><rect x="10" y="-27" width="12" height="9" fill="#10B981" stroke="${S}" stroke-width="3"/><circle cx="-16" cy="4" r="5" fill="#EF4444"/><circle cx="16" cy="2" r="5" fill="#EF4444"/>`,
+    animatedSvg: (f: number) => {
+      const bubble = Math.sin(f / 3) * 3;
+      return `<rect x="-28" y="-15" width="24" height="42" rx="4" fill="#78350F" stroke="${S}" stroke-width="4"/><rect x="-22" y="-24" width="12" height="9" fill="#D97706" stroke="${S}" stroke-width="3"/><rect x="4" y="-18" width="24" height="45" rx="4" fill="#047857" stroke="${S}" stroke-width="4"/><rect x="10" y="-27" width="12" height="9" fill="#10B981" stroke="${S}" stroke-width="3"/><circle cx="-16" cy="4" r="5" fill="#EF4444"/><circle cx="16" cy="2" r="5" fill="#EF4444"/><circle cx="${(-16 + bubble).toFixed(1)}" cy="-32" r="3" fill="#A7F3D0" opacity="0.7"/><circle cx="${(16 - bubble).toFixed(1)}" cy="-36" r="3.5" fill="#FDE68A" opacity="0.7"/>`;
+    },
+    tags: ["quimica", "veneno", "fenol", "formaldehido", "baquelita", "alquimia", "reactivos"],
+  },
+  bakelizer_autoclave: {
+    id: "bakelizer_autoclave",
+    name: "Autoclave Bakelizador Monumental",
+    family: "tecnologia",
+    defaultPlacement: "right",
+    svg: `<rect x="-32" y="-36" width="64" height="74" rx="14" fill="#1E293B" stroke="${S}" stroke-width="5"/><circle cx="0" cy="-2" r="18" fill="#475569" stroke="${S}" stroke-width="3.5"/><circle cx="0" cy="-34" r="10" fill="#F8FAFC" stroke="${S}" stroke-width="3"/><line x1="0" y1="-34" x2="6" y2="-38" stroke="#EF4444" stroke-width="2.5" stroke-linecap="round"/><rect x="-22" y="26" width="44" height="10" fill="#F59E0B" stroke="${S}" stroke-width="2.5"/>`,
+    animatedSvg: (f: number, progress = 0, state = "calor_presion_150c") => {
+      const p = Math.min(1, Math.max(0, progress));
+
+      // FASE 1: Carga de fenol+formaldehído y sellado hermético de la escotilla
+      if (state === "carga_sellado") {
+        const wheelRot = p * 240;
+        const hatchShift = (1 - p) * 14;
+        return `<g>
+          <!-- Cuerpo acorazado del Bakelizador -->
+          <rect x="-36" y="-34" width="72" height="72" rx="16" fill="#334155" stroke="${S}" stroke-width="5"/>
+          <!-- Interior visible antes de cerrar del todo -->
+          <circle cx="0" cy="-2" r="20" fill="#0F172A" stroke="${S}" stroke-width="3.5"/>
+          <path d="M -16 4 Q 0 ${(-2 + Math.sin(f / 3) * 3).toFixed(1)} 16 4 L 16 16 L -16 16 Z" fill="#D97706"/>
+          <!-- Puerta circular y volante cerrándose -->
+          <g transform="translate(${hatchShift.toFixed(1)}, 0)">
+            <circle cx="0" cy="-2" r="20" fill="#64748B" fill-opacity="${(0.35 + p * 0.65).toFixed(2)}" stroke="${S}" stroke-width="4"/>
+            <g transform="rotate(${wheelRot.toFixed(1)} 0 -2)">
+              <line x1="-13" y1="-2" x2="13" y2="-2" stroke="#F8FAFC" stroke-width="4"/>
+              <line x1="0" y1="-15" x2="0" y2="11" stroke="#F8FAFC" stroke-width="4"/>
+              <circle cx="0" cy="-2" r="6" fill="#EF4444" stroke="${S}" stroke-width="2.5"/>
+            </g>
+          </g>
+          <!-- Manómetro superior en cero -->
+          <circle cx="0" cy="-38" r="11" fill="#F8FAFC" stroke="${S}" stroke-width="3.5"/>
+          <line x1="0" y1="-38" x2="-7" y2="-34" stroke="#1E293B" stroke-width="2.5" stroke-linecap="round"/>
+          <text x="0" y="49" text-anchor="middle" font-size="7.5" font-weight="900" fill="#FDE047" stroke="${S}" stroke-width="2" paint-order="stroke">SELLANDO ESCOTILLA</text>
+        </g>`;
+      }
+
+      // FASE 2: Calentamiento a 150 °C y subida de presión en el manómetro
+      if (state === "calor_presion_150c") {
+        const needleAngle = -120 + p * 195 + Math.sin(f * 1.5) * 4;
+        const rad = (needleAngle * Math.PI) / 180;
+        const nx = Math.cos(rad) * 8;
+        const ny = -38 + Math.sin(rad) * 8;
+        const flameH = 8 + Math.sin(f * 2) * 3;
+        return `<g>
+          <rect x="-36" y="-34" width="72" height="72" rx="16" fill="#334155" stroke="${S}" stroke-width="5"/>
+          <!-- Quemador inferior encendido a 150 °C -->
+          <rect x="-28" y="28" width="56" height="10" rx="3" fill="#EF4444" stroke="${S}" stroke-width="3"/>
+          <polygon points="-18,28 -12,${(28 - flameH).toFixed(1)} -6,28 0,${(26 - flameH).toFixed(1)} 6,28 12,${(28 - flameH).toFixed(1)} 18,28" fill="#FACC15"/>
+          <!-- Visor mostrando líquido hirviendo a presión sin escapar -->
+          <circle cx="0" cy="-2" r="20" fill="#1E293B" stroke="${S}" stroke-width="4"/>
+          <path d="M -17 2 Q 0 ${(-5 + Math.sin(f * 1.5) * 4).toFixed(1)} 17 2 L 17 15 L -17 15 Z" fill="#F59E0B"/>
+          <circle cx="-6" cy="6" r="3" fill="#FEF08A"/>
+          <circle cx="7" cy="3" r="3.5" fill="#FEF08A"/>
+          <!-- Manómetro subiendo a zona roja -->
+          <circle cx="0" cy="-38" r="12" fill="#FEF2F2" stroke="${S}" stroke-width="3.5"/>
+          <line x1="0" y1="-38" x2="${nx.toFixed(1)}" y2="${ny.toFixed(1)}" stroke="#EF4444" stroke-width="3" stroke-linecap="round"/>
+          <text x="0" y="50" text-anchor="middle" font-size="8" font-weight="900" fill="#EF4444" stroke="${S}" stroke-width="2" paint-order="stroke">150 °C + ALTA PRESIÓN</text>
+        </g>`;
+      }
+
+      // FASE 3: Reticulación molecular 3D en el visor ("red rígida como una jaula de acero microscópica")
+      if (state === "reticulacion_3d") {
+        const linkOpacity = Math.min(1, p * 1.3);
+        return `<g>
+          <rect x="-36" y="-34" width="72" height="72" rx="16" fill="#1E293B" stroke="${S}" stroke-width="5"/>
+          <!-- Visor ampliado con jaula molecular 3D termoestable formándose -->
+          <circle cx="0" cy="-2" r="23" fill="#0F172A" stroke="#38BDF8" stroke-width="4"/>
+          <!-- Cadenas horizontales -->
+          <line x1="-16" y1="-10" x2="16" y2="-10" stroke="#38BDF8" stroke-width="3"/>
+          <line x1="-18" y1="0" x2="18" y2="0" stroke="#38BDF8" stroke-width="3"/>
+          <line x1="-16" y1="10" x2="16" y2="10" stroke="#38BDF8" stroke-width="3"/>
+          <!-- Puentes cruzados 3D que bloquean la red -->
+          <g opacity="${linkOpacity.toFixed(2)}">
+            <line x1="-10" y1="-12" x2="-10" y2="12" stroke="#FFE600" stroke-width="3"/>
+            <line x1="0" y1="-14" x2="0" y2="14" stroke="#FFE600" stroke-width="3"/>
+            <line x1="10" y1="-12" x2="10" y2="12" stroke="#FFE600" stroke-width="3"/>
+            <line x1="-12" y1="-10" x2="12" y2="10" stroke="#F43F5E" stroke-width="2.5"/>
+            <line x1="12" y1="-10" x2="-12" y2="10" stroke="#F43F5E" stroke-width="2.5"/>
+            <circle cx="-10" cy="0" r="3" fill="#FFE600"/>
+            <circle cx="0" cy="0" r="3.5" fill="#FFE600"/>
+            <circle cx="10" cy="0" r="3" fill="#FFE600"/>
+          </g>
+          <circle cx="0" cy="-38" r="11" fill="#F8FAFC" stroke="${S}" stroke-width="3.5"/>
+          <line x1="0" y1="-38" x2="7" y2="-42" stroke="#EF4444" stroke-width="3"/>
+          <text x="0" y="50" text-anchor="middle" font-size="7.5" font-weight="900" fill="#38BDF8" stroke="${S}" stroke-width="2" paint-order="stroke">RED 3D TERMOESTABLE</text>
+        </g>`;
+      }
+
+      // FASE 4: Apertura de la escotilla y extracción del bloque oscuro y brillante de Baquelita
+      const blockRise = p * 14;
+      return `<g>
+        <rect x="-36" y="-34" width="72" height="72" rx="16" fill="#334155" stroke="${S}" stroke-width="5"/>
+        <!-- Escotilla abierta hacia la derecha -->
+        <circle cx="28" cy="-2" r="16" fill="#64748B" stroke="${S}" stroke-width="3.5"/>
+        <circle cx="0" cy="-2" r="20" fill="#0F172A" stroke="${S}" stroke-width="3.5"/>
+        <!-- Bloque sólido oscuro y brillante de Baquelita emergiendo -->
+        <g transform="translate(0, ${(-blockRise * 0.4).toFixed(1)})">
+          <rect x="-15" y="-12" width="30" height="22" rx="4" fill="#27120B" stroke="#F59E0B" stroke-width="3.5"/>
+          <line x1="-10" y1="-7" x2="-2" y2="-7" stroke="#FFFFFF" stroke-width="3" stroke-linecap="round"/>
+          <path d="M 0 -22 L 0 -30 M -16 -18 L -22 -24 M 16 -18 L 22 -24" stroke="#FFE600" stroke-width="3" stroke-linecap="round"/>
+        </g>
+        <text x="0" y="50" text-anchor="middle" font-size="8" font-weight="900" fill="#FFE600" stroke="${S}" stroke-width="2" paint-order="stroke">¡NACE LA BAQUELITA!</text>
+      </g>`;
+    },
+    tags: ["bakelizador", "autoclave", "baquelita", "baekeland", "reactor", "presion", "vapor"],
+  },
+  bakelite_molded_block: {
+    id: "bakelite_molded_block",
+    name: "Bloque Sólido de Baquelita Moldeada",
+    family: "tecnologia",
+    defaultPlacement: "right",
+    svg: `<rect x="-24" y="-18" width="48" height="36" rx="6" fill="#27120B" stroke="${S}" stroke-width="5"/><rect x="-18" y="-12" width="36" height="24" rx="3" fill="#451A03" stroke="#F59E0B" stroke-width="2.5"/><line x1="-12" y1="-6" x2="4" y2="-6" stroke="#FFFFFF" stroke-width="4" stroke-linecap="round"/><path d="M 0 -26 L 0 -36 M -22 -22 L -30 -30 M 22 -22 L 30 -30" stroke="#FFE600" stroke-width="4" stroke-linecap="round"/>`,
+    tags: ["baquelita", "bloque", "termoestable", "resina", "aislante", "baekeland"],
+  },
+  vintage_bakelite_telephone: {
+    id: "vintage_bakelite_telephone",
+    name: "Teléfono Vintage de Baquelita",
+    family: "tecnologia",
+    defaultPlacement: "right",
+    svg: `<rect x="-24" y="-10" width="48" height="34" rx="8" fill="#0F172A" stroke="${S}" stroke-width="4.5"/><circle cx="0" cy="7" r="10" fill="#E2E8F0" stroke="${S}" stroke-width="3"/><circle cx="0" cy="7" r="3" fill="#0F172A"/><path d="M -30 -22 C -18 -15 18 -15 30 -22 C 34 -25 34 -15 28 -12 C 16 -16 -16 -16 -28 -12 C -34 -15 -34 -25 -30 -22 Z" fill="#0F172A" stroke="${S}" stroke-width="4"/>`,
+    animatedSvg: (f: number) => {
+      const ring = f % 12 < 6 ? Math.sin(f * 2) * 2 : 0;
+      return `<rect x="-24" y="-10" width="48" height="34" rx="8" fill="#0F172A" stroke="${S}" stroke-width="4.5"/><circle cx="0" cy="7" r="10" fill="#E2E8F0" stroke="${S}" stroke-width="3"/><circle cx="0" cy="7" r="3" fill="#0F172A"/><g transform="translate(${ring.toFixed(1)} 0)"><path d="M -30 -22 C -18 -15 18 -15 30 -22 C 34 -25 34 -15 28 -12 C 16 -16 -16 -16 -28 -12 C -34 -15 -34 -25 -30 -22 Z" fill="#0F172A" stroke="${S}" stroke-width="4"/></g>`;
+    },
+    tags: ["telefono", "baquelita", "disco", "vintage", "retro", "diseno", "comunicacion"],
+  },
+  hammer_test_indestructible: {
+    id: "hammer_test_indestructible",
+    name: "Prueba de Mazo Baquelita Indestructible",
+    family: "reacciones_humor",
+    defaultPlacement: "right",
+    svg: `<rect x="-20" y="8" width="40" height="24" rx="4" fill="#0F172A" stroke="${S}" stroke-width="4.5"/><line x1="-15" y1="-30" x2="10" y2="2" stroke="#78350F" stroke-width="6" stroke-linecap="round"/><rect x="4" y="-3" width="16" height="12" rx="2" fill="#92400E" stroke="${S}" stroke-width="3"/><path d="M 0 5 L -10 -5 M 5 3 L 15 -7" stroke="#FFE600" stroke-width="3" stroke-linecap="round"/>`,
+    animatedSvg: (f: number) => {
+      const bounce = Math.abs(Math.sin(f / 3)) * 8;
+      return `<rect x="-20" y="8" width="40" height="24" rx="4" fill="#0F172A" stroke="${S}" stroke-width="4.5"/><g transform="translate(0 ${(-bounce).toFixed(1)})"><line x1="-15" y1="-30" x2="10" y2="2" stroke="#78350F" stroke-width="6" stroke-linecap="round"/><rect x="4" y="-3" width="16" height="12" rx="2" fill="#92400E" stroke="${S}" stroke-width="3"/></g><path d="M 0 5 L -10 -5 M 5 3 L 15 -7" stroke="#FFE600" stroke-width="3.5" stroke-linecap="round"/>`;
+    },
+    tags: ["mazo", "prueba", "resistencia", "baquelita", "indestructible", "impacto"],
+  },
+  plastiglomerate_rock: {
+    id: "plastiglomerate_rock",
+    name: "Roca de Plastiglomerado Fósil",
+    family: "historia_exploracion",
+    defaultPlacement: "right",
+    svg: `<path d="M -30 20 L -25 -10 L 0 -25 L 28 -15 L 32 15 L 10 28 L -20 26 Z" fill="#334155" stroke="${S}" stroke-width="4.5"/><circle cx="-8" cy="-5" r="7" fill="#EF4444" stroke="${S}" stroke-width="2"/><circle cx="12" cy="5" r="6" fill="#38BDF8" stroke="${S}" stroke-width="2"/><rect x="-18" y="8" width="10" height="6" fill="#FBBF24" stroke="${S}" stroke-width="2"/>`,
+    animatedSvg: (f: number) => {
+      const shine = (f * 3) % 40;
+      return `<path d="M -30 20 L -25 -10 L 0 -25 L 28 -15 L 32 15 L 10 28 L -20 26 Z" fill="#334155" stroke="${S}" stroke-width="4.5"/><circle cx="-8" cy="-5" r="7" fill="#EF4444" stroke="${S}" stroke-width="2.5"/><circle cx="12" cy="5" r="6" fill="#38BDF8" stroke="${S}" stroke-width="2.5"/><rect x="-18" y="8" width="10" height="6" fill="#FBBF24" stroke="${S}" stroke-width="2.5"/><line x1="${(-25 + shine).toFixed(1)}" y1="-20" x2="${(-15 + shine).toFixed(1)}" y2="-10" stroke="#FFFFFF" stroke-width="2" stroke-linecap="round" opacity="0.7"/>`;
+    },
+    tags: ["plastiglomerado", "roca", "fosil", "antropoceno", "geologia", "microplasticos"],
+  },
+  galileo_cube_scale: {
+    id: "galileo_cube_scale",
+    name: "Cubo de Escala de Galileo (Ley Cuadrado-Cúbica)",
+    family: "educacion_ciencia",
+    defaultPlacement: "right",
+    svg: `<polygon points="-20,-5 0,-18 20,-5 0,8" fill="#38BDF8" stroke="${S}" stroke-width="3.5"/><polygon points="-20,-5 0,8 0,32 -20,19" fill="#0284C7" stroke="${S}" stroke-width="3.5"/><polygon points="0,8 20,-5 20,19 0,32" fill="#0369A1" stroke="${S}" stroke-width="3.5"/><text x="0" y="-24" text-anchor="middle" font-size="8" font-weight="900" fill="#FFE600" stroke="${S}" stroke-width="2" paint-order="stroke">L = 1</text>`,
+    animatedSvg: (f: number, progress = 0, state = "cubo_base_1x") => {
+      // FASE 1: Cubo 1x (Base estable)
+      if (state === "cubo_base_1x") {
+        return `<g>
+          <polygon points="-16,-6 0,-17 16,-6 0,5" fill="#38BDF8" stroke="${S}" stroke-width="3.5"/>
+          <polygon points="-16,-6 0,5 0,26 -16,15" fill="#0284C7" stroke="${S}" stroke-width="3.5"/>
+          <polygon points="0,5 16,-6 16,15 0,26" fill="#0369A1" stroke="${S}" stroke-width="3.5"/>
+          <rect x="-38" y="-46" width="76" height="20" rx="5" fill="#0F172A" stroke="${S}" stroke-width="3"/>
+          <text x="0" y="-38" text-anchor="middle" font-size="7" font-weight="900" fill="#38BDF8">ÁREA BASE = 1</text>
+          <text x="0" y="-29" text-anchor="middle" font-size="7" font-weight="900" fill="#4ADE80">PESO = 1 (ESTABLE)</text>
+          <path d="M 0 32 L 0 42" stroke="#22C55E" stroke-width="4" stroke-linecap="round"/>
+        </g>`;
+      }
+
+      // FASE 2: Duplicación 2x (8 bloques, doble de tensión en la base)
+      if (state === "duplicacion_2x") {
+        const shake = Math.sin(f * 0.25) * 1.0;
+        return `<g transform="translate(${shake.toFixed(1)} 0)">
+          <polygon points="-28,-14 0,-30 28,-14 0,2" fill="#FBBF24" stroke="${S}" stroke-width="4"/>
+          <line x1="-14" y1="-22" x2="14" y2="-6" stroke="${S}" stroke-width="2.5"/>
+          <line x1="14" y1="-22" x2="-14" y2="-6" stroke="${S}" stroke-width="2.5"/>
+          <polygon points="-28,-14 0,2 0,36 -28,20" fill="#D97706" stroke="${S}" stroke-width="4"/>
+          <line x1="-28" y1="3" x2="0" y2="19" stroke="${S}" stroke-width="2.5"/>
+          <line x1="-14" y1="-6" x2="-14" y2="28" stroke="${S}" stroke-width="2.5"/>
+          <polygon points="0,2 28,-14 28,20 0,36" fill="#B45309" stroke="${S}" stroke-width="4"/>
+          <line x1="0" y1="19" x2="28" y2="3" stroke="${S}" stroke-width="2.5"/>
+          <line x1="14" y1="-6" x2="14" y2="28" stroke="${S}" stroke-width="2.5"/>
+          <rect x="-44" y="-50" width="88" height="22" rx="5" fill="#7C2D12" stroke="${S}" stroke-width="3"/>
+          <text x="0" y="-42" text-anchor="middle" font-size="7" font-weight="900" fill="#FDE047">ÁREA ×4 | PESO ×8</text>
+          <text x="0" y="-32" text-anchor="middle" font-size="7.5" font-weight="900" fill="#EF4444">TENSIÓN BASE ×2</text>
+          <path d="M -18 42 L -18 36 M 18 42 L 18 36" stroke="#EF4444" stroke-width="3.5" stroke-linecap="round"/>
+        </g>`;
+      }
+
+      // FASE 3: Colapso por escala límite (base aplastada y fracturada)
+      const crumble = Math.sin(f * 0.32) * 1.4;
+      return `<g transform="translate(${crumble.toFixed(1)} 0)">
+        <polygon points="-32,-8 0,-26 32,-8 4,8" fill="#EF4444" stroke="${S}" stroke-width="4"/>
+        <polygon points="-32,-8 4,8 -2,38 -34,22" fill="#B91C1C" stroke="${S}" stroke-width="4"/>
+        <polygon points="4,8 32,-8 28,24 -2,38" fill="#991B1B" stroke="${S}" stroke-width="4"/>
+        <path d="M -12 8 L -4 18 L -14 24 L -6 34" stroke="#FFE600" stroke-width="3.5" fill="none"/>
+        <path d="M 12 10 L 8 20 L 16 26 L 10 36" stroke="#FFE600" stroke-width="3.5" fill="none"/>
+        <rect x="-38" y="28" width="8" height="8" rx="2" fill="#7F1D1D" stroke="${S}" stroke-width="2"/>
+        <rect x="30" y="24" width="7" height="7" rx="2" fill="#7F1D1D" stroke="${S}" stroke-width="2"/>
+        <rect x="-48" y="-48" width="96" height="20" rx="5" fill="#450A0A" stroke="#EF4444" stroke-width="3"/>
+        <text x="0" y="-35" text-anchor="middle" font-size="8" font-weight="900" fill="#FFE600" stroke="${S}" stroke-width="1.5">¡COLAPSO GEOMÉTRICO!</text>
+      </g>`;
+    },
+    tags: ["galileo", "ley_cuadrado_cubica", "escala", "volumen", "area", "colapso", "fisica", "cubo"],
+  },
+  torre_bloques_colapso: {
+    id: "torre_bloques_colapso",
+    name: "Torre de Bloques Colapsable",
+    family: "educacion_ciencia",
+    defaultPlacement: "right",
+    svg: `<rect x="-18" y="22" width="36" height="18" rx="3" fill="#64748B" stroke="${S}" stroke-width="4"/><rect x="-16" y="2" width="32" height="18" rx="3" fill="#94A3B8" stroke="${S}" stroke-width="4"/><rect x="-14" y="-18" width="28" height="18" rx="3" fill="#CBD5E1" stroke="${S}" stroke-width="4"/>`,
+    animatedSvg: (f: number, progress = 0, state = "base_solida") => {
+      // FASE 1: Base sólida y segura
+      if (state === "base_solida") {
+        return `<g>
+          <rect x="-28" y="36" width="56" height="8" rx="2" fill="#334155" stroke="${S}" stroke-width="3.5"/>
+          <rect x="-22" y="18" width="44" height="18" rx="3" fill="#0284C7" stroke="${S}" stroke-width="4"/>
+          <text x="0" y="30" text-anchor="middle" font-size="7.5" font-weight="900" fill="#F0F9FF">CIMIENTO</text>
+          <rect x="-18" y="-2" width="36" height="18" rx="3" fill="#38BDF8" stroke="${S}" stroke-width="4"/>
+          <rect x="-14" y="-22" width="28" height="18" rx="3" fill="#7DD3FC" stroke="${S}" stroke-width="4"/>
+          <circle cx="0" cy="-34" r="8" fill="#22C55E" stroke="${S}" stroke-width="3"/>
+          <path d="M -4 -34 L -1 -31 L 4 -37" stroke="#FFFFFF" stroke-width="2.5" fill="none" stroke-linecap="round"/>
+        </g>`;
+      }
+
+      // FASE 2: Torre creciendo (6 bloques, ligera vibración y flechas de compresión)
+      if (state === "torre_creciendo") {
+        const lean = Math.sin(f * 0.2) * 1.2;
+        return `<g>
+          <rect x="-26" y="38" width="52" height="6" fill="#334155" stroke="${S}" stroke-width="3"/>
+          <rect x="-20" y="24" width="40" height="14" fill="#0284C7" stroke="${S}" stroke-width="3.5"/>
+          <rect x="-18" y="10" width="36" height="14" fill="#0369A1" stroke="${S}" stroke-width="3.5"/>
+          <rect x="-16" y="-4" width="32" height="14" fill="#38BDF8" stroke="${S}" stroke-width="3.5"/>
+          <g transform="rotate(${lean.toFixed(1)} 0 -4)">
+            <rect x="-14" y="-18" width="28" height="14" fill="#7DD3FC" stroke="${S}" stroke-width="3.5"/>
+            <rect x="-12" y="-32" width="24" height="14" fill="#BAE6FD" stroke="${S}" stroke-width="3.5"/>
+            <rect x="-10" y="-46" width="20" height="14" fill="#E0F2FE" stroke="${S}" stroke-width="3.5"/>
+          </g>
+          <path d="M 0 -50 L 0 -44 M -4 -46 L 0 -42 L 4 -46" stroke="#EF4444" stroke-width="3" stroke-linecap="round"/>
+        </g>`;
+      }
+
+      // FASE 3: Estrés crítico (la base cede por fatiga y agrietamiento)
+      if (state === "estres_critico") {
+        const shake = Math.sin(f * 0.3) * 1.6;
+        const tilt = 4.5 + Math.sin(f * 0.22) * 1.5;
+        return `<g transform="translate(${shake.toFixed(1)} 0)">
+          <rect x="-26" y="38" width="52" height="8" fill="#475569" stroke="${S}" stroke-width="3.5"/>
+          <rect x="-20" y="22" width="40" height="16" fill="#DC2626" stroke="${S}" stroke-width="4"/>
+          <path d="M -8 22 L -2 30 L -12 34 L -6 38" stroke="#FFE600" stroke-width="3" fill="none"/>
+          <path d="M 8 24 L 14 30 L 6 38" stroke="#FFE600" stroke-width="3" fill="none"/>
+          <g transform="rotate(${tilt.toFixed(1)} 0 22)">
+            <rect x="-18" y="6" width="36" height="16" fill="#F97316" stroke="${S}" stroke-width="3.5"/>
+            <rect x="-16" y="-10" width="32" height="16" fill="#FBBF24" stroke="${S}" stroke-width="3.5"/>
+            <rect x="-14" y="-26" width="28" height="16" fill="#FEF08A" stroke="${S}" stroke-width="3.5"/>
+            <rect x="-12" y="-42" width="24" height="16" fill="#FEF9C3" stroke="${S}" stroke-width="3.5"/>
+          </g>
+          <rect x="-36" y="-48" width="72" height="16" rx="4" fill="#7F1D1D" stroke="#EF4444" stroke-width="2.5"/>
+          <text x="0" y="-37" text-anchor="middle" font-size="7" font-weight="900" fill="#FFE600">¡TENSIÓN CRÍTICA!</text>
+        </g>`;
+      }
+
+      // FASE 4: Desmoronamiento total (los bloques caen y se dispersan)
+      const fall = Math.min(1, Math.max(0, progress));
+      const fallY = fall * 45;
+      const rotL = fall * -40;
+      const rotR = fall * 55;
+      return `<g>
+        <rect x="-26" y="38" width="52" height="8" fill="#334155" stroke="${S}" stroke-width="3.5"/>
+        <path d="M 0 38 L 4 46" stroke="#FFE600" stroke-width="2.5"/>
+        <polygon points="-24,36 -2,38 2,42 -22,44" fill="#991B1B" stroke="${S}" stroke-width="3"/>
+        <polygon points="4,38 24,35 22,43 2,42" fill="#7F1D1D" stroke="${S}" stroke-width="3"/>
+        <g transform="translate(${-fallY * 0.7} ${fallY * 0.8}) rotate(${rotL.toFixed(1)})">
+          <rect x="-15" y="-10" width="30" height="14" fill="#EA580C" stroke="${S}" stroke-width="3.5"/>
+        </g>
+        <g transform="translate(${fallY * 0.8} ${fallY * 0.9}) rotate(${rotR.toFixed(1)})">
+          <rect x="-14" y="-8" width="28" height="14" fill="#F59E0B" stroke="${S}" stroke-width="3.5"/>
+        </g>
+        <g transform="translate(${fallY * 0.2} ${fallY * 1.1}) rotate(${(rotR * 0.5).toFixed(1)})">
+          <rect x="-12" y="-6" width="24" height="12" fill="#EAB308" stroke="${S}" stroke-width="3"/>
+        </g>
+        <circle cx="-16" cy="30" r="6" fill="#CBD5E1" opacity="0.6"/>
+        <circle cx="18" cy="32" r="7" fill="#CBD5E1" opacity="0.6"/>
+        <circle cx="0" cy="20" r="8" fill="#CBD5E1" opacity="0.8"/>
+      </g>`;
+    },
+    tags: ["torre", "bloques", "colapso", "derrame", "desmoronamiento", "gravedad", "peso", "ingenieria"],
+  },
+  puente_resonancia_tacoma: {
+    id: "puente_resonancia_tacoma",
+    name: "Puente Colgante en Resonancia Armónica",
+    family: "tecnologia",
+    defaultPlacement: "right",
+    svg: `<line x1="-48" y1="12" x2="48" y2="12" stroke="#1E293B" stroke-width="5"/><line x1="-32" y1="-30" x2="-32" y2="30" stroke="#0F172A" stroke-width="6"/><line x1="32" y1="-30" x2="32" y2="30" stroke="#0F172A" stroke-width="6"/><path d="M -48 0 Q -32 -26 0 -4 Q 32 -26 48 0" stroke="#DC2626" stroke-width="3.5" fill="none"/>`,
+    animatedSvg: (f: number, progress = 0, state = "viento_vortices") => {
+      // FASE 1: Viento y vórtices alternantes de Von Kármán
+      if (state === "viento_vortices") {
+        const wave = (f * 0.65) % 30;
+        return `<g>
+          <line x1="-36" y1="-36" x2="-36" y2="36" stroke="${S}" stroke-width="6"/>
+          <line x1="36" y1="-36" x2="36" y2="36" stroke="${S}" stroke-width="6"/>
+          <path d="M -50 -10 Q -36 -32 0 -2 Q 36 -32 50 -10" stroke="#EF4444" stroke-width="4" fill="none"/>
+          <rect x="-48" y="8" width="96" height="10" rx="2" fill="#334155" stroke="${S}" stroke-width="3.5"/>
+          <g transform="translate(${(-30 + wave).toFixed(1)} -12)">
+            <path d="M 0 0 C 8 -10 16 2 24 -6" stroke="#38BDF8" stroke-width="3" fill="none" stroke-linecap="round"/>
+          </g>
+          <g transform="translate(${(-20 + wave).toFixed(1)} 24)">
+            <path d="M 0 0 C 8 10 16 -2 24 6" stroke="#38BDF8" stroke-width="3" fill="none" stroke-linecap="round"/>
+          </g>
+          <text x="0" y="-38" text-anchor="middle" font-size="7.5" font-weight="900" fill="#38BDF8" stroke="${S}" stroke-width="2" paint-order="stroke">VÓRTICES DE VON KÁRMÁN</text>
+        </g>`;
+      }
+
+      // FASE 2: Oscilación torsional violenta en resonancia
+      if (state === "torsion_armonica") {
+        const twist = Math.sin(f * 0.14) * 16;
+        const waveY = Math.sin(f * 0.14) * 6;
+        return `<g>
+          <line x1="-36" y1="-36" x2="-36" y2="36" stroke="${S}" stroke-width="6"/>
+          <line x1="36" y1="-36" x2="36" y2="36" stroke="${S}" stroke-width="6"/>
+          <path d="M -50 -10 Q -36 -32 0 ${(-2 + waveY).toFixed(1)} Q 36 -32 50 -10" stroke="#EF4444" stroke-width="4" fill="none"/>
+          <g transform="translate(0 12) rotate(${twist.toFixed(1)})">
+            <polygon points="-46,-6 46,6 46,14 -46,2" fill="#E11D48" stroke="${S}" stroke-width="4"/>
+            <line x1="-40" y1="-2" x2="40" y2="10" stroke="#FFE600" stroke-width="2.5" stroke-dasharray="6 4"/>
+          </g>
+          <line x1="-18" y1="-14" x2="${(-18 - waveY).toFixed(1)}" y2="12" stroke="#EF4444" stroke-width="2.5"/>
+          <line x1="18" y1="-14" x2="${(18 + waveY).toFixed(1)}" y2="12" stroke="#EF4444" stroke-width="2.5"/>
+          <text x="0" y="-40" text-anchor="middle" font-size="8" font-weight="900" fill="#EF4444" stroke="${S}" stroke-width="2" paint-order="stroke">RESONANCIA TORSIONAL</text>
+        </g>`;
+      }
+
+      // FASE 3: Rotura de cables y caída del tramo central
+      const fall = Math.min(1, Math.max(0, progress));
+      const fallDrop = fall * 42;
+      return `<g>
+        <line x1="-36" y1="-36" x2="-36" y2="36" stroke="${S}" stroke-width="6"/>
+        <line x1="36" y1="-36" x2="36" y2="36" stroke="${S}" stroke-width="6"/>
+        <path d="M -50 -10 L -36 -32 L -20 -15 M -18 -8 L -14 6" stroke="#EF4444" stroke-width="3" stroke-linecap="round"/>
+        <path d="M 50 -10 L 36 -32 L 20 -15 M 18 -8 L 14 6" stroke="#EF4444" stroke-width="3" stroke-linecap="round"/>
+        <polygon points="-48,8 -24,8 -20,16 -48,16" fill="#334155" stroke="${S}" stroke-width="3.5"/>
+        <polygon points="48,8 24,8 20,16 48,16" fill="#334155" stroke="${S}" stroke-width="3.5"/>
+        <g transform="translate(0 ${(12 + fallDrop).toFixed(1)}) rotate(${(fall * 35).toFixed(1)})">
+          <polygon points="-20,-4 20,4 18,12 -22,4" fill="#991B1B" stroke="${S}" stroke-width="4"/>
+          <circle cx="-10" cy="-8" r="2.5" fill="#FFE600"/>
+          <circle cx="12" cy="14" r="3" fill="#FFE600"/>
+        </g>
+        <rect x="-42" y="-48" width="84" height="18" rx="4" fill="#450A0A" stroke="#EF4444" stroke-width="2.5"/>
+        <text x="0" y="-36" text-anchor="middle" font-size="7.5" font-weight="900" fill="#FFE600">¡COLAPSO ESTRUCTURAL!</text>
+      </g>`;
+    },
+    tags: ["puente", "tacoma_narrows", "resonancia", "vortices", "viento", "colapso", "armonico", "cables"],
+  },
+  prensa_pandeo_euler: {
+    id: "prensa_pandeo_euler",
+    name: "Prensa de Pandeo de Euler",
+    family: "tecnologia",
+    defaultPlacement: "right",
+    svg: `<rect x="-30" y="-42" width="60" height="14" rx="3" fill="#1E293B" stroke="${S}" stroke-width="4"/><rect x="-30" y="28" width="60" height="14" rx="3" fill="#1E293B" stroke="${S}" stroke-width="4"/><line x1="0" y1="-28" x2="0" y2="28" stroke="#38BDF8" stroke-width="6"/>`,
+    animatedSvg: (f: number, progress = 0, state = "columna_intacta") => {
+      // FASE 1: Columna intacta bajo carga axial inicial
+      if (state === "columna_intacta") {
+        return `<g>
+          <rect x="-32" y="-44" width="64" height="14" rx="4" fill="#334155" stroke="${S}" stroke-width="4"/>
+          <rect x="-32" y="30" width="64" height="14" rx="4" fill="#334155" stroke="${S}" stroke-width="4"/>
+          <line x1="-24" y1="-30" x2="-24" y2="30" stroke="#64748B" stroke-width="5"/>
+          <line x1="24" y1="-30" x2="24" y2="30" stroke="#64748B" stroke-width="5"/>
+          <rect x="-14" y="-30" width="28" height="10" fill="#F59E0B" stroke="${S}" stroke-width="3"/>
+          <line x1="0" y1="-20" x2="0" y2="30" stroke="#38BDF8" stroke-width="6" stroke-linecap="round"/>
+          <circle cx="36" cy="-28" r="10" fill="#FFFFFF" stroke="${S}" stroke-width="3"/>
+          <line x1="36" y1="-28" x2="31" y2="-32" stroke="#22C55E" stroke-width="2.5" stroke-linecap="round"/>
+          <text x="0" y="41" text-anchor="middle" font-size="7" font-weight="900" fill="#38BDF8">CARGA AXIAL NORMAL</text>
+        </g>`;
+      }
+
+      // FASE 2: Pandeo lateral de Euler (la columna se arquea sin aplastamiento)
+      if (state === "pandeo_lateral") {
+        const bow = 16 + Math.sin(f * 0.24) * 2.2;
+        return `<g>
+          <rect x="-32" y="-44" width="64" height="14" rx="4" fill="#334155" stroke="${S}" stroke-width="4"/>
+          <rect x="-32" y="30" width="64" height="14" rx="4" fill="#334155" stroke="${S}" stroke-width="4"/>
+          <line x1="-24" y1="-30" x2="-24" y2="30" stroke="#64748B" stroke-width="5"/>
+          <line x1="24" y1="-30" x2="24" y2="30" stroke="#64748B" stroke-width="5"/>
+          <rect x="-14" y="-26" width="28" height="10" fill="#DC2626" stroke="${S}" stroke-width="3"/>
+          <path d="M 0 -16 Q ${bow.toFixed(1)} 7 0 30" stroke="#EF4444" stroke-width="6" fill="none" stroke-linecap="round"/>
+          <path d="M 6 7 L ${(bow + 8).toFixed(1)} 7 M ${(bow + 4).toFixed(1)} 3 L ${(bow + 8).toFixed(1)} 7 L ${(bow + 4).toFixed(1)} 11" stroke="#FFE600" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+          <circle cx="36" cy="-28" r="10" fill="#FEF2F2" stroke="${S}" stroke-width="3"/>
+          <line x1="36" y1="-28" x2="42" y2="-24" stroke="#DC2626" stroke-width="3" stroke-linecap="round"/>
+          <text x="0" y="41" text-anchor="middle" font-size="7" font-weight="900" fill="#EF4444">¡PANDEO DE EULER!</text>
+        </g>`;
+      }
+
+      // FASE 3: Fractura plástica y estallido
+      return `<g>
+        <rect x="-32" y="-44" width="64" height="14" rx="4" fill="#334155" stroke="${S}" stroke-width="4"/>
+        <rect x="-32" y="30" width="64" height="14" rx="4" fill="#334155" stroke="${S}" stroke-width="4"/>
+        <line x1="-24" y1="-30" x2="-24" y2="30" stroke="#64748B" stroke-width="5"/>
+        <line x1="24" y1="-30" x2="24" y2="30" stroke="#64748B" stroke-width="5"/>
+        <rect x="-14" y="-22" width="28" height="10" fill="#991B1B" stroke="${S}" stroke-width="3"/>
+        <line x1="0" y1="-12" x2="16" y2="6" stroke="#991B1B" stroke-width="6" stroke-linecap="round"/>
+        <line x1="16" y1="8" x2="0" y2="30" stroke="#991B1B" stroke-width="6" stroke-linecap="round"/>
+        <polygon points="16,7 22,2 20,9 26,8 19,13 23,17 15,12" fill="#FFE600" stroke="${S}" stroke-width="1.5"/>
+        <text x="0" y="41" text-anchor="middle" font-size="7" font-weight="900" fill="#FFE600">FRACTURA POR INESTABILIDAD</text>
+      </g>`;
+    },
+    tags: ["prensa", "pandeo", "euler", "compresion", "columna", "esbeltez", "rotura", "acero"],
+  },
+  amortiguador_masa_tmd: {
+    id: "amortiguador_masa_tmd",
+    name: "Amortiguador de Masa Sintonizada (Taipei 101)",
+    family: "tecnologia",
+    defaultPlacement: "right",
+    svg: `<rect x="-32" y="-40" width="64" height="80" rx="8" fill="#0F172A" stroke="${S}" stroke-width="4"/><circle cx="0" cy="4" r="18" fill="#FACC15" stroke="${S}" stroke-width="4.5"/><line x1="-8" y1="-40" x2="-6" y2="-10" stroke="#94A3B8" stroke-width="3"/><line x1="8" y1="-40" x2="6" y2="-10" stroke="#94A3B8" stroke-width="3"/>`,
+    animatedSvg: (f: number, progress = 0, state = "pendulo_en_contrafase") => {
+      // FASE 1: Edificio oscilando sin control
+      if (state === "edificio_oscilante") {
+        const buildingSway = Math.sin(f * 0.12) * 9;
+        return `<g transform="rotate(${buildingSway.toFixed(1)} 0 40)">
+          <rect x="-28" y="-42" width="56" height="82" rx="6" fill="#1E293B" stroke="${S}" stroke-width="4.5"/>
+          <line x1="-24" y1="-36" x2="24" y2="0" stroke="#334155" stroke-width="3"/>
+          <line x1="24" y1="-36" x2="-24" y2="0" stroke="#334155" stroke-width="3"/>
+          <line x1="-24" y1="0" x2="24" y2="36" stroke="#334155" stroke-width="3"/>
+          <line x1="24" y1="0" x2="-24" y2="36" stroke="#334155" stroke-width="3"/>
+          <path d="M -48 -20 Q -36 -28 -24 -20" stroke="#38BDF8" stroke-width="3.5" fill="none" stroke-linecap="round"/>
+          <path d="M -44 10 Q -32 2 -20 10" stroke="#38BDF8" stroke-width="3.5" fill="none" stroke-linecap="round"/>
+          <text x="0" y="-47" text-anchor="middle" font-size="7" font-weight="900" fill="#EF4444">VIENTO HURACANADO</text>
+        </g>`;
+      }
+
+      // FASE 2: Péndulo en contrafase absorbiendo la energía (TMD activo)
+      if (state === "pendulo_en_contrafase") {
+        const sway = Math.sin(f * 0.12) * 6;
+        const ballShift = -Math.sin(f * 0.12) * 13;
+        return `<g transform="rotate(${sway.toFixed(1)} 0 40)">
+          <rect x="-30" y="-44" width="60" height="84" rx="8" fill="#0F172A" stroke="${S}" stroke-width="4.5"/>
+          <line x1="-12" y1="-44" x2="${(ballShift * 0.6 - 4).toFixed(1)}" y2="-8" stroke="#E2E8F0" stroke-width="3"/>
+          <line x1="12" y1="-44" x2="${(ballShift * 0.6 + 4).toFixed(1)}" y2="-8" stroke="#E2E8F0" stroke-width="3"/>
+          <g transform="translate(${ballShift.toFixed(1)} 4)">
+            <circle cx="0" cy="0" r="16" fill="#FACC15" stroke="${S}" stroke-width="4.5"/>
+            <path d="M -8 -8 A 12 12 0 0 1 6 -11" stroke="#FEF08A" stroke-width="3" stroke-linecap="round" fill="none"/>
+            <text x="0" y="3" text-anchor="middle" font-size="6.5" font-weight="900" fill="#713F12">660 t</text>
+          </g>
+          <line x1="-24" y1="28" x2="${(ballShift - 6).toFixed(1)}" y2="16" stroke="#0284C7" stroke-width="4" stroke-linecap="round"/>
+          <line x1="24" y1="28" x2="${(ballShift + 6).toFixed(1)}" y2="16" stroke="#0284C7" stroke-width="4" stroke-linecap="round"/>
+          <rect x="-36" y="-54" width="72" height="15" rx="3" fill="#0369A1" stroke="${S}" stroke-width="2"/>
+          <text x="0" y="-44" text-anchor="middle" font-size="6.5" font-weight="900" fill="#FDE047">CONTRAFASE ARMÓNICA</text>
+        </g>`;
+      }
+
+      // FASE 3: Estabilización armónica (40% menos oscilación)
+      const calmSway = Math.sin(f * 0.1) * 2;
+      return `<g transform="rotate(${calmSway.toFixed(1)} 0 40)">
+        <rect x="-30" y="-44" width="60" height="84" rx="8" fill="#0F172A" stroke="${S}" stroke-width="4.5"/>
+        <line x1="-10" y1="-44" x2="-4" y2="-8" stroke="#E2E8F0" stroke-width="3"/>
+        <line x1="10" y1="-44" x2="4" y2="-8" stroke="#E2E8F0" stroke-width="3"/>
+        <circle cx="0" cy="4" r="16" fill="#FACC15" stroke="${S}" stroke-width="4.5"/>
+        <circle cx="0" cy="4" r="${(20 + (f % 16)).toFixed(1)}" stroke="#38BDF8" stroke-width="2" fill="none" opacity="${(1 - (f % 16) / 16).toFixed(2)}"/>
+        <line x1="-24" y1="28" x2="-6" y2="16" stroke="#0284C7" stroke-width="4" stroke-linecap="round"/>
+        <line x1="24" y1="28" x2="6" y2="16" stroke="#0284C7" stroke-width="4" stroke-linecap="round"/>
+        <rect x="-44" y="-54" width="88" height="16" rx="4" fill="#065F46" stroke="#10B981" stroke-width="2"/>
+        <text x="0" y="-43" text-anchor="middle" font-size="7" font-weight="900" fill="#A7F3D0">-40% DE OSCILACIÓN</text>
+      </g>`;
+    },
+    tags: ["amortiguador", "pendulo", "tmd", "taipei_101", "rascacielos", "viento", "sismo", "resonancia"],
+  },
+  puente_piedra_escala: {
+    id: "puente_piedra_escala",
+    name: "Puente de Piedra: Escala 1x vs 2x",
+    family: "educacion_ciencia",
+    defaultPlacement: "right",
+    svg: `<path d="M -44 26 L -44 -6 L 44 -6 L 44 26 L 24 26 A 24 22 0 0 0 -24 26 Z" fill="#64748B" stroke="${S}" stroke-width="4"/>`,
+    animatedSvg: (f: number, progress = 0, state = "puente_1x_carreta") => {
+      if (state === "puente_1x_carreta") {
+        const cartX = -22 + ((f * 0.55) % 44);
+        return `<g>
+          <rect x="-46" y="24" width="92" height="12" fill="#0284C7"/>
+          <path d="M -36 24 L -36 0 L 36 0 L 36 24 L 18 24 A 18 16 0 0 0 -18 24 Z" fill="#94A3B8" stroke="${S}" stroke-width="4"/>
+          <g transform="translate(${cartX.toFixed(1)}, -10)">
+            <rect x="-10" y="-6" width="20" height="8" rx="2" fill="#D97706" stroke="${S}" stroke-width="2.5"/>
+            <circle cx="-6" cy="4" r="4" fill="#1E293B" stroke="${S}" stroke-width="2"/>
+            <circle cx="6" cy="4" r="4" fill="#1E293B" stroke="${S}" stroke-width="2"/>
+          </g>
+          <rect x="-40" y="-36" width="80" height="16" rx="4" fill="#065F46" stroke="${S}" stroke-width="2.5"/>
+          <text x="0" y="-25" text-anchor="middle" font-size="6.8" font-weight="900" fill="#A7F3D0">PUENTE 1X: ESTABLE</text>
+        </g>`;
+      }
+      if (state === "puente_2x_gigante") {
+        const tremor = Math.sin(f * 0.26) * 1.1;
+        return `<g transform="translate(${tremor.toFixed(1)}, 0)">
+          <rect x="-54" y="28" width="108" height="12" fill="#0284C7"/>
+          <path d="M -50 28 L -50 -16 L 50 -16 L 50 28 L 28 28 A 28 26 0 0 0 -28 28 Z" fill="#64748B" stroke="${S}" stroke-width="4.5"/>
+          <path d="M -4 2 L 2 -8 L -2 -16" stroke="#EF4444" stroke-width="3" fill="none"/>
+          <path d="M 0 -30 L 0 -18 M -5 -22 L 0 -17 L 5 -22" stroke="#EF4444" stroke-width="3.5" fill="none"/>
+          <rect x="-46" y="-48" width="92" height="17" rx="4" fill="#7C2D12" stroke="#EF4444" stroke-width="2.5"/>
+          <text x="0" y="-37" text-anchor="middle" font-size="6.8" font-weight="900" fill="#FDE047">ESCALA 2X: PESO ×8</text>
+        </g>`;
+      }
+      const drop = Math.min(1, progress) * 26;
+      return `<g>
+        <rect x="-54" y="28" width="108" height="12" fill="#0284C7"/>
+        <polygon points="-50,28 -50,-10 -24,-6 -28,28" fill="#475569" stroke="${S}" stroke-width="4"/>
+        <polygon points="50,28 50,-10 24,-6 28,28" fill="#475569" stroke="${S}" stroke-width="4"/>
+        <g transform="translate(0, ${drop.toFixed(1)}) rotate(${(progress * 18).toFixed(1)})">
+          <rect x="-22" y="-12" width="44" height="18" rx="3" fill="#DC2626" stroke="${S}" stroke-width="3.5"/>
+          <path d="M -8 -12 L 4 6" stroke="#FFE600" stroke-width="3"/>
+        </g>
+        <rect x="-48" y="-46" width="96" height="17" rx="4" fill="#450A0A" stroke="#EF4444" stroke-width="2.5"/>
+        <text x="0" y="-35" text-anchor="middle" font-size="6.8" font-weight="900" fill="#FFE600">¡DERRUMBE POR PROPIO PESO!</text>
+      </g>`;
+    },
+    tags: ["puente", "piedra", "escala", "colapso", "carreta"],
+  },
+  galeon_venecia_galileo: {
+    id: "galeon_venecia_galileo",
+    name: "Galeón del Arsenal de Venecia (Galileo 1638)",
+    family: "historia_exploracion",
+    defaultPlacement: "right",
+    svg: `<path d="M -40 4 L 40 4 L 26 26 L -26 26 Z" fill="#92400E" stroke="${S}" stroke-width="4"/><line x1="0" y1="-34" x2="0" y2="4" stroke="#78350F" stroke-width="5"/>`,
+    animatedSvg: (f: number, progress = 0, state = "barco_normal_estable") => {
+      const bob = Math.sin(f / 8) * 2;
+      if (state === "barco_normal_estable") {
+        return `<g transform="translate(0, ${bob.toFixed(1)})">
+          <rect x="-48" y="20" width="96" height="14" fill="#0284C7"/>
+          <path d="M -32 6 L 32 6 L 22 24 L -22 24 Z" fill="#B45309" stroke="${S}" stroke-width="4"/>
+          <line x1="0" y1="-26" x2="0" y2="6" stroke="#78350F" stroke-width="4.5"/>
+          <polygon points="0,-24 22,-10 0,-2" fill="#F8FAFC" stroke="${S}" stroke-width="3"/>
+          <rect x="-42" y="-44" width="84" height="15" rx="4" fill="#065F46" stroke="${S}" stroke-width="2.5"/>
+          <text x="0" y="-34" text-anchor="middle" font-size="6.5" font-weight="900" fill="#A7F3D0">NAVE NORMAL: CASCO ÍNTEGRO</text>
+        </g>`;
+      }
+      if (state === "galeon_gigante_fractura") {
+        const split = 6 + Math.min(1, progress) * 10;
+        return `<g>
+          <rect x="-54" y="24" width="108" height="14" fill="#0284C7"/>
+          <g transform="translate(-4, 0) rotate(${(-split).toFixed(1)} -10 18)">
+            <path d="M -48 0 L 0 0 L -2 24 L -34 24 Z" fill="#92400E" stroke="${S}" stroke-width="4"/>
+            <line x1="-18" y1="-32" x2="-18" y2="0" stroke="#78350F" stroke-width="4.5"/>
+          </g>
+          <g transform="translate(4, 0) rotate(${split.toFixed(1)} 10 18)">
+            <path d="M 0 0 L 48 0 L 34 24 L 2 24 Z" fill="#92400E" stroke="${S}" stroke-width="4"/>
+            <line x1="18" y1="-32" x2="18" y2="0" stroke="#78350F" stroke-width="4.5"/>
+          </g>
+          <path d="M 0 -4 L -5 10 L 5 18 L 0 28" stroke="#FFE600" stroke-width="3.5" fill="none"/>
+          <rect x="-48" y="-48" width="96" height="16" rx="4" fill="#7F1D1D" stroke="#EF4444" stroke-width="2.5"/>
+          <text x="0" y="-37" text-anchor="middle" font-size="6.5" font-weight="900" fill="#FFE600">BUQUE GIGANTE: QUILLA PARTIDA</text>
+        </g>`;
+      }
+      return `<g>
+        <rect x="-46" y="-28" width="92" height="62" rx="6" fill="#0F172A" stroke="#38BDF8" stroke-width="3.5"/>
+        <text x="0" y="-12" text-anchor="middle" font-size="8" font-weight="900" fill="#38BDF8">ÁREA ∝ L² (×4)</text>
+        <text x="0" y="6" text-anchor="middle" font-size="8.5" font-weight="900" fill="#EF4444">PESO ∝ L³ (×8)</text>
+        <text x="0" y="22" text-anchor="middle" font-size="7" font-weight="900" fill="#FFE600">GALILEO GALILEI (1638)</text>
+      </g>`;
+    },
+    tags: ["galileo", "venecia", "barco", "galeon", "arsenal", "1638"],
+  },
+  biomecanica_femur_escala: {
+    id: "biomecanica_femur_escala",
+    name: "Biomecánica: Lagartija 10x vs Fémur de Elefante",
+    family: "educacion_ciencia",
+    defaultPlacement: "right",
+    svg: `<rect x="-36" y="-30" width="72" height="60" rx="6" fill="#1E293B" stroke="${S}" stroke-width="4"/>`,
+    animatedSvg: (f: number, progress = 0, state = "lagartija_1x_agil") => {
+      if (state === "lagartija_1x_agil") {
+        return `<g>
+          <ellipse cx="0" cy="6" rx="22" ry="9" fill="#22C55E" stroke="${S}" stroke-width="3.5"/>
+          <circle cx="24" cy="2" r="7" fill="#22C55E" stroke="${S}" stroke-width="3.5"/>
+          <path d="M -20 6 Q -38 2 -44 -8" stroke="#22C55E" stroke-width="5" fill="none" stroke-linecap="round"/>
+          <line x1="-12" y1="14" x2="-16" y2="26" stroke="#15803D" stroke-width="3.5" stroke-linecap="round"/>
+          <line x1="12" y1="14" x2="16" y2="26" stroke="#15803D" stroke-width="3.5" stroke-linecap="round"/>
+          <rect x="-44" y="-42" width="88" height="16" rx="4" fill="#065F46" stroke="${S}" stroke-width="2.5"/>
+          <text x="0" y="-31" text-anchor="middle" font-size="6.8" font-weight="900" fill="#A7F3D0">ESCALA 1X: HUESOS LIGEROS</text>
+        </g>`;
+      }
+      if (state === "monstruo_10x_femur_roto") {
+        const shake = Math.sin(f * 0.28) * 1.4;
+        return `<g transform="translate(${shake.toFixed(1)}, 0)">
+          <ellipse cx="0" cy="-4" rx="38" ry="18" fill="#DC2626" stroke="${S}" stroke-width="4"/>
+          <circle cx="38" cy="-12" r="13" fill="#DC2626" stroke="${S}" stroke-width="4"/>
+          <!-- Fémures quebrándose -->
+          <path d="M -18 12 L -24 22 L -14 32" stroke="#FEF08A" stroke-width="5" fill="none" stroke-linecap="round"/>
+          <path d="M 18 12 L 24 22 L 14 32" stroke="#FEF08A" stroke-width="5" fill="none" stroke-linecap="round"/>
+          <path d="M -28 20 L -10 24 M 10 24 L 28 20" stroke="#EF4444" stroke-width="3.5"/>
+          <rect x="-48" y="-48" width="96" height="17" rx="4" fill="#7F1D1D" stroke="#EF4444" stroke-width="2.5"/>
+          <text x="0" y="-37" text-anchor="middle" font-size="6.5" font-weight="900" fill="#FFE600">ESCALA 10X: MASA ×1000 (FRACTURA)</text>
+        </g>`;
+      }
+      return `<g>
+        <!-- Comparativa Pata de Elefante (Columna Dórica) vs Pata de Hormiga -->
+        <rect x="-38" y="-18" width="30" height="46" rx="4" fill="#94A3B8" stroke="${S}" stroke-width="4"/>
+        <rect x="-42" y="-24" width="38" height="8" rx="2" fill="#CBD5E1" stroke="${S}" stroke-width="3.5"/>
+        <text x="-23" y="38" text-anchor="middle" font-size="6" font-weight="900" fill="#F8FAFC">ELEFANTE</text>
+        <line x1="24" y1="-10" x2="28" y2="8" stroke="#F59E0B" stroke-width="3" stroke-linecap="round"/>
+        <line x1="28" y1="8" x2="20" y2="28" stroke="#F59E0B" stroke-width="2.5" stroke-linecap="round"/>
+        <text x="24" y="38" text-anchor="middle" font-size="6" font-weight="900" fill="#FDE047">HORMIGA</text>
+        <rect x="-46" y="-48" width="92" height="16" rx="4" fill="#0F172A" stroke="#38BDF8" stroke-width="2.5"/>
+        <text x="0" y="-37" text-anchor="middle" font-size="6.5" font-weight="900" fill="#38BDF8">COLUMNAS DÓRICAS VS HILOS</text>
+      </g>`;
+    },
+    tags: ["godzilla", "lagartija", "femur", "elefante", "hormiga", "biomecanica"],
+  },
+  piramide_vs_nucleo_rascacielos: {
+    id: "piramide_vs_nucleo_rascacielos",
+    name: "Casa Inflada vs Pirámide vs Rascacielos de Núcleo Hueco",
+    family: "tecnologia",
+    defaultPlacement: "right",
+    svg: `<polygon points="0,-32 -36,28 36,28" fill="#F59E0B" stroke="${S}" stroke-width="4"/>`,
+    animatedSvg: (f: number, progress = 0, state = "casa_inflada_aplastada") => {
+      if (state === "casa_inflada_aplastada") {
+        const crush = Math.sin(f * 0.26) * 1.1;
+        return `<g transform="translate(${crush.toFixed(1)}, 0)">
+          <polygon points="0,-38 -36,-14 36,-14" fill="#DC2626" stroke="${S}" stroke-width="4"/>
+          <rect x="-28" y="-14" width="56" height="42" fill="#FCA5A5" stroke="${S}" stroke-width="4"/>
+          <path d="M -20 28 L -12 12 L -4 28 M 10 28 L 18 14 L 24 28" stroke="#EF4444" stroke-width="3.5" fill="none"/>
+          <rect x="-48" y="-54" width="96" height="15" rx="4" fill="#7F1D1D" stroke="#EF4444" stroke-width="2"/>
+          <text x="0" y="-44" text-anchor="middle" font-size="6.3" font-weight="900" fill="#FFE600">CASA INFLADA 300 M: COLAPSA</text>
+        </g>`;
+      }
+      if (state === "piramide_base_ancha") {
+        return `<g>
+          <polygon points="0,-28 -46,28 46,28" fill="#D97706" stroke="${S}" stroke-width="4.5"/>
+          <line x1="0" y1="-28" x2="12" y2="28" stroke="${S}" stroke-width="3"/>
+          <rect x="-46" y="-48" width="92" height="15" rx="4" fill="#78350F" stroke="#F59E0B" stroke-width="2"/>
+          <text x="0" y="-38" text-anchor="middle" font-size="6.5" font-weight="900" fill="#FEF08A">PIRÁMIDE: BASE COLOSAL MACIZA</text>
+        </g>`;
+      }
+      return `<g>
+        <rect x="-24" y="-36" width="48" height="68" rx="3" fill="#1E293B" stroke="#38BDF8" stroke-width="4"/>
+        <!-- Núcleo central reforzado y geometría hueca -->
+        <rect x="-8" y="-34" width="16" height="64" fill="#F59E0B" stroke="${S}" stroke-width="3"/>
+        <line x1="-24" y1="-14" x2="24" y2="-14" stroke="#38BDF8" stroke-width="2.5"/>
+        <line x1="-24" y1="8" x2="24" y2="8" stroke="#38BDF8" stroke-width="2.5"/>
+        <rect x="-48" y="-54" width="96" height="15" rx="4" fill="#0F172A" stroke="#38BDF8" stroke-width="2"/>
+        <text x="0" y="-44" text-anchor="middle" font-size="6.5" font-weight="900" fill="#38BDF8">NÚCLEO HUECO HIPERCONCENTRADO</text>
+      </g>`;
+    },
+    tags: ["piramide", "rascacielos", "nucleo", "columnas", "acero"],
+  },
+  cercha_tubular_antipandeo: {
+    id: "cercha_tubular_antipandeo",
+    name: "Cercha Diagonal y Tubo Estructural Anti-Pandeo",
+    family: "tecnologia",
+    defaultPlacement: "right",
+    svg: `<rect x="-24" y="-36" width="48" height="72" fill="none" stroke="#38BDF8" stroke-width="4"/>`,
+    animatedSvg: (f: number, progress = 0, state = "columna_esbelta_cede") => {
+      if (state === "columna_esbelta_cede") {
+        const bend = 18 + Math.sin(f * 0.22) * 2.5;
+        return `<g>
+          <path d="M 0 -34 Q ${bend.toFixed(1)} 0 0 34" stroke="#EF4444" stroke-width="6" fill="none" stroke-linecap="round"/>
+          <rect x="-46" y="-50" width="92" height="15" rx="4" fill="#7F1D1D" stroke="#EF4444" stroke-width="2"/>
+          <text x="0" y="-40" text-anchor="middle" font-size="6.5" font-weight="900" fill="#FFE600">ALTURA ×2 → RESISTENCIA 1/4</text>
+        </g>`;
+      }
+      return `<g>
+        <rect x="-26" y="-36" width="52" height="70" rx="3" fill="#0F172A" stroke="#38BDF8" stroke-width="4.5"/>
+        <!-- Celosía diagonal triangulada (Cercha) -->
+        <line x1="-26" y1="-36" x2="26" y2="-12" stroke="#FACC15" stroke-width="4"/>
+        <line x1="26" y1="-12" x2="-26" y2="12" stroke="#FACC15" stroke-width="4"/>
+        <line x1="-26" y1="12" x2="26" y2="34" stroke="#FACC15" stroke-width="4"/>
+        <line x1="26" y1="-36" x2="-26" y2="-12" stroke="#38BDF8" stroke-width="3"/>
+        <line x1="-26" y1="-12" x2="26" y2="12" stroke="#38BDF8" stroke-width="3"/>
+        <rect x="-48" y="-54" width="96" height="15" rx="4" fill="#065F46" stroke="#10B981" stroke-width="2"/>
+        <text x="0" y="-44" text-anchor="middle" font-size="6.5" font-weight="900" fill="#A7F3D0">CERCHA TRIANGULADA ANTIPANDEO</text>
+      </g>`;
+    },
+    tags: ["cercha", "celosia", "euler", "pandeo", "tubo_estructural"],
+  },
+  onda_resonancia_fatiga: {
+    id: "onda_resonancia_fatiga",
+    name: "Onda de Resonancia Armónica y Fatiga del Acero",
+    family: "educacion_ciencia",
+    defaultPlacement: "right",
+    svg: `<path d="M -40 0 Q -20 -30 0 0 T 40 0" stroke="#EF4444" stroke-width="5" fill="none"/>`,
+    animatedSvg: (f: number, progress = 0, state = "frecuencia_natural") => {
+      const phase = f * 0.14;
+      if (state === "frecuencia_natural") {
+        const amp = 10 + progress * 22;
+        return `<g>
+          <rect x="-48" y="-32" width="96" height="64" rx="8" fill="#0F172A" stroke="#38BDF8" stroke-width="3.5"/>
+          <path d="M -40 0 Q -20 ${(-amp * Math.sin(phase)).toFixed(1)} 0 0 T 40 0" stroke="#38BDF8" stroke-width="4.5" fill="none"/>
+          <text x="0" y="-39" text-anchor="middle" font-size="6.8" font-weight="900" fill="#38BDF8">SINCRONÍA CON FRECUENCIA NATURAL</text>
+        </g>`;
+      }
+      const bigAmp = 28 * Math.sin(phase);
+      return `<g>
+        <rect x="-48" y="-32" width="96" height="64" rx="8" fill="#1E293B" stroke="#EF4444" stroke-width="4"/>
+        <path d="M -40 0 Q -20 ${(-bigAmp).toFixed(1)} 0 0 T 40 0" stroke="#EF4444" stroke-width="5.5" fill="none"/>
+        <!-- Grieta propagándose en viga de acero -->
+        <path d="M -6 32 L 2 14 L -4 4 L 6 -12" stroke="#FFE600" stroke-width="3.5" fill="none"/>
+        <text x="0" y="-39" text-anchor="middle" font-size="6.8" font-weight="900" fill="#FFE600">FATIGA CRÍTICA EN EL ACERO</text>
+      </g>`;
+    },
+    tags: ["resonancia", "onda", "frecuencia", "fatiga", "acero"],
+  },
+  rascacielos_espiral_viento: {
+    id: "rascacielos_espiral_viento",
+    name: "Burj Khalifa Escalonado y Torre de Shanghái en Espiral (120°)",
+    family: "tecnologia",
+    defaultPlacement: "right",
+    svg: `<polygon points="0,-46 -18,34 18,34" fill="#38BDF8" stroke="${S}" stroke-width="4"/>`,
+    animatedSvg: (f: number, progress = 0, state = "burj_khalifa_escalonado") => {
+      const flow = (f * 0.75) % 24;
+      if (state === "burj_khalifa_escalonado") {
+        return `<g>
+          <!-- Silueta escalonada del Burj Khalifa -->
+          <rect x="-24" y="12" width="48" height="24" fill="#0284C7" stroke="${S}" stroke-width="3.5"/>
+          <rect x="-18" y="-8" width="36" height="20" fill="#0369A1" stroke="${S}" stroke-width="3.5"/>
+          <rect x="-11" y="-26" width="22" height="18" fill="#38BDF8" stroke="${S}" stroke-width="3.5"/>
+          <polygon points="0,-46 -5,-26 5,-26" fill="#E0F2FE" stroke="${S}" stroke-width="3"/>
+          <path d="M ${(-42 + flow).toFixed(1)} -14 Q -26 -22 -14 -14" stroke="#7DD3FC" stroke-width="3" fill="none"/>
+          <path d="M ${(16 + flow * 0.6).toFixed(1)} 4 Q 30 12 42 4" stroke="#7DD3FC" stroke-width="3" fill="none"/>
+          <rect x="-48" y="-58" width="96" height="15" rx="4" fill="#0F172A" stroke="#38BDF8" stroke-width="2"/>
+          <text x="0" y="-48" text-anchor="middle" font-size="6.4" font-weight="900" fill="#38BDF8">BURJ KHALIFA: RETRANQUEO EN ESPIRAL</text>
+        </g>`;
+      }
+      // Torre de Shanghái con torsión de 120 grados
+      return `<g>
+        <path d="M -22 34 C -26 10 -10 -15 -16 -38 L 16 -38 C 22 -15 6 10 22 34 Z" fill="#06B6D4" stroke="${S}" stroke-width="4"/>
+        <path d="M -18 34 C -4 10 8 -14 12 -38" stroke="#FEF08A" stroke-width="3.5" fill="none" stroke-dasharray="6 4"/>
+        <rect x="-48" y="-54" width="96" height="15" rx="4" fill="#065F46" stroke="#10B981" stroke-width="2"/>
+        <text x="0" y="-44" text-anchor="middle" font-size="6.4" font-weight="900" fill="#A7F3D0">TORRE SHANGHÁI: GIRO 120° (-24% VIENTO)</text>
+      </g>`;
+    },
+    tags: ["burj_khalifa", "shanghai_tower", "espiral", "aerodinamica", "viento"],
+  },
+  torre_abertura_viento: {
+    id: "torre_abertura_viento",
+    name: "Centro Financiero de Shanghái (Abertura Trapezoidal Antiviento)",
+    family: "tecnologia",
+    defaultPlacement: "right",
+    svg: `<rect x="-24" y="-40" width="48" height="76" fill="#0284C7" stroke="${S}" stroke-width="4"/>`,
+    animatedSvg: (f: number, progress = 0, state = "abertura_trapezoidal_flujo") => {
+      const windX = -38 + ((f * 0.85) % 76);
+      if (state === "efecto_vela_bloqueado") {
+        const push = Math.sin(f * 0.22) * 2.5;
+        return `<g transform="rotate(${push.toFixed(1)} 0 36)">
+          <rect x="-24" y="-38" width="48" height="74" fill="#DC2626" stroke="${S}" stroke-width="4"/>
+          <path d="M -48 -18 L -28 -18 M -48 0 L -28 0" stroke="#FFE600" stroke-width="4" stroke-linecap="round"/>
+          <rect x="-48" y="-54" width="96" height="15" rx="4" fill="#7F1D1D" stroke="#EF4444" stroke-width="2"/>
+          <text x="0" y="-44" text-anchor="middle" font-size="6.4" font-weight="900" fill="#FFE600">MURO CIEGO: EFECTO VELA PELIGROSO</text>
+        </g>`;
+      }
+      return `<g>
+        <!-- Torre SWFC con abertura trapezoidal superior -->
+        <path d="M -24 36 L -20 -40 L 20 -40 L 24 36 Z" fill="#0284C7" stroke="${S}" stroke-width="4.5"/>
+        <polygon points="-13,-32 13,-32 10,-14 -10,-14" fill="#090D16" stroke="#38BDF8" stroke-width="3.5"/>
+        <!-- Flujo de viento atravesando limpiamente la abertura -->
+        <line x1="${windX.toFixed(1)}" y1="-23" x2="${(windX + 24).toFixed(1)}" y2="-23" stroke="#FFE600" stroke-width="4" stroke-linecap="round"/>
+        <rect x="-48" y="-56" width="96" height="15" rx="4" fill="#065F46" stroke="#10B981" stroke-width="2"/>
+        <text x="0" y="-46" text-anchor="middle" font-size="6.4" font-weight="900" fill="#A7F3D0">ABERTURA A 500 M: VIENTO PASANTE</text>
+      </g>`;
+    },
+    tags: ["shanghai", "swfc", "abridor_botellas", "abertura", "viento", "rascacielos"],
+  },
+  pistones_hidraulicos_tmd: {
+    id: "pistones_hidraulicos_tmd",
+    name: "Pistones Hidráulicos de Disipación Térmica (Taipei 101)",
+    family: "tecnologia",
+    defaultPlacement: "right",
+    svg: `<circle cx="0" cy="-4" r="18" fill="#FACC15" stroke="${S}" stroke-width="4"/>`,
+    animatedSvg: (f: number, progress = 0, state = "compresion_hidraulica_calor") => {
+      const shift = Math.sin(f * 0.14) * 10;
+      if (state === "compresion_hidraulica_calor") {
+        return `<g>
+          <rect x="-42" y="-36" width="84" height="68" rx="8" fill="#0F172A" stroke="#38BDF8" stroke-width="3.5"/>
+          <circle cx="${shift.toFixed(1)}" cy="-6" r="16" fill="#FACC15" stroke="${S}" stroke-width="4"/>
+          <!-- Cilindros hidráulicos laterales brillando en rojo/naranja al disipar calor -->
+          <rect x="-38" y="10" width="24" height="10" rx="3" fill="#EF4444" stroke="${S}" stroke-width="3"/>
+          <rect x="14" y="10" width="24" height="10" rx="3" fill="#EF4444" stroke="${S}" stroke-width="3"/>
+          <line x1="-14" y1="15" x2="${shift.toFixed(1)}" y2="6" stroke="#FFE600" stroke-width="4"/>
+          <line x1="14" y1="15" x2="${shift.toFixed(1)}" y2="6" stroke="#FFE600" stroke-width="4"/>
+          <text x="0" y="-43" text-anchor="middle" font-size="6.5" font-weight="900" fill="#F97316">ENERGÍA MECÁNICA → CALOR INOCUO</text>
+        </g>`;
+      }
+      return `<g>
+        <rect x="-42" y="-36" width="84" height="68" rx="8" fill="#0F172A" stroke="#10B981" stroke-width="4"/>
+        <circle cx="0" cy="-6" r="16" fill="#FACC15" stroke="${S}" stroke-width="4"/>
+        <rect x="-36" y="10" width="22" height="10" rx="3" fill="#10B981" stroke="${S}" stroke-width="3"/>
+        <rect x="14" y="10" width="22" height="10" rx="3" fill="#10B981" stroke="${S}" stroke-width="3"/>
+        <text x="0" y="-43" text-anchor="middle" font-size="6.8" font-weight="900" fill="#4ADE80">ESTABILIDAD TOTAL (-40% BALANCEO)</text>
+      </g>`;
+    },
+    tags: ["pistones", "hidraulico", "calor", "amortiguador", "taipei_101"],
+  },
+  cable_longitud_rotura_5km: {
+    id: "cable_longitud_rotura_5km",
+    name: "Longitud de Rotura del Acero (5 km) vs Nanotubos",
+    family: "educacion_ciencia",
+    defaultPlacement: "right",
+    svg: `<line x1="0" y1="-38" x2="0" y2="38" stroke="#94A3B8" stroke-width="8"/>`,
+    animatedSvg: (f: number, progress = 0, state = "cable_acero_colgando") => {
+      if (state === "cable_acero_colgando") {
+        return `<g>
+          <rect x="-36" y="-42" width="72" height="10" rx="3" fill="#334155" stroke="${S}" stroke-width="3.5"/>
+          <line x1="0" y1="-32" x2="0" y2="32" stroke="#94A3B8" stroke-width="9"/>
+          <text x="26" y="0" font-size="7.5" font-weight="900" fill="#38BDF8">5.0 km</text>
+          <rect x="-48" y="-58" width="96" height="14" rx="4" fill="#0F172A" stroke="#38BDF8" stroke-width="2"/>
+          <text x="0" y="-48" text-anchor="middle" font-size="6.4" font-weight="900" fill="#38BDF8">CABLE DE ACERO BAJO SU PROPIO PESO</text>
+        </g>`;
+      }
+      const snapDrop = Math.min(1, progress) * 18;
+      return `<g>
+        <rect x="-36" y="-42" width="72" height="10" rx="3" fill="#334155" stroke="${S}" stroke-width="3.5"/>
+        <!-- Cable de acero roto a los 5 km a la izquierda y fibra de carbono intacta a la derecha -->
+        <line x1="-16" y1="-32" x2="-16" y2="-6" stroke="#EF4444" stroke-width="8"/>
+        <line x1="-16" y1="${(6 + snapDrop).toFixed(1)}" x2="-16" y2="${(30 + snapDrop).toFixed(1)}" stroke="#EF4444" stroke-width="8"/>
+        <path d="M -24 0 L -8 0" stroke="#FFE600" stroke-width="3.5"/>
+        <line x1="18" y1="-32" x2="18" y2="32" stroke="#22D3EE" stroke-width="6" stroke-dasharray="4 2"/>
+        <rect x="-48" y="-58" width="96" height="14" rx="4" fill="#450A0A" stroke="#EF4444" stroke-width="2"/>
+        <text x="0" y="-48" text-anchor="middle" font-size="6.4" font-weight="900" fill="#FFE600">LÍMITE DE ROTURA: ACERO 5 KM</text>
+      </g>`;
+    },
+    tags: ["cable", "acero", "longitud_rotura", "5km", "titanio", "nanotubos"],
+  },
+  evolucion_geometria_estructural: {
+    id: "evolucion_geometria_estructural",
+    name: "Síntesis: De la Fuerza Bruta a la Geometría Inteligente",
+    family: "educacion_ciencia",
+    defaultPlacement: "right",
+    svg: `<polygon points="0,-38 -28,32 28,32" fill="#38BDF8" stroke="${S}" stroke-width="4"/>`,
+    animatedSvg: (f: number, progress = 0, state = "ingenieria_inteligente_triunfo") => {
+      const pulse = 1 + Math.sin(f / 8) * 0.04;
+      if (state === "fuerza_bruta_colapso") {
+        return `<g>
+          <rect x="-32" y="-22" width="64" height="54" fill="#DC2626" stroke="${S}" stroke-width="4"/>
+          <path d="M -18 -22 L 8 32 M 18 -10 L -12 32" stroke="#FFE600" stroke-width="3.5"/>
+          <text x="0" y="-30" text-anchor="middle" font-size="7" font-weight="900" fill="#EF4444">FUERZA BRUTA = COLAPSO</text>
+        </g>`;
+      }
+      return `<g transform="scale(${pulse.toFixed(3)})">
+        <polygon points="0,-42 -26,32 26,32" fill="#0284C7" stroke="${S}" stroke-width="4.5"/>
+        <line x1="-14" y1="-4" x2="14" y2="-4" stroke="#FFE600" stroke-width="3.5"/>
+        <line x1="-20" y1="14" x2="20" y2="14" stroke="#FFE600" stroke-width="3.5"/>
+        <circle cx="0" cy="-16" r="7" fill="#FACC15" stroke="${S}" stroke-width="3"/>
+        <rect x="-48" y="-58" width="96" height="15" rx="4" fill="#065F46" stroke="#10B981" stroke-width="2.5"/>
+        <text x="0" y="-47" text-anchor="middle" font-size="6.6" font-weight="900" fill="#FEF08A">GEOMETRÍA + FÍSICA = ETERNIDAD</text>
+      </g>`;
+    },
+    tags: ["geometria", "ingenieria", "sintesis", "triunfo", "estructuras"],
+  },
+
+  // ===========================================================================
+  // DOCUMENTAL: CONTAMINACIÓN LUMÍNICA GLOBAL Y RECUPERACIÓN DE LA OSCURIDAD
+  // ===========================================================================
+
+  cielo_milkyway_revelacion: {
+    id: "cielo_milkyway_revelacion",
+    name: "Revelación de la Vía Láctea en el Apagón de Los Ángeles 1994",
+    family: "educacion_ciencia",
+    defaultPlacement: "overhead",
+    svg: `<rect x="-45" y="-45" width="90" height="90" rx="10" fill="#0B132B" stroke="${S}" stroke-width="4"/>`,
+    animatedSvg: (f: number, progress = 0, state = "via_lactea_resplandeciente") => {
+      const pulse = 1 + Math.sin(f * 0.16) * 0.03;
+      if (state === "bruma_anaranjada_ciega") {
+        return `<g>
+          <rect x="-46" y="-42" width="92" height="84" rx="8" fill="#451A03" stroke="${S}" stroke-width="4"/>
+          <ellipse cx="0" cy="10" rx="38" ry="24" fill="#D97706" opacity="0.6"/>
+          <circle cx="-16" cy="-12" r="14" fill="#F59E0B" opacity="0.45"/>
+          <text x="0" y="-24" text-anchor="middle" font-size="6.8" font-weight="900" fill="#FDE047">CIELO SATURADO: BORTLE 9</text>
+          <text x="0" y="28" text-anchor="middle" font-size="6" font-weight="900" fill="#EF4444">0 ESTRELLAS VISIBLES</text>
+          <line x1="-32" y1="36" x2="32" y2="36" stroke="#EF4444" stroke-width="3"/>
+        </g>`;
+      }
+      if (state === "apagon_repentino_corte") {
+        const flicker = Math.sin(f * 0.22) > 0 ? 0.9 : 0.4;
+        return `<g>
+          <rect x="-46" y="-42" width="92" height="84" rx="8" fill="#020617" stroke="#38BDF8" stroke-width="4"/>
+          <polygon points="-8,-18 12,-18 -2,0 10,0 -6,22 0,4 -10,4" fill="#FFE600" stroke="${S}" stroke-width="2.5" opacity="${flicker}"/>
+          <text x="0" y="-26" text-anchor="middle" font-size="6.5" font-weight="900" fill="#FFE600">TERREMOTO 1994: APAGÓN TOTAL</text>
+          <text x="0" y="32" text-anchor="middle" font-size="5.8" font-weight="900" fill="#38BDF8">RED ELÉCTRICA CAÍDA</text>
+        </g>`;
+      }
+      // via_lactea_resplandeciente
+      return `<g transform="scale(${pulse.toFixed(3)})">
+        <rect x="-46" y="-42" width="92" height="84" rx="8" fill="#02040A" stroke="#38BDF8" stroke-width="4.5"/>
+        {/* Banda de la Vía Láctea */}
+        <ellipse cx="0" cy="0" rx="42" ry="14" transform="rotate(-30 0 0)" fill="#6366F1" opacity="0.7"/>
+        <ellipse cx="0" cy="0" rx="36" ry="8" transform="rotate(-30 0 0)" fill="#A855F7" opacity="0.6"/>
+        <ellipse cx="0" cy="0" rx="20" ry="4" transform="rotate(-30 0 0)" fill="#E0F2FE" opacity="0.8"/>
+        {/* Estrellas nítidas */}
+        <circle cx="-28" cy="-24" r="1.8" fill="#FFE600"/>
+        <circle cx="26" cy="22" r="1.8" fill="#FFE600"/>
+        <circle cx="-22" cy="18" r="1.4" fill="#FFFFFF"/>
+        <circle cx="28" cy="-18" r="1.6" fill="#FFFFFF"/>
+        <circle cx="0" cy="-28" r="2.0" fill="#38BDF8"/>
+        <rect x="-44" y="-56" width="88" height="13" rx="3" fill="#065F46" stroke="#10B981" stroke-width="2"/>
+        <text x="0" y="-47" text-anchor="middle" font-size="6.2" font-weight="900" fill="#FEF08A">VÍA LÁCTEA A SIMPLE VISTA</text>
+      </g>`;
+    },
+    tags: ["cielo", "milkyway", "via_lactea", "apagon", "los_angeles", "estrellas"],
+  },
+
+  esfera_tierra_luces_nocturnas: {
+    id: "esfera_tierra_luces_nocturnas",
+    name: "La Tierra Vista de Noche: Expansión de la Red Lumínica",
+    family: "educacion_ciencia",
+    defaultPlacement: "right",
+    svg: `<circle cx="0" cy="0" r="38" fill="#0369A1" stroke="${S}" stroke-width="4"/>`,
+    animatedSvg: (f: number, progress = 0, state = "europa_america_saturada") => {
+      const rot = Math.sin(f * 0.14) * 2;
+      if (state === "red_luces_continentes") {
+        return `<g transform="rotate(${rot.toFixed(1)} 0 0)">
+          <circle cx="0" cy="0" r="38" fill="#0A1128" stroke="${S}" stroke-width="4.5"/>
+          {/* Siluetas de continentes con telarañas de luz */}
+          <path d="M -24 -20 Q -10 -28 6 -18 Q 18 -12 24 2 Q 16 18 -4 20 Q -20 18 -28 -2 Z" fill="#1E293B" stroke="#334155" stroke-width="2"/>
+          <circle cx="-12" cy="-14" r="3" fill="#FFE600"/>
+          <circle cx="4" cy="-8" r="2.5" fill="#FFE600"/>
+          <circle cx="14" cy="4" r="3" fill="#FFE600"/>
+          <line x1="-12" y1="-14" x2="4" y2="-8" stroke="#F59E0B" stroke-width="1.8"/>
+          <line x1="4" y1="-8" x2="14" y2="4" stroke="#F59E0B" stroke-width="1.8"/>
+          <rect x="-44" y="-56" width="88" height="13" rx="3" fill="#0F172A" stroke="#38BDF8" stroke-width="2"/>
+          <text x="0" y="-47" text-anchor="middle" font-size="6.2" font-weight="900" fill="#38BDF8">RED GLOBAL DE SATÉLITES</text>
+        </g>`;
+      }
+      if (state === "europa_america_saturada") {
+        return `<g>
+          <circle cx="0" cy="0" r="38" fill="#050C1A" stroke="#EF4444" stroke-width="4"/>
+          {/* Mancha desbordada de luz urbana */}
+          <circle cx="-6" cy="-4" r="24" fill="#D97706" opacity="0.65"/>
+          <circle cx="-6" cy="-4" r="14" fill="#FDE047" opacity="0.9"/>
+          <circle cx="-6" cy="-4" r="6" fill="#FFFFFF"/>
+          <rect x="-46" y="-56" width="92" height="14" rx="3" fill="#7F1D1D" stroke="#EF4444" stroke-width="2"/>
+          <text x="0" y="-47" text-anchor="middle" font-size="6.3" font-weight="900" fill="#FFE600">80% DE HUMANOS BAJO RESPLANDOR</text>
+          <text x="0" y="30" text-anchor="middle" font-size="6" font-weight="900" fill="#EF4444">99% EN EUROPA Y EE.UU.</text>
+        </g>`;
+      }
+      // tierra_oscuridad_amenazada
+      return `<g>
+        <circle cx="0" cy="0" r="38" fill="#0B132B" stroke="#10B981" stroke-width="4"/>
+        <path d="M -38 0 A 38 38 0 0 1 38 0 Z" fill="#F59E0B" opacity="0.5"/>
+        <path d="M -38 0 A 38 38 0 0 0 38 0 Z" fill="#020617"/>
+        <line x1="-38" y1="0" x2="38" y2="0" stroke="#FFE600" stroke-width="3"/>
+        <rect x="-46" y="-56" width="92" height="14" rx="3" fill="#065F46" stroke="#10B981" stroke-width="2"/>
+        <text x="0" y="-47" text-anchor="middle" font-size="6.2" font-weight="900" fill="#FEF08A">EXPANSIÓN LUMÍNICA: +2% ANUAL</text>
+      </g>`;
+    },
+    tags: ["tierra", "planeta", "luces", "satelite", "continentes", "saturacion"],
+  },
+
+  evolucion_farola_electrica: {
+    id: "evolucion_farola_electrica",
+    name: "Evolución de la Iluminación Urbana: Gas vs Globo vs Blindada",
+    family: "historia_exploracion",
+    defaultPlacement: "right",
+    svg: `<line x1="0" y1="36" x2="0" y2="-20" stroke="#475569" stroke-width="6"/>`,
+    animatedSvg: (f: number, progress = 0, state = "farola_blindada_cero_polucion") => {
+      const flicker = Math.sin(f * 0.18) * 1.5;
+      if (state === "farola_gas_victoriana_1880") {
+        return `<g>
+          <line x1="0" y1="36" x2="0" y2="-12" stroke="#334155" stroke-width="7" stroke-linecap="round"/>
+          <polygon points="-14,-12 14,-12 9,-32 -9,-32" fill="#1E293B" stroke="${S}" stroke-width="3"/>
+          {/* Llama tenue de gas */}
+          <ellipse cx="0" cy="${(-22 + flicker).toFixed(1)}" rx="4" ry="7" fill="#F59E0B" stroke="#FFE600" stroke-width="1.5"/>
+          <rect x="-44" y="-54" width="88" height="13" rx="3" fill="#1E293B" stroke="#94A3B8" stroke-width="2"/>
+          <text x="0" y="-45" text-anchor="middle" font-size="6.2" font-weight="900" fill="#E2E8F0">1880: FAROLA DE GAS (TENUE)</text>
+        </g>`;
+      }
+      if (state === "farola_mercurio_globo_360") {
+        return `<g>
+          <line x1="0" y1="36" x2="0" y2="-8" stroke="#475569" stroke-width="7" stroke-linecap="round"/>
+          <rect x="-8" y="-12" width="16" height="6" fill="#1E293B" stroke="${S}" stroke-width="2"/>
+          {/* Globo difusor sin blindaje disparando luz en 360 grados */}
+          <circle cx="0" cy="-22" r="16" fill="#FDE047" opacity="0.35"/>
+          <circle cx="0" cy="-22" r="10" fill="#FFFFFF" stroke="#F59E0B" stroke-width="3"/>
+          {/* Rayos de luz fugándose hacia el cielo */}
+          <line x1="-14" y1="-32" x2="-22" y2="-40" stroke="#EF4444" stroke-width="3"/>
+          <line x1="0" y1="-36" x2="0" y2="-44" stroke="#EF4444" stroke-width="3.5"/>
+          <line x1="14" y1="-32" x2="22" y2="-40" stroke="#EF4444" stroke-width="3"/>
+          <rect x="-46" y="-56" width="92" height="14" rx="3" fill="#7F1D1D" stroke="#EF4444" stroke-width="2"/>
+          <text x="0" y="-47" text-anchor="middle" font-size="6.3" font-weight="900" fill="#FFE600">GLOBO NOCTURNO: 60% FUGA ARRIBA</text>
+        </g>`;
+      }
+      // farola_blindada_cero_polucion
+      return `<g>
+        <line x1="0" y1="36" x2="0" y2="-10" stroke="#334155" stroke-width="7" stroke-linecap="round"/>
+        {/* Carcasa superior blindada plana (Full Cut-off) */}
+        <path d="M -22 -14 L 22 -14 L 16 -24 L -16 -24 Z" fill="#0F172A" stroke="#38BDF8" stroke-width="3.5"/>
+        <line x1="-20" y1="-14" x2="20" y2="-14" stroke="#FFE600" stroke-width="4"/>
+        {/* Haz de luz 100% dirigido hacia el suelo */}
+        <polygon points="-18,-14 18,-14 32,36 -32,36" fill="#FDE047" opacity="0.35"/>
+        <rect x="-46" y="-56" width="92" height="14" rx="3" fill="#065F46" stroke="#10B981" stroke-width="2"/>
+        <text x="0" y="-47" text-anchor="middle" font-size="6.3" font-weight="900" fill="#A7F3D0">FULL CUT-OFF: 0% LUZ AL CIELO</text>
+      </g>`;
+    },
+    tags: ["farola", "alumbrado", "gas", "mercurio", "blindaje", "full_cutoff"],
+  },
+
+  medidor_escala_bortle: {
+    id: "medidor_escala_bortle",
+    name: "Fotómetro y Medidor de la Escala Bortle (SQM 1 al 9)",
+    family: "tecnologia",
+    defaultPlacement: "right",
+    svg: `<rect x="-30" y="-42" width="60" height="84" rx="8" fill="#1E293B" stroke="${S}" stroke-width="4"/>`,
+    animatedSvg: (f: number, progress = 0, state = "bortle_1_verde_pristino") => {
+      const pulse = 1 + Math.sin(f * 0.15) * 0.02;
+      if (state === "bortle_9_rojo_critico") {
+        return `<g transform="scale(${pulse.toFixed(3)})">
+          <rect x="-32" y="-44" width="64" height="88" rx="8" fill="#0F172A" stroke="#EF4444" stroke-width="4.5"/>
+          <rect x="-24" y="-36" width="48" height="26" rx="4" fill="#7F1D1D" stroke="#EF4444" stroke-width="2"/>
+          <text x="0" y="-24" text-anchor="middle" font-size="10" font-weight="900" fill="#FFE600">CLASE 9</text>
+          <text x="0" y="-14" text-anchor="middle" font-size="6.2" font-weight="900" fill="#FCA5A5">17.5 MAG/ARCSEC²</text>
+          {/* Barra de alerta */}
+          <rect x="-24" y="0" width="48" height="10" rx="3" fill="#DC2626"/>
+          <text x="0" y="24" text-anchor="middle" font-size="6" font-weight="900" fill="#EF4444">CENTRO METROPOLITANO</text>
+          <text x="0" y="34" text-anchor="middle" font-size="5.5" font-weight="900" fill="#94A3B8">SOLO LUNA Y PLANETAS</text>
+        </g>`;
+      }
+      if (state === "bortle_5_amarillo_suburbano") {
+        return `<g>
+          <rect x="-32" y="-44" width="64" height="88" rx="8" fill="#0F172A" stroke="#F59E0B" stroke-width="4.5"/>
+          <rect x="-24" y="-36" width="48" height="26" rx="4" fill="#78350F" stroke="#F59E0B" stroke-width="2"/>
+          <text x="0" y="-24" text-anchor="middle" font-size="10" font-weight="900" fill="#FEF08A">CLASE 5</text>
+          <text x="0" y="-14" text-anchor="middle" font-size="6.2" font-weight="900" fill="#FDE68A">20.2 MAG/ARCSEC²</text>
+          <rect x="-24" y="0" width="28" height="10" rx="3" fill="#F59E0B"/>
+          <text x="0" y="24" text-anchor="middle" font-size="6" font-weight="900" fill="#F59E0B">SUBURBIO RESIDENCIAL</text>
+          <text x="0" y="34" text-anchor="middle" font-size="5.5" font-weight="900" fill="#CBD5E1">VÍA LÁCTEA MUY DÉBIL</text>
+        </g>`;
+      }
+      // bortle_1_verde_pristino
+      return `<g transform="scale(${pulse.toFixed(3)})">
+        <rect x="-32" y="-44" width="64" height="88" rx="8" fill="#0F172A" stroke="#10B981" stroke-width="4.5"/>
+        <rect x="-24" y="-36" width="48" height="26" rx="4" fill="#064E3B" stroke="#10B981" stroke-width="2"/>
+        <text x="0" y="-24" text-anchor="middle" font-size="10" font-weight="900" fill="#A7F3D0">CLASE 1</text>
+        <text x="0" y="-14" text-anchor="middle" font-size="6.2" font-weight="900" fill="#6EE7B7">22.0 MAG/ARCSEC²</text>
+        <rect x="-24" y="0" width="48" height="10" rx="3" fill="#10B981"/>
+        <text x="0" y="24" text-anchor="middle" font-size="6" font-weight="900" fill="#4ADE80">CIELO OSCURO PRÍSTINO</text>
+        <text x="0" y="34" text-anchor="middle" font-size="5.5" font-weight="900" fill="#E2E8F0">SOMBRAS DE LA VÍA LÁCTEA</text>
+      </g>`;
+    },
+    tags: ["bortle", "sqm", "fotometro", "escala", "brillo", "astronomia"],
+  },
+
+  tortuga_marina_desorientada: {
+    id: "tortuga_marina_desorientada",
+    name: "Cría de Tortuga Marina Desorientada por Luces Costeras",
+    family: "naturaleza_alimentos",
+    defaultPlacement: "right",
+    svg: `<ellipse cx="0" cy="0" rx="20" ry="14" fill="#15803D" stroke="${S}" stroke-width="3"/>`,
+    animatedSvg: (f: number, progress = 0, state = "desorientada_hacia_farolas") => {
+      const crawl = Math.sin(f * 0.24) * 3;
+      if (state === "cria_naciendo_arena") {
+        return `<g>
+          {/* Nido en la arena */}
+          <ellipse cx="0" cy="18" rx="32" ry="12" fill="#78350F" stroke="${S}" stroke-width="3"/>
+          <ellipse cx="0" cy="14" rx="22" ry="8" fill="#D97706"/>
+          {/* Caparazón asomando */}
+          <ellipse cx="0" cy="4" rx="14" ry="10" fill="#15803D" stroke="${S}" stroke-width="3"/>
+          <circle cx="0" cy="-6" r="6" fill="#166534" stroke="${S}" stroke-width="2.5"/>
+          <rect x="-44" y="-48" width="88" height="13" rx="3" fill="#1E293B" stroke="#38BDF8" stroke-width="2"/>
+          <text x="0" y="-39" text-anchor="middle" font-size="6.2" font-weight="900" fill="#38BDF8">ECLOSIÓN BAJO LA ARENA</text>
+        </g>`;
+      }
+      if (state === "desorientada_hacia_farolas") {
+        return `<g transform="translate(${crawl.toFixed(1)} 0)">
+          {/* Tortuga girada hacia la derecha (hacia las luces mortales de los hoteles) */}
+          <ellipse cx="-6" cy="4" rx="16" ry="11" fill="#15803D" stroke="${S}" stroke-width="3"/>
+          <circle cx="10" cy="4" r="6" fill="#166534" stroke="${S}" stroke-width="2.5"/>
+          <path d="M 0 -8 L 8 -16 M 0 16 L 8 24" stroke="#166534" stroke-width="4" stroke-linecap="round"/>
+          {/* Faro / reflector atrayéndola */}
+          <circle cx="34" cy="-20" r="10" fill="#FDE047" opacity="0.6"/>
+          <line x1="14" y1="4" x2="30" y2="-14" stroke="#EF4444" stroke-width="2.5" stroke-dasharray="3 3"/>
+          <rect x="-48" y="-52" width="96" height="14" rx="3" fill="#7F1D1D" stroke="#EF4444" stroke-width="2"/>
+          <text x="0" y="-43" text-anchor="middle" font-size="6.2" font-weight="900" fill="#FFE600">TRAMPA MORTAL: RUMBO AL ASFALTO</text>
+        </g>`;
+      }
+      // salvada_rumbo_oceano
+      return `<g transform="translate(${(-crawl).toFixed(1)} 0)">
+        {/* Tortuga orientada hacia la izquierda (hacia el brillo de la luna en las olas) */}
+        <ellipse cx="6" cy="4" rx="16" ry="11" fill="#15803D" stroke="${S}" stroke-width="3"/>
+        <circle cx="-10" cy="4" r="6" fill="#166534" stroke="${S}" stroke-width="2.5"/>
+        <path d="M 0 -8 L -8 -16 M 0 16 L -8 24" stroke="#166534" stroke-width="4" stroke-linecap="round"/>
+        {/* Olas marinas salvadoras */}
+        <path d="M -36 -12 Q -26 -18 -16 -12" fill="none" stroke="#38BDF8" stroke-width="3.5"/>
+        <path d="M -36 18 Q -26 12 -16 18" fill="none" stroke="#38BDF8" stroke-width="3.5"/>
+        <rect x="-46" y="-52" width="92" height="14" rx="3" fill="#065F46" stroke="#10B981" stroke-width="2"/>
+        <text x="0" y="-43" text-anchor="middle" font-size="6.3" font-weight="900" fill="#A7F3D0">ORIENTACIÓN NATURAL: OCÉANO</text>
+      </g>`;
+    },
+    tags: ["tortuga", "caretta", "marina", "costa", "desorientacion", "cria"],
+  },
+
+  aves_migratorias_rascacielos: {
+    id: "aves_migratorias_rascacielos",
+    name: "Aves Migratorias Atrapadas en el Cono de Luz de Rascacielos",
+    family: "naturaleza_alimentos",
+    defaultPlacement: "right",
+    svg: `<polygon points="0,-20 18,10 -18,10" fill="#38BDF8" stroke="${S}" stroke-width="3"/>`,
+    animatedSvg: (f: number, progress = 0, state = "atrapadas_espiral_luz") => {
+      const circleAngle = (f * 0.22) % (Math.PI * 2);
+      const bx = Math.cos(circleAngle) * 22;
+      const by = Math.sin(circleAngle) * 14;
+      if (state === "vuelo_migratorio_estelar") {
+        return `<g>
+          {/* Bandada volando en V bajo las estrellas */}
+          <polygon points="-24,-8 -16,-2 -24,4" fill="#38BDF8" stroke="${S}" stroke-width="2.5"/>
+          <polygon points="0,-18 8,-12 0,-6" fill="#38BDF8" stroke="${S}" stroke-width="2.5"/>
+          <polygon points="24,-8 32,-2 24,4" fill="#38BDF8" stroke="${S}" stroke-width="2.5"/>
+          <circle cx="-18" cy="-30" r="1.5" fill="#FFE600"/>
+          <circle cx="18" cy="-30" r="1.5" fill="#FFE600"/>
+          <rect x="-46" y="-52" width="92" height="13" rx="3" fill="#0F172A" stroke="#38BDF8" stroke-width="2"/>
+          <text x="0" y="-43" text-anchor="middle" font-size="6.2" font-weight="900" fill="#38BDF8">NAVEGACIÓN ESTELAR Y MAGNÉTICA</text>
+        </g>`;
+      }
+      if (state === "atrapadas_espiral_luz") {
+        return `<g>
+          {/* Silueta de rascacielos de cristal emitiendo haz deslumbrante */}
+          <rect x="-12" y="-18" width="24" height="52" fill="#1E293B" stroke="${S}" stroke-width="3"/>
+          <circle cx="0" cy="-22" r="28" fill="#FDE047" opacity="0.35"/>
+          {/* Ave volando en círculos concéntricos agotadores */}
+          <ellipse cx="0" cy="-6" rx="26" ry="16" fill="none" stroke="#EF4444" stroke-width="2" stroke-dasharray="4 3"/>
+          <polygon points="${(bx - 4).toFixed(1)},${(by - 6).toFixed(1)} ${(bx + 6).toFixed(1)},${(by - 6).toFixed(1)} ${bx.toFixed(1)},${(by - 12).toFixed(1)}" fill="#EF4444" stroke="${S}" stroke-width="2"/>
+          <rect x="-48" y="-54" width="96" height="14" rx="3" fill="#7F1D1D" stroke="#EF4444" stroke-width="2"/>
+          <text x="0" y="-45" text-anchor="middle" font-size="6.2" font-weight="900" fill="#FFE600">ATRAPADAS EN EL CONO DE LUZ</text>
+        </g>`;
+      }
+      // torre_apagada_vuelo_libre
+      return `<g>
+        <rect x="-12" y="-14" width="24" height="48" fill="#0F172A" stroke="#334155" stroke-width="3"/>
+        {/* Luces apagadas, vuelo libre seguro */}
+        <polygon points="-18,-26 -10,-20 -18,-14" fill="#22C55E" stroke="${S}" stroke-width="2.5"/>
+        <polygon points="12,-28 20,-22 12,-16" fill="#22C55E" stroke="${S}" stroke-width="2.5"/>
+        <rect x="-46" y="-54" width="92" height="14" rx="3" fill="#065F46" stroke="#10B981" stroke-width="2"/>
+        <text x="0" y="-45" text-anchor="middle" font-size="6.3" font-weight="900" fill="#A7F3D0">LUCES APAGADAS: PASO SEGURO</text>
+      </g>`;
+    },
+    tags: ["aves", "migracion", "rascacielos", "chicago", "colision", "espiral"],
+  },
+
+  espectro_led_azul_460nm: {
+    id: "espectro_led_azul_460nm",
+    name: "Espectro Óptico: El Pico Azul Letal del LED Blanco (460 nm)",
+    family: "educacion_ciencia",
+    defaultPlacement: "right",
+    svg: `<path d="M -30 20 L -10 -20 L 10 15 L 30 20" stroke="#0284C7" stroke-width="4" fill="none"/>`,
+    animatedSvg: (f: number, progress = 0, state = "pico_azul_led_frio_460nm") => {
+      const spikePulse = 1 + Math.sin(f * 0.16) * 0.04;
+      if (state === "pico_azul_led_frio_460nm") {
+        return `<g>
+          {/* Ejes espectrales */}
+          <rect x="-40" y="-34" width="80" height="66" rx="6" fill="#0F172A" stroke="${S}" stroke-width="4"/>
+          <line x1="-32" y1="22" x2="32" y2="22" stroke="#475569" stroke-width="2"/>
+          {/* Curva espectral de LED blanco frío con pico agudo en 460 nm */}
+          <path d="M -30 20 Q -24 18 -18 6 L -10 ${(-24 * spikePulse).toFixed(1)} L -4 6 Q 6 12 18 10 Q 26 12 30 20" fill="none" stroke="#38BDF8" stroke-width="4.5"/>
+          {/* Marcador rojo sobre el pico de 460 nm */}
+          <circle cx="-10" cy={(-24 * spikePulse).toFixed(1)} r="4" fill="#EF4444"/>
+          <text x="-10" y="-28" text-anchor="middle" font-size="6.5" font-weight="900" fill="#FFE600">460 NM</text>
+          <rect x="-46" y="-52" width="92" height="13" rx="3" fill="#7F1D1D" stroke="#EF4444" stroke-width="2"/>
+          <text x="0" y="-43" text-anchor="middle" font-size="6.2" font-weight="900" fill="#FFE600">PICO AZUL: SUPRESIÓN BIOLÓGICA</text>
+        </g>`;
+      }
+      if (state === "comparacion_sodio_calido") {
+        return `<g>
+          <rect x="-40" y="-34" width="80" height="66" rx="6" fill="#0F172A" stroke="${S}" stroke-width="4"/>
+          {/* Curva de sodio cálido (pico en 590 nm, amarillo/naranja inocuo) */}
+          <path d="M -30 20 L 0 20 Q 8 6 14 -16 Q 20 6 26 20 L 30 20" fill="none" stroke="#F59E0B" stroke-width="4.5"/>
+          <text x="14" y="-22" text-anchor="middle" font-size="6.2" font-weight="900" fill="#FDE047">590 NM (SODIO)</text>
+          <rect x="-46" y="-52" width="92" height="13" rx="3" fill="#1E293B" stroke="#F59E0B" stroke-width="2"/>
+          <text x="0" y="-43" text-anchor="middle" font-size="6.2" font-weight="900" fill="#FDE047">SODIO 2000K: CERO DAÑO AZUL</text>
+        </g>`;
+      }
+      // filtro_ambar_circadiano
+      return `<g>
+        <rect x="-40" y="-34" width="80" height="66" rx="6" fill="#0F172A" stroke="#10B981" stroke-width="4"/>
+        <path d="M -30 20 L -6 20 Q 4 10 12 -12 Q 20 10 28 20" fill="none" stroke="#10B981" stroke-width="4.5"/>
+        <rect x="-46" y="-52" width="92" height="13" rx="3" fill="#065F46" stroke="#10B981" stroke-width="2"/>
+        <text x="0" y="-43" text-anchor="middle" font-size="6.3" font-weight="900" fill="#A7F3D0">LED ÁMBAR 2200K PROTEGIDO</text>
+      </g>`;
+    },
+    tags: ["espectro", "led", "azul", "460nm", "longitud_onda", "nanometros"],
+  },
+
+  glandula_pineal_melatonina: {
+    id: "glandula_pineal_melatonina",
+    name: "Glándula Pineal y Síntesis Circadiana de Melatonina",
+    family: "educacion_ciencia",
+    defaultPlacement: "right",
+    svg: `<circle cx="0" cy="0" r="28" fill="#818CF8" stroke="${S}" stroke-width="4"/>`,
+    animatedSvg: (f: number, progress = 0, state = "luz_azul_bloqueo_total") => {
+      const dropY = ((f * 0.8) % 24);
+      if (state === "melatonina_fluyendo_noche") {
+        return `<g>
+          {/* Silueta cerebral estilizada en corte sagital */}
+          <ellipse cx="0" cy="-6" rx="34" ry="24" fill="#1E1B4B" stroke="#6366F1" stroke-width="3.5"/>
+          {/* Glándula pineal brillando en púrpura/cian */}
+          <circle cx="2" cy="-4" r="8" fill="#A855F7" stroke="#000" stroke-width="2.5"/>
+          {/* Gotas de melatonina descendiendo hacia el torrente */}
+          <circle cx="2" cy="${(8 + dropY).toFixed(1)}" r="3.5" fill="#38BDF8"/>
+          <rect x="-46" y="-52" width="92" height="13" rx="3" fill="#065F46" stroke="#10B981" stroke-width="2"/>
+          <text x="0" y="-43" text-anchor="middle" font-size="6.2" font-weight="900" fill="#A7F3D0">OSCURIDAD: MELATONINA 100%</text>
+        </g>`;
+      }
+      if (state === "luz_azul_bloqueo_total") {
+        return `<g>
+          <ellipse cx="0" cy="-6" rx="34" ry="24" fill="#1E1B4B" stroke="#EF4444" stroke-width="3.5"/>
+          {/* Haz de luz azul impactando desde la derecha */}
+          <line x1="36" y1="-4" x2="6" y2="-4" stroke="#38BDF8" stroke-width="4.5"/>
+          <circle cx="2" cy="-4" r="8" fill="#7F1D1D" stroke="#EF4444" stroke-width="2.5"/>
+          {/* Cruz de bloqueo total */}
+          <line x1="-3" y1="-9" x2="7" y2="1" stroke="#EF4444" stroke-width="3"/>
+          <line x1="7" y1="-9" x2="-3" y2="1" stroke="#EF4444" stroke-width="3"/>
+          <rect x="-48" y="-54" width="96" height="14" rx="3" fill="#7F1D1D" stroke="#EF4444" stroke-width="2"/>
+          <text x="0" y="-45" text-anchor="middle" font-size="6.2" font-weight="900" fill="#FFE600">LUZ NOCTURNA: MELATONINA 0%</text>
+        </g>`;
+      }
+      // reloj_biologico_restaurado
+      return `<g>
+        <circle cx="0" cy="-2" r="28" fill="#0F172A" stroke="#10B981" stroke-width="4"/>
+        {/* Esfera de reloj circadiano */}
+        <circle cx="0" cy="-2" r="20" fill="none" stroke="#334155" stroke-width="2.5"/>
+        <line x1="0" y1="-2" x2="0" y2="-14" stroke="#FFE600" stroke-width="3"/>
+        <line x1="0" y1="-2" x2="10" y2="-2" stroke="#10B981" stroke-width="3"/>
+        <rect x="-46" y="-52" width="92" height="13" rx="3" fill="#065F46" stroke="#10B981" stroke-width="2"/>
+        <text x="0" y="-43" text-anchor="middle" font-size="6.3" font-weight="900" fill="#A7F3D0">RITMO CIRCADIANO SALUDABLE</text>
+      </g>`;
+    },
+    tags: ["melatonina", "pineal", "cerebro", "circadiano", "insomnio", "salud"],
+  },
+
+  resplandor_atmosferico_rayleigh: {
+    id: "resplandor_atmosferico_rayleigh",
+    name: "Física del Skyglow: Dispersión de Rayleigh en la Atmósfera",
+    family: "educacion_ciencia",
+    defaultPlacement: "right",
+    svg: `<path d="M -30 20 Q 0 -20 30 20" stroke="#F59E0B" stroke-width="4" fill="none"/>`,
+    animatedSvg: (f: number, progress = 0, state = "cupula_300km_alcance") => {
+      const scatter = Math.sin(f * 0.18) * 12;
+      if (state === "dispersion_rayleigh_haz") {
+        return `<g>
+          {/* Haz de luz subiendo y dispersándose en moléculas de aire */}
+          <line x1="0" y1="28" x2="0" y2="-2" stroke="#FDE047" stroke-width="6"/>
+          {/* Moléculas N2 / O2 dispersando fotones */}
+          <circle cx="-16" cy="-14" r="5" fill="#38BDF8" stroke="${S}" stroke-width="2"/>
+          <circle cx="18" cy="-18" r="5" fill="#38BDF8" stroke="${S}" stroke-width="2"/>
+          <line x1="0" y1="-2" x2="-16" y2="-14" stroke="#FFE600" stroke-width="2.5" stroke-dasharray="3 2"/>
+          <line x1="0" y1="-2" x2="18" y2="-18" stroke="#FFE600" stroke-width="2.5" stroke-dasharray="3 2"/>
+          <rect x="-46" y="-52" width="92" height="13" rx="3" fill="#1E293B" stroke="#38BDF8" stroke-width="2"/>
+          <text x="0" y="-43" text-anchor="middle" font-size="6.2" font-weight="900" fill="#38BDF8">DISPERSIÓN RAYLEIGH (1/λ⁴)</text>
+        </g>`;
+      }
+      if (state === "cupula_300km_alcance") {
+        return `<g>
+          {/* Cúpula gigante cubriendo 300 km */}
+          <path d="M -38 24 Q 0 -32 38 24" fill="#D97706" opacity="0.45" stroke="#F59E0B" stroke-width="3"/>
+          <circle cx="-30" cy="24" r="4" fill="#EF4444"/>
+          <text x="-30" y="32" font-size="5" font-weight="900" fill="#FFFFFF">CIUDAD</text>
+          <line x1="-30" y1="20" x2="28" y2="20" stroke="#FFE600" stroke-width="2.5" stroke-dasharray="4 2"/>
+          <text x="0" y="16" text-anchor="middle" font-size="7" font-weight="900" fill="#FFE600">300 KM</text>
+          <rect x="-48" y="-54" width="96" height="14" rx="3" fill="#7F1D1D" stroke="#EF4444" stroke-width="2"/>
+          <text x="0" y="-45" text-anchor="middle" font-size="6.2" font-weight="900" fill="#FFE600">CÚPULA LUMINOSA A 300 KM</text>
+        </g>`;
+      }
+      // blindaje_corte_total
+      return `<g>
+        <path d="M -24 -10 L 24 -10 L 0 24 Z" fill="#FDE047" opacity="0.35"/>
+        <rect x="-26" y="-18" width="52" height="8" rx="2" fill="#0F172A" stroke="#10B981" stroke-width="3"/>
+        <rect x="-46" y="-52" width="92" height="13" rx="3" fill="#065F46" stroke="#10B981" stroke-width="2"/>
+        <text x="0" y="-43" text-anchor="middle" font-size="6.3" font-weight="900" fill="#A7F3D0">LUZ RETENIDA EN SUPERFICIE</text>
+      </g>`;
+    },
+    tags: ["rayleigh", "dispersion", "skyglow", "atmosfera", "cupula", "fotones"],
+  },
+
+  telescopio_cegado_polucion: {
+    id: "telescopio_cegado_polucion",
+    name: "Telescopio Astronómico Cegado por Contaminación Lumínica",
+    family: "educacion_ciencia",
+    defaultPlacement: "right",
+    svg: `<rect x="-30" y="-12" width="60" height="24" rx="6" transform="rotate(-30 0 0)" fill="#0284C7" stroke="${S}" stroke-width="4"/>`,
+    animatedSvg: (f: number, progress = 0, state = "sensor_ccd_saturado_ruido") => {
+      const shake = Math.sin(f * 0.16) * 1.5;
+      if (state === "telescopio_cegado_resplandor") {
+        return `<g transform="rotate(-32 0 10)">
+          <rect x="-28" y="-10" width="56" height="20" rx="4" fill="#0369A1" stroke="${S}" stroke-width="4"/>
+          {/* Lente frontal cegada por resplandor anaranjado */}
+          <ellipse cx="28" cy="0" rx="4" ry="10" fill="#F59E0B" stroke="#EF4444" stroke-width="2"/>
+          <line x1="32" y1="-8" x2="48" y2="-16" stroke="#FDE047" stroke-width="3"/>
+          <line x1="32" y1="8" x2="48" y2="16" stroke="#FDE047" stroke-width="3"/>
+          <rect x="-46" y="-52" width="92" height="13" rx="3" fill="#7F1D1D" stroke="#EF4444" stroke-width="2"/>
+          <text x="0" y="-43" text-anchor="middle" font-size="6.2" font-weight="900" fill="#FFE600">OBSERVATORIO HISTÓRICO CIEGO</text>
+        </g>`;
+      }
+      if (state === "sensor_ccd_saturado_ruido") {
+        return `<g>
+          {/* Detector CCD saturado en blanco/amarillo por ruido de fotones */}
+          <rect x="-32" y="-32" width="64" height="64" rx="6" fill="#FDE047" stroke="#EF4444" stroke-width="4.5"/>
+          <text x="0" y="-8" text-anchor="middle" font-size="8" font-weight="900" fill="#7F1D1D">SENSOR CCD</text>
+          <text x="0" y="6" text-anchor="middle" font-size="6.5" font-weight="900" fill="#991B1B">SATURADO</text>
+          <text x="0" y="20" text-anchor="middle" font-size="5.5" font-weight="900" fill="#000000">SEÑAL / RUIDO = 0</text>
+          <rect x="-46" y="-52" width="92" height="13" rx="3" fill="#7F1D1D" stroke="#EF4444" stroke-width="2"/>
+          <text x="0" y="-43" text-anchor="middle" font-size="6.2" font-weight="900" fill="#FFE600">RUIDO DE FONDO INASUMIBLE</text>
+        </g>`;
+      }
+      // telescopio_remoto_cumbre
+      return `<g transform="rotate(-30 0 10)">
+        <rect x="-28" y="-10" width="56" height="20" rx="4" fill="#0F172A" stroke="#38BDF8" stroke-width="4"/>
+        <ellipse cx="28" cy="0" rx="4" ry="10" fill="#38BDF8"/>
+        {/* Fotón cósmico nítido */}
+        <circle cx="40" cy="0" r="3" fill="#FFE600"/>
+        <rect x="-46" y="-52" width="92" height="13" rx="3" fill="#065F46" stroke="#10B981" stroke-width="2"/>
+        <text x="0" y="-43" text-anchor="middle" font-size="6.3" font-weight="900" fill="#A7F3D0">FOTONES DE HACE 13.000 M DE AÑOS</text>
+      </g>`;
+    },
+    tags: ["telescopio", "observatorio", "ccd", "sensor", "astronomia", "ruido"],
+  },
+
+  maqueta_control_iluminacion: {
+    id: "maqueta_control_iluminacion",
+    name: "Maqueta Urbana de Iluminación y Gestión de Red",
+    family: "tecnologia",
+    defaultPlacement: "right",
+    svg: `<polygon points="0,-24 32,0 0,24 -32,0" fill="#0284C7" stroke="${S}" stroke-width="4"/>`,
+    animatedSvg: (f: number, progress = 0, state = "desperdicio_lumenes_cielo") => {
+      const pulse = 1 + Math.sin(f * 0.16) * 0.03;
+      if (state === "maqueta_ciudades_encendidas") {
+        return `<g>
+          <polygon points="0,-20 36,-2 0,16 -36,-2" fill="#1E293B" stroke="#38BDF8" stroke-width="3.5"/>
+          {/* Mini edificios iluminados */}
+          <rect x="-18" y="-16" width="10" height="22" fill="#0F172A" stroke="#000" stroke-width="2"/>
+          <circle cx="-13" cy="-18" r="3" fill="#FDE047"/>
+          <rect x="8" y="-22" width="12" height="28" fill="#0F172A" stroke="#000" stroke-width="2"/>
+          <circle cx="14" cy="-24" r="3" fill="#EF4444"/>
+          <rect x="-46" y="-52" width="92" height="13" rx="3" fill="#0F172A" stroke="#38BDF8" stroke-width="2"/>
+          <text x="0" y="-43" text-anchor="middle" font-size="6.2" font-weight="900" fill="#38BDF8">RED URBANA ENERGIZADA</text>
+        </g>`;
+      }
+      if (state === "desperdicio_lumenes_cielo") {
+        return `<g>
+          <polygon points="0,-20 36,-2 0,16 -36,-2" fill="#1E293B" stroke="#EF4444" stroke-width="3.5"/>
+          {/* Fuga masiva de lúmenes hacia arriba */}
+          <polygon points="-24,-2 -6,-2 -15,-34" fill="#FDE047" opacity="0.6"/>
+          <polygon points="6,-2 24,-2 15,-34" fill="#FDE047" opacity="0.6"/>
+          <rect x="-48" y="-54" width="96" height="14" rx="3" fill="#7F1D1D" stroke="#EF4444" stroke-width="2"/>
+          <text x="0" y="-45" text-anchor="middle" font-size="6.2" font-weight="900" fill="#FFE600">50% LÚMENES DESPERDICIADOS</text>
+        </g>`;
+      }
+      // red_optimizada_eficiente
+      return `<g transform="scale(${pulse.toFixed(3)})">
+        <polygon points="0,-20 36,-2 0,16 -36,-2" fill="#0F172A" stroke="#10B981" stroke-width="4"/>
+        <line x1="-20" y1="-2" x2="20" y2="-2" stroke="#10B981" stroke-width="3" stroke-dasharray="4 2"/>
+        <rect x="-46" y="-52" width="92" height="13" rx="3" fill="#065F46" stroke="#10B981" stroke-width="2"/>
+        <text x="0" y="-43" text-anchor="middle" font-size="6.3" font-weight="900" fill="#A7F3D0">-70% CONSUMO Y CIELO LIMPIO</text>
+      </g>`;
+    },
+    tags: ["maqueta", "control", "red", "desperdicio", "lumenes", "eficiencia"],
+  },
+
+  luminaria_full_cutoff: {
+    id: "luminaria_full_cutoff",
+    name: "Luminaria Full Cut-Off con Control Óptico Estricto",
+    family: "tecnologia",
+    defaultPlacement: "right",
+    svg: `<path d="M -24 -6 L 24 -6 L 16 -18 L -16 -18 Z" fill="#1E293B" stroke="${S}" stroke-width="4"/>`,
+    animatedSvg: (f: number, progress = 0, state = "diseno_full_cutoff_plano") => {
+      if (state === "luminaria_globo_fuga_arriba") {
+        return `<g>
+          <circle cx="0" cy="-6" r="18" fill="#FDE047" opacity="0.4"/>
+          <circle cx="0" cy="-6" r="10" fill="#FFFFFF" stroke="#000" stroke-width="3"/>
+          <line x1="-24" y1="-20" x2="-32" y2="-30" stroke="#EF4444" stroke-width="3"/>
+          <line x1="24" y1="-20" x2="32" y2="-30" stroke="#EF4444" stroke-width="3"/>
+          <rect x="-46" y="-52" width="92" height="13" rx="3" fill="#7F1D1D" stroke="#EF4444" stroke-width="2"/>
+          <text x="0" y="-43" text-anchor="middle" font-size="6.2" font-weight="900" fill="#FFE600">SIN BLINDAJE: POLUCIÓN MÁXIMA</text>
+        </g>`;
+      }
+      if (state === "diseno_full_cutoff_plano") {
+        return `<g>
+          {/* Carcasa superior opaca y vidrio plano inferior */}
+          <path d="M -26 -6 L 26 -6 L 18 -20 L -18 -20 Z" fill="#0F172A" stroke="#38BDF8" stroke-width="3.5"/>
+          <line x1="-24" y1="-6" x2="24" y2="-6" stroke="#FFE600" stroke-width="3.5"/>
+          {/* Cono fotométrico estricto por debajo de la horizontal */}
+          <polygon points="-24,-6 24,-6 34,32 -34,32" fill="#FDE047" opacity="0.35"/>
+          <rect x="-46" y="-52" width="92" height="13" rx="3" fill="#065F46" stroke="#10B981" stroke-width="2"/>
+          <text x="0" y="-43" text-anchor="middle" font-size="6.3" font-weight="900" fill="#A7F3D0">FULL CUT-OFF: 0 CD A 90° O MÁS</text>
+        </g>`;
+      }
+      // sensor_movimiento_atenuacion
+      return `<g>
+        <path d="M -26 -6 L 26 -6 L 18 -20 L -18 -20 Z" fill="#0F172A" stroke="#10B981" stroke-width="3.5"/>
+        <line x1="-24" y1="-6" x2="24" y2="-6" stroke="#10B981" stroke-width="3"/>
+        <polygon points="-16,-6 16,-6 22,24 -22,24" fill="#A7F3D0" opacity="0.4"/>
+        <circle cx="0" cy="-6" r="3" fill="#10B981"/>
+        <rect x="-46" y="-52" width="92" height="13" rx="3" fill="#065F46" stroke="#10B981" stroke-width="2"/>
+        <text x="0" y="-43" text-anchor="middle" font-size="6.3" font-weight="900" fill="#FEF08A">SENSOR ACTIVO: ATENUACIÓN 20%</text>
+      </g>`;
+    },
+    tags: ["luminaria", "optica", "full_cutoff", "blindaje", "candela", "sensor"],
+  },
+
+  observatorio_atacama_cupula: {
+    id: "observatorio_atacama_cupula",
+    name: "Observatorio de Alta Montaña en Atacama con Láser Guía",
+    family: "educacion_ciencia",
+    defaultPlacement: "right",
+    svg: `<path d="M -26 14 A 26 26 0 0 1 26 14 Z" fill="#E2E8F0" stroke="${S}" stroke-width="4"/>`,
+    animatedSvg: (f: number, progress = 0, state = "laser_estrella_guia") => {
+      const laserTwinkle = 0.8 + Math.sin(f * 0.18) * 0.2;
+      if (state === "cupula_atacama_abierta") {
+        return `<g>
+          <rect x="-24" y="10" width="48" height="24" fill="#CBD5E1" stroke="${S}" stroke-width="3"/>
+          <path d="M -26 10 A 26 26 0 0 1 26 10 Z" fill="#E2E8F0" stroke="${S}" stroke-width="3.5"/>
+          <rect x="-6" y="-16" width="12" height="26" fill="#020617"/>
+          <rect x="-46" y="-52" width="92" height="13" rx="3" fill="#0F172A" stroke="#38BDF8" stroke-width="2"/>
+          <text x="0" y="-43" text-anchor="middle" font-size="6.2" font-weight="900" fill="#38BDF8">CÚPULA EN EL DESIERTO DE ATACAMA</text>
+        </g>`;
+      }
+      if (state === "laser_estrella_guia") {
+        return `<g>
+          <rect x="-24" y="10" width="48" height="24" fill="#CBD5E1" stroke="${S}" stroke-width="3"/>
+          <path d="M -26 10 A 26 26 0 0 1 26 10 Z" fill="#E2E8F0" stroke="${S}" stroke-width="3.5"/>
+          <rect x="-6" y="-16" width="12" height="26" fill="#020617"/>
+          {/* Haz láser naranja disparado a la capa de sodio mesosférica a 90 km */}
+          <line x1="0" y1="-10" x2="0" y2="-52" stroke="#F97316" stroke-width="4" opacity="${laserTwinkle}"/>
+          <circle cx="0" cy="-52" r="3.5" fill="#FFE600"/>
+          <rect x="-48" y="-56" width="96" height="14" rx="3" fill="#7C2D12" stroke="#F97316" stroke-width="2"/>
+          <text x="0" y="-47" text-anchor="middle" font-size="6.2" font-weight="900" fill="#FEF08A">LÁSER GUÍA: SODIO A 90 KM</text>
+        </g>`;
+      }
+      // cielo_profundo_cosmos
+      return `<g>
+        <circle cx="0" cy="-6" r="28" fill="#020617" stroke="#38BDF8" stroke-width="4"/>
+        <ellipse cx="0" cy="-6" rx="20" ry="7" transform="rotate(-25 0 -6)" fill="#818CF8" opacity="0.8"/>
+        <circle cx="0" cy="-6" r="4" fill="#FFFFFF"/>
+        <rect x="-46" y="-52" width="92" height="13" rx="3" fill="#065F46" stroke="#10B981" stroke-width="2"/>
+        <text x="0" y="-43" text-anchor="middle" font-size="6.3" font-weight="900" fill="#A7F3D0">GALAXIA EN RESOLUCIÓN PRÍSTINA</text>
+      </g>`;
+    },
+    tags: ["atacama", "laser", "optica_adaptativa", "cupula", "vlt", "estrellas"],
+  },
+
+  interruptor_maestro_apagon: {
+    id: "interruptor_maestro_apagon",
+    name: "Interruptor Maestro de Corte Eléctrico Industrial (El Gran Apagón)",
+    family: "tecnologia",
+    defaultPlacement: "right",
+    svg: `<rect x="-24" y="-36" width="48" height="72" rx="6" fill="#1E293B" stroke="${S}" stroke-width="4"/>`,
+    animatedSvg: (f: number, progress = 0, state = "sistema_apagado_estrellas") => {
+      const pulse = 1 + Math.sin(f * 0.16) * 0.03;
+      if (state === "interruptor_conectado_alerta") {
+        return `<g>
+          <rect x="-26" y="-38" width="52" height="76" rx="6" fill="#1E293B" stroke="#EF4444" stroke-width="4"/>
+          {/* Cuchillas en contacto arriba (cerrado ON) */}
+          <rect x="-14" y="-30" width="28" height="12" fill="#F59E0B" stroke="#000" stroke-width="2"/>
+          <line x1="0" y1="-24" x2="0" y2="10" stroke="#DC2626" stroke-width="7" stroke-linecap="round"/>
+          <circle cx="0" cy="10" r="7" fill="#EF4444"/>
+          <circle cx="16" cy="-28" r="4" fill="#EF4444"/>
+          <rect x="-46" y="-54" width="92" height="14" rx="3" fill="#7F1D1D" stroke="#EF4444" stroke-width="2"/>
+          <text x="0" y="-45" text-anchor="middle" font-size="6.3" font-weight="900" fill="#FFE600">CIRCUITO CONECTADO: ALERTA</text>
+        </g>`;
+      }
+      if (state === "palanca_bajando_corte") {
+        const pullAngle = 20 + Math.sin(f * 0.20) * 15;
+        return `<g>
+          <rect x="-26" y="-38" width="52" height="76" rx="6" fill="#1E293B" stroke="#FFE600" stroke-width="4"/>
+          <line x1="0" y1="-20" x2="${(Math.sin(pullAngle * Math.PI / 180) * 32).toFixed(1)}" y2="${(Math.cos(pullAngle * Math.PI / 180) * 32).toFixed(1)}" stroke="#F59E0B" stroke-width="7" stroke-linecap="round"/>
+          {/* Chispas de desconexión */}
+          <line x1="-8" y1="-26" x2="-14" y2="-32" stroke="#FFE600" stroke-width="3"/>
+          <line x1="8" y1="-26" x2="14" y2="-32" stroke="#38BDF8" stroke-width="3"/>
+          <rect x="-46" y="-54" width="92" height="14" rx="3" fill="#78350F" stroke="#F59E0B" stroke-width="2"/>
+          <text x="0" y="-45" text-anchor="middle" font-size="6.3" font-weight="900" fill="#FDE047">DESCONECTANDO REFLECTORES</text>
+        </g>`;
+      }
+      // sistema_apagado_estrellas
+      return `<g transform="scale(${pulse.toFixed(3)})">
+        <rect x="-26" y="-38" width="52" height="76" rx="6" fill="#0F172A" stroke="#10B981" stroke-width="4.5"/>
+        <line x1="0" y1="-20" x2="16" y2="24" stroke="#10B981" stroke-width="7" stroke-linecap="round"/>
+        <circle cx="16" cy="24" r="7" fill="#22C55E"/>
+        <circle cx="16" cy="-28" r="4" fill="#22C55E"/>
+        {/* Estrellas nítidas que aparecen */}
+        <circle cx="-14" cy="-14" r="2" fill="#FFE600"/>
+        <circle cx="-16" cy="12" r="1.8" fill="#38BDF8"/>
+        <circle cx="-6" cy="22" r="1.5" fill="#FFFFFF"/>
+        <rect x="-46" y="-54" width="92" height="14" rx="3" fill="#065F46" stroke="#10B981" stroke-width="2"/>
+        <text x="0" y="-45" text-anchor="middle" font-size="6.3" font-weight="900" fill="#A7F3D0">APAGADO: LA NOCHE VUELVE</text>
+      </g>`;
+    },
+    tags: ["interruptor", "palanca", "apagon", "desconexion", "estrellas", "corte"],
+  },
+  numeros_flotantes_glitch: {
+    id: "numeros_flotantes_glitch",
+    name: "Números Flotantes con Glitch y Desintegración",
+    family: "educacion_ciencia",
+    defaultPlacement: "overhead",
+    svg: `<g><rect x="-38" y="-22" width="22" height="30" rx="4" fill="#0284C7" stroke="${S}" stroke-width="2.5"/><text x="-27" y="-2" font-size="20" font-weight="900" fill="#F8FAFC" text-anchor="middle">1</text><rect x="-12" y="-22" width="22" height="30" rx="4" fill="#0284C7" stroke="${S}" stroke-width="2.5"/><text x="-1" y="-2" font-size="20" font-weight="900" fill="#F8FAFC" text-anchor="middle">2</text><rect x="14" y="-22" width="22" height="30" rx="4" fill="#0284C7" stroke="${S}" stroke-width="2.5"/><text x="25" y="-2" font-size="20" font-weight="900" fill="#F8FAFC" text-anchor="middle">3</text><rect x="40" y="-22" width="22" height="30" rx="4" fill="#7F1D1D" stroke="#EF4444" stroke-width="2.5" stroke-dasharray="4 2"/><text x="51" y="-2" font-size="20" font-weight="900" fill="#FCA5A5" text-anchor="middle">4</text></g>`,
+    animatedSvg: (f: number) => {
+      const shake = (f % 6 < 3 ? 2 : -2);
+      const ashY = (f * 2.5) % 24;
+      return `<g>
+        <rect x="-38" y="-22" width="22" height="30" rx="4" fill="#0284C7" stroke="${S}" stroke-width="3"/>
+        <text x="-27" y="-2" font-size="20" font-weight="900" fill="#F8FAFC" text-anchor="middle">1</text>
+        <rect x="-12" y="-22" width="22" height="30" rx="4" fill="#0284C7" stroke="${S}" stroke-width="3"/>
+        <text x="-1" y="-2" font-size="20" font-weight="900" fill="#F8FAFC" text-anchor="middle">2</text>
+        <rect x="14" y="-22" width="22" height="30" rx="4" fill="#0284C7" stroke="${S}" stroke-width="3"/>
+        <text x="25" y="-2" font-size="20" font-weight="900" fill="#F8FAFC" text-anchor="middle">3</text>
+        <g transform="translate(${shake}, 0)">
+          <rect x="40" y="-22" width="22" height="30" rx="4" fill="#7F1D1D" stroke="#EF4444" stroke-width="3" stroke-dasharray="5 3"/>
+          <text x="51" y="-2" font-size="20" font-weight="900" fill="#F87171" text-anchor="middle">4</text>
+          <line x1="38" y1="-7" x2="64" y2="-7" stroke="#FFFFFF" stroke-width="2"/>
+          <circle cx="51" cy="${-22 - ashY}" r="2" fill="#EF4444" opacity="0.8"/>
+          <circle cx="58" cy="${-22 - ashY * 0.8}" r="1.5" fill="#FCA5A5" opacity="0.7"/>
+        </g>
+      </g>`;
+    },
+    tags: ["numeros", "conteo", "glitch", "estatica", "anumerico", "piraha"],
+  },
+  canasta_peces_piraha: {
+    id: "canasta_peces_piraha",
+    name: "Canasta de Corteza con Peces Amazónicos",
+    family: "naturaleza_alimentos",
+    defaultPlacement: "right",
+    svg: `<path d="M -26 -6 L 26 -6 L 20 28 L -20 28 Z" fill="#78350F" stroke="${S}" stroke-width="4"/><path d="M -24 4 L 24 4" stroke="#451A03" stroke-width="2"/><path d="M -22 16 L 22 16" stroke="#451A03" stroke-width="2"/><ellipse cx="-8" cy="-10" rx="14" ry="7" fill="#38BDF8" stroke="${S}" stroke-width="2.5"/><ellipse cx="10" cy="-8" rx="14" ry="7" fill="#0284C7" stroke="${S}" stroke-width="2.5"/><polygon points="4,-10 10,-14 10,-6" fill="#0369A1"/><polygon points="22,-8 28,-12 28,-4" fill="#0284C7"/>`,
+    animatedSvg: (f: number) => {
+      const flop = Math.sin(f / 4) * 3;
+      return `<path d="M -26 -6 L 26 -6 L 20 28 L -20 28 Z" fill="#78350F" stroke="${S}" stroke-width="4"/><path d="M -24 4 L 24 4" stroke="#451A03" stroke-width="2.5"/><path d="M -22 16 L 22 16" stroke="#451A03" stroke-width="2.5"/><g transform="rotate(${flop.toFixed(1)} -8 -10)"><ellipse cx="-8" cy="-10" rx="14" ry="7" fill="#38BDF8" stroke="${S}" stroke-width="2.5"/><circle cx="-16" cy="-11" r="1.5" fill="#000000"/><polygon points="4,-10 12,-15 12,-5" fill="#0369A1"/></g><g transform="rotate(${(-flop).toFixed(1)} 10 -8)"><ellipse cx="10" cy="-8" rx="14" ry="7" fill="#0284C7" stroke="${S}" stroke-width="2.5"/><circle cx="2" cy="-9" r="1.5" fill="#000000"/><polygon points="22,-8 30,-13 30,-3" fill="#0369A1"/></g>`;
+    },
+    tags: ["canasta", "peces", "piraha", "amazonas", "hoi", "poco", "corteza"],
+  },
+  libreta_antropologo_campo: {
+    id: "libreta_antropologo_campo",
+    name: "Libreta de Antropólogo de Campo",
+    family: "educacion_ciencia",
+    defaultPlacement: "left",
+    svg: `<rect x="-24" y="-30" width="48" height="60" rx="6" fill="#FEF08A" stroke="${S}" stroke-width="4"/><line x1="-16" y1="-18" x2="16" y2="-18" stroke="#334155" stroke-width="2.5"/><line x1="-16" y1="-8" x2="12" y2="-8" stroke="#334155" stroke-width="2.5"/><line x1="-16" y1="2" x2="16" y2="2" stroke="#334155" stroke-width="2.5"/><line x1="-16" y1="12" x2="8" y2="12" stroke="#334155" stroke-width="2.5"/><rect x="22" y="-20" width="6" height="36" rx="2" fill="#F59E0B" stroke="${S}" stroke-width="2"/>`,
+    animatedSvg: (f: number) => {
+      const penJiggle = Math.sin(f / 3) * 2;
+      return `<rect x="-24" y="-30" width="48" height="60" rx="6" fill="#FEF08A" stroke="${S}" stroke-width="4"/><line x1="-16" y1="-18" x2="16" y2="-18" stroke="#334155" stroke-width="3"/><line x1="-16" y1="-8" x2="14" y2="-8" stroke="#334155" stroke-width="3"/><line x1="-16" y1="2" x2="16" y2="2" stroke="#334155" stroke-width="3"/><line x1="-16" y1="12" x2="10" y2="12" stroke="#334155" stroke-width="3"/><g transform="translate(0, ${penJiggle.toFixed(1)})"><rect x="22" y="-20" width="6" height="36" rx="2" fill="#F59E0B" stroke="${S}" stroke-width="2.5"/><polygon points="22,16 28,16 25,24" fill="#000000"/></g>`;
+    },
+    tags: ["libreta", "antropologo", "campo", "apuntes", "linguistica", "everett"],
+  },
+  mesa_prueba_fichas_madera: {
+    id: "mesa_prueba_fichas_madera",
+    name: "Fichas de Prueba de Correspondencia Uno a Uno",
+    family: "educacion_ciencia",
+    defaultPlacement: "right",
+    svg: `<rect x="-42" y="-12" width="84" height="24" rx="6" fill="#D97706" stroke="${S}" stroke-width="3.5"/><circle cx="-28" cy="0" r="8" fill="#FDE047" stroke="${S}" stroke-width="2"/><circle cx="-10" cy="0" r="8" fill="#FDE047" stroke="${S}" stroke-width="2"/><circle cx="8" cy="0" r="8" fill="#FDE047" stroke="${S}" stroke-width="2"/><circle cx="26" cy="0" r="8" fill="#FDE047" stroke="${S}" stroke-width="2"/>`,
+    animatedSvg: (f: number) => {
+      const popGlint = 0.6 + 0.4 * Math.sin(f / 6);
+      return `<rect x="-42" y="-12" width="84" height="24" rx="6" fill="#D97706" stroke="${S}" stroke-width="3.5"/><circle cx="-28" cy="0" r="8" fill="#FDE047" stroke="${S}" stroke-width="2"/><circle cx="-10" cy="0" r="8" fill="#FDE047" stroke="${S}" stroke-width="2"/><circle cx="8" cy="0" r="8" fill="#FDE047" stroke="${S}" stroke-width="2"/><circle cx="26" cy="0" r="8" fill="#FDE047" stroke="${S}" stroke-width="2"/><circle cx="${(-28 + ((f * 3) % 60)).toFixed(1)}" cy="0" r="3" fill="#FFFFFF" opacity="${popGlint.toFixed(2)}"/>`;
+    },
+    tags: ["fichas", "madera", "experimento", "test", "correspondencia", "conteo"],
+  },
+  caja_fuerte_memoria_trabajo: {
+    id: "caja_fuerte_memoria_trabajo",
+    name: "Caja Fuerte de Memoria de Trabajo con Nube Escurridiza",
+    family: "tecnologia",
+    defaultPlacement: "overhead",
+    svg: `<rect x="-30" y="-24" width="60" height="48" rx="8" fill="#0F172A" stroke="${S}" stroke-width="4"/><rect x="-24" y="-18" width="48" height="36" rx="4" fill="#1E1B4B"/><circle cx="0" cy="0" r="10" fill="#A855F7" stroke="${S}" stroke-width="2"/><line x1="0" y1="-8" x2="0" y2="8" stroke="#FFFFFF" stroke-width="2"/><line x1="-8" y1="0" x2="8" y2="0" stroke="#FFFFFF" stroke-width="2"/><ellipse cx="26" cy="-16" rx="14" ry="8" fill="#FB7185" opacity="0.8"/>`,
+    animatedSvg: (f: number) => {
+      const cloudWobble = Math.sin(f / 4) * 4;
+      return `<rect x="-30" y="-24" width="60" height="48" rx="8" fill="#0F172A" stroke="${S}" stroke-width="4.5"/><rect x="-24" y="-18" width="48" height="36" rx="4" fill="#1E1B4B"/><circle cx="0" cy="0" r="10" fill="#A855F7" stroke="${S}" stroke-width="2.5"/><line x1="0" y1="-8" x2="0" y2="8" stroke="#FFFFFF" stroke-width="2.5"/><line x1="-8" y1="0" x2="8" y2="0" stroke="#FFFFFF" stroke-width="2.5"/><g transform="translate(${cloudWobble.toFixed(1)}, 0)"><ellipse cx="28" cy="-18" rx="16" ry="9" fill="#FB7185" opacity="0.85"/><text x="28" y="-14" font-size="10" font-weight="900" fill="#FFFFFF" text-anchor="middle">?</text></g>`;
+    },
+    tags: ["memoria", "trabajo", "caja_fuerte", "cerebro", "vapor", "simbolo"],
+  },
+  bandejas_moras_ans: {
+    id: "bandejas_moras_ans",
+    name: "Bandejas Comparativas de Moras ANS",
+    family: "naturaleza_alimentos",
+    defaultPlacement: "both",
+    svg: `<ellipse cx="-20" cy="4" rx="18" ry="10" fill="#78350F" stroke="${S}" stroke-width="3"/><circle cx="-25" cy="0" r="4" fill="#7E22CE"/><circle cx="-18" cy="-2" r="4.5" fill="#9333EA"/><circle cx="-14" cy="2" r="4" fill="#A855F7"/><ellipse cx="20" cy="4" rx="18" ry="10" fill="#78350F" stroke="${S}" stroke-width="3"/><circle cx="15" cy="0" r="4" fill="#7E22CE"/><circle cx="22" cy="-2" r="4.5" fill="#9333EA"/><circle cx="25" cy="2" r="4" fill="#A855F7"/>`,
+    animatedSvg: (f: number) => {
+      const pulse = 1 + 0.08 * Math.sin(f / 5);
+      return `<g transform="scale(${pulse.toFixed(3)})"><ellipse cx="-20" cy="4" rx="18" ry="10" fill="#78350F" stroke="${S}" stroke-width="3"/><circle cx="-25" cy="0" r="4" fill="#7E22CE"/><circle cx="-18" cy="-2" r="4.5" fill="#9333EA"/><circle cx="-14" cy="2" r="4" fill="#A855F7"/><circle cx="-21" cy="3" r="3.5" fill="#C084FC"/><ellipse cx="20" cy="4" rx="18" ry="10" fill="#78350F" stroke="${S}" stroke-width="3"/><circle cx="15" cy="0" r="4" fill="#7E22CE"/><circle cx="22" cy="-2" r="4.5" fill="#9333EA"/><circle cx="25" cy="2" r="4" fill="#A855F7"/><circle cx="18" cy="3" r="3.5" fill="#C084FC"/></g>`;
+    },
+    tags: ["bandejas", "moras", "ans", "aproximacion", "chimpance", "paloma", "bebe"],
+  },
+  engranaje_linguistico_dorado: {
+    id: "engranaje_linguistico_dorado",
+    name: "Engranaje Lingüístico Dorado de Hack Mental",
+    family: "tecnologia",
+    defaultPlacement: "overhead",
+    svg: `<circle cx="0" cy="0" r="22" fill="#F59E0B" stroke="${S}" stroke-width="4"/><circle cx="0" cy="0" r="8" fill="#FEF08A" stroke="${S}" stroke-width="3"/><polygon points="-4,-28 4,-28 3,-22 -3,-22" fill="#D97706"/><polygon points="-4,28 4,28 3,22 -3,22" fill="#D97706"/><polygon points="-28,-4 -28,4 -22,3 -22,-3" fill="#D97706"/><polygon points="28,-4 28,4 22,3 22,-3" fill="#D97706"/>`,
+    animatedSvg: (f: number) => {
+      const rot = (f * 4) % 360;
+      return `<g transform="rotate(${rot} 0 0)"><circle cx="0" cy="0" r="22" fill="#F59E0B" stroke="${S}" stroke-width="4"/><circle cx="0" cy="0" r="8" fill="#FEF08A" stroke="${S}" stroke-width="3"/>${[0, 60, 120, 180, 240, 300].map(a => `<rect x="-4" y="-30" width="8" height="10" rx="2" fill="#D97706" stroke="${S}" stroke-width="2" transform="rotate(${a})"/>`).join("")}</g>`;
+    },
+    tags: ["engranaje", "dorado", "relojería", "tecnologia", "palabra", "hack", "mente"],
+  },
+  geometria_abstracta_innombrable: {
+    id: "geometria_abstracta_innombrable",
+    name: "Geometría Multidimensional Abstracta Innombrable",
+    family: "educacion_ciencia",
+    defaultPlacement: "overhead",
+    svg: `<polygon points="0,-26 22,-6 14,24 -14,24 -22,-6" fill="#C084FC" stroke="${S}" stroke-width="3.5"/><line x1="0" y1="-26" x2="14" y2="24" stroke="#FFFFFF" stroke-width="2"/><line x1="0" y1="-26" x2="-14" y2="24" stroke="#FFFFFF" stroke-width="2"/><line x1="22" y1="-6" x2="-22" y2="-6" stroke="#FFFFFF" stroke-width="2"/><circle cx="0" cy="0" r="5" fill="#38BDF8"/>`,
+    animatedSvg: (f: number) => {
+      const spin = (f * 2) % 360;
+      const glow = 0.7 + 0.3 * Math.sin(f / 6);
+      return `<g transform="rotate(${spin} 0 0) scale(${glow.toFixed(3)})"><polygon points="0,-26 22,-6 14,24 -14,24 -22,-6" fill="#C084FC" stroke="${S}" stroke-width="4"/><line x1="0" y1="-26" x2="14" y2="24" stroke="#FFFFFF" stroke-width="2.5"/><line x1="0" y1="-26" x2="-14" y2="24" stroke="#FFFFFF" stroke-width="2.5"/><line x1="22" y1="-6" x2="-22" y2="-6" stroke="#FFFFFF" stroke-width="2.5"/><circle cx="0" cy="0" r="6" fill="#38BDF8"/></g>`;
+    },
+    tags: ["geometria", "abstracta", "tesseract", "innombrable", "cosmos", "filosofia"],
+  },
+  canica_solar_incandescente: {
+    id: "canica_solar_incandescente",
+    name: "Canica Solar Incandescente 2 cm",
+    family: "educacion_ciencia",
+    defaultPlacement: "right",
+    svg: `<circle cx="0" cy="0" r="22" fill="#FDE047" stroke="${S}" stroke-width="4"/><circle cx="0" cy="0" r="16" fill="#F59E0B"/><circle cx="-6" cy="-6" r="6" fill="#FFFFFF" opacity="0.9"/><circle cx="6" cy="6" r="4" fill="#FEF08A"/>`,
+    animatedSvg: (f: number) => {
+      const glow = 1 + 0.08 * Math.sin(f / 5);
+      const flare = Math.sin(f / 3) * 3;
+      return `<g transform="scale(${glow.toFixed(3)})">
+        <circle cx="0" cy="0" r="26" fill="#FEF08A" opacity="0.4"/>
+        <circle cx="0" cy="0" r="22" fill="#FDE047" stroke="${S}" stroke-width="4.5"/>
+        <circle cx="0" cy="0" r="16" fill="#F59E0B"/>
+        <circle cx="-6" cy="-6" r="6" fill="#FFFFFF" opacity="0.95"/>
+        <circle cx="${(6 + flare).toFixed(1)}" cy="${(6 - flare).toFixed(1)}" r="4.5" fill="#FEF08A"/>
+      </g>`;
+    },
+    tags: ["canica", "solar", "sol", "escala", "dorada", "vidrio", "luz"],
+  },
+  lamina_escolar_sistema_solar: {
+    id: "lamina_escolar_sistema_solar",
+    name: "Lámina Escolar Arrugada Sistema Solar",
+    family: "educacion_ciencia",
+    defaultPlacement: "left",
+    svg: `<polygon points="-26,-30 26,-26 22,30 -28,26" fill="#F8FAFC" stroke="${S}" stroke-width="4"/><circle cx="-12" cy="0" r="8" fill="#F59E0B"/><circle cx="2" cy="0" r="4" fill="#38BDF8"/><circle cx="12" cy="0" r="6" fill="#D97706"/><line x1="-20" y1="-10" x2="20" y2="10" stroke="#EF4444" stroke-width="3"/>`,
+    animatedSvg: (f: number) => {
+      const crumple = (f * 2) % 10 < 5 ? 1 : 0.96;
+      return `<g transform="scale(${crumple})">
+        <polygon points="-26,-30 26,-26 22,30 -28,26" fill="#F8FAFC" stroke="${S}" stroke-width="4.5"/>
+        <circle cx="-12" cy="0" r="8" fill="#F59E0B"/>
+        <circle cx="2" cy="0" r="4" fill="#38BDF8"/>
+        <circle cx="12" cy="0" r="6" fill="#D97706"/>
+        <line x1="-22" y1="-14" x2="22" y2="14" stroke="#EF4444" stroke-width="4"/>
+        <line x1="-22" y1="14" x2="22" y2="-14" stroke="#EF4444" stroke-width="4"/>
+      </g>`;
+    },
+    tags: ["lamina", "escolar", "falso", "arrugado", "planetas", "papel"],
+  },
+  cinta_metrica_extendida: {
+    id: "cinta_metrica_extendida",
+    name: "Cinta Métrica Retráctil 2.15 Metros",
+    family: "educacion_ciencia",
+    defaultPlacement: "both",
+    svg: `<rect x="-18" y="-14" width="36" height="28" rx="6" fill="#EF4444" stroke="${S}" stroke-width="4"/><circle cx="0" cy="0" r="6" fill="#1E293B"/><rect x="18" y="-4" width="34" height="8" rx="2" fill="#FACC15" stroke="${S}" stroke-width="2"/><line x1="26" y1="-4" x2="26" y2="4" stroke="#000000" stroke-width="2"/><line x1="36" y1="-4" x2="36" y2="4" stroke="#000000" stroke-width="2"/>`,
+    animatedSvg: (f: number) => {
+      const ext = 30 + Math.sin(f / 4) * 8;
+      return `<rect x="-18" y="-14" width="36" height="28" rx="6" fill="#EF4444" stroke="${S}" stroke-width="4.5"/>
+        <circle cx="0" cy="0" r="6" fill="#1E293B"/>
+        <rect x="18" y="-5" width="${ext.toFixed(1)}" height="10" rx="2" fill="#FACC15" stroke="${S}" stroke-width="2.5"/>
+        <line x1="28" y1="-5" x2="28" y2="5" stroke="#000000" stroke-width="2.5"/>
+        <line x1="38" y1="-5" x2="38" y2="5" stroke="#000000" stroke-width="2.5"/>`;
+    },
+    tags: ["cinta", "metrica", "medir", "distancia", "metros", "escala"],
+  },
+  lupa_inspeccion_tierra_mota: {
+    id: "lupa_inspeccion_tierra_mota",
+    name: "Lupa de Inspección con Mota de la Tierra",
+    family: "educacion_ciencia",
+    defaultPlacement: "right",
+    svg: `<circle cx="-4" cy="-6" r="24" fill="#E0F2FE" stroke="${S}" stroke-width="4"/><circle cx="-4" cy="-6" r="2" fill="#38BDF8"/><line x1="13" y1="11" x2="32" y2="30" stroke="#78350F" stroke-width="7" stroke-linecap="round"/>`,
+    animatedSvg: (f: number) => {
+      const pulse = 1 + 0.05 * Math.sin(f / 4);
+      return `<circle cx="-4" cy="-6" r="24" fill="#E0F2FE" stroke="${S}" stroke-width="4.5"/>
+        <circle cx="-4" cy="-6" r="20" fill="none" stroke="#38BDF8" stroke-width="1.5" stroke-dasharray="4 4"/>
+        <g transform="scale(${pulse.toFixed(3)})"><circle cx="-4" cy="-6" r="3" fill="#0284C7"/><circle cx="-4" cy="-6" r="1.5" fill="#22C55E"/></g>
+        <line x1="13" y1="11" x2="34" y2="32" stroke="#78350F" stroke-width="8" stroke-linecap="round"/>`;
+    },
+    tags: ["lupa", "mota", "tierra", "macro", "polvo", "microscopico"],
+  },
+  planetas_semilla_alfiler: {
+    id: "planetas_semilla_alfiler",
+    name: "Planetas a Escala Semilla y Alfiler",
+    family: "educacion_ciencia",
+    defaultPlacement: "left",
+    svg: `<ellipse cx="-12" cy="0" rx="6" ry="10" fill="#D97706" stroke="${S}" stroke-width="2.5"/><line x1="12" y1="-14" x2="12" y2="14" stroke="#64748B" stroke-width="2.5"/><circle cx="12" cy="-14" r="4" fill="#0284C7" stroke="${S}" stroke-width="2"/>`,
+    animatedSvg: (f: number) => {
+      const floatY = Math.sin(f / 5) * 3;
+      return `<g transform="translate(0, ${floatY.toFixed(1)})">
+        <ellipse cx="-12" cy="0" rx="6" ry="10" fill="#D97706" stroke="${S}" stroke-width="3"/>
+        <line x1="12" y1="-14" x2="12" y2="14" stroke="#64748B" stroke-width="3"/>
+        <circle cx="12" cy="-14" r="4.5" fill="#0284C7" stroke="${S}" stroke-width="2.5"/>
+      </g>`;
+    },
+    tags: ["planetas", "semilla", "alfiler", "jupiter", "neptuno", "escala"],
+  },
+  binoculares_radar_vacio: {
+    id: "binoculares_radar_vacio",
+    name: "Binoculares de Escaneo Cósmico Vacío",
+    family: "tecnologia",
+    defaultPlacement: "overhead",
+    svg: `<rect x="-24" y="-12" width="20" height="24" rx="4" fill="#1E293B" stroke="${S}" stroke-width="3.5"/><rect x="4" y="-12" width="20" height="24" rx="4" fill="#1E293B" stroke="${S}" stroke-width="3.5"/><rect x="-4" y="-6" width="8" height="12" rx="2" fill="#64748B"/><circle cx="-14" cy="0" r="6" fill="#38BDF8"/><circle cx="14" cy="0" r="6" fill="#38BDF8"/>`,
+    animatedSvg: (f: number) => {
+      const scanGlint = 0.5 + 0.5 * Math.sin(f / 4);
+      return `<rect x="-24" y="-12" width="20" height="24" rx="4" fill="#1E293B" stroke="${S}" stroke-width="4"/>
+        <rect x="4" y="-12" width="20" height="24" rx="4" fill="#1E293B" stroke="${S}" stroke-width="4"/>
+        <rect x="-4" y="-6" width="8" height="12" rx="2" fill="#64748B"/>
+        <circle cx="-14" cy="0" r="6" fill="#38BDF8" opacity="${scanGlint.toFixed(2)}"/>
+        <circle cx="14" cy="0" r="6" fill="#38BDF8" opacity="${scanGlint.toFixed(2)}"/>`;
+    },
+    tags: ["binoculares", "radar", "vacio", "exploracion", "interespacial", "optico"],
+  },
+  mapa_carretera_570km: {
+    id: "mapa_carretera_570km",
+    name: "Tablet GPS Ruta Carretera 570 KM",
+    family: "tecnologia",
+    defaultPlacement: "left",
+    svg: `<rect x="-26" y="-20" width="52" height="40" rx="6" fill="#0F172A" stroke="${S}" stroke-width="3.5"/><rect x="-22" y="-16" width="44" height="32" rx="4" fill="#1E293B"/><path d="M -16 10 Q 0 -10 16 -6" fill="none" stroke="#EF4444" stroke-width="3"/><circle cx="16" cy="-6" r="3" fill="#FEF08A"/>`,
+    animatedSvg: (f: number) => {
+      const blink = (f % 12 < 6);
+      return `<rect x="-26" y="-20" width="52" height="40" rx="6" fill="#0F172A" stroke="${S}" stroke-width="4"/>
+        <rect x="-22" y="-16" width="44" height="32" rx="4" fill="#1E293B"/>
+        <path d="M -16 10 Q 0 -10 16 -6" fill="none" stroke="#EF4444" stroke-width="3.5"/>
+        <circle cx="-16" cy="10" r="3" fill="#F59E0B"/>
+        <circle cx="16" cy="-6" r="3.5" fill="${blink ? '#22C55E' : '#EF4444'}"/>`;
+    },
+    tags: ["mapa", "carretera", "570km", "gps", "proxima", "distancia", "auto"],
+  },
+  auto_viaje_interestelar: {
+    id: "auto_viaje_interestelar",
+    name: "Vehículo de Viaje Interestelar por Autopista",
+    family: "tecnologia",
+    defaultPlacement: "right",
+    svg: `<path d="M -26 8 L -20 -4 L -4 -12 L 14 -12 L 24 -4 L 28 8 Z" fill="#EF4444" stroke="${S}" stroke-width="3.5"/><polygon points="-16 -4 -4 -10 12 -10 18 -4" fill="#38BDF8"/><circle cx="-14" cy="8" r="7" fill="#1E293B" stroke="${S}" stroke-width="2.5"/><circle cx="16" cy="8" r="7" fill="#1E293B" stroke="${S}" stroke-width="2.5"/>`,
+    animatedSvg: (f: number) => {
+      const wobble = Math.sin(f / 2) * 1.5;
+      return `<g transform="translate(0, ${wobble.toFixed(1)})">
+        <path d="M -26 8 L -20 -4 L -4 -12 L 14 -12 L 24 -4 L 28 8 Z" fill="#EF4444" stroke="${S}" stroke-width="4"/>
+        <polygon points="-16 -4 -4 -10 12 -10 18 -4" fill="#38BDF8"/>
+        <circle cx="-14" cy="8" r="7" fill="#1E293B" stroke="${S}" stroke-width="3"/>
+        <circle cx="16" cy="8" r="7" fill="#1E293B" stroke="${S}" stroke-width="3"/>
+        <polygon points="28 2 34 0 34 6 28 4" fill="#FEF08A" opacity="0.8"/>
+      </g>`;
+    },
+    tags: ["auto", "coche", "autopista", "viaje", "carretera", "570km"],
+  },
+  // ==========================================
+  // PROPS: EL DEMONIO DE MAXWELL Y EL PRINCIPIO DE LANDAUER
+  // ==========================================
+  taza_cafe_vapor_termodinamico: {
+    id: "taza_cafe_vapor_termodinamico",
+    name: "Taza de Café con Vapor Termodinámico",
+    family: "naturaleza_alimentos",
+    defaultPlacement: "right",
+    svg: `<ellipse cx="0" cy="18" rx="26" ry="7" fill="#CBD5E1" stroke="${S}" stroke-width="3"/><rect x="-18" y="-14" width="36" height="28" rx="6" fill="#F8FAFC" stroke="${S}" stroke-width="4"/><path d="M 18 -8 Q 28 -8 28 2 Q 28 10 18 10" fill="none" stroke="${S}" stroke-width="4"/><ellipse cx="0" cy="-14" rx="18" ry="6" fill="#78350F" stroke="${S}" stroke-width="3"/>`,
+    animatedSvg: (f: number) => {
+      const s1 = Math.sin(f / 4) * 4;
+      const s2 = Math.cos(f / 5) * 5;
+      return `<ellipse cx="0" cy="18" rx="26" ry="7" fill="#CBD5E1" stroke="${S}" stroke-width="3.5"/>
+        <rect x="-18" y="-14" width="36" height="28" rx="6" fill="#F8FAFC" stroke="${S}" stroke-width="4"/>
+        <path d="M 18 -8 Q 28 -8 28 2 Q 28 10 18 10" fill="none" stroke="${S}" stroke-width="4"/>
+        <ellipse cx="0" cy="-14" rx="18" ry="6" fill="#78350F" stroke="${S}" stroke-width="3.5"/>
+        <path d="M -8 -18 Q ${-12 + s1} -28 ${-6 + s1} -38" fill="none" stroke="#94A3B8" stroke-width="3" stroke-linecap="round" opacity="0.75"/>
+        <path d="M 4 -18 Q ${8 + s2} -30 ${2 + s2} -42" fill="none" stroke="#94A3B8" stroke-width="3" stroke-linecap="round" opacity="0.6"/>`;
+    },
+    tags: ["cafe", "taza", "vapor", "calor", "termodinamica", "entropia"],
+  },
+  sello_segunda_ley_prohibido: {
+    id: "sello_segunda_ley_prohibido",
+    name: "Sello Oficial Segunda Ley Termodinámica",
+    family: "educacion_ciencia",
+    defaultPlacement: "overhead",
+    svg: `<rect x="-30" y="-18" width="60" height="36" rx="6" fill="#DC2626" stroke="${S}" stroke-width="4"/><rect x="-4" y="-36" width="8" height="20" rx="3" fill="#78350F" stroke="${S}" stroke-width="3"/><circle cx="0" cy="-36" r="8" fill="#B45309" stroke="${S}" stroke-width="3"/><text x="-24" y="-2" fill="#FFFFFF" font-size="8" font-weight="900" font-family="'Arial Black'">2ª LEY</text><text x="-24" y="10" fill="#FEF08A" font-size="7" font-weight="900" font-family="'Arial Black'">PROHIBIDO</text>`,
+    animatedSvg: (f: number) => {
+      const stampPulse = 1.0 + Math.sin(f / 4) * 0.05;
+      return `<g transform="scale(${stampPulse.toFixed(3)})">
+        <rect x="-32" y="-20" width="64" height="40" rx="6" fill="#DC2626" stroke="${S}" stroke-width="4.5"/>
+        <rect x="-5" y="-38" width="10" height="20" rx="3" fill="#78350F" stroke="${S}" stroke-width="3.5"/>
+        <circle cx="0" cy="-38" r="9" fill="#B45309" stroke="${S}" stroke-width="3.5"/>
+        <text x="-26" y="-3" fill="#FFFFFF" font-size="9" font-weight="900" font-family="'Arial Black'">2ª LEY</text>
+        <text x="-26" y="11" fill="#FEF08A" font-size="8" font-weight="900" font-family="'Arial Black'">PROHIBIDO</text>
+      </g>`;
+    },
+    tags: ["sello", "segunda_ley", "termodinamica", "prohibido", "clausius", "fisica"],
+  },
+  cuernos_demonio_utileria: {
+    id: "cuernos_demonio_utileria",
+    name: "Cuernos y Tridente de Demonio Maxwell",
+    family: "reacciones_humor",
+    defaultPlacement: "overhead",
+    svg: `<path d="M -18 -8 Q -24 -24 -32 -26 Q -22 -16 -12 -12" fill="#DC2626" stroke="${S}" stroke-width="3.5"/><path d="M 18 -8 Q 24 -24 32 -26 Q 22 -16 12 -12" fill="#DC2626" stroke="${S}" stroke-width="3.5"/><ellipse cx="0" cy="-6" rx="22" ry="4" fill="none" stroke="${S}" stroke-width="3"/>`,
+    animatedSvg: (f: number) => {
+      const glow = Math.sin(f / 6) * 3;
+      return `<path d="M -18 -8 Q -24 ${-24 + glow} -32 -26 Q -22 -16 -12 -12" fill="#DC2626" stroke="${S}" stroke-width="4"/>
+        <path d="M 18 -8 Q 24 ${-24 - glow} 32 -26 Q 22 -16 12 -12" fill="#DC2626" stroke="${S}" stroke-width="4"/>
+        <ellipse cx="0" cy="-6" rx="22" ry="4" fill="none" stroke="${S}" stroke-width="3.5"/>
+        <circle cx="-28" cy="-24" r="2" fill="#FEF08A"/>
+        <circle cx="28" cy="-24" r="2" fill="#FEF08A"/>`;
+    },
+    tags: ["cuernos", "demonio", "maxwell", "utileria", "rojo", "disfraz"],
+  },
+  caja_gas_maxwell_particulas: {
+    id: "caja_gas_maxwell_particulas",
+    name: "Caja de Gas de Maxwell con Partículas",
+    family: "educacion_ciencia",
+    defaultPlacement: "overhead",
+    svg: `<rect x="-36" y="-24" width="72" height="48" rx="4" fill="#F8FAFC" fill-opacity="0.8" stroke="${S}" stroke-width="4"/><line x1="0" y1="-24" x2="0" y2="24" stroke="${S}" stroke-width="4"/><rect x="-4" y="-8" width="8" height="16" fill="#64748B" stroke="${S}" stroke-width="2"/><circle cx="-20" cy="-8" r="4" fill="#EF4444"/><circle cx="20" cy="8" r="4" fill="#3B82F6"/>`,
+    animatedSvg: (f: number) => {
+      const rx1 = -24 + Math.sin(f * 0.25) * 8;
+      const ry1 = -6 + Math.cos(f * 0.3) * 12;
+      const bx1 = 20 + Math.cos(f * 0.15) * 8;
+      const by1 = 6 + Math.sin(f * 0.18) * 10;
+      const gateOpen = Math.sin(f * 0.2) > 0.4 ? -14 : -4;
+      return `<rect x="-38" y="-26" width="76" height="52" rx="5" fill="#0F172A" fill-opacity="0.85" stroke="${S}" stroke-width="4.5"/>
+        <line x1="0" y1="-26" x2="0" y2="26" stroke="${S}" stroke-width="4.5"/>
+        <rect x="-3" y="${gateOpen}" width="6" height="16" fill="#FACC15" stroke="${S}" stroke-width="2"/>
+        <circle cx="${rx1.toFixed(1)}" cy="${ry1.toFixed(1)}" r="4.5" fill="#EF4444" stroke="#000000" stroke-width="1.5"/>
+        <circle cx="${bx1.toFixed(1)}" cy="${by1.toFixed(1)}" r="4.5" fill="#38BDF8" stroke="#000000" stroke-width="1.5"/>`;
+    },
+    tags: ["caja", "gas", "maxwell", "particulas", "moleculas", "compuerta"],
+  },
+  palanca_compuerta_maxwell: {
+    id: "palanca_compuerta_maxwell",
+    name: "Palanca Mecánica de la Compuerta",
+    family: "tecnologia",
+    defaultPlacement: "right",
+    svg: `<rect x="-14" y="10" width="28" height="14" rx="3" fill="#334155" stroke="${S}" stroke-width="3.5"/><line x1="0" y1="10" x2="0" y2="-22" stroke="#94A3B8" stroke-width="4.5" stroke-linecap="round"/><circle cx="0" cy="-22" r="7" fill="#DC2626" stroke="${S}" stroke-width="3"/>`,
+    animatedSvg: (f: number) => {
+      const leverAngle = Math.sin(f * 0.3) * 22;
+      return `<rect x="-16" y="10" width="32" height="14" rx="3" fill="#334155" stroke="${S}" stroke-width="4"/>
+        <g transform="rotate(${leverAngle.toFixed(1)} 0 10)">
+          <line x1="0" y1="10" x2="0" y2="-24" stroke="#CBD5E1" stroke-width="5" stroke-linecap="round"/>
+          <circle cx="0" cy="-24" r="8" fill="#DC2626" stroke="${S}" stroke-width="3.5"/>
+        </g>`;
+    },
+    tags: ["palanca", "mecanismo", "compuerta", "demonio", "control", "rapidez"],
+  },
+  termometros_contraste_maxwell: {
+    id: "termometros_contraste_maxwell",
+    name: "Termómetros en Contraste Calor vs Frío",
+    family: "educacion_ciencia",
+    defaultPlacement: "overhead",
+    svg: `<g transform="translate(-16, 0)"><rect x="-5" y="-24" width="10" height="34" rx="4" fill="#FFFFFF" stroke="${S}" stroke-width="3"/><rect x="-3" y="-12" width="6" height="22" rx="2" fill="#EF4444"/><circle cx="0" cy="14" r="8" fill="#EF4444" stroke="${S}" stroke-width="3"/></g>
+      <g transform="translate(16, 0)"><rect x="-5" y="-24" width="10" height="34" rx="4" fill="#FFFFFF" stroke="${S}" stroke-width="3"/><rect x="-3" y="2" width="6" height="8" rx="2" fill="#38BDF8"/><circle cx="0" cy="14" r="8" fill="#38BDF8" stroke="${S}" stroke-width="3"/></g>`,
+    animatedSvg: (f: number) => {
+      const bubble = Math.sin(f / 3) * 2;
+      return `<g transform="translate(-18, 0)">
+        <rect x="-6" y="-26" width="12" height="38" rx="5" fill="#FFFFFF" stroke="${S}" stroke-width="3.5"/>
+        <rect x="-4" y="${-22 + bubble}" width="8" height="${32 - bubble}" rx="2" fill="#EF4444"/>
+        <circle cx="0" cy="16" r="9" fill="#EF4444" stroke="${S}" stroke-width="3.5"/>
+        <text x="-4" y="-30" fill="#EF4444" font-size="9" font-weight="900">100°</text>
+      </g>
+      <g transform="translate(18, 0)">
+        <rect x="-6" y="-26" width="12" height="38" rx="5" fill="#FFFFFF" stroke="${S}" stroke-width="3.5"/>
+        <rect x="-4" y="6" width="8" height="6" rx="2" fill="#38BDF8"/>
+        <circle cx="0" cy="16" r="9" fill="#38BDF8" stroke="${S}" stroke-width="3.5"/>
+        <text x="-2" y="-30" fill="#38BDF8" font-size="9" font-weight="900">0°</text>
+      </g>`;
+    },
+    tags: ["termometro", "calor", "frio", "gradiente", "maxwell", "100grados"],
+  },
+  memoria_saturada_bits_landauer: {
+    id: "memoria_saturada_bits_landauer",
+    name: "Memoria Saturada y Bits de Información",
+    family: "tecnologia",
+    defaultPlacement: "overhead",
+    svg: `<rect x="-30" y="-20" width="60" height="40" rx="6" fill="#0F172A" stroke="${S}" stroke-width="4"/><rect x="-24" y="-14" width="48" height="12" rx="3" fill="#DC2626"/><text x="-20" y="-5" fill="#FFFFFF" font-size="7" font-weight="900">FULL 100%</text><text x="-24" y="10" fill="#22C55E" font-size="9" font-weight="900" font-family="monospace">1011001</text>`,
+    animatedSvg: (f: number) => {
+      const alertBlink = (f % 8 < 4);
+      return `<rect x="-32" y="-22" width="64" height="44" rx="6" fill="#0F172A" stroke="${S}" stroke-width="4.5"/>
+        <rect x="-26" y="-16" width="52" height="14" rx="3" fill="${alertBlink ? '#DC2626' : '#991B1B'}"/>
+        <text x="-22" y="-6" fill="#FFFFFF" font-size="8" font-weight="900">FULL 100%</text>
+        <text x="-26" y="12" fill="#22C55E" font-size="10" font-weight="900" font-family="monospace">${(f % 2 === 0) ? '1011001' : '0110110'}</text>`;
+    },
+    tags: ["memoria", "bits", "landauer", "storage", "sobrecarga", "computacion"],
+  },
+  goma_borrar_landauer_chispas: {
+    id: "goma_borrar_landauer_chispas",
+    name: "Goma de Borrar Térmica de Landauer",
+    family: "educacion_ciencia",
+    defaultPlacement: "right",
+    svg: `<polygon points="-24,-14 16,-14 24,14 -16,14" fill="#3B82F6" stroke="${S}" stroke-width="4"/><polygon points="-24,-14 -4,-14 4,14 -16,14" fill="#EF4444" stroke="${S}" stroke-width="3"/><text x="-12" y="4" fill="#FFFFFF" font-size="7" font-weight="900">ERASE</text>`,
+    animatedSvg: (f: number) => {
+      const scrub = Math.sin(f * 0.4) * 6;
+      return `<g transform="translate(${scrub.toFixed(1)}, 0)">
+        <polygon points="-26,-16 18,-16 26,16 -18,16" fill="#3B82F6" stroke="${S}" stroke-width="4.5"/>
+        <polygon points="-26,-16 -4,-16 4,16 -18,16" fill="#EF4444" stroke="${S}" stroke-width="3.5"/>
+        <text x="-12" y="4" fill="#FFFFFF" font-size="8" font-weight="900">DELETE</text>
+        <circle cx="24" cy="14" r="2.5" fill="#F59E0B"/>
+        <circle cx="28" cy="10" r="1.5" fill="#FEF08A"/>
+        <circle cx="20" cy="18" r="2" fill="#EF4444"/>
+      </g>`;
+    },
+    tags: ["goma", "borrar", "landauer", "chispas", "calor", "delete", "entropia"],
+  },
+  teclado_tecla_delete_fuego: {
+    id: "teclado_tecla_delete_fuego",
+    name: "Teclado con Tecla Delete en Llamas",
+    family: "tecnologia",
+    defaultPlacement: "right",
+    svg: `<rect x="-26" y="-16" width="52" height="32" rx="5" fill="#1E293B" stroke="${S}" stroke-width="4"/><rect x="-18" y="-10" width="36" height="20" rx="3" fill="#DC2626" stroke="${S}" stroke-width="2.5"/><text x="-14" y="4" fill="#FFFFFF" font-size="8" font-weight="900">DELETE</text>`,
+    animatedSvg: (f: number) => {
+      const flameWobble = Math.sin(f / 2) * 3;
+      return `<rect x="-28" y="-18" width="56" height="36" rx="6" fill="#1E293B" stroke="${S}" stroke-width="4.5"/>
+        <rect x="-20" y="-12" width="40" height="24" rx="4" fill="#DC2626" stroke="${S}" stroke-width="3"/>
+        <text x="-16" y="4" fill="#FFFFFF" font-size="9" font-weight="900">DELETE</text>
+        <path d="M 6 -12 Q ${10 + flameWobble} -28 16 -16 Q ${12 - flameWobble} -22 6 -12 Z" fill="#F59E0B"/>
+        <circle cx="12" cy="-20" r="2" fill="#FEF08A"/>`;
+    },
+    tags: ["teclado", "delete", "fuego", "landauer", "tecla", "entropia", "informacion"],
+  },
+  // ==========================================
+  // PROPS: POR QUÉ EL TIEMPO VUELA CUANDO CRECES
+  // ==========================================
+  barquito_papel_charco: {
+    id: "barquito_papel_charco",
+    name: "Barquito de Papel en Charco Dorado",
+    family: "naturaleza_alimentos",
+    defaultPlacement: "right",
+    svg: `<ellipse cx="0" cy="14" rx="32" ry="8" fill="#38BDF8" fill-opacity="0.4" stroke="${S}" stroke-width="3"/><polygon points="-24,10 24,10 16,18 -16,18" fill="#F8FAFC" stroke="${S}" stroke-width="3.5"/><polygon points="-12,10 0,-14 0,10" fill="#F1F5F9" stroke="${S}" stroke-width="3"/><polygon points="0,10 0,-14 14,10" fill="#E2E8F0" stroke="${S}" stroke-width="3"/>`,
+    animatedSvg: (f: number) => {
+      const bob = Math.sin(f / 4) * 3;
+      const tilt = Math.sin(f / 5) * 5;
+      return `<ellipse cx="0" cy="16" rx="34" ry="9" fill="#38BDF8" fill-opacity="0.45" stroke="${S}" stroke-width="3.5"/>
+        <g transform="translate(0, ${bob.toFixed(1)}) rotate(${tilt.toFixed(1)} 0 10)">
+          <polygon points="-26,10 26,10 18,18 -18,18" fill="#F8FAFC" stroke="${S}" stroke-width="4"/>
+          <polygon points="-14,10 0,-16 0,10" fill="#F1F5F9" stroke="${S}" stroke-width="3.5"/>
+          <polygon points="0,10 0,-16 16,10" fill="#E2E8F0" stroke="${S}" stroke-width="3.5"/>
+          <circle cx="18" cy="12" r="2" fill="#38BDF8"/>
+        </g>`;
+    },
+    tags: ["barquito", "papel", "charco", "infancia", "juego", "verano", "origami"],
+  },
+  calendario_ventisca_reloj_aspas: {
+    id: "calendario_ventisca_reloj_aspas",
+    name: "Calendario en Ventisca y Reloj Acelerado",
+    family: "educacion_ciencia",
+    defaultPlacement: "overhead",
+    svg: `<rect x="-24" y="-20" width="34" height="40" rx="4" fill="#F8FAFC" stroke="${S}" stroke-width="3.5"/><rect x="-24" y="-20" width="34" height="12" fill="#DC2626"/><circle cx="20" cy="0" r="18" fill="#F8FAFC" stroke="${S}" stroke-width="3.5"/><line x1="20" y1="0" x2="20" y2="-12" stroke="${S}" stroke-width="3"/><line x1="20" y1="0" x2="30" y2="0" stroke="#DC2626" stroke-width="2.5"/>`,
+    animatedSvg: (f: number) => {
+      const handRot = (f * 18) % 360;
+      const sheetFly = (f * 8) % 60;
+      return `<rect x="-26" y="-22" width="36" height="44" rx="4" fill="#F8FAFC" stroke="${S}" stroke-width="4"/>
+        <rect x="-26" y="-22" width="36" height="14" fill="#DC2626"/>
+        <text x="-20" y="-12" fill="#FFFFFF" font-size="8" font-weight="900">2026</text>
+        <g transform="translate(${-sheetFly}, ${-sheetFly * 0.5}) rotate(${-sheetFly * 2})">
+          <rect x="-10" y="-8" width="16" height="14" rx="2" fill="#FEF08A" stroke="${S}" stroke-width="2" opacity="0.8"/>
+        </g>
+        <g transform="translate(22, 0)">
+          <circle cx="0" cy="0" r="20" fill="#F8FAFC" stroke="${S}" stroke-width="4"/>
+          <circle cx="0" cy="0" r="3" fill="#000000"/>
+          <g transform="rotate(${handRot})">
+            <line x1="0" y1="0" x2="0" y2="-15" stroke="#000000" stroke-width="3.5" stroke-linecap="round"/>
+          </g>
+          <g transform="rotate(${handRot * 12})">
+            <line x1="0" y1="0" x2="16" y2="0" stroke="#DC2626" stroke-width="2.5" stroke-linecap="round"/>
+          </g>
+        </g>`;
+    },
+    tags: ["calendario", "reloj", "huracan", "tiempo", "aceleracion", "edad", "viento"],
+  },
+  pastel_cinco_rebanadas_20pct: {
+    id: "pastel_cinco_rebanadas_20pct",
+    name: "Pastel Circular de 5 Años con 20% Gigante",
+    family: "educacion_ciencia",
+    defaultPlacement: "overhead",
+    svg: `<circle cx="0" cy="0" r="28" fill="#F8FAFC" stroke="${S}" stroke-width="4"/><path d="M 0,0 L 28,0 A 28,28 0 0,1 8,26 Z" fill="#F59E0B" stroke="${S}" stroke-width="3"/><text x="4" y="16" fill="#000000" font-size="9" font-weight="900">20%</text>`,
+    animatedSvg: (f: number) => {
+      const slicePop = 1.0 + Math.sin(f / 4) * 0.06;
+      return `<circle cx="0" cy="0" r="30" fill="#E2E8F0" stroke="${S}" stroke-width="4.5"/>
+        <line x1="0" y1="0" x2="0" y2="-30" stroke="${S}" stroke-width="3"/>
+        <line x1="0" y1="0" x2="28" y2="-10" stroke="${S}" stroke-width="3"/>
+        <line x1="0" y1="0" x2="18" y2="24" stroke="${S}" stroke-width="3"/>
+        <line x1="0" y1="0" x2="-18" y2="24" stroke="${S}" stroke-width="3"/>
+        <line x1="0" y1="0" x2="-28" y2="-10" stroke="${S}" stroke-width="3"/>
+        <g transform="scale(${slicePop.toFixed(3)})">
+          <path d="M 0,0 L 28,-10 A 30,30 0 0,1 18,24 Z" fill="#F59E0B" stroke="${S}" stroke-width="3.5"/>
+          <circle cx="16" cy="6" r="3" fill="#FEF08A"/>
+          <text x="6" y="10" fill="#020617" font-size="11" font-weight="900" fontFamily="'Arial Black'">20%</text>
+        </g>`;
+    },
+    tags: ["pastel", "proporcion", "20porciento", "5anos", "infancia", "fraccion", "tiempo"],
+  },
+  reloj_arena_lento_granos_oro: {
+    id: "reloj_arena_lento_granos_oro",
+    name: "Reloj de Arena Lento con Granos de Oro",
+    family: "educacion_ciencia",
+    defaultPlacement: "right",
+    svg: `<polygon points="-18,-26 18,-26 4,-2 18,22 -18,22 -4,-2" fill="#E0F2FE" stroke="${S}" stroke-width="4"/><line x1="-22" y1="-26" x2="22" y2="-26" stroke="${S}" stroke-width="4.5"/><line x1="-22" y1="22" x2="22" y2="22" stroke="${S}" stroke-width="4.5"/><polygon points="-12,-20 12,-20 0,-4" fill="#FACC15"/><circle cx="0" cy="8" r="2.5" fill="#F59E0B"/><polygon points="-14,20 14,20 0,14" fill="#FACC15"/>`,
+    animatedSvg: (f: number) => {
+      const dropY = (f * 2) % 18;
+      return `<polygon points="-20,-28 20,-28 5,-2 20,24 -20,24 -5,-2" fill="#E0F2FE" fill-opacity="0.8" stroke="${S}" stroke-width="4.5"/>
+        <line x1="-24" y1="-28" x2="24" y2="-28" stroke="#78350F" stroke-width="6" stroke-linecap="round"/>
+        <line x1="-24" y1="24" x2="24" y2="24" stroke="#78350F" stroke-width="6" stroke-linecap="round"/>
+        <polygon points="-14,-22 14,-22 0,-4" fill="#FACC15"/>
+        <circle cx="0" cy="${-2 + dropY}" r="3" fill="#D97706" stroke="#000000" stroke-width="1"/>
+        <polygon points="-16,22 16,22 0,10" fill="#FACC15"/>
+        <circle cx="-6" cy="18" r="1.5" fill="#FEF08A"/>
+        <circle cx="6" cy="18" r="1.5" fill="#FEF08A"/>`;
+    },
+    tags: ["reloj_arena", "lento", "grano_a_grano", "oro", "infancia", "eterno", "tiempo"],
+  },
+  pastel_cincuenta_rebanadas_2pct: {
+    id: "pastel_cincuenta_rebanadas_2pct",
+    name: "Pastel de 50 Rodajas Finas con 2% Insignificante",
+    family: "educacion_ciencia",
+    defaultPlacement: "overhead",
+    svg: `<circle cx="0" cy="0" r="30" fill="#94A3B8" stroke="${S}" stroke-width="4"/><line x1="0" y1="0" x2="4" y2="-30" stroke="#DC2626" stroke-width="3"/><text x="8" y="-12" fill="#DC2626" font-size="9" font-weight="900">2%</text>`,
+    animatedSvg: (f: number) => {
+      const wobble = Math.sin(f / 3) * 2;
+      const degs = [0, 15, 30, 45, 60, 75, 90, 105, 120, 135, 150, 165, 180, 195, 210, 225, 240, 255, 270, 285, 300, 315, 330, 345];
+      const lines = degs.map((d) => `<line x1="0" y1="0" x2="${(Math.cos(d * Math.PI / 180) * 32).toFixed(1)}" y2="${(Math.sin(d * Math.PI / 180) * 32).toFixed(1)}" stroke="#64748B" stroke-width="1.5"/>`).join("");
+      return `<circle cx="0" cy="0" r="32" fill="#CBD5E1" stroke="${S}" stroke-width="4.5"/>
+        ${lines}
+        <g transform="translate(${wobble.toFixed(1)}, -4)">
+          <polygon points="0,0 4,-32 1,-32" fill="#EF4444" stroke="#000000" stroke-width="2"/>
+          <rect x="8" y="-24" width="28" height="14" rx="3" fill="#020617" stroke="#EF4444" stroke-width="1.5"/>
+          <text x="12" y="-14" fill="#FEF08A" font-size="8" font-weight="900">2%</text>
+        </g>`;
+    },
+    tags: ["pastel", "50anos", "2porciento", "rebanada_fina", "adultez", "fideo", "proporcion"],
+  },
+  reloj_arena_chorro_acelerado: {
+    id: "reloj_arena_chorro_acelerado",
+    name: "Reloj de Arena Acelerado Chorro Líquido",
+    family: "educacion_ciencia",
+    defaultPlacement: "right",
+    svg: `<g transform="rotate(18 0 0)"><polygon points="-18,-26 18,-26 4,-2 18,22 -18,22 -4,-2" fill="#E0F2FE" stroke="${S}" stroke-width="4"/><line x1="0" y1="-2" x2="0" y2="20" stroke="#F59E0B" stroke-width="6"/></g>`,
+    animatedSvg: (f: number) => {
+      const streamPulse = 5 + Math.sin(f * 0.8) * 2;
+      return `<g transform="rotate(22 0 0)">
+        <polygon points="-20,-28 20,-28 5,-2 20,24 -20,24 -5,-2" fill="#E0F2FE" fill-opacity="0.8" stroke="${S}" stroke-width="4.5"/>
+        <line x1="-24" y1="-28" x2="24" y2="-28" stroke="#78350F" stroke-width="6" stroke-linecap="round"/>
+        <line x1="-24" y1="24" x2="24" y2="24" stroke="#78350F" stroke-width="6" stroke-linecap="round"/>
+        <polygon points="-8,-24 8,-24 0,-8" fill="#FACC15"/>
+        <line x1="0" y1="-8" x2="0" y2="22" stroke="#D97706" stroke-width="${streamPulse.toFixed(1)}" stroke-linecap="round"/>
+        <polygon points="-18,22 18,22 0,6" fill="#FACC15"/>
+      </g>`;
+    },
+    tags: ["reloj_arena", "rapido", "chorro", "acelerado", "adultez", "fuga", "tiempo"],
+  },
+  archivador_sello_repetido_mental: {
+    id: "archivador_sello_repetido_mental",
+    name: "Sello Mental de Rutina REPETIDO y Carpetas",
+    family: "educacion_ciencia",
+    defaultPlacement: "right",
+    svg: `<rect x="-24" y="6" width="48" height="18" rx="4" fill="#3B82F6" stroke="${S}" stroke-width="3.5"/><rect x="-18" y="-12" width="36" height="16" rx="4" fill="#DC2626" stroke="${S}" stroke-width="3.5"/><text x="-14" y="-1" fill="#FFFFFF" font-size="7" font-weight="900">REPETIDO</text>`,
+    animatedSvg: (f: number) => {
+      const stampSplat = (f % 10 < 5) ? -4 : 6;
+      return `<g>
+        <rect x="-26" y="8" width="52" height="16" rx="3" fill="#E2E8F0" stroke="${S}" stroke-width="4"/>
+        <rect x="-20" y="11" width="40" height="4" fill="#94A3B8"/>
+        <g transform="translate(0, ${stampSplat})">
+          <rect x="-6" y="-30" width="12" height="18" rx="4" fill="#78350F" stroke="${S}" stroke-width="3"/>
+          <rect x="-22" y="-12" width="44" height="20" rx="4" fill="#DC2626" stroke="${S}" stroke-width="4"/>
+          <text x="-18" y="2" fill="#FEF08A" font-size="8" font-weight="900" fontFamily="'Arial Black'">REPETIDO</text>
+        </g>
+      </g>`;
+    },
+    tags: ["sello", "repetido", "rutina", "archivador", "compresion", "cerebro", "memoria"],
+  },
+  helado_mariposa_recuerdo_4k: {
+    id: "helado_mariposa_recuerdo_4k",
+    name: "Helado Brillante y Mariposa Recuerdo 4K",
+    family: "naturaleza_alimentos",
+    defaultPlacement: "overhead",
+    svg: `<polygon points="-10,6 10,6 0,26" fill="#D97706" stroke="${S}" stroke-width="3"/><circle cx="0" cy="0" r="12" fill="#F43F5E" stroke="${S}" stroke-width="3"/><circle cx="0" cy="-12" r="10" fill="#FEF08A" stroke="${S}" stroke-width="3"/><circle cx="18" cy="-18" r="6" fill="#38BDF8"/>`,
+    animatedSvg: (f: number) => {
+      const flap = Math.sin(f * 0.4) * 8;
+      return `<polygon points="-12,6 12,6 0,28" fill="#D97706" stroke="${S}" stroke-width="3.5"/>
+        <line x1="-6" y1="12" x2="6" y2="12" stroke="#78350F" stroke-width="2"/>
+        <line x1="-3" y1="20" x2="3" y2="20" stroke="#78350F" stroke-width="2"/>
+        <circle cx="0" cy="0" r="14" fill="#F43F5E" stroke="${S}" stroke-width="3.5"/>
+        <circle cx="0" cy="-14" r="11" fill="#FEF08A" stroke="${S}" stroke-width="3.5"/>
+        <circle cx="-4" cy="-16" r="2" fill="#EF4444"/>
+        <circle cx="4" cy="-12" r="2" fill="#3B82F6"/>
+        <g transform="translate(24, -20)">
+          <path d="M 0,0 Q ${8 + flap},-8 14,-4 Q 10,4 0,0" fill="#38BDF8" stroke="${S}" stroke-width="2"/>
+          <path d="M 0,0 Q ${-8 - flap},-8 -14,-4 Q -10,4 0,0" fill="#38BDF8" stroke="${S}" stroke-width="2"/>
+          <line x1="0" y1="-4" x2="0" y2="4" stroke="#000000" stroke-width="2"/>
+        </g>`;
+    },
+    tags: ["helado", "mariposa", "recuerdo", "4k", "infancia", "primera_vez", "asombro"],
+  },
+  rueda_hamster_oficina_cubiculos: {
+    id: "rueda_hamster_oficina_cubiculos",
+    name: "Rueda de Hámster de Oficina Rutinaria",
+    family: "tecnologia",
+    defaultPlacement: "right",
+    svg: `<circle cx="0" cy="0" r="30" fill="none" stroke="${S}" stroke-width="5"/><circle cx="0" cy="0" r="22" fill="none" stroke="#94A3B8" stroke-width="3" stroke-dasharray="8 6"/><rect x="-10" y="8" width="20" height="10" rx="2" fill="#334155"/>`,
+    animatedSvg: (f: number) => {
+      const rotWheel = (f * 6) % 360;
+      return `<g transform="rotate(${rotWheel} 0 0)">
+        <circle cx="0" cy="0" r="34" fill="none" stroke="${S}" stroke-width="6"/>
+        <circle cx="0" cy="0" r="26" fill="none" stroke="#64748B" stroke-width="4" stroke-dasharray="10 8"/>
+        <line x1="-34" y1="0" x2="34" y2="0" stroke="${S}" stroke-width="3"/>
+        <line x1="0" y1="-34" x2="0" y2="34" stroke="${S}" stroke-width="3"/>
+        <rect x="-8" y="-30" width="16" height="8" rx="2" fill="#38BDF8"/>
+        <rect x="-8" y="22" width="16" height="8" rx="2" fill="#38BDF8"/>
+      </g>`;
+    },
+    tags: ["rueda", "hamster", "oficina", "rutina", "bucle", "infinito", "trabajo"],
+  },
+  mochila_guitarra_mapa_aventura: {
+    id: "mochila_guitarra_mapa_aventura",
+    name: "Mochila de Explorador, Guitarra y Mapa",
+    family: "reacciones_humor",
+    defaultPlacement: "overhead",
+    svg: `<rect x="-18" y="-16" width="36" height="34" rx="8" fill="#15803D" stroke="${S}" stroke-width="4"/><path d="M 12,-28 L 22,-8 L 18,2 Z" fill="#D97706" stroke="${S}" stroke-width="3"/><rect x="-24" y="6" width="16" height="10" rx="3" fill="#FEF08A" stroke="${S}" stroke-width="2.5"/>`,
+    animatedSvg: (f: number) => {
+      const bounce = Math.sin(f / 3) * 2;
+      return `<g transform="translate(0, ${bounce.toFixed(1)})">
+        <rect x="-20" y="-18" width="40" height="38" rx="9" fill="#15803D" stroke="${S}" stroke-width="4.5"/>
+        <rect x="-14" y="-8" width="28" height="16" rx="4" fill="#166534" stroke="${S}" stroke-width="3"/>
+        <line x1="-8" y1="-18" x2="-8" y2="20" stroke="#FACC15" stroke-width="3"/>
+        <line x1="8" y1="-18" x2="8" y2="20" stroke="#FACC15" stroke-width="3"/>
+        <g transform="translate(14, -14) rotate(25)">
+          <path d="M -6,0 Q -10,-10 -6,-16 L -2,-16 Q 2,-10 -2,0 Z" fill="#B45309" stroke="${S}" stroke-width="2.5"/>
+          <line x1="-4" y1="-16" x2="-4" y2="-28" stroke="#78350F" stroke-width="4"/>
+          <circle cx="-4" cy="-28" r="4" fill="#D97706"/>
+        </g>
+        <rect x="-26" y="8" width="18" height="10" rx="3" fill="#FEF08A" stroke="${S}" stroke-width="3"/>
+      </g>`;
+    },
+    tags: ["mochila", "guitarra", "mapa", "aventura", "explorador", "viaje", "antidoto"],
+  },
+  // ==========================================
+  // PROPS: LA PARADOJA DE FERMI Y EL GRAN SILENCIO
+  // ==========================================
+  vaso_antena_cuerda_espacio: {
+    id: "vaso_antena_cuerda_espacio",
+    name: "Vaso de Cartón con Cuerda Radiotelescopio Casero",
+    family: "educacion_ciencia",
+    defaultPlacement: "right",
+    svg: `<polygon points="-10,-18 10,-18 16,18 -16,18" fill="#F8FAFC" stroke="${S}" stroke-width="4"/><ellipse cx="0" cy="-18" rx="10" ry="4" fill="#E2E8F0" stroke="${S}" stroke-width="3"/><line x1="0" y1="18" x2="24" y2="34" stroke="#DC2626" stroke-width="3" stroke-linecap="round"/><circle cx="24" cy="34" r="3" fill="#DC2626"/>`,
+    animatedSvg: (f: number) => {
+      const jiggle = Math.sin(f / 3) * 2;
+      return `<g transform="translate(${jiggle.toFixed(1)}, 0)">
+        <polygon points="-12,-20 12,-20 18,20 -18,20" fill="#F8FAFC" stroke="${S}" stroke-width="4.5"/>
+        <ellipse cx="0" cy="-20" rx="12" ry="5" fill="#E2E8F0" stroke="${S}" stroke-width="3.5"/>
+        <line x1="0" y1="20" x2="28" y2="38" stroke="#DC2626" stroke-width="3.5" stroke-linecap="round"/>
+        <circle cx="28" cy="38" r="3.5" fill="#DC2626"/>
+        <path d="M -8,-28 Q 0,-34 8,-28" fill="none" stroke="#38BDF8" stroke-width="2" stroke-linecap="round" opacity="0.75"/>
+      </g>`;
+    },
+    tags: ["vaso", "antena", "cuerda", "fermi", "silencio", "espacio", "escucha"],
+  },
+  holograma_via_lactea_colonizacion: {
+    id: "holograma_via_lactea_colonizacion",
+    name: "Holograma 3D de la Vía Láctea y Colonización",
+    family: "educacion_ciencia",
+    defaultPlacement: "overhead",
+    svg: `<ellipse cx="0" cy="0" rx="34" ry="16" fill="#0F172A" stroke="#22C55E" stroke-width="3"/><circle cx="0" cy="0" r="8" fill="#FEF08A"/><circle cx="-18" cy="-4" r="3" fill="#22C55E"/><circle cx="18" cy="4" r="3" fill="#22C55E"/><path d="M -18,-4 Q 0,8 18,4" fill="none" stroke="#22C55E" stroke-width="2" stroke-dasharray="4 3"/>`,
+    animatedSvg: (f: number) => {
+      const rot = (f * 3) % 360;
+      const pulse = 1.0 + Math.sin(f / 4) * 0.05;
+      return `<g transform="scale(${pulse.toFixed(3)})">
+        <ellipse cx="0" cy="0" rx="36" ry="18" fill="#020617" fill-opacity="0.85" stroke="#22C55E" stroke-width="3.5"/>
+        <circle cx="0" cy="0" r="9" fill="#FEF08A" stroke="#F59E0B" stroke-width="2"/>
+        <g transform="rotate(${rot.toFixed(1)} 0 0)">
+          <ellipse cx="0" cy="0" rx="28" ry="10" fill="none" stroke="#38BDF8" stroke-width="2" stroke-dasharray="6 4" opacity="0.6"/>
+          <circle cx="-16" cy="-4" r="3.5" fill="#22C55E" stroke="#000000" stroke-width="1.5"/>
+          <circle cx="16" cy="4" r="3.5" fill="#22C55E" stroke="#000000" stroke-width="1.5"/>
+          <circle cx="0" cy="-8" r="3" fill="#38BDF8"/>
+        </g>
+      </g>`;
+    },
+    tags: ["holograma", "via_lactea", "galaxia", "colonizacion", "fermi", "estrellas"],
+  },
+  puntero_cientifico_fermi: {
+    id: "puntero_cientifico_fermi",
+    name: "Puntero Telescópico de Presentación Científica",
+    family: "educacion_ciencia",
+    defaultPlacement: "right",
+    svg: `<line x1="-16" y1="18" x2="22" y2="-22" stroke="#94A3B8" stroke-width="4.5" stroke-linecap="round"/><circle cx="22" cy="-22" r="5" fill="#22C55E" stroke="${S}" stroke-width="2"/><rect x="-20" y="14" width="8" height="12" rx="2" fill="#78350F" stroke="${S}" stroke-width="2"/>`,
+    animatedSvg: (f: number) => {
+      const glint = (f % 10 < 5);
+      return `<line x1="-18" y1="20" x2="26" y2="-24" stroke="#CBD5E1" stroke-width="5" stroke-linecap="round"/>
+        <rect x="-22" y="16" width="8" height="12" rx="2" fill="#78350F" stroke="${S}" stroke-width="2.5"/>
+        <circle cx="26" cy="-24" r="6" fill="${glint ? '#4ADE80' : '#16A34A'}" stroke="${S}" stroke-width="2.5"/>`;
+    },
+    tags: ["puntero", "conferencia", "fermi", "ciencia", "presentacion", "explicacion"],
+  },
+  auriculares_seti_dial: {
+    id: "auriculares_seti_dial",
+    name: "Auriculares Profesionales y Dial de Radio SETI",
+    family: "tecnologia",
+    defaultPlacement: "overhead",
+    svg: `<path d="M -18,6 A 18,18 0 0,1 18,6" fill="none" stroke="${S}" stroke-width="5" stroke-linecap="round"/><rect x="-24" y="0" width="8" height="16" rx="4" fill="#1E293B" stroke="${S}" stroke-width="3"/><rect x="16" y="0" width="8" height="16" rx="4" fill="#1E293B" stroke="${S}" stroke-width="3"/>`,
+    animatedSvg: (f: number) => {
+      const pulseEar = Math.sin(f / 4) * 1.5;
+      return `<g transform="translate(0, ${pulseEar.toFixed(1)})">
+        <path d="M -20,8 A 20,20 0 0,1 20,8" fill="none" stroke="${S}" stroke-width="5.5" stroke-linecap="round"/>
+        <rect x="-26" y="2" width="10" height="18" rx="4" fill="#0F172A" stroke="${S}" stroke-width="3.5"/>
+        <rect x="16" y="2" width="10" height="18" rx="4" fill="#0F172A" stroke="${S}" stroke-width="3.5"/>
+        <circle cx="21" cy="11" r="2" fill="#38BDF8"/>
+      </g>`;
+    },
+    tags: ["auriculares", "seti", "radio", "escucha", "antena", "frecuencia", "dial"],
+  },
+  muro_gran_filtro_obsidiana: {
+    id: "muro_gran_filtro_obsidiana",
+    name: "Muro del Gran Filtro de Obsidiana con Picos",
+    family: "educacion_ciencia",
+    defaultPlacement: "overhead",
+    svg: `<rect x="-18" y="-30" width="36" height="60" rx="4" fill="#0F172A" stroke="${S}" stroke-width="4.5"/><polygon points="-18,-30 -12,-38 -6,-30 0,-38 6,-30 12,-38 18,-30" fill="#000000" stroke="${S}" stroke-width="3"/><text x="-12" y="4" fill="#EF4444" font-size="8" font-weight="900">FILTER</text>`,
+    animatedSvg: (f: number) => {
+      const glowWarn = Math.sin(f / 4) * 0.3 + 0.7;
+      return `<rect x="-20" y="-32" width="40" height="64" rx="5" fill="#020617" stroke="#EF4444" stroke-width="4.5"/>
+        <polygon points="-20,-32 -14,-42 -7,-32 0,-42 7,-32 14,-42 20,-32" fill="#000000" stroke="#EF4444" stroke-width="3.5"/>
+        <text x="-14" y="6" fill="#FEF08A" font-size="9" font-weight="900" fontFamily="'Arial Black'" opacity="${glowWarn.toFixed(2)}">FILTER</text>
+        <line x1="-16" y1="16" x2="16" y2="16" stroke="#EF4444" stroke-width="2"/>`;
+    },
+    tags: ["gran_filtro", "muro", "obsidiana", "extincion", "barrera", "cosmos", "peligro"],
+  },
+  holograma_amenazas_futuro: {
+    id: "holograma_amenazas_futuro",
+    name: "Holograma de Amenazas Tecnológicas Futuras",
+    family: "tecnologia",
+    defaultPlacement: "left",
+    svg: `<rect x="-26" y="-18" width="52" height="36" rx="6" fill="#0F172A" stroke="#EF4444" stroke-width="3.5"/><polygon points="-12,10 0,-12 12,10" fill="#DC2626"/><circle cx="0" cy="2" r="3" fill="#FEF08A"/>`,
+    animatedSvg: (f: number) => {
+      const warnBlink = (f % 8 < 4);
+      return `<rect x="-28" y="-20" width="56" height="40" rx="6" fill="#020617" stroke="${warnBlink ? '#EF4444' : '#7F1D1D'}" stroke-width="4"/>
+        <polygon points="-14,12 0,-14 14,12" fill="#DC2626" stroke="#000000" stroke-width="2.5"/>
+        <text x="-6" y="8" fill="#FEF08A" font-size="12" font-weight="900" fontFamily="'Arial Black'">!</text>
+        <circle cx="18" cy="-12" r="3" fill="#EF4444"/>`;
+    },
+    tags: ["amenaza", "futuro", "ia", "nuclear", "peligro", "advertencia", "holograma"],
+  },
+  linterna_bosque_haz_revelador: {
+    id: "linterna_bosque_haz_revelador",
+    name: "Linterna de Campo con Haz de Luz Revelador",
+    family: "tecnologia",
+    defaultPlacement: "right",
+    svg: `<rect x="-18" y="-6" width="28" height="12" rx="3" fill="#334155" stroke="${S}" stroke-width="3"/><polygon points="10,-10 18,-6 18,6 10,10" fill="#64748B" stroke="${S}" stroke-width="3"/><polygon points="18,-14 44,-24 44,24 18,14" fill="#FEF08A" fill-opacity="0.5"/>`,
+    animatedSvg: (f: number) => {
+      const beamWobble = Math.sin(f / 3) * 3;
+      return `<g>
+        <rect x="-20" y="-7" width="30" height="14" rx="3" fill="#1E293B" stroke="${S}" stroke-width="3.5"/>
+        <polygon points="10,-11 20,-7 20,7 10,11" fill="#475569" stroke="${S}" stroke-width="3.5"/>
+        <polygon points="20,-14 52,${-28 + beamWobble} 52,${28 + beamWobble} 20,14" fill="#FEF08A" fill-opacity="0.6"/>
+        <circle cx="36" cy="${beamWobble}" r="2" fill="#FFFFFF"/>
+      </g>`;
+    },
+    tags: ["linterna", "bosque_oscuro", "luz", "haz", "revelador", "cazador", "sigilo"],
+  },
+  palido_punto_azul_esfera: {
+    id: "palido_punto_azul_esfera",
+    name: "Pálido Punto Azul Planeta Tierra en Manos",
+    family: "educacion_ciencia",
+    defaultPlacement: "overhead",
+    svg: `<circle cx="0" cy="0" r="24" fill="#0284C7" stroke="${S}" stroke-width="4"/><path d="M -12,-8 Q 0,-18 12,-6 Q 8,8 -6,14 Z" fill="#22C55E"/><path d="M -18,4 Q 0,-6 18,6" fill="none" stroke="#FFFFFF" stroke-width="3" opacity="0.8"/>`,
+    animatedSvg: (f: number) => {
+      const spin = (f * 1.5) % 360;
+      const glow = Math.sin(f / 4) * 2;
+      return `<g>
+        <circle cx="0" cy="0" r="${26 + glow}" fill="#38BDF8" fill-opacity="0.3"/>
+        <circle cx="0" cy="0" r="24" fill="#0284C7" stroke="${S}" stroke-width="4"/>
+        <g transform="rotate(${spin.toFixed(1)} 0 0)">
+          <path d="M -12,-8 Q 0,-18 12,-6 Q 8,8 -6,14 Z" fill="#22C55E"/>
+          <circle cx="8" cy="10" r="5" fill="#16A34A"/>
+          <path d="M -18,2 Q 0,-8 18,2" fill="none" stroke="#FFFFFF" stroke-width="3.5" opacity="0.85" stroke-linecap="round"/>
+        </g>
+      </g>`;
+    },
+    tags: ["tierra", "palido_punto_azul", "planeta", "hogar", "sagan", "fermi", "cosmos"],
+  },
+  telegrafo_morse_chispas: {
+    id: "telegrafo_morse_chispas",
+    name: "Manipulador de Telégrafo Morse con Arcos Eléctricos y Fuego",
+    family: "tecnologia",
+    defaultPlacement: "right",
+    svg: `<rect x="-30" y="8" width="60" height="16" rx="4" fill="#1E293B" stroke="${S}" stroke-width="4"/><rect x="-24" y="-8" width="48" height="10" rx="3" fill="#D97706" stroke="${S}" stroke-width="3"/><circle cx="16" cy="-14" r="7" fill="#B45309" stroke="${S}" stroke-width="3"/><path d="M -18,-18 L -10,-8 L -4,-22 L 4,-8 L 12,-20" fill="none" stroke="#00F0FF" stroke-width="3"/>`,
+    animatedSvg: (f: number) => {
+      const keyBounce = Math.sin(f * 0.9) * 4;
+      const sparkShow = (f % 6 < 3);
+      const sparkX = Math.sin(f * 1.7) * 8;
+      const sparkY = Math.cos(f * 1.3) * 6;
+      return `<g>
+        <rect x="-32" y="6" width="64" height="18" rx="4" fill="#0F172A" stroke="${S}" stroke-width="4.5"/>
+        <rect x="-26" y="${-6 + keyBounce}" width="52" height="10" rx="3" fill="#D97706" stroke="${S}" stroke-width="3.5"/>
+        <circle cx="18" cy="${-12 + keyBounce}" r="7.5" fill="#F59E0B" stroke="${S}" stroke-width="3.5"/>
+        <path d="M -26,10 Q -40,14 -46,24" fill="none" stroke="#EF4444" stroke-width="4"/>
+        ${sparkShow ? `
+          <g transform="translate(${sparkX}, ${sparkY})">
+            <path d="M -16,-12 L -6,2 L 2,-18 L 10,0 L 22,-14" fill="none" stroke="#00F0FF" stroke-width="4.5" stroke-linecap="round"/>
+            <circle cx="2" cy="-18" r="4" fill="#FFFFFF"/>
+            <circle cx="-16" cy="-12" r="3" fill="#FEF08A"/>
+            <path d="M -24,4 Q -32,-4 -28,-14 Q -22,-4 -18,2" fill="#F97316" stroke="#EF4444" stroke-width="2"/>
+          </g>
+        ` : ''}
+      </g>`;
+    },
+    tags: ["telegrafo", "morse", "chispas", "carrington", "1859", "electricidad", "fuego"],
+  },
+  periodico_victoriano_auroras: {
+    id: "periodico_victoriano_auroras",
+    name: "Periódico Histórico de 1859 Iluminado por Auroras",
+    family: "herramientas_objetos",
+    defaultPlacement: "right",
+    svg: `<rect x="-26" y="-32" width="52" height="64" rx="4" fill="#F8FAFC" stroke="${S}" stroke-width="4"/><line x1="-20" y1="-22" x2="20" y2="-22" stroke="${S}" stroke-width="4"/><line x1="-20" y1="-12" x2="-2" y2="-12" stroke="${S}" stroke-width="2.5"/><line x1="-20" y1="-4" x2="-2" y2="-4" stroke="${S}" stroke-width="2.5"/><line x1="2" y1="-12" x2="20" y2="-12" stroke="${S}" stroke-width="2.5"/><line x1="2" y1="-4" x2="20" y2="-4" stroke="${S}" stroke-width="2.5"/>`,
+    animatedSvg: (f: number) => {
+      const auroraHue = Math.sin(f * 0.1) * 30 + 140; // Oscila entre verde esmeralda y cian
+      const flutter = Math.sin(f * 0.15) * 2;
+      return `<g transform="rotate(${flutter.toFixed(1)} 0 0)">
+        <rect x="-28" y="-34" width="56" height="68" rx="4" fill="#FEF9C3" stroke="${S}" stroke-width="4.5"/>
+        <rect x="-24" y="-28" width="48" height="8" fill="#020617"/>
+        <text x="-20" y="-22" fill="#FEF08A" font-size="6" font-weight="900" fontFamily="'Arial Black'">DAILY NEWS 1859</text>
+        <line x1="-22" y1="-14" x2="-4" y2="-14" stroke="#334155" stroke-width="2.5"/>
+        <line x1="-22" y1="-8" x2="-4" y2="-8" stroke="#334155" stroke-width="2.5"/>
+        <line x1="-22" y1="-2" x2="-4" y2="-2" stroke="#334155" stroke-width="2.5"/>
+        <line x1="-22" y1="4" x2="-4" y2="4" stroke="#334155" stroke-width="2.5"/>
+        <line x1="2" y1="-14" x2="22" y2="-14" stroke="#334155" stroke-width="2.5"/>
+        <line x1="2" y1="-8" x2="22" y2="-8" stroke="#334155" stroke-width="2.5"/>
+        <line x1="2" y1="-2" x2="22" y2="-2" stroke="#334155" stroke-width="2.5"/>
+        <line x1="2" y1="4" x2="22" y2="4" stroke="#334155" stroke-width="2.5"/>
+        <rect x="-28" y="-34" width="56" height="68" rx="4" fill="hsl(${auroraHue}, 80%, 60%)" fill-opacity="0.22"/>
+      </g>`;
+    },
+    tags: ["periodico", "1859", "aurora", "caribe", "lectura", "carrington", "prensa"],
+  },
+  telescopio_laton_pantalla_proyeccion: {
+    id: "telescopio_laton_pantalla_proyeccion",
+    name: "Telescopio Victoriano con Pantalla Solar de Carrington",
+    family: "educacion_ciencia",
+    defaultPlacement: "left",
+    svg: `<rect x="-35" y="-12" width="55" height="16" rx="4" fill="#D97706" stroke="${S}" stroke-width="4"/><polygon points="20,-18 36,-12 36,4 20,10" fill="#B45309" stroke="${S}" stroke-width="3"/><rect x="40" y="-30" width="30" height="30" rx="3" fill="#FFFFFF" stroke="${S}" stroke-width="3"/><circle cx="55" cy="-15" r="10" fill="#F59E0B"/>`,
+    animatedSvg: (f: number) => {
+      const flareFlash = Math.sin(f * 0.45) > 0.1;
+      return `<g>
+        <line x1="-15" y1="4" x2="-35" y2="42" stroke="#451A03" stroke-width="5"/>
+        <line x1="0" y1="4" x2="20" y2="42" stroke="#451A03" stroke-width="5"/>
+        <rect x="-36" y="-14" width="60" height="18" rx="4" fill="#D97706" stroke="${S}" stroke-width="4.5"/>
+        <rect x="-18" y="-16" width="8" height="22" fill="#FDE047" stroke="${S}" stroke-width="3"/>
+        <rect x="24" y="-22" width="12" height="34" rx="2" fill="#78350F" stroke="${S}" stroke-width="3"/>
+        <!-- Pantalla de proyección -->
+        <line x1="24" y1="-8" x2="52" y2="-12" stroke="#64748B" stroke-width="3.5"/>
+        <rect x="48" y="-36" width="36" height="36" rx="4" fill="#FFFFFF" stroke="${S}" stroke-width="3.5"/>
+        <circle cx="66" cy="-18" r="12" fill="#F59E0B" stroke="#B45309" stroke-width="2"/>
+        <circle cx="63" cy="-20" r="2.5" fill="#451A03"/>
+        <circle cx="69" cy="-16" r="2" fill="#451A03"/>
+        ${flareFlash ? `
+          <circle cx="64" cy="-20" r="4.5" fill="#FFFFFF"/>
+          <circle cx="70" cy="-16" r="3.5" fill="#FFFFFF"/>
+          <line x1="58" y1="-20" x2="76" y2="-18" stroke="#FEF08A" stroke-width="2"/>
+        ` : ''}
+      </g>`;
+    },
+    tags: ["telescopio", "carrington", "pantalla", "manchas_solares", "fulguracion", "astronomia"],
+  },
+  capsula_espacial_radar: {
+    id: "capsula_espacial_radar",
+    name: "Cápsula de Observación con Radar de Alerta Solar",
+    family: "tecnologia",
+    defaultPlacement: "right",
+    svg: `<circle cx="0" cy="0" r="26" fill="#1E293B" stroke="${S}" stroke-width="4.5"/><path d="M -18,0 A 18 18 0 0 1 18 0 Z" fill="#38BDF8" fill-opacity="0.7"/><line x1="0" y1="0" x2="14" y2="-12" stroke="#EF4444" stroke-width="3.5"/>`,
+    animatedSvg: (f: number) => {
+      const needleAngle = Math.min(65, Math.sin(f * 0.2) * 40 + 25);
+      const dangerBlink = (f % 8 < 4);
+      return `<g>
+        <circle cx="0" cy="0" r="28" fill="#0F172A" stroke="${S}" stroke-width="4.5"/>
+        <path d="M -20,0 A 20 20 0 0 1 20 0 Z" fill="#0284C7" fill-opacity="0.5" stroke="${S}" stroke-width="2.5"/>
+        <rect x="-18" y="4" width="36" height="18" rx="3" fill="#020617" stroke="${dangerBlink ? '#EF4444' : '#1E293B'}" stroke-width="3"/>
+        <text x="-12" y="16" fill="${dangerBlink ? '#EF4444' : '#64748B'}" font-size="9" font-weight="900" fontFamily="'Arial Black'">CME!</text>
+        <!-- Aguja de radar que sube al rojo -->
+        <g transform="translate(0, 0) rotate(${needleAngle.toFixed(1)} 0 0)">
+          <line x1="0" y1="0" x2="0" y2="-16" stroke="#EF4444" stroke-width="3.5" stroke-linecap="round"/>
+          <circle cx="0" cy="0" r="3" fill="#FEF08A"/>
+        </g>
+      </g>`;
+    },
+    tags: ["capsula", "radar", "cme", "espacio", "alerta", "velocidad", "plasma"],
+  },
+  poste_telegrafo_moderno_combo: {
+    id: "poste_telegrafo_moderno_combo",
+    name: "Doble Tecnología: Poste de Telégrafo a Torre de Alta Tensión",
+    family: "herramientas_objetos",
+    defaultPlacement: "overhead",
+    svg: `<line x1="-24" y1="-30" x2="-24" y2="30" stroke="#78350F" stroke-width="6"/><line x1="-34" y1="-18" x2="-14" y2="-18" stroke="#78350F" stroke-width="5"/><line x1="24" y1="-30" x2="16" y2="30" stroke="#0284C7" stroke-width="5"/><line x1="24" y1="-30" x2="32" y2="30" stroke="#0284C7" stroke-width="5"/><line x1="12" y1="-10" x2="36" y2="-10" stroke="#0284C7" stroke-width="4"/>`,
+    animatedSvg: (f: number) => {
+      const arcPulse = Math.sin(f * 0.4) > 0.2;
+      return `<g>
+        <!-- Poste 1859 madera -->
+        <line x1="-24" y1="-32" x2="-24" y2="32" stroke="#451A03" stroke-width="7"/>
+        <line x1="-36" y1="-20" x2="-12" y2="-20" stroke="#451A03" stroke-width="6"/>
+        <circle cx="-32" cy="-24" r="3" fill="#E2E8F0"/>
+        <circle cx="-16" cy="-24" r="3" fill="#E2E8F0"/>
+        <!-- Torre moderna acero -->
+        <path d="M 14,32 L 24,-32 L 34,32" fill="none" stroke="#0284C7" stroke-width="5"/>
+        <line x1="12" y1="-8" x2="36" y2="-8" stroke="#38BDF8" stroke-width="4"/>
+        <line x1="16" y1="12" x2="32" y2="12" stroke="#38BDF8" stroke-width="4"/>
+        <!-- Cable conector con arco -->
+        <path d="M -16,-20 Q 4,-12 24,-8" fill="none" stroke="#F59E0B" stroke-width="3"/>
+        ${arcPulse ? `<circle cx="4" cy="-12" r="4" fill="#00F0FF"/>` : ''}
+      </g>`;
+    },
+    tags: ["poste", "torre", "cables", "red", "transicion", "tecnologia", "1859"],
+  },
+  subestacion_transformador_fuego: {
+    id: "subestacion_transformador_fuego",
+    name: "Transformador de Subestación Estallando en Llamas",
+    family: "herramientas_objetos",
+    defaultPlacement: "overhead",
+    svg: `<rect x="-24" y="-18" width="48" height="36" rx="4" fill="#334155" stroke="${S}" stroke-width="4"/><polygon points="0,-12 -8,2 2,2 -4,12 8,-2 0,-2" fill="#F59E0B"/><line x1="-28" y1="-8" x2="-28" y2="12" stroke="${S}" stroke-width="4"/><line x1="28" y1="-8" x2="28" y2="12" stroke="${S}" stroke-width="4"/>`,
+    animatedSvg: (f: number) => {
+      const fireWobble = Math.sin(f * 0.6) * 5;
+      const arcShow = (f % 5 < 3);
+      return `<g>
+        <rect x="-26" y="-16" width="52" height="34" rx="4" fill="#1E293B" stroke="${S}" stroke-width="4.5"/>
+        <!-- Aletas de refrigeración -->
+        <line x1="-20" y1="-10" x2="-20" y2="12" stroke="#475569" stroke-width="3"/>
+        <line x1="-12" y1="-10" x2="-12" y2="12" stroke="#475569" stroke-width="3"/>
+        <line x1="12" y1="-10" x2="12" y2="12" stroke="#475569" stroke-width="3"/>
+        <line x1="20" y1="-10" x2="20" y2="12" stroke="#475569" stroke-width="3"/>
+        <!-- Símbolo de alto voltaje -->
+        <polygon points="0,-10 -6,1 1,1 -3,10 6,-1 0,-1" fill="#FEF08A" stroke="#000000" stroke-width="2"/>
+        <!-- Llamas y arcos de sobretensión -->
+        <path d="M ${-10 + fireWobble},-16 Q 0,-38 ${12 + fireWobble},-22 Q 4,-16 0,-16 Z" fill="#EF4444" stroke="#F59E0B" stroke-width="2.5"/>
+        <path d="M ${-4 + fireWobble},-18 Q 4,-32 ${8 + fireWobble},-20 Z" fill="#FEF08A"/>
+        ${arcShow ? `<path d="M -18,-24 L -8,-14 L 0,-28 L 12,-18" fill="none" stroke="#00F0FF" stroke-width="3.5" stroke-linecap="round"/>` : ''}
+      </g>`;
+    },
+    tags: ["transformador", "subestacion", "fuego", "blackout", "explosion", "alto_voltaje"],
+  },
+  telefono_muerto_sin_senal: {
+    id: "telefono_muerto_sin_senal",
+    name: "Smartphone Muerto con Alerta Sin Señal",
+    family: "tecnologia",
+    defaultPlacement: "right",
+    svg: `<rect x="-14" y="-24" width="28" height="48" rx="5" fill="#0F172A" stroke="${S}" stroke-width="3.5"/><rect x="-11" y="-20" width="22" height="40" rx="3" fill="#000000"/><text x="-9" y="4" fill="#EF4444" font-size="6" font-weight="900">NO SIGNAL</text>`,
+    animatedSvg: (f: number) => {
+      const redBlink = (f % 10 < 5);
+      return `<g>
+        <rect x="-16" y="-26" width="32" height="52" rx="6" fill="#020617" stroke="${S}" stroke-width="4"/>
+        <rect x="-12" y="-22" width="24" height="44" rx="4" fill="#000000"/>
+        <g opacity="${redBlink ? 1.0 : 0.2}">
+          <circle cx="0" cy="-6" r="6" fill="#EF4444"/>
+          <line x1="0" y1="-8" x2="0" y2="-5" stroke="#FFFFFF" stroke-width="2"/>
+          <circle cx="0" cy="-3" r="0.8" fill="#FFFFFF"/>
+          <text x="-11" y="8" fill="#EF4444" font-size="5" font-weight="900" fontFamily="'Arial Black'">NO SIGNAL</text>
+        </g>
+      </g>`;
+    },
+    tags: ["celular", "smartphone", "sin_senal", "blackout", "telefono", "pantalla", "apagon"],
+  },
+  vela_fosforo_resplandor: {
+    id: "vela_fosforo_resplandor",
+    name: "Vela Encendida y Fósforo en Penumbra",
+    family: "herramientas_objetos",
+    defaultPlacement: "right",
+    svg: `<rect x="-6" y="-4" width="12" height="24" rx="2" fill="#F8FAFC" stroke="${S}" stroke-width="3"/><line x1="0" y1="-4" x2="0" y2="-9" stroke="#000000" stroke-width="2"/><path d="M -4,-9 Q 0,-20 4,-9 Q 2,-6 0,-6 Q -2,-6 -4,-9 Z" fill="#F59E0B"/><circle cx="0" cy="-9" r="2" fill="#FEF08A"/>`,
+    animatedSvg: (f: number) => {
+      const flameWobbleX = Math.sin(f * 0.45) * 2;
+      const flameHeight = Math.cos(f * 0.35) * 2 + 14;
+      return `<g>
+        <!-- Cuerpo de la vela con cera derritiéndose -->
+        <rect x="-7" y="-2" width="14" height="26" rx="2.5" fill="#FEF9C3" stroke="${S}" stroke-width="3.5"/>
+        <path d="M -7,4 Q -4,8 -4,2" fill="#FEF9C3" stroke="${S}" stroke-width="1.5"/>
+        <!-- Mecha negra -->
+        <line x1="0" y1="-2" x2="0" y2="-8" stroke="#000000" stroke-width="2.5"/>
+        <!-- Llama animada bailando -->
+        <path d="M -5,-8 Q ${flameWobbleX},${-8 - flameHeight} 5,-8 Q 2,-4 0,-4 Q -2,-4 -5,-8 Z" fill="#F59E0B" stroke="#B45309" stroke-width="1.5"/>
+        <path d="M -2.5,-8 Q ${flameWobbleX * 0.6},${-8 - flameHeight * 0.65} 2.5,-8 Q 1,-5 0,-5 Q -1,-5 -2.5,-8 Z" fill="#FEF08A"/>
+        <!-- Resplandor circular tenue -->
+        <circle cx="0" cy="-10" r="18" fill="#FDE047" fill-opacity="0.25"/>
+      </g>`;
+    },
+    tags: ["vela", "fosforo", "llama", "fuego", "penumbra", "apagon", "calidez", "cierre"],
+  },
+  proyector_cine_holografico: {
+    id: "proyector_cine_holografico",
+    name: "Proyector de Cine de Recuerdos Incómodos",
+    family: "reacciones_humor",
+    defaultPlacement: "overhead",
+    svg: `<rect x="-18" y="-8" width="36" height="24" rx="4" fill="#334155" stroke="${S}" stroke-width="4"/><circle cx="-10" cy="-18" r="10" fill="#64748B" stroke="${S}" stroke-width="3"/><circle cx="10" cy="-18" r="10" fill="#64748B" stroke="${S}" stroke-width="3"/><polygon points="18,-2 32,-10 32,6 18,-2" fill="#FDE047" stroke="${S}" stroke-width="2"/>`,
+    animatedSvg: (f: number) => {
+      const reelRot = (f * 8) % 360;
+      const beamFlicker = 0.75 + 0.25 * Math.sin(f * 0.8);
+      const bobY = Math.sin(f * 0.15) * 3;
+      return `<g transform="translate(0, ${bobY})">
+        <!-- Bobinas giratorias clásicas -->
+        <g transform="translate(-12, -20) rotate(${reelRot})">
+          <circle cx="0" cy="0" r="11" fill="#475569" stroke="${S}" stroke-width="3.5"/>
+          <circle cx="0" cy="0" r="4" fill="#E2E8F0" stroke="${S}" stroke-width="2"/>
+          <line x1="-11" y1="0" x2="11" y2="0" stroke="${S}" stroke-width="2"/>
+          <line x1="0" y1="-11" x2="0" y2="11" stroke="${S}" stroke-width="2"/>
+        </g>
+        <g transform="translate(12, -20) rotate(${-reelRot})">
+          <circle cx="0" cy="0" r="11" fill="#475569" stroke="${S}" stroke-width="3.5"/>
+          <circle cx="0" cy="0" r="4" fill="#E2E8F0" stroke="${S}" stroke-width="2"/>
+          <line x1="-11" y1="0" x2="11" y2="0" stroke="${S}" stroke-width="2"/>
+          <line x1="0" y1="-11" x2="0" y2="11" stroke="${S}" stroke-width="2"/>
+        </g>
+        <!-- Cuerpo del proyector estilo neo-brutalista -->
+        <rect x="-20" y="-8" width="40" height="26" rx="5" fill="#1E293B" stroke="${S}" stroke-width="4.5"/>
+        <circle cx="-6" cy="4" r="5" fill="#0EA5E9" stroke="${S}" stroke-width="2"/>
+        <line x1="4" y1="-2" x2="14" y2="-2" stroke="#64748B" stroke-width="3"/>
+        <line x1="4" y1="4" x2="14" y2="4" stroke="#64748B" stroke-width="3"/>
+        <line x1="4" y1="10" x2="14" y2="10" stroke="#64748B" stroke-width="3"/>
+        <!-- Lente frontal y haz cónico de luz de cine -->
+        <polygon points="20,-3 26,-6 26,9 20,6" fill="#F59E0B" stroke="${S}" stroke-width="2.5"/>
+        <polygon points="26,-5 58,-24 58,26 26,7" fill="#FEF08A" fill-opacity="${beamFlicker * 0.35}"/>
+        <!-- Partículas de polvo en el haz -->
+        <circle cx="34" cy="-2" r="1.5" fill="#FFFFFF" opacity="${beamFlicker}"/>
+        <circle cx="44" cy="6" r="2" fill="#FFFFFF" opacity="${beamFlicker * 0.8}"/>
+        <circle cx="50" cy="-8" r="1.2" fill="#FFFFFF" opacity="${beamFlicker * 0.9}"/>
+      </g>`;
+    },
+    tags: ["proyector", "cine", "recuerdos", "verguenza", "pelicula", "holograma"],
+  },
+  consola_cerebral_guardia: {
+    id: "consola_cerebral_guardia",
+    name: "Consola de Guardia Prefrontal Durmiente",
+    family: "educacion_ciencia",
+    defaultPlacement: "overhead",
+    svg: `<rect x="-24" y="-16" width="48" height="32" rx="4" fill="#334155" stroke="${S}" stroke-width="4"/><rect x="-18" y="-12" width="28" height="18" rx="2" fill="#0F172A"/><text x="-14" y="0" fill="#EF4444" font-size="6" font-weight="900">OFF</text><rect x="14" y="-4" width="8" height="12" fill="#F59E0B"/>`,
+    animatedSvg: (f: number) => {
+      const zPhase = (f * 0.1) % (Math.PI * 2);
+      const zOffset = Math.sin(zPhase) * 4;
+      const blink = Math.sin(f * 0.25) > 0;
+      return `<g>
+        <!-- Escritorio metálico base -->
+        <rect x="-28" y="10" width="56" height="16" rx="3" fill="#1E293B" stroke="${S}" stroke-width="4"/>
+        <line x1="-22" y1="18" x2="22" y2="18" stroke="#475569" stroke-width="2.5"/>
+        <!-- Monitor CRT prefrontal -->
+        <rect x="-26" y="-20" width="34" height="28" rx="4" fill="#334155" stroke="${S}" stroke-width="4"/>
+        <rect x="-22" y="-16" width="26" height="20" rx="3" fill="#020617"/>
+        <!-- Texto dormido en pantalla -->
+        <text x="-18" y="-4" fill="#38BDF8" font-size="5" font-weight="900" font-family="'Arial Black'">FILTRO</text>
+        <text x="-18" y="2" fill="${blink ? '#EF4444' : '#64748B'}" font-size="4.5" font-weight="900" font-family="'Arial Black'">OFFLINE</text>
+        <!-- Taza de café humeante abandonada -->
+        <g transform="translate(16, 2)">
+          <rect x="-6" y="-2" width="12" height="14" rx="2" fill="#F8FAFC" stroke="${S}" stroke-width="2.5"/>
+          <path d="M 6,1 C 10,1 10,9 6,9" fill="none" stroke="${S}" stroke-width="2"/>
+          <!-- Humito de café frío -->
+          <path d="M -2,-4 Q 0,-8 -2,-12" fill="none" stroke="#94A3B8" stroke-width="1.5" stroke-linecap="round"/>
+        </g>
+        <!-- Letras Zzz flotantes del guardia dormido -->
+        <text x="8" y="${-10 + zOffset}" fill="#A855F7" font-size="8" font-weight="900" font-family="'Arial Black'" stroke="${S}" stroke-width="1.5" paint-order="stroke">Z</text>
+        <text x="18" y="${-18 + zOffset * 0.7}" fill="#C084FC" font-size="6" font-weight="900" font-family="'Arial Black'" stroke="${S}" stroke-width="1.2" paint-order="stroke">z</text>
+      </g>`;
+    },
+    tags: ["corteza", "prefrontal", "consola", "terminal", "cerebro", "sueno", "guardia"],
+  },
+  amigdala_criatura_megafono: {
+    id: "amigdala_criatura_megafono",
+    name: "Amígdala Emocional con Megáfono y Palanca",
+    family: "reacciones_humor",
+    defaultPlacement: "right",
+    svg: `<path d="M -16,4 C -16,-14 0,-18 16,-10 C 22,0 18,16 2,16 C -12,16 -16,12 -16,4 Z" fill="#EF4444" stroke="${S}" stroke-width="4"/><circle cx="-2" cy="-4" r="3" fill="#FFFFFF"/><circle cx="8" cy="-2" r="3" fill="#FFFFFF"/><polygon points="14,-2 26,-8 26,6 14,2" fill="#F59E0B" stroke="${S}" stroke-width="2.5"/>`,
+    animatedSvg: (f: number) => {
+      const shakeX = Math.sin(f * 0.8) * 2;
+      const sirenPulse = Math.sin(f * 0.5) > 0;
+      const waveExpand = (f * 0.4) % 12;
+      return `<g transform="translate(${shakeX}, 0)">
+        <!-- Sirena roja giratoria en la cabeza -->
+        <rect x="-4" y="-22" width="8" height="5" fill="#334155" stroke="${S}" stroke-width="2"/>
+        <path d="M -5,-22 Q 0,-30 5,-22 Z" fill="${sirenPulse ? '#EF4444' : '#F59E0B'}" stroke="${S}" stroke-width="2"/>
+        <circle cx="0" cy="-24" r="10" fill="#EF4444" fill-opacity="${sirenPulse ? 0.4 : 0.05}"/>
+        <!-- Cuerpo almendrado de la amígdala con contorno grueso -->
+        <path d="M -18,2 C -18,-16 2,-20 18,-10 C 24,2 18,18 0,18 C -14,18 -18,12 -18,2 Z" fill="#E11D48" stroke="${S}" stroke-width="4.5"/>
+        <!-- Ojos enloquecidos de pánico nocturno -->
+        <circle cx="-4" cy="-4" r="5" fill="#FFFFFF" stroke="${S}" stroke-width="2"/>
+        <circle cx="-3" cy="-4" r="2.2" fill="#000000"/>
+        <circle cx="8" cy="-2" r="5.5" fill="#FFFFFF" stroke="${S}" stroke-width="2"/>
+        <circle cx="9" cy="-2" r="2.5" fill="#000000"/>
+        <!-- Boca gritando -->
+        <ellipse cx="2" cy="8" rx="6" ry="4" fill="#881337" stroke="${S}" stroke-width="2"/>
+        <!-- Megáfono estridente en la mano -->
+        <g transform="translate(14, 2)">
+          <polygon points="0,-4 16,-12 16,10 0,4" fill="#FACC15" stroke="${S}" stroke-width="3"/>
+          <line x1="0" y1="4" x2="-4" y2="12" stroke="${S}" stroke-width="3.5" stroke-linecap="round"/>
+          <!-- Ondas de choque sónicas -->
+          <path d="M ${18 + waveExpand},-10 Q ${23 + waveExpand},0 ${18 + waveExpand},10" fill="none" stroke="#F59E0B" stroke-width="3" stroke-linecap="round" opacity="${1 - waveExpand / 12}"/>
+          <path d="M ${24 + waveExpand},-14 Q ${31 + waveExpand},0 ${24 + waveExpand},14" fill="none" stroke="#EF4444" stroke-width="2.5" stroke-linecap="round" opacity="${Math.max(0, 1 - waveExpand / 10)}"/>
+        </g>
+      </g>`;
+    },
+    tags: ["amigdala", "megafono", "alarma", "cerebro", "panico", "alerta", "miedo"],
+  },
+  engranajes_oxidados_ansiedad: {
+    id: "engranajes_oxidados_ansiedad",
+    name: "Engranajes Oxidados de Sobrepensamiento Nocturno",
+    family: "educacion_ciencia",
+    defaultPlacement: "overhead",
+    svg: `<circle cx="-8" cy="-4" r="14" fill="#B45309" stroke="${S}" stroke-width="4"/><circle cx="12" cy="8" r="10" fill="#78350F" stroke="${S}" stroke-width="3.5"/>`,
+    animatedSvg: (f: number) => {
+      const rot1 = (f * 3.5) % 360;
+      const rot2 = (-f * 4.8) % 360;
+      const sparkPop = (f % 8 < 3);
+      const thoughtFloat = Math.sin(f * 0.12) * 4;
+      return `<g>
+        <!-- Engranaje mayor oxidado -->
+        <g transform="translate(-10, 0) rotate(${rot1})">
+          <circle cx="0" cy="0" r="16" fill="#D97706" stroke="${S}" stroke-width="4.5"/>
+          <circle cx="0" cy="0" r="5" fill="#FEF3C7" stroke="${S}" stroke-width="2.5"/>
+          ${[0, 45, 90, 135, 180, 225, 270, 315].map(a => `<rect x="-3" y="-20" width="6" height="5" rx="1" fill="#B45309" stroke="${S}" stroke-width="2" transform="rotate(${a})"/>`).join("")}
+        </g>
+        <!-- Engranaje menor acoplado -->
+        <g transform="translate(14, 8) rotate(${rot2})">
+          <circle cx="0" cy="0" r="12" fill="#92400E" stroke="${S}" stroke-width="4"/>
+          <circle cx="0" cy="0" r="4" fill="#FEF3C7" stroke="${S}" stroke-width="2"/>
+          ${[0, 60, 120, 180, 240, 300].map(a => `<rect x="-2.5" y="-15" width="5" height="4" rx="1" fill="#78350F" stroke="${S}" stroke-width="2" transform="rotate(${a})"/>`).join("")}
+        </g>
+        <!-- Chispas de fricción mental -->
+        ${sparkPop ? `<polygon points="2,4 6,1 4,6 9,5 5,8" fill="#FACC15" stroke="${S}" stroke-width="1.5"/>` : ''}
+        <!-- Globo de texto de sobrepensamiento: ¿Y SI...? -->
+        <g transform="translate(0, ${-22 + thoughtFloat})">
+          <rect x="-22" y="-10" width="44" height="18" rx="6" fill="#FFFFFF" stroke="${S}" stroke-width="3.5"/>
+          <polygon points="-4,8 0,14 4,8" fill="#FFFFFF" stroke="${S}" stroke-width="2"/>
+          <text x="0" y="2" text-anchor="middle" fill="#DC2626" font-size="7.5" font-weight="900" font-family="'Arial Black'">¿Y SI...?</text>
+        </g>
+      </g>`;
+    },
+    tags: ["engranajes", "ansiedad", "rumiacion", "sobrepensar", "chispas", "noche"],
+  },
+  lanza_cueva_prehistorica: {
+    id: "lanza_cueva_prehistorica",
+    name: "Lanza Primitiva de Piedra y Fuego Ancestral",
+    family: "historia_exploracion",
+    defaultPlacement: "right",
+    svg: `<line x1="-12" y1="28" x2="16" y2="-22" stroke="#78350F" stroke-width="5" stroke-linecap="round"/><polygon points="16,-22 24,-32 10,-26" fill="#334155" stroke="${S}" stroke-width="3"/>`,
+    animatedSvg: (f: number) => {
+      const emberPulse = Math.sin(f * 0.4) * 2;
+      return `<g>
+        <!-- Asta de madera rústica tallada -->
+        <line x1="-16" y1="30" x2="16" y2="-22" stroke="#5C2B10" stroke-width="6.5" stroke-linecap="round"/>
+        <line x1="-14" y1="26" x2="14" y2="-18" stroke="#9A3412" stroke-width="3" stroke-linecap="round"/>
+        <!-- Amarre de tendones/cuero -->
+        <rect x="8" y="-22" width="10" height="8" rx="2" fill="#D97706" stroke="${S}" stroke-width="2" transform="rotate(-35 13 -18)"/>
+        <!-- Punta de lanza de obsidiana/pedernal afilada -->
+        <polygon points="16,-22 28,-36 9,-29" fill="#1E293B" stroke="${S}" stroke-width="3.5" stroke-linejoin="round"/>
+        <line x1="14" y1="-24" x2="23" y2="-32" stroke="#94A3B8" stroke-width="2" stroke-linecap="round"/>
+        <!-- Plumas o tiras que cuelgan mecidas por la brisa de la cueva -->
+        <path d="M 10,-14 Q ${6 + emberPulse},-6 4,-2" fill="none" stroke="#F59E0B" stroke-width="3" stroke-linecap="round"/>
+        <path d="M 8,-12 Q ${3 + emberPulse},-4 1,2" fill="none" stroke="#EF4444" stroke-width="2.5" stroke-linecap="round"/>
+      </g>`;
+    },
+    tags: ["lanza", "prehistoria", "caverna", "tigre", "evolucion", "depredador"],
+  },
+  facturas_celular_visto: {
+    id: "facturas_celular_visto",
+    name: "Pila de Facturas y Notificaciones sin Responder",
+    family: "vida_cotidiana",
+    defaultPlacement: "overhead",
+    svg: `<rect x="-18" y="-12" width="24" height="28" rx="2" fill="#F8FAFC" stroke="${S}" stroke-width="3"/><rect x="2" y="-18" width="18" height="32" rx="4" fill="#0F172A" stroke="${S}" stroke-width="3"/><text x="4" y="-4" fill="#38BDF8" font-size="7">✓✓</text>`,
+    animatedSvg: (f: number) => {
+      const floatY = Math.sin(f * 0.16) * 3;
+      const alertShake = Math.sin(f * 0.9) * 1.5;
+      return `<g transform="translate(0, ${floatY})">
+        <!-- Factura en papel doblado con símbolo de vencimiento -->
+        <g transform="translate(-14, 2) rotate(-8)">
+          <rect x="-12" y="-16" width="24" height="30" rx="3" fill="#FEF2F2" stroke="${S}" stroke-width="3.5"/>
+          <line x1="-8" y1="-10" x2="8" y2="-10" stroke="#DC2626" stroke-width="2.5"/>
+          <line x1="-8" y1="-4" x2="4" y2="-4" stroke="#94A3B8" stroke-width="2"/>
+          <line x1="-8" y1="2" x2="6" y2="2" stroke="#94A3B8" stroke-width="2"/>
+          <text x="-6" y="10" fill="#EF4444" font-size="6.5" font-weight="900" font-family="'Arial Black'">$$$</text>
+        </g>
+        <!-- Celular con pantalla encendida a las 3 AM -->
+        <g transform="translate(14, -2) rotate(10) translate(${alertShake}, 0)">
+          <rect x="-11" y="-20" width="22" height="38" rx="5" fill="#0F172A" stroke="${S}" stroke-width="4"/>
+          <rect x="-8" y="-16" width="16" height="30" rx="3" fill="#020617"/>
+          <!-- Hora 03:00 -->
+          <text x="0" y="-10" text-anchor="middle" fill="#94A3B8" font-size="4" font-weight="900">03:00</text>
+          <!-- Mensaje con Doble Check Azul "Visto" -->
+          <rect x="-7" y="-6" width="14" height="12" rx="2" fill="#1E293B"/>
+          <text x="-4" y="2" fill="#38BDF8" font-size="6" font-weight="900">✓✓</text>
+          <!-- Burbuja de alerta roja -->
+          <circle cx="8" cy="-18" r="4.5" fill="#EF4444" stroke="${S}" stroke-width="1.8"/>
+          <text x="8" y="-16" text-anchor="middle" fill="#FFFFFF" font-size="5" font-weight="900">!</text>
+        </g>
+      </g>`;
+    },
+    tags: ["facturas", "celular", "visto", "deudas", "notificaciones", "ansiedad", "cama"],
+  },
+  lampara_noche_interruptor: {
+    id: "lampara_noche_interruptor",
+    name: "Lámpara de Noche con Halo Tranquilizador",
+    family: "vida_cotidiana",
+    defaultPlacement: "left",
+    svg: `<path d="M -12,-8 L 12,-8 L 8,8 L -8,8 Z" fill="#FDE047" stroke="${S}" stroke-width="3.5"/><line x1="0" y1="8" x2="0" y2="24" stroke="${S}" stroke-width="4"/><rect x="-10" y="24" width="20" height="6" rx="2" fill="#475569" stroke="${S}" stroke-width="3"/>`,
+    animatedSvg: (f: number) => {
+      const warmPulse = 0.8 + 0.2 * Math.sin(f * 0.12);
+      const zzzY = (f * 0.12) % 20;
+      return `<g>
+        <!-- Halo luminoso cálido relajante -->
+        <circle cx="0" cy="0" r="32" fill="#FEF08A" fill-opacity="${warmPulse * 0.22}"/>
+        <circle cx="0" cy="0" r="20" fill="#FDE047" fill-opacity="${warmPulse * 0.3}"/>
+        <!-- Pantalla de la lámpara neo-brutalista -->
+        <polygon points="-16,-6 16,-6 11,10 -11,10" fill="#FEF08A" stroke="${S}" stroke-width="4" stroke-linejoin="round"/>
+        <line x1="-12" y1="-2" x2="12" y2="-2" stroke="#F59E0B" stroke-width="2.5"/>
+        <!-- Pie y base de madera -->
+        <line x1="0" y1="10" x2="0" y2="26" stroke="#78350F" stroke-width="4.5"/>
+        <rect x="-12" y="26" width="24" height="6" rx="2.5" fill="#451A03" stroke="${S}" stroke-width="3.5"/>
+        <!-- Cordón o interruptor sutil -->
+        <line x1="6" y1="10" x2="6" y2="17" stroke="${S}" stroke-width="2"/>
+        <circle cx="6" cy="18" r="2" fill="#E2E8F0" stroke="${S}" stroke-width="1.5"/>
+        <!-- Suave Zzz de descanso plácido -->
+        <text x="14" y="${-10 - zzzY}" fill="#38BDF8" font-size="7" font-weight="900" font-family="'Arial Black'" stroke="${S}" stroke-width="1.2" paint-order="stroke" opacity="${1 - zzzY / 20}">z</text>
+      </g>`;
+    },
+    tags: ["lampara", "noche", "luz", "calma", "sueno", "descanso", "paz"],
+  },
+  celda_prision_mandela: {
+    id: "celda_prision_mandela",
+    name: "Celda de Prisión con Silueta que se Desvanece",
+    family: "historia_exploracion",
+    defaultPlacement: "overhead",
+    svg: `<rect x="-24" y="-30" width="48" height="60" rx="4" fill="#334155" stroke="${S}" stroke-width="4"/><line x1="-16" y1="-30" x2="-16" y2="30" stroke="#000000" stroke-width="3"/><line x1="-8" y1="-30" x2="-8" y2="30" stroke="#000000" stroke-width="3"/><line x1="0" y1="-30" x2="0" y2="30" stroke="#000000" stroke-width="3"/><line x1="8" y1="-30" x2="8" y2="30" stroke="#000000" stroke-width="3"/><line x1="16" y1="-30" x2="16" y2="30" stroke="#000000" stroke-width="3"/>`,
+    animatedSvg: (f: number) => {
+      const dissolve = Math.min(1.0, Math.max(0.0, (f - 40) / 30));
+      const barsAlpha = 1.0 - dissolve;
+      return `<g>
+        <!-- Marco de celda penitenciaria -->
+        <rect x="-28" y="-32" width="56" height="64" rx="4" fill="none" stroke="${S}" stroke-width="4.5" opacity="${barsAlpha}"/>
+        <!-- Silueta humana tras los barrotes -->
+        <g opacity="${barsAlpha * 0.7}">
+          <circle cx="0" cy="-10" r="10" fill="#475569" stroke="${S}" stroke-width="2"/>
+          <path d="M -14,24 C -14,4 14,4 14,24 Z" fill="#475569" stroke="${S}" stroke-width="2"/>
+        </g>
+        <!-- Barrotes verticales de hierro -->
+        <g opacity="${barsAlpha}">
+          <line x1="-20" y1="-32" x2="-20" y2="32" stroke="${S}" stroke-width="4"/>
+          <line x1="-10" y1="-32" x2="-10" y2="32" stroke="${S}" stroke-width="4"/>
+          <line x1="0" y1="-32" x2="0" y2="32" stroke="${S}" stroke-width="4"/>
+          <line x1="10" y1="-32" x2="10" y2="32" stroke="${S}" stroke-width="4"/>
+          <line x1="20" y1="-32" x2="20" y2="32" stroke="${S}" stroke-width="4"/>
+          <line x1="-28" y1="0" x2="28" y2="0" stroke="${S}" stroke-width="3.5"/>
+        </g>
+        <!-- Nube de disolución si se desvaneció -->
+        ${dissolve > 0 ? `
+          <g transform="scale(${1 + dissolve * 0.4})">
+            <circle cx="-12" cy="-8" r="${4 * (1 - dissolve)}" fill="#94A3B8"/>
+            <circle cx="14" cy="6" r="${5 * (1 - dissolve)}" fill="#94A3B8"/>
+            <circle cx="0" cy="18" r="${3 * (1 - dissolve)}" fill="#94A3B8"/>
+            <text x="0" y="4" text-anchor="middle" fill="#EF4444" font-size="8" font-weight="900" font-family="'Arial Black'" opacity="${dissolve}">¡ERROR!</text>
+          </g>
+        ` : ''}
+      </g>`;
+    },
+    tags: ["celda", "prision", "mandela", "desvanecer", "recuerdo", "error", "historia"],
+  },
+  linea_tiempo_mandela_tv: {
+    id: "linea_tiempo_mandela_tv",
+    name: "Televisión Antigua con Estática y Gran Cruz Roja",
+    family: "tecnologia",
+    defaultPlacement: "overhead",
+    svg: `<rect x="-24" y="-18" width="48" height="36" rx="4" fill="#1E293B" stroke="${S}" stroke-width="4"/><rect x="-18" y="-12" width="28" height="24" rx="2" fill="#64748B"/><line x1="-10" y1="-28" x2="-2" y2="-18" stroke="${S}" stroke-width="3"/><line x1="10" y1="-28" x2="2" y2="-18" stroke="${S}" stroke-width="3"/>`,
+    animatedSvg: (f: number) => {
+      const staticGlitch = (f % 4 < 2);
+      const xPulse = (f % 8 < 4);
+      return `<g>
+        <!-- Antena de cuernos -->
+        <line x1="-12" y1="-30" x2="-4" y2="-18" stroke="${S}" stroke-width="3.5" stroke-linecap="round"/>
+        <line x1="12" y1="-30" x2="4" y2="-18" stroke="${S}" stroke-width="3.5" stroke-linecap="round"/>
+        <circle cx="-12" cy="-30" r="2.5" fill="#EF4444"/>
+        <circle cx="12" cy="-30" r="2.5" fill="#EF4444"/>
+        <!-- Gabinete retro de TV -->
+        <rect x="-26" y="-18" width="52" height="38" rx="6" fill="#334155" stroke="${S}" stroke-width="4"/>
+        <!-- Pantalla CRT con estática o silueta falsa de noticiero -->
+        <rect x="-21" y="-14" width="30" height="30" rx="3" fill="#020617"/>
+        <g opacity="0.6">
+          <ellipse cx="-6" cy="4" rx="7" ry="5" fill="${staticGlitch ? '#FFFFFF' : '#94A3B8'}"/>
+          <circle cx="-6" cy="-4" r="4.5" fill="${staticGlitch ? '#FFFFFF' : '#94A3B8'}"/>
+        </g>
+        <!-- Controles laterales de sintonizador -->
+        <circle cx="17" cy="-6" r="3.5" fill="#64748B" stroke="${S}" stroke-width="2"/>
+        <circle cx="17" cy="4" r="3.5" fill="#64748B" stroke="${S}" stroke-width="2"/>
+        <line x1="13" y1="12" x2="21" y2="12" stroke="${S}" stroke-width="2"/>
+        <!-- Gran Cruz Roja de Desmentido 'X' -->
+        <g transform="translate(-6, 1)">
+          <line x1="-12" y1="-12" x2="12" y2="12" stroke="#EF4444" stroke-width="${xPulse ? 6 : 4.5}" stroke-linecap="round"/>
+          <line x1="12" y1="-12" x2="-12" y2="12" stroke="#EF4444" stroke-width="${xPulse ? 6 : 4.5}" stroke-linecap="round"/>
+        </g>
+      </g>`;
+    },
+    tags: ["tv", "television", "estatica", "noticia_falsa", "mandela", "pantalla", "cruz_roja"],
+  },
+  red_pensamientos_fiona_siluetas: {
+    id: "red_pensamientos_fiona_siluetas",
+    name: "Red de Pensamientos Compartidos de Fiona Broome",
+    family: "educacion_ciencia",
+    defaultPlacement: "overhead",
+    svg: `<circle cx="-14" cy="0" r="14" fill="#F43F5E" stroke="${S}" stroke-width="3"/><circle cx="16" cy="-10" r="10" fill="#E2E8F0" stroke="${S}" stroke-width="2.5"/><circle cx="18" cy="12" r="8" fill="#E2E8F0" stroke="${S}" stroke-width="2.5"/><path d="M 0,0 L 8,-6 M 0,0 L 10,8" stroke="${S}" stroke-width="2"/>`,
+    animatedSvg: (f: number) => {
+      const wave = Math.sin(f * 0.2) * 3;
+      return `<g>
+        <!-- Silueta de Fiona Broome con peinado elegante -->
+        <g transform="translate(-18, 12)">
+          <circle cx="0" cy="-14" r="9" fill="#F43F5E" stroke="${S}" stroke-width="3"/>
+          <path d="M -10,-18 Q 0,-26 8,-16 Q 10,-8 6,-4" fill="#9F1239"/>
+          <path d="M -12,12 C -12,-2 12,-2 12,12 Z" fill="#BE123C" stroke="${S}" stroke-width="3"/>
+        </g>
+        <!-- Nube de pensamiento principal con celda dentro -->
+        <g transform="translate(6, -14) translate(0, ${wave})">
+          <rect x="-14" y="-12" width="28" height="24" rx="8" fill="#FFFFFF" stroke="${S}" stroke-width="3"/>
+          <line x1="-8" y1="-8" x2="-8" y2="8" stroke="#000000" stroke-width="2"/>
+          <line x1="0" y1="-8" x2="0" y2="8" stroke="#000000" stroke-width="2"/>
+          <line x1="8" y1="-8" x2="8" y2="8" stroke="#000000" stroke-width="2"/>
+        </g>
+        <!-- Nubes satélites conectadas a otras mentes -->
+        <g transform="translate(24, 16)">
+          <circle cx="0" cy="0" r="8" fill="#FEF08A" stroke="${S}" stroke-width="2"/>
+          <text x="0" y="3" text-anchor="middle" font-size="7" font-weight="900" font-family="'Arial Black'">?</text>
+        </g>
+        <!-- Líneas punteadas de conexión neural -->
+        <line x1="-12" y1="-6" x2="-2" y2="-12" stroke="${S}" stroke-width="2" stroke-dasharray="3 2"/>
+        <line x1="16" y1="-4" x2="22" y2="10" stroke="#F43F5E" stroke-width="2.5" stroke-dasharray="3 2"/>
+      </g>`;
+    },
+    tags: ["pensamiento", "fiona", "red", "contagio", "memoria", "siluetas", "nube"],
+  },
+  caballete_monopoly_pikachu: {
+    id: "caballete_monopoly_pikachu",
+    name: "Caballete Artístico con Monóculo y Cola de Pikachu Borrándose",
+    family: "reacciones_humor",
+    defaultPlacement: "overhead",
+    svg: `<rect x="-24" y="-20" width="48" height="38" rx="3" fill="#FEF9C3" stroke="${S}" stroke-width="3.5"/><circle cx="-8" cy="-4" r="8" fill="#FFFFFF" stroke="${S}" stroke-width="2"/><circle cx="12" cy="-4" r="4" fill="#FFE600"/>`,
+    animatedSvg: (f: number) => {
+      const eraseProgress = Math.min(1.0, Math.max(0.0, (f % 90) / 45));
+      const monocleOpacity = Math.max(0, 1 - eraseProgress * 1.5);
+      const eraserWobble = Math.sin(f * 0.8) * 4;
+      return `<g>
+        <!-- Lienzo sobre caballete -->
+        <rect x="-26" y="-24" width="52" height="46" rx="4" fill="#FFFFFF" stroke="${S}" stroke-width="4"/>
+        <line x1="0" y1="-24" x2="0" y2="22" stroke="#E2E8F0" stroke-width="2"/>
+        
+        <!-- Lado Izquierdo: Señor Monopoly con Chistera -->
+        <g transform="translate(-13, -2)">
+          <!-- Sombrero de copa -->
+          <rect x="-8" y="-18" width="16" height="10" fill="#0F172A" stroke="${S}" stroke-width="1.8"/>
+          <line x1="-11" y1="-8" x2="11" y2="-8" stroke="${S}" stroke-width="2.5"/>
+          <!-- Cara con bigote blanco -->
+          <circle cx="0" cy="-1" r="6.5" fill="#F8FAFC" stroke="${S}" stroke-width="1.8"/>
+          <path d="M -5,1 Q 0,-1 5,1 Q 0,4 -5,1 Z" fill="#FFFFFF" stroke="${S}" stroke-width="1.5"/>
+          <!-- Monóculo dorado que desaparece -->
+          <g opacity="${monocleOpacity}">
+            <circle cx="3" cy="-3" r="3.2" fill="#FEF08A" stroke="#B45309" stroke-width="1.8"/>
+            <line x1="6" y1="-1" x2="8" y2="6" stroke="#B45309" stroke-width="1.2"/>
+          </g>
+        </g>
+
+        <!-- Lado Derecho: Cola de Pikachu en Zigzag -->
+        <g transform="translate(13, 0)">
+          <!-- Cola dorada tipo rayo -->
+          <path d="M -6,14 L -1,8 L 3,11 L 8,4 L 12,6 L 6,18 Z" fill="#FFE600" stroke="${S}" stroke-width="2"/>
+          <!-- Punta negra falsa que se borra -->
+          <g opacity="${monocleOpacity}">
+            <polygon points="8,4 12,6 10,0 7,2" fill="#000000"/>
+          </g>
+        </g>
+
+        <!-- Goma de borrar animada borrando la ilusión -->
+        <g transform="translate(${eraseProgress > 0.1 && eraseProgress < 0.9 ? eraserWobble : -99}, -6)">
+          <rect x="-6" y="-4" width="12" height="8" rx="2" fill="#F43F5E" stroke="${S}" stroke-width="2"/>
+          <rect x="0" y="-4" width="6" height="8" fill="#3B82F6"/>
+        </g>
+      </g>`;
+    },
+    tags: ["monopoly", "pikachu", "caballete", "monoculo", "cola", "dibujo", "goma", "borrar"],
+  },
+  experimento_loftus_choque_autos: {
+    id: "experimento_loftus_choque_autos",
+    name: "Choque de Autos del Experimento de Elizabeth Loftus",
+    family: "educacion_ciencia",
+    defaultPlacement: "overhead",
+    svg: `<rect x="-24" y="-14" width="22" height="12" rx="3" fill="#3B82F6" stroke="${S}" stroke-width="3"/><rect x="2" y="-14" width="22" height="12" rx="3" fill="#EF4444" stroke="${S}" stroke-width="3"/><polygon points="2,-16 6,-8 0,-6" fill="#FACC15"/>`,
+    animatedSvg: (f: number) => {
+      const shakeGlass = Math.sin(f * 0.9) * 2;
+      return `<g>
+        <!-- Auto Azul (Velocidad baja: ¿Se tocaron?) -->
+        <g transform="translate(-14, -8)">
+          <rect x="-12" y="-6" width="24" height="14" rx="4" fill="#3B82F6" stroke="${S}" stroke-width="3"/>
+          <rect x="-6" y="-11" width="14" height="6" rx="2" fill="#93C5FD" stroke="${S}" stroke-width="2"/>
+          <circle cx="-7" cy="8" r="3.5" fill="#0F172A"/>
+          <circle cx="7" cy="8" r="3.5" fill="#0F172A"/>
+          <text x="0" y="2" text-anchor="middle" fill="#FFFFFF" font-size="5" font-weight="900">30 km/h</text>
+        </g>
+        <!-- Auto Rojo (Impacto violento: ¿Se estrellaron?) -->
+        <g transform="translate(14, 8)">
+          <rect x="-12" y="-6" width="24" height="14" rx="4" fill="#EF4444" stroke="${S}" stroke-width="3"/>
+          <rect x="-8" y="-11" width="14" height="6" rx="2" fill="#FCA5A5" stroke="${S}" stroke-width="2"/>
+          <circle cx="-7" cy="8" r="3.5" fill="#0F172A"/>
+          <circle cx="7" cy="8" r="3.5" fill="#0F172A"/>
+          <!-- Frente abollado -->
+          <polygon points="-12,-4 -16,2 -12,8" fill="#B91C1C" stroke="${S}" stroke-width="2"/>
+          <!-- Cristales falsos volando en círculo rojo -->
+          <g transform="translate(-18, -12) translate(${shakeGlass}, 0)">
+            <circle cx="0" cy="0" r="10" fill="none" stroke="#DC2626" stroke-width="2" stroke-dasharray="3 2"/>
+            <polygon points="-4,-2 0,-7 3,-3" fill="#67E8F9" stroke="${S}" stroke-width="1.2"/>
+            <polygon points="2,2 6,-2 4,5" fill="#67E8F9" stroke="${S}" stroke-width="1.2"/>
+          </g>
+        </g>
+      </g>`;
+    },
+    tags: ["autos", "choque", "loftus", "experimento", "velocidad", "cristales", "psicologia"],
+  },
+  vhs_rompecabezas_cajon_memoria: {
+    id: "vhs_rompecabezas_cajon_memoria",
+    name: "VHS Roto y Rompecabezas de Memoria Reconstructiva",
+    family: "educacion_ciencia",
+    defaultPlacement: "overhead",
+    svg: `<rect x="-24" y="-12" width="24" height="18" rx="2" fill="#0F172A" stroke="${S}" stroke-width="3"/><rect x="4" y="-14" width="20" height="20" rx="3" fill="#10B981" stroke="${S}" stroke-width="3"/>`,
+    animatedSvg: (f: number) => {
+      const piecePush = Math.sin(f * 0.25) * 3;
+      return `<g>
+        <!-- Videocasete VHS antiguo con cinta rota -->
+        <g transform="translate(-14, 2)">
+          <rect x="-12" y="-16" width="24" height="30" rx="3" fill="#1E293B" stroke="${S}" stroke-width="3.5"/>
+          <circle cx="-5" cy="-4" r="4.5" fill="#FFFFFF" stroke="${S}" stroke-width="1.8"/>
+          <circle cx="5" cy="-4" r="4.5" fill="#FFFFFF" stroke="${S}" stroke-width="1.8"/>
+          <!-- Grieta diagonal en el VHS -->
+          <line x1="-10" y1="-14" x2="8" y2="12" stroke="#EF4444" stroke-width="2.5"/>
+          <text x="0" y="9" text-anchor="middle" fill="#94A3B8" font-size="4" font-weight="900">GRABACIÓN</text>
+        </g>
+
+        <!-- Rompecabezas incompleto rellenado con pieza intrusa -->
+        <g transform="translate(14, -2)">
+          <rect x="-10" y="-14" width="24" height="24" rx="3" fill="#0D9488" stroke="${S}" stroke-width="3"/>
+          <line x1="2" y1="-14" x2="2" y2="10" stroke="${S}" stroke-width="2"/>
+          <line x1="-10" y1="-2" x2="14" y2="-2" stroke="${S}" stroke-width="2"/>
+          <!-- Pieza intrusa de color chillón forzada en el hueco -->
+          <g transform="translate(${piecePush}, 0)">
+            <rect x="3" y="-1" width="10" height="10" rx="2" fill="#F43F5E" stroke="${S}" stroke-width="2"/>
+            <text x="8" y="6" text-anchor="middle" fill="#FFFFFF" font-size="5" font-weight="900">!</text>
+          </g>
+        </g>
+      </g>`;
+    },
+    tags: ["vhs", "rompecabezas", "puzzle", "cajon", "memoria", "reconstruccion", "cerebro"],
+  },
+  multitud_piezas_falsas_lupa: {
+    id: "multitud_piezas_falsas_lupa",
+    name: "Lupa Examinando Piezas Falsas de la Multitud",
+    family: "herramientas_objetos",
+    defaultPlacement: "overhead",
+    svg: `<circle cx="-4" cy="-4" r="14" fill="#E0F2FE" stroke="${S}" stroke-width="4"/><line x1="6" y1="6" x2="20" y2="20" stroke="#78350F" stroke-width="5" stroke-linecap="round"/><text x="-4" y="2" text-anchor="middle" fill="#EF4444" font-size="12" font-weight="900">X</text>`,
+    animatedSvg: (f: number) => {
+      const wobble = Math.sin(f * 0.15) * 3;
+      return `<g transform="translate(0, ${wobble})">
+        <!-- Pieza de rompecabezas flotante bajo examen -->
+        <rect x="-14" y="-14" width="24" height="24" rx="4" fill="#F59E0B" stroke="${S}" stroke-width="3.5"/>
+        <circle cx="-2" cy="-14" r="3.5" fill="#F59E0B" stroke="${S}" stroke-width="2"/>
+        
+        <!-- Lupa con lente de cristal y reflejo -->
+        <circle cx="2" cy="0" r="18" fill="#38BDF8" fill-opacity="0.25" stroke="#D97706" stroke-width="4.5"/>
+        <line x1="14" y1="13" x2="28" y2="27" stroke="#92400E" stroke-width="6" stroke-linecap="round"/>
+        <!-- Gran X roja sobre la pieza equivocada -->
+        <line x1="-8" y1="-8" x2="8" y2="8" stroke="#DC2626" stroke-width="4.5" stroke-linecap="round"/>
+        <line x1="8" y1="-8" x2="-8" y2="8" stroke="#DC2626" stroke-width="4.5" stroke-linecap="round"/>
+      </g>`;
+    },
+    tags: ["lupa", "multitud", "pieza", "error", "falso", "examen", "cruz_roja"],
+  },
+  nube_sombrero_rebobinado_vhs: {
+    id: "nube_sombrero_rebobinado_vhs",
+    name: "Nube de Pensamiento con Sombrero en Duda y Bucle",
+    family: "reacciones_humor",
+    defaultPlacement: "overhead",
+    svg: `<path d="M -16,4 C -22,4 -22,-8 -14,-8 C -14,-16 0,-18 6,-10 C 14,-16 24,-6 20,4 Z" fill="#FFFFFF" stroke="${S}" stroke-width="3"/><rect x="-8" y="-4" width="16" height="8" rx="2" fill="#0F172A"/>`,
+    animatedSvg: (f: number) => {
+      const floatY = Math.sin(f * 0.18) * 3;
+      return `<g transform="translate(0, ${floatY})">
+        <!-- Nube de pensamiento neo-brutalista -->
+        <path
+          d="M -22,6 C -30,6 -30,-8 -18,-8 C -18,-20 2,-22 10,-12 C 22,-20 34,-6 28,6 C 34,18 16,24 6,18 C -2,24 -18,22 -22,6 Z"
+          fill="#FFFFFF"
+          stroke="${S}"
+          stroke-width="4"
+        />
+        <!-- Silueta fantasma de sombrero con interrogación -->
+        <g transform="translate(-4, -6)" opacity="0.8">
+          <rect x="-8" y="-12" width="16" height="12" rx="2" fill="#0F172A" stroke="${S}" stroke-width="2"/>
+          <ellipse cx="0" cy="0" rx="12" ry="2.5" fill="#0F172A" stroke="${S}" stroke-width="2"/>
+        </g>
+        <g transform="translate(14, -8)">
+          <text x="0" y="4" text-anchor="middle" fill="#EF4444" font-size="14" font-weight="900" font-family="'Arial Black'">?</text>
+        </g>
+        <!-- Flechas de bucle hacia el inicio -->
+        <g transform="translate(0, 15)">
+          <path d="M -10,0 A 8,8 0 1,1 8,2" fill="none" stroke="#2563EB" stroke-width="2.5" stroke-linecap="round"/>
+          <polygon points="8,2 12,-1 6,-2" fill="#2563EB"/>
+        </g>
+      </g>`;
+    },
+    tags: ["sombrero", "nube", "duda", "pregunta", "bucle", "cierre", "cabeza"],
+  },
+  mascara_buceo: {
+    id: "mascara_buceo",
+    name: "Máscara de Buceo y Snorkel",
+    family: "historia_exploracion",
+    defaultPlacement: "overhead",
+    svg: `<ellipse cx="0" cy="0" rx="22" ry="14" fill="#38BDF8" fill-opacity="0.75" stroke="${S}" stroke-width="3.5"/><path d="M 16,0 C 26,-6 26,-24 22,-30" fill="none" stroke="#F97316" stroke-width="4.5" stroke-linecap="round"/>`,
+    animatedSvg: (f: number) => {
+      const bubbleY = (f * 1.5) % 36;
+      return `<g>
+        <!-- Gafas de buceo con lente cian translúcido -->
+        <ellipse cx="0" cy="0" rx="24" ry="15" fill="#38BDF8" fill-opacity="0.8" stroke="${S}" stroke-width="4"/>
+        <path d="M -16,-6 Q -8,-11 4,-6" stroke="#FFFFFF" stroke-width="2.5" stroke-linecap="round" fill="none" opacity="0.9"/>
+        <!-- Correa de silicona negra -->
+        <path d="M -24,0 C -34,-2 -34,-8 -24,-10" fill="none" stroke="${S}" stroke-width="3.5"/>
+        <path d="M 24,0 C 34,-2 34,-8 24,-10" fill="none" stroke="${S}" stroke-width="3.5"/>
+        <!-- Tubo de snorkel naranja -->
+        <path d="M 18,2 C 28,-4 30,-22 26,-36" fill="none" stroke="#F97316" stroke-width="5" stroke-linecap="round"/>
+        <circle cx="26" cy="-38" r="3" fill="#EF4444" stroke="${S}" stroke-width="1.5"/>
+        <!-- Burbujas saliendo del snorkel -->
+        <circle cx="${26 + Math.sin(f * 0.2) * 3}" cy="${-40 - bubbleY}" r="${2 + (bubbleY % 4)}" fill="#E0F2FE" stroke="${S}" stroke-width="1.2" opacity="0.85"/>
+      </g>`;
+    },
+    tags: ["buceo", "snorkel", "mascara", "submarino", "mar", "agua"],
+  },
+  lupa_gigante_arqueologia: {
+    id: "lupa_gigante_arqueologia",
+    name: "Lupa Gigante de Investigación Científica",
+    family: "educacion_ciencia",
+    defaultPlacement: "right",
+    svg: `<circle cx="0" cy="-8" r="22" fill="#E0F2FE" stroke="#F59E0B" stroke-width="5"/><line x1="14" y1="6" x2="30" y2="24" stroke="#78350F" stroke-width="6" stroke-linecap="round"/>`,
+    animatedSvg: (f: number) => {
+      const shimmer = Math.sin(f * 0.15) * 6;
+      return `<g>
+        <!-- Mango de madera noble -->
+        <line x1="14" y1="8" x2="32" y2="26" stroke="#78350F" stroke-width="7" stroke-linecap="round"/>
+        <line x1="12" y1="6" x2="16" y2="10" stroke="#F59E0B" stroke-width="6"/>
+        <!-- Marco circular dorado -->
+        <circle cx="0" cy="-8" r="23" fill="#E0F2FE" fill-opacity="0.85" stroke="#F59E0B" stroke-width="5"/>
+        <circle cx="0" cy="-8" r="21" fill="none" stroke="${S}" stroke-width="2"/>
+        <!-- Reflejo diagonal de luz en el cristal -->
+        <path d="M ${-12 + shimmer},-18 Q ${shimmer},-8 ${12 + shimmer},2" fill="none" stroke="#FFFFFF" stroke-width="3.5" stroke-linecap="round" opacity="0.9"/>
+      </g>`;
+    },
+    tags: ["lupa", "investigacion", "ciencia", "arqueologia", "microscopio", "aumento"],
+  },
+  bloques_comparativa_hormigon: {
+    id: "bloques_comparativa_hormigon",
+    name: "Muestras de Hormigón Moderno vs Romano",
+    family: "educacion_ciencia",
+    defaultPlacement: "both",
+    svg: `<rect x="-30" y="-12" width="26" height="24" rx="4" fill="#94A3B8" stroke="${S}" stroke-width="3"/><rect x="6" y="-12" width="26" height="24" rx="4" fill="#D97706" stroke="${S}" stroke-width="3"/>`,
+    animatedSvg: (f: number) => {
+      const healFlash = Math.sin(f * 0.25) > 0.5 ? 1 : 0;
+      return `<g>
+        <!-- Bloque Moderno (Izquierda, agrietado con óxido) -->
+        <rect x="-32" y="-14" width="28" height="28" rx="4" fill="#94A3B8" stroke="${S}" stroke-width="3.5"/>
+        <path d="M -24,-14 L -18,-2 L -22,8 L -16,14" fill="none" stroke="#EA580C" stroke-width="2.5"/>
+        <!-- Bloque Romano (Derecha, autorreparado con destello dorado) -->
+        <rect x="6" y="-14" width="28" height="28" rx="4" fill="#D97706" stroke="${S}" stroke-width="3.5"/>
+        <circle cx="14" cy="-4" r="3.5" fill="#FEF08A" stroke="${S}" stroke-width="1.5"/>
+        <circle cx="24" cy="6" r="3" fill="#FEF08A" stroke="${S}" stroke-width="1.5"/>
+        ${healFlash ? `<polygon points="20,-16 22,-10 28,-8 22,-6 20,0 18,-6 12,-8 18,-10" fill="#22C55E"/>` : ""}
+      </g>`;
+    },
+    tags: ["bloques", "hormigon", "romano", "moderno", "comparativa", "materiales"],
+  },
+  perro_xoloitzcuintle: {
+    id: "perro_xoloitzcuintle",
+    name: "Perro Xoloitzcuintle Guía del Mictlán",
+    family: "historia_exploracion",
+    defaultPlacement: "right",
+    svg: `<path d="M -30,12 C -40,4 -36,-12 -20,-12 C -8,-12 0,-4 8,6 L 24,0 L 36,-14 L 42,-4 L 32,12 L 26,24 Z" fill="#334155" stroke="${S}" stroke-width="5"/><ellipse cx="-10" cy="2" rx="14" ry="7" fill="#FDE047"/>`,
+    animatedSvg: (f: number, _progress = 0, state?: string) => {
+      const isSitting = state === "sentado";
+      const isPetting = state === "acariciar";
+      const tailAngle = Math.sin(f * (isPetting ? 0.6 : 0.35)) * (isPetting ? 28 : 18);
+      const breathe = Math.sin(f * 0.18) * 2;
+      const leg1 = isSitting ? 0 : Math.sin(f * 0.4) * 12;
+      const eyeBlink = !isPetting && (f % 65 < 4) ? 0.2 : 4;
+      const headTilt = isSitting ? -16 : isPetting ? -8 : 0;
+
+      return `<g transform="translate(0, ${n(breathe * 0.6)})">
+        <!-- Resplandor áurico sagrado de la mancha del lomo -->
+        <ellipse cx="-8" cy="2" rx="26" ry="14" fill="#FDE047" opacity="0.3" filter="blur(4px)"/>
+
+        <!-- Cola con meneo amigable -->
+        <g transform="translate(-32, 2) rotate(${n(tailAngle)})">
+          <path d="M 0,0 C -12,-8 -22,-20 -18,-32 C -15,-20 -6,-8 0,0" fill="#334155" stroke="${S}" stroke-width="4.5" stroke-linecap="round"/>
+        </g>
+
+        <!-- Patas traseras (animadas o sentadas) -->
+        ${isSitting ? `
+          <path d="M -28,14 C -38,26 -30,38 -12,38 L 4,38" stroke="${S}" stroke-width="6.5" stroke-linecap="round" fill="none"/>
+        ` : `
+          <path d="M -26,14 L ${n(-26 + leg1)},36 L ${n(-18 + leg1)},37" stroke="${S}" stroke-width="6.5" stroke-linecap="round" fill="none"/>
+          <path d="M -14,14 L ${n(-14 - leg1)},36 L ${n(-6 - leg1)},37" stroke="${S}" stroke-width="6.5" stroke-linecap="round" fill="none"/>
+        `}
+
+        <!-- Cuerpo musculoso y estilizado de perro xoloitzcuintle -->
+        <ellipse cx="-4" cy="10" rx="30" ry="18" fill="#334155" stroke="${S}" stroke-width="5.5"/>
+
+        <!-- Mancha clara sagrada en el lomo (el xoloitzcuintle que ayuda a cruzar las almas) -->
+        <path d="M -18,0 C -10,-4 6,-4 14,0 C 10,8 -2,10 -14,6 Z" fill="#FDE047" stroke="${S}" stroke-width="3"/>
+
+        <!-- Patas delanteras -->
+        ${isSitting ? `
+          <path d="M 16,14 L 16,38 L 26,38" stroke="${S}" stroke-width="6.5" stroke-linecap="round" fill="none"/>
+          <path d="M 24,14 L 24,38 L 34,38" stroke="${S}" stroke-width="6.5" stroke-linecap="round" fill="none"/>
+        ` : `
+          <path d="M 12,14 L ${n(12 - leg1)},36 L ${n(20 - leg1)},37" stroke="${S}" stroke-width="6.5" stroke-linecap="round" fill="none"/>
+          <path d="M 24,14 L ${n(24 + leg1)},36 L ${n(32 + leg1)},37" stroke="${S}" stroke-width="6.5" stroke-linecap="round" fill="none"/>
+        `}
+
+        <!-- Cuello y pecho vigoroso -->
+        <path d="M 10,4 L 22,-14 L 34,-10 L 22,14 Z" fill="#334155" stroke="${S}" stroke-width="4.5"/>
+
+        <!-- Cabeza con hocico noble y giro expresivo -->
+        <g transform="translate(26, -14) rotate(${n(headTilt)})">
+          <ellipse cx="0" cy="0" rx="14" ry="11" fill="#334155" stroke="${S}" stroke-width="5"/>
+          <!-- Hocico y boca -->
+          <path d="M 8,-4 L 24,2 L 12,8 Z" fill="#1E293B" stroke="${S}" stroke-width="4.5" stroke-linejoin="round"/>
+          <circle cx="23" cy="2" r="3" fill="#000000"/>
+          ${isPetting ? `
+            <!-- Lengüita feliz jadeando al ser acariciado -->
+            <path d="M 14,8 C 16,14 10,16 8,10 Z" fill="#F43F5E"/>
+          ` : ''}
+
+          <!-- Orejas puntiagudas mexicas -->
+          <polygon points="-6,-6 -2,-28 6,-8" fill="#334155" stroke="${S}" stroke-width="4.5" stroke-linejoin="round"/>
+          <polygon points="-3,-8 -1,-22 4,-10" fill="#FDE047" opacity="0.75"/>
+          <polygon points="-12,-4 -10,-24 -4,-6" fill="#1E293B" stroke="${S}" stroke-width="3.5" stroke-linejoin="round"/>
+
+          <!-- Ojo alegre y vivaz -->
+          ${isPetting ? `
+            <path d="M 0,-2 Q 4,-6 8,-2" fill="none" stroke="#FEF08A" stroke-width="3" stroke-linecap="round"/>
+          ` : `
+            <ellipse cx="4" cy="-2" rx="3.5" ry="${n(eyeBlink)}" fill="#FEF08A"/>
+            <circle cx="4" cy="-2" r="1.8" fill="#000000"/>
+          `}
+        </g>
+      </g>`;
+    },
+    tags: ["perro", "xoloitzcuintle", "mictlan", "guia", "mexica", "mascota", "ofrenda"],
+  },
+  altar_tres_niveles_vela: {
+    id: "altar_tres_niveles_vela",
+    name: "Altar Tradicional de Tres Niveles con Vela",
+    family: "historia_exploracion",
+    defaultPlacement: "left",
+    svg: `<rect x="-30" y="8" width="60" height="16" fill="#7E22CE" stroke="${S}" stroke-width="3.5"/><rect x="-22" y="-4" width="44" height="12" fill="#EA580C" stroke="${S}" stroke-width="3.5"/><rect x="-14" y="-16" width="28" height="12" fill="#F59E0B" stroke="${S}" stroke-width="3.5"/>`,
+    animatedSvg: (f: number) => {
+      const flameWobble = Math.sin(f * 0.4) * 2.5;
+      const flameHeight = 12 + Math.sin(f * 0.25) * 2;
+      return `<g>
+        <!-- Nivel 3 (base amplia morada con papel picado) -->
+        <rect x="-34" y="6" width="68" height="18" rx="2" fill="#6B21A8" stroke="${S}" stroke-width="4"/>
+        <path d="M -32,24 L -28,18 L -24,24 L -20,18 L -16,24 L -12,18 L -8,24 L -4,18 L 0,24 L 4,18 L 8,24 L 12,18 L 16,24 L 20,18 L 24,24 L 28,18 L 32,24" fill="#F43F5E" stroke="${S}" stroke-width="2"/>
+        <!-- Nivel 2 (intermedio naranja) -->
+        <rect x="-25" y="-6" width="50" height="13" rx="2" fill="#EA580C" stroke="${S}" stroke-width="3.5"/>
+        <circle cx="-16" cy="0" r="4.5" fill="#F59E0B" stroke="${S}" stroke-width="2"/>
+        <circle cx="16" cy="0" r="4.5" fill="#F59E0B" stroke="${S}" stroke-width="2"/>
+        <!-- Nivel 1 (cúspide amarilla) -->
+        <rect x="-16" y="-18" width="32" height="12" rx="2" fill="#F59E0B" stroke="${S}" stroke-width="3.5"/>
+        <!-- Vela blanca central en la cúspide -->
+        <rect x="-4" y="-30" width="8" height="13" rx="1.5" fill="#F8FAFC" stroke="${S}" stroke-width="2.5"/>
+        <line x1="0" y1="-30" x2="0" y2="-34" stroke="${S}" stroke-width="2"/>
+        <!-- Llama animada de la vela -->
+        <path d="M 0,-34 C ${-4 + flameWobble},${-34 - flameHeight*0.6} ${flameWobble},${-34 - flameHeight} ${flameWobble},${-34 - flameHeight} C ${flameWobble},${-34 - flameHeight} ${4 + flameWobble},${-34 - flameHeight*0.6} 0,-34 Z" fill="#F59E0B" stroke="#EA580C" stroke-width="1.5"/>
+        <ellipse cx="${flameWobble * 0.5}" cy="${-38}" rx="2" ry="3.5" fill="#FEF08A"/>
+        <!-- Flores de cempasúchil decorando los costados -->
+        <circle cx="-28" cy="10" r="4.5" fill="#F97316" stroke="${S}" stroke-width="2"/>
+        <circle cx="28" cy="10" r="4.5" fill="#F97316" stroke="${S}" stroke-width="2"/>
+      </g>`;
+    },
+    tags: ["altar", "ofrenda", "vela", "dia_de_muertos", "mexica", "cempasuchil"],
+  },
+  codice_mexica_abierto: {
+    id: "codice_mexica_abierto",
+    name: "Códice Mexica Abierto en Acordeón",
+    family: "historia_exploracion",
+    defaultPlacement: "both",
+    svg: `<path d="M -30,-14 L -10,-10 L 10,-14 L 30,-10 L 30,14 L 10,10 L -10,14 L -30,10 Z" fill="#FEF3C7" stroke="${S}" stroke-width="3.5"/>`,
+    animatedSvg: (f: number) => {
+      const flap = Math.sin(f * 0.18) * 2;
+      return `<g>
+        <!-- Hojas de papel amate plegadas en acordeón -->
+        <!-- Hoja 1 -->
+        <polygon points="-32,${-14 + flap} -12,${-10 - flap} -12,${12 - flap} -32,${8 + flap}" fill="#FDE68A" stroke="${S}" stroke-width="3.5" stroke-linejoin="round"/>
+        <!-- Glifo Sol Tonatiuh rojo -->
+        <circle cx="-22" cy="0" r="5" fill="#DC2626" stroke="${S}" stroke-width="2"/>
+        <line x1="-22" y1="-8" x2="-22" y2="-6" stroke="${S}" stroke-width="2"/>
+        <line x1="-22" y1="6" x2="-22" y2="8" stroke="${S}" stroke-width="2"/>
+        <!-- Hoja 2 (central) -->
+        <polygon points="-12,${-10 - flap} 8,${-14 + flap} 8,${8 + flap} -12,${12 - flap}" fill="#FEF3C7" stroke="${S}" stroke-width="3.5" stroke-linejoin="round"/>
+        <!-- Glifo Agua / Chalchiuhtlicue azul -->
+        <path d="M -4,-4 Q -2,4 0,0 Q 2,-4 4,2" fill="none" stroke="#0284C7" stroke-width="3" stroke-linecap="round"/>
+        <circle cx="0" cy="5" r="2" fill="#0284C7"/>
+        <!-- Hoja 3 -->
+        <polygon points="8,${-14 + flap} 28,${-10 - flap} 28,${12 - flap} 8,${8 + flap}" fill="#FDE68A" stroke="${S}" stroke-width="3.5" stroke-linejoin="round"/>
+        <!-- Glifo Cráneo / Mictlán negro -->
+        <ellipse cx="18" cy="-1" rx="4.5" ry="4" fill="#334155" stroke="${S}" stroke-width="1.8"/>
+        <rect x="16" y="3" width="4" height="2" fill="#E2E8F0"/>
+      </g>`;
+    },
+    tags: ["codice", "mexica", "sahagun", "manuscrito", "historia", "jeroglifico", "amate"],
+  },
+  cuenco_agua_petalos: {
+    id: "cuenco_agua_petalos",
+    name: "Cuenco de Barro con Agua y Pétalos de Cempasúchil",
+    family: "historia_exploracion",
+    defaultPlacement: "right",
+    svg: `<path d="M -22,-2 C -20,16 20,16 22,-2 Z" fill="#C2410C" stroke="${S}" stroke-width="3.5"/><ellipse cx="0" cy="-2" rx="22" ry="7" fill="#38BDF8" stroke="${S}" stroke-width="2"/>`,
+    animatedSvg: (f: number) => {
+      const ripple = Math.sin(f * 0.2) * 1.5;
+      const petalaX = Math.sin(f * 0.12) * 2;
+      return `<g>
+        <!-- Cuerpo de barro cocido terracota -->
+        <path d="M -24,-2 C -22,18 22,18 24,-2 Z" fill="#C2410C" stroke="${S}" stroke-width="4"/>
+        <ellipse cx="0" cy="15" rx="10" ry="3" fill="#9A3412" stroke="${S}" stroke-width="2"/>
+        <!-- Superficie de agua cristalina azul con reflejos -->
+        <ellipse cx="0" cy="-2" rx="23" ry="7.5" fill="#38BDF8" stroke="${S}" stroke-width="3.5"/>
+        <ellipse cx="0" cy="-2" rx="${17 + ripple}" ry="${5 + ripple*0.4}" fill="none" stroke="#E0F2FE" stroke-width="1.8" opacity="0.8"/>
+        <!-- Pétalos dorados de cempasúchil flotando en el agua -->
+        <g transform="translate(${-6 + petalaX}, -2)">
+          <ellipse cx="0" cy="0" rx="3.5" ry="2" fill="#F97316" stroke="${S}" stroke-width="1.2"/>
+          <circle cx="0" cy="0" r="1.2" fill="#FDE047"/>
+        </g>
+        <g transform="translate(${8 - petalaX}, -1)">
+          <ellipse cx="0" cy="0" rx="4" ry="2.2" fill="#EA580C" stroke="${S}" stroke-width="1.2"/>
+          <circle cx="0" cy="0" r="1.5" fill="#FACC15"/>
+        </g>
+        <g transform="translate(${petalaX * 0.5}, 1)">
+          <ellipse cx="0" cy="0" rx="3" ry="1.8" fill="#F59E0B" stroke="${S}" stroke-width="1"/>
+        </g>
+      </g>`;
+    },
+    tags: ["cuenco", "agua", "barro", "petalos", "cempasuchil", "ofrenda", "sed", "viaje"],
+  },
+  telefono_dopamina_dorado: {
+    id: "telefono_dopamina_dorado",
+    name: "Smartphone con Resplandor Dorado de Dopamina y Scroll",
+    family: "tecnologia",
+    defaultPlacement: "right",
+    svg: `<rect x="-16" y="-28" width="32" height="56" rx="6" fill="#0F172A" stroke="${S}" stroke-width="4"/><rect x="-12" y="-22" width="24" height="44" rx="3" fill="#FDE047"/><polygon points="0,-6 -6,4 6,4" fill="#EA580C"/>`,
+    animatedSvg: (f: number) => {
+      const scrollY = (f * 3.5) % 36;
+      const pulseGlow = 0.5 + Math.sin(f * 0.25) * 0.35;
+      const heartY = 14 - ((f * 1.5) % 24);
+      return `<g>
+        <!-- Resplandor dorado hipnótico de dopamina -->
+        <rect x="-24" y="-36" width="48" height="72" rx="12" fill="#FDE047" opacity="${n(pulseGlow * 0.45)}" filter="blur(6px)"/>
+        <!-- Cuerpo del smartphone negro medianoche -->
+        <rect x="-18" y="-30" width="36" height="60" rx="6" fill="#0F172A" stroke="${S}" stroke-width="4.5"/>
+        <!-- Pantalla táctil luminosa vertical -->
+        <rect x="-14" y="-24" width="28" height="48" rx="3" fill="#1E293B"/>
+        <!-- Tarjetas de videos cortos haciendo scroll rápido -->
+        <g clip-path="url(#phoneClip)">
+          <rect x="-12" y="${-20 + scrollY}" width="24" height="18" rx="2" fill="#E11D48"/>
+          <rect x="-12" y="${2 + scrollY}" width="24" height="18" rx="2" fill="#7C3AED"/>
+          <rect x="-12" y="${24 + scrollY}" width="24" height="18" rx="2" fill="#059669"/>
+          <rect x="-12" y="${-42 + scrollY}" width="24" height="18" rx="2" fill="#2563EB"/>
+        </g>
+        <!-- Corazón rojo flotando de 'Me gusta' -->
+        <path d="M 0,${n(heartY)} C -2,${n(heartY - 4)} -6,${n(heartY - 2)} -6,${n(heartY + 2)} C -6,${n(heartY + 6)} 0,${n(heartY + 10)} 0,${n(heartY + 10)} C 0,${n(heartY + 10)} 6,${n(heartY + 6)} 6,${n(heartY + 2)} C 6,${n(heartY - 2)} 2,${n(heartY - 4)} 0,${n(heartY)} Z" fill="#F43F5E" stroke="#000000" stroke-width="1.2"/>
+        <!-- Flecha de swipe continuo hacia arriba -->
+        <polygon points="0,-16 -4,-10 4,-10" fill="#FEF08A"/>
+        <line x1="0" y1="-10" x2="0" y2="-4" stroke="#FEF08A" stroke-width="2"/>
+      </g>`;
+    },
+    tags: ["telefono", "celular", "smartphone", "dopamina", "scroll", "tiktok", "procrastinacion"],
+  },
+  laptop_escritorio_documento: {
+    id: "laptop_escritorio_documento",
+    name: "Laptop con Documento en Blanco y Entrega 11:59 PM",
+    family: "tecnologia",
+    defaultPlacement: "both",
+    svg: `<rect x="-30" y="-18" width="60" height="36" rx="4" fill="#334155" stroke="${S}" stroke-width="4"/><polygon points="-38,20 38,20 32,14 -32,14" fill="#94A3B8" stroke="${S}" stroke-width="3"/>`,
+    animatedSvg: (f: number) => {
+      const cursorBlink = f % 20 < 10;
+      return `<g>
+        <!-- Base del teclado -->
+        <polygon points="-42,22 42,22 36,12 -36,12" fill="#64748B" stroke="${S}" stroke-width="4"/>
+        <rect x="-12" y="15" width="24" height="5" rx="1.5" fill="#475569" stroke="${S}" stroke-width="1.5"/>
+        <!-- Pantalla de la laptop -->
+        <rect x="-32" y="-24" width="64" height="36" rx="4" fill="#1E293B" stroke="${S}" stroke-width="4.5"/>
+        <!-- Documento de texto blanco en pantalla -->
+        <rect x="-26" y="-20" width="52" height="28" fill="#F8FAFC" stroke="${S}" stroke-width="1.5"/>
+        <!-- Header rojo: Entrega 11:59 PM -->
+        <rect x="-24" y="-18" width="48" height="6" fill="#EF4444" rx="1"/>
+        <text x="0" y="-13.5" text-anchor="middle" fill="#FFFFFF" font-size="4" font-weight="900" font-family="'Arial Black'">ENTREGA: 11:59 PM</text>
+        <!-- Línea de título y cursor parpadeante -->
+        <line x1="-22" y1="-7" x2="-8" y2="-7" stroke="#94A3B8" stroke-width="2"/>
+        ${cursorBlink ? `<line x1="-6" y1="-10" x2="-6" y2="-4" stroke="#000000" stroke-width="2.5"/>` : ""}
+      </g>`;
+    },
+    tags: ["laptop", "computadora", "trabajo", "documento", "blanco", "urgencia", "escritorio"],
+  },
+  pizarron_metas_30dias: {
+    id: "pizarron_metas_30dias",
+    name: "Pizarrón Blanco con Plan de Vida y Carga al 15%",
+    family: "educacion_ciencia",
+    defaultPlacement: "both",
+    svg: `<rect x="-34" y="-24" width="68" height="42" rx="4" fill="#F8FAFC" stroke="${S}" stroke-width="4.5"/><line x1="-24" y1="18" x2="-30" y2="38" stroke="${S}" stroke-width="4"/><line x1="24" y1="18" x2="30" y2="38" stroke="${S}" stroke-width="4"/>`,
+    animatedSvg: (f: number) => {
+      const loadW = 10 + Math.min(24, Math.floor(f * 0.08));
+      return `<g>
+        <!-- Patas de soporte metálicas -->
+        <line x1="-26" y1="14" x2="-34" y2="40" stroke="#334155" stroke-width="5" stroke-linecap="round"/>
+        <line x1="26" y1="14" x2="34" y2="40" stroke="#334155" stroke-width="5" stroke-linecap="round"/>
+        <!-- Marco de acrílico blanco -->
+        <rect x="-36" y="-26" width="72" height="44" rx="4" fill="#F8FAFC" stroke="${S}" stroke-width="5"/>
+        <!-- Gráfico de barras ascendente (1 a 5) -->
+        <rect x="-28" y="0" width="6" height="8" fill="#3B82F6" stroke="${S}" stroke-width="1.5"/>
+        <rect x="-20" y="-4" width="6" height="12" fill="#3B82F6" stroke="${S}" stroke-width="1.5"/>
+        <rect x="-12" y="-10" width="6" height="18" fill="#10B981" stroke="${S}" stroke-width="1.5"/>
+        <!-- Casa con techo verde -->
+        <polygon points="12,-16 26,-4 26,6 12,6 Z" fill="#FEF08A" stroke="${S}" stroke-width="2"/>
+        <polygon points="6,-4 19,-16 32,-4" fill="#EF4444" stroke="${S}" stroke-width="2"/>
+        <!-- Barra de carga lenta: 'Calculando... 15%' -->
+        <rect x="-30" y="9" width="60" height="6" rx="2" fill="#E2E8F0" stroke="${S}" stroke-width="1.5"/>
+        <rect x="-29" y="10" width="${loadW}" height="4" rx="1" fill="#2563EB"/>
+      </g>`;
+    },
+    tags: ["pizarron", "metas", "planificacion", "corteza", "racional", "lento", "futuro"],
+  },
+  mazo_cavernicola_dopamina: {
+    id: "mazo_cavernicola_dopamina",
+    name: "Mazo de Cavernícola con Dona y Chispas de Dopamina",
+    family: "reacciones_humor",
+    defaultPlacement: "right",
+    svg: `<line x1="-16" y1="20" x2="16" y2="-12" stroke="#78350F" stroke-width="6"/><ellipse cx="20" cy="-16" rx="16" ry="12" fill="#64748B" stroke="${S}" stroke-width="4"/><circle cx="-16" cy="-12" r="12" fill="#EC4899"/>`,
+    animatedSvg: (f: number) => {
+      const sparkRot = (f * 5) % 360;
+      return `<g>
+        <!-- Mazo rústico prehistórico con roca atada -->
+        <line x1="-18" y1="24" x2="18" y2="-14" stroke="#78350F" stroke-width="7" stroke-linecap="round"/>
+        <ellipse cx="22" cy="-18" rx="18" ry="14" fill="#64748B" stroke="${S}" stroke-width="5"/>
+        <line x1="12" y1="-14" x2="28" y2="-22" stroke="#FEF08A" stroke-width="2.5"/>
+        <!-- Dona glaseada rosa apetitosa en la mano izquierda -->
+        <g transform="translate(-18, -10)">
+          <circle cx="0" cy="0" r="14" fill="#D97706" stroke="${S}" stroke-width="3"/>
+          <circle cx="0" cy="0" r="11" fill="#F43F5E"/>
+          <circle cx="0" cy="0" r="4.5" fill="#FFFFFF" stroke="${S}" stroke-width="2"/>
+          <circle cx="-5" cy="-5" r="1.5" fill="#FEF08A"/>
+          <circle cx="5" cy="-4" r="1.5" fill="#38BDF8"/>
+          <circle cx="0" cy="6" r="1.5" fill="#22C55E"/>
+        </g>
+        <!-- Chispas fosforescentes de dopamina -->
+        <g transform="translate(0, -22) rotate(${sparkRot})">
+          <polygon points="0,-12 3,-3 12,0 3,3 0,12 -3,3 -12,0 -3,-3" fill="#FDE047"/>
+        </g>
+      </g>`;
+    },
+    tags: ["mazo", "garrote", "cavernicola", "dona", "dopamina", "placer", "impulso"],
+  },
+  pila_carpetas_oficina_gigante: {
+    id: "pila_carpetas_oficina_gigante",
+    name: "Pila Monumental de Carpetas de Trabajo Inacabadas",
+    family: "vida_cotidiana",
+    defaultPlacement: "both",
+    svg: `<rect x="-24" y="14" width="48" height="12" fill="#F59E0B" stroke="${S}" stroke-width="3.5"/><rect x="-22" y="0" width="44" height="12" fill="#3B82F6" stroke="${S}" stroke-width="3.5"/><rect x="-26" y="-14" width="52" height="12" fill="#EF4444" stroke="${S}" stroke-width="3.5"/>`,
+    animatedSvg: (f: number) => {
+      const wobble = Math.sin(f * 0.25) * 2;
+      return `<g transform="translate(0, ${n(wobble)})">
+        <!-- Carpeta 4 (base) -->
+        <rect x="-28" y="16" width="56" height="13" rx="2" fill="#D97706" stroke="${S}" stroke-width="4"/>
+        <rect x="-18" y="18" width="16" height="7" fill="#FFFFFF"/>
+        <!-- Carpeta 3 -->
+        <rect x="-26" y="2" width="52" height="13" rx="2" fill="#2563EB" stroke="${S}" stroke-width="4"/>
+        <text x="-6" y="10" fill="#FFFFFF" font-size="5" font-weight="900">REPORTE</text>
+        <!-- Carpeta 2 -->
+        <rect x="-24" y="-12" width="48" height="13" rx="2" fill="#059669" stroke="${S}" stroke-width="4"/>
+        <!-- Carpeta 1 (tope roja URGENTE) -->
+        <rect x="-28" y="-26" width="56" height="13" rx="2" fill="#DC2626" stroke="${S}" stroke-width="4"/>
+        <text x="0" y="-18" text-anchor="middle" fill="#FEF08A" font-size="5.5" font-weight="900" font-family="'Arial Black'">URGENTE</text>
+      </g>`;
+    },
+    tags: ["carpetas", "trabajo", "archivos", "papeles", "marron", "tarea", "pendiente"],
+  },
+  sofa_relax_palomitas: {
+    id: "sofa_relax_palomitas",
+    name: "Sillón Inflable, Palomitas y Gafas de Sol",
+    family: "vida_cotidiana",
+    defaultPlacement: "both",
+    svg: `<ellipse cx="0" cy="12" rx="34" ry="18" fill="#06B6D4" stroke="${S}" stroke-width="4"/><polygon points="16,-6 26,-6 28,14 14,14" fill="#EF4444" stroke="${S}" stroke-width="2"/>`,
+    animatedSvg: (f: number) => {
+      const popcornPop = Math.sin(f * 0.3) * 6;
+      return `<g>
+        <!-- Sillón inflable redondeado turquesa -->
+        <ellipse cx="0" cy="14" rx="38" ry="18" fill="#06B6D4" stroke="${S}" stroke-width="5"/>
+        <ellipse cx="0" cy="4" rx="26" ry="12" fill="#22D3EE" stroke="${S}" stroke-width="3"/>
+        <!-- Bote de palomitas a rayas rojas y blancas -->
+        <g transform="translate(18, -4)">
+          <polygon points="-8,-10 8,-10 6,10 -6,10" fill="#FFFFFF" stroke="${S}" stroke-width="3"/>
+          <line x1="-3" y1="-10" x2="-2" y2="10" stroke="#EF4444" stroke-width="3"/>
+          <line x1="3" y1="-10" x2="2" y2="10" stroke="#EF4444" stroke-width="3"/>
+          <!-- Palomitas doradas saliendo -->
+          <circle cx="-4" cy="-14" r="3" fill="#FEF08A"/>
+          <circle cx="2" cy="-15" r="3.5" fill="#FDE047"/>
+          <circle cx="0" cy="${n(-20 - popcornPop)}" r="2.5" fill="#FEF08A"/>
+        </g>
+        <!-- Gafas de sol oscuras -->
+        <g transform="translate(-16, -6)">
+          <rect x="-8" y="-4" width="7" height="6" rx="1.5" fill="#000000" stroke="${S}" stroke-width="1.5"/>
+          <rect x="1" y="-4" width="7" height="6" rx="1.5" fill="#000000" stroke="${S}" stroke-width="1.5"/>
+          <line x1="-1" y1="-2" x2="1" y2="-2" stroke="#000000" stroke-width="2"/>
+        </g>
+      </g>`;
+    },
+    tags: ["sofa", "palomitas", "relax", "gafas", "comodidad", "presente", "chill"],
+  },
+  tazas_cafe_estres_apiladas: {
+    id: "tazas_cafe_estres_apiladas",
+    name: "Tazas de Café Apiladas y Reloj Bomba 3:42 AM",
+    family: "vida_cotidiana",
+    defaultPlacement: "both",
+    svg: `<polygon points="-10,-8 10,-8 8,14 -8,14" fill="#F8FAFC" stroke="${S}" stroke-width="3"/><rect x="14" y="-12" width="24" height="16" rx="3" fill="#0F172A"/>`,
+    animatedSvg: (f: number) => {
+      const steamY = (f * 1.8) % 18;
+      const bombSpark = f % 6 < 3;
+      return `<g>
+        <!-- Taza 1 (abajo) -->
+        <polygon points="-12,4 12,4 9,24 -9,24" fill="#E2E8F0" stroke="${S}" stroke-width="3.5"/>
+        <rect x="-10" y="10" width="20" height="6" fill="#78350F"/>
+        <!-- Taza 2 (apilada) -->
+        <polygon points="-11,-12 11,-12 8,4 -8,4" fill="#F8FAFC" stroke="${S}" stroke-width="3.5"/>
+        <!-- Taza 3 (tope) -->
+        <polygon points="-9,-26 9,-26 7,-12 -7,-12" fill="#E2E8F0" stroke="${S}" stroke-width="3"/>
+        <!-- Vapor de café caliente -->
+        <path d="M 0,-28 Q 4,${n(-36 - steamY)} 0,${n(-44 - steamY)}" fill="none" stroke="#EF4444" stroke-width="2" stroke-linecap="round" opacity="0.75"/>
+        <!-- Reloj digital con mecha: 03:42 AM -->
+        <g transform="translate(24, 0)">
+          <rect x="-14" y="-12" width="28" height="20" rx="3" fill="#0F172A" stroke="${S}" stroke-width="3"/>
+          <text x="0" y="2" text-anchor="middle" fill="#EF4444" font-size="6" font-weight="900" font-family="'Arial Black'">03:42</text>
+          <!-- Mecha encendida en la esquina superior -->
+          <path d="M 10,-12 Q 14,-20 8,-24" fill="none" stroke="#F59E0B" stroke-width="2"/>
+          <circle cx="8" cy="-24" r="${bombSpark ? 3 : 1.5}" fill="#FEF08A"/>
+        </g>
+      </g>`;
+    },
+    tags: ["cafe", "tazas", "madrugada", "estres", "panico", "reloj", "bomba", "futuro"],
+  },
+  caja_fuerte_candado_telefono: {
+    id: "caja_fuerte_candado_telefono",
+    name: "Caja de Seguridad con Candado Cerrado",
+    family: "herramientas_objetos",
+    defaultPlacement: "left",
+    svg: `<rect x="-24" y="-14" width="48" height="34" rx="4" fill="#334155" stroke="${S}" stroke-width="4"/><circle cx="0" cy="3" r="5" fill="#F59E0B"/>`,
+    animatedSvg: (f: number) => {
+      const lockClick = Math.sin(f * 0.2) > 0.8;
+      return `<g>
+        <!-- Caja metálica blindada -->
+        <rect x="-26" y="-12" width="52" height="34" rx="4" fill="#1E293B" stroke="${S}" stroke-width="4.5"/>
+        <line x1="-24" y1="-2" x2="24" y2="-2" stroke="#475569" stroke-width="2"/>
+        <!-- Candado de latón cerrado al frente -->
+        <g transform="translate(0, 4)">
+          <rect x="-8" y="-2" width="16" height="14" rx="2" fill="#F59E0B" stroke="${S}" stroke-width="3"/>
+          <!-- Grillete del candado cerrado -->
+          <path d="M -5,-2 L -5,-10 A 5,5 0 0,1 5,-10 L 5,-2" fill="none" stroke="#94A3B8" stroke-width="3.5" stroke-linecap="round"/>
+          <circle cx="0" cy="4" r="2" fill="#000000"/>
+        </g>
+        <!-- Etiqueta: '5 MIN' -->
+        <rect x="-18" y="-9" width="36" height="6" rx="1.5" fill="#22C55E"/>
+        <text x="0" y="-4.5" text-anchor="middle" fill="#FFFFFF" font-size="4.5" font-weight="900" font-family="'Arial Black'">BLOQUEADO 5M</text>
+      </g>`;
+    },
+    tags: ["caja", "candado", "bloqueo", "friccion", "telefono", "concentracion", "seguridad"],
+  },
+  reloj_arena_cinco_minutos: {
+    id: "reloj_arena_cinco_minutos",
+    name: "Reloj de Arena Azul de 5 Minutos",
+    family: "educacion_ciencia",
+    defaultPlacement: "right",
+    svg: `<path d="M -16,-20 L 16,-20 L 2,0 L 16,20 L -16,20 L -2,0 Z" fill="#E0F2FE" stroke="${S}" stroke-width="3.5"/><rect x="-18" y="-24" width="36" height="6" fill="#78350F"/><rect x="-18" y="20" width="36" height="6" fill="#78350F"/>`,
+    animatedSvg: (f: number) => {
+      const sandTrickle = (f * 2) % 10;
+      return `<g>
+        <!-- Bases de madera noble -->
+        <rect x="-20" y="-24" width="40" height="7" rx="2" fill="#78350F" stroke="${S}" stroke-width="3.5"/>
+        <rect x="-20" y="19" width="40" height="7" rx="2" fill="#78350F" stroke="${S}" stroke-width="3.5"/>
+        <!-- Columnas laterales de latón -->
+        <line x1="-16" y1="-18" x2="-16" y2="20" stroke="#F59E0B" stroke-width="3"/>
+        <line x1="16" y1="-18" x2="16" y2="20" stroke="#F59E0B" stroke-width="3"/>
+        <!-- Bulbo de cristal con arena azul -->
+        <path d="M -14,-17 L 14,-17 L 3,0 L 14,18 L -14,18 L -3,0 Z" fill="#E0F2FE" fill-opacity="0.85" stroke="${S}" stroke-width="3.5"/>
+        <!-- Arena superior decreciendo -->
+        <polygon points="-11,-16 11,-16 2,-2 -2,-2" fill="#0284C7"/>
+        <!-- Hilo fino de arena cayendo -->
+        <line x1="0" y1="-2" x2="0" y2="12" stroke="#0284C7" stroke-width="2" stroke-dasharray="2 1"/>
+        <!-- Arena acumulada abajo -->
+        <polygon points="-11,17 11,17 7,10 -7,10" fill="#0284C7"/>
+        <!-- Etiqueta dorada: 5 MIN -->
+        <rect x="-12" y="27" width="24" height="7" rx="1.5" fill="#F59E0B" stroke="${S}" stroke-width="1.5"/>
+        <text x="0" y="32.5" text-anchor="middle" fill="#FFFFFF" font-size="5" font-weight="900" font-family="'Arial Black'">5 MIN</text>
+      </g>`;
+    },
+    tags: ["reloj", "arena", "5_minutos", "regla", "tiempo", "concentracion", "inicio"],
+  },
+  capsula_placebo_roja_blanca: {
+    id: "capsula_placebo_roja_blanca",
+    name: "Cápsula Placebo Bicolor Roja y Blanca",
+    family: "educacion_ciencia",
+    defaultPlacement: "right",
+    svg: `<g transform="rotate(-30)"><rect x="-14" y="-30" width="28" height="30" rx="14" fill="#EF4444" stroke="${S}" stroke-width="4"/><rect x="-14" y="0" width="28" height="30" rx="14" fill="#FFFFFF" stroke="${S}" stroke-width="4"/><line x1="-14" y1="0" x2="14" y2="0" stroke="${S}" stroke-width="3.5"/></g>`,
+    animatedSvg: (f: number) => {
+      const bob = Math.sin(f * 0.15) * 3;
+      const glow = 0.7 + Math.sin(f * 0.2) * 0.3;
+      return `<g transform="translate(0, ${bob.toFixed(1)})">
+        <!-- Aura resplandeciente de alivio -->
+        <circle cx="0" cy="0" r="34" fill="#38BDF8" fill-opacity="${(glow * 0.25).toFixed(2)}" filter="blur(6px)"/>
+        <!-- Cápsula inclinada 30 grados -->
+        <g transform="rotate(-28)">
+          <!-- Mitad superior roja brillante -->
+          <path d="M -15,0 L -15,-15 A 15,15 0 0,1 15,-15 L 15,0 Z" fill="#EF4444" stroke="${S}" stroke-width="4"/>
+          <!-- Brillo especular rojo -->
+          <path d="M -9,-20 A 9,9 0 0,1 3,-25" fill="none" stroke="#FCA5A5" stroke-width="3" stroke-linecap="round"/>
+          <!-- Mitad inferior blanca clínica -->
+          <path d="M -15,0 L -15,15 A 15,15 0 0,0 15,15 L 15,0 Z" fill="#FFFFFF" stroke="${S}" stroke-width="4"/>
+          <line x1="-15" y1="0" x2="15" y2="0" stroke="${S}" stroke-width="3.5"/>
+          <!-- Sombra interior tenue -->
+          <path d="M 9,4 L 9,20 A 9,9 0 0,1 0,25" fill="none" stroke="#E2E8F0" stroke-width="2.5" stroke-linecap="round"/>
+        </g>
+        <!-- Chispas de curación alrededor -->
+        <circle cx="${(22 + Math.cos(f * 0.2) * 4).toFixed(1)}" cy="${(-18 + Math.sin(f * 0.2) * 4).toFixed(1)}" r="3" fill="#FFE600" stroke="${S}" stroke-width="1.5"/>
+        <circle cx="${(-20 + Math.sin(f * 0.25) * 4).toFixed(1)}" cy="${(16 + Math.cos(f * 0.25) * 4).toFixed(1)}" r="2.5" fill="#38BDF8" stroke="${S}" stroke-width="1.5"/>
+      </g>`;
+    },
+    tags: ["capsula", "pastilla", "placebo", "medicina", "cura", "farmacia", "alivio", "roja_blanca"],
+  },
+  vaso_agua_fresca: {
+    id: "vaso_agua_fresca",
+    name: "Vaso de Agua Fresca Transparente",
+    family: "vida_cotidiana",
+    defaultPlacement: "left",
+    svg: `<path d="M -14,-22 L 14,-22 L 10,24 L -10,24 Z" fill="#E0F2FE" stroke="${S}" stroke-width="3.5"/><path d="M -12,-8 L 12,-8 L 9,22 L -9,22 Z" fill="#38BDF8"/>`,
+    animatedSvg: (f: number) => {
+      const wave = Math.sin(f * 0.2) * 2;
+      const b1 = (-16 + (f * 1.5) % 30);
+      return `<g>
+        <!-- Vaso de cristal cónico -->
+        <path d="M -16,-24 L 16,-24 L 11,26 L -11,26 Z" fill="#F0F9FF" fill-opacity="0.5" stroke="${S}" stroke-width="4" stroke-linejoin="round"/>
+        <!-- Agua azul turquesa en el interior -->
+        <path d="M -14,${(-8 + wave).toFixed(1)} Q 0,${(-6 - wave).toFixed(1)} 14,${(-8 + wave).toFixed(1)} L 10,24 L -10,24 Z" fill="#38BDF8" fill-opacity="0.85"/>
+        <!-- Burbujas subiendo -->
+        <circle cx="-3" cy="${b1.toFixed(1)}" r="2" fill="#FFFFFF" fill-opacity="0.8"/>
+        <circle cx="4" cy="${((-b1 + 6) % 28).toFixed(1)}" r="1.5" fill="#FFFFFF" fill-opacity="0.8"/>
+        <!-- Brillo lateral del cristal -->
+        <line x1="-12" y1="-20" x2="-8" y2="20" stroke="#FFFFFF" stroke-width="2.5" stroke-linecap="round" stroke-opacity="0.9"/>
+      </g>`;
+    },
+    tags: ["vaso", "agua", "beber", "tragar", "pastilla", "cristal", "clinico"],
+  },
+  frasco_azucar_100_glucosa: {
+    id: "frasco_azucar_100_glucosa",
+    name: "Frasco Revelador 100% Azúcar Glucosa",
+    family: "educacion_ciencia",
+    defaultPlacement: "right",
+    svg: `<rect x="-24" y="-30" width="48" height="60" rx="8" fill="#FFFFFF" stroke="${S}" stroke-width="4"/><rect x="-18" y="-12" width="36" height="30" fill="#FFE600" stroke="${S}" stroke-width="2"/><text x="0" y="2" text-anchor="middle" font-size="6" font-weight="900">100% AZÚCAR</text>`,
+    animatedSvg: (f: number) => {
+      const shake = Math.sin(f * 0.18) * 1.5;
+      return `<g transform="translate(0, ${shake.toFixed(1)})">
+        <!-- Cuerpo del frasco farmacéutico -->
+        <rect x="-26" y="-32" width="52" height="66" rx="8" fill="#F8FAFC" stroke="${S}" stroke-width="4.5"/>
+        <!-- Tapa rosca de seguridad médica -->
+        <rect x="-18" y="-42" width="36" height="12" rx="3" fill="#0EA5E9" stroke="${S}" stroke-width="3.5"/>
+        <line x1="-12" y1="-42" x2="-12" y2="-30" stroke="#0284C7" stroke-width="2"/>
+        <line x1="0" y1="-42" x2="0" y2="-30" stroke="#0284C7" stroke-width="2"/>
+        <line x1="12" y1="-42" x2="12" y2="-30" stroke="#0284C7" stroke-width="2"/>
+        <!-- Nivel de azúcar granulada adentro (fondo blanco brillante) -->
+        <path d="M -23,12 Q -10,8 0,11 Q 12,14 23,11 L 23,31 L -23,31 Z" fill="#F1F5F9"/>
+        <!-- Granos brillantes de azúcar -->
+        <circle cx="-12" cy="20" r="1.5" fill="#CBD5E1"/>
+        <circle cx="2" cy="18" r="1.5" fill="#CBD5E1"/>
+        <circle cx="14" cy="23" r="1.5" fill="#CBD5E1"/>
+        <!-- ETIQUETA GIGANTE REVELADORA -->
+        <rect x="-22" y="-16" width="44" height="26" rx="3" fill="#FFE600" stroke="${S}" stroke-width="3"/>
+        <text x="0" y="-7" text-anchor="middle" fill="#000000" font-size="7.5" font-weight="900" font-family="'Arial Black'">100%</text>
+        <text x="0" y="0" text-anchor="middle" fill="#DC2626" font-size="6.5" font-weight="900" font-family="'Arial Black'">AZÚCAR</text>
+        <text x="0" y="7" text-anchor="middle" fill="#475569" font-size="4.5" font-weight="900" font-family="'Arial Black'">GLUCOSA PURA</text>
+        <!-- Cruz médica roja decorativa en esquina -->
+        <rect x="14" y="-28" width="8" height="2.5" fill="#EF4444"/>
+        <rect x="16.75" y="-30.75" width="2.5" height="8" fill="#EF4444"/>
+      </g>`;
+    },
+    tags: ["frasco", "azucar", "glucosa", "placebo", "100%", "medicina", "engaño", "revelacion"],
+  },
+  caja_placebo_etiqueta_abierta: {
+    id: "caja_placebo_etiqueta_abierta",
+    name: "Caja de Placebo de Etiqueta Abierta",
+    family: "educacion_ciencia",
+    defaultPlacement: "right",
+    svg: `<rect x="-28" y="-20" width="56" height="40" rx="6" fill="#F0FDF4" stroke="${S}" stroke-width="4"/><text x="0" y="4" text-anchor="middle" font-size="5" font-weight="900">SOLO AZÚCAR</text>`,
+    animatedSvg: (f: number) => {
+      const pulse = 1 + Math.sin(f * 0.15) * 0.03;
+      return `<g transform="scale(${pulse.toFixed(3)})">
+        <!-- Caja transparente de acrílico clínico -->
+        <rect x="-30" y="-22" width="60" height="44" rx="6" fill="#ECFDF5" stroke="${S}" stroke-width="4"/>
+        <!-- Banda superior verde menta -->
+        <rect x="-28" y="-20" width="56" height="12" rx="3" fill="#10B981"/>
+        <text x="0" y="-12" text-anchor="middle" fill="#FFFFFF" font-size="5" font-weight="900" font-family="'Arial Black'">PLACEBO ABIERTO</text>
+        <!-- Texto honesto de etiqueta -->
+        <rect x="-26" y="-5" width="52" height="22" rx="3" fill="#FFFFFF" stroke="${S}" stroke-width="2.5"/>
+        <text x="0" y="2" text-anchor="middle" fill="#0F172A" font-size="5.5" font-weight="900" font-family="'Arial Black'">ESTO ES SOLO</text>
+        <text x="0" y="8" text-anchor="middle" fill="#059669" font-size="6" font-weight="900" font-family="'Arial Black'">AZÚCAR</text>
+        <text x="0" y="14" text-anchor="middle" fill="#64748B" font-size="4" font-weight="800" font-family="'Arial Black'">0% MEDICAMENTO</text>
+      </g>`;
+    },
+    tags: ["caja", "placebo_abierto", "honesto", "azucar", "etiqueta_abierta", "experimento", "harvard"],
+  },
+  candado_dorado_receptor_dolor: {
+    id: "candado_dorado_receptor_dolor",
+    name: "Candado Dorado Bloqueando Receptor de Dolor",
+    family: "educacion_ciencia",
+    defaultPlacement: "right",
+    svg: `<path d="M -16,14 L 0,-8 L 16,14 Z" fill="#991B1B" stroke="${S}" stroke-width="3"/><rect x="-10" y="-4" width="20" height="18" rx="3" fill="#F59E0B" stroke="${S}" stroke-width="3"/>`,
+    animatedSvg: (f: number) => {
+      const snap = Math.sin(f * 0.2) > 0.85 ? 1 : 0;
+      return `<g>
+        <!-- Receptor de dolor celular (en forma de Y) -->
+        <path d="M -18,-18 L -6,-2 L -6,22 M 18,-18 L 6,-2 L 6,22" fill="none" stroke="#991B1B" stroke-width="6" stroke-linecap="round"/>
+        <text x="0" y="30" text-anchor="middle" fill="#EF4444" font-size="5" font-weight="900" font-family="'Arial Black'">RECEPTOR</text>
+        <!-- Candado dorado que cierra la cavidad del dolor -->
+        <g transform="translate(0, -6)">
+          <!-- Grillete de acero dorado cerrado -->
+          <path d="M -7,0 L -7,-10 A 7,7 0 0,1 7,-10 L 7,0" fill="none" stroke="#FDE047" stroke-width="4.5" stroke-linecap="round"/>
+          <!-- Cuerpo del candado dorado macizo -->
+          <rect x="-12" y="0" width="24" height="20" rx="4" fill="#F59E0B" stroke="${S}" stroke-width="3.5"/>
+          <circle cx="0" cy="8" r="3" fill="#78350F"/>
+          <polygon points="0,8 -1.5,14 1.5,14" fill="#78350F"/>
+          <!-- Destellos de bloqueo exitoso -->
+          <polygon points="-16,2 -13,0 -14,4 -10,2 -13,6 -16,2" fill="#FFE600"/>
+          <polygon points="16,2 13,0 14,4 10,2 13,6 16,2" fill="#FFE600"/>
+        </g>
+      </g>`;
+    },
+    tags: ["candado", "receptor", "dolor", "bloqueo", "endorfina", "opioide", "celular", "farmacia_interna"],
+  },
+  esferas_endorfinas_flotantes: {
+    id: "esferas_endorfinas_flotantes",
+    name: "Esferas de Endorfinas y Opioides Naturales",
+    family: "educacion_ciencia",
+    defaultPlacement: "overhead",
+    svg: `<circle cx="-12" cy="0" r="10" fill="#FACC15" stroke="${S}" stroke-width="3"/><circle cx="12" cy="-4" r="12" fill="#FACC15" stroke="${S}" stroke-width="3"/>`,
+    animatedSvg: (f: number) => {
+      const o1 = Math.sin(f * 0.18) * 3;
+      const o2 = Math.cos(f * 0.16) * 3;
+      return `<g>
+        <!-- Esfera 1 (Principal) -->
+        <g transform="translate(${(0 + o1).toFixed(1)}, ${(-4 + o2).toFixed(1)})">
+          <circle cx="0" cy="0" r="16" fill="#FACC15" stroke="${S}" stroke-width="4"/>
+          <!-- Brillo dorado interno -->
+          <circle cx="-5" cy="-5" r="5" fill="#FEF08A"/>
+          <text x="0" y="3" text-anchor="middle" fill="#78350F" font-size="5" font-weight="900" font-family="'Arial Black'">ENDORFINA</text>
+        </g>
+        <!-- Esfera 2 (Izquierda inferior) -->
+        <g transform="translate(${(-20 - o2).toFixed(1)}, ${(12 + o1).toFixed(1)})">
+          <circle cx="0" cy="0" r="11" fill="#F59E0B" stroke="${S}" stroke-width="3.5"/>
+          <circle cx="-3" cy="-3" r="3.5" fill="#FEF08A"/>
+          <text x="0" y="2.5" text-anchor="middle" fill="#FFFFFF" font-size="3.5" font-weight="900">OPIOIDE</text>
+        </g>
+        <!-- Esfera 3 (Derecha superior) -->
+        <g transform="translate(${(22 + o2).toFixed(1)}, ${(-16 - o1).toFixed(1)})">
+          <circle cx="0" cy="0" r="10" fill="#FBBF24" stroke="${S}" stroke-width="3"/>
+          <circle cx="-3" cy="-3" r="3" fill="#FEF08A"/>
+          <text x="0" y="2" text-anchor="middle" fill="#78350F" font-size="3" font-weight="900">DOPA</text>
+        </g>
+      </g>`;
+    },
+    tags: ["endorfinas", "opioides", "dopamina", "neuroquimica", "cerebro", "oro", "moleculas", "alivio"],
+  },
+  manivela_valvula_farmacia_interna: {
+    id: "manivela_valvula_farmacia_interna",
+    name: "Válvula de Presión Farmacia Interna",
+    family: "herramientas_objetos",
+    defaultPlacement: "right",
+    svg: `<circle cx="0" cy="0" r="18" fill="none" stroke="#F59E0B" stroke-width="6"/><circle cx="0" cy="0" r="5" fill="#1E293B"/>`,
+    animatedSvg: (f: number) => {
+      const rot = (f * 4) % 360;
+      return `<g>
+        <!-- Tubería dorada industrial detrás -->
+        <rect x="-30" y="-6" width="60" height="12" rx="2" fill="#B45309" stroke="${S}" stroke-width="3.5"/>
+        <line x1="-30" y1="0" x2="30" y2="0" stroke="#FDE68A" stroke-width="2"/>
+        <!-- Rueda / Manivela giratoria -->
+        <g transform="rotate(${rot.toFixed(1)} 0 0)">
+          <!-- Aro exterior de latón -->
+          <circle cx="0" cy="0" r="22" fill="none" stroke="#F59E0B" stroke-width="5.5"/>
+          <circle cx="0" cy="0" r="22" fill="none" stroke="${S}" stroke-width="1.5"/>
+          <!-- Rayos de la rueda -->
+          <line x1="-22" y1="0" x2="22" y2="0" stroke="#F59E0B" stroke-width="4.5"/>
+          <line x1="0" y1="-22" x2="0" y2="22" stroke="#F59E0B" stroke-width="4.5"/>
+          <circle cx="0" cy="0" r="7" fill="#78350F" stroke="${S}" stroke-width="3"/>
+          <circle cx="0" cy="0" r="3" fill="#FDE68A"/>
+        </g>
+        <!-- Medidor superior de presión analgésica -->
+        <g transform="translate(0, -28)">
+          <circle cx="0" cy="0" r="10" fill="#FFFFFF" stroke="${S}" stroke-width="3"/>
+          <line x1="0" y1="0" x2="6" y2="-4" stroke="#DC2626" stroke-width="2.5" stroke-linecap="round"/>
+          <text x="0" y="14" text-anchor="middle" fill="#F59E0B" font-size="4" font-weight="900" font-family="'Arial Black'">VÁLVULA PAG</text>
+        </g>
+      </g>`;
+    },
+    tags: ["valvula", "manivela", "farmacia_interna", "control", "abrir", "flujo", "tronco_encefalico"],
+  },
+  rayo_dolor_cabeza: {
+    id: "rayo_dolor_cabeza",
+    name: "Rayo de Dolor de Cabeza Punzante",
+    family: "reacciones_humor",
+    defaultPlacement: "overhead",
+    svg: `<polygon points="-12,-20 6,-6 -2,-4 14,16 -4,2 2,0" fill="#EF4444" stroke="${S}" stroke-width="3"/>`,
+    animatedSvg: (f: number) => {
+      const flash = Math.sin(f * 0.3) > 0;
+      const throb = 1 + Math.sin(f * 0.25) * 0.15;
+      return `<g transform="scale(${throb.toFixed(2)})">
+        <!-- Anillo de choque de dolor pulsante -->
+        <circle cx="0" cy="0" r="${(18 + Math.sin(f * 0.25) * 5).toFixed(1)}" fill="none" stroke="#DC2626" stroke-width="2.5" stroke-dasharray="3 3"/>
+        <!-- Rayo principal zigzagueante -->
+        <polygon points="-8,-24 8,-6 -2,-4 16,18 -4,2 4,0" fill="${flash ? '#EF4444' : '#FFE600'}" stroke="${S}" stroke-width="4" stroke-linejoin="miter"/>
+        <!-- Pequeños rayos laterales -->
+        <polygon points="-16,-12 -10,-8 -12,-4" fill="#EF4444"/>
+        <polygon points="16,-12 10,-8 12,-4" fill="#EF4444"/>
+      </g>`;
+    },
+    tags: ["dolor", "cabeza", "jaqueca", "migraña", "rayo", "pulsante", "sintoma"],
+  },
+  monitor_presion_arterial_hud: {
+    id: "monitor_presion_arterial_hud",
+    name: "Monitor de Presión Arterial y Pulso Estable",
+    family: "tecnologia",
+    defaultPlacement: "left",
+    svg: `<rect x="-28" y="-18" width="56" height="36" rx="5" fill="#0F172A" stroke="${S}" stroke-width="4"/><polyline points="-22,0 -10,0 -6,-10 0,10 6,-4 10,0 22,0" fill="none" stroke="#22C55E" stroke-width="3"/>`,
+    animatedSvg: (f: number) => {
+      return `<g>
+        <!-- Pantalla médica oscura -->
+        <rect x="-30" y="-20" width="60" height="40" rx="5" fill="#090D16" stroke="${S}" stroke-width="4.5"/>
+        <!-- Trazado ECG verde brillante -->
+        <polyline points="-26,2 -14,2 -10,-8 -4,12 2,-6 8,2 26,2" fill="none" stroke="#22C55E" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+        <!-- Lectura de presión arterial: 120/80 NORMAL -->
+        <rect x="-24" y="-15" width="22" height="8" rx="2" fill="#15803D"/>
+        <text x="-13" y="-9.5" text-anchor="middle" fill="#FFFFFF" font-size="5" font-weight="900" font-family="'Arial Black'">120/80</text>
+        <text x="12" y="-10" text-anchor="middle" fill="#22C55E" font-size="4.5" font-weight="900" font-family="'Arial Black'">NORMAL</text>
+        <!-- Pulso cardíaco -->
+        <text x="0" y="14" text-anchor="middle" fill="#38BDF8" font-size="5" font-weight="900" font-family="'Arial Black'">♥ 68 BPM (RELAJADO)</text>
+      </g>`;
+    },
+    tags: ["monitor", "presion_arterial", "ecg", "cardiaco", "estable", "clinica", "salud"],
+  },
+  vaso_cafe_carton_salpicadura: {
+    id: "vaso_cafe_carton_salpicadura",
+    name: "Vaso de Café con Salpicadura de Gota",
+    family: "vida_cotidiana",
+    defaultPlacement: "right",
+    svg: `<path d="M -12,-20 L 12,-20 L 9,22 L -9,22 Z" fill="#FFFFFF" stroke="${S}" stroke-width="3.5"/><rect x="-11" y="-6" width="22" height="16" fill="#D97706"/><circle cx="16" cy="-14" r="4" fill="#78350F"/>`,
+    animatedSvg: (f: number) => {
+      const wobble = Math.sin(f * 0.25) * 6;
+      const dripY = -18 - Math.abs(Math.sin(f * 0.2)) * 12;
+      return `<g transform="rotate(${wobble.toFixed(1)} 0 20)">
+        <!-- Vaso de cartón blanco -->
+        <path d="M -14,-22 L 14,-22 L 10,24 L -10,24 Z" fill="#FFFFFF" stroke="${S}" stroke-width="4"/>
+        <!-- Faja aislante marrón -->
+        <path d="M -13,-6 L 13,-6 L 11,12 L -11,12 Z" fill="#B45309" stroke="${S}" stroke-width="2.5"/>
+        <text x="0" y="5" text-anchor="middle" fill="#FEF3C7" font-size="5" font-weight="900">CAFÉ</text>
+        <!-- Tapa de plástico blanco -->
+        <rect x="-16" y="-28" width="32" height="7" rx="2" fill="#F1F5F9" stroke="${S}" stroke-width="3"/>
+        <rect x="8" y="-31" width="5" height="4" fill="#000000"/>
+        <!-- Gotas de café salpicando en el aire -->
+        <circle cx="16" cy="${dripY.toFixed(1)}" r="4.5" fill="#78350F" stroke="${S}" stroke-width="2"/>
+        <circle cx="22" cy="${(dripY + 8).toFixed(1)}" r="2.5" fill="#78350F"/>
+        <!-- Gota cayendo hacia la camisa -->
+        <circle cx="-16" cy="${(-dripY * 0.8).toFixed(1)}" r="3" fill="#78350F" stroke="${S}" stroke-width="1.5"/>
+      </g>`;
+    },
+    tags: ["cafe", "vaso", "tropiezo", "salpicadura", "mancha", "accidente", "descuido"],
+  },
+  casco_minero_linterna_foco: {
+    id: "casco_minero_linterna_foco",
+    name: "Casco con Reflector Gigante Integrado",
+    family: "herramientas_objetos",
+    defaultPlacement: "overhead",
+    svg: `<path d="M -22,0 A 22,20 0 0,1 22,0 Z" fill="#FACC15" stroke="${S}" stroke-width="4"/><circle cx="0" cy="-12" r="10" fill="#FFFFFF" stroke="${S}" stroke-width="3"/>`,
+    animatedSvg: (f: number) => {
+      const beamGlow = 0.6 + Math.sin(f * 0.2) * 0.35;
+      return `<g>
+        <!-- Casco amarillo de seguridad -->
+        <path d="M -24,4 A 24,20 0 0,1 24,4 Z" fill="#FACC15" stroke="${S}" stroke-width="4"/>
+        <rect x="-28" y="2" width="56" height="6" rx="2" fill="#EAB308" stroke="${S}" stroke-width="3"/>
+        <!-- Lámpara / Reflector frontal montado -->
+        <rect x="-10" y="-18" width="20" height="16" rx="3" fill="#334155" stroke="${S}" stroke-width="3"/>
+        <circle cx="0" cy="-10" r="8" fill="#FFFFFF" stroke="${S}" stroke-width="2.5"/>
+        <circle cx="0" cy="-10" r="4" fill="#FEF08A"/>
+        <!-- Haz de luz propio apuntando hacia abajo -->
+        <polygon points="-8,-4 8,-4 36,44 -36,44" fill="#FEF08A" opacity="${beamGlow.toFixed(2)}" />
+        <text x="0" y="28" text-anchor="middle" fill="#000000" font-size="4.5" font-weight="900">¡TU FOCO!</text>
+      </g>`;
+    },
+    tags: ["casco", "linterna", "foco", "reflector", "cabeza", "egocentrismo", "percepcion"],
+  },
+  camiseta_barry_manilow_amarilla: {
+    id: "camiseta_barry_manilow_amarilla",
+    name: "Camiseta Amarilla Kitsch de Barry Manilow",
+    family: "vida_cotidiana",
+    defaultPlacement: "right",
+    svg: `<g>
+      <!-- Camiseta amarilla vistiendo el torso del Stickman -->
+      <path d="M -18,0 L -52,6 L -70,46 L -48,52 L -44,138 L 44,138 L 48,52 L 70,46 L 52,6 L 18,0 Z" fill="#FDE047" stroke="${S}" stroke-width="4.5" stroke-linejoin="round"/>
+      <!-- Cuello redondo acanalado -->
+      <path d="M -18,0 Q 0,16 18,0" fill="#FEF08A" stroke="${S}" stroke-width="3.5"/>
+      <!-- Sombra de costura lateral -->
+      <path d="M -40,60 L -36,134" stroke="#EAB308" stroke-width="3" stroke-linecap="round"/>
+      <!-- Estampado retro de Barry Manilow -->
+      <text x="0" y="38" text-anchor="middle" fill="#DC2626" font-size="9" font-weight="900" font-family="'Arial Black', sans-serif" stroke="#FFFFFF" stroke-width="0.8">BARRY MANILOW</text>
+      <!-- Marco del retrato estilo disco de vinilo/poster 70s -->
+      <rect x="-22" y="44" width="44" height="46" rx="6" fill="#F43F5E" stroke="${S}" stroke-width="2.5"/>
+      <!-- Melena setentera rubia abultada -->
+      <path d="M -18,66 Q -20,48 0,47 Q 20,48 18,66 Q 14,53 0,52 Q -14,53 -18,66 Z" fill="#FBBF24" stroke="${S}" stroke-width="1.8"/>
+      <!-- Rostro sonriente -->
+      <circle cx="0" cy="66" r="12" fill="#FED7AA" stroke="${S}" stroke-width="1.8"/>
+      <!-- Mechones rubios con volumen -->
+      <path d="M -14,60 Q -17,52 -6,50 Q 0,49 6,50 Q 17,52 14,60 Q 10,54 0,53 Q -10,54 -14,60 Z" fill="#FDE047"/>
+      <!-- Ojos sonrientes -->
+      <path d="M -6,64 Q -4,61 -2,64" fill="none" stroke="${S}" stroke-width="1.8" stroke-linecap="round"/>
+      <path d="M 2,64 Q 4,61 6,64" fill="none" stroke="${S}" stroke-width="1.8" stroke-linecap="round"/>
+      <!-- Sonrisa gigante con dientes brillantes -->
+      <path d="M -7,71 Q 0,80 7,71 Z" fill="#FFFFFF" stroke="${S}" stroke-width="1.5"/>
+      <line x1="0" y1="72" x2="0" y2="76" stroke="#E2E8F0" stroke-width="1"/>
+      <!-- Destello popstar -->
+      <polygon points="14,50 15,53 18,54 15,55 14,58 13,55 10,54 13,53" fill="#FFFFFF"/>
+      <text x="-14" y="56" fill="#FFFFFF" font-size="7" font-weight="900">♪</text>
+      <!-- Texto inferior del éxito musical -->
+      <text x="0" y="104" text-anchor="middle" fill="#000000" font-size="7.5" font-weight="900" font-family="'Arial Black', sans-serif">«MANDY»</text>
+      <text x="0" y="116" text-anchor="middle" fill="#991B1B" font-size="6" font-weight="900">COPACABANA</text>
+    </g>`,
+    animatedSvg: (f: number) => {
+      const breath = Math.sin(f * 0.15) * 1.5;
+      const wink = Math.floor(f / 25) % 2 === 0;
+      return `<g transform="translate(0, ${breath.toFixed(1)})">
+        <!-- Camiseta amarilla estridente cubriendo el torso -->
+        <path d="M -18,0 L -52,6 L -70,46 L -48,52 L -44,138 L 44,138 L 48,52 L 70,46 L 52,6 L 18,0 Z" fill="#FDE047" stroke="${S}" stroke-width="4.5" stroke-linejoin="round"/>
+        <!-- Cuello acanalado -->
+        <path d="M -18,0 Q 0,16 18,0" fill="#FEF08A" stroke="${S}" stroke-width="3.5"/>
+        <!-- Arrugas de tela sutiles -->
+        <path d="M -40,62 L -36,132" stroke="#EAB308" stroke-width="3" stroke-linecap="round"/>
+        <path d="M 40,62 L 36,132" stroke="#EAB308" stroke-width="3" stroke-linecap="round"/>
+        <!-- Título del cantante -->
+        <text x="0" y="38" text-anchor="middle" fill="#DC2626" font-size="9" font-weight="900" font-family="'Arial Black', sans-serif" stroke="#FFFFFF" stroke-width="0.8">BARRY MANILOW</text>
+        <!-- Marco del retrato retro -->
+        <rect x="-22" y="44" width="44" height="46" rx="6" fill="#F43F5E" stroke="${S}" stroke-width="2.5"/>
+        <!-- Cabellera voluminosa setentera rubia -->
+        <path d="M -18,66 Q -20,48 0,47 Q 20,48 18,66 Q 14,53 0,52 Q -14,53 -18,66 Z" fill="#FBBF24" stroke="${S}" stroke-width="1.8"/>
+        <!-- Rostro sonriente de Barry Manilow -->
+        <circle cx="0" cy="66" r="12" fill="#FED7AA" stroke="${S}" stroke-width="1.8"/>
+        <path d="M -14,60 Q -17,52 -6,50 Q 0,49 6,50 Q 17,52 14,60 Q 10,54 0,53 Q -10,54 -14,60 Z" fill="#FDE047"/>
+        <!-- Ojos sonrientes/guiño cómico -->
+        <path d="M -6,64 Q -4,61 -2,64" fill="none" stroke="${S}" stroke-width="1.8" stroke-linecap="round"/>
+        ${wink
+          ? `<path d="M 2,64 Q 4,61 6,64" fill="none" stroke="${S}" stroke-width="1.8" stroke-linecap="round"/>`
+          : `<line x1="2" y1="64" x2="6" y2="64" stroke="${S}" stroke-width="2" stroke-linecap="round"/>`}
+        <!-- Sonrisa radiante con dientes -->
+        <path d="M -7,71 Q 0,80 7,71 Z" fill="#FFFFFF" stroke="${S}" stroke-width="1.5"/>
+        <line x1="0" y1="72" x2="0" y2="76" stroke="#E2E8F0" stroke-width="1"/>
+        <!-- Destello brillante de estrella de pop -->
+        <polygon points="14,50 15,53 18,54 15,55 14,58 13,55 10,54 13,53" fill="#FFFFFF"/>
+        <text x="-14" y="56" fill="#FFFFFF" font-size="7" font-weight="900">♪</text>
+        <!-- Canciones icónicas de los 70 -->
+        <text x="0" y="104" text-anchor="middle" fill="#000000" font-size="7.5" font-weight="900" font-family="'Arial Black', sans-serif">«MANDY»</text>
+        <text x="0" y="116" text-anchor="middle" fill="#991B1B" font-size="6" font-weight="900">COPACABANA</text>
+      </g>`;
+    },
+    tags: ["camiseta", "amarilla", "barry_manilow", "vergonzosa", "kitsch", "experimento", "cornell"],
+  },
+  carpeta_escolar_universidad: {
+    id: "carpeta_escolar_universidad",
+    name: "Carpeta Manila de Estudiante Universitario",
+    family: "educacion_ciencia",
+    defaultPlacement: "left",
+    svg: `<rect x="-20" y="-16" width="40" height="32" rx="3" fill="#FBBF24" stroke="${S}" stroke-width="3.5"/><polygon points="-20,-16 -10,-16 -6,-11 20,-11 20,16 -20,16" fill="#F59E0B"/>`,
+    animatedSvg: (f: number) => {
+      const shake = Math.sin(f * 0.3) * 1.5;
+      return `<g transform="rotate(${shake.toFixed(1)} 0 16)">
+        <!-- Carpeta de cartón manila clásica -->
+        <rect x="-22" y="-18" width="44" height="36" rx="3" fill="#FBBF24" stroke="${S}" stroke-width="4"/>
+        <!-- Pestaña superior de archivador -->
+        <polygon points="-22,-18 -10,-18 -6,-12 22,-12 22,18 -22,18" fill="#F59E0B" stroke="${S}" stroke-width="2"/>
+        <!-- Hojas blancas asomando -->
+        <line x1="-16" y1="-8" x2="16" y2="-8" stroke="#FFFFFF" stroke-width="2"/>
+        <line x1="-16" y1="-2" x2="12" y2="-2" stroke="#FFFFFF" stroke-width="2"/>
+        <!-- Sello universitario Cornell -->
+        <circle cx="10" cy="6" r="6" fill="#DC2626"/>
+        <text x="10" y="8" text-anchor="middle" fill="#FFFFFF" font-size="4" font-weight="900">U</text>
+      </g>`;
+    },
+    tags: ["carpeta", "universidad", "cornell", "tapar", "pecho", "estudiante", "manila"],
+  },
+  grafico_pastel_50_vs_23: {
+    id: "grafico_pastel_50_vs_23",
+    name: "Gráfica Comparativa 50% Paranoia vs 23% Realidad",
+    family: "educacion_ciencia",
+    defaultPlacement: "right",
+    svg: `<circle cx="-14" cy="0" r="14" fill="#EF4444" stroke="${S}" stroke-width="3"/><circle cx="14" cy="0" r="14" fill="#22C55E" stroke="${S}" stroke-width="3"/>`,
+    animatedSvg: (f: number) => {
+      const pulse = 1 + Math.sin(f * 0.15) * 0.04;
+      return `<g transform="scale(${pulse.toFixed(3)})">
+        <!-- Gráfico izquierdo: 50% PENSADO (Rojo) -->
+        <g transform="translate(-20, 0)">
+          <circle cx="0" cy="0" r="16" fill="#1E293B" stroke="${S}" stroke-width="3.5"/>
+          <!-- Mitad roja (50%) -->
+          <path d="M 0,-16 A 16,16 0 0,1 0,16 Z" fill="#EF4444"/>
+          <text x="0" y="4" text-anchor="middle" fill="#FFFFFF" font-size="6.5" font-weight="900" font-family="'Arial Black'">50%</text>
+          <text x="0" y="24" text-anchor="middle" fill="#EF4444" font-size="5" font-weight="900">CREÍAN</text>
+        </g>
+        <!-- Gráfico derecho: 23% REAL (Verde) -->
+        <g transform="translate(20, 0)">
+          <circle cx="0" cy="0" r="16" fill="#1E293B" stroke="${S}" stroke-width="3.5"/>
+          <!-- Rebanada verde del 23% -->
+          <path d="M 0,-16 A 16,16 0 0,1 15,-5 L 0,0 Z" fill="#22C55E"/>
+          <text x="0" y="4" text-anchor="middle" fill="#FFFFFF" font-size="6.5" font-weight="900" font-family="'Arial Black'">23%</text>
+          <text x="0" y="24" text-anchor="middle" fill="#22C55E" font-size="5" font-weight="900">REAL</text>
+        </g>
+      </g>`;
+    },
+    tags: ["grafico", "pastel", "50%", "23%", "estadistica", "cornell", "gilovich", "realidad"],
+  },
+  lentes_3d_cine_palomitas: {
+    id: "lentes_3d_cine_palomitas",
+    name: "Lentes 3D Retro y Bote de Palomitas",
+    family: "vida_cotidiana",
+    defaultPlacement: "left",
+    svg: `<rect x="-18" y="-10" width="16" height="12" fill="#EF4444" stroke="${S}" stroke-width="3"/><rect x="2" y="-10" width="16" height="12" fill="#0EA5E9" stroke="${S}" stroke-width="3"/><path d="M -12,4 L 12,4 L 9,24 L -9,24 Z" fill="#FFFFFF" stroke="${S}" stroke-width="3"/>`,
+    animatedSvg: (f: number) => {
+      const crunch = Math.sin(f * 0.2) > 0.7;
+      return `<g>
+        <!-- Bote de palomitas a rayas rojas y blancas -->
+        <g transform="translate(0, 8)">
+          <path d="M -14,-4 L 14,-4 L 10,22 L -10,22 Z" fill="#FFFFFF" stroke="${S}" stroke-width="3.5"/>
+          <line x1="-5" y1="-4" x2="-3" y2="22" stroke="#EF4444" stroke-width="4"/>
+          <line x1="5" y1="-4" x2="3" y2="22" stroke="#EF4444" stroke-width="4"/>
+          <!-- Palomitas doradas arriba -->
+          <circle cx="-6" cy="-8" r="4.5" fill="#FEF08A" stroke="${S}" stroke-width="1.5"/>
+          <circle cx="0" cy="-10" r="5" fill="#FEF08A" stroke="${S}" stroke-width="1.5"/>
+          <circle cx="6" cy="-8" r="4.5" fill="#FEF08A" stroke="${S}" stroke-width="1.5"/>
+        </g>
+        <!-- Gafas 3D anaglifo (Rojo / Cyan) -->
+        <g transform="translate(0, -18)">
+          <rect x="-18" y="-7" width="16" height="14" rx="2" fill="#EF4444" stroke="${S}" stroke-width="3"/>
+          <rect x="2" y="-7" width="16" height="14" rx="2" fill="#06B6D4" stroke="${S}" stroke-width="3"/>
+          <line x1="-2" y1="0" x2="2" y2="0" stroke="${S}" stroke-width="3.5"/>
+          <line x1="-22" y1="-2" x2="-18" y2="-2" stroke="${S}" stroke-width="3"/>
+          <line x1="18" y1="-2" x2="22" y2="-2" stroke="${S}" stroke-width="3"/>
+        </g>
+      </g>`;
+    },
+    tags: ["cine", "lentes_3d", "palomitas", "protagonista", "pelicula", "propia_vida", "butaca"],
+  },
+  nube_inseguridad_grano: {
+    id: "nube_inseguridad_grano",
+    name: "Bocadillo de Pensamiento: Preocupación Cotidiana",
+    family: "reacciones_humor",
+    defaultPlacement: "overhead",
+    svg: `<ellipse cx="0" cy="0" rx="22" ry="16" fill="#FFFFFF" stroke="${S}" stroke-width="3.5"/><circle cx="0" cy="0" r="6" fill="#EF4444"/>`,
+    animatedSvg: (f: number) => {
+      const floatY = Math.sin(f * 0.18) * 3;
+      return `<g transform="translate(0, ${floatY.toFixed(1)})">
+        <!-- Nube de pensamiento estilo historieta -->
+        <ellipse cx="0" cy="-6" rx="26" ry="18" fill="#FFFFFF" stroke="${S}" stroke-width="4"/>
+        <circle cx="-16" cy="-16" r="9" fill="#FFFFFF"/>
+        <circle cx="16" cy="-16" r="9" fill="#FFFFFF"/>
+        <circle cx="0" cy="18" r="4" fill="#FFFFFF" stroke="${S}" stroke-width="2.5"/>
+        <circle cx="-6" cy="28" r="2.5" fill="#FFFFFF" stroke="${S}" stroke-width="2"/>
+        <!-- Contenido cómico: grano rojo en la nariz con alerta -->
+        <circle cx="0" cy="-8" r="7" fill="#EF4444" stroke="${S}" stroke-width="2"/>
+        <circle cx="-2" cy="-10" r="2" fill="#FEF08A"/>
+        <text x="0" y="3" text-anchor="middle" fill="#DC2626" font-size="5" font-weight="900" font-family="'Arial Black'">¡MI GRANO!</text>
+      </g>`;
+    },
+    tags: ["pensamiento", "inseguridad", "grano", "drama", "multitud", "absorto", "preocupacion"],
+  },
+  interruptor_palanca_industrial: {
+    id: "interruptor_palanca_industrial",
+    name: "Interruptor Eléctrico de Palanca Industrial",
+    family: "herramientas_objetos",
+    defaultPlacement: "right",
+    svg: `<rect x="-14" y="-20" width="28" height="40" rx="4" fill="#1E293B" stroke="${S}" stroke-width="4"/><line x1="0" y1="0" x2="16" y2="16" stroke="#EF4444" stroke-width="5"/>`,
+    animatedSvg: (f: number) => {
+      const clickState = Math.sin(f * 0.2) > 0;
+      return `<g>
+        <!-- Caja metálica industrial de pared -->
+        <rect x="-16" y="-22" width="32" height="44" rx="4" fill="#1E293B" stroke="${S}" stroke-width="4"/>
+        <circle cx="0" cy="-14" r="3" fill="#DC2626"/>
+        <circle cx="0" cy="14" r="3" fill="#22C55E"/>
+        <!-- Ranura central -->
+        <line x1="0" y1="-10" x2="0" y2="10" stroke="#000000" stroke-width="4"/>
+        <!-- Palanca roja girada a posición OFF (abajo) -->
+        <line x1="0" y1="0" x2="18" y2="16" stroke="#DC2626" stroke-width="6" stroke-linecap="round"/>
+        <circle cx="18" cy="16" r="6" fill="#EF4444" stroke="${S}" stroke-width="2.5"/>
+        <!-- Rótulo OFF -->
+        <text x="-8" y="2" text-anchor="middle" fill="#FFFFFF" font-size="4.5" font-weight="900">OFF</text>
+      </g>`;
+    },
+    tags: ["interruptor", "palanca", "apagar", "foco", "libertad", "clac", "off"],
+  },
+  gallina_sostenida_giroscopica: {
+    id: "gallina_sostenida_giroscopica",
+    name: "Gallina con Estabilizador Giroscópico Activo",
+    family: "naturaleza_alimentos",
+    defaultPlacement: "both",
+    svg: `<ellipse cx="0" cy="8" rx="20" ry="16" fill="#F59E0B" stroke="${S}" stroke-width="4"/><circle cx="-14" cy="-8" r="10" fill="#F59E0B" stroke="${S}" stroke-width="3.5"/><polygon points="-24,-8 -18,-5 -18,-11" fill="#FDE047" stroke="${S}" stroke-width="2.5"/><polygon points="-16,-18 -12,-16 -14,-12" fill="#EF4444" stroke="${S}" stroke-width="2"/>`,
+    animatedSvg: (f: number) => {
+      // El cuerpo oscila en X e Y simulando que Stickman lo mueve
+      const bodyBobY = Math.sin(f * 0.22) * 5;
+      const bodySwayX = Math.cos(f * 0.18) * 6;
+      const bodyRot = Math.sin(f * 0.18) * 8;
+      // Pero la cabeza se mantiene perfectamente compensada en la coordenada fija
+      const compHeadX = -bodySwayX * 0.85;
+      const compHeadY = -bodyBobY * 0.85;
+      return `<g transform="scale(2.4) translate(12, 2)">
+        <!-- Retícula HUD de calibración óptica fija en el centro de la cabeza -->
+        <circle cx="-14" cy="-10" r="18" fill="none" stroke="#06B6D4" stroke-width="2" stroke-dasharray="4 3" opacity="0.85"/>
+        <line x1="-36" y1="-10" x2="8" y2="-10" stroke="#06B6D4" stroke-width="1.8" opacity="0.75"/>
+        <line x1="-14" y1="-32" x2="-14" y2="12" stroke="#06B6D4" stroke-width="1.8" opacity="0.75"/>
+        <text x="12" y="-24" fill="#06B6D4" font-size="5" font-weight="900" font-family="'Arial Black'">GYRO: LOCK</text>
+        
+        <!-- Cuerpo de la gallina que se bambolea -->
+        <g transform="translate(${bodySwayX.toFixed(1)}, ${bodyBobY.toFixed(1)}) rotate(${bodyRot.toFixed(1)})">
+          <!-- Patas de gallina -->
+          <line x1="-6" y1="20" x2="-10" y2="30" stroke="${S}" stroke-width="3.5"/>
+          <line x1="-10" y1="30" x2="-16" y2="30" stroke="${S}" stroke-width="3"/>
+          <line x1="8" y1="20" x2="10" y2="30" stroke="${S}" stroke-width="3.5"/>
+          <line x1="10" y1="30" x2="16" y2="30" stroke="${S}" stroke-width="3"/>
+          <!-- Cola con plumas blancas y rojas -->
+          <path d="M 16 0 C 26 -10, 30 8, 18 16 Z" fill="#EF4444" stroke="${S}" stroke-width="3"/>
+          <!-- Torso gordo y esponjoso -->
+          <ellipse cx="0" cy="10" rx="22" ry="17" fill="#F59E0B" stroke="${S}" stroke-width="4"/>
+          <!-- Ala que aletea levemente -->
+          <path d="M -8 8 C -2 0, 14 2, 12 18 C 4 20, -6 18, -8 8 Z" fill="#D97706" stroke="${S}" stroke-width="3.5"/>
+        </g>
+
+        <!-- Cuello elástico que conecta el cuerpo móvil a la cabeza quieta -->
+        <path d="M ${(-4 + bodySwayX * 0.5).toFixed(1)} ${(2 + bodyBobY * 0.5).toFixed(1)} Q -8 -4, ${(-14 + compHeadX * 0.2).toFixed(1)} ${(-8 + compHeadY * 0.2).toFixed(1)}" fill="none" stroke="#F59E0B" stroke-width="9" stroke-linecap="round"/>
+
+        <!-- Cabeza perfectamente estabilizada con compensación giroscópica -->
+        <g transform="translate(${compHeadX.toFixed(1)}, ${compHeadY.toFixed(1)})">
+          <circle cx="-14" cy="-10" r="11" fill="#F59E0B" stroke="${S}" stroke-width="3.5"/>
+          <!-- Pico amarillo brillante -->
+          <polygon points="-25,-10 -18,-7 -18,-13" fill="#FDE047" stroke="${S}" stroke-width="2.5"/>
+          <!-- Ojo circular ultra enfocado -->
+          <circle cx="-15" cy="-12" r="3.5" fill="#FFFFFF" stroke="${S}" stroke-width="2"/>
+          <circle cx="-16" cy="-12" r="1.5" fill="#000000"/>
+          <!-- Cresta roja llamativa -->
+          <path d="M -18 -20 C -22 -15, -12 -17, -10 -22 C -6 -18, -4 -21, -8 -15 Z" fill="#EF4444" stroke="${S}" stroke-width="2.5"/>
+          <!-- Barbilla roja -->
+          <ellipse cx="-18" cy="-5" rx="2.5" ry="4" fill="#EF4444" stroke="${S}" stroke-width="2"/>
+        </g>
+      </g>`;
+    },
+    tags: ["gallina", "giroscopio", "cabeza", "estabilizador", "ave", "steadycam", "experimento"],
+  },
+  globo_ocular_aviar_plano_lupa: {
+    id: "globo_ocular_aviar_plano_lupa",
+    name: "Comparativa Anatómica: Ojo Humano vs Ojo Plano Aviar",
+    family: "educacion_ciencia",
+    defaultPlacement: "overhead",
+    svg: `<circle cx="-18" cy="0" r="16" fill="#FFFFFF" stroke="${S}" stroke-width="4"/><ellipse cx="18" cy="0" rx="18" ry="11" fill="#FEF08A" stroke="${S}" stroke-width="4"/>`,
+    animatedSvg: (f: number) => {
+      const rotHumano = Math.sin(f * 0.15) * 25;
+      return `<g>
+        <!-- Lado izquierdo: Ojo humano esférico que gira libremente -->
+        <g transform="translate(-24, 0)">
+          <circle cx="0" cy="0" r="18" fill="#FFFFFF" stroke="${S}" stroke-width="4"/>
+          <!-- Iris y pupila girando con flechas de rotación -->
+          <g transform="rotate(${rotHumano.toFixed(1)})">
+            <circle cx="5" cy="0" r="8" fill="#38BDF8" stroke="${S}" stroke-width="2.5"/>
+            <circle cx="6" cy="0" r="4" fill="#000000"/>
+          </g>
+          <path d="M -12 -22 A 16 16 0 0 1 12 -22" fill="none" stroke="#22C55E" stroke-width="3" stroke-dasharray="3 2"/>
+          <text x="0" y="30" text-anchor="middle" fill="#0284C7" font-size="5" font-weight="900" font-family="'Arial Black'">HUMANO: MÓVIL</text>
+        </g>
+        
+        <!-- Símbolo VS central -->
+        <rect x="-8" y="-8" width="16" height="16" rx="4" fill="#DC2626" stroke="${S}" stroke-width="3"/>
+        <text x="0" y="3" text-anchor="middle" fill="#FFFFFF" font-size="6" font-weight="900" font-family="'Arial Black'">VS</text>
+
+        <!-- Lado derecho: Ojo aviar plano y bloqueado en cráneo óseo -->
+        <g transform="translate(24, 0)">
+          <!-- Anillo óseo esclerótico rígido -->
+          <ellipse cx="0" cy="0" rx="20" ry="13" fill="#CBD5E1" stroke="${S}" stroke-width="4"/>
+          <!-- Globo ocular tubular/plano con fijación -->
+          <ellipse cx="0" cy="0" rx="16" ry="9" fill="#FEF08A" stroke="${S}" stroke-width="3"/>
+          <circle cx="2" cy="0" r="6" fill="#F59E0B" stroke="${S}" stroke-width="2"/>
+          <circle cx="2" cy="0" r="3" fill="#000000"/>
+          <!-- Candado rojo de bloqueo -->
+          <rect x="-4" y="-22" width="8" height="7" rx="1.5" fill="#EF4444" stroke="${S}" stroke-width="2"/>
+          <path d="M -2 -22 L -2 -25 A 2 2 0 0 1 2 -25 L 2 -22" fill="none" stroke="${S}" stroke-width="2"/>
+          <text x="0" y="30" text-anchor="middle" fill="#DC2626" font-size="5" font-weight="900" font-family="'Arial Black'">AVE: RÍGIDO</text>
+        </g>
+      </g>`;
+    },
+    tags: ["ojo", "anatomia", "humano", "ave", "plano", "rigido", "comparativa"],
+  },
+  vision_borrosa_semillas_maiz: {
+    id: "vision_borrosa_semillas_maiz",
+    name: "Suelo con Semillas de Maíz y Líneas de Desenfoque Cinético",
+    family: "naturaleza_alimentos",
+    defaultPlacement: "right",
+    svg: `<ellipse cx="0" cy="0" rx="22" ry="14" fill="#FEF08A" stroke="${S}" stroke-width="4"/>`,
+    animatedSvg: (f: number) => {
+      const blurShift = Math.sin(f * 0.28) * 8;
+      return `<g transform="translate(${blurShift.toFixed(1)}, 0)">
+        <!-- Líneas de motion blur rojas y amarillas -->
+        <line x1="-35" y1="-12" x2="35" y2="-12" stroke="#EF4444" stroke-width="3" stroke-linecap="round" opacity="0.8"/>
+        <line x1="-40" y1="0" x2="40" y2="0" stroke="#F59E0B" stroke-width="3.5" stroke-linecap="round" opacity="0.9"/>
+        <line x1="-30" y1="12" x2="30" y2="12" stroke="#EF4444" stroke-width="2.5" stroke-linecap="round" opacity="0.8"/>
+
+        <!-- Tres granos de maíz dorados en el suelo -->
+        <g transform="translate(-16, 2) rotate(15)">
+          <path d="M 0 -7 C 5 -7, 6 7, 0 7 C -6 7, -5 -7, 0 -7 Z" fill="#FDE047" stroke="${S}" stroke-width="3"/>
+          <circle cx="-1" cy="-2" r="1.5" fill="#FFFFFF"/>
+        </g>
+        <g transform="translate(0, -4) rotate(-20)">
+          <path d="M 0 -8 C 6 -8, 7 8, 0 8 C -7 8, -6 -8, 0 -8 Z" fill="#F59E0B" stroke="${S}" stroke-width="3"/>
+          <circle cx="-1" cy="-2" r="1.5" fill="#FFFFFF"/>
+        </g>
+        <g transform="translate(18, 5) rotate(35)">
+          <path d="M 0 -7 C 5 -7, 6 7, 0 7 C -6 7, -5 -7, 0 -7 Z" fill="#FDE047" stroke="${S}" stroke-width="3"/>
+          <circle cx="-1" cy="-2" r="1.5" fill="#FFFFFF"/>
+        </g>
+        <!-- Señal de ceguera / borrón -->
+        <text x="0" y="24" text-anchor="middle" fill="#DC2626" font-size="5" font-weight="900" font-family="'Arial Black'">MOTION BLUR</text>
+      </g>`;
+    },
+    tags: ["semillas", "maiz", "desenfoque", "ceguera", "suelo", "motion_blur"],
+  },
+  diagrama_14_vertebras_resorte: {
+    id: "diagrama_14_vertebras_resorte",
+    name: "Diagrama Biomecánico de 14 Vértebras Cervicales Articuladas",
+    family: "educacion_ciencia",
+    defaultPlacement: "overhead",
+    svg: `<rect x="-16" y="-25" width="32" height="50" rx="4" fill="#1E293B" stroke="${S}" stroke-width="4"/>`,
+    animatedSvg: (f: number) => {
+      const springPhase = Math.sin(f * 0.2);
+      return `<g>
+        <!-- Marco de plano técnico azul oscuro -->
+        <rect x="-28" y="-32" width="56" height="64" rx="5" fill="#0F172A" stroke="${S}" stroke-width="4"/>
+        <line x1="-28" y1="-20" x2="28" y2="-20" stroke="#38BDF8" stroke-width="1.5"/>
+        <text x="0" y="-24" text-anchor="middle" fill="#38BDF8" font-size="4.5" font-weight="900" font-family="'Arial Black'">14 VÉRTEBRAS CERVICALES</text>
+
+        <!-- Columna de 14 anillos/discos articulados actuando como resorte hidráulico -->
+        ${Array.from({ length: 14 }).map((_, i) => {
+          const y = -14 + i * 3.2 + springPhase * Math.sin(i * 0.4) * 1.5;
+          const isEven = i % 2 === 0;
+          return `<g transform="translate(0, ${y.toFixed(1)})">
+            <rect x="-14" y="-1.2" width="28" height="2.4" rx="1.2" fill="${isEven ? "#F59E0B" : "#10B981"}" stroke="${S}" stroke-width="1.2"/>
+            <circle cx="-10" cy="0" r="0.8" fill="#FFFFFF"/>
+            <circle cx="10" cy="0" r="0.8" fill="#FFFFFF"/>
+          </g>`;
+        }).join("")}
+
+        <!-- Puntero comparativo: 2X que jirafa -->
+        <rect x="-24" y="20" width="48" height="9" rx="3" fill="#DC2626" stroke="${S}" stroke-width="2"/>
+        <text x="0" y="26.5" text-anchor="middle" fill="#FFFFFF" font-size="4" font-weight="900" font-family="'Arial Black'">¡2x MÁS QUE UNA JIRAFA (7)!</text>
+      </g>`;
+    },
+    tags: ["vertebras", "cuello", "jirafa", "resorte", "hidraulico", "biomecanica", "diagrama"],
+  },
+  steadycam_gimbal_cine_auto: {
+    id: "steadycam_gimbal_cine_auto",
+    name: "Estabilizador Gimbal de Cine y Suspensión Activa de Auto",
+    family: "tecnologia",
+    defaultPlacement: "right",
+    svg: `<rect x="-15" y="-15" width="30" height="30" rx="4" fill="#334155" stroke="${S}" stroke-width="4"/>`,
+    animatedSvg: (f: number) => {
+      const humAngle = Math.sin(f * 0.16) * 12;
+      return `<g>
+        <!-- Soporte cardánico de 3 ejes girando -->
+        <g transform="rotate(${humAngle.toFixed(1)})">
+          <circle cx="0" cy="0" r="22" fill="none" stroke="#64748B" stroke-width="4"/>
+          <ellipse cx="0" cy="0" rx="20" ry="14" fill="none" stroke="#0284C7" stroke-width="3"/>
+          <!-- Cámara cinematográfica profesional centrada -->
+          <rect x="-10" y="-8" width="20" height="16" rx="2" fill="#0F172A" stroke="${S}" stroke-width="3"/>
+          <rect x="7" y="-5" width="7" height="10" rx="1" fill="#F59E0B" stroke="${S}" stroke-width="2"/>
+          <circle cx="-2" cy="0" r="4" fill="#38BDF8" stroke="${S}" stroke-width="2"/>
+        </g>
+        <!-- Servomotores brushless rotulados -->
+        <circle cx="0" cy="-22" r="3.5" fill="#22C55E" stroke="${S}" stroke-width="2"/>
+        <circle cx="22" cy="0" r="3.5" fill="#22C55E" stroke="${S}" stroke-width="2"/>
+        <text x="0" y="32" text-anchor="middle" fill="#0284C7" font-size="5" font-weight="900" font-family="'Arial Black'">3-AXIS GIMBAL PRO</text>
+      </g>`;
+    },
+    tags: ["steadycam", "gimbal", "camara", "suspension", "cine", "auto", "tecnologia"],
+  },
+  gallina_campeona_trofeo: {
+    id: "gallina_campeona_trofeo",
+    name: "Gallina Campeona con Trofeo y Gafas de Sol",
+    family: "reacciones_humor",
+    defaultPlacement: "overhead",
+    svg: `<circle cx="0" cy="0" r="18" fill="#F59E0B" stroke="${S}" stroke-width="4"/>`,
+    animatedSvg: (f: number) => {
+      const bounceY = Math.abs(Math.sin(f * 0.25)) * -6;
+      return `<g transform="translate(0, ${bounceY.toFixed(1)})">
+        <!-- Copa de trofeo de oro brillante -->
+        <path d="M -16 6 L -16 -6 C -16 -12, 16 -12, 16 -6 L 16 6 C 16 16, -16 16, -16 6 Z" fill="#FDE047" stroke="${S}" stroke-width="3.5"/>
+        <rect x="-6" y="16" width="12" height="6" fill="#D97706" stroke="${S}" stroke-width="2.5"/>
+        <rect x="-12" y="22" width="24" height="6" rx="2" fill="#1E293B" stroke="${S}" stroke-width="2.5"/>
+        
+        <!-- Cabeza de gallina asomándose con gafas negras -->
+        <circle cx="0" cy="-14" r="10" fill="#F59E0B" stroke="${S}" stroke-width="3"/>
+        <polygon points="-10,-13 -4,-11 -4,-15" fill="#FDE047" stroke="${S}" stroke-width="2"/>
+        <!-- Gafas de sol oscuras de crack -->
+        <rect x="-7" y="-17" width="14" height="6" rx="1.5" fill="#0F172A" stroke="${S}" stroke-width="2"/>
+        <line x1="0" y1="-14" x2="0" y2="-17" stroke="#FFFFFF" stroke-width="1.5"/>
+        <!-- Medalla número 1 -->
+        <text x="0" y="8" text-anchor="middle" fill="#000000" font-size="7" font-weight="900" font-family="'Arial Black'">#1</text>
+      </g>`;
+    },
+    tags: ["gallina", "trofeo", "campeona", "gafas", "oro", "exito", "humor"],
+  },
+  gallina_cabeceo_thrust_hold: {
+    id: "gallina_cabeceo_thrust_hold",
+    name: "Mecánica de Caminata: Fase Empuje y Congelamiento",
+    family: "educacion_ciencia",
+    defaultPlacement: "right",
+    svg: `<ellipse cx="0" cy="0" rx="22" ry="16" fill="#F59E0B" stroke="${S}" stroke-width="4"/>`,
+    animatedSvg: (f: number) => {
+      // Ciclo de cabeceo de 2 fases: 0..0.4 thrust (empuje rápido), 0.4..1.0 hold (cabeza quieta en el espacio)
+      const cycle = (f % 30) / 30;
+      const isHold = cycle >= 0.35;
+      const headX = isHold ? 8 : -14 + (cycle / 0.35) * 22;
+      return `<g>
+        <!-- Gráfico superior de fases de cabeceo -->
+        <rect x="-30" y="-32" width="60" height="14" rx="3" fill="${isHold ? "#22C55E" : "#3B82F6"}" stroke="${S}" stroke-width="2"/>
+        <text x="0" y="-23" text-anchor="middle" fill="#FFFFFF" font-size="5" font-weight="900" font-family="'Arial Black'">
+          ${isHold ? "FASE 2: HOLD (0 KM/H)" : "FASE 1: THRUST"}
+        </text>
+
+        <!-- Cuerpo avanzando -->
+        <g transform="translate(0, 4)">
+          <ellipse cx="0" cy="0" rx="18" ry="14" fill="#F59E0B" stroke="${S}" stroke-width="3.5"/>
+          <line x1="-6" y1="12" x2="-8" y2="24" stroke="${S}" stroke-width="3"/>
+          <line x1="6" y1="12" x2="8" y2="24" stroke="${S}" stroke-width="3"/>
+        </g>
+
+        <!-- Cabeza con posición desacoplada -->
+        <g transform="translate(${headX.toFixed(1)}, -8)">
+          <circle cx="0" cy="0" r="9" fill="#F59E0B" stroke="${S}" stroke-width="3"/>
+          <polygon points="7,-1 13,2 7,5" fill="#FDE047" stroke="${S}" stroke-width="2"/>
+          <circle cx="3" cy="-2" r="2.5" fill="#FFFFFF" stroke="${S}" stroke-width="1.5"/>
+          <circle cx="3.5" cy="-2" r="1" fill="#000000"/>
+          <path d="M -3 -8 C -5 -5, 2 -6, 4 -9" fill="#EF4444" stroke="${S}" stroke-width="2"/>
+          {/* Mira láser de fijación retinal en fase HOLD */}
+          ${isHold ? `<circle cx="3" cy="-2" r="14" fill="none" stroke="#22C55E" stroke-width="2" stroke-dasharray="3 2"/><line x1="3" y1="-20" x2="3" y2="16" stroke="#22C55E" stroke-width="1.5"/>` : ""}
+        </g>
+      </g>`;
+    },
+    tags: ["cabeceo", "thrust", "hold", "caminar", "fijacion", "retina", "gallina"],
+  },
+  puntero_laser_verde: {
+    id: "puntero_laser_verde",
+    name: "Puntero Láser Verde de Presentación",
+    family: "herramientas_objetos",
+    defaultPlacement: "right",
+    svg: `<rect x="-4" y="-12" width="8" height="24" rx="2" fill="#1E293B" stroke="${S}" stroke-width="2.5"/><line x1="0" y1="-12" x2="30" y2="-40" stroke="#22C55E" stroke-width="3"/>`,
+    animatedSvg: (f: number) => {
+      const pulse = Math.sin(f * 0.3) * 0.3 + 0.7;
+      return `<g>
+        <rect x="-4" y="-14" width="8" height="28" rx="2" fill="#1E293B" stroke="${S}" stroke-width="2.5"/>
+        <circle cx="0" cy="-6" r="2" fill="#22C55E"/>
+        <line x1="0" y1="-14" x2="45" y2="-50" stroke="#10B981" stroke-width="3" opacity="${pulse.toFixed(2)}"/>
+        <circle cx="45" cy="-50" r="5" fill="#86EFAC" stroke="#000000" stroke-width="1.5"/>
+      </g>`;
+    },
+    tags: ["puntero", "laser", "verde", "presentacion", "profesor", "apuntar"],
+  },
+  tiburon_frustrado_balanza: {
+    id: "tiburon_frustrado_balanza",
+    name: "Balanza Sensorial: Tiburón vs Olfato Humano",
+    family: "educacion_ciencia",
+    defaultPlacement: "overhead",
+    svg: `<rect x="-3" y="-20" width="6" height="40" fill="#1E293B" stroke="${S}" stroke-width="2"/><line x1="-30" y1="-15" x2="30" y2="-5" stroke="${S}" stroke-width="3"/>`,
+    animatedSvg: (f: number) => {
+      // La balanza oscila con ventaja para el olfato humano (inclinada hacia la derecha)
+      const balanceTilt = 10 + Math.sin(f * 0.18) * 3;
+      return `<g>
+        <!-- Soporte central triangular de la balanza -->
+        <polygon points="0,-16 -12,24 12,24" fill="#334155" stroke="${S}" stroke-width="3"/>
+        <circle cx="0" cy="-16" r="4" fill="#F59E0B" stroke="${S}" stroke-width="2"/>
+
+        <!-- Barra oscilante -->
+        <g transform="rotate(${balanceTilt.toFixed(1)})">
+          <line x1="-36" y1="-16" x2="36" y2="-16" stroke="${S}" stroke-width="4" stroke-linecap="round"/>
+          
+          <!-- Platillo Izquierdo: Tiburón con gota de sangre (más ligero / pierde) -->
+          <g transform="translate(-36, -16)">
+            <line x1="0" y1="0" x2="-8" y2="18" stroke="${S}" stroke-width="1.8"/>
+            <line x1="0" y1="0" x2="8" y2="18" stroke="${S}" stroke-width="1.8"/>
+            <path d="M -14,18 L 14,18 L 10,24 L -10,24 Z" fill="#64748B" stroke="${S}" stroke-width="2"/>
+            {/* Silueta de tiburón con gota de sangre roja */}
+            <path d="M -8,14 C -12,8 0,4 6,10 C 10,12 8,16 -8,14 Z" fill="#94A3B8" stroke="${S}" stroke-width="1.5"/>
+            <circle cx="-2" cy="6" r="3" fill="#DC2626"/>
+            <text x="0" y="32" text-anchor="middle" fill="#94A3B8" font-size="4" font-weight="900" font-family="'Arial Black'">TIBURÓN: 1 PPM</text>
+          </g>
+
+          <!-- Platillo Derecho: Nariz humana oliendo petricor (más pesado / GANA) -->
+          <g transform="translate(36, -16)">
+            <line x1="0" y1="0" x2="-8" y2="24" stroke="${S}" stroke-width="1.8"/>
+            <line x1="0" y1="0" x2="8" y2="24" stroke="${S}" stroke-width="1.8"/>
+            <path d="M -14,24 L 14,24 L 10,30 L -10,30 Z" fill="#0284C7" stroke="${S}" stroke-width="2"/>
+            {/* Perfil de nariz y ondas de lluvia */}
+            <path d="M -4,12 C 0,16 6,18 4,22 C 2,24 -2,24 -4,22" fill="none" stroke="#F59E0B" stroke-width="2.5" stroke-linecap="round"/>
+            <circle cx="2" cy="14" r="2.5" fill="#38BDF8"/>
+            <text x="0" y="38" text-anchor="middle" fill="#0284C7" font-size="4.5" font-weight="900" font-family="'Arial Black'">HUMANO: 5 PPB (¡GANA!)</text>
+          </g>
+        </g>
+      </g>`;
+    },
+    tags: ["tiburon", "olfato", "balanza", "sangre", "geosmina", "nariz", "comparativa"],
+  },
+  piscina_olimpica_micro_gota: {
+    id: "piscina_olimpica_micro_gota",
+    name: "Visualización 500 Piscinas Olímpicas vs 1 Gota",
+    family: "educacion_ciencia",
+    defaultPlacement: "overhead",
+    svg: `<rect x="-24" y="-14" width="48" height="28" rx="4" fill="#0284C7" stroke="${S}" stroke-width="3"/>`,
+    animatedSvg: (f: number) => {
+      const dropBob = Math.sin(f * 0.22) * 3;
+      return `<g>
+        <!-- Representación isométrica de piscina olímpica -->
+        <rect x="-30" y="-16" width="60" height="34" rx="4" fill="#0284C7" stroke="${S}" stroke-width="3"/>
+        {/* Carriles de natación */}
+        <line x1="-26" y1="-8" x2="26" y2="-8" stroke="#38BDF8" stroke-width="1.5" stroke-dasharray="4 2"/>
+        <line x1="-26" y1="0" x2="26" y2="0" stroke="#38BDF8" stroke-width="1.5" stroke-dasharray="4 2"/>
+        <line x1="-26" y1="8" x2="26" y2="8" stroke="#38BDF8" stroke-width="1.5" stroke-dasharray="4 2"/>
+        
+        <!-- Sola micro-gota luminosa de geosmina cayendo en el centro -->
+        <g transform="translate(0, ${(-22 + dropBob).toFixed(1)})">
+          <path d="M 0,-8 C 4,-2 6,4 0,6 C -6,4 -4,-2 0,-8 Z" fill="#F59E0B" stroke="${S}" stroke-width="2"/>
+          <circle cx="-1" cy="2" r="1.2" fill="#FFFFFF"/>
+        </g>
+
+        <!-- Cartel de proporción colosal -->
+        <rect x="-26" y="22" width="52" height="11" rx="3" fill="#0F172A" stroke="${S}" stroke-width="2"/>
+        <text x="0" y="29.5" text-anchor="middle" fill="#FEF08A" font-size="4.2" font-weight="900" font-family="'Arial Black'">1 GOTA EN 500 PISCINAS</text>
+      </g>`;
+    },
+    tags: ["piscina", "gota", "geosmina", "concentracion", "partes_por_billon", "escala"],
+  },
+  bacteria_streptomyces_geosmina: {
+    id: "bacteria_streptomyces_geosmina",
+    name: "Bacteria Streptomyces emitiendo Geosmina",
+    family: "naturaleza_alimentos",
+    defaultPlacement: "right",
+    svg: `<circle cx="0" cy="0" r="18" fill="#15803D" stroke="${S}" stroke-width="3"/>`,
+    animatedSvg: (f: number) => {
+      const sporePulse = Math.sin(f * 0.25) * 2;
+      return `<g>
+        <!-- Placa de cultivo / suelo microbiológico -->
+        <ellipse cx="0" cy="6" rx="26" ry="16" fill="#292524" stroke="${S}" stroke-width="3.5"/>
+        
+        <!-- Red filamentosa de hifas de Streptomyces -->
+        <g stroke="#10B981" stroke-width="3" stroke-linecap="round" fill="none">
+          <path d="M -14,6 Q -8,-6 0,0 Q 8,6 14,-2"/>
+          <path d="M -4,0 Q -2,-12 6,-14 Q 10,-8 16,-8"/>
+          <path d="M -10,4 Q -16,-4 -18,-10"/>
+        </g>
+        
+        <!-- Esporas y microgotas de aroma emanando -->
+        <g transform="translate(0, ${(-10 + sporePulse).toFixed(1)})">
+          <circle cx="-8" cy="-8" r="3" fill="#38BDF8" stroke="${S}" stroke-width="1.5"/>
+          <circle cx="6" cy="-12" r="3.5" fill="#38BDF8" stroke="${S}" stroke-width="1.5"/>
+          <circle cx="0" cy="-18" r="4" fill="#FACC15" stroke="${S}" stroke-width="1.5"/>
+        </g>
+        
+        <rect x="-24" y="-30" width="48" height="9" rx="2.5" fill="#047857" stroke="${S}" stroke-width="1.8"/>
+        <text x="0" y="-24" text-anchor="middle" fill="#FFFFFF" font-size="4.2" font-weight="900" font-family="'Arial Black'">STREPTOMYCES (SUELO)</text>
+      </g>`;
+    },
+    tags: ["bacteria", "streptomyces", "geosmina", "esporas", "suelo", "olor", "microscopio"],
+  },
+  gota_lluvia_macro_aerosol: {
+    id: "gota_lluvia_macro_aerosol",
+    name: "Impacto de Gota de Lluvia y Disparo de Aerosoles",
+    family: "educacion_ciencia",
+    defaultPlacement: "overhead",
+    svg: `<path d="M 0,-14 C 10,-2 12,10 0,12 C -12,10 -10,-2 0,-14 Z" fill="#38BDF8" stroke="${S}" stroke-width="3"/>`,
+    animatedSvg: (f: number) => {
+      // Ciclo de impacto de gota y estallido de burbujas en aerosol
+      const phase = (f % 30) / 30;
+      const bubbleRise = phase * 24;
+      return `<g>
+        <!-- Suelo poroso café -->
+        <rect x="-30" y="8" width="60" height="16" rx="3" fill="#78350F" stroke="${S}" stroke-width="3"/>
+        <circle cx="-16" cy="16" r="2.5" fill="#451A03"/>
+        <circle cx="12" cy="14" r="3" fill="#451A03"/>
+        
+        <!-- Gota aplanándose en el impacto formando menisco -->
+        <ellipse cx="0" cy="8" rx="22" ry="7" fill="#38BDF8" stroke="${S}" stroke-width="3"/>
+        
+        <!-- Microburbujas de aire que se disparan como aerosol -->
+        <g transform="translate(0, -${bubbleRise.toFixed(1)})" opacity="${(1 - phase).toFixed(2)}">
+          <circle cx="-12" cy="0" r="3" fill="#FFFFFF" stroke="${S}" stroke-width="1.5"/>
+          <circle cx="-4" cy="-6" r="2.5" fill="#38BDF8" stroke="${S}" stroke-width="1.5"/>
+          <circle cx="8" cy="-2" r="3.5" fill="#FFFFFF" stroke="${S}" stroke-width="1.5"/>
+          <circle cx="16" cy="-8" r="2" fill="#FACC15" stroke="${S}" stroke-width="1.5"/>
+        </g>
+
+        <!-- Etiqueta MIT 2015 -->
+        <rect x="-26" y="-26" width="52" height="10" rx="3" fill="#0F172A" stroke="${S}" stroke-width="2"/>
+        <text x="0" y="-19.5" text-anchor="middle" fill="#38BDF8" font-size="4.2" font-weight="900" font-family="'Arial Black'">AEROSOL MIT (CHAMPÁN)</text>
+      </g>`;
+    },
+    tags: ["aerosol", "mit", "gota", "burbujas", "impacto", "champan", "fisica"],
+  },
+  mapa_sabana_oasis_ancestro: {
+    id: "mapa_sabana_oasis_ancestro",
+    name: "Mapa Primitivo de Huellas hacia el Agua",
+    family: "historia_exploracion",
+    defaultPlacement: "right",
+    svg: `<rect x="-18" y="-14" width="36" height="28" rx="3" fill="#D97706" stroke="${S}" stroke-width="3"/>`,
+    animatedSvg: (f: number) => {
+      const pulseOasis = Math.sin(f * 0.2) * 2;
+      return `<g>
+        <!-- Cuero / pergamino de mapa antiguo -->
+        <rect x="-26" y="-18" width="52" height="36" rx="4" fill="#D97706" stroke="${S}" stroke-width="3.5"/>
+        
+        <!-- Línea punteada de migración hacia tormenta -->
+        <path d="M -18,10 Q -4,4 6,-4" fill="none" stroke="#78350F" stroke-width="2.5" stroke-dasharray="3 2"/>
+        
+        <!-- Nube con lluvia al extremo del mapa -->
+        <g transform="translate(14, -6)">
+          <ellipse cx="0" cy="0" rx="8" ry="5" fill="#0284C7" stroke="${S}" stroke-width="1.5"/>
+          <line x1="-3" y1="5" x2="-4" y2="9" stroke="#38BDF8" stroke-width="1.5"/>
+          <line x1="2" y1="5" x2="1" y2="9" stroke="#38BDF8" stroke-width="1.5"/>
+        </g>
+        
+        <!-- Brújula / sol primitivo -->
+        <circle cx="-16" cy="-8" r="${(4 + pulseOasis).toFixed(1)}" fill="#FEF08A" stroke="${S}" stroke-width="1.8"/>
+
+        <rect x="-24" y="22" width="48" height="9" rx="2.5" fill="#451A03" stroke="${S}" stroke-width="1.8"/>
+        <text x="0" y="28" text-anchor="middle" fill="#FEF08A" font-size="4" font-weight="900" font-family="'Arial Black'">SUPERVIVENCIA EN SABANA</text>
+      </g>`;
+    },
+    tags: ["mapa", "ancestro", "sabana", "oasis", "agua", "supervivencia", "evolucion"],
+  },
+  paraguas_arcoiris_fresco: {
+    id: "paraguas_arcoiris_fresco",
+    name: "Paraguas Amarillo con Gotas Frescas y Arcoíris",
+    family: "vida_cotidiana",
+    defaultPlacement: "overhead",
+    svg: `<path d="M -22,0 C -22,-14 22,-14 22,0 Z" fill="#FDE047" stroke="${S}" stroke-width="3.5"/><line x1="0" y1="0" x2="0" y2="24" stroke="${S}" stroke-width="3"/>`,
+    animatedSvg: (f: number) => {
+      const umbrellaTilt = Math.sin(f * 0.16) * 4;
+      return `<g transform="rotate(${umbrellaTilt.toFixed(1)})">
+        <!-- Arcoíris detrás -->
+        <path d="M -26,-2 A 28 28 0 0 1 26,-2" fill="none" stroke="#EF4444" stroke-width="2"/>
+        <path d="M -24,-2 A 26 26 0 0 1 24,-2" fill="none" stroke="#F59E0B" stroke-width="2"/>
+        <path d="M -22,-2 A 24 24 0 0 1 22,-2" fill="none" stroke="#22C55E" stroke-width="2"/>
+        <path d="M -20,-2 A 22 22 0 0 1 20,-2" fill="none" stroke="#38BDF8" stroke-width="2"/>
+
+        <!-- Cúpula del paraguas amarillo brillante -->
+        <path d="M -24,2 C -24,-16 24,-16 24,2 C 16,-1 8,2 0,-1 C -8,2 -16,-1 -24,2 Z" fill="#FDE047" stroke="${S}" stroke-width="3.5"/>
+        <polygon points="-1,-16 1,-16 0,-20" fill="#000000"/>
+        
+        <!-- Mango curvo de madera -->
+        <line x1="0" y1="-2" x2="0" y2="20" stroke="${S}" stroke-width="3.5"/>
+        <path d="M 0,20 C 0,26 -8,26 -8,20" fill="none" stroke="${S}" stroke-width="3.5" stroke-linecap="round"/>
+
+        <!-- Gotas brillantes rebotando -->
+        <circle cx="-16" cy="-8" r="2" fill="#38BDF8"/>
+        <circle cx="14" cy="-10" r="2.5" fill="#38BDF8"/>
+      </g>`;
+    },
+    tags: ["paraguas", "lluvia", "arcoiris", "frescura", "petricor", "vida", "alegria"],
+  },
+  roca_petricor_aceite_dorado: {
+    id: "roca_petricor_aceite_dorado",
+    name: "Roca con Aceites Vegetales y Esencia de Icor Griego",
+    family: "educacion_ciencia",
+    defaultPlacement: "right",
+    svg: `<polygon points="-24,14 -18,-12 8,-18 24,-6 20,16" fill="#64748B" stroke="${S}" stroke-width="4.5"/>`,
+    animatedSvg: (f: number) => {
+      const glow = (0.7 + Math.sin(f * 0.15) * 0.3).toFixed(2);
+      const dropY = (Math.sin(f * 0.12) * 4).toFixed(1);
+      return `<g transform="scale(1.8)">
+        <!-- Roca porosa gris neo-brutalista -->
+        <polygon points="-24,14 -18,-12 8,-18 24,-6 20,16" fill="#64748B" stroke="${S}" stroke-width="4.5" stroke-linejoin="round"/>
+        <!-- Grietas minerales con aceite vegetal dorado -->
+        <path d="M -14,-8 L -4,2 L -8,12" fill="none" stroke="#F59E0B" stroke-width="3" stroke-linecap="round"/>
+        <path d="M 4,-12 L 6,0 L 14,8" fill="none" stroke="#FBBF24" stroke-width="3.5" stroke-linecap="round"/>
+        <!-- Gotas de Icor (sangre dorada de los dioses) -->
+        <circle cx="6" cy="${dropY}" r="4.5" fill="#FDE047" stroke="${S}" stroke-width="2.5" opacity="${glow}"/>
+        <circle cx="-4" cy="${Number(dropY) + 4}" r="3" fill="#FDE047" stroke="${S}" stroke-width="2" opacity="${glow}"/>
+        <!-- Etiqueta griega 'PETRICOR' -->
+        <rect x="-20" y="18" width="40" height="12" rx="3" fill="#FFE600" stroke="${S}" stroke-width="3"/>
+        <text x="0" y="27" font-family="'Impact', 'Arial Black', sans-serif" font-size="7.5" font-weight="900" fill="#000" text-anchor="middle">PETRICOR</text>
+      </g>`;
+    },
+    tags: ["roca", "petricor", "aceite", "oro", "quimica", "mitologia", "icor"],
+  },
+  mesa_experimento_mano_goma: {
+    id: "mesa_experimento_mano_goma",
+    name: "Mesa con Pantalla Divisoria y Mano de Goma",
+    family: "educacion_ciencia",
+    defaultPlacement: "overhead",
+    svg: `<rect x="-35" y="10" width="70" height="12" fill="#E2E8F0" stroke="${S}" stroke-width="4"/>`,
+    animatedSvg: (f: number) => {
+      const pulse = (0.8 + Math.sin(f * 0.14) * 0.2).toFixed(2);
+      return `<g transform="scale(1.7)">
+        <!-- Tablero de la mesa -->
+        <rect x="-40" y="8" width="80" height="14" rx="3" fill="#E2E8F0" stroke="${S}" stroke-width="4"/>
+        <!-- Pantalla opaca divisoria central -->
+        <rect x="-4" y="-35" width="8" height="43" rx="2" fill="#3B82F6" stroke="${S}" stroke-width="3.5"/>
+        <line x1="0" y1="-30" x2="0" y2="5" stroke="#1D4ED8" stroke-width="2"/>
+        <!-- Mano de goma visible (a la derecha) -->
+        <g transform="translate(18, -4)">
+          <rect x="-8" y="0" width="16" height="10" rx="3" fill="#F87171" stroke="${S}" stroke-width="3"/>
+          <line x1="-5" y1="2" x2="-5" y2="10" stroke="${S}" stroke-width="2"/>
+          <line x1="-1" y1="2" x2="-1" y2="10" stroke="${S}" stroke-width="2"/>
+          <line x1="3" y1="2" x2="3" y2="10" stroke="${S}" stroke-width="2"/>
+          <circle cx="0" cy="-6" r="4" fill="#FFE600" stroke="${S}" stroke-width="2" opacity="${pulse}"/>
+        </g>
+        <!-- Mano real oculta (a la izquierda, traslúcida/fantasma) -->
+        <g transform="translate(-18, -4)" opacity="0.45">
+          <rect x="-8" y="0" width="16" height="10" rx="3" fill="#FCA5A5" stroke="${S}" stroke-width="2" stroke-dasharray="2,2"/>
+        </g>
+        <!-- Rótulo 'GOMA VS REAL' -->
+        <rect x="-24" y="24" width="48" height="11" rx="3" fill="#FFE600" stroke="${S}" stroke-width="3"/>
+        <text x="0" y="32" font-family="'Impact', 'Arial Black', sans-serif" font-size="7" font-weight="900" fill="#000" text-anchor="middle">MANO DE GOMA</text>
+      </g>`;
+    },
+    tags: ["mano", "goma", "experimento", "neurociencia", "ilusion", "mesa"],
+  },
+
+  pinceles_gemelos_tactiles: {
+    id: "pinceles_gemelos_tactiles",
+    name: "Dos Pinceles en Sincronía Táctil",
+    family: "educacion_ciencia",
+    defaultPlacement: "overhead",
+    svg: `<line x1="-15" y1="-20" x2="-15" y2="15" stroke="#92400E" stroke-width="4"/>`,
+    animatedSvg: (f: number) => {
+      const brushSweep = Math.sin(f * 0.18) * 14;
+      return `<g transform="scale(1.8)">
+        <!-- Pincel Izquierdo (Mano real oculta) -->
+        <g transform="translate(${-22 + brushSweep}, -10) rotate(-20)">
+          <line x1="0" y1="-24" x2="0" y2="8" stroke="#92400E" stroke-width="4.5" stroke-linecap="round"/>
+          <rect x="-3" y="6" width="6" height="6" fill="#F59E0B" stroke="${S}" stroke-width="2.5"/>
+          <path d="M -3,12 C -4,22 4,22 3,12 Z" fill="#FDE047" stroke="${S}" stroke-width="2.5"/>
+        </g>
+        <!-- Pincel Derecho (Mano de goma visible) en sincronía idéntica -->
+        <g transform="translate(${22 + brushSweep}, -10) rotate(-20)">
+          <line x1="0" y1="-24" x2="0" y2="8" stroke="#92400E" stroke-width="4.5" stroke-linecap="round"/>
+          <rect x="-3" y="6" width="6" height="6" fill="#F59E0B" stroke="${S}" stroke-width="2.5"/>
+          <path d="M -3,12 C -4,22 4,22 3,12 Z" fill="#FDE047" stroke="${S}" stroke-width="2.5"/>
+        </g>
+        <!-- Ondas de sincronía táctil -->
+        <path d="M -8,-5 Q 0,-15 8,-5" fill="none" stroke="#38BDF8" stroke-width="3" stroke-linecap="round" stroke-dasharray="3,3"/>
+        <text x="0" y="24" font-family="'Impact', 'Arial Black', sans-serif" font-size="7.5" font-weight="900" fill="#000" text-anchor="middle">100% SINCRÓNICO</text>
+      </g>`;
+    },
+    tags: ["pinceles", "sincronia", "tacto", "estimulo", "pinceladas", "gemelos"],
+  },
+
+  cerebro_corteza_somatosensorial: {
+    id: "cerebro_corteza_somatosensorial",
+    name: "Cerebro con Corteza Somatosensorial y Homúnculo Activo",
+    family: "educacion_ciencia",
+    defaultPlacement: "overhead",
+    svg: `<path d="M -22,0 C -22,-18 22,-18 22,0 C 22,18 -22,18 -22,0 Z" fill="#F472B6" stroke="${S}" stroke-width="4"/>`,
+    animatedSvg: (f: number) => {
+      const synPulse = (0.7 + Math.sin(f * 0.22) * 0.3).toFixed(2);
+      const wave = Math.sin(f * 0.16) * 3;
+      return `<g transform="scale(1.8)">
+        <!-- Lóbulo cerebral rosa con contorno grueso -->
+        <path d="M -24,-2 C -26,-20 0,-24 4,-14 C 10,-24 28,-14 26,4 C 28,18 8,24 -2,16 C -12,24 -26,14 -24,-2 Z" fill="#F472B6" stroke="${S}" stroke-width="4.5" stroke-linejoin="round"/>
+        <!-- Pliegues cerebrales -->
+        <path d="M -16,-6 Q -6,-12 2,-4 Q 12,-12 18,-2" fill="none" stroke="${S}" stroke-width="3" stroke-linecap="round"/>
+        <path d="M -12,8 Q -2,2 6,10" fill="none" stroke="${S}" stroke-width="3" stroke-linecap="round"/>
+        <!-- Área Somatosensorial (Homúnculo) iluminada en cian -->
+        <path d="M 0,-14 Q 10,-4 8,10" fill="none" stroke="#38BDF8" stroke-width="5" stroke-linecap="round" opacity="${synPulse}"/>
+        <!-- Destellos de sinapsis conectando la mano falsa -->
+        <circle cx="10" cy="-6" r="4.5" fill="#FFE600" stroke="${S}" stroke-width="2" opacity="${synPulse}"/>
+        <circle cx="4" cy="${wave}" r="3" fill="#38BDF8" stroke="${S}" stroke-width="1.5"/>
+        <rect x="-24" y="24" width="48" height="11" rx="3" fill="#FFE600" stroke="${S}" stroke-width="3"/>
+        <text x="0" y="32" font-family="'Impact', 'Arial Black', sans-serif" font-size="7" font-weight="900" fill="#000" text-anchor="middle">MAPA REESCRITO</text>
+      </g>`;
+    },
+    tags: ["cerebro", "corteza", "somatosensorial", "homunculo", "sinapsis", "neurociencia"],
+  },
+
+  martillo_amenaza_impacto: {
+    id: "martillo_amenaza_impacto",
+    name: "Martillo de Demolición con Señal de Peligro",
+    family: "herramientas_objetos",
+    defaultPlacement: "right",
+    svg: `<rect x="-18" y="-12" width="36" height="20" rx="3" fill="#334155" stroke="${S}" stroke-width="4"/>`,
+    animatedSvg: (f: number) => {
+      const shake = Math.sin(f * 0.3) * 5;
+      return `<g transform="scale(1.8) rotate(${-15 + shake})">
+        <!-- Mango largo de madera -->
+        <line x1="0" y1="-8" x2="0" y2="38" stroke="#78350F" stroke-width="6" stroke-linecap="round"/>
+        <!-- Cabeza del martillo pesada con franjas amarillas de alerta -->
+        <rect x="-22" y="-20" width="44" height="24" rx="4" fill="#0F172A" stroke="${S}" stroke-width="4.5"/>
+        <rect x="-14" y="-17" width="8" height="18" fill="#FBBF24"/>
+        <rect x="6" y="-17" width="8" height="18" fill="#FBBF24"/>
+        <!-- Líneas de impacto y velocidad -->
+        <line x1="-28" y1="-8" x2="-36" y2="-8" stroke="#EF4444" stroke-width="3.5" stroke-linecap="round"/>
+        <line x1="-26" y1="-18" x2="-34" y2="-24" stroke="#EF4444" stroke-width="3.5" stroke-linecap="round"/>
+        <line x1="-26" y1="2" x2="-34" y2="8" stroke="#EF4444" stroke-width="3.5" stroke-linecap="round"/>
+      </g>`;
+    },
+    tags: ["martillo", "impacto", "peligro", "golpe", "panico", "amenaza"],
+  },
+
+  monitor_fisiologico_sudor_miedo: {
+    id: "monitor_fisiologico_sudor_miedo",
+    name: "Monitor Cardíaco y Sensor de Respuesta Galvánica",
+    family: "tecnologia",
+    defaultPlacement: "overhead",
+    svg: `<rect x="-30" y="-22" width="60" height="44" rx="6" fill="#0F172A" stroke="${S}" stroke-width="4"/>`,
+    animatedSvg: (f: number) => {
+      const alertBlink = (Math.sin(f * 0.25) > 0 ? 1 : 0.2).toFixed(2);
+      return `<g transform="scale(1.7)">
+        <!-- Pantalla de monitor clínico -->
+        <rect x="-32" y="-24" width="64" height="48" rx="6" fill="#0F172A" stroke="${S}" stroke-width="4.5"/>
+        <rect x="-27" y="-19" width="54" height="38" rx="3" fill="#022C22" stroke="${S}" stroke-width="2"/>
+        <!-- Línea ECG con pico de sobresalto -->
+        <path d="M -25,2 L -12,2 L -8,-14 L -4,12 L 0,-6 L 4,2 L 25,2" fill="none" stroke="#22C55E" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"/>
+        <!-- Alerta de 145 BPM -->
+        <text x="18" y="-8" font-family="'Impact', 'Arial Black', sans-serif" font-size="8" font-weight="900" fill="#EF4444" text-anchor="end" opacity="${alertBlink}">145 BPM</text>
+        <rect x="-24" y="26" width="48" height="11" rx="3" fill="#EF4444" stroke="${S}" stroke-width="3"/>
+        <text x="0" y="34" font-family="'Impact', 'Arial Black', sans-serif" font-size="7" font-weight="900" fill="#FFF" text-anchor="middle">¡PÁNICO REAL!</text>
+      </g>`;
+    },
+    tags: ["monitor", "cardiaco", "panico", "galvanica", "estres", "fisiologia"],
+  },
+
+  espejo_realidad_truco_mental: {
+    id: "espejo_realidad_truco_mental",
+    name: "Espejo de Percepción y Realidad Multisensorial",
+    family: "educacion_ciencia",
+    defaultPlacement: "right",
+    svg: `<circle cx="0" cy="0" r="20" fill="#38BDF8" stroke="${S}" stroke-width="4"/>`,
+    animatedSvg: (f: number) => {
+      const rot = Math.sin(f * 0.12) * 8;
+      return `<g transform="scale(1.7) rotate(${rot})">
+        <!-- Marco neo-brutalista de lupa/espejo -->
+        <circle cx="0" cy="-6" r="22" fill="#E0F2FE" stroke="${S}" stroke-width="4.5"/>
+        <line x1="0" y1="16" x2="0" y2="38" stroke="#334155" stroke-width="6" stroke-linecap="round"/>
+        <!-- Reflejo interior brillante -->
+        <path d="M -14,-16 Q 0,-22 14,-16" fill="none" stroke="#FFF" stroke-width="4" stroke-linecap="round"/>
+        <!-- Mano estilizada dentro del espejo -->
+        <rect x="-8" y="-12" width="16" height="12" rx="3" fill="#FFE600" stroke="${S}" stroke-width="3"/>
+        <line x1="-4" y1="-8" x2="-4" y2="0" stroke="${S}" stroke-width="2"/>
+        <line x1="0" y1="-8" x2="0" y2="0" stroke="${S}" stroke-width="2"/>
+        <line x1="4" y1="-8" x2="4" y2="0" stroke="${S}" stroke-width="2"/>
+      </g>`;
+    },
+    tags: ["espejo", "percepcion", "realidad", "ilusion", "truco", "neurociencia"],
+  },
+  brazo_venas_azules_diagrama: {
+    id: "brazo_venas_azules_diagrama",
+    name: "Antebrazo con Venas Superficiales Azules",
+    family: "educacion_ciencia",
+    defaultPlacement: "overhead",
+    svg: `<rect x="-30" y="-12" width="60" height="24" rx="10" fill="#FCA5A5" stroke="${S}" stroke-width="4"/>`,
+    animatedSvg: (f: number) => {
+      const pulse = (0.7 + Math.sin(f * 0.16) * 0.3).toFixed(2);
+      return `<g transform="scale(1.8)">
+        <!-- Brazo estilizado color piel -->
+        <path d="M -35,-14 C -10,-18 15,-16 35,-12 L 35,12 C 15,16 -10,18 -35,14 Z" fill="#FED7AA" stroke="${S}" stroke-width="4.5" stroke-linejoin="round"/>
+        <!-- Venas ramificadas en azul cian aparente -->
+        <path d="M -30,0 Q -10,-6 8,-2 Q 22,-8 32,-4" fill="none" stroke="#0284C7" stroke-width="4" stroke-linecap="round"/>
+        <path d="M 8,-2 Q 18,6 28,4" fill="none" stroke="#38BDF8" stroke-width="3" stroke-linecap="round"/>
+        <circle cx="8" cy="-2" r="3.5" fill="#38BDF8" stroke="${S}" stroke-width="1.5" opacity="${pulse}"/>
+        <!-- Rótulo '¿SANGRE AZUL?' -->
+        <rect x="-26" y="22" width="52" height="11" rx="3" fill="#FFE600" stroke="${S}" stroke-width="3"/>
+        <text x="0" y="30" font-family="'Impact', 'Arial Black', sans-serif" font-size="7" font-weight="900" fill="#000" text-anchor="middle">¿SANGRE AZUL?</text>
+      </g>`;
+    },
+    tags: ["brazo", "venas", "azul", "sangre", "anatomia", "piel"],
+  },
+
+  tubos_ensayo_sangre_rojo_oscuro: {
+    id: "tubos_ensayo_sangre_rojo_oscuro",
+    name: "Tubos de Sangre Arterial (Rojo Vivo) y Venosa (Rojo Oscuro)",
+    family: "educacion_ciencia",
+    defaultPlacement: "overhead",
+    svg: `<rect x="-24" y="-18" width="16" height="36" rx="4" fill="#EF4444" stroke="${S}" stroke-width="4"/>`,
+    animatedSvg: (f: number) => {
+      const bubble = Math.sin(f * 0.2) * 3;
+      return `<g transform="scale(1.8)">
+        <!-- Gradilla gris de laboratorio -->
+        <rect x="-34" y="16" width="68" height="10" rx="2" fill="#64748B" stroke="${S}" stroke-width="3"/>
+        <!-- Tubo Arterial (Izquierda: Rojo Escarlata brillante) -->
+        <rect x="-24" y="-22" width="18" height="38" rx="5" fill="#EF4444" stroke="${S}" stroke-width="3.5"/>
+        <rect x="-22" y="-26" width="14" height="4" rx="1" fill="#DC2626" stroke="${S}" stroke-width="2"/>
+        <circle cx="-15" cy="${-8 + bubble}" r="2" fill="#FEE2E2" opacity="0.8"/>
+        <!-- Tubo Venoso (Derecha: Rojo Granate/Vino oscuro - ¡NUNCA AZUL!) -->
+        <rect x="6" y="-22" width="18" height="38" rx="5" fill="#881337" stroke="${S}" stroke-width="3.5"/>
+        <rect x="8" y="-26" width="14" height="4" rx="1" fill="#4C0519" stroke="${S}" stroke-width="2"/>
+        <circle cx="15" cy="${-8 - bubble}" r="2" fill="#FDA4AF" opacity="0.6"/>
+        <!-- Rótulo '100% ROJA' -->
+        <rect x="-26" y="28" width="52" height="11" rx="3" fill="#FFE600" stroke="${S}" stroke-width="3"/>
+        <text x="0" y="36" font-family="'Impact', 'Arial Black', sans-serif" font-size="7.5" font-weight="900" fill="#000" text-anchor="middle">AMBAS SON ROJAS</text>
+      </g>`;
+    },
+    tags: ["tubos", "sangre", "rojo", "venosa", "arterial", "oxigeno", "laboratorio"],
+  },
+
+  prisma_optico_piel_fotones: {
+    id: "prisma_optico_piel_fotones",
+    name: "Modelo Óptico de Absorción Roja y Dispersión Azul",
+    family: "educacion_ciencia",
+    defaultPlacement: "overhead",
+    svg: `<rect x="-30" y="-15" width="60" height="30" fill="#FED7AA" stroke="${S}" stroke-width="4"/>`,
+    animatedSvg: (f: number) => {
+      const redRay = (Math.sin(f * 0.18) * 4).toFixed(1);
+      const blueRay = (Math.sin(f * 0.22) * 6).toFixed(1);
+      return `<g transform="scale(1.8)">
+        <!-- Capa de piel/tejido -->
+        <rect x="-32" y="-5" width="64" height="26" fill="#FED7AA" stroke="${S}" stroke-width="4"/>
+        <!-- Vena subcutánea oscura profunda -->
+        <ellipse cx="0" cy="12" rx="18" ry="6" fill="#881337" stroke="${S}" stroke-width="3"/>
+        <!-- Haz de luz roja: penetra profundo y es absorbido -->
+        <path d="M -16,-22 L -8,${10 + Number(redRay)}" fill="none" stroke="#EF4444" stroke-width="4.5" stroke-linecap="round"/>
+        <text x="-24" y="-12" font-family="'Impact', 'Arial Black', sans-serif" font-size="6.5" font-weight="900" fill="#DC2626">ROJO ABSORBIDO</text>
+        <!-- Haz de luz azul: choca en la superficie y se dispersa hacia el ojo -->
+        <path d="M 12,-22 L 6,0 L 16,-18" fill="none" stroke="#0284C7" stroke-width="4" stroke-linecap="round"/>
+        <circle cx="16" cy={-18 + Number(blueRay)} r="3" fill="#38BDF8" stroke="${S}" stroke-width="1.5"/>
+        <text x="24" y="-12" font-family="'Impact', 'Arial Black', sans-serif" font-size="6.5" font-weight="900" fill="#0284C7">AZUL REBOTA</text>
+      </g>`;
+    },
+    tags: ["optica", "dispersion", "fotones", "luz", "rojo", "azul", "piel"],
+  },
+
+  molecula_hemoglobina_hierro: {
+    id: "molecula_hemoglobina_hierro",
+    name: "Molécula de Hemoglobina con Átomo de Hierro",
+    family: "educacion_ciencia",
+    defaultPlacement: "overhead",
+    svg: `<circle cx="0" cy="0" r="22" fill="#DC2626" stroke="${S}" stroke-width="4"/>`,
+    animatedSvg: (f: number) => {
+      const pulse = (0.8 + Math.sin(f * 0.2) * 0.2).toFixed(2);
+      return `<g transform="scale(1.8)">
+        <!-- Núcleo central de hierro Fe -->
+        <circle cx="0" cy="0" r="16" fill="#F59E0B" stroke="${S}" stroke-width="4"/>
+        <text x="0" y="5" font-family="'Impact', 'Arial Black', sans-serif" font-size="10" font-weight="900" fill="#000" text-anchor="middle">Fe</text>
+        <!-- 4 anillos de porfirina (rojo sangre) -->
+        <circle cx="-16" cy="-14" r="9" fill="#DC2626" stroke="${S}" stroke-width="3" opacity="${pulse}"/>
+        <circle cx="16" cy="-14" r="9" fill="#DC2626" stroke="${S}" stroke-width="3" opacity="${pulse}"/>
+        <circle cx="-16" cy="14" r="9" fill="#991B1B" stroke="${S}" stroke-width="3" opacity="${pulse}"/>
+        <circle cx="16" cy="14" r="9" fill="#991B1B" stroke="${S}" stroke-width="3" opacity="${pulse}"/>
+        <!-- Rótulo 'HEMOGLOBINA' -->
+        <rect x="-28" y="24" width="56" height="11" rx="3" fill="#FFE600" stroke="${S}" stroke-width="3"/>
+        <text x="0" y="32" font-family="'Impact', 'Arial Black', sans-serif" font-size="7" font-weight="900" fill="#000" text-anchor="middle">HEMOGLOBINA</text>
+      </g>`;
+    },
+    tags: ["hemoglobina", "hierro", "molecula", "sangre", "quimica", "oxigeno"],
+  },
+
+  pizarron_mito_escolar_tachado: {
+    id: "pizarron_mito_escolar_tachado",
+    name: "Pizarrón con Mito de Sangre Azul Tachado",
+    family: "educacion_ciencia",
+    defaultPlacement: "overhead",
+    svg: `<rect x="-30" y="-20" width="60" height="40" rx="4" fill="#064E3B" stroke="${S}" stroke-width="4"/>`,
+    animatedSvg: (f: number) => {
+      const alertBlink = (Math.sin(f * 0.25) > 0 ? 1 : 0.3).toFixed(2);
+      return `<g transform="scale(1.7)">
+        <!-- Marco de madera -->
+        <rect x="-34" y="-24" width="68" height="48" rx="5" fill="#78350F" stroke="${S}" stroke-width="4.5"/>
+        <rect x="-30" y="-20" width="60" height="40" rx="3" fill="#064E3B" stroke="${S}" stroke-width="2"/>
+        <!-- Texto falso 'SANGRE AZUL' -->
+        <text x="0" y="-4" font-family="'Impact', 'Arial Black', sans-serif" font-size="9" font-weight="900" fill="#38BDF8" text-anchor="middle">SANGRE AZUL</text>
+        <!-- Gran Cruz Roja de Desmentido -->
+        <line x1="-22" y1="-14" x2="22" y2="6" stroke="#EF4444" stroke-width="5" stroke-linecap="round"/>
+        <line x1="22" y1="-14" x2="-22" y2="6" stroke="#EF4444" stroke-width="5" stroke-linecap="round"/>
+        <!-- Sello '¡FALSO!' -->
+        <rect x="-24" y="10" width="48" height="12" rx="3" fill="#EF4444" stroke="${S}" stroke-width="3" opacity="${alertBlink}"/>
+        <text x="0" y="19" font-family="'Impact', 'Arial Black', sans-serif" font-size="8" font-weight="900" fill="#FFF" text-anchor="middle">¡MITO FALSO!</text>
+      </g>`;
+    },
+    tags: ["pizarron", "mito", "falso", "escuela", "sangre_azul", "desmentido"],
+  },
+
+  linterna_transiluminacion_roja: {
+    id: "linterna_transiluminacion_roja",
+    name: "Linterna de Transiluminación Roja en Dedos",
+    family: "educacion_ciencia",
+    defaultPlacement: "right",
+    svg: `<circle cx="0" cy="0" r="18" fill="#EF4444" stroke="${S}" stroke-width="4"/>`,
+    animatedSvg: (f: number) => {
+      const glow = (0.8 + Math.sin(f * 0.15) * 0.2).toFixed(2);
+      return `<g transform="scale(1.7)">
+        <!-- Cuerpo de la linterna negra -->
+        <rect x="-8" y="6" width="16" height="26" rx="3" fill="#0F172A" stroke="${S}" stroke-width="4"/>
+        <circle cx="0" cy="0" r="18" fill="#EF4444" stroke="${S}" stroke-width="4.5" opacity="${glow}"/>
+        <circle cx="0" cy="0" r="12" fill="#FDE047" opacity="0.8"/>
+        <!-- Dedo apoyado transmitiendo luz roja pura -->
+        <path d="M -12,-16 C -6,-22 6,-22 12,-16 L 12,-6 C 6,-2 -6,-2 -12,-6 Z" fill="#F87171" stroke="${S}" stroke-width="3"/>
+        <text x="0" y="38" font-family="'Impact', 'Arial Black', sans-serif" font-size="7" font-weight="900" fill="#000" text-anchor="middle">BRILLO ROJO PURO</text>
+      </g>`;
+    },
+    tags: ["linterna", "transiluminacion", "dedos", "rojo", "experimento", "luz"],
+  },
+  chile_habanero_fuego_vivo: {
+    id: "chile_habanero_fuego_vivo",
+    name: "Chile Habanero Rojo con Llamas de Fuego Activo",
+    family: "naturaleza_alimentos",
+    defaultPlacement: "right",
+    svg: `<path d="M -12,-16 C -20,0 -8,18 0,24 C 8,18 20,0 12,-16 Z" fill="#EF4444" stroke="${S}" stroke-width="4"/>`,
+    animatedSvg: (f: number) => {
+      const flameScale = 1 + Math.sin(f * 0.28) * 0.15;
+      return `<g transform="scale(1.8)">
+        <!-- Llamas traseras animadas -->
+        <g transform="scale(${flameScale})">
+          <path d="M -22,-10 Q -28,-30 -14,-34 Q 0,-42 8,-28 Q 22,-36 22,-14 Z" fill="#FBBF24" opacity="0.8"/>
+          <path d="M -14,-8 Q -18,-24 -8,-28 Q 0,-34 6,-22 Q 16,-28 16,-10 Z" fill="#F97316" opacity="0.9"/>
+        </g>
+        <!-- Cuerpo del chile rojo brillante -->
+        <path d="M -14,-14 C -22,4 -10,22 0,28 C 10,22 22,4 14,-14 Z" fill="#EF4444" stroke="${S}" stroke-width="4.5" stroke-linejoin="round"/>
+        <path d="M -4,-8 Q -8,4 -2,16" fill="none" stroke="#F87171" stroke-width="3" stroke-linecap="round"/>
+        <!-- Tallo verde curvo -->
+        <path d="M 0,-14 Q 4,-26 14,-22" fill="none" stroke="#22C55E" stroke-width="4.5" stroke-linecap="round"/>
+        <!-- Rótulo 'CAPSAICINA' -->
+        <rect x="-26" y="26" width="52" height="11" rx="3" fill="#FFE600" stroke="${S}" stroke-width="3"/>
+        <text x="0" y="34" font-family="'Impact', 'Arial Black', sans-serif" font-size="7" font-weight="900" fill="#000" text-anchor="middle">CAPSAICINA</text>
+      </g>`;
+    },
+    tags: ["chile", "habanero", "picante", "fuego", "capsaicina", "comida"],
+  },
+
+  termometro_lengua_cero_cambio: {
+    id: "termometro_lengua_cero_cambio",
+    name: "Termómetro Clínico Digital Marcando 36.5 Grados",
+    family: "educacion_ciencia",
+    defaultPlacement: "overhead",
+    svg: `<rect x="-30" y="-12" width="60" height="24" rx="6" fill="#F8FAFC" stroke="${S}" stroke-width="4"/>`,
+    animatedSvg: (f: number) => {
+      const pulse = (0.7 + Math.sin(f * 0.16) * 0.3).toFixed(2);
+      return `<g transform="scale(1.8)">
+        <!-- Cuerpo del termómetro digital -->
+        <rect x="-32" y="-14" width="64" height="28" rx="7" fill="#F8FAFC" stroke="${S}" stroke-width="4"/>
+        <rect x="-24" y="-8" width="48" height="16" rx="3" fill="#022C22" stroke="${S}" stroke-width="2"/>
+        <!-- Pantalla LCD 36.5 °C en verde -->
+        <text x="0" y="4" font-family="'Impact', 'Arial Black', sans-serif" font-size="12" font-weight="900" fill="#22C55E" text-anchor="middle">36.5 °C</text>
+        <circle cx="20" cy="-2" r="2.5" fill="#22C55E" opacity="${pulse}"/>
+        <!-- Rótulo 'TEMPERATURA NORMAL' -->
+        <rect x="-30" y="20" width="60" height="11" rx="3" fill="#FFE600" stroke="${S}" stroke-width="3"/>
+        <text x="0" y="28" font-family="'Impact', 'Arial Black', sans-serif" font-size="6.5" font-weight="900" fill="#000" text-anchor="middle">CERO QUEMADURA</text>
+      </g>`;
+    },
+    tags: ["termometro", "temperatura", "normal", "falso_fuego", "quimica", "boca"],
+  },
+
+  receptor_trpv1_candado_termico: {
+    id: "receptor_trpv1_candado_termico",
+    name: "Receptor Térmico TRPV1 con Compuerta de Calor",
+    family: "educacion_ciencia",
+    defaultPlacement: "overhead",
+    svg: `<rect x="-24" y="-20" width="48" height="40" rx="8" fill="#8B5CF6" stroke="${S}" stroke-width="4"/>`,
+    animatedSvg: (f: number) => {
+      const gateOpen = Math.sin(f * 0.22) * 6;
+      return `<g transform="scale(1.8)">
+        <!-- Membrana celular violeta -->
+        <rect x="-32" y="10" width="64" height="16" fill="#A855F7" stroke="${S}" stroke-width="3.5"/>
+        <!-- Canal iónico TRPV1 con compuertas abiertas -->
+        <g transform="translate(${-gateOpen}, 0)">
+          <path d="M -18,-18 L -6,-18 L -6,10 L -18,10 Z" fill="#6366F1" stroke="${S}" stroke-width="3.5"/>
+        </g>
+        <g transform="translate(${gateOpen}, 0)">
+          <path d="M 6,-18 L 18,-18 L 18,10 L 6,10 Z" fill="#6366F1" stroke="${S}" stroke-width="3.5"/>
+        </g>
+        <!-- Señal de alarma de fuego '43°C' -->
+        <rect x="-18" y="-30" width="36" height="12" rx="3" fill="#EF4444" stroke="${S}" stroke-width="2.5"/>
+        <text x="0" y="-21" font-family="'Impact', 'Arial Black', sans-serif" font-size="7.5" font-weight="900" fill="#FFF" text-anchor="middle">43°C ¡FUEGO!</text>
+        <rect x="-24" y="24" width="48" height="11" rx="3" fill="#FFE600" stroke="${S}" stroke-width="3"/>
+        <text x="0" y="32" font-family="'Impact', 'Arial Black', sans-serif" font-size="7" font-weight="900" fill="#000" text-anchor="middle">RECEPTOR TRPV1</text>
+      </g>`;
+    },
+    tags: ["receptor", "trpv1", "calor", "canal_ionico", "neurona", "biologia"],
+  },
+
+  vaso_agua_esparce_aceite: {
+    id: "vaso_agua_esparce_aceite",
+    name: "Vaso de Agua Esparciendo Gotas de Aceite Picante",
+    family: "vida_cotidiana",
+    defaultPlacement: "overhead",
+    svg: `<path d="M -16,-22 L -12,20 L 12,20 L 16,-22 Z" fill="#38BDF8" stroke="${S}" stroke-width="4"/>`,
+    animatedSvg: (f: number) => {
+      const ripple = Math.sin(f * 0.2) * 3;
+      return `<g transform="scale(1.8)">
+        <!-- Vaso de vidrio con agua -->
+        <polygon points="-16,-22 -12,22 12,22 16,-22" fill="#E0F2FE" stroke="${S}" stroke-width="4" stroke-linejoin="round"/>
+        <polygon points="-14,-10 -10,20 10,20 14,-10" fill="#38BDF8" opacity="0.6"/>
+        <!-- Gotas aceitosas de capsaicina flotando sin disolverse -->
+        <circle cx="-6" cy="${-6 + ripple}" r="4" fill="#EF4444" stroke="${S}" stroke-width="2"/>
+        <circle cx="6" cy="${-8 - ripple}" r="4.5" fill="#F97316" stroke="${S}" stroke-width="2"/>
+        <!-- Gran Cruz Roja 'EL AGUA EMPEORA' -->
+        <line x1="-22" y1="-18" x2="22" y2="18" stroke="#EF4444" stroke-width="5" stroke-linecap="round"/>
+        <line x1="22" y1="-18" x2="-22" y2="18" stroke="#EF4444" stroke-width="5" stroke-linecap="round"/>
+        <rect x="-26" y="26" width="52" height="11" rx="3" fill="#EF4444" stroke="${S}" stroke-width="3"/>
+        <text x="0" y="34" font-family="'Impact', 'Arial Black', sans-serif" font-size="7" font-weight="900" fill="#FFF" text-anchor="middle">¡NO USES AGUA!</text>
+      </g>`;
+    },
+    tags: ["vaso", "agua", "aceite", "empeora", "error", "capsaicina"],
+  },
+
+  brik_leche_caseina_detergente: {
+    id: "brik_leche_caseina_detergente",
+    name: "Envase de Leche Entera con Proteína Caseína Salvadora",
+    family: "naturaleza_alimentos",
+    defaultPlacement: "overhead",
+    svg: `<rect x="-18" y="-20" width="36" height="40" rx="3" fill="#F8FAFC" stroke="${S}" stroke-width="4"/>`,
+    animatedSvg: (f: number) => {
+      const wave = Math.sin(f * 0.16) * 2;
+      return `<g transform="scale(1.8)">
+        <!-- Cartón de leche azul y blanco -->
+        <polygon points="-18,-14 -12,-26 12,-26 18,-14 18,24 -18,24" fill="#F8FAFC" stroke="${S}" stroke-width="4" stroke-linejoin="round"/>
+        <rect x="-18" y="-2" width="36" height="26" fill="#3B82F6" stroke="${S}" stroke-width="3"/>
+        <text x="0" y="14" font-family="'Impact', 'Arial Black', sans-serif" font-size="9" font-weight="900" fill="#FFF" text-anchor="middle">LECHE</text>
+        <!-- Micela de caseína atrapando capsaicina -->
+        <circle cx="0" cy="${-8 + wave}" r="5" fill="#FFE600" stroke="${S}" stroke-width="2"/>
+        <rect x="-26" y="28" width="52" height="11" rx="3" fill="#FFE600" stroke="${S}" stroke-width="3"/>
+        <text x="0" y="36" font-family="'Impact', 'Arial Black', sans-serif" font-size="7" font-weight="900" fill="#000" text-anchor="middle">CASEÍNA = JABÓN</text>
+      </g>`;
+    },
+    tags: ["leche", "caseina", "detergente", "micela", "alivio", "proteina"],
+  },
+
+  vaso_leche_alivio_fresco: {
+    id: "vaso_leche_alivio_fresco",
+    name: "Vaso de Leche Fría con Hielo y Alivio Total",
+    family: "vida_cotidiana",
+    defaultPlacement: "right",
+    svg: `<polygon points="-16,-22 -12,22 12,22 16,-22" fill="#F8FAFC" stroke="${S}" stroke-width="4"/>`,
+    animatedSvg: (f: number) => {
+      const sparkle = (0.7 + Math.sin(f * 0.2) * 0.3).toFixed(2);
+      return `<g transform="scale(1.8)">
+        <!-- Vaso con leche blanca cremosa -->
+        <polygon points="-16,-22 -12,22 12,22 16,-22" fill="#F8FAFC" stroke="${S}" stroke-width="4" stroke-linejoin="round"/>
+        <!-- Cubitos de hielo -->
+        <rect x="-8" y="-14" width="7" height="7" rx="1.5" fill="#BAE6FD" stroke="${S}" stroke-width="1.5"/>
+        <rect x="2" y="-12" width="7" height="7" rx="1.5" fill="#BAE6FD" stroke="${S}" stroke-width="1.5"/>
+        <!-- Pajita roja y blanca -->
+        <line x1="2" y1="-28" x2="-4" y2="12" stroke="#EF4444" stroke-width="3.5" stroke-linecap="round"/>
+        <!-- Destellos de alivio -->
+        <polygon points="18,-18 20,-12 26,-10 20,-8 18,-2 16,-8 10,-10 16,-12" fill="#FFE600" opacity="${sparkle}"/>
+        <rect x="-24" y="26" width="48" height="11" rx="3" fill="#22C55E" stroke="${S}" stroke-width="3"/>
+        <text x="0" y="34" font-family="'Impact', 'Arial Black', sans-serif" font-size="7" font-weight="900" fill="#FFF" text-anchor="middle">¡ALIVIO TOTAL!</text>
+      </g>`;
+    },
+    tags: ["vaso", "leche", "fria", "hielo", "alivio", "frescura", "picante"],
+  },
+
+  // =========================================================================
+  // PROPS: TU MEMORIA TE MIENTE (FALSOS RECUERDOS Y RECONSOLIDACIÓN)
+  // =========================================================================
+
+  libreta_policia_boligrafo: {
+    id: "libreta_policia_boligrafo",
+    name: "Libreta de Detective con Placa y Bolígrafo",
+    family: "herramientas_objetos",
+    defaultPlacement: "right",
+    svg: `<rect x="-18" y="-25" width="36" height="50" rx="4" fill="#0F172A" stroke="${S}" stroke-width="4"/>`,
+    animatedSvg: (f: number) => {
+      const penBob = (Math.sin(f * 0.25) * 3).toFixed(1);
+      return `<g transform="scale(1.75)">
+        <!-- Libreta azul marino oscuro -->
+        <rect x="-18" y="-26" width="36" height="52" rx="4" fill="#0F172A" stroke="${S}" stroke-width="4"/>
+        <!-- Espiral metálico superior -->
+        ${[-12, -6, 0, 6, 12].map(sx => `<circle cx="${sx}" cy="-26" r="3" fill="#94A3B8" stroke="${S}" stroke-width="1.5"/>`).join("")}
+        <!-- Hoja interior amarilla con líneas de anotación -->
+        <rect x="-14" y="-20" width="28" height="42" rx="2" fill="#FEF3C7" stroke="${S}" stroke-width="2"/>
+        <line x1="-10" y1="-12" x2="6" y2="-12" stroke="#64748B" stroke-width="2" stroke-linecap="round"/>
+        <line x1="-10" y1="-4" x2="8" y2="-4" stroke="#64748B" stroke-width="2" stroke-linecap="round"/>
+        <line x1="-10" y1="4" x2="4" y2="4" stroke="#64748B" stroke-width="2" stroke-linecap="round"/>
+        <line x1="-10" y1="12" x2="9" y2="12" stroke="#EF4444" stroke-width="2" stroke-linecap="round"/>
+        <!-- Placa dorada miniatura de detective -->
+        <polygon points="12,-16 16,-10 12,-4 8,-10" fill="#FACC15" stroke="${S}" stroke-width="1.5"/>
+        <!-- Bolígrafo oscilando tomando notas -->
+        <g transform="translate(14, ${penBob}) rotate(-28)">
+          <rect x="-2.5" y="-18" width="5" height="24" rx="2" fill="#E2E8F0" stroke="${S}" stroke-width="2"/>
+          <polygon points="-2.5,6 2.5,6 0,14" fill="#1E293B" stroke="${S}" stroke-width="1.5"/>
+          <circle cx="0" cy="14" r="1.5" fill="#3B82F6"/>
+        </g>
+        <rect x="-24" y="30" width="48" height="11" rx="3" fill="#0284C7" stroke="${S}" stroke-width="2.5"/>
+        <text x="0" y="38" font-family="'Impact', 'Arial Black', sans-serif" font-size="7" font-weight="900" fill="#FFF" text-anchor="middle">NOTAS: CHOQUE</text>
+      </g>`;
+    },
+    tags: ["policia", "detective", "libreta", "boligrafo", "anotacion", "investigacion", "choque"],
+  },
+
+  gorra_detective_policia: {
+    id: "gorra_detective_policia",
+    name: "Gorra de Detective con Placa Dorada",
+    family: "vida_cotidiana",
+    defaultPlacement: "overhead",
+    svg: `<path d="M -30,0 C -30,-22 30,-22 30,0 Z" fill="#0F172A" stroke="${S}" stroke-width="4"/>`,
+    animatedSvg: (f: number) => {
+      const glint = (0.7 + Math.sin(f * 0.18) * 0.3).toFixed(2);
+      return `<g transform="scale(1.85) translate(0, -6)">
+        <!-- Copa de la gorra -->
+        <path d="M -28,-2 C -32,-24 32,-24 28,-2 Z" fill="#0F172A" stroke="${S}" stroke-width="4"/>
+        <path d="M -24,-2 C -28,-20 28,-20 24,-2 Z" fill="#1E293B"/>
+        <!-- Visera rígida delantera -->
+        <path d="M -28,-2 Q 0,8 34,-2 Q 0,-4 -28,-2 Z" fill="#020617" stroke="${S}" stroke-width="3.5"/>
+        <!-- Cinta y cordón dorado -->
+        <rect x="-26" y="-6" width="52" height="4" rx="2" fill="#FACC15" stroke="${S}" stroke-width="1.5"/>
+        <!-- Escudo / Placa dorada frontal -->
+        <polygon points="0,-20 8,-12 0,-4 -8,-12" fill="#F59E0B" stroke="${S}" stroke-width="2" opacity="${glint}"/>
+        <circle cx="0" cy="-12" r="2.5" fill="#FEF08A"/>
+      </g>`;
+    },
+    tags: ["gorra", "detective", "policia", "placa", "sombrero", "investigador"],
+  },
+
+  proyeccion_cristales_rotos_falsos: {
+    id: "proyeccion_cristales_rotos_falsos",
+    name: "Nube de Cristales Rotos Falsos Holográficos",
+    family: "reacciones_humor",
+    defaultPlacement: "right",
+    svg: `<polygon points="-10,-10 10,-15 15,10 -8,12" fill="#38BDF8" stroke="${S}" stroke-width="3"/>`,
+    animatedSvg: (f: number) => {
+      const pulse = (0.75 + Math.sin(f * 0.3) * 0.25).toFixed(2);
+      const bob1 = (Math.sin(f * 0.15) * 4).toFixed(1);
+      const bob2 = (Math.cos(f * 0.18) * 4).toFixed(1);
+      const bob3 = (Math.sin(f * 0.22 + 1) * 5).toFixed(1);
+      return `<g transform="scale(1.7)">
+        <!-- Resplandor de advertencia roja (ilusión) -->
+        <circle cx="0" cy="0" r="32" fill="#EF4444" opacity="0.18"/>
+        <!-- Cristales afilados cayendo en cámara lenta -->
+        <polygon points="-22,${-14 + Number(bob1)} -10,${-28 + Number(bob1)} -4,${-12 + Number(bob1)} -16,${-4 + Number(bob1)}" fill="#38BDF8" stroke="${S}" stroke-width="3" stroke-linejoin="round"/>
+        <polygon points="12,${-24 + Number(bob2)} 26,${-16 + Number(bob2)} 18,${-4 + Number(bob2)} 6,${-14 + Number(bob2)}" fill="#BAE6FD" stroke="${S}" stroke-width="3" stroke-linejoin="round"/>
+        <polygon points="-8,${8 + Number(bob3)} 6,${2 + Number(bob3)} 14,${18 + Number(bob3)} -4,${22 + Number(bob3)}" fill="#0284C7" stroke="${S}" stroke-width="3" stroke-linejoin="round"/>
+        <polygon points="-20,${12 + Number(bob2)} -8,${22 + Number(bob2)} -14,${28 + Number(bob2)}" fill="#E0F2FE" stroke="${S}" stroke-width="2.5"/>
+        <polygon points="16,${10 + Number(bob1)} 28,${16 + Number(bob1)} 20,${26 + Number(bob1)}" fill="#67E8F9" stroke="${S}" stroke-width="2.5"/>
+        <!-- Destellos brillantes -->
+        <polygon points="0,-18 2,-12 8,-10 2,-8 0,-2 -2,-8 -8,-10 -2,-12" fill="#FFFFFF" opacity="${pulse}"/>
+        <!-- Cartel de advertencia: JAMÁS EXISTIÓ -->
+        <rect x="-30" y="32" width="60" height="13" rx="4" fill="#DC2626" stroke="${S}" stroke-width="3"/>
+        <text x="0" y="41" font-family="'Impact', 'Arial Black', sans-serif" font-size="7.5" font-weight="900" fill="#FEF08A" text-anchor="middle">¡VIDRIO FALSO!</text>
+      </g>`;
+    },
+    tags: ["cristales", "vidrio", "rotos", "holograma", "falso", "choque", "memoria"],
+  },
+
+  casete_vhs_dorado_recuerdo: {
+    id: "casete_vhs_dorado_recuerdo",
+    name: "Casete VHS Dorado Recuerdo Original",
+    family: "herramientas_objetos",
+    defaultPlacement: "right",
+    svg: `<rect x="-24" y="-16" width="48" height="32" rx="3" fill="#D97706" stroke="${S}" stroke-width="4"/>`,
+    animatedSvg: (f: number) => {
+      const rot = (f * 4) % 360;
+      const glow = (0.75 + Math.sin(f * 0.2) * 0.25).toFixed(2);
+      return `<g transform="scale(1.8)">
+        <!-- Carcasa dorada metalizada -->
+        <rect x="-26" y="-17" width="52" height="34" rx="4" fill="#D97706" stroke="${S}" stroke-width="4" stroke-linejoin="round"/>
+        <rect x="-23" y="-14" width="46" height="28" rx="2" fill="#F59E0B"/>
+        <!-- Ventanilla acrílica central -->
+        <rect x="-18" y="-7" width="36" height="14" rx="2" fill="#0F172A" stroke="${S}" stroke-width="2.5"/>
+        <!-- Dos carretes circulares giratorios -->
+        <g transform="translate(-8, 0) rotate(${rot})">
+          <circle cx="0" cy="0" r="5" fill="#FFFFFF" stroke="${S}" stroke-width="1.5"/>
+          <line x1="-5" y1="0" x2="5" y2="0" stroke="#000" stroke-width="1.5"/>
+          <line x1="0" y1="-5" x2="0" y2="5" stroke="#000" stroke-width="1.5"/>
+        </g>
+        <g transform="translate(8, 0) rotate(${rot})">
+          <circle cx="0" cy="0" r="5" fill="#FFFFFF" stroke="${S}" stroke-width="1.5"/>
+          <line x1="-5" y1="0" x2="5" y2="0" stroke="#000" stroke-width="1.5"/>
+          <line x1="0" y1="-5" x2="0" y2="5" stroke="#000" stroke-width="1.5"/>
+        </g>
+        <!-- Cinta magnética visible entre carretes -->
+        <rect x="-3" y="-2" width="6" height="4" fill="#1C1917"/>
+        <!-- Etiqueta adhesiva manuscrita -->
+        <rect x="-20" y="-14" width="40" height="6" fill="#F8FAFC" stroke="${S}" stroke-width="1.5"/>
+        <text x="0" y="-9.5" font-family="'Arial Black', sans-serif" font-size="4" font-weight="900" fill="#DC2626" text-anchor="middle">RECUERDO ORIGINAL</text>
+        <!-- Rótulo inferior VHS -->
+        <rect x="-26" y="21" width="52" height="11" rx="3" fill="#020617" stroke="${S}" stroke-width="2.5" opacity="${glow}"/>
+        <text x="0" y="29" font-family="'Impact', 'Arial Black', sans-serif" font-size="7" font-weight="900" fill="#FDE047" text-anchor="middle">★ CINTA VHS 1974 ★</text>
+      </g>`;
+    },
+    tags: ["vhs", "cinta", "casete", "dorado", "recuerdo", "memoria", "original", "archivo"],
+  },
+
+  hoja_manuscrito_lapiz_goma: {
+    id: "hoja_manuscrito_lapiz_goma",
+    name: "Hoja de Memoria con Lápiz y Goma Borrando",
+    family: "herramientas_objetos",
+    defaultPlacement: "right",
+    svg: `<rect x="-18" y="-24" width="36" height="48" rx="3" fill="#FEF3C7" stroke="${S}" stroke-width="4"/>`,
+    animatedSvg: (f: number) => {
+      const eraserX = (Math.sin(f * 0.35) * 6).toFixed(1);
+      const shavings = (Math.sin(f * 0.4) * 3).toFixed(1);
+      return `<g transform="scale(1.8)">
+        <!-- Hoja de papel pergamino antigua -->
+        <rect x="-19" y="-25" width="38" height="50" rx="3" fill="#FEF3C7" stroke="${S}" stroke-width="4"/>
+        <!-- Esquina doblada -->
+        <polygon points="12,-25 19,-18 12,-18" fill="#FDE68A" stroke="${S}" stroke-width="2"/>
+        <!-- Líneas manuscritas con tachón borrado -->
+        <line x1="-13" y1="-15" x2="11" y2="-15" stroke="#475569" stroke-width="2" stroke-linecap="round"/>
+        <line x1="-13" y1="-8" x2="6" y2="-8" stroke="#475569" stroke-width="2" stroke-linecap="round"/>
+        <!-- Zona borrada con virutas -->
+        <rect x="-13" y="-3" width="22" height="6" rx="2" fill="#FFFFFF" opacity="0.8"/>
+        <line x1="-13" y1="0" x2="9" y2="0" stroke="#CBD5E1" stroke-width="2" stroke-dasharray="3 3"/>
+        <line x1="-13" y1="8" x2="12" y2="8" stroke="#EF4444" stroke-width="2.5" stroke-linecap="round"/>
+        <line x1="-13" y1="16" x2="4" y2="16" stroke="#475569" stroke-width="2" stroke-linecap="round"/>
+        <!-- Virutas de goma flotando -->
+        <circle cx="${-6 + Number(shavings)}" cy="2" r="1.5" fill="#F43F5E"/>
+        <circle cx="${2 - Number(shavings)}" cy="3" r="1.2" fill="#F43F5E"/>
+        <circle cx="${8 + Number(shavings)}" cy="1" r="1.5" fill="#3B82F6"/>
+        <!-- Lápiz grafito con goma borrando con frenesí -->
+        <g transform="translate(${eraserX}, 0) rotate(35)">
+          <rect x="-3" y="-22" width="6" height="20" rx="1" fill="#FACC15" stroke="${S}" stroke-width="2"/>
+          <polygon points="-3,-2 3,-2 0,6" fill="#FED7AA" stroke="${S}" stroke-width="1.5"/>
+          <polygon points="-1,4 1,4 0,6" fill="#0F172A"/>
+          <!-- Goma rosa superior -->
+          <rect x="-3" y="-26" width="6" height="5" rx="1.5" fill="#F43F5E" stroke="${S}" stroke-width="1.5"/>
+          <rect x="-3" y="-22" width="6" height="2" fill="#94A3B8"/>
+        </g>
+        <!-- Rótulo inferior REESCRIBIENDO -->
+        <rect x="-24" y="29" width="48" height="11" rx="3" fill="#DC2626" stroke="${S}" stroke-width="2.5"/>
+        <text x="0" y="37" font-family="'Impact', 'Arial Black', sans-serif" font-size="6.5" font-weight="900" fill="#FFF" text-anchor="middle">REESCRIBIENDO...</text>
+      </g>`;
+    },
+    tags: ["papel", "hoja", "lapiz", "goma", "borrar", "reescribir", "hipocampo", "memoria"],
+  },
+
+  sello_tinta_reconsolidado: {
+    id: "sello_tinta_reconsolidado",
+    name: "Sello de Tinta Roja RECONSOLIDADO",
+    family: "herramientas_objetos",
+    defaultPlacement: "right",
+    svg: `<rect x="-16" y="-12" width="32" height="24" rx="3" fill="#DC2626" stroke="${S}" stroke-width="4"/>`,
+    animatedSvg: (f: number) => {
+      const stampBob = Math.abs(Math.sin(f * 0.28) * 5).toFixed(1);
+      return `<g transform="scale(1.75)">
+        <!-- Mango de madera del sello -->
+        <g transform="translate(0, ${-stampBob})">
+          <ellipse cx="0" cy="-24" rx="7" ry="9" fill="#92400E" stroke="${S}" stroke-width="3"/>
+          <path d="M -5,-16 L -3,-6 L 3,-6 L 5,-16 Z" fill="#B45309" stroke="${S}" stroke-width="2.5"/>
+          <!-- Base metálica y almohadilla -->
+          <rect x="-16" y="-6" width="32" height="6" rx="2" fill="#E2E8F0" stroke="${S}" stroke-width="2.5"/>
+          <rect x="-17" y="0" width="34" height="4" rx="1" fill="#DC2626" stroke="${S}" stroke-width="1.5"/>
+        </g>
+        <!-- Huella estampada en papel abajo -->
+        <g transform="translate(0, 16) rotate(-4)">
+          <rect x="-26" y="-8" width="52" height="16" rx="3" fill="#FEE2E2" stroke="#DC2626" stroke-width="3" stroke-dasharray="1 0"/>
+          <rect x="-23" y="-6" width="46" height="12" rx="1.5" fill="none" stroke="#DC2626" stroke-width="1.5"/>
+          <text x="0" y="2.5" font-family="'Impact', 'Arial Black', sans-serif" font-size="6.5" font-weight="900" fill="#DC2626" text-anchor="middle">★ RECONSOLIDADO ★</text>
+        </g>
+      </g>`;
+    },
+    tags: ["sello", "tinta", "reconsolidado", "estampa", "documento", "hipocampo", "edicion"],
+  },
+
+  tarjetas_loftus_contactaron_estrellaron: {
+    id: "tarjetas_loftus_contactaron_estrellaron",
+    name: "Tarjetas Comparativas Loftus: Contactaron vs Se Estrellaron",
+    family: "educacion_ciencia",
+    defaultPlacement: "both",
+    svg: `<rect x="-22" y="-14" width="44" height="28" rx="3" fill="#EF4444" stroke="${S}" stroke-width="4"/>`,
+    animatedSvg: (f: number) => {
+      const redPulse = (1.0 + Math.sin(f * 0.25) * 0.08).toFixed(2);
+      return `<g transform="scale(1.7)">
+        <!-- Tarjeta verde: CONTACTARON (Baja velocidad) -->
+        <g transform="translate(-14, 4) rotate(-10)">
+          <rect x="-18" y="-15" width="36" height="30" rx="3" fill="#DCFCE7" stroke="${S}" stroke-width="3"/>
+          <rect x="-16" y="-13" width="32" height="8" rx="2" fill="#22C55E"/>
+          <text x="0" y="-7.5" font-family="'Arial Black', sans-serif" font-size="4.2" font-weight="900" fill="#FFFFFF" text-anchor="middle">CONTACTARON</text>
+          <text x="0" y="4" font-family="'Impact', sans-serif" font-size="8.5" font-weight="900" fill="#15803D" text-anchor="middle">50 km/h</text>
+          <text x="0" y="11" font-family="'Arial', sans-serif" font-size="4" font-weight="900" fill="#166534" text-anchor="middle">0% Vidrios rotos</text>
+        </g>
+        <!-- Tarjeta roja gigante dominante: SE ESTRELLARON (Alta velocidad e implanta vidrios) -->
+        <g transform="translate(14, -2) rotate(8) scale(${redPulse})">
+          <rect x="-20" y="-18" width="40" height="36" rx="4" fill="#FEE2E2" stroke="#000000" stroke-width="4"/>
+          <rect x="-18" y="-16" width="36" height="10" rx="2" fill="#DC2626"/>
+          <text x="0" y="-9" font-family="'Arial Black', sans-serif" font-size="4.5" font-weight="900" fill="#FEF08A" text-anchor="middle">¡SE ESTRELLARON!</text>
+          <text x="0" y="4" font-family="'Impact', sans-serif" font-size="10" font-weight="900" fill="#B91C1C" text-anchor="middle">65 km/h</text>
+          <rect x="-16" y="8" width="32" height="7" rx="2" fill="#DC2626"/>
+          <text x="0" y="13.5" font-family="'Impact', sans-serif" font-size="4.5" font-weight="900" fill="#FFFFFF" text-anchor="middle">¡JURAN VER VIDRIOS!</text>
+        </g>
+      </g>`;
+    },
+    tags: ["tarjetas", "loftus", "experimento", "contactaron", "estrellaron", "velocidad", "sesgo"],
+  },
+
+  rompecabezas_madera_plastilina: {
+    id: "rompecabezas_madera_plastilina",
+    name: "Rompecabezas con Parche de Plastilina y Pincel",
+    family: "herramientas_objetos",
+    defaultPlacement: "right",
+    svg: `<rect x="-18" y="-18" width="36" height="36" rx="4" fill="#B45309" stroke="${S}" stroke-width="4"/>`,
+    animatedSvg: (f: number) => {
+      const squish = (Math.sin(f * 0.28) * 1.5).toFixed(1);
+      return `<g transform="scale(1.75)">
+        <!-- Tablero de madera del rompecabezas -->
+        <rect x="-22" y="-20" width="44" height="40" rx="4" fill="#B45309" stroke="${S}" stroke-width="4"/>
+        <rect x="-18" y="-16" width="36" height="32" rx="2" fill="#D97706"/>
+        <!-- Pieza faltante triangular / hueco negro -->
+        <polygon points="-6,-6 10,-6 2,10" fill="#451A03" stroke="${S}" stroke-width="2"/>
+        <!-- Parche de plastilina blanca moldeándose para encajar -->
+        <g transform="translate(0, ${squish})">
+          <polygon points="-5,-5 9,-5 2,9" fill="#F8FAFC" stroke="${S}" stroke-width="2.5"/>
+          <!-- Mancha de acuarela fresca simulando el dibujo original -->
+          <circle cx="2" cy="0" r="3.5" fill="#38BDF8"/>
+          <!-- Huella dactilar presionando -->
+          <ellipse cx="2" cy="0" rx="2.5" ry="1.5" fill="none" stroke="#94A3B8" stroke-width="1"/>
+        </g>
+        <!-- Pincel fino con cerdas húmedas -->
+        <g transform="translate(14, -8) rotate(40)">
+          <rect x="-1.5" y="-16" width="3" height="20" rx="1" fill="#78350F" stroke="${S}" stroke-width="1.5"/>
+          <rect x="-2" y="4" width="4" height="4" fill="#94A3B8"/>
+          <polygon points="-2,8 2,8 0,14" fill="#0284C7" stroke="${S}" stroke-width="1"/>
+        </g>
+        <!-- Rótulo inferior CONFABULACIÓN -->
+        <rect x="-26" y="24" width="52" height="11" rx="3" fill="#0284C7" stroke="${S}" stroke-width="2.5"/>
+        <text x="0" y="32" font-family="'Impact', 'Arial Black', sans-serif" font-size="6.5" font-weight="900" fill="#FFF" text-anchor="middle">RELLENO AUTOMÁTICO</text>
+      </g>`;
+    },
+    tags: ["rompecabezas", "plastilina", "pincel", "confabulacion", "relleno", "memoria", "truco"],
+  },
+
+  album_fotos_familiar_cuero: {
+    id: "album_fotos_familiar_cuero",
+    name: "Álbum de Fotos con Perro Verde y Recuerdos",
+    family: "vida_cotidiana",
+    defaultPlacement: "both",
+    svg: `<rect x="-24" y="-18" width="48" height="36" rx="4" fill="#78350F" stroke="${S}" stroke-width="4"/>`,
+    animatedSvg: (f: number) => {
+      const pageTurn = (Math.sin(f * 0.12) * 2).toFixed(1);
+      return `<g transform="scale(1.8)">
+        <!-- Cubierta de cuero marrón oscuro abierta -->
+        <rect x="-28" y="-20" width="56" height="40" rx="4" fill="#451A03" stroke="${S}" stroke-width="4"/>
+        <!-- Páginas interiores de papel crema -->
+        <rect x="-25" y="-17" width="24" height="34" rx="2" fill="#FEF3C7" stroke="${S}" stroke-width="2"/>
+        <rect x="1" y="-17" width="24" height="34" rx="2" fill="#FEF3C7" stroke="${S}" stroke-width="2"/>
+        <!-- Lomo central encuadernado -->
+        <line x1="0" y1="-19" x2="0" y2="19" stroke="${S}" stroke-width="3"/>
+        <!-- Foto izquierda: Stickman niño sonriente -->
+        <g transform="translate(-13, 0)">
+          <rect x="-9" y="-12" width="18" height="22" rx="1.5" fill="#FFFFFF" stroke="${S}" stroke-width="1.5"/>
+          <circle cx="0" cy="-4" r="4.5" fill="#FED7AA" stroke="${S}" stroke-width="1.5"/>
+          <path d="M -3,-3 Q 0,-1 3,-3" fill="none" stroke="${S}" stroke-width="1.2"/>
+          <rect x="-4" y="1" width="8" height="6" fill="#3B82F6" stroke="${S}" stroke-width="1.2"/>
+        </g>
+        <!-- Foto derecha: ¡El perro verde absurdo inventado por la memoria! -->
+        <g transform="translate(13, ${pageTurn})">
+          <rect x="-9" y="-12" width="18" height="22" rx="1.5" fill="#FFFFFF" stroke="${S}" stroke-width="1.5"/>
+          <!-- Perro verde caricaturesco -->
+          <ellipse cx="0" cy="0" rx="6" ry="4.5" fill="#22C55E" stroke="${S}" stroke-width="1.5"/>
+          <circle cx="5" cy="-3" r="3.5" fill="#22C55E" stroke="${S}" stroke-width="1.5"/>
+          <!-- Oreja caída -->
+          <path d="M 4,-5 C 7,-7 8,-2 6,-1 Z" fill="#15803D" stroke="${S}" stroke-width="1"/>
+          <!-- Ojo y hocico -->
+          <circle cx="6" cy="-4" r="0.8" fill="#000"/>
+          <circle cx="8" cy="-2.5" r="1" fill="#000"/>
+          <!-- Patas y cola feliz -->
+          <line x1="-3" y1="4" x2="-3" y2="7" stroke="${S}" stroke-width="1.5" stroke-linecap="round"/>
+          <line x1="3" y1="4" x2="3" y2="7" stroke="${S}" stroke-width="1.5" stroke-linecap="round"/>
+          <path d="M -6,-1 Q -9,-5 -8,-8" fill="none" stroke="${S}" stroke-width="1.5" stroke-linecap="round"/>
+          <!-- Etiqueta manuscrita cómica -->
+          <text x="0" y="8" font-family="'Arial Black', sans-serif" font-size="2.8" font-weight="900" fill="#15803D" text-anchor="middle">¿PERRO VERDE?</text>
+        </g>
+        <!-- Rótulo inferior ÁLBUM MENTAL -->
+        <rect x="-26" y="24" width="52" height="11" rx="3" fill="#D97706" stroke="${S}" stroke-width="2.5"/>
+        <text x="0" y="32" font-family="'Impact', 'Arial Black', sans-serif" font-size="7" font-weight="900" fill="#FFF" text-anchor="middle">ÁLBUM DE RECUERDOS</text>
+      </g>`;
+    },
+    tags: ["album", "fotos", "perro", "verde", "recuerdos", "infancia", "familia", "memoria"],
+  },
+
+  cartel_prision_eterna_roto: {
+    id: "cartel_prision_eterna_roto",
+    name: "Cartel de Prisión Eterna Quebrado con Radiación",
+    family: "educacion_ciencia",
+    defaultPlacement: "right",
+    svg: `<rect x="-24" y="-18" width="48" height="36" rx="4" fill="#334155" stroke="${S}" stroke-width="4"/>`,
+    animatedSvg: (f: number) => {
+      const crackOffset = (Math.sin(f * 0.25) * 1.5).toFixed(1);
+      const dripY = ((f * 1.8) % 30).toFixed(1);
+      const glowPulse = (0.7 + Math.sin(f * 0.2) * 0.3).toFixed(2);
+      return `<g transform="scale(1.7)">
+        <!-- Poste de soporte de hierro -->
+        <rect x="-3" y="10" width="6" height="42" fill="#1E293B" stroke="${S}" stroke-width="3"/>
+        
+        <!-- Mitad izquierda del cartel rota -->
+        <g transform="translate(-1, 0) rotate(-4)">
+          <path d="M -30,-22 L -2,-22 L -6,-2 L 2,4 L -4,14 L -30,14 Z" fill="#EF4444" stroke="${S}" stroke-width="3.5"/>
+          <text x="-16" y="-6" font-family="'Impact', 'Arial Black', sans-serif" font-size="8" font-weight="900" fill="#FFF">PRI-</text>
+          <text x="-16" y="4" font-family="'Impact', 'Arial Black', sans-serif" font-size="7" font-weight="900" fill="#FEF08A">SIÓN</text>
+        </g>
+
+        <!-- Mitad derecha del cartel rota y desplazada -->
+        <g transform="translate(${crackOffset}, ${crackOffset}) rotate(6)">
+          <path d="M -2,-22 L 30,-22 L 30,14 L -4,14 L 2,4 L -6,-2 Z" fill="#DC2626" stroke="${S}" stroke-width="3.5"/>
+          <text x="5" y="-6" font-family="'Impact', 'Arial Black', sans-serif" font-size="8" font-weight="900" fill="#FFF">ETER-</text>
+          <text x="6" y="4" font-family="'Impact', 'Arial Black', sans-serif" font-size="7" font-weight="900" fill="#FEF08A">NA</text>
+        </g>
+
+        <!-- Rayo de fractura brillante y gotas luminosas escapando -->
+        <path d="M -2,-22 L -6,-2 L 2,4 L -4,14" fill="none" stroke="#38BDF8" stroke-width="3"/>
+        <circle cx="0" cy="${dripY}" r="3.5" fill="#38BDF8" opacity="${glowPulse}"/>
+        <circle cx="5" cy="${(parseFloat(dripY) + 8) % 30}" r="2" fill="#FDE047" opacity="${glowPulse}"/>
+        
+        <!-- Placa inferior de estado -->
+        <rect x="-28" y="22" width="56" height="11" rx="3" fill="#0284C7" stroke="${S}" stroke-width="2.5"/>
+        <text x="0" y="30.5" font-family="'Impact', 'Arial Black', sans-serif" font-size="6" font-weight="900" fill="#FFF" text-anchor="middle">¡TIENE FUGA CUÁNTICA!</text>
+      </g>`;
+    },
+    tags: ["cartel", "prision", "eterna", "roto", "agujero", "negro", "fuga", "hawking", "radiacion"],
+  },
+
+  lupa_cuantica_particulas: {
+    id: "lupa_cuantica_particulas",
+    name: "Lupa Cuántica con Par Partícula-Antipartícula",
+    family: "educacion_ciencia",
+    defaultPlacement: "right",
+    svg: `<circle cx="0" cy="-6" r="20" fill="#0284C7" stroke="${S}" stroke-width="4"/>`,
+    animatedSvg: (f: number) => {
+      const angle = (f * 0.15);
+      const orbX = (Math.cos(angle) * 12).toFixed(1);
+      const orbY = (Math.sin(angle) * 7).toFixed(1);
+      const negX = (-parseFloat(orbX)).toFixed(1);
+      const negY = (-parseFloat(orbY)).toFixed(1);
+      const pulse = (1 + Math.sin(f * 0.3) * 0.15).toFixed(2);
+      return `<g transform="scale(1.75)">
+        <!-- Mango metálico resistente -->
+        <g transform="translate(18, 18) rotate(45)">
+          <rect x="-4" y="0" width="8" height="26" rx="3" fill="#475569" stroke="${S}" stroke-width="3"/>
+          <rect x="-3" y="16" width="6" height="8" rx="2" fill="#F59E0B"/>
+        </g>
+        <!-- Aro exterior de la lupa neo-brutalista -->
+        <circle cx="0" cy="-4" r="26" fill="#0F172A" stroke="${S}" stroke-width="4.5"/>
+        <circle cx="0" cy="-4" r="22" fill="#0369A1" fill-opacity="0.25" stroke="#38BDF8" stroke-width="2"/>
+        
+        <!-- Línea del Horizonte de Sucesos cortando el lente -->
+        <line x1="-22" y1="-4" x2="22" y2="-4" stroke="#000" stroke-width="3.5" stroke-dasharray="3 2"/>
+        <text x="0" y="-8" font-family="'Arial Black', sans-serif" font-size="3" font-weight="900" fill="#94A3B8" text-anchor="middle">HORIZONTE</text>
+        
+        <!-- Partícula Virtual (+) que escapa al exterior (roja) -->
+        <g transform="translate(${orbX}, ${parseFloat(orbY) - 10}) scale(${pulse})">
+          <circle cx="0" cy="0" r="5" fill="#EF4444" stroke="${S}" stroke-width="1.8"/>
+          <text x="0" y="2.5" font-family="'Arial Black', sans-serif" font-size="5" font-weight="900" fill="#FFF" text-anchor="middle">+</text>
+          <!-- Flecha de escape hacia arriba -->
+          <line x1="0" y1="-6" x2="0" y2="-12" stroke="#FDE047" stroke-width="2"/>
+          <polygon points="-2,-10 2,-10 0,-14" fill="#FDE047"/>
+        </g>
+
+        <!-- Antipartícula (-) que cae al abismo (azul/negra) -->
+        <g transform="translate(${negX}, ${parseFloat(negY) + 4}) scale(${pulse})">
+          <circle cx="0" cy="0" r="5" fill="#3B82F6" stroke="${S}" stroke-width="1.8"/>
+          <text x="0" y="2.5" font-family="'Arial Black', sans-serif" font-size="6" font-weight="900" fill="#FFF" text-anchor="middle">-</text>
+          <!-- Flecha de absorción hacia abajo -->
+          <line x1="0" y1="6" x2="0" y2="12" stroke="#38BDF8" stroke-width="2"/>
+          <polygon points="-2,10 2,10 0,14" fill="#38BDF8"/>
+        </g>
+
+        <!-- Destellos cuánticos -->
+        <circle cx="0" cy="-4" r="1.5" fill="#FFF"/>
+
+        <!-- Rótulo inferior -->
+        <rect x="-26" y="24" width="52" height="11" rx="3" fill="#7C3AED" stroke="${S}" stroke-width="2.5"/>
+        <text x="0" y="32" font-family="'Impact', 'Arial Black', sans-serif" font-size="6.2" font-weight="900" fill="#FFF" text-anchor="middle">PAR VIRTUAL CUÁNTICO</text>
+      </g>`;
+    },
+    tags: ["lupa", "cuantica", "particula", "antiparticula", "par", "vacio", "hawking", "horizonte"],
+  },
+
+  libro_historia_universo_fuego: {
+    id: "libro_historia_universo_fuego",
+    name: "Libro Quemándose con Cenizas y Bits Flotantes",
+    family: "educacion_ciencia",
+    defaultPlacement: "both",
+    svg: `<rect x="-22" y="-16" width="44" height="32" rx="3" fill="#B45309" stroke="${S}" stroke-width="4"/>`,
+    animatedSvg: (f: number) => {
+      const flameH1 = (14 + Math.sin(f * 0.4) * 4).toFixed(1);
+      const flameH2 = (18 + Math.cos(f * 0.35) * 5).toFixed(1);
+      const smokeY = ((f * 1.5) % 35).toFixed(1);
+      return `<g transform="scale(1.75)">
+        <!-- Lomo y tapas del libro quemado -->
+        <rect x="-26" y="-14" width="52" height="36" rx="4" fill="#451A03" stroke="${S}" stroke-width="3.5"/>
+        <!-- Páginas abiertas ardiendo -->
+        <rect x="-23" y="-11" width="22" height="30" rx="2" fill="#FEF3C7" stroke="${S}" stroke-width="1.8"/>
+        <rect x="1" y="-11" width="22" height="30" rx="2" fill="#FCD34D" stroke="${S}" stroke-width="1.8"/>
+        
+        <!-- Texto quemándose visible en páginas -->
+        <line x1="-20" y1="-5" x2="-5" y2="-5" stroke="#78350F" stroke-width="1.5"/>
+        <line x1="-20" y1="0" x2="-8" y2="0" stroke="#78350F" stroke-width="1.5"/>
+        <line x1="-20" y1="5" x2="-6" y2="5" stroke="#78350F" stroke-width="1.5"/>
+        <line x1="-20" y1="10" x2="-10" y2="10" stroke="#78350F" stroke-width="1.5"/>
+
+        <line x1="4" y1="-5" x2="19" y2="-5" stroke="#78350F" stroke-width="1.5"/>
+        <line x1="4" y1="0" x2="16" y2="0" stroke="#78350F" stroke-width="1.5"/>
+        <line x1="4" y1="5" x2="18" y2="5" stroke="#78350F" stroke-width="1.5"/>
+
+        <!-- Fuego animado en el borde superior -->
+        <g transform="translate(-10, -12)">
+          <path d="M -6,0 Q -8,-${flameH1} 0,-${parseFloat(flameH1) + 4} Q 8,-${flameH1} 6,0 Z" fill="#EF4444"/>
+          <path d="M -4,0 Q -5,-${flameH1} 0,-${flameH1} Q 5,-${flameH1} 4,0 Z" fill="#F59E0B"/>
+          <path d="M -2,0 Q 0,-${(parseFloat(flameH1) * 0.6).toFixed(1)} 0,-${(parseFloat(flameH1) * 0.7).toFixed(1)} Q 2,-${(parseFloat(flameH1) * 0.6).toFixed(1)} 2,0 Z" fill="#FEF08A"/>
+        </g>
+        <g transform="translate(8, -12)">
+          <path d="M -7,0 Q -9,-${flameH2} 0,-${parseFloat(flameH2) + 5} Q 9,-${flameH2} 7,0 Z" fill="#DC2626"/>
+          <path d="M -4,0 Q -6,-${flameH2} 0,-${flameH2} Q 6,-${flameH2} 4,0 Z" fill="#FACC15"/>
+        </g>
+
+        <!-- Cenizas y bits flotando en el humo -->
+        <g transform="translate(0, -${smokeY})">
+          <circle cx="-6" cy="-8" r="1.8" fill="#475569"/>
+          <circle cx="8" cy="-14" r="2.2" fill="#334155"/>
+          <text x="-12" y="-10" font-family="'Courier New', monospace" font-size="4" font-weight="900" fill="#38BDF8">01</text>
+          <text x="10" y="-6" font-family="'Courier New', monospace" font-size="4" font-weight="900" fill="#F59E0B">10</text>
+        </g>
+
+        <!-- Rótulo inferior de física cuántica -->
+        <rect x="-28" y="24" width="56" height="11" rx="3" fill="#D97706" stroke="${S}" stroke-width="2.5"/>
+        <text x="0" y="32" font-family="'Impact', 'Arial Black', sans-serif" font-size="6.5" font-weight="900" fill="#FFF" text-anchor="middle">¿CENIZA CON INFORMACIÓN?</text>
+      </g>`;
+    },
+    tags: ["libro", "fuego", "cenizas", "informacion", "bits", "humo", "cuantica", "quemar"],
+  },
+
+  escaner_cuantico_holograma: {
+    id: "escaner_cuantico_holograma",
+    name: "Escáner Cuántico Reconstruyendo Letras Holográficas",
+    family: "tecnologia",
+    defaultPlacement: "right",
+    svg: `<rect x="-16" y="-20" width="32" height="40" rx="4" fill="#0284C7" stroke="${S}" stroke-width="4"/>`,
+    animatedSvg: (f: number) => {
+      const scanBeamY = ((f * 2) % 36).toFixed(1);
+      const letterFloat = (Math.sin(f * 0.25) * 2).toFixed(1);
+      return `<g transform="scale(1.75)">
+        <!-- Dispositivo de mano futurista -->
+        <rect x="-18" y="-26" width="36" height="18" rx="4" fill="#0F172A" stroke="${S}" stroke-width="3.5"/>
+        <rect x="-14" y="-22" width="28" height="10" rx="2" fill="#1E293B"/>
+        <!-- Lente emisor láser -->
+        <rect x="-12" y="-8" width="24" height="4" rx="2" fill="#38BDF8"/>
+        
+        <!-- Cono del haz láser de reconstrucción -->
+        <polygon points="-12,-4 12,-4 26,30 -26,30" fill="#0284C7" fill-opacity="0.22" stroke="#38BDF8" stroke-width="1.5" stroke-dasharray="3 3"/>
+        
+        <!-- Línea de escaneo láser móvil -->
+        <line x1="-20" y1="${parseFloat(scanBeamY) - 4}" x2="20" y2="${parseFloat(scanBeamY) - 4}" stroke="#FDE047" stroke-width="2.5"/>
+
+        <!-- Letras holográficas reconstruyéndose en el haz -->
+        <g transform="translate(0, ${letterFloat})">
+          <text x="-12" y="14" font-family="'Impact', 'Arial Black', sans-serif" font-size="10" font-weight="900" fill="#FACC15" stroke="${S}" stroke-width="0.8">A</text>
+          <text x="-2" y="12" font-family="'Impact', 'Arial Black', sans-serif" font-size="11" font-weight="900" fill="#38BDF8" stroke="${S}" stroke-width="0.8">B</text>
+          <text x="9" y="15" font-family="'Impact', 'Arial Black', sans-serif" font-size="10" font-weight="900" fill="#4ADE80" stroke="${S}" stroke-width="0.8">C</text>
+          
+          <!-- Matriz de píxeles/datos flotantes -->
+          <circle cx="-16" cy="20" r="1.5" fill="#38BDF8"/>
+          <circle cx="16" cy="22" r="1.5" fill="#FACC15"/>
+          <line x1="-12" y1="20" x2="12" y2="20" stroke="#38BDF8" stroke-width="1" stroke-dasharray="2 2"/>
+        </g>
+
+        <!-- Rótulo inferior RECONSTRUCCIÓN 100% -->
+        <rect x="-26" y="26" width="52" height="11" rx="3" fill="#059669" stroke="${S}" stroke-width="2.5"/>
+        <text x="0" y="34" font-family="'Impact', 'Arial Black', sans-serif" font-size="6.2" font-weight="900" fill="#FFF" text-anchor="middle">LEYES CUÁNTICAS OK</text>
+      </g>`;
+    },
+    tags: ["escaner", "cuantico", "holograma", "letras", "reconstruccion", "laser", "futurista", "datos"],
+  },
+
+  escaner_error_realidad_rota: {
+    id: "escaner_error_realidad_rota",
+    name: "Escáner en Alarma ERROR 404 Información Destruida",
+    family: "tecnologia",
+    defaultPlacement: "right",
+    svg: `<rect x="-18" y="-22" width="36" height="44" rx="4" fill="#DC2626" stroke="${S}" stroke-width="4"/>`,
+    animatedSvg: (f: number) => {
+      const shake = (Math.sin(f * 0.8) * 2).toFixed(1);
+      const blink = (f % 10 < 5) ? "#EF4444" : "#7F1D1D";
+      const glitchX = (f % 6 === 0) ? 3 : 0;
+      return `<g transform="scale(1.75) translate(${shake}, 0)">
+        <!-- Cuerpo del escáner en sobrecalentamiento -->
+        <rect x="-20" y="-24" width="40" height="46" rx="4" fill="#18181B" stroke="${S}" stroke-width="3.5"/>
+        <!-- Pantalla roja parpadeante de alerta -->
+        <rect x="-16" y="-20" width="32" height="26" rx="3" fill="${blink}" stroke="#F87171" stroke-width="2"/>
+        
+        <!-- Texto de Error Glitch -->
+        <g transform="translate(${glitchX}, 0)">
+          <text x="0" y="-10" font-family="'Impact', 'Arial Black', sans-serif" font-size="7" font-weight="900" fill="#FFF" text-anchor="middle">¡ERROR 404!</text>
+          <text x="0" y="-2" font-family="'Courier New', monospace" font-size="4" font-weight="900" fill="#FEF08A" text-anchor="middle">DATOS BORRADOS</text>
+        </g>
+
+        <!-- Símbolo de física rota: átomo roto con tachón -->
+        <g transform="translate(0, 12)">
+          <circle cx="0" cy="0" r="7" fill="none" stroke="#DC2626" stroke-width="2" stroke-dasharray="3 2"/>
+          <line x1="-6" y1="-6" x2="6" y2="6" stroke="#EF4444" stroke-width="2.5"/>
+          <line x1="6" y1="-6" x2="-6" y2="6" stroke="#EF4444" stroke-width="2.5"/>
+        </g>
+
+        <!-- Chispas y humo negro saliendo del escáner -->
+        <path d="M 16,-16 L 22,-22 M -16,-16 L -22,-20" stroke="#FDE047" stroke-width="2" stroke-linecap="round"/>
+        <circle cx="18" cy="-24" r="2" fill="#71717A"/>
+
+        <!-- Rótulo inferior de paradoja -->
+        <rect x="-26" y="24" width="52" height="11" rx="3" fill="#DC2626" stroke="${S}" stroke-width="2.5"/>
+        <text x="0" y="32" font-family="'Impact', 'Arial Black', sans-serif" font-size="6" font-weight="900" fill="#FFF" text-anchor="middle">¡PARADOJA FATAL!</text>
+      </g>`;
+    },
+    tags: ["escaner", "error", "404", "alarma", "glitch", "paradoja", "cuantica", "informacion", "rota"],
+  },
+
+  interfaz_piel_holografica_bits: {
+    id: "interfaz_piel_holografica_bits",
+    name: "Piel Holográfica con Bits de Planck en Superficie 2D",
+    family: "tecnologia",
+    defaultPlacement: "both",
+    svg: `<rect x="-24" y="-18" width="48" height="36" rx="4" fill="#065F46" stroke="${S}" stroke-width="4"/>`,
+    animatedSvg: (f: number) => {
+      const bitPulse = (0.7 + Math.sin(f * 0.25) * 0.3).toFixed(2);
+      const waveOffset = (Math.sin(f * 0.18) * 1.5).toFixed(1);
+      return `<g transform="scale(1.75)">
+        <!-- Malla curva del horizonte de sucesos (2D) -->
+        <rect x="-28" y="-22" width="56" height="42" rx="5" fill="#022C22" stroke="${S}" stroke-width="3.5"/>
+        <rect x="-25" y="-19" width="50" height="36" rx="3" fill="#064E3B" stroke="#10B981" stroke-width="1.8"/>
+
+        <!-- Líneas de cuadrícula de escala de Planck -->
+        <line x1="-25" y1="-7" x2="25" y2="-7" stroke="#059669" stroke-width="1"/>
+        <line x1="-25" y1="5" x2="25" y2="5" stroke="#059669" stroke-width="1"/>
+        <line x1="-9" y1="-19" x2="-9" y2="17" stroke="#059669" stroke-width="1"/>
+        <line x1="8" y1="-19" x2="8" y2="17" stroke="#059669" stroke-width="1"/>
+
+        <!-- Matriz de bits binarios fluorescentes 1 y 0 -->
+        <g opacity="${bitPulse}" transform="translate(0, ${waveOffset})">
+          <text x="-18" y="-11" font-family="'Courier New', monospace" font-size="6.5" font-weight="900" fill="#34D399">1</text>
+          <text x="0" y="-11" font-family="'Courier New', monospace" font-size="6.5" font-weight="900" fill="#6EE7B7">0</text>
+          <text x="17" y="-11" font-family="'Courier New', monospace" font-size="6.5" font-weight="900" fill="#34D399">1</text>
+
+          <text x="-18" y="0" font-family="'Courier New', monospace" font-size="6.5" font-weight="900" fill="#6EE7B7">0</text>
+          <text x="0" y="0" font-family="'Courier New', monospace" font-size="6.5" font-weight="900" fill="#FDE047">1</text>
+          <text x="17" y="0" font-family="'Courier New', monospace" font-size="6.5" font-weight="900" fill="#6EE7B7">0</text>
+
+          <text x="-18" y="12" font-family="'Courier New', monospace" font-size="6.5" font-weight="900" fill="#34D399">1</text>
+          <text x="0" y="12" font-family="'Courier New', monospace" font-size="6.5" font-weight="900" fill="#34D399">1</text>
+          <text x="17" y="12" font-family="'Courier New', monospace" font-size="6.5" font-weight="900" fill="#FDE047">1</text>
+        </g>
+
+        <!-- Efecto holograma proyector hacia el observador -->
+        <ellipse cx="0" cy="-21" rx="16" ry="3" fill="#10B981" opacity="0.6"/>
+        
+        <!-- Rótulo inferior PRINCIPIO HOLOGRÁFICO -->
+        <rect x="-28" y="24" width="56" height="11" rx="3" fill="#047857" stroke="${S}" stroke-width="2.5"/>
+        <text x="0" y="32" font-family="'Impact', 'Arial Black', sans-serif" font-size="6.2" font-weight="900" fill="#FFF" text-anchor="middle">ÁREA 2D = DATOS 3D</text>
+      </g>`;
+    },
+    tags: ["holograma", "piel", "bits", "planck", "superficie", "matriz", "binario", "horizonte", "datos"],
+  },
+
+  particula_luz_memoria_cosmica: {
+    id: "particula_luz_memoria_cosmica",
+    name: "Fotón de Hawking con Micro-Holograma Salvado",
+    family: "educacion_ciencia",
+    defaultPlacement: "right",
+    svg: `<circle cx="0" cy="0" r="18" fill="#FACC15" stroke="${S}" stroke-width="4"/>`,
+    animatedSvg: (f: number) => {
+      const photonPulse = (1 + Math.sin(f * 0.25) * 0.12).toFixed(2);
+      const ringScale = (12 + Math.sin(f * 0.3) * 3).toFixed(1);
+      const holoBookY = (Math.sin(f * 0.2) * 2).toFixed(1);
+      return `<g transform="scale(1.8)">
+        <!-- Anillos de ondas electromagnéticas concéntricas -->
+        <circle cx="0" cy="0" r="${parseFloat(ringScale) + 6}" fill="none" stroke="#38BDF8" stroke-width="1.8" stroke-dasharray="4 3" opacity="0.6"/>
+        <circle cx="0" cy="0" r="${ringScale}" fill="none" stroke="#FDE047" stroke-width="2" opacity="0.8"/>
+
+        <!-- Núcleo de radiación cuántica brillante -->
+        <g transform="scale(${photonPulse})">
+          <circle cx="0" cy="0" r="10" fill="#FDE047" stroke="${S}" stroke-width="2.5"/>
+          <circle cx="0" cy="0" r="6" fill="#FFFFFF"/>
+        </g>
+
+        <!-- Rayos de luz estelar -->
+        <line x1="-15" y1="0" x2="15" y2="0" stroke="#FACC15" stroke-width="2.5" stroke-linecap="round"/>
+        <line x1="0" y1="-15" x2="0" y2="15" stroke="#FACC15" stroke-width="2.5" stroke-linecap="round"/>
+
+        <!-- Micro-holograma del libro flotando sobre el fotón -->
+        <g transform="translate(0, ${parseFloat(holoBookY) - 18})">
+          <rect x="-8" y="-6" width="16" height="12" rx="2" fill="#38BDF8" fill-opacity="0.85" stroke="#FFFFFF" stroke-width="1.5"/>
+          <line x1="-5" y1="-2" x2="5" y2="-2" stroke="#FFFFFF" stroke-width="1"/>
+          <line x1="-5" y1="1" x2="3" y2="1" stroke="#FFFFFF" stroke-width="1"/>
+          <!-- Rayos proyectores del fotón al libro -->
+          <polygon points="-8,-6 8,-6 2,12 -2,12" fill="#38BDF8" fill-opacity="0.25"/>
+        </g>
+
+        <!-- Rótulo inferior INFORMACIÓN SALVADA -->
+        <rect x="-26" y="24" width="52" height="11" rx="3" fill="#2563EB" stroke="${S}" stroke-width="2.5"/>
+        <text x="0" y="32" font-family="'Impact', 'Arial Black', sans-serif" font-size="6.2" font-weight="900" fill="#FFF" text-anchor="middle">¡NADA SE DESTRUYE!</text>
+      </g>`;
+    },
+    tags: ["particula", "foton", "luz", "hawking", "memoria", "cosmica", "salvada", "holograma", "cuantica"],
+  },
+
+  mochila_sonriente_pareidolia: {
+    id: "mochila_sonriente_pareidolia",
+    name: "Mochila Escolar con Sonrisa y Ojos Pareidólicos",
+    family: "vida_cotidiana",
+    defaultPlacement: "both",
+    svg: `<rect x="-22" y="-20" width="44" height="40" rx="8" fill="#0284C7" stroke="${S}" stroke-width="4"/>`,
+    animatedSvg: (f: number) => {
+      const grinBob = (Math.sin(f * 0.25) * 1.5).toFixed(1);
+      const eyeBlink = (f % 45 === 0) ? 0.3 : 1;
+      return `<g transform="scale(1.75)">
+        <!-- Cuerpo principal de la mochila turquesa -->
+        <rect x="-24" y="-24" width="48" height="48" rx="10" fill="#0284C7" stroke="${S}" stroke-width="3.5"/>
+        <path d="M -22,-14 C -12,-26 12,-26 22,-14" fill="none" stroke="#38BDF8" stroke-width="3"/>
+        
+        <!-- Bolsillo superior con tiradores de cremallera redondos (ojos pareidólicos saltones) -->
+        <rect x="-18" y="-20" width="36" height="14" rx="4" fill="#0369A1" stroke="${S}" stroke-width="2"/>
+        <!-- Ojo izquierdo pareidólico -->
+        <g transform="translate(-8, -13) scale(1, ${eyeBlink})">
+          <circle cx="0" cy="0" r="5" fill="#FFFFFF" stroke="${S}" stroke-width="2"/>
+          <circle cx="1" cy="0" r="2.2" fill="#000000"/>
+        </g>
+        <!-- Ojo derecho pareidólico -->
+        <g transform="translate(8, -13) scale(1, ${eyeBlink})">
+          <circle cx="0" cy="0" r="5" fill="#FFFFFF" stroke="${S}" stroke-width="2"/>
+          <circle cx="1" cy="0" r="2.2" fill="#000000"/>
+        </g>
+
+        <!-- Bolsillo frontal con cremallera abierta curva (boca sonriente marcada) -->
+        <g transform="translate(0, ${grinBob})">
+          <path d="M -18,2 C -10,18 10,18 18,2" fill="#FDE047" stroke="${S}" stroke-width="3.5"/>
+          <!-- Dientes simulados por los dientes de la cremallera metálica -->
+          <path d="M -15,4 C -8,14 8,14 15,4" fill="none" stroke="${S}" stroke-width="2" stroke-dasharray="2.5 2"/>
+        </g>
+
+        <!-- Correas acolchadas a los lados -->
+        <path d="M -24,-10 C -30,-4 -30,14 -24,20" fill="none" stroke="#F59E0B" stroke-width="4" stroke-linecap="round"/>
+        <path d="M 24,-10 C 30,-4 30,14 24,20" fill="none" stroke="#F59E0B" stroke-width="4" stroke-linecap="round"/>
+
+        <!-- Rótulo inferior PAREIDOLIA FACIAL -->
+        <rect x="-26" y="26" width="52" height="11" rx="3" fill="#0284C7" stroke="${S}" stroke-width="2.5"/>
+        <text x="0" y="34.5" font-family="'Impact', 'Arial Black', sans-serif" font-size="6.5" font-weight="900" fill="#FFF" text-anchor="middle">PAREIDOLIA FACIAL</text>
+      </g>`;
+    },
+    tags: ["mochila", "sonrisa", "pareidolia", "ojos", "cara", "objeto", "vida_cotidiana"],
+  },
+
+  lanza_caza_homonido_sabana: {
+    id: "lanza_caza_homonido_sabana",
+    name: "Lanza de Caza de Madera con Punta de Sílex",
+    family: "historia_exploracion",
+    defaultPlacement: "right",
+    svg: `<line x1="0" y1="20" x2="0" y2="-20" stroke="#78350F" stroke-width="4"/>`,
+    animatedSvg: (f: number) => {
+      const tipGlint = (0.7 + Math.sin(f * 0.3) * 0.3).toFixed(2);
+      return `<g transform="scale(1.75)">
+        <!-- Asta de madera rústica con nudos -->
+        <line x1="0" y1="-32" x2="0" y2="34" stroke="#78350F" stroke-width="4.5" stroke-linecap="round"/>
+        <circle cx="1" cy="5" r="1.5" fill="#451A03"/>
+        <circle cx="-1" cy="-12" r="1.2" fill="#451A03"/>
+
+        <!-- Correas de cuero vegetal atando la punta -->
+        <rect x="-3" y="-34" width="6" height="8" rx="1.5" fill="#B45309" stroke="${S}" stroke-width="1.5"/>
+        <line x1="-3" y1="-32" x2="3" y2="-30" stroke="#451A03" stroke-width="1.2"/>
+        <line x1="-3" y1="-29" x2="3" y2="-27" stroke="#451A03" stroke-width="1.2"/>
+
+        <!-- Punta triangular de piedra sílex / obsidiana afilada -->
+        <polygon points="-6,-34 6,-34 0,-48" fill="#334155" stroke="${S}" stroke-width="2.5"/>
+        <polygon points="-3,-34 3,-34 0,-46" fill="#64748B" opacity="${tipGlint}"/>
+
+        <!-- Pluma prehistórica atada decorativa -->
+        <path d="M 3,-28 C 8,-32 12,-24 4,-22 Z" fill="#F59E0B" stroke="${S}" stroke-width="1.2"/>
+
+        <!-- Rótulo inferior SUPERVIVENCIA -->
+        <rect x="-26" y="24" width="52" height="11" rx="3" fill="#D97706" stroke="${S}" stroke-width="2.5"/>
+        <text x="0" y="32" font-family="'Impact', 'Arial Black', sans-serif" font-size="6.2" font-weight="900" fill="#FFF" text-anchor="middle">SABANA: 200,000 AÑOS</text>
+      </g>`;
+    },
+    tags: ["lanza", "homonido", "sabana", "caza", "madera", "prehistoria", "supervivencia"],
+  },
+
+  balanza_evolutiva_errores: {
+    id: "balanza_evolutiva_errores",
+    name: "Balanza de la Asimetría del Error Evolutivo",
+    family: "educacion_ciencia",
+    defaultPlacement: "both",
+    svg: `<rect x="-22" y="-18" width="44" height="36" rx="4" fill="#334155" stroke="${S}" stroke-width="4"/>`,
+    animatedSvg: (f: number) => {
+      const tilt = (Math.sin(f * 0.15) * 4).toFixed(1);
+      return `<g transform="scale(1.75)">
+        <!-- Pilar central de la balanza -->
+        <line x1="0" y1="-20" x2="0" y2="24" stroke="${S}" stroke-width="4"/>
+        <polygon points="-12,24 12,24 0,16" fill="#1E293B" stroke="${S}" stroke-width="3"/>
+        <circle cx="0" cy="-20" r="3.5" fill="#F59E0B" stroke="${S}" stroke-width="1.5"/>
+
+        <!-- Brazo inclinable: la muerte pesa más que un susto -->
+        <g transform="rotate(${parseFloat(tilt) + 12})">
+          <line x1="-28" y1="-20" x2="28" y2="-20" stroke="${S}" stroke-width="3.5"/>
+
+          <!-- Platillo Izquierdo (Falso positivo = ligero / vida) -->
+          <g transform="translate(-28, -20) rotate(-${parseFloat(tilt) + 12})">
+            <line x1="0" y1="0" x2="-8" y2="14" stroke="#64748B" stroke-width="1.5"/>
+            <line x1="0" y1="0" x2="8" y2="14" stroke="#64748B" stroke-width="1.5"/>
+            <path d="M -12,14 Q 0,22 12,14 Z" fill="#22C55E" stroke="${S}" stroke-width="2"/>
+            <text x="0" y="10" font-family="'Arial Black', sans-serif" font-size="4" font-weight="900" fill="#22C55E" text-anchor="middle">SUSTO = VIVO</text>
+          </g>
+
+          <!-- Platillo Derecho (Falso negativo = pesadísimo / depredador) -->
+          <g transform="translate(28, -20) rotate(-${parseFloat(tilt) + 12})">
+            <line x1="0" y1="0" x2="-8" y2="16" stroke="#64748B" stroke-width="1.5"/>
+            <line x1="0" y1="0" x2="8" y2="16" stroke="#64748B" stroke-width="1.5"/>
+            <path d="M -14,16 Q 0,26 14,16 Z" fill="#EF4444" stroke="${S}" stroke-width="2"/>
+            <text x="0" y="12" font-family="'Arial Black', sans-serif" font-size="4" font-weight="900" fill="#EF4444" text-anchor="middle">ERROR = MUERTE</text>
+          </g>
+        </g>
+
+        <!-- Rótulo inferior ASIMETRÍA DEL ERROR -->
+        <rect x="-26" y="26" width="52" height="11" rx="3" fill="#7C3AED" stroke="${S}" stroke-width="2.5"/>
+        <text x="0" y="34.5" font-family="'Impact', 'Arial Black', sans-serif" font-size="6.2" font-weight="900" fill="#FFF" text-anchor="middle">ASIMETRÍA DEL ERROR</text>
+      </g>`;
+    },
+    tags: ["balanza", "asimetria", "error", "falso_positivo", "falso_negativo", "evolucion", "supervivencia"],
+  },
+
+  chip_neuronal_area_fusiforme: {
+    id: "chip_neuronal_area_fusiforme",
+    name: "Chip del Área Fusiforme Facial a 150ms",
+    family: "tecnologia",
+    defaultPlacement: "right",
+    svg: `<rect x="-18" y="-18" width="36" height="36" rx="4" fill="#0F172A" stroke="${S}" stroke-width="4"/>`,
+    animatedSvg: (f: number) => {
+      const pulseGlow = (0.7 + Math.sin(f * 0.3) * 0.3).toFixed(2);
+      const beamLine = ((f * 3) % 28).toFixed(1);
+      return `<g transform="scale(1.75)">
+        <!-- Placa base de microcircuito bioeléctrico -->
+        <rect x="-22" y="-22" width="44" height="44" rx="6" fill="#090D16" stroke="${S}" stroke-width="3.5"/>
+        <rect x="-18" y="-18" width="36" height="36" rx="4" fill="#1E1B4B" stroke="#818CF8" stroke-width="1.8"/>
+
+        <!-- Pistas de cobre / neón cian -->
+        <path d="M -18,-6 L -10,-6 L -6,-12 L 6,-12 L 10,-6 L 18,-6" fill="none" stroke="#38BDF8" stroke-width="1.8"/>
+        <path d="M -18,6 L -10,6 L -6,12 L 6,12 L 10,6 L 18,6" fill="none" stroke="#38BDF8" stroke-width="1.8"/>
+
+        <!-- Microchip central rotulado FFA -->
+        <rect x="-12" y="-12" width="24" height="24" rx="3" fill="#4F46E5" stroke="#FDE047" stroke-width="2"/>
+        <text x="0" y="-3" font-family="'Impact', 'Arial Black', sans-serif" font-size="7" font-weight="900" fill="#FFF" text-anchor="middle">FFA</text>
+        <text x="0" y="5" font-family="'Courier New', monospace" font-size="4" font-weight="900" fill="#A7F3D0" text-anchor="middle">&lt;150ms&gt;</text>
+
+        <!-- Pulso de radar: escaneo de ojos y boca mínimos -->
+        <g transform="translate(0, 10)">
+          <circle cx="-4" cy="0" r="1" fill="#FDE047"/>
+          <circle cx="4" cy="0" r="1" fill="#FDE047"/>
+          <line x1="-3" y1="3" x2="3" y2="3" stroke="#FDE047" stroke-width="1"/>
+        </g>
+
+        <!-- Alerta verde ¡CARA DETECTADA! -->
+        <rect x="-26" y="24" width="52" height="11" rx="3" fill="#059669" stroke="${S}" stroke-width="2.5"/>
+        <text x="0" y="32" font-family="'Impact', 'Arial Black', sans-serif" font-size="6.2" font-weight="900" fill="#FFF" text-anchor="middle">¡ROSTRO EN 150 MS!</text>
+      </g>`;
+    },
+    tags: ["chip", "neuronal", "ffa", "area_fusiforme", "milisegundos", "cerebro", "tecnologia"],
+  },
+
+  monitor_analisis_microexpresiones: {
+    id: "monitor_analisis_microexpresiones",
+    name: "Monitor de Lectura de Intenciones Amigo vs Enemigo",
+    family: "educacion_ciencia",
+    defaultPlacement: "both",
+    svg: `<rect x="-22" y="-18" width="44" height="36" rx="4" fill="#1E293B" stroke="${S}" stroke-width="4"/>`,
+    animatedSvg: (f: number) => {
+      const isHostile = (Math.sin(f * 0.15) > 0);
+      const faceCol = isHostile ? "#EF4444" : "#10B981";
+      const mouthY = isHostile ? "6" : "-2";
+      const mouthCurve = isHostile ? "M -10,10 Q 0,4 10,10" : "M -10,6 Q 0,14 10,6";
+      const labelText = isHostile ? "¡AMENAZA!" : "AMISTOSO";
+      return `<g transform="scale(1.75)">
+        <!-- Carcasa del monitor futurista -->
+        <rect x="-26" y="-22" width="52" height="44" rx="6" fill="#0F172A" stroke="${S}" stroke-width="3.5"/>
+        <rect x="-22" y="-18" width="44" height="34" rx="4" fill="#020617"/>
+
+        <!-- Esbozo de rostro paramétrico de prueba -->
+        <circle cx="0" cy="-2" r="13" fill="none" stroke="${faceCol}" stroke-width="2"/>
+        <!-- Ojos y cejas cambiantes -->
+        {isHostile ? (
+          <!-- Cejas hostiles diagonales -->
+          <g stroke="${faceCol}" stroke-width="2" stroke-linecap="round">
+            <line x1="-8" y1="-8" x2="-3" y2="-5"/>
+            <line x1="8" y1="-8" x2="3" y2="-5"/>
+            <circle cx="-5" cy="-3" r="1.5" fill="${faceCol}"/>
+            <circle cx="5" cy="-3" r="1.5" fill="${faceCol}"/>
+          </g>
+        ) : (
+          <!-- Cejas amigables relajadas -->
+          <g stroke="${faceCol}" stroke-width="2" stroke-linecap="round">
+            <circle cx="-5" cy="-4" r="1.8" fill="${faceCol}"/>
+            <circle cx="5" cy="-4" r="1.8" fill="${faceCol}"/>
+          </g>
+        )}
+
+        <!-- Boca reactiva -->
+        <path d="${mouthCurve}" fill="none" stroke="${faceCol}" stroke-width="2.5" stroke-linecap="round"/>
+
+        <!-- Rótulo inferior reactivo -->
+        <rect x="-26" y="24" width="52" height="11" rx="3" fill="${faceCol}" stroke="${S}" stroke-width="2.5"/>
+        <text x="0" y="32" font-family="'Impact', 'Arial Black', sans-serif" font-size="6.5" font-weight="900" fill="#FFF" text-anchor="middle">${labelText}</text>
+      </g>`;
+    },
+    tags: ["monitor", "expresiones", "amigo", "enemigo", "intenciones", "amenaza", "ciencia"],
+  },
+
+  aspiradora_robot_ojitos_mascota: {
+    id: "aspiradora_robot_ojitos_mascota",
+    name: "Aspiradora Robot con Ojitos Móviles Pegados",
+    family: "vida_cotidiana",
+    defaultPlacement: "right",
+    svg: `<ellipse cx="0" cy="0" rx="22" ry="16" fill="#18181B" stroke="${S}" stroke-width="4"/>`,
+    animatedSvg: (f: number) => {
+      const wiggleEye = (Math.sin(f * 0.4) * 2).toFixed(1);
+      const blink = (f % 50 < 4) ? "#EF4444" : "#22C55E";
+      return `<g transform="scale(1.75)">
+        <!-- Cuerpo redondo de aspiradora robot inteligente -->
+        <ellipse cx="0" cy="4" rx="26" ry="18" fill="#18181B" stroke="${S}" stroke-width="3.5"/>
+        <ellipse cx="0" cy="2" rx="21" ry="14" fill="#27272A"/>
+
+        <!-- Parachoques frontal de goma -->
+        <path d="M -24,4 C -24,18 24,18 24,4" fill="none" stroke="#52525B" stroke-width="3"/>
+
+        <!-- Dos ojitos móviles saltones (googly eyes) pegados con cariño -->
+        <!-- Ojo izquierdo -->
+        <g transform="translate(-10, -2)">
+          <circle cx="0" cy="0" r="5.5" fill="#FFFFFF" stroke="${S}" stroke-width="2"/>
+          <circle cx="${wiggleEye}" cy="0" r="2.4" fill="#000000"/>
+        </g>
+        <!-- Ojo derecho -->
+        <g transform="translate(10, -2)">
+          <circle cx="0" cy="0" r="5.5" fill="#FFFFFF" stroke="${S}" stroke-width="2"/>
+          <circle cx="${-parseFloat(wiggleEye)}" cy="0" r="2.4" fill="#000000"/>
+        </g>
+
+        <!-- Luces LED de estado parpadeantes y botón encendido -->
+        <circle cx="0" cy="8" r="3" fill="${blink}" stroke="${S}" stroke-width="1"/>
+
+        <!-- Rótulo inferior INSTINTO SOCIAL -->
+        <rect x="-26" y="24" width="52" height="11" rx="3" fill="#D97706" stroke="${S}" stroke-width="2.5"/>
+        <text x="0" y="32" font-family="'Impact', 'Arial Black', sans-serif" font-size="6.2" font-weight="900" fill="#FFF" text-anchor="middle">INSTINTO SOCIAL</text>
+      </g>`;
+    },
+    tags: ["aspiradora", "robot", "ojitos", "mascota", "auto", "humanizacion", "vida_cotidiana"],
+  },
+
+  taza_cafe_espuma_sonriente: {
+    id: "taza_cafe_espuma_sonriente",
+    name: "Taza de Café con Sonrisa en la Espuma y Vapor",
+    family: "vida_cotidiana",
+    defaultPlacement: "both",
+    svg: `<rect x="-16" y="-12" width="32" height="26" rx="6" fill="#F8FAFC" stroke="${S}" stroke-width="4"/>`,
+    animatedSvg: (f: number) => {
+      const steamY = ((f * 1.5) % 25).toFixed(1);
+      const twinkle = (0.7 + Math.sin(f * 0.25) * 0.3).toFixed(2);
+      return `<g transform="scale(1.8)">
+        <!-- Asa lateral de la taza -->
+        <path d="M 16,-6 C 24,-6 24,10 16,10" fill="none" stroke="${S}" stroke-width="4" stroke-linecap="round"/>
+
+        <!-- Taza blanca de cerámica -->
+        <rect x="-18" y="-12" width="36" height="30" rx="6" fill="#F8FAFC" stroke="${S}" stroke-width="3.5"/>
+        <!-- Plato base -->
+        <ellipse cx="0" cy="20" rx="22" ry="5" fill="#E2E8F0" stroke="${S}" stroke-width="3"/>
+
+        <!-- Café oscuro visto desde ángulo alto -->
+        <ellipse cx="0" cy="-10" rx="16" ry="7" fill="#451A03" stroke="${S}" stroke-width="2"/>
+        <!-- Espuma cremosa de leche -->
+        <ellipse cx="0" cy="-10" rx="14" ry="5.5" fill="#FEF3C7"/>
+
+        <!-- Latte art: Dos ojos de café y sonrisa de espuma perfecta -->
+        <circle cx="-6" cy="-11" r="1.5" fill="#451A03"/>
+        <circle cx="6" cy="-11" r="1.5" fill="#451A03"/>
+        <path d="M -6,-9 Q 0,-6 6,-9" fill="none" stroke="#451A03" stroke-width="1.8" stroke-linecap="round"/>
+
+        <!-- Vapor aromático ascendente animado -->
+        <g transform="translate(0, -${steamY})" opacity="0.75">
+          <path d="M -5,-14 Q -8,-22 -3,-28" fill="none" stroke="#94A3B8" stroke-width="2" stroke-linecap="round"/>
+          <path d="M 5,-14 Q 8,-22 3,-28" fill="none" stroke="#94A3B8" stroke-width="2" stroke-linecap="round"/>
+        </g>
+
+        <!-- Destellos de café feliz -->
+        <polygon points="12,-18 14,-15 16,-18 14,-21" fill="#FDE047" opacity="${twinkle}"/>
+
+        <!-- Rótulo inferior EVOLUCIÓN EN TU CAFÉ -->
+        <rect x="-26" y="26" width="52" height="11" rx="3" fill="#B45309" stroke="${S}" stroke-width="2.5"/>
+        <text x="0" y="34.5" font-family="'Impact', 'Arial Black', sans-serif" font-size="6" font-weight="900" fill="#FFF" text-anchor="middle">EVOLUCIÓN EN TU CAFÉ</text>
+      </g>`;
+    },
+    tags: ["taza", "cafe", "espuma", "sonrisa", "latte", "brindis", "vida_cotidiana", "pareidolia"],
+  },
+
 };

@@ -76,7 +76,8 @@ function obtenerNombreVideo(customName) {
 function ejecutarTTS() {
   console.log("\n[AUDIO] 🎙️  Ejecutando scripts/generar_voz.py para sincronizar audios con el guion activo...");
   const pythonCmd = process.platform === "win32" ? "python" : "python3";
-  const res = spawnSync(pythonCmd, [path.resolve(__dirname, "generar_voz.py")], {
+  const scriptPath = path.resolve(__dirname, "generar_voz.py");
+  const res = spawnSync(pythonCmd, [process.platform === "win32" ? `"${scriptPath}"` : scriptPath], {
     stdio: "inherit",
     cwd: path.resolve(__dirname, ".."),
     shell: true,
@@ -135,7 +136,7 @@ function verificarCoherenciaAudios() {
       return;
     }
 
-    const REQUIRED_PIPELINE = "v3_sentence_tailcut";
+    const REQUIRED_PIPELINE = "v4_nw_precision_align";
     if (cacheEntry.pipelineVersion !== REQUIRED_PIPELINE) {
       console.warn(`\n[AUDIO] ⚠️  Audio de escena_${esc.id} fue procesado con pipeline antiguo (${cacheEntry.pipelineVersion || "legacy"}).`);
       console.warn(`        Regenerando automáticamente con pipeline moderno (${REQUIRED_PIPELINE})...`);

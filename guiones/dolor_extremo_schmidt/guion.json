@@ -1,0 +1,1566 @@
+{
+  "meta": {
+    "id": "dolor_extremo_schmidt",
+    "slug": "dolor_extremo_schmidt",
+    "temaResumen": "¿Por qué la picadura de la hormiga bala produce el dolor más desgarrador de la naturaleza? Escala Schmidt y poneratoxina",
+    "titulo": "El dolor más extremo del mundo: la hormiga bala",
+    "titulo_corto": "HORMIGA BALA DOLOR",
+    "gancho": "¿Sabías que existe un insecto cuya picadura se siente como si te atravesaran el cuerpo con un clavo al rojo vivo durante veinticuatro horas seguidas?",
+    "fuentes": [
+      "Justin O. Schmidt: The Sting of the Wild (Schmidt Pain Scale)",
+      "Journal of Chemical Ecology: Poneratoxin Neurotoxin Mechanism"
+    ],
+    "genero": "SCIENCE",
+    "duracionObjetivo": [
+      62,
+      110
+    ]
+  },
+  "escenas": [
+    {
+      "id": 1,
+      "texto": "¿Sabías que existe un insecto en la selva cuya picadura duele tanto que las víctimas sienten como si les hubieran disparado con un arma?",
+      "icono": "Bug",
+      "colorIcono": "#EF4444",
+      "tituloVisual": "PICADURA MORTAL",
+      "composicionVisual": "plano_general",
+      "escenario": "selva_tropical",
+      "layout": "narrativo",
+      "transicion": "zoom_in",
+      "efectosCamara": [
+        "drift"
+      ],
+      "sfx": "sfx/sfx_whoosh.wav",
+      "volumenSfx": 0.2,
+      "palabrasClave": [
+        "picadura duele tanto",
+        "disparado con un arma",
+        "selva"
+      ],
+      "personajes": [
+        {
+          "id": "explorador",
+          "posicion": {
+            "x": -160,
+            "y": 70
+          },
+          "escala": 1.05,
+          "orientacion": "derecha",
+          "prop": "bullet_ant",
+          "poseId": "explaining_pointing_up",
+          "expresion": "talking_enthusiastic",
+          "acciones": [
+            {
+              "tipo": "caminar_hacia",
+              "desdeX": -260,
+              "haciaX": -120
+            }
+          ],
+          "habla": true
+        }
+      ],
+      "duracionSegundos": 7.042,
+      "palabras": [
+        {
+          "palabra": "Sabías",
+          "inicioMs": 0,
+          "finMs": 460
+        },
+        {
+          "palabra": "que",
+          "inicioMs": 460,
+          "finMs": 620
+        },
+        {
+          "palabra": "existe",
+          "inicioMs": 620,
+          "finMs": 840
+        },
+        {
+          "palabra": "un",
+          "inicioMs": 840,
+          "finMs": 1080
+        },
+        {
+          "palabra": "insecto",
+          "inicioMs": 1080,
+          "finMs": 1600
+        },
+        {
+          "palabra": "en",
+          "inicioMs": 1600,
+          "finMs": 1660
+        },
+        {
+          "palabra": "la",
+          "inicioMs": 1660,
+          "finMs": 1740
+        },
+        {
+          "palabra": "selva",
+          "inicioMs": 1740,
+          "finMs": 2100
+        },
+        {
+          "palabra": "cuya",
+          "inicioMs": 2100,
+          "finMs": 2380
+        },
+        {
+          "palabra": "picadura",
+          "inicioMs": 2380,
+          "finMs": 2820
+        },
+        {
+          "palabra": "duele",
+          "inicioMs": 2820,
+          "finMs": 3420
+        },
+        {
+          "palabra": "tanto",
+          "inicioMs": 3420,
+          "finMs": 3560
+        },
+        {
+          "palabra": "que",
+          "inicioMs": 3560,
+          "finMs": 3700
+        },
+        {
+          "palabra": "las",
+          "inicioMs": 3700,
+          "finMs": 4120
+        },
+        {
+          "palabra": "víctimas",
+          "inicioMs": 4120,
+          "finMs": 4540
+        },
+        {
+          "palabra": "sienten",
+          "inicioMs": 4540,
+          "finMs": 4700
+        },
+        {
+          "palabra": "como",
+          "inicioMs": 4700,
+          "finMs": 4860
+        },
+        {
+          "palabra": "si",
+          "inicioMs": 4860,
+          "finMs": 4940
+        },
+        {
+          "palabra": "les",
+          "inicioMs": 4940,
+          "finMs": 5300
+        },
+        {
+          "palabra": "hubieran",
+          "inicioMs": 5300,
+          "finMs": 5780
+        },
+        {
+          "palabra": "disparado",
+          "inicioMs": 5780,
+          "finMs": 5960
+        },
+        {
+          "palabra": "con",
+          "inicioMs": 5960,
+          "finMs": 6100
+        },
+        {
+          "palabra": "un",
+          "inicioMs": 6100,
+          "finMs": 6440
+        },
+        {
+          "palabra": "arma",
+          "inicioMs": 6440,
+          "finMs": 6792
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "texto": "Se trata de la temible hormiga bala del Amazonas, el insecto con la mordedura y picadura más dolorosa de todo el reino animal.",
+      "icono": "Flame",
+      "colorIcono": "#DC2626",
+      "tituloVisual": "HORMIGA BALA",
+      "composicionVisual": "primer_plano",
+      "escenario": "selva_tropical",
+      "layout": "narrativo",
+      "transicion": "whip_right",
+      "efectosCamara": [
+        "shake",
+        "punch"
+      ],
+      "sfx": "sfx/sfx_dramatic_hit.wav",
+      "volumenSfx": 0.25,
+      "elementosNarrativos": [
+        {
+          "tipo": "danger_vignette"
+        }
+      ],
+      "palabrasClave": [
+        "hormiga bala",
+        "más dolorosa",
+        "Amazonas"
+      ],
+      "personajes": [
+        {
+          "id": "victima",
+          "posicion": {
+            "x": 0,
+            "y": 50
+          },
+          "escala": 1.15,
+          "orientacion": "derecha",
+          "poseId": "backing_away_scared",
+          "expresion": "shocked",
+          "acciones": [
+            {
+              "tipo": "sorpresa_y_retroceso"
+            }
+          ],
+          "habla": true
+        }
+      ],
+      "duracionSegundos": 5.89,
+      "palabras": [
+        {
+          "palabra": "Se",
+          "inicioMs": 0,
+          "finMs": 160
+        },
+        {
+          "palabra": "trata",
+          "inicioMs": 160,
+          "finMs": 420
+        },
+        {
+          "palabra": "de",
+          "inicioMs": 420,
+          "finMs": 560
+        },
+        {
+          "palabra": "la",
+          "inicioMs": 560,
+          "finMs": 640
+        },
+        {
+          "palabra": "temible",
+          "inicioMs": 640,
+          "finMs": 980
+        },
+        {
+          "palabra": "hormiga",
+          "inicioMs": 980,
+          "finMs": 1320
+        },
+        {
+          "palabra": "bala",
+          "inicioMs": 1320,
+          "finMs": 1560
+        },
+        {
+          "palabra": "del",
+          "inicioMs": 1560,
+          "finMs": 1620
+        },
+        {
+          "palabra": "Amazonas",
+          "inicioMs": 1620,
+          "finMs": 2220
+        },
+        {
+          "palabra": "el",
+          "inicioMs": 2360,
+          "finMs": 2460
+        },
+        {
+          "palabra": "insecto",
+          "inicioMs": 2460,
+          "finMs": 2900
+        },
+        {
+          "palabra": "con",
+          "inicioMs": 2900,
+          "finMs": 3000
+        },
+        {
+          "palabra": "la",
+          "inicioMs": 3000,
+          "finMs": 3100
+        },
+        {
+          "palabra": "mordedura",
+          "inicioMs": 3100,
+          "finMs": 3500
+        },
+        {
+          "palabra": "y",
+          "inicioMs": 3500,
+          "finMs": 3760
+        },
+        {
+          "palabra": "picadura",
+          "inicioMs": 3760,
+          "finMs": 3940
+        },
+        {
+          "palabra": "más",
+          "inicioMs": 3940,
+          "finMs": 4220
+        },
+        {
+          "palabra": "dolorosa",
+          "inicioMs": 4220,
+          "finMs": 4580
+        },
+        {
+          "palabra": "de",
+          "inicioMs": 4580,
+          "finMs": 4700
+        },
+        {
+          "palabra": "todo",
+          "inicioMs": 4700,
+          "finMs": 4840
+        },
+        {
+          "palabra": "el",
+          "inicioMs": 4840,
+          "finMs": 4960
+        },
+        {
+          "palabra": "reino",
+          "inicioMs": 4960,
+          "finMs": 5160
+        },
+        {
+          "palabra": "animal",
+          "inicioMs": 5160,
+          "finMs": 5400
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "texto": "El entomólogo Justin Schmidt fue picado por más de ochenta especies para crear el índice oficial del dolor por picaduras de insectos.",
+      "icono": "Activity",
+      "colorIcono": "#F59E0B",
+      "tituloVisual": "ÍNDICE SCHMIDT",
+      "composicionVisual": "plano_general",
+      "escenario": "laboratorio",
+      "layout": "narrativo",
+      "transicion": "whip_left",
+      "efectosCamara": [
+        "drift"
+      ],
+      "palabrasClave": [
+        "Justin Schmidt",
+        "ochenta especies",
+        "índice del dolor"
+      ],
+      "personajes": [
+        {
+          "id": "entomologo",
+          "posicion": {
+            "x": -160,
+            "y": 70
+          },
+          "escala": 1.05,
+          "orientacion": "derecha",
+          "prop": "magnifier",
+          "poseId": "investigating_magnifier",
+          "expresion": "analytical",
+          "habla": true
+        }
+      ],
+      "duracionSegundos": 7.306,
+      "palabras": [
+        {
+          "palabra": "El",
+          "inicioMs": 0,
+          "finMs": 200
+        },
+        {
+          "palabra": "entomólogo",
+          "inicioMs": 200,
+          "finMs": 680
+        },
+        {
+          "palabra": "Justin",
+          "inicioMs": 680,
+          "finMs": 1040
+        },
+        {
+          "palabra": "Schmidt",
+          "inicioMs": 1040,
+          "finMs": 1400
+        },
+        {
+          "palabra": "fue",
+          "inicioMs": 1400,
+          "finMs": 1640
+        },
+        {
+          "palabra": "picado",
+          "inicioMs": 1640,
+          "finMs": 1980
+        },
+        {
+          "palabra": "por",
+          "inicioMs": 1980,
+          "finMs": 2180
+        },
+        {
+          "palabra": "más",
+          "inicioMs": 2180,
+          "finMs": 2360
+        },
+        {
+          "palabra": "de",
+          "inicioMs": 2360,
+          "finMs": 2500
+        },
+        {
+          "palabra": "ochenta",
+          "inicioMs": 2500,
+          "finMs": 2860
+        },
+        {
+          "palabra": "especies",
+          "inicioMs": 2860,
+          "finMs": 3400
+        },
+        {
+          "palabra": "para",
+          "inicioMs": 3400,
+          "finMs": 3820
+        },
+        {
+          "palabra": "crear",
+          "inicioMs": 3820,
+          "finMs": 4100
+        },
+        {
+          "palabra": "el",
+          "inicioMs": 4100,
+          "finMs": 4300
+        },
+        {
+          "palabra": "índice",
+          "inicioMs": 4300,
+          "finMs": 4580
+        },
+        {
+          "palabra": "oficial",
+          "inicioMs": 4580,
+          "finMs": 5000
+        },
+        {
+          "palabra": "del",
+          "inicioMs": 5000,
+          "finMs": 5180
+        },
+        {
+          "palabra": "dolor",
+          "inicioMs": 5180,
+          "finMs": 5420
+        },
+        {
+          "palabra": "por",
+          "inicioMs": 5420,
+          "finMs": 5640
+        },
+        {
+          "palabra": "picaduras",
+          "inicioMs": 5640,
+          "finMs": 6120
+        },
+        {
+          "palabra": "de",
+          "inicioMs": 6120,
+          "finMs": 6260
+        },
+        {
+          "palabra": "insectos",
+          "inicioMs": 6260,
+          "finMs": 6820
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "texto": "La escala va del nivel uno como una abeja común, hasta el nivel cuatro plus, reservado exclusivamente para la hormiga bala.",
+      "icono": "Gauge",
+      "colorIcono": "#EF4444",
+      "tituloVisual": "NIVEL 4 MÁXIMO",
+      "composicionVisual": "plano_general",
+      "escenario": "laboratorio",
+      "layout": "narrativo",
+      "transicion": "zoom_in",
+      "efectosCamara": [
+        "drift"
+      ],
+      "palabrasClave": [
+        "nivel uno",
+        "cuatro plus",
+        "reservado exclusivamente"
+      ],
+      "personajes": [
+        {
+          "id": "entomologo",
+          "posicion": {
+            "x": -160,
+            "y": 70
+          },
+          "escala": 1.05,
+          "orientacion": "derecha",
+          "poseId": "explaining_both_hands",
+          "expresion": "eureka",
+          "habla": true
+        }
+      ],
+      "duracionSegundos": 7.162,
+      "palabras": [
+        {
+          "palabra": "La",
+          "inicioMs": 0,
+          "finMs": 200
+        },
+        {
+          "palabra": "escala",
+          "inicioMs": 200,
+          "finMs": 560
+        },
+        {
+          "palabra": "va",
+          "inicioMs": 560,
+          "finMs": 720
+        },
+        {
+          "palabra": "del",
+          "inicioMs": 720,
+          "finMs": 900
+        },
+        {
+          "palabra": "nivel",
+          "inicioMs": 900,
+          "finMs": 1160
+        },
+        {
+          "palabra": "uno",
+          "inicioMs": 1160,
+          "finMs": 1500
+        },
+        {
+          "palabra": "como",
+          "inicioMs": 1500,
+          "finMs": 1780
+        },
+        {
+          "palabra": "una",
+          "inicioMs": 1780,
+          "finMs": 2000
+        },
+        {
+          "palabra": "abeja",
+          "inicioMs": 2000,
+          "finMs": 2240
+        },
+        {
+          "palabra": "común",
+          "inicioMs": 2240,
+          "finMs": 2540
+        },
+        {
+          "palabra": "hasta",
+          "inicioMs": 2540,
+          "finMs": 2920
+        },
+        {
+          "palabra": "el",
+          "inicioMs": 2920,
+          "finMs": 3060
+        },
+        {
+          "palabra": "nivel",
+          "inicioMs": 3060,
+          "finMs": 3220
+        },
+        {
+          "palabra": "cuatro",
+          "inicioMs": 3220,
+          "finMs": 4080
+        },
+        {
+          "palabra": "plus",
+          "inicioMs": 4080,
+          "finMs": 4880
+        },
+        {
+          "palabra": "reservado",
+          "inicioMs": 4880,
+          "finMs": 5520
+        },
+        {
+          "palabra": "exclusivamente",
+          "inicioMs": 5520,
+          "finMs": 5840
+        },
+        {
+          "palabra": "para",
+          "inicioMs": 5840,
+          "finMs": 5980
+        },
+        {
+          "palabra": "la",
+          "inicioMs": 5980,
+          "finMs": 6300
+        },
+        {
+          "palabra": "hormiga",
+          "inicioMs": 6300,
+          "finMs": 6680
+        },
+        {
+          "palabra": "bala",
+          "inicioMs": 6680,
+          "finMs": 6912
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "texto": "Schmidt describió su dolor como caminar descalzo sobre carbones ardientes con un clavo oxidado de siete centímetros clavado en el talón.",
+      "icono": "AlertTriangle",
+      "colorIcono": "#F97316",
+      "tituloVisual": "DOLOR AGÓNICO",
+      "composicionVisual": "cifras_concepto",
+      "escenario": "selva_tropical",
+      "layout": "narrativo",
+      "transicion": "corte",
+      "efectosCamara": [
+        "punch",
+        "drift"
+      ],
+      "palabrasClave": [
+        "carbones ardientes",
+        "clavo oxidado",
+        "siete centímetros"
+      ],
+      "personajes": [
+        {
+          "id": "victima",
+          "posicion": {
+            "x": -150,
+            "y": 70
+          },
+          "escala": 1.05,
+          "orientacion": "derecha",
+          "poseId": "trembling_fear",
+          "expresion": "shocked",
+          "habla": true
+        }
+      ],
+      "duracionSegundos": 7.402,
+      "palabras": [
+        {
+          "palabra": "Schmidt",
+          "inicioMs": 0,
+          "finMs": 300
+        },
+        {
+          "palabra": "describió",
+          "inicioMs": 300,
+          "finMs": 820
+        },
+        {
+          "palabra": "su",
+          "inicioMs": 820,
+          "finMs": 940
+        },
+        {
+          "palabra": "dolor",
+          "inicioMs": 940,
+          "finMs": 1220
+        },
+        {
+          "palabra": "como",
+          "inicioMs": 1220,
+          "finMs": 1460
+        },
+        {
+          "palabra": "caminar",
+          "inicioMs": 1460,
+          "finMs": 1860
+        },
+        {
+          "palabra": "descalzo",
+          "inicioMs": 1860,
+          "finMs": 2400
+        },
+        {
+          "palabra": "sobre",
+          "inicioMs": 2400,
+          "finMs": 2600
+        },
+        {
+          "palabra": "carbones",
+          "inicioMs": 2600,
+          "finMs": 3080
+        },
+        {
+          "palabra": "ardientes",
+          "inicioMs": 3080,
+          "finMs": 3560
+        },
+        {
+          "palabra": "con",
+          "inicioMs": 3560,
+          "finMs": 3760
+        },
+        {
+          "palabra": "un",
+          "inicioMs": 3760,
+          "finMs": 3880
+        },
+        {
+          "palabra": "clavo",
+          "inicioMs": 3880,
+          "finMs": 4180
+        },
+        {
+          "palabra": "oxidado",
+          "inicioMs": 4180,
+          "finMs": 4760
+        },
+        {
+          "palabra": "de",
+          "inicioMs": 4760,
+          "finMs": 4900
+        },
+        {
+          "palabra": "siete",
+          "inicioMs": 4900,
+          "finMs": 5140
+        },
+        {
+          "palabra": "centímetros",
+          "inicioMs": 5140,
+          "finMs": 5740
+        },
+        {
+          "palabra": "clavado",
+          "inicioMs": 5740,
+          "finMs": 6200
+        },
+        {
+          "palabra": "en",
+          "inicioMs": 6200,
+          "finMs": 6300
+        },
+        {
+          "palabra": "el",
+          "inicioMs": 6300,
+          "finMs": 6500
+        },
+        {
+          "palabra": "talón",
+          "inicioMs": 6640,
+          "finMs": 6940
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "texto": "El responsable de esta agonía no es el veneno convencional, sino una pequeña cadena de péptidos llamada poneratoxina.",
+      "icono": "Atom",
+      "colorIcono": "#8B5CF6",
+      "tituloVisual": "PONERATOXINA",
+      "composicionVisual": "plano_general",
+      "escenario": "laboratorio",
+      "layout": "narrativo",
+      "transicion": "whip_right",
+      "efectosCamara": [
+        "drift"
+      ],
+      "palabrasClave": [
+        "cadena de péptidos",
+        "poneratoxina",
+        "agonía"
+      ],
+      "personajes": [
+        {
+          "id": "quimico",
+          "posicion": {
+            "x": -160,
+            "y": 70
+          },
+          "escala": 1.05,
+          "orientacion": "derecha",
+          "prop": "atom",
+          "poseId": "presenting_object",
+          "expresion": "analytical",
+          "habla": true
+        }
+      ],
+      "duracionSegundos": 6.562,
+      "palabras": [
+        {
+          "palabra": "El",
+          "inicioMs": 0,
+          "finMs": 200
+        },
+        {
+          "palabra": "responsable",
+          "inicioMs": 200,
+          "finMs": 800
+        },
+        {
+          "palabra": "de",
+          "inicioMs": 800,
+          "finMs": 920
+        },
+        {
+          "palabra": "esta",
+          "inicioMs": 920,
+          "finMs": 1120
+        },
+        {
+          "palabra": "agonía",
+          "inicioMs": 1120,
+          "finMs": 1460
+        },
+        {
+          "palabra": "no",
+          "inicioMs": 1460,
+          "finMs": 1620
+        },
+        {
+          "palabra": "es",
+          "inicioMs": 1620,
+          "finMs": 1740
+        },
+        {
+          "palabra": "el",
+          "inicioMs": 1740,
+          "finMs": 1860
+        },
+        {
+          "palabra": "veneno",
+          "inicioMs": 1860,
+          "finMs": 2140
+        },
+        {
+          "palabra": "convencional",
+          "inicioMs": 2140,
+          "finMs": 2800
+        },
+        {
+          "palabra": "sino",
+          "inicioMs": 2920,
+          "finMs": 3000
+        },
+        {
+          "palabra": "una",
+          "inicioMs": 3000,
+          "finMs": 3220
+        },
+        {
+          "palabra": "pequeña",
+          "inicioMs": 3220,
+          "finMs": 3480
+        },
+        {
+          "palabra": "cadena",
+          "inicioMs": 3480,
+          "finMs": 3920
+        },
+        {
+          "palabra": "de",
+          "inicioMs": 3920,
+          "finMs": 4080
+        },
+        {
+          "palabra": "péptidos",
+          "inicioMs": 4080,
+          "finMs": 4640
+        },
+        {
+          "palabra": "llamada",
+          "inicioMs": 4640,
+          "finMs": 5200
+        },
+        {
+          "palabra": "poneratoxina",
+          "inicioMs": 5200,
+          "finMs": 6100
+        }
+      ]
+    },
+    {
+      "id": 7,
+      "texto": "La poneratoxina ataca directamente los canales de sodio de las neuronas sensoriales, bloqueándolos en posición permanentemente abierta.",
+      "icono": "Zap",
+      "colorIcono": "#FACC15",
+      "tituloVisual": "CANALES DE SODIO",
+      "composicionVisual": "primer_plano",
+      "escenario": "laboratorio",
+      "layout": "narrativo",
+      "transicion": "zoom_in",
+      "efectosCamara": [
+        "drift"
+      ],
+      "palabrasClave": [
+        "canales de sodio",
+        "neuronas sensoriales",
+        "permanentemente abierta"
+      ],
+      "personajes": [
+        {
+          "id": "quimico",
+          "posicion": {
+            "x": 0,
+            "y": 50
+          },
+          "escala": 1.15,
+          "orientacion": "derecha",
+          "poseId": "explaining_pointing_up",
+          "expresion": "talking_enthusiastic",
+          "habla": true
+        }
+      ],
+      "duracionSegundos": 7.042,
+      "palabras": [
+        {
+          "palabra": "La",
+          "inicioMs": 0,
+          "finMs": 180
+        },
+        {
+          "palabra": "poneratoxina",
+          "inicioMs": 180,
+          "finMs": 860
+        },
+        {
+          "palabra": "ataca",
+          "inicioMs": 860,
+          "finMs": 1180
+        },
+        {
+          "palabra": "directamente",
+          "inicioMs": 1180,
+          "finMs": 1420
+        },
+        {
+          "palabra": "los",
+          "inicioMs": 1420,
+          "finMs": 1980
+        },
+        {
+          "palabra": "canales",
+          "inicioMs": 1980,
+          "finMs": 2320
+        },
+        {
+          "palabra": "de",
+          "inicioMs": 2320,
+          "finMs": 2440
+        },
+        {
+          "palabra": "sodio",
+          "inicioMs": 2440,
+          "finMs": 2740
+        },
+        {
+          "palabra": "de",
+          "inicioMs": 2740,
+          "finMs": 2840
+        },
+        {
+          "palabra": "las",
+          "inicioMs": 2840,
+          "finMs": 2980
+        },
+        {
+          "palabra": "neuronas",
+          "inicioMs": 2980,
+          "finMs": 3380
+        },
+        {
+          "palabra": "sensoriales",
+          "inicioMs": 3380,
+          "finMs": 4060
+        },
+        {
+          "palabra": "bloqueándolos",
+          "inicioMs": 4300,
+          "finMs": 4880
+        },
+        {
+          "palabra": "en",
+          "inicioMs": 4880,
+          "finMs": 4980
+        },
+        {
+          "palabra": "posición",
+          "inicioMs": 4980,
+          "finMs": 5360
+        },
+        {
+          "palabra": "permanentemente",
+          "inicioMs": 5360,
+          "finMs": 6100
+        },
+        {
+          "palabra": "abierta",
+          "inicioMs": 6100,
+          "finMs": 6580
+        }
+      ]
+    },
+    {
+      "id": 8,
+      "texto": "Tus nervios envían señales de dolor catastrófico al cerebro de forma continua y a máxima potencia sin poder apagarse.",
+      "icono": "Brain",
+      "colorIcono": "#EC4899",
+      "tituloVisual": "SOBRECARGA NERVIOSA",
+      "composicionVisual": "plano_general",
+      "escenario": "laboratorio",
+      "layout": "narrativo",
+      "transicion": "corte",
+      "efectosCamara": [
+        "drift"
+      ],
+      "palabrasClave": [
+        "dolor catastrófico",
+        "forma continua",
+        "sin poder apagarse"
+      ],
+      "personajes": [
+        {
+          "id": "quimico",
+          "posicion": {
+            "x": -150,
+            "y": 70
+          },
+          "escala": 1.05,
+          "orientacion": "derecha",
+          "prop": "brain",
+          "poseId": "backing_away_scared",
+          "expresion": "shocked",
+          "habla": true
+        }
+      ],
+      "duracionSegundos": 6.178,
+      "palabras": [
+        {
+          "palabra": "Tus",
+          "inicioMs": 0,
+          "finMs": 220
+        },
+        {
+          "palabra": "nervios",
+          "inicioMs": 220,
+          "finMs": 540
+        },
+        {
+          "palabra": "envían",
+          "inicioMs": 540,
+          "finMs": 880
+        },
+        {
+          "palabra": "señales",
+          "inicioMs": 880,
+          "finMs": 1280
+        },
+        {
+          "palabra": "de",
+          "inicioMs": 1280,
+          "finMs": 1420
+        },
+        {
+          "palabra": "dolor",
+          "inicioMs": 1420,
+          "finMs": 1620
+        },
+        {
+          "palabra": "catastrófico",
+          "inicioMs": 1620,
+          "finMs": 2360
+        },
+        {
+          "palabra": "al",
+          "inicioMs": 2360,
+          "finMs": 2440
+        },
+        {
+          "palabra": "cerebro",
+          "inicioMs": 2440,
+          "finMs": 2740
+        },
+        {
+          "palabra": "de",
+          "inicioMs": 2740,
+          "finMs": 2860
+        },
+        {
+          "palabra": "forma",
+          "inicioMs": 2860,
+          "finMs": 3120
+        },
+        {
+          "palabra": "continua",
+          "inicioMs": 3120,
+          "finMs": 3600
+        },
+        {
+          "palabra": "y",
+          "inicioMs": 3600,
+          "finMs": 3980
+        },
+        {
+          "palabra": "a",
+          "inicioMs": 3980,
+          "finMs": 4040
+        },
+        {
+          "palabra": "máxima",
+          "inicioMs": 4040,
+          "finMs": 4420
+        },
+        {
+          "palabra": "potencia",
+          "inicioMs": 4420,
+          "finMs": 4780
+        },
+        {
+          "palabra": "sin",
+          "inicioMs": 4780,
+          "finMs": 4960
+        },
+        {
+          "palabra": "poder",
+          "inicioMs": 4960,
+          "finMs": 5200
+        },
+        {
+          "palabra": "apagarse",
+          "inicioMs": 5200,
+          "finMs": 5680
+        }
+      ]
+    },
+    {
+      "id": 9,
+      "texto": "A diferencia de una avispa cuyo dolor pasa en minutos, la poneratoxina resiste en el cuerpo provocando oleadas de dolor por veinticuatro horas.",
+      "icono": "Clock",
+      "colorIcono": "#38BDF8",
+      "tituloVisual": "24 HORAS DE AGONÍA",
+      "composicionVisual": "plano_general",
+      "escenario": "selva_tropical",
+      "layout": "narrativo",
+      "transicion": "whip_left",
+      "efectosCamara": [
+        "drift"
+      ],
+      "palabrasClave": [
+        "poneratoxina resiste",
+        "oleadas de dolor",
+        "veinticuatro horas"
+      ],
+      "personajes": [
+        {
+          "id": "explorador",
+          "posicion": {
+            "x": -160,
+            "y": 70
+          },
+          "escala": 1.05,
+          "orientacion": "derecha",
+          "prop": "clock",
+          "poseId": "worried_clock",
+          "expresion": "worried",
+          "habla": true
+        }
+      ],
+      "duracionSegundos": 7.474,
+      "palabras": [
+        {
+          "palabra": "A",
+          "inicioMs": 0,
+          "finMs": 180
+        },
+        {
+          "palabra": "diferencia",
+          "inicioMs": 180,
+          "finMs": 540
+        },
+        {
+          "palabra": "de",
+          "inicioMs": 540,
+          "finMs": 780
+        },
+        {
+          "palabra": "una",
+          "inicioMs": 780,
+          "finMs": 940
+        },
+        {
+          "palabra": "avispa",
+          "inicioMs": 940,
+          "finMs": 1320
+        },
+        {
+          "palabra": "cuyo",
+          "inicioMs": 1320,
+          "finMs": 1600
+        },
+        {
+          "palabra": "dolor",
+          "inicioMs": 1600,
+          "finMs": 1800
+        },
+        {
+          "palabra": "pasa",
+          "inicioMs": 1800,
+          "finMs": 2080
+        },
+        {
+          "palabra": "en",
+          "inicioMs": 2080,
+          "finMs": 2200
+        },
+        {
+          "palabra": "minutos",
+          "inicioMs": 2200,
+          "finMs": 2560
+        },
+        {
+          "palabra": "la",
+          "inicioMs": 2720,
+          "finMs": 2800
+        },
+        {
+          "palabra": "poneratoxina",
+          "inicioMs": 2800,
+          "finMs": 3200
+        },
+        {
+          "palabra": "resiste",
+          "inicioMs": 3200,
+          "finMs": 4120
+        },
+        {
+          "palabra": "en",
+          "inicioMs": 4120,
+          "finMs": 4240
+        },
+        {
+          "palabra": "el",
+          "inicioMs": 4240,
+          "finMs": 4500
+        },
+        {
+          "palabra": "cuerpo",
+          "inicioMs": 4500,
+          "finMs": 5120
+        },
+        {
+          "palabra": "provocando",
+          "inicioMs": 5120,
+          "finMs": 5540
+        },
+        {
+          "palabra": "oleadas",
+          "inicioMs": 5540,
+          "finMs": 5620
+        },
+        {
+          "palabra": "de",
+          "inicioMs": 5620,
+          "finMs": 5880
+        },
+        {
+          "palabra": "dolor",
+          "inicioMs": 5880,
+          "finMs": 6120
+        },
+        {
+          "palabra": "por",
+          "inicioMs": 6120,
+          "finMs": 6560
+        },
+        {
+          "palabra": "veinticuatro",
+          "inicioMs": 6560,
+          "finMs": 6980
+        },
+        {
+          "palabra": "horas",
+          "inicioMs": 6980,
+          "finMs": 7224
+        }
+      ]
+    },
+    {
+      "id": 10,
+      "texto": "Las víctimas sufren temblores incontrolables, sudor frío, taquicardia y parálisis temporal del miembro afectado.",
+      "icono": "ShieldAlert",
+      "colorIcono": "#EF4444",
+      "tituloVisual": "ESPASMOS TOTALES",
+      "composicionVisual": "plano_general",
+      "escenario": "selva_tropical",
+      "layout": "narrativo",
+      "transicion": "zoom_in",
+      "efectosCamara": [
+        "drift"
+      ],
+      "palabrasClave": [
+        "temblores incontrolables",
+        "sudor frío",
+        "parálisis temporal"
+      ],
+      "personajes": [
+        {
+          "id": "victima",
+          "posicion": {
+            "x": -150,
+            "y": 70
+          },
+          "escala": 1.05,
+          "orientacion": "derecha",
+          "poseId": "trembling_fear",
+          "expresion": "scared",
+          "habla": true
+        }
+      ],
+      "duracionSegundos": 7.114,
+      "palabras": [
+        {
+          "palabra": "Las",
+          "inicioMs": 0,
+          "finMs": 280
+        },
+        {
+          "palabra": "víctimas",
+          "inicioMs": 280,
+          "finMs": 760
+        },
+        {
+          "palabra": "sufren",
+          "inicioMs": 760,
+          "finMs": 1140
+        },
+        {
+          "palabra": "temblores",
+          "inicioMs": 1140,
+          "finMs": 1600
+        },
+        {
+          "palabra": "incontrolables",
+          "inicioMs": 1600,
+          "finMs": 2500
+        },
+        {
+          "palabra": "sudor",
+          "inicioMs": 2700,
+          "finMs": 3100
+        },
+        {
+          "palabra": "frío",
+          "inicioMs": 3100,
+          "finMs": 3500
+        },
+        {
+          "palabra": "taquicardia",
+          "inicioMs": 3760,
+          "finMs": 4400
+        },
+        {
+          "palabra": "y",
+          "inicioMs": 4400,
+          "finMs": 4580
+        },
+        {
+          "palabra": "parálisis",
+          "inicioMs": 4580,
+          "finMs": 5020
+        },
+        {
+          "palabra": "temporal",
+          "inicioMs": 5020,
+          "finMs": 5460
+        },
+        {
+          "palabra": "del",
+          "inicioMs": 5460,
+          "finMs": 5740
+        },
+        {
+          "palabra": "miembro",
+          "inicioMs": 5740,
+          "finMs": 6080
+        },
+        {
+          "palabra": "afectado",
+          "inicioMs": 6080,
+          "finMs": 6620
+        }
+      ]
+    },
+    {
+      "id": 11,
+      "texto": "La hormiga bala no busca matarte, sino recordarte que en la selva, la química defensiva puede ser más aterradora que cualquier depredador.",
+      "icono": "ShieldCheck",
+      "colorIcono": "#10B981",
+      "tituloVisual": "QUÍMICA SALVAJE",
+      "composicionVisual": "plano_general",
+      "escenario": "selva_tropical",
+      "layout": "narrativo",
+      "transicion": "zoom_in",
+      "efectosCamara": [
+        "drift"
+      ],
+      "palabrasClave": [
+        "química defensiva",
+        "más aterradora",
+        "depredador"
+      ],
+      "personajes": [
+        {
+          "id": "explorador",
+          "posicion": {
+            "x": 0,
+            "y": 50
+          },
+          "escala": 1.15,
+          "orientacion": "derecha",
+          "prop": "trophy",
+          "poseId": "standing_confident",
+          "expresion": "proud",
+          "habla": true
+        }
+      ],
+      "duracionSegundos": 7.498,
+      "palabras": [
+        {
+          "palabra": "La",
+          "inicioMs": 0,
+          "finMs": 200
+        },
+        {
+          "palabra": "hormiga",
+          "inicioMs": 200,
+          "finMs": 600
+        },
+        {
+          "palabra": "bala",
+          "inicioMs": 600,
+          "finMs": 880
+        },
+        {
+          "palabra": "no",
+          "inicioMs": 880,
+          "finMs": 1000
+        },
+        {
+          "palabra": "busca",
+          "inicioMs": 1000,
+          "finMs": 1280
+        },
+        {
+          "palabra": "matarte",
+          "inicioMs": 1280,
+          "finMs": 1800
+        },
+        {
+          "palabra": "sino",
+          "inicioMs": 1920,
+          "finMs": 2040
+        },
+        {
+          "palabra": "recordarte",
+          "inicioMs": 2040,
+          "finMs": 2700
+        },
+        {
+          "palabra": "que",
+          "inicioMs": 2700,
+          "finMs": 2900
+        },
+        {
+          "palabra": "en",
+          "inicioMs": 2900,
+          "finMs": 3000
+        },
+        {
+          "palabra": "la",
+          "inicioMs": 3000,
+          "finMs": 3100
+        },
+        {
+          "palabra": "selva",
+          "inicioMs": 3100,
+          "finMs": 3500
+        },
+        {
+          "palabra": "la",
+          "inicioMs": 3660,
+          "finMs": 3760
+        },
+        {
+          "palabra": "química",
+          "inicioMs": 3760,
+          "finMs": 4100
+        },
+        {
+          "palabra": "defensiva",
+          "inicioMs": 4100,
+          "finMs": 4640
+        },
+        {
+          "palabra": "puede",
+          "inicioMs": 4640,
+          "finMs": 4840
+        },
+        {
+          "palabra": "ser",
+          "inicioMs": 4840,
+          "finMs": 5080
+        },
+        {
+          "palabra": "más",
+          "inicioMs": 5080,
+          "finMs": 5280
+        },
+        {
+          "palabra": "aterradora",
+          "inicioMs": 5280,
+          "finMs": 5840
+        },
+        {
+          "palabra": "que",
+          "inicioMs": 5840,
+          "finMs": 6040
+        },
+        {
+          "palabra": "cualquier",
+          "inicioMs": 6040,
+          "finMs": 6380
+        },
+        {
+          "palabra": "depredador",
+          "inicioMs": 6380,
+          "finMs": 7000
+        }
+      ]
+    }
+  ]
+}

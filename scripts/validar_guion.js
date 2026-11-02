@@ -119,6 +119,10 @@ function primeraPose(e) {
 /** Lint de ritmo: avisos, nunca bloquea. */
 function lintVisual(escenas) {
   escenas.forEach((e, i) => {
+    const matchCifra = (e.texto || "").match(/\b\d+(?:[.,]\d+)?\b/g);
+    if (matchCifra) {
+      warn(`Escena ${e.id}: contiene cifras en dígitos (${matchCifra.join(", ")}) en el texto narrado; escribe los números con palabras o ejecuta npm run tts para normalizarlos.`);
+    }
     const efectos = e.efectosCamara || [];
     if ((e.duracionSegundos ?? 0) > 6 && !efectos.some((x) => x === "punch" || x === "shake")) {
       warn(`Escena ${e.id}: dura ${e.duracionSegundos.toFixed(1)} s sin cambio de cámara (añade punch/shake o divide la escena)`);

@@ -1,0 +1,1708 @@
+{
+  "meta": {
+    "id": "idioma_sin_numeros_piraha",
+    "slug": "idioma_sin_numeros_piraha",
+    "temaResumen": "El idioma que borró los números (¿Tu lengua limita tu cerebro?)",
+    "duracionObjetivo": [
+      62,
+      78
+    ],
+    "titulo": "El idioma que borró los números: ¿Tu lengua limita tu cerebro?",
+    "titulo_corto": "El idioma sin números",
+    "gancho": "¿Por qué hay culturas enteras que no pueden contar más allá de tres... no por falta de inteligencia, sino porque su idioma jamás inventó las palabras para los números?",
+    "fuentes": [
+      "Daniel Everett (2005) - Cultural Constraints on Grammar and Cognition in Pirahã (Current Anthropology)",
+      "Peter Gordon (2004) - Numerical Cognition Without Words: Evidence from Amazonia (Science)",
+      "Stanislas Dehaene (1997) - The Number Sense: How the Mind Creates Mathematics"
+    ],
+    "genero": "Lingüística y Neurociencia Cognitiva",
+    "playlist": "Misterios del Lenguaje y la Mente"
+  },
+  "escenas": [
+    {
+      "id": 1,
+      "texto": "Existen culturas en el mundo cuyos idiomas no tienen números mayores a tres... y su mente procesa la realidad matemática de otra forma. ¡El conteo no es universal!",
+      "icono": "Hash",
+      "colorIcono": "#EF4444",
+      "tituloVisual": "SIN NÚMEROS",
+      "composicionVisual": "plano_general",
+      "escenario": "estudio_conteo_anumerico",
+      "layout": "narrativo",
+      "transicion": "zoom_in",
+      "efectosCamara": [
+        "punch",
+        "drift"
+      ],
+      "sfx": "sfx/sfx_conteo_clic_glitch_estatica.wav",
+      "volumenSfx": 0.25,
+      "palabrasClave": [
+        "CULTURAS EN EL MUNDO",
+        "NO TIENEN NÚMEROS",
+        "NO ES UNIVERSAL"
+      ],
+      "personajes": [
+        {
+          "id": "stickman_contador",
+          "nombre": "Stickman Contador",
+          "posicion": {
+            "x": -160,
+            "y": 70
+          },
+          "escala": 1.0,
+          "orientacion": "derecha",
+          "habla": true,
+          "capaZ": 10,
+          "acciones": [
+            {
+              "tipo": "personalizada",
+              "pasos": [
+                {
+                  "inicioProgreso": 0,
+                  "finProgreso": 0.35,
+                  "poseId": "pointing_right",
+                  "expresion": "neutral",
+                  "posicion": {
+                    "x": -160,
+                    "y": 70
+                  },
+                  "curva": "suave",
+                  "procedural": "caminar"
+                },
+                {
+                  "inicioProgreso": 0.35,
+                  "finProgreso": 0.7,
+                  "poseId": "scratching_head",
+                  "expresion": "confused",
+                  "posicion": {
+                    "x": -100,
+                    "y": 70
+                  },
+                  "curva": "suave",
+                  "procedural": "estatico"
+                },
+                {
+                  "inicioProgreso": 0.7,
+                  "finProgreso": 1.0,
+                  "poseId": "surprised_hands_up",
+                  "expresion": "shocked",
+                  "posicion": {
+                    "x": -40,
+                    "y": 70
+                  },
+                  "curva": "impacto",
+                  "procedural": "recoil"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "objetos": [
+        {
+          "id": "obj_numeros_glitch",
+          "propId": "numeros_flotantes_glitch",
+          "posicion": {
+            "x": 240,
+            "y": 40
+          },
+          "escala": 1.3,
+          "animacion": "pulso"
+        }
+      ],
+      "duracionSegundos": 9.01,
+      "palabras": [
+        {
+          "palabra": "Existen",
+          "inicioMs": 0,
+          "finMs": 520
+        },
+        {
+          "palabra": "culturas",
+          "inicioMs": 520,
+          "finMs": 1060
+        },
+        {
+          "palabra": "en",
+          "inicioMs": 1060,
+          "finMs": 1220
+        },
+        {
+          "palabra": "el",
+          "inicioMs": 1220,
+          "finMs": 1340
+        },
+        {
+          "palabra": "mundo",
+          "inicioMs": 1340,
+          "finMs": 1640
+        },
+        {
+          "palabra": "cuyos",
+          "inicioMs": 1800,
+          "finMs": 2060
+        },
+        {
+          "palabra": "idiomas",
+          "inicioMs": 2060,
+          "finMs": 2480
+        },
+        {
+          "palabra": "no",
+          "inicioMs": 2480,
+          "finMs": 2660
+        },
+        {
+          "palabra": "tienen",
+          "inicioMs": 2660,
+          "finMs": 2920
+        },
+        {
+          "palabra": "números",
+          "inicioMs": 2920,
+          "finMs": 3220
+        },
+        {
+          "palabra": "mayores",
+          "inicioMs": 3220,
+          "finMs": 3680
+        },
+        {
+          "palabra": "a",
+          "inicioMs": 3680,
+          "finMs": 3820
+        },
+        {
+          "palabra": "tres",
+          "inicioMs": 3820,
+          "finMs": 4040
+        },
+        {
+          "palabra": "y",
+          "inicioMs": 4040,
+          "finMs": 4420
+        },
+        {
+          "palabra": "su",
+          "inicioMs": 4420,
+          "finMs": 4560
+        },
+        {
+          "palabra": "mente",
+          "inicioMs": 4560,
+          "finMs": 4780
+        },
+        {
+          "palabra": "procesa",
+          "inicioMs": 4780,
+          "finMs": 5360
+        },
+        {
+          "palabra": "la",
+          "inicioMs": 5360,
+          "finMs": 5460
+        },
+        {
+          "palabra": "realidad",
+          "inicioMs": 5460,
+          "finMs": 5780
+        },
+        {
+          "palabra": "matemática",
+          "inicioMs": 5780,
+          "finMs": 6440
+        },
+        {
+          "palabra": "de",
+          "inicioMs": 6440,
+          "finMs": 6660
+        },
+        {
+          "palabra": "otra",
+          "inicioMs": 6660,
+          "finMs": 6860
+        },
+        {
+          "palabra": "forma",
+          "inicioMs": 6860,
+          "finMs": 7300
+        },
+        {
+          "palabra": "El",
+          "inicioMs": 7480,
+          "finMs": 7580
+        },
+        {
+          "palabra": "conteo",
+          "inicioMs": 7580,
+          "finMs": 7980
+        },
+        {
+          "palabra": "no",
+          "inicioMs": 7980,
+          "finMs": 8080
+        },
+        {
+          "palabra": "es",
+          "inicioMs": 8080,
+          "finMs": 8180
+        },
+        {
+          "palabra": "universal",
+          "inicioMs": 8180,
+          "finMs": 8680
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "texto": "Ocurre con los Pirahã en el Amazonas. En su vocabulario no existe el cuatro, ni el diez, ni el mil: solo usan nociones relativas como «pocos» o «muchos».",
+      "icono": "Compass",
+      "colorIcono": "#22C55E",
+      "tituloVisual": "CASO PIRAHÃ",
+      "composicionVisual": "plano_general",
+      "escenario": "ribera_amazonica_piraha",
+      "layout": "narrativo",
+      "transicion": "whip_right",
+      "efectosCamara": [
+        "punch",
+        "drift"
+      ],
+      "sfx": "sfx/sfx_rio_selva_peces_apunte.wav",
+      "volumenSfx": 0.22,
+      "palabrasClave": [
+        "LOS PIRAHÃ",
+        "EN EL AMAZONAS",
+        "POCOS O MUCHOS"
+      ],
+      "personajes": [
+        {
+          "id": "antropologo_piraha",
+          "nombre": "Antropólogo Pirahã",
+          "posicion": {
+            "x": -220,
+            "y": 80
+          },
+          "escala": 1.0,
+          "orientacion": "derecha",
+          "habla": true,
+          "capaZ": 10,
+          "prop": "libreta_antropologo_campo",
+          "acciones": [
+            {
+              "tipo": "personalizada",
+              "pasos": [
+                {
+                  "inicioProgreso": 0,
+                  "finProgreso": 0.35,
+                  "poseId": "crouching",
+                  "expresion": "analytical",
+                  "posicion": {
+                    "x": -220,
+                    "y": 80
+                  },
+                  "curva": "suave",
+                  "procedural": "estatico"
+                },
+                {
+                  "inicioProgreso": 0.35,
+                  "finProgreso": 0.7,
+                  "poseId": "comparing_two_objects",
+                  "expresion": "thinking",
+                  "posicion": {
+                    "x": -120,
+                    "y": 70
+                  },
+                  "curva": "suave",
+                  "procedural": "estatico"
+                },
+                {
+                  "inicioProgreso": 0.7,
+                  "finProgreso": 1.0,
+                  "poseId": "nodding_yes",
+                  "expresion": "eureka",
+                  "posicion": {
+                    "x": -20,
+                    "y": 70
+                  },
+                  "curva": "suave",
+                  "procedural": "estatico"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "objetos": [
+        {
+          "id": "obj_canasta_peces",
+          "propId": "canasta_peces_piraha",
+          "posicion": {
+            "x": 260,
+            "y": 50
+          },
+          "escala": 1.35,
+          "animacion": "flotar"
+        }
+      ],
+      "duracionSegundos": 8.482,
+      "palabras": [
+        {
+          "palabra": "Ocurre",
+          "inicioMs": 0,
+          "finMs": 540
+        },
+        {
+          "palabra": "con",
+          "inicioMs": 540,
+          "finMs": 700
+        },
+        {
+          "palabra": "los",
+          "inicioMs": 700,
+          "finMs": 840
+        },
+        {
+          "palabra": "Pirahã",
+          "inicioMs": 840,
+          "finMs": 1340
+        },
+        {
+          "palabra": "en",
+          "inicioMs": 1340,
+          "finMs": 1540
+        },
+        {
+          "palabra": "el",
+          "inicioMs": 1540,
+          "finMs": 1680
+        },
+        {
+          "palabra": "Amazonas",
+          "inicioMs": 1680,
+          "finMs": 2400
+        },
+        {
+          "palabra": "En",
+          "inicioMs": 2600,
+          "finMs": 2720
+        },
+        {
+          "palabra": "su",
+          "inicioMs": 2720,
+          "finMs": 2860
+        },
+        {
+          "palabra": "vocabulario",
+          "inicioMs": 2860,
+          "finMs": 3500
+        },
+        {
+          "palabra": "no",
+          "inicioMs": 3500,
+          "finMs": 3620
+        },
+        {
+          "palabra": "existe",
+          "inicioMs": 3620,
+          "finMs": 3860
+        },
+        {
+          "palabra": "el",
+          "inicioMs": 3860,
+          "finMs": 4120
+        },
+        {
+          "palabra": "cuatro",
+          "inicioMs": 4120,
+          "finMs": 4340
+        },
+        {
+          "palabra": "ni",
+          "inicioMs": 4340,
+          "finMs": 4620
+        },
+        {
+          "palabra": "el",
+          "inicioMs": 4620,
+          "finMs": 4720
+        },
+        {
+          "palabra": "diez",
+          "inicioMs": 4720,
+          "finMs": 4960
+        },
+        {
+          "palabra": "ni",
+          "inicioMs": 4960,
+          "finMs": 5160
+        },
+        {
+          "palabra": "el",
+          "inicioMs": 5160,
+          "finMs": 5280
+        },
+        {
+          "palabra": "mil",
+          "inicioMs": 5280,
+          "finMs": 5320
+        },
+        {
+          "palabra": "solo",
+          "inicioMs": 5320,
+          "finMs": 5700
+        },
+        {
+          "palabra": "usan",
+          "inicioMs": 5700,
+          "finMs": 6000
+        },
+        {
+          "palabra": "nociones",
+          "inicioMs": 6000,
+          "finMs": 6360
+        },
+        {
+          "palabra": "relativas",
+          "inicioMs": 6360,
+          "finMs": 6940
+        },
+        {
+          "palabra": "como",
+          "inicioMs": 6940,
+          "finMs": 7120
+        },
+        {
+          "palabra": "pocos",
+          "inicioMs": 7120,
+          "finMs": 7560
+        },
+        {
+          "palabra": "o",
+          "inicioMs": 7560,
+          "finMs": 7680
+        },
+        {
+          "palabra": "muchos",
+          "inicioMs": 7680,
+          "finMs": 7980
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "texto": "Los científicos hicieron la prueba: ponían siete fichas en la mesa y pedían replicar la fila exacta. Con tres acertaban al instante, pero con siete colocaban ocho o seis sin notarlo.",
+      "icono": "Layers",
+      "colorIcono": "#38BDF8",
+      "tituloVisual": "TEST DE FICHAS",
+      "composicionVisual": "cifras_concepto",
+      "escenario": "laboratorio_campo_fichas_grid",
+      "layout": "narrativo",
+      "transicion": "whip_right",
+      "efectosCamara": [
+        "punch",
+        "drift"
+      ],
+      "sfx": "sfx/sfx_fichas_madera_clack_duda.wav",
+      "volumenSfx": 0.24,
+      "palabrasClave": [
+        "SIETE FICHAS",
+        "FILA EXACTA",
+        "SIN NOTARLO"
+      ],
+      "personajes": [
+        {
+          "id": "investigador_fichas",
+          "nombre": "Investigador Fichas",
+          "posicion": {
+            "x": -240,
+            "y": 70
+          },
+          "escala": 1.0,
+          "orientacion": "derecha",
+          "habla": true,
+          "capaZ": 10,
+          "acciones": [
+            {
+              "tipo": "personalizada",
+              "pasos": [
+                {
+                  "inicioProgreso": 0,
+                  "finProgreso": 0.35,
+                  "poseId": "investigating_magnifier",
+                  "expresion": "analytical",
+                  "posicion": {
+                    "x": -240,
+                    "y": 70
+                  },
+                  "curva": "suave",
+                  "procedural": "estatico"
+                },
+                {
+                  "inicioProgreso": 0.35,
+                  "finProgreso": 0.7,
+                  "poseId": "explaining_pointing_up",
+                  "expresion": "talking_enthusiastic",
+                  "posicion": {
+                    "x": -140,
+                    "y": 70
+                  },
+                  "curva": "suave",
+                  "procedural": "estatico"
+                },
+                {
+                  "inicioProgreso": 0.7,
+                  "finProgreso": 1.0,
+                  "poseId": "shrugging",
+                  "expresion": "confused",
+                  "posicion": {
+                    "x": -40,
+                    "y": 70
+                  },
+                  "curva": "suave",
+                  "procedural": "estatico"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "objetos": [
+        {
+          "id": "obj_mesa_fichas",
+          "propId": "mesa_prueba_fichas_madera",
+          "posicion": {
+            "x": 250,
+            "y": 40
+          },
+          "escala": 1.25,
+          "animacion": "pulso"
+        }
+      ],
+      "duracionSegundos": 10.282,
+      "palabras": [
+        {
+          "palabra": "Los",
+          "inicioMs": 0,
+          "finMs": 200
+        },
+        {
+          "palabra": "científicos",
+          "inicioMs": 200,
+          "finMs": 880
+        },
+        {
+          "palabra": "hicieron",
+          "inicioMs": 880,
+          "finMs": 1200
+        },
+        {
+          "palabra": "la",
+          "inicioMs": 1200,
+          "finMs": 1380
+        },
+        {
+          "palabra": "prueba",
+          "inicioMs": 1380,
+          "finMs": 1720
+        },
+        {
+          "palabra": "ponían",
+          "inicioMs": 1880,
+          "finMs": 2120
+        },
+        {
+          "palabra": "siete",
+          "inicioMs": 2120,
+          "finMs": 2420
+        },
+        {
+          "palabra": "fichas",
+          "inicioMs": 2420,
+          "finMs": 2840
+        },
+        {
+          "palabra": "en",
+          "inicioMs": 2840,
+          "finMs": 2960
+        },
+        {
+          "palabra": "la",
+          "inicioMs": 2960,
+          "finMs": 3060
+        },
+        {
+          "palabra": "mesa",
+          "inicioMs": 3060,
+          "finMs": 3340
+        },
+        {
+          "palabra": "y",
+          "inicioMs": 3340,
+          "finMs": 3560
+        },
+        {
+          "palabra": "pedían",
+          "inicioMs": 3560,
+          "finMs": 3860
+        },
+        {
+          "palabra": "replicar",
+          "inicioMs": 3860,
+          "finMs": 4300
+        },
+        {
+          "palabra": "la",
+          "inicioMs": 4300,
+          "finMs": 4460
+        },
+        {
+          "palabra": "fila",
+          "inicioMs": 4460,
+          "finMs": 4700
+        },
+        {
+          "palabra": "exacta",
+          "inicioMs": 4700,
+          "finMs": 5220
+        },
+        {
+          "palabra": "Con",
+          "inicioMs": 5520,
+          "finMs": 5620
+        },
+        {
+          "palabra": "tres",
+          "inicioMs": 5620,
+          "finMs": 5860
+        },
+        {
+          "palabra": "acertaban",
+          "inicioMs": 5860,
+          "finMs": 6380
+        },
+        {
+          "palabra": "al",
+          "inicioMs": 6380,
+          "finMs": 6500
+        },
+        {
+          "palabra": "instante",
+          "inicioMs": 6500,
+          "finMs": 7040
+        },
+        {
+          "palabra": "pero",
+          "inicioMs": 7160,
+          "finMs": 7240
+        },
+        {
+          "palabra": "con",
+          "inicioMs": 7240,
+          "finMs": 7420
+        },
+        {
+          "palabra": "siete",
+          "inicioMs": 7420,
+          "finMs": 7740
+        },
+        {
+          "palabra": "colocaban",
+          "inicioMs": 7740,
+          "finMs": 8280
+        },
+        {
+          "palabra": "ocho",
+          "inicioMs": 8280,
+          "finMs": 8760
+        },
+        {
+          "palabra": "o",
+          "inicioMs": 8760,
+          "finMs": 8880
+        },
+        {
+          "palabra": "seis",
+          "inicioMs": 8880,
+          "finMs": 9120
+        },
+        {
+          "palabra": "sin",
+          "inicioMs": 9120,
+          "finMs": 9360
+        },
+        {
+          "palabra": "notarlo",
+          "inicioMs": 9360,
+          "finMs": 9800
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "texto": "No es falta de inteligencia, sino de herramientas: sin palabras que fijen el valor exacto, el cerebro no puede retener la cuenta en la memoria de trabajo y el número se disuelve.",
+      "icono": "Brain",
+      "colorIcono": "#A855F7",
+      "tituloVisual": "MEMORIA SIN PALABRAS",
+      "composicionVisual": "primer_plano",
+      "escenario": "microcosmos_cerebral_memoria",
+      "layout": "narrativo",
+      "transicion": "whip_right",
+      "efectosCamara": [
+        "punch",
+        "drift"
+      ],
+      "sfx": "sfx/sfx_sinapsis_nube_evanescente.wav",
+      "volumenSfx": 0.25,
+      "palabrasClave": [
+        "FALTA DE HERRAMIENTAS",
+        "MEMORIA DE TRABAJO",
+        "SE DISUELVE"
+      ],
+      "personajes": [
+        {
+          "id": "mente_sin_etiquetas",
+          "nombre": "Mente Sin Etiquetas",
+          "posicion": {
+            "x": -200,
+            "y": 70
+          },
+          "escala": 1.0,
+          "orientacion": "derecha",
+          "habla": true,
+          "capaZ": 10,
+          "acciones": [
+            {
+              "tipo": "personalizada",
+              "pasos": [
+                {
+                  "inicioProgreso": 0,
+                  "finProgreso": 0.35,
+                  "poseId": "holding_both_hands",
+                  "expresion": "worried",
+                  "posicion": {
+                    "x": -200,
+                    "y": 70
+                  },
+                  "curva": "suave",
+                  "procedural": "caminar"
+                },
+                {
+                  "inicioProgreso": 0.35,
+                  "finProgreso": 0.7,
+                  "poseId": "facepalm",
+                  "expresion": "frustrated",
+                  "posicion": {
+                    "x": -120,
+                    "y": 75
+                  },
+                  "curva": "suave",
+                  "procedural": "temblar"
+                },
+                {
+                  "inicioProgreso": 0.7,
+                  "finProgreso": 1.0,
+                  "poseId": "shock_explosion",
+                  "expresion": "shocked",
+                  "posicion": {
+                    "x": -40,
+                    "y": 70
+                  },
+                  "curva": "impacto",
+                  "procedural": "recoil"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "objetos": [
+        {
+          "id": "obj_caja_fuerte",
+          "propId": "caja_fuerte_memoria_trabajo",
+          "posicion": {
+            "x": 260,
+            "y": 30
+          },
+          "escala": 1.3,
+          "animacion": "vibrar"
+        }
+      ],
+      "duracionSegundos": 8.842,
+      "palabras": [
+        {
+          "palabra": "No",
+          "inicioMs": 0,
+          "finMs": 200
+        },
+        {
+          "palabra": "es",
+          "inicioMs": 200,
+          "finMs": 300
+        },
+        {
+          "palabra": "falta",
+          "inicioMs": 300,
+          "finMs": 480
+        },
+        {
+          "palabra": "de",
+          "inicioMs": 480,
+          "finMs": 600
+        },
+        {
+          "palabra": "inteligencia",
+          "inicioMs": 600,
+          "finMs": 1100
+        },
+        {
+          "palabra": "sino",
+          "inicioMs": 1100,
+          "finMs": 1280
+        },
+        {
+          "palabra": "de",
+          "inicioMs": 1280,
+          "finMs": 1440
+        },
+        {
+          "palabra": "herramientas",
+          "inicioMs": 1440,
+          "finMs": 1920
+        },
+        {
+          "palabra": "sin",
+          "inicioMs": 2020,
+          "finMs": 2120
+        },
+        {
+          "palabra": "palabras",
+          "inicioMs": 2120,
+          "finMs": 2340
+        },
+        {
+          "palabra": "que",
+          "inicioMs": 2340,
+          "finMs": 2620
+        },
+        {
+          "palabra": "fijen",
+          "inicioMs": 2620,
+          "finMs": 2860
+        },
+        {
+          "palabra": "el",
+          "inicioMs": 2860,
+          "finMs": 2980
+        },
+        {
+          "palabra": "valor",
+          "inicioMs": 2980,
+          "finMs": 3140
+        },
+        {
+          "palabra": "exacto",
+          "inicioMs": 3140,
+          "finMs": 4260
+        },
+        {
+          "palabra": "el",
+          "inicioMs": 4260,
+          "finMs": 4500
+        },
+        {
+          "palabra": "cerebro",
+          "inicioMs": 4500,
+          "finMs": 4820
+        },
+        {
+          "palabra": "no",
+          "inicioMs": 4820,
+          "finMs": 4940
+        },
+        {
+          "palabra": "puede",
+          "inicioMs": 4940,
+          "finMs": 5160
+        },
+        {
+          "palabra": "retener",
+          "inicioMs": 5160,
+          "finMs": 5580
+        },
+        {
+          "palabra": "la",
+          "inicioMs": 5580,
+          "finMs": 5700
+        },
+        {
+          "palabra": "cuenta",
+          "inicioMs": 5700,
+          "finMs": 5900
+        },
+        {
+          "palabra": "en",
+          "inicioMs": 5900,
+          "finMs": 6120
+        },
+        {
+          "palabra": "la",
+          "inicioMs": 6120,
+          "finMs": 6220
+        },
+        {
+          "palabra": "memoria",
+          "inicioMs": 6220,
+          "finMs": 6540
+        },
+        {
+          "palabra": "de",
+          "inicioMs": 6540,
+          "finMs": 6660
+        },
+        {
+          "palabra": "trabajo",
+          "inicioMs": 6660,
+          "finMs": 7100
+        },
+        {
+          "palabra": "y",
+          "inicioMs": 7100,
+          "finMs": 7340
+        },
+        {
+          "palabra": "el",
+          "inicioMs": 7340,
+          "finMs": 7460
+        },
+        {
+          "palabra": "número",
+          "inicioMs": 7460,
+          "finMs": 7660
+        },
+        {
+          "palabra": "se",
+          "inicioMs": 7660,
+          "finMs": 7860
+        },
+        {
+          "palabra": "disuelve",
+          "inicioMs": 7860,
+          "finMs": 8380
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "texto": "Y aquí está el giro: biológicamente, los humanos solo nacemos con un sistema para estimar bultos a ojo... exactamente igual que los monos o las palomas. Sin palabras, no hay precisión.",
+      "icono": "Eye",
+      "colorIcono": "#F59E0B",
+      "tituloVisual": "SISTEMA INNATO ANS",
+      "composicionVisual": "plano_general",
+      "escenario": "pedestales_ans_comparativo",
+      "layout": "narrativo",
+      "transicion": "whip_right",
+      "efectosCamara": [
+        "punch",
+        "drift"
+      ],
+      "sfx": "sfx/sfx_campana_ans_acierto_duda.wav",
+      "volumenSfx": 0.25,
+      "palabrasClave": [
+        "EL GIRO",
+        "ESTIMAR BULTOS A OJO",
+        "MONOS O PALOMAS"
+      ],
+      "personajes": [
+        {
+          "id": "comparador_evolutivo",
+          "nombre": "Comparador Evolutivo",
+          "posicion": {
+            "x": -220,
+            "y": 70
+          },
+          "escala": 1.0,
+          "orientacion": "derecha",
+          "habla": true,
+          "capaZ": 10,
+          "acciones": [
+            {
+              "tipo": "personalizada",
+              "pasos": [
+                {
+                  "inicioProgreso": 0,
+                  "finProgreso": 0.35,
+                  "poseId": "scratching_head",
+                  "expresion": "confused",
+                  "posicion": {
+                    "x": -220,
+                    "y": 70
+                  },
+                  "curva": "suave",
+                  "procedural": "estatico"
+                },
+                {
+                  "inicioProgreso": 0.35,
+                  "finProgreso": 0.7,
+                  "poseId": "doubting_open_hands",
+                  "expresion": "skeptical",
+                  "posicion": {
+                    "x": -120,
+                    "y": 70
+                  },
+                  "curva": "suave",
+                  "procedural": "estatico"
+                },
+                {
+                  "inicioProgreso": 0.7,
+                  "finProgreso": 1.0,
+                  "poseId": "showing_both_hands",
+                  "expresion": "eureka",
+                  "posicion": {
+                    "x": -20,
+                    "y": 70
+                  },
+                  "curva": "suave",
+                  "procedural": "estatico"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "objetos": [
+        {
+          "id": "obj_bandejas_ans",
+          "propId": "bandejas_moras_ans",
+          "posicion": {
+            "x": 260,
+            "y": 40
+          },
+          "escala": 1.25,
+          "animacion": "pulso"
+        }
+      ],
+      "duracionSegundos": 9.634,
+      "palabras": [
+        {
+          "palabra": "Y",
+          "inicioMs": 0,
+          "finMs": 160
+        },
+        {
+          "palabra": "aquí",
+          "inicioMs": 160,
+          "finMs": 360
+        },
+        {
+          "palabra": "está",
+          "inicioMs": 360,
+          "finMs": 560
+        },
+        {
+          "palabra": "el",
+          "inicioMs": 560,
+          "finMs": 700
+        },
+        {
+          "palabra": "giro",
+          "inicioMs": 700,
+          "finMs": 980
+        },
+        {
+          "palabra": "biológicamente",
+          "inicioMs": 980,
+          "finMs": 1800
+        },
+        {
+          "palabra": "los",
+          "inicioMs": 1940,
+          "finMs": 2040
+        },
+        {
+          "palabra": "humanos",
+          "inicioMs": 2040,
+          "finMs": 2340
+        },
+        {
+          "palabra": "solo",
+          "inicioMs": 2340,
+          "finMs": 2600
+        },
+        {
+          "palabra": "nacemos",
+          "inicioMs": 2600,
+          "finMs": 3040
+        },
+        {
+          "palabra": "con",
+          "inicioMs": 3040,
+          "finMs": 3200
+        },
+        {
+          "palabra": "un",
+          "inicioMs": 3200,
+          "finMs": 3300
+        },
+        {
+          "palabra": "sistema",
+          "inicioMs": 3300,
+          "finMs": 3620
+        },
+        {
+          "palabra": "para",
+          "inicioMs": 3620,
+          "finMs": 3880
+        },
+        {
+          "palabra": "estimar",
+          "inicioMs": 3880,
+          "finMs": 4240
+        },
+        {
+          "palabra": "bultos",
+          "inicioMs": 4240,
+          "finMs": 4660
+        },
+        {
+          "palabra": "a",
+          "inicioMs": 4660,
+          "finMs": 4760
+        },
+        {
+          "palabra": "ojo",
+          "inicioMs": 4760,
+          "finMs": 5060
+        },
+        {
+          "palabra": "exactamente",
+          "inicioMs": 5440,
+          "finMs": 5880
+        },
+        {
+          "palabra": "igual",
+          "inicioMs": 5880,
+          "finMs": 6160
+        },
+        {
+          "palabra": "que",
+          "inicioMs": 6160,
+          "finMs": 6340
+        },
+        {
+          "palabra": "los",
+          "inicioMs": 6340,
+          "finMs": 6480
+        },
+        {
+          "palabra": "monos",
+          "inicioMs": 6480,
+          "finMs": 6820
+        },
+        {
+          "palabra": "o",
+          "inicioMs": 6820,
+          "finMs": 6900
+        },
+        {
+          "palabra": "las",
+          "inicioMs": 6900,
+          "finMs": 7000
+        },
+        {
+          "palabra": "palomas",
+          "inicioMs": 7000,
+          "finMs": 7400
+        },
+        {
+          "palabra": "Sin",
+          "inicioMs": 7640,
+          "finMs": 7780
+        },
+        {
+          "palabra": "palabras",
+          "inicioMs": 7780,
+          "finMs": 8100
+        },
+        {
+          "palabra": "no",
+          "inicioMs": 8300,
+          "finMs": 8400
+        },
+        {
+          "palabra": "hay",
+          "inicioMs": 8400,
+          "finMs": 8520
+        },
+        {
+          "palabra": "precisión",
+          "inicioMs": 8520,
+          "finMs": 9120
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "texto": "Los números exactos no son naturales: son una tecnología inventada. Palabras creadas por la cultura para hackear y reprogramar nuestra propia mente como si fueran engranajes.",
+      "icono": "Cpu",
+      "colorIcono": "#FDE047",
+      "tituloVisual": "HACK CEREBRAL",
+      "composicionVisual": "escenario_ilustrado",
+      "escenario": "estudio_engranajes_hack_mental",
+      "layout": "narrativo",
+      "transicion": "whip_right",
+      "efectosCamara": [
+        "punch",
+        "drift"
+      ],
+      "sfx": "sfx/sfx_engranajes_oro_hack_mental.wav",
+      "volumenSfx": 0.25,
+      "palabrasClave": [
+        "TECNOLOGÍA INVENTADA",
+        "HACKEAR Y REPROGRAMAR",
+        "ENGRANAJES"
+      ],
+      "personajes": [
+        {
+          "id": "mente_hackeada",
+          "nombre": "Mente Hackeada",
+          "posicion": {
+            "x": -220,
+            "y": 70
+          },
+          "escala": 1.0,
+          "orientacion": "derecha",
+          "habla": true,
+          "capaZ": 10,
+          "prop": "engranaje_linguistico_dorado",
+          "acciones": [
+            {
+              "tipo": "personalizada",
+              "pasos": [
+                {
+                  "inicioProgreso": 0,
+                  "finProgreso": 0.35,
+                  "poseId": "presenting_object",
+                  "expresion": "eureka",
+                  "posicion": {
+                    "x": -220,
+                    "y": 70
+                  },
+                  "curva": "suave",
+                  "procedural": "estatico"
+                },
+                {
+                  "inicioProgreso": 0.35,
+                  "finProgreso": 0.7,
+                  "poseId": "eureka_idea",
+                  "expresion": "smile_wide",
+                  "posicion": {
+                    "x": -110,
+                    "y": 70
+                  },
+                  "curva": "suave",
+                  "procedural": "estatico"
+                },
+                {
+                  "inicioProgreso": 0.7,
+                  "finProgreso": 1.0,
+                  "poseId": "celebrating_arms_up",
+                  "expresion": "talking_enthusiastic",
+                  "posicion": {
+                    "x": 0,
+                    "y": 70
+                  },
+                  "curva": "suave",
+                  "procedural": "estatico"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "objetos": [
+        {
+          "id": "obj_engranaje_oro",
+          "propId": "engranaje_linguistico_dorado",
+          "posicion": {
+            "x": 260,
+            "y": 40
+          },
+          "escala": 1.3,
+          "animacion": "pulso"
+        }
+      ],
+      "duracionSegundos": 9.01,
+      "palabras": [
+        {
+          "palabra": "Los",
+          "inicioMs": 0,
+          "finMs": 200
+        },
+        {
+          "palabra": "números",
+          "inicioMs": 200,
+          "finMs": 440
+        },
+        {
+          "palabra": "exactos",
+          "inicioMs": 440,
+          "finMs": 1040
+        },
+        {
+          "palabra": "no",
+          "inicioMs": 1040,
+          "finMs": 1160
+        },
+        {
+          "palabra": "son",
+          "inicioMs": 1160,
+          "finMs": 1320
+        },
+        {
+          "palabra": "naturales",
+          "inicioMs": 1320,
+          "finMs": 1960
+        },
+        {
+          "palabra": "son",
+          "inicioMs": 2060,
+          "finMs": 2180
+        },
+        {
+          "palabra": "una",
+          "inicioMs": 2180,
+          "finMs": 2380
+        },
+        {
+          "palabra": "tecnología",
+          "inicioMs": 2380,
+          "finMs": 2660
+        },
+        {
+          "palabra": "inventada",
+          "inicioMs": 2660,
+          "finMs": 3500
+        },
+        {
+          "palabra": "Palabras",
+          "inicioMs": 3700,
+          "finMs": 3940
+        },
+        {
+          "palabra": "creadas",
+          "inicioMs": 3940,
+          "finMs": 4440
+        },
+        {
+          "palabra": "por",
+          "inicioMs": 4440,
+          "finMs": 4640
+        },
+        {
+          "palabra": "la",
+          "inicioMs": 4640,
+          "finMs": 4740
+        },
+        {
+          "palabra": "cultura",
+          "inicioMs": 4740,
+          "finMs": 5100
+        },
+        {
+          "palabra": "para",
+          "inicioMs": 5100,
+          "finMs": 5440
+        },
+        {
+          "palabra": "hackear",
+          "inicioMs": 5440,
+          "finMs": 5780
+        },
+        {
+          "palabra": "y",
+          "inicioMs": 5780,
+          "finMs": 5960
+        },
+        {
+          "palabra": "reprogramar",
+          "inicioMs": 5960,
+          "finMs": 6520
+        },
+        {
+          "palabra": "nuestra",
+          "inicioMs": 6520,
+          "finMs": 6780
+        },
+        {
+          "palabra": "propia",
+          "inicioMs": 6780,
+          "finMs": 7280
+        },
+        {
+          "palabra": "mente",
+          "inicioMs": 7280,
+          "finMs": 7620
+        },
+        {
+          "palabra": "como",
+          "inicioMs": 7620,
+          "finMs": 7780
+        },
+        {
+          "palabra": "si",
+          "inicioMs": 7780,
+          "finMs": 8040
+        },
+        {
+          "palabra": "fueran",
+          "inicioMs": 8040,
+          "finMs": 8120
+        },
+        {
+          "palabra": "engranajes",
+          "inicioMs": 8120,
+          "finMs": 8520
+        }
+      ]
+    },
+    {
+      "id": 7,
+      "texto": "Así que piénsalo: si una simple palabra puede darte el poder de contar hasta el infinito... ¿qué ideas te estás perdiendo hoy por no tener una palabra para nombrarlas?",
+      "icono": "HelpCircle",
+      "colorIcono": "#C084FC",
+      "tituloVisual": "¿QUÉ NO PUEDES NOMBRAR?",
+      "composicionVisual": "primer_plano",
+      "escenario": "vacio_filosofico_cosmos_ideas",
+      "layout": "narrativo",
+      "transicion": "whip_right",
+      "efectosCamara": [
+        "punch",
+        "drift"
+      ],
+      "sfx": "sfx/sfx_cosmos_ideas_latido_final.wav",
+      "volumenSfx": 0.25,
+      "palabrasClave": [
+        "HASTA EL INFINITO",
+        "QUÉ IDEAS TE PIERDES",
+        "PARA NOMBRARLAS"
+      ],
+      "personajes": [
+        {
+          "id": "pensador_cosmico",
+          "nombre": "Pensador Cósmico",
+          "posicion": {
+            "x": -220,
+            "y": 70
+          },
+          "escala": 1.0,
+          "orientacion": "derecha",
+          "habla": true,
+          "capaZ": 10,
+          "acciones": [
+            {
+              "tipo": "personalizada",
+              "pasos": [
+                {
+                  "inicioProgreso": 0,
+                  "finProgreso": 0.35,
+                  "poseId": "standing_relaxed",
+                  "expresion": "neutral",
+                  "posicion": {
+                    "x": -220,
+                    "y": 70
+                  },
+                  "curva": "suave",
+                  "procedural": "suave"
+                },
+                {
+                  "inicioProgreso": 0.35,
+                  "finProgreso": 0.7,
+                  "poseId": "thinking_chin_hand",
+                  "expresion": "analytical",
+                  "posicion": {
+                    "x": -100,
+                    "y": 70
+                  },
+                  "curva": "suave",
+                  "procedural": "estatico"
+                },
+                {
+                  "inicioProgreso": 0.7,
+                  "finProgreso": 1.0,
+                  "poseId": "pointing_at_viewer",
+                  "expresion": "smile_soft",
+                  "posicion": {
+                    "x": 0,
+                    "y": 70
+                  },
+                  "curva": "suave",
+                  "procedural": "estatico"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "objetos": [
+        {
+          "id": "obj_geometria_cosmica",
+          "propId": "geometria_abstracta_innombrable",
+          "posicion": {
+            "x": 260,
+            "y": 30
+          },
+          "escala": 1.35,
+          "animacion": "flotar"
+        }
+      ],
+      "duracionSegundos": 8.338,
+      "palabras": [
+        {
+          "palabra": "Así",
+          "inicioMs": 0,
+          "finMs": 300
+        },
+        {
+          "palabra": "que",
+          "inicioMs": 300,
+          "finMs": 440
+        },
+        {
+          "palabra": "piénsalo",
+          "inicioMs": 440,
+          "finMs": 940
+        },
+        {
+          "palabra": "si",
+          "inicioMs": 940,
+          "finMs": 1300
+        },
+        {
+          "palabra": "una",
+          "inicioMs": 1300,
+          "finMs": 1420
+        },
+        {
+          "palabra": "simple",
+          "inicioMs": 1420,
+          "finMs": 1740
+        },
+        {
+          "palabra": "palabra",
+          "inicioMs": 1740,
+          "finMs": 2100
+        },
+        {
+          "palabra": "puede",
+          "inicioMs": 2100,
+          "finMs": 2420
+        },
+        {
+          "palabra": "darte",
+          "inicioMs": 2420,
+          "finMs": 2800
+        },
+        {
+          "palabra": "el",
+          "inicioMs": 2800,
+          "finMs": 3000
+        },
+        {
+          "palabra": "poder",
+          "inicioMs": 3000,
+          "finMs": 3260
+        },
+        {
+          "palabra": "de",
+          "inicioMs": 3260,
+          "finMs": 3440
+        },
+        {
+          "palabra": "contar",
+          "inicioMs": 3440,
+          "finMs": 3760
+        },
+        {
+          "palabra": "hasta",
+          "inicioMs": 3760,
+          "finMs": 4000
+        },
+        {
+          "palabra": "el",
+          "inicioMs": 4000,
+          "finMs": 4120
+        },
+        {
+          "palabra": "infinito",
+          "inicioMs": 4120,
+          "finMs": 4700
+        },
+        {
+          "palabra": "qué",
+          "inicioMs": 4920,
+          "finMs": 5020
+        },
+        {
+          "palabra": "ideas",
+          "inicioMs": 5020,
+          "finMs": 5200
+        },
+        {
+          "palabra": "te",
+          "inicioMs": 5200,
+          "finMs": 5420
+        },
+        {
+          "palabra": "estás",
+          "inicioMs": 5420,
+          "finMs": 5600
+        },
+        {
+          "palabra": "perdiendo",
+          "inicioMs": 5600,
+          "finMs": 5980
+        },
+        {
+          "palabra": "hoy",
+          "inicioMs": 5980,
+          "finMs": 6200
+        },
+        {
+          "palabra": "por",
+          "inicioMs": 6200,
+          "finMs": 6360
+        },
+        {
+          "palabra": "no",
+          "inicioMs": 6360,
+          "finMs": 6460
+        },
+        {
+          "palabra": "tener",
+          "inicioMs": 6460,
+          "finMs": 6680
+        },
+        {
+          "palabra": "una",
+          "inicioMs": 6680,
+          "finMs": 6840
+        },
+        {
+          "palabra": "palabra",
+          "inicioMs": 6840,
+          "finMs": 7040
+        },
+        {
+          "palabra": "para",
+          "inicioMs": 7040,
+          "finMs": 7300
+        },
+        {
+          "palabra": "nombrarlas",
+          "inicioMs": 7300,
+          "finMs": 7840
+        }
+      ]
+    }
+  ]
+}

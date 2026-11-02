@@ -1,0 +1,2247 @@
+{
+  "meta": {
+    "id": "mexica_mictlan_cuatro_destinos_ofrenda",
+    "slug": "mexica_mictlan_cuatro_destinos_ofrenda",
+    "temaResumen": "Cosmovisión mexica del más allá: el destino del alma según la forma de morir, los 9 niveles del Mictlán con el perro xoloitzcuintle y las raíces del Día de Muertos (Sahagún)",
+    "duracionObjetivo": [
+      70,
+      92
+    ],
+    "titulo": "Tu muerte decidía tu destino, no tu vida: el Mictlán mexica",
+    "titulo_corto": "El destino mexica",
+    "gancho": "¿Y si adónde vas después de morir no dependiera de lo bueno o lo malo que fuiste, sino de cómo moriste?",
+    "genero": "Historia y Antropología Prehispánica",
+    "playlist": "Mitos, Ciencia y Cosmovisiones Ancestrales",
+    "fuentes": [
+      "Fray Bernardino de Sahagún (1577) - Historia general de las cosas de la Nueva España (Códice Florentino, Libro III)",
+      "Eduardo Matos Moctezuma (INAH, 2010) - La muerte entre los mexicas: Mictlán, Tlalocan y el Sol",
+      "Alfredo López Austin (UNAM, 1980) - Cuerpo humano e ideología: Las concepciones de los antiguos nahuas"
+    ]
+  },
+  "escenas": [
+    {
+      "id": 1,
+      "texto": "¿Y si adónde vas después de morir no dependiera de lo bueno o lo malo que fuiste, sino de cómo moriste? Así lo veían los mexicas.",
+      "icono": "Flame",
+      "colorIcono": "#F59E0B",
+      "tituloVisual": "¿CÓMO MORISTE?",
+      "composicionVisual": "plano_general",
+      "escenario": "altar_morado_cuatro_luces",
+      "layout": "narrativo",
+      "transicion": "corte",
+      "efectosCamara": [
+        "punch",
+        "drift"
+      ],
+      "sfx": "sfx/sfx_mictlan_vela_flauta.wav",
+      "volumenSfx": 0.25,
+      "palabrasClave": [
+        "morir",
+        "bueno",
+        "malo",
+        "mexicas",
+        "destino"
+      ],
+      "personajes": [
+        {
+          "id": "stickman_narrador",
+          "nombre": "Stickman",
+          "posicion": {
+            "x": -260,
+            "y": 60
+          },
+          "escala": 1.0,
+          "orientacion": "derecha",
+          "habla": true,
+          "capaZ": 10,
+          "acciones": [
+            {
+              "tipo": "personalizada",
+              "pasos": [
+                {
+                  "inicioProgreso": 0,
+                  "finProgreso": 0.45,
+                  "poseId": "explaining_both_hands",
+                  "expresion": "talking_enthusiastic",
+                  "posicion": {
+                    "x": -260,
+                    "y": 60
+                  },
+                  "curva": "suave",
+                  "procedural": "estatico"
+                },
+                {
+                  "inicioProgreso": 0.45,
+                  "finProgreso": 1.0,
+                  "poseId": "looking_up_pose",
+                  "expresion": "surprised",
+                  "posicion": {
+                    "x": -220,
+                    "y": 60
+                  },
+                  "curva": "suave",
+                  "procedural": "estatico"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "duracionSegundos": 7.402,
+      "palabras": [
+        {
+          "palabra": "Y",
+          "inicioMs": 0,
+          "finMs": 60
+        },
+        {
+          "palabra": "si",
+          "inicioMs": 60,
+          "finMs": 160
+        },
+        {
+          "palabra": "adónde",
+          "inicioMs": 160,
+          "finMs": 500
+        },
+        {
+          "palabra": "vas",
+          "inicioMs": 500,
+          "finMs": 620
+        },
+        {
+          "palabra": "después",
+          "inicioMs": 620,
+          "finMs": 1000
+        },
+        {
+          "palabra": "de",
+          "inicioMs": 1000,
+          "finMs": 1200
+        },
+        {
+          "palabra": "morir",
+          "inicioMs": 1200,
+          "finMs": 1580
+        },
+        {
+          "palabra": "no",
+          "inicioMs": 1580,
+          "finMs": 1820
+        },
+        {
+          "palabra": "dependiera",
+          "inicioMs": 1820,
+          "finMs": 2380
+        },
+        {
+          "palabra": "de",
+          "inicioMs": 2380,
+          "finMs": 2480
+        },
+        {
+          "palabra": "lo",
+          "inicioMs": 2480,
+          "finMs": 2580
+        },
+        {
+          "palabra": "bueno",
+          "inicioMs": 2580,
+          "finMs": 2880
+        },
+        {
+          "palabra": "o",
+          "inicioMs": 2880,
+          "finMs": 3060
+        },
+        {
+          "palabra": "lo",
+          "inicioMs": 3060,
+          "finMs": 3140
+        },
+        {
+          "palabra": "malo",
+          "inicioMs": 3140,
+          "finMs": 3420
+        },
+        {
+          "palabra": "que",
+          "inicioMs": 3420,
+          "finMs": 3540
+        },
+        {
+          "palabra": "fuiste",
+          "inicioMs": 3540,
+          "finMs": 4000
+        },
+        {
+          "palabra": "sino",
+          "inicioMs": 4160,
+          "finMs": 4340
+        },
+        {
+          "palabra": "de",
+          "inicioMs": 4340,
+          "finMs": 4500
+        },
+        {
+          "palabra": "cómo",
+          "inicioMs": 4500,
+          "finMs": 4720
+        },
+        {
+          "palabra": "moriste",
+          "inicioMs": 4820,
+          "finMs": 5220
+        },
+        {
+          "palabra": "Así",
+          "inicioMs": 5460,
+          "finMs": 5640
+        },
+        {
+          "palabra": "lo",
+          "inicioMs": 5640,
+          "finMs": 5800
+        },
+        {
+          "palabra": "veían",
+          "inicioMs": 5800,
+          "finMs": 6080
+        },
+        {
+          "palabra": "los",
+          "inicioMs": 6080,
+          "finMs": 6220
+        },
+        {
+          "palabra": "mexicas",
+          "inicioMs": 6220,
+          "finMs": 6740
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "texto": "Los guerreros y las mujeres que morían al dar a luz acompañaban al Sol. Quienes morían ahogados o por un rayo iban al Tlalocan, un paraíso del agua. Los bebés, a un árbol que los alimentaba. Y casi todos los demás, al Mictlán.",
+      "icono": "Compass",
+      "colorIcono": "#38BDF8",
+      "tituloVisual": "4 DESTINOS DEL ALMA",
+      "composicionVisual": "plano_general",
+      "escenario": "panoramica_cuatro_destinos_mexicas",
+      "layout": "narrativo",
+      "transicion": "whip_right",
+      "efectosCamara": [
+        "punch",
+        "drift"
+      ],
+      "sfx": "sfx/sfx_cuatro_destinos_chime.wav",
+      "volumenSfx": 0.22,
+      "palabrasClave": [
+        "guerreros",
+        "sol",
+        "tlalocan",
+        "agua",
+        "bebés",
+        "árbol",
+        "mictlán"
+      ],
+      "personajes": [
+        {
+          "id": "stickman_explorador",
+          "nombre": "Stickman",
+          "posicion": {
+            "x": 0,
+            "y": 70
+          },
+          "escala": 0.95,
+          "orientacion": "derecha",
+          "prop": "codice_mexica_abierto",
+          "habla": true,
+          "capaZ": 15,
+          "acciones": [
+            {
+              "tipo": "personalizada",
+              "pasos": [
+                {
+                  "inicioProgreso": 0,
+                  "finProgreso": 0.35,
+                  "poseId": "pointing_right",
+                  "expresion": "analytical",
+                  "posicion": {
+                    "x": -180,
+                    "y": 70
+                  },
+                  "curva": "suave",
+                  "procedural": "caminar"
+                },
+                {
+                  "inicioProgreso": 0.35,
+                  "finProgreso": 0.7,
+                  "poseId": "explaining_pointing_up",
+                  "expresion": "talking_enthusiastic",
+                  "posicion": {
+                    "x": 0,
+                    "y": 70
+                  },
+                  "curva": "suave",
+                  "procedural": "estatico"
+                },
+                {
+                  "inicioProgreso": 0.7,
+                  "finProgreso": 1.0,
+                  "poseId": "backing_away_scared",
+                  "expresion": "worried",
+                  "posicion": {
+                    "x": 160,
+                    "y": 70
+                  },
+                  "curva": "suave",
+                  "procedural": "estatico"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "duracionSegundos": 12.322,
+      "palabras": [
+        {
+          "palabra": "Los",
+          "inicioMs": 0,
+          "finMs": 220
+        },
+        {
+          "palabra": "guerreros",
+          "inicioMs": 220,
+          "finMs": 720
+        },
+        {
+          "palabra": "y",
+          "inicioMs": 720,
+          "finMs": 800
+        },
+        {
+          "palabra": "las",
+          "inicioMs": 800,
+          "finMs": 900
+        },
+        {
+          "palabra": "mujeres",
+          "inicioMs": 900,
+          "finMs": 1200
+        },
+        {
+          "palabra": "que",
+          "inicioMs": 1200,
+          "finMs": 1460
+        },
+        {
+          "palabra": "morían",
+          "inicioMs": 1460,
+          "finMs": 1780
+        },
+        {
+          "palabra": "al",
+          "inicioMs": 1780,
+          "finMs": 1960
+        },
+        {
+          "palabra": "dar",
+          "inicioMs": 1960,
+          "finMs": 2080
+        },
+        {
+          "palabra": "a",
+          "inicioMs": 2080,
+          "finMs": 2200
+        },
+        {
+          "palabra": "luz",
+          "inicioMs": 2200,
+          "finMs": 2320
+        },
+        {
+          "palabra": "acompañaban",
+          "inicioMs": 2320,
+          "finMs": 3060
+        },
+        {
+          "palabra": "al",
+          "inicioMs": 3060,
+          "finMs": 3220
+        },
+        {
+          "palabra": "Sol",
+          "inicioMs": 3220,
+          "finMs": 3500
+        },
+        {
+          "palabra": "Quienes",
+          "inicioMs": 3740,
+          "finMs": 3980
+        },
+        {
+          "palabra": "morían",
+          "inicioMs": 3980,
+          "finMs": 4260
+        },
+        {
+          "palabra": "ahogados",
+          "inicioMs": 4260,
+          "finMs": 4740
+        },
+        {
+          "palabra": "o",
+          "inicioMs": 4740,
+          "finMs": 4940
+        },
+        {
+          "palabra": "por",
+          "inicioMs": 4940,
+          "finMs": 5100
+        },
+        {
+          "palabra": "un",
+          "inicioMs": 5100,
+          "finMs": 5240
+        },
+        {
+          "palabra": "rayo",
+          "inicioMs": 5240,
+          "finMs": 5540
+        },
+        {
+          "palabra": "iban",
+          "inicioMs": 5540,
+          "finMs": 5780
+        },
+        {
+          "palabra": "al",
+          "inicioMs": 5780,
+          "finMs": 5900
+        },
+        {
+          "palabra": "Tlalocan",
+          "inicioMs": 5900,
+          "finMs": 6440
+        },
+        {
+          "palabra": "un",
+          "inicioMs": 6580,
+          "finMs": 6680
+        },
+        {
+          "palabra": "paraíso",
+          "inicioMs": 6680,
+          "finMs": 7140
+        },
+        {
+          "palabra": "del",
+          "inicioMs": 7140,
+          "finMs": 7280
+        },
+        {
+          "palabra": "agua",
+          "inicioMs": 7280,
+          "finMs": 7560
+        },
+        {
+          "palabra": "Los",
+          "inicioMs": 7780,
+          "finMs": 7900
+        },
+        {
+          "palabra": "bebés",
+          "inicioMs": 7900,
+          "finMs": 8320
+        },
+        {
+          "palabra": "a",
+          "inicioMs": 8440,
+          "finMs": 8500
+        },
+        {
+          "palabra": "un",
+          "inicioMs": 8500,
+          "finMs": 8640
+        },
+        {
+          "palabra": "árbol",
+          "inicioMs": 8640,
+          "finMs": 8920
+        },
+        {
+          "palabra": "que",
+          "inicioMs": 8920,
+          "finMs": 9080
+        },
+        {
+          "palabra": "los",
+          "inicioMs": 9080,
+          "finMs": 9200
+        },
+        {
+          "palabra": "alimentaba",
+          "inicioMs": 9200,
+          "finMs": 9820
+        },
+        {
+          "palabra": "Y",
+          "inicioMs": 10060,
+          "finMs": 10140
+        },
+        {
+          "palabra": "casi",
+          "inicioMs": 10140,
+          "finMs": 10360
+        },
+        {
+          "palabra": "todos",
+          "inicioMs": 10360,
+          "finMs": 10580
+        },
+        {
+          "palabra": "los",
+          "inicioMs": 10580,
+          "finMs": 10740
+        },
+        {
+          "palabra": "demás",
+          "inicioMs": 10740,
+          "finMs": 11000
+        },
+        {
+          "palabra": "al",
+          "inicioMs": 11220,
+          "finMs": 11300
+        },
+        {
+          "palabra": "Mictlán",
+          "inicioMs": 11300,
+          "finMs": 11800
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "texto": "El Mictlán no era un castigo. Era un viaje de cuatro años a través de nueve niveles subterráneos. Y nadie lo hacía solo: un perro xoloitzcuintle con una mancha clara en el lomo te esperaba para ser tu guía.",
+      "icono": "Footprints",
+      "colorIcono": "#FBBF24",
+      "tituloVisual": "9 NIVELES • 4 AÑOS",
+      "composicionVisual": "plano_general",
+      "escenario": "escalones_mictlan_perro_guia",
+      "layout": "narrativo",
+      "transicion": "zoom_in",
+      "efectosCamara": [
+        "punch",
+        "drift"
+      ],
+      "sfx": "sfx/sfx_pasos_eco_ladrido.wav",
+      "volumenSfx": 0.24,
+      "palabrasClave": [
+        "mictlán",
+        "viaje",
+        "cuatro",
+        "años",
+        "nueve",
+        "niveles",
+        "xoloitzcuintle",
+        "guía"
+      ],
+      "personajes": [
+        {
+          "id": "stickman_alma",
+          "nombre": "Stickman Alma",
+          "posicion": {
+            "x": -220,
+            "y": 50
+          },
+          "escala": 1.0,
+          "orientacion": "derecha",
+          "colorRim": "#FDE047",
+          "halo": true,
+          "habla": true,
+          "capaZ": 12,
+          "acciones": [
+            {
+              "tipo": "personalizada",
+              "pasos": [
+                {
+                  "inicioProgreso": 0,
+                  "finProgreso": 0.4,
+                  "poseId": "standing_confident",
+                  "expresion": "talking",
+                  "posicion": {
+                    "x": -220,
+                    "y": 50
+                  },
+                  "curva": "suave",
+                  "procedural": "estatico"
+                },
+                {
+                  "inicioProgreso": 0.4,
+                  "finProgreso": 0.75,
+                  "poseId": "crouching",
+                  "expresion": "smile_soft",
+                  "posicion": {
+                    "x": -160,
+                    "y": 70
+                  },
+                  "curva": "suave",
+                  "procedural": "agachar_recoger"
+                },
+                {
+                  "inicioProgreso": 0.75,
+                  "finProgreso": 1.0,
+                  "poseId": "walking",
+                  "expresion": "smile_wide",
+                  "posicion": {
+                    "x": -80,
+                    "y": 60
+                  },
+                  "curva": "suave",
+                  "procedural": "caminar"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "perro_xolo_companero",
+          "nombre": "Xoloitzcuintle",
+          "posicion": {
+            "x": 40,
+            "y": 140
+          },
+          "escala": 1.25,
+          "orientacion": "derecha",
+          "prop": "perro_xoloitzcuintle",
+          "habla": false,
+          "capaZ": 14,
+          "acciones": [
+            {
+              "tipo": "personalizada",
+              "pasos": [
+                {
+                  "inicioProgreso": 0,
+                  "finProgreso": 0.5,
+                  "poseId": "standing_relaxed",
+                  "expresion": "smile_soft",
+                  "posicion": {
+                    "x": 20,
+                    "y": 140
+                  },
+                  "curva": "suave",
+                  "procedural": "estatico"
+                },
+                {
+                  "inicioProgreso": 0.5,
+                  "finProgreso": 1.0,
+                  "poseId": "walking",
+                  "expresion": "smile_soft",
+                  "posicion": {
+                    "x": 120,
+                    "y": 140
+                  },
+                  "curva": "suave",
+                  "procedural": "caminar"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "duracionSegundos": 10.474,
+      "palabras": [
+        {
+          "palabra": "El",
+          "inicioMs": 0,
+          "finMs": 120
+        },
+        {
+          "palabra": "Mictlán",
+          "inicioMs": 120,
+          "finMs": 520
+        },
+        {
+          "palabra": "no",
+          "inicioMs": 520,
+          "finMs": 600
+        },
+        {
+          "palabra": "era",
+          "inicioMs": 600,
+          "finMs": 700
+        },
+        {
+          "palabra": "un",
+          "inicioMs": 700,
+          "finMs": 800
+        },
+        {
+          "palabra": "castigo",
+          "inicioMs": 800,
+          "finMs": 1300
+        },
+        {
+          "palabra": "Era",
+          "inicioMs": 1500,
+          "finMs": 1600
+        },
+        {
+          "palabra": "un",
+          "inicioMs": 1600,
+          "finMs": 1700
+        },
+        {
+          "palabra": "viaje",
+          "inicioMs": 1700,
+          "finMs": 1880
+        },
+        {
+          "palabra": "de",
+          "inicioMs": 1880,
+          "finMs": 2060
+        },
+        {
+          "palabra": "cuatro",
+          "inicioMs": 2060,
+          "finMs": 2280
+        },
+        {
+          "palabra": "años",
+          "inicioMs": 2280,
+          "finMs": 2600
+        },
+        {
+          "palabra": "a",
+          "inicioMs": 2600,
+          "finMs": 2760
+        },
+        {
+          "palabra": "través",
+          "inicioMs": 2760,
+          "finMs": 2940
+        },
+        {
+          "palabra": "de",
+          "inicioMs": 2940,
+          "finMs": 3100
+        },
+        {
+          "palabra": "nueve",
+          "inicioMs": 3100,
+          "finMs": 3360
+        },
+        {
+          "palabra": "niveles",
+          "inicioMs": 3360,
+          "finMs": 3680
+        },
+        {
+          "palabra": "subterráneos",
+          "inicioMs": 3680,
+          "finMs": 4440
+        },
+        {
+          "palabra": "Y",
+          "inicioMs": 4620,
+          "finMs": 4700
+        },
+        {
+          "palabra": "nadie",
+          "inicioMs": 4700,
+          "finMs": 4900
+        },
+        {
+          "palabra": "lo",
+          "inicioMs": 4900,
+          "finMs": 5080
+        },
+        {
+          "palabra": "hacía",
+          "inicioMs": 5080,
+          "finMs": 5260
+        },
+        {
+          "palabra": "solo",
+          "inicioMs": 5260,
+          "finMs": 5620
+        },
+        {
+          "palabra": "un",
+          "inicioMs": 5920,
+          "finMs": 6060
+        },
+        {
+          "palabra": "perro",
+          "inicioMs": 6060,
+          "finMs": 6340
+        },
+        {
+          "palabra": "xoloitzcuintle",
+          "inicioMs": 6340,
+          "finMs": 7140
+        },
+        {
+          "palabra": "con",
+          "inicioMs": 7140,
+          "finMs": 7340
+        },
+        {
+          "palabra": "una",
+          "inicioMs": 7340,
+          "finMs": 7520
+        },
+        {
+          "palabra": "mancha",
+          "inicioMs": 7520,
+          "finMs": 7820
+        },
+        {
+          "palabra": "clara",
+          "inicioMs": 7820,
+          "finMs": 8080
+        },
+        {
+          "palabra": "en",
+          "inicioMs": 8080,
+          "finMs": 8200
+        },
+        {
+          "palabra": "el",
+          "inicioMs": 8200,
+          "finMs": 8320
+        },
+        {
+          "palabra": "lomo",
+          "inicioMs": 8320,
+          "finMs": 8540
+        },
+        {
+          "palabra": "te",
+          "inicioMs": 8540,
+          "finMs": 8680
+        },
+        {
+          "palabra": "esperaba",
+          "inicioMs": 8680,
+          "finMs": 9080
+        },
+        {
+          "palabra": "para",
+          "inicioMs": 9080,
+          "finMs": 9280
+        },
+        {
+          "palabra": "ser",
+          "inicioMs": 9280,
+          "finMs": 9440
+        },
+        {
+          "palabra": "tu",
+          "inicioMs": 9440,
+          "finMs": 9620
+        },
+        {
+          "palabra": "guía",
+          "inicioMs": 9620,
+          "finMs": 9880
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "texto": "Cada nivel era una prueba: dos cerros que se juntaban para aplastarte, un monte cubierto de navajas de obsidiana, y un viento tan frío y afilado que cortaba como cuchillo. El perro no peleaba; te mostraba por dónde pisar.",
+      "icono": "Mountain",
+      "colorIcono": "#EF4444",
+      "tituloVisual": "PRUEBAS DE OBSIDIANA",
+      "composicionVisual": "plano_general",
+      "escenario": "obstaculos_montanas_viento_obsidiana",
+      "layout": "narrativo",
+      "transicion": "whip_right",
+      "efectosCamara": [
+        "shake",
+        "punch"
+      ],
+      "sfx": "sfx/sfx_montanas_choque_viento.wav",
+      "volumenSfx": 0.25,
+      "palabrasClave": [
+        "prueba",
+        "cerros",
+        "aplastarte",
+        "obsidiana",
+        "viento",
+        "cuchillo",
+        "pisar"
+      ],
+      "personajes": [
+        {
+          "id": "stickman_alma_esquiva",
+          "nombre": "Stickman Alma",
+          "posicion": {
+            "x": -180,
+            "y": 70
+          },
+          "escala": 1.0,
+          "orientacion": "derecha",
+          "colorRim": "#FDE047",
+          "halo": true,
+          "habla": true,
+          "capaZ": 12,
+          "acciones": [
+            {
+              "tipo": "personalizada",
+              "pasos": [
+                {
+                  "inicioProgreso": 0,
+                  "finProgreso": 0.35,
+                  "poseId": "running_escape",
+                  "expresion": "shocked",
+                  "posicion": {
+                    "x": -240,
+                    "y": 60
+                  },
+                  "curva": "impacto",
+                  "procedural": "correr"
+                },
+                {
+                  "inicioProgreso": 0.35,
+                  "finProgreso": 0.7,
+                  "poseId": "protecting_shielding",
+                  "expresion": "scared",
+                  "posicion": {
+                    "x": -140,
+                    "y": 75
+                  },
+                  "curva": "suave",
+                  "procedural": "temblar"
+                },
+                {
+                  "inicioProgreso": 0.7,
+                  "finProgreso": 1.0,
+                  "poseId": "crouching",
+                  "expresion": "talking",
+                  "posicion": {
+                    "x": -60,
+                    "y": 80
+                  },
+                  "curva": "suave",
+                  "procedural": "esfuerzo"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "perro_xolo_salto",
+          "nombre": "Xoloitzcuintle",
+          "posicion": {
+            "x": 140,
+            "y": 140
+          },
+          "escala": 1.2,
+          "orientacion": "derecha",
+          "prop": "perro_xoloitzcuintle",
+          "habla": false,
+          "capaZ": 14,
+          "acciones": [
+            {
+              "tipo": "personalizada",
+              "pasos": [
+                {
+                  "inicioProgreso": 0,
+                  "finProgreso": 0.4,
+                  "poseId": "jumping",
+                  "expresion": "neutral",
+                  "posicion": {
+                    "x": 80,
+                    "y": 100
+                  },
+                  "curva": "rebote",
+                  "procedural": "rebotar"
+                },
+                {
+                  "inicioProgreso": 0.4,
+                  "finProgreso": 1.0,
+                  "poseId": "walking",
+                  "expresion": "neutral",
+                  "posicion": {
+                    "x": 200,
+                    "y": 140
+                  },
+                  "curva": "suave",
+                  "procedural": "caminar"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "duracionSegundos": 13.018,
+      "palabras": [
+        {
+          "palabra": "Cada",
+          "inicioMs": 0,
+          "finMs": 280
+        },
+        {
+          "palabra": "nivel",
+          "inicioMs": 280,
+          "finMs": 600
+        },
+        {
+          "palabra": "era",
+          "inicioMs": 600,
+          "finMs": 980
+        },
+        {
+          "palabra": "una",
+          "inicioMs": 980,
+          "finMs": 1160
+        },
+        {
+          "palabra": "prueba",
+          "inicioMs": 1160,
+          "finMs": 1500
+        },
+        {
+          "palabra": "dos",
+          "inicioMs": 1760,
+          "finMs": 1920
+        },
+        {
+          "palabra": "cerros",
+          "inicioMs": 1920,
+          "finMs": 2320
+        },
+        {
+          "palabra": "que",
+          "inicioMs": 2320,
+          "finMs": 2440
+        },
+        {
+          "palabra": "se",
+          "inicioMs": 2440,
+          "finMs": 2560
+        },
+        {
+          "palabra": "juntaban",
+          "inicioMs": 2560,
+          "finMs": 3000
+        },
+        {
+          "palabra": "para",
+          "inicioMs": 3000,
+          "finMs": 3240
+        },
+        {
+          "palabra": "aplastarte",
+          "inicioMs": 3240,
+          "finMs": 3900
+        },
+        {
+          "palabra": "un",
+          "inicioMs": 4260,
+          "finMs": 4380
+        },
+        {
+          "palabra": "monte",
+          "inicioMs": 4380,
+          "finMs": 4640
+        },
+        {
+          "palabra": "cubierto",
+          "inicioMs": 4640,
+          "finMs": 5060
+        },
+        {
+          "palabra": "de",
+          "inicioMs": 5060,
+          "finMs": 5240
+        },
+        {
+          "palabra": "navajas",
+          "inicioMs": 5240,
+          "finMs": 5660
+        },
+        {
+          "palabra": "de",
+          "inicioMs": 5660,
+          "finMs": 5740
+        },
+        {
+          "palabra": "obsidiana",
+          "inicioMs": 5740,
+          "finMs": 6280
+        },
+        {
+          "palabra": "y",
+          "inicioMs": 6500,
+          "finMs": 6580
+        },
+        {
+          "palabra": "un",
+          "inicioMs": 6580,
+          "finMs": 6680
+        },
+        {
+          "palabra": "viento",
+          "inicioMs": 6680,
+          "finMs": 6940
+        },
+        {
+          "palabra": "tan",
+          "inicioMs": 6940,
+          "finMs": 7120
+        },
+        {
+          "palabra": "frío",
+          "inicioMs": 7120,
+          "finMs": 7480
+        },
+        {
+          "palabra": "y",
+          "inicioMs": 7480,
+          "finMs": 7620
+        },
+        {
+          "palabra": "afilado",
+          "inicioMs": 7620,
+          "finMs": 8020
+        },
+        {
+          "palabra": "que",
+          "inicioMs": 8020,
+          "finMs": 8200
+        },
+        {
+          "palabra": "cortaba",
+          "inicioMs": 8200,
+          "finMs": 8620
+        },
+        {
+          "palabra": "como",
+          "inicioMs": 8620,
+          "finMs": 8840
+        },
+        {
+          "palabra": "cuchillo",
+          "inicioMs": 8840,
+          "finMs": 9360
+        },
+        {
+          "palabra": "El",
+          "inicioMs": 9700,
+          "finMs": 9840
+        },
+        {
+          "palabra": "perro",
+          "inicioMs": 9840,
+          "finMs": 10120
+        },
+        {
+          "palabra": "no",
+          "inicioMs": 10120,
+          "finMs": 10280
+        },
+        {
+          "palabra": "peleaba",
+          "inicioMs": 10280,
+          "finMs": 10740
+        },
+        {
+          "palabra": "te",
+          "inicioMs": 10880,
+          "finMs": 10940
+        },
+        {
+          "palabra": "mostraba",
+          "inicioMs": 10940,
+          "finMs": 11380
+        },
+        {
+          "palabra": "por",
+          "inicioMs": 11380,
+          "finMs": 11560
+        },
+        {
+          "palabra": "dónde",
+          "inicioMs": 11560,
+          "finMs": 11780
+        },
+        {
+          "palabra": "pisar",
+          "inicioMs": 11780,
+          "finMs": 12260
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "texto": "El primer gran obstáculo era el río Apanohuayan, ancho y de aguas oscuras. Solo el perro podía cruzarlo a nado, con el alma sujetándose a su lomo. Por eso hoy todavía se colocan figurillas de perro en muchas ofrendas.",
+      "icono": "Waves",
+      "colorIcono": "#38BDF8",
+      "tituloVisual": "RÍO APANOHUAYAN",
+      "composicionVisual": "plano_general",
+      "escenario": "rio_apanohuayan_cruce_ofrenda",
+      "layout": "narrativo",
+      "transicion": "zoom_in",
+      "efectosCamara": [
+        "punch",
+        "drift"
+      ],
+      "sfx": "sfx/sfx_rio_apanohuayan_cruzar.wav",
+      "volumenSfx": 0.25,
+      "palabrasClave": [
+        "río",
+        "apanohuayan",
+        "oscuras",
+        "perro",
+        "nado",
+        "alma",
+        "figurillas",
+        "ofrendas"
+      ],
+      "personajes": [
+        {
+          "id": "stickman_vivo_altar",
+          "nombre": "Stickman",
+          "posicion": {
+            "x": -260,
+            "y": 280
+          },
+          "escala": 0.95,
+          "orientacion": "derecha",
+          "habla": true,
+          "capaZ": 20,
+          "acciones": [
+            {
+              "tipo": "personalizada",
+              "pasos": [
+                {
+                  "inicioProgreso": 0,
+                  "finProgreso": 0.5,
+                  "poseId": "pointing_right",
+                  "expresion": "talking_enthusiastic",
+                  "posicion": {
+                    "x": -260,
+                    "y": 280
+                  },
+                  "curva": "suave",
+                  "procedural": "estatico"
+                },
+                {
+                  "inicioProgreso": 0.5,
+                  "finProgreso": 1.0,
+                  "poseId": "presenting_object",
+                  "expresion": "eureka",
+                  "posicion": {
+                    "x": -220,
+                    "y": 280
+                  },
+                  "curva": "suave",
+                  "procedural": "estatico"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "duracionSegundos": 12.778,
+      "palabras": [
+        {
+          "palabra": "El",
+          "inicioMs": 0,
+          "finMs": 220
+        },
+        {
+          "palabra": "primer",
+          "inicioMs": 220,
+          "finMs": 440
+        },
+        {
+          "palabra": "gran",
+          "inicioMs": 440,
+          "finMs": 660
+        },
+        {
+          "palabra": "obstáculo",
+          "inicioMs": 660,
+          "finMs": 1200
+        },
+        {
+          "palabra": "era",
+          "inicioMs": 1200,
+          "finMs": 1500
+        },
+        {
+          "palabra": "el",
+          "inicioMs": 1500,
+          "finMs": 1640
+        },
+        {
+          "palabra": "río",
+          "inicioMs": 1640,
+          "finMs": 1920
+        },
+        {
+          "palabra": "Apanohuayan",
+          "inicioMs": 1920,
+          "finMs": 2880
+        },
+        {
+          "palabra": "ancho",
+          "inicioMs": 3180,
+          "finMs": 3500
+        },
+        {
+          "palabra": "y",
+          "inicioMs": 3500,
+          "finMs": 3720
+        },
+        {
+          "palabra": "de",
+          "inicioMs": 3720,
+          "finMs": 3820
+        },
+        {
+          "palabra": "aguas",
+          "inicioMs": 3820,
+          "finMs": 4080
+        },
+        {
+          "palabra": "oscuras",
+          "inicioMs": 4080,
+          "finMs": 4500
+        },
+        {
+          "palabra": "Solo",
+          "inicioMs": 4780,
+          "finMs": 4880
+        },
+        {
+          "palabra": "el",
+          "inicioMs": 4880,
+          "finMs": 5080
+        },
+        {
+          "palabra": "perro",
+          "inicioMs": 5080,
+          "finMs": 5320
+        },
+        {
+          "palabra": "podía",
+          "inicioMs": 5320,
+          "finMs": 5580
+        },
+        {
+          "palabra": "cruzarlo",
+          "inicioMs": 5580,
+          "finMs": 6020
+        },
+        {
+          "palabra": "a",
+          "inicioMs": 6020,
+          "finMs": 6120
+        },
+        {
+          "palabra": "nado",
+          "inicioMs": 6120,
+          "finMs": 6400
+        },
+        {
+          "palabra": "con",
+          "inicioMs": 6540,
+          "finMs": 6620
+        },
+        {
+          "palabra": "el",
+          "inicioMs": 6620,
+          "finMs": 6760
+        },
+        {
+          "palabra": "alma",
+          "inicioMs": 6760,
+          "finMs": 6940
+        },
+        {
+          "palabra": "sujetándose",
+          "inicioMs": 6940,
+          "finMs": 7580
+        },
+        {
+          "palabra": "a",
+          "inicioMs": 7580,
+          "finMs": 7700
+        },
+        {
+          "palabra": "su",
+          "inicioMs": 7700,
+          "finMs": 7780
+        },
+        {
+          "palabra": "lomo",
+          "inicioMs": 7780,
+          "finMs": 8080
+        },
+        {
+          "palabra": "Por",
+          "inicioMs": 8320,
+          "finMs": 8440
+        },
+        {
+          "palabra": "eso",
+          "inicioMs": 8440,
+          "finMs": 8680
+        },
+        {
+          "palabra": "hoy",
+          "inicioMs": 8680,
+          "finMs": 9000
+        },
+        {
+          "palabra": "todavía",
+          "inicioMs": 9000,
+          "finMs": 9360
+        },
+        {
+          "palabra": "se",
+          "inicioMs": 9360,
+          "finMs": 9600
+        },
+        {
+          "palabra": "colocan",
+          "inicioMs": 9600,
+          "finMs": 10020
+        },
+        {
+          "palabra": "figurillas",
+          "inicioMs": 10020,
+          "finMs": 10560
+        },
+        {
+          "palabra": "de",
+          "inicioMs": 10560,
+          "finMs": 10740
+        },
+        {
+          "palabra": "perro",
+          "inicioMs": 10740,
+          "finMs": 11100
+        },
+        {
+          "palabra": "en",
+          "inicioMs": 11100,
+          "finMs": 11280
+        },
+        {
+          "palabra": "muchas",
+          "inicioMs": 11280,
+          "finMs": 11580
+        },
+        {
+          "palabra": "ofrendas",
+          "inicioMs": 11580,
+          "finMs": 12180
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "texto": "Al cabo de cuatro años, el alma llegaba al noveno nivel, el Chignahumictlán, donde residían los señores de la muerte. No había fuego ni condena: solo descanso definitivo, la disolución en la nada.",
+      "icono": "Sparkles",
+      "colorIcono": "#FDE047",
+      "tituloVisual": "DESCANSO DEFINITIVO",
+      "composicionVisual": "plano_general",
+      "escenario": "sala_blanca_descanso_chignahumictlan",
+      "layout": "narrativo",
+      "transicion": "corte",
+      "efectosCamara": [
+        "punch",
+        "drift"
+      ],
+      "sfx": "sfx/sfx_chignahumictlan_descanso.wav",
+      "volumenSfx": 0.22,
+      "palabrasClave": [
+        "cuatro",
+        "años",
+        "noveno",
+        "chignahumictlán",
+        "muerte",
+        "descanso",
+        "disolución"
+      ],
+      "personajes": [
+        {
+          "id": "stickman_alma_paz",
+          "nombre": "Stickman Alma",
+          "posicion": {
+            "x": -140,
+            "y": 110
+          },
+          "escala": 1.0,
+          "orientacion": "derecha",
+          "colorRim": "#FDE047",
+          "halo": true,
+          "habla": true,
+          "capaZ": 12,
+          "acciones": [
+            {
+              "tipo": "personalizada",
+              "pasos": [
+                {
+                  "inicioProgreso": 0,
+                  "finProgreso": 0.45,
+                  "poseId": "standing_relaxed",
+                  "expresion": "talking",
+                  "posicion": {
+                    "x": -140,
+                    "y": 90
+                  },
+                  "curva": "suave",
+                  "procedural": "estatico"
+                },
+                {
+                  "inicioProgreso": 0.45,
+                  "finProgreso": 1.0,
+                  "poseId": "sitting",
+                  "expresion": "smile_soft",
+                  "posicion": {
+                    "x": -140,
+                    "y": 140
+                  },
+                  "curva": "suave",
+                  "procedural": "estatico"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "perro_xolo_descanso",
+          "nombre": "Xoloitzcuintle",
+          "posicion": {
+            "x": 60,
+            "y": 150
+          },
+          "escala": 1.25,
+          "orientacion": "derecha",
+          "prop": "perro_xoloitzcuintle",
+          "habla": false,
+          "capaZ": 14,
+          "acciones": [
+            {
+              "tipo": "personalizada",
+              "pasos": [
+                {
+                  "inicioProgreso": 0,
+                  "finProgreso": 1.0,
+                  "poseId": "sitting",
+                  "expresion": "smile_soft",
+                  "posicion": {
+                    "x": 60,
+                    "y": 150
+                  },
+                  "curva": "suave",
+                  "procedural": "estatico"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "duracionSegundos": 10.69,
+      "palabras": [
+        {
+          "palabra": "Al",
+          "inicioMs": 0,
+          "finMs": 240
+        },
+        {
+          "palabra": "cabo",
+          "inicioMs": 240,
+          "finMs": 480
+        },
+        {
+          "palabra": "de",
+          "inicioMs": 480,
+          "finMs": 620
+        },
+        {
+          "palabra": "cuatro",
+          "inicioMs": 620,
+          "finMs": 860
+        },
+        {
+          "palabra": "años",
+          "inicioMs": 860,
+          "finMs": 1260
+        },
+        {
+          "palabra": "el",
+          "inicioMs": 1580,
+          "finMs": 1680
+        },
+        {
+          "palabra": "alma",
+          "inicioMs": 1680,
+          "finMs": 1860
+        },
+        {
+          "palabra": "llegaba",
+          "inicioMs": 1860,
+          "finMs": 2240
+        },
+        {
+          "palabra": "al",
+          "inicioMs": 2240,
+          "finMs": 2380
+        },
+        {
+          "palabra": "noveno",
+          "inicioMs": 2380,
+          "finMs": 2640
+        },
+        {
+          "palabra": "nivel",
+          "inicioMs": 2640,
+          "finMs": 2900
+        },
+        {
+          "palabra": "el",
+          "inicioMs": 3120,
+          "finMs": 3220
+        },
+        {
+          "palabra": "Chignahumictlán",
+          "inicioMs": 3220,
+          "finMs": 4160
+        },
+        {
+          "palabra": "donde",
+          "inicioMs": 4380,
+          "finMs": 4540
+        },
+        {
+          "palabra": "residían",
+          "inicioMs": 4540,
+          "finMs": 5020
+        },
+        {
+          "palabra": "los",
+          "inicioMs": 5020,
+          "finMs": 5160
+        },
+        {
+          "palabra": "señores",
+          "inicioMs": 5160,
+          "finMs": 5480
+        },
+        {
+          "palabra": "de",
+          "inicioMs": 5480,
+          "finMs": 5580
+        },
+        {
+          "palabra": "la",
+          "inicioMs": 5580,
+          "finMs": 5680
+        },
+        {
+          "palabra": "muerte",
+          "inicioMs": 5680,
+          "finMs": 6020
+        },
+        {
+          "palabra": "No",
+          "inicioMs": 6360,
+          "finMs": 6420
+        },
+        {
+          "palabra": "había",
+          "inicioMs": 6420,
+          "finMs": 6560
+        },
+        {
+          "palabra": "fuego",
+          "inicioMs": 6560,
+          "finMs": 6780
+        },
+        {
+          "palabra": "ni",
+          "inicioMs": 6780,
+          "finMs": 7000
+        },
+        {
+          "palabra": "condena",
+          "inicioMs": 7000,
+          "finMs": 7520
+        },
+        {
+          "palabra": "solo",
+          "inicioMs": 7720,
+          "finMs": 7840
+        },
+        {
+          "palabra": "descanso",
+          "inicioMs": 7840,
+          "finMs": 8280
+        },
+        {
+          "palabra": "definitivo",
+          "inicioMs": 8280,
+          "finMs": 8900
+        },
+        {
+          "palabra": "la",
+          "inicioMs": 9080,
+          "finMs": 9140
+        },
+        {
+          "palabra": "disolución",
+          "inicioMs": 9140,
+          "finMs": 9620
+        },
+        {
+          "palabra": "en",
+          "inicioMs": 9620,
+          "finMs": 9780
+        },
+        {
+          "palabra": "la",
+          "inicioMs": 9780,
+          "finMs": 9860
+        },
+        {
+          "palabra": "nada",
+          "inicioMs": 9860,
+          "finMs": 10120
+        }
+      ]
+    },
+    {
+      "id": 7,
+      "texto": "Esto no lo inventó una película. Viene de códices coloniales como el de Sahagún. Con la llegada de los españoles, ese viaje de cuatro años se mezcló con el calendario católico de Todos los Santos.",
+      "icono": "BookOpen",
+      "colorIcono": "#F59E0B",
+      "tituloVisual": "CÓDICES Y SINCRETISMO",
+      "composicionVisual": "plano_general",
+      "escenario": "cempasuchil_cruz_codice_historia",
+      "layout": "narrativo",
+      "transicion": "whip_right",
+      "efectosCamara": [
+        "punch",
+        "drift"
+      ],
+      "sfx": "sfx/sfx_codice_hojas_acorde.wav",
+      "volumenSfx": 0.22,
+      "palabrasClave": [
+        "película",
+        "códices",
+        "sahagún",
+        "españoles",
+        "viaje",
+        "calendario",
+        "católico"
+      ],
+      "personajes": [
+        {
+          "id": "stickman_investigador",
+          "nombre": "Stickman",
+          "posicion": {
+            "x": -260,
+            "y": 80
+          },
+          "escala": 1.0,
+          "orientacion": "derecha",
+          "prop": "lupa_gigante_arqueologia",
+          "habla": true,
+          "capaZ": 15,
+          "acciones": [
+            {
+              "tipo": "personalizada",
+              "pasos": [
+                {
+                  "inicioProgreso": 0,
+                  "finProgreso": 0.5,
+                  "poseId": "investigating_magnifier",
+                  "expresion": "analytical",
+                  "posicion": {
+                    "x": -260,
+                    "y": 80
+                  },
+                  "curva": "suave",
+                  "procedural": "manipular"
+                },
+                {
+                  "inicioProgreso": 0.5,
+                  "finProgreso": 1.0,
+                  "poseId": "presenting_object",
+                  "expresion": "eureka",
+                  "posicion": {
+                    "x": -200,
+                    "y": 80
+                  },
+                  "curva": "suave",
+                  "procedural": "estatico"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "duracionSegundos": 10.714,
+      "palabras": [
+        {
+          "palabra": "Esto",
+          "inicioMs": 0,
+          "finMs": 320
+        },
+        {
+          "palabra": "no",
+          "inicioMs": 320,
+          "finMs": 440
+        },
+        {
+          "palabra": "lo",
+          "inicioMs": 440,
+          "finMs": 560
+        },
+        {
+          "palabra": "inventó",
+          "inicioMs": 560,
+          "finMs": 880
+        },
+        {
+          "palabra": "una",
+          "inicioMs": 880,
+          "finMs": 1020
+        },
+        {
+          "palabra": "película",
+          "inicioMs": 1020,
+          "finMs": 1480
+        },
+        {
+          "palabra": "Viene",
+          "inicioMs": 1780,
+          "finMs": 1980
+        },
+        {
+          "palabra": "de",
+          "inicioMs": 1980,
+          "finMs": 2120
+        },
+        {
+          "palabra": "códices",
+          "inicioMs": 2120,
+          "finMs": 2520
+        },
+        {
+          "palabra": "coloniales",
+          "inicioMs": 2520,
+          "finMs": 3240
+        },
+        {
+          "palabra": "como",
+          "inicioMs": 3240,
+          "finMs": 3400
+        },
+        {
+          "palabra": "el",
+          "inicioMs": 3400,
+          "finMs": 3540
+        },
+        {
+          "palabra": "de",
+          "inicioMs": 3540,
+          "finMs": 3600
+        },
+        {
+          "palabra": "Sahagún",
+          "inicioMs": 3600,
+          "finMs": 4180
+        },
+        {
+          "palabra": "Con",
+          "inicioMs": 4420,
+          "finMs": 4500
+        },
+        {
+          "palabra": "la",
+          "inicioMs": 4500,
+          "finMs": 4600
+        },
+        {
+          "palabra": "llegada",
+          "inicioMs": 4600,
+          "finMs": 4960
+        },
+        {
+          "palabra": "de",
+          "inicioMs": 4960,
+          "finMs": 5120
+        },
+        {
+          "palabra": "los",
+          "inicioMs": 5120,
+          "finMs": 5220
+        },
+        {
+          "palabra": "españoles",
+          "inicioMs": 5220,
+          "finMs": 5880
+        },
+        {
+          "palabra": "ese",
+          "inicioMs": 6080,
+          "finMs": 6280
+        },
+        {
+          "palabra": "viaje",
+          "inicioMs": 6280,
+          "finMs": 6480
+        },
+        {
+          "palabra": "de",
+          "inicioMs": 6480,
+          "finMs": 6700
+        },
+        {
+          "palabra": "cuatro",
+          "inicioMs": 6700,
+          "finMs": 6920
+        },
+        {
+          "palabra": "años",
+          "inicioMs": 6920,
+          "finMs": 7300
+        },
+        {
+          "palabra": "se",
+          "inicioMs": 7300,
+          "finMs": 7500
+        },
+        {
+          "palabra": "mezcló",
+          "inicioMs": 7500,
+          "finMs": 7880
+        },
+        {
+          "palabra": "con",
+          "inicioMs": 7880,
+          "finMs": 8040
+        },
+        {
+          "palabra": "el",
+          "inicioMs": 8040,
+          "finMs": 8160
+        },
+        {
+          "palabra": "calendario",
+          "inicioMs": 8160,
+          "finMs": 8640
+        },
+        {
+          "palabra": "católico",
+          "inicioMs": 8640,
+          "finMs": 9220
+        },
+        {
+          "palabra": "de",
+          "inicioMs": 9220,
+          "finMs": 9300
+        },
+        {
+          "palabra": "Todos",
+          "inicioMs": 9300,
+          "finMs": 9500
+        },
+        {
+          "palabra": "los",
+          "inicioMs": 9500,
+          "finMs": 9720
+        },
+        {
+          "palabra": "Santos",
+          "inicioMs": 9720,
+          "finMs": 10040
+        }
+      ]
+    },
+    {
+      "id": 8,
+      "texto": "Así que cuando veas agua en un altar, es para calmar la sed del viaje. La comida, para reponer fuerzas. Y el perro, para que nadie camine solo. ¿A cuál de los cuatro destinos te gustaría llegar?",
+      "icono": "Heart",
+      "colorIcono": "#F43F5E",
+      "tituloVisual": "¿A CUÁL IRÍAS TÚ?",
+      "composicionVisual": "plano_general",
+      "escenario": "ofrenda_final_camino_petalos",
+      "layout": "narrativo",
+      "transicion": "zoom_in",
+      "efectosCamara": [
+        "punch",
+        "drift"
+      ],
+      "sfx": "sfx/sfx_ofrenda_cempasuchil_vela.wav",
+      "volumenSfx": 0.25,
+      "palabrasClave": [
+        "agua",
+        "altar",
+        "sed",
+        "comida",
+        "perro",
+        "solo",
+        "destinos"
+      ],
+      "personajes": [
+        {
+          "id": "stickman_ofrenda_final",
+          "nombre": "Stickman",
+          "posicion": {
+            "x": -250,
+            "y": 140
+          },
+          "escala": 1.0,
+          "orientacion": "derecha",
+          "prop": "cuenco_agua_petalos",
+          "habla": true,
+          "capaZ": 15,
+          "acciones": [
+            {
+              "tipo": "personalizada",
+              "pasos": [
+                {
+                  "inicioProgreso": 0,
+                  "finProgreso": 0.45,
+                  "poseId": "crouching",
+                  "expresion": "talking",
+                  "posicion": {
+                    "x": -250,
+                    "y": 180
+                  },
+                  "curva": "suave",
+                  "procedural": "agachar_recoger"
+                },
+                {
+                  "inicioProgreso": 0.45,
+                  "finProgreso": 0.8,
+                  "poseId": "standing_relaxed",
+                  "expresion": "smile_soft",
+                  "posicion": {
+                    "x": -210,
+                    "y": 140
+                  },
+                  "curva": "suave",
+                  "procedural": "estatico"
+                },
+                {
+                  "inicioProgreso": 0.8,
+                  "finProgreso": 1.0,
+                  "poseId": "nodding_yes",
+                  "expresion": "smile_wide",
+                  "posicion": {
+                    "x": -230,
+                    "y": 140
+                  },
+                  "curva": "suave",
+                  "procedural": "estatico"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "duracionSegundos": 10.738,
+      "palabras": [
+        {
+          "palabra": "Así",
+          "inicioMs": 0,
+          "finMs": 320
+        },
+        {
+          "palabra": "que",
+          "inicioMs": 320,
+          "finMs": 480
+        },
+        {
+          "palabra": "cuando",
+          "inicioMs": 480,
+          "finMs": 700
+        },
+        {
+          "palabra": "veas",
+          "inicioMs": 700,
+          "finMs": 1040
+        },
+        {
+          "palabra": "agua",
+          "inicioMs": 1040,
+          "finMs": 1200
+        },
+        {
+          "palabra": "en",
+          "inicioMs": 1200,
+          "finMs": 1340
+        },
+        {
+          "palabra": "un",
+          "inicioMs": 1340,
+          "finMs": 1420
+        },
+        {
+          "palabra": "altar",
+          "inicioMs": 1420,
+          "finMs": 1740
+        },
+        {
+          "palabra": "es",
+          "inicioMs": 2100,
+          "finMs": 2200
+        },
+        {
+          "palabra": "para",
+          "inicioMs": 2200,
+          "finMs": 2380
+        },
+        {
+          "palabra": "calmar",
+          "inicioMs": 2380,
+          "finMs": 2660
+        },
+        {
+          "palabra": "la",
+          "inicioMs": 2660,
+          "finMs": 2840
+        },
+        {
+          "palabra": "sed",
+          "inicioMs": 2840,
+          "finMs": 3020
+        },
+        {
+          "palabra": "del",
+          "inicioMs": 3020,
+          "finMs": 3200
+        },
+        {
+          "palabra": "viaje",
+          "inicioMs": 3200,
+          "finMs": 3560
+        },
+        {
+          "palabra": "La",
+          "inicioMs": 3860,
+          "finMs": 3940
+        },
+        {
+          "palabra": "comida",
+          "inicioMs": 3940,
+          "finMs": 4280
+        },
+        {
+          "palabra": "para",
+          "inicioMs": 4400,
+          "finMs": 4580
+        },
+        {
+          "palabra": "reponer",
+          "inicioMs": 4580,
+          "finMs": 4960
+        },
+        {
+          "palabra": "fuerzas",
+          "inicioMs": 4960,
+          "finMs": 5540
+        },
+        {
+          "palabra": "Y",
+          "inicioMs": 5840,
+          "finMs": 5900
+        },
+        {
+          "palabra": "el",
+          "inicioMs": 5900,
+          "finMs": 6040
+        },
+        {
+          "palabra": "perro",
+          "inicioMs": 6040,
+          "finMs": 6400
+        },
+        {
+          "palabra": "para",
+          "inicioMs": 6520,
+          "finMs": 6640
+        },
+        {
+          "palabra": "que",
+          "inicioMs": 6640,
+          "finMs": 6800
+        },
+        {
+          "palabra": "nadie",
+          "inicioMs": 6800,
+          "finMs": 7000
+        },
+        {
+          "palabra": "camine",
+          "inicioMs": 7000,
+          "finMs": 7400
+        },
+        {
+          "palabra": "solo",
+          "inicioMs": 7400,
+          "finMs": 7720
+        },
+        {
+          "palabra": "A",
+          "inicioMs": 7960,
+          "finMs": 8040
+        },
+        {
+          "palabra": "cuál",
+          "inicioMs": 8040,
+          "finMs": 8200
+        },
+        {
+          "palabra": "de",
+          "inicioMs": 8200,
+          "finMs": 8340
+        },
+        {
+          "palabra": "los",
+          "inicioMs": 8340,
+          "finMs": 8460
+        },
+        {
+          "palabra": "cuatro",
+          "inicioMs": 8460,
+          "finMs": 8700
+        },
+        {
+          "palabra": "destinos",
+          "inicioMs": 8700,
+          "finMs": 9160
+        },
+        {
+          "palabra": "te",
+          "inicioMs": 9160,
+          "finMs": 9340
+        },
+        {
+          "palabra": "gustaría",
+          "inicioMs": 9340,
+          "finMs": 9660
+        },
+        {
+          "palabra": "llegar",
+          "inicioMs": 9660,
+          "finMs": 10000
+        }
+      ]
+    }
+  ]
+}

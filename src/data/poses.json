@@ -2,13 +2,13 @@
   "version": "2.0.0",
   "referenciaMaestra": "poses/master_reference.svg",
   "totales": {
-    "posesCorporales": 68,
+    "posesCorporales": 69,
     "expresionesFaciales": 24,
-    "propsGenerales": 262,
+    "propsGenerales": 459,
     "propsFestivos": 131,
     "combinacionesCompuestas": 34,
     "combinacionesFestivas": 20,
-    "totalRecursos": 539
+    "totalRecursos": 737
   },
   "compatibilidadLegacy": {
     "normal": "standing_relaxed",
@@ -140,6 +140,27 @@
         "agachado",
         "observando_suelo",
         "bajo"
+      ],
+      "compatibleComposicion": true
+    },
+    {
+      "id": "acariciando_perro",
+      "nombre": "Acariciando al perro",
+      "categoria": "base",
+      "subcategoria": "neutral",
+      "emocion": "happy",
+      "accion": "petting",
+      "propsAsociados": [],
+      "ruta": "poses/base/acariciando_perro.svg",
+      "formato": "svg",
+      "etiquetas": [
+        "acariciar",
+        "perro",
+        "xoloitzcuintle",
+        "mascota",
+        "afecto",
+        "crouching",
+        "acariciando_perro"
       ],
       "compatibleComposicion": true
     },
@@ -7519,6 +7540,4676 @@
         "sellada",
         "seguridad",
         "rueda"
+      ],
+      "compatibleComposicion": true
+    },
+    {
+      "id": "prop_billiard_cue_ball",
+      "propParamId": "billiard_cue_ball",
+      "nombre": "Prop: Taco de Billar y Bola de Marfil",
+      "categoria": "props",
+      "subcategoria": "vida_cotidiana",
+      "emocion": "any",
+      "accion": "right",
+      "propsAsociados": [
+        "billiard_cue_ball"
+      ],
+      "ruta": "poses/props/prop_billiard_cue_ball.svg",
+      "formato": "svg",
+      "etiquetas": [
+        "billar",
+        "taco",
+        "bola",
+        "marfil",
+        "celuloide",
+        "juego",
+        "victoriano"
+      ],
+      "compatibleComposicion": true
+    },
+    {
+      "id": "prop_elephant_tusk_cut",
+      "propParamId": "elephant_tusk_cut",
+      "nombre": "Prop: Colmillo de Elefante con Cortes",
+      "categoria": "props",
+      "subcategoria": "historia_exploracion",
+      "emocion": "any",
+      "accion": "right",
+      "propsAsociados": [
+        "elephant_tusk_cut"
+      ],
+      "ruta": "poses/props/prop_elephant_tusk_cut.svg",
+      "formato": "svg",
+      "etiquetas": [
+        "colmillo",
+        "marfil",
+        "elefante",
+        "caza",
+        "billar",
+        "escasez"
+      ],
+      "compatibleComposicion": true
+    },
+    {
+      "id": "prop_celluloid_press",
+      "propParamId": "celluloid_press",
+      "nombre": "Prop: Prensa Térmica de Celuloide Hyatt",
+      "categoria": "props",
+      "subcategoria": "tecnologia",
+      "emocion": "any",
+      "accion": "right",
+      "propsAsociados": [
+        "celluloid_press"
+      ],
+      "ruta": "poses/props/prop_celluloid_press.svg",
+      "formato": "svg",
+      "etiquetas": [
+        "prensa",
+        "celuloide",
+        "hyatt",
+        "quimica",
+        "termoplastico",
+        "inventor"
+      ],
+      "compatibleComposicion": true
+    },
+    {
+      "id": "prop_mesa_quimica_celuloide",
+      "propParamId": "mesa_quimica_celuloide",
+      "nombre": "Prop: Estación Química de Nitrocelulosa y Alcanfor",
+      "categoria": "props",
+      "subcategoria": "educacion_ciencia",
+      "emocion": "any",
+      "accion": "left",
+      "propsAsociados": [
+        "mesa_quimica_celuloide"
+      ],
+      "ruta": "poses/props/prop_mesa_quimica_celuloide.svg",
+      "formato": "svg",
+      "etiquetas": [
+        "quimica",
+        "algodon",
+        "acido",
+        "alcanfor",
+        "celuloide",
+        "parkes",
+        "hyatt"
+      ],
+      "compatibleComposicion": true
+    },
+    {
+      "id": "prop_celluloid_ivory_ball",
+      "propParamId": "celluloid_ivory_ball",
+      "nombre": "Prop: Bola de Celuloide Marfil Sintético",
+      "categoria": "props",
+      "subcategoria": "educacion_ciencia",
+      "emocion": "any",
+      "accion": "right",
+      "propsAsociados": [
+        "celluloid_ivory_ball"
+      ],
+      "ruta": "poses/props/prop_celluloid_ivory_ball.svg",
+      "formato": "svg",
+      "etiquetas": [
+        "celuloide",
+        "bola",
+        "marfil",
+        "billar",
+        "sintetico"
+      ],
+      "compatibleComposicion": true
+    },
+    {
+      "id": "prop_paperclip_polymer_chain",
+      "propParamId": "paperclip_polymer_chain",
+      "nombre": "Prop: Demostrador Interactivo Monómero a Polímero",
+      "categoria": "props",
+      "subcategoria": "educacion_ciencia",
+      "emocion": "any",
+      "accion": "both",
+      "propsAsociados": [
+        "paperclip_polymer_chain"
+      ],
+      "ruta": "poses/props/prop_paperclip_polymer_chain.svg",
+      "formato": "svg",
+      "etiquetas": [
+        "polimero",
+        "monomero",
+        "clips",
+        "cadena",
+        "carbono",
+        "quimica",
+        "molecula"
+      ],
+      "compatibleComposicion": true
+    },
+    {
+      "id": "prop_phenol_formaldehyde_bottles",
+      "propParamId": "phenol_formaldehyde_bottles",
+      "nombre": "Prop: Botellas de Fenol y Formaldehído",
+      "categoria": "props",
+      "subcategoria": "educacion_ciencia",
+      "emocion": "any",
+      "accion": "right",
+      "propsAsociados": [
+        "phenol_formaldehyde_bottles"
+      ],
+      "ruta": "poses/props/prop_phenol_formaldehyde_bottles.svg",
+      "formato": "svg",
+      "etiquetas": [
+        "quimica",
+        "veneno",
+        "fenol",
+        "formaldehido",
+        "baquelita",
+        "alquimia",
+        "reactivos"
+      ],
+      "compatibleComposicion": true
+    },
+    {
+      "id": "prop_bakelizer_autoclave",
+      "propParamId": "bakelizer_autoclave",
+      "nombre": "Prop: Autoclave Bakelizador Monumental",
+      "categoria": "props",
+      "subcategoria": "tecnologia",
+      "emocion": "any",
+      "accion": "right",
+      "propsAsociados": [
+        "bakelizer_autoclave"
+      ],
+      "ruta": "poses/props/prop_bakelizer_autoclave.svg",
+      "formato": "svg",
+      "etiquetas": [
+        "bakelizador",
+        "autoclave",
+        "baquelita",
+        "baekeland",
+        "reactor",
+        "presion",
+        "vapor"
+      ],
+      "compatibleComposicion": true
+    },
+    {
+      "id": "prop_bakelite_molded_block",
+      "propParamId": "bakelite_molded_block",
+      "nombre": "Prop: Bloque Sólido de Baquelita Moldeada",
+      "categoria": "props",
+      "subcategoria": "tecnologia",
+      "emocion": "any",
+      "accion": "right",
+      "propsAsociados": [
+        "bakelite_molded_block"
+      ],
+      "ruta": "poses/props/prop_bakelite_molded_block.svg",
+      "formato": "svg",
+      "etiquetas": [
+        "baquelita",
+        "bloque",
+        "termoestable",
+        "resina",
+        "aislante",
+        "baekeland"
+      ],
+      "compatibleComposicion": true
+    },
+    {
+      "id": "prop_vintage_bakelite_telephone",
+      "propParamId": "vintage_bakelite_telephone",
+      "nombre": "Prop: Teléfono Vintage de Baquelita",
+      "categoria": "props",
+      "subcategoria": "tecnologia",
+      "emocion": "any",
+      "accion": "right",
+      "propsAsociados": [
+        "vintage_bakelite_telephone"
+      ],
+      "ruta": "poses/props/prop_vintage_bakelite_telephone.svg",
+      "formato": "svg",
+      "etiquetas": [
+        "telefono",
+        "baquelita",
+        "disco",
+        "vintage",
+        "retro",
+        "diseno",
+        "comunicacion"
+      ],
+      "compatibleComposicion": true
+    },
+    {
+      "id": "prop_hammer_test_indestructible",
+      "propParamId": "hammer_test_indestructible",
+      "nombre": "Prop: Prueba de Mazo Baquelita Indestructible",
+      "categoria": "props",
+      "subcategoria": "reacciones_humor",
+      "emocion": "any",
+      "accion": "right",
+      "propsAsociados": [
+        "hammer_test_indestructible"
+      ],
+      "ruta": "poses/props/prop_hammer_test_indestructible.svg",
+      "formato": "svg",
+      "etiquetas": [
+        "mazo",
+        "prueba",
+        "resistencia",
+        "baquelita",
+        "indestructible",
+        "impacto"
+      ],
+      "compatibleComposicion": true
+    },
+    {
+      "id": "prop_plastiglomerate_rock",
+      "propParamId": "plastiglomerate_rock",
+      "nombre": "Prop: Roca de Plastiglomerado Fósil",
+      "categoria": "props",
+      "subcategoria": "historia_exploracion",
+      "emocion": "any",
+      "accion": "right",
+      "propsAsociados": [
+        "plastiglomerate_rock"
+      ],
+      "ruta": "poses/props/prop_plastiglomerate_rock.svg",
+      "formato": "svg",
+      "etiquetas": [
+        "plastiglomerado",
+        "roca",
+        "fosil",
+        "antropoceno",
+        "geologia",
+        "microplasticos"
+      ],
+      "compatibleComposicion": true
+    },
+    {
+      "id": "prop_galileo_cube_scale",
+      "propParamId": "galileo_cube_scale",
+      "nombre": "Prop: Cubo de Escala de Galileo (Ley Cuadrado-Cúbica)",
+      "categoria": "props",
+      "subcategoria": "educacion_ciencia",
+      "emocion": "any",
+      "accion": "right",
+      "propsAsociados": [
+        "galileo_cube_scale"
+      ],
+      "ruta": "poses/props/prop_galileo_cube_scale.svg",
+      "formato": "svg",
+      "etiquetas": [
+        "galileo",
+        "ley_cuadrado_cubica",
+        "escala",
+        "volumen",
+        "area",
+        "colapso",
+        "fisica",
+        "cubo"
+      ],
+      "compatibleComposicion": true
+    },
+    {
+      "id": "prop_torre_bloques_colapso",
+      "propParamId": "torre_bloques_colapso",
+      "nombre": "Prop: Torre de Bloques Colapsable",
+      "categoria": "props",
+      "subcategoria": "educacion_ciencia",
+      "emocion": "any",
+      "accion": "right",
+      "propsAsociados": [
+        "torre_bloques_colapso"
+      ],
+      "ruta": "poses/props/prop_torre_bloques_colapso.svg",
+      "formato": "svg",
+      "etiquetas": [
+        "torre",
+        "bloques",
+        "colapso",
+        "derrame",
+        "desmoronamiento",
+        "gravedad",
+        "peso",
+        "ingenieria"
+      ],
+      "compatibleComposicion": true
+    },
+    {
+      "id": "prop_puente_resonancia_tacoma",
+      "propParamId": "puente_resonancia_tacoma",
+      "nombre": "Prop: Puente Colgante en Resonancia Armónica",
+      "categoria": "props",
+      "subcategoria": "tecnologia",
+      "emocion": "any",
+      "accion": "right",
+      "propsAsociados": [
+        "puente_resonancia_tacoma"
+      ],
+      "ruta": "poses/props/prop_puente_resonancia_tacoma.svg",
+      "formato": "svg",
+      "etiquetas": [
+        "puente",
+        "tacoma_narrows",
+        "resonancia",
+        "vortices",
+        "viento",
+        "colapso",
+        "armonico",
+        "cables"
+      ],
+      "compatibleComposicion": true
+    },
+    {
+      "id": "prop_prensa_pandeo_euler",
+      "propParamId": "prensa_pandeo_euler",
+      "nombre": "Prop: Prensa de Pandeo de Euler",
+      "categoria": "props",
+      "subcategoria": "tecnologia",
+      "emocion": "any",
+      "accion": "right",
+      "propsAsociados": [
+        "prensa_pandeo_euler"
+      ],
+      "ruta": "poses/props/prop_prensa_pandeo_euler.svg",
+      "formato": "svg",
+      "etiquetas": [
+        "prensa",
+        "pandeo",
+        "euler",
+        "compresion",
+        "columna",
+        "esbeltez",
+        "rotura",
+        "acero"
+      ],
+      "compatibleComposicion": true
+    },
+    {
+      "id": "prop_amortiguador_masa_tmd",
+      "propParamId": "amortiguador_masa_tmd",
+      "nombre": "Prop: Amortiguador de Masa Sintonizada (Taipei 101)",
+      "categoria": "props",
+      "subcategoria": "tecnologia",
+      "emocion": "any",
+      "accion": "right",
+      "propsAsociados": [
+        "amortiguador_masa_tmd"
+      ],
+      "ruta": "poses/props/prop_amortiguador_masa_tmd.svg",
+      "formato": "svg",
+      "etiquetas": [
+        "amortiguador",
+        "pendulo",
+        "tmd",
+        "taipei_101",
+        "rascacielos",
+        "viento",
+        "sismo",
+        "resonancia"
+      ],
+      "compatibleComposicion": true
+    },
+    {
+      "id": "prop_puente_piedra_escala",
+      "propParamId": "puente_piedra_escala",
+      "nombre": "Prop: Puente de Piedra: Escala 1x vs 2x",
+      "categoria": "props",
+      "subcategoria": "educacion_ciencia",
+      "emocion": "any",
+      "accion": "right",
+      "propsAsociados": [
+        "puente_piedra_escala"
+      ],
+      "ruta": "poses/props/prop_puente_piedra_escala.svg",
+      "formato": "svg",
+      "etiquetas": [
+        "puente",
+        "piedra",
+        "escala",
+        "colapso",
+        "carreta"
+      ],
+      "compatibleComposicion": true
+    },
+    {
+      "id": "prop_galeon_venecia_galileo",
+      "propParamId": "galeon_venecia_galileo",
+      "nombre": "Prop: Galeón del Arsenal de Venecia (Galileo 1638)",
+      "categoria": "props",
+      "subcategoria": "historia_exploracion",
+      "emocion": "any",
+      "accion": "right",
+      "propsAsociados": [
+        "galeon_venecia_galileo"
+      ],
+      "ruta": "poses/props/prop_galeon_venecia_galileo.svg",
+      "formato": "svg",
+      "etiquetas": [
+        "galileo",
+        "venecia",
+        "barco",
+        "galeon",
+        "arsenal",
+        "1638"
+      ],
+      "compatibleComposicion": true
+    },
+    {
+      "id": "prop_biomecanica_femur_escala",
+      "propParamId": "biomecanica_femur_escala",
+      "nombre": "Prop: Biomecánica: Lagartija 10x vs Fémur de Elefante",
+      "categoria": "props",
+      "subcategoria": "educacion_ciencia",
+      "emocion": "any",
+      "accion": "right",
+      "propsAsociados": [
+        "biomecanica_femur_escala"
+      ],
+      "ruta": "poses/props/prop_biomecanica_femur_escala.svg",
+      "formato": "svg",
+      "etiquetas": [
+        "godzilla",
+        "lagartija",
+        "femur",
+        "elefante",
+        "hormiga",
+        "biomecanica"
+      ],
+      "compatibleComposicion": true
+    },
+    {
+      "id": "prop_piramide_vs_nucleo_rascacielos",
+      "propParamId": "piramide_vs_nucleo_rascacielos",
+      "nombre": "Prop: Casa Inflada vs Pirámide vs Rascacielos de Núcleo Hueco",
+      "categoria": "props",
+      "subcategoria": "tecnologia",
+      "emocion": "any",
+      "accion": "right",
+      "propsAsociados": [
+        "piramide_vs_nucleo_rascacielos"
+      ],
+      "ruta": "poses/props/prop_piramide_vs_nucleo_rascacielos.svg",
+      "formato": "svg",
+      "etiquetas": [
+        "piramide",
+        "rascacielos",
+        "nucleo",
+        "columnas",
+        "acero"
+      ],
+      "compatibleComposicion": true
+    },
+    {
+      "id": "prop_cercha_tubular_antipandeo",
+      "propParamId": "cercha_tubular_antipandeo",
+      "nombre": "Prop: Cercha Diagonal y Tubo Estructural Anti-Pandeo",
+      "categoria": "props",
+      "subcategoria": "tecnologia",
+      "emocion": "any",
+      "accion": "right",
+      "propsAsociados": [
+        "cercha_tubular_antipandeo"
+      ],
+      "ruta": "poses/props/prop_cercha_tubular_antipandeo.svg",
+      "formato": "svg",
+      "etiquetas": [
+        "cercha",
+        "celosia",
+        "euler",
+        "pandeo",
+        "tubo_estructural"
+      ],
+      "compatibleComposicion": true
+    },
+    {
+      "id": "prop_onda_resonancia_fatiga",
+      "propParamId": "onda_resonancia_fatiga",
+      "nombre": "Prop: Onda de Resonancia Armónica y Fatiga del Acero",
+      "categoria": "props",
+      "subcategoria": "educacion_ciencia",
+      "emocion": "any",
+      "accion": "right",
+      "propsAsociados": [
+        "onda_resonancia_fatiga"
+      ],
+      "ruta": "poses/props/prop_onda_resonancia_fatiga.svg",
+      "formato": "svg",
+      "etiquetas": [
+        "resonancia",
+        "onda",
+        "frecuencia",
+        "fatiga",
+        "acero"
+      ],
+      "compatibleComposicion": true
+    },
+    {
+      "id": "prop_rascacielos_espiral_viento",
+      "propParamId": "rascacielos_espiral_viento",
+      "nombre": "Prop: Burj Khalifa Escalonado y Torre de Shanghái en Espiral (120°)",
+      "categoria": "props",
+      "subcategoria": "tecnologia",
+      "emocion": "any",
+      "accion": "right",
+      "propsAsociados": [
+        "rascacielos_espiral_viento"
+      ],
+      "ruta": "poses/props/prop_rascacielos_espiral_viento.svg",
+      "formato": "svg",
+      "etiquetas": [
+        "burj_khalifa",
+        "shanghai_tower",
+        "espiral",
+        "aerodinamica",
+        "viento"
+      ],
+      "compatibleComposicion": true
+    },
+    {
+      "id": "prop_torre_abertura_viento",
+      "propParamId": "torre_abertura_viento",
+      "nombre": "Prop: Centro Financiero de Shanghái (Abertura Trapezoidal Antiviento)",
+      "categoria": "props",
+      "subcategoria": "tecnologia",
+      "emocion": "any",
+      "accion": "right",
+      "propsAsociados": [
+        "torre_abertura_viento"
+      ],
+      "ruta": "poses/props/prop_torre_abertura_viento.svg",
+      "formato": "svg",
+      "etiquetas": [
+        "shanghai",
+        "swfc",
+        "abridor_botellas",
+        "abertura",
+        "viento",
+        "rascacielos"
+      ],
+      "compatibleComposicion": true
+    },
+    {
+      "id": "prop_pistones_hidraulicos_tmd",
+      "propParamId": "pistones_hidraulicos_tmd",
+      "nombre": "Prop: Pistones Hidráulicos de Disipación Térmica (Taipei 101)",
+      "categoria": "props",
+      "subcategoria": "tecnologia",
+      "emocion": "any",
+      "accion": "right",
+      "propsAsociados": [
+        "pistones_hidraulicos_tmd"
+      ],
+      "ruta": "poses/props/prop_pistones_hidraulicos_tmd.svg",
+      "formato": "svg",
+      "etiquetas": [
+        "pistones",
+        "hidraulico",
+        "calor",
+        "amortiguador",
+        "taipei_101"
+      ],
+      "compatibleComposicion": true
+    },
+    {
+      "id": "prop_cable_longitud_rotura_5km",
+      "propParamId": "cable_longitud_rotura_5km",
+      "nombre": "Prop: Longitud de Rotura del Acero (5 km) vs Nanotubos",
+      "categoria": "props",
+      "subcategoria": "educacion_ciencia",
+      "emocion": "any",
+      "accion": "right",
+      "propsAsociados": [
+        "cable_longitud_rotura_5km"
+      ],
+      "ruta": "poses/props/prop_cable_longitud_rotura_5km.svg",
+      "formato": "svg",
+      "etiquetas": [
+        "cable",
+        "acero",
+        "longitud_rotura",
+        "5km",
+        "titanio",
+        "nanotubos"
+      ],
+      "compatibleComposicion": true
+    },
+    {
+      "id": "prop_evolucion_geometria_estructural",
+      "propParamId": "evolucion_geometria_estructural",
+      "nombre": "Prop: Síntesis: De la Fuerza Bruta a la Geometría Inteligente",
+      "categoria": "props",
+      "subcategoria": "educacion_ciencia",
+      "emocion": "any",
+      "accion": "right",
+      "propsAsociados": [
+        "evolucion_geometria_estructural"
+      ],
+      "ruta": "poses/props/prop_evolucion_geometria_estructural.svg",
+      "formato": "svg",
+      "etiquetas": [
+        "geometria",
+        "ingenieria",
+        "sintesis",
+        "triunfo",
+        "estructuras"
+      ],
+      "compatibleComposicion": true
+    },
+    {
+      "id": "prop_cielo_milkyway_revelacion",
+      "propParamId": "cielo_milkyway_revelacion",
+      "nombre": "Prop: Revelación de la Vía Láctea en el Apagón de Los Ángeles 1994",
+      "categoria": "props",
+      "subcategoria": "educacion_ciencia",
+      "emocion": "any",
+      "accion": "overhead",
+      "propsAsociados": [
+        "cielo_milkyway_revelacion"
+      ],
+      "ruta": "poses/props/prop_cielo_milkyway_revelacion.svg",
+      "formato": "svg",
+      "etiquetas": [
+        "cielo",
+        "milkyway",
+        "via_lactea",
+        "apagon",
+        "los_angeles",
+        "estrellas"
+      ],
+      "compatibleComposicion": true
+    },
+    {
+      "id": "prop_esfera_tierra_luces_nocturnas",
+      "propParamId": "esfera_tierra_luces_nocturnas",
+      "nombre": "Prop: La Tierra Vista de Noche: Expansión de la Red Lumínica",
+      "categoria": "props",
+      "subcategoria": "educacion_ciencia",
+      "emocion": "any",
+      "accion": "right",
+      "propsAsociados": [
+        "esfera_tierra_luces_nocturnas"
+      ],
+      "ruta": "poses/props/prop_esfera_tierra_luces_nocturnas.svg",
+      "formato": "svg",
+      "etiquetas": [
+        "tierra",
+        "planeta",
+        "luces",
+        "satelite",
+        "continentes",
+        "saturacion"
+      ],
+      "compatibleComposicion": true
+    },
+    {
+      "id": "prop_evolucion_farola_electrica",
+      "propParamId": "evolucion_farola_electrica",
+      "nombre": "Prop: Evolución de la Iluminación Urbana: Gas vs Globo vs Blindada",
+      "categoria": "props",
+      "subcategoria": "historia_exploracion",
+      "emocion": "any",
+      "accion": "right",
+      "propsAsociados": [
+        "evolucion_farola_electrica"
+      ],
+      "ruta": "poses/props/prop_evolucion_farola_electrica.svg",
+      "formato": "svg",
+      "etiquetas": [
+        "farola",
+        "alumbrado",
+        "gas",
+        "mercurio",
+        "blindaje",
+        "full_cutoff"
+      ],
+      "compatibleComposicion": true
+    },
+    {
+      "id": "prop_medidor_escala_bortle",
+      "propParamId": "medidor_escala_bortle",
+      "nombre": "Prop: Fotómetro y Medidor de la Escala Bortle (SQM 1 al 9)",
+      "categoria": "props",
+      "subcategoria": "tecnologia",
+      "emocion": "any",
+      "accion": "right",
+      "propsAsociados": [
+        "medidor_escala_bortle"
+      ],
+      "ruta": "poses/props/prop_medidor_escala_bortle.svg",
+      "formato": "svg",
+      "etiquetas": [
+        "bortle",
+        "sqm",
+        "fotometro",
+        "escala",
+        "brillo",
+        "astronomia"
+      ],
+      "compatibleComposicion": true
+    },
+    {
+      "id": "prop_tortuga_marina_desorientada",
+      "propParamId": "tortuga_marina_desorientada",
+      "nombre": "Prop: Cría de Tortuga Marina Desorientada por Luces Costeras",
+      "categoria": "props",
+      "subcategoria": "naturaleza_alimentos",
+      "emocion": "any",
+      "accion": "right",
+      "propsAsociados": [
+        "tortuga_marina_desorientada"
+      ],
+      "ruta": "poses/props/prop_tortuga_marina_desorientada.svg",
+      "formato": "svg",
+      "etiquetas": [
+        "tortuga",
+        "caretta",
+        "marina",
+        "costa",
+        "desorientacion",
+        "cria"
+      ],
+      "compatibleComposicion": true
+    },
+    {
+      "id": "prop_aves_migratorias_rascacielos",
+      "propParamId": "aves_migratorias_rascacielos",
+      "nombre": "Prop: Aves Migratorias Atrapadas en el Cono de Luz de Rascacielos",
+      "categoria": "props",
+      "subcategoria": "naturaleza_alimentos",
+      "emocion": "any",
+      "accion": "right",
+      "propsAsociados": [
+        "aves_migratorias_rascacielos"
+      ],
+      "ruta": "poses/props/prop_aves_migratorias_rascacielos.svg",
+      "formato": "svg",
+      "etiquetas": [
+        "aves",
+        "migracion",
+        "rascacielos",
+        "chicago",
+        "colision",
+        "espiral"
+      ],
+      "compatibleComposicion": true
+    },
+    {
+      "id": "prop_espectro_led_azul_460nm",
+      "propParamId": "espectro_led_azul_460nm",
+      "nombre": "Prop: Espectro Óptico: El Pico Azul Letal del LED Blanco (460 nm)",
+      "categoria": "props",
+      "subcategoria": "educacion_ciencia",
+      "emocion": "any",
+      "accion": "right",
+      "propsAsociados": [
+        "espectro_led_azul_460nm"
+      ],
+      "ruta": "poses/props/prop_espectro_led_azul_460nm.svg",
+      "formato": "svg",
+      "etiquetas": [
+        "espectro",
+        "led",
+        "azul",
+        "460nm",
+        "longitud_onda",
+        "nanometros"
+      ],
+      "compatibleComposicion": true
+    },
+    {
+      "id": "prop_glandula_pineal_melatonina",
+      "propParamId": "glandula_pineal_melatonina",
+      "nombre": "Prop: Glándula Pineal y Síntesis Circadiana de Melatonina",
+      "categoria": "props",
+      "subcategoria": "educacion_ciencia",
+      "emocion": "any",
+      "accion": "right",
+      "propsAsociados": [
+        "glandula_pineal_melatonina"
+      ],
+      "ruta": "poses/props/prop_glandula_pineal_melatonina.svg",
+      "formato": "svg",
+      "etiquetas": [
+        "melatonina",
+        "pineal",
+        "cerebro",
+        "circadiano",
+        "insomnio",
+        "salud"
+      ],
+      "compatibleComposicion": true
+    },
+    {
+      "id": "prop_resplandor_atmosferico_rayleigh",
+      "propParamId": "resplandor_atmosferico_rayleigh",
+      "nombre": "Prop: Física del Skyglow: Dispersión de Rayleigh en la Atmósfera",
+      "categoria": "props",
+      "subcategoria": "educacion_ciencia",
+      "emocion": "any",
+      "accion": "right",
+      "propsAsociados": [
+        "resplandor_atmosferico_rayleigh"
+      ],
+      "ruta": "poses/props/prop_resplandor_atmosferico_rayleigh.svg",
+      "formato": "svg",
+      "etiquetas": [
+        "rayleigh",
+        "dispersion",
+        "skyglow",
+        "atmosfera",
+        "cupula",
+        "fotones"
+      ],
+      "compatibleComposicion": true
+    },
+    {
+      "id": "prop_telescopio_cegado_polucion",
+      "propParamId": "telescopio_cegado_polucion",
+      "nombre": "Prop: Telescopio Astronómico Cegado por Contaminación Lumínica",
+      "categoria": "props",
+      "subcategoria": "educacion_ciencia",
+      "emocion": "any",
+      "accion": "right",
+      "propsAsociados": [
+        "telescopio_cegado_polucion"
+      ],
+      "ruta": "poses/props/prop_telescopio_cegado_polucion.svg",
+      "formato": "svg",
+      "etiquetas": [
+        "telescopio",
+        "observatorio",
+        "ccd",
+        "sensor",
+        "astronomia",
+        "ruido"
+      ],
+      "compatibleComposicion": true
+    },
+    {
+      "id": "prop_maqueta_control_iluminacion",
+      "propParamId": "maqueta_control_iluminacion",
+      "nombre": "Prop: Maqueta Urbana de Iluminación y Gestión de Red",
+      "categoria": "props",
+      "subcategoria": "tecnologia",
+      "emocion": "any",
+      "accion": "right",
+      "propsAsociados": [
+        "maqueta_control_iluminacion"
+      ],
+      "ruta": "poses/props/prop_maqueta_control_iluminacion.svg",
+      "formato": "svg",
+      "etiquetas": [
+        "maqueta",
+        "control",
+        "red",
+        "desperdicio",
+        "lumenes",
+        "eficiencia"
+      ],
+      "compatibleComposicion": true
+    },
+    {
+      "id": "prop_luminaria_full_cutoff",
+      "propParamId": "luminaria_full_cutoff",
+      "nombre": "Prop: Luminaria Full Cut-Off con Control Óptico Estricto",
+      "categoria": "props",
+      "subcategoria": "tecnologia",
+      "emocion": "any",
+      "accion": "right",
+      "propsAsociados": [
+        "luminaria_full_cutoff"
+      ],
+      "ruta": "poses/props/prop_luminaria_full_cutoff.svg",
+      "formato": "svg",
+      "etiquetas": [
+        "luminaria",
+        "optica",
+        "full_cutoff",
+        "blindaje",
+        "candela",
+        "sensor"
+      ],
+      "compatibleComposicion": true
+    },
+    {
+      "id": "prop_observatorio_atacama_cupula",
+      "propParamId": "observatorio_atacama_cupula",
+      "nombre": "Prop: Observatorio de Alta Montaña en Atacama con Láser Guía",
+      "categoria": "props",
+      "subcategoria": "educacion_ciencia",
+      "emocion": "any",
+      "accion": "right",
+      "propsAsociados": [
+        "observatorio_atacama_cupula"
+      ],
+      "ruta": "poses/props/prop_observatorio_atacama_cupula.svg",
+      "formato": "svg",
+      "etiquetas": [
+        "atacama",
+        "laser",
+        "optica_adaptativa",
+        "cupula",
+        "vlt",
+        "estrellas"
+      ],
+      "compatibleComposicion": true
+    },
+    {
+      "id": "prop_interruptor_maestro_apagon",
+      "propParamId": "interruptor_maestro_apagon",
+      "nombre": "Prop: Interruptor Maestro de Corte Eléctrico Industrial (El Gran Apagón)",
+      "categoria": "props",
+      "subcategoria": "tecnologia",
+      "emocion": "any",
+      "accion": "right",
+      "propsAsociados": [
+        "interruptor_maestro_apagon"
+      ],
+      "ruta": "poses/props/prop_interruptor_maestro_apagon.svg",
+      "formato": "svg",
+      "etiquetas": [
+        "interruptor",
+        "palanca",
+        "apagon",
+        "desconexion",
+        "estrellas",
+        "corte"
+      ],
+      "compatibleComposicion": true
+    },
+    {
+      "id": "prop_numeros_flotantes_glitch",
+      "propParamId": "numeros_flotantes_glitch",
+      "nombre": "Prop: Números Flotantes con Glitch y Desintegración",
+      "categoria": "props",
+      "subcategoria": "educacion_ciencia",
+      "emocion": "any",
+      "accion": "overhead",
+      "propsAsociados": [
+        "numeros_flotantes_glitch"
+      ],
+      "ruta": "poses/props/prop_numeros_flotantes_glitch.svg",
+      "formato": "svg",
+      "etiquetas": [
+        "numeros",
+        "conteo",
+        "glitch",
+        "estatica",
+        "anumerico",
+        "piraha"
+      ],
+      "compatibleComposicion": true
+    },
+    {
+      "id": "prop_canasta_peces_piraha",
+      "propParamId": "canasta_peces_piraha",
+      "nombre": "Prop: Canasta de Corteza con Peces Amazónicos",
+      "categoria": "props",
+      "subcategoria": "naturaleza_alimentos",
+      "emocion": "any",
+      "accion": "right",
+      "propsAsociados": [
+        "canasta_peces_piraha"
+      ],
+      "ruta": "poses/props/prop_canasta_peces_piraha.svg",
+      "formato": "svg",
+      "etiquetas": [
+        "canasta",
+        "peces",
+        "piraha",
+        "amazonas",
+        "hoi",
+        "poco",
+        "corteza"
+      ],
+      "compatibleComposicion": true
+    },
+    {
+      "id": "prop_libreta_antropologo_campo",
+      "propParamId": "libreta_antropologo_campo",
+      "nombre": "Prop: Libreta de Antropólogo de Campo",
+      "categoria": "props",
+      "subcategoria": "educacion_ciencia",
+      "emocion": "any",
+      "accion": "left",
+      "propsAsociados": [
+        "libreta_antropologo_campo"
+      ],
+      "ruta": "poses/props/prop_libreta_antropologo_campo.svg",
+      "formato": "svg",
+      "etiquetas": [
+        "libreta",
+        "antropologo",
+        "campo",
+        "apuntes",
+        "linguistica",
+        "everett"
+      ],
+      "compatibleComposicion": true
+    },
+    {
+      "id": "prop_mesa_prueba_fichas_madera",
+      "propParamId": "mesa_prueba_fichas_madera",
+      "nombre": "Prop: Fichas de Prueba de Correspondencia Uno a Uno",
+      "categoria": "props",
+      "subcategoria": "educacion_ciencia",
+      "emocion": "any",
+      "accion": "right",
+      "propsAsociados": [
+        "mesa_prueba_fichas_madera"
+      ],
+      "ruta": "poses/props/prop_mesa_prueba_fichas_madera.svg",
+      "formato": "svg",
+      "etiquetas": [
+        "fichas",
+        "madera",
+        "experimento",
+        "test",
+        "correspondencia",
+        "conteo"
+      ],
+      "compatibleComposicion": true
+    },
+    {
+      "id": "prop_caja_fuerte_memoria_trabajo",
+      "propParamId": "caja_fuerte_memoria_trabajo",
+      "nombre": "Prop: Caja Fuerte de Memoria de Trabajo con Nube Escurridiza",
+      "categoria": "props",
+      "subcategoria": "tecnologia",
+      "emocion": "any",
+      "accion": "overhead",
+      "propsAsociados": [
+        "caja_fuerte_memoria_trabajo"
+      ],
+      "ruta": "poses/props/prop_caja_fuerte_memoria_trabajo.svg",
+      "formato": "svg",
+      "etiquetas": [
+        "memoria",
+        "trabajo",
+        "caja_fuerte",
+        "cerebro",
+        "vapor",
+        "simbolo"
+      ],
+      "compatibleComposicion": true
+    },
+    {
+      "id": "prop_bandejas_moras_ans",
+      "propParamId": "bandejas_moras_ans",
+      "nombre": "Prop: Bandejas Comparativas de Moras ANS",
+      "categoria": "props",
+      "subcategoria": "naturaleza_alimentos",
+      "emocion": "any",
+      "accion": "both",
+      "propsAsociados": [
+        "bandejas_moras_ans"
+      ],
+      "ruta": "poses/props/prop_bandejas_moras_ans.svg",
+      "formato": "svg",
+      "etiquetas": [
+        "bandejas",
+        "moras",
+        "ans",
+        "aproximacion",
+        "chimpance",
+        "paloma",
+        "bebe"
+      ],
+      "compatibleComposicion": true
+    },
+    {
+      "id": "prop_engranaje_linguistico_dorado",
+      "propParamId": "engranaje_linguistico_dorado",
+      "nombre": "Prop: Engranaje Lingüístico Dorado de Hack Mental",
+      "categoria": "props",
+      "subcategoria": "tecnologia",
+      "emocion": "any",
+      "accion": "overhead",
+      "propsAsociados": [
+        "engranaje_linguistico_dorado"
+      ],
+      "ruta": "poses/props/prop_engranaje_linguistico_dorado.svg",
+      "formato": "svg",
+      "etiquetas": [
+        "engranaje",
+        "dorado",
+        "relojería",
+        "tecnologia",
+        "palabra",
+        "hack",
+        "mente"
+      ],
+      "compatibleComposicion": true
+    },
+    {
+      "id": "prop_geometria_abstracta_innombrable",
+      "propParamId": "geometria_abstracta_innombrable",
+      "nombre": "Prop: Geometría Multidimensional Abstracta Innombrable",
+      "categoria": "props",
+      "subcategoria": "educacion_ciencia",
+      "emocion": "any",
+      "accion": "overhead",
+      "propsAsociados": [
+        "geometria_abstracta_innombrable"
+      ],
+      "ruta": "poses/props/prop_geometria_abstracta_innombrable.svg",
+      "formato": "svg",
+      "etiquetas": [
+        "geometria",
+        "abstracta",
+        "tesseract",
+        "innombrable",
+        "cosmos",
+        "filosofia"
+      ],
+      "compatibleComposicion": true
+    },
+    {
+      "id": "prop_canica_solar_incandescente",
+      "propParamId": "canica_solar_incandescente",
+      "nombre": "Prop: Canica Solar Incandescente 2 cm",
+      "categoria": "props",
+      "subcategoria": "educacion_ciencia",
+      "emocion": "any",
+      "accion": "right",
+      "propsAsociados": [
+        "canica_solar_incandescente"
+      ],
+      "ruta": "poses/props/prop_canica_solar_incandescente.svg",
+      "formato": "svg",
+      "etiquetas": [
+        "canica",
+        "solar",
+        "sol",
+        "escala",
+        "dorada",
+        "vidrio",
+        "luz"
+      ],
+      "compatibleComposicion": true
+    },
+    {
+      "id": "prop_lamina_escolar_sistema_solar",
+      "propParamId": "lamina_escolar_sistema_solar",
+      "nombre": "Prop: Lámina Escolar Arrugada Sistema Solar",
+      "categoria": "props",
+      "subcategoria": "educacion_ciencia",
+      "emocion": "any",
+      "accion": "left",
+      "propsAsociados": [
+        "lamina_escolar_sistema_solar"
+      ],
+      "ruta": "poses/props/prop_lamina_escolar_sistema_solar.svg",
+      "formato": "svg",
+      "etiquetas": [
+        "lamina",
+        "escolar",
+        "falso",
+        "arrugado",
+        "planetas",
+        "papel"
+      ],
+      "compatibleComposicion": true
+    },
+    {
+      "id": "prop_cinta_metrica_extendida",
+      "propParamId": "cinta_metrica_extendida",
+      "nombre": "Prop: Cinta Métrica Retráctil 2.15 Metros",
+      "categoria": "props",
+      "subcategoria": "educacion_ciencia",
+      "emocion": "any",
+      "accion": "both",
+      "propsAsociados": [
+        "cinta_metrica_extendida"
+      ],
+      "ruta": "poses/props/prop_cinta_metrica_extendida.svg",
+      "formato": "svg",
+      "etiquetas": [
+        "cinta",
+        "metrica",
+        "medir",
+        "distancia",
+        "metros",
+        "escala"
+      ],
+      "compatibleComposicion": true
+    },
+    {
+      "id": "prop_lupa_inspeccion_tierra_mota",
+      "propParamId": "lupa_inspeccion_tierra_mota",
+      "nombre": "Prop: Lupa de Inspección con Mota de la Tierra",
+      "categoria": "props",
+      "subcategoria": "educacion_ciencia",
+      "emocion": "any",
+      "accion": "right",
+      "propsAsociados": [
+        "lupa_inspeccion_tierra_mota"
+      ],
+      "ruta": "poses/props/prop_lupa_inspeccion_tierra_mota.svg",
+      "formato": "svg",
+      "etiquetas": [
+        "lupa",
+        "mota",
+        "tierra",
+        "macro",
+        "polvo",
+        "microscopico"
+      ],
+      "compatibleComposicion": true
+    },
+    {
+      "id": "prop_planetas_semilla_alfiler",
+      "propParamId": "planetas_semilla_alfiler",
+      "nombre": "Prop: Planetas a Escala Semilla y Alfiler",
+      "categoria": "props",
+      "subcategoria": "educacion_ciencia",
+      "emocion": "any",
+      "accion": "left",
+      "propsAsociados": [
+        "planetas_semilla_alfiler"
+      ],
+      "ruta": "poses/props/prop_planetas_semilla_alfiler.svg",
+      "formato": "svg",
+      "etiquetas": [
+        "planetas",
+        "semilla",
+        "alfiler",
+        "jupiter",
+        "neptuno",
+        "escala"
+      ],
+      "compatibleComposicion": true
+    },
+    {
+      "id": "prop_binoculares_radar_vacio",
+      "propParamId": "binoculares_radar_vacio",
+      "nombre": "Prop: Binoculares de Escaneo Cósmico Vacío",
+      "categoria": "props",
+      "subcategoria": "tecnologia",
+      "emocion": "any",
+      "accion": "overhead",
+      "propsAsociados": [
+        "binoculares_radar_vacio"
+      ],
+      "ruta": "poses/props/prop_binoculares_radar_vacio.svg",
+      "formato": "svg",
+      "etiquetas": [
+        "binoculares",
+        "radar",
+        "vacio",
+        "exploracion",
+        "interespacial",
+        "optico"
+      ],
+      "compatibleComposicion": true
+    },
+    {
+      "id": "prop_mapa_carretera_570km",
+      "propParamId": "mapa_carretera_570km",
+      "nombre": "Prop: Tablet GPS Ruta Carretera 570 KM",
+      "categoria": "props",
+      "subcategoria": "tecnologia",
+      "emocion": "any",
+      "accion": "left",
+      "propsAsociados": [
+        "mapa_carretera_570km"
+      ],
+      "ruta": "poses/props/prop_mapa_carretera_570km.svg",
+      "formato": "svg",
+      "etiquetas": [
+        "mapa",
+        "carretera",
+        "570km",
+        "gps",
+        "proxima",
+        "distancia",
+        "auto"
+      ],
+      "compatibleComposicion": true
+    },
+    {
+      "id": "prop_auto_viaje_interestelar",
+      "propParamId": "auto_viaje_interestelar",
+      "nombre": "Prop: Vehículo de Viaje Interestelar por Autopista",
+      "categoria": "props",
+      "subcategoria": "tecnologia",
+      "emocion": "any",
+      "accion": "right",
+      "propsAsociados": [
+        "auto_viaje_interestelar"
+      ],
+      "ruta": "poses/props/prop_auto_viaje_interestelar.svg",
+      "formato": "svg",
+      "etiquetas": [
+        "auto",
+        "coche",
+        "autopista",
+        "viaje",
+        "carretera",
+        "570km"
+      ],
+      "compatibleComposicion": true
+    },
+    {
+      "id": "prop_taza_cafe_vapor_termodinamico",
+      "propParamId": "taza_cafe_vapor_termodinamico",
+      "nombre": "Prop: Taza de Café con Vapor Termodinámico",
+      "categoria": "props",
+      "subcategoria": "naturaleza_alimentos",
+      "emocion": "any",
+      "accion": "right",
+      "propsAsociados": [
+        "taza_cafe_vapor_termodinamico"
+      ],
+      "ruta": "poses/props/prop_taza_cafe_vapor_termodinamico.svg",
+      "formato": "svg",
+      "etiquetas": [
+        "cafe",
+        "taza",
+        "vapor",
+        "calor",
+        "termodinamica",
+        "entropia"
+      ],
+      "compatibleComposicion": true
+    },
+    {
+      "id": "prop_sello_segunda_ley_prohibido",
+      "propParamId": "sello_segunda_ley_prohibido",
+      "nombre": "Prop: Sello Oficial Segunda Ley Termodinámica",
+      "categoria": "props",
+      "subcategoria": "educacion_ciencia",
+      "emocion": "any",
+      "accion": "overhead",
+      "propsAsociados": [
+        "sello_segunda_ley_prohibido"
+      ],
+      "ruta": "poses/props/prop_sello_segunda_ley_prohibido.svg",
+      "formato": "svg",
+      "etiquetas": [
+        "sello",
+        "segunda_ley",
+        "termodinamica",
+        "prohibido",
+        "clausius",
+        "fisica"
+      ],
+      "compatibleComposicion": true
+    },
+    {
+      "id": "prop_cuernos_demonio_utileria",
+      "propParamId": "cuernos_demonio_utileria",
+      "nombre": "Prop: Cuernos y Tridente de Demonio Maxwell",
+      "categoria": "props",
+      "subcategoria": "reacciones_humor",
+      "emocion": "any",
+      "accion": "overhead",
+      "propsAsociados": [
+        "cuernos_demonio_utileria"
+      ],
+      "ruta": "poses/props/prop_cuernos_demonio_utileria.svg",
+      "formato": "svg",
+      "etiquetas": [
+        "cuernos",
+        "demonio",
+        "maxwell",
+        "utileria",
+        "rojo",
+        "disfraz"
+      ],
+      "compatibleComposicion": true
+    },
+    {
+      "id": "prop_caja_gas_maxwell_particulas",
+      "propParamId": "caja_gas_maxwell_particulas",
+      "nombre": "Prop: Caja de Gas de Maxwell con Partículas",
+      "categoria": "props",
+      "subcategoria": "educacion_ciencia",
+      "emocion": "any",
+      "accion": "overhead",
+      "propsAsociados": [
+        "caja_gas_maxwell_particulas"
+      ],
+      "ruta": "poses/props/prop_caja_gas_maxwell_particulas.svg",
+      "formato": "svg",
+      "etiquetas": [
+        "caja",
+        "gas",
+        "maxwell",
+        "particulas",
+        "moleculas",
+        "compuerta"
+      ],
+      "compatibleComposicion": true
+    },
+    {
+      "id": "prop_palanca_compuerta_maxwell",
+      "propParamId": "palanca_compuerta_maxwell",
+      "nombre": "Prop: Palanca Mecánica de la Compuerta",
+      "categoria": "props",
+      "subcategoria": "tecnologia",
+      "emocion": "any",
+      "accion": "right",
+      "propsAsociados": [
+        "palanca_compuerta_maxwell"
+      ],
+      "ruta": "poses/props/prop_palanca_compuerta_maxwell.svg",
+      "formato": "svg",
+      "etiquetas": [
+        "palanca",
+        "mecanismo",
+        "compuerta",
+        "demonio",
+        "control",
+        "rapidez"
+      ],
+      "compatibleComposicion": true
+    },
+    {
+      "id": "prop_termometros_contraste_maxwell",
+      "propParamId": "termometros_contraste_maxwell",
+      "nombre": "Prop: Termómetros en Contraste Calor vs Frío",
+      "categoria": "props",
+      "subcategoria": "educacion_ciencia",
+      "emocion": "any",
+      "accion": "overhead",
+      "propsAsociados": [
+        "termometros_contraste_maxwell"
+      ],
+      "ruta": "poses/props/prop_termometros_contraste_maxwell.svg",
+      "formato": "svg",
+      "etiquetas": [
+        "termometro",
+        "calor",
+        "frio",
+        "gradiente",
+        "maxwell",
+        "100grados"
+      ],
+      "compatibleComposicion": true
+    },
+    {
+      "id": "prop_memoria_saturada_bits_landauer",
+      "propParamId": "memoria_saturada_bits_landauer",
+      "nombre": "Prop: Memoria Saturada y Bits de Información",
+      "categoria": "props",
+      "subcategoria": "tecnologia",
+      "emocion": "any",
+      "accion": "overhead",
+      "propsAsociados": [
+        "memoria_saturada_bits_landauer"
+      ],
+      "ruta": "poses/props/prop_memoria_saturada_bits_landauer.svg",
+      "formato": "svg",
+      "etiquetas": [
+        "memoria",
+        "bits",
+        "landauer",
+        "storage",
+        "sobrecarga",
+        "computacion"
+      ],
+      "compatibleComposicion": true
+    },
+    {
+      "id": "prop_goma_borrar_landauer_chispas",
+      "propParamId": "goma_borrar_landauer_chispas",
+      "nombre": "Prop: Goma de Borrar Térmica de Landauer",
+      "categoria": "props",
+      "subcategoria": "educacion_ciencia",
+      "emocion": "any",
+      "accion": "right",
+      "propsAsociados": [
+        "goma_borrar_landauer_chispas"
+      ],
+      "ruta": "poses/props/prop_goma_borrar_landauer_chispas.svg",
+      "formato": "svg",
+      "etiquetas": [
+        "goma",
+        "borrar",
+        "landauer",
+        "chispas",
+        "calor",
+        "delete",
+        "entropia"
+      ],
+      "compatibleComposicion": true
+    },
+    {
+      "id": "prop_teclado_tecla_delete_fuego",
+      "propParamId": "teclado_tecla_delete_fuego",
+      "nombre": "Prop: Teclado con Tecla Delete en Llamas",
+      "categoria": "props",
+      "subcategoria": "tecnologia",
+      "emocion": "any",
+      "accion": "right",
+      "propsAsociados": [
+        "teclado_tecla_delete_fuego"
+      ],
+      "ruta": "poses/props/prop_teclado_tecla_delete_fuego.svg",
+      "formato": "svg",
+      "etiquetas": [
+        "teclado",
+        "delete",
+        "fuego",
+        "landauer",
+        "tecla",
+        "entropia",
+        "informacion"
+      ],
+      "compatibleComposicion": true
+    },
+    {
+      "id": "prop_barquito_papel_charco",
+      "propParamId": "barquito_papel_charco",
+      "nombre": "Prop: Barquito de Papel en Charco Dorado",
+      "categoria": "props",
+      "subcategoria": "naturaleza_alimentos",
+      "emocion": "any",
+      "accion": "right",
+      "propsAsociados": [
+        "barquito_papel_charco"
+      ],
+      "ruta": "poses/props/prop_barquito_papel_charco.svg",
+      "formato": "svg",
+      "etiquetas": [
+        "barquito",
+        "papel",
+        "charco",
+        "infancia",
+        "juego",
+        "verano",
+        "origami"
+      ],
+      "compatibleComposicion": true
+    },
+    {
+      "id": "prop_calendario_ventisca_reloj_aspas",
+      "propParamId": "calendario_ventisca_reloj_aspas",
+      "nombre": "Prop: Calendario en Ventisca y Reloj Acelerado",
+      "categoria": "props",
+      "subcategoria": "educacion_ciencia",
+      "emocion": "any",
+      "accion": "overhead",
+      "propsAsociados": [
+        "calendario_ventisca_reloj_aspas"
+      ],
+      "ruta": "poses/props/prop_calendario_ventisca_reloj_aspas.svg",
+      "formato": "svg",
+      "etiquetas": [
+        "calendario",
+        "reloj",
+        "huracan",
+        "tiempo",
+        "aceleracion",
+        "edad",
+        "viento"
+      ],
+      "compatibleComposicion": true
+    },
+    {
+      "id": "prop_pastel_cinco_rebanadas_20pct",
+      "propParamId": "pastel_cinco_rebanadas_20pct",
+      "nombre": "Prop: Pastel Circular de 5 Años con 20% Gigante",
+      "categoria": "props",
+      "subcategoria": "educacion_ciencia",
+      "emocion": "any",
+      "accion": "overhead",
+      "propsAsociados": [
+        "pastel_cinco_rebanadas_20pct"
+      ],
+      "ruta": "poses/props/prop_pastel_cinco_rebanadas_20pct.svg",
+      "formato": "svg",
+      "etiquetas": [
+        "pastel",
+        "proporcion",
+        "20porciento",
+        "5anos",
+        "infancia",
+        "fraccion",
+        "tiempo"
+      ],
+      "compatibleComposicion": true
+    },
+    {
+      "id": "prop_reloj_arena_lento_granos_oro",
+      "propParamId": "reloj_arena_lento_granos_oro",
+      "nombre": "Prop: Reloj de Arena Lento con Granos de Oro",
+      "categoria": "props",
+      "subcategoria": "educacion_ciencia",
+      "emocion": "any",
+      "accion": "right",
+      "propsAsociados": [
+        "reloj_arena_lento_granos_oro"
+      ],
+      "ruta": "poses/props/prop_reloj_arena_lento_granos_oro.svg",
+      "formato": "svg",
+      "etiquetas": [
+        "reloj_arena",
+        "lento",
+        "grano_a_grano",
+        "oro",
+        "infancia",
+        "eterno",
+        "tiempo"
+      ],
+      "compatibleComposicion": true
+    },
+    {
+      "id": "prop_pastel_cincuenta_rebanadas_2pct",
+      "propParamId": "pastel_cincuenta_rebanadas_2pct",
+      "nombre": "Prop: Pastel de 50 Rodajas Finas con 2% Insignificante",
+      "categoria": "props",
+      "subcategoria": "educacion_ciencia",
+      "emocion": "any",
+      "accion": "overhead",
+      "propsAsociados": [
+        "pastel_cincuenta_rebanadas_2pct"
+      ],
+      "ruta": "poses/props/prop_pastel_cincuenta_rebanadas_2pct.svg",
+      "formato": "svg",
+      "etiquetas": [
+        "pastel",
+        "50anos",
+        "2porciento",
+        "rebanada_fina",
+        "adultez",
+        "fideo",
+        "proporcion"
+      ],
+      "compatibleComposicion": true
+    },
+    {
+      "id": "prop_reloj_arena_chorro_acelerado",
+      "propParamId": "reloj_arena_chorro_acelerado",
+      "nombre": "Prop: Reloj de Arena Acelerado Chorro Líquido",
+      "categoria": "props",
+      "subcategoria": "educacion_ciencia",
+      "emocion": "any",
+      "accion": "right",
+      "propsAsociados": [
+        "reloj_arena_chorro_acelerado"
+      ],
+      "ruta": "poses/props/prop_reloj_arena_chorro_acelerado.svg",
+      "formato": "svg",
+      "etiquetas": [
+        "reloj_arena",
+        "rapido",
+        "chorro",
+        "acelerado",
+        "adultez",
+        "fuga",
+        "tiempo"
+      ],
+      "compatibleComposicion": true
+    },
+    {
+      "id": "prop_archivador_sello_repetido_mental",
+      "propParamId": "archivador_sello_repetido_mental",
+      "nombre": "Prop: Sello Mental de Rutina REPETIDO y Carpetas",
+      "categoria": "props",
+      "subcategoria": "educacion_ciencia",
+      "emocion": "any",
+      "accion": "right",
+      "propsAsociados": [
+        "archivador_sello_repetido_mental"
+      ],
+      "ruta": "poses/props/prop_archivador_sello_repetido_mental.svg",
+      "formato": "svg",
+      "etiquetas": [
+        "sello",
+        "repetido",
+        "rutina",
+        "archivador",
+        "compresion",
+        "cerebro",
+        "memoria"
+      ],
+      "compatibleComposicion": true
+    },
+    {
+      "id": "prop_helado_mariposa_recuerdo_4k",
+      "propParamId": "helado_mariposa_recuerdo_4k",
+      "nombre": "Prop: Helado Brillante y Mariposa Recuerdo 4K",
+      "categoria": "props",
+      "subcategoria": "naturaleza_alimentos",
+      "emocion": "any",
+      "accion": "overhead",
+      "propsAsociados": [
+        "helado_mariposa_recuerdo_4k"
+      ],
+      "ruta": "poses/props/prop_helado_mariposa_recuerdo_4k.svg",
+      "formato": "svg",
+      "etiquetas": [
+        "helado",
+        "mariposa",
+        "recuerdo",
+        "4k",
+        "infancia",
+        "primera_vez",
+        "asombro"
+      ],
+      "compatibleComposicion": true
+    },
+    {
+      "id": "prop_rueda_hamster_oficina_cubiculos",
+      "propParamId": "rueda_hamster_oficina_cubiculos",
+      "nombre": "Prop: Rueda de Hámster de Oficina Rutinaria",
+      "categoria": "props",
+      "subcategoria": "tecnologia",
+      "emocion": "any",
+      "accion": "right",
+      "propsAsociados": [
+        "rueda_hamster_oficina_cubiculos"
+      ],
+      "ruta": "poses/props/prop_rueda_hamster_oficina_cubiculos.svg",
+      "formato": "svg",
+      "etiquetas": [
+        "rueda",
+        "hamster",
+        "oficina",
+        "rutina",
+        "bucle",
+        "infinito",
+        "trabajo"
+      ],
+      "compatibleComposicion": true
+    },
+    {
+      "id": "prop_mochila_guitarra_mapa_aventura",
+      "propParamId": "mochila_guitarra_mapa_aventura",
+      "nombre": "Prop: Mochila de Explorador, Guitarra y Mapa",
+      "categoria": "props",
+      "subcategoria": "reacciones_humor",
+      "emocion": "any",
+      "accion": "overhead",
+      "propsAsociados": [
+        "mochila_guitarra_mapa_aventura"
+      ],
+      "ruta": "poses/props/prop_mochila_guitarra_mapa_aventura.svg",
+      "formato": "svg",
+      "etiquetas": [
+        "mochila",
+        "guitarra",
+        "mapa",
+        "aventura",
+        "explorador",
+        "viaje",
+        "antidoto"
+      ],
+      "compatibleComposicion": true
+    },
+    {
+      "id": "prop_vaso_antena_cuerda_espacio",
+      "propParamId": "vaso_antena_cuerda_espacio",
+      "nombre": "Prop: Vaso de Cartón con Cuerda Radiotelescopio Casero",
+      "categoria": "props",
+      "subcategoria": "educacion_ciencia",
+      "emocion": "any",
+      "accion": "right",
+      "propsAsociados": [
+        "vaso_antena_cuerda_espacio"
+      ],
+      "ruta": "poses/props/prop_vaso_antena_cuerda_espacio.svg",
+      "formato": "svg",
+      "etiquetas": [
+        "vaso",
+        "antena",
+        "cuerda",
+        "fermi",
+        "silencio",
+        "espacio",
+        "escucha"
+      ],
+      "compatibleComposicion": true
+    },
+    {
+      "id": "prop_holograma_via_lactea_colonizacion",
+      "propParamId": "holograma_via_lactea_colonizacion",
+      "nombre": "Prop: Holograma 3D de la Vía Láctea y Colonización",
+      "categoria": "props",
+      "subcategoria": "educacion_ciencia",
+      "emocion": "any",
+      "accion": "overhead",
+      "propsAsociados": [
+        "holograma_via_lactea_colonizacion"
+      ],
+      "ruta": "poses/props/prop_holograma_via_lactea_colonizacion.svg",
+      "formato": "svg",
+      "etiquetas": [
+        "holograma",
+        "via_lactea",
+        "galaxia",
+        "colonizacion",
+        "fermi",
+        "estrellas"
+      ],
+      "compatibleComposicion": true
+    },
+    {
+      "id": "prop_puntero_cientifico_fermi",
+      "propParamId": "puntero_cientifico_fermi",
+      "nombre": "Prop: Puntero Telescópico de Presentación Científica",
+      "categoria": "props",
+      "subcategoria": "educacion_ciencia",
+      "emocion": "any",
+      "accion": "right",
+      "propsAsociados": [
+        "puntero_cientifico_fermi"
+      ],
+      "ruta": "poses/props/prop_puntero_cientifico_fermi.svg",
+      "formato": "svg",
+      "etiquetas": [
+        "puntero",
+        "conferencia",
+        "fermi",
+        "ciencia",
+        "presentacion",
+        "explicacion"
+      ],
+      "compatibleComposicion": true
+    },
+    {
+      "id": "prop_auriculares_seti_dial",
+      "propParamId": "auriculares_seti_dial",
+      "nombre": "Prop: Auriculares Profesionales y Dial de Radio SETI",
+      "categoria": "props",
+      "subcategoria": "tecnologia",
+      "emocion": "any",
+      "accion": "overhead",
+      "propsAsociados": [
+        "auriculares_seti_dial"
+      ],
+      "ruta": "poses/props/prop_auriculares_seti_dial.svg",
+      "formato": "svg",
+      "etiquetas": [
+        "auriculares",
+        "seti",
+        "radio",
+        "escucha",
+        "antena",
+        "frecuencia",
+        "dial"
+      ],
+      "compatibleComposicion": true
+    },
+    {
+      "id": "prop_muro_gran_filtro_obsidiana",
+      "propParamId": "muro_gran_filtro_obsidiana",
+      "nombre": "Prop: Muro del Gran Filtro de Obsidiana con Picos",
+      "categoria": "props",
+      "subcategoria": "educacion_ciencia",
+      "emocion": "any",
+      "accion": "overhead",
+      "propsAsociados": [
+        "muro_gran_filtro_obsidiana"
+      ],
+      "ruta": "poses/props/prop_muro_gran_filtro_obsidiana.svg",
+      "formato": "svg",
+      "etiquetas": [
+        "gran_filtro",
+        "muro",
+        "obsidiana",
+        "extincion",
+        "barrera",
+        "cosmos",
+        "peligro"
+      ],
+      "compatibleComposicion": true
+    },
+    {
+      "id": "prop_holograma_amenazas_futuro",
+      "propParamId": "holograma_amenazas_futuro",
+      "nombre": "Prop: Holograma de Amenazas Tecnológicas Futuras",
+      "categoria": "props",
+      "subcategoria": "tecnologia",
+      "emocion": "any",
+      "accion": "left",
+      "propsAsociados": [
+        "holograma_amenazas_futuro"
+      ],
+      "ruta": "poses/props/prop_holograma_amenazas_futuro.svg",
+      "formato": "svg",
+      "etiquetas": [
+        "amenaza",
+        "futuro",
+        "ia",
+        "nuclear",
+        "peligro",
+        "advertencia",
+        "holograma"
+      ],
+      "compatibleComposicion": true
+    },
+    {
+      "id": "prop_linterna_bosque_haz_revelador",
+      "propParamId": "linterna_bosque_haz_revelador",
+      "nombre": "Prop: Linterna de Campo con Haz de Luz Revelador",
+      "categoria": "props",
+      "subcategoria": "tecnologia",
+      "emocion": "any",
+      "accion": "right",
+      "propsAsociados": [
+        "linterna_bosque_haz_revelador"
+      ],
+      "ruta": "poses/props/prop_linterna_bosque_haz_revelador.svg",
+      "formato": "svg",
+      "etiquetas": [
+        "linterna",
+        "bosque_oscuro",
+        "luz",
+        "haz",
+        "revelador",
+        "cazador",
+        "sigilo"
+      ],
+      "compatibleComposicion": true
+    },
+    {
+      "id": "prop_palido_punto_azul_esfera",
+      "propParamId": "palido_punto_azul_esfera",
+      "nombre": "Prop: Pálido Punto Azul Planeta Tierra en Manos",
+      "categoria": "props",
+      "subcategoria": "educacion_ciencia",
+      "emocion": "any",
+      "accion": "overhead",
+      "propsAsociados": [
+        "palido_punto_azul_esfera"
+      ],
+      "ruta": "poses/props/prop_palido_punto_azul_esfera.svg",
+      "formato": "svg",
+      "etiquetas": [
+        "tierra",
+        "palido_punto_azul",
+        "planeta",
+        "hogar",
+        "sagan",
+        "fermi",
+        "cosmos"
+      ],
+      "compatibleComposicion": true
+    },
+    {
+      "id": "prop_telegrafo_morse_chispas",
+      "propParamId": "telegrafo_morse_chispas",
+      "nombre": "Prop: Manipulador de Telégrafo Morse con Arcos Eléctricos y Fuego",
+      "categoria": "props",
+      "subcategoria": "tecnologia",
+      "emocion": "any",
+      "accion": "right",
+      "propsAsociados": [
+        "telegrafo_morse_chispas"
+      ],
+      "ruta": "poses/props/prop_telegrafo_morse_chispas.svg",
+      "formato": "svg",
+      "etiquetas": [
+        "telegrafo",
+        "morse",
+        "chispas",
+        "carrington",
+        "1859",
+        "electricidad",
+        "fuego"
+      ],
+      "compatibleComposicion": true
+    },
+    {
+      "id": "prop_periodico_victoriano_auroras",
+      "propParamId": "periodico_victoriano_auroras",
+      "nombre": "Prop: Periódico Histórico de 1859 Iluminado por Auroras",
+      "categoria": "props",
+      "subcategoria": "herramientas_objetos",
+      "emocion": "any",
+      "accion": "right",
+      "propsAsociados": [
+        "periodico_victoriano_auroras"
+      ],
+      "ruta": "poses/props/prop_periodico_victoriano_auroras.svg",
+      "formato": "svg",
+      "etiquetas": [
+        "periodico",
+        "1859",
+        "aurora",
+        "caribe",
+        "lectura",
+        "carrington",
+        "prensa"
+      ],
+      "compatibleComposicion": true
+    },
+    {
+      "id": "prop_telescopio_laton_pantalla_proyeccion",
+      "propParamId": "telescopio_laton_pantalla_proyeccion",
+      "nombre": "Prop: Telescopio Victoriano con Pantalla Solar de Carrington",
+      "categoria": "props",
+      "subcategoria": "educacion_ciencia",
+      "emocion": "any",
+      "accion": "left",
+      "propsAsociados": [
+        "telescopio_laton_pantalla_proyeccion"
+      ],
+      "ruta": "poses/props/prop_telescopio_laton_pantalla_proyeccion.svg",
+      "formato": "svg",
+      "etiquetas": [
+        "telescopio",
+        "carrington",
+        "pantalla",
+        "manchas_solares",
+        "fulguracion",
+        "astronomia"
+      ],
+      "compatibleComposicion": true
+    },
+    {
+      "id": "prop_capsula_espacial_radar",
+      "propParamId": "capsula_espacial_radar",
+      "nombre": "Prop: Cápsula de Observación con Radar de Alerta Solar",
+      "categoria": "props",
+      "subcategoria": "tecnologia",
+      "emocion": "any",
+      "accion": "right",
+      "propsAsociados": [
+        "capsula_espacial_radar"
+      ],
+      "ruta": "poses/props/prop_capsula_espacial_radar.svg",
+      "formato": "svg",
+      "etiquetas": [
+        "capsula",
+        "radar",
+        "cme",
+        "espacio",
+        "alerta",
+        "velocidad",
+        "plasma"
+      ],
+      "compatibleComposicion": true
+    },
+    {
+      "id": "prop_poste_telegrafo_moderno_combo",
+      "propParamId": "poste_telegrafo_moderno_combo",
+      "nombre": "Prop: Doble Tecnología: Poste de Telégrafo a Torre de Alta Tensión",
+      "categoria": "props",
+      "subcategoria": "herramientas_objetos",
+      "emocion": "any",
+      "accion": "overhead",
+      "propsAsociados": [
+        "poste_telegrafo_moderno_combo"
+      ],
+      "ruta": "poses/props/prop_poste_telegrafo_moderno_combo.svg",
+      "formato": "svg",
+      "etiquetas": [
+        "poste",
+        "torre",
+        "cables",
+        "red",
+        "transicion",
+        "tecnologia",
+        "1859"
+      ],
+      "compatibleComposicion": true
+    },
+    {
+      "id": "prop_subestacion_transformador_fuego",
+      "propParamId": "subestacion_transformador_fuego",
+      "nombre": "Prop: Transformador de Subestación Estallando en Llamas",
+      "categoria": "props",
+      "subcategoria": "herramientas_objetos",
+      "emocion": "any",
+      "accion": "overhead",
+      "propsAsociados": [
+        "subestacion_transformador_fuego"
+      ],
+      "ruta": "poses/props/prop_subestacion_transformador_fuego.svg",
+      "formato": "svg",
+      "etiquetas": [
+        "transformador",
+        "subestacion",
+        "fuego",
+        "blackout",
+        "explosion",
+        "alto_voltaje"
+      ],
+      "compatibleComposicion": true
+    },
+    {
+      "id": "prop_telefono_muerto_sin_senal",
+      "propParamId": "telefono_muerto_sin_senal",
+      "nombre": "Prop: Smartphone Muerto con Alerta Sin Señal",
+      "categoria": "props",
+      "subcategoria": "tecnologia",
+      "emocion": "any",
+      "accion": "right",
+      "propsAsociados": [
+        "telefono_muerto_sin_senal"
+      ],
+      "ruta": "poses/props/prop_telefono_muerto_sin_senal.svg",
+      "formato": "svg",
+      "etiquetas": [
+        "celular",
+        "smartphone",
+        "sin_senal",
+        "blackout",
+        "telefono",
+        "pantalla",
+        "apagon"
+      ],
+      "compatibleComposicion": true
+    },
+    {
+      "id": "prop_vela_fosforo_resplandor",
+      "propParamId": "vela_fosforo_resplandor",
+      "nombre": "Prop: Vela Encendida y Fósforo en Penumbra",
+      "categoria": "props",
+      "subcategoria": "herramientas_objetos",
+      "emocion": "any",
+      "accion": "right",
+      "propsAsociados": [
+        "vela_fosforo_resplandor"
+      ],
+      "ruta": "poses/props/prop_vela_fosforo_resplandor.svg",
+      "formato": "svg",
+      "etiquetas": [
+        "vela",
+        "fosforo",
+        "llama",
+        "fuego",
+        "penumbra",
+        "apagon",
+        "calidez",
+        "cierre"
+      ],
+      "compatibleComposicion": true
+    },
+    {
+      "id": "prop_proyector_cine_holografico",
+      "propParamId": "proyector_cine_holografico",
+      "nombre": "Prop: Proyector de Cine de Recuerdos Incómodos",
+      "categoria": "props",
+      "subcategoria": "reacciones_humor",
+      "emocion": "any",
+      "accion": "overhead",
+      "propsAsociados": [
+        "proyector_cine_holografico"
+      ],
+      "ruta": "poses/props/prop_proyector_cine_holografico.svg",
+      "formato": "svg",
+      "etiquetas": [
+        "proyector",
+        "cine",
+        "recuerdos",
+        "verguenza",
+        "pelicula",
+        "holograma"
+      ],
+      "compatibleComposicion": true
+    },
+    {
+      "id": "prop_consola_cerebral_guardia",
+      "propParamId": "consola_cerebral_guardia",
+      "nombre": "Prop: Consola de Guardia Prefrontal Durmiente",
+      "categoria": "props",
+      "subcategoria": "educacion_ciencia",
+      "emocion": "any",
+      "accion": "overhead",
+      "propsAsociados": [
+        "consola_cerebral_guardia"
+      ],
+      "ruta": "poses/props/prop_consola_cerebral_guardia.svg",
+      "formato": "svg",
+      "etiquetas": [
+        "corteza",
+        "prefrontal",
+        "consola",
+        "terminal",
+        "cerebro",
+        "sueno",
+        "guardia"
+      ],
+      "compatibleComposicion": true
+    },
+    {
+      "id": "prop_amigdala_criatura_megafono",
+      "propParamId": "amigdala_criatura_megafono",
+      "nombre": "Prop: Amígdala Emocional con Megáfono y Palanca",
+      "categoria": "props",
+      "subcategoria": "reacciones_humor",
+      "emocion": "any",
+      "accion": "right",
+      "propsAsociados": [
+        "amigdala_criatura_megafono"
+      ],
+      "ruta": "poses/props/prop_amigdala_criatura_megafono.svg",
+      "formato": "svg",
+      "etiquetas": [
+        "amigdala",
+        "megafono",
+        "alarma",
+        "cerebro",
+        "panico",
+        "alerta",
+        "miedo"
+      ],
+      "compatibleComposicion": true
+    },
+    {
+      "id": "prop_engranajes_oxidados_ansiedad",
+      "propParamId": "engranajes_oxidados_ansiedad",
+      "nombre": "Prop: Engranajes Oxidados de Sobrepensamiento Nocturno",
+      "categoria": "props",
+      "subcategoria": "educacion_ciencia",
+      "emocion": "any",
+      "accion": "overhead",
+      "propsAsociados": [
+        "engranajes_oxidados_ansiedad"
+      ],
+      "ruta": "poses/props/prop_engranajes_oxidados_ansiedad.svg",
+      "formato": "svg",
+      "etiquetas": [
+        "engranajes",
+        "ansiedad",
+        "rumiacion",
+        "sobrepensar",
+        "chispas",
+        "noche"
+      ],
+      "compatibleComposicion": true
+    },
+    {
+      "id": "prop_lanza_cueva_prehistorica",
+      "propParamId": "lanza_cueva_prehistorica",
+      "nombre": "Prop: Lanza Primitiva de Piedra y Fuego Ancestral",
+      "categoria": "props",
+      "subcategoria": "historia_exploracion",
+      "emocion": "any",
+      "accion": "right",
+      "propsAsociados": [
+        "lanza_cueva_prehistorica"
+      ],
+      "ruta": "poses/props/prop_lanza_cueva_prehistorica.svg",
+      "formato": "svg",
+      "etiquetas": [
+        "lanza",
+        "prehistoria",
+        "caverna",
+        "tigre",
+        "evolucion",
+        "depredador"
+      ],
+      "compatibleComposicion": true
+    },
+    {
+      "id": "prop_facturas_celular_visto",
+      "propParamId": "facturas_celular_visto",
+      "nombre": "Prop: Pila de Facturas y Notificaciones sin Responder",
+      "categoria": "props",
+      "subcategoria": "vida_cotidiana",
+      "emocion": "any",
+      "accion": "overhead",
+      "propsAsociados": [
+        "facturas_celular_visto"
+      ],
+      "ruta": "poses/props/prop_facturas_celular_visto.svg",
+      "formato": "svg",
+      "etiquetas": [
+        "facturas",
+        "celular",
+        "visto",
+        "deudas",
+        "notificaciones",
+        "ansiedad",
+        "cama"
+      ],
+      "compatibleComposicion": true
+    },
+    {
+      "id": "prop_lampara_noche_interruptor",
+      "propParamId": "lampara_noche_interruptor",
+      "nombre": "Prop: Lámpara de Noche con Halo Tranquilizador",
+      "categoria": "props",
+      "subcategoria": "vida_cotidiana",
+      "emocion": "any",
+      "accion": "left",
+      "propsAsociados": [
+        "lampara_noche_interruptor"
+      ],
+      "ruta": "poses/props/prop_lampara_noche_interruptor.svg",
+      "formato": "svg",
+      "etiquetas": [
+        "lampara",
+        "noche",
+        "luz",
+        "calma",
+        "sueno",
+        "descanso",
+        "paz"
+      ],
+      "compatibleComposicion": true
+    },
+    {
+      "id": "prop_celda_prision_mandela",
+      "propParamId": "celda_prision_mandela",
+      "nombre": "Prop: Celda de Prisión con Silueta que se Desvanece",
+      "categoria": "props",
+      "subcategoria": "historia_exploracion",
+      "emocion": "any",
+      "accion": "overhead",
+      "propsAsociados": [
+        "celda_prision_mandela"
+      ],
+      "ruta": "poses/props/prop_celda_prision_mandela.svg",
+      "formato": "svg",
+      "etiquetas": [
+        "celda",
+        "prision",
+        "mandela",
+        "desvanecer",
+        "recuerdo",
+        "error",
+        "historia"
+      ],
+      "compatibleComposicion": true
+    },
+    {
+      "id": "prop_linea_tiempo_mandela_tv",
+      "propParamId": "linea_tiempo_mandela_tv",
+      "nombre": "Prop: Televisión Antigua con Estática y Gran Cruz Roja",
+      "categoria": "props",
+      "subcategoria": "tecnologia",
+      "emocion": "any",
+      "accion": "overhead",
+      "propsAsociados": [
+        "linea_tiempo_mandela_tv"
+      ],
+      "ruta": "poses/props/prop_linea_tiempo_mandela_tv.svg",
+      "formato": "svg",
+      "etiquetas": [
+        "tv",
+        "television",
+        "estatica",
+        "noticia_falsa",
+        "mandela",
+        "pantalla",
+        "cruz_roja"
+      ],
+      "compatibleComposicion": true
+    },
+    {
+      "id": "prop_red_pensamientos_fiona_siluetas",
+      "propParamId": "red_pensamientos_fiona_siluetas",
+      "nombre": "Prop: Red de Pensamientos Compartidos de Fiona Broome",
+      "categoria": "props",
+      "subcategoria": "educacion_ciencia",
+      "emocion": "any",
+      "accion": "overhead",
+      "propsAsociados": [
+        "red_pensamientos_fiona_siluetas"
+      ],
+      "ruta": "poses/props/prop_red_pensamientos_fiona_siluetas.svg",
+      "formato": "svg",
+      "etiquetas": [
+        "pensamiento",
+        "fiona",
+        "red",
+        "contagio",
+        "memoria",
+        "siluetas",
+        "nube"
+      ],
+      "compatibleComposicion": true
+    },
+    {
+      "id": "prop_caballete_monopoly_pikachu",
+      "propParamId": "caballete_monopoly_pikachu",
+      "nombre": "Prop: Caballete Artístico con Monóculo y Cola de Pikachu Borrándose",
+      "categoria": "props",
+      "subcategoria": "reacciones_humor",
+      "emocion": "any",
+      "accion": "overhead",
+      "propsAsociados": [
+        "caballete_monopoly_pikachu"
+      ],
+      "ruta": "poses/props/prop_caballete_monopoly_pikachu.svg",
+      "formato": "svg",
+      "etiquetas": [
+        "monopoly",
+        "pikachu",
+        "caballete",
+        "monoculo",
+        "cola",
+        "dibujo",
+        "goma",
+        "borrar"
+      ],
+      "compatibleComposicion": true
+    },
+    {
+      "id": "prop_experimento_loftus_choque_autos",
+      "propParamId": "experimento_loftus_choque_autos",
+      "nombre": "Prop: Choque de Autos del Experimento de Elizabeth Loftus",
+      "categoria": "props",
+      "subcategoria": "educacion_ciencia",
+      "emocion": "any",
+      "accion": "overhead",
+      "propsAsociados": [
+        "experimento_loftus_choque_autos"
+      ],
+      "ruta": "poses/props/prop_experimento_loftus_choque_autos.svg",
+      "formato": "svg",
+      "etiquetas": [
+        "autos",
+        "choque",
+        "loftus",
+        "experimento",
+        "velocidad",
+        "cristales",
+        "psicologia"
+      ],
+      "compatibleComposicion": true
+    },
+    {
+      "id": "prop_vhs_rompecabezas_cajon_memoria",
+      "propParamId": "vhs_rompecabezas_cajon_memoria",
+      "nombre": "Prop: VHS Roto y Rompecabezas de Memoria Reconstructiva",
+      "categoria": "props",
+      "subcategoria": "educacion_ciencia",
+      "emocion": "any",
+      "accion": "overhead",
+      "propsAsociados": [
+        "vhs_rompecabezas_cajon_memoria"
+      ],
+      "ruta": "poses/props/prop_vhs_rompecabezas_cajon_memoria.svg",
+      "formato": "svg",
+      "etiquetas": [
+        "vhs",
+        "rompecabezas",
+        "puzzle",
+        "cajon",
+        "memoria",
+        "reconstruccion",
+        "cerebro"
+      ],
+      "compatibleComposicion": true
+    },
+    {
+      "id": "prop_multitud_piezas_falsas_lupa",
+      "propParamId": "multitud_piezas_falsas_lupa",
+      "nombre": "Prop: Lupa Examinando Piezas Falsas de la Multitud",
+      "categoria": "props",
+      "subcategoria": "herramientas_objetos",
+      "emocion": "any",
+      "accion": "overhead",
+      "propsAsociados": [
+        "multitud_piezas_falsas_lupa"
+      ],
+      "ruta": "poses/props/prop_multitud_piezas_falsas_lupa.svg",
+      "formato": "svg",
+      "etiquetas": [
+        "lupa",
+        "multitud",
+        "pieza",
+        "error",
+        "falso",
+        "examen",
+        "cruz_roja"
+      ],
+      "compatibleComposicion": true
+    },
+    {
+      "id": "prop_nube_sombrero_rebobinado_vhs",
+      "propParamId": "nube_sombrero_rebobinado_vhs",
+      "nombre": "Prop: Nube de Pensamiento con Sombrero en Duda y Bucle",
+      "categoria": "props",
+      "subcategoria": "reacciones_humor",
+      "emocion": "any",
+      "accion": "overhead",
+      "propsAsociados": [
+        "nube_sombrero_rebobinado_vhs"
+      ],
+      "ruta": "poses/props/prop_nube_sombrero_rebobinado_vhs.svg",
+      "formato": "svg",
+      "etiquetas": [
+        "sombrero",
+        "nube",
+        "duda",
+        "pregunta",
+        "bucle",
+        "cierre",
+        "cabeza"
+      ],
+      "compatibleComposicion": true
+    },
+    {
+      "id": "prop_mascara_buceo",
+      "propParamId": "mascara_buceo",
+      "nombre": "Prop: Máscara de Buceo y Snorkel",
+      "categoria": "props",
+      "subcategoria": "historia_exploracion",
+      "emocion": "any",
+      "accion": "overhead",
+      "propsAsociados": [
+        "mascara_buceo"
+      ],
+      "ruta": "poses/props/prop_mascara_buceo.svg",
+      "formato": "svg",
+      "etiquetas": [
+        "buceo",
+        "snorkel",
+        "mascara",
+        "submarino",
+        "mar",
+        "agua"
+      ],
+      "compatibleComposicion": true
+    },
+    {
+      "id": "prop_lupa_gigante_arqueologia",
+      "propParamId": "lupa_gigante_arqueologia",
+      "nombre": "Prop: Lupa Gigante de Investigación Científica",
+      "categoria": "props",
+      "subcategoria": "educacion_ciencia",
+      "emocion": "any",
+      "accion": "right",
+      "propsAsociados": [
+        "lupa_gigante_arqueologia"
+      ],
+      "ruta": "poses/props/prop_lupa_gigante_arqueologia.svg",
+      "formato": "svg",
+      "etiquetas": [
+        "lupa",
+        "investigacion",
+        "ciencia",
+        "arqueologia",
+        "microscopio",
+        "aumento"
+      ],
+      "compatibleComposicion": true
+    },
+    {
+      "id": "prop_bloques_comparativa_hormigon",
+      "propParamId": "bloques_comparativa_hormigon",
+      "nombre": "Prop: Muestras de Hormigón Moderno vs Romano",
+      "categoria": "props",
+      "subcategoria": "educacion_ciencia",
+      "emocion": "any",
+      "accion": "both",
+      "propsAsociados": [
+        "bloques_comparativa_hormigon"
+      ],
+      "ruta": "poses/props/prop_bloques_comparativa_hormigon.svg",
+      "formato": "svg",
+      "etiquetas": [
+        "bloques",
+        "hormigon",
+        "romano",
+        "moderno",
+        "comparativa",
+        "materiales"
+      ],
+      "compatibleComposicion": true
+    },
+    {
+      "id": "prop_perro_xoloitzcuintle",
+      "propParamId": "perro_xoloitzcuintle",
+      "nombre": "Prop: Perro Xoloitzcuintle Guía del Mictlán",
+      "categoria": "props",
+      "subcategoria": "historia_exploracion",
+      "emocion": "any",
+      "accion": "right",
+      "propsAsociados": [
+        "perro_xoloitzcuintle"
+      ],
+      "ruta": "poses/props/prop_perro_xoloitzcuintle.svg",
+      "formato": "svg",
+      "etiquetas": [
+        "perro",
+        "xoloitzcuintle",
+        "mictlan",
+        "guia",
+        "mexica",
+        "mascota",
+        "ofrenda"
+      ],
+      "compatibleComposicion": true
+    },
+    {
+      "id": "prop_altar_tres_niveles_vela",
+      "propParamId": "altar_tres_niveles_vela",
+      "nombre": "Prop: Altar Tradicional de Tres Niveles con Vela",
+      "categoria": "props",
+      "subcategoria": "historia_exploracion",
+      "emocion": "any",
+      "accion": "left",
+      "propsAsociados": [
+        "altar_tres_niveles_vela"
+      ],
+      "ruta": "poses/props/prop_altar_tres_niveles_vela.svg",
+      "formato": "svg",
+      "etiquetas": [
+        "altar",
+        "ofrenda",
+        "vela",
+        "dia_de_muertos",
+        "mexica",
+        "cempasuchil"
+      ],
+      "compatibleComposicion": true
+    },
+    {
+      "id": "prop_codice_mexica_abierto",
+      "propParamId": "codice_mexica_abierto",
+      "nombre": "Prop: Códice Mexica Abierto en Acordeón",
+      "categoria": "props",
+      "subcategoria": "historia_exploracion",
+      "emocion": "any",
+      "accion": "both",
+      "propsAsociados": [
+        "codice_mexica_abierto"
+      ],
+      "ruta": "poses/props/prop_codice_mexica_abierto.svg",
+      "formato": "svg",
+      "etiquetas": [
+        "codice",
+        "mexica",
+        "sahagun",
+        "manuscrito",
+        "historia",
+        "jeroglifico",
+        "amate"
+      ],
+      "compatibleComposicion": true
+    },
+    {
+      "id": "prop_cuenco_agua_petalos",
+      "propParamId": "cuenco_agua_petalos",
+      "nombre": "Prop: Cuenco de Barro con Agua y Pétalos de Cempasúchil",
+      "categoria": "props",
+      "subcategoria": "historia_exploracion",
+      "emocion": "any",
+      "accion": "right",
+      "propsAsociados": [
+        "cuenco_agua_petalos"
+      ],
+      "ruta": "poses/props/prop_cuenco_agua_petalos.svg",
+      "formato": "svg",
+      "etiquetas": [
+        "cuenco",
+        "agua",
+        "barro",
+        "petalos",
+        "cempasuchil",
+        "ofrenda",
+        "sed",
+        "viaje"
+      ],
+      "compatibleComposicion": true
+    },
+    {
+      "id": "prop_telefono_dopamina_dorado",
+      "propParamId": "telefono_dopamina_dorado",
+      "nombre": "Prop: Smartphone con Resplandor Dorado de Dopamina y Scroll",
+      "categoria": "props",
+      "subcategoria": "tecnologia",
+      "emocion": "any",
+      "accion": "right",
+      "propsAsociados": [
+        "telefono_dopamina_dorado"
+      ],
+      "ruta": "poses/props/prop_telefono_dopamina_dorado.svg",
+      "formato": "svg",
+      "etiquetas": [
+        "telefono",
+        "celular",
+        "smartphone",
+        "dopamina",
+        "scroll",
+        "tiktok",
+        "procrastinacion"
+      ],
+      "compatibleComposicion": true
+    },
+    {
+      "id": "prop_laptop_escritorio_documento",
+      "propParamId": "laptop_escritorio_documento",
+      "nombre": "Prop: Laptop con Documento en Blanco y Entrega 11:59 PM",
+      "categoria": "props",
+      "subcategoria": "tecnologia",
+      "emocion": "any",
+      "accion": "both",
+      "propsAsociados": [
+        "laptop_escritorio_documento"
+      ],
+      "ruta": "poses/props/prop_laptop_escritorio_documento.svg",
+      "formato": "svg",
+      "etiquetas": [
+        "laptop",
+        "computadora",
+        "trabajo",
+        "documento",
+        "blanco",
+        "urgencia",
+        "escritorio"
+      ],
+      "compatibleComposicion": true
+    },
+    {
+      "id": "prop_pizarron_metas_30dias",
+      "propParamId": "pizarron_metas_30dias",
+      "nombre": "Prop: Pizarrón Blanco con Plan de Vida y Carga al 15%",
+      "categoria": "props",
+      "subcategoria": "educacion_ciencia",
+      "emocion": "any",
+      "accion": "both",
+      "propsAsociados": [
+        "pizarron_metas_30dias"
+      ],
+      "ruta": "poses/props/prop_pizarron_metas_30dias.svg",
+      "formato": "svg",
+      "etiquetas": [
+        "pizarron",
+        "metas",
+        "planificacion",
+        "corteza",
+        "racional",
+        "lento",
+        "futuro"
+      ],
+      "compatibleComposicion": true
+    },
+    {
+      "id": "prop_mazo_cavernicola_dopamina",
+      "propParamId": "mazo_cavernicola_dopamina",
+      "nombre": "Prop: Mazo de Cavernícola con Dona y Chispas de Dopamina",
+      "categoria": "props",
+      "subcategoria": "reacciones_humor",
+      "emocion": "any",
+      "accion": "right",
+      "propsAsociados": [
+        "mazo_cavernicola_dopamina"
+      ],
+      "ruta": "poses/props/prop_mazo_cavernicola_dopamina.svg",
+      "formato": "svg",
+      "etiquetas": [
+        "mazo",
+        "garrote",
+        "cavernicola",
+        "dona",
+        "dopamina",
+        "placer",
+        "impulso"
+      ],
+      "compatibleComposicion": true
+    },
+    {
+      "id": "prop_pila_carpetas_oficina_gigante",
+      "propParamId": "pila_carpetas_oficina_gigante",
+      "nombre": "Prop: Pila Monumental de Carpetas de Trabajo Inacabadas",
+      "categoria": "props",
+      "subcategoria": "vida_cotidiana",
+      "emocion": "any",
+      "accion": "both",
+      "propsAsociados": [
+        "pila_carpetas_oficina_gigante"
+      ],
+      "ruta": "poses/props/prop_pila_carpetas_oficina_gigante.svg",
+      "formato": "svg",
+      "etiquetas": [
+        "carpetas",
+        "trabajo",
+        "archivos",
+        "papeles",
+        "marron",
+        "tarea",
+        "pendiente"
+      ],
+      "compatibleComposicion": true
+    },
+    {
+      "id": "prop_sofa_relax_palomitas",
+      "propParamId": "sofa_relax_palomitas",
+      "nombre": "Prop: Sillón Inflable, Palomitas y Gafas de Sol",
+      "categoria": "props",
+      "subcategoria": "vida_cotidiana",
+      "emocion": "any",
+      "accion": "both",
+      "propsAsociados": [
+        "sofa_relax_palomitas"
+      ],
+      "ruta": "poses/props/prop_sofa_relax_palomitas.svg",
+      "formato": "svg",
+      "etiquetas": [
+        "sofa",
+        "palomitas",
+        "relax",
+        "gafas",
+        "comodidad",
+        "presente",
+        "chill"
+      ],
+      "compatibleComposicion": true
+    },
+    {
+      "id": "prop_tazas_cafe_estres_apiladas",
+      "propParamId": "tazas_cafe_estres_apiladas",
+      "nombre": "Prop: Tazas de Café Apiladas y Reloj Bomba 3:42 AM",
+      "categoria": "props",
+      "subcategoria": "vida_cotidiana",
+      "emocion": "any",
+      "accion": "both",
+      "propsAsociados": [
+        "tazas_cafe_estres_apiladas"
+      ],
+      "ruta": "poses/props/prop_tazas_cafe_estres_apiladas.svg",
+      "formato": "svg",
+      "etiquetas": [
+        "cafe",
+        "tazas",
+        "madrugada",
+        "estres",
+        "panico",
+        "reloj",
+        "bomba",
+        "futuro"
+      ],
+      "compatibleComposicion": true
+    },
+    {
+      "id": "prop_caja_fuerte_candado_telefono",
+      "propParamId": "caja_fuerte_candado_telefono",
+      "nombre": "Prop: Caja de Seguridad con Candado Cerrado",
+      "categoria": "props",
+      "subcategoria": "herramientas_objetos",
+      "emocion": "any",
+      "accion": "left",
+      "propsAsociados": [
+        "caja_fuerte_candado_telefono"
+      ],
+      "ruta": "poses/props/prop_caja_fuerte_candado_telefono.svg",
+      "formato": "svg",
+      "etiquetas": [
+        "caja",
+        "candado",
+        "bloqueo",
+        "friccion",
+        "telefono",
+        "concentracion",
+        "seguridad"
+      ],
+      "compatibleComposicion": true
+    },
+    {
+      "id": "prop_reloj_arena_cinco_minutos",
+      "propParamId": "reloj_arena_cinco_minutos",
+      "nombre": "Prop: Reloj de Arena Azul de 5 Minutos",
+      "categoria": "props",
+      "subcategoria": "educacion_ciencia",
+      "emocion": "any",
+      "accion": "right",
+      "propsAsociados": [
+        "reloj_arena_cinco_minutos"
+      ],
+      "ruta": "poses/props/prop_reloj_arena_cinco_minutos.svg",
+      "formato": "svg",
+      "etiquetas": [
+        "reloj",
+        "arena",
+        "5_minutos",
+        "regla",
+        "tiempo",
+        "concentracion",
+        "inicio"
+      ],
+      "compatibleComposicion": true
+    },
+    {
+      "id": "prop_capsula_placebo_roja_blanca",
+      "propParamId": "capsula_placebo_roja_blanca",
+      "nombre": "Prop: Cápsula Placebo Bicolor Roja y Blanca",
+      "categoria": "props",
+      "subcategoria": "educacion_ciencia",
+      "emocion": "any",
+      "accion": "right",
+      "propsAsociados": [
+        "capsula_placebo_roja_blanca"
+      ],
+      "ruta": "poses/props/prop_capsula_placebo_roja_blanca.svg",
+      "formato": "svg",
+      "etiquetas": [
+        "capsula",
+        "pastilla",
+        "placebo",
+        "medicina",
+        "cura",
+        "farmacia",
+        "alivio",
+        "roja_blanca"
+      ],
+      "compatibleComposicion": true
+    },
+    {
+      "id": "prop_vaso_agua_fresca",
+      "propParamId": "vaso_agua_fresca",
+      "nombre": "Prop: Vaso de Agua Fresca Transparente",
+      "categoria": "props",
+      "subcategoria": "vida_cotidiana",
+      "emocion": "any",
+      "accion": "left",
+      "propsAsociados": [
+        "vaso_agua_fresca"
+      ],
+      "ruta": "poses/props/prop_vaso_agua_fresca.svg",
+      "formato": "svg",
+      "etiquetas": [
+        "vaso",
+        "agua",
+        "beber",
+        "tragar",
+        "pastilla",
+        "cristal",
+        "clinico"
+      ],
+      "compatibleComposicion": true
+    },
+    {
+      "id": "prop_frasco_azucar_100_glucosa",
+      "propParamId": "frasco_azucar_100_glucosa",
+      "nombre": "Prop: Frasco Revelador 100% Azúcar Glucosa",
+      "categoria": "props",
+      "subcategoria": "educacion_ciencia",
+      "emocion": "any",
+      "accion": "right",
+      "propsAsociados": [
+        "frasco_azucar_100_glucosa"
+      ],
+      "ruta": "poses/props/prop_frasco_azucar_100_glucosa.svg",
+      "formato": "svg",
+      "etiquetas": [
+        "frasco",
+        "azucar",
+        "glucosa",
+        "placebo",
+        "100%",
+        "medicina",
+        "engaño",
+        "revelacion"
+      ],
+      "compatibleComposicion": true
+    },
+    {
+      "id": "prop_caja_placebo_etiqueta_abierta",
+      "propParamId": "caja_placebo_etiqueta_abierta",
+      "nombre": "Prop: Caja de Placebo de Etiqueta Abierta",
+      "categoria": "props",
+      "subcategoria": "educacion_ciencia",
+      "emocion": "any",
+      "accion": "right",
+      "propsAsociados": [
+        "caja_placebo_etiqueta_abierta"
+      ],
+      "ruta": "poses/props/prop_caja_placebo_etiqueta_abierta.svg",
+      "formato": "svg",
+      "etiquetas": [
+        "caja",
+        "placebo_abierto",
+        "honesto",
+        "azucar",
+        "etiqueta_abierta",
+        "experimento",
+        "harvard"
+      ],
+      "compatibleComposicion": true
+    },
+    {
+      "id": "prop_candado_dorado_receptor_dolor",
+      "propParamId": "candado_dorado_receptor_dolor",
+      "nombre": "Prop: Candado Dorado Bloqueando Receptor de Dolor",
+      "categoria": "props",
+      "subcategoria": "educacion_ciencia",
+      "emocion": "any",
+      "accion": "right",
+      "propsAsociados": [
+        "candado_dorado_receptor_dolor"
+      ],
+      "ruta": "poses/props/prop_candado_dorado_receptor_dolor.svg",
+      "formato": "svg",
+      "etiquetas": [
+        "candado",
+        "receptor",
+        "dolor",
+        "bloqueo",
+        "endorfina",
+        "opioide",
+        "celular",
+        "farmacia_interna"
+      ],
+      "compatibleComposicion": true
+    },
+    {
+      "id": "prop_esferas_endorfinas_flotantes",
+      "propParamId": "esferas_endorfinas_flotantes",
+      "nombre": "Prop: Esferas de Endorfinas y Opioides Naturales",
+      "categoria": "props",
+      "subcategoria": "educacion_ciencia",
+      "emocion": "any",
+      "accion": "overhead",
+      "propsAsociados": [
+        "esferas_endorfinas_flotantes"
+      ],
+      "ruta": "poses/props/prop_esferas_endorfinas_flotantes.svg",
+      "formato": "svg",
+      "etiquetas": [
+        "endorfinas",
+        "opioides",
+        "dopamina",
+        "neuroquimica",
+        "cerebro",
+        "oro",
+        "moleculas",
+        "alivio"
+      ],
+      "compatibleComposicion": true
+    },
+    {
+      "id": "prop_manivela_valvula_farmacia_interna",
+      "propParamId": "manivela_valvula_farmacia_interna",
+      "nombre": "Prop: Válvula de Presión Farmacia Interna",
+      "categoria": "props",
+      "subcategoria": "herramientas_objetos",
+      "emocion": "any",
+      "accion": "right",
+      "propsAsociados": [
+        "manivela_valvula_farmacia_interna"
+      ],
+      "ruta": "poses/props/prop_manivela_valvula_farmacia_interna.svg",
+      "formato": "svg",
+      "etiquetas": [
+        "valvula",
+        "manivela",
+        "farmacia_interna",
+        "control",
+        "abrir",
+        "flujo",
+        "tronco_encefalico"
+      ],
+      "compatibleComposicion": true
+    },
+    {
+      "id": "prop_rayo_dolor_cabeza",
+      "propParamId": "rayo_dolor_cabeza",
+      "nombre": "Prop: Rayo de Dolor de Cabeza Punzante",
+      "categoria": "props",
+      "subcategoria": "reacciones_humor",
+      "emocion": "any",
+      "accion": "overhead",
+      "propsAsociados": [
+        "rayo_dolor_cabeza"
+      ],
+      "ruta": "poses/props/prop_rayo_dolor_cabeza.svg",
+      "formato": "svg",
+      "etiquetas": [
+        "dolor",
+        "cabeza",
+        "jaqueca",
+        "migraña",
+        "rayo",
+        "pulsante",
+        "sintoma"
+      ],
+      "compatibleComposicion": true
+    },
+    {
+      "id": "prop_monitor_presion_arterial_hud",
+      "propParamId": "monitor_presion_arterial_hud",
+      "nombre": "Prop: Monitor de Presión Arterial y Pulso Estable",
+      "categoria": "props",
+      "subcategoria": "tecnologia",
+      "emocion": "any",
+      "accion": "left",
+      "propsAsociados": [
+        "monitor_presion_arterial_hud"
+      ],
+      "ruta": "poses/props/prop_monitor_presion_arterial_hud.svg",
+      "formato": "svg",
+      "etiquetas": [
+        "monitor",
+        "presion_arterial",
+        "ecg",
+        "cardiaco",
+        "estable",
+        "clinica",
+        "salud"
+      ],
+      "compatibleComposicion": true
+    },
+    {
+      "id": "prop_vaso_cafe_carton_salpicadura",
+      "propParamId": "vaso_cafe_carton_salpicadura",
+      "nombre": "Prop: Vaso de Café con Salpicadura de Gota",
+      "categoria": "props",
+      "subcategoria": "vida_cotidiana",
+      "emocion": "any",
+      "accion": "right",
+      "propsAsociados": [
+        "vaso_cafe_carton_salpicadura"
+      ],
+      "ruta": "poses/props/prop_vaso_cafe_carton_salpicadura.svg",
+      "formato": "svg",
+      "etiquetas": [
+        "cafe",
+        "vaso",
+        "tropiezo",
+        "salpicadura",
+        "mancha",
+        "accidente",
+        "descuido"
+      ],
+      "compatibleComposicion": true
+    },
+    {
+      "id": "prop_casco_minero_linterna_foco",
+      "propParamId": "casco_minero_linterna_foco",
+      "nombre": "Prop: Casco con Reflector Gigante Integrado",
+      "categoria": "props",
+      "subcategoria": "herramientas_objetos",
+      "emocion": "any",
+      "accion": "overhead",
+      "propsAsociados": [
+        "casco_minero_linterna_foco"
+      ],
+      "ruta": "poses/props/prop_casco_minero_linterna_foco.svg",
+      "formato": "svg",
+      "etiquetas": [
+        "casco",
+        "linterna",
+        "foco",
+        "reflector",
+        "cabeza",
+        "egocentrismo",
+        "percepcion"
+      ],
+      "compatibleComposicion": true
+    },
+    {
+      "id": "prop_camiseta_barry_manilow_amarilla",
+      "propParamId": "camiseta_barry_manilow_amarilla",
+      "nombre": "Prop: Camiseta Amarilla Kitsch de Barry Manilow",
+      "categoria": "props",
+      "subcategoria": "vida_cotidiana",
+      "emocion": "any",
+      "accion": "right",
+      "propsAsociados": [
+        "camiseta_barry_manilow_amarilla"
+      ],
+      "ruta": "poses/props/prop_camiseta_barry_manilow_amarilla.svg",
+      "formato": "svg",
+      "etiquetas": [
+        "camiseta",
+        "amarilla",
+        "barry_manilow",
+        "vergonzosa",
+        "kitsch",
+        "experimento",
+        "cornell"
+      ],
+      "compatibleComposicion": true
+    },
+    {
+      "id": "prop_carpeta_escolar_universidad",
+      "propParamId": "carpeta_escolar_universidad",
+      "nombre": "Prop: Carpeta Manila de Estudiante Universitario",
+      "categoria": "props",
+      "subcategoria": "educacion_ciencia",
+      "emocion": "any",
+      "accion": "left",
+      "propsAsociados": [
+        "carpeta_escolar_universidad"
+      ],
+      "ruta": "poses/props/prop_carpeta_escolar_universidad.svg",
+      "formato": "svg",
+      "etiquetas": [
+        "carpeta",
+        "universidad",
+        "cornell",
+        "tapar",
+        "pecho",
+        "estudiante",
+        "manila"
+      ],
+      "compatibleComposicion": true
+    },
+    {
+      "id": "prop_grafico_pastel_50_vs_23",
+      "propParamId": "grafico_pastel_50_vs_23",
+      "nombre": "Prop: Gráfica Comparativa 50% Paranoia vs 23% Realidad",
+      "categoria": "props",
+      "subcategoria": "educacion_ciencia",
+      "emocion": "any",
+      "accion": "right",
+      "propsAsociados": [
+        "grafico_pastel_50_vs_23"
+      ],
+      "ruta": "poses/props/prop_grafico_pastel_50_vs_23.svg",
+      "formato": "svg",
+      "etiquetas": [
+        "grafico",
+        "pastel",
+        "50%",
+        "23%",
+        "estadistica",
+        "cornell",
+        "gilovich",
+        "realidad"
+      ],
+      "compatibleComposicion": true
+    },
+    {
+      "id": "prop_lentes_3d_cine_palomitas",
+      "propParamId": "lentes_3d_cine_palomitas",
+      "nombre": "Prop: Lentes 3D Retro y Bote de Palomitas",
+      "categoria": "props",
+      "subcategoria": "vida_cotidiana",
+      "emocion": "any",
+      "accion": "left",
+      "propsAsociados": [
+        "lentes_3d_cine_palomitas"
+      ],
+      "ruta": "poses/props/prop_lentes_3d_cine_palomitas.svg",
+      "formato": "svg",
+      "etiquetas": [
+        "cine",
+        "lentes_3d",
+        "palomitas",
+        "protagonista",
+        "pelicula",
+        "propia_vida",
+        "butaca"
+      ],
+      "compatibleComposicion": true
+    },
+    {
+      "id": "prop_nube_inseguridad_grano",
+      "propParamId": "nube_inseguridad_grano",
+      "nombre": "Prop: Bocadillo de Pensamiento: Preocupación Cotidiana",
+      "categoria": "props",
+      "subcategoria": "reacciones_humor",
+      "emocion": "any",
+      "accion": "overhead",
+      "propsAsociados": [
+        "nube_inseguridad_grano"
+      ],
+      "ruta": "poses/props/prop_nube_inseguridad_grano.svg",
+      "formato": "svg",
+      "etiquetas": [
+        "pensamiento",
+        "inseguridad",
+        "grano",
+        "drama",
+        "multitud",
+        "absorto",
+        "preocupacion"
+      ],
+      "compatibleComposicion": true
+    },
+    {
+      "id": "prop_interruptor_palanca_industrial",
+      "propParamId": "interruptor_palanca_industrial",
+      "nombre": "Prop: Interruptor Eléctrico de Palanca Industrial",
+      "categoria": "props",
+      "subcategoria": "herramientas_objetos",
+      "emocion": "any",
+      "accion": "right",
+      "propsAsociados": [
+        "interruptor_palanca_industrial"
+      ],
+      "ruta": "poses/props/prop_interruptor_palanca_industrial.svg",
+      "formato": "svg",
+      "etiquetas": [
+        "interruptor",
+        "palanca",
+        "apagar",
+        "foco",
+        "libertad",
+        "clac",
+        "off"
+      ],
+      "compatibleComposicion": true
+    },
+    {
+      "id": "prop_gallina_sostenida_giroscopica",
+      "propParamId": "gallina_sostenida_giroscopica",
+      "nombre": "Prop: Gallina con Estabilizador Giroscópico Activo",
+      "categoria": "props",
+      "subcategoria": "naturaleza_alimentos",
+      "emocion": "any",
+      "accion": "both",
+      "propsAsociados": [
+        "gallina_sostenida_giroscopica"
+      ],
+      "ruta": "poses/props/prop_gallina_sostenida_giroscopica.svg",
+      "formato": "svg",
+      "etiquetas": [
+        "gallina",
+        "giroscopio",
+        "cabeza",
+        "estabilizador",
+        "ave",
+        "steadycam",
+        "experimento"
+      ],
+      "compatibleComposicion": true
+    },
+    {
+      "id": "prop_globo_ocular_aviar_plano_lupa",
+      "propParamId": "globo_ocular_aviar_plano_lupa",
+      "nombre": "Prop: Comparativa Anatómica: Ojo Humano vs Ojo Plano Aviar",
+      "categoria": "props",
+      "subcategoria": "educacion_ciencia",
+      "emocion": "any",
+      "accion": "overhead",
+      "propsAsociados": [
+        "globo_ocular_aviar_plano_lupa"
+      ],
+      "ruta": "poses/props/prop_globo_ocular_aviar_plano_lupa.svg",
+      "formato": "svg",
+      "etiquetas": [
+        "ojo",
+        "anatomia",
+        "humano",
+        "ave",
+        "plano",
+        "rigido",
+        "comparativa"
+      ],
+      "compatibleComposicion": true
+    },
+    {
+      "id": "prop_vision_borrosa_semillas_maiz",
+      "propParamId": "vision_borrosa_semillas_maiz",
+      "nombre": "Prop: Suelo con Semillas de Maíz y Líneas de Desenfoque Cinético",
+      "categoria": "props",
+      "subcategoria": "naturaleza_alimentos",
+      "emocion": "any",
+      "accion": "right",
+      "propsAsociados": [
+        "vision_borrosa_semillas_maiz"
+      ],
+      "ruta": "poses/props/prop_vision_borrosa_semillas_maiz.svg",
+      "formato": "svg",
+      "etiquetas": [
+        "semillas",
+        "maiz",
+        "desenfoque",
+        "ceguera",
+        "suelo",
+        "motion_blur"
+      ],
+      "compatibleComposicion": true
+    },
+    {
+      "id": "prop_diagrama_14_vertebras_resorte",
+      "propParamId": "diagrama_14_vertebras_resorte",
+      "nombre": "Prop: Diagrama Biomecánico de 14 Vértebras Cervicales Articuladas",
+      "categoria": "props",
+      "subcategoria": "educacion_ciencia",
+      "emocion": "any",
+      "accion": "overhead",
+      "propsAsociados": [
+        "diagrama_14_vertebras_resorte"
+      ],
+      "ruta": "poses/props/prop_diagrama_14_vertebras_resorte.svg",
+      "formato": "svg",
+      "etiquetas": [
+        "vertebras",
+        "cuello",
+        "jirafa",
+        "resorte",
+        "hidraulico",
+        "biomecanica",
+        "diagrama"
+      ],
+      "compatibleComposicion": true
+    },
+    {
+      "id": "prop_steadycam_gimbal_cine_auto",
+      "propParamId": "steadycam_gimbal_cine_auto",
+      "nombre": "Prop: Estabilizador Gimbal de Cine y Suspensión Activa de Auto",
+      "categoria": "props",
+      "subcategoria": "tecnologia",
+      "emocion": "any",
+      "accion": "right",
+      "propsAsociados": [
+        "steadycam_gimbal_cine_auto"
+      ],
+      "ruta": "poses/props/prop_steadycam_gimbal_cine_auto.svg",
+      "formato": "svg",
+      "etiquetas": [
+        "steadycam",
+        "gimbal",
+        "camara",
+        "suspension",
+        "cine",
+        "auto",
+        "tecnologia"
+      ],
+      "compatibleComposicion": true
+    },
+    {
+      "id": "prop_gallina_campeona_trofeo",
+      "propParamId": "gallina_campeona_trofeo",
+      "nombre": "Prop: Gallina Campeona con Trofeo y Gafas de Sol",
+      "categoria": "props",
+      "subcategoria": "reacciones_humor",
+      "emocion": "any",
+      "accion": "overhead",
+      "propsAsociados": [
+        "gallina_campeona_trofeo"
+      ],
+      "ruta": "poses/props/prop_gallina_campeona_trofeo.svg",
+      "formato": "svg",
+      "etiquetas": [
+        "gallina",
+        "trofeo",
+        "campeona",
+        "gafas",
+        "oro",
+        "exito",
+        "humor"
+      ],
+      "compatibleComposicion": true
+    },
+    {
+      "id": "prop_gallina_cabeceo_thrust_hold",
+      "propParamId": "gallina_cabeceo_thrust_hold",
+      "nombre": "Prop: Mecánica de Caminata: Fase Empuje y Congelamiento",
+      "categoria": "props",
+      "subcategoria": "educacion_ciencia",
+      "emocion": "any",
+      "accion": "right",
+      "propsAsociados": [
+        "gallina_cabeceo_thrust_hold"
+      ],
+      "ruta": "poses/props/prop_gallina_cabeceo_thrust_hold.svg",
+      "formato": "svg",
+      "etiquetas": [
+        "cabeceo",
+        "thrust",
+        "hold",
+        "caminar",
+        "fijacion",
+        "retina",
+        "gallina"
+      ],
+      "compatibleComposicion": true
+    },
+    {
+      "id": "prop_puntero_laser_verde",
+      "propParamId": "puntero_laser_verde",
+      "nombre": "Prop: Puntero Láser Verde de Presentación",
+      "categoria": "props",
+      "subcategoria": "herramientas_objetos",
+      "emocion": "any",
+      "accion": "right",
+      "propsAsociados": [
+        "puntero_laser_verde"
+      ],
+      "ruta": "poses/props/prop_puntero_laser_verde.svg",
+      "formato": "svg",
+      "etiquetas": [
+        "puntero",
+        "laser",
+        "verde",
+        "presentacion",
+        "profesor",
+        "apuntar"
+      ],
+      "compatibleComposicion": true
+    },
+    {
+      "id": "prop_tiburon_frustrado_balanza",
+      "propParamId": "tiburon_frustrado_balanza",
+      "nombre": "Prop: Balanza Sensorial: Tiburón vs Olfato Humano",
+      "categoria": "props",
+      "subcategoria": "educacion_ciencia",
+      "emocion": "any",
+      "accion": "overhead",
+      "propsAsociados": [
+        "tiburon_frustrado_balanza"
+      ],
+      "ruta": "poses/props/prop_tiburon_frustrado_balanza.svg",
+      "formato": "svg",
+      "etiquetas": [
+        "tiburon",
+        "olfato",
+        "balanza",
+        "sangre",
+        "geosmina",
+        "nariz",
+        "comparativa"
+      ],
+      "compatibleComposicion": true
+    },
+    {
+      "id": "prop_piscina_olimpica_micro_gota",
+      "propParamId": "piscina_olimpica_micro_gota",
+      "nombre": "Prop: Visualización 500 Piscinas Olímpicas vs 1 Gota",
+      "categoria": "props",
+      "subcategoria": "educacion_ciencia",
+      "emocion": "any",
+      "accion": "overhead",
+      "propsAsociados": [
+        "piscina_olimpica_micro_gota"
+      ],
+      "ruta": "poses/props/prop_piscina_olimpica_micro_gota.svg",
+      "formato": "svg",
+      "etiquetas": [
+        "piscina",
+        "gota",
+        "geosmina",
+        "concentracion",
+        "partes_por_billon",
+        "escala"
+      ],
+      "compatibleComposicion": true
+    },
+    {
+      "id": "prop_bacteria_streptomyces_geosmina",
+      "propParamId": "bacteria_streptomyces_geosmina",
+      "nombre": "Prop: Bacteria Streptomyces emitiendo Geosmina",
+      "categoria": "props",
+      "subcategoria": "naturaleza_alimentos",
+      "emocion": "any",
+      "accion": "right",
+      "propsAsociados": [
+        "bacteria_streptomyces_geosmina"
+      ],
+      "ruta": "poses/props/prop_bacteria_streptomyces_geosmina.svg",
+      "formato": "svg",
+      "etiquetas": [
+        "bacteria",
+        "streptomyces",
+        "geosmina",
+        "esporas",
+        "suelo",
+        "olor",
+        "microscopio"
+      ],
+      "compatibleComposicion": true
+    },
+    {
+      "id": "prop_gota_lluvia_macro_aerosol",
+      "propParamId": "gota_lluvia_macro_aerosol",
+      "nombre": "Prop: Impacto de Gota de Lluvia y Disparo de Aerosoles",
+      "categoria": "props",
+      "subcategoria": "educacion_ciencia",
+      "emocion": "any",
+      "accion": "overhead",
+      "propsAsociados": [
+        "gota_lluvia_macro_aerosol"
+      ],
+      "ruta": "poses/props/prop_gota_lluvia_macro_aerosol.svg",
+      "formato": "svg",
+      "etiquetas": [
+        "aerosol",
+        "mit",
+        "gota",
+        "burbujas",
+        "impacto",
+        "champan",
+        "fisica"
+      ],
+      "compatibleComposicion": true
+    },
+    {
+      "id": "prop_mapa_sabana_oasis_ancestro",
+      "propParamId": "mapa_sabana_oasis_ancestro",
+      "nombre": "Prop: Mapa Primitivo de Huellas hacia el Agua",
+      "categoria": "props",
+      "subcategoria": "historia_exploracion",
+      "emocion": "any",
+      "accion": "right",
+      "propsAsociados": [
+        "mapa_sabana_oasis_ancestro"
+      ],
+      "ruta": "poses/props/prop_mapa_sabana_oasis_ancestro.svg",
+      "formato": "svg",
+      "etiquetas": [
+        "mapa",
+        "ancestro",
+        "sabana",
+        "oasis",
+        "agua",
+        "supervivencia",
+        "evolucion"
+      ],
+      "compatibleComposicion": true
+    },
+    {
+      "id": "prop_paraguas_arcoiris_fresco",
+      "propParamId": "paraguas_arcoiris_fresco",
+      "nombre": "Prop: Paraguas Amarillo con Gotas Frescas y Arcoíris",
+      "categoria": "props",
+      "subcategoria": "vida_cotidiana",
+      "emocion": "any",
+      "accion": "overhead",
+      "propsAsociados": [
+        "paraguas_arcoiris_fresco"
+      ],
+      "ruta": "poses/props/prop_paraguas_arcoiris_fresco.svg",
+      "formato": "svg",
+      "etiquetas": [
+        "paraguas",
+        "lluvia",
+        "arcoiris",
+        "frescura",
+        "petricor",
+        "vida",
+        "alegria"
+      ],
+      "compatibleComposicion": true
+    },
+    {
+      "id": "prop_roca_petricor_aceite_dorado",
+      "propParamId": "roca_petricor_aceite_dorado",
+      "nombre": "Prop: Roca con Aceites Vegetales y Esencia de Icor Griego",
+      "categoria": "props",
+      "subcategoria": "educacion_ciencia",
+      "emocion": "any",
+      "accion": "right",
+      "propsAsociados": [
+        "roca_petricor_aceite_dorado"
+      ],
+      "ruta": "poses/props/prop_roca_petricor_aceite_dorado.svg",
+      "formato": "svg",
+      "etiquetas": [
+        "roca",
+        "petricor",
+        "aceite",
+        "oro",
+        "quimica",
+        "mitologia",
+        "icor"
+      ],
+      "compatibleComposicion": true
+    },
+    {
+      "id": "prop_mesa_experimento_mano_goma",
+      "propParamId": "mesa_experimento_mano_goma",
+      "nombre": "Prop: Mesa con Pantalla Divisoria y Mano de Goma",
+      "categoria": "props",
+      "subcategoria": "educacion_ciencia",
+      "emocion": "any",
+      "accion": "overhead",
+      "propsAsociados": [
+        "mesa_experimento_mano_goma"
+      ],
+      "ruta": "poses/props/prop_mesa_experimento_mano_goma.svg",
+      "formato": "svg",
+      "etiquetas": [
+        "mano",
+        "goma",
+        "experimento",
+        "neurociencia",
+        "ilusion",
+        "mesa"
+      ],
+      "compatibleComposicion": true
+    },
+    {
+      "id": "prop_pinceles_gemelos_tactiles",
+      "propParamId": "pinceles_gemelos_tactiles",
+      "nombre": "Prop: Dos Pinceles en Sincronía Táctil",
+      "categoria": "props",
+      "subcategoria": "educacion_ciencia",
+      "emocion": "any",
+      "accion": "overhead",
+      "propsAsociados": [
+        "pinceles_gemelos_tactiles"
+      ],
+      "ruta": "poses/props/prop_pinceles_gemelos_tactiles.svg",
+      "formato": "svg",
+      "etiquetas": [
+        "pinceles",
+        "sincronia",
+        "tacto",
+        "estimulo",
+        "pinceladas",
+        "gemelos"
+      ],
+      "compatibleComposicion": true
+    },
+    {
+      "id": "prop_cerebro_corteza_somatosensorial",
+      "propParamId": "cerebro_corteza_somatosensorial",
+      "nombre": "Prop: Cerebro con Corteza Somatosensorial y Homúnculo Activo",
+      "categoria": "props",
+      "subcategoria": "educacion_ciencia",
+      "emocion": "any",
+      "accion": "overhead",
+      "propsAsociados": [
+        "cerebro_corteza_somatosensorial"
+      ],
+      "ruta": "poses/props/prop_cerebro_corteza_somatosensorial.svg",
+      "formato": "svg",
+      "etiquetas": [
+        "cerebro",
+        "corteza",
+        "somatosensorial",
+        "homunculo",
+        "sinapsis",
+        "neurociencia"
+      ],
+      "compatibleComposicion": true
+    },
+    {
+      "id": "prop_martillo_amenaza_impacto",
+      "propParamId": "martillo_amenaza_impacto",
+      "nombre": "Prop: Martillo de Demolición con Señal de Peligro",
+      "categoria": "props",
+      "subcategoria": "herramientas_objetos",
+      "emocion": "any",
+      "accion": "right",
+      "propsAsociados": [
+        "martillo_amenaza_impacto"
+      ],
+      "ruta": "poses/props/prop_martillo_amenaza_impacto.svg",
+      "formato": "svg",
+      "etiquetas": [
+        "martillo",
+        "impacto",
+        "peligro",
+        "golpe",
+        "panico",
+        "amenaza"
+      ],
+      "compatibleComposicion": true
+    },
+    {
+      "id": "prop_monitor_fisiologico_sudor_miedo",
+      "propParamId": "monitor_fisiologico_sudor_miedo",
+      "nombre": "Prop: Monitor Cardíaco y Sensor de Respuesta Galvánica",
+      "categoria": "props",
+      "subcategoria": "tecnologia",
+      "emocion": "any",
+      "accion": "overhead",
+      "propsAsociados": [
+        "monitor_fisiologico_sudor_miedo"
+      ],
+      "ruta": "poses/props/prop_monitor_fisiologico_sudor_miedo.svg",
+      "formato": "svg",
+      "etiquetas": [
+        "monitor",
+        "cardiaco",
+        "panico",
+        "galvanica",
+        "estres",
+        "fisiologia"
+      ],
+      "compatibleComposicion": true
+    },
+    {
+      "id": "prop_espejo_realidad_truco_mental",
+      "propParamId": "espejo_realidad_truco_mental",
+      "nombre": "Prop: Espejo de Percepción y Realidad Multisensorial",
+      "categoria": "props",
+      "subcategoria": "educacion_ciencia",
+      "emocion": "any",
+      "accion": "right",
+      "propsAsociados": [
+        "espejo_realidad_truco_mental"
+      ],
+      "ruta": "poses/props/prop_espejo_realidad_truco_mental.svg",
+      "formato": "svg",
+      "etiquetas": [
+        "espejo",
+        "percepcion",
+        "realidad",
+        "ilusion",
+        "truco",
+        "neurociencia"
+      ],
+      "compatibleComposicion": true
+    },
+    {
+      "id": "prop_brazo_venas_azules_diagrama",
+      "propParamId": "brazo_venas_azules_diagrama",
+      "nombre": "Prop: Antebrazo con Venas Superficiales Azules",
+      "categoria": "props",
+      "subcategoria": "educacion_ciencia",
+      "emocion": "any",
+      "accion": "overhead",
+      "propsAsociados": [
+        "brazo_venas_azules_diagrama"
+      ],
+      "ruta": "poses/props/prop_brazo_venas_azules_diagrama.svg",
+      "formato": "svg",
+      "etiquetas": [
+        "brazo",
+        "venas",
+        "azul",
+        "sangre",
+        "anatomia",
+        "piel"
+      ],
+      "compatibleComposicion": true
+    },
+    {
+      "id": "prop_tubos_ensayo_sangre_rojo_oscuro",
+      "propParamId": "tubos_ensayo_sangre_rojo_oscuro",
+      "nombre": "Prop: Tubos de Sangre Arterial (Rojo Vivo) y Venosa (Rojo Oscuro)",
+      "categoria": "props",
+      "subcategoria": "educacion_ciencia",
+      "emocion": "any",
+      "accion": "overhead",
+      "propsAsociados": [
+        "tubos_ensayo_sangre_rojo_oscuro"
+      ],
+      "ruta": "poses/props/prop_tubos_ensayo_sangre_rojo_oscuro.svg",
+      "formato": "svg",
+      "etiquetas": [
+        "tubos",
+        "sangre",
+        "rojo",
+        "venosa",
+        "arterial",
+        "oxigeno",
+        "laboratorio"
+      ],
+      "compatibleComposicion": true
+    },
+    {
+      "id": "prop_prisma_optico_piel_fotones",
+      "propParamId": "prisma_optico_piel_fotones",
+      "nombre": "Prop: Modelo Óptico de Absorción Roja y Dispersión Azul",
+      "categoria": "props",
+      "subcategoria": "educacion_ciencia",
+      "emocion": "any",
+      "accion": "overhead",
+      "propsAsociados": [
+        "prisma_optico_piel_fotones"
+      ],
+      "ruta": "poses/props/prop_prisma_optico_piel_fotones.svg",
+      "formato": "svg",
+      "etiquetas": [
+        "optica",
+        "dispersion",
+        "fotones",
+        "luz",
+        "rojo",
+        "azul",
+        "piel"
+      ],
+      "compatibleComposicion": true
+    },
+    {
+      "id": "prop_molecula_hemoglobina_hierro",
+      "propParamId": "molecula_hemoglobina_hierro",
+      "nombre": "Prop: Molécula de Hemoglobina con Átomo de Hierro",
+      "categoria": "props",
+      "subcategoria": "educacion_ciencia",
+      "emocion": "any",
+      "accion": "overhead",
+      "propsAsociados": [
+        "molecula_hemoglobina_hierro"
+      ],
+      "ruta": "poses/props/prop_molecula_hemoglobina_hierro.svg",
+      "formato": "svg",
+      "etiquetas": [
+        "hemoglobina",
+        "hierro",
+        "molecula",
+        "sangre",
+        "quimica",
+        "oxigeno"
+      ],
+      "compatibleComposicion": true
+    },
+    {
+      "id": "prop_pizarron_mito_escolar_tachado",
+      "propParamId": "pizarron_mito_escolar_tachado",
+      "nombre": "Prop: Pizarrón con Mito de Sangre Azul Tachado",
+      "categoria": "props",
+      "subcategoria": "educacion_ciencia",
+      "emocion": "any",
+      "accion": "overhead",
+      "propsAsociados": [
+        "pizarron_mito_escolar_tachado"
+      ],
+      "ruta": "poses/props/prop_pizarron_mito_escolar_tachado.svg",
+      "formato": "svg",
+      "etiquetas": [
+        "pizarron",
+        "mito",
+        "falso",
+        "escuela",
+        "sangre_azul",
+        "desmentido"
+      ],
+      "compatibleComposicion": true
+    },
+    {
+      "id": "prop_linterna_transiluminacion_roja",
+      "propParamId": "linterna_transiluminacion_roja",
+      "nombre": "Prop: Linterna de Transiluminación Roja en Dedos",
+      "categoria": "props",
+      "subcategoria": "educacion_ciencia",
+      "emocion": "any",
+      "accion": "right",
+      "propsAsociados": [
+        "linterna_transiluminacion_roja"
+      ],
+      "ruta": "poses/props/prop_linterna_transiluminacion_roja.svg",
+      "formato": "svg",
+      "etiquetas": [
+        "linterna",
+        "transiluminacion",
+        "dedos",
+        "rojo",
+        "experimento",
+        "luz"
+      ],
+      "compatibleComposicion": true
+    },
+    {
+      "id": "prop_chile_habanero_fuego_vivo",
+      "propParamId": "chile_habanero_fuego_vivo",
+      "nombre": "Prop: Chile Habanero Rojo con Llamas de Fuego Activo",
+      "categoria": "props",
+      "subcategoria": "naturaleza_alimentos",
+      "emocion": "any",
+      "accion": "right",
+      "propsAsociados": [
+        "chile_habanero_fuego_vivo"
+      ],
+      "ruta": "poses/props/prop_chile_habanero_fuego_vivo.svg",
+      "formato": "svg",
+      "etiquetas": [
+        "chile",
+        "habanero",
+        "picante",
+        "fuego",
+        "capsaicina",
+        "comida"
+      ],
+      "compatibleComposicion": true
+    },
+    {
+      "id": "prop_termometro_lengua_cero_cambio",
+      "propParamId": "termometro_lengua_cero_cambio",
+      "nombre": "Prop: Termómetro Clínico Digital Marcando 36.5 Grados",
+      "categoria": "props",
+      "subcategoria": "educacion_ciencia",
+      "emocion": "any",
+      "accion": "overhead",
+      "propsAsociados": [
+        "termometro_lengua_cero_cambio"
+      ],
+      "ruta": "poses/props/prop_termometro_lengua_cero_cambio.svg",
+      "formato": "svg",
+      "etiquetas": [
+        "termometro",
+        "temperatura",
+        "normal",
+        "falso_fuego",
+        "quimica",
+        "boca"
+      ],
+      "compatibleComposicion": true
+    },
+    {
+      "id": "prop_receptor_trpv1_candado_termico",
+      "propParamId": "receptor_trpv1_candado_termico",
+      "nombre": "Prop: Receptor Térmico TRPV1 con Compuerta de Calor",
+      "categoria": "props",
+      "subcategoria": "educacion_ciencia",
+      "emocion": "any",
+      "accion": "overhead",
+      "propsAsociados": [
+        "receptor_trpv1_candado_termico"
+      ],
+      "ruta": "poses/props/prop_receptor_trpv1_candado_termico.svg",
+      "formato": "svg",
+      "etiquetas": [
+        "receptor",
+        "trpv1",
+        "calor",
+        "canal_ionico",
+        "neurona",
+        "biologia"
+      ],
+      "compatibleComposicion": true
+    },
+    {
+      "id": "prop_vaso_agua_esparce_aceite",
+      "propParamId": "vaso_agua_esparce_aceite",
+      "nombre": "Prop: Vaso de Agua Esparciendo Gotas de Aceite Picante",
+      "categoria": "props",
+      "subcategoria": "vida_cotidiana",
+      "emocion": "any",
+      "accion": "overhead",
+      "propsAsociados": [
+        "vaso_agua_esparce_aceite"
+      ],
+      "ruta": "poses/props/prop_vaso_agua_esparce_aceite.svg",
+      "formato": "svg",
+      "etiquetas": [
+        "vaso",
+        "agua",
+        "aceite",
+        "empeora",
+        "error",
+        "capsaicina"
+      ],
+      "compatibleComposicion": true
+    },
+    {
+      "id": "prop_brik_leche_caseina_detergente",
+      "propParamId": "brik_leche_caseina_detergente",
+      "nombre": "Prop: Envase de Leche Entera con Proteína Caseína Salvadora",
+      "categoria": "props",
+      "subcategoria": "naturaleza_alimentos",
+      "emocion": "any",
+      "accion": "overhead",
+      "propsAsociados": [
+        "brik_leche_caseina_detergente"
+      ],
+      "ruta": "poses/props/prop_brik_leche_caseina_detergente.svg",
+      "formato": "svg",
+      "etiquetas": [
+        "leche",
+        "caseina",
+        "detergente",
+        "micela",
+        "alivio",
+        "proteina"
+      ],
+      "compatibleComposicion": true
+    },
+    {
+      "id": "prop_vaso_leche_alivio_fresco",
+      "propParamId": "vaso_leche_alivio_fresco",
+      "nombre": "Prop: Vaso de Leche Fría con Hielo y Alivio Total",
+      "categoria": "props",
+      "subcategoria": "vida_cotidiana",
+      "emocion": "any",
+      "accion": "right",
+      "propsAsociados": [
+        "vaso_leche_alivio_fresco"
+      ],
+      "ruta": "poses/props/prop_vaso_leche_alivio_fresco.svg",
+      "formato": "svg",
+      "etiquetas": [
+        "vaso",
+        "leche",
+        "fria",
+        "hielo",
+        "alivio",
+        "frescura",
+        "picante"
+      ],
+      "compatibleComposicion": true
+    },
+    {
+      "id": "prop_libreta_policia_boligrafo",
+      "propParamId": "libreta_policia_boligrafo",
+      "nombre": "Prop: Libreta de Detective con Placa y Bolígrafo",
+      "categoria": "props",
+      "subcategoria": "herramientas_objetos",
+      "emocion": "any",
+      "accion": "right",
+      "propsAsociados": [
+        "libreta_policia_boligrafo"
+      ],
+      "ruta": "poses/props/prop_libreta_policia_boligrafo.svg",
+      "formato": "svg",
+      "etiquetas": [
+        "policia",
+        "detective",
+        "libreta",
+        "boligrafo",
+        "anotacion",
+        "investigacion",
+        "choque"
+      ],
+      "compatibleComposicion": true
+    },
+    {
+      "id": "prop_gorra_detective_policia",
+      "propParamId": "gorra_detective_policia",
+      "nombre": "Prop: Gorra de Detective con Placa Dorada",
+      "categoria": "props",
+      "subcategoria": "vida_cotidiana",
+      "emocion": "any",
+      "accion": "overhead",
+      "propsAsociados": [
+        "gorra_detective_policia"
+      ],
+      "ruta": "poses/props/prop_gorra_detective_policia.svg",
+      "formato": "svg",
+      "etiquetas": [
+        "gorra",
+        "detective",
+        "policia",
+        "placa",
+        "sombrero",
+        "investigador"
+      ],
+      "compatibleComposicion": true
+    },
+    {
+      "id": "prop_proyeccion_cristales_rotos_falsos",
+      "propParamId": "proyeccion_cristales_rotos_falsos",
+      "nombre": "Prop: Nube de Cristales Rotos Falsos Holográficos",
+      "categoria": "props",
+      "subcategoria": "reacciones_humor",
+      "emocion": "any",
+      "accion": "right",
+      "propsAsociados": [
+        "proyeccion_cristales_rotos_falsos"
+      ],
+      "ruta": "poses/props/prop_proyeccion_cristales_rotos_falsos.svg",
+      "formato": "svg",
+      "etiquetas": [
+        "cristales",
+        "vidrio",
+        "rotos",
+        "holograma",
+        "falso",
+        "choque",
+        "memoria"
+      ],
+      "compatibleComposicion": true
+    },
+    {
+      "id": "prop_casete_vhs_dorado_recuerdo",
+      "propParamId": "casete_vhs_dorado_recuerdo",
+      "nombre": "Prop: Casete VHS Dorado Recuerdo Original",
+      "categoria": "props",
+      "subcategoria": "herramientas_objetos",
+      "emocion": "any",
+      "accion": "right",
+      "propsAsociados": [
+        "casete_vhs_dorado_recuerdo"
+      ],
+      "ruta": "poses/props/prop_casete_vhs_dorado_recuerdo.svg",
+      "formato": "svg",
+      "etiquetas": [
+        "vhs",
+        "cinta",
+        "casete",
+        "dorado",
+        "recuerdo",
+        "memoria",
+        "original",
+        "archivo"
+      ],
+      "compatibleComposicion": true
+    },
+    {
+      "id": "prop_hoja_manuscrito_lapiz_goma",
+      "propParamId": "hoja_manuscrito_lapiz_goma",
+      "nombre": "Prop: Hoja de Memoria con Lápiz y Goma Borrando",
+      "categoria": "props",
+      "subcategoria": "herramientas_objetos",
+      "emocion": "any",
+      "accion": "right",
+      "propsAsociados": [
+        "hoja_manuscrito_lapiz_goma"
+      ],
+      "ruta": "poses/props/prop_hoja_manuscrito_lapiz_goma.svg",
+      "formato": "svg",
+      "etiquetas": [
+        "papel",
+        "hoja",
+        "lapiz",
+        "goma",
+        "borrar",
+        "reescribir",
+        "hipocampo",
+        "memoria"
+      ],
+      "compatibleComposicion": true
+    },
+    {
+      "id": "prop_sello_tinta_reconsolidado",
+      "propParamId": "sello_tinta_reconsolidado",
+      "nombre": "Prop: Sello de Tinta Roja RECONSOLIDADO",
+      "categoria": "props",
+      "subcategoria": "herramientas_objetos",
+      "emocion": "any",
+      "accion": "right",
+      "propsAsociados": [
+        "sello_tinta_reconsolidado"
+      ],
+      "ruta": "poses/props/prop_sello_tinta_reconsolidado.svg",
+      "formato": "svg",
+      "etiquetas": [
+        "sello",
+        "tinta",
+        "reconsolidado",
+        "estampa",
+        "documento",
+        "hipocampo",
+        "edicion"
+      ],
+      "compatibleComposicion": true
+    },
+    {
+      "id": "prop_tarjetas_loftus_contactaron_estrellaron",
+      "propParamId": "tarjetas_loftus_contactaron_estrellaron",
+      "nombre": "Prop: Tarjetas Comparativas Loftus: Contactaron vs Se Estrellaron",
+      "categoria": "props",
+      "subcategoria": "educacion_ciencia",
+      "emocion": "any",
+      "accion": "both",
+      "propsAsociados": [
+        "tarjetas_loftus_contactaron_estrellaron"
+      ],
+      "ruta": "poses/props/prop_tarjetas_loftus_contactaron_estrellaron.svg",
+      "formato": "svg",
+      "etiquetas": [
+        "tarjetas",
+        "loftus",
+        "experimento",
+        "contactaron",
+        "estrellaron",
+        "velocidad",
+        "sesgo"
+      ],
+      "compatibleComposicion": true
+    },
+    {
+      "id": "prop_rompecabezas_madera_plastilina",
+      "propParamId": "rompecabezas_madera_plastilina",
+      "nombre": "Prop: Rompecabezas con Parche de Plastilina y Pincel",
+      "categoria": "props",
+      "subcategoria": "herramientas_objetos",
+      "emocion": "any",
+      "accion": "right",
+      "propsAsociados": [
+        "rompecabezas_madera_plastilina"
+      ],
+      "ruta": "poses/props/prop_rompecabezas_madera_plastilina.svg",
+      "formato": "svg",
+      "etiquetas": [
+        "rompecabezas",
+        "plastilina",
+        "pincel",
+        "confabulacion",
+        "relleno",
+        "memoria",
+        "truco"
+      ],
+      "compatibleComposicion": true
+    },
+    {
+      "id": "prop_album_fotos_familiar_cuero",
+      "propParamId": "album_fotos_familiar_cuero",
+      "nombre": "Prop: Álbum de Fotos con Perro Verde y Recuerdos",
+      "categoria": "props",
+      "subcategoria": "vida_cotidiana",
+      "emocion": "any",
+      "accion": "both",
+      "propsAsociados": [
+        "album_fotos_familiar_cuero"
+      ],
+      "ruta": "poses/props/prop_album_fotos_familiar_cuero.svg",
+      "formato": "svg",
+      "etiquetas": [
+        "album",
+        "fotos",
+        "perro",
+        "verde",
+        "recuerdos",
+        "infancia",
+        "familia",
+        "memoria"
+      ],
+      "compatibleComposicion": true
+    },
+    {
+      "id": "prop_cartel_prision_eterna_roto",
+      "propParamId": "cartel_prision_eterna_roto",
+      "nombre": "Prop: Cartel de Prisión Eterna Quebrado con Radiación",
+      "categoria": "props",
+      "subcategoria": "educacion_ciencia",
+      "emocion": "any",
+      "accion": "right",
+      "propsAsociados": [
+        "cartel_prision_eterna_roto"
+      ],
+      "ruta": "poses/props/prop_cartel_prision_eterna_roto.svg",
+      "formato": "svg",
+      "etiquetas": [
+        "cartel",
+        "prision",
+        "eterna",
+        "roto",
+        "agujero",
+        "negro",
+        "fuga",
+        "hawking",
+        "radiacion"
+      ],
+      "compatibleComposicion": true
+    },
+    {
+      "id": "prop_lupa_cuantica_particulas",
+      "propParamId": "lupa_cuantica_particulas",
+      "nombre": "Prop: Lupa Cuántica con Par Partícula-Antipartícula",
+      "categoria": "props",
+      "subcategoria": "educacion_ciencia",
+      "emocion": "any",
+      "accion": "right",
+      "propsAsociados": [
+        "lupa_cuantica_particulas"
+      ],
+      "ruta": "poses/props/prop_lupa_cuantica_particulas.svg",
+      "formato": "svg",
+      "etiquetas": [
+        "lupa",
+        "cuantica",
+        "particula",
+        "antiparticula",
+        "par",
+        "vacio",
+        "hawking",
+        "horizonte"
+      ],
+      "compatibleComposicion": true
+    },
+    {
+      "id": "prop_libro_historia_universo_fuego",
+      "propParamId": "libro_historia_universo_fuego",
+      "nombre": "Prop: Libro Quemándose con Cenizas y Bits Flotantes",
+      "categoria": "props",
+      "subcategoria": "educacion_ciencia",
+      "emocion": "any",
+      "accion": "both",
+      "propsAsociados": [
+        "libro_historia_universo_fuego"
+      ],
+      "ruta": "poses/props/prop_libro_historia_universo_fuego.svg",
+      "formato": "svg",
+      "etiquetas": [
+        "libro",
+        "fuego",
+        "cenizas",
+        "informacion",
+        "bits",
+        "humo",
+        "cuantica",
+        "quemar"
+      ],
+      "compatibleComposicion": true
+    },
+    {
+      "id": "prop_escaner_cuantico_holograma",
+      "propParamId": "escaner_cuantico_holograma",
+      "nombre": "Prop: Escáner Cuántico Reconstruyendo Letras Holográficas",
+      "categoria": "props",
+      "subcategoria": "tecnologia",
+      "emocion": "any",
+      "accion": "right",
+      "propsAsociados": [
+        "escaner_cuantico_holograma"
+      ],
+      "ruta": "poses/props/prop_escaner_cuantico_holograma.svg",
+      "formato": "svg",
+      "etiquetas": [
+        "escaner",
+        "cuantico",
+        "holograma",
+        "letras",
+        "reconstruccion",
+        "laser",
+        "futurista",
+        "datos"
+      ],
+      "compatibleComposicion": true
+    },
+    {
+      "id": "prop_escaner_error_realidad_rota",
+      "propParamId": "escaner_error_realidad_rota",
+      "nombre": "Prop: Escáner en Alarma ERROR 404 Información Destruida",
+      "categoria": "props",
+      "subcategoria": "tecnologia",
+      "emocion": "any",
+      "accion": "right",
+      "propsAsociados": [
+        "escaner_error_realidad_rota"
+      ],
+      "ruta": "poses/props/prop_escaner_error_realidad_rota.svg",
+      "formato": "svg",
+      "etiquetas": [
+        "escaner",
+        "error",
+        "404",
+        "alarma",
+        "glitch",
+        "paradoja",
+        "cuantica",
+        "informacion",
+        "rota"
+      ],
+      "compatibleComposicion": true
+    },
+    {
+      "id": "prop_interfaz_piel_holografica_bits",
+      "propParamId": "interfaz_piel_holografica_bits",
+      "nombre": "Prop: Piel Holográfica con Bits de Planck en Superficie 2D",
+      "categoria": "props",
+      "subcategoria": "tecnologia",
+      "emocion": "any",
+      "accion": "both",
+      "propsAsociados": [
+        "interfaz_piel_holografica_bits"
+      ],
+      "ruta": "poses/props/prop_interfaz_piel_holografica_bits.svg",
+      "formato": "svg",
+      "etiquetas": [
+        "holograma",
+        "piel",
+        "bits",
+        "planck",
+        "superficie",
+        "matriz",
+        "binario",
+        "horizonte",
+        "datos"
+      ],
+      "compatibleComposicion": true
+    },
+    {
+      "id": "prop_particula_luz_memoria_cosmica",
+      "propParamId": "particula_luz_memoria_cosmica",
+      "nombre": "Prop: Fotón de Hawking con Micro-Holograma Salvado",
+      "categoria": "props",
+      "subcategoria": "educacion_ciencia",
+      "emocion": "any",
+      "accion": "right",
+      "propsAsociados": [
+        "particula_luz_memoria_cosmica"
+      ],
+      "ruta": "poses/props/prop_particula_luz_memoria_cosmica.svg",
+      "formato": "svg",
+      "etiquetas": [
+        "particula",
+        "foton",
+        "luz",
+        "hawking",
+        "memoria",
+        "cosmica",
+        "salvada",
+        "holograma",
+        "cuantica"
+      ],
+      "compatibleComposicion": true
+    },
+    {
+      "id": "prop_mochila_sonriente_pareidolia",
+      "propParamId": "mochila_sonriente_pareidolia",
+      "nombre": "Prop: Mochila Escolar con Sonrisa y Ojos Pareidólicos",
+      "categoria": "props",
+      "subcategoria": "vida_cotidiana",
+      "emocion": "any",
+      "accion": "both",
+      "propsAsociados": [
+        "mochila_sonriente_pareidolia"
+      ],
+      "ruta": "poses/props/prop_mochila_sonriente_pareidolia.svg",
+      "formato": "svg",
+      "etiquetas": [
+        "mochila",
+        "sonrisa",
+        "pareidolia",
+        "ojos",
+        "cara",
+        "objeto",
+        "vida_cotidiana"
+      ],
+      "compatibleComposicion": true
+    },
+    {
+      "id": "prop_lanza_caza_homonido_sabana",
+      "propParamId": "lanza_caza_homonido_sabana",
+      "nombre": "Prop: Lanza de Caza de Madera con Punta de Sílex",
+      "categoria": "props",
+      "subcategoria": "historia_exploracion",
+      "emocion": "any",
+      "accion": "right",
+      "propsAsociados": [
+        "lanza_caza_homonido_sabana"
+      ],
+      "ruta": "poses/props/prop_lanza_caza_homonido_sabana.svg",
+      "formato": "svg",
+      "etiquetas": [
+        "lanza",
+        "homonido",
+        "sabana",
+        "caza",
+        "madera",
+        "prehistoria",
+        "supervivencia"
+      ],
+      "compatibleComposicion": true
+    },
+    {
+      "id": "prop_balanza_evolutiva_errores",
+      "propParamId": "balanza_evolutiva_errores",
+      "nombre": "Prop: Balanza de la Asimetría del Error Evolutivo",
+      "categoria": "props",
+      "subcategoria": "educacion_ciencia",
+      "emocion": "any",
+      "accion": "both",
+      "propsAsociados": [
+        "balanza_evolutiva_errores"
+      ],
+      "ruta": "poses/props/prop_balanza_evolutiva_errores.svg",
+      "formato": "svg",
+      "etiquetas": [
+        "balanza",
+        "asimetria",
+        "error",
+        "falso_positivo",
+        "falso_negativo",
+        "evolucion",
+        "supervivencia"
+      ],
+      "compatibleComposicion": true
+    },
+    {
+      "id": "prop_chip_neuronal_area_fusiforme",
+      "propParamId": "chip_neuronal_area_fusiforme",
+      "nombre": "Prop: Chip del Área Fusiforme Facial a 150ms",
+      "categoria": "props",
+      "subcategoria": "tecnologia",
+      "emocion": "any",
+      "accion": "right",
+      "propsAsociados": [
+        "chip_neuronal_area_fusiforme"
+      ],
+      "ruta": "poses/props/prop_chip_neuronal_area_fusiforme.svg",
+      "formato": "svg",
+      "etiquetas": [
+        "chip",
+        "neuronal",
+        "ffa",
+        "area_fusiforme",
+        "milisegundos",
+        "cerebro",
+        "tecnologia"
+      ],
+      "compatibleComposicion": true
+    },
+    {
+      "id": "prop_monitor_analisis_microexpresiones",
+      "propParamId": "monitor_analisis_microexpresiones",
+      "nombre": "Prop: Monitor de Lectura de Intenciones Amigo vs Enemigo",
+      "categoria": "props",
+      "subcategoria": "educacion_ciencia",
+      "emocion": "any",
+      "accion": "both",
+      "propsAsociados": [
+        "monitor_analisis_microexpresiones"
+      ],
+      "ruta": "poses/props/prop_monitor_analisis_microexpresiones.svg",
+      "formato": "svg",
+      "etiquetas": [
+        "monitor",
+        "expresiones",
+        "amigo",
+        "enemigo",
+        "intenciones",
+        "amenaza",
+        "ciencia"
+      ],
+      "compatibleComposicion": true
+    },
+    {
+      "id": "prop_aspiradora_robot_ojitos_mascota",
+      "propParamId": "aspiradora_robot_ojitos_mascota",
+      "nombre": "Prop: Aspiradora Robot con Ojitos Móviles Pegados",
+      "categoria": "props",
+      "subcategoria": "vida_cotidiana",
+      "emocion": "any",
+      "accion": "right",
+      "propsAsociados": [
+        "aspiradora_robot_ojitos_mascota"
+      ],
+      "ruta": "poses/props/prop_aspiradora_robot_ojitos_mascota.svg",
+      "formato": "svg",
+      "etiquetas": [
+        "aspiradora",
+        "robot",
+        "ojitos",
+        "mascota",
+        "auto",
+        "humanizacion",
+        "vida_cotidiana"
+      ],
+      "compatibleComposicion": true
+    },
+    {
+      "id": "prop_taza_cafe_espuma_sonriente",
+      "propParamId": "taza_cafe_espuma_sonriente",
+      "nombre": "Prop: Taza de Café con Sonrisa en la Espuma y Vapor",
+      "categoria": "props",
+      "subcategoria": "vida_cotidiana",
+      "emocion": "any",
+      "accion": "both",
+      "propsAsociados": [
+        "taza_cafe_espuma_sonriente"
+      ],
+      "ruta": "poses/props/prop_taza_cafe_espuma_sonriente.svg",
+      "formato": "svg",
+      "etiquetas": [
+        "taza",
+        "cafe",
+        "espuma",
+        "sonrisa",
+        "latte",
+        "brindis",
+        "vida_cotidiana",
+        "pareidolia"
       ],
       "compatibleComposicion": true
     },

@@ -1,0 +1,1684 @@
+{
+  "meta": {
+    "id": "camaleon_cristales_color",
+    "slug": "camaleon_cristales_color",
+    "temaResumen": "¿Por qué los camaleones no cambian de color para camuflarse sino con cristales nanoscópicos?",
+    "titulo": "El mito del camaleón: cómo cambia de color de verdad",
+    "titulo_corto": "CRISTALES DEL CAMALEÓN",
+    "gancho": "¿Alguna vez te dijeron que los camaleones cambian de color para esconderse con el fondo? ¡Pues resulta que toda tu vida te mintieron!",
+    "fuentes": [
+      "Teyssier et al. (Nature Communications, 2015: Photonic crystals in chameleon iridophores)",
+      "University of Geneva Laboratory of Artificial & Natural Evolution"
+    ],
+    "genero": "SCIENCE",
+    "duracionObjetivo": [
+      62,
+      110
+    ]
+  },
+  "escenas": [
+    {
+      "id": 1,
+      "texto": "¿Alguna vez te dijeron que los camaleones cambian de color para esconderse con el fondo? ¡Pues resulta que toda tu vida te mintieron!",
+      "icono": "Palette",
+      "colorIcono": "#10B981",
+      "tituloVisual": "GRAN ENGAÑO",
+      "composicionVisual": "plano_general",
+      "escenario": "selva_tropical",
+      "layout": "narrativo",
+      "transicion": "zoom_in",
+      "efectosCamara": [
+        "drift"
+      ],
+      "sfx": "sfx/sfx_whoosh.wav",
+      "volumenSfx": 0.2,
+      "palabrasClave": [
+        "cambian de color",
+        "esconderse con el fondo",
+        "te mintieron"
+      ],
+      "personajes": [
+        {
+          "id": "biologo",
+          "posicion": {
+            "x": -160,
+            "y": 70
+          },
+          "escala": 1.05,
+          "orientacion": "derecha",
+          "prop": "chameleon_hero",
+          "poseId": "presenting_object",
+          "expresion": "talking_enthusiastic",
+          "acciones": [
+            {
+              "tipo": "caminar_hacia",
+              "desdeX": -260,
+              "haciaX": -120
+            }
+          ],
+          "habla": true
+        }
+      ],
+      "duracionSegundos": 6.178,
+      "palabras": [
+        {
+          "palabra": "Alguna",
+          "inicioMs": 0,
+          "finMs": 380
+        },
+        {
+          "palabra": "vez",
+          "inicioMs": 380,
+          "finMs": 500
+        },
+        {
+          "palabra": "te",
+          "inicioMs": 500,
+          "finMs": 620
+        },
+        {
+          "palabra": "dijeron",
+          "inicioMs": 620,
+          "finMs": 960
+        },
+        {
+          "palabra": "que",
+          "inicioMs": 960,
+          "finMs": 1080
+        },
+        {
+          "palabra": "los",
+          "inicioMs": 1080,
+          "finMs": 1180
+        },
+        {
+          "palabra": "camaleones",
+          "inicioMs": 1180,
+          "finMs": 1660
+        },
+        {
+          "palabra": "cambian",
+          "inicioMs": 1660,
+          "finMs": 2040
+        },
+        {
+          "palabra": "de",
+          "inicioMs": 2040,
+          "finMs": 2140
+        },
+        {
+          "palabra": "color",
+          "inicioMs": 2140,
+          "finMs": 2360
+        },
+        {
+          "palabra": "para",
+          "inicioMs": 2360,
+          "finMs": 2560
+        },
+        {
+          "palabra": "esconderse",
+          "inicioMs": 2560,
+          "finMs": 3060
+        },
+        {
+          "palabra": "con",
+          "inicioMs": 3060,
+          "finMs": 3180
+        },
+        {
+          "palabra": "el",
+          "inicioMs": 3180,
+          "finMs": 3280
+        },
+        {
+          "palabra": "fondo",
+          "inicioMs": 3280,
+          "finMs": 3600
+        },
+        {
+          "palabra": "Pues",
+          "inicioMs": 3760,
+          "finMs": 3800
+        },
+        {
+          "palabra": "resulta",
+          "inicioMs": 3800,
+          "finMs": 4360
+        },
+        {
+          "palabra": "que",
+          "inicioMs": 4360,
+          "finMs": 4460
+        },
+        {
+          "palabra": "toda",
+          "inicioMs": 4460,
+          "finMs": 4660
+        },
+        {
+          "palabra": "tu",
+          "inicioMs": 4660,
+          "finMs": 4860
+        },
+        {
+          "palabra": "vida",
+          "inicioMs": 4860,
+          "finMs": 5060
+        },
+        {
+          "palabra": "te",
+          "inicioMs": 5060,
+          "finMs": 5220
+        },
+        {
+          "palabra": "mintieron",
+          "inicioMs": 5220,
+          "finMs": 5700
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "texto": "Durante décadas creímos que si ponías un camaleón sobre un mantel a cuadros, intentaría copiar los colores para hacerse invisible.",
+      "icono": "Eye",
+      "colorIcono": "#38BDF8",
+      "tituloVisual": "MITO POPULAR",
+      "composicionVisual": "primer_plano",
+      "escenario": "laboratorio",
+      "layout": "narrativo",
+      "transicion": "whip_right",
+      "efectosCamara": [
+        "shake",
+        "punch"
+      ],
+      "sfx": "sfx/sfx_dramatic_hit.wav",
+      "volumenSfx": 0.25,
+      "palabrasClave": [
+        "mantel a cuadros",
+        "copiar los colores",
+        "hacerse invisible"
+      ],
+      "personajes": [
+        {
+          "id": "narrador",
+          "posicion": {
+            "x": 0,
+            "y": 50
+          },
+          "escala": 1.15,
+          "orientacion": "derecha",
+          "poseId": "explaining_both_hands",
+          "expresion": "confused",
+          "habla": true
+        }
+      ],
+      "duracionSegundos": 6.682,
+      "palabras": [
+        {
+          "palabra": "Durante",
+          "inicioMs": 0,
+          "finMs": 420
+        },
+        {
+          "palabra": "décadas",
+          "inicioMs": 420,
+          "finMs": 820
+        },
+        {
+          "palabra": "creímos",
+          "inicioMs": 980,
+          "finMs": 1240
+        },
+        {
+          "palabra": "que",
+          "inicioMs": 1240,
+          "finMs": 1420
+        },
+        {
+          "palabra": "si",
+          "inicioMs": 1420,
+          "finMs": 1540
+        },
+        {
+          "palabra": "ponías",
+          "inicioMs": 1540,
+          "finMs": 1900
+        },
+        {
+          "palabra": "un",
+          "inicioMs": 1900,
+          "finMs": 2060
+        },
+        {
+          "palabra": "camaleón",
+          "inicioMs": 2060,
+          "finMs": 2500
+        },
+        {
+          "palabra": "sobre",
+          "inicioMs": 2500,
+          "finMs": 2760
+        },
+        {
+          "palabra": "un",
+          "inicioMs": 2760,
+          "finMs": 2860
+        },
+        {
+          "palabra": "mantel",
+          "inicioMs": 2860,
+          "finMs": 3200
+        },
+        {
+          "palabra": "a",
+          "inicioMs": 3200,
+          "finMs": 3700
+        },
+        {
+          "palabra": "cuadros",
+          "inicioMs": 3940,
+          "finMs": 4420
+        },
+        {
+          "palabra": "intentaría",
+          "inicioMs": 4420,
+          "finMs": 4740
+        },
+        {
+          "palabra": "copiar",
+          "inicioMs": 4740,
+          "finMs": 4900
+        },
+        {
+          "palabra": "los",
+          "inicioMs": 4900,
+          "finMs": 5260
+        },
+        {
+          "palabra": "colores",
+          "inicioMs": 5260,
+          "finMs": 5480
+        },
+        {
+          "palabra": "para",
+          "inicioMs": 5480,
+          "finMs": 5800
+        },
+        {
+          "palabra": "hacerse",
+          "inicioMs": 5800,
+          "finMs": 6080
+        },
+        {
+          "palabra": "invisible",
+          "inicioMs": 6080,
+          "finMs": 6432
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "texto": "En realidad, los camaleones cambian de color principalmente para comunicarse: expresar agresividad ante rivales, cortejar parejas o regular su temperatura.",
+      "icono": "Heart",
+      "colorIcono": "#EC4899",
+      "tituloVisual": "LENGUAJE EMOCIONAL",
+      "composicionVisual": "plano_general",
+      "escenario": "selva_tropical",
+      "layout": "narrativo",
+      "transicion": "whip_left",
+      "efectosCamara": [
+        "drift"
+      ],
+      "palabrasClave": [
+        "para comunicarse",
+        "expresar agresividad",
+        "cortejar parejas"
+      ],
+      "personajes": [
+        {
+          "id": "biologo",
+          "posicion": {
+            "x": -90,
+            "y": 60
+          },
+          "escala": 1.1,
+          "orientacion": "derecha",
+          "prop": "chameleon_hero",
+          "poseId": "presenting_object",
+          "expresion": "eureka",
+          "habla": true
+        }
+      ],
+      "duracionSegundos": 9.082,
+      "palabras": [
+        {
+          "palabra": "En",
+          "inicioMs": 0,
+          "finMs": 220
+        },
+        {
+          "palabra": "realidad",
+          "inicioMs": 220,
+          "finMs": 560
+        },
+        {
+          "palabra": "los",
+          "inicioMs": 700,
+          "finMs": 820
+        },
+        {
+          "palabra": "camaleones",
+          "inicioMs": 820,
+          "finMs": 1260
+        },
+        {
+          "palabra": "cambian",
+          "inicioMs": 1260,
+          "finMs": 1740
+        },
+        {
+          "palabra": "de",
+          "inicioMs": 1740,
+          "finMs": 1880
+        },
+        {
+          "palabra": "color",
+          "inicioMs": 1880,
+          "finMs": 2060
+        },
+        {
+          "palabra": "principalmente",
+          "inicioMs": 2060,
+          "finMs": 2580
+        },
+        {
+          "palabra": "para",
+          "inicioMs": 2580,
+          "finMs": 3160
+        },
+        {
+          "palabra": "comunicarse",
+          "inicioMs": 3160,
+          "finMs": 3940
+        },
+        {
+          "palabra": "expresar",
+          "inicioMs": 4100,
+          "finMs": 4680
+        },
+        {
+          "palabra": "agresividad",
+          "inicioMs": 4680,
+          "finMs": 5300
+        },
+        {
+          "palabra": "ante",
+          "inicioMs": 5300,
+          "finMs": 6240
+        },
+        {
+          "palabra": "rivales",
+          "inicioMs": 6480,
+          "finMs": 6960
+        },
+        {
+          "palabra": "cortejar",
+          "inicioMs": 6960,
+          "finMs": 7420
+        },
+        {
+          "palabra": "parejas",
+          "inicioMs": 7420,
+          "finMs": 7640
+        },
+        {
+          "palabra": "o",
+          "inicioMs": 7640,
+          "finMs": 8000
+        },
+        {
+          "palabra": "regular",
+          "inicioMs": 8000,
+          "finMs": 8220
+        },
+        {
+          "palabra": "su",
+          "inicioMs": 8220,
+          "finMs": 8420
+        },
+        {
+          "palabra": "temperatura",
+          "inicioMs": 8420,
+          "finMs": 8832
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "texto": "Pero lo verdaderamente alucinante es cómo lo hacen: no utilizan tintas ni pigmentos químicos para cambiar a tonos brillantes como el azul o amarillo.",
+      "icono": "Sparkles",
+      "colorIcono": "#F59E0B",
+      "tituloVisual": "CERO PIGMENTOS",
+      "composicionVisual": "plano_general",
+      "escenario": "laboratorio",
+      "layout": "narrativo",
+      "transicion": "zoom_in",
+      "efectosCamara": [
+        "drift"
+      ],
+      "palabrasClave": [
+        "no utilizan tintas",
+        "pigmentos químicos",
+        "tonos brillantes"
+      ],
+      "personajes": [
+        {
+          "id": "fisico",
+          "posicion": {
+            "x": -160,
+            "y": 70
+          },
+          "escala": 1.05,
+          "orientacion": "derecha",
+          "poseId": "explaining_pointing_up",
+          "expresion": "analytical",
+          "habla": true
+        }
+      ],
+      "duracionSegundos": 8.482,
+      "palabras": [
+        {
+          "palabra": "Pero",
+          "inicioMs": 0,
+          "finMs": 240
+        },
+        {
+          "palabra": "lo",
+          "inicioMs": 240,
+          "finMs": 360
+        },
+        {
+          "palabra": "verdaderamente",
+          "inicioMs": 360,
+          "finMs": 1080
+        },
+        {
+          "palabra": "alucinante",
+          "inicioMs": 1080,
+          "finMs": 1900
+        },
+        {
+          "palabra": "es",
+          "inicioMs": 1900,
+          "finMs": 2180
+        },
+        {
+          "palabra": "cómo",
+          "inicioMs": 2180,
+          "finMs": 2400
+        },
+        {
+          "palabra": "lo",
+          "inicioMs": 2400,
+          "finMs": 2580
+        },
+        {
+          "palabra": "hacen",
+          "inicioMs": 2580,
+          "finMs": 2900
+        },
+        {
+          "palabra": "no",
+          "inicioMs": 3140,
+          "finMs": 3300
+        },
+        {
+          "palabra": "utilizan",
+          "inicioMs": 3300,
+          "finMs": 3800
+        },
+        {
+          "palabra": "tintas",
+          "inicioMs": 3800,
+          "finMs": 4240
+        },
+        {
+          "palabra": "ni",
+          "inicioMs": 4240,
+          "finMs": 4360
+        },
+        {
+          "palabra": "pigmentos",
+          "inicioMs": 4360,
+          "finMs": 4920
+        },
+        {
+          "palabra": "químicos",
+          "inicioMs": 4920,
+          "finMs": 5320
+        },
+        {
+          "palabra": "para",
+          "inicioMs": 5320,
+          "finMs": 5540
+        },
+        {
+          "palabra": "cambiar",
+          "inicioMs": 5540,
+          "finMs": 5880
+        },
+        {
+          "palabra": "a",
+          "inicioMs": 5880,
+          "finMs": 5980
+        },
+        {
+          "palabra": "tonos",
+          "inicioMs": 5980,
+          "finMs": 6320
+        },
+        {
+          "palabra": "brillantes",
+          "inicioMs": 6320,
+          "finMs": 6740
+        },
+        {
+          "palabra": "como",
+          "inicioMs": 6740,
+          "finMs": 7020
+        },
+        {
+          "palabra": "el",
+          "inicioMs": 7020,
+          "finMs": 7140
+        },
+        {
+          "palabra": "azul",
+          "inicioMs": 7140,
+          "finMs": 7340
+        },
+        {
+          "palabra": "o",
+          "inicioMs": 7340,
+          "finMs": 7560
+        },
+        {
+          "palabra": "amarillo",
+          "inicioMs": 7560,
+          "finMs": 8020
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "texto": "Bajo su piel transparente poseen dos capas densas de células especializadas llamadas iridóforos, cargadas de nanocristales de guanina.",
+      "icono": "Grid",
+      "colorIcono": "#8B5CF6",
+      "tituloVisual": "CÉLULAS IRIDÓFORAS",
+      "composicionVisual": "cifras_concepto",
+      "escenario": "laboratorio",
+      "layout": "narrativo",
+      "transicion": "corte",
+      "efectosCamara": [
+        "punch",
+        "drift"
+      ],
+      "palabrasClave": [
+        "iridóforos",
+        "nanocristales de guanina",
+        "piel transparente"
+      ],
+      "personajes": [
+        {
+          "id": "fisico",
+          "posicion": {
+            "x": -150,
+            "y": 70
+          },
+          "escala": 1.05,
+          "orientacion": "derecha",
+          "prop": "photonic_crystals",
+          "poseId": "presenting_object",
+          "expresion": "analytical",
+          "habla": true
+        }
+      ],
+      "duracionSegundos": 7.138,
+      "palabras": [
+        {
+          "palabra": "Bajo",
+          "inicioMs": 0,
+          "finMs": 300
+        },
+        {
+          "palabra": "su",
+          "inicioMs": 300,
+          "finMs": 440
+        },
+        {
+          "palabra": "piel",
+          "inicioMs": 440,
+          "finMs": 580
+        },
+        {
+          "palabra": "transparente",
+          "inicioMs": 580,
+          "finMs": 1240
+        },
+        {
+          "palabra": "poseen",
+          "inicioMs": 1240,
+          "finMs": 1640
+        },
+        {
+          "palabra": "dos",
+          "inicioMs": 1640,
+          "finMs": 1740
+        },
+        {
+          "palabra": "capas",
+          "inicioMs": 1740,
+          "finMs": 2140
+        },
+        {
+          "palabra": "densas",
+          "inicioMs": 2140,
+          "finMs": 2480
+        },
+        {
+          "palabra": "de",
+          "inicioMs": 2480,
+          "finMs": 2580
+        },
+        {
+          "palabra": "células",
+          "inicioMs": 2580,
+          "finMs": 2900
+        },
+        {
+          "palabra": "especializadas",
+          "inicioMs": 2900,
+          "finMs": 3760
+        },
+        {
+          "palabra": "llamadas",
+          "inicioMs": 3760,
+          "finMs": 4240
+        },
+        {
+          "palabra": "iridóforos",
+          "inicioMs": 4240,
+          "finMs": 4960
+        },
+        {
+          "palabra": "cargadas",
+          "inicioMs": 5060,
+          "finMs": 5400
+        },
+        {
+          "palabra": "de",
+          "inicioMs": 5400,
+          "finMs": 5540
+        },
+        {
+          "palabra": "nanocristales",
+          "inicioMs": 5540,
+          "finMs": 6140
+        },
+        {
+          "palabra": "de",
+          "inicioMs": 6140,
+          "finMs": 6300
+        },
+        {
+          "palabra": "guanina",
+          "inicioMs": 6300,
+          "finMs": 6680
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "texto": "Estos diminutos cristales microscópicos están ordenados en una red geométrica perfecta, funcionando como espejos fotónicos cuánticos.",
+      "icono": "Atom",
+      "colorIcono": "#06B6D4",
+      "tituloVisual": "ESPEJOS FOTÓNICOS",
+      "composicionVisual": "plano_general",
+      "escenario": "laboratorio",
+      "layout": "narrativo",
+      "transicion": "whip_right",
+      "efectosCamara": [
+        "drift"
+      ],
+      "palabrasClave": [
+        "red geométrica perfecta",
+        "espejos fotónicos",
+        "cuánticos"
+      ],
+      "personajes": [
+        {
+          "id": "fisico",
+          "posicion": {
+            "x": -180,
+            "y": 70
+          },
+          "escala": 1.05,
+          "orientacion": "derecha",
+          "poseId": "explaining_pointing_up",
+          "expresion": "eureka",
+          "habla": true
+        }
+      ],
+      "duracionSegundos": 7.714,
+      "palabras": [
+        {
+          "palabra": "Estos",
+          "inicioMs": 0,
+          "finMs": 380
+        },
+        {
+          "palabra": "diminutos",
+          "inicioMs": 380,
+          "finMs": 800
+        },
+        {
+          "palabra": "cristales",
+          "inicioMs": 800,
+          "finMs": 1640
+        },
+        {
+          "palabra": "microscópicos",
+          "inicioMs": 1640,
+          "finMs": 2140
+        },
+        {
+          "palabra": "están",
+          "inicioMs": 2140,
+          "finMs": 2420
+        },
+        {
+          "palabra": "ordenados",
+          "inicioMs": 2420,
+          "finMs": 2960
+        },
+        {
+          "palabra": "en",
+          "inicioMs": 2960,
+          "finMs": 3160
+        },
+        {
+          "palabra": "una",
+          "inicioMs": 3160,
+          "finMs": 3360
+        },
+        {
+          "palabra": "red",
+          "inicioMs": 3360,
+          "finMs": 3560
+        },
+        {
+          "palabra": "geométrica",
+          "inicioMs": 3560,
+          "finMs": 4160
+        },
+        {
+          "palabra": "perfecta",
+          "inicioMs": 4160,
+          "finMs": 4780
+        },
+        {
+          "palabra": "funcionando",
+          "inicioMs": 4880,
+          "finMs": 5420
+        },
+        {
+          "palabra": "como",
+          "inicioMs": 5420,
+          "finMs": 5640
+        },
+        {
+          "palabra": "espejos",
+          "inicioMs": 5640,
+          "finMs": 6060
+        },
+        {
+          "palabra": "fotónicos",
+          "inicioMs": 6060,
+          "finMs": 6600
+        },
+        {
+          "palabra": "cuánticos",
+          "inicioMs": 6600,
+          "finMs": 7220
+        }
+      ],
+      "objetos": [
+        {
+          "id": "red_nanocristales",
+          "propId": "photonic_crystals",
+          "posicion": {
+            "x": 170,
+            "y": -30
+          },
+          "escala": 1.45,
+          "animacion": {
+            "tipo": "pulso",
+            "inicioFrame": 0,
+            "finFrame": 9999
+          },
+          "capaZ": 25
+        }
+      ]
+    },
+    {
+      "id": 7,
+      "texto": "Cuando el camaleón está en calma, los nanocristales están muy juntos y reflejan longitudes de onda cortas como el azul, que al mezclarse con piel amarilla se ve verde.",
+      "icono": "Sun",
+      "colorIcono": "#10B981",
+      "tituloVisual": "CALMA VERDE",
+      "composicionVisual": "primer_plano",
+      "escenario": "selva_tropical",
+      "layout": "narrativo",
+      "transicion": "zoom_in",
+      "efectosCamara": [
+        "drift"
+      ],
+      "palabrasClave": [
+        "está en calma",
+        "reflejan azul",
+        "se ve verde"
+      ],
+      "personajes": [
+        {
+          "id": "biologo",
+          "posicion": {
+            "x": -80,
+            "y": 60
+          },
+          "escala": 1.1,
+          "orientacion": "derecha",
+          "prop": "chameleon_hero",
+          "poseId": "presenting_object",
+          "expresion": "smile_wide",
+          "habla": true
+        }
+      ],
+      "duracionSegundos": 8.842,
+      "palabras": [
+        {
+          "palabra": "Cuando",
+          "inicioMs": 0,
+          "finMs": 280
+        },
+        {
+          "palabra": "el",
+          "inicioMs": 280,
+          "finMs": 420
+        },
+        {
+          "palabra": "camaleón",
+          "inicioMs": 420,
+          "finMs": 820
+        },
+        {
+          "palabra": "está",
+          "inicioMs": 820,
+          "finMs": 1060
+        },
+        {
+          "palabra": "en",
+          "inicioMs": 1060,
+          "finMs": 1180
+        },
+        {
+          "palabra": "calma",
+          "inicioMs": 1180,
+          "finMs": 1500
+        },
+        {
+          "palabra": "los",
+          "inicioMs": 1620,
+          "finMs": 1720
+        },
+        {
+          "palabra": "nanocristales",
+          "inicioMs": 1720,
+          "finMs": 2340
+        },
+        {
+          "palabra": "están",
+          "inicioMs": 2340,
+          "finMs": 2680
+        },
+        {
+          "palabra": "muy",
+          "inicioMs": 2680,
+          "finMs": 2920
+        },
+        {
+          "palabra": "juntos",
+          "inicioMs": 2920,
+          "finMs": 3260
+        },
+        {
+          "palabra": "y",
+          "inicioMs": 3260,
+          "finMs": 3460
+        },
+        {
+          "palabra": "reflejan",
+          "inicioMs": 3460,
+          "finMs": 3880
+        },
+        {
+          "palabra": "longitudes",
+          "inicioMs": 3880,
+          "finMs": 4340
+        },
+        {
+          "palabra": "de",
+          "inicioMs": 4340,
+          "finMs": 4580
+        },
+        {
+          "palabra": "onda",
+          "inicioMs": 4580,
+          "finMs": 4740
+        },
+        {
+          "palabra": "cortas",
+          "inicioMs": 4740,
+          "finMs": 5220
+        },
+        {
+          "palabra": "como",
+          "inicioMs": 5220,
+          "finMs": 5380
+        },
+        {
+          "palabra": "el",
+          "inicioMs": 5380,
+          "finMs": 5500
+        },
+        {
+          "palabra": "azul",
+          "inicioMs": 5500,
+          "finMs": 5740
+        },
+        {
+          "palabra": "que",
+          "inicioMs": 6100,
+          "finMs": 6300
+        },
+        {
+          "palabra": "al",
+          "inicioMs": 6300,
+          "finMs": 6400
+        },
+        {
+          "palabra": "mezclarse",
+          "inicioMs": 6400,
+          "finMs": 6920
+        },
+        {
+          "palabra": "con",
+          "inicioMs": 6920,
+          "finMs": 7240
+        },
+        {
+          "palabra": "piel",
+          "inicioMs": 7240,
+          "finMs": 7360
+        },
+        {
+          "palabra": "amarilla",
+          "inicioMs": 7360,
+          "finMs": 7720
+        },
+        {
+          "palabra": "se",
+          "inicioMs": 7720,
+          "finMs": 7900
+        },
+        {
+          "palabra": "ve",
+          "inicioMs": 7900,
+          "finMs": 8120
+        },
+        {
+          "palabra": "verde",
+          "inicioMs": 8120,
+          "finMs": 8380
+        }
+      ]
+    },
+    {
+      "id": 8,
+      "texto": "Pero cuando se enoja o divisa a una hembra, el camaleón tensa su piel, separando los cristales para reflejar longitudes de onda largas como el amarillo y rojo.",
+      "icono": "Flame",
+      "colorIcono": "#EF4444",
+      "tituloVisual": "FURIA ROJA",
+      "composicionVisual": "plano_general",
+      "escenario": "selva_tropical",
+      "layout": "narrativo",
+      "transicion": "corte",
+      "efectosCamara": [
+        "shake",
+        "punch"
+      ],
+      "palabrasClave": [
+        "tensa su piel",
+        "separando los cristales",
+        "amarillo y rojo"
+      ],
+      "personajes": [
+        {
+          "id": "biologo",
+          "posicion": {
+            "x": -120,
+            "y": 70
+          },
+          "escala": 1.05,
+          "orientacion": "derecha",
+          "prop": "chameleon_hero",
+          "poseId": "presenting_object",
+          "expresion": "shocked",
+          "habla": true
+        }
+      ],
+      "duracionSegundos": 8.29,
+      "palabras": [
+        {
+          "palabra": "Pero",
+          "inicioMs": 0,
+          "finMs": 200
+        },
+        {
+          "palabra": "cuando",
+          "inicioMs": 200,
+          "finMs": 420
+        },
+        {
+          "palabra": "se",
+          "inicioMs": 420,
+          "finMs": 620
+        },
+        {
+          "palabra": "enoja",
+          "inicioMs": 620,
+          "finMs": 980
+        },
+        {
+          "palabra": "o",
+          "inicioMs": 980,
+          "finMs": 1060
+        },
+        {
+          "palabra": "divisa",
+          "inicioMs": 1060,
+          "finMs": 1400
+        },
+        {
+          "palabra": "a",
+          "inicioMs": 1400,
+          "finMs": 1600
+        },
+        {
+          "palabra": "una",
+          "inicioMs": 1600,
+          "finMs": 1920
+        },
+        {
+          "palabra": "hembra",
+          "inicioMs": 2020,
+          "finMs": 2120
+        },
+        {
+          "palabra": "el",
+          "inicioMs": 2120,
+          "finMs": 2560
+        },
+        {
+          "palabra": "camaleón",
+          "inicioMs": 2560,
+          "finMs": 2900
+        },
+        {
+          "palabra": "tensa",
+          "inicioMs": 2900,
+          "finMs": 3020
+        },
+        {
+          "palabra": "su",
+          "inicioMs": 3020,
+          "finMs": 3240
+        },
+        {
+          "palabra": "piel",
+          "inicioMs": 3420,
+          "finMs": 3920
+        },
+        {
+          "palabra": "separando",
+          "inicioMs": 3920,
+          "finMs": 4040
+        },
+        {
+          "palabra": "los",
+          "inicioMs": 4040,
+          "finMs": 4540
+        },
+        {
+          "palabra": "cristales",
+          "inicioMs": 4540,
+          "finMs": 4760
+        },
+        {
+          "palabra": "para",
+          "inicioMs": 4760,
+          "finMs": 5240
+        },
+        {
+          "palabra": "reflejar",
+          "inicioMs": 5240,
+          "finMs": 5500
+        },
+        {
+          "palabra": "longitudes",
+          "inicioMs": 5500,
+          "finMs": 5940
+        },
+        {
+          "palabra": "de",
+          "inicioMs": 5940,
+          "finMs": 6200
+        },
+        {
+          "palabra": "onda",
+          "inicioMs": 6200,
+          "finMs": 6680
+        },
+        {
+          "palabra": "largas",
+          "inicioMs": 6680,
+          "finMs": 6880
+        },
+        {
+          "palabra": "como",
+          "inicioMs": 6880,
+          "finMs": 7020
+        },
+        {
+          "palabra": "el",
+          "inicioMs": 7020,
+          "finMs": 7380
+        },
+        {
+          "palabra": "amarillo",
+          "inicioMs": 7380,
+          "finMs": 7500
+        },
+        {
+          "palabra": "y",
+          "inicioMs": 7500,
+          "finMs": 7840
+        },
+        {
+          "palabra": "rojo",
+          "inicioMs": 7840,
+          "finMs": 8040
+        }
+      ],
+      "sfx": "sfx/sfx_dramatic_hit.wav",
+      "volumenSfx": 0.25
+    },
+    {
+      "id": 9,
+      "texto": "Es física óptica pura en tiempo real: modifican el espacio nanométrico entre partículas vivas para manipular cómo rebota la luz visible.",
+      "icono": "Zap",
+      "colorIcono": "#FACC15",
+      "tituloVisual": "FÍSICA ÓPTICA",
+      "composicionVisual": "plano_general",
+      "escenario": "laboratorio",
+      "layout": "narrativo",
+      "transicion": "whip_left",
+      "efectosCamara": [
+        "drift"
+      ],
+      "palabrasClave": [
+        "física óptica pura",
+        "espacio nanométrico",
+        "luz visible"
+      ],
+      "personajes": [
+        {
+          "id": "fisico",
+          "posicion": {
+            "x": -180,
+            "y": 70
+          },
+          "escala": 1.05,
+          "orientacion": "derecha",
+          "poseId": "explaining_pointing_up",
+          "expresion": "talking_enthusiastic",
+          "habla": true
+        }
+      ],
+      "duracionSegundos": 7.354,
+      "palabras": [
+        {
+          "palabra": "Es",
+          "inicioMs": 0,
+          "finMs": 240
+        },
+        {
+          "palabra": "física",
+          "inicioMs": 240,
+          "finMs": 640
+        },
+        {
+          "palabra": "óptica",
+          "inicioMs": 640,
+          "finMs": 1160
+        },
+        {
+          "palabra": "pura",
+          "inicioMs": 1280,
+          "finMs": 1480
+        },
+        {
+          "palabra": "en",
+          "inicioMs": 1480,
+          "finMs": 1540
+        },
+        {
+          "palabra": "tiempo",
+          "inicioMs": 1540,
+          "finMs": 1780
+        },
+        {
+          "palabra": "real",
+          "inicioMs": 1780,
+          "finMs": 2060
+        },
+        {
+          "palabra": "modifican",
+          "inicioMs": 2220,
+          "finMs": 2700
+        },
+        {
+          "palabra": "el",
+          "inicioMs": 2700,
+          "finMs": 2820
+        },
+        {
+          "palabra": "espacio",
+          "inicioMs": 2820,
+          "finMs": 3080
+        },
+        {
+          "palabra": "nanométrico",
+          "inicioMs": 3080,
+          "finMs": 3740
+        },
+        {
+          "palabra": "entre",
+          "inicioMs": 3740,
+          "finMs": 3960
+        },
+        {
+          "palabra": "partículas",
+          "inicioMs": 3960,
+          "finMs": 4540
+        },
+        {
+          "palabra": "vivas",
+          "inicioMs": 4540,
+          "finMs": 4860
+        },
+        {
+          "palabra": "para",
+          "inicioMs": 4860,
+          "finMs": 5000
+        },
+        {
+          "palabra": "manipular",
+          "inicioMs": 5000,
+          "finMs": 5480
+        },
+        {
+          "palabra": "cómo",
+          "inicioMs": 5480,
+          "finMs": 5780
+        },
+        {
+          "palabra": "rebota",
+          "inicioMs": 5780,
+          "finMs": 6220
+        },
+        {
+          "palabra": "la",
+          "inicioMs": 6220,
+          "finMs": 6300
+        },
+        {
+          "palabra": "luz",
+          "inicioMs": 6300,
+          "finMs": 6460
+        },
+        {
+          "palabra": "visible",
+          "inicioMs": 6460,
+          "finMs": 6580
+        }
+      ],
+      "objetos": [
+        {
+          "id": "interferencia_optica",
+          "propId": "photonic_crystals",
+          "posicion": {
+            "x": 170,
+            "y": -30
+          },
+          "escala": 1.45,
+          "animacion": {
+            "tipo": "flotar",
+            "inicioFrame": 0,
+            "finFrame": 9999
+          },
+          "capaZ": 25
+        }
+      ]
+    },
+    {
+      "id": 10,
+      "texto": "Los tonos oscuros absorben más calor en mañanas frías, mientras que los tonos claros y pálidos reflejan el sol abrasador del mediodía.",
+      "icono": "Thermometer",
+      "colorIcono": "#38BDF8",
+      "tituloVisual": "TERMORREGULACIÓN",
+      "composicionVisual": "plano_general",
+      "escenario": "selva_tropical",
+      "layout": "narrativo",
+      "transicion": "zoom_in",
+      "efectosCamara": [
+        "drift"
+      ],
+      "palabrasClave": [
+        "absorben más calor",
+        "tonos claros reflejan",
+        "termorregulación"
+      ],
+      "personajes": [
+        {
+          "id": "biologo",
+          "posicion": {
+            "x": -90,
+            "y": 60
+          },
+          "escala": 1.1,
+          "orientacion": "derecha",
+          "prop": "chameleon_hero",
+          "poseId": "presenting_object",
+          "expresion": "analytical",
+          "habla": true
+        }
+      ],
+      "duracionSegundos": 7.162,
+      "palabras": [
+        {
+          "palabra": "Los",
+          "inicioMs": 0,
+          "finMs": 220
+        },
+        {
+          "palabra": "tonos",
+          "inicioMs": 220,
+          "finMs": 580
+        },
+        {
+          "palabra": "oscuros",
+          "inicioMs": 580,
+          "finMs": 940
+        },
+        {
+          "palabra": "absorben",
+          "inicioMs": 940,
+          "finMs": 1420
+        },
+        {
+          "palabra": "más",
+          "inicioMs": 1420,
+          "finMs": 1620
+        },
+        {
+          "palabra": "calor",
+          "inicioMs": 1620,
+          "finMs": 1920
+        },
+        {
+          "palabra": "en",
+          "inicioMs": 1920,
+          "finMs": 2080
+        },
+        {
+          "palabra": "mañanas",
+          "inicioMs": 2080,
+          "finMs": 2320
+        },
+        {
+          "palabra": "frías",
+          "inicioMs": 2320,
+          "finMs": 2880
+        },
+        {
+          "palabra": "mientras",
+          "inicioMs": 2960,
+          "finMs": 3140
+        },
+        {
+          "palabra": "que",
+          "inicioMs": 3140,
+          "finMs": 3320
+        },
+        {
+          "palabra": "los",
+          "inicioMs": 3320,
+          "finMs": 3440
+        },
+        {
+          "palabra": "tonos",
+          "inicioMs": 3440,
+          "finMs": 3740
+        },
+        {
+          "palabra": "claros",
+          "inicioMs": 3740,
+          "finMs": 4120
+        },
+        {
+          "palabra": "y",
+          "inicioMs": 4120,
+          "finMs": 4220
+        },
+        {
+          "palabra": "pálidos",
+          "inicioMs": 4220,
+          "finMs": 4600
+        },
+        {
+          "palabra": "reflejan",
+          "inicioMs": 4600,
+          "finMs": 5140
+        },
+        {
+          "palabra": "el",
+          "inicioMs": 5140,
+          "finMs": 5260
+        },
+        {
+          "palabra": "sol",
+          "inicioMs": 5260,
+          "finMs": 5440
+        },
+        {
+          "palabra": "abrasador",
+          "inicioMs": 5440,
+          "finMs": 5960
+        },
+        {
+          "palabra": "del",
+          "inicioMs": 5960,
+          "finMs": 6140
+        },
+        {
+          "palabra": "mediodía",
+          "inicioMs": 6140,
+          "finMs": 6700
+        }
+      ]
+    },
+    {
+      "id": 11,
+      "texto": "El camaleón no busca ocultarse del mundo: lleva en su piel la pantalla de nanotecnología viva más avanzada del reino animal.",
+      "icono": "Sparkles",
+      "colorIcono": "#6366F1",
+      "tituloVisual": "PANTALLA VIVA",
+      "composicionVisual": "plano_general",
+      "escenario": "selva_tropical",
+      "layout": "narrativo",
+      "transicion": "zoom_in",
+      "efectosCamara": [
+        "drift"
+      ],
+      "palabrasClave": [
+        "no busca ocultarse",
+        "nanotecnología viva",
+        "más avanzada"
+      ],
+      "personajes": [
+        {
+          "id": "biologo",
+          "posicion": {
+            "x": 0,
+            "y": 50
+          },
+          "escala": 1.15,
+          "orientacion": "derecha",
+          "prop": "trophy",
+          "poseId": "celebrating_arms_up",
+          "expresion": "eureka",
+          "habla": true
+        }
+      ],
+      "duracionSegundos": 6.058,
+      "palabras": [
+        {
+          "palabra": "El",
+          "inicioMs": 0,
+          "finMs": 180
+        },
+        {
+          "palabra": "camaleón",
+          "inicioMs": 180,
+          "finMs": 560
+        },
+        {
+          "palabra": "no",
+          "inicioMs": 560,
+          "finMs": 700
+        },
+        {
+          "palabra": "busca",
+          "inicioMs": 700,
+          "finMs": 940
+        },
+        {
+          "palabra": "ocultarse",
+          "inicioMs": 940,
+          "finMs": 1400
+        },
+        {
+          "palabra": "del",
+          "inicioMs": 1400,
+          "finMs": 1540
+        },
+        {
+          "palabra": "mundo",
+          "inicioMs": 1540,
+          "finMs": 1920
+        },
+        {
+          "palabra": "lleva",
+          "inicioMs": 1980,
+          "finMs": 2160
+        },
+        {
+          "palabra": "en",
+          "inicioMs": 2160,
+          "finMs": 2320
+        },
+        {
+          "palabra": "su",
+          "inicioMs": 2320,
+          "finMs": 2480
+        },
+        {
+          "palabra": "piel",
+          "inicioMs": 2480,
+          "finMs": 2600
+        },
+        {
+          "palabra": "la",
+          "inicioMs": 2600,
+          "finMs": 2920
+        },
+        {
+          "palabra": "pantalla",
+          "inicioMs": 2920,
+          "finMs": 3120
+        },
+        {
+          "palabra": "de",
+          "inicioMs": 3120,
+          "finMs": 3960
+        },
+        {
+          "palabra": "nanotecnología",
+          "inicioMs": 4080,
+          "finMs": 4260
+        },
+        {
+          "palabra": "viva",
+          "inicioMs": 4260,
+          "finMs": 4420
+        },
+        {
+          "palabra": "más",
+          "inicioMs": 4420,
+          "finMs": 4900
+        },
+        {
+          "palabra": "avanzada",
+          "inicioMs": 4900,
+          "finMs": 5080
+        },
+        {
+          "palabra": "del",
+          "inicioMs": 5080,
+          "finMs": 5340
+        },
+        {
+          "palabra": "reino",
+          "inicioMs": 5340,
+          "finMs": 5580
+        },
+        {
+          "palabra": "animal",
+          "inicioMs": 5580,
+          "finMs": 5808
+        }
+      ]
+    }
+  ]
+}

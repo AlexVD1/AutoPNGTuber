@@ -1,0 +1,36 @@
+ID / SLUG: fotosintesis_clorofila_verde
+Título: ¿Por qué las hojas son verdes y no de otro color?
+Gancho: ¿Te has detenido a pensar por qué casi todas las plantas y hojas del planeta son de color verde y no azul, morado o negro?
+Tema: ¿Por qué las hojas son verdes pero los árboles no absorben el verde? Espectro de clorofila y fotosíntesis
+============================================================
+
+[Escena 1] HOJAS VERDES
+¿Alguna vez te has preguntado por qué las hojas de los árboles son de un verde intenso pero la madera y el tronco no lo son?
+
+[Escena 2] CLOROFILA
+La respuesta se esconde en una molécula llamada clorofila, el pigmento verde que captura la luz del Sol para fabricar el alimento del árbol.
+
+[Escena 3] REFLEJA VERDE
+La clorofila absorbe principalmente la luz roja y azul del espectro solar, pero refleja la luz verde, que es la que tus ojos perciben.
+
+[Escena 4] FOTOSÍNTESIS
+Este proceso se llama fotosíntesis: la planta usa la energía de la luz solar para convertir dióxido de carbono y agua en glucosa y oxígeno.
+
+[Escena 5] CLOROPLASTOS
+Las hojas son verdes porque ahí es donde ocurre la fotosíntesis: en los cloroplastos, orgánulos celulares llenos de clorofila que capturan la luz.
+
+[Escena 6] FUNCIÓN ESTRUCTURAL
+El tronco y las ramas no son verdes porque no contienen cloroplastos: su función es estructural, transportar agua y nutrientes, no fabricar comida.
+
+[Escena 7] CORTEZA VERDE
+Sin embargo, algunos árboles jóvenes tienen corteza verde porque sus tallos jóvenes aún contienen clorofila y pueden hacer fotosíntesis parcialmente.
+
+[Escena 8] OXÍGENO VITAL
+La fotosíntesis es tan eficiente que una sola hoja de árbol puede producir suficiente oxígeno para que un humano respire durante un año entero.
+
+[Escena 9] PLANETA MUERTO
+Sin la clorofila y la fotosíntesis, la Tierra sería un planeta muerto: no habría oxígeno para respirar ni comida para comer.
+
+[Escena 10] FÁBRICA SOLAR
+Así que la próxima vez que veas una hoja verde, recuerda que esa pequeña fábrica solar está produciendo el oxígeno que mantiene viva a toda la vida en la Tierra.
+

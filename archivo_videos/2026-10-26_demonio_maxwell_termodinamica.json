@@ -1,0 +1,1762 @@
+{
+  "meta": {
+    "id": "demonio_maxwell_termodinamica",
+    "slug": "demonio_maxwell_termodinamica",
+    "temaResumen": "El demonio de Maxwell y el Principio de Landauer: por qué borrar información cuesta calor físico real",
+    "duracionObjetivo": [
+      64,
+      78
+    ],
+    "titulo": "El demonio que burló la física (La trampa de Maxwell)",
+    "titulo_corto": "El demonio de Maxwell",
+    "gancho": "La ley más estricta de todo el universo dice que es imposible separar el calor del frío sin gastar energía... a menos que invoques a este astuto demonio.",
+    "genero": "Física Termodinámica y Teoría de la Información",
+    "playlist": "Paradojas de la Física y la Ciencia",
+    "fuentes": [
+      "James Clerk Maxwell (1871) - Theory of Heat",
+      "Leó Szilárd (1929) - Über die Entropieverminderung in einem thermodynamischen System bei Eingriffen intelligenter Wesen",
+      "Rolf Landauer (1961) - Irreversibility and Heat Generation in the Computing Process",
+      "Charles H. Bennett (1982) - The Thermodynamics of Computation: A Review"
+    ]
+  },
+  "escenas": [
+    {
+      "id": 1,
+      "texto": "La ley más estricta de todo el universo dice que es imposible separar el calor del frío sin gastar energía... a menos que invoques a este astuto demonio.",
+      "icono": "Flame",
+      "colorIcono": "#EF4444",
+      "tituloVisual": "SEGUNDA LEY: PROHIBIDO",
+      "composicionVisual": "plano_medio",
+      "escenario": "mesa_laboratorio_cafe_vapor",
+      "layout": "narrativo",
+      "transicion": "corte",
+      "efectosCamara": [
+        "punch"
+      ],
+      "sfx": "sfx/sfx_sello_thump_segunda_ley.wav",
+      "volumenSfx": 0.26,
+      "palabrasClave": [
+        "imposible",
+        "calor",
+        "frío",
+        "demonio"
+      ],
+      "personajes": [
+        {
+          "id": "narrador",
+          "nombre": "Científico",
+          "posicion": {
+            "x": -180,
+            "y": 80
+          },
+          "escala": 1.0,
+          "orientacion": "derecha",
+          "acciones": [
+            {
+              "tipo": "personalizada",
+              "pasos": [
+                {
+                  "inicioProgreso": 0,
+                  "finProgreso": 0.35,
+                  "poseId": "pushing",
+                  "expresion": "confused",
+                  "posicion": {
+                    "x": -180,
+                    "y": 80
+                  },
+                  "curva": "suave",
+                  "procedural": "estatico"
+                },
+                {
+                  "inicioProgreso": 0.35,
+                  "finProgreso": 0.7,
+                  "poseId": "frustrated_head_grab",
+                  "expresion": "worried",
+                  "posicion": {
+                    "x": -200,
+                    "y": 80
+                  },
+                  "curva": "impacto",
+                  "procedural": "temblar"
+                },
+                {
+                  "inicioProgreso": 0.7,
+                  "finProgreso": 1.0,
+                  "poseId": "pointing_right",
+                  "expresion": "eureka",
+                  "posicion": {
+                    "x": -180,
+                    "y": 80
+                  },
+                  "curva": "suave",
+                  "procedural": "estatico"
+                }
+              ]
+            }
+          ],
+          "habla": true,
+          "capaZ": 10
+        }
+      ],
+      "objetos": [
+        {
+          "id": "cafe",
+          "propId": "taza_cafe_vapor_termodinamico",
+          "posicion": {
+            "x": 120,
+            "y": 280
+          },
+          "escala": 1.1,
+          "animacion": "flotar"
+        },
+        {
+          "id": "sello",
+          "propId": "sello_segunda_ley_prohibido",
+          "posicion": {
+            "x": 300,
+            "y": -60
+          },
+          "escala": 1.05,
+          "animacion": "caer"
+        }
+      ],
+      "duracionSegundos": 7.306,
+      "palabras": [
+        {
+          "palabra": "La",
+          "inicioMs": 0,
+          "finMs": 180
+        },
+        {
+          "palabra": "ley",
+          "inicioMs": 180,
+          "finMs": 320
+        },
+        {
+          "palabra": "más",
+          "inicioMs": 320,
+          "finMs": 480
+        },
+        {
+          "palabra": "estricta",
+          "inicioMs": 480,
+          "finMs": 960
+        },
+        {
+          "palabra": "de",
+          "inicioMs": 960,
+          "finMs": 1040
+        },
+        {
+          "palabra": "todo",
+          "inicioMs": 1040,
+          "finMs": 1200
+        },
+        {
+          "palabra": "el",
+          "inicioMs": 1200,
+          "finMs": 1300
+        },
+        {
+          "palabra": "universo",
+          "inicioMs": 1300,
+          "finMs": 1560
+        },
+        {
+          "palabra": "dice",
+          "inicioMs": 1560,
+          "finMs": 1840
+        },
+        {
+          "palabra": "que",
+          "inicioMs": 1840,
+          "finMs": 2040
+        },
+        {
+          "palabra": "es",
+          "inicioMs": 2040,
+          "finMs": 2180
+        },
+        {
+          "palabra": "imposible",
+          "inicioMs": 2180,
+          "finMs": 2640
+        },
+        {
+          "palabra": "separar",
+          "inicioMs": 2640,
+          "finMs": 3040
+        },
+        {
+          "palabra": "el",
+          "inicioMs": 3040,
+          "finMs": 3180
+        },
+        {
+          "palabra": "calor",
+          "inicioMs": 3180,
+          "finMs": 3340
+        },
+        {
+          "palabra": "del",
+          "inicioMs": 3340,
+          "finMs": 3540
+        },
+        {
+          "palabra": "frío",
+          "inicioMs": 3540,
+          "finMs": 3820
+        },
+        {
+          "palabra": "sin",
+          "inicioMs": 3820,
+          "finMs": 3980
+        },
+        {
+          "palabra": "gastar",
+          "inicioMs": 3980,
+          "finMs": 4280
+        },
+        {
+          "palabra": "energía",
+          "inicioMs": 4280,
+          "finMs": 4720
+        },
+        {
+          "palabra": "a",
+          "inicioMs": 4960,
+          "finMs": 5040
+        },
+        {
+          "palabra": "menos",
+          "inicioMs": 5040,
+          "finMs": 5240
+        },
+        {
+          "palabra": "que",
+          "inicioMs": 5240,
+          "finMs": 5440
+        },
+        {
+          "palabra": "invoques",
+          "inicioMs": 5440,
+          "finMs": 5860
+        },
+        {
+          "palabra": "a",
+          "inicioMs": 5860,
+          "finMs": 6060
+        },
+        {
+          "palabra": "este",
+          "inicioMs": 6060,
+          "finMs": 6260
+        },
+        {
+          "palabra": "astuto",
+          "inicioMs": 6260,
+          "finMs": 6840
+        },
+        {
+          "palabra": "demonio",
+          "inicioMs": 6840,
+          "finMs": 7056
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "texto": "En mil ochocientos sesenta y siete, el físico James Clerk Maxwell imaginó una caja sellada llena de gas, dividida en dos compartimentos y conectada únicamente por una diminuta compuerta sin fricción.",
+      "icono": "Box",
+      "colorIcono": "#38BDF8",
+      "tituloVisual": "LA CAJA DE MAXWELL",
+      "composicionVisual": "plano_general",
+      "escenario": "caja_maxwell_equilibrio_termico",
+      "layout": "narrativo",
+      "transicion": "zoom_in",
+      "efectosCamara": [
+        "drift"
+      ],
+      "sfx": "sfx/sfx_rebotes_particulas_gas_clics.wav",
+      "volumenSfx": 0.22,
+      "palabrasClave": [
+        "Maxwell",
+        "caja",
+        "gas",
+        "compuerta"
+      ],
+      "personajes": [
+        {
+          "id": "demonio_guardian",
+          "nombre": "Demonio Maxwell",
+          "posicion": {
+            "x": 0,
+            "y": -120
+          },
+          "escala": 0.85,
+          "orientacion": "derecha",
+          "props": {
+            "sombrero": "cuernos_demonio_utileria",
+            "derecha": "palanca_compuerta_maxwell"
+          },
+          "acciones": [
+            {
+              "tipo": "personalizada",
+              "pasos": [
+                {
+                  "inicioProgreso": 0,
+                  "finProgreso": 0.5,
+                  "poseId": "standing_confident",
+                  "expresion": "talking_enthusiastic",
+                  "posicion": {
+                    "x": 0,
+                    "y": -120
+                  },
+                  "curva": "suave",
+                  "procedural": "estatico"
+                },
+                {
+                  "inicioProgreso": 0.5,
+                  "finProgreso": 1.0,
+                  "poseId": "leaning_forward",
+                  "expresion": "analytical",
+                  "posicion": {
+                    "x": 0,
+                    "y": -100
+                  },
+                  "curva": "suave",
+                  "procedural": "estatico"
+                }
+              ]
+            }
+          ],
+          "habla": true,
+          "capaZ": 12
+        }
+      ],
+      "objetos": [
+        {
+          "id": "caja_visual",
+          "propId": "caja_gas_maxwell_particulas",
+          "posicion": {
+            "x": 0,
+            "y": 140
+          },
+          "escala": 1.2,
+          "animacion": "pulso"
+        }
+      ],
+      "duracionSegundos": 10.978,
+      "palabras": [
+        {
+          "palabra": "En",
+          "inicioMs": 0,
+          "finMs": 200
+        },
+        {
+          "palabra": "mil",
+          "inicioMs": 200,
+          "finMs": 1540
+        },
+        {
+          "palabra": "ochocientos",
+          "inicioMs": 1680,
+          "finMs": 1740
+        },
+        {
+          "palabra": "sesenta",
+          "inicioMs": 1740,
+          "finMs": 2120
+        },
+        {
+          "palabra": "y",
+          "inicioMs": 2120,
+          "finMs": 2400
+        },
+        {
+          "palabra": "siete",
+          "inicioMs": 2400,
+          "finMs": 2720
+        },
+        {
+          "palabra": "el",
+          "inicioMs": 2720,
+          "finMs": 3240
+        },
+        {
+          "palabra": "físico",
+          "inicioMs": 3240,
+          "finMs": 3860
+        },
+        {
+          "palabra": "James",
+          "inicioMs": 3860,
+          "finMs": 4100
+        },
+        {
+          "palabra": "Clerk",
+          "inicioMs": 4100,
+          "finMs": 4360
+        },
+        {
+          "palabra": "Maxwell",
+          "inicioMs": 4360,
+          "finMs": 4800
+        },
+        {
+          "palabra": "imaginó",
+          "inicioMs": 4800,
+          "finMs": 5100
+        },
+        {
+          "palabra": "una",
+          "inicioMs": 5100,
+          "finMs": 5200
+        },
+        {
+          "palabra": "caja",
+          "inicioMs": 5200,
+          "finMs": 5360
+        },
+        {
+          "palabra": "sellada",
+          "inicioMs": 5500,
+          "finMs": 5940
+        },
+        {
+          "palabra": "llena",
+          "inicioMs": 5940,
+          "finMs": 6160
+        },
+        {
+          "palabra": "de",
+          "inicioMs": 6160,
+          "finMs": 6320
+        },
+        {
+          "palabra": "gas",
+          "inicioMs": 6320,
+          "finMs": 7100
+        },
+        {
+          "palabra": "dividida",
+          "inicioMs": 7100,
+          "finMs": 7380
+        },
+        {
+          "palabra": "en",
+          "inicioMs": 7380,
+          "finMs": 7880
+        },
+        {
+          "palabra": "dos",
+          "inicioMs": 7880,
+          "finMs": 8400
+        },
+        {
+          "palabra": "compartimentos",
+          "inicioMs": 8400,
+          "finMs": 8680
+        },
+        {
+          "palabra": "y",
+          "inicioMs": 8680,
+          "finMs": 8840
+        },
+        {
+          "palabra": "conectada",
+          "inicioMs": 8840,
+          "finMs": 9280
+        },
+        {
+          "palabra": "únicamente",
+          "inicioMs": 9280,
+          "finMs": 9460
+        },
+        {
+          "palabra": "por",
+          "inicioMs": 9460,
+          "finMs": 9740
+        },
+        {
+          "palabra": "una",
+          "inicioMs": 9740,
+          "finMs": 9980
+        },
+        {
+          "palabra": "diminuta",
+          "inicioMs": 9980,
+          "finMs": 10480
+        },
+        {
+          "palabra": "compuerta",
+          "inicioMs": 10480,
+          "finMs": 10563
+        },
+        {
+          "palabra": "sin",
+          "inicioMs": 10480,
+          "finMs": 10563
+        },
+        {
+          "palabra": "fricción",
+          "inicioMs": 10480,
+          "finMs": 10563
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "texto": "El guardián vigila cada molécula. Si ve venir una partícula rápida hacia la izquierda, abre la puerta; si viene una lenta, la deja pasar hacia la derecha con reflejos impecables.",
+      "icono": "Eye",
+      "colorIcono": "#F59E0B",
+      "tituloVisual": "FILTRADO MILIMÉTRICO",
+      "composicionVisual": "primer_plano",
+      "escenario": "macro_compuerta_filtro_maxwell",
+      "layout": "narrativo",
+      "transicion": "zoom_in",
+      "efectosCamara": [
+        "punch"
+      ],
+      "sfx": "sfx/sfx_compuerta_persiana_rapida.wav",
+      "volumenSfx": 0.28,
+      "palabrasClave": [
+        "vigila",
+        "rápida",
+        "abre",
+        "lenta"
+      ],
+      "personajes": [
+        {
+          "id": "demonio_operador",
+          "nombre": "Operador Demonio",
+          "posicion": {
+            "x": -260,
+            "y": 90
+          },
+          "escala": 1.05,
+          "orientacion": "derecha",
+          "props": {
+            "sombrero": "cuernos_demonio_utileria",
+            "derecha": "palanca_compuerta_maxwell"
+          },
+          "acciones": [
+            {
+              "tipo": "personalizada",
+              "pasos": [
+                {
+                  "inicioProgreso": 0,
+                  "finProgreso": 0.45,
+                  "poseId": "pulling",
+                  "expresion": "eureka",
+                  "posicion": {
+                    "x": -260,
+                    "y": 90
+                  },
+                  "curva": "impacto",
+                  "procedural": "estatico"
+                },
+                {
+                  "inicioProgreso": 0.45,
+                  "finProgreso": 1.0,
+                  "poseId": "pushing",
+                  "expresion": "smile_wide",
+                  "posicion": {
+                    "x": -220,
+                    "y": 90
+                  },
+                  "curva": "impacto",
+                  "procedural": "estatico"
+                }
+              ]
+            }
+          ],
+          "habla": true,
+          "capaZ": 15
+        }
+      ],
+      "duracionSegundos": 9.274,
+      "palabras": [
+        {
+          "palabra": "El",
+          "inicioMs": 0,
+          "finMs": 200
+        },
+        {
+          "palabra": "guardián",
+          "inicioMs": 200,
+          "finMs": 560
+        },
+        {
+          "palabra": "vigila",
+          "inicioMs": 560,
+          "finMs": 860
+        },
+        {
+          "palabra": "cada",
+          "inicioMs": 860,
+          "finMs": 1100
+        },
+        {
+          "palabra": "molécula",
+          "inicioMs": 1100,
+          "finMs": 1720
+        },
+        {
+          "palabra": "Si",
+          "inicioMs": 1900,
+          "finMs": 2060
+        },
+        {
+          "palabra": "ve",
+          "inicioMs": 2060,
+          "finMs": 2180
+        },
+        {
+          "palabra": "venir",
+          "inicioMs": 2180,
+          "finMs": 2460
+        },
+        {
+          "palabra": "una",
+          "inicioMs": 2460,
+          "finMs": 2620
+        },
+        {
+          "palabra": "partícula",
+          "inicioMs": 2620,
+          "finMs": 3200
+        },
+        {
+          "palabra": "rápida",
+          "inicioMs": 3200,
+          "finMs": 3580
+        },
+        {
+          "palabra": "hacia",
+          "inicioMs": 3580,
+          "finMs": 3780
+        },
+        {
+          "palabra": "la",
+          "inicioMs": 3780,
+          "finMs": 3900
+        },
+        {
+          "palabra": "izquierda",
+          "inicioMs": 3900,
+          "finMs": 4460
+        },
+        {
+          "palabra": "abre",
+          "inicioMs": 4540,
+          "finMs": 4700
+        },
+        {
+          "palabra": "la",
+          "inicioMs": 4700,
+          "finMs": 4860
+        },
+        {
+          "palabra": "puerta",
+          "inicioMs": 4860,
+          "finMs": 5200
+        },
+        {
+          "palabra": "si",
+          "inicioMs": 5200,
+          "finMs": 5480
+        },
+        {
+          "palabra": "viene",
+          "inicioMs": 5480,
+          "finMs": 5640
+        },
+        {
+          "palabra": "una",
+          "inicioMs": 5640,
+          "finMs": 5880
+        },
+        {
+          "palabra": "lenta",
+          "inicioMs": 5880,
+          "finMs": 6320
+        },
+        {
+          "palabra": "la",
+          "inicioMs": 6440,
+          "finMs": 6500
+        },
+        {
+          "palabra": "deja",
+          "inicioMs": 6500,
+          "finMs": 6700
+        },
+        {
+          "palabra": "pasar",
+          "inicioMs": 6700,
+          "finMs": 7020
+        },
+        {
+          "palabra": "hacia",
+          "inicioMs": 7020,
+          "finMs": 7260
+        },
+        {
+          "palabra": "la",
+          "inicioMs": 7260,
+          "finMs": 7380
+        },
+        {
+          "palabra": "derecha",
+          "inicioMs": 7380,
+          "finMs": 7720
+        },
+        {
+          "palabra": "con",
+          "inicioMs": 7720,
+          "finMs": 7880
+        },
+        {
+          "palabra": "reflejos",
+          "inicioMs": 7880,
+          "finMs": 8240
+        },
+        {
+          "palabra": "impecables",
+          "inicioMs": 8240,
+          "finMs": 8780
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "texto": "Y al cabo de unos minutos ocurre el milagro: ¡un lado está hirviendo y el otro está completamente congelado! Calor y frío separados de la nada sin gastar un solo gramo de combustible.",
+      "icono": "Sparkles",
+      "colorIcono": "#22C55E",
+      "tituloVisual": "¡100 °C VS 0 °C: ENERGÍA GRATIS!",
+      "composicionVisual": "plano_general",
+      "escenario": "caja_maxwell_gradiente_extremo",
+      "layout": "narrativo",
+      "transicion": "whip_right",
+      "efectosCamara": [
+        "drift"
+      ],
+      "sfx": "sfx/sfx_fuego_hielo_fanfarria_triunfal.wav",
+      "volumenSfx": 0.25,
+      "palabrasClave": [
+        "milagro",
+        "hirviendo",
+        "congelado",
+        "combustible"
+      ],
+      "personajes": [
+        {
+          "id": "demonio_triunfal",
+          "nombre": "Demonio Triunfal",
+          "posicion": {
+            "x": 0,
+            "y": -110
+          },
+          "escala": 0.88,
+          "orientacion": "derecha",
+          "props": {
+            "sombrero": "cuernos_demonio_utileria"
+          },
+          "acciones": [
+            {
+              "tipo": "personalizada",
+              "pasos": [
+                {
+                  "inicioProgreso": 0,
+                  "finProgreso": 0.4,
+                  "poseId": "celebrating_arms_up",
+                  "expresion": "laugh",
+                  "posicion": {
+                    "x": 0,
+                    "y": -110
+                  },
+                  "curva": "rebote",
+                  "procedural": "estatico"
+                },
+                {
+                  "inicioProgreso": 0.4,
+                  "finProgreso": 0.75,
+                  "poseId": "jumping_joy",
+                  "expresion": "smile_wide",
+                  "posicion": {
+                    "x": 0,
+                    "y": -130
+                  },
+                  "curva": "rebote",
+                  "procedural": "estatico"
+                },
+                {
+                  "inicioProgreso": 0.75,
+                  "finProgreso": 1.0,
+                  "poseId": "laughing_belly",
+                  "expresion": "talking_enthusiastic",
+                  "posicion": {
+                    "x": 0,
+                    "y": -110
+                  },
+                  "curva": "suave",
+                  "procedural": "estatico"
+                }
+              ]
+            }
+          ],
+          "habla": true,
+          "capaZ": 12
+        }
+      ],
+      "objetos": [
+        {
+          "id": "termometros_display",
+          "propId": "termometros_contraste_maxwell",
+          "posicion": {
+            "x": 0,
+            "y": 380
+          },
+          "escala": 1.1,
+          "animacion": "pulso"
+        }
+      ],
+      "duracionSegundos": 9.49,
+      "palabras": [
+        {
+          "palabra": "Y",
+          "inicioMs": 0,
+          "finMs": 160
+        },
+        {
+          "palabra": "al",
+          "inicioMs": 160,
+          "finMs": 240
+        },
+        {
+          "palabra": "cabo",
+          "inicioMs": 240,
+          "finMs": 400
+        },
+        {
+          "palabra": "de",
+          "inicioMs": 400,
+          "finMs": 500
+        },
+        {
+          "palabra": "unos",
+          "inicioMs": 500,
+          "finMs": 620
+        },
+        {
+          "palabra": "minutos",
+          "inicioMs": 620,
+          "finMs": 900
+        },
+        {
+          "palabra": "ocurre",
+          "inicioMs": 900,
+          "finMs": 1100
+        },
+        {
+          "palabra": "el",
+          "inicioMs": 1100,
+          "finMs": 1280
+        },
+        {
+          "palabra": "milagro",
+          "inicioMs": 1280,
+          "finMs": 1820
+        },
+        {
+          "palabra": "un",
+          "inicioMs": 2040,
+          "finMs": 2160
+        },
+        {
+          "palabra": "lado",
+          "inicioMs": 2160,
+          "finMs": 2320
+        },
+        {
+          "palabra": "está",
+          "inicioMs": 2320,
+          "finMs": 2540
+        },
+        {
+          "palabra": "hirviendo",
+          "inicioMs": 2540,
+          "finMs": 2940
+        },
+        {
+          "palabra": "y",
+          "inicioMs": 2940,
+          "finMs": 3240
+        },
+        {
+          "palabra": "el",
+          "inicioMs": 3240,
+          "finMs": 3320
+        },
+        {
+          "palabra": "otro",
+          "inicioMs": 3320,
+          "finMs": 3480
+        },
+        {
+          "palabra": "está",
+          "inicioMs": 3480,
+          "finMs": 3660
+        },
+        {
+          "palabra": "completamente",
+          "inicioMs": 3660,
+          "finMs": 4240
+        },
+        {
+          "palabra": "congelado",
+          "inicioMs": 4240,
+          "finMs": 4960
+        },
+        {
+          "palabra": "Calor",
+          "inicioMs": 5160,
+          "finMs": 5480
+        },
+        {
+          "palabra": "y",
+          "inicioMs": 5480,
+          "finMs": 5600
+        },
+        {
+          "palabra": "frío",
+          "inicioMs": 5600,
+          "finMs": 5900
+        },
+        {
+          "palabra": "separados",
+          "inicioMs": 5900,
+          "finMs": 6440
+        },
+        {
+          "palabra": "de",
+          "inicioMs": 6440,
+          "finMs": 6580
+        },
+        {
+          "palabra": "la",
+          "inicioMs": 6580,
+          "finMs": 6680
+        },
+        {
+          "palabra": "nada",
+          "inicioMs": 6680,
+          "finMs": 6940
+        },
+        {
+          "palabra": "sin",
+          "inicioMs": 7080,
+          "finMs": 7180
+        },
+        {
+          "palabra": "gastar",
+          "inicioMs": 7180,
+          "finMs": 7520
+        },
+        {
+          "palabra": "un",
+          "inicioMs": 7520,
+          "finMs": 7660
+        },
+        {
+          "palabra": "solo",
+          "inicioMs": 7660,
+          "finMs": 7860
+        },
+        {
+          "palabra": "gramo",
+          "inicioMs": 7860,
+          "finMs": 8220
+        },
+        {
+          "palabra": "de",
+          "inicioMs": 8220,
+          "finMs": 8360
+        },
+        {
+          "palabra": "combustible",
+          "inicioMs": 8360,
+          "finMs": 9020
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "texto": "Durante décadas fue la pesadilla de los mejores físicos: ¿dónde estaba la trampa? La respuesta tardó casi un siglo... y no estaba en la puerta mecánica, sino dentro del cerebro del demonio.",
+      "icono": "Cpu",
+      "colorIcono": "#EF4444",
+      "tituloVisual": "MEMORIA SATURADA: 100%",
+      "composicionVisual": "primer_plano",
+      "escenario": "cerebro_digital_sobrecarga_bits",
+      "layout": "narrativo",
+      "transicion": "zoom_in",
+      "efectosCamara": [
+        "shake"
+      ],
+      "sfx": "sfx/sfx_sobrecarga_alarma_memoria.wav",
+      "volumenSfx": 0.26,
+      "palabrasClave": [
+        "pesadilla",
+        "trampa",
+        "cerebro",
+        "demonio"
+      ],
+      "personajes": [
+        {
+          "id": "demonio_colapso",
+          "nombre": "Demonio Sobrecargado",
+          "posicion": {
+            "x": 0,
+            "y": 80
+          },
+          "escala": 1.0,
+          "orientacion": "derecha",
+          "props": {
+            "sombrero": "cuernos_demonio_utileria"
+          },
+          "acciones": [
+            {
+              "tipo": "personalizada",
+              "pasos": [
+                {
+                  "inicioProgreso": 0,
+                  "finProgreso": 0.4,
+                  "poseId": "scratching_head",
+                  "expresion": "confused",
+                  "posicion": {
+                    "x": 0,
+                    "y": 80
+                  },
+                  "curva": "suave",
+                  "procedural": "estatico"
+                },
+                {
+                  "inicioProgreso": 0.4,
+                  "finProgreso": 0.8,
+                  "poseId": "frustrated_head_grab",
+                  "expresion": "shocked",
+                  "posicion": {
+                    "x": 0,
+                    "y": 80
+                  },
+                  "curva": "impacto",
+                  "procedural": "temblar"
+                },
+                {
+                  "inicioProgreso": 0.8,
+                  "finProgreso": 1.0,
+                  "poseId": "exhausted_slouch",
+                  "expresion": "exhausted",
+                  "posicion": {
+                    "x": 10,
+                    "y": 90
+                  },
+                  "curva": "suave",
+                  "procedural": "estatico"
+                }
+              ]
+            }
+          ],
+          "habla": true,
+          "capaZ": 15
+        }
+      ],
+      "objetos": [
+        {
+          "id": "chip_memoria",
+          "propId": "memoria_saturada_bits_landauer",
+          "posicion": {
+            "x": 0,
+            "y": -280
+          },
+          "escala": 1.15,
+          "animacion": "vibrar"
+        }
+      ],
+      "duracionSegundos": 9.658,
+      "palabras": [
+        {
+          "palabra": "Durante",
+          "inicioMs": 0,
+          "finMs": 380
+        },
+        {
+          "palabra": "décadas",
+          "inicioMs": 380,
+          "finMs": 780
+        },
+        {
+          "palabra": "fue",
+          "inicioMs": 780,
+          "finMs": 920
+        },
+        {
+          "palabra": "la",
+          "inicioMs": 920,
+          "finMs": 1040
+        },
+        {
+          "palabra": "pesadilla",
+          "inicioMs": 1040,
+          "finMs": 1460
+        },
+        {
+          "palabra": "de",
+          "inicioMs": 1460,
+          "finMs": 1580
+        },
+        {
+          "palabra": "los",
+          "inicioMs": 1580,
+          "finMs": 1660
+        },
+        {
+          "palabra": "mejores",
+          "inicioMs": 1660,
+          "finMs": 1860
+        },
+        {
+          "palabra": "físicos",
+          "inicioMs": 1860,
+          "finMs": 2460
+        },
+        {
+          "palabra": "dónde",
+          "inicioMs": 2640,
+          "finMs": 2800
+        },
+        {
+          "palabra": "estaba",
+          "inicioMs": 2800,
+          "finMs": 3040
+        },
+        {
+          "palabra": "la",
+          "inicioMs": 3040,
+          "finMs": 3180
+        },
+        {
+          "palabra": "trampa",
+          "inicioMs": 3180,
+          "finMs": 3500
+        },
+        {
+          "palabra": "La",
+          "inicioMs": 3780,
+          "finMs": 3860
+        },
+        {
+          "palabra": "respuesta",
+          "inicioMs": 3860,
+          "finMs": 4200
+        },
+        {
+          "palabra": "tardó",
+          "inicioMs": 4200,
+          "finMs": 4720
+        },
+        {
+          "palabra": "casi",
+          "inicioMs": 4720,
+          "finMs": 4940
+        },
+        {
+          "palabra": "un",
+          "inicioMs": 4940,
+          "finMs": 5120
+        },
+        {
+          "palabra": "siglo",
+          "inicioMs": 5120,
+          "finMs": 5440
+        },
+        {
+          "palabra": "y",
+          "inicioMs": 5680,
+          "finMs": 5760
+        },
+        {
+          "palabra": "no",
+          "inicioMs": 5760,
+          "finMs": 5880
+        },
+        {
+          "palabra": "estaba",
+          "inicioMs": 5880,
+          "finMs": 6160
+        },
+        {
+          "palabra": "en",
+          "inicioMs": 6160,
+          "finMs": 6300
+        },
+        {
+          "palabra": "la",
+          "inicioMs": 6300,
+          "finMs": 6360
+        },
+        {
+          "palabra": "puerta",
+          "inicioMs": 6360,
+          "finMs": 6600
+        },
+        {
+          "palabra": "mecánica",
+          "inicioMs": 6600,
+          "finMs": 7280
+        },
+        {
+          "palabra": "sino",
+          "inicioMs": 7360,
+          "finMs": 7520
+        },
+        {
+          "palabra": "dentro",
+          "inicioMs": 7520,
+          "finMs": 7900
+        },
+        {
+          "palabra": "del",
+          "inicioMs": 7900,
+          "finMs": 8140
+        },
+        {
+          "palabra": "cerebro",
+          "inicioMs": 8140,
+          "finMs": 8500
+        },
+        {
+          "palabra": "del",
+          "inicioMs": 8500,
+          "finMs": 8700
+        },
+        {
+          "palabra": "demonio",
+          "inicioMs": 8700,
+          "finMs": 9180
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "texto": "Para decidir qué partícula dejar pasar, el ser debe medir su velocidad y memorizarla. Pero como su memoria es finita, tarde o temprano su mente se satura y está obligado a borrar datos.",
+      "icono": "Database",
+      "colorIcono": "#F59E0B",
+      "tituloVisual": "PRINCIPIO DE LANDAUER",
+      "composicionVisual": "plano_medio",
+      "escenario": "borrado_bits_principio_landauer",
+      "layout": "narrativo",
+      "transicion": "whip_left",
+      "efectosCamara": [
+        "punch"
+      ],
+      "sfx": "sfx/sfx_friccion_goma_chispas_termicas.wav",
+      "volumenSfx": 0.28,
+      "palabrasClave": [
+        "memorizarla",
+        "finita",
+        "satura",
+        "borrar"
+      ],
+      "personajes": [
+        {
+          "id": "demonio_borrador",
+          "nombre": "Demonio Borrando Datos",
+          "posicion": {
+            "x": -180,
+            "y": 90
+          },
+          "escala": 0.95,
+          "orientacion": "derecha",
+          "props": {
+            "sombrero": "cuernos_demonio_utileria",
+            "derecha": "goma_borrar_landauer_chispas"
+          },
+          "acciones": [
+            {
+              "tipo": "personalizada",
+              "pasos": [
+                {
+                  "inicioProgreso": 0,
+                  "finProgreso": 0.5,
+                  "poseId": "taking_notes",
+                  "expresion": "worried",
+                  "posicion": {
+                    "x": -180,
+                    "y": 90
+                  },
+                  "curva": "suave",
+                  "procedural": "estatico"
+                },
+                {
+                  "inicioProgreso": 0.5,
+                  "finProgreso": 1.0,
+                  "poseId": "protecting_shielding",
+                  "expresion": "scared",
+                  "posicion": {
+                    "x": -140,
+                    "y": 90
+                  },
+                  "curva": "impacto",
+                  "procedural": "estatico"
+                }
+              ]
+            }
+          ],
+          "habla": true,
+          "capaZ": 12
+        }
+      ],
+      "duracionSegundos": 9.946,
+      "palabras": [
+        {
+          "palabra": "Para",
+          "inicioMs": 0,
+          "finMs": 240
+        },
+        {
+          "palabra": "decidir",
+          "inicioMs": 240,
+          "finMs": 680
+        },
+        {
+          "palabra": "qué",
+          "inicioMs": 680,
+          "finMs": 860
+        },
+        {
+          "palabra": "partícula",
+          "inicioMs": 860,
+          "finMs": 1400
+        },
+        {
+          "palabra": "dejar",
+          "inicioMs": 1400,
+          "finMs": 1640
+        },
+        {
+          "palabra": "pasar",
+          "inicioMs": 1640,
+          "finMs": 2020
+        },
+        {
+          "palabra": "el",
+          "inicioMs": 2160,
+          "finMs": 2280
+        },
+        {
+          "palabra": "ser",
+          "inicioMs": 2280,
+          "finMs": 2480
+        },
+        {
+          "palabra": "debe",
+          "inicioMs": 2480,
+          "finMs": 2760
+        },
+        {
+          "palabra": "medir",
+          "inicioMs": 2760,
+          "finMs": 3040
+        },
+        {
+          "palabra": "su",
+          "inicioMs": 3040,
+          "finMs": 3220
+        },
+        {
+          "palabra": "velocidad",
+          "inicioMs": 3220,
+          "finMs": 3560
+        },
+        {
+          "palabra": "y",
+          "inicioMs": 3560,
+          "finMs": 3880
+        },
+        {
+          "palabra": "memorizarla",
+          "inicioMs": 3880,
+          "finMs": 4620
+        },
+        {
+          "palabra": "Pero",
+          "inicioMs": 4840,
+          "finMs": 5040
+        },
+        {
+          "palabra": "como",
+          "inicioMs": 5040,
+          "finMs": 5220
+        },
+        {
+          "palabra": "su",
+          "inicioMs": 5220,
+          "finMs": 5380
+        },
+        {
+          "palabra": "memoria",
+          "inicioMs": 5380,
+          "finMs": 5720
+        },
+        {
+          "palabra": "es",
+          "inicioMs": 5720,
+          "finMs": 5860
+        },
+        {
+          "palabra": "finita",
+          "inicioMs": 5860,
+          "finMs": 6220
+        },
+        {
+          "palabra": "tarde",
+          "inicioMs": 6440,
+          "finMs": 6620
+        },
+        {
+          "palabra": "o",
+          "inicioMs": 6620,
+          "finMs": 6820
+        },
+        {
+          "palabra": "temprano",
+          "inicioMs": 6820,
+          "finMs": 7180
+        },
+        {
+          "palabra": "su",
+          "inicioMs": 7180,
+          "finMs": 7340
+        },
+        {
+          "palabra": "mente",
+          "inicioMs": 7340,
+          "finMs": 7540
+        },
+        {
+          "palabra": "se",
+          "inicioMs": 7540,
+          "finMs": 7720
+        },
+        {
+          "palabra": "satura",
+          "inicioMs": 7720,
+          "finMs": 8160
+        },
+        {
+          "palabra": "y",
+          "inicioMs": 8160,
+          "finMs": 8340
+        },
+        {
+          "palabra": "está",
+          "inicioMs": 8340,
+          "finMs": 8520
+        },
+        {
+          "palabra": "obligado",
+          "inicioMs": 8520,
+          "finMs": 8860
+        },
+        {
+          "palabra": "a",
+          "inicioMs": 8860,
+          "finMs": 8960
+        },
+        {
+          "palabra": "borrar",
+          "inicioMs": 8960,
+          "finMs": 9180
+        },
+        {
+          "palabra": "datos",
+          "inicioMs": 9180,
+          "finMs": 9460
+        }
+      ]
+    },
+    {
+      "id": 7,
+      "texto": "Y según el Principio de Landauer, borrar información disipa calor físico obligatorio al ambiente. Toda la energía que el demonio ahorró en la caja... la pagó sudando en su propia cabeza. ¡El conocimiento pesa y cuesta energía!",
+      "icono": "Flame",
+      "colorIcono": "#22C55E",
+      "tituloVisual": "LA INFORMACIÓN CUESTA CALOR",
+      "composicionVisual": "plano_medio",
+      "escenario": "mesa_remate_tecla_delete_cafe",
+      "layout": "narrativo",
+      "transicion": "zoom_in",
+      "efectosCamara": [
+        "drift"
+      ],
+      "sfx": "sfx/sfx_teclado_delete_fwoosh_ironico.wav",
+      "volumenSfx": 0.28,
+      "palabrasClave": [
+        "Landauer",
+        "disipa",
+        "calor",
+        "energía"
+      ],
+      "personajes": [
+        {
+          "id": "stickman_final",
+          "nombre": "Científico Chamuscado",
+          "posicion": {
+            "x": -140,
+            "y": 80
+          },
+          "escala": 1.0,
+          "orientacion": "derecha",
+          "props": {
+            "izquierda": "taza_cafe_vapor_termodinamico",
+            "derecha": "teclado_tecla_delete_fuego"
+          },
+          "acciones": [
+            {
+              "tipo": "personalizada",
+              "pasos": [
+                {
+                  "inicioProgreso": 0,
+                  "finProgreso": 0.45,
+                  "poseId": "shrugging",
+                  "expresion": "skeptical",
+                  "posicion": {
+                    "x": -140,
+                    "y": 80
+                  },
+                  "curva": "suave",
+                  "procedural": "estatico"
+                },
+                {
+                  "inicioProgreso": 0.45,
+                  "finProgreso": 0.8,
+                  "poseId": "pointing_down",
+                  "expresion": "surprised",
+                  "posicion": {
+                    "x": -140,
+                    "y": 80
+                  },
+                  "curva": "impacto",
+                  "procedural": "estatico"
+                },
+                {
+                  "inicioProgreso": 0.8,
+                  "finProgreso": 1.0,
+                  "poseId": "thumbs_up_approval",
+                  "expresion": "smile_soft",
+                  "posicion": {
+                    "x": -120,
+                    "y": 80
+                  },
+                  "curva": "suave",
+                  "procedural": "estatico"
+                }
+              ]
+            }
+          ],
+          "habla": true,
+          "capaZ": 12
+        }
+      ],
+      "duracionSegundos": 11.962,
+      "palabras": [
+        {
+          "palabra": "Y",
+          "inicioMs": 0,
+          "finMs": 160
+        },
+        {
+          "palabra": "según",
+          "inicioMs": 160,
+          "finMs": 400
+        },
+        {
+          "palabra": "el",
+          "inicioMs": 400,
+          "finMs": 560
+        },
+        {
+          "palabra": "Principio",
+          "inicioMs": 560,
+          "finMs": 880
+        },
+        {
+          "palabra": "de",
+          "inicioMs": 880,
+          "finMs": 1100
+        },
+        {
+          "palabra": "Landauer",
+          "inicioMs": 1100,
+          "finMs": 1620
+        },
+        {
+          "palabra": "borrar",
+          "inicioMs": 1720,
+          "finMs": 1780
+        },
+        {
+          "palabra": "información",
+          "inicioMs": 1780,
+          "finMs": 2360
+        },
+        {
+          "palabra": "disipa",
+          "inicioMs": 2680,
+          "finMs": 3060
+        },
+        {
+          "palabra": "calor",
+          "inicioMs": 3060,
+          "finMs": 3300
+        },
+        {
+          "palabra": "físico",
+          "inicioMs": 3300,
+          "finMs": 3840
+        },
+        {
+          "palabra": "obligatorio",
+          "inicioMs": 3840,
+          "finMs": 4320
+        },
+        {
+          "palabra": "al",
+          "inicioMs": 4320,
+          "finMs": 4480
+        },
+        {
+          "palabra": "ambiente",
+          "inicioMs": 4480,
+          "finMs": 4900
+        },
+        {
+          "palabra": "Toda",
+          "inicioMs": 5280,
+          "finMs": 5480
+        },
+        {
+          "palabra": "la",
+          "inicioMs": 5480,
+          "finMs": 5660
+        },
+        {
+          "palabra": "energía",
+          "inicioMs": 5660,
+          "finMs": 5960
+        },
+        {
+          "palabra": "que",
+          "inicioMs": 5960,
+          "finMs": 6180
+        },
+        {
+          "palabra": "el",
+          "inicioMs": 6180,
+          "finMs": 6260
+        },
+        {
+          "palabra": "demonio",
+          "inicioMs": 6260,
+          "finMs": 6560
+        },
+        {
+          "palabra": "ahorró",
+          "inicioMs": 6560,
+          "finMs": 6780
+        },
+        {
+          "palabra": "en",
+          "inicioMs": 6780,
+          "finMs": 6880
+        },
+        {
+          "palabra": "la",
+          "inicioMs": 6880,
+          "finMs": 6940
+        },
+        {
+          "palabra": "caja",
+          "inicioMs": 6940,
+          "finMs": 7260
+        },
+        {
+          "palabra": "la",
+          "inicioMs": 7560,
+          "finMs": 7620
+        },
+        {
+          "palabra": "pagó",
+          "inicioMs": 7620,
+          "finMs": 7920
+        },
+        {
+          "palabra": "sudando",
+          "inicioMs": 7920,
+          "finMs": 8340
+        },
+        {
+          "palabra": "en",
+          "inicioMs": 8340,
+          "finMs": 8460
+        },
+        {
+          "palabra": "su",
+          "inicioMs": 8460,
+          "finMs": 8580
+        },
+        {
+          "palabra": "propia",
+          "inicioMs": 8580,
+          "finMs": 8840
+        },
+        {
+          "palabra": "cabeza",
+          "inicioMs": 8840,
+          "finMs": 9260
+        },
+        {
+          "palabra": "El",
+          "inicioMs": 9540,
+          "finMs": 9640
+        },
+        {
+          "palabra": "conocimiento",
+          "inicioMs": 9640,
+          "finMs": 10180
+        },
+        {
+          "palabra": "pesa",
+          "inicioMs": 10180,
+          "finMs": 10740
+        },
+        {
+          "palabra": "y",
+          "inicioMs": 10740,
+          "finMs": 10900
+        },
+        {
+          "palabra": "cuesta",
+          "inicioMs": 10900,
+          "finMs": 11180
+        },
+        {
+          "palabra": "energía",
+          "inicioMs": 11180,
+          "finMs": 11440
+        }
+      ]
+    }
+  ]
+}

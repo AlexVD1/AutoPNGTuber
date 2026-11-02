@@ -1,0 +1,1495 @@
+{
+  "meta": {
+    "id": "penitentes_nieve_sublimacion_andes",
+    "slug": "penitentes_nieve_sublimacion_andes",
+    "temaResumen": "La nieve que nunca se derrite (El misterio de los Penitentes)",
+    "duracionObjetivo": [
+      62,
+      78
+    ],
+    "titulo": "La nieve que nunca se derrite: El misterio de los Penitentes",
+    "titulo_corto": "El enigma de los Penitentes",
+    "gancho": "En las cumbres más altas del planeta existe una nieve en forma de cuchillas gigantes... que jamás se convierte en agua.",
+    "fuentes": [
+      "Glaciological Research in the Dry Andes: Sublimation and Penitente Formation",
+      "Nature Geoscience: Differential Sublimation of High-Altitude Snowpacks",
+      "European Geosciences Union: Penitentes in Atacama"
+    ],
+    "genero": "Ciencia y Naturaleza",
+    "playlist": "Fenómenos Geológicos y Extremos"
+  },
+  "escenas": [
+    {
+      "id": 1,
+      "texto": "En las cumbres más altas del planeta existe una nieve en forma de cuchillas gigantes... que jamás se convierte en agua. A más de cuatro mil metros, estas afiladas agujas parecen un laberinto alienígena.",
+      "icono": "Mountain",
+      "colorIcono": "#38BDF8",
+      "tituloVisual": "NIEVE DE CUCHILLAS",
+      "composicionVisual": "plano_general",
+      "escenario": "cordillera_penitentes_panoramica",
+      "layout": "narrativo",
+      "transicion": "zoom_in",
+      "efectosCamara": [
+        "punch",
+        "drift"
+      ],
+      "sfx": "sfx/sfx_viento_misterio_penitentes.wav",
+      "volumenSfx": 0.25,
+      "palabrasClave": [
+        "CUMBRES MÁS ALTAS",
+        "CUCHILLAS GIGANTES",
+        "JAMÁS SE CONVIERTE EN AGUA",
+        "LABERINTO ALIENÍGENA"
+      ],
+      "personajes": [
+        {
+          "id": "montanista",
+          "nombre": "Montañista",
+          "posicion": {
+            "x": -220,
+            "y": 70
+          },
+          "escala": 1.0,
+          "orientacion": "derecha",
+          "poseId": "looking_up_pose",
+          "expresion": "shocked",
+          "props": {
+            "derecha": "baston_trekking_montana",
+            "cara": "gafas_ventisca_oscuras",
+            "izquierda": "mochila_expedicion_montana"
+          },
+          "capaZ": 10
+        }
+      ],
+      "objetos": [
+        {
+          "id": "penitente_colosal",
+          "propId": "estaca_penitente_hielo",
+          "posicion": {
+            "x": 160,
+            "y": 30
+          },
+          "escala": 1.3,
+          "animacion": {
+            "tipo": "fijo"
+          }
+        }
+      ],
+      "duracionSegundos": 10.402,
+      "palabras": [
+        {
+          "palabra": "En",
+          "inicioMs": 0,
+          "finMs": 200
+        },
+        {
+          "palabra": "las",
+          "inicioMs": 200,
+          "finMs": 280
+        },
+        {
+          "palabra": "cumbres",
+          "inicioMs": 280,
+          "finMs": 620
+        },
+        {
+          "palabra": "más",
+          "inicioMs": 620,
+          "finMs": 800
+        },
+        {
+          "palabra": "altas",
+          "inicioMs": 800,
+          "finMs": 1180
+        },
+        {
+          "palabra": "del",
+          "inicioMs": 1180,
+          "finMs": 1280
+        },
+        {
+          "palabra": "planeta",
+          "inicioMs": 1280,
+          "finMs": 1560
+        },
+        {
+          "palabra": "existe",
+          "inicioMs": 1560,
+          "finMs": 1900
+        },
+        {
+          "palabra": "una",
+          "inicioMs": 1900,
+          "finMs": 2160
+        },
+        {
+          "palabra": "nieve",
+          "inicioMs": 2160,
+          "finMs": 2500
+        },
+        {
+          "palabra": "en",
+          "inicioMs": 2500,
+          "finMs": 2620
+        },
+        {
+          "palabra": "forma",
+          "inicioMs": 2620,
+          "finMs": 2760
+        },
+        {
+          "palabra": "de",
+          "inicioMs": 2760,
+          "finMs": 2980
+        },
+        {
+          "palabra": "cuchillas",
+          "inicioMs": 2980,
+          "finMs": 3380
+        },
+        {
+          "palabra": "gigantes",
+          "inicioMs": 3380,
+          "finMs": 3960
+        },
+        {
+          "palabra": "que",
+          "inicioMs": 3960,
+          "finMs": 4260
+        },
+        {
+          "palabra": "jamás",
+          "inicioMs": 4260,
+          "finMs": 4660
+        },
+        {
+          "palabra": "se",
+          "inicioMs": 4660,
+          "finMs": 4760
+        },
+        {
+          "palabra": "convierte",
+          "inicioMs": 4760,
+          "finMs": 5280
+        },
+        {
+          "palabra": "en",
+          "inicioMs": 5280,
+          "finMs": 5540
+        },
+        {
+          "palabra": "agua",
+          "inicioMs": 5540,
+          "finMs": 5840
+        },
+        {
+          "palabra": "A",
+          "inicioMs": 6000,
+          "finMs": 6080
+        },
+        {
+          "palabra": "más",
+          "inicioMs": 6080,
+          "finMs": 6180
+        },
+        {
+          "palabra": "de",
+          "inicioMs": 6180,
+          "finMs": 6300
+        },
+        {
+          "palabra": "cuatro",
+          "inicioMs": 6300,
+          "finMs": 6540
+        },
+        {
+          "palabra": "mil",
+          "inicioMs": 6540,
+          "finMs": 6740
+        },
+        {
+          "palabra": "metros",
+          "inicioMs": 6740,
+          "finMs": 7060
+        },
+        {
+          "palabra": "estas",
+          "inicioMs": 7060,
+          "finMs": 7500
+        },
+        {
+          "palabra": "afiladas",
+          "inicioMs": 7500,
+          "finMs": 7980
+        },
+        {
+          "palabra": "agujas",
+          "inicioMs": 7980,
+          "finMs": 8440
+        },
+        {
+          "palabra": "parecen",
+          "inicioMs": 8440,
+          "finMs": 8780
+        },
+        {
+          "palabra": "un",
+          "inicioMs": 8780,
+          "finMs": 8900
+        },
+        {
+          "palabra": "laberinto",
+          "inicioMs": 8900,
+          "finMs": 9340
+        },
+        {
+          "palabra": "alienígena",
+          "inicioMs": 9340,
+          "finMs": 9940
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "texto": "Se les conoce como «penitentes» y se encuentran en los Andes, formando laberintos de estacas tan duros y filosos que pueden destrozar tus botas al resbalar entre sus paredes de roca de cristal.",
+      "icono": "AlertTriangle",
+      "colorIcono": "#EF4444",
+      "tituloVisual": "LABERINTO HOSTIL",
+      "composicionVisual": "primer_plano",
+      "escenario": "laberinto_penitentes_cerrado",
+      "layout": "narrativo",
+      "transicion": "whip_right",
+      "efectosCamara": [
+        "shake",
+        "punch"
+      ],
+      "sfx": "sfx/sfx_resbalon_hielo_crack.wav",
+      "volumenSfx": 0.28,
+      "palabrasClave": [
+        "PENITENTES",
+        "LOS ANDES",
+        "ESTACAS TAN DURAS",
+        "DESTROZAR TUS BOTAS",
+        "CRISTAL"
+      ],
+      "personajes": [
+        {
+          "id": "montanista",
+          "nombre": "Montañista",
+          "posicion": {
+            "x": 0,
+            "y": 70
+          },
+          "escala": 1.15,
+          "orientacion": "derecha",
+          "poseId": "tripping_falling",
+          "expresion": "frustrated",
+          "props": {
+            "derecha": "baston_trekking_montana",
+            "cara": "gafas_ventisca_oscuras"
+          },
+          "capaZ": 12
+        }
+      ],
+      "duracionSegundos": 10.09,
+      "palabras": [
+        {
+          "palabra": "Se",
+          "inicioMs": 0,
+          "finMs": 180
+        },
+        {
+          "palabra": "les",
+          "inicioMs": 180,
+          "finMs": 280
+        },
+        {
+          "palabra": "conoce",
+          "inicioMs": 280,
+          "finMs": 800
+        },
+        {
+          "palabra": "como",
+          "inicioMs": 800,
+          "finMs": 1020
+        },
+        {
+          "palabra": "penitentes",
+          "inicioMs": 1020,
+          "finMs": 1740
+        },
+        {
+          "palabra": "y",
+          "inicioMs": 1740,
+          "finMs": 1980
+        },
+        {
+          "palabra": "se",
+          "inicioMs": 1980,
+          "finMs": 2100
+        },
+        {
+          "palabra": "encuentran",
+          "inicioMs": 2100,
+          "finMs": 2600
+        },
+        {
+          "palabra": "en",
+          "inicioMs": 2600,
+          "finMs": 2680
+        },
+        {
+          "palabra": "los",
+          "inicioMs": 2680,
+          "finMs": 2820
+        },
+        {
+          "palabra": "Andes",
+          "inicioMs": 2820,
+          "finMs": 3300
+        },
+        {
+          "palabra": "formando",
+          "inicioMs": 3400,
+          "finMs": 3800
+        },
+        {
+          "palabra": "laberintos",
+          "inicioMs": 3800,
+          "finMs": 4280
+        },
+        {
+          "palabra": "de",
+          "inicioMs": 4280,
+          "finMs": 4460
+        },
+        {
+          "palabra": "estacas",
+          "inicioMs": 4460,
+          "finMs": 4780
+        },
+        {
+          "palabra": "tan",
+          "inicioMs": 4780,
+          "finMs": 5320
+        },
+        {
+          "palabra": "duros",
+          "inicioMs": 5320,
+          "finMs": 5480
+        },
+        {
+          "palabra": "y",
+          "inicioMs": 5480,
+          "finMs": 5880
+        },
+        {
+          "palabra": "filosos",
+          "inicioMs": 5880,
+          "finMs": 6060
+        },
+        {
+          "palabra": "que",
+          "inicioMs": 6060,
+          "finMs": 6320
+        },
+        {
+          "palabra": "pueden",
+          "inicioMs": 6320,
+          "finMs": 6740
+        },
+        {
+          "palabra": "destrozar",
+          "inicioMs": 6740,
+          "finMs": 6920
+        },
+        {
+          "palabra": "tus",
+          "inicioMs": 6920,
+          "finMs": 7260
+        },
+        {
+          "palabra": "botas",
+          "inicioMs": 7260,
+          "finMs": 7400
+        },
+        {
+          "palabra": "al",
+          "inicioMs": 7400,
+          "finMs": 7920
+        },
+        {
+          "palabra": "resbalar",
+          "inicioMs": 7920,
+          "finMs": 8160
+        },
+        {
+          "palabra": "entre",
+          "inicioMs": 8160,
+          "finMs": 8360
+        },
+        {
+          "palabra": "sus",
+          "inicioMs": 8360,
+          "finMs": 8720
+        },
+        {
+          "palabra": "paredes",
+          "inicioMs": 8720,
+          "finMs": 8820
+        },
+        {
+          "palabra": "de",
+          "inicioMs": 8820,
+          "finMs": 9080
+        },
+        {
+          "palabra": "roca",
+          "inicioMs": 9080,
+          "finMs": 9180
+        },
+        {
+          "palabra": "de",
+          "inicioMs": 9180,
+          "finMs": 9620
+        },
+        {
+          "palabra": "cristal",
+          "inicioMs": 9620,
+          "finMs": 9840
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "texto": "Pero lo más insólito es lo que pasa cuando sale el sol: en lugar de derretirse y formar charcos de lodo, este hielo simplemente se esfuma en el aire sin soltar una sola gota sobre el suelo.",
+      "icono": "Flame",
+      "colorIcono": "#F59E0B",
+      "tituloVisual": "SIN UNA SOLA GOTA",
+      "composicionVisual": "escenario_ilustrado",
+      "escenario": "macro_sublimacion_fosforo",
+      "layout": "narrativo",
+      "transicion": "zoom_in",
+      "efectosCamara": [
+        "punch",
+        "drift"
+      ],
+      "sfx": "sfx/sfx_fosforo_sublimacion_tsss.wav",
+      "volumenSfx": 0.26,
+      "palabrasClave": [
+        "CUANDO SALE EL SOL",
+        "EN LUGAR DE DERRETIRSE",
+        "SE ESFUMA EN EL AIRE",
+        "SIN SOLTAR UNA SOLA GOTA"
+      ],
+      "personajes": [
+        {
+          "id": "montanista",
+          "nombre": "Montañista",
+          "posicion": {
+            "x": -220,
+            "y": 80
+          },
+          "escala": 1.0,
+          "orientacion": "derecha",
+          "poseId": "kneeling",
+          "expresion": "confused",
+          "prop": "fosforo_encendido_sublimacion",
+          "capaZ": 10
+        }
+      ],
+      "duracionSegundos": 9.658,
+      "palabras": [
+        {
+          "palabra": "Pero",
+          "inicioMs": 0,
+          "finMs": 220
+        },
+        {
+          "palabra": "lo",
+          "inicioMs": 220,
+          "finMs": 360
+        },
+        {
+          "palabra": "más",
+          "inicioMs": 360,
+          "finMs": 540
+        },
+        {
+          "palabra": "insólito",
+          "inicioMs": 540,
+          "finMs": 1120
+        },
+        {
+          "palabra": "es",
+          "inicioMs": 1120,
+          "finMs": 1280
+        },
+        {
+          "palabra": "lo",
+          "inicioMs": 1280,
+          "finMs": 1380
+        },
+        {
+          "palabra": "que",
+          "inicioMs": 1380,
+          "finMs": 1500
+        },
+        {
+          "palabra": "pasa",
+          "inicioMs": 1500,
+          "finMs": 1760
+        },
+        {
+          "palabra": "cuando",
+          "inicioMs": 1760,
+          "finMs": 2040
+        },
+        {
+          "palabra": "sale",
+          "inicioMs": 2040,
+          "finMs": 2320
+        },
+        {
+          "palabra": "el",
+          "inicioMs": 2320,
+          "finMs": 2460
+        },
+        {
+          "palabra": "sol",
+          "inicioMs": 2460,
+          "finMs": 2700
+        },
+        {
+          "palabra": "en",
+          "inicioMs": 2780,
+          "finMs": 2860
+        },
+        {
+          "palabra": "lugar",
+          "inicioMs": 2860,
+          "finMs": 3060
+        },
+        {
+          "palabra": "de",
+          "inicioMs": 3060,
+          "finMs": 3260
+        },
+        {
+          "palabra": "derretirse",
+          "inicioMs": 3260,
+          "finMs": 3860
+        },
+        {
+          "palabra": "y",
+          "inicioMs": 3860,
+          "finMs": 4060
+        },
+        {
+          "palabra": "formar",
+          "inicioMs": 4060,
+          "finMs": 4420
+        },
+        {
+          "palabra": "charcos",
+          "inicioMs": 4420,
+          "finMs": 4820
+        },
+        {
+          "palabra": "de",
+          "inicioMs": 4820,
+          "finMs": 4980
+        },
+        {
+          "palabra": "lodo",
+          "inicioMs": 4980,
+          "finMs": 5260
+        },
+        {
+          "palabra": "este",
+          "inicioMs": 5500,
+          "finMs": 5680
+        },
+        {
+          "palabra": "hielo",
+          "inicioMs": 5680,
+          "finMs": 6000
+        },
+        {
+          "palabra": "simplemente",
+          "inicioMs": 6000,
+          "finMs": 6420
+        },
+        {
+          "palabra": "se",
+          "inicioMs": 6420,
+          "finMs": 6720
+        },
+        {
+          "palabra": "esfuma",
+          "inicioMs": 6720,
+          "finMs": 7040
+        },
+        {
+          "palabra": "en",
+          "inicioMs": 7040,
+          "finMs": 7140
+        },
+        {
+          "palabra": "el",
+          "inicioMs": 7140,
+          "finMs": 7340
+        },
+        {
+          "palabra": "aire",
+          "inicioMs": 7340,
+          "finMs": 7520
+        },
+        {
+          "palabra": "sin",
+          "inicioMs": 7520,
+          "finMs": 7840
+        },
+        {
+          "palabra": "soltar",
+          "inicioMs": 7840,
+          "finMs": 8040
+        },
+        {
+          "palabra": "una",
+          "inicioMs": 8040,
+          "finMs": 8240
+        },
+        {
+          "palabra": "sola",
+          "inicioMs": 8240,
+          "finMs": 8580
+        },
+        {
+          "palabra": "gota",
+          "inicioMs": 8580,
+          "finMs": 8780
+        },
+        {
+          "palabra": "sobre",
+          "inicioMs": 8780,
+          "finMs": 8900
+        },
+        {
+          "palabra": "el",
+          "inicioMs": 8900,
+          "finMs": 9160
+        },
+        {
+          "palabra": "suelo",
+          "inicioMs": 9160,
+          "finMs": 9408
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "texto": "A más de cuatro mil metros de altura, la presión es tan baja y el aire es tan seco que el agua líquida no puede existir: ocurre la sublimación, donde el hielo salta directo a gas.",
+      "icono": "Compass",
+      "colorIcono": "#60A5FA",
+      "tituloVisual": "SUBLIMACIÓN DIRECTA",
+      "composicionVisual": "cifras_concepto",
+      "escenario": "diagrama_sublimacion_fases",
+      "layout": "narrativo",
+      "transicion": "flash",
+      "efectosCamara": [
+        "punch",
+        "drift"
+      ],
+      "sfx": "sfx/sfx_diagrama_sublimacion_campana.wav",
+      "volumenSfx": 0.25,
+      "palabrasClave": [
+        "4,000 METROS",
+        "PRESIÓN TAN BAJA",
+        "NO PUEDE EXISTIR",
+        "SUBLIMACIÓN",
+        "SALTA DIRECTO A GAS"
+      ],
+      "personajes": [
+        {
+          "id": "divulgador",
+          "nombre": "Divulgador",
+          "posicion": {
+            "x": -240,
+            "y": 70
+          },
+          "escala": 1.05,
+          "orientacion": "derecha",
+          "poseId": "explaining_pointing_up",
+          "expresion": "analytical",
+          "prop": "puntero_divulgador",
+          "capaZ": 10
+        }
+      ],
+      "duracionSegundos": 9.298,
+      "palabras": [
+        {
+          "palabra": "A",
+          "inicioMs": 0,
+          "finMs": 200
+        },
+        {
+          "palabra": "más",
+          "inicioMs": 200,
+          "finMs": 320
+        },
+        {
+          "palabra": "de",
+          "inicioMs": 320,
+          "finMs": 440
+        },
+        {
+          "palabra": "cuatro",
+          "inicioMs": 440,
+          "finMs": 700
+        },
+        {
+          "palabra": "mil",
+          "inicioMs": 700,
+          "finMs": 840
+        },
+        {
+          "palabra": "metros",
+          "inicioMs": 840,
+          "finMs": 1100
+        },
+        {
+          "palabra": "de",
+          "inicioMs": 1100,
+          "finMs": 1280
+        },
+        {
+          "palabra": "altura",
+          "inicioMs": 1280,
+          "finMs": 1600
+        },
+        {
+          "palabra": "la",
+          "inicioMs": 1840,
+          "finMs": 1920
+        },
+        {
+          "palabra": "presión",
+          "inicioMs": 1920,
+          "finMs": 2220
+        },
+        {
+          "palabra": "es",
+          "inicioMs": 2220,
+          "finMs": 2500
+        },
+        {
+          "palabra": "tan",
+          "inicioMs": 2500,
+          "finMs": 2720
+        },
+        {
+          "palabra": "baja",
+          "inicioMs": 2720,
+          "finMs": 2880
+        },
+        {
+          "palabra": "y",
+          "inicioMs": 2880,
+          "finMs": 3080
+        },
+        {
+          "palabra": "el",
+          "inicioMs": 3080,
+          "finMs": 3200
+        },
+        {
+          "palabra": "aire",
+          "inicioMs": 3200,
+          "finMs": 3320
+        },
+        {
+          "palabra": "es",
+          "inicioMs": 3320,
+          "finMs": 3640
+        },
+        {
+          "palabra": "tan",
+          "inicioMs": 3640,
+          "finMs": 3840
+        },
+        {
+          "palabra": "seco",
+          "inicioMs": 3840,
+          "finMs": 4040
+        },
+        {
+          "palabra": "que",
+          "inicioMs": 4040,
+          "finMs": 4180
+        },
+        {
+          "palabra": "el",
+          "inicioMs": 4180,
+          "finMs": 4260
+        },
+        {
+          "palabra": "agua",
+          "inicioMs": 4260,
+          "finMs": 4420
+        },
+        {
+          "palabra": "líquida",
+          "inicioMs": 4420,
+          "finMs": 4800
+        },
+        {
+          "palabra": "no",
+          "inicioMs": 4800,
+          "finMs": 4960
+        },
+        {
+          "palabra": "puede",
+          "inicioMs": 4960,
+          "finMs": 5180
+        },
+        {
+          "palabra": "existir",
+          "inicioMs": 5180,
+          "finMs": 5720
+        },
+        {
+          "palabra": "ocurre",
+          "inicioMs": 6100,
+          "finMs": 6500
+        },
+        {
+          "palabra": "la",
+          "inicioMs": 6500,
+          "finMs": 6620
+        },
+        {
+          "palabra": "sublimación",
+          "inicioMs": 6620,
+          "finMs": 7180
+        },
+        {
+          "palabra": "donde",
+          "inicioMs": 7180,
+          "finMs": 7560
+        },
+        {
+          "palabra": "el",
+          "inicioMs": 7560,
+          "finMs": 7740
+        },
+        {
+          "palabra": "hielo",
+          "inicioMs": 7740,
+          "finMs": 7940
+        },
+        {
+          "palabra": "salta",
+          "inicioMs": 7940,
+          "finMs": 8260
+        },
+        {
+          "palabra": "directo",
+          "inicioMs": 8260,
+          "finMs": 8620
+        },
+        {
+          "palabra": "a",
+          "inicioMs": 8620,
+          "finMs": 8680
+        },
+        {
+          "palabra": "gas",
+          "inicioMs": 8680,
+          "finMs": 8800
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "texto": "Cuando el sol calienta el manto de nieve, las pequeñas depresiones atrapan la radiación y se evaporan mucho más rápido, cavando zanjas profundas que dejan intactas las crestas afiladas como navajas.",
+      "icono": "Sun",
+      "colorIcono": "#FDE047",
+      "tituloVisual": "TRAMPA DE RADIACIÓN",
+      "composicionVisual": "escenario_ilustrado",
+      "escenario": "corte_geologico_timelapse_solar",
+      "layout": "narrativo",
+      "transicion": "whip_right",
+      "efectosCamara": [
+        "shake",
+        "drift"
+      ],
+      "sfx": "sfx/sfx_timelapse_erosion_solar.wav",
+      "volumenSfx": 0.26,
+      "palabrasClave": [
+        "ATRAPAN RADIACIÓN",
+        "SE EVAPORAN MÁS RÁPIDO",
+        "ZANJAS PROFUNDAS",
+        "CRESTAS AFILADAS"
+      ],
+      "personajes": [
+        {
+          "id": "observador",
+          "nombre": "Observador",
+          "posicion": {
+            "x": -220,
+            "y": 70
+          },
+          "escala": 1.0,
+          "orientacion": "derecha",
+          "poseId": "arms_crossed",
+          "expresion": "thinking",
+          "capaZ": 10
+        }
+      ],
+      "duracionSegundos": 10.498,
+      "palabras": [
+        {
+          "palabra": "Cuando",
+          "inicioMs": 0,
+          "finMs": 260
+        },
+        {
+          "palabra": "el",
+          "inicioMs": 260,
+          "finMs": 420
+        },
+        {
+          "palabra": "sol",
+          "inicioMs": 420,
+          "finMs": 580
+        },
+        {
+          "palabra": "calienta",
+          "inicioMs": 580,
+          "finMs": 920
+        },
+        {
+          "palabra": "el",
+          "inicioMs": 920,
+          "finMs": 1160
+        },
+        {
+          "palabra": "manto",
+          "inicioMs": 1160,
+          "finMs": 1400
+        },
+        {
+          "palabra": "de",
+          "inicioMs": 1400,
+          "finMs": 1540
+        },
+        {
+          "palabra": "nieve",
+          "inicioMs": 1540,
+          "finMs": 1840
+        },
+        {
+          "palabra": "las",
+          "inicioMs": 1920,
+          "finMs": 2020
+        },
+        {
+          "palabra": "pequeñas",
+          "inicioMs": 2020,
+          "finMs": 2500
+        },
+        {
+          "palabra": "depresiones",
+          "inicioMs": 2500,
+          "finMs": 3040
+        },
+        {
+          "palabra": "atrapan",
+          "inicioMs": 3040,
+          "finMs": 3500
+        },
+        {
+          "palabra": "la",
+          "inicioMs": 3500,
+          "finMs": 3620
+        },
+        {
+          "palabra": "radiación",
+          "inicioMs": 3620,
+          "finMs": 4120
+        },
+        {
+          "palabra": "y",
+          "inicioMs": 4120,
+          "finMs": 4520
+        },
+        {
+          "palabra": "se",
+          "inicioMs": 4520,
+          "finMs": 4660
+        },
+        {
+          "palabra": "evaporan",
+          "inicioMs": 4660,
+          "finMs": 5060
+        },
+        {
+          "palabra": "mucho",
+          "inicioMs": 5060,
+          "finMs": 5300
+        },
+        {
+          "palabra": "más",
+          "inicioMs": 5300,
+          "finMs": 5480
+        },
+        {
+          "palabra": "rápido",
+          "inicioMs": 5480,
+          "finMs": 5880
+        },
+        {
+          "palabra": "cavando",
+          "inicioMs": 6080,
+          "finMs": 6360
+        },
+        {
+          "palabra": "zanjas",
+          "inicioMs": 6360,
+          "finMs": 6740
+        },
+        {
+          "palabra": "profundas",
+          "inicioMs": 6740,
+          "finMs": 7400
+        },
+        {
+          "palabra": "que",
+          "inicioMs": 7400,
+          "finMs": 7520
+        },
+        {
+          "palabra": "dejan",
+          "inicioMs": 7520,
+          "finMs": 7700
+        },
+        {
+          "palabra": "intactas",
+          "inicioMs": 7700,
+          "finMs": 8240
+        },
+        {
+          "palabra": "las",
+          "inicioMs": 8240,
+          "finMs": 8400
+        },
+        {
+          "palabra": "crestas",
+          "inicioMs": 8400,
+          "finMs": 8800
+        },
+        {
+          "palabra": "afiladas",
+          "inicioMs": 8800,
+          "finMs": 9340
+        },
+        {
+          "palabra": "como",
+          "inicioMs": 9340,
+          "finMs": 9480
+        },
+        {
+          "palabra": "navajas",
+          "inicioMs": 9480,
+          "finMs": 10040
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "texto": "Las puntas que sobreviven quedan perfectamente alineadas hacia la posición del sol, como un ejército congelado haciendo reverencias al cielo, siguiendo la trayectoria astronómica del mediodía andino.",
+      "icono": "SunMedium",
+      "colorIcono": "#F59E0B",
+      "tituloVisual": "EJÉRCITO ALINEADO",
+      "composicionVisual": "plano_general",
+      "escenario": "ejercito_penitentes_sol",
+      "layout": "narrativo",
+      "transicion": "zoom_in",
+      "efectosCamara": [
+        "punch",
+        "drift"
+      ],
+      "sfx": "sfx/sfx_campana_monasterio_misterio.wav",
+      "volumenSfx": 0.26,
+      "palabrasClave": [
+        "ALINEADAS AL SOL",
+        "EJÉRCITO CONGELADO",
+        "REVERENCIAS AL CIELO",
+        "MEDIODÍA ANDINO"
+      ],
+      "personajes": [
+        {
+          "id": "penitente_stickman",
+          "nombre": "Stickman Penitente",
+          "posicion": {
+            "x": -220,
+            "y": 70
+          },
+          "escala": 1.0,
+          "orientacion": "derecha",
+          "poseId": "nodding_yes",
+          "expresion": "smile_soft",
+          "props": {
+            "cara": "gafas_ventisca_oscuras"
+          },
+          "capaZ": 10
+        }
+      ],
+      "duracionSegundos": 10.666,
+      "palabras": [
+        {
+          "palabra": "Las",
+          "inicioMs": 0,
+          "finMs": 240
+        },
+        {
+          "palabra": "puntas",
+          "inicioMs": 240,
+          "finMs": 640
+        },
+        {
+          "palabra": "que",
+          "inicioMs": 640,
+          "finMs": 760
+        },
+        {
+          "palabra": "sobreviven",
+          "inicioMs": 760,
+          "finMs": 1260
+        },
+        {
+          "palabra": "quedan",
+          "inicioMs": 1260,
+          "finMs": 1560
+        },
+        {
+          "palabra": "perfectamente",
+          "inicioMs": 1560,
+          "finMs": 2300
+        },
+        {
+          "palabra": "alineadas",
+          "inicioMs": 2300,
+          "finMs": 2740
+        },
+        {
+          "palabra": "hacia",
+          "inicioMs": 2740,
+          "finMs": 3020
+        },
+        {
+          "palabra": "la",
+          "inicioMs": 3020,
+          "finMs": 3140
+        },
+        {
+          "palabra": "posición",
+          "inicioMs": 3140,
+          "finMs": 3440
+        },
+        {
+          "palabra": "del",
+          "inicioMs": 3440,
+          "finMs": 3760
+        },
+        {
+          "palabra": "sol",
+          "inicioMs": 3760,
+          "finMs": 4040
+        },
+        {
+          "palabra": "como",
+          "inicioMs": 4380,
+          "finMs": 4980
+        },
+        {
+          "palabra": "un",
+          "inicioMs": 4980,
+          "finMs": 5140
+        },
+        {
+          "palabra": "ejército",
+          "inicioMs": 5140,
+          "finMs": 5580
+        },
+        {
+          "palabra": "congelado",
+          "inicioMs": 5580,
+          "finMs": 6200
+        },
+        {
+          "palabra": "haciendo",
+          "inicioMs": 6200,
+          "finMs": 6480
+        },
+        {
+          "palabra": "reverencias",
+          "inicioMs": 6480,
+          "finMs": 7040
+        },
+        {
+          "palabra": "al",
+          "inicioMs": 7040,
+          "finMs": 7260
+        },
+        {
+          "palabra": "cielo",
+          "inicioMs": 7260,
+          "finMs": 7600
+        },
+        {
+          "palabra": "siguiendo",
+          "inicioMs": 7720,
+          "finMs": 7980
+        },
+        {
+          "palabra": "la",
+          "inicioMs": 7980,
+          "finMs": 8120
+        },
+        {
+          "palabra": "trayectoria",
+          "inicioMs": 8120,
+          "finMs": 8620
+        },
+        {
+          "palabra": "astronómica",
+          "inicioMs": 8620,
+          "finMs": 9160
+        },
+        {
+          "palabra": "del",
+          "inicioMs": 9160,
+          "finMs": 9320
+        },
+        {
+          "palabra": "mediodía",
+          "inicioMs": 9320,
+          "finMs": 9520
+        },
+        {
+          "palabra": "andino",
+          "inicioMs": 9520,
+          "finMs": 10180
+        }
+      ]
+    },
+    {
+      "id": 7,
+      "texto": "Así que si subes a los Andes, olvídate de los muñecos de nieve: aquí la montaña no esculpe juegos, esculpe cuchillos de vapor que desafían por completo las reglas de nuestro planeta.",
+      "icono": "Wind",
+      "colorIcono": "#A78BFA",
+      "tituloVisual": "CUCHILLOS DE VAPOR",
+      "composicionVisual": "plano_general",
+      "escenario": "atardecer_andino_despedida",
+      "layout": "narrativo",
+      "transicion": "whip_left",
+      "efectosCamara": [
+        "punch",
+        "drift"
+      ],
+      "sfx": "sfx/sfx_remate_andino_viento.wav",
+      "volumenSfx": 0.25,
+      "palabrasClave": [
+        "LOS ANDES",
+        "NO ESCULPE JUEGOS",
+        "CUCHILLOS DE VAPOR",
+        "DESAFÍAN LAS REGLAS"
+      ],
+      "personajes": [
+        {
+          "id": "montanista_despedida",
+          "nombre": "Montañista Despedida",
+          "posicion": {
+            "x": -200,
+            "y": 70
+          },
+          "escala": 1.0,
+          "orientacion": "derecha",
+          "poseId": "waving_goodbye",
+          "expresion": "smile_wide",
+          "props": {
+            "derecha": "bola_nieve_polvorienta",
+            "izquierda": "mochila_expedicion_montana",
+            "cara": "gafas_ventisca_oscuras"
+          },
+          "capaZ": 10
+        }
+      ],
+      "duracionSegundos": 9.298,
+      "palabras": [
+        {
+          "palabra": "Así",
+          "inicioMs": 0,
+          "finMs": 300
+        },
+        {
+          "palabra": "que",
+          "inicioMs": 300,
+          "finMs": 420
+        },
+        {
+          "palabra": "si",
+          "inicioMs": 420,
+          "finMs": 560
+        },
+        {
+          "palabra": "subes",
+          "inicioMs": 560,
+          "finMs": 860
+        },
+        {
+          "palabra": "a",
+          "inicioMs": 860,
+          "finMs": 960
+        },
+        {
+          "palabra": "los",
+          "inicioMs": 960,
+          "finMs": 1060
+        },
+        {
+          "palabra": "Andes",
+          "inicioMs": 1060,
+          "finMs": 1460
+        },
+        {
+          "palabra": "olvídate",
+          "inicioMs": 1580,
+          "finMs": 1980
+        },
+        {
+          "palabra": "de",
+          "inicioMs": 1980,
+          "finMs": 2120
+        },
+        {
+          "palabra": "los",
+          "inicioMs": 2120,
+          "finMs": 2260
+        },
+        {
+          "palabra": "muñecos",
+          "inicioMs": 2260,
+          "finMs": 2640
+        },
+        {
+          "palabra": "de",
+          "inicioMs": 2640,
+          "finMs": 2780
+        },
+        {
+          "palabra": "nieve",
+          "inicioMs": 2780,
+          "finMs": 3080
+        },
+        {
+          "palabra": "aquí",
+          "inicioMs": 3200,
+          "finMs": 3380
+        },
+        {
+          "palabra": "la",
+          "inicioMs": 3380,
+          "finMs": 3500
+        },
+        {
+          "palabra": "montaña",
+          "inicioMs": 3500,
+          "finMs": 3940
+        },
+        {
+          "palabra": "no",
+          "inicioMs": 3940,
+          "finMs": 4100
+        },
+        {
+          "palabra": "esculpe",
+          "inicioMs": 4100,
+          "finMs": 4440
+        },
+        {
+          "palabra": "juegos",
+          "inicioMs": 4440,
+          "finMs": 4880
+        },
+        {
+          "palabra": "esculpe",
+          "inicioMs": 5140,
+          "finMs": 5500
+        },
+        {
+          "palabra": "cuchillos",
+          "inicioMs": 5500,
+          "finMs": 5920
+        },
+        {
+          "palabra": "de",
+          "inicioMs": 5920,
+          "finMs": 6080
+        },
+        {
+          "palabra": "vapor",
+          "inicioMs": 6080,
+          "finMs": 6300
+        },
+        {
+          "palabra": "que",
+          "inicioMs": 6300,
+          "finMs": 6520
+        },
+        {
+          "palabra": "desafían",
+          "inicioMs": 6520,
+          "finMs": 6980
+        },
+        {
+          "palabra": "por",
+          "inicioMs": 6980,
+          "finMs": 7160
+        },
+        {
+          "palabra": "completo",
+          "inicioMs": 7160,
+          "finMs": 7640
+        },
+        {
+          "palabra": "las",
+          "inicioMs": 7640,
+          "finMs": 7840
+        },
+        {
+          "palabra": "reglas",
+          "inicioMs": 7840,
+          "finMs": 8140
+        },
+        {
+          "palabra": "de",
+          "inicioMs": 8140,
+          "finMs": 8280
+        },
+        {
+          "palabra": "nuestro",
+          "inicioMs": 8280,
+          "finMs": 8520
+        },
+        {
+          "palabra": "planeta",
+          "inicioMs": 8520,
+          "finMs": 8800
+        }
+      ]
+    }
+  ]
+}

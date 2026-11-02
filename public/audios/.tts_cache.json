@@ -1,1343 +1,456 @@
 {
   "escena_1": {
-    "sha256": "51761af3ba28ece25895bbbc71413808a2122255b147946c17257cc7f5802bcc",
-    "pipelineVersion": "v3_sentence_tailcut",
-    "texto": "Bajo el desierto de Chihuahua existe una cueva con cristales de selenita de once metros de largo, pero respirar su aire sin protección especial te ahogaría en cuestión de minutos. ¿Cómo es posible?",
+    "sha256": "7c7b17efb77f05be3e60677fd55eb777453cfce8a7e93b68f7d49bdfcacbde7a",
+    "pipelineVersion": "v4_nw_precision_align",
+    "texto": "Un enchufe asustado, la parrilla de un coche enojado, una mochila feliz... ¿Por qué tu cerebro tarda apenas unos milisegundos en ver emociones humanas en simples objetos muertos?",
+    "textoTts": "Un enchufe asustado, la parrilla de un coche enojado, una mochila feliz... ¿Por qué tu cerebro tarda apenas unos milisegundos en ver emociones humanas en simples objetos muertos?",
     "voiceConds": "alex.conds.pt",
-    "duracionSegundos": 10.81,
+    "duracionSegundos": 9.898,
     "palabras": [
-      {
-        "palabra": "Bajo",
-        "inicioMs": 0,
-        "finMs": 300
-      },
-      {
-        "palabra": "el",
-        "inicioMs": 300,
-        "finMs": 460
-      },
-      {
-        "palabra": "desierto",
-        "inicioMs": 460,
-        "finMs": 780
-      },
-      {
-        "palabra": "de",
-        "inicioMs": 780,
-        "finMs": 1000
-      },
-      {
-        "palabra": "Chihuahua",
-        "inicioMs": 1000,
-        "finMs": 1580
-      },
-      {
-        "palabra": "existe",
-        "inicioMs": 1580,
-        "finMs": 1980
-      },
-      {
-        "palabra": "una",
-        "inicioMs": 1980,
-        "finMs": 2300
-      },
-      {
-        "palabra": "cueva",
-        "inicioMs": 2300,
-        "finMs": 2620
-      },
-      {
-        "palabra": "con",
-        "inicioMs": 2620,
-        "finMs": 2820
-      },
-      {
-        "palabra": "cristales",
-        "inicioMs": 2820,
-        "finMs": 3300
-      },
-      {
-        "palabra": "de",
-        "inicioMs": 3300,
-        "finMs": 3480
-      },
-      {
-        "palabra": "selenita",
-        "inicioMs": 3480,
-        "finMs": 4040
-      },
-      {
-        "palabra": "de",
-        "inicioMs": 4040,
-        "finMs": 4180
-      },
-      {
-        "palabra": "once",
-        "inicioMs": 4180,
-        "finMs": 4440
-      },
-      {
-        "palabra": "metros",
-        "inicioMs": 4440,
-        "finMs": 4760
-      },
-      {
-        "palabra": "de",
-        "inicioMs": 4760,
-        "finMs": 4920
-      },
-      {
-        "palabra": "largo",
-        "inicioMs": 4920,
-        "finMs": 5280
-      },
-      {
-        "palabra": "pero",
-        "inicioMs": 5540,
-        "finMs": 5700
-      },
-      {
-        "palabra": "respirar",
-        "inicioMs": 5700,
-        "finMs": 6180
-      },
-      {
-        "palabra": "su",
-        "inicioMs": 6180,
-        "finMs": 6400
-      },
-      {
-        "palabra": "aire",
-        "inicioMs": 6400,
-        "finMs": 6580
-      },
-      {
-        "palabra": "sin",
-        "inicioMs": 6580,
-        "finMs": 6800
-      },
-      {
-        "palabra": "protección",
-        "inicioMs": 6800,
-        "finMs": 7260
-      },
-      {
-        "palabra": "especial",
-        "inicioMs": 7260,
-        "finMs": 7880
-      },
-      {
-        "palabra": "te",
-        "inicioMs": 7880,
-        "finMs": 8220
-      },
-      {
-        "palabra": "ahogaría",
-        "inicioMs": 8220,
-        "finMs": 8520
-      },
-      {
-        "palabra": "en",
-        "inicioMs": 8520,
-        "finMs": 8620
-      },
-      {
-        "palabra": "cuestión",
-        "inicioMs": 8620,
-        "finMs": 8920
-      },
-      {
-        "palabra": "de",
-        "inicioMs": 8920,
-        "finMs": 9080
-      },
-      {
-        "palabra": "minutos",
-        "inicioMs": 9080,
-        "finMs": 9460
-      },
-      {
-        "palabra": "Cómo",
-        "inicioMs": 9620,
-        "finMs": 9780
-      },
-      {
-        "palabra": "es",
-        "inicioMs": 9780,
-        "finMs": 9900
-      },
-      {
-        "palabra": "posible",
-        "inicioMs": 9900,
-        "finMs": 10280
-      }
-    ]
-  },
-  "escena_2": {
-    "sha256": "3098e512b2253d337269d6eb34e22e3b630c8033b1c3b3347547f46f2fc29d22",
-    "pipelineVersion": "v3_sentence_tailcut",
-    "texto": "Descubierta a trescientos metros bajo tierra en la mina de Naica, esta cámara alberga columnas colosales de cincuenta y cinco toneladas. Un bosque subterráneo de fantasía que parece sacado de otro planeta.",
-    "voiceConds": "alex.conds.pt",
-    "duracionSegundos": 10.018,
-    "palabras": [
-      {
-        "palabra": "Descubierta",
-        "inicioMs": 0,
-        "finMs": 620
-      },
-      {
-        "palabra": "a",
-        "inicioMs": 620,
-        "finMs": 1080
-      },
-      {
-        "palabra": "trescientos",
-        "inicioMs": 1080,
-        "finMs": 1480
-      },
-      {
-        "palabra": "metros",
-        "inicioMs": 1480,
-        "finMs": 1760
-      },
-      {
-        "palabra": "bajo",
-        "inicioMs": 1760,
-        "finMs": 2100
-      },
-      {
-        "palabra": "tierra",
-        "inicioMs": 2100,
-        "finMs": 2240
-      },
-      {
-        "palabra": "en",
-        "inicioMs": 2240,
-        "finMs": 2300
-      },
-      {
-        "palabra": "la",
-        "inicioMs": 2300,
-        "finMs": 2480
-      },
-      {
-        "palabra": "mina",
-        "inicioMs": 2480,
-        "finMs": 2640
-      },
-      {
-        "palabra": "de",
-        "inicioMs": 2640,
-        "finMs": 2840
-      },
-      {
-        "palabra": "Naica",
-        "inicioMs": 3060,
-        "finMs": 3240
-      },
-      {
-        "palabra": "esta",
-        "inicioMs": 3240,
-        "finMs": 3500
-      },
-      {
-        "palabra": "cámara",
-        "inicioMs": 3500,
-        "finMs": 3940
-      },
-      {
-        "palabra": "alberga",
-        "inicioMs": 3940,
-        "finMs": 4360
-      },
-      {
-        "palabra": "columnas",
-        "inicioMs": 4360,
-        "finMs": 4500
-      },
-      {
-        "palabra": "colosales",
-        "inicioMs": 4500,
-        "finMs": 4820
-      },
-      {
-        "palabra": "de",
-        "inicioMs": 4820,
-        "finMs": 4920
-      },
-      {
-        "palabra": "cincuenta",
-        "inicioMs": 4920,
-        "finMs": 5520
-      },
-      {
-        "palabra": "y",
-        "inicioMs": 5520,
-        "finMs": 6220
-      },
-      {
-        "palabra": "cinco",
-        "inicioMs": 6440,
-        "finMs": 6580
-      },
-      {
-        "palabra": "toneladas",
-        "inicioMs": 6580,
-        "finMs": 6880
-      },
       {
         "palabra": "Un",
-        "inicioMs": 6880,
-        "finMs": 7460
-      },
-      {
-        "palabra": "bosque",
-        "inicioMs": 7460,
-        "finMs": 7580
-      },
-      {
-        "palabra": "subterráneo",
-        "inicioMs": 7580,
-        "finMs": 8120
-      },
-      {
-        "palabra": "de",
-        "inicioMs": 8120,
-        "finMs": 8260
-      },
-      {
-        "palabra": "fantasía",
-        "inicioMs": 8260,
-        "finMs": 8520
-      },
-      {
-        "palabra": "que",
-        "inicioMs": 8520,
-        "finMs": 8960
-      },
-      {
-        "palabra": "parece",
-        "inicioMs": 8960,
-        "finMs": 9060
-      },
-      {
-        "palabra": "sacado",
-        "inicioMs": 9060,
-        "finMs": 9220
-      },
-      {
-        "palabra": "de",
-        "inicioMs": 9220,
-        "finMs": 9480
-      },
-      {
-        "palabra": "otro",
-        "inicioMs": 9480,
-        "finMs": 9624
-      },
-      {
-        "palabra": "planeta",
-        "inicioMs": 9480,
-        "finMs": 9624
-      }
-    ]
-  },
-  "escena_3": {
-    "sha256": "a53055baa85d6573e4bce393b1d3b568911a26692be8d7f06ee602f67296fb5a",
-    "pipelineVersion": "v3_sentence_tailcut",
-    "texto": "Durante medio millón de años, una bolsa de magma a tres kilómetros de profundidad mantuvo un acuífero termal hirviendo a más de cincuenta grados, nutriendo lentamente el crecimiento de este cristal perfecto.",
-    "voiceConds": "alex.conds.pt",
-    "duracionSegundos": 11.194,
-    "palabras": [
-      {
-        "palabra": "Durante",
-        "inicioMs": 0,
-        "finMs": 440
-      },
-      {
-        "palabra": "medio",
-        "inicioMs": 440,
-        "finMs": 780
-      },
-      {
-        "palabra": "millón",
-        "inicioMs": 780,
-        "finMs": 1100
-      },
-      {
-        "palabra": "de",
-        "inicioMs": 1100,
-        "finMs": 1280
-      },
-      {
-        "palabra": "años",
-        "inicioMs": 1280,
-        "finMs": 1540
-      },
-      {
-        "palabra": "una",
-        "inicioMs": 1780,
-        "finMs": 1940
-      },
-      {
-        "palabra": "bolsa",
-        "inicioMs": 1940,
-        "finMs": 2220
-      },
-      {
-        "palabra": "de",
-        "inicioMs": 2220,
-        "finMs": 2380
-      },
-      {
-        "palabra": "magma",
-        "inicioMs": 2380,
-        "finMs": 2740
-      },
-      {
-        "palabra": "a",
-        "inicioMs": 2740,
-        "finMs": 2880
-      },
-      {
-        "palabra": "tres",
-        "inicioMs": 2880,
-        "finMs": 3060
-      },
-      {
-        "palabra": "kilómetros",
-        "inicioMs": 3060,
-        "finMs": 3480
-      },
-      {
-        "palabra": "de",
-        "inicioMs": 3480,
-        "finMs": 3660
-      },
-      {
-        "palabra": "profundidad",
-        "inicioMs": 3660,
-        "finMs": 4240
-      },
-      {
-        "palabra": "mantuvo",
-        "inicioMs": 4420,
-        "finMs": 4660
-      },
-      {
-        "palabra": "un",
-        "inicioMs": 4660,
-        "finMs": 4820
-      },
-      {
-        "palabra": "acuífero",
-        "inicioMs": 4820,
-        "finMs": 5180
-      },
-      {
-        "palabra": "termal",
-        "inicioMs": 5180,
-        "finMs": 5580
-      },
-      {
-        "palabra": "hirviendo",
-        "inicioMs": 5580,
-        "finMs": 6020
-      },
-      {
-        "palabra": "a",
-        "inicioMs": 6020,
-        "finMs": 6120
-      },
-      {
-        "palabra": "más",
-        "inicioMs": 6120,
-        "finMs": 6240
-      },
-      {
-        "palabra": "de",
-        "inicioMs": 6240,
-        "finMs": 6360
-      },
-      {
-        "palabra": "cincuenta",
-        "inicioMs": 6360,
-        "finMs": 6700
-      },
-      {
-        "palabra": "grados",
-        "inicioMs": 6700,
-        "finMs": 7240
-      },
-      {
-        "palabra": "nutriendo",
-        "inicioMs": 7580,
-        "finMs": 8020
-      },
-      {
-        "palabra": "lentamente",
-        "inicioMs": 8020,
-        "finMs": 8520
-      },
-      {
-        "palabra": "el",
-        "inicioMs": 8520,
-        "finMs": 8780
-      },
-      {
-        "palabra": "crecimiento",
-        "inicioMs": 8780,
-        "finMs": 9220
-      },
-      {
-        "palabra": "de",
-        "inicioMs": 9220,
-        "finMs": 9460
-      },
-      {
-        "palabra": "este",
-        "inicioMs": 9460,
-        "finMs": 9640
-      },
-      {
-        "palabra": "cristal",
-        "inicioMs": 9640,
-        "finMs": 10020
-      },
-      {
-        "palabra": "perfecto",
-        "inicioMs": 10020,
-        "finMs": 10700
-      }
-    ]
-  },
-  "escena_4": {
-    "sha256": "dea80633e690630ac96cf204eb3faf349e544967b4054391abfa5a096c72524a",
-    "pipelineVersion": "v3_sentence_tailcut",
-    "texto": "Pero cuando los mineros drenaron el agua subterránea para extraer plomo, la cueva quedó expuesta al aire, convirtiéndose súbitamente en un horno asfixiante a cincuenta y ocho grados y noventa y cinco por ciento de humedad.",
-    "voiceConds": "alex.conds.pt",
-    "duracionSegundos": 10.306,
-    "palabras": [
-      {
-        "palabra": "Pero",
-        "inicioMs": 0,
-        "finMs": 200
-      },
-      {
-        "palabra": "cuando",
-        "inicioMs": 200,
-        "finMs": 400
-      },
-      {
-        "palabra": "los",
-        "inicioMs": 400,
-        "finMs": 600
-      },
-      {
-        "palabra": "mineros",
-        "inicioMs": 600,
-        "finMs": 900
-      },
-      {
-        "palabra": "drenaron",
-        "inicioMs": 900,
-        "finMs": 1340
-      },
-      {
-        "palabra": "el",
-        "inicioMs": 1340,
-        "finMs": 1500
-      },
-      {
-        "palabra": "agua",
-        "inicioMs": 1500,
-        "finMs": 1660
-      },
-      {
-        "palabra": "subterránea",
-        "inicioMs": 1660,
-        "finMs": 2240
-      },
-      {
-        "palabra": "para",
-        "inicioMs": 2240,
-        "finMs": 2440
-      },
-      {
-        "palabra": "extraer",
-        "inicioMs": 2440,
-        "finMs": 2800
-      },
-      {
-        "palabra": "plomo",
-        "inicioMs": 2800,
-        "finMs": 3180
-      },
-      {
-        "palabra": "la",
-        "inicioMs": 3260,
-        "finMs": 3340
-      },
-      {
-        "palabra": "cueva",
-        "inicioMs": 3340,
-        "finMs": 3580
-      },
-      {
-        "palabra": "quedó",
-        "inicioMs": 3580,
-        "finMs": 3820
-      },
-      {
-        "palabra": "expuesta",
-        "inicioMs": 3820,
-        "finMs": 4260
-      },
-      {
-        "palabra": "al",
-        "inicioMs": 4260,
-        "finMs": 4420
-      },
-      {
-        "palabra": "aire",
-        "inicioMs": 4420,
-        "finMs": 4620
-      },
-      {
-        "palabra": "convirtiéndose",
-        "inicioMs": 4700,
-        "finMs": 5200
-      },
-      {
-        "palabra": "súbitamente",
-        "inicioMs": 5200,
-        "finMs": 5800
-      },
-      {
-        "palabra": "en",
-        "inicioMs": 5800,
-        "finMs": 6060
-      },
-      {
-        "palabra": "un",
-        "inicioMs": 6060,
-        "finMs": 6140
-      },
-      {
-        "palabra": "horno",
-        "inicioMs": 6140,
-        "finMs": 6420
-      },
-      {
-        "palabra": "asfixiante",
-        "inicioMs": 6420,
-        "finMs": 7000
-      },
-      {
-        "palabra": "a",
-        "inicioMs": 7000,
-        "finMs": 7120
-      },
-      {
-        "palabra": "cincuenta",
-        "inicioMs": 7120,
-        "finMs": 8240
-      },
-      {
-        "palabra": "y",
-        "inicioMs": 8240,
-        "finMs": 8280
-      },
-      {
-        "palabra": "ocho",
-        "inicioMs": 8280,
-        "finMs": 8800
-      },
-      {
-        "palabra": "grados",
-        "inicioMs": 8800,
-        "finMs": 9320
-      },
-      {
-        "palabra": "y",
-        "inicioMs": 9320,
-        "finMs": 9520
-      },
-      {
-        "palabra": "noventa",
-        "inicioMs": 9520,
-        "finMs": 9860
-      },
-      {
-        "palabra": "y",
-        "inicioMs": 9860,
-        "finMs": 9940
-      },
-      {
-        "palabra": "cinco",
-        "inicioMs": 9860,
-        "finMs": 9940
-      },
-      {
-        "palabra": "por",
-        "inicioMs": 9860,
-        "finMs": 9940
-      },
-      {
-        "palabra": "ciento",
-        "inicioMs": 9860,
-        "finMs": 9940
-      },
-      {
-        "palabra": "de",
-        "inicioMs": 9860,
-        "finMs": 9940
-      },
-      {
-        "palabra": "humedad",
-        "inicioMs": 9860,
-        "finMs": 9940
-      }
-    ]
-  },
-  "escena_5": {
-    "sha256": "d3de410f8a5a9ac08a229984ec50fe4e84bbcaa5ec5ccd49d93f454b5cdc92a9",
-    "pipelineVersion": "v3_sentence_tailcut",
-    "texto": "Aquí la física es letal. Como una lata fría de refresco que se empapa de agua en un día caliente, tus pulmones a treinta y siete grados condensan el vapor ambiental... ¡llenándote de agua por dentro!",
-    "voiceConds": "alex.conds.pt",
-    "duracionSegundos": 11.002,
-    "palabras": [
-      {
-        "palabra": "Aquí",
-        "inicioMs": 0,
-        "finMs": 300
-      },
-      {
-        "palabra": "la",
-        "inicioMs": 300,
-        "finMs": 440
-      },
-      {
-        "palabra": "física",
-        "inicioMs": 440,
-        "finMs": 740
-      },
-      {
-        "palabra": "es",
-        "inicioMs": 740,
-        "finMs": 1200
-      },
-      {
-        "palabra": "letal",
-        "inicioMs": 1200,
-        "finMs": 1780
-      },
-      {
-        "palabra": "Como",
-        "inicioMs": 1940,
-        "finMs": 2280
-      },
-      {
-        "palabra": "una",
-        "inicioMs": 2280,
-        "finMs": 2500
-      },
-      {
-        "palabra": "lata",
-        "inicioMs": 2500,
-        "finMs": 2680
-      },
-      {
-        "palabra": "fría",
-        "inicioMs": 2680,
-        "finMs": 3060
-      },
-      {
-        "palabra": "de",
-        "inicioMs": 3060,
-        "finMs": 3180
-      },
-      {
-        "palabra": "refresco",
-        "inicioMs": 3180,
-        "finMs": 3700
-      },
-      {
-        "palabra": "que",
-        "inicioMs": 3700,
-        "finMs": 3840
-      },
-      {
-        "palabra": "se",
-        "inicioMs": 3840,
-        "finMs": 3960
-      },
-      {
-        "palabra": "empapa",
-        "inicioMs": 3960,
-        "finMs": 4280
-      },
-      {
-        "palabra": "de",
-        "inicioMs": 4280,
-        "finMs": 4460
-      },
-      {
-        "palabra": "agua",
-        "inicioMs": 4460,
-        "finMs": 4660
-      },
-      {
-        "palabra": "en",
-        "inicioMs": 4660,
-        "finMs": 4780
-      },
-      {
-        "palabra": "un",
-        "inicioMs": 4780,
-        "finMs": 4860
-      },
-      {
-        "palabra": "día",
-        "inicioMs": 4860,
-        "finMs": 5020
-      },
-      {
-        "palabra": "caliente",
-        "inicioMs": 5020,
-        "finMs": 5560
-      },
-      {
-        "palabra": "tus",
-        "inicioMs": 5760,
-        "finMs": 5840
-      },
-      {
-        "palabra": "pulmones",
-        "inicioMs": 5840,
-        "finMs": 6460
-      },
-      {
-        "palabra": "a",
-        "inicioMs": 6460,
-        "finMs": 6960
-      },
-      {
-        "palabra": "treinta",
-        "inicioMs": 6960,
-        "finMs": 7560
-      },
-      {
-        "palabra": "y",
-        "inicioMs": 7560,
-        "finMs": 8040
-      },
-      {
-        "palabra": "siete",
-        "inicioMs": 8040,
-        "finMs": 8200
-      },
-      {
-        "palabra": "grados",
-        "inicioMs": 8200,
-        "finMs": 8380
-      },
-      {
-        "palabra": "condensan",
-        "inicioMs": 8380,
-        "finMs": 9040
-      },
-      {
-        "palabra": "el",
-        "inicioMs": 9160,
-        "finMs": 9620
-      },
-      {
-        "palabra": "vapor",
-        "inicioMs": 9620,
-        "finMs": 9760
-      },
-      {
-        "palabra": "ambiental",
-        "inicioMs": 9760,
-        "finMs": 9920
-      },
-      {
-        "palabra": "llenándote",
-        "inicioMs": 9920,
-        "finMs": 10140
-      },
-      {
-        "palabra": "de",
-        "inicioMs": 10140,
-        "finMs": 10440
-      },
-      {
-        "palabra": "agua",
-        "inicioMs": 10440,
-        "finMs": 10544
-      },
-      {
-        "palabra": "por",
-        "inicioMs": 10440,
-        "finMs": 10544
-      },
-      {
-        "palabra": "dentro",
-        "inicioMs": 10440,
-        "finMs": 10544
-      }
-    ]
-  },
-  "escena_6": {
-    "sha256": "ba21211f0e08045a08f194af57f57ff7b9ce42b561df861406a4ead2de380933",
-    "pipelineVersion": "v3_sentence_tailcut",
-    "texto": "Para sobrevivir más de diez minutos, los científicos diseñaron trajes espaciales Tolomea con mochilas de veinte kilos de hielo, inyectando aire fresco a quince grados directo al respirador para evitar el colapso pulmonar.",
-    "voiceConds": "alex.conds.pt",
-    "duracionSegundos": 10.642,
-    "palabras": [
-      {
-        "palabra": "Para",
-        "inicioMs": 0,
-        "finMs": 220
-      },
-      {
-        "palabra": "sobrevivir",
-        "inicioMs": 220,
-        "finMs": 760
-      },
-      {
-        "palabra": "más",
-        "inicioMs": 760,
-        "finMs": 860
-      },
-      {
-        "palabra": "de",
-        "inicioMs": 860,
-        "finMs": 1000
-      },
-      {
-        "palabra": "diez",
-        "inicioMs": 1000,
-        "finMs": 1160
-      },
-      {
-        "palabra": "minutos",
-        "inicioMs": 1160,
-        "finMs": 1440
-      },
-      {
-        "palabra": "los",
-        "inicioMs": 1580,
-        "finMs": 1660
-      },
-      {
-        "palabra": "científicos",
-        "inicioMs": 1660,
-        "finMs": 2180
-      },
-      {
-        "palabra": "diseñaron",
-        "inicioMs": 2180,
-        "finMs": 2580
-      },
-      {
-        "palabra": "trajes",
-        "inicioMs": 2580,
-        "finMs": 2920
-      },
-      {
-        "palabra": "espaciales",
-        "inicioMs": 2920,
-        "finMs": 3540
-      },
-      {
-        "palabra": "Tolomea",
-        "inicioMs": 3540,
-        "finMs": 3940
-      },
-      {
-        "palabra": "con",
-        "inicioMs": 3940,
-        "finMs": 4080
-      },
-      {
-        "palabra": "mochilas",
-        "inicioMs": 4080,
-        "finMs": 4480
-      },
-      {
-        "palabra": "de",
-        "inicioMs": 4480,
-        "finMs": 4560
-      },
-      {
-        "palabra": "veinte",
-        "inicioMs": 4560,
-        "finMs": 4780
-      },
-      {
-        "palabra": "kilos",
-        "inicioMs": 4780,
-        "finMs": 5020
-      },
-      {
-        "palabra": "de",
-        "inicioMs": 5020,
-        "finMs": 5220
-      },
-      {
-        "palabra": "hielo",
-        "inicioMs": 5220,
-        "finMs": 5520
-      },
-      {
-        "palabra": "inyectando",
-        "inicioMs": 5640,
-        "finMs": 6180
-      },
-      {
-        "palabra": "aire",
-        "inicioMs": 6180,
-        "finMs": 6380
-      },
-      {
-        "palabra": "fresco",
-        "inicioMs": 6380,
-        "finMs": 6860
-      },
-      {
-        "palabra": "a",
-        "inicioMs": 6860,
-        "finMs": 7000
-      },
-      {
-        "palabra": "quince",
-        "inicioMs": 7000,
-        "finMs": 7180
-      },
-      {
-        "palabra": "grados",
-        "inicioMs": 7180,
-        "finMs": 7660
-      },
-      {
-        "palabra": "directo",
-        "inicioMs": 7660,
-        "finMs": 8060
-      },
-      {
-        "palabra": "al",
-        "inicioMs": 8060,
-        "finMs": 8120
-      },
-      {
-        "palabra": "respirador",
-        "inicioMs": 8120,
-        "finMs": 8620
-      },
-      {
-        "palabra": "para",
-        "inicioMs": 8620,
-        "finMs": 8860
-      },
-      {
-        "palabra": "evitar",
-        "inicioMs": 8860,
-        "finMs": 9100
-      },
-      {
-        "palabra": "el",
-        "inicioMs": 9100,
-        "finMs": 9260
-      },
-      {
-        "palabra": "colapso",
-        "inicioMs": 9260,
-        "finMs": 9640
-      },
-      {
-        "palabra": "pulmonar",
-        "inicioMs": 9640,
-        "finMs": 10180
-      }
-    ]
-  },
-  "escena_7": {
-    "sha256": "350ce5c15ce971c564a775864612a8f8f1ff11f1d71201c61731619eaf7997e3",
-    "pipelineVersion": "v3_sentence_tailcut",
-    "texto": "Hoy Naica volvió a inundarse de forma natural, protegiendo para siempre sus megacristales en la oscuridad del abismo. Una maravilla geológica donde la belleza infinita convive con una trampa mortal absoluta.",
-    "voiceConds": "alex.conds.pt",
-    "duracionSegundos": 10.546,
-    "palabras": [
-      {
-        "palabra": "Hoy",
         "inicioMs": 0,
         "finMs": 240
       },
       {
-        "palabra": "Naica",
+        "palabra": "enchufe",
         "inicioMs": 240,
-        "finMs": 520
-      },
-      {
-        "palabra": "volvió",
-        "inicioMs": 520,
-        "finMs": 960
-      },
-      {
-        "palabra": "a",
-        "inicioMs": 960,
-        "finMs": 1040
-      },
-      {
-        "palabra": "inundarse",
-        "inicioMs": 1040,
-        "finMs": 1440
-      },
-      {
-        "palabra": "de",
-        "inicioMs": 1440,
-        "finMs": 1600
-      },
-      {
-        "palabra": "forma",
-        "inicioMs": 1600,
-        "finMs": 1800
-      },
-      {
-        "palabra": "natural",
-        "inicioMs": 1800,
-        "finMs": 2200
-      },
-      {
-        "palabra": "protegiendo",
-        "inicioMs": 2420,
-        "finMs": 2860
-      },
-      {
-        "palabra": "para",
-        "inicioMs": 2860,
-        "finMs": 3040
-      },
-      {
-        "palabra": "siempre",
-        "inicioMs": 3040,
-        "finMs": 3380
-      },
-      {
-        "palabra": "sus",
-        "inicioMs": 3380,
-        "finMs": 3560
-      },
-      {
-        "palabra": "megacristales",
-        "inicioMs": 3560,
-        "finMs": 4240
-      },
-      {
-        "palabra": "en",
-        "inicioMs": 4240,
-        "finMs": 4460
-      },
-      {
-        "palabra": "la",
-        "inicioMs": 4460,
-        "finMs": 4520
-      },
-      {
-        "palabra": "oscuridad",
-        "inicioMs": 4520,
-        "finMs": 4860
-      },
-      {
-        "palabra": "del",
-        "inicioMs": 4860,
-        "finMs": 5000
-      },
-      {
-        "palabra": "abismo",
-        "inicioMs": 5000,
-        "finMs": 5400
-      },
-      {
-        "palabra": "Una",
-        "inicioMs": 5720,
-        "finMs": 5880
-      },
-      {
-        "palabra": "maravilla",
-        "inicioMs": 5880,
-        "finMs": 6300
-      },
-      {
-        "palabra": "geológica",
-        "inicioMs": 6300,
-        "finMs": 6880
-      },
-      {
-        "palabra": "donde",
-        "inicioMs": 6880,
-        "finMs": 7080
-      },
-      {
-        "palabra": "la",
-        "inicioMs": 7080,
-        "finMs": 7240
-      },
-      {
-        "palabra": "belleza",
-        "inicioMs": 7240,
-        "finMs": 7580
-      },
-      {
-        "palabra": "infinita",
-        "inicioMs": 7580,
-        "finMs": 8060
-      },
-      {
-        "palabra": "convive",
-        "inicioMs": 8060,
-        "finMs": 8460
-      },
-      {
-        "palabra": "con",
-        "inicioMs": 8460,
-        "finMs": 8620
-      },
-      {
-        "palabra": "una",
-        "inicioMs": 8620,
-        "finMs": 8800
-      },
-      {
-        "palabra": "trampa",
-        "inicioMs": 8800,
-        "finMs": 9080
-      },
-      {
-        "palabra": "mortal",
-        "inicioMs": 9080,
-        "finMs": 9380
-      },
-      {
-        "palabra": "absoluta",
-        "inicioMs": 9380,
-        "finMs": 10060
-      }
-    ]
-  },
-  "escena_8": {
-    "sha256": "badbd042785323f45c549bbed3e7a77b0818108fb44594039cbb2be8ea10c4ae",
-    "pipelineVersion": "v3_sentence_tailcut",
-    "texto": "Actualmente nuestro planeta se mantiene firme a veintitrés punto cinco grados de inclinación, lo que permite que existan estaciones climáticas predecibles.",
-    "voiceConds": "alex.conds.pt",
-    "duracionSegundos": 7.81,
-    "palabras": [
-      {
-        "palabra": "Actualmente",
-        "inicioMs": 0,
         "finMs": 640
       },
       {
-        "palabra": "nuestro",
-        "inicioMs": 660,
-        "finMs": 940
-      },
-      {
-        "palabra": "planeta",
-        "inicioMs": 940,
+        "palabra": "asustado",
+        "inicioMs": 640,
         "finMs": 1200
       },
       {
-        "palabra": "se",
-        "inicioMs": 1200,
-        "finMs": 1460
+        "palabra": "la",
+        "inicioMs": 1360,
+        "finMs": 1480
       },
       {
-        "palabra": "mantiene",
-        "inicioMs": 1460,
-        "finMs": 1760
-      },
-      {
-        "palabra": "firme",
-        "inicioMs": 1760,
-        "finMs": 2100
-      },
-      {
-        "palabra": "a",
-        "inicioMs": 2100,
-        "finMs": 2160
-      },
-      {
-        "palabra": "veintitrés",
-        "inicioMs": 2160,
-        "finMs": 2500
-      },
-      {
-        "palabra": "punto",
-        "inicioMs": 2500,
-        "finMs": 3260
-      },
-      {
-        "palabra": "cinco",
-        "inicioMs": 3260,
-        "finMs": 3720
-      },
-      {
-        "palabra": "grados",
-        "inicioMs": 3720,
-        "finMs": 3840
+        "palabra": "parrilla",
+        "inicioMs": 1480,
+        "finMs": 1840
       },
       {
         "palabra": "de",
-        "inicioMs": 3840,
-        "finMs": 4420
+        "inicioMs": 1840,
+        "finMs": 1940
       },
       {
-        "palabra": "inclinación",
-        "inicioMs": 4620,
-        "finMs": 4780
+        "palabra": "un",
+        "inicioMs": 1940,
+        "finMs": 2040
       },
       {
-        "palabra": "lo",
-        "inicioMs": 4780,
+        "palabra": "coche",
+        "inicioMs": 2040,
+        "finMs": 2320
+      },
+      {
+        "palabra": "enojado",
+        "inicioMs": 2320,
+        "finMs": 2760
+      },
+      {
+        "palabra": "una",
+        "inicioMs": 2920,
+        "finMs": 3080
+      },
+      {
+        "palabra": "mochila",
+        "inicioMs": 3080,
+        "finMs": 3440
+      },
+      {
+        "palabra": "feliz",
+        "inicioMs": 3440,
+        "finMs": 4480
+      },
+      {
+        "palabra": "Por",
+        "inicioMs": 4480,
+        "finMs": 4600
+      },
+      {
+        "palabra": "qué",
+        "inicioMs": 4600,
+        "finMs": 4760
+      },
+      {
+        "palabra": "tu",
+        "inicioMs": 4760,
         "finMs": 4900
       },
       {
-        "palabra": "que",
+        "palabra": "cerebro",
         "inicioMs": 4900,
         "finMs": 5180
       },
       {
-        "palabra": "permite",
+        "palabra": "tarda",
         "inicioMs": 5180,
-        "finMs": 5400
+        "finMs": 5500
+      },
+      {
+        "palabra": "apenas",
+        "inicioMs": 5500,
+        "finMs": 5840
+      },
+      {
+        "palabra": "unos",
+        "inicioMs": 5840,
+        "finMs": 6060
+      },
+      {
+        "palabra": "milisegundos",
+        "inicioMs": 6060,
+        "finMs": 6760
+      },
+      {
+        "palabra": "en",
+        "inicioMs": 6760,
+        "finMs": 6960
+      },
+      {
+        "palabra": "ver",
+        "inicioMs": 6960,
+        "finMs": 7060
+      },
+      {
+        "palabra": "emociones",
+        "inicioMs": 7060,
+        "finMs": 7420
+      },
+      {
+        "palabra": "humanas",
+        "inicioMs": 7420,
+        "finMs": 7880
+      },
+      {
+        "palabra": "en",
+        "inicioMs": 7880,
+        "finMs": 8040
+      },
+      {
+        "palabra": "simples",
+        "inicioMs": 8040,
+        "finMs": 8320
+      },
+      {
+        "palabra": "objetos",
+        "inicioMs": 8320,
+        "finMs": 8680
+      },
+      {
+        "palabra": "muertos",
+        "inicioMs": 8680,
+        "finMs": 9180
+      }
+    ]
+  },
+  "escena_3": {
+    "sha256": "36a4a4c6beb84c7a6191509b078f7d2eab35d72d2786498af75937d37d46872a",
+    "pipelineVersion": "v4_nw_precision_align",
+    "texto": "Para un homínido en la sabana, la selección natural tenía una regla brutal: equivocarse por paranoico era gratis; equivocarse por distraído era el final absoluto.",
+    "textoTts": "Para un homínido en la sabana, la selección natural tenía una regla brutal: equivocarse por paranoico era gratis; equivocarse por distraído era el final absoluto.",
+    "voiceConds": "alex.conds.pt",
+    "duracionSegundos": 9.586,
+    "palabras": [
+      {
+        "palabra": "Para",
+        "inicioMs": 0,
+        "finMs": 160
+      },
+      {
+        "palabra": "un",
+        "inicioMs": 160,
+        "finMs": 340
+      },
+      {
+        "palabra": "homínido",
+        "inicioMs": 340,
+        "finMs": 720
+      },
+      {
+        "palabra": "en",
+        "inicioMs": 720,
+        "finMs": 820
+      },
+      {
+        "palabra": "la",
+        "inicioMs": 820,
+        "finMs": 880
+      },
+      {
+        "palabra": "sabana",
+        "inicioMs": 880,
+        "finMs": 1300
+      },
+      {
+        "palabra": "la",
+        "inicioMs": 1640,
+        "finMs": 1700
+      },
+      {
+        "palabra": "selección",
+        "inicioMs": 1700,
+        "finMs": 2120
+      },
+      {
+        "palabra": "natural",
+        "inicioMs": 2120,
+        "finMs": 2420
+      },
+      {
+        "palabra": "tenía",
+        "inicioMs": 2420,
+        "finMs": 2860
+      },
+      {
+        "palabra": "una",
+        "inicioMs": 2860,
+        "finMs": 3060
+      },
+      {
+        "palabra": "regla",
+        "inicioMs": 3060,
+        "finMs": 3420
+      },
+      {
+        "palabra": "brutal",
+        "inicioMs": 3420,
+        "finMs": 3740
+      },
+      {
+        "palabra": "equivocarse",
+        "inicioMs": 4100,
+        "finMs": 4680
+      },
+      {
+        "palabra": "por",
+        "inicioMs": 4680,
+        "finMs": 4840
+      },
+      {
+        "palabra": "paranoico",
+        "inicioMs": 4840,
+        "finMs": 5420
+      },
+      {
+        "palabra": "era",
+        "inicioMs": 5420,
+        "finMs": 5580
+      },
+      {
+        "palabra": "gratis",
+        "inicioMs": 5580,
+        "finMs": 6100
+      },
+      {
+        "palabra": "equivocarse",
+        "inicioMs": 6340,
+        "finMs": 6920
+      },
+      {
+        "palabra": "por",
+        "inicioMs": 6920,
+        "finMs": 7120
+      },
+      {
+        "palabra": "distraído",
+        "inicioMs": 7120,
+        "finMs": 7660
+      },
+      {
+        "palabra": "era",
+        "inicioMs": 7660,
+        "finMs": 7900
+      },
+      {
+        "palabra": "el",
+        "inicioMs": 7900,
+        "finMs": 8000
+      },
+      {
+        "palabra": "final",
+        "inicioMs": 8000,
+        "finMs": 8220
+      },
+      {
+        "palabra": "absoluto",
+        "inicioMs": 8220,
+        "finMs": 8900
+      }
+    ]
+  },
+  "escena_7": {
+    "sha256": "26390be3964e0575b5b6b045c617fde3c98713b72ec886e34fbd1246f9cde6f0",
+    "pipelineVersion": "v4_nw_precision_align",
+    "texto": "Así que la próxima vez que tu taza de café te sonría por la mañana... no te estás volviendo loco. Estás viendo millones de años de pura evolución manteniéndote siempre a salvo.",
+    "textoTts": "Así que la próxima vez que tu taza de café te sonría por la mañana... no te estás volviendo loco. Estás viendo millones de años de pura evolución manteniéndote siempre a salvo.",
+    "voiceConds": "alex.conds.pt",
+    "duracionSegundos": 8.602,
+    "palabras": [
+      {
+        "palabra": "Así",
+        "inicioMs": 0,
+        "finMs": 60
       },
       {
         "palabra": "que",
-        "inicioMs": 5400,
-        "finMs": 5800
+        "inicioMs": 60,
+        "finMs": 180
       },
       {
-        "palabra": "existan",
-        "inicioMs": 5800,
-        "finMs": 6200
+        "palabra": "la",
+        "inicioMs": 180,
+        "finMs": 280
       },
       {
-        "palabra": "estaciones",
-        "inicioMs": 6200,
-        "finMs": 6660
+        "palabra": "próxima",
+        "inicioMs": 280,
+        "finMs": 600
       },
       {
-        "palabra": "climáticas",
-        "inicioMs": 6660,
-        "finMs": 7320
+        "palabra": "vez",
+        "inicioMs": 600,
+        "finMs": 800
       },
       {
-        "palabra": "predecibles",
-        "inicioMs": 7320,
-        "finMs": 7560
+        "palabra": "que",
+        "inicioMs": 800,
+        "finMs": 920
+      },
+      {
+        "palabra": "tu",
+        "inicioMs": 920,
+        "finMs": 1060
+      },
+      {
+        "palabra": "taza",
+        "inicioMs": 1060,
+        "finMs": 1300
+      },
+      {
+        "palabra": "de",
+        "inicioMs": 1300,
+        "finMs": 1440
+      },
+      {
+        "palabra": "café",
+        "inicioMs": 1440,
+        "finMs": 1660
+      },
+      {
+        "palabra": "te",
+        "inicioMs": 1660,
+        "finMs": 1840
+      },
+      {
+        "palabra": "sonría",
+        "inicioMs": 1840,
+        "finMs": 2200
+      },
+      {
+        "palabra": "por",
+        "inicioMs": 2200,
+        "finMs": 2380
+      },
+      {
+        "palabra": "la",
+        "inicioMs": 2380,
+        "finMs": 2500
+      },
+      {
+        "palabra": "mañana",
+        "inicioMs": 2500,
+        "finMs": 2820
+      },
+      {
+        "palabra": "no",
+        "inicioMs": 3200,
+        "finMs": 3280
+      },
+      {
+        "palabra": "te",
+        "inicioMs": 3280,
+        "finMs": 3400
+      },
+      {
+        "palabra": "estás",
+        "inicioMs": 3400,
+        "finMs": 3560
+      },
+      {
+        "palabra": "volviendo",
+        "inicioMs": 3560,
+        "finMs": 3960
+      },
+      {
+        "palabra": "loco",
+        "inicioMs": 3960,
+        "finMs": 4320
+      },
+      {
+        "palabra": "Estás",
+        "inicioMs": 4520,
+        "finMs": 4780
+      },
+      {
+        "palabra": "viendo",
+        "inicioMs": 4780,
+        "finMs": 5000
+      },
+      {
+        "palabra": "millones",
+        "inicioMs": 5000,
+        "finMs": 5280
+      },
+      {
+        "palabra": "de",
+        "inicioMs": 5280,
+        "finMs": 5600
+      },
+      {
+        "palabra": "años",
+        "inicioMs": 5600,
+        "finMs": 5780
+      },
+      {
+        "palabra": "de",
+        "inicioMs": 5780,
+        "finMs": 5960
+      },
+      {
+        "palabra": "pura",
+        "inicioMs": 5960,
+        "finMs": 6220
+      },
+      {
+        "palabra": "evolución",
+        "inicioMs": 6220,
+        "finMs": 6620
+      },
+      {
+        "palabra": "manteniéndote",
+        "inicioMs": 6620,
+        "finMs": 7340
+      },
+      {
+        "palabra": "siempre",
+        "inicioMs": 7340,
+        "finMs": 7600
+      },
+      {
+        "palabra": "a",
+        "inicioMs": 7600,
+        "finMs": 7760
+      },
+      {
+        "palabra": "salvo",
+        "inicioMs": 7760,
+        "finMs": 8020
       }
     ]
   },
@@ -1859,6 +972,775 @@
         "palabra": "magia",
         "inicioMs": 8280,
         "finMs": 8680
+      }
+    ]
+  },
+  "escena_5": {
+    "sha256": "95a80fc7446ff6b83e8116db47d98ceee085e32c6380aa8baced24dbdbe04ab8",
+    "pipelineVersion": "v4_nw_precision_align",
+    "texto": "Y no solo detecta rostros aislados: necesita adivinar intenciones sociales al instante. En una fracción de segundo decide: ¿está furioso?, ¿es una amenaza real?, ¿puedo confiar en él?",
+    "textoTts": "Y no solo detecta rostros aislados: necesita adivinar intenciones sociales al instante. En una fracción de segundo decide: ¿está furioso?, ¿es una amenaza real?, ¿puedo confiar en él?",
+    "voiceConds": "alex.conds.pt",
+    "duracionSegundos": 10.138,
+    "palabras": [
+      {
+        "palabra": "Y",
+        "inicioMs": 0,
+        "finMs": 40
+      },
+      {
+        "palabra": "no",
+        "inicioMs": 0,
+        "finMs": 260
+      },
+      {
+        "palabra": "solo",
+        "inicioMs": 260,
+        "finMs": 500
+      },
+      {
+        "palabra": "detecta",
+        "inicioMs": 500,
+        "finMs": 960
+      },
+      {
+        "palabra": "rostros",
+        "inicioMs": 960,
+        "finMs": 1300
+      },
+      {
+        "palabra": "aislados",
+        "inicioMs": 1300,
+        "finMs": 1860
+      },
+      {
+        "palabra": "necesita",
+        "inicioMs": 2180,
+        "finMs": 2480
+      },
+      {
+        "palabra": "adivinar",
+        "inicioMs": 2480,
+        "finMs": 2920
+      },
+      {
+        "palabra": "intenciones",
+        "inicioMs": 2920,
+        "finMs": 3400
+      },
+      {
+        "palabra": "sociales",
+        "inicioMs": 3400,
+        "finMs": 3780
+      },
+      {
+        "palabra": "al",
+        "inicioMs": 3780,
+        "finMs": 3980
+      },
+      {
+        "palabra": "instante",
+        "inicioMs": 3980,
+        "finMs": 4500
+      },
+      {
+        "palabra": "En",
+        "inicioMs": 4740,
+        "finMs": 4820
+      },
+      {
+        "palabra": "una",
+        "inicioMs": 4820,
+        "finMs": 4960
+      },
+      {
+        "palabra": "fracción",
+        "inicioMs": 4960,
+        "finMs": 5280
+      },
+      {
+        "palabra": "de",
+        "inicioMs": 5280,
+        "finMs": 5420
+      },
+      {
+        "palabra": "segundo",
+        "inicioMs": 5420,
+        "finMs": 5700
+      },
+      {
+        "palabra": "decide",
+        "inicioMs": 5700,
+        "finMs": 6100
+      },
+      {
+        "palabra": "está",
+        "inicioMs": 6100,
+        "finMs": 6760
+      },
+      {
+        "palabra": "furioso",
+        "inicioMs": 6760,
+        "finMs": 7720
+      },
+      {
+        "palabra": "es",
+        "inicioMs": 7720,
+        "finMs": 7840
+      },
+      {
+        "palabra": "una",
+        "inicioMs": 7840,
+        "finMs": 7980
+      },
+      {
+        "palabra": "amenaza",
+        "inicioMs": 7980,
+        "finMs": 8260
+      },
+      {
+        "palabra": "real",
+        "inicioMs": 8260,
+        "finMs": 8860
+      },
+      {
+        "palabra": "puedo",
+        "inicioMs": 8860,
+        "finMs": 9040
+      },
+      {
+        "palabra": "confiar",
+        "inicioMs": 9040,
+        "finMs": 9340
+      },
+      {
+        "palabra": "en",
+        "inicioMs": 9340,
+        "finMs": 9480
+      },
+      {
+        "palabra": "él",
+        "inicioMs": 9480,
+        "finMs": 9640
+      }
+    ]
+  },
+  "escena_6": {
+    "sha256": "faa580f7710392a859c6dd4e328862a2e73394dfc7ff362ac3a8d0075e4840b7",
+    "pipelineVersion": "v4_nw_precision_align",
+    "texto": "Por eso humanizamos aspiradoras robot, le hablamos a nuestro auto y vemos ojos en una casa: nuestro instinto social es tan potente que desborda la lógica.",
+    "textoTts": "Por eso humanizamos aspiradoras robot, le hablamos a nuestro auto y vemos ojos en una casa: nuestro instinto social es tan potente que desborda la lógica.",
+    "voiceConds": "alex.conds.pt",
+    "duracionSegundos": 8.53,
+    "palabras": [
+      {
+        "palabra": "Por",
+        "inicioMs": 0,
+        "finMs": 220
+      },
+      {
+        "palabra": "eso",
+        "inicioMs": 220,
+        "finMs": 380
+      },
+      {
+        "palabra": "humanizamos",
+        "inicioMs": 380,
+        "finMs": 880
+      },
+      {
+        "palabra": "aspiradoras",
+        "inicioMs": 880,
+        "finMs": 1500
+      },
+      {
+        "palabra": "robot",
+        "inicioMs": 1500,
+        "finMs": 1780
+      },
+      {
+        "palabra": "le",
+        "inicioMs": 2100,
+        "finMs": 2180
+      },
+      {
+        "palabra": "hablamos",
+        "inicioMs": 2180,
+        "finMs": 2440
+      },
+      {
+        "palabra": "a",
+        "inicioMs": 2440,
+        "finMs": 2560
+      },
+      {
+        "palabra": "nuestro",
+        "inicioMs": 2560,
+        "finMs": 2800
+      },
+      {
+        "palabra": "auto",
+        "inicioMs": 2800,
+        "finMs": 3040
+      },
+      {
+        "palabra": "y",
+        "inicioMs": 3040,
+        "finMs": 3180
+      },
+      {
+        "palabra": "vemos",
+        "inicioMs": 3180,
+        "finMs": 3320
+      },
+      {
+        "palabra": "ojos",
+        "inicioMs": 3320,
+        "finMs": 3600
+      },
+      {
+        "palabra": "en",
+        "inicioMs": 3600,
+        "finMs": 3780
+      },
+      {
+        "palabra": "una",
+        "inicioMs": 3780,
+        "finMs": 3940
+      },
+      {
+        "palabra": "casa",
+        "inicioMs": 3940,
+        "finMs": 4300
+      },
+      {
+        "palabra": "nuestro",
+        "inicioMs": 4600,
+        "finMs": 4940
+      },
+      {
+        "palabra": "instinto",
+        "inicioMs": 4940,
+        "finMs": 5420
+      },
+      {
+        "palabra": "social",
+        "inicioMs": 5420,
+        "finMs": 5800
+      },
+      {
+        "palabra": "es",
+        "inicioMs": 5800,
+        "finMs": 6140
+      },
+      {
+        "palabra": "tan",
+        "inicioMs": 6140,
+        "finMs": 6300
+      },
+      {
+        "palabra": "potente",
+        "inicioMs": 6300,
+        "finMs": 6800
+      },
+      {
+        "palabra": "que",
+        "inicioMs": 6800,
+        "finMs": 6960
+      },
+      {
+        "palabra": "desborda",
+        "inicioMs": 6960,
+        "finMs": 7460
+      },
+      {
+        "palabra": "la",
+        "inicioMs": 7460,
+        "finMs": 7540
+      },
+      {
+        "palabra": "lógica",
+        "inicioMs": 7540,
+        "finMs": 7980
+      }
+    ]
+  },
+  "escena_8": {
+    "sha256": "c11573e552ba796e8d1e6c8d9d3a0d0d48c72933f2d3fab6c42548815cba1db2",
+    "pipelineVersion": "v4_nw_precision_align",
+    "texto": "Así que cuando veas agua en un altar, es para calmar la sed del viaje. La comida, para reponer fuerzas. Y el perro, para que nadie camine solo. ¿A cuál de los cuatro destinos te gustaría llegar?",
+    "voiceConds": "alex.conds.pt",
+    "duracionSegundos": 10.738,
+    "palabras": [
+      {
+        "palabra": "Así",
+        "inicioMs": 0,
+        "finMs": 320
+      },
+      {
+        "palabra": "que",
+        "inicioMs": 320,
+        "finMs": 480
+      },
+      {
+        "palabra": "cuando",
+        "inicioMs": 480,
+        "finMs": 700
+      },
+      {
+        "palabra": "veas",
+        "inicioMs": 700,
+        "finMs": 1040
+      },
+      {
+        "palabra": "agua",
+        "inicioMs": 1040,
+        "finMs": 1200
+      },
+      {
+        "palabra": "en",
+        "inicioMs": 1200,
+        "finMs": 1340
+      },
+      {
+        "palabra": "un",
+        "inicioMs": 1340,
+        "finMs": 1420
+      },
+      {
+        "palabra": "altar",
+        "inicioMs": 1420,
+        "finMs": 1740
+      },
+      {
+        "palabra": "es",
+        "inicioMs": 2100,
+        "finMs": 2200
+      },
+      {
+        "palabra": "para",
+        "inicioMs": 2200,
+        "finMs": 2380
+      },
+      {
+        "palabra": "calmar",
+        "inicioMs": 2380,
+        "finMs": 2660
+      },
+      {
+        "palabra": "la",
+        "inicioMs": 2660,
+        "finMs": 2840
+      },
+      {
+        "palabra": "sed",
+        "inicioMs": 2840,
+        "finMs": 3020
+      },
+      {
+        "palabra": "del",
+        "inicioMs": 3020,
+        "finMs": 3200
+      },
+      {
+        "palabra": "viaje",
+        "inicioMs": 3200,
+        "finMs": 3560
+      },
+      {
+        "palabra": "La",
+        "inicioMs": 3860,
+        "finMs": 3940
+      },
+      {
+        "palabra": "comida",
+        "inicioMs": 3940,
+        "finMs": 4280
+      },
+      {
+        "palabra": "para",
+        "inicioMs": 4400,
+        "finMs": 4580
+      },
+      {
+        "palabra": "reponer",
+        "inicioMs": 4580,
+        "finMs": 4960
+      },
+      {
+        "palabra": "fuerzas",
+        "inicioMs": 4960,
+        "finMs": 5540
+      },
+      {
+        "palabra": "Y",
+        "inicioMs": 5840,
+        "finMs": 5900
+      },
+      {
+        "palabra": "el",
+        "inicioMs": 5900,
+        "finMs": 6040
+      },
+      {
+        "palabra": "perro",
+        "inicioMs": 6040,
+        "finMs": 6400
+      },
+      {
+        "palabra": "para",
+        "inicioMs": 6520,
+        "finMs": 6640
+      },
+      {
+        "palabra": "que",
+        "inicioMs": 6640,
+        "finMs": 6800
+      },
+      {
+        "palabra": "nadie",
+        "inicioMs": 6800,
+        "finMs": 7000
+      },
+      {
+        "palabra": "camine",
+        "inicioMs": 7000,
+        "finMs": 7400
+      },
+      {
+        "palabra": "solo",
+        "inicioMs": 7400,
+        "finMs": 7720
+      },
+      {
+        "palabra": "A",
+        "inicioMs": 7960,
+        "finMs": 8040
+      },
+      {
+        "palabra": "cuál",
+        "inicioMs": 8040,
+        "finMs": 8200
+      },
+      {
+        "palabra": "de",
+        "inicioMs": 8200,
+        "finMs": 8340
+      },
+      {
+        "palabra": "los",
+        "inicioMs": 8340,
+        "finMs": 8460
+      },
+      {
+        "palabra": "cuatro",
+        "inicioMs": 8460,
+        "finMs": 8700
+      },
+      {
+        "palabra": "destinos",
+        "inicioMs": 8700,
+        "finMs": 9160
+      },
+      {
+        "palabra": "te",
+        "inicioMs": 9160,
+        "finMs": 9340
+      },
+      {
+        "palabra": "gustaría",
+        "inicioMs": 9340,
+        "finMs": 9660
+      },
+      {
+        "palabra": "llegar",
+        "inicioMs": 9660,
+        "finMs": 10000
+      }
+    ]
+  },
+  "escena_2": {
+    "sha256": "1817d970ed41b2e7091e07c0f69e7468141dc83e4a01f7c0e579ce5f2fee3080",
+    "pipelineVersion": "v4_nw_precision_align",
+    "texto": "No es ningún fallo mental ni una tontería infantil: es un circuito biológico de supervivencia ancestral que literalmente salvó a nuestros antepasados de la extinción total.",
+    "textoTts": "No es ningún fallo mental ni una tontería infantil: es un circuito biológico de supervivencia ancestral que literalmente salvó a nuestros antepasados de la extinción total.",
+    "voiceConds": "alex.conds.pt",
+    "duracionSegundos": 9.13,
+    "palabras": [
+      {
+        "palabra": "No",
+        "inicioMs": 0,
+        "finMs": 220
+      },
+      {
+        "palabra": "es",
+        "inicioMs": 220,
+        "finMs": 320
+      },
+      {
+        "palabra": "ningún",
+        "inicioMs": 320,
+        "finMs": 580
+      },
+      {
+        "palabra": "fallo",
+        "inicioMs": 580,
+        "finMs": 940
+      },
+      {
+        "palabra": "mental",
+        "inicioMs": 940,
+        "finMs": 1280
+      },
+      {
+        "palabra": "ni",
+        "inicioMs": 1280,
+        "finMs": 1560
+      },
+      {
+        "palabra": "una",
+        "inicioMs": 1560,
+        "finMs": 1740
+      },
+      {
+        "palabra": "tontería",
+        "inicioMs": 1740,
+        "finMs": 2200
+      },
+      {
+        "palabra": "infantil",
+        "inicioMs": 2200,
+        "finMs": 2760
+      },
+      {
+        "palabra": "es",
+        "inicioMs": 3060,
+        "finMs": 3180
+      },
+      {
+        "palabra": "un",
+        "inicioMs": 3180,
+        "finMs": 3320
+      },
+      {
+        "palabra": "circuito",
+        "inicioMs": 3320,
+        "finMs": 3820
+      },
+      {
+        "palabra": "biológico",
+        "inicioMs": 3820,
+        "finMs": 4320
+      },
+      {
+        "palabra": "de",
+        "inicioMs": 4320,
+        "finMs": 4440
+      },
+      {
+        "palabra": "supervivencia",
+        "inicioMs": 4440,
+        "finMs": 5120
+      },
+      {
+        "palabra": "ancestral",
+        "inicioMs": 5120,
+        "finMs": 5520
+      },
+      {
+        "palabra": "que",
+        "inicioMs": 5520,
+        "finMs": 5740
+      },
+      {
+        "palabra": "literalmente",
+        "inicioMs": 5740,
+        "finMs": 6280
+      },
+      {
+        "palabra": "salvó",
+        "inicioMs": 6280,
+        "finMs": 6780
+      },
+      {
+        "palabra": "a",
+        "inicioMs": 6780,
+        "finMs": 6840
+      },
+      {
+        "palabra": "nuestros",
+        "inicioMs": 6840,
+        "finMs": 7020
+      },
+      {
+        "palabra": "antepasados",
+        "inicioMs": 7020,
+        "finMs": 7740
+      },
+      {
+        "palabra": "de",
+        "inicioMs": 7740,
+        "finMs": 7860
+      },
+      {
+        "palabra": "la",
+        "inicioMs": 7860,
+        "finMs": 7940
+      },
+      {
+        "palabra": "extinción",
+        "inicioMs": 7940,
+        "finMs": 8360
+      },
+      {
+        "palabra": "total",
+        "inicioMs": 8360,
+        "finMs": 8680
+      }
+    ]
+  },
+  "escena_4": {
+    "sha256": "cb6cd6b4a2d8c2af7ade802428e2e867c7f75a64715d9ebcbb6c2421a1d4b867",
+    "pipelineVersion": "v4_nw_precision_align",
+    "texto": "Por eso tu cerebro viene con un chip de fábrica ultrasensible: el área fusiforme facial, que procesa caras en ciento cincuenta milisegundos, antes de que seas consciente.",
+    "textoTts": "Por eso tu cerebro viene con un chip de fábrica ultrasensible: el área fusiforme facial, que procesa caras en ciento cincuenta milisegundos, antes de que seas consciente.",
+    "voiceConds": "alex.conds.pt",
+    "duracionSegundos": 9.562,
+    "palabras": [
+      {
+        "palabra": "Por",
+        "inicioMs": 0,
+        "finMs": 200
+      },
+      {
+        "palabra": "eso",
+        "inicioMs": 200,
+        "finMs": 360
+      },
+      {
+        "palabra": "tu",
+        "inicioMs": 360,
+        "finMs": 520
+      },
+      {
+        "palabra": "cerebro",
+        "inicioMs": 520,
+        "finMs": 840
+      },
+      {
+        "palabra": "viene",
+        "inicioMs": 840,
+        "finMs": 1060
+      },
+      {
+        "palabra": "con",
+        "inicioMs": 1060,
+        "finMs": 1260
+      },
+      {
+        "palabra": "un",
+        "inicioMs": 1260,
+        "finMs": 1400
+      },
+      {
+        "palabra": "chip",
+        "inicioMs": 1400,
+        "finMs": 1580
+      },
+      {
+        "palabra": "de",
+        "inicioMs": 1580,
+        "finMs": 1760
+      },
+      {
+        "palabra": "fábrica",
+        "inicioMs": 1760,
+        "finMs": 2140
+      },
+      {
+        "palabra": "ultrasensible",
+        "inicioMs": 2140,
+        "finMs": 2860
+      },
+      {
+        "palabra": "el",
+        "inicioMs": 3100,
+        "finMs": 3240
+      },
+      {
+        "palabra": "área",
+        "inicioMs": 3240,
+        "finMs": 3400
+      },
+      {
+        "palabra": "fusiforme",
+        "inicioMs": 3400,
+        "finMs": 4000
+      },
+      {
+        "palabra": "facial",
+        "inicioMs": 4000,
+        "finMs": 4340
+      },
+      {
+        "palabra": "que",
+        "inicioMs": 4720,
+        "finMs": 4900
+      },
+      {
+        "palabra": "procesa",
+        "inicioMs": 4900,
+        "finMs": 5320
+      },
+      {
+        "palabra": "caras",
+        "inicioMs": 5320,
+        "finMs": 5640
+      },
+      {
+        "palabra": "en",
+        "inicioMs": 5640,
+        "finMs": 5760
+      },
+      {
+        "palabra": "ciento",
+        "inicioMs": 5760,
+        "finMs": 6080
+      },
+      {
+        "palabra": "cincuenta",
+        "inicioMs": 6080,
+        "finMs": 6400
+      },
+      {
+        "palabra": "milisegundos",
+        "inicioMs": 6400,
+        "finMs": 7140
+      },
+      {
+        "palabra": "antes",
+        "inicioMs": 7140,
+        "finMs": 7780
+      },
+      {
+        "palabra": "de",
+        "inicioMs": 7780,
+        "finMs": 7940
+      },
+      {
+        "palabra": "que",
+        "inicioMs": 7940,
+        "finMs": 8040
+      },
+      {
+        "palabra": "seas",
+        "inicioMs": 8040,
+        "finMs": 8260
+      },
+      {
+        "palabra": "consciente",
+        "inicioMs": 8260,
+        "finMs": 8940
       }
     ]
   }

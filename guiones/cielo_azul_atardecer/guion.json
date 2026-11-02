@@ -1,0 +1,1649 @@
+{
+  "meta": {
+    "id": "cielo_azul_atardecer",
+    "slug": "cielo_azul_atardecer",
+    "temaResumen": "¿Por qué el cielo es azul de día y rojo al atardecer debido a la dispersión de Rayleigh?",
+    "titulo": "¿Por qué el cielo cambia de azul a rojo al atardecer?",
+    "titulo_corto": "EL COLOR DEL CIELO",
+    "gancho": "¿Alguna vez te has preguntado por qué el cielo es de un azul brillante al mediodía, pero se enciende en tonos rojos y naranjas cuando cae el sol?",
+    "fuentes": [
+      "Lord Rayleigh (Philosophical Magazine, 1871: Light Scattering in Atmosphere)",
+      "NASA Earth Observatory: Atmospheric Optics"
+    ],
+    "genero": "SCIENCE",
+    "duracionObjetivo": [
+      62,
+      110
+    ]
+  },
+  "escenas": [
+    {
+      "id": 1,
+      "texto": "¿Alguna vez te has preguntado por qué el cielo es de un azul brillante al mediodía, pero se vuelve rojo fuego al atardecer?",
+      "icono": "Sun",
+      "colorIcono": "#F59E0B",
+      "tituloVisual": "¿POR QUÉ ES AZUL?",
+      "composicionVisual": "plano_general",
+      "escenario": "cielo_dia",
+      "layout": "narrativo",
+      "transicion": "zoom_in",
+      "efectosCamara": [
+        "drift"
+      ],
+      "sfx": "sfx/sfx_tension_riser.wav",
+      "volumenSfx": 0.22,
+      "personajes": [
+        {
+          "id": "explorador_cielo",
+          "posicion": {
+            "x": -240,
+            "y": 40
+          },
+          "escala": 1,
+          "orientacion": "derecha",
+          "acciones": [
+            {
+              "tipo": "caminar_hacia",
+              "desdeX": -300,
+              "haciaX": -80
+            }
+          ],
+          "habla": true
+        }
+      ],
+      "objetos": [
+        {
+          "id": "sol_intro",
+          "propId": "sun_radiant",
+          "posicion": {
+            "x": 260,
+            "y": -90
+          },
+          "escala": 1.55,
+          "animacion": {
+            "tipo": "pulso"
+          }
+        }
+      ],
+      "palabrasClave": [
+        "cielo azul",
+        "mediodía",
+        "rojo fuego",
+        "atardecer"
+      ],
+      "duracionSegundos": 6.226,
+      "palabras": [
+        {
+          "palabra": "Alguna",
+          "inicioMs": 0,
+          "finMs": 400
+        },
+        {
+          "palabra": "vez",
+          "inicioMs": 400,
+          "finMs": 540
+        },
+        {
+          "palabra": "te",
+          "inicioMs": 540,
+          "finMs": 720
+        },
+        {
+          "palabra": "has",
+          "inicioMs": 720,
+          "finMs": 780
+        },
+        {
+          "palabra": "preguntado",
+          "inicioMs": 780,
+          "finMs": 1340
+        },
+        {
+          "palabra": "por",
+          "inicioMs": 1340,
+          "finMs": 1540
+        },
+        {
+          "palabra": "qué",
+          "inicioMs": 1540,
+          "finMs": 1700
+        },
+        {
+          "palabra": "el",
+          "inicioMs": 1700,
+          "finMs": 1840
+        },
+        {
+          "palabra": "cielo",
+          "inicioMs": 1840,
+          "finMs": 2080
+        },
+        {
+          "palabra": "es",
+          "inicioMs": 2080,
+          "finMs": 2340
+        },
+        {
+          "palabra": "de",
+          "inicioMs": 2340,
+          "finMs": 2520
+        },
+        {
+          "palabra": "un",
+          "inicioMs": 2520,
+          "finMs": 2740
+        },
+        {
+          "palabra": "azul",
+          "inicioMs": 2740,
+          "finMs": 3220
+        },
+        {
+          "palabra": "brillante",
+          "inicioMs": 3220,
+          "finMs": 3320
+        },
+        {
+          "palabra": "al",
+          "inicioMs": 3320,
+          "finMs": 3820
+        },
+        {
+          "palabra": "mediodía",
+          "inicioMs": 3960,
+          "finMs": 4080
+        },
+        {
+          "palabra": "pero",
+          "inicioMs": 4080,
+          "finMs": 4220
+        },
+        {
+          "palabra": "se",
+          "inicioMs": 4220,
+          "finMs": 4520
+        },
+        {
+          "palabra": "vuelve",
+          "inicioMs": 4520,
+          "finMs": 4600
+        },
+        {
+          "palabra": "rojo",
+          "inicioMs": 4600,
+          "finMs": 4800
+        },
+        {
+          "palabra": "fuego",
+          "inicioMs": 4800,
+          "finMs": 5020
+        },
+        {
+          "palabra": "al",
+          "inicioMs": 5020,
+          "finMs": 5220
+        },
+        {
+          "palabra": "atardecer",
+          "inicioMs": 5220,
+          "finMs": 5440
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "texto": "Todo comienza con la luz blanca del Sol, que en realidad no es blanca, sino una mezcla de todos los colores del arcoíris.",
+      "icono": "Sparkles",
+      "colorIcono": "#38BDF8",
+      "tituloVisual": "LUZ SOLAR",
+      "composicionVisual": "plano_general",
+      "escenario": "cielo_dia",
+      "layout": "narrativo",
+      "transicion": "whip_right",
+      "efectosCamara": [
+        "drift"
+      ],
+      "personajes": [
+        {
+          "id": "fisico_optica",
+          "posicion": {
+            "x": -150,
+            "y": 30
+          },
+          "escala": 1,
+          "orientacion": "derecha",
+          "poseId": "comparing_two_objects",
+          "expresion": "analytical",
+          "habla": true
+        }
+      ],
+      "objetos": [
+        {
+          "id": "prisma_luz",
+          "propId": "prism_spectrum",
+          "posicion": {
+            "x": 240,
+            "y": -70
+          },
+          "escala": 1.55,
+          "animacion": {
+            "tipo": "pulso"
+          }
+        }
+      ],
+      "palabrasClave": [
+        "luz blanca",
+        "colores del arcoíris",
+        "espectro visible"
+      ],
+      "duracionSegundos": 6.466,
+      "palabras": [
+        {
+          "palabra": "Todo",
+          "inicioMs": 0,
+          "finMs": 220
+        },
+        {
+          "palabra": "comienza",
+          "inicioMs": 220,
+          "finMs": 900
+        },
+        {
+          "palabra": "con",
+          "inicioMs": 900,
+          "finMs": 1080
+        },
+        {
+          "palabra": "la",
+          "inicioMs": 1080,
+          "finMs": 1200
+        },
+        {
+          "palabra": "luz",
+          "inicioMs": 1200,
+          "finMs": 1340
+        },
+        {
+          "palabra": "blanca",
+          "inicioMs": 1340,
+          "finMs": 1740
+        },
+        {
+          "palabra": "del",
+          "inicioMs": 1740,
+          "finMs": 1900
+        },
+        {
+          "palabra": "Sol",
+          "inicioMs": 1900,
+          "finMs": 2220
+        },
+        {
+          "palabra": "que",
+          "inicioMs": 2320,
+          "finMs": 2400
+        },
+        {
+          "palabra": "en",
+          "inicioMs": 2400,
+          "finMs": 2460
+        },
+        {
+          "palabra": "realidad",
+          "inicioMs": 2460,
+          "finMs": 2660
+        },
+        {
+          "palabra": "no",
+          "inicioMs": 2660,
+          "finMs": 2920
+        },
+        {
+          "palabra": "es",
+          "inicioMs": 2920,
+          "finMs": 3040
+        },
+        {
+          "palabra": "blanca",
+          "inicioMs": 3040,
+          "finMs": 3440
+        },
+        {
+          "palabra": "sino",
+          "inicioMs": 3680,
+          "finMs": 3800
+        },
+        {
+          "palabra": "una",
+          "inicioMs": 3800,
+          "finMs": 4020
+        },
+        {
+          "palabra": "mezcla",
+          "inicioMs": 4020,
+          "finMs": 4360
+        },
+        {
+          "palabra": "de",
+          "inicioMs": 4360,
+          "finMs": 4500
+        },
+        {
+          "palabra": "todos",
+          "inicioMs": 4500,
+          "finMs": 4700
+        },
+        {
+          "palabra": "los",
+          "inicioMs": 4700,
+          "finMs": 4900
+        },
+        {
+          "palabra": "colores",
+          "inicioMs": 4900,
+          "finMs": 5240
+        },
+        {
+          "palabra": "del",
+          "inicioMs": 5240,
+          "finMs": 5400
+        },
+        {
+          "palabra": "arcoíris",
+          "inicioMs": 5400,
+          "finMs": 6000
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "texto": "Cada color viaja por el espacio como una onda electromagnética con una longitud de onda completamente distinta.",
+      "icono": "Waves",
+      "colorIcono": "#8B5CF6",
+      "tituloVisual": "ONDAS DE LUZ",
+      "composicionVisual": "plano_general",
+      "escenario": "cielo_dia",
+      "layout": "narrativo",
+      "transicion": "corte",
+      "efectosCamara": [
+        "drift"
+      ],
+      "personajes": [
+        {
+          "id": "explicador_ondas",
+          "posicion": {
+            "x": -140,
+            "y": 30
+          },
+          "escala": 1,
+          "orientacion": "derecha",
+          "poseId": "pointing_at_viewer",
+          "expresion": "analytical",
+          "habla": true
+        }
+      ],
+      "objetos": [
+        {
+          "id": "atomo_vibrando",
+          "propId": "atom",
+          "posicion": {
+            "x": 240,
+            "y": -70
+          },
+          "escala": 1.45,
+          "animacion": {
+            "tipo": "vibrar"
+          }
+        }
+      ],
+      "palabrasClave": [
+        "onda electromagnética",
+        "longitud de onda",
+        "colores"
+      ],
+      "duracionSegundos": 6.538,
+      "palabras": [
+        {
+          "palabra": "Cada",
+          "inicioMs": 0,
+          "finMs": 260
+        },
+        {
+          "palabra": "color",
+          "inicioMs": 260,
+          "finMs": 540
+        },
+        {
+          "palabra": "viaja",
+          "inicioMs": 540,
+          "finMs": 880
+        },
+        {
+          "palabra": "por",
+          "inicioMs": 880,
+          "finMs": 1060
+        },
+        {
+          "palabra": "el",
+          "inicioMs": 1060,
+          "finMs": 1200
+        },
+        {
+          "palabra": "espacio",
+          "inicioMs": 1200,
+          "finMs": 1540
+        },
+        {
+          "palabra": "como",
+          "inicioMs": 1540,
+          "finMs": 1840
+        },
+        {
+          "palabra": "una",
+          "inicioMs": 1840,
+          "finMs": 2060
+        },
+        {
+          "palabra": "onda",
+          "inicioMs": 2060,
+          "finMs": 2280
+        },
+        {
+          "palabra": "electromagnética",
+          "inicioMs": 2280,
+          "finMs": 3300
+        },
+        {
+          "palabra": "con",
+          "inicioMs": 3300,
+          "finMs": 3740
+        },
+        {
+          "palabra": "una",
+          "inicioMs": 3740,
+          "finMs": 3960
+        },
+        {
+          "palabra": "longitud",
+          "inicioMs": 3960,
+          "finMs": 4180
+        },
+        {
+          "palabra": "de",
+          "inicioMs": 4180,
+          "finMs": 4540
+        },
+        {
+          "palabra": "onda",
+          "inicioMs": 4540,
+          "finMs": 4740
+        },
+        {
+          "palabra": "completamente",
+          "inicioMs": 4740,
+          "finMs": 5380
+        },
+        {
+          "palabra": "distinta",
+          "inicioMs": 5380,
+          "finMs": 6080
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "texto": "La luz roja y naranja viaja en ondas largas y perezosas, mientras que la luz azul y violeta viaja en ondas cortas y veloces.",
+      "icono": "Activity",
+      "colorIcono": "#EC4899",
+      "tituloVisual": "ROJO VS AZUL",
+      "composicionVisual": "cifras_concepto",
+      "escenario": "cielo_dia",
+      "layout": "narrativo",
+      "transicion": "whip_left",
+      "efectosCamara": [
+        "drift"
+      ],
+      "personajes": [
+        {
+          "id": "comparador_espectro",
+          "posicion": {
+            "x": -50,
+            "y": 30
+          },
+          "escala": 1.05,
+          "orientacion": "derecha",
+          "poseId": "explaining_both_hands",
+          "expresion": "talking_enthusiastic",
+          "habla": true
+        }
+      ],
+      "palabrasClave": [
+        "ondas largas",
+        "luz roja",
+        "ondas cortas",
+        "luz azul"
+      ],
+      "duracionSegundos": 6.298,
+      "palabras": [
+        {
+          "palabra": "La",
+          "inicioMs": 0,
+          "finMs": 160
+        },
+        {
+          "palabra": "luz",
+          "inicioMs": 160,
+          "finMs": 320
+        },
+        {
+          "palabra": "roja",
+          "inicioMs": 320,
+          "finMs": 720
+        },
+        {
+          "palabra": "y",
+          "inicioMs": 720,
+          "finMs": 800
+        },
+        {
+          "palabra": "naranja",
+          "inicioMs": 800,
+          "finMs": 1140
+        },
+        {
+          "palabra": "viaja",
+          "inicioMs": 1220,
+          "finMs": 1460
+        },
+        {
+          "palabra": "en",
+          "inicioMs": 1460,
+          "finMs": 1560
+        },
+        {
+          "palabra": "ondas",
+          "inicioMs": 1560,
+          "finMs": 1800
+        },
+        {
+          "palabra": "largas",
+          "inicioMs": 1800,
+          "finMs": 2160
+        },
+        {
+          "palabra": "y",
+          "inicioMs": 2160,
+          "finMs": 2260
+        },
+        {
+          "palabra": "perezosas",
+          "inicioMs": 2260,
+          "finMs": 2800
+        },
+        {
+          "palabra": "mientras",
+          "inicioMs": 2900,
+          "finMs": 3080
+        },
+        {
+          "palabra": "que",
+          "inicioMs": 3080,
+          "finMs": 3280
+        },
+        {
+          "palabra": "la",
+          "inicioMs": 3280,
+          "finMs": 3360
+        },
+        {
+          "palabra": "luz",
+          "inicioMs": 3360,
+          "finMs": 3500
+        },
+        {
+          "palabra": "azul",
+          "inicioMs": 3500,
+          "finMs": 3800
+        },
+        {
+          "palabra": "y",
+          "inicioMs": 3800,
+          "finMs": 3960
+        },
+        {
+          "palabra": "violeta",
+          "inicioMs": 3960,
+          "finMs": 4240
+        },
+        {
+          "palabra": "viaja",
+          "inicioMs": 4240,
+          "finMs": 4560
+        },
+        {
+          "palabra": "en",
+          "inicioMs": 4560,
+          "finMs": 4660
+        },
+        {
+          "palabra": "ondas",
+          "inicioMs": 4660,
+          "finMs": 4920
+        },
+        {
+          "palabra": "cortas",
+          "inicioMs": 4920,
+          "finMs": 5320
+        },
+        {
+          "palabra": "y",
+          "inicioMs": 5320,
+          "finMs": 5400
+        },
+        {
+          "palabra": "veloces",
+          "inicioMs": 5400,
+          "finMs": 5820
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "texto": "Cuando los rayos solares chocan contra la atmósfera terrestre, se encuentran con billones de moléculas de nitrógeno y oxígeno.",
+      "icono": "Globe",
+      "colorIcono": "#10B981",
+      "tituloVisual": "LA ATMÓSFERA",
+      "composicionVisual": "plano_general",
+      "escenario": "laboratorio",
+      "layout": "narrativo",
+      "transicion": "corte",
+      "efectosCamara": [
+        "drift"
+      ],
+      "personajes": [
+        {
+          "id": "observador_tierra",
+          "posicion": {
+            "x": -150,
+            "y": 30
+          },
+          "escala": 1,
+          "orientacion": "derecha",
+          "poseId": "looking_up_pose",
+          "expresion": "analytical",
+          "habla": true
+        }
+      ],
+      "objetos": [
+        {
+          "id": "globo_atmosfera",
+          "propId": "globe",
+          "posicion": {
+            "x": 250,
+            "y": -70
+          },
+          "escala": 1.4,
+          "animacion": {
+            "tipo": "flotar"
+          }
+        }
+      ],
+      "palabrasClave": [
+        "rayos solares",
+        "atmósfera terrestre",
+        "nitrógeno y oxígeno"
+      ],
+      "duracionSegundos": 6.658,
+      "palabras": [
+        {
+          "palabra": "Cuando",
+          "inicioMs": 0,
+          "finMs": 260
+        },
+        {
+          "palabra": "los",
+          "inicioMs": 260,
+          "finMs": 440
+        },
+        {
+          "palabra": "rayos",
+          "inicioMs": 440,
+          "finMs": 700
+        },
+        {
+          "palabra": "solares",
+          "inicioMs": 700,
+          "finMs": 1040
+        },
+        {
+          "palabra": "chocan",
+          "inicioMs": 1040,
+          "finMs": 1440
+        },
+        {
+          "palabra": "contra",
+          "inicioMs": 1440,
+          "finMs": 1720
+        },
+        {
+          "palabra": "la",
+          "inicioMs": 1720,
+          "finMs": 1840
+        },
+        {
+          "palabra": "atmósfera",
+          "inicioMs": 1840,
+          "finMs": 2240
+        },
+        {
+          "palabra": "terrestre",
+          "inicioMs": 2240,
+          "finMs": 2880
+        },
+        {
+          "palabra": "se",
+          "inicioMs": 3140,
+          "finMs": 3180
+        },
+        {
+          "palabra": "encuentran",
+          "inicioMs": 3180,
+          "finMs": 3620
+        },
+        {
+          "palabra": "con",
+          "inicioMs": 3620,
+          "finMs": 3760
+        },
+        {
+          "palabra": "billones",
+          "inicioMs": 3760,
+          "finMs": 4160
+        },
+        {
+          "palabra": "de",
+          "inicioMs": 4160,
+          "finMs": 4300
+        },
+        {
+          "palabra": "moléculas",
+          "inicioMs": 4300,
+          "finMs": 4840
+        },
+        {
+          "palabra": "de",
+          "inicioMs": 4840,
+          "finMs": 4920
+        },
+        {
+          "palabra": "nitrógeno",
+          "inicioMs": 4920,
+          "finMs": 5500
+        },
+        {
+          "palabra": "y",
+          "inicioMs": 5500,
+          "finMs": 5580
+        },
+        {
+          "palabra": "oxígeno",
+          "inicioMs": 5580,
+          "finMs": 6180
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "texto": "Ocurre un fenómeno óptico fundamental llamado Dispersión de Rayleigh en honor al científico británico que lo descubrió.",
+      "icono": "BookOpen",
+      "colorIcono": "#6366F1",
+      "tituloVisual": "DISPERSIÓN RAYLEIGH",
+      "composicionVisual": "plano_general",
+      "escenario": "atardecer_dorado",
+      "layout": "narrativo",
+      "transicion": "whip_right",
+      "efectosCamara": [
+        "drift"
+      ],
+      "personajes": [
+        {
+          "id": "eureka_rayleigh",
+          "posicion": {
+            "x": -150,
+            "y": 25
+          },
+          "escala": 1,
+          "orientacion": "derecha",
+          "poseId": "eureka_idea",
+          "expresion": "eureka",
+          "habla": true
+        }
+      ],
+      "objetos": [
+        {
+          "id": "prisma_rayleigh",
+          "propId": "prism_spectrum",
+          "posicion": {
+            "x": 240,
+            "y": -70
+          },
+          "escala": 1.55,
+          "animacion": {
+            "tipo": "pulso"
+          }
+        }
+      ],
+      "palabrasClave": [
+        "dispersión de Rayleigh",
+        "fenómeno óptico",
+        "físico británico"
+      ],
+      "duracionSegundos": 6.418,
+      "palabras": [
+        {
+          "palabra": "Ocurre",
+          "inicioMs": 0,
+          "finMs": 440
+        },
+        {
+          "palabra": "un",
+          "inicioMs": 440,
+          "finMs": 520
+        },
+        {
+          "palabra": "fenómeno",
+          "inicioMs": 520,
+          "finMs": 900
+        },
+        {
+          "palabra": "óptico",
+          "inicioMs": 900,
+          "finMs": 1340
+        },
+        {
+          "palabra": "fundamental",
+          "inicioMs": 1340,
+          "finMs": 1980
+        },
+        {
+          "palabra": "llamado",
+          "inicioMs": 1980,
+          "finMs": 2240
+        },
+        {
+          "palabra": "Dispersión",
+          "inicioMs": 2240,
+          "finMs": 2900
+        },
+        {
+          "palabra": "de",
+          "inicioMs": 2900,
+          "finMs": 3020
+        },
+        {
+          "palabra": "Rayleigh",
+          "inicioMs": 3020,
+          "finMs": 3460
+        },
+        {
+          "palabra": "en",
+          "inicioMs": 3460,
+          "finMs": 3620
+        },
+        {
+          "palabra": "honor",
+          "inicioMs": 3620,
+          "finMs": 3840
+        },
+        {
+          "palabra": "al",
+          "inicioMs": 3840,
+          "finMs": 4080
+        },
+        {
+          "palabra": "científico",
+          "inicioMs": 4080,
+          "finMs": 4700
+        },
+        {
+          "palabra": "británico",
+          "inicioMs": 4700,
+          "finMs": 5180
+        },
+        {
+          "palabra": "que",
+          "inicioMs": 5180,
+          "finMs": 5320
+        },
+        {
+          "palabra": "lo",
+          "inicioMs": 5320,
+          "finMs": 5420
+        },
+        {
+          "palabra": "descubrió",
+          "inicioMs": 5420,
+          "finMs": 5920
+        }
+      ]
+    },
+    {
+      "id": 7,
+      "texto": "Las ondas cortas de luz azul chocan contra los gases y rebotan en todas las direcciones imaginables por todo el firmamento.",
+      "icono": "Sparkle",
+      "colorIcono": "#0284C7",
+      "tituloVisual": "REBOTE AZUL",
+      "composicionVisual": "plano_general",
+      "escenario": "atardecer_dorado",
+      "layout": "narrativo",
+      "transicion": "corte",
+      "efectosCamara": [
+        "punch"
+      ],
+      "personajes": [
+        {
+          "id": "apuntando_cielo",
+          "posicion": {
+            "x": -150,
+            "y": 25
+          },
+          "escala": 1,
+          "orientacion": "derecha",
+          "poseId": "explaining_pointing_up",
+          "expresion": "talking_enthusiastic",
+          "habla": true
+        }
+      ],
+      "palabrasClave": [
+        "luz azul",
+        "chocan contra gases",
+        "rebotan en el cielo"
+      ],
+      "duracionSegundos": 6.754,
+      "palabras": [
+        {
+          "palabra": "Las",
+          "inicioMs": 0,
+          "finMs": 220
+        },
+        {
+          "palabra": "ondas",
+          "inicioMs": 220,
+          "finMs": 540
+        },
+        {
+          "palabra": "cortas",
+          "inicioMs": 540,
+          "finMs": 960
+        },
+        {
+          "palabra": "de",
+          "inicioMs": 960,
+          "finMs": 1060
+        },
+        {
+          "palabra": "luz",
+          "inicioMs": 1060,
+          "finMs": 1200
+        },
+        {
+          "palabra": "azul",
+          "inicioMs": 1200,
+          "finMs": 1500
+        },
+        {
+          "palabra": "chocan",
+          "inicioMs": 1500,
+          "finMs": 1940
+        },
+        {
+          "palabra": "contra",
+          "inicioMs": 1940,
+          "finMs": 2200
+        },
+        {
+          "palabra": "los",
+          "inicioMs": 2200,
+          "finMs": 2420
+        },
+        {
+          "palabra": "gases",
+          "inicioMs": 2420,
+          "finMs": 2700
+        },
+        {
+          "palabra": "y",
+          "inicioMs": 2700,
+          "finMs": 3120
+        },
+        {
+          "palabra": "rebotan",
+          "inicioMs": 3120,
+          "finMs": 3580
+        },
+        {
+          "palabra": "en",
+          "inicioMs": 3580,
+          "finMs": 3680
+        },
+        {
+          "palabra": "todas",
+          "inicioMs": 3680,
+          "finMs": 3920
+        },
+        {
+          "palabra": "las",
+          "inicioMs": 3920,
+          "finMs": 4140
+        },
+        {
+          "palabra": "direcciones",
+          "inicioMs": 4140,
+          "finMs": 4580
+        },
+        {
+          "palabra": "imaginables",
+          "inicioMs": 4580,
+          "finMs": 5160
+        },
+        {
+          "palabra": "por",
+          "inicioMs": 5160,
+          "finMs": 5400
+        },
+        {
+          "palabra": "todo",
+          "inicioMs": 5400,
+          "finMs": 5580
+        },
+        {
+          "palabra": "el",
+          "inicioMs": 5580,
+          "finMs": 5740
+        },
+        {
+          "palabra": "firmamento",
+          "inicioMs": 5740,
+          "finMs": 6240
+        }
+      ]
+    },
+    {
+      "id": 8,
+      "texto": "Por eso cuando miras hacia arriba a plena luz del día, tus ojos reciben ese festival de fotones azules rebotados.",
+      "icono": "Eye",
+      "colorIcono": "#0EA5E9",
+      "tituloVisual": "FESTIVAL DE LUZ",
+      "composicionVisual": "primer_plano",
+      "escenario": "atardecer_dorado",
+      "layout": "narrativo",
+      "transicion": "flash",
+      "efectosCamara": [
+        "drift"
+      ],
+      "personajes": [
+        {
+          "id": "ojos_asombrados",
+          "posicion": {
+            "x": 0,
+            "y": 10
+          },
+          "escala": 1.15,
+          "orientacion": "derecha",
+          "poseId": "looking_up_pose",
+          "expresion": "smile_wide",
+          "habla": true
+        }
+      ],
+      "palabrasClave": [
+        "miras hacia arriba",
+        "luz del día",
+        "fotones azules"
+      ],
+      "duracionSegundos": 5.578,
+      "palabras": [
+        {
+          "palabra": "Por",
+          "inicioMs": 0,
+          "finMs": 180
+        },
+        {
+          "palabra": "eso",
+          "inicioMs": 180,
+          "finMs": 320
+        },
+        {
+          "palabra": "cuando",
+          "inicioMs": 320,
+          "finMs": 520
+        },
+        {
+          "palabra": "miras",
+          "inicioMs": 520,
+          "finMs": 840
+        },
+        {
+          "palabra": "hacia",
+          "inicioMs": 840,
+          "finMs": 920
+        },
+        {
+          "palabra": "arriba",
+          "inicioMs": 920,
+          "finMs": 1200
+        },
+        {
+          "palabra": "a",
+          "inicioMs": 1200,
+          "finMs": 1600
+        },
+        {
+          "palabra": "plena",
+          "inicioMs": 1600,
+          "finMs": 1760
+        },
+        {
+          "palabra": "luz",
+          "inicioMs": 1760,
+          "finMs": 1960
+        },
+        {
+          "palabra": "del",
+          "inicioMs": 1960,
+          "finMs": 2240
+        },
+        {
+          "palabra": "día",
+          "inicioMs": 2320,
+          "finMs": 2400
+        },
+        {
+          "palabra": "tus",
+          "inicioMs": 2400,
+          "finMs": 2600
+        },
+        {
+          "palabra": "ojos",
+          "inicioMs": 2600,
+          "finMs": 3020
+        },
+        {
+          "palabra": "reciben",
+          "inicioMs": 3020,
+          "finMs": 3200
+        },
+        {
+          "palabra": "ese",
+          "inicioMs": 3200,
+          "finMs": 3560
+        },
+        {
+          "palabra": "festival",
+          "inicioMs": 3560,
+          "finMs": 3760
+        },
+        {
+          "palabra": "de",
+          "inicioMs": 3760,
+          "finMs": 4140
+        },
+        {
+          "palabra": "fotones",
+          "inicioMs": 4140,
+          "finMs": 4460
+        },
+        {
+          "palabra": "azules",
+          "inicioMs": 4460,
+          "finMs": 5100
+        },
+        {
+          "palabra": "rebotados",
+          "inicioMs": 5100,
+          "finMs": 5328
+        }
+      ]
+    },
+    {
+      "id": 9,
+      "texto": "¡Pero al caer la tarde, la posición geométrica del Sol cambia por completo y la física da un giro espectacular!",
+      "icono": "Sunset",
+      "colorIcono": "#F97316",
+      "tituloVisual": "CAE LA TARDE",
+      "composicionVisual": "plano_general",
+      "escenario": "atardecer_dorado",
+      "layout": "narrativo",
+      "transicion": "whip_left",
+      "efectosCamara": [
+        "shake",
+        "punch"
+      ],
+      "sfx": "sfx/sfx_dramatic_hit.wav",
+      "volumenSfx": 0.25,
+      "personajes": [
+        {
+          "id": "giro_atardecer",
+          "posicion": {
+            "x": 60,
+            "y": 40
+          },
+          "escala": 1.05,
+          "orientacion": "izquierda",
+          "poseId": "surprised_hands_up",
+          "expresion": "surprised",
+          "acciones": [
+            {
+              "tipo": "sorpresa_y_retroceso"
+            }
+          ],
+          "habla": true
+        }
+      ],
+      "palabrasClave": [
+        "posición geométrica",
+        "al caer la tarde",
+        "giro espectacular"
+      ],
+      "duracionSegundos": 6.01,
+      "palabras": [
+        {
+          "palabra": "Pero",
+          "inicioMs": 0,
+          "finMs": 240
+        },
+        {
+          "palabra": "al",
+          "inicioMs": 240,
+          "finMs": 380
+        },
+        {
+          "palabra": "caer",
+          "inicioMs": 380,
+          "finMs": 560
+        },
+        {
+          "palabra": "la",
+          "inicioMs": 560,
+          "finMs": 700
+        },
+        {
+          "palabra": "tarde",
+          "inicioMs": 700,
+          "finMs": 1020
+        },
+        {
+          "palabra": "la",
+          "inicioMs": 1140,
+          "finMs": 1220
+        },
+        {
+          "palabra": "posición",
+          "inicioMs": 1220,
+          "finMs": 1540
+        },
+        {
+          "palabra": "geométrica",
+          "inicioMs": 1540,
+          "finMs": 2120
+        },
+        {
+          "palabra": "del",
+          "inicioMs": 2120,
+          "finMs": 2360
+        },
+        {
+          "palabra": "Sol",
+          "inicioMs": 2360,
+          "finMs": 2560
+        },
+        {
+          "palabra": "cambia",
+          "inicioMs": 2560,
+          "finMs": 2940
+        },
+        {
+          "palabra": "por",
+          "inicioMs": 2940,
+          "finMs": 3080
+        },
+        {
+          "palabra": "completo",
+          "inicioMs": 3080,
+          "finMs": 3560
+        },
+        {
+          "palabra": "y",
+          "inicioMs": 3940,
+          "finMs": 4020
+        },
+        {
+          "palabra": "la",
+          "inicioMs": 4020,
+          "finMs": 4120
+        },
+        {
+          "palabra": "física",
+          "inicioMs": 4120,
+          "finMs": 4400
+        },
+        {
+          "palabra": "da",
+          "inicioMs": 4400,
+          "finMs": 4620
+        },
+        {
+          "palabra": "un",
+          "inicioMs": 4620,
+          "finMs": 4740
+        },
+        {
+          "palabra": "giro",
+          "inicioMs": 4740,
+          "finMs": 4960
+        },
+        {
+          "palabra": "espectacular",
+          "inicioMs": 4960,
+          "finMs": 5540
+        }
+      ]
+    },
+    {
+      "id": 10,
+      "texto": "Los rayos deben atravesar hasta diez veces más grosor de atmósfera para llegar finalmente a tus ojos.",
+      "icono": "Compass",
+      "colorIcono": "#EF4444",
+      "tituloVisual": "10 VECES MÁS DISTANCIA",
+      "composicionVisual": "plano_general",
+      "escenario": "atardecer_dorado",
+      "layout": "narrativo",
+      "transicion": "corte",
+      "efectosCamara": [
+        "drift"
+      ],
+      "personajes": [
+        {
+          "id": "medicion_distancia",
+          "posicion": {
+            "x": -150,
+            "y": 30
+          },
+          "escala": 1,
+          "orientacion": "derecha",
+          "poseId": "presenting_object",
+          "expresion": "analytical",
+          "habla": true
+        }
+      ],
+      "objetos": [
+        {
+          "id": "sol_atardecer",
+          "propId": "sun_radiant",
+          "posicion": {
+            "x": 250,
+            "y": -70
+          },
+          "escala": 1.5,
+          "animacion": {
+            "tipo": "flotar"
+          }
+        }
+      ],
+      "palabrasClave": [
+        "diez veces más grosor",
+        "atmósfera",
+        "distancia extrema"
+      ],
+      "duracionSegundos": 5.098,
+      "palabras": [
+        {
+          "palabra": "Los",
+          "inicioMs": 0,
+          "finMs": 220
+        },
+        {
+          "palabra": "rayos",
+          "inicioMs": 220,
+          "finMs": 640
+        },
+        {
+          "palabra": "deben",
+          "inicioMs": 640,
+          "finMs": 840
+        },
+        {
+          "palabra": "atravesar",
+          "inicioMs": 840,
+          "finMs": 1360
+        },
+        {
+          "palabra": "hasta",
+          "inicioMs": 1360,
+          "finMs": 1540
+        },
+        {
+          "palabra": "diez",
+          "inicioMs": 1540,
+          "finMs": 1780
+        },
+        {
+          "palabra": "veces",
+          "inicioMs": 1780,
+          "finMs": 2080
+        },
+        {
+          "palabra": "más",
+          "inicioMs": 2080,
+          "finMs": 2300
+        },
+        {
+          "palabra": "grosor",
+          "inicioMs": 2300,
+          "finMs": 2700
+        },
+        {
+          "palabra": "de",
+          "inicioMs": 2700,
+          "finMs": 2780
+        },
+        {
+          "palabra": "atmósfera",
+          "inicioMs": 2780,
+          "finMs": 3200
+        },
+        {
+          "palabra": "para",
+          "inicioMs": 3200,
+          "finMs": 3400
+        },
+        {
+          "palabra": "llegar",
+          "inicioMs": 3400,
+          "finMs": 3580
+        },
+        {
+          "palabra": "finalmente",
+          "inicioMs": 3580,
+          "finMs": 4020
+        },
+        {
+          "palabra": "a",
+          "inicioMs": 4020,
+          "finMs": 4240
+        },
+        {
+          "palabra": "tus",
+          "inicioMs": 4240,
+          "finMs": 4380
+        },
+        {
+          "palabra": "ojos",
+          "inicioMs": 4380,
+          "finMs": 4620
+        }
+      ]
+    },
+    {
+      "id": 11,
+      "texto": "Toda la luz azul se dispersa y desaparece por el camino, dejando pasar únicamente los tonos rojos y dorados. ¡La atmósfera es pura magia!",
+      "icono": "Flame",
+      "colorIcono": "#EA580C",
+      "tituloVisual": "MAGIA DEL ATARDECER",
+      "composicionVisual": "plano_general",
+      "escenario": "atardecer_dorado",
+      "layout": "narrativo",
+      "transicion": "zoom_in",
+      "efectosCamara": [
+        "drift"
+      ],
+      "personajes": [
+        {
+          "id": "conclusion_atardecer",
+          "posicion": {
+            "x": -160,
+            "y": 30
+          },
+          "escala": 1,
+          "orientacion": "derecha",
+          "prop": "trophy",
+          "acciones": [
+            {
+              "tipo": "caminar_hacia",
+              "desdeX": -220,
+              "haciaX": 0
+            }
+          ],
+          "habla": true
+        }
+      ],
+      "palabrasClave": [
+        "tonos rojos y dorados",
+        "luz azul desaparece",
+        "magia óptica"
+      ],
+      "duracionSegundos": 8.218,
+      "palabras": [
+        {
+          "palabra": "Toda",
+          "inicioMs": 0,
+          "finMs": 360
+        },
+        {
+          "palabra": "la",
+          "inicioMs": 360,
+          "finMs": 420
+        },
+        {
+          "palabra": "luz",
+          "inicioMs": 420,
+          "finMs": 560
+        },
+        {
+          "palabra": "azul",
+          "inicioMs": 560,
+          "finMs": 900
+        },
+        {
+          "palabra": "se",
+          "inicioMs": 900,
+          "finMs": 1100
+        },
+        {
+          "palabra": "dispersa",
+          "inicioMs": 1100,
+          "finMs": 1720
+        },
+        {
+          "palabra": "y",
+          "inicioMs": 1720,
+          "finMs": 1780
+        },
+        {
+          "palabra": "desaparece",
+          "inicioMs": 1780,
+          "finMs": 2340
+        },
+        {
+          "palabra": "por",
+          "inicioMs": 2340,
+          "finMs": 2460
+        },
+        {
+          "palabra": "el",
+          "inicioMs": 2460,
+          "finMs": 2600
+        },
+        {
+          "palabra": "camino",
+          "inicioMs": 2600,
+          "finMs": 2960
+        },
+        {
+          "palabra": "dejando",
+          "inicioMs": 3060,
+          "finMs": 3400
+        },
+        {
+          "palabra": "pasar",
+          "inicioMs": 3400,
+          "finMs": 3660
+        },
+        {
+          "palabra": "únicamente",
+          "inicioMs": 3660,
+          "finMs": 4160
+        },
+        {
+          "palabra": "los",
+          "inicioMs": 4160,
+          "finMs": 4460
+        },
+        {
+          "palabra": "tonos",
+          "inicioMs": 4460,
+          "finMs": 4820
+        },
+        {
+          "palabra": "rojos",
+          "inicioMs": 4820,
+          "finMs": 5100
+        },
+        {
+          "palabra": "y",
+          "inicioMs": 5100,
+          "finMs": 5260
+        },
+        {
+          "palabra": "dorados",
+          "inicioMs": 5260,
+          "finMs": 5720
+        },
+        {
+          "palabra": "La",
+          "inicioMs": 5960,
+          "finMs": 6080
+        },
+        {
+          "palabra": "atmósfera",
+          "inicioMs": 6080,
+          "finMs": 6660
+        },
+        {
+          "palabra": "es",
+          "inicioMs": 6660,
+          "finMs": 6940
+        },
+        {
+          "palabra": "pura",
+          "inicioMs": 6940,
+          "finMs": 7300
+        },
+        {
+          "palabra": "magia",
+          "inicioMs": 7300,
+          "finMs": 7740
+        }
+      ]
+    }
+  ]
+}

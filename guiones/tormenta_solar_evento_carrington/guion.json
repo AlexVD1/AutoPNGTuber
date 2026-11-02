@@ -1,0 +1,1693 @@
+{
+  "meta": {
+    "id": "tormenta_solar_evento_carrington",
+    "slug": "tormenta_solar_evento_carrington",
+    "temaResumen": "El Evento Carrington de 1859: la mayor tormenta solar documentada, telégrafos que operaban sin batería y el riesgo de un colapso eléctrico masivo en el mundo moderno",
+    "duracionObjetivo": [
+      62,
+      76
+    ],
+    "titulo": "La tormenta solar que quemó los cables (El Evento Carrington)",
+    "titulo_corto": "El Evento Carrington",
+    "gancho": "En mil ochocientos cincuenta y nueve, el Sol lanzó un zarpazo tan brutal a la Tierra... que los telégrafos empezaron a funcionar solos, sin baterías y escupiendo fuego.",
+    "genero": "Astrofísica e Historia de la Tecnología",
+    "playlist": "Catástrofes Cósmicas y Fenómenos Extremos",
+    "fuentes": [
+      "Richard C. Carrington (1859) - Description of a Singular Appearance seen in the Sun on September 1, 1859 (Monthly Notices of the Royal Astronomical Society)",
+      "National Academy of Sciences (2008) - Severe Space Weather Events: Understanding Societal and Economic Impacts",
+      "NASA Heliophysics Division - The 1859 Space Weather Event: The Carrington Flare",
+      "Lloyd's of London (2013) - Solar Storm Risk to the North American Electric Grid"
+    ]
+  },
+  "escenas": [
+    {
+      "id": 1,
+      "texto": "En mil ochocientos cincuenta y nueve, el Sol lanzó un zarpazo tan brutal a la Tierra... que los telégrafos empezaron a funcionar solos, sin baterías y escupiendo fuego.",
+      "icono": "Zap",
+      "colorIcono": "#F59E0B",
+      "tituloVisual": "TELÉGRAFOS EN LLAMAS",
+      "composicionVisual": "plano_general",
+      "escenario": "estacion_telegrafo_victoriana_1859",
+      "layout": "narrativo",
+      "transicion": "corte",
+      "efectosCamara": [
+        "punch",
+        "shake"
+      ],
+      "sfx": "sfx/sfx_telegrafo_morse_chispas.wav",
+      "volumenSfx": 0.28,
+      "palabrasClave": [
+        "Sol",
+        "Tierra",
+        "telégrafos",
+        "baterías",
+        "fuego"
+      ],
+      "personajes": [
+        {
+          "id": "telegrafista_1859",
+          "nombre": "Telegrafista Victoriano",
+          "posicion": {
+            "x": -180,
+            "y": 80
+          },
+          "escala": 1,
+          "orientacion": "derecha",
+          "acciones": [
+            {
+              "tipo": "personalizada",
+              "pasos": [
+                {
+                  "inicioProgreso": 0,
+                  "finProgreso": 0.4,
+                  "poseId": "taking_notes",
+                  "expresion": "talking",
+                  "posicion": {
+                    "x": -180,
+                    "y": 80
+                  },
+                  "curva": "suave",
+                  "procedural": "estatico"
+                },
+                {
+                  "inicioProgreso": 0.4,
+                  "finProgreso": 0.65,
+                  "poseId": "shock_explosion",
+                  "expresion": "shocked",
+                  "posicion": {
+                    "x": -210,
+                    "y": 80
+                  },
+                  "curva": "impacto",
+                  "procedural": "temblar"
+                },
+                {
+                  "inicioProgreso": 0.65,
+                  "finProgreso": 1,
+                  "poseId": "warning_danger",
+                  "expresion": "scared",
+                  "posicion": {
+                    "x": -220,
+                    "y": 80
+                  },
+                  "curva": "suave",
+                  "procedural": "estatico"
+                }
+              ]
+            }
+          ],
+          "habla": true,
+          "capaZ": 12
+        }
+      ],
+      "objetos": [
+        {
+          "id": "telegrafo_mesa",
+          "propId": "telegrafo_morse_chispas",
+          "posicion": {
+            "x": 160,
+            "y": 110
+          },
+          "escala": 1.4,
+          "animacion": "vibrar",
+          "capaZ": 15
+        }
+      ],
+      "duracionSegundos": 9.01,
+      "palabras": [
+        {
+          "palabra": "En",
+          "inicioMs": 0,
+          "finMs": 220
+        },
+        {
+          "palabra": "mil",
+          "inicioMs": 220,
+          "finMs": 340
+        },
+        {
+          "palabra": "ochocientos",
+          "inicioMs": 340,
+          "finMs": 880
+        },
+        {
+          "palabra": "cincuenta",
+          "inicioMs": 880,
+          "finMs": 1220
+        },
+        {
+          "palabra": "y",
+          "inicioMs": 1220,
+          "finMs": 1340
+        },
+        {
+          "palabra": "nueve",
+          "inicioMs": 1340,
+          "finMs": 1600
+        },
+        {
+          "palabra": "el",
+          "inicioMs": 1900,
+          "finMs": 1960
+        },
+        {
+          "palabra": "Sol",
+          "inicioMs": 1960,
+          "finMs": 2140
+        },
+        {
+          "palabra": "lanzó",
+          "inicioMs": 2140,
+          "finMs": 2420
+        },
+        {
+          "palabra": "un",
+          "inicioMs": 2420,
+          "finMs": 2520
+        },
+        {
+          "palabra": "zarpazo",
+          "inicioMs": 2520,
+          "finMs": 2900
+        },
+        {
+          "palabra": "tan",
+          "inicioMs": 2900,
+          "finMs": 3100
+        },
+        {
+          "palabra": "brutal",
+          "inicioMs": 3100,
+          "finMs": 3320
+        },
+        {
+          "palabra": "a",
+          "inicioMs": 3320,
+          "finMs": 3480
+        },
+        {
+          "palabra": "la",
+          "inicioMs": 3480,
+          "finMs": 3600
+        },
+        {
+          "palabra": "Tierra",
+          "inicioMs": 3600,
+          "finMs": 4260
+        },
+        {
+          "palabra": "que",
+          "inicioMs": 4260,
+          "finMs": 4300
+        },
+        {
+          "palabra": "los",
+          "inicioMs": 4300,
+          "finMs": 4480
+        },
+        {
+          "palabra": "telégrafos",
+          "inicioMs": 4480,
+          "finMs": 4880
+        },
+        {
+          "palabra": "empezaron",
+          "inicioMs": 4880,
+          "finMs": 5280
+        },
+        {
+          "palabra": "a",
+          "inicioMs": 5280,
+          "finMs": 5380
+        },
+        {
+          "palabra": "funcionar",
+          "inicioMs": 5380,
+          "finMs": 5820
+        },
+        {
+          "palabra": "solos",
+          "inicioMs": 5820,
+          "finMs": 6660
+        },
+        {
+          "palabra": "sin",
+          "inicioMs": 6660,
+          "finMs": 6840
+        },
+        {
+          "palabra": "baterías",
+          "inicioMs": 6840,
+          "finMs": 7360
+        },
+        {
+          "palabra": "y",
+          "inicioMs": 7360,
+          "finMs": 7460
+        },
+        {
+          "palabra": "escupiendo",
+          "inicioMs": 7460,
+          "finMs": 7860
+        },
+        {
+          "palabra": "fuego",
+          "inicioMs": 7860,
+          "finMs": 8680
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "texto": "Se conoce como el Evento Carrington. El cielo nocturno brilló con auroras boreales rojas y verdes tan deslumbrantes que la gente en el Caribe leía el periódico a medianoche, mientras las aves cantaban creyendo que ya había amanecido.",
+      "icono": "Sun",
+      "colorIcono": "#10B981",
+      "tituloVisual": "EVENTO CARRINGTON",
+      "composicionVisual": "plano_general",
+      "escenario": "campo_auroras_caribe_medianoche",
+      "layout": "narrativo",
+      "transicion": "whip_right",
+      "efectosCamara": [
+        "punch",
+        "drift"
+      ],
+      "sfx": "sfx/sfx_zumbido_aurora_gallo.wav",
+      "volumenSfx": 0.26,
+      "palabrasClave": [
+        "Evento",
+        "Carrington",
+        "auroras",
+        "Caribe",
+        "periódico",
+        "medianoche"
+      ],
+      "personajes": [
+        {
+          "id": "lector_auroras",
+          "nombre": "Testigo del Caribe",
+          "posicion": {
+            "x": -140,
+            "y": 80
+          },
+          "escala": 1,
+          "orientacion": "derecha",
+          "props": {
+            "derecha": "periodico_victoriano_auroras"
+          },
+          "acciones": [
+            {
+              "tipo": "personalizada",
+              "pasos": [
+                {
+                  "inicioProgreso": 0,
+                  "finProgreso": 0.35,
+                  "poseId": "running_escape",
+                  "expresion": "surprised",
+                  "posicion": {
+                    "x": -220,
+                    "y": 80
+                  },
+                  "curva": "suave",
+                  "procedural": "caminar"
+                },
+                {
+                  "inicioProgreso": 0.35,
+                  "finProgreso": 0.7,
+                  "poseId": "presenting_object",
+                  "expresion": "eureka",
+                  "posicion": {
+                    "x": -140,
+                    "y": 80
+                  },
+                  "curva": "suave",
+                  "procedural": "estatico"
+                },
+                {
+                  "inicioProgreso": 0.7,
+                  "finProgreso": 1,
+                  "poseId": "looking_up_pose",
+                  "expresion": "analytical",
+                  "posicion": {
+                    "x": -120,
+                    "y": 80
+                  },
+                  "curva": "suave",
+                  "procedural": "estatico"
+                }
+              ]
+            }
+          ],
+          "habla": true,
+          "capaZ": 12
+        }
+      ],
+      "duracionSegundos": 12.346,
+      "palabras": [
+        {
+          "palabra": "Se",
+          "inicioMs": 0,
+          "finMs": 120
+        },
+        {
+          "palabra": "conoce",
+          "inicioMs": 120,
+          "finMs": 480
+        },
+        {
+          "palabra": "como",
+          "inicioMs": 480,
+          "finMs": 680
+        },
+        {
+          "palabra": "el",
+          "inicioMs": 680,
+          "finMs": 800
+        },
+        {
+          "palabra": "Evento",
+          "inicioMs": 800,
+          "finMs": 1120
+        },
+        {
+          "palabra": "Carrington",
+          "inicioMs": 1120,
+          "finMs": 1620
+        },
+        {
+          "palabra": "El",
+          "inicioMs": 1860,
+          "finMs": 1980
+        },
+        {
+          "palabra": "cielo",
+          "inicioMs": 1980,
+          "finMs": 2200
+        },
+        {
+          "palabra": "nocturno",
+          "inicioMs": 2200,
+          "finMs": 2860
+        },
+        {
+          "palabra": "brilló",
+          "inicioMs": 2860,
+          "finMs": 3180
+        },
+        {
+          "palabra": "con",
+          "inicioMs": 3180,
+          "finMs": 3360
+        },
+        {
+          "palabra": "auroras",
+          "inicioMs": 3360,
+          "finMs": 3760
+        },
+        {
+          "palabra": "boreales",
+          "inicioMs": 3760,
+          "finMs": 4240
+        },
+        {
+          "palabra": "rojas",
+          "inicioMs": 4240,
+          "finMs": 4640
+        },
+        {
+          "palabra": "y",
+          "inicioMs": 4640,
+          "finMs": 4860
+        },
+        {
+          "palabra": "verdes",
+          "inicioMs": 4860,
+          "finMs": 5220
+        },
+        {
+          "palabra": "tan",
+          "inicioMs": 5220,
+          "finMs": 5460
+        },
+        {
+          "palabra": "deslumbrantes",
+          "inicioMs": 5460,
+          "finMs": 6220
+        },
+        {
+          "palabra": "que",
+          "inicioMs": 6220,
+          "finMs": 6400
+        },
+        {
+          "palabra": "la",
+          "inicioMs": 6400,
+          "finMs": 6500
+        },
+        {
+          "palabra": "gente",
+          "inicioMs": 6500,
+          "finMs": 6700
+        },
+        {
+          "palabra": "en",
+          "inicioMs": 6700,
+          "finMs": 6920
+        },
+        {
+          "palabra": "el",
+          "inicioMs": 6920,
+          "finMs": 7000
+        },
+        {
+          "palabra": "Caribe",
+          "inicioMs": 7000,
+          "finMs": 7340
+        },
+        {
+          "palabra": "leía",
+          "inicioMs": 7340,
+          "finMs": 7640
+        },
+        {
+          "palabra": "el",
+          "inicioMs": 7640,
+          "finMs": 7780
+        },
+        {
+          "palabra": "periódico",
+          "inicioMs": 7780,
+          "finMs": 8280
+        },
+        {
+          "palabra": "a",
+          "inicioMs": 8280,
+          "finMs": 8360
+        },
+        {
+          "palabra": "medianoche",
+          "inicioMs": 8360,
+          "finMs": 8940
+        },
+        {
+          "palabra": "mientras",
+          "inicioMs": 9160,
+          "finMs": 9320
+        },
+        {
+          "palabra": "las",
+          "inicioMs": 9320,
+          "finMs": 9540
+        },
+        {
+          "palabra": "aves",
+          "inicioMs": 9540,
+          "finMs": 9760
+        },
+        {
+          "palabra": "cantaban",
+          "inicioMs": 9760,
+          "finMs": 10160
+        },
+        {
+          "palabra": "creyendo",
+          "inicioMs": 10160,
+          "finMs": 10580
+        },
+        {
+          "palabra": "que",
+          "inicioMs": 10580,
+          "finMs": 10720
+        },
+        {
+          "palabra": "ya",
+          "inicioMs": 10720,
+          "finMs": 10860
+        },
+        {
+          "palabra": "había",
+          "inicioMs": 10860,
+          "finMs": 11020
+        },
+        {
+          "palabra": "amanecido",
+          "inicioMs": 11020,
+          "finMs": 11580
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "texto": "Todo comenzó horas antes en Londres, cuando el astrónomo Richard Carrington vio dos cegadores parches de luz blanca estallar sobre una mancha solar gigantesca, liberando la energía de millones de bombas atómicas.",
+      "icono": "Eye",
+      "colorIcono": "#F59E0B",
+      "tituloVisual": "FULGURACIÓN SOLAR",
+      "composicionVisual": "plano_general",
+      "escenario": "observatorio_astronomico_carrington_1859",
+      "layout": "narrativo",
+      "transicion": "zoom_in",
+      "efectosCamara": [
+        "punch",
+        "drift"
+      ],
+      "sfx": "sfx/sfx_engranaje_telescopio_destello.wav",
+      "volumenSfx": 0.26,
+      "palabrasClave": [
+        "astrónomo",
+        "Richard",
+        "Carrington",
+        "luz",
+        "blanca",
+        "mancha",
+        "solar"
+      ],
+      "personajes": [
+        {
+          "id": "carrington_astronomo",
+          "nombre": "Richard Carrington",
+          "posicion": {
+            "x": -160,
+            "y": 80
+          },
+          "escala": 1,
+          "orientacion": "derecha",
+          "acciones": [
+            {
+              "tipo": "personalizada",
+              "pasos": [
+                {
+                  "inicioProgreso": 0,
+                  "finProgreso": 0.4,
+                  "poseId": "investigating_magnifier",
+                  "expresion": "analytical",
+                  "posicion": {
+                    "x": -160,
+                    "y": 80
+                  },
+                  "curva": "suave",
+                  "procedural": "estatico"
+                },
+                {
+                  "inicioProgreso": 0.4,
+                  "finProgreso": 0.7,
+                  "poseId": "covering_eyes",
+                  "expresion": "shocked",
+                  "posicion": {
+                    "x": -180,
+                    "y": 80
+                  },
+                  "curva": "impacto",
+                  "procedural": "recoil"
+                },
+                {
+                  "inicioProgreso": 0.7,
+                  "finProgreso": 1,
+                  "poseId": "taking_notes",
+                  "expresion": "eureka",
+                  "posicion": {
+                    "x": -150,
+                    "y": 80
+                  },
+                  "curva": "suave",
+                  "procedural": "estatico"
+                }
+              ]
+            }
+          ],
+          "habla": true,
+          "capaZ": 12
+        }
+      ],
+      "objetos": [
+        {
+          "id": "telescopio_pantalla",
+          "propId": "telescopio_laton_pantalla_proyeccion",
+          "posicion": {
+            "x": 200,
+            "y": 80
+          },
+          "escala": 1.3,
+          "animacion": "flotar",
+          "capaZ": 14
+        }
+      ],
+      "duracionSegundos": 9.634,
+      "palabras": [
+        {
+          "palabra": "Todo",
+          "inicioMs": 0,
+          "finMs": 180
+        },
+        {
+          "palabra": "comenzó",
+          "inicioMs": 180,
+          "finMs": 244
+        },
+        {
+          "palabra": "horas",
+          "inicioMs": 244,
+          "finMs": 308
+        },
+        {
+          "palabra": "antes",
+          "inicioMs": 308,
+          "finMs": 372
+        },
+        {
+          "palabra": "en",
+          "inicioMs": 372,
+          "finMs": 436
+        },
+        {
+          "palabra": "Londres",
+          "inicioMs": 436,
+          "finMs": 500
+        },
+        {
+          "palabra": "cuando",
+          "inicioMs": 500,
+          "finMs": 700
+        },
+        {
+          "palabra": "el",
+          "inicioMs": 700,
+          "finMs": 840
+        },
+        {
+          "palabra": "astrónomo",
+          "inicioMs": 840,
+          "finMs": 1260
+        },
+        {
+          "palabra": "Richard",
+          "inicioMs": 1260,
+          "finMs": 1580
+        },
+        {
+          "palabra": "Carrington",
+          "inicioMs": 1580,
+          "finMs": 2140
+        },
+        {
+          "palabra": "vio",
+          "inicioMs": 2140,
+          "finMs": 2420
+        },
+        {
+          "palabra": "dos",
+          "inicioMs": 2420,
+          "finMs": 2620
+        },
+        {
+          "palabra": "cegadores",
+          "inicioMs": 2620,
+          "finMs": 2980
+        },
+        {
+          "palabra": "parches",
+          "inicioMs": 2980,
+          "finMs": 3420
+        },
+        {
+          "palabra": "de",
+          "inicioMs": 3420,
+          "finMs": 3560
+        },
+        {
+          "palabra": "luz",
+          "inicioMs": 3560,
+          "finMs": 3700
+        },
+        {
+          "palabra": "blanca",
+          "inicioMs": 3700,
+          "finMs": 4160
+        },
+        {
+          "palabra": "estallar",
+          "inicioMs": 4160,
+          "finMs": 4700
+        },
+        {
+          "palabra": "sobre",
+          "inicioMs": 4700,
+          "finMs": 4920
+        },
+        {
+          "palabra": "una",
+          "inicioMs": 4920,
+          "finMs": 5100
+        },
+        {
+          "palabra": "mancha",
+          "inicioMs": 5100,
+          "finMs": 5380
+        },
+        {
+          "palabra": "solar",
+          "inicioMs": 5380,
+          "finMs": 5640
+        },
+        {
+          "palabra": "gigantesca",
+          "inicioMs": 5640,
+          "finMs": 6420
+        },
+        {
+          "palabra": "liberando",
+          "inicioMs": 6680,
+          "finMs": 7040
+        },
+        {
+          "palabra": "la",
+          "inicioMs": 7040,
+          "finMs": 7160
+        },
+        {
+          "palabra": "energía",
+          "inicioMs": 7160,
+          "finMs": 7460
+        },
+        {
+          "palabra": "de",
+          "inicioMs": 7460,
+          "finMs": 7660
+        },
+        {
+          "palabra": "millones",
+          "inicioMs": 7660,
+          "finMs": 7860
+        },
+        {
+          "palabra": "de",
+          "inicioMs": 7860,
+          "finMs": 8140
+        },
+        {
+          "palabra": "bombas",
+          "inicioMs": 8140,
+          "finMs": 8420
+        },
+        {
+          "palabra": "atómicas",
+          "inicioMs": 8420,
+          "finMs": 8980
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "texto": "El Sol había disparado miles de millones de toneladas de plasma magnetizado directo hacia nosotros, recorriendo ciento cincuenta millones de kilómetros en tiempo récord.",
+      "icono": "Flame",
+      "colorIcono": "#EF4444",
+      "tituloVisual": "TORMENTA DE PLASMA",
+      "composicionVisual": "plano_general",
+      "escenario": "espacio_cme_impacto_magnetosfera",
+      "layout": "narrativo",
+      "transicion": "flash",
+      "efectosCamara": [
+        "punch",
+        "shake"
+      ],
+      "sfx": "sfx/sfx_impacto_plasma_magnetosfera.wav",
+      "volumenSfx": 0.28,
+      "palabrasClave": [
+        "Sol",
+        "plasma",
+        "magnetizado",
+        "Tierra",
+        "kilómetros",
+        "récord"
+      ],
+      "personajes": [
+        {
+          "id": "piloto_orbital",
+          "nombre": "Observador Espacial",
+          "posicion": {
+            "x": -160,
+            "y": 60
+          },
+          "escala": 1,
+          "orientacion": "derecha",
+          "acciones": [
+            {
+              "tipo": "personalizada",
+              "pasos": [
+                {
+                  "inicioProgreso": 0,
+                  "finProgreso": 0.5,
+                  "poseId": "warning_danger",
+                  "expresion": "worried",
+                  "posicion": {
+                    "x": -160,
+                    "y": 60
+                  },
+                  "curva": "suave",
+                  "procedural": "flotar"
+                },
+                {
+                  "inicioProgreso": 0.5,
+                  "finProgreso": 1,
+                  "poseId": "protecting_shielding",
+                  "expresion": "scared",
+                  "posicion": {
+                    "x": -140,
+                    "y": 60
+                  },
+                  "curva": "impacto",
+                  "procedural": "recoil"
+                }
+              ]
+            }
+          ],
+          "habla": true,
+          "capaZ": 12
+        }
+      ],
+      "objetos": [
+        {
+          "id": "radar_capsula",
+          "propId": "capsula_espacial_radar",
+          "posicion": {
+            "x": 220,
+            "y": 100
+          },
+          "escala": 1.3,
+          "animacion": "pulso",
+          "capaZ": 14
+        }
+      ],
+      "duracionSegundos": 9.034,
+      "palabras": [
+        {
+          "palabra": "El",
+          "inicioMs": 0,
+          "finMs": 200
+        },
+        {
+          "palabra": "Sol",
+          "inicioMs": 200,
+          "finMs": 380
+        },
+        {
+          "palabra": "había",
+          "inicioMs": 380,
+          "finMs": 580
+        },
+        {
+          "palabra": "disparado",
+          "inicioMs": 580,
+          "finMs": 1100
+        },
+        {
+          "palabra": "miles",
+          "inicioMs": 1100,
+          "finMs": 1320
+        },
+        {
+          "palabra": "de",
+          "inicioMs": 1320,
+          "finMs": 1580
+        },
+        {
+          "palabra": "millones",
+          "inicioMs": 1580,
+          "finMs": 1800
+        },
+        {
+          "palabra": "de",
+          "inicioMs": 1800,
+          "finMs": 2080
+        },
+        {
+          "palabra": "toneladas",
+          "inicioMs": 2080,
+          "finMs": 2500
+        },
+        {
+          "palabra": "de",
+          "inicioMs": 2500,
+          "finMs": 2700
+        },
+        {
+          "palabra": "plasma",
+          "inicioMs": 2700,
+          "finMs": 2980
+        },
+        {
+          "palabra": "magnetizado",
+          "inicioMs": 2980,
+          "finMs": 3620
+        },
+        {
+          "palabra": "directo",
+          "inicioMs": 3620,
+          "finMs": 4140
+        },
+        {
+          "palabra": "hacia",
+          "inicioMs": 4140,
+          "finMs": 4260
+        },
+        {
+          "palabra": "nosotros",
+          "inicioMs": 4260,
+          "finMs": 4720
+        },
+        {
+          "palabra": "recorriendo",
+          "inicioMs": 5020,
+          "finMs": 5580
+        },
+        {
+          "palabra": "ciento",
+          "inicioMs": 5580,
+          "finMs": 5950
+        },
+        {
+          "palabra": "cincuenta",
+          "inicioMs": 5950,
+          "finMs": 6320
+        },
+        {
+          "palabra": "millones",
+          "inicioMs": 6320,
+          "finMs": 6800
+        },
+        {
+          "palabra": "de",
+          "inicioMs": 6800,
+          "finMs": 7080
+        },
+        {
+          "palabra": "kilómetros",
+          "inicioMs": 7080,
+          "finMs": 7540
+        },
+        {
+          "palabra": "en",
+          "inicioMs": 7540,
+          "finMs": 7760
+        },
+        {
+          "palabra": "tiempo",
+          "inicioMs": 7760,
+          "finMs": 8060
+        },
+        {
+          "palabra": "récord",
+          "inicioMs": 8060,
+          "finMs": 8520
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "texto": "En el siglo diecinueve apenas teníamos unos cuantos cables de cobre sobre postes de madera. Pero imagina qué pasaría si esa misma bestia electromagnética nos embistiera en pleno siglo veintiuno.",
+      "icono": "Activity",
+      "colorIcono": "#38BDF8",
+      "tituloVisual": "1859 VS HOY",
+      "composicionVisual": "plano_general",
+      "escenario": "transicion_cables_1859_a_metropolis",
+      "layout": "narrativo",
+      "transicion": "whip_right",
+      "efectosCamara": [
+        "punch",
+        "drift"
+      ],
+      "sfx": "sfx/sfx_transicion_zumbido_red_moderna.wav",
+      "volumenSfx": 0.26,
+      "palabrasClave": [
+        "siglo",
+        "diecinueve",
+        "cables",
+        "cobre",
+        "bestia",
+        "solar",
+        "hoy"
+      ],
+      "personajes": [
+        {
+          "id": "viajero_tiempo",
+          "nombre": "Stickman en Transición",
+          "posicion": {
+            "x": -160,
+            "y": 80
+          },
+          "escala": 1,
+          "orientacion": "derecha",
+          "acciones": [
+            {
+              "tipo": "personalizada",
+              "pasos": [
+                {
+                  "inicioProgreso": 0,
+                  "finProgreso": 0.45,
+                  "poseId": "walking",
+                  "expresion": "thinking",
+                  "posicion": {
+                    "x": -240,
+                    "y": 80
+                  },
+                  "curva": "suave",
+                  "procedural": "caminar"
+                },
+                {
+                  "inicioProgreso": 0.45,
+                  "finProgreso": 1,
+                  "poseId": "surprised_hands_up",
+                  "expresion": "shocked",
+                  "posicion": {
+                    "x": -140,
+                    "y": 80
+                  },
+                  "curva": "suave",
+                  "procedural": "estatico"
+                }
+              ]
+            }
+          ],
+          "habla": true,
+          "capaZ": 12
+        }
+      ],
+      "objetos": [
+        {
+          "id": "combo_redes",
+          "propId": "poste_telegrafo_moderno_combo",
+          "posicion": {
+            "x": 220,
+            "y": 90
+          },
+          "escala": 1.25,
+          "animacion": "pulso",
+          "capaZ": 14
+        }
+      ],
+      "duracionSegundos": 10.258,
+      "palabras": [
+        {
+          "palabra": "En",
+          "inicioMs": 0,
+          "finMs": 200
+        },
+        {
+          "palabra": "el",
+          "inicioMs": 200,
+          "finMs": 320
+        },
+        {
+          "palabra": "siglo",
+          "inicioMs": 320,
+          "finMs": 600
+        },
+        {
+          "palabra": "diecinueve",
+          "inicioMs": 600,
+          "finMs": 1280
+        },
+        {
+          "palabra": "apenas",
+          "inicioMs": 1280,
+          "finMs": 1680
+        },
+        {
+          "palabra": "teníamos",
+          "inicioMs": 1680,
+          "finMs": 2160
+        },
+        {
+          "palabra": "unos",
+          "inicioMs": 2160,
+          "finMs": 2420
+        },
+        {
+          "palabra": "cuantos",
+          "inicioMs": 2420,
+          "finMs": 2840
+        },
+        {
+          "palabra": "cables",
+          "inicioMs": 2840,
+          "finMs": 3060
+        },
+        {
+          "palabra": "de",
+          "inicioMs": 3060,
+          "finMs": 3240
+        },
+        {
+          "palabra": "cobre",
+          "inicioMs": 3240,
+          "finMs": 3560
+        },
+        {
+          "palabra": "sobre",
+          "inicioMs": 3560,
+          "finMs": 3780
+        },
+        {
+          "palabra": "postes",
+          "inicioMs": 3780,
+          "finMs": 4220
+        },
+        {
+          "palabra": "de",
+          "inicioMs": 4220,
+          "finMs": 4320
+        },
+        {
+          "palabra": "madera",
+          "inicioMs": 4320,
+          "finMs": 4680
+        },
+        {
+          "palabra": "Pero",
+          "inicioMs": 4980,
+          "finMs": 5100
+        },
+        {
+          "palabra": "imagina",
+          "inicioMs": 5100,
+          "finMs": 5480
+        },
+        {
+          "palabra": "qué",
+          "inicioMs": 5480,
+          "finMs": 5640
+        },
+        {
+          "palabra": "pasaría",
+          "inicioMs": 5640,
+          "finMs": 6100
+        },
+        {
+          "palabra": "si",
+          "inicioMs": 6100,
+          "finMs": 6340
+        },
+        {
+          "palabra": "esa",
+          "inicioMs": 6340,
+          "finMs": 6500
+        },
+        {
+          "palabra": "misma",
+          "inicioMs": 6500,
+          "finMs": 6760
+        },
+        {
+          "palabra": "bestia",
+          "inicioMs": 6760,
+          "finMs": 7120
+        },
+        {
+          "palabra": "electromagnética",
+          "inicioMs": 7120,
+          "finMs": 7800
+        },
+        {
+          "palabra": "nos",
+          "inicioMs": 7800,
+          "finMs": 8040
+        },
+        {
+          "palabra": "embistiera",
+          "inicioMs": 8040,
+          "finMs": 8500
+        },
+        {
+          "palabra": "en",
+          "inicioMs": 8500,
+          "finMs": 8660
+        },
+        {
+          "palabra": "pleno",
+          "inicioMs": 8660,
+          "finMs": 8880
+        },
+        {
+          "palabra": "siglo",
+          "inicioMs": 8880,
+          "finMs": 9120
+        },
+        {
+          "palabra": "veintiuno",
+          "inicioMs": 9120,
+          "finMs": 9700
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "texto": "Las corrientes inducidas quemarían los transformadores gigantes de alto voltaje. En segundos: satélites ciegos, sin internet, sin cajeros y sin luz durante meses o años.",
+      "icono": "AlertTriangle",
+      "colorIcono": "#EF4444",
+      "tituloVisual": "APAGÓN PLANETARIO",
+      "composicionVisual": "plano_general",
+      "escenario": "metropolis_apagon_catastrofe_electrica",
+      "layout": "narrativo",
+      "transicion": "corte",
+      "efectosCamara": [
+        "punch",
+        "shake"
+      ],
+      "sfx": "sfx/sfx_explosion_transformador_blackout.wav",
+      "volumenSfx": 0.28,
+      "palabrasClave": [
+        "transformadores",
+        "alto",
+        "voltaje",
+        "satélites",
+        "internet",
+        "cajeros",
+        "luz"
+      ],
+      "personajes": [
+        {
+          "id": "ciudadano_desconectado",
+          "nombre": "Ciudadano Moderno",
+          "posicion": {
+            "x": -160,
+            "y": 80
+          },
+          "escala": 1,
+          "orientacion": "derecha",
+          "props": {
+            "derecha": "telefono_muerto_sin_senal"
+          },
+          "acciones": [
+            {
+              "tipo": "personalizada",
+              "pasos": [
+                {
+                  "inicioProgreso": 0,
+                  "finProgreso": 0.45,
+                  "poseId": "looking_down_pose",
+                  "expresion": "worried",
+                  "posicion": {
+                    "x": -160,
+                    "y": 80
+                  },
+                  "curva": "suave",
+                  "procedural": "estatico"
+                },
+                {
+                  "inicioProgreso": 0.45,
+                  "finProgreso": 1,
+                  "poseId": "frustrated_head_grab",
+                  "expresion": "exhausted",
+                  "posicion": {
+                    "x": -140,
+                    "y": 80
+                  },
+                  "curva": "impacto",
+                  "procedural": "temblar"
+                }
+              ]
+            }
+          ],
+          "habla": true,
+          "capaZ": 12
+        }
+      ],
+      "objetos": [
+        {
+          "id": "subestacion_fuego",
+          "propId": "subestacion_transformador_fuego",
+          "posicion": {
+            "x": 220,
+            "y": 110
+          },
+          "escala": 1.35,
+          "animacion": "vibrar",
+          "capaZ": 14
+        }
+      ],
+      "duracionSegundos": 9.466,
+      "palabras": [
+        {
+          "palabra": "Las",
+          "inicioMs": 0,
+          "finMs": 260
+        },
+        {
+          "palabra": "corrientes",
+          "inicioMs": 260,
+          "finMs": 680
+        },
+        {
+          "palabra": "inducidas",
+          "inicioMs": 680,
+          "finMs": 1240
+        },
+        {
+          "palabra": "quemarían",
+          "inicioMs": 1240,
+          "finMs": 1700
+        },
+        {
+          "palabra": "los",
+          "inicioMs": 1700,
+          "finMs": 1820
+        },
+        {
+          "palabra": "transformadores",
+          "inicioMs": 1820,
+          "finMs": 2480
+        },
+        {
+          "palabra": "gigantes",
+          "inicioMs": 2480,
+          "finMs": 2960
+        },
+        {
+          "palabra": "de",
+          "inicioMs": 2960,
+          "finMs": 3160
+        },
+        {
+          "palabra": "alto",
+          "inicioMs": 3160,
+          "finMs": 3380
+        },
+        {
+          "palabra": "voltaje",
+          "inicioMs": 3380,
+          "finMs": 3940
+        },
+        {
+          "palabra": "En",
+          "inicioMs": 4260,
+          "finMs": 4360
+        },
+        {
+          "palabra": "segundos",
+          "inicioMs": 4360,
+          "finMs": 4800
+        },
+        {
+          "palabra": "satélites",
+          "inicioMs": 5000,
+          "finMs": 5360
+        },
+        {
+          "palabra": "ciegos",
+          "inicioMs": 5360,
+          "finMs": 5780
+        },
+        {
+          "palabra": "sin",
+          "inicioMs": 5940,
+          "finMs": 6020
+        },
+        {
+          "palabra": "internet",
+          "inicioMs": 6020,
+          "finMs": 6380
+        },
+        {
+          "palabra": "sin",
+          "inicioMs": 6600,
+          "finMs": 6680
+        },
+        {
+          "palabra": "cajeros",
+          "inicioMs": 6680,
+          "finMs": 7120
+        },
+        {
+          "palabra": "y",
+          "inicioMs": 7120,
+          "finMs": 7220
+        },
+        {
+          "palabra": "sin",
+          "inicioMs": 7220,
+          "finMs": 7340
+        },
+        {
+          "palabra": "luz",
+          "inicioMs": 7340,
+          "finMs": 7480
+        },
+        {
+          "palabra": "durante",
+          "inicioMs": 7480,
+          "finMs": 7820
+        },
+        {
+          "palabra": "meses",
+          "inicioMs": 7820,
+          "finMs": 8120
+        },
+        {
+          "palabra": "o",
+          "inicioMs": 8120,
+          "finMs": 8340
+        },
+        {
+          "palabra": "años",
+          "inicioMs": 8340,
+          "finMs": 8580
+        }
+      ]
+    },
+    {
+      "id": 7,
+      "texto": "Aquella tormenta no destruyó a la civilización porque casi no teníamos cables ni satélites. Pero el Sol volverá a rugir... y la próxima vez, no nos encontrará con tanta suerte.",
+      "icono": "Flame",
+      "colorIcono": "#F59E0B",
+      "tituloVisual": "LA PRÓXIMA TORMENTA",
+      "composicionVisual": "plano_general",
+      "escenario": "ciudad_oscura_auroras_vela",
+      "layout": "narrativo",
+      "transicion": "zoom_in",
+      "efectosCamara": [
+        "punch",
+        "drift"
+      ],
+      "sfx": "sfx/sfx_raspado_fosforo_vela_soplido.wav",
+      "volumenSfx": 0.26,
+      "palabrasClave": [
+        "tormenta",
+        "destruyó",
+        "mundo",
+        "cables",
+        "suerte"
+      ],
+      "personajes": [
+        {
+          "id": "narrador_vela",
+          "nombre": "Narrador a la Luz de la Vela",
+          "posicion": {
+            "x": -120,
+            "y": 80
+          },
+          "escala": 1,
+          "orientacion": "derecha",
+          "props": {
+            "derecha": "vela_fosforo_resplandor"
+          },
+          "acciones": [
+            {
+              "tipo": "personalizada",
+              "pasos": [
+                {
+                  "inicioProgreso": 0,
+                  "finProgreso": 0.45,
+                  "poseId": "presenting_object",
+                  "expresion": "analytical",
+                  "posicion": {
+                    "x": -120,
+                    "y": 80
+                  },
+                  "curva": "suave",
+                  "procedural": "estatico"
+                },
+                {
+                  "inicioProgreso": 0.45,
+                  "finProgreso": 0.8,
+                  "poseId": "explaining_both_hands",
+                  "expresion": "talking",
+                  "posicion": {
+                    "x": -100,
+                    "y": 80
+                  },
+                  "curva": "suave",
+                  "procedural": "estatico"
+                },
+                {
+                  "inicioProgreso": 0.8,
+                  "finProgreso": 1,
+                  "poseId": "shushing_silence",
+                  "expresion": "neutral",
+                  "posicion": {
+                    "x": -100,
+                    "y": 80
+                  },
+                  "curva": "suave",
+                  "procedural": "estatico"
+                }
+              ]
+            }
+          ],
+          "habla": true,
+          "capaZ": 12
+        }
+      ],
+      "duracionSegundos": 9.922,
+      "palabras": [
+        {
+          "palabra": "Aquella",
+          "inicioMs": 0,
+          "finMs": 400
+        },
+        {
+          "palabra": "tormenta",
+          "inicioMs": 400,
+          "finMs": 920
+        },
+        {
+          "palabra": "no",
+          "inicioMs": 920,
+          "finMs": 1080
+        },
+        {
+          "palabra": "destruyó",
+          "inicioMs": 1080,
+          "finMs": 1540
+        },
+        {
+          "palabra": "a",
+          "inicioMs": 1540,
+          "finMs": 1620
+        },
+        {
+          "palabra": "la",
+          "inicioMs": 1620,
+          "finMs": 1700
+        },
+        {
+          "palabra": "civilización",
+          "inicioMs": 1700,
+          "finMs": 2280
+        },
+        {
+          "palabra": "porque",
+          "inicioMs": 2280,
+          "finMs": 2640
+        },
+        {
+          "palabra": "casi",
+          "inicioMs": 2640,
+          "finMs": 2980
+        },
+        {
+          "palabra": "no",
+          "inicioMs": 2980,
+          "finMs": 3160
+        },
+        {
+          "palabra": "teníamos",
+          "inicioMs": 3160,
+          "finMs": 3560
+        },
+        {
+          "palabra": "cables",
+          "inicioMs": 3560,
+          "finMs": 3900
+        },
+        {
+          "palabra": "ni",
+          "inicioMs": 3900,
+          "finMs": 4120
+        },
+        {
+          "palabra": "satélites",
+          "inicioMs": 4120,
+          "finMs": 4680
+        },
+        {
+          "palabra": "Pero",
+          "inicioMs": 4940,
+          "finMs": 5080
+        },
+        {
+          "palabra": "el",
+          "inicioMs": 5080,
+          "finMs": 5180
+        },
+        {
+          "palabra": "Sol",
+          "inicioMs": 5180,
+          "finMs": 5300
+        },
+        {
+          "palabra": "volverá",
+          "inicioMs": 5300,
+          "finMs": 5740
+        },
+        {
+          "palabra": "a",
+          "inicioMs": 5740,
+          "finMs": 5820
+        },
+        {
+          "palabra": "rugir",
+          "inicioMs": 5820,
+          "finMs": 6140
+        },
+        {
+          "palabra": "y",
+          "inicioMs": 6140,
+          "finMs": 6420
+        },
+        {
+          "palabra": "la",
+          "inicioMs": 6420,
+          "finMs": 6520
+        },
+        {
+          "palabra": "próxima",
+          "inicioMs": 6520,
+          "finMs": 6840
+        },
+        {
+          "palabra": "vez",
+          "inicioMs": 6840,
+          "finMs": 7180
+        },
+        {
+          "palabra": "no",
+          "inicioMs": 7480,
+          "finMs": 7560
+        },
+        {
+          "palabra": "nos",
+          "inicioMs": 7560,
+          "finMs": 7680
+        },
+        {
+          "palabra": "encontrará",
+          "inicioMs": 7680,
+          "finMs": 8240
+        },
+        {
+          "palabra": "con",
+          "inicioMs": 8240,
+          "finMs": 8360
+        },
+        {
+          "palabra": "tanta",
+          "inicioMs": 8360,
+          "finMs": 8640
+        },
+        {
+          "palabra": "suerte",
+          "inicioMs": 8640,
+          "finMs": 9080
+        }
+      ]
+    }
+  ]
+}

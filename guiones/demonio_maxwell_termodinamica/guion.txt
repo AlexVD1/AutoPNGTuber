@@ -1,0 +1,27 @@
+ID / SLUG: demonio_maxwell_termodinamica
+Título: El demonio que burló la física (La trampa de Maxwell)
+Gancho: La ley más estricta de todo el universo dice que es imposible separar el calor del frío sin gastar energía... a menos que invoques a este astuto demonio.
+Tema: El demonio de Maxwell y el Principio de Landauer: por qué borrar información cuesta calor físico real
+============================================================
+
+[Escena 1] SEGUNDA LEY: PROHIBIDO
+La ley más estricta de todo el universo dice que es imposible separar el calor del frío sin gastar energía... a menos que invoques a este astuto demonio.
+
+[Escena 2] LA CAJA DE MAXWELL
+En mil ochocientos sesenta y siete, el físico James Clerk Maxwell imaginó una caja sellada llena de gas, dividida en dos compartimentos y conectada únicamente por una diminuta compuerta sin fricción.
+
+[Escena 3] FILTRADO MILIMÉTRICO
+El guardián vigila cada molécula. Si ve venir una partícula rápida hacia la izquierda, abre la puerta; si viene una lenta, la deja pasar hacia la derecha con reflejos impecables.
+
+[Escena 4] ¡100 °C VS 0 °C: ENERGÍA GRATIS!
+Y al cabo de unos minutos ocurre el milagro: ¡un lado está hirviendo y el otro está completamente congelado! Calor y frío separados de la nada sin gastar un solo gramo de combustible.
+
+[Escena 5] MEMORIA SATURADA: 100%
+Durante décadas fue la pesadilla de los mejores físicos: ¿dónde estaba la trampa? La respuesta tardó casi un siglo... y no estaba en la puerta mecánica, sino dentro del cerebro del demonio.
+
+[Escena 6] PRINCIPIO DE LANDAUER
+Para decidir qué partícula dejar pasar, el ser debe medir su velocidad y memorizarla. Pero como su memoria es finita, tarde o temprano su mente se satura y está obligado a borrar datos.
+
+[Escena 7] LA INFORMACIÓN CUESTA CALOR
+Y según el Principio de Landauer, borrar información disipa calor físico obligatorio al ambiente. Toda la energía que el demonio ahorró en la caja... la pagó sudando en su propia cabeza. ¡El conocimiento pesa y cuesta energía!
+

@@ -2042,7 +2042,942 @@ def synth_escotilla_mina_portazo_triunfo(duration=0.95):
         samples.append(val)
     return samples
 
+def synth_conteo_clic_glitch_estatica(duration=0.85):
+    """Clics rítmicos de conteo (1, 2, 3) + fallo de estática digital al 4 + tono misterioso."""
+    samples = []
+    n_samples = int(SAMPLE_RATE * duration)
+    click_times = [0.08, 0.20, 0.32]
+    for i in range(n_samples):
+        t = i / SAMPLE_RATE
+        val = 0.0
+        # 1. Clics secos de conteo (1, 2, 3)
+        for ct in click_times:
+            if ct <= t < ct + 0.05:
+                dt_c = t - ct
+                click = math.sin(2 * math.pi * 1800 * dt_c) * 0.35 * math.exp(-60 * dt_c)
+                val += click
+        # 2. Glitch digital y estática al romperse el 4 (0.42 a 0.65s)
+        if 0.42 <= t < 0.65:
+            dt_g = t - 0.42
+            glitch_noise = (random.random() * 2 - 1) * 0.45 * math.exp(-12 * dt_g)
+            freq_g = 600 + 1200 * math.sin(2 * math.pi * 45 * dt_g)
+            glitch_buzz = math.sin(2 * math.pi * freq_g * dt_g) * 0.35 * math.exp(-10 * dt_g)
+            val += glitch_noise + glitch_buzz
+        # 3. Tono grave de misterio y campana profunda (0.55 a 0.85s)
+        if t >= 0.55:
+            dt_m = t - 0.55
+            chime = (math.sin(2 * math.pi * 320 * dt_m) * 0.3 +
+                     math.sin(2 * math.pi * 480 * dt_m) * 0.2) * math.exp(-5.0 * dt_m)
+            sub = math.sin(2 * math.pi * 65 * dt_m) * 0.35 * math.exp(-3.5 * dt_m)
+            val += chime + sub
+        samples.append(val)
+    return samples
+
+def synth_rio_selva_peces_apunte(duration=0.85):
+    """Murmullo de río tropical + peces cayendo en cesto ("slap-splash") + campanilleo de libreta."""
+    samples = []
+    n_samples = int(SAMPLE_RATE * duration)
+    splash_times = [0.22, 0.45]
+    for i in range(n_samples):
+        t = i / SAMPLE_RATE
+        val = 0.0
+        # 1. Murmullo de agua de río y brisa selvática
+        river = (random.random() * 2 - 1) * 0.12 * (0.8 + 0.2 * math.sin(2 * math.pi * 3 * t))
+        val += river
+        # 2. Peces cayendo en cesto de corteza ("slap-splash")
+        for st in splash_times:
+            if st <= t < st + 0.15:
+                dt_s = t - st
+                slap = math.sin(2 * math.pi * 350 * dt_s) * 0.4 * math.exp(-30 * dt_s)
+                splash = (random.random() * 2 - 1) * 0.35 * math.exp(-15 * dt_s)
+                val += slap + splash
+        # 3. Campanilleo de libreta de antropólogo (0.60 a 0.85s)
+        if t >= 0.60:
+            dt_n = t - 0.60
+            scribble = (random.random() * 2 - 1) * 0.2 * math.exp(-18 * dt_n)
+            chime = math.sin(2 * math.pi * 1760 * dt_n) * 0.25 * math.exp(-6 * dt_n)
+            val += scribble + chime
+        samples.append(val)
+    return samples
+
+def synth_fichas_madera_clack_duda(duration=0.85):
+    """Golpes secos de fichas de madera alineadas ("clack, clack") + zumbido suave de duda."""
+    samples = []
+    n_samples = int(SAMPLE_RATE * duration)
+    tile_times = [0.08, 0.18, 0.28, 0.38]
+    for i in range(n_samples):
+        t = i / SAMPLE_RATE
+        val = 0.0
+        # 1. Golpes de madera seca ("clack-clack")
+        for tt in tile_times:
+            if tt <= t < tt + 0.08:
+                dt_t = t - tt
+                clack = (math.sin(2 * math.pi * 750 * dt_t) * 0.5 +
+                         math.sin(2 * math.pi * 1400 * dt_t) * 0.3) * math.exp(-45 * dt_t)
+                val += clack
+        # 2. Zumbido de duda / disonancia suave (0.45 a 0.85s)
+        if t >= 0.45:
+            dt_d = t - 0.45
+            # Tono interrogativo ligeramente desafinado
+            wobble = math.sin(2 * math.pi * (290 + math.sin(2 * math.pi * 7 * dt_d) * 15) * dt_d) * 0.3 * math.exp(-4 * dt_d)
+            harm = math.sin(2 * math.pi * 435 * dt_d) * 0.15 * math.exp(-4.5 * dt_d)
+            val += wobble + harm
+        samples.append(val)
+    return samples
+
+def synth_sinapsis_nube_evanescente(duration=0.85):
+    """Zumbido sináptico electrónico ("hummm-bzzzt") + siseo de aire disipándose + eco hueco."""
+    samples = []
+    n_samples = int(SAMPLE_RATE * duration)
+    for i in range(n_samples):
+        t = i / SAMPLE_RATE
+        val = 0.0
+        # 1. Chispa y zumbido sináptico (0.0 a 0.35s)
+        if t < 0.35:
+            p_s = t / 0.35
+            spark = (random.random() * 2 - 1) * 0.3 * (1 - p_s)
+            hum = (math.sin(2 * math.pi * 220 * t) * 0.3 +
+                   math.sin(2 * math.pi * 440 * t) * 0.15) * math.sin(math.pi * p_s)
+            val += spark + hum
+        # 2. Siseo de aire de la nube escurriéndose entre los dedos (0.30 a 0.65s)
+        if 0.30 <= t < 0.65:
+            dt_w = t - 0.30
+            p_w = dt_w / 0.35
+            whoosh = (random.random() * 2 - 1) * 0.35 * math.sin(math.pi * p_w)
+            val += whoosh
+        # 3. Eco metálico de la caja fuerte vacía (0.50 a 0.85s)
+        if t >= 0.50:
+            dt_e = t - 0.50
+            vault_echo = (math.sin(2 * math.pi * 140 * dt_e) * 0.4 +
+                          math.sin(2 * math.pi * 280 * dt_e) * 0.18) * math.exp(-5.5 * dt_e)
+            val += vault_echo
+        samples.append(val)
+    return samples
+
+def synth_campana_ans_acierto_duda(duration=0.85):
+    """Campana armónica brillante ("ding") + sonido de masticar/dudar + madera en vibración."""
+    samples = []
+    n_samples = int(SAMPLE_RATE * duration)
+    for i in range(n_samples):
+        t = i / SAMPLE_RATE
+        val = 0.0
+        # 1. Campana de acierto biológico al discriminar 10 vs 5 (0.05 a 0.45s)
+        if 0.05 <= t < 0.45:
+            dt_c = t - 0.05
+            ding = (math.sin(2 * math.pi * 1320 * dt_c) * 0.4 +
+                    math.sin(2 * math.pi * 2640 * dt_c) * 0.2) * math.exp(-7.0 * dt_c)
+            val += ding
+        # 2. Chasquido cómico de mora / bocado (0.30 a 0.42s)
+        if 0.30 <= t < 0.42:
+            dt_m = t - 0.30
+            chomp = math.sin(2 * math.pi * 450 * dt_m) * 0.3 * math.exp(-30 * dt_m)
+            val += chomp
+        # 3. Tono oscilante de duda al comparar 10 vs 9 (0.45 a 0.85s)
+        if t >= 0.45:
+            dt_d = t - 0.45
+            duda = math.sin(2 * math.pi * (380 + math.sin(2 * math.pi * 8 * dt_d) * 20) * dt_d) * 0.28 * math.exp(-4.5 * dt_d)
+            val += duda
+        samples.append(val)
+    return samples
+
+def synth_engranajes_oro_hack_mental(duration=0.90):
+    """Crujido de origami y engranajes finos de relojería encajando + acorde orquestal brillante."""
+    samples = []
+    n_samples = int(SAMPLE_RATE * duration)
+    gear_clicks = [0.10, 0.18, 0.26, 0.34, 0.42]
+    for i in range(n_samples):
+        t = i / SAMPLE_RATE
+        val = 0.0
+        # 1. Engranajes mecánicos dorados encajando ("click-whirrr-clack")
+        for gc in gear_clicks:
+            if gc <= t < gc + 0.06:
+                dt_g = t - gc
+                gear = (math.sin(2 * math.pi * 2400 * dt_g) * 0.35 +
+                        (random.random() * 2 - 1) * 0.2) * math.exp(-55 * dt_g)
+                val += gear
+        # 2. Zumbido de giro fino
+        if 0.15 <= t < 0.50:
+            whir = math.sin(2 * math.pi * 720 * t) * 0.15 * math.sin(math.pi * ((t - 0.15) / 0.35))
+            val += whir
+        # 3. Acorde ascendente de poder mental (C4, E4, G4, C5 a partir de 0.45s)
+        if t >= 0.45:
+            dt_c = t - 0.45
+            notes = [261.63, 329.63, 392.00, 523.25]
+            chord = sum(math.sin(2 * math.pi * nt * dt_c) * 0.18 for nt in notes) * math.exp(-3.5 * dt_c)
+            val += chord
+        samples.append(val)
+    return samples
+
+def synth_cosmos_ideas_latido_final(duration=0.95):
+    """Silencio súbito + reverberación cósmica etérea suave + latido final de cierre reflexivo."""
+    samples = []
+    n_samples = int(SAMPLE_RATE * duration)
+    for i in range(n_samples):
+        t = i / SAMPLE_RATE
+        val = 0.0
+        # 1. Resonancia cósmica brillante etérea (0.0 a 0.65s)
+        if t < 0.65:
+            p_c = t / 0.65
+            pad = (math.sin(2 * math.pi * 440 * t) * 0.15 +
+                   math.sin(2 * math.pi * 659.25 * t) * 0.12 +
+                   math.sin(2 * math.pi * 880 * t) * 0.08) * math.sin(math.pi * p_c)
+            shimmer = (math.sin(2 * math.pi * 3520 * t) * 0.06) * math.sin(math.pi * p_c)
+            val += pad + shimmer
+        # 2. Latido cardíaco profundo de cierre reflexivo ("thump", 0.55 a 0.95s)
+        if t >= 0.55:
+            dt_h = t - 0.55
+            thump1 = math.sin(2 * math.pi * 55 * dt_h) * 0.45 * math.exp(-8 * dt_h)
+            thump2 = math.sin(2 * math.pi * 110 * dt_h) * 0.2 * math.exp(-12 * dt_h)
+            val += thump1 + thump2
+        samples.append(val)
+    return samples
+
+def synth_papel_arrugado_canica_brillo(duration=0.85):
+    """Arrugado de papel crujiente + zumbido cálido de energía dorada / destello solar 'shiiin'."""
+    samples = []
+    n_samples = int(SAMPLE_RATE * duration)
+    for i in range(n_samples):
+        t = i / SAMPLE_RATE
+        val = 0.0
+        # 1. Arrugado de papel (0.0 a 0.38s)
+        if t < 0.38:
+            p_p = t / 0.38
+            crumple = (random.random() * 2 - 1) * 0.4 * (1 - p_p)
+            snap = math.sin(2 * math.pi * 650 * t) * 0.25 * math.exp(-25 * (t % 0.08))
+            val += crumple + snap
+        # 2. Resplandor dorado / destello solar 'shiiin' (0.32 a 0.85s)
+        if t >= 0.32:
+            dt_s = t - 0.32
+            p_s = dt_s / 0.53
+            shimmer = (math.sin(2 * math.pi * 1760 * dt_s) * 0.3 +
+                       math.sin(2 * math.pi * 2640 * dt_s) * 0.2 +
+                       math.sin(2 * math.pi * 3520 * dt_s) * 0.1) * math.sin(math.pi * p_s)
+            warm_hum = math.sin(2 * math.pi * 220 * dt_s) * 0.15 * math.exp(-3 * dt_s)
+            val += shimmer + warm_hum
+        samples.append(val)
+    return samples
+
+def synth_cinta_metrica_traqueteo_ping(duration=0.85):
+    """Traqueteo metálico rápido de cinta desenrollándose ('whirrr-clack') + campana 'ping'."""
+    samples = []
+    n_samples = int(SAMPLE_RATE * duration)
+    clicks = [0.08, 0.14, 0.20, 0.26, 0.32, 0.38, 0.44]
+    for i in range(n_samples):
+        t = i / SAMPLE_RATE
+        val = 0.0
+        # 1. Traqueteo de cinta métrica metálica
+        for c_t in clicks:
+            if c_t <= t < c_t + 0.04:
+                dt_c = t - c_t
+                click = math.sin(2 * math.pi * 2400 * dt_c) * 0.35 * math.exp(-70 * dt_c)
+                val += click
+        if 0.06 <= t < 0.48:
+            spring_whir = math.sin(2 * math.pi * 880 * t) * 0.15 * math.sin(math.pi * ((t - 0.06) / 0.42))
+            val += spring_whir
+        # 2. Campana de medición 'ping' (0.50 a 0.85s)
+        if t >= 0.50:
+            dt_p = t - 0.50
+            ping = (math.sin(2 * math.pi * 1975.5 * dt_p) * 0.4 +
+                    math.sin(2 * math.pi * 3951 * dt_p) * 0.15) * math.exp(-6.5 * dt_p)
+            val += ping
+        samples.append(val)
+    return samples
+
+def synth_lupa_enfoque_estornudo_ahogado(duration=0.85):
+    """Servomotor de enfoque de lente + respiración contenida aguantando un estornudo."""
+    samples = []
+    n_samples = int(SAMPLE_RATE * duration)
+    for i in range(n_samples):
+        t = i / SAMPLE_RATE
+        val = 0.0
+        # 1. Enfoque mecánico óptico (0.0 a 0.35s)
+        if t < 0.35:
+            servo = math.sin(2 * math.pi * (450 + 200 * math.sin(2 * math.pi * 15 * t)) * t) * 0.2 * math.sin(math.pi * (t / 0.35))
+            lens_click = math.sin(2 * math.pi * 1800 * t) * 0.25 * math.exp(-50 * (t % 0.1))
+            val += servo + lens_click
+        # 2. Amago de estornudo cómico y quejido ahogado (0.35 a 0.85s)
+        if t >= 0.35:
+            dt_e = t - 0.35
+            sniff = (random.random() * 2 - 1) * 0.25 * math.exp(-10 * (dt_e % 0.18))
+            choke = math.sin(2 * math.pi * 320 * dt_e) * 0.3 * math.sin(math.pi * (dt_e / 0.5))
+            val += sniff + choke
+        samples.append(val)
+    return samples
+
+def synth_pasos_asfalto_viento_urbano(duration=0.85):
+    """Pasos rápidos sobre pavimento + silbido de viento urbano vacío y eco."""
+    samples = []
+    n_samples = int(SAMPLE_RATE * duration)
+    step_times = [0.08, 0.24, 0.40, 0.56]
+    for i in range(n_samples):
+        t = i / SAMPLE_RATE
+        val = 0.0
+        # 1. Pasos sobre asfalto
+        for st in step_times:
+            if st <= t < st + 0.08:
+                dt_s = t - st
+                shoe = (math.sin(2 * math.pi * 260 * dt_s) * 0.4 +
+                        (random.random() * 2 - 1) * 0.25) * math.exp(-35 * dt_s)
+                val += shoe
+        # 2. Silbido de viento urbano vacío (0.2 a 0.85s)
+        if t >= 0.20:
+            dt_w = t - 0.20
+            wind = (random.random() * 2 - 1) * 0.12 * math.sin(2 * math.pi * 3 * dt_w)
+            whistle = math.sin(2 * math.pi * 620 * dt_w) * 0.08 * math.sin(math.pi * (dt_w / 0.65))
+            val += wind + whistle
+        samples.append(val)
+    return samples
+
+def synth_sonar_radar_vacio_sordo(duration=0.90):
+    """Zumbido sub-grave envolvente de vacío infinito + pulso de radar/sonar sin respuesta."""
+    samples = []
+    n_samples = int(SAMPLE_RATE * duration)
+    for i in range(n_samples):
+        t = i / SAMPLE_RATE
+        val = 0.0
+        # 1. Drone sordo de vacío cósmico (42 Hz)
+        abyss_hum = (math.sin(2 * math.pi * 42 * t) * 0.45 +
+                     math.sin(2 * math.pi * 84 * t) * 0.2) * math.sin(math.pi * (t / duration))
+        val += abyss_hum
+        # 2. Pulso de radar solitario buscando señal (0.15 a 0.70s)
+        if 0.15 <= t < 0.70:
+            dt_r = t - 0.15
+            radar = math.sin(2 * math.pi * 1200 * dt_r) * 0.35 * math.exp(-5.5 * dt_r)
+            val += radar
+        samples.append(val)
+    return samples
+
+def synth_auto_autopista_frenazo_canica(duration=0.90):
+    """Aceleración de motor en carretera + frenazo suave de neumáticos + tintineo de canica."""
+    samples = []
+    n_samples = int(SAMPLE_RATE * duration)
+    for i in range(n_samples):
+        t = i / SAMPLE_RATE
+        val = 0.0
+        # 1. Motor acelerando (0.0 a 0.45s)
+        if t < 0.45:
+            p_m = t / 0.45
+            engine_freq = 70 + 130 * p_m
+            engine = (math.sin(2 * math.pi * engine_freq * t) * 0.4 +
+                      (random.random() * 2 - 1) * 0.15) * math.sin(math.pi * p_m)
+            val += engine
+        # 2. Frenazo de neumáticos (0.42 a 0.68s)
+        if 0.42 <= t < 0.68:
+            dt_b = t - 0.42
+            skid = (random.random() * 2 - 1) * 0.35 * math.exp(-8 * dt_b)
+            squeal = math.sin(2 * math.pi * 1650 * dt_b) * 0.25 * math.sin(math.pi * (dt_b / 0.26))
+            val += skid + squeal
+        # 3. Tintineo de canica de vidrio sobre el suelo (0.65 a 0.90s)
+        if t >= 0.65:
+            dt_k = t - 0.65
+            clink = (math.sin(2 * math.pi * 2800 * dt_k) * 0.35 +
+                     math.sin(2 * math.pi * 4200 * dt_k) * 0.15) * math.exp(-25 * dt_k)
+            val += clink
+        samples.append(val)
+    return samples
+
+def synth_sintetizador_cosmico_silencio(duration=0.95):
+    """Acorde cálido de sintetizador cósmico etéreo (Cmaj7) que se desvanece en silencio absoluto."""
+    samples = []
+    n_samples = int(SAMPLE_RATE * duration)
+    notes = [130.81, 196.00, 246.94, 329.63, 493.88] # C3, G3, B3, E4, B4
+    for i in range(n_samples):
+        t = i / SAMPLE_RATE
+        val = 0.0
+        p_fade = math.sin(math.pi * (t / duration)) ** 1.2
+        chord = sum(math.sin(2 * math.pi * nt * t) * 0.15 for nt in notes) * p_fade
+        shimmer = math.sin(2 * math.pi * 1975.5 * t) * 0.05 * p_fade
+        val += chord + shimmer
+        samples.append(val)
+    return samples
+
+# ==========================================
+# SFX DEMONIO DE MAXWELL Y PRINCIPIO DE LANDAUER
+# ==========================================
+
+def synth_sello_thump_segunda_ley(duration=0.85):
+    """Golpe seco y contundente de sello de caucho sobre mesa ('THUMP') con corte seco de vapor."""
+    samples = []
+    n_samples = int(SAMPLE_RATE * duration)
+    for i in range(n_samples):
+        t = i / SAMPLE_RATE
+        val = 0.0
+        # 1. Vapor siseante inicial que se corta (0.0 a 0.22s)
+        if t < 0.22:
+            steam = (random.random() * 2 - 1) * 0.18 * (1 - t / 0.22)
+            val += steam
+        # 2. Impacto sordo de madera y caucho (0.20 a 0.55s)
+        if 0.20 <= t < 0.55:
+            dt = t - 0.20
+            thump_freq = 90 * math.exp(-14 * dt) + 45
+            impact = math.sin(2 * math.pi * thump_freq * dt) * 0.85 * math.exp(-18 * dt)
+            wood_thud = (random.random() * 2 - 1) * 0.3 * math.exp(-35 * dt)
+            val += impact + wood_thud
+        # 3. Resonancia residual sorda (0.35 a 0.85s)
+        if t >= 0.35:
+            dt_r = t - 0.35
+            hum = math.sin(2 * math.pi * 55 * dt_r) * 0.15 * math.exp(-8 * dt_r)
+            val += hum
+        samples.append(val)
+    return samples
+
+def synth_rebotes_particulas_gas_clics(duration=0.90):
+    """Micro-clics elásticos continuos de moléculas de gas rebotando a diferentes velocidades ('tic-toc-tac-ping')."""
+    samples = []
+    n_samples = int(SAMPLE_RATE * duration)
+    # Tiempos aleatorios fijos de impactos para dar textura caótica
+    clicks = [
+        (0.05, 1400, 0.4), (0.12, 850, 0.3), (0.19, 2100, 0.5), (0.28, 1200, 0.35),
+        (0.36, 1750, 0.45), (0.44, 920, 0.3), (0.52, 2400, 0.4), (0.61, 1100, 0.35),
+        (0.70, 1950, 0.45), (0.78, 1300, 0.3), (0.84, 2200, 0.35)
+    ]
+    for i in range(n_samples):
+        t = i / SAMPLE_RATE
+        val = 0.0
+        for c_t, c_f, c_vol in clicks:
+            if c_t <= t < c_t + 0.045:
+                dt = t - c_t
+                env = math.exp(-70 * dt)
+                ping = math.sin(2 * math.pi * c_f * dt) * env * c_vol
+                val += ping
+        # Leve zumbido térmico de fondo
+        val += (random.random() * 2 - 1) * 0.03
+        samples.append(val)
+    return samples
+
+def synth_compuerta_persiana_rapida(duration=0.85):
+    """Apertura y cierre milimétrico de compuerta sin fricción ('whick-clack') con estela de viento ágil."""
+    samples = []
+    n_samples = int(SAMPLE_RATE * duration)
+    for i in range(n_samples):
+        t = i / SAMPLE_RATE
+        val = 0.0
+        # 1. Deslizamiento ágil hacia arriba (0.05 a 0.25s)
+        if 0.05 <= t < 0.25:
+            dt = t - 0.05
+            p = dt / 0.20
+            freq_slide = 400 + 1200 * p
+            whoosh = (random.random() * 2 - 1) * 0.25 * math.sin(math.pi * p)
+            tone = math.sin(2 * math.pi * freq_slide * dt) * 0.2 * math.sin(math.pi * p)
+            val += whoosh + tone
+        # 2. Clic de compuerta arriba (0.24 a 0.32s)
+        if 0.24 <= t < 0.32:
+            dt = t - 0.24
+            val += math.sin(2 * math.pi * 2600 * dt) * 0.5 * math.exp(-80 * dt)
+        # 3. Bajada y cierre hermético contundente (0.45 a 0.65s)
+        if 0.45 <= t < 0.65:
+            dt = t - 0.45
+            p = dt / 0.20
+            freq_down = 1500 - 900 * p
+            whoosh_down = (random.random() * 2 - 1) * 0.3 * math.sin(math.pi * p)
+            val += whoosh_down
+        # 4. 'CLACK' de cierre final en seco (0.64 a 0.78s)
+        if 0.64 <= t < 0.78:
+            dt = t - 0.64
+            clack = (math.sin(2 * math.pi * 850 * dt) * 0.6 +
+                     (random.random() * 2 - 1) * 0.4) * math.exp(-45 * dt)
+            val += clack
+        samples.append(val)
+    return samples
+
+def synth_fuego_hielo_fanfarria_triunfal(duration=0.95):
+    """Crepitar de fuego a la izquierda, viento gélido a la derecha y fanfarria triunfal cómica de 8-bits."""
+    samples = []
+    n_samples = int(SAMPLE_RATE * duration)
+    # Fanfarria triunfal en arpegio: C5 (523Hz), E5 (659Hz), G5 (784Hz), C6 (1046Hz)
+    notes = [(0.25, 523.25), (0.40, 659.25), (0.55, 783.99), (0.70, 1046.50)]
+    for i in range(n_samples):
+        t = i / SAMPLE_RATE
+        val = 0.0
+        # 1. Crepitar térmico y viento de escarcha de fondo (0.0 a 0.95s)
+        crackle = (random.random() * 2 - 1) * 0.15 if random.random() < 0.08 else 0.0
+        frost_wind = (random.random() * 2 - 1) * 0.08 * math.sin(2 * math.pi * 650 * t)
+        val += crackle + frost_wind
+        # 2. Fanfarria de sintetizador
+        for n_t, n_f in notes:
+            if n_t <= t < n_t + 0.18:
+                dt = t - n_t
+                env = math.sin(math.pi * (dt / 0.18)) ** 0.8
+                # Onda pulso / cuadrada suave para estilo victorioso de juego retro
+                tone = 0.25 if math.sin(2 * math.pi * n_f * dt) > 0 else -0.25
+                val += tone * env
+        samples.append(val)
+    return samples
+
+def synth_sobrecarga_alarma_memoria(duration=0.90):
+    """Zumbido digital agudo que sube de tono + sirena intermitente 'beep-beep' de STORAGE FULL."""
+    samples = []
+    n_samples = int(SAMPLE_RATE * duration)
+    for i in range(n_samples):
+        t = i / SAMPLE_RATE
+        val = 0.0
+        # 1. Tono de sobrecarga procesando (0.0 a 0.40s)
+        if t < 0.40:
+            p = t / 0.40
+            f_proc = 440 + 1400 * (p ** 2)
+            cpu_whine = math.sin(2 * math.pi * f_proc * t) * 0.3 * (0.5 + 0.5 * p)
+            noise_glitch = ((random.random() * 2 - 1) * 0.15) if (int(t * 80) % 2 == 0) else 0.0
+            val += cpu_whine + noise_glitch
+        # 2. Beep de alarma digital intermitente (0.40 a 0.90s, tres pulsos)
+        if t >= 0.40:
+            dt_a = t - 0.40
+            # 3 beeps cada 0.16s
+            beep_phase = (dt_a % 0.16) / 0.16
+            if beep_phase < 0.65:
+                alarm_f = 1760.0 # A6 agudo
+                env = math.sin(math.pi * (beep_phase / 0.65))
+                val += math.sin(2 * math.pi * alarm_f * t) * 0.45 * env
+        samples.append(val)
+    return samples
+
+def synth_friccion_goma_chispas_termicas(duration=0.90):
+    """Fricción acelerada de goma sobre papel ('scritch-scratch') seguida de chispazos térmicos ('tsss-snap')."""
+    samples = []
+    n_samples = int(SAMPLE_RATE * duration)
+    for i in range(n_samples):
+        t = i / SAMPLE_RATE
+        val = 0.0
+        # 1. Tres pasadas de goma de borrar (0.0 a 0.50s)
+        if t < 0.50:
+            rub_cycle = math.sin(2 * math.pi * 7.5 * t)
+            rub_noise = (random.random() * 2 - 1) * 0.35 * abs(rub_cycle)
+            val += rub_noise
+        # 2. Chispazos térmicos de calor incandescentes (0.45 a 0.90s)
+        if t >= 0.45:
+            dt_s = t - 0.45
+            p_s = dt_s / 0.45
+            # Siseo de calor disipado
+            hiss = (random.random() * 2 - 1) * 0.25 * math.exp(-6 * dt_s)
+            # Micro-pops eléctricos de chispas
+            pop = 0.0
+            if random.random() < 0.12 and dt_s < 0.35:
+                pop = (random.random() * 2 - 1) * 0.5 * math.exp(-30 * (dt_s % 0.05))
+            val += hiss + pop
+        samples.append(val)
+    return samples
+
+def synth_teclado_delete_fwoosh_ironico(duration=0.95):
+    """Clic mecánico de tecla de computadora + 'FWOOSH' de llamarada térmica + acorde irónico de contrabajo."""
+    samples = []
+    n_samples = int(SAMPLE_RATE * duration)
+    for i in range(n_samples):
+        t = i / SAMPLE_RATE
+        val = 0.0
+        # 1. Clic nítido de tecla mecánica (0.05 a 0.18s)
+        if 0.05 <= t < 0.18:
+            dt = t - 0.05
+            click = math.sin(2 * math.pi * 3200 * dt) * 0.5 * math.exp(-60 * dt)
+            val += click
+        # 2. Llamarada térmica cómica ('FWOOSH') (0.15 a 0.55s)
+        if 0.15 <= t < 0.55:
+            dt_f = t - 0.15
+            p_f = dt_f / 0.40
+            fwoosh = (random.random() * 2 - 1) * 0.45 * math.sin(math.pi * p_f)
+            low_roar = math.sin(2 * math.pi * 140 * dt_f) * 0.3 * math.sin(math.pi * p_f)
+            val += fwoosh + low_roar
+        # 3. Acorde irónico de contrabajo pizzicato (0.52 a 0.95s)
+        if t >= 0.52:
+            dt_b = t - 0.52
+            bass_f = 82.41 # E2
+            env_b = math.exp(-5 * dt_b)
+            bass = (math.sin(2 * math.pi * bass_f * dt_b) * 0.6 +
+                    math.sin(2 * math.pi * (bass_f * 2) * dt_b) * 0.25) * env_b
+            val += bass
+        samples.append(val)
+    return samples
+
+# ==========================================
+# SFX: POR QUÉ EL TIEMPO VUELA CUANDO CRECES
+# ==========================================
+
+def synth_viento_huracan_reloj_tictac(duration=0.95):
+    """Ráfagas de viento de hojas de calendario volando + tictac mecánico súper acelerado a alta frecuencia."""
+    samples = []
+    n_samples = int(SAMPLE_RATE * duration)
+    for i in range(n_samples):
+        t = i / SAMPLE_RATE
+        val = 0.0
+        # 1. Ráfaga de viento huracanado de hojas (whoosh)
+        p = t / duration
+        wind_mod = math.sin(2 * math.pi * 3.5 * t) ** 2
+        wind = (random.random() * 2 - 1) * 0.35 * wind_mod * math.sin(math.pi * p)
+        # 2. Tictac acelerado de reloj (pulsos cada 0.08s = 12.5 ticks/s)
+        tick_phase = (t % 0.08) / 0.08
+        tick = 0.0
+        if tick_phase < 0.25:
+            dt_tk = tick_phase * 0.08
+            tick = math.sin(2 * math.pi * 3200 * dt_tk) * 0.45 * math.exp(-120 * dt_tk)
+        val += wind + tick
+        samples.append(val)
+    return samples
+
+def synth_campana_pastel_arena_lenta(duration=0.90):
+    """Campana infantil dulce ('ding') + impacto suave de pastel y caída lenta y pesada de granos de arena."""
+    samples = []
+    n_samples = int(SAMPLE_RATE * duration)
+    for i in range(n_samples):
+        t = i / SAMPLE_RATE
+        val = 0.0
+        # 1. Campana dulce de cumpleaños infantil (0.0 a 0.5s)
+        if t < 0.50:
+            env_bell = math.exp(-7 * t)
+            bell = (math.sin(2 * math.pi * 1046.5 * t) * 0.5 +
+                    math.sin(2 * math.pi * 2093.0 * t) * 0.2) * env_bell
+            val += bell
+        # 2. Caída pausada de granos de arena dorada gruesa (0.25 a 0.90s)
+        if t >= 0.25:
+            dt_s = t - 0.25
+            grain_pop = 0.0
+            if (int(dt_s * 100) % 18 == 0):
+                grain_pop = math.sin(2 * math.pi * 1800 * (dt_s % 0.05)) * 0.35 * math.exp(-40 * (dt_s % 0.05))
+            sand_whisper = (random.random() * 2 - 1) * 0.08 * math.sin(math.pi * (dt_s / 0.65))
+            val += grain_pop + sand_whisper
+        samples.append(val)
+    return samples
+
+def synth_siseo_chorro_arena_acelerado(duration=0.90):
+    """Deslizamiento de papel fino ('flick') + siseo vertiginoso de chorro de arena líquida + eco sordo."""
+    samples = []
+    n_samples = int(SAMPLE_RATE * duration)
+    for i in range(n_samples):
+        t = i / SAMPLE_RATE
+        val = 0.0
+        # 1. Flick inicial de rebanada fina (0.05 a 0.18s)
+        if 0.05 <= t < 0.18:
+            dt_f = t - 0.05
+            flick = (random.random() * 2 - 1) * 0.4 * math.exp(-35 * dt_f)
+            val += flick
+        # 2. Chorro continuo siseante de arena líquida (0.15 a 0.90s)
+        if t >= 0.15:
+            dt_stream = t - 0.15
+            p_s = dt_stream / 0.75
+            hiss = (random.random() * 2 - 1) * 0.32 * math.sin(math.pi * p_s)
+            flow_tone = math.sin(2 * math.pi * (450 + 200 * p_s) * dt_stream) * 0.15 * math.sin(math.pi * p_s)
+            val += hiss + flow_tone
+        samples.append(val)
+    return samples
+
+def synth_bostezo_compresion_sello_repetido(duration=0.90):
+    """Bostezo modulado de oficina + golpe seco de mazo 'REPETIDO' ('THUD') + compresión digital 'zip-squish'."""
+    samples = []
+    n_samples = int(SAMPLE_RATE * duration)
+    for i in range(n_samples):
+        t = i / SAMPLE_RATE
+        val = 0.0
+        # 1. Bostezo perezoso (0.0 a 0.35s)
+        if t < 0.35:
+            p_y = t / 0.35
+            yawn_f = 260 - 90 * p_y
+            yawn = math.sin(2 * math.pi * yawn_f * t) * 0.3 * math.sin(math.pi * p_y)
+            val += yawn
+        # 2. Golpe de sello de mazo 'THUD' (0.32 a 0.55s)
+        if 0.32 <= t < 0.55:
+            dt_th = t - 0.32
+            thud = math.sin(2 * math.pi * 75 * dt_th) * 0.8 * math.exp(-22 * dt_th)
+            slap = (random.random() * 2 - 1) * 0.35 * math.exp(-50 * dt_th)
+            val += thud + slap
+        # 3. Compresión digital 'zip-squish' (0.50 a 0.90s)
+        if t >= 0.50:
+            dt_z = t - 0.50
+            p_z = dt_z / 0.40
+            f_zip = 600 - 450 * (p_z ** 1.5)
+            squish = math.sin(2 * math.pi * f_zip * dt_z) * 0.35 * math.sin(math.pi * p_z)
+            val += squish
+        samples.append(val)
+    return samples
+
+def synth_chapoteo_helado_asombro_infantil(duration=0.95):
+    """Chapoteo fresco de agua infantil + crujido de barquillo + acorde brillante de sintetizador lleno de asombro."""
+    samples = []
+    n_samples = int(SAMPLE_RATE * duration)
+    # Acorde cálido infantil: E4 (329.6), G#4 (415.3), B4 (493.9), E5 (659.3)
+    notes = [329.63, 415.30, 493.88, 659.25]
+    for i in range(n_samples):
+        t = i / SAMPLE_RATE
+        val = 0.0
+        # 1. Chapoteo líquido de charco (0.0 a 0.25s)
+        if t < 0.25:
+            splash = (random.random() * 2 - 1) * 0.3 * math.exp(-12 * t)
+            bloop = math.sin(2 * math.pi * (500 + 400 * (1 - t / 0.25)) * t) * 0.25 * math.exp(-15 * t)
+            val += splash + bloop
+        # 2. Crujido crocante de barquillo (0.22 a 0.38s)
+        if 0.22 <= t < 0.38:
+            dt_cr = t - 0.22
+            crunch = (random.random() * 2 - 1) * 0.35 if (int(dt_cr * 120) % 2 == 0) else 0.0
+            val += crunch
+        # 3. Acorde resplandeciente de asombro infantil (0.30 a 0.95s)
+        if t >= 0.30:
+            dt_ch = t - 0.30
+            p_ch = dt_ch / 0.65
+            env_chord = math.sin(math.pi * p_ch) ** 0.8
+            chord = sum(math.sin(2 * math.pi * nt * dt_ch) * 0.12 for nt in notes) * env_chord
+            shimmer = math.sin(2 * math.pi * 1975.5 * dt_ch) * 0.04 * env_chord
+            val += chord + shimmer
+        samples.append(val)
+    return samples
+
+def synth_rueda_hamster_tecleo_scroll(duration=0.90):
+    """Crujido de rueda de oficina + tecleo monótono continuo ('clack-clack') + siseo de pantalla y luz fluorescente."""
+    samples = []
+    n_samples = int(SAMPLE_RATE * duration)
+    for i in range(n_samples):
+        t = i / SAMPLE_RATE
+        val = 0.0
+        # 1. Giro chirriante de rueda (pulsos a 2 Hz)
+        wheel_rub = math.sin(2 * math.pi * 2.2 * t) * 0.18 * math.sin(2 * math.pi * 480 * t)
+        # 2. Tecleo continuo monótono (clicks a intervalos irregulares)
+        key_phase = (t % 0.14) / 0.14
+        key_click = 0.0
+        if key_phase < 0.20:
+            dt_k = key_phase * 0.14
+            key_click = math.sin(2 * math.pi * 2200 * dt_k) * 0.35 * math.exp(-80 * dt_k)
+        # 3. Zumbido sordo fluorescente (60 Hz y 120 Hz)
+        hum = (math.sin(2 * math.pi * 60 * t) * 0.06 +
+               math.sin(2 * math.pi * 120 * t) * 0.04)
+        val += wheel_rub + key_click + hum
+        samples.append(val)
+    return samples
+
+def synth_quiebre_madera_guitarra_triunfo(duration=0.95):
+    """Impacto de ruptura de rueda de oficina ('CRASH') + rasgueo brillante de guitarra acústica y campana inspiradora."""
+    samples = []
+    n_samples = int(SAMPLE_RATE * duration)
+    # Acorde inspirador abierto: D4 (293.7), F#4 (370.0), A4 (440.0), D5 (587.3)
+    notes = [293.66, 369.99, 440.00, 587.33]
+    for i in range(n_samples):
+        t = i / SAMPLE_RATE
+        val = 0.0
+        # 1. Gran quiebre de madera ('CRASH') (0.0 a 0.28s)
+        if t < 0.28:
+            crash = (random.random() * 2 - 1) * 0.65 * math.exp(-14 * t)
+            thud = math.sin(2 * math.pi * 85 * t) * 0.5 * math.exp(-20 * t)
+            val += crash + thud
+        # 2. Rasgueo ascendente de guitarra acústica (0.22 a 0.95s)
+        if t >= 0.22:
+            dt_g = t - 0.22
+            p_g = dt_g / 0.73
+            env_g = math.sin(math.pi * p_g) ** 0.7
+            # Leve retardo entre cuerdas (arpegio rasgueado)
+            strum = 0.0
+            for idx, n in enumerate(notes):
+                t_strum = dt_g - idx * 0.03
+                if t_strum > 0:
+                    strum += math.sin(2 * math.pi * n * t_strum) * 0.15 * math.exp(-4 * t_strum)
+            bell_open = math.sin(2 * math.pi * 1174.66 * dt_g) * 0.08 * math.exp(-3 * dt_g) # D6
+            val += strum + bell_open
+        samples.append(val)
+    return samples
+
+# ==========================================
+# SFX: LA PARADOJA DE FERMI Y EL GRAN SILENCIO
+# ==========================================
+
+def synth_estatica_radio_corte_firmamento(duration=0.95):
+    """Arpegio estelar que se corta en seco ('CHCK') seguido de ruido blanco de estática cósmica."""
+    samples = []
+    n_samples = int(SAMPLE_RATE * duration)
+    notes = [440.0, 554.37, 659.25, 880.0] # A Major
+    for i in range(n_samples):
+        t = i / SAMPLE_RATE
+        val = 0.0
+        # 1. Melodía cósmica etérea (0.0 a 0.35s)
+        if t < 0.35:
+            p_m = t / 0.35
+            tone = sum(math.sin(2 * math.pi * nt * t) * 0.15 for nt in notes) * math.sin(math.pi * p_m)
+            shimmer = math.sin(2 * math.pi * 1760 * t) * 0.05
+            val += tone + shimmer
+        # 2. Corte seco 'CHCK' (0.34 a 0.40s)
+        if 0.34 <= t < 0.40:
+            dt_c = t - 0.34
+            val += (random.random() * 2 - 1) * 0.5 * math.exp(-60 * dt_c)
+        # 3. Ruido blanco puro de estática espacial (0.38 a 0.95s)
+        if t >= 0.38:
+            dt_s = t - 0.38
+            p_s = dt_s / 0.57
+            noise = (random.random() * 2 - 1) * 0.28 * (1 - p_s * 0.3)
+            val += noise
+        samples.append(val)
+    return samples
+
+def synth_holograma_expansion_beep(duration=0.90):
+    """Zumbido holográfico futurista ('hummm') con 3 beeps digitales de ramificación interestelar."""
+    samples = []
+    n_samples = int(SAMPLE_RATE * duration)
+    beeps = [(0.25, 1200), (0.45, 1500), (0.65, 1800)]
+    for i in range(n_samples):
+        t = i / SAMPLE_RATE
+        val = 0.0
+        # 1. Zumbido electromagnético suave continuo (220 Hz + 440 Hz)
+        p = t / duration
+        hum = (math.sin(2 * math.pi * 220 * t) * 0.15 +
+               math.sin(2 * math.pi * 440 * t) * 0.08) * math.sin(math.pi * p)
+        val += hum
+        # 2. Beeps digitales de colonización
+        for b_t, b_f in beeps:
+            if b_t <= t < b_t + 0.12:
+                dt_b = t - b_t
+                env_b = math.sin(math.pi * (dt_b / 0.12))
+                val += math.sin(2 * math.pi * b_f * dt_b) * 0.4 * env_b
+        samples.append(val)
+    return samples
+
+def synth_dial_radio_flatline_thump(duration=0.95):
+    """Barrido de dial de frecuencia analógica + tono continuo de línea plana (flatline) + golpe metálico."""
+    samples = []
+    n_samples = int(SAMPLE_RATE * duration)
+    for i in range(n_samples):
+        t = i / SAMPLE_RATE
+        val = 0.0
+        # 1. Barrido de dial chirriante (0.0 a 0.35s)
+        if t < 0.35:
+            dial_noise = (random.random() * 2 - 1) * 0.3 * (int(t * 70) % 2)
+            dial_whistle = math.sin(2 * math.pi * (800 + 1200 * (t / 0.35)) * t) * 0.15
+            val += dial_noise + dial_whistle
+        # 2. Tono continuo plano 'FLATLINE' (1000 Hz) (0.35 a 0.70s)
+        if 0.35 <= t < 0.70:
+            dt_fl = t - 0.35
+            flat = math.sin(2 * math.pi * 1000 * dt_fl) * 0.35
+            val += flat
+        # 3. Golpe seco al chasis metálico ('THUMP') (0.68 a 0.95s)
+        if t >= 0.68:
+            dt_th = t - 0.68
+            thump = math.sin(2 * math.pi * 95 * dt_th) * 0.75 * math.exp(-18 * dt_th)
+            clang = math.sin(2 * math.pi * 1850 * dt_th) * 0.25 * math.exp(-40 * dt_th)
+            val += thump + clang
+        samples.append(val)
+    return samples
+
+def synth_gran_filtro_impacto_muro(duration=0.90):
+    """Pasos en escalera seguidos de impacto seco contra muro de obsidiana ('THUD-CRACK') y siseo grave."""
+    samples = []
+    n_samples = int(SAMPLE_RATE * duration)
+    for i in range(n_samples):
+        t = i / SAMPLE_RATE
+        val = 0.0
+        # 1. Dos pasos huecos (t=0.08 y t=0.22)
+        for step_t in [0.08, 0.22]:
+            if step_t <= t < step_t + 0.06:
+                dt_p = t - step_t
+                val += math.sin(2 * math.pi * 140 * dt_p) * 0.35 * math.exp(-35 * dt_p)
+        # 2. Gran impacto contra el muro ('THUD-CRACK') (0.35 a 0.70s)
+        if 0.35 <= t < 0.70:
+            dt_im = t - 0.35
+            thud = math.sin(2 * math.pi * 65 * dt_im) * 0.85 * math.exp(-16 * dt_im)
+            crack = (random.random() * 2 - 1) * 0.5 * math.exp(-45 * dt_im)
+            val += thud + crack
+        # 3. Siseo residual ominoso (0.55 a 0.90s)
+        if t >= 0.55:
+            dt_s = t - 0.55
+            hiss = (random.random() * 2 - 1) * 0.15 * math.exp(-6 * dt_s)
+            val += hiss
+        samples.append(val)
+    return samples
+
+def synth_latido_alarma_viento_abismo(duration=0.95):
+    """Latido cardíaco tenso ('thump... thump...') + sirena lejana nuclear + ráfaga de viento gélido."""
+    samples = []
+    n_samples = int(SAMPLE_RATE * duration)
+    for i in range(n_samples):
+        t = i / SAMPLE_RATE
+        val = 0.0
+        # 1. Latido cardíaco doble (t=0.05 y t=0.25)
+        for hb_t in [0.05, 0.25]:
+            if hb_t <= t < hb_t + 0.15:
+                dt_h = t - hb_t
+                heart = math.sin(2 * math.pi * 55 * dt_h) * 0.7 * math.exp(-14 * dt_h)
+                val += heart
+        # 2. Sirena lejana nuclear modulada (0.28 a 0.95s)
+        if t >= 0.28:
+            dt_s = t - 0.28
+            siren_f = 660 + 180 * math.sin(2 * math.pi * 3.5 * dt_s)
+            siren = math.sin(2 * math.pi * siren_f * dt_s) * 0.25 * math.sin(math.pi * (dt_s / 0.67))
+            # Viento gélido del abismo
+            wind = (random.random() * 2 - 1) * 0.15 * math.sin(2 * math.pi * 320 * dt_s)
+            val += siren + wind
+        samples.append(val)
+    return samples
+
+def synth_bosque_ramas_recarga_linterna(duration=0.90):
+    """Crujido de ramas secas + amartillar arma en la oscuridad ('clic-clack') + 'CLICK' apagado de linterna."""
+    samples = []
+    n_samples = int(SAMPLE_RATE * duration)
+    for i in range(n_samples):
+        t = i / SAMPLE_RATE
+        val = 0.0
+        # 1. Crujido de maleza y hojas secas (0.0 a 0.25s)
+        if t < 0.25:
+            crunch = (random.random() * 2 - 1) * 0.35 if (int(t * 110) % 2 == 0) else 0.0
+            val += crunch
+        # 2. Amartillado metálico de cazador estelar ('clic-clack') (0.24 a 0.48s)
+        if 0.24 <= t < 0.32:
+            dt_c1 = t - 0.24
+            val += math.sin(2 * math.pi * 2800 * dt_c1) * 0.45 * math.exp(-90 * dt_c1)
+        if 0.36 <= t < 0.48:
+            dt_c2 = t - 0.36
+            val += (math.sin(2 * math.pi * 1900 * dt_c2) * 0.5 +
+                    (random.random() * 2 - 1) * 0.2) * math.exp(-60 * dt_c2)
+        # 3. Click nítido de linterna apagándose al instante (0.60 a 0.72s)
+        if 0.60 <= t < 0.72:
+            dt_sw = t - 0.60
+            click = math.sin(2 * math.pi * 3600 * dt_sw) * 0.6 * math.exp(-100 * dt_sw)
+            val += click
+        samples.append(val)
+    return samples
+
+def synth_piano_espacio_latido_final(duration=0.95):
+    """Acorde conmovedor de piano cálido (Cadd9) con cuerdas etéreas y campana cósmica que se desvanece."""
+    samples = []
+    n_samples = int(SAMPLE_RATE * duration)
+    # Acorde emotivo humanista: C3 (130.8), G3 (196.0), D4 (293.7), E4 (329.6), G4 (392.0)
+    notes = [130.81, 196.00, 293.66, 329.63, 392.00]
+    for i in range(n_samples):
+        t = i / SAMPLE_RATE
+        val = 0.0
+        p = t / duration
+        env_piano = math.exp(-2.5 * t)
+        piano = sum(math.sin(2 * math.pi * nt * t) * 0.15 for nt in notes) * env_piano
+        pad = math.sin(2 * math.pi * 523.25 * t) * 0.06 * math.sin(math.pi * p) # C5
+        shimmer = math.sin(2 * math.pi * 2093.0 * t) * 0.03 * math.exp(-1.8 * t) # C7
+        val += piano + pad + shimmer
+        samples.append(val)
+    return samples
+
 GENERADORES = {
+    "estatica_radio_corte_firmamento": synth_estatica_radio_corte_firmamento,
+    "holograma_expansion_beep": synth_holograma_expansion_beep,
+    "dial_radio_flatline_thump": synth_dial_radio_flatline_thump,
+    "gran_filtro_impacto_muro": synth_gran_filtro_impacto_muro,
+    "latido_alarma_viento_abismo": synth_latido_alarma_viento_abismo,
+    "bosque_ramas_recarga_linterna": synth_bosque_ramas_recarga_linterna,
+    "piano_espacio_latido_final": synth_piano_espacio_latido_final,
+    "viento_huracan_reloj_tictac": synth_viento_huracan_reloj_tictac,
+    "campana_pastel_arena_lenta": synth_campana_pastel_arena_lenta,
+    "siseo_chorro_arena_acelerado": synth_siseo_chorro_arena_acelerado,
+    "bostezo_compresion_sello_repetido": synth_bostezo_compresion_sello_repetido,
+    "chapoteo_helado_asombro_infantil": synth_chapoteo_helado_asombro_infantil,
+    "rueda_hamster_tecleo_scroll": synth_rueda_hamster_tecleo_scroll,
+    "quiebre_madera_guitarra_triunfo": synth_quiebre_madera_guitarra_triunfo,
+    "sello_thump_segunda_ley": synth_sello_thump_segunda_ley,
+    "rebotes_particulas_gas_clics": synth_rebotes_particulas_gas_clics,
+    "compuerta_persiana_rapida": synth_compuerta_persiana_rapida,
+    "fuego_hielo_fanfarria_triunfal": synth_fuego_hielo_fanfarria_triunfal,
+    "sobrecarga_alarma_memoria": synth_sobrecarga_alarma_memoria,
+    "friccion_goma_chispas_termicas": synth_friccion_goma_chispas_termicas,
+    "teclado_delete_fwoosh_ironico": synth_teclado_delete_fwoosh_ironico,
+    "papel_arrugado_canica_brillo": synth_papel_arrugado_canica_brillo,
+    "cinta_metrica_traqueteo_ping": synth_cinta_metrica_traqueteo_ping,
+    "lupa_enfoque_estornudo_ahogado": synth_lupa_enfoque_estornudo_ahogado,
+    "pasos_asfalto_viento_urbano": synth_pasos_asfalto_viento_urbano,
+    "sonar_radar_vacio_sordo": synth_sonar_radar_vacio_sordo,
+    "auto_autopista_frenazo_canica": synth_auto_autopista_frenazo_canica,
+    "sintetizador_cosmico_silencio": synth_sintetizador_cosmico_silencio,
+    "conteo_clic_glitch_estatica": synth_conteo_clic_glitch_estatica,
+    "rio_selva_peces_apunte": synth_rio_selva_peces_apunte,
+    "fichas_madera_clack_duda": synth_fichas_madera_clack_duda,
+    "sinapsis_nube_evanescente": synth_sinapsis_nube_evanescente,
+    "campana_ans_acierto_duda": synth_campana_ans_acierto_duda,
+    "engranajes_oro_hack_mental": synth_engranajes_oro_hack_mental,
+    "cosmos_ideas_latido_final": synth_cosmos_ideas_latido_final,
     "calor_tos_pulmon_ahogo": synth_calor_tos_pulmon_ahogo,
     "cueva_eco_cristales_shimmer": synth_cueva_eco_cristales_shimmer,
     "magma_submarino_reloj": synth_magma_submarino_reloj,

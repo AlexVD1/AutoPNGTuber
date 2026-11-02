@@ -1,0 +1,1651 @@
+{
+  "meta": {
+    "id": "porque_procrastinas_guerra_biologica",
+    "slug": "porque_procrastinas_guerra_biologica",
+    "temaResumen": "Por qué procrastinas: la guerra neurobiológica entre el sistema límbico y la corteza prefrontal, el sesgo fMRI del yo del futuro como un extraño y la regla de los 5 minutos",
+    "duracionObjetivo": [
+      62,
+      76
+    ],
+    "titulo": "Por qué procrastinas: la guerra biológica en tu cabeza",
+    "titulo_corto": "Por qué procrastinas",
+    "gancho": "Sabes que posponer esa tarea te va a arruinar el día... ¿por qué tu cerebro te obliga a seguir haciendo scroll en el teléfono?",
+    "genero": "Neurociencia y Psicología Conductual",
+    "playlist": "Psicología, Hábitos y Cerebro Humano",
+    "fuentes": [
+      "Hal Hershfield et al. (NYU / UCLA, 2009) - Saving for the future self: Neural measures of future self-continuity in fMRI",
+      "Timothy Pychyl & George Ainslie (2013) - Procrastination and hyperbolic discounting: Temporal discounting in decision making",
+      "Joseph Ferrari (DePaul University) - Still Procrastinating? The No-Regrets Guide to Getting It Done"
+    ]
+  },
+  "escenas": [
+    {
+      "id": 1,
+      "texto": "Sabes que posponer esa tarea te va a arruinar el día... ¿por qué tu cerebro te obliga a seguir haciendo scroll en el teléfono?",
+      "icono": "Smartphone",
+      "colorIcono": "#F59E0B",
+      "tituloVisual": "EL BUCLE DEL SCROLL",
+      "composicionVisual": "escenario_ilustrado",
+      "escenario": "escritorio_procrastinacion_smartphone",
+      "layout": "narrativo",
+      "transicion": "corte",
+      "efectosCamara": [
+        "punch",
+        "drift"
+      ],
+      "sfx": "sfx/sfx_procrastina_iman_scroll.wav",
+      "volumenSfx": 0.25,
+      "palabrasClave": [
+        "posponer",
+        "tarea",
+        "cerebro",
+        "scroll",
+        "teléfono"
+      ],
+      "personajes": [
+        {
+          "id": "stickman_scroll_hipnosis",
+          "nombre": "Stickman",
+          "posicion": {
+            "x": -260,
+            "y": 90
+          },
+          "escala": 1.0,
+          "orientacion": "derecha",
+          "prop": "telefono_dopamina_dorado",
+          "habla": true,
+          "capaZ": 20,
+          "acciones": [
+            {
+              "tipo": "personalizada",
+              "pasos": [
+                {
+                  "inicioProgreso": 0,
+                  "finProgreso": 0.35,
+                  "poseId": "scratching_head",
+                  "expresion": "worried",
+                  "posicion": {
+                    "x": -260,
+                    "y": 90
+                  },
+                  "curva": "suave",
+                  "procedural": "estatico"
+                },
+                {
+                  "inicioProgreso": 0.35,
+                  "finProgreso": 0.7,
+                  "poseId": "pointing_right",
+                  "expresion": "analytical",
+                  "posicion": {
+                    "x": -220,
+                    "y": 90
+                  },
+                  "curva": "suave",
+                  "procedural": "estatico"
+                },
+                {
+                  "inicioProgreso": 0.7,
+                  "finProgreso": 1.0,
+                  "poseId": "standing_relaxed",
+                  "expresion": "smile_wide",
+                  "posicion": {
+                    "x": -200,
+                    "y": 90
+                  },
+                  "curva": "suave",
+                  "procedural": "estatico"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "duracionSegundos": 6.298,
+      "palabras": [
+        {
+          "palabra": "Sabes",
+          "inicioMs": 0,
+          "finMs": 380
+        },
+        {
+          "palabra": "que",
+          "inicioMs": 380,
+          "finMs": 480
+        },
+        {
+          "palabra": "posponer",
+          "inicioMs": 480,
+          "finMs": 940
+        },
+        {
+          "palabra": "esa",
+          "inicioMs": 940,
+          "finMs": 1140
+        },
+        {
+          "palabra": "tarea",
+          "inicioMs": 1140,
+          "finMs": 1400
+        },
+        {
+          "palabra": "te",
+          "inicioMs": 1400,
+          "finMs": 1620
+        },
+        {
+          "palabra": "va",
+          "inicioMs": 1620,
+          "finMs": 1740
+        },
+        {
+          "palabra": "a",
+          "inicioMs": 1740,
+          "finMs": 1900
+        },
+        {
+          "palabra": "arruinar",
+          "inicioMs": 1900,
+          "finMs": 2120
+        },
+        {
+          "palabra": "el",
+          "inicioMs": 2120,
+          "finMs": 2300
+        },
+        {
+          "palabra": "día",
+          "inicioMs": 2300,
+          "finMs": 2900
+        },
+        {
+          "palabra": "por",
+          "inicioMs": 2900,
+          "finMs": 3000
+        },
+        {
+          "palabra": "qué",
+          "inicioMs": 3000,
+          "finMs": 3120
+        },
+        {
+          "palabra": "tu",
+          "inicioMs": 3120,
+          "finMs": 3240
+        },
+        {
+          "palabra": "cerebro",
+          "inicioMs": 3240,
+          "finMs": 3560
+        },
+        {
+          "palabra": "te",
+          "inicioMs": 3560,
+          "finMs": 3700
+        },
+        {
+          "palabra": "obliga",
+          "inicioMs": 3700,
+          "finMs": 4020
+        },
+        {
+          "palabra": "a",
+          "inicioMs": 4020,
+          "finMs": 4080
+        },
+        {
+          "palabra": "seguir",
+          "inicioMs": 4080,
+          "finMs": 4240
+        },
+        {
+          "palabra": "haciendo",
+          "inicioMs": 4240,
+          "finMs": 4540
+        },
+        {
+          "palabra": "scroll",
+          "inicioMs": 4540,
+          "finMs": 4880
+        },
+        {
+          "palabra": "en",
+          "inicioMs": 4880,
+          "finMs": 5140
+        },
+        {
+          "palabra": "el",
+          "inicioMs": 5140,
+          "finMs": 5260
+        },
+        {
+          "palabra": "teléfono",
+          "inicioMs": 5260,
+          "finMs": 5740
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "texto": "No es pereza ni falta de fuerza de voluntad. En realidad, estás viviendo una auténtica guerra biológica entre dos áreas de tu cerebro que no se soportan.",
+      "icono": "Swords",
+      "colorIcono": "#EF4444",
+      "tituloVisual": "GUERRA BIOLÓGICA",
+      "composicionVisual": "plano_general",
+      "escenario": "ring_boxeo_cerebral_corteza_vs_limbico",
+      "layout": "narrativo",
+      "transicion": "zoom_in",
+      "efectosCamara": [
+        "punch",
+        "drift"
+      ],
+      "sfx": "sfx/sfx_ring_boxeo_campana_fanfarria.wav",
+      "volumenSfx": 0.24,
+      "palabrasClave": [
+        "pereza",
+        "fuerza de voluntad",
+        "guerra biológica",
+        "dos cerebros"
+      ],
+      "personajes": [
+        {
+          "id": "stickman_arbitro",
+          "nombre": "Stickman",
+          "posicion": {
+            "x": 0,
+            "y": 140
+          },
+          "escala": 1.0,
+          "orientacion": "derecha",
+          "habla": true,
+          "capaZ": 20,
+          "acciones": [
+            {
+              "tipo": "personalizada",
+              "pasos": [
+                {
+                  "inicioProgreso": 0,
+                  "finProgreso": 0.4,
+                  "poseId": "showing_both_hands",
+                  "expresion": "talking_enthusiastic",
+                  "posicion": {
+                    "x": 0,
+                    "y": 140
+                  },
+                  "curva": "suave",
+                  "procedural": "estatico"
+                },
+                {
+                  "inicioProgreso": 0.4,
+                  "finProgreso": 0.75,
+                  "poseId": "comparing_two_objects",
+                  "expresion": "analytical",
+                  "posicion": {
+                    "x": 0,
+                    "y": 140
+                  },
+                  "curva": "suave",
+                  "procedural": "estatico"
+                },
+                {
+                  "inicioProgreso": 0.75,
+                  "finProgreso": 1.0,
+                  "poseId": "surprised_hands_up",
+                  "expresion": "surprised",
+                  "posicion": {
+                    "x": 0,
+                    "y": 140
+                  },
+                  "curva": "suave",
+                  "procedural": "estatico"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "duracionSegundos": 8.362,
+      "palabras": [
+        {
+          "palabra": "No",
+          "inicioMs": 0,
+          "finMs": 260
+        },
+        {
+          "palabra": "es",
+          "inicioMs": 260,
+          "finMs": 460
+        },
+        {
+          "palabra": "pereza",
+          "inicioMs": 460,
+          "finMs": 820
+        },
+        {
+          "palabra": "ni",
+          "inicioMs": 820,
+          "finMs": 960
+        },
+        {
+          "palabra": "falta",
+          "inicioMs": 960,
+          "finMs": 1180
+        },
+        {
+          "palabra": "de",
+          "inicioMs": 1180,
+          "finMs": 1420
+        },
+        {
+          "palabra": "fuerza",
+          "inicioMs": 1420,
+          "finMs": 1700
+        },
+        {
+          "palabra": "de",
+          "inicioMs": 1700,
+          "finMs": 1880
+        },
+        {
+          "palabra": "voluntad",
+          "inicioMs": 1880,
+          "finMs": 2420
+        },
+        {
+          "palabra": "En",
+          "inicioMs": 2660,
+          "finMs": 2760
+        },
+        {
+          "palabra": "realidad",
+          "inicioMs": 2760,
+          "finMs": 3060
+        },
+        {
+          "palabra": "estás",
+          "inicioMs": 3260,
+          "finMs": 3420
+        },
+        {
+          "palabra": "viviendo",
+          "inicioMs": 3420,
+          "finMs": 3840
+        },
+        {
+          "palabra": "una",
+          "inicioMs": 3840,
+          "finMs": 4080
+        },
+        {
+          "palabra": "auténtica",
+          "inicioMs": 4080,
+          "finMs": 4560
+        },
+        {
+          "palabra": "guerra",
+          "inicioMs": 4560,
+          "finMs": 4780
+        },
+        {
+          "palabra": "biológica",
+          "inicioMs": 4780,
+          "finMs": 5420
+        },
+        {
+          "palabra": "entre",
+          "inicioMs": 5420,
+          "finMs": 5640
+        },
+        {
+          "palabra": "dos",
+          "inicioMs": 5640,
+          "finMs": 5840
+        },
+        {
+          "palabra": "áreas",
+          "inicioMs": 5840,
+          "finMs": 6120
+        },
+        {
+          "palabra": "de",
+          "inicioMs": 6120,
+          "finMs": 6300
+        },
+        {
+          "palabra": "tu",
+          "inicioMs": 6300,
+          "finMs": 6420
+        },
+        {
+          "palabra": "cerebro",
+          "inicioMs": 6420,
+          "finMs": 6780
+        },
+        {
+          "palabra": "que",
+          "inicioMs": 6780,
+          "finMs": 6940
+        },
+        {
+          "palabra": "no",
+          "inicioMs": 6940,
+          "finMs": 7060
+        },
+        {
+          "palabra": "se",
+          "inicioMs": 7060,
+          "finMs": 7160
+        },
+        {
+          "palabra": "soportan",
+          "inicioMs": 7160,
+          "finMs": 7740
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "texto": "La corteza prefrontal es tu lado racional: sabe que debes entregar el reporte para pagar la renta dentro de un mes. Es lógica, pero es evolutivamente joven y lenta.",
+      "icono": "Brain",
+      "colorIcono": "#38BDF8",
+      "tituloVisual": "CORTEZA PREFRONTAL",
+      "composicionVisual": "escenario_ilustrado",
+      "escenario": "corteza_prefrontal_pizarron_metas",
+      "layout": "narrativo",
+      "transicion": "whip_right",
+      "efectosCamara": [
+        "punch",
+        "drift"
+      ],
+      "sfx": "sfx/sfx_pizarron_calculando_whir.wav",
+      "volumenSfx": 0.22,
+      "palabrasClave": [
+        "corteza prefrontal",
+        "racional",
+        "reporte",
+        "renta",
+        "lógica",
+        "joven",
+        "lenta"
+      ],
+      "personajes": [
+        {
+          "id": "stickman_prefrontal",
+          "nombre": "Stickman Racional",
+          "posicion": {
+            "x": -260,
+            "y": 120
+          },
+          "escala": 1.0,
+          "orientacion": "derecha",
+          "prop": "pizarron_metas_30dias",
+          "habla": true,
+          "capaZ": 20,
+          "acciones": [
+            {
+              "tipo": "personalizada",
+              "pasos": [
+                {
+                  "inicioProgreso": 0,
+                  "finProgreso": 0.4,
+                  "poseId": "explaining_pointing_up",
+                  "expresion": "analytical",
+                  "posicion": {
+                    "x": -260,
+                    "y": 120
+                  },
+                  "curva": "suave",
+                  "procedural": "estatico"
+                },
+                {
+                  "inicioProgreso": 0.4,
+                  "finProgreso": 0.75,
+                  "poseId": "taking_notes",
+                  "expresion": "thinking",
+                  "posicion": {
+                    "x": -220,
+                    "y": 120
+                  },
+                  "curva": "suave",
+                  "procedural": "manipular"
+                },
+                {
+                  "inicioProgreso": 0.75,
+                  "finProgreso": 1.0,
+                  "poseId": "exhausted_slouch",
+                  "expresion": "exhausted",
+                  "posicion": {
+                    "x": -200,
+                    "y": 130
+                  },
+                  "curva": "suave",
+                  "procedural": "estatico"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "duracionSegundos": 9.898,
+      "palabras": [
+        {
+          "palabra": "La",
+          "inicioMs": 0,
+          "finMs": 180
+        },
+        {
+          "palabra": "corteza",
+          "inicioMs": 180,
+          "finMs": 620
+        },
+        {
+          "palabra": "prefrontal",
+          "inicioMs": 620,
+          "finMs": 1260
+        },
+        {
+          "palabra": "es",
+          "inicioMs": 1260,
+          "finMs": 1520
+        },
+        {
+          "palabra": "tu",
+          "inicioMs": 1520,
+          "finMs": 1600
+        },
+        {
+          "palabra": "lado",
+          "inicioMs": 1600,
+          "finMs": 1780
+        },
+        {
+          "palabra": "racional",
+          "inicioMs": 1780,
+          "finMs": 2320
+        },
+        {
+          "palabra": "sabe",
+          "inicioMs": 2620,
+          "finMs": 2920
+        },
+        {
+          "palabra": "que",
+          "inicioMs": 2920,
+          "finMs": 3080
+        },
+        {
+          "palabra": "debes",
+          "inicioMs": 3080,
+          "finMs": 3320
+        },
+        {
+          "palabra": "entregar",
+          "inicioMs": 3320,
+          "finMs": 3660
+        },
+        {
+          "palabra": "el",
+          "inicioMs": 3660,
+          "finMs": 3800
+        },
+        {
+          "palabra": "reporte",
+          "inicioMs": 3800,
+          "finMs": 4280
+        },
+        {
+          "palabra": "para",
+          "inicioMs": 4280,
+          "finMs": 4500
+        },
+        {
+          "palabra": "pagar",
+          "inicioMs": 4500,
+          "finMs": 4740
+        },
+        {
+          "palabra": "la",
+          "inicioMs": 4740,
+          "finMs": 4920
+        },
+        {
+          "palabra": "renta",
+          "inicioMs": 4920,
+          "finMs": 5260
+        },
+        {
+          "palabra": "dentro",
+          "inicioMs": 5260,
+          "finMs": 5440
+        },
+        {
+          "palabra": "de",
+          "inicioMs": 5440,
+          "finMs": 5640
+        },
+        {
+          "palabra": "un",
+          "inicioMs": 5640,
+          "finMs": 5760
+        },
+        {
+          "palabra": "mes",
+          "inicioMs": 5760,
+          "finMs": 5940
+        },
+        {
+          "palabra": "Es",
+          "inicioMs": 6260,
+          "finMs": 6500
+        },
+        {
+          "palabra": "lógica",
+          "inicioMs": 6500,
+          "finMs": 7160
+        },
+        {
+          "palabra": "pero",
+          "inicioMs": 7500,
+          "finMs": 7620
+        },
+        {
+          "palabra": "es",
+          "inicioMs": 7620,
+          "finMs": 7760
+        },
+        {
+          "palabra": "evolutivamente",
+          "inicioMs": 7760,
+          "finMs": 8360
+        },
+        {
+          "palabra": "joven",
+          "inicioMs": 8360,
+          "finMs": 8860
+        },
+        {
+          "palabra": "y",
+          "inicioMs": 8860,
+          "finMs": 8980
+        },
+        {
+          "palabra": "lenta",
+          "inicioMs": 8980,
+          "finMs": 9300
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "texto": "Enfrente está el sistema límbico: millones de años más antiguo, salvaje e inmune a la lógica. Su único lema es: «dopamina aquí y ahora, porque mañana podríamos estar muertos».",
+      "icono": "Flame",
+      "colorIcono": "#F97316",
+      "tituloVisual": "SISTEMA LÍMBICO",
+      "composicionVisual": "escenario_ilustrado",
+      "escenario": "sistema_limbico_cavernicola_dopamina",
+      "layout": "narrativo",
+      "transicion": "whip_right",
+      "efectosCamara": [
+        "shake",
+        "punch"
+      ],
+      "sfx": "sfx/sfx_mazo_dopamina_arcade.wav",
+      "volumenSfx": 0.25,
+      "palabrasClave": [
+        "sistema límbico",
+        "antiguo",
+        "salvaje",
+        "dopamina",
+        "aquí y ahora",
+        "muertos"
+      ],
+      "personajes": [
+        {
+          "id": "stickman_cavernicola",
+          "nombre": "Stickman Límbico",
+          "posicion": {
+            "x": -60,
+            "y": 120
+          },
+          "escala": 1.05,
+          "orientacion": "derecha",
+          "prop": "mazo_cavernicola_dopamina",
+          "habla": true,
+          "capaZ": 20,
+          "acciones": [
+            {
+              "tipo": "personalizada",
+              "pasos": [
+                {
+                  "inicioProgreso": 0,
+                  "finProgreso": 0.35,
+                  "poseId": "jumping_joy",
+                  "expresion": "laugh",
+                  "posicion": {
+                    "x": -140,
+                    "y": 80
+                  },
+                  "curva": "rebote",
+                  "procedural": "rebotar"
+                },
+                {
+                  "inicioProgreso": 0.35,
+                  "finProgreso": 0.7,
+                  "poseId": "celebrating_arms_up",
+                  "expresion": "smile_wide",
+                  "posicion": {
+                    "x": 40,
+                    "y": 110
+                  },
+                  "curva": "suave",
+                  "procedural": "correr"
+                },
+                {
+                  "inicioProgreso": 0.7,
+                  "finProgreso": 1.0,
+                  "poseId": "standing_relaxed",
+                  "expresion": "talking_enthusiastic",
+                  "posicion": {
+                    "x": -40,
+                    "y": 120
+                  },
+                  "curva": "suave",
+                  "procedural": "estatico"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "duracionSegundos": 9.106,
+      "palabras": [
+        {
+          "palabra": "Enfrente",
+          "inicioMs": 0,
+          "finMs": 420
+        },
+        {
+          "palabra": "está",
+          "inicioMs": 420,
+          "finMs": 660
+        },
+        {
+          "palabra": "el",
+          "inicioMs": 660,
+          "finMs": 680
+        },
+        {
+          "palabra": "sistema",
+          "inicioMs": 680,
+          "finMs": 1000
+        },
+        {
+          "palabra": "límbico",
+          "inicioMs": 1000,
+          "finMs": 1480
+        },
+        {
+          "palabra": "millones",
+          "inicioMs": 1560,
+          "finMs": 1740
+        },
+        {
+          "palabra": "de",
+          "inicioMs": 1740,
+          "finMs": 2000
+        },
+        {
+          "palabra": "años",
+          "inicioMs": 2000,
+          "finMs": 2120
+        },
+        {
+          "palabra": "más",
+          "inicioMs": 2120,
+          "finMs": 2300
+        },
+        {
+          "palabra": "antiguo",
+          "inicioMs": 2300,
+          "finMs": 2780
+        },
+        {
+          "palabra": "salvaje",
+          "inicioMs": 3040,
+          "finMs": 3400
+        },
+        {
+          "palabra": "e",
+          "inicioMs": 3400,
+          "finMs": 3620
+        },
+        {
+          "palabra": "inmune",
+          "inicioMs": 3620,
+          "finMs": 3940
+        },
+        {
+          "palabra": "a",
+          "inicioMs": 3940,
+          "finMs": 4020
+        },
+        {
+          "palabra": "la",
+          "inicioMs": 4020,
+          "finMs": 4100
+        },
+        {
+          "palabra": "lógica",
+          "inicioMs": 4100,
+          "finMs": 4540
+        },
+        {
+          "palabra": "Su",
+          "inicioMs": 4820,
+          "finMs": 4940
+        },
+        {
+          "palabra": "único",
+          "inicioMs": 4940,
+          "finMs": 5140
+        },
+        {
+          "palabra": "lema",
+          "inicioMs": 5140,
+          "finMs": 5420
+        },
+        {
+          "palabra": "es",
+          "inicioMs": 5420,
+          "finMs": 5660
+        },
+        {
+          "palabra": "dopamina",
+          "inicioMs": 5660,
+          "finMs": 6300
+        },
+        {
+          "palabra": "aquí",
+          "inicioMs": 6300,
+          "finMs": 6520
+        },
+        {
+          "palabra": "y",
+          "inicioMs": 6520,
+          "finMs": 6660
+        },
+        {
+          "palabra": "ahora",
+          "inicioMs": 6660,
+          "finMs": 6880
+        },
+        {
+          "palabra": "porque",
+          "inicioMs": 7020,
+          "finMs": 7160
+        },
+        {
+          "palabra": "mañana",
+          "inicioMs": 7160,
+          "finMs": 7400
+        },
+        {
+          "palabra": "podríamos",
+          "inicioMs": 7400,
+          "finMs": 7820
+        },
+        {
+          "palabra": "estar",
+          "inicioMs": 7820,
+          "finMs": 8080
+        },
+        {
+          "palabra": "muertos",
+          "inicioMs": 8080,
+          "finMs": 8740
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "texto": "Y aquí está la trampa neurológica: los escáneres cerebrales de resonancia magnética revelan que cuando piensas en tu «yo del futuro», tu mente activa exactamente las mismas zonas que usa para pensar en un completo desconocido.",
+      "icono": "Activity",
+      "colorIcono": "#22C55E",
+      "tituloVisual": "TRAMPA fMRI",
+      "composicionVisual": "escenario_ilustrado",
+      "escenario": "laboratorio_fmri_desconocido_yo_futuro",
+      "layout": "narrativo",
+      "transicion": "zoom_in",
+      "efectosCamara": [
+        "punch",
+        "drift"
+      ],
+      "sfx": "sfx/sfx_fmri_escaneo_carpetas_thud.wav",
+      "volumenSfx": 0.24,
+      "palabrasClave": [
+        "escáneres",
+        "cerebrales",
+        "futuro",
+        "activa",
+        "mismas zonas",
+        "extraño"
+      ],
+      "personajes": [
+        {
+          "id": "stickman_presente_carpetas",
+          "nombre": "Stickman",
+          "posicion": {
+            "x": 0,
+            "y": 100
+          },
+          "escala": 1.0,
+          "orientacion": "derecha",
+          "prop": "pila_carpetas_oficina_gigante",
+          "habla": true,
+          "capaZ": 20,
+          "acciones": [
+            {
+              "tipo": "personalizada",
+              "pasos": [
+                {
+                  "inicioProgreso": 0,
+                  "finProgreso": 0.35,
+                  "poseId": "holding_both_hands",
+                  "expresion": "analytical",
+                  "posicion": {
+                    "x": 0,
+                    "y": 100
+                  },
+                  "curva": "suave",
+                  "procedural": "estatico"
+                },
+                {
+                  "inicioProgreso": 0.35,
+                  "finProgreso": 0.7,
+                  "poseId": "throwing_object",
+                  "expresion": "smile_wide",
+                  "posicion": {
+                    "x": -60,
+                    "y": 90
+                  },
+                  "curva": "impacto",
+                  "procedural": "estatico"
+                },
+                {
+                  "inicioProgreso": 0.7,
+                  "finProgreso": 1.0,
+                  "poseId": "shrugging",
+                  "expresion": "smile_soft",
+                  "posicion": {
+                    "x": 0,
+                    "y": 100
+                  },
+                  "curva": "suave",
+                  "procedural": "estatico"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "duracionSegundos": 11.962,
+      "palabras": [
+        {
+          "palabra": "Y",
+          "inicioMs": 0,
+          "finMs": 160
+        },
+        {
+          "palabra": "aquí",
+          "inicioMs": 160,
+          "finMs": 320
+        },
+        {
+          "palabra": "está",
+          "inicioMs": 320,
+          "finMs": 540
+        },
+        {
+          "palabra": "la",
+          "inicioMs": 540,
+          "finMs": 660
+        },
+        {
+          "palabra": "trampa",
+          "inicioMs": 660,
+          "finMs": 940
+        },
+        {
+          "palabra": "neurológica",
+          "inicioMs": 940,
+          "finMs": 1700
+        },
+        {
+          "palabra": "los",
+          "inicioMs": 1940,
+          "finMs": 2040
+        },
+        {
+          "palabra": "escáneres",
+          "inicioMs": 2040,
+          "finMs": 2640
+        },
+        {
+          "palabra": "cerebrales",
+          "inicioMs": 2640,
+          "finMs": 3040
+        },
+        {
+          "palabra": "de",
+          "inicioMs": 3040,
+          "finMs": 3200
+        },
+        {
+          "palabra": "resonancia",
+          "inicioMs": 3200,
+          "finMs": 3740
+        },
+        {
+          "palabra": "magnética",
+          "inicioMs": 3740,
+          "finMs": 4320
+        },
+        {
+          "palabra": "revelan",
+          "inicioMs": 4320,
+          "finMs": 4760
+        },
+        {
+          "palabra": "que",
+          "inicioMs": 4760,
+          "finMs": 4880
+        },
+        {
+          "palabra": "cuando",
+          "inicioMs": 4880,
+          "finMs": 5120
+        },
+        {
+          "palabra": "piensas",
+          "inicioMs": 5120,
+          "finMs": 5580
+        },
+        {
+          "palabra": "en",
+          "inicioMs": 5580,
+          "finMs": 5700
+        },
+        {
+          "palabra": "tu",
+          "inicioMs": 5700,
+          "finMs": 5860
+        },
+        {
+          "palabra": "yo",
+          "inicioMs": 5860,
+          "finMs": 6000
+        },
+        {
+          "palabra": "del",
+          "inicioMs": 6000,
+          "finMs": 6160
+        },
+        {
+          "palabra": "futuro",
+          "inicioMs": 6160,
+          "finMs": 6980
+        },
+        {
+          "palabra": "tu",
+          "inicioMs": 6980,
+          "finMs": 7080
+        },
+        {
+          "palabra": "mente",
+          "inicioMs": 7080,
+          "finMs": 7220
+        },
+        {
+          "palabra": "activa",
+          "inicioMs": 7220,
+          "finMs": 7700
+        },
+        {
+          "palabra": "exactamente",
+          "inicioMs": 7700,
+          "finMs": 8100
+        },
+        {
+          "palabra": "las",
+          "inicioMs": 8100,
+          "finMs": 8540
+        },
+        {
+          "palabra": "mismas",
+          "inicioMs": 8540,
+          "finMs": 8920
+        },
+        {
+          "palabra": "zonas",
+          "inicioMs": 8920,
+          "finMs": 9100
+        },
+        {
+          "palabra": "que",
+          "inicioMs": 9100,
+          "finMs": 9300
+        },
+        {
+          "palabra": "usa",
+          "inicioMs": 9300,
+          "finMs": 9480
+        },
+        {
+          "palabra": "para",
+          "inicioMs": 9480,
+          "finMs": 9680
+        },
+        {
+          "palabra": "pensar",
+          "inicioMs": 9680,
+          "finMs": 9980
+        },
+        {
+          "palabra": "en",
+          "inicioMs": 9980,
+          "finMs": 10140
+        },
+        {
+          "palabra": "un",
+          "inicioMs": 10140,
+          "finMs": 10240
+        },
+        {
+          "palabra": "completo",
+          "inicioMs": 10240,
+          "finMs": 10600
+        },
+        {
+          "palabra": "desconocido",
+          "inicioMs": 10600,
+          "finMs": 11340
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "texto": "Tu cerebro siente que el estrés de mañana lo pagará un completo extraño. Por eso se desentiende y te dice: «que sufra él, nosotros miremos videos cómodamente en el sofá».",
+      "icono": "Clock",
+      "colorIcono": "#E11D48",
+      "tituloVisual": "¿QUIÉN PAGA LA CUENTA?",
+      "composicionVisual": "escenario_ilustrado",
+      "escenario": "pantalla_dividida_sofa_vs_tormenta_futuro",
+      "layout": "narrativo",
+      "transicion": "whip_right",
+      "efectosCamara": [
+        "punch",
+        "drift"
+      ],
+      "sfx": "sfx/sfx_sofa_vs_tormenta_panico.wav",
+      "volumenSfx": 0.24,
+      "palabrasClave": [
+        "sufrimiento",
+        "mañana",
+        "otro tipo",
+        "sufra él",
+        "videos hoy"
+      ],
+      "personajes": [
+        {
+          "id": "stickman_sofa_presente",
+          "nombre": "Stickman",
+          "posicion": {
+            "x": -260,
+            "y": 380
+          },
+          "escala": 0.95,
+          "orientacion": "derecha",
+          "prop": "sofa_relax_palomitas",
+          "habla": true,
+          "capaZ": 20,
+          "acciones": [
+            {
+              "tipo": "personalizada",
+              "pasos": [
+                {
+                  "inicioProgreso": 0,
+                  "finProgreso": 0.45,
+                  "poseId": "sitting",
+                  "expresion": "smile_soft",
+                  "posicion": {
+                    "x": -260,
+                    "y": 380
+                  },
+                  "curva": "suave",
+                  "procedural": "estatico"
+                },
+                {
+                  "inicioProgreso": 0.45,
+                  "finProgreso": 0.8,
+                  "poseId": "thumbs_up_approval",
+                  "expresion": "talking_enthusiastic",
+                  "posicion": {
+                    "x": -240,
+                    "y": 360
+                  },
+                  "curva": "suave",
+                  "procedural": "estatico"
+                },
+                {
+                  "inicioProgreso": 0.8,
+                  "finProgreso": 1.0,
+                  "poseId": "standing_relaxed",
+                  "expresion": "smile_wide",
+                  "posicion": {
+                    "x": -250,
+                    "y": 370
+                  },
+                  "curva": "suave",
+                  "procedural": "estatico"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "duracionSegundos": 8.266,
+      "palabras": [
+        {
+          "palabra": "Tu",
+          "inicioMs": 0,
+          "finMs": 160
+        },
+        {
+          "palabra": "cerebro",
+          "inicioMs": 160,
+          "finMs": 500
+        },
+        {
+          "palabra": "siente",
+          "inicioMs": 500,
+          "finMs": 780
+        },
+        {
+          "palabra": "que",
+          "inicioMs": 780,
+          "finMs": 960
+        },
+        {
+          "palabra": "el",
+          "inicioMs": 960,
+          "finMs": 1040
+        },
+        {
+          "palabra": "estrés",
+          "inicioMs": 1040,
+          "finMs": 1260
+        },
+        {
+          "palabra": "de",
+          "inicioMs": 1260,
+          "finMs": 1360
+        },
+        {
+          "palabra": "mañana",
+          "inicioMs": 1360,
+          "finMs": 1580
+        },
+        {
+          "palabra": "lo",
+          "inicioMs": 1580,
+          "finMs": 1800
+        },
+        {
+          "palabra": "pagará",
+          "inicioMs": 1800,
+          "finMs": 2120
+        },
+        {
+          "palabra": "un",
+          "inicioMs": 2120,
+          "finMs": 2200
+        },
+        {
+          "palabra": "completo",
+          "inicioMs": 2200,
+          "finMs": 2500
+        },
+        {
+          "palabra": "extraño",
+          "inicioMs": 2500,
+          "finMs": 3020
+        },
+        {
+          "palabra": "Por",
+          "inicioMs": 3240,
+          "finMs": 3380
+        },
+        {
+          "palabra": "eso",
+          "inicioMs": 3380,
+          "finMs": 3520
+        },
+        {
+          "palabra": "se",
+          "inicioMs": 3520,
+          "finMs": 3700
+        },
+        {
+          "palabra": "desentiende",
+          "inicioMs": 3700,
+          "finMs": 4100
+        },
+        {
+          "palabra": "y",
+          "inicioMs": 4100,
+          "finMs": 4280
+        },
+        {
+          "palabra": "te",
+          "inicioMs": 4280,
+          "finMs": 4360
+        },
+        {
+          "palabra": "dice",
+          "inicioMs": 4360,
+          "finMs": 4620
+        },
+        {
+          "palabra": "que",
+          "inicioMs": 4620,
+          "finMs": 5060
+        },
+        {
+          "palabra": "sufra",
+          "inicioMs": 5060,
+          "finMs": 5420
+        },
+        {
+          "palabra": "él",
+          "inicioMs": 5420,
+          "finMs": 5600
+        },
+        {
+          "palabra": "nosotros",
+          "inicioMs": 5760,
+          "finMs": 5960
+        },
+        {
+          "palabra": "miremos",
+          "inicioMs": 5960,
+          "finMs": 6400
+        },
+        {
+          "palabra": "videos",
+          "inicioMs": 6400,
+          "finMs": 6660
+        },
+        {
+          "palabra": "cómodamente",
+          "inicioMs": 6660,
+          "finMs": 7160
+        },
+        {
+          "palabra": "en",
+          "inicioMs": 7160,
+          "finMs": 7360
+        },
+        {
+          "palabra": "el",
+          "inicioMs": 7360,
+          "finMs": 7440
+        },
+        {
+          "palabra": "sofá",
+          "inicioMs": 7440,
+          "finMs": 7720
+        }
+      ]
+    },
+    {
+      "id": 7,
+      "texto": "¿Cómo hackearlo? Usa la regla de los cinco minutos: no prometas terminar la tarea, solo promete concentrarte cinco minutos. Una vez rota la inercia, la batalla contra tu mente está ganada.",
+      "icono": "Hourglass",
+      "colorIcono": "#10B981",
+      "tituloVisual": "REGLA DE LOS 5 MIN",
+      "composicionVisual": "escenario_ilustrado",
+      "escenario": "escritorio_regla_cinco_minutos_exito",
+      "layout": "narrativo",
+      "transicion": "zoom_in",
+      "efectosCamara": [
+        "punch",
+        "drift"
+      ],
+      "sfx": "sfx/sfx_candado_regla_5min_focus.wav",
+      "volumenSfx": 0.25,
+      "palabrasClave": [
+        "hackearlo",
+        "regla",
+        "cinco minutos",
+        "prometas",
+        "arrancas",
+        "batalla"
+      ],
+      "personajes": [
+        {
+          "id": "stickman_cinco_minutos",
+          "nombre": "Stickman",
+          "posicion": {
+            "x": -180,
+            "y": 90
+          },
+          "escala": 1.0,
+          "orientacion": "derecha",
+          "prop": "reloj_arena_cinco_minutos",
+          "habla": true,
+          "capaZ": 20,
+          "acciones": [
+            {
+              "tipo": "personalizada",
+              "pasos": [
+                {
+                  "inicioProgreso": 0,
+                  "finProgreso": 0.4,
+                  "poseId": "presenting_object",
+                  "expresion": "talking_enthusiastic",
+                  "posicion": {
+                    "x": -180,
+                    "y": 90
+                  },
+                  "curva": "suave",
+                  "procedural": "estatico"
+                },
+                {
+                  "inicioProgreso": 0.4,
+                  "finProgreso": 0.75,
+                  "poseId": "standing_confident",
+                  "expresion": "eureka",
+                  "posicion": {
+                    "x": -150,
+                    "y": 90
+                  },
+                  "curva": "suave",
+                  "procedural": "estatico"
+                },
+                {
+                  "inicioProgreso": 0.75,
+                  "finProgreso": 1.0,
+                  "poseId": "nodding_yes",
+                  "expresion": "smile_wide",
+                  "posicion": {
+                    "x": -160,
+                    "y": 90
+                  },
+                  "curva": "suave",
+                  "procedural": "estatico"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "duracionSegundos": 10.018,
+      "palabras": [
+        {
+          "palabra": "Cómo",
+          "inicioMs": 0,
+          "finMs": 240
+        },
+        {
+          "palabra": "hackearlo",
+          "inicioMs": 240,
+          "finMs": 760
+        },
+        {
+          "palabra": "Usa",
+          "inicioMs": 980,
+          "finMs": 1200
+        },
+        {
+          "palabra": "la",
+          "inicioMs": 1200,
+          "finMs": 1300
+        },
+        {
+          "palabra": "regla",
+          "inicioMs": 1300,
+          "finMs": 1640
+        },
+        {
+          "palabra": "de",
+          "inicioMs": 1640,
+          "finMs": 1740
+        },
+        {
+          "palabra": "los",
+          "inicioMs": 1740,
+          "finMs": 1860
+        },
+        {
+          "palabra": "cinco",
+          "inicioMs": 1860,
+          "finMs": 2120
+        },
+        {
+          "palabra": "minutos",
+          "inicioMs": 2120,
+          "finMs": 2460
+        },
+        {
+          "palabra": "no",
+          "inicioMs": 2720,
+          "finMs": 2780
+        },
+        {
+          "palabra": "prometas",
+          "inicioMs": 2780,
+          "finMs": 3200
+        },
+        {
+          "palabra": "terminar",
+          "inicioMs": 3200,
+          "finMs": 3480
+        },
+        {
+          "palabra": "la",
+          "inicioMs": 3480,
+          "finMs": 3680
+        },
+        {
+          "palabra": "tarea",
+          "inicioMs": 3680,
+          "finMs": 4040
+        },
+        {
+          "palabra": "solo",
+          "inicioMs": 4260,
+          "finMs": 4380
+        },
+        {
+          "palabra": "promete",
+          "inicioMs": 4380,
+          "finMs": 4840
+        },
+        {
+          "palabra": "concentrarte",
+          "inicioMs": 4840,
+          "finMs": 5460
+        },
+        {
+          "palabra": "cinco",
+          "inicioMs": 5460,
+          "finMs": 5720
+        },
+        {
+          "palabra": "minutos",
+          "inicioMs": 5720,
+          "finMs": 6200
+        },
+        {
+          "palabra": "Una",
+          "inicioMs": 6440,
+          "finMs": 6620
+        },
+        {
+          "palabra": "vez",
+          "inicioMs": 6620,
+          "finMs": 6760
+        },
+        {
+          "palabra": "rota",
+          "inicioMs": 6760,
+          "finMs": 7040
+        },
+        {
+          "palabra": "la",
+          "inicioMs": 7040,
+          "finMs": 7220
+        },
+        {
+          "palabra": "inercia",
+          "inicioMs": 7220,
+          "finMs": 7660
+        },
+        {
+          "palabra": "la",
+          "inicioMs": 7840,
+          "finMs": 7900
+        },
+        {
+          "palabra": "batalla",
+          "inicioMs": 7900,
+          "finMs": 8220
+        },
+        {
+          "palabra": "contra",
+          "inicioMs": 8220,
+          "finMs": 8440
+        },
+        {
+          "palabra": "tu",
+          "inicioMs": 8440,
+          "finMs": 8620
+        },
+        {
+          "palabra": "mente",
+          "inicioMs": 8620,
+          "finMs": 8760
+        },
+        {
+          "palabra": "está",
+          "inicioMs": 8760,
+          "finMs": 9020
+        },
+        {
+          "palabra": "ganada",
+          "inicioMs": 9020,
+          "finMs": 9400
+        }
+      ]
+    }
+  ]
+}

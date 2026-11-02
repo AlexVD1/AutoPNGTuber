@@ -1,0 +1,1525 @@
+{
+  "meta": {
+    "id": "sonoluminiscencia_burbuja_luz",
+    "slug": "sonoluminiscencia_burbuja_luz",
+    "temaResumen": "La sonoluminiscencia: colapso acústico de burbujas en agua que alcanza 10,000 °C y genera luz estelar mediante ultrasonido",
+    "titulo": "La burbuja que genera luz (El misterio de la Sonoluminiscencia)",
+    "titulo_corto": "BURBUJA QUE EMITE LUZ",
+    "gancho": "¿Sabías que puedes crear la temperatura del mismísimo Sol dentro de un vaso con agua... usando únicamente sonido?",
+    "fuentes": [
+      "Nature: Single-bubble sonoluminescence and shock-wave dynamics",
+      "Physical Review Letters: Evidence for extremely high temperatures in acoustic cavitation",
+      "Science: Energy-focusing in collapsing bubbles and plasma light emission"
+    ],
+    "genero": "SCIENCE_PHYSICS",
+    "duracionObjetivo": [
+      65,
+      78
+    ]
+  },
+  "escenas": [
+    {
+      "id": 1,
+      "texto": "¿Sabías que puedes crear la temperatura del mismísimo Sol dentro de un vaso con agua... usando únicamente sonido?",
+      "icono": "Sun",
+      "colorIcono": "#38BDF8",
+      "tituloVisual": "SOL EN UN VASO",
+      "composicionVisual": "primer_plano",
+      "escenario": "laboratorio_penumbra",
+      "layout": "narrativo",
+      "transicion": "zoom_in",
+      "efectosCamara": [
+        "punch",
+        "drift"
+      ],
+      "sfx": "sfx/sfx_sonar_pulse.wav",
+      "volumenSfx": 0.26,
+      "palabrasClave": [
+        "temperatura del Sol",
+        "vaso con agua",
+        "únicamente sonido"
+      ],
+      "personajes": [
+        {
+          "id": "cientifico_intro",
+          "posicion": {
+            "x": -240,
+            "y": 60
+          },
+          "escala": 0.95,
+          "orientacion": "derecha",
+          "poseId": "explaining_pointing_up",
+          "expresion": "smile_wide",
+          "habla": true
+        }
+      ],
+      "objetos": [
+        {
+          "id": "vaso_destello",
+          "propId": "vaso_burbuja_estroboscopica",
+          "posicion": {
+            "x": 140,
+            "y": -20
+          },
+          "escala": 1.4,
+          "animacionFisica": "pulso"
+        }
+      ],
+      "duracionSegundos": 6.082,
+      "palabras": [
+        {
+          "palabra": "Sabías",
+          "inicioMs": 0,
+          "finMs": 460
+        },
+        {
+          "palabra": "que",
+          "inicioMs": 460,
+          "finMs": 620
+        },
+        {
+          "palabra": "puedes",
+          "inicioMs": 620,
+          "finMs": 900
+        },
+        {
+          "palabra": "crear",
+          "inicioMs": 900,
+          "finMs": 1220
+        },
+        {
+          "palabra": "la",
+          "inicioMs": 1220,
+          "finMs": 1420
+        },
+        {
+          "palabra": "temperatura",
+          "inicioMs": 1420,
+          "finMs": 1920
+        },
+        {
+          "palabra": "del",
+          "inicioMs": 1920,
+          "finMs": 2200
+        },
+        {
+          "palabra": "mismísimo",
+          "inicioMs": 2200,
+          "finMs": 2780
+        },
+        {
+          "palabra": "Sol",
+          "inicioMs": 2780,
+          "finMs": 3000
+        },
+        {
+          "palabra": "dentro",
+          "inicioMs": 3000,
+          "finMs": 3260
+        },
+        {
+          "palabra": "de",
+          "inicioMs": 3260,
+          "finMs": 3460
+        },
+        {
+          "palabra": "un",
+          "inicioMs": 3460,
+          "finMs": 3560
+        },
+        {
+          "palabra": "vaso",
+          "inicioMs": 3560,
+          "finMs": 3820
+        },
+        {
+          "palabra": "con",
+          "inicioMs": 3820,
+          "finMs": 3940
+        },
+        {
+          "palabra": "agua",
+          "inicioMs": 3940,
+          "finMs": 4240
+        },
+        {
+          "palabra": "usando",
+          "inicioMs": 4360,
+          "finMs": 4600
+        },
+        {
+          "palabra": "únicamente",
+          "inicioMs": 4600,
+          "finMs": 5120
+        },
+        {
+          "palabra": "sonido",
+          "inicioMs": 5120,
+          "finMs": 5620
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "texto": "Este fenómeno se llama sonoluminiscencia. Si intentas atrapar y aplastar una burbuja con las manos o con paletas de ping-pong, jamás lo vas a lograr: el agua simplemente se escurre y la burbuja escapa.",
+      "icono": "Sparkles",
+      "colorIcono": "#F59E0B",
+      "tituloVisual": "INTENTO FALLIDO",
+      "composicionVisual": "plano_general",
+      "escenario": "laboratorio_penumbra",
+      "layout": "narrativo",
+      "transicion": "whip_right",
+      "efectosCamara": [
+        "shake",
+        "drift"
+      ],
+      "sfx": "sfx/sfx_water_splash.wav",
+      "volumenSfx": 0.25,
+      "palabrasClave": [
+        "sonoluminiscencia",
+        "paletas",
+        "jamás lo vas a lograr",
+        "escapa"
+      ],
+      "personajes": [
+        {
+          "id": "paleteador",
+          "posicion": {
+            "x": -220,
+            "y": 50
+          },
+          "escala": 1.0,
+          "orientacion": "derecha",
+          "poseId": "tripping_falling",
+          "expresion": "confused",
+          "acciones": [
+            {
+              "tipo": "sorpresa_y_retroceso",
+              "desdeX": -140,
+              "haciaX": -220,
+              "desdeY": 40,
+              "haciaY": 50
+            }
+          ],
+          "habla": true
+        }
+      ],
+      "objetos": [
+        {
+          "id": "pecera_pingpong",
+          "propId": "pecera_paletas_pingpong",
+          "posicion": {
+            "x": 140,
+            "y": 0
+          },
+          "escala": 1.35,
+          "animacionFisica": "vibrar"
+        }
+      ],
+      "duracionSegundos": 10.666,
+      "palabras": [
+        {
+          "palabra": "Este",
+          "inicioMs": 0,
+          "finMs": 320
+        },
+        {
+          "palabra": "fenómeno",
+          "inicioMs": 320,
+          "finMs": 700
+        },
+        {
+          "palabra": "se",
+          "inicioMs": 700,
+          "finMs": 900
+        },
+        {
+          "palabra": "llama",
+          "inicioMs": 900,
+          "finMs": 1120
+        },
+        {
+          "palabra": "sonoluminiscencia",
+          "inicioMs": 1120,
+          "finMs": 2220
+        },
+        {
+          "palabra": "Si",
+          "inicioMs": 2480,
+          "finMs": 2560
+        },
+        {
+          "palabra": "intentas",
+          "inicioMs": 2560,
+          "finMs": 3000
+        },
+        {
+          "palabra": "atrapar",
+          "inicioMs": 3000,
+          "finMs": 3460
+        },
+        {
+          "palabra": "y",
+          "inicioMs": 3460,
+          "finMs": 3540
+        },
+        {
+          "palabra": "aplastar",
+          "inicioMs": 3540,
+          "finMs": 3960
+        },
+        {
+          "palabra": "una",
+          "inicioMs": 3960,
+          "finMs": 4100
+        },
+        {
+          "palabra": "burbuja",
+          "inicioMs": 4100,
+          "finMs": 4540
+        },
+        {
+          "palabra": "con",
+          "inicioMs": 4540,
+          "finMs": 4680
+        },
+        {
+          "palabra": "las",
+          "inicioMs": 4680,
+          "finMs": 4840
+        },
+        {
+          "palabra": "manos",
+          "inicioMs": 4840,
+          "finMs": 5100
+        },
+        {
+          "palabra": "o",
+          "inicioMs": 5100,
+          "finMs": 5320
+        },
+        {
+          "palabra": "con",
+          "inicioMs": 5320,
+          "finMs": 5480
+        },
+        {
+          "palabra": "paletas",
+          "inicioMs": 5480,
+          "finMs": 5800
+        },
+        {
+          "palabra": "de",
+          "inicioMs": 5800,
+          "finMs": 5980
+        },
+        {
+          "palabra": "ping-pong",
+          "inicioMs": 5980,
+          "finMs": 6380
+        },
+        {
+          "palabra": "jamás",
+          "inicioMs": 6460,
+          "finMs": 6720
+        },
+        {
+          "palabra": "lo",
+          "inicioMs": 6720,
+          "finMs": 6880
+        },
+        {
+          "palabra": "vas",
+          "inicioMs": 6880,
+          "finMs": 7000
+        },
+        {
+          "palabra": "a",
+          "inicioMs": 7000,
+          "finMs": 7120
+        },
+        {
+          "palabra": "lograr",
+          "inicioMs": 7120,
+          "finMs": 7540
+        },
+        {
+          "palabra": "el",
+          "inicioMs": 7740,
+          "finMs": 7860
+        },
+        {
+          "palabra": "agua",
+          "inicioMs": 7860,
+          "finMs": 8040
+        },
+        {
+          "palabra": "simplemente",
+          "inicioMs": 8040,
+          "finMs": 8480
+        },
+        {
+          "palabra": "se",
+          "inicioMs": 8480,
+          "finMs": 8740
+        },
+        {
+          "palabra": "escurre",
+          "inicioMs": 8740,
+          "finMs": 9120
+        },
+        {
+          "palabra": "y",
+          "inicioMs": 9120,
+          "finMs": 9280
+        },
+        {
+          "palabra": "la",
+          "inicioMs": 9280,
+          "finMs": 9360
+        },
+        {
+          "palabra": "burbuja",
+          "inicioMs": 9360,
+          "finMs": 9780
+        },
+        {
+          "palabra": "escapa",
+          "inicioMs": 9780,
+          "finMs": 10180
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "texto": "Para dominarla, los científicos colocan altavoces especiales a los lados del líquido que emiten ultrasonido: ondas acústicas tan veloces que atrapan a la burbuja en una jaula de sonido invisible, haciéndola levitar inmóvil en el centro.",
+      "icono": "Radio",
+      "colorIcono": "#2DD4BF",
+      "tituloVisual": "TRAMPA DE ULTRASONIDO",
+      "composicionVisual": "escenario_ilustrado",
+      "escenario": "laboratorio_penumbra",
+      "layout": "narrativo",
+      "transicion": "corte",
+      "efectosCamara": [
+        "punch",
+        "drift"
+      ],
+      "sfx": "sfx/sfx_ultrasound_sweep.wav",
+      "volumenSfx": 0.25,
+      "palabrasClave": [
+        "altavoces especiales",
+        "ultrasonido",
+        "jaula de sonido",
+        "levitar inmóvil"
+      ],
+      "personajes": [
+        {
+          "id": "operador_acustico",
+          "posicion": {
+            "x": -260,
+            "y": 60
+          },
+          "escala": 0.95,
+          "orientacion": "derecha",
+          "poseId": "taking_notes",
+          "expresion": "analytical",
+          "habla": true
+        }
+      ],
+      "objetos": [
+        {
+          "id": "matraz_trampa",
+          "propId": "matraz_transductores_ultrasonido",
+          "posicion": {
+            "x": 120,
+            "y": -20
+          },
+          "escala": 1.4,
+          "animacionFisica": "pulso"
+        }
+      ],
+      "duracionSegundos": 11.938,
+      "palabras": [
+        {
+          "palabra": "Para",
+          "inicioMs": 0,
+          "finMs": 200
+        },
+        {
+          "palabra": "dominarla",
+          "inicioMs": 200,
+          "finMs": 800
+        },
+        {
+          "palabra": "los",
+          "inicioMs": 900,
+          "finMs": 960
+        },
+        {
+          "palabra": "científicos",
+          "inicioMs": 960,
+          "finMs": 1540
+        },
+        {
+          "palabra": "colocan",
+          "inicioMs": 1540,
+          "finMs": 1900
+        },
+        {
+          "palabra": "altavoces",
+          "inicioMs": 1900,
+          "finMs": 2400
+        },
+        {
+          "palabra": "especiales",
+          "inicioMs": 2400,
+          "finMs": 2980
+        },
+        {
+          "palabra": "a",
+          "inicioMs": 2980,
+          "finMs": 3080
+        },
+        {
+          "palabra": "los",
+          "inicioMs": 3080,
+          "finMs": 3180
+        },
+        {
+          "palabra": "lados",
+          "inicioMs": 3180,
+          "finMs": 3360
+        },
+        {
+          "palabra": "del",
+          "inicioMs": 3360,
+          "finMs": 3580
+        },
+        {
+          "palabra": "líquido",
+          "inicioMs": 3580,
+          "finMs": 3880
+        },
+        {
+          "palabra": "que",
+          "inicioMs": 3880,
+          "finMs": 4060
+        },
+        {
+          "palabra": "emiten",
+          "inicioMs": 4060,
+          "finMs": 4340
+        },
+        {
+          "palabra": "ultrasonido",
+          "inicioMs": 4340,
+          "finMs": 5160
+        },
+        {
+          "palabra": "ondas",
+          "inicioMs": 5380,
+          "finMs": 5640
+        },
+        {
+          "palabra": "acústicas",
+          "inicioMs": 5640,
+          "finMs": 6180
+        },
+        {
+          "palabra": "tan",
+          "inicioMs": 6180,
+          "finMs": 6420
+        },
+        {
+          "palabra": "veloces",
+          "inicioMs": 6420,
+          "finMs": 6800
+        },
+        {
+          "palabra": "que",
+          "inicioMs": 6800,
+          "finMs": 6940
+        },
+        {
+          "palabra": "atrapan",
+          "inicioMs": 6940,
+          "finMs": 7340
+        },
+        {
+          "palabra": "a",
+          "inicioMs": 7340,
+          "finMs": 7440
+        },
+        {
+          "palabra": "la",
+          "inicioMs": 7440,
+          "finMs": 7500
+        },
+        {
+          "palabra": "burbuja",
+          "inicioMs": 7500,
+          "finMs": 7960
+        },
+        {
+          "palabra": "en",
+          "inicioMs": 7960,
+          "finMs": 8060
+        },
+        {
+          "palabra": "una",
+          "inicioMs": 8060,
+          "finMs": 8200
+        },
+        {
+          "palabra": "jaula",
+          "inicioMs": 8200,
+          "finMs": 8520
+        },
+        {
+          "palabra": "de",
+          "inicioMs": 8520,
+          "finMs": 8640
+        },
+        {
+          "palabra": "sonido",
+          "inicioMs": 8640,
+          "finMs": 8920
+        },
+        {
+          "palabra": "invisible",
+          "inicioMs": 8920,
+          "finMs": 9460
+        },
+        {
+          "palabra": "haciéndola",
+          "inicioMs": 9580,
+          "finMs": 9780
+        },
+        {
+          "palabra": "levitar",
+          "inicioMs": 9780,
+          "finMs": 10260
+        },
+        {
+          "palabra": "inmóvil",
+          "inicioMs": 10260,
+          "finMs": 10780
+        },
+        {
+          "palabra": "en",
+          "inicioMs": 10780,
+          "finMs": 10940
+        },
+        {
+          "palabra": "el",
+          "inicioMs": 10940,
+          "finMs": 11060
+        },
+        {
+          "palabra": "centro",
+          "inicioMs": 11060,
+          "finMs": 11460
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "texto": "La onda sonora actúa como un pistón hidráulico invisible. Primero estira la burbuja hasta su límite absoluto... y una milésima de segundo después, la pared de agua la comprime con una violencia descomunal.",
+      "icono": "Waves",
+      "colorIcono": "#38BDF8",
+      "tituloVisual": "PISTÓN ACÚSTICO",
+      "composicionVisual": "primer_plano",
+      "escenario": "microcosmos_acuatico",
+      "layout": "narrativo",
+      "transicion": "zoom_in",
+      "efectosCamara": [
+        "punch",
+        "drift"
+      ],
+      "sfx": "sfx/sfx_cavitation_thud.wav",
+      "volumenSfx": 0.27,
+      "palabrasClave": [
+        "pistón hidráulico",
+        "estira la burbuja",
+        "comprime",
+        "violencia descomunal"
+      ],
+      "personajes": [
+        {
+          "id": "observador_micro",
+          "posicion": {
+            "x": -260,
+            "y": 60
+          },
+          "escala": 0.9,
+          "orientacion": "derecha",
+          "poseId": "warning_danger",
+          "expresion": "shocked",
+          "habla": true
+        }
+      ],
+      "objetos": [
+        {
+          "id": "burbuja_cavitacion",
+          "propId": "burbuja_colapso_hidrodinamico",
+          "posicion": {
+            "x": 120,
+            "y": -30
+          },
+          "escala": 1.45,
+          "animacionFisica": "pulso"
+        }
+      ],
+      "duracionSegundos": 11.722,
+      "palabras": [
+        {
+          "palabra": "La",
+          "inicioMs": 0,
+          "finMs": 200
+        },
+        {
+          "palabra": "onda",
+          "inicioMs": 200,
+          "finMs": 440
+        },
+        {
+          "palabra": "sonora",
+          "inicioMs": 440,
+          "finMs": 880
+        },
+        {
+          "palabra": "actúa",
+          "inicioMs": 880,
+          "finMs": 1220
+        },
+        {
+          "palabra": "como",
+          "inicioMs": 1220,
+          "finMs": 1480
+        },
+        {
+          "palabra": "un",
+          "inicioMs": 1480,
+          "finMs": 1620
+        },
+        {
+          "palabra": "pistón",
+          "inicioMs": 1620,
+          "finMs": 1900
+        },
+        {
+          "palabra": "hidráulico",
+          "inicioMs": 1900,
+          "finMs": 2460
+        },
+        {
+          "palabra": "invisible",
+          "inicioMs": 2460,
+          "finMs": 2960
+        },
+        {
+          "palabra": "Primero",
+          "inicioMs": 3260,
+          "finMs": 3540
+        },
+        {
+          "palabra": "estira",
+          "inicioMs": 3540,
+          "finMs": 3900
+        },
+        {
+          "palabra": "la",
+          "inicioMs": 3900,
+          "finMs": 4060
+        },
+        {
+          "palabra": "burbuja",
+          "inicioMs": 4060,
+          "finMs": 4620
+        },
+        {
+          "palabra": "hasta",
+          "inicioMs": 4620,
+          "finMs": 4900
+        },
+        {
+          "palabra": "su",
+          "inicioMs": 4900,
+          "finMs": 5120
+        },
+        {
+          "palabra": "límite",
+          "inicioMs": 5120,
+          "finMs": 5500
+        },
+        {
+          "palabra": "absoluto",
+          "inicioMs": 5500,
+          "finMs": 6780
+        },
+        {
+          "palabra": "y",
+          "inicioMs": 6780,
+          "finMs": 7020
+        },
+        {
+          "palabra": "una",
+          "inicioMs": 7020,
+          "finMs": 7140
+        },
+        {
+          "palabra": "milésima",
+          "inicioMs": 7140,
+          "finMs": 7600
+        },
+        {
+          "palabra": "de",
+          "inicioMs": 7600,
+          "finMs": 7700
+        },
+        {
+          "palabra": "segundo",
+          "inicioMs": 7700,
+          "finMs": 7960
+        },
+        {
+          "palabra": "después",
+          "inicioMs": 7960,
+          "finMs": 8380
+        },
+        {
+          "palabra": "la",
+          "inicioMs": 8780,
+          "finMs": 8860
+        },
+        {
+          "palabra": "pared",
+          "inicioMs": 8860,
+          "finMs": 9100
+        },
+        {
+          "palabra": "de",
+          "inicioMs": 9100,
+          "finMs": 9280
+        },
+        {
+          "palabra": "agua",
+          "inicioMs": 9280,
+          "finMs": 9460
+        },
+        {
+          "palabra": "la",
+          "inicioMs": 9460,
+          "finMs": 9600
+        },
+        {
+          "palabra": "comprime",
+          "inicioMs": 9600,
+          "finMs": 10000
+        },
+        {
+          "palabra": "con",
+          "inicioMs": 10000,
+          "finMs": 10180
+        },
+        {
+          "palabra": "una",
+          "inicioMs": 10180,
+          "finMs": 10340
+        },
+        {
+          "palabra": "violencia",
+          "inicioMs": 10340,
+          "finMs": 10740
+        },
+        {
+          "palabra": "descomunal",
+          "inicioMs": 10740,
+          "finMs": 11260
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "texto": "El colapso es tan brutalmente rápido que el gas atrapado no tiene tiempo de liberar calor. Las moléculas chocan con tanta furia que la temperatura interna se dispara por encima de los diez mil grados, más caliente que la superficie del Sol.",
+      "icono": "Thermometer",
+      "colorIcono": "#EF4444",
+      "tituloVisual": "¡10,000 °C INTERNOS!",
+      "composicionVisual": "cifras_concepto",
+      "escenario": "microcosmos_acuatico",
+      "layout": "narrativo",
+      "transicion": "corte",
+      "efectosCamara": [
+        "shake",
+        "punch"
+      ],
+      "sfx": "sfx/sfx_thermal_alarm_rise.wav",
+      "volumenSfx": 0.26,
+      "palabrasClave": [
+        "colapso brutal",
+        "no tiene tiempo de liberar calor",
+        "diez mil grados",
+        "superficie del Sol"
+      ],
+      "personajes": [
+        {
+          "id": "soldador_protegido",
+          "posicion": {
+            "x": -260,
+            "y": 60
+          },
+          "escala": 0.95,
+          "orientacion": "derecha",
+          "poseId": "backing_away_scared",
+          "expresion": "scared",
+          "props": {
+            "cara": "welding_mask"
+          },
+          "habla": true
+        }
+      ],
+      "objetos": [
+        {
+          "id": "termometro_calor",
+          "propId": "termometro_10000_grados",
+          "posicion": {
+            "x": 120,
+            "y": -20
+          },
+          "escala": 1.35,
+          "animacionFisica": "vibrar"
+        }
+      ],
+      "duracionSegundos": 12.01,
+      "palabras": [
+        {
+          "palabra": "El",
+          "inicioMs": 0,
+          "finMs": 200
+        },
+        {
+          "palabra": "colapso",
+          "inicioMs": 200,
+          "finMs": 620
+        },
+        {
+          "palabra": "es",
+          "inicioMs": 620,
+          "finMs": 900
+        },
+        {
+          "palabra": "tan",
+          "inicioMs": 900,
+          "finMs": 1500
+        },
+        {
+          "palabra": "brutalmente",
+          "inicioMs": 1500,
+          "finMs": 1880
+        },
+        {
+          "palabra": "rápido",
+          "inicioMs": 1880,
+          "finMs": 2160
+        },
+        {
+          "palabra": "que",
+          "inicioMs": 2160,
+          "finMs": 2260
+        },
+        {
+          "palabra": "el",
+          "inicioMs": 2260,
+          "finMs": 2340
+        },
+        {
+          "palabra": "gas",
+          "inicioMs": 2340,
+          "finMs": 2840
+        },
+        {
+          "palabra": "atrapado",
+          "inicioMs": 2840,
+          "finMs": 2960
+        },
+        {
+          "palabra": "no",
+          "inicioMs": 2960,
+          "finMs": 3160
+        },
+        {
+          "palabra": "tiene",
+          "inicioMs": 3160,
+          "finMs": 3480
+        },
+        {
+          "palabra": "tiempo",
+          "inicioMs": 3480,
+          "finMs": 3600
+        },
+        {
+          "palabra": "de",
+          "inicioMs": 3600,
+          "finMs": 3900
+        },
+        {
+          "palabra": "liberar",
+          "inicioMs": 3900,
+          "finMs": 4240
+        },
+        {
+          "palabra": "calor",
+          "inicioMs": 4580,
+          "finMs": 4660
+        },
+        {
+          "palabra": "Las",
+          "inicioMs": 4660,
+          "finMs": 5080
+        },
+        {
+          "palabra": "moléculas",
+          "inicioMs": 5080,
+          "finMs": 5360
+        },
+        {
+          "palabra": "chocan",
+          "inicioMs": 5360,
+          "finMs": 5440
+        },
+        {
+          "palabra": "con",
+          "inicioMs": 5440,
+          "finMs": 5540
+        },
+        {
+          "palabra": "tanta",
+          "inicioMs": 5540,
+          "finMs": 5800
+        },
+        {
+          "palabra": "furia",
+          "inicioMs": 5800,
+          "finMs": 6160
+        },
+        {
+          "palabra": "que",
+          "inicioMs": 6160,
+          "finMs": 6260
+        },
+        {
+          "palabra": "la",
+          "inicioMs": 6260,
+          "finMs": 6360
+        },
+        {
+          "palabra": "temperatura",
+          "inicioMs": 6360,
+          "finMs": 6660
+        },
+        {
+          "palabra": "interna",
+          "inicioMs": 6660,
+          "finMs": 6920
+        },
+        {
+          "palabra": "se",
+          "inicioMs": 6920,
+          "finMs": 7180
+        },
+        {
+          "palabra": "dispara",
+          "inicioMs": 7180,
+          "finMs": 7720
+        },
+        {
+          "palabra": "por",
+          "inicioMs": 7720,
+          "finMs": 7860
+        },
+        {
+          "palabra": "encima",
+          "inicioMs": 7860,
+          "finMs": 8140
+        },
+        {
+          "palabra": "de",
+          "inicioMs": 8140,
+          "finMs": 8280
+        },
+        {
+          "palabra": "los",
+          "inicioMs": 8280,
+          "finMs": 8400
+        },
+        {
+          "palabra": "diez",
+          "inicioMs": 8400,
+          "finMs": 8580
+        },
+        {
+          "palabra": "mil",
+          "inicioMs": 8580,
+          "finMs": 8740
+        },
+        {
+          "palabra": "grados",
+          "inicioMs": 8740,
+          "finMs": 9200
+        },
+        {
+          "palabra": "más",
+          "inicioMs": 9420,
+          "finMs": 9640
+        },
+        {
+          "palabra": "caliente",
+          "inicioMs": 9640,
+          "finMs": 10120
+        },
+        {
+          "palabra": "que",
+          "inicioMs": 10120,
+          "finMs": 10300
+        },
+        {
+          "palabra": "la",
+          "inicioMs": 10300,
+          "finMs": 10420
+        },
+        {
+          "palabra": "superficie",
+          "inicioMs": 10420,
+          "finMs": 11060
+        },
+        {
+          "palabra": "del",
+          "inicioMs": 11060,
+          "finMs": 11220
+        },
+        {
+          "palabra": "Sol",
+          "inicioMs": 11220,
+          "finMs": 11540
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "texto": "En ese instante de colapso extremo, el gas se transforma en plasma brillante y libera un fogonazo de luz visible antes de volver a expandirse. ¡Sonido convirtiéndose directamente en luz estelar dentro del agua!",
+      "icono": "Zap",
+      "colorIcono": "#C084FC",
+      "tituloVisual": "FOGONAZO DE PLASMA",
+      "composicionVisual": "primer_plano",
+      "escenario": "laboratorio_penumbra",
+      "layout": "narrativo",
+      "transicion": "flash",
+      "efectosCamara": [
+        "punch",
+        "drift"
+      ],
+      "sfx": "sfx/sfx_plasma_burst.wav",
+      "volumenSfx": 0.28,
+      "palabrasClave": [
+        "plasma brillante",
+        "fogonazo de luz",
+        "sonido en luz",
+        "luz estelar"
+      ],
+      "personajes": [
+        {
+          "id": "testigo_plasma",
+          "posicion": {
+            "x": -240,
+            "y": 60
+          },
+          "escala": 0.95,
+          "orientacion": "derecha",
+          "poseId": "surprised_hands_up",
+          "expresion": "eureka",
+          "props": {
+            "cara": "welding_mask"
+          },
+          "habla": true
+        }
+      ],
+      "objetos": [
+        {
+          "id": "plasma_destello",
+          "propId": "plasma_fogonazo_estelar",
+          "posicion": {
+            "x": 130,
+            "y": -30
+          },
+          "escala": 1.45,
+          "animacionFisica": "pulso"
+        }
+      ],
+      "duracionSegundos": 11.242,
+      "palabras": [
+        {
+          "palabra": "En",
+          "inicioMs": 0,
+          "finMs": 240
+        },
+        {
+          "palabra": "ese",
+          "inicioMs": 240,
+          "finMs": 420
+        },
+        {
+          "palabra": "instante",
+          "inicioMs": 420,
+          "finMs": 820
+        },
+        {
+          "palabra": "de",
+          "inicioMs": 820,
+          "finMs": 940
+        },
+        {
+          "palabra": "colapso",
+          "inicioMs": 940,
+          "finMs": 1320
+        },
+        {
+          "palabra": "extremo",
+          "inicioMs": 1320,
+          "finMs": 1880
+        },
+        {
+          "palabra": "el",
+          "inicioMs": 2120,
+          "finMs": 2220
+        },
+        {
+          "palabra": "gas",
+          "inicioMs": 2220,
+          "finMs": 2360
+        },
+        {
+          "palabra": "se",
+          "inicioMs": 2360,
+          "finMs": 2500
+        },
+        {
+          "palabra": "transforma",
+          "inicioMs": 2500,
+          "finMs": 2960
+        },
+        {
+          "palabra": "en",
+          "inicioMs": 2960,
+          "finMs": 3040
+        },
+        {
+          "palabra": "plasma",
+          "inicioMs": 3040,
+          "finMs": 3820
+        },
+        {
+          "palabra": "brillante",
+          "inicioMs": 3820,
+          "finMs": 3980
+        },
+        {
+          "palabra": "y",
+          "inicioMs": 3980,
+          "finMs": 4360
+        },
+        {
+          "palabra": "libera",
+          "inicioMs": 4360,
+          "finMs": 4640
+        },
+        {
+          "palabra": "un",
+          "inicioMs": 4640,
+          "finMs": 5060
+        },
+        {
+          "palabra": "fogonazo",
+          "inicioMs": 5060,
+          "finMs": 5220
+        },
+        {
+          "palabra": "de",
+          "inicioMs": 5220,
+          "finMs": 5360
+        },
+        {
+          "palabra": "luz",
+          "inicioMs": 5360,
+          "finMs": 5780
+        },
+        {
+          "palabra": "visible",
+          "inicioMs": 5780,
+          "finMs": 6200
+        },
+        {
+          "palabra": "antes",
+          "inicioMs": 6200,
+          "finMs": 6340
+        },
+        {
+          "palabra": "de",
+          "inicioMs": 6340,
+          "finMs": 6560
+        },
+        {
+          "palabra": "volver",
+          "inicioMs": 6560,
+          "finMs": 6680
+        },
+        {
+          "palabra": "a",
+          "inicioMs": 6680,
+          "finMs": 7280
+        },
+        {
+          "palabra": "expandirse",
+          "inicioMs": 7540,
+          "finMs": 7860
+        },
+        {
+          "palabra": "Sonido",
+          "inicioMs": 7860,
+          "finMs": 8660
+        },
+        {
+          "palabra": "convirtiéndose",
+          "inicioMs": 8660,
+          "finMs": 8880
+        },
+        {
+          "palabra": "directamente",
+          "inicioMs": 8880,
+          "finMs": 9420
+        },
+        {
+          "palabra": "en",
+          "inicioMs": 9420,
+          "finMs": 9560
+        },
+        {
+          "palabra": "luz",
+          "inicioMs": 9560,
+          "finMs": 10040
+        },
+        {
+          "palabra": "estelar",
+          "inicioMs": 10040,
+          "finMs": 10300
+        },
+        {
+          "palabra": "dentro",
+          "inicioMs": 10300,
+          "finMs": 10500
+        },
+        {
+          "palabra": "del",
+          "inicioMs": 10500,
+          "finMs": 10760
+        },
+        {
+          "palabra": "agua",
+          "inicioMs": 10760,
+          "finMs": 10992
+        }
+      ]
+    },
+    {
+      "id": 7,
+      "texto": "Así que no necesitas un reactor nuclear gigante para tocar el fuego de las estrellas: solo un poco de agua, una burbuja... y la frecuencia de sonido adecuada.",
+      "icono": "Lightbulb",
+      "colorIcono": "#38BDF8",
+      "tituloVisual": "ENERGÍA CÓSMICA",
+      "composicionVisual": "plano_general",
+      "escenario": "laboratorio_penumbra",
+      "layout": "narrativo",
+      "transicion": "zoom_in",
+      "efectosCamara": [
+        "drift",
+        "punch"
+      ],
+      "sfx": "sfx/sfx_ambient_chime.wav",
+      "volumenSfx": 0.25,
+      "palabrasClave": [
+        "reactor nuclear",
+        "fuego de las estrellas",
+        "agua",
+        "frecuencia de sonido"
+      ],
+      "personajes": [
+        {
+          "id": "despedida_cientifico",
+          "posicion": {
+            "x": -180,
+            "y": 60
+          },
+          "escala": 1.0,
+          "orientacion": "derecha",
+          "poseId": "waving_hello",
+          "expresion": "smile_wide",
+          "habla": true
+        }
+      ],
+      "objetos": [
+        {
+          "id": "estrella_matraz",
+          "propId": "matraz_estrella_miniatura",
+          "posicion": {
+            "x": 140,
+            "y": 0
+          },
+          "escala": 1.35,
+          "animacionFisica": "pulso"
+        }
+      ],
+      "duracionSegundos": 8.578,
+      "palabras": [
+        {
+          "palabra": "Así",
+          "inicioMs": 0,
+          "finMs": 260
+        },
+        {
+          "palabra": "que",
+          "inicioMs": 260,
+          "finMs": 380
+        },
+        {
+          "palabra": "no",
+          "inicioMs": 380,
+          "finMs": 520
+        },
+        {
+          "palabra": "necesitas",
+          "inicioMs": 520,
+          "finMs": 1000
+        },
+        {
+          "palabra": "un",
+          "inicioMs": 1000,
+          "finMs": 1200
+        },
+        {
+          "palabra": "reactor",
+          "inicioMs": 1200,
+          "finMs": 1440
+        },
+        {
+          "palabra": "nuclear",
+          "inicioMs": 1440,
+          "finMs": 1800
+        },
+        {
+          "palabra": "gigante",
+          "inicioMs": 1800,
+          "finMs": 2300
+        },
+        {
+          "palabra": "para",
+          "inicioMs": 2300,
+          "finMs": 2480
+        },
+        {
+          "palabra": "tocar",
+          "inicioMs": 2480,
+          "finMs": 2740
+        },
+        {
+          "palabra": "el",
+          "inicioMs": 2740,
+          "finMs": 2900
+        },
+        {
+          "palabra": "fuego",
+          "inicioMs": 2900,
+          "finMs": 3080
+        },
+        {
+          "palabra": "de",
+          "inicioMs": 3080,
+          "finMs": 3240
+        },
+        {
+          "palabra": "las",
+          "inicioMs": 3240,
+          "finMs": 3380
+        },
+        {
+          "palabra": "estrellas",
+          "inicioMs": 3380,
+          "finMs": 3900
+        },
+        {
+          "palabra": "solo",
+          "inicioMs": 3900,
+          "finMs": 4120
+        },
+        {
+          "palabra": "un",
+          "inicioMs": 4120,
+          "finMs": 4280
+        },
+        {
+          "palabra": "poco",
+          "inicioMs": 4280,
+          "finMs": 4440
+        },
+        {
+          "palabra": "de",
+          "inicioMs": 4440,
+          "finMs": 4620
+        },
+        {
+          "palabra": "agua",
+          "inicioMs": 4620,
+          "finMs": 4840
+        },
+        {
+          "palabra": "una",
+          "inicioMs": 5000,
+          "finMs": 5160
+        },
+        {
+          "palabra": "burbuja",
+          "inicioMs": 5160,
+          "finMs": 5700
+        },
+        {
+          "palabra": "y",
+          "inicioMs": 5700,
+          "finMs": 6440
+        },
+        {
+          "palabra": "la",
+          "inicioMs": 6440,
+          "finMs": 6540
+        },
+        {
+          "palabra": "frecuencia",
+          "inicioMs": 6540,
+          "finMs": 7100
+        },
+        {
+          "palabra": "de",
+          "inicioMs": 7100,
+          "finMs": 7240
+        },
+        {
+          "palabra": "sonido",
+          "inicioMs": 7240,
+          "finMs": 7600
+        },
+        {
+          "palabra": "adecuada",
+          "inicioMs": 7600,
+          "finMs": 8080
+        }
+      ]
+    }
+  ]
+}

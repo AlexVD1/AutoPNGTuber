@@ -1,0 +1,1697 @@
+{
+  "meta": {
+    "id": "deja_vu_misterio_cerebro",
+    "slug": "deja_vu_misterio_cerebro",
+    "temaResumen": "¿Qué le ocurre exactamente a tu cerebro cuando experimentas un déjà vu? Corteza rinal y lóbulo temporal",
+    "titulo": "¿Qué le pasa a tu cerebro durante un déjà vu real?",
+    "titulo_corto": "MISTERIO DEL DÉJÀ VU",
+    "gancho": "¿Alguna vez has entrado a un lugar completamente nuevo o escuchado una frase por primera vez, y de repente sentiste una certeza absoluta de que ya habías vivido ese segundo exacto?",
+    "fuentes": [
+      "O'Connor et al. (Frontiers in Neuroscience: Neural mechanisms of Déjà vu)",
+      "University of St Andrews Memory Laboratory"
+    ],
+    "genero": "SCIENCE",
+    "duracionObjetivo": [
+      62,
+      110
+    ]
+  },
+  "escenas": [
+    {
+      "id": 1,
+      "texto": "¿Alguna vez has entrado a un lugar completamente nuevo, pero sentiste con absoluta certeza que ya habías vivido ese exacto momento en el pasado?",
+      "icono": "HelpCircle",
+      "colorIcono": "#8B5CF6",
+      "tituloVisual": "¿YA LO VIVISTE?",
+      "composicionVisual": "plano_general",
+      "escenario": "sala_estar",
+      "layout": "narrativo",
+      "transicion": "zoom_in",
+      "efectosCamara": [
+        "drift"
+      ],
+      "sfx": "sfx/sfx_tension_riser.wav",
+      "volumenSfx": 0.22,
+      "personajes": [
+        {
+          "id": "narrador_dejavu",
+          "posicion": {
+            "x": -240,
+            "y": 40
+          },
+          "escala": 1,
+          "orientacion": "derecha",
+          "acciones": [
+            {
+              "tipo": "caminar_hacia",
+              "desdeX": -300,
+              "haciaX": -80
+            }
+          ],
+          "habla": true
+        }
+      ],
+      "objetos": [
+        {
+          "id": "glitch_intro",
+          "propId": "temporal_lobe_glitch",
+          "posicion": {
+            "x": 260,
+            "y": -70
+          },
+          "escala": 1.5,
+          "animacion": {
+            "tipo": "flotar"
+          }
+        }
+      ],
+      "palabrasClave": [
+        "lugar completamente nuevo",
+        "absoluta certeza",
+        "ya habías vivido"
+      ],
+      "duracionSegundos": 7.426,
+      "palabras": [
+        {
+          "palabra": "Alguna",
+          "inicioMs": 0,
+          "finMs": 340
+        },
+        {
+          "palabra": "vez",
+          "inicioMs": 340,
+          "finMs": 560
+        },
+        {
+          "palabra": "has",
+          "inicioMs": 560,
+          "finMs": 660
+        },
+        {
+          "palabra": "entrado",
+          "inicioMs": 660,
+          "finMs": 1040
+        },
+        {
+          "palabra": "a",
+          "inicioMs": 1040,
+          "finMs": 1160
+        },
+        {
+          "palabra": "un",
+          "inicioMs": 1160,
+          "finMs": 1240
+        },
+        {
+          "palabra": "lugar",
+          "inicioMs": 1240,
+          "finMs": 1440
+        },
+        {
+          "palabra": "completamente",
+          "inicioMs": 1440,
+          "finMs": 1980
+        },
+        {
+          "palabra": "nuevo",
+          "inicioMs": 1980,
+          "finMs": 2520
+        },
+        {
+          "palabra": "pero",
+          "inicioMs": 2660,
+          "finMs": 2780
+        },
+        {
+          "palabra": "sentiste",
+          "inicioMs": 2780,
+          "finMs": 3240
+        },
+        {
+          "palabra": "con",
+          "inicioMs": 3240,
+          "finMs": 3380
+        },
+        {
+          "palabra": "absoluta",
+          "inicioMs": 3380,
+          "finMs": 3880
+        },
+        {
+          "palabra": "certeza",
+          "inicioMs": 3880,
+          "finMs": 4300
+        },
+        {
+          "palabra": "que",
+          "inicioMs": 4300,
+          "finMs": 4600
+        },
+        {
+          "palabra": "ya",
+          "inicioMs": 4600,
+          "finMs": 4780
+        },
+        {
+          "palabra": "habías",
+          "inicioMs": 4780,
+          "finMs": 5080
+        },
+        {
+          "palabra": "vivido",
+          "inicioMs": 5080,
+          "finMs": 5500
+        },
+        {
+          "palabra": "ese",
+          "inicioMs": 5500,
+          "finMs": 5660
+        },
+        {
+          "palabra": "exacto",
+          "inicioMs": 5660,
+          "finMs": 6120
+        },
+        {
+          "palabra": "momento",
+          "inicioMs": 6120,
+          "finMs": 6340
+        },
+        {
+          "palabra": "en",
+          "inicioMs": 6340,
+          "finMs": 6580
+        },
+        {
+          "palabra": "el",
+          "inicioMs": 6580,
+          "finMs": 6660
+        },
+        {
+          "palabra": "pasado",
+          "inicioMs": 6660,
+          "finMs": 6900
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "texto": "Esa sensación escalofriante se conoce como Déjà Vu, una expresión en francés que significa literalmente: 'ya visto'.",
+      "icono": "Eye",
+      "colorIcono": "#38BDF8",
+      "tituloVisual": "DÉJÀ VU: YA VISTO",
+      "composicionVisual": "primer_plano",
+      "escenario": "laboratorio_neuro",
+      "layout": "narrativo",
+      "transicion": "whip_right",
+      "efectosCamara": [
+        "drift"
+      ],
+      "personajes": [
+        {
+          "id": "asombro_expresion",
+          "posicion": {
+            "x": 0,
+            "y": 20
+          },
+          "escala": 1.15,
+          "orientacion": "derecha",
+          "poseId": "explaining_pointing_up",
+          "expresion": "analytical",
+          "habla": true
+        }
+      ],
+      "palabrasClave": [
+        "sensación escalofriante",
+        "Déjà Vu",
+        "ya visto"
+      ],
+      "duracionSegundos": 5.65,
+      "palabras": [
+        {
+          "palabra": "Esa",
+          "inicioMs": 0,
+          "finMs": 300
+        },
+        {
+          "palabra": "sensación",
+          "inicioMs": 300,
+          "finMs": 740
+        },
+        {
+          "palabra": "escalofriante",
+          "inicioMs": 740,
+          "finMs": 1260
+        },
+        {
+          "palabra": "se",
+          "inicioMs": 1260,
+          "finMs": 1380
+        },
+        {
+          "palabra": "conoce",
+          "inicioMs": 1380,
+          "finMs": 1680
+        },
+        {
+          "palabra": "como",
+          "inicioMs": 1680,
+          "finMs": 1840
+        },
+        {
+          "palabra": "Déjà",
+          "inicioMs": 1840,
+          "finMs": 1980
+        },
+        {
+          "palabra": "Vu",
+          "inicioMs": 1980,
+          "finMs": 2340
+        },
+        {
+          "palabra": "una",
+          "inicioMs": 2440,
+          "finMs": 2560
+        },
+        {
+          "palabra": "expresión",
+          "inicioMs": 2560,
+          "finMs": 3000
+        },
+        {
+          "palabra": "en",
+          "inicioMs": 3000,
+          "finMs": 3100
+        },
+        {
+          "palabra": "francés",
+          "inicioMs": 3100,
+          "finMs": 3480
+        },
+        {
+          "palabra": "que",
+          "inicioMs": 3480,
+          "finMs": 3600
+        },
+        {
+          "palabra": "significa",
+          "inicioMs": 3600,
+          "finMs": 3980
+        },
+        {
+          "palabra": "literalmente",
+          "inicioMs": 3980,
+          "finMs": 4600
+        },
+        {
+          "palabra": "ya",
+          "inicioMs": 4600,
+          "finMs": 4820
+        },
+        {
+          "palabra": "visto",
+          "inicioMs": 4820,
+          "finMs": 5160
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "texto": "Durante siglos se creyó que era clarividencia o recuerdos de vidas pasadas, pero la neurociencia moderna ha descubierto su verdadera causa biológica.",
+      "icono": "Compass",
+      "colorIcono": "#F59E0B",
+      "tituloVisual": "CIENCIA VS MITO",
+      "composicionVisual": "plano_general",
+      "escenario": "laboratorio_neuro",
+      "layout": "narrativo",
+      "transicion": "zoom_in",
+      "efectosCamara": [
+        "drift"
+      ],
+      "personajes": [
+        {
+          "id": "desmitificador",
+          "posicion": {
+            "x": -150,
+            "y": 30
+          },
+          "escala": 1,
+          "orientacion": "derecha",
+          "poseId": "shaking_no",
+          "expresion": "skeptical",
+          "habla": true
+        }
+      ],
+      "objetos": [
+        {
+          "id": "reloj_arena_mito",
+          "propId": "cosmic_hourglass",
+          "posicion": {
+            "x": 240,
+            "y": -70
+          },
+          "escala": 1.4,
+          "animacion": {
+            "tipo": "flotar"
+          }
+        }
+      ],
+      "palabrasClave": [
+        "clarividencia",
+        "vidas pasadas",
+        "neurociencia moderna"
+      ],
+      "duracionSegundos": 8.314,
+      "palabras": [
+        {
+          "palabra": "Durante",
+          "inicioMs": 0,
+          "finMs": 360
+        },
+        {
+          "palabra": "siglos",
+          "inicioMs": 360,
+          "finMs": 720
+        },
+        {
+          "palabra": "se",
+          "inicioMs": 720,
+          "finMs": 860
+        },
+        {
+          "palabra": "creyó",
+          "inicioMs": 860,
+          "finMs": 1140
+        },
+        {
+          "palabra": "que",
+          "inicioMs": 1140,
+          "finMs": 1280
+        },
+        {
+          "palabra": "era",
+          "inicioMs": 1280,
+          "finMs": 1420
+        },
+        {
+          "palabra": "clarividencia",
+          "inicioMs": 1420,
+          "finMs": 2180
+        },
+        {
+          "palabra": "o",
+          "inicioMs": 2180,
+          "finMs": 2400
+        },
+        {
+          "palabra": "recuerdos",
+          "inicioMs": 2400,
+          "finMs": 2840
+        },
+        {
+          "palabra": "de",
+          "inicioMs": 2840,
+          "finMs": 2980
+        },
+        {
+          "palabra": "vidas",
+          "inicioMs": 2980,
+          "finMs": 3240
+        },
+        {
+          "palabra": "pasadas",
+          "inicioMs": 3240,
+          "finMs": 3740
+        },
+        {
+          "palabra": "pero",
+          "inicioMs": 4040,
+          "finMs": 4400
+        },
+        {
+          "palabra": "la",
+          "inicioMs": 4400,
+          "finMs": 4540
+        },
+        {
+          "palabra": "neurociencia",
+          "inicioMs": 4540,
+          "finMs": 5100
+        },
+        {
+          "palabra": "moderna",
+          "inicioMs": 5100,
+          "finMs": 5660
+        },
+        {
+          "palabra": "ha",
+          "inicioMs": 5660,
+          "finMs": 5820
+        },
+        {
+          "palabra": "descubierto",
+          "inicioMs": 5820,
+          "finMs": 6280
+        },
+        {
+          "palabra": "su",
+          "inicioMs": 6280,
+          "finMs": 6480
+        },
+        {
+          "palabra": "verdadera",
+          "inicioMs": 6480,
+          "finMs": 6900
+        },
+        {
+          "palabra": "causa",
+          "inicioMs": 6900,
+          "finMs": 7180
+        },
+        {
+          "palabra": "biológica",
+          "inicioMs": 7180,
+          "finMs": 7820
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "texto": "Todo se reduce a un desfase de apenas unos pocos milisegundos en la velocidad de procesamiento de tu lóbulo temporal.",
+      "icono": "Clock",
+      "colorIcono": "#EC4899",
+      "tituloVisual": "DESFASE DE MILISEGUNDOS",
+      "composicionVisual": "cifras_concepto",
+      "escenario": "sala_estar",
+      "layout": "narrativo",
+      "transicion": "whip_left",
+      "efectosCamara": [
+        "punch"
+      ],
+      "sfx": "sfx/sfx_impact.wav",
+      "volumenSfx": 0.22,
+      "personajes": [
+        {
+          "id": "cifras_milisegundos",
+          "posicion": {
+            "x": -150,
+            "y": 30
+          },
+          "escala": 1,
+          "orientacion": "derecha",
+          "poseId": "pointing_right",
+          "expresion": "analytical",
+          "habla": true
+        }
+      ],
+      "objetos": [
+        {
+          "id": "cerebro_glitch_escena",
+          "propId": "temporal_lobe_glitch",
+          "posicion": {
+            "x": 240,
+            "y": -70
+          },
+          "escala": 1.5,
+          "animacion": {
+            "tipo": "vibrar"
+          }
+        }
+      ],
+      "palabrasClave": [
+        "pocos milisegundos",
+        "velocidad de procesamiento",
+        "lóbulo temporal"
+      ],
+      "duracionSegundos": 6.226,
+      "palabras": [
+        {
+          "palabra": "Todo",
+          "inicioMs": 0,
+          "finMs": 200
+        },
+        {
+          "palabra": "se",
+          "inicioMs": 200,
+          "finMs": 420
+        },
+        {
+          "palabra": "reduce",
+          "inicioMs": 420,
+          "finMs": 720
+        },
+        {
+          "palabra": "a",
+          "inicioMs": 720,
+          "finMs": 920
+        },
+        {
+          "palabra": "un",
+          "inicioMs": 920,
+          "finMs": 1000
+        },
+        {
+          "palabra": "desfase",
+          "inicioMs": 1000,
+          "finMs": 1400
+        },
+        {
+          "palabra": "de",
+          "inicioMs": 1400,
+          "finMs": 1560
+        },
+        {
+          "palabra": "apenas",
+          "inicioMs": 1560,
+          "finMs": 1860
+        },
+        {
+          "palabra": "unos",
+          "inicioMs": 1860,
+          "finMs": 2180
+        },
+        {
+          "palabra": "pocos",
+          "inicioMs": 2180,
+          "finMs": 2480
+        },
+        {
+          "palabra": "milisegundos",
+          "inicioMs": 2480,
+          "finMs": 3160
+        },
+        {
+          "palabra": "en",
+          "inicioMs": 3160,
+          "finMs": 3340
+        },
+        {
+          "palabra": "la",
+          "inicioMs": 3340,
+          "finMs": 3440
+        },
+        {
+          "palabra": "velocidad",
+          "inicioMs": 3440,
+          "finMs": 3700
+        },
+        {
+          "palabra": "de",
+          "inicioMs": 3700,
+          "finMs": 4060
+        },
+        {
+          "palabra": "procesamiento",
+          "inicioMs": 4060,
+          "finMs": 4680
+        },
+        {
+          "palabra": "de",
+          "inicioMs": 4680,
+          "finMs": 4860
+        },
+        {
+          "palabra": "tu",
+          "inicioMs": 4860,
+          "finMs": 4960
+        },
+        {
+          "palabra": "lóbulo",
+          "inicioMs": 4960,
+          "finMs": 5340
+        },
+        {
+          "palabra": "temporal",
+          "inicioMs": 5340,
+          "finMs": 5760
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "texto": "Normalmente, cuando percibes una escena, tu cerebro envía la información sensorial por dos rutas neuronales sincronizadas al mismo tiempo.",
+      "icono": "GitFork",
+      "colorIcono": "#6366F1",
+      "tituloVisual": "DOS RUTAS NEURALES",
+      "composicionVisual": "plano_general",
+      "escenario": "laboratorio_neuro",
+      "layout": "narrativo",
+      "transicion": "zoom_in",
+      "efectosCamara": [
+        "drift"
+      ],
+      "personajes": [
+        {
+          "id": "dos_rutas",
+          "posicion": {
+            "x": -140,
+            "y": 25
+          },
+          "escala": 1,
+          "orientacion": "derecha",
+          "poseId": "explaining_both_hands",
+          "expresion": "smile_soft",
+          "habla": true
+        }
+      ],
+      "objetos": [
+        {
+          "id": "red_neuronal",
+          "propId": "mirror_neurons",
+          "posicion": {
+            "x": 250,
+            "y": -60
+          },
+          "escala": 1.45,
+          "animacion": {
+            "tipo": "pulso"
+          }
+        }
+      ],
+      "palabrasClave": [
+        "información sensorial",
+        "dos rutas neuronales",
+        "sincronizadas al mismo tiempo"
+      ],
+      "duracionSegundos": 7.378,
+      "palabras": [
+        {
+          "palabra": "Normalmente",
+          "inicioMs": 0,
+          "finMs": 780
+        },
+        {
+          "palabra": "cuando",
+          "inicioMs": 980,
+          "finMs": 1140
+        },
+        {
+          "palabra": "percibes",
+          "inicioMs": 1140,
+          "finMs": 1620
+        },
+        {
+          "palabra": "una",
+          "inicioMs": 1620,
+          "finMs": 1820
+        },
+        {
+          "palabra": "escena",
+          "inicioMs": 1820,
+          "finMs": 2200
+        },
+        {
+          "palabra": "tu",
+          "inicioMs": 2420,
+          "finMs": 2460
+        },
+        {
+          "palabra": "cerebro",
+          "inicioMs": 2460,
+          "finMs": 2800
+        },
+        {
+          "palabra": "envía",
+          "inicioMs": 2800,
+          "finMs": 3080
+        },
+        {
+          "palabra": "la",
+          "inicioMs": 3080,
+          "finMs": 3200
+        },
+        {
+          "palabra": "información",
+          "inicioMs": 3200,
+          "finMs": 3580
+        },
+        {
+          "palabra": "sensorial",
+          "inicioMs": 3580,
+          "finMs": 4120
+        },
+        {
+          "palabra": "por",
+          "inicioMs": 4120,
+          "finMs": 4380
+        },
+        {
+          "palabra": "dos",
+          "inicioMs": 4380,
+          "finMs": 4560
+        },
+        {
+          "palabra": "rutas",
+          "inicioMs": 4560,
+          "finMs": 4940
+        },
+        {
+          "palabra": "neuronales",
+          "inicioMs": 4940,
+          "finMs": 5440
+        },
+        {
+          "palabra": "sincronizadas",
+          "inicioMs": 5440,
+          "finMs": 6120
+        },
+        {
+          "palabra": "al",
+          "inicioMs": 6120,
+          "finMs": 6280
+        },
+        {
+          "palabra": "mismo",
+          "inicioMs": 6280,
+          "finMs": 6460
+        },
+        {
+          "palabra": "tiempo",
+          "inicioMs": 6460,
+          "finMs": 6860
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "texto": "Una ruta registra el presente inmediato, mientras que la otra clasifica y archiva los recuerdos en tu memoria a largo plazo.",
+      "icono": "Archive",
+      "colorIcono": "#3B82F6",
+      "tituloVisual": "PRESENTE VS MEMORIA",
+      "composicionVisual": "plano_general",
+      "escenario": "laboratorio_neuro",
+      "layout": "narrativo",
+      "transicion": "whip_right",
+      "efectosCamara": [
+        "drift"
+      ],
+      "personajes": [
+        {
+          "id": "presente_vs_memoria",
+          "posicion": {
+            "x": -150,
+            "y": 30
+          },
+          "escala": 1,
+          "orientacion": "derecha",
+          "poseId": "comparing_two_objects",
+          "expresion": "analytical",
+          "habla": true
+        }
+      ],
+      "palabrasClave": [
+        "presente inmediato",
+        "archiva los recuerdos",
+        "memoria a largo plazo"
+      ],
+      "duracionSegundos": 7.018,
+      "palabras": [
+        {
+          "palabra": "Una",
+          "inicioMs": 0,
+          "finMs": 280
+        },
+        {
+          "palabra": "ruta",
+          "inicioMs": 280,
+          "finMs": 600
+        },
+        {
+          "palabra": "registra",
+          "inicioMs": 600,
+          "finMs": 1200
+        },
+        {
+          "palabra": "el",
+          "inicioMs": 1200,
+          "finMs": 1400
+        },
+        {
+          "palabra": "presente",
+          "inicioMs": 1400,
+          "finMs": 1740
+        },
+        {
+          "palabra": "inmediato",
+          "inicioMs": 1740,
+          "finMs": 2520
+        },
+        {
+          "palabra": "mientras",
+          "inicioMs": 2640,
+          "finMs": 2840
+        },
+        {
+          "palabra": "que",
+          "inicioMs": 2840,
+          "finMs": 3020
+        },
+        {
+          "palabra": "la",
+          "inicioMs": 3020,
+          "finMs": 3140
+        },
+        {
+          "palabra": "otra",
+          "inicioMs": 3140,
+          "finMs": 3380
+        },
+        {
+          "palabra": "clasifica",
+          "inicioMs": 3380,
+          "finMs": 4000
+        },
+        {
+          "palabra": "y",
+          "inicioMs": 4000,
+          "finMs": 4140
+        },
+        {
+          "palabra": "archiva",
+          "inicioMs": 4140,
+          "finMs": 4480
+        },
+        {
+          "palabra": "los",
+          "inicioMs": 4480,
+          "finMs": 4620
+        },
+        {
+          "palabra": "recuerdos",
+          "inicioMs": 4620,
+          "finMs": 5060
+        },
+        {
+          "palabra": "en",
+          "inicioMs": 5060,
+          "finMs": 5220
+        },
+        {
+          "palabra": "tu",
+          "inicioMs": 5220,
+          "finMs": 5340
+        },
+        {
+          "palabra": "memoria",
+          "inicioMs": 5340,
+          "finMs": 5720
+        },
+        {
+          "palabra": "a",
+          "inicioMs": 5720,
+          "finMs": 5900
+        },
+        {
+          "palabra": "largo",
+          "inicioMs": 5900,
+          "finMs": 6180
+        },
+        {
+          "palabra": "plazo",
+          "inicioMs": 6180,
+          "finMs": 6560
+        }
+      ]
+    },
+    {
+      "id": 7,
+      "texto": "Pero si por una mínima sobrecarga una de las rutas se retrasa solo una fracción de segundo, la señal llega con un leve desfase temporal.",
+      "icono": "AlertTriangle",
+      "colorIcono": "#EF4444",
+      "tituloVisual": "DESINCRONIZACIÓN",
+      "composicionVisual": "primer_plano",
+      "escenario": "laboratorio_neuro",
+      "layout": "narrativo",
+      "transicion": "flash",
+      "efectosCamara": [
+        "shake"
+      ],
+      "sfx": "sfx/sfx_dramatic_hit.wav",
+      "volumenSfx": 0.24,
+      "personajes": [
+        {
+          "id": "glitch_alerta",
+          "posicion": {
+            "x": 0,
+            "y": 15
+          },
+          "escala": 1.15,
+          "orientacion": "derecha",
+          "poseId": "scratching_head",
+          "expresion": "confused",
+          "habla": true
+        }
+      ],
+      "palabrasClave": [
+        "mínima sobrecarga",
+        "fracción de segundo",
+        "desfase temporal"
+      ],
+      "duracionSegundos": 7.378,
+      "palabras": [
+        {
+          "palabra": "Pero",
+          "inicioMs": 0,
+          "finMs": 200
+        },
+        {
+          "palabra": "si",
+          "inicioMs": 200,
+          "finMs": 340
+        },
+        {
+          "palabra": "por",
+          "inicioMs": 340,
+          "finMs": 540
+        },
+        {
+          "palabra": "una",
+          "inicioMs": 540,
+          "finMs": 720
+        },
+        {
+          "palabra": "mínima",
+          "inicioMs": 720,
+          "finMs": 1100
+        },
+        {
+          "palabra": "sobrecarga",
+          "inicioMs": 1100,
+          "finMs": 1680
+        },
+        {
+          "palabra": "una",
+          "inicioMs": 1680,
+          "finMs": 1900
+        },
+        {
+          "palabra": "de",
+          "inicioMs": 1900,
+          "finMs": 2040
+        },
+        {
+          "palabra": "las",
+          "inicioMs": 2040,
+          "finMs": 2180
+        },
+        {
+          "palabra": "rutas",
+          "inicioMs": 2180,
+          "finMs": 2640
+        },
+        {
+          "palabra": "se",
+          "inicioMs": 2640,
+          "finMs": 2780
+        },
+        {
+          "palabra": "retrasa",
+          "inicioMs": 2780,
+          "finMs": 3240
+        },
+        {
+          "palabra": "solo",
+          "inicioMs": 3240,
+          "finMs": 3480
+        },
+        {
+          "palabra": "una",
+          "inicioMs": 3480,
+          "finMs": 3680
+        },
+        {
+          "palabra": "fracción",
+          "inicioMs": 3680,
+          "finMs": 4060
+        },
+        {
+          "palabra": "de",
+          "inicioMs": 4060,
+          "finMs": 4220
+        },
+        {
+          "palabra": "segundo",
+          "inicioMs": 4220,
+          "finMs": 4640
+        },
+        {
+          "palabra": "la",
+          "inicioMs": 4820,
+          "finMs": 4900
+        },
+        {
+          "palabra": "señal",
+          "inicioMs": 4900,
+          "finMs": 5300
+        },
+        {
+          "palabra": "llega",
+          "inicioMs": 5300,
+          "finMs": 5540
+        },
+        {
+          "palabra": "con",
+          "inicioMs": 5540,
+          "finMs": 5800
+        },
+        {
+          "palabra": "un",
+          "inicioMs": 5800,
+          "finMs": 5920
+        },
+        {
+          "palabra": "leve",
+          "inicioMs": 5920,
+          "finMs": 6100
+        },
+        {
+          "palabra": "desfase",
+          "inicioMs": 6100,
+          "finMs": 6500
+        },
+        {
+          "palabra": "temporal",
+          "inicioMs": 6500,
+          "finMs": 6940
+        }
+      ]
+    },
+    {
+      "id": 8,
+      "texto": "Al recibir la misma información por segunda vez, tu hipocampo comete un error de etiquetado y la clasifica falsamente como un recuerdo antiguo.",
+      "icono": "Database",
+      "colorIcono": "#F59E0B",
+      "tituloVisual": "ERROR DE ETIQUETADO",
+      "composicionVisual": "plano_general",
+      "escenario": "laboratorio_neuro",
+      "layout": "narrativo",
+      "transicion": "zoom_in",
+      "efectosCamara": [
+        "drift"
+      ],
+      "personajes": [
+        {
+          "id": "error_hipocampo",
+          "posicion": {
+            "x": -150,
+            "y": 30
+          },
+          "escala": 1,
+          "orientacion": "derecha",
+          "poseId": "facepalm",
+          "expresion": "embarrassed",
+          "habla": true
+        }
+      ],
+      "palabrasClave": [
+        "segunda vez",
+        "error de etiquetado",
+        "recuerdo antiguo"
+      ],
+      "duracionSegundos": 7.69,
+      "palabras": [
+        {
+          "palabra": "Al",
+          "inicioMs": 0,
+          "finMs": 320
+        },
+        {
+          "palabra": "recibir",
+          "inicioMs": 320,
+          "finMs": 520
+        },
+        {
+          "palabra": "la",
+          "inicioMs": 520,
+          "finMs": 760
+        },
+        {
+          "palabra": "misma",
+          "inicioMs": 760,
+          "finMs": 1200
+        },
+        {
+          "palabra": "información",
+          "inicioMs": 1200,
+          "finMs": 1420
+        },
+        {
+          "palabra": "por",
+          "inicioMs": 1420,
+          "finMs": 1760
+        },
+        {
+          "palabra": "segunda",
+          "inicioMs": 1760,
+          "finMs": 2140
+        },
+        {
+          "palabra": "vez",
+          "inicioMs": 2440,
+          "finMs": 2600
+        },
+        {
+          "palabra": "tu",
+          "inicioMs": 2600,
+          "finMs": 3120
+        },
+        {
+          "palabra": "hipocampo",
+          "inicioMs": 3120,
+          "finMs": 3420
+        },
+        {
+          "palabra": "comete",
+          "inicioMs": 3420,
+          "finMs": 3580
+        },
+        {
+          "palabra": "un",
+          "inicioMs": 3580,
+          "finMs": 3760
+        },
+        {
+          "palabra": "error",
+          "inicioMs": 3760,
+          "finMs": 3960
+        },
+        {
+          "palabra": "de",
+          "inicioMs": 3960,
+          "finMs": 4640
+        },
+        {
+          "palabra": "etiquetado",
+          "inicioMs": 4820,
+          "finMs": 4840
+        },
+        {
+          "palabra": "y",
+          "inicioMs": 4840,
+          "finMs": 4940
+        },
+        {
+          "palabra": "la",
+          "inicioMs": 4940,
+          "finMs": 5460
+        },
+        {
+          "palabra": "clasifica",
+          "inicioMs": 5460,
+          "finMs": 5940
+        },
+        {
+          "palabra": "falsamente",
+          "inicioMs": 5940,
+          "finMs": 6200
+        },
+        {
+          "palabra": "como",
+          "inicioMs": 6200,
+          "finMs": 6320
+        },
+        {
+          "palabra": "un",
+          "inicioMs": 6320,
+          "finMs": 6680
+        },
+        {
+          "palabra": "recuerdo",
+          "inicioMs": 6680,
+          "finMs": 7200
+        },
+        {
+          "palabra": "antiguo",
+          "inicioMs": 7200,
+          "finMs": 7440
+        }
+      ]
+    },
+    {
+      "id": 9,
+      "texto": "Estás viviendo el presente, pero tu cerebro te engaña haciéndote creer que estás recordando algo que ocurrió hace años.",
+      "icono": "ZapOff",
+      "colorIcono": "#06B6D4",
+      "tituloVisual": "ILUSIÓN TEMPORAL",
+      "composicionVisual": "plano_general",
+      "escenario": "sala_estar",
+      "layout": "narrativo",
+      "transicion": "whip_left",
+      "efectosCamara": [
+        "drift"
+      ],
+      "personajes": [
+        {
+          "id": "ilusion_temporal",
+          "posicion": {
+            "x": -140,
+            "y": 25
+          },
+          "escala": 1,
+          "orientacion": "derecha",
+          "poseId": "doubting_open_hands",
+          "expresion": "skeptical",
+          "habla": true
+        }
+      ],
+      "palabrasClave": [
+        "viviendo el presente",
+        "cerebro te engaña",
+        "ocurrió hace años"
+      ],
+      "duracionSegundos": 5.482,
+      "palabras": [
+        {
+          "palabra": "Estás",
+          "inicioMs": 0,
+          "finMs": 280
+        },
+        {
+          "palabra": "viviendo",
+          "inicioMs": 280,
+          "finMs": 680
+        },
+        {
+          "palabra": "el",
+          "inicioMs": 680,
+          "finMs": 760
+        },
+        {
+          "palabra": "presente",
+          "inicioMs": 760,
+          "finMs": 1040
+        },
+        {
+          "palabra": "pero",
+          "inicioMs": 1300,
+          "finMs": 1400
+        },
+        {
+          "palabra": "tu",
+          "inicioMs": 1400,
+          "finMs": 1520
+        },
+        {
+          "palabra": "cerebro",
+          "inicioMs": 1520,
+          "finMs": 1840
+        },
+        {
+          "palabra": "te",
+          "inicioMs": 1840,
+          "finMs": 1980
+        },
+        {
+          "palabra": "engaña",
+          "inicioMs": 1980,
+          "finMs": 2320
+        },
+        {
+          "palabra": "haciéndote",
+          "inicioMs": 2420,
+          "finMs": 2720
+        },
+        {
+          "palabra": "creer",
+          "inicioMs": 2720,
+          "finMs": 3020
+        },
+        {
+          "palabra": "que",
+          "inicioMs": 3020,
+          "finMs": 3140
+        },
+        {
+          "palabra": "estás",
+          "inicioMs": 3140,
+          "finMs": 3300
+        },
+        {
+          "palabra": "recordando",
+          "inicioMs": 3300,
+          "finMs": 3800
+        },
+        {
+          "palabra": "algo",
+          "inicioMs": 3800,
+          "finMs": 4060
+        },
+        {
+          "palabra": "que",
+          "inicioMs": 4060,
+          "finMs": 4220
+        },
+        {
+          "palabra": "ocurrió",
+          "inicioMs": 4220,
+          "finMs": 4540
+        },
+        {
+          "palabra": "hace",
+          "inicioMs": 4540,
+          "finMs": 4700
+        },
+        {
+          "palabra": "años",
+          "inicioMs": 4700,
+          "finMs": 5000
+        }
+      ]
+    },
+    {
+      "id": 10,
+      "texto": "Curiosamente, los estudios demuestran que tener Déjà Vu es una excelente señal: significa que tu sistema de verificación de memoria está sano y activo.",
+      "icono": "ShieldCheck",
+      "colorIcono": "#22C55E",
+      "tituloVisual": "SISTEMA SALUDABLE",
+      "composicionVisual": "plano_general",
+      "escenario": "laboratorio_neuro",
+      "layout": "narrativo",
+      "transicion": "zoom_in",
+      "efectosCamara": [
+        "punch"
+      ],
+      "sfx": "sfx/sfx_whoosh.wav",
+      "volumenSfx": 0.2,
+      "personajes": [
+        {
+          "id": "sistema_sano",
+          "posicion": {
+            "x": -140,
+            "y": 25
+          },
+          "escala": 1,
+          "orientacion": "derecha",
+          "poseId": "thumbs_up_approval",
+          "expresion": "smile_wide",
+          "habla": true
+        }
+      ],
+      "palabrasClave": [
+        "estudios demuestran",
+        "excelente señal",
+        "verificación de memoria"
+      ],
+      "duracionSegundos": 7.978,
+      "palabras": [
+        {
+          "palabra": "Curiosamente",
+          "inicioMs": 0,
+          "finMs": 520
+        },
+        {
+          "palabra": "los",
+          "inicioMs": 680,
+          "finMs": 800
+        },
+        {
+          "palabra": "estudios",
+          "inicioMs": 800,
+          "finMs": 1200
+        },
+        {
+          "palabra": "demuestran",
+          "inicioMs": 1200,
+          "finMs": 1680
+        },
+        {
+          "palabra": "que",
+          "inicioMs": 1680,
+          "finMs": 1820
+        },
+        {
+          "palabra": "tener",
+          "inicioMs": 1820,
+          "finMs": 2020
+        },
+        {
+          "palabra": "Déjà",
+          "inicioMs": 2020,
+          "finMs": 2200
+        },
+        {
+          "palabra": "Vu",
+          "inicioMs": 2200,
+          "finMs": 2520
+        },
+        {
+          "palabra": "es",
+          "inicioMs": 2520,
+          "finMs": 2840
+        },
+        {
+          "palabra": "una",
+          "inicioMs": 2840,
+          "finMs": 2980
+        },
+        {
+          "palabra": "excelente",
+          "inicioMs": 2980,
+          "finMs": 3380
+        },
+        {
+          "palabra": "señal",
+          "inicioMs": 3380,
+          "finMs": 3800
+        },
+        {
+          "palabra": "significa",
+          "inicioMs": 4080,
+          "finMs": 4520
+        },
+        {
+          "palabra": "que",
+          "inicioMs": 4520,
+          "finMs": 4660
+        },
+        {
+          "palabra": "tu",
+          "inicioMs": 4660,
+          "finMs": 4780
+        },
+        {
+          "palabra": "sistema",
+          "inicioMs": 4780,
+          "finMs": 5100
+        },
+        {
+          "palabra": "de",
+          "inicioMs": 5100,
+          "finMs": 5280
+        },
+        {
+          "palabra": "verificación",
+          "inicioMs": 5280,
+          "finMs": 5760
+        },
+        {
+          "palabra": "de",
+          "inicioMs": 5760,
+          "finMs": 5980
+        },
+        {
+          "palabra": "memoria",
+          "inicioMs": 5980,
+          "finMs": 6300
+        },
+        {
+          "palabra": "está",
+          "inicioMs": 6300,
+          "finMs": 6560
+        },
+        {
+          "palabra": "sano",
+          "inicioMs": 6560,
+          "finMs": 6880
+        },
+        {
+          "palabra": "y",
+          "inicioMs": 6880,
+          "finMs": 7000
+        },
+        {
+          "palabra": "activo",
+          "inicioMs": 7000,
+          "finMs": 7480
+        }
+      ]
+    },
+    {
+      "id": 11,
+      "texto": "Así que la próxima vez que sientas esa extraña ilusión, no es magia ni una falla en la realidad: es tu cerebro calibrando sus archivos en vivo.",
+      "icono": "Sparkles",
+      "colorIcono": "#FFE600",
+      "tituloVisual": "CALIBRACIÓN EN VIVO",
+      "composicionVisual": "plano_general",
+      "escenario": "sala_estar",
+      "layout": "narrativo",
+      "transicion": "zoom_in",
+      "efectosCamara": [
+        "drift"
+      ],
+      "personajes": [
+        {
+          "id": "conclusion_dejavu",
+          "posicion": {
+            "x": -160,
+            "y": 30
+          },
+          "escala": 1,
+          "orientacion": "derecha",
+          "prop": "trophy",
+          "acciones": [
+            {
+              "tipo": "caminar_hacia",
+              "desdeX": -220,
+              "haciaX": 0
+            }
+          ],
+          "habla": true
+        }
+      ],
+      "palabrasClave": [
+        "extraña ilusión",
+        "no es magia",
+        "calibrando sus archivos en vivo"
+      ],
+      "duracionSegundos": 7.522,
+      "palabras": [
+        {
+          "palabra": "Así",
+          "inicioMs": 0,
+          "finMs": 260
+        },
+        {
+          "palabra": "que",
+          "inicioMs": 260,
+          "finMs": 400
+        },
+        {
+          "palabra": "la",
+          "inicioMs": 400,
+          "finMs": 500
+        },
+        {
+          "palabra": "próxima",
+          "inicioMs": 500,
+          "finMs": 880
+        },
+        {
+          "palabra": "vez",
+          "inicioMs": 880,
+          "finMs": 1100
+        },
+        {
+          "palabra": "que",
+          "inicioMs": 1100,
+          "finMs": 1300
+        },
+        {
+          "palabra": "sientas",
+          "inicioMs": 1300,
+          "finMs": 1800
+        },
+        {
+          "palabra": "esa",
+          "inicioMs": 1800,
+          "finMs": 1940
+        },
+        {
+          "palabra": "extraña",
+          "inicioMs": 1940,
+          "finMs": 2780
+        },
+        {
+          "palabra": "ilusión",
+          "inicioMs": 2780,
+          "finMs": 2960
+        },
+        {
+          "palabra": "no",
+          "inicioMs": 2960,
+          "finMs": 3080
+        },
+        {
+          "palabra": "es",
+          "inicioMs": 3080,
+          "finMs": 3420
+        },
+        {
+          "palabra": "magia",
+          "inicioMs": 3420,
+          "finMs": 3540
+        },
+        {
+          "palabra": "ni",
+          "inicioMs": 3540,
+          "finMs": 3720
+        },
+        {
+          "palabra": "una",
+          "inicioMs": 3720,
+          "finMs": 4120
+        },
+        {
+          "palabra": "falla",
+          "inicioMs": 4120,
+          "finMs": 4200
+        },
+        {
+          "palabra": "en",
+          "inicioMs": 4200,
+          "finMs": 4580
+        },
+        {
+          "palabra": "la",
+          "inicioMs": 4800,
+          "finMs": 5060
+        },
+        {
+          "palabra": "realidad",
+          "inicioMs": 5060,
+          "finMs": 5500
+        },
+        {
+          "palabra": "es",
+          "inicioMs": 5500,
+          "finMs": 6020
+        },
+        {
+          "palabra": "tu",
+          "inicioMs": 6020,
+          "finMs": 6180
+        },
+        {
+          "palabra": "cerebro",
+          "inicioMs": 6180,
+          "finMs": 6600
+        },
+        {
+          "palabra": "calibrando",
+          "inicioMs": 6600,
+          "finMs": 6800
+        },
+        {
+          "palabra": "sus",
+          "inicioMs": 6800,
+          "finMs": 7040
+        },
+        {
+          "palabra": "archivos",
+          "inicioMs": 7040,
+          "finMs": 7120
+        },
+        {
+          "palabra": "en",
+          "inicioMs": 7040,
+          "finMs": 7120
+        },
+        {
+          "palabra": "vivo",
+          "inicioMs": 7040,
+          "finMs": 7120
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,1588 @@
+{
+  "meta": {
+    "id": "bacteria_come_plastico_ideonella",
+    "slug": "bacteria_come_plastico_ideonella",
+    "temaResumen": "La bacteria que come plástico (Ideonella sakaiensis al rescate)",
+    "duracionObjetivo": [
+      62,
+      85
+    ],
+    "titulo": "La bacteria que come plástico: Ideonella sakaiensis",
+    "titulo_corto": "La bacteria come plástico",
+    "gancho": "Una sola botella de plástico tarda hasta quinientos años en degradarse... pero este pequeño monstruito cena plástico todos los días.",
+    "fuentes": [
+      "Science (2016) - Yoshida et al.: A bacterium that degrades and assimilates poly(ethylene terephthalate)",
+      "Nature Catalysis (2020) - Tournier et al.: An engineered PET depolymerase",
+      "Proceedings of the National Academy of Sciences (PNAS) - Austin et al."
+    ],
+    "genero": "Ciencia y Biotecnología",
+    "playlist": "Biotecnología y Microorganismos Asombrosos"
+  },
+  "escenas": [
+    {
+      "id": 1,
+      "texto": "Una sola botella de plástico tarda hasta quinientos años en degradarse en la naturaleza... pero este pequeño monstruito no puede esperar tanto. Te presento a la bacteria que cena plástico todos los días.",
+      "icono": "Trash2",
+      "colorIcono": "#10B981",
+      "tituloVisual": "DEVORADORA DE PLÁSTICO",
+      "composicionVisual": "plano_general",
+      "escenario": "vertedero_botellas_pet",
+      "layout": "narrativo",
+      "transicion": "zoom_in",
+      "efectosCamara": [
+        "punch",
+        "drift"
+      ],
+      "sfx": "sfx/sfx_plastico_crujiente_disolucion.wav",
+      "volumenSfx": 0.25,
+      "palabrasClave": [
+        "QUINIENTOS AÑOS",
+        "BOTELLA DE PLÁSTICO",
+        "MONSTRUITO",
+        "CENA PLÁSTICO",
+        "BACTERIA"
+      ],
+      "personajes": [
+        {
+          "id": "stickman",
+          "nombre": "Stickman",
+          "posicion": {
+            "x": -170,
+            "y": 60
+          },
+          "escala": 1,
+          "orientacion": "derecha",
+          "poseId": "tripping_falling",
+          "expresion": "worried",
+          "prop": "botella_pet_arrugada",
+          "habla": true,
+          "capaZ": 12
+        },
+        {
+          "id": "bacteria",
+          "nombre": "Ideonella",
+          "posicion": {
+            "x": 190,
+            "y": 100
+          },
+          "escala": 1.15,
+          "orientacion": "izquierda",
+          "poseId": "standing_relaxed",
+          "expresion": "smile_wide",
+          "prop": "bacteria_mascota_verde",
+          "habla": false,
+          "capaZ": 15
+        }
+      ],
+      "objetos": [
+        {
+          "id": "botella_suelo",
+          "propId": "botella_pet_arrugada",
+          "posicion": {
+            "x": -20,
+            "y": 210
+          },
+          "escala": 1.1,
+          "animacion": "vibrar"
+        }
+      ],
+      "duracionSegundos": 10.282,
+      "palabras": [
+        {
+          "palabra": "Una",
+          "inicioMs": 0,
+          "finMs": 260
+        },
+        {
+          "palabra": "sola",
+          "inicioMs": 260,
+          "finMs": 520
+        },
+        {
+          "palabra": "botella",
+          "inicioMs": 520,
+          "finMs": 960
+        },
+        {
+          "palabra": "de",
+          "inicioMs": 960,
+          "finMs": 1080
+        },
+        {
+          "palabra": "plástico",
+          "inicioMs": 1080,
+          "finMs": 1500
+        },
+        {
+          "palabra": "tarda",
+          "inicioMs": 1500,
+          "finMs": 1940
+        },
+        {
+          "palabra": "hasta",
+          "inicioMs": 1940,
+          "finMs": 2100
+        },
+        {
+          "palabra": "quinientos",
+          "inicioMs": 2100,
+          "finMs": 2380
+        },
+        {
+          "palabra": "años",
+          "inicioMs": 2380,
+          "finMs": 2900
+        },
+        {
+          "palabra": "en",
+          "inicioMs": 2900,
+          "finMs": 3100
+        },
+        {
+          "palabra": "degradarse",
+          "inicioMs": 3100,
+          "finMs": 3620
+        },
+        {
+          "palabra": "en",
+          "inicioMs": 3620,
+          "finMs": 3720
+        },
+        {
+          "palabra": "la",
+          "inicioMs": 3720,
+          "finMs": 3800
+        },
+        {
+          "palabra": "naturaleza",
+          "inicioMs": 3800,
+          "finMs": 4460
+        },
+        {
+          "palabra": "pero",
+          "inicioMs": 4620,
+          "finMs": 4760
+        },
+        {
+          "palabra": "este",
+          "inicioMs": 4760,
+          "finMs": 4980
+        },
+        {
+          "palabra": "pequeño",
+          "inicioMs": 4980,
+          "finMs": 5340
+        },
+        {
+          "palabra": "monstruito",
+          "inicioMs": 5340,
+          "finMs": 5980
+        },
+        {
+          "palabra": "no",
+          "inicioMs": 5980,
+          "finMs": 6140
+        },
+        {
+          "palabra": "puede",
+          "inicioMs": 6140,
+          "finMs": 6380
+        },
+        {
+          "palabra": "esperar",
+          "inicioMs": 6380,
+          "finMs": 6720
+        },
+        {
+          "palabra": "tanto",
+          "inicioMs": 6720,
+          "finMs": 7240
+        },
+        {
+          "palabra": "Te",
+          "inicioMs": 7380,
+          "finMs": 7460
+        },
+        {
+          "palabra": "presento",
+          "inicioMs": 7460,
+          "finMs": 7880
+        },
+        {
+          "palabra": "a",
+          "inicioMs": 7880,
+          "finMs": 7980
+        },
+        {
+          "palabra": "la",
+          "inicioMs": 7980,
+          "finMs": 8260
+        },
+        {
+          "palabra": "bacteria",
+          "inicioMs": 8260,
+          "finMs": 8480
+        },
+        {
+          "palabra": "que",
+          "inicioMs": 8480,
+          "finMs": 8620
+        },
+        {
+          "palabra": "cena",
+          "inicioMs": 8620,
+          "finMs": 8760
+        },
+        {
+          "palabra": "plástico",
+          "inicioMs": 8760,
+          "finMs": 9160
+        },
+        {
+          "palabra": "todos",
+          "inicioMs": 9160,
+          "finMs": 9400
+        },
+        {
+          "palabra": "los",
+          "inicioMs": 9400,
+          "finMs": 9580
+        },
+        {
+          "palabra": "días",
+          "inicioMs": 9580,
+          "finMs": 9800
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "texto": "En 2016, un equipo de científicos japoneses exploraba una planta de reciclaje en Sakai y descubrió una colonia viviente de Ideonella sakaiensis. ¡Había evolucionado en apenas setenta años para alimentarse del PET humano!",
+      "icono": "Search",
+      "colorIcono": "#38BDF8",
+      "tituloVisual": "HALLAZGO EN JAPÓN",
+      "composicionVisual": "plano_general",
+      "escenario": "planta_reciclaje_petri_japon",
+      "layout": "narrativo",
+      "transicion": "whip_right",
+      "efectosCamara": [
+        "punch",
+        "drift"
+      ],
+      "sfx": "sfx/sfx_placa_petri_hallazgo.wav",
+      "volumenSfx": 0.25,
+      "palabrasClave": [
+        "JAPONESES",
+        "PLANTA DE RECICLAJE",
+        "IDEONELLA SAKAIENSIS",
+        "SETENTA AÑOS",
+        "PET HUMANO"
+      ],
+      "personajes": [
+        {
+          "id": "cientifico",
+          "nombre": "Científico",
+          "posicion": {
+            "x": -180,
+            "y": 60
+          },
+          "escala": 1,
+          "orientacion": "derecha",
+          "poseId": "investigating_magnifier",
+          "expresion": "eureka",
+          "prop": "placa_petri_cultivo",
+          "habla": true,
+          "capaZ": 12
+        },
+        {
+          "id": "bacteria",
+          "nombre": "Ideonella",
+          "posicion": {
+            "x": 190,
+            "y": 100
+          },
+          "escala": 1.1,
+          "orientacion": "izquierda",
+          "poseId": "standing_confident",
+          "expresion": "smile_soft",
+          "prop": "bacteria_mascota_verde",
+          "habla": false,
+          "capaZ": 15
+        }
+      ],
+      "duracionSegundos": 11.53,
+      "palabras": [
+        {
+          "palabra": "En",
+          "inicioMs": 0,
+          "finMs": 180
+        },
+        {
+          "palabra": "2016",
+          "inicioMs": 180,
+          "finMs": 780
+        },
+        {
+          "palabra": "un",
+          "inicioMs": 920,
+          "finMs": 1020
+        },
+        {
+          "palabra": "equipo",
+          "inicioMs": 1020,
+          "finMs": 1240
+        },
+        {
+          "palabra": "de",
+          "inicioMs": 1240,
+          "finMs": 1400
+        },
+        {
+          "palabra": "científicos",
+          "inicioMs": 1400,
+          "finMs": 1960
+        },
+        {
+          "palabra": "japoneses",
+          "inicioMs": 1960,
+          "finMs": 2460
+        },
+        {
+          "palabra": "exploraba",
+          "inicioMs": 2460,
+          "finMs": 3000
+        },
+        {
+          "palabra": "una",
+          "inicioMs": 3000,
+          "finMs": 3160
+        },
+        {
+          "palabra": "planta",
+          "inicioMs": 3160,
+          "finMs": 3500
+        },
+        {
+          "palabra": "de",
+          "inicioMs": 3500,
+          "finMs": 3560
+        },
+        {
+          "palabra": "reciclaje",
+          "inicioMs": 3560,
+          "finMs": 4100
+        },
+        {
+          "palabra": "en",
+          "inicioMs": 4100,
+          "finMs": 4200
+        },
+        {
+          "palabra": "Sakai",
+          "inicioMs": 4200,
+          "finMs": 4540
+        },
+        {
+          "palabra": "y",
+          "inicioMs": 4540,
+          "finMs": 4700
+        },
+        {
+          "palabra": "descubrió",
+          "inicioMs": 4700,
+          "finMs": 5120
+        },
+        {
+          "palabra": "una",
+          "inicioMs": 5120,
+          "finMs": 5300
+        },
+        {
+          "palabra": "colonia",
+          "inicioMs": 5300,
+          "finMs": 5640
+        },
+        {
+          "palabra": "viviente",
+          "inicioMs": 5640,
+          "finMs": 6060
+        },
+        {
+          "palabra": "de",
+          "inicioMs": 6060,
+          "finMs": 6180
+        },
+        {
+          "palabra": "Ideonella",
+          "inicioMs": 6180,
+          "finMs": 6660
+        },
+        {
+          "palabra": "sakaiensis",
+          "inicioMs": 6660,
+          "finMs": 7400
+        },
+        {
+          "palabra": "Había",
+          "inicioMs": 7560,
+          "finMs": 7820
+        },
+        {
+          "palabra": "evolucionado",
+          "inicioMs": 7820,
+          "finMs": 8440
+        },
+        {
+          "palabra": "en",
+          "inicioMs": 8440,
+          "finMs": 8540
+        },
+        {
+          "palabra": "apenas",
+          "inicioMs": 8540,
+          "finMs": 8740
+        },
+        {
+          "palabra": "setenta",
+          "inicioMs": 8740,
+          "finMs": 9160
+        },
+        {
+          "palabra": "años",
+          "inicioMs": 9160,
+          "finMs": 9560
+        },
+        {
+          "palabra": "para",
+          "inicioMs": 9560,
+          "finMs": 9780
+        },
+        {
+          "palabra": "alimentarse",
+          "inicioMs": 9780,
+          "finMs": 10360
+        },
+        {
+          "palabra": "del",
+          "inicioMs": 10360,
+          "finMs": 10540
+        },
+        {
+          "palabra": "PET",
+          "inicioMs": 10540,
+          "finMs": 10700
+        },
+        {
+          "palabra": "humano",
+          "inicioMs": 10700,
+          "finMs": 11020
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "texto": "Si intentas ofrecerle una manzana fresca, la rechaza con absoluto enfado. Pero lánzale una botella sucia y arrugada, y la devorará feliz como un cachorro insaciable. Aunque en realidad... no tiene dientes.",
+      "icono": "Utensils",
+      "colorIcono": "#F59E0B",
+      "tituloVisual": "MENÚ DE PLÁSTICO",
+      "composicionVisual": "plano_general",
+      "escenario": "parque_mascota_bacteria",
+      "layout": "narrativo",
+      "transicion": "whip_left",
+      "efectosCamara": [
+        "punch",
+        "drift"
+      ],
+      "sfx": "sfx/sfx_bacteria_chomp_plastico.wav",
+      "volumenSfx": 0.25,
+      "palabrasClave": [
+        "MANZANA FRESCA",
+        "RECHAZA",
+        "BOTELLA SUCIA",
+        "DEVORARÁ FELIZ",
+        "NO TIENE DIENTES"
+      ],
+      "personajes": [
+        {
+          "id": "stickman",
+          "nombre": "Stickman",
+          "posicion": {
+            "x": -200,
+            "y": 60
+          },
+          "escala": 1,
+          "orientacion": "derecha",
+          "poseId": "presenting_object",
+          "expresion": "talking_enthusiastic",
+          "prop": "manzana_fresca_rechazada",
+          "habla": true,
+          "capaZ": 12
+        },
+        {
+          "id": "bacteria",
+          "nombre": "Ideonella",
+          "posicion": {
+            "x": 180,
+            "y": 90
+          },
+          "escala": 1.2,
+          "orientacion": "izquierda",
+          "poseId": "jumping_joy",
+          "expresion": "laugh",
+          "prop": "bacteria_mascota_verde",
+          "habla": false,
+          "capaZ": 15
+        }
+      ],
+      "objetos": [
+        {
+          "id": "botella_comida",
+          "propId": "botella_pet_arrugada",
+          "posicion": {
+            "x": 20,
+            "y": 140
+          },
+          "escala": 1.2,
+          "animacion": "flotar"
+        }
+      ],
+      "duracionSegundos": 11.866,
+      "palabras": [
+        {
+          "palabra": "Si",
+          "inicioMs": 0,
+          "finMs": 120
+        },
+        {
+          "palabra": "intentas",
+          "inicioMs": 120,
+          "finMs": 520
+        },
+        {
+          "palabra": "ofrecerle",
+          "inicioMs": 520,
+          "finMs": 1040
+        },
+        {
+          "palabra": "una",
+          "inicioMs": 1040,
+          "finMs": 1180
+        },
+        {
+          "palabra": "manzana",
+          "inicioMs": 1180,
+          "finMs": 1500
+        },
+        {
+          "palabra": "fresca",
+          "inicioMs": 1500,
+          "finMs": 1960
+        },
+        {
+          "palabra": "la",
+          "inicioMs": 2080,
+          "finMs": 2120
+        },
+        {
+          "palabra": "rechaza",
+          "inicioMs": 2120,
+          "finMs": 2440
+        },
+        {
+          "palabra": "con",
+          "inicioMs": 2440,
+          "finMs": 2640
+        },
+        {
+          "palabra": "absoluto",
+          "inicioMs": 2640,
+          "finMs": 3120
+        },
+        {
+          "palabra": "enfado",
+          "inicioMs": 3120,
+          "finMs": 3480
+        },
+        {
+          "palabra": "Pero",
+          "inicioMs": 3640,
+          "finMs": 3780
+        },
+        {
+          "palabra": "lánzale",
+          "inicioMs": 3780,
+          "finMs": 4180
+        },
+        {
+          "palabra": "una",
+          "inicioMs": 4180,
+          "finMs": 4340
+        },
+        {
+          "palabra": "botella",
+          "inicioMs": 4340,
+          "finMs": 4680
+        },
+        {
+          "palabra": "sucia",
+          "inicioMs": 4680,
+          "finMs": 5040
+        },
+        {
+          "palabra": "y",
+          "inicioMs": 5040,
+          "finMs": 5180
+        },
+        {
+          "palabra": "arrugada",
+          "inicioMs": 5180,
+          "finMs": 5620
+        },
+        {
+          "palabra": "y",
+          "inicioMs": 5620,
+          "finMs": 5860
+        },
+        {
+          "palabra": "la",
+          "inicioMs": 5860,
+          "finMs": 5940
+        },
+        {
+          "palabra": "devorará",
+          "inicioMs": 5940,
+          "finMs": 6340
+        },
+        {
+          "palabra": "feliz",
+          "inicioMs": 6340,
+          "finMs": 6580
+        },
+        {
+          "palabra": "como",
+          "inicioMs": 6580,
+          "finMs": 6860
+        },
+        {
+          "palabra": "un",
+          "inicioMs": 6860,
+          "finMs": 7000
+        },
+        {
+          "palabra": "cachorro",
+          "inicioMs": 7000,
+          "finMs": 7260
+        },
+        {
+          "palabra": "insaciable",
+          "inicioMs": 7260,
+          "finMs": 7840
+        },
+        {
+          "palabra": "Aunque",
+          "inicioMs": 8080,
+          "finMs": 8260
+        },
+        {
+          "palabra": "en",
+          "inicioMs": 8260,
+          "finMs": 8460
+        },
+        {
+          "palabra": "realidad",
+          "inicioMs": 8460,
+          "finMs": 8820
+        },
+        {
+          "palabra": "no",
+          "inicioMs": 10140,
+          "finMs": 10640
+        },
+        {
+          "palabra": "tiene",
+          "inicioMs": 10640,
+          "finMs": 10880
+        },
+        {
+          "palabra": "dientes",
+          "inicioMs": 10880,
+          "finMs": 11380
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "texto": "Su secreto asombroso reside en un arma bioquímica. La bacteria segrega una potente enzima llamada PETasa, que funciona como diminutas tijeras moleculares rebanando las larguísimas cadenas del plástico sintético resistente.",
+      "icono": "Scissors",
+      "colorIcono": "#3B82F6",
+      "tituloVisual": "TIJERAS PETASA",
+      "composicionVisual": "plano_general",
+      "escenario": "microcosmos_polimero_petasa",
+      "layout": "narrativo",
+      "transicion": "zoom_in",
+      "efectosCamara": [
+        "punch",
+        "drift"
+      ],
+      "sfx": "sfx/sfx_tijeras_petasa_snip.wav",
+      "volumenSfx": 0.25,
+      "palabrasClave": [
+        "ARMA BIOQUÍMICA",
+        "ENZIMA",
+        "PETASA",
+        "TIJERAS MOLECULARES",
+        "CADENAS DE PLÁSTICO"
+      ],
+      "personajes": [
+        {
+          "id": "stickman",
+          "nombre": "Stickman",
+          "posicion": {
+            "x": -210,
+            "y": 60
+          },
+          "escala": 1,
+          "orientacion": "derecha",
+          "poseId": "explaining_both_hands",
+          "expresion": "analytical",
+          "prop": "tijeras_moleculares_petasa",
+          "habla": true,
+          "capaZ": 12
+        },
+        {
+          "id": "bacteria",
+          "nombre": "Ideonella",
+          "posicion": {
+            "x": 190,
+            "y": 90
+          },
+          "escala": 1.1,
+          "orientacion": "izquierda",
+          "poseId": "standing_confident",
+          "expresion": "eureka",
+          "prop": "bacteria_mascota_verde",
+          "habla": false,
+          "capaZ": 15
+        }
+      ],
+      "objetos": [
+        {
+          "id": "polimero_central",
+          "propId": "botella_pet_arrugada",
+          "posicion": {
+            "x": 0,
+            "y": 140
+          },
+          "escala": 1,
+          "animacion": "pulso"
+        }
+      ],
+      "duracionSegundos": 11.65,
+      "palabras": [
+        {
+          "palabra": "Su",
+          "inicioMs": 0,
+          "finMs": 120
+        },
+        {
+          "palabra": "secreto",
+          "inicioMs": 120,
+          "finMs": 560
+        },
+        {
+          "palabra": "asombroso",
+          "inicioMs": 560,
+          "finMs": 980
+        },
+        {
+          "palabra": "reside",
+          "inicioMs": 980,
+          "finMs": 1480
+        },
+        {
+          "palabra": "en",
+          "inicioMs": 1480,
+          "finMs": 1680
+        },
+        {
+          "palabra": "un",
+          "inicioMs": 1680,
+          "finMs": 1800
+        },
+        {
+          "palabra": "arma",
+          "inicioMs": 1800,
+          "finMs": 1960
+        },
+        {
+          "palabra": "bioquímica",
+          "inicioMs": 1960,
+          "finMs": 2660
+        },
+        {
+          "palabra": "La",
+          "inicioMs": 3060,
+          "finMs": 3140
+        },
+        {
+          "palabra": "bacteria",
+          "inicioMs": 3140,
+          "finMs": 3440
+        },
+        {
+          "palabra": "segrega",
+          "inicioMs": 3440,
+          "finMs": 3960
+        },
+        {
+          "palabra": "una",
+          "inicioMs": 3960,
+          "finMs": 4080
+        },
+        {
+          "palabra": "potente",
+          "inicioMs": 4080,
+          "finMs": 4360
+        },
+        {
+          "palabra": "enzima",
+          "inicioMs": 4360,
+          "finMs": 4800
+        },
+        {
+          "palabra": "llamada",
+          "inicioMs": 4800,
+          "finMs": 5080
+        },
+        {
+          "palabra": "PETasa",
+          "inicioMs": 5080,
+          "finMs": 5540
+        },
+        {
+          "palabra": "que",
+          "inicioMs": 5740,
+          "finMs": 5820
+        },
+        {
+          "palabra": "funciona",
+          "inicioMs": 5820,
+          "finMs": 6200
+        },
+        {
+          "palabra": "como",
+          "inicioMs": 6200,
+          "finMs": 6480
+        },
+        {
+          "palabra": "diminutas",
+          "inicioMs": 6480,
+          "finMs": 6960
+        },
+        {
+          "palabra": "tijeras",
+          "inicioMs": 6960,
+          "finMs": 7300
+        },
+        {
+          "palabra": "moleculares",
+          "inicioMs": 7300,
+          "finMs": 7880
+        },
+        {
+          "palabra": "rebanando",
+          "inicioMs": 8060,
+          "finMs": 8480
+        },
+        {
+          "palabra": "las",
+          "inicioMs": 8480,
+          "finMs": 9040
+        },
+        {
+          "palabra": "larguísimas",
+          "inicioMs": 9040,
+          "finMs": 9400
+        },
+        {
+          "palabra": "cadenas",
+          "inicioMs": 9400,
+          "finMs": 9560
+        },
+        {
+          "palabra": "del",
+          "inicioMs": 9560,
+          "finMs": 9940
+        },
+        {
+          "palabra": "plástico",
+          "inicioMs": 9940,
+          "finMs": 10460
+        },
+        {
+          "palabra": "sintético",
+          "inicioMs": 10460,
+          "finMs": 11160
+        },
+        {
+          "palabra": "resistente",
+          "inicioMs": 11160,
+          "finMs": 11400
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "texto": "Inmediatamente entra en acción la segunda enzima, MHETasa, pulverizando los fragmentos restantes hasta transformarlos en etilenglicol y ácido tereftálico. ¡Nutrientes orgánicos puros que absorbe como combustible vital para multiplicarse!",
+      "icono": "Zap",
+      "colorIcono": "#EC4899",
+      "tituloVisual": "RECARGA MHETASA",
+      "composicionVisual": "plano_general",
+      "escenario": "metabolismo_mhetasa_powerup",
+      "layout": "narrativo",
+      "transicion": "whip_right",
+      "efectosCamara": [
+        "punch",
+        "drift"
+      ],
+      "sfx": "sfx/sfx_recarga_metabolica_powerup.wav",
+      "volumenSfx": 0.25,
+      "palabrasClave": [
+        "MHETASA",
+        "PULVERIZANDO",
+        "ETILENGLICOL",
+        "ÁCIDO TEREFTÁLICO",
+        "NUTRIENTES ORGÁNICOS",
+        "COMBUSTIBLE"
+      ],
+      "personajes": [
+        {
+          "id": "stickman",
+          "nombre": "Stickman",
+          "posicion": {
+            "x": -200,
+            "y": 60
+          },
+          "escala": 1,
+          "orientacion": "derecha",
+          "poseId": "eureka_idea",
+          "expresion": "talking_enthusiastic",
+          "prop": "tijeras_moleculares_mhetasa",
+          "habla": true,
+          "capaZ": 12
+        },
+        {
+          "id": "bacteria",
+          "nombre": "Ideonella",
+          "posicion": {
+            "x": 190,
+            "y": 80
+          },
+          "escala": 1.2,
+          "orientacion": "izquierda",
+          "poseId": "celebrating_arms_up",
+          "expresion": "smile_wide",
+          "prop": "bacteria_mascota_verde",
+          "habla": false,
+          "capaZ": 15
+        }
+      ],
+      "duracionSegundos": 12.514,
+      "palabras": [
+        {
+          "palabra": "Inmediatamente",
+          "inicioMs": 0,
+          "finMs": 660
+        },
+        {
+          "palabra": "entra",
+          "inicioMs": 660,
+          "finMs": 1080
+        },
+        {
+          "palabra": "en",
+          "inicioMs": 1080,
+          "finMs": 1200
+        },
+        {
+          "palabra": "acción",
+          "inicioMs": 1200,
+          "finMs": 1440
+        },
+        {
+          "palabra": "la",
+          "inicioMs": 1440,
+          "finMs": 1580
+        },
+        {
+          "palabra": "segunda",
+          "inicioMs": 1580,
+          "finMs": 1840
+        },
+        {
+          "palabra": "enzima",
+          "inicioMs": 1840,
+          "finMs": 2320
+        },
+        {
+          "palabra": "MHETasa",
+          "inicioMs": 2320,
+          "finMs": 2820
+        },
+        {
+          "palabra": "pulverizando",
+          "inicioMs": 2980,
+          "finMs": 3480
+        },
+        {
+          "palabra": "los",
+          "inicioMs": 3480,
+          "finMs": 3600
+        },
+        {
+          "palabra": "fragmentos",
+          "inicioMs": 3600,
+          "finMs": 4040
+        },
+        {
+          "palabra": "restantes",
+          "inicioMs": 4040,
+          "finMs": 4500
+        },
+        {
+          "palabra": "hasta",
+          "inicioMs": 4500,
+          "finMs": 4760
+        },
+        {
+          "palabra": "transformarlos",
+          "inicioMs": 4760,
+          "finMs": 5380
+        },
+        {
+          "palabra": "en",
+          "inicioMs": 5380,
+          "finMs": 5560
+        },
+        {
+          "palabra": "etilenglicol",
+          "inicioMs": 5560,
+          "finMs": 6180
+        },
+        {
+          "palabra": "y",
+          "inicioMs": 6180,
+          "finMs": 6380
+        },
+        {
+          "palabra": "ácido",
+          "inicioMs": 6380,
+          "finMs": 6500
+        },
+        {
+          "palabra": "tereftálico",
+          "inicioMs": 6500,
+          "finMs": 8020
+        },
+        {
+          "palabra": "Nutrientes",
+          "inicioMs": 8060,
+          "finMs": 8560
+        },
+        {
+          "palabra": "orgánicos",
+          "inicioMs": 8560,
+          "finMs": 9060
+        },
+        {
+          "palabra": "puros",
+          "inicioMs": 9060,
+          "finMs": 9520
+        },
+        {
+          "palabra": "que",
+          "inicioMs": 9520,
+          "finMs": 9620
+        },
+        {
+          "palabra": "absorbe",
+          "inicioMs": 9620,
+          "finMs": 10040
+        },
+        {
+          "palabra": "como",
+          "inicioMs": 10040,
+          "finMs": 10240
+        },
+        {
+          "palabra": "combustible",
+          "inicioMs": 10240,
+          "finMs": 10760
+        },
+        {
+          "palabra": "vital",
+          "inicioMs": 10760,
+          "finMs": 11040
+        },
+        {
+          "palabra": "para",
+          "inicioMs": 11040,
+          "finMs": 11280
+        },
+        {
+          "palabra": "multiplicarse",
+          "inicioMs": 11280,
+          "finMs": 12020
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "texto": "Hoy en día los científicos rediseñan estas enzimas haciéndolas hasta seis veces más veloces, capaces de desintegrar botellas completas en cuestión de horas dentro de biorreactores industriales de vanguardia.",
+      "icono": "FlaskConical",
+      "colorIcono": "#8B5CF6",
+      "tituloVisual": "SUPER-ENZIMAS 6X",
+      "composicionVisual": "plano_general",
+      "escenario": "laboratorio_mutacion_x6",
+      "layout": "narrativo",
+      "transicion": "whip_left",
+      "efectosCamara": [
+        "punch",
+        "drift"
+      ],
+      "sfx": "sfx/sfx_aspiradora_enzima_vrooom.wav",
+      "volumenSfx": 0.25,
+      "palabrasClave": [
+        "CIENTÍFICOS",
+        "SEIS VECES MÁS VELOCES",
+        "DESINTEGRAR BOTELLAS",
+        "BIORREACTORES",
+        "HORAS"
+      ],
+      "personajes": [
+        {
+          "id": "stickman",
+          "nombre": "Stickman",
+          "posicion": {
+            "x": -210,
+            "y": 60
+          },
+          "escala": 1,
+          "orientacion": "derecha",
+          "poseId": "presenting_object",
+          "expresion": "surprised",
+          "prop": "tijeras_moleculares_petasa",
+          "habla": true,
+          "capaZ": 12
+        },
+        {
+          "id": "bacteria",
+          "nombre": "Ideonella",
+          "posicion": {
+            "x": 190,
+            "y": 80
+          },
+          "escala": 1.2,
+          "orientacion": "izquierda",
+          "poseId": "jumping_joy",
+          "expresion": "talking_enthusiastic",
+          "prop": "bacteria_mascota_verde",
+          "habla": false,
+          "capaZ": 15
+        }
+      ],
+      "objetos": [
+        {
+          "id": "botella_disolviendose",
+          "propId": "botella_pet_arrugada",
+          "posicion": {
+            "x": -10,
+            "y": 150
+          },
+          "escala": 1.15,
+          "animacion": "vibrar"
+        }
+      ],
+      "duracionSegundos": 10.618,
+      "palabras": [
+        {
+          "palabra": "Hoy",
+          "inicioMs": 0,
+          "finMs": 280
+        },
+        {
+          "palabra": "en",
+          "inicioMs": 280,
+          "finMs": 400
+        },
+        {
+          "palabra": "día",
+          "inicioMs": 400,
+          "finMs": 600
+        },
+        {
+          "palabra": "los",
+          "inicioMs": 620,
+          "finMs": 740
+        },
+        {
+          "palabra": "científicos",
+          "inicioMs": 740,
+          "finMs": 1300
+        },
+        {
+          "palabra": "rediseñan",
+          "inicioMs": 1300,
+          "finMs": 1840
+        },
+        {
+          "palabra": "estas",
+          "inicioMs": 1840,
+          "finMs": 2060
+        },
+        {
+          "palabra": "enzimas",
+          "inicioMs": 2060,
+          "finMs": 2480
+        },
+        {
+          "palabra": "haciéndolas",
+          "inicioMs": 2620,
+          "finMs": 3060
+        },
+        {
+          "palabra": "hasta",
+          "inicioMs": 3060,
+          "finMs": 3360
+        },
+        {
+          "palabra": "seis",
+          "inicioMs": 3360,
+          "finMs": 3660
+        },
+        {
+          "palabra": "veces",
+          "inicioMs": 3660,
+          "finMs": 3820
+        },
+        {
+          "palabra": "más",
+          "inicioMs": 3820,
+          "finMs": 4120
+        },
+        {
+          "palabra": "veloces",
+          "inicioMs": 4120,
+          "finMs": 4580
+        },
+        {
+          "palabra": "capaces",
+          "inicioMs": 4740,
+          "finMs": 5180
+        },
+        {
+          "palabra": "de",
+          "inicioMs": 5180,
+          "finMs": 5380
+        },
+        {
+          "palabra": "desintegrar",
+          "inicioMs": 5380,
+          "finMs": 5880
+        },
+        {
+          "palabra": "botellas",
+          "inicioMs": 5880,
+          "finMs": 6280
+        },
+        {
+          "palabra": "completas",
+          "inicioMs": 6400,
+          "finMs": 6840
+        },
+        {
+          "palabra": "en",
+          "inicioMs": 6840,
+          "finMs": 6960
+        },
+        {
+          "palabra": "cuestión",
+          "inicioMs": 6960,
+          "finMs": 7280
+        },
+        {
+          "palabra": "de",
+          "inicioMs": 7280,
+          "finMs": 7500
+        },
+        {
+          "palabra": "horas",
+          "inicioMs": 7500,
+          "finMs": 7680
+        },
+        {
+          "palabra": "dentro",
+          "inicioMs": 7800,
+          "finMs": 7960
+        },
+        {
+          "palabra": "de",
+          "inicioMs": 7960,
+          "finMs": 8200
+        },
+        {
+          "palabra": "biorreactores",
+          "inicioMs": 8200,
+          "finMs": 8840
+        },
+        {
+          "palabra": "industriales",
+          "inicioMs": 8840,
+          "finMs": 9460
+        },
+        {
+          "palabra": "de",
+          "inicioMs": 9460,
+          "finMs": 9600
+        },
+        {
+          "palabra": "vanguardia",
+          "inicioMs": 9600,
+          "finMs": 10160
+        }
+      ]
+    },
+    {
+      "id": 7,
+      "texto": "Así que la próxima vez que veas una botella tirada en la calle, imagina pasear a tu bacteria mascota recicladora. La naturaleza siempre encuentra el camino... ¡incluso para devorar nuestra propia basura!",
+      "icono": "Sparkles",
+      "colorIcono": "#10B981",
+      "tituloVisual": "PASEO ECOLÓGICO",
+      "composicionVisual": "plano_general",
+      "escenario": "calle_verde_paseo_final",
+      "layout": "narrativo",
+      "transicion": "zoom_in",
+      "efectosCamara": [
+        "punch",
+        "drift"
+      ],
+      "sfx": "sfx/sfx_eructo_paseo_ecologico.wav",
+      "volumenSfx": 0.25,
+      "palabrasClave": [
+        "BOTELLA TIRADA",
+        "PASEAR",
+        "BACTERIA MASCOTA",
+        "LA NATURALEZA",
+        "ENCUENTRA EL CAMINO",
+        "BASURA"
+      ],
+      "personajes": [
+        {
+          "id": "stickman",
+          "nombre": "Stickman",
+          "posicion": {
+            "x": -180,
+            "y": 60
+          },
+          "escala": 1,
+          "orientacion": "derecha",
+          "poseId": "walking",
+          "expresion": "smile_wide",
+          "prop": "correa_paseo_mascota",
+          "habla": true,
+          "capaZ": 12
+        },
+        {
+          "id": "bacteria",
+          "nombre": "Ideonella",
+          "posicion": {
+            "x": 170,
+            "y": 90
+          },
+          "escala": 1.15,
+          "orientacion": "izquierda",
+          "poseId": "walking",
+          "expresion": "laugh",
+          "prop": "bacteria_mascota_verde",
+          "habla": false,
+          "capaZ": 15
+        }
+      ],
+      "objetos": [
+        {
+          "id": "botella_suelo_parque",
+          "propId": "botella_pet_arrugada",
+          "posicion": {
+            "x": 0,
+            "y": 210
+          },
+          "escala": 1,
+          "animacion": "flotar"
+        }
+      ],
+      "duracionSegundos": 10.474,
+      "palabras": [
+        {
+          "palabra": "Así",
+          "inicioMs": 0,
+          "finMs": 300
+        },
+        {
+          "palabra": "que",
+          "inicioMs": 300,
+          "finMs": 440
+        },
+        {
+          "palabra": "la",
+          "inicioMs": 440,
+          "finMs": 540
+        },
+        {
+          "palabra": "próxima",
+          "inicioMs": 540,
+          "finMs": 880
+        },
+        {
+          "palabra": "vez",
+          "inicioMs": 880,
+          "finMs": 1140
+        },
+        {
+          "palabra": "que",
+          "inicioMs": 1140,
+          "finMs": 1300
+        },
+        {
+          "palabra": "veas",
+          "inicioMs": 1300,
+          "finMs": 1520
+        },
+        {
+          "palabra": "una",
+          "inicioMs": 1520,
+          "finMs": 1660
+        },
+        {
+          "palabra": "botella",
+          "inicioMs": 1660,
+          "finMs": 2020
+        },
+        {
+          "palabra": "tirada",
+          "inicioMs": 2020,
+          "finMs": 2320
+        },
+        {
+          "palabra": "en",
+          "inicioMs": 2320,
+          "finMs": 2460
+        },
+        {
+          "palabra": "la",
+          "inicioMs": 2460,
+          "finMs": 2520
+        },
+        {
+          "palabra": "calle",
+          "inicioMs": 2520,
+          "finMs": 2740
+        },
+        {
+          "palabra": "imagina",
+          "inicioMs": 2940,
+          "finMs": 3240
+        },
+        {
+          "palabra": "pasear",
+          "inicioMs": 3240,
+          "finMs": 3640
+        },
+        {
+          "palabra": "a",
+          "inicioMs": 3640,
+          "finMs": 3720
+        },
+        {
+          "palabra": "tu",
+          "inicioMs": 3720,
+          "finMs": 3820
+        },
+        {
+          "palabra": "bacteria",
+          "inicioMs": 3820,
+          "finMs": 4220
+        },
+        {
+          "palabra": "mascota",
+          "inicioMs": 4220,
+          "finMs": 4640
+        },
+        {
+          "palabra": "recicladora",
+          "inicioMs": 4640,
+          "finMs": 5300
+        },
+        {
+          "palabra": "La",
+          "inicioMs": 5500,
+          "finMs": 5560
+        },
+        {
+          "palabra": "naturaleza",
+          "inicioMs": 5560,
+          "finMs": 6180
+        },
+        {
+          "palabra": "siempre",
+          "inicioMs": 6180,
+          "finMs": 6500
+        },
+        {
+          "palabra": "encuentra",
+          "inicioMs": 6500,
+          "finMs": 6880
+        },
+        {
+          "palabra": "el",
+          "inicioMs": 6880,
+          "finMs": 7020
+        },
+        {
+          "palabra": "camino",
+          "inicioMs": 7020,
+          "finMs": 7360
+        },
+        {
+          "palabra": "incluso",
+          "inicioMs": 7820,
+          "finMs": 8400
+        },
+        {
+          "palabra": "para",
+          "inicioMs": 8400,
+          "finMs": 8560
+        },
+        {
+          "palabra": "devorar",
+          "inicioMs": 8560,
+          "finMs": 8900
+        },
+        {
+          "palabra": "nuestra",
+          "inicioMs": 8900,
+          "finMs": 9280
+        },
+        {
+          "palabra": "propia",
+          "inicioMs": 9280,
+          "finMs": 9580
+        },
+        {
+          "palabra": "basura",
+          "inicioMs": 9580,
+          "finMs": 10000
+        }
+      ]
+    }
+  ]
+}

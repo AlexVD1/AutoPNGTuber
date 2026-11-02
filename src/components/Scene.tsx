@@ -14,7 +14,11 @@ import { evaluateCharacterState } from "../stickman/actionSequences";
 import { AnimatedIcon } from "./AnimatedIcon";
 import { CameraRig } from "./CameraRig";
 import { NarrativeElements } from "./NarrativeElements";
-import { ESCENARIOS_OSCUROS, NarrativeStage } from "./NarrativeStage";
+import {
+  ESCENARIOS_OSCUROS,
+  NarrativeStage,
+  NarrativeStageForeground,
+} from "./NarrativeStage";
 import { SceneObject } from "./SceneObject";
 import { Stickman } from "./Stickman";
 import { WordSubtitles } from "./WordSubtitles";
@@ -280,6 +284,8 @@ export const Scene: React.FC<SceneProps> = ({ escena }) => {
                 >
                   <Stickman
                     poseId={ev.poseId}
+                    prevPoseId={ev.prevPoseId}
+                    poseTransitionProgress={ev.poseTransitionProgress}
                     expresion={ev.expresion}
                     prop={ev.prop}
                     props={ev.props}
@@ -292,6 +298,9 @@ export const Scene: React.FC<SceneProps> = ({ escena }) => {
                     animacionEntrada={char.animacionEntrada ?? "ninguna"}
                     palabras={escena.palabras}
                     halo={halo && !isAnima && !isDiablo}
+                    proceduralMode={ev.proceduralMode}
+                    esHolograma={ev.esHolograma}
+                    colorRim={ev.colorRim}
                     overrideIsSpeaking={
                       char.habla !== undefined ? (char.habla ? undefined : false) : undefined
                     }
@@ -300,6 +309,12 @@ export const Scene: React.FC<SceneProps> = ({ escena }) => {
               );
             })}
           </div>
+
+          {/* Elementos de escenario en primer plano (capa superior a los personajes) */}
+          <NarrativeStageForeground
+            escenario={escenarioFinal}
+            frame={frame}
+          />
 
           {/* Chispas/Impacto visual cuando dos personajes u objetos interactúan */}
           {hasContactImpact && (

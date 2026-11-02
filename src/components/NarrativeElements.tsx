@@ -5,14 +5,19 @@ import {
   useCurrentFrame,
   useVideoConfig,
 } from "remotion";
-import { ElementoNarrativo } from "../types";
+import { ElementoNarrativo, PalabraTiming } from "../types";
+import { resolveTimeRangeFrames } from "../stickman/actionSequences";
 
 export interface NarrativeElementsProps {
   elementos?: ElementoNarrativo[];
+  totalFrames?: number;
+  palabras?: PalabraTiming[];
 }
 
 export const NarrativeElements: React.FC<NarrativeElementsProps> = ({
   elementos,
+  totalFrames = 210,
+  palabras,
 }) => {
   const frame = useCurrentFrame();
   const { fps } = useVideoConfig();
@@ -22,23 +27,45 @@ export const NarrativeElements: React.FC<NarrativeElementsProps> = ({
   }
 
   return (
-    <div className="absolute inset-0 pointer-events-none overflow-hidden z-20">
+    <div className="absolute inset-0 pointer-events-none overflow-hidden z-30">
       {elementos.map((el, idx) => {
+        const hasWindow =
+          el.inicioProgreso !== undefined ||
+          el.finProgreso !== undefined ||
+          el.inicioSegundos !== undefined ||
+          el.finSegundos !== undefined ||
+          el.desdePalabra !== undefined ||
+          el.hastaPalabra !== undefined;
+        const { startFrame, endFrame } = hasWindow
+          ? resolveTimeRangeFrames(el, totalFrames, fps, palabras)
+          : { startFrame: 0, endFrame: totalFrames };
+
+        if (frame < startFrame || frame > endFrame) {
+          return null;
+        }
+        const relFrame = frame - startFrame;
+
         switch (el.tipo) {
           case "speed_counter":
-            return <SpeedCounter key={idx} elemento={el} frame={frame} fps={fps} />;
+            return <SpeedCounter key={idx} elemento={el} frame={relFrame} fps={fps} />;
           case "speed_lines":
-            return <SpeedLines key={idx} elemento={el} frame={frame} />;
+            return <SpeedLines key={idx} elemento={el} frame={relFrame} />;
           case "flying_debris":
-            return <FlyingDebris key={idx} frame={frame} fps={fps} />;
+            return <FlyingDebris key={idx} frame={relFrame} fps={fps} />;
           case "giant_waves":
-            return <GiantWaves key={idx} frame={frame} />;
+            return <GiantWaves key={idx} frame={relFrame} />;
           case "shockwave_burst":
-            return <ShockwaveBurst key={idx} frame={frame} fps={fps} />;
+            return <ShockwaveBurst key={idx} frame={relFrame} fps={fps} />;
           case "orbital_peace":
-            return <OrbitalPeace key={idx} frame={frame} />;
+            return <OrbitalPeace key={idx} frame={relFrame} />;
           case "danger_vignette":
-            return <DangerVignette key={idx} frame={frame} />;
+            return <DangerVignette key={idx} frame={relFrame} />;
+          case "sparks_explosion":
+            return <SparksExplosion key={idx} elemento={el} frame={relFrame} />;
+          case "steam_vent":
+            return <SteamVent key={idx} elemento={el} frame={relFrame} />;
+          case "chemical_bubbles":
+            return <ChemicalBubbles key={idx} elemento={el} frame={relFrame} />;
           default:
             return null;
         }
@@ -437,6 +464,139 @@ const DangerVignette: React.FC<{ frame: number }> = ({ frame }) => {
           transform: `translateX(${offset}px)`,
         }}
       />
+    </div>
+  );
+};
+
+const SparksExplosion: React.FC<{
+  elemento?: ElementoNarrativo;
+  frame: number;
+}> = ({ elemento, frame }) => {
+  const cycle = frame % 30;
+  if (cycle > 22) return null;
+
+  const count = 18;
+  const burstOpacity = interpolate(cycle, [0, 5, 22], [1, 0.9, 0], {
+    extrapolateRight: "clamp",
+  });
+  const cx = 540 + (elemento?.x ?? 0);
+  const cy = 960 + (elemento?.y ?? 40);
+
+  return (
+    <div className="absolute inset-0 pointer-events-none overflow-hidden flex items-center justify-center">
+      <svg width="1080" height="1920" viewBox="0 0 1080 1920">
+        <g transform={`translate(${cx}, ${cy})`}>
+          <circle cx="0" cy="0" r={cycle * 7} fill="#FFE600" opacity={burstOpacity * 0.5} />
+          <circle cx="0" cy="0" r={cycle * 3.5} fill="#FFFFFF" opacity={burstOpacity} />
+          {Array.from({ length: count }).map((_, i) => {
+            const angle = (i * (360 / count)) * (Math.PI / 180);
+            const speed = 12 + ((i * 7) % 15);
+            const dist = cycle * speed;
+            const x = Math.cos(angle) * dist;
+            const y = Math.sin(angle) * dist;
+            const sparkLength = 10 + (i % 8);
+            const color = i % 2 === 0 ? "#FFE600" : "#F97316";
+
+            return (
+              <line
+                key={i}
+                x1={x}
+                y1={y}
+                x2={x + Math.cos(angle) * sparkLength}
+                y2={y + Math.sin(angle) * sparkLength}
+                stroke={color}
+                strokeWidth={4}
+                strokeLinecap="round"
+                opacity={burstOpacity}
+              />
+            );
+          })}
+        </g>
+      </svg>
+    </div>
+  );
+};
+
+const SteamVent: React.FC<{ elemento?: ElementoNarrativo; frame: number }> = ({
+  elemento,
+  frame,
+}) => {
+  const puffs = 10;
+  const baseX = 540 + (elemento?.x ?? 0);
+  const baseY = 960 + (elemento?.y ?? 140);
+  return (
+    <div className="absolute inset-0 pointer-events-none overflow-hidden">
+      {Array.from({ length: puffs }).map((_, i) => {
+        const offsetFrame = (frame + i * 16) % 110;
+        const progress = offsetFrame / 110;
+        const y = baseY - progress * 340;
+        const x = baseX + Math.sin(progress * 4 + i) * 35 + ((i % 5) - 2) * 28;
+        const radius = 16 + progress * 44;
+        const opacity = Math.sin(progress * Math.PI) * 0.32;
+
+        return (
+          <div
+            key={i}
+            className="absolute rounded-full bg-white blur-sm border border-slate-200"
+            style={{
+              left: x,
+              top: y,
+              width: radius * 2,
+              height: radius * 2,
+              opacity,
+              transform: "translate(-50%, -50%)",
+            }}
+          />
+        );
+      })}
+    </div>
+  );
+};
+
+const ChemicalBubbles: React.FC<{
+  elemento?: ElementoNarrativo;
+  frame: number;
+}> = ({ elemento, frame }) => {
+  const bubbleCount = 14;
+  const baseX = 540 + (elemento?.x ?? 0);
+  const baseY = 960 + (elemento?.y ?? 180);
+  return (
+    <div className="absolute inset-0 pointer-events-none overflow-hidden">
+      {Array.from({ length: bubbleCount }).map((_, i) => {
+        const offset = (frame * 3 + i * 35) % 450;
+        const progress = offset / 450;
+        const y = baseY - progress * 320;
+        const x = baseX - 90 + ((i * 29) % 180) + Math.sin(frame / 7 + i) * 14;
+        const size = 10 + ((i * 5) % 16);
+        const color = elemento?.color ?? (i % 2 === 0 ? "#10B981" : "#047857");
+        const opacity = (1 - progress) * 0.75;
+
+        return (
+          <div
+            key={i}
+            className="absolute rounded-full border-2 border-black flex items-center justify-center"
+            style={{
+              left: x,
+              top: y,
+              width: size,
+              height: size,
+              backgroundColor: color,
+              opacity,
+              boxShadow: "0 0 10px rgba(16, 185, 129, 0.6)",
+              transform: "translate(-50%, -50%)",
+            }}
+          >
+            <div
+              className="rounded-full bg-white"
+              style={{
+                width: size * 0.3,
+                height: size * 0.3,
+                transform: "translate(-25%, -25%)",
+              }}
+            />
+          </div>
+        );
+      })}
     </div>
   );
 };

@@ -1,0 +1,1605 @@
+{
+  "meta": {
+    "id": "gallina_giroscopica_ojo_fijo",
+    "slug": "gallina_giroscopica_ojo_fijo",
+    "temaResumen": "¿Por qué la cabeza de una gallina no se mueve? El steadycam de la naturaleza (Reflejo vestíbulo-ocular aviar, 14 vértebras cervicales, ojos planos sin rotación)",
+    "duracionObjetivo": [
+      62,
+      75
+    ],
+    "titulo": "¿Por qué la cabeza de una gallina no se mueve? El steadycam de la naturaleza",
+    "titulo_corto": "Gallina giroscópica",
+    "gancho": "Por más que muevas su cuerpo, ¡la cabeza de una gallina se queda cien por ciento congelada en el aire!",
+    "genero": "Biomecánica y Robótica Animal",
+    "playlist": "Ciencia Animal, Biomecánica y Curiosidades de la Naturaleza",
+    "fuentes": [
+      "Journal of Experimental Biology (Avian head bobbing and gaze stabilization mechanisms)",
+      "Mercedes-Benz Intelligent Drive Tech Analysis (Magic Body Control campaign, 2013)",
+      "Nature Neuroscience (Visual stability during head movements in birds)"
+    ]
+  },
+  "escenas": [
+    {
+      "id": 1,
+      "texto": "Por más que muevas el cuerpo de una gallina de un lado a otro... ¡su cabeza se queda cien por ciento congelada en el aire!",
+      "icono": "Bird",
+      "colorIcono": "#F59E0B",
+      "tituloVisual": "CABEZA CONGELADA",
+      "composicionVisual": "escenario_ilustrado",
+      "escenario": "granja_campo_giroscopio",
+      "layout": "narrativo",
+      "transicion": "corte",
+      "efectosCamara": [
+        "punch",
+        "drift"
+      ],
+      "sfx": "sfx/sfx_gallina_cluck_whoosh.wav",
+      "volumenSfx": 0.24,
+      "palabrasClave": [
+        "cuerpo de una gallina",
+        "congelada en el aire"
+      ],
+      "personajes": [
+        {
+          "id": "stickman_granjero",
+          "nombre": "Stickman",
+          "posicion": {
+            "x": -40,
+            "y": 90
+          },
+          "escala": 1.05,
+          "orientacion": "derecha",
+          "prop": "gallina_sostenida_giroscopica",
+          "habla": true,
+          "capaZ": 20,
+          "acciones": [
+            {
+              "tipo": "personalizada",
+              "pasos": [
+                {
+                  "inicioProgreso": 0,
+                  "finProgreso": 0.4,
+                  "poseId": "holding_both_hands",
+                  "expresion": "smile_wide",
+                  "posicion": {
+                    "x": -40,
+                    "y": 90
+                  },
+                  "curva": "suave",
+                  "procedural": "caminar"
+                },
+                {
+                  "inicioProgreso": 0.4,
+                  "finProgreso": 1.0,
+                  "poseId": "holding_both_hands",
+                  "expresion": "surprised",
+                  "posicion": {
+                    "x": 0,
+                    "y": 90
+                  },
+                  "curva": "suave",
+                  "procedural": "estatico"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "duracionSegundos": 6.178,
+      "palabras": [
+        {
+          "palabra": "Por",
+          "inicioMs": 0,
+          "finMs": 180
+        },
+        {
+          "palabra": "más",
+          "inicioMs": 180,
+          "finMs": 360
+        },
+        {
+          "palabra": "que",
+          "inicioMs": 360,
+          "finMs": 520
+        },
+        {
+          "palabra": "muevas",
+          "inicioMs": 520,
+          "finMs": 780
+        },
+        {
+          "palabra": "el",
+          "inicioMs": 780,
+          "finMs": 980
+        },
+        {
+          "palabra": "cuerpo",
+          "inicioMs": 980,
+          "finMs": 1200
+        },
+        {
+          "palabra": "de",
+          "inicioMs": 1200,
+          "finMs": 1380
+        },
+        {
+          "palabra": "una",
+          "inicioMs": 1380,
+          "finMs": 1520
+        },
+        {
+          "palabra": "gallina",
+          "inicioMs": 1520,
+          "finMs": 1880
+        },
+        {
+          "palabra": "de",
+          "inicioMs": 1880,
+          "finMs": 2000
+        },
+        {
+          "palabra": "un",
+          "inicioMs": 2000,
+          "finMs": 2100
+        },
+        {
+          "palabra": "lado",
+          "inicioMs": 2100,
+          "finMs": 2240
+        },
+        {
+          "palabra": "a",
+          "inicioMs": 2240,
+          "finMs": 2400
+        },
+        {
+          "palabra": "otro",
+          "inicioMs": 2400,
+          "finMs": 2980
+        },
+        {
+          "palabra": "su",
+          "inicioMs": 2980,
+          "finMs": 3080
+        },
+        {
+          "palabra": "cabeza",
+          "inicioMs": 3080,
+          "finMs": 3300
+        },
+        {
+          "palabra": "se",
+          "inicioMs": 3300,
+          "finMs": 3580
+        },
+        {
+          "palabra": "queda",
+          "inicioMs": 3580,
+          "finMs": 3760
+        },
+        {
+          "palabra": "cien",
+          "inicioMs": 3760,
+          "finMs": 4100
+        },
+        {
+          "palabra": "por",
+          "inicioMs": 4100,
+          "finMs": 4240
+        },
+        {
+          "palabra": "ciento",
+          "inicioMs": 4240,
+          "finMs": 4580
+        },
+        {
+          "palabra": "congelada",
+          "inicioMs": 4580,
+          "finMs": 5080
+        },
+        {
+          "palabra": "en",
+          "inicioMs": 5080,
+          "finMs": 5240
+        },
+        {
+          "palabra": "el",
+          "inicioMs": 5240,
+          "finMs": 5360
+        },
+        {
+          "palabra": "aire",
+          "inicioMs": 5360,
+          "finMs": 5580
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "texto": "Los humanos movemos los ojos dentro de sus cuencas para seguir objetos. Pero los globos oculares de las aves son casi planos y están rígidamente fijados a su cráneo: no pueden girar la mirada.",
+      "icono": "Eye",
+      "colorIcono": "#38BDF8",
+      "tituloVisual": "OJOS INMÓVILES",
+      "composicionVisual": "primer_plano",
+      "escenario": "laboratorio_optica_aviar",
+      "layout": "narrativo",
+      "transicion": "whip_right",
+      "efectosCamara": [
+        "drift"
+      ],
+      "sfx": "sfx/sfx_lupa_enfoque_ojo.wav",
+      "volumenSfx": 0.22,
+      "palabrasClave": [
+        "ojos dentro de sus cuencas",
+        "no pueden girar"
+      ],
+      "personajes": [
+        {
+          "id": "stickman_optometrista",
+          "nombre": "Stickman",
+          "posicion": {
+            "x": -180,
+            "y": 100
+          },
+          "escala": 1.05,
+          "orientacion": "derecha",
+          "prop": "lupa_gigante_arqueologia",
+          "habla": true,
+          "capaZ": 20,
+          "acciones": [
+            {
+              "tipo": "personalizada",
+              "pasos": [
+                {
+                  "inicioProgreso": 0,
+                  "finProgreso": 0.5,
+                  "poseId": "investigating_magnifier",
+                  "expresion": "analytical",
+                  "posicion": {
+                    "x": -180,
+                    "y": 100
+                  },
+                  "curva": "suave",
+                  "procedural": "estatico"
+                },
+                {
+                  "inicioProgreso": 0.5,
+                  "finProgreso": 1.0,
+                  "poseId": "explaining_pointing_up",
+                  "expresion": "eureka",
+                  "posicion": {
+                    "x": -160,
+                    "y": 100
+                  },
+                  "curva": "suave",
+                  "procedural": "estatico"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "objetos": [
+        {
+          "id": "comparativa_ojos",
+          "propId": "globo_ocular_aviar_plano_lupa",
+          "posicion": {
+            "x": 180,
+            "y": -40
+          },
+          "escala": 1.1,
+          "animacion": "pulso",
+          "capaZ": 10
+        }
+      ],
+      "duracionSegundos": 10.738,
+      "palabras": [
+        {
+          "palabra": "Los",
+          "inicioMs": 0,
+          "finMs": 240
+        },
+        {
+          "palabra": "humanos",
+          "inicioMs": 240,
+          "finMs": 600
+        },
+        {
+          "palabra": "movemos",
+          "inicioMs": 600,
+          "finMs": 1120
+        },
+        {
+          "palabra": "los",
+          "inicioMs": 1120,
+          "finMs": 1280
+        },
+        {
+          "palabra": "ojos",
+          "inicioMs": 1280,
+          "finMs": 1540
+        },
+        {
+          "palabra": "dentro",
+          "inicioMs": 1540,
+          "finMs": 1980
+        },
+        {
+          "palabra": "de",
+          "inicioMs": 1980,
+          "finMs": 2160
+        },
+        {
+          "palabra": "sus",
+          "inicioMs": 2160,
+          "finMs": 2360
+        },
+        {
+          "palabra": "cuencas",
+          "inicioMs": 2360,
+          "finMs": 2780
+        },
+        {
+          "palabra": "para",
+          "inicioMs": 2780,
+          "finMs": 3040
+        },
+        {
+          "palabra": "seguir",
+          "inicioMs": 3040,
+          "finMs": 3340
+        },
+        {
+          "palabra": "objetos",
+          "inicioMs": 3340,
+          "finMs": 3840
+        },
+        {
+          "palabra": "Pero",
+          "inicioMs": 4100,
+          "finMs": 4200
+        },
+        {
+          "palabra": "los",
+          "inicioMs": 4200,
+          "finMs": 4380
+        },
+        {
+          "palabra": "globos",
+          "inicioMs": 4380,
+          "finMs": 4680
+        },
+        {
+          "palabra": "oculares",
+          "inicioMs": 4680,
+          "finMs": 5080
+        },
+        {
+          "palabra": "de",
+          "inicioMs": 5080,
+          "finMs": 5200
+        },
+        {
+          "palabra": "las",
+          "inicioMs": 5200,
+          "finMs": 5340
+        },
+        {
+          "palabra": "aves",
+          "inicioMs": 5340,
+          "finMs": 5560
+        },
+        {
+          "palabra": "son",
+          "inicioMs": 5560,
+          "finMs": 5740
+        },
+        {
+          "palabra": "casi",
+          "inicioMs": 5740,
+          "finMs": 5980
+        },
+        {
+          "palabra": "planos",
+          "inicioMs": 5980,
+          "finMs": 6400
+        },
+        {
+          "palabra": "y",
+          "inicioMs": 6400,
+          "finMs": 6520
+        },
+        {
+          "palabra": "están",
+          "inicioMs": 6520,
+          "finMs": 6720
+        },
+        {
+          "palabra": "rígidamente",
+          "inicioMs": 6720,
+          "finMs": 7280
+        },
+        {
+          "palabra": "fijados",
+          "inicioMs": 7280,
+          "finMs": 7840
+        },
+        {
+          "palabra": "a",
+          "inicioMs": 7840,
+          "finMs": 7980
+        },
+        {
+          "palabra": "su",
+          "inicioMs": 7980,
+          "finMs": 8080
+        },
+        {
+          "palabra": "cráneo",
+          "inicioMs": 8080,
+          "finMs": 8420
+        },
+        {
+          "palabra": "no",
+          "inicioMs": 8740,
+          "finMs": 8880
+        },
+        {
+          "palabra": "pueden",
+          "inicioMs": 8880,
+          "finMs": 9140
+        },
+        {
+          "palabra": "girar",
+          "inicioMs": 9140,
+          "finMs": 9420
+        },
+        {
+          "palabra": "la",
+          "inicioMs": 9420,
+          "finMs": 9540
+        },
+        {
+          "palabra": "mirada",
+          "inicioMs": 9540,
+          "finMs": 9880
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "texto": "Si caminaran balanceando la cabeza como nosotros, su campo visual se convertiría en un borrón incontrolable. Quedarían ciegas y no podrían distinguir una sola semilla en el suelo.",
+      "icono": "ScanLine",
+      "colorIcono": "#EF4444",
+      "tituloVisual": "VISIÓN BORROSA",
+      "composicionVisual": "escenario_ilustrado",
+      "escenario": "suelo_semillas_desenfoque",
+      "layout": "narrativo",
+      "transicion": "flash",
+      "efectosCamara": [
+        "shake",
+        "drift"
+      ],
+      "sfx": "sfx/sfx_mareo_motion_blur.wav",
+      "volumenSfx": 0.25,
+      "palabrasClave": [
+        "borrón incontrolable",
+        "quedarían ciegas",
+        "semilla en el suelo"
+      ],
+      "personajes": [
+        {
+          "id": "stickman_mareado",
+          "nombre": "Stickman",
+          "posicion": {
+            "x": -140,
+            "y": 120
+          },
+          "escala": 1.0,
+          "orientacion": "derecha",
+          "prop": "stickman_ojos_mareo_espiral",
+          "habla": true,
+          "capaZ": 20,
+          "acciones": [
+            {
+              "tipo": "personalizada",
+              "pasos": [
+                {
+                  "inicioProgreso": 0,
+                  "finProgreso": 0.5,
+                  "poseId": "scratching_head",
+                  "expresion": "confused",
+                  "posicion": {
+                    "x": -140,
+                    "y": 120
+                  },
+                  "curva": "suave",
+                  "procedural": "temblar"
+                },
+                {
+                  "inicioProgreso": 0.5,
+                  "finProgreso": 1.0,
+                  "poseId": "covering_eyes",
+                  "expresion": "shocked",
+                  "posicion": {
+                    "x": -120,
+                    "y": 120
+                  },
+                  "curva": "impacto",
+                  "procedural": "temblar"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "objetos": [
+        {
+          "id": "semillas_suelo",
+          "propId": "vision_borrosa_semillas_maiz",
+          "posicion": {
+            "x": 190,
+            "y": 180
+          },
+          "escala": 1.25,
+          "animacion": "vibrar",
+          "capaZ": 10
+        }
+      ],
+      "duracionSegundos": 9.154,
+      "palabras": [
+        {
+          "palabra": "Si",
+          "inicioMs": 0,
+          "finMs": 160
+        },
+        {
+          "palabra": "caminaran",
+          "inicioMs": 160,
+          "finMs": 600
+        },
+        {
+          "palabra": "balanceando",
+          "inicioMs": 600,
+          "finMs": 1100
+        },
+        {
+          "palabra": "la",
+          "inicioMs": 1100,
+          "finMs": 1240
+        },
+        {
+          "palabra": "cabeza",
+          "inicioMs": 1240,
+          "finMs": 1420
+        },
+        {
+          "palabra": "como",
+          "inicioMs": 1420,
+          "finMs": 1700
+        },
+        {
+          "palabra": "nosotros",
+          "inicioMs": 1700,
+          "finMs": 2100
+        },
+        {
+          "palabra": "su",
+          "inicioMs": 2300,
+          "finMs": 2380
+        },
+        {
+          "palabra": "campo",
+          "inicioMs": 2380,
+          "finMs": 2600
+        },
+        {
+          "palabra": "visual",
+          "inicioMs": 2600,
+          "finMs": 2860
+        },
+        {
+          "palabra": "se",
+          "inicioMs": 2860,
+          "finMs": 3080
+        },
+        {
+          "palabra": "convertiría",
+          "inicioMs": 3080,
+          "finMs": 3640
+        },
+        {
+          "palabra": "en",
+          "inicioMs": 3640,
+          "finMs": 3720
+        },
+        {
+          "palabra": "un",
+          "inicioMs": 3720,
+          "finMs": 3820
+        },
+        {
+          "palabra": "borrón",
+          "inicioMs": 3820,
+          "finMs": 4060
+        },
+        {
+          "palabra": "incontrolable",
+          "inicioMs": 4060,
+          "finMs": 4800
+        },
+        {
+          "palabra": "Quedarían",
+          "inicioMs": 5100,
+          "finMs": 5540
+        },
+        {
+          "palabra": "ciegas",
+          "inicioMs": 5540,
+          "finMs": 5940
+        },
+        {
+          "palabra": "y",
+          "inicioMs": 5940,
+          "finMs": 6100
+        },
+        {
+          "palabra": "no",
+          "inicioMs": 6100,
+          "finMs": 6220
+        },
+        {
+          "palabra": "podrían",
+          "inicioMs": 6220,
+          "finMs": 6580
+        },
+        {
+          "palabra": "distinguir",
+          "inicioMs": 6580,
+          "finMs": 7120
+        },
+        {
+          "palabra": "una",
+          "inicioMs": 7120,
+          "finMs": 7360
+        },
+        {
+          "palabra": "sola",
+          "inicioMs": 7360,
+          "finMs": 7600
+        },
+        {
+          "palabra": "semilla",
+          "inicioMs": 7600,
+          "finMs": 8020
+        },
+        {
+          "palabra": "en",
+          "inicioMs": 8020,
+          "finMs": 8120
+        },
+        {
+          "palabra": "el",
+          "inicioMs": 8120,
+          "finMs": 8240
+        },
+        {
+          "palabra": "suelo",
+          "inicioMs": 8240,
+          "finMs": 8560
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "texto": "¿Y por qué cabecean al caminar? No es por ritmo: dividen cada paso en una fase de avance y una fase de congelamiento, manteniendo la cabeza inmóvil en el aire mientras el cuerpo avanza por debajo.",
+      "icono": "Footprints",
+      "colorIcono": "#3B82F6",
+      "tituloVisual": "EL CABECEO REAL",
+      "composicionVisual": "escenario_ilustrado",
+      "escenario": "pista_caminata_experimento",
+      "layout": "narrativo",
+      "transicion": "whip_left",
+      "efectosCamara": [
+        "drift"
+      ],
+      "sfx": "sfx/sfx_pasos_cabeceo_bobbing.wav",
+      "volumenSfx": 0.24,
+      "palabrasClave": [
+        "por qué cabecean",
+        "fase de congelamiento",
+        "cabeza inmóvil"
+      ],
+      "personajes": [
+        {
+          "id": "stickman_observador",
+          "nombre": "Stickman",
+          "posicion": {
+            "x": -180,
+            "y": 100
+          },
+          "escala": 1.0,
+          "orientacion": "derecha",
+          "habla": true,
+          "capaZ": 20,
+          "acciones": [
+            {
+              "tipo": "personalizada",
+              "pasos": [
+                {
+                  "inicioProgreso": 0,
+                  "finProgreso": 0.5,
+                  "poseId": "investigating_magnifier",
+                  "expresion": "analytical",
+                  "posicion": {
+                    "x": -180,
+                    "y": 100
+                  },
+                  "curva": "suave",
+                  "procedural": "caminar"
+                },
+                {
+                  "inicioProgreso": 0.5,
+                  "finProgreso": 1.0,
+                  "poseId": "pointing_right",
+                  "expresion": "eureka",
+                  "posicion": {
+                    "x": -150,
+                    "y": 100
+                  },
+                  "curva": "suave",
+                  "procedural": "estatico"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "objetos": [
+        {
+          "id": "cabeceo_thrust_hold",
+          "propId": "gallina_cabeceo_thrust_hold",
+          "posicion": {
+            "x": 160,
+            "y": 20
+          },
+          "escala": 1.25,
+          "animacion": "flotar",
+          "capaZ": 10
+        }
+      ],
+      "duracionSegundos": 10.258,
+      "palabras": [
+        {
+          "palabra": "Y",
+          "inicioMs": 0,
+          "finMs": 100
+        },
+        {
+          "palabra": "por",
+          "inicioMs": 100,
+          "finMs": 240
+        },
+        {
+          "palabra": "qué",
+          "inicioMs": 240,
+          "finMs": 440
+        },
+        {
+          "palabra": "cabecean",
+          "inicioMs": 440,
+          "finMs": 880
+        },
+        {
+          "palabra": "al",
+          "inicioMs": 880,
+          "finMs": 980
+        },
+        {
+          "palabra": "caminar",
+          "inicioMs": 980,
+          "finMs": 1340
+        },
+        {
+          "palabra": "No",
+          "inicioMs": 1560,
+          "finMs": 1660
+        },
+        {
+          "palabra": "es",
+          "inicioMs": 1660,
+          "finMs": 1800
+        },
+        {
+          "palabra": "por",
+          "inicioMs": 1800,
+          "finMs": 1960
+        },
+        {
+          "palabra": "ritmo",
+          "inicioMs": 1960,
+          "finMs": 2340
+        },
+        {
+          "palabra": "dividen",
+          "inicioMs": 2540,
+          "finMs": 2840
+        },
+        {
+          "palabra": "cada",
+          "inicioMs": 2840,
+          "finMs": 3100
+        },
+        {
+          "palabra": "paso",
+          "inicioMs": 3100,
+          "finMs": 3500
+        },
+        {
+          "palabra": "en",
+          "inicioMs": 3500,
+          "finMs": 3620
+        },
+        {
+          "palabra": "una",
+          "inicioMs": 3620,
+          "finMs": 3760
+        },
+        {
+          "palabra": "fase",
+          "inicioMs": 3760,
+          "finMs": 4020
+        },
+        {
+          "palabra": "de",
+          "inicioMs": 4020,
+          "finMs": 4180
+        },
+        {
+          "palabra": "avance",
+          "inicioMs": 4180,
+          "finMs": 4520
+        },
+        {
+          "palabra": "y",
+          "inicioMs": 4520,
+          "finMs": 4680
+        },
+        {
+          "palabra": "una",
+          "inicioMs": 4680,
+          "finMs": 4800
+        },
+        {
+          "palabra": "fase",
+          "inicioMs": 4800,
+          "finMs": 5080
+        },
+        {
+          "palabra": "de",
+          "inicioMs": 5080,
+          "finMs": 5220
+        },
+        {
+          "palabra": "congelamiento",
+          "inicioMs": 5220,
+          "finMs": 5980
+        },
+        {
+          "palabra": "manteniendo",
+          "inicioMs": 6220,
+          "finMs": 6660
+        },
+        {
+          "palabra": "la",
+          "inicioMs": 6660,
+          "finMs": 6780
+        },
+        {
+          "palabra": "cabeza",
+          "inicioMs": 6780,
+          "finMs": 6980
+        },
+        {
+          "palabra": "inmóvil",
+          "inicioMs": 6980,
+          "finMs": 7460
+        },
+        {
+          "palabra": "en",
+          "inicioMs": 7460,
+          "finMs": 7620
+        },
+        {
+          "palabra": "el",
+          "inicioMs": 7620,
+          "finMs": 7700
+        },
+        {
+          "palabra": "aire",
+          "inicioMs": 7700,
+          "finMs": 7900
+        },
+        {
+          "palabra": "mientras",
+          "inicioMs": 7900,
+          "finMs": 8200
+        },
+        {
+          "palabra": "el",
+          "inicioMs": 8200,
+          "finMs": 8400
+        },
+        {
+          "palabra": "cuerpo",
+          "inicioMs": 8400,
+          "finMs": 8560
+        },
+        {
+          "palabra": "avanza",
+          "inicioMs": 8560,
+          "finMs": 9020
+        },
+        {
+          "palabra": "por",
+          "inicioMs": 9020,
+          "finMs": 9240
+        },
+        {
+          "palabra": "debajo",
+          "inicioMs": 9240,
+          "finMs": 9620
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "texto": "Para resolverlo, la evolución equipó su cuello con hasta catorce vértebras cervicales ultraflexibles, el doble que una jirafa. Cada músculo actúa como un amortiguador hidráulico milimétrico.",
+      "icono": "Activity",
+      "colorIcono": "#10B981",
+      "tituloVisual": "14 VÉRTEBRAS",
+      "composicionVisual": "cifras_concepto",
+      "escenario": "diagrama_cuello_resorte_mecanico",
+      "layout": "narrativo",
+      "transicion": "whip_right",
+      "efectosCamara": [
+        "drift"
+      ],
+      "sfx": "sfx/sfx_resorte_hidraulico_cuello.wav",
+      "volumenSfx": 0.23,
+      "palabrasClave": [
+        "catorce vértebras",
+        "doble que una jirafa",
+        "amortiguador hidráulico"
+      ],
+      "personajes": [
+        {
+          "id": "stickman_profesor",
+          "nombre": "Stickman",
+          "posicion": {
+            "x": -220,
+            "y": 100
+          },
+          "escala": 1.0,
+          "orientacion": "derecha",
+          "prop": "puntero_laser_verde",
+          "habla": true,
+          "capaZ": 20,
+          "acciones": [
+            {
+              "tipo": "personalizada",
+              "pasos": [
+                {
+                  "inicioProgreso": 0,
+                  "finProgreso": 0.5,
+                  "poseId": "pointing_right",
+                  "expresion": "talking_enthusiastic",
+                  "posicion": {
+                    "x": -220,
+                    "y": 100
+                  },
+                  "curva": "suave",
+                  "procedural": "estatico"
+                },
+                {
+                  "inicioProgreso": 0.5,
+                  "finProgreso": 1.0,
+                  "poseId": "explaining_both_hands",
+                  "expresion": "eureka",
+                  "posicion": {
+                    "x": -180,
+                    "y": 100
+                  },
+                  "curva": "suave",
+                  "procedural": "estatico"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "objetos": [
+        {
+          "id": "diagrama_vertebras",
+          "propId": "diagrama_14_vertebras_resorte",
+          "posicion": {
+            "x": 160,
+            "y": -60
+          },
+          "escala": 1.15,
+          "animacion": "pulso",
+          "capaZ": 10
+        }
+      ],
+      "duracionSegundos": 10.642,
+      "palabras": [
+        {
+          "palabra": "Para",
+          "inicioMs": 0,
+          "finMs": 160
+        },
+        {
+          "palabra": "resolverlo",
+          "inicioMs": 160,
+          "finMs": 800
+        },
+        {
+          "palabra": "la",
+          "inicioMs": 860,
+          "finMs": 940
+        },
+        {
+          "palabra": "evolución",
+          "inicioMs": 940,
+          "finMs": 1340
+        },
+        {
+          "palabra": "equipó",
+          "inicioMs": 1340,
+          "finMs": 1720
+        },
+        {
+          "palabra": "su",
+          "inicioMs": 1720,
+          "finMs": 1840
+        },
+        {
+          "palabra": "cuello",
+          "inicioMs": 1840,
+          "finMs": 2120
+        },
+        {
+          "palabra": "con",
+          "inicioMs": 2120,
+          "finMs": 2280
+        },
+        {
+          "palabra": "hasta",
+          "inicioMs": 2280,
+          "finMs": 2480
+        },
+        {
+          "palabra": "catorce",
+          "inicioMs": 2480,
+          "finMs": 2980
+        },
+        {
+          "palabra": "vértebras",
+          "inicioMs": 2980,
+          "finMs": 3440
+        },
+        {
+          "palabra": "cervicales",
+          "inicioMs": 3440,
+          "finMs": 4100
+        },
+        {
+          "palabra": "ultraflexibles",
+          "inicioMs": 4100,
+          "finMs": 5060
+        },
+        {
+          "palabra": "el",
+          "inicioMs": 5320,
+          "finMs": 5500
+        },
+        {
+          "palabra": "doble",
+          "inicioMs": 5500,
+          "finMs": 5760
+        },
+        {
+          "palabra": "que",
+          "inicioMs": 5760,
+          "finMs": 5880
+        },
+        {
+          "palabra": "una",
+          "inicioMs": 5880,
+          "finMs": 6000
+        },
+        {
+          "palabra": "jirafa",
+          "inicioMs": 6000,
+          "finMs": 6460
+        },
+        {
+          "palabra": "Cada",
+          "inicioMs": 6700,
+          "finMs": 6880
+        },
+        {
+          "palabra": "músculo",
+          "inicioMs": 6880,
+          "finMs": 7240
+        },
+        {
+          "palabra": "actúa",
+          "inicioMs": 7240,
+          "finMs": 7700
+        },
+        {
+          "palabra": "como",
+          "inicioMs": 7700,
+          "finMs": 7960
+        },
+        {
+          "palabra": "un",
+          "inicioMs": 7960,
+          "finMs": 8140
+        },
+        {
+          "palabra": "amortiguador",
+          "inicioMs": 8140,
+          "finMs": 8780
+        },
+        {
+          "palabra": "hidráulico",
+          "inicioMs": 8780,
+          "finMs": 9360
+        },
+        {
+          "palabra": "milimétrico",
+          "inicioMs": 9360,
+          "finMs": 9980
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "texto": "Es un diseño biomecánico tan perfecto que los ingenieros automotrices filmaron gallinas para inventar las suspensiones activas de autos de lujo y los gimbals de cine profesional.",
+      "icono": "Camera",
+      "colorIcono": "#6366F1",
+      "tituloVisual": "TECNOLOGÍA COPIADA",
+      "composicionVisual": "escenario_ilustrado",
+      "escenario": "estudio_ingenieria_steadycam_auto",
+      "layout": "narrativo",
+      "transicion": "zoom_in",
+      "efectosCamara": [
+        "punch",
+        "drift"
+      ],
+      "sfx": "sfx/sfx_gimbal_servo_auto.wav",
+      "volumenSfx": 0.24,
+      "palabrasClave": [
+        "diseño biomecánico",
+        "suspensiones activas",
+        "gimbals de cine"
+      ],
+      "personajes": [
+        {
+          "id": "stickman_cineasta",
+          "nombre": "Stickman",
+          "posicion": {
+            "x": -200,
+            "y": 100
+          },
+          "escala": 1.0,
+          "orientacion": "derecha",
+          "prop": "camara_tripode_visor_lcd",
+          "habla": true,
+          "capaZ": 20,
+          "acciones": [
+            {
+              "tipo": "personalizada",
+              "pasos": [
+                {
+                  "inicioProgreso": 0,
+                  "finProgreso": 0.5,
+                  "poseId": "showing_both_hands",
+                  "expresion": "proud",
+                  "posicion": {
+                    "x": -200,
+                    "y": 100
+                  },
+                  "curva": "suave",
+                  "procedural": "estatico"
+                },
+                {
+                  "inicioProgreso": 0.5,
+                  "finProgreso": 1.0,
+                  "poseId": "thumbs_up_approval",
+                  "expresion": "smile_wide",
+                  "posicion": {
+                    "x": -180,
+                    "y": 100
+                  },
+                  "curva": "suave",
+                  "procedural": "estatico"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "objetos": [
+        {
+          "id": "gimbal_pro",
+          "propId": "steadycam_gimbal_cine_auto",
+          "posicion": {
+            "x": 180,
+            "y": -40
+          },
+          "escala": 1.15,
+          "animacion": "flotar",
+          "capaZ": 10
+        }
+      ],
+      "duracionSegundos": 9.394,
+      "palabras": [
+        {
+          "palabra": "Es",
+          "inicioMs": 0,
+          "finMs": 200
+        },
+        {
+          "palabra": "un",
+          "inicioMs": 200,
+          "finMs": 320
+        },
+        {
+          "palabra": "diseño",
+          "inicioMs": 320,
+          "finMs": 640
+        },
+        {
+          "palabra": "biomecánico",
+          "inicioMs": 640,
+          "finMs": 1200
+        },
+        {
+          "palabra": "tan",
+          "inicioMs": 1200,
+          "finMs": 1400
+        },
+        {
+          "palabra": "perfecto",
+          "inicioMs": 1400,
+          "finMs": 1940
+        },
+        {
+          "palabra": "que",
+          "inicioMs": 1940,
+          "finMs": 2020
+        },
+        {
+          "palabra": "los",
+          "inicioMs": 2020,
+          "finMs": 2160
+        },
+        {
+          "palabra": "ingenieros",
+          "inicioMs": 2160,
+          "finMs": 2620
+        },
+        {
+          "palabra": "automotrices",
+          "inicioMs": 2620,
+          "finMs": 3200
+        },
+        {
+          "palabra": "filmaron",
+          "inicioMs": 3200,
+          "finMs": 3680
+        },
+        {
+          "palabra": "gallinas",
+          "inicioMs": 3680,
+          "finMs": 4120
+        },
+        {
+          "palabra": "para",
+          "inicioMs": 4120,
+          "finMs": 4300
+        },
+        {
+          "palabra": "inventar",
+          "inicioMs": 4300,
+          "finMs": 4640
+        },
+        {
+          "palabra": "las",
+          "inicioMs": 4640,
+          "finMs": 4760
+        },
+        {
+          "palabra": "suspensiones",
+          "inicioMs": 4760,
+          "finMs": 5520
+        },
+        {
+          "palabra": "activas",
+          "inicioMs": 5520,
+          "finMs": 6380
+        },
+        {
+          "palabra": "de",
+          "inicioMs": 6380,
+          "finMs": 6500
+        },
+        {
+          "palabra": "autos",
+          "inicioMs": 6500,
+          "finMs": 6840
+        },
+        {
+          "palabra": "de",
+          "inicioMs": 6840,
+          "finMs": 6940
+        },
+        {
+          "palabra": "lujo",
+          "inicioMs": 6940,
+          "finMs": 7300
+        },
+        {
+          "palabra": "y",
+          "inicioMs": 7300,
+          "finMs": 7400
+        },
+        {
+          "palabra": "los",
+          "inicioMs": 7400,
+          "finMs": 7560
+        },
+        {
+          "palabra": "gimbals",
+          "inicioMs": 7560,
+          "finMs": 7920
+        },
+        {
+          "palabra": "de",
+          "inicioMs": 7920,
+          "finMs": 8040
+        },
+        {
+          "palabra": "cine",
+          "inicioMs": 8040,
+          "finMs": 8180
+        },
+        {
+          "palabra": "profesional",
+          "inicioMs": 8180,
+          "finMs": 8660
+        }
+      ]
+    },
+    {
+      "id": 7,
+      "texto": "La próxima vez que veas una gallina en el campo, no te burles de sus movimientos: estás viendo el estabilizador de cámara más avanzado del planeta Tierra.",
+      "icono": "Sparkles",
+      "colorIcono": "#F59E0B",
+      "tituloVisual": "ESTABILIZADOR VIVO",
+      "composicionVisual": "plano_general",
+      "escenario": "granja_campo_atardecer_cierre",
+      "layout": "narrativo",
+      "transicion": "whip_right",
+      "efectosCamara": [
+        "drift"
+      ],
+      "sfx": "sfx/sfx_cierre_triunfal_gallina.wav",
+      "volumenSfx": 0.25,
+      "palabrasClave": [
+        "no te burles",
+        "estabilizador de cámara",
+        "planeta Tierra"
+      ],
+      "personajes": [
+        {
+          "id": "stickman_final",
+          "nombre": "Stickman",
+          "posicion": {
+            "x": -140,
+            "y": 100
+          },
+          "escala": 1.05,
+          "orientacion": "derecha",
+          "habla": true,
+          "capaZ": 20,
+          "acciones": [
+            {
+              "tipo": "personalizada",
+              "pasos": [
+                {
+                  "inicioProgreso": 0,
+                  "finProgreso": 0.5,
+                  "poseId": "pointing_at_viewer",
+                  "expresion": "smile_wide",
+                  "posicion": {
+                    "x": -140,
+                    "y": 100
+                  },
+                  "curva": "suave",
+                  "procedural": "estatico"
+                },
+                {
+                  "inicioProgreso": 0.5,
+                  "finProgreso": 1.0,
+                  "poseId": "celebrating_arms_up",
+                  "expresion": "talking_enthusiastic",
+                  "posicion": {
+                    "x": -120,
+                    "y": 100
+                  },
+                  "curva": "suave",
+                  "procedural": "caminar"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "objetos": [
+        {
+          "id": "gallina_trofeo",
+          "propId": "gallina_campeona_trofeo",
+          "posicion": {
+            "x": 160,
+            "y": 40
+          },
+          "escala": 1.25,
+          "animacion": "pulso",
+          "capaZ": 10
+        }
+      ],
+      "duracionSegundos": 7.978,
+      "palabras": [
+        {
+          "palabra": "La",
+          "inicioMs": 0,
+          "finMs": 180
+        },
+        {
+          "palabra": "próxima",
+          "inicioMs": 180,
+          "finMs": 560
+        },
+        {
+          "palabra": "vez",
+          "inicioMs": 560,
+          "finMs": 800
+        },
+        {
+          "palabra": "que",
+          "inicioMs": 800,
+          "finMs": 980
+        },
+        {
+          "palabra": "veas",
+          "inicioMs": 980,
+          "finMs": 1200
+        },
+        {
+          "palabra": "una",
+          "inicioMs": 1200,
+          "finMs": 1340
+        },
+        {
+          "palabra": "gallina",
+          "inicioMs": 1340,
+          "finMs": 1660
+        },
+        {
+          "palabra": "en",
+          "inicioMs": 1660,
+          "finMs": 1760
+        },
+        {
+          "palabra": "el",
+          "inicioMs": 1760,
+          "finMs": 1860
+        },
+        {
+          "palabra": "campo",
+          "inicioMs": 1860,
+          "finMs": 2160
+        },
+        {
+          "palabra": "no",
+          "inicioMs": 2360,
+          "finMs": 2440
+        },
+        {
+          "palabra": "te",
+          "inicioMs": 2440,
+          "finMs": 2560
+        },
+        {
+          "palabra": "burles",
+          "inicioMs": 2560,
+          "finMs": 2840
+        },
+        {
+          "palabra": "de",
+          "inicioMs": 2840,
+          "finMs": 2980
+        },
+        {
+          "palabra": "sus",
+          "inicioMs": 2980,
+          "finMs": 3140
+        },
+        {
+          "palabra": "movimientos",
+          "inicioMs": 3140,
+          "finMs": 3720
+        },
+        {
+          "palabra": "estás",
+          "inicioMs": 4000,
+          "finMs": 4220
+        },
+        {
+          "palabra": "viendo",
+          "inicioMs": 4220,
+          "finMs": 4460
+        },
+        {
+          "palabra": "el",
+          "inicioMs": 4460,
+          "finMs": 4620
+        },
+        {
+          "palabra": "estabilizador",
+          "inicioMs": 4620,
+          "finMs": 5200
+        },
+        {
+          "palabra": "de",
+          "inicioMs": 5200,
+          "finMs": 5360
+        },
+        {
+          "palabra": "cámara",
+          "inicioMs": 5360,
+          "finMs": 5580
+        },
+        {
+          "palabra": "más",
+          "inicioMs": 5580,
+          "finMs": 5860
+        },
+        {
+          "palabra": "avanzado",
+          "inicioMs": 5860,
+          "finMs": 6320
+        },
+        {
+          "palabra": "del",
+          "inicioMs": 6320,
+          "finMs": 6480
+        },
+        {
+          "palabra": "planeta",
+          "inicioMs": 6480,
+          "finMs": 6760
+        },
+        {
+          "palabra": "Tierra",
+          "inicioMs": 6760,
+          "finMs": 7180
+        }
+      ]
+    }
+  ]
+}

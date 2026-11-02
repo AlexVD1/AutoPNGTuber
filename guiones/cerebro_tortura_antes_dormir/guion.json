@@ -1,0 +1,1697 @@
+{
+  "meta": {
+    "id": "cerebro_tortura_antes_dormir",
+    "slug": "cerebro_tortura_antes_dormir",
+    "temaResumen": "Por qué tu cerebro te tortura antes de dormir: la corteza prefrontal se apaga por fatiga, la amígdala activa falsas alarmas ancestrales y cómo desactivar la rumiación nocturna",
+    "duracionObjetivo": [
+      62,
+      76
+    ],
+    "titulo": "Por qué tu cerebro te tortura antes de dormir",
+    "titulo_corto": "El dilema de la noche",
+    "gancho": "Justo cuando te acuestas y cierras los ojos para descansar, tu mente enciende un proyector gigante recordándote esa frase vergonzosa que dijiste hace ocho años.",
+    "genero": "Neurociencia y Psicología Evolutiva",
+    "playlist": "Secretos del Cerebro y Conducta Humana",
+    "fuentes": [
+      "Matthew Walker (2017) - Why We Sleep: Unlocking the Power of Sleep and Dreams",
+      "Harvard Medical School (2020) - Sleep and Mental Health: Prefrontal Cortex and Amygdala Dysregulation",
+      "Joseph LeDoux (1996) - The Emotional Brain: The Mysterious Underpinnings of Emotional Life",
+      "Nature Neuroscience (2007) - The Human Prefrontal Cortex and Emotional Regulation"
+    ]
+  },
+  "escenas": [
+    {
+      "id": 1,
+      "texto": "Justo cuando te acuestas y cierras los ojos para descansar, tu mente enciende un proyector gigante recordándote esa frase vergonzosa que dijiste hace ocho años. ¿Por qué ocurre esto?",
+      "icono": "Brain",
+      "colorIcono": "#38BDF8",
+      "tituloVisual": "RECUERDOS A LAS 3 AM",
+      "composicionVisual": "plano_general",
+      "escenario": "habitacion_noche_proyector_recuerdos",
+      "layout": "narrativo",
+      "transicion": "corte",
+      "efectosCamara": [
+        "punch",
+        "drift"
+      ],
+      "sfx": "sfx/sfx_suspiro_proyector_cine_risas.wav",
+      "volumenSfx": 0.22,
+      "palabrasClave": [
+        "acuestas",
+        "ojos",
+        "mente",
+        "proyector",
+        "vergonzosa",
+        "años"
+      ],
+      "personajes": [
+        {
+          "id": "stickman_cama",
+          "nombre": "Stickman en Cama",
+          "posicion": {
+            "x": -160,
+            "y": 80
+          },
+          "escala": 1,
+          "orientacion": "derecha",
+          "acciones": [
+            {
+              "tipo": "personalizada",
+              "pasos": [
+                {
+                  "inicioProgreso": 0,
+                  "finProgreso": 0.35,
+                  "poseId": "sitting",
+                  "expresion": "exhausted",
+                  "posicion": {
+                    "x": -160,
+                    "y": 80
+                  },
+                  "curva": "suave",
+                  "procedural": "estatico"
+                },
+                {
+                  "inicioProgreso": 0.35,
+                  "finProgreso": 0.65,
+                  "poseId": "shock_explosion",
+                  "expresion": "shocked",
+                  "posicion": {
+                    "x": -140,
+                    "y": 60
+                  },
+                  "curva": "impacto",
+                  "procedural": "temblar"
+                },
+                {
+                  "inicioProgreso": 0.65,
+                  "finProgreso": 1,
+                  "poseId": "covering_mouth",
+                  "expresion": "embarrassed",
+                  "posicion": {
+                    "x": -140,
+                    "y": 70
+                  },
+                  "curva": "suave",
+                  "procedural": "estatico"
+                }
+              ]
+            }
+          ],
+          "habla": false,
+          "capaZ": 10
+        }
+      ],
+      "objetos": [
+        {
+          "id": "proyector_recuerdos_cine",
+          "propId": "proyector_cine_holografico",
+          "posicion": {
+            "x": 220,
+            "y": -40
+          },
+          "escala": 1.25,
+          "animacion": "flotar",
+          "capaZ": 15
+        }
+      ],
+      "duracionSegundos": 9.658,
+      "palabras": [
+        {
+          "palabra": "Justo",
+          "inicioMs": 0,
+          "finMs": 400
+        },
+        {
+          "palabra": "cuando",
+          "inicioMs": 400,
+          "finMs": 560
+        },
+        {
+          "palabra": "te",
+          "inicioMs": 560,
+          "finMs": 740
+        },
+        {
+          "palabra": "acuestas",
+          "inicioMs": 740,
+          "finMs": 1000
+        },
+        {
+          "palabra": "y",
+          "inicioMs": 1000,
+          "finMs": 1280
+        },
+        {
+          "palabra": "cierras",
+          "inicioMs": 1280,
+          "finMs": 1540
+        },
+        {
+          "palabra": "los",
+          "inicioMs": 1540,
+          "finMs": 1700
+        },
+        {
+          "palabra": "ojos",
+          "inicioMs": 1700,
+          "finMs": 1900
+        },
+        {
+          "palabra": "para",
+          "inicioMs": 1900,
+          "finMs": 2160
+        },
+        {
+          "palabra": "descansar",
+          "inicioMs": 2160,
+          "finMs": 2740
+        },
+        {
+          "palabra": "tu",
+          "inicioMs": 2980,
+          "finMs": 3080
+        },
+        {
+          "palabra": "mente",
+          "inicioMs": 3080,
+          "finMs": 3220
+        },
+        {
+          "palabra": "enciende",
+          "inicioMs": 3220,
+          "finMs": 3680
+        },
+        {
+          "palabra": "un",
+          "inicioMs": 3680,
+          "finMs": 3800
+        },
+        {
+          "palabra": "proyector",
+          "inicioMs": 3800,
+          "finMs": 4220
+        },
+        {
+          "palabra": "gigante",
+          "inicioMs": 4220,
+          "finMs": 4680
+        },
+        {
+          "palabra": "recordándote",
+          "inicioMs": 4680,
+          "finMs": 5400
+        },
+        {
+          "palabra": "esa",
+          "inicioMs": 5400,
+          "finMs": 5600
+        },
+        {
+          "palabra": "frase",
+          "inicioMs": 5600,
+          "finMs": 5780
+        },
+        {
+          "palabra": "vergonzosa",
+          "inicioMs": 5780,
+          "finMs": 6380
+        },
+        {
+          "palabra": "que",
+          "inicioMs": 6380,
+          "finMs": 6540
+        },
+        {
+          "palabra": "dijiste",
+          "inicioMs": 6540,
+          "finMs": 6900
+        },
+        {
+          "palabra": "hace",
+          "inicioMs": 6900,
+          "finMs": 7040
+        },
+        {
+          "palabra": "ocho",
+          "inicioMs": 7040,
+          "finMs": 7300
+        },
+        {
+          "palabra": "años",
+          "inicioMs": 7300,
+          "finMs": 7560
+        },
+        {
+          "palabra": "Por",
+          "inicioMs": 7940,
+          "finMs": 8040
+        },
+        {
+          "palabra": "qué",
+          "inicioMs": 8040,
+          "finMs": 8200
+        },
+        {
+          "palabra": "ocurre",
+          "inicioMs": 8200,
+          "finMs": 8580
+        },
+        {
+          "palabra": "esto",
+          "inicioMs": 8580,
+          "finMs": 8880
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "texto": "Todo el día, tu corteza prefrontal censura pensamientos absurdos. Pero tras dieciséis horas tomando decisiones complejas, este filtro racional agota su energía y se va a dormir antes que tú.",
+      "icono": "ShieldAlert",
+      "colorIcono": "#818CF8",
+      "tituloVisual": "FILTRO APAGADO",
+      "composicionVisual": "plano_general",
+      "escenario": "sala_control_corteza_prefrontal",
+      "layout": "narrativo",
+      "transicion": "zoom_in",
+      "efectosCamara": [
+        "drift"
+      ],
+      "sfx": "sfx/sfx_quejido_bostezo_guardia_ronquido.wav",
+      "volumenSfx": 0.22,
+      "palabrasClave": [
+        "corteza",
+        "prefrontal",
+        "filtro",
+        "racional",
+        "energía",
+        "dormir"
+      ],
+      "personajes": [
+        {
+          "id": "guardia_racional",
+          "nombre": "Guardia Prefrontal",
+          "posicion": {
+            "x": -140,
+            "y": 80
+          },
+          "escala": 1,
+          "orientacion": "derecha",
+          "acciones": [
+            {
+              "tipo": "personalizada",
+              "pasos": [
+                {
+                  "inicioProgreso": 0,
+                  "finProgreso": 0.45,
+                  "poseId": "explaining_both_hands",
+                  "expresion": "analytical",
+                  "posicion": {
+                    "x": -140,
+                    "y": 80
+                  },
+                  "curva": "suave",
+                  "procedural": "estatico"
+                },
+                {
+                  "inicioProgreso": 0.45,
+                  "finProgreso": 0.75,
+                  "poseId": "exhausted_slouch",
+                  "expresion": "exhausted",
+                  "posicion": {
+                    "x": -140,
+                    "y": 95
+                  },
+                  "curva": "suave",
+                  "procedural": "estatico"
+                },
+                {
+                  "inicioProgreso": 0.75,
+                  "finProgreso": 1,
+                  "poseId": "crouching",
+                  "expresion": "bored",
+                  "posicion": {
+                    "x": -140,
+                    "y": 105
+                  },
+                  "curva": "suave",
+                  "procedural": "estatico"
+                }
+              ]
+            }
+          ],
+          "habla": false,
+          "capaZ": 10
+        }
+      ],
+      "objetos": [
+        {
+          "id": "consola_control_dormida",
+          "propId": "consola_cerebral_guardia",
+          "posicion": {
+            "x": 190,
+            "y": 60
+          },
+          "escala": 1.3,
+          "animacion": "pulso",
+          "capaZ": 12
+        }
+      ],
+      "duracionSegundos": 11.602,
+      "palabras": [
+        {
+          "palabra": "Todo",
+          "inicioMs": 0,
+          "finMs": 240
+        },
+        {
+          "palabra": "el",
+          "inicioMs": 240,
+          "finMs": 460
+        },
+        {
+          "palabra": "día",
+          "inicioMs": 460,
+          "finMs": 740
+        },
+        {
+          "palabra": "tu",
+          "inicioMs": 1000,
+          "finMs": 1120
+        },
+        {
+          "palabra": "corteza",
+          "inicioMs": 1120,
+          "finMs": 1600
+        },
+        {
+          "palabra": "prefrontal",
+          "inicioMs": 1600,
+          "finMs": 2240
+        },
+        {
+          "palabra": "censura",
+          "inicioMs": 2240,
+          "finMs": 2680
+        },
+        {
+          "palabra": "pensamientos",
+          "inicioMs": 2680,
+          "finMs": 3360
+        },
+        {
+          "palabra": "absurdos",
+          "inicioMs": 3360,
+          "finMs": 4140
+        },
+        {
+          "palabra": "Pero",
+          "inicioMs": 4380,
+          "finMs": 4500
+        },
+        {
+          "palabra": "tras",
+          "inicioMs": 4500,
+          "finMs": 4720
+        },
+        {
+          "palabra": "dieciséis",
+          "inicioMs": 4720,
+          "finMs": 5300
+        },
+        {
+          "palabra": "horas",
+          "inicioMs": 5300,
+          "finMs": 5420
+        },
+        {
+          "palabra": "tomando",
+          "inicioMs": 5420,
+          "finMs": 5920
+        },
+        {
+          "palabra": "decisiones",
+          "inicioMs": 5920,
+          "finMs": 6520
+        },
+        {
+          "palabra": "complejas",
+          "inicioMs": 6520,
+          "finMs": 7100
+        },
+        {
+          "palabra": "este",
+          "inicioMs": 7360,
+          "finMs": 7580
+        },
+        {
+          "palabra": "filtro",
+          "inicioMs": 7580,
+          "finMs": 7960
+        },
+        {
+          "palabra": "racional",
+          "inicioMs": 7960,
+          "finMs": 8420
+        },
+        {
+          "palabra": "agota",
+          "inicioMs": 8420,
+          "finMs": 8900
+        },
+        {
+          "palabra": "su",
+          "inicioMs": 8900,
+          "finMs": 9080
+        },
+        {
+          "palabra": "energía",
+          "inicioMs": 9080,
+          "finMs": 9380
+        },
+        {
+          "palabra": "y",
+          "inicioMs": 9380,
+          "finMs": 9700
+        },
+        {
+          "palabra": "se",
+          "inicioMs": 9700,
+          "finMs": 9820
+        },
+        {
+          "palabra": "va",
+          "inicioMs": 9820,
+          "finMs": 9920
+        },
+        {
+          "palabra": "a",
+          "inicioMs": 9920,
+          "finMs": 10000
+        },
+        {
+          "palabra": "dormir",
+          "inicioMs": 10000,
+          "finMs": 10200
+        },
+        {
+          "palabra": "antes",
+          "inicioMs": 10200,
+          "finMs": 10640
+        },
+        {
+          "palabra": "que",
+          "inicioMs": 10640,
+          "finMs": 10840
+        },
+        {
+          "palabra": "tú",
+          "inicioMs": 10840,
+          "finMs": 11020
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "texto": "Sin ese guardia lógico vigilando la consola, la amígdala toma el control. Esta pequeña central de las emociones activa las alarmas rojas y desata el caos nocturno.",
+      "icono": "AlertTriangle",
+      "colorIcono": "#EF4444",
+      "tituloVisual": "AMÍGDALA AL MANDO",
+      "composicionVisual": "plano_general",
+      "escenario": "sala_control_amigdala_emergencia",
+      "layout": "narrativo",
+      "transicion": "whip_right",
+      "efectosCamara": [
+        "punch",
+        "shake"
+      ],
+      "sfx": "sfx/sfx_alarma_submarino_palanca_panico.wav",
+      "volumenSfx": 0.24,
+      "palabrasClave": [
+        "guardia",
+        "amígdala",
+        "control",
+        "alarmas",
+        "rojas",
+        "caos"
+      ],
+      "personajes": [
+        {
+          "id": "personaje_panico",
+          "nombre": "Testigo del Caos",
+          "posicion": {
+            "x": -170,
+            "y": 80
+          },
+          "escala": 1,
+          "orientacion": "derecha",
+          "acciones": [
+            {
+              "tipo": "personalizada",
+              "pasos": [
+                {
+                  "inicioProgreso": 0,
+                  "finProgreso": 0.4,
+                  "poseId": "surprised_hands_up",
+                  "expresion": "surprised",
+                  "posicion": {
+                    "x": -170,
+                    "y": 80
+                  },
+                  "curva": "impacto",
+                  "procedural": "estatico"
+                },
+                {
+                  "inicioProgreso": 0.4,
+                  "finProgreso": 0.8,
+                  "poseId": "backing_away_scared",
+                  "expresion": "scared",
+                  "posicion": {
+                    "x": -210,
+                    "y": 80
+                  },
+                  "curva": "anticipacion",
+                  "procedural": "temblar"
+                },
+                {
+                  "inicioProgreso": 0.8,
+                  "finProgreso": 1,
+                  "poseId": "trembling_fear",
+                  "expresion": "worried",
+                  "posicion": {
+                    "x": -210,
+                    "y": 80
+                  },
+                  "curva": "suave",
+                  "procedural": "temblar"
+                }
+              ]
+            }
+          ],
+          "habla": false,
+          "capaZ": 10
+        }
+      ],
+      "objetos": [
+        {
+          "id": "amigdala_megafono_criatura",
+          "propId": "amigdala_criatura_megafono",
+          "posicion": {
+            "x": 160,
+            "y": 30
+          },
+          "escala": 1.45,
+          "animacion": "vibrar",
+          "capaZ": 16
+        }
+      ],
+      "duracionSegundos": 9.01,
+      "palabras": [
+        {
+          "palabra": "Sin",
+          "inicioMs": 0,
+          "finMs": 240
+        },
+        {
+          "palabra": "ese",
+          "inicioMs": 240,
+          "finMs": 440
+        },
+        {
+          "palabra": "guardia",
+          "inicioMs": 440,
+          "finMs": 780
+        },
+        {
+          "palabra": "lógico",
+          "inicioMs": 780,
+          "finMs": 1180
+        },
+        {
+          "palabra": "vigilando",
+          "inicioMs": 1180,
+          "finMs": 1680
+        },
+        {
+          "palabra": "la",
+          "inicioMs": 1680,
+          "finMs": 1820
+        },
+        {
+          "palabra": "consola",
+          "inicioMs": 1820,
+          "finMs": 2300
+        },
+        {
+          "palabra": "la",
+          "inicioMs": 2580,
+          "finMs": 2660
+        },
+        {
+          "palabra": "amígdala",
+          "inicioMs": 2660,
+          "finMs": 3080
+        },
+        {
+          "palabra": "toma",
+          "inicioMs": 3080,
+          "finMs": 3360
+        },
+        {
+          "palabra": "el",
+          "inicioMs": 3360,
+          "finMs": 3460
+        },
+        {
+          "palabra": "control",
+          "inicioMs": 3460,
+          "finMs": 3820
+        },
+        {
+          "palabra": "Esta",
+          "inicioMs": 4180,
+          "finMs": 4360
+        },
+        {
+          "palabra": "pequeña",
+          "inicioMs": 4360,
+          "finMs": 4640
+        },
+        {
+          "palabra": "central",
+          "inicioMs": 4640,
+          "finMs": 4960
+        },
+        {
+          "palabra": "de",
+          "inicioMs": 4960,
+          "finMs": 5160
+        },
+        {
+          "palabra": "las",
+          "inicioMs": 5160,
+          "finMs": 5280
+        },
+        {
+          "palabra": "emociones",
+          "inicioMs": 5280,
+          "finMs": 5620
+        },
+        {
+          "palabra": "activa",
+          "inicioMs": 5620,
+          "finMs": 6060
+        },
+        {
+          "palabra": "las",
+          "inicioMs": 6060,
+          "finMs": 6180
+        },
+        {
+          "palabra": "alarmas",
+          "inicioMs": 6180,
+          "finMs": 6540
+        },
+        {
+          "palabra": "rojas",
+          "inicioMs": 6540,
+          "finMs": 6820
+        },
+        {
+          "palabra": "y",
+          "inicioMs": 6820,
+          "finMs": 6980
+        },
+        {
+          "palabra": "desata",
+          "inicioMs": 6980,
+          "finMs": 7300
+        },
+        {
+          "palabra": "el",
+          "inicioMs": 7300,
+          "finMs": 7520
+        },
+        {
+          "palabra": "caos",
+          "inicioMs": 7520,
+          "finMs": 7780
+        },
+        {
+          "palabra": "nocturno",
+          "inicioMs": 7780,
+          "finMs": 8340
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "texto": "En el silencio absoluto de tu cama, sin ruidos ni pantallas que te distraigan, la amígdala se desborda y desempolva cualquier archivo pendiente: errores viejos, deudas o conversaciones incómodas.",
+      "icono": "HelpCircle",
+      "colorIcono": "#F59E0B",
+      "tituloVisual": "RUMIACIÓN NOCTURNA",
+      "composicionVisual": "plano_general",
+      "escenario": "consola_amigdala_engranajes_ansiedad",
+      "layout": "narrativo",
+      "transicion": "whip_left",
+      "efectosCamara": [
+        "drift"
+      ],
+      "sfx": "sfx/sfx_engranajes_oxidados_chispas_ansiedad.wav",
+      "volumenSfx": 0.22,
+      "palabrasClave": [
+        "silencio",
+        "cama",
+        "amígdala",
+        "errores",
+        "deudas",
+        "conversaciones"
+      ],
+      "personajes": [
+        {
+          "id": "stickman_rumiador",
+          "nombre": "Stickman Pensativo",
+          "posicion": {
+            "x": -150,
+            "y": 80
+          },
+          "escala": 1,
+          "orientacion": "derecha",
+          "acciones": [
+            {
+              "tipo": "personalizada",
+              "pasos": [
+                {
+                  "inicioProgreso": 0,
+                  "finProgreso": 0.5,
+                  "poseId": "thinking_chin_hand",
+                  "expresion": "confused",
+                  "posicion": {
+                    "x": -150,
+                    "y": 80
+                  },
+                  "curva": "suave",
+                  "procedural": "estatico"
+                },
+                {
+                  "inicioProgreso": 0.5,
+                  "finProgreso": 1,
+                  "poseId": "frustrated_head_grab",
+                  "expresion": "frustrated",
+                  "posicion": {
+                    "x": -150,
+                    "y": 80
+                  },
+                  "curva": "impacto",
+                  "procedural": "temblar"
+                }
+              ]
+            }
+          ],
+          "habla": false,
+          "capaZ": 10
+        }
+      ],
+      "objetos": [
+        {
+          "id": "engranajes_mente_ansiedad",
+          "propId": "engranajes_oxidados_ansiedad",
+          "posicion": {
+            "x": 180,
+            "y": 0
+          },
+          "escala": 1.35,
+          "animacion": "vibrar",
+          "capaZ": 14
+        }
+      ],
+      "duracionSegundos": 11.242,
+      "palabras": [
+        {
+          "palabra": "En",
+          "inicioMs": 0,
+          "finMs": 220
+        },
+        {
+          "palabra": "el",
+          "inicioMs": 220,
+          "finMs": 300
+        },
+        {
+          "palabra": "silencio",
+          "inicioMs": 300,
+          "finMs": 780
+        },
+        {
+          "palabra": "absoluto",
+          "inicioMs": 780,
+          "finMs": 1280
+        },
+        {
+          "palabra": "de",
+          "inicioMs": 1280,
+          "finMs": 1380
+        },
+        {
+          "palabra": "tu",
+          "inicioMs": 1380,
+          "finMs": 1520
+        },
+        {
+          "palabra": "cama",
+          "inicioMs": 1520,
+          "finMs": 1820
+        },
+        {
+          "palabra": "sin",
+          "inicioMs": 2020,
+          "finMs": 2140
+        },
+        {
+          "palabra": "ruidos",
+          "inicioMs": 2140,
+          "finMs": 2500
+        },
+        {
+          "palabra": "ni",
+          "inicioMs": 2500,
+          "finMs": 2660
+        },
+        {
+          "palabra": "pantallas",
+          "inicioMs": 2660,
+          "finMs": 3100
+        },
+        {
+          "palabra": "que",
+          "inicioMs": 3100,
+          "finMs": 3280
+        },
+        {
+          "palabra": "te",
+          "inicioMs": 3280,
+          "finMs": 3400
+        },
+        {
+          "palabra": "distraigan",
+          "inicioMs": 3400,
+          "finMs": 3940
+        },
+        {
+          "palabra": "la",
+          "inicioMs": 4160,
+          "finMs": 4260
+        },
+        {
+          "palabra": "amígdala",
+          "inicioMs": 4260,
+          "finMs": 4680
+        },
+        {
+          "palabra": "se",
+          "inicioMs": 4680,
+          "finMs": 4860
+        },
+        {
+          "palabra": "desborda",
+          "inicioMs": 4860,
+          "finMs": 5400
+        },
+        {
+          "palabra": "y",
+          "inicioMs": 5400,
+          "finMs": 5460
+        },
+        {
+          "palabra": "desempolva",
+          "inicioMs": 5460,
+          "finMs": 6040
+        },
+        {
+          "palabra": "cualquier",
+          "inicioMs": 6040,
+          "finMs": 6300
+        },
+        {
+          "palabra": "archivo",
+          "inicioMs": 6300,
+          "finMs": 6800
+        },
+        {
+          "palabra": "pendiente",
+          "inicioMs": 6800,
+          "finMs": 7400
+        },
+        {
+          "palabra": "errores",
+          "inicioMs": 7660,
+          "finMs": 8020
+        },
+        {
+          "palabra": "viejos",
+          "inicioMs": 8020,
+          "finMs": 8480
+        },
+        {
+          "palabra": "deudas",
+          "inicioMs": 8760,
+          "finMs": 9160
+        },
+        {
+          "palabra": "o",
+          "inicioMs": 9160,
+          "finMs": 9320
+        },
+        {
+          "palabra": "conversaciones",
+          "inicioMs": 9320,
+          "finMs": 9960
+        },
+        {
+          "palabra": "incómodas",
+          "inicioMs": 9960,
+          "finMs": 10700
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "texto": "Esto no es un defecto; es pura evolución. Hace miles de años, dormir desprevenido en una cueva oscura significaba ser devorado por depredadores. El miedo garantizaba mantenerte vivo.",
+      "icono": "Flame",
+      "colorIcono": "#EA580C",
+      "tituloVisual": "VENTAJA EVOLUTIVA",
+      "composicionVisual": "plano_general",
+      "escenario": "cueva_prehistorica_fuego_tigre",
+      "layout": "narrativo",
+      "transicion": "whip_right",
+      "efectosCamara": [
+        "punch",
+        "drift"
+      ],
+      "sfx": "sfx/sfx_viento_cueva_ramas_grunido_tigre.wav",
+      "volumenSfx": 0.24,
+      "palabrasClave": [
+        "evolución",
+        "cueva",
+        "oscura",
+        "depredadores",
+        "miedo",
+        "vivo"
+      ],
+      "personajes": [
+        {
+          "id": "cavernicola_alerta",
+          "nombre": "Cazador Prehistórico",
+          "posicion": {
+            "x": -140,
+            "y": 80
+          },
+          "escala": 1,
+          "orientacion": "derecha",
+          "acciones": [
+            {
+              "tipo": "personalizada",
+              "pasos": [
+                {
+                  "inicioProgreso": 0,
+                  "finProgreso": 0.45,
+                  "poseId": "kneeling",
+                  "expresion": "worried",
+                  "posicion": {
+                    "x": -140,
+                    "y": 85
+                  },
+                  "curva": "suave",
+                  "procedural": "estatico"
+                },
+                {
+                  "inicioProgreso": 0.45,
+                  "finProgreso": 0.8,
+                  "poseId": "protecting_shielding",
+                  "expresion": "analytical",
+                  "posicion": {
+                    "x": -110,
+                    "y": 75
+                  },
+                  "curva": "anticipacion",
+                  "procedural": "estatico"
+                },
+                {
+                  "inicioProgreso": 0.8,
+                  "finProgreso": 1,
+                  "poseId": "warning_danger",
+                  "expresion": "scared",
+                  "posicion": {
+                    "x": -100,
+                    "y": 70
+                  },
+                  "curva": "impacto",
+                  "procedural": "estatico"
+                }
+              ]
+            }
+          ],
+          "habla": false,
+          "capaZ": 10
+        }
+      ],
+      "objetos": [
+        {
+          "id": "lanza_cazador_ancestral",
+          "propId": "lanza_cueva_prehistorica",
+          "posicion": {
+            "x": 170,
+            "y": 50
+          },
+          "escala": 1.3,
+          "animacion": "pulso",
+          "capaZ": 12
+        }
+      ],
+      "duracionSegundos": 10.018,
+      "palabras": [
+        {
+          "palabra": "Esto",
+          "inicioMs": 0,
+          "finMs": 300
+        },
+        {
+          "palabra": "no",
+          "inicioMs": 300,
+          "finMs": 420
+        },
+        {
+          "palabra": "es",
+          "inicioMs": 420,
+          "finMs": 520
+        },
+        {
+          "palabra": "un",
+          "inicioMs": 520,
+          "finMs": 640
+        },
+        {
+          "palabra": "defecto",
+          "inicioMs": 640,
+          "finMs": 1100
+        },
+        {
+          "palabra": "es",
+          "inicioMs": 1140,
+          "finMs": 1220
+        },
+        {
+          "palabra": "pura",
+          "inicioMs": 1220,
+          "finMs": 1500
+        },
+        {
+          "palabra": "evolución",
+          "inicioMs": 1500,
+          "finMs": 1900
+        },
+        {
+          "palabra": "Hace",
+          "inicioMs": 2080,
+          "finMs": 2280
+        },
+        {
+          "palabra": "miles",
+          "inicioMs": 2280,
+          "finMs": 2500
+        },
+        {
+          "palabra": "de",
+          "inicioMs": 2500,
+          "finMs": 2800
+        },
+        {
+          "palabra": "años",
+          "inicioMs": 2800,
+          "finMs": 3100
+        },
+        {
+          "palabra": "dormir",
+          "inicioMs": 3380,
+          "finMs": 3640
+        },
+        {
+          "palabra": "desprevenido",
+          "inicioMs": 3640,
+          "finMs": 4320
+        },
+        {
+          "palabra": "en",
+          "inicioMs": 4320,
+          "finMs": 4420
+        },
+        {
+          "palabra": "una",
+          "inicioMs": 4420,
+          "finMs": 4540
+        },
+        {
+          "palabra": "cueva",
+          "inicioMs": 4540,
+          "finMs": 4820
+        },
+        {
+          "palabra": "oscura",
+          "inicioMs": 4820,
+          "finMs": 5200
+        },
+        {
+          "palabra": "significaba",
+          "inicioMs": 5200,
+          "finMs": 5820
+        },
+        {
+          "palabra": "ser",
+          "inicioMs": 5820,
+          "finMs": 6060
+        },
+        {
+          "palabra": "devorado",
+          "inicioMs": 6060,
+          "finMs": 6520
+        },
+        {
+          "palabra": "por",
+          "inicioMs": 6520,
+          "finMs": 6720
+        },
+        {
+          "palabra": "depredadores",
+          "inicioMs": 6720,
+          "finMs": 7320
+        },
+        {
+          "palabra": "El",
+          "inicioMs": 7560,
+          "finMs": 7680
+        },
+        {
+          "palabra": "miedo",
+          "inicioMs": 7680,
+          "finMs": 7920
+        },
+        {
+          "palabra": "garantizaba",
+          "inicioMs": 7920,
+          "finMs": 8600
+        },
+        {
+          "palabra": "mantenerte",
+          "inicioMs": 8600,
+          "finMs": 9140
+        },
+        {
+          "palabra": "vivo",
+          "inicioMs": 9140,
+          "finMs": 9400
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "texto": "El problema es que tu biología actual no distingue entre un tigre dientes de sable y la vergüenza de haber saludado a un desconocido: ambas activan la misma alarma de pánico.",
+      "icono": "Zap",
+      "colorIcono": "#EC4899",
+      "tituloVisual": "FALSA ALARMA",
+      "composicionVisual": "plano_general",
+      "escenario": "habitacion_noche_amigdala_facturas",
+      "layout": "narrativo",
+      "transicion": "zoom_in",
+      "efectosCamara": [
+        "drift"
+      ],
+      "sfx": "sfx/sfx_disolucion_humo_alivio_facturas.wav",
+      "volumenSfx": 0.22,
+      "palabrasClave": [
+        "biología",
+        "tigre",
+        "vergüenza",
+        "desconocido",
+        "alarma",
+        "pánico"
+      ],
+      "personajes": [
+        {
+          "id": "stickman_despierto",
+          "nombre": "Stickman Insomne",
+          "posicion": {
+            "x": -150,
+            "y": 80
+          },
+          "escala": 1,
+          "orientacion": "derecha",
+          "acciones": [
+            {
+              "tipo": "personalizada",
+              "pasos": [
+                {
+                  "inicioProgreso": 0,
+                  "finProgreso": 0.45,
+                  "poseId": "facepalm",
+                  "expresion": "embarrassed",
+                  "posicion": {
+                    "x": -150,
+                    "y": 80
+                  },
+                  "curva": "suave",
+                  "procedural": "estatico"
+                },
+                {
+                  "inicioProgreso": 0.45,
+                  "finProgreso": 1,
+                  "poseId": "doubting_open_hands",
+                  "expresion": "skeptical",
+                  "posicion": {
+                    "x": -130,
+                    "y": 80
+                  },
+                  "curva": "suave",
+                  "procedural": "estatico"
+                }
+              ]
+            }
+          ],
+          "habla": false,
+          "capaZ": 10
+        }
+      ],
+      "objetos": [
+        {
+          "id": "facturas_notificaciones_ansiedad",
+          "propId": "facturas_celular_visto",
+          "posicion": {
+            "x": 190,
+            "y": 10
+          },
+          "escala": 1.35,
+          "animacion": "flotar",
+          "capaZ": 14
+        }
+      ],
+      "duracionSegundos": 8.29,
+      "palabras": [
+        {
+          "palabra": "El",
+          "inicioMs": 0,
+          "finMs": 180
+        },
+        {
+          "palabra": "problema",
+          "inicioMs": 180,
+          "finMs": 420
+        },
+        {
+          "palabra": "es",
+          "inicioMs": 420,
+          "finMs": 600
+        },
+        {
+          "palabra": "que",
+          "inicioMs": 600,
+          "finMs": 680
+        },
+        {
+          "palabra": "tu",
+          "inicioMs": 680,
+          "finMs": 800
+        },
+        {
+          "palabra": "biología",
+          "inicioMs": 800,
+          "finMs": 1080
+        },
+        {
+          "palabra": "actual",
+          "inicioMs": 1080,
+          "finMs": 1380
+        },
+        {
+          "palabra": "no",
+          "inicioMs": 1380,
+          "finMs": 1520
+        },
+        {
+          "palabra": "distingue",
+          "inicioMs": 1520,
+          "finMs": 1920
+        },
+        {
+          "palabra": "entre",
+          "inicioMs": 1920,
+          "finMs": 2040
+        },
+        {
+          "palabra": "un",
+          "inicioMs": 2040,
+          "finMs": 2140
+        },
+        {
+          "palabra": "tigre",
+          "inicioMs": 2140,
+          "finMs": 2420
+        },
+        {
+          "palabra": "dientes",
+          "inicioMs": 2420,
+          "finMs": 2700
+        },
+        {
+          "palabra": "de",
+          "inicioMs": 2700,
+          "finMs": 2840
+        },
+        {
+          "palabra": "sable",
+          "inicioMs": 2840,
+          "finMs": 3180
+        },
+        {
+          "palabra": "y",
+          "inicioMs": 3180,
+          "finMs": 3380
+        },
+        {
+          "palabra": "la",
+          "inicioMs": 3380,
+          "finMs": 3460
+        },
+        {
+          "palabra": "vergüenza",
+          "inicioMs": 3460,
+          "finMs": 3820
+        },
+        {
+          "palabra": "de",
+          "inicioMs": 3820,
+          "finMs": 3900
+        },
+        {
+          "palabra": "haber",
+          "inicioMs": 3900,
+          "finMs": 4020
+        },
+        {
+          "palabra": "saludado",
+          "inicioMs": 4020,
+          "finMs": 4440
+        },
+        {
+          "palabra": "a",
+          "inicioMs": 4440,
+          "finMs": 4460
+        },
+        {
+          "palabra": "un",
+          "inicioMs": 4460,
+          "finMs": 4520
+        },
+        {
+          "palabra": "desconocido",
+          "inicioMs": 4520,
+          "finMs": 5160
+        },
+        {
+          "palabra": "ambas",
+          "inicioMs": 5460,
+          "finMs": 5780
+        },
+        {
+          "palabra": "activan",
+          "inicioMs": 5780,
+          "finMs": 6280
+        },
+        {
+          "palabra": "la",
+          "inicioMs": 6280,
+          "finMs": 6420
+        },
+        {
+          "palabra": "misma",
+          "inicioMs": 6420,
+          "finMs": 6740
+        },
+        {
+          "palabra": "alarma",
+          "inicioMs": 6740,
+          "finMs": 7160
+        },
+        {
+          "palabra": "de",
+          "inicioMs": 7160,
+          "finMs": 7280
+        },
+        {
+          "palabra": "pánico",
+          "inicioMs": 7280,
+          "finMs": 7720
+        }
+      ]
+    },
+    {
+      "id": 7,
+      "texto": "Así que cuando tu cabeza sobrepiense esta noche, no luches contra ella. Respira profundo, recuérdale a tu cerebro que ya no estamos en la selva, y descansa en paz.",
+      "icono": "Sparkles",
+      "colorIcono": "#10B981",
+      "tituloVisual": "RECONOCE EL TRUCO",
+      "composicionVisual": "plano_general",
+      "escenario": "habitacion_noche_calma_sueno",
+      "layout": "narrativo",
+      "transicion": "flash",
+      "efectosCamara": [
+        "drift"
+      ],
+      "sfx": "sfx/sfx_amigdala_ronroneo_clic_lampara.wav",
+      "volumenSfx": 0.2,
+      "palabrasClave": [
+        "sobrepiense",
+        "noche",
+        "respira",
+        "cerebro",
+        "selva",
+        "descansa"
+      ],
+      "personajes": [
+        {
+          "id": "stickman_aliviado",
+          "nombre": "Stickman en Calma",
+          "posicion": {
+            "x": -130,
+            "y": 80
+          },
+          "escala": 1,
+          "orientacion": "derecha",
+          "acciones": [
+            {
+              "tipo": "personalizada",
+              "pasos": [
+                {
+                  "inicioProgreso": 0,
+                  "finProgreso": 0.4,
+                  "poseId": "eureka_idea",
+                  "expresion": "eureka",
+                  "posicion": {
+                    "x": -130,
+                    "y": 80
+                  },
+                  "curva": "rebote",
+                  "procedural": "estatico"
+                },
+                {
+                  "inicioProgreso": 0.4,
+                  "finProgreso": 0.75,
+                  "poseId": "thumbs_up_approval",
+                  "expresion": "smile_wide",
+                  "posicion": {
+                    "x": -120,
+                    "y": 80
+                  },
+                  "curva": "suave",
+                  "procedural": "estatico"
+                },
+                {
+                  "inicioProgreso": 0.75,
+                  "finProgreso": 1,
+                  "poseId": "standing_confident",
+                  "expresion": "smile_soft",
+                  "posicion": {
+                    "x": -120,
+                    "y": 80
+                  },
+                  "curva": "suave",
+                  "procedural": "estatico"
+                }
+              ]
+            }
+          ],
+          "habla": false,
+          "capaZ": 10
+        }
+      ],
+      "objetos": [
+        {
+          "id": "lampara_calma_dormir",
+          "propId": "lampara_noche_interruptor",
+          "posicion": {
+            "x": 180,
+            "y": 40
+          },
+          "escala": 1.35,
+          "animacion": "pulso",
+          "capaZ": 12
+        }
+      ],
+      "duracionSegundos": 10.114,
+      "palabras": [
+        {
+          "palabra": "Así",
+          "inicioMs": 0,
+          "finMs": 280
+        },
+        {
+          "palabra": "que",
+          "inicioMs": 280,
+          "finMs": 420
+        },
+        {
+          "palabra": "cuando",
+          "inicioMs": 420,
+          "finMs": 620
+        },
+        {
+          "palabra": "tu",
+          "inicioMs": 620,
+          "finMs": 780
+        },
+        {
+          "palabra": "cabeza",
+          "inicioMs": 780,
+          "finMs": 1020
+        },
+        {
+          "palabra": "sobrepiense",
+          "inicioMs": 1020,
+          "finMs": 1720
+        },
+        {
+          "palabra": "esta",
+          "inicioMs": 1720,
+          "finMs": 1940
+        },
+        {
+          "palabra": "noche",
+          "inicioMs": 1940,
+          "finMs": 2280
+        },
+        {
+          "palabra": "no",
+          "inicioMs": 2640,
+          "finMs": 2700
+        },
+        {
+          "palabra": "luches",
+          "inicioMs": 2700,
+          "finMs": 3060
+        },
+        {
+          "palabra": "contra",
+          "inicioMs": 3060,
+          "finMs": 3380
+        },
+        {
+          "palabra": "ella",
+          "inicioMs": 3380,
+          "finMs": 3680
+        },
+        {
+          "palabra": "Respira",
+          "inicioMs": 4360,
+          "finMs": 4820
+        },
+        {
+          "palabra": "profundo",
+          "inicioMs": 4820,
+          "finMs": 5400
+        },
+        {
+          "palabra": "recuérdale",
+          "inicioMs": 5600,
+          "finMs": 6080
+        },
+        {
+          "palabra": "a",
+          "inicioMs": 6080,
+          "finMs": 6260
+        },
+        {
+          "palabra": "tu",
+          "inicioMs": 6260,
+          "finMs": 6360
+        },
+        {
+          "palabra": "cerebro",
+          "inicioMs": 6360,
+          "finMs": 6760
+        },
+        {
+          "palabra": "que",
+          "inicioMs": 6760,
+          "finMs": 6920
+        },
+        {
+          "palabra": "ya",
+          "inicioMs": 6920,
+          "finMs": 7120
+        },
+        {
+          "palabra": "no",
+          "inicioMs": 7120,
+          "finMs": 7240
+        },
+        {
+          "palabra": "estamos",
+          "inicioMs": 7240,
+          "finMs": 7500
+        },
+        {
+          "palabra": "en",
+          "inicioMs": 7500,
+          "finMs": 7740
+        },
+        {
+          "palabra": "la",
+          "inicioMs": 7740,
+          "finMs": 7860
+        },
+        {
+          "palabra": "selva",
+          "inicioMs": 7860,
+          "finMs": 8240
+        },
+        {
+          "palabra": "y",
+          "inicioMs": 8560,
+          "finMs": 8640
+        },
+        {
+          "palabra": "descansa",
+          "inicioMs": 8640,
+          "finMs": 9000
+        },
+        {
+          "palabra": "en",
+          "inicioMs": 9000,
+          "finMs": 9260
+        },
+        {
+          "palabra": "paz",
+          "inicioMs": 9260,
+          "finMs": 9440
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,1666 @@
+{
+  "meta": {
+    "id": "tu_memoria_te_miente_falsos_recuerdos",
+    "slug": "tu_memoria_te_miente_falsos_recuerdos",
+    "temaResumen": "Tu memoria te miente: la trampa de los falsos recuerdos y la reconsolidación sináptica (Elizabeth Loftus, choque de autos, sesgo de desinformación y el cerebro como narrador)",
+    "duracionObjetivo": [
+      62,
+      75
+    ],
+    "titulo": "Tu memoria te miente: la trampa de los falsos recuerdos",
+    "titulo_corto": "Tu memoria te miente",
+    "gancho": "Pon atención a este auto rojo. Si te pregunto a qué velocidad iba cuando se estrelló... tu mente acaba de inventarse un vidrio roto que jamás existió.",
+    "genero": "Neurobiología, Psicología Cognitiva y Memoria",
+    "playlist": "Neurociencia, Psicología y Misterios del Cerebro",
+    "fuentes": [
+      "Journal of Verbal Learning and Verbal Behavior (Loftus & Palmer 1974, Reconstruction of Automobile Destruction)",
+      "Nature (Karim Nader et al. 2000, Fear memories require protein synthesis in the amygdala for reconsolidation)",
+      "The Seven Sins of Memory (Daniel L. Schacter, Harvard University)"
+    ]
+  },
+  "escenas": [
+    {
+      "id": 1,
+      "texto": "Pon atención a este auto rojo. Si te pregunto a qué velocidad iba cuando se estrelló... tu mente acaba de inventarse un vidrio roto que jamás existió.",
+      "icono": "AlertTriangle",
+      "colorIcono": "#EF4444",
+      "tituloVisual": "EL VIDRIO INVENTADO",
+      "composicionVisual": "primer_plano",
+      "escenario": "calle_choque_juguete",
+      "layout": "narrativo",
+      "transicion": "corte",
+      "efectosCamara": [
+        "punch",
+        "drift"
+      ],
+      "sfx": "sfx/sfx_choque_juguete_cristal.wav",
+      "volumenSfx": 0.25,
+      "palabrasClave": [
+        "auto rojo",
+        "velocidad",
+        "estrelló",
+        "vidrio roto",
+        "jamás existió"
+      ],
+      "personajes": [
+        {
+          "id": "detective_memoria",
+          "nombre": "Stickman Detective",
+          "posicion": {
+            "x": -180,
+            "y": 90
+          },
+          "escala": 1.05,
+          "orientacion": "derecha",
+          "habla": true,
+          "capaZ": 25,
+          "props": {
+            "derecha": "libreta_policia_boligrafo",
+            "sombrero": "gorra_detective_policia"
+          },
+          "acciones": [
+            {
+              "tipo": "personalizada",
+              "pasos": [
+                {
+                  "inicioProgreso": 0,
+                  "finProgreso": 0.35,
+                  "poseId": "explaining_pointing_up",
+                  "expresion": "analytical",
+                  "posicion": {
+                    "x": -180,
+                    "y": 90
+                  },
+                  "curva": "suave",
+                  "procedural": "estatico"
+                },
+                {
+                  "inicioProgreso": 0.35,
+                  "finProgreso": 0.7,
+                  "poseId": "taking_notes",
+                  "expresion": "talking_enthusiastic",
+                  "posicion": {
+                    "x": -180,
+                    "y": 90
+                  },
+                  "curva": "suave",
+                  "procedural": "manipular"
+                },
+                {
+                  "inicioProgreso": 0.7,
+                  "finProgreso": 1.0,
+                  "poseId": "pointing_at_viewer",
+                  "expresion": "eureka",
+                  "posicion": {
+                    "x": -180,
+                    "y": 90
+                  },
+                  "curva": "impacto",
+                  "procedural": "estatico"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "duracionSegundos": 7.834,
+      "palabras": [
+        {
+          "palabra": "Pon",
+          "inicioMs": 0,
+          "finMs": 160
+        },
+        {
+          "palabra": "atención",
+          "inicioMs": 160,
+          "finMs": 540
+        },
+        {
+          "palabra": "a",
+          "inicioMs": 540,
+          "finMs": 740
+        },
+        {
+          "palabra": "este",
+          "inicioMs": 740,
+          "finMs": 940
+        },
+        {
+          "palabra": "auto",
+          "inicioMs": 940,
+          "finMs": 1200
+        },
+        {
+          "palabra": "rojo",
+          "inicioMs": 1200,
+          "finMs": 1580
+        },
+        {
+          "palabra": "Si",
+          "inicioMs": 1800,
+          "finMs": 1860
+        },
+        {
+          "palabra": "te",
+          "inicioMs": 1860,
+          "finMs": 1980
+        },
+        {
+          "palabra": "pregunto",
+          "inicioMs": 1980,
+          "finMs": 2360
+        },
+        {
+          "palabra": "a",
+          "inicioMs": 2360,
+          "finMs": 2400
+        },
+        {
+          "palabra": "qué",
+          "inicioMs": 2400,
+          "finMs": 2500
+        },
+        {
+          "palabra": "velocidad",
+          "inicioMs": 2500,
+          "finMs": 2780
+        },
+        {
+          "palabra": "iba",
+          "inicioMs": 2780,
+          "finMs": 3160
+        },
+        {
+          "palabra": "cuando",
+          "inicioMs": 3160,
+          "finMs": 3380
+        },
+        {
+          "palabra": "se",
+          "inicioMs": 3380,
+          "finMs": 3580
+        },
+        {
+          "palabra": "estrelló",
+          "inicioMs": 3580,
+          "finMs": 4060
+        },
+        {
+          "palabra": "tu",
+          "inicioMs": 4380,
+          "finMs": 4440
+        },
+        {
+          "palabra": "mente",
+          "inicioMs": 4440,
+          "finMs": 4600
+        },
+        {
+          "palabra": "acaba",
+          "inicioMs": 4600,
+          "finMs": 4880
+        },
+        {
+          "palabra": "de",
+          "inicioMs": 4880,
+          "finMs": 5040
+        },
+        {
+          "palabra": "inventarse",
+          "inicioMs": 5040,
+          "finMs": 5480
+        },
+        {
+          "palabra": "un",
+          "inicioMs": 5480,
+          "finMs": 5640
+        },
+        {
+          "palabra": "vidrio",
+          "inicioMs": 5640,
+          "finMs": 5900
+        },
+        {
+          "palabra": "roto",
+          "inicioMs": 5900,
+          "finMs": 6300
+        },
+        {
+          "palabra": "que",
+          "inicioMs": 6300,
+          "finMs": 6420
+        },
+        {
+          "palabra": "jamás",
+          "inicioMs": 6420,
+          "finMs": 6700
+        },
+        {
+          "palabra": "existió",
+          "inicioMs": 6700,
+          "finMs": 7280
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "texto": "Creemos que la memoria funciona como una cámara de video que graba y guarda archivos perfectos en un disco duro. Pero la neurociencia demostró que eso es una ilusión total.",
+      "icono": "Video",
+      "colorIcono": "#38BDF8",
+      "tituloVisual": "NO ERES UNA CÁMARA",
+      "composicionVisual": "escenario_ilustrado",
+      "escenario": "archivo_memorias_futurista",
+      "layout": "narrativo",
+      "transicion": "whip_right",
+      "efectosCamara": [
+        "drift"
+      ],
+      "sfx": "sfx/sfx_caja_fuerte_vhs_glitch.wav",
+      "volumenSfx": 0.24,
+      "palabrasClave": [
+        "cámara de video",
+        "archivos perfectos",
+        "disco duro",
+        "neurociencia",
+        "ilusión total"
+      ],
+      "personajes": [
+        {
+          "id": "stickman_archivo",
+          "nombre": "Stickman con Casete",
+          "posicion": {
+            "x": -160,
+            "y": 80
+          },
+          "escala": 1.0,
+          "orientacion": "derecha",
+          "habla": true,
+          "capaZ": 25,
+          "props": {
+            "derecha": "casete_vhs_dorado_recuerdo"
+          },
+          "acciones": [
+            {
+              "tipo": "personalizada",
+              "pasos": [
+                {
+                  "inicioProgreso": 0,
+                  "finProgreso": 0.4,
+                  "poseId": "presenting_object",
+                  "expresion": "proud",
+                  "posicion": {
+                    "x": -160,
+                    "y": 80
+                  },
+                  "curva": "suave",
+                  "procedural": "estatico"
+                },
+                {
+                  "inicioProgreso": 0.4,
+                  "finProgreso": 0.75,
+                  "poseId": "showing_both_hands",
+                  "expresion": "talking",
+                  "posicion": {
+                    "x": -140,
+                    "y": 80
+                  },
+                  "curva": "suave",
+                  "procedural": "estatico"
+                },
+                {
+                  "inicioProgreso": 0.75,
+                  "finProgreso": 1.0,
+                  "poseId": "shock_explosion",
+                  "expresion": "shocked",
+                  "posicion": {
+                    "x": -140,
+                    "y": 80
+                  },
+                  "curva": "impacto",
+                  "procedural": "temblar"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "duracionSegundos": 8.578,
+      "palabras": [
+        {
+          "palabra": "Creemos",
+          "inicioMs": 0,
+          "finMs": 360
+        },
+        {
+          "palabra": "que",
+          "inicioMs": 360,
+          "finMs": 520
+        },
+        {
+          "palabra": "la",
+          "inicioMs": 520,
+          "finMs": 620
+        },
+        {
+          "palabra": "memoria",
+          "inicioMs": 620,
+          "finMs": 900
+        },
+        {
+          "palabra": "funciona",
+          "inicioMs": 900,
+          "finMs": 1340
+        },
+        {
+          "palabra": "como",
+          "inicioMs": 1340,
+          "finMs": 1600
+        },
+        {
+          "palabra": "una",
+          "inicioMs": 1600,
+          "finMs": 1760
+        },
+        {
+          "palabra": "cámara",
+          "inicioMs": 1760,
+          "finMs": 2040
+        },
+        {
+          "palabra": "de",
+          "inicioMs": 2040,
+          "finMs": 2240
+        },
+        {
+          "palabra": "video",
+          "inicioMs": 2240,
+          "finMs": 2460
+        },
+        {
+          "palabra": "que",
+          "inicioMs": 2460,
+          "finMs": 2660
+        },
+        {
+          "palabra": "graba",
+          "inicioMs": 2660,
+          "finMs": 2940
+        },
+        {
+          "palabra": "y",
+          "inicioMs": 2940,
+          "finMs": 3000
+        },
+        {
+          "palabra": "guarda",
+          "inicioMs": 3000,
+          "finMs": 3260
+        },
+        {
+          "palabra": "archivos",
+          "inicioMs": 3260,
+          "finMs": 3560
+        },
+        {
+          "palabra": "perfectos",
+          "inicioMs": 3560,
+          "finMs": 4120
+        },
+        {
+          "palabra": "en",
+          "inicioMs": 4120,
+          "finMs": 4220
+        },
+        {
+          "palabra": "un",
+          "inicioMs": 4220,
+          "finMs": 4340
+        },
+        {
+          "palabra": "disco",
+          "inicioMs": 4340,
+          "finMs": 4580
+        },
+        {
+          "palabra": "duro",
+          "inicioMs": 4580,
+          "finMs": 4920
+        },
+        {
+          "palabra": "Pero",
+          "inicioMs": 5200,
+          "finMs": 5340
+        },
+        {
+          "palabra": "la",
+          "inicioMs": 5340,
+          "finMs": 5480
+        },
+        {
+          "palabra": "neurociencia",
+          "inicioMs": 5480,
+          "finMs": 6120
+        },
+        {
+          "palabra": "demostró",
+          "inicioMs": 6120,
+          "finMs": 6600
+        },
+        {
+          "palabra": "que",
+          "inicioMs": 6600,
+          "finMs": 6760
+        },
+        {
+          "palabra": "eso",
+          "inicioMs": 6760,
+          "finMs": 6940
+        },
+        {
+          "palabra": "es",
+          "inicioMs": 6940,
+          "finMs": 7080
+        },
+        {
+          "palabra": "una",
+          "inicioMs": 7080,
+          "finMs": 7240
+        },
+        {
+          "palabra": "ilusión",
+          "inicioMs": 7240,
+          "finMs": 7580
+        },
+        {
+          "palabra": "total",
+          "inicioMs": 7580,
+          "finMs": 7900
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "texto": "Cada vez que recuerdas un suceso, tu hipocampo no solo abre el archivo: lo destruye, lo mezcla con lo que sientes hoy... y lo vuelve a escribir en lápiz.",
+      "icono": "Edit3",
+      "colorIcono": "#F59E0B",
+      "tituloVisual": "REESCRIBIENDO EN LÁPIZ",
+      "composicionVisual": "plano_general",
+      "escenario": "escritorio_hipocampo_reconsolidacion",
+      "layout": "narrativo",
+      "transicion": "zoom_in",
+      "efectosCamara": [
+        "drift",
+        "punch"
+      ],
+      "sfx": "sfx/sfx_goma_borrar_sello_reconsolidado.wav",
+      "volumenSfx": 0.26,
+      "palabrasClave": [
+        "hipocampo",
+        "abre el archivo",
+        "lo destruye",
+        "lo mezcla",
+        "escribir en lápiz"
+      ],
+      "personajes": [
+        {
+          "id": "escribano_hipocampo",
+          "nombre": "Escribano del Hipocampo",
+          "posicion": {
+            "x": -210,
+            "y": 140
+          },
+          "escala": 1.0,
+          "orientacion": "derecha",
+          "habla": true,
+          "capaZ": 25,
+          "props": {
+            "derecha": "hoja_manuscrito_lapiz_goma",
+            "izquierda": "sello_tinta_reconsolidado"
+          },
+          "acciones": [
+            {
+              "tipo": "personalizada",
+              "pasos": [
+                {
+                  "inicioProgreso": 0,
+                  "finProgreso": 0.45,
+                  "poseId": "taking_notes",
+                  "expresion": "analytical",
+                  "posicion": {
+                    "x": -210,
+                    "y": 140
+                  },
+                  "curva": "suave",
+                  "procedural": "manipular"
+                },
+                {
+                  "inicioProgreso": 0.45,
+                  "finProgreso": 0.75,
+                  "poseId": "explaining_both_hands",
+                  "expresion": "talking_enthusiastic",
+                  "posicion": {
+                    "x": -200,
+                    "y": 140
+                  },
+                  "curva": "suave",
+                  "procedural": "estatico"
+                },
+                {
+                  "inicioProgreso": 0.75,
+                  "finProgreso": 1.0,
+                  "poseId": "presenting_object",
+                  "expresion": "eureka",
+                  "posicion": {
+                    "x": -190,
+                    "y": 140
+                  },
+                  "curva": "suave",
+                  "procedural": "estatico"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "duracionSegundos": 8.242,
+      "palabras": [
+        {
+          "palabra": "Cada",
+          "inicioMs": 0,
+          "finMs": 280
+        },
+        {
+          "palabra": "vez",
+          "inicioMs": 280,
+          "finMs": 420
+        },
+        {
+          "palabra": "que",
+          "inicioMs": 420,
+          "finMs": 560
+        },
+        {
+          "palabra": "recuerdas",
+          "inicioMs": 560,
+          "finMs": 980
+        },
+        {
+          "palabra": "un",
+          "inicioMs": 980,
+          "finMs": 1140
+        },
+        {
+          "palabra": "suceso",
+          "inicioMs": 1140,
+          "finMs": 1620
+        },
+        {
+          "palabra": "tu",
+          "inicioMs": 1900,
+          "finMs": 1960
+        },
+        {
+          "palabra": "hipocampo",
+          "inicioMs": 1960,
+          "finMs": 2440
+        },
+        {
+          "palabra": "no",
+          "inicioMs": 2440,
+          "finMs": 2540
+        },
+        {
+          "palabra": "solo",
+          "inicioMs": 2540,
+          "finMs": 2700
+        },
+        {
+          "palabra": "abre",
+          "inicioMs": 2700,
+          "finMs": 2940
+        },
+        {
+          "palabra": "el",
+          "inicioMs": 2940,
+          "finMs": 3060
+        },
+        {
+          "palabra": "archivo",
+          "inicioMs": 3060,
+          "finMs": 3400
+        },
+        {
+          "palabra": "lo",
+          "inicioMs": 3720,
+          "finMs": 3780
+        },
+        {
+          "palabra": "destruye",
+          "inicioMs": 3780,
+          "finMs": 4280
+        },
+        {
+          "palabra": "lo",
+          "inicioMs": 4560,
+          "finMs": 4600
+        },
+        {
+          "palabra": "mezcla",
+          "inicioMs": 4600,
+          "finMs": 4920
+        },
+        {
+          "palabra": "con",
+          "inicioMs": 4920,
+          "finMs": 5060
+        },
+        {
+          "palabra": "lo",
+          "inicioMs": 5060,
+          "finMs": 5140
+        },
+        {
+          "palabra": "que",
+          "inicioMs": 5140,
+          "finMs": 5260
+        },
+        {
+          "palabra": "sientes",
+          "inicioMs": 5260,
+          "finMs": 5500
+        },
+        {
+          "palabra": "hoy",
+          "inicioMs": 5500,
+          "finMs": 6300
+        },
+        {
+          "palabra": "y",
+          "inicioMs": 6300,
+          "finMs": 6440
+        },
+        {
+          "palabra": "lo",
+          "inicioMs": 6440,
+          "finMs": 6540
+        },
+        {
+          "palabra": "vuelve",
+          "inicioMs": 6540,
+          "finMs": 6800
+        },
+        {
+          "palabra": "a",
+          "inicioMs": 6800,
+          "finMs": 6840
+        },
+        {
+          "palabra": "escribir",
+          "inicioMs": 6840,
+          "finMs": 7100
+        },
+        {
+          "palabra": "en",
+          "inicioMs": 7100,
+          "finMs": 7220
+        },
+        {
+          "palabra": "lápiz",
+          "inicioMs": 7220,
+          "finMs": 7640
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "texto": "Esto se llama reconsolidación. Y en los años setenta, la psicóloga Elizabeth Loftus demostró lo fácil que es jaquear este sistema en cualquier juicio legal.",
+      "icono": "Scale",
+      "colorIcono": "#8B5CF6",
+      "tituloVisual": "JUICIO A LA MEMORIA",
+      "composicionVisual": "escenario_ilustrado",
+      "escenario": "sala_tribunal_loftus",
+      "layout": "narrativo",
+      "transicion": "whip_right",
+      "efectosCamara": [
+        "punch",
+        "drift"
+      ],
+      "sfx": "sfx/sfx_tribunal_mazo_loftus.wav",
+      "volumenSfx": 0.25,
+      "palabrasClave": [
+        "reconsolidación",
+        "años setenta",
+        "Elizabeth Loftus",
+        "jaquear este sistema",
+        "juicio legal"
+      ],
+      "personajes": [
+        {
+          "id": "testigo_tribunal",
+          "nombre": "Testigo Ocular",
+          "posicion": {
+            "x": -230,
+            "y": 120
+          },
+          "escala": 0.98,
+          "orientacion": "derecha",
+          "habla": true,
+          "capaZ": 25,
+          "props": {
+            "ambas": "tarjetas_loftus_contactaron_estrellaron"
+          },
+          "acciones": [
+            {
+              "tipo": "personalizada",
+              "pasos": [
+                {
+                  "inicioProgreso": 0,
+                  "finProgreso": 0.4,
+                  "poseId": "warning_danger",
+                  "expresion": "worried",
+                  "posicion": {
+                    "x": -230,
+                    "y": 120
+                  },
+                  "curva": "suave",
+                  "procedural": "temblar"
+                },
+                {
+                  "inicioProgreso": 0.4,
+                  "finProgreso": 0.75,
+                  "poseId": "scratching_head",
+                  "expresion": "confused",
+                  "posicion": {
+                    "x": -220,
+                    "y": 120
+                  },
+                  "curva": "suave",
+                  "procedural": "estatico"
+                },
+                {
+                  "inicioProgreso": 0.75,
+                  "finProgreso": 1.0,
+                  "poseId": "nodding_yes",
+                  "expresion": "analytical",
+                  "posicion": {
+                    "x": -210,
+                    "y": 120
+                  },
+                  "curva": "suave",
+                  "procedural": "estatico"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "duracionSegundos": 8.554,
+      "palabras": [
+        {
+          "palabra": "Esto",
+          "inicioMs": 0,
+          "finMs": 320
+        },
+        {
+          "palabra": "se",
+          "inicioMs": 320,
+          "finMs": 440
+        },
+        {
+          "palabra": "llama",
+          "inicioMs": 440,
+          "finMs": 620
+        },
+        {
+          "palabra": "reconsolidación",
+          "inicioMs": 620,
+          "finMs": 1480
+        },
+        {
+          "palabra": "Y",
+          "inicioMs": 1880,
+          "finMs": 1900
+        },
+        {
+          "palabra": "en",
+          "inicioMs": 1900,
+          "finMs": 1960
+        },
+        {
+          "palabra": "los",
+          "inicioMs": 1960,
+          "finMs": 2080
+        },
+        {
+          "palabra": "años",
+          "inicioMs": 2080,
+          "finMs": 2300
+        },
+        {
+          "palabra": "setenta",
+          "inicioMs": 2300,
+          "finMs": 2860
+        },
+        {
+          "palabra": "la",
+          "inicioMs": 3180,
+          "finMs": 3240
+        },
+        {
+          "palabra": "psicóloga",
+          "inicioMs": 3240,
+          "finMs": 3700
+        },
+        {
+          "palabra": "Elizabeth",
+          "inicioMs": 3700,
+          "finMs": 4040
+        },
+        {
+          "palabra": "Loftus",
+          "inicioMs": 4040,
+          "finMs": 4600
+        },
+        {
+          "palabra": "demostró",
+          "inicioMs": 4600,
+          "finMs": 5000
+        },
+        {
+          "palabra": "lo",
+          "inicioMs": 5000,
+          "finMs": 5100
+        },
+        {
+          "palabra": "fácil",
+          "inicioMs": 5100,
+          "finMs": 5400
+        },
+        {
+          "palabra": "que",
+          "inicioMs": 5400,
+          "finMs": 5620
+        },
+        {
+          "palabra": "es",
+          "inicioMs": 5620,
+          "finMs": 5780
+        },
+        {
+          "palabra": "jaquear",
+          "inicioMs": 5780,
+          "finMs": 6140
+        },
+        {
+          "palabra": "este",
+          "inicioMs": 6140,
+          "finMs": 6300
+        },
+        {
+          "palabra": "sistema",
+          "inicioMs": 6300,
+          "finMs": 6640
+        },
+        {
+          "palabra": "en",
+          "inicioMs": 6640,
+          "finMs": 6800
+        },
+        {
+          "palabra": "cualquier",
+          "inicioMs": 6800,
+          "finMs": 7040
+        },
+        {
+          "palabra": "juicio",
+          "inicioMs": 7040,
+          "finMs": 7360
+        },
+        {
+          "palabra": "legal",
+          "inicioMs": 7360,
+          "finMs": 7620
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "texto": "Si a los testigos les preguntaban a qué velocidad chocaron, calculaban cincuenta kilómetros por hora. Pero si usaban la palabra estrellaron, la cifra subía a sesenta y cinco... ¡y juraban haber visto vidrios rotos!",
+      "icono": "Gauge",
+      "colorIcono": "#EF4444",
+      "tituloVisual": "CONTACTARON VS ESTRELLARON",
+      "composicionVisual": "cifras_concepto",
+      "escenario": "diagrama_velocimetro_loftus",
+      "layout": "narrativo",
+      "transicion": "zoom_in",
+      "efectosCamara": [
+        "punch",
+        "drift"
+      ],
+      "sfx": "sfx/sfx_loftus_velocimetro_kablam.wav",
+      "volumenSfx": 0.26,
+      "palabrasClave": [
+        "chocaron",
+        "cincuenta kilómetros",
+        "estrellaron",
+        "sesenta y cinco",
+        "vidrios rotos"
+      ],
+      "personajes": [
+        {
+          "id": "stickman_comparativa",
+          "nombre": "Stickman Comparativo",
+          "posicion": {
+            "x": 0,
+            "y": 250
+          },
+          "escala": 1.0,
+          "orientacion": "derecha",
+          "habla": true,
+          "capaZ": 25,
+          "props": {
+            "derecha": "proyeccion_cristales_rotos_falsos"
+          },
+          "acciones": [
+            {
+              "tipo": "personalizada",
+              "pasos": [
+                {
+                  "inicioProgreso": 0,
+                  "finProgreso": 0.45,
+                  "poseId": "comparing_two_objects",
+                  "expresion": "analytical",
+                  "posicion": {
+                    "x": 0,
+                    "y": 250
+                  },
+                  "curva": "suave",
+                  "procedural": "estatico"
+                },
+                {
+                  "inicioProgreso": 0.45,
+                  "finProgreso": 0.75,
+                  "poseId": "surprised_hands_up",
+                  "expresion": "surprised",
+                  "posicion": {
+                    "x": 0,
+                    "y": 250
+                  },
+                  "curva": "impacto",
+                  "procedural": "estatico"
+                },
+                {
+                  "inicioProgreso": 0.75,
+                  "finProgreso": 1.0,
+                  "poseId": "showing_both_hands",
+                  "expresion": "shocked",
+                  "posicion": {
+                    "x": 0,
+                    "y": 250
+                  },
+                  "curva": "suave",
+                  "procedural": "temblar"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "duracionSegundos": 11.122,
+      "palabras": [
+        {
+          "palabra": "Si",
+          "inicioMs": 0,
+          "finMs": 140
+        },
+        {
+          "palabra": "a",
+          "inicioMs": 140,
+          "finMs": 200
+        },
+        {
+          "palabra": "los",
+          "inicioMs": 200,
+          "finMs": 320
+        },
+        {
+          "palabra": "testigos",
+          "inicioMs": 320,
+          "finMs": 640
+        },
+        {
+          "palabra": "les",
+          "inicioMs": 640,
+          "finMs": 780
+        },
+        {
+          "palabra": "preguntaban",
+          "inicioMs": 780,
+          "finMs": 1300
+        },
+        {
+          "palabra": "a",
+          "inicioMs": 1300,
+          "finMs": 1480
+        },
+        {
+          "palabra": "qué",
+          "inicioMs": 1480,
+          "finMs": 1620
+        },
+        {
+          "palabra": "velocidad",
+          "inicioMs": 1620,
+          "finMs": 1900
+        },
+        {
+          "palabra": "chocaron",
+          "inicioMs": 1900,
+          "finMs": 2480
+        },
+        {
+          "palabra": "calculaban",
+          "inicioMs": 2680,
+          "finMs": 3000
+        },
+        {
+          "palabra": "cincuenta",
+          "inicioMs": 3000,
+          "finMs": 3460
+        },
+        {
+          "palabra": "kilómetros",
+          "inicioMs": 3460,
+          "finMs": 3860
+        },
+        {
+          "palabra": "por",
+          "inicioMs": 3860,
+          "finMs": 4080
+        },
+        {
+          "palabra": "hora",
+          "inicioMs": 4080,
+          "finMs": 4300
+        },
+        {
+          "palabra": "Pero",
+          "inicioMs": 4500,
+          "finMs": 4640
+        },
+        {
+          "palabra": "si",
+          "inicioMs": 4640,
+          "finMs": 4780
+        },
+        {
+          "palabra": "usaban",
+          "inicioMs": 4780,
+          "finMs": 5060
+        },
+        {
+          "palabra": "la",
+          "inicioMs": 5060,
+          "finMs": 5200
+        },
+        {
+          "palabra": "palabra",
+          "inicioMs": 5200,
+          "finMs": 5500
+        },
+        {
+          "palabra": "estrellaron",
+          "inicioMs": 5500,
+          "finMs": 6200
+        },
+        {
+          "palabra": "la",
+          "inicioMs": 6460,
+          "finMs": 6520
+        },
+        {
+          "palabra": "cifra",
+          "inicioMs": 6520,
+          "finMs": 6880
+        },
+        {
+          "palabra": "subía",
+          "inicioMs": 6880,
+          "finMs": 7280
+        },
+        {
+          "palabra": "a",
+          "inicioMs": 7280,
+          "finMs": 7400
+        },
+        {
+          "palabra": "sesenta",
+          "inicioMs": 7400,
+          "finMs": 7800
+        },
+        {
+          "palabra": "y",
+          "inicioMs": 7800,
+          "finMs": 7920
+        },
+        {
+          "palabra": "cinco",
+          "inicioMs": 7920,
+          "finMs": 8560
+        },
+        {
+          "palabra": "y",
+          "inicioMs": 8560,
+          "finMs": 8640
+        },
+        {
+          "palabra": "juraban",
+          "inicioMs": 8640,
+          "finMs": 8980
+        },
+        {
+          "palabra": "haber",
+          "inicioMs": 8980,
+          "finMs": 9240
+        },
+        {
+          "palabra": "visto",
+          "inicioMs": 9240,
+          "finMs": 9580
+        },
+        {
+          "palabra": "vidrios",
+          "inicioMs": 9580,
+          "finMs": 9960
+        },
+        {
+          "palabra": "rotos",
+          "inicioMs": 9960,
+          "finMs": 10480
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "texto": "El cerebro odia los vacíos. Si hay una pieza que falta en la película de tu pasado, inventa un detalle verosímil y lo fusiona tan bien que jamás sospecharás del truco.",
+      "icono": "Puzzle",
+      "colorIcono": "#0284C7",
+      "tituloVisual": "CONFABULACIÓN AUTOMÁTICA",
+      "composicionVisual": "escenario_ilustrado",
+      "escenario": "mesa_rompecabezas_confabulacion",
+      "layout": "narrativo",
+      "transicion": "whip_left",
+      "efectosCamara": [
+        "drift"
+      ],
+      "sfx": "sfx/sfx_rompecabezas_plastilina_snap.wav",
+      "volumenSfx": 0.25,
+      "palabrasClave": [
+        "odia los vacíos",
+        "pieza que falta",
+        "película de tu pasado",
+        "detalle verosímil",
+        "jamás sospecharás"
+      ],
+      "personajes": [
+        {
+          "id": "stickman_puzzle",
+          "nombre": "Stickman Artesano",
+          "posicion": {
+            "x": -220,
+            "y": 140
+          },
+          "escala": 1.0,
+          "orientacion": "derecha",
+          "habla": true,
+          "capaZ": 25,
+          "props": {
+            "derecha": "rompecabezas_madera_plastilina"
+          },
+          "acciones": [
+            {
+              "tipo": "personalizada",
+              "pasos": [
+                {
+                  "inicioProgreso": 0,
+                  "finProgreso": 0.4,
+                  "poseId": "investigating_magnifier",
+                  "expresion": "thinking",
+                  "posicion": {
+                    "x": -220,
+                    "y": 140
+                  },
+                  "curva": "suave",
+                  "procedural": "manipular"
+                },
+                {
+                  "inicioProgreso": 0.4,
+                  "finProgreso": 0.75,
+                  "poseId": "shrugging",
+                  "expresion": "skeptical",
+                  "posicion": {
+                    "x": -210,
+                    "y": 140
+                  },
+                  "curva": "suave",
+                  "procedural": "estatico"
+                },
+                {
+                  "inicioProgreso": 0.75,
+                  "finProgreso": 1.0,
+                  "poseId": "thumbs_up_approval",
+                  "expresion": "smile_wide",
+                  "posicion": {
+                    "x": -200,
+                    "y": 140
+                  },
+                  "curva": "suave",
+                  "procedural": "estatico"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "duracionSegundos": 9.754,
+      "palabras": [
+        {
+          "palabra": "El",
+          "inicioMs": 0,
+          "finMs": 220
+        },
+        {
+          "palabra": "cerebro",
+          "inicioMs": 220,
+          "finMs": 620
+        },
+        {
+          "palabra": "odia",
+          "inicioMs": 620,
+          "finMs": 1000
+        },
+        {
+          "palabra": "los",
+          "inicioMs": 1000,
+          "finMs": 1140
+        },
+        {
+          "palabra": "vacíos",
+          "inicioMs": 1140,
+          "finMs": 1700
+        },
+        {
+          "palabra": "Si",
+          "inicioMs": 2080,
+          "finMs": 2100
+        },
+        {
+          "palabra": "hay",
+          "inicioMs": 2100,
+          "finMs": 2200
+        },
+        {
+          "palabra": "una",
+          "inicioMs": 2200,
+          "finMs": 2360
+        },
+        {
+          "palabra": "pieza",
+          "inicioMs": 2360,
+          "finMs": 2720
+        },
+        {
+          "palabra": "que",
+          "inicioMs": 2720,
+          "finMs": 2860
+        },
+        {
+          "palabra": "falta",
+          "inicioMs": 2860,
+          "finMs": 3040
+        },
+        {
+          "palabra": "en",
+          "inicioMs": 3040,
+          "finMs": 3300
+        },
+        {
+          "palabra": "la",
+          "inicioMs": 3300,
+          "finMs": 3320
+        },
+        {
+          "palabra": "película",
+          "inicioMs": 3320,
+          "finMs": 3660
+        },
+        {
+          "palabra": "de",
+          "inicioMs": 3660,
+          "finMs": 3880
+        },
+        {
+          "palabra": "tu",
+          "inicioMs": 3880,
+          "finMs": 3980
+        },
+        {
+          "palabra": "pasado",
+          "inicioMs": 3980,
+          "finMs": 4340
+        },
+        {
+          "palabra": "inventa",
+          "inicioMs": 4600,
+          "finMs": 5100
+        },
+        {
+          "palabra": "un",
+          "inicioMs": 5100,
+          "finMs": 5180
+        },
+        {
+          "palabra": "detalle",
+          "inicioMs": 5180,
+          "finMs": 5520
+        },
+        {
+          "palabra": "verosímil",
+          "inicioMs": 5520,
+          "finMs": 6220
+        },
+        {
+          "palabra": "y",
+          "inicioMs": 6220,
+          "finMs": 6420
+        },
+        {
+          "palabra": "lo",
+          "inicioMs": 6420,
+          "finMs": 6500
+        },
+        {
+          "palabra": "fusiona",
+          "inicioMs": 6500,
+          "finMs": 6940
+        },
+        {
+          "palabra": "tan",
+          "inicioMs": 6940,
+          "finMs": 7060
+        },
+        {
+          "palabra": "bien",
+          "inicioMs": 7060,
+          "finMs": 7320
+        },
+        {
+          "palabra": "que",
+          "inicioMs": 7320,
+          "finMs": 7500
+        },
+        {
+          "palabra": "jamás",
+          "inicioMs": 7500,
+          "finMs": 7800
+        },
+        {
+          "palabra": "sospecharás",
+          "inicioMs": 7800,
+          "finMs": 8400
+        },
+        {
+          "palabra": "del",
+          "inicioMs": 8400,
+          "finMs": 8540
+        },
+        {
+          "palabra": "truco",
+          "inicioMs": 8540,
+          "finMs": 8920
+        }
+      ]
+    },
+    {
+      "id": 7,
+      "texto": "Tu mente no busca la verdad pura: busca una historia coherente para proteger quién eres. Así que la próxima vez que discutas por un recuerdo... no pongas las manos al fuego.",
+      "icono": "BookOpen",
+      "colorIcono": "#22C55E",
+      "tituloVisual": "HISTORIA COHERENTE",
+      "composicionVisual": "plano_general",
+      "escenario": "sala_estar_album_memoria",
+      "layout": "narrativo",
+      "transicion": "zoom_in",
+      "efectosCamara": [
+        "drift"
+      ],
+      "sfx": "sfx/sfx_album_fotos_pagina_piano.wav",
+      "volumenSfx": 0.24,
+      "palabrasClave": [
+        "verdad pura",
+        "historia coherente",
+        "proteger quién eres",
+        "discutas por un recuerdo",
+        "manos al fuego"
+      ],
+      "personajes": [
+        {
+          "id": "stickman_album",
+          "nombre": "Stickman Reflexivo",
+          "posicion": {
+            "x": -180,
+            "y": 100
+          },
+          "escala": 1.0,
+          "orientacion": "derecha",
+          "habla": true,
+          "capaZ": 25,
+          "props": {
+            "ambas": "album_fotos_familiar_cuero"
+          },
+          "acciones": [
+            {
+              "tipo": "personalizada",
+              "pasos": [
+                {
+                  "inicioProgreso": 0,
+                  "finProgreso": 0.45,
+                  "poseId": "holding_board",
+                  "expresion": "smile_soft",
+                  "posicion": {
+                    "x": -180,
+                    "y": 100
+                  },
+                  "curva": "suave",
+                  "procedural": "estatico"
+                },
+                {
+                  "inicioProgreso": 0.45,
+                  "finProgreso": 0.8,
+                  "poseId": "arms_crossed",
+                  "expresion": "eureka",
+                  "posicion": {
+                    "x": -180,
+                    "y": 100
+                  },
+                  "curva": "suave",
+                  "procedural": "estatico"
+                },
+                {
+                  "inicioProgreso": 0.8,
+                  "finProgreso": 1.0,
+                  "poseId": "waving_goodbye",
+                  "expresion": "smile_wide",
+                  "posicion": {
+                    "x": -180,
+                    "y": 100
+                  },
+                  "curva": "suave",
+                  "procedural": "estatico"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "duracionSegundos": 8.65,
+      "palabras": [
+        {
+          "palabra": "Tu",
+          "inicioMs": 0,
+          "finMs": 160
+        },
+        {
+          "palabra": "mente",
+          "inicioMs": 160,
+          "finMs": 360
+        },
+        {
+          "palabra": "no",
+          "inicioMs": 360,
+          "finMs": 600
+        },
+        {
+          "palabra": "busca",
+          "inicioMs": 600,
+          "finMs": 860
+        },
+        {
+          "palabra": "la",
+          "inicioMs": 860,
+          "finMs": 1020
+        },
+        {
+          "palabra": "verdad",
+          "inicioMs": 1020,
+          "finMs": 1240
+        },
+        {
+          "palabra": "pura",
+          "inicioMs": 1240,
+          "finMs": 1720
+        },
+        {
+          "palabra": "busca",
+          "inicioMs": 1940,
+          "finMs": 2160
+        },
+        {
+          "palabra": "una",
+          "inicioMs": 2160,
+          "finMs": 2280
+        },
+        {
+          "palabra": "historia",
+          "inicioMs": 2280,
+          "finMs": 2540
+        },
+        {
+          "palabra": "coherente",
+          "inicioMs": 2540,
+          "finMs": 3060
+        },
+        {
+          "palabra": "para",
+          "inicioMs": 3060,
+          "finMs": 3240
+        },
+        {
+          "palabra": "proteger",
+          "inicioMs": 3240,
+          "finMs": 3640
+        },
+        {
+          "palabra": "quién",
+          "inicioMs": 3640,
+          "finMs": 3900
+        },
+        {
+          "palabra": "eres",
+          "inicioMs": 3900,
+          "finMs": 4180
+        },
+        {
+          "palabra": "Así",
+          "inicioMs": 4420,
+          "finMs": 4540
+        },
+        {
+          "palabra": "que",
+          "inicioMs": 4540,
+          "finMs": 4660
+        },
+        {
+          "palabra": "la",
+          "inicioMs": 4660,
+          "finMs": 4760
+        },
+        {
+          "palabra": "próxima",
+          "inicioMs": 4760,
+          "finMs": 5100
+        },
+        {
+          "palabra": "vez",
+          "inicioMs": 5100,
+          "finMs": 5300
+        },
+        {
+          "palabra": "que",
+          "inicioMs": 5300,
+          "finMs": 5420
+        },
+        {
+          "palabra": "discutas",
+          "inicioMs": 5420,
+          "finMs": 5840
+        },
+        {
+          "palabra": "por",
+          "inicioMs": 5840,
+          "finMs": 6000
+        },
+        {
+          "palabra": "un",
+          "inicioMs": 6000,
+          "finMs": 6080
+        },
+        {
+          "palabra": "recuerdo",
+          "inicioMs": 6080,
+          "finMs": 6840
+        },
+        {
+          "palabra": "no",
+          "inicioMs": 6840,
+          "finMs": 6940
+        },
+        {
+          "palabra": "pongas",
+          "inicioMs": 6940,
+          "finMs": 7200
+        },
+        {
+          "palabra": "las",
+          "inicioMs": 7200,
+          "finMs": 7300
+        },
+        {
+          "palabra": "manos",
+          "inicioMs": 7300,
+          "finMs": 7520
+        },
+        {
+          "palabra": "al",
+          "inicioMs": 7520,
+          "finMs": 7740
+        },
+        {
+          "palabra": "fuego",
+          "inicioMs": 7740,
+          "finMs": 7980
+        }
+      ]
+    }
+  ]
+}

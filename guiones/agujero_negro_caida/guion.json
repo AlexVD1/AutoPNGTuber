@@ -1,0 +1,1625 @@
+{
+  "meta": {
+    "id": "agujero_negro_caida",
+    "slug": "agujero_negro_caida",
+    "temaResumen": "¿Qué le pasaría a tu cuerpo al cruzar el horizonte de sucesos de un agujero negro?",
+    "titulo": "¿Qué le pasaría a tu cuerpo dentro de un agujero negro?",
+    "titulo_corto": "AGUJERO NEGRO CAÍDA",
+    "gancho": "¿Alguna vez te has preguntado qué sentirías si cayeras dentro de un agujero negro supermasivo?",
+    "fuentes": [
+      "Kip Thorne: Black Holes & Time Warps",
+      "NASA Goddard Space Flight Center (Astrophysics Division)"
+    ],
+    "genero": "SCIENCE",
+    "duracionObjetivo": [
+      62,
+      110
+    ]
+  },
+  "escenas": [
+    {
+      "id": 1,
+      "texto": "¿Alguna vez te has preguntado qué sentirías si cayeras dentro de un agujero negro supermasivo?",
+      "icono": "Orbit",
+      "colorIcono": "#8B5CF6",
+      "tituloVisual": "ABISMO CÓSMICO",
+      "composicionVisual": "plano_general",
+      "escenario": "espacio_profundo",
+      "layout": "narrativo",
+      "transicion": "zoom_in",
+      "efectosCamara": [
+        "drift"
+      ],
+      "sfx": "sfx/sfx_tension_riser.wav",
+      "volumenSfx": 0.22,
+      "personajes": [
+        {
+          "id": "explorador_cosmico",
+          "posicion": {
+            "x": -240,
+            "y": 40
+          },
+          "escala": 1,
+          "orientacion": "derecha",
+          "prop": "compass",
+          "acciones": [
+            {
+              "tipo": "caminar_hacia",
+              "desdeX": -300,
+              "haciaX": -70
+            }
+          ],
+          "habla": true
+        }
+      ],
+      "objetos": [
+        {
+          "id": "agujero_negro_escena_1",
+          "propId": "black_hole",
+          "posicion": {
+            "x": 260,
+            "y": -90
+          },
+          "escala": 1.55,
+          "animacion": {
+            "tipo": "pulso"
+          }
+        }
+      ],
+      "palabrasClave": [
+        "agujero negro",
+        "caer dentro",
+        "abismo cósmico"
+      ],
+      "duracionSegundos": 4.834,
+      "palabras": [
+        {
+          "palabra": "Alguna",
+          "inicioMs": 0,
+          "finMs": 380
+        },
+        {
+          "palabra": "vez",
+          "inicioMs": 380,
+          "finMs": 500
+        },
+        {
+          "palabra": "te",
+          "inicioMs": 500,
+          "finMs": 680
+        },
+        {
+          "palabra": "has",
+          "inicioMs": 680,
+          "finMs": 740
+        },
+        {
+          "palabra": "preguntado",
+          "inicioMs": 740,
+          "finMs": 1280
+        },
+        {
+          "palabra": "qué",
+          "inicioMs": 1280,
+          "finMs": 1480
+        },
+        {
+          "palabra": "sentirías",
+          "inicioMs": 1480,
+          "finMs": 2000
+        },
+        {
+          "palabra": "si",
+          "inicioMs": 2000,
+          "finMs": 2160
+        },
+        {
+          "palabra": "cayeras",
+          "inicioMs": 2160,
+          "finMs": 2520
+        },
+        {
+          "palabra": "dentro",
+          "inicioMs": 2520,
+          "finMs": 2760
+        },
+        {
+          "palabra": "de",
+          "inicioMs": 2760,
+          "finMs": 2940
+        },
+        {
+          "palabra": "un",
+          "inicioMs": 2940,
+          "finMs": 3040
+        },
+        {
+          "palabra": "agujero",
+          "inicioMs": 3040,
+          "finMs": 3400
+        },
+        {
+          "palabra": "negro",
+          "inicioMs": 3400,
+          "finMs": 3620
+        },
+        {
+          "palabra": "supermasivo",
+          "inicioMs": 3620,
+          "finMs": 4360
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "texto": "A medida que tu nave se aproxima al punto de no retorno, el universo entero detrás de ti comienza a distorsionarse.",
+      "icono": "Rocket",
+      "colorIcono": "#3B82F6",
+      "tituloVisual": "NO RETORNO",
+      "composicionVisual": "plano_general",
+      "escenario": "espacio_profundo",
+      "layout": "narrativo",
+      "transicion": "whip_right",
+      "efectosCamara": [
+        "drift"
+      ],
+      "elementosNarrativos": [
+        {
+          "tipo": "speed_lines"
+        }
+      ],
+      "personajes": [
+        {
+          "id": "piloto",
+          "posicion": {
+            "x": -60,
+            "y": 50
+          },
+          "escala": 1.05,
+          "orientacion": "derecha",
+          "poseId": "looking_up_pose",
+          "expresion": "shocked",
+          "habla": true
+        }
+      ],
+      "objetos": [
+        {
+          "id": "nave_espacial_escena_2",
+          "propId": "spaceship",
+          "posicion": {
+            "x": 250,
+            "y": -60
+          },
+          "escala": 1.55,
+          "animacion": {
+            "tipo": "flotar"
+          }
+        }
+      ],
+      "palabrasClave": [
+        "nave espacial",
+        "punto de no retorno",
+        "universo distorsionado"
+      ],
+      "duracionSegundos": 5.818,
+      "palabras": [
+        {
+          "palabra": "A",
+          "inicioMs": 0,
+          "finMs": 200
+        },
+        {
+          "palabra": "medida",
+          "inicioMs": 200,
+          "finMs": 340
+        },
+        {
+          "palabra": "que",
+          "inicioMs": 340,
+          "finMs": 540
+        },
+        {
+          "palabra": "tu",
+          "inicioMs": 540,
+          "finMs": 720
+        },
+        {
+          "palabra": "nave",
+          "inicioMs": 720,
+          "finMs": 1240
+        },
+        {
+          "palabra": "se",
+          "inicioMs": 1240,
+          "finMs": 1340
+        },
+        {
+          "palabra": "aproxima",
+          "inicioMs": 1340,
+          "finMs": 1560
+        },
+        {
+          "palabra": "al",
+          "inicioMs": 1560,
+          "finMs": 1800
+        },
+        {
+          "palabra": "punto",
+          "inicioMs": 1800,
+          "finMs": 1920
+        },
+        {
+          "palabra": "de",
+          "inicioMs": 1920,
+          "finMs": 2420
+        },
+        {
+          "palabra": "no",
+          "inicioMs": 2660,
+          "finMs": 2760
+        },
+        {
+          "palabra": "retorno",
+          "inicioMs": 2760,
+          "finMs": 3000
+        },
+        {
+          "palabra": "el",
+          "inicioMs": 3000,
+          "finMs": 3460
+        },
+        {
+          "palabra": "universo",
+          "inicioMs": 3460,
+          "finMs": 3800
+        },
+        {
+          "palabra": "entero",
+          "inicioMs": 3800,
+          "finMs": 3920
+        },
+        {
+          "palabra": "detrás",
+          "inicioMs": 3920,
+          "finMs": 4060
+        },
+        {
+          "palabra": "de",
+          "inicioMs": 4060,
+          "finMs": 4540
+        },
+        {
+          "palabra": "ti",
+          "inicioMs": 4540,
+          "finMs": 4640
+        },
+        {
+          "palabra": "comienza",
+          "inicioMs": 4640,
+          "finMs": 5300
+        },
+        {
+          "palabra": "a",
+          "inicioMs": 5300,
+          "finMs": 5434
+        },
+        {
+          "palabra": "distorsionarse",
+          "inicioMs": 5300,
+          "finMs": 5434
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "texto": "La gravedad es tan brutal que curva la luz del cosmos, creando un anillo brillante conocido como disco de acreción.",
+      "icono": "Sparkles",
+      "colorIcono": "#F59E0B",
+      "tituloVisual": "DISCO DE ACRECIÓN",
+      "composicionVisual": "plano_general",
+      "escenario": "espacio_profundo",
+      "layout": "narrativo",
+      "transicion": "corte",
+      "efectosCamara": [
+        "drift"
+      ],
+      "personajes": [
+        {
+          "id": "astrofisico",
+          "posicion": {
+            "x": -150,
+            "y": 30
+          },
+          "escala": 1,
+          "orientacion": "derecha",
+          "poseId": "presenting_object",
+          "expresion": "analytical",
+          "acciones": [
+            {
+              "tipo": "mirar_y_reaccionar"
+            }
+          ],
+          "habla": true
+        }
+      ],
+      "objetos": [
+        {
+          "id": "disco_acreción_escena_3",
+          "propId": "black_hole",
+          "posicion": {
+            "x": 250,
+            "y": -80
+          },
+          "escala": 1.55,
+          "animacion": {
+            "tipo": "pulso"
+          }
+        }
+      ],
+      "palabrasClave": [
+        "curva la luz",
+        "anillo brillante",
+        "disco de acreción"
+      ],
+      "duracionSegundos": 5.842,
+      "palabras": [
+        {
+          "palabra": "La",
+          "inicioMs": 0,
+          "finMs": 200
+        },
+        {
+          "palabra": "gravedad",
+          "inicioMs": 200,
+          "finMs": 620
+        },
+        {
+          "palabra": "es",
+          "inicioMs": 620,
+          "finMs": 920
+        },
+        {
+          "palabra": "tan",
+          "inicioMs": 920,
+          "finMs": 1180
+        },
+        {
+          "palabra": "brutal",
+          "inicioMs": 1180,
+          "finMs": 1480
+        },
+        {
+          "palabra": "que",
+          "inicioMs": 1480,
+          "finMs": 1800
+        },
+        {
+          "palabra": "curva",
+          "inicioMs": 1800,
+          "finMs": 1900
+        },
+        {
+          "palabra": "la",
+          "inicioMs": 1900,
+          "finMs": 2040
+        },
+        {
+          "palabra": "luz",
+          "inicioMs": 2040,
+          "finMs": 2180
+        },
+        {
+          "palabra": "del",
+          "inicioMs": 2180,
+          "finMs": 2600
+        },
+        {
+          "palabra": "cosmos",
+          "inicioMs": 2860,
+          "finMs": 3120
+        },
+        {
+          "palabra": "creando",
+          "inicioMs": 3120,
+          "finMs": 3240
+        },
+        {
+          "palabra": "un",
+          "inicioMs": 3240,
+          "finMs": 3480
+        },
+        {
+          "palabra": "anillo",
+          "inicioMs": 3480,
+          "finMs": 3880
+        },
+        {
+          "palabra": "brillante",
+          "inicioMs": 3880,
+          "finMs": 4360
+        },
+        {
+          "palabra": "conocido",
+          "inicioMs": 4360,
+          "finMs": 4560
+        },
+        {
+          "palabra": "como",
+          "inicioMs": 4560,
+          "finMs": 4800
+        },
+        {
+          "palabra": "disco",
+          "inicioMs": 4800,
+          "finMs": 4920
+        },
+        {
+          "palabra": "de",
+          "inicioMs": 4920,
+          "finMs": 5360
+        },
+        {
+          "palabra": "acreción",
+          "inicioMs": 5360,
+          "finMs": 5592
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "texto": "Pronto cruzas el temido horizonte de sucesos: el límite absoluto donde ni siquiera los fotones de luz pueden escapar jamás.",
+      "icono": "CircleSlash",
+      "colorIcono": "#EF4444",
+      "tituloVisual": "LÍMITE ABSOLUTO",
+      "composicionVisual": "primer_plano",
+      "escenario": "espacio_profundo",
+      "layout": "narrativo",
+      "transicion": "flash",
+      "efectosCamara": [
+        "punch",
+        "shake"
+      ],
+      "sfx": "sfx/sfx_whoosh.wav",
+      "volumenSfx": 0.22,
+      "elementosNarrativos": [
+        {
+          "tipo": "danger_vignette"
+        },
+        {
+          "tipo": "shockwave_burst"
+        }
+      ],
+      "personajes": [
+        {
+          "id": "cruzando_limite",
+          "posicion": {
+            "x": 0,
+            "y": 10
+          },
+          "escala": 1.15,
+          "orientacion": "derecha",
+          "poseId": "warning_danger",
+          "expresion": "worried",
+          "prop": "cosmic_lock",
+          "habla": true
+        }
+      ],
+      "palabrasClave": [
+        "horizonte de sucesos",
+        "límite absoluto",
+        "luz atrapada"
+      ],
+      "duracionSegundos": 7.522,
+      "palabras": [
+        {
+          "palabra": "Pronto",
+          "inicioMs": 0,
+          "finMs": 400
+        },
+        {
+          "palabra": "cruzas",
+          "inicioMs": 400,
+          "finMs": 860
+        },
+        {
+          "palabra": "el",
+          "inicioMs": 860,
+          "finMs": 1100
+        },
+        {
+          "palabra": "temido",
+          "inicioMs": 1100,
+          "finMs": 1480
+        },
+        {
+          "palabra": "horizonte",
+          "inicioMs": 1480,
+          "finMs": 2000
+        },
+        {
+          "palabra": "de",
+          "inicioMs": 2000,
+          "finMs": 2140
+        },
+        {
+          "palabra": "sucesos",
+          "inicioMs": 2140,
+          "finMs": 2760
+        },
+        {
+          "palabra": "el",
+          "inicioMs": 3020,
+          "finMs": 3120
+        },
+        {
+          "palabra": "límite",
+          "inicioMs": 3120,
+          "finMs": 3500
+        },
+        {
+          "palabra": "absoluto",
+          "inicioMs": 3500,
+          "finMs": 4140
+        },
+        {
+          "palabra": "donde",
+          "inicioMs": 4140,
+          "finMs": 4300
+        },
+        {
+          "palabra": "ni",
+          "inicioMs": 4300,
+          "finMs": 4540
+        },
+        {
+          "palabra": "siquiera",
+          "inicioMs": 4540,
+          "finMs": 4900
+        },
+        {
+          "palabra": "los",
+          "inicioMs": 4900,
+          "finMs": 5080
+        },
+        {
+          "palabra": "fotones",
+          "inicioMs": 5080,
+          "finMs": 5480
+        },
+        {
+          "palabra": "de",
+          "inicioMs": 5480,
+          "finMs": 5620
+        },
+        {
+          "palabra": "luz",
+          "inicioMs": 5620,
+          "finMs": 5800
+        },
+        {
+          "palabra": "pueden",
+          "inicioMs": 5800,
+          "finMs": 6180
+        },
+        {
+          "palabra": "escapar",
+          "inicioMs": 6180,
+          "finMs": 6620
+        },
+        {
+          "palabra": "jamás",
+          "inicioMs": 6620,
+          "finMs": 7060
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "texto": "Para un observador lejano que te mire con telescopio, la física relativista de Einstein produce un efecto alucinante.",
+      "icono": "Telescope",
+      "colorIcono": "#6366F1",
+      "tituloVisual": "RELATIVIDAD PURA",
+      "composicionVisual": "plano_general",
+      "escenario": "espacio_profundo",
+      "layout": "narrativo",
+      "transicion": "whip_left",
+      "efectosCamara": [
+        "drift"
+      ],
+      "personajes": [
+        {
+          "id": "astronomo",
+          "posicion": {
+            "x": -150,
+            "y": 25
+          },
+          "escala": 1,
+          "orientacion": "derecha",
+          "poseId": "explaining_both_hands",
+          "expresion": "analytical",
+          "prop": "telescope",
+          "acciones": [
+            {
+              "tipo": "mirar_y_reaccionar"
+            }
+          ],
+          "habla": true
+        }
+      ],
+      "palabrasClave": [
+        "observador lejano",
+        "física relativista",
+        "efecto alucinante"
+      ],
+      "duracionSegundos": 6.058,
+      "palabras": [
+        {
+          "palabra": "Para",
+          "inicioMs": 0,
+          "finMs": 220
+        },
+        {
+          "palabra": "un",
+          "inicioMs": 220,
+          "finMs": 400
+        },
+        {
+          "palabra": "observador",
+          "inicioMs": 400,
+          "finMs": 920
+        },
+        {
+          "palabra": "lejano",
+          "inicioMs": 920,
+          "finMs": 1300
+        },
+        {
+          "palabra": "que",
+          "inicioMs": 1300,
+          "finMs": 1420
+        },
+        {
+          "palabra": "te",
+          "inicioMs": 1420,
+          "finMs": 1540
+        },
+        {
+          "palabra": "mire",
+          "inicioMs": 1540,
+          "finMs": 1740
+        },
+        {
+          "palabra": "con",
+          "inicioMs": 1740,
+          "finMs": 1860
+        },
+        {
+          "palabra": "telescopio",
+          "inicioMs": 1860,
+          "finMs": 2480
+        },
+        {
+          "palabra": "la",
+          "inicioMs": 2560,
+          "finMs": 2640
+        },
+        {
+          "palabra": "física",
+          "inicioMs": 2640,
+          "finMs": 2960
+        },
+        {
+          "palabra": "relativista",
+          "inicioMs": 2960,
+          "finMs": 3560
+        },
+        {
+          "palabra": "de",
+          "inicioMs": 3560,
+          "finMs": 3680
+        },
+        {
+          "palabra": "Einstein",
+          "inicioMs": 3680,
+          "finMs": 4000
+        },
+        {
+          "palabra": "produce",
+          "inicioMs": 4000,
+          "finMs": 4380
+        },
+        {
+          "palabra": "un",
+          "inicioMs": 4380,
+          "finMs": 4620
+        },
+        {
+          "palabra": "efecto",
+          "inicioMs": 4620,
+          "finMs": 4900
+        },
+        {
+          "palabra": "alucinante",
+          "inicioMs": 4900,
+          "finMs": 5600
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "texto": "Vería cómo tu velocidad se ralentiza gradualmente en el tiempo, tu imagen se congela y te desvaneces en un rojo oscuro.",
+      "icono": "Clock",
+      "colorIcono": "#EC4899",
+      "tituloVisual": "TIEMPO DETENIDO",
+      "composicionVisual": "cifras_concepto",
+      "escenario": "espacio_profundo",
+      "layout": "narrativo",
+      "transicion": "corte",
+      "efectosCamara": [
+        "drift"
+      ],
+      "personajes": [
+        {
+          "id": "tiempo_parado",
+          "posicion": {
+            "x": -30,
+            "y": 30
+          },
+          "escala": 1.05,
+          "orientacion": "derecha",
+          "poseId": "holding_both_hands",
+          "expresion": "confused",
+          "habla": true
+        }
+      ],
+      "objetos": [
+        {
+          "id": "reloj_arena_cosmico",
+          "propId": "cosmic_hourglass",
+          "posicion": {
+            "x": 230,
+            "y": -80
+          },
+          "escala": 1.55,
+          "animacion": {
+            "tipo": "pulso"
+          }
+        }
+      ],
+      "palabrasClave": [
+        "tiempo ralentizado",
+        "imagen congelada",
+        "desvanecerse"
+      ],
+      "duracionSegundos": 6.538,
+      "palabras": [
+        {
+          "palabra": "Vería",
+          "inicioMs": 0,
+          "finMs": 380
+        },
+        {
+          "palabra": "cómo",
+          "inicioMs": 380,
+          "finMs": 600
+        },
+        {
+          "palabra": "tu",
+          "inicioMs": 600,
+          "finMs": 760
+        },
+        {
+          "palabra": "velocidad",
+          "inicioMs": 760,
+          "finMs": 1140
+        },
+        {
+          "palabra": "se",
+          "inicioMs": 1140,
+          "finMs": 1400
+        },
+        {
+          "palabra": "ralentiza",
+          "inicioMs": 1400,
+          "finMs": 1840
+        },
+        {
+          "palabra": "gradualmente",
+          "inicioMs": 1840,
+          "finMs": 2400
+        },
+        {
+          "palabra": "en",
+          "inicioMs": 2400,
+          "finMs": 2600
+        },
+        {
+          "palabra": "el",
+          "inicioMs": 2600,
+          "finMs": 2680
+        },
+        {
+          "palabra": "tiempo",
+          "inicioMs": 2680,
+          "finMs": 3080
+        },
+        {
+          "palabra": "tu",
+          "inicioMs": 3240,
+          "finMs": 3320
+        },
+        {
+          "palabra": "imagen",
+          "inicioMs": 3320,
+          "finMs": 3580
+        },
+        {
+          "palabra": "se",
+          "inicioMs": 3580,
+          "finMs": 3780
+        },
+        {
+          "palabra": "congela",
+          "inicioMs": 3780,
+          "finMs": 4300
+        },
+        {
+          "palabra": "y",
+          "inicioMs": 4300,
+          "finMs": 4440
+        },
+        {
+          "palabra": "te",
+          "inicioMs": 4440,
+          "finMs": 4540
+        },
+        {
+          "palabra": "desvaneces",
+          "inicioMs": 4540,
+          "finMs": 5080
+        },
+        {
+          "palabra": "en",
+          "inicioMs": 5080,
+          "finMs": 5260
+        },
+        {
+          "palabra": "un",
+          "inicioMs": 5260,
+          "finMs": 5360
+        },
+        {
+          "palabra": "rojo",
+          "inicioMs": 5360,
+          "finMs": 5680
+        },
+        {
+          "palabra": "oscuro",
+          "inicioMs": 5680,
+          "finMs": 6060
+        }
+      ]
+    },
+    {
+      "id": 7,
+      "texto": "¡Pero desde tu propia perspectiva el tiempo corre normal, y la verdadera pesadilla física está por comenzar!",
+      "icono": "Flame",
+      "colorIcono": "#F97316",
+      "tituloVisual": "PESADILLA FÍSICA",
+      "composicionVisual": "primer_plano",
+      "escenario": "espacio_profundo",
+      "layout": "narrativo",
+      "transicion": "flash",
+      "efectosCamara": [
+        "shake",
+        "punch"
+      ],
+      "sfx": "sfx/sfx_dramatic_hit.wav",
+      "volumenSfx": 0.25,
+      "elementosNarrativos": [
+        {
+          "tipo": "danger_vignette"
+        },
+        {
+          "tipo": "shockwave_burst"
+        }
+      ],
+      "personajes": [
+        {
+          "id": "perspectiva_shock",
+          "posicion": {
+            "x": 70,
+            "y": 40
+          },
+          "escala": 1.05,
+          "orientacion": "izquierda",
+          "poseId": "shock_explosion",
+          "expresion": "shocked",
+          "acciones": [
+            {
+              "tipo": "sorpresa_y_retroceso"
+            }
+          ],
+          "habla": true
+        }
+      ],
+      "palabrasClave": [
+        "perspectiva propia",
+        "tiempo normal",
+        "pesadilla física"
+      ],
+      "duracionSegundos": 6.562,
+      "palabras": [
+        {
+          "palabra": "Pero",
+          "inicioMs": 0,
+          "finMs": 240
+        },
+        {
+          "palabra": "desde",
+          "inicioMs": 240,
+          "finMs": 460
+        },
+        {
+          "palabra": "tu",
+          "inicioMs": 460,
+          "finMs": 660
+        },
+        {
+          "palabra": "propia",
+          "inicioMs": 660,
+          "finMs": 1000
+        },
+        {
+          "palabra": "perspectiva",
+          "inicioMs": 1000,
+          "finMs": 1720
+        },
+        {
+          "palabra": "el",
+          "inicioMs": 1720,
+          "finMs": 1980
+        },
+        {
+          "palabra": "tiempo",
+          "inicioMs": 1980,
+          "finMs": 2280
+        },
+        {
+          "palabra": "corre",
+          "inicioMs": 2280,
+          "finMs": 2580
+        },
+        {
+          "palabra": "normal",
+          "inicioMs": 2580,
+          "finMs": 3020
+        },
+        {
+          "palabra": "y",
+          "inicioMs": 3020,
+          "finMs": 3360
+        },
+        {
+          "palabra": "la",
+          "inicioMs": 3360,
+          "finMs": 3460
+        },
+        {
+          "palabra": "verdadera",
+          "inicioMs": 3460,
+          "finMs": 3940
+        },
+        {
+          "palabra": "pesadilla",
+          "inicioMs": 3940,
+          "finMs": 4480
+        },
+        {
+          "palabra": "física",
+          "inicioMs": 4480,
+          "finMs": 4860
+        },
+        {
+          "palabra": "está",
+          "inicioMs": 4860,
+          "finMs": 5300
+        },
+        {
+          "palabra": "por",
+          "inicioMs": 5300,
+          "finMs": 5500
+        },
+        {
+          "palabra": "comenzar",
+          "inicioMs": 5500,
+          "finMs": 6080
+        }
+      ]
+    },
+    {
+      "id": 8,
+      "texto": "Ocurre un fenómeno científico real bautizado por los astrofísicos como espaguetificación o efecto fideo.",
+      "icono": "Maximize2",
+      "colorIcono": "#A855F7",
+      "tituloVisual": "ESPAGUETIFICACIÓN",
+      "composicionVisual": "plano_general",
+      "escenario": "espacio_profundo",
+      "layout": "narrativo",
+      "transicion": "whip_right",
+      "efectosCamara": [
+        "drift"
+      ],
+      "personajes": [
+        {
+          "id": "astro_teorico",
+          "posicion": {
+            "x": -150,
+            "y": 25
+          },
+          "escala": 1,
+          "orientacion": "derecha",
+          "poseId": "explaining_pointing_up",
+          "expresion": "talking_enthusiastic",
+          "acciones": [
+            {
+              "tipo": "mirar_y_reaccionar"
+            }
+          ],
+          "habla": true
+        }
+      ],
+      "objetos": [
+        {
+          "id": "singularidad_fideo",
+          "propId": "singularity",
+          "posicion": {
+            "x": 240,
+            "y": -70
+          },
+          "escala": 1.5,
+          "animacion": {
+            "tipo": "pulso"
+          }
+        }
+      ],
+      "palabrasClave": [
+        "astrofísicos",
+        "espaguetificación",
+        "efecto fideo"
+      ],
+      "duracionSegundos": 5.962,
+      "palabras": [
+        {
+          "palabra": "Ocurre",
+          "inicioMs": 0,
+          "finMs": 460
+        },
+        {
+          "palabra": "un",
+          "inicioMs": 460,
+          "finMs": 560
+        },
+        {
+          "palabra": "fenómeno",
+          "inicioMs": 560,
+          "finMs": 940
+        },
+        {
+          "palabra": "científico",
+          "inicioMs": 940,
+          "finMs": 1680
+        },
+        {
+          "palabra": "real",
+          "inicioMs": 1680,
+          "finMs": 1860
+        },
+        {
+          "palabra": "bautizado",
+          "inicioMs": 1860,
+          "finMs": 2380
+        },
+        {
+          "palabra": "por",
+          "inicioMs": 2380,
+          "finMs": 2620
+        },
+        {
+          "palabra": "los",
+          "inicioMs": 2620,
+          "finMs": 2780
+        },
+        {
+          "palabra": "astrofísicos",
+          "inicioMs": 2780,
+          "finMs": 3460
+        },
+        {
+          "palabra": "como",
+          "inicioMs": 3460,
+          "finMs": 3700
+        },
+        {
+          "palabra": "espaguetificación",
+          "inicioMs": 3700,
+          "finMs": 4560
+        },
+        {
+          "palabra": "o",
+          "inicioMs": 4560,
+          "finMs": 4860
+        },
+        {
+          "palabra": "efecto",
+          "inicioMs": 4860,
+          "finMs": 5160
+        },
+        {
+          "palabra": "fideo",
+          "inicioMs": 5160,
+          "finMs": 5460
+        }
+      ]
+    },
+    {
+      "id": 9,
+      "texto": "La diferencia de gravedad entre tus pies y tu cabeza es de miles de millones de gravedades terrestres.",
+      "icono": "MoveVertical",
+      "colorIcono": "#E11D48",
+      "tituloVisual": "FUERZAS DE MAREA",
+      "composicionVisual": "plano_general",
+      "escenario": "espacio_profundo",
+      "layout": "narrativo",
+      "transicion": "corte",
+      "efectosCamara": [
+        "punch",
+        "shake"
+      ],
+      "personajes": [
+        {
+          "id": "desequilibrio_marea",
+          "posicion": {
+            "x": -100,
+            "y": 40
+          },
+          "escala": 1,
+          "orientacion": "derecha",
+          "poseId": "tripping_falling",
+          "expresion": "scared",
+          "acciones": [
+            {
+              "tipo": "tropezar_y_reaccionar"
+            }
+          ],
+          "habla": true
+        }
+      ],
+      "objetos": [
+        {
+          "id": "atomo_bajo_tension",
+          "propId": "atom",
+          "posicion": {
+            "x": 240,
+            "y": -70
+          },
+          "escala": 1.55,
+          "animacion": {
+            "tipo": "vibrar"
+          }
+        }
+      ],
+      "palabrasClave": [
+        "diferencia gravitacional",
+        "pies y cabeza",
+        "fuerzas de marea"
+      ],
+      "duracionSegundos": 5.818,
+      "palabras": [
+        {
+          "palabra": "La",
+          "inicioMs": 0,
+          "finMs": 180
+        },
+        {
+          "palabra": "diferencia",
+          "inicioMs": 180,
+          "finMs": 640
+        },
+        {
+          "palabra": "de",
+          "inicioMs": 640,
+          "finMs": 840
+        },
+        {
+          "palabra": "gravedad",
+          "inicioMs": 840,
+          "finMs": 1300
+        },
+        {
+          "palabra": "entre",
+          "inicioMs": 1300,
+          "finMs": 1500
+        },
+        {
+          "palabra": "tus",
+          "inicioMs": 1500,
+          "finMs": 1740
+        },
+        {
+          "palabra": "pies",
+          "inicioMs": 1740,
+          "finMs": 1960
+        },
+        {
+          "palabra": "y",
+          "inicioMs": 1960,
+          "finMs": 2180
+        },
+        {
+          "palabra": "tu",
+          "inicioMs": 2180,
+          "finMs": 2260
+        },
+        {
+          "palabra": "cabeza",
+          "inicioMs": 2260,
+          "finMs": 2540
+        },
+        {
+          "palabra": "es",
+          "inicioMs": 2540,
+          "finMs": 2920
+        },
+        {
+          "palabra": "de",
+          "inicioMs": 2920,
+          "finMs": 3040
+        },
+        {
+          "palabra": "miles",
+          "inicioMs": 3040,
+          "finMs": 3380
+        },
+        {
+          "palabra": "de",
+          "inicioMs": 3380,
+          "finMs": 3620
+        },
+        {
+          "palabra": "millones",
+          "inicioMs": 3620,
+          "finMs": 3920
+        },
+        {
+          "palabra": "de",
+          "inicioMs": 3920,
+          "finMs": 4220
+        },
+        {
+          "palabra": "gravedades",
+          "inicioMs": 4220,
+          "finMs": 4720
+        },
+        {
+          "palabra": "terrestres",
+          "inicioMs": 4720,
+          "finMs": 5340
+        }
+      ]
+    },
+    {
+      "id": 10,
+      "texto": "Tus pies son jalados con tanta fuerza que tu cuerpo se estira como un hilo cósmico mientras tus costados se comprimen al centro.",
+      "icono": "Zap",
+      "colorIcono": "#DC2626",
+      "tituloVisual": "ESTIRAMIENTO EXTREMO",
+      "composicionVisual": "primer_plano",
+      "escenario": "espacio_profundo",
+      "layout": "narrativo",
+      "transicion": "flash",
+      "efectosCamara": [
+        "shake",
+        "punch"
+      ],
+      "sfx": "sfx/sfx_impact.wav",
+      "volumenSfx": 0.26,
+      "elementosNarrativos": [
+        {
+          "tipo": "speed_lines"
+        },
+        {
+          "tipo": "danger_vignette"
+        }
+      ],
+      "personajes": [
+        {
+          "id": "cuerpo_estirado",
+          "posicion": {
+            "x": 0,
+            "y": 0
+          },
+          "escala": 1.15,
+          "orientacion": "derecha",
+          "poseId": "backing_away_scared",
+          "expresion": "shocked",
+          "habla": true
+        }
+      ],
+      "objetos": [
+        {
+          "id": "singularidad_central_10",
+          "propId": "singularity",
+          "posicion": {
+            "x": 240,
+            "y": -80
+          },
+          "escala": 1.55,
+          "animacion": {
+            "tipo": "pulso"
+          }
+        }
+      ],
+      "palabrasClave": [
+        "cuerpo estirado",
+        "hilo cósmico",
+        "compresión brutal"
+      ],
+      "duracionSegundos": 6.034,
+      "palabras": [
+        {
+          "palabra": "Tus",
+          "inicioMs": 0,
+          "finMs": 160
+        },
+        {
+          "palabra": "pies",
+          "inicioMs": 160,
+          "finMs": 360
+        },
+        {
+          "palabra": "son",
+          "inicioMs": 360,
+          "finMs": 540
+        },
+        {
+          "palabra": "jalados",
+          "inicioMs": 540,
+          "finMs": 980
+        },
+        {
+          "palabra": "con",
+          "inicioMs": 980,
+          "finMs": 1140
+        },
+        {
+          "palabra": "tanta",
+          "inicioMs": 1140,
+          "finMs": 1380
+        },
+        {
+          "palabra": "fuerza",
+          "inicioMs": 1380,
+          "finMs": 1720
+        },
+        {
+          "palabra": "que",
+          "inicioMs": 1720,
+          "finMs": 1880
+        },
+        {
+          "palabra": "tu",
+          "inicioMs": 1880,
+          "finMs": 2000
+        },
+        {
+          "palabra": "cuerpo",
+          "inicioMs": 2000,
+          "finMs": 2160
+        },
+        {
+          "palabra": "se",
+          "inicioMs": 2160,
+          "finMs": 2420
+        },
+        {
+          "palabra": "estira",
+          "inicioMs": 2420,
+          "finMs": 2680
+        },
+        {
+          "palabra": "como",
+          "inicioMs": 2680,
+          "finMs": 2900
+        },
+        {
+          "palabra": "un",
+          "inicioMs": 2900,
+          "finMs": 3060
+        },
+        {
+          "palabra": "hilo",
+          "inicioMs": 3060,
+          "finMs": 3240
+        },
+        {
+          "palabra": "cósmico",
+          "inicioMs": 3240,
+          "finMs": 3720
+        },
+        {
+          "palabra": "mientras",
+          "inicioMs": 3720,
+          "finMs": 3940
+        },
+        {
+          "palabra": "tus",
+          "inicioMs": 3940,
+          "finMs": 4160
+        },
+        {
+          "palabra": "costados",
+          "inicioMs": 4160,
+          "finMs": 4500
+        },
+        {
+          "palabra": "se",
+          "inicioMs": 4500,
+          "finMs": 4620
+        },
+        {
+          "palabra": "comprimen",
+          "inicioMs": 4620,
+          "finMs": 5060
+        },
+        {
+          "palabra": "al",
+          "inicioMs": 5060,
+          "finMs": 5160
+        },
+        {
+          "palabra": "centro",
+          "inicioMs": 5160,
+          "finMs": 5560
+        }
+      ]
+    },
+    {
+      "id": 11,
+      "texto": "En una fracción de segundo, tus átomos se disuelven hacia la singularidad central. ¡El monstruo definitivo del cosmos!",
+      "icono": "Infinity",
+      "colorIcono": "#7C3AED",
+      "tituloVisual": "LA SINGULARIDAD",
+      "composicionVisual": "plano_general",
+      "escenario": "espacio_profundo",
+      "layout": "narrativo",
+      "transicion": "zoom_in",
+      "efectosCamara": [
+        "drift"
+      ],
+      "elementosNarrativos": [
+        {
+          "tipo": "orbital_peace"
+        }
+      ],
+      "personajes": [
+        {
+          "id": "conclusion_singularidad",
+          "posicion": {
+            "x": -160,
+            "y": 30
+          },
+          "escala": 1,
+          "orientacion": "derecha",
+          "prop": "black_hole",
+          "acciones": [
+            {
+              "tipo": "caminar_hacia",
+              "desdeX": -200,
+              "haciaX": 0
+            }
+          ],
+          "habla": true
+        }
+      ],
+      "palabrasClave": [
+        "átomos disueltos",
+        "singularidad central",
+        "monstruo cósmico"
+      ],
+      "duracionSegundos": 6.298,
+      "palabras": [
+        {
+          "palabra": "En",
+          "inicioMs": 0,
+          "finMs": 200
+        },
+        {
+          "palabra": "una",
+          "inicioMs": 200,
+          "finMs": 340
+        },
+        {
+          "palabra": "fracción",
+          "inicioMs": 340,
+          "finMs": 700
+        },
+        {
+          "palabra": "de",
+          "inicioMs": 700,
+          "finMs": 800
+        },
+        {
+          "palabra": "segundo",
+          "inicioMs": 800,
+          "finMs": 1180
+        },
+        {
+          "palabra": "tus",
+          "inicioMs": 1280,
+          "finMs": 1440
+        },
+        {
+          "palabra": "átomos",
+          "inicioMs": 1440,
+          "finMs": 1800
+        },
+        {
+          "palabra": "se",
+          "inicioMs": 1800,
+          "finMs": 2000
+        },
+        {
+          "palabra": "disuelven",
+          "inicioMs": 2000,
+          "finMs": 2420
+        },
+        {
+          "palabra": "hacia",
+          "inicioMs": 2420,
+          "finMs": 2660
+        },
+        {
+          "palabra": "la",
+          "inicioMs": 2660,
+          "finMs": 2760
+        },
+        {
+          "palabra": "singularidad",
+          "inicioMs": 2760,
+          "finMs": 3340
+        },
+        {
+          "palabra": "central",
+          "inicioMs": 3340,
+          "finMs": 3760
+        },
+        {
+          "palabra": "El",
+          "inicioMs": 3940,
+          "finMs": 4100
+        },
+        {
+          "palabra": "monstruo",
+          "inicioMs": 4100,
+          "finMs": 4660
+        },
+        {
+          "palabra": "definitivo",
+          "inicioMs": 4660,
+          "finMs": 5240
+        },
+        {
+          "palabra": "del",
+          "inicioMs": 5240,
+          "finMs": 5380
+        },
+        {
+          "palabra": "cosmos",
+          "inicioMs": 5380,
+          "finMs": 5780
+        }
+      ]
+    }
+  ]
+}

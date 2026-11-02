@@ -1,0 +1,39 @@
+ID / SLUG: impacto_monstruoso
+Título: ¿Cómo es posible sobrevivir al impacto de un rayo?
+Gancho: Un rayo transporta hasta trescientos millones de voltios y alcanza treinta mil grados. Aun así, el noventa por ciento de las personas alcanzadas sobreviven.
+Tema: ¿Cómo es físicamente posible sobrevivir al impacto de un rayo? Efecto Flashover y física eléctrica
+============================================================
+
+[Escena 1] IMPACTO MONSTRUOSO
+Un rayo transporta hasta trescientos millones de voltios y alcanza treinta mil grados. Aun así, el noventa por ciento de las personas alcanzadas sobreviven.
+
+[Escena 2] ENIGMA ELÉCTRICO
+¿Cómo es físicamente posible resistir una descarga que puede partir un roble centenario en mil pedazos? La clave está en la velocidad de la corriente.
+
+[Escena 3] EFECTO FLASHOVER
+El salvavidas principal se llama efecto flashover. El impacto directo de un rayo dura apenas una diminuta fracción de milisegundo.
+
+[Escena 4] ESCUDO EXTERIOR
+Debido a la alta resistencia eléctrica del interior humano y a esa extrema brevedad, la mayor parte del flujo no penetra en los órganos internos.
+
+[Escena 5] CAMINO SUPERFICIAL
+En lugar de entrar, la corriente resbala velozmente por fuera, viajando sobre la piel húmeda y a través del sudor o de la lluvia.
+
+[Escena 6] EXPLOSIÓN DE VAPOR
+Ese sudor sobre la superficie se vaporiza tan violentamente que genera una onda expansiva, arrancando la ropa y el calzado en el acto.
+
+[Escena 7] DISIPACIÓN TÉRMICA
+Al volar hacia afuera, esa explosión de vapor arrastra y disipa una cantidad inmensa de calor, evitando que los órganos se cocinen.
+
+[Escena 8] FIGURAS LICHTENBERG
+Sin embargo, al deslizarse por la piel rompe pequeños vasos capilares, dejando grabadas unas marcas rojizas llamadas figuras de Lichtenberg.
+
+[Escena 9] MAPA DE ELECTRONES
+Estas marcas con forma de helecho son la huella exacta por donde viajaron los electrones escapando a tierra firme a través del cuerpo.
+
+[Escena 10] REINICIO CARDÍACO
+El mayor peligro es que detiene el ritmo del corazón. Pero con una rápida reanimación cardiopulmonar, el músculo cardíaco puede reiniciarse.
+
+[Escena 11] MILAGRO FÍSICO
+Sobrevivir a un rayo es una auténtica hazaña de la física y el tiempo. ¿Conocías el secreto del efecto flashover?
+

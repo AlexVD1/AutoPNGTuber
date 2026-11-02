@@ -1,0 +1,1828 @@
+{
+  "meta": {
+    "id": "sol_canica_escala_universo",
+    "slug": "sol_canica_escala_universo",
+    "temaResumen": "Si el Sol fuera una canica (La mentira del sistema solar)",
+    "duracionObjetivo": [
+      62,
+      78
+    ],
+    "titulo": "Si el Sol fuera una canica: La mentira del sistema solar",
+    "titulo_corto": "Si el Sol fuera una canica",
+    "gancho": "Los libros de la escuela siempre nos mintieron: si redujéramos el Sol al tamaño de esta pequeña canica amarilla, el universo no se parece en nada a lo que crees. ¡Mira la verdadera escala!",
+    "fuentes": [
+      "Guy Ottewell (1989) - The Thousand-Yard Model or, The Earth as a Peppercorn",
+      "NASA Jet Propulsion Laboratory - Solar System Scale and Distances",
+      "Carl Sagan (1980) - Cosmos: A Personal Voyage (The Shores of the Cosmic Ocean)"
+    ],
+    "genero": "Astronomía y Escalas del Cosmos",
+    "playlist": "Misterios del Universo y la Física"
+  },
+  "escenas": [
+    {
+      "id": 1,
+      "texto": "Los libros de la escuela siempre nos mintieron: si redujéramos el Sol al tamaño de esta pequeña canica amarilla, el universo no se parece en nada a lo que crees. ¡Mira la verdadera escala!",
+      "icono": "Sun",
+      "colorIcono": "#F59E0B",
+      "tituloVisual": "LA GRAN MENTIRA",
+      "composicionVisual": "plano_general",
+      "escenario": "aula_escolar_pizarron_solar",
+      "layout": "narrativo",
+      "transicion": "zoom_in",
+      "efectosCamara": [
+        "punch",
+        "drift"
+      ],
+      "sfx": "sfx/sfx_papel_arrugado_canica_brillo.wav",
+      "volumenSfx": 0.25,
+      "palabrasClave": [
+        "SIEMPRE NOS MINTIERON",
+        "CANICA AMARILLA",
+        "VERDADERA ESCALA"
+      ],
+      "personajes": [
+        {
+          "id": "stickman_divulgador",
+          "nombre": "Stickman Divulgador",
+          "posicion": {
+            "x": -160,
+            "y": 70
+          },
+          "escala": 1.0,
+          "orientacion": "derecha",
+          "habla": true,
+          "capaZ": 10,
+          "prop": "canica_solar_incandescente",
+          "acciones": [
+            {
+              "tipo": "personalizada",
+              "pasos": [
+                {
+                  "inicioProgreso": 0,
+                  "finProgreso": 0.35,
+                  "poseId": "pointing_right",
+                  "expresion": "neutral",
+                  "posicion": {
+                    "x": -160,
+                    "y": 70
+                  },
+                  "curva": "suave",
+                  "procedural": "caminar"
+                },
+                {
+                  "inicioProgreso": 0.35,
+                  "finProgreso": 0.7,
+                  "poseId": "frustrated_head_grab",
+                  "expresion": "confused",
+                  "posicion": {
+                    "x": -100,
+                    "y": 70
+                  },
+                  "curva": "suave",
+                  "procedural": "estatico"
+                },
+                {
+                  "inicioProgreso": 0.7,
+                  "finProgreso": 1.0,
+                  "poseId": "presenting_object",
+                  "expresion": "eureka",
+                  "posicion": {
+                    "x": -40,
+                    "y": 70
+                  },
+                  "curva": "impacto",
+                  "procedural": "estatico"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "objetos": [
+        {
+          "id": "obj_lamina_arrugada",
+          "propId": "lamina_escolar_sistema_solar",
+          "posicion": {
+            "x": 240,
+            "y": 40
+          },
+          "escala": 1.35,
+          "animacion": "pulso"
+        }
+      ],
+      "duracionSegundos": 10.042,
+      "palabras": [
+        {
+          "palabra": "Los",
+          "inicioMs": 0,
+          "finMs": 220
+        },
+        {
+          "palabra": "libros",
+          "inicioMs": 220,
+          "finMs": 500
+        },
+        {
+          "palabra": "de",
+          "inicioMs": 500,
+          "finMs": 580
+        },
+        {
+          "palabra": "la",
+          "inicioMs": 580,
+          "finMs": 660
+        },
+        {
+          "palabra": "escuela",
+          "inicioMs": 660,
+          "finMs": 900
+        },
+        {
+          "palabra": "siempre",
+          "inicioMs": 900,
+          "finMs": 1340
+        },
+        {
+          "palabra": "nos",
+          "inicioMs": 1340,
+          "finMs": 1540
+        },
+        {
+          "palabra": "mintieron",
+          "inicioMs": 1540,
+          "finMs": 1980
+        },
+        {
+          "palabra": "si",
+          "inicioMs": 1980,
+          "finMs": 2180
+        },
+        {
+          "palabra": "redujéramos",
+          "inicioMs": 2180,
+          "finMs": 2640
+        },
+        {
+          "palabra": "el",
+          "inicioMs": 2640,
+          "finMs": 2820
+        },
+        {
+          "palabra": "Sol",
+          "inicioMs": 2820,
+          "finMs": 3000
+        },
+        {
+          "palabra": "al",
+          "inicioMs": 3000,
+          "finMs": 3260
+        },
+        {
+          "palabra": "tamaño",
+          "inicioMs": 3260,
+          "finMs": 3600
+        },
+        {
+          "palabra": "de",
+          "inicioMs": 3600,
+          "finMs": 3700
+        },
+        {
+          "palabra": "esta",
+          "inicioMs": 3700,
+          "finMs": 3900
+        },
+        {
+          "palabra": "pequeña",
+          "inicioMs": 3900,
+          "finMs": 4180
+        },
+        {
+          "palabra": "canica",
+          "inicioMs": 4180,
+          "finMs": 4560
+        },
+        {
+          "palabra": "amarilla",
+          "inicioMs": 4560,
+          "finMs": 5000
+        },
+        {
+          "palabra": "el",
+          "inicioMs": 5260,
+          "finMs": 5380
+        },
+        {
+          "palabra": "universo",
+          "inicioMs": 5380,
+          "finMs": 5640
+        },
+        {
+          "palabra": "no",
+          "inicioMs": 5640,
+          "finMs": 5940
+        },
+        {
+          "palabra": "se",
+          "inicioMs": 5940,
+          "finMs": 6100
+        },
+        {
+          "palabra": "parece",
+          "inicioMs": 6100,
+          "finMs": 6360
+        },
+        {
+          "palabra": "en",
+          "inicioMs": 6360,
+          "finMs": 6700
+        },
+        {
+          "palabra": "nada",
+          "inicioMs": 6700,
+          "finMs": 7020
+        },
+        {
+          "palabra": "a",
+          "inicioMs": 7020,
+          "finMs": 7200
+        },
+        {
+          "palabra": "lo",
+          "inicioMs": 7200,
+          "finMs": 7300
+        },
+        {
+          "palabra": "que",
+          "inicioMs": 7300,
+          "finMs": 7440
+        },
+        {
+          "palabra": "crees",
+          "inicioMs": 7440,
+          "finMs": 7940
+        },
+        {
+          "palabra": "Mira",
+          "inicioMs": 8320,
+          "finMs": 8600
+        },
+        {
+          "palabra": "la",
+          "inicioMs": 8600,
+          "finMs": 8760
+        },
+        {
+          "palabra": "verdadera",
+          "inicioMs": 8760,
+          "finMs": 9200
+        },
+        {
+          "palabra": "escala",
+          "inicioMs": 9200,
+          "finMs": 9560
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "texto": "Con este Sol de dos centímetros en la mesa, ¿dónde crees que está la Tierra? ¿Aquí al lado? Para nada: tendrías que retroceder más de dos metros y quince centímetros de distancia.",
+      "icono": "Ruler",
+      "colorIcono": "#38BDF8",
+      "tituloVisual": "A DOS METROS",
+      "composicionVisual": "plano_general",
+      "escenario": "habitacion_medicion_distancia_solar",
+      "layout": "narrativo",
+      "transicion": "whip_right",
+      "efectosCamara": [
+        "punch",
+        "drift"
+      ],
+      "sfx": "sfx/sfx_cinta_metrica_traqueteo_ping.wav",
+      "volumenSfx": 0.24,
+      "palabrasClave": [
+        "DOS CENTÍMETROS",
+        "PARA NADA",
+        "DOS METROS Y QUINCE"
+      ],
+      "personajes": [
+        {
+          "id": "medidor_distancias",
+          "nombre": "Medidor Distancias",
+          "posicion": {
+            "x": -220,
+            "y": 70
+          },
+          "escala": 1.0,
+          "orientacion": "derecha",
+          "habla": true,
+          "capaZ": 10,
+          "prop": "cinta_metrica_extendida",
+          "acciones": [
+            {
+              "tipo": "personalizada",
+              "pasos": [
+                {
+                  "inicioProgreso": 0,
+                  "finProgreso": 0.35,
+                  "poseId": "holding_both_hands",
+                  "expresion": "worried",
+                  "posicion": {
+                    "x": -220,
+                    "y": 70
+                  },
+                  "curva": "suave",
+                  "procedural": "caminar"
+                },
+                {
+                  "inicioProgreso": 0.35,
+                  "finProgreso": 0.7,
+                  "poseId": "backing_away_scared",
+                  "expresion": "surprised",
+                  "posicion": {
+                    "x": -130,
+                    "y": 70
+                  },
+                  "curva": "suave",
+                  "procedural": "temblar"
+                },
+                {
+                  "inicioProgreso": 0.7,
+                  "finProgreso": 1.0,
+                  "poseId": "taking_notes",
+                  "expresion": "analytical",
+                  "posicion": {
+                    "x": -40,
+                    "y": 70
+                  },
+                  "curva": "suave",
+                  "procedural": "estatico"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "objetos": [
+        {
+          "id": "obj_sol_pedestal",
+          "propId": "canica_solar_incandescente",
+          "posicion": {
+            "x": 260,
+            "y": 40
+          },
+          "escala": 1.4,
+          "animacion": "pulso"
+        }
+      ],
+      "duracionSegundos": 10.042,
+      "palabras": [
+        {
+          "palabra": "Con",
+          "inicioMs": 0,
+          "finMs": 220
+        },
+        {
+          "palabra": "este",
+          "inicioMs": 220,
+          "finMs": 480
+        },
+        {
+          "palabra": "Sol",
+          "inicioMs": 480,
+          "finMs": 660
+        },
+        {
+          "palabra": "de",
+          "inicioMs": 660,
+          "finMs": 800
+        },
+        {
+          "palabra": "dos",
+          "inicioMs": 800,
+          "finMs": 980
+        },
+        {
+          "palabra": "centímetros",
+          "inicioMs": 980,
+          "finMs": 1400
+        },
+        {
+          "palabra": "en",
+          "inicioMs": 1400,
+          "finMs": 1580
+        },
+        {
+          "palabra": "la",
+          "inicioMs": 1580,
+          "finMs": 1680
+        },
+        {
+          "palabra": "mesa",
+          "inicioMs": 1680,
+          "finMs": 1900
+        },
+        {
+          "palabra": "dónde",
+          "inicioMs": 2020,
+          "finMs": 2160
+        },
+        {
+          "palabra": "crees",
+          "inicioMs": 2160,
+          "finMs": 2460
+        },
+        {
+          "palabra": "que",
+          "inicioMs": 2460,
+          "finMs": 2560
+        },
+        {
+          "palabra": "está",
+          "inicioMs": 2560,
+          "finMs": 2700
+        },
+        {
+          "palabra": "la",
+          "inicioMs": 2700,
+          "finMs": 2800
+        },
+        {
+          "palabra": "Tierra",
+          "inicioMs": 2800,
+          "finMs": 3080
+        },
+        {
+          "palabra": "Aquí",
+          "inicioMs": 3340,
+          "finMs": 3560
+        },
+        {
+          "palabra": "al",
+          "inicioMs": 3560,
+          "finMs": 3700
+        },
+        {
+          "palabra": "lado",
+          "inicioMs": 3700,
+          "finMs": 3980
+        },
+        {
+          "palabra": "Para",
+          "inicioMs": 4340,
+          "finMs": 5340
+        },
+        {
+          "palabra": "nada",
+          "inicioMs": 5340,
+          "finMs": 5640
+        },
+        {
+          "palabra": "tendrías",
+          "inicioMs": 5760,
+          "finMs": 6100
+        },
+        {
+          "palabra": "que",
+          "inicioMs": 6100,
+          "finMs": 6220
+        },
+        {
+          "palabra": "retroceder",
+          "inicioMs": 6220,
+          "finMs": 6780
+        },
+        {
+          "palabra": "más",
+          "inicioMs": 6780,
+          "finMs": 6960
+        },
+        {
+          "palabra": "de",
+          "inicioMs": 6960,
+          "finMs": 7140
+        },
+        {
+          "palabra": "dos",
+          "inicioMs": 7140,
+          "finMs": 7360
+        },
+        {
+          "palabra": "metros",
+          "inicioMs": 7360,
+          "finMs": 7640
+        },
+        {
+          "palabra": "y",
+          "inicioMs": 7640,
+          "finMs": 7980
+        },
+        {
+          "palabra": "quince",
+          "inicioMs": 7980,
+          "finMs": 8300
+        },
+        {
+          "palabra": "centímetros",
+          "inicioMs": 8300,
+          "finMs": 8880
+        },
+        {
+          "palabra": "de",
+          "inicioMs": 8880,
+          "finMs": 9080
+        },
+        {
+          "palabra": "distancia",
+          "inicioMs": 9080,
+          "finMs": 9580
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "texto": "Y nuestro planeta ni siquiera sería una canica visible: sería una diminuta mota de polvo de menos de cero punto dos milímetros. ¡Un simple estornudo la perdería para siempre en el suelo!",
+      "icono": "Search",
+      "colorIcono": "#38BDF8",
+      "tituloVisual": "MOTA DE POLVO",
+      "composicionVisual": "primer_plano",
+      "escenario": "macro_lupa_mota_tierra",
+      "layout": "narrativo",
+      "transicion": "whip_right",
+      "efectosCamara": [
+        "punch",
+        "drift"
+      ],
+      "sfx": "sfx/sfx_lupa_enfoque_estornudo_ahogado.wav",
+      "volumenSfx": 0.25,
+      "palabrasClave": [
+        "CANICA VISIBLE",
+        "MOTA DE POLVO",
+        "CERO PUNTO DOS MILÍMETROS"
+      ],
+      "personajes": [
+        {
+          "id": "observador_micro",
+          "nombre": "Observador Micro",
+          "posicion": {
+            "x": -200,
+            "y": 70
+          },
+          "escala": 1.0,
+          "orientacion": "derecha",
+          "habla": true,
+          "capaZ": 10,
+          "prop": "lupa_inspeccion_tierra_mota",
+          "acciones": [
+            {
+              "tipo": "personalizada",
+              "pasos": [
+                {
+                  "inicioProgreso": 0,
+                  "finProgreso": 0.35,
+                  "poseId": "investigating_magnifier",
+                  "expresion": "analytical",
+                  "posicion": {
+                    "x": -200,
+                    "y": 70
+                  },
+                  "curva": "suave",
+                  "procedural": "estatico"
+                },
+                {
+                  "inicioProgreso": 0.35,
+                  "finProgreso": 0.7,
+                  "poseId": "covering_mouth",
+                  "expresion": "scared",
+                  "posicion": {
+                    "x": -120,
+                    "y": 70
+                  },
+                  "curva": "suave",
+                  "procedural": "temblar"
+                },
+                {
+                  "inicioProgreso": 0.7,
+                  "finProgreso": 1.0,
+                  "poseId": "shock_explosion",
+                  "expresion": "shocked",
+                  "posicion": {
+                    "x": -40,
+                    "y": 70
+                  },
+                  "curva": "impacto",
+                  "procedural": "recoil"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "objetos": [
+        {
+          "id": "obj_lupa_display",
+          "propId": "lupa_inspeccion_tierra_mota",
+          "posicion": {
+            "x": 250,
+            "y": 30
+          },
+          "escala": 1.35,
+          "animacion": "pulso"
+        }
+      ],
+      "duracionSegundos": 10.018,
+      "palabras": [
+        {
+          "palabra": "Y",
+          "inicioMs": 0,
+          "finMs": 160
+        },
+        {
+          "palabra": "nuestro",
+          "inicioMs": 160,
+          "finMs": 440
+        },
+        {
+          "palabra": "planeta",
+          "inicioMs": 440,
+          "finMs": 740
+        },
+        {
+          "palabra": "ni",
+          "inicioMs": 740,
+          "finMs": 1000
+        },
+        {
+          "palabra": "siquiera",
+          "inicioMs": 1000,
+          "finMs": 1360
+        },
+        {
+          "palabra": "sería",
+          "inicioMs": 1360,
+          "finMs": 1620
+        },
+        {
+          "palabra": "una",
+          "inicioMs": 1620,
+          "finMs": 1840
+        },
+        {
+          "palabra": "canica",
+          "inicioMs": 1840,
+          "finMs": 2180
+        },
+        {
+          "palabra": "visible",
+          "inicioMs": 2180,
+          "finMs": 2580
+        },
+        {
+          "palabra": "sería",
+          "inicioMs": 2720,
+          "finMs": 2860
+        },
+        {
+          "palabra": "una",
+          "inicioMs": 2860,
+          "finMs": 3040
+        },
+        {
+          "palabra": "diminuta",
+          "inicioMs": 3040,
+          "finMs": 3480
+        },
+        {
+          "palabra": "mota",
+          "inicioMs": 3480,
+          "finMs": 3800
+        },
+        {
+          "palabra": "de",
+          "inicioMs": 3800,
+          "finMs": 3880
+        },
+        {
+          "palabra": "polvo",
+          "inicioMs": 3880,
+          "finMs": 4200
+        },
+        {
+          "palabra": "de",
+          "inicioMs": 4200,
+          "finMs": 4320
+        },
+        {
+          "palabra": "menos",
+          "inicioMs": 4320,
+          "finMs": 4480
+        },
+        {
+          "palabra": "de",
+          "inicioMs": 4480,
+          "finMs": 4660
+        },
+        {
+          "palabra": "cero",
+          "inicioMs": 4660,
+          "finMs": 4960
+        },
+        {
+          "palabra": "punto",
+          "inicioMs": 4960,
+          "finMs": 5700
+        },
+        {
+          "palabra": "dos",
+          "inicioMs": 5700,
+          "finMs": 6240
+        },
+        {
+          "palabra": "milímetros",
+          "inicioMs": 6460,
+          "finMs": 6640
+        },
+        {
+          "palabra": "Un",
+          "inicioMs": 6640,
+          "finMs": 7120
+        },
+        {
+          "palabra": "simple",
+          "inicioMs": 7120,
+          "finMs": 7700
+        },
+        {
+          "palabra": "estornudo",
+          "inicioMs": 7700,
+          "finMs": 7880
+        },
+        {
+          "palabra": "la",
+          "inicioMs": 7880,
+          "finMs": 8360
+        },
+        {
+          "palabra": "perdería",
+          "inicioMs": 8360,
+          "finMs": 8560
+        },
+        {
+          "palabra": "para",
+          "inicioMs": 8560,
+          "finMs": 8960
+        },
+        {
+          "palabra": "siempre",
+          "inicioMs": 8960,
+          "finMs": 9080
+        },
+        {
+          "palabra": "en",
+          "inicioMs": 9080,
+          "finMs": 9220
+        },
+        {
+          "palabra": "el",
+          "inicioMs": 9220,
+          "finMs": 9540
+        },
+        {
+          "palabra": "suelo",
+          "inicioMs": 9540,
+          "finMs": 9768
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "texto": "Para encontrar a los gigantes gaseosos tendrías que salir a la calle: Júpiter sería una semilla a once metros, y Neptuno un alfiler a más de sesenta y cuatro metros de distancia.",
+      "icono": "Compass",
+      "colorIcono": "#F59E0B",
+      "tituloVisual": "CRUZANDO LA CALLE",
+      "composicionVisual": "plano_general",
+      "escenario": "avenida_urbana_escala_planetaria",
+      "layout": "narrativo",
+      "transicion": "whip_right",
+      "efectosCamara": [
+        "punch",
+        "drift"
+      ],
+      "sfx": "sfx/sfx_pasos_asfalto_viento_urbano.wav",
+      "volumenSfx": 0.24,
+      "palabrasClave": [
+        "SALIR A LA CALLE",
+        "JÚPITER UNA SEMILLA",
+        "SESENTA Y CUATRO METROS"
+      ],
+      "personajes": [
+        {
+          "id": "caminante_planetario",
+          "nombre": "Caminante Planetario",
+          "posicion": {
+            "x": -240,
+            "y": 70
+          },
+          "escala": 1.0,
+          "orientacion": "derecha",
+          "habla": true,
+          "capaZ": 10,
+          "prop": "planetas_semilla_alfiler",
+          "acciones": [
+            {
+              "tipo": "personalizada",
+              "pasos": [
+                {
+                  "inicioProgreso": 0,
+                  "finProgreso": 0.35,
+                  "poseId": "walking",
+                  "expresion": "analytical",
+                  "posicion": {
+                    "x": -240,
+                    "y": 70
+                  },
+                  "curva": "suave",
+                  "procedural": "caminar"
+                },
+                {
+                  "inicioProgreso": 0.35,
+                  "finProgreso": 0.7,
+                  "poseId": "crouching",
+                  "expresion": "thinking",
+                  "posicion": {
+                    "x": -130,
+                    "y": 80
+                  },
+                  "curva": "suave",
+                  "procedural": "estatico"
+                },
+                {
+                  "inicioProgreso": 0.7,
+                  "finProgreso": 1.0,
+                  "poseId": "exhausted_slouch",
+                  "expresion": "exhausted",
+                  "posicion": {
+                    "x": -30,
+                    "y": 80
+                  },
+                  "curva": "suave",
+                  "procedural": "estatico"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "objetos": [
+        {
+          "id": "obj_semilla_display",
+          "propId": "planetas_semilla_alfiler",
+          "posicion": {
+            "x": 260,
+            "y": 50
+          },
+          "escala": 1.35,
+          "animacion": "flotar"
+        }
+      ],
+      "duracionSegundos": 9.73,
+      "palabras": [
+        {
+          "palabra": "Para",
+          "inicioMs": 0,
+          "finMs": 240
+        },
+        {
+          "palabra": "encontrar",
+          "inicioMs": 240,
+          "finMs": 580
+        },
+        {
+          "palabra": "a",
+          "inicioMs": 580,
+          "finMs": 680
+        },
+        {
+          "palabra": "los",
+          "inicioMs": 680,
+          "finMs": 840
+        },
+        {
+          "palabra": "gigantes",
+          "inicioMs": 840,
+          "finMs": 1180
+        },
+        {
+          "palabra": "gaseosos",
+          "inicioMs": 1180,
+          "finMs": 1680
+        },
+        {
+          "palabra": "tendrías",
+          "inicioMs": 1680,
+          "finMs": 2180
+        },
+        {
+          "palabra": "que",
+          "inicioMs": 2180,
+          "finMs": 2340
+        },
+        {
+          "palabra": "salir",
+          "inicioMs": 2340,
+          "finMs": 2560
+        },
+        {
+          "palabra": "a",
+          "inicioMs": 2560,
+          "finMs": 2680
+        },
+        {
+          "palabra": "la",
+          "inicioMs": 2680,
+          "finMs": 2760
+        },
+        {
+          "palabra": "calle",
+          "inicioMs": 2760,
+          "finMs": 3020
+        },
+        {
+          "palabra": "Júpiter",
+          "inicioMs": 3140,
+          "finMs": 3400
+        },
+        {
+          "palabra": "sería",
+          "inicioMs": 3400,
+          "finMs": 3680
+        },
+        {
+          "palabra": "una",
+          "inicioMs": 3680,
+          "finMs": 3860
+        },
+        {
+          "palabra": "semilla",
+          "inicioMs": 3860,
+          "finMs": 4240
+        },
+        {
+          "palabra": "a",
+          "inicioMs": 4240,
+          "finMs": 4440
+        },
+        {
+          "palabra": "once",
+          "inicioMs": 4440,
+          "finMs": 4640
+        },
+        {
+          "palabra": "metros",
+          "inicioMs": 4640,
+          "finMs": 4980
+        },
+        {
+          "palabra": "y",
+          "inicioMs": 4980,
+          "finMs": 5820
+        },
+        {
+          "palabra": "Neptuno",
+          "inicioMs": 5820,
+          "finMs": 6240
+        },
+        {
+          "palabra": "un",
+          "inicioMs": 6240,
+          "finMs": 6480
+        },
+        {
+          "palabra": "alfiler",
+          "inicioMs": 6480,
+          "finMs": 6820
+        },
+        {
+          "palabra": "a",
+          "inicioMs": 6820,
+          "finMs": 7040
+        },
+        {
+          "palabra": "más",
+          "inicioMs": 7040,
+          "finMs": 7240
+        },
+        {
+          "palabra": "de",
+          "inicioMs": 7240,
+          "finMs": 7400
+        },
+        {
+          "palabra": "sesenta",
+          "inicioMs": 7400,
+          "finMs": 7860
+        },
+        {
+          "palabra": "y",
+          "inicioMs": 7860,
+          "finMs": 8500
+        },
+        {
+          "palabra": "cuatro",
+          "inicioMs": 8500,
+          "finMs": 8700
+        },
+        {
+          "palabra": "metros",
+          "inicioMs": 8700,
+          "finMs": 9260
+        },
+        {
+          "palabra": "de",
+          "inicioMs": 9260,
+          "finMs": 9370
+        },
+        {
+          "palabra": "distancia",
+          "inicioMs": 9260,
+          "finMs": 9370
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "texto": "Y todo lo que hay entre esos mundos es nada. Vacío absoluto. Más del noventa y nueve punto nueve por ciento del cosmos es oscuridad pura. Pero el verdadero golpe llega al buscar a la estrella vecina.",
+      "icono": "Eye",
+      "colorIcono": "#EF4444",
+      "tituloVisual": "PURO VACÍO",
+      "composicionVisual": "plano_general",
+      "escenario": "abismo_vacio_interestelar_grid",
+      "layout": "narrativo",
+      "transicion": "whip_right",
+      "efectosCamara": [
+        "punch",
+        "drift"
+      ],
+      "sfx": "sfx/sfx_sonar_radar_vacio_sordo.wav",
+      "volumenSfx": 0.25,
+      "palabrasClave": [
+        "ENTRE ESOS MUNDOS",
+        "NOVENTA Y NUEVE PUNTO NUEVE",
+        "ESTRELLA VECINA"
+      ],
+      "personajes": [
+        {
+          "id": "explorador_abismo",
+          "nombre": "Explorador Abismo",
+          "posicion": {
+            "x": -220,
+            "y": 70
+          },
+          "escala": 1.0,
+          "orientacion": "derecha",
+          "habla": true,
+          "capaZ": 10,
+          "prop": "binoculares_radar_vacio",
+          "acciones": [
+            {
+              "tipo": "personalizada",
+              "pasos": [
+                {
+                  "inicioProgreso": 0,
+                  "finProgreso": 0.35,
+                  "poseId": "arms_crossed",
+                  "expresion": "neutral",
+                  "posicion": {
+                    "x": -220,
+                    "y": 70
+                  },
+                  "curva": "suave",
+                  "procedural": "estatico"
+                },
+                {
+                  "inicioProgreso": 0.35,
+                  "finProgreso": 0.7,
+                  "poseId": "investigating_magnifier",
+                  "expresion": "analytical",
+                  "posicion": {
+                    "x": -120,
+                    "y": 70
+                  },
+                  "curva": "suave",
+                  "procedural": "suave"
+                },
+                {
+                  "inicioProgreso": 0.7,
+                  "finProgreso": 1.0,
+                  "poseId": "shrugging",
+                  "expresion": "confused",
+                  "posicion": {
+                    "x": -30,
+                    "y": 70
+                  },
+                  "curva": "suave",
+                  "procedural": "estatico"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "objetos": [
+        {
+          "id": "obj_binoculares_display",
+          "propId": "binoculares_radar_vacio",
+          "posicion": {
+            "x": 260,
+            "y": 40
+          },
+          "escala": 1.3,
+          "animacion": "pulso"
+        }
+      ],
+      "duracionSegundos": 10.954,
+      "palabras": [
+        {
+          "palabra": "Y",
+          "inicioMs": 0,
+          "finMs": 200
+        },
+        {
+          "palabra": "todo",
+          "inicioMs": 200,
+          "finMs": 380
+        },
+        {
+          "palabra": "lo",
+          "inicioMs": 380,
+          "finMs": 520
+        },
+        {
+          "palabra": "que",
+          "inicioMs": 520,
+          "finMs": 620
+        },
+        {
+          "palabra": "hay",
+          "inicioMs": 620,
+          "finMs": 720
+        },
+        {
+          "palabra": "entre",
+          "inicioMs": 720,
+          "finMs": 920
+        },
+        {
+          "palabra": "esos",
+          "inicioMs": 920,
+          "finMs": 1100
+        },
+        {
+          "palabra": "mundos",
+          "inicioMs": 1100,
+          "finMs": 1540
+        },
+        {
+          "palabra": "es",
+          "inicioMs": 1540,
+          "finMs": 1800
+        },
+        {
+          "palabra": "nada",
+          "inicioMs": 1800,
+          "finMs": 2120
+        },
+        {
+          "palabra": "Vacío",
+          "inicioMs": 2360,
+          "finMs": 2660
+        },
+        {
+          "palabra": "absoluto",
+          "inicioMs": 2660,
+          "finMs": 3380
+        },
+        {
+          "palabra": "Más",
+          "inicioMs": 3580,
+          "finMs": 3780
+        },
+        {
+          "palabra": "del",
+          "inicioMs": 3780,
+          "finMs": 3920
+        },
+        {
+          "palabra": "noventa",
+          "inicioMs": 3920,
+          "finMs": 4360
+        },
+        {
+          "palabra": "y",
+          "inicioMs": 4360,
+          "finMs": 5240
+        },
+        {
+          "palabra": "nueve",
+          "inicioMs": 5240,
+          "finMs": 5780
+        },
+        {
+          "palabra": "punto",
+          "inicioMs": 5780,
+          "finMs": 6060
+        },
+        {
+          "palabra": "nueve",
+          "inicioMs": 6060,
+          "finMs": 6500
+        },
+        {
+          "palabra": "por",
+          "inicioMs": 6500,
+          "finMs": 6820
+        },
+        {
+          "palabra": "ciento",
+          "inicioMs": 6820,
+          "finMs": 7260
+        },
+        {
+          "palabra": "del",
+          "inicioMs": 7260,
+          "finMs": 7740
+        },
+        {
+          "palabra": "cosmos",
+          "inicioMs": 7980,
+          "finMs": 8120
+        },
+        {
+          "palabra": "es",
+          "inicioMs": 8120,
+          "finMs": 8240
+        },
+        {
+          "palabra": "oscuridad",
+          "inicioMs": 8240,
+          "finMs": 8620
+        },
+        {
+          "palabra": "pura",
+          "inicioMs": 8620,
+          "finMs": 8900
+        },
+        {
+          "palabra": "Pero",
+          "inicioMs": 8900,
+          "finMs": 9180
+        },
+        {
+          "palabra": "el",
+          "inicioMs": 9180,
+          "finMs": 9340
+        },
+        {
+          "palabra": "verdadero",
+          "inicioMs": 9340,
+          "finMs": 9580
+        },
+        {
+          "palabra": "golpe",
+          "inicioMs": 9580,
+          "finMs": 9700
+        },
+        {
+          "palabra": "llega",
+          "inicioMs": 9700,
+          "finMs": 9780
+        },
+        {
+          "palabra": "al",
+          "inicioMs": 9780,
+          "finMs": 10060
+        },
+        {
+          "palabra": "buscar",
+          "inicioMs": 10060,
+          "finMs": 10480
+        },
+        {
+          "palabra": "a",
+          "inicioMs": 10480,
+          "finMs": 10560
+        },
+        {
+          "palabra": "la",
+          "inicioMs": 10480,
+          "finMs": 10560
+        },
+        {
+          "palabra": "estrella",
+          "inicioMs": 10480,
+          "finMs": 10560
+        },
+        {
+          "palabra": "vecina",
+          "inicioMs": 10480,
+          "finMs": 10560
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "texto": "Para colocar a Próxima Centauri a esta misma escala, no puedes ir caminando: tendrías que subirte a un automóvil y viajar más de quinientos setenta kilómetros... hasta llegar a otra ciudad lejana.",
+      "icono": "Car",
+      "colorIcono": "#22C55E",
+      "tituloVisual": "A 570 KILÓMETROS",
+      "composicionVisual": "plano_general",
+      "escenario": "mapa_satelital_carretera_proxima",
+      "layout": "narrativo",
+      "transicion": "whip_right",
+      "efectosCamara": [
+        "punch",
+        "drift"
+      ],
+      "sfx": "sfx/sfx_auto_autopista_frenazo_canica.wav",
+      "volumenSfx": 0.25,
+      "palabrasClave": [
+        "PRÓXIMA CENTAURI",
+        "EN UN AUTOMÓVIL",
+        "QUINIENTOS SETENTA KILÓMETROS"
+      ],
+      "personajes": [
+        {
+          "id": "viajero_carretera",
+          "nombre": "Viajero Carretera",
+          "posicion": {
+            "x": -220,
+            "y": 70
+          },
+          "escala": 1.0,
+          "orientacion": "derecha",
+          "habla": true,
+          "capaZ": 10,
+          "prop": "mapa_carretera_570km",
+          "acciones": [
+            {
+              "tipo": "personalizada",
+              "pasos": [
+                {
+                  "inicioProgreso": 0,
+                  "finProgreso": 0.35,
+                  "poseId": "walking",
+                  "expresion": "analytical",
+                  "posicion": {
+                    "x": -220,
+                    "y": 70
+                  },
+                  "curva": "suave",
+                  "procedural": "caminar"
+                },
+                {
+                  "inicioProgreso": 0.35,
+                  "finProgreso": 0.7,
+                  "poseId": "presenting_object",
+                  "expresion": "eureka",
+                  "posicion": {
+                    "x": -110,
+                    "y": 70
+                  },
+                  "curva": "suave",
+                  "procedural": "estatico"
+                },
+                {
+                  "inicioProgreso": 0.7,
+                  "finProgreso": 1.0,
+                  "poseId": "thumbs_up_approval",
+                  "expresion": "smile_wide",
+                  "posicion": {
+                    "x": 0,
+                    "y": 70
+                  },
+                  "curva": "suave",
+                  "procedural": "estatico"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "objetos": [
+        {
+          "id": "obj_auto_display",
+          "propId": "auto_viaje_interestelar",
+          "posicion": {
+            "x": 270,
+            "y": 50
+          },
+          "escala": 1.35,
+          "animacion": "pulso"
+        }
+      ],
+      "duracionSegundos": 9.538,
+      "palabras": [
+        {
+          "palabra": "Para",
+          "inicioMs": 0,
+          "finMs": 220
+        },
+        {
+          "palabra": "colocar",
+          "inicioMs": 220,
+          "finMs": 540
+        },
+        {
+          "palabra": "a",
+          "inicioMs": 540,
+          "finMs": 680
+        },
+        {
+          "palabra": "Próxima",
+          "inicioMs": 680,
+          "finMs": 880
+        },
+        {
+          "palabra": "Centauri",
+          "inicioMs": 880,
+          "finMs": 1540
+        },
+        {
+          "palabra": "a",
+          "inicioMs": 1540,
+          "finMs": 1700
+        },
+        {
+          "palabra": "esta",
+          "inicioMs": 1700,
+          "finMs": 1880
+        },
+        {
+          "palabra": "misma",
+          "inicioMs": 1880,
+          "finMs": 2260
+        },
+        {
+          "palabra": "escala",
+          "inicioMs": 2260,
+          "finMs": 2460
+        },
+        {
+          "palabra": "no",
+          "inicioMs": 2460,
+          "finMs": 2680
+        },
+        {
+          "palabra": "puedes",
+          "inicioMs": 2680,
+          "finMs": 2860
+        },
+        {
+          "palabra": "ir",
+          "inicioMs": 2860,
+          "finMs": 3420
+        },
+        {
+          "palabra": "caminando",
+          "inicioMs": 3680,
+          "finMs": 4020
+        },
+        {
+          "palabra": "tendrías",
+          "inicioMs": 4020,
+          "finMs": 4140
+        },
+        {
+          "palabra": "que",
+          "inicioMs": 4140,
+          "finMs": 4560
+        },
+        {
+          "palabra": "subirte",
+          "inicioMs": 4560,
+          "finMs": 4620
+        },
+        {
+          "palabra": "a",
+          "inicioMs": 4620,
+          "finMs": 4720
+        },
+        {
+          "palabra": "un",
+          "inicioMs": 4720,
+          "finMs": 5220
+        },
+        {
+          "palabra": "automóvil",
+          "inicioMs": 5220,
+          "finMs": 5380
+        },
+        {
+          "palabra": "y",
+          "inicioMs": 5380,
+          "finMs": 5660
+        },
+        {
+          "palabra": "viajar",
+          "inicioMs": 5660,
+          "finMs": 5860
+        },
+        {
+          "palabra": "más",
+          "inicioMs": 5860,
+          "finMs": 6000
+        },
+        {
+          "palabra": "de",
+          "inicioMs": 6000,
+          "finMs": 6780
+        },
+        {
+          "palabra": "quinientos",
+          "inicioMs": 6780,
+          "finMs": 7320
+        },
+        {
+          "palabra": "setenta",
+          "inicioMs": 7540,
+          "finMs": 7760
+        },
+        {
+          "palabra": "kilómetros",
+          "inicioMs": 7760,
+          "finMs": 8020
+        },
+        {
+          "palabra": "hasta",
+          "inicioMs": 8020,
+          "finMs": 8140
+        },
+        {
+          "palabra": "llegar",
+          "inicioMs": 8140,
+          "finMs": 8340
+        },
+        {
+          "palabra": "a",
+          "inicioMs": 8340,
+          "finMs": 8580
+        },
+        {
+          "palabra": "otra",
+          "inicioMs": 8580,
+          "finMs": 9060
+        },
+        {
+          "palabra": "ciudad",
+          "inicioMs": 9060,
+          "finMs": 9174
+        },
+        {
+          "palabra": "lejana",
+          "inicioMs": 9060,
+          "finMs": 9174
+        }
+      ]
+    },
+    {
+      "id": 7,
+      "texto": "El universo jamás fue un vecindario lleno de planetas: es un océano infinito de silencio donde la materia es apenas un milagro microscópico flotando en la nada más absoluta.",
+      "icono": "Sparkles",
+      "colorIcono": "#FEF08A",
+      "tituloVisual": "SOLEDAD CÓSMICA",
+      "composicionVisual": "primer_plano",
+      "escenario": "vacio_cosmos_soledad_canica",
+      "layout": "narrativo",
+      "transicion": "whip_right",
+      "efectosCamara": [
+        "punch",
+        "drift"
+      ],
+      "sfx": "sfx/sfx_sintetizador_cosmico_silencio.wav",
+      "volumenSfx": 0.25,
+      "palabrasClave": [
+        "JAMÁS FUE UN VECINDARIO",
+        "OCÉANO INFINITO",
+        "MILAGRO MICROSCÓPICO"
+      ],
+      "personajes": [
+        {
+          "id": "pensador_silencio",
+          "nombre": "Pensador Silencio",
+          "posicion": {
+            "x": -200,
+            "y": 70
+          },
+          "escala": 1.0,
+          "orientacion": "derecha",
+          "habla": true,
+          "capaZ": 10,
+          "prop": "canica_solar_incandescente",
+          "acciones": [
+            {
+              "tipo": "personalizada",
+              "pasos": [
+                {
+                  "inicioProgreso": 0,
+                  "finProgreso": 0.35,
+                  "poseId": "looking_up_pose",
+                  "expresion": "neutral",
+                  "posicion": {
+                    "x": -200,
+                    "y": 70
+                  },
+                  "curva": "suave",
+                  "procedural": "suave"
+                },
+                {
+                  "inicioProgreso": 0.35,
+                  "finProgreso": 0.7,
+                  "poseId": "presenting_object",
+                  "expresion": "smile_soft",
+                  "posicion": {
+                    "x": -100,
+                    "y": 70
+                  },
+                  "curva": "suave",
+                  "procedural": "estatico"
+                },
+                {
+                  "inicioProgreso": 0.7,
+                  "finProgreso": 1.0,
+                  "poseId": "eureka_idea",
+                  "expresion": "smile_wide",
+                  "posicion": {
+                    "x": 0,
+                    "y": 70
+                  },
+                  "curva": "suave",
+                  "procedural": "estatico"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "objetos": [
+        {
+          "id": "obj_canica_soledad",
+          "propId": "canica_solar_incandescente",
+          "posicion": {
+            "x": 260,
+            "y": 30
+          },
+          "escala": 1.4,
+          "animacion": "flotar"
+        }
+      ],
+      "duracionSegundos": 9.322,
+      "palabras": [
+        {
+          "palabra": "El",
+          "inicioMs": 0,
+          "finMs": 120
+        },
+        {
+          "palabra": "universo",
+          "inicioMs": 120,
+          "finMs": 380
+        },
+        {
+          "palabra": "jamás",
+          "inicioMs": 380,
+          "finMs": 940
+        },
+        {
+          "palabra": "fue",
+          "inicioMs": 940,
+          "finMs": 1100
+        },
+        {
+          "palabra": "un",
+          "inicioMs": 1100,
+          "finMs": 1240
+        },
+        {
+          "palabra": "vecindario",
+          "inicioMs": 1240,
+          "finMs": 1760
+        },
+        {
+          "palabra": "lleno",
+          "inicioMs": 1760,
+          "finMs": 2040
+        },
+        {
+          "palabra": "de",
+          "inicioMs": 2040,
+          "finMs": 2160
+        },
+        {
+          "palabra": "planetas",
+          "inicioMs": 2160,
+          "finMs": 2760
+        },
+        {
+          "palabra": "es",
+          "inicioMs": 2980,
+          "finMs": 3100
+        },
+        {
+          "palabra": "un",
+          "inicioMs": 3100,
+          "finMs": 3260
+        },
+        {
+          "palabra": "océano",
+          "inicioMs": 3260,
+          "finMs": 3540
+        },
+        {
+          "palabra": "infinito",
+          "inicioMs": 3540,
+          "finMs": 4100
+        },
+        {
+          "palabra": "de",
+          "inicioMs": 4100,
+          "finMs": 4200
+        },
+        {
+          "palabra": "silencio",
+          "inicioMs": 4200,
+          "finMs": 4740
+        },
+        {
+          "palabra": "donde",
+          "inicioMs": 4740,
+          "finMs": 4920
+        },
+        {
+          "palabra": "la",
+          "inicioMs": 4920,
+          "finMs": 5100
+        },
+        {
+          "palabra": "materia",
+          "inicioMs": 5100,
+          "finMs": 5360
+        },
+        {
+          "palabra": "es",
+          "inicioMs": 5360,
+          "finMs": 5560
+        },
+        {
+          "palabra": "apenas",
+          "inicioMs": 5560,
+          "finMs": 5780
+        },
+        {
+          "palabra": "un",
+          "inicioMs": 5780,
+          "finMs": 6000
+        },
+        {
+          "palabra": "milagro",
+          "inicioMs": 6000,
+          "finMs": 6400
+        },
+        {
+          "palabra": "microscópico",
+          "inicioMs": 6400,
+          "finMs": 7180
+        },
+        {
+          "palabra": "flotando",
+          "inicioMs": 7180,
+          "finMs": 7660
+        },
+        {
+          "palabra": "en",
+          "inicioMs": 7660,
+          "finMs": 7760
+        },
+        {
+          "palabra": "la",
+          "inicioMs": 7760,
+          "finMs": 7860
+        },
+        {
+          "palabra": "nada",
+          "inicioMs": 7860,
+          "finMs": 8060
+        },
+        {
+          "palabra": "más",
+          "inicioMs": 8060,
+          "finMs": 8260
+        },
+        {
+          "palabra": "absoluta",
+          "inicioMs": 8260,
+          "finMs": 8860
+        }
+      ]
+    }
+  ]
+}

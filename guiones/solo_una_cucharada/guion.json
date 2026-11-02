@@ -1,0 +1,619 @@
+[
+  {
+    "id": 1,
+    "texto": "¿Qué pasaría si una sola cucharadita de una estrella de neutrones apareciera en tu mesa?",
+    "pose": "pensando",
+    "poseId": "thinking_chin_hand",
+    "expresion": "thinking",
+    "icono": "Sparkles",
+    "colorIcono": "#8B5CF6",
+    "tituloVisual": "¿SOLO UNA CUCHARADA?",
+    "composicionVisual": "plano_general",
+    "escenario": "habitacion_noche",
+    "layout": "narrativo",
+    "transicion": "zoom_in",
+    "efectosCamara": [
+      "drift"
+    ],
+    "sfx": "sfx/sfx_tension_riser.wav",
+    "volumenSfx": 0.22,
+    "palabrasClave": [
+      "cucharadita",
+      "estrella",
+      "neutrones",
+      "mesa"
+    ],
+    "duracionSegundos": 4.594,
+    "palabras": [
+      {
+        "palabra": "Qué",
+        "inicioMs": 0,
+        "finMs": 160
+      },
+      {
+        "palabra": "pasaría",
+        "inicioMs": 160,
+        "finMs": 580
+      },
+      {
+        "palabra": "si",
+        "inicioMs": 580,
+        "finMs": 780
+      },
+      {
+        "palabra": "una",
+        "inicioMs": 780,
+        "finMs": 940
+      },
+      {
+        "palabra": "sola",
+        "inicioMs": 940,
+        "finMs": 1200
+      },
+      {
+        "palabra": "cucharadita",
+        "inicioMs": 1200,
+        "finMs": 1920
+      },
+      {
+        "palabra": "de",
+        "inicioMs": 1920,
+        "finMs": 2060
+      },
+      {
+        "palabra": "una",
+        "inicioMs": 2060,
+        "finMs": 2200
+      },
+      {
+        "palabra": "estrella",
+        "inicioMs": 2200,
+        "finMs": 2580
+      },
+      {
+        "palabra": "de",
+        "inicioMs": 2580,
+        "finMs": 2700
+      },
+      {
+        "palabra": "neutrones",
+        "inicioMs": 2700,
+        "finMs": 3140
+      },
+      {
+        "palabra": "apareciera",
+        "inicioMs": 3140,
+        "finMs": 3760
+      },
+      {
+        "palabra": "en",
+        "inicioMs": 3760,
+        "finMs": 3860
+      },
+      {
+        "palabra": "tu",
+        "inicioMs": 3860,
+        "finMs": 3940
+      },
+      {
+        "palabra": "mesa",
+        "inicioMs": 3940,
+        "finMs": 4160
+      }
+    ]
+  },
+  {
+    "id": 2,
+    "texto": "Aunque es diminuta, esa gota de materia espacial pesa más de cuatro mil millones de toneladas.",
+    "pose": "explicando",
+    "poseId": "explaining_both_hands",
+    "expresion": "analytical",
+    "icono": "Scale",
+    "colorIcono": "#2563EB",
+    "tituloVisual": "4,000 MILLONES TON",
+    "composicionVisual": "cifras_concepto",
+    "escenario": "laboratorio",
+    "layout": "narrativo",
+    "transicion": "whip_right",
+    "efectosCamara": [
+      "punch",
+      "drift"
+    ],
+    "sfx": "sfx/sfx_whoosh.wav",
+    "volumenSfx": 0.22,
+    "palabrasClave": [
+      "diminuta",
+      "materia",
+      "cuatro",
+      "mil",
+      "millones",
+      "toneladas"
+    ],
+    "duracionSegundos": 4.546,
+    "palabras": [
+      {
+        "palabra": "Aunque",
+        "inicioMs": 0,
+        "finMs": 280
+      },
+      {
+        "palabra": "es",
+        "inicioMs": 280,
+        "finMs": 400
+      },
+      {
+        "palabra": "diminuta",
+        "inicioMs": 400,
+        "finMs": 800
+      },
+      {
+        "palabra": "esa",
+        "inicioMs": 940,
+        "finMs": 1100
+      },
+      {
+        "palabra": "gota",
+        "inicioMs": 1100,
+        "finMs": 1380
+      },
+      {
+        "palabra": "de",
+        "inicioMs": 1380,
+        "finMs": 1440
+      },
+      {
+        "palabra": "materia",
+        "inicioMs": 1440,
+        "finMs": 1640
+      },
+      {
+        "palabra": "espacial",
+        "inicioMs": 1640,
+        "finMs": 2100
+      },
+      {
+        "palabra": "pesa",
+        "inicioMs": 2100,
+        "finMs": 2440
+      },
+      {
+        "palabra": "más",
+        "inicioMs": 2440,
+        "finMs": 2580
+      },
+      {
+        "palabra": "de",
+        "inicioMs": 2580,
+        "finMs": 2780
+      },
+      {
+        "palabra": "cuatro",
+        "inicioMs": 2780,
+        "finMs": 3020
+      },
+      {
+        "palabra": "mil",
+        "inicioMs": 3020,
+        "finMs": 3280
+      },
+      {
+        "palabra": "millones",
+        "inicioMs": 3280,
+        "finMs": 3520
+      },
+      {
+        "palabra": "de",
+        "inicioMs": 3520,
+        "finMs": 3660
+      },
+      {
+        "palabra": "toneladas",
+        "inicioMs": 3660,
+        "finMs": 4120
+      }
+    ]
+  },
+  {
+    "id": 3,
+    "texto": "Su gravedad propia es tan brutal que ningún suelo del planeta podría sostenerla.",
+    "pose": "sorprendido",
+    "poseId": "shock_explosion",
+    "expresion": "shocked",
+    "icono": "ArrowDownCircle",
+    "colorIcono": "#EA580C",
+    "tituloVisual": "GRAVEDAD EXTREMA",
+    "composicionVisual": "primer_plano",
+    "escenario": "habitacion_noche",
+    "layout": "narrativo",
+    "transicion": "whip_left",
+    "efectosCamara": [
+      "shake",
+      "punch"
+    ],
+    "sfx": "sfx/sfx_impact.wav",
+    "volumenSfx": 0.25,
+    "palabrasClave": [
+      "gravedad",
+      "brutal",
+      "suelo",
+      "planeta",
+      "sostenerla"
+    ],
+    "duracionSegundos": 4.09,
+    "palabras": [
+      {
+        "palabra": "Su",
+        "inicioMs": 0,
+        "finMs": 160
+      },
+      {
+        "palabra": "gravedad",
+        "inicioMs": 160,
+        "finMs": 520
+      },
+      {
+        "palabra": "propia",
+        "inicioMs": 520,
+        "finMs": 800
+      },
+      {
+        "palabra": "es",
+        "inicioMs": 800,
+        "finMs": 1060
+      },
+      {
+        "palabra": "tan",
+        "inicioMs": 1060,
+        "finMs": 1180
+      },
+      {
+        "palabra": "brutal",
+        "inicioMs": 1180,
+        "finMs": 1420
+      },
+      {
+        "palabra": "que",
+        "inicioMs": 1420,
+        "finMs": 1680
+      },
+      {
+        "palabra": "ningún",
+        "inicioMs": 1680,
+        "finMs": 1940
+      },
+      {
+        "palabra": "suelo",
+        "inicioMs": 1940,
+        "finMs": 2280
+      },
+      {
+        "palabra": "del",
+        "inicioMs": 2280,
+        "finMs": 2420
+      },
+      {
+        "palabra": "planeta",
+        "inicioMs": 2420,
+        "finMs": 2740
+      },
+      {
+        "palabra": "podría",
+        "inicioMs": 2740,
+        "finMs": 3140
+      },
+      {
+        "palabra": "sostenerla",
+        "inicioMs": 3140,
+        "finMs": 3740
+      }
+    ]
+  },
+  {
+    "id": 4,
+    "texto": "Al instante perforaría tu casa y la corteza terrestre cayendo directo hacia el núcleo.",
+    "pose": "sorprendido",
+    "poseId": "tripping_falling",
+    "expresion": "scared",
+    "icono": "Zap",
+    "colorIcono": "#DC2626",
+    "tituloVisual": "CAÍDA AL NÚCLEO",
+    "composicionVisual": "escenario_ilustrado",
+    "escenario": "habitacion_noche",
+    "layout": "narrativo",
+    "transicion": "flash",
+    "efectosCamara": [
+      "shake"
+    ],
+    "sfx": "sfx/sfx_dramatic_hit.wav",
+    "volumenSfx": 0.25,
+    "palabrasClave": [
+      "instante",
+      "perforaría",
+      "casa",
+      "corteza",
+      "núcleo"
+    ],
+    "duracionSegundos": 4.186,
+    "palabras": [
+      {
+        "palabra": "Al",
+        "inicioMs": 0,
+        "finMs": 200
+      },
+      {
+        "palabra": "instante",
+        "inicioMs": 200,
+        "finMs": 600
+      },
+      {
+        "palabra": "perforaría",
+        "inicioMs": 660,
+        "finMs": 1080
+      },
+      {
+        "palabra": "tu",
+        "inicioMs": 1080,
+        "finMs": 1240
+      },
+      {
+        "palabra": "casa",
+        "inicioMs": 1240,
+        "finMs": 1500
+      },
+      {
+        "palabra": "y",
+        "inicioMs": 1500,
+        "finMs": 1620
+      },
+      {
+        "palabra": "la",
+        "inicioMs": 1620,
+        "finMs": 1700
+      },
+      {
+        "palabra": "corteza",
+        "inicioMs": 1700,
+        "finMs": 2080
+      },
+      {
+        "palabra": "terrestre",
+        "inicioMs": 2080,
+        "finMs": 2560
+      },
+      {
+        "palabra": "cayendo",
+        "inicioMs": 2560,
+        "finMs": 2880
+      },
+      {
+        "palabra": "directo",
+        "inicioMs": 2880,
+        "finMs": 3300
+      },
+      {
+        "palabra": "hacia",
+        "inicioMs": 3300,
+        "finMs": 3420
+      },
+      {
+        "palabra": "el",
+        "inicioMs": 3420,
+        "finMs": 3540
+      },
+      {
+        "palabra": "núcleo",
+        "inicioMs": 3540,
+        "finMs": 3840
+      }
+    ]
+  },
+  {
+    "id": 5,
+    "texto": "Peor aún: al escapar de la presión de su estrella, se expandiría en una explosión colosal.",
+    "pose": "sorprendido",
+    "poseId": "backing_away_scared",
+    "expresion": "shocked",
+    "icono": "Flame",
+    "colorIcono": "#E11D48",
+    "tituloVisual": "EXPLOSIÓN MASIVA",
+    "composicionVisual": "primer_plano",
+    "escenario": "lunar",
+    "layout": "narrativo",
+    "transicion": "flash",
+    "efectosCamara": [
+      "shake",
+      "punch"
+    ],
+    "sfx": "sfx/sfx_impact.wav",
+    "volumenSfx": 0.25,
+    "palabrasClave": [
+      "presión",
+      "estrella",
+      "expandiría",
+      "explosión",
+      "colosal"
+    ],
+    "duracionSegundos": 5.578,
+    "palabras": [
+      {
+        "palabra": "Peor",
+        "inicioMs": 0,
+        "finMs": 440
+      },
+      {
+        "palabra": "aún",
+        "inicioMs": 440,
+        "finMs": 800
+      },
+      {
+        "palabra": "al",
+        "inicioMs": 1100,
+        "finMs": 1200
+      },
+      {
+        "palabra": "escapar",
+        "inicioMs": 1200,
+        "finMs": 1600
+      },
+      {
+        "palabra": "de",
+        "inicioMs": 1600,
+        "finMs": 1740
+      },
+      {
+        "palabra": "la",
+        "inicioMs": 1740,
+        "finMs": 1860
+      },
+      {
+        "palabra": "presión",
+        "inicioMs": 1860,
+        "finMs": 2180
+      },
+      {
+        "palabra": "de",
+        "inicioMs": 2180,
+        "finMs": 2320
+      },
+      {
+        "palabra": "su",
+        "inicioMs": 2320,
+        "finMs": 2440
+      },
+      {
+        "palabra": "estrella",
+        "inicioMs": 2440,
+        "finMs": 2940
+      },
+      {
+        "palabra": "se",
+        "inicioMs": 3220,
+        "finMs": 3260
+      },
+      {
+        "palabra": "expandiría",
+        "inicioMs": 3260,
+        "finMs": 3940
+      },
+      {
+        "palabra": "en",
+        "inicioMs": 3940,
+        "finMs": 4040
+      },
+      {
+        "palabra": "una",
+        "inicioMs": 4040,
+        "finMs": 4160
+      },
+      {
+        "palabra": "explosión",
+        "inicioMs": 4160,
+        "finMs": 4700
+      },
+      {
+        "palabra": "colosal",
+        "inicioMs": 4700,
+        "finMs": 5240
+      }
+    ]
+  },
+  {
+    "id": 6,
+    "texto": "Esa simple cucharadita bastaría para vaporizar gran parte de la superficie de la Tierra.",
+    "pose": "normal",
+    "poseId": "standing_confident",
+    "expresion": "skeptical",
+    "icono": "Skull",
+    "colorIcono": "#475569",
+    "tituloVisual": "FIN DEL MUNDO",
+    "composicionVisual": "plano_general",
+    "escenario": "lunar",
+    "layout": "narrativo",
+    "transicion": "zoom_in",
+    "efectosCamara": [
+      "drift"
+    ],
+    "sfx": "sfx/sfx_tension_riser.wav",
+    "volumenSfx": 0.22,
+    "palabrasClave": [
+      "simple",
+      "cucharadita",
+      "vaporizar",
+      "superficie",
+      "Tierra"
+    ],
+    "duracionSegundos": 4.378,
+    "palabras": [
+      {
+        "palabra": "Esa",
+        "inicioMs": 0,
+        "finMs": 300
+      },
+      {
+        "palabra": "simple",
+        "inicioMs": 300,
+        "finMs": 620
+      },
+      {
+        "palabra": "cucharadita",
+        "inicioMs": 620,
+        "finMs": 1220
+      },
+      {
+        "palabra": "bastaría",
+        "inicioMs": 1220,
+        "finMs": 1600
+      },
+      {
+        "palabra": "para",
+        "inicioMs": 1600,
+        "finMs": 1800
+      },
+      {
+        "palabra": "vaporizar",
+        "inicioMs": 1800,
+        "finMs": 2260
+      },
+      {
+        "palabra": "gran",
+        "inicioMs": 2260,
+        "finMs": 2500
+      },
+      {
+        "palabra": "parte",
+        "inicioMs": 2500,
+        "finMs": 2820
+      },
+      {
+        "palabra": "de",
+        "inicioMs": 2820,
+        "finMs": 2960
+      },
+      {
+        "palabra": "la",
+        "inicioMs": 2960,
+        "finMs": 3060
+      },
+      {
+        "palabra": "superficie",
+        "inicioMs": 3060,
+        "finMs": 3540
+      },
+      {
+        "palabra": "de",
+        "inicioMs": 3540,
+        "finMs": 3600
+      },
+      {
+        "palabra": "la",
+        "inicioMs": 3600,
+        "finMs": 3700
+      },
+      {
+        "palabra": "Tierra",
+        "inicioMs": 3700,
+        "finMs": 3900
+      }
+    ]
+  }
+]

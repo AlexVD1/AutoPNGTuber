@@ -33,7 +33,10 @@ export type TipoElementoNarrativo =
   | "giant_waves"
   | "shockwave_burst"
   | "orbital_peace"
-  | "danger_vignette";
+  | "danger_vignette"
+  | "sparks_explosion"
+  | "steam_vent"
+  | "chemical_bubbles";
 
 export interface ElementoNarrativo {
   tipo: TipoElementoNarrativo;
@@ -43,6 +46,14 @@ export interface ElementoNarrativo {
   color?: string;
   direccion?: "este" | "oeste" | "arriba" | "abajo";
   intensidad?: number;
+  x?: number;
+  y?: number;
+  inicioProgreso?: number;
+  finProgreso?: number;
+  inicioSegundos?: number;
+  finSegundos?: number;
+  desdePalabra?: string;
+  hastaPalabra?: string;
 }
 
 export type TipoTransicion =
@@ -50,7 +61,8 @@ export type TipoTransicion =
   | "whip_right"
   | "whip_left"
   | "flash"
-  | "corte";
+  | "corte"
+  | "fundido_negro";
 
 export type EstiloLayout = "clasico" | "narrativo" | "compacto";
 
@@ -59,6 +71,7 @@ export type TipoComposicionVisual =
   | "escenario_ilustrado"
   | "primer_plano"
   | "plano_general"
+  | "plano_medio"
   | "cifras_concepto";
 
 export type TipoEscenario =
@@ -174,6 +187,160 @@ export type TipoEscenario =
   | "diagrama_condensacion_lata_pulmon"
   | "cueva_naica_rescate_traje_hielo"
   | "mina_naica_compuerta_escape"
+  | "estudio_conteo_anumerico"
+  | "ribera_amazonica_piraha"
+  | "laboratorio_campo_fichas_grid"
+  | "microcosmos_cerebral_memoria"
+  | "pedestales_ans_comparativo"
+  | "estudio_engranajes_hack_mental"
+  | "vacio_filosofico_cosmos_ideas"
+  | "aula_escolar_pizarron_solar"
+  | "habitacion_medicion_distancia_solar"
+  | "macro_lupa_mota_tierra"
+  | "avenida_urbana_escala_planetaria"
+  | "abismo_vacio_interestelar_grid"
+  | "mapa_satelital_carretera_proxima"
+  | "vacio_cosmos_soledad_canica"
+  | "mesa_laboratorio_cafe_vapor"
+  | "caja_maxwell_equilibrio_termico"
+  | "macro_compuerta_filtro_maxwell"
+  | "caja_maxwell_gradiente_extremo"
+  | "cerebro_digital_sobrecarga_bits"
+  | "borrado_bits_principio_landauer"
+  | "mesa_remate_tecla_delete_cafe"
+  | "pantalla_dividida_infancia_adultez"
+  | "estudio_pastel_cinco_rebanadas"
+  | "estudio_pastel_cincuenta_rebanadas"
+  | "sala_archivos_cerebro_rutina"
+  | "montaje_recuerdos_infancia_4k"
+  | "rueda_hamster_oficina_gris"
+  | "montana_atardecer_despertar_mente"
+  | "colina_nocturna_estrellas_contador"
+  | "laboratorio_fermi_holograma_galaxia"
+  | "estacion_radiotelescopio_flatline"
+  | "escalera_evolutiva_gran_filtro"
+  | "abismo_futuro_amenazas_tecnologicas"
+  | "bosque_oscuro_depredadores_silencio"
+  | "espacio_orbital_palido_punto_azul"
+  | "estacion_telegrafo_victoriana_1859"
+  | "campo_auroras_caribe_medianoche"
+  | "observatorio_astronomico_carrington_1859"
+  | "espacio_cme_impacto_magnetosfera"
+  | "transicion_cables_1859_a_metropolis"
+  | "metropolis_apagon_catastrofe_electrica"
+  | "ciudad_oscura_auroras_vela"
+  | "habitacion_noche_proyector_recuerdos"
+  | "sala_control_corteza_prefrontal"
+  | "sala_control_amigdala_emergencia"
+  | "consola_amigdala_engranajes_ansiedad"
+  | "cueva_prehistorica_fuego_tigre"
+  | "habitacion_noche_amigdala_facturas"
+  | "habitacion_noche_calma_sueno"
+  | "estudio_blanco_celda_mandela"
+  | "estudio_linea_tiempo_mandela"
+  | "red_mental_siluetas_mandela"
+  | "estudio_caballete_monopoly_pikachu"
+  | "pantalla_dividida_choque_loftus"
+  | "mesa_trabajo_vhs_rompecabezas"
+  | "multitud_siluetas_pieza_falsa"
+  | "estudio_blanco_rebobinado_sombrero"
+  | "taller_inventor_victoriano"
+  | "billar_salon_1860"
+  | "laboratorio_polimeros"
+  | "infraestructura_electrica"
+  | "cantera_puente_piedra"
+  | "arsenal_venecia_1638"
+  | "estrecho_tacoma_1940"
+  | "metropoli_rascacielos"
+  | "pantalla_dividida_muelle_moderno_romano"
+  | "corte_transversal_hormigon_varilla_oxido"
+  | "barca_mezcla_volcan_pozzuoli"
+  | "microscopio_tobermorita_cristales"
+  | "grumos_cal_autoreparacion_mit"
+  | "ruinas_puerto_romano_submarino"
+  | "barca_laboratorio_futuro_calendario"
+  | "altar_morado_cuatro_luces"
+  | "panoramica_cuatro_destinos_mexicas"
+  | "escalones_mictlan_perro_guia"
+  | "obstaculos_montanas_viento_obsidiana"
+  | "rio_apanohuayan_cruce_ofrenda"
+  | "sala_blanca_descanso_chignahumictlan"
+  | "cempasuchil_cruz_codice_historia"
+  | "ofrenda_final_camino_petalos"
+  | "escritorio_procrastinacion_smartphone"
+  | "ring_boxeo_cerebral_corteza_vs_limbico"
+  | "corteza_prefrontal_pizarron_metas"
+  | "sistema_limbico_cavernicola_dopamina"
+  | "laboratorio_fmri_desconocido_yo_futuro"
+  | "pantalla_dividida_sofa_vs_tormenta_futuro"
+  | "escritorio_regla_cinco_minutos_exito"
+  | "consultorio_medico_camilla_dolor"
+  | "consultorio_revelacion_frasco_azucar"
+  | "microcosmos_esofago_red_nerviosa"
+  | "tronco_encefalico_farmacia_interna"
+  | "torso_radiografico_medidores_salud"
+  | "consultorio_placebo_etiqueta_abierta"
+  | "consultorio_cierre_triunfal_iris"
+  | "plaza_publica_tropiezo_foco"
+  | "plaza_publica_persecucion_casco_foco"
+  | "aula_universitaria_barry_manilow"
+  | "aula_comparativa_graficos_pastel"
+  | "cine_mental_sala_egocentrica"
+  | "plaza_multitud_focos_inseguridades"
+  | "plaza_atardecer_interruptor_libertad"
+  | "granja_campo_giroscopio"
+  | "laboratorio_optica_aviar"
+  | "suelo_semillas_desenfoque"
+  | "pista_caminata_experimento"
+  | "diagrama_cuello_resorte_mecanico"
+  | "estudio_ingenieria_steadycam_auto"
+  | "granja_campo_atardecer_cierre"
+  | "comparativa_olfato_tiburon_nariz"
+  | "piscina_olimpica_geosmina"
+  | "microcosmos_suelo_streptomyces"
+  | "macro_impacto_gota_aerosol"
+  | "sabana_homonido_sequia"
+  | "parque_lluvia_paraguas_cierre"
+  | "rocas_minerales_aceite_petricor"
+  | "laboratorio_neurociencia_mano_goma"
+  | "macro_pinceles_dedos_sincronia"
+  | "interior_corteza_cerebral_redes"
+  | "climax_martillo_panico_mesa"
+  | "grafica_estres_cardiaco_laboratorio"
+  | "laboratorio_cierre_eureka_neuro"
+  | "aula_clases_anatomia_pizarron"
+  | "laboratorio_hematologia_tubos"
+  | "macro_optica_piel_subcutanea"
+  | "espectro_fotones_dispersion_rayleigh"
+  | "estudio_desmentir_mito_escolar"
+  | "laboratorio_cierre_sangre_viva"
+  | "taqueria_mexicana_salsas_fuego"
+  | "macro_lengua_papilas_receptor"
+  | "interior_cerebro_panico_quemadura"
+  | "laboratorio_quimica_agua_vs_aceite"
+  | "macro_caseina_micelas_rescate"
+  | "taqueria_cierre_alivio_leche"
+  | "calle_choque_juguete"
+  | "archivo_memorias_futurista"
+  | "escritorio_hipocampo_reconsolidacion"
+  | "sala_tribunal_loftus"
+  | "diagrama_velocimetro_loftus"
+  | "mesa_rompecabezas_confabulacion"
+  | "sala_estar_album_memoria"
+  | "espacio_agujero_negro_hawking"
+  | "horizonte_cuantico_evaporacion"
+  | "laboratorio_cosmico_quema_libro"
+  | "laboratorio_reconstruccion_cuantica"
+  | "espacio_glitch_realidad_rota"
+  | "superficie_holografica_agujero"
+  | "cosmos_radiacion_informada_paz"
+  | "habitacion_objetos_pareidolia"
+  | "sabana_africana_crepusculo"
+  | "pantalla_dividida_asimetria_error"
+  | "microcosmos_cerebro_area_fusiforme"
+  | "laboratorio_escaneo_intenciones"
+  | "calle_urbana_humanizacion"
+  | "cafeteria_taza_sonriente_cierre"
   | "vacio";
 
 export type TipoCurvaMovimiento =
@@ -185,10 +352,14 @@ export type TipoCurvaMovimiento =
 
 export type TipoMovimientoProcedural =
   | "caminar"
+  | "correr"
   | "temblar"
   | "rebotar"
   | "flotar"
   | "recoil"
+  | "manipular"
+  | "esfuerzo"
+  | "agachar_recoger"
   | "estatico";
 
 export type AccionPredefinidaTipo =
@@ -208,8 +379,13 @@ export interface PasoAccion {
   finFrame?: number;
   inicioProgreso?: number;
   finProgreso?: number;
+  inicioSegundos?: number;
+  finSegundos?: number;
+  desdePalabra?: string;
+  hastaPalabra?: string;
   poseId?: string;
   expresion?: string;
+  desdePosicion?: { x?: number; y?: number };
   posicion?: { x?: number; y?: number };
   deltaPosicion?: { x?: number; y?: number };
   escala?: number;
@@ -219,6 +395,8 @@ export interface PasoAccion {
   props?: StickmanPropsAttachment;
   mirarHacia?: { x: number; y: number } | "objetivo";
   procedural?: TipoMovimientoProcedural;
+  esHolograma?: boolean;
+  opacidad?: number;
 }
 
 export interface AccionPersonaje {
@@ -231,6 +409,14 @@ export interface AccionPersonaje {
   inicioFrame?: number;
   duracionFrames?: number;
   objetivoId?: string;
+}
+
+export interface TrayectoriaSuelo {
+  desdeX: number;
+  hastaX: number;
+  y?: number;
+  etiqueta?: string;
+  color?: string;
 }
 
 export interface PersonajeEscena {
@@ -250,6 +436,44 @@ export interface PersonajeEscena {
   capaZ?: number;
   opacidad?: number;
   espectral?: boolean;
+  esHolograma?: boolean;
+  colorRim?: string;
+  trayectoriaSuelo?: TrayectoriaSuelo;
+  inicioProgreso?: number;
+  finProgreso?: number;
+  inicioSegundos?: number;
+  finSegundos?: number;
+  desdePalabra?: string;
+  hastaPalabra?: string;
+}
+
+export type TipoAnimacionObjeto =
+  | "caer"
+  | "flotar"
+  | "vibrar"
+  | "pulso"
+  | "fijo"
+  | "rodar"
+  | "rebotar";
+
+export interface PasoObjeto {
+  inicioFrame?: number;
+  finFrame?: number;
+  inicioProgreso?: number;
+  finProgreso?: number;
+  inicioSegundos?: number;
+  finSegundos?: number;
+  desdePalabra?: string;
+  hastaPalabra?: string;
+  desdePosicion?: { x: number; y: number };
+  posicion?: { x: number; y: number };
+  escala?: number;
+  rotacion?: number;
+  opacidad?: number;
+  estado?: string;
+  propId?: string;
+  curva?: TipoCurvaMovimiento;
+  animacion?: TipoAnimacionObjeto;
 }
 
 export interface ObjetoEscena {
@@ -258,13 +482,121 @@ export interface ObjetoEscena {
   posicion: { x: number; y: number };
   escala?: number;
   rotacion?: number;
+  opacidad?: number;
   capaZ?: number;
+  estado?: string;
+  inicioProgreso?: number;
+  finProgreso?: number;
+  inicioSegundos?: number;
+  finSegundos?: number;
+  desdePalabra?: string;
+  hastaPalabra?: string;
+  pasos?: PasoObjeto[];
   animacion?: {
-    tipo: "caer" | "flotar" | "vibrar" | "pulso" | "fijo";
+    tipo: TipoAnimacionObjeto;
     inicioFrame?: number;
     finFrame?: number;
     deltaY?: number;
+    deltaX?: number;
   };
+}
+
+export interface EventoSfx {
+  sfx: string;
+  tiempoSegundos?: number;
+  progreso?: number;
+  desdePalabra?: string;
+  volumen?: number;
+}
+
+export interface FocoCamaraKeyframe {
+  inicioProgreso?: number;
+  finProgreso?: number;
+  inicioSegundos?: number;
+  finSegundos?: number;
+  desdePalabra?: string;
+  hastaPalabra?: string;
+  x: number;
+  y: number;
+  escala?: number;
+  curva?: TipoCurvaMovimiento;
+}
+
+export type TipoPlanoCamara =
+  | "general"
+  | "plano_medio"
+  | "primer_plano"
+  | "sobre_hombro"
+  | "detalle_mano";
+
+export interface PlanoCamara {
+  tipo: TipoPlanoCamara;
+  x?: number;
+  y?: number;
+  zoom?: number;
+  blurFondo?: number;
+  hombroLado?: "izquierda" | "derecha";
+  accionMano?:
+    | "verter_acido"
+    | "prensar_palanca"
+    | "estirar_cadena"
+    | "girar_valvula"
+    | "tocar_esfera"
+    | "apilar_bloques"
+    | "medir_compas"
+    | "tensar_cable_acero"
+    | "bajar_interruptor"
+    | "ajustar_telescopio";
+  etiquetaInsert?: string;
+  inicioProgreso?: number;
+  finProgreso?: number;
+  inicioSegundos?: number;
+  finSegundos?: number;
+  desdePalabra?: string;
+  hastaPalabra?: string;
+}
+
+export interface CotaVectorial {
+  id?: string;
+  origenX: number;
+  origenY: number;
+  destinoX: number;
+  destinoY: number;
+  valor: string;
+  etiqueta?: string;
+  color?: string;
+  inicioProgreso?: number;
+  finProgreso?: number;
+  inicioSegundos?: number;
+  finSegundos?: number;
+  desdePalabra?: string;
+  hastaPalabra?: string;
+}
+
+export type TipoParticulaEscena =
+  | "chispas_quimicas"
+  | "gotas_acido"
+  | "vapor_presion"
+  | "eslabones_polimero"
+  | "fragmentos_marfil"
+  | "escombros_piedra"
+  | "rafagas_viento"
+  | "fotones_luz"
+  | "polvo_estelar";
+
+export interface EmisorParticulas {
+  id?: string;
+  tipo: TipoParticulaEscena;
+  x: number;
+  y: number;
+  cantidad?: number;
+  color?: string;
+  inicioProgreso?: number;
+  finProgreso?: number;
+  inicioSegundos?: number;
+  finSegundos?: number;
+  desdePalabra?: string;
+  hastaPalabra?: string;
 }
 
 export interface EscenaGuion {
@@ -299,14 +631,26 @@ export interface EscenaGuion {
   layout?: EstiloLayout;
   /** Elementos visuales narrativos animados para apoyar la explicación del guion */
   elementosNarrativos?: ElementoNarrativo[];
-  /** Efectos de cámara cinemática ('shake', 'punch', 'drift') */
-  efectosCamara?: ("shake" | "punch" | "drift")[];
+  /** Efectos de cámara cinemática ('shake', 'punch', 'drift', 'pan_left', 'pan_right') */
+  efectosCamara?: ("shake" | "punch" | "drift" | "pan_left" | "pan_right")[];
+  /** Keyframes de foco de cámara */
+  focoCamara?: FocoCamaraKeyframe[];
+  /** Micro-planos cinematográficos */
+  planos?: PlanoCamara[];
+  /** Cotas vectoriales diegéticas */
+  cotasVectoriales?: CotaVectorial[];
+  /** Emisores de partículas físicas */
+  emisoresParticulas?: EmisorParticulas[];
+  /** Rayos de luz volumétricos */
+  iluminacionVolumetrica?: boolean;
   /** Transición visual de entrada */
   transicion?: TipoTransicion;
   /** Archivo SFX sincronizado específico (ej. 'sfx/sfx_whoosh.wav') */
   sfx?: string;
   /** Nivel de volumen para el SFX de esta escena (0 a 1) */
   volumenSfx?: number;
+  /** Eventos SFX disparados a mitad de escena */
+  eventosSfx?: EventoSfx[];
   /** Palabras clave para destacar con jerarquía tipográfica */
   palabrasClave?: string[];
   /** Tipo de encuadre y composición narrativa */

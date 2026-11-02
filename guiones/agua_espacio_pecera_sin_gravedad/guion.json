@@ -1,0 +1,1510 @@
+{
+  "meta": {
+    "id": "agua_espacio_pecera_sin_gravedad",
+    "slug": "agua_espacio_pecera_sin_gravedad",
+    "temaResumen": "La pecera sin gravedad (La física del agua en el espacio)",
+    "duracionObjetivo": [
+      62,
+      78
+    ],
+    "titulo": "¿Una pecera sin vidrio en el espacio? La física del agua",
+    "titulo_corto": "Agua en gravedad cero",
+    "gancho": "¿Qué pasaría si intentas servirte un vaso con agua en el espacio?",
+    "fuentes": [
+      "NASA Fluid Physics in Microgravity Research",
+      "European Space Agency (ESA) Capillary Flow Experiments",
+      "Physics of Fluids: Surface Tension in Orbit"
+    ],
+    "genero": "Ciencia y Curiosidades",
+    "playlist": "Física Espacial y Fenómenos Extremos"
+  },
+  "escenas": [
+    {
+      "id": 1,
+      "texto": "¿Qué pasaría si intentas servirte un vaso con agua en el espacio? En órbita la gravedad aparente desaparece y el líquido no cae: emerge flotando como una esfera casi perfecta.",
+      "icono": "Droplets",
+      "colorIcono": "#38BDF8",
+      "tituloVisual": "¿AGUA EN EL ESPACIO?",
+      "composicionVisual": "plano_general",
+      "escenario": "modulo_iss_gravedad_cero",
+      "layout": "narrativo",
+      "transicion": "zoom_in",
+      "efectosCamara": [
+        "punch",
+        "drift"
+      ],
+      "sfx": "sfx/sfx_gota_espacial_bloop.wav",
+      "volumenSfx": 0.25,
+      "palabrasClave": [
+        "VASO CON AGUA",
+        "ESPACIO",
+        "GRAVEDAD APARENTE",
+        "NO CAE",
+        "ESFERA PERFECTA"
+      ],
+      "personajes": [
+        {
+          "id": "astronauta",
+          "nombre": "Astronauta",
+          "posicion": {
+            "x": -200,
+            "y": 60
+          },
+          "escala": 1.0,
+          "orientacion": "derecha",
+          "poseId": "presenting_object",
+          "expresion": "surprised",
+          "prop": "bolsa_agua_astronauta",
+          "capaZ": 10
+        }
+      ],
+      "objetos": [
+        {
+          "id": "vaso_vacio",
+          "propId": "vaso_espacial_vacio",
+          "posicion": {
+            "x": 120,
+            "y": 40
+          },
+          "escala": 1.1,
+          "animacion": {
+            "tipo": "flotar"
+          }
+        }
+      ],
+      "duracionSegundos": 9.058,
+      "palabras": [
+        {
+          "palabra": "Qué",
+          "inicioMs": 0,
+          "finMs": 160
+        },
+        {
+          "palabra": "pasaría",
+          "inicioMs": 160,
+          "finMs": 500
+        },
+        {
+          "palabra": "si",
+          "inicioMs": 500,
+          "finMs": 660
+        },
+        {
+          "palabra": "intentas",
+          "inicioMs": 660,
+          "finMs": 980
+        },
+        {
+          "palabra": "servirte",
+          "inicioMs": 980,
+          "finMs": 1220
+        },
+        {
+          "palabra": "un",
+          "inicioMs": 1220,
+          "finMs": 1500
+        },
+        {
+          "palabra": "vaso",
+          "inicioMs": 1500,
+          "finMs": 1720
+        },
+        {
+          "palabra": "con",
+          "inicioMs": 1720,
+          "finMs": 1840
+        },
+        {
+          "palabra": "agua",
+          "inicioMs": 1840,
+          "finMs": 2000
+        },
+        {
+          "palabra": "en",
+          "inicioMs": 2000,
+          "finMs": 2100
+        },
+        {
+          "palabra": "el",
+          "inicioMs": 2100,
+          "finMs": 2180
+        },
+        {
+          "palabra": "espacio",
+          "inicioMs": 2180,
+          "finMs": 2540
+        },
+        {
+          "palabra": "En",
+          "inicioMs": 2760,
+          "finMs": 2880
+        },
+        {
+          "palabra": "órbita",
+          "inicioMs": 2880,
+          "finMs": 3240
+        },
+        {
+          "palabra": "la",
+          "inicioMs": 3240,
+          "finMs": 3360
+        },
+        {
+          "palabra": "gravedad",
+          "inicioMs": 3360,
+          "finMs": 3760
+        },
+        {
+          "palabra": "aparente",
+          "inicioMs": 3760,
+          "finMs": 4280
+        },
+        {
+          "palabra": "desaparece",
+          "inicioMs": 4280,
+          "finMs": 4900
+        },
+        {
+          "palabra": "y",
+          "inicioMs": 4900,
+          "finMs": 5160
+        },
+        {
+          "palabra": "el",
+          "inicioMs": 5160,
+          "finMs": 5280
+        },
+        {
+          "palabra": "líquido",
+          "inicioMs": 5280,
+          "finMs": 5580
+        },
+        {
+          "palabra": "no",
+          "inicioMs": 5580,
+          "finMs": 5720
+        },
+        {
+          "palabra": "cae",
+          "inicioMs": 5720,
+          "finMs": 6060
+        },
+        {
+          "palabra": "emerge",
+          "inicioMs": 6180,
+          "finMs": 6460
+        },
+        {
+          "palabra": "flotando",
+          "inicioMs": 6460,
+          "finMs": 6960
+        },
+        {
+          "palabra": "como",
+          "inicioMs": 6960,
+          "finMs": 7180
+        },
+        {
+          "palabra": "una",
+          "inicioMs": 7180,
+          "finMs": 7340
+        },
+        {
+          "palabra": "esfera",
+          "inicioMs": 7340,
+          "finMs": 7640
+        },
+        {
+          "palabra": "casi",
+          "inicioMs": 7640,
+          "finMs": 7920
+        },
+        {
+          "palabra": "perfecta",
+          "inicioMs": 7920,
+          "finMs": 8560
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "texto": "Desconcertado, ves cómo la gota vibra como un globo de gelatina sin derramarse. Fascinado, decides convertirla en una pecera improvisada introduciendo un pececito de hule que flota feliz en su interior.",
+      "icono": "Fish",
+      "colorIcono": "#F59E0B",
+      "tituloVisual": "PECERA FLOTANTE",
+      "composicionVisual": "escenario_ilustrado",
+      "escenario": "pecera_flotante_360",
+      "layout": "narrativo",
+      "transicion": "whip_right",
+      "efectosCamara": [
+        "shake",
+        "drift"
+      ],
+      "sfx": "sfx/sfx_inmersion_pececillo.wav",
+      "volumenSfx": 0.26,
+      "palabrasClave": [
+        "GLOBO DE GELATINA",
+        "SIN DERRAMARSE",
+        "PECERA IMPROVISADA",
+        "PECECITO DE HULE"
+      ],
+      "personajes": [
+        {
+          "id": "astronauta",
+          "nombre": "Astronauta",
+          "posicion": {
+            "x": -260,
+            "y": 70
+          },
+          "escala": 0.95,
+          "orientacion": "derecha",
+          "poseId": "explaining_both_hands",
+          "expresion": "smile_wide",
+          "prop": "pececito_hule_dorado",
+          "capaZ": 10
+        }
+      ],
+      "objetos": [
+        {
+          "id": "esfera_principal",
+          "propId": "esfera_agua_flotante",
+          "posicion": {
+            "x": 140,
+            "y": 30
+          },
+          "escala": 1.2,
+          "animacion": {
+            "tipo": "pulso"
+          }
+        }
+      ],
+      "duracionSegundos": 11.266,
+      "palabras": [
+        {
+          "palabra": "Desconcertado",
+          "inicioMs": 500,
+          "finMs": 980
+        },
+        {
+          "palabra": "ves",
+          "inicioMs": 1080,
+          "finMs": 1200
+        },
+        {
+          "palabra": "cómo",
+          "inicioMs": 1200,
+          "finMs": 1420
+        },
+        {
+          "palabra": "la",
+          "inicioMs": 1420,
+          "finMs": 1580
+        },
+        {
+          "palabra": "gota",
+          "inicioMs": 1580,
+          "finMs": 1860
+        },
+        {
+          "palabra": "vibra",
+          "inicioMs": 1860,
+          "finMs": 2140
+        },
+        {
+          "palabra": "como",
+          "inicioMs": 2140,
+          "finMs": 2380
+        },
+        {
+          "palabra": "un",
+          "inicioMs": 2380,
+          "finMs": 2540
+        },
+        {
+          "palabra": "globo",
+          "inicioMs": 2540,
+          "finMs": 2780
+        },
+        {
+          "palabra": "de",
+          "inicioMs": 2780,
+          "finMs": 2940
+        },
+        {
+          "palabra": "gelatina",
+          "inicioMs": 2940,
+          "finMs": 3400
+        },
+        {
+          "palabra": "sin",
+          "inicioMs": 3400,
+          "finMs": 3580
+        },
+        {
+          "palabra": "derramarse",
+          "inicioMs": 3580,
+          "finMs": 4200
+        },
+        {
+          "palabra": "Fascinado",
+          "inicioMs": 4420,
+          "finMs": 4900
+        },
+        {
+          "palabra": "decides",
+          "inicioMs": 5080,
+          "finMs": 5420
+        },
+        {
+          "palabra": "convertirla",
+          "inicioMs": 5420,
+          "finMs": 6080
+        },
+        {
+          "palabra": "en",
+          "inicioMs": 6080,
+          "finMs": 6160
+        },
+        {
+          "palabra": "una",
+          "inicioMs": 6160,
+          "finMs": 6320
+        },
+        {
+          "palabra": "pecera",
+          "inicioMs": 6320,
+          "finMs": 6700
+        },
+        {
+          "palabra": "improvisada",
+          "inicioMs": 6700,
+          "finMs": 7340
+        },
+        {
+          "palabra": "introduciendo",
+          "inicioMs": 7500,
+          "finMs": 8000
+        },
+        {
+          "palabra": "un",
+          "inicioMs": 8000,
+          "finMs": 8160
+        },
+        {
+          "palabra": "pececito",
+          "inicioMs": 8160,
+          "finMs": 8660
+        },
+        {
+          "palabra": "de",
+          "inicioMs": 8660,
+          "finMs": 8780
+        },
+        {
+          "palabra": "hule",
+          "inicioMs": 8780,
+          "finMs": 9080
+        },
+        {
+          "palabra": "que",
+          "inicioMs": 9360,
+          "finMs": 9440
+        },
+        {
+          "palabra": "flota",
+          "inicioMs": 9440,
+          "finMs": 9720
+        },
+        {
+          "palabra": "feliz",
+          "inicioMs": 9720,
+          "finMs": 10040
+        },
+        {
+          "palabra": "en",
+          "inicioMs": 10040,
+          "finMs": 10320
+        },
+        {
+          "palabra": "su",
+          "inicioMs": 10320,
+          "finMs": 10440
+        },
+        {
+          "palabra": "interior",
+          "inicioMs": 10440,
+          "finMs": 10780
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "texto": "Al verla a nivel microscópico se revela el misterio: las moléculas de agua se atraen fuertemente por cohesión. Sin peso que la aplaste, la tensión superficial contrae el líquido en una esfera geométrica perfecta.",
+      "icono": "Atom",
+      "colorIcono": "#60A5FA",
+      "tituloVisual": "COHESIÓN MOLECULAR",
+      "composicionVisual": "primer_plano",
+      "escenario": "microcosmos_cohesion_molecular",
+      "layout": "narrativo",
+      "transicion": "zoom_in",
+      "efectosCamara": [
+        "punch",
+        "drift"
+      ],
+      "sfx": "sfx/sfx_cohesion_molecular.wav",
+      "volumenSfx": 0.24,
+      "palabrasClave": [
+        "MOLÉCULAS DE AGUA",
+        "COHESIÓN",
+        "SIN PESO",
+        "TENSIÓN SUPERFICIAL",
+        "ESFERA GEOMÉTRICA"
+      ],
+      "personajes": [
+        {
+          "id": "cientifico",
+          "nombre": "Científico",
+          "posicion": {
+            "x": -180,
+            "y": 80
+          },
+          "escala": 1.05,
+          "orientacion": "derecha",
+          "poseId": "analyzing_flask",
+          "expresion": "analytical",
+          "prop": "compas_cientifico",
+          "capaZ": 10
+        }
+      ],
+      "duracionSegundos": 10.954,
+      "palabras": [
+        {
+          "palabra": "Al",
+          "inicioMs": 0,
+          "finMs": 200
+        },
+        {
+          "palabra": "verla",
+          "inicioMs": 200,
+          "finMs": 500
+        },
+        {
+          "palabra": "a",
+          "inicioMs": 500,
+          "finMs": 620
+        },
+        {
+          "palabra": "nivel",
+          "inicioMs": 620,
+          "finMs": 720
+        },
+        {
+          "palabra": "microscópico",
+          "inicioMs": 720,
+          "finMs": 1420
+        },
+        {
+          "palabra": "se",
+          "inicioMs": 1420,
+          "finMs": 1580
+        },
+        {
+          "palabra": "revela",
+          "inicioMs": 1580,
+          "finMs": 1900
+        },
+        {
+          "palabra": "el",
+          "inicioMs": 1900,
+          "finMs": 1980
+        },
+        {
+          "palabra": "misterio",
+          "inicioMs": 1980,
+          "finMs": 2500
+        },
+        {
+          "palabra": "las",
+          "inicioMs": 2580,
+          "finMs": 2700
+        },
+        {
+          "palabra": "moléculas",
+          "inicioMs": 2700,
+          "finMs": 3220
+        },
+        {
+          "palabra": "de",
+          "inicioMs": 3220,
+          "finMs": 3300
+        },
+        {
+          "palabra": "agua",
+          "inicioMs": 3300,
+          "finMs": 3500
+        },
+        {
+          "palabra": "se",
+          "inicioMs": 3500,
+          "finMs": 3640
+        },
+        {
+          "palabra": "atraen",
+          "inicioMs": 3640,
+          "finMs": 3920
+        },
+        {
+          "palabra": "fuertemente",
+          "inicioMs": 3920,
+          "finMs": 4400
+        },
+        {
+          "palabra": "por",
+          "inicioMs": 4400,
+          "finMs": 4700
+        },
+        {
+          "palabra": "cohesión",
+          "inicioMs": 4700,
+          "finMs": 5220
+        },
+        {
+          "palabra": "Sin",
+          "inicioMs": 5500,
+          "finMs": 5740
+        },
+        {
+          "palabra": "peso",
+          "inicioMs": 5740,
+          "finMs": 6020
+        },
+        {
+          "palabra": "que",
+          "inicioMs": 6020,
+          "finMs": 6240
+        },
+        {
+          "palabra": "la",
+          "inicioMs": 6240,
+          "finMs": 6360
+        },
+        {
+          "palabra": "aplaste",
+          "inicioMs": 6360,
+          "finMs": 6760
+        },
+        {
+          "palabra": "la",
+          "inicioMs": 6860,
+          "finMs": 6920
+        },
+        {
+          "palabra": "tensión",
+          "inicioMs": 6920,
+          "finMs": 7220
+        },
+        {
+          "palabra": "superficial",
+          "inicioMs": 7220,
+          "finMs": 7780
+        },
+        {
+          "palabra": "contrae",
+          "inicioMs": 7780,
+          "finMs": 8140
+        },
+        {
+          "palabra": "el",
+          "inicioMs": 8140,
+          "finMs": 8300
+        },
+        {
+          "palabra": "líquido",
+          "inicioMs": 8300,
+          "finMs": 8700
+        },
+        {
+          "palabra": "en",
+          "inicioMs": 8700,
+          "finMs": 8860
+        },
+        {
+          "palabra": "una",
+          "inicioMs": 8860,
+          "finMs": 9040
+        },
+        {
+          "palabra": "esfera",
+          "inicioMs": 9040,
+          "finMs": 9320
+        },
+        {
+          "palabra": "geométrica",
+          "inicioMs": 9320,
+          "finMs": 9880
+        },
+        {
+          "palabra": "perfecta",
+          "inicioMs": 9880,
+          "finMs": 10480
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "texto": "Esta membrana líquida exterior actúa como una pared invisible y elástica. No necesitas recipientes de vidrio: el pez nada dentro de una pecera esférica que desafía toda nuestra intuición física terrestre.",
+      "icono": "Sparkles",
+      "colorIcono": "#34D399",
+      "tituloVisual": "PARED INVISIBLE",
+      "composicionVisual": "plano_general",
+      "escenario": "primer_plano_tapon_fluido",
+      "layout": "narrativo",
+      "transicion": "whip_left",
+      "efectosCamara": [
+        "punch",
+        "drift"
+      ],
+      "sfx": "sfx/sfx_membrana_elastica_agua.wav",
+      "volumenSfx": 0.24,
+      "palabrasClave": [
+        "MEMBRANA LÍQUIDA",
+        "PARED INVISIBLE",
+        "SIN VIDRIO",
+        "PECERA ESFÉRICA",
+        "INTUICIÓN FÍSICA"
+      ],
+      "personajes": [
+        {
+          "id": "observador",
+          "nombre": "Observador",
+          "posicion": {
+            "x": -220,
+            "y": 70
+          },
+          "escala": 1.0,
+          "orientacion": "derecha",
+          "poseId": "showing_both_hands",
+          "expresion": "eureka",
+          "capaZ": 10
+        }
+      ],
+      "objetos": [
+        {
+          "id": "esfera_con_pez",
+          "propId": "esfera_agua_flotante",
+          "posicion": {
+            "x": 160,
+            "y": 20
+          },
+          "escala": 1.25,
+          "animacion": {
+            "tipo": "flotar"
+          }
+        }
+      ],
+      "duracionSegundos": 11.338,
+      "palabras": [
+        {
+          "palabra": "Esta",
+          "inicioMs": 0,
+          "finMs": 320
+        },
+        {
+          "palabra": "membrana",
+          "inicioMs": 320,
+          "finMs": 720
+        },
+        {
+          "palabra": "líquida",
+          "inicioMs": 720,
+          "finMs": 1160
+        },
+        {
+          "palabra": "exterior",
+          "inicioMs": 1160,
+          "finMs": 1580
+        },
+        {
+          "palabra": "actúa",
+          "inicioMs": 1580,
+          "finMs": 2160
+        },
+        {
+          "palabra": "como",
+          "inicioMs": 2160,
+          "finMs": 2400
+        },
+        {
+          "palabra": "una",
+          "inicioMs": 2400,
+          "finMs": 2560
+        },
+        {
+          "palabra": "pared",
+          "inicioMs": 2560,
+          "finMs": 2800
+        },
+        {
+          "palabra": "invisible",
+          "inicioMs": 2800,
+          "finMs": 3200
+        },
+        {
+          "palabra": "y",
+          "inicioMs": 3200,
+          "finMs": 3500
+        },
+        {
+          "palabra": "elástica",
+          "inicioMs": 3500,
+          "finMs": 4060
+        },
+        {
+          "palabra": "No",
+          "inicioMs": 4320,
+          "finMs": 4460
+        },
+        {
+          "palabra": "necesitas",
+          "inicioMs": 4460,
+          "finMs": 4940
+        },
+        {
+          "palabra": "recipientes",
+          "inicioMs": 4940,
+          "finMs": 5440
+        },
+        {
+          "palabra": "de",
+          "inicioMs": 5440,
+          "finMs": 5640
+        },
+        {
+          "palabra": "vidrio",
+          "inicioMs": 5640,
+          "finMs": 6000
+        },
+        {
+          "palabra": "el",
+          "inicioMs": 6120,
+          "finMs": 6260
+        },
+        {
+          "palabra": "pez",
+          "inicioMs": 6260,
+          "finMs": 6400
+        },
+        {
+          "palabra": "nada",
+          "inicioMs": 6400,
+          "finMs": 6680
+        },
+        {
+          "palabra": "dentro",
+          "inicioMs": 6680,
+          "finMs": 7040
+        },
+        {
+          "palabra": "de",
+          "inicioMs": 7040,
+          "finMs": 7220
+        },
+        {
+          "palabra": "una",
+          "inicioMs": 7220,
+          "finMs": 7360
+        },
+        {
+          "palabra": "pecera",
+          "inicioMs": 7360,
+          "finMs": 7720
+        },
+        {
+          "palabra": "esférica",
+          "inicioMs": 7720,
+          "finMs": 8140
+        },
+        {
+          "palabra": "que",
+          "inicioMs": 8140,
+          "finMs": 8300
+        },
+        {
+          "palabra": "desafía",
+          "inicioMs": 8300,
+          "finMs": 8720
+        },
+        {
+          "palabra": "toda",
+          "inicioMs": 8720,
+          "finMs": 9020
+        },
+        {
+          "palabra": "nuestra",
+          "inicioMs": 9020,
+          "finMs": 9400
+        },
+        {
+          "palabra": "intuición",
+          "inicioMs": 9400,
+          "finMs": 9820
+        },
+        {
+          "palabra": "física",
+          "inicioMs": 9820,
+          "finMs": 10200
+        },
+        {
+          "palabra": "terrestre",
+          "inicioMs": 10200,
+          "finMs": 10880
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "texto": "Pero la física se complica al tocarla. Al empujar la esfera con un popote, el agua se adhiere obstinadamente a la superficie del plástico, trepando por adhesión capilar en lugar de soltarse limpiamente.",
+      "icono": "Magnet",
+      "colorIcono": "#EC4899",
+      "tituloVisual": "ADHESIÓN CAPILAR",
+      "composicionVisual": "escenario_ilustrado",
+      "escenario": "peligro_adhesion_capilar",
+      "layout": "narrativo",
+      "transicion": "zoom_in",
+      "efectosCamara": [
+        "shake",
+        "drift"
+      ],
+      "sfx": "sfx/sfx_succion_popote_adhesion.wav",
+      "volumenSfx": 0.26,
+      "palabrasClave": [
+        "AL TOCARLA",
+        "SE ADHIERE",
+        "ADHESIÓN CAPILAR",
+        "TREPANDO",
+        "NO SE SUELTA"
+      ],
+      "personajes": [
+        {
+          "id": "experimentador",
+          "nombre": "Experimentador",
+          "posicion": {
+            "x": -200,
+            "y": 60
+          },
+          "escala": 1.0,
+          "orientacion": "derecha",
+          "poseId": "explaining_pointing_up",
+          "expresion": "confused",
+          "prop": "popote_astronauta_largo",
+          "capaZ": 10
+        }
+      ],
+      "duracionSegundos": 11.074,
+      "palabras": [
+        {
+          "palabra": "Pero",
+          "inicioMs": 0,
+          "finMs": 200
+        },
+        {
+          "palabra": "la",
+          "inicioMs": 200,
+          "finMs": 320
+        },
+        {
+          "palabra": "física",
+          "inicioMs": 320,
+          "finMs": 580
+        },
+        {
+          "palabra": "se",
+          "inicioMs": 580,
+          "finMs": 820
+        },
+        {
+          "palabra": "complica",
+          "inicioMs": 820,
+          "finMs": 1320
+        },
+        {
+          "palabra": "al",
+          "inicioMs": 1320,
+          "finMs": 1400
+        },
+        {
+          "palabra": "tocarla",
+          "inicioMs": 1400,
+          "finMs": 1940
+        },
+        {
+          "palabra": "Al",
+          "inicioMs": 2160,
+          "finMs": 2280
+        },
+        {
+          "palabra": "empujar",
+          "inicioMs": 2280,
+          "finMs": 2740
+        },
+        {
+          "palabra": "la",
+          "inicioMs": 2740,
+          "finMs": 3060
+        },
+        {
+          "palabra": "esfera",
+          "inicioMs": 3060,
+          "finMs": 3300
+        },
+        {
+          "palabra": "con",
+          "inicioMs": 3300,
+          "finMs": 3460
+        },
+        {
+          "palabra": "un",
+          "inicioMs": 3460,
+          "finMs": 3920
+        },
+        {
+          "palabra": "popote",
+          "inicioMs": 4080,
+          "finMs": 4200
+        },
+        {
+          "palabra": "el",
+          "inicioMs": 4200,
+          "finMs": 4380
+        },
+        {
+          "palabra": "agua",
+          "inicioMs": 4380,
+          "finMs": 4580
+        },
+        {
+          "palabra": "se",
+          "inicioMs": 4580,
+          "finMs": 4840
+        },
+        {
+          "palabra": "adhiere",
+          "inicioMs": 4840,
+          "finMs": 5580
+        },
+        {
+          "palabra": "obstinadamente",
+          "inicioMs": 5580,
+          "finMs": 5820
+        },
+        {
+          "palabra": "a",
+          "inicioMs": 5820,
+          "finMs": 5840
+        },
+        {
+          "palabra": "la",
+          "inicioMs": 5840,
+          "finMs": 6400
+        },
+        {
+          "palabra": "superficie",
+          "inicioMs": 6400,
+          "finMs": 6520
+        },
+        {
+          "palabra": "del",
+          "inicioMs": 6520,
+          "finMs": 7040
+        },
+        {
+          "palabra": "plástico",
+          "inicioMs": 7200,
+          "finMs": 7620
+        },
+        {
+          "palabra": "trepando",
+          "inicioMs": 7620,
+          "finMs": 7800
+        },
+        {
+          "palabra": "por",
+          "inicioMs": 7800,
+          "finMs": 8280
+        },
+        {
+          "palabra": "adhesión",
+          "inicioMs": 8280,
+          "finMs": 8720
+        },
+        {
+          "palabra": "capilar",
+          "inicioMs": 8720,
+          "finMs": 9040
+        },
+        {
+          "palabra": "en",
+          "inicioMs": 9040,
+          "finMs": 9260
+        },
+        {
+          "palabra": "lugar",
+          "inicioMs": 9260,
+          "finMs": 9460
+        },
+        {
+          "palabra": "de",
+          "inicioMs": 9460,
+          "finMs": 9940
+        },
+        {
+          "palabra": "soltarse",
+          "inicioMs": 9940,
+          "finMs": 10500
+        },
+        {
+          "palabra": "limpiamente",
+          "inicioMs": 10500,
+          "finMs": 10824
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "texto": "¡Y esto es un peligro mortal para los astronautas! Si una gota toca tu rostro, trepa cubriendo ojos, nariz y boca como una máscara líquida imposible de sacudir, requiriendo toallas especiales para no ahogarse.",
+      "icono": "AlertTriangle",
+      "colorIcono": "#EF4444",
+      "tituloVisual": "¡PELIGRO DE ASFIXIA!",
+      "composicionVisual": "primer_plano",
+      "escenario": "mascara_agua_asfixia",
+      "layout": "narrativo",
+      "transicion": "flash",
+      "efectosCamara": [
+        "shake",
+        "punch"
+      ],
+      "sfx": "sfx/sfx_mascara_agua_splat.wav",
+      "volumenSfx": 0.28,
+      "palabrasClave": [
+        "PELIGRO MORTAL",
+        "MÁSCARA LÍQUIDA",
+        "IMPOSIBLE DE SACUDIR",
+        "TOALLAS ESPECIALES",
+        "NO AHOGARSE"
+      ],
+      "personajes": [
+        {
+          "id": "astronauta_en_peligro",
+          "nombre": "Astronauta en Peligro",
+          "posicion": {
+            "x": 0,
+            "y": 70
+          },
+          "escala": 1.15,
+          "orientacion": "derecha",
+          "poseId": "shock_explosion",
+          "expresion": "shocked",
+          "props": {
+            "cara": "mascara_agua_facial",
+            "derecha": "toalla_espacial_microfibra"
+          },
+          "capaZ": 15
+        }
+      ],
+      "duracionSegundos": 12.514,
+      "palabras": [
+        {
+          "palabra": "Y",
+          "inicioMs": 0,
+          "finMs": 200
+        },
+        {
+          "palabra": "esto",
+          "inicioMs": 200,
+          "finMs": 480
+        },
+        {
+          "palabra": "es",
+          "inicioMs": 480,
+          "finMs": 580
+        },
+        {
+          "palabra": "un",
+          "inicioMs": 580,
+          "finMs": 720
+        },
+        {
+          "palabra": "peligro",
+          "inicioMs": 720,
+          "finMs": 1060
+        },
+        {
+          "palabra": "mortal",
+          "inicioMs": 1060,
+          "finMs": 1400
+        },
+        {
+          "palabra": "para",
+          "inicioMs": 1400,
+          "finMs": 1740
+        },
+        {
+          "palabra": "los",
+          "inicioMs": 1740,
+          "finMs": 1940
+        },
+        {
+          "palabra": "astronautas",
+          "inicioMs": 1940,
+          "finMs": 2740
+        },
+        {
+          "palabra": "Si",
+          "inicioMs": 2960,
+          "finMs": 3100
+        },
+        {
+          "palabra": "una",
+          "inicioMs": 3100,
+          "finMs": 3260
+        },
+        {
+          "palabra": "gota",
+          "inicioMs": 3260,
+          "finMs": 3520
+        },
+        {
+          "palabra": "toca",
+          "inicioMs": 3520,
+          "finMs": 3780
+        },
+        {
+          "palabra": "tu",
+          "inicioMs": 3780,
+          "finMs": 3960
+        },
+        {
+          "palabra": "rostro",
+          "inicioMs": 3960,
+          "finMs": 4380
+        },
+        {
+          "palabra": "trepa",
+          "inicioMs": 4640,
+          "finMs": 4820
+        },
+        {
+          "palabra": "cubriendo",
+          "inicioMs": 4820,
+          "finMs": 5300
+        },
+        {
+          "palabra": "ojos",
+          "inicioMs": 5300,
+          "finMs": 5580
+        },
+        {
+          "palabra": "nariz",
+          "inicioMs": 5680,
+          "finMs": 5980
+        },
+        {
+          "palabra": "y",
+          "inicioMs": 5980,
+          "finMs": 6240
+        },
+        {
+          "palabra": "boca",
+          "inicioMs": 6240,
+          "finMs": 6400
+        },
+        {
+          "palabra": "como",
+          "inicioMs": 6400,
+          "finMs": 6720
+        },
+        {
+          "palabra": "una",
+          "inicioMs": 6720,
+          "finMs": 6920
+        },
+        {
+          "palabra": "máscara",
+          "inicioMs": 6920,
+          "finMs": 7360
+        },
+        {
+          "palabra": "líquida",
+          "inicioMs": 7360,
+          "finMs": 7740
+        },
+        {
+          "palabra": "imposible",
+          "inicioMs": 7740,
+          "finMs": 8240
+        },
+        {
+          "palabra": "de",
+          "inicioMs": 8240,
+          "finMs": 8380
+        },
+        {
+          "palabra": "sacudir",
+          "inicioMs": 8380,
+          "finMs": 8920
+        },
+        {
+          "palabra": "requiriendo",
+          "inicioMs": 9620,
+          "finMs": 10140
+        },
+        {
+          "palabra": "toallas",
+          "inicioMs": 10140,
+          "finMs": 10480
+        },
+        {
+          "palabra": "especiales",
+          "inicioMs": 10480,
+          "finMs": 11200
+        },
+        {
+          "palabra": "para",
+          "inicioMs": 11200,
+          "finMs": 11360
+        },
+        {
+          "palabra": "no",
+          "inicioMs": 11360,
+          "finMs": 11540
+        },
+        {
+          "palabra": "ahogarse",
+          "inicioMs": 11540,
+          "finMs": 11920
+        }
+      ]
+    },
+    {
+      "id": 7,
+      "texto": "Una vez a salvo, contemplar el agua en microgravedad es mágico: una pecera sin paredes donde un pececito nada en calma, reflejando la curvatura de la Tierra a través de la cúpula orbital.",
+      "icono": "Globe",
+      "colorIcono": "#A78BFA",
+      "tituloVisual": "PECERA EN EL COSMOS",
+      "composicionVisual": "plano_general",
+      "escenario": "cierre_orbital_tierra",
+      "layout": "narrativo",
+      "transicion": "zoom_in",
+      "efectosCamara": [
+        "punch",
+        "drift"
+      ],
+      "sfx": "sfx/sfx_toalla_secado_espacial.wav",
+      "volumenSfx": 0.25,
+      "palabrasClave": [
+        "A SALVO",
+        "MICROGRAVEDAD",
+        "PECERA SIN PAREDES",
+        "CURVATURA DE LA TIERRA",
+        "CÚPULA ORBITAL"
+      ],
+      "personajes": [
+        {
+          "id": "astronauta_pacifico",
+          "nombre": "Astronauta Pacífico",
+          "posicion": {
+            "x": -220,
+            "y": 60
+          },
+          "escala": 1.0,
+          "orientacion": "derecha",
+          "poseId": "standing_relaxed",
+          "expresion": "smile_soft",
+          "capaZ": 10
+        }
+      ],
+      "objetos": [
+        {
+          "id": "pecera_final",
+          "propId": "esfera_agua_flotante",
+          "posicion": {
+            "x": 160,
+            "y": 20
+          },
+          "escala": 1.3,
+          "animacion": {
+            "tipo": "flotar"
+          }
+        }
+      ],
+      "duracionSegundos": 9.706,
+      "palabras": [
+        {
+          "palabra": "Una",
+          "inicioMs": 0,
+          "finMs": 240
+        },
+        {
+          "palabra": "vez",
+          "inicioMs": 240,
+          "finMs": 360
+        },
+        {
+          "palabra": "a",
+          "inicioMs": 360,
+          "finMs": 480
+        },
+        {
+          "palabra": "salvo",
+          "inicioMs": 480,
+          "finMs": 840
+        },
+        {
+          "palabra": "contemplar",
+          "inicioMs": 980,
+          "finMs": 1480
+        },
+        {
+          "palabra": "el",
+          "inicioMs": 1480,
+          "finMs": 1600
+        },
+        {
+          "palabra": "agua",
+          "inicioMs": 1600,
+          "finMs": 1780
+        },
+        {
+          "palabra": "en",
+          "inicioMs": 1780,
+          "finMs": 1880
+        },
+        {
+          "palabra": "microgravedad",
+          "inicioMs": 1880,
+          "finMs": 2460
+        },
+        {
+          "palabra": "es",
+          "inicioMs": 2460,
+          "finMs": 2740
+        },
+        {
+          "palabra": "mágico",
+          "inicioMs": 2740,
+          "finMs": 3240
+        },
+        {
+          "palabra": "una",
+          "inicioMs": 3320,
+          "finMs": 3460
+        },
+        {
+          "palabra": "pecera",
+          "inicioMs": 3460,
+          "finMs": 3820
+        },
+        {
+          "palabra": "sin",
+          "inicioMs": 3820,
+          "finMs": 3980
+        },
+        {
+          "palabra": "paredes",
+          "inicioMs": 3980,
+          "finMs": 4460
+        },
+        {
+          "palabra": "donde",
+          "inicioMs": 4460,
+          "finMs": 4580
+        },
+        {
+          "palabra": "un",
+          "inicioMs": 4580,
+          "finMs": 4740
+        },
+        {
+          "palabra": "pececito",
+          "inicioMs": 4740,
+          "finMs": 5200
+        },
+        {
+          "palabra": "nada",
+          "inicioMs": 5200,
+          "finMs": 5400
+        },
+        {
+          "palabra": "en",
+          "inicioMs": 5400,
+          "finMs": 5560
+        },
+        {
+          "palabra": "calma",
+          "inicioMs": 5560,
+          "finMs": 5900
+        },
+        {
+          "palabra": "reflejando",
+          "inicioMs": 5980,
+          "finMs": 6520
+        },
+        {
+          "palabra": "la",
+          "inicioMs": 6520,
+          "finMs": 6640
+        },
+        {
+          "palabra": "curvatura",
+          "inicioMs": 6640,
+          "finMs": 7140
+        },
+        {
+          "palabra": "de",
+          "inicioMs": 7140,
+          "finMs": 7300
+        },
+        {
+          "palabra": "la",
+          "inicioMs": 7300,
+          "finMs": 7420
+        },
+        {
+          "palabra": "Tierra",
+          "inicioMs": 7420,
+          "finMs": 7760
+        },
+        {
+          "palabra": "a",
+          "inicioMs": 7760,
+          "finMs": 8020
+        },
+        {
+          "palabra": "través",
+          "inicioMs": 8020,
+          "finMs": 8260
+        },
+        {
+          "palabra": "de",
+          "inicioMs": 8260,
+          "finMs": 8480
+        },
+        {
+          "palabra": "la",
+          "inicioMs": 8480,
+          "finMs": 8580
+        },
+        {
+          "palabra": "cúpula",
+          "inicioMs": 8580,
+          "finMs": 8940
+        },
+        {
+          "palabra": "orbital",
+          "inicioMs": 8940,
+          "finMs": 9300
+        }
+      ]
+    }
+  ]
+}

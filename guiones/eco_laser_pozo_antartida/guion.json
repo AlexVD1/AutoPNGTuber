@@ -1,0 +1,1614 @@
+{
+  "meta": {
+    "id": "eco_laser_pozo_antartida",
+    "slug": "eco_laser_pozo_antartida",
+    "titulo": "El pozo de hielo que suena como un láser de Star Wars",
+    "titulo_corto": "Eco láser en la Antártida",
+    "tema": "¿Por qué tirar hielo en un pozo antártico suena como un láser de ciencia ficción? Dispersión acústica",
+    "temaResumen": "La dispersión acústica en una perforación glacial de 90 metros hace que las frecuencias agudas viajen más rápido que las graves, transformando un simple impacto en un silbido láser descendente.",
+    "duracionObjetivo": [
+      62,
+      78
+    ],
+    "categoria": "Educación y Ciencia",
+    "genero": "Ciencia y Naturaleza",
+    "fuentes": "Grabaciones del glaciólogo Peter Neff en Taylor Glacier (2018); Física acústica de guías de ondas cilíndricas",
+    "gancho": "Si tiras un trozo de hielo a este pozo en la Antártida, no suena como un golpe común: suena como una auténtica batalla espacial.",
+    "palabrasClave": [
+      "ECO LÁSER POLAR",
+      "90 METROS DE HIELO",
+      "DISPARO GALÁCTICO",
+      "DISPERSIÓN ACÚSTICA",
+      "CARRERA DE ONDAS",
+      "SILBIDO DESCENDENTE",
+      "LÁSER DE LA TIERRA"
+    ]
+  },
+  "escenas": [
+    {
+      "id": 1,
+      "texto": "Si tiras un trozo de hielo a este pozo en la Antártida, no suena como un golpe común: suena como una auténtica batalla espacial. Al soltarlo en la oscuridad, el abismo glacial responde con un disparo láser inconfundible.",
+      "icono": "Snowflake",
+      "colorIcono": "#38BDF8",
+      "tituloVisual": "ECO LÁSER POLAR",
+      "composicionVisual": "plano_general",
+      "escenario": "desierto_polar_antartico",
+      "layout": "narrativo",
+      "transicion": "corte",
+      "efectosCamara": [
+        "drift"
+      ],
+      "sfx": "sfx/sfx_eco_laser_antartida.wav",
+      "volumenSfx": 0.28,
+      "palabrasClave": [
+        "pozo",
+        "Antártida",
+        "batalla",
+        "espacial"
+      ],
+      "personajes": [
+        {
+          "id": "explorador_polar",
+          "nombre": "Explorador",
+          "posicion": {
+            "x": -180,
+            "y": 60
+          },
+          "escala": 1.05,
+          "orientacion": "derecha",
+          "poseId": "leaning_forward",
+          "expresion": "surprised",
+          "props": {
+            "sombrero": "earmuffs_polar",
+            "cuello": "bufanda_polar_viento",
+            "derecha": "trozo_hielo_antartico"
+          },
+          "habla": true,
+          "capaZ": 10
+        }
+      ],
+      "objetos": [
+        {
+          "id": "rayo_sonico_inicio",
+          "propId": "lucide:Zap",
+          "posicion": {
+            "x": 120,
+            "y": -40
+          },
+          "escala": 1.5,
+          "animacion": "pulso",
+          "capaZ": 8
+        }
+      ],
+      "duracionSegundos": 12.034,
+      "palabras": [
+        {
+          "palabra": "Si",
+          "inicioMs": 0,
+          "finMs": 160
+        },
+        {
+          "palabra": "tiras",
+          "inicioMs": 160,
+          "finMs": 480
+        },
+        {
+          "palabra": "un",
+          "inicioMs": 480,
+          "finMs": 620
+        },
+        {
+          "palabra": "trozo",
+          "inicioMs": 620,
+          "finMs": 940
+        },
+        {
+          "palabra": "de",
+          "inicioMs": 940,
+          "finMs": 1080
+        },
+        {
+          "palabra": "hielo",
+          "inicioMs": 1080,
+          "finMs": 1420
+        },
+        {
+          "palabra": "a",
+          "inicioMs": 1420,
+          "finMs": 1560
+        },
+        {
+          "palabra": "este",
+          "inicioMs": 1560,
+          "finMs": 1780
+        },
+        {
+          "palabra": "pozo",
+          "inicioMs": 1780,
+          "finMs": 2100
+        },
+        {
+          "palabra": "en",
+          "inicioMs": 2100,
+          "finMs": 2220
+        },
+        {
+          "palabra": "la",
+          "inicioMs": 2220,
+          "finMs": 2300
+        },
+        {
+          "palabra": "Antártida",
+          "inicioMs": 2300,
+          "finMs": 2880
+        },
+        {
+          "palabra": "no",
+          "inicioMs": 3060,
+          "finMs": 3140
+        },
+        {
+          "palabra": "suena",
+          "inicioMs": 3140,
+          "finMs": 3400
+        },
+        {
+          "palabra": "como",
+          "inicioMs": 3400,
+          "finMs": 3600
+        },
+        {
+          "palabra": "un",
+          "inicioMs": 3600,
+          "finMs": 3760
+        },
+        {
+          "palabra": "golpe",
+          "inicioMs": 3760,
+          "finMs": 4000
+        },
+        {
+          "palabra": "común",
+          "inicioMs": 4000,
+          "finMs": 4360
+        },
+        {
+          "palabra": "suena",
+          "inicioMs": 4540,
+          "finMs": 4720
+        },
+        {
+          "palabra": "como",
+          "inicioMs": 4720,
+          "finMs": 4900
+        },
+        {
+          "palabra": "una",
+          "inicioMs": 4900,
+          "finMs": 5080
+        },
+        {
+          "palabra": "auténtica",
+          "inicioMs": 5080,
+          "finMs": 5540
+        },
+        {
+          "palabra": "batalla",
+          "inicioMs": 5540,
+          "finMs": 5880
+        },
+        {
+          "palabra": "espacial",
+          "inicioMs": 5880,
+          "finMs": 6380
+        },
+        {
+          "palabra": "Al",
+          "inicioMs": 6620,
+          "finMs": 6760
+        },
+        {
+          "palabra": "soltarlo",
+          "inicioMs": 6760,
+          "finMs": 7380
+        },
+        {
+          "palabra": "en",
+          "inicioMs": 7380,
+          "finMs": 7480
+        },
+        {
+          "palabra": "la",
+          "inicioMs": 7480,
+          "finMs": 7540
+        },
+        {
+          "palabra": "oscuridad",
+          "inicioMs": 7540,
+          "finMs": 8040
+        },
+        {
+          "palabra": "el",
+          "inicioMs": 8300,
+          "finMs": 8400
+        },
+        {
+          "palabra": "abismo",
+          "inicioMs": 8400,
+          "finMs": 8700
+        },
+        {
+          "palabra": "glacial",
+          "inicioMs": 8700,
+          "finMs": 9200
+        },
+        {
+          "palabra": "responde",
+          "inicioMs": 9200,
+          "finMs": 9680
+        },
+        {
+          "palabra": "con",
+          "inicioMs": 9680,
+          "finMs": 9820
+        },
+        {
+          "palabra": "un",
+          "inicioMs": 9820,
+          "finMs": 9960
+        },
+        {
+          "palabra": "disparo",
+          "inicioMs": 9960,
+          "finMs": 10420
+        },
+        {
+          "palabra": "láser",
+          "inicioMs": 10420,
+          "finMs": 10780
+        },
+        {
+          "palabra": "inconfundible",
+          "inicioMs": 10780,
+          "finMs": 11560
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "texto": "Esto fue grabado por científicos en la Antártida dentro de un orificio de noventa metros de profundidad, perforado en el hielo milenario para extraer testigos climáticos de la Tierra.",
+      "icono": "Ruler",
+      "colorIcono": "#FACC15",
+      "tituloVisual": "90 METROS DE HIELO",
+      "composicionVisual": "escenario_ilustrado",
+      "escenario": "corte_glaciar_antartico",
+      "layout": "narrativo",
+      "transicion": "whip_right",
+      "efectosCamara": [
+        "drift"
+      ],
+      "sfx": "sfx/sfx_cinta_metrica_90m.wav",
+      "volumenSfx": 0.24,
+      "palabrasClave": [
+        "científicos",
+        "noventa metros",
+        "profundidad",
+        "glaciar"
+      ],
+      "personajes": [
+        {
+          "id": "medidor_profundidad",
+          "nombre": "Científico Polar",
+          "posicion": {
+            "x": 160,
+            "y": -140
+          },
+          "escala": 0.95,
+          "orientacion": "izquierda",
+          "poseId": "taking_notes",
+          "expresion": "analytical",
+          "props": {
+            "sombrero": "earmuffs_polar",
+            "cuello": "bufanda_polar_viento",
+            "derecha": "cinta_metrica_90m"
+          },
+          "habla": true,
+          "capaZ": 10
+        }
+      ],
+      "objetos": [
+        {
+          "id": "etiqueta_glaciar",
+          "propId": "lucide:Compass",
+          "posicion": {
+            "x": -260,
+            "y": -120
+          },
+          "escala": 1.2,
+          "animacion": "flotar",
+          "capaZ": 8
+        }
+      ],
+      "duracionSegundos": 8.722,
+      "palabras": [
+        {
+          "palabra": "Esto",
+          "inicioMs": 0,
+          "finMs": 320
+        },
+        {
+          "palabra": "fue",
+          "inicioMs": 320,
+          "finMs": 500
+        },
+        {
+          "palabra": "grabado",
+          "inicioMs": 500,
+          "finMs": 860
+        },
+        {
+          "palabra": "por",
+          "inicioMs": 860,
+          "finMs": 1060
+        },
+        {
+          "palabra": "científicos",
+          "inicioMs": 1060,
+          "finMs": 1680
+        },
+        {
+          "palabra": "en",
+          "inicioMs": 1680,
+          "finMs": 1780
+        },
+        {
+          "palabra": "la",
+          "inicioMs": 1780,
+          "finMs": 1860
+        },
+        {
+          "palabra": "Antártida",
+          "inicioMs": 1860,
+          "finMs": 2340
+        },
+        {
+          "palabra": "dentro",
+          "inicioMs": 2340,
+          "finMs": 2660
+        },
+        {
+          "palabra": "de",
+          "inicioMs": 2660,
+          "finMs": 2840
+        },
+        {
+          "palabra": "un",
+          "inicioMs": 2840,
+          "finMs": 2940
+        },
+        {
+          "palabra": "orificio",
+          "inicioMs": 2940,
+          "finMs": 3380
+        },
+        {
+          "palabra": "de",
+          "inicioMs": 3380,
+          "finMs": 3460
+        },
+        {
+          "palabra": "noventa",
+          "inicioMs": 3460,
+          "finMs": 3740
+        },
+        {
+          "palabra": "metros",
+          "inicioMs": 3740,
+          "finMs": 4040
+        },
+        {
+          "palabra": "de",
+          "inicioMs": 4040,
+          "finMs": 4220
+        },
+        {
+          "palabra": "profundidad",
+          "inicioMs": 4220,
+          "finMs": 4860
+        },
+        {
+          "palabra": "perforado",
+          "inicioMs": 5080,
+          "finMs": 5500
+        },
+        {
+          "palabra": "en",
+          "inicioMs": 5500,
+          "finMs": 5600
+        },
+        {
+          "palabra": "el",
+          "inicioMs": 5600,
+          "finMs": 5680
+        },
+        {
+          "palabra": "hielo",
+          "inicioMs": 5680,
+          "finMs": 5940
+        },
+        {
+          "palabra": "milenario",
+          "inicioMs": 5940,
+          "finMs": 6320
+        },
+        {
+          "palabra": "para",
+          "inicioMs": 6320,
+          "finMs": 6600
+        },
+        {
+          "palabra": "extraer",
+          "inicioMs": 6600,
+          "finMs": 6920
+        },
+        {
+          "palabra": "testigos",
+          "inicioMs": 6920,
+          "finMs": 7320
+        },
+        {
+          "palabra": "climáticos",
+          "inicioMs": 7320,
+          "finMs": 7820
+        },
+        {
+          "palabra": "de",
+          "inicioMs": 7820,
+          "finMs": 7920
+        },
+        {
+          "palabra": "la",
+          "inicioMs": 7920,
+          "finMs": 8020
+        },
+        {
+          "palabra": "Tierra",
+          "inicioMs": 8020,
+          "finMs": 8300
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "texto": "Y al descubrirlo, nadie puede resistirse a experimentar. Cada fragmento de hielo que choca en el fondo rebota en una sinfonía rítmica de rayos láser con alturas y timbres completamente distintos.",
+      "icono": "Sparkles",
+      "colorIcono": "#A855F7",
+      "tituloVisual": "DISPARO GALÁCTICO",
+      "composicionVisual": "plano_general",
+      "escenario": "llanura_antartica_pozo",
+      "layout": "narrativo",
+      "transicion": "whip_left",
+      "efectosCamara": [
+        "shake"
+      ],
+      "sfx": "sfx/sfx_laser_ritmico_antartida.wav",
+      "volumenSfx": 0.26,
+      "palabrasClave": [
+        "experimentar",
+        "choca",
+        "disparo",
+        "galáctico"
+      ],
+      "personajes": [
+        {
+          "id": "dj_polar",
+          "nombre": "DJ Antártico",
+          "posicion": {
+            "x": -180,
+            "y": 70
+          },
+          "escala": 1.05,
+          "orientacion": "derecha",
+          "poseId": "throwing_object",
+          "expresion": "talking_enthusiastic",
+          "props": {
+            "sombrero": "earmuffs_polar",
+            "cuello": "bufanda_polar_viento",
+            "izquierda": "cubeta_hielo_rocas",
+            "derecha": "trozo_hielo_antartico"
+          },
+          "habla": true,
+          "capaZ": 10
+        }
+      ],
+      "objetos": [
+        {
+          "id": "icono_ritmo",
+          "propId": "lucide:Music",
+          "posicion": {
+            "x": 160,
+            "y": -60
+          },
+          "escala": 1.3,
+          "animacion": "vibrar",
+          "capaZ": 8
+        }
+      ],
+      "duracionSegundos": 11.914,
+      "palabras": [
+        {
+          "palabra": "Y",
+          "inicioMs": 0,
+          "finMs": 160
+        },
+        {
+          "palabra": "al",
+          "inicioMs": 160,
+          "finMs": 260
+        },
+        {
+          "palabra": "descubrirlo",
+          "inicioMs": 260,
+          "finMs": 940
+        },
+        {
+          "palabra": "nadie",
+          "inicioMs": 1080,
+          "finMs": 1280
+        },
+        {
+          "palabra": "puede",
+          "inicioMs": 1280,
+          "finMs": 1560
+        },
+        {
+          "palabra": "resistirse",
+          "inicioMs": 1560,
+          "finMs": 2180
+        },
+        {
+          "palabra": "a",
+          "inicioMs": 2180,
+          "finMs": 3080
+        },
+        {
+          "palabra": "experimentar",
+          "inicioMs": 3260,
+          "finMs": 3440
+        },
+        {
+          "palabra": "Cada",
+          "inicioMs": 3440,
+          "finMs": 3980
+        },
+        {
+          "palabra": "fragmento",
+          "inicioMs": 3980,
+          "finMs": 4140
+        },
+        {
+          "palabra": "de",
+          "inicioMs": 4140,
+          "finMs": 4440
+        },
+        {
+          "palabra": "hielo",
+          "inicioMs": 4440,
+          "finMs": 4580
+        },
+        {
+          "palabra": "que",
+          "inicioMs": 4580,
+          "finMs": 4900
+        },
+        {
+          "palabra": "choca",
+          "inicioMs": 4900,
+          "finMs": 5000
+        },
+        {
+          "palabra": "en",
+          "inicioMs": 5000,
+          "finMs": 5100
+        },
+        {
+          "palabra": "el",
+          "inicioMs": 5100,
+          "finMs": 5260
+        },
+        {
+          "palabra": "fondo",
+          "inicioMs": 5260,
+          "finMs": 5800
+        },
+        {
+          "palabra": "rebota",
+          "inicioMs": 5800,
+          "finMs": 5960
+        },
+        {
+          "palabra": "en",
+          "inicioMs": 5960,
+          "finMs": 6080
+        },
+        {
+          "palabra": "una",
+          "inicioMs": 6080,
+          "finMs": 6620
+        },
+        {
+          "palabra": "sinfonía",
+          "inicioMs": 6620,
+          "finMs": 7120
+        },
+        {
+          "palabra": "rítmica",
+          "inicioMs": 7120,
+          "finMs": 7240
+        },
+        {
+          "palabra": "de",
+          "inicioMs": 7240,
+          "finMs": 7620
+        },
+        {
+          "palabra": "rayos",
+          "inicioMs": 7740,
+          "finMs": 7820
+        },
+        {
+          "palabra": "láser",
+          "inicioMs": 7820,
+          "finMs": 7980
+        },
+        {
+          "palabra": "con",
+          "inicioMs": 7980,
+          "finMs": 8140
+        },
+        {
+          "palabra": "alturas",
+          "inicioMs": 8140,
+          "finMs": 8460
+        },
+        {
+          "palabra": "y",
+          "inicioMs": 8460,
+          "finMs": 8720
+        },
+        {
+          "palabra": "timbres",
+          "inicioMs": 8720,
+          "finMs": 9060
+        },
+        {
+          "palabra": "completamente",
+          "inicioMs": 9060,
+          "finMs": 9720
+        },
+        {
+          "palabra": "distintos",
+          "inicioMs": 9720,
+          "finMs": 11420
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "texto": "Pero, ¿por qué un golpe físico se escucha como ciencia ficción? La clave es la dispersión acústica: dentro de un cilindro helado y perfecto, el sonido no se propaga como en el aire abierto.",
+      "icono": "Waves",
+      "colorIcono": "#38BDF8",
+      "tituloVisual": "DISPERSIÓN ACÚSTICA",
+      "composicionVisual": "escenario_ilustrado",
+      "escenario": "interior_guia_ondas_hielo",
+      "layout": "narrativo",
+      "transicion": "zoom_in",
+      "efectosCamara": [
+        "drift"
+      ],
+      "sfx": "sfx/sfx_golpe_hielo_resonancia.wav",
+      "volumenSfx": 0.25,
+      "palabrasClave": [
+        "golpe seco",
+        "dispersión",
+        "acústica",
+        "cilindro"
+      ],
+      "personajes": [
+        {
+          "id": "observador_burbuja",
+          "nombre": "Mini Explorador",
+          "posicion": {
+            "x": -220,
+            "y": 40
+          },
+          "escala": 0.85,
+          "orientacion": "derecha",
+          "poseId": "investigating_magnifier",
+          "expresion": "thinking",
+          "props": {
+            "sombrero": "earmuffs_polar",
+            "cuello": "bufanda_polar_viento",
+            "derecha": "magnifier"
+          },
+          "habla": true,
+          "capaZ": 10
+        }
+      ],
+      "objetos": [
+        {
+          "id": "bloque_impacto",
+          "propId": "trozo_hielo_antartico",
+          "posicion": {
+            "x": 0,
+            "y": 80
+          },
+          "escala": 1.4,
+          "animacion": "caer",
+          "capaZ": 9
+        }
+      ],
+      "duracionSegundos": 9.49,
+      "palabras": [
+        {
+          "palabra": "Pero",
+          "inicioMs": 0,
+          "finMs": 280
+        },
+        {
+          "palabra": "por",
+          "inicioMs": 280,
+          "finMs": 620
+        },
+        {
+          "palabra": "qué",
+          "inicioMs": 620,
+          "finMs": 760
+        },
+        {
+          "palabra": "un",
+          "inicioMs": 760,
+          "finMs": 900
+        },
+        {
+          "palabra": "golpe",
+          "inicioMs": 900,
+          "finMs": 1040
+        },
+        {
+          "palabra": "físico",
+          "inicioMs": 1040,
+          "finMs": 1520
+        },
+        {
+          "palabra": "se",
+          "inicioMs": 1520,
+          "finMs": 1680
+        },
+        {
+          "palabra": "escucha",
+          "inicioMs": 1680,
+          "finMs": 1980
+        },
+        {
+          "palabra": "como",
+          "inicioMs": 1980,
+          "finMs": 2140
+        },
+        {
+          "palabra": "ciencia",
+          "inicioMs": 2140,
+          "finMs": 2440
+        },
+        {
+          "palabra": "ficción",
+          "inicioMs": 2440,
+          "finMs": 2900
+        },
+        {
+          "palabra": "La",
+          "inicioMs": 3120,
+          "finMs": 3200
+        },
+        {
+          "palabra": "clave",
+          "inicioMs": 3200,
+          "finMs": 3540
+        },
+        {
+          "palabra": "es",
+          "inicioMs": 3540,
+          "finMs": 3720
+        },
+        {
+          "palabra": "la",
+          "inicioMs": 3720,
+          "finMs": 3800
+        },
+        {
+          "palabra": "dispersión",
+          "inicioMs": 3800,
+          "finMs": 4360
+        },
+        {
+          "palabra": "acústica",
+          "inicioMs": 4360,
+          "finMs": 4940
+        },
+        {
+          "palabra": "dentro",
+          "inicioMs": 4940,
+          "finMs": 5160
+        },
+        {
+          "palabra": "de",
+          "inicioMs": 5160,
+          "finMs": 5380
+        },
+        {
+          "palabra": "un",
+          "inicioMs": 5380,
+          "finMs": 5480
+        },
+        {
+          "palabra": "cilindro",
+          "inicioMs": 5480,
+          "finMs": 5920
+        },
+        {
+          "palabra": "helado",
+          "inicioMs": 5920,
+          "finMs": 6200
+        },
+        {
+          "palabra": "y",
+          "inicioMs": 6200,
+          "finMs": 6300
+        },
+        {
+          "palabra": "perfecto",
+          "inicioMs": 6300,
+          "finMs": 6940
+        },
+        {
+          "palabra": "el",
+          "inicioMs": 7040,
+          "finMs": 7140
+        },
+        {
+          "palabra": "sonido",
+          "inicioMs": 7140,
+          "finMs": 7480
+        },
+        {
+          "palabra": "no",
+          "inicioMs": 7480,
+          "finMs": 7600
+        },
+        {
+          "palabra": "se",
+          "inicioMs": 7600,
+          "finMs": 7760
+        },
+        {
+          "palabra": "propaga",
+          "inicioMs": 7760,
+          "finMs": 8080
+        },
+        {
+          "palabra": "como",
+          "inicioMs": 8080,
+          "finMs": 8300
+        },
+        {
+          "palabra": "en",
+          "inicioMs": 8300,
+          "finMs": 8400
+        },
+        {
+          "palabra": "el",
+          "inicioMs": 8400,
+          "finMs": 8500
+        },
+        {
+          "palabra": "aire",
+          "inicioMs": 8500,
+          "finMs": 8640
+        },
+        {
+          "palabra": "abierto",
+          "inicioMs": 8640,
+          "finMs": 9000
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "texto": "El tubo de hielo actúa como una guía de ondas acústica. Las frecuencias agudas rebotan más rápido por las paredes lisas y viajan hacia arriba, mientras que las frecuencias graves van oscilando más lento y se quedan atrás.",
+      "icono": "TrendingUp",
+      "colorIcono": "#C084FC",
+      "tituloVisual": "CARRERA DE ONDAS",
+      "composicionVisual": "cifras_concepto",
+      "escenario": "carrera_ondas_dispersion",
+      "layout": "narrativo",
+      "transicion": "whip_right",
+      "efectosCamara": [
+        "punch"
+      ],
+      "sfx": "sfx/sfx_glissando_dispersion.wav",
+      "volumenSfx": 0.27,
+      "palabrasClave": [
+        "guía de ondas",
+        "agudas",
+        "rebotan",
+        "graves",
+        "atrás"
+      ],
+      "personajes": [
+        {
+          "id": "analista_frecuencias",
+          "nombre": "Físico Acústico",
+          "posicion": {
+            "x": -250,
+            "y": 90
+          },
+          "escala": 0.95,
+          "orientacion": "derecha",
+          "poseId": "explaining_both_hands",
+          "expresion": "talking_enthusiastic",
+          "props": {
+            "sombrero": "earmuffs_polar",
+            "cuello": "bufanda_polar_viento"
+          },
+          "habla": true,
+          "capaZ": 10
+        }
+      ],
+      "objetos": [
+        {
+          "id": "cronometro_onda",
+          "propId": "lucide:Timer",
+          "posicion": {
+            "x": 260,
+            "y": -60
+          },
+          "escala": 1.3,
+          "animacion": "pulso",
+          "capaZ": 8
+        }
+      ],
+      "duracionSegundos": 11.842,
+      "palabras": [
+        {
+          "palabra": "El",
+          "inicioMs": 0,
+          "finMs": 200
+        },
+        {
+          "palabra": "tubo",
+          "inicioMs": 200,
+          "finMs": 460
+        },
+        {
+          "palabra": "de",
+          "inicioMs": 460,
+          "finMs": 660
+        },
+        {
+          "palabra": "hielo",
+          "inicioMs": 660,
+          "finMs": 840
+        },
+        {
+          "palabra": "actúa",
+          "inicioMs": 840,
+          "finMs": 1160
+        },
+        {
+          "palabra": "como",
+          "inicioMs": 1160,
+          "finMs": 1380
+        },
+        {
+          "palabra": "una",
+          "inicioMs": 1380,
+          "finMs": 1560
+        },
+        {
+          "palabra": "guía",
+          "inicioMs": 1560,
+          "finMs": 1760
+        },
+        {
+          "palabra": "de",
+          "inicioMs": 1760,
+          "finMs": 1920
+        },
+        {
+          "palabra": "ondas",
+          "inicioMs": 1920,
+          "finMs": 2100
+        },
+        {
+          "palabra": "acústica",
+          "inicioMs": 2100,
+          "finMs": 2660
+        },
+        {
+          "palabra": "Las",
+          "inicioMs": 3080,
+          "finMs": 3320
+        },
+        {
+          "palabra": "frecuencias",
+          "inicioMs": 3320,
+          "finMs": 3780
+        },
+        {
+          "palabra": "agudas",
+          "inicioMs": 3780,
+          "finMs": 4220
+        },
+        {
+          "palabra": "rebotan",
+          "inicioMs": 4220,
+          "finMs": 4720
+        },
+        {
+          "palabra": "más",
+          "inicioMs": 4720,
+          "finMs": 4860
+        },
+        {
+          "palabra": "rápido",
+          "inicioMs": 4860,
+          "finMs": 5260
+        },
+        {
+          "palabra": "por",
+          "inicioMs": 5260,
+          "finMs": 5500
+        },
+        {
+          "palabra": "las",
+          "inicioMs": 5500,
+          "finMs": 5660
+        },
+        {
+          "palabra": "paredes",
+          "inicioMs": 5660,
+          "finMs": 6020
+        },
+        {
+          "palabra": "lisas",
+          "inicioMs": 6020,
+          "finMs": 6380
+        },
+        {
+          "palabra": "y",
+          "inicioMs": 6380,
+          "finMs": 6660
+        },
+        {
+          "palabra": "viajan",
+          "inicioMs": 6660,
+          "finMs": 6960
+        },
+        {
+          "palabra": "hacia",
+          "inicioMs": 6960,
+          "finMs": 7220
+        },
+        {
+          "palabra": "arriba",
+          "inicioMs": 7220,
+          "finMs": 7600
+        },
+        {
+          "palabra": "mientras",
+          "inicioMs": 7820,
+          "finMs": 8020
+        },
+        {
+          "palabra": "que",
+          "inicioMs": 8020,
+          "finMs": 8200
+        },
+        {
+          "palabra": "las",
+          "inicioMs": 8200,
+          "finMs": 8300
+        },
+        {
+          "palabra": "frecuencias",
+          "inicioMs": 8300,
+          "finMs": 8820
+        },
+        {
+          "palabra": "graves",
+          "inicioMs": 8820,
+          "finMs": 9080
+        },
+        {
+          "palabra": "van",
+          "inicioMs": 9080,
+          "finMs": 9340
+        },
+        {
+          "palabra": "oscilando",
+          "inicioMs": 9340,
+          "finMs": 9880
+        },
+        {
+          "palabra": "más",
+          "inicioMs": 9880,
+          "finMs": 10080
+        },
+        {
+          "palabra": "lento",
+          "inicioMs": 10080,
+          "finMs": 10500
+        },
+        {
+          "palabra": "y",
+          "inicioMs": 10500,
+          "finMs": 10700
+        },
+        {
+          "palabra": "se",
+          "inicioMs": 10700,
+          "finMs": 10820
+        },
+        {
+          "palabra": "quedan",
+          "inicioMs": 10820,
+          "finMs": 11100
+        },
+        {
+          "palabra": "atrás",
+          "inicioMs": 11100,
+          "finMs": 11380
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "texto": "Como tu oído recibe primero la onda aguda de alta velocidad y milisegundos después la onda grave rezagada, el impacto se estira en ese característico silbido descendente de una película espacial.",
+      "icono": "Ear",
+      "colorIcono": "#22C55E",
+      "tituloVisual": "SILBIDO DESCENDENTE",
+      "composicionVisual": "primer_plano",
+      "escenario": "laboratorio_antartico",
+      "layout": "narrativo",
+      "transicion": "zoom_in",
+      "efectosCamara": [
+        "drift"
+      ],
+      "sfx": "sfx/sfx_laser_doble_retro.wav",
+      "volumenSfx": 0.28,
+      "palabrasClave": [
+        "oído",
+        "tonos agudos",
+        "tonos graves",
+        "ciencia ficción"
+      ],
+      "personajes": [
+        {
+          "id": "oyente_eureka",
+          "nombre": "Stickman Eureka",
+          "posicion": {
+            "x": -140,
+            "y": 80
+          },
+          "escala": 1.2,
+          "orientacion": "derecha",
+          "poseId": "eureka_idea",
+          "expresion": "eureka",
+          "props": {
+            "sombrero": "earmuffs_polar",
+            "cuello": "bufanda_polar_viento"
+          },
+          "habla": true,
+          "capaZ": 10
+        }
+      ],
+      "objetos": [
+        {
+          "id": "holograma_nave",
+          "propId": "holograma_nave_espacial",
+          "posicion": {
+            "x": 170,
+            "y": -80
+          },
+          "escala": 1.6,
+          "animacion": "flotar",
+          "capaZ": 9
+        },
+        {
+          "id": "diagrama_oido",
+          "propId": "diagrama_oido_dispersion",
+          "posicion": {
+            "x": -30,
+            "y": -160
+          },
+          "escala": 1.2,
+          "animacion": "pulso",
+          "capaZ": 8
+        }
+      ],
+      "duracionSegundos": 10.498,
+      "palabras": [
+        {
+          "palabra": "Como",
+          "inicioMs": 0,
+          "finMs": 240
+        },
+        {
+          "palabra": "tu",
+          "inicioMs": 240,
+          "finMs": 640
+        },
+        {
+          "palabra": "oído",
+          "inicioMs": 720,
+          "finMs": 1060
+        },
+        {
+          "palabra": "recibe",
+          "inicioMs": 1060,
+          "finMs": 1360
+        },
+        {
+          "palabra": "primero",
+          "inicioMs": 1360,
+          "finMs": 1560
+        },
+        {
+          "palabra": "la",
+          "inicioMs": 1560,
+          "finMs": 1820
+        },
+        {
+          "palabra": "onda",
+          "inicioMs": 1820,
+          "finMs": 2180
+        },
+        {
+          "palabra": "aguda",
+          "inicioMs": 2180,
+          "finMs": 2360
+        },
+        {
+          "palabra": "de",
+          "inicioMs": 2360,
+          "finMs": 2580
+        },
+        {
+          "palabra": "alta",
+          "inicioMs": 2580,
+          "finMs": 2840
+        },
+        {
+          "palabra": "velocidad",
+          "inicioMs": 2840,
+          "finMs": 3300
+        },
+        {
+          "palabra": "y",
+          "inicioMs": 3300,
+          "finMs": 3920
+        },
+        {
+          "palabra": "milisegundos",
+          "inicioMs": 3920,
+          "finMs": 4320
+        },
+        {
+          "palabra": "después",
+          "inicioMs": 4320,
+          "finMs": 4820
+        },
+        {
+          "palabra": "la",
+          "inicioMs": 4820,
+          "finMs": 5100
+        },
+        {
+          "palabra": "onda",
+          "inicioMs": 5100,
+          "finMs": 5400
+        },
+        {
+          "palabra": "grave",
+          "inicioMs": 5400,
+          "finMs": 6020
+        },
+        {
+          "palabra": "rezagada",
+          "inicioMs": 6360,
+          "finMs": 6460
+        },
+        {
+          "palabra": "el",
+          "inicioMs": 6460,
+          "finMs": 6680
+        },
+        {
+          "palabra": "impacto",
+          "inicioMs": 6680,
+          "finMs": 6940
+        },
+        {
+          "palabra": "se",
+          "inicioMs": 6940,
+          "finMs": 7240
+        },
+        {
+          "palabra": "estira",
+          "inicioMs": 7240,
+          "finMs": 7340
+        },
+        {
+          "palabra": "en",
+          "inicioMs": 7340,
+          "finMs": 7460
+        },
+        {
+          "palabra": "ese",
+          "inicioMs": 7460,
+          "finMs": 8160
+        },
+        {
+          "palabra": "característico",
+          "inicioMs": 8160,
+          "finMs": 8560
+        },
+        {
+          "palabra": "silbido",
+          "inicioMs": 8560,
+          "finMs": 9040
+        },
+        {
+          "palabra": "descendente",
+          "inicioMs": 9040,
+          "finMs": 9160
+        },
+        {
+          "palabra": "de",
+          "inicioMs": 9160,
+          "finMs": 9280
+        },
+        {
+          "palabra": "una",
+          "inicioMs": 9280,
+          "finMs": 9540
+        },
+        {
+          "palabra": "película",
+          "inicioMs": 9540,
+          "finMs": 10020
+        },
+        {
+          "palabra": "espacial",
+          "inicioMs": 10020,
+          "finMs": 10248
+        }
+      ]
+    },
+    {
+      "id": 7,
+      "texto": "Así que ya lo sabes: si alguna vez viajas al fin del mundo con una expedición polar, no olvides llevar una piedra... para activar el rayo láser natural de la Tierra.",
+      "icono": "Globe",
+      "colorIcono": "#F59E0B",
+      "tituloVisual": "LÁSER DE LA TIERRA",
+      "composicionVisual": "plano_general",
+      "escenario": "atardecer_polar_despedida",
+      "layout": "narrativo",
+      "transicion": "flash",
+      "efectosCamara": [
+        "punch",
+        "drift"
+      ],
+      "sfx": "sfx/sfx_laser_colosal_antartida.wav",
+      "volumenSfx": 0.3,
+      "palabrasClave": [
+        "fin del mundo",
+        "piedra",
+        "activar",
+        "rayo láser"
+      ],
+      "personajes": [
+        {
+          "id": "despedida_viajero",
+          "nombre": "Viajero Polar",
+          "posicion": {
+            "x": -180,
+            "y": 80
+          },
+          "escala": 1.05,
+          "orientacion": "derecha",
+          "poseId": "waving_goodbye",
+          "expresion": "smile_wide",
+          "props": {
+            "sombrero": "earmuffs_polar",
+            "cuello": "bufanda_polar_viento",
+            "izquierda": "mochila_expedicion_polar"
+          },
+          "habla": true,
+          "capaZ": 10
+        }
+      ],
+      "objetos": [
+        {
+          "id": "roca_lanzada",
+          "propId": "trozo_hielo_antartico",
+          "posicion": {
+            "x": 120,
+            "y": 20
+          },
+          "escala": 1.2,
+          "animacion": "caer",
+          "capaZ": 8
+        }
+      ],
+      "duracionSegundos": 8.29,
+      "palabras": [
+        {
+          "palabra": "Así",
+          "inicioMs": 0,
+          "finMs": 280
+        },
+        {
+          "palabra": "que",
+          "inicioMs": 280,
+          "finMs": 400
+        },
+        {
+          "palabra": "ya",
+          "inicioMs": 400,
+          "finMs": 560
+        },
+        {
+          "palabra": "lo",
+          "inicioMs": 560,
+          "finMs": 640
+        },
+        {
+          "palabra": "sabes",
+          "inicioMs": 640,
+          "finMs": 940
+        },
+        {
+          "palabra": "si",
+          "inicioMs": 1080,
+          "finMs": 1140
+        },
+        {
+          "palabra": "alguna",
+          "inicioMs": 1140,
+          "finMs": 1360
+        },
+        {
+          "palabra": "vez",
+          "inicioMs": 1360,
+          "finMs": 1520
+        },
+        {
+          "palabra": "viajas",
+          "inicioMs": 1520,
+          "finMs": 1860
+        },
+        {
+          "palabra": "al",
+          "inicioMs": 1860,
+          "finMs": 2060
+        },
+        {
+          "palabra": "fin",
+          "inicioMs": 2060,
+          "finMs": 2200
+        },
+        {
+          "palabra": "del",
+          "inicioMs": 2200,
+          "finMs": 2340
+        },
+        {
+          "palabra": "mundo",
+          "inicioMs": 2340,
+          "finMs": 2620
+        },
+        {
+          "palabra": "con",
+          "inicioMs": 2620,
+          "finMs": 2800
+        },
+        {
+          "palabra": "una",
+          "inicioMs": 2800,
+          "finMs": 2960
+        },
+        {
+          "palabra": "expedición",
+          "inicioMs": 2960,
+          "finMs": 3420
+        },
+        {
+          "palabra": "polar",
+          "inicioMs": 3420,
+          "finMs": 3700
+        },
+        {
+          "palabra": "no",
+          "inicioMs": 3820,
+          "finMs": 3900
+        },
+        {
+          "palabra": "olvides",
+          "inicioMs": 3900,
+          "finMs": 4200
+        },
+        {
+          "palabra": "llevar",
+          "inicioMs": 4200,
+          "finMs": 4420
+        },
+        {
+          "palabra": "una",
+          "inicioMs": 4420,
+          "finMs": 4600
+        },
+        {
+          "palabra": "piedra",
+          "inicioMs": 4600,
+          "finMs": 5020
+        },
+        {
+          "palabra": "para",
+          "inicioMs": 5400,
+          "finMs": 5580
+        },
+        {
+          "palabra": "activar",
+          "inicioMs": 5580,
+          "finMs": 6000
+        },
+        {
+          "palabra": "el",
+          "inicioMs": 6000,
+          "finMs": 6140
+        },
+        {
+          "palabra": "rayo",
+          "inicioMs": 6140,
+          "finMs": 6460
+        },
+        {
+          "palabra": "láser",
+          "inicioMs": 6460,
+          "finMs": 6820
+        },
+        {
+          "palabra": "natural",
+          "inicioMs": 6820,
+          "finMs": 7140
+        },
+        {
+          "palabra": "de",
+          "inicioMs": 7140,
+          "finMs": 7380
+        },
+        {
+          "palabra": "la",
+          "inicioMs": 7380,
+          "finMs": 7480
+        },
+        {
+          "palabra": "Tierra",
+          "inicioMs": 7480,
+          "finMs": 7820
+        }
+      ]
+    }
+  ]
+}

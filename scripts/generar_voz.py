@@ -62,6 +62,11 @@ import torch
 from faster_whisper import WhisperModel
 from mutagen.mp3 import MP3
 
+try:
+    from scripts.normalizador_numeros import normalizar_texto_para_tts
+except ImportError:
+    from normalizador_numeros import normalizar_texto_para_tts
+
 GUION_PATH = ROOT_DIR / "src" / "data" / "guion.json"
 AUDIOS_DIR = ROOT_DIR / "public" / "audios"
 VOICES_DIR = ROOT_DIR / "public" / "voices"
@@ -72,7 +77,7 @@ PAUSE_SECONDS = 0.25
 EXAGGERATION = 0.55
 TEMPERATURE = 0.50
 WHISPER_MODEL_SIZE = "base"
-PIPELINE_VERSION = "v3_sentence_tailcut"
+PIPELINE_VERSION = "v4_nw_precision_align"
 
 PUNCT_STRIP = "¿?¡!.,;:()\"'«»—–-[]{}"
 
@@ -95,10 +100,10 @@ def resolver_archivo_condiciones(nombre_conds: str = DEFAULT_VOICE_CONDS) -> Pat
     )
 
 
-def calcular_hash_escena(texto: str, conds_path: Path) -> str:
+def calcular_hash_escena(texto: str, conds_path: Path, silencio_extra: float = 0.0) -> str:
     """Calcula el hash SHA-256 determinista del texto normalizado, versión del pipeline y condiciones."""
     normalizado = re.sub(r"\s+", " ", texto.strip())
-    payload = f"{PIPELINE_VERSION}::{conds_path.name}::{normalizado}".encode("utf-8")
+    payload = f"{PIPELINE_VERSION}::{conds_path.name}::{normalizado}::{silencio_extra:.2f}".encode("utf-8")
     return hashlib.sha256(payload).hexdigest()
 
 
@@ -123,12 +128,34 @@ def limpiar_texto_narracion(texto: str) -> str:
         return ""
     texto = re.sub(r"[*_#`~]", "", texto)
     texto = re.sub(r"\[.*?\]|\(.*?\)", "", texto)
-    texto = re.sub(r"\.{2,}|…", ". ", texto)
+    texto = re.sub(r"\.{2,}|…", ", ", texto)
     texto = re.sub(r"[—–-]{2,}", ", ", texto)
     return re.sub(r"\s+", " ", texto).strip()
 
 
-def dividir_en_fragmentos(texto: str, max_chars: int = 135) -> list[str]:
+FONETIZACIONES_TTS = [
+    # Anglicismos o préstamos que inician con 'h' aspirada y en español deben sonar con /j/ (evita h muda en TTS)
+    (r"\b[hH]ackear(lo|la|los|las|me|te|se|nos)?\b", lambda m: ("Jaquear" if m.group(0)[0].isupper() else "jaquear") + (m.group(1) or "")),
+    (r"\b[hH]ackea([nsr])?\b", lambda m: ("Jaquea" if m.group(0)[0].isupper() else "jaquea") + (m.group(1) or "")),
+    (r"\b[hH]acke(é|ó|an|en|aron|aste|amos)\b", lambda m: ("Jaque" if m.group(0)[0].isupper() else "jaque") + m.group(1)),
+    (r"\b[hH]ackeando\b", lambda m: "Jaqueando" if m.group(0)[0].isupper() else "jaqueando"),
+    (r"\b[hH]ackeo(s)?\b", lambda m: ("Jaqueo" if m.group(0)[0].isupper() else "jaqueo") + (m.group(1) or "")),
+    (r"\b[hH]acks?\b", lambda m: ("Jaks" if m.group(0).lower().endswith("s") else "Jak") if m.group(0)[0].isupper() else ("jaks" if m.group(0).lower().endswith("s") else "jak")),
+    (r"\b[hH]acker(s)?\b", lambda m: ("Jáquer" if m.group(0)[0].isupper() else "jáquer") + (m.group(1) or "")),
+    (r"\b[hH]obby\b", lambda m: "Jobi" if m.group(0)[0].isupper() else "jobi"),
+    (r"\b[hH]obbies\b", lambda m: "Jobis" if m.group(0)[0].isupper() else "jobis"),
+]
+
+
+def fonetizar_para_tts(texto: str) -> str:
+    """Ajusta palabras extranjeras con dicción no fonética en español para que el sintetizador neural las pronuncie correctamente."""
+    t = texto
+    for patron, reemplazo in FONETIZACIONES_TTS:
+        t = re.sub(patron, reemplazo, t)
+    return t
+
+
+def dividir_en_fragmentos(texto: str, max_chars: int = 125) -> list[str]:
     limpio = limpiar_texto_narracion(texto)
     if not limpio:
         return []
@@ -136,12 +163,24 @@ def dividir_en_fragmentos(texto: str, max_chars: int = 135) -> list[str]:
     # 1. Separar primero por punto, signo de interrogación o exclamación (oraciones completas)
     partes_oracion = [s.strip() for s in re.split(r"(?<=[.!?])\s+", limpio) if s.strip()]
 
+    # 2. Fusionar oraciones diminutas (<= 3 palabras o <= 18 caracteres, ej. 'Tampoco.', 'Nunca lo llevó.')
+    # con la oración anterior si caben juntas dentro de max_chars, evitando fragmentos aislados de 1 palabra
+    # que provocan tropiezos o alucinaciones en modelos autoregresivos como Chatterbox.
+    oraciones_fusionadas = []
+    for o in partes_oracion:
+        palabras = o.split()
+        if oraciones_fusionadas and (len(palabras) <= 3 or len(o) <= 18):
+            if len(oraciones_fusionadas[-1]) + 1 + len(o) <= max_chars:
+                oraciones_fusionadas[-1] = f"{oraciones_fusionadas[-1]} {o}"
+                continue
+        oraciones_fusionadas.append(o)
+
     fragmentos = []
-    for oracion in partes_oracion:
+    for oracion in oraciones_fusionadas:
         if len(oracion) <= max_chars:
             fragmentos.append(oracion)
         else:
-            # 2. Si una oración excede max_chars, separar por signos de puntuación internos (, : ;)
+            # 3. Si una oración excede max_chars, separar por signos de puntuación internos (, : ;)
             clausulas = [s.strip() for s in re.split(r"(?<=[,;:])\s+", oracion) if s.strip()]
             if len(clausulas) > 1:
                 actual = ""
@@ -156,7 +195,7 @@ def dividir_en_fragmentos(texto: str, max_chars: int = 135) -> list[str]:
                 if actual:
                     fragmentos.append(actual)
             else:
-                # 3. Si no tiene puntuación intermedia y es muy larga, separar por palabras
+                # 4. Si no tiene puntuación intermedia y es muy larga, separar por palabras
                 palabras = oracion.split()
                 bloque = []
                 for p in palabras:
@@ -214,12 +253,18 @@ class LocalClonedTTS:
         segmentos_audio = []
 
         for frag in fragmentos:
+            frag_clean = frag.strip()
+            if not frag_clean:
+                continue
+            if frag_clean[-1] not in ".!?,:;":
+                frag_clean += "."
+
             wav_tensor = self.model.generate(
-                text=frag,
+                text=frag_clean,
                 language_id="es",
                 exaggeration=self.exaggeration,
                 temperature=temperature,
-                repetition_penalty=2.0,
+                repetition_penalty=1.2,
             )
             if isinstance(wav_tensor, torch.Tensor):
                 wav_np = wav_tensor.detach().cpu().numpy().squeeze()
@@ -332,17 +377,19 @@ def limpiar_y_compactar_audio(audio_path: Path, texto_guion: str, whisper_model:
     if audio.ndim > 1:
         audio = audio.mean(axis=1)
 
+    prompt_guion = re.sub(r"[*_#`~]", "", texto_guion).strip()
     segments, _ = whisper_model.transcribe(
         str(audio_path),
         language="es",
         word_timestamps=True,
         vad_filter=True,
         condition_on_previous_text=False,
+        initial_prompt=prompt_guion,
     )
     all_words = []
     for s in segments:
         if s.words:
-            all_words.extend(s.words)
+            all_words.extend([w for w in s.words if (w.end - w.start) >= 0.02])
 
     if not all_words:
         return
@@ -364,14 +411,14 @@ def limpiar_y_compactar_audio(audio_path: Path, texto_guion: str, whisper_model:
         # Comparar con los primeros 3 tokens del guion
         match = any(SequenceMatcher(None, w_clean, tok).ratio() >= 0.65 for tok in tokens_guion[:3])
         if match:
-            first_valid_start = max(0.0, w.start - 0.03)
+            first_valid_start = max(0.0, w.start - 0.04)
             break
 
     modificado = False
 
-    # Si hay ruido/balbuceo antes del primer fonema válido (> 0.06s)
+    # Si hay ruido/balbuceo antes del primer fonema válido (> 0.08s)
     start_sample = int(first_valid_start * sr)
-    if start_sample > int(0.06 * sr) and start_sample < len(audio):
+    if start_sample > int(0.08 * sr) and start_sample < len(audio):
         audio = audio[start_sample:]
         time_offset = first_valid_start
         for w in all_words:
@@ -382,15 +429,15 @@ def limpiar_y_compactar_audio(audio_path: Path, texto_guion: str, whisper_model:
         modificado = True
         print(f"[Limpieza Audio] ✂️  Ruido/balbuceo inicial eliminado ({first_valid_start:.3f}s)")
 
-    # 2. Compactar pausas internas mayores a 0.28s a 0.15s
+    # 2. Compactar pausas internas mayores a 0.38s (manteniendo 0.10s de margen seguro en ambos extremos)
     cortes = []
     for i in range(len(all_words) - 1):
         w1 = all_words[i]
         w2 = all_words[i + 1]
         gap = w2.start - w1.end
-        if gap > 0.28:
-            t_keep_w1 = w1.end + 0.05
-            t_keep_w2 = w2.start - 0.05
+        if gap > 0.38:
+            t_keep_w1 = w1.end + 0.10
+            t_keep_w2 = w2.start - 0.10
             if t_keep_w2 > t_keep_w1:
                 s_from = int(t_keep_w1 * sr)
                 s_to = int(t_keep_w2 * sr)
@@ -400,7 +447,7 @@ def limpiar_y_compactar_audio(audio_path: Path, texto_guion: str, whisper_model:
     if cortes:
         pedazos = []
         last_idx = 0
-        xfade_len = int(0.010 * sr)
+        xfade_len = int(0.012 * sr)
         for s_from, s_to, gap in cortes:
             if s_from > last_idx:
                 chunk = audio[last_idx:s_from].copy()
@@ -417,20 +464,30 @@ def limpiar_y_compactar_audio(audio_path: Path, texto_guion: str, whisper_model:
         if pedazos:
             audio = np.concatenate(pedazos)
             modificado = True
-            print(f"[Limpieza Audio] ⚡ {len(cortes)} pausa(s) compactada(s) a 0.15s")
+            print(f"[Limpieza Audio] ⚡ {len(cortes)} pausa(s) compactada(s) suavemente")
 
     # 3. Eliminar colas residuales, respiraciones o ruidos extraños después de la última palabra
-    if all_words:
-        total_recortado = sum(s_to - s_from for s_from, s_to, _ in cortes) if cortes else 0
-        fin_ultima_palabra = int(all_words[-1].end * sr) - total_recortado
-        limite_muestras = fin_ultima_palabra + int(0.16 * sr)
-        if 0 < limite_muestras < len(audio) - int(0.08 * sr):
-            cola_recortada_s = (len(audio) - limite_muestras) / sr
-            audio = audio[:limite_muestras]
-            fade_tail = min(int(0.040 * sr), len(audio))
-            audio[-fade_tail:] *= np.linspace(1.0, 0.0, fade_tail)
-            modificado = True
-            print(f"[Limpieza Audio] ✂️  Cola residual eliminada ({cola_recortada_s:.3f}s de ruido/silencio final)")
+    # Margen seguro de 0.38s para NO cortar jamás la última sílaba o resonancia natural
+    # IMPORTANTE: Solo recortar si la transcripción detectó efectivamente el final del guion
+    if all_words and tokens_guion:
+        last_tok = tokens_guion[-1]
+        last_word_clean = all_words[-1].word.strip(PUNCT_STRIP).lower()
+        sim_final = SequenceMatcher(None, last_word_clean, last_tok).ratio()
+        llega_al_final = (sim_final >= 0.70) and (len(all_words) >= int(len(tokens_guion) * 0.85))
+
+        if llega_al_final:
+            total_recortado = sum(s_to - s_from for s_from, s_to, _ in cortes) if cortes else 0
+            fin_ultima_palabra = int(all_words[-1].end * sr) - total_recortado
+            limite_muestras = fin_ultima_palabra + int(0.38 * sr)
+            if 0 < limite_muestras < len(audio) - int(0.20 * sr):
+                cola_recortada_s = (len(audio) - limite_muestras) / sr
+                audio = audio[:limite_muestras]
+                fade_tail = min(int(0.060 * sr), len(audio))
+                audio[-fade_tail:] *= np.linspace(1.0, 0.0, fade_tail)
+                modificado = True
+                print(f"[Limpieza Audio] ✂️  Cola residual eliminada ({cola_recortada_s:.3f}s de ruido/silencio final)")
+        else:
+            print(f"[Limpieza Audio] 🛡️  Cola preservada intacta (la transcripción preliminar no cubrió el final: '{last_word_clean}' vs '{last_tok}')")
 
     if modificado:
         with tempfile.NamedTemporaryFile(suffix=".wav", delete=False) as tmp_file:
@@ -459,8 +516,158 @@ def limpiar_y_compactar_audio(audio_path: Path, texto_guion: str, whisper_model:
             tmp_wav.unlink(missing_ok=True)
 
 
+def align_words_nw(tokens_guion: list[str], detected_words: list[dict], duracion_audio_s: float) -> list[dict]:
+    """
+    Alinea los tokens del guion con las palabras detectadas por Whisper usando
+    el algoritmo global de Needleman-Wunsch. Garantiza sincronización monótona
+    sin desfases en cascada.
+    """
+    from difflib import SequenceMatcher
+
+    M = len(tokens_guion)
+    N = len(detected_words)
+
+    if M == 0:
+        return []
+    if N == 0:
+        total_ms = max(200, round(duracion_audio_s * 1000))
+        total_chars = sum(len(w) for w in tokens_guion)
+        res = []
+        curr = 0
+        for w in tokens_guion:
+            dur = max(60, round((len(w) / max(1, total_chars)) * total_ms))
+            res.append({"palabra": w, "inicioMs": curr, "finMs": min(total_ms, curr + dur)})
+            curr += dur
+        return res
+
+    def _clean(w: str) -> str:
+        s = w.strip(PUNCT_STRIP).lower()
+        s = (
+            s.replace("á", "a")
+            .replace("é", "e")
+            .replace("í", "i")
+            .replace("ó", "o")
+            .replace("ú", "u")
+        )
+        s = re.sub(r"ck|qu|k", "k", s)
+        s = re.sub(r"^[hj]", "j", s)
+        return s
+
+    GAP_PENALTY = -0.8
+    score = [[0.0] * (N + 1) for _ in range(M + 1)]
+    ptr = [[(0, 0)] * (N + 1) for _ in range(M + 1)]
+
+    for i in range(1, M + 1):
+        score[i][0] = i * GAP_PENALTY
+        ptr[i][0] = (i - 1, 0)
+    for j in range(1, N + 1):
+        score[0][j] = j * GAP_PENALTY
+        ptr[0][j] = (0, j - 1)
+
+    for i in range(1, M + 1):
+        g_w = _clean(tokens_guion[i - 1])
+        for j in range(1, N + 1):
+            d_w = _clean(detected_words[j - 1]["palabra"])
+            sim = SequenceMatcher(None, g_w, d_w).ratio()
+            if g_w == d_w:
+                sim_score = 2.0
+            elif sim >= 0.70:
+                sim_score = sim * 1.8
+            else:
+                sim_score = -1.2
+
+            diag = score[i - 1][j - 1] + sim_score
+            up = score[i - 1][j] + GAP_PENALTY
+            left = score[i][j - 1] + GAP_PENALTY
+
+            if diag >= up and diag >= left:
+                score[i][j] = diag
+                ptr[i][j] = (i - 1, j - 1)
+            elif up >= left:
+                score[i][j] = up
+                ptr[i][j] = (i - 1, j)
+            else:
+                score[i][j] = left
+                ptr[i][j] = (i, j - 1)
+
+    i = M
+    j = N
+    matches = {}
+
+    while i > 0 or j > 0:
+        pi, pj = ptr[i][j]
+        if pi == i - 1 and pj == j - 1:
+            g_w = _clean(tokens_guion[i - 1])
+            d_w = _clean(detected_words[j - 1]["palabra"])
+            if SequenceMatcher(None, g_w, d_w).ratio() >= 0.55 or g_w == d_w:
+                matches[i - 1] = j - 1
+            i, j = pi, pj
+        elif pi == i - 1 and pj == j:
+            i = pi
+        else:
+            j = pj
+
+    resultado = [None] * M
+    total_ms = max(200, round(duracion_audio_s * 1000))
+
+    for idx, g_tok in enumerate(tokens_guion):
+        if idx in matches:
+            det = detected_words[matches[idx]]
+            resultado[idx] = {
+                "palabra": g_tok,
+                "inicioMs": det["inicioMs"],
+                "finMs": det["finMs"],
+            }
+
+    # Interpolar palabras intermedias sin match
+    for idx in range(M):
+        if resultado[idx] is not None:
+            continue
+
+        prev_end = 0
+        p = idx - 1
+        while p >= 0:
+            if resultado[p] is not None:
+                prev_end = resultado[p]["finMs"]
+                break
+            p -= 1
+
+        next_start = total_ms
+        n = idx + 1
+        unmatched_block_len = 1
+        while n < M:
+            if resultado[n] is not None:
+                next_start = resultado[n]["inicioMs"]
+                break
+            unmatched_block_len += 1
+            n += 1
+
+        gap = max(40, next_start - prev_end)
+        rel_pos = idx - (p + 1)
+        step = gap / unmatched_block_len
+        start_ms = round(prev_end + rel_pos * step)
+        end_ms = round(min(total_ms, prev_end + (rel_pos + 1) * step))
+
+        resultado[idx] = {
+            "palabra": tokens_guion[idx],
+            "inicioMs": start_ms,
+            "finMs": max(start_ms + 20, end_ms),
+        }
+
+    # Garantizar monotonía estricta
+    prev_ms = 0
+    for item in resultado:
+        if item["inicioMs"] < prev_ms:
+            item["inicioMs"] = prev_ms
+        if item["finMs"] <= item["inicioMs"]:
+            item["finMs"] = item["inicioMs"] + 25
+        prev_ms = item["inicioMs"]
+
+    return resultado
+
+
 class LocalWhisperAligner:
-    """Extractor local de tiempos por palabra (inicioMs, finMs) con faster-whisper."""
+    """Extractor local de tiempos por palabra (inicioMs, finMs) con faster-whisper y alineación NW."""
 
     def __init__(self, model_size: str = WHISPER_MODEL_SIZE) -> None:
         self.model_size = model_size
@@ -472,14 +679,18 @@ class LocalWhisperAligner:
             self.model = WhisperModel(self.model_size, device="cpu", compute_type="int8")
         return self.model
 
-    def extraer_palabras(self, audio_path: Path, texto_guion: str, duracion_audio_s: float) -> list[dict]:
+    def extraer_palabras(
+        self, audio_path: Path, texto_guion: str, duracion_audio_s: float
+    ) -> tuple[list[dict], list[dict], float]:
         model = self.asegurar_modelo()
+        prompt_guion = re.sub(r"[*_#`~]", "", texto_guion).strip()
         segments, _ = model.transcribe(
             str(audio_path.resolve()),
             language="es",
             word_timestamps=True,
             vad_filter=True,
             condition_on_previous_text=False,
+            initial_prompt=prompt_guion,
         )
 
         detectadas = []
@@ -508,77 +719,26 @@ class LocalWhisperAligner:
             if t.strip(PUNCT_STRIP)
         ]
 
-        from difflib import SequenceMatcher
-
-        # Intentar fusionar subtokens contiguos que formen una sola palabra del guion (ej: "del" + "fin" -> "delfín")
-        limpias = [
-            {"palabra": d["palabra"].strip(PUNCT_STRIP).lower(), "inicioMs": d["inicioMs"], "finMs": d["finMs"]}
-            for d in detectadas
-            if d["palabra"].strip(PUNCT_STRIP)
-        ]
-
         if not tokens_guion:
-            return []
-        if not limpias:
-            dur_ms = max(200, round(duracion_audio_s * 1000))
-            paso = dur_ms / len(tokens_guion)
-            return [
+            return [], [], 0.0
+
+        if not detectadas:
+            total_ms = max(200, round(duracion_audio_s * 1000))
+            paso = total_ms / len(tokens_guion)
+            fallback = [
                 {"palabra": tok, "inicioMs": round(i * paso), "finMs": round((i + 1) * paso)}
                 for i, tok in enumerate(tokens_guion)
             ]
+            return fallback, [], 0.0
 
-        i_det = 0
-        i_gui = 0
-        fusionadas = []
+        alineadas = align_words_nw(tokens_guion, detectadas, duracion_audio_s)
 
-        while i_det < len(limpias) and i_gui < len(tokens_guion):
-            gui_w = tokens_guion[i_gui].lower().strip(PUNCT_STRIP)
-            det_w = limpias[i_det]["palabra"]
+        from difflib import SequenceMatcher
+        tok_str = " ".join(t.lower() for t in tokens_guion)
+        det_str = " ".join(d["palabra"].lower() for d in detectadas)
+        similitud = SequenceMatcher(None, tok_str, det_str).ratio()
 
-            if SequenceMatcher(None, gui_w, det_w).ratio() >= 0.70:
-                fusionadas.append({
-                    "palabra": tokens_guion[i_gui],
-                    "inicioMs": limpias[i_det]["inicioMs"],
-                    "finMs": limpias[i_det]["finMs"],
-                })
-                i_det += 1
-                i_gui += 1
-                continue
-
-            if i_det + 1 < len(limpias):
-                combo = det_w + limpias[i_det + 1]["palabra"]
-                if SequenceMatcher(None, gui_w, combo).ratio() >= 0.65:
-                    fusionadas.append({
-                        "palabra": tokens_guion[i_gui],
-                        "inicioMs": limpias[i_det]["inicioMs"],
-                        "finMs": limpias[i_det + 1]["finMs"],
-                    })
-                    i_det += 2
-                    i_gui += 1
-                    continue
-
-            fusionadas.append({
-                "palabra": tokens_guion[i_gui],
-                "inicioMs": limpias[i_det]["inicioMs"],
-                "finMs": limpias[i_det]["finMs"],
-            })
-            i_det += 1
-            i_gui += 1
-
-        if len(fusionadas) < len(tokens_guion):
-            last_end = fusionadas[-1]["finMs"] if fusionadas else 0
-            total_ms = round(duracion_audio_s * 1000)
-            rem_count = len(tokens_guion) - len(fusionadas)
-            step = max(80, (total_ms - last_end) / rem_count)
-            for idx in range(len(fusionadas), len(tokens_guion)):
-                rel_i = idx - len(fusionadas)
-                fusionadas.append({
-                    "palabra": tokens_guion[idx],
-                    "inicioMs": round(last_end + rel_i * step),
-                    "finMs": round(min(total_ms, last_end + (rel_i + 1) * step)),
-                })
-
-        return fusionadas
+        return alineadas, detectadas, similitud
 
 
 def validar_palabras(palabras: list[dict], texto_guion: str, escena_id) -> list[dict]:
@@ -609,11 +769,22 @@ def procesar_escena(
     force: bool = False,
 ) -> None:
     escena_id = escena["id"]
-    texto = escena["texto"]
+    texto_original = escena["texto"]
+    texto = normalizar_texto_para_tts(texto_original)
+    if texto != texto_original:
+        escena["texto"] = texto
+        print(f"[Escena {escena_id}] 🔢 Cifras normalizadas para TTS: '{texto_original}' -> '{texto}'")
+
+    # Fonetización para pronunciación correcta en el modelo TTS neural (ej. 'hackear' -> 'jaquear')
+    texto_tts = escena.get("textoTts") or fonetizar_para_tts(texto)
+    if texto_tts != texto:
+        print(f"[Escena {escena_id}] 🗣️ Fonetización aplicada para dicción TTS: '{texto}' -> '{texto_tts}'")
+
     audio_path = AUDIOS_DIR / f"escena_{escena_id}.mp3"
     cache_key = f"escena_{escena_id}"
 
-    hash_actual = calcular_hash_escena(texto, tts_engine.conds_path)
+    silencio_extra = float(escena.get("silencioFinalSegundos", 0.0))
+    hash_actual = calcular_hash_escena(texto_tts, tts_engine.conds_path, silencio_extra)
     entrada_cache = cache.get(cache_key, {})
 
     en_cache = (
@@ -645,32 +816,36 @@ def procesar_escena(
     max_intentos = 4
     for intento in range(max_intentos):
         temp_intento = round(TEMPERATURE + (intento * 0.03), 2)
-        tts_engine.sintetizar_a_mp3(texto, audio_path, temperature=temp_intento)
+        tts_engine.sintetizar_a_mp3(texto_tts, audio_path, temperature=temp_intento)
 
         # Posprocesamiento de audio: eliminar balbuceos iniciales, compactar pausas y recortar colas residuales
-        limpiar_y_compactar_audio(audio_path, texto, whisper_aligner.asegurar_modelo())
+        limpiar_y_compactar_audio(audio_path, texto_tts, whisper_aligner.asegurar_modelo())
 
         mp3_info = MP3(audio_path)
         duracion_real_mp3 = mp3_info.info.length
 
-        palabras = whisper_aligner.extraer_palabras(audio_path, texto, duracion_real_mp3)
+        palabras, detectadas, similitud = whisper_aligner.extraer_palabras(
+            audio_path, texto, duracion_real_mp3
+        )
 
         # Si faltan palabras clave respecto al guion y quedan intentos, reintentar síntesis
-        if palabras and tokens_guion and intento < max_intentos - 1:
+        if intento < max_intentos - 1 and detectadas and tokens_guion:
             from difflib import SequenceMatcher
+            first_token = tokens_guion[0].lower()
+            first_detected = detectadas[0]["palabra"].lower()
+            first_sim = SequenceMatcher(None, first_token, first_detected).ratio()
+
             last_token = tokens_guion[-1].lower()
-            last_spoken = palabras[-1]["palabra"].lower()
-            last_sim = SequenceMatcher(None, last_token, last_spoken).ratio()
+            last_detected = detectadas[-1]["palabra"].lower()
+            last_sim = SequenceMatcher(None, last_token, last_detected).ratio()
 
-            texto_spoken = " ".join(p["palabra"].lower() for p in palabras)
-            texto_expected = " ".join(tokens_guion).lower()
-            overall_sim = SequenceMatcher(None, texto_expected, texto_spoken).ratio()
-
-            if len(palabras) < int(len(tokens_guion) * 0.85) or last_sim < 0.55 or overall_sim < 0.72:
+            min_palabras = max(len(tokens_guion) - 2, int(len(tokens_guion) * 0.88))
+            if len(detectadas) < min_palabras or first_sim < 0.65 or last_sim < 0.75 or similitud < 0.72:
                 print(
                     f"[Escena {escena_id}] ⚠️ Audio imperfecto o pronunciación imprecisa "
-                    f"(similitud={overall_sim:.2f}, {len(palabras)}/{len(tokens_guion)} palabras, "
-                    f"última detectada='{last_spoken}' vs esperada='{last_token}'). "
+                    f"(similitud={similitud:.2f}, {len(detectadas)}/{len(tokens_guion)} palabras detectadas, "
+                    f"primera='{first_detected}' vs '{first_token}', "
+                    f"última='{last_detected}' vs esperada='{last_token}'). "
                     f"Reintentando síntesis (intento {intento + 2}/{max_intentos}, temp={temp_intento})..."
                 )
                 continue
@@ -678,6 +853,28 @@ def procesar_escena(
         break
 
     palabras = validar_palabras(palabras, texto, escena_id)
+
+    silencio_extra = float(escena.get("silencioFinalSegundos", 0.0))
+    if silencio_extra > 0.0:
+        tmp_padded = audio_path.with_suffix(".padded.mp3")
+        cmd_pad = [
+            "ffmpeg",
+            "-y",
+            "-loglevel",
+            "error",
+            "-i",
+            str(audio_path),
+            "-af",
+            f"apad=pad_dur={silencio_extra:.2f}",
+            str(tmp_padded),
+        ]
+        res_pad = subprocess.run(cmd_pad, capture_output=True, text=True)
+        if res_pad.returncode == 0 and tmp_padded.exists():
+            tmp_padded.replace(audio_path)
+            mp3_info = MP3(audio_path)
+            duracion_real_mp3 = mp3_info.info.length
+            print(f"[Escena {escena_id}] 🤫 Pausa dramática en silencio añadida al final (+{silencio_extra:.2f}s -> {duracion_real_mp3:.2f}s)")
+
     duracion_segundos = round(duracion_real_mp3 + PAUSE_SECONDS, 3)
 
     escena["duracionSegundos"] = duracion_segundos
@@ -687,6 +884,7 @@ def procesar_escena(
         "sha256": hash_actual,
         "pipelineVersion": PIPELINE_VERSION,
         "texto": texto,
+        "textoTts": texto_tts,
         "voiceConds": tts_engine.conds_path.name,
         "duracionSegundos": duracion_segundos,
         "palabras": palabras,
