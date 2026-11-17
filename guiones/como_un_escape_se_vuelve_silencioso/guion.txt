@@ -1,0 +1,28 @@
+ID / SLUG: como_un_escape_se_vuelve_silencioso
+Título: ¿Cómo funciona un silenciador de escape?
+Gancho: ¿Por qué un escape recto suena como ametralladora?
+Tema: Cómo un escape ruidoso se vuelve silencioso (La física del silenciador)
+Duración objetivo: [62, 75]
+============================================================
+
+[Escena 1] ESCAPE LIBRE
+Conectas un tubo recto a tu motor... y acelerar se siente como disparar una ametralladora dentro de una lata vacía. ¡La onda expansiva es tan violenta que sacude el suelo y te revienta los tímpanos!
+
+[Escena 2] PULSO DE PRESIÓN
+Cada explosión del pistón libera una bolsa de gas a más de trescientos grados y altísima presión. Al salir de golpe al aire frío, esa masa choca como un relámpago en miniatura a ciento quince decibelios.
+
+[Escena 3] CÁMARA DE EXPANSIÓN
+El primer paso no es tapar el escape: es darle espacio. Al entrar en una cámara de expansión ancha, el gas se dispersa en remolinos, perdiendo velocidad y bajando drásticamente su presión antes de salir.
+
+[Escena 4] ABSORCIÓN ACÚSTICA
+Para atrapar los chillidos agudos, forramos el tubo perforado con fibra de vidrio: las ondas rebotan en millones de pelitos microscópicos, perdiendo energía por fricción viscosa hasta transformarse en calor inofensivo.
+
+[Escena 5] RUTAS DIFERENCIALES
+Pero el truco maestro para los graves pesados es pura física acústica: la interferencia destructiva. Mediante un laberinto de deflectores internos, dividimos la onda sonora en dos caminos para obligarla a destruirse a sí misma.
+
+[Escena 6] CANCELACIÓN DE FASE
+La segunda ruta mide exactamente media longitud de onda extra. Cuando ambos caminos se vuelven a juntar en la salida, el pico de una onda coincide exactamente con el valle de la otra... uno más menos uno es cero, ¡y el ruido se cancela por completo!
+
+[Escena 7] INGENIERÍA ACÚSTICA
+Montas el silenciador terminado, giras la llave de nuevo... y el monstruo ruidoso ahora ronronea suavemente como un gatito. Ingeniería pura para dejar respirar al motor y salvar los oídos de todo el vecindario.
+

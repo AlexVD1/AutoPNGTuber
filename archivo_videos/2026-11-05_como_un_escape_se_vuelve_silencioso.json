@@ -1,0 +1,2042 @@
+{
+  "meta": {
+    "id": "como_un_escape_se_vuelve_silencioso",
+    "slug": "como_un_escape_se_vuelve_silencioso",
+    "temaResumen": "Cómo un escape ruidoso se vuelve silencioso (La física del silenciador)",
+    "titulo": "¿Cómo funciona un silenciador de escape?",
+    "titulo_corto": "La física del silenciador",
+    "gancho": "¿Por qué un escape recto suena como ametralladora?",
+    "fuentes": [
+      "Acoustics of Ducts and Mufflers (M. L. Munjal)",
+      "Internal Combustion Engine Fundamentals (John B. Heywood)"
+    ],
+    "genero": "Educativo / Ciencia e Ingeniería",
+    "duracionObjetivo": [
+      62,
+      75
+    ]
+  },
+  "escenas": [
+    {
+      "id": 1,
+      "texto": "Conectas un tubo recto a tu motor... y acelerar se siente como disparar una ametralladora dentro de una lata vacía. ¡La onda expansiva es tan violenta que sacude el suelo y te revienta los tímpanos!",
+      "icono": "Flame",
+      "colorIcono": "#EF4444",
+      "tituloVisual": "ESCAPE LIBRE",
+      "composicionVisual": "plano_general",
+      "escenario": "cochera_taller_escape_recto",
+      "transicion": "zoom_in",
+      "efectosCamara": [
+        "shake",
+        "punch"
+      ],
+      "sfx": "sfx/sfx_escape_recto_detonacion_vidrio.wav",
+      "volumenSfx": 0.26,
+      "palabrasClave": [
+        "tubo recto",
+        "ametralladora",
+        "lata vacía"
+      ],
+      "focoCamara": [
+        {
+          "x": -140,
+          "y": -40,
+          "escala": 1.15,
+          "inicioProgreso": 0.0,
+          "finProgreso": 0.35,
+          "curva": "suave"
+        },
+        {
+          "x": 40,
+          "y": 30,
+          "escala": 1.38,
+          "inicioProgreso": 0.35,
+          "finProgreso": 0.75,
+          "curva": "impacto"
+        },
+        {
+          "x": 0,
+          "y": 10,
+          "escala": 1.2,
+          "inicioProgreso": 0.75,
+          "finProgreso": 1.0,
+          "curva": "rebote"
+        }
+      ],
+      "personajes": [
+        {
+          "id": "mecanico",
+          "nombre": "Stickman Mecánico",
+          "posicion": {
+            "x": -80,
+            "y": 30
+          },
+          "escala": 0.7,
+          "orientacion": "derecha",
+          "habla": true,
+          "capaZ": 22,
+          "acciones": [
+            {
+              "tipo": "personalizada",
+              "pasos": [
+                {
+                  "inicioProgreso": 0.0,
+                  "finProgreso": 0.35,
+                  "poseId": "kneeling",
+                  "expresion": "talking_enthusiastic",
+                  "prop": "llave_abrazadera_escape",
+                  "posicion": {
+                    "x": -80,
+                    "y": 30
+                  },
+                  "curva": "suave",
+                  "procedural": "estatico"
+                },
+                {
+                  "inicioProgreso": 0.35,
+                  "finProgreso": 0.75,
+                  "poseId": "sitting",
+                  "expresion": "shocked",
+                  "posicion": {
+                    "x": -80,
+                    "y": 30
+                  },
+                  "curva": "impacto",
+                  "procedural": "temblar"
+                },
+                {
+                  "inicioProgreso": 0.75,
+                  "finProgreso": 1.0,
+                  "poseId": "covering_mouth",
+                  "expresion": "scared",
+                  "posicion": {
+                    "x": -80,
+                    "y": 30
+                  },
+                  "curva": "rebote",
+                  "procedural": "temblar"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "objetos": [],
+      "duracionSegundos": 11.194,
+      "palabras": [
+        {
+          "palabra": "Conectas",
+          "inicioMs": 0,
+          "finMs": 480
+        },
+        {
+          "palabra": "un",
+          "inicioMs": 480,
+          "finMs": 600
+        },
+        {
+          "palabra": "tubo",
+          "inicioMs": 600,
+          "finMs": 880
+        },
+        {
+          "palabra": "recto",
+          "inicioMs": 880,
+          "finMs": 1220
+        },
+        {
+          "palabra": "a",
+          "inicioMs": 1220,
+          "finMs": 1280
+        },
+        {
+          "palabra": "tu",
+          "inicioMs": 1280,
+          "finMs": 1380
+        },
+        {
+          "palabra": "motor",
+          "inicioMs": 1380,
+          "finMs": 1660
+        },
+        {
+          "palabra": "y",
+          "inicioMs": 1660,
+          "finMs": 2020
+        },
+        {
+          "palabra": "acelerar",
+          "inicioMs": 2020,
+          "finMs": 2440
+        },
+        {
+          "palabra": "se",
+          "inicioMs": 2440,
+          "finMs": 2640
+        },
+        {
+          "palabra": "siente",
+          "inicioMs": 2640,
+          "finMs": 2920
+        },
+        {
+          "palabra": "como",
+          "inicioMs": 2920,
+          "finMs": 3160
+        },
+        {
+          "palabra": "disparar",
+          "inicioMs": 3160,
+          "finMs": 3660
+        },
+        {
+          "palabra": "una",
+          "inicioMs": 3660,
+          "finMs": 3960
+        },
+        {
+          "palabra": "ametralladora",
+          "inicioMs": 3960,
+          "finMs": 4640
+        },
+        {
+          "palabra": "dentro",
+          "inicioMs": 4640,
+          "finMs": 5020
+        },
+        {
+          "palabra": "de",
+          "inicioMs": 5020,
+          "finMs": 5220
+        },
+        {
+          "palabra": "una",
+          "inicioMs": 5220,
+          "finMs": 5380
+        },
+        {
+          "palabra": "lata",
+          "inicioMs": 5380,
+          "finMs": 5560
+        },
+        {
+          "palabra": "vacía",
+          "inicioMs": 5560,
+          "finMs": 6100
+        },
+        {
+          "palabra": "La",
+          "inicioMs": 6320,
+          "finMs": 6440
+        },
+        {
+          "palabra": "onda",
+          "inicioMs": 6440,
+          "finMs": 6720
+        },
+        {
+          "palabra": "expansiva",
+          "inicioMs": 6720,
+          "finMs": 7400
+        },
+        {
+          "palabra": "es",
+          "inicioMs": 7400,
+          "finMs": 7560
+        },
+        {
+          "palabra": "tan",
+          "inicioMs": 7560,
+          "finMs": 7680
+        },
+        {
+          "palabra": "violenta",
+          "inicioMs": 7680,
+          "finMs": 8200
+        },
+        {
+          "palabra": "que",
+          "inicioMs": 8200,
+          "finMs": 8340
+        },
+        {
+          "palabra": "sacude",
+          "inicioMs": 8340,
+          "finMs": 8720
+        },
+        {
+          "palabra": "el",
+          "inicioMs": 8720,
+          "finMs": 8860
+        },
+        {
+          "palabra": "suelo",
+          "inicioMs": 8860,
+          "finMs": 9180
+        },
+        {
+          "palabra": "y",
+          "inicioMs": 9180,
+          "finMs": 9320
+        },
+        {
+          "palabra": "te",
+          "inicioMs": 9320,
+          "finMs": 9420
+        },
+        {
+          "palabra": "revienta",
+          "inicioMs": 9420,
+          "finMs": 9800
+        },
+        {
+          "palabra": "los",
+          "inicioMs": 9800,
+          "finMs": 9920
+        },
+        {
+          "palabra": "tímpanos",
+          "inicioMs": 9920,
+          "finMs": 10480
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "texto": "Cada explosión del pistón libera una bolsa de gas a más de trescientos grados y altísima presión. Al salir de golpe al aire frío, esa masa choca como un relámpago en miniatura a ciento quince decibelios.",
+      "icono": "Zap",
+      "colorIcono": "#F59E0B",
+      "tituloVisual": "PULSO DE PRESIÓN",
+      "composicionVisual": "primer_plano",
+      "escenario": "corte_cilindro_pulso_escape",
+      "transicion": "whip_right",
+      "efectosCamara": [
+        "drift",
+        "punch"
+      ],
+      "sfx": "sfx/sfx_cilindro_explosion_presion_sonometro.wav",
+      "volumenSfx": 0.25,
+      "palabrasClave": [
+        "altísima presión",
+        "diferencia choca",
+        "relámpago en miniatura"
+      ],
+      "focoCamara": [
+        {
+          "x": -120,
+          "y": -40,
+          "escala": 1.2,
+          "inicioProgreso": 0.0,
+          "finProgreso": 0.35,
+          "curva": "suave"
+        },
+        {
+          "x": 120,
+          "y": -30,
+          "escala": 1.42,
+          "inicioProgreso": 0.35,
+          "finProgreso": 0.75,
+          "curva": "impacto"
+        },
+        {
+          "x": 80,
+          "y": -20,
+          "escala": 1.25,
+          "inicioProgreso": 0.75,
+          "finProgreso": 1.0,
+          "curva": "suave"
+        }
+      ],
+      "personajes": [
+        {
+          "id": "mecanico",
+          "nombre": "Stickman Mecánico",
+          "posicion": {
+            "x": -280,
+            "y": 15
+          },
+          "escala": 0.6,
+          "orientacion": "derecha",
+          "habla": true,
+          "capaZ": 22,
+          "acciones": [
+            {
+              "tipo": "personalizada",
+              "pasos": [
+                {
+                  "inicioProgreso": 0.0,
+                  "finProgreso": 0.4,
+                  "poseId": "explaining_pointing_up",
+                  "expresion": "analytical",
+                  "posicion": {
+                    "x": -280,
+                    "y": 15
+                  },
+                  "curva": "suave",
+                  "procedural": "estatico"
+                },
+                {
+                  "inicioProgreso": 0.4,
+                  "finProgreso": 0.75,
+                  "poseId": "warning_danger",
+                  "expresion": "surprised",
+                  "prop": "sonometro_digital_alarma",
+                  "posicion": {
+                    "x": -280,
+                    "y": 15
+                  },
+                  "curva": "impacto",
+                  "procedural": "estatico"
+                },
+                {
+                  "inicioProgreso": 0.75,
+                  "finProgreso": 1.0,
+                  "poseId": "shock_explosion",
+                  "expresion": "shocked",
+                  "prop": "sonometro_digital_alarma",
+                  "posicion": {
+                    "x": -280,
+                    "y": 15
+                  },
+                  "curva": "rebote",
+                  "procedural": "temblar"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "objetos": [],
+      "duracionSegundos": 10.354,
+      "palabras": [
+        {
+          "palabra": "Cada",
+          "inicioMs": 0,
+          "finMs": 240
+        },
+        {
+          "palabra": "explosión",
+          "inicioMs": 240,
+          "finMs": 680
+        },
+        {
+          "palabra": "del",
+          "inicioMs": 680,
+          "finMs": 800
+        },
+        {
+          "palabra": "pistón",
+          "inicioMs": 800,
+          "finMs": 1120
+        },
+        {
+          "palabra": "libera",
+          "inicioMs": 1120,
+          "finMs": 1500
+        },
+        {
+          "palabra": "una",
+          "inicioMs": 1500,
+          "finMs": 1640
+        },
+        {
+          "palabra": "bolsa",
+          "inicioMs": 1640,
+          "finMs": 1960
+        },
+        {
+          "palabra": "de",
+          "inicioMs": 1960,
+          "finMs": 2060
+        },
+        {
+          "palabra": "gas",
+          "inicioMs": 2060,
+          "finMs": 2220
+        },
+        {
+          "palabra": "a",
+          "inicioMs": 2220,
+          "finMs": 2500
+        },
+        {
+          "palabra": "más",
+          "inicioMs": 2500,
+          "finMs": 2640
+        },
+        {
+          "palabra": "de",
+          "inicioMs": 2640,
+          "finMs": 2760
+        },
+        {
+          "palabra": "trescientos",
+          "inicioMs": 2760,
+          "finMs": 3240
+        },
+        {
+          "palabra": "grados",
+          "inicioMs": 3240,
+          "finMs": 3620
+        },
+        {
+          "palabra": "y",
+          "inicioMs": 3620,
+          "finMs": 3740
+        },
+        {
+          "palabra": "altísima",
+          "inicioMs": 3740,
+          "finMs": 4160
+        },
+        {
+          "palabra": "presión",
+          "inicioMs": 4160,
+          "finMs": 4620
+        },
+        {
+          "palabra": "Al",
+          "inicioMs": 4860,
+          "finMs": 4960
+        },
+        {
+          "palabra": "salir",
+          "inicioMs": 4960,
+          "finMs": 5240
+        },
+        {
+          "palabra": "de",
+          "inicioMs": 5240,
+          "finMs": 5400
+        },
+        {
+          "palabra": "golpe",
+          "inicioMs": 5400,
+          "finMs": 5540
+        },
+        {
+          "palabra": "al",
+          "inicioMs": 5540,
+          "finMs": 5760
+        },
+        {
+          "palabra": "aire",
+          "inicioMs": 5760,
+          "finMs": 5900
+        },
+        {
+          "palabra": "frío",
+          "inicioMs": 5900,
+          "finMs": 6300
+        },
+        {
+          "palabra": "esa",
+          "inicioMs": 6380,
+          "finMs": 6600
+        },
+        {
+          "palabra": "masa",
+          "inicioMs": 6600,
+          "finMs": 6760
+        },
+        {
+          "palabra": "choca",
+          "inicioMs": 6760,
+          "finMs": 7160
+        },
+        {
+          "palabra": "como",
+          "inicioMs": 7160,
+          "finMs": 7380
+        },
+        {
+          "palabra": "un",
+          "inicioMs": 7380,
+          "finMs": 7480
+        },
+        {
+          "palabra": "relámpago",
+          "inicioMs": 7480,
+          "finMs": 7920
+        },
+        {
+          "palabra": "en",
+          "inicioMs": 7920,
+          "finMs": 8020
+        },
+        {
+          "palabra": "miniatura",
+          "inicioMs": 8020,
+          "finMs": 8420
+        },
+        {
+          "palabra": "a",
+          "inicioMs": 8420,
+          "finMs": 8580
+        },
+        {
+          "palabra": "ciento",
+          "inicioMs": 8580,
+          "finMs": 8760
+        },
+        {
+          "palabra": "quince",
+          "inicioMs": 8760,
+          "finMs": 9080
+        },
+        {
+          "palabra": "decibelios",
+          "inicioMs": 9080,
+          "finMs": 9700
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "texto": "El primer paso no es tapar el escape: es darle espacio. Al entrar en una cámara de expansión ancha, el gas se dispersa en remolinos, perdiendo velocidad y bajando drásticamente su presión antes de salir.",
+      "icono": "Maximize2",
+      "colorIcono": "#10B981",
+      "tituloVisual": "CÁMARA DE EXPANSIÓN",
+      "composicionVisual": "escenario_ilustrado",
+      "escenario": "camara_expansion_gas_remolinos",
+      "transicion": "zoom_in",
+      "efectosCamara": [
+        "drift"
+      ],
+      "sfx": "sfx/sfx_soldadura_chisporroteo_expansion_gas.wav",
+      "volumenSfx": 0.24,
+      "palabrasClave": [
+        "darle espacio",
+        "cámara de expansión",
+        "pierde su violencia"
+      ],
+      "focoCamara": [
+        {
+          "x": -140,
+          "y": 20,
+          "escala": 1.18,
+          "inicioProgreso": 0.0,
+          "finProgreso": 0.35,
+          "curva": "suave"
+        },
+        {
+          "x": 60,
+          "y": -30,
+          "escala": 1.4,
+          "inicioProgreso": 0.35,
+          "finProgreso": 0.75,
+          "curva": "impacto"
+        },
+        {
+          "x": 40,
+          "y": -50,
+          "escala": 1.22,
+          "inicioProgreso": 0.75,
+          "finProgreso": 1.0,
+          "curva": "suave"
+        }
+      ],
+      "personajes": [
+        {
+          "id": "mecanico",
+          "nombre": "Stickman Mecánico",
+          "posicion": {
+            "x": -220,
+            "y": 25
+          },
+          "escala": 0.65,
+          "orientacion": "derecha",
+          "habla": true,
+          "capaZ": 22,
+          "acciones": [
+            {
+              "tipo": "personalizada",
+              "pasos": [
+                {
+                  "inicioProgreso": 0.0,
+                  "finProgreso": 0.4,
+                  "poseId": "pushing",
+                  "expresion": "talking_enthusiastic",
+                  "prop": "antorcha_soldadura_tig_chispas",
+                  "posicion": {
+                    "x": -220,
+                    "y": 25
+                  },
+                  "curva": "suave",
+                  "procedural": "estatico"
+                },
+                {
+                  "inicioProgreso": 0.4,
+                  "finProgreso": 0.75,
+                  "poseId": "showing_both_hands",
+                  "expresion": "eureka",
+                  "posicion": {
+                    "x": -220,
+                    "y": 25
+                  },
+                  "curva": "suave",
+                  "procedural": "estatico"
+                },
+                {
+                  "inicioProgreso": 0.75,
+                  "finProgreso": 1.0,
+                  "poseId": "thumbs_up_approval",
+                  "expresion": "smile_wide",
+                  "posicion": {
+                    "x": -220,
+                    "y": 25
+                  },
+                  "curva": "rebote",
+                  "procedural": "estatico"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "objetos": [],
+      "duracionSegundos": 11.218,
+      "palabras": [
+        {
+          "palabra": "El",
+          "inicioMs": 0,
+          "finMs": 180
+        },
+        {
+          "palabra": "primer",
+          "inicioMs": 180,
+          "finMs": 400
+        },
+        {
+          "palabra": "paso",
+          "inicioMs": 400,
+          "finMs": 760
+        },
+        {
+          "palabra": "no",
+          "inicioMs": 760,
+          "finMs": 1020
+        },
+        {
+          "palabra": "es",
+          "inicioMs": 1020,
+          "finMs": 1200
+        },
+        {
+          "palabra": "tapar",
+          "inicioMs": 1200,
+          "finMs": 1440
+        },
+        {
+          "palabra": "el",
+          "inicioMs": 1440,
+          "finMs": 1540
+        },
+        {
+          "palabra": "escape",
+          "inicioMs": 1540,
+          "finMs": 1800
+        },
+        {
+          "palabra": "es",
+          "inicioMs": 1960,
+          "finMs": 2040
+        },
+        {
+          "palabra": "darle",
+          "inicioMs": 2040,
+          "finMs": 2200
+        },
+        {
+          "palabra": "espacio",
+          "inicioMs": 2200,
+          "finMs": 2720
+        },
+        {
+          "palabra": "Al",
+          "inicioMs": 2980,
+          "finMs": 3080
+        },
+        {
+          "palabra": "entrar",
+          "inicioMs": 3080,
+          "finMs": 3460
+        },
+        {
+          "palabra": "en",
+          "inicioMs": 3460,
+          "finMs": 3620
+        },
+        {
+          "palabra": "una",
+          "inicioMs": 3620,
+          "finMs": 3780
+        },
+        {
+          "palabra": "cámara",
+          "inicioMs": 3780,
+          "finMs": 4080
+        },
+        {
+          "palabra": "de",
+          "inicioMs": 4080,
+          "finMs": 4260
+        },
+        {
+          "palabra": "expansión",
+          "inicioMs": 4260,
+          "finMs": 4820
+        },
+        {
+          "palabra": "ancha",
+          "inicioMs": 4820,
+          "finMs": 5160
+        },
+        {
+          "palabra": "el",
+          "inicioMs": 5360,
+          "finMs": 5500
+        },
+        {
+          "palabra": "gas",
+          "inicioMs": 5500,
+          "finMs": 5660
+        },
+        {
+          "palabra": "se",
+          "inicioMs": 5660,
+          "finMs": 5840
+        },
+        {
+          "palabra": "dispersa",
+          "inicioMs": 5840,
+          "finMs": 6380
+        },
+        {
+          "palabra": "en",
+          "inicioMs": 6380,
+          "finMs": 6440
+        },
+        {
+          "palabra": "remolinos",
+          "inicioMs": 6440,
+          "finMs": 6960
+        },
+        {
+          "palabra": "perdiendo",
+          "inicioMs": 7160,
+          "finMs": 7540
+        },
+        {
+          "palabra": "velocidad",
+          "inicioMs": 7540,
+          "finMs": 7880
+        },
+        {
+          "palabra": "y",
+          "inicioMs": 7880,
+          "finMs": 8300
+        },
+        {
+          "palabra": "bajando",
+          "inicioMs": 8300,
+          "finMs": 8680
+        },
+        {
+          "palabra": "drásticamente",
+          "inicioMs": 8680,
+          "finMs": 9180
+        },
+        {
+          "palabra": "su",
+          "inicioMs": 9180,
+          "finMs": 9460
+        },
+        {
+          "palabra": "presión",
+          "inicioMs": 9460,
+          "finMs": 9840
+        },
+        {
+          "palabra": "antes",
+          "inicioMs": 9840,
+          "finMs": 10200
+        },
+        {
+          "palabra": "de",
+          "inicioMs": 10200,
+          "finMs": 10360
+        },
+        {
+          "palabra": "salir",
+          "inicioMs": 10360,
+          "finMs": 10640
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "texto": "Para atrapar los chillidos agudos, forramos el tubo perforado con fibra de vidrio: las ondas rebotan en millones de pelitos microscópicos, perdiendo energía por fricción viscosa hasta transformarse en calor inofensivo.",
+      "icono": "Feather",
+      "colorIcono": "#06B6D4",
+      "tituloVisual": "ABSORCIÓN ACÚSTICA",
+      "composicionVisual": "primer_plano",
+      "escenario": "tubo_perforado_fibra_vidrio_absorcion",
+      "transicion": "whip_left",
+      "efectosCamara": [
+        "drift"
+      ],
+      "sfx": "sfx/sfx_fibra_vidrio_crujido_friccion_calor.wav",
+      "volumenSfx": 0.25,
+      "palabrasClave": [
+        "chillidos agudos",
+        "fibra de vidrio",
+        "calor inofensivo"
+      ],
+      "focoCamara": [
+        {
+          "x": -120,
+          "y": 10,
+          "escala": 1.2,
+          "inicioProgreso": 0.0,
+          "finProgreso": 0.35,
+          "curva": "suave"
+        },
+        {
+          "x": 20,
+          "y": -40,
+          "escala": 1.44,
+          "inicioProgreso": 0.35,
+          "finProgreso": 0.75,
+          "curva": "impacto"
+        },
+        {
+          "x": 0,
+          "y": -20,
+          "escala": 1.24,
+          "inicioProgreso": 0.75,
+          "finProgreso": 1.0,
+          "curva": "suave"
+        }
+      ],
+      "personajes": [
+        {
+          "id": "mecanico",
+          "nombre": "Stickman Mecánico",
+          "posicion": {
+            "x": -240,
+            "y": 20
+          },
+          "escala": 0.65,
+          "orientacion": "derecha",
+          "habla": true,
+          "capaZ": 22,
+          "acciones": [
+            {
+              "tipo": "personalizada",
+              "pasos": [
+                {
+                  "inicioProgreso": 0.0,
+                  "finProgreso": 0.4,
+                  "poseId": "presenting_object",
+                  "expresion": "talking_enthusiastic",
+                  "prop": "tubo_perforado_fibra_acustica",
+                  "posicion": {
+                    "x": -240,
+                    "y": 20
+                  },
+                  "curva": "suave",
+                  "procedural": "estatico"
+                },
+                {
+                  "inicioProgreso": 0.4,
+                  "finProgreso": 0.75,
+                  "poseId": "explaining_both_hands",
+                  "expresion": "analytical",
+                  "posicion": {
+                    "x": -240,
+                    "y": 20
+                  },
+                  "curva": "suave",
+                  "procedural": "estatico"
+                },
+                {
+                  "inicioProgreso": 0.75,
+                  "finProgreso": 1.0,
+                  "poseId": "nodding_yes",
+                  "expresion": "smile_wide",
+                  "posicion": {
+                    "x": -240,
+                    "y": 20
+                  },
+                  "curva": "suave",
+                  "procedural": "estatico"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "objetos": [],
+      "duracionSegundos": 11.29,
+      "palabras": [
+        {
+          "palabra": "Para",
+          "inicioMs": 0,
+          "finMs": 220
+        },
+        {
+          "palabra": "atrapar",
+          "inicioMs": 220,
+          "finMs": 580
+        },
+        {
+          "palabra": "los",
+          "inicioMs": 580,
+          "finMs": 760
+        },
+        {
+          "palabra": "chillidos",
+          "inicioMs": 760,
+          "finMs": 1100
+        },
+        {
+          "palabra": "agudos",
+          "inicioMs": 1100,
+          "finMs": 1560
+        },
+        {
+          "palabra": "forramos",
+          "inicioMs": 1780,
+          "finMs": 2040
+        },
+        {
+          "palabra": "el",
+          "inicioMs": 2040,
+          "finMs": 2260
+        },
+        {
+          "palabra": "tubo",
+          "inicioMs": 2260,
+          "finMs": 2520
+        },
+        {
+          "palabra": "perforado",
+          "inicioMs": 2520,
+          "finMs": 2980
+        },
+        {
+          "palabra": "con",
+          "inicioMs": 2980,
+          "finMs": 3160
+        },
+        {
+          "palabra": "fibra",
+          "inicioMs": 3160,
+          "finMs": 3460
+        },
+        {
+          "palabra": "de",
+          "inicioMs": 3460,
+          "finMs": 3580
+        },
+        {
+          "palabra": "vidrio",
+          "inicioMs": 3580,
+          "finMs": 3920
+        },
+        {
+          "palabra": "las",
+          "inicioMs": 4160,
+          "finMs": 4260
+        },
+        {
+          "palabra": "ondas",
+          "inicioMs": 4260,
+          "finMs": 4540
+        },
+        {
+          "palabra": "rebotan",
+          "inicioMs": 4540,
+          "finMs": 5000
+        },
+        {
+          "palabra": "en",
+          "inicioMs": 5000,
+          "finMs": 5080
+        },
+        {
+          "palabra": "millones",
+          "inicioMs": 5080,
+          "finMs": 5300
+        },
+        {
+          "palabra": "de",
+          "inicioMs": 5300,
+          "finMs": 5560
+        },
+        {
+          "palabra": "pelitos",
+          "inicioMs": 5560,
+          "finMs": 5860
+        },
+        {
+          "palabra": "microscópicos",
+          "inicioMs": 5860,
+          "finMs": 6720
+        },
+        {
+          "palabra": "perdiendo",
+          "inicioMs": 6940,
+          "finMs": 7220
+        },
+        {
+          "palabra": "energía",
+          "inicioMs": 7220,
+          "finMs": 7680
+        },
+        {
+          "palabra": "por",
+          "inicioMs": 7680,
+          "finMs": 7920
+        },
+        {
+          "palabra": "fricción",
+          "inicioMs": 7920,
+          "finMs": 8320
+        },
+        {
+          "palabra": "viscosa",
+          "inicioMs": 8320,
+          "finMs": 8840
+        },
+        {
+          "palabra": "hasta",
+          "inicioMs": 8840,
+          "finMs": 9120
+        },
+        {
+          "palabra": "transformarse",
+          "inicioMs": 9120,
+          "finMs": 9760
+        },
+        {
+          "palabra": "en",
+          "inicioMs": 9760,
+          "finMs": 9920
+        },
+        {
+          "palabra": "calor",
+          "inicioMs": 9920,
+          "finMs": 10100
+        },
+        {
+          "palabra": "inofensivo",
+          "inicioMs": 10100,
+          "finMs": 10760
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "texto": "Pero el truco maestro para los graves pesados es pura física acústica: la interferencia destructiva. Mediante un laberinto de deflectores internos, dividimos la onda sonora en dos caminos para obligarla a destruirse a sí misma.",
+      "icono": "Shuffle",
+      "colorIcono": "#F59E0B",
+      "tituloVisual": "RUTAS DIFERENCIALES",
+      "composicionVisual": "escenario_ilustrado",
+      "escenario": "deflectores_laberinto_dos_rutas",
+      "transicion": "zoom_in",
+      "efectosCamara": [
+        "drift"
+      ],
+      "sfx": "sfx/sfx_deflectores_compas_division_ondas.wav",
+      "volumenSfx": 0.25,
+      "palabrasClave": [
+        "graves pesados",
+        "interferencia destructiva",
+        "destruirse a sí mismo"
+      ],
+      "focoCamara": [
+        {
+          "x": -140,
+          "y": 10,
+          "escala": 1.2,
+          "inicioProgreso": 0.0,
+          "finProgreso": 0.35,
+          "curva": "suave"
+        },
+        {
+          "x": 80,
+          "y": -20,
+          "escala": 1.42,
+          "inicioProgreso": 0.35,
+          "finProgreso": 0.75,
+          "curva": "impacto"
+        },
+        {
+          "x": 140,
+          "y": -10,
+          "escala": 1.28,
+          "inicioProgreso": 0.75,
+          "finProgreso": 1.0,
+          "curva": "suave"
+        }
+      ],
+      "personajes": [
+        {
+          "id": "mecanico",
+          "nombre": "Stickman Mecánico",
+          "posicion": {
+            "x": -250,
+            "y": 25
+          },
+          "escala": 0.65,
+          "orientacion": "derecha",
+          "habla": true,
+          "capaZ": 22,
+          "acciones": [
+            {
+              "tipo": "personalizada",
+              "pasos": [
+                {
+                  "inicioProgreso": 0.0,
+                  "finProgreso": 0.4,
+                  "poseId": "taking_notes",
+                  "expresion": "thinking",
+                  "prop": "regla_marcador_longitud_onda",
+                  "posicion": {
+                    "x": -250,
+                    "y": 25
+                  },
+                  "curva": "suave",
+                  "procedural": "estatico"
+                },
+                {
+                  "inicioProgreso": 0.4,
+                  "finProgreso": 0.75,
+                  "poseId": "comparing_two_objects",
+                  "expresion": "talking_enthusiastic",
+                  "posicion": {
+                    "x": -250,
+                    "y": 25
+                  },
+                  "curva": "suave",
+                  "procedural": "estatico"
+                },
+                {
+                  "inicioProgreso": 0.75,
+                  "finProgreso": 1.0,
+                  "poseId": "eureka_idea",
+                  "expresion": "eureka",
+                  "posicion": {
+                    "x": -250,
+                    "y": 25
+                  },
+                  "curva": "rebote",
+                  "procedural": "estatico"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "objetos": [],
+      "duracionSegundos": 12.25,
+      "palabras": [
+        {
+          "palabra": "Pero",
+          "inicioMs": 0,
+          "finMs": 220
+        },
+        {
+          "palabra": "el",
+          "inicioMs": 220,
+          "finMs": 320
+        },
+        {
+          "palabra": "truco",
+          "inicioMs": 320,
+          "finMs": 580
+        },
+        {
+          "palabra": "maestro",
+          "inicioMs": 580,
+          "finMs": 1000
+        },
+        {
+          "palabra": "para",
+          "inicioMs": 1000,
+          "finMs": 1220
+        },
+        {
+          "palabra": "los",
+          "inicioMs": 1220,
+          "finMs": 1380
+        },
+        {
+          "palabra": "graves",
+          "inicioMs": 1380,
+          "finMs": 1640
+        },
+        {
+          "palabra": "pesados",
+          "inicioMs": 1640,
+          "finMs": 2120
+        },
+        {
+          "palabra": "es",
+          "inicioMs": 2120,
+          "finMs": 2400
+        },
+        {
+          "palabra": "pura",
+          "inicioMs": 2400,
+          "finMs": 2660
+        },
+        {
+          "palabra": "física",
+          "inicioMs": 2660,
+          "finMs": 2940
+        },
+        {
+          "palabra": "acústica",
+          "inicioMs": 2940,
+          "finMs": 3620
+        },
+        {
+          "palabra": "la",
+          "inicioMs": 3920,
+          "finMs": 4060
+        },
+        {
+          "palabra": "interferencia",
+          "inicioMs": 4060,
+          "finMs": 4740
+        },
+        {
+          "palabra": "destructiva",
+          "inicioMs": 4740,
+          "finMs": 5420
+        },
+        {
+          "palabra": "Mediante",
+          "inicioMs": 5740,
+          "finMs": 6040
+        },
+        {
+          "palabra": "un",
+          "inicioMs": 6040,
+          "finMs": 6220
+        },
+        {
+          "palabra": "laberinto",
+          "inicioMs": 6220,
+          "finMs": 6680
+        },
+        {
+          "palabra": "de",
+          "inicioMs": 6680,
+          "finMs": 6880
+        },
+        {
+          "palabra": "deflectores",
+          "inicioMs": 6880,
+          "finMs": 7400
+        },
+        {
+          "palabra": "internos",
+          "inicioMs": 7400,
+          "finMs": 8080
+        },
+        {
+          "palabra": "dividimos",
+          "inicioMs": 8260,
+          "finMs": 8640
+        },
+        {
+          "palabra": "la",
+          "inicioMs": 8640,
+          "finMs": 8800
+        },
+        {
+          "palabra": "onda",
+          "inicioMs": 8800,
+          "finMs": 8980
+        },
+        {
+          "palabra": "sonora",
+          "inicioMs": 8980,
+          "finMs": 9400
+        },
+        {
+          "palabra": "en",
+          "inicioMs": 9400,
+          "finMs": 9520
+        },
+        {
+          "palabra": "dos",
+          "inicioMs": 9520,
+          "finMs": 9620
+        },
+        {
+          "palabra": "caminos",
+          "inicioMs": 9620,
+          "finMs": 9960
+        },
+        {
+          "palabra": "para",
+          "inicioMs": 9960,
+          "finMs": 10160
+        },
+        {
+          "palabra": "obligarla",
+          "inicioMs": 10160,
+          "finMs": 10580
+        },
+        {
+          "palabra": "a",
+          "inicioMs": 10580,
+          "finMs": 10740
+        },
+        {
+          "palabra": "destruirse",
+          "inicioMs": 10740,
+          "finMs": 11100
+        },
+        {
+          "palabra": "a",
+          "inicioMs": 11100,
+          "finMs": 11240
+        },
+        {
+          "palabra": "sí",
+          "inicioMs": 11240,
+          "finMs": 11340
+        },
+        {
+          "palabra": "misma",
+          "inicioMs": 11340,
+          "finMs": 11660
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "texto": "La segunda ruta mide exactamente media longitud de onda extra. Cuando ambos caminos se vuelven a juntar en la salida, el pico de una onda coincide exactamente con el valle de la otra... uno más menos uno es cero, ¡y el ruido se cancela por completo!",
+      "icono": "Activity",
+      "colorIcono": "#10B981",
+      "tituloVisual": "CANCELACIÓN DE FASE",
+      "composicionVisual": "primer_plano",
+      "escenario": "interferencia_destructiva_cancelacion",
+      "transicion": "flash",
+      "efectosCamara": [
+        "drift",
+        "punch"
+      ],
+      "sfx": "sfx/sfx_interferencia_cancelacion_silencio_puf.wav",
+      "volumenSfx": 0.26,
+      "palabrasClave": [
+        "media onda más",
+        "pico coincide con el valle",
+        "ruido se cancela"
+      ],
+      "focoCamara": [
+        {
+          "x": -100,
+          "y": -20,
+          "escala": 1.22,
+          "inicioProgreso": 0.0,
+          "finProgreso": 0.35,
+          "curva": "suave"
+        },
+        {
+          "x": 80,
+          "y": -40,
+          "escala": 1.44,
+          "inicioProgreso": 0.35,
+          "finProgreso": 0.75,
+          "curva": "impacto"
+        },
+        {
+          "x": 40,
+          "y": -20,
+          "escala": 1.2,
+          "inicioProgreso": 0.75,
+          "finProgreso": 1.0,
+          "curva": "suave"
+        }
+      ],
+      "personajes": [
+        {
+          "id": "mecanico",
+          "nombre": "Stickman Mecánico",
+          "posicion": {
+            "x": -240,
+            "y": 25
+          },
+          "escala": 0.65,
+          "orientacion": "derecha",
+          "habla": true,
+          "capaZ": 22,
+          "acciones": [
+            {
+              "tipo": "personalizada",
+              "pasos": [
+                {
+                  "inicioProgreso": 0.0,
+                  "finProgreso": 0.35,
+                  "poseId": "holding_both_hands",
+                  "expresion": "talking_enthusiastic",
+                  "prop": "holograma_cancelacion_fases",
+                  "posicion": {
+                    "x": -240,
+                    "y": 25
+                  },
+                  "curva": "suave",
+                  "procedural": "estatico"
+                },
+                {
+                  "inicioProgreso": 0.35,
+                  "finProgreso": 0.7,
+                  "poseId": "clapping",
+                  "expresion": "eureka",
+                  "posicion": {
+                    "x": -240,
+                    "y": 25
+                  },
+                  "curva": "impacto",
+                  "procedural": "estatico"
+                },
+                {
+                  "inicioProgreso": 0.7,
+                  "finProgreso": 1.0,
+                  "poseId": "showing_both_hands",
+                  "expresion": "laugh",
+                  "posicion": {
+                    "x": -240,
+                    "y": 25
+                  },
+                  "curva": "suave",
+                  "procedural": "estatico"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "objetos": [],
+      "duracionSegundos": 14.578,
+      "palabras": [
+        {
+          "palabra": "La",
+          "inicioMs": 0,
+          "finMs": 180
+        },
+        {
+          "palabra": "segunda",
+          "inicioMs": 180,
+          "finMs": 440
+        },
+        {
+          "palabra": "ruta",
+          "inicioMs": 440,
+          "finMs": 760
+        },
+        {
+          "palabra": "mide",
+          "inicioMs": 760,
+          "finMs": 1000
+        },
+        {
+          "palabra": "exactamente",
+          "inicioMs": 1000,
+          "finMs": 1320
+        },
+        {
+          "palabra": "media",
+          "inicioMs": 1320,
+          "finMs": 1840
+        },
+        {
+          "palabra": "longitud",
+          "inicioMs": 1840,
+          "finMs": 2120
+        },
+        {
+          "palabra": "de",
+          "inicioMs": 2120,
+          "finMs": 2500
+        },
+        {
+          "palabra": "onda",
+          "inicioMs": 2500,
+          "finMs": 2660
+        },
+        {
+          "palabra": "extra",
+          "inicioMs": 2660,
+          "finMs": 3060
+        },
+        {
+          "palabra": "Cuando",
+          "inicioMs": 3320,
+          "finMs": 3520
+        },
+        {
+          "palabra": "ambos",
+          "inicioMs": 3520,
+          "finMs": 3840
+        },
+        {
+          "palabra": "caminos",
+          "inicioMs": 3840,
+          "finMs": 4240
+        },
+        {
+          "palabra": "se",
+          "inicioMs": 4240,
+          "finMs": 4420
+        },
+        {
+          "palabra": "vuelven",
+          "inicioMs": 4420,
+          "finMs": 4680
+        },
+        {
+          "palabra": "a",
+          "inicioMs": 4680,
+          "finMs": 4800
+        },
+        {
+          "palabra": "juntar",
+          "inicioMs": 4800,
+          "finMs": 5160
+        },
+        {
+          "palabra": "en",
+          "inicioMs": 5160,
+          "finMs": 5260
+        },
+        {
+          "palabra": "la",
+          "inicioMs": 5260,
+          "finMs": 5360
+        },
+        {
+          "palabra": "salida",
+          "inicioMs": 5360,
+          "finMs": 5780
+        },
+        {
+          "palabra": "el",
+          "inicioMs": 6140,
+          "finMs": 6240
+        },
+        {
+          "palabra": "pico",
+          "inicioMs": 6240,
+          "finMs": 6560
+        },
+        {
+          "palabra": "de",
+          "inicioMs": 6560,
+          "finMs": 6660
+        },
+        {
+          "palabra": "una",
+          "inicioMs": 6660,
+          "finMs": 6860
+        },
+        {
+          "palabra": "onda",
+          "inicioMs": 6860,
+          "finMs": 7140
+        },
+        {
+          "palabra": "coincide",
+          "inicioMs": 7140,
+          "finMs": 7700
+        },
+        {
+          "palabra": "exactamente",
+          "inicioMs": 7700,
+          "finMs": 8100
+        },
+        {
+          "palabra": "con",
+          "inicioMs": 8100,
+          "finMs": 8620
+        },
+        {
+          "palabra": "el",
+          "inicioMs": 8620,
+          "finMs": 8760
+        },
+        {
+          "palabra": "valle",
+          "inicioMs": 8760,
+          "finMs": 8920
+        },
+        {
+          "palabra": "de",
+          "inicioMs": 8920,
+          "finMs": 9100
+        },
+        {
+          "palabra": "la",
+          "inicioMs": 9100,
+          "finMs": 9220
+        },
+        {
+          "palabra": "otra",
+          "inicioMs": 9220,
+          "finMs": 10260
+        },
+        {
+          "palabra": "uno",
+          "inicioMs": 10260,
+          "finMs": 10440
+        },
+        {
+          "palabra": "más",
+          "inicioMs": 10440,
+          "finMs": 10640
+        },
+        {
+          "palabra": "menos",
+          "inicioMs": 10640,
+          "finMs": 10900
+        },
+        {
+          "palabra": "uno",
+          "inicioMs": 10900,
+          "finMs": 11140
+        },
+        {
+          "palabra": "es",
+          "inicioMs": 11140,
+          "finMs": 11320
+        },
+        {
+          "palabra": "cero",
+          "inicioMs": 11320,
+          "finMs": 11660
+        },
+        {
+          "palabra": "y",
+          "inicioMs": 11980,
+          "finMs": 12060
+        },
+        {
+          "palabra": "el",
+          "inicioMs": 12060,
+          "finMs": 12160
+        },
+        {
+          "palabra": "ruido",
+          "inicioMs": 12160,
+          "finMs": 12420
+        },
+        {
+          "palabra": "se",
+          "inicioMs": 12420,
+          "finMs": 12600
+        },
+        {
+          "palabra": "cancela",
+          "inicioMs": 12600,
+          "finMs": 13080
+        },
+        {
+          "palabra": "por",
+          "inicioMs": 13080,
+          "finMs": 13280
+        },
+        {
+          "palabra": "completo",
+          "inicioMs": 13280,
+          "finMs": 14260
+        }
+      ]
+    },
+    {
+      "id": 7,
+      "texto": "Montas el silenciador terminado, giras la llave de nuevo... y el monstruo ruidoso ahora ronronea suavemente como un gatito. Ingeniería pura para dejar respirar al motor y salvar los oídos de todo el vecindario.",
+      "icono": "Award",
+      "colorIcono": "#FACC15",
+      "tituloVisual": "INGENIERÍA ACÚSTICA",
+      "composicionVisual": "plano_general",
+      "escenario": "cochera_salida_kart_silencioso_victoria",
+      "transicion": "zoom_in",
+      "efectosCamara": [
+        "drift"
+      ],
+      "sfx": "sfx/sfx_kart_ronroneo_suave_aplausos_victoria.wav",
+      "volumenSfx": 0.26,
+      "palabrasClave": [
+        "ronronea como un gatito",
+        "ingeniería pura",
+        "todo el barrio"
+      ],
+      "focoCamara": [
+        {
+          "x": -80,
+          "y": 10,
+          "escala": 1.18,
+          "inicioProgreso": 0.0,
+          "finProgreso": 0.35,
+          "curva": "suave"
+        },
+        {
+          "x": 60,
+          "y": -10,
+          "escala": 1.34,
+          "inicioProgreso": 0.35,
+          "finProgreso": 0.75,
+          "curva": "impacto"
+        },
+        {
+          "x": 0,
+          "y": -20,
+          "escala": 1.15,
+          "inicioProgreso": 0.75,
+          "finProgreso": 1.0,
+          "curva": "suave"
+        }
+      ],
+      "personajes": [
+        {
+          "id": "mecanico",
+          "nombre": "Stickman Mecánico",
+          "posicion": {
+            "x": -40,
+            "y": 25
+          },
+          "escala": 0.7,
+          "orientacion": "derecha",
+          "habla": true,
+          "capaZ": 22,
+          "acciones": [
+            {
+              "tipo": "personalizada",
+              "pasos": [
+                {
+                  "inicioProgreso": 0.0,
+                  "finProgreso": 0.35,
+                  "poseId": "sitting",
+                  "expresion": "smile_wide",
+                  "posicion": {
+                    "x": -40,
+                    "y": 25
+                  },
+                  "curva": "suave",
+                  "procedural": "estatico"
+                },
+                {
+                  "inicioProgreso": 0.35,
+                  "finProgreso": 0.7,
+                  "poseId": "standing_confident",
+                  "expresion": "proud",
+                  "prop": "gafas_sol_llave_kart_victoria",
+                  "posicion": {
+                    "x": -40,
+                    "y": 25
+                  },
+                  "curva": "rebote",
+                  "procedural": "estatico"
+                },
+                {
+                  "inicioProgreso": 0.7,
+                  "finProgreso": 1.0,
+                  "poseId": "celebrating_arms_up",
+                  "expresion": "proud",
+                  "prop": "gafas_sol_llave_kart_victoria",
+                  "posicion": {
+                    "x": -40,
+                    "y": 25
+                  },
+                  "curva": "rebote",
+                  "procedural": "estatico"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "objetos": [],
+      "duracionSegundos": 11.698,
+      "palabras": [
+        {
+          "palabra": "Montas",
+          "inicioMs": 0,
+          "finMs": 420
+        },
+        {
+          "palabra": "el",
+          "inicioMs": 420,
+          "finMs": 600
+        },
+        {
+          "palabra": "silenciador",
+          "inicioMs": 600,
+          "finMs": 1040
+        },
+        {
+          "palabra": "terminado",
+          "inicioMs": 1040,
+          "finMs": 1660
+        },
+        {
+          "palabra": "giras",
+          "inicioMs": 1920,
+          "finMs": 2120
+        },
+        {
+          "palabra": "la",
+          "inicioMs": 2120,
+          "finMs": 2260
+        },
+        {
+          "palabra": "llave",
+          "inicioMs": 2260,
+          "finMs": 2500
+        },
+        {
+          "palabra": "de",
+          "inicioMs": 2500,
+          "finMs": 2640
+        },
+        {
+          "palabra": "nuevo",
+          "inicioMs": 2640,
+          "finMs": 2860
+        },
+        {
+          "palabra": "y",
+          "inicioMs": 2860,
+          "finMs": 3280
+        },
+        {
+          "palabra": "el",
+          "inicioMs": 3280,
+          "finMs": 3400
+        },
+        {
+          "palabra": "monstruo",
+          "inicioMs": 3400,
+          "finMs": 3760
+        },
+        {
+          "palabra": "ruidoso",
+          "inicioMs": 3760,
+          "finMs": 4200
+        },
+        {
+          "palabra": "ahora",
+          "inicioMs": 4200,
+          "finMs": 4400
+        },
+        {
+          "palabra": "ronronea",
+          "inicioMs": 4400,
+          "finMs": 4980
+        },
+        {
+          "palabra": "suavemente",
+          "inicioMs": 4980,
+          "finMs": 5520
+        },
+        {
+          "palabra": "como",
+          "inicioMs": 5520,
+          "finMs": 5760
+        },
+        {
+          "palabra": "un",
+          "inicioMs": 5760,
+          "finMs": 5920
+        },
+        {
+          "palabra": "gatito",
+          "inicioMs": 5920,
+          "finMs": 6420
+        },
+        {
+          "palabra": "Ingeniería",
+          "inicioMs": 6800,
+          "finMs": 7300
+        },
+        {
+          "palabra": "pura",
+          "inicioMs": 7300,
+          "finMs": 7700
+        },
+        {
+          "palabra": "para",
+          "inicioMs": 7700,
+          "finMs": 7880
+        },
+        {
+          "palabra": "dejar",
+          "inicioMs": 7880,
+          "finMs": 8120
+        },
+        {
+          "palabra": "respirar",
+          "inicioMs": 8120,
+          "finMs": 8520
+        },
+        {
+          "palabra": "al",
+          "inicioMs": 8520,
+          "finMs": 8640
+        },
+        {
+          "palabra": "motor",
+          "inicioMs": 8640,
+          "finMs": 8900
+        },
+        {
+          "palabra": "y",
+          "inicioMs": 8900,
+          "finMs": 9320
+        },
+        {
+          "palabra": "salvar",
+          "inicioMs": 9320,
+          "finMs": 9580
+        },
+        {
+          "palabra": "los",
+          "inicioMs": 9580,
+          "finMs": 9780
+        },
+        {
+          "palabra": "oídos",
+          "inicioMs": 9780,
+          "finMs": 10120
+        },
+        {
+          "palabra": "de",
+          "inicioMs": 10120,
+          "finMs": 10240
+        },
+        {
+          "palabra": "todo",
+          "inicioMs": 10240,
+          "finMs": 10400
+        },
+        {
+          "palabra": "el",
+          "inicioMs": 10400,
+          "finMs": 10540
+        },
+        {
+          "palabra": "vecindario",
+          "inicioMs": 10540,
+          "finMs": 11040
+        }
+      ]
+    }
+  ]
+}

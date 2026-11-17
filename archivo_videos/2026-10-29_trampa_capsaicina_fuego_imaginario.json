@@ -45,8 +45,8 @@
           "id": "stickman_fuego",
           "nombre": "Stickman",
           "posicion": {
-            "x": -160,
-            "y": 90
+            "x": -185,
+            "y": 85
           },
           "escala": 1.05,
           "orientacion": "derecha",
@@ -57,13 +57,15 @@
               "tipo": "personalizada",
               "pasos": [
                 {
-                  "inicioProgreso": 0,
+                  "inicioProgreso": 0.0,
                   "finProgreso": 0.5,
+                  "desdePalabra": "Cuando",
+                  "hastaPalabra": "llamas",
                   "poseId": "covering_mouth",
                   "expresion": "surprised",
                   "posicion": {
-                    "x": -160,
-                    "y": 90
+                    "x": -185,
+                    "y": 85
                   },
                   "curva": "suave",
                   "procedural": "estatico"
@@ -71,11 +73,13 @@
                 {
                   "inicioProgreso": 0.5,
                   "finProgreso": 1.0,
+                  "desdePalabra": "temperatura",
+                  "hastaPalabra": "centígrado",
                   "poseId": "shock_explosion",
                   "expresion": "shocked",
                   "posicion": {
-                    "x": -140,
-                    "y": 90
+                    "x": -155,
+                    "y": 85
                   },
                   "curva": "impacto",
                   "procedural": "temblar"
@@ -90,12 +94,40 @@
           "id": "chile_fuego",
           "propId": "chile_habanero_fuego_vivo",
           "posicion": {
-            "x": 160,
-            "y": -40
+            "x": 165,
+            "y": 40
           },
-          "escala": 1.35,
-          "animacion": "vibrar",
-          "capaZ": 10
+          "escala": 1.4,
+          "capaZ": 28,
+          "pasos": [
+            {
+              "inicioProgreso": 0.0,
+              "finProgreso": 0.5,
+              "desdePalabra": "Cuando",
+              "hastaPalabra": "llamas",
+              "estado": "normal",
+              "posicion": {
+                "x": 150,
+                "y": 45
+              },
+              "escala": 1.35,
+              "curva": "suave"
+            },
+            {
+              "inicioProgreso": 0.5,
+              "finProgreso": 1.0,
+              "desdePalabra": "temperatura",
+              "hastaPalabra": "centígrado",
+              "estado": "combustion",
+              "posicion": {
+                "x": 180,
+                "y": 30
+              },
+              "escala": 1.5,
+              "animacion": "vibrar",
+              "curva": "impacto"
+            }
+          ]
         }
       ],
       "duracionSegundos": 7.738,
@@ -225,6 +257,32 @@
           "inicioMs": 6260,
           "finMs": 7000
         }
+      ],
+      "focoCamara": [
+        {
+          "x": 0,
+          "y": 20,
+          "escala": 1.06,
+          "inicioProgreso": 0.0,
+          "finProgreso": 0.45,
+          "curva": "suave"
+        },
+        {
+          "x": 85,
+          "y": 25,
+          "escala": 1.24,
+          "inicioProgreso": 0.45,
+          "finProgreso": 0.82,
+          "curva": "impacto"
+        },
+        {
+          "x": -40,
+          "y": 30,
+          "escala": 1.12,
+          "inicioProgreso": 0.82,
+          "finProgreso": 1.0,
+          "curva": "suave"
+        }
       ]
     },
     {
@@ -253,8 +311,8 @@
           "id": "stickman_termometro",
           "nombre": "Stickman",
           "posicion": {
-            "x": -170,
-            "y": 90
+            "x": -185,
+            "y": 85
           },
           "escala": 1.05,
           "orientacion": "derecha",
@@ -265,27 +323,31 @@
               "tipo": "personalizada",
               "pasos": [
                 {
-                  "inicioProgreso": 0,
-                  "finProgreso": 0.5,
+                  "inicioProgreso": 0.0,
+                  "finProgreso": 0.45,
+                  "desdePalabra": "Si",
+                  "hastaPalabra": "picante",
                   "poseId": "presenting_object",
                   "expresion": "talking_enthusiastic",
                   "posicion": {
-                    "x": -170,
-                    "y": 90
+                    "x": -185,
+                    "y": 85
                   },
                   "curva": "suave",
                   "procedural": "estatico"
                 },
                 {
-                  "inicioProgreso": 0.5,
+                  "inicioProgreso": 0.45,
                   "finProgreso": 1.0,
+                  "desdePalabra": "marcaría",
+                  "hastaPalabra": "térmico",
                   "poseId": "showing_both_hands",
                   "expresion": "smile_wide",
                   "posicion": {
-                    "x": -140,
-                    "y": 90
+                    "x": -155,
+                    "y": 85
                   },
-                  "curva": "suave",
+                  "curva": "rebote",
                   "procedural": "estatico"
                 }
               ]
@@ -298,12 +360,40 @@
           "id": "termometro_cero",
           "propId": "termometro_lengua_cero_cambio",
           "posicion": {
-            "x": 160,
-            "y": -40
+            "x": 125,
+            "y": 35
           },
-          "escala": 1.3,
-          "animacion": "pulso",
-          "capaZ": 10
+          "escala": 1.25,
+          "capaZ": 28,
+          "pasos": [
+            {
+              "inicioProgreso": 0.0,
+              "finProgreso": 0.45,
+              "desdePalabra": "Si",
+              "hastaPalabra": "picante",
+              "estado": "midiendo",
+              "posicion": {
+                "x": 120,
+                "y": 40
+              },
+              "escala": 1.22,
+              "curva": "suave"
+            },
+            {
+              "inicioProgreso": 0.45,
+              "finProgreso": 1.0,
+              "desdePalabra": "marcaría",
+              "hastaPalabra": "térmico",
+              "estado": "verificado_normal",
+              "posicion": {
+                "x": 130,
+                "y": 25
+              },
+              "escala": 1.32,
+              "animacion": "pulso",
+              "curva": "rebote"
+            }
+          ]
         }
       ],
       "duracionSegundos": 10.018,
@@ -453,6 +543,32 @@
           "inicioMs": 8900,
           "finMs": 9400
         }
+      ],
+      "focoCamara": [
+        {
+          "x": -60,
+          "y": 30,
+          "escala": 1.12,
+          "inicioProgreso": 0.0,
+          "finProgreso": 0.42,
+          "curva": "suave"
+        },
+        {
+          "x": 50,
+          "y": 20,
+          "escala": 1.2,
+          "inicioProgreso": 0.42,
+          "finProgreso": 0.8,
+          "curva": "impacto"
+        },
+        {
+          "x": 0,
+          "y": 25,
+          "escala": 1.1,
+          "inicioProgreso": 0.8,
+          "finProgreso": 1.0,
+          "curva": "suave"
+        }
       ]
     },
     {
@@ -482,8 +598,8 @@
           "id": "stickman_receptor",
           "nombre": "Stickman",
           "posicion": {
-            "x": -160,
-            "y": 90
+            "x": -185,
+            "y": 95
           },
           "escala": 1.05,
           "orientacion": "derecha",
@@ -494,27 +610,31 @@
               "tipo": "personalizada",
               "pasos": [
                 {
-                  "inicioProgreso": 0,
-                  "finProgreso": 0.5,
+                  "inicioProgreso": 0.0,
+                  "finProgreso": 0.48,
+                  "desdePalabra": "El",
+                  "hastaPalabra": "capsaicina",
                   "poseId": "explaining_pointing_up",
                   "expresion": "talking_enthusiastic",
                   "posicion": {
-                    "x": -160,
-                    "y": 90
+                    "x": -185,
+                    "y": 95
                   },
                   "curva": "suave",
                   "procedural": "estatico"
                 },
                 {
-                  "inicioProgreso": 0.5,
+                  "inicioProgreso": 0.48,
                   "finProgreso": 1.0,
+                  "desdePalabra": "una",
+                  "hastaPalabra": "grados",
                   "poseId": "eureka_idea",
                   "expresion": "eureka",
                   "posicion": {
-                    "x": -130,
-                    "y": 90
+                    "x": -155,
+                    "y": 95
                   },
-                  "curva": "suave",
+                  "curva": "impacto",
                   "procedural": "estatico"
                 }
               ]
@@ -527,12 +647,40 @@
           "id": "receptor_trpv",
           "propId": "receptor_trpv1_candado_termico",
           "posicion": {
-            "x": 160,
-            "y": -40
+            "x": 165,
+            "y": 20
           },
-          "escala": 1.35,
-          "animacion": "pulso",
-          "capaZ": 10
+          "escala": 1.4,
+          "capaZ": 28,
+          "pasos": [
+            {
+              "inicioProgreso": 0.0,
+              "finProgreso": 0.48,
+              "desdePalabra": "El",
+              "hastaPalabra": "capsaicina",
+              "estado": "reposo",
+              "posicion": {
+                "x": 155,
+                "y": 30
+              },
+              "escala": 1.32,
+              "curva": "suave"
+            },
+            {
+              "inicioProgreso": 0.48,
+              "finProgreso": 1.0,
+              "desdePalabra": "una",
+              "hastaPalabra": "grados",
+              "estado": "abierto_alarma",
+              "posicion": {
+                "x": 175,
+                "y": 15
+              },
+              "escala": 1.48,
+              "animacion": "pulso",
+              "curva": "impacto"
+            }
+          ]
         }
       ],
       "duracionSegundos": 11.218,
@@ -722,6 +870,32 @@
           "inicioMs": 10180,
           "finMs": 10640
         }
+      ],
+      "focoCamara": [
+        {
+          "x": -50,
+          "y": 35,
+          "escala": 1.1,
+          "inicioProgreso": 0.0,
+          "finProgreso": 0.45,
+          "curva": "suave"
+        },
+        {
+          "x": 95,
+          "y": 25,
+          "escala": 1.26,
+          "inicioProgreso": 0.45,
+          "finProgreso": 0.84,
+          "curva": "impacto"
+        },
+        {
+          "x": 15,
+          "y": 35,
+          "escala": 1.12,
+          "inicioProgreso": 0.84,
+          "finProgreso": 1.0,
+          "curva": "suave"
+        }
       ]
     },
     {
@@ -750,8 +924,8 @@
           "id": "stickman_panico_boca",
           "nombre": "Stickman",
           "posicion": {
-            "x": -160,
-            "y": 90
+            "x": -185,
+            "y": 95
           },
           "escala": 1.05,
           "orientacion": "derecha",
@@ -762,13 +936,15 @@
               "tipo": "personalizada",
               "pasos": [
                 {
-                  "inicioProgreso": 0,
+                  "inicioProgreso": 0.0,
                   "finProgreso": 0.5,
+                  "desdePalabra": "Al",
+                  "hastaPalabra": "ardiendo",
                   "poseId": "frustrated_head_grab",
                   "expresion": "worried",
                   "posicion": {
-                    "x": -160,
-                    "y": 90
+                    "x": -185,
+                    "y": 95
                   },
                   "curva": "suave",
                   "procedural": "estatico"
@@ -776,13 +952,15 @@
                 {
                   "inicioProgreso": 0.5,
                   "finProgreso": 1.0,
+                  "desdePalabra": "dilata",
+                  "hastaPalabra": "incendio",
                   "poseId": "protecting_shielding",
                   "expresion": "shocked",
                   "posicion": {
-                    "x": -140,
-                    "y": 90
+                    "x": -155,
+                    "y": 95
                   },
-                  "curva": "suave",
+                  "curva": "impacto",
                   "procedural": "temblar"
                 }
               ]
@@ -795,12 +973,40 @@
           "id": "chile_alerta",
           "propId": "chile_habanero_fuego_vivo",
           "posicion": {
-            "x": 160,
-            "y": -40
+            "x": 175,
+            "y": 40
           },
-          "escala": 1.3,
-          "animacion": "vibrar",
-          "capaZ": 10
+          "escala": 1.38,
+          "capaZ": 28,
+          "pasos": [
+            {
+              "inicioProgreso": 0.0,
+              "finProgreso": 0.5,
+              "desdePalabra": "Al",
+              "hastaPalabra": "ardiendo",
+              "estado": "normal",
+              "posicion": {
+                "x": 165,
+                "y": 45
+              },
+              "escala": 1.34,
+              "curva": "suave"
+            },
+            {
+              "inicioProgreso": 0.5,
+              "finProgreso": 1.0,
+              "desdePalabra": "dilata",
+              "hastaPalabra": "incendio",
+              "estado": "combustion",
+              "posicion": {
+                "x": 185,
+                "y": 30
+              },
+              "escala": 1.48,
+              "animacion": "vibrar",
+              "curva": "impacto"
+            }
+          ]
         }
       ],
       "duracionSegundos": 11.098,
@@ -980,6 +1186,32 @@
           "inicioMs": 9800,
           "finMs": 10320
         }
+      ],
+      "focoCamara": [
+        {
+          "x": 0,
+          "y": 15,
+          "escala": 1.08,
+          "inicioProgreso": 0.0,
+          "finProgreso": 0.45,
+          "curva": "suave"
+        },
+        {
+          "x": 65,
+          "y": -10,
+          "escala": 1.22,
+          "inicioProgreso": 0.45,
+          "finProgreso": 0.82,
+          "curva": "impacto"
+        },
+        {
+          "x": -35,
+          "y": 35,
+          "escala": 1.12,
+          "inicioProgreso": 0.82,
+          "finProgreso": 1.0,
+          "curva": "suave"
+        }
       ]
     },
     {
@@ -1008,8 +1240,8 @@
           "id": "stickman_agua_error",
           "nombre": "Stickman",
           "posicion": {
-            "x": -160,
-            "y": 90
+            "x": -185,
+            "y": 95
           },
           "escala": 1.05,
           "orientacion": "derecha",
@@ -1020,27 +1252,31 @@
               "tipo": "personalizada",
               "pasos": [
                 {
-                  "inicioProgreso": 0,
-                  "finProgreso": 0.5,
+                  "inicioProgreso": 0.0,
+                  "finProgreso": 0.42,
+                  "desdePalabra": "Y",
+                  "hastaPalabra": "error",
                   "poseId": "shaking_no",
                   "expresion": "skeptical",
                   "posicion": {
-                    "x": -160,
-                    "y": 90
+                    "x": -185,
+                    "y": 95
                   },
                   "curva": "suave",
                   "procedural": "estatico"
                 },
                 {
-                  "inicioProgreso": 0.5,
+                  "inicioProgreso": 0.42,
                   "finProgreso": 1.0,
+                  "desdePalabra": "La",
+                  "hastaPalabra": "ardor",
                   "poseId": "warning_danger",
                   "expresion": "worried",
                   "posicion": {
-                    "x": -130,
-                    "y": 90
+                    "x": -155,
+                    "y": 95
                   },
-                  "curva": "suave",
+                  "curva": "impacto",
                   "procedural": "estatico"
                 }
               ]
@@ -1053,12 +1289,40 @@
           "id": "vaso_agua",
           "propId": "vaso_agua_esparce_aceite",
           "posicion": {
-            "x": 160,
-            "y": -40
+            "x": 175,
+            "y": 40
           },
-          "escala": 1.35,
-          "animacion": "vibrar",
-          "capaZ": 10
+          "escala": 1.4,
+          "capaZ": 28,
+          "pasos": [
+            {
+              "inicioProgreso": 0.0,
+              "finProgreso": 0.42,
+              "desdePalabra": "Y",
+              "hastaPalabra": "error",
+              "estado": "normal",
+              "posicion": {
+                "x": 160,
+                "y": 45
+              },
+              "escala": 1.32,
+              "curva": "suave"
+            },
+            {
+              "inicioProgreso": 0.42,
+              "finProgreso": 1.0,
+              "desdePalabra": "La",
+              "hastaPalabra": "ardor",
+              "estado": "esparciendo_error",
+              "posicion": {
+                "x": 185,
+                "y": 30
+              },
+              "escala": 1.48,
+              "animacion": "vibrar",
+              "curva": "impacto"
+            }
+          ]
         }
       ],
       "duracionSegundos": 11.194,
@@ -1253,6 +1517,32 @@
           "inicioMs": 10340,
           "finMs": 10640
         }
+      ],
+      "focoCamara": [
+        {
+          "x": -60,
+          "y": 35,
+          "escala": 1.12,
+          "inicioProgreso": 0.0,
+          "finProgreso": 0.38,
+          "curva": "suave"
+        },
+        {
+          "x": 90,
+          "y": 15,
+          "escala": 1.26,
+          "inicioProgreso": 0.38,
+          "finProgreso": 0.8,
+          "curva": "impacto"
+        },
+        {
+          "x": 0,
+          "y": 25,
+          "escala": 1.1,
+          "inicioProgreso": 0.8,
+          "finProgreso": 1.0,
+          "curva": "suave"
+        }
       ]
     },
     {
@@ -1282,8 +1572,8 @@
           "id": "stickman_leche",
           "nombre": "Stickman",
           "posicion": {
-            "x": -160,
-            "y": 100
+            "x": -185,
+            "y": 95
           },
           "escala": 1.0,
           "orientacion": "derecha",
@@ -1294,27 +1584,31 @@
               "tipo": "personalizada",
               "pasos": [
                 {
-                  "inicioProgreso": 0,
-                  "finProgreso": 0.5,
+                  "inicioProgreso": 0.0,
+                  "finProgreso": 0.45,
+                  "desdePalabra": "Para",
+                  "hastaPalabra": "caseína",
                   "poseId": "presenting_object",
                   "expresion": "talking_enthusiastic",
                   "posicion": {
-                    "x": -160,
-                    "y": 100
+                    "x": -185,
+                    "y": 95
                   },
                   "curva": "suave",
                   "procedural": "estatico"
                 },
                 {
-                  "inicioProgreso": 0.5,
+                  "inicioProgreso": 0.45,
                   "finProgreso": 1.0,
+                  "desdePalabra": "una",
+                  "hastaPalabra": "receptores",
                   "poseId": "eureka_idea",
                   "expresion": "eureka",
                   "posicion": {
-                    "x": -130,
-                    "y": 100
+                    "x": -155,
+                    "y": 95
                   },
-                  "curva": "suave",
+                  "curva": "rebote",
                   "procedural": "estatico"
                 }
               ]
@@ -1327,12 +1621,40 @@
           "id": "leche_caseina",
           "propId": "brik_leche_caseina_detergente",
           "posicion": {
-            "x": 160,
-            "y": -40
+            "x": 175,
+            "y": 35
           },
-          "escala": 1.35,
-          "animacion": "pulso",
-          "capaZ": 10
+          "escala": 1.4,
+          "capaZ": 28,
+          "pasos": [
+            {
+              "inicioProgreso": 0.0,
+              "finProgreso": 0.45,
+              "desdePalabra": "Para",
+              "hastaPalabra": "caseína",
+              "estado": "normal",
+              "posicion": {
+                "x": 165,
+                "y": 40
+              },
+              "escala": 1.32,
+              "curva": "suave"
+            },
+            {
+              "inicioProgreso": 0.45,
+              "finProgreso": 1.0,
+              "desdePalabra": "una",
+              "hastaPalabra": "receptores",
+              "estado": "encapsulando_capsaicina",
+              "posicion": {
+                "x": 185,
+                "y": 25
+              },
+              "escala": 1.48,
+              "animacion": "pulso",
+              "curva": "rebote"
+            }
+          ]
         }
       ],
       "duracionSegundos": 11.818,
@@ -1492,6 +1814,32 @@
           "inicioMs": 10840,
           "finMs": 11360
         }
+      ],
+      "focoCamara": [
+        {
+          "x": -50,
+          "y": 30,
+          "escala": 1.1,
+          "inicioProgreso": 0.0,
+          "finProgreso": 0.42,
+          "curva": "suave"
+        },
+        {
+          "x": 85,
+          "y": 10,
+          "escala": 1.25,
+          "inicioProgreso": 0.42,
+          "finProgreso": 0.82,
+          "curva": "impacto"
+        },
+        {
+          "x": 0,
+          "y": 25,
+          "escala": 1.1,
+          "inicioProgreso": 0.82,
+          "finProgreso": 1.0,
+          "curva": "suave"
+        }
       ]
     },
     {
@@ -1520,8 +1868,8 @@
           "id": "stickman_cierre",
           "nombre": "Stickman",
           "posicion": {
-            "x": -120,
-            "y": 90
+            "x": -165,
+            "y": 95
           },
           "escala": 1.05,
           "orientacion": "derecha",
@@ -1532,13 +1880,15 @@
               "tipo": "personalizada",
               "pasos": [
                 {
-                  "inicioProgreso": 0,
+                  "inicioProgreso": 0.0,
                   "finProgreso": 0.5,
+                  "desdePalabra": "La",
+                  "hastaPalabra": "fría",
                   "poseId": "pointing_at_viewer",
                   "expresion": "smile_wide",
                   "posicion": {
-                    "x": -120,
-                    "y": 90
+                    "x": -165,
+                    "y": 95
                   },
                   "curva": "suave",
                   "procedural": "estatico"
@@ -1546,13 +1896,15 @@
                 {
                   "inicioProgreso": 0.5,
                   "finProgreso": 1.0,
+                  "desdePalabra": "tu",
+                  "hastaPalabra": "instante",
                   "poseId": "celebrating_arms_up",
                   "expresion": "talking_enthusiastic",
                   "posicion": {
-                    "x": -100,
-                    "y": 90
+                    "x": -140,
+                    "y": 95
                   },
-                  "curva": "suave",
+                  "curva": "rebote",
                   "procedural": "caminar"
                 }
               ]
@@ -1565,12 +1917,40 @@
           "id": "vaso_alivio",
           "propId": "vaso_leche_alivio_fresco",
           "posicion": {
-            "x": 160,
-            "y": -40
+            "x": 165,
+            "y": 35
           },
-          "escala": 1.3,
-          "animacion": "flotar",
-          "capaZ": 10
+          "escala": 1.38,
+          "capaZ": 28,
+          "pasos": [
+            {
+              "inicioProgreso": 0.0,
+              "finProgreso": 0.5,
+              "desdePalabra": "La",
+              "hastaPalabra": "fría",
+              "estado": "normal",
+              "posicion": {
+                "x": 155,
+                "y": 40
+              },
+              "escala": 1.32,
+              "curva": "suave"
+            },
+            {
+              "inicioProgreso": 0.5,
+              "finProgreso": 1.0,
+              "desdePalabra": "tu",
+              "hastaPalabra": "instante",
+              "estado": "alivio_total",
+              "posicion": {
+                "x": 175,
+                "y": 25
+              },
+              "escala": 1.46,
+              "animacion": "flotar",
+              "curva": "rebote"
+            }
+          ]
         }
       ],
       "duracionSegundos": 8.962,
@@ -1729,6 +2109,32 @@
           "palabra": "instante",
           "inicioMs": 7820,
           "finMs": 8380
+        }
+      ],
+      "focoCamara": [
+        {
+          "x": 0,
+          "y": 25,
+          "escala": 1.08,
+          "inicioProgreso": 0.0,
+          "finProgreso": 0.45,
+          "curva": "suave"
+        },
+        {
+          "x": 65,
+          "y": 20,
+          "escala": 1.2,
+          "inicioProgreso": 0.45,
+          "finProgreso": 0.85,
+          "curva": "suave"
+        },
+        {
+          "x": 0,
+          "y": 25,
+          "escala": 1.06,
+          "inicioProgreso": 0.85,
+          "finProgreso": 1.0,
+          "curva": "suave"
         }
       ]
     }

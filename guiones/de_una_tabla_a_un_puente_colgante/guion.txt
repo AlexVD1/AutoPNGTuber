@@ -1,0 +1,28 @@
+ID / SLUG: de_una_tabla_a_un_puente_colgante
+Título: De una tabla caída a un puente colgante funcional
+Gancho: Pones una simple tabla de madera para cruzar un arroyo y alcanzar tu almuerzo... ¡pero al dar dos pasos se parte a la mitad!
+Tema: Por qué una tabla plana colapsa por flexión y cómo la tensión de cables en catenaria, torres de compresión y péndolas crean un puente colgante diez veces más fuerte.
+Duración objetivo: [62, 76]
+============================================================
+
+[Escena 1] EL CRACK DE LA TABLA
+Pones una simple tabla de madera para cruzar un arroyo y alcanzar tu almuerzo... ¡pero al dar dos pasos se parte a la mitad y caes al agua fangosa! ¿Cómo conviertes esa misma madera débil en un puente diez veces más fuerte?
+
+[Escena 2] FLEXIÓN MECÁNICA
+¡Tu tabla no falló por mala, sino por física pura! Cuando pisas en medio sufre flexión mecánica: la cara de arriba se aplasta por compresión, mientras la cara de abajo se desgarra por tensión hasta quebrarse.
+
+[Escena 3] TRACCIÓN PURA
+La madera delgada es pésima soportando dobleces, pero las cuerdas de cáñamo son invencibles estirándose. El gran truco de la ingeniería estructural es transformar todo el peso en tracción axial pura.
+
+[Escena 4] TORRES DE APOYO
+Primero plantamos postes verticales macizos en ambas orillas: son las torres principales. Su única misión es soportar compresión vertical pura, descargando miles de kilos directo a la tierra firme.
+
+[Escena 5] LA CATENARIA
+Lanzamos el cable principal sobre las torres formando una curva catenaria perfecta. Y para que no colapsen hacia el río, anclamos los extremos a enormes rocas enterradas bajo tierra a cuarenta y cinco grados.
+
+[Escena 6] PÉNDOLAS EN EL AIRE
+Ahora colgamos la tabla del suelo usando tirantes verticales llamados péndolas. El piso ya no se dobla sobre el vacío: vuela suspendido del cable gigante repartiendo la carga hacia las torres.
+
+[Escena 7] EL PUENTE COLGANTE
+Saltas con una carretilla llena de rocas... ¡y el puente ni se inmuta! Acabas de inventar el puente colgante: la cuerda estira, la torre empuja... y tú cruzas seco a devorar tu sándwich.
+

@@ -1,0 +1,1993 @@
+{
+  "meta": {
+    "id": "el_poder_invisible_del_efecto_placebo",
+    "slug": "el_poder_invisible_del_efecto_placebo",
+    "temaResumen": "El poder invisible del efecto placebo: cómo la expectativa consciente activa la síntesis de endorfinas y opioides naturales en el tronco encefálico, incluso con placebos de etiqueta abierta",
+    "duracionObjetivo": [
+      62,
+      76
+    ],
+    "titulo": "El poder invisible del efecto placebo (Tu mente fabricando medicina)",
+    "titulo_corto": "El efecto placebo",
+    "gancho": "Si te dan una pastilla que es puro azúcar pero juran que te curará... ¿funciona? La respuesta de la ciencia es un rotundo sí.",
+    "genero": "Neurociencia y Medicina Científica",
+    "playlist": "Cerebro, Medicina y Fisiología Humana",
+    "fuentes": [
+      "Ted Kaptchuk et al. (Harvard Medical School, 2010) - Placebos without Deception: A Randomized Controlled Trial in Irritable Bowel Syndrome",
+      "Tor Wager et al. (Science, 2004) - Placebo-Induced Changes in fMRI in the Anticipation and Experience of Pain",
+      "Fabrizio Benedetti (Oxford University Press, 2014) - Placebo Effects: Understanding the Mechanisms in Health and Disease"
+    ]
+  },
+  "escenas": [
+    {
+      "id": 1,
+      "texto": "Si te dan una pastilla que es puro azúcar pero juran que te curará... ¿funciona? La respuesta de la ciencia médica es un rotundo y sorprendente sí.",
+      "icono": "Pill",
+      "colorIcono": "#EF4444",
+      "tituloVisual": "EL MISTERIO PLACEBO",
+      "composicionVisual": "escenario_ilustrado",
+      "escenario": "consultorio_medico_camilla_dolor",
+      "layout": "narrativo",
+      "transicion": "corte",
+      "efectosCamara": [
+        "punch",
+        "drift"
+      ],
+      "sfx": "sfx/sfx_placebo_dolor_alivio_shimmer.wav",
+      "volumenSfx": 0.25,
+      "palabrasClave": [
+        "pastilla",
+        "puro azúcar",
+        "curará",
+        "funciona",
+        "rotundo",
+        "sorprendente sí"
+      ],
+      "personajes": [
+        {
+          "id": "stickman_paciente_alivio",
+          "nombre": "Stickman",
+          "posicion": {
+            "x": -180,
+            "y": 90
+          },
+          "escala": 1.0,
+          "orientacion": "derecha",
+          "habla": true,
+          "capaZ": 20,
+          "acciones": [
+            {
+              "tipo": "personalizada",
+              "pasos": [
+                {
+                  "inicioProgreso": 0,
+                  "finProgreso": 0.35,
+                  "poseId": "scratching_head",
+                  "expresion": "scared",
+                  "posicion": {
+                    "x": -180,
+                    "y": 90
+                  },
+                  "curva": "suave",
+                  "procedural": "temblar",
+                  "hastaPalabra": "juran"
+                },
+                {
+                  "inicioProgreso": 0.35,
+                  "finProgreso": 0.7,
+                  "poseId": "explaining_both_hands",
+                  "expresion": "talking_enthusiastic",
+                  "posicion": {
+                    "x": -150,
+                    "y": 90
+                  },
+                  "curva": "suave",
+                  "procedural": "estatico",
+                  "desdePalabra": "juran",
+                  "hastaPalabra": "respuesta"
+                },
+                {
+                  "inicioProgreso": 0.7,
+                  "finProgreso": 1.0,
+                  "poseId": "standing_relaxed",
+                  "expresion": "smile_wide",
+                  "posicion": {
+                    "x": -140,
+                    "y": 90
+                  },
+                  "curva": "suave",
+                  "procedural": "estatico",
+                  "desdePalabra": "respuesta"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "duracionSegundos": 7.882,
+      "palabras": [
+        {
+          "palabra": "Si",
+          "inicioMs": 0,
+          "finMs": 200
+        },
+        {
+          "palabra": "te",
+          "inicioMs": 200,
+          "finMs": 320
+        },
+        {
+          "palabra": "dan",
+          "inicioMs": 320,
+          "finMs": 460
+        },
+        {
+          "palabra": "una",
+          "inicioMs": 460,
+          "finMs": 620
+        },
+        {
+          "palabra": "pastilla",
+          "inicioMs": 620,
+          "finMs": 1020
+        },
+        {
+          "palabra": "que",
+          "inicioMs": 1020,
+          "finMs": 1180
+        },
+        {
+          "palabra": "es",
+          "inicioMs": 1180,
+          "finMs": 1320
+        },
+        {
+          "palabra": "puro",
+          "inicioMs": 1320,
+          "finMs": 1480
+        },
+        {
+          "palabra": "azúcar",
+          "inicioMs": 1480,
+          "finMs": 1860
+        },
+        {
+          "palabra": "pero",
+          "inicioMs": 1860,
+          "finMs": 2160
+        },
+        {
+          "palabra": "juran",
+          "inicioMs": 2160,
+          "finMs": 2400
+        },
+        {
+          "palabra": "que",
+          "inicioMs": 2400,
+          "finMs": 2520
+        },
+        {
+          "palabra": "te",
+          "inicioMs": 2520,
+          "finMs": 2600
+        },
+        {
+          "palabra": "curará",
+          "inicioMs": 2600,
+          "finMs": 3100
+        },
+        {
+          "palabra": "funciona",
+          "inicioMs": 3100,
+          "finMs": 3600
+        },
+        {
+          "palabra": "La",
+          "inicioMs": 3840,
+          "finMs": 3920
+        },
+        {
+          "palabra": "respuesta",
+          "inicioMs": 3920,
+          "finMs": 4320
+        },
+        {
+          "palabra": "de",
+          "inicioMs": 4320,
+          "finMs": 4560
+        },
+        {
+          "palabra": "la",
+          "inicioMs": 4560,
+          "finMs": 4640
+        },
+        {
+          "palabra": "ciencia",
+          "inicioMs": 4640,
+          "finMs": 4980
+        },
+        {
+          "palabra": "médica",
+          "inicioMs": 4980,
+          "finMs": 5480
+        },
+        {
+          "palabra": "es",
+          "inicioMs": 5480,
+          "finMs": 5720
+        },
+        {
+          "palabra": "un",
+          "inicioMs": 5720,
+          "finMs": 5880
+        },
+        {
+          "palabra": "rotundo",
+          "inicioMs": 5880,
+          "finMs": 6260
+        },
+        {
+          "palabra": "y",
+          "inicioMs": 6260,
+          "finMs": 6380
+        },
+        {
+          "palabra": "sorprendente",
+          "inicioMs": 6380,
+          "finMs": 6920
+        },
+        {
+          "palabra": "sí",
+          "inicioMs": 6920,
+          "finMs": 7240
+        }
+      ],
+      "objetos": [
+        {
+          "id": "obj_placebo_1",
+          "propId": "rayo_dolor_cabeza",
+          "posicion": {
+            "x": -170,
+            "y": -295
+          },
+          "escala": 1.05,
+          "capaZ": 28,
+          "pasos": [
+            {
+              "inicioProgreso": 0.0,
+              "finProgreso": 0.5,
+              "hastaPalabra": "respuesta",
+              "posicion": {
+                "x": -170,
+                "y": -295
+              },
+              "escala": 1.05,
+              "estado": "dolor_intenso",
+              "curva": "suave"
+            },
+            {
+              "inicioProgreso": 0.5,
+              "finProgreso": 1.0,
+              "desdePalabra": "respuesta",
+              "posicion": {
+                "x": -145,
+                "y": -305
+              },
+              "escala": 1.13,
+              "estado": "alivio_azul",
+              "curva": "rebote"
+            }
+          ]
+        }
+      ],
+      "focoCamara": [
+        {
+          "inicioProgreso": 0.0,
+          "finProgreso": 0.36,
+          "x": -90,
+          "y": 20,
+          "escala": 1.12,
+          "curva": "suave"
+        },
+        {
+          "inicioProgreso": 0.36,
+          "finProgreso": 0.72,
+          "desdePalabra": "juran",
+          "x": 90,
+          "y": -20,
+          "escala": 1.22,
+          "curva": "suave"
+        },
+        {
+          "inicioProgreso": 0.72,
+          "finProgreso": 1.0,
+          "desdePalabra": "respuesta",
+          "x": 0,
+          "y": 0,
+          "escala": 1.0,
+          "curva": "suave"
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "texto": "Bienvenido al efecto placebo: la prueba definitiva de que tu cerebro tiene la capacidad biológica de fabricar sus propios medicamentos con solo creerlo.",
+      "icono": "Sparkles",
+      "colorIcono": "#F59E0B",
+      "tituloVisual": "CREER ES FABRICAR",
+      "composicionVisual": "plano_general",
+      "escenario": "consultorio_revelacion_frasco_azucar",
+      "layout": "narrativo",
+      "transicion": "zoom_in",
+      "efectosCamara": [
+        "punch",
+        "drift"
+      ],
+      "sfx": "sfx/sfx_placebo_record_scratch_azucar.wav",
+      "volumenSfx": 0.25,
+      "palabrasClave": [
+        "efecto placebo",
+        "cerebro",
+        "capacidad biológica",
+        "fabricar",
+        "medicamentos",
+        "creerlo"
+      ],
+      "personajes": [
+        {
+          "id": "stickman_desconcierto",
+          "nombre": "Stickman",
+          "posicion": {
+            "x": -220,
+            "y": 90
+          },
+          "escala": 1.0,
+          "orientacion": "derecha",
+          "habla": true,
+          "capaZ": 20,
+          "acciones": [
+            {
+              "tipo": "personalizada",
+              "pasos": [
+                {
+                  "inicioProgreso": 0,
+                  "finProgreso": 0.35,
+                  "poseId": "surprised_hands_up",
+                  "expresion": "shocked",
+                  "posicion": {
+                    "x": -220,
+                    "y": 90
+                  },
+                  "curva": "impacto",
+                  "procedural": "estatico",
+                  "hastaPalabra": "prueba"
+                },
+                {
+                  "inicioProgreso": 0.35,
+                  "finProgreso": 0.7,
+                  "poseId": "pointing_right",
+                  "expresion": "confused",
+                  "posicion": {
+                    "x": -180,
+                    "y": 90
+                  },
+                  "curva": "suave",
+                  "procedural": "estatico",
+                  "desdePalabra": "prueba",
+                  "hastaPalabra": "fabricar"
+                },
+                {
+                  "inicioProgreso": 0.7,
+                  "finProgreso": 1.0,
+                  "poseId": "scratching_head",
+                  "expresion": "analytical",
+                  "posicion": {
+                    "x": -190,
+                    "y": 90
+                  },
+                  "curva": "suave",
+                  "procedural": "estatico",
+                  "desdePalabra": "fabricar"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "duracionSegundos": 8.65,
+      "palabras": [
+        {
+          "palabra": "Bienvenido",
+          "inicioMs": 0,
+          "finMs": 560
+        },
+        {
+          "palabra": "al",
+          "inicioMs": 560,
+          "finMs": 660
+        },
+        {
+          "palabra": "efecto",
+          "inicioMs": 660,
+          "finMs": 960
+        },
+        {
+          "palabra": "placebo",
+          "inicioMs": 960,
+          "finMs": 1500
+        },
+        {
+          "palabra": "la",
+          "inicioMs": 1940,
+          "finMs": 2080
+        },
+        {
+          "palabra": "prueba",
+          "inicioMs": 2080,
+          "finMs": 2360
+        },
+        {
+          "palabra": "definitiva",
+          "inicioMs": 2360,
+          "finMs": 2980
+        },
+        {
+          "palabra": "de",
+          "inicioMs": 2980,
+          "finMs": 3100
+        },
+        {
+          "palabra": "que",
+          "inicioMs": 3100,
+          "finMs": 3200
+        },
+        {
+          "palabra": "tu",
+          "inicioMs": 3200,
+          "finMs": 3320
+        },
+        {
+          "palabra": "cerebro",
+          "inicioMs": 3320,
+          "finMs": 3680
+        },
+        {
+          "palabra": "tiene",
+          "inicioMs": 3680,
+          "finMs": 3940
+        },
+        {
+          "palabra": "la",
+          "inicioMs": 3940,
+          "finMs": 4080
+        },
+        {
+          "palabra": "capacidad",
+          "inicioMs": 4080,
+          "finMs": 4560
+        },
+        {
+          "palabra": "biológica",
+          "inicioMs": 4560,
+          "finMs": 5300
+        },
+        {
+          "palabra": "de",
+          "inicioMs": 5300,
+          "finMs": 5420
+        },
+        {
+          "palabra": "fabricar",
+          "inicioMs": 5420,
+          "finMs": 5900
+        },
+        {
+          "palabra": "sus",
+          "inicioMs": 5900,
+          "finMs": 6100
+        },
+        {
+          "palabra": "propios",
+          "inicioMs": 6100,
+          "finMs": 6420
+        },
+        {
+          "palabra": "medicamentos",
+          "inicioMs": 6420,
+          "finMs": 7040
+        },
+        {
+          "palabra": "con",
+          "inicioMs": 7040,
+          "finMs": 7240
+        },
+        {
+          "palabra": "solo",
+          "inicioMs": 7240,
+          "finMs": 7500
+        },
+        {
+          "palabra": "creerlo",
+          "inicioMs": 7500,
+          "finMs": 8080
+        }
+      ],
+      "objetos": [],
+      "focoCamara": [
+        {
+          "inicioProgreso": 0.0,
+          "finProgreso": 0.36,
+          "x": -90,
+          "y": 20,
+          "escala": 1.12,
+          "curva": "suave"
+        },
+        {
+          "inicioProgreso": 0.36,
+          "finProgreso": 0.72,
+          "desdePalabra": "prueba",
+          "x": 90,
+          "y": -20,
+          "escala": 1.22,
+          "curva": "suave"
+        },
+        {
+          "inicioProgreso": 0.72,
+          "finProgreso": 1.0,
+          "desdePalabra": "fabricar",
+          "x": 0,
+          "y": 0,
+          "escala": 1.0,
+          "curva": "suave"
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "texto": "No es magia ni te lo estás imaginando. Al tragar la cápsula, tu cerebro activa el ritual de la cura y envía una orden de emergencia inmediata a tu química interna.",
+      "icono": "Zap",
+      "colorIcono": "#38BDF8",
+      "tituloVisual": "EL RITUAL DE LA CURA",
+      "composicionVisual": "escenario_ilustrado",
+      "escenario": "microcosmos_esofago_red_nerviosa",
+      "layout": "narrativo",
+      "transicion": "zoom_in",
+      "efectosCamara": [
+        "punch",
+        "drift"
+      ],
+      "sfx": "sfx/sfx_placebo_red_nerviosa_fibra_optica.wav",
+      "volumenSfx": 0.24,
+      "palabrasClave": [
+        "magia",
+        "ritual de la cura",
+        "orden",
+        "emergencia",
+        "química interna"
+      ],
+      "personajes": [
+        {
+          "id": "stickman_red_nerviosa",
+          "nombre": "Stickman",
+          "posicion": {
+            "x": -240,
+            "y": 90
+          },
+          "escala": 0.95,
+          "orientacion": "derecha",
+          "habla": true,
+          "capaZ": 20,
+          "acciones": [
+            {
+              "tipo": "personalizada",
+              "pasos": [
+                {
+                  "inicioProgreso": 0,
+                  "finProgreso": 0.4,
+                  "poseId": "explaining_pointing_up",
+                  "expresion": "analytical",
+                  "posicion": {
+                    "x": -240,
+                    "y": 90
+                  },
+                  "curva": "suave",
+                  "procedural": "estatico",
+                  "hastaPalabra": "Al"
+                },
+                {
+                  "inicioProgreso": 0.4,
+                  "finProgreso": 0.75,
+                  "poseId": "presenting_object",
+                  "expresion": "talking_enthusiastic",
+                  "posicion": {
+                    "x": -200,
+                    "y": 90
+                  },
+                  "curva": "suave",
+                  "procedural": "estatico",
+                  "desdePalabra": "Al",
+                  "hastaPalabra": "envía"
+                },
+                {
+                  "inicioProgreso": 0.75,
+                  "finProgreso": 1.0,
+                  "poseId": "eureka_idea",
+                  "expresion": "eureka",
+                  "posicion": {
+                    "x": -180,
+                    "y": 90
+                  },
+                  "curva": "rebote",
+                  "procedural": "estatico",
+                  "desdePalabra": "envía"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "duracionSegundos": 8.89,
+      "palabras": [
+        {
+          "palabra": "No",
+          "inicioMs": 0,
+          "finMs": 240
+        },
+        {
+          "palabra": "es",
+          "inicioMs": 240,
+          "finMs": 380
+        },
+        {
+          "palabra": "magia",
+          "inicioMs": 380,
+          "finMs": 740
+        },
+        {
+          "palabra": "ni",
+          "inicioMs": 740,
+          "finMs": 900
+        },
+        {
+          "palabra": "te",
+          "inicioMs": 900,
+          "finMs": 1020
+        },
+        {
+          "palabra": "lo",
+          "inicioMs": 1020,
+          "finMs": 1120
+        },
+        {
+          "palabra": "estás",
+          "inicioMs": 1120,
+          "finMs": 1320
+        },
+        {
+          "palabra": "imaginando",
+          "inicioMs": 1320,
+          "finMs": 2040
+        },
+        {
+          "palabra": "Al",
+          "inicioMs": 2260,
+          "finMs": 2360
+        },
+        {
+          "palabra": "tragar",
+          "inicioMs": 2360,
+          "finMs": 2640
+        },
+        {
+          "palabra": "la",
+          "inicioMs": 2640,
+          "finMs": 2780
+        },
+        {
+          "palabra": "cápsula",
+          "inicioMs": 2780,
+          "finMs": 3260
+        },
+        {
+          "palabra": "tu",
+          "inicioMs": 3460,
+          "finMs": 3520
+        },
+        {
+          "palabra": "cerebro",
+          "inicioMs": 3520,
+          "finMs": 3920
+        },
+        {
+          "palabra": "activa",
+          "inicioMs": 3920,
+          "finMs": 4220
+        },
+        {
+          "palabra": "el",
+          "inicioMs": 4220,
+          "finMs": 4300
+        },
+        {
+          "palabra": "ritual",
+          "inicioMs": 4300,
+          "finMs": 4540
+        },
+        {
+          "palabra": "de",
+          "inicioMs": 4540,
+          "finMs": 4700
+        },
+        {
+          "palabra": "la",
+          "inicioMs": 4700,
+          "finMs": 4800
+        },
+        {
+          "palabra": "cura",
+          "inicioMs": 4800,
+          "finMs": 5140
+        },
+        {
+          "palabra": "y",
+          "inicioMs": 5140,
+          "finMs": 5320
+        },
+        {
+          "palabra": "envía",
+          "inicioMs": 5320,
+          "finMs": 5580
+        },
+        {
+          "palabra": "una",
+          "inicioMs": 5580,
+          "finMs": 5740
+        },
+        {
+          "palabra": "orden",
+          "inicioMs": 5740,
+          "finMs": 5960
+        },
+        {
+          "palabra": "de",
+          "inicioMs": 5960,
+          "finMs": 6140
+        },
+        {
+          "palabra": "emergencia",
+          "inicioMs": 6140,
+          "finMs": 6620
+        },
+        {
+          "palabra": "inmediata",
+          "inicioMs": 6620,
+          "finMs": 7100
+        },
+        {
+          "palabra": "a",
+          "inicioMs": 7100,
+          "finMs": 7340
+        },
+        {
+          "palabra": "tu",
+          "inicioMs": 7340,
+          "finMs": 7440
+        },
+        {
+          "palabra": "química",
+          "inicioMs": 7440,
+          "finMs": 7780
+        },
+        {
+          "palabra": "interna",
+          "inicioMs": 7780,
+          "finMs": 8280
+        }
+      ],
+      "objetos": [
+        {
+          "id": "obj_placebo_3",
+          "propId": "capsula_placebo_roja_blanca",
+          "posicion": {
+            "x": 150,
+            "y": -30
+          },
+          "escala": 1.25,
+          "capaZ": 28,
+          "pasos": [
+            {
+              "inicioProgreso": 0.0,
+              "finProgreso": 0.5,
+              "hastaPalabra": "envía",
+              "posicion": {
+                "x": 150,
+                "y": -30
+              },
+              "escala": 1.25,
+              "estado": "intacta",
+              "curva": "suave"
+            },
+            {
+              "inicioProgreso": 0.5,
+              "finProgreso": 1.0,
+              "desdePalabra": "envía",
+              "posicion": {
+                "x": 135,
+                "y": -20
+              },
+              "escala": 1.35,
+              "estado": "activacion_neural",
+              "curva": "rebote"
+            }
+          ]
+        }
+      ],
+      "focoCamara": [
+        {
+          "inicioProgreso": 0.0,
+          "finProgreso": 0.36,
+          "x": -90,
+          "y": 20,
+          "escala": 1.12,
+          "curva": "suave"
+        },
+        {
+          "inicioProgreso": 0.36,
+          "finProgreso": 0.72,
+          "desdePalabra": "Al",
+          "x": 90,
+          "y": -20,
+          "escala": 1.22,
+          "curva": "suave"
+        },
+        {
+          "inicioProgreso": 0.72,
+          "finProgreso": 1.0,
+          "desdePalabra": "envía",
+          "x": 0,
+          "y": 0,
+          "escala": 1.0,
+          "curva": "suave"
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "texto": "En cuestión de segundos, la sustancia gris del tronco encefálico libera endorfinas y opioides naturales: analgésicos idénticos a la morfina sintetizados por tu propio cuerpo.",
+      "icono": "Key",
+      "colorIcono": "#FACC15",
+      "tituloVisual": "FARMACIA INTERNA",
+      "composicionVisual": "plano_general",
+      "escenario": "tronco_encefalico_farmacia_interna",
+      "layout": "narrativo",
+      "transicion": "zoom_in",
+      "efectosCamara": [
+        "punch",
+        "drift"
+      ],
+      "sfx": "sfx/sfx_placebo_farmacia_candados_endorfinas.wav",
+      "volumenSfx": 0.25,
+      "palabrasClave": [
+        "sustancia gris",
+        "endorfinas",
+        "opioides naturales",
+        "analgésicos",
+        "morfina",
+        "propio cuerpo"
+      ],
+      "personajes": [
+        {
+          "id": "stickman_boticario",
+          "nombre": "Stickman Farmacéutico",
+          "posicion": {
+            "x": -220,
+            "y": 90
+          },
+          "escala": 1.0,
+          "orientacion": "derecha",
+          "habla": true,
+          "capaZ": 20,
+          "acciones": [
+            {
+              "tipo": "personalizada",
+              "pasos": [
+                {
+                  "inicioProgreso": 0,
+                  "finProgreso": 0.35,
+                  "poseId": "showing_both_hands",
+                  "expresion": "talking_enthusiastic",
+                  "posicion": {
+                    "x": -220,
+                    "y": 90
+                  },
+                  "curva": "suave",
+                  "procedural": "estatico",
+                  "hastaPalabra": "libera"
+                },
+                {
+                  "inicioProgreso": 0.35,
+                  "finProgreso": 0.7,
+                  "poseId": "explaining_both_hands",
+                  "expresion": "smile_wide",
+                  "posicion": {
+                    "x": -180,
+                    "y": 90
+                  },
+                  "curva": "suave",
+                  "procedural": "manipular",
+                  "desdePalabra": "libera",
+                  "hastaPalabra": "analgésicos"
+                },
+                {
+                  "inicioProgreso": 0.7,
+                  "finProgreso": 1.0,
+                  "poseId": "celebrating_arms_up",
+                  "expresion": "proud",
+                  "posicion": {
+                    "x": -160,
+                    "y": 90
+                  },
+                  "curva": "rebote",
+                  "procedural": "estatico",
+                  "desdePalabra": "analgésicos"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "duracionSegundos": 9.562,
+      "palabras": [
+        {
+          "palabra": "En",
+          "inicioMs": 0,
+          "finMs": 200
+        },
+        {
+          "palabra": "cuestión",
+          "inicioMs": 200,
+          "finMs": 480
+        },
+        {
+          "palabra": "de",
+          "inicioMs": 480,
+          "finMs": 640
+        },
+        {
+          "palabra": "segundos",
+          "inicioMs": 640,
+          "finMs": 1060
+        },
+        {
+          "palabra": "la",
+          "inicioMs": 1400,
+          "finMs": 1420
+        },
+        {
+          "palabra": "sustancia",
+          "inicioMs": 1420,
+          "finMs": 1860
+        },
+        {
+          "palabra": "gris",
+          "inicioMs": 1860,
+          "finMs": 2140
+        },
+        {
+          "palabra": "del",
+          "inicioMs": 2140,
+          "finMs": 2300
+        },
+        {
+          "palabra": "tronco",
+          "inicioMs": 2300,
+          "finMs": 2600
+        },
+        {
+          "palabra": "encefálico",
+          "inicioMs": 2600,
+          "finMs": 3220
+        },
+        {
+          "palabra": "libera",
+          "inicioMs": 3220,
+          "finMs": 3560
+        },
+        {
+          "palabra": "endorfinas",
+          "inicioMs": 3560,
+          "finMs": 4080
+        },
+        {
+          "palabra": "y",
+          "inicioMs": 4080,
+          "finMs": 4200
+        },
+        {
+          "palabra": "opioides",
+          "inicioMs": 4200,
+          "finMs": 4500
+        },
+        {
+          "palabra": "naturales",
+          "inicioMs": 4500,
+          "finMs": 5380
+        },
+        {
+          "palabra": "analgésicos",
+          "inicioMs": 5520,
+          "finMs": 6180
+        },
+        {
+          "palabra": "idénticos",
+          "inicioMs": 6180,
+          "finMs": 6680
+        },
+        {
+          "palabra": "a",
+          "inicioMs": 6680,
+          "finMs": 6840
+        },
+        {
+          "palabra": "la",
+          "inicioMs": 6840,
+          "finMs": 6880
+        },
+        {
+          "palabra": "morfina",
+          "inicioMs": 6880,
+          "finMs": 7300
+        },
+        {
+          "palabra": "sintetizados",
+          "inicioMs": 7300,
+          "finMs": 8060
+        },
+        {
+          "palabra": "por",
+          "inicioMs": 8060,
+          "finMs": 8300
+        },
+        {
+          "palabra": "tu",
+          "inicioMs": 8300,
+          "finMs": 8400
+        },
+        {
+          "palabra": "propio",
+          "inicioMs": 8400,
+          "finMs": 8660
+        },
+        {
+          "palabra": "cuerpo",
+          "inicioMs": 8660,
+          "finMs": 8960
+        }
+      ],
+      "objetos": [
+        {
+          "id": "obj_placebo_4",
+          "propId": "manivela_valvula_farmacia_interna",
+          "posicion": {
+            "x": 155,
+            "y": -20
+          },
+          "escala": 1.25,
+          "capaZ": 28,
+          "pasos": [
+            {
+              "inicioProgreso": 0.0,
+              "finProgreso": 0.5,
+              "hastaPalabra": "analgésicos",
+              "posicion": {
+                "x": 155,
+                "y": -20
+              },
+              "escala": 1.25,
+              "estado": "cerrada",
+              "curva": "suave"
+            },
+            {
+              "inicioProgreso": 0.5,
+              "finProgreso": 1.0,
+              "desdePalabra": "analgésicos",
+              "posicion": {
+                "x": 140,
+                "y": -10
+              },
+              "escala": 1.35,
+              "estado": "abierta_liberando",
+              "curva": "rebote"
+            }
+          ]
+        }
+      ],
+      "focoCamara": [
+        {
+          "inicioProgreso": 0.0,
+          "finProgreso": 0.36,
+          "x": -90,
+          "y": 20,
+          "escala": 1.12,
+          "curva": "suave"
+        },
+        {
+          "inicioProgreso": 0.36,
+          "finProgreso": 0.72,
+          "desdePalabra": "libera",
+          "x": 90,
+          "y": -20,
+          "escala": 1.22,
+          "curva": "suave"
+        },
+        {
+          "inicioProgreso": 0.72,
+          "finProgreso": 1.0,
+          "desdePalabra": "analgésicos",
+          "x": 0,
+          "y": 0,
+          "escala": 1.0,
+          "curva": "suave"
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "texto": "Y no solo calma el dolor: los estudios clínicos en hospitales demuestran que también dispara dopamina, reduce la inflamación y baja la presión arterial, todo porque tu mente espera sanar.",
+      "icono": "Activity",
+      "colorIcono": "#10B981",
+      "tituloVisual": "EFECTOS FÍSICOS REALES",
+      "composicionVisual": "escenario_ilustrado",
+      "escenario": "torso_radiografico_medidores_salud",
+      "layout": "narrativo",
+      "transicion": "whip_right",
+      "efectosCamara": [
+        "punch",
+        "drift"
+      ],
+      "sfx": "sfx/sfx_placebo_monitor_cardiaco_dopamina.wav",
+      "volumenSfx": 0.24,
+      "palabrasClave": [
+        "calma el dolor",
+        "dopamina",
+        "inflamación",
+        "presión arterial",
+        "anticipas",
+        "mejorar"
+      ],
+      "personajes": [
+        {
+          "id": "stickman_salud_relax",
+          "nombre": "Stickman",
+          "posicion": {
+            "x": -200,
+            "y": 90
+          },
+          "escala": 1.0,
+          "orientacion": "derecha",
+          "habla": true,
+          "capaZ": 20,
+          "acciones": [
+            {
+              "tipo": "personalizada",
+              "pasos": [
+                {
+                  "inicioProgreso": 0,
+                  "finProgreso": 0.4,
+                  "poseId": "holding_both_hands",
+                  "expresion": "smile_soft",
+                  "posicion": {
+                    "x": -200,
+                    "y": 90
+                  },
+                  "curva": "suave",
+                  "procedural": "estatico",
+                  "hastaPalabra": "también"
+                },
+                {
+                  "inicioProgreso": 0.4,
+                  "finProgreso": 0.75,
+                  "poseId": "thumbs_up_approval",
+                  "expresion": "talking_enthusiastic",
+                  "posicion": {
+                    "x": -160,
+                    "y": 90
+                  },
+                  "curva": "suave",
+                  "procedural": "estatico",
+                  "desdePalabra": "también",
+                  "hastaPalabra": "baja"
+                },
+                {
+                  "inicioProgreso": 0.75,
+                  "finProgreso": 1.0,
+                  "poseId": "standing_confident",
+                  "expresion": "smile_wide",
+                  "posicion": {
+                    "x": -170,
+                    "y": 90
+                  },
+                  "curva": "suave",
+                  "procedural": "estatico",
+                  "desdePalabra": "baja"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "duracionSegundos": 10.594,
+      "palabras": [
+        {
+          "palabra": "Y",
+          "inicioMs": 0,
+          "finMs": 180
+        },
+        {
+          "palabra": "no",
+          "inicioMs": 180,
+          "finMs": 300
+        },
+        {
+          "palabra": "solo",
+          "inicioMs": 300,
+          "finMs": 540
+        },
+        {
+          "palabra": "calma",
+          "inicioMs": 540,
+          "finMs": 880
+        },
+        {
+          "palabra": "el",
+          "inicioMs": 880,
+          "finMs": 1000
+        },
+        {
+          "palabra": "dolor",
+          "inicioMs": 1000,
+          "finMs": 1260
+        },
+        {
+          "palabra": "los",
+          "inicioMs": 1580,
+          "finMs": 1740
+        },
+        {
+          "palabra": "estudios",
+          "inicioMs": 1740,
+          "finMs": 2120
+        },
+        {
+          "palabra": "clínicos",
+          "inicioMs": 2120,
+          "finMs": 2540
+        },
+        {
+          "palabra": "en",
+          "inicioMs": 2540,
+          "finMs": 2720
+        },
+        {
+          "palabra": "hospitales",
+          "inicioMs": 2720,
+          "finMs": 3400
+        },
+        {
+          "palabra": "demuestran",
+          "inicioMs": 3400,
+          "finMs": 4000
+        },
+        {
+          "palabra": "que",
+          "inicioMs": 4000,
+          "finMs": 4160
+        },
+        {
+          "palabra": "también",
+          "inicioMs": 4160,
+          "finMs": 4500
+        },
+        {
+          "palabra": "dispara",
+          "inicioMs": 4500,
+          "finMs": 4900
+        },
+        {
+          "palabra": "dopamina",
+          "inicioMs": 4900,
+          "finMs": 5440
+        },
+        {
+          "palabra": "reduce",
+          "inicioMs": 5660,
+          "finMs": 5880
+        },
+        {
+          "palabra": "la",
+          "inicioMs": 5880,
+          "finMs": 6080
+        },
+        {
+          "palabra": "inflamación",
+          "inicioMs": 6080,
+          "finMs": 6620
+        },
+        {
+          "palabra": "y",
+          "inicioMs": 6620,
+          "finMs": 6900
+        },
+        {
+          "palabra": "baja",
+          "inicioMs": 6900,
+          "finMs": 7080
+        },
+        {
+          "palabra": "la",
+          "inicioMs": 7080,
+          "finMs": 7220
+        },
+        {
+          "palabra": "presión",
+          "inicioMs": 7220,
+          "finMs": 7520
+        },
+        {
+          "palabra": "arterial",
+          "inicioMs": 7520,
+          "finMs": 8060
+        },
+        {
+          "palabra": "todo",
+          "inicioMs": 8340,
+          "finMs": 8580
+        },
+        {
+          "palabra": "porque",
+          "inicioMs": 8580,
+          "finMs": 8860
+        },
+        {
+          "palabra": "tu",
+          "inicioMs": 8860,
+          "finMs": 8900
+        },
+        {
+          "palabra": "mente",
+          "inicioMs": 8860,
+          "finMs": 9260
+        },
+        {
+          "palabra": "espera",
+          "inicioMs": 9260,
+          "finMs": 9540
+        },
+        {
+          "palabra": "sanar",
+          "inicioMs": 9540,
+          "finMs": 10000
+        }
+      ],
+      "objetos": [
+        {
+          "id": "obj_placebo_5",
+          "propId": "monitor_presion_arterial_hud",
+          "posicion": {
+            "x": 155,
+            "y": -25
+          },
+          "escala": 1.25,
+          "capaZ": 28,
+          "pasos": [
+            {
+              "inicioProgreso": 0.0,
+              "finProgreso": 0.5,
+              "hastaPalabra": "baja",
+              "posicion": {
+                "x": 155,
+                "y": -25
+              },
+              "escala": 1.25,
+              "estado": "monitoreo",
+              "curva": "suave"
+            },
+            {
+              "inicioProgreso": 0.5,
+              "finProgreso": 1.0,
+              "desdePalabra": "baja",
+              "posicion": {
+                "x": 135,
+                "y": -15
+              },
+              "escala": 1.35,
+              "estado": "estable",
+              "curva": "rebote"
+            }
+          ]
+        }
+      ],
+      "focoCamara": [
+        {
+          "inicioProgreso": 0.0,
+          "finProgreso": 0.36,
+          "x": -90,
+          "y": 20,
+          "escala": 1.12,
+          "curva": "suave"
+        },
+        {
+          "inicioProgreso": 0.36,
+          "finProgreso": 0.72,
+          "desdePalabra": "también",
+          "x": 90,
+          "y": -20,
+          "escala": 1.22,
+          "curva": "suave"
+        },
+        {
+          "inicioProgreso": 0.72,
+          "finProgreso": 1.0,
+          "desdePalabra": "baja",
+          "x": 0,
+          "y": 0,
+          "escala": 1.0,
+          "curva": "suave"
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "texto": "Lo más loco es que los científicos han probado darle placebos a pacientes diciéndoles abiertamente que es azúcar... ¡y el cuerpo activa la respuesta biológica exactamente igual!",
+      "icono": "Eye",
+      "colorIcono": "#38BDF8",
+      "tituloVisual": "PLACEBO ABIERTO",
+      "composicionVisual": "plano_general",
+      "escenario": "consultorio_placebo_etiqueta_abierta",
+      "layout": "narrativo",
+      "transicion": "zoom_in",
+      "efectosCamara": [
+        "punch",
+        "drift"
+      ],
+      "sfx": "sfx/sfx_placebo_powerup_etiqueta_abierta.wav",
+      "volumenSfx": 0.25,
+      "palabrasClave": [
+        "científicos",
+        "abiertamente",
+        "azúcar",
+        "cuerpo",
+        "respuesta biológica",
+        "exactamente igual"
+      ],
+      "personajes": [
+        {
+          "id": "stickman_placebo_abierto",
+          "nombre": "Stickman",
+          "posicion": {
+            "x": -220,
+            "y": 90
+          },
+          "escala": 1.0,
+          "orientacion": "derecha",
+          "habla": true,
+          "capaZ": 20,
+          "acciones": [
+            {
+              "tipo": "personalizada",
+              "pasos": [
+                {
+                  "inicioProgreso": 0,
+                  "finProgreso": 0.4,
+                  "poseId": "laughing_belly",
+                  "expresion": "laugh",
+                  "posicion": {
+                    "x": -220,
+                    "y": 90
+                  },
+                  "curva": "suave",
+                  "procedural": "caminar",
+                  "hastaPalabra": "diciéndoles"
+                },
+                {
+                  "inicioProgreso": 0.4,
+                  "finProgreso": 0.75,
+                  "poseId": "explaining_pointing_up",
+                  "expresion": "eureka",
+                  "posicion": {
+                    "x": -180,
+                    "y": 90
+                  },
+                  "curva": "suave",
+                  "procedural": "estatico",
+                  "desdePalabra": "diciéndoles",
+                  "hastaPalabra": "activa"
+                },
+                {
+                  "inicioProgreso": 0.75,
+                  "finProgreso": 1.0,
+                  "poseId": "surprised_hands_up",
+                  "expresion": "smile_wide",
+                  "posicion": {
+                    "x": -170,
+                    "y": 90
+                  },
+                  "curva": "rebote",
+                  "procedural": "estatico",
+                  "desdePalabra": "activa"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "duracionSegundos": 9.922,
+      "palabras": [
+        {
+          "palabra": "Lo",
+          "inicioMs": 0,
+          "finMs": 200
+        },
+        {
+          "palabra": "más",
+          "inicioMs": 200,
+          "finMs": 400
+        },
+        {
+          "palabra": "loco",
+          "inicioMs": 400,
+          "finMs": 760
+        },
+        {
+          "palabra": "es",
+          "inicioMs": 760,
+          "finMs": 940
+        },
+        {
+          "palabra": "que",
+          "inicioMs": 940,
+          "finMs": 1060
+        },
+        {
+          "palabra": "los",
+          "inicioMs": 1060,
+          "finMs": 1180
+        },
+        {
+          "palabra": "científicos",
+          "inicioMs": 1180,
+          "finMs": 1760
+        },
+        {
+          "palabra": "han",
+          "inicioMs": 1760,
+          "finMs": 1880
+        },
+        {
+          "palabra": "probado",
+          "inicioMs": 1880,
+          "finMs": 2200
+        },
+        {
+          "palabra": "darle",
+          "inicioMs": 2200,
+          "finMs": 2520
+        },
+        {
+          "palabra": "placebos",
+          "inicioMs": 2520,
+          "finMs": 2980
+        },
+        {
+          "palabra": "a",
+          "inicioMs": 2980,
+          "finMs": 3040
+        },
+        {
+          "palabra": "pacientes",
+          "inicioMs": 3040,
+          "finMs": 3520
+        },
+        {
+          "palabra": "diciéndoles",
+          "inicioMs": 3520,
+          "finMs": 4180
+        },
+        {
+          "palabra": "abiertamente",
+          "inicioMs": 4180,
+          "finMs": 4720
+        },
+        {
+          "palabra": "que",
+          "inicioMs": 4720,
+          "finMs": 4980
+        },
+        {
+          "palabra": "es",
+          "inicioMs": 4980,
+          "finMs": 5120
+        },
+        {
+          "palabra": "azúcar",
+          "inicioMs": 5120,
+          "finMs": 5720
+        },
+        {
+          "palabra": "y",
+          "inicioMs": 5720,
+          "finMs": 6120
+        },
+        {
+          "palabra": "el",
+          "inicioMs": 6120,
+          "finMs": 6200
+        },
+        {
+          "palabra": "cuerpo",
+          "inicioMs": 6200,
+          "finMs": 6400
+        },
+        {
+          "palabra": "activa",
+          "inicioMs": 6400,
+          "finMs": 7000
+        },
+        {
+          "palabra": "la",
+          "inicioMs": 7000,
+          "finMs": 7120
+        },
+        {
+          "palabra": "respuesta",
+          "inicioMs": 7120,
+          "finMs": 7540
+        },
+        {
+          "palabra": "biológica",
+          "inicioMs": 7540,
+          "finMs": 8240
+        },
+        {
+          "palabra": "exactamente",
+          "inicioMs": 8240,
+          "finMs": 8740
+        },
+        {
+          "palabra": "igual",
+          "inicioMs": 8740,
+          "finMs": 9560
+        }
+      ],
+      "objetos": [],
+      "focoCamara": [
+        {
+          "inicioProgreso": 0.0,
+          "finProgreso": 0.36,
+          "x": -90,
+          "y": 20,
+          "escala": 1.12,
+          "curva": "suave"
+        },
+        {
+          "inicioProgreso": 0.36,
+          "finProgreso": 0.72,
+          "desdePalabra": "diciéndoles",
+          "x": 90,
+          "y": -20,
+          "escala": 1.22,
+          "curva": "suave"
+        },
+        {
+          "inicioProgreso": 0.72,
+          "finProgreso": 1.0,
+          "desdePalabra": "activa",
+          "x": 0,
+          "y": 0,
+          "escala": 1.0,
+          "curva": "suave"
+        }
+      ]
+    },
+    {
+      "id": 7,
+      "texto": "Así que nunca subestimes el poder de tu mente: la farmacia más sofisticada, precisa y poderosa del planeta no está en la esquina... siempre estuvo instalada adentro de ti.",
+      "icono": "Brain",
+      "colorIcono": "#F59E0B",
+      "tituloVisual": "TU PROPIA FARMACIA",
+      "composicionVisual": "escenario_ilustrado",
+      "escenario": "consultorio_cierre_triunfal_iris",
+      "layout": "narrativo",
+      "transicion": "zoom_in",
+      "efectosCamara": [
+        "punch",
+        "drift"
+      ],
+      "sfx": "sfx/sfx_placebo_cierre_triunfal_farmacia_interna.wav",
+      "volumenSfx": 0.26,
+      "palabrasClave": [
+        "mente",
+        "farmacia",
+        "sofisticada",
+        "poderosa",
+        "planeta",
+        "adentro de ti"
+      ],
+      "personajes": [
+        {
+          "id": "stickman_cierre_sien",
+          "nombre": "Stickman",
+          "posicion": {
+            "x": -180,
+            "y": 90
+          },
+          "escala": 1.0,
+          "orientacion": "derecha",
+          "habla": true,
+          "capaZ": 20,
+          "acciones": [
+            {
+              "tipo": "personalizada",
+              "pasos": [
+                {
+                  "inicioProgreso": 0,
+                  "finProgreso": 0.35,
+                  "poseId": "standing_confident",
+                  "expresion": "smile_wide",
+                  "posicion": {
+                    "x": -180,
+                    "y": 90
+                  },
+                  "curva": "suave",
+                  "procedural": "estatico",
+                  "hastaPalabra": "farmacia"
+                },
+                {
+                  "inicioProgreso": 0.35,
+                  "finProgreso": 0.7,
+                  "poseId": "pointing_at_viewer",
+                  "expresion": "talking_enthusiastic",
+                  "posicion": {
+                    "x": -150,
+                    "y": 90
+                  },
+                  "curva": "suave",
+                  "procedural": "estatico",
+                  "desdePalabra": "farmacia",
+                  "hastaPalabra": "siempre"
+                },
+                {
+                  "inicioProgreso": 0.7,
+                  "finProgreso": 1.0,
+                  "poseId": "waving_goodbye",
+                  "expresion": "proud",
+                  "posicion": {
+                    "x": -120,
+                    "y": 90
+                  },
+                  "curva": "suave",
+                  "procedural": "caminar",
+                  "desdePalabra": "siempre"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "duracionSegundos": 8.65,
+      "palabras": [
+        {
+          "palabra": "Así",
+          "inicioMs": 0,
+          "finMs": 300
+        },
+        {
+          "palabra": "que",
+          "inicioMs": 300,
+          "finMs": 420
+        },
+        {
+          "palabra": "nunca",
+          "inicioMs": 420,
+          "finMs": 600
+        },
+        {
+          "palabra": "subestimes",
+          "inicioMs": 600,
+          "finMs": 1100
+        },
+        {
+          "palabra": "el",
+          "inicioMs": 1100,
+          "finMs": 1300
+        },
+        {
+          "palabra": "poder",
+          "inicioMs": 1300,
+          "finMs": 1500
+        },
+        {
+          "palabra": "de",
+          "inicioMs": 1500,
+          "finMs": 1680
+        },
+        {
+          "palabra": "tu",
+          "inicioMs": 1680,
+          "finMs": 1760
+        },
+        {
+          "palabra": "mente",
+          "inicioMs": 1760,
+          "finMs": 1960
+        },
+        {
+          "palabra": "la",
+          "inicioMs": 2160,
+          "finMs": 2200
+        },
+        {
+          "palabra": "farmacia",
+          "inicioMs": 2200,
+          "finMs": 2540
+        },
+        {
+          "palabra": "más",
+          "inicioMs": 2540,
+          "finMs": 2700
+        },
+        {
+          "palabra": "sofisticada",
+          "inicioMs": 2700,
+          "finMs": 3480
+        },
+        {
+          "palabra": "precisa",
+          "inicioMs": 3780,
+          "finMs": 4180
+        },
+        {
+          "palabra": "y",
+          "inicioMs": 4180,
+          "finMs": 4420
+        },
+        {
+          "palabra": "poderosa",
+          "inicioMs": 4420,
+          "finMs": 4820
+        },
+        {
+          "palabra": "del",
+          "inicioMs": 4820,
+          "finMs": 4960
+        },
+        {
+          "palabra": "planeta",
+          "inicioMs": 4960,
+          "finMs": 5300
+        },
+        {
+          "palabra": "no",
+          "inicioMs": 5300,
+          "finMs": 5540
+        },
+        {
+          "palabra": "está",
+          "inicioMs": 5540,
+          "finMs": 5720
+        },
+        {
+          "palabra": "en",
+          "inicioMs": 5720,
+          "finMs": 5820
+        },
+        {
+          "palabra": "la",
+          "inicioMs": 5820,
+          "finMs": 5860
+        },
+        {
+          "palabra": "esquina",
+          "inicioMs": 5860,
+          "finMs": 6660
+        },
+        {
+          "palabra": "siempre",
+          "inicioMs": 6660,
+          "finMs": 6700
+        },
+        {
+          "palabra": "estuvo",
+          "inicioMs": 6660,
+          "finMs": 6940
+        },
+        {
+          "palabra": "instalada",
+          "inicioMs": 6940,
+          "finMs": 7400
+        },
+        {
+          "palabra": "adentro",
+          "inicioMs": 7400,
+          "finMs": 7760
+        },
+        {
+          "palabra": "de",
+          "inicioMs": 7760,
+          "finMs": 7860
+        },
+        {
+          "palabra": "ti",
+          "inicioMs": 7860,
+          "finMs": 8040
+        }
+      ],
+      "objetos": [
+        {
+          "id": "obj_placebo_7",
+          "propId": "esferas_endorfinas_flotantes",
+          "posicion": {
+            "x": 150,
+            "y": -40
+          },
+          "escala": 1.25,
+          "capaZ": 28,
+          "pasos": [
+            {
+              "inicioProgreso": 0.0,
+              "finProgreso": 0.5,
+              "hastaPalabra": "siempre",
+              "posicion": {
+                "x": 150,
+                "y": -40
+              },
+              "escala": 1.25,
+              "estado": "sintesis",
+              "curva": "suave"
+            },
+            {
+              "inicioProgreso": 0.5,
+              "finProgreso": 1.0,
+              "desdePalabra": "siempre",
+              "posicion": {
+                "x": 130,
+                "y": -30
+              },
+              "escala": 1.35,
+              "estado": "liberacion",
+              "curva": "rebote"
+            }
+          ]
+        }
+      ],
+      "focoCamara": [
+        {
+          "inicioProgreso": 0.0,
+          "finProgreso": 0.36,
+          "x": -90,
+          "y": 20,
+          "escala": 1.12,
+          "curva": "suave"
+        },
+        {
+          "inicioProgreso": 0.36,
+          "finProgreso": 0.72,
+          "desdePalabra": "farmacia",
+          "x": 90,
+          "y": -20,
+          "escala": 1.22,
+          "curva": "suave"
+        },
+        {
+          "inicioProgreso": 0.72,
+          "finProgreso": 1.0,
+          "desdePalabra": "siempre",
+          "x": 0,
+          "y": 0,
+          "escala": 1.0,
+          "curva": "suave"
+        }
+      ]
+    }
+  ]
+}

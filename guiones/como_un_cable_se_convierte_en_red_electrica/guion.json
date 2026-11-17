@@ -1,0 +1,1980 @@
+{
+  "meta": {
+    "id": "como_un_cable_se_convierte_en_red_electrica",
+    "slug": "como_un_cable_se_convierte_en_red_electrica",
+    "titulo": "Cómo un cable suelto se convierte en una red eléctrica",
+    "titulo_corto": "La trampa del voltaje",
+    "temaResumen": "Por qué un cable largo no enciende un foco: caída de tensión, efecto Joule y la solución de alta tensión con transformadores.",
+    "duracionObjetivo": [
+      62,
+      76
+    ],
+    "gancho": "Conectas un foco al final de un cable larguísimo tendido por el patio... y la bombilla apenas brilla como una cerilla moribunda.",
+    "fuentes": [
+      "Leyes de Ohm y Joule",
+      "Principio de inducción y transformadores de Faraday",
+      "Guerra de las Corrientes"
+    ],
+    "genero": "Educación y Ciencia"
+  },
+  "escenas": [
+    {
+      "id": 1,
+      "texto": "Conectas un foco al final de un cable larguísimo tendido por el patio... y la bombilla apenas brilla como una cerilla moribunda. ¿A dónde diablos se esfumó toda tu electricidad?",
+      "icono": "Zap",
+      "colorIcono": "#F59E0B",
+      "tituloVisual": "LA BOMBILLA APAGADA",
+      "composicionVisual": "plano_general",
+      "escenario": "campo_noche_cable_foco_moribundo",
+      "transicion": "zoom_in",
+      "efectosCamara": [
+        "drift",
+        "shake"
+      ],
+      "sfx": "sfx/sfx_interruptor_clic_zumbido_sordo.wav",
+      "volumenSfx": 0.24,
+      "palabrasClave": [
+        "cable larguísimo",
+        "cerilla moribunda",
+        "toda tu electricidad"
+      ],
+      "focoCamara": [
+        {
+          "x": -160,
+          "y": -50,
+          "escala": 1.15,
+          "inicioProgreso": 0.0,
+          "finProgreso": 0.32,
+          "curva": "suave"
+        },
+        {
+          "x": 220,
+          "y": 80,
+          "escala": 1.38,
+          "inicioProgreso": 0.32,
+          "finProgreso": 0.74,
+          "curva": "impacto"
+        },
+        {
+          "x": 40,
+          "y": 0,
+          "escala": 1.12,
+          "inicioProgreso": 0.74,
+          "finProgreso": 1.0,
+          "curva": "suave"
+        }
+      ],
+      "personajes": [
+        {
+          "id": "narrador",
+          "nombre": "Electricista",
+          "posicion": {
+            "x": -280,
+            "y": -95
+          },
+          "escala": 0.96,
+          "orientacion": "derecha",
+          "habla": true,
+          "capaZ": 22,
+          "acciones": [
+            {
+              "tipo": "personalizada",
+              "pasos": [
+                {
+                  "inicioProgreso": 0.0,
+                  "finProgreso": 0.35,
+                  "poseId": "pushing",
+                  "expresion": "talking_enthusiastic",
+                  "posicion": {
+                    "x": -280,
+                    "y": -95
+                  },
+                  "curva": "suave",
+                  "procedural": "manipular"
+                },
+                {
+                  "inicioProgreso": 0.35,
+                  "finProgreso": 0.72,
+                  "poseId": "scratching_head",
+                  "expresion": "confused",
+                  "posicion": {
+                    "x": 120,
+                    "y": -85
+                  },
+                  "curva": "suave",
+                  "procedural": "estatico"
+                },
+                {
+                  "inicioProgreso": 0.72,
+                  "finProgreso": 1.0,
+                  "poseId": "asking_question",
+                  "expresion": "worried",
+                  "posicion": {
+                    "x": 100,
+                    "y": -85
+                  },
+                  "curva": "rebote",
+                  "procedural": "estatico"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "objetos": [
+        {
+          "id": "foco_tenue",
+          "propId": "foco_moribundo_cable_largo",
+          "posicion": {
+            "x": 260,
+            "y": 70
+          },
+          "escala": 1.45,
+          "capaZ": 26,
+          "pasos": [
+            {
+              "inicioProgreso": 0.0,
+              "finProgreso": 1.0,
+              "posicion": {
+                "x": 260,
+                "y": 70
+              },
+              "escala": 1.45,
+              "rotacion": 0,
+              "curva": "suave"
+            }
+          ]
+        }
+      ],
+      "duracionSegundos": 10.378,
+      "palabras": [
+        {
+          "palabra": "Conectas",
+          "inicioMs": 0,
+          "finMs": 520
+        },
+        {
+          "palabra": "un",
+          "inicioMs": 520,
+          "finMs": 680
+        },
+        {
+          "palabra": "foco",
+          "inicioMs": 680,
+          "finMs": 960
+        },
+        {
+          "palabra": "al",
+          "inicioMs": 960,
+          "finMs": 1080
+        },
+        {
+          "palabra": "final",
+          "inicioMs": 1080,
+          "finMs": 1300
+        },
+        {
+          "palabra": "de",
+          "inicioMs": 1300,
+          "finMs": 1440
+        },
+        {
+          "palabra": "un",
+          "inicioMs": 1440,
+          "finMs": 1580
+        },
+        {
+          "palabra": "cable",
+          "inicioMs": 1580,
+          "finMs": 1780
+        },
+        {
+          "palabra": "larguísimo",
+          "inicioMs": 1780,
+          "finMs": 2340
+        },
+        {
+          "palabra": "tendido",
+          "inicioMs": 2340,
+          "finMs": 2820
+        },
+        {
+          "palabra": "por",
+          "inicioMs": 2820,
+          "finMs": 3000
+        },
+        {
+          "palabra": "el",
+          "inicioMs": 3000,
+          "finMs": 3100
+        },
+        {
+          "palabra": "patio",
+          "inicioMs": 3100,
+          "finMs": 3960
+        },
+        {
+          "palabra": "y",
+          "inicioMs": 3960,
+          "finMs": 4120
+        },
+        {
+          "palabra": "la",
+          "inicioMs": 4120,
+          "finMs": 4240
+        },
+        {
+          "palabra": "bombilla",
+          "inicioMs": 4240,
+          "finMs": 4660
+        },
+        {
+          "palabra": "apenas",
+          "inicioMs": 4660,
+          "finMs": 4980
+        },
+        {
+          "palabra": "brilla",
+          "inicioMs": 4980,
+          "finMs": 5520
+        },
+        {
+          "palabra": "como",
+          "inicioMs": 5520,
+          "finMs": 5800
+        },
+        {
+          "palabra": "una",
+          "inicioMs": 5800,
+          "finMs": 6020
+        },
+        {
+          "palabra": "cerilla",
+          "inicioMs": 6020,
+          "finMs": 6400
+        },
+        {
+          "palabra": "moribunda",
+          "inicioMs": 6400,
+          "finMs": 7540
+        },
+        {
+          "palabra": "A",
+          "inicioMs": 7540,
+          "finMs": 7620
+        },
+        {
+          "palabra": "dónde",
+          "inicioMs": 7620,
+          "finMs": 7840
+        },
+        {
+          "palabra": "diablos",
+          "inicioMs": 7840,
+          "finMs": 8220
+        },
+        {
+          "palabra": "se",
+          "inicioMs": 8220,
+          "finMs": 8360
+        },
+        {
+          "palabra": "esfumó",
+          "inicioMs": 8360,
+          "finMs": 8620
+        },
+        {
+          "palabra": "toda",
+          "inicioMs": 8620,
+          "finMs": 8900
+        },
+        {
+          "palabra": "tu",
+          "inicioMs": 8900,
+          "finMs": 9060
+        },
+        {
+          "palabra": "electricidad",
+          "inicioMs": 9060,
+          "finMs": 10060
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "texto": "No se rompió el foco: ¡el propio cable se tragó tu energía! Todo conductor de cobre ofrece resistencia física interna, y mientras más largo y delgado sea... peor es el desastre.",
+      "icono": "Gauge",
+      "colorIcono": "#EF4444",
+      "tituloVisual": "CAÍDA DE TENSIÓN",
+      "composicionVisual": "escenario_ilustrado",
+      "escenario": "campo_medicion_caida_tension_humo",
+      "transicion": "whip_right",
+      "efectosCamara": [
+        "drift",
+        "shake",
+        "punch"
+      ],
+      "sfx": "sfx/sfx_multimetro_beep_siseo_quemadura.wav",
+      "volumenSfx": 0.25,
+      "palabrasClave": [
+        "tragó tu energía",
+        "resistencia física interna",
+        "peor es el desastre"
+      ],
+      "focoCamara": [
+        {
+          "x": -90,
+          "y": 60,
+          "escala": 1.25,
+          "inicioProgreso": 0.0,
+          "finProgreso": 0.36,
+          "curva": "suave"
+        },
+        {
+          "x": 30,
+          "y": 140,
+          "escala": 1.44,
+          "inicioProgreso": 0.36,
+          "finProgreso": 0.75,
+          "curva": "impacto"
+        },
+        {
+          "x": 80,
+          "y": 70,
+          "escala": 1.2,
+          "inicioProgreso": 0.75,
+          "finProgreso": 1.0,
+          "curva": "rebote"
+        }
+      ],
+      "personajes": [
+        {
+          "id": "narrador",
+          "nombre": "Electricista",
+          "posicion": {
+            "x": -270,
+            "y": -90
+          },
+          "escala": 0.96,
+          "orientacion": "derecha",
+          "habla": true,
+          "capaZ": 22,
+          "acciones": [
+            {
+              "tipo": "personalizada",
+              "pasos": [
+                {
+                  "inicioProgreso": 0.0,
+                  "finProgreso": 0.42,
+                  "poseId": "investigating_magnifier",
+                  "expresion": "analytical",
+                  "posicion": {
+                    "x": -260,
+                    "y": -90
+                  },
+                  "curva": "suave",
+                  "procedural": "manipular"
+                },
+                {
+                  "inicioProgreso": 0.42,
+                  "finProgreso": 1.0,
+                  "poseId": "shock_explosion",
+                  "expresion": "shocked",
+                  "posicion": {
+                    "x": -180,
+                    "y": -95
+                  },
+                  "curva": "impacto",
+                  "procedural": "temblar"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "objetos": [
+        {
+          "id": "multimetro_medicion",
+          "propId": "multimetro_caida_tension_humo",
+          "posicion": {
+            "x": 60,
+            "y": 80
+          },
+          "escala": 1.48,
+          "capaZ": 26,
+          "pasos": [
+            {
+              "inicioProgreso": 0.0,
+              "finProgreso": 0.42,
+              "posicion": {
+                "x": 60,
+                "y": 80
+              },
+              "escala": 1.42,
+              "rotacion": 0,
+              "estado": "medicion",
+              "curva": "suave"
+            },
+            {
+              "inicioProgreso": 0.42,
+              "finProgreso": 1.0,
+              "posicion": {
+                "x": 100,
+                "y": 70
+              },
+              "escala": 1.55,
+              "rotacion": 10,
+              "estado": "caida",
+              "curva": "impacto"
+            }
+          ]
+        }
+      ],
+      "emisoresParticulas": [
+        {
+          "tipo": "vapor",
+          "x": 80,
+          "y": 70,
+          "tasa": 16,
+          "velocidad": 190,
+          "dispersion": 80,
+          "color": "#F8FAFC",
+          "tamano": 8,
+          "gravedad": 80,
+          "inicioProgreso": 0.35,
+          "finProgreso": 0.98
+        }
+      ],
+      "duracionSegundos": 9.058,
+      "palabras": [
+        {
+          "palabra": "No",
+          "inicioMs": 0,
+          "finMs": 140
+        },
+        {
+          "palabra": "se",
+          "inicioMs": 140,
+          "finMs": 260
+        },
+        {
+          "palabra": "rompió",
+          "inicioMs": 260,
+          "finMs": 580
+        },
+        {
+          "palabra": "el",
+          "inicioMs": 580,
+          "finMs": 700
+        },
+        {
+          "palabra": "foco",
+          "inicioMs": 700,
+          "finMs": 1020
+        },
+        {
+          "palabra": "el",
+          "inicioMs": 1300,
+          "finMs": 1380
+        },
+        {
+          "palabra": "propio",
+          "inicioMs": 1380,
+          "finMs": 1640
+        },
+        {
+          "palabra": "cable",
+          "inicioMs": 1640,
+          "finMs": 1920
+        },
+        {
+          "palabra": "se",
+          "inicioMs": 1920,
+          "finMs": 2140
+        },
+        {
+          "palabra": "tragó",
+          "inicioMs": 2140,
+          "finMs": 2340
+        },
+        {
+          "palabra": "tu",
+          "inicioMs": 2340,
+          "finMs": 2480
+        },
+        {
+          "palabra": "energía",
+          "inicioMs": 2480,
+          "finMs": 2660
+        },
+        {
+          "palabra": "Todo",
+          "inicioMs": 3000,
+          "finMs": 3080
+        },
+        {
+          "palabra": "conductor",
+          "inicioMs": 3080,
+          "finMs": 3460
+        },
+        {
+          "palabra": "de",
+          "inicioMs": 3460,
+          "finMs": 3700
+        },
+        {
+          "palabra": "cobre",
+          "inicioMs": 3700,
+          "finMs": 3940
+        },
+        {
+          "palabra": "ofrece",
+          "inicioMs": 3940,
+          "finMs": 4160
+        },
+        {
+          "palabra": "resistencia",
+          "inicioMs": 4160,
+          "finMs": 4780
+        },
+        {
+          "palabra": "física",
+          "inicioMs": 4780,
+          "finMs": 5040
+        },
+        {
+          "palabra": "interna",
+          "inicioMs": 5040,
+          "finMs": 5540
+        },
+        {
+          "palabra": "y",
+          "inicioMs": 5840,
+          "finMs": 5880
+        },
+        {
+          "palabra": "mientras",
+          "inicioMs": 5880,
+          "finMs": 6100
+        },
+        {
+          "palabra": "más",
+          "inicioMs": 6100,
+          "finMs": 6340
+        },
+        {
+          "palabra": "largo",
+          "inicioMs": 6340,
+          "finMs": 6660
+        },
+        {
+          "palabra": "y",
+          "inicioMs": 6660,
+          "finMs": 6780
+        },
+        {
+          "palabra": "delgado",
+          "inicioMs": 6780,
+          "finMs": 7040
+        },
+        {
+          "palabra": "sea",
+          "inicioMs": 7040,
+          "finMs": 7680
+        },
+        {
+          "palabra": "peor",
+          "inicioMs": 7680,
+          "finMs": 7840
+        },
+        {
+          "palabra": "es",
+          "inicioMs": 7840,
+          "finMs": 7960
+        },
+        {
+          "palabra": "el",
+          "inicioMs": 7960,
+          "finMs": 8060
+        },
+        {
+          "palabra": "desastre",
+          "inicioMs": 8060,
+          "finMs": 8480
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "texto": "Aquí entra la Ley de Joule: el calor perdido se dispara con la corriente al cuadrado. Si mandas mucha corriente por un cable largo, estás calentando el pasto, no prendiendo la lámpara.",
+      "icono": "Flame",
+      "colorIcono": "#F97316",
+      "tituloVisual": "LA LEY DE JOULE",
+      "composicionVisual": "escenario_ilustrado",
+      "escenario": "macro_microcosmos_red_cobre_joule",
+      "transicion": "zoom_in",
+      "efectosCamara": [
+        "drift",
+        "punch"
+      ],
+      "sfx": "sfx/sfx_colision_electrones_joule_chispas.wav",
+      "volumenSfx": 0.24,
+      "palabrasClave": [
+        "Ley de Joule",
+        "corriente al cuadrado",
+        "calentando el pasto"
+      ],
+      "focoCamara": [
+        {
+          "x": -80,
+          "y": 60,
+          "escala": 1.25,
+          "inicioProgreso": 0.0,
+          "finProgreso": 0.35,
+          "curva": "suave"
+        },
+        {
+          "x": 20,
+          "y": 140,
+          "escala": 1.42,
+          "inicioProgreso": 0.35,
+          "finProgreso": 0.78,
+          "curva": "suave"
+        },
+        {
+          "x": 0,
+          "y": 70,
+          "escala": 1.18,
+          "inicioProgreso": 0.78,
+          "finProgreso": 1.0,
+          "curva": "suave"
+        }
+      ],
+      "personajes": [
+        {
+          "id": "narrador",
+          "nombre": "Electricista",
+          "posicion": {
+            "x": -280,
+            "y": -90
+          },
+          "escala": 0.95,
+          "orientacion": "derecha",
+          "habla": true,
+          "capaZ": 22,
+          "acciones": [
+            {
+              "tipo": "personalizada",
+              "pasos": [
+                {
+                  "inicioProgreso": 0.0,
+                  "finProgreso": 0.45,
+                  "poseId": "explaining_pointing_up",
+                  "expresion": "analytical",
+                  "posicion": {
+                    "x": -270,
+                    "y": -90
+                  },
+                  "curva": "suave",
+                  "procedural": "estatico"
+                },
+                {
+                  "inicioProgreso": 0.45,
+                  "finProgreso": 1.0,
+                  "poseId": "warning_danger",
+                  "expresion": "worried",
+                  "posicion": {
+                    "x": -250,
+                    "y": -90
+                  },
+                  "curva": "rebote",
+                  "procedural": "temblar"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "objetos": [
+        {
+          "id": "choque_atomo",
+          "propId": "microcosmos_choque_electrones_joule",
+          "posicion": {
+            "x": 60,
+            "y": 70
+          },
+          "escala": 1.45,
+          "capaZ": 26,
+          "pasos": [
+            {
+              "inicioProgreso": 0.0,
+              "finProgreso": 1.0,
+              "posicion": {
+                "x": 60,
+                "y": 70
+              },
+              "escala": 1.45,
+              "rotacion": 0,
+              "curva": "suave"
+            }
+          ]
+        }
+      ],
+      "duracionSegundos": 10.498,
+      "palabras": [
+        {
+          "palabra": "Aquí",
+          "inicioMs": 0,
+          "finMs": 400
+        },
+        {
+          "palabra": "entra",
+          "inicioMs": 400,
+          "finMs": 620
+        },
+        {
+          "palabra": "la",
+          "inicioMs": 620,
+          "finMs": 760
+        },
+        {
+          "palabra": "Ley",
+          "inicioMs": 760,
+          "finMs": 920
+        },
+        {
+          "palabra": "de",
+          "inicioMs": 920,
+          "finMs": 1080
+        },
+        {
+          "palabra": "Joule",
+          "inicioMs": 1080,
+          "finMs": 1400
+        },
+        {
+          "palabra": "el",
+          "inicioMs": 1660,
+          "finMs": 1800
+        },
+        {
+          "palabra": "calor",
+          "inicioMs": 1800,
+          "finMs": 2060
+        },
+        {
+          "palabra": "perdido",
+          "inicioMs": 2060,
+          "finMs": 2480
+        },
+        {
+          "palabra": "se",
+          "inicioMs": 2480,
+          "finMs": 2720
+        },
+        {
+          "palabra": "dispara",
+          "inicioMs": 2720,
+          "finMs": 3120
+        },
+        {
+          "palabra": "con",
+          "inicioMs": 3120,
+          "finMs": 3260
+        },
+        {
+          "palabra": "la",
+          "inicioMs": 3260,
+          "finMs": 3380
+        },
+        {
+          "palabra": "corriente",
+          "inicioMs": 3380,
+          "finMs": 3780
+        },
+        {
+          "palabra": "al",
+          "inicioMs": 3780,
+          "finMs": 3900
+        },
+        {
+          "palabra": "cuadrado",
+          "inicioMs": 3900,
+          "finMs": 4360
+        },
+        {
+          "palabra": "Si",
+          "inicioMs": 4720,
+          "finMs": 4900
+        },
+        {
+          "palabra": "mandas",
+          "inicioMs": 4900,
+          "finMs": 5260
+        },
+        {
+          "palabra": "mucha",
+          "inicioMs": 5260,
+          "finMs": 5520
+        },
+        {
+          "palabra": "corriente",
+          "inicioMs": 5520,
+          "finMs": 5960
+        },
+        {
+          "palabra": "por",
+          "inicioMs": 5960,
+          "finMs": 6140
+        },
+        {
+          "palabra": "un",
+          "inicioMs": 6140,
+          "finMs": 6280
+        },
+        {
+          "palabra": "cable",
+          "inicioMs": 6280,
+          "finMs": 6540
+        },
+        {
+          "palabra": "largo",
+          "inicioMs": 6540,
+          "finMs": 6920
+        },
+        {
+          "palabra": "estás",
+          "inicioMs": 7180,
+          "finMs": 7380
+        },
+        {
+          "palabra": "calentando",
+          "inicioMs": 7380,
+          "finMs": 7980
+        },
+        {
+          "palabra": "el",
+          "inicioMs": 7980,
+          "finMs": 8080
+        },
+        {
+          "palabra": "pasto",
+          "inicioMs": 8080,
+          "finMs": 8520
+        },
+        {
+          "palabra": "no",
+          "inicioMs": 8620,
+          "finMs": 8760
+        },
+        {
+          "palabra": "prendiendo",
+          "inicioMs": 8760,
+          "finMs": 9200
+        },
+        {
+          "palabra": "la",
+          "inicioMs": 9200,
+          "finMs": 9340
+        },
+        {
+          "palabra": "lámpara",
+          "inicioMs": 9340,
+          "finMs": 9720
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "texto": "¿La genial solución de los ingenieros? Un truco maestro: elevar el voltaje a las nubes con un transformador para obligar a la corriente eléctrica a desplomarse a casi cero.",
+      "icono": "Cpu",
+      "colorIcono": "#38BDF8",
+      "tituloVisual": "EL TRANSFORMADOR",
+      "composicionVisual": "escenario_ilustrado",
+      "escenario": "taller_bobinado_transformador_mesa",
+      "transicion": "whip_left",
+      "efectosCamara": [
+        "drift",
+        "punch"
+      ],
+      "sfx": "sfx/sfx_transformador_hum_bobinado_campana.wav",
+      "volumenSfx": 0.25,
+      "palabrasClave": [
+        "truco maestro",
+        "elevar el voltaje",
+        "desplomarse a casi cero"
+      ],
+      "focoCamara": [
+        {
+          "x": -110,
+          "y": -40,
+          "escala": 1.18,
+          "inicioProgreso": 0.0,
+          "finProgreso": 0.32,
+          "curva": "suave"
+        },
+        {
+          "x": 30,
+          "y": 120,
+          "escala": 1.4,
+          "inicioProgreso": 0.32,
+          "finProgreso": 0.76,
+          "curva": "suave"
+        },
+        {
+          "x": 0,
+          "y": 60,
+          "escala": 1.16,
+          "inicioProgreso": 0.76,
+          "finProgreso": 1.0,
+          "curva": "suave"
+        }
+      ],
+      "personajes": [
+        {
+          "id": "narrador",
+          "nombre": "Electricista",
+          "posicion": {
+            "x": -270,
+            "y": -90
+          },
+          "escala": 0.95,
+          "orientacion": "derecha",
+          "habla": true,
+          "capaZ": 22,
+          "acciones": [
+            {
+              "tipo": "personalizada",
+              "pasos": [
+                {
+                  "inicioProgreso": 0.0,
+                  "finProgreso": 0.35,
+                  "poseId": "eureka_idea",
+                  "expresion": "eureka",
+                  "posicion": {
+                    "x": -270,
+                    "y": -90
+                  },
+                  "curva": "rebote",
+                  "procedural": "estatico"
+                },
+                {
+                  "inicioProgreso": 0.35,
+                  "finProgreso": 0.75,
+                  "poseId": "pushing",
+                  "expresion": "analytical",
+                  "posicion": {
+                    "x": -210,
+                    "y": -75
+                  },
+                  "curva": "suave",
+                  "procedural": "manipular"
+                },
+                {
+                  "inicioProgreso": 0.75,
+                  "finProgreso": 1.0,
+                  "poseId": "thumbs_up_approval",
+                  "expresion": "smile_wide",
+                  "posicion": {
+                    "x": -240,
+                    "y": -90
+                  },
+                  "curva": "rebote",
+                  "procedural": "estatico"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "objetos": [
+        {
+          "id": "transformador_mesa",
+          "propId": "transformador_bobinas_balanza_potencia",
+          "posicion": {
+            "x": 60,
+            "y": 65
+          },
+          "escala": 1.48,
+          "capaZ": 26,
+          "pasos": [
+            {
+              "inicioProgreso": 0.0,
+              "finProgreso": 1.0,
+              "posicion": {
+                "x": 60,
+                "y": 65
+              },
+              "escala": 1.48,
+              "rotacion": 0,
+              "curva": "suave"
+            }
+          ]
+        }
+      ],
+      "duracionSegundos": 9.682,
+      "palabras": [
+        {
+          "palabra": "La",
+          "inicioMs": 0,
+          "finMs": 200
+        },
+        {
+          "palabra": "genial",
+          "inicioMs": 200,
+          "finMs": 420
+        },
+        {
+          "palabra": "solución",
+          "inicioMs": 420,
+          "finMs": 880
+        },
+        {
+          "palabra": "de",
+          "inicioMs": 880,
+          "finMs": 980
+        },
+        {
+          "palabra": "los",
+          "inicioMs": 980,
+          "finMs": 1120
+        },
+        {
+          "palabra": "ingenieros",
+          "inicioMs": 1120,
+          "finMs": 1700
+        },
+        {
+          "palabra": "Un",
+          "inicioMs": 2020,
+          "finMs": 2140
+        },
+        {
+          "palabra": "truco",
+          "inicioMs": 2140,
+          "finMs": 2480
+        },
+        {
+          "palabra": "maestro",
+          "inicioMs": 2480,
+          "finMs": 2940
+        },
+        {
+          "palabra": "elevar",
+          "inicioMs": 3560,
+          "finMs": 3960
+        },
+        {
+          "palabra": "el",
+          "inicioMs": 3960,
+          "finMs": 4060
+        },
+        {
+          "palabra": "voltaje",
+          "inicioMs": 4060,
+          "finMs": 4500
+        },
+        {
+          "palabra": "a",
+          "inicioMs": 4500,
+          "finMs": 4560
+        },
+        {
+          "palabra": "las",
+          "inicioMs": 4560,
+          "finMs": 4660
+        },
+        {
+          "palabra": "nubes",
+          "inicioMs": 4660,
+          "finMs": 5040
+        },
+        {
+          "palabra": "con",
+          "inicioMs": 5040,
+          "finMs": 5200
+        },
+        {
+          "palabra": "un",
+          "inicioMs": 5200,
+          "finMs": 5300
+        },
+        {
+          "palabra": "transformador",
+          "inicioMs": 5300,
+          "finMs": 5940
+        },
+        {
+          "palabra": "para",
+          "inicioMs": 5940,
+          "finMs": 6180
+        },
+        {
+          "palabra": "obligar",
+          "inicioMs": 6180,
+          "finMs": 6500
+        },
+        {
+          "palabra": "a",
+          "inicioMs": 6500,
+          "finMs": 6600
+        },
+        {
+          "palabra": "la",
+          "inicioMs": 6600,
+          "finMs": 6700
+        },
+        {
+          "palabra": "corriente",
+          "inicioMs": 6700,
+          "finMs": 7060
+        },
+        {
+          "palabra": "eléctrica",
+          "inicioMs": 7060,
+          "finMs": 7580
+        },
+        {
+          "palabra": "a",
+          "inicioMs": 7580,
+          "finMs": 7800
+        },
+        {
+          "palabra": "desplomarse",
+          "inicioMs": 7800,
+          "finMs": 8360
+        },
+        {
+          "palabra": "a",
+          "inicioMs": 8360,
+          "finMs": 8540
+        },
+        {
+          "palabra": "casi",
+          "inicioMs": 8540,
+          "finMs": 8720
+        },
+        {
+          "palabra": "cero",
+          "inicioMs": 8720,
+          "finMs": 9080
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "texto": "Con el voltaje por las nubes, la corriente es tan minúscula que el cable no se calienta absolutamente nada. Pero mucho cuidado: semejante voltaje salvaje puede saltar chispas por el aire buscando tierra.",
+      "icono": "ShieldAlert",
+      "colorIcono": "#A855F7",
+      "tituloVisual": "ALTA TENSIÓN",
+      "composicionVisual": "plano_general",
+      "escenario": "campo_red_aerea_postes_aisladores",
+      "transicion": "whip_right",
+      "efectosCamara": [
+        "drift",
+        "shake"
+      ],
+      "sfx": "sfx/sfx_maza_poste_arco_electrico_zap.wav",
+      "volumenSfx": 0.26,
+      "palabrasClave": [
+        "corriente es tan minúscula",
+        "no se calienta absolutamente nada",
+        "saltar chispas por el aire"
+      ],
+      "focoCamara": [
+        {
+          "x": -130,
+          "y": -50,
+          "escala": 1.15,
+          "inicioProgreso": 0.0,
+          "finProgreso": 0.35,
+          "curva": "suave"
+        },
+        {
+          "x": 20,
+          "y": 110,
+          "escala": 1.38,
+          "inicioProgreso": 0.35,
+          "finProgreso": 0.78,
+          "curva": "impacto"
+        },
+        {
+          "x": 60,
+          "y": 40,
+          "escala": 1.14,
+          "inicioProgreso": 0.78,
+          "finProgreso": 1.0,
+          "curva": "suave"
+        }
+      ],
+      "personajes": [
+        {
+          "id": "narrador",
+          "nombre": "Electricista",
+          "posicion": {
+            "x": -260,
+            "y": -90
+          },
+          "escala": 0.95,
+          "orientacion": "derecha",
+          "habla": true,
+          "capaZ": 22,
+          "acciones": [
+            {
+              "tipo": "personalizada",
+              "pasos": [
+                {
+                  "inicioProgreso": 0.0,
+                  "finProgreso": 0.45,
+                  "poseId": "standing_confident",
+                  "expresion": "smile_soft",
+                  "posicion": {
+                    "x": -260,
+                    "y": -90
+                  },
+                  "curva": "suave",
+                  "procedural": "estatico"
+                },
+                {
+                  "inicioProgreso": 0.45,
+                  "finProgreso": 1.0,
+                  "poseId": "backing_away_scared",
+                  "expresion": "shocked",
+                  "posicion": {
+                    "x": -320,
+                    "y": -95
+                  },
+                  "curva": "impacto",
+                  "procedural": "temblar"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "objetos": [
+        {
+          "id": "poste_aislador",
+          "propId": "poste_aislador_arco_voltaico",
+          "posicion": {
+            "x": 120,
+            "y": 40
+          },
+          "escala": 1.45,
+          "capaZ": 26,
+          "pasos": [
+            {
+              "inicioProgreso": 0.0,
+              "finProgreso": 1.0,
+              "posicion": {
+                "x": 120,
+                "y": 40
+              },
+              "escala": 1.45,
+              "rotacion": 0,
+              "curva": "suave"
+            }
+          ]
+        }
+      ],
+      "duracionSegundos": 11.026,
+      "palabras": [
+        {
+          "palabra": "Con",
+          "inicioMs": 0,
+          "finMs": 200
+        },
+        {
+          "palabra": "el",
+          "inicioMs": 200,
+          "finMs": 320
+        },
+        {
+          "palabra": "voltaje",
+          "inicioMs": 320,
+          "finMs": 780
+        },
+        {
+          "palabra": "por",
+          "inicioMs": 780,
+          "finMs": 960
+        },
+        {
+          "palabra": "las",
+          "inicioMs": 960,
+          "finMs": 1160
+        },
+        {
+          "palabra": "nubes",
+          "inicioMs": 1160,
+          "finMs": 1540
+        },
+        {
+          "palabra": "la",
+          "inicioMs": 1700,
+          "finMs": 1780
+        },
+        {
+          "palabra": "corriente",
+          "inicioMs": 1780,
+          "finMs": 2180
+        },
+        {
+          "palabra": "es",
+          "inicioMs": 2180,
+          "finMs": 2440
+        },
+        {
+          "palabra": "tan",
+          "inicioMs": 2440,
+          "finMs": 2520
+        },
+        {
+          "palabra": "minúscula",
+          "inicioMs": 2520,
+          "finMs": 3100
+        },
+        {
+          "palabra": "que",
+          "inicioMs": 3100,
+          "finMs": 3220
+        },
+        {
+          "palabra": "el",
+          "inicioMs": 3220,
+          "finMs": 3400
+        },
+        {
+          "palabra": "cable",
+          "inicioMs": 3400,
+          "finMs": 3520
+        },
+        {
+          "palabra": "no",
+          "inicioMs": 3520,
+          "finMs": 3700
+        },
+        {
+          "palabra": "se",
+          "inicioMs": 3700,
+          "finMs": 3820
+        },
+        {
+          "palabra": "calienta",
+          "inicioMs": 3820,
+          "finMs": 4260
+        },
+        {
+          "palabra": "absolutamente",
+          "inicioMs": 4260,
+          "finMs": 4640
+        },
+        {
+          "palabra": "nada",
+          "inicioMs": 4640,
+          "finMs": 5240
+        },
+        {
+          "palabra": "Pero",
+          "inicioMs": 5720,
+          "finMs": 5900
+        },
+        {
+          "palabra": "mucho",
+          "inicioMs": 5900,
+          "finMs": 6140
+        },
+        {
+          "palabra": "cuidado",
+          "inicioMs": 6140,
+          "finMs": 6460
+        },
+        {
+          "palabra": "semejante",
+          "inicioMs": 6800,
+          "finMs": 7220
+        },
+        {
+          "palabra": "voltaje",
+          "inicioMs": 7220,
+          "finMs": 7620
+        },
+        {
+          "palabra": "salvaje",
+          "inicioMs": 7620,
+          "finMs": 8120
+        },
+        {
+          "palabra": "puede",
+          "inicioMs": 8120,
+          "finMs": 8400
+        },
+        {
+          "palabra": "saltar",
+          "inicioMs": 8400,
+          "finMs": 8820
+        },
+        {
+          "palabra": "chispas",
+          "inicioMs": 8820,
+          "finMs": 9260
+        },
+        {
+          "palabra": "por",
+          "inicioMs": 9260,
+          "finMs": 9400
+        },
+        {
+          "palabra": "el",
+          "inicioMs": 9400,
+          "finMs": 9520
+        },
+        {
+          "palabra": "aire",
+          "inicioMs": 9520,
+          "finMs": 9660
+        },
+        {
+          "palabra": "buscando",
+          "inicioMs": 9660,
+          "finMs": 9960
+        },
+        {
+          "palabra": "tierra",
+          "inicioMs": 9960,
+          "finMs": 10420
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "texto": "Al llegar al granero colocamos un segundo transformador que hace justo lo contrario: baja el voltaje a un nivel seguro y devuelve toda la corriente que necesita tu foco.",
+      "icono": "Wrench",
+      "colorIcono": "#10B981",
+      "tituloVisual": "BAJADA SEGURA",
+      "composicionVisual": "escenario_ilustrado",
+      "escenario": "granero_transformador_reductor_poste",
+      "transicion": "zoom_in",
+      "efectosCamara": [
+        "drift",
+        "punch"
+      ],
+      "sfx": "sfx/sfx_conexion_bornes_rele_suave.wav",
+      "volumenSfx": 0.24,
+      "palabrasClave": [
+        "segundo transformador",
+        "nivel seguro",
+        "toda la corriente"
+      ],
+      "focoCamara": [
+        {
+          "x": -100,
+          "y": -30,
+          "escala": 1.18,
+          "inicioProgreso": 0.0,
+          "finProgreso": 0.35,
+          "curva": "suave"
+        },
+        {
+          "x": 40,
+          "y": 130,
+          "escala": 1.42,
+          "inicioProgreso": 0.35,
+          "finProgreso": 0.78,
+          "curva": "suave"
+        },
+        {
+          "x": 20,
+          "y": 50,
+          "escala": 1.16,
+          "inicioProgreso": 0.78,
+          "finProgreso": 1.0,
+          "curva": "suave"
+        }
+      ],
+      "personajes": [
+        {
+          "id": "narrador",
+          "nombre": "Electricista",
+          "posicion": {
+            "x": -270,
+            "y": -90
+          },
+          "escala": 0.95,
+          "orientacion": "derecha",
+          "habla": true,
+          "capaZ": 22,
+          "acciones": [
+            {
+              "tipo": "personalizada",
+              "pasos": [
+                {
+                  "inicioProgreso": 0.0,
+                  "finProgreso": 0.55,
+                  "poseId": "pushing",
+                  "expresion": "analytical",
+                  "posicion": {
+                    "x": -180,
+                    "y": -75
+                  },
+                  "curva": "suave",
+                  "procedural": "manipular"
+                },
+                {
+                  "inicioProgreso": 0.55,
+                  "finProgreso": 1.0,
+                  "poseId": "thumbs_up_approval",
+                  "expresion": "smile_wide",
+                  "posicion": {
+                    "x": -230,
+                    "y": -90
+                  },
+                  "curva": "rebote",
+                  "procedural": "estatico"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "objetos": [
+        {
+          "id": "transformador_reductor_montado",
+          "propId": "transformador_reductor_herramientas",
+          "posicion": {
+            "x": 60,
+            "y": 70
+          },
+          "escala": 1.45,
+          "capaZ": 26,
+          "pasos": [
+            {
+              "inicioProgreso": 0.0,
+              "finProgreso": 1.0,
+              "posicion": {
+                "x": 60,
+                "y": 70
+              },
+              "escala": 1.45,
+              "rotacion": 0,
+              "curva": "suave"
+            }
+          ]
+        }
+      ],
+      "duracionSegundos": 8.938,
+      "palabras": [
+        {
+          "palabra": "Al",
+          "inicioMs": 0,
+          "finMs": 200
+        },
+        {
+          "palabra": "llegar",
+          "inicioMs": 200,
+          "finMs": 420
+        },
+        {
+          "palabra": "al",
+          "inicioMs": 420,
+          "finMs": 560
+        },
+        {
+          "palabra": "granero",
+          "inicioMs": 560,
+          "finMs": 940
+        },
+        {
+          "palabra": "colocamos",
+          "inicioMs": 940,
+          "finMs": 1480
+        },
+        {
+          "palabra": "un",
+          "inicioMs": 1480,
+          "finMs": 1660
+        },
+        {
+          "palabra": "segundo",
+          "inicioMs": 1660,
+          "finMs": 2000
+        },
+        {
+          "palabra": "transformador",
+          "inicioMs": 2000,
+          "finMs": 2700
+        },
+        {
+          "palabra": "que",
+          "inicioMs": 2700,
+          "finMs": 2860
+        },
+        {
+          "palabra": "hace",
+          "inicioMs": 2860,
+          "finMs": 3000
+        },
+        {
+          "palabra": "justo",
+          "inicioMs": 3000,
+          "finMs": 3240
+        },
+        {
+          "palabra": "lo",
+          "inicioMs": 3240,
+          "finMs": 3440
+        },
+        {
+          "palabra": "contrario",
+          "inicioMs": 3440,
+          "finMs": 3900
+        },
+        {
+          "palabra": "baja",
+          "inicioMs": 4120,
+          "finMs": 4340
+        },
+        {
+          "palabra": "el",
+          "inicioMs": 4340,
+          "finMs": 4460
+        },
+        {
+          "palabra": "voltaje",
+          "inicioMs": 4460,
+          "finMs": 4940
+        },
+        {
+          "palabra": "a",
+          "inicioMs": 4940,
+          "finMs": 5020
+        },
+        {
+          "palabra": "un",
+          "inicioMs": 5020,
+          "finMs": 5120
+        },
+        {
+          "palabra": "nivel",
+          "inicioMs": 5120,
+          "finMs": 5340
+        },
+        {
+          "palabra": "seguro",
+          "inicioMs": 5340,
+          "finMs": 5760
+        },
+        {
+          "palabra": "y",
+          "inicioMs": 5760,
+          "finMs": 6040
+        },
+        {
+          "palabra": "devuelve",
+          "inicioMs": 6040,
+          "finMs": 6380
+        },
+        {
+          "palabra": "toda",
+          "inicioMs": 6380,
+          "finMs": 6620
+        },
+        {
+          "palabra": "la",
+          "inicioMs": 6620,
+          "finMs": 6800
+        },
+        {
+          "palabra": "corriente",
+          "inicioMs": 6800,
+          "finMs": 7180
+        },
+        {
+          "palabra": "que",
+          "inicioMs": 7180,
+          "finMs": 7320
+        },
+        {
+          "palabra": "necesita",
+          "inicioMs": 7320,
+          "finMs": 7560
+        },
+        {
+          "palabra": "tu",
+          "inicioMs": 7560,
+          "finMs": 7900
+        },
+        {
+          "palabra": "foco",
+          "inicioMs": 7900,
+          "finMs": 8220
+        }
+      ]
+    },
+    {
+      "id": 7,
+      "texto": "¡BAM! Una explosión de luz brillante ilumina la noche entera. Acabas de replicar en tu propio patio exactamente la misma red eléctrica de alta tensión que alimenta al planeta.",
+      "icono": "Sun",
+      "colorIcono": "#FACC15",
+      "tituloVisual": "LA RED ELÉCTRICA",
+      "composicionVisual": "plano_general",
+      "escenario": "campo_granero_iluminacion_total_victoria",
+      "transicion": "flash",
+      "efectosCamara": [
+        "drift",
+        "punch"
+      ],
+      "sfx": "sfx/sfx_estallido_luz_fanfarria_victoria.wav",
+      "volumenSfx": 0.26,
+      "palabrasClave": [
+        "explosión de luz",
+        "en tu propio patio",
+        "red eléctrica de alta tensión"
+      ],
+      "focoCamara": [
+        {
+          "x": -120,
+          "y": 60,
+          "escala": 1.34,
+          "inicioProgreso": 0.0,
+          "finProgreso": 0.38,
+          "curva": "impacto"
+        },
+        {
+          "x": 0,
+          "y": 0,
+          "escala": 1.1,
+          "inicioProgreso": 0.38,
+          "finProgreso": 0.78,
+          "curva": "suave"
+        },
+        {
+          "x": 0,
+          "y": 0,
+          "escala": 1.02,
+          "inicioProgreso": 0.78,
+          "finProgreso": 1.0,
+          "curva": "suave"
+        }
+      ],
+      "personajes": [
+        {
+          "id": "narrador",
+          "nombre": "Electricista",
+          "posicion": {
+            "x": 160,
+            "y": -90
+          },
+          "escala": 0.98,
+          "orientacion": "izquierda",
+          "habla": true,
+          "capaZ": 22,
+          "acciones": [
+            {
+              "tipo": "personalizada",
+              "pasos": [
+                {
+                  "inicioProgreso": 0.0,
+                  "finProgreso": 0.35,
+                  "poseId": "covering_eyes",
+                  "expresion": "surprised",
+                  "posicion": {
+                    "x": 160,
+                    "y": -90
+                  },
+                  "curva": "impacto",
+                  "procedural": "recoil"
+                },
+                {
+                  "inicioProgreso": 0.35,
+                  "finProgreso": 1.0,
+                  "poseId": "arms_crossed",
+                  "expresion": "proud",
+                  "posicion": {
+                    "x": 140,
+                    "y": -90
+                  },
+                  "curva": "rebote",
+                  "procedural": "estatico"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "objetos": [
+        {
+          "id": "foco_estallido",
+          "propId": "bombilla_estallido_luz_gafas",
+          "posicion": {
+            "x": -100,
+            "y": 65
+          },
+          "escala": 1.55,
+          "capaZ": 26,
+          "pasos": [
+            {
+              "inicioProgreso": 0.0,
+              "finProgreso": 1.0,
+              "posicion": {
+                "x": -100,
+                "y": 65
+              },
+              "escala": 1.55,
+              "rotacion": 0,
+              "curva": "suave"
+            }
+          ]
+        }
+      ],
+      "duracionSegundos": 9.178,
+      "palabras": [
+        {
+          "palabra": "BAM",
+          "inicioMs": 0,
+          "finMs": 320
+        },
+        {
+          "palabra": "Una",
+          "inicioMs": 580,
+          "finMs": 760
+        },
+        {
+          "palabra": "explosión",
+          "inicioMs": 760,
+          "finMs": 1220
+        },
+        {
+          "palabra": "de",
+          "inicioMs": 1220,
+          "finMs": 1340
+        },
+        {
+          "palabra": "luz",
+          "inicioMs": 1340,
+          "finMs": 1460
+        },
+        {
+          "palabra": "brillante",
+          "inicioMs": 1460,
+          "finMs": 1960
+        },
+        {
+          "palabra": "ilumina",
+          "inicioMs": 1960,
+          "finMs": 2320
+        },
+        {
+          "palabra": "la",
+          "inicioMs": 2320,
+          "finMs": 2440
+        },
+        {
+          "palabra": "noche",
+          "inicioMs": 2440,
+          "finMs": 2680
+        },
+        {
+          "palabra": "entera",
+          "inicioMs": 2680,
+          "finMs": 3080
+        },
+        {
+          "palabra": "Acabas",
+          "inicioMs": 3320,
+          "finMs": 3660
+        },
+        {
+          "palabra": "de",
+          "inicioMs": 3660,
+          "finMs": 3740
+        },
+        {
+          "palabra": "replicar",
+          "inicioMs": 3740,
+          "finMs": 4160
+        },
+        {
+          "palabra": "en",
+          "inicioMs": 4160,
+          "finMs": 4300
+        },
+        {
+          "palabra": "tu",
+          "inicioMs": 4300,
+          "finMs": 4420
+        },
+        {
+          "palabra": "propio",
+          "inicioMs": 4420,
+          "finMs": 4720
+        },
+        {
+          "palabra": "patio",
+          "inicioMs": 4720,
+          "finMs": 4960
+        },
+        {
+          "palabra": "exactamente",
+          "inicioMs": 4960,
+          "finMs": 5440
+        },
+        {
+          "palabra": "la",
+          "inicioMs": 5440,
+          "finMs": 5820
+        },
+        {
+          "palabra": "misma",
+          "inicioMs": 5820,
+          "finMs": 6100
+        },
+        {
+          "palabra": "red",
+          "inicioMs": 6100,
+          "finMs": 6300
+        },
+        {
+          "palabra": "eléctrica",
+          "inicioMs": 6300,
+          "finMs": 6760
+        },
+        {
+          "palabra": "de",
+          "inicioMs": 6760,
+          "finMs": 6940
+        },
+        {
+          "palabra": "alta",
+          "inicioMs": 6940,
+          "finMs": 7060
+        },
+        {
+          "palabra": "tensión",
+          "inicioMs": 7060,
+          "finMs": 7600
+        },
+        {
+          "palabra": "que",
+          "inicioMs": 7600,
+          "finMs": 7740
+        },
+        {
+          "palabra": "alimenta",
+          "inicioMs": 7740,
+          "finMs": 8100
+        },
+        {
+          "palabra": "al",
+          "inicioMs": 8100,
+          "finMs": 8180
+        },
+        {
+          "palabra": "planeta",
+          "inicioMs": 8180,
+          "finMs": 8480
+        }
+      ]
+    }
+  ]
+}

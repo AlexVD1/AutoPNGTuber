@@ -49,11 +49,10 @@
           "nombre": "Stickman",
           "posicion": {
             "x": -180,
-            "y": 100
+            "y": 90
           },
           "escala": 1.0,
           "orientacion": "derecha",
-          "prop": "rayo_dolor_cabeza",
           "habla": true,
           "capaZ": 20,
           "acciones": [
@@ -67,10 +66,11 @@
                   "expresion": "scared",
                   "posicion": {
                     "x": -180,
-                    "y": 100
+                    "y": 90
                   },
                   "curva": "suave",
-                  "procedural": "temblar"
+                  "procedural": "temblar",
+                  "hastaPalabra": "juran"
                 },
                 {
                   "inicioProgreso": 0.35,
@@ -79,10 +79,12 @@
                   "expresion": "talking_enthusiastic",
                   "posicion": {
                     "x": -150,
-                    "y": 100
+                    "y": 90
                   },
                   "curva": "suave",
-                  "procedural": "estatico"
+                  "procedural": "estatico",
+                  "desdePalabra": "juran",
+                  "hastaPalabra": "respuesta"
                 },
                 {
                   "inicioProgreso": 0.7,
@@ -91,152 +93,219 @@
                   "expresion": "smile_wide",
                   "posicion": {
                     "x": -140,
-                    "y": 100
+                    "y": 90
                   },
                   "curva": "suave",
-                  "procedural": "estatico"
+                  "procedural": "estatico",
+                  "desdePalabra": "respuesta"
                 }
               ]
             }
           ]
         }
       ],
-      "duracionSegundos": 7.81,
+      "duracionSegundos": 7.882,
       "palabras": [
         {
           "palabra": "Si",
           "inicioMs": 0,
-          "finMs": 160
+          "finMs": 200
         },
         {
           "palabra": "te",
-          "inicioMs": 160,
-          "finMs": 280
+          "inicioMs": 200,
+          "finMs": 320
         },
         {
           "palabra": "dan",
-          "inicioMs": 280,
-          "finMs": 400
+          "inicioMs": 320,
+          "finMs": 460
         },
         {
           "palabra": "una",
-          "inicioMs": 400,
-          "finMs": 560
+          "inicioMs": 460,
+          "finMs": 620
         },
         {
           "palabra": "pastilla",
-          "inicioMs": 560,
-          "finMs": 960
+          "inicioMs": 620,
+          "finMs": 1020
         },
         {
           "palabra": "que",
-          "inicioMs": 960,
-          "finMs": 1120
+          "inicioMs": 1020,
+          "finMs": 1180
         },
         {
           "palabra": "es",
-          "inicioMs": 1120,
-          "finMs": 1160
+          "inicioMs": 1180,
+          "finMs": 1320
         },
         {
           "palabra": "puro",
-          "inicioMs": 1120,
-          "finMs": 1440
+          "inicioMs": 1320,
+          "finMs": 1480
         },
         {
           "palabra": "azúcar",
-          "inicioMs": 1440,
-          "finMs": 1780
+          "inicioMs": 1480,
+          "finMs": 1860
         },
         {
           "palabra": "pero",
-          "inicioMs": 1780,
-          "finMs": 2060
+          "inicioMs": 1860,
+          "finMs": 2160
         },
         {
           "palabra": "juran",
-          "inicioMs": 2060,
-          "finMs": 2360
+          "inicioMs": 2160,
+          "finMs": 2400
         },
         {
           "palabra": "que",
-          "inicioMs": 2360,
-          "finMs": 2500
+          "inicioMs": 2400,
+          "finMs": 2520
         },
         {
           "palabra": "te",
-          "inicioMs": 2500,
+          "inicioMs": 2520,
           "finMs": 2600
         },
         {
           "palabra": "curará",
           "inicioMs": 2600,
-          "finMs": 3180
+          "finMs": 3100
         },
         {
           "palabra": "funciona",
-          "inicioMs": 3180,
-          "finMs": 3700
+          "inicioMs": 3100,
+          "finMs": 3600
         },
         {
           "palabra": "La",
-          "inicioMs": 3960,
-          "finMs": 4040
+          "inicioMs": 3840,
+          "finMs": 3920
         },
         {
           "palabra": "respuesta",
-          "inicioMs": 4040,
-          "finMs": 4380
+          "inicioMs": 3920,
+          "finMs": 4320
         },
         {
           "palabra": "de",
-          "inicioMs": 4380,
-          "finMs": 4660
+          "inicioMs": 4320,
+          "finMs": 4560
         },
         {
           "palabra": "la",
-          "inicioMs": 4660,
-          "finMs": 4720
+          "inicioMs": 4560,
+          "finMs": 4640
         },
         {
           "palabra": "ciencia",
-          "inicioMs": 4720,
-          "finMs": 5040
+          "inicioMs": 4640,
+          "finMs": 4980
         },
         {
           "palabra": "médica",
-          "inicioMs": 5040,
-          "finMs": 5520
+          "inicioMs": 4980,
+          "finMs": 5480
         },
         {
           "palabra": "es",
-          "inicioMs": 5520,
-          "finMs": 5740
+          "inicioMs": 5480,
+          "finMs": 5720
         },
         {
           "palabra": "un",
-          "inicioMs": 5740,
-          "finMs": 5900
+          "inicioMs": 5720,
+          "finMs": 5880
         },
         {
           "palabra": "rotundo",
-          "inicioMs": 5900,
-          "finMs": 6300
+          "inicioMs": 5880,
+          "finMs": 6260
         },
         {
           "palabra": "y",
-          "inicioMs": 6300,
-          "finMs": 6420
+          "inicioMs": 6260,
+          "finMs": 6380
         },
         {
           "palabra": "sorprendente",
-          "inicioMs": 6420,
-          "finMs": 6980
+          "inicioMs": 6380,
+          "finMs": 6920
         },
         {
           "palabra": "sí",
-          "inicioMs": 6980,
-          "finMs": 7260
+          "inicioMs": 6920,
+          "finMs": 7240
+        }
+      ],
+      "objetos": [
+        {
+          "id": "obj_placebo_1",
+          "propId": "rayo_dolor_cabeza",
+          "posicion": {
+            "x": -170,
+            "y": -295
+          },
+          "escala": 1.05,
+          "capaZ": 28,
+          "pasos": [
+            {
+              "inicioProgreso": 0.0,
+              "finProgreso": 0.5,
+              "hastaPalabra": "respuesta",
+              "posicion": {
+                "x": -170,
+                "y": -295
+              },
+              "escala": 1.05,
+              "estado": "dolor_intenso",
+              "curva": "suave"
+            },
+            {
+              "inicioProgreso": 0.5,
+              "finProgreso": 1.0,
+              "desdePalabra": "respuesta",
+              "posicion": {
+                "x": -145,
+                "y": -305
+              },
+              "escala": 1.13,
+              "estado": "alivio_azul",
+              "curva": "rebote"
+            }
+          ]
+        }
+      ],
+      "focoCamara": [
+        {
+          "inicioProgreso": 0.0,
+          "finProgreso": 0.36,
+          "x": -90,
+          "y": 20,
+          "escala": 1.12,
+          "curva": "suave"
+        },
+        {
+          "inicioProgreso": 0.36,
+          "finProgreso": 0.72,
+          "desdePalabra": "juran",
+          "x": 90,
+          "y": -20,
+          "escala": 1.22,
+          "curva": "suave"
+        },
+        {
+          "inicioProgreso": 0.72,
+          "finProgreso": 1.0,
+          "desdePalabra": "respuesta",
+          "x": 0,
+          "y": 0,
+          "escala": 1.0,
+          "curva": "suave"
         }
       ]
     },
@@ -270,11 +339,10 @@
           "nombre": "Stickman",
           "posicion": {
             "x": -220,
-            "y": 120
+            "y": 90
           },
           "escala": 1.0,
           "orientacion": "derecha",
-          "prop": "frasco_azucar_100_glucosa",
           "habla": true,
           "capaZ": 20,
           "acciones": [
@@ -288,10 +356,11 @@
                   "expresion": "shocked",
                   "posicion": {
                     "x": -220,
-                    "y": 120
+                    "y": 90
                   },
                   "curva": "impacto",
-                  "procedural": "estatico"
+                  "procedural": "estatico",
+                  "hastaPalabra": "prueba"
                 },
                 {
                   "inicioProgreso": 0.35,
@@ -300,10 +369,12 @@
                   "expresion": "confused",
                   "posicion": {
                     "x": -180,
-                    "y": 120
+                    "y": 90
                   },
                   "curva": "suave",
-                  "procedural": "estatico"
+                  "procedural": "estatico",
+                  "desdePalabra": "prueba",
+                  "hastaPalabra": "fabricar"
                 },
                 {
                   "inicioProgreso": 0.7,
@@ -312,17 +383,18 @@
                   "expresion": "analytical",
                   "posicion": {
                     "x": -190,
-                    "y": 120
+                    "y": 90
                   },
                   "curva": "suave",
-                  "procedural": "estatico"
+                  "procedural": "estatico",
+                  "desdePalabra": "fabricar"
                 }
               ]
             }
           ]
         }
       ],
-      "duracionSegundos": 8.218,
+      "duracionSegundos": 8.65,
       "palabras": [
         {
           "palabra": "Bienvenido",
@@ -337,107 +409,136 @@
         {
           "palabra": "efecto",
           "inicioMs": 660,
-          "finMs": 880
+          "finMs": 960
         },
         {
           "palabra": "placebo",
-          "inicioMs": 880,
-          "finMs": 1420
+          "inicioMs": 960,
+          "finMs": 1500
         },
         {
           "palabra": "la",
-          "inicioMs": 1600,
-          "finMs": 1680
+          "inicioMs": 1940,
+          "finMs": 2080
         },
         {
           "palabra": "prueba",
-          "inicioMs": 1680,
-          "finMs": 1920
+          "inicioMs": 2080,
+          "finMs": 2360
         },
         {
           "palabra": "definitiva",
-          "inicioMs": 1920,
-          "finMs": 2580
+          "inicioMs": 2360,
+          "finMs": 2980
         },
         {
           "palabra": "de",
-          "inicioMs": 2580,
-          "finMs": 2700
+          "inicioMs": 2980,
+          "finMs": 3100
         },
         {
           "palabra": "que",
-          "inicioMs": 2700,
-          "finMs": 2800
+          "inicioMs": 3100,
+          "finMs": 3200
         },
         {
           "palabra": "tu",
-          "inicioMs": 2800,
-          "finMs": 2960
+          "inicioMs": 3200,
+          "finMs": 3320
         },
         {
           "palabra": "cerebro",
-          "inicioMs": 2960,
-          "finMs": 3300
+          "inicioMs": 3320,
+          "finMs": 3680
         },
         {
           "palabra": "tiene",
-          "inicioMs": 3300,
-          "finMs": 3560
+          "inicioMs": 3680,
+          "finMs": 3940
         },
         {
           "palabra": "la",
-          "inicioMs": 3560,
-          "finMs": 3740
+          "inicioMs": 3940,
+          "finMs": 4080
         },
         {
           "palabra": "capacidad",
-          "inicioMs": 3740,
-          "finMs": 4200
+          "inicioMs": 4080,
+          "finMs": 4560
         },
         {
           "palabra": "biológica",
-          "inicioMs": 4200,
-          "finMs": 5000
+          "inicioMs": 4560,
+          "finMs": 5300
         },
         {
           "palabra": "de",
-          "inicioMs": 5000,
-          "finMs": 5120
+          "inicioMs": 5300,
+          "finMs": 5420
         },
         {
           "palabra": "fabricar",
-          "inicioMs": 5120,
-          "finMs": 5540
+          "inicioMs": 5420,
+          "finMs": 5900
         },
         {
           "palabra": "sus",
-          "inicioMs": 5540,
-          "finMs": 5700
+          "inicioMs": 5900,
+          "finMs": 6100
         },
         {
           "palabra": "propios",
-          "inicioMs": 5700,
-          "finMs": 6040
+          "inicioMs": 6100,
+          "finMs": 6420
         },
         {
           "palabra": "medicamentos",
-          "inicioMs": 6040,
-          "finMs": 6620
+          "inicioMs": 6420,
+          "finMs": 7040
         },
         {
           "palabra": "con",
-          "inicioMs": 6620,
-          "finMs": 6860
+          "inicioMs": 7040,
+          "finMs": 7240
         },
         {
           "palabra": "solo",
-          "inicioMs": 6860,
-          "finMs": 7140
+          "inicioMs": 7240,
+          "finMs": 7500
         },
         {
           "palabra": "creerlo",
-          "inicioMs": 7140,
-          "finMs": 7680
+          "inicioMs": 7500,
+          "finMs": 8080
+        }
+      ],
+      "objetos": [],
+      "focoCamara": [
+        {
+          "inicioProgreso": 0.0,
+          "finProgreso": 0.36,
+          "x": -90,
+          "y": 20,
+          "escala": 1.12,
+          "curva": "suave"
+        },
+        {
+          "inicioProgreso": 0.36,
+          "finProgreso": 0.72,
+          "desdePalabra": "prueba",
+          "x": 90,
+          "y": -20,
+          "escala": 1.22,
+          "curva": "suave"
+        },
+        {
+          "inicioProgreso": 0.72,
+          "finProgreso": 1.0,
+          "desdePalabra": "fabricar",
+          "x": 0,
+          "y": 0,
+          "escala": 1.0,
+          "curva": "suave"
         }
       ]
     },
@@ -470,11 +571,10 @@
           "nombre": "Stickman",
           "posicion": {
             "x": -240,
-            "y": 140
+            "y": 90
           },
           "escala": 0.95,
           "orientacion": "derecha",
-          "prop": "capsula_placebo_roja_blanca",
           "habla": true,
           "capaZ": 20,
           "acciones": [
@@ -488,10 +588,11 @@
                   "expresion": "analytical",
                   "posicion": {
                     "x": -240,
-                    "y": 140
+                    "y": 90
                   },
                   "curva": "suave",
-                  "procedural": "estatico"
+                  "procedural": "estatico",
+                  "hastaPalabra": "Al"
                 },
                 {
                   "inicioProgreso": 0.4,
@@ -500,10 +601,12 @@
                   "expresion": "talking_enthusiastic",
                   "posicion": {
                     "x": -200,
-                    "y": 140
+                    "y": 90
                   },
                   "curva": "suave",
-                  "procedural": "estatico"
+                  "procedural": "estatico",
+                  "desdePalabra": "Al",
+                  "hastaPalabra": "envía"
                 },
                 {
                   "inicioProgreso": 0.75,
@@ -512,172 +615,239 @@
                   "expresion": "eureka",
                   "posicion": {
                     "x": -180,
-                    "y": 130
+                    "y": 90
                   },
                   "curva": "rebote",
-                  "procedural": "estatico"
+                  "procedural": "estatico",
+                  "desdePalabra": "envía"
                 }
               ]
             }
           ]
         }
       ],
-      "duracionSegundos": 9.418,
+      "duracionSegundos": 8.89,
       "palabras": [
         {
           "palabra": "No",
           "inicioMs": 0,
-          "finMs": 220
+          "finMs": 240
         },
         {
           "palabra": "es",
-          "inicioMs": 220,
-          "finMs": 360
+          "inicioMs": 240,
+          "finMs": 380
         },
         {
           "palabra": "magia",
-          "inicioMs": 360,
-          "finMs": 720
+          "inicioMs": 380,
+          "finMs": 740
         },
         {
           "palabra": "ni",
-          "inicioMs": 720,
-          "finMs": 860
+          "inicioMs": 740,
+          "finMs": 900
         },
         {
           "palabra": "te",
-          "inicioMs": 860,
-          "finMs": 960
-        },
-        {
-          "palabra": "lo",
-          "inicioMs": 960,
+          "inicioMs": 900,
           "finMs": 1020
         },
         {
-          "palabra": "estás",
+          "palabra": "lo",
           "inicioMs": 1020,
-          "finMs": 1240
+          "finMs": 1120
+        },
+        {
+          "palabra": "estás",
+          "inicioMs": 1120,
+          "finMs": 1320
         },
         {
           "palabra": "imaginando",
-          "inicioMs": 1240,
-          "finMs": 1900
+          "inicioMs": 1320,
+          "finMs": 2040
         },
         {
           "palabra": "Al",
-          "inicioMs": 2140,
-          "finMs": 2260
+          "inicioMs": 2260,
+          "finMs": 2360
         },
         {
           "palabra": "tragar",
-          "inicioMs": 2260,
-          "finMs": 2520
+          "inicioMs": 2360,
+          "finMs": 2640
         },
         {
           "palabra": "la",
-          "inicioMs": 2520,
-          "finMs": 2700
+          "inicioMs": 2640,
+          "finMs": 2780
         },
         {
           "palabra": "cápsula",
-          "inicioMs": 2700,
-          "finMs": 3220
+          "inicioMs": 2780,
+          "finMs": 3260
         },
         {
           "palabra": "tu",
-          "inicioMs": 3540,
-          "finMs": 3620
+          "inicioMs": 3460,
+          "finMs": 3520
         },
         {
           "palabra": "cerebro",
-          "inicioMs": 3620,
-          "finMs": 3960
+          "inicioMs": 3520,
+          "finMs": 3920
         },
         {
           "palabra": "activa",
-          "inicioMs": 3960,
-          "finMs": 4360
+          "inicioMs": 3920,
+          "finMs": 4220
         },
         {
           "palabra": "el",
-          "inicioMs": 4360,
-          "finMs": 4460
+          "inicioMs": 4220,
+          "finMs": 4300
         },
         {
           "palabra": "ritual",
-          "inicioMs": 4460,
+          "inicioMs": 4300,
+          "finMs": 4540
+        },
+        {
+          "palabra": "de",
+          "inicioMs": 4540,
           "finMs": 4700
         },
         {
-          "palabra": "de",
-          "inicioMs": 4700,
-          "finMs": 4880
-        },
-        {
           "palabra": "la",
-          "inicioMs": 4880,
-          "finMs": 5000
+          "inicioMs": 4700,
+          "finMs": 4800
         },
         {
           "palabra": "cura",
-          "inicioMs": 5000,
-          "finMs": 5340
+          "inicioMs": 4800,
+          "finMs": 5140
         },
         {
           "palabra": "y",
-          "inicioMs": 5340,
-          "finMs": 5680
+          "inicioMs": 5140,
+          "finMs": 5320
         },
         {
           "palabra": "envía",
-          "inicioMs": 5680,
-          "finMs": 5980
+          "inicioMs": 5320,
+          "finMs": 5580
         },
         {
           "palabra": "una",
-          "inicioMs": 5980,
-          "finMs": 6180
+          "inicioMs": 5580,
+          "finMs": 5740
         },
         {
           "palabra": "orden",
-          "inicioMs": 6180,
-          "finMs": 6460
+          "inicioMs": 5740,
+          "finMs": 5960
         },
         {
           "palabra": "de",
-          "inicioMs": 6460,
-          "finMs": 6660
+          "inicioMs": 5960,
+          "finMs": 6140
         },
         {
           "palabra": "emergencia",
-          "inicioMs": 6660,
-          "finMs": 7120
+          "inicioMs": 6140,
+          "finMs": 6620
         },
         {
           "palabra": "inmediata",
-          "inicioMs": 7120,
-          "finMs": 7660
+          "inicioMs": 6620,
+          "finMs": 7100
         },
         {
           "palabra": "a",
-          "inicioMs": 7660,
-          "finMs": 7880
+          "inicioMs": 7100,
+          "finMs": 7340
         },
         {
           "palabra": "tu",
-          "inicioMs": 7880,
-          "finMs": 7960
+          "inicioMs": 7340,
+          "finMs": 7440
         },
         {
           "palabra": "química",
-          "inicioMs": 7960,
-          "finMs": 8340
+          "inicioMs": 7440,
+          "finMs": 7780
         },
         {
           "palabra": "interna",
-          "inicioMs": 8340,
-          "finMs": 8820
+          "inicioMs": 7780,
+          "finMs": 8280
+        }
+      ],
+      "objetos": [
+        {
+          "id": "obj_placebo_3",
+          "propId": "capsula_placebo_roja_blanca",
+          "posicion": {
+            "x": 150,
+            "y": -30
+          },
+          "escala": 1.25,
+          "capaZ": 28,
+          "pasos": [
+            {
+              "inicioProgreso": 0.0,
+              "finProgreso": 0.5,
+              "hastaPalabra": "envía",
+              "posicion": {
+                "x": 150,
+                "y": -30
+              },
+              "escala": 1.25,
+              "estado": "intacta",
+              "curva": "suave"
+            },
+            {
+              "inicioProgreso": 0.5,
+              "finProgreso": 1.0,
+              "desdePalabra": "envía",
+              "posicion": {
+                "x": 135,
+                "y": -20
+              },
+              "escala": 1.35,
+              "estado": "activacion_neural",
+              "curva": "rebote"
+            }
+          ]
+        }
+      ],
+      "focoCamara": [
+        {
+          "inicioProgreso": 0.0,
+          "finProgreso": 0.36,
+          "x": -90,
+          "y": 20,
+          "escala": 1.12,
+          "curva": "suave"
+        },
+        {
+          "inicioProgreso": 0.36,
+          "finProgreso": 0.72,
+          "desdePalabra": "Al",
+          "x": 90,
+          "y": -20,
+          "escala": 1.22,
+          "curva": "suave"
+        },
+        {
+          "inicioProgreso": 0.72,
+          "finProgreso": 1.0,
+          "desdePalabra": "envía",
+          "x": 0,
+          "y": 0,
+          "escala": 1.0,
+          "curva": "suave"
         }
       ]
     },
@@ -711,11 +881,10 @@
           "nombre": "Stickman Farmacéutico",
           "posicion": {
             "x": -220,
-            "y": 120
+            "y": 90
           },
           "escala": 1.0,
           "orientacion": "derecha",
-          "prop": "manivela_valvula_farmacia_interna",
           "habla": true,
           "capaZ": 20,
           "acciones": [
@@ -729,10 +898,11 @@
                   "expresion": "talking_enthusiastic",
                   "posicion": {
                     "x": -220,
-                    "y": 120
+                    "y": 90
                   },
                   "curva": "suave",
-                  "procedural": "estatico"
+                  "procedural": "estatico",
+                  "hastaPalabra": "libera"
                 },
                 {
                   "inicioProgreso": 0.35,
@@ -741,10 +911,12 @@
                   "expresion": "smile_wide",
                   "posicion": {
                     "x": -180,
-                    "y": 120
+                    "y": 90
                   },
                   "curva": "suave",
-                  "procedural": "manipular"
+                  "procedural": "manipular",
+                  "desdePalabra": "libera",
+                  "hastaPalabra": "analgésicos"
                 },
                 {
                   "inicioProgreso": 0.7,
@@ -753,148 +925,215 @@
                   "expresion": "proud",
                   "posicion": {
                     "x": -160,
-                    "y": 110
+                    "y": 90
                   },
                   "curva": "rebote",
-                  "procedural": "estatico"
+                  "procedural": "estatico",
+                  "desdePalabra": "analgésicos"
                 }
               ]
             }
           ]
         }
       ],
-      "duracionSegundos": 9.082,
+      "duracionSegundos": 9.562,
       "palabras": [
         {
           "palabra": "En",
           "inicioMs": 0,
-          "finMs": 160
+          "finMs": 200
         },
         {
           "palabra": "cuestión",
-          "inicioMs": 160,
-          "finMs": 440
+          "inicioMs": 200,
+          "finMs": 480
         },
         {
           "palabra": "de",
-          "inicioMs": 440,
-          "finMs": 580
+          "inicioMs": 480,
+          "finMs": 640
         },
         {
           "palabra": "segundos",
-          "inicioMs": 580,
-          "finMs": 960
+          "inicioMs": 640,
+          "finMs": 1060
         },
         {
           "palabra": "la",
-          "inicioMs": 1160,
-          "finMs": 1180
+          "inicioMs": 1400,
+          "finMs": 1420
         },
         {
           "palabra": "sustancia",
-          "inicioMs": 1180,
-          "finMs": 1560
+          "inicioMs": 1420,
+          "finMs": 1860
         },
         {
           "palabra": "gris",
-          "inicioMs": 1560,
-          "finMs": 1880
+          "inicioMs": 1860,
+          "finMs": 2140
         },
         {
           "palabra": "del",
-          "inicioMs": 1880,
-          "finMs": 2000
+          "inicioMs": 2140,
+          "finMs": 2300
         },
         {
           "palabra": "tronco",
-          "inicioMs": 2000,
-          "finMs": 2280
+          "inicioMs": 2300,
+          "finMs": 2600
         },
         {
           "palabra": "encefálico",
-          "inicioMs": 2280,
-          "finMs": 2880
+          "inicioMs": 2600,
+          "finMs": 3220
         },
         {
           "palabra": "libera",
-          "inicioMs": 2880,
-          "finMs": 3200
+          "inicioMs": 3220,
+          "finMs": 3560
         },
         {
           "palabra": "endorfinas",
-          "inicioMs": 3200,
-          "finMs": 3660
+          "inicioMs": 3560,
+          "finMs": 4080
         },
         {
           "palabra": "y",
-          "inicioMs": 3660,
-          "finMs": 3760
+          "inicioMs": 4080,
+          "finMs": 4200
         },
         {
           "palabra": "opioides",
-          "inicioMs": 3760,
-          "finMs": 3980
+          "inicioMs": 4200,
+          "finMs": 4500
         },
         {
           "palabra": "naturales",
-          "inicioMs": 3980,
-          "finMs": 4840
+          "inicioMs": 4500,
+          "finMs": 5380
         },
         {
           "palabra": "analgésicos",
-          "inicioMs": 5020,
-          "finMs": 5700
+          "inicioMs": 5520,
+          "finMs": 6180
         },
         {
           "palabra": "idénticos",
-          "inicioMs": 5700,
-          "finMs": 6280
+          "inicioMs": 6180,
+          "finMs": 6680
         },
         {
           "palabra": "a",
-          "inicioMs": 6280,
-          "finMs": 6420
+          "inicioMs": 6680,
+          "finMs": 6840
         },
         {
           "palabra": "la",
-          "inicioMs": 6420,
-          "finMs": 6500
+          "inicioMs": 6840,
+          "finMs": 6880
         },
         {
           "palabra": "morfina",
-          "inicioMs": 6500,
-          "finMs": 6900
+          "inicioMs": 6880,
+          "finMs": 7300
         },
         {
           "palabra": "sintetizados",
-          "inicioMs": 6900,
-          "finMs": 7560
+          "inicioMs": 7300,
+          "finMs": 8060
         },
         {
           "palabra": "por",
-          "inicioMs": 7560,
-          "finMs": 7780
+          "inicioMs": 8060,
+          "finMs": 8300
         },
         {
           "palabra": "tu",
-          "inicioMs": 7780,
-          "finMs": 7880
+          "inicioMs": 8300,
+          "finMs": 8400
         },
         {
           "palabra": "propio",
-          "inicioMs": 7880,
-          "finMs": 8140
+          "inicioMs": 8400,
+          "finMs": 8660
         },
         {
           "palabra": "cuerpo",
-          "inicioMs": 8140,
-          "finMs": 8460
+          "inicioMs": 8660,
+          "finMs": 8960
+        }
+      ],
+      "objetos": [
+        {
+          "id": "obj_placebo_4",
+          "propId": "manivela_valvula_farmacia_interna",
+          "posicion": {
+            "x": 155,
+            "y": -20
+          },
+          "escala": 1.25,
+          "capaZ": 28,
+          "pasos": [
+            {
+              "inicioProgreso": 0.0,
+              "finProgreso": 0.5,
+              "hastaPalabra": "analgésicos",
+              "posicion": {
+                "x": 155,
+                "y": -20
+              },
+              "escala": 1.25,
+              "estado": "cerrada",
+              "curva": "suave"
+            },
+            {
+              "inicioProgreso": 0.5,
+              "finProgreso": 1.0,
+              "desdePalabra": "analgésicos",
+              "posicion": {
+                "x": 140,
+                "y": -10
+              },
+              "escala": 1.35,
+              "estado": "abierta_liberando",
+              "curva": "rebote"
+            }
+          ]
+        }
+      ],
+      "focoCamara": [
+        {
+          "inicioProgreso": 0.0,
+          "finProgreso": 0.36,
+          "x": -90,
+          "y": 20,
+          "escala": 1.12,
+          "curva": "suave"
+        },
+        {
+          "inicioProgreso": 0.36,
+          "finProgreso": 0.72,
+          "desdePalabra": "libera",
+          "x": 90,
+          "y": -20,
+          "escala": 1.22,
+          "curva": "suave"
+        },
+        {
+          "inicioProgreso": 0.72,
+          "finProgreso": 1.0,
+          "desdePalabra": "analgésicos",
+          "x": 0,
+          "y": 0,
+          "escala": 1.0,
+          "curva": "suave"
         }
       ]
     },
     {
       "id": 5,
-      "texto": "Y no solo calma el dolor: los estudios clínicos demuestran que también dispara dopamina, reduce la inflamación y baja la presión arterial porque crees firmemente que vas a mejorar.",
+      "texto": "Y no solo calma el dolor: los estudios clínicos en hospitales demuestran que también dispara dopamina, reduce la inflamación y baja la presión arterial, todo porque tu mente espera sanar.",
       "icono": "Activity",
       "colorIcono": "#10B981",
       "tituloVisual": "EFECTOS FÍSICOS REALES",
@@ -922,11 +1161,10 @@
           "nombre": "Stickman",
           "posicion": {
             "x": -200,
-            "y": 120
+            "y": 90
           },
           "escala": 1.0,
           "orientacion": "derecha",
-          "prop": "monitor_presion_arterial_hud",
           "habla": true,
           "capaZ": 20,
           "acciones": [
@@ -940,10 +1178,11 @@
                   "expresion": "smile_soft",
                   "posicion": {
                     "x": -200,
-                    "y": 120
+                    "y": 90
                   },
                   "curva": "suave",
-                  "procedural": "estatico"
+                  "procedural": "estatico",
+                  "hastaPalabra": "también"
                 },
                 {
                   "inicioProgreso": 0.4,
@@ -952,10 +1191,12 @@
                   "expresion": "talking_enthusiastic",
                   "posicion": {
                     "x": -160,
-                    "y": 120
+                    "y": 90
                   },
                   "curva": "suave",
-                  "procedural": "estatico"
+                  "procedural": "estatico",
+                  "desdePalabra": "también",
+                  "hastaPalabra": "baja"
                 },
                 {
                   "inicioProgreso": 0.75,
@@ -964,162 +1205,229 @@
                   "expresion": "smile_wide",
                   "posicion": {
                     "x": -170,
-                    "y": 120
+                    "y": 90
                   },
                   "curva": "suave",
-                  "procedural": "estatico"
+                  "procedural": "estatico",
+                  "desdePalabra": "baja"
                 }
               ]
             }
           ]
         }
       ],
-      "duracionSegundos": 9.61,
+      "duracionSegundos": 6.202,
       "palabras": [
         {
           "palabra": "Y",
           "inicioMs": 0,
-          "finMs": 180
+          "finMs": 160
         },
         {
           "palabra": "no",
-          "inicioMs": 180,
-          "finMs": 280
+          "inicioMs": 160,
+          "finMs": 260
         },
         {
           "palabra": "solo",
-          "inicioMs": 280,
-          "finMs": 480
+          "inicioMs": 260,
+          "finMs": 440
         },
         {
           "palabra": "calma",
-          "inicioMs": 480,
-          "finMs": 820
+          "inicioMs": 440,
+          "finMs": 740
         },
         {
           "palabra": "el",
-          "inicioMs": 820,
-          "finMs": 940
+          "inicioMs": 740,
+          "finMs": 860
         },
         {
           "palabra": "dolor",
-          "inicioMs": 940,
-          "finMs": 1180
+          "inicioMs": 860,
+          "finMs": 1080
         },
         {
           "palabra": "los",
-          "inicioMs": 1520,
-          "finMs": 1660
+          "inicioMs": 1080,
+          "finMs": 1108
         },
         {
           "palabra": "estudios",
-          "inicioMs": 1660,
-          "finMs": 2020
+          "inicioMs": 1108,
+          "finMs": 1135
         },
         {
           "palabra": "clínicos",
-          "inicioMs": 2020,
-          "finMs": 2460
+          "inicioMs": 1135,
+          "finMs": 1162
         },
         {
           "palabra": "demuestran",
-          "inicioMs": 2460,
-          "finMs": 2940
+          "inicioMs": 1162,
+          "finMs": 1190
         },
         {
           "palabra": "que",
-          "inicioMs": 2940,
-          "finMs": 3060
+          "inicioMs": 1190,
+          "finMs": 1218
         },
         {
           "palabra": "también",
-          "inicioMs": 3060,
-          "finMs": 3340
+          "inicioMs": 1218,
+          "finMs": 1245
         },
         {
           "palabra": "dispara",
-          "inicioMs": 3340,
-          "finMs": 3720
+          "inicioMs": 1245,
+          "finMs": 1272
         },
         {
           "palabra": "dopamina",
-          "inicioMs": 3720,
-          "finMs": 4200
+          "inicioMs": 1272,
+          "finMs": 1312
         },
         {
           "palabra": "reduce",
-          "inicioMs": 4440,
-          "finMs": 4680
+          "inicioMs": 1300,
+          "finMs": 1560
         },
         {
           "palabra": "la",
-          "inicioMs": 4680,
-          "finMs": 4940
+          "inicioMs": 1560,
+          "finMs": 1780
         },
         {
           "palabra": "inflamación",
-          "inicioMs": 4940,
-          "finMs": 5500
+          "inicioMs": 1780,
+          "finMs": 2320
         },
         {
           "palabra": "y",
-          "inicioMs": 5500,
-          "finMs": 5780
+          "inicioMs": 2320,
+          "finMs": 2600
         },
         {
           "palabra": "baja",
-          "inicioMs": 5780,
-          "finMs": 5980
+          "inicioMs": 2600,
+          "finMs": 2800
         },
         {
           "palabra": "la",
-          "inicioMs": 5980,
-          "finMs": 6140
+          "inicioMs": 2800,
+          "finMs": 2960
         },
         {
           "palabra": "presión",
-          "inicioMs": 6140,
-          "finMs": 6460
+          "inicioMs": 2960,
+          "finMs": 3280
         },
         {
           "palabra": "arterial",
-          "inicioMs": 6460,
-          "finMs": 7000
+          "inicioMs": 3280,
+          "finMs": 3740
         },
         {
           "palabra": "porque",
-          "inicioMs": 7000,
-          "finMs": 7260
+          "inicioMs": 3740,
+          "finMs": 3960
         },
         {
           "palabra": "crees",
-          "inicioMs": 7260,
-          "finMs": 7640
+          "inicioMs": 3960,
+          "finMs": 4320
         },
         {
           "palabra": "firmemente",
-          "inicioMs": 7640,
-          "finMs": 8120
+          "inicioMs": 4320,
+          "finMs": 4740
         },
         {
           "palabra": "que",
-          "inicioMs": 8120,
-          "finMs": 8340
+          "inicioMs": 4740,
+          "finMs": 5000
         },
         {
           "palabra": "vas",
-          "inicioMs": 8340,
-          "finMs": 8500
+          "inicioMs": 5000,
+          "finMs": 5120
         },
         {
           "palabra": "a",
-          "inicioMs": 8500,
-          "finMs": 8620
+          "inicioMs": 5120,
+          "finMs": 5240
         },
         {
           "palabra": "mejorar",
-          "inicioMs": 8620,
-          "finMs": 8880
+          "inicioMs": 5240,
+          "finMs": 5520
+        }
+      ],
+      "objetos": [
+        {
+          "id": "obj_placebo_5",
+          "propId": "monitor_presion_arterial_hud",
+          "posicion": {
+            "x": 155,
+            "y": -25
+          },
+          "escala": 1.25,
+          "capaZ": 28,
+          "pasos": [
+            {
+              "inicioProgreso": 0.0,
+              "finProgreso": 0.5,
+              "hastaPalabra": "baja",
+              "posicion": {
+                "x": 155,
+                "y": -25
+              },
+              "escala": 1.25,
+              "estado": "monitoreo",
+              "curva": "suave"
+            },
+            {
+              "inicioProgreso": 0.5,
+              "finProgreso": 1.0,
+              "desdePalabra": "baja",
+              "posicion": {
+                "x": 135,
+                "y": -15
+              },
+              "escala": 1.35,
+              "estado": "estable",
+              "curva": "rebote"
+            }
+          ]
+        }
+      ],
+      "focoCamara": [
+        {
+          "inicioProgreso": 0.0,
+          "finProgreso": 0.36,
+          "x": -90,
+          "y": 20,
+          "escala": 1.12,
+          "curva": "suave"
+        },
+        {
+          "inicioProgreso": 0.36,
+          "finProgreso": 0.72,
+          "desdePalabra": "también",
+          "x": 90,
+          "y": -20,
+          "escala": 1.22,
+          "curva": "suave"
+        },
+        {
+          "inicioProgreso": 0.72,
+          "finProgreso": 1.0,
+          "desdePalabra": "baja",
+          "x": 0,
+          "y": 0,
+          "escala": 1.0,
+          "curva": "suave"
         }
       ]
     },
@@ -1153,11 +1461,10 @@
           "nombre": "Stickman",
           "posicion": {
             "x": -220,
-            "y": 120
+            "y": 90
           },
           "escala": 1.0,
           "orientacion": "derecha",
-          "prop": "caja_placebo_etiqueta_abierta",
           "habla": true,
           "capaZ": 20,
           "acciones": [
@@ -1171,10 +1478,11 @@
                   "expresion": "laugh",
                   "posicion": {
                     "x": -220,
-                    "y": 120
+                    "y": 90
                   },
                   "curva": "suave",
-                  "procedural": "rebotar"
+                  "procedural": "caminar",
+                  "hastaPalabra": "diciéndoles"
                 },
                 {
                   "inicioProgreso": 0.4,
@@ -1183,10 +1491,12 @@
                   "expresion": "eureka",
                   "posicion": {
                     "x": -180,
-                    "y": 120
+                    "y": 90
                   },
                   "curva": "suave",
-                  "procedural": "estatico"
+                  "procedural": "estatico",
+                  "desdePalabra": "diciéndoles",
+                  "hastaPalabra": "activa"
                 },
                 {
                   "inicioProgreso": 0.75,
@@ -1195,17 +1505,18 @@
                   "expresion": "smile_wide",
                   "posicion": {
                     "x": -170,
-                    "y": 110
+                    "y": 90
                   },
                   "curva": "rebote",
-                  "procedural": "estatico"
+                  "procedural": "estatico",
+                  "desdePalabra": "activa"
                 }
               ]
             }
           ]
         }
       ],
-      "duracionSegundos": 10.138,
+      "duracionSegundos": 9.922,
       "palabras": [
         {
           "palabra": "Lo",
@@ -1215,138 +1526,167 @@
         {
           "palabra": "más",
           "inicioMs": 200,
-          "finMs": 420
+          "finMs": 400
         },
         {
           "palabra": "loco",
-          "inicioMs": 420,
-          "finMs": 720
+          "inicioMs": 400,
+          "finMs": 760
         },
         {
           "palabra": "es",
-          "inicioMs": 720,
-          "finMs": 880
+          "inicioMs": 760,
+          "finMs": 940
         },
         {
           "palabra": "que",
-          "inicioMs": 880,
-          "finMs": 980
+          "inicioMs": 940,
+          "finMs": 1060
         },
         {
           "palabra": "los",
-          "inicioMs": 980,
-          "finMs": 1100
+          "inicioMs": 1060,
+          "finMs": 1180
         },
         {
           "palabra": "científicos",
-          "inicioMs": 1100,
-          "finMs": 1800
+          "inicioMs": 1180,
+          "finMs": 1760
         },
         {
           "palabra": "han",
-          "inicioMs": 1800,
-          "finMs": 1920
+          "inicioMs": 1760,
+          "finMs": 1880
         },
         {
           "palabra": "probado",
-          "inicioMs": 1920,
-          "finMs": 2260
+          "inicioMs": 1880,
+          "finMs": 2200
         },
         {
           "palabra": "darle",
-          "inicioMs": 2260,
-          "finMs": 2600
+          "inicioMs": 2200,
+          "finMs": 2520
         },
         {
           "palabra": "placebos",
-          "inicioMs": 2600,
-          "finMs": 3080
+          "inicioMs": 2520,
+          "finMs": 2980
         },
         {
           "palabra": "a",
-          "inicioMs": 3080,
-          "finMs": 3160
+          "inicioMs": 2980,
+          "finMs": 3040
         },
         {
           "palabra": "pacientes",
-          "inicioMs": 3160,
-          "finMs": 3640
+          "inicioMs": 3040,
+          "finMs": 3520
         },
         {
           "palabra": "diciéndoles",
-          "inicioMs": 3640,
-          "finMs": 4200
+          "inicioMs": 3520,
+          "finMs": 4180
         },
         {
           "palabra": "abiertamente",
-          "inicioMs": 4200,
-          "finMs": 4780
+          "inicioMs": 4180,
+          "finMs": 4720
         },
         {
           "palabra": "que",
-          "inicioMs": 4780,
-          "finMs": 5060
+          "inicioMs": 4720,
+          "finMs": 4980
         },
         {
           "palabra": "es",
-          "inicioMs": 5060,
-          "finMs": 5200
+          "inicioMs": 4980,
+          "finMs": 5120
         },
         {
           "palabra": "azúcar",
-          "inicioMs": 5200,
-          "finMs": 5940
+          "inicioMs": 5120,
+          "finMs": 5720
         },
         {
           "palabra": "y",
-          "inicioMs": 5940,
-          "finMs": 6360
+          "inicioMs": 5720,
+          "finMs": 6120
         },
         {
           "palabra": "el",
-          "inicioMs": 6360,
-          "finMs": 6480
+          "inicioMs": 6120,
+          "finMs": 6200
         },
         {
           "palabra": "cuerpo",
-          "inicioMs": 6480,
-          "finMs": 6660
+          "inicioMs": 6200,
+          "finMs": 6400
         },
         {
           "palabra": "activa",
-          "inicioMs": 6660,
-          "finMs": 7240
+          "inicioMs": 6400,
+          "finMs": 7000
         },
         {
           "palabra": "la",
-          "inicioMs": 7240,
-          "finMs": 7340
+          "inicioMs": 7000,
+          "finMs": 7120
         },
         {
           "palabra": "respuesta",
-          "inicioMs": 7340,
-          "finMs": 7740
+          "inicioMs": 7120,
+          "finMs": 7540
         },
         {
           "palabra": "biológica",
-          "inicioMs": 7740,
-          "finMs": 8440
+          "inicioMs": 7540,
+          "finMs": 8240
         },
         {
           "palabra": "exactamente",
-          "inicioMs": 8440,
-          "finMs": 9000
+          "inicioMs": 8240,
+          "finMs": 8740
         },
         {
           "palabra": "igual",
-          "inicioMs": 9000,
-          "finMs": 9800
+          "inicioMs": 8740,
+          "finMs": 9560
+        }
+      ],
+      "objetos": [],
+      "focoCamara": [
+        {
+          "inicioProgreso": 0.0,
+          "finProgreso": 0.36,
+          "x": -90,
+          "y": 20,
+          "escala": 1.12,
+          "curva": "suave"
+        },
+        {
+          "inicioProgreso": 0.36,
+          "finProgreso": 0.72,
+          "desdePalabra": "diciéndoles",
+          "x": 90,
+          "y": -20,
+          "escala": 1.22,
+          "curva": "suave"
+        },
+        {
+          "inicioProgreso": 0.72,
+          "finProgreso": 1.0,
+          "desdePalabra": "activa",
+          "x": 0,
+          "y": 0,
+          "escala": 1.0,
+          "curva": "suave"
         }
       ]
     },
     {
       "id": 7,
-      "texto": "Así que nunca subestimes a tu mente: la farmacia más sofisticada y poderosa del planeta no está en la esquina... siempre estuvo instalada adentro de ti.",
+      "texto": "Así que nunca subestimes el poder de tu mente: la farmacia más sofisticada, precisa y poderosa del planeta no está en la esquina... siempre estuvo instalada adentro de ti.",
       "icono": "Brain",
       "colorIcono": "#F59E0B",
       "tituloVisual": "TU PROPIA FARMACIA",
@@ -1374,11 +1714,10 @@
           "nombre": "Stickman",
           "posicion": {
             "x": -180,
-            "y": 110
+            "y": 90
           },
           "escala": 1.0,
           "orientacion": "derecha",
-          "prop": "esferas_endorfinas_flotantes",
           "habla": true,
           "capaZ": 20,
           "acciones": [
@@ -1392,10 +1731,11 @@
                   "expresion": "smile_wide",
                   "posicion": {
                     "x": -180,
-                    "y": 110
+                    "y": 90
                   },
                   "curva": "suave",
-                  "procedural": "estatico"
+                  "procedural": "estatico",
+                  "hastaPalabra": "farmacia"
                 },
                 {
                   "inicioProgreso": 0.35,
@@ -1404,10 +1744,12 @@
                   "expresion": "talking_enthusiastic",
                   "posicion": {
                     "x": -150,
-                    "y": 110
+                    "y": 90
                   },
                   "curva": "suave",
-                  "procedural": "estatico"
+                  "procedural": "estatico",
+                  "desdePalabra": "farmacia",
+                  "hastaPalabra": "siempre"
                 },
                 {
                   "inicioProgreso": 0.7,
@@ -1416,147 +1758,214 @@
                   "expresion": "proud",
                   "posicion": {
                     "x": -120,
-                    "y": 110
+                    "y": 90
                   },
                   "curva": "suave",
-                  "procedural": "caminar"
+                  "procedural": "caminar",
+                  "desdePalabra": "siempre"
                 }
               ]
             }
           ]
         }
       ],
-      "duracionSegundos": 8.242,
+      "duracionSegundos": 7.594,
       "palabras": [
         {
           "palabra": "Así",
           "inicioMs": 0,
-          "finMs": 211
+          "finMs": 340
         },
         {
           "palabra": "que",
-          "inicioMs": 211,
-          "finMs": 422
+          "inicioMs": 340,
+          "finMs": 440
         },
         {
           "palabra": "nunca",
-          "inicioMs": 422,
-          "finMs": 634
+          "inicioMs": 440,
+          "finMs": 640
         },
         {
           "palabra": "subestimes",
-          "inicioMs": 634,
-          "finMs": 846
+          "inicioMs": 640,
+          "finMs": 1160
         },
         {
           "palabra": "a",
-          "inicioMs": 846,
-          "finMs": 1057
+          "inicioMs": 1160,
+          "finMs": 1300
         },
         {
           "palabra": "tu",
-          "inicioMs": 1057,
-          "finMs": 1268
+          "inicioMs": 1300,
+          "finMs": 1380
         },
         {
           "palabra": "mente",
-          "inicioMs": 1268,
-          "finMs": 1480
+          "inicioMs": 1380,
+          "finMs": 1620
         },
         {
           "palabra": "la",
-          "inicioMs": 1480,
-          "finMs": 1960
+          "inicioMs": 1820,
+          "finMs": 1880
         },
         {
           "palabra": "farmacia",
-          "inicioMs": 1960,
-          "finMs": 2440
+          "inicioMs": 1880,
+          "finMs": 2300
         },
         {
           "palabra": "más",
-          "inicioMs": 2440,
-          "finMs": 2660
+          "inicioMs": 2300,
+          "finMs": 2480
         },
         {
           "palabra": "sofisticada",
-          "inicioMs": 2660,
-          "finMs": 3300
+          "inicioMs": 2480,
+          "finMs": 3020
         },
         {
           "palabra": "y",
-          "inicioMs": 3300,
-          "finMs": 3400
+          "inicioMs": 3020,
+          "finMs": 3100
         },
         {
           "palabra": "poderosa",
-          "inicioMs": 3400,
-          "finMs": 3800
+          "inicioMs": 3100,
+          "finMs": 3480
         },
         {
           "palabra": "del",
-          "inicioMs": 3800,
-          "finMs": 3940
+          "inicioMs": 3480,
+          "finMs": 3600
         },
         {
           "palabra": "planeta",
-          "inicioMs": 3940,
-          "finMs": 4220
+          "inicioMs": 3600,
+          "finMs": 3860
         },
         {
           "palabra": "no",
-          "inicioMs": 4220,
-          "finMs": 4460
+          "inicioMs": 3860,
+          "finMs": 4060
         },
         {
           "palabra": "está",
-          "inicioMs": 4460,
-          "finMs": 4700
+          "inicioMs": 4060,
+          "finMs": 4240
         },
         {
           "palabra": "en",
-          "inicioMs": 4700,
-          "finMs": 4780
+          "inicioMs": 4240,
+          "finMs": 4300
         },
         {
           "palabra": "la",
-          "inicioMs": 4780,
-          "finMs": 4840
+          "inicioMs": 4300,
+          "finMs": 4340
         },
         {
           "palabra": "esquina",
-          "inicioMs": 4840,
-          "finMs": 5820
+          "inicioMs": 4340,
+          "finMs": 4680
         },
         {
           "palabra": "siempre",
-          "inicioMs": 5820,
-          "finMs": 6160
+          "inicioMs": 5040,
+          "finMs": 5360
         },
         {
           "palabra": "estuvo",
-          "inicioMs": 6160,
-          "finMs": 6400
+          "inicioMs": 5360,
+          "finMs": 5620
         },
         {
           "palabra": "instalada",
-          "inicioMs": 6400,
-          "finMs": 6840
+          "inicioMs": 5620,
+          "finMs": 6100
         },
         {
           "palabra": "adentro",
-          "inicioMs": 6840,
-          "finMs": 7360
+          "inicioMs": 6100,
+          "finMs": 6640
         },
         {
           "palabra": "de",
-          "inicioMs": 7360,
-          "finMs": 7440
+          "inicioMs": 6640,
+          "finMs": 6720
         },
         {
           "palabra": "ti",
-          "inicioMs": 7440,
-          "finMs": 7660
+          "inicioMs": 6720,
+          "finMs": 6920
+        }
+      ],
+      "objetos": [
+        {
+          "id": "obj_placebo_7",
+          "propId": "esferas_endorfinas_flotantes",
+          "posicion": {
+            "x": 150,
+            "y": -40
+          },
+          "escala": 1.25,
+          "capaZ": 28,
+          "pasos": [
+            {
+              "inicioProgreso": 0.0,
+              "finProgreso": 0.5,
+              "hastaPalabra": "siempre",
+              "posicion": {
+                "x": 150,
+                "y": -40
+              },
+              "escala": 1.25,
+              "estado": "sintesis",
+              "curva": "suave"
+            },
+            {
+              "inicioProgreso": 0.5,
+              "finProgreso": 1.0,
+              "desdePalabra": "siempre",
+              "posicion": {
+                "x": 130,
+                "y": -30
+              },
+              "escala": 1.35,
+              "estado": "liberacion",
+              "curva": "rebote"
+            }
+          ]
+        }
+      ],
+      "focoCamara": [
+        {
+          "inicioProgreso": 0.0,
+          "finProgreso": 0.36,
+          "x": -90,
+          "y": 20,
+          "escala": 1.12,
+          "curva": "suave"
+        },
+        {
+          "inicioProgreso": 0.36,
+          "finProgreso": 0.72,
+          "desdePalabra": "farmacia",
+          "x": 90,
+          "y": -20,
+          "escala": 1.22,
+          "curva": "suave"
+        },
+        {
+          "inicioProgreso": 0.72,
+          "finProgreso": 1.0,
+          "desdePalabra": "siempre",
+          "x": 0,
+          "y": 0,
+          "escala": 1.0,
+          "curva": "suave"
         }
       ]
     }

@@ -2,6 +2,7 @@ ID / SLUG: hormiga_caida_inmortal
 Título: ¿Por qué una hormiga sobrevive a una caída infinita?
 Gancho: Si una persona cae desde el piso cincuenta de un edificio, el resultado es fatal. Pero si dejas caer a una pequeña hormiga desde esa misma altura, aterrizará en el pavimento y seguirá caminando.
 Tema: ¿Por qué una hormiga puede caer desde un rascacielos y salir caminando como si nada? Ley cuadrado-cúbica
+Duración objetivo: [62, 110]
 ============================================================
 
 [Escena 1] CAÍDA EXTREMA

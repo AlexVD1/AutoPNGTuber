@@ -1,0 +1,28 @@
+ID / SLUG: por_que_los_que_menos_saben_efecto_dunning_kruger
+Título: Por qué los que menos saben son los más seguros (Dunning-Kruger)
+Gancho: En 1995, un hombre asaltó dos bancos a plena luz del día con la cara empapada en jugo de limón, jurando que era totalmente invisible ante las cámaras.
+Tema: Psicología cognitiva del efecto Dunning-Kruger, el robo con jugo de limón de McArthur Wheeler en 1995 y la curva entre ignorancia, confianza y sabiduría.
+Duración objetivo: [62, 75]
+============================================================
+
+[Escena 1] EL LADRÓN DEL JUGO DE LIMÓN
+En mil novecientos noventa y cinco, un hombre asaltó dos bancos a plena luz del día con la cara empapada en jugo de limón, jurando que era totalmente invisible ante las cámaras.
+
+[Escena 2] LA LÓGICA DE LA TINTA INVISIBLE
+Cuando la policía lo arrestó una hora después, McArthur Wheeler estaba genuinamente indignado: como el limón sirve de tinta invisible en papel, creyó que borraría su rostro por completo.
+
+[Escena 3] ESTUDIO DUNNING-KRUGER (1999)
+Intrigados por este caso absurdo, los psicólogos David Dunning y Justin Kruger descubrieron en mil novecientos noventa y nueve una trampa mental universal: la doble ceguera de la ignorancia.
+
+[Escena 4] LA CIMA DE LA IGNORANCIA
+Cuando sabes muy poco sobre un tema, no tienes el criterio necesario para notar tus propios errores. Así escalas directo a la llamada Cima de la Ignorancia.
+
+[Escena 5] EL VALLE DE LA DESESPERACIÓN
+Pero si estudias de verdad, esa ilusión se desploma hacia el Valle de la Desesperación: de pronto comprendes lo gigantesco y complejo que es todo lo que ignoras.
+
+[Escena 6] LA PENDIENTE DE LA ILUMINACIÓN
+Solo con años de práctica subes por la Pendiente de la Iluminación. Ahí descubres que los verdaderos expertos rara vez gritan certezas absolutas; casi siempre responden con prudencia.
+
+[Escena 7] LA SABIDURÍA EMPIEZA CON LA DUDA
+La próxima vez que sientas que dominas un tema complejo en cinco minutos, mírate al espejo: quizá llevas la cara llena de jugo de limón sin darte cuenta.
+

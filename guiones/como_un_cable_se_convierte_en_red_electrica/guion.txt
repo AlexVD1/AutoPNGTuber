@@ -1,0 +1,28 @@
+ID / SLUG: como_un_cable_se_convierte_en_red_electrica
+Título: Cómo un cable suelto se convierte en una red eléctrica
+Gancho: Conectas un foco al final de un cable larguísimo tendido por el patio... y la bombilla apenas brilla como una cerilla moribunda.
+Tema: Por qué un cable largo no enciende un foco: caída de tensión, efecto Joule y la solución de alta tensión con transformadores.
+Duración objetivo: [62, 76]
+============================================================
+
+[Escena 1] LA BOMBILLA APAGADA
+Conectas un foco al final de un cable larguísimo tendido por el patio... y la bombilla apenas brilla como una cerilla moribunda. ¿A dónde diablos se esfumó toda tu electricidad?
+
+[Escena 2] CAÍDA DE TENSIÓN
+No se rompió el foco: ¡el propio cable se tragó tu energía! Todo conductor de cobre ofrece resistencia física interna, y mientras más largo y delgado sea... peor es el desastre.
+
+[Escena 3] LA LEY DE JOULE
+Aquí entra la Ley de Joule: el calor perdido se dispara con la corriente al cuadrado. Si mandas mucha corriente por un cable largo, estás calentando el pasto, no prendiendo la lámpara.
+
+[Escena 4] EL TRANSFORMADOR
+¿La genial solución de los ingenieros? Un truco maestro: elevar el voltaje a las nubes con un transformador para obligar a la corriente eléctrica a desplomarse a casi cero.
+
+[Escena 5] ALTA TENSIÓN
+Con el voltaje por las nubes, la corriente es tan minúscula que el cable no se calienta absolutamente nada. Pero mucho cuidado: semejante voltaje salvaje puede saltar chispas por el aire buscando tierra.
+
+[Escena 6] BAJADA SEGURA
+Al llegar al granero colocamos un segundo transformador que hace justo lo contrario: baja el voltaje a un nivel seguro y devuelve toda la corriente que necesita tu foco.
+
+[Escena 7] LA RED ELÉCTRICA
+¡BAM! Una explosión de luz brillante ilumina la noche entera. Acabas de replicar en tu propio patio exactamente la misma red eléctrica de alta tensión que alimenta al planeta.
+

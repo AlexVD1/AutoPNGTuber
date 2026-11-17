@@ -10,15 +10,17 @@ import {
   useVideoConfig,
 } from "remotion";
 import { EscenaGuion, ObjetoEscena, PersonajeEscena } from "../types";
-import { evaluateCharacterState } from "../stickman/actionSequences";
+import { evaluateCharacterState, resolveTimeRangeFrames } from "../stickman/actionSequences";
 import { AnimatedIcon } from "./AnimatedIcon";
 import { CameraRig } from "./CameraRig";
+import { DiegeticCalloutsLayer } from "./DiegeticCallout";
 import { NarrativeElements } from "./NarrativeElements";
 import {
   ESCENARIOS_OSCUROS,
   NarrativeStage,
   NarrativeStageForeground,
 } from "./NarrativeStage";
+import { LightRaysOverlay, ParticleEmitterLayer } from "./ParticleEmitter";
 import { SceneObject } from "./SceneObject";
 import { Stickman } from "./Stickman";
 import { WordSubtitles } from "./WordSubtitles";
@@ -97,9 +99,15 @@ export const Scene: React.FC<SceneProps> = ({ escena }) => {
     escena.animacionEntrada,
   ]);
 
-  // Evaluación cinemática de cada personaje en el frame actual
+  // Evaluación cinemática de cada personaje en el frame actual (con anclaje léxico por palabra)
   const evaluatedCharacters = personajesList.map((p) => {
-    const evalState = evaluateCharacterState(p, frame, fps, sceneDurationFrames);
+    const evalState = evaluateCharacterState(
+      p,
+      frame,
+      fps,
+      sceneDurationFrames,
+      escena.palabras
+    );
     return {
       ...p,
       evaluated: evalState,
@@ -230,6 +238,23 @@ export const Scene: React.FC<SceneProps> = ({ escena }) => {
       {/* Efecto de sonido sincronizado (prioridad subordinada 0.18 - 0.25) */}
       {hasSfx && <Audio src={staticFile(sfxPath)} volume={sfxVolume} />}
 
+      {/* Eventos de SFX sincronizados a mitad de escena por palabra o tiempo */}
+      {escena.eventosSfx?.map((evSfx, idx) => {
+        if (!fileExistsInStatic(evSfx.sfx)) return null;
+        const win = resolveTimeRangeFrames(
+          evSfx,
+          sceneDurationFrames,
+          fps,
+          escena.palabras
+        );
+        const startFrame = Math.max(0, Math.min(sceneDurationFrames - 1, Math.round(win.startFrame)));
+        return (
+          <Sequence key={`evsfx-${idx}`} from={startFrame}>
+            <Audio src={staticFile(evSfx.sfx)} volume={evSfx.volumen ?? 0.25} />
+          </Sequence>
+        );
+      })}
+
       {/* 1. MUNDO CINEMATOGRÁFICO: Escenario, props y personajes afectados por la cámara */}
       <div className="absolute inset-0 z-0">
         <CameraRig
@@ -238,6 +263,9 @@ export const Scene: React.FC<SceneProps> = ({ escena }) => {
           composicionVisual={composicion}
           impactFrame={hasContactImpact ? frame : undefined}
           durationInFrames={sceneDurationFrames}
+          focoCamara={escena.focoCamara}
+          planos={escena.planos}
+          palabras={escena.palabras}
         >
           {/* Escenario ilustrado de fondo con capas de profundidad */}
           <NarrativeStage
@@ -246,13 +274,29 @@ export const Scene: React.FC<SceneProps> = ({ escena }) => {
             frame={frame}
           />
 
+          {/* Iluminación volumétrica opcional */}
+          <LightRaysOverlay active={escena.iluminacionVolumetrica} />
+
           {/* Elementos narrativos vectoriales interactivos (velocímetro, olas, viñetas) */}
           <NarrativeElements elementos={escena.elementosNarrativos} />
 
-          {/* Props y objetos interactivos en el escenario */}
+          {/* Props y objetos interactivos en el escenario con pasos y estados */}
           {objetosFinales.map((obj) => (
-            <SceneObject key={obj.id} objeto={obj} frame={frame} />
+            <SceneObject
+              key={obj.id}
+              objeto={obj}
+              frame={frame}
+              fps={fps}
+              totalFrames={sceneDurationFrames}
+              palabras={escena.palabras}
+            />
           ))}
+
+          {/* Emisores de partículas físicas (salpicaduras de lodo, agua, grava, polvo) */}
+          <ParticleEmitterLayer
+            emisores={escena.emisoresParticulas}
+            palabras={escena.palabras}
+          />
 
           {/* Escenario de personajes actuando de forma continua */}
           <div className="absolute inset-0 flex items-center justify-center pointer-events-none z-20">
@@ -273,7 +317,8 @@ export const Scene: React.FC<SceneProps> = ({ escena }) => {
                   className="absolute"
                   style={{
                     zIndex: char.capaZ ?? 10,
-                    transform: `translate(${ev.x}px, ${ev.y}px)`,
+                    transform: `translate(${ev.x}px, ${ev.y}px) rotate(${ev.rotacion ?? 0}deg)`,
+                    transformOrigin: ev.transformOrigin ?? "center bottom",
                     opacity: char.opacidad ?? (isAnima ? 0.85 : 1),
                     filter: isAnima
                       ? "invert(1) drop-shadow(0 0 16px #38BDF8) drop-shadow(0 0 32px #60A5FA)"
@@ -310,6 +355,13 @@ export const Scene: React.FC<SceneProps> = ({ escena }) => {
             })}
           </div>
 
+          {/* Cotas vectoriales diegéticas ancladas al mundo */}
+          <DiegeticCalloutsLayer
+            cotas={escena.cotasVectoriales}
+            personajes={personajesList}
+            palabras={escena.palabras}
+          />
+
           {/* Elementos de escenario en primer plano (capa superior a los personajes) */}
           <NarrativeStageForeground
             escenario={escenarioFinal}
@@ -341,8 +393,8 @@ export const Scene: React.FC<SceneProps> = ({ escena }) => {
 
       {/* 2. CAPA HUD SUPERIOR E INFERIOR (Subtítulos y Rótulo inmunes al zoom de la cámara) */}
       <AbsoluteFill className="flex flex-col justify-between items-center pointer-events-none z-30">
-        {/* Encabezado: Tarjeta compacta o clásica según el layout de la escena */}
-        {isNarrativeMode ? (
+        {/* Encabezado: Tarjeta compacta o clásica según el layout de la escena (en modo cinemático se oculta por completo para 100% inmersión) */}
+        {escena.layout === "cinematico" ? null : isNarrativeMode ? (
           <div className="w-full flex items-center justify-center pt-4">
             <AnimatedIcon
               icono={escena.icono}
@@ -362,8 +414,8 @@ export const Scene: React.FC<SceneProps> = ({ escena }) => {
           </div>
         )}
 
-        {/* Gancho: título corto grande, visible desde el frame 0 y durante los primeros 1.5 s */}
-        {escena.id === 1 && frame < 45 && (
+        {/* Gancho: título corto grande, visible desde el frame 0 y durante los primeros 1.5 s (solo en modos no cinemáticos) */}
+        {escena.layout !== "cinematico" && escena.id === 1 && frame < 45 && (
           <div
             className="absolute left-0 right-0 flex justify-center text-center"
             style={{

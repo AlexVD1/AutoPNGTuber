@@ -1,0 +1,2029 @@
+{
+  "meta": {
+    "id": "olor_lluvia_petricor_geosmina",
+    "slug": "olor_lluvia_petricor_geosmina",
+    "temaResumen": "¿Por qué amamos el olor a tierra mojada? El superpoder del petricor (Geosmina, Streptomyces, aerosoles del MIT y supervivencia homínida en la sabana)",
+    "duracionObjetivo": [
+      62,
+      75
+    ],
+    "titulo": "¿Por qué amamos el olor a tierra mojada? El superpoder del petricor",
+    "titulo_corto": "El olor a lluvia",
+    "gancho": "Tu nariz es más sensible al olor de la lluvia fresca... ¡que la nariz de un tiburón blanco detectando una gota de sangre en el océano!",
+    "genero": "Química, Sentidos Humanos y Evolución",
+    "playlist": "Biología, Sentidos Humanos y Curiosidades Científicas",
+    "fuentes": [
+      "Nature Chemistry (Aerosol generation by raindrop impact on porous surfaces, MIT 2015)",
+      "Bear & Thomas (CSIRO 1964, Nature: Genesis of Petrichor)",
+      "Journal of Applied Microbiology (Geosmin production by Streptomyces coelicolor)"
+    ]
+  },
+  "escenas": [
+    {
+      "id": 1,
+      "texto": "Tu nariz es más sensible al olor de la lluvia fresca... ¡que la nariz de un tiburón blanco detectando una gota de sangre en el océano!",
+      "icono": "CloudRain",
+      "colorIcono": "#38BDF8",
+      "tituloVisual": "MEJOR QUE UN TIBURÓN",
+      "composicionVisual": "escenario_ilustrado",
+      "escenario": "comparativa_olfato_tiburon_nariz",
+      "layout": "narrativo",
+      "transicion": "corte",
+      "efectosCamara": [
+        "punch",
+        "drift"
+      ],
+      "sfx": "sfx/sfx_lluvia_trueno_impacto.wav",
+      "volumenSfx": 0.25,
+      "palabrasClave": [
+        "nariz es más sensible",
+        "olor de la lluvia",
+        "tiburón blanco"
+      ],
+      "personajes": [
+        {
+          "id": "stickman_respirando",
+          "nombre": "Stickman",
+          "posicion": {
+            "x": -160,
+            "y": 90
+          },
+          "escala": 1.05,
+          "orientacion": "derecha",
+          "habla": true,
+          "capaZ": 20,
+          "acciones": [
+            {
+              "tipo": "personalizada",
+              "pasos": [
+                {
+                  "inicioProgreso": 0,
+                  "finProgreso": 0.5,
+                  "poseId": "looking_up_pose",
+                  "expresion": "smile_wide",
+                  "posicion": {
+                    "x": -160,
+                    "y": 90
+                  },
+                  "curva": "suave",
+                  "procedural": "estatico",
+                  "hastaPalabra": "tiburón"
+                },
+                {
+                  "inicioProgreso": 0.5,
+                  "finProgreso": 1.0,
+                  "poseId": "eureka_idea",
+                  "expresion": "eureka",
+                  "posicion": {
+                    "x": -140,
+                    "y": 90
+                  },
+                  "curva": "suave",
+                  "procedural": "estatico",
+                  "desdePalabra": "tiburón"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "objetos": [
+        {
+          "id": "tiburon_balanza",
+          "propId": "tiburon_frustrado_balanza",
+          "posicion": {
+            "x": 160,
+            "y": -30
+          },
+          "escala": 1.15,
+          "animacion": "vibrar",
+          "capaZ": 28,
+          "pasos": [
+            {
+              "inicioProgreso": 0.0,
+              "finProgreso": 0.5,
+              "hastaPalabra": "tiburón",
+              "posicion": {
+                "x": 160,
+                "y": -30
+              },
+              "escala": 1.3,
+              "estado": "equilibrio",
+              "curva": "suave"
+            },
+            {
+              "inicioProgreso": 0.5,
+              "finProgreso": 1.0,
+              "desdePalabra": "tiburón",
+              "posicion": {
+                "x": 135,
+                "y": -20
+              },
+              "escala": 1.42,
+              "estado": "gana_nariz",
+              "curva": "rebote"
+            }
+          ]
+        }
+      ],
+      "duracionSegundos": 7.522,
+      "palabras": [
+        {
+          "palabra": "Tu",
+          "inicioMs": 0,
+          "finMs": 180
+        },
+        {
+          "palabra": "nariz",
+          "inicioMs": 180,
+          "finMs": 560
+        },
+        {
+          "palabra": "es",
+          "inicioMs": 560,
+          "finMs": 800
+        },
+        {
+          "palabra": "más",
+          "inicioMs": 800,
+          "finMs": 980
+        },
+        {
+          "palabra": "sensible",
+          "inicioMs": 980,
+          "finMs": 1380
+        },
+        {
+          "palabra": "al",
+          "inicioMs": 1380,
+          "finMs": 1620
+        },
+        {
+          "palabra": "olor",
+          "inicioMs": 1620,
+          "finMs": 1860
+        },
+        {
+          "palabra": "de",
+          "inicioMs": 1860,
+          "finMs": 1960
+        },
+        {
+          "palabra": "la",
+          "inicioMs": 1960,
+          "finMs": 2060
+        },
+        {
+          "palabra": "lluvia",
+          "inicioMs": 2060,
+          "finMs": 2360
+        },
+        {
+          "palabra": "fresca",
+          "inicioMs": 2360,
+          "finMs": 3260
+        },
+        {
+          "palabra": "que",
+          "inicioMs": 3260,
+          "finMs": 3340
+        },
+        {
+          "palabra": "la",
+          "inicioMs": 3340,
+          "finMs": 3440
+        },
+        {
+          "palabra": "nariz",
+          "inicioMs": 3440,
+          "finMs": 3740
+        },
+        {
+          "palabra": "de",
+          "inicioMs": 3740,
+          "finMs": 3840
+        },
+        {
+          "palabra": "un",
+          "inicioMs": 3840,
+          "finMs": 3940
+        },
+        {
+          "palabra": "tiburón",
+          "inicioMs": 3940,
+          "finMs": 4360
+        },
+        {
+          "palabra": "blanco",
+          "inicioMs": 4360,
+          "finMs": 4800
+        },
+        {
+          "palabra": "detectando",
+          "inicioMs": 4800,
+          "finMs": 5400
+        },
+        {
+          "palabra": "una",
+          "inicioMs": 5400,
+          "finMs": 5560
+        },
+        {
+          "palabra": "gota",
+          "inicioMs": 5560,
+          "finMs": 5900
+        },
+        {
+          "palabra": "de",
+          "inicioMs": 5900,
+          "finMs": 5980
+        },
+        {
+          "palabra": "sangre",
+          "inicioMs": 5980,
+          "finMs": 6300
+        },
+        {
+          "palabra": "en",
+          "inicioMs": 6300,
+          "finMs": 6460
+        },
+        {
+          "palabra": "el",
+          "inicioMs": 6460,
+          "finMs": 6560
+        },
+        {
+          "palabra": "océano",
+          "inicioMs": 6560,
+          "finMs": 7000
+        }
+      ],
+      "focoCamara": [
+        {
+          "inicioProgreso": 0.0,
+          "finProgreso": 0.36,
+          "x": -90,
+          "y": 20,
+          "escala": 1.12,
+          "curva": "suave"
+        },
+        {
+          "inicioProgreso": 0.36,
+          "finProgreso": 0.72,
+          "desdePalabra": "tiburón",
+          "x": 95,
+          "y": -20,
+          "escala": 1.22,
+          "curva": "suave"
+        },
+        {
+          "inicioProgreso": 0.72,
+          "finProgreso": 1.0,
+          "x": 0,
+          "y": 0,
+          "escala": 1.0,
+          "curva": "suave"
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "texto": "El cerebro humano puede detectar el compuesto del olor a lluvia en concentraciones diminutas: ¡cinco partes por billón! Eso equivale a encontrar media cucharadita disuelta en quinientas piscinas olímpicas.",
+      "icono": "Droplets",
+      "colorIcono": "#06B6D4",
+      "tituloVisual": "5 PARTES POR BILLÓN",
+      "composicionVisual": "plano_general",
+      "escenario": "piscina_olimpica_geosmina",
+      "layout": "narrativo",
+      "transicion": "whip_right",
+      "efectosCamara": [
+        "punch",
+        "drift"
+      ],
+      "sfx": "sfx/sfx_gota_eco_piscina.wav",
+      "volumenSfx": 0.22,
+      "palabrasClave": [
+        "cinco partes por billón",
+        "media cucharadita",
+        "quinientas piscinas olímpicas"
+      ],
+      "personajes": [
+        {
+          "id": "stickman_explicando",
+          "nombre": "Stickman",
+          "posicion": {
+            "x": -180,
+            "y": 90
+          },
+          "escala": 1.0,
+          "orientacion": "derecha",
+          "habla": true,
+          "capaZ": 20,
+          "acciones": [
+            {
+              "tipo": "personalizada",
+              "pasos": [
+                {
+                  "inicioProgreso": 0,
+                  "finProgreso": 0.45,
+                  "poseId": "explaining_pointing_up",
+                  "expresion": "talking_enthusiastic",
+                  "posicion": {
+                    "x": -180,
+                    "y": 90
+                  },
+                  "curva": "suave",
+                  "procedural": "estatico",
+                  "hastaPalabra": "Eso"
+                },
+                {
+                  "inicioProgreso": 0.45,
+                  "finProgreso": 1.0,
+                  "poseId": "showing_both_hands",
+                  "expresion": "surprised",
+                  "posicion": {
+                    "x": -150,
+                    "y": 90
+                  },
+                  "curva": "suave",
+                  "procedural": "estatico",
+                  "desdePalabra": "Eso"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "objetos": [
+        {
+          "id": "piscina_gota",
+          "propId": "piscina_olimpica_micro_gota",
+          "posicion": {
+            "x": 160,
+            "y": -30
+          },
+          "escala": 1.25,
+          "animacion": "pulso",
+          "capaZ": 28,
+          "pasos": [
+            {
+              "inicioProgreso": 0.0,
+              "finProgreso": 0.5,
+              "hastaPalabra": "Eso",
+              "posicion": {
+                "x": 160,
+                "y": -30
+              },
+              "escala": 1.3,
+              "estado": "gota_cayendo",
+              "curva": "suave"
+            },
+            {
+              "inicioProgreso": 0.5,
+              "finProgreso": 1.0,
+              "desdePalabra": "Eso",
+              "posicion": {
+                "x": 135,
+                "y": -20
+              },
+              "escala": 1.42,
+              "estado": "onda_expansion",
+              "curva": "rebote"
+            }
+          ]
+        }
+      ],
+      "duracionSegundos": 10.666,
+      "palabras": [
+        {
+          "palabra": "El",
+          "inicioMs": 0,
+          "finMs": 220
+        },
+        {
+          "palabra": "cerebro",
+          "inicioMs": 220,
+          "finMs": 580
+        },
+        {
+          "palabra": "humano",
+          "inicioMs": 580,
+          "finMs": 800
+        },
+        {
+          "palabra": "puede",
+          "inicioMs": 800,
+          "finMs": 1180
+        },
+        {
+          "palabra": "detectar",
+          "inicioMs": 1180,
+          "finMs": 1700
+        },
+        {
+          "palabra": "el",
+          "inicioMs": 1700,
+          "finMs": 1800
+        },
+        {
+          "palabra": "compuesto",
+          "inicioMs": 1800,
+          "finMs": 2240
+        },
+        {
+          "palabra": "del",
+          "inicioMs": 2240,
+          "finMs": 2440
+        },
+        {
+          "palabra": "olor",
+          "inicioMs": 2440,
+          "finMs": 2740
+        },
+        {
+          "palabra": "a",
+          "inicioMs": 2740,
+          "finMs": 2800
+        },
+        {
+          "palabra": "lluvia",
+          "inicioMs": 2800,
+          "finMs": 3100
+        },
+        {
+          "palabra": "en",
+          "inicioMs": 3100,
+          "finMs": 3260
+        },
+        {
+          "palabra": "concentraciones",
+          "inicioMs": 3260,
+          "finMs": 3880
+        },
+        {
+          "palabra": "diminutas",
+          "inicioMs": 3880,
+          "finMs": 4620
+        },
+        {
+          "palabra": "cinco",
+          "inicioMs": 4820,
+          "finMs": 5120
+        },
+        {
+          "palabra": "partes",
+          "inicioMs": 5120,
+          "finMs": 5420
+        },
+        {
+          "palabra": "por",
+          "inicioMs": 5420,
+          "finMs": 5680
+        },
+        {
+          "palabra": "billón",
+          "inicioMs": 5680,
+          "finMs": 6120
+        },
+        {
+          "palabra": "Eso",
+          "inicioMs": 6340,
+          "finMs": 6520
+        },
+        {
+          "palabra": "equivale",
+          "inicioMs": 6520,
+          "finMs": 6820
+        },
+        {
+          "palabra": "a",
+          "inicioMs": 6820,
+          "finMs": 6880
+        },
+        {
+          "palabra": "encontrar",
+          "inicioMs": 6880,
+          "finMs": 7240
+        },
+        {
+          "palabra": "media",
+          "inicioMs": 7240,
+          "finMs": 7500
+        },
+        {
+          "palabra": "cucharadita",
+          "inicioMs": 7500,
+          "finMs": 8100
+        },
+        {
+          "palabra": "disuelta",
+          "inicioMs": 8100,
+          "finMs": 8560
+        },
+        {
+          "palabra": "en",
+          "inicioMs": 8560,
+          "finMs": 8640
+        },
+        {
+          "palabra": "quinientas",
+          "inicioMs": 8640,
+          "finMs": 9060
+        },
+        {
+          "palabra": "piscinas",
+          "inicioMs": 9060,
+          "finMs": 9420
+        },
+        {
+          "palabra": "olímpicas",
+          "inicioMs": 9420,
+          "finMs": 9980
+        }
+      ],
+      "focoCamara": [
+        {
+          "inicioProgreso": 0.0,
+          "finProgreso": 0.36,
+          "x": -90,
+          "y": 20,
+          "escala": 1.12,
+          "curva": "suave"
+        },
+        {
+          "inicioProgreso": 0.36,
+          "finProgreso": 0.72,
+          "desdePalabra": "Eso",
+          "x": 95,
+          "y": -20,
+          "escala": 1.22,
+          "curva": "suave"
+        },
+        {
+          "inicioProgreso": 0.72,
+          "finProgreso": 1.0,
+          "x": 0,
+          "y": 0,
+          "escala": 1.0,
+          "curva": "suave"
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "texto": "Pero el agua pura no huele a nada. Lo que estás oliendo se llama geosmina, una molécula producida por bacterias microscópicas llamadas Streptomyces que viven esperando la humedad bajo tierra.",
+      "icono": "Microscope",
+      "colorIcono": "#10B981",
+      "tituloVisual": "BACTERIAS Y GEOSMINA",
+      "composicionVisual": "escenario_ilustrado",
+      "escenario": "microcosmos_suelo_streptomyces",
+      "layout": "narrativo",
+      "transicion": "zoom_in",
+      "efectosCamara": [
+        "punch",
+        "drift"
+      ],
+      "sfx": "sfx/sfx_bacterias_microscopio_whir.wav",
+      "volumenSfx": 0.24,
+      "palabrasClave": [
+        "agua pura no huele",
+        "geosmina",
+        "Streptomyces bajo tierra"
+      ],
+      "personajes": [
+        {
+          "id": "stickman_descubridor",
+          "nombre": "Stickman",
+          "posicion": {
+            "x": -170,
+            "y": 90
+          },
+          "escala": 1.05,
+          "orientacion": "derecha",
+          "habla": true,
+          "capaZ": 20,
+          "acciones": [
+            {
+              "tipo": "personalizada",
+              "pasos": [
+                {
+                  "inicioProgreso": 0,
+                  "finProgreso": 0.45,
+                  "poseId": "investigating_magnifier",
+                  "expresion": "analytical",
+                  "posicion": {
+                    "x": -170,
+                    "y": 90
+                  },
+                  "curva": "suave",
+                  "procedural": "estatico",
+                  "hastaPalabra": "geosmina"
+                },
+                {
+                  "inicioProgreso": 0.45,
+                  "finProgreso": 1.0,
+                  "poseId": "eureka_idea",
+                  "expresion": "eureka",
+                  "posicion": {
+                    "x": -140,
+                    "y": 90
+                  },
+                  "curva": "suave",
+                  "procedural": "estatico",
+                  "desdePalabra": "geosmina"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "objetos": [
+        {
+          "id": "bacteria_geosmina",
+          "propId": "bacteria_streptomyces_geosmina",
+          "posicion": {
+            "x": 160,
+            "y": -30
+          },
+          "escala": 1.3,
+          "animacion": "vibrar",
+          "capaZ": 28,
+          "pasos": [
+            {
+              "inicioProgreso": 0.0,
+              "finProgreso": 0.5,
+              "hastaPalabra": "geosmina",
+              "posicion": {
+                "x": 160,
+                "y": -30
+              },
+              "escala": 1.3,
+              "estado": "colonia",
+              "curva": "suave"
+            },
+            {
+              "inicioProgreso": 0.5,
+              "finProgreso": 1.0,
+              "desdePalabra": "geosmina",
+              "posicion": {
+                "x": 135,
+                "y": -20
+              },
+              "escala": 1.42,
+              "estado": "liberando_geosmina",
+              "curva": "rebote"
+            }
+          ]
+        }
+      ],
+      "duracionSegundos": 9.922,
+      "palabras": [
+        {
+          "palabra": "Pero",
+          "inicioMs": 0,
+          "finMs": 220
+        },
+        {
+          "palabra": "el",
+          "inicioMs": 220,
+          "finMs": 340
+        },
+        {
+          "palabra": "agua",
+          "inicioMs": 340,
+          "finMs": 500
+        },
+        {
+          "palabra": "pura",
+          "inicioMs": 500,
+          "finMs": 840
+        },
+        {
+          "palabra": "no",
+          "inicioMs": 840,
+          "finMs": 980
+        },
+        {
+          "palabra": "huele",
+          "inicioMs": 980,
+          "finMs": 1240
+        },
+        {
+          "palabra": "a",
+          "inicioMs": 1240,
+          "finMs": 1340
+        },
+        {
+          "palabra": "nada",
+          "inicioMs": 1340,
+          "finMs": 1580
+        },
+        {
+          "palabra": "Lo",
+          "inicioMs": 1820,
+          "finMs": 1880
+        },
+        {
+          "palabra": "que",
+          "inicioMs": 1880,
+          "finMs": 2000
+        },
+        {
+          "palabra": "estás",
+          "inicioMs": 2000,
+          "finMs": 2180
+        },
+        {
+          "palabra": "oliendo",
+          "inicioMs": 2180,
+          "finMs": 2540
+        },
+        {
+          "palabra": "se",
+          "inicioMs": 2540,
+          "finMs": 2760
+        },
+        {
+          "palabra": "llama",
+          "inicioMs": 2760,
+          "finMs": 2960
+        },
+        {
+          "palabra": "geosmina",
+          "inicioMs": 2960,
+          "finMs": 3560
+        },
+        {
+          "palabra": "una",
+          "inicioMs": 3820,
+          "finMs": 3960
+        },
+        {
+          "palabra": "molécula",
+          "inicioMs": 3960,
+          "finMs": 4400
+        },
+        {
+          "palabra": "producida",
+          "inicioMs": 4400,
+          "finMs": 4840
+        },
+        {
+          "palabra": "por",
+          "inicioMs": 4840,
+          "finMs": 5040
+        },
+        {
+          "palabra": "bacterias",
+          "inicioMs": 5040,
+          "finMs": 5500
+        },
+        {
+          "palabra": "microscópicas",
+          "inicioMs": 5500,
+          "finMs": 6220
+        },
+        {
+          "palabra": "llamadas",
+          "inicioMs": 6220,
+          "finMs": 6680
+        },
+        {
+          "palabra": "Streptomyces",
+          "inicioMs": 6680,
+          "finMs": 7540
+        },
+        {
+          "palabra": "que",
+          "inicioMs": 7540,
+          "finMs": 7660
+        },
+        {
+          "palabra": "viven",
+          "inicioMs": 7660,
+          "finMs": 7880
+        },
+        {
+          "palabra": "esperando",
+          "inicioMs": 7880,
+          "finMs": 8200
+        },
+        {
+          "palabra": "la",
+          "inicioMs": 8200,
+          "finMs": 8440
+        },
+        {
+          "palabra": "humedad",
+          "inicioMs": 8440,
+          "finMs": 8720
+        },
+        {
+          "palabra": "bajo",
+          "inicioMs": 8720,
+          "finMs": 8960
+        },
+        {
+          "palabra": "tierra",
+          "inicioMs": 8960,
+          "finMs": 9380
+        }
+      ],
+      "focoCamara": [
+        {
+          "inicioProgreso": 0.0,
+          "finProgreso": 0.36,
+          "x": -90,
+          "y": 20,
+          "escala": 1.12,
+          "curva": "suave"
+        },
+        {
+          "inicioProgreso": 0.36,
+          "finProgreso": 0.72,
+          "desdePalabra": "geosmina",
+          "x": 95,
+          "y": -20,
+          "escala": 1.22,
+          "curva": "suave"
+        },
+        {
+          "inicioProgreso": 0.72,
+          "finProgreso": 1.0,
+          "x": 0,
+          "y": 0,
+          "escala": 1.0,
+          "curva": "suave"
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "texto": "En mil novecientos sesenta y cuatro, los científicos inventaron la palabra petricor uniendo roca e ícor, la sangre dorada de los dioses griegos, porque las piedras secas atrapan aceites aromáticos.",
+      "icono": "Sparkles",
+      "colorIcono": "#F59E0B",
+      "tituloVisual": "SANGRE DE DIOSES",
+      "composicionVisual": "escenario_ilustrado",
+      "escenario": "rocas_minerales_aceite_petricor",
+      "layout": "narrativo",
+      "transicion": "zoom_in",
+      "efectosCamara": [
+        "punch",
+        "drift"
+      ],
+      "sfx": "sfx/sfx_petricor_origen_griego_chime.wav",
+      "volumenSfx": 0.24,
+      "palabrasClave": [
+        "palabra petricor",
+        "sangre dorada de los dioses",
+        "aceites aromáticos"
+      ],
+      "personajes": [
+        {
+          "id": "stickman_grecia",
+          "nombre": "Stickman",
+          "posicion": {
+            "x": -160,
+            "y": 90
+          },
+          "escala": 1.05,
+          "orientacion": "derecha",
+          "habla": true,
+          "capaZ": 20,
+          "acciones": [
+            {
+              "tipo": "personalizada",
+              "pasos": [
+                {
+                  "inicioProgreso": 0,
+                  "finProgreso": 0.5,
+                  "poseId": "presenting_object",
+                  "expresion": "talking_enthusiastic",
+                  "posicion": {
+                    "x": -160,
+                    "y": 90
+                  },
+                  "curva": "suave",
+                  "procedural": "estatico",
+                  "hastaPalabra": "porque"
+                },
+                {
+                  "inicioProgreso": 0.5,
+                  "finProgreso": 1.0,
+                  "poseId": "eureka_idea",
+                  "expresion": "eureka",
+                  "posicion": {
+                    "x": -130,
+                    "y": 90
+                  },
+                  "curva": "suave",
+                  "procedural": "estatico",
+                  "desdePalabra": "porque"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "objetos": [
+        {
+          "id": "roca_petricor",
+          "propId": "roca_petricor_aceite_dorado",
+          "posicion": {
+            "x": 160,
+            "y": -30
+          },
+          "escala": 1.35,
+          "animacion": "pulso",
+          "capaZ": 28,
+          "pasos": [
+            {
+              "inicioProgreso": 0.0,
+              "finProgreso": 0.5,
+              "hastaPalabra": "porque",
+              "posicion": {
+                "x": 160,
+                "y": -30
+              },
+              "escala": 1.3,
+              "estado": "roca_seca",
+              "curva": "suave"
+            },
+            {
+              "inicioProgreso": 0.5,
+              "finProgreso": 1.0,
+              "desdePalabra": "porque",
+              "posicion": {
+                "x": 135,
+                "y": -20
+              },
+              "escala": 1.42,
+              "estado": "aceite_dorado",
+              "curva": "rebote"
+            }
+          ]
+        }
+      ],
+      "duracionSegundos": 10.498,
+      "palabras": [
+        {
+          "palabra": "En",
+          "inicioMs": 0,
+          "finMs": 220
+        },
+        {
+          "palabra": "mil",
+          "inicioMs": 220,
+          "finMs": 380
+        },
+        {
+          "palabra": "novecientos",
+          "inicioMs": 380,
+          "finMs": 1000
+        },
+        {
+          "palabra": "sesenta",
+          "inicioMs": 1000,
+          "finMs": 1380
+        },
+        {
+          "palabra": "y",
+          "inicioMs": 1380,
+          "finMs": 1420
+        },
+        {
+          "palabra": "cuatro",
+          "inicioMs": 1420,
+          "finMs": 1600
+        },
+        {
+          "palabra": "los",
+          "inicioMs": 1740,
+          "finMs": 1820
+        },
+        {
+          "palabra": "científicos",
+          "inicioMs": 1820,
+          "finMs": 2400
+        },
+        {
+          "palabra": "inventaron",
+          "inicioMs": 2400,
+          "finMs": 2880
+        },
+        {
+          "palabra": "la",
+          "inicioMs": 2880,
+          "finMs": 3020
+        },
+        {
+          "palabra": "palabra",
+          "inicioMs": 3020,
+          "finMs": 3300
+        },
+        {
+          "palabra": "petricor",
+          "inicioMs": 3300,
+          "finMs": 3860
+        },
+        {
+          "palabra": "uniendo",
+          "inicioMs": 3860,
+          "finMs": 4200
+        },
+        {
+          "palabra": "roca",
+          "inicioMs": 4200,
+          "finMs": 4560
+        },
+        {
+          "palabra": "e",
+          "inicioMs": 4560,
+          "finMs": 4660
+        },
+        {
+          "palabra": "ícor",
+          "inicioMs": 4660,
+          "finMs": 4960
+        },
+        {
+          "palabra": "la",
+          "inicioMs": 5240,
+          "finMs": 5320
+        },
+        {
+          "palabra": "sangre",
+          "inicioMs": 5320,
+          "finMs": 5620
+        },
+        {
+          "palabra": "dorada",
+          "inicioMs": 5620,
+          "finMs": 5960
+        },
+        {
+          "palabra": "de",
+          "inicioMs": 5960,
+          "finMs": 6100
+        },
+        {
+          "palabra": "los",
+          "inicioMs": 6100,
+          "finMs": 6220
+        },
+        {
+          "palabra": "dioses",
+          "inicioMs": 6220,
+          "finMs": 6520
+        },
+        {
+          "palabra": "griegos",
+          "inicioMs": 6520,
+          "finMs": 6980
+        },
+        {
+          "palabra": "porque",
+          "inicioMs": 7200,
+          "finMs": 7380
+        },
+        {
+          "palabra": "las",
+          "inicioMs": 7380,
+          "finMs": 7580
+        },
+        {
+          "palabra": "piedras",
+          "inicioMs": 7580,
+          "finMs": 7920
+        },
+        {
+          "palabra": "secas",
+          "inicioMs": 7920,
+          "finMs": 8360
+        },
+        {
+          "palabra": "atrapan",
+          "inicioMs": 8360,
+          "finMs": 8920
+        },
+        {
+          "palabra": "aceites",
+          "inicioMs": 8920,
+          "finMs": 9300
+        },
+        {
+          "palabra": "aromáticos",
+          "inicioMs": 9300,
+          "finMs": 9920
+        }
+      ],
+      "focoCamara": [
+        {
+          "inicioProgreso": 0.0,
+          "finProgreso": 0.36,
+          "x": -90,
+          "y": 20,
+          "escala": 1.12,
+          "curva": "suave"
+        },
+        {
+          "inicioProgreso": 0.36,
+          "finProgreso": 0.72,
+          "desdePalabra": "porque",
+          "x": 95,
+          "y": -20,
+          "escala": 1.22,
+          "curva": "suave"
+        },
+        {
+          "inicioProgreso": 0.72,
+          "finProgreso": 1.0,
+          "x": 0,
+          "y": 0,
+          "escala": 1.0,
+          "curva": "suave"
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "texto": "¿Y cómo viaja hasta tu nariz? En dos mil quince, el MIT descubrió con cámaras ultra lentas que cada gota de lluvia atrapa diminutas burbujas de aire al chocar, disparando aerosoles como champán.",
+      "icono": "Camera",
+      "colorIcono": "#8B5CF6",
+      "tituloVisual": "DISPARO DE AEROSOLES",
+      "composicionVisual": "primer_plano",
+      "escenario": "macro_impacto_gota_aerosol",
+      "layout": "narrativo",
+      "transicion": "flash",
+      "efectosCamara": [
+        "punch",
+        "shake"
+      ],
+      "sfx": "sfx/sfx_aerosol_efervescente_champan.wav",
+      "volumenSfx": 0.25,
+      "palabrasClave": [
+        "cámaras ultra lentas",
+        "burbujas de aire",
+        "disparando aerosoles"
+      ],
+      "personajes": [
+        {
+          "id": "stickman_camara",
+          "nombre": "Stickman",
+          "posicion": {
+            "x": -170,
+            "y": 90
+          },
+          "escala": 1.05,
+          "orientacion": "derecha",
+          "habla": true,
+          "capaZ": 20,
+          "acciones": [
+            {
+              "tipo": "personalizada",
+              "pasos": [
+                {
+                  "inicioProgreso": 0,
+                  "finProgreso": 0.5,
+                  "poseId": "pointing_right",
+                  "expresion": "surprised",
+                  "posicion": {
+                    "x": -170,
+                    "y": 90
+                  },
+                  "curva": "suave",
+                  "procedural": "estatico",
+                  "hastaPalabra": "cada"
+                },
+                {
+                  "inicioProgreso": 0.5,
+                  "finProgreso": 1.0,
+                  "poseId": "shock_explosion",
+                  "expresion": "shocked",
+                  "posicion": {
+                    "x": -150,
+                    "y": 90
+                  },
+                  "curva": "impacto",
+                  "procedural": "temblar",
+                  "desdePalabra": "cada"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "objetos": [
+        {
+          "id": "gota_aerosol",
+          "propId": "gota_lluvia_macro_aerosol",
+          "posicion": {
+            "x": 160,
+            "y": -30
+          },
+          "escala": 1.35,
+          "animacion": "vibrar",
+          "capaZ": 28,
+          "pasos": [
+            {
+              "inicioProgreso": 0.0,
+              "finProgreso": 0.5,
+              "hastaPalabra": "cada",
+              "posicion": {
+                "x": 160,
+                "y": -30
+              },
+              "escala": 1.3,
+              "estado": "impacto",
+              "curva": "suave"
+            },
+            {
+              "inicioProgreso": 0.5,
+              "finProgreso": 1.0,
+              "desdePalabra": "cada",
+              "posicion": {
+                "x": 135,
+                "y": -20
+              },
+              "escala": 1.42,
+              "estado": "aerosol_champan",
+              "curva": "rebote"
+            }
+          ]
+        }
+      ],
+      "duracionSegundos": 10.042,
+      "palabras": [
+        {
+          "palabra": "Y",
+          "inicioMs": 0,
+          "finMs": 96
+        },
+        {
+          "palabra": "cómo",
+          "inicioMs": 96,
+          "finMs": 192
+        },
+        {
+          "palabra": "viaja",
+          "inicioMs": 192,
+          "finMs": 288
+        },
+        {
+          "palabra": "hasta",
+          "inicioMs": 288,
+          "finMs": 384
+        },
+        {
+          "palabra": "tu",
+          "inicioMs": 384,
+          "finMs": 480
+        },
+        {
+          "palabra": "nariz",
+          "inicioMs": 480,
+          "finMs": 576
+        },
+        {
+          "palabra": "En",
+          "inicioMs": 576,
+          "finMs": 672
+        },
+        {
+          "palabra": "dos",
+          "inicioMs": 672,
+          "finMs": 768
+        },
+        {
+          "palabra": "mil",
+          "inicioMs": 768,
+          "finMs": 864
+        },
+        {
+          "palabra": "quince",
+          "inicioMs": 864,
+          "finMs": 960
+        },
+        {
+          "palabra": "el",
+          "inicioMs": 960,
+          "finMs": 1700
+        },
+        {
+          "palabra": "MIT",
+          "inicioMs": 1700,
+          "finMs": 2000
+        },
+        {
+          "palabra": "descubrió",
+          "inicioMs": 2000,
+          "finMs": 3480
+        },
+        {
+          "palabra": "con",
+          "inicioMs": 3480,
+          "finMs": 3660
+        },
+        {
+          "palabra": "cámaras",
+          "inicioMs": 3660,
+          "finMs": 4200
+        },
+        {
+          "palabra": "ultra",
+          "inicioMs": 4200,
+          "finMs": 4500
+        },
+        {
+          "palabra": "lentas",
+          "inicioMs": 4500,
+          "finMs": 5020
+        },
+        {
+          "palabra": "que",
+          "inicioMs": 5020,
+          "finMs": 5120
+        },
+        {
+          "palabra": "cada",
+          "inicioMs": 5120,
+          "finMs": 5400
+        },
+        {
+          "palabra": "gota",
+          "inicioMs": 5400,
+          "finMs": 5780
+        },
+        {
+          "palabra": "de",
+          "inicioMs": 5780,
+          "finMs": 5860
+        },
+        {
+          "palabra": "lluvia",
+          "inicioMs": 5860,
+          "finMs": 6260
+        },
+        {
+          "palabra": "atrapa",
+          "inicioMs": 6260,
+          "finMs": 6700
+        },
+        {
+          "palabra": "diminutas",
+          "inicioMs": 6700,
+          "finMs": 7240
+        },
+        {
+          "palabra": "burbujas",
+          "inicioMs": 7240,
+          "finMs": 7740
+        },
+        {
+          "palabra": "de",
+          "inicioMs": 7740,
+          "finMs": 7860
+        },
+        {
+          "palabra": "aire",
+          "inicioMs": 7860,
+          "finMs": 8040
+        },
+        {
+          "palabra": "al",
+          "inicioMs": 8040,
+          "finMs": 8220
+        },
+        {
+          "palabra": "chocar",
+          "inicioMs": 8220,
+          "finMs": 8580
+        },
+        {
+          "palabra": "disparando",
+          "inicioMs": 8760,
+          "finMs": 9280
+        },
+        {
+          "palabra": "aerosoles",
+          "inicioMs": 9280,
+          "finMs": 9700
+        },
+        {
+          "palabra": "como",
+          "inicioMs": 9700,
+          "finMs": 9746
+        },
+        {
+          "palabra": "champán",
+          "inicioMs": 9746,
+          "finMs": 9792
+        }
+      ],
+      "focoCamara": [
+        {
+          "inicioProgreso": 0.0,
+          "finProgreso": 0.36,
+          "x": -90,
+          "y": 20,
+          "escala": 1.12,
+          "curva": "suave"
+        },
+        {
+          "inicioProgreso": 0.36,
+          "finProgreso": 0.72,
+          "desdePalabra": "cada",
+          "x": 95,
+          "y": -20,
+          "escala": 1.22,
+          "curva": "suave"
+        },
+        {
+          "inicioProgreso": 0.72,
+          "finProgreso": 1.0,
+          "x": 0,
+          "y": 0,
+          "escala": 1.0,
+          "curva": "suave"
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "texto": "¿Por qué la evolución nos dio este olfato sobrehumano? Porque en la sabana ancestral, oler la lluvia a kilómetros significaba encontrar agua dulce, comida y supervivencia antes de morir de sed.",
+      "icono": "Compass",
+      "colorIcono": "#EAB308",
+      "tituloVisual": "INSTINTO ANCESTRAL",
+      "composicionVisual": "plano_general",
+      "escenario": "sabana_homonido_sequia",
+      "layout": "narrativo",
+      "transicion": "whip_left",
+      "efectosCamara": [
+        "punch",
+        "drift"
+      ],
+      "sfx": "sfx/sfx_viento_sabana_ancestral.wav",
+      "volumenSfx": 0.22,
+      "palabrasClave": [
+        "olfato sobrehumano",
+        "sabana ancestral",
+        "encontrar agua dulce"
+      ],
+      "personajes": [
+        {
+          "id": "stickman_ancestro",
+          "nombre": "Stickman",
+          "posicion": {
+            "x": -160,
+            "y": 90
+          },
+          "escala": 1.0,
+          "orientacion": "derecha",
+          "habla": true,
+          "capaZ": 20,
+          "acciones": [
+            {
+              "tipo": "personalizada",
+              "pasos": [
+                {
+                  "inicioProgreso": 0,
+                  "finProgreso": 0.5,
+                  "poseId": "investigating_magnifier",
+                  "expresion": "analytical",
+                  "posicion": {
+                    "x": -160,
+                    "y": 90
+                  },
+                  "curva": "suave",
+                  "procedural": "estatico",
+                  "hastaPalabra": "Porque"
+                },
+                {
+                  "inicioProgreso": 0.5,
+                  "finProgreso": 1.0,
+                  "poseId": "pointing_right",
+                  "expresion": "eureka",
+                  "posicion": {
+                    "x": -120,
+                    "y": 90
+                  },
+                  "curva": "suave",
+                  "procedural": "caminar",
+                  "desdePalabra": "Porque"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "objetos": [
+        {
+          "id": "mapa_sabana",
+          "propId": "mapa_sabana_oasis_ancestro",
+          "posicion": {
+            "x": 160,
+            "y": -30
+          },
+          "escala": 1.25,
+          "animacion": "flotar",
+          "capaZ": 28,
+          "pasos": [
+            {
+              "inicioProgreso": 0.0,
+              "finProgreso": 0.5,
+              "hastaPalabra": "Porque",
+              "posicion": {
+                "x": 160,
+                "y": -30
+              },
+              "escala": 1.3,
+              "estado": "sequia",
+              "curva": "suave"
+            },
+            {
+              "inicioProgreso": 0.5,
+              "finProgreso": 1.0,
+              "desdePalabra": "Porque",
+              "posicion": {
+                "x": 135,
+                "y": -20
+              },
+              "escala": 1.42,
+              "estado": "ruta_oasis",
+              "curva": "rebote"
+            }
+          ]
+        }
+      ],
+      "duracionSegundos": 10.306,
+      "palabras": [
+        {
+          "palabra": "Por",
+          "inicioMs": 0,
+          "finMs": 200
+        },
+        {
+          "palabra": "qué",
+          "inicioMs": 200,
+          "finMs": 340
+        },
+        {
+          "palabra": "la",
+          "inicioMs": 340,
+          "finMs": 440
+        },
+        {
+          "palabra": "evolución",
+          "inicioMs": 440,
+          "finMs": 860
+        },
+        {
+          "palabra": "nos",
+          "inicioMs": 860,
+          "finMs": 1080
+        },
+        {
+          "palabra": "dio",
+          "inicioMs": 1080,
+          "finMs": 1200
+        },
+        {
+          "palabra": "este",
+          "inicioMs": 1200,
+          "finMs": 1440
+        },
+        {
+          "palabra": "olfato",
+          "inicioMs": 1440,
+          "finMs": 1780
+        },
+        {
+          "palabra": "sobrehumano",
+          "inicioMs": 2060,
+          "finMs": 2380
+        },
+        {
+          "palabra": "Porque",
+          "inicioMs": 2620,
+          "finMs": 2740
+        },
+        {
+          "palabra": "en",
+          "inicioMs": 2740,
+          "finMs": 2900
+        },
+        {
+          "palabra": "la",
+          "inicioMs": 2900,
+          "finMs": 2960
+        },
+        {
+          "palabra": "sabana",
+          "inicioMs": 2960,
+          "finMs": 3300
+        },
+        {
+          "palabra": "ancestral",
+          "inicioMs": 3300,
+          "finMs": 3760
+        },
+        {
+          "palabra": "oler",
+          "inicioMs": 4080,
+          "finMs": 4240
+        },
+        {
+          "palabra": "la",
+          "inicioMs": 4240,
+          "finMs": 4400
+        },
+        {
+          "palabra": "lluvia",
+          "inicioMs": 4400,
+          "finMs": 4740
+        },
+        {
+          "palabra": "a",
+          "inicioMs": 4740,
+          "finMs": 4880
+        },
+        {
+          "palabra": "kilómetros",
+          "inicioMs": 4880,
+          "finMs": 5300
+        },
+        {
+          "palabra": "significaba",
+          "inicioMs": 5300,
+          "finMs": 6180
+        },
+        {
+          "palabra": "encontrar",
+          "inicioMs": 6180,
+          "finMs": 6540
+        },
+        {
+          "palabra": "agua",
+          "inicioMs": 6540,
+          "finMs": 6780
+        },
+        {
+          "palabra": "dulce",
+          "inicioMs": 6780,
+          "finMs": 7220
+        },
+        {
+          "palabra": "comida",
+          "inicioMs": 7460,
+          "finMs": 7760
+        },
+        {
+          "palabra": "y",
+          "inicioMs": 7760,
+          "finMs": 7940
+        },
+        {
+          "palabra": "supervivencia",
+          "inicioMs": 7940,
+          "finMs": 8700
+        },
+        {
+          "palabra": "antes",
+          "inicioMs": 8700,
+          "finMs": 9020
+        },
+        {
+          "palabra": "de",
+          "inicioMs": 9020,
+          "finMs": 9180
+        },
+        {
+          "palabra": "morir",
+          "inicioMs": 9180,
+          "finMs": 9420
+        },
+        {
+          "palabra": "de",
+          "inicioMs": 9420,
+          "finMs": 9580
+        },
+        {
+          "palabra": "sed",
+          "inicioMs": 9580,
+          "finMs": 9760
+        }
+      ],
+      "focoCamara": [
+        {
+          "inicioProgreso": 0.0,
+          "finProgreso": 0.36,
+          "x": -90,
+          "y": 20,
+          "escala": 1.12,
+          "curva": "suave"
+        },
+        {
+          "inicioProgreso": 0.36,
+          "finProgreso": 0.72,
+          "desdePalabra": "Porque",
+          "x": 95,
+          "y": -20,
+          "escala": 1.22,
+          "curva": "suave"
+        },
+        {
+          "inicioProgreso": 0.72,
+          "finProgreso": 1.0,
+          "x": 0,
+          "y": 0,
+          "escala": 1.0,
+          "curva": "suave"
+        }
+      ]
+    },
+    {
+      "id": 7,
+      "texto": "La próxima vez que sientas el olor a tierra mojada, respira hondo: tu ADN está reconociendo la fragancia que mantuvo con vida a nuestros antepasados durante millones de años.",
+      "icono": "Heart",
+      "colorIcono": "#EC4899",
+      "tituloVisual": "VIVE EN TU ADN",
+      "composicionVisual": "escenario_ilustrado",
+      "escenario": "parque_lluvia_paraguas_cierre",
+      "layout": "narrativo",
+      "transicion": "zoom_in",
+      "efectosCamara": [
+        "punch",
+        "drift"
+      ],
+      "sfx": "sfx/sfx_cierre_lluvia_arcoiris.wav",
+      "volumenSfx": 0.25,
+      "palabrasClave": [
+        "respira hondo",
+        "tu ADN está reconociendo",
+        "mantuvo con vida"
+      ],
+      "personajes": [
+        {
+          "id": "stickman_cierre",
+          "nombre": "Stickman",
+          "posicion": {
+            "x": -120,
+            "y": 90
+          },
+          "escala": 1.05,
+          "orientacion": "derecha",
+          "habla": true,
+          "capaZ": 20,
+          "acciones": [
+            {
+              "tipo": "personalizada",
+              "pasos": [
+                {
+                  "inicioProgreso": 0,
+                  "finProgreso": 0.5,
+                  "poseId": "standing_confident",
+                  "expresion": "smile_wide",
+                  "posicion": {
+                    "x": -120,
+                    "y": 90
+                  },
+                  "curva": "suave",
+                  "procedural": "estatico",
+                  "hastaPalabra": "respira"
+                },
+                {
+                  "inicioProgreso": 0.5,
+                  "finProgreso": 1.0,
+                  "poseId": "celebrating_arms_up",
+                  "expresion": "eureka",
+                  "posicion": {
+                    "x": -100,
+                    "y": 90
+                  },
+                  "curva": "suave",
+                  "procedural": "caminar",
+                  "desdePalabra": "respira"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "objetos": [
+        {
+          "id": "paraguas_arcoiris",
+          "propId": "paraguas_arcoiris_fresco",
+          "posicion": {
+            "x": 160,
+            "y": -30
+          },
+          "escala": 1.25,
+          "animacion": "flotar",
+          "capaZ": 28,
+          "pasos": [
+            {
+              "inicioProgreso": 0.0,
+              "finProgreso": 0.5,
+              "hastaPalabra": "respira",
+              "posicion": {
+                "x": 160,
+                "y": -30
+              },
+              "escala": 1.3,
+              "estado": "lluvia_fresca",
+              "curva": "suave"
+            },
+            {
+              "inicioProgreso": 0.5,
+              "finProgreso": 1.0,
+              "desdePalabra": "respira",
+              "posicion": {
+                "x": 135,
+                "y": -20
+              },
+              "escala": 1.42,
+              "estado": "adn_reconoce",
+              "curva": "rebote"
+            }
+          ]
+        }
+      ],
+      "duracionSegundos": 9.634,
+      "palabras": [
+        {
+          "palabra": "La",
+          "inicioMs": 0,
+          "finMs": 180
+        },
+        {
+          "palabra": "próxima",
+          "inicioMs": 180,
+          "finMs": 560
+        },
+        {
+          "palabra": "vez",
+          "inicioMs": 560,
+          "finMs": 800
+        },
+        {
+          "palabra": "que",
+          "inicioMs": 800,
+          "finMs": 980
+        },
+        {
+          "palabra": "sientas",
+          "inicioMs": 980,
+          "finMs": 1360
+        },
+        {
+          "palabra": "el",
+          "inicioMs": 1360,
+          "finMs": 1540
+        },
+        {
+          "palabra": "olor",
+          "inicioMs": 1540,
+          "finMs": 1760
+        },
+        {
+          "palabra": "a",
+          "inicioMs": 1760,
+          "finMs": 1880
+        },
+        {
+          "palabra": "tierra",
+          "inicioMs": 1880,
+          "finMs": 2080
+        },
+        {
+          "palabra": "mojada",
+          "inicioMs": 2080,
+          "finMs": 2580
+        },
+        {
+          "palabra": "respira",
+          "inicioMs": 2920,
+          "finMs": 3400
+        },
+        {
+          "palabra": "hondo",
+          "inicioMs": 3400,
+          "finMs": 3860
+        },
+        {
+          "palabra": "tu",
+          "inicioMs": 4080,
+          "finMs": 4160
+        },
+        {
+          "palabra": "ADN",
+          "inicioMs": 4160,
+          "finMs": 4480
+        },
+        {
+          "palabra": "está",
+          "inicioMs": 4480,
+          "finMs": 4700
+        },
+        {
+          "palabra": "reconociendo",
+          "inicioMs": 4700,
+          "finMs": 5220
+        },
+        {
+          "palabra": "la",
+          "inicioMs": 5220,
+          "finMs": 5420
+        },
+        {
+          "palabra": "fragancia",
+          "inicioMs": 5420,
+          "finMs": 5840
+        },
+        {
+          "palabra": "que",
+          "inicioMs": 5840,
+          "finMs": 5960
+        },
+        {
+          "palabra": "mantuvo",
+          "inicioMs": 5960,
+          "finMs": 6320
+        },
+        {
+          "palabra": "con",
+          "inicioMs": 6320,
+          "finMs": 6520
+        },
+        {
+          "palabra": "vida",
+          "inicioMs": 6520,
+          "finMs": 6780
+        },
+        {
+          "palabra": "a",
+          "inicioMs": 6780,
+          "finMs": 6920
+        },
+        {
+          "palabra": "nuestros",
+          "inicioMs": 6920,
+          "finMs": 7140
+        },
+        {
+          "palabra": "antepasados",
+          "inicioMs": 7140,
+          "finMs": 7860
+        },
+        {
+          "palabra": "durante",
+          "inicioMs": 7860,
+          "finMs": 8160
+        },
+        {
+          "palabra": "millones",
+          "inicioMs": 8160,
+          "finMs": 8440
+        },
+        {
+          "palabra": "de",
+          "inicioMs": 8440,
+          "finMs": 8760
+        },
+        {
+          "palabra": "años",
+          "inicioMs": 8760,
+          "finMs": 9000
+        }
+      ],
+      "focoCamara": [
+        {
+          "inicioProgreso": 0.0,
+          "finProgreso": 0.36,
+          "x": -90,
+          "y": 20,
+          "escala": 1.12,
+          "curva": "suave"
+        },
+        {
+          "inicioProgreso": 0.36,
+          "finProgreso": 0.72,
+          "desdePalabra": "respira",
+          "x": 95,
+          "y": -20,
+          "escala": 1.22,
+          "curva": "suave"
+        },
+        {
+          "inicioProgreso": 0.72,
+          "finProgreso": 1.0,
+          "x": 0,
+          "y": 0,
+          "escala": 1.0,
+          "curva": "suave"
+        }
+      ]
+    }
+  ]
+}

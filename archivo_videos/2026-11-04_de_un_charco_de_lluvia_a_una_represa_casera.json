@@ -1,0 +1,1800 @@
+{
+  "meta": {
+    "id": "de_un_charco_de_lluvia_a_una_represa_casera",
+    "slug": "de_un_charco_de_lluvia_a_una_represa_casera",
+    "titulo": "De un charco de lluvia a una represa casera (Ingeniería en el lodo)",
+    "titulo_corto": "Ingeniería de una Represa Casera",
+    "temaResumen": "Hidráulica e ingeniería civil en el patio: por qué una tabla plana falla por presión hidrostática y cómo domar el agua con una presa de gravedad, filtro graduado de grava y arena, y un canal de vertedero escalonado.",
+    "gancho": "Empezó como un simple canal para sacar un charco del patio... y en solo cinco minutos se convirtió en un monstruo furioso a punto de destruir mi casa.",
+    "fuentes": [
+      "Terzaghi, K., Peck, R. B., & Mesri, G. (1996). Soil Mechanics in Engineering Practice (3rd ed.). John Wiley & Sons.",
+      "US Bureau of Reclamation (1987). Design of Small Dams (3rd ed.). Water Resources Technical Publication."
+    ],
+    "genero": "Ingeniería Civil y Física Hidráulica",
+    "duracionObjetivo": [
+      62,
+      75
+    ]
+  },
+  "escenas": [
+    {
+      "id": 1,
+      "texto": "Empezó como un simple canal para sacar un charco del patio... y en solo cinco minutos se convirtió en un monstruo furioso a punto de destruir mi casa.",
+      "icono": "CloudRain",
+      "colorIcono": "#38BDF8",
+      "tituloVisual": "EL MONSTRUO DE LODO EN EL PATIO",
+      "composicionVisual": "plano_general",
+      "escenario": "patio_tormenta_zanja_erosion",
+      "layout": "narrativo",
+      "transicion": "zoom_in",
+      "efectosCamara": [
+        "drift",
+        "shake"
+      ],
+      "sfx": "sfx/sfx_lluvia_pala_fango_rugido.wav",
+      "volumenSfx": 0.24,
+      "palabrasClave": [
+        "canal",
+        "charco",
+        "monstruo",
+        "destruir",
+        "casa"
+      ],
+      "personajes": [
+        {
+          "id": "constructor",
+          "nombre": "Stickman Ingeniero",
+          "colorRim": "#FACC15",
+          "posicion": {
+            "x": -215,
+            "y": 20
+          },
+          "escala": 0.95,
+          "orientacion": "derecha",
+          "habla": true,
+          "capaZ": 18,
+          "acciones": [
+            {
+              "tipo": "personalizada",
+              "pasos": [
+                {
+                  "desdePalabra": "Empezó",
+                  "hastaPalabra": "patio",
+                  "poseId": "pushing",
+                  "expresion": "proud",
+                  "posicion": {
+                    "x": -215,
+                    "y": 20
+                  },
+                  "curva": "suave",
+                  "procedural": "manipular"
+                },
+                {
+                  "desdePalabra": "y",
+                  "hastaPalabra": "casa",
+                  "poseId": "frustrated_head_grab",
+                  "expresion": "shocked",
+                  "posicion": {
+                    "x": -235,
+                    "y": 20
+                  },
+                  "curva": "impacto",
+                  "procedural": "recoil"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "objetos": [
+        {
+          "id": "prop_pala_zanja",
+          "propId": "pala_zanja_erosion_lodo",
+          "posicion": {
+            "x": 195,
+            "y": 60
+          },
+          "escala": 1.05,
+          "capaZ": 28,
+          "pasos": [
+            {
+              "desdePalabra": "Empezó",
+              "hastaPalabra": "patio",
+              "posicion": {
+                "x": 195,
+                "y": 60
+              },
+              "escala": 1.0,
+              "estado": "normal",
+              "curva": "suave",
+              "animacion": "flotar"
+            },
+            {
+              "desdePalabra": "y",
+              "hastaPalabra": "casa",
+              "posicion": {
+                "x": 185,
+                "y": 55
+              },
+              "escala": 1.08,
+              "estado": "activo",
+              "curva": "rebote",
+              "animacion": "vibrar"
+            }
+          ]
+        }
+      ],
+      "duracionSegundos": 8.338,
+      "palabras": [
+        {
+          "palabra": "Empezó",
+          "inicioMs": 0,
+          "finMs": 460
+        },
+        {
+          "palabra": "como",
+          "inicioMs": 460,
+          "finMs": 660
+        },
+        {
+          "palabra": "un",
+          "inicioMs": 660,
+          "finMs": 820
+        },
+        {
+          "palabra": "simple",
+          "inicioMs": 820,
+          "finMs": 1100
+        },
+        {
+          "palabra": "canal",
+          "inicioMs": 1100,
+          "finMs": 1340
+        },
+        {
+          "palabra": "para",
+          "inicioMs": 1340,
+          "finMs": 1600
+        },
+        {
+          "palabra": "sacar",
+          "inicioMs": 1600,
+          "finMs": 1820
+        },
+        {
+          "palabra": "un",
+          "inicioMs": 1820,
+          "finMs": 2000
+        },
+        {
+          "palabra": "charco",
+          "inicioMs": 2000,
+          "finMs": 2300
+        },
+        {
+          "palabra": "del",
+          "inicioMs": 2300,
+          "finMs": 2420
+        },
+        {
+          "palabra": "patio",
+          "inicioMs": 2420,
+          "finMs": 3300
+        },
+        {
+          "palabra": "y",
+          "inicioMs": 3300,
+          "finMs": 3480
+        },
+        {
+          "palabra": "en",
+          "inicioMs": 3480,
+          "finMs": 3580
+        },
+        {
+          "palabra": "solo",
+          "inicioMs": 3580,
+          "finMs": 3740
+        },
+        {
+          "palabra": "cinco",
+          "inicioMs": 3740,
+          "finMs": 4100
+        },
+        {
+          "palabra": "minutos",
+          "inicioMs": 4100,
+          "finMs": 4440
+        },
+        {
+          "palabra": "se",
+          "inicioMs": 4440,
+          "finMs": 4660
+        },
+        {
+          "palabra": "convirtió",
+          "inicioMs": 4660,
+          "finMs": 5140
+        },
+        {
+          "palabra": "en",
+          "inicioMs": 5140,
+          "finMs": 5240
+        },
+        {
+          "palabra": "un",
+          "inicioMs": 5240,
+          "finMs": 5340
+        },
+        {
+          "palabra": "monstruo",
+          "inicioMs": 5340,
+          "finMs": 5820
+        },
+        {
+          "palabra": "furioso",
+          "inicioMs": 5820,
+          "finMs": 6160
+        },
+        {
+          "palabra": "a",
+          "inicioMs": 6160,
+          "finMs": 6380
+        },
+        {
+          "palabra": "punto",
+          "inicioMs": 6380,
+          "finMs": 6620
+        },
+        {
+          "palabra": "de",
+          "inicioMs": 6620,
+          "finMs": 6860
+        },
+        {
+          "palabra": "destruir",
+          "inicioMs": 6860,
+          "finMs": 7260
+        },
+        {
+          "palabra": "mi",
+          "inicioMs": 7260,
+          "finMs": 7360
+        },
+        {
+          "palabra": "casa",
+          "inicioMs": 7360,
+          "finMs": 7660
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "texto": "El agua en movimiento tiene energía cinética brutal. Si intentas bloquearla de golpe con una tabla plana... la presión hidrostática simplemente la hace mil pedazos.",
+      "icono": "Zap",
+      "colorIcono": "#EF4444",
+      "tituloVisual": "EL ERROR DE LA TABLA PLANA",
+      "composicionVisual": "escenario_ilustrado",
+      "escenario": "patio_torrente_presion_hidrostatica",
+      "layout": "narrativo",
+      "transicion": "whip_left",
+      "efectosCamara": [
+        "shake",
+        "punch"
+      ],
+      "sfx": "sfx/sfx_tabla_crujido_explosion_lodo.wav",
+      "volumenSfx": 0.25,
+      "palabrasClave": [
+        "energía",
+        "cinética",
+        "tabla",
+        "presión",
+        "pedazos"
+      ],
+      "personajes": [
+        {
+          "id": "constructor_tabla",
+          "nombre": "Stickman Ingeniero",
+          "colorRim": "#FACC15",
+          "posicion": {
+            "x": -210,
+            "y": 20
+          },
+          "escala": 0.95,
+          "orientacion": "derecha",
+          "habla": true,
+          "capaZ": 18,
+          "acciones": [
+            {
+              "tipo": "personalizada",
+              "pasos": [
+                {
+                  "desdePalabra": "El",
+                  "hastaPalabra": "plana",
+                  "poseId": "pushing",
+                  "expresion": "angry",
+                  "posicion": {
+                    "x": -190,
+                    "y": 20
+                  },
+                  "curva": "suave",
+                  "procedural": "esfuerzo"
+                },
+                {
+                  "desdePalabra": "la",
+                  "hastaPalabra": "pedazos",
+                  "poseId": "tripping_falling",
+                  "expresion": "shocked",
+                  "desdePosicion": {
+                    "x": -190,
+                    "y": 20
+                  },
+                  "posicion": {
+                    "x": -245,
+                    "y": 25
+                  },
+                  "curva": "impacto",
+                  "procedural": "recoil"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "objetos": [
+        {
+          "id": "prop_tabla_rota",
+          "propId": "tabla_madera_rota_vectores_presion",
+          "posicion": {
+            "x": 195,
+            "y": 60
+          },
+          "escala": 1.05,
+          "capaZ": 28,
+          "pasos": [
+            {
+              "desdePalabra": "El",
+              "hastaPalabra": "plana",
+              "posicion": {
+                "x": 195,
+                "y": 60
+              },
+              "escala": 1.0,
+              "estado": "normal",
+              "curva": "suave",
+              "animacion": "vibrar"
+            },
+            {
+              "desdePalabra": "la",
+              "hastaPalabra": "pedazos",
+              "posicion": {
+                "x": 185,
+                "y": 55
+              },
+              "escala": 1.09,
+              "estado": "activo",
+              "curva": "impacto",
+              "animacion": "pulso"
+            }
+          ]
+        }
+      ],
+      "duracionSegundos": 8.458,
+      "palabras": [
+        {
+          "palabra": "El",
+          "inicioMs": 0,
+          "finMs": 240
+        },
+        {
+          "palabra": "agua",
+          "inicioMs": 240,
+          "finMs": 420
+        },
+        {
+          "palabra": "en",
+          "inicioMs": 420,
+          "finMs": 540
+        },
+        {
+          "palabra": "movimiento",
+          "inicioMs": 540,
+          "finMs": 860
+        },
+        {
+          "palabra": "tiene",
+          "inicioMs": 860,
+          "finMs": 1280
+        },
+        {
+          "palabra": "energía",
+          "inicioMs": 1280,
+          "finMs": 1700
+        },
+        {
+          "palabra": "cinética",
+          "inicioMs": 1700,
+          "finMs": 2200
+        },
+        {
+          "palabra": "brutal",
+          "inicioMs": 2200,
+          "finMs": 2580
+        },
+        {
+          "palabra": "Si",
+          "inicioMs": 2940,
+          "finMs": 3020
+        },
+        {
+          "palabra": "intentas",
+          "inicioMs": 3020,
+          "finMs": 3380
+        },
+        {
+          "palabra": "bloquearla",
+          "inicioMs": 3380,
+          "finMs": 3800
+        },
+        {
+          "palabra": "de",
+          "inicioMs": 3800,
+          "finMs": 3940
+        },
+        {
+          "palabra": "golpe",
+          "inicioMs": 3940,
+          "finMs": 4100
+        },
+        {
+          "palabra": "con",
+          "inicioMs": 4100,
+          "finMs": 4360
+        },
+        {
+          "palabra": "una",
+          "inicioMs": 4360,
+          "finMs": 4520
+        },
+        {
+          "palabra": "tabla",
+          "inicioMs": 4520,
+          "finMs": 4780
+        },
+        {
+          "palabra": "plana",
+          "inicioMs": 4780,
+          "finMs": 5440
+        },
+        {
+          "palabra": "la",
+          "inicioMs": 5440,
+          "finMs": 5500
+        },
+        {
+          "palabra": "presión",
+          "inicioMs": 5500,
+          "finMs": 5800
+        },
+        {
+          "palabra": "hidrostática",
+          "inicioMs": 5800,
+          "finMs": 6300
+        },
+        {
+          "palabra": "simplemente",
+          "inicioMs": 6300,
+          "finMs": 6780
+        },
+        {
+          "palabra": "la",
+          "inicioMs": 6780,
+          "finMs": 7020
+        },
+        {
+          "palabra": "hace",
+          "inicioMs": 7020,
+          "finMs": 7160
+        },
+        {
+          "palabra": "mil",
+          "inicioMs": 7160,
+          "finMs": 7300
+        },
+        {
+          "palabra": "pedazos",
+          "inicioMs": 7300,
+          "finMs": 7860
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "texto": "Para domar toneladas de agua necesitas pensar como ingeniero civil: construir una presa de gravedad que use su propio peso para aplastar la corriente contra el fondo.",
+      "icono": "Compass",
+      "colorIcono": "#38BDF8",
+      "tituloVisual": "PRESA DE GRAVEDAD Y ESCOLLERA",
+      "composicionVisual": "escenario_ilustrado",
+      "escenario": "corte_geotecnico_presa_gravedad",
+      "layout": "narrativo",
+      "transicion": "whip_right",
+      "efectosCamara": [
+        "drift",
+        "punch"
+      ],
+      "sfx": "sfx/sfx_plano_despliegue_rocas_pesadas.wav",
+      "volumenSfx": 0.24,
+      "palabrasClave": [
+        "ingeniero",
+        "presa",
+        "gravedad",
+        "peso",
+        "fondo"
+      ],
+      "personajes": [
+        {
+          "id": "constructor_plano",
+          "nombre": "Stickman Ingeniero",
+          "colorRim": "#38BDF8",
+          "posicion": {
+            "x": -215,
+            "y": 20
+          },
+          "escala": 0.95,
+          "orientacion": "derecha",
+          "habla": true,
+          "capaZ": 18,
+          "acciones": [
+            {
+              "tipo": "personalizada",
+              "pasos": [
+                {
+                  "desdePalabra": "Para",
+                  "hastaPalabra": "civil",
+                  "poseId": "explaining_pointing_up",
+                  "expresion": "analytical",
+                  "posicion": {
+                    "x": -215,
+                    "y": 20
+                  },
+                  "curva": "suave",
+                  "procedural": "manipular"
+                },
+                {
+                  "desdePalabra": "construir",
+                  "hastaPalabra": "fondo",
+                  "poseId": "lifting_heavy",
+                  "expresion": "proud",
+                  "posicion": {
+                    "x": -190,
+                    "y": 20
+                  },
+                  "curva": "rebote",
+                  "procedural": "esfuerzo"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "objetos": [
+        {
+          "id": "prop_plano_rocas",
+          "propId": "plano_azul_rocas_escollera",
+          "posicion": {
+            "x": 195,
+            "y": 60
+          },
+          "escala": 1.05,
+          "capaZ": 28,
+          "pasos": [
+            {
+              "desdePalabra": "Para",
+              "hastaPalabra": "civil",
+              "posicion": {
+                "x": 195,
+                "y": 60
+              },
+              "escala": 1.0,
+              "estado": "normal",
+              "curva": "suave",
+              "animacion": "flotar"
+            },
+            {
+              "desdePalabra": "construir",
+              "hastaPalabra": "fondo",
+              "posicion": {
+                "x": 185,
+                "y": 55
+              },
+              "escala": 1.08,
+              "estado": "activo",
+              "curva": "rebote",
+              "animacion": "pulso"
+            }
+          ]
+        }
+      ],
+      "duracionSegundos": 8.578,
+      "palabras": [
+        {
+          "palabra": "Para",
+          "inicioMs": 0,
+          "finMs": 240
+        },
+        {
+          "palabra": "domar",
+          "inicioMs": 240,
+          "finMs": 620
+        },
+        {
+          "palabra": "toneladas",
+          "inicioMs": 620,
+          "finMs": 1140
+        },
+        {
+          "palabra": "de",
+          "inicioMs": 1140,
+          "finMs": 1320
+        },
+        {
+          "palabra": "agua",
+          "inicioMs": 1320,
+          "finMs": 1540
+        },
+        {
+          "palabra": "necesitas",
+          "inicioMs": 1540,
+          "finMs": 2120
+        },
+        {
+          "palabra": "pensar",
+          "inicioMs": 2120,
+          "finMs": 2460
+        },
+        {
+          "palabra": "como",
+          "inicioMs": 2460,
+          "finMs": 2780
+        },
+        {
+          "palabra": "ingeniero",
+          "inicioMs": 2780,
+          "finMs": 3280
+        },
+        {
+          "palabra": "civil",
+          "inicioMs": 3280,
+          "finMs": 3600
+        },
+        {
+          "palabra": "construir",
+          "inicioMs": 3820,
+          "finMs": 4140
+        },
+        {
+          "palabra": "una",
+          "inicioMs": 4140,
+          "finMs": 4380
+        },
+        {
+          "palabra": "presa",
+          "inicioMs": 4380,
+          "finMs": 4700
+        },
+        {
+          "palabra": "de",
+          "inicioMs": 4700,
+          "finMs": 4780
+        },
+        {
+          "palabra": "gravedad",
+          "inicioMs": 4780,
+          "finMs": 5220
+        },
+        {
+          "palabra": "que",
+          "inicioMs": 5220,
+          "finMs": 5360
+        },
+        {
+          "palabra": "use",
+          "inicioMs": 5360,
+          "finMs": 5500
+        },
+        {
+          "palabra": "su",
+          "inicioMs": 5500,
+          "finMs": 5680
+        },
+        {
+          "palabra": "propio",
+          "inicioMs": 5680,
+          "finMs": 5920
+        },
+        {
+          "palabra": "peso",
+          "inicioMs": 5920,
+          "finMs": 6220
+        },
+        {
+          "palabra": "para",
+          "inicioMs": 6220,
+          "finMs": 6440
+        },
+        {
+          "palabra": "aplastar",
+          "inicioMs": 6440,
+          "finMs": 6860
+        },
+        {
+          "palabra": "la",
+          "inicioMs": 6860,
+          "finMs": 6960
+        },
+        {
+          "palabra": "corriente",
+          "inicioMs": 6960,
+          "finMs": 7320
+        },
+        {
+          "palabra": "contra",
+          "inicioMs": 7320,
+          "finMs": 7500
+        },
+        {
+          "palabra": "el",
+          "inicioMs": 7500,
+          "finMs": 7680
+        },
+        {
+          "palabra": "fondo",
+          "inicioMs": 7680,
+          "finMs": 7940
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "texto": "Pero las piedras solas dejan huecos gigantes donde el agua pasa como bala y lava los cimientos. Necesitas el truco del filtro graduado: grava y arena fina.",
+      "icono": "Layers",
+      "colorIcono": "#FACC15",
+      "tituloVisual": "EL TRUCO DEL FILTRO GRADUADO",
+      "composicionVisual": "escenario_ilustrado",
+      "escenario": "macro_corte_filtro_graduado_terzaghi",
+      "layout": "narrativo",
+      "transicion": "zoom_in",
+      "efectosCamara": [
+        "drift",
+        "punch"
+      ],
+      "sfx": "sfx/sfx_fuga_agua_cascada_grava_arena.wav",
+      "volumenSfx": 0.24,
+      "palabrasClave": [
+        "piedras",
+        "huecos",
+        "filtro",
+        "grava",
+        "arena"
+      ],
+      "personajes": [
+        {
+          "id": "constructor_filtro",
+          "nombre": "Stickman Ingeniero",
+          "colorRim": "#FACC15",
+          "posicion": {
+            "x": -215,
+            "y": 20
+          },
+          "escala": 0.95,
+          "orientacion": "derecha",
+          "habla": true,
+          "capaZ": 18,
+          "acciones": [
+            {
+              "tipo": "personalizada",
+              "pasos": [
+                {
+                  "desdePalabra": "Pero",
+                  "hastaPalabra": "cimientos",
+                  "poseId": "investigating_magnifier",
+                  "expresion": "worried",
+                  "posicion": {
+                    "x": -215,
+                    "y": 20
+                  },
+                  "curva": "suave",
+                  "procedural": "manipular"
+                },
+                {
+                  "desdePalabra": "Necesitas",
+                  "hastaPalabra": "fina",
+                  "poseId": "presenting_object",
+                  "expresion": "eureka",
+                  "posicion": {
+                    "x": -190,
+                    "y": 20
+                  },
+                  "curva": "rebote",
+                  "procedural": "manipular"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "objetos": [
+        {
+          "id": "prop_cubetas_filtro",
+          "propId": "cubetas_filtro_grava_arena",
+          "posicion": {
+            "x": 195,
+            "y": 60
+          },
+          "escala": 1.05,
+          "capaZ": 28,
+          "pasos": [
+            {
+              "desdePalabra": "Pero",
+              "hastaPalabra": "cimientos",
+              "posicion": {
+                "x": 195,
+                "y": 60
+              },
+              "escala": 1.0,
+              "estado": "normal",
+              "curva": "suave",
+              "animacion": "flotar"
+            },
+            {
+              "desdePalabra": "Necesitas",
+              "hastaPalabra": "fina",
+              "posicion": {
+                "x": 185,
+                "y": 55
+              },
+              "escala": 1.08,
+              "estado": "activo",
+              "curva": "rebote",
+              "animacion": "pulso"
+            }
+          ]
+        }
+      ],
+      "duracionSegundos": 8.53,
+      "palabras": [
+        {
+          "palabra": "Pero",
+          "inicioMs": 0,
+          "finMs": 200
+        },
+        {
+          "palabra": "las",
+          "inicioMs": 200,
+          "finMs": 360
+        },
+        {
+          "palabra": "piedras",
+          "inicioMs": 360,
+          "finMs": 740
+        },
+        {
+          "palabra": "solas",
+          "inicioMs": 740,
+          "finMs": 1120
+        },
+        {
+          "palabra": "dejan",
+          "inicioMs": 1120,
+          "finMs": 1400
+        },
+        {
+          "palabra": "huecos",
+          "inicioMs": 1400,
+          "finMs": 1800
+        },
+        {
+          "palabra": "gigantes",
+          "inicioMs": 1800,
+          "finMs": 2280
+        },
+        {
+          "palabra": "donde",
+          "inicioMs": 2280,
+          "finMs": 2500
+        },
+        {
+          "palabra": "el",
+          "inicioMs": 2500,
+          "finMs": 2700
+        },
+        {
+          "palabra": "agua",
+          "inicioMs": 2700,
+          "finMs": 2820
+        },
+        {
+          "palabra": "pasa",
+          "inicioMs": 2820,
+          "finMs": 3140
+        },
+        {
+          "palabra": "como",
+          "inicioMs": 3140,
+          "finMs": 3380
+        },
+        {
+          "palabra": "bala",
+          "inicioMs": 3380,
+          "finMs": 3760
+        },
+        {
+          "palabra": "y",
+          "inicioMs": 3760,
+          "finMs": 3920
+        },
+        {
+          "palabra": "lava",
+          "inicioMs": 3920,
+          "finMs": 4100
+        },
+        {
+          "palabra": "los",
+          "inicioMs": 4100,
+          "finMs": 4280
+        },
+        {
+          "palabra": "cimientos",
+          "inicioMs": 4280,
+          "finMs": 4720
+        },
+        {
+          "palabra": "Necesitas",
+          "inicioMs": 4920,
+          "finMs": 5380
+        },
+        {
+          "palabra": "el",
+          "inicioMs": 5380,
+          "finMs": 5560
+        },
+        {
+          "palabra": "truco",
+          "inicioMs": 5560,
+          "finMs": 5860
+        },
+        {
+          "palabra": "del",
+          "inicioMs": 5860,
+          "finMs": 6000
+        },
+        {
+          "palabra": "filtro",
+          "inicioMs": 6000,
+          "finMs": 6360
+        },
+        {
+          "palabra": "graduado",
+          "inicioMs": 6360,
+          "finMs": 6920
+        },
+        {
+          "palabra": "grava",
+          "inicioMs": 7060,
+          "finMs": 7340
+        },
+        {
+          "palabra": "y",
+          "inicioMs": 7340,
+          "finMs": 7440
+        },
+        {
+          "palabra": "arena",
+          "inicioMs": 7440,
+          "finMs": 7640
+        },
+        {
+          "palabra": "fina",
+          "inicioMs": 7640,
+          "finMs": 8060
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "texto": "La pared ahora es indestructible, pero si el agua sube y salta por encima de la presa... la destruirá desde atrás en segundos. Aquí entra la pieza clave: el vertedero.",
+      "icono": "AlertTriangle",
+      "colorIcono": "#EF4444",
+      "tituloVisual": "EL CANAL DE VERTEDERO (ALIVIADERO)",
+      "composicionVisual": "plano_general",
+      "escenario": "vista_cenital_embalse_alerta_vertedero",
+      "layout": "narrativo",
+      "transicion": "flash",
+      "efectosCamara": [
+        "shake",
+        "drift"
+      ],
+      "sfx": "sfx/sfx_trueno_alarma_paleo_losas.wav",
+      "volumenSfx": 0.24,
+      "palabrasClave": [
+        "indestructible",
+        "encima",
+        "destruirá",
+        "clave",
+        "vertedero"
+      ],
+      "personajes": [
+        {
+          "id": "constructor_vertedero",
+          "nombre": "Stickman Ingeniero",
+          "colorRim": "#FACC15",
+          "posicion": {
+            "x": -215,
+            "y": 20
+          },
+          "escala": 0.95,
+          "orientacion": "derecha",
+          "habla": true,
+          "capaZ": 18,
+          "acciones": [
+            {
+              "tipo": "personalizada",
+              "pasos": [
+                {
+                  "desdePalabra": "La",
+                  "hastaPalabra": "segundos",
+                  "poseId": "warning_danger",
+                  "expresion": "scared",
+                  "posicion": {
+                    "x": -215,
+                    "y": 20
+                  },
+                  "curva": "impacto",
+                  "procedural": "recoil"
+                },
+                {
+                  "desdePalabra": "Aquí",
+                  "hastaPalabra": "vertedero",
+                  "poseId": "pushing",
+                  "expresion": "talking_enthusiastic",
+                  "posicion": {
+                    "x": -185,
+                    "y": 20
+                  },
+                  "curva": "rebote",
+                  "procedural": "esfuerzo"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "objetos": [
+        {
+          "id": "prop_alerta_vertedero",
+          "propId": "alerta_desborde_canal_vertedero",
+          "posicion": {
+            "x": 195,
+            "y": 60
+          },
+          "escala": 1.05,
+          "capaZ": 28,
+          "pasos": [
+            {
+              "desdePalabra": "La",
+              "hastaPalabra": "segundos",
+              "posicion": {
+                "x": 195,
+                "y": 60
+              },
+              "escala": 1.0,
+              "estado": "normal",
+              "curva": "suave",
+              "animacion": "vibrar"
+            },
+            {
+              "desdePalabra": "Aquí",
+              "hastaPalabra": "vertedero",
+              "posicion": {
+                "x": 185,
+                "y": 55
+              },
+              "escala": 1.08,
+              "estado": "activo",
+              "curva": "rebote",
+              "animacion": "pulso"
+            }
+          ]
+        }
+      ],
+      "duracionSegundos": 9.85,
+      "palabras": [
+        {
+          "palabra": "La",
+          "inicioMs": 0,
+          "finMs": 220
+        },
+        {
+          "palabra": "pared",
+          "inicioMs": 220,
+          "finMs": 480
+        },
+        {
+          "palabra": "ahora",
+          "inicioMs": 480,
+          "finMs": 900
+        },
+        {
+          "palabra": "es",
+          "inicioMs": 900,
+          "finMs": 1100
+        },
+        {
+          "palabra": "indestructible",
+          "inicioMs": 1100,
+          "finMs": 1860
+        },
+        {
+          "palabra": "pero",
+          "inicioMs": 2000,
+          "finMs": 2100
+        },
+        {
+          "palabra": "si",
+          "inicioMs": 2100,
+          "finMs": 2260
+        },
+        {
+          "palabra": "el",
+          "inicioMs": 2260,
+          "finMs": 2380
+        },
+        {
+          "palabra": "agua",
+          "inicioMs": 2380,
+          "finMs": 2580
+        },
+        {
+          "palabra": "sube",
+          "inicioMs": 2580,
+          "finMs": 2980
+        },
+        {
+          "palabra": "y",
+          "inicioMs": 2980,
+          "finMs": 3100
+        },
+        {
+          "palabra": "salta",
+          "inicioMs": 3100,
+          "finMs": 3380
+        },
+        {
+          "palabra": "por",
+          "inicioMs": 3380,
+          "finMs": 3520
+        },
+        {
+          "palabra": "encima",
+          "inicioMs": 3520,
+          "finMs": 3780
+        },
+        {
+          "palabra": "de",
+          "inicioMs": 3780,
+          "finMs": 3960
+        },
+        {
+          "palabra": "la",
+          "inicioMs": 3960,
+          "finMs": 4080
+        },
+        {
+          "palabra": "presa",
+          "inicioMs": 4080,
+          "finMs": 4800
+        },
+        {
+          "palabra": "la",
+          "inicioMs": 4800,
+          "finMs": 4860
+        },
+        {
+          "palabra": "destruirá",
+          "inicioMs": 4860,
+          "finMs": 5420
+        },
+        {
+          "palabra": "desde",
+          "inicioMs": 5420,
+          "finMs": 5620
+        },
+        {
+          "palabra": "atrás",
+          "inicioMs": 5620,
+          "finMs": 5960
+        },
+        {
+          "palabra": "en",
+          "inicioMs": 5960,
+          "finMs": 6280
+        },
+        {
+          "palabra": "segundos",
+          "inicioMs": 6280,
+          "finMs": 6720
+        },
+        {
+          "palabra": "Aquí",
+          "inicioMs": 7040,
+          "finMs": 7240
+        },
+        {
+          "palabra": "entra",
+          "inicioMs": 7240,
+          "finMs": 7480
+        },
+        {
+          "palabra": "la",
+          "inicioMs": 7480,
+          "finMs": 7620
+        },
+        {
+          "palabra": "pieza",
+          "inicioMs": 7620,
+          "finMs": 7940
+        },
+        {
+          "palabra": "clave",
+          "inicioMs": 7940,
+          "finMs": 8280
+        },
+        {
+          "palabra": "el",
+          "inicioMs": 8520,
+          "finMs": 8620
+        },
+        {
+          "palabra": "vertedero",
+          "inicioMs": 8620,
+          "finMs": 9160
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "texto": "El agua sube, encuentra la salida segura del vertedero y baja en pequeños saltos de piedra, formando espuma blanca y disipando toda su furia directo hacia la coladera de la calle.",
+      "icono": "Waves",
+      "colorIcono": "#34D399",
+      "tituloVisual": "DISIPACIÓN POR ESCALONES DE PIEDRA",
+      "composicionVisual": "escenario_ilustrado",
+      "escenario": "cascada_vertedero_escalonado_coladera",
+      "layout": "narrativo",
+      "transicion": "whip_right",
+      "efectosCamara": [
+        "drift",
+        "punch"
+      ],
+      "sfx": "sfx/sfx_cascada_espuma_drenaje_victoria.wav",
+      "volumenSfx": 0.24,
+      "palabrasClave": [
+        "salida",
+        "vertedero",
+        "saltos",
+        "furia",
+        "coladera"
+      ],
+      "personajes": [
+        {
+          "id": "constructor_victoria",
+          "nombre": "Stickman Ingeniero",
+          "posicion": {
+            "x": -215,
+            "y": 20
+          },
+          "escala": 0.95,
+          "orientacion": "derecha",
+          "habla": true,
+          "capaZ": 18,
+          "acciones": [
+            {
+              "tipo": "personalizada",
+              "pasos": [
+                {
+                  "desdePalabra": "El",
+                  "hastaPalabra": "saltos",
+                  "poseId": "standing_confident",
+                  "expresion": "smile_soft",
+                  "posicion": {
+                    "x": -215,
+                    "y": 20
+                  },
+                  "curva": "suave",
+                  "procedural": "manipular"
+                },
+                {
+                  "desdePalabra": "disipando",
+                  "hastaPalabra": "calle",
+                  "poseId": "celebrating_arms_up",
+                  "expresion": "smile_wide",
+                  "posicion": {
+                    "x": -190,
+                    "y": 20
+                  },
+                  "curva": "rebote",
+                  "procedural": "rebotar"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "objetos": [
+        {
+          "id": "prop_escalones_espuma",
+          "propId": "escalones_piedra_espuma_coladera",
+          "posicion": {
+            "x": 195,
+            "y": 60
+          },
+          "escala": 1.05,
+          "capaZ": 28,
+          "pasos": [
+            {
+              "desdePalabra": "El",
+              "hastaPalabra": "saltos",
+              "posicion": {
+                "x": 195,
+                "y": 60
+              },
+              "escala": 1.0,
+              "estado": "normal",
+              "curva": "suave",
+              "animacion": "flotar"
+            },
+            {
+              "desdePalabra": "disipando",
+              "hastaPalabra": "calle",
+              "posicion": {
+                "x": 185,
+                "y": 55
+              },
+              "escala": 1.08,
+              "estado": "activo",
+              "curva": "rebote",
+              "animacion": "pulso"
+            }
+          ]
+        }
+      ],
+      "duracionSegundos": 10.09,
+      "palabras": [
+        {
+          "palabra": "El",
+          "inicioMs": 0,
+          "finMs": 240
+        },
+        {
+          "palabra": "agua",
+          "inicioMs": 240,
+          "finMs": 400
+        },
+        {
+          "palabra": "sube",
+          "inicioMs": 400,
+          "finMs": 840
+        },
+        {
+          "palabra": "encuentra",
+          "inicioMs": 1200,
+          "finMs": 1460
+        },
+        {
+          "palabra": "la",
+          "inicioMs": 1460,
+          "finMs": 1680
+        },
+        {
+          "palabra": "salida",
+          "inicioMs": 1680,
+          "finMs": 1960
+        },
+        {
+          "palabra": "segura",
+          "inicioMs": 1960,
+          "finMs": 2300
+        },
+        {
+          "palabra": "del",
+          "inicioMs": 2300,
+          "finMs": 2480
+        },
+        {
+          "palabra": "vertedero",
+          "inicioMs": 2480,
+          "finMs": 3000
+        },
+        {
+          "palabra": "y",
+          "inicioMs": 3000,
+          "finMs": 3220
+        },
+        {
+          "palabra": "baja",
+          "inicioMs": 3220,
+          "finMs": 3480
+        },
+        {
+          "palabra": "en",
+          "inicioMs": 3480,
+          "finMs": 3620
+        },
+        {
+          "palabra": "pequeños",
+          "inicioMs": 3620,
+          "finMs": 3980
+        },
+        {
+          "palabra": "saltos",
+          "inicioMs": 3980,
+          "finMs": 4320
+        },
+        {
+          "palabra": "de",
+          "inicioMs": 4320,
+          "finMs": 4440
+        },
+        {
+          "palabra": "piedra",
+          "inicioMs": 4440,
+          "finMs": 4880
+        },
+        {
+          "palabra": "formando",
+          "inicioMs": 5240,
+          "finMs": 5740
+        },
+        {
+          "palabra": "espuma",
+          "inicioMs": 5740,
+          "finMs": 6080
+        },
+        {
+          "palabra": "blanca",
+          "inicioMs": 6080,
+          "finMs": 6500
+        },
+        {
+          "palabra": "y",
+          "inicioMs": 6500,
+          "finMs": 6640
+        },
+        {
+          "palabra": "disipando",
+          "inicioMs": 6640,
+          "finMs": 7080
+        },
+        {
+          "palabra": "toda",
+          "inicioMs": 7080,
+          "finMs": 7320
+        },
+        {
+          "palabra": "su",
+          "inicioMs": 7320,
+          "finMs": 7560
+        },
+        {
+          "palabra": "furia",
+          "inicioMs": 7560,
+          "finMs": 7860
+        },
+        {
+          "palabra": "directo",
+          "inicioMs": 7860,
+          "finMs": 8280
+        },
+        {
+          "palabra": "hacia",
+          "inicioMs": 8280,
+          "finMs": 8400
+        },
+        {
+          "palabra": "la",
+          "inicioMs": 8400,
+          "finMs": 8540
+        },
+        {
+          "palabra": "coladera",
+          "inicioMs": 8540,
+          "finMs": 8900
+        },
+        {
+          "palabra": "de",
+          "inicioMs": 8900,
+          "finMs": 9000
+        },
+        {
+          "palabra": "la",
+          "inicioMs": 9000,
+          "finMs": 9100
+        },
+        {
+          "palabra": "calle",
+          "inicioMs": 9100,
+          "finMs": 9440
+        }
+      ]
+    },
+    {
+      "id": 7,
+      "texto": "La tormenta por fin se detiene, la casa está completamente a salvo... y el charco asesino ahora es un hermoso lago privado. Porque con la física correcta, el agua nunca te vence.",
+      "icono": "Sun",
+      "colorIcono": "#FACC15",
+      "tituloVisual": "LA FÍSICA DOMA LA TORMENTA",
+      "composicionVisual": "plano_general",
+      "escenario": "patio_soleado_arcoiris_lago_represa",
+      "layout": "narrativo",
+      "transicion": "zoom_in",
+      "efectosCamara": [
+        "drift",
+        "punch"
+      ],
+      "sfx": "sfx/sfx_pajaros_gota_agua_guitarra_cierre.wav",
+      "volumenSfx": 0.24,
+      "palabrasClave": [
+        "tormenta",
+        "salvo",
+        "lago",
+        "física",
+        "vence"
+      ],
+      "personajes": [
+        {
+          "id": "constructor_cierre",
+          "nombre": "Stickman Ingeniero",
+          "posicion": {
+            "x": -215,
+            "y": 15
+          },
+          "escala": 0.96,
+          "orientacion": "derecha",
+          "habla": true,
+          "capaZ": 18,
+          "acciones": [
+            {
+              "tipo": "personalizada",
+              "pasos": [
+                {
+                  "desdePalabra": "La",
+                  "hastaPalabra": "privado",
+                  "poseId": "presenting_object",
+                  "expresion": "smile_soft",
+                  "posicion": {
+                    "x": -215,
+                    "y": 15
+                  },
+                  "curva": "suave",
+                  "procedural": "manipular"
+                },
+                {
+                  "desdePalabra": "Porque",
+                  "hastaPalabra": "vence",
+                  "poseId": "thumbs_up_approval",
+                  "expresion": "proud",
+                  "posicion": {
+                    "x": -190,
+                    "y": 15
+                  },
+                  "curva": "rebote",
+                  "procedural": "manipular"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "objetos": [
+        {
+          "id": "prop_barquito_lago",
+          "propId": "barquito_papel_lago_represa",
+          "posicion": {
+            "x": 195,
+            "y": 55
+          },
+          "escala": 1.05,
+          "capaZ": 28,
+          "pasos": [
+            {
+              "desdePalabra": "La",
+              "hastaPalabra": "privado",
+              "posicion": {
+                "x": 195,
+                "y": 55
+              },
+              "escala": 1.0,
+              "estado": "normal",
+              "curva": "suave",
+              "animacion": "flotar"
+            },
+            {
+              "desdePalabra": "Porque",
+              "hastaPalabra": "vence",
+              "posicion": {
+                "x": 185,
+                "y": 50
+              },
+              "escala": 1.08,
+              "estado": "activo",
+              "curva": "rebote",
+              "animacion": "pulso"
+            }
+          ]
+        }
+      ],
+      "duracionSegundos": 9.802,
+      "palabras": [
+        {
+          "palabra": "La",
+          "inicioMs": 0,
+          "finMs": 200
+        },
+        {
+          "palabra": "tormenta",
+          "inicioMs": 200,
+          "finMs": 680
+        },
+        {
+          "palabra": "por",
+          "inicioMs": 680,
+          "finMs": 820
+        },
+        {
+          "palabra": "fin",
+          "inicioMs": 820,
+          "finMs": 1000
+        },
+        {
+          "palabra": "se",
+          "inicioMs": 1000,
+          "finMs": 1160
+        },
+        {
+          "palabra": "detiene",
+          "inicioMs": 1160,
+          "finMs": 1620
+        },
+        {
+          "palabra": "la",
+          "inicioMs": 1820,
+          "finMs": 1880
+        },
+        {
+          "palabra": "casa",
+          "inicioMs": 1880,
+          "finMs": 2080
+        },
+        {
+          "palabra": "está",
+          "inicioMs": 2080,
+          "finMs": 2320
+        },
+        {
+          "palabra": "completamente",
+          "inicioMs": 2320,
+          "finMs": 2900
+        },
+        {
+          "palabra": "a",
+          "inicioMs": 2900,
+          "finMs": 3120
+        },
+        {
+          "palabra": "salvo",
+          "inicioMs": 3120,
+          "finMs": 3460
+        },
+        {
+          "palabra": "y",
+          "inicioMs": 3460,
+          "finMs": 3780
+        },
+        {
+          "palabra": "el",
+          "inicioMs": 3780,
+          "finMs": 3920
+        },
+        {
+          "palabra": "charco",
+          "inicioMs": 3920,
+          "finMs": 4200
+        },
+        {
+          "palabra": "asesino",
+          "inicioMs": 4200,
+          "finMs": 4640
+        },
+        {
+          "palabra": "ahora",
+          "inicioMs": 4640,
+          "finMs": 4860
+        },
+        {
+          "palabra": "es",
+          "inicioMs": 4860,
+          "finMs": 5080
+        },
+        {
+          "palabra": "un",
+          "inicioMs": 5080,
+          "finMs": 5200
+        },
+        {
+          "palabra": "hermoso",
+          "inicioMs": 5200,
+          "finMs": 5640
+        },
+        {
+          "palabra": "lago",
+          "inicioMs": 5640,
+          "finMs": 5860
+        },
+        {
+          "palabra": "privado",
+          "inicioMs": 5860,
+          "finMs": 6380
+        },
+        {
+          "palabra": "Porque",
+          "inicioMs": 6720,
+          "finMs": 7000
+        },
+        {
+          "palabra": "con",
+          "inicioMs": 7000,
+          "finMs": 7180
+        },
+        {
+          "palabra": "la",
+          "inicioMs": 7180,
+          "finMs": 7280
+        },
+        {
+          "palabra": "física",
+          "inicioMs": 7280,
+          "finMs": 7540
+        },
+        {
+          "palabra": "correcta",
+          "inicioMs": 7540,
+          "finMs": 8120
+        },
+        {
+          "palabra": "el",
+          "inicioMs": 8260,
+          "finMs": 8360
+        },
+        {
+          "palabra": "agua",
+          "inicioMs": 8360,
+          "finMs": 8500
+        },
+        {
+          "palabra": "nunca",
+          "inicioMs": 8500,
+          "finMs": 8680
+        },
+        {
+          "palabra": "te",
+          "inicioMs": 8680,
+          "finMs": 8940
+        },
+        {
+          "palabra": "vence",
+          "inicioMs": 8940,
+          "finMs": 9220
+        }
+      ]
+    }
+  ]
+}

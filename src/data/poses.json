@@ -4,11 +4,11 @@
   "totales": {
     "posesCorporales": 69,
     "expresionesFaciales": 24,
-    "propsGenerales": 459,
+    "propsGenerales": 499,
     "propsFestivos": 131,
     "combinacionesCompuestas": 34,
     "combinacionesFestivas": 20,
-    "totalRecursos": 737
+    "totalRecursos": 777
   },
   "compatibilidadLegacy": {
     "normal": "standing_relaxed",
@@ -10512,7 +10512,7 @@
     {
       "id": "prop_frasco_azucar_100_glucosa",
       "propParamId": "frasco_azucar_100_glucosa",
-      "nombre": "Prop: Frasco Revelador 100% Azúcar Glucosa",
+      "nombre": "Prop: Frasco Clínico de Terrones de Azúcar y Cápsulas Placebo",
       "categoria": "props",
       "subcategoria": "educacion_ciencia",
       "emocion": "any",
@@ -10537,7 +10537,7 @@
     {
       "id": "prop_caja_placebo_etiqueta_abierta",
       "propParamId": "caja_placebo_etiqueta_abierta",
-      "nombre": "Prop: Caja de Placebo de Etiqueta Abierta",
+      "nombre": "Prop: Blíster Transparente de Placebo Abierto con Cubos de Azúcar",
       "categoria": "props",
       "subcategoria": "educacion_ciencia",
       "emocion": "any",
@@ -10586,7 +10586,7 @@
     {
       "id": "prop_esferas_endorfinas_flotantes",
       "propParamId": "esferas_endorfinas_flotantes",
-      "nombre": "Prop: Esferas de Endorfinas y Opioides Naturales",
+      "nombre": "Prop: Moléculas Doradas de Endorfinas y Opioides Naturales",
       "categoria": "props",
       "subcategoria": "educacion_ciencia",
       "emocion": "any",
@@ -10611,7 +10611,7 @@
     {
       "id": "prop_manivela_valvula_farmacia_interna",
       "propParamId": "manivela_valvula_farmacia_interna",
-      "nombre": "Prop: Válvula de Presión Farmacia Interna",
+      "nombre": "Prop: Válvula Dorada de Liberación de Endorfinas",
       "categoria": "props",
       "subcategoria": "herramientas_objetos",
       "emocion": "any",
@@ -10635,7 +10635,7 @@
     {
       "id": "prop_rayo_dolor_cabeza",
       "propParamId": "rayo_dolor_cabeza",
-      "nombre": "Prop: Rayo de Dolor de Cabeza Punzante",
+      "nombre": "Prop: Rayo de Dolor que se Transforma en Alivio",
       "categoria": "props",
       "subcategoria": "reacciones_humor",
       "emocion": "any",
@@ -10659,7 +10659,7 @@
     {
       "id": "prop_monitor_presion_arterial_hud",
       "propParamId": "monitor_presion_arterial_hud",
-      "nombre": "Prop: Monitor de Presión Arterial y Pulso Estable",
+      "nombre": "Prop: Monitor Clínico de Ritmo Cardíaco y Presión Estable",
       "categoria": "props",
       "subcategoria": "tecnologia",
       "emocion": "any",
@@ -11090,7 +11090,7 @@
     {
       "id": "prop_piscina_olimpica_micro_gota",
       "propParamId": "piscina_olimpica_micro_gota",
-      "nombre": "Prop: Visualización 500 Piscinas Olímpicas vs 1 Gota",
+      "nombre": "Prop: Cucharadita de Geosmina sobre Piscina Olímpica",
       "categoria": "props",
       "subcategoria": "educacion_ciencia",
       "emocion": "any",
@@ -11113,7 +11113,7 @@
     {
       "id": "prop_bacteria_streptomyces_geosmina",
       "propParamId": "bacteria_streptomyces_geosmina",
-      "nombre": "Prop: Bacteria Streptomyces emitiendo Geosmina",
+      "nombre": "Prop: Bacteria Streptomyces liberando Moléculas de Geosmina",
       "categoria": "props",
       "subcategoria": "naturaleza_alimentos",
       "emocion": "any",
@@ -11137,7 +11137,7 @@
     {
       "id": "prop_gota_lluvia_macro_aerosol",
       "propParamId": "gota_lluvia_macro_aerosol",
-      "nombre": "Prop: Impacto de Gota de Lluvia y Disparo de Aerosoles",
+      "nombre": "Prop: Gota de Lluvia atrapando Burbujas y Disparando Aerosoles",
       "categoria": "props",
       "subcategoria": "educacion_ciencia",
       "emocion": "any",
@@ -11161,7 +11161,7 @@
     {
       "id": "prop_mapa_sabana_oasis_ancestro",
       "propParamId": "mapa_sabana_oasis_ancestro",
-      "nombre": "Prop: Mapa Primitivo de Huellas hacia el Agua",
+      "nombre": "Prop: Brújula Ancestral hacia la Tormenta y el Oasis",
       "categoria": "props",
       "subcategoria": "historia_exploracion",
       "emocion": "any",
@@ -11185,7 +11185,7 @@
     {
       "id": "prop_paraguas_arcoiris_fresco",
       "propParamId": "paraguas_arcoiris_fresco",
-      "nombre": "Prop: Paraguas Amarillo con Gotas Frescas y Arcoíris",
+      "nombre": "Prop: Paraguas Amarillo con Gotas Frescas y Espiral ADN",
       "categoria": "props",
       "subcategoria": "vida_cotidiana",
       "emocion": "any",
@@ -11209,7 +11209,7 @@
     {
       "id": "prop_roca_petricor_aceite_dorado",
       "propParamId": "roca_petricor_aceite_dorado",
-      "nombre": "Prop: Roca con Aceites Vegetales y Esencia de Icor Griego",
+      "nombre": "Prop: Roca Mineral con Aceites Vegetales e Ícor Dorado",
       "categoria": "props",
       "subcategoria": "educacion_ciencia",
       "emocion": "any",
@@ -11233,7 +11233,7 @@
     {
       "id": "prop_mesa_experimento_mano_goma",
       "propParamId": "mesa_experimento_mano_goma",
-      "nombre": "Prop: Mesa con Pantalla Divisoria y Mano de Goma",
+      "nombre": "Prop: Mano de Goma Anatómica con Aura Neural",
       "categoria": "props",
       "subcategoria": "educacion_ciencia",
       "emocion": "any",
@@ -11279,7 +11279,7 @@
     {
       "id": "prop_cerebro_corteza_somatosensorial",
       "propParamId": "cerebro_corteza_somatosensorial",
-      "nombre": "Prop: Cerebro con Corteza Somatosensorial y Homúnculo Activo",
+      "nombre": "Prop: Cerebro con Corteza Somatosensorial y Reescritura Neural",
       "categoria": "props",
       "subcategoria": "educacion_ciencia",
       "emocion": "any",
@@ -11302,7 +11302,7 @@
     {
       "id": "prop_martillo_amenaza_impacto",
       "propParamId": "martillo_amenaza_impacto",
-      "nombre": "Prop: Martillo de Demolición con Señal de Peligro",
+      "nombre": "Prop: Martillo de Impacto con Golpe Descendente",
       "categoria": "props",
       "subcategoria": "herramientas_objetos",
       "emocion": "any",
@@ -11325,7 +11325,7 @@
     {
       "id": "prop_monitor_fisiologico_sudor_miedo",
       "propParamId": "monitor_fisiologico_sudor_miedo",
-      "nombre": "Prop: Monitor Cardíaco y Sensor de Respuesta Galvánica",
+      "nombre": "Prop: Sensor Galvánico y Corazón Adrenalina",
       "categoria": "props",
       "subcategoria": "tecnologia",
       "emocion": "any",
@@ -11348,7 +11348,7 @@
     {
       "id": "prop_espejo_realidad_truco_mental",
       "propParamId": "espejo_realidad_truco_mental",
-      "nombre": "Prop: Espejo de Percepción y Realidad Multisensorial",
+      "nombre": "Prop: Proyector Neural de Mapa Corporal Maleable",
       "categoria": "props",
       "subcategoria": "educacion_ciencia",
       "emocion": "any",
@@ -11371,7 +11371,7 @@
     {
       "id": "prop_brazo_venas_azules_diagrama",
       "propParamId": "brazo_venas_azules_diagrama",
-      "nombre": "Prop: Antebrazo con Venas Superficiales Azules",
+      "nombre": "Prop: Antebrazo con Venas Superficiales Azules y Corte Anatómico",
       "categoria": "props",
       "subcategoria": "educacion_ciencia",
       "emocion": "any",
@@ -11394,7 +11394,7 @@
     {
       "id": "prop_tubos_ensayo_sangre_rojo_oscuro",
       "propParamId": "tubos_ensayo_sangre_rojo_oscuro",
-      "nombre": "Prop: Tubos de Sangre Arterial (Rojo Vivo) y Venosa (Rojo Oscuro)",
+      "nombre": "Prop: Tubos Vacutainer de Sangre Arterial Escarlata y Venosa Granate",
       "categoria": "props",
       "subcategoria": "educacion_ciencia",
       "emocion": "any",
@@ -11418,7 +11418,7 @@
     {
       "id": "prop_prisma_optico_piel_fotones",
       "propParamId": "prisma_optico_piel_fotones",
-      "nombre": "Prop: Modelo Óptico de Absorción Roja y Dispersión Azul",
+      "nombre": "Prop: Corte Óptico de Piel con Absorción Roja y Rebote Azul",
       "categoria": "props",
       "subcategoria": "educacion_ciencia",
       "emocion": "any",
@@ -11442,7 +11442,7 @@
     {
       "id": "prop_molecula_hemoglobina_hierro",
       "propParamId": "molecula_hemoglobina_hierro",
-      "nombre": "Prop: Molécula de Hemoglobina con Átomo de Hierro",
+      "nombre": "Prop: Complejo Hemo de Hemoglobina con Núcleo de Hierro Fe y Fotones Rojos",
       "categoria": "props",
       "subcategoria": "educacion_ciencia",
       "emocion": "any",
@@ -11465,7 +11465,7 @@
     {
       "id": "prop_pizarron_mito_escolar_tachado",
       "propParamId": "pizarron_mito_escolar_tachado",
-      "nombre": "Prop: Pizarrón con Mito de Sangre Azul Tachado",
+      "nombre": "Prop: Diagrama de Sangre Azul Tachado con Sello de Ilusión Óptica",
       "categoria": "props",
       "subcategoria": "educacion_ciencia",
       "emocion": "any",
@@ -11488,7 +11488,7 @@
     {
       "id": "prop_linterna_transiluminacion_roja",
       "propParamId": "linterna_transiluminacion_roja",
-      "nombre": "Prop: Linterna de Transiluminación Roja en Dedos",
+      "nombre": "Prop: Linterna Potente Transiluminando Dedos en Rojo Carmesí",
       "categoria": "props",
       "subcategoria": "educacion_ciencia",
       "emocion": "any",
@@ -12210,6 +12210,949 @@
         "brindis",
         "vida_cotidiana",
         "pareidolia"
+      ],
+      "compatibleComposicion": true
+    },
+    {
+      "id": "prop_limon_bolsa_dinero_invisible",
+      "propParamId": "limon_bolsa_dinero_invisible",
+      "nombre": "Prop: Medio Limón Exprimiendo Jugo y Bolsa de Banco",
+      "categoria": "props",
+      "subcategoria": "vida_cotidiana",
+      "emocion": "any",
+      "accion": "both",
+      "propsAsociados": [
+        "limon_bolsa_dinero_invisible"
+      ],
+      "ruta": "poses/props/prop_limon_bolsa_dinero_invisible.svg",
+      "formato": "svg",
+      "etiquetas": [
+        "limon",
+        "jugo",
+        "banco",
+        "robo",
+        "invisible",
+        "dunning_kruger",
+        "dinero"
+      ],
+      "compatibleComposicion": true
+    },
+    {
+      "id": "prop_esposas_papel_tinta_limon",
+      "propParamId": "esposas_papel_tinta_limon",
+      "nombre": "Prop: Esposas Policiales y Papel con Tinta Invisible de Limón",
+      "categoria": "props",
+      "subcategoria": "historia_exploracion",
+      "emocion": "any",
+      "accion": "both",
+      "propsAsociados": [
+        "esposas_papel_tinta_limon"
+      ],
+      "ruta": "poses/props/prop_esposas_papel_tinta_limon.svg",
+      "formato": "svg",
+      "etiquetas": [
+        "esposas",
+        "policia",
+        "arresto",
+        "tinta",
+        "invisible",
+        "limon",
+        "papel"
+      ],
+      "compatibleComposicion": true
+    },
+    {
+      "id": "prop_pizarra_curva_dunning_kruger",
+      "propParamId": "pizarra_curva_dunning_kruger",
+      "nombre": "Prop: Pizarra con Gráfica del Efecto Dunning-Kruger",
+      "categoria": "props",
+      "subcategoria": "educacion_ciencia",
+      "emocion": "any",
+      "accion": "right",
+      "propsAsociados": [
+        "pizarra_curva_dunning_kruger"
+      ],
+      "ruta": "poses/props/prop_pizarra_curva_dunning_kruger.svg",
+      "formato": "svg",
+      "etiquetas": [
+        "pizarra",
+        "grafica",
+        "curva",
+        "dunning",
+        "kruger",
+        "confianza",
+        "sabiduria"
+      ],
+      "compatibleComposicion": true
+    },
+    {
+      "id": "prop_megafono_bandera_cima_ignorancia",
+      "propParamId": "megafono_bandera_cima_ignorancia",
+      "nombre": "Prop: Megáfono de Soberbia y Bandera de Cima de la Ignorancia",
+      "categoria": "props",
+      "subcategoria": "reacciones_humor",
+      "emocion": "any",
+      "accion": "right",
+      "propsAsociados": [
+        "megafono_bandera_cima_ignorancia"
+      ],
+      "ruta": "poses/props/prop_megafono_bandera_cima_ignorancia.svg",
+      "formato": "svg",
+      "etiquetas": [
+        "megafono",
+        "bandera",
+        "cima",
+        "ignorancia",
+        "soberbia",
+        "experto",
+        "grito"
+      ],
+      "compatibleComposicion": true
+    },
+    {
+      "id": "prop_torre_libros_valle_desesperacion",
+      "propParamId": "torre_libros_valle_desesperacion",
+      "nombre": "Prop: Pila de Libros Complejos y Fórmulas en el Valle",
+      "categoria": "props",
+      "subcategoria": "educacion_ciencia",
+      "emocion": "any",
+      "accion": "both",
+      "propsAsociados": [
+        "torre_libros_valle_desesperacion"
+      ],
+      "ruta": "poses/props/prop_torre_libros_valle_desesperacion.svg",
+      "formato": "svg",
+      "etiquetas": [
+        "libros",
+        "torre",
+        "valle",
+        "desesperacion",
+        "formulas",
+        "complejidad",
+        "estudio"
+      ],
+      "compatibleComposicion": true
+    },
+    {
+      "id": "prop_libro_globo_depende_sabiduria",
+      "propParamId": "libro_globo_depende_sabiduria",
+      "nombre": "Prop: Libro Abierto y Bocadillo DEPENDE del Experto",
+      "categoria": "props",
+      "subcategoria": "educacion_ciencia",
+      "emocion": "any",
+      "accion": "both",
+      "propsAsociados": [
+        "libro_globo_depende_sabiduria"
+      ],
+      "ruta": "poses/props/prop_libro_globo_depende_sabiduria.svg",
+      "formato": "svg",
+      "etiquetas": [
+        "libro",
+        "depende",
+        "sabiduria",
+        "experto",
+        "prudencia",
+        "humildad",
+        "iluminacion"
+      ],
+      "compatibleComposicion": true
+    },
+    {
+      "id": "prop_espejo_reflejo_limon_redes",
+      "propParamId": "espejo_reflejo_limon_redes",
+      "nombre": "Prop: Espejo de Mano con Reflejo de Limón y Móvil",
+      "categoria": "props",
+      "subcategoria": "vida_cotidiana",
+      "emocion": "any",
+      "accion": "both",
+      "propsAsociados": [
+        "espejo_reflejo_limon_redes"
+      ],
+      "ruta": "poses/props/prop_espejo_reflejo_limon_redes.svg",
+      "formato": "svg",
+      "etiquetas": [
+        "espejo",
+        "reflejo",
+        "limon",
+        "redes",
+        "autcritica",
+        "humildad",
+        "duda"
+      ],
+      "compatibleComposicion": true
+    },
+    {
+      "id": "prop_pala_zanja_erosion_lodo",
+      "propParamId": "pala_zanja_erosion_lodo",
+      "nombre": "Prop: Pala de Jardinería Cavando y Lanzando Terrones de Lodo",
+      "categoria": "props",
+      "subcategoria": "educacion_ciencia",
+      "emocion": "any",
+      "accion": "both",
+      "propsAsociados": [
+        "pala_zanja_erosion_lodo"
+      ],
+      "ruta": "poses/props/prop_pala_zanja_erosion_lodo.svg",
+      "formato": "svg",
+      "etiquetas": [
+        "pala",
+        "zanja",
+        "lodo",
+        "erosion",
+        "charco",
+        "lluvia",
+        "patio"
+      ],
+      "compatibleComposicion": true
+    },
+    {
+      "id": "prop_tabla_madera_rota_vectores_presion",
+      "propParamId": "tabla_madera_rota_vectores_presion",
+      "nombre": "Prop: Tabla de Madera Pandeándose y Quebrándose en Dos",
+      "categoria": "props",
+      "subcategoria": "educacion_ciencia",
+      "emocion": "any",
+      "accion": "both",
+      "propsAsociados": [
+        "tabla_madera_rota_vectores_presion"
+      ],
+      "ruta": "poses/props/prop_tabla_madera_rota_vectores_presion.svg",
+      "formato": "svg",
+      "etiquetas": [
+        "tabla",
+        "madera",
+        "rota",
+        "presion",
+        "hidrostatica",
+        "vectores",
+        "agua"
+      ],
+      "compatibleComposicion": true
+    },
+    {
+      "id": "prop_plano_azul_rocas_escollera",
+      "propParamId": "plano_azul_rocas_escollera",
+      "nombre": "Prop: Rocas Pesadas de Escollera Anclándose en el Lodo",
+      "categoria": "props",
+      "subcategoria": "educacion_ciencia",
+      "emocion": "any",
+      "accion": "both",
+      "propsAsociados": [
+        "plano_azul_rocas_escollera"
+      ],
+      "ruta": "poses/props/prop_plano_azul_rocas_escollera.svg",
+      "formato": "svg",
+      "etiquetas": [
+        "plano",
+        "azul",
+        "rocas",
+        "escollera",
+        "gravedad",
+        "ingenieria",
+        "presa"
+      ],
+      "compatibleComposicion": true
+    },
+    {
+      "id": "prop_cubetas_filtro_grava_arena",
+      "propParamId": "cubetas_filtro_grava_arena",
+      "nombre": "Prop: Cubeta Inclinándose y Vertiendo Lluvia de Grava y Arena Fina",
+      "categoria": "props",
+      "subcategoria": "educacion_ciencia",
+      "emocion": "any",
+      "accion": "both",
+      "propsAsociados": [
+        "cubetas_filtro_grava_arena"
+      ],
+      "ruta": "poses/props/prop_cubetas_filtro_grava_arena.svg",
+      "formato": "svg",
+      "etiquetas": [
+        "cubetas",
+        "grava",
+        "arena",
+        "filtro",
+        "graduado",
+        "terzaghi",
+        "presa"
+      ],
+      "compatibleComposicion": true
+    },
+    {
+      "id": "prop_alerta_desborde_canal_vertedero",
+      "propParamId": "alerta_desborde_canal_vertedero",
+      "nombre": "Prop: Regla Limnimétrica de Nivel Crítico y Pico de Excavación",
+      "categoria": "props",
+      "subcategoria": "educacion_ciencia",
+      "emocion": "any",
+      "accion": "both",
+      "propsAsociados": [
+        "alerta_desborde_canal_vertedero"
+      ],
+      "ruta": "poses/props/prop_alerta_desborde_canal_vertedero.svg",
+      "formato": "svg",
+      "etiquetas": [
+        "alerta",
+        "desborde",
+        "canal",
+        "vertedero",
+        "aliviadero",
+        "spillway",
+        "nivel"
+      ],
+      "compatibleComposicion": true
+    },
+    {
+      "id": "prop_escalones_piedra_espuma_coladera",
+      "propParamId": "escalones_piedra_espuma_coladera",
+      "nombre": "Prop: Coladera Pluvial de Hierro Fundido Tragando el Caudal Limpio",
+      "categoria": "props",
+      "subcategoria": "educacion_ciencia",
+      "emocion": "any",
+      "accion": "both",
+      "propsAsociados": [
+        "escalones_piedra_espuma_coladera"
+      ],
+      "ruta": "poses/props/prop_escalones_piedra_espuma_coladera.svg",
+      "formato": "svg",
+      "etiquetas": [
+        "escalones",
+        "piedra",
+        "espuma",
+        "coladera",
+        "disipacion",
+        "vertedero",
+        "hidraulica"
+      ],
+      "compatibleComposicion": true
+    },
+    {
+      "id": "prop_barquito_papel_lago_represa",
+      "propParamId": "barquito_papel_lago_represa",
+      "nombre": "Prop: Barquito de Papel Origami Navegando con Estela de Agua",
+      "categoria": "props",
+      "subcategoria": "vida_cotidiana",
+      "emocion": "any",
+      "accion": "both",
+      "propsAsociados": [
+        "barquito_papel_lago_represa"
+      ],
+      "ruta": "poses/props/prop_barquito_papel_lago_represa.svg",
+      "formato": "svg",
+      "etiquetas": [
+        "barquito",
+        "papel",
+        "lago",
+        "represa",
+        "arcoiris",
+        "victoria",
+        "agua"
+      ],
+      "compatibleComposicion": true
+    },
+    {
+      "id": "prop_foco_moribundo_cable_largo",
+      "propParamId": "foco_moribundo_cable_largo",
+      "nombre": "Prop: Foco Incandescente Moribundo con Cable Largo",
+      "categoria": "props",
+      "subcategoria": "tecnologia",
+      "emocion": "any",
+      "accion": "both",
+      "propsAsociados": [
+        "foco_moribundo_cable_largo"
+      ],
+      "ruta": "poses/props/prop_foco_moribundo_cable_largo.svg",
+      "formato": "svg",
+      "etiquetas": [
+        "foco",
+        "bombilla",
+        "cable",
+        "electricidad",
+        "moribundo",
+        "filamento",
+        "energia"
+      ],
+      "compatibleComposicion": true
+    },
+    {
+      "id": "prop_multimetro_caida_tension_humo",
+      "propParamId": "multimetro_caida_tension_humo",
+      "nombre": "Prop: Multímetro Digital Midiendo Caída de Voltaje con Cable Caliente",
+      "categoria": "props",
+      "subcategoria": "tecnologia",
+      "emocion": "any",
+      "accion": "both",
+      "propsAsociados": [
+        "multimetro_caida_tension_humo"
+      ],
+      "ruta": "poses/props/prop_multimetro_caida_tension_humo.svg",
+      "formato": "svg",
+      "etiquetas": [
+        "multimetro",
+        "voltaje",
+        "caida",
+        "resistencia",
+        "humo",
+        "calor",
+        "medicion"
+      ],
+      "compatibleComposicion": true
+    },
+    {
+      "id": "prop_microcosmos_choque_electrones_joule",
+      "propParamId": "microcosmos_choque_electrones_joule",
+      "nombre": "Prop: Microcosmos del Cobre con Choques de Electrones y Calor Joule",
+      "categoria": "props",
+      "subcategoria": "educacion_ciencia",
+      "emocion": "any",
+      "accion": "both",
+      "propsAsociados": [
+        "microcosmos_choque_electrones_joule"
+      ],
+      "ruta": "poses/props/prop_microcosmos_choque_electrones_joule.svg",
+      "formato": "svg",
+      "etiquetas": [
+        "microcosmos",
+        "cobre",
+        "electrones",
+        "joule",
+        "calor",
+        "choques",
+        "resistencia"
+      ],
+      "compatibleComposicion": true
+    },
+    {
+      "id": "prop_transformador_bobinas_balanza_potencia",
+      "propParamId": "transformador_bobinas_balanza_potencia",
+      "nombre": "Prop: Transformador Elevador con Bobinas de Cobre y Balanza de Potencia",
+      "categoria": "props",
+      "subcategoria": "educacion_ciencia",
+      "emocion": "any",
+      "accion": "both",
+      "propsAsociados": [
+        "transformador_bobinas_balanza_potencia"
+      ],
+      "ruta": "poses/props/prop_transformador_bobinas_balanza_potencia.svg",
+      "formato": "svg",
+      "etiquetas": [
+        "transformador",
+        "bobinas",
+        "cobre",
+        "hierro",
+        "voltaje",
+        "alta_tension",
+        "potencia"
+      ],
+      "compatibleComposicion": true
+    },
+    {
+      "id": "prop_poste_aislador_arco_voltaico",
+      "propParamId": "poste_aislador_arco_voltaico",
+      "nombre": "Prop: Poste Eléctrico con Aisladores Cerámicos y Arco Voltaico",
+      "categoria": "props",
+      "subcategoria": "tecnologia",
+      "emocion": "any",
+      "accion": "both",
+      "propsAsociados": [
+        "poste_aislador_arco_voltaico"
+      ],
+      "ruta": "poses/props/prop_poste_aislador_arco_voltaico.svg",
+      "formato": "svg",
+      "etiquetas": [
+        "poste",
+        "aislador",
+        "arco_voltaico",
+        "chispas",
+        "alta_tension",
+        "cables",
+        "red"
+      ],
+      "compatibleComposicion": true
+    },
+    {
+      "id": "prop_transformador_reductor_herramientas",
+      "propParamId": "transformador_reductor_herramientas",
+      "nombre": "Prop: Transformador Reductor Bajando a 120V con Destornillador",
+      "categoria": "props",
+      "subcategoria": "tecnologia",
+      "emocion": "any",
+      "accion": "both",
+      "propsAsociados": [
+        "transformador_reductor_herramientas"
+      ],
+      "ruta": "poses/props/prop_transformador_reductor_herramientas.svg",
+      "formato": "svg",
+      "etiquetas": [
+        "transformador",
+        "reductor",
+        "120v",
+        "herramientas",
+        "destornillador",
+        "electricista",
+        "seguridad"
+      ],
+      "compatibleComposicion": true
+    },
+    {
+      "id": "prop_bombilla_estallido_luz_gafas",
+      "propParamId": "bombilla_estallido_luz_gafas",
+      "nombre": "Prop: Bombilla Estallando en Luz Blanca Radiante con Gafas Oscuras",
+      "categoria": "props",
+      "subcategoria": "vida_cotidiana",
+      "emocion": "any",
+      "accion": "both",
+      "propsAsociados": [
+        "bombilla_estallido_luz_gafas"
+      ],
+      "ruta": "poses/props/prop_bombilla_estallido_luz_gafas.svg",
+      "formato": "svg",
+      "etiquetas": [
+        "bombilla",
+        "luz",
+        "blanca",
+        "estallido",
+        "gafas",
+        "sol",
+        "victoria",
+        "red_electrica"
+      ],
+      "compatibleComposicion": true
+    },
+    {
+      "id": "prop_tabla_madera_quebrada_lodo",
+      "propParamId": "tabla_madera_quebrada_lodo",
+      "nombre": "Prop: Tabla de Madera Partida en Lodo",
+      "categoria": "props",
+      "subcategoria": "herramientas_objetos",
+      "emocion": "any",
+      "accion": "both",
+      "propsAsociados": [
+        "tabla_madera_quebrada_lodo"
+      ],
+      "ruta": "poses/props/prop_tabla_madera_quebrada_lodo.svg",
+      "formato": "svg",
+      "etiquetas": [
+        "tabla",
+        "madera",
+        "quebrada",
+        "lodo",
+        "fango",
+        "agua",
+        "astillas"
+      ],
+      "compatibleComposicion": true
+    },
+    {
+      "id": "prop_diagrama_flexion_viga_flechas",
+      "propParamId": "diagrama_flexion_viga_flechas",
+      "nombre": "Prop: Viga en Banco de Flexión con Vectores",
+      "categoria": "props",
+      "subcategoria": "educacion_ciencia",
+      "emocion": "any",
+      "accion": "both",
+      "propsAsociados": [
+        "diagrama_flexion_viga_flechas"
+      ],
+      "ruta": "poses/props/prop_diagrama_flexion_viga_flechas.svg",
+      "formato": "svg",
+      "etiquetas": [
+        "diagrama",
+        "flexion",
+        "viga",
+        "compresion",
+        "tension",
+        "piston",
+        "ensayo"
+      ],
+      "compatibleComposicion": true
+    },
+    {
+      "id": "prop_cuerda_canamo_prueba_tension",
+      "propParamId": "cuerda_canamo_prueba_tension",
+      "nombre": "Prop: Cuerda de Cáñamo Tensada Vibrante",
+      "categoria": "props",
+      "subcategoria": "herramientas_objetos",
+      "emocion": "any",
+      "accion": "both",
+      "propsAsociados": [
+        "cuerda_canamo_prueba_tension"
+      ],
+      "ruta": "poses/props/prop_cuerda_canamo_prueba_tension.svg",
+      "formato": "svg",
+      "etiquetas": [
+        "cuerda",
+        "canamo",
+        "cable",
+        "tension",
+        "traccion",
+        "fuerza"
+      ],
+      "compatibleComposicion": true
+    },
+    {
+      "id": "prop_torre_madera_mazo_compresion",
+      "propParamId": "torre_madera_mazo_compresion",
+      "nombre": "Prop: Gran Mazo de Construcción y Poste",
+      "categoria": "props",
+      "subcategoria": "herramientas_objetos",
+      "emocion": "any",
+      "accion": "both",
+      "propsAsociados": [
+        "torre_madera_mazo_compresion"
+      ],
+      "ruta": "poses/props/prop_torre_madera_mazo_compresion.svg",
+      "formato": "svg",
+      "etiquetas": [
+        "mazo",
+        "martillo",
+        "construccion",
+        "golpe",
+        "fuerza",
+        "impacto"
+      ],
+      "compatibleComposicion": true
+    },
+    {
+      "id": "prop_catenaria_anclaje_rocas_tierra",
+      "propParamId": "catenaria_anclaje_rocas_tierra",
+      "nombre": "Prop: Roca de Anclaje y Tensor a 45 Grados",
+      "categoria": "props",
+      "subcategoria": "educacion_ciencia",
+      "emocion": "any",
+      "accion": "both",
+      "propsAsociados": [
+        "catenaria_anclaje_rocas_tierra"
+      ],
+      "ruta": "poses/props/prop_catenaria_anclaje_rocas_tierra.svg",
+      "formato": "svg",
+      "etiquetas": [
+        "roca",
+        "anclaje",
+        "deadman",
+        "cable",
+        "tensor",
+        "45grados"
+      ],
+      "compatibleComposicion": true
+    },
+    {
+      "id": "prop_pendolas_suspension_tabla_vuelo",
+      "propParamId": "pendolas_suspension_tabla_vuelo",
+      "nombre": "Prop: Tirantes Péndolas de Suspensión",
+      "categoria": "props",
+      "subcategoria": "educacion_ciencia",
+      "emocion": "any",
+      "accion": "both",
+      "propsAsociados": [
+        "pendolas_suspension_tabla_vuelo"
+      ],
+      "ruta": "poses/props/prop_pendolas_suspension_tabla_vuelo.svg",
+      "formato": "svg",
+      "etiquetas": [
+        "pendolas",
+        "tirantes",
+        "suspension",
+        "calzada",
+        "cable"
+      ],
+      "compatibleComposicion": true
+    },
+    {
+      "id": "prop_carretilla_empujada_rocas",
+      "propParamId": "carretilla_empujada_rocas",
+      "nombre": "Prop: Carretilla de Obra Empujada con Rueda Giratoria",
+      "categoria": "props",
+      "subcategoria": "herramientas_objetos",
+      "emocion": "any",
+      "accion": "both",
+      "propsAsociados": [
+        "carretilla_empujada_rocas"
+      ],
+      "ruta": "poses/props/prop_carretilla_empujada_rocas.svg",
+      "formato": "svg",
+      "etiquetas": [
+        "carretilla",
+        "rocas",
+        "empujar",
+        "obra",
+        "rueda",
+        "giro"
+      ],
+      "compatibleComposicion": true
+    },
+    {
+      "id": "prop_carretilla_estacionada_rocas",
+      "propParamId": "carretilla_estacionada_rocas",
+      "nombre": "Prop: Carretilla Estacionada en la Hierba",
+      "categoria": "props",
+      "subcategoria": "herramientas_objetos",
+      "emocion": "any",
+      "accion": "both",
+      "propsAsociados": [
+        "carretilla_estacionada_rocas"
+      ],
+      "ruta": "poses/props/prop_carretilla_estacionada_rocas.svg",
+      "formato": "svg",
+      "etiquetas": [
+        "carretilla",
+        "estacionada",
+        "parada",
+        "rocas",
+        "hierba",
+        "descanso"
+      ],
+      "compatibleComposicion": true
+    },
+    {
+      "id": "prop_llave_abrazadera_escape",
+      "propParamId": "llave_abrazadera_escape",
+      "nombre": "Prop: Llave Ajustando Abrazadera de Escape",
+      "categoria": "props",
+      "subcategoria": "herramientas_objetos",
+      "emocion": "any",
+      "accion": "right",
+      "propsAsociados": [
+        "llave_abrazadera_escape"
+      ],
+      "ruta": "poses/props/prop_llave_abrazadera_escape.svg",
+      "formato": "svg",
+      "etiquetas": [
+        "llave",
+        "escape",
+        "abrazadera",
+        "kart",
+        "taller",
+        "mecanica"
+      ],
+      "compatibleComposicion": true
+    },
+    {
+      "id": "prop_sonometro_digital_alarma",
+      "propParamId": "sonometro_digital_alarma",
+      "nombre": "Prop: Sonómetro Digital de Alarma Sónica 115 dB",
+      "categoria": "props",
+      "subcategoria": "educacion_ciencia",
+      "emocion": "any",
+      "accion": "right",
+      "propsAsociados": [
+        "sonometro_digital_alarma"
+      ],
+      "ruta": "poses/props/prop_sonometro_digital_alarma.svg",
+      "formato": "svg",
+      "etiquetas": [
+        "sonometro",
+        "decibelios",
+        "ruido",
+        "db",
+        "medidor",
+        "alarma"
+      ],
+      "compatibleComposicion": true
+    },
+    {
+      "id": "prop_antorcha_soldadura_tig_chispas",
+      "propParamId": "antorcha_soldadura_tig_chispas",
+      "nombre": "Prop: Antorcha de Soldadura TIG con Chispas",
+      "categoria": "props",
+      "subcategoria": "herramientas_objetos",
+      "emocion": "any",
+      "accion": "right",
+      "propsAsociados": [
+        "antorcha_soldadura_tig_chispas"
+      ],
+      "ruta": "poses/props/prop_antorcha_soldadura_tig_chispas.svg",
+      "formato": "svg",
+      "etiquetas": [
+        "soldadura",
+        "antorcha",
+        "tig",
+        "chispas",
+        "fabricacion",
+        "taller"
+      ],
+      "compatibleComposicion": true
+    },
+    {
+      "id": "prop_tubo_perforado_fibra_acustica",
+      "propParamId": "tubo_perforado_fibra_acustica",
+      "nombre": "Prop: Tubo Perforado envuelto en Fibra de Vidrio",
+      "categoria": "props",
+      "subcategoria": "educacion_ciencia",
+      "emocion": "any",
+      "accion": "both",
+      "propsAsociados": [
+        "tubo_perforado_fibra_acustica"
+      ],
+      "ruta": "poses/props/prop_tubo_perforado_fibra_acustica.svg",
+      "formato": "svg",
+      "etiquetas": [
+        "fibra_vidrio",
+        "tubo_perforado",
+        "absorcion",
+        "acustica",
+        "calor",
+        "silenciador"
+      ],
+      "compatibleComposicion": true
+    },
+    {
+      "id": "prop_regla_marcador_longitud_onda",
+      "propParamId": "regla_marcador_longitud_onda",
+      "nombre": "Prop: Regla y Marcador de Desfase Lambda sobre Dos",
+      "categoria": "props",
+      "subcategoria": "educacion_ciencia",
+      "emocion": "any",
+      "accion": "both",
+      "propsAsociados": [
+        "regla_marcador_longitud_onda"
+      ],
+      "ruta": "poses/props/prop_regla_marcador_longitud_onda.svg",
+      "formato": "svg",
+      "etiquetas": [
+        "regla",
+        "longitud_onda",
+        "lambda",
+        "deflectores",
+        "diseno",
+        "acustica"
+      ],
+      "compatibleComposicion": true
+    },
+    {
+      "id": "prop_holograma_cancelacion_fases",
+      "propParamId": "holograma_cancelacion_fases",
+      "nombre": "Prop: Panel Holográfico de Cancelación Destructiva 1 + (-1) = 0",
+      "categoria": "props",
+      "subcategoria": "educacion_ciencia",
+      "emocion": "any",
+      "accion": "both",
+      "propsAsociados": [
+        "holograma_cancelacion_fases"
+      ],
+      "ruta": "poses/props/prop_holograma_cancelacion_fases.svg",
+      "formato": "svg",
+      "etiquetas": [
+        "cancelacion",
+        "fase",
+        "interferencia",
+        "destructiva",
+        "onda",
+        "acustica"
+      ],
+      "compatibleComposicion": true
+    },
+    {
+      "id": "prop_test_dummy_aplastado",
+      "propParamId": "test_dummy_aplastado",
+      "nombre": "Prop: Muñeco de Prueba Aplastado por Fuerzas G",
+      "categoria": "props",
+      "subcategoria": "educacion_ciencia",
+      "emocion": "any",
+      "accion": "overhead",
+      "propsAsociados": [
+        "test_dummy_aplastado"
+      ],
+      "ruta": "poses/props/prop_test_dummy_aplastado.svg",
+      "formato": "svg",
+      "etiquetas": [
+        "dummy",
+        "maniqui",
+        "aplastado",
+        "prueba",
+        "fuerza_g",
+        "colapso"
+      ],
+      "compatibleComposicion": true
+    },
+    {
+      "id": "prop_carrito_montana_rusa_vintage",
+      "propParamId": "carrito_montana_rusa_vintage",
+      "nombre": "Prop: Carrito de Montaña Rusa Vintage 1895",
+      "categoria": "props",
+      "subcategoria": "educacion_ciencia",
+      "emocion": "any",
+      "accion": "both",
+      "propsAsociados": [
+        "carrito_montana_rusa_vintage"
+      ],
+      "ruta": "poses/props/prop_carrito_montana_rusa_vintage.svg",
+      "formato": "svg",
+      "etiquetas": [
+        "carrito",
+        "montana_rusa",
+        "vintage",
+        "madera",
+        "riel",
+        "velocidad"
+      ],
+      "compatibleComposicion": true
+    },
+    {
+      "id": "prop_planos_blueprint_feria",
+      "propParamId": "planos_blueprint_feria",
+      "nombre": "Prop: Planos Blueprint de Montaña Rusa",
+      "categoria": "props",
+      "subcategoria": "educacion_ciencia",
+      "emocion": "any",
+      "accion": "right",
+      "propsAsociados": [
+        "planos_blueprint_feria"
+      ],
+      "ruta": "poses/props/prop_planos_blueprint_feria.svg",
+      "formato": "svg",
+      "etiquetas": [
+        "planos",
+        "blueprint",
+        "ingenieria",
+        "diseno",
+        "feria",
+        "calculo"
+      ],
+      "compatibleComposicion": true
+    },
+    {
+      "id": "prop_llave_inglesa_sabotaje",
+      "propParamId": "llave_inglesa_sabotaje",
+      "nombre": "Prop: Llave Inglesa Pesada de Sabotaje",
+      "categoria": "props",
+      "subcategoria": "vida_cotidiana",
+      "emocion": "any",
+      "accion": "right",
+      "propsAsociados": [
+        "llave_inglesa_sabotaje"
+      ],
+      "ruta": "poses/props/prop_llave_inglesa_sabotaje.svg",
+      "formato": "svg",
+      "etiquetas": [
+        "llave_inglesa",
+        "herramienta",
+        "sabotaje",
+        "hierro",
+        "tuerca",
+        "mecanica"
+      ],
+      "compatibleComposicion": true
+    },
+    {
+      "id": "prop_gafas_sol_llave_kart_victoria",
+      "propParamId": "gafas_sol_llave_kart_victoria",
+      "nombre": "Prop: Gafas de Sol y Llave de Kart Triunfal",
+      "categoria": "props",
+      "subcategoria": "reacciones_humor",
+      "emocion": "any",
+      "accion": "both",
+      "propsAsociados": [
+        "gafas_sol_llave_kart_victoria"
+      ],
+      "ruta": "poses/props/prop_gafas_sol_llave_kart_victoria.svg",
+      "formato": "svg",
+      "etiquetas": [
+        "gafas_sol",
+        "llave",
+        "kart",
+        "victoria",
+        "carreras",
+        "triunfo"
       ],
       "compatibleComposicion": true
     },

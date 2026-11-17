@@ -25,3 +25,10 @@ venv/
 Thumbs.db
 .vscode/
 .idea/
+
+# Google / YouTube OAuth Credentials
+client_secrets.json
+client_secret*.json
+token.json
+.yt_token.json
+

@@ -28,7 +28,8 @@
       "layout": "narrativo",
       "transicion": "zoom_in",
       "efectosCamara": [
-        "drift"
+        "drift",
+        "punch"
       ],
       "sfx": "sfx/sfx_whoosh.wav",
       "volumenSfx": 0.2,
@@ -42,21 +43,47 @@
           "id": "narrador",
           "posicion": {
             "x": -160,
-            "y": 70
+            "y": 80
           },
           "escala": 1.05,
           "orientacion": "derecha",
-          "prop": "bionic_ant",
           "poseId": "explaining_pointing_up",
           "expresion": "talking_enthusiastic",
           "acciones": [
             {
-              "tipo": "caminar_hacia",
-              "desdeX": -260,
-              "haciaX": -120
+              "tipo": "personalizada",
+              "pasos": [
+                {
+                  "inicioProgreso": 0.0,
+                  "finProgreso": 0.5,
+                  "hastaPalabra": "cayera",
+                  "poseId": "explaining_pointing_up",
+                  "expresion": "talking_enthusiastic",
+                  "posicion": {
+                    "x": -160,
+                    "y": 80
+                  },
+                  "curva": "suave",
+                  "procedural": "estatico"
+                },
+                {
+                  "inicioProgreso": 0.5,
+                  "finProgreso": 1.0,
+                  "desdePalabra": "cayera",
+                  "poseId": "asking_question",
+                  "expresion": "surprised",
+                  "posicion": {
+                    "x": -135,
+                    "y": 80
+                  },
+                  "curva": "suave",
+                  "procedural": "estatico"
+                }
+              ]
             }
           ],
-          "habla": true
+          "habla": true,
+          "capaZ": 20
         }
       ],
       "duracionSegundos": 6.25,
@@ -176,6 +203,71 @@
           "inicioMs": 5220,
           "finMs": 5760
         }
+      ],
+      "objetos": [
+        {
+          "id": "obj_ant_1",
+          "propId": "bionic_ant",
+          "posicion": {
+            "x": 165,
+            "y": -30
+          },
+          "escala": 1.35,
+          "capaZ": 28,
+          "pasos": [
+            {
+              "inicioProgreso": 0.0,
+              "finProgreso": 0.5,
+              "hastaPalabra": "cayera",
+              "posicion": {
+                "x": 165,
+                "y": -30
+              },
+              "escala": 1.35,
+              "estado": "normal",
+              "curva": "suave"
+            },
+            {
+              "inicioProgreso": 0.5,
+              "finProgreso": 1.0,
+              "desdePalabra": "cayera",
+              "posicion": {
+                "x": 140,
+                "y": -20
+              },
+              "escala": 1.48,
+              "estado": "escudo_quitina",
+              "curva": "rebote"
+            }
+          ]
+        }
+      ],
+      "focoCamara": [
+        {
+          "inicioProgreso": 0.0,
+          "finProgreso": 0.36,
+          "x": -90,
+          "y": 20,
+          "escala": 1.12,
+          "curva": "suave"
+        },
+        {
+          "inicioProgreso": 0.36,
+          "finProgreso": 0.72,
+          "desdePalabra": "cayera",
+          "x": 95,
+          "y": -20,
+          "escala": 1.22,
+          "curva": "suave"
+        },
+        {
+          "inicioProgreso": 0.72,
+          "finProgreso": 1.0,
+          "x": 0,
+          "y": 0,
+          "escala": 1.0,
+          "curva": "suave"
+        }
       ]
     },
     {
@@ -189,8 +281,8 @@
       "layout": "narrativo",
       "transicion": "whip_right",
       "efectosCamara": [
-        "shake",
-        "punch"
+        "drift",
+        "shake"
       ],
       "sfx": "sfx/sfx_dramatic_hit.wav",
       "volumenSfx": 0.25,
@@ -208,19 +300,48 @@
         {
           "id": "victima",
           "posicion": {
-            "x": 0,
-            "y": 50
+            "x": -160,
+            "y": 80
           },
-          "escala": 1.15,
+          "escala": 1.05,
           "orientacion": "derecha",
           "poseId": "backing_away_scared",
           "expresion": "shocked",
           "acciones": [
             {
-              "tipo": "sorpresa_y_retroceso"
+              "tipo": "personalizada",
+              "pasos": [
+                {
+                  "inicioProgreso": 0.0,
+                  "finProgreso": 0.5,
+                  "hastaPalabra": "sería",
+                  "poseId": "backing_away_scared",
+                  "expresion": "shocked",
+                  "posicion": {
+                    "x": -160,
+                    "y": 80
+                  },
+                  "curva": "suave",
+                  "procedural": "estatico"
+                },
+                {
+                  "inicioProgreso": 0.5,
+                  "finProgreso": 1.0,
+                  "desdePalabra": "sería",
+                  "poseId": "shock_explosion",
+                  "expresion": "scared",
+                  "posicion": {
+                    "x": -135,
+                    "y": 80
+                  },
+                  "curva": "suave",
+                  "procedural": "estatico"
+                }
+              ]
             }
           ],
-          "habla": true
+          "habla": true,
+          "capaZ": 20
         }
       ],
       "duracionSegundos": 6.226,
@@ -335,6 +456,71 @@
           "inicioMs": 5740,
           "finMs": 5976
         }
+      ],
+      "objetos": [
+        {
+          "id": "obj_ant_2",
+          "propId": "cube_physics",
+          "posicion": {
+            "x": 165,
+            "y": -30
+          },
+          "escala": 1.35,
+          "capaZ": 28,
+          "pasos": [
+            {
+              "inicioProgreso": 0.0,
+              "finProgreso": 0.5,
+              "hastaPalabra": "sería",
+              "posicion": {
+                "x": 165,
+                "y": -30
+              },
+              "escala": 1.35,
+              "estado": "caida_pesada",
+              "curva": "suave"
+            },
+            {
+              "inicioProgreso": 0.5,
+              "finProgreso": 1.0,
+              "desdePalabra": "sería",
+              "posicion": {
+                "x": 140,
+                "y": -20
+              },
+              "escala": 1.48,
+              "estado": "comparacion_escala",
+              "curva": "rebote"
+            }
+          ]
+        }
+      ],
+      "focoCamara": [
+        {
+          "inicioProgreso": 0.0,
+          "finProgreso": 0.36,
+          "x": -90,
+          "y": 20,
+          "escala": 1.12,
+          "curva": "suave"
+        },
+        {
+          "inicioProgreso": 0.36,
+          "finProgreso": 0.72,
+          "desdePalabra": "sería",
+          "x": 95,
+          "y": -20,
+          "escala": 1.22,
+          "curva": "suave"
+        },
+        {
+          "inicioProgreso": 0.72,
+          "finProgreso": 1.0,
+          "x": 0,
+          "y": 0,
+          "escala": 1.0,
+          "curva": "suave"
+        }
       ]
     },
     {
@@ -343,12 +529,13 @@
       "icono": "Compass",
       "colorIcono": "#10B981",
       "tituloVisual": "SALTO INTACTO",
-      "composicionVisual": "plano_general",
+      "composicionVisual": "escenario_ilustrado",
       "escenario": "cielo_dia",
       "layout": "narrativo",
       "transicion": "whip_left",
       "efectosCamara": [
-        "drift"
+        "drift",
+        "punch"
       ],
       "elementosNarrativos": [
         {
@@ -364,29 +551,86 @@
         {
           "id": "narrador",
           "posicion": {
-            "x": -180,
-            "y": 60
+            "x": -160,
+            "y": 80
           },
           "escala": 1.05,
           "orientacion": "derecha",
-          "prop": "bionic_ant",
           "poseId": "standing_confident",
           "expresion": "eureka",
-          "habla": true
+          "habla": true,
+          "capaZ": 20,
+          "acciones": [
+            {
+              "tipo": "personalizada",
+              "pasos": [
+                {
+                  "inicioProgreso": 0.0,
+                  "finProgreso": 0.5,
+                  "hastaPalabra": "llegará",
+                  "poseId": "pointing_right",
+                  "expresion": "surprised",
+                  "posicion": {
+                    "x": -160,
+                    "y": 80
+                  },
+                  "curva": "suave",
+                  "procedural": "estatico"
+                },
+                {
+                  "inicioProgreso": 0.5,
+                  "finProgreso": 1.0,
+                  "desdePalabra": "llegará",
+                  "poseId": "standing_confident",
+                  "expresion": "eureka",
+                  "posicion": {
+                    "x": -135,
+                    "y": 80
+                  },
+                  "curva": "suave",
+                  "procedural": "estatico"
+                }
+              ]
+            }
+          ]
         }
       ],
       "objetos": [
         {
-          "id": "hormiga_flotante",
+          "id": "obj_ant_3",
           "propId": "bionic_ant",
           "posicion": {
-            "x": 200,
-            "y": -40
+            "x": 165,
+            "y": -30
           },
-          "escala": 1.7,
-          "animacion": {
-            "tipo": "flotar"
-          }
+          "escala": 1.35,
+          "capaZ": 28,
+          "pasos": [
+            {
+              "inicioProgreso": 0.0,
+              "finProgreso": 0.5,
+              "hastaPalabra": "llegará",
+              "posicion": {
+                "x": 165,
+                "y": -30
+              },
+              "escala": 1.35,
+              "estado": "paracaidas",
+              "curva": "suave"
+            },
+            {
+              "inicioProgreso": 0.5,
+              "finProgreso": 1.0,
+              "desdePalabra": "llegará",
+              "posicion": {
+                "x": 140,
+                "y": -20
+              },
+              "escala": 1.48,
+              "estado": "escudo_quitina",
+              "curva": "rebote"
+            }
+          ]
         }
       ],
       "duracionSegundos": 6.826,
@@ -516,6 +760,33 @@
           "inicioMs": 6080,
           "finMs": 6320
         }
+      ],
+      "focoCamara": [
+        {
+          "inicioProgreso": 0.0,
+          "finProgreso": 0.36,
+          "x": -90,
+          "y": 20,
+          "escala": 1.12,
+          "curva": "suave"
+        },
+        {
+          "inicioProgreso": 0.36,
+          "finProgreso": 0.72,
+          "desdePalabra": "llegará",
+          "x": 95,
+          "y": -20,
+          "escala": 1.22,
+          "curva": "suave"
+        },
+        {
+          "inicioProgreso": 0.72,
+          "finProgreso": 1.0,
+          "x": 0,
+          "y": 0,
+          "escala": 1.0,
+          "curva": "suave"
+        }
       ]
     },
     {
@@ -524,12 +795,13 @@
       "icono": "Gauge",
       "colorIcono": "#38BDF8",
       "tituloVisual": "VELOCIDAD LÍMITE",
-      "composicionVisual": "plano_general",
+      "composicionVisual": "cifras_concepto",
       "escenario": "laboratorio",
       "layout": "narrativo",
       "transicion": "zoom_in",
       "efectosCamara": [
-        "drift"
+        "drift",
+        "shake"
       ],
       "palabrasClave": [
         "velocidad terminal",
@@ -541,27 +813,85 @@
           "id": "cientifico",
           "posicion": {
             "x": -160,
-            "y": 70
+            "y": 80
           },
           "escala": 1.05,
           "orientacion": "derecha",
           "poseId": "explaining_both_hands",
           "expresion": "analytical",
-          "habla": true
+          "habla": true,
+          "capaZ": 20,
+          "acciones": [
+            {
+              "tipo": "personalizada",
+              "pasos": [
+                {
+                  "inicioProgreso": 0.0,
+                  "finProgreso": 0.5,
+                  "hastaPalabra": "velocidad",
+                  "poseId": "explaining_both_hands",
+                  "expresion": "analytical",
+                  "posicion": {
+                    "x": -160,
+                    "y": 80
+                  },
+                  "curva": "suave",
+                  "procedural": "estatico"
+                },
+                {
+                  "inicioProgreso": 0.5,
+                  "finProgreso": 1.0,
+                  "desdePalabra": "velocidad",
+                  "poseId": "presenting_object",
+                  "expresion": "talking_enthusiastic",
+                  "posicion": {
+                    "x": -135,
+                    "y": 80
+                  },
+                  "curva": "suave",
+                  "procedural": "estatico"
+                }
+              ]
+            }
+          ]
         }
       ],
       "objetos": [
         {
-          "id": "escudo_terminal",
+          "id": "obj_ant_4",
           "propId": "terminal_velocity_shield",
           "posicion": {
-            "x": 220,
-            "y": -50
+            "x": 165,
+            "y": -30
           },
-          "escala": 1.5,
-          "animacion": {
-            "tipo": "pulso"
-          }
+          "escala": 1.35,
+          "capaZ": 28,
+          "pasos": [
+            {
+              "inicioProgreso": 0.0,
+              "finProgreso": 0.5,
+              "hastaPalabra": "velocidad",
+              "posicion": {
+                "x": 165,
+                "y": -30
+              },
+              "escala": 1.35,
+              "estado": "caida",
+              "curva": "suave"
+            },
+            {
+              "inicioProgreso": 0.5,
+              "finProgreso": 1.0,
+              "desdePalabra": "velocidad",
+              "posicion": {
+                "x": 140,
+                "y": -20
+              },
+              "escala": 1.48,
+              "estado": "freno_aire",
+              "curva": "rebote"
+            }
+          ]
         }
       ],
       "duracionSegundos": 6.538,
@@ -676,6 +1006,33 @@
           "inicioMs": 5600,
           "finMs": 6060
         }
+      ],
+      "focoCamara": [
+        {
+          "inicioProgreso": 0.0,
+          "finProgreso": 0.36,
+          "x": -90,
+          "y": 20,
+          "escala": 1.12,
+          "curva": "suave"
+        },
+        {
+          "inicioProgreso": 0.36,
+          "finProgreso": 0.72,
+          "desdePalabra": "velocidad",
+          "x": 95,
+          "y": -20,
+          "escala": 1.22,
+          "curva": "suave"
+        },
+        {
+          "inicioProgreso": 0.72,
+          "finProgreso": 1.0,
+          "x": 0,
+          "y": 0,
+          "escala": 1.0,
+          "curva": "suave"
+        }
       ]
     },
     {
@@ -684,13 +1041,13 @@
       "icono": "Zap",
       "colorIcono": "#FACC15",
       "tituloVisual": "6 KM POR HORA",
-      "composicionVisual": "cifras_concepto",
+      "composicionVisual": "plano_general",
       "escenario": "laboratorio",
       "layout": "narrativo",
       "transicion": "corte",
       "efectosCamara": [
-        "punch",
-        "drift"
+        "drift",
+        "punch"
       ],
       "elementosNarrativos": [
         {
@@ -706,28 +1063,86 @@
         {
           "id": "cientifico",
           "posicion": {
-            "x": -150,
-            "y": 70
+            "x": -160,
+            "y": 80
           },
           "escala": 1.05,
           "orientacion": "derecha",
           "poseId": "presenting_object",
           "expresion": "talking_enthusiastic",
-          "habla": true
+          "habla": true,
+          "capaZ": 20,
+          "acciones": [
+            {
+              "tipo": "personalizada",
+              "pasos": [
+                {
+                  "inicioProgreso": 0.0,
+                  "finProgreso": 0.5,
+                  "hastaPalabra": "Pero",
+                  "poseId": "presenting_object",
+                  "expresion": "talking_enthusiastic",
+                  "posicion": {
+                    "x": -160,
+                    "y": 80
+                  },
+                  "curva": "suave",
+                  "procedural": "estatico"
+                },
+                {
+                  "inicioProgreso": 0.5,
+                  "finProgreso": 1.0,
+                  "desdePalabra": "Pero",
+                  "poseId": "eureka_idea",
+                  "expresion": "eureka",
+                  "posicion": {
+                    "x": -135,
+                    "y": 80
+                  },
+                  "curva": "suave",
+                  "procedural": "estatico"
+                }
+              ]
+            }
+          ]
         }
       ],
       "objetos": [
         {
-          "id": "medidor_velocidad",
+          "id": "obj_ant_5",
           "propId": "terminal_velocity_shield",
           "posicion": {
-            "x": 220,
-            "y": -40
+            "x": 165,
+            "y": -30
           },
-          "escala": 1.55,
-          "animacion": {
-            "tipo": "vibrar"
-          }
+          "escala": 1.35,
+          "capaZ": 28,
+          "pasos": [
+            {
+              "inicioProgreso": 0.0,
+              "finProgreso": 0.5,
+              "hastaPalabra": "Pero",
+              "posicion": {
+                "x": 165,
+                "y": -30
+              },
+              "escala": 1.35,
+              "estado": "caida",
+              "curva": "suave"
+            },
+            {
+              "inicioProgreso": 0.5,
+              "finProgreso": 1.0,
+              "desdePalabra": "Pero",
+              "posicion": {
+                "x": 140,
+                "y": -20
+              },
+              "escala": 1.48,
+              "estado": "freno_aire",
+              "curva": "rebote"
+            }
+          ]
         }
       ],
       "duracionSegundos": 7.186,
@@ -847,6 +1262,33 @@
           "inicioMs": 6500,
           "finMs": 6700
         }
+      ],
+      "focoCamara": [
+        {
+          "inicioProgreso": 0.0,
+          "finProgreso": 0.36,
+          "x": -90,
+          "y": 20,
+          "escala": 1.12,
+          "curva": "suave"
+        },
+        {
+          "inicioProgreso": 0.36,
+          "finProgreso": 0.72,
+          "desdePalabra": "Pero",
+          "x": 95,
+          "y": -20,
+          "escala": 1.22,
+          "curva": "suave"
+        },
+        {
+          "inicioProgreso": 0.72,
+          "finProgreso": 1.0,
+          "x": 0,
+          "y": 0,
+          "escala": 1.0,
+          "curva": "suave"
+        }
       ]
     },
     {
@@ -855,12 +1297,13 @@
       "icono": "Scale",
       "colorIcono": "#8B5CF6",
       "tituloVisual": "LEY CUADRADO-CÚBICA",
-      "composicionVisual": "plano_general",
+      "composicionVisual": "primer_plano",
       "escenario": "laboratorio",
       "layout": "narrativo",
       "transicion": "whip_right",
       "efectosCamara": [
-        "drift"
+        "drift",
+        "shake"
       ],
       "palabrasClave": [
         "ley cuadrado-cúbica",
@@ -872,28 +1315,85 @@
           "id": "fisico",
           "posicion": {
             "x": -160,
-            "y": 70
+            "y": 80
           },
           "escala": 1.05,
           "orientacion": "derecha",
           "poseId": "investigating_magnifier",
           "expresion": "thinking",
-          "prop": "magnifier",
-          "habla": true
+          "habla": true,
+          "capaZ": 20,
+          "acciones": [
+            {
+              "tipo": "personalizada",
+              "pasos": [
+                {
+                  "inicioProgreso": 0.0,
+                  "finProgreso": 0.5,
+                  "hastaPalabra": "superficie",
+                  "poseId": "investigating_magnifier",
+                  "expresion": "thinking",
+                  "posicion": {
+                    "x": -160,
+                    "y": 80
+                  },
+                  "curva": "suave",
+                  "procedural": "estatico"
+                },
+                {
+                  "inicioProgreso": 0.5,
+                  "finProgreso": 1.0,
+                  "desdePalabra": "superficie",
+                  "poseId": "explaining_both_hands",
+                  "expresion": "eureka",
+                  "posicion": {
+                    "x": -135,
+                    "y": 80
+                  },
+                  "curva": "suave",
+                  "procedural": "estatico"
+                }
+              ]
+            }
+          ]
         }
       ],
       "objetos": [
         {
-          "id": "cubo_haldane",
+          "id": "obj_ant_6",
           "propId": "cube_physics",
           "posicion": {
-            "x": 220,
-            "y": -60
+            "x": 165,
+            "y": -30
           },
-          "escala": 1.6,
-          "animacion": {
-            "tipo": "pulso"
-          }
+          "escala": 1.35,
+          "capaZ": 28,
+          "pasos": [
+            {
+              "inicioProgreso": 0.0,
+              "finProgreso": 0.5,
+              "hastaPalabra": "superficie",
+              "posicion": {
+                "x": 165,
+                "y": -30
+              },
+              "escala": 1.35,
+              "estado": "caida_pesada",
+              "curva": "suave"
+            },
+            {
+              "inicioProgreso": 0.5,
+              "finProgreso": 1.0,
+              "desdePalabra": "superficie",
+              "posicion": {
+                "x": 140,
+                "y": -20
+              },
+              "escala": 1.48,
+              "estado": "comparacion_escala",
+              "curva": "rebote"
+            }
+          ]
         }
       ],
       "duracionSegundos": 7.426,
@@ -1003,6 +1503,33 @@
           "inicioMs": 6580,
           "finMs": 6960
         }
+      ],
+      "focoCamara": [
+        {
+          "inicioProgreso": 0.0,
+          "finProgreso": 0.36,
+          "x": -90,
+          "y": 20,
+          "escala": 1.12,
+          "curva": "suave"
+        },
+        {
+          "inicioProgreso": 0.36,
+          "finProgreso": 0.72,
+          "desdePalabra": "superficie",
+          "x": 95,
+          "y": -20,
+          "escala": 1.22,
+          "curva": "suave"
+        },
+        {
+          "inicioProgreso": 0.72,
+          "finProgreso": 1.0,
+          "x": 0,
+          "y": 0,
+          "escala": 1.0,
+          "curva": "suave"
+        }
       ]
     },
     {
@@ -1011,12 +1538,13 @@
       "icono": "Wind",
       "colorIcono": "#06B6D4",
       "tituloVisual": "AIRE ESPESO",
-      "composicionVisual": "primer_plano",
+      "composicionVisual": "escenario_ilustrado",
       "escenario": "cielo_dia",
       "layout": "narrativo",
       "transicion": "zoom_in",
       "efectosCamara": [
-        "drift"
+        "drift",
+        "punch"
       ],
       "palabrasClave": [
         "aire espeso",
@@ -1027,14 +1555,48 @@
         {
           "id": "narrador",
           "posicion": {
-            "x": 0,
-            "y": 50
+            "x": -160,
+            "y": 80
           },
-          "escala": 1.15,
+          "escala": 1.05,
           "orientacion": "derecha",
           "poseId": "explaining_both_hands",
           "expresion": "eureka",
-          "habla": true
+          "habla": true,
+          "capaZ": 20,
+          "acciones": [
+            {
+              "tipo": "personalizada",
+              "pasos": [
+                {
+                  "inicioProgreso": 0.0,
+                  "finProgreso": 0.5,
+                  "hastaPalabra": "siente",
+                  "poseId": "explaining_both_hands",
+                  "expresion": "talking_enthusiastic",
+                  "posicion": {
+                    "x": -160,
+                    "y": 80
+                  },
+                  "curva": "suave",
+                  "procedural": "estatico"
+                },
+                {
+                  "inicioProgreso": 0.5,
+                  "finProgreso": 1.0,
+                  "desdePalabra": "siente",
+                  "poseId": "presenting_object",
+                  "expresion": "eureka",
+                  "posicion": {
+                    "x": -135,
+                    "y": 80
+                  },
+                  "curva": "suave",
+                  "procedural": "estatico"
+                }
+              ]
+            }
+          ]
         }
       ],
       "duracionSegundos": 6.706,
@@ -1169,6 +1731,71 @@
           "inicioMs": 6260,
           "finMs": 6456
         }
+      ],
+      "objetos": [
+        {
+          "id": "obj_ant_7",
+          "propId": "honey_pot",
+          "posicion": {
+            "x": 165,
+            "y": -30
+          },
+          "escala": 1.35,
+          "capaZ": 28,
+          "pasos": [
+            {
+              "inicioProgreso": 0.0,
+              "finProgreso": 0.5,
+              "hastaPalabra": "siente",
+              "posicion": {
+                "x": 165,
+                "y": -30
+              },
+              "escala": 1.35,
+              "estado": "fluido_denso",
+              "curva": "suave"
+            },
+            {
+              "inicioProgreso": 0.5,
+              "finProgreso": 1.0,
+              "desdePalabra": "siente",
+              "posicion": {
+                "x": 140,
+                "y": -20
+              },
+              "escala": 1.48,
+              "estado": "flotando_miel",
+              "curva": "rebote"
+            }
+          ]
+        }
+      ],
+      "focoCamara": [
+        {
+          "inicioProgreso": 0.0,
+          "finProgreso": 0.36,
+          "x": -90,
+          "y": 20,
+          "escala": 1.12,
+          "curva": "suave"
+        },
+        {
+          "inicioProgreso": 0.36,
+          "finProgreso": 0.72,
+          "desdePalabra": "siente",
+          "x": 95,
+          "y": -20,
+          "escala": 1.22,
+          "curva": "suave"
+        },
+        {
+          "inicioProgreso": 0.72,
+          "finProgreso": 1.0,
+          "x": 0,
+          "y": 0,
+          "escala": 1.0,
+          "curva": "suave"
+        }
       ]
     },
     {
@@ -1177,12 +1804,13 @@
       "icono": "Atom",
       "colorIcono": "#EC4899",
       "tituloVisual": "ENERGÍA CERO",
-      "composicionVisual": "plano_general",
+      "composicionVisual": "cifras_concepto",
       "escenario": "laboratorio",
       "layout": "narrativo",
       "transicion": "corte",
       "efectosCamara": [
-        "drift"
+        "drift",
+        "shake"
       ],
       "palabrasClave": [
         "fuerza del impacto",
@@ -1193,15 +1821,48 @@
         {
           "id": "cientifico",
           "posicion": {
-            "x": -150,
-            "y": 70
+            "x": -160,
+            "y": 80
           },
           "escala": 1.05,
           "orientacion": "derecha",
-          "prop": "calculator",
           "poseId": "explaining_pointing_up",
           "expresion": "analytical",
-          "habla": true
+          "habla": true,
+          "capaZ": 20,
+          "acciones": [
+            {
+              "tipo": "personalizada",
+              "pasos": [
+                {
+                  "inicioProgreso": 0.0,
+                  "finProgreso": 0.5,
+                  "hastaPalabra": "Al",
+                  "poseId": "explaining_pointing_up",
+                  "expresion": "analytical",
+                  "posicion": {
+                    "x": -160,
+                    "y": 80
+                  },
+                  "curva": "suave",
+                  "procedural": "estatico"
+                },
+                {
+                  "inicioProgreso": 0.5,
+                  "finProgreso": 1.0,
+                  "desdePalabra": "Al",
+                  "poseId": "thumbs_up_approval",
+                  "expresion": "smile_wide",
+                  "posicion": {
+                    "x": -135,
+                    "y": 80
+                  },
+                  "curva": "suave",
+                  "procedural": "estatico"
+                }
+              ]
+            }
+          ]
         }
       ],
       "duracionSegundos": 7.09,
@@ -1321,6 +1982,71 @@
           "inicioMs": 6160,
           "finMs": 6620
         }
+      ],
+      "objetos": [
+        {
+          "id": "obj_ant_8",
+          "propId": "cube_physics",
+          "posicion": {
+            "x": 165,
+            "y": -30
+          },
+          "escala": 1.35,
+          "capaZ": 28,
+          "pasos": [
+            {
+              "inicioProgreso": 0.0,
+              "finProgreso": 0.5,
+              "hastaPalabra": "Al",
+              "posicion": {
+                "x": 165,
+                "y": -30
+              },
+              "escala": 1.35,
+              "estado": "caida_pesada",
+              "curva": "suave"
+            },
+            {
+              "inicioProgreso": 0.5,
+              "finProgreso": 1.0,
+              "desdePalabra": "Al",
+              "posicion": {
+                "x": 140,
+                "y": -20
+              },
+              "escala": 1.48,
+              "estado": "comparacion_escala",
+              "curva": "rebote"
+            }
+          ]
+        }
+      ],
+      "focoCamara": [
+        {
+          "inicioProgreso": 0.0,
+          "finProgreso": 0.36,
+          "x": -90,
+          "y": 20,
+          "escala": 1.12,
+          "curva": "suave"
+        },
+        {
+          "inicioProgreso": 0.36,
+          "finProgreso": 0.72,
+          "desdePalabra": "Al",
+          "x": 95,
+          "y": -20,
+          "escala": 1.22,
+          "curva": "suave"
+        },
+        {
+          "inicioProgreso": 0.72,
+          "finProgreso": 1.0,
+          "x": 0,
+          "y": 0,
+          "escala": 1.0,
+          "curva": "suave"
+        }
       ]
     },
     {
@@ -1329,12 +2055,13 @@
       "icono": "Shield",
       "colorIcono": "#10B981",
       "tituloVisual": "ARMADURA QUITINA",
-      "composicionVisual": "plano_general",
+      "composicionVisual": "primer_plano",
       "escenario": "laboratorio",
       "layout": "narrativo",
       "transicion": "whip_left",
       "efectosCamara": [
-        "drift"
+        "drift",
+        "punch"
       ],
       "palabrasClave": [
         "armadura de quitina",
@@ -1346,28 +2073,85 @@
           "id": "narrador",
           "posicion": {
             "x": -160,
-            "y": 70
+            "y": 80
           },
           "escala": 1.05,
           "orientacion": "derecha",
-          "prop": "bionic_ant",
           "poseId": "presenting_object",
           "expresion": "proud",
-          "habla": true
+          "habla": true,
+          "capaZ": 20,
+          "acciones": [
+            {
+              "tipo": "personalizada",
+              "pasos": [
+                {
+                  "inicioProgreso": 0.0,
+                  "finProgreso": 0.5,
+                  "hastaPalabra": "seis",
+                  "poseId": "presenting_object",
+                  "expresion": "proud",
+                  "posicion": {
+                    "x": -160,
+                    "y": 80
+                  },
+                  "curva": "suave",
+                  "procedural": "estatico"
+                },
+                {
+                  "inicioProgreso": 0.5,
+                  "finProgreso": 1.0,
+                  "desdePalabra": "seis",
+                  "poseId": "celebrating_arms_up",
+                  "expresion": "eureka",
+                  "posicion": {
+                    "x": -135,
+                    "y": 80
+                  },
+                  "curva": "suave",
+                  "procedural": "estatico"
+                }
+              ]
+            }
+          ]
         }
       ],
       "objetos": [
         {
-          "id": "hormiga_armadura",
+          "id": "obj_ant_9",
           "propId": "bionic_ant",
           "posicion": {
-            "x": 220,
-            "y": -40
+            "x": 165,
+            "y": -30
           },
-          "escala": 1.7,
-          "animacion": {
-            "tipo": "pulso"
-          }
+          "escala": 1.35,
+          "capaZ": 28,
+          "pasos": [
+            {
+              "inicioProgreso": 0.0,
+              "finProgreso": 0.5,
+              "hastaPalabra": "seis",
+              "posicion": {
+                "x": 165,
+                "y": -30
+              },
+              "escala": 1.35,
+              "estado": "normal",
+              "curva": "suave"
+            },
+            {
+              "inicioProgreso": 0.5,
+              "finProgreso": 1.0,
+              "desdePalabra": "seis",
+              "posicion": {
+                "x": 140,
+                "y": -20
+              },
+              "escala": 1.48,
+              "estado": "escudo_quitina",
+              "curva": "rebote"
+            }
+          ]
         }
       ],
       "duracionSegundos": 7.474,
@@ -1477,6 +2261,33 @@
           "inicioMs": 6180,
           "finMs": 7000
         }
+      ],
+      "focoCamara": [
+        {
+          "inicioProgreso": 0.0,
+          "finProgreso": 0.36,
+          "x": -90,
+          "y": 20,
+          "escala": 1.12,
+          "curva": "suave"
+        },
+        {
+          "inicioProgreso": 0.36,
+          "finProgreso": 0.72,
+          "desdePalabra": "seis",
+          "x": 95,
+          "y": -20,
+          "escala": 1.22,
+          "curva": "suave"
+        },
+        {
+          "inicioProgreso": 0.72,
+          "finProgreso": 1.0,
+          "x": 0,
+          "y": 0,
+          "escala": 1.0,
+          "curva": "suave"
+        }
       ]
     },
     {
@@ -1490,7 +2301,8 @@
       "layout": "narrativo",
       "transicion": "zoom_in",
       "efectosCamara": [
-        "drift"
+        "drift",
+        "shake"
       ],
       "palabrasClave": [
         "biólogo Haldane",
@@ -1501,14 +2313,48 @@
         {
           "id": "narrador",
           "posicion": {
-            "x": -150,
-            "y": 70
+            "x": -160,
+            "y": 80
           },
           "escala": 1.05,
           "orientacion": "derecha",
           "poseId": "explaining_pointing_up",
           "expresion": "talking_enthusiastic",
-          "habla": true
+          "habla": true,
+          "capaZ": 20,
+          "acciones": [
+            {
+              "tipo": "personalizada",
+              "pasos": [
+                {
+                  "inicioProgreso": 0.0,
+                  "finProgreso": 0.5,
+                  "hastaPalabra": "pero",
+                  "poseId": "explaining_pointing_up",
+                  "expresion": "talking_enthusiastic",
+                  "posicion": {
+                    "x": -160,
+                    "y": 80
+                  },
+                  "curva": "suave",
+                  "procedural": "estatico"
+                },
+                {
+                  "inicioProgreso": 0.5,
+                  "finProgreso": 1.0,
+                  "desdePalabra": "pero",
+                  "poseId": "showing_both_hands",
+                  "expresion": "surprised",
+                  "posicion": {
+                    "x": -135,
+                    "y": 80
+                  },
+                  "curva": "suave",
+                  "procedural": "estatico"
+                }
+              ]
+            }
+          ]
         }
       ],
       "duracionSegundos": 6.946,
@@ -1623,6 +2469,71 @@
           "inicioMs": 5840,
           "finMs": 6460
         }
+      ],
+      "objetos": [
+        {
+          "id": "obj_ant_10",
+          "propId": "cube_physics",
+          "posicion": {
+            "x": 165,
+            "y": -30
+          },
+          "escala": 1.35,
+          "capaZ": 28,
+          "pasos": [
+            {
+              "inicioProgreso": 0.0,
+              "finProgreso": 0.5,
+              "hastaPalabra": "pero",
+              "posicion": {
+                "x": 165,
+                "y": -30
+              },
+              "escala": 1.35,
+              "estado": "caida_pesada",
+              "curva": "suave"
+            },
+            {
+              "inicioProgreso": 0.5,
+              "finProgreso": 1.0,
+              "desdePalabra": "pero",
+              "posicion": {
+                "x": 140,
+                "y": -20
+              },
+              "escala": 1.48,
+              "estado": "comparacion_escala",
+              "curva": "rebote"
+            }
+          ]
+        }
+      ],
+      "focoCamara": [
+        {
+          "inicioProgreso": 0.0,
+          "finProgreso": 0.36,
+          "x": -90,
+          "y": 20,
+          "escala": 1.12,
+          "curva": "suave"
+        },
+        {
+          "inicioProgreso": 0.36,
+          "finProgreso": 0.72,
+          "desdePalabra": "pero",
+          "x": 95,
+          "y": -20,
+          "escala": 1.22,
+          "curva": "suave"
+        },
+        {
+          "inicioProgreso": 0.72,
+          "finProgreso": 1.0,
+          "x": 0,
+          "y": 0,
+          "escala": 1.0,
+          "curva": "suave"
+        }
       ]
     },
     {
@@ -1631,12 +2542,13 @@
       "icono": "Sparkles",
       "colorIcono": "#6366F1",
       "tituloVisual": "ESCUDO ETERNO",
-      "composicionVisual": "plano_general",
+      "composicionVisual": "primer_plano",
       "escenario": "azotea_rascacielos",
       "layout": "narrativo",
       "transicion": "zoom_in",
       "efectosCamara": [
-        "drift"
+        "drift",
+        "punch"
       ],
       "palabrasClave": [
         "gravedad pierde su trono",
@@ -1647,15 +2559,48 @@
         {
           "id": "narrador",
           "posicion": {
-            "x": 0,
-            "y": 50
+            "x": -160,
+            "y": 80
           },
-          "escala": 1.15,
+          "escala": 1.05,
           "orientacion": "derecha",
-          "prop": "trophy",
           "poseId": "celebrating_arms_up",
           "expresion": "eureka",
-          "habla": true
+          "habla": true,
+          "capaZ": 20,
+          "acciones": [
+            {
+              "tipo": "personalizada",
+              "pasos": [
+                {
+                  "inicioProgreso": 0.0,
+                  "finProgreso": 0.5,
+                  "hastaPalabra": "aire",
+                  "poseId": "standing_confident",
+                  "expresion": "smile_wide",
+                  "posicion": {
+                    "x": -160,
+                    "y": 80
+                  },
+                  "curva": "suave",
+                  "procedural": "estatico"
+                },
+                {
+                  "inicioProgreso": 0.5,
+                  "finProgreso": 1.0,
+                  "desdePalabra": "aire",
+                  "poseId": "celebrating_arms_up",
+                  "expresion": "eureka",
+                  "posicion": {
+                    "x": -135,
+                    "y": 80
+                  },
+                  "curva": "suave",
+                  "procedural": "estatico"
+                }
+              ]
+            }
+          ]
         }
       ],
       "duracionSegundos": 6.61,
@@ -1774,6 +2719,71 @@
           "palabra": "invencible",
           "inicioMs": 5560,
           "finMs": 6140
+        }
+      ],
+      "objetos": [
+        {
+          "id": "obj_ant_11",
+          "propId": "terminal_velocity_shield",
+          "posicion": {
+            "x": 165,
+            "y": -30
+          },
+          "escala": 1.35,
+          "capaZ": 28,
+          "pasos": [
+            {
+              "inicioProgreso": 0.0,
+              "finProgreso": 0.5,
+              "hastaPalabra": "aire",
+              "posicion": {
+                "x": 165,
+                "y": -30
+              },
+              "escala": 1.35,
+              "estado": "caida",
+              "curva": "suave"
+            },
+            {
+              "inicioProgreso": 0.5,
+              "finProgreso": 1.0,
+              "desdePalabra": "aire",
+              "posicion": {
+                "x": 140,
+                "y": -20
+              },
+              "escala": 1.48,
+              "estado": "freno_aire",
+              "curva": "rebote"
+            }
+          ]
+        }
+      ],
+      "focoCamara": [
+        {
+          "inicioProgreso": 0.0,
+          "finProgreso": 0.36,
+          "x": -90,
+          "y": 20,
+          "escala": 1.12,
+          "curva": "suave"
+        },
+        {
+          "inicioProgreso": 0.36,
+          "finProgreso": 0.72,
+          "desdePalabra": "aire",
+          "x": 95,
+          "y": -20,
+          "escala": 1.22,
+          "curva": "suave"
+        },
+        {
+          "inicioProgreso": 0.72,
+          "finProgreso": 1.0,
+          "x": 0,
+          "y": 0,
+          "escala": 1.0,
+          "curva": "suave"
         }
       ]
     }

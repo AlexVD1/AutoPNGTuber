@@ -66,7 +66,8 @@
                     "y": 90
                   },
                   "curva": "suave",
-                  "procedural": "estatico"
+                  "procedural": "estatico",
+                  "hastaPalabra": "tiburón"
                 },
                 {
                   "inicioProgreso": 0.5,
@@ -78,7 +79,8 @@
                     "y": 90
                   },
                   "curva": "suave",
-                  "procedural": "estatico"
+                  "procedural": "estatico",
+                  "desdePalabra": "tiburón"
                 }
               ]
             }
@@ -90,12 +92,38 @@
           "id": "tiburon_balanza",
           "propId": "tiburon_frustrado_balanza",
           "posicion": {
-            "x": 190,
+            "x": 160,
             "y": -30
           },
           "escala": 1.15,
           "animacion": "vibrar",
-          "capaZ": 10
+          "capaZ": 28,
+          "pasos": [
+            {
+              "inicioProgreso": 0.0,
+              "finProgreso": 0.5,
+              "hastaPalabra": "tiburón",
+              "posicion": {
+                "x": 160,
+                "y": -30
+              },
+              "escala": 1.3,
+              "estado": "equilibrio",
+              "curva": "suave"
+            },
+            {
+              "inicioProgreso": 0.5,
+              "finProgreso": 1.0,
+              "desdePalabra": "tiburón",
+              "posicion": {
+                "x": 135,
+                "y": -20
+              },
+              "escala": 1.42,
+              "estado": "gana_nariz",
+              "curva": "rebote"
+            }
+          ]
         }
       ],
       "duracionSegundos": 7.402,
@@ -230,6 +258,33 @@
           "inicioMs": 6440,
           "finMs": 6840
         }
+      ],
+      "focoCamara": [
+        {
+          "inicioProgreso": 0.0,
+          "finProgreso": 0.36,
+          "x": -90,
+          "y": 20,
+          "escala": 1.12,
+          "curva": "suave"
+        },
+        {
+          "inicioProgreso": 0.36,
+          "finProgreso": 0.72,
+          "desdePalabra": "tiburón",
+          "x": 95,
+          "y": -20,
+          "escala": 1.22,
+          "curva": "suave"
+        },
+        {
+          "inicioProgreso": 0.72,
+          "finProgreso": 1.0,
+          "x": 0,
+          "y": 0,
+          "escala": 1.0,
+          "curva": "suave"
+        }
       ]
     },
     {
@@ -259,7 +314,7 @@
           "nombre": "Stickman",
           "posicion": {
             "x": -180,
-            "y": 100
+            "y": 90
           },
           "escala": 1.0,
           "orientacion": "derecha",
@@ -276,10 +331,11 @@
                   "expresion": "talking_enthusiastic",
                   "posicion": {
                     "x": -180,
-                    "y": 100
+                    "y": 90
                   },
                   "curva": "suave",
-                  "procedural": "estatico"
+                  "procedural": "estatico",
+                  "hastaPalabra": "Eso"
                 },
                 {
                   "inicioProgreso": 0.45,
@@ -288,10 +344,11 @@
                   "expresion": "surprised",
                   "posicion": {
                     "x": -150,
-                    "y": 100
+                    "y": 90
                   },
                   "curva": "suave",
-                  "procedural": "estatico"
+                  "procedural": "estatico",
+                  "desdePalabra": "Eso"
                 }
               ]
             }
@@ -304,11 +361,37 @@
           "propId": "piscina_olimpica_micro_gota",
           "posicion": {
             "x": 160,
-            "y": -40
+            "y": -30
           },
           "escala": 1.25,
           "animacion": "pulso",
-          "capaZ": 10
+          "capaZ": 28,
+          "pasos": [
+            {
+              "inicioProgreso": 0.0,
+              "finProgreso": 0.5,
+              "hastaPalabra": "Eso",
+              "posicion": {
+                "x": 160,
+                "y": -30
+              },
+              "escala": 1.3,
+              "estado": "gota_cayendo",
+              "curva": "suave"
+            },
+            {
+              "inicioProgreso": 0.5,
+              "finProgreso": 1.0,
+              "desdePalabra": "Eso",
+              "posicion": {
+                "x": 135,
+                "y": -20
+              },
+              "escala": 1.42,
+              "estado": "onda_expansion",
+              "curva": "rebote"
+            }
+          ]
         }
       ],
       "duracionSegundos": 10.09,
@@ -458,6 +541,33 @@
           "inicioMs": 8840,
           "finMs": 9400
         }
+      ],
+      "focoCamara": [
+        {
+          "inicioProgreso": 0.0,
+          "finProgreso": 0.36,
+          "x": -90,
+          "y": 20,
+          "escala": 1.12,
+          "curva": "suave"
+        },
+        {
+          "inicioProgreso": 0.36,
+          "finProgreso": 0.72,
+          "desdePalabra": "Eso",
+          "x": 95,
+          "y": -20,
+          "escala": 1.22,
+          "curva": "suave"
+        },
+        {
+          "inicioProgreso": 0.72,
+          "finProgreso": 1.0,
+          "x": 0,
+          "y": 0,
+          "escala": 1.0,
+          "curva": "suave"
+        }
       ]
     },
     {
@@ -507,7 +617,8 @@
                     "y": 90
                   },
                   "curva": "suave",
-                  "procedural": "estatico"
+                  "procedural": "estatico",
+                  "hastaPalabra": "geosmina"
                 },
                 {
                   "inicioProgreso": 0.45,
@@ -519,7 +630,8 @@
                     "y": 90
                   },
                   "curva": "suave",
-                  "procedural": "estatico"
+                  "procedural": "estatico",
+                  "desdePalabra": "geosmina"
                 }
               ]
             }
@@ -531,12 +643,38 @@
           "id": "bacteria_geosmina",
           "propId": "bacteria_streptomyces_geosmina",
           "posicion": {
-            "x": 170,
-            "y": -40
+            "x": 160,
+            "y": -30
           },
           "escala": 1.3,
           "animacion": "vibrar",
-          "capaZ": 10
+          "capaZ": 28,
+          "pasos": [
+            {
+              "inicioProgreso": 0.0,
+              "finProgreso": 0.5,
+              "hastaPalabra": "geosmina",
+              "posicion": {
+                "x": 160,
+                "y": -30
+              },
+              "escala": 1.3,
+              "estado": "colonia",
+              "curva": "suave"
+            },
+            {
+              "inicioProgreso": 0.5,
+              "finProgreso": 1.0,
+              "desdePalabra": "geosmina",
+              "posicion": {
+                "x": 135,
+                "y": -20
+              },
+              "escala": 1.42,
+              "estado": "liberando_geosmina",
+              "curva": "rebote"
+            }
+          ]
         }
       ],
       "duracionSegundos": 10.522,
@@ -691,6 +829,33 @@
           "inicioMs": 9480,
           "finMs": 9800
         }
+      ],
+      "focoCamara": [
+        {
+          "inicioProgreso": 0.0,
+          "finProgreso": 0.36,
+          "x": -90,
+          "y": 20,
+          "escala": 1.12,
+          "curva": "suave"
+        },
+        {
+          "inicioProgreso": 0.36,
+          "finProgreso": 0.72,
+          "desdePalabra": "geosmina",
+          "x": 95,
+          "y": -20,
+          "escala": 1.22,
+          "curva": "suave"
+        },
+        {
+          "inicioProgreso": 0.72,
+          "finProgreso": 1.0,
+          "x": 0,
+          "y": 0,
+          "escala": 1.0,
+          "curva": "suave"
+        }
       ]
     },
     {
@@ -740,7 +905,8 @@
                     "y": 90
                   },
                   "curva": "suave",
-                  "procedural": "estatico"
+                  "procedural": "estatico",
+                  "hastaPalabra": "porque"
                 },
                 {
                   "inicioProgreso": 0.5,
@@ -752,7 +918,8 @@
                     "y": 90
                   },
                   "curva": "suave",
-                  "procedural": "estatico"
+                  "procedural": "estatico",
+                  "desdePalabra": "porque"
                 }
               ]
             }
@@ -765,11 +932,37 @@
           "propId": "roca_petricor_aceite_dorado",
           "posicion": {
             "x": 160,
-            "y": -40
+            "y": -30
           },
           "escala": 1.35,
           "animacion": "pulso",
-          "capaZ": 10
+          "capaZ": 28,
+          "pasos": [
+            {
+              "inicioProgreso": 0.0,
+              "finProgreso": 0.5,
+              "hastaPalabra": "porque",
+              "posicion": {
+                "x": 160,
+                "y": -30
+              },
+              "escala": 1.3,
+              "estado": "roca_seca",
+              "curva": "suave"
+            },
+            {
+              "inicioProgreso": 0.5,
+              "finProgreso": 1.0,
+              "desdePalabra": "porque",
+              "posicion": {
+                "x": 135,
+                "y": -20
+              },
+              "escala": 1.42,
+              "estado": "aceite_dorado",
+              "curva": "rebote"
+            }
+          ]
         }
       ],
       "duracionSegundos": 7.738,
@@ -924,6 +1117,33 @@
           "inicioMs": 6240,
           "finMs": 6920
         }
+      ],
+      "focoCamara": [
+        {
+          "inicioProgreso": 0.0,
+          "finProgreso": 0.36,
+          "x": -90,
+          "y": 20,
+          "escala": 1.12,
+          "curva": "suave"
+        },
+        {
+          "inicioProgreso": 0.36,
+          "finProgreso": 0.72,
+          "desdePalabra": "porque",
+          "x": 95,
+          "y": -20,
+          "escala": 1.22,
+          "curva": "suave"
+        },
+        {
+          "inicioProgreso": 0.72,
+          "finProgreso": 1.0,
+          "x": 0,
+          "y": 0,
+          "escala": 1.0,
+          "curva": "suave"
+        }
       ]
     },
     {
@@ -973,7 +1193,8 @@
                     "y": 90
                   },
                   "curva": "suave",
-                  "procedural": "estatico"
+                  "procedural": "estatico",
+                  "hastaPalabra": "cada"
                 },
                 {
                   "inicioProgreso": 0.5,
@@ -985,7 +1206,8 @@
                     "y": 90
                   },
                   "curva": "impacto",
-                  "procedural": "temblar"
+                  "procedural": "temblar",
+                  "desdePalabra": "cada"
                 }
               ]
             }
@@ -998,11 +1220,37 @@
           "propId": "gota_lluvia_macro_aerosol",
           "posicion": {
             "x": 160,
-            "y": -50
+            "y": -30
           },
           "escala": 1.35,
           "animacion": "vibrar",
-          "capaZ": 10
+          "capaZ": 28,
+          "pasos": [
+            {
+              "inicioProgreso": 0.0,
+              "finProgreso": 0.5,
+              "hastaPalabra": "cada",
+              "posicion": {
+                "x": 160,
+                "y": -30
+              },
+              "escala": 1.3,
+              "estado": "impacto",
+              "curva": "suave"
+            },
+            {
+              "inicioProgreso": 0.5,
+              "finProgreso": 1.0,
+              "desdePalabra": "cada",
+              "posicion": {
+                "x": 135,
+                "y": -20
+              },
+              "escala": 1.42,
+              "estado": "aerosol_champan",
+              "curva": "rebote"
+            }
+          ]
         }
       ],
       "duracionSegundos": 10.522,
@@ -1172,6 +1420,33 @@
           "inicioMs": 9220,
           "finMs": 9780
         }
+      ],
+      "focoCamara": [
+        {
+          "inicioProgreso": 0.0,
+          "finProgreso": 0.36,
+          "x": -90,
+          "y": 20,
+          "escala": 1.12,
+          "curva": "suave"
+        },
+        {
+          "inicioProgreso": 0.36,
+          "finProgreso": 0.72,
+          "desdePalabra": "cada",
+          "x": 95,
+          "y": -20,
+          "escala": 1.22,
+          "curva": "suave"
+        },
+        {
+          "inicioProgreso": 0.72,
+          "finProgreso": 1.0,
+          "x": 0,
+          "y": 0,
+          "escala": 1.0,
+          "curva": "suave"
+        }
       ]
     },
     {
@@ -1201,7 +1476,7 @@
           "nombre": "Stickman",
           "posicion": {
             "x": -160,
-            "y": 100
+            "y": 90
           },
           "escala": 1.0,
           "orientacion": "derecha",
@@ -1214,26 +1489,28 @@
                 {
                   "inicioProgreso": 0,
                   "finProgreso": 0.5,
-                  "poseId": "looking_up_pose",
+                  "poseId": "investigating_magnifier",
                   "expresion": "analytical",
                   "posicion": {
                     "x": -160,
-                    "y": 100
+                    "y": 90
                   },
                   "curva": "suave",
-                  "procedural": "estatico"
+                  "procedural": "estatico",
+                  "hastaPalabra": "Porque"
                 },
                 {
                   "inicioProgreso": 0.5,
                   "finProgreso": 1.0,
-                  "poseId": "running",
-                  "expresion": "smile_wide",
+                  "poseId": "pointing_right",
+                  "expresion": "eureka",
                   "posicion": {
                     "x": -120,
-                    "y": 100
+                    "y": 90
                   },
                   "curva": "suave",
-                  "procedural": "caminar"
+                  "procedural": "caminar",
+                  "desdePalabra": "Porque"
                 }
               ]
             }
@@ -1246,11 +1523,37 @@
           "propId": "mapa_sabana_oasis_ancestro",
           "posicion": {
             "x": 160,
-            "y": -40
+            "y": -30
           },
           "escala": 1.25,
           "animacion": "flotar",
-          "capaZ": 10
+          "capaZ": 28,
+          "pasos": [
+            {
+              "inicioProgreso": 0.0,
+              "finProgreso": 0.5,
+              "hastaPalabra": "Porque",
+              "posicion": {
+                "x": 160,
+                "y": -30
+              },
+              "escala": 1.3,
+              "estado": "sequia",
+              "curva": "suave"
+            },
+            {
+              "inicioProgreso": 0.5,
+              "finProgreso": 1.0,
+              "desdePalabra": "Porque",
+              "posicion": {
+                "x": 135,
+                "y": -20
+              },
+              "escala": 1.42,
+              "estado": "ruta_oasis",
+              "curva": "rebote"
+            }
+          ]
         }
       ],
       "duracionSegundos": 10.618,
@@ -1410,6 +1713,33 @@
           "inicioMs": 9700,
           "finMs": 9920
         }
+      ],
+      "focoCamara": [
+        {
+          "inicioProgreso": 0.0,
+          "finProgreso": 0.36,
+          "x": -90,
+          "y": 20,
+          "escala": 1.12,
+          "curva": "suave"
+        },
+        {
+          "inicioProgreso": 0.36,
+          "finProgreso": 0.72,
+          "desdePalabra": "Porque",
+          "x": 95,
+          "y": -20,
+          "escala": 1.22,
+          "curva": "suave"
+        },
+        {
+          "inicioProgreso": 0.72,
+          "finProgreso": 1.0,
+          "x": 0,
+          "y": 0,
+          "escala": 1.0,
+          "curva": "suave"
+        }
       ]
     },
     {
@@ -1452,26 +1782,28 @@
                 {
                   "inicioProgreso": 0,
                   "finProgreso": 0.5,
-                  "poseId": "pointing_at_viewer",
+                  "poseId": "standing_confident",
                   "expresion": "smile_wide",
                   "posicion": {
                     "x": -120,
                     "y": 90
                   },
                   "curva": "suave",
-                  "procedural": "estatico"
+                  "procedural": "estatico",
+                  "hastaPalabra": "respira"
                 },
                 {
                   "inicioProgreso": 0.5,
                   "finProgreso": 1.0,
                   "poseId": "celebrating_arms_up",
-                  "expresion": "talking_enthusiastic",
+                  "expresion": "eureka",
                   "posicion": {
                     "x": -100,
                     "y": 90
                   },
                   "curva": "suave",
-                  "procedural": "caminar"
+                  "procedural": "caminar",
+                  "desdePalabra": "respira"
                 }
               ]
             }
@@ -1484,11 +1816,37 @@
           "propId": "paraguas_arcoiris_fresco",
           "posicion": {
             "x": 160,
-            "y": -40
+            "y": -30
           },
           "escala": 1.25,
           "animacion": "flotar",
-          "capaZ": 10
+          "capaZ": 28,
+          "pasos": [
+            {
+              "inicioProgreso": 0.0,
+              "finProgreso": 0.5,
+              "hastaPalabra": "respira",
+              "posicion": {
+                "x": 160,
+                "y": -30
+              },
+              "escala": 1.3,
+              "estado": "lluvia_fresca",
+              "curva": "suave"
+            },
+            {
+              "inicioProgreso": 0.5,
+              "finProgreso": 1.0,
+              "desdePalabra": "respira",
+              "posicion": {
+                "x": 135,
+                "y": -20
+              },
+              "escala": 1.42,
+              "estado": "adn_reconoce",
+              "curva": "rebote"
+            }
+          ]
         }
       ],
       "duracionSegundos": 9.634,
@@ -1637,6 +1995,33 @@
           "palabra": "años",
           "inicioMs": 8740,
           "finMs": 8980
+        }
+      ],
+      "focoCamara": [
+        {
+          "inicioProgreso": 0.0,
+          "finProgreso": 0.36,
+          "x": -90,
+          "y": 20,
+          "escala": 1.12,
+          "curva": "suave"
+        },
+        {
+          "inicioProgreso": 0.36,
+          "finProgreso": 0.72,
+          "desdePalabra": "respira",
+          "x": 95,
+          "y": -20,
+          "escala": 1.22,
+          "curva": "suave"
+        },
+        {
+          "inicioProgreso": 0.72,
+          "finProgreso": 1.0,
+          "x": 0,
+          "y": 0,
+          "escala": 1.0,
+          "curva": "suave"
         }
       ]
     }

@@ -67,7 +67,9 @@
                     "y": 80
                   },
                   "curva": "suave",
-                  "procedural": "caminar"
+                  "procedural": "caminar",
+                  "desdePalabra": "Recuerdas",
+                  "hastaPalabra": "ochenta"
                 },
                 {
                   "inicioProgreso": 0.35,
@@ -79,7 +81,9 @@
                     "y": 80
                   },
                   "curva": "suave",
-                  "procedural": "estatico"
+                  "procedural": "estatico",
+                  "desdePalabra": "Millones",
+                  "hastaPalabra": "así"
                 },
                 {
                   "inicioProgreso": 0.65,
@@ -91,13 +95,15 @@
                     "y": 80
                   },
                   "curva": "impacto",
-                  "procedural": "estatico"
+                  "procedural": "estatico",
+                  "desdePalabra": "Y",
+                  "hastaPalabra": "equivocan"
                 }
               ]
             }
           ],
-          "habla": false,
-          "capaZ": 10
+          "habla": true,
+          "capaZ": 20
         }
       ],
       "objetos": [
@@ -105,29 +111,57 @@
           "id": "celda_recuerdo_falso",
           "propId": "celda_prision_mandela",
           "posicion": {
-            "x": 200,
-            "y": 0
+            "x": 165,
+            "y": 20
           },
-          "escala": 1.3,
-          "animacion": "pulso",
-          "capaZ": 12
+          "escala": 1.38,
+          "capaZ": 28,
+          "pasos": [
+            {
+              "inicioProgreso": 0.0,
+              "finProgreso": 0.65,
+              "desdePalabra": "Recuerdas",
+              "hastaPalabra": "así",
+              "estado": "celda_intacta",
+              "posicion": {
+                "x": 160,
+                "y": 25
+              },
+              "escala": 1.35,
+              "curva": "suave"
+            },
+            {
+              "inicioProgreso": 0.65,
+              "finProgreso": 1.0,
+              "desdePalabra": "Y",
+              "hastaPalabra": "equivocan",
+              "estado": "desvanecida",
+              "posicion": {
+                "x": 175,
+                "y": 15
+              },
+              "escala": 1.45,
+              "animacion": "pulso",
+              "curva": "impacto"
+            }
+          ]
         }
       ],
-      "duracionSegundos": 7.45,
+      "duracionSegundos": 7.33,
       "palabras": [
         {
           "palabra": "Recuerdas",
           "inicioMs": 0,
-          "finMs": 540
+          "finMs": 560
         },
         {
           "palabra": "que",
-          "inicioMs": 540,
-          "finMs": 700
+          "inicioMs": 560,
+          "finMs": 740
         },
         {
           "palabra": "Nelson",
-          "inicioMs": 700,
+          "inicioMs": 740,
           "finMs": 940
         },
         {
@@ -148,66 +182,66 @@
         {
           "palabra": "prisión",
           "inicioMs": 1820,
-          "finMs": 2180
+          "finMs": 2140
         },
         {
           "palabra": "en",
-          "inicioMs": 2180,
-          "finMs": 2280
+          "inicioMs": 2140,
+          "finMs": 2260
         },
         {
           "palabra": "los",
-          "inicioMs": 2280,
-          "finMs": 2380
+          "inicioMs": 2260,
+          "finMs": 2360
         },
         {
           "palabra": "años",
-          "inicioMs": 2380,
+          "inicioMs": 2360,
           "finMs": 2580
         },
         {
           "palabra": "ochenta",
           "inicioMs": 2580,
-          "finMs": 3100
+          "finMs": 3060
         },
         {
           "palabra": "Millones",
-          "inicioMs": 3280,
-          "finMs": 3580
+          "inicioMs": 3260,
+          "finMs": 3520
         },
         {
           "palabra": "de",
-          "inicioMs": 3580,
-          "finMs": 3760
+          "inicioMs": 3520,
+          "finMs": 3640
         },
         {
           "palabra": "personas",
-          "inicioMs": 3760,
-          "finMs": 4160
+          "inicioMs": 3640,
+          "finMs": 3980
         },
         {
           "palabra": "lo",
-          "inicioMs": 4160,
-          "finMs": 4360
+          "inicioMs": 3980,
+          "finMs": 4180
         },
         {
           "palabra": "recuerdan",
-          "inicioMs": 4360,
-          "finMs": 4840
+          "inicioMs": 4180,
+          "finMs": 4620
         },
         {
           "palabra": "así",
-          "inicioMs": 4840,
-          "finMs": 5120
+          "inicioMs": 4620,
+          "finMs": 4900
         },
         {
           "palabra": "Y",
-          "inicioMs": 5520,
-          "finMs": 5620
+          "inicioMs": 5440,
+          "finMs": 5540
         },
         {
           "palabra": "todas",
-          "inicioMs": 5620,
+          "inicioMs": 5540,
           "finMs": 5980
         },
         {
@@ -218,7 +252,33 @@
         {
           "palabra": "equivocan",
           "inicioMs": 6120,
-          "finMs": 6800
+          "finMs": 6780
+        }
+      ],
+      "focoCamara": [
+        {
+          "x": 0,
+          "y": 20,
+          "escala": 1.06,
+          "inicioProgreso": 0.0,
+          "finProgreso": 0.45,
+          "curva": "suave"
+        },
+        {
+          "x": 75,
+          "y": 15,
+          "escala": 1.22,
+          "inicioProgreso": 0.45,
+          "finProgreso": 0.82,
+          "curva": "impacto"
+        },
+        {
+          "x": -35,
+          "y": 25,
+          "escala": 1.1,
+          "inicioProgreso": 0.82,
+          "finProgreso": 1.0,
+          "curva": "suave"
         }
       ]
     },
@@ -270,7 +330,9 @@
                     "y": 80
                   },
                   "curva": "suave",
-                  "procedural": "estatico"
+                  "procedural": "estatico",
+                  "desdePalabra": "Mandela",
+                  "hastaPalabra": "casa"
                 },
                 {
                   "inicioProgreso": 0.45,
@@ -282,7 +344,9 @@
                     "y": 80
                   },
                   "curva": "suave",
-                  "procedural": "estatico"
+                  "procedural": "estatico",
+                  "desdePalabra": "Aun",
+                  "hastaPalabra": "prisión"
                 },
                 {
                   "inicioProgreso": 0.75,
@@ -294,13 +358,15 @@
                     "y": 80
                   },
                   "curva": "impacto",
-                  "procedural": "estatico"
+                  "procedural": "estatico",
+                  "desdePalabra": "A",
+                  "hastaPalabra": "Mandela"
                 }
               ]
             }
           ],
-          "habla": false,
-          "capaZ": 10
+          "habla": true,
+          "capaZ": 20
         }
       ],
       "objetos": [
@@ -308,215 +374,269 @@
           "id": "tv_noticiero_falso",
           "propId": "linea_tiempo_mandela_tv",
           "posicion": {
-            "x": 220,
-            "y": -20
+            "x": 165,
+            "y": 30
           },
-          "escala": 1.35,
-          "animacion": "vibrar",
-          "capaZ": 14
+          "escala": 1.38,
+          "capaZ": 28,
+          "pasos": [
+            {
+              "inicioProgreso": 0.0,
+              "finProgreso": 0.48,
+              "desdePalabra": "Mandela",
+              "hastaPalabra": "casa",
+              "estado": "emitiendo",
+              "posicion": {
+                "x": 155,
+                "y": 35
+              },
+              "escala": 1.32,
+              "curva": "suave"
+            },
+            {
+              "inicioProgreso": 0.48,
+              "finProgreso": 1.0,
+              "desdePalabra": "Aun",
+              "hastaPalabra": "Mandela",
+              "estado": "desmentido",
+              "posicion": {
+                "x": 175,
+                "y": 25
+              },
+              "escala": 1.45,
+              "animacion": "vibrar",
+              "curva": "impacto"
+            }
+          ]
         }
       ],
-      "duracionSegundos": 12.274,
+      "duracionSegundos": 11.746,
       "palabras": [
         {
           "palabra": "Mandela",
           "inicioMs": 0,
-          "finMs": 440
+          "finMs": 400
         },
         {
           "palabra": "salió",
-          "inicioMs": 440,
-          "finMs": 760
+          "inicioMs": 400,
+          "finMs": 700
         },
         {
           "palabra": "libre",
-          "inicioMs": 760,
-          "finMs": 1040
+          "inicioMs": 700,
+          "finMs": 920
         },
         {
           "palabra": "en",
-          "inicioMs": 1040,
-          "finMs": 1260
+          "inicioMs": 920,
+          "finMs": 1100
         },
         {
           "palabra": "mil",
-          "inicioMs": 1260,
-          "finMs": 1400
+          "inicioMs": 1100,
+          "finMs": 1180
         },
         {
           "palabra": "novecientos",
-          "inicioMs": 1400,
-          "finMs": 1960
+          "inicioMs": 1180,
+          "finMs": 1780
         },
         {
           "palabra": "noventa",
-          "inicioMs": 1960,
-          "finMs": 2440
+          "inicioMs": 1780,
+          "finMs": 2240
         },
         {
           "palabra": "fue",
-          "inicioMs": 2560,
-          "finMs": 2640
+          "inicioMs": 2360,
+          "finMs": 2440
         },
         {
           "palabra": "presidente",
-          "inicioMs": 2640,
-          "finMs": 3040
+          "inicioMs": 2440,
+          "finMs": 2780
         },
         {
           "palabra": "y",
-          "inicioMs": 3040,
-          "finMs": 3440
+          "inicioMs": 2780,
+          "finMs": 3060
         },
         {
           "palabra": "murió",
-          "inicioMs": 3440,
-          "finMs": 3700
+          "inicioMs": 3060,
+          "finMs": 3260
         },
         {
           "palabra": "en",
-          "inicioMs": 3700,
-          "finMs": 3840
+          "inicioMs": 3260,
+          "finMs": 3380
         },
         {
           "palabra": "dos",
-          "inicioMs": 3840,
-          "finMs": 4000
+          "inicioMs": 3380,
+          "finMs": 3500
         },
         {
           "palabra": "mil",
-          "inicioMs": 4000,
-          "finMs": 4160
+          "inicioMs": 3500,
+          "finMs": 3660
         },
         {
           "palabra": "trece",
-          "inicioMs": 4160,
-          "finMs": 4620
+          "inicioMs": 3660,
+          "finMs": 4040
         },
         {
           "palabra": "en",
-          "inicioMs": 4620,
-          "finMs": 4840
+          "inicioMs": 4040,
+          "finMs": 4260
         },
         {
           "palabra": "su",
-          "inicioMs": 4840,
-          "finMs": 4980
+          "inicioMs": 4260,
+          "finMs": 4400
         },
         {
           "palabra": "casa",
-          "inicioMs": 4980,
-          "finMs": 5300
+          "inicioMs": 4400,
+          "finMs": 4700
         },
         {
           "palabra": "Aun",
-          "inicioMs": 5600,
-          "finMs": 5780
+          "inicioMs": 4960,
+          "finMs": 5120
         },
         {
           "palabra": "así",
-          "inicioMs": 5780,
-          "finMs": 6100
+          "inicioMs": 5120,
+          "finMs": 5440
         },
         {
           "palabra": "mucha",
-          "inicioMs": 6320,
-          "finMs": 6560
+          "inicioMs": 5780,
+          "finMs": 5980
         },
         {
           "palabra": "gente",
-          "inicioMs": 6560,
-          "finMs": 6820
+          "inicioMs": 5980,
+          "finMs": 6200
         },
         {
           "palabra": "recuerda",
-          "inicioMs": 6820,
-          "finMs": 7400
+          "inicioMs": 6200,
+          "finMs": 6760
         },
         {
           "palabra": "haber",
-          "inicioMs": 7400,
-          "finMs": 7580
+          "inicioMs": 6760,
+          "finMs": 6920
         },
         {
           "palabra": "visto",
-          "inicioMs": 7580,
-          "finMs": 7860
+          "inicioMs": 6920,
+          "finMs": 7220
         },
         {
           "palabra": "noticias",
-          "inicioMs": 7860,
-          "finMs": 8280
+          "inicioMs": 7220,
+          "finMs": 7620
         },
         {
           "palabra": "de",
-          "inicioMs": 8280,
-          "finMs": 8440
+          "inicioMs": 7620,
+          "finMs": 7760
         },
         {
           "palabra": "su",
-          "inicioMs": 8440,
-          "finMs": 8580
+          "inicioMs": 7760,
+          "finMs": 7900
         },
         {
           "palabra": "muerte",
-          "inicioMs": 8580,
-          "finMs": 8820
+          "inicioMs": 7900,
+          "finMs": 8120
         },
         {
           "palabra": "en",
-          "inicioMs": 8820,
-          "finMs": 9060
+          "inicioMs": 8120,
+          "finMs": 8360
         },
         {
           "palabra": "prisión",
-          "inicioMs": 9060,
-          "finMs": 9460
+          "inicioMs": 8360,
+          "finMs": 8740
         },
         {
           "palabra": "A",
-          "inicioMs": 9720,
-          "finMs": 9820
+          "inicioMs": 9020,
+          "finMs": 9100
         },
         {
           "palabra": "esto",
-          "inicioMs": 9820,
-          "finMs": 10040
+          "inicioMs": 9100,
+          "finMs": 9300
         },
         {
           "palabra": "se",
-          "inicioMs": 10040,
-          "finMs": 10200
+          "inicioMs": 9300,
+          "finMs": 9460
         },
         {
           "palabra": "le",
-          "inicioMs": 10200,
-          "finMs": 10280
+          "inicioMs": 9460,
+          "finMs": 9540
         },
         {
           "palabra": "conoce",
-          "inicioMs": 10280,
-          "finMs": 10640
+          "inicioMs": 9540,
+          "finMs": 9960
         },
         {
           "palabra": "como",
-          "inicioMs": 10640,
-          "finMs": 10820
+          "inicioMs": 9960,
+          "finMs": 10140
         },
         {
           "palabra": "el",
-          "inicioMs": 10820,
-          "finMs": 10920
+          "inicioMs": 10140,
+          "finMs": 10260
         },
         {
           "palabra": "efecto",
-          "inicioMs": 10920,
-          "finMs": 11140
+          "inicioMs": 10260,
+          "finMs": 10440
         },
         {
           "palabra": "Mandela",
-          "inicioMs": 11140,
-          "finMs": 11680
+          "inicioMs": 10440,
+          "finMs": 11020
+        }
+      ],
+      "focoCamara": [
+        {
+          "x": -40,
+          "y": -20,
+          "escala": 1.08,
+          "inicioProgreso": 0.0,
+          "finProgreso": 0.45,
+          "curva": "suave"
+        },
+        {
+          "x": 85,
+          "y": 20,
+          "escala": 1.24,
+          "inicioProgreso": 0.45,
+          "finProgreso": 0.82,
+          "curva": "impacto"
+        },
+        {
+          "x": 0,
+          "y": 15,
+          "escala": 1.1,
+          "inicioProgreso": 0.82,
+          "finProgreso": 1.0,
+          "curva": "suave"
         }
       ]
     },
@@ -568,7 +688,9 @@
                     "y": 80
                   },
                   "curva": "suave",
-                  "procedural": "estatico"
+                  "procedural": "estatico",
+                  "desdePalabra": "El",
+                  "hastaPalabra": "Broome"
                 },
                 {
                   "inicioProgreso": 0.45,
@@ -580,7 +702,9 @@
                     "y": 80
                   },
                   "curva": "suave",
-                  "procedural": "estatico"
+                  "procedural": "estatico",
+                  "desdePalabra": "al",
+                  "hastaPalabra": "falso"
                 },
                 {
                   "inicioProgreso": 0.75,
@@ -592,13 +716,15 @@
                     "y": 80
                   },
                   "curva": "impacto",
-                  "procedural": "estatico"
+                  "procedural": "estatico",
+                  "desdePalabra": "Y",
+                  "hastaPalabra": "Mandela"
                 }
               ]
             }
           ],
-          "habla": false,
-          "capaZ": 10
+          "habla": true,
+          "capaZ": 20
         }
       ],
       "objetos": [
@@ -606,150 +732,204 @@
           "id": "red_fiona_nodos",
           "propId": "red_pensamientos_fiona_siluetas",
           "posicion": {
-            "x": 200,
-            "y": 10
+            "x": 165,
+            "y": 25
           },
-          "escala": 1.35,
-          "animacion": "flotar",
-          "capaZ": 14
+          "escala": 1.38,
+          "capaZ": 28,
+          "pasos": [
+            {
+              "inicioProgreso": 0.0,
+              "finProgreso": 0.45,
+              "desdePalabra": "El",
+              "hastaPalabra": "Broome",
+              "estado": "inicio",
+              "posicion": {
+                "x": 155,
+                "y": 30
+              },
+              "escala": 1.32,
+              "curva": "suave"
+            },
+            {
+              "inicioProgreso": 0.45,
+              "finProgreso": 1.0,
+              "desdePalabra": "al",
+              "hastaPalabra": "Mandela",
+              "estado": "contagio_global",
+              "posicion": {
+                "x": 175,
+                "y": 20
+              },
+              "escala": 1.45,
+              "animacion": "flotar",
+              "curva": "rebote"
+            }
+          ]
         }
       ],
-      "duracionSegundos": 8.338,
+      "duracionSegundos": 8.818,
       "palabras": [
         {
           "palabra": "El",
           "inicioMs": 0,
-          "finMs": 200
+          "finMs": 220
         },
         {
           "palabra": "nombre",
-          "inicioMs": 200,
-          "finMs": 400
+          "inicioMs": 220,
+          "finMs": 420
         },
         {
           "palabra": "lo",
-          "inicioMs": 400,
-          "finMs": 620
+          "inicioMs": 420,
+          "finMs": 660
         },
         {
           "palabra": "creó",
-          "inicioMs": 620,
-          "finMs": 900
+          "inicioMs": 660,
+          "finMs": 940
         },
         {
           "palabra": "en",
-          "inicioMs": 900,
-          "finMs": 1000
+          "inicioMs": 940,
+          "finMs": 1040
         },
         {
           "palabra": "dos",
-          "inicioMs": 1000,
-          "finMs": 1180
+          "inicioMs": 1040,
+          "finMs": 1240
         },
         {
           "palabra": "mil",
-          "inicioMs": 1180,
-          "finMs": 1340
+          "inicioMs": 1240,
+          "finMs": 1400
         },
         {
           "palabra": "nueve",
-          "inicioMs": 1340,
-          "finMs": 1680
+          "inicioMs": 1400,
+          "finMs": 1760
         },
         {
           "palabra": "la",
-          "inicioMs": 1680,
-          "finMs": 1820
+          "inicioMs": 1760,
+          "finMs": 1880
         },
         {
           "palabra": "autora",
-          "inicioMs": 1820,
-          "finMs": 2100
+          "inicioMs": 1880,
+          "finMs": 2180
         },
         {
           "palabra": "Fiona",
-          "inicioMs": 2100,
-          "finMs": 2400
+          "inicioMs": 2180,
+          "finMs": 2500
         },
         {
           "palabra": "Broome",
-          "inicioMs": 2400,
-          "finMs": 2840
+          "inicioMs": 2500,
+          "finMs": 2940
         },
         {
           "palabra": "al",
-          "inicioMs": 3180,
-          "finMs": 3300
+          "inicioMs": 3140,
+          "finMs": 3420
         },
         {
           "palabra": "descubrir",
-          "inicioMs": 3300,
-          "finMs": 3780
-        },
-        {
-          "palabra": "que",
-          "inicioMs": 3780,
+          "inicioMs": 3420,
           "finMs": 3940
         },
         {
-          "palabra": "otras",
+          "palabra": "que",
           "inicioMs": 3940,
-          "finMs": 4120
+          "finMs": 4080
+        },
+        {
+          "palabra": "otras",
+          "inicioMs": 4080,
+          "finMs": 4300
         },
         {
           "palabra": "personas",
-          "inicioMs": 4120,
-          "finMs": 4580
+          "inicioMs": 4300,
+          "finMs": 4800
         },
         {
           "palabra": "compartían",
-          "inicioMs": 4580,
-          "finMs": 5160
+          "inicioMs": 4800,
+          "finMs": 5420
         },
         {
           "palabra": "su",
-          "inicioMs": 5160,
-          "finMs": 5320
+          "inicioMs": 5420,
+          "finMs": 5580
         },
         {
           "palabra": "recuerdo",
-          "inicioMs": 5320,
-          "finMs": 5660
+          "inicioMs": 5580,
+          "finMs": 5960
         },
         {
           "palabra": "falso",
-          "inicioMs": 5660,
-          "finMs": 6220
+          "inicioMs": 5960,
+          "finMs": 6500
         },
         {
           "palabra": "Y",
-          "inicioMs": 6460,
-          "finMs": 6520
+          "inicioMs": 6840,
+          "finMs": 6920
         },
         {
           "palabra": "no",
-          "inicioMs": 6520,
-          "finMs": 6620
+          "inicioMs": 6920,
+          "finMs": 7040
         },
         {
           "palabra": "solo",
-          "inicioMs": 6620,
-          "finMs": 6820
-        },
-        {
-          "palabra": "pasa",
-          "inicioMs": 6820,
-          "finMs": 7060
-        },
-        {
-          "palabra": "con",
-          "inicioMs": 7060,
+          "inicioMs": 7040,
           "finMs": 7260
         },
         {
-          "palabra": "Mandela",
+          "palabra": "pasa",
           "inicioMs": 7260,
-          "finMs": 7660
+          "finMs": 7580
+        },
+        {
+          "palabra": "con",
+          "inicioMs": 7580,
+          "finMs": 7800
+        },
+        {
+          "palabra": "Mandela",
+          "inicioMs": 7800,
+          "finMs": 8220
+        }
+      ],
+      "focoCamara": [
+        {
+          "x": -50,
+          "y": 20,
+          "escala": 1.1,
+          "inicioProgreso": 0.0,
+          "finProgreso": 0.42,
+          "curva": "suave"
+        },
+        {
+          "x": 80,
+          "y": 15,
+          "escala": 1.24,
+          "inicioProgreso": 0.42,
+          "finProgreso": 0.8,
+          "curva": "impacto"
+        },
+        {
+          "x": 0,
+          "y": 20,
+          "escala": 1.08,
+          "inicioProgreso": 0.8,
+          "finProgreso": 1.0,
+          "curva": "suave"
         }
       ]
     },
@@ -801,7 +981,9 @@
                     "y": 80
                   },
                   "curva": "suave",
-                  "procedural": "estatico"
+                  "procedural": "estatico",
+                  "desdePalabra": "El",
+                  "hastaPalabra": "llevó"
                 },
                 {
                   "inicioProgreso": 0.4,
@@ -813,7 +995,9 @@
                     "y": 80
                   },
                   "curva": "suave",
-                  "procedural": "estatico"
+                  "procedural": "estatico",
+                  "desdePalabra": "Pikachu",
+                  "hastaPalabra": "Tampoco"
                 },
                 {
                   "inicioProgreso": 0.7,
@@ -825,17 +1009,19 @@
                     "y": 70
                   },
                   "curva": "impacto",
-                  "procedural": "temblar"
+                  "procedural": "temblar",
+                  "desdePalabra": "Pero",
+                  "hastaPalabra": "sí"
                 }
               ]
             }
           ],
-          "habla": false,
-          "capaZ": 10
+          "habla": true,
+          "capaZ": 20
         }
       ],
       "objetos": [],
-      "duracionSegundos": 7.954,
+      "duracionSegundos": 8.218,
       "palabras": [
         {
           "palabra": "El",
@@ -855,41 +1041,41 @@
         {
           "palabra": "Monopoly",
           "inicioMs": 580,
-          "finMs": 940
+          "finMs": 980
         },
         {
           "palabra": "lleva",
-          "inicioMs": 940,
-          "finMs": 1160
+          "inicioMs": 980,
+          "finMs": 1220
         },
         {
           "palabra": "monóculo",
-          "inicioMs": 1160,
-          "finMs": 1600
+          "inicioMs": 1220,
+          "finMs": 1760
         },
         {
           "palabra": "Nunca",
-          "inicioMs": 1960,
-          "finMs": 2180
+          "inicioMs": 2020,
+          "finMs": 2240
         },
         {
           "palabra": "lo",
-          "inicioMs": 2180,
-          "finMs": 2280
+          "inicioMs": 2240,
+          "finMs": 2340
         },
         {
           "palabra": "llevó",
-          "inicioMs": 2280,
-          "finMs": 2660
+          "inicioMs": 2340,
+          "finMs": 2580
         },
         {
           "palabra": "Pikachu",
-          "inicioMs": 2940,
-          "finMs": 3300
+          "inicioMs": 2880,
+          "finMs": 3100
         },
         {
           "palabra": "tiene",
-          "inicioMs": 3300,
+          "inicioMs": 3260,
           "finMs": 3500
         },
         {
@@ -900,62 +1086,88 @@
         {
           "palabra": "punta",
           "inicioMs": 3640,
-          "finMs": 3880
+          "finMs": 4000
         },
         {
           "palabra": "de",
-          "inicioMs": 3880,
-          "finMs": 3940
+          "inicioMs": 4000,
+          "finMs": 4100
         },
         {
           "palabra": "la",
-          "inicioMs": 3940,
-          "finMs": 4020
+          "inicioMs": 4100,
+          "finMs": 4200
         },
         {
           "palabra": "cola",
-          "inicioMs": 4020,
-          "finMs": 4160
+          "inicioMs": 4200,
+          "finMs": 4400
         },
         {
           "palabra": "negra",
-          "inicioMs": 4160,
-          "finMs": 4540
+          "inicioMs": 4400,
+          "finMs": 4840
         },
         {
           "palabra": "Tampoco",
-          "inicioMs": 4800,
-          "finMs": 5260
+          "inicioMs": 5120,
+          "finMs": 5580
         },
         {
           "palabra": "Pero",
-          "inicioMs": 5620,
-          "finMs": 5780
+          "inicioMs": 5900,
+          "finMs": 6040
         },
         {
           "palabra": "muchísima",
-          "inicioMs": 5780,
-          "finMs": 6340
+          "inicioMs": 6040,
+          "finMs": 6640
         },
         {
           "palabra": "gente",
-          "inicioMs": 6340,
-          "finMs": 6600
+          "inicioMs": 6640,
+          "finMs": 6880
         },
         {
           "palabra": "jura",
-          "inicioMs": 6600,
-          "finMs": 6920
+          "inicioMs": 6880,
+          "finMs": 7280
         },
         {
           "palabra": "que",
-          "inicioMs": 6920,
-          "finMs": 7060
+          "inicioMs": 7280,
+          "finMs": 7440
         },
         {
           "palabra": "sí",
-          "inicioMs": 7060,
-          "finMs": 7260
+          "inicioMs": 7440,
+          "finMs": 7640
+        }
+      ],
+      "focoCamara": [
+        {
+          "x": -30,
+          "y": -20,
+          "escala": 1.12,
+          "inicioProgreso": 0.0,
+          "finProgreso": 0.38,
+          "curva": "suave"
+        },
+        {
+          "x": 95,
+          "y": -40,
+          "escala": 1.24,
+          "inicioProgreso": 0.38,
+          "finProgreso": 0.78,
+          "curva": "impacto"
+        },
+        {
+          "x": 0,
+          "y": 10,
+          "escala": 1.08,
+          "inicioProgreso": 0.78,
+          "finProgreso": 1.0,
+          "curva": "suave"
         }
       ]
     },
@@ -1007,7 +1219,9 @@
                     "y": 80
                   },
                   "curva": "suave",
-                  "procedural": "estatico"
+                  "procedural": "estatico",
+                  "desdePalabra": "En",
+                  "hastaPalabra": "grabados"
                 },
                 {
                   "inicioProgreso": 0.45,
@@ -1019,7 +1233,9 @@
                     "y": 80
                   },
                   "curva": "suave",
-                  "procedural": "estatico"
+                  "procedural": "estatico",
+                  "desdePalabra": "Quienes",
+                  "hastaPalabra": "velocidad"
                 },
                 {
                   "inicioProgreso": 0.75,
@@ -1031,13 +1247,15 @@
                     "y": 80
                   },
                   "curva": "impacto",
-                  "procedural": "estatico"
+                  "procedural": "estatico",
+                  "desdePalabra": "Pero",
+                  "hastaPalabra": "existieron"
                 }
               ]
             }
           ],
-          "habla": false,
-          "capaZ": 10
+          "habla": true,
+          "capaZ": 20
         }
       ],
       "objetos": [
@@ -1045,35 +1263,63 @@
           "id": "experimento_loftus_pantalla",
           "propId": "experimento_loftus_choque_autos",
           "posicion": {
-            "x": 200,
-            "y": 10
+            "x": 165,
+            "y": 35
           },
-          "escala": 1.4,
-          "animacion": "vibrar",
-          "capaZ": 14
+          "escala": 1.38,
+          "capaZ": 28,
+          "pasos": [
+            {
+              "inicioProgreso": 0.0,
+              "finProgreso": 0.58,
+              "desdePalabra": "En",
+              "hastaPalabra": "velocidad",
+              "estado": "tocaron_suave",
+              "posicion": {
+                "x": 155,
+                "y": 40
+              },
+              "escala": 1.32,
+              "curva": "suave"
+            },
+            {
+              "inicioProgreso": 0.58,
+              "finProgreso": 1.0,
+              "desdePalabra": "Pero",
+              "hastaPalabra": "existieron",
+              "estado": "estrellaron_vidrios",
+              "posicion": {
+                "x": 175,
+                "y": 25
+              },
+              "escala": 1.46,
+              "animacion": "vibrar",
+              "curva": "impacto"
+            }
+          ]
         }
       ],
-      "duracionSegundos": 11.77,
+      "duracionSegundos": 11.53,
       "palabras": [
         {
           "palabra": "En",
           "inicioMs": 0,
-          "finMs": 200
+          "finMs": 180
         },
         {
           "palabra": "los",
-          "inicioMs": 200,
-          "finMs": 300
+          "inicioMs": 180,
+          "finMs": 280
         },
         {
           "palabra": "años",
-          "inicioMs": 300,
-          "finMs": 540
+          "inicioMs": 280,
+          "finMs": 520
         },
         {
           "palabra": "setenta",
-          "inicioMs": 540,
-          "finMs": 1080
+          "inicioMs": 520,
+          "finMs": 1040
         },
         {
           "palabra": "Elizabeth",
@@ -1083,132 +1329,158 @@
         {
           "palabra": "Loftus",
           "inicioMs": 1420,
-          "finMs": 2040
+          "finMs": 1980
         },
         {
           "palabra": "mostró",
-          "inicioMs": 2040,
-          "finMs": 2380
+          "inicioMs": 1980,
+          "finMs": 2280
         },
         {
           "palabra": "choques",
-          "inicioMs": 2380,
-          "finMs": 2740
+          "inicioMs": 2280,
+          "finMs": 2640
         },
         {
           "palabra": "de",
-          "inicioMs": 2740,
-          "finMs": 2880
+          "inicioMs": 2640,
+          "finMs": 2780
         },
         {
           "palabra": "autos",
-          "inicioMs": 2880,
-          "finMs": 3200
+          "inicioMs": 2780,
+          "finMs": 3100
         },
         {
           "palabra": "grabados",
-          "inicioMs": 3200,
-          "finMs": 3680
+          "inicioMs": 3100,
+          "finMs": 3600
         },
         {
           "palabra": "Quienes",
-          "inicioMs": 3920,
-          "finMs": 4200
+          "inicioMs": 3880,
+          "finMs": 4140
         },
         {
           "palabra": "oyeron",
-          "inicioMs": 4200,
-          "finMs": 4500
+          "inicioMs": 4140,
+          "finMs": 4420
         },
         {
           "palabra": "la",
-          "inicioMs": 4500,
-          "finMs": 4600
+          "inicioMs": 4420,
+          "finMs": 4560
         },
         {
           "palabra": "palabra",
-          "inicioMs": 4600,
-          "finMs": 4880
+          "inicioMs": 4560,
+          "finMs": 4840
         },
         {
           "palabra": "tocaron",
-          "inicioMs": 4880,
-          "finMs": 5480
+          "inicioMs": 4840,
+          "finMs": 5420
         },
         {
           "palabra": "estimaron",
-          "inicioMs": 5480,
-          "finMs": 6060
+          "inicioMs": 5420,
+          "finMs": 5920
         },
         {
           "palabra": "poca",
-          "inicioMs": 6060,
-          "finMs": 6420
+          "inicioMs": 5920,
+          "finMs": 6280
         },
         {
           "palabra": "velocidad",
-          "inicioMs": 6420,
-          "finMs": 6760
+          "inicioMs": 6280,
+          "finMs": 6600
         },
         {
           "palabra": "Pero",
-          "inicioMs": 7060,
-          "finMs": 7180
+          "inicioMs": 6840,
+          "finMs": 7000
         },
         {
           "palabra": "al",
-          "inicioMs": 7180,
-          "finMs": 7280
+          "inicioMs": 7000,
+          "finMs": 7120
         },
         {
           "palabra": "usar",
-          "inicioMs": 7280,
-          "finMs": 7500
+          "inicioMs": 7120,
+          "finMs": 7320
         },
         {
           "palabra": "la",
-          "inicioMs": 7500,
-          "finMs": 7700
+          "inicioMs": 7320,
+          "finMs": 7500
         },
         {
           "palabra": "palabra",
-          "inicioMs": 7700,
-          "finMs": 8040
+          "inicioMs": 7500,
+          "finMs": 7820
         },
         {
           "palabra": "estrellaron",
-          "inicioMs": 8040,
-          "finMs": 8700
+          "inicioMs": 7820,
+          "finMs": 8500
         },
         {
           "palabra": "recordaron",
-          "inicioMs": 8880,
-          "finMs": 9300
+          "inicioMs": 8680,
+          "finMs": 9100
         },
         {
           "palabra": "cristales",
-          "inicioMs": 9300,
-          "finMs": 9760
+          "inicioMs": 9100,
+          "finMs": 9520
         },
         {
           "palabra": "rotos",
-          "inicioMs": 9760,
-          "finMs": 10140
+          "inicioMs": 9520,
+          "finMs": 9880
         },
         {
           "palabra": "que",
-          "inicioMs": 10140,
-          "finMs": 10280
+          "inicioMs": 9880,
+          "finMs": 10000
         },
         {
           "palabra": "nunca",
-          "inicioMs": 10280,
-          "finMs": 10500
+          "inicioMs": 10000,
+          "finMs": 10160
         },
         {
           "palabra": "existieron",
-          "inicioMs": 10500,
-          "finMs": 11100
+          "inicioMs": 10160,
+          "finMs": 10820
+        }
+      ],
+      "focoCamara": [
+        {
+          "x": -50,
+          "y": 10,
+          "escala": 1.1,
+          "inicioProgreso": 0.0,
+          "finProgreso": 0.52,
+          "curva": "suave"
+        },
+        {
+          "x": 90,
+          "y": 15,
+          "escala": 1.25,
+          "inicioProgreso": 0.52,
+          "finProgreso": 0.86,
+          "curva": "impacto"
+        },
+        {
+          "x": 0,
+          "y": 20,
+          "escala": 1.08,
+          "inicioProgreso": 0.86,
+          "finProgreso": 1.0,
+          "curva": "suave"
         }
       ]
     },
@@ -1260,7 +1532,9 @@
                     "y": 80
                   },
                   "curva": "suave",
-                  "procedural": "estatico"
+                  "procedural": "estatico",
+                  "desdePalabra": "La",
+                  "hastaPalabra": "grabación"
                 },
                 {
                   "inicioProgreso": 0.35,
@@ -1272,7 +1546,9 @@
                     "y": 85
                   },
                   "curva": "anticipacion",
-                  "procedural": "esfuerzo"
+                  "procedural": "esfuerzo",
+                  "desdePalabra": "Cada",
+                  "hastaPalabra": "reconstruye"
                 },
                 {
                   "inicioProgreso": 0.7,
@@ -1284,13 +1560,15 @@
                     "y": 80
                   },
                   "curva": "impacto",
-                  "procedural": "estatico"
+                  "procedural": "estatico",
+                  "desdePalabra": "rellena",
+                  "hastaPalabra": "modificado"
                 }
               ]
             }
           ],
-          "habla": false,
-          "capaZ": 10
+          "habla": true,
+          "capaZ": 20
         }
       ],
       "objetos": [
@@ -1298,15 +1576,43 @@
           "id": "vhs_rompecabezas_cajon",
           "propId": "vhs_rompecabezas_cajon_memoria",
           "posicion": {
-            "x": 200,
-            "y": 20
+            "x": 165,
+            "y": 35
           },
-          "escala": 1.35,
-          "animacion": "pulso",
-          "capaZ": 14
+          "escala": 1.38,
+          "capaZ": 28,
+          "pasos": [
+            {
+              "inicioProgreso": 0.0,
+              "finProgreso": 0.45,
+              "desdePalabra": "La",
+              "hastaPalabra": "reconstruye",
+              "estado": "vhs_tachado",
+              "posicion": {
+                "x": 155,
+                "y": 40
+              },
+              "escala": 1.32,
+              "curva": "suave"
+            },
+            {
+              "inicioProgreso": 0.45,
+              "finProgreso": 1.0,
+              "desdePalabra": "rellena",
+              "hastaPalabra": "modificado",
+              "estado": "rellenando_hueco",
+              "posicion": {
+                "x": 175,
+                "y": 25
+              },
+              "escala": 1.46,
+              "animacion": "pulso",
+              "curva": "rebote"
+            }
+          ]
         }
       ],
-      "duracionSegundos": 8.746,
+      "duracionSegundos": 8.65,
       "palabras": [
         {
           "palabra": "La",
@@ -1321,132 +1627,158 @@
         {
           "palabra": "humana",
           "inicioMs": 500,
-          "finMs": 820
+          "finMs": 860
         },
         {
           "palabra": "no",
-          "inicioMs": 820,
-          "finMs": 980
+          "inicioMs": 860,
+          "finMs": 1000
         },
         {
           "palabra": "es",
-          "inicioMs": 980,
-          "finMs": 1140
+          "inicioMs": 1000,
+          "finMs": 1160
         },
         {
           "palabra": "una",
-          "inicioMs": 1140,
-          "finMs": 1300
+          "inicioMs": 1160,
+          "finMs": 1320
         },
         {
           "palabra": "grabación",
-          "inicioMs": 1300,
-          "finMs": 1780
+          "inicioMs": 1320,
+          "finMs": 1820
         },
         {
           "palabra": "Cada",
-          "inicioMs": 2060,
-          "finMs": 2160
+          "inicioMs": 2180,
+          "finMs": 2320
         },
         {
           "palabra": "vez",
-          "inicioMs": 2160,
-          "finMs": 2300
+          "inicioMs": 2320,
+          "finMs": 2480
         },
         {
           "palabra": "que",
-          "inicioMs": 2300,
-          "finMs": 2460
+          "inicioMs": 2480,
+          "finMs": 2620
         },
         {
           "palabra": "recuerdas",
-          "inicioMs": 2460,
-          "finMs": 2920
+          "inicioMs": 2620,
+          "finMs": 3040
         },
         {
           "palabra": "algo",
-          "inicioMs": 2920,
-          "finMs": 3260
+          "inicioMs": 3040,
+          "finMs": 3340
         },
         {
           "palabra": "tu",
-          "inicioMs": 3420,
-          "finMs": 3480
+          "inicioMs": 3540,
+          "finMs": 3560
         },
         {
           "palabra": "cerebro",
-          "inicioMs": 3480,
-          "finMs": 3840
+          "inicioMs": 3560,
+          "finMs": 3880
         },
         {
           "palabra": "lo",
-          "inicioMs": 3840,
-          "finMs": 3960
+          "inicioMs": 3880,
+          "finMs": 4000
         },
         {
           "palabra": "reconstruye",
-          "inicioMs": 3960,
-          "finMs": 4600
+          "inicioMs": 4000,
+          "finMs": 4720
         },
         {
           "palabra": "rellena",
-          "inicioMs": 4860,
-          "finMs": 5200
+          "inicioMs": 4940,
+          "finMs": 5240
         },
         {
           "palabra": "huecos",
-          "inicioMs": 5200,
-          "finMs": 5640
+          "inicioMs": 5240,
+          "finMs": 5560
         },
         {
           "palabra": "con",
-          "inicioMs": 5640,
-          "finMs": 5780
+          "inicioMs": 5560,
+          "finMs": 5740
         },
         {
           "palabra": "lo",
-          "inicioMs": 5780,
-          "finMs": 5860
+          "inicioMs": 5740,
+          "finMs": 5800
         },
         {
           "palabra": "que",
-          "inicioMs": 5860,
-          "finMs": 5980
+          "inicioMs": 5800,
+          "finMs": 5880
         },
         {
           "palabra": "parece",
-          "inicioMs": 5980,
-          "finMs": 6240
+          "inicioMs": 5880,
+          "finMs": 6120
         },
         {
           "palabra": "lógico",
-          "inicioMs": 6240,
-          "finMs": 6760
+          "inicioMs": 6120,
+          "finMs": 6660
         },
         {
           "palabra": "y",
-          "inicioMs": 6760,
-          "finMs": 6920
+          "inicioMs": 6660,
+          "finMs": 6860
         },
         {
           "palabra": "lo",
-          "inicioMs": 6920,
-          "finMs": 7020
+          "inicioMs": 6860,
+          "finMs": 6980
         },
         {
           "palabra": "guarda",
-          "inicioMs": 7020,
-          "finMs": 7360
+          "inicioMs": 6980,
+          "finMs": 7260
         },
         {
           "palabra": "ya",
-          "inicioMs": 7360,
-          "finMs": 7440
+          "inicioMs": 7260,
+          "finMs": 7360
         },
         {
           "palabra": "modificado",
-          "inicioMs": 7440,
-          "finMs": 8080
+          "inicioMs": 7360,
+          "finMs": 7960
+        }
+      ],
+      "focoCamara": [
+        {
+          "x": -45,
+          "y": 25,
+          "escala": 1.1,
+          "inicioProgreso": 0.0,
+          "finProgreso": 0.45,
+          "curva": "suave"
+        },
+        {
+          "x": 85,
+          "y": 20,
+          "escala": 1.24,
+          "inicioProgreso": 0.45,
+          "finProgreso": 0.84,
+          "curva": "impacto"
+        },
+        {
+          "x": 0,
+          "y": 20,
+          "escala": 1.08,
+          "inicioProgreso": 0.84,
+          "finProgreso": 1.0,
+          "curva": "suave"
         }
       ]
     },
@@ -1498,7 +1830,9 @@
                     "y": 80
                   },
                   "curva": "anticipacion",
-                  "procedural": "temblar"
+                  "procedural": "temblar",
+                  "desdePalabra": "Y",
+                  "hastaPalabra": "igual"
                 },
                 {
                   "inicioProgreso": 0.45,
@@ -1510,7 +1844,9 @@
                     "y": 80
                   },
                   "curva": "suave",
-                  "procedural": "estatico"
+                  "procedural": "estatico",
+                  "desdePalabra": "el",
+                  "hastaPalabra": "compartido"
                 },
                 {
                   "inicioProgreso": 0.8,
@@ -1522,13 +1858,15 @@
                     "y": 80
                   },
                   "curva": "impacto",
-                  "procedural": "estatico"
+                  "procedural": "estatico",
+                  "desdePalabra": "Pero",
+                  "hastaPalabra": "verdadero"
                 }
               ]
             }
           ],
-          "habla": false,
-          "capaZ": 10
+          "habla": true,
+          "capaZ": 20
         }
       ],
       "objetos": [
@@ -1536,120 +1874,174 @@
           "id": "lupa_pieza_falsa",
           "propId": "multitud_piezas_falsas_lupa",
           "posicion": {
-            "x": 190,
-            "y": 10
+            "x": 165,
+            "y": 30
           },
-          "escala": 1.35,
-          "animacion": "flotar",
-          "capaZ": 14
+          "escala": 1.38,
+          "capaZ": 28,
+          "pasos": [
+            {
+              "inicioProgreso": 0.0,
+              "finProgreso": 0.55,
+              "desdePalabra": "Y",
+              "hastaPalabra": "compartido",
+              "estado": "examinando",
+              "posicion": {
+                "x": 155,
+                "y": 35
+              },
+              "escala": 1.32,
+              "curva": "suave"
+            },
+            {
+              "inicioProgreso": 0.55,
+              "finProgreso": 1.0,
+              "desdePalabra": "Pero",
+              "hastaPalabra": "verdadero",
+              "estado": "desmentido_lupa",
+              "posicion": {
+                "x": 175,
+                "y": 20
+              },
+              "escala": 1.45,
+              "animacion": "flotar",
+              "curva": "impacto"
+            }
+          ]
         }
       ],
-      "duracionSegundos": 6.778,
+      "duracionSegundos": 6.898,
       "palabras": [
         {
           "palabra": "Y",
           "inicioMs": 0,
-          "finMs": 180
+          "finMs": 160
         },
         {
           "palabra": "si",
-          "inicioMs": 180,
-          "finMs": 300
+          "inicioMs": 160,
+          "finMs": 260
         },
         {
           "palabra": "millones",
-          "inicioMs": 300,
-          "finMs": 580
+          "inicioMs": 260,
+          "finMs": 500
         },
         {
           "palabra": "de",
-          "inicioMs": 580,
-          "finMs": 800
+          "inicioMs": 500,
+          "finMs": 680
         },
         {
           "palabra": "personas",
-          "inicioMs": 800,
-          "finMs": 1120
+          "inicioMs": 680,
+          "finMs": 980
         },
         {
           "palabra": "rellenan",
-          "inicioMs": 1120,
-          "finMs": 1540
+          "inicioMs": 980,
+          "finMs": 1480
         },
         {
           "palabra": "el",
-          "inicioMs": 1540,
-          "finMs": 1680
+          "inicioMs": 1480,
+          "finMs": 1620
         },
         {
           "palabra": "hueco",
-          "inicioMs": 1680,
-          "finMs": 1940
+          "inicioMs": 1620,
+          "finMs": 1900
         },
         {
           "palabra": "igual",
-          "inicioMs": 1940,
-          "finMs": 2160
+          "inicioMs": 1900,
+          "finMs": 2100
         },
         {
           "palabra": "el",
-          "inicioMs": 2420,
-          "finMs": 2560
+          "inicioMs": 2460,
+          "finMs": 2580
         },
         {
           "palabra": "error",
-          "inicioMs": 2560,
+          "inicioMs": 2580,
           "finMs": 2740
         },
         {
           "palabra": "parece",
           "inicioMs": 2740,
-          "finMs": 3040
+          "finMs": 3080
         },
         {
           "palabra": "un",
-          "inicioMs": 3040,
-          "finMs": 3240
+          "inicioMs": 3080,
+          "finMs": 3260
         },
         {
           "palabra": "recuerdo",
-          "inicioMs": 3240,
-          "finMs": 3540
+          "inicioMs": 3260,
+          "finMs": 3620
         },
         {
           "palabra": "compartido",
-          "inicioMs": 3540,
-          "finMs": 4180
+          "inicioMs": 3620,
+          "finMs": 4300
         },
         {
           "palabra": "Pero",
-          "inicioMs": 4460,
-          "finMs": 4600
+          "inicioMs": 4520,
+          "finMs": 4700
         },
         {
           "palabra": "compartirlo",
-          "inicioMs": 4600,
-          "finMs": 5280
+          "inicioMs": 4700,
+          "finMs": 5380
         },
         {
           "palabra": "no",
-          "inicioMs": 5280,
-          "finMs": 5420
+          "inicioMs": 5380,
+          "finMs": 5500
         },
         {
           "palabra": "lo",
-          "inicioMs": 5420,
-          "finMs": 5540
+          "inicioMs": 5500,
+          "finMs": 5640
         },
         {
           "palabra": "hace",
-          "inicioMs": 5540,
-          "finMs": 5720
+          "inicioMs": 5640,
+          "finMs": 5820
         },
         {
           "palabra": "verdadero",
-          "inicioMs": 5720,
-          "finMs": 6280
+          "inicioMs": 5820,
+          "finMs": 6360
+        }
+      ],
+      "focoCamara": [
+        {
+          "x": 0,
+          "y": 15,
+          "escala": 1.08,
+          "inicioProgreso": 0.0,
+          "finProgreso": 0.5,
+          "curva": "suave"
+        },
+        {
+          "x": 80,
+          "y": 20,
+          "escala": 1.24,
+          "inicioProgreso": 0.5,
+          "finProgreso": 0.85,
+          "curva": "impacto"
+        },
+        {
+          "x": -25,
+          "y": 25,
+          "escala": 1.1,
+          "inicioProgreso": 0.85,
+          "finProgreso": 1.0,
+          "curva": "suave"
         }
       ]
     },
@@ -1699,7 +2091,9 @@
                     "y": 80
                   },
                   "curva": "suave",
-                  "procedural": "estatico"
+                  "procedural": "estatico",
+                  "desdePalabra": "Última",
+                  "hastaPalabra": "sombrero"
                 },
                 {
                   "inicioProgreso": 0.45,
@@ -1711,7 +2105,9 @@
                     "y": 80
                   },
                   "curva": "suave",
-                  "procedural": "estatico"
+                  "procedural": "estatico",
+                  "desdePalabra": "el",
+                  "hastaPalabra": "empezar"
                 },
                 {
                   "inicioProgreso": 0.75,
@@ -1723,13 +2119,15 @@
                     "y": 80
                   },
                   "curva": "impacto",
-                  "procedural": "estatico"
+                  "procedural": "estatico",
+                  "desdePalabra": "este",
+                  "hastaPalabra": "video"
                 }
               ]
             }
           ],
-          "habla": false,
-          "capaZ": 10
+          "habla": true,
+          "capaZ": 20
         }
       ],
       "objetos": [
@@ -1737,66 +2135,120 @@
           "id": "nube_sombrero_rebobinado",
           "propId": "nube_sombrero_rebobinado_vhs",
           "posicion": {
-            "x": 200,
-            "y": 10
+            "x": 165,
+            "y": 65
           },
-          "escala": 1.4,
-          "animacion": "pulso",
-          "capaZ": 14
+          "escala": 1.38,
+          "capaZ": 28,
+          "pasos": [
+            {
+              "inicioProgreso": 0.0,
+              "finProgreso": 0.45,
+              "desdePalabra": "Última",
+              "hastaPalabra": "sombrero",
+              "estado": "duda",
+              "posicion": {
+                "x": 155,
+                "y": 70
+              },
+              "escala": 1.32,
+              "curva": "suave"
+            },
+            {
+              "inicioProgreso": 0.45,
+              "finProgreso": 1.0,
+              "desdePalabra": "el",
+              "hastaPalabra": "video",
+              "estado": "rebobinado",
+              "posicion": {
+                "x": 175,
+                "y": 55
+              },
+              "escala": 1.45,
+              "animacion": "pulso",
+              "curva": "rebote"
+            }
+          ]
         }
       ],
       "silencioFinalSegundos": 4.2,
-      "duracionSegundos": 8.266,
+      "duracionSegundos": 7.666,
       "palabras": [
         {
           "palabra": "Última",
           "inicioMs": 0,
-          "finMs": 440
+          "finMs": 380
         },
         {
           "palabra": "prueba",
-          "inicioMs": 440,
-          "finMs": 780
+          "inicioMs": 380,
+          "finMs": 700
         },
         {
           "palabra": "llevaba",
-          "inicioMs": 1140,
-          "finMs": 1440
+          "inicioMs": 880,
+          "finMs": 1100
         },
         {
           "palabra": "sombrero",
-          "inicioMs": 1440,
-          "finMs": 1880
+          "inicioMs": 1100,
+          "finMs": 1500
         },
         {
           "palabra": "el",
-          "inicioMs": 1880,
-          "finMs": 2000
+          "inicioMs": 1500,
+          "finMs": 1620
         },
         {
           "palabra": "Stickman",
-          "inicioMs": 2000,
-          "finMs": 2380
+          "inicioMs": 1620,
+          "finMs": 1880
         },
         {
           "palabra": "al",
-          "inicioMs": 2380,
-          "finMs": 2520
+          "inicioMs": 1880,
+          "finMs": 2100
         },
         {
           "palabra": "empezar",
-          "inicioMs": 2520,
-          "finMs": 2840
+          "inicioMs": 2100,
+          "finMs": 2400
         },
         {
           "palabra": "este",
-          "inicioMs": 2840,
-          "finMs": 3120
+          "inicioMs": 2400,
+          "finMs": 2640
         },
         {
           "palabra": "video",
-          "inicioMs": 3120,
-          "finMs": 3360
+          "inicioMs": 2640,
+          "finMs": 2860
+        }
+      ],
+      "focoCamara": [
+        {
+          "x": 0,
+          "y": 15,
+          "escala": 1.08,
+          "inicioProgreso": 0.0,
+          "finProgreso": 0.42,
+          "curva": "suave"
+        },
+        {
+          "x": 75,
+          "y": -25,
+          "escala": 1.22,
+          "inicioProgreso": 0.42,
+          "finProgreso": 0.82,
+          "curva": "impacto"
+        },
+        {
+          "x": 0,
+          "y": 10,
+          "escala": 1.08,
+          "inicioProgreso": 0.82,
+          "finProgreso": 1.0,
+          "curva": "suave"
         }
       ]
     }

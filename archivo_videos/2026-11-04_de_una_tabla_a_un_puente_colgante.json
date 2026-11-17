@@ -1,0 +1,2056 @@
+{
+  "meta": {
+    "id": "de_una_tabla_a_un_puente_colgante",
+    "slug": "de_una_tabla_a_un_puente_colgante",
+    "titulo": "De una tabla caída a un puente colgante funcional",
+    "titulo_corto": "El secreto de la tensión",
+    "temaResumen": "Por qué una tabla plana colapsa por flexión y cómo la tensión de cables en catenaria, torres de compresión y péndolas crean un puente colgante diez veces más fuerte.",
+    "duracionObjetivo": [
+      62,
+      76
+    ],
+    "gancho": "Pones una simple tabla de madera para cruzar un arroyo y alcanzar tu almuerzo... ¡pero al dar dos pasos se parte a la mitad!",
+    "fuentes": [
+      "Mecánica de materiales y flexión de vigas",
+      "Ingeniería de puentes colgantes y catenarias",
+      "Historia estructural del Golden Gate"
+    ],
+    "genero": "Educación y Ciencia"
+  },
+  "escenas": [
+    {
+      "id": 1,
+      "texto": "Pones una simple tabla de madera para cruzar un arroyo y alcanzar tu almuerzo... ¡pero al dar dos pasos se parte a la mitad y caes al agua fangosa! ¿Cómo conviertes esa misma madera débil en un puente diez veces más fuerte?",
+      "icono": "Footprints",
+      "colorIcono": "#F59E0B",
+      "tituloVisual": "EL CRACK DE LA TABLA",
+      "composicionVisual": "plano_general",
+      "escenario": "arroyo_lodo_tabla_rota",
+      "transicion": "zoom_in",
+      "efectosCamara": [
+        "drift",
+        "shake"
+      ],
+      "sfx": "sfx/sfx_tabla_crack_chapoteo_lodo.wav",
+      "volumenSfx": 0.25,
+      "palabrasClave": [
+        "simple tabla de madera",
+        "parte a la mitad",
+        "puente diez veces más fuerte"
+      ],
+      "focoCamara": [
+        {
+          "x": -180,
+          "y": -60,
+          "escala": 1.15,
+          "inicioProgreso": 0.0,
+          "finProgreso": 0.32,
+          "curva": "suave"
+        },
+        {
+          "x": 80,
+          "y": 120,
+          "escala": 1.38,
+          "inicioProgreso": 0.32,
+          "finProgreso": 0.72,
+          "curva": "impacto"
+        },
+        {
+          "x": -60,
+          "y": 60,
+          "escala": 1.15,
+          "inicioProgreso": 0.72,
+          "finProgreso": 1.0,
+          "curva": "suave"
+        }
+      ],
+      "personajes": [
+        {
+          "id": "narrador",
+          "nombre": "Explorador",
+          "posicion": {
+            "x": -270,
+            "y": -90
+          },
+          "escala": 0.96,
+          "orientacion": "derecha",
+          "habla": true,
+          "capaZ": 22,
+          "acciones": [
+            {
+              "tipo": "personalizada",
+              "pasos": [
+                {
+                  "inicioProgreso": 0.0,
+                  "finProgreso": 0.35,
+                  "poseId": "walking",
+                  "expresion": "talking_enthusiastic",
+                  "posicion": {
+                    "x": -270,
+                    "y": -90
+                  },
+                  "curva": "suave",
+                  "procedural": "caminar"
+                },
+                {
+                  "inicioProgreso": 0.35,
+                  "finProgreso": 0.7,
+                  "poseId": "tripping_falling",
+                  "expresion": "shocked",
+                  "posicion": {
+                    "x": -80,
+                    "y": -40
+                  },
+                  "curva": "impacto",
+                  "procedural": "recoil"
+                },
+                {
+                  "inicioProgreso": 0.7,
+                  "finProgreso": 1.0,
+                  "poseId": "scratching_head",
+                  "expresion": "confused",
+                  "posicion": {
+                    "x": -120,
+                    "y": -70
+                  },
+                  "curva": "rebote",
+                  "procedural": "estatico"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "objetos": [
+        {
+          "id": "tabla_rota_arroyo",
+          "propId": "tabla_madera_quebrada_lodo",
+          "posicion": {
+            "x": 140,
+            "y": 70
+          },
+          "escala": 1.48,
+          "capaZ": 26,
+          "pasos": [
+            {
+              "inicioProgreso": 0.0,
+              "finProgreso": 1.0,
+              "posicion": {
+                "x": 140,
+                "y": 70
+              },
+              "escala": 1.48,
+              "rotacion": 0,
+              "curva": "suave"
+            }
+          ]
+        }
+      ],
+      "duracionSegundos": 11.674,
+      "palabras": [
+        {
+          "palabra": "Pones",
+          "inicioMs": 0,
+          "finMs": 180
+        },
+        {
+          "palabra": "una",
+          "inicioMs": 180,
+          "finMs": 360
+        },
+        {
+          "palabra": "simple",
+          "inicioMs": 360,
+          "finMs": 700
+        },
+        {
+          "palabra": "tabla",
+          "inicioMs": 700,
+          "finMs": 1020
+        },
+        {
+          "palabra": "de",
+          "inicioMs": 1020,
+          "finMs": 1160
+        },
+        {
+          "palabra": "madera",
+          "inicioMs": 1160,
+          "finMs": 1460
+        },
+        {
+          "palabra": "para",
+          "inicioMs": 1460,
+          "finMs": 1640
+        },
+        {
+          "palabra": "cruzar",
+          "inicioMs": 1640,
+          "finMs": 1980
+        },
+        {
+          "palabra": "un",
+          "inicioMs": 1980,
+          "finMs": 2180
+        },
+        {
+          "palabra": "arroyo",
+          "inicioMs": 2180,
+          "finMs": 2520
+        },
+        {
+          "palabra": "y",
+          "inicioMs": 2520,
+          "finMs": 2620
+        },
+        {
+          "palabra": "alcanzar",
+          "inicioMs": 2620,
+          "finMs": 3000
+        },
+        {
+          "palabra": "tu",
+          "inicioMs": 3000,
+          "finMs": 3120
+        },
+        {
+          "palabra": "almuerzo",
+          "inicioMs": 3120,
+          "finMs": 4020
+        },
+        {
+          "palabra": "pero",
+          "inicioMs": 4020,
+          "finMs": 4220
+        },
+        {
+          "palabra": "al",
+          "inicioMs": 4220,
+          "finMs": 4360
+        },
+        {
+          "palabra": "dar",
+          "inicioMs": 4360,
+          "finMs": 4500
+        },
+        {
+          "palabra": "dos",
+          "inicioMs": 4500,
+          "finMs": 4760
+        },
+        {
+          "palabra": "pasos",
+          "inicioMs": 4760,
+          "finMs": 5120
+        },
+        {
+          "palabra": "se",
+          "inicioMs": 5120,
+          "finMs": 5260
+        },
+        {
+          "palabra": "parte",
+          "inicioMs": 5260,
+          "finMs": 5420
+        },
+        {
+          "palabra": "a",
+          "inicioMs": 5420,
+          "finMs": 5600
+        },
+        {
+          "palabra": "la",
+          "inicioMs": 5600,
+          "finMs": 5680
+        },
+        {
+          "palabra": "mitad",
+          "inicioMs": 5680,
+          "finMs": 5940
+        },
+        {
+          "palabra": "y",
+          "inicioMs": 5940,
+          "finMs": 6220
+        },
+        {
+          "palabra": "caes",
+          "inicioMs": 6220,
+          "finMs": 6480
+        },
+        {
+          "palabra": "al",
+          "inicioMs": 6480,
+          "finMs": 6620
+        },
+        {
+          "palabra": "agua",
+          "inicioMs": 6620,
+          "finMs": 6800
+        },
+        {
+          "palabra": "fangosa",
+          "inicioMs": 6800,
+          "finMs": 7340
+        },
+        {
+          "palabra": "Cómo",
+          "inicioMs": 7560,
+          "finMs": 7720
+        },
+        {
+          "palabra": "conviertes",
+          "inicioMs": 7720,
+          "finMs": 8140
+        },
+        {
+          "palabra": "esa",
+          "inicioMs": 8140,
+          "finMs": 8340
+        },
+        {
+          "palabra": "misma",
+          "inicioMs": 8340,
+          "finMs": 8580
+        },
+        {
+          "palabra": "madera",
+          "inicioMs": 8580,
+          "finMs": 9000
+        },
+        {
+          "palabra": "débil",
+          "inicioMs": 9000,
+          "finMs": 9340
+        },
+        {
+          "palabra": "en",
+          "inicioMs": 9340,
+          "finMs": 9500
+        },
+        {
+          "palabra": "un",
+          "inicioMs": 9500,
+          "finMs": 9640
+        },
+        {
+          "palabra": "puente",
+          "inicioMs": 9640,
+          "finMs": 9940
+        },
+        {
+          "palabra": "diez",
+          "inicioMs": 9940,
+          "finMs": 10180
+        },
+        {
+          "palabra": "veces",
+          "inicioMs": 10180,
+          "finMs": 10380
+        },
+        {
+          "palabra": "más",
+          "inicioMs": 10380,
+          "finMs": 10660
+        },
+        {
+          "palabra": "fuerte",
+          "inicioMs": 10660,
+          "finMs": 11100
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "texto": "¡Tu tabla no falló por mala, sino por física pura! Cuando pisas en medio sufre flexión mecánica: la cara de arriba se aplasta por compresión, mientras la cara de abajo se desgarra por tensión hasta quebrarse.",
+      "icono": "Compass",
+      "colorIcono": "#EF4444",
+      "tituloVisual": "FLEXIÓN MECÁNICA",
+      "composicionVisual": "escenario_ilustrado",
+      "escenario": "estudio_tecnico_flexion_viga",
+      "transicion": "whip_right",
+      "efectosCamara": [
+        "drift",
+        "shake",
+        "punch"
+      ],
+      "sfx": "sfx/sfx_diagrama_tiza_gemido_flexion.wav",
+      "volumenSfx": 0.25,
+      "palabrasClave": [
+        "física pura",
+        "flexión mecánica",
+        "desgarra por tensión"
+      ],
+      "focoCamara": [
+        {
+          "x": -90,
+          "y": 60,
+          "escala": 1.22,
+          "inicioProgreso": 0.0,
+          "finProgreso": 0.35,
+          "curva": "suave"
+        },
+        {
+          "x": 40,
+          "y": 130,
+          "escala": 1.44,
+          "inicioProgreso": 0.35,
+          "finProgreso": 0.76,
+          "curva": "impacto"
+        },
+        {
+          "x": 80,
+          "y": 70,
+          "escala": 1.18,
+          "inicioProgreso": 0.76,
+          "finProgreso": 1.0,
+          "curva": "rebote"
+        }
+      ],
+      "personajes": [
+        {
+          "id": "narrador",
+          "nombre": "Explorador",
+          "posicion": {
+            "x": -270,
+            "y": -90
+          },
+          "escala": 0.96,
+          "orientacion": "derecha",
+          "habla": true,
+          "capaZ": 22,
+          "acciones": [
+            {
+              "tipo": "personalizada",
+              "pasos": [
+                {
+                  "inicioProgreso": 0.0,
+                  "finProgreso": 0.45,
+                  "poseId": "explaining_pointing_up",
+                  "expresion": "analytical",
+                  "posicion": {
+                    "x": -270,
+                    "y": -90
+                  },
+                  "curva": "suave",
+                  "procedural": "estatico"
+                },
+                {
+                  "inicioProgreso": 0.45,
+                  "finProgreso": 1.0,
+                  "poseId": "warning_danger",
+                  "expresion": "shocked",
+                  "posicion": {
+                    "x": -220,
+                    "y": -95
+                  },
+                  "curva": "impacto",
+                  "procedural": "temblar"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "objetos": [
+        {
+          "id": "diagrama_flexion",
+          "propId": "diagrama_flexion_viga_flechas",
+          "posicion": {
+            "x": 60,
+            "y": 70
+          },
+          "escala": 1.48,
+          "capaZ": 26,
+          "pasos": [
+            {
+              "inicioProgreso": 0.0,
+              "finProgreso": 1.0,
+              "posicion": {
+                "x": 60,
+                "y": 70
+              },
+              "escala": 1.48,
+              "rotacion": 0,
+              "curva": "suave"
+            }
+          ]
+        }
+      ],
+      "duracionSegundos": 11.602,
+      "palabras": [
+        {
+          "palabra": "Tu",
+          "inicioMs": 0,
+          "finMs": 160
+        },
+        {
+          "palabra": "tabla",
+          "inicioMs": 160,
+          "finMs": 500
+        },
+        {
+          "palabra": "no",
+          "inicioMs": 500,
+          "finMs": 640
+        },
+        {
+          "palabra": "falló",
+          "inicioMs": 640,
+          "finMs": 940
+        },
+        {
+          "palabra": "por",
+          "inicioMs": 940,
+          "finMs": 1080
+        },
+        {
+          "palabra": "mala",
+          "inicioMs": 1080,
+          "finMs": 1360
+        },
+        {
+          "palabra": "sino",
+          "inicioMs": 1500,
+          "finMs": 1620
+        },
+        {
+          "palabra": "por",
+          "inicioMs": 1620,
+          "finMs": 1820
+        },
+        {
+          "palabra": "física",
+          "inicioMs": 1820,
+          "finMs": 2100
+        },
+        {
+          "palabra": "pura",
+          "inicioMs": 2100,
+          "finMs": 2600
+        },
+        {
+          "palabra": "Cuando",
+          "inicioMs": 2860,
+          "finMs": 3080
+        },
+        {
+          "palabra": "pisas",
+          "inicioMs": 3080,
+          "finMs": 3420
+        },
+        {
+          "palabra": "en",
+          "inicioMs": 3420,
+          "finMs": 3600
+        },
+        {
+          "palabra": "medio",
+          "inicioMs": 3600,
+          "finMs": 3860
+        },
+        {
+          "palabra": "sufre",
+          "inicioMs": 3860,
+          "finMs": 4260
+        },
+        {
+          "palabra": "flexión",
+          "inicioMs": 4260,
+          "finMs": 4680
+        },
+        {
+          "palabra": "mecánica",
+          "inicioMs": 4680,
+          "finMs": 5280
+        },
+        {
+          "palabra": "la",
+          "inicioMs": 5620,
+          "finMs": 5700
+        },
+        {
+          "palabra": "cara",
+          "inicioMs": 5700,
+          "finMs": 5900
+        },
+        {
+          "palabra": "de",
+          "inicioMs": 5900,
+          "finMs": 6080
+        },
+        {
+          "palabra": "arriba",
+          "inicioMs": 6080,
+          "finMs": 6320
+        },
+        {
+          "palabra": "se",
+          "inicioMs": 6320,
+          "finMs": 6540
+        },
+        {
+          "palabra": "aplasta",
+          "inicioMs": 6540,
+          "finMs": 6880
+        },
+        {
+          "palabra": "por",
+          "inicioMs": 6880,
+          "finMs": 7120
+        },
+        {
+          "palabra": "compresión",
+          "inicioMs": 7120,
+          "finMs": 7820
+        },
+        {
+          "palabra": "mientras",
+          "inicioMs": 8080,
+          "finMs": 8260
+        },
+        {
+          "palabra": "la",
+          "inicioMs": 8260,
+          "finMs": 8420
+        },
+        {
+          "palabra": "cara",
+          "inicioMs": 8420,
+          "finMs": 8580
+        },
+        {
+          "palabra": "de",
+          "inicioMs": 8580,
+          "finMs": 8740
+        },
+        {
+          "palabra": "abajo",
+          "inicioMs": 8740,
+          "finMs": 8960
+        },
+        {
+          "palabra": "se",
+          "inicioMs": 8960,
+          "finMs": 9160
+        },
+        {
+          "palabra": "desgarra",
+          "inicioMs": 9160,
+          "finMs": 9560
+        },
+        {
+          "palabra": "por",
+          "inicioMs": 9560,
+          "finMs": 9720
+        },
+        {
+          "palabra": "tensión",
+          "inicioMs": 9720,
+          "finMs": 10100
+        },
+        {
+          "palabra": "hasta",
+          "inicioMs": 10100,
+          "finMs": 10320
+        },
+        {
+          "palabra": "quebrarse",
+          "inicioMs": 10320,
+          "finMs": 10880
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "texto": "La madera delgada es pésima soportando dobleces, pero las cuerdas de cáñamo son invencibles estirándose. El gran truco de la ingeniería estructural es transformar todo el peso en tracción axial pura.",
+      "icono": "Link",
+      "colorIcono": "#10B981",
+      "tituloVisual": "TRACCIÓN PURA",
+      "composicionVisual": "escenario_ilustrado",
+      "escenario": "campo_prueba_cuerda_canamo",
+      "transicion": "zoom_in",
+      "efectosCamara": [
+        "drift",
+        "punch"
+      ],
+      "sfx": "sfx/sfx_cuerda_latigazo_twang_tension.wav",
+      "volumenSfx": 0.25,
+      "palabrasClave": [
+        "pésima soportando dobleces",
+        "invencibles estirándose",
+        "tracción axial pura"
+      ],
+      "focoCamara": [
+        {
+          "x": -90,
+          "y": 40,
+          "escala": 1.2,
+          "inicioProgreso": 0.0,
+          "finProgreso": 0.35,
+          "curva": "suave"
+        },
+        {
+          "x": 30,
+          "y": 130,
+          "escala": 1.42,
+          "inicioProgreso": 0.35,
+          "finProgreso": 0.78,
+          "curva": "suave"
+        },
+        {
+          "x": 0,
+          "y": 60,
+          "escala": 1.16,
+          "inicioProgreso": 0.78,
+          "finProgreso": 1.0,
+          "curva": "suave"
+        }
+      ],
+      "personajes": [
+        {
+          "id": "narrador",
+          "nombre": "Explorador",
+          "posicion": {
+            "x": -270,
+            "y": -90
+          },
+          "escala": 0.95,
+          "orientacion": "derecha",
+          "habla": true,
+          "capaZ": 22,
+          "acciones": [
+            {
+              "tipo": "personalizada",
+              "pasos": [
+                {
+                  "inicioProgreso": 0.0,
+                  "finProgreso": 0.4,
+                  "poseId": "pulling",
+                  "expresion": "analytical",
+                  "posicion": {
+                    "x": -270,
+                    "y": -90
+                  },
+                  "curva": "suave",
+                  "procedural": "esfuerzo"
+                },
+                {
+                  "inicioProgreso": 0.4,
+                  "finProgreso": 1.0,
+                  "poseId": "thumbs_up_approval",
+                  "expresion": "smile_wide",
+                  "posicion": {
+                    "x": -220,
+                    "y": -90
+                  },
+                  "curva": "rebote",
+                  "procedural": "estatico"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "objetos": [
+        {
+          "id": "cuerda_prueba",
+          "propId": "cuerda_canamo_prueba_tension",
+          "posicion": {
+            "x": 60,
+            "y": 65
+          },
+          "escala": 1.45,
+          "capaZ": 26,
+          "pasos": [
+            {
+              "inicioProgreso": 0.0,
+              "finProgreso": 1.0,
+              "posicion": {
+                "x": 60,
+                "y": 65
+              },
+              "escala": 1.45,
+              "rotacion": 0,
+              "curva": "suave"
+            }
+          ]
+        }
+      ],
+      "duracionSegundos": 10.834,
+      "palabras": [
+        {
+          "palabra": "La",
+          "inicioMs": 0,
+          "finMs": 200
+        },
+        {
+          "palabra": "madera",
+          "inicioMs": 200,
+          "finMs": 540
+        },
+        {
+          "palabra": "delgada",
+          "inicioMs": 540,
+          "finMs": 1000
+        },
+        {
+          "palabra": "es",
+          "inicioMs": 1000,
+          "finMs": 1240
+        },
+        {
+          "palabra": "pésima",
+          "inicioMs": 1240,
+          "finMs": 1660
+        },
+        {
+          "palabra": "soportando",
+          "inicioMs": 1660,
+          "finMs": 2260
+        },
+        {
+          "palabra": "dobleces",
+          "inicioMs": 2260,
+          "finMs": 2800
+        },
+        {
+          "palabra": "pero",
+          "inicioMs": 3060,
+          "finMs": 3180
+        },
+        {
+          "palabra": "las",
+          "inicioMs": 3180,
+          "finMs": 3340
+        },
+        {
+          "palabra": "cuerdas",
+          "inicioMs": 3340,
+          "finMs": 3740
+        },
+        {
+          "palabra": "de",
+          "inicioMs": 3740,
+          "finMs": 3860
+        },
+        {
+          "palabra": "cáñamo",
+          "inicioMs": 3860,
+          "finMs": 4260
+        },
+        {
+          "palabra": "son",
+          "inicioMs": 4260,
+          "finMs": 4460
+        },
+        {
+          "palabra": "invencibles",
+          "inicioMs": 4460,
+          "finMs": 5000
+        },
+        {
+          "palabra": "estirándose",
+          "inicioMs": 5000,
+          "finMs": 5720
+        },
+        {
+          "palabra": "El",
+          "inicioMs": 5940,
+          "finMs": 6080
+        },
+        {
+          "palabra": "gran",
+          "inicioMs": 6080,
+          "finMs": 6260
+        },
+        {
+          "palabra": "truco",
+          "inicioMs": 6260,
+          "finMs": 6580
+        },
+        {
+          "palabra": "de",
+          "inicioMs": 6580,
+          "finMs": 6660
+        },
+        {
+          "palabra": "la",
+          "inicioMs": 6660,
+          "finMs": 6720
+        },
+        {
+          "palabra": "ingeniería",
+          "inicioMs": 6720,
+          "finMs": 7140
+        },
+        {
+          "palabra": "estructural",
+          "inicioMs": 7140,
+          "finMs": 7620
+        },
+        {
+          "palabra": "es",
+          "inicioMs": 7620,
+          "finMs": 7920
+        },
+        {
+          "palabra": "transformar",
+          "inicioMs": 7920,
+          "finMs": 8440
+        },
+        {
+          "palabra": "todo",
+          "inicioMs": 8440,
+          "finMs": 8680
+        },
+        {
+          "palabra": "el",
+          "inicioMs": 8680,
+          "finMs": 8820
+        },
+        {
+          "palabra": "peso",
+          "inicioMs": 8820,
+          "finMs": 9020
+        },
+        {
+          "palabra": "en",
+          "inicioMs": 9020,
+          "finMs": 9160
+        },
+        {
+          "palabra": "tracción",
+          "inicioMs": 9160,
+          "finMs": 9460
+        },
+        {
+          "palabra": "axial",
+          "inicioMs": 9460,
+          "finMs": 9760
+        },
+        {
+          "palabra": "pura",
+          "inicioMs": 9760,
+          "finMs": 10180
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "texto": "Primero plantamos postes verticales macizos en ambas orillas: son las torres principales. Su única misión es soportar compresión vertical pura, descargando miles de kilos directo a la tierra firme.",
+      "icono": "Hammer",
+      "colorIcono": "#F97316",
+      "tituloVisual": "TORRES DE APOYO",
+      "composicionVisual": "escenario_ilustrado",
+      "escenario": "arroyo_clavado_torres_compresion",
+      "transicion": "whip_left",
+      "efectosCamara": [
+        "drift",
+        "shake",
+        "punch"
+      ],
+      "sfx": "sfx/sfx_golpes_mazo_postes_madera.wav",
+      "volumenSfx": 0.26,
+      "palabrasClave": [
+        "postes verticales macizos",
+        "compresión vertical pura",
+        "tierra firme"
+      ],
+      "focoCamara": [
+        {
+          "x": -110,
+          "y": -30,
+          "escala": 1.18,
+          "inicioProgreso": 0.0,
+          "finProgreso": 0.32,
+          "curva": "suave"
+        },
+        {
+          "x": 30,
+          "y": 120,
+          "escala": 1.4,
+          "inicioProgreso": 0.32,
+          "finProgreso": 0.76,
+          "curva": "impacto"
+        },
+        {
+          "x": 0,
+          "y": 60,
+          "escala": 1.15,
+          "inicioProgreso": 0.76,
+          "finProgreso": 1.0,
+          "curva": "suave"
+        }
+      ],
+      "personajes": [
+        {
+          "id": "narrador",
+          "nombre": "Explorador",
+          "posicion": {
+            "x": -270,
+            "y": -90
+          },
+          "escala": 0.95,
+          "orientacion": "derecha",
+          "habla": true,
+          "capaZ": 22,
+          "acciones": [
+            {
+              "tipo": "personalizada",
+              "pasos": [
+                {
+                  "inicioProgreso": 0.0,
+                  "finProgreso": 0.45,
+                  "poseId": "pushing",
+                  "expresion": "analytical",
+                  "posicion": {
+                    "x": -270,
+                    "y": -90
+                  },
+                  "curva": "suave",
+                  "procedural": "manipular"
+                },
+                {
+                  "inicioProgreso": 0.45,
+                  "finProgreso": 1.0,
+                  "poseId": "standing_confident",
+                  "expresion": "smile_soft",
+                  "posicion": {
+                    "x": -230,
+                    "y": -90
+                  },
+                  "curva": "rebote",
+                  "procedural": "estatico"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "objetos": [
+        {
+          "id": "torre_mazo",
+          "propId": "torre_madera_mazo_compresion",
+          "posicion": {
+            "x": 60,
+            "y": 65
+          },
+          "escala": 1.48,
+          "capaZ": 26,
+          "pasos": [
+            {
+              "inicioProgreso": 0.0,
+              "finProgreso": 1.0,
+              "posicion": {
+                "x": 60,
+                "y": 65
+              },
+              "escala": 1.48,
+              "rotacion": 0,
+              "curva": "suave"
+            }
+          ]
+        }
+      ],
+      "duracionSegundos": 11.482,
+      "palabras": [
+        {
+          "palabra": "Primero",
+          "inicioMs": 0,
+          "finMs": 400
+        },
+        {
+          "palabra": "plantamos",
+          "inicioMs": 400,
+          "finMs": 900
+        },
+        {
+          "palabra": "postes",
+          "inicioMs": 900,
+          "finMs": 1360
+        },
+        {
+          "palabra": "verticales",
+          "inicioMs": 1360,
+          "finMs": 2040
+        },
+        {
+          "palabra": "macizos",
+          "inicioMs": 2040,
+          "finMs": 2520
+        },
+        {
+          "palabra": "en",
+          "inicioMs": 2520,
+          "finMs": 2700
+        },
+        {
+          "palabra": "ambas",
+          "inicioMs": 2700,
+          "finMs": 2920
+        },
+        {
+          "palabra": "orillas",
+          "inicioMs": 2920,
+          "finMs": 3320
+        },
+        {
+          "palabra": "son",
+          "inicioMs": 3600,
+          "finMs": 3700
+        },
+        {
+          "palabra": "las",
+          "inicioMs": 3700,
+          "finMs": 3880
+        },
+        {
+          "palabra": "torres",
+          "inicioMs": 3880,
+          "finMs": 4180
+        },
+        {
+          "palabra": "principales",
+          "inicioMs": 4180,
+          "finMs": 4920
+        },
+        {
+          "palabra": "Su",
+          "inicioMs": 5280,
+          "finMs": 5500
+        },
+        {
+          "palabra": "única",
+          "inicioMs": 5500,
+          "finMs": 5740
+        },
+        {
+          "palabra": "misión",
+          "inicioMs": 5740,
+          "finMs": 6160
+        },
+        {
+          "palabra": "es",
+          "inicioMs": 6160,
+          "finMs": 6300
+        },
+        {
+          "palabra": "soportar",
+          "inicioMs": 6300,
+          "finMs": 6760
+        },
+        {
+          "palabra": "compresión",
+          "inicioMs": 6760,
+          "finMs": 7240
+        },
+        {
+          "palabra": "vertical",
+          "inicioMs": 7240,
+          "finMs": 7640
+        },
+        {
+          "palabra": "pura",
+          "inicioMs": 7640,
+          "finMs": 8140
+        },
+        {
+          "palabra": "descargando",
+          "inicioMs": 8520,
+          "finMs": 8920
+        },
+        {
+          "palabra": "miles",
+          "inicioMs": 8920,
+          "finMs": 9220
+        },
+        {
+          "palabra": "de",
+          "inicioMs": 9220,
+          "finMs": 9440
+        },
+        {
+          "palabra": "kilos",
+          "inicioMs": 9440,
+          "finMs": 9680
+        },
+        {
+          "palabra": "directo",
+          "inicioMs": 9680,
+          "finMs": 10160
+        },
+        {
+          "palabra": "a",
+          "inicioMs": 10160,
+          "finMs": 10200
+        },
+        {
+          "palabra": "la",
+          "inicioMs": 10200,
+          "finMs": 10300
+        },
+        {
+          "palabra": "tierra",
+          "inicioMs": 10300,
+          "finMs": 10480
+        },
+        {
+          "palabra": "firme",
+          "inicioMs": 10480,
+          "finMs": 10940
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "texto": "Lanzamos el cable principal sobre las torres formando una curva catenaria perfecta. Y para que no colapsen hacia el río, anclamos los extremos a enormes rocas enterradas bajo tierra a cuarenta y cinco grados.",
+      "icono": "Anchor",
+      "colorIcono": "#38BDF8",
+      "tituloVisual": "LA CATENARIA",
+      "composicionVisual": "plano_general",
+      "escenario": "arroyo_catenaria_anclajes_muertos",
+      "transicion": "whip_right",
+      "efectosCamara": [
+        "drift",
+        "shake"
+      ],
+      "sfx": "sfx/sfx_lazo_catenaria_anclaje_roca.wav",
+      "volumenSfx": 0.25,
+      "palabrasClave": [
+        "curva catenaria perfecta",
+        "no colapsen hacia el río",
+        "enormes rocas enterradas"
+      ],
+      "focoCamara": [
+        {
+          "x": -130,
+          "y": -40,
+          "escala": 1.15,
+          "inicioProgreso": 0.0,
+          "finProgreso": 0.35,
+          "curva": "suave"
+        },
+        {
+          "x": 20,
+          "y": 110,
+          "escala": 1.38,
+          "inicioProgreso": 0.35,
+          "finProgreso": 0.78,
+          "curva": "suave"
+        },
+        {
+          "x": 60,
+          "y": 40,
+          "escala": 1.14,
+          "inicioProgreso": 0.78,
+          "finProgreso": 1.0,
+          "curva": "suave"
+        }
+      ],
+      "personajes": [
+        {
+          "id": "narrador",
+          "nombre": "Explorador",
+          "posicion": {
+            "x": -270,
+            "y": -90
+          },
+          "escala": 0.95,
+          "orientacion": "derecha",
+          "habla": true,
+          "capaZ": 22,
+          "acciones": [
+            {
+              "tipo": "personalizada",
+              "pasos": [
+                {
+                  "inicioProgreso": 0.0,
+                  "finProgreso": 0.4,
+                  "poseId": "eureka_idea",
+                  "expresion": "eureka",
+                  "posicion": {
+                    "x": -270,
+                    "y": -90
+                  },
+                  "curva": "rebote",
+                  "procedural": "estatico"
+                },
+                {
+                  "inicioProgreso": 0.4,
+                  "finProgreso": 1.0,
+                  "poseId": "pulling",
+                  "expresion": "analytical",
+                  "posicion": {
+                    "x": -230,
+                    "y": -90
+                  },
+                  "curva": "suave",
+                  "procedural": "esfuerzo"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "objetos": [
+        {
+          "id": "catenaria_anclaje",
+          "propId": "catenaria_anclaje_rocas_tierra",
+          "posicion": {
+            "x": 60,
+            "y": 65
+          },
+          "escala": 1.45,
+          "capaZ": 26,
+          "pasos": [
+            {
+              "inicioProgreso": 0.0,
+              "finProgreso": 1.0,
+              "posicion": {
+                "x": 60,
+                "y": 65
+              },
+              "escala": 1.45,
+              "rotacion": 0,
+              "curva": "suave"
+            }
+          ]
+        }
+      ],
+      "duracionSegundos": 11.122,
+      "palabras": [
+        {
+          "palabra": "Lanzamos",
+          "inicioMs": 0,
+          "finMs": 500
+        },
+        {
+          "palabra": "el",
+          "inicioMs": 500,
+          "finMs": 720
+        },
+        {
+          "palabra": "cable",
+          "inicioMs": 720,
+          "finMs": 940
+        },
+        {
+          "palabra": "principal",
+          "inicioMs": 940,
+          "finMs": 1300
+        },
+        {
+          "palabra": "sobre",
+          "inicioMs": 1300,
+          "finMs": 1740
+        },
+        {
+          "palabra": "las",
+          "inicioMs": 1740,
+          "finMs": 1960
+        },
+        {
+          "palabra": "torres",
+          "inicioMs": 1960,
+          "finMs": 2340
+        },
+        {
+          "palabra": "formando",
+          "inicioMs": 2340,
+          "finMs": 2800
+        },
+        {
+          "palabra": "una",
+          "inicioMs": 2800,
+          "finMs": 2980
+        },
+        {
+          "palabra": "curva",
+          "inicioMs": 2980,
+          "finMs": 3340
+        },
+        {
+          "palabra": "catenaria",
+          "inicioMs": 3340,
+          "finMs": 3800
+        },
+        {
+          "palabra": "perfecta",
+          "inicioMs": 3800,
+          "finMs": 4500
+        },
+        {
+          "palabra": "Y",
+          "inicioMs": 4760,
+          "finMs": 4820
+        },
+        {
+          "palabra": "para",
+          "inicioMs": 4820,
+          "finMs": 4980
+        },
+        {
+          "palabra": "que",
+          "inicioMs": 4980,
+          "finMs": 5120
+        },
+        {
+          "palabra": "no",
+          "inicioMs": 5120,
+          "finMs": 5240
+        },
+        {
+          "palabra": "colapsen",
+          "inicioMs": 5240,
+          "finMs": 5680
+        },
+        {
+          "palabra": "hacia",
+          "inicioMs": 5680,
+          "finMs": 5760
+        },
+        {
+          "palabra": "el",
+          "inicioMs": 5760,
+          "finMs": 5960
+        },
+        {
+          "palabra": "río",
+          "inicioMs": 5960,
+          "finMs": 6220
+        },
+        {
+          "palabra": "anclamos",
+          "inicioMs": 6420,
+          "finMs": 6780
+        },
+        {
+          "palabra": "los",
+          "inicioMs": 6780,
+          "finMs": 6940
+        },
+        {
+          "palabra": "extremos",
+          "inicioMs": 6940,
+          "finMs": 7440
+        },
+        {
+          "palabra": "a",
+          "inicioMs": 7440,
+          "finMs": 7560
+        },
+        {
+          "palabra": "enormes",
+          "inicioMs": 7560,
+          "finMs": 7940
+        },
+        {
+          "palabra": "rocas",
+          "inicioMs": 7940,
+          "finMs": 8200
+        },
+        {
+          "palabra": "enterradas",
+          "inicioMs": 8200,
+          "finMs": 8660
+        },
+        {
+          "palabra": "bajo",
+          "inicioMs": 8660,
+          "finMs": 8960
+        },
+        {
+          "palabra": "tierra",
+          "inicioMs": 8960,
+          "finMs": 9300
+        },
+        {
+          "palabra": "a",
+          "inicioMs": 9300,
+          "finMs": 9460
+        },
+        {
+          "palabra": "cuarenta",
+          "inicioMs": 9460,
+          "finMs": 9760
+        },
+        {
+          "palabra": "y",
+          "inicioMs": 9760,
+          "finMs": 9840
+        },
+        {
+          "palabra": "cinco",
+          "inicioMs": 9840,
+          "finMs": 10020
+        },
+        {
+          "palabra": "grados",
+          "inicioMs": 10020,
+          "finMs": 10520
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "texto": "Ahora colgamos la tabla del suelo usando tirantes verticales llamados péndolas. El piso ya no se dobla sobre el vacío: vuela suspendido del cable gigante repartiendo la carga hacia las torres.",
+      "icono": "Layers",
+      "colorIcono": "#06B6D4",
+      "tituloVisual": "PÉNDOLAS EN EL AIRE",
+      "composicionVisual": "escenario_ilustrado",
+      "escenario": "arroyo_pendolas_calzada_suspendida",
+      "transicion": "zoom_in",
+      "efectosCamara": [
+        "drift",
+        "punch"
+      ],
+      "sfx": "sfx/sfx_nudo_tirantes_firmeza_rigida.wav",
+      "volumenSfx": 0.25,
+      "palabrasClave": [
+        "tirantes verticales",
+        "vuela suspendido",
+        "repartiendo la carga"
+      ],
+      "focoCamara": [
+        {
+          "x": -100,
+          "y": -30,
+          "escala": 1.18,
+          "inicioProgreso": 0.0,
+          "finProgreso": 0.35,
+          "curva": "suave"
+        },
+        {
+          "x": 40,
+          "y": 130,
+          "escala": 1.42,
+          "inicioProgreso": 0.35,
+          "finProgreso": 0.78,
+          "curva": "suave"
+        },
+        {
+          "x": 20,
+          "y": 50,
+          "escala": 1.16,
+          "inicioProgreso": 0.78,
+          "finProgreso": 1.0,
+          "curva": "suave"
+        }
+      ],
+      "personajes": [
+        {
+          "id": "narrador",
+          "nombre": "Explorador",
+          "posicion": {
+            "x": -270,
+            "y": -90
+          },
+          "escala": 0.95,
+          "orientacion": "derecha",
+          "habla": true,
+          "capaZ": 22,
+          "acciones": [
+            {
+              "tipo": "personalizada",
+              "pasos": [
+                {
+                  "inicioProgreso": 0.0,
+                  "finProgreso": 0.45,
+                  "poseId": "explaining_both_hands",
+                  "expresion": "talking_enthusiastic",
+                  "posicion": {
+                    "x": -270,
+                    "y": -90
+                  },
+                  "curva": "suave",
+                  "procedural": "estatico"
+                },
+                {
+                  "inicioProgreso": 0.45,
+                  "finProgreso": 1.0,
+                  "poseId": "thumbs_up_approval",
+                  "expresion": "smile_wide",
+                  "posicion": {
+                    "x": -230,
+                    "y": -90
+                  },
+                  "curva": "rebote",
+                  "procedural": "estatico"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "objetos": [
+        {
+          "id": "pendolas_suspension",
+          "propId": "pendolas_suspension_tabla_vuelo",
+          "posicion": {
+            "x": 60,
+            "y": 70
+          },
+          "escala": 1.45,
+          "capaZ": 26,
+          "pasos": [
+            {
+              "inicioProgreso": 0.0,
+              "finProgreso": 1.0,
+              "posicion": {
+                "x": 60,
+                "y": 70
+              },
+              "escala": 1.45,
+              "rotacion": 0,
+              "curva": "suave"
+            }
+          ]
+        }
+      ],
+      "duracionSegundos": 9.97,
+      "palabras": [
+        {
+          "palabra": "Ahora",
+          "inicioMs": 0,
+          "finMs": 360
+        },
+        {
+          "palabra": "colgamos",
+          "inicioMs": 360,
+          "finMs": 740
+        },
+        {
+          "palabra": "la",
+          "inicioMs": 740,
+          "finMs": 900
+        },
+        {
+          "palabra": "tabla",
+          "inicioMs": 900,
+          "finMs": 1160
+        },
+        {
+          "palabra": "del",
+          "inicioMs": 1160,
+          "finMs": 1260
+        },
+        {
+          "palabra": "suelo",
+          "inicioMs": 1260,
+          "finMs": 1580
+        },
+        {
+          "palabra": "usando",
+          "inicioMs": 1580,
+          "finMs": 1900
+        },
+        {
+          "palabra": "tirantes",
+          "inicioMs": 1900,
+          "finMs": 2360
+        },
+        {
+          "palabra": "verticales",
+          "inicioMs": 2360,
+          "finMs": 2920
+        },
+        {
+          "palabra": "llamados",
+          "inicioMs": 2920,
+          "finMs": 3240
+        },
+        {
+          "palabra": "péndolas",
+          "inicioMs": 3240,
+          "finMs": 3720
+        },
+        {
+          "palabra": "El",
+          "inicioMs": 3960,
+          "finMs": 4040
+        },
+        {
+          "palabra": "piso",
+          "inicioMs": 4040,
+          "finMs": 4320
+        },
+        {
+          "palabra": "ya",
+          "inicioMs": 4320,
+          "finMs": 4460
+        },
+        {
+          "palabra": "no",
+          "inicioMs": 4460,
+          "finMs": 4600
+        },
+        {
+          "palabra": "se",
+          "inicioMs": 4600,
+          "finMs": 4740
+        },
+        {
+          "palabra": "dobla",
+          "inicioMs": 4740,
+          "finMs": 4980
+        },
+        {
+          "palabra": "sobre",
+          "inicioMs": 4980,
+          "finMs": 5200
+        },
+        {
+          "palabra": "el",
+          "inicioMs": 5200,
+          "finMs": 5320
+        },
+        {
+          "palabra": "vacío",
+          "inicioMs": 5320,
+          "finMs": 5740
+        },
+        {
+          "palabra": "vuela",
+          "inicioMs": 6040,
+          "finMs": 6200
+        },
+        {
+          "palabra": "suspendido",
+          "inicioMs": 6200,
+          "finMs": 6740
+        },
+        {
+          "palabra": "del",
+          "inicioMs": 6740,
+          "finMs": 6840
+        },
+        {
+          "palabra": "cable",
+          "inicioMs": 6840,
+          "finMs": 7140
+        },
+        {
+          "palabra": "gigante",
+          "inicioMs": 7140,
+          "finMs": 7660
+        },
+        {
+          "palabra": "repartiendo",
+          "inicioMs": 7660,
+          "finMs": 8180
+        },
+        {
+          "palabra": "la",
+          "inicioMs": 8180,
+          "finMs": 8320
+        },
+        {
+          "palabra": "carga",
+          "inicioMs": 8320,
+          "finMs": 8540
+        },
+        {
+          "palabra": "hacia",
+          "inicioMs": 8540,
+          "finMs": 8780
+        },
+        {
+          "palabra": "las",
+          "inicioMs": 8780,
+          "finMs": 8940
+        },
+        {
+          "palabra": "torres",
+          "inicioMs": 8940,
+          "finMs": 9320
+        }
+      ]
+    },
+    {
+      "id": 7,
+      "texto": "Saltas con una carretilla llena de rocas... ¡y el puente ni se inmuta! Acabas de inventar el puente colgante: la cuerda estira, la torre empuja... y tú cruzas seco a devorar tu sándwich.",
+      "icono": "Award",
+      "colorIcono": "#FACC15",
+      "tituloVisual": "EL PUENTE COLGANTE",
+      "composicionVisual": "plano_general",
+      "escenario": "arroyo_puente_colgante_victoria",
+      "transicion": "flash",
+      "efectosCamara": [
+        "drift",
+        "punch"
+      ],
+      "sfx": "sfx/sfx_carretilla_rebote_mordida_sandwich.wav",
+      "volumenSfx": 0.26,
+      "palabrasClave": [
+        "carretilla llena de rocas",
+        "cuerda estira",
+        "cruzas seco"
+      ],
+      "focoCamara": [
+        {
+          "x": -120,
+          "y": 60,
+          "escala": 1.34,
+          "inicioProgreso": 0.0,
+          "finProgreso": 0.38,
+          "curva": "impacto"
+        },
+        {
+          "x": 0,
+          "y": 0,
+          "escala": 1.1,
+          "inicioProgreso": 0.38,
+          "finProgreso": 0.78,
+          "curva": "suave"
+        },
+        {
+          "x": 0,
+          "y": 0,
+          "escala": 1.02,
+          "inicioProgreso": 0.78,
+          "finProgreso": 1.0,
+          "curva": "suave"
+        }
+      ],
+      "personajes": [
+        {
+          "id": "narrador",
+          "nombre": "Explorador",
+          "posicion": {
+            "x": 160,
+            "y": -90
+          },
+          "escala": 0.98,
+          "orientacion": "izquierda",
+          "habla": true,
+          "capaZ": 22,
+          "acciones": [
+            {
+              "tipo": "personalizada",
+              "pasos": [
+                {
+                  "inicioProgreso": 0.0,
+                  "finProgreso": 0.4,
+                  "poseId": "jumping_joy",
+                  "expresion": "laugh",
+                  "posicion": {
+                    "x": 160,
+                    "y": -90
+                  },
+                  "curva": "rebote",
+                  "procedural": "estatico"
+                },
+                {
+                  "inicioProgreso": 0.4,
+                  "finProgreso": 1.0,
+                  "poseId": "arms_crossed",
+                  "expresion": "proud",
+                  "posicion": {
+                    "x": 140,
+                    "y": -90
+                  },
+                  "curva": "suave",
+                  "procedural": "estatico"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "objetos": [
+        {
+          "id": "carretilla_premio",
+          "propId": "carretilla_rocas_sandwich_victoria",
+          "posicion": {
+            "x": -100,
+            "y": 65
+          },
+          "escala": 1.5,
+          "capaZ": 26,
+          "pasos": [
+            {
+              "inicioProgreso": 0.0,
+              "finProgreso": 1.0,
+              "posicion": {
+                "x": -100,
+                "y": 65
+              },
+              "escala": 1.5,
+              "rotacion": 0,
+              "curva": "suave"
+            }
+          ]
+        }
+      ],
+      "duracionSegundos": 10.234,
+      "palabras": [
+        {
+          "palabra": "Saltas",
+          "inicioMs": 0,
+          "finMs": 540
+        },
+        {
+          "palabra": "con",
+          "inicioMs": 540,
+          "finMs": 660
+        },
+        {
+          "palabra": "una",
+          "inicioMs": 660,
+          "finMs": 820
+        },
+        {
+          "palabra": "carretilla",
+          "inicioMs": 820,
+          "finMs": 1300
+        },
+        {
+          "palabra": "llena",
+          "inicioMs": 1300,
+          "finMs": 1600
+        },
+        {
+          "palabra": "de",
+          "inicioMs": 1600,
+          "finMs": 1740
+        },
+        {
+          "palabra": "rocas",
+          "inicioMs": 1740,
+          "finMs": 2400
+        },
+        {
+          "palabra": "y",
+          "inicioMs": 2400,
+          "finMs": 2460
+        },
+        {
+          "palabra": "el",
+          "inicioMs": 2460,
+          "finMs": 2560
+        },
+        {
+          "palabra": "puente",
+          "inicioMs": 2560,
+          "finMs": 2860
+        },
+        {
+          "palabra": "ni",
+          "inicioMs": 2860,
+          "finMs": 3020
+        },
+        {
+          "palabra": "se",
+          "inicioMs": 3020,
+          "finMs": 3120
+        },
+        {
+          "palabra": "inmuta",
+          "inicioMs": 3120,
+          "finMs": 3480
+        },
+        {
+          "palabra": "Acabas",
+          "inicioMs": 3780,
+          "finMs": 4120
+        },
+        {
+          "palabra": "de",
+          "inicioMs": 4120,
+          "finMs": 4220
+        },
+        {
+          "palabra": "inventar",
+          "inicioMs": 4220,
+          "finMs": 4580
+        },
+        {
+          "palabra": "el",
+          "inicioMs": 4580,
+          "finMs": 4680
+        },
+        {
+          "palabra": "puente",
+          "inicioMs": 4680,
+          "finMs": 4960
+        },
+        {
+          "palabra": "colgante",
+          "inicioMs": 4960,
+          "finMs": 5480
+        },
+        {
+          "palabra": "la",
+          "inicioMs": 5760,
+          "finMs": 5820
+        },
+        {
+          "palabra": "cuerda",
+          "inicioMs": 5820,
+          "finMs": 6160
+        },
+        {
+          "palabra": "estira",
+          "inicioMs": 6160,
+          "finMs": 6560
+        },
+        {
+          "palabra": "la",
+          "inicioMs": 6820,
+          "finMs": 6900
+        },
+        {
+          "palabra": "torre",
+          "inicioMs": 6900,
+          "finMs": 7180
+        },
+        {
+          "palabra": "empuja",
+          "inicioMs": 7180,
+          "finMs": 7820
+        },
+        {
+          "palabra": "y",
+          "inicioMs": 7820,
+          "finMs": 7900
+        },
+        {
+          "palabra": "tú",
+          "inicioMs": 7900,
+          "finMs": 8000
+        },
+        {
+          "palabra": "cruzas",
+          "inicioMs": 8000,
+          "finMs": 8320
+        },
+        {
+          "palabra": "seco",
+          "inicioMs": 8320,
+          "finMs": 8660
+        },
+        {
+          "palabra": "a",
+          "inicioMs": 8660,
+          "finMs": 8700
+        },
+        {
+          "palabra": "devorar",
+          "inicioMs": 8700,
+          "finMs": 8980
+        },
+        {
+          "palabra": "tu",
+          "inicioMs": 8980,
+          "finMs": 9180
+        },
+        {
+          "palabra": "sándwich",
+          "inicioMs": 9180,
+          "finMs": 9580
+        }
+      ]
+    }
+  ]
+}

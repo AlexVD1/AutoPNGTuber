@@ -1,0 +1,2068 @@
+{
+  "meta": {
+    "id": "sangre_nunca_azul_optica_piel",
+    "slug": "sangre_nunca_azul_optica_piel",
+    "temaResumen": "¿Por qué tus venas se ven azules si la sangre NUNCA es azul? (Óptica subcutánea, dispersión Rayleigh de luz roja vs azul, absorción de hemoglobina y el gran mito escolar)",
+    "duracionObjetivo": [
+      62,
+      75
+    ],
+    "titulo": "¿Por qué tus venas se ven azules si la sangre NUNCA es azul?",
+    "titulo_corto": "La sangre nunca es azul",
+    "gancho": "¿Alguna vez te dijeron en la escuela que la sangre desoxigenada que viaja por tus venas es de color azul? ¡Pues te mintieron toda la vida!",
+    "genero": "Fisiología, Óptica de la Luz y Mitos Científicos",
+    "playlist": "Biología, Sentidos Humanos y Curiosidades Científicas",
+    "fuentes": [
+      "Applied Optics (Kienle et al. 1996, Why do veins appear blue? A new look at an old question)",
+      "American Journal of Physics (Optical properties of human skin and blood absorption)",
+      "Science Focus (Why is blood never blue in human veins)"
+    ]
+  },
+  "escenas": [
+    {
+      "id": 1,
+      "texto": "¿Alguna vez te dijeron en la escuela que la sangre desoxigenada que viaja por tus venas es de color azul? ¡Pues te mintieron toda la vida!",
+      "icono": "HelpCircle",
+      "colorIcono": "#38BDF8",
+      "tituloVisual": "EL MITO ESCOLAR",
+      "composicionVisual": "escenario_ilustrado",
+      "escenario": "aula_clases_anatomia_pizarron",
+      "layout": "narrativo",
+      "transicion": "corte",
+      "efectosCamara": [
+        "punch",
+        "drift"
+      ],
+      "sfx": "sfx/sfx_falso_mito_pizarra_error.wav",
+      "volumenSfx": 0.25,
+      "palabrasClave": [
+        "sangre desoxigenada",
+        "es de color azul",
+        "te mintieron toda la vida"
+      ],
+      "personajes": [
+        {
+          "id": "stickman_pregunta",
+          "nombre": "Stickman",
+          "posicion": {
+            "x": -160,
+            "y": 90
+          },
+          "escala": 1.05,
+          "orientacion": "derecha",
+          "habla": true,
+          "capaZ": 20,
+          "acciones": [
+            {
+              "tipo": "personalizada",
+              "pasos": [
+                {
+                  "inicioProgreso": 0,
+                  "finProgreso": 0.5,
+                  "poseId": "asking_question",
+                  "expresion": "confused",
+                  "posicion": {
+                    "x": -160,
+                    "y": 90
+                  },
+                  "curva": "suave",
+                  "procedural": "estatico",
+                  "hastaPalabra": "Pues"
+                },
+                {
+                  "inicioProgreso": 0.5,
+                  "finProgreso": 1.0,
+                  "poseId": "explaining_both_hands",
+                  "expresion": "surprised",
+                  "posicion": {
+                    "x": -130,
+                    "y": 90
+                  },
+                  "curva": "suave",
+                  "procedural": "estatico",
+                  "desdePalabra": "Pues"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "objetos": [
+        {
+          "id": "brazo_venas",
+          "propId": "brazo_venas_azules_diagrama",
+          "posicion": {
+            "x": 155,
+            "y": -30
+          },
+          "escala": 1.3,
+          "animacion": "pulso",
+          "capaZ": 28,
+          "pasos": [
+            {
+              "inicioProgreso": 0.0,
+              "finProgreso": 0.5,
+              "hastaPalabra": "Pues",
+              "posicion": {
+                "x": 155,
+                "y": -30
+              },
+              "escala": 1.3,
+              "estado": "mito_azul",
+              "curva": "suave"
+            },
+            {
+              "inicioProgreso": 0.5,
+              "finProgreso": 1.0,
+              "desdePalabra": "Pues",
+              "posicion": {
+                "x": 135,
+                "y": -20
+              },
+              "escala": 1.4,
+              "estado": "cuestionado",
+              "curva": "rebote"
+            }
+          ]
+        }
+      ],
+      "duracionSegundos": 7.138,
+      "palabras": [
+        {
+          "palabra": "Alguna",
+          "inicioMs": 0,
+          "finMs": 380
+        },
+        {
+          "palabra": "vez",
+          "inicioMs": 380,
+          "finMs": 480
+        },
+        {
+          "palabra": "te",
+          "inicioMs": 480,
+          "finMs": 640
+        },
+        {
+          "palabra": "dijeron",
+          "inicioMs": 640,
+          "finMs": 960
+        },
+        {
+          "palabra": "en",
+          "inicioMs": 960,
+          "finMs": 1080
+        },
+        {
+          "palabra": "la",
+          "inicioMs": 1080,
+          "finMs": 1140
+        },
+        {
+          "palabra": "escuela",
+          "inicioMs": 1140,
+          "finMs": 1360
+        },
+        {
+          "palabra": "que",
+          "inicioMs": 1360,
+          "finMs": 1560
+        },
+        {
+          "palabra": "la",
+          "inicioMs": 1560,
+          "finMs": 1660
+        },
+        {
+          "palabra": "sangre",
+          "inicioMs": 1660,
+          "finMs": 1900
+        },
+        {
+          "palabra": "desoxigenada",
+          "inicioMs": 1900,
+          "finMs": 2660
+        },
+        {
+          "palabra": "que",
+          "inicioMs": 2660,
+          "finMs": 2800
+        },
+        {
+          "palabra": "viaja",
+          "inicioMs": 2800,
+          "finMs": 3080
+        },
+        {
+          "palabra": "por",
+          "inicioMs": 3080,
+          "finMs": 3260
+        },
+        {
+          "palabra": "tus",
+          "inicioMs": 3260,
+          "finMs": 3460
+        },
+        {
+          "palabra": "venas",
+          "inicioMs": 3460,
+          "finMs": 3780
+        },
+        {
+          "palabra": "es",
+          "inicioMs": 3780,
+          "finMs": 3960
+        },
+        {
+          "palabra": "de",
+          "inicioMs": 3960,
+          "finMs": 3980
+        },
+        {
+          "palabra": "color",
+          "inicioMs": 3980,
+          "finMs": 4220
+        },
+        {
+          "palabra": "azul",
+          "inicioMs": 4220,
+          "finMs": 4600
+        },
+        {
+          "palabra": "Pues",
+          "inicioMs": 4800,
+          "finMs": 4900
+        },
+        {
+          "palabra": "te",
+          "inicioMs": 4900,
+          "finMs": 5040
+        },
+        {
+          "palabra": "mintieron",
+          "inicioMs": 5040,
+          "finMs": 5460
+        },
+        {
+          "palabra": "toda",
+          "inicioMs": 5460,
+          "finMs": 5720
+        },
+        {
+          "palabra": "la",
+          "inicioMs": 5720,
+          "finMs": 5940
+        },
+        {
+          "palabra": "vida",
+          "inicioMs": 5940,
+          "finMs": 6180
+        }
+      ],
+      "focoCamara": [
+        {
+          "inicioProgreso": 0.0,
+          "finProgreso": 0.36,
+          "x": -90,
+          "y": 20,
+          "escala": 1.12,
+          "curva": "suave"
+        },
+        {
+          "inicioProgreso": 0.36,
+          "finProgreso": 0.72,
+          "desdePalabra": "Pues",
+          "x": 95,
+          "y": -20,
+          "escala": 1.22,
+          "curva": "suave"
+        },
+        {
+          "inicioProgreso": 0.72,
+          "finProgreso": 1.0,
+          "x": 0,
+          "y": 0,
+          "escala": 1.0,
+          "curva": "suave"
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "texto": "Si un enfermero te saca sangre con una jeringa, jamás sale líquido azul. La sangre arterial rica en oxígeno es de un rojo brillante, y la sangre venosa es de un rojo vino muy oscuro.",
+      "icono": "Droplet",
+      "colorIcono": "#DC2626",
+      "tituloVisual": "SIEMPRE ES ROJA",
+      "composicionVisual": "plano_general",
+      "escenario": "laboratorio_hematologia_tubos",
+      "layout": "narrativo",
+      "transicion": "whip_right",
+      "efectosCamara": [
+        "punch",
+        "drift"
+      ],
+      "sfx": "sfx/sfx_jeringa_sangre_oxigeno.wav",
+      "volumenSfx": 0.24,
+      "palabrasClave": [
+        "jamás sale líquido azul",
+        "rojo brillante",
+        "rojo vino muy oscuro"
+      ],
+      "personajes": [
+        {
+          "id": "stickman_laboratorio",
+          "nombre": "Stickman",
+          "posicion": {
+            "x": -170,
+            "y": 90
+          },
+          "escala": 1.05,
+          "orientacion": "derecha",
+          "habla": true,
+          "capaZ": 20,
+          "acciones": [
+            {
+              "tipo": "personalizada",
+              "pasos": [
+                {
+                  "inicioProgreso": 0,
+                  "finProgreso": 0.5,
+                  "poseId": "showing_both_hands",
+                  "expresion": "talking_enthusiastic",
+                  "posicion": {
+                    "x": -170,
+                    "y": 90
+                  },
+                  "curva": "suave",
+                  "procedural": "estatico",
+                  "hastaPalabra": "La"
+                },
+                {
+                  "inicioProgreso": 0.5,
+                  "finProgreso": 1.0,
+                  "poseId": "presenting_object",
+                  "expresion": "analytical",
+                  "posicion": {
+                    "x": -140,
+                    "y": 90
+                  },
+                  "curva": "suave",
+                  "procedural": "estatico",
+                  "desdePalabra": "La"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "objetos": [
+        {
+          "id": "tubos_sangre",
+          "propId": "tubos_ensayo_sangre_rojo_oscuro",
+          "posicion": {
+            "x": 160,
+            "y": -30
+          },
+          "escala": 1.35,
+          "animacion": "pulso",
+          "capaZ": 28,
+          "pasos": [
+            {
+              "inicioProgreso": 0.0,
+              "finProgreso": 0.5,
+              "hastaPalabra": "La",
+              "posicion": {
+                "x": 160,
+                "y": -30
+              },
+              "escala": 1.35,
+              "estado": "extraccion",
+              "curva": "suave"
+            },
+            {
+              "inicioProgreso": 0.5,
+              "finProgreso": 1.0,
+              "desdePalabra": "La",
+              "posicion": {
+                "x": 140,
+                "y": -20
+              },
+              "escala": 1.46,
+              "estado": "comparacion_rojos",
+              "curva": "rebote"
+            }
+          ]
+        }
+      ],
+      "duracionSegundos": 10.018,
+      "palabras": [
+        {
+          "palabra": "Si",
+          "inicioMs": 0,
+          "finMs": 200
+        },
+        {
+          "palabra": "un",
+          "inicioMs": 200,
+          "finMs": 320
+        },
+        {
+          "palabra": "enfermero",
+          "inicioMs": 320,
+          "finMs": 820
+        },
+        {
+          "palabra": "te",
+          "inicioMs": 820,
+          "finMs": 960
+        },
+        {
+          "palabra": "saca",
+          "inicioMs": 960,
+          "finMs": 1220
+        },
+        {
+          "palabra": "sangre",
+          "inicioMs": 1220,
+          "finMs": 1500
+        },
+        {
+          "palabra": "con",
+          "inicioMs": 1500,
+          "finMs": 1700
+        },
+        {
+          "palabra": "una",
+          "inicioMs": 1700,
+          "finMs": 1840
+        },
+        {
+          "palabra": "jeringa",
+          "inicioMs": 1840,
+          "finMs": 2320
+        },
+        {
+          "palabra": "jamás",
+          "inicioMs": 2580,
+          "finMs": 2820
+        },
+        {
+          "palabra": "sale",
+          "inicioMs": 2820,
+          "finMs": 3060
+        },
+        {
+          "palabra": "líquido",
+          "inicioMs": 3060,
+          "finMs": 3420
+        },
+        {
+          "palabra": "azul",
+          "inicioMs": 3420,
+          "finMs": 3680
+        },
+        {
+          "palabra": "La",
+          "inicioMs": 4000,
+          "finMs": 4080
+        },
+        {
+          "palabra": "sangre",
+          "inicioMs": 4080,
+          "finMs": 4340
+        },
+        {
+          "palabra": "arterial",
+          "inicioMs": 4340,
+          "finMs": 4820
+        },
+        {
+          "palabra": "rica",
+          "inicioMs": 4820,
+          "finMs": 5180
+        },
+        {
+          "palabra": "en",
+          "inicioMs": 5180,
+          "finMs": 5260
+        },
+        {
+          "palabra": "oxígeno",
+          "inicioMs": 5260,
+          "finMs": 5740
+        },
+        {
+          "palabra": "es",
+          "inicioMs": 5740,
+          "finMs": 5840
+        },
+        {
+          "palabra": "de",
+          "inicioMs": 5840,
+          "finMs": 5900
+        },
+        {
+          "palabra": "un",
+          "inicioMs": 5900,
+          "finMs": 6000
+        },
+        {
+          "palabra": "rojo",
+          "inicioMs": 6000,
+          "finMs": 6240
+        },
+        {
+          "palabra": "brillante",
+          "inicioMs": 6240,
+          "finMs": 6840
+        },
+        {
+          "palabra": "y",
+          "inicioMs": 7160,
+          "finMs": 7220
+        },
+        {
+          "palabra": "la",
+          "inicioMs": 7220,
+          "finMs": 7320
+        },
+        {
+          "palabra": "sangre",
+          "inicioMs": 7320,
+          "finMs": 7560
+        },
+        {
+          "palabra": "venosa",
+          "inicioMs": 7560,
+          "finMs": 8020
+        },
+        {
+          "palabra": "es",
+          "inicioMs": 8020,
+          "finMs": 8140
+        },
+        {
+          "palabra": "de",
+          "inicioMs": 8140,
+          "finMs": 8220
+        },
+        {
+          "palabra": "un",
+          "inicioMs": 8220,
+          "finMs": 8320
+        },
+        {
+          "palabra": "rojo",
+          "inicioMs": 8320,
+          "finMs": 8600
+        },
+        {
+          "palabra": "vino",
+          "inicioMs": 8600,
+          "finMs": 8780
+        },
+        {
+          "palabra": "muy",
+          "inicioMs": 8780,
+          "finMs": 9020
+        },
+        {
+          "palabra": "oscuro",
+          "inicioMs": 9020,
+          "finMs": 9440
+        }
+      ],
+      "focoCamara": [
+        {
+          "inicioProgreso": 0.0,
+          "finProgreso": 0.36,
+          "x": -90,
+          "y": 20,
+          "escala": 1.12,
+          "curva": "suave"
+        },
+        {
+          "inicioProgreso": 0.36,
+          "finProgreso": 0.72,
+          "desdePalabra": "La",
+          "x": 95,
+          "y": -20,
+          "escala": 1.22,
+          "curva": "suave"
+        },
+        {
+          "inicioProgreso": 0.72,
+          "finProgreso": 1.0,
+          "x": 0,
+          "y": 0,
+          "escala": 1.0,
+          "curva": "suave"
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "texto": "El motivo es químico: los glóbulos rojos están llenos de hemoglobina, una proteína cargada de átomos de hierro que al contacto con el oxígeno o el dióxido de carbono siempre refleja luz roja.",
+      "icono": "Atom",
+      "colorIcono": "#EA580C",
+      "tituloVisual": "HIERRO Y HEMOGLOBINA",
+      "composicionVisual": "escenario_ilustrado",
+      "escenario": "laboratorio_hematologia_tubos",
+      "layout": "narrativo",
+      "transicion": "zoom_in",
+      "efectosCamara": [
+        "punch",
+        "drift"
+      ],
+      "sfx": "sfx/sfx_venas_optica_revelacion.wav",
+      "volumenSfx": 0.25,
+      "palabrasClave": [
+        "llenos de hemoglobina",
+        "átomos de hierro",
+        "siempre refleja luz roja"
+      ],
+      "personajes": [
+        {
+          "id": "stickman_quimico",
+          "nombre": "Stickman",
+          "posicion": {
+            "x": -160,
+            "y": 90
+          },
+          "escala": 1.05,
+          "orientacion": "derecha",
+          "habla": true,
+          "capaZ": 20,
+          "acciones": [
+            {
+              "tipo": "personalizada",
+              "pasos": [
+                {
+                  "inicioProgreso": 0,
+                  "finProgreso": 0.5,
+                  "poseId": "explaining_pointing_up",
+                  "expresion": "talking_enthusiastic",
+                  "posicion": {
+                    "x": -160,
+                    "y": 90
+                  },
+                  "curva": "suave",
+                  "procedural": "estatico",
+                  "hastaPalabra": "cargada"
+                },
+                {
+                  "inicioProgreso": 0.5,
+                  "finProgreso": 1.0,
+                  "poseId": "eureka_idea",
+                  "expresion": "eureka",
+                  "posicion": {
+                    "x": -130,
+                    "y": 90
+                  },
+                  "curva": "suave",
+                  "procedural": "estatico",
+                  "desdePalabra": "cargada"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "objetos": [
+        {
+          "id": "molecula_hemo",
+          "propId": "molecula_hemoglobina_hierro",
+          "posicion": {
+            "x": 160,
+            "y": -30
+          },
+          "escala": 1.35,
+          "animacion": "pulso",
+          "capaZ": 28,
+          "pasos": [
+            {
+              "inicioProgreso": 0.0,
+              "finProgreso": 0.5,
+              "hastaPalabra": "cargada",
+              "posicion": {
+                "x": 160,
+                "y": -30
+              },
+              "escala": 1.35,
+              "estado": "estructura",
+              "curva": "suave"
+            },
+            {
+              "inicioProgreso": 0.5,
+              "finProgreso": 1.0,
+              "desdePalabra": "cargada",
+              "posicion": {
+                "x": 135,
+                "y": -20
+              },
+              "escala": 1.46,
+              "estado": "reflejo_rojo",
+              "curva": "rebote"
+            }
+          ]
+        }
+      ],
+      "duracionSegundos": 9.85,
+      "palabras": [
+        {
+          "palabra": "El",
+          "inicioMs": 0,
+          "finMs": 180
+        },
+        {
+          "palabra": "motivo",
+          "inicioMs": 180,
+          "finMs": 400
+        },
+        {
+          "palabra": "es",
+          "inicioMs": 400,
+          "finMs": 600
+        },
+        {
+          "palabra": "químico",
+          "inicioMs": 600,
+          "finMs": 1020
+        },
+        {
+          "palabra": "los",
+          "inicioMs": 1200,
+          "finMs": 1340
+        },
+        {
+          "palabra": "glóbulos",
+          "inicioMs": 1340,
+          "finMs": 1740
+        },
+        {
+          "palabra": "rojos",
+          "inicioMs": 1740,
+          "finMs": 1980
+        },
+        {
+          "palabra": "están",
+          "inicioMs": 1980,
+          "finMs": 2260
+        },
+        {
+          "palabra": "llenos",
+          "inicioMs": 2260,
+          "finMs": 2540
+        },
+        {
+          "palabra": "de",
+          "inicioMs": 2540,
+          "finMs": 2660
+        },
+        {
+          "palabra": "hemoglobina",
+          "inicioMs": 2660,
+          "finMs": 3240
+        },
+        {
+          "palabra": "una",
+          "inicioMs": 3480,
+          "finMs": 3620
+        },
+        {
+          "palabra": "proteína",
+          "inicioMs": 3620,
+          "finMs": 4020
+        },
+        {
+          "palabra": "cargada",
+          "inicioMs": 4020,
+          "finMs": 4460
+        },
+        {
+          "palabra": "de",
+          "inicioMs": 4460,
+          "finMs": 4600
+        },
+        {
+          "palabra": "átomos",
+          "inicioMs": 4600,
+          "finMs": 4860
+        },
+        {
+          "palabra": "de",
+          "inicioMs": 4860,
+          "finMs": 5060
+        },
+        {
+          "palabra": "hierro",
+          "inicioMs": 5060,
+          "finMs": 5400
+        },
+        {
+          "palabra": "que",
+          "inicioMs": 5400,
+          "finMs": 5500
+        },
+        {
+          "palabra": "al",
+          "inicioMs": 5500,
+          "finMs": 5600
+        },
+        {
+          "palabra": "contacto",
+          "inicioMs": 5600,
+          "finMs": 6060
+        },
+        {
+          "palabra": "con",
+          "inicioMs": 6060,
+          "finMs": 6180
+        },
+        {
+          "palabra": "el",
+          "inicioMs": 6180,
+          "finMs": 6300
+        },
+        {
+          "palabra": "oxígeno",
+          "inicioMs": 6300,
+          "finMs": 6880
+        },
+        {
+          "palabra": "o",
+          "inicioMs": 6880,
+          "finMs": 6960
+        },
+        {
+          "palabra": "el",
+          "inicioMs": 6960,
+          "finMs": 7060
+        },
+        {
+          "palabra": "dióxido",
+          "inicioMs": 7060,
+          "finMs": 7380
+        },
+        {
+          "palabra": "de",
+          "inicioMs": 7380,
+          "finMs": 7520
+        },
+        {
+          "palabra": "carbono",
+          "inicioMs": 7520,
+          "finMs": 7840
+        },
+        {
+          "palabra": "siempre",
+          "inicioMs": 7840,
+          "finMs": 8220
+        },
+        {
+          "palabra": "refleja",
+          "inicioMs": 8220,
+          "finMs": 8660
+        },
+        {
+          "palabra": "luz",
+          "inicioMs": 8660,
+          "finMs": 8820
+        },
+        {
+          "palabra": "roja",
+          "inicioMs": 8820,
+          "finMs": 9160
+        }
+      ],
+      "focoCamara": [
+        {
+          "inicioProgreso": 0.0,
+          "finProgreso": 0.36,
+          "x": -90,
+          "y": 20,
+          "escala": 1.12,
+          "curva": "suave"
+        },
+        {
+          "inicioProgreso": 0.36,
+          "finProgreso": 0.72,
+          "desdePalabra": "cargada",
+          "x": 95,
+          "y": -20,
+          "escala": 1.22,
+          "curva": "suave"
+        },
+        {
+          "inicioProgreso": 0.72,
+          "finProgreso": 1.0,
+          "x": 0,
+          "y": 0,
+          "escala": 1.0,
+          "curva": "suave"
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "texto": "Entonces, ¿por qué demonios tus venas en la muñeca se ven tan claramente azules? La respuesta no está en tu biología, ¡sino en la física de la luz y las capas de tu piel!",
+      "icono": "Eye",
+      "colorIcono": "#38BDF8",
+      "tituloVisual": "¿POR QUÉ SE VEN AZULES?",
+      "composicionVisual": "plano_general",
+      "escenario": "macro_optica_piel_subcutanea",
+      "layout": "narrativo",
+      "transicion": "flash",
+      "efectosCamara": [
+        "punch",
+        "drift"
+      ],
+      "sfx": "sfx/sfx_capas_piel_profundidad.wav",
+      "volumenSfx": 0.24,
+      "palabrasClave": [
+        "venas en la muñeca",
+        "física de la luz",
+        "capas de tu piel"
+      ],
+      "personajes": [
+        {
+          "id": "stickman_pregunta2",
+          "nombre": "Stickman",
+          "posicion": {
+            "x": -160,
+            "y": 90
+          },
+          "escala": 1.05,
+          "orientacion": "derecha",
+          "habla": true,
+          "capaZ": 20,
+          "acciones": [
+            {
+              "tipo": "personalizada",
+              "pasos": [
+                {
+                  "inicioProgreso": 0,
+                  "finProgreso": 0.5,
+                  "poseId": "investigating_magnifier",
+                  "expresion": "analytical",
+                  "posicion": {
+                    "x": -160,
+                    "y": 90
+                  },
+                  "curva": "suave",
+                  "procedural": "estatico",
+                  "hastaPalabra": "La"
+                },
+                {
+                  "inicioProgreso": 0.5,
+                  "finProgreso": 1.0,
+                  "poseId": "pointing_right",
+                  "expresion": "surprised",
+                  "posicion": {
+                    "x": -140,
+                    "y": 90
+                  },
+                  "curva": "suave",
+                  "procedural": "estatico",
+                  "desdePalabra": "La"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "objetos": [
+        {
+          "id": "prisma_optica",
+          "propId": "prisma_optico_piel_fotones",
+          "posicion": {
+            "x": 160,
+            "y": -30
+          },
+          "escala": 1.3,
+          "animacion": "flotar",
+          "capaZ": 28,
+          "pasos": [
+            {
+              "inicioProgreso": 0.0,
+              "finProgreso": 0.5,
+              "hastaPalabra": "La",
+              "posicion": {
+                "x": 160,
+                "y": -30
+              },
+              "escala": 1.3,
+              "estado": "penetracion_roja",
+              "curva": "suave"
+            },
+            {
+              "inicioProgreso": 0.5,
+              "finProgreso": 1.0,
+              "desdePalabra": "La",
+              "posicion": {
+                "x": 135,
+                "y": -20
+              },
+              "escala": 1.4,
+              "estado": "rebote_azul",
+              "curva": "rebote"
+            }
+          ]
+        }
+      ],
+      "duracionSegundos": 9.298,
+      "palabras": [
+        {
+          "palabra": "Entonces",
+          "inicioMs": 0,
+          "finMs": 600
+        },
+        {
+          "palabra": "por",
+          "inicioMs": 940,
+          "finMs": 1060
+        },
+        {
+          "palabra": "qué",
+          "inicioMs": 1060,
+          "finMs": 1260
+        },
+        {
+          "palabra": "demonios",
+          "inicioMs": 1260,
+          "finMs": 1740
+        },
+        {
+          "palabra": "tus",
+          "inicioMs": 1740,
+          "finMs": 1920
+        },
+        {
+          "palabra": "venas",
+          "inicioMs": 1920,
+          "finMs": 2220
+        },
+        {
+          "palabra": "en",
+          "inicioMs": 2220,
+          "finMs": 2320
+        },
+        {
+          "palabra": "la",
+          "inicioMs": 2320,
+          "finMs": 2400
+        },
+        {
+          "palabra": "muñeca",
+          "inicioMs": 2400,
+          "finMs": 2780
+        },
+        {
+          "palabra": "se",
+          "inicioMs": 2780,
+          "finMs": 2960
+        },
+        {
+          "palabra": "ven",
+          "inicioMs": 2960,
+          "finMs": 3100
+        },
+        {
+          "palabra": "tan",
+          "inicioMs": 3100,
+          "finMs": 3260
+        },
+        {
+          "palabra": "claramente",
+          "inicioMs": 3260,
+          "finMs": 3780
+        },
+        {
+          "palabra": "azules",
+          "inicioMs": 3780,
+          "finMs": 4200
+        },
+        {
+          "palabra": "La",
+          "inicioMs": 4440,
+          "finMs": 4500
+        },
+        {
+          "palabra": "respuesta",
+          "inicioMs": 4500,
+          "finMs": 4860
+        },
+        {
+          "palabra": "no",
+          "inicioMs": 4860,
+          "finMs": 5140
+        },
+        {
+          "palabra": "está",
+          "inicioMs": 5140,
+          "finMs": 5340
+        },
+        {
+          "palabra": "en",
+          "inicioMs": 5340,
+          "finMs": 5460
+        },
+        {
+          "palabra": "tu",
+          "inicioMs": 5460,
+          "finMs": 5540
+        },
+        {
+          "palabra": "biología",
+          "inicioMs": 5540,
+          "finMs": 6020
+        },
+        {
+          "palabra": "sino",
+          "inicioMs": 6180,
+          "finMs": 6320
+        },
+        {
+          "palabra": "en",
+          "inicioMs": 6320,
+          "finMs": 6420
+        },
+        {
+          "palabra": "la",
+          "inicioMs": 6420,
+          "finMs": 6520
+        },
+        {
+          "palabra": "física",
+          "inicioMs": 6520,
+          "finMs": 6780
+        },
+        {
+          "palabra": "de",
+          "inicioMs": 6780,
+          "finMs": 7020
+        },
+        {
+          "palabra": "la",
+          "inicioMs": 7020,
+          "finMs": 7120
+        },
+        {
+          "palabra": "luz",
+          "inicioMs": 7120,
+          "finMs": 7320
+        },
+        {
+          "palabra": "y",
+          "inicioMs": 7320,
+          "finMs": 7560
+        },
+        {
+          "palabra": "las",
+          "inicioMs": 7560,
+          "finMs": 7740
+        },
+        {
+          "palabra": "capas",
+          "inicioMs": 7740,
+          "finMs": 8080
+        },
+        {
+          "palabra": "de",
+          "inicioMs": 8080,
+          "finMs": 8180
+        },
+        {
+          "palabra": "tu",
+          "inicioMs": 8180,
+          "finMs": 8320
+        },
+        {
+          "palabra": "piel",
+          "inicioMs": 8320,
+          "finMs": 8480
+        }
+      ],
+      "focoCamara": [
+        {
+          "inicioProgreso": 0.0,
+          "finProgreso": 0.36,
+          "x": -90,
+          "y": 20,
+          "escala": 1.12,
+          "curva": "suave"
+        },
+        {
+          "inicioProgreso": 0.36,
+          "finProgreso": 0.72,
+          "desdePalabra": "La",
+          "x": 95,
+          "y": -20,
+          "escala": 1.22,
+          "curva": "suave"
+        },
+        {
+          "inicioProgreso": 0.72,
+          "finProgreso": 1.0,
+          "x": 0,
+          "y": 0,
+          "escala": 1.0,
+          "curva": "suave"
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "texto": "La luz blanca del sol contiene todos los colores. La luz roja tiene ondas largas que penetran profundo en la carne y son absorbidas por la sangre, mientras que la luz azul choca y rebota hacia afuera.",
+      "icono": "Sun",
+      "colorIcono": "#FBBF24",
+      "tituloVisual": "DISPERSIÓN DE LUZ",
+      "composicionVisual": "primer_plano",
+      "escenario": "espectro_fotones_dispersion_rayleigh",
+      "layout": "narrativo",
+      "transicion": "zoom_in",
+      "efectosCamara": [
+        "punch",
+        "drift"
+      ],
+      "sfx": "sfx/sfx_haz_luz_dispersion_optica.wav",
+      "volumenSfx": 0.26,
+      "palabrasClave": [
+        "luz roja penetra profundo",
+        "absorbidas por la sangre",
+        "luz azul choca y rebota"
+      ],
+      "personajes": [
+        {
+          "id": "stickman_optica",
+          "nombre": "Stickman",
+          "posicion": {
+            "x": -160,
+            "y": 90
+          },
+          "escala": 1.05,
+          "orientacion": "derecha",
+          "habla": true,
+          "capaZ": 20,
+          "acciones": [
+            {
+              "tipo": "personalizada",
+              "pasos": [
+                {
+                  "inicioProgreso": 0,
+                  "finProgreso": 0.5,
+                  "poseId": "explaining_both_hands",
+                  "expresion": "talking_enthusiastic",
+                  "posicion": {
+                    "x": -160,
+                    "y": 90
+                  },
+                  "curva": "suave",
+                  "procedural": "estatico",
+                  "hastaPalabra": "mientras"
+                },
+                {
+                  "inicioProgreso": 0.5,
+                  "finProgreso": 1.0,
+                  "poseId": "eureka_idea",
+                  "expresion": "eureka",
+                  "posicion": {
+                    "x": -130,
+                    "y": 90
+                  },
+                  "curva": "suave",
+                  "procedural": "estatico",
+                  "desdePalabra": "mientras"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "objetos": [],
+      "duracionSegundos": 10.45,
+      "palabras": [
+        {
+          "palabra": "La",
+          "inicioMs": 0,
+          "finMs": 160
+        },
+        {
+          "palabra": "luz",
+          "inicioMs": 160,
+          "finMs": 320
+        },
+        {
+          "palabra": "blanca",
+          "inicioMs": 320,
+          "finMs": 660
+        },
+        {
+          "palabra": "del",
+          "inicioMs": 660,
+          "finMs": 780
+        },
+        {
+          "palabra": "sol",
+          "inicioMs": 780,
+          "finMs": 1020
+        },
+        {
+          "palabra": "contiene",
+          "inicioMs": 1020,
+          "finMs": 1420
+        },
+        {
+          "palabra": "todos",
+          "inicioMs": 1420,
+          "finMs": 1640
+        },
+        {
+          "palabra": "los",
+          "inicioMs": 1640,
+          "finMs": 1800
+        },
+        {
+          "palabra": "colores",
+          "inicioMs": 1800,
+          "finMs": 2200
+        },
+        {
+          "palabra": "La",
+          "inicioMs": 2480,
+          "finMs": 2560
+        },
+        {
+          "palabra": "luz",
+          "inicioMs": 2560,
+          "finMs": 2740
+        },
+        {
+          "palabra": "roja",
+          "inicioMs": 2740,
+          "finMs": 3080
+        },
+        {
+          "palabra": "tiene",
+          "inicioMs": 3080,
+          "finMs": 3320
+        },
+        {
+          "palabra": "ondas",
+          "inicioMs": 3320,
+          "finMs": 3640
+        },
+        {
+          "palabra": "largas",
+          "inicioMs": 3640,
+          "finMs": 4080
+        },
+        {
+          "palabra": "que",
+          "inicioMs": 4080,
+          "finMs": 4240
+        },
+        {
+          "palabra": "penetran",
+          "inicioMs": 4240,
+          "finMs": 4620
+        },
+        {
+          "palabra": "profundo",
+          "inicioMs": 4620,
+          "finMs": 5040
+        },
+        {
+          "palabra": "en",
+          "inicioMs": 5040,
+          "finMs": 5140
+        },
+        {
+          "palabra": "la",
+          "inicioMs": 5140,
+          "finMs": 5220
+        },
+        {
+          "palabra": "carne",
+          "inicioMs": 5220,
+          "finMs": 5520
+        },
+        {
+          "palabra": "y",
+          "inicioMs": 5520,
+          "finMs": 5740
+        },
+        {
+          "palabra": "son",
+          "inicioMs": 5740,
+          "finMs": 5880
+        },
+        {
+          "palabra": "absorbidas",
+          "inicioMs": 5880,
+          "finMs": 6420
+        },
+        {
+          "palabra": "por",
+          "inicioMs": 6420,
+          "finMs": 6600
+        },
+        {
+          "palabra": "la",
+          "inicioMs": 6600,
+          "finMs": 6720
+        },
+        {
+          "palabra": "sangre",
+          "inicioMs": 6720,
+          "finMs": 7060
+        },
+        {
+          "palabra": "mientras",
+          "inicioMs": 7300,
+          "finMs": 7500
+        },
+        {
+          "palabra": "que",
+          "inicioMs": 7500,
+          "finMs": 7700
+        },
+        {
+          "palabra": "la",
+          "inicioMs": 7700,
+          "finMs": 7800
+        },
+        {
+          "palabra": "luz",
+          "inicioMs": 7800,
+          "finMs": 7960
+        },
+        {
+          "palabra": "azul",
+          "inicioMs": 7960,
+          "finMs": 8220
+        },
+        {
+          "palabra": "choca",
+          "inicioMs": 8220,
+          "finMs": 8680
+        },
+        {
+          "palabra": "y",
+          "inicioMs": 8680,
+          "finMs": 8760
+        },
+        {
+          "palabra": "rebota",
+          "inicioMs": 8760,
+          "finMs": 9080
+        },
+        {
+          "palabra": "hacia",
+          "inicioMs": 9080,
+          "finMs": 9380
+        },
+        {
+          "palabra": "afuera",
+          "inicioMs": 9380,
+          "finMs": 9760
+        }
+      ],
+      "focoCamara": [
+        {
+          "inicioProgreso": 0.0,
+          "finProgreso": 0.36,
+          "x": -90,
+          "y": 20,
+          "escala": 1.12,
+          "curva": "suave"
+        },
+        {
+          "inicioProgreso": 0.36,
+          "finProgreso": 0.72,
+          "desdePalabra": "mientras",
+          "x": 95,
+          "y": -20,
+          "escala": 1.22,
+          "curva": "suave"
+        },
+        {
+          "inicioProgreso": 0.72,
+          "finProgreso": 1.0,
+          "x": 0,
+          "y": 0,
+          "escala": 1.0,
+          "curva": "suave"
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "texto": "Como la vena oscura absorbe los tonos rojos, el tejido que está justo encima refleja proporcionalmente más fotones azules hacia tus ojos. ¡Tus venas parecen azules solo por un truco óptico de contraste!",
+      "icono": "ShieldAlert",
+      "colorIcono": "#EF4444",
+      "tituloVisual": "ILUSIÓN ÓPTICA",
+      "composicionVisual": "primer_plano",
+      "escenario": "estudio_desmentir_mito_escolar",
+      "layout": "narrativo",
+      "transicion": "whip_left",
+      "efectosCamara": [
+        "punch",
+        "shake"
+      ],
+      "sfx": "sfx/sfx_falso_mito_pizarra_error.wav",
+      "volumenSfx": 0.25,
+      "palabrasClave": [
+        "absorbe los tonos rojos",
+        "más fotones azules",
+        "truco óptico de contraste"
+      ],
+      "personajes": [
+        {
+          "id": "stickman_desmentido",
+          "nombre": "Stickman",
+          "posicion": {
+            "x": -160,
+            "y": 90
+          },
+          "escala": 1.05,
+          "orientacion": "derecha",
+          "habla": true,
+          "capaZ": 20,
+          "acciones": [
+            {
+              "tipo": "personalizada",
+              "pasos": [
+                {
+                  "inicioProgreso": 0,
+                  "finProgreso": 0.5,
+                  "poseId": "shaking_no",
+                  "expresion": "skeptical",
+                  "posicion": {
+                    "x": -160,
+                    "y": 90
+                  },
+                  "curva": "suave",
+                  "procedural": "estatico",
+                  "hastaPalabra": "Tus"
+                },
+                {
+                  "inicioProgreso": 0.5,
+                  "finProgreso": 1.0,
+                  "poseId": "pointing_at_viewer",
+                  "expresion": "smile_wide",
+                  "posicion": {
+                    "x": -130,
+                    "y": 90
+                  },
+                  "curva": "suave",
+                  "procedural": "estatico",
+                  "desdePalabra": "Tus"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "objetos": [],
+      "duracionSegundos": 11.338,
+      "palabras": [
+        {
+          "palabra": "Como",
+          "inicioMs": 0,
+          "finMs": 220
+        },
+        {
+          "palabra": "la",
+          "inicioMs": 220,
+          "finMs": 380
+        },
+        {
+          "palabra": "vena",
+          "inicioMs": 380,
+          "finMs": 540
+        },
+        {
+          "palabra": "oscura",
+          "inicioMs": 540,
+          "finMs": 940
+        },
+        {
+          "palabra": "absorbe",
+          "inicioMs": 940,
+          "finMs": 1380
+        },
+        {
+          "palabra": "los",
+          "inicioMs": 1380,
+          "finMs": 1500
+        },
+        {
+          "palabra": "tonos",
+          "inicioMs": 1500,
+          "finMs": 1800
+        },
+        {
+          "palabra": "rojos",
+          "inicioMs": 1800,
+          "finMs": 2200
+        },
+        {
+          "palabra": "el",
+          "inicioMs": 2400,
+          "finMs": 2860
+        },
+        {
+          "palabra": "tejido",
+          "inicioMs": 2860,
+          "finMs": 3200
+        },
+        {
+          "palabra": "que",
+          "inicioMs": 3200,
+          "finMs": 3340
+        },
+        {
+          "palabra": "está",
+          "inicioMs": 3340,
+          "finMs": 3500
+        },
+        {
+          "palabra": "justo",
+          "inicioMs": 3500,
+          "finMs": 3780
+        },
+        {
+          "palabra": "encima",
+          "inicioMs": 3780,
+          "finMs": 4160
+        },
+        {
+          "palabra": "refleja",
+          "inicioMs": 4160,
+          "finMs": 4660
+        },
+        {
+          "palabra": "proporcionalmente",
+          "inicioMs": 4660,
+          "finMs": 5480
+        },
+        {
+          "palabra": "más",
+          "inicioMs": 5480,
+          "finMs": 5740
+        },
+        {
+          "palabra": "fotones",
+          "inicioMs": 5740,
+          "finMs": 6140
+        },
+        {
+          "palabra": "azules",
+          "inicioMs": 6140,
+          "finMs": 6500
+        },
+        {
+          "palabra": "hacia",
+          "inicioMs": 6500,
+          "finMs": 6760
+        },
+        {
+          "palabra": "tus",
+          "inicioMs": 6760,
+          "finMs": 6960
+        },
+        {
+          "palabra": "ojos",
+          "inicioMs": 6960,
+          "finMs": 7240
+        },
+        {
+          "palabra": "Tus",
+          "inicioMs": 7540,
+          "finMs": 7680
+        },
+        {
+          "palabra": "venas",
+          "inicioMs": 7680,
+          "finMs": 8020
+        },
+        {
+          "palabra": "parecen",
+          "inicioMs": 8020,
+          "finMs": 8380
+        },
+        {
+          "palabra": "azules",
+          "inicioMs": 8380,
+          "finMs": 8760
+        },
+        {
+          "palabra": "solo",
+          "inicioMs": 8760,
+          "finMs": 9000
+        },
+        {
+          "palabra": "por",
+          "inicioMs": 9000,
+          "finMs": 9200
+        },
+        {
+          "palabra": "un",
+          "inicioMs": 9200,
+          "finMs": 9360
+        },
+        {
+          "palabra": "truco",
+          "inicioMs": 9360,
+          "finMs": 9640
+        },
+        {
+          "palabra": "óptico",
+          "inicioMs": 9640,
+          "finMs": 10120
+        },
+        {
+          "palabra": "de",
+          "inicioMs": 10120,
+          "finMs": 10200
+        },
+        {
+          "palabra": "contraste",
+          "inicioMs": 10200,
+          "finMs": 10860
+        }
+      ],
+      "focoCamara": [
+        {
+          "inicioProgreso": 0.0,
+          "finProgreso": 0.36,
+          "x": -90,
+          "y": 20,
+          "escala": 1.12,
+          "curva": "suave"
+        },
+        {
+          "inicioProgreso": 0.36,
+          "finProgreso": 0.72,
+          "desdePalabra": "Tus",
+          "x": 95,
+          "y": -20,
+          "escala": 1.22,
+          "curva": "suave"
+        },
+        {
+          "inicioProgreso": 0.72,
+          "finProgreso": 1.0,
+          "x": 0,
+          "y": 0,
+          "escala": 1.0,
+          "curva": "suave"
+        }
+      ]
+    },
+    {
+      "id": 7,
+      "texto": "Si pones una linterna potente detrás de tus dedos, verás que todo tu cuerpo brilla en rojo puro. Tu sangre siempre ha sido roja, viva y corriendo por tus venas en cada latido.",
+      "icono": "Heart",
+      "colorIcono": "#DC2626",
+      "tituloVisual": "100% SANGRE ROJA",
+      "composicionVisual": "escenario_ilustrado",
+      "escenario": "laboratorio_cierre_sangre_viva",
+      "layout": "narrativo",
+      "transicion": "zoom_in",
+      "efectosCamara": [
+        "punch",
+        "drift"
+      ],
+      "sfx": "sfx/sfx_cierre_sangre_roja_triunfo.wav",
+      "volumenSfx": 0.25,
+      "palabrasClave": [
+        "brilla en rojo puro",
+        "siempre ha sido roja",
+        "en cada latido"
+      ],
+      "personajes": [
+        {
+          "id": "stickman_cierre",
+          "nombre": "Stickman",
+          "posicion": {
+            "x": -120,
+            "y": 90
+          },
+          "escala": 1.05,
+          "orientacion": "derecha",
+          "habla": true,
+          "capaZ": 20,
+          "acciones": [
+            {
+              "tipo": "personalizada",
+              "pasos": [
+                {
+                  "inicioProgreso": 0,
+                  "finProgreso": 0.5,
+                  "poseId": "pointing_at_viewer",
+                  "expresion": "smile_wide",
+                  "posicion": {
+                    "x": -120,
+                    "y": 90
+                  },
+                  "curva": "suave",
+                  "procedural": "estatico",
+                  "hastaPalabra": "Tu"
+                },
+                {
+                  "inicioProgreso": 0.5,
+                  "finProgreso": 1.0,
+                  "poseId": "celebrating_arms_up",
+                  "expresion": "talking_enthusiastic",
+                  "posicion": {
+                    "x": -100,
+                    "y": 90
+                  },
+                  "curva": "suave",
+                  "procedural": "caminar",
+                  "desdePalabra": "Tu"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "objetos": [
+        {
+          "id": "linterna_roja",
+          "propId": "linterna_transiluminacion_roja",
+          "posicion": {
+            "x": 150,
+            "y": -25
+          },
+          "escala": 1.3,
+          "animacion": "flotar",
+          "capaZ": 28,
+          "pasos": [
+            {
+              "inicioProgreso": 0.0,
+              "finProgreso": 0.5,
+              "hastaPalabra": "Tu",
+              "posicion": {
+                "x": 150,
+                "y": -25
+              },
+              "escala": 1.3,
+              "estado": "apagada",
+              "curva": "suave"
+            },
+            {
+              "inicioProgreso": 0.5,
+              "finProgreso": 1.0,
+              "desdePalabra": "Tu",
+              "posicion": {
+                "x": 125,
+                "y": -15
+              },
+              "escala": 1.4,
+              "estado": "transiluminacion_roja",
+              "curva": "rebote"
+            }
+          ]
+        }
+      ],
+      "duracionSegundos": 9.754,
+      "palabras": [
+        {
+          "palabra": "Si",
+          "inicioMs": 0,
+          "finMs": 200
+        },
+        {
+          "palabra": "pones",
+          "inicioMs": 200,
+          "finMs": 480
+        },
+        {
+          "palabra": "una",
+          "inicioMs": 480,
+          "finMs": 660
+        },
+        {
+          "palabra": "linterna",
+          "inicioMs": 660,
+          "finMs": 1160
+        },
+        {
+          "palabra": "potente",
+          "inicioMs": 1160,
+          "finMs": 1580
+        },
+        {
+          "palabra": "detrás",
+          "inicioMs": 1580,
+          "finMs": 1920
+        },
+        {
+          "palabra": "de",
+          "inicioMs": 1920,
+          "finMs": 2020
+        },
+        {
+          "palabra": "tus",
+          "inicioMs": 2020,
+          "finMs": 2240
+        },
+        {
+          "palabra": "dedos",
+          "inicioMs": 2240,
+          "finMs": 2560
+        },
+        {
+          "palabra": "verás",
+          "inicioMs": 2860,
+          "finMs": 3080
+        },
+        {
+          "palabra": "que",
+          "inicioMs": 3080,
+          "finMs": 3200
+        },
+        {
+          "palabra": "todo",
+          "inicioMs": 3200,
+          "finMs": 3420
+        },
+        {
+          "palabra": "tu",
+          "inicioMs": 3420,
+          "finMs": 3560
+        },
+        {
+          "palabra": "cuerpo",
+          "inicioMs": 3560,
+          "finMs": 3780
+        },
+        {
+          "palabra": "brilla",
+          "inicioMs": 3780,
+          "finMs": 4240
+        },
+        {
+          "palabra": "en",
+          "inicioMs": 4240,
+          "finMs": 4360
+        },
+        {
+          "palabra": "rojo",
+          "inicioMs": 4360,
+          "finMs": 4520
+        },
+        {
+          "palabra": "puro",
+          "inicioMs": 4520,
+          "finMs": 4840
+        },
+        {
+          "palabra": "Tu",
+          "inicioMs": 5160,
+          "finMs": 5240
+        },
+        {
+          "palabra": "sangre",
+          "inicioMs": 5240,
+          "finMs": 5560
+        },
+        {
+          "palabra": "siempre",
+          "inicioMs": 5560,
+          "finMs": 6040
+        },
+        {
+          "palabra": "ha",
+          "inicioMs": 6040,
+          "finMs": 6120
+        },
+        {
+          "palabra": "sido",
+          "inicioMs": 6120,
+          "finMs": 6320
+        },
+        {
+          "palabra": "roja",
+          "inicioMs": 6320,
+          "finMs": 6740
+        },
+        {
+          "palabra": "viva",
+          "inicioMs": 6880,
+          "finMs": 7080
+        },
+        {
+          "palabra": "y",
+          "inicioMs": 7080,
+          "finMs": 7180
+        },
+        {
+          "palabra": "corriendo",
+          "inicioMs": 7180,
+          "finMs": 7560
+        },
+        {
+          "palabra": "por",
+          "inicioMs": 7560,
+          "finMs": 7740
+        },
+        {
+          "palabra": "tus",
+          "inicioMs": 7740,
+          "finMs": 7960
+        },
+        {
+          "palabra": "venas",
+          "inicioMs": 7960,
+          "finMs": 8260
+        },
+        {
+          "palabra": "en",
+          "inicioMs": 8260,
+          "finMs": 8360
+        },
+        {
+          "palabra": "cada",
+          "inicioMs": 8360,
+          "finMs": 8580
+        },
+        {
+          "palabra": "latido",
+          "inicioMs": 8580,
+          "finMs": 9040
+        }
+      ],
+      "focoCamara": [
+        {
+          "inicioProgreso": 0.0,
+          "finProgreso": 0.36,
+          "x": -90,
+          "y": 20,
+          "escala": 1.12,
+          "curva": "suave"
+        },
+        {
+          "inicioProgreso": 0.36,
+          "finProgreso": 0.72,
+          "desdePalabra": "Tu",
+          "x": 95,
+          "y": -20,
+          "escala": 1.22,
+          "curva": "suave"
+        },
+        {
+          "inicioProgreso": 0.72,
+          "finProgreso": 1.0,
+          "x": 0,
+          "y": 0,
+          "escala": 1.0,
+          "curva": "suave"
+        }
+      ]
+    }
+  ]
+}

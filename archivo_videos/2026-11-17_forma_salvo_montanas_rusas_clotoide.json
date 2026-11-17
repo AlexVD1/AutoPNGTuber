@@ -1,0 +1,2260 @@
+{
+  "meta": {
+    "id": "forma_salvo_montanas_rusas_clotoide",
+    "slug": "forma_salvo_montanas_rusas_clotoide",
+    "temaResumen": "La forma que salvó las montañas rusas: Por qué los bucles no son círculos perfectos sino gotas clotoides (La historia de Niko, fuerzas G y Werner Stengel)",
+    "duracionObjetivo": [
+      65,
+      88
+    ],
+    "titulo": "La Forma que Salvó las Montañas Rusas",
+    "titulo_corto": "El bucle que salvó vidas",
+    "gancho": "Niko martilleó el bucle de su montaña rusa hasta deformarlo por completo. ¡Era la primera atracción de la historia en ponerse de cabeza!",
+    "genero": "Física, Ingeniería y Ficción Histórica",
+    "playlist": "Ingeniería, Física y Curiosidades Fascinantes",
+    "fuentes": [
+      "Werner Stengel (Ingeniería de Montañas Rusas Modernas y la Clotoide de Cornu, 1976)",
+      "Flip Flap Railway History (Coney Island 1895, Revista Scientific American)",
+      "Physics of Roller Coasters (Centripetal Acceleration & G-Forces, NASA/Amusement Park Physics)"
+    ]
+  },
+  "escenas": [
+    {
+      "id": 1,
+      "texto": "Niko martilleó el bucle de su montaña rusa hasta deformarlo por completo. ¡Era la primera atracción de la historia en ponerse de cabeza... y le había costado la vida entera!",
+      "icono": "Zap",
+      "colorIcono": "#F59E0B",
+      "tituloVisual": "EL BUCLE IMPOSIBLE",
+      "composicionVisual": "escenario_ilustrado",
+      "escenario": "taller_montana_rusa_1895",
+      "layout": "cinematico",
+      "transicion": "corte",
+      "efectosCamara": [
+        "punch",
+        "drift"
+      ],
+      "sfx": "sfx/sfx_hammer_metal.wav",
+      "volumenSfx": 0.28,
+      "palabrasClave": [
+        "martilleó el bucle",
+        "montaña rusa",
+        "ponerse de cabeza"
+      ],
+      "personajes": [
+        {
+          "id": "niko",
+          "nombre": "Niko",
+          "posicion": {
+            "x": 0,
+            "y": 60
+          },
+          "escala": 1.05,
+          "orientacion": "derecha",
+          "prop": "mazo_demolicion_rebote",
+          "habla": true,
+          "capaZ": 20,
+          "acciones": [
+            {
+              "tipo": "personalizada",
+              "pasos": [
+                {
+                  "inicioProgreso": 0,
+                  "finProgreso": 0.45,
+                  "poseId": "lifting_heavy",
+                  "expresion": "exhausted",
+                  "posicion": {
+                    "x": -40,
+                    "y": 60
+                  },
+                  "curva": "suave",
+                  "procedural": "esfuerzo"
+                },
+                {
+                  "inicioProgreso": 0.45,
+                  "finProgreso": 1.0,
+                  "poseId": "pushing",
+                  "expresion": "determined",
+                  "posicion": {
+                    "x": 20,
+                    "y": 60
+                  },
+                  "curva": "impacto",
+                  "procedural": "estatico"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "duracionSegundos": 8.578,
+      "palabras": [
+        {
+          "palabra": "Niko",
+          "inicioMs": 0,
+          "finMs": 400
+        },
+        {
+          "palabra": "martilleó",
+          "inicioMs": 400,
+          "finMs": 1000
+        },
+        {
+          "palabra": "el",
+          "inicioMs": 1000,
+          "finMs": 1120
+        },
+        {
+          "palabra": "bucle",
+          "inicioMs": 1120,
+          "finMs": 1400
+        },
+        {
+          "palabra": "de",
+          "inicioMs": 1400,
+          "finMs": 1520
+        },
+        {
+          "palabra": "su",
+          "inicioMs": 1520,
+          "finMs": 1660
+        },
+        {
+          "palabra": "montaña",
+          "inicioMs": 1660,
+          "finMs": 2100
+        },
+        {
+          "palabra": "rusa",
+          "inicioMs": 2100,
+          "finMs": 2460
+        },
+        {
+          "palabra": "hasta",
+          "inicioMs": 2460,
+          "finMs": 2780
+        },
+        {
+          "palabra": "deformarlo",
+          "inicioMs": 2780,
+          "finMs": 3320
+        },
+        {
+          "palabra": "por",
+          "inicioMs": 3320,
+          "finMs": 3500
+        },
+        {
+          "palabra": "completo",
+          "inicioMs": 3500,
+          "finMs": 4060
+        },
+        {
+          "palabra": "Era",
+          "inicioMs": 4300,
+          "finMs": 4380
+        },
+        {
+          "palabra": "la",
+          "inicioMs": 4380,
+          "finMs": 4500
+        },
+        {
+          "palabra": "primera",
+          "inicioMs": 4500,
+          "finMs": 4720
+        },
+        {
+          "palabra": "atracción",
+          "inicioMs": 4720,
+          "finMs": 5100
+        },
+        {
+          "palabra": "de",
+          "inicioMs": 5100,
+          "finMs": 5220
+        },
+        {
+          "palabra": "la",
+          "inicioMs": 5220,
+          "finMs": 5300
+        },
+        {
+          "palabra": "historia",
+          "inicioMs": 5300,
+          "finMs": 5520
+        },
+        {
+          "palabra": "en",
+          "inicioMs": 5520,
+          "finMs": 5680
+        },
+        {
+          "palabra": "ponerse",
+          "inicioMs": 5680,
+          "finMs": 6020
+        },
+        {
+          "palabra": "de",
+          "inicioMs": 6020,
+          "finMs": 6100
+        },
+        {
+          "palabra": "cabeza",
+          "inicioMs": 6100,
+          "finMs": 6360
+        },
+        {
+          "palabra": "y",
+          "inicioMs": 6360,
+          "finMs": 6800
+        },
+        {
+          "palabra": "le",
+          "inicioMs": 6800,
+          "finMs": 6880
+        },
+        {
+          "palabra": "había",
+          "inicioMs": 6880,
+          "finMs": 7000
+        },
+        {
+          "palabra": "costado",
+          "inicioMs": 7000,
+          "finMs": 7340
+        },
+        {
+          "palabra": "la",
+          "inicioMs": 7340,
+          "finMs": 7460
+        },
+        {
+          "palabra": "vida",
+          "inicioMs": 7460,
+          "finMs": 7580
+        },
+        {
+          "palabra": "entera",
+          "inicioMs": 7580,
+          "finMs": 7940
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "texto": "Por supuesto, su archirrival en la feria copió el invento tornillo por tornillo... para robarse a todo el público en la gran inauguración.",
+      "icono": "Eye",
+      "colorIcono": "#EF4444",
+      "tituloVisual": "EL RIVAL Y EL ROBO",
+      "composicionVisual": "plano_general",
+      "escenario": "andenes_feria_victoriana",
+      "layout": "cinematico",
+      "transicion": "whip_right",
+      "efectosCamara": [
+        "drift"
+      ],
+      "sfx": "sfx/sfx_laugh_sneer.wav",
+      "volumenSfx": 0.25,
+      "palabrasClave": [
+        "archirrival",
+        "copió el invento",
+        "gran inauguración"
+      ],
+      "personajes": [
+        {
+          "id": "rival",
+          "nombre": "Rival",
+          "posicion": {
+            "x": 140,
+            "y": 70
+          },
+          "escala": 1.05,
+          "orientacion": "izquierda",
+          "prop": "planos_blueprint_feria",
+          "habla": false,
+          "capaZ": 22,
+          "acciones": [
+            {
+              "tipo": "personalizada",
+              "pasos": [
+                {
+                  "inicioProgreso": 0,
+                  "finProgreso": 0.5,
+                  "poseId": "arms_crossed",
+                  "expresion": "smile_wide",
+                  "posicion": {
+                    "x": 140,
+                    "y": 70
+                  },
+                  "curva": "suave",
+                  "procedural": "estatico"
+                },
+                {
+                  "inicioProgreso": 0.5,
+                  "finProgreso": 1.0,
+                  "poseId": "presenting_object",
+                  "expresion": "proud",
+                  "posicion": {
+                    "x": 120,
+                    "y": 70
+                  },
+                  "curva": "suave",
+                  "procedural": "estatico"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "niko",
+          "nombre": "Niko",
+          "posicion": {
+            "x": -240,
+            "y": 80
+          },
+          "escala": 0.9,
+          "orientacion": "derecha",
+          "prop": "mazo_demolicion_rebote",
+          "habla": true,
+          "capaZ": 18,
+          "acciones": [
+            {
+              "tipo": "personalizada",
+              "pasos": [
+                {
+                  "inicioProgreso": 0,
+                  "finProgreso": 1.0,
+                  "poseId": "frustrated_head_grab",
+                  "expresion": "angry",
+                  "posicion": {
+                    "x": -240,
+                    "y": 80
+                  },
+                  "curva": "suave",
+                  "procedural": "estatico"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "duracionSegundos": 8.242,
+      "palabras": [
+        {
+          "palabra": "Por",
+          "inicioMs": 0,
+          "finMs": 100
+        },
+        {
+          "palabra": "supuesto",
+          "inicioMs": 100,
+          "finMs": 600
+        },
+        {
+          "palabra": "su",
+          "inicioMs": 780,
+          "finMs": 880
+        },
+        {
+          "palabra": "archirrival",
+          "inicioMs": 880,
+          "finMs": 1380
+        },
+        {
+          "palabra": "en",
+          "inicioMs": 1380,
+          "finMs": 1560
+        },
+        {
+          "palabra": "la",
+          "inicioMs": 1560,
+          "finMs": 1620
+        },
+        {
+          "palabra": "feria",
+          "inicioMs": 1620,
+          "finMs": 2000
+        },
+        {
+          "palabra": "copió",
+          "inicioMs": 2000,
+          "finMs": 2560
+        },
+        {
+          "palabra": "el",
+          "inicioMs": 2560,
+          "finMs": 2680
+        },
+        {
+          "palabra": "invento",
+          "inicioMs": 2680,
+          "finMs": 3120
+        },
+        {
+          "palabra": "tornillo",
+          "inicioMs": 3120,
+          "finMs": 3520
+        },
+        {
+          "palabra": "por",
+          "inicioMs": 3520,
+          "finMs": 3740
+        },
+        {
+          "palabra": "tornillo",
+          "inicioMs": 3740,
+          "finMs": 4480
+        },
+        {
+          "palabra": "para",
+          "inicioMs": 4480,
+          "finMs": 4960
+        },
+        {
+          "palabra": "robarse",
+          "inicioMs": 4960,
+          "finMs": 5420
+        },
+        {
+          "palabra": "a",
+          "inicioMs": 5420,
+          "finMs": 5540
+        },
+        {
+          "palabra": "todo",
+          "inicioMs": 5540,
+          "finMs": 5660
+        },
+        {
+          "palabra": "el",
+          "inicioMs": 5660,
+          "finMs": 5840
+        },
+        {
+          "palabra": "público",
+          "inicioMs": 5840,
+          "finMs": 6160
+        },
+        {
+          "palabra": "en",
+          "inicioMs": 6160,
+          "finMs": 6420
+        },
+        {
+          "palabra": "la",
+          "inicioMs": 6420,
+          "finMs": 6540
+        },
+        {
+          "palabra": "gran",
+          "inicioMs": 6540,
+          "finMs": 6780
+        },
+        {
+          "palabra": "inauguración",
+          "inicioMs": 6780,
+          "finMs": 7640
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "texto": "Pero a medianoche, Niko hizo una prueba secreta con un muñeco... y cuando el carrito salió del círculo... ¡el muñeco estaba aplastado como una lata de refresco!",
+      "icono": "AlertTriangle",
+      "colorIcono": "#EF4444",
+      "tituloVisual": "EL TEST SECRETO",
+      "composicionVisual": "primer_plano",
+      "escenario": "taller_montana_rusa_1895",
+      "layout": "cinematico",
+      "transicion": "flash",
+      "efectosCamara": [
+        "shake",
+        "punch"
+      ],
+      "sfx": "sfx/sfx_crunch_dummy.wav",
+      "volumenSfx": 0.3,
+      "palabrasClave": [
+        "prueba secreta",
+        "muñeco estaba aplastado",
+        "lata de refresco"
+      ],
+      "personajes": [
+        {
+          "id": "niko",
+          "nombre": "Niko",
+          "posicion": {
+            "x": -140,
+            "y": 60
+          },
+          "escala": 1.05,
+          "orientacion": "derecha",
+          "habla": true,
+          "capaZ": 20,
+          "acciones": [
+            {
+              "tipo": "personalizada",
+              "pasos": [
+                {
+                  "inicioProgreso": 0,
+                  "finProgreso": 0.45,
+                  "poseId": "looking_down_pose",
+                  "expresion": "worried",
+                  "posicion": {
+                    "x": -140,
+                    "y": 60
+                  },
+                  "curva": "suave",
+                  "procedural": "estatico"
+                },
+                {
+                  "inicioProgreso": 0.45,
+                  "finProgreso": 1.0,
+                  "poseId": "shock_explosion",
+                  "expresion": "shocked",
+                  "posicion": {
+                    "x": -160,
+                    "y": 40
+                  },
+                  "curva": "impacto",
+                  "procedural": "temblar"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "dummy",
+          "nombre": "Dummy",
+          "posicion": {
+            "x": 160,
+            "y": 80
+          },
+          "escala": 1.15,
+          "orientacion": "izquierda",
+          "prop": "test_dummy_aplastado",
+          "habla": false,
+          "capaZ": 22
+        }
+      ],
+      "duracionSegundos": 8.89,
+      "palabras": [
+        {
+          "palabra": "Pero",
+          "inicioMs": 0,
+          "finMs": 180
+        },
+        {
+          "palabra": "a",
+          "inicioMs": 180,
+          "finMs": 280
+        },
+        {
+          "palabra": "medianoche",
+          "inicioMs": 280,
+          "finMs": 840
+        },
+        {
+          "palabra": "Niko",
+          "inicioMs": 1220,
+          "finMs": 1400
+        },
+        {
+          "palabra": "hizo",
+          "inicioMs": 1400,
+          "finMs": 1640
+        },
+        {
+          "palabra": "una",
+          "inicioMs": 1640,
+          "finMs": 1840
+        },
+        {
+          "palabra": "prueba",
+          "inicioMs": 1840,
+          "finMs": 2080
+        },
+        {
+          "palabra": "secreta",
+          "inicioMs": 2080,
+          "finMs": 2600
+        },
+        {
+          "palabra": "con",
+          "inicioMs": 2600,
+          "finMs": 2760
+        },
+        {
+          "palabra": "un",
+          "inicioMs": 2760,
+          "finMs": 2880
+        },
+        {
+          "palabra": "muñeco",
+          "inicioMs": 2880,
+          "finMs": 3580
+        },
+        {
+          "palabra": "y",
+          "inicioMs": 3580,
+          "finMs": 3620
+        },
+        {
+          "palabra": "cuando",
+          "inicioMs": 3620,
+          "finMs": 3820
+        },
+        {
+          "palabra": "el",
+          "inicioMs": 3820,
+          "finMs": 4000
+        },
+        {
+          "palabra": "carrito",
+          "inicioMs": 4000,
+          "finMs": 4280
+        },
+        {
+          "palabra": "salió",
+          "inicioMs": 4280,
+          "finMs": 4580
+        },
+        {
+          "palabra": "del",
+          "inicioMs": 4580,
+          "finMs": 4720
+        },
+        {
+          "palabra": "círculo",
+          "inicioMs": 4720,
+          "finMs": 5180
+        },
+        {
+          "palabra": "el",
+          "inicioMs": 5400,
+          "finMs": 5860
+        },
+        {
+          "palabra": "muñeco",
+          "inicioMs": 5860,
+          "finMs": 6280
+        },
+        {
+          "palabra": "estaba",
+          "inicioMs": 6280,
+          "finMs": 6480
+        },
+        {
+          "palabra": "aplastado",
+          "inicioMs": 6480,
+          "finMs": 6980
+        },
+        {
+          "palabra": "como",
+          "inicioMs": 6980,
+          "finMs": 7200
+        },
+        {
+          "palabra": "una",
+          "inicioMs": 7200,
+          "finMs": 7380
+        },
+        {
+          "palabra": "lata",
+          "inicioMs": 7380,
+          "finMs": 7620
+        },
+        {
+          "palabra": "de",
+          "inicioMs": 7620,
+          "finMs": 7820
+        },
+        {
+          "palabra": "refresco",
+          "inicioMs": 7820,
+          "finMs": 8560
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "texto": "El círculo perfecto generaba doce gravedades. ¡Iba a partirle el cuello a sus pasajeros! Desesperado, Niko agarró el mazo y reventó la base del riel hacia afuera, ensanchando la curva a ciegas.",
+      "icono": "Hammer",
+      "colorIcono": "#F59E0B",
+      "tituloVisual": "REVENTANDO EL RIEL",
+      "composicionVisual": "escenario_ilustrado",
+      "escenario": "taller_montana_rusa_1895",
+      "layout": "cinematico",
+      "transicion": "corte",
+      "efectosCamara": [
+        "punch",
+        "drift"
+      ],
+      "sfx": "sfx/sfx_hammer_metal.wav",
+      "volumenSfx": 0.28,
+      "palabrasClave": [
+        "doce gravedades",
+        "reventó la base",
+        "curva a ciegas"
+      ],
+      "personajes": [
+        {
+          "id": "niko",
+          "nombre": "Niko",
+          "posicion": {
+            "x": 0,
+            "y": 70
+          },
+          "escala": 1.1,
+          "orientacion": "derecha",
+          "prop": "mazo_demolicion_rebote",
+          "habla": true,
+          "capaZ": 20,
+          "acciones": [
+            {
+              "tipo": "personalizada",
+              "pasos": [
+                {
+                  "inicioProgreso": 0,
+                  "finProgreso": 0.35,
+                  "poseId": "warning_danger",
+                  "expresion": "scared",
+                  "posicion": {
+                    "x": -80,
+                    "y": 70
+                  },
+                  "curva": "anticipacion",
+                  "procedural": "temblar"
+                },
+                {
+                  "inicioProgreso": 0.35,
+                  "finProgreso": 1.0,
+                  "poseId": "pushing",
+                  "expresion": "determined",
+                  "posicion": {
+                    "x": 60,
+                    "y": 70
+                  },
+                  "curva": "impacto",
+                  "procedural": "esfuerzo"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "duracionSegundos": 10.738,
+      "palabras": [
+        {
+          "palabra": "El",
+          "inicioMs": 0,
+          "finMs": 220
+        },
+        {
+          "palabra": "círculo",
+          "inicioMs": 220,
+          "finMs": 600
+        },
+        {
+          "palabra": "perfecto",
+          "inicioMs": 600,
+          "finMs": 1180
+        },
+        {
+          "palabra": "generaba",
+          "inicioMs": 1180,
+          "finMs": 1580
+        },
+        {
+          "palabra": "doce",
+          "inicioMs": 1580,
+          "finMs": 2020
+        },
+        {
+          "palabra": "gravedades",
+          "inicioMs": 2020,
+          "finMs": 2640
+        },
+        {
+          "palabra": "Iba",
+          "inicioMs": 2880,
+          "finMs": 3080
+        },
+        {
+          "palabra": "a",
+          "inicioMs": 3080,
+          "finMs": 3160
+        },
+        {
+          "palabra": "partirle",
+          "inicioMs": 3160,
+          "finMs": 3700
+        },
+        {
+          "palabra": "el",
+          "inicioMs": 3700,
+          "finMs": 3920
+        },
+        {
+          "palabra": "cuello",
+          "inicioMs": 3920,
+          "finMs": 4180
+        },
+        {
+          "palabra": "a",
+          "inicioMs": 4180,
+          "finMs": 4260
+        },
+        {
+          "palabra": "sus",
+          "inicioMs": 4260,
+          "finMs": 4360
+        },
+        {
+          "palabra": "pasajeros",
+          "inicioMs": 4360,
+          "finMs": 4860
+        },
+        {
+          "palabra": "Desesperado",
+          "inicioMs": 5060,
+          "finMs": 5600
+        },
+        {
+          "palabra": "Niko",
+          "inicioMs": 5880,
+          "finMs": 6100
+        },
+        {
+          "palabra": "agarró",
+          "inicioMs": 6100,
+          "finMs": 6380
+        },
+        {
+          "palabra": "el",
+          "inicioMs": 6380,
+          "finMs": 6480
+        },
+        {
+          "palabra": "mazo",
+          "inicioMs": 6480,
+          "finMs": 6760
+        },
+        {
+          "palabra": "y",
+          "inicioMs": 6760,
+          "finMs": 6860
+        },
+        {
+          "palabra": "reventó",
+          "inicioMs": 6860,
+          "finMs": 7200
+        },
+        {
+          "palabra": "la",
+          "inicioMs": 7200,
+          "finMs": 7320
+        },
+        {
+          "palabra": "base",
+          "inicioMs": 7320,
+          "finMs": 7540
+        },
+        {
+          "palabra": "del",
+          "inicioMs": 7540,
+          "finMs": 7760
+        },
+        {
+          "palabra": "riel",
+          "inicioMs": 7760,
+          "finMs": 7980
+        },
+        {
+          "palabra": "hacia",
+          "inicioMs": 7980,
+          "finMs": 8180
+        },
+        {
+          "palabra": "afuera",
+          "inicioMs": 8180,
+          "finMs": 8560
+        },
+        {
+          "palabra": "ensanchando",
+          "inicioMs": 8820,
+          "finMs": 9300
+        },
+        {
+          "palabra": "la",
+          "inicioMs": 9300,
+          "finMs": 9440
+        },
+        {
+          "palabra": "curva",
+          "inicioMs": 9440,
+          "finMs": 9740
+        },
+        {
+          "palabra": "a",
+          "inicioMs": 9740,
+          "finMs": 9900
+        },
+        {
+          "palabra": "ciegas",
+          "inicioMs": 9900,
+          "finMs": 10160
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "texto": "El rival lo espió y se rio a carcajadas. Creyendo que Niko se había vuelto loco, se infiltró en la madrugada y apretó con manivelas los costados para estirarlo hacia arriba, jurando que el carro chocaría en la cima.",
+      "icono": "Moon",
+      "colorIcono": "#38BDF8",
+      "tituloVisual": "EL SABOTAJE NOCTURNO",
+      "composicionVisual": "plano_general",
+      "escenario": "noche_sabotaje_rieles",
+      "layout": "cinematico",
+      "transicion": "whip_left",
+      "efectosCamara": [
+        "drift"
+      ],
+      "sfx": "sfx/sfx_ratchet_wrench.wav",
+      "volumenSfx": 0.26,
+      "palabrasClave": [
+        "rio a carcajadas",
+        "se infiltró",
+        "apretó con manivelas"
+      ],
+      "personajes": [
+        {
+          "id": "rival",
+          "nombre": "Rival",
+          "posicion": {
+            "x": 0,
+            "y": 75
+          },
+          "escala": 1.05,
+          "orientacion": "derecha",
+          "prop": "llave_inglesa_sabotaje",
+          "habla": false,
+          "capaZ": 22,
+          "acciones": [
+            {
+              "tipo": "personalizada",
+              "pasos": [
+                {
+                  "inicioProgreso": 0,
+                  "finProgreso": 0.45,
+                  "poseId": "laughing_belly",
+                  "expresion": "laugh",
+                  "posicion": {
+                    "x": -60,
+                    "y": 75
+                  },
+                  "curva": "suave",
+                  "procedural": "rebotar"
+                },
+                {
+                  "inicioProgreso": 0.45,
+                  "finProgreso": 1.0,
+                  "poseId": "pulling",
+                  "expresion": "determined",
+                  "posicion": {
+                    "x": 50,
+                    "y": 75
+                  },
+                  "curva": "impacto",
+                  "procedural": "esfuerzo"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "duracionSegundos": 11.434,
+      "palabras": [
+        {
+          "palabra": "El",
+          "inicioMs": 0,
+          "finMs": 180
+        },
+        {
+          "palabra": "rival",
+          "inicioMs": 180,
+          "finMs": 380
+        },
+        {
+          "palabra": "lo",
+          "inicioMs": 380,
+          "finMs": 560
+        },
+        {
+          "palabra": "espió",
+          "inicioMs": 560,
+          "finMs": 840
+        },
+        {
+          "palabra": "y",
+          "inicioMs": 840,
+          "finMs": 980
+        },
+        {
+          "palabra": "se",
+          "inicioMs": 980,
+          "finMs": 1060
+        },
+        {
+          "palabra": "rio",
+          "inicioMs": 1060,
+          "finMs": 1260
+        },
+        {
+          "palabra": "a",
+          "inicioMs": 1260,
+          "finMs": 1340
+        },
+        {
+          "palabra": "carcajadas",
+          "inicioMs": 1340,
+          "finMs": 1940
+        },
+        {
+          "palabra": "Creyendo",
+          "inicioMs": 2160,
+          "finMs": 2540
+        },
+        {
+          "palabra": "que",
+          "inicioMs": 2540,
+          "finMs": 2680
+        },
+        {
+          "palabra": "Niko",
+          "inicioMs": 2680,
+          "finMs": 2940
+        },
+        {
+          "palabra": "se",
+          "inicioMs": 2940,
+          "finMs": 3120
+        },
+        {
+          "palabra": "había",
+          "inicioMs": 3120,
+          "finMs": 3260
+        },
+        {
+          "palabra": "vuelto",
+          "inicioMs": 3260,
+          "finMs": 3620
+        },
+        {
+          "palabra": "loco",
+          "inicioMs": 3620,
+          "finMs": 4020
+        },
+        {
+          "palabra": "se",
+          "inicioMs": 4340,
+          "finMs": 4420
+        },
+        {
+          "palabra": "infiltró",
+          "inicioMs": 4420,
+          "finMs": 4960
+        },
+        {
+          "palabra": "en",
+          "inicioMs": 4960,
+          "finMs": 5080
+        },
+        {
+          "palabra": "la",
+          "inicioMs": 5080,
+          "finMs": 5140
+        },
+        {
+          "palabra": "madrugada",
+          "inicioMs": 5140,
+          "finMs": 5700
+        },
+        {
+          "palabra": "y",
+          "inicioMs": 5700,
+          "finMs": 5940
+        },
+        {
+          "palabra": "apretó",
+          "inicioMs": 5940,
+          "finMs": 6320
+        },
+        {
+          "palabra": "con",
+          "inicioMs": 6320,
+          "finMs": 6440
+        },
+        {
+          "palabra": "manivelas",
+          "inicioMs": 6440,
+          "finMs": 6980
+        },
+        {
+          "palabra": "los",
+          "inicioMs": 6980,
+          "finMs": 7160
+        },
+        {
+          "palabra": "costados",
+          "inicioMs": 7160,
+          "finMs": 7660
+        },
+        {
+          "palabra": "para",
+          "inicioMs": 7660,
+          "finMs": 7860
+        },
+        {
+          "palabra": "estirarlo",
+          "inicioMs": 7860,
+          "finMs": 8340
+        },
+        {
+          "palabra": "hacia",
+          "inicioMs": 8340,
+          "finMs": 8540
+        },
+        {
+          "palabra": "arriba",
+          "inicioMs": 8540,
+          "finMs": 8880
+        },
+        {
+          "palabra": "jurando",
+          "inicioMs": 9100,
+          "finMs": 9460
+        },
+        {
+          "palabra": "que",
+          "inicioMs": 9460,
+          "finMs": 9600
+        },
+        {
+          "palabra": "el",
+          "inicioMs": 9600,
+          "finMs": 9680
+        },
+        {
+          "palabra": "carro",
+          "inicioMs": 9680,
+          "finMs": 9880
+        },
+        {
+          "palabra": "chocaría",
+          "inicioMs": 9880,
+          "finMs": 10260
+        },
+        {
+          "palabra": "en",
+          "inicioMs": 10260,
+          "finMs": 10420
+        },
+        {
+          "palabra": "la",
+          "inicioMs": 10420,
+          "finMs": 10460
+        },
+        {
+          "palabra": "cima",
+          "inicioMs": 10420,
+          "finMs": 10660
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "texto": "Al amanecer, toda la ciudad hacía fila frente a la montaña rusa del rival. Niko subió a su propio carrito con el corazón en la garganta... y al llegar a la cima vio la extraña forma de gota... ¡demasiado tarde para frenar!",
+      "icono": "Compass",
+      "colorIcono": "#F59E0B",
+      "tituloVisual": "LA MAÑANA DE LA VERDAD",
+      "composicionVisual": "plano_general",
+      "escenario": "andenes_feria_victoriana",
+      "layout": "cinematico",
+      "transicion": "corte",
+      "efectosCamara": [
+        "punch",
+        "shake"
+      ],
+      "sfx": "sfx/sfx_coaster_clatter.wav",
+      "volumenSfx": 0.28,
+      "palabrasClave": [
+        "hacía fila",
+        "forma de gota",
+        "demasiado tarde"
+      ],
+      "personajes": [
+        {
+          "id": "niko",
+          "nombre": "Niko",
+          "posicion": {
+            "x": 0,
+            "y": 70
+          },
+          "escala": 1.1,
+          "orientacion": "derecha",
+          "prop": "carrito_montana_rusa_vintage",
+          "habla": true,
+          "capaZ": 20,
+          "acciones": [
+            {
+              "tipo": "personalizada",
+              "pasos": [
+                {
+                  "inicioProgreso": 0,
+                  "finProgreso": 0.5,
+                  "poseId": "standing_confident",
+                  "expresion": "worried",
+                  "posicion": {
+                    "x": -40,
+                    "y": 70
+                  },
+                  "curva": "suave",
+                  "procedural": "temblar"
+                },
+                {
+                  "inicioProgreso": 0.5,
+                  "finProgreso": 1.0,
+                  "poseId": "surprised_hands_up",
+                  "expresion": "shocked",
+                  "posicion": {
+                    "x": 40,
+                    "y": 60
+                  },
+                  "curva": "impacto",
+                  "procedural": "recoil"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "duracionSegundos": 11.386,
+      "palabras": [
+        {
+          "palabra": "Al",
+          "inicioMs": 0,
+          "finMs": 240
+        },
+        {
+          "palabra": "amanecer",
+          "inicioMs": 240,
+          "finMs": 700
+        },
+        {
+          "palabra": "toda",
+          "inicioMs": 900,
+          "finMs": 1040
+        },
+        {
+          "palabra": "la",
+          "inicioMs": 1040,
+          "finMs": 1180
+        },
+        {
+          "palabra": "ciudad",
+          "inicioMs": 1180,
+          "finMs": 1440
+        },
+        {
+          "palabra": "hacía",
+          "inicioMs": 1440,
+          "finMs": 1720
+        },
+        {
+          "palabra": "fila",
+          "inicioMs": 1720,
+          "finMs": 2100
+        },
+        {
+          "palabra": "frente",
+          "inicioMs": 2100,
+          "finMs": 2280
+        },
+        {
+          "palabra": "a",
+          "inicioMs": 2280,
+          "finMs": 2460
+        },
+        {
+          "palabra": "la",
+          "inicioMs": 2460,
+          "finMs": 2540
+        },
+        {
+          "palabra": "montaña",
+          "inicioMs": 2540,
+          "finMs": 2960
+        },
+        {
+          "palabra": "rusa",
+          "inicioMs": 2960,
+          "finMs": 3240
+        },
+        {
+          "palabra": "del",
+          "inicioMs": 3240,
+          "finMs": 3400
+        },
+        {
+          "palabra": "rival",
+          "inicioMs": 3400,
+          "finMs": 3840
+        },
+        {
+          "palabra": "Niko",
+          "inicioMs": 3840,
+          "finMs": 4020
+        },
+        {
+          "palabra": "subió",
+          "inicioMs": 4020,
+          "finMs": 4320
+        },
+        {
+          "palabra": "a",
+          "inicioMs": 4320,
+          "finMs": 4380
+        },
+        {
+          "palabra": "su",
+          "inicioMs": 4380,
+          "finMs": 4500
+        },
+        {
+          "palabra": "propio",
+          "inicioMs": 4500,
+          "finMs": 4760
+        },
+        {
+          "palabra": "carrito",
+          "inicioMs": 4760,
+          "finMs": 5140
+        },
+        {
+          "palabra": "con",
+          "inicioMs": 5140,
+          "finMs": 5340
+        },
+        {
+          "palabra": "el",
+          "inicioMs": 5340,
+          "finMs": 5440
+        },
+        {
+          "palabra": "corazón",
+          "inicioMs": 5440,
+          "finMs": 5720
+        },
+        {
+          "palabra": "en",
+          "inicioMs": 5720,
+          "finMs": 5900
+        },
+        {
+          "palabra": "la",
+          "inicioMs": 5900,
+          "finMs": 5980
+        },
+        {
+          "palabra": "garganta",
+          "inicioMs": 5980,
+          "finMs": 6660
+        },
+        {
+          "palabra": "y",
+          "inicioMs": 6660,
+          "finMs": 6680
+        },
+        {
+          "palabra": "al",
+          "inicioMs": 6680,
+          "finMs": 6760
+        },
+        {
+          "palabra": "llegar",
+          "inicioMs": 6760,
+          "finMs": 6940
+        },
+        {
+          "palabra": "a",
+          "inicioMs": 6940,
+          "finMs": 7060
+        },
+        {
+          "palabra": "la",
+          "inicioMs": 7060,
+          "finMs": 7140
+        },
+        {
+          "palabra": "cima",
+          "inicioMs": 7140,
+          "finMs": 7340
+        },
+        {
+          "palabra": "vio",
+          "inicioMs": 7340,
+          "finMs": 7560
+        },
+        {
+          "palabra": "la",
+          "inicioMs": 7560,
+          "finMs": 7640
+        },
+        {
+          "palabra": "extraña",
+          "inicioMs": 7640,
+          "finMs": 8020
+        },
+        {
+          "palabra": "forma",
+          "inicioMs": 8020,
+          "finMs": 8220
+        },
+        {
+          "palabra": "de",
+          "inicioMs": 8220,
+          "finMs": 8420
+        },
+        {
+          "palabra": "gota",
+          "inicioMs": 8420,
+          "finMs": 9240
+        },
+        {
+          "palabra": "demasiado",
+          "inicioMs": 9240,
+          "finMs": 9760
+        },
+        {
+          "palabra": "tarde",
+          "inicioMs": 9760,
+          "finMs": 10060
+        },
+        {
+          "palabra": "para",
+          "inicioMs": 10060,
+          "finMs": 10320
+        },
+        {
+          "palabra": "frenar",
+          "inicioMs": 10320,
+          "finMs": 10800
+        }
+      ]
+    },
+    {
+      "id": 7,
+      "texto": "¡Y aquí está la física! Una curva cerrada a cinco kilómetros por hora no se siente... pero a cien por hora, te destroza. En un círculo perfecto, la curva más cerrada coincide con el fondo... ¡justo donde el carro va a máxima velocidad!",
+      "icono": "Activity",
+      "colorIcono": "#38BDF8",
+      "tituloVisual": "LA FÍSICA DEL PELIGRO",
+      "composicionVisual": "escenario_ilustrado",
+      "escenario": "diagrama_fisica_clotoide_vs_circulo",
+      "layout": "cinematico",
+      "transicion": "flash",
+      "efectosCamara": [
+        "punch",
+        "drift"
+      ],
+      "sfx": "sfx/sfx_physics_analysis.wav",
+      "volumenSfx": 0.26,
+      "palabrasClave": [
+        "aquí está la física",
+        "círculo perfecto",
+        "máxima velocidad"
+      ],
+      "personajes": [
+        {
+          "id": "niko",
+          "nombre": "Niko",
+          "posicion": {
+            "x": -220,
+            "y": 140
+          },
+          "escala": 0.95,
+          "orientacion": "derecha",
+          "habla": true,
+          "capaZ": 20,
+          "acciones": [
+            {
+              "tipo": "personalizada",
+              "pasos": [
+                {
+                  "inicioProgreso": 0,
+                  "finProgreso": 0.5,
+                  "poseId": "explaining_pointing_up",
+                  "expresion": "analytical",
+                  "posicion": {
+                    "x": -220,
+                    "y": 140
+                  },
+                  "curva": "suave",
+                  "procedural": "estatico"
+                },
+                {
+                  "inicioProgreso": 0.5,
+                  "finProgreso": 1.0,
+                  "poseId": "warning_danger",
+                  "expresion": "analytical",
+                  "posicion": {
+                    "x": -200,
+                    "y": 140
+                  },
+                  "curva": "suave",
+                  "procedural": "estatico"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "duracionSegundos": 12.346,
+      "palabras": [
+        {
+          "palabra": "Y",
+          "inicioMs": 0,
+          "finMs": 40
+        },
+        {
+          "palabra": "aquí",
+          "inicioMs": 40,
+          "finMs": 280
+        },
+        {
+          "palabra": "está",
+          "inicioMs": 280,
+          "finMs": 600
+        },
+        {
+          "palabra": "la",
+          "inicioMs": 600,
+          "finMs": 740
+        },
+        {
+          "palabra": "física",
+          "inicioMs": 740,
+          "finMs": 1040
+        },
+        {
+          "palabra": "Una",
+          "inicioMs": 1300,
+          "finMs": 1460
+        },
+        {
+          "palabra": "curva",
+          "inicioMs": 1460,
+          "finMs": 1780
+        },
+        {
+          "palabra": "cerrada",
+          "inicioMs": 1780,
+          "finMs": 2140
+        },
+        {
+          "palabra": "a",
+          "inicioMs": 2140,
+          "finMs": 2420
+        },
+        {
+          "palabra": "cinco",
+          "inicioMs": 2420,
+          "finMs": 2700
+        },
+        {
+          "palabra": "kilómetros",
+          "inicioMs": 2700,
+          "finMs": 3160
+        },
+        {
+          "palabra": "por",
+          "inicioMs": 3160,
+          "finMs": 3420
+        },
+        {
+          "palabra": "hora",
+          "inicioMs": 3420,
+          "finMs": 3580
+        },
+        {
+          "palabra": "no",
+          "inicioMs": 3580,
+          "finMs": 3740
+        },
+        {
+          "palabra": "se",
+          "inicioMs": 3740,
+          "finMs": 3880
+        },
+        {
+          "palabra": "siente",
+          "inicioMs": 3880,
+          "finMs": 4360
+        },
+        {
+          "palabra": "pero",
+          "inicioMs": 4360,
+          "finMs": 4480
+        },
+        {
+          "palabra": "a",
+          "inicioMs": 4480,
+          "finMs": 4620
+        },
+        {
+          "palabra": "cien",
+          "inicioMs": 4620,
+          "finMs": 4860
+        },
+        {
+          "palabra": "por",
+          "inicioMs": 4860,
+          "finMs": 5020
+        },
+        {
+          "palabra": "hora",
+          "inicioMs": 5020,
+          "finMs": 5220
+        },
+        {
+          "palabra": "te",
+          "inicioMs": 5340,
+          "finMs": 5400
+        },
+        {
+          "palabra": "destroza",
+          "inicioMs": 5400,
+          "finMs": 5940
+        },
+        {
+          "palabra": "En",
+          "inicioMs": 6160,
+          "finMs": 6260
+        },
+        {
+          "palabra": "un",
+          "inicioMs": 6260,
+          "finMs": 6380
+        },
+        {
+          "palabra": "círculo",
+          "inicioMs": 6380,
+          "finMs": 6760
+        },
+        {
+          "palabra": "perfecto",
+          "inicioMs": 6760,
+          "finMs": 7420
+        },
+        {
+          "palabra": "la",
+          "inicioMs": 7520,
+          "finMs": 7580
+        },
+        {
+          "palabra": "curva",
+          "inicioMs": 7580,
+          "finMs": 7940
+        },
+        {
+          "palabra": "más",
+          "inicioMs": 7940,
+          "finMs": 8140
+        },
+        {
+          "palabra": "cerrada",
+          "inicioMs": 8140,
+          "finMs": 8500
+        },
+        {
+          "palabra": "coincide",
+          "inicioMs": 8500,
+          "finMs": 9060
+        },
+        {
+          "palabra": "con",
+          "inicioMs": 9060,
+          "finMs": 9200
+        },
+        {
+          "palabra": "el",
+          "inicioMs": 9200,
+          "finMs": 9340
+        },
+        {
+          "palabra": "fondo",
+          "inicioMs": 9340,
+          "finMs": 9860
+        },
+        {
+          "palabra": "justo",
+          "inicioMs": 9860,
+          "finMs": 10160
+        },
+        {
+          "palabra": "donde",
+          "inicioMs": 10160,
+          "finMs": 10320
+        },
+        {
+          "palabra": "el",
+          "inicioMs": 10320,
+          "finMs": 10460
+        },
+        {
+          "palabra": "carro",
+          "inicioMs": 10460,
+          "finMs": 10640
+        },
+        {
+          "palabra": "va",
+          "inicioMs": 10640,
+          "finMs": 10860
+        },
+        {
+          "palabra": "a",
+          "inicioMs": 10860,
+          "finMs": 11080
+        },
+        {
+          "palabra": "máxima",
+          "inicioMs": 11080,
+          "finMs": 11340
+        },
+        {
+          "palabra": "velocidad",
+          "inicioMs": 11340,
+          "finMs": 11600
+        }
+      ]
+    },
+    {
+      "id": 8,
+      "texto": "El martillazo de Niko suavizó la curva del fondo donde el carro vuela... y el sabotaje del rival mandó la curva cerrada arriba... ¡justo donde el carro casi se detiene! Niko flotó por el bucle sin un solo rasguño...",
+      "icono": "Sparkles",
+      "colorIcono": "#10B981",
+      "tituloVisual": "LA GOTA QUE SALVÓ TODO",
+      "composicionVisual": "escenario_ilustrado",
+      "escenario": "diagrama_fisica_clotoide_vs_circulo",
+      "layout": "cinematico",
+      "transicion": "corte",
+      "efectosCamara": [
+        "drift"
+      ],
+      "sfx": "sfx/sfx_whoosh.wav",
+      "volumenSfx": 0.24,
+      "palabrasClave": [
+        "suavizó la curva",
+        "curva cerrada arriba",
+        "sin un solo rasguño"
+      ],
+      "personajes": [
+        {
+          "id": "niko",
+          "nombre": "Niko",
+          "posicion": {
+            "x": 240,
+            "y": 140
+          },
+          "escala": 0.95,
+          "orientacion": "izquierda",
+          "habla": true,
+          "capaZ": 20,
+          "acciones": [
+            {
+              "tipo": "personalizada",
+              "pasos": [
+                {
+                  "inicioProgreso": 0,
+                  "finProgreso": 0.5,
+                  "poseId": "presenting_object",
+                  "expresion": "eureka",
+                  "posicion": {
+                    "x": 240,
+                    "y": 140
+                  },
+                  "curva": "suave",
+                  "procedural": "estatico"
+                },
+                {
+                  "inicioProgreso": 0.5,
+                  "finProgreso": 1.0,
+                  "poseId": "celebrating_arms_up",
+                  "expresion": "smile_wide",
+                  "posicion": {
+                    "x": 220,
+                    "y": 140
+                  },
+                  "curva": "rebote",
+                  "procedural": "rebotar"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "duracionSegundos": 11.938,
+      "palabras": [
+        {
+          "palabra": "El",
+          "inicioMs": 0,
+          "finMs": 220
+        },
+        {
+          "palabra": "martillazo",
+          "inicioMs": 220,
+          "finMs": 740
+        },
+        {
+          "palabra": "de",
+          "inicioMs": 740,
+          "finMs": 920
+        },
+        {
+          "palabra": "Niko",
+          "inicioMs": 920,
+          "finMs": 1140
+        },
+        {
+          "palabra": "suavizó",
+          "inicioMs": 1140,
+          "finMs": 1620
+        },
+        {
+          "palabra": "la",
+          "inicioMs": 1620,
+          "finMs": 1740
+        },
+        {
+          "palabra": "curva",
+          "inicioMs": 1740,
+          "finMs": 2080
+        },
+        {
+          "palabra": "del",
+          "inicioMs": 2080,
+          "finMs": 2220
+        },
+        {
+          "palabra": "fondo",
+          "inicioMs": 2220,
+          "finMs": 2420
+        },
+        {
+          "palabra": "donde",
+          "inicioMs": 2420,
+          "finMs": 2720
+        },
+        {
+          "palabra": "el",
+          "inicioMs": 2720,
+          "finMs": 2920
+        },
+        {
+          "palabra": "carro",
+          "inicioMs": 2920,
+          "finMs": 3040
+        },
+        {
+          "palabra": "vuela",
+          "inicioMs": 3040,
+          "finMs": 3800
+        },
+        {
+          "palabra": "y",
+          "inicioMs": 3800,
+          "finMs": 3820
+        },
+        {
+          "palabra": "el",
+          "inicioMs": 3820,
+          "finMs": 3940
+        },
+        {
+          "palabra": "sabotaje",
+          "inicioMs": 3940,
+          "finMs": 4380
+        },
+        {
+          "palabra": "del",
+          "inicioMs": 4380,
+          "finMs": 4560
+        },
+        {
+          "palabra": "rival",
+          "inicioMs": 4560,
+          "finMs": 4760
+        },
+        {
+          "palabra": "mandó",
+          "inicioMs": 4760,
+          "finMs": 5060
+        },
+        {
+          "palabra": "la",
+          "inicioMs": 5060,
+          "finMs": 5180
+        },
+        {
+          "palabra": "curva",
+          "inicioMs": 5180,
+          "finMs": 5500
+        },
+        {
+          "palabra": "cerrada",
+          "inicioMs": 5500,
+          "finMs": 5840
+        },
+        {
+          "palabra": "arriba",
+          "inicioMs": 5840,
+          "finMs": 6800
+        },
+        {
+          "palabra": "justo",
+          "inicioMs": 6800,
+          "finMs": 7240
+        },
+        {
+          "palabra": "donde",
+          "inicioMs": 7240,
+          "finMs": 7400
+        },
+        {
+          "palabra": "el",
+          "inicioMs": 7400,
+          "finMs": 7640
+        },
+        {
+          "palabra": "carro",
+          "inicioMs": 7640,
+          "finMs": 7860
+        },
+        {
+          "palabra": "casi",
+          "inicioMs": 7860,
+          "finMs": 8140
+        },
+        {
+          "palabra": "se",
+          "inicioMs": 8140,
+          "finMs": 8340
+        },
+        {
+          "palabra": "detiene",
+          "inicioMs": 8340,
+          "finMs": 8760
+        },
+        {
+          "palabra": "Niko",
+          "inicioMs": 9000,
+          "finMs": 9220
+        },
+        {
+          "palabra": "flotó",
+          "inicioMs": 9220,
+          "finMs": 9580
+        },
+        {
+          "palabra": "por",
+          "inicioMs": 9580,
+          "finMs": 9740
+        },
+        {
+          "palabra": "el",
+          "inicioMs": 9740,
+          "finMs": 9860
+        },
+        {
+          "palabra": "bucle",
+          "inicioMs": 9860,
+          "finMs": 10140
+        },
+        {
+          "palabra": "sin",
+          "inicioMs": 10140,
+          "finMs": 10400
+        },
+        {
+          "palabra": "un",
+          "inicioMs": 10400,
+          "finMs": 10540
+        },
+        {
+          "palabra": "solo",
+          "inicioMs": 10540,
+          "finMs": 10740
+        },
+        {
+          "palabra": "rasguño",
+          "inicioMs": 10740,
+          "finMs": 11600
+        }
+      ]
+    },
+    {
+      "id": 9,
+      "texto": "Mientras que en la feria de enfrente, el carrito del rival reventó la base del círculo. Aquella extraña gota se llama clotoide... ¡y hoy es la forma geométrica que salva vidas en cada montaña rusa del planeta!",
+      "icono": "Award",
+      "colorIcono": "#F59E0B",
+      "tituloVisual": "EL TRIUNFO DE LA CLOTOIDE",
+      "composicionVisual": "escenario_ilustrado",
+      "escenario": "parque_moderno_sunset",
+      "layout": "cinematico",
+      "transicion": "zoom_in",
+      "efectosCamara": [
+        "punch",
+        "drift"
+      ],
+      "sfx": "sfx/sfx_fair_bell.wav",
+      "volumenSfx": 0.28,
+      "palabrasClave": [
+        "gota se llama clotoide",
+        "forma geométrica",
+        "salva vidas"
+      ],
+      "personajes": [
+        {
+          "id": "niko",
+          "nombre": "Niko",
+          "posicion": {
+            "x": 0,
+            "y": 80
+          },
+          "escala": 1.15,
+          "orientacion": "derecha",
+          "habla": true,
+          "capaZ": 20,
+          "acciones": [
+            {
+              "tipo": "personalizada",
+              "pasos": [
+                {
+                  "inicioProgreso": 0,
+                  "finProgreso": 0.5,
+                  "poseId": "pointing_at_viewer",
+                  "expresion": "talking_enthusiastic",
+                  "posicion": {
+                    "x": -20,
+                    "y": 80
+                  },
+                  "curva": "suave",
+                  "procedural": "estatico"
+                },
+                {
+                  "inicioProgreso": 0.5,
+                  "finProgreso": 1.0,
+                  "poseId": "thumbs_up_approval",
+                  "expresion": "smile_wide",
+                  "posicion": {
+                    "x": 10,
+                    "y": 80
+                  },
+                  "curva": "rebote",
+                  "procedural": "estatico"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "duracionSegundos": 7.066,
+      "palabras": [
+        {
+          "palabra": "Mientras",
+          "inicioMs": 0,
+          "finMs": 340
+        },
+        {
+          "palabra": "que",
+          "inicioMs": 340,
+          "finMs": 540
+        },
+        {
+          "palabra": "en",
+          "inicioMs": 540,
+          "finMs": 620
+        },
+        {
+          "palabra": "la",
+          "inicioMs": 620,
+          "finMs": 680
+        },
+        {
+          "palabra": "feria",
+          "inicioMs": 680,
+          "finMs": 940
+        },
+        {
+          "palabra": "de",
+          "inicioMs": 940,
+          "finMs": 1060
+        },
+        {
+          "palabra": "enfrente",
+          "inicioMs": 1060,
+          "finMs": 1500
+        },
+        {
+          "palabra": "el",
+          "inicioMs": 1700,
+          "finMs": 1800
+        },
+        {
+          "palabra": "carrito",
+          "inicioMs": 1800,
+          "finMs": 2120
+        },
+        {
+          "palabra": "del",
+          "inicioMs": 2120,
+          "finMs": 2300
+        },
+        {
+          "palabra": "rival",
+          "inicioMs": 2300,
+          "finMs": 2520
+        },
+        {
+          "palabra": "reventó",
+          "inicioMs": 2520,
+          "finMs": 3080
+        },
+        {
+          "palabra": "la",
+          "inicioMs": 3080,
+          "finMs": 3180
+        },
+        {
+          "palabra": "base",
+          "inicioMs": 3180,
+          "finMs": 3380
+        },
+        {
+          "palabra": "del",
+          "inicioMs": 3380,
+          "finMs": 3520
+        },
+        {
+          "palabra": "círculo",
+          "inicioMs": 3520,
+          "finMs": 4040
+        },
+        {
+          "palabra": "Aquella",
+          "inicioMs": 4260,
+          "finMs": 4660
+        },
+        {
+          "palabra": "extraña",
+          "inicioMs": 4660,
+          "finMs": 5160
+        },
+        {
+          "palabra": "gota",
+          "inicioMs": 5160,
+          "finMs": 5560
+        },
+        {
+          "palabra": "se",
+          "inicioMs": 5560,
+          "finMs": 5660
+        },
+        {
+          "palabra": "llama",
+          "inicioMs": 5660,
+          "finMs": 5920
+        },
+        {
+          "palabra": "clotoide",
+          "inicioMs": 5920,
+          "finMs": 6740
+        },
+        {
+          "palabra": "y",
+          "inicioMs": 6740,
+          "finMs": 6760
+        },
+        {
+          "palabra": "hoy",
+          "inicioMs": 6760,
+          "finMs": 6780
+        },
+        {
+          "palabra": "es",
+          "inicioMs": 6780,
+          "finMs": 6800
+        },
+        {
+          "palabra": "la",
+          "inicioMs": 6800,
+          "finMs": 6820
+        },
+        {
+          "palabra": "forma",
+          "inicioMs": 6820,
+          "finMs": 6840
+        },
+        {
+          "palabra": "geométrica",
+          "inicioMs": 6840,
+          "finMs": 6860
+        },
+        {
+          "palabra": "que",
+          "inicioMs": 6860,
+          "finMs": 6880
+        },
+        {
+          "palabra": "salva",
+          "inicioMs": 6880,
+          "finMs": 6900
+        },
+        {
+          "palabra": "vidas",
+          "inicioMs": 6900,
+          "finMs": 6920
+        },
+        {
+          "palabra": "en",
+          "inicioMs": 6920,
+          "finMs": 6940
+        },
+        {
+          "palabra": "cada",
+          "inicioMs": 6940,
+          "finMs": 6960
+        },
+        {
+          "palabra": "montaña",
+          "inicioMs": 6960,
+          "finMs": 6980
+        },
+        {
+          "palabra": "rusa",
+          "inicioMs": 6980,
+          "finMs": 7000
+        },
+        {
+          "palabra": "del",
+          "inicioMs": 7000,
+          "finMs": 7020
+        },
+        {
+          "palabra": "planeta",
+          "inicioMs": 7020,
+          "finMs": 7040
+        }
+      ]
+    }
+  ]
+}

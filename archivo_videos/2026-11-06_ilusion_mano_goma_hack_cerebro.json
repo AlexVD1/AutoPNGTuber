@@ -1,0 +1,1893 @@
+{
+  "meta": {
+    "id": "ilusion_mano_goma_hack_cerebro",
+    "slug": "ilusion_mano_goma_hack_cerebro",
+    "temaResumen": "La ilusión de la mano de goma: cómo hackear tu mapa corporal en dos minutos (Neurociencia multisensorial, Botvinick & Cohen 1998, integración visual-táctil y respuesta de sobresalto/martillo)",
+    "duracionObjetivo": [
+      62,
+      75
+    ],
+    "titulo": "La ilusión de la mano de goma: cómo hackear tu mapa corporal en 2 minutos",
+    "titulo_corto": "La mano de goma",
+    "gancho": "Si pongo una mano de goma en la mesa y oculto tu mano real tras una pantalla... ¡en dos minutos tu cerebro creerá de verdad que ese plástico es parte de tu cuerpo!",
+    "genero": "Neurociencia, Percepción Humana y Psicología Experimental",
+    "playlist": "Biología, Sentidos Humanos y Curiosidades Científicas",
+    "fuentes": [
+      "Nature (Botvinick & Cohen 1998, Rubber hands 'feel' touch that eyes see)",
+      "Current Biology (Multisensory integration in body ownership illusions)",
+      "Neuropsychologia (Armel & Ramachandran 2003, Projecting sensations to external objects)"
+    ]
+  },
+  "escenas": [
+    {
+      "id": 1,
+      "texto": "Si pongo una mano de goma en la mesa y oculto tu mano real tras una pantalla... ¡en dos minutos tu cerebro creerá de verdad que ese plástico es parte de tu cuerpo!",
+      "icono": "Brain",
+      "colorIcono": "#8B5CF6",
+      "tituloVisual": "HACKEANDO TU CEREBRO",
+      "composicionVisual": "escenario_ilustrado",
+      "escenario": "laboratorio_neurociencia_mano_goma",
+      "layout": "narrativo",
+      "transicion": "corte",
+      "efectosCamara": [
+        "punch",
+        "drift"
+      ],
+      "sfx": "sfx/sfx_mano_goma_misterio_inicio.wav",
+      "volumenSfx": 0.25,
+      "palabrasClave": [
+        "mano de goma en la mesa",
+        "oculto tu mano real",
+        "ese plástico es parte de tu cuerpo"
+      ],
+      "personajes": [
+        {
+          "id": "stickman_sujeto",
+          "nombre": "Stickman",
+          "posicion": {
+            "x": -220,
+            "y": 90
+          },
+          "escala": 1.05,
+          "orientacion": "derecha",
+          "habla": true,
+          "capaZ": 20,
+          "acciones": [
+            {
+              "tipo": "personalizada",
+              "pasos": [
+                {
+                  "inicioProgreso": 0.0,
+                  "finProgreso": 0.48,
+                  "desdePalabra": "Si",
+                  "hastaPalabra": "pantalla",
+                  "poseId": "presenting_object",
+                  "expresion": "analytical",
+                  "posicion": {
+                    "x": -220,
+                    "y": 90
+                  },
+                  "curva": "suave",
+                  "procedural": "manipular"
+                },
+                {
+                  "inicioProgreso": 0.48,
+                  "finProgreso": 1.0,
+                  "desdePalabra": "minutos",
+                  "hastaPalabra": "cuerpo",
+                  "poseId": "surprised_hands_up",
+                  "expresion": "shocked",
+                  "posicion": {
+                    "x": -200,
+                    "y": 90
+                  },
+                  "curva": "impacto",
+                  "procedural": "estatico"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "objetos": [
+        {
+          "id": "mano_goma_mesa",
+          "propId": "mesa_experimento_mano_goma",
+          "posicion": {
+            "x": 185,
+            "y": 120
+          },
+          "escala": 1.35,
+          "capaZ": 28,
+          "pasos": [
+            {
+              "inicioProgreso": 0.0,
+              "finProgreso": 0.52,
+              "desdePalabra": "Si",
+              "hastaPalabra": "pantalla",
+              "estado": "inanimada",
+              "posicion": {
+                "x": 185,
+                "y": 120
+              },
+              "escala": 1.3
+            },
+            {
+              "inicioProgreso": 0.52,
+              "finProgreso": 1.0,
+              "desdePalabra": "cerebro",
+              "hastaPalabra": "cuerpo",
+              "estado": "adoptada",
+              "posicion": {
+                "x": 185,
+                "y": 115
+              },
+              "escala": 1.42
+            }
+          ]
+        }
+      ],
+      "duracionSegundos": 8.53,
+      "palabras": [
+        {
+          "palabra": "Si",
+          "inicioMs": 0,
+          "finMs": 120
+        },
+        {
+          "palabra": "pongo",
+          "inicioMs": 120,
+          "finMs": 440
+        },
+        {
+          "palabra": "una",
+          "inicioMs": 440,
+          "finMs": 660
+        },
+        {
+          "palabra": "mano",
+          "inicioMs": 660,
+          "finMs": 880
+        },
+        {
+          "palabra": "de",
+          "inicioMs": 880,
+          "finMs": 1080
+        },
+        {
+          "palabra": "goma",
+          "inicioMs": 1080,
+          "finMs": 1300
+        },
+        {
+          "palabra": "en",
+          "inicioMs": 1300,
+          "finMs": 1420
+        },
+        {
+          "palabra": "la",
+          "inicioMs": 1420,
+          "finMs": 1500
+        },
+        {
+          "palabra": "mesa",
+          "inicioMs": 1500,
+          "finMs": 1780
+        },
+        {
+          "palabra": "y",
+          "inicioMs": 1780,
+          "finMs": 2040
+        },
+        {
+          "palabra": "oculto",
+          "inicioMs": 2040,
+          "finMs": 2460
+        },
+        {
+          "palabra": "tu",
+          "inicioMs": 2460,
+          "finMs": 2560
+        },
+        {
+          "palabra": "mano",
+          "inicioMs": 2560,
+          "finMs": 2780
+        },
+        {
+          "palabra": "real",
+          "inicioMs": 2780,
+          "finMs": 3080
+        },
+        {
+          "palabra": "tras",
+          "inicioMs": 3080,
+          "finMs": 3320
+        },
+        {
+          "palabra": "una",
+          "inicioMs": 3320,
+          "finMs": 3540
+        },
+        {
+          "palabra": "pantalla",
+          "inicioMs": 3540,
+          "finMs": 4460
+        },
+        {
+          "palabra": "en",
+          "inicioMs": 4460,
+          "finMs": 4740
+        },
+        {
+          "palabra": "dos",
+          "inicioMs": 4740,
+          "finMs": 4860
+        },
+        {
+          "palabra": "minutos",
+          "inicioMs": 4860,
+          "finMs": 5100
+        },
+        {
+          "palabra": "tu",
+          "inicioMs": 5100,
+          "finMs": 5340
+        },
+        {
+          "palabra": "cerebro",
+          "inicioMs": 5340,
+          "finMs": 5560
+        },
+        {
+          "palabra": "creerá",
+          "inicioMs": 5560,
+          "finMs": 5920
+        },
+        {
+          "palabra": "de",
+          "inicioMs": 5920,
+          "finMs": 6020
+        },
+        {
+          "palabra": "verdad",
+          "inicioMs": 6020,
+          "finMs": 6240
+        },
+        {
+          "palabra": "que",
+          "inicioMs": 6240,
+          "finMs": 6420
+        },
+        {
+          "palabra": "ese",
+          "inicioMs": 6420,
+          "finMs": 6560
+        },
+        {
+          "palabra": "plástico",
+          "inicioMs": 6560,
+          "finMs": 6960
+        },
+        {
+          "palabra": "es",
+          "inicioMs": 6960,
+          "finMs": 7080
+        },
+        {
+          "palabra": "parte",
+          "inicioMs": 7080,
+          "finMs": 7260
+        },
+        {
+          "palabra": "de",
+          "inicioMs": 7260,
+          "finMs": 7460
+        },
+        {
+          "palabra": "tu",
+          "inicioMs": 7460,
+          "finMs": 7560
+        },
+        {
+          "palabra": "cuerpo",
+          "inicioMs": 7560,
+          "finMs": 7820
+        }
+      ],
+      "focoCamara": [
+        {
+          "x": -120,
+          "y": -20,
+          "escala": 1.15,
+          "inicioProgreso": 0.0,
+          "finProgreso": 0.34,
+          "curva": "suave"
+        },
+        {
+          "x": 90,
+          "y": 110,
+          "escala": 1.38,
+          "inicioProgreso": 0.34,
+          "finProgreso": 0.74,
+          "curva": "impacto"
+        },
+        {
+          "x": 10,
+          "y": 40,
+          "escala": 1.18,
+          "inicioProgreso": 0.74,
+          "finProgreso": 1.0,
+          "curva": "rebote"
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "texto": "Diseñado en mil novecientos noventa y ocho por los científicos Botvinick y Cohen, el truco consiste en acariciar con dos pinceles en perfecta sincronía la mano de goma visible y tu mano oculta.",
+      "icono": "Brush",
+      "colorIcono": "#F59E0B",
+      "tituloVisual": "PINCELES EN SINCRONÍA",
+      "composicionVisual": "primer_plano",
+      "escenario": "macro_pinceles_dedos_sincronia",
+      "layout": "narrativo",
+      "transicion": "whip_right",
+      "efectosCamara": [
+        "punch",
+        "drift"
+      ],
+      "sfx": "sfx/sfx_pincel_tactil_suave.wav",
+      "volumenSfx": 0.24,
+      "palabrasClave": [
+        "Botvinick y Cohen",
+        "dos pinceles en perfecta sincronía",
+        "mano de goma visible"
+      ],
+      "personajes": [
+        {
+          "id": "stickman_cientifico",
+          "nombre": "Stickman",
+          "posicion": {
+            "x": -230,
+            "y": 90
+          },
+          "escala": 1.05,
+          "orientacion": "derecha",
+          "habla": true,
+          "capaZ": 20,
+          "acciones": [
+            {
+              "tipo": "personalizada",
+              "pasos": [
+                {
+                  "inicioProgreso": 0.0,
+                  "finProgreso": 0.42,
+                  "desdePalabra": "Diseñado",
+                  "hastaPalabra": "Cohen",
+                  "poseId": "explaining_pointing_up",
+                  "expresion": "talking_enthusiastic",
+                  "posicion": {
+                    "x": -230,
+                    "y": 90
+                  },
+                  "curva": "suave",
+                  "procedural": "estatico"
+                },
+                {
+                  "inicioProgreso": 0.42,
+                  "finProgreso": 1.0,
+                  "desdePalabra": "acariciar",
+                  "hastaPalabra": "oculta",
+                  "poseId": "comparing_two_objects",
+                  "expresion": "smile_wide",
+                  "posicion": {
+                    "x": -210,
+                    "y": 90
+                  },
+                  "curva": "suave",
+                  "procedural": "manipular"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "objetos": [
+        {
+          "id": "pinceles_sync",
+          "propId": "pinceles_gemelos_tactiles",
+          "posicion": {
+            "x": 20,
+            "y": 80
+          },
+          "escala": 1.55,
+          "animacion": "ninguna",
+          "capaZ": 28
+        }
+      ],
+      "duracionSegundos": 10.858,
+      "palabras": [
+        {
+          "palabra": "Diseñado",
+          "inicioMs": 0,
+          "finMs": 620
+        },
+        {
+          "palabra": "en",
+          "inicioMs": 620,
+          "finMs": 760
+        },
+        {
+          "palabra": "mil",
+          "inicioMs": 760,
+          "finMs": 860
+        },
+        {
+          "palabra": "novecientos",
+          "inicioMs": 860,
+          "finMs": 1420
+        },
+        {
+          "palabra": "noventa",
+          "inicioMs": 1420,
+          "finMs": 1780
+        },
+        {
+          "palabra": "y",
+          "inicioMs": 1780,
+          "finMs": 1920
+        },
+        {
+          "palabra": "ocho",
+          "inicioMs": 1920,
+          "finMs": 2100
+        },
+        {
+          "palabra": "por",
+          "inicioMs": 2100,
+          "finMs": 2260
+        },
+        {
+          "palabra": "los",
+          "inicioMs": 2260,
+          "finMs": 2360
+        },
+        {
+          "palabra": "científicos",
+          "inicioMs": 2360,
+          "finMs": 2980
+        },
+        {
+          "palabra": "Botvinick",
+          "inicioMs": 2980,
+          "finMs": 3580
+        },
+        {
+          "palabra": "y",
+          "inicioMs": 3580,
+          "finMs": 3760
+        },
+        {
+          "palabra": "Cohen",
+          "inicioMs": 3760,
+          "finMs": 4000
+        },
+        {
+          "palabra": "el",
+          "inicioMs": 4340,
+          "finMs": 4480
+        },
+        {
+          "palabra": "truco",
+          "inicioMs": 4480,
+          "finMs": 4740
+        },
+        {
+          "palabra": "consiste",
+          "inicioMs": 4740,
+          "finMs": 5080
+        },
+        {
+          "palabra": "en",
+          "inicioMs": 5080,
+          "finMs": 5360
+        },
+        {
+          "palabra": "acariciar",
+          "inicioMs": 5360,
+          "finMs": 5860
+        },
+        {
+          "palabra": "con",
+          "inicioMs": 5860,
+          "finMs": 6020
+        },
+        {
+          "palabra": "dos",
+          "inicioMs": 6020,
+          "finMs": 6220
+        },
+        {
+          "palabra": "pinceles",
+          "inicioMs": 6220,
+          "finMs": 6760
+        },
+        {
+          "palabra": "en",
+          "inicioMs": 6760,
+          "finMs": 6980
+        },
+        {
+          "palabra": "perfecta",
+          "inicioMs": 6980,
+          "finMs": 7480
+        },
+        {
+          "palabra": "sincronía",
+          "inicioMs": 7480,
+          "finMs": 8000
+        },
+        {
+          "palabra": "la",
+          "inicioMs": 8000,
+          "finMs": 8140
+        },
+        {
+          "palabra": "mano",
+          "inicioMs": 8140,
+          "finMs": 8340
+        },
+        {
+          "palabra": "de",
+          "inicioMs": 8340,
+          "finMs": 8500
+        },
+        {
+          "palabra": "goma",
+          "inicioMs": 8500,
+          "finMs": 8720
+        },
+        {
+          "palabra": "visible",
+          "inicioMs": 8720,
+          "finMs": 9000
+        },
+        {
+          "palabra": "y",
+          "inicioMs": 9000,
+          "finMs": 9380
+        },
+        {
+          "palabra": "tu",
+          "inicioMs": 9380,
+          "finMs": 9480
+        },
+        {
+          "palabra": "mano",
+          "inicioMs": 9480,
+          "finMs": 9700
+        },
+        {
+          "palabra": "oculta",
+          "inicioMs": 9700,
+          "finMs": 10240
+        }
+      ],
+      "focoCamara": [
+        {
+          "x": -130,
+          "y": -30,
+          "escala": 1.15,
+          "inicioProgreso": 0.0,
+          "finProgreso": 0.36,
+          "curva": "suave"
+        },
+        {
+          "x": 40,
+          "y": 115,
+          "escala": 1.4,
+          "inicioProgreso": 0.36,
+          "finProgreso": 0.78,
+          "curva": "impacto"
+        },
+        {
+          "x": 15,
+          "y": 55,
+          "escala": 1.2,
+          "inicioProgreso": 0.78,
+          "finProgreso": 1.0,
+          "curva": "suave"
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "texto": "Sientes el roce en tus dedos reales, pero tus ojos ven el pincel sobre el látex. Ante esa contradicción, tu cerebro decide reescribir por completo tu mapa somatosensorial.",
+      "icono": "Cpu",
+      "colorIcono": "#EC4899",
+      "tituloVisual": "REESCRITURA NEURONAL",
+      "composicionVisual": "escenario_ilustrado",
+      "escenario": "interior_corteza_cerebral_redes",
+      "layout": "narrativo",
+      "transicion": "zoom_in",
+      "efectosCamara": [
+        "punch",
+        "drift"
+      ],
+      "sfx": "sfx/sfx_sinapsis_conexion_electrica.wav",
+      "volumenSfx": 0.25,
+      "palabrasClave": [
+        "sientes el roce",
+        "tus ojos ven el pincel",
+        "mapa somatosensorial"
+      ],
+      "personajes": [
+        {
+          "id": "stickman_cerebro",
+          "nombre": "Stickman",
+          "posicion": {
+            "x": -220,
+            "y": 95
+          },
+          "escala": 1.05,
+          "orientacion": "derecha",
+          "habla": true,
+          "capaZ": 20,
+          "acciones": [
+            {
+              "tipo": "personalizada",
+              "pasos": [
+                {
+                  "inicioProgreso": 0.0,
+                  "finProgreso": 0.48,
+                  "desdePalabra": "Sientes",
+                  "hastaPalabra": "látex",
+                  "poseId": "thinking_chin_hand",
+                  "expresion": "analytical",
+                  "posicion": {
+                    "x": -220,
+                    "y": 95
+                  },
+                  "curva": "suave",
+                  "procedural": "estatico"
+                },
+                {
+                  "inicioProgreso": 0.48,
+                  "finProgreso": 1.0,
+                  "desdePalabra": "contradicción",
+                  "hastaPalabra": "somatosensorial",
+                  "poseId": "eureka_idea",
+                  "expresion": "eureka",
+                  "posicion": {
+                    "x": -195,
+                    "y": 95
+                  },
+                  "curva": "impacto",
+                  "procedural": "estatico"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "objetos": [
+        {
+          "id": "cerebro_mapa",
+          "propId": "cerebro_corteza_somatosensorial",
+          "posicion": {
+            "x": 150,
+            "y": -80
+          },
+          "escala": 1.45,
+          "capaZ": 28,
+          "pasos": [
+            {
+              "inicioProgreso": 0.0,
+              "finProgreso": 0.55,
+              "desdePalabra": "Sientes",
+              "hastaPalabra": "contradicción",
+              "estado": "conflicto",
+              "posicion": {
+                "x": 150,
+                "y": -80
+              },
+              "escala": 1.38
+            },
+            {
+              "inicioProgreso": 0.55,
+              "finProgreso": 1.0,
+              "desdePalabra": "reescribir",
+              "hastaPalabra": "somatosensorial",
+              "estado": "reescribiendo",
+              "posicion": {
+                "x": 150,
+                "y": -85
+              },
+              "escala": 1.52
+            }
+          ]
+        }
+      ],
+      "duracionSegundos": 9.994,
+      "palabras": [
+        {
+          "palabra": "Sientes",
+          "inicioMs": 0,
+          "finMs": 260
+        },
+        {
+          "palabra": "el",
+          "inicioMs": 260,
+          "finMs": 520
+        },
+        {
+          "palabra": "roce",
+          "inicioMs": 520,
+          "finMs": 780
+        },
+        {
+          "palabra": "en",
+          "inicioMs": 780,
+          "finMs": 920
+        },
+        {
+          "palabra": "tus",
+          "inicioMs": 920,
+          "finMs": 1080
+        },
+        {
+          "palabra": "dedos",
+          "inicioMs": 1080,
+          "finMs": 1320
+        },
+        {
+          "palabra": "reales",
+          "inicioMs": 1320,
+          "finMs": 1860
+        },
+        {
+          "palabra": "pero",
+          "inicioMs": 2100,
+          "finMs": 2200
+        },
+        {
+          "palabra": "tus",
+          "inicioMs": 2200,
+          "finMs": 2420
+        },
+        {
+          "palabra": "ojos",
+          "inicioMs": 2420,
+          "finMs": 2640
+        },
+        {
+          "palabra": "ven",
+          "inicioMs": 2640,
+          "finMs": 2900
+        },
+        {
+          "palabra": "el",
+          "inicioMs": 2900,
+          "finMs": 3060
+        },
+        {
+          "palabra": "pincel",
+          "inicioMs": 3060,
+          "finMs": 3440
+        },
+        {
+          "palabra": "sobre",
+          "inicioMs": 3440,
+          "finMs": 3700
+        },
+        {
+          "palabra": "el",
+          "inicioMs": 3700,
+          "finMs": 3860
+        },
+        {
+          "palabra": "látex",
+          "inicioMs": 3860,
+          "finMs": 4280
+        },
+        {
+          "palabra": "Ante",
+          "inicioMs": 4500,
+          "finMs": 4800
+        },
+        {
+          "palabra": "esa",
+          "inicioMs": 4800,
+          "finMs": 4960
+        },
+        {
+          "palabra": "contradicción",
+          "inicioMs": 4960,
+          "finMs": 5700
+        },
+        {
+          "palabra": "tu",
+          "inicioMs": 6040,
+          "finMs": 6140
+        },
+        {
+          "palabra": "cerebro",
+          "inicioMs": 6140,
+          "finMs": 6520
+        },
+        {
+          "palabra": "decide",
+          "inicioMs": 6520,
+          "finMs": 6820
+        },
+        {
+          "palabra": "reescribir",
+          "inicioMs": 6820,
+          "finMs": 7460
+        },
+        {
+          "palabra": "por",
+          "inicioMs": 7460,
+          "finMs": 7640
+        },
+        {
+          "palabra": "completo",
+          "inicioMs": 7640,
+          "finMs": 8020
+        },
+        {
+          "palabra": "tu",
+          "inicioMs": 8020,
+          "finMs": 8240
+        },
+        {
+          "palabra": "mapa",
+          "inicioMs": 8240,
+          "finMs": 8420
+        },
+        {
+          "palabra": "somatosensorial",
+          "inicioMs": 8420,
+          "finMs": 9320
+        }
+      ],
+      "focoCamara": [
+        {
+          "x": -110,
+          "y": -20,
+          "escala": 1.16,
+          "inicioProgreso": 0.0,
+          "finProgreso": 0.38,
+          "curva": "suave"
+        },
+        {
+          "x": 80,
+          "y": -50,
+          "escala": 1.42,
+          "inicioProgreso": 0.38,
+          "finProgreso": 0.78,
+          "curva": "impacto"
+        },
+        {
+          "x": 20,
+          "y": -10,
+          "escala": 1.2,
+          "inicioProgreso": 0.78,
+          "finProgreso": 1.0,
+          "curva": "rebote"
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "texto": "La vista vence al tacto: la corteza cerebral adopta el plástico inanimado y empiezas a sentir las caricias directamente sobre la superficie de goma.",
+      "icono": "Eye",
+      "colorIcono": "#06B6D4",
+      "tituloVisual": "LA VISTA DOMINA",
+      "composicionVisual": "plano_general",
+      "escenario": "laboratorio_neurociencia_mano_goma",
+      "layout": "narrativo",
+      "transicion": "flash",
+      "efectosCamara": [
+        "punch",
+        "drift"
+      ],
+      "sfx": "sfx/sfx_pincel_tactil_suave.wav",
+      "volumenSfx": 0.22,
+      "palabrasClave": [
+        "vista vence al tacto",
+        "adopta el plástico",
+        "sientes sobre la goma"
+      ],
+      "personajes": [
+        {
+          "id": "stickman_asombro",
+          "nombre": "Stickman",
+          "posicion": {
+            "x": -220,
+            "y": 90
+          },
+          "escala": 1.05,
+          "orientacion": "derecha",
+          "habla": true,
+          "capaZ": 20,
+          "acciones": [
+            {
+              "tipo": "personalizada",
+              "pasos": [
+                {
+                  "inicioProgreso": 0.0,
+                  "finProgreso": 0.45,
+                  "desdePalabra": "La",
+                  "hastaPalabra": "inanimado",
+                  "poseId": "scratching_head",
+                  "expresion": "confused",
+                  "posicion": {
+                    "x": -220,
+                    "y": 90
+                  },
+                  "curva": "suave",
+                  "procedural": "estatico"
+                },
+                {
+                  "inicioProgreso": 0.45,
+                  "finProgreso": 1.0,
+                  "desdePalabra": "empiezas",
+                  "hastaPalabra": "goma",
+                  "poseId": "pointing_right",
+                  "expresion": "surprised",
+                  "posicion": {
+                    "x": -195,
+                    "y": 90
+                  },
+                  "curva": "suave",
+                  "procedural": "estatico"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "objetos": [
+        {
+          "id": "mano_goma_adoptada",
+          "propId": "mesa_experimento_mano_goma",
+          "posicion": {
+            "x": 185,
+            "y": 115
+          },
+          "escala": 1.45,
+          "capaZ": 28,
+          "pasos": [
+            {
+              "inicioProgreso": 0.0,
+              "finProgreso": 1.0,
+              "estado": "adoptada",
+              "posicion": {
+                "x": 185,
+                "y": 115
+              },
+              "escala": 1.45
+            }
+          ]
+        }
+      ],
+      "duracionSegundos": 8.098,
+      "palabras": [
+        {
+          "palabra": "La",
+          "inicioMs": 0,
+          "finMs": 180
+        },
+        {
+          "palabra": "vista",
+          "inicioMs": 180,
+          "finMs": 440
+        },
+        {
+          "palabra": "vence",
+          "inicioMs": 440,
+          "finMs": 760
+        },
+        {
+          "palabra": "al",
+          "inicioMs": 760,
+          "finMs": 900
+        },
+        {
+          "palabra": "tacto",
+          "inicioMs": 900,
+          "finMs": 1360
+        },
+        {
+          "palabra": "la",
+          "inicioMs": 1560,
+          "finMs": 1660
+        },
+        {
+          "palabra": "corteza",
+          "inicioMs": 1660,
+          "finMs": 2100
+        },
+        {
+          "palabra": "cerebral",
+          "inicioMs": 2100,
+          "finMs": 2440
+        },
+        {
+          "palabra": "adopta",
+          "inicioMs": 2440,
+          "finMs": 3020
+        },
+        {
+          "palabra": "el",
+          "inicioMs": 3020,
+          "finMs": 3120
+        },
+        {
+          "palabra": "plástico",
+          "inicioMs": 3120,
+          "finMs": 3480
+        },
+        {
+          "palabra": "inanimado",
+          "inicioMs": 3480,
+          "finMs": 4020
+        },
+        {
+          "palabra": "y",
+          "inicioMs": 4020,
+          "finMs": 4160
+        },
+        {
+          "palabra": "empiezas",
+          "inicioMs": 4160,
+          "finMs": 4560
+        },
+        {
+          "palabra": "a",
+          "inicioMs": 4560,
+          "finMs": 4640
+        },
+        {
+          "palabra": "sentir",
+          "inicioMs": 4640,
+          "finMs": 4920
+        },
+        {
+          "palabra": "las",
+          "inicioMs": 4920,
+          "finMs": 5100
+        },
+        {
+          "palabra": "caricias",
+          "inicioMs": 5100,
+          "finMs": 5520
+        },
+        {
+          "palabra": "directamente",
+          "inicioMs": 5520,
+          "finMs": 5860
+        },
+        {
+          "palabra": "sobre",
+          "inicioMs": 5860,
+          "finMs": 6460
+        },
+        {
+          "palabra": "la",
+          "inicioMs": 6460,
+          "finMs": 6580
+        },
+        {
+          "palabra": "superficie",
+          "inicioMs": 6580,
+          "finMs": 7160
+        },
+        {
+          "palabra": "de",
+          "inicioMs": 7160,
+          "finMs": 7240
+        },
+        {
+          "palabra": "goma",
+          "inicioMs": 7240,
+          "finMs": 7520
+        }
+      ],
+      "focoCamara": [
+        {
+          "x": -120,
+          "y": -20,
+          "escala": 1.15,
+          "inicioProgreso": 0.0,
+          "finProgreso": 0.34,
+          "curva": "suave"
+        },
+        {
+          "x": 120,
+          "y": 110,
+          "escala": 1.4,
+          "inicioProgreso": 0.34,
+          "finProgreso": 0.76,
+          "curva": "impacto"
+        },
+        {
+          "x": 30,
+          "y": 40,
+          "escala": 1.18,
+          "inicioProgreso": 0.76,
+          "finProgreso": 1.0,
+          "curva": "suave"
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "texto": "¿Crees que es pura sugestión? Si el científico levanta un martillo y golpea con furia la mano de goma, ¡pegarás un salto de terror apartándote al instante!",
+      "icono": "Hammer",
+      "colorIcono": "#EF4444",
+      "tituloVisual": "¡GOLPE DE MARTILLO!",
+      "composicionVisual": "escenario_ilustrado",
+      "escenario": "climax_martillo_panico_mesa",
+      "layout": "narrativo",
+      "transicion": "zoom_in",
+      "efectosCamara": [
+        "punch",
+        "shake"
+      ],
+      "sfx": "sfx/sfx_golpe_martillo_panico.wav",
+      "volumenSfx": 0.28,
+      "palabrasClave": [
+        "levanta un martillo",
+        "golpea con furia",
+        "salto de terror"
+      ],
+      "personajes": [
+        {
+          "id": "stickman_panico",
+          "nombre": "Stickman",
+          "posicion": {
+            "x": -200,
+            "y": 90
+          },
+          "escala": 1.05,
+          "orientacion": "derecha",
+          "habla": true,
+          "capaZ": 20,
+          "acciones": [
+            {
+              "tipo": "personalizada",
+              "pasos": [
+                {
+                  "inicioProgreso": 0.0,
+                  "finProgreso": 0.4,
+                  "desdePalabra": "Crees",
+                  "hastaPalabra": "martillo",
+                  "poseId": "protecting_shielding",
+                  "expresion": "worried",
+                  "posicion": {
+                    "x": -190,
+                    "y": 90
+                  },
+                  "curva": "suave",
+                  "procedural": "estatico"
+                },
+                {
+                  "inicioProgreso": 0.4,
+                  "finProgreso": 1.0,
+                  "desdePalabra": "golpea",
+                  "hastaPalabra": "instante",
+                  "poseId": "shock_explosion",
+                  "expresion": "shocked",
+                  "posicion": {
+                    "x": -250,
+                    "y": 75
+                  },
+                  "curva": "impacto",
+                  "procedural": "temblar"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "objetos": [
+        {
+          "id": "martillo_panico",
+          "propId": "martillo_amenaza_impacto",
+          "posicion": {
+            "x": 210,
+            "y": 110
+          },
+          "escala": 1.45,
+          "capaZ": 29,
+          "pasos": [
+            {
+              "inicioProgreso": 0.0,
+              "finProgreso": 0.4,
+              "desdePalabra": "Crees",
+              "hastaPalabra": "martillo",
+              "estado": "amenaza",
+              "posicion": {
+                "x": 220,
+                "y": 45
+              },
+              "escala": 1.4,
+              "curva": "anticipacion"
+            },
+            {
+              "inicioProgreso": 0.4,
+              "finProgreso": 1.0,
+              "desdePalabra": "golpea",
+              "hastaPalabra": "instante",
+              "estado": "impacto",
+              "posicion": {
+                "x": 200,
+                "y": 130
+              },
+              "escala": 1.5,
+              "curva": "impacto"
+            }
+          ]
+        }
+      ],
+      "duracionSegundos": 8.458,
+      "palabras": [
+        {
+          "palabra": "Crees",
+          "inicioMs": 0,
+          "finMs": 280
+        },
+        {
+          "palabra": "que",
+          "inicioMs": 280,
+          "finMs": 540
+        },
+        {
+          "palabra": "es",
+          "inicioMs": 540,
+          "finMs": 780
+        },
+        {
+          "palabra": "pura",
+          "inicioMs": 780,
+          "finMs": 920
+        },
+        {
+          "palabra": "sugestión",
+          "inicioMs": 920,
+          "finMs": 1520
+        },
+        {
+          "palabra": "Si",
+          "inicioMs": 1780,
+          "finMs": 1860
+        },
+        {
+          "palabra": "el",
+          "inicioMs": 1860,
+          "finMs": 1960
+        },
+        {
+          "palabra": "científico",
+          "inicioMs": 1960,
+          "finMs": 2560
+        },
+        {
+          "palabra": "levanta",
+          "inicioMs": 2560,
+          "finMs": 2960
+        },
+        {
+          "palabra": "un",
+          "inicioMs": 2960,
+          "finMs": 3100
+        },
+        {
+          "palabra": "martillo",
+          "inicioMs": 3100,
+          "finMs": 3460
+        },
+        {
+          "palabra": "y",
+          "inicioMs": 3460,
+          "finMs": 3580
+        },
+        {
+          "palabra": "golpea",
+          "inicioMs": 3580,
+          "finMs": 3920
+        },
+        {
+          "palabra": "con",
+          "inicioMs": 3920,
+          "finMs": 4120
+        },
+        {
+          "palabra": "furia",
+          "inicioMs": 4120,
+          "finMs": 4420
+        },
+        {
+          "palabra": "la",
+          "inicioMs": 4420,
+          "finMs": 4540
+        },
+        {
+          "palabra": "mano",
+          "inicioMs": 4540,
+          "finMs": 4720
+        },
+        {
+          "palabra": "de",
+          "inicioMs": 4720,
+          "finMs": 4880
+        },
+        {
+          "palabra": "goma",
+          "inicioMs": 4880,
+          "finMs": 5140
+        },
+        {
+          "palabra": "pegarás",
+          "inicioMs": 5520,
+          "finMs": 5840
+        },
+        {
+          "palabra": "un",
+          "inicioMs": 5840,
+          "finMs": 5960
+        },
+        {
+          "palabra": "salto",
+          "inicioMs": 5960,
+          "finMs": 6280
+        },
+        {
+          "palabra": "de",
+          "inicioMs": 6280,
+          "finMs": 6380
+        },
+        {
+          "palabra": "terror",
+          "inicioMs": 6380,
+          "finMs": 6620
+        },
+        {
+          "palabra": "apartándote",
+          "inicioMs": 6620,
+          "finMs": 7300
+        },
+        {
+          "palabra": "al",
+          "inicioMs": 7300,
+          "finMs": 7380
+        },
+        {
+          "palabra": "instante",
+          "inicioMs": 7380,
+          "finMs": 7920
+        }
+      ],
+      "focoCamara": [
+        {
+          "x": -70,
+          "y": 40,
+          "escala": 1.12,
+          "inicioProgreso": 0.0,
+          "finProgreso": 0.36,
+          "curva": "suave"
+        },
+        {
+          "x": 95,
+          "y": 115,
+          "escala": 1.34,
+          "inicioProgreso": 0.36,
+          "finProgreso": 0.74,
+          "curva": "impacto"
+        },
+        {
+          "x": 0,
+          "y": 55,
+          "escala": 1.15,
+          "inicioProgreso": 0.74,
+          "finProgreso": 1.0,
+          "curva": "rebote"
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "texto": "Tus monitores registran un disparo inmediato de adrenalina, tu pulso cardíaco vuela y tus palmas sudan: tu sistema nervioso intentaba salvar esa pieza de caucho como si fueras tú.",
+      "icono": "Activity",
+      "colorIcono": "#10B981",
+      "tituloVisual": "ADRENALINA REAL",
+      "composicionVisual": "plano_general",
+      "escenario": "grafica_estres_cardiaco_laboratorio",
+      "layout": "narrativo",
+      "transicion": "whip_left",
+      "efectosCamara": [
+        "punch",
+        "drift"
+      ],
+      "sfx": "sfx/sfx_monitor_cardiaco_pico_miedo.wav",
+      "volumenSfx": 0.24,
+      "palabrasClave": [
+        "disparo inmediato de adrenalina",
+        "pulso cardíaco vuela",
+        "salvar esa pieza de caucho"
+      ],
+      "personajes": [
+        {
+          "id": "stickman_fisiologia",
+          "nombre": "Stickman",
+          "posicion": {
+            "x": -220,
+            "y": 95
+          },
+          "escala": 1.0,
+          "orientacion": "derecha",
+          "habla": true,
+          "capaZ": 20,
+          "acciones": [
+            {
+              "tipo": "personalizada",
+              "pasos": [
+                {
+                  "inicioProgreso": 0.0,
+                  "finProgreso": 0.5,
+                  "desdePalabra": "Tus",
+                  "hastaPalabra": "sudan",
+                  "poseId": "trembling_fear",
+                  "expresion": "worried",
+                  "posicion": {
+                    "x": -220,
+                    "y": 95
+                  },
+                  "curva": "suave",
+                  "procedural": "temblar"
+                },
+                {
+                  "inicioProgreso": 0.5,
+                  "finProgreso": 1.0,
+                  "desdePalabra": "sistema",
+                  "hastaPalabra": "tú",
+                  "poseId": "covering_mouth",
+                  "expresion": "surprised",
+                  "posicion": {
+                    "x": -195,
+                    "y": 95
+                  },
+                  "curva": "suave",
+                  "procedural": "estatico"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "objetos": [
+        {
+          "id": "monitor_cardiaco",
+          "propId": "monitor_fisiologico_sudor_miedo",
+          "posicion": {
+            "x": 165,
+            "y": -20
+          },
+          "escala": 1.4,
+          "animacion": "pulso",
+          "capaZ": 28
+        }
+      ],
+      "duracionSegundos": 9.802,
+      "palabras": [
+        {
+          "palabra": "Tus",
+          "inicioMs": 0,
+          "finMs": 240
+        },
+        {
+          "palabra": "monitores",
+          "inicioMs": 240,
+          "finMs": 680
+        },
+        {
+          "palabra": "registran",
+          "inicioMs": 680,
+          "finMs": 1220
+        },
+        {
+          "palabra": "un",
+          "inicioMs": 1220,
+          "finMs": 1360
+        },
+        {
+          "palabra": "disparo",
+          "inicioMs": 1360,
+          "finMs": 1800
+        },
+        {
+          "palabra": "inmediato",
+          "inicioMs": 1800,
+          "finMs": 2180
+        },
+        {
+          "palabra": "de",
+          "inicioMs": 2180,
+          "finMs": 2320
+        },
+        {
+          "palabra": "adrenalina",
+          "inicioMs": 2320,
+          "finMs": 2940
+        },
+        {
+          "palabra": "tu",
+          "inicioMs": 3240,
+          "finMs": 3320
+        },
+        {
+          "palabra": "pulso",
+          "inicioMs": 3320,
+          "finMs": 3640
+        },
+        {
+          "palabra": "cardíaco",
+          "inicioMs": 3640,
+          "finMs": 4160
+        },
+        {
+          "palabra": "vuela",
+          "inicioMs": 4160,
+          "finMs": 4520
+        },
+        {
+          "palabra": "y",
+          "inicioMs": 4520,
+          "finMs": 4740
+        },
+        {
+          "palabra": "tus",
+          "inicioMs": 4740,
+          "finMs": 4920
+        },
+        {
+          "palabra": "palmas",
+          "inicioMs": 4920,
+          "finMs": 5260
+        },
+        {
+          "palabra": "sudan",
+          "inicioMs": 5260,
+          "finMs": 5700
+        },
+        {
+          "palabra": "tu",
+          "inicioMs": 6000,
+          "finMs": 6180
+        },
+        {
+          "palabra": "sistema",
+          "inicioMs": 6180,
+          "finMs": 6500
+        },
+        {
+          "palabra": "nervioso",
+          "inicioMs": 6500,
+          "finMs": 6940
+        },
+        {
+          "palabra": "intentaba",
+          "inicioMs": 6940,
+          "finMs": 7400
+        },
+        {
+          "palabra": "salvar",
+          "inicioMs": 7400,
+          "finMs": 7660
+        },
+        {
+          "palabra": "esa",
+          "inicioMs": 7660,
+          "finMs": 7880
+        },
+        {
+          "palabra": "pieza",
+          "inicioMs": 7880,
+          "finMs": 8160
+        },
+        {
+          "palabra": "de",
+          "inicioMs": 8160,
+          "finMs": 8220
+        },
+        {
+          "palabra": "caucho",
+          "inicioMs": 8220,
+          "finMs": 8520
+        },
+        {
+          "palabra": "como",
+          "inicioMs": 8520,
+          "finMs": 8720
+        },
+        {
+          "palabra": "si",
+          "inicioMs": 8720,
+          "finMs": 8840
+        },
+        {
+          "palabra": "fueras",
+          "inicioMs": 8840,
+          "finMs": 9120
+        },
+        {
+          "palabra": "tú",
+          "inicioMs": 9120,
+          "finMs": 9300
+        }
+      ],
+      "focoCamara": [
+        {
+          "x": -110,
+          "y": -20,
+          "escala": 1.15,
+          "inicioProgreso": 0.0,
+          "finProgreso": 0.34,
+          "curva": "suave"
+        },
+        {
+          "x": 110,
+          "y": -30,
+          "escala": 1.38,
+          "inicioProgreso": 0.34,
+          "finProgreso": 0.74,
+          "curva": "impacto"
+        },
+        {
+          "x": 20,
+          "y": 20,
+          "escala": 1.18,
+          "inicioProgreso": 0.74,
+          "finProgreso": 1.0,
+          "curva": "suave"
+        }
+      ]
+    },
+    {
+      "id": 7,
+      "texto": "Esto demuestra que tu mapa corporal es fascinantemente maleable: tu mente no tiene límites fijos y puede adoptar cualquier objeto externo en cuestión de segundos.",
+      "icono": "Sparkles",
+      "colorIcono": "#A855F7",
+      "tituloVisual": "MAPA CORPORAL MALEABLE",
+      "composicionVisual": "escenario_ilustrado",
+      "escenario": "laboratorio_cierre_eureka_neuro",
+      "layout": "narrativo",
+      "transicion": "zoom_in",
+      "efectosCamara": [
+        "punch",
+        "drift"
+      ],
+      "sfx": "sfx/sfx_cierre_cerebro_asombro.wav",
+      "volumenSfx": 0.25,
+      "palabrasClave": [
+        "mapa corporal maleable",
+        "sin límites fijos",
+        "cualquier objeto en segundos"
+      ],
+      "personajes": [
+        {
+          "id": "stickman_cierre",
+          "nombre": "Stickman",
+          "posicion": {
+            "x": -180,
+            "y": 90
+          },
+          "escala": 1.05,
+          "orientacion": "derecha",
+          "habla": true,
+          "capaZ": 20,
+          "acciones": [
+            {
+              "tipo": "personalizada",
+              "pasos": [
+                {
+                  "inicioProgreso": 0,
+                  "finProgreso": 0.5,
+                  "poseId": "pointing_at_viewer",
+                  "expresion": "smile_wide",
+                  "posicion": {
+                    "x": -120,
+                    "y": 90
+                  },
+                  "curva": "suave",
+                  "procedural": "estatico"
+                },
+                {
+                  "inicioProgreso": 0.5,
+                  "finProgreso": 1.0,
+                  "poseId": "celebrating_arms_up",
+                  "expresion": "talking_enthusiastic",
+                  "posicion": {
+                    "x": -100,
+                    "y": 90
+                  },
+                  "curva": "suave",
+                  "procedural": "caminar"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "objetos": [
+        {
+          "id": "espejo_cierre",
+          "propId": "espejo_realidad_truco_mental",
+          "posicion": {
+            "x": 165,
+            "y": -25
+          },
+          "escala": 1.4,
+          "animacion": "flotar",
+          "capaZ": 28
+        }
+      ],
+      "duracionSegundos": 8.362,
+      "palabras": [
+        {
+          "palabra": "Esto",
+          "inicioMs": 0,
+          "finMs": 340
+        },
+        {
+          "palabra": "demuestra",
+          "inicioMs": 340,
+          "finMs": 780
+        },
+        {
+          "palabra": "que",
+          "inicioMs": 780,
+          "finMs": 880
+        },
+        {
+          "palabra": "tu",
+          "inicioMs": 880,
+          "finMs": 1000
+        },
+        {
+          "palabra": "mapa",
+          "inicioMs": 1000,
+          "finMs": 1160
+        },
+        {
+          "palabra": "corporal",
+          "inicioMs": 1160,
+          "finMs": 1780
+        },
+        {
+          "palabra": "es",
+          "inicioMs": 1780,
+          "finMs": 2000
+        },
+        {
+          "palabra": "fascinantemente",
+          "inicioMs": 2000,
+          "finMs": 2640
+        },
+        {
+          "palabra": "maleable",
+          "inicioMs": 2640,
+          "finMs": 3360
+        },
+        {
+          "palabra": "tu",
+          "inicioMs": 3680,
+          "finMs": 3820
+        },
+        {
+          "palabra": "mente",
+          "inicioMs": 3820,
+          "finMs": 3960
+        },
+        {
+          "palabra": "no",
+          "inicioMs": 3960,
+          "finMs": 4240
+        },
+        {
+          "palabra": "tiene",
+          "inicioMs": 4240,
+          "finMs": 4420
+        },
+        {
+          "palabra": "límites",
+          "inicioMs": 4420,
+          "finMs": 4780
+        },
+        {
+          "palabra": "fijos",
+          "inicioMs": 4780,
+          "finMs": 5180
+        },
+        {
+          "palabra": "y",
+          "inicioMs": 5180,
+          "finMs": 5260
+        },
+        {
+          "palabra": "puede",
+          "inicioMs": 5260,
+          "finMs": 5420
+        },
+        {
+          "palabra": "adoptar",
+          "inicioMs": 5420,
+          "finMs": 5800
+        },
+        {
+          "palabra": "cualquier",
+          "inicioMs": 5800,
+          "finMs": 5980
+        },
+        {
+          "palabra": "objeto",
+          "inicioMs": 5980,
+          "finMs": 6260
+        },
+        {
+          "palabra": "externo",
+          "inicioMs": 6260,
+          "finMs": 6800
+        },
+        {
+          "palabra": "en",
+          "inicioMs": 6800,
+          "finMs": 6860
+        },
+        {
+          "palabra": "cuestión",
+          "inicioMs": 6860,
+          "finMs": 7120
+        },
+        {
+          "palabra": "de",
+          "inicioMs": 7120,
+          "finMs": 7300
+        },
+        {
+          "palabra": "segundos",
+          "inicioMs": 7300,
+          "finMs": 7680
+        }
+      ],
+      "focoCamara": [
+        {
+          "x": -90,
+          "y": -10,
+          "escala": 1.15,
+          "inicioProgreso": 0.0,
+          "finProgreso": 0.36,
+          "curva": "suave"
+        },
+        {
+          "x": 90,
+          "y": -30,
+          "escala": 1.36,
+          "inicioProgreso": 0.36,
+          "finProgreso": 0.75,
+          "curva": "impacto"
+        },
+        {
+          "x": 0,
+          "y": 0,
+          "escala": 1.12,
+          "inicioProgreso": 0.75,
+          "finProgreso": 1.0,
+          "curva": "rebote"
+        }
+      ]
+    }
+  ]
+}

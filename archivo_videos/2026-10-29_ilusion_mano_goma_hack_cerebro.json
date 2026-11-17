@@ -45,7 +45,7 @@
           "id": "stickman_sujeto",
           "nombre": "Stickman",
           "posicion": {
-            "x": -160,
+            "x": -220,
             "y": 90
           },
           "escala": 1.05,
@@ -57,27 +57,31 @@
               "tipo": "personalizada",
               "pasos": [
                 {
-                  "inicioProgreso": 0,
-                  "finProgreso": 0.5,
-                  "poseId": "looking_down_pose",
+                  "inicioProgreso": 0.0,
+                  "finProgreso": 0.48,
+                  "desdePalabra": "Si",
+                  "hastaPalabra": "pantalla",
+                  "poseId": "presenting_object",
                   "expresion": "analytical",
                   "posicion": {
-                    "x": -160,
+                    "x": -220,
                     "y": 90
                   },
                   "curva": "suave",
-                  "procedural": "estatico"
+                  "procedural": "manipular"
                 },
                 {
-                  "inicioProgreso": 0.5,
+                  "inicioProgreso": 0.48,
                   "finProgreso": 1.0,
+                  "desdePalabra": "minutos",
+                  "hastaPalabra": "cuerpo",
                   "poseId": "surprised_hands_up",
                   "expresion": "shocked",
                   "posicion": {
-                    "x": -140,
+                    "x": -200,
                     "y": 90
                   },
-                  "curva": "suave",
+                  "curva": "impacto",
                   "procedural": "estatico"
                 }
               ]
@@ -87,15 +91,40 @@
       ],
       "objetos": [
         {
-          "id": "mesa_experimento",
+          "id": "mano_goma_mesa",
           "propId": "mesa_experimento_mano_goma",
           "posicion": {
-            "x": 170,
-            "y": -40
+            "x": 185,
+            "y": 120
           },
-          "escala": 1.25,
-          "animacion": "pulso",
-          "capaZ": 10
+          "escala": 1.35,
+          "capaZ": 28,
+          "pasos": [
+            {
+              "inicioProgreso": 0.0,
+              "finProgreso": 0.52,
+              "desdePalabra": "Si",
+              "hastaPalabra": "pantalla",
+              "estado": "inanimada",
+              "posicion": {
+                "x": 185,
+                "y": 120
+              },
+              "escala": 1.3
+            },
+            {
+              "inicioProgreso": 0.52,
+              "finProgreso": 1.0,
+              "desdePalabra": "cerebro",
+              "hastaPalabra": "cuerpo",
+              "estado": "adoptada",
+              "posicion": {
+                "x": 185,
+                "y": 115
+              },
+              "escala": 1.42
+            }
+          ]
         }
       ],
       "duracionSegundos": 8.53,
@@ -265,6 +294,32 @@
           "inicioMs": 7580,
           "finMs": 7800
         }
+      ],
+      "focoCamara": [
+        {
+          "x": -120,
+          "y": -20,
+          "escala": 1.15,
+          "inicioProgreso": 0.0,
+          "finProgreso": 0.34,
+          "curva": "suave"
+        },
+        {
+          "x": 90,
+          "y": 110,
+          "escala": 1.38,
+          "inicioProgreso": 0.34,
+          "finProgreso": 0.74,
+          "curva": "impacto"
+        },
+        {
+          "x": 10,
+          "y": 40,
+          "escala": 1.18,
+          "inicioProgreso": 0.74,
+          "finProgreso": 1.0,
+          "curva": "rebote"
+        }
       ]
     },
     {
@@ -293,7 +348,7 @@
           "id": "stickman_cientifico",
           "nombre": "Stickman",
           "posicion": {
-            "x": -170,
+            "x": -230,
             "y": 90
           },
           "escala": 1.05,
@@ -305,28 +360,32 @@
               "tipo": "personalizada",
               "pasos": [
                 {
-                  "inicioProgreso": 0,
-                  "finProgreso": 0.5,
+                  "inicioProgreso": 0.0,
+                  "finProgreso": 0.42,
+                  "desdePalabra": "Diseñado",
+                  "hastaPalabra": "Cohen",
                   "poseId": "explaining_pointing_up",
                   "expresion": "talking_enthusiastic",
                   "posicion": {
-                    "x": -170,
+                    "x": -230,
                     "y": 90
                   },
                   "curva": "suave",
                   "procedural": "estatico"
                 },
                 {
-                  "inicioProgreso": 0.5,
+                  "inicioProgreso": 0.42,
                   "finProgreso": 1.0,
-                  "poseId": "showing_both_hands",
+                  "desdePalabra": "acariciar",
+                  "hastaPalabra": "oculta",
+                  "poseId": "comparing_two_objects",
                   "expresion": "smile_wide",
                   "posicion": {
-                    "x": -140,
+                    "x": -210,
                     "y": 90
                   },
                   "curva": "suave",
-                  "procedural": "estatico"
+                  "procedural": "manipular"
                 }
               ]
             }
@@ -338,12 +397,12 @@
           "id": "pinceles_sync",
           "propId": "pinceles_gemelos_tactiles",
           "posicion": {
-            "x": 160,
-            "y": -40
+            "x": 20,
+            "y": 80
           },
-          "escala": 1.3,
-          "animacion": "flotar",
-          "capaZ": 10
+          "escala": 1.55,
+          "animacion": "ninguna",
+          "capaZ": 28
         }
       ],
       "duracionSegundos": 9.778,
@@ -513,6 +572,32 @@
           "inicioMs": 8760,
           "finMs": 9280
         }
+      ],
+      "focoCamara": [
+        {
+          "x": -130,
+          "y": -30,
+          "escala": 1.15,
+          "inicioProgreso": 0.0,
+          "finProgreso": 0.36,
+          "curva": "suave"
+        },
+        {
+          "x": 40,
+          "y": 115,
+          "escala": 1.4,
+          "inicioProgreso": 0.36,
+          "finProgreso": 0.78,
+          "curva": "impacto"
+        },
+        {
+          "x": 15,
+          "y": 55,
+          "escala": 1.2,
+          "inicioProgreso": 0.78,
+          "finProgreso": 1.0,
+          "curva": "suave"
+        }
       ]
     },
     {
@@ -541,8 +626,8 @@
           "id": "stickman_cerebro",
           "nombre": "Stickman",
           "posicion": {
-            "x": -160,
-            "y": 90
+            "x": -220,
+            "y": 95
           },
           "escala": 1.05,
           "orientacion": "derecha",
@@ -553,27 +638,31 @@
               "tipo": "personalizada",
               "pasos": [
                 {
-                  "inicioProgreso": 0,
-                  "finProgreso": 0.5,
+                  "inicioProgreso": 0.0,
+                  "finProgreso": 0.48,
+                  "desdePalabra": "Sientes",
+                  "hastaPalabra": "látex",
                   "poseId": "thinking_chin_hand",
                   "expresion": "analytical",
                   "posicion": {
-                    "x": -160,
-                    "y": 90
+                    "x": -220,
+                    "y": 95
                   },
                   "curva": "suave",
                   "procedural": "estatico"
                 },
                 {
-                  "inicioProgreso": 0.5,
+                  "inicioProgreso": 0.48,
                   "finProgreso": 1.0,
+                  "desdePalabra": "contradicción",
+                  "hastaPalabra": "somatosensorial",
                   "poseId": "eureka_idea",
                   "expresion": "eureka",
                   "posicion": {
-                    "x": -130,
-                    "y": 90
+                    "x": -195,
+                    "y": 95
                   },
-                  "curva": "suave",
+                  "curva": "impacto",
                   "procedural": "estatico"
                 }
               ]
@@ -586,12 +675,37 @@
           "id": "cerebro_mapa",
           "propId": "cerebro_corteza_somatosensorial",
           "posicion": {
-            "x": 170,
-            "y": -40
+            "x": 150,
+            "y": -80
           },
-          "escala": 1.35,
-          "animacion": "pulso",
-          "capaZ": 10
+          "escala": 1.45,
+          "capaZ": 28,
+          "pasos": [
+            {
+              "inicioProgreso": 0.0,
+              "finProgreso": 0.55,
+              "desdePalabra": "Sientes",
+              "hastaPalabra": "contradicción",
+              "estado": "conflicto",
+              "posicion": {
+                "x": 150,
+                "y": -80
+              },
+              "escala": 1.38
+            },
+            {
+              "inicioProgreso": 0.55,
+              "finProgreso": 1.0,
+              "desdePalabra": "reescribir",
+              "hastaPalabra": "somatosensorial",
+              "estado": "reescribiendo",
+              "posicion": {
+                "x": 150,
+                "y": -85
+              },
+              "escala": 1.52
+            }
+          ]
         }
       ],
       "duracionSegundos": 10.114,
@@ -736,6 +850,32 @@
           "inicioMs": 9000,
           "finMs": 9420
         }
+      ],
+      "focoCamara": [
+        {
+          "x": -110,
+          "y": -20,
+          "escala": 1.16,
+          "inicioProgreso": 0.0,
+          "finProgreso": 0.38,
+          "curva": "suave"
+        },
+        {
+          "x": 80,
+          "y": -50,
+          "escala": 1.42,
+          "inicioProgreso": 0.38,
+          "finProgreso": 0.78,
+          "curva": "impacto"
+        },
+        {
+          "x": 20,
+          "y": -10,
+          "escala": 1.2,
+          "inicioProgreso": 0.78,
+          "finProgreso": 1.0,
+          "curva": "rebote"
+        }
       ]
     },
     {
@@ -764,7 +904,7 @@
           "id": "stickman_asombro",
           "nombre": "Stickman",
           "posicion": {
-            "x": -160,
+            "x": -220,
             "y": 90
           },
           "escala": 1.05,
@@ -776,24 +916,28 @@
               "tipo": "personalizada",
               "pasos": [
                 {
-                  "inicioProgreso": 0,
-                  "finProgreso": 0.5,
+                  "inicioProgreso": 0.0,
+                  "finProgreso": 0.45,
+                  "desdePalabra": "La",
+                  "hastaPalabra": "inanimado",
                   "poseId": "scratching_head",
                   "expresion": "confused",
                   "posicion": {
-                    "x": -160,
+                    "x": -220,
                     "y": 90
                   },
                   "curva": "suave",
                   "procedural": "estatico"
                 },
                 {
-                  "inicioProgreso": 0.5,
+                  "inicioProgreso": 0.45,
                   "finProgreso": 1.0,
+                  "desdePalabra": "empiezas",
+                  "hastaPalabra": "goma",
                   "poseId": "pointing_right",
                   "expresion": "surprised",
                   "posicion": {
-                    "x": -140,
+                    "x": -195,
                     "y": 90
                   },
                   "curva": "suave",
@@ -806,15 +950,26 @@
       ],
       "objetos": [
         {
-          "id": "espejo_truco",
-          "propId": "espejo_realidad_truco_mental",
+          "id": "mano_goma_adoptada",
+          "propId": "mesa_experimento_mano_goma",
           "posicion": {
-            "x": 160,
-            "y": -40
+            "x": 185,
+            "y": 115
           },
-          "escala": 1.3,
-          "animacion": "vibrar",
-          "capaZ": 10
+          "escala": 1.45,
+          "capaZ": 28,
+          "pasos": [
+            {
+              "inicioProgreso": 0.0,
+              "finProgreso": 1.0,
+              "estado": "adoptada",
+              "posicion": {
+                "x": 185,
+                "y": 115
+              },
+              "escala": 1.45
+            }
+          ]
         }
       ],
       "duracionSegundos": 8.074,
@@ -939,6 +1094,32 @@
           "inicioMs": 7080,
           "finMs": 7340
         }
+      ],
+      "focoCamara": [
+        {
+          "x": -120,
+          "y": -20,
+          "escala": 1.15,
+          "inicioProgreso": 0.0,
+          "finProgreso": 0.34,
+          "curva": "suave"
+        },
+        {
+          "x": 120,
+          "y": 110,
+          "escala": 1.4,
+          "inicioProgreso": 0.34,
+          "finProgreso": 0.76,
+          "curva": "impacto"
+        },
+        {
+          "x": 30,
+          "y": 40,
+          "escala": 1.18,
+          "inicioProgreso": 0.76,
+          "finProgreso": 1.0,
+          "curva": "suave"
+        }
       ]
     },
     {
@@ -947,7 +1128,7 @@
       "icono": "Hammer",
       "colorIcono": "#EF4444",
       "tituloVisual": "¡GOLPE DE MARTILLO!",
-      "composicionVisual": "primer_plano",
+      "composicionVisual": "escenario_ilustrado",
       "escenario": "climax_martillo_panico_mesa",
       "layout": "narrativo",
       "transicion": "zoom_in",
@@ -967,7 +1148,7 @@
           "id": "stickman_panico",
           "nombre": "Stickman",
           "posicion": {
-            "x": -160,
+            "x": -200,
             "y": 90
           },
           "escala": 1.05,
@@ -979,12 +1160,14 @@
               "tipo": "personalizada",
               "pasos": [
                 {
-                  "inicioProgreso": 0,
+                  "inicioProgreso": 0.0,
                   "finProgreso": 0.4,
+                  "desdePalabra": "Crees",
+                  "hastaPalabra": "martillo",
                   "poseId": "protecting_shielding",
-                  "expresion": "scared",
+                  "expresion": "worried",
                   "posicion": {
-                    "x": -160,
+                    "x": -190,
                     "y": 90
                   },
                   "curva": "suave",
@@ -993,11 +1176,13 @@
                 {
                   "inicioProgreso": 0.4,
                   "finProgreso": 1.0,
+                  "desdePalabra": "golpea",
+                  "hastaPalabra": "instante",
                   "poseId": "shock_explosion",
                   "expresion": "shocked",
                   "posicion": {
-                    "x": -190,
-                    "y": 80
+                    "x": -250,
+                    "y": 75
                   },
                   "curva": "impacto",
                   "procedural": "temblar"
@@ -1012,12 +1197,39 @@
           "id": "martillo_panico",
           "propId": "martillo_amenaza_impacto",
           "posicion": {
-            "x": 160,
-            "y": -50
+            "x": 210,
+            "y": 110
           },
-          "escala": 1.4,
-          "animacion": "vibrar",
-          "capaZ": 10
+          "escala": 1.45,
+          "capaZ": 29,
+          "pasos": [
+            {
+              "inicioProgreso": 0.0,
+              "finProgreso": 0.4,
+              "desdePalabra": "Crees",
+              "hastaPalabra": "martillo",
+              "estado": "amenaza",
+              "posicion": {
+                "x": 220,
+                "y": 45
+              },
+              "escala": 1.4,
+              "curva": "anticipacion"
+            },
+            {
+              "inicioProgreso": 0.4,
+              "finProgreso": 1.0,
+              "desdePalabra": "golpea",
+              "hastaPalabra": "instante",
+              "estado": "impacto",
+              "posicion": {
+                "x": 200,
+                "y": 130
+              },
+              "escala": 1.5,
+              "curva": "impacto"
+            }
+          ]
         }
       ],
       "duracionSegundos": 8.914,
@@ -1157,6 +1369,32 @@
           "inicioMs": 7780,
           "finMs": 8360
         }
+      ],
+      "focoCamara": [
+        {
+          "x": -70,
+          "y": 40,
+          "escala": 1.12,
+          "inicioProgreso": 0.0,
+          "finProgreso": 0.36,
+          "curva": "suave"
+        },
+        {
+          "x": 95,
+          "y": 115,
+          "escala": 1.34,
+          "inicioProgreso": 0.36,
+          "finProgreso": 0.74,
+          "curva": "impacto"
+        },
+        {
+          "x": 0,
+          "y": 55,
+          "escala": 1.15,
+          "inicioProgreso": 0.74,
+          "finProgreso": 1.0,
+          "curva": "rebote"
+        }
       ]
     },
     {
@@ -1185,8 +1423,8 @@
           "id": "stickman_fisiologia",
           "nombre": "Stickman",
           "posicion": {
-            "x": -160,
-            "y": 100
+            "x": -220,
+            "y": 95
           },
           "escala": 1.0,
           "orientacion": "derecha",
@@ -1197,25 +1435,29 @@
               "tipo": "personalizada",
               "pasos": [
                 {
-                  "inicioProgreso": 0,
+                  "inicioProgreso": 0.0,
                   "finProgreso": 0.5,
-                  "poseId": "exhausted_slouch",
+                  "desdePalabra": "Tus",
+                  "hastaPalabra": "sudan",
+                  "poseId": "trembling_fear",
                   "expresion": "worried",
                   "posicion": {
-                    "x": -160,
-                    "y": 100
+                    "x": -220,
+                    "y": 95
                   },
                   "curva": "suave",
-                  "procedural": "estatico"
+                  "procedural": "temblar"
                 },
                 {
                   "inicioProgreso": 0.5,
                   "finProgreso": 1.0,
-                  "poseId": "surprised_hands_up",
+                  "desdePalabra": "sistema",
+                  "hastaPalabra": "tú",
+                  "poseId": "covering_mouth",
                   "expresion": "surprised",
                   "posicion": {
-                    "x": -140,
-                    "y": 100
+                    "x": -195,
+                    "y": 95
                   },
                   "curva": "suave",
                   "procedural": "estatico"
@@ -1230,12 +1472,12 @@
           "id": "monitor_cardiaco",
           "propId": "monitor_fisiologico_sudor_miedo",
           "posicion": {
-            "x": 160,
-            "y": -40
+            "x": 165,
+            "y": -20
           },
-          "escala": 1.3,
+          "escala": 1.4,
           "animacion": "pulso",
-          "capaZ": 10
+          "capaZ": 28
         }
       ],
       "duracionSegundos": 10.45,
@@ -1385,6 +1627,32 @@
           "inicioMs": 9640,
           "finMs": 9900
         }
+      ],
+      "focoCamara": [
+        {
+          "x": -110,
+          "y": -20,
+          "escala": 1.15,
+          "inicioProgreso": 0.0,
+          "finProgreso": 0.34,
+          "curva": "suave"
+        },
+        {
+          "x": 110,
+          "y": -30,
+          "escala": 1.38,
+          "inicioProgreso": 0.34,
+          "finProgreso": 0.74,
+          "curva": "impacto"
+        },
+        {
+          "x": 20,
+          "y": 20,
+          "escala": 1.18,
+          "inicioProgreso": 0.74,
+          "finProgreso": 1.0,
+          "curva": "suave"
+        }
       ]
     },
     {
@@ -1413,7 +1681,7 @@
           "id": "stickman_cierre",
           "nombre": "Stickman",
           "posicion": {
-            "x": -120,
+            "x": -180,
             "y": 90
           },
           "escala": 1.05,
@@ -1458,12 +1726,12 @@
           "id": "espejo_cierre",
           "propId": "espejo_realidad_truco_mental",
           "posicion": {
-            "x": 160,
-            "y": -40
+            "x": 165,
+            "y": -25
           },
-          "escala": 1.25,
+          "escala": 1.4,
           "animacion": "flotar",
-          "capaZ": 10
+          "capaZ": 28
         }
       ],
       "duracionSegundos": 8.29,
@@ -1592,6 +1860,32 @@
           "palabra": "segundos",
           "inicioMs": 7300,
           "finMs": 7720
+        }
+      ],
+      "focoCamara": [
+        {
+          "x": -90,
+          "y": -10,
+          "escala": 1.15,
+          "inicioProgreso": 0.0,
+          "finProgreso": 0.36,
+          "curva": "suave"
+        },
+        {
+          "x": 90,
+          "y": -30,
+          "escala": 1.36,
+          "inicioProgreso": 0.36,
+          "finProgreso": 0.75,
+          "curva": "impacto"
+        },
+        {
+          "x": 0,
+          "y": 0,
+          "escala": 1.12,
+          "inicioProgreso": 0.75,
+          "finProgreso": 1.0,
+          "curva": "rebote"
         }
       ]
     }

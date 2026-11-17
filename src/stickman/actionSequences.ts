@@ -22,6 +22,8 @@ export interface EvaluatedCharacterState {
   prop?: string;
   props?: StickmanPropsAttachment;
   headTilt: number;
+  rotacion?: number;
+  transformOrigin?: string;
   /** Impulso de impacto o contacto si ocurre en este frame */
   isContactImpact: boolean;
   /** Intensidad de vibración procedural */
@@ -473,6 +475,8 @@ export function evaluateCharacterState(
   let currentHolograma = baseHolograma;
   let currentOpacity = baseOpacity;
   let headTilt = 0;
+  let rotacion = 0;
+  let transformOrigin: string | undefined = undefined;
   let isContactImpact = false;
   let vibrationX = 0;
   let isWalking = false;
@@ -525,6 +529,8 @@ export function evaluateCharacterState(
         if (step.prop !== undefined) currentProp = step.prop || undefined;
         if (step.props) currentProps = step.props;
         if (step.esHolograma !== undefined) currentHolograma = step.esHolograma;
+        if (step.rotacion !== undefined) rotacion = step.rotacion;
+        if (step.transformOrigin) transformOrigin = step.transformOrigin;
         if (step.opacidad !== undefined) {
           currentOpacity = interpolate(easedProgress, [0, 1], [currentOpacity, step.opacidad]);
         }
@@ -568,6 +574,15 @@ export function evaluateCharacterState(
         } else if (step.procedural === "flotar") {
           currentPos.y += Math.sin((frame - startF) / 9) * 10;
           headTilt = Math.cos((frame - startF) / 9) * 2.5;
+        } else if (step.procedural === "balanceo_cuerda") {
+          const swingPhase = (frame - startF) * 0.14;
+          const swingAngle = Math.sin(swingPhase) * 22;
+          const ropeLen = 370;
+          currentPos.x = -40 + Math.sin((swingAngle * Math.PI) / 180) * ropeLen;
+          currentPos.y = -285 + Math.cos((swingAngle * Math.PI) / 180) * ropeLen;
+          headTilt = swingAngle * 0.7;
+          rotacion = swingAngle;
+          transformOrigin = "center 120px";
         } else {
           const isSpeaking = personaje.habla !== false;
           const communicativeTilt = isSpeaking ? Math.sin(frame / 6) * 3.2 : 0;
@@ -596,6 +611,8 @@ export function evaluateCharacterState(
         if (step.prop !== undefined) currentProp = step.prop || undefined;
         if (step.props) currentProps = step.props;
         if (step.esHolograma !== undefined) currentHolograma = step.esHolograma;
+        if (step.rotacion !== undefined) rotacion = step.rotacion;
+        if (step.transformOrigin) transformOrigin = step.transformOrigin;
         if (step.opacidad !== undefined) currentOpacity = step.opacidad;
       }
     }
@@ -613,6 +630,8 @@ export function evaluateCharacterState(
     prop: currentProp,
     props: currentProps,
     headTilt,
+    rotacion,
+    transformOrigin,
     isContactImpact,
     vibrationX,
     isWalking,

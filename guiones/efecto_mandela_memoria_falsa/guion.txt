@@ -2,6 +2,7 @@ ID / SLUG: efecto_mandela_memoria_falsa
 Título: Millones recuerdan algo que nunca pasó (El efecto Mandela)
 Gancho: ¿Recuerdas que Nelson Mandela murió en prisión en los años ochenta? Millones de personas lo recuerdan así. Y todas se equivocan.
 Tema: El efecto Mandela: por qué millones de personas recuerdan hechos que nunca ocurrieron, la memoria como reconstructora y el truco del sombrero
+Duración objetivo: [62, 76]
 ============================================================
 
 [Escena 1] ¿MANDELA EN PRISIÓN?

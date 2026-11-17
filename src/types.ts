@@ -64,7 +64,7 @@ export type TipoTransicion =
   | "corte"
   | "fundido_negro";
 
-export type EstiloLayout = "clasico" | "narrativo" | "compacto";
+export type EstiloLayout = "clasico" | "narrativo" | "compacto" | "cinematico";
 
 export type TipoComposicionVisual =
   | "minimalista"
@@ -341,6 +341,46 @@ export type TipoEscenario =
   | "laboratorio_escaneo_intenciones"
   | "calle_urbana_humanizacion"
   | "cafeteria_taza_sonriente_cierre"
+  | "banco_camara_seguridad_limon"
+  | "exterior_banco_patrulla_arresto"
+  | "aula_pizarra_dunning_kruger"
+  | "risco_cima_de_la_ignorancia"
+  | "abismo_valle_desesperacion_libros"
+  | "sendero_pendiente_iluminacion"
+  | "estudio_redes_espejo_limon"
+  | "patio_tormenta_zanja_erosion"
+  | "patio_torrente_presion_hidrostatica"
+  | "corte_geotecnico_presa_gravedad"
+  | "macro_corte_filtro_graduado_terzaghi"
+  | "vista_cenital_embalse_alerta_vertedero"
+  | "cascada_vertedero_escalonado_coladera"
+  | "patio_soleado_arcoiris_lago_represa"
+  | "campo_noche_cable_foco_moribundo"
+  | "campo_medicion_caida_tension_humo"
+  | "macro_microcosmos_red_cobre_joule"
+  | "taller_bobinado_transformador_mesa"
+  | "campo_red_aerea_postes_aisladores"
+  | "granero_transformador_reductor_poste"
+  | "campo_granero_iluminacion_total_victoria"
+  | "arroyo_lodo_tabla_rota"
+  | "estudio_tecnico_flexion_viga"
+  | "campo_prueba_cuerda_canamo"
+  | "arroyo_clavado_torres_compresion"
+  | "arroyo_catenaria_anclajes_muertos"
+  | "arroyo_pendolas_calzada_suspendida"
+  | "arroyo_puente_colgante_victoria"
+  | "cochera_taller_escape_recto"
+  | "corte_cilindro_pulso_escape"
+  | "camara_expansion_gas_remolinos"
+  | "tubo_perforado_fibra_vidrio_absorcion"
+  | "deflectores_laberinto_dos_rutas"
+  | "interferencia_destructiva_cancelacion"
+  | "cochera_salida_kart_silencioso_victoria"
+  | "taller_montana_rusa_1895"
+  | "andenes_feria_victoriana"
+  | "noche_sabotaje_rieles"
+  | "diagrama_fisica_clotoide_vs_circulo"
+  | "parque_moderno_sunset"
   | "vacio";
 
 export type TipoCurvaMovimiento =
@@ -360,6 +400,7 @@ export type TipoMovimientoProcedural =
   | "manipular"
   | "esfuerzo"
   | "agachar_recoger"
+  | "balanceo_cuerda"
   | "estatico";
 
 export type AccionPredefinidaTipo =
@@ -397,6 +438,8 @@ export interface PasoAccion {
   procedural?: TipoMovimientoProcedural;
   esHolograma?: boolean;
   opacidad?: number;
+  rotacion?: number;
+  transformOrigin?: string;
 }
 
 export interface AccionPersonaje {

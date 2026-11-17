@@ -67,7 +67,9 @@
                     "y": 80
                   },
                   "curva": "suave",
-                  "procedural": "caminar"
+                  "procedural": "caminar",
+                  "desdePalabra": "Recuerdas",
+                  "hastaPalabra": "ochenta"
                 },
                 {
                   "inicioProgreso": 0.35,
@@ -79,7 +81,9 @@
                     "y": 80
                   },
                   "curva": "suave",
-                  "procedural": "estatico"
+                  "procedural": "estatico",
+                  "desdePalabra": "Millones",
+                  "hastaPalabra": "así"
                 },
                 {
                   "inicioProgreso": 0.65,
@@ -91,13 +95,15 @@
                     "y": 80
                   },
                   "curva": "impacto",
-                  "procedural": "estatico"
+                  "procedural": "estatico",
+                  "desdePalabra": "Y",
+                  "hastaPalabra": "equivocan"
                 }
               ]
             }
           ],
-          "habla": false,
-          "capaZ": 10
+          "habla": true,
+          "capaZ": 20
         }
       ],
       "objetos": [
@@ -105,12 +111,40 @@
           "id": "celda_recuerdo_falso",
           "propId": "celda_prision_mandela",
           "posicion": {
-            "x": 200,
-            "y": 0
+            "x": 165,
+            "y": 20
           },
-          "escala": 1.3,
-          "animacion": "pulso",
-          "capaZ": 12
+          "escala": 1.38,
+          "capaZ": 28,
+          "pasos": [
+            {
+              "inicioProgreso": 0.0,
+              "finProgreso": 0.65,
+              "desdePalabra": "Recuerdas",
+              "hastaPalabra": "así",
+              "estado": "celda_intacta",
+              "posicion": {
+                "x": 160,
+                "y": 25
+              },
+              "escala": 1.35,
+              "curva": "suave"
+            },
+            {
+              "inicioProgreso": 0.65,
+              "finProgreso": 1.0,
+              "desdePalabra": "Y",
+              "hastaPalabra": "equivocan",
+              "estado": "desvanecida",
+              "posicion": {
+                "x": 175,
+                "y": 15
+              },
+              "escala": 1.45,
+              "animacion": "pulso",
+              "curva": "impacto"
+            }
+          ]
         }
       ],
       "duracionSegundos": 7.45,
@@ -220,6 +254,32 @@
           "inicioMs": 6120,
           "finMs": 6800
         }
+      ],
+      "focoCamara": [
+        {
+          "x": 0,
+          "y": 20,
+          "escala": 1.06,
+          "inicioProgreso": 0.0,
+          "finProgreso": 0.45,
+          "curva": "suave"
+        },
+        {
+          "x": 75,
+          "y": 15,
+          "escala": 1.22,
+          "inicioProgreso": 0.45,
+          "finProgreso": 0.82,
+          "curva": "impacto"
+        },
+        {
+          "x": -35,
+          "y": 25,
+          "escala": 1.1,
+          "inicioProgreso": 0.82,
+          "finProgreso": 1.0,
+          "curva": "suave"
+        }
       ]
     },
     {
@@ -270,7 +330,9 @@
                     "y": 80
                   },
                   "curva": "suave",
-                  "procedural": "estatico"
+                  "procedural": "estatico",
+                  "desdePalabra": "Mandela",
+                  "hastaPalabra": "casa"
                 },
                 {
                   "inicioProgreso": 0.45,
@@ -282,7 +344,9 @@
                     "y": 80
                   },
                   "curva": "suave",
-                  "procedural": "estatico"
+                  "procedural": "estatico",
+                  "desdePalabra": "Aun",
+                  "hastaPalabra": "prisión"
                 },
                 {
                   "inicioProgreso": 0.75,
@@ -294,13 +358,15 @@
                     "y": 80
                   },
                   "curva": "impacto",
-                  "procedural": "estatico"
+                  "procedural": "estatico",
+                  "desdePalabra": "A",
+                  "hastaPalabra": "Mandela"
                 }
               ]
             }
           ],
-          "habla": false,
-          "capaZ": 10
+          "habla": true,
+          "capaZ": 20
         }
       ],
       "objetos": [
@@ -308,12 +374,40 @@
           "id": "tv_noticiero_falso",
           "propId": "linea_tiempo_mandela_tv",
           "posicion": {
-            "x": 220,
-            "y": -20
+            "x": 165,
+            "y": 30
           },
-          "escala": 1.35,
-          "animacion": "vibrar",
-          "capaZ": 14
+          "escala": 1.38,
+          "capaZ": 28,
+          "pasos": [
+            {
+              "inicioProgreso": 0.0,
+              "finProgreso": 0.48,
+              "desdePalabra": "Mandela",
+              "hastaPalabra": "casa",
+              "estado": "emitiendo",
+              "posicion": {
+                "x": 155,
+                "y": 35
+              },
+              "escala": 1.32,
+              "curva": "suave"
+            },
+            {
+              "inicioProgreso": 0.48,
+              "finProgreso": 1.0,
+              "desdePalabra": "Aun",
+              "hastaPalabra": "Mandela",
+              "estado": "desmentido",
+              "posicion": {
+                "x": 175,
+                "y": 25
+              },
+              "escala": 1.45,
+              "animacion": "vibrar",
+              "curva": "impacto"
+            }
+          ]
         }
       ],
       "duracionSegundos": 12.274,
@@ -518,6 +612,32 @@
           "inicioMs": 11140,
           "finMs": 11680
         }
+      ],
+      "focoCamara": [
+        {
+          "x": -40,
+          "y": -20,
+          "escala": 1.08,
+          "inicioProgreso": 0.0,
+          "finProgreso": 0.45,
+          "curva": "suave"
+        },
+        {
+          "x": 85,
+          "y": 20,
+          "escala": 1.24,
+          "inicioProgreso": 0.45,
+          "finProgreso": 0.82,
+          "curva": "impacto"
+        },
+        {
+          "x": 0,
+          "y": 15,
+          "escala": 1.1,
+          "inicioProgreso": 0.82,
+          "finProgreso": 1.0,
+          "curva": "suave"
+        }
       ]
     },
     {
@@ -568,7 +688,9 @@
                     "y": 80
                   },
                   "curva": "suave",
-                  "procedural": "estatico"
+                  "procedural": "estatico",
+                  "desdePalabra": "El",
+                  "hastaPalabra": "Broome"
                 },
                 {
                   "inicioProgreso": 0.45,
@@ -580,7 +702,9 @@
                     "y": 80
                   },
                   "curva": "suave",
-                  "procedural": "estatico"
+                  "procedural": "estatico",
+                  "desdePalabra": "al",
+                  "hastaPalabra": "falso"
                 },
                 {
                   "inicioProgreso": 0.75,
@@ -592,13 +716,15 @@
                     "y": 80
                   },
                   "curva": "impacto",
-                  "procedural": "estatico"
+                  "procedural": "estatico",
+                  "desdePalabra": "Y",
+                  "hastaPalabra": "Mandela"
                 }
               ]
             }
           ],
-          "habla": false,
-          "capaZ": 10
+          "habla": true,
+          "capaZ": 20
         }
       ],
       "objetos": [
@@ -606,12 +732,40 @@
           "id": "red_fiona_nodos",
           "propId": "red_pensamientos_fiona_siluetas",
           "posicion": {
-            "x": 200,
-            "y": 10
+            "x": 165,
+            "y": 25
           },
-          "escala": 1.35,
-          "animacion": "flotar",
-          "capaZ": 14
+          "escala": 1.38,
+          "capaZ": 28,
+          "pasos": [
+            {
+              "inicioProgreso": 0.0,
+              "finProgreso": 0.45,
+              "desdePalabra": "El",
+              "hastaPalabra": "Broome",
+              "estado": "inicio",
+              "posicion": {
+                "x": 155,
+                "y": 30
+              },
+              "escala": 1.32,
+              "curva": "suave"
+            },
+            {
+              "inicioProgreso": 0.45,
+              "finProgreso": 1.0,
+              "desdePalabra": "al",
+              "hastaPalabra": "Mandela",
+              "estado": "contagio_global",
+              "posicion": {
+                "x": 175,
+                "y": 20
+              },
+              "escala": 1.45,
+              "animacion": "flotar",
+              "curva": "rebote"
+            }
+          ]
         }
       ],
       "duracionSegundos": 8.338,
@@ -751,6 +905,32 @@
           "inicioMs": 7260,
           "finMs": 7660
         }
+      ],
+      "focoCamara": [
+        {
+          "x": -50,
+          "y": 20,
+          "escala": 1.1,
+          "inicioProgreso": 0.0,
+          "finProgreso": 0.42,
+          "curva": "suave"
+        },
+        {
+          "x": 80,
+          "y": 15,
+          "escala": 1.24,
+          "inicioProgreso": 0.42,
+          "finProgreso": 0.8,
+          "curva": "impacto"
+        },
+        {
+          "x": 0,
+          "y": 20,
+          "escala": 1.08,
+          "inicioProgreso": 0.8,
+          "finProgreso": 1.0,
+          "curva": "suave"
+        }
       ]
     },
     {
@@ -801,7 +981,9 @@
                     "y": 80
                   },
                   "curva": "suave",
-                  "procedural": "estatico"
+                  "procedural": "estatico",
+                  "desdePalabra": "El",
+                  "hastaPalabra": "llevó"
                 },
                 {
                   "inicioProgreso": 0.4,
@@ -813,7 +995,9 @@
                     "y": 80
                   },
                   "curva": "suave",
-                  "procedural": "estatico"
+                  "procedural": "estatico",
+                  "desdePalabra": "Pikachu",
+                  "hastaPalabra": "Tampoco"
                 },
                 {
                   "inicioProgreso": 0.7,
@@ -825,13 +1009,15 @@
                     "y": 70
                   },
                   "curva": "impacto",
-                  "procedural": "temblar"
+                  "procedural": "temblar",
+                  "desdePalabra": "Pero",
+                  "hastaPalabra": "sí"
                 }
               ]
             }
           ],
-          "habla": false,
-          "capaZ": 10
+          "habla": true,
+          "capaZ": 20
         }
       ],
       "objetos": [],
@@ -957,6 +1143,32 @@
           "inicioMs": 7060,
           "finMs": 7260
         }
+      ],
+      "focoCamara": [
+        {
+          "x": -30,
+          "y": -20,
+          "escala": 1.12,
+          "inicioProgreso": 0.0,
+          "finProgreso": 0.38,
+          "curva": "suave"
+        },
+        {
+          "x": 95,
+          "y": -40,
+          "escala": 1.24,
+          "inicioProgreso": 0.38,
+          "finProgreso": 0.78,
+          "curva": "impacto"
+        },
+        {
+          "x": 0,
+          "y": 10,
+          "escala": 1.08,
+          "inicioProgreso": 0.78,
+          "finProgreso": 1.0,
+          "curva": "suave"
+        }
       ]
     },
     {
@@ -1007,7 +1219,9 @@
                     "y": 80
                   },
                   "curva": "suave",
-                  "procedural": "estatico"
+                  "procedural": "estatico",
+                  "desdePalabra": "En",
+                  "hastaPalabra": "grabados"
                 },
                 {
                   "inicioProgreso": 0.45,
@@ -1019,7 +1233,9 @@
                     "y": 80
                   },
                   "curva": "suave",
-                  "procedural": "estatico"
+                  "procedural": "estatico",
+                  "desdePalabra": "Quienes",
+                  "hastaPalabra": "velocidad"
                 },
                 {
                   "inicioProgreso": 0.75,
@@ -1031,13 +1247,15 @@
                     "y": 80
                   },
                   "curva": "impacto",
-                  "procedural": "estatico"
+                  "procedural": "estatico",
+                  "desdePalabra": "Pero",
+                  "hastaPalabra": "existieron"
                 }
               ]
             }
           ],
-          "habla": false,
-          "capaZ": 10
+          "habla": true,
+          "capaZ": 20
         }
       ],
       "objetos": [
@@ -1045,12 +1263,40 @@
           "id": "experimento_loftus_pantalla",
           "propId": "experimento_loftus_choque_autos",
           "posicion": {
-            "x": 200,
-            "y": 10
+            "x": 165,
+            "y": 35
           },
-          "escala": 1.4,
-          "animacion": "vibrar",
-          "capaZ": 14
+          "escala": 1.38,
+          "capaZ": 28,
+          "pasos": [
+            {
+              "inicioProgreso": 0.0,
+              "finProgreso": 0.58,
+              "desdePalabra": "En",
+              "hastaPalabra": "velocidad",
+              "estado": "tocaron_suave",
+              "posicion": {
+                "x": 155,
+                "y": 40
+              },
+              "escala": 1.32,
+              "curva": "suave"
+            },
+            {
+              "inicioProgreso": 0.58,
+              "finProgreso": 1.0,
+              "desdePalabra": "Pero",
+              "hastaPalabra": "existieron",
+              "estado": "estrellaron_vidrios",
+              "posicion": {
+                "x": 175,
+                "y": 25
+              },
+              "escala": 1.46,
+              "animacion": "vibrar",
+              "curva": "impacto"
+            }
+          ]
         }
       ],
       "duracionSegundos": 11.77,
@@ -1210,6 +1456,32 @@
           "inicioMs": 10500,
           "finMs": 11100
         }
+      ],
+      "focoCamara": [
+        {
+          "x": -50,
+          "y": 10,
+          "escala": 1.1,
+          "inicioProgreso": 0.0,
+          "finProgreso": 0.52,
+          "curva": "suave"
+        },
+        {
+          "x": 90,
+          "y": 15,
+          "escala": 1.25,
+          "inicioProgreso": 0.52,
+          "finProgreso": 0.86,
+          "curva": "impacto"
+        },
+        {
+          "x": 0,
+          "y": 20,
+          "escala": 1.08,
+          "inicioProgreso": 0.86,
+          "finProgreso": 1.0,
+          "curva": "suave"
+        }
       ]
     },
     {
@@ -1260,7 +1532,9 @@
                     "y": 80
                   },
                   "curva": "suave",
-                  "procedural": "estatico"
+                  "procedural": "estatico",
+                  "desdePalabra": "La",
+                  "hastaPalabra": "grabación"
                 },
                 {
                   "inicioProgreso": 0.35,
@@ -1272,7 +1546,9 @@
                     "y": 85
                   },
                   "curva": "anticipacion",
-                  "procedural": "esfuerzo"
+                  "procedural": "esfuerzo",
+                  "desdePalabra": "Cada",
+                  "hastaPalabra": "reconstruye"
                 },
                 {
                   "inicioProgreso": 0.7,
@@ -1284,13 +1560,15 @@
                     "y": 80
                   },
                   "curva": "impacto",
-                  "procedural": "estatico"
+                  "procedural": "estatico",
+                  "desdePalabra": "rellena",
+                  "hastaPalabra": "modificado"
                 }
               ]
             }
           ],
-          "habla": false,
-          "capaZ": 10
+          "habla": true,
+          "capaZ": 20
         }
       ],
       "objetos": [
@@ -1298,12 +1576,40 @@
           "id": "vhs_rompecabezas_cajon",
           "propId": "vhs_rompecabezas_cajon_memoria",
           "posicion": {
-            "x": 200,
-            "y": 20
+            "x": 165,
+            "y": 35
           },
-          "escala": 1.35,
-          "animacion": "pulso",
-          "capaZ": 14
+          "escala": 1.38,
+          "capaZ": 28,
+          "pasos": [
+            {
+              "inicioProgreso": 0.0,
+              "finProgreso": 0.45,
+              "desdePalabra": "La",
+              "hastaPalabra": "reconstruye",
+              "estado": "vhs_tachado",
+              "posicion": {
+                "x": 155,
+                "y": 40
+              },
+              "escala": 1.32,
+              "curva": "suave"
+            },
+            {
+              "inicioProgreso": 0.45,
+              "finProgreso": 1.0,
+              "desdePalabra": "rellena",
+              "hastaPalabra": "modificado",
+              "estado": "rellenando_hueco",
+              "posicion": {
+                "x": 175,
+                "y": 25
+              },
+              "escala": 1.46,
+              "animacion": "pulso",
+              "curva": "rebote"
+            }
+          ]
         }
       ],
       "duracionSegundos": 8.746,
@@ -1448,6 +1754,32 @@
           "inicioMs": 7440,
           "finMs": 8080
         }
+      ],
+      "focoCamara": [
+        {
+          "x": -45,
+          "y": 25,
+          "escala": 1.1,
+          "inicioProgreso": 0.0,
+          "finProgreso": 0.45,
+          "curva": "suave"
+        },
+        {
+          "x": 85,
+          "y": 20,
+          "escala": 1.24,
+          "inicioProgreso": 0.45,
+          "finProgreso": 0.84,
+          "curva": "impacto"
+        },
+        {
+          "x": 0,
+          "y": 20,
+          "escala": 1.08,
+          "inicioProgreso": 0.84,
+          "finProgreso": 1.0,
+          "curva": "suave"
+        }
       ]
     },
     {
@@ -1498,7 +1830,9 @@
                     "y": 80
                   },
                   "curva": "anticipacion",
-                  "procedural": "temblar"
+                  "procedural": "temblar",
+                  "desdePalabra": "Y",
+                  "hastaPalabra": "igual"
                 },
                 {
                   "inicioProgreso": 0.45,
@@ -1510,7 +1844,9 @@
                     "y": 80
                   },
                   "curva": "suave",
-                  "procedural": "estatico"
+                  "procedural": "estatico",
+                  "desdePalabra": "el",
+                  "hastaPalabra": "compartido"
                 },
                 {
                   "inicioProgreso": 0.8,
@@ -1522,13 +1858,15 @@
                     "y": 80
                   },
                   "curva": "impacto",
-                  "procedural": "estatico"
+                  "procedural": "estatico",
+                  "desdePalabra": "Pero",
+                  "hastaPalabra": "verdadero"
                 }
               ]
             }
           ],
-          "habla": false,
-          "capaZ": 10
+          "habla": true,
+          "capaZ": 20
         }
       ],
       "objetos": [
@@ -1536,12 +1874,40 @@
           "id": "lupa_pieza_falsa",
           "propId": "multitud_piezas_falsas_lupa",
           "posicion": {
-            "x": 190,
-            "y": 10
+            "x": 165,
+            "y": 30
           },
-          "escala": 1.35,
-          "animacion": "flotar",
-          "capaZ": 14
+          "escala": 1.38,
+          "capaZ": 28,
+          "pasos": [
+            {
+              "inicioProgreso": 0.0,
+              "finProgreso": 0.55,
+              "desdePalabra": "Y",
+              "hastaPalabra": "compartido",
+              "estado": "examinando",
+              "posicion": {
+                "x": 155,
+                "y": 35
+              },
+              "escala": 1.32,
+              "curva": "suave"
+            },
+            {
+              "inicioProgreso": 0.55,
+              "finProgreso": 1.0,
+              "desdePalabra": "Pero",
+              "hastaPalabra": "verdadero",
+              "estado": "desmentido_lupa",
+              "posicion": {
+                "x": 175,
+                "y": 20
+              },
+              "escala": 1.45,
+              "animacion": "flotar",
+              "curva": "impacto"
+            }
+          ]
         }
       ],
       "duracionSegundos": 6.778,
@@ -1651,6 +2017,32 @@
           "inicioMs": 5720,
           "finMs": 6280
         }
+      ],
+      "focoCamara": [
+        {
+          "x": 0,
+          "y": 15,
+          "escala": 1.08,
+          "inicioProgreso": 0.0,
+          "finProgreso": 0.5,
+          "curva": "suave"
+        },
+        {
+          "x": 80,
+          "y": 20,
+          "escala": 1.24,
+          "inicioProgreso": 0.5,
+          "finProgreso": 0.85,
+          "curva": "impacto"
+        },
+        {
+          "x": -25,
+          "y": 25,
+          "escala": 1.1,
+          "inicioProgreso": 0.85,
+          "finProgreso": 1.0,
+          "curva": "suave"
+        }
       ]
     },
     {
@@ -1699,7 +2091,9 @@
                     "y": 80
                   },
                   "curva": "suave",
-                  "procedural": "estatico"
+                  "procedural": "estatico",
+                  "desdePalabra": "Última",
+                  "hastaPalabra": "sombrero"
                 },
                 {
                   "inicioProgreso": 0.45,
@@ -1711,7 +2105,9 @@
                     "y": 80
                   },
                   "curva": "suave",
-                  "procedural": "estatico"
+                  "procedural": "estatico",
+                  "desdePalabra": "el",
+                  "hastaPalabra": "empezar"
                 },
                 {
                   "inicioProgreso": 0.75,
@@ -1723,13 +2119,15 @@
                     "y": 80
                   },
                   "curva": "impacto",
-                  "procedural": "estatico"
+                  "procedural": "estatico",
+                  "desdePalabra": "este",
+                  "hastaPalabra": "video"
                 }
               ]
             }
           ],
-          "habla": false,
-          "capaZ": 10
+          "habla": true,
+          "capaZ": 20
         }
       ],
       "objetos": [
@@ -1737,12 +2135,40 @@
           "id": "nube_sombrero_rebobinado",
           "propId": "nube_sombrero_rebobinado_vhs",
           "posicion": {
-            "x": 200,
-            "y": 10
+            "x": 165,
+            "y": 65
           },
-          "escala": 1.4,
-          "animacion": "pulso",
-          "capaZ": 14
+          "escala": 1.38,
+          "capaZ": 28,
+          "pasos": [
+            {
+              "inicioProgreso": 0.0,
+              "finProgreso": 0.45,
+              "desdePalabra": "Última",
+              "hastaPalabra": "sombrero",
+              "estado": "duda",
+              "posicion": {
+                "x": 155,
+                "y": 70
+              },
+              "escala": 1.32,
+              "curva": "suave"
+            },
+            {
+              "inicioProgreso": 0.45,
+              "finProgreso": 1.0,
+              "desdePalabra": "el",
+              "hastaPalabra": "video",
+              "estado": "rebobinado",
+              "posicion": {
+                "x": 175,
+                "y": 55
+              },
+              "escala": 1.45,
+              "animacion": "pulso",
+              "curva": "rebote"
+            }
+          ]
         }
       ],
       "silencioFinalSegundos": 4.2,
@@ -1797,6 +2223,32 @@
           "palabra": "video",
           "inicioMs": 3120,
           "finMs": 3360
+        }
+      ],
+      "focoCamara": [
+        {
+          "x": 0,
+          "y": 15,
+          "escala": 1.08,
+          "inicioProgreso": 0.0,
+          "finProgreso": 0.42,
+          "curva": "suave"
+        },
+        {
+          "x": 75,
+          "y": -25,
+          "escala": 1.22,
+          "inicioProgreso": 0.42,
+          "finProgreso": 0.82,
+          "curva": "impacto"
+        },
+        {
+          "x": 0,
+          "y": 10,
+          "escala": 1.08,
+          "inicioProgreso": 0.82,
+          "finProgreso": 1.0,
+          "curva": "suave"
         }
       ]
     }

@@ -1,0 +1,1837 @@
+{
+  "meta": {
+    "id": "por_que_los_que_menos_saben_efecto_dunning_kruger",
+    "slug": "por_que_los_que_menos_saben_efecto_dunning_kruger",
+    "titulo": "Por qué los que menos saben son los más seguros (Dunning-Kruger)",
+    "titulo_corto": "El Efecto Dunning-Kruger",
+    "temaResumen": "Psicología cognitiva del efecto Dunning-Kruger, el robo con jugo de limón de McArthur Wheeler en 1995 y la curva entre ignorancia, confianza y sabiduría.",
+    "gancho": "En 1995, un hombre asaltó dos bancos a plena luz del día con la cara empapada en jugo de limón, jurando que era totalmente invisible ante las cámaras.",
+    "fuentes": "Kruger, J., & Dunning, D. (1999). Unskilled and unaware of it. Journal of Personality and Social Psychology, 77(6), 1121-1134.",
+    "genero": "Psicología y Ciencia Cognitiva",
+    "duracionObjetivo": [
+      62,
+      75
+    ]
+  },
+  "escenas": [
+    {
+      "id": 1,
+      "texto": "En mil novecientos noventa y cinco, un hombre asaltó dos bancos a plena luz del día con la cara empapada en jugo de limón, jurando que era totalmente invisible ante las cámaras.",
+      "icono": "Camera",
+      "colorIcono": "#FACC15",
+      "tituloVisual": "EL LADRÓN DEL JUGO DE LIMÓN",
+      "composicionVisual": "plano_general",
+      "escenario": "banco_camara_seguridad_limon",
+      "layout": "narrativo",
+      "transicion": "zoom_in",
+      "efectosCamara": [
+        "drift",
+        "punch"
+      ],
+      "sfx": "sfx/sfx_limon_squirt_camara_beep.wav",
+      "volumenSfx": 0.24,
+      "palabrasClave": [
+        "1995",
+        "bancos",
+        "limón",
+        "invisible",
+        "cámaras"
+      ],
+      "personajes": [
+        {
+          "id": "wheeler",
+          "nombre": "McArthur Wheeler",
+          "posicion": {
+            "x": -220,
+            "y": 20
+          },
+          "escala": 0.96,
+          "orientacion": "derecha",
+          "habla": true,
+          "capaZ": 18,
+          "acciones": [
+            {
+              "tipo": "personalizada",
+              "pasos": [
+                {
+                  "desdePalabra": "En",
+                  "hastaPalabra": "cara",
+                  "poseId": "walking",
+                  "expresion": "proud",
+                  "desdePosicion": {
+                    "x": -250,
+                    "y": 20
+                  },
+                  "posicion": {
+                    "x": -180,
+                    "y": 20
+                  },
+                  "curva": "suave",
+                  "procedural": "caminar"
+                },
+                {
+                  "desdePalabra": "empapada",
+                  "hastaPalabra": "cámaras",
+                  "poseId": "celebrating_arms_up",
+                  "expresion": "smile_wide",
+                  "posicion": {
+                    "x": -170,
+                    "y": 20
+                  },
+                  "curva": "rebote",
+                  "procedural": "manipular"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "objetos": [
+        {
+          "id": "prop_limon_banco",
+          "propId": "limon_bolsa_dinero_invisible",
+          "posicion": {
+            "x": 210,
+            "y": 55
+          },
+          "escala": 1.05,
+          "capaZ": 28,
+          "pasos": [
+            {
+              "desdePalabra": "En",
+              "hastaPalabra": "cara",
+              "posicion": {
+                "x": 210,
+                "y": 55
+              },
+              "escala": 1.0,
+              "estado": "normal",
+              "curva": "suave",
+              "animacion": "flotar"
+            },
+            {
+              "desdePalabra": "empapada",
+              "hastaPalabra": "cámaras",
+              "posicion": {
+                "x": 200,
+                "y": 50
+              },
+              "escala": 1.08,
+              "estado": "activo",
+              "curva": "rebote",
+              "animacion": "pulso"
+            }
+          ]
+        }
+      ],
+      "duracionSegundos": 8.53,
+      "palabras": [
+        {
+          "palabra": "En",
+          "inicioMs": 0,
+          "finMs": 220
+        },
+        {
+          "palabra": "mil",
+          "inicioMs": 220,
+          "finMs": 380
+        },
+        {
+          "palabra": "novecientos",
+          "inicioMs": 380,
+          "finMs": 1060
+        },
+        {
+          "palabra": "noventa",
+          "inicioMs": 1060,
+          "finMs": 1440
+        },
+        {
+          "palabra": "y",
+          "inicioMs": 1440,
+          "finMs": 1460
+        },
+        {
+          "palabra": "cinco",
+          "inicioMs": 1460,
+          "finMs": 1500
+        },
+        {
+          "palabra": "un",
+          "inicioMs": 1460,
+          "finMs": 1540
+        },
+        {
+          "palabra": "hombre",
+          "inicioMs": 1540,
+          "finMs": 1800
+        },
+        {
+          "palabra": "asaltó",
+          "inicioMs": 1800,
+          "finMs": 2220
+        },
+        {
+          "palabra": "dos",
+          "inicioMs": 2220,
+          "finMs": 2480
+        },
+        {
+          "palabra": "bancos",
+          "inicioMs": 2480,
+          "finMs": 2880
+        },
+        {
+          "palabra": "a",
+          "inicioMs": 2880,
+          "finMs": 2980
+        },
+        {
+          "palabra": "plena",
+          "inicioMs": 2980,
+          "finMs": 3240
+        },
+        {
+          "palabra": "luz",
+          "inicioMs": 3240,
+          "finMs": 3420
+        },
+        {
+          "palabra": "del",
+          "inicioMs": 3420,
+          "finMs": 3600
+        },
+        {
+          "palabra": "día",
+          "inicioMs": 3600,
+          "finMs": 3820
+        },
+        {
+          "palabra": "con",
+          "inicioMs": 3820,
+          "finMs": 4000
+        },
+        {
+          "palabra": "la",
+          "inicioMs": 4000,
+          "finMs": 4120
+        },
+        {
+          "palabra": "cara",
+          "inicioMs": 4120,
+          "finMs": 4300
+        },
+        {
+          "palabra": "empapada",
+          "inicioMs": 4300,
+          "finMs": 4720
+        },
+        {
+          "palabra": "en",
+          "inicioMs": 4720,
+          "finMs": 4860
+        },
+        {
+          "palabra": "jugo",
+          "inicioMs": 4860,
+          "finMs": 5120
+        },
+        {
+          "palabra": "de",
+          "inicioMs": 5120,
+          "finMs": 5200
+        },
+        {
+          "palabra": "limón",
+          "inicioMs": 5200,
+          "finMs": 5580
+        },
+        {
+          "palabra": "jurando",
+          "inicioMs": 5760,
+          "finMs": 6100
+        },
+        {
+          "palabra": "que",
+          "inicioMs": 6100,
+          "finMs": 6260
+        },
+        {
+          "palabra": "era",
+          "inicioMs": 6260,
+          "finMs": 6400
+        },
+        {
+          "palabra": "totalmente",
+          "inicioMs": 6400,
+          "finMs": 6780
+        },
+        {
+          "palabra": "invisible",
+          "inicioMs": 6780,
+          "finMs": 7280
+        },
+        {
+          "palabra": "ante",
+          "inicioMs": 7280,
+          "finMs": 7560
+        },
+        {
+          "palabra": "las",
+          "inicioMs": 7560,
+          "finMs": 7720
+        },
+        {
+          "palabra": "cámaras",
+          "inicioMs": 7720,
+          "finMs": 8140
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "texto": "Cuando la policía lo arrestó una hora después, McArthur Wheeler estaba genuinamente indignado: como el limón sirve de tinta invisible en papel, creyó que borraría su rostro por completo.",
+      "icono": "ShieldAlert",
+      "colorIcono": "#EF4444",
+      "tituloVisual": "LA LÓGICA DE LA TINTA INVISIBLE",
+      "composicionVisual": "plano_general",
+      "escenario": "exterior_banco_patrulla_arresto",
+      "layout": "narrativo",
+      "transicion": "whip_right",
+      "efectosCamara": [
+        "drift",
+        "shake"
+      ],
+      "sfx": "sfx/sfx_esposas_sirena_policia.wav",
+      "volumenSfx": 0.24,
+      "palabrasClave": [
+        "policía",
+        "arrestó",
+        "indignado",
+        "tinta",
+        "invisible"
+      ],
+      "personajes": [
+        {
+          "id": "wheeler_arrestado",
+          "nombre": "McArthur Wheeler",
+          "posicion": {
+            "x": -240,
+            "y": 20
+          },
+          "escala": 0.94,
+          "orientacion": "derecha",
+          "habla": true,
+          "capaZ": 18,
+          "acciones": [
+            {
+              "tipo": "personalizada",
+              "pasos": [
+                {
+                  "desdePalabra": "Cuando",
+                  "hastaPalabra": "indignado",
+                  "poseId": "surprised_hands_up",
+                  "expresion": "shocked",
+                  "posicion": {
+                    "x": -240,
+                    "y": 20
+                  },
+                  "curva": "impacto",
+                  "procedural": "recoil"
+                },
+                {
+                  "desdePalabra": "como",
+                  "hastaPalabra": "completo",
+                  "poseId": "doubting_open_hands",
+                  "expresion": "confused",
+                  "posicion": {
+                    "x": -220,
+                    "y": 20
+                  },
+                  "curva": "suave",
+                  "procedural": "manipular"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "oficial_policia",
+          "nombre": "Oficial",
+          "posicion": {
+            "x": 270,
+            "y": 20
+          },
+          "escala": 0.92,
+          "orientacion": "izquierda",
+          "habla": false,
+          "capaZ": 16,
+          "acciones": [
+            {
+              "tipo": "personalizada",
+              "pasos": [
+                {
+                  "inicioProgreso": 0,
+                  "finProgreso": 1,
+                  "poseId": "arms_crossed",
+                  "expresion": "skeptical",
+                  "posicion": {
+                    "x": 270,
+                    "y": 20
+                  },
+                  "curva": "suave",
+                  "procedural": "estatico"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "objetos": [
+        {
+          "id": "prop_esposas_tinta",
+          "propId": "esposas_papel_tinta_limon",
+          "posicion": {
+            "x": 25,
+            "y": 55
+          },
+          "escala": 1.02,
+          "capaZ": 28,
+          "pasos": [
+            {
+              "desdePalabra": "Cuando",
+              "hastaPalabra": "indignado",
+              "posicion": {
+                "x": 25,
+                "y": 55
+              },
+              "escala": 0.98,
+              "estado": "normal",
+              "curva": "suave",
+              "animacion": "flotar"
+            },
+            {
+              "desdePalabra": "como",
+              "hastaPalabra": "completo",
+              "posicion": {
+                "x": 25,
+                "y": 50
+              },
+              "escala": 1.05,
+              "estado": "activo",
+              "curva": "rebote",
+              "animacion": "pulso"
+            }
+          ]
+        }
+      ],
+      "duracionSegundos": 9.994,
+      "palabras": [
+        {
+          "palabra": "Cuando",
+          "inicioMs": 0,
+          "finMs": 260
+        },
+        {
+          "palabra": "la",
+          "inicioMs": 260,
+          "finMs": 380
+        },
+        {
+          "palabra": "policía",
+          "inicioMs": 380,
+          "finMs": 820
+        },
+        {
+          "palabra": "lo",
+          "inicioMs": 820,
+          "finMs": 920
+        },
+        {
+          "palabra": "arrestó",
+          "inicioMs": 920,
+          "finMs": 1280
+        },
+        {
+          "palabra": "una",
+          "inicioMs": 1280,
+          "finMs": 1440
+        },
+        {
+          "palabra": "hora",
+          "inicioMs": 1440,
+          "finMs": 1580
+        },
+        {
+          "palabra": "después",
+          "inicioMs": 1580,
+          "finMs": 1900
+        },
+        {
+          "palabra": "McArthur",
+          "inicioMs": 2100,
+          "finMs": 2440
+        },
+        {
+          "palabra": "Wheeler",
+          "inicioMs": 2440,
+          "finMs": 2920
+        },
+        {
+          "palabra": "estaba",
+          "inicioMs": 2920,
+          "finMs": 3280
+        },
+        {
+          "palabra": "genuinamente",
+          "inicioMs": 3280,
+          "finMs": 4000
+        },
+        {
+          "palabra": "indignado",
+          "inicioMs": 4000,
+          "finMs": 4640
+        },
+        {
+          "palabra": "como",
+          "inicioMs": 4940,
+          "finMs": 5080
+        },
+        {
+          "palabra": "el",
+          "inicioMs": 5080,
+          "finMs": 5220
+        },
+        {
+          "palabra": "limón",
+          "inicioMs": 5220,
+          "finMs": 5440
+        },
+        {
+          "palabra": "sirve",
+          "inicioMs": 5440,
+          "finMs": 5740
+        },
+        {
+          "palabra": "de",
+          "inicioMs": 5740,
+          "finMs": 5880
+        },
+        {
+          "palabra": "tinta",
+          "inicioMs": 5880,
+          "finMs": 6180
+        },
+        {
+          "palabra": "invisible",
+          "inicioMs": 6180,
+          "finMs": 6500
+        },
+        {
+          "palabra": "en",
+          "inicioMs": 6500,
+          "finMs": 6740
+        },
+        {
+          "palabra": "papel",
+          "inicioMs": 6740,
+          "finMs": 7020
+        },
+        {
+          "palabra": "creyó",
+          "inicioMs": 7380,
+          "finMs": 7620
+        },
+        {
+          "palabra": "que",
+          "inicioMs": 7620,
+          "finMs": 7740
+        },
+        {
+          "palabra": "borraría",
+          "inicioMs": 7740,
+          "finMs": 8140
+        },
+        {
+          "palabra": "su",
+          "inicioMs": 8140,
+          "finMs": 8340
+        },
+        {
+          "palabra": "rostro",
+          "inicioMs": 8340,
+          "finMs": 8680
+        },
+        {
+          "palabra": "por",
+          "inicioMs": 8680,
+          "finMs": 8820
+        },
+        {
+          "palabra": "completo",
+          "inicioMs": 8820,
+          "finMs": 9220
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "texto": "Intrigados por este caso absurdo, los psicólogos David Dunning y Justin Kruger descubrieron en mil novecientos noventa y nueve una trampa mental universal: la doble ceguera de la ignorancia.",
+      "icono": "LineChart",
+      "colorIcono": "#10B981",
+      "tituloVisual": "ESTUDIO DUNNING-KRUGER (1999)",
+      "composicionVisual": "escenario_ilustrado",
+      "escenario": "aula_pizarra_dunning_kruger",
+      "layout": "narrativo",
+      "transicion": "whip_left",
+      "efectosCamara": [
+        "drift",
+        "punch"
+      ],
+      "sfx": "sfx/sfx_tiza_pizarra_cohete_curva.wav",
+      "volumenSfx": 0.24,
+      "palabrasClave": [
+        "Dunning",
+        "Kruger",
+        "1999",
+        "doble",
+        "ceguera",
+        "ignorancia"
+      ],
+      "personajes": [
+        {
+          "id": "psicologo_dunning",
+          "nombre": "David Dunning",
+          "posicion": {
+            "x": -220,
+            "y": 20
+          },
+          "escala": 0.95,
+          "orientacion": "derecha",
+          "habla": true,
+          "capaZ": 18,
+          "acciones": [
+            {
+              "tipo": "personalizada",
+              "pasos": [
+                {
+                  "desdePalabra": "Intrigados",
+                  "hastaPalabra": "1999",
+                  "poseId": "explaining_pointing_up",
+                  "expresion": "analytical",
+                  "posicion": {
+                    "x": -220,
+                    "y": 20
+                  },
+                  "curva": "suave",
+                  "procedural": "manipular"
+                },
+                {
+                  "desdePalabra": "una",
+                  "hastaPalabra": "ignorancia",
+                  "poseId": "presenting_object",
+                  "expresion": "eureka",
+                  "posicion": {
+                    "x": -195,
+                    "y": 20
+                  },
+                  "curva": "rebote",
+                  "procedural": "manipular"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "objetos": [
+        {
+          "id": "prop_pizarra_curva",
+          "propId": "pizarra_curva_dunning_kruger",
+          "posicion": {
+            "x": 195,
+            "y": 60
+          },
+          "escala": 1.04,
+          "capaZ": 28,
+          "pasos": [
+            {
+              "desdePalabra": "Intrigados",
+              "hastaPalabra": "1999",
+              "posicion": {
+                "x": 195,
+                "y": 60
+              },
+              "escala": 1.0,
+              "estado": "normal",
+              "curva": "suave",
+              "animacion": "flotar"
+            },
+            {
+              "desdePalabra": "una",
+              "hastaPalabra": "ignorancia",
+              "posicion": {
+                "x": 185,
+                "y": 55
+              },
+              "escala": 1.08,
+              "estado": "activo",
+              "curva": "rebote",
+              "animacion": "pulso"
+            }
+          ]
+        }
+      ],
+      "duracionSegundos": 10.546,
+      "palabras": [
+        {
+          "palabra": "Intrigados",
+          "inicioMs": 0,
+          "finMs": 640
+        },
+        {
+          "palabra": "por",
+          "inicioMs": 640,
+          "finMs": 840
+        },
+        {
+          "palabra": "este",
+          "inicioMs": 840,
+          "finMs": 1100
+        },
+        {
+          "palabra": "caso",
+          "inicioMs": 1100,
+          "finMs": 1320
+        },
+        {
+          "palabra": "absurdo",
+          "inicioMs": 1320,
+          "finMs": 1920
+        },
+        {
+          "palabra": "los",
+          "inicioMs": 2140,
+          "finMs": 2240
+        },
+        {
+          "palabra": "psicólogos",
+          "inicioMs": 2240,
+          "finMs": 2880
+        },
+        {
+          "palabra": "David",
+          "inicioMs": 2880,
+          "finMs": 3060
+        },
+        {
+          "palabra": "Dunning",
+          "inicioMs": 3060,
+          "finMs": 3440
+        },
+        {
+          "palabra": "y",
+          "inicioMs": 3440,
+          "finMs": 3640
+        },
+        {
+          "palabra": "Justin",
+          "inicioMs": 3640,
+          "finMs": 3940
+        },
+        {
+          "palabra": "Kruger",
+          "inicioMs": 3940,
+          "finMs": 4300
+        },
+        {
+          "palabra": "descubrieron",
+          "inicioMs": 4300,
+          "finMs": 4920
+        },
+        {
+          "palabra": "en",
+          "inicioMs": 4920,
+          "finMs": 5020
+        },
+        {
+          "palabra": "mil",
+          "inicioMs": 5020,
+          "finMs": 5220
+        },
+        {
+          "palabra": "novecientos",
+          "inicioMs": 5220,
+          "finMs": 5260
+        },
+        {
+          "palabra": "noventa",
+          "inicioMs": 5220,
+          "finMs": 6280
+        },
+        {
+          "palabra": "y",
+          "inicioMs": 6280,
+          "finMs": 6320
+        },
+        {
+          "palabra": "nueve",
+          "inicioMs": 6320,
+          "finMs": 6620
+        },
+        {
+          "palabra": "una",
+          "inicioMs": 6620,
+          "finMs": 6860
+        },
+        {
+          "palabra": "trampa",
+          "inicioMs": 6860,
+          "finMs": 7200
+        },
+        {
+          "palabra": "mental",
+          "inicioMs": 7200,
+          "finMs": 7500
+        },
+        {
+          "palabra": "universal",
+          "inicioMs": 7500,
+          "finMs": 8040
+        },
+        {
+          "palabra": "la",
+          "inicioMs": 8280,
+          "finMs": 8340
+        },
+        {
+          "palabra": "doble",
+          "inicioMs": 8340,
+          "finMs": 8640
+        },
+        {
+          "palabra": "ceguera",
+          "inicioMs": 8640,
+          "finMs": 9000
+        },
+        {
+          "palabra": "de",
+          "inicioMs": 9000,
+          "finMs": 9120
+        },
+        {
+          "palabra": "la",
+          "inicioMs": 9120,
+          "finMs": 9220
+        },
+        {
+          "palabra": "ignorancia",
+          "inicioMs": 9220,
+          "finMs": 9800
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "texto": "Cuando sabes muy poco sobre un tema, no tienes el criterio necesario para notar tus propios errores. Así escalas directo a la llamada Cima de la Ignorancia.",
+      "icono": "Mountain",
+      "colorIcono": "#F59E0B",
+      "tituloVisual": "LA CIMA DE LA IGNORANCIA",
+      "composicionVisual": "plano_general",
+      "escenario": "risco_cima_de_la_ignorancia",
+      "layout": "narrativo",
+      "transicion": "zoom_in",
+      "efectosCamara": [
+        "drift",
+        "punch"
+      ],
+      "sfx": "sfx/sfx_fanfarria_megafono_soberbia.wav",
+      "volumenSfx": 0.24,
+      "palabrasClave": [
+        "poco",
+        "criterio",
+        "errores",
+        "Cima",
+        "Ignorancia"
+      ],
+      "personajes": [
+        {
+          "id": "falso_experto",
+          "nombre": "Experto de 10 minutos",
+          "posicion": {
+            "x": -200,
+            "y": -20
+          },
+          "escala": 0.96,
+          "orientacion": "derecha",
+          "habla": true,
+          "capaZ": 18,
+          "acciones": [
+            {
+              "tipo": "personalizada",
+              "pasos": [
+                {
+                  "desdePalabra": "Cuando",
+                  "hastaPalabra": "errores",
+                  "poseId": "standing_confident",
+                  "expresion": "proud",
+                  "posicion": {
+                    "x": -200,
+                    "y": -20
+                  },
+                  "curva": "suave",
+                  "procedural": "manipular"
+                },
+                {
+                  "desdePalabra": "Así",
+                  "hastaPalabra": "Ignorancia",
+                  "poseId": "celebrating_arms_up",
+                  "expresion": "talking_enthusiastic",
+                  "posicion": {
+                    "x": -185,
+                    "y": -25
+                  },
+                  "curva": "rebote",
+                  "procedural": "rebotar"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "objetos": [
+        {
+          "id": "prop_megafono_cima",
+          "propId": "megafono_bandera_cima_ignorancia",
+          "posicion": {
+            "x": 195,
+            "y": 50
+          },
+          "escala": 1.05,
+          "capaZ": 28,
+          "pasos": [
+            {
+              "desdePalabra": "Cuando",
+              "hastaPalabra": "errores",
+              "posicion": {
+                "x": 195,
+                "y": 50
+              },
+              "escala": 1.0,
+              "estado": "normal",
+              "curva": "suave",
+              "animacion": "flotar"
+            },
+            {
+              "desdePalabra": "Así",
+              "hastaPalabra": "Ignorancia",
+              "posicion": {
+                "x": 185,
+                "y": 45
+              },
+              "escala": 1.09,
+              "estado": "activo",
+              "curva": "rebote",
+              "animacion": "pulso"
+            }
+          ]
+        }
+      ],
+      "duracionSegundos": 8.29,
+      "palabras": [
+        {
+          "palabra": "Cuando",
+          "inicioMs": 0,
+          "finMs": 240
+        },
+        {
+          "palabra": "sabes",
+          "inicioMs": 240,
+          "finMs": 520
+        },
+        {
+          "palabra": "muy",
+          "inicioMs": 520,
+          "finMs": 740
+        },
+        {
+          "palabra": "poco",
+          "inicioMs": 740,
+          "finMs": 1000
+        },
+        {
+          "palabra": "sobre",
+          "inicioMs": 1000,
+          "finMs": 1280
+        },
+        {
+          "palabra": "un",
+          "inicioMs": 1280,
+          "finMs": 1400
+        },
+        {
+          "palabra": "tema",
+          "inicioMs": 1400,
+          "finMs": 1680
+        },
+        {
+          "palabra": "no",
+          "inicioMs": 1940,
+          "finMs": 2020
+        },
+        {
+          "palabra": "tienes",
+          "inicioMs": 2020,
+          "finMs": 2300
+        },
+        {
+          "palabra": "el",
+          "inicioMs": 2300,
+          "finMs": 2440
+        },
+        {
+          "palabra": "criterio",
+          "inicioMs": 2440,
+          "finMs": 2860
+        },
+        {
+          "palabra": "necesario",
+          "inicioMs": 2860,
+          "finMs": 3220
+        },
+        {
+          "palabra": "para",
+          "inicioMs": 3220,
+          "finMs": 3560
+        },
+        {
+          "palabra": "notar",
+          "inicioMs": 3560,
+          "finMs": 3880
+        },
+        {
+          "palabra": "tus",
+          "inicioMs": 3880,
+          "finMs": 4060
+        },
+        {
+          "palabra": "propios",
+          "inicioMs": 4060,
+          "finMs": 4380
+        },
+        {
+          "palabra": "errores",
+          "inicioMs": 4380,
+          "finMs": 4840
+        },
+        {
+          "palabra": "Así",
+          "inicioMs": 5180,
+          "finMs": 5400
+        },
+        {
+          "palabra": "escalas",
+          "inicioMs": 5400,
+          "finMs": 5880
+        },
+        {
+          "palabra": "directo",
+          "inicioMs": 5880,
+          "finMs": 6280
+        },
+        {
+          "palabra": "a",
+          "inicioMs": 6280,
+          "finMs": 6340
+        },
+        {
+          "palabra": "la",
+          "inicioMs": 6340,
+          "finMs": 6400
+        },
+        {
+          "palabra": "llamada",
+          "inicioMs": 6400,
+          "finMs": 6740
+        },
+        {
+          "palabra": "Cima",
+          "inicioMs": 6740,
+          "finMs": 7020
+        },
+        {
+          "palabra": "de",
+          "inicioMs": 7020,
+          "finMs": 7140
+        },
+        {
+          "palabra": "la",
+          "inicioMs": 7140,
+          "finMs": 7240
+        },
+        {
+          "palabra": "Ignorancia",
+          "inicioMs": 7240,
+          "finMs": 7740
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "texto": "Pero si estudias de verdad, esa ilusión se desploma hacia el Valle de la Desesperación: de pronto comprendes lo gigantesco y complejo que es todo lo que ignoras.",
+      "icono": "TrendingDown",
+      "colorIcono": "#EF4444",
+      "tituloVisual": "EL VALLE DE LA DESESPERACIÓN",
+      "composicionVisual": "escenario_ilustrado",
+      "escenario": "abismo_valle_desesperacion_libros",
+      "layout": "narrativo",
+      "transicion": "flash",
+      "efectosCamara": [
+        "shake",
+        "drift"
+      ],
+      "sfx": "sfx/sfx_roca_quiebre_caida_abismo.wav",
+      "volumenSfx": 0.25,
+      "palabrasClave": [
+        "desploma",
+        "Valle",
+        "Desesperación",
+        "complejo",
+        "ignoras"
+      ],
+      "personajes": [
+        {
+          "id": "estudiante_abrumado",
+          "nombre": "Estudiante",
+          "posicion": {
+            "x": -210,
+            "y": 20
+          },
+          "escala": 0.95,
+          "orientacion": "derecha",
+          "habla": true,
+          "capaZ": 18,
+          "acciones": [
+            {
+              "tipo": "personalizada",
+              "pasos": [
+                {
+                  "desdePalabra": "Pero",
+                  "hastaPalabra": "Desesperación",
+                  "poseId": "surprised_hands_up",
+                  "expresion": "shocked",
+                  "desdePosicion": {
+                    "x": -210,
+                    "y": -20
+                  },
+                  "posicion": {
+                    "x": -210,
+                    "y": 20
+                  },
+                  "curva": "impacto",
+                  "procedural": "recoil"
+                },
+                {
+                  "desdePalabra": "de",
+                  "hastaPalabra": "ignoras",
+                  "poseId": "frustrated_head_grab",
+                  "expresion": "worried",
+                  "posicion": {
+                    "x": -195,
+                    "y": 20
+                  },
+                  "curva": "suave",
+                  "procedural": "temblar"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "objetos": [
+        {
+          "id": "prop_torre_libros",
+          "propId": "torre_libros_valle_desesperacion",
+          "posicion": {
+            "x": 190,
+            "y": 55
+          },
+          "escala": 1.05,
+          "capaZ": 28,
+          "pasos": [
+            {
+              "desdePalabra": "Pero",
+              "hastaPalabra": "Desesperación",
+              "posicion": {
+                "x": 190,
+                "y": 55
+              },
+              "escala": 1.0,
+              "estado": "normal",
+              "curva": "suave",
+              "animacion": "flotar"
+            },
+            {
+              "desdePalabra": "de",
+              "hastaPalabra": "ignoras",
+              "posicion": {
+                "x": 180,
+                "y": 50
+              },
+              "escala": 1.08,
+              "estado": "activo",
+              "curva": "rebote",
+              "animacion": "vibrar"
+            }
+          ]
+        }
+      ],
+      "duracionSegundos": 8.818,
+      "palabras": [
+        {
+          "palabra": "Pero",
+          "inicioMs": 0,
+          "finMs": 220
+        },
+        {
+          "palabra": "si",
+          "inicioMs": 220,
+          "finMs": 380
+        },
+        {
+          "palabra": "estudias",
+          "inicioMs": 380,
+          "finMs": 840
+        },
+        {
+          "palabra": "de",
+          "inicioMs": 840,
+          "finMs": 960
+        },
+        {
+          "palabra": "verdad",
+          "inicioMs": 960,
+          "finMs": 1300
+        },
+        {
+          "palabra": "esa",
+          "inicioMs": 1520,
+          "finMs": 1680
+        },
+        {
+          "palabra": "ilusión",
+          "inicioMs": 1680,
+          "finMs": 2080
+        },
+        {
+          "palabra": "se",
+          "inicioMs": 2080,
+          "finMs": 2240
+        },
+        {
+          "palabra": "desploma",
+          "inicioMs": 2240,
+          "finMs": 2680
+        },
+        {
+          "palabra": "hacia",
+          "inicioMs": 2680,
+          "finMs": 2900
+        },
+        {
+          "palabra": "el",
+          "inicioMs": 2900,
+          "finMs": 3020
+        },
+        {
+          "palabra": "Valle",
+          "inicioMs": 3020,
+          "finMs": 3260
+        },
+        {
+          "palabra": "de",
+          "inicioMs": 3260,
+          "finMs": 3400
+        },
+        {
+          "palabra": "la",
+          "inicioMs": 3400,
+          "finMs": 3500
+        },
+        {
+          "palabra": "Desesperación",
+          "inicioMs": 3500,
+          "finMs": 4280
+        },
+        {
+          "palabra": "de",
+          "inicioMs": 4560,
+          "finMs": 4640
+        },
+        {
+          "palabra": "pronto",
+          "inicioMs": 4640,
+          "finMs": 4940
+        },
+        {
+          "palabra": "comprendes",
+          "inicioMs": 4940,
+          "finMs": 5680
+        },
+        {
+          "palabra": "lo",
+          "inicioMs": 5680,
+          "finMs": 5780
+        },
+        {
+          "palabra": "gigantesco",
+          "inicioMs": 5780,
+          "finMs": 6400
+        },
+        {
+          "palabra": "y",
+          "inicioMs": 6400,
+          "finMs": 6460
+        },
+        {
+          "palabra": "complejo",
+          "inicioMs": 6460,
+          "finMs": 6920
+        },
+        {
+          "palabra": "que",
+          "inicioMs": 6920,
+          "finMs": 7080
+        },
+        {
+          "palabra": "es",
+          "inicioMs": 7080,
+          "finMs": 7280
+        },
+        {
+          "palabra": "todo",
+          "inicioMs": 7280,
+          "finMs": 7420
+        },
+        {
+          "palabra": "lo",
+          "inicioMs": 7420,
+          "finMs": 7620
+        },
+        {
+          "palabra": "que",
+          "inicioMs": 7620,
+          "finMs": 7740
+        },
+        {
+          "palabra": "ignoras",
+          "inicioMs": 7740,
+          "finMs": 8220
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "texto": "Solo con años de práctica subes por la Pendiente de la Iluminación. Ahí descubres que los verdaderos expertos rara vez gritan certezas absolutas; casi siempre responden con prudencia.",
+      "icono": "Compass",
+      "colorIcono": "#34D399",
+      "tituloVisual": "LA PENDIENTE DE LA ILUMINACIÓN",
+      "composicionVisual": "plano_general",
+      "escenario": "sendero_pendiente_iluminacion",
+      "layout": "narrativo",
+      "transicion": "whip_right",
+      "efectosCamara": [
+        "drift",
+        "punch"
+      ],
+      "sfx": "sfx/sfx_pasos_sendero_acorde_sabiduria.wav",
+      "volumenSfx": 0.23,
+      "palabrasClave": [
+        "práctica",
+        "Pendiente",
+        "Iluminación",
+        "expertos",
+        "prudencia"
+      ],
+      "personajes": [
+        {
+          "id": "experto_prudente",
+          "nombre": "Maestro Prudente",
+          "posicion": {
+            "x": -215,
+            "y": 15
+          },
+          "escala": 0.96,
+          "orientacion": "derecha",
+          "habla": true,
+          "capaZ": 18,
+          "acciones": [
+            {
+              "tipo": "personalizada",
+              "pasos": [
+                {
+                  "desdePalabra": "Solo",
+                  "hastaPalabra": "Iluminación",
+                  "poseId": "walking",
+                  "expresion": "smile_soft",
+                  "desdePosicion": {
+                    "x": -250,
+                    "y": 25
+                  },
+                  "posicion": {
+                    "x": -190,
+                    "y": 15
+                  },
+                  "curva": "suave",
+                  "procedural": "caminar"
+                },
+                {
+                  "desdePalabra": "Ahí",
+                  "hastaPalabra": "prudencia",
+                  "poseId": "thinking_chin_hand",
+                  "expresion": "analytical",
+                  "posicion": {
+                    "x": -185,
+                    "y": 15
+                  },
+                  "curva": "suave",
+                  "procedural": "manipular"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "objetos": [
+        {
+          "id": "prop_libro_depende",
+          "propId": "libro_globo_depende_sabiduria",
+          "posicion": {
+            "x": 195,
+            "y": 50
+          },
+          "escala": 1.05,
+          "capaZ": 28,
+          "pasos": [
+            {
+              "desdePalabra": "Solo",
+              "hastaPalabra": "Iluminación",
+              "posicion": {
+                "x": 195,
+                "y": 50
+              },
+              "escala": 1.0,
+              "estado": "normal",
+              "curva": "suave",
+              "animacion": "flotar"
+            },
+            {
+              "desdePalabra": "Ahí",
+              "hastaPalabra": "prudencia",
+              "posicion": {
+                "x": 185,
+                "y": 45
+              },
+              "escala": 1.08,
+              "estado": "activo",
+              "curva": "rebote",
+              "animacion": "pulso"
+            }
+          ]
+        }
+      ],
+      "duracionSegundos": 10.858,
+      "palabras": [
+        {
+          "palabra": "Solo",
+          "inicioMs": 0,
+          "finMs": 340
+        },
+        {
+          "palabra": "con",
+          "inicioMs": 340,
+          "finMs": 580
+        },
+        {
+          "palabra": "años",
+          "inicioMs": 580,
+          "finMs": 800
+        },
+        {
+          "palabra": "de",
+          "inicioMs": 800,
+          "finMs": 980
+        },
+        {
+          "palabra": "práctica",
+          "inicioMs": 980,
+          "finMs": 1380
+        },
+        {
+          "palabra": "subes",
+          "inicioMs": 1380,
+          "finMs": 1860
+        },
+        {
+          "palabra": "por",
+          "inicioMs": 1860,
+          "finMs": 2000
+        },
+        {
+          "palabra": "la",
+          "inicioMs": 2000,
+          "finMs": 2140
+        },
+        {
+          "palabra": "Pendiente",
+          "inicioMs": 2140,
+          "finMs": 2620
+        },
+        {
+          "palabra": "de",
+          "inicioMs": 2620,
+          "finMs": 2780
+        },
+        {
+          "palabra": "la",
+          "inicioMs": 2780,
+          "finMs": 2880
+        },
+        {
+          "palabra": "Iluminación",
+          "inicioMs": 2880,
+          "finMs": 3440
+        },
+        {
+          "palabra": "Ahí",
+          "inicioMs": 3700,
+          "finMs": 3820
+        },
+        {
+          "palabra": "descubres",
+          "inicioMs": 3820,
+          "finMs": 4340
+        },
+        {
+          "palabra": "que",
+          "inicioMs": 4340,
+          "finMs": 4520
+        },
+        {
+          "palabra": "los",
+          "inicioMs": 4520,
+          "finMs": 4680
+        },
+        {
+          "palabra": "verdaderos",
+          "inicioMs": 4680,
+          "finMs": 5160
+        },
+        {
+          "palabra": "expertos",
+          "inicioMs": 5160,
+          "finMs": 5840
+        },
+        {
+          "palabra": "rara",
+          "inicioMs": 5840,
+          "finMs": 6100
+        },
+        {
+          "palabra": "vez",
+          "inicioMs": 6100,
+          "finMs": 6360
+        },
+        {
+          "palabra": "gritan",
+          "inicioMs": 6360,
+          "finMs": 6680
+        },
+        {
+          "palabra": "certezas",
+          "inicioMs": 6680,
+          "finMs": 7240
+        },
+        {
+          "palabra": "absolutas",
+          "inicioMs": 7240,
+          "finMs": 7880
+        },
+        {
+          "palabra": "casi",
+          "inicioMs": 8180,
+          "finMs": 8400
+        },
+        {
+          "palabra": "siempre",
+          "inicioMs": 8400,
+          "finMs": 8880
+        },
+        {
+          "palabra": "responden",
+          "inicioMs": 8880,
+          "finMs": 9460
+        },
+        {
+          "palabra": "con",
+          "inicioMs": 9460,
+          "finMs": 9680
+        },
+        {
+          "palabra": "prudencia",
+          "inicioMs": 9680,
+          "finMs": 10280
+        }
+      ]
+    },
+    {
+      "id": 7,
+      "texto": "La próxima vez que sientas que dominas un tema complejo en cinco minutos, mírate al espejo: quizá llevas la cara llena de jugo de limón sin darte cuenta.",
+      "icono": "Sparkles",
+      "colorIcono": "#38BDF8",
+      "tituloVisual": "LA SABIDURÍA EMPIEZA CON LA DUDA",
+      "composicionVisual": "plano_general",
+      "escenario": "estudio_redes_espejo_limon",
+      "layout": "narrativo",
+      "transicion": "zoom_in",
+      "efectosCamara": [
+        "drift",
+        "punch"
+      ],
+      "sfx": "sfx/sfx_tecleo_espejo_limon_cierre.wav",
+      "volumenSfx": 0.24,
+      "palabrasClave": [
+        "dominas",
+        "cinco",
+        "espejo",
+        "limón",
+        "cuenta"
+      ],
+      "personajes": [
+        {
+          "id": "narrador_cierre",
+          "nombre": "Narrador",
+          "posicion": {
+            "x": 35,
+            "y": 20
+          },
+          "escala": 0.95,
+          "orientacion": "derecha",
+          "habla": true,
+          "capaZ": 18,
+          "acciones": [
+            {
+              "tipo": "personalizada",
+              "pasos": [
+                {
+                  "desdePalabra": "La",
+                  "hastaPalabra": "espejo",
+                  "poseId": "pointing_at_viewer",
+                  "expresion": "skeptical",
+                  "posicion": {
+                    "x": 35,
+                    "y": 20
+                  },
+                  "curva": "suave",
+                  "procedural": "manipular"
+                },
+                {
+                  "desdePalabra": "quizá",
+                  "hastaPalabra": "cuenta",
+                  "poseId": "shrugging",
+                  "expresion": "smile_wide",
+                  "posicion": {
+                    "x": 45,
+                    "y": 20
+                  },
+                  "curva": "rebote",
+                  "procedural": "manipular"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "objetos": [
+        {
+          "id": "prop_espejo_limon",
+          "propId": "espejo_reflejo_limon_redes",
+          "posicion": {
+            "x": 310,
+            "y": 55
+          },
+          "escala": 1.03,
+          "capaZ": 28,
+          "pasos": [
+            {
+              "desdePalabra": "La",
+              "hastaPalabra": "espejo",
+              "posicion": {
+                "x": 310,
+                "y": 55
+              },
+              "escala": 1.0,
+              "estado": "normal",
+              "curva": "suave",
+              "animacion": "flotar"
+            },
+            {
+              "desdePalabra": "quizá",
+              "hastaPalabra": "cuenta",
+              "posicion": {
+                "x": 300,
+                "y": 50
+              },
+              "escala": 1.07,
+              "estado": "activo",
+              "curva": "rebote",
+              "animacion": "pulso"
+            }
+          ]
+        }
+      ],
+      "duracionSegundos": 8.098,
+      "palabras": [
+        {
+          "palabra": "La",
+          "inicioMs": 0,
+          "finMs": 180
+        },
+        {
+          "palabra": "próxima",
+          "inicioMs": 180,
+          "finMs": 500
+        },
+        {
+          "palabra": "vez",
+          "inicioMs": 500,
+          "finMs": 700
+        },
+        {
+          "palabra": "que",
+          "inicioMs": 700,
+          "finMs": 860
+        },
+        {
+          "palabra": "sientas",
+          "inicioMs": 860,
+          "finMs": 1160
+        },
+        {
+          "palabra": "que",
+          "inicioMs": 1160,
+          "finMs": 1280
+        },
+        {
+          "palabra": "dominas",
+          "inicioMs": 1280,
+          "finMs": 1640
+        },
+        {
+          "palabra": "un",
+          "inicioMs": 1640,
+          "finMs": 1780
+        },
+        {
+          "palabra": "tema",
+          "inicioMs": 1780,
+          "finMs": 1980
+        },
+        {
+          "palabra": "complejo",
+          "inicioMs": 1980,
+          "finMs": 2460
+        },
+        {
+          "palabra": "en",
+          "inicioMs": 2460,
+          "finMs": 2540
+        },
+        {
+          "palabra": "cinco",
+          "inicioMs": 2540,
+          "finMs": 2780
+        },
+        {
+          "palabra": "minutos",
+          "inicioMs": 2780,
+          "finMs": 3160
+        },
+        {
+          "palabra": "mírate",
+          "inicioMs": 3360,
+          "finMs": 3580
+        },
+        {
+          "palabra": "al",
+          "inicioMs": 3580,
+          "finMs": 3760
+        },
+        {
+          "palabra": "espejo",
+          "inicioMs": 3760,
+          "finMs": 4220
+        },
+        {
+          "palabra": "quizá",
+          "inicioMs": 4420,
+          "finMs": 4780
+        },
+        {
+          "palabra": "llevas",
+          "inicioMs": 4780,
+          "finMs": 5100
+        },
+        {
+          "palabra": "la",
+          "inicioMs": 5100,
+          "finMs": 5240
+        },
+        {
+          "palabra": "cara",
+          "inicioMs": 5240,
+          "finMs": 5440
+        },
+        {
+          "palabra": "llena",
+          "inicioMs": 5440,
+          "finMs": 5740
+        },
+        {
+          "palabra": "de",
+          "inicioMs": 5740,
+          "finMs": 5860
+        },
+        {
+          "palabra": "jugo",
+          "inicioMs": 5860,
+          "finMs": 6180
+        },
+        {
+          "palabra": "de",
+          "inicioMs": 6180,
+          "finMs": 6260
+        },
+        {
+          "palabra": "limón",
+          "inicioMs": 6260,
+          "finMs": 6560
+        },
+        {
+          "palabra": "sin",
+          "inicioMs": 6560,
+          "finMs": 6780
+        },
+        {
+          "palabra": "darte",
+          "inicioMs": 6780,
+          "finMs": 7080
+        },
+        {
+          "palabra": "cuenta",
+          "inicioMs": 7080,
+          "finMs": 7480
+        }
+      ]
+    }
+  ]
+}

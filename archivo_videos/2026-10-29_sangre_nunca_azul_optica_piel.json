@@ -66,7 +66,8 @@
                     "y": 90
                   },
                   "curva": "suave",
-                  "procedural": "estatico"
+                  "procedural": "estatico",
+                  "hastaPalabra": "Pues"
                 },
                 {
                   "inicioProgreso": 0.5,
@@ -78,7 +79,8 @@
                     "y": 90
                   },
                   "curva": "suave",
-                  "procedural": "estatico"
+                  "procedural": "estatico",
+                  "desdePalabra": "Pues"
                 }
               ]
             }
@@ -90,12 +92,38 @@
           "id": "brazo_venas",
           "propId": "brazo_venas_azules_diagrama",
           "posicion": {
-            "x": 160,
-            "y": -40
+            "x": 155,
+            "y": -30
           },
           "escala": 1.3,
           "animacion": "pulso",
-          "capaZ": 10
+          "capaZ": 28,
+          "pasos": [
+            {
+              "inicioProgreso": 0.0,
+              "finProgreso": 0.5,
+              "hastaPalabra": "Pues",
+              "posicion": {
+                "x": 155,
+                "y": -30
+              },
+              "escala": 1.3,
+              "estado": "mito_azul",
+              "curva": "suave"
+            },
+            {
+              "inicioProgreso": 0.5,
+              "finProgreso": 1.0,
+              "desdePalabra": "Pues",
+              "posicion": {
+                "x": 135,
+                "y": -20
+              },
+              "escala": 1.4,
+              "estado": "cuestionado",
+              "curva": "rebote"
+            }
+          ]
         }
       ],
       "duracionSegundos": 7.33,
@@ -230,6 +258,33 @@
           "inicioMs": 6180,
           "finMs": 6440
         }
+      ],
+      "focoCamara": [
+        {
+          "inicioProgreso": 0.0,
+          "finProgreso": 0.36,
+          "x": -90,
+          "y": 20,
+          "escala": 1.12,
+          "curva": "suave"
+        },
+        {
+          "inicioProgreso": 0.36,
+          "finProgreso": 0.72,
+          "desdePalabra": "Pues",
+          "x": 95,
+          "y": -20,
+          "escala": 1.22,
+          "curva": "suave"
+        },
+        {
+          "inicioProgreso": 0.72,
+          "finProgreso": 1.0,
+          "x": 0,
+          "y": 0,
+          "escala": 1.0,
+          "curva": "suave"
+        }
       ]
     },
     {
@@ -279,7 +334,8 @@
                     "y": 90
                   },
                   "curva": "suave",
-                  "procedural": "estatico"
+                  "procedural": "estatico",
+                  "hastaPalabra": "La"
                 },
                 {
                   "inicioProgreso": 0.5,
@@ -291,7 +347,8 @@
                     "y": 90
                   },
                   "curva": "suave",
-                  "procedural": "estatico"
+                  "procedural": "estatico",
+                  "desdePalabra": "La"
                 }
               ]
             }
@@ -304,11 +361,37 @@
           "propId": "tubos_ensayo_sangre_rojo_oscuro",
           "posicion": {
             "x": 160,
-            "y": -40
+            "y": -30
           },
           "escala": 1.35,
           "animacion": "pulso",
-          "capaZ": 10
+          "capaZ": 28,
+          "pasos": [
+            {
+              "inicioProgreso": 0.0,
+              "finProgreso": 0.5,
+              "hastaPalabra": "La",
+              "posicion": {
+                "x": 160,
+                "y": -30
+              },
+              "escala": 1.35,
+              "estado": "extraccion",
+              "curva": "suave"
+            },
+            {
+              "inicioProgreso": 0.5,
+              "finProgreso": 1.0,
+              "desdePalabra": "La",
+              "posicion": {
+                "x": 140,
+                "y": -20
+              },
+              "escala": 1.46,
+              "estado": "comparacion_rojos",
+              "curva": "rebote"
+            }
+          ]
         }
       ],
       "duracionSegundos": 9.442,
@@ -488,6 +571,33 @@
           "inicioMs": 8500,
           "finMs": 8920
         }
+      ],
+      "focoCamara": [
+        {
+          "inicioProgreso": 0.0,
+          "finProgreso": 0.36,
+          "x": -90,
+          "y": 20,
+          "escala": 1.12,
+          "curva": "suave"
+        },
+        {
+          "inicioProgreso": 0.36,
+          "finProgreso": 0.72,
+          "desdePalabra": "La",
+          "x": 95,
+          "y": -20,
+          "escala": 1.22,
+          "curva": "suave"
+        },
+        {
+          "inicioProgreso": 0.72,
+          "finProgreso": 1.0,
+          "x": 0,
+          "y": 0,
+          "escala": 1.0,
+          "curva": "suave"
+        }
       ]
     },
     {
@@ -537,7 +647,8 @@
                     "y": 90
                   },
                   "curva": "suave",
-                  "procedural": "estatico"
+                  "procedural": "estatico",
+                  "hastaPalabra": "cargada"
                 },
                 {
                   "inicioProgreso": 0.5,
@@ -549,7 +660,8 @@
                     "y": 90
                   },
                   "curva": "suave",
-                  "procedural": "estatico"
+                  "procedural": "estatico",
+                  "desdePalabra": "cargada"
                 }
               ]
             }
@@ -562,11 +674,37 @@
           "propId": "molecula_hemoglobina_hierro",
           "posicion": {
             "x": 160,
-            "y": -40
+            "y": -30
           },
           "escala": 1.35,
           "animacion": "pulso",
-          "capaZ": 10
+          "capaZ": 28,
+          "pasos": [
+            {
+              "inicioProgreso": 0.0,
+              "finProgreso": 0.5,
+              "hastaPalabra": "cargada",
+              "posicion": {
+                "x": 160,
+                "y": -30
+              },
+              "escala": 1.35,
+              "estado": "estructura",
+              "curva": "suave"
+            },
+            {
+              "inicioProgreso": 0.5,
+              "finProgreso": 1.0,
+              "desdePalabra": "cargada",
+              "posicion": {
+                "x": 135,
+                "y": -20
+              },
+              "escala": 1.46,
+              "estado": "reflejo_rojo",
+              "curva": "rebote"
+            }
+          ]
         }
       ],
       "duracionSegundos": 10.066,
@@ -736,6 +874,33 @@
           "inicioMs": 9160,
           "finMs": 9540
         }
+      ],
+      "focoCamara": [
+        {
+          "inicioProgreso": 0.0,
+          "finProgreso": 0.36,
+          "x": -90,
+          "y": 20,
+          "escala": 1.12,
+          "curva": "suave"
+        },
+        {
+          "inicioProgreso": 0.36,
+          "finProgreso": 0.72,
+          "desdePalabra": "cargada",
+          "x": 95,
+          "y": -20,
+          "escala": 1.22,
+          "curva": "suave"
+        },
+        {
+          "inicioProgreso": 0.72,
+          "finProgreso": 1.0,
+          "x": 0,
+          "y": 0,
+          "escala": 1.0,
+          "curva": "suave"
+        }
       ]
     },
     {
@@ -785,7 +950,8 @@
                     "y": 90
                   },
                   "curva": "suave",
-                  "procedural": "estatico"
+                  "procedural": "estatico",
+                  "hastaPalabra": "La"
                 },
                 {
                   "inicioProgreso": 0.5,
@@ -797,7 +963,8 @@
                     "y": 90
                   },
                   "curva": "suave",
-                  "procedural": "estatico"
+                  "procedural": "estatico",
+                  "desdePalabra": "La"
                 }
               ]
             }
@@ -810,11 +977,37 @@
           "propId": "prisma_optico_piel_fotones",
           "posicion": {
             "x": 160,
-            "y": -40
+            "y": -30
           },
           "escala": 1.3,
           "animacion": "flotar",
-          "capaZ": 10
+          "capaZ": 28,
+          "pasos": [
+            {
+              "inicioProgreso": 0.0,
+              "finProgreso": 0.5,
+              "hastaPalabra": "La",
+              "posicion": {
+                "x": 160,
+                "y": -30
+              },
+              "escala": 1.3,
+              "estado": "penetracion_roja",
+              "curva": "suave"
+            },
+            {
+              "inicioProgreso": 0.5,
+              "finProgreso": 1.0,
+              "desdePalabra": "La",
+              "posicion": {
+                "x": 135,
+                "y": -20
+              },
+              "escala": 1.4,
+              "estado": "rebote_azul",
+              "curva": "rebote"
+            }
+          ]
         }
       ],
       "duracionSegundos": 9.418,
@@ -989,6 +1182,33 @@
           "inicioMs": 8500,
           "finMs": 8660
         }
+      ],
+      "focoCamara": [
+        {
+          "inicioProgreso": 0.0,
+          "finProgreso": 0.36,
+          "x": -90,
+          "y": 20,
+          "escala": 1.12,
+          "curva": "suave"
+        },
+        {
+          "inicioProgreso": 0.36,
+          "finProgreso": 0.72,
+          "desdePalabra": "La",
+          "x": 95,
+          "y": -20,
+          "escala": 1.22,
+          "curva": "suave"
+        },
+        {
+          "inicioProgreso": 0.72,
+          "finProgreso": 1.0,
+          "x": 0,
+          "y": 0,
+          "escala": 1.0,
+          "curva": "suave"
+        }
       ]
     },
     {
@@ -1038,7 +1258,8 @@
                     "y": 90
                   },
                   "curva": "suave",
-                  "procedural": "estatico"
+                  "procedural": "estatico",
+                  "hastaPalabra": "mientras"
                 },
                 {
                   "inicioProgreso": 0.5,
@@ -1050,26 +1271,15 @@
                     "y": 90
                   },
                   "curva": "suave",
-                  "procedural": "estatico"
+                  "procedural": "estatico",
+                  "desdePalabra": "mientras"
                 }
               ]
             }
           ]
         }
       ],
-      "objetos": [
-        {
-          "id": "fotones_prisma",
-          "propId": "prisma_optico_piel_fotones",
-          "posicion": {
-            "x": 160,
-            "y": -40
-          },
-          "escala": 1.35,
-          "animacion": "vibrar",
-          "capaZ": 10
-        }
-      ],
+      "objetos": [],
       "duracionSegundos": 9.586,
       "palabras": [
         {
@@ -1257,6 +1467,33 @@
           "inicioMs": 8720,
           "finMs": 9080
         }
+      ],
+      "focoCamara": [
+        {
+          "inicioProgreso": 0.0,
+          "finProgreso": 0.36,
+          "x": -90,
+          "y": 20,
+          "escala": 1.12,
+          "curva": "suave"
+        },
+        {
+          "inicioProgreso": 0.36,
+          "finProgreso": 0.72,
+          "desdePalabra": "mientras",
+          "x": 95,
+          "y": -20,
+          "escala": 1.22,
+          "curva": "suave"
+        },
+        {
+          "inicioProgreso": 0.72,
+          "finProgreso": 1.0,
+          "x": 0,
+          "y": 0,
+          "escala": 1.0,
+          "curva": "suave"
+        }
       ]
     },
     {
@@ -1306,7 +1543,8 @@
                     "y": 90
                   },
                   "curva": "suave",
-                  "procedural": "estatico"
+                  "procedural": "estatico",
+                  "hastaPalabra": "Tus"
                 },
                 {
                   "inicioProgreso": 0.5,
@@ -1318,26 +1556,15 @@
                     "y": 90
                   },
                   "curva": "suave",
-                  "procedural": "estatico"
+                  "procedural": "estatico",
+                  "desdePalabra": "Tus"
                 }
               ]
             }
           ]
         }
       ],
-      "objetos": [
-        {
-          "id": "pizarra_tachada",
-          "propId": "pizarron_mito_escolar_tachado",
-          "posicion": {
-            "x": 160,
-            "y": -40
-          },
-          "escala": 1.35,
-          "animacion": "pulso",
-          "capaZ": 10
-        }
-      ],
+      "objetos": [],
       "duracionSegundos": 11.146,
       "palabras": [
         {
@@ -1505,6 +1732,33 @@
           "inicioMs": 10020,
           "finMs": 10640
         }
+      ],
+      "focoCamara": [
+        {
+          "inicioProgreso": 0.0,
+          "finProgreso": 0.36,
+          "x": -90,
+          "y": 20,
+          "escala": 1.12,
+          "curva": "suave"
+        },
+        {
+          "inicioProgreso": 0.36,
+          "finProgreso": 0.72,
+          "desdePalabra": "Tus",
+          "x": 95,
+          "y": -20,
+          "escala": 1.22,
+          "curva": "suave"
+        },
+        {
+          "inicioProgreso": 0.72,
+          "finProgreso": 1.0,
+          "x": 0,
+          "y": 0,
+          "escala": 1.0,
+          "curva": "suave"
+        }
       ]
     },
     {
@@ -1554,7 +1808,8 @@
                     "y": 90
                   },
                   "curva": "suave",
-                  "procedural": "estatico"
+                  "procedural": "estatico",
+                  "hastaPalabra": "Tu"
                 },
                 {
                   "inicioProgreso": 0.5,
@@ -1566,7 +1821,8 @@
                     "y": 90
                   },
                   "curva": "suave",
-                  "procedural": "caminar"
+                  "procedural": "caminar",
+                  "desdePalabra": "Tu"
                 }
               ]
             }
@@ -1578,12 +1834,38 @@
           "id": "linterna_roja",
           "propId": "linterna_transiluminacion_roja",
           "posicion": {
-            "x": 160,
-            "y": -40
+            "x": 150,
+            "y": -25
           },
           "escala": 1.3,
           "animacion": "flotar",
-          "capaZ": 10
+          "capaZ": 28,
+          "pasos": [
+            {
+              "inicioProgreso": 0.0,
+              "finProgreso": 0.5,
+              "hastaPalabra": "Tu",
+              "posicion": {
+                "x": 150,
+                "y": -25
+              },
+              "escala": 1.3,
+              "estado": "apagada",
+              "curva": "suave"
+            },
+            {
+              "inicioProgreso": 0.5,
+              "finProgreso": 1.0,
+              "desdePalabra": "Tu",
+              "posicion": {
+                "x": 125,
+                "y": -15
+              },
+              "escala": 1.4,
+              "estado": "transiluminacion_roja",
+              "curva": "rebote"
+            }
+          ]
         }
       ],
       "duracionSegundos": 9.898,
@@ -1752,6 +2034,33 @@
           "palabra": "latido",
           "inicioMs": 8940,
           "finMs": 9380
+        }
+      ],
+      "focoCamara": [
+        {
+          "inicioProgreso": 0.0,
+          "finProgreso": 0.36,
+          "x": -90,
+          "y": 20,
+          "escala": 1.12,
+          "curva": "suave"
+        },
+        {
+          "inicioProgreso": 0.36,
+          "finProgreso": 0.72,
+          "desdePalabra": "Tu",
+          "x": 95,
+          "y": -20,
+          "escala": 1.22,
+          "curva": "suave"
+        },
+        {
+          "inicioProgreso": 0.72,
+          "finProgreso": 1.0,
+          "x": 0,
+          "y": 0,
+          "escala": 1.0,
+          "curva": "suave"
         }
       ]
     }

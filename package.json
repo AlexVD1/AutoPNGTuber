@@ -14,6 +14,7 @@
     "historial": "python scripts/registrar_historia.py",
     "validar": "node scripts/validar_guion.js",
     "qa": "node scripts/qa_video.js",
+    "seguimiento": "python scripts/actualizar_seguimiento.py",
     "render:all": "npm run tts && npm run render"
   },
   "dependencies": {

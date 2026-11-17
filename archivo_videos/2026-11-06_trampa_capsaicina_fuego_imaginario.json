@@ -1,0 +1,2142 @@
+{
+  "meta": {
+    "id": "trampa_capsaicina_fuego_imaginario",
+    "slug": "trampa_capsaicina_fuego_imaginario",
+    "temaResumen": "El picante NO es un sabor, es una quemadura química: por qué el agua empeora el picante y solo la leche te salva (Receptores térmicos TRPV1, capsaicina lipofílica, caseína y el engaño biológico al cerebro)",
+    "duracionObjetivo": [
+      62,
+      75
+    ],
+    "titulo": "El picante NO es un sabor: por qué el agua lo empeora y la leche te salva",
+    "titulo_corto": "La trampa del picante",
+    "gancho": "Cuando comes chile picante y sientes que tu lengua se quema en llamas... ¡la temperatura de tu boca no ha subido ni medio grado centígrado!",
+    "genero": "Química de los Alimentos, Neurobiología y Fisiología",
+    "playlist": "Biología, Sentidos Humanos y Curiosidades Científicas",
+    "fuentes": [
+      "Nature (Caterina et al. 1997, The capsaicin receptor: a heat-activated ion channel)",
+      "Journal of Neuroscience (Thermal hyperalgesia and TRPV1 ion channels)",
+      "Chemical Senses (Casein efficacy in washing oral capsaicin)"
+    ]
+  },
+  "escenas": [
+    {
+      "id": 1,
+      "texto": "Cuando comes chile picante y sientes que tu lengua se quema en llamas... ¡la temperatura de tu boca no ha subido ni medio grado centígrado!",
+      "icono": "Flame",
+      "colorIcono": "#EF4444",
+      "tituloVisual": "LENGUA EN LLAMAS",
+      "composicionVisual": "escenario_ilustrado",
+      "escenario": "taqueria_mexicana_salsas_fuego",
+      "layout": "narrativo",
+      "transicion": "corte",
+      "efectosCamara": [
+        "punch",
+        "drift"
+      ],
+      "sfx": "sfx/sfx_mordisco_chile_fuego.wav",
+      "volumenSfx": 0.26,
+      "palabrasClave": [
+        "chile picante",
+        "lengua se quema en llamas",
+        "no ha subido ni medio grado"
+      ],
+      "personajes": [
+        {
+          "id": "stickman_fuego",
+          "nombre": "Stickman",
+          "posicion": {
+            "x": -185,
+            "y": 85
+          },
+          "escala": 1.05,
+          "orientacion": "derecha",
+          "habla": true,
+          "capaZ": 20,
+          "acciones": [
+            {
+              "tipo": "personalizada",
+              "pasos": [
+                {
+                  "inicioProgreso": 0.0,
+                  "finProgreso": 0.5,
+                  "desdePalabra": "Cuando",
+                  "hastaPalabra": "llamas",
+                  "poseId": "covering_mouth",
+                  "expresion": "surprised",
+                  "posicion": {
+                    "x": -185,
+                    "y": 85
+                  },
+                  "curva": "suave",
+                  "procedural": "estatico"
+                },
+                {
+                  "inicioProgreso": 0.5,
+                  "finProgreso": 1.0,
+                  "desdePalabra": "temperatura",
+                  "hastaPalabra": "centígrado",
+                  "poseId": "shock_explosion",
+                  "expresion": "shocked",
+                  "posicion": {
+                    "x": -155,
+                    "y": 85
+                  },
+                  "curva": "impacto",
+                  "procedural": "temblar"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "objetos": [
+        {
+          "id": "chile_fuego",
+          "propId": "chile_habanero_fuego_vivo",
+          "posicion": {
+            "x": 165,
+            "y": 40
+          },
+          "escala": 1.4,
+          "capaZ": 28,
+          "pasos": [
+            {
+              "inicioProgreso": 0.0,
+              "finProgreso": 0.5,
+              "desdePalabra": "Cuando",
+              "hastaPalabra": "llamas",
+              "estado": "normal",
+              "posicion": {
+                "x": 150,
+                "y": 45
+              },
+              "escala": 1.35,
+              "curva": "suave"
+            },
+            {
+              "inicioProgreso": 0.5,
+              "finProgreso": 1.0,
+              "desdePalabra": "temperatura",
+              "hastaPalabra": "centígrado",
+              "estado": "combustion",
+              "posicion": {
+                "x": 180,
+                "y": 30
+              },
+              "escala": 1.5,
+              "animacion": "vibrar",
+              "curva": "impacto"
+            }
+          ]
+        }
+      ],
+      "duracionSegundos": 7.402,
+      "palabras": [
+        {
+          "palabra": "Cuando",
+          "inicioMs": 0,
+          "finMs": 280
+        },
+        {
+          "palabra": "comes",
+          "inicioMs": 280,
+          "finMs": 500
+        },
+        {
+          "palabra": "chile",
+          "inicioMs": 500,
+          "finMs": 860
+        },
+        {
+          "palabra": "picante",
+          "inicioMs": 860,
+          "finMs": 1400
+        },
+        {
+          "palabra": "y",
+          "inicioMs": 1400,
+          "finMs": 1620
+        },
+        {
+          "palabra": "sientes",
+          "inicioMs": 1620,
+          "finMs": 1900
+        },
+        {
+          "palabra": "que",
+          "inicioMs": 1900,
+          "finMs": 2140
+        },
+        {
+          "palabra": "tu",
+          "inicioMs": 2140,
+          "finMs": 2260
+        },
+        {
+          "palabra": "lengua",
+          "inicioMs": 2260,
+          "finMs": 2560
+        },
+        {
+          "palabra": "se",
+          "inicioMs": 2560,
+          "finMs": 2680
+        },
+        {
+          "palabra": "quema",
+          "inicioMs": 2680,
+          "finMs": 2900
+        },
+        {
+          "palabra": "en",
+          "inicioMs": 2900,
+          "finMs": 3040
+        },
+        {
+          "palabra": "llamas",
+          "inicioMs": 3040,
+          "finMs": 3820
+        },
+        {
+          "palabra": "la",
+          "inicioMs": 3820,
+          "finMs": 3880
+        },
+        {
+          "palabra": "temperatura",
+          "inicioMs": 3880,
+          "finMs": 4400
+        },
+        {
+          "palabra": "de",
+          "inicioMs": 4400,
+          "finMs": 4540
+        },
+        {
+          "palabra": "tu",
+          "inicioMs": 4540,
+          "finMs": 4660
+        },
+        {
+          "palabra": "boca",
+          "inicioMs": 4660,
+          "finMs": 4840
+        },
+        {
+          "palabra": "no",
+          "inicioMs": 4840,
+          "finMs": 5040
+        },
+        {
+          "palabra": "ha",
+          "inicioMs": 5040,
+          "finMs": 5120
+        },
+        {
+          "palabra": "subido",
+          "inicioMs": 5120,
+          "finMs": 5400
+        },
+        {
+          "palabra": "ni",
+          "inicioMs": 5400,
+          "finMs": 5540
+        },
+        {
+          "palabra": "medio",
+          "inicioMs": 5540,
+          "finMs": 5760
+        },
+        {
+          "palabra": "grado",
+          "inicioMs": 5760,
+          "finMs": 6060
+        },
+        {
+          "palabra": "centígrado",
+          "inicioMs": 6060,
+          "finMs": 6740
+        }
+      ],
+      "focoCamara": [
+        {
+          "x": 0,
+          "y": 20,
+          "escala": 1.06,
+          "inicioProgreso": 0.0,
+          "finProgreso": 0.45,
+          "curva": "suave"
+        },
+        {
+          "x": 85,
+          "y": 25,
+          "escala": 1.24,
+          "inicioProgreso": 0.45,
+          "finProgreso": 0.82,
+          "curva": "impacto"
+        },
+        {
+          "x": -40,
+          "y": 30,
+          "escala": 1.12,
+          "inicioProgreso": 0.82,
+          "finProgreso": 1.0,
+          "curva": "suave"
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "texto": "Si te pusieras un termómetro en la lengua en pleno ataque de picante, marcaría exactamente treinta y seis punto cinco grados: una temperatura completamente normal y sin daño térmico.",
+      "icono": "Thermometer",
+      "colorIcono": "#10B981",
+      "tituloVisual": "TEMPERATURA NORMAL",
+      "composicionVisual": "primer_plano",
+      "escenario": "taqueria_mexicana_salsas_fuego",
+      "layout": "narrativo",
+      "transicion": "whip_right",
+      "efectosCamara": [
+        "punch",
+        "drift"
+      ],
+      "sfx": "sfx/sfx_receptor_termico_alarma.wav",
+      "volumenSfx": 0.22,
+      "palabrasClave": [
+        "termómetro en la lengua",
+        "treinta y seis punto cinco grados",
+        "sin daño térmico"
+      ],
+      "personajes": [
+        {
+          "id": "stickman_termometro",
+          "nombre": "Stickman",
+          "posicion": {
+            "x": -185,
+            "y": 85
+          },
+          "escala": 1.05,
+          "orientacion": "derecha",
+          "habla": true,
+          "capaZ": 20,
+          "acciones": [
+            {
+              "tipo": "personalizada",
+              "pasos": [
+                {
+                  "inicioProgreso": 0.0,
+                  "finProgreso": 0.45,
+                  "desdePalabra": "Si",
+                  "hastaPalabra": "picante",
+                  "poseId": "presenting_object",
+                  "expresion": "talking_enthusiastic",
+                  "posicion": {
+                    "x": -185,
+                    "y": 85
+                  },
+                  "curva": "suave",
+                  "procedural": "estatico"
+                },
+                {
+                  "inicioProgreso": 0.45,
+                  "finProgreso": 1.0,
+                  "desdePalabra": "marcaría",
+                  "hastaPalabra": "térmico",
+                  "poseId": "showing_both_hands",
+                  "expresion": "smile_wide",
+                  "posicion": {
+                    "x": -155,
+                    "y": 85
+                  },
+                  "curva": "rebote",
+                  "procedural": "estatico"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "objetos": [
+        {
+          "id": "termometro_cero",
+          "propId": "termometro_lengua_cero_cambio",
+          "posicion": {
+            "x": 125,
+            "y": 35
+          },
+          "escala": 1.25,
+          "capaZ": 28,
+          "pasos": [
+            {
+              "inicioProgreso": 0.0,
+              "finProgreso": 0.45,
+              "desdePalabra": "Si",
+              "hastaPalabra": "picante",
+              "estado": "midiendo",
+              "posicion": {
+                "x": 120,
+                "y": 40
+              },
+              "escala": 1.22,
+              "curva": "suave"
+            },
+            {
+              "inicioProgreso": 0.45,
+              "finProgreso": 1.0,
+              "desdePalabra": "marcaría",
+              "hastaPalabra": "térmico",
+              "estado": "verificado_normal",
+              "posicion": {
+                "x": 130,
+                "y": 25
+              },
+              "escala": 1.32,
+              "animacion": "pulso",
+              "curva": "rebote"
+            }
+          ]
+        }
+      ],
+      "duracionSegundos": 10.21,
+      "palabras": [
+        {
+          "palabra": "Si",
+          "inicioMs": 0,
+          "finMs": 120
+        },
+        {
+          "palabra": "te",
+          "inicioMs": 120,
+          "finMs": 240
+        },
+        {
+          "palabra": "pusieras",
+          "inicioMs": 240,
+          "finMs": 580
+        },
+        {
+          "palabra": "un",
+          "inicioMs": 580,
+          "finMs": 760
+        },
+        {
+          "palabra": "termómetro",
+          "inicioMs": 760,
+          "finMs": 1200
+        },
+        {
+          "palabra": "en",
+          "inicioMs": 1200,
+          "finMs": 1340
+        },
+        {
+          "palabra": "la",
+          "inicioMs": 1340,
+          "finMs": 1440
+        },
+        {
+          "palabra": "lengua",
+          "inicioMs": 1440,
+          "finMs": 1720
+        },
+        {
+          "palabra": "en",
+          "inicioMs": 1720,
+          "finMs": 1860
+        },
+        {
+          "palabra": "pleno",
+          "inicioMs": 1860,
+          "finMs": 2080
+        },
+        {
+          "palabra": "ataque",
+          "inicioMs": 2080,
+          "finMs": 2320
+        },
+        {
+          "palabra": "de",
+          "inicioMs": 2320,
+          "finMs": 2500
+        },
+        {
+          "palabra": "picante",
+          "inicioMs": 2500,
+          "finMs": 2980
+        },
+        {
+          "palabra": "marcaría",
+          "inicioMs": 3360,
+          "finMs": 3720
+        },
+        {
+          "palabra": "exactamente",
+          "inicioMs": 3720,
+          "finMs": 4140
+        },
+        {
+          "palabra": "treinta",
+          "inicioMs": 4140,
+          "finMs": 4420
+        },
+        {
+          "palabra": "y",
+          "inicioMs": 4420,
+          "finMs": 4700
+        },
+        {
+          "palabra": "seis",
+          "inicioMs": 4700,
+          "finMs": 4980
+        },
+        {
+          "palabra": "punto",
+          "inicioMs": 4980,
+          "finMs": 5260
+        },
+        {
+          "palabra": "cinco",
+          "inicioMs": 5260,
+          "finMs": 5540
+        },
+        {
+          "palabra": "grados",
+          "inicioMs": 5540,
+          "finMs": 6340
+        },
+        {
+          "palabra": "una",
+          "inicioMs": 6380,
+          "finMs": 6600
+        },
+        {
+          "palabra": "temperatura",
+          "inicioMs": 6600,
+          "finMs": 7000
+        },
+        {
+          "palabra": "completamente",
+          "inicioMs": 7000,
+          "finMs": 7740
+        },
+        {
+          "palabra": "normal",
+          "inicioMs": 7740,
+          "finMs": 8340
+        },
+        {
+          "palabra": "y",
+          "inicioMs": 8340,
+          "finMs": 8620
+        },
+        {
+          "palabra": "sin",
+          "inicioMs": 8620,
+          "finMs": 8860
+        },
+        {
+          "palabra": "daño",
+          "inicioMs": 8860,
+          "finMs": 9120
+        },
+        {
+          "palabra": "térmico",
+          "inicioMs": 9120,
+          "finMs": 9640
+        }
+      ],
+      "focoCamara": [
+        {
+          "x": -60,
+          "y": 30,
+          "escala": 1.12,
+          "inicioProgreso": 0.0,
+          "finProgreso": 0.42,
+          "curva": "suave"
+        },
+        {
+          "x": 50,
+          "y": 20,
+          "escala": 1.2,
+          "inicioProgreso": 0.42,
+          "finProgreso": 0.8,
+          "curva": "impacto"
+        },
+        {
+          "x": 0,
+          "y": 25,
+          "escala": 1.1,
+          "inicioProgreso": 0.8,
+          "finProgreso": 1.0,
+          "curva": "suave"
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "texto": "El picante no es un sabor, es un engaño biológico. Los chiles contienen capsaicina, una sustancia que engaña al receptor TRPV1 de tus nervios, el mismo sensor que detecta quemaduras a más de cuarenta y tres grados.",
+      "icono": "Cpu",
+      "colorIcono": "#8B5CF6",
+      "tituloVisual": "RECEPTOR TRPV1",
+      "composicionVisual": "escenario_ilustrado",
+      "escenario": "macro_lengua_papilas_receptor",
+      "layout": "narrativo",
+      "transicion": "zoom_in",
+      "efectosCamara": [
+        "punch",
+        "drift"
+      ],
+      "sfx": "sfx/sfx_receptor_termico_alarma.wav",
+      "volumenSfx": 0.25,
+      "palabrasClave": [
+        "engaño biológico",
+        "contienen capsaicina",
+        "receptor TRPV1",
+        "más de cuarenta y tres grados"
+      ],
+      "personajes": [
+        {
+          "id": "stickman_receptor",
+          "nombre": "Stickman",
+          "posicion": {
+            "x": -185,
+            "y": 95
+          },
+          "escala": 1.05,
+          "orientacion": "derecha",
+          "habla": true,
+          "capaZ": 20,
+          "acciones": [
+            {
+              "tipo": "personalizada",
+              "pasos": [
+                {
+                  "inicioProgreso": 0.0,
+                  "finProgreso": 0.48,
+                  "desdePalabra": "El",
+                  "hastaPalabra": "capsaicina",
+                  "poseId": "explaining_pointing_up",
+                  "expresion": "talking_enthusiastic",
+                  "posicion": {
+                    "x": -185,
+                    "y": 95
+                  },
+                  "curva": "suave",
+                  "procedural": "estatico"
+                },
+                {
+                  "inicioProgreso": 0.48,
+                  "finProgreso": 1.0,
+                  "desdePalabra": "una",
+                  "hastaPalabra": "grados",
+                  "poseId": "eureka_idea",
+                  "expresion": "eureka",
+                  "posicion": {
+                    "x": -155,
+                    "y": 95
+                  },
+                  "curva": "impacto",
+                  "procedural": "estatico"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "objetos": [
+        {
+          "id": "receptor_trpv",
+          "propId": "receptor_trpv1_candado_termico",
+          "posicion": {
+            "x": 165,
+            "y": 20
+          },
+          "escala": 1.4,
+          "capaZ": 28,
+          "pasos": [
+            {
+              "inicioProgreso": 0.0,
+              "finProgreso": 0.48,
+              "desdePalabra": "El",
+              "hastaPalabra": "capsaicina",
+              "estado": "reposo",
+              "posicion": {
+                "x": 155,
+                "y": 30
+              },
+              "escala": 1.32,
+              "curva": "suave"
+            },
+            {
+              "inicioProgreso": 0.48,
+              "finProgreso": 1.0,
+              "desdePalabra": "una",
+              "hastaPalabra": "grados",
+              "estado": "abierto_alarma",
+              "posicion": {
+                "x": 175,
+                "y": 15
+              },
+              "escala": 1.48,
+              "animacion": "pulso",
+              "curva": "impacto"
+            }
+          ]
+        }
+      ],
+      "duracionSegundos": 11.842,
+      "palabras": [
+        {
+          "palabra": "El",
+          "inicioMs": 0,
+          "finMs": 180
+        },
+        {
+          "palabra": "picante",
+          "inicioMs": 180,
+          "finMs": 540
+        },
+        {
+          "palabra": "no",
+          "inicioMs": 540,
+          "finMs": 700
+        },
+        {
+          "palabra": "es",
+          "inicioMs": 700,
+          "finMs": 800
+        },
+        {
+          "palabra": "un",
+          "inicioMs": 800,
+          "finMs": 900
+        },
+        {
+          "palabra": "sabor",
+          "inicioMs": 900,
+          "finMs": 1160
+        },
+        {
+          "palabra": "es",
+          "inicioMs": 1360,
+          "finMs": 1460
+        },
+        {
+          "palabra": "un",
+          "inicioMs": 1460,
+          "finMs": 1580
+        },
+        {
+          "palabra": "engaño",
+          "inicioMs": 1580,
+          "finMs": 1900
+        },
+        {
+          "palabra": "biológico",
+          "inicioMs": 1900,
+          "finMs": 2520
+        },
+        {
+          "palabra": "Los",
+          "inicioMs": 2900,
+          "finMs": 3060
+        },
+        {
+          "palabra": "chiles",
+          "inicioMs": 3060,
+          "finMs": 3300
+        },
+        {
+          "palabra": "contienen",
+          "inicioMs": 3300,
+          "finMs": 3720
+        },
+        {
+          "palabra": "capsaicina",
+          "inicioMs": 3720,
+          "finMs": 4400
+        },
+        {
+          "palabra": "una",
+          "inicioMs": 4680,
+          "finMs": 4820
+        },
+        {
+          "palabra": "sustancia",
+          "inicioMs": 4820,
+          "finMs": 5300
+        },
+        {
+          "palabra": "que",
+          "inicioMs": 5300,
+          "finMs": 5460
+        },
+        {
+          "palabra": "engaña",
+          "inicioMs": 5460,
+          "finMs": 5780
+        },
+        {
+          "palabra": "al",
+          "inicioMs": 5780,
+          "finMs": 5880
+        },
+        {
+          "palabra": "receptor",
+          "inicioMs": 5880,
+          "finMs": 6180
+        },
+        {
+          "palabra": "TRPV1",
+          "inicioMs": 6180,
+          "finMs": 6880
+        },
+        {
+          "palabra": "de",
+          "inicioMs": 6880,
+          "finMs": 7040
+        },
+        {
+          "palabra": "tus",
+          "inicioMs": 7040,
+          "finMs": 7220
+        },
+        {
+          "palabra": "nervios",
+          "inicioMs": 7220,
+          "finMs": 7620
+        },
+        {
+          "palabra": "el",
+          "inicioMs": 7900,
+          "finMs": 8000
+        },
+        {
+          "palabra": "mismo",
+          "inicioMs": 8000,
+          "finMs": 8260
+        },
+        {
+          "palabra": "sensor",
+          "inicioMs": 8260,
+          "finMs": 8620
+        },
+        {
+          "palabra": "que",
+          "inicioMs": 8620,
+          "finMs": 8860
+        },
+        {
+          "palabra": "detecta",
+          "inicioMs": 8860,
+          "finMs": 9280
+        },
+        {
+          "palabra": "quemaduras",
+          "inicioMs": 9280,
+          "finMs": 9740
+        },
+        {
+          "palabra": "a",
+          "inicioMs": 9740,
+          "finMs": 9960
+        },
+        {
+          "palabra": "más",
+          "inicioMs": 9960,
+          "finMs": 10100
+        },
+        {
+          "palabra": "de",
+          "inicioMs": 10100,
+          "finMs": 10220
+        },
+        {
+          "palabra": "cuarenta",
+          "inicioMs": 10220,
+          "finMs": 10387
+        },
+        {
+          "palabra": "y",
+          "inicioMs": 10387,
+          "finMs": 10554
+        },
+        {
+          "palabra": "tres",
+          "inicioMs": 10554,
+          "finMs": 10720
+        },
+        {
+          "palabra": "grados",
+          "inicioMs": 10720,
+          "finMs": 11280
+        }
+      ],
+      "focoCamara": [
+        {
+          "x": -50,
+          "y": 35,
+          "escala": 1.1,
+          "inicioProgreso": 0.0,
+          "finProgreso": 0.45,
+          "curva": "suave"
+        },
+        {
+          "x": 95,
+          "y": 25,
+          "escala": 1.26,
+          "inicioProgreso": 0.45,
+          "finProgreso": 0.84,
+          "curva": "impacto"
+        },
+        {
+          "x": 15,
+          "y": 35,
+          "escala": 1.12,
+          "inicioProgreso": 0.84,
+          "finProgreso": 1.0,
+          "curva": "suave"
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "texto": "Al activarse esa compuerta, tu cerebro entra en pánico creyendo que estás comiendo carbón ardiendo: dilata tus vasos sanguíneos, te hace sudar la frente y te llena la boca de saliva para apagar el incendio.",
+      "icono": "AlertTriangle",
+      "colorIcono": "#F59E0B",
+      "tituloVisual": "PÁNICO CEREBRAL",
+      "composicionVisual": "plano_general",
+      "escenario": "interior_cerebro_panico_quemadura",
+      "layout": "narrativo",
+      "transicion": "flash",
+      "efectosCamara": [
+        "punch",
+        "drift"
+      ],
+      "sfx": "sfx/sfx_mordisco_chile_fuego.wav",
+      "volumenSfx": 0.25,
+      "palabrasClave": [
+        "cerebro entra en pánico",
+        "carbón ardiendo",
+        "apagar el incendio"
+      ],
+      "personajes": [
+        {
+          "id": "stickman_panico_boca",
+          "nombre": "Stickman",
+          "posicion": {
+            "x": -185,
+            "y": 95
+          },
+          "escala": 1.05,
+          "orientacion": "derecha",
+          "habla": true,
+          "capaZ": 20,
+          "acciones": [
+            {
+              "tipo": "personalizada",
+              "pasos": [
+                {
+                  "inicioProgreso": 0.0,
+                  "finProgreso": 0.5,
+                  "desdePalabra": "Al",
+                  "hastaPalabra": "ardiendo",
+                  "poseId": "frustrated_head_grab",
+                  "expresion": "worried",
+                  "posicion": {
+                    "x": -185,
+                    "y": 95
+                  },
+                  "curva": "suave",
+                  "procedural": "estatico"
+                },
+                {
+                  "inicioProgreso": 0.5,
+                  "finProgreso": 1.0,
+                  "desdePalabra": "dilata",
+                  "hastaPalabra": "incendio",
+                  "poseId": "protecting_shielding",
+                  "expresion": "shocked",
+                  "posicion": {
+                    "x": -155,
+                    "y": 95
+                  },
+                  "curva": "impacto",
+                  "procedural": "temblar"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "objetos": [
+        {
+          "id": "chile_alerta",
+          "propId": "chile_habanero_fuego_vivo",
+          "posicion": {
+            "x": 175,
+            "y": 40
+          },
+          "escala": 1.38,
+          "capaZ": 28,
+          "pasos": [
+            {
+              "inicioProgreso": 0.0,
+              "finProgreso": 0.5,
+              "desdePalabra": "Al",
+              "hastaPalabra": "ardiendo",
+              "estado": "normal",
+              "posicion": {
+                "x": 165,
+                "y": 45
+              },
+              "escala": 1.34,
+              "curva": "suave"
+            },
+            {
+              "inicioProgreso": 0.5,
+              "finProgreso": 1.0,
+              "desdePalabra": "dilata",
+              "hastaPalabra": "incendio",
+              "estado": "combustion",
+              "posicion": {
+                "x": 185,
+                "y": 30
+              },
+              "escala": 1.48,
+              "animacion": "vibrar",
+              "curva": "impacto"
+            }
+          ]
+        }
+      ],
+      "duracionSegundos": 11.29,
+      "palabras": [
+        {
+          "palabra": "Al",
+          "inicioMs": 0,
+          "finMs": 220
+        },
+        {
+          "palabra": "activarse",
+          "inicioMs": 220,
+          "finMs": 680
+        },
+        {
+          "palabra": "esa",
+          "inicioMs": 680,
+          "finMs": 920
+        },
+        {
+          "palabra": "compuerta",
+          "inicioMs": 920,
+          "finMs": 1460
+        },
+        {
+          "palabra": "tu",
+          "inicioMs": 1600,
+          "finMs": 1680
+        },
+        {
+          "palabra": "cerebro",
+          "inicioMs": 1680,
+          "finMs": 2060
+        },
+        {
+          "palabra": "entra",
+          "inicioMs": 2060,
+          "finMs": 2280
+        },
+        {
+          "palabra": "en",
+          "inicioMs": 2280,
+          "finMs": 2480
+        },
+        {
+          "palabra": "pánico",
+          "inicioMs": 2480,
+          "finMs": 2800
+        },
+        {
+          "palabra": "creyendo",
+          "inicioMs": 2800,
+          "finMs": 3300
+        },
+        {
+          "palabra": "que",
+          "inicioMs": 3300,
+          "finMs": 3440
+        },
+        {
+          "palabra": "estás",
+          "inicioMs": 3440,
+          "finMs": 3660
+        },
+        {
+          "palabra": "comiendo",
+          "inicioMs": 3660,
+          "finMs": 4140
+        },
+        {
+          "palabra": "carbón",
+          "inicioMs": 4140,
+          "finMs": 4500
+        },
+        {
+          "palabra": "ardiendo",
+          "inicioMs": 4500,
+          "finMs": 5020
+        },
+        {
+          "palabra": "dilata",
+          "inicioMs": 5340,
+          "finMs": 5620
+        },
+        {
+          "palabra": "tus",
+          "inicioMs": 5620,
+          "finMs": 5900
+        },
+        {
+          "palabra": "vasos",
+          "inicioMs": 5900,
+          "finMs": 6200
+        },
+        {
+          "palabra": "sanguíneos",
+          "inicioMs": 6200,
+          "finMs": 6960
+        },
+        {
+          "palabra": "te",
+          "inicioMs": 7160,
+          "finMs": 7220
+        },
+        {
+          "palabra": "hace",
+          "inicioMs": 7220,
+          "finMs": 7360
+        },
+        {
+          "palabra": "sudar",
+          "inicioMs": 7360,
+          "finMs": 7700
+        },
+        {
+          "palabra": "la",
+          "inicioMs": 7700,
+          "finMs": 7820
+        },
+        {
+          "palabra": "frente",
+          "inicioMs": 7820,
+          "finMs": 8040
+        },
+        {
+          "palabra": "y",
+          "inicioMs": 8040,
+          "finMs": 8280
+        },
+        {
+          "palabra": "te",
+          "inicioMs": 8280,
+          "finMs": 8360
+        },
+        {
+          "palabra": "llena",
+          "inicioMs": 8360,
+          "finMs": 8600
+        },
+        {
+          "palabra": "la",
+          "inicioMs": 8600,
+          "finMs": 8720
+        },
+        {
+          "palabra": "boca",
+          "inicioMs": 8720,
+          "finMs": 8940
+        },
+        {
+          "palabra": "de",
+          "inicioMs": 8940,
+          "finMs": 9100
+        },
+        {
+          "palabra": "saliva",
+          "inicioMs": 9100,
+          "finMs": 9400
+        },
+        {
+          "palabra": "para",
+          "inicioMs": 9400,
+          "finMs": 9700
+        },
+        {
+          "palabra": "apagar",
+          "inicioMs": 9700,
+          "finMs": 10000
+        },
+        {
+          "palabra": "el",
+          "inicioMs": 10000,
+          "finMs": 10180
+        },
+        {
+          "palabra": "incendio",
+          "inicioMs": 10180,
+          "finMs": 10760
+        }
+      ],
+      "focoCamara": [
+        {
+          "x": 0,
+          "y": 15,
+          "escala": 1.08,
+          "inicioProgreso": 0.0,
+          "finProgreso": 0.45,
+          "curva": "suave"
+        },
+        {
+          "x": 65,
+          "y": -10,
+          "escala": 1.22,
+          "inicioProgreso": 0.45,
+          "finProgreso": 0.82,
+          "curva": "impacto"
+        },
+        {
+          "x": -35,
+          "y": 35,
+          "escala": 1.12,
+          "inicioProgreso": 0.82,
+          "finProgreso": 1.0,
+          "curva": "suave"
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "texto": "¿Y cuál es tu primer instinto desesperado? Beber un vaso de agua helada. ¡Grave error! La capsaicina es un aceite químico insoluble en agua, por lo que beber solo la esparce por toda tu boca aumentando el ardor.",
+      "icono": "XCircle",
+      "colorIcono": "#EF4444",
+      "tituloVisual": "¡NO BEBAS AGUA!",
+      "composicionVisual": "primer_plano",
+      "escenario": "laboratorio_quimica_agua_vs_aceite",
+      "layout": "narrativo",
+      "transicion": "zoom_in",
+      "efectosCamara": [
+        "punch",
+        "shake"
+      ],
+      "sfx": "sfx/sfx_vaso_agua_error_esparcir.wav",
+      "volumenSfx": 0.26,
+      "palabrasClave": [
+        "vaso de agua helada",
+        "aceite químico insoluble",
+        "solo la esparce por toda tu boca"
+      ],
+      "personajes": [
+        {
+          "id": "stickman_agua_error",
+          "nombre": "Stickman",
+          "posicion": {
+            "x": -185,
+            "y": 95
+          },
+          "escala": 1.05,
+          "orientacion": "derecha",
+          "habla": true,
+          "capaZ": 20,
+          "acciones": [
+            {
+              "tipo": "personalizada",
+              "pasos": [
+                {
+                  "inicioProgreso": 0.0,
+                  "finProgreso": 0.42,
+                  "desdePalabra": "Y",
+                  "hastaPalabra": "error",
+                  "poseId": "shaking_no",
+                  "expresion": "skeptical",
+                  "posicion": {
+                    "x": -185,
+                    "y": 95
+                  },
+                  "curva": "suave",
+                  "procedural": "estatico"
+                },
+                {
+                  "inicioProgreso": 0.42,
+                  "finProgreso": 1.0,
+                  "desdePalabra": "La",
+                  "hastaPalabra": "ardor",
+                  "poseId": "warning_danger",
+                  "expresion": "worried",
+                  "posicion": {
+                    "x": -155,
+                    "y": 95
+                  },
+                  "curva": "impacto",
+                  "procedural": "estatico"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "objetos": [
+        {
+          "id": "vaso_agua",
+          "propId": "vaso_agua_esparce_aceite",
+          "posicion": {
+            "x": 175,
+            "y": 40
+          },
+          "escala": 1.4,
+          "capaZ": 28,
+          "pasos": [
+            {
+              "inicioProgreso": 0.0,
+              "finProgreso": 0.42,
+              "desdePalabra": "Y",
+              "hastaPalabra": "error",
+              "estado": "normal",
+              "posicion": {
+                "x": 160,
+                "y": 45
+              },
+              "escala": 1.32,
+              "curva": "suave"
+            },
+            {
+              "inicioProgreso": 0.42,
+              "finProgreso": 1.0,
+              "desdePalabra": "La",
+              "hastaPalabra": "ardor",
+              "estado": "esparciendo_error",
+              "posicion": {
+                "x": 185,
+                "y": 30
+              },
+              "escala": 1.48,
+              "animacion": "vibrar",
+              "curva": "impacto"
+            }
+          ]
+        }
+      ],
+      "duracionSegundos": 10.906,
+      "palabras": [
+        {
+          "palabra": "Y",
+          "inicioMs": 0,
+          "finMs": 60
+        },
+        {
+          "palabra": "cuál",
+          "inicioMs": 60,
+          "finMs": 240
+        },
+        {
+          "palabra": "es",
+          "inicioMs": 240,
+          "finMs": 420
+        },
+        {
+          "palabra": "tu",
+          "inicioMs": 420,
+          "finMs": 500
+        },
+        {
+          "palabra": "primer",
+          "inicioMs": 500,
+          "finMs": 760
+        },
+        {
+          "palabra": "instinto",
+          "inicioMs": 760,
+          "finMs": 1240
+        },
+        {
+          "palabra": "desesperado",
+          "inicioMs": 1240,
+          "finMs": 1980
+        },
+        {
+          "palabra": "Beber",
+          "inicioMs": 2200,
+          "finMs": 2420
+        },
+        {
+          "palabra": "un",
+          "inicioMs": 2420,
+          "finMs": 2560
+        },
+        {
+          "palabra": "vaso",
+          "inicioMs": 2560,
+          "finMs": 2880
+        },
+        {
+          "palabra": "de",
+          "inicioMs": 2880,
+          "finMs": 3000
+        },
+        {
+          "palabra": "agua",
+          "inicioMs": 3000,
+          "finMs": 3200
+        },
+        {
+          "palabra": "helada",
+          "inicioMs": 3200,
+          "finMs": 3600
+        },
+        {
+          "palabra": "Grave",
+          "inicioMs": 3820,
+          "finMs": 4080
+        },
+        {
+          "palabra": "error",
+          "inicioMs": 4080,
+          "finMs": 4320
+        },
+        {
+          "palabra": "La",
+          "inicioMs": 4560,
+          "finMs": 4660
+        },
+        {
+          "palabra": "capsaicina",
+          "inicioMs": 4660,
+          "finMs": 5240
+        },
+        {
+          "palabra": "es",
+          "inicioMs": 5240,
+          "finMs": 5360
+        },
+        {
+          "palabra": "un",
+          "inicioMs": 5360,
+          "finMs": 5500
+        },
+        {
+          "palabra": "aceite",
+          "inicioMs": 5500,
+          "finMs": 5740
+        },
+        {
+          "palabra": "químico",
+          "inicioMs": 5740,
+          "finMs": 6200
+        },
+        {
+          "palabra": "insoluble",
+          "inicioMs": 6200,
+          "finMs": 6680
+        },
+        {
+          "palabra": "en",
+          "inicioMs": 6680,
+          "finMs": 6820
+        },
+        {
+          "palabra": "agua",
+          "inicioMs": 6820,
+          "finMs": 7040
+        },
+        {
+          "palabra": "por",
+          "inicioMs": 7360,
+          "finMs": 7440
+        },
+        {
+          "palabra": "lo",
+          "inicioMs": 7440,
+          "finMs": 7540
+        },
+        {
+          "palabra": "que",
+          "inicioMs": 7540,
+          "finMs": 7660
+        },
+        {
+          "palabra": "beber",
+          "inicioMs": 7660,
+          "finMs": 7800
+        },
+        {
+          "palabra": "solo",
+          "inicioMs": 7800,
+          "finMs": 8120
+        },
+        {
+          "palabra": "la",
+          "inicioMs": 8120,
+          "finMs": 8340
+        },
+        {
+          "palabra": "esparce",
+          "inicioMs": 8340,
+          "finMs": 8720
+        },
+        {
+          "palabra": "por",
+          "inicioMs": 8720,
+          "finMs": 8860
+        },
+        {
+          "palabra": "toda",
+          "inicioMs": 8860,
+          "finMs": 9080
+        },
+        {
+          "palabra": "tu",
+          "inicioMs": 9080,
+          "finMs": 9260
+        },
+        {
+          "palabra": "boca",
+          "inicioMs": 9260,
+          "finMs": 9440
+        },
+        {
+          "palabra": "aumentando",
+          "inicioMs": 9440,
+          "finMs": 9960
+        },
+        {
+          "palabra": "el",
+          "inicioMs": 9960,
+          "finMs": 10060
+        },
+        {
+          "palabra": "ardor",
+          "inicioMs": 10060,
+          "finMs": 10340
+        }
+      ],
+      "focoCamara": [
+        {
+          "x": -60,
+          "y": 35,
+          "escala": 1.12,
+          "inicioProgreso": 0.0,
+          "finProgreso": 0.38,
+          "curva": "suave"
+        },
+        {
+          "x": 90,
+          "y": 15,
+          "escala": 1.26,
+          "inicioProgreso": 0.38,
+          "finProgreso": 0.8,
+          "curva": "impacto"
+        },
+        {
+          "x": 0,
+          "y": 25,
+          "escala": 1.1,
+          "inicioProgreso": 0.8,
+          "finProgreso": 1.0,
+          "curva": "suave"
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "texto": "Para apagar este fuego imaginario necesitas leche entera, yogur o queso. Los lácteos contienen caseína, una proteína que actúa como un detergente biológico, envolviendo la capsaicina y arrancándola de tus receptores.",
+      "icono": "ShieldCheck",
+      "colorIcono": "#3B82F6",
+      "tituloVisual": "LA LECHE TE SALVA",
+      "composicionVisual": "plano_general",
+      "escenario": "macro_caseina_micelas_rescate",
+      "layout": "narrativo",
+      "transicion": "whip_left",
+      "efectosCamara": [
+        "punch",
+        "drift"
+      ],
+      "sfx": "sfx/sfx_leche_caseina_rescate.wav",
+      "volumenSfx": 0.25,
+      "palabrasClave": [
+        "necesitas leche entera",
+        "contienen caseína",
+        "detergente biológico",
+        "arrancándola de tus receptores"
+      ],
+      "personajes": [
+        {
+          "id": "stickman_leche",
+          "nombre": "Stickman",
+          "posicion": {
+            "x": -185,
+            "y": 95
+          },
+          "escala": 1.0,
+          "orientacion": "derecha",
+          "habla": true,
+          "capaZ": 20,
+          "acciones": [
+            {
+              "tipo": "personalizada",
+              "pasos": [
+                {
+                  "inicioProgreso": 0.0,
+                  "finProgreso": 0.45,
+                  "desdePalabra": "Para",
+                  "hastaPalabra": "caseína",
+                  "poseId": "presenting_object",
+                  "expresion": "talking_enthusiastic",
+                  "posicion": {
+                    "x": -185,
+                    "y": 95
+                  },
+                  "curva": "suave",
+                  "procedural": "estatico"
+                },
+                {
+                  "inicioProgreso": 0.45,
+                  "finProgreso": 1.0,
+                  "desdePalabra": "una",
+                  "hastaPalabra": "receptores",
+                  "poseId": "eureka_idea",
+                  "expresion": "eureka",
+                  "posicion": {
+                    "x": -155,
+                    "y": 95
+                  },
+                  "curva": "rebote",
+                  "procedural": "estatico"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "objetos": [
+        {
+          "id": "leche_caseina",
+          "propId": "brik_leche_caseina_detergente",
+          "posicion": {
+            "x": 175,
+            "y": 35
+          },
+          "escala": 1.4,
+          "capaZ": 28,
+          "pasos": [
+            {
+              "inicioProgreso": 0.0,
+              "finProgreso": 0.45,
+              "desdePalabra": "Para",
+              "hastaPalabra": "caseína",
+              "estado": "normal",
+              "posicion": {
+                "x": 165,
+                "y": 40
+              },
+              "escala": 1.32,
+              "curva": "suave"
+            },
+            {
+              "inicioProgreso": 0.45,
+              "finProgreso": 1.0,
+              "desdePalabra": "una",
+              "hastaPalabra": "receptores",
+              "estado": "encapsulando_capsaicina",
+              "posicion": {
+                "x": 185,
+                "y": 25
+              },
+              "escala": 1.48,
+              "animacion": "pulso",
+              "curva": "rebote"
+            }
+          ]
+        }
+      ],
+      "duracionSegundos": 11.938,
+      "palabras": [
+        {
+          "palabra": "Para",
+          "inicioMs": 0,
+          "finMs": 240
+        },
+        {
+          "palabra": "apagar",
+          "inicioMs": 240,
+          "finMs": 500
+        },
+        {
+          "palabra": "este",
+          "inicioMs": 500,
+          "finMs": 740
+        },
+        {
+          "palabra": "fuego",
+          "inicioMs": 740,
+          "finMs": 940
+        },
+        {
+          "palabra": "imaginario",
+          "inicioMs": 940,
+          "finMs": 1440
+        },
+        {
+          "palabra": "necesitas",
+          "inicioMs": 1440,
+          "finMs": 1940
+        },
+        {
+          "palabra": "leche",
+          "inicioMs": 1940,
+          "finMs": 2140
+        },
+        {
+          "palabra": "entera",
+          "inicioMs": 2140,
+          "finMs": 2540
+        },
+        {
+          "palabra": "yogur",
+          "inicioMs": 2640,
+          "finMs": 2960
+        },
+        {
+          "palabra": "o",
+          "inicioMs": 2960,
+          "finMs": 3140
+        },
+        {
+          "palabra": "queso",
+          "inicioMs": 3140,
+          "finMs": 3480
+        },
+        {
+          "palabra": "Los",
+          "inicioMs": 3860,
+          "finMs": 4020
+        },
+        {
+          "palabra": "lácteos",
+          "inicioMs": 4020,
+          "finMs": 4420
+        },
+        {
+          "palabra": "contienen",
+          "inicioMs": 4420,
+          "finMs": 4760
+        },
+        {
+          "palabra": "caseína",
+          "inicioMs": 4760,
+          "finMs": 5280
+        },
+        {
+          "palabra": "una",
+          "inicioMs": 5580,
+          "finMs": 5720
+        },
+        {
+          "palabra": "proteína",
+          "inicioMs": 5720,
+          "finMs": 6120
+        },
+        {
+          "palabra": "que",
+          "inicioMs": 6120,
+          "finMs": 6300
+        },
+        {
+          "palabra": "actúa",
+          "inicioMs": 6300,
+          "finMs": 6580
+        },
+        {
+          "palabra": "como",
+          "inicioMs": 6580,
+          "finMs": 6840
+        },
+        {
+          "palabra": "un",
+          "inicioMs": 6840,
+          "finMs": 6980
+        },
+        {
+          "palabra": "detergente",
+          "inicioMs": 6980,
+          "finMs": 7420
+        },
+        {
+          "palabra": "biológico",
+          "inicioMs": 7420,
+          "finMs": 8100
+        },
+        {
+          "palabra": "envolviendo",
+          "inicioMs": 8360,
+          "finMs": 8800
+        },
+        {
+          "palabra": "la",
+          "inicioMs": 8800,
+          "finMs": 8920
+        },
+        {
+          "palabra": "capsaicina",
+          "inicioMs": 8920,
+          "finMs": 9560
+        },
+        {
+          "palabra": "y",
+          "inicioMs": 9560,
+          "finMs": 9880
+        },
+        {
+          "palabra": "arrancándola",
+          "inicioMs": 9880,
+          "finMs": 10440
+        },
+        {
+          "palabra": "de",
+          "inicioMs": 10440,
+          "finMs": 10580
+        },
+        {
+          "palabra": "tus",
+          "inicioMs": 10580,
+          "finMs": 10700
+        },
+        {
+          "palabra": "receptores",
+          "inicioMs": 10700,
+          "finMs": 11240
+        }
+      ],
+      "focoCamara": [
+        {
+          "x": -50,
+          "y": 30,
+          "escala": 1.1,
+          "inicioProgreso": 0.0,
+          "finProgreso": 0.42,
+          "curva": "suave"
+        },
+        {
+          "x": 85,
+          "y": 10,
+          "escala": 1.25,
+          "inicioProgreso": 0.42,
+          "finProgreso": 0.82,
+          "curva": "impacto"
+        },
+        {
+          "x": 0,
+          "y": 25,
+          "escala": 1.1,
+          "inicioProgreso": 0.82,
+          "finProgreso": 1.0,
+          "curva": "suave"
+        }
+      ]
+    },
+    {
+      "id": 7,
+      "texto": "La próxima vez que te enfrentes a una salsa endiablada, olvídate del agua y pide un buen vaso de leche fría: tu lengua y tu cerebro te lo agradecerán al instante.",
+      "icono": "Smile",
+      "colorIcono": "#10B981",
+      "tituloVisual": "CIENCIA Y ALIVIO",
+      "composicionVisual": "escenario_ilustrado",
+      "escenario": "taqueria_cierre_alivio_leche",
+      "layout": "narrativo",
+      "transicion": "zoom_in",
+      "efectosCamara": [
+        "punch",
+        "drift"
+      ],
+      "sfx": "sfx/sfx_cierre_picante_triunfo.wav",
+      "volumenSfx": 0.25,
+      "palabrasClave": [
+        "vaso de leche fría",
+        "tu lengua y tu cerebro",
+        "te lo agradecerán al instante"
+      ],
+      "personajes": [
+        {
+          "id": "stickman_cierre",
+          "nombre": "Stickman",
+          "posicion": {
+            "x": -165,
+            "y": 95
+          },
+          "escala": 1.05,
+          "orientacion": "derecha",
+          "habla": true,
+          "capaZ": 20,
+          "acciones": [
+            {
+              "tipo": "personalizada",
+              "pasos": [
+                {
+                  "inicioProgreso": 0.0,
+                  "finProgreso": 0.5,
+                  "desdePalabra": "La",
+                  "hastaPalabra": "fría",
+                  "poseId": "pointing_at_viewer",
+                  "expresion": "smile_wide",
+                  "posicion": {
+                    "x": -165,
+                    "y": 95
+                  },
+                  "curva": "suave",
+                  "procedural": "estatico"
+                },
+                {
+                  "inicioProgreso": 0.5,
+                  "finProgreso": 1.0,
+                  "desdePalabra": "tu",
+                  "hastaPalabra": "instante",
+                  "poseId": "celebrating_arms_up",
+                  "expresion": "talking_enthusiastic",
+                  "posicion": {
+                    "x": -140,
+                    "y": 95
+                  },
+                  "curva": "rebote",
+                  "procedural": "caminar"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "objetos": [
+        {
+          "id": "vaso_alivio",
+          "propId": "vaso_leche_alivio_fresco",
+          "posicion": {
+            "x": 165,
+            "y": 35
+          },
+          "escala": 1.38,
+          "capaZ": 28,
+          "pasos": [
+            {
+              "inicioProgreso": 0.0,
+              "finProgreso": 0.5,
+              "desdePalabra": "La",
+              "hastaPalabra": "fría",
+              "estado": "normal",
+              "posicion": {
+                "x": 155,
+                "y": 40
+              },
+              "escala": 1.32,
+              "curva": "suave"
+            },
+            {
+              "inicioProgreso": 0.5,
+              "finProgreso": 1.0,
+              "desdePalabra": "tu",
+              "hastaPalabra": "instante",
+              "estado": "alivio_total",
+              "posicion": {
+                "x": 175,
+                "y": 25
+              },
+              "escala": 1.46,
+              "animacion": "flotar",
+              "curva": "rebote"
+            }
+          ]
+        }
+      ],
+      "duracionSegundos": 8.89,
+      "palabras": [
+        {
+          "palabra": "La",
+          "inicioMs": 0,
+          "finMs": 220
+        },
+        {
+          "palabra": "próxima",
+          "inicioMs": 220,
+          "finMs": 580
+        },
+        {
+          "palabra": "vez",
+          "inicioMs": 580,
+          "finMs": 820
+        },
+        {
+          "palabra": "que",
+          "inicioMs": 820,
+          "finMs": 980
+        },
+        {
+          "palabra": "te",
+          "inicioMs": 980,
+          "finMs": 1100
+        },
+        {
+          "palabra": "enfrentes",
+          "inicioMs": 1100,
+          "finMs": 1580
+        },
+        {
+          "palabra": "a",
+          "inicioMs": 1580,
+          "finMs": 1680
+        },
+        {
+          "palabra": "una",
+          "inicioMs": 1680,
+          "finMs": 1840
+        },
+        {
+          "palabra": "salsa",
+          "inicioMs": 1840,
+          "finMs": 2060
+        },
+        {
+          "palabra": "endiablada",
+          "inicioMs": 2060,
+          "finMs": 2720
+        },
+        {
+          "palabra": "olvídate",
+          "inicioMs": 2900,
+          "finMs": 3340
+        },
+        {
+          "palabra": "del",
+          "inicioMs": 3340,
+          "finMs": 3560
+        },
+        {
+          "palabra": "agua",
+          "inicioMs": 3560,
+          "finMs": 3800
+        },
+        {
+          "palabra": "y",
+          "inicioMs": 3800,
+          "finMs": 4040
+        },
+        {
+          "palabra": "pide",
+          "inicioMs": 4040,
+          "finMs": 4280
+        },
+        {
+          "palabra": "un",
+          "inicioMs": 4280,
+          "finMs": 4400
+        },
+        {
+          "palabra": "buen",
+          "inicioMs": 4400,
+          "finMs": 4540
+        },
+        {
+          "palabra": "vaso",
+          "inicioMs": 4540,
+          "finMs": 4840
+        },
+        {
+          "palabra": "de",
+          "inicioMs": 4840,
+          "finMs": 4940
+        },
+        {
+          "palabra": "leche",
+          "inicioMs": 4940,
+          "finMs": 5160
+        },
+        {
+          "palabra": "fría",
+          "inicioMs": 5160,
+          "finMs": 5540
+        },
+        {
+          "palabra": "tu",
+          "inicioMs": 5800,
+          "finMs": 5880
+        },
+        {
+          "palabra": "lengua",
+          "inicioMs": 5880,
+          "finMs": 6300
+        },
+        {
+          "palabra": "y",
+          "inicioMs": 6300,
+          "finMs": 6380
+        },
+        {
+          "palabra": "tu",
+          "inicioMs": 6380,
+          "finMs": 6500
+        },
+        {
+          "palabra": "cerebro",
+          "inicioMs": 6500,
+          "finMs": 6880
+        },
+        {
+          "palabra": "te",
+          "inicioMs": 6880,
+          "finMs": 7040
+        },
+        {
+          "palabra": "lo",
+          "inicioMs": 7040,
+          "finMs": 7160
+        },
+        {
+          "palabra": "agradecerán",
+          "inicioMs": 7160,
+          "finMs": 7680
+        },
+        {
+          "palabra": "al",
+          "inicioMs": 7680,
+          "finMs": 7820
+        },
+        {
+          "palabra": "instante",
+          "inicioMs": 7820,
+          "finMs": 8360
+        }
+      ],
+      "focoCamara": [
+        {
+          "x": 0,
+          "y": 25,
+          "escala": 1.08,
+          "inicioProgreso": 0.0,
+          "finProgreso": 0.45,
+          "curva": "suave"
+        },
+        {
+          "x": 65,
+          "y": 20,
+          "escala": 1.2,
+          "inicioProgreso": 0.45,
+          "finProgreso": 0.85,
+          "curva": "suave"
+        },
+        {
+          "x": 0,
+          "y": 25,
+          "escala": 1.06,
+          "inicioProgreso": 0.85,
+          "finProgreso": 1.0,
+          "curva": "suave"
+        }
+      ]
+    }
+  ]
+}

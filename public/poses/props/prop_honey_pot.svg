@@ -1,11 +1,15 @@
 <svg width="200" height="200" viewBox="-65 -65 130 130" fill="none" xmlns="http://www.w3.org/2000/svg">
-  <g transform="scale(1.15)">
-    <path d="M -24 -24 L 24 -24 L 32 18 C 32 30 18 36 0 36 C -18 36 -32 30 -32 18 Z" fill="#D97706" stroke="#111827" stroke-width="5" stroke-linejoin="round"/>
-    <ellipse cx="0" cy="-24" rx="24" ry="8" fill="#F59E0B" stroke="#111827" stroke-width="4"/>
-    <path d="M -22 -22 Q -12 -12 0 -18 Q 12 -12 22 -22 Q 18 4 0 4 Q -18 4 -22 -22 Z" fill="#FBBF24" stroke="#111827" stroke-width="3"/>
-    <ellipse cx="-4" cy="-8" rx="10" ry="4" fill="#FEF08A"/>
-    <circle cx="6" cy="-4.00" r="3" fill="#F59E0B" stroke="#111827" stroke-width="1.5"/>
-    <rect x="-16" y="10" width="32" height="16" rx="4" fill="#B45309" stroke="#111827" stroke-width="2"/>
-    <text x="0" y="22" font-family="system-ui, sans-serif" font-weight="900" font-size="9" fill="#FEF08A" text-anchor="middle">MIEL</text>
+  <g transform="scale(1.45)">
+    <!-- Frasco transparente de miel densa donde el aire actúa como colchón viscoso -->
+    <path d="M -24 -22 L 24 -22 L 30 18 C 30 30 18 36 0 36 C -18 36 -30 30 -30 18 Z" fill="#F59E0B" stroke="#111827" stroke-width="5" stroke-linejoin="round"/>
+    <ellipse cx="0" cy="-22" rx="24" ry="7" fill="#FDE047" stroke="#111827" stroke-width="4"/>
+    <path d="M -20 -18 Q -10 -8 0 -14 Q 10 -8 20 -18 Q 16 6 0 6 Q -16 6 -20 -18 Z" fill="#FEF08A" opacity="0.75"/>
+    <!-- Silueta de hormiguita flotando suavemente dentro del fluido ámbar -->
+    <g transform="translate(0, 6.00)">
+      <circle cx="-6" cy="0" r="5" fill="#7F1D1D" stroke="#111827" stroke-width="2.5"/>
+      <circle cx="2" cy="0" r="4" fill="#991B1B" stroke="#111827" stroke-width="2.5"/>
+      <circle cx="9" cy="-1" r="4" fill="#7F1D1D" stroke="#111827" stroke-width="2.5"/>
+    </g>
+    <circle cx="12" cy="-4.00" r="3.5" fill="#FEF08A" stroke="#111827" stroke-width="2"/>
   </g>
 </svg>

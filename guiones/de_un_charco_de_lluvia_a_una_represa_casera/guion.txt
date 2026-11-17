@@ -1,0 +1,28 @@
+ID / SLUG: de_un_charco_de_lluvia_a_una_represa_casera
+Título: De un charco de lluvia a una represa casera (Ingeniería en el lodo)
+Gancho: Empezó como un simple canal para sacar un charco del patio... y en solo cinco minutos se convirtió en un monstruo furioso a punto de destruir mi casa.
+Tema: Hidráulica e ingeniería civil en el patio: por qué una tabla plana falla por presión hidrostática y cómo domar el agua con una presa de gravedad, filtro graduado de grava y arena, y un canal de vertedero escalonado.
+Duración objetivo: [62, 75]
+============================================================
+
+[Escena 1] EL MONSTRUO DE LODO EN EL PATIO
+Empezó como un simple canal para sacar un charco del patio... y en solo cinco minutos se convirtió en un monstruo furioso a punto de destruir mi casa.
+
+[Escena 2] EL ERROR DE LA TABLA PLANA
+El agua en movimiento tiene energía cinética brutal. Si intentas bloquearla de golpe con una tabla plana... la presión hidrostática simplemente la hace mil pedazos.
+
+[Escena 3] PRESA DE GRAVEDAD Y ESCOLLERA
+Para domar toneladas de agua necesitas pensar como ingeniero civil: construir una presa de gravedad que use su propio peso para aplastar la corriente contra el fondo.
+
+[Escena 4] EL TRUCO DEL FILTRO GRADUADO
+Pero las piedras solas dejan huecos gigantes donde el agua pasa como bala y lava los cimientos. Necesitas el truco del filtro graduado: grava y arena fina.
+
+[Escena 5] EL CANAL DE VERTEDERO (ALIVIADERO)
+La pared ahora es indestructible, pero si el agua sube y salta por encima de la presa... la destruirá desde atrás en segundos. Aquí entra la pieza clave: el vertedero.
+
+[Escena 6] DISIPACIÓN POR ESCALONES DE PIEDRA
+El agua sube, encuentra la salida segura del vertedero y baja en pequeños saltos de piedra, formando espuma blanca y disipando toda su furia directo hacia la coladera de la calle.
+
+[Escena 7] LA FÍSICA DOMA LA TORMENTA
+La tormenta por fin se detiene, la casa está completamente a salvo... y el charco asesino ahora es un hermoso lago privado. Porque con la física correcta, el agua nunca te vence.
+

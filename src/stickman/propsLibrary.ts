@@ -246,72 +246,96 @@ const cosmicLock = (f: number) => {
   </g>`;
 };
 
-const bionicAnt = (f: number) => {
-  const antBob = Math.sin(f / 6) * 3;
-  const antWiggle = Math.sin(f / 4) * 4;
-  return `<g transform="translate(0, ${n(antBob)}) scale(1.15)">
-    <path d="M -10 6 L -28 14 L -38 32" stroke="${S}" stroke-width="5" stroke-linecap="round" fill="none"/>
-    <path d="M -6 6 L -32 0 L -42 16" stroke="${S}" stroke-width="5" stroke-linecap="round" fill="none"/>
-    <path d="M -2 6 L -26 -12 L -34 4" stroke="${S}" stroke-width="5" stroke-linecap="round" fill="none"/>
-    <path d="M 6 6 L 24 14 L 34 32" stroke="${S}" stroke-width="5" stroke-linecap="round" fill="none"/>
-    <path d="M 10 6 L 30 0 L 40 16" stroke="${S}" stroke-width="5" stroke-linecap="round" fill="none"/>
-    <path d="M 12 6 L 26 -12 L 34 4" stroke="${S}" stroke-width="5" stroke-linecap="round" fill="none"/>
+const bionicAnt = (f: number, _stepProgress?: number, currentState?: string) => {
+  const isShield = currentState === "escudo_quitina" || currentState === "paracaidas";
+  const antBob = Math.sin(f * 0.18) * 3;
+  const antWiggle = Math.sin(f * 0.24) * 4;
+  return `<g transform="translate(0, ${n(antBob)}) scale(1.45)">
+    ${isShield ? `<ellipse cx="-4" cy="2" rx="48" ry="34" fill="#38BDF8" fill-opacity="0.22" stroke="#38BDF8" stroke-width="3" stroke-dasharray="6,4"/>` : ""}
+    <!-- 6 patas articuladas con efecto de suspensión elástica -->
+    <path d="M -10 6 L -28 14 L -38 ${n(30 + antBob * 0.6)}" stroke="${S}" stroke-width="5" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+    <path d="M -6 6 L -32 0 L -42 ${n(16 - antBob * 0.6)}" stroke="${S}" stroke-width="5" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+    <path d="M -2 6 L -26 -12 L -34 ${n(4 + antBob * 0.5)}" stroke="${S}" stroke-width="5" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+    <path d="M 6 6 L 24 14 L 34 ${n(30 - antBob * 0.6)}" stroke="${S}" stroke-width="5" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+    <path d="M 10 6 L 30 0 L 40 ${n(16 + antBob * 0.6)}" stroke="${S}" stroke-width="5" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+    <path d="M 12 6 L 26 -12 L 34 ${n(4 - antBob * 0.5)}" stroke="${S}" stroke-width="5" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+    <!-- Abdomen (gáster) segmentado brillante -->
     <ellipse cx="-26" cy="-2" rx="18" ry="14" fill="#B91C1C" stroke="${S}" stroke-width="5"/>
     <path d="M -36 -2 A 8 10 0 0 1 -20 -10" stroke="#EF4444" stroke-width="3" fill="none" stroke-linecap="round"/>
-    <ellipse cx="-28" cy="-5" rx="5" ry="3" fill="#F87171" opacity="0.8"/>
+    <ellipse cx="-28" cy="-5" rx="5" ry="3" fill="#F87171" opacity="0.85"/>
+    <!-- Pecíolo y Tórax -->
     <ellipse cx="-8" cy="2" rx="4" ry="5" fill="#7F1D1D" stroke="${S}" stroke-width="4"/>
     <ellipse cx="4" cy="0" rx="12" ry="10" fill="#DC2626" stroke="${S}" stroke-width="5"/>
     <path d="M 0 -6 A 8 6 0 0 1 10 -6" stroke="#FCA5A5" stroke-width="3" fill="none"/>
+    <!-- Cabeza, ojo y mandíbulas doradas -->
     <circle cx="22" cy="-4" r="11" fill="#B91C1C" stroke="${S}" stroke-width="5"/>
     <ellipse cx="24" cy="-8" rx="5" ry="4" fill="#FFFFFF" stroke="${S}" stroke-width="3"/>
     <circle cx="25" cy="-8" r="2.5" fill="${S}"/>
     <path d="M 31 -2 L 38 1 L 33 6" stroke="${S}" stroke-width="4" fill="#F59E0B" stroke-linejoin="round"/>
+    <!-- Antenas vivas -->
     <path d="M 24 -14 Q 28 -24 ${n(32 + antWiggle)} -28" stroke="${S}" stroke-width="4" stroke-linecap="round" fill="none"/>
-    <circle cx="${n(32 + antWiggle)}" cy="-28" r="2.5" fill="#F59E0B"/>
+    <circle cx="${n(32 + antWiggle)}" cy="-28" r="3" fill="#F59E0B" stroke="${S}" stroke-width="1.5"/>
     <path d="M 20 -14 Q 20 -25 ${n(18 - antWiggle)} -30" stroke="${S}" stroke-width="4" stroke-linecap="round" fill="none"/>
-    <circle cx="${n(18 - antWiggle)}" cy="-30" r="2.5" fill="#F59E0B"/>
+    <circle cx="${n(18 - antWiggle)}" cy="-30" r="3" fill="#F59E0B" stroke="${S}" stroke-width="1.5"/>
   </g>`;
 };
 
-const cubePhysics = (f: number) => {
-  const rot = Math.sin(f / 10) * 3;
-  return `<g transform="rotate(${n(rot)}) scale(1.15)">
-    <polygon points="0,-36 34,-18 0,0 -34,-18" fill="#38BDF8" stroke="${S}" stroke-width="5" stroke-linejoin="round"/>
-    <line x1="-17" y1="-9" x2="17" y2="-27" stroke="#BAE6FD" stroke-width="2.5"/>
-    <line x1="17" y1="-9" x2="-17" y2="-27" stroke="#BAE6FD" stroke-width="2.5"/>
-    <polygon points="-34,-18 0,0 0,38 -34,20" fill="#0284C7" stroke="${S}" stroke-width="5" stroke-linejoin="round"/>
-    <polygon points="0,0 34,-18 34,20 0,38" fill="#0369A1" stroke="${S}" stroke-width="5" stroke-linejoin="round"/>
-    <rect x="-26" y="-38" width="52" height="16" rx="4" fill="#FFE600" stroke="${S}" stroke-width="3"/>
-    <text x="0" y="-26" font-family="system-ui, sans-serif" font-weight="900" font-size="10" fill="${S}" text-anchor="middle">ÁREA = L²</text>
-    <rect x="-30" y="10" width="60" height="16" rx="4" fill="#F43F5E" stroke="${S}" stroke-width="3"/>
-    <text x="0" y="22" font-family="system-ui, sans-serif" font-weight="900" font-size="10" fill="#FFFFFF" text-anchor="middle">MASA = L³</text>
+const cubePhysics = (f: number, _stepProgress?: number, currentState?: string) => {
+  const isCompare = currentState === "comparacion_escala" || (currentState === undefined && f >= 60);
+  const rot = Math.sin(f * 0.14) * 3;
+  const smallFloat = Math.sin(f * 0.22) * 4;
+  return `<g transform="rotate(${n(rot)}) scale(1.45)">
+    <!-- Cubo Grande (Mucha masa L3, cae pesado) -->
+    <g transform="translate(-16, 6)">
+      <polygon points="0,-28 26,-14 0,0 -26,-14" fill="#EF4444" stroke="${S}" stroke-width="4.5" stroke-linejoin="round"/>
+      <polygon points="-26,-14 0,0 0,30 -26,16" fill="#DC2626" stroke="${S}" stroke-width="4.5" stroke-linejoin="round"/>
+      <polygon points="0,0 26,-14 26,16 0,30" fill="#991B1B" stroke="${S}" stroke-width="4.5" stroke-linejoin="round"/>
+      <path d="M 0,34 L 0,46 M -6,40 L 0,47 L 6,40" stroke="#EF4444" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+    </g>
+    <!-- Cubito Diminuto (Gran área relativa L2 vs masa mínima, flota en el aire) -->
+    <g transform="translate(24, ${n(-12 + smallFloat)}) scale(${isCompare ? "1.12" : "1"})">
+      <polygon points="0,-12 12,-6 0,0 -12,-6" fill="#38BDF8" stroke="${S}" stroke-width="3.5" stroke-linejoin="round"/>
+      <polygon points="-12,-6 0,0 0,13 -12,7" fill="#0284C7" stroke="${S}" stroke-width="3.5" stroke-linejoin="round"/>
+      <polygon points="0,0 12,-6 12,7 0,13" fill="#0369A1" stroke="${S}" stroke-width="3.5" stroke-linejoin="round"/>
+      <!-- Líneas de sustentación de aire debajo del cubito -->
+      <path d="M -14,18 Q 0,12 14,18" fill="none" stroke="#38BDF8" stroke-width="3" stroke-linecap="round"/>
+    </g>
   </g>`;
 };
 
-const terminalVelocityShield = (f: number) => {
-  const windY = (f * 5) % 30;
-  const airDrag = 1 + Math.sin(f / 5) * 0.04;
-  return `<g transform="scale(${n(airDrag)})">
-    <path d="M -44 12 C -44 -36 44 -36 44 12 C 20 6 0 9 -44 12 Z" fill="#FACC15" stroke="${S}" stroke-width="6" stroke-linejoin="round"/>
-    <path d="M -32 2 C -32 -24 32 -24 32 2" stroke="#FFFFFF" stroke-width="4" fill="none"/>
-    <path d="M -24 24 L -24 ${n(10 - (windY % 16))}" stroke="#38BDF8" stroke-width="4.5" stroke-linecap="round"/>
-    <path d="M 0 32 L 0 ${n(12 - (windY % 20))}" stroke="#38BDF8" stroke-width="5" stroke-linecap="round"/>
-    <path d="M 24 24 L 24 ${n(10 - (windY % 16))}" stroke="#38BDF8" stroke-width="4.5" stroke-linecap="round"/>
-    <rect x="-40" y="24" width="80" height="24" rx="6" fill="#0F172A" stroke="${S}" stroke-width="4"/>
-    <text x="0" y="41" font-family="system-ui, sans-serif" font-weight="900" font-size="12" fill="#38BDF8" text-anchor="middle">6.4 KM/H</text>
+const terminalVelocityShield = (f: number, _stepProgress?: number, currentState?: string) => {
+  const isSlow = currentState === "freno_aire" || (currentState === undefined && f >= 60);
+  const windY = (f * 3.5) % 24;
+  const airDrag = 1 + Math.sin(f * 0.2) * 0.05;
+  return `<g transform="scale(${n(airDrag * 1.45)})">
+    <!-- Cúpula de paracaídas aerodinámico -->
+    <path d="M -42 6 C -42 -38 42 -38 42 6 C 22 0 0 4 -42 6 Z" fill="${isSlow ? "#22C55E" : "#FACC15"}" stroke="${S}" stroke-width="5.5" stroke-linejoin="round"/>
+    <path d="M -28 -2 C -28 -24 28 -24 28 -2" stroke="#FFFFFF" stroke-width="4" fill="none" stroke-linecap="round"/>
+    <!-- Cuerdas de suspensión hacia la hormiga -->
+    <line x1="-32" y1="6" x2="-8" y2="28" stroke="${S}" stroke-width="3.5"/>
+    <line x1="32" y1="6" x2="8" y2="28" stroke="${S}" stroke-width="3.5"/>
+    <circle cx="0" cy="30" r="8" fill="#DC2626" stroke="${S}" stroke-width="3.5"/>
+    <!-- Corrientes ascendentes de aire frenando la caída -->
+    <path d="M -26 ${n(36 - (windY % 16))} L -26 16" stroke="#38BDF8" stroke-width="4.5" stroke-linecap="round"/>
+    <path d="M 26 ${n(36 - (windY % 16))} L 26 16" stroke="#38BDF8" stroke-width="4.5" stroke-linecap="round"/>
   </g>`;
 };
 
-const honeyPot = (f: number) => {
-  const drip = (f * 1.5) % 35;
-  return `<g transform="scale(1.15)">
-    <path d="M -24 -24 L 24 -24 L 32 18 C 32 30 18 36 0 36 C -18 36 -32 30 -32 18 Z" fill="#D97706" stroke="${S}" stroke-width="5" stroke-linejoin="round"/>
-    <ellipse cx="0" cy="-24" rx="24" ry="8" fill="#F59E0B" stroke="${S}" stroke-width="4"/>
-    <path d="M -22 -22 Q -12 -12 0 -18 Q 12 -12 22 -22 Q 18 4 0 4 Q -18 4 -22 -22 Z" fill="#FBBF24" stroke="${S}" stroke-width="3"/>
-    <ellipse cx="-4" cy="-8" rx="10" ry="4" fill="#FEF08A"/>
-    <circle cx="6" cy="${n(-4 + drip)}" r="3" fill="#F59E0B" stroke="${S}" stroke-width="1.5"/>
-    <rect x="-16" y="10" width="32" height="16" rx="4" fill="#B45309" stroke="${S}" stroke-width="2"/>
-    <text x="0" y="22" font-family="system-ui, sans-serif" font-weight="900" font-size="9" fill="#FEF08A" text-anchor="middle">MIEL</text>
+const honeyPot = (f: number, _stepProgress?: number, currentState?: string) => {
+  const drip = (f * 1.4) % 30;
+  const floatAnt = Math.sin(f * 0.16) * 3;
+  return `<g transform="scale(1.45)">
+    <!-- Frasco transparente de miel densa donde el aire actúa como colchón viscoso -->
+    <path d="M -24 -22 L 24 -22 L 30 18 C 30 30 18 36 0 36 C -18 36 -30 30 -30 18 Z" fill="#F59E0B" stroke="${S}" stroke-width="5" stroke-linejoin="round"/>
+    <ellipse cx="0" cy="-22" rx="24" ry="7" fill="#FDE047" stroke="${S}" stroke-width="4"/>
+    <path d="M -20 -18 Q -10 -8 0 -14 Q 10 -8 20 -18 Q 16 6 0 6 Q -16 6 -20 -18 Z" fill="#FEF08A" opacity="0.75"/>
+    <!-- Silueta de hormiguita flotando suavemente dentro del fluido ámbar -->
+    <g transform="translate(0, ${n(6 + floatAnt)})">
+      <circle cx="-6" cy="0" r="5" fill="#7F1D1D" stroke="${S}" stroke-width="2.5"/>
+      <circle cx="2" cy="0" r="4" fill="#991B1B" stroke="${S}" stroke-width="2.5"/>
+      <circle cx="9" cy="-1" r="4" fill="#7F1D1D" stroke="${S}" stroke-width="2.5"/>
+    </g>
+    <circle cx="12" cy="${n(-4 + drip * 0.6)}" r="3.5" fill="#FEF08A" stroke="${S}" stroke-width="2"/>
   </g>`;
 };
 
@@ -6883,19 +6907,20 @@ export const PROPS_LIBRARY: Record<string, PropDef> = {
     family: "historia_exploracion",
     defaultPlacement: "overhead",
     svg: `<rect x="-24" y="-30" width="48" height="60" rx="4" fill="#334155" stroke="${S}" stroke-width="4"/><line x1="-16" y1="-30" x2="-16" y2="30" stroke="#000000" stroke-width="3"/><line x1="-8" y1="-30" x2="-8" y2="30" stroke="#000000" stroke-width="3"/><line x1="0" y1="-30" x2="0" y2="30" stroke="#000000" stroke-width="3"/><line x1="8" y1="-30" x2="8" y2="30" stroke="#000000" stroke-width="3"/><line x1="16" y1="-30" x2="16" y2="30" stroke="#000000" stroke-width="3"/>`,
-    animatedSvg: (f: number) => {
-      const dissolve = Math.min(1.0, Math.max(0.0, (f - 40) / 30));
-      const barsAlpha = 1.0 - dissolve;
-      return `<g>
+    animatedSvg: (f: number, stepProgress?: number, currentState?: string) => {
+      const isDissolving = currentState === "desvanecida" || (currentState === undefined && f >= 75);
+      const dissolve = isDissolving ? (stepProgress !== undefined ? Math.min(1, stepProgress * 1.4) : Math.min(1.0, Math.max(0.0, (f - 75) / 30))) : 0;
+      const barsAlpha = Math.max(0.22, 1.0 - dissolve * 0.72);
+      return `<g transform="scale(1.5)">
         <!-- Marco de celda penitenciaria -->
-        <rect x="-28" y="-32" width="56" height="64" rx="4" fill="none" stroke="${S}" stroke-width="4.5" opacity="${barsAlpha}"/>
+        <rect x="-28" y="-32" width="56" height="64" rx="5" fill="#1E293B" fill-opacity="${(barsAlpha * 0.35).toFixed(2)}" stroke="${S}" stroke-width="4.5" opacity="${barsAlpha.toFixed(2)}"/>
         <!-- Silueta humana tras los barrotes -->
-        <g opacity="${barsAlpha * 0.7}">
-          <circle cx="0" cy="-10" r="10" fill="#475569" stroke="${S}" stroke-width="2"/>
-          <path d="M -14,24 C -14,4 14,4 14,24 Z" fill="#475569" stroke="${S}" stroke-width="2"/>
+        <g opacity="${(barsAlpha * 0.85).toFixed(2)}">
+          <circle cx="0" cy="-10" r="10" fill="#64748B" stroke="${S}" stroke-width="3"/>
+          <path d="M -15,24 C -15,4 15,4 15,24 Z" fill="#64748B" stroke="${S}" stroke-width="3"/>
         </g>
         <!-- Barrotes verticales de hierro -->
-        <g opacity="${barsAlpha}">
+        <g opacity="${barsAlpha.toFixed(2)}">
           <line x1="-20" y1="-32" x2="-20" y2="32" stroke="${S}" stroke-width="4"/>
           <line x1="-10" y1="-32" x2="-10" y2="32" stroke="${S}" stroke-width="4"/>
           <line x1="0" y1="-32" x2="0" y2="32" stroke="${S}" stroke-width="4"/>
@@ -6903,15 +6928,15 @@ export const PROPS_LIBRARY: Record<string, PropDef> = {
           <line x1="20" y1="-32" x2="20" y2="32" stroke="${S}" stroke-width="4"/>
           <line x1="-28" y1="0" x2="28" y2="0" stroke="${S}" stroke-width="3.5"/>
         </g>
-        <!-- Nube de disolución si se desvaneció -->
-        ${dissolve > 0 ? `
-          <g transform="scale(${1 + dissolve * 0.4})">
-            <circle cx="-12" cy="-8" r="${4 * (1 - dissolve)}" fill="#94A3B8"/>
-            <circle cx="14" cy="6" r="${5 * (1 - dissolve)}" fill="#94A3B8"/>
-            <circle cx="0" cy="18" r="${3 * (1 - dissolve)}" fill="#94A3B8"/>
-            <text x="0" y="4" text-anchor="middle" fill="#EF4444" font-size="8" font-weight="900" font-family="'Arial Black'" opacity="${dissolve}">¡ERROR!</text>
-          </g>
-        ` : ''}
+        <!-- Aspa roja y partículas de desvanecimiento cuando se revela el error -->
+        ${isDissolving ? `<g>
+          <circle cx="-22" cy="-18" r="4" fill="#94A3B8" stroke="${S}" stroke-width="2"/>
+          <circle cx="24" cy="14" r="5" fill="#94A3B8" stroke="${S}" stroke-width="2"/>
+          <line x1="-22" y1="-22" x2="22" y2="22" stroke="#EF4444" stroke-width="7" stroke-linecap="round"/>
+          <line x1="-22" y1="-22" x2="22" y2="22" stroke="${S}" stroke-width="2.5" stroke-linecap="round"/>
+          <line x1="22" y1="-22" x2="-22" y2="22" stroke="#EF4444" stroke-width="7" stroke-linecap="round"/>
+          <line x1="22" y1="-22" x2="-22" y2="22" stroke="${S}" stroke-width="2.5" stroke-linecap="round"/>
+        </g>` : ""}
       </g>`;
     },
     tags: ["celda", "prision", "mandela", "desvanecer", "recuerdo", "error", "historia"],
@@ -6922,32 +6947,31 @@ export const PROPS_LIBRARY: Record<string, PropDef> = {
     family: "tecnologia",
     defaultPlacement: "overhead",
     svg: `<rect x="-24" y="-18" width="48" height="36" rx="4" fill="#1E293B" stroke="${S}" stroke-width="4"/><rect x="-18" y="-12" width="28" height="24" rx="2" fill="#64748B"/><line x1="-10" y1="-28" x2="-2" y2="-18" stroke="${S}" stroke-width="3"/><line x1="10" y1="-28" x2="2" y2="-18" stroke="${S}" stroke-width="3"/>`,
-    animatedSvg: (f: number) => {
-      const staticGlitch = (f % 4 < 2);
-      const xPulse = (f % 8 < 4);
-      return `<g>
+    animatedSvg: (f: number, stepProgress?: number, currentState?: string) => {
+      const isDebunked = currentState === "desmentido" || (currentState === undefined && f >= 90);
+      const staticGlitch = (f % 6 < 3);
+      return `<g transform="scale(1.55)">
         <!-- Antena de cuernos -->
         <line x1="-12" y1="-30" x2="-4" y2="-18" stroke="${S}" stroke-width="3.5" stroke-linecap="round"/>
         <line x1="12" y1="-30" x2="4" y2="-18" stroke="${S}" stroke-width="3.5" stroke-linecap="round"/>
-        <circle cx="-12" cy="-30" r="2.5" fill="#EF4444"/>
-        <circle cx="12" cy="-30" r="2.5" fill="#EF4444"/>
+        <circle cx="-12" cy="-30" r="3" fill="#EF4444" stroke="${S}" stroke-width="1.5"/>
+        <circle cx="12" cy="-30" r="3" fill="#EF4444" stroke="${S}" stroke-width="1.5"/>
         <!-- Gabinete retro de TV -->
-        <rect x="-26" y="-18" width="52" height="38" rx="6" fill="#334155" stroke="${S}" stroke-width="4"/>
-        <!-- Pantalla CRT con estática o silueta falsa de noticiero -->
-        <rect x="-21" y="-14" width="30" height="30" rx="3" fill="#020617"/>
-        <g opacity="0.6">
-          <ellipse cx="-6" cy="4" rx="7" ry="5" fill="${staticGlitch ? '#FFFFFF' : '#94A3B8'}"/>
-          <circle cx="-6" cy="-4" r="4.5" fill="${staticGlitch ? '#FFFFFF' : '#94A3B8'}"/>
+        <rect x="-28" y="-18" width="56" height="40" rx="6" fill="#334155" stroke="${S}" stroke-width="4.5"/>
+        <!-- Pantalla CRT con silueta de noticiero falso -->
+        <rect x="-22" y="-13" width="32" height="30" rx="3" fill="#020617" stroke="${S}" stroke-width="2.5"/>
+        <g opacity="0.75">
+          <ellipse cx="-6" cy="6" rx="8" ry="5" fill="${staticGlitch ? '#E2E8F0' : '#94A3B8'}"/>
+          <circle cx="-6" cy="-3" r="5" fill="${staticGlitch ? '#E2E8F0' : '#94A3B8'}"/>
         </g>
         <!-- Controles laterales de sintonizador -->
-        <circle cx="17" cy="-6" r="3.5" fill="#64748B" stroke="${S}" stroke-width="2"/>
-        <circle cx="17" cy="4" r="3.5" fill="#64748B" stroke="${S}" stroke-width="2"/>
-        <line x1="13" y1="12" x2="21" y2="12" stroke="${S}" stroke-width="2"/>
+        <circle cx="18" cy="-5" r="4" fill="#F59E0B" stroke="${S}" stroke-width="2"/>
+        <circle cx="18" cy="5" r="4" fill="#64748B" stroke="${S}" stroke-width="2"/>
         <!-- Gran Cruz Roja de Desmentido 'X' -->
-        <g transform="translate(-6, 1)">
-          <line x1="-12" y1="-12" x2="12" y2="12" stroke="#EF4444" stroke-width="${xPulse ? 6 : 4.5}" stroke-linecap="round"/>
-          <line x1="12" y1="-12" x2="-12" y2="12" stroke="#EF4444" stroke-width="${xPulse ? 6 : 4.5}" stroke-linecap="round"/>
-        </g>
+        ${isDebunked ? `<g transform="translate(-6, 2)">
+          <line x1="-13" y1="-13" x2="13" y2="13" stroke="#EF4444" stroke-width="6" stroke-linecap="round"/>
+          <line x1="13" y1="-13" x2="-13" y2="13" stroke="#EF4444" stroke-width="6" stroke-linecap="round"/>
+        </g>` : ""}
       </g>`;
     },
     tags: ["tv", "television", "estatica", "noticia_falsa", "mandela", "pantalla", "cruz_roja"],
@@ -6958,30 +6982,31 @@ export const PROPS_LIBRARY: Record<string, PropDef> = {
     family: "educacion_ciencia",
     defaultPlacement: "overhead",
     svg: `<circle cx="-14" cy="0" r="14" fill="#F43F5E" stroke="${S}" stroke-width="3"/><circle cx="16" cy="-10" r="10" fill="#E2E8F0" stroke="${S}" stroke-width="2.5"/><circle cx="18" cy="12" r="8" fill="#E2E8F0" stroke="${S}" stroke-width="2.5"/><path d="M 0,0 L 8,-6 M 0,0 L 10,8" stroke="${S}" stroke-width="2"/>`,
-    animatedSvg: (f: number) => {
-      const wave = Math.sin(f * 0.2) * 3;
-      return `<g>
-        <!-- Silueta de Fiona Broome con peinado elegante -->
+    animatedSvg: (f: number, stepProgress?: number, currentState?: string) => {
+      const wave = Math.sin(f * 0.2) * 2.5;
+      const isPropagated = currentState === "contagio_global" || (currentState === undefined && f >= 70);
+      return `<g transform="scale(1.5)">
+        <!-- Silueta de Fiona Broome -->
         <g transform="translate(-18, 12)">
           <circle cx="0" cy="-14" r="9" fill="#F43F5E" stroke="${S}" stroke-width="3"/>
           <path d="M -10,-18 Q 0,-26 8,-16 Q 10,-8 6,-4" fill="#9F1239"/>
           <path d="M -12,12 C -12,-2 12,-2 12,12 Z" fill="#BE123C" stroke="${S}" stroke-width="3"/>
         </g>
         <!-- Nube de pensamiento principal con celda dentro -->
-        <g transform="translate(6, -14) translate(0, ${wave})">
-          <rect x="-14" y="-12" width="28" height="24" rx="8" fill="#FFFFFF" stroke="${S}" stroke-width="3"/>
-          <line x1="-8" y1="-8" x2="-8" y2="8" stroke="#000000" stroke-width="2"/>
-          <line x1="0" y1="-8" x2="0" y2="8" stroke="#000000" stroke-width="2"/>
-          <line x1="8" y1="-8" x2="8" y2="8" stroke="#000000" stroke-width="2"/>
+        <g transform="translate(6, ${(-14 + wave).toFixed(1)})">
+          <rect x="-14" y="-12" width="28" height="24" rx="8" fill="#FFFFFF" stroke="${S}" stroke-width="3.5"/>
+          <line x1="-7" y1="-8" x2="-7" y2="8" stroke="#000000" stroke-width="2.5"/>
+          <line x1="0" y1="-8" x2="0" y2="8" stroke="#000000" stroke-width="2.5"/>
+          <line x1="7" y1="-8" x2="7" y2="8" stroke="#000000" stroke-width="2.5"/>
         </g>
-        <!-- Nubes satélites conectadas a otras mentes -->
-        <g transform="translate(24, 16)">
-          <circle cx="0" cy="0" r="8" fill="#FEF08A" stroke="${S}" stroke-width="2"/>
-          <text x="0" y="3" text-anchor="middle" font-size="7" font-weight="900" font-family="'Arial Black'">?</text>
+        <!-- Nodos satélites conectados a otras mentes -->
+        <g transform="translate(24, 16) scale(${isPropagated ? 1.2 : 0.95})">
+          <circle cx="0" cy="0" r="9" fill="#FFE600" stroke="${S}" stroke-width="3"/>
+          <circle cx="0" cy="0" r="3.5" fill="#EF4444"/>
         </g>
         <!-- Líneas punteadas de conexión neural -->
-        <line x1="-12" y1="-6" x2="-2" y2="-12" stroke="${S}" stroke-width="2" stroke-dasharray="3 2"/>
-        <line x1="16" y1="-4" x2="22" y2="10" stroke="#F43F5E" stroke-width="2.5" stroke-dasharray="3 2"/>
+        <line x1="-12" y1="-6" x2="-2" y2="-12" stroke="${S}" stroke-width="2.5" stroke-dasharray="3 2"/>
+        <line x1="16" y1="-4" x2="22" y2="10" stroke="#F43F5E" stroke-width="3" stroke-dasharray="3 2"/>
       </g>`;
     },
     tags: ["pensamiento", "fiona", "red", "contagio", "memoria", "siluetas", "nube"],
@@ -6992,44 +7017,35 @@ export const PROPS_LIBRARY: Record<string, PropDef> = {
     family: "reacciones_humor",
     defaultPlacement: "overhead",
     svg: `<rect x="-24" y="-20" width="48" height="38" rx="3" fill="#FEF9C3" stroke="${S}" stroke-width="3.5"/><circle cx="-8" cy="-4" r="8" fill="#FFFFFF" stroke="${S}" stroke-width="2"/><circle cx="12" cy="-4" r="4" fill="#FFE600"/>`,
-    animatedSvg: (f: number) => {
-      const eraseProgress = Math.min(1.0, Math.max(0.0, (f % 90) / 45));
-      const monocleOpacity = Math.max(0, 1 - eraseProgress * 1.5);
-      const eraserWobble = Math.sin(f * 0.8) * 4;
-      return `<g>
+    animatedSvg: (f: number, stepProgress?: number, currentState?: string) => {
+      const isErased = currentState === "borrado_realidad" || (currentState === undefined && f >= 80);
+      const monocleOpacity = isErased ? 0.15 : 1;
+      const eraserWobble = Math.sin(f * 0.28) * 3;
+      return `<g transform="scale(1.5)">
         <!-- Lienzo sobre caballete -->
         <rect x="-26" y="-24" width="52" height="46" rx="4" fill="#FFFFFF" stroke="${S}" stroke-width="4"/>
-        <line x1="0" y1="-24" x2="0" y2="22" stroke="#E2E8F0" stroke-width="2"/>
-        
+        <line x1="0" y1="-24" x2="0" y2="22" stroke="#CBD5E1" stroke-width="2.5"/>
         <!-- Lado Izquierdo: Señor Monopoly con Chistera -->
         <g transform="translate(-13, -2)">
-          <!-- Sombrero de copa -->
-          <rect x="-8" y="-18" width="16" height="10" fill="#0F172A" stroke="${S}" stroke-width="1.8"/>
+          <rect x="-8" y="-18" width="16" height="10" fill="#0F172A" stroke="${S}" stroke-width="2"/>
           <line x1="-11" y1="-8" x2="11" y2="-8" stroke="${S}" stroke-width="2.5"/>
-          <!-- Cara con bigote blanco -->
-          <circle cx="0" cy="-1" r="6.5" fill="#F8FAFC" stroke="${S}" stroke-width="1.8"/>
+          <circle cx="0" cy="-1" r="6.5" fill="#FFE4E6" stroke="${S}" stroke-width="2"/>
           <path d="M -5,1 Q 0,-1 5,1 Q 0,4 -5,1 Z" fill="#FFFFFF" stroke="${S}" stroke-width="1.5"/>
-          <!-- Monóculo dorado que desaparece -->
           <g opacity="${monocleOpacity}">
-            <circle cx="3" cy="-3" r="3.2" fill="#FEF08A" stroke="#B45309" stroke-width="1.8"/>
-            <line x1="6" y1="-1" x2="8" y2="6" stroke="#B45309" stroke-width="1.2"/>
+            <circle cx="3" cy="-3" r="3.5" fill="#FEF08A" stroke="#D97706" stroke-width="1.8"/>
           </g>
         </g>
-
         <!-- Lado Derecho: Cola de Pikachu en Zigzag -->
         <g transform="translate(13, 0)">
-          <!-- Cola dorada tipo rayo -->
           <path d="M -6,14 L -1,8 L 3,11 L 8,4 L 12,6 L 6,18 Z" fill="#FFE600" stroke="${S}" stroke-width="2"/>
-          <!-- Punta negra falsa que se borra -->
           <g opacity="${monocleOpacity}">
             <polygon points="8,4 12,6 10,0 7,2" fill="#000000"/>
           </g>
         </g>
-
-        <!-- Goma de borrar animada borrando la ilusión -->
-        <g transform="translate(${eraseProgress > 0.1 && eraseProgress < 0.9 ? eraserWobble : -99}, -6)">
-          <rect x="-6" y="-4" width="12" height="8" rx="2" fill="#F43F5E" stroke="${S}" stroke-width="2"/>
-          <rect x="0" y="-4" width="6" height="8" fill="#3B82F6"/>
+        <!-- Goma de borrar bicolor activa -->
+        <g transform="translate(${eraserWobble.toFixed(1)}, 14) rotate(-15)">
+          <rect x="-8" y="-5" width="16" height="10" rx="2" fill="#F43F5E" stroke="${S}" stroke-width="2.5"/>
+          <rect x="0" y="-5" width="8" height="10" rx="1" fill="#3B82F6" stroke="${S}" stroke-width="2.5"/>
         </g>
       </g>`;
     },
@@ -7041,31 +7057,28 @@ export const PROPS_LIBRARY: Record<string, PropDef> = {
     family: "educacion_ciencia",
     defaultPlacement: "overhead",
     svg: `<rect x="-24" y="-14" width="22" height="12" rx="3" fill="#3B82F6" stroke="${S}" stroke-width="3"/><rect x="2" y="-14" width="22" height="12" rx="3" fill="#EF4444" stroke="${S}" stroke-width="3"/><polygon points="2,-16 6,-8 0,-6" fill="#FACC15"/>`,
-    animatedSvg: (f: number) => {
-      const shakeGlass = Math.sin(f * 0.9) * 2;
-      return `<g>
-        <!-- Auto Azul (Velocidad baja: ¿Se tocaron?) -->
+    animatedSvg: (f: number, stepProgress?: number, currentState?: string) => {
+      const isSmashed = currentState === "estrellaron_vidrios" || (currentState === undefined && f >= 85);
+      const shakeGlass = Math.sin(f * 0.28) * 2.5;
+      return `<g transform="scale(1.5)">
+        <!-- Auto Azul -->
         <g transform="translate(-14, -8)">
-          <rect x="-12" y="-6" width="24" height="14" rx="4" fill="#3B82F6" stroke="${S}" stroke-width="3"/>
-          <rect x="-6" y="-11" width="14" height="6" rx="2" fill="#93C5FD" stroke="${S}" stroke-width="2"/>
-          <circle cx="-7" cy="8" r="3.5" fill="#0F172A"/>
-          <circle cx="7" cy="8" r="3.5" fill="#0F172A"/>
-          <text x="0" y="2" text-anchor="middle" fill="#FFFFFF" font-size="5" font-weight="900">30 km/h</text>
+          <rect x="-13" y="-6" width="26" height="14" rx="4" fill="#3B82F6" stroke="${S}" stroke-width="3.5"/>
+          <rect x="-7" y="-12" width="15" height="7" rx="2" fill="#93C5FD" stroke="${S}" stroke-width="2.5"/>
+          <circle cx="-7" cy="8" r="4" fill="#0F172A" stroke="${S}" stroke-width="1.5"/>
+          <circle cx="7" cy="8" r="4" fill="#0F172A" stroke="${S}" stroke-width="1.5"/>
         </g>
-        <!-- Auto Rojo (Impacto violento: ¿Se estrellaron?) -->
+        <!-- Auto Rojo -->
         <g transform="translate(14, 8)">
-          <rect x="-12" y="-6" width="24" height="14" rx="4" fill="#EF4444" stroke="${S}" stroke-width="3"/>
-          <rect x="-8" y="-11" width="14" height="6" rx="2" fill="#FCA5A5" stroke="${S}" stroke-width="2"/>
-          <circle cx="-7" cy="8" r="3.5" fill="#0F172A"/>
-          <circle cx="7" cy="8" r="3.5" fill="#0F172A"/>
-          <!-- Frente abollado -->
-          <polygon points="-12,-4 -16,2 -12,8" fill="#B91C1C" stroke="${S}" stroke-width="2"/>
-          <!-- Cristales falsos volando en círculo rojo -->
-          <g transform="translate(-18, -12) translate(${shakeGlass}, 0)">
-            <circle cx="0" cy="0" r="10" fill="none" stroke="#DC2626" stroke-width="2" stroke-dasharray="3 2"/>
-            <polygon points="-4,-2 0,-7 3,-3" fill="#67E8F9" stroke="${S}" stroke-width="1.2"/>
-            <polygon points="2,2 6,-2 4,5" fill="#67E8F9" stroke="${S}" stroke-width="1.2"/>
-          </g>
+          <rect x="-13" y="-6" width="26" height="14" rx="4" fill="#EF4444" stroke="${S}" stroke-width="3.5"/>
+          <rect x="-8" y="-12" width="15" height="7" rx="2" fill="#FCA5A5" stroke="${S}" stroke-width="2.5"/>
+          <circle cx="-7" cy="8" r="4" fill="#0F172A" stroke="${S}" stroke-width="1.5"/>
+          <circle cx="7" cy="8" r="4" fill="#0F172A" stroke="${S}" stroke-width="1.5"/>
+          ${isSmashed ? `<g transform="translate(-18, -10) translate(${shakeGlass.toFixed(1)}, 0)">
+            <circle cx="0" cy="0" r="11" fill="#FEF08A" fill-opacity="0.35" stroke="#DC2626" stroke-width="2.5" stroke-dasharray="3 2"/>
+            <polygon points="-5,-2 0,-8 4,-3" fill="#67E8F9" stroke="${S}" stroke-width="1.8"/>
+            <polygon points="2,3 7,-2 5,6" fill="#67E8F9" stroke="${S}" stroke-width="1.8"/>
+          </g>` : ""}
         </g>
       </g>`;
     },
@@ -7077,28 +7090,24 @@ export const PROPS_LIBRARY: Record<string, PropDef> = {
     family: "educacion_ciencia",
     defaultPlacement: "overhead",
     svg: `<rect x="-24" y="-12" width="24" height="18" rx="2" fill="#0F172A" stroke="${S}" stroke-width="3"/><rect x="4" y="-14" width="20" height="20" rx="3" fill="#10B981" stroke="${S}" stroke-width="3"/>`,
-    animatedSvg: (f: number) => {
-      const piecePush = Math.sin(f * 0.25) * 3;
-      return `<g>
-        <!-- Videocasete VHS antiguo con cinta rota -->
-        <g transform="translate(-14, 2)">
-          <rect x="-12" y="-16" width="24" height="30" rx="3" fill="#1E293B" stroke="${S}" stroke-width="3.5"/>
-          <circle cx="-5" cy="-4" r="4.5" fill="#FFFFFF" stroke="${S}" stroke-width="1.8"/>
-          <circle cx="5" cy="-4" r="4.5" fill="#FFFFFF" stroke="${S}" stroke-width="1.8"/>
-          <!-- Grieta diagonal en el VHS -->
-          <line x1="-10" y1="-14" x2="8" y2="12" stroke="#EF4444" stroke-width="2.5"/>
-          <text x="0" y="9" text-anchor="middle" fill="#94A3B8" font-size="4" font-weight="900">GRABACIÓN</text>
+    animatedSvg: (f: number, stepProgress?: number, currentState?: string) => {
+      const isRebuilt = currentState === "rellenando_hueco" || (currentState === undefined && f >= 75);
+      const piecePush = isRebuilt ? Math.sin(f * 0.24) * 2 : 5;
+      return `<g transform="scale(1.5)">
+        <!-- Videocasete VHS antiguo tachado -->
+        <g transform="translate(-15, 2)">
+          <rect x="-13" y="-16" width="26" height="30" rx="3" fill="#1E293B" stroke="${S}" stroke-width="3.5"/>
+          <circle cx="-5" cy="-4" r="4.5" fill="#FFFFFF" stroke="${S}" stroke-width="2"/>
+          <circle cx="5" cy="-4" r="4.5" fill="#FFFFFF" stroke="${S}" stroke-width="2"/>
+          <line x1="-11" y1="-14" x2="11" y2="12" stroke="#EF4444" stroke-width="4" stroke-linecap="round"/>
         </g>
-
-        <!-- Rompecabezas incompleto rellenado con pieza intrusa -->
-        <g transform="translate(14, -2)">
-          <rect x="-10" y="-14" width="24" height="24" rx="3" fill="#0D9488" stroke="${S}" stroke-width="3"/>
-          <line x1="2" y1="-14" x2="2" y2="10" stroke="${S}" stroke-width="2"/>
-          <line x1="-10" y1="-2" x2="14" y2="-2" stroke="${S}" stroke-width="2"/>
-          <!-- Pieza intrusa de color chillón forzada en el hueco -->
-          <g transform="translate(${piecePush}, 0)">
-            <rect x="3" y="-1" width="10" height="10" rx="2" fill="#F43F5E" stroke="${S}" stroke-width="2"/>
-            <text x="8" y="6" text-anchor="middle" fill="#FFFFFF" font-size="5" font-weight="900">!</text>
+        <!-- Rompecabezas reconstruido con pieza intrusa -->
+        <g transform="translate(15, -2)">
+          <rect x="-11" y="-14" width="24" height="24" rx="3" fill="#10B981" stroke="${S}" stroke-width="3.5"/>
+          <line x1="1" y1="-14" x2="1" y2="10" stroke="${S}" stroke-width="2.5"/>
+          <line x1="-11" y1="-2" x2="13" y2="-2" stroke="${S}" stroke-width="2.5"/>
+          <g transform="translate(${piecePush.toFixed(1)}, 0)">
+            <rect x="2" y="-1" width="11" height="11" rx="2" fill="#F43F5E" stroke="${S}" stroke-width="2.5"/>
           </g>
         </g>
       </g>`;
@@ -7111,19 +7120,21 @@ export const PROPS_LIBRARY: Record<string, PropDef> = {
     family: "herramientas_objetos",
     defaultPlacement: "overhead",
     svg: `<circle cx="-4" cy="-4" r="14" fill="#E0F2FE" stroke="${S}" stroke-width="4"/><line x1="6" y1="6" x2="20" y2="20" stroke="#78350F" stroke-width="5" stroke-linecap="round"/><text x="-4" y="2" text-anchor="middle" fill="#EF4444" font-size="12" font-weight="900">X</text>`,
-    animatedSvg: (f: number) => {
-      const wobble = Math.sin(f * 0.15) * 3;
-      return `<g transform="translate(0, ${wobble})">
+    animatedSvg: (f: number, stepProgress?: number, currentState?: string) => {
+      const wobble = Math.sin(f * 0.16) * 2.5;
+      const isDebunked = currentState === "desmentido_lupa" || (currentState === undefined && f >= 70);
+      return `<g transform="translate(0, ${wobble.toFixed(1)}) scale(1.5)">
         <!-- Pieza de rompecabezas flotante bajo examen -->
-        <rect x="-14" y="-14" width="24" height="24" rx="4" fill="#F59E0B" stroke="${S}" stroke-width="3.5"/>
-        <circle cx="-2" cy="-14" r="3.5" fill="#F59E0B" stroke="${S}" stroke-width="2"/>
-        
-        <!-- Lupa con lente de cristal y reflejo -->
-        <circle cx="2" cy="0" r="18" fill="#38BDF8" fill-opacity="0.25" stroke="#D97706" stroke-width="4.5"/>
-        <line x1="14" y1="13" x2="28" y2="27" stroke="#92400E" stroke-width="6" stroke-linecap="round"/>
+        <rect x="-15" y="-15" width="26" height="26" rx="4" fill="#F59E0B" stroke="${S}" stroke-width="4"/>
+        <circle cx="-2" cy="-15" r="4" fill="#F59E0B" stroke="${S}" stroke-width="2.5"/>
+        <!-- Lupa con lente de cristal -->
+        <circle cx="2" cy="0" r="19" fill="#38BDF8" fill-opacity="0.28" stroke="#D97706" stroke-width="4.5"/>
+        <line x1="15" y1="14" x2="29" y2="28" stroke="#92400E" stroke-width="6.5" stroke-linecap="round"/>
         <!-- Gran X roja sobre la pieza equivocada -->
-        <line x1="-8" y1="-8" x2="8" y2="8" stroke="#DC2626" stroke-width="4.5" stroke-linecap="round"/>
-        <line x1="8" y1="-8" x2="-8" y2="8" stroke="#DC2626" stroke-width="4.5" stroke-linecap="round"/>
+        ${isDebunked ? `<g>
+          <line x1="-8" y1="-8" x2="8" y2="8" stroke="#DC2626" stroke-width="5.5" stroke-linecap="round"/>
+          <line x1="8" y1="-8" x2="-8" y2="8" stroke="#DC2626" stroke-width="5.5" stroke-linecap="round"/>
+        </g>` : ""}
       </g>`;
     },
     tags: ["lupa", "multitud", "pieza", "error", "falso", "examen", "cruz_roja"],
@@ -7134,9 +7145,10 @@ export const PROPS_LIBRARY: Record<string, PropDef> = {
     family: "reacciones_humor",
     defaultPlacement: "overhead",
     svg: `<path d="M -16,4 C -22,4 -22,-8 -14,-8 C -14,-16 0,-18 6,-10 C 14,-16 24,-6 20,4 Z" fill="#FFFFFF" stroke="${S}" stroke-width="3"/><rect x="-8" y="-4" width="16" height="8" rx="2" fill="#0F172A"/>`,
-    animatedSvg: (f: number) => {
-      const floatY = Math.sin(f * 0.18) * 3;
-      return `<g transform="translate(0, ${floatY})">
+    animatedSvg: (f: number, stepProgress?: number, currentState?: string) => {
+      const floatY = Math.sin(f * 0.18) * 2.5;
+      const rotLoop = (f * 3) % 360;
+      return `<g transform="translate(0, ${floatY.toFixed(1)}) scale(1.5)">
         <!-- Nube de pensamiento neo-brutalista -->
         <path
           d="M -22,6 C -30,6 -30,-8 -18,-8 C -18,-20 2,-22 10,-12 C 22,-20 34,-6 28,6 C 34,18 16,24 6,18 C -2,24 -18,22 -22,6 Z"
@@ -7144,18 +7156,16 @@ export const PROPS_LIBRARY: Record<string, PropDef> = {
           stroke="${S}"
           stroke-width="4"
         />
-        <!-- Silueta fantasma de sombrero con interrogación -->
-        <g transform="translate(-4, -6)" opacity="0.8">
-          <rect x="-8" y="-12" width="16" height="12" rx="2" fill="#0F172A" stroke="${S}" stroke-width="2"/>
-          <ellipse cx="0" cy="0" rx="12" ry="2.5" fill="#0F172A" stroke="${S}" stroke-width="2"/>
+        <!-- Sombrero de copa dentro de la nube -->
+        <g transform="translate(-3, -4)">
+          <rect x="-9" y="-13" width="18" height="13" rx="2" fill="#0F172A" stroke="${S}" stroke-width="2.5"/>
+          <rect x="-8" y="-4" width="16" height="3" fill="#EF4444"/>
+          <ellipse cx="0" cy="0" rx="14" ry="3" fill="#0F172A" stroke="${S}" stroke-width="2.5"/>
         </g>
-        <g transform="translate(14, -8)">
-          <text x="0" y="4" text-anchor="middle" fill="#EF4444" font-size="14" font-weight="900" font-family="'Arial Black'">?</text>
-        </g>
-        <!-- Flechas de bucle hacia el inicio -->
-        <g transform="translate(0, 15)">
-          <path d="M -10,0 A 8,8 0 1,1 8,2" fill="none" stroke="#2563EB" stroke-width="2.5" stroke-linecap="round"/>
-          <polygon points="8,2 12,-1 6,-2" fill="#2563EB"/>
+        <!-- Flecha circular giratoria de rebobinado -->
+        <g transform="translate(14, 10) rotate(${rotLoop})">
+          <circle cx="0" cy="0" r="7" fill="#FFE600" stroke="${S}" stroke-width="2.5"/>
+          <path d="M -3,0 L 2,-3 L 2,3 Z" fill="#000000"/>
         </g>
       </g>`;
     },
@@ -7665,27 +7675,27 @@ export const PROPS_LIBRARY: Record<string, PropDef> = {
     family: "educacion_ciencia",
     defaultPlacement: "right",
     svg: `<g transform="rotate(-30)"><rect x="-14" y="-30" width="28" height="30" rx="14" fill="#EF4444" stroke="${S}" stroke-width="4"/><rect x="-14" y="0" width="28" height="30" rx="14" fill="#FFFFFF" stroke="${S}" stroke-width="4"/><line x1="-14" y1="0" x2="14" y2="0" stroke="${S}" stroke-width="3.5"/></g>`,
-    animatedSvg: (f: number) => {
-      const bob = Math.sin(f * 0.15) * 3;
-      const glow = 0.7 + Math.sin(f * 0.2) * 0.3;
-      return `<g transform="translate(0, ${bob.toFixed(1)})">
+    animatedSvg: (f: number, stepProgress?: number, currentState?: string) => {
+      const isActive = currentState === "activacion_neural" || (currentState === undefined && f >= 75);
+      const bob = Math.sin(f * 0.16) * 3;
+      const glow = 0.75 + Math.sin(f * 0.22) * 0.25;
+      const splitOffset = isActive ? 4 + Math.sin(f * 0.2) * 1.5 : 0;
+      return `<g transform="translate(0, ${bob.toFixed(1)}) scale(1.65)">
         <!-- Aura resplandeciente de alivio -->
-        <circle cx="0" cy="0" r="34" fill="#38BDF8" fill-opacity="${(glow * 0.25).toFixed(2)}" filter="blur(6px)"/>
-        <!-- Cápsula inclinada 30 grados -->
+        <circle cx="0" cy="0" r="${isActive ? 38 : 30}" fill="${isActive ? "#FACC15" : "#38BDF8"}" fill-opacity="${(glow * 0.3).toFixed(2)}"/>
+        <!-- Cápsula inclinada -->
         <g transform="rotate(-28)">
           <!-- Mitad superior roja brillante -->
-          <path d="M -15,0 L -15,-15 A 15,15 0 0,1 15,-15 L 15,0 Z" fill="#EF4444" stroke="${S}" stroke-width="4"/>
-          <!-- Brillo especular rojo -->
-          <path d="M -9,-20 A 9,9 0 0,1 3,-25" fill="none" stroke="#FCA5A5" stroke-width="3" stroke-linecap="round"/>
+          <path d="M -15,${(-splitOffset).toFixed(1)} L -15,${(-15 - splitOffset).toFixed(1)} A 15,15 0 0,1 15,${(-15 - splitOffset).toFixed(1)} L 15,${(-splitOffset).toFixed(1)} Z" fill="#EF4444" stroke="${S}" stroke-width="4"/>
+          <path d="M -9,${(-20 - splitOffset).toFixed(1)} A 9,9 0 0,1 3,${(-25 - splitOffset).toFixed(1)}" fill="none" stroke="#FCA5A5" stroke-width="3" stroke-linecap="round"/>
           <!-- Mitad inferior blanca clínica -->
-          <path d="M -15,0 L -15,15 A 15,15 0 0,0 15,15 L 15,0 Z" fill="#FFFFFF" stroke="${S}" stroke-width="4"/>
-          <line x1="-15" y1="0" x2="15" y2="0" stroke="${S}" stroke-width="3.5"/>
-          <!-- Sombra interior tenue -->
-          <path d="M 9,4 L 9,20 A 9,9 0 0,1 0,25" fill="none" stroke="#E2E8F0" stroke-width="2.5" stroke-linecap="round"/>
+          <path d="M -15,${splitOffset.toFixed(1)} L -15,${(15 + splitOffset).toFixed(1)} A 15,15 0 0,0 15,${(15 + splitOffset).toFixed(1)} L 15,${splitOffset.toFixed(1)} Z" fill="#FFFFFF" stroke="${S}" stroke-width="4"/>
+          <!-- Destellos dorados saliendo del interior cuando se activa -->
+          ${isActive ? `<circle cx="0" cy="0" r="6" fill="#FFE600" stroke="${S}" stroke-width="2.5"/>` : `<line x1="-15" y1="0" x2="15" y2="0" stroke="${S}" stroke-width="3.5"/>`}
         </g>
-        <!-- Chispas de curación alrededor -->
-        <circle cx="${(22 + Math.cos(f * 0.2) * 4).toFixed(1)}" cy="${(-18 + Math.sin(f * 0.2) * 4).toFixed(1)}" r="3" fill="#FFE600" stroke="${S}" stroke-width="1.5"/>
-        <circle cx="${(-20 + Math.sin(f * 0.25) * 4).toFixed(1)}" cy="${(16 + Math.cos(f * 0.25) * 4).toFixed(1)}" r="2.5" fill="#38BDF8" stroke="${S}" stroke-width="1.5"/>
+        <!-- Chispas bioeléctricas alrededor -->
+        <circle cx="${(22 + Math.cos(f * 0.2) * 4).toFixed(1)}" cy="${(-18 + Math.sin(f * 0.2) * 4).toFixed(1)}" r="3.5" fill="#FFE600" stroke="${S}" stroke-width="2"/>
+        <circle cx="${(-20 + Math.sin(f * 0.25) * 4).toFixed(1)}" cy="${(16 + Math.cos(f * 0.25) * 4).toFixed(1)}" r="3" fill="#38BDF8" stroke="${S}" stroke-width="2"/>
       </g>`;
     },
     tags: ["capsula", "pastilla", "placebo", "medicina", "cura", "farmacia", "alivio", "roja_blanca"],
@@ -7700,14 +7710,10 @@ export const PROPS_LIBRARY: Record<string, PropDef> = {
       const wave = Math.sin(f * 0.2) * 2;
       const b1 = (-16 + (f * 1.5) % 30);
       return `<g>
-        <!-- Vaso de cristal cónico -->
         <path d="M -16,-24 L 16,-24 L 11,26 L -11,26 Z" fill="#F0F9FF" fill-opacity="0.5" stroke="${S}" stroke-width="4" stroke-linejoin="round"/>
-        <!-- Agua azul turquesa en el interior -->
         <path d="M -14,${(-8 + wave).toFixed(1)} Q 0,${(-6 - wave).toFixed(1)} 14,${(-8 + wave).toFixed(1)} L 10,24 L -10,24 Z" fill="#38BDF8" fill-opacity="0.85"/>
-        <!-- Burbujas subiendo -->
         <circle cx="-3" cy="${b1.toFixed(1)}" r="2" fill="#FFFFFF" fill-opacity="0.8"/>
         <circle cx="4" cy="${((-b1 + 6) % 28).toFixed(1)}" r="1.5" fill="#FFFFFF" fill-opacity="0.8"/>
-        <!-- Brillo lateral del cristal -->
         <line x1="-12" y1="-20" x2="-8" y2="20" stroke="#FFFFFF" stroke-width="2.5" stroke-linecap="round" stroke-opacity="0.9"/>
       </g>`;
     },
@@ -7715,57 +7721,57 @@ export const PROPS_LIBRARY: Record<string, PropDef> = {
   },
   frasco_azucar_100_glucosa: {
     id: "frasco_azucar_100_glucosa",
-    name: "Frasco Revelador 100% Azúcar Glucosa",
+    name: "Frasco Clínico de Terrones de Azúcar y Cápsulas Placebo",
     family: "educacion_ciencia",
     defaultPlacement: "right",
-    svg: `<rect x="-24" y="-30" width="48" height="60" rx="8" fill="#FFFFFF" stroke="${S}" stroke-width="4"/><rect x="-18" y="-12" width="36" height="30" fill="#FFE600" stroke="${S}" stroke-width="2"/><text x="0" y="2" text-anchor="middle" font-size="6" font-weight="900">100% AZÚCAR</text>`,
-    animatedSvg: (f: number) => {
-      const shake = Math.sin(f * 0.18) * 1.5;
-      return `<g transform="translate(0, ${shake.toFixed(1)})">
+    svg: `<rect x="-24" y="-30" width="48" height="60" rx="8" fill="#FFFFFF" stroke="${S}" stroke-width="4"/><rect x="-18" y="-12" width="36" height="30" fill="#FFE600" stroke="${S}" stroke-width="2"/>`,
+    animatedSvg: (f: number, stepProgress?: number, currentState?: string) => {
+      const isRevealed = currentState === "revelado_azucar" || (currentState === undefined && f >= 60);
+      const shake = Math.sin(f * 0.18) * 2;
+      return `<g transform="translate(0, ${shake.toFixed(1)}) scale(1.55)">
         <!-- Cuerpo del frasco farmacéutico -->
-        <rect x="-26" y="-32" width="52" height="66" rx="8" fill="#F8FAFC" stroke="${S}" stroke-width="4.5"/>
+        <rect x="-26" y="-32" width="52" height="66" rx="9" fill="#F8FAFC" stroke="${S}" stroke-width="4.5"/>
         <!-- Tapa rosca de seguridad médica -->
         <rect x="-18" y="-42" width="36" height="12" rx="3" fill="#0EA5E9" stroke="${S}" stroke-width="3.5"/>
-        <line x1="-12" y1="-42" x2="-12" y2="-30" stroke="#0284C7" stroke-width="2"/>
-        <line x1="0" y1="-42" x2="0" y2="-30" stroke="#0284C7" stroke-width="2"/>
-        <line x1="12" y1="-42" x2="12" y2="-30" stroke="#0284C7" stroke-width="2"/>
-        <!-- Nivel de azúcar granulada adentro (fondo blanco brillante) -->
-        <path d="M -23,12 Q -10,8 0,11 Q 12,14 23,11 L 23,31 L -23,31 Z" fill="#F1F5F9"/>
-        <!-- Granos brillantes de azúcar -->
-        <circle cx="-12" cy="20" r="1.5" fill="#CBD5E1"/>
-        <circle cx="2" cy="18" r="1.5" fill="#CBD5E1"/>
-        <circle cx="14" cy="23" r="1.5" fill="#CBD5E1"/>
-        <!-- ETIQUETA GIGANTE REVELADORA -->
-        <rect x="-22" y="-16" width="44" height="26" rx="3" fill="#FFE600" stroke="${S}" stroke-width="3"/>
-        <text x="0" y="-7" text-anchor="middle" fill="#000000" font-size="7.5" font-weight="900" font-family="'Arial Black'">100%</text>
-        <text x="0" y="0" text-anchor="middle" fill="#DC2626" font-size="6.5" font-weight="900" font-family="'Arial Black'">AZÚCAR</text>
-        <text x="0" y="7" text-anchor="middle" fill="#475569" font-size="4.5" font-weight="900" font-family="'Arial Black'">GLUCOSA PURA</text>
-        <!-- Cruz médica roja decorativa en esquina -->
-        <rect x="14" y="-28" width="8" height="2.5" fill="#EF4444"/>
-        <rect x="16.75" y="-30.75" width="2.5" height="8" fill="#EF4444"/>
+        <line x1="-10" y1="-42" x2="-10" y2="-30" stroke="${S}" stroke-width="2.5"/>
+        <line x1="0" y1="-42" x2="0" y2="-30" stroke="${S}" stroke-width="2.5"/>
+        <line x1="10" y1="-42" x2="10" y2="-30" stroke="${S}" stroke-width="2.5"/>
+        <!-- Etiqueta visual con terrones de azúcar cristalinos -->
+        <rect x="-21" y="-18" width="42" height="34" rx="4" fill="${isRevealed ? "#FFE600" : "#E0F2FE"}" stroke="${S}" stroke-width="3.5"/>
+        <!-- Tres cubos de azúcar neo-brutalistas en lugar de texto pequeño -->
+        <rect x="-14" y="-8" width="12" height="12" rx="2" fill="#FFFFFF" stroke="${S}" stroke-width="3"/>
+        <rect x="2" y="-6" width="12" height="12" rx="2" fill="#FFFFFF" stroke="${S}" stroke-width="3"/>
+        <rect x="-6" y="-15" width="12" height="12" rx="2" fill="#F8FAFC" stroke="${S}" stroke-width="3"/>
+        <!-- Cruz médica superior -->
+        <path d="M -4,-26 H 4 M 0,-30 V -22" stroke="#EF4444" stroke-width="3.5" stroke-linecap="round"/>
       </g>`;
     },
     tags: ["frasco", "azucar", "glucosa", "placebo", "100%", "medicina", "engaño", "revelacion"],
   },
   caja_placebo_etiqueta_abierta: {
     id: "caja_placebo_etiqueta_abierta",
-    name: "Caja de Placebo de Etiqueta Abierta",
+    name: "Blíster Transparente de Placebo Abierto con Cubos de Azúcar",
     family: "educacion_ciencia",
     defaultPlacement: "right",
-    svg: `<rect x="-28" y="-20" width="56" height="40" rx="6" fill="#F0FDF4" stroke="${S}" stroke-width="4"/><text x="0" y="4" text-anchor="middle" font-size="5" font-weight="900">SOLO AZÚCAR</text>`,
-    animatedSvg: (f: number) => {
-      const pulse = 1 + Math.sin(f * 0.15) * 0.03;
-      return `<g transform="scale(${pulse.toFixed(3)})">
-        <!-- Caja transparente de acrílico clínico -->
-        <rect x="-30" y="-22" width="60" height="44" rx="6" fill="#ECFDF5" stroke="${S}" stroke-width="4"/>
-        <!-- Banda superior verde menta -->
-        <rect x="-28" y="-20" width="56" height="12" rx="3" fill="#10B981"/>
-        <text x="0" y="-12" text-anchor="middle" fill="#FFFFFF" font-size="5" font-weight="900" font-family="'Arial Black'">PLACEBO ABIERTO</text>
-        <!-- Texto honesto de etiqueta -->
-        <rect x="-26" y="-5" width="52" height="22" rx="3" fill="#FFFFFF" stroke="${S}" stroke-width="2.5"/>
-        <text x="0" y="2" text-anchor="middle" fill="#0F172A" font-size="5.5" font-weight="900" font-family="'Arial Black'">ESTO ES SOLO</text>
-        <text x="0" y="8" text-anchor="middle" fill="#059669" font-size="6" font-weight="900" font-family="'Arial Black'">AZÚCAR</text>
-        <text x="0" y="14" text-anchor="middle" fill="#64748B" font-size="4" font-weight="800" font-family="'Arial Black'">0% MEDICAMENTO</text>
+    svg: `<rect x="-28" y="-20" width="56" height="40" rx="6" fill="#ECFDF5" stroke="${S}" stroke-width="4"/>`,
+    animatedSvg: (f: number, stepProgress?: number, currentState?: string) => {
+      const isGlow = currentState === "efecto_activo" || (currentState === undefined && f >= 60);
+      const pulse = 1 + Math.sin(f * 0.16) * 0.04;
+      return `<g transform="scale(${(pulse * 1.55).toFixed(3)})">
+        <!-- Caja clínica abierta transparente -->
+        <rect x="-30" y="-22" width="60" height="44" rx="7" fill="#ECFDF5" stroke="${S}" stroke-width="4.5"/>
+        <rect x="-26" y="-18" width="52" height="10" rx="3" fill="#10B981" stroke="${S}" stroke-width="2.5"/>
+        <!-- Blíster mostrando cápsulas mitad rojas y mitad terrón de azúcar visible -->
+        <g transform="translate(-12, 4)">
+          <rect x="-8" y="-8" width="16" height="16" rx="3" fill="#FFFFFF" stroke="${S}" stroke-width="3"/>
+          <circle cx="-3" cy="-2" r="1.5" fill="#94A3B8"/>
+          <circle cx="3" cy="3" r="1.5" fill="#94A3B8"/>
+        </g>
+        <g transform="translate(12, 4)">
+          <rect x="-8" y="-8" width="16" height="16" rx="3" fill="#FFFFFF" stroke="${S}" stroke-width="3"/>
+          <path d="M -5,1 L -1,5 L 6,-4" fill="none" stroke="#10B981" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"/>
+        </g>
+        ${isGlow ? `<circle cx="0" cy="0" r="34" fill="none" stroke="#FACC15" stroke-width="3.5" stroke-dasharray="6,5"/>` : ""}
       </g>`;
     },
     tags: ["caja", "placebo_abierto", "honesto", "azucar", "etiqueta_abierta", "experimento", "harvard"],
@@ -7777,22 +7783,13 @@ export const PROPS_LIBRARY: Record<string, PropDef> = {
     defaultPlacement: "right",
     svg: `<path d="M -16,14 L 0,-8 L 16,14 Z" fill="#991B1B" stroke="${S}" stroke-width="3"/><rect x="-10" y="-4" width="20" height="18" rx="3" fill="#F59E0B" stroke="${S}" stroke-width="3"/>`,
     animatedSvg: (f: number) => {
-      const snap = Math.sin(f * 0.2) > 0.85 ? 1 : 0;
       return `<g>
-        <!-- Receptor de dolor celular (en forma de Y) -->
         <path d="M -18,-18 L -6,-2 L -6,22 M 18,-18 L 6,-2 L 6,22" fill="none" stroke="#991B1B" stroke-width="6" stroke-linecap="round"/>
-        <text x="0" y="30" text-anchor="middle" fill="#EF4444" font-size="5" font-weight="900" font-family="'Arial Black'">RECEPTOR</text>
-        <!-- Candado dorado que cierra la cavidad del dolor -->
         <g transform="translate(0, -6)">
-          <!-- Grillete de acero dorado cerrado -->
           <path d="M -7,0 L -7,-10 A 7,7 0 0,1 7,-10 L 7,0" fill="none" stroke="#FDE047" stroke-width="4.5" stroke-linecap="round"/>
-          <!-- Cuerpo del candado dorado macizo -->
           <rect x="-12" y="0" width="24" height="20" rx="4" fill="#F59E0B" stroke="${S}" stroke-width="3.5"/>
           <circle cx="0" cy="8" r="3" fill="#78350F"/>
           <polygon points="0,8 -1.5,14 1.5,14" fill="#78350F"/>
-          <!-- Destellos de bloqueo exitoso -->
-          <polygon points="-16,2 -13,0 -14,4 -10,2 -13,6 -16,2" fill="#FFE600"/>
-          <polygon points="16,2 13,0 14,4 10,2 13,6 16,2" fill="#FFE600"/>
         </g>
       </g>`;
     },
@@ -7800,32 +7797,32 @@ export const PROPS_LIBRARY: Record<string, PropDef> = {
   },
   esferas_endorfinas_flotantes: {
     id: "esferas_endorfinas_flotantes",
-    name: "Esferas de Endorfinas y Opioides Naturales",
+    name: "Moléculas Doradas de Endorfinas y Opioides Naturales",
     family: "educacion_ciencia",
     defaultPlacement: "overhead",
     svg: `<circle cx="-12" cy="0" r="10" fill="#FACC15" stroke="${S}" stroke-width="3"/><circle cx="12" cy="-4" r="12" fill="#FACC15" stroke="${S}" stroke-width="3"/>`,
-    animatedSvg: (f: number) => {
-      const o1 = Math.sin(f * 0.18) * 3;
-      const o2 = Math.cos(f * 0.16) * 3;
-      return `<g>
-        <!-- Esfera 1 (Principal) -->
+    animatedSvg: (f: number, stepProgress?: number, currentState?: string) => {
+      const o1 = Math.sin(f * 0.18) * 3.5;
+      const o2 = Math.cos(f * 0.16) * 3.5;
+      return `<g transform="scale(1.65)">
+        <!-- Enlaces químicos brillantes entre las esferas de endorfinas -->
+        <line x1="${(0 + o1).toFixed(1)}" y1="${(-4 + o2).toFixed(1)}" x2="${(-20 - o2).toFixed(1)}" y2="${(12 + o1).toFixed(1)}" stroke="#FEF08A" stroke-width="4"/>
+        <line x1="${(0 + o1).toFixed(1)}" y1="${(-4 + o2).toFixed(1)}" x2="${(22 + o2).toFixed(1)}" y2="${(-16 - o1).toFixed(1)}" stroke="#FEF08A" stroke-width="4"/>
+        <!-- Esfera 1 (Principal dorada con escudo médico) -->
         <g transform="translate(${(0 + o1).toFixed(1)}, ${(-4 + o2).toFixed(1)})">
           <circle cx="0" cy="0" r="16" fill="#FACC15" stroke="${S}" stroke-width="4"/>
-          <!-- Brillo dorado interno -->
           <circle cx="-5" cy="-5" r="5" fill="#FEF08A"/>
-          <text x="0" y="3" text-anchor="middle" fill="#78350F" font-size="5" font-weight="900" font-family="'Arial Black'">ENDORFINA</text>
+          <path d="M -5,0 H 5 M 0,-5 V 5" stroke="#78350F" stroke-width="3.5" stroke-linecap="round"/>
         </g>
         <!-- Esfera 2 (Izquierda inferior) -->
         <g transform="translate(${(-20 - o2).toFixed(1)}, ${(12 + o1).toFixed(1)})">
           <circle cx="0" cy="0" r="11" fill="#F59E0B" stroke="${S}" stroke-width="3.5"/>
           <circle cx="-3" cy="-3" r="3.5" fill="#FEF08A"/>
-          <text x="0" y="2.5" text-anchor="middle" fill="#FFFFFF" font-size="3.5" font-weight="900">OPIOIDE</text>
         </g>
         <!-- Esfera 3 (Derecha superior) -->
         <g transform="translate(${(22 + o2).toFixed(1)}, ${(-16 - o1).toFixed(1)})">
-          <circle cx="0" cy="0" r="10" fill="#FBBF24" stroke="${S}" stroke-width="3"/>
-          <circle cx="-3" cy="-3" r="3" fill="#FEF08A"/>
-          <text x="0" y="2" text-anchor="middle" fill="#78350F" font-size="3" font-weight="900">DOPA</text>
+          <circle cx="0" cy="0" r="10" fill="#38BDF8" stroke="${S}" stroke-width="3.5"/>
+          <circle cx="-3" cy="-3" r="3" fill="#E0F2FE"/>
         </g>
       </g>`;
     },
@@ -7833,32 +7830,29 @@ export const PROPS_LIBRARY: Record<string, PropDef> = {
   },
   manivela_valvula_farmacia_interna: {
     id: "manivela_valvula_farmacia_interna",
-    name: "Válvula de Presión Farmacia Interna",
+    name: "Válvula Dorada de Liberación de Endorfinas",
     family: "herramientas_objetos",
     defaultPlacement: "right",
     svg: `<circle cx="0" cy="0" r="18" fill="none" stroke="#F59E0B" stroke-width="6"/><circle cx="0" cy="0" r="5" fill="#1E293B"/>`,
-    animatedSvg: (f: number) => {
-      const rot = (f * 4) % 360;
-      return `<g>
+    animatedSvg: (f: number, stepProgress?: number, currentState?: string) => {
+      const isOpen = currentState === "abierta_liberando" || (currentState === undefined && f >= 60);
+      const rot = (f * (isOpen ? 5.5 : 2.5)) % 360;
+      return `<g transform="scale(1.55)">
         <!-- Tubería dorada industrial detrás -->
-        <rect x="-30" y="-6" width="60" height="12" rx="2" fill="#B45309" stroke="${S}" stroke-width="3.5"/>
-        <line x1="-30" y1="0" x2="30" y2="0" stroke="#FDE68A" stroke-width="2"/>
+        <rect x="-30" y="-6" width="60" height="12" rx="3" fill="#B45309" stroke="${S}" stroke-width="3.5"/>
         <!-- Rueda / Manivela giratoria -->
         <g transform="rotate(${rot.toFixed(1)} 0 0)">
-          <!-- Aro exterior de latón -->
-          <circle cx="0" cy="0" r="22" fill="none" stroke="#F59E0B" stroke-width="5.5"/>
-          <circle cx="0" cy="0" r="22" fill="none" stroke="${S}" stroke-width="1.5"/>
-          <!-- Rayos de la rueda -->
-          <line x1="-22" y1="0" x2="22" y2="0" stroke="#F59E0B" stroke-width="4.5"/>
-          <line x1="0" y1="-22" x2="0" y2="22" stroke="#F59E0B" stroke-width="4.5"/>
+          <circle cx="0" cy="0" r="22" fill="none" stroke="#F59E0B" stroke-width="6"/>
+          <circle cx="0" cy="0" r="22" fill="none" stroke="${S}" stroke-width="2"/>
+          <line x1="-22" y1="0" x2="22" y2="0" stroke="#F59E0B" stroke-width="5"/>
+          <line x1="0" y1="-22" x2="0" y2="22" stroke="#F59E0B" stroke-width="5"/>
           <circle cx="0" cy="0" r="7" fill="#78350F" stroke="${S}" stroke-width="3"/>
           <circle cx="0" cy="0" r="3" fill="#FDE68A"/>
         </g>
-        <!-- Medidor superior de presión analgésica -->
+        <!-- Manómetro superior de presión analgésica -->
         <g transform="translate(0, -28)">
-          <circle cx="0" cy="0" r="10" fill="#FFFFFF" stroke="${S}" stroke-width="3"/>
-          <line x1="0" y1="0" x2="6" y2="-4" stroke="#DC2626" stroke-width="2.5" stroke-linecap="round"/>
-          <text x="0" y="14" text-anchor="middle" fill="#F59E0B" font-size="4" font-weight="900" font-family="'Arial Black'">VÁLVULA PAG</text>
+          <circle cx="0" cy="0" r="11" fill="#FFFFFF" stroke="${S}" stroke-width="3.5"/>
+          <line x1="0" y1="0" x2="${isOpen ? 7 : -6}" y2="-5" stroke="${isOpen ? "#22C55E" : "#EF4444"}" stroke-width="3" stroke-linecap="round"/>
         </g>
       </g>`;
     },
@@ -7866,43 +7860,40 @@ export const PROPS_LIBRARY: Record<string, PropDef> = {
   },
   rayo_dolor_cabeza: {
     id: "rayo_dolor_cabeza",
-    name: "Rayo de Dolor de Cabeza Punzante",
+    name: "Rayo de Dolor que se Transforma en Alivio",
     family: "reacciones_humor",
     defaultPlacement: "overhead",
     svg: `<polygon points="-12,-20 6,-6 -2,-4 14,16 -4,2 2,0" fill="#EF4444" stroke="${S}" stroke-width="3"/>`,
-    animatedSvg: (f: number) => {
-      const flash = Math.sin(f * 0.3) > 0;
-      const throb = 1 + Math.sin(f * 0.25) * 0.15;
-      return `<g transform="scale(${throb.toFixed(2)})">
-        <!-- Anillo de choque de dolor pulsante -->
-        <circle cx="0" cy="0" r="${(18 + Math.sin(f * 0.25) * 5).toFixed(1)}" fill="none" stroke="#DC2626" stroke-width="2.5" stroke-dasharray="3 3"/>
-        <!-- Rayo principal zigzagueante -->
-        <polygon points="-8,-24 8,-6 -2,-4 16,18 -4,2 4,0" fill="${flash ? '#EF4444' : '#FFE600'}" stroke="${S}" stroke-width="4" stroke-linejoin="miter"/>
-        <!-- Pequeños rayos laterales -->
-        <polygon points="-16,-12 -10,-8 -12,-4" fill="#EF4444"/>
-        <polygon points="16,-12 10,-8 12,-4" fill="#EF4444"/>
+    animatedSvg: (f: number, stepProgress?: number, currentState?: string) => {
+      const isRelief = currentState === "alivio_azul" || (currentState === undefined && f >= 90);
+      const flash = Math.sin(f * 0.28) > 0;
+      const throb = 1 + Math.sin(f * 0.22) * 0.12;
+      return `<g transform="scale(${(throb * 1.55).toFixed(2)})">
+        <circle cx="0" cy="0" r="${(18 + Math.sin(f * 0.22) * 4).toFixed(1)}" fill="none" stroke="${isRelief ? "#22C55E" : "#DC2626"}" stroke-width="3" stroke-dasharray="4 3"/>
+        <polygon points="-8,-24 8,-6 -2,-4 16,18 -4,2 4,0" fill="${isRelief ? "#38BDF8" : (flash ? "#EF4444" : "#FFE600")}" stroke="${S}" stroke-width="4" stroke-linejoin="round"/>
       </g>`;
     },
     tags: ["dolor", "cabeza", "jaqueca", "migraña", "rayo", "pulsante", "sintoma"],
   },
   monitor_presion_arterial_hud: {
     id: "monitor_presion_arterial_hud",
-    name: "Monitor de Presión Arterial y Pulso Estable",
+    name: "Monitor Clínico de Ritmo Cardíaco y Presión Estable",
     family: "tecnologia",
     defaultPlacement: "left",
     svg: `<rect x="-28" y="-18" width="56" height="36" rx="5" fill="#0F172A" stroke="${S}" stroke-width="4"/><polyline points="-22,0 -10,0 -6,-10 0,10 6,-4 10,0 22,0" fill="none" stroke="#22C55E" stroke-width="3"/>`,
-    animatedSvg: (f: number) => {
-      return `<g>
+    animatedSvg: (f: number, stepProgress?: number, currentState?: string) => {
+      const pulse = 1 + Math.sin(f * 0.22) * 0.08;
+      return `<g transform="scale(1.6)">
         <!-- Pantalla médica oscura -->
-        <rect x="-30" y="-20" width="60" height="40" rx="5" fill="#090D16" stroke="${S}" stroke-width="4.5"/>
+        <rect x="-30" y="-20" width="60" height="40" rx="6" fill="#090D16" stroke="${S}" stroke-width="4.5"/>
         <!-- Trazado ECG verde brillante -->
-        <polyline points="-26,2 -14,2 -10,-8 -4,12 2,-6 8,2 26,2" fill="none" stroke="#22C55E" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
-        <!-- Lectura de presión arterial: 120/80 NORMAL -->
-        <rect x="-24" y="-15" width="22" height="8" rx="2" fill="#15803D"/>
-        <text x="-13" y="-9.5" text-anchor="middle" fill="#FFFFFF" font-size="5" font-weight="900" font-family="'Arial Black'">120/80</text>
-        <text x="12" y="-10" text-anchor="middle" fill="#22C55E" font-size="4.5" font-weight="900" font-family="'Arial Black'">NORMAL</text>
-        <!-- Pulso cardíaco -->
-        <text x="0" y="14" text-anchor="middle" fill="#38BDF8" font-size="5" font-weight="900" font-family="'Arial Black'">♥ 68 BPM (RELAJADO)</text>
+        <polyline points="-24,4 -12,4 -8,-8 -2,12 4,-6 10,4 24,4" fill="none" stroke="#22C55E" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"/>
+        <!-- Corazón verde pulsante en esquina -->
+        <g transform="translate(-18, -10) scale(${pulse.toFixed(2)})">
+          <circle cx="0" cy="0" r="5" fill="#22C55E"/>
+        </g>
+        <!-- Barra de presión arterial estable -->
+        <rect x="-6" y="-13" width="28" height="6" rx="3" fill="#38BDF8"/>
       </g>`;
     },
     tags: ["monitor", "presion_arterial", "ecg", "cardiaco", "estable", "clinica", "salud"],
@@ -8437,38 +8428,35 @@ export const PROPS_LIBRARY: Record<string, PropDef> = {
     family: "educacion_ciencia",
     defaultPlacement: "overhead",
     svg: `<rect x="-3" y="-20" width="6" height="40" fill="#1E293B" stroke="${S}" stroke-width="2"/><line x1="-30" y1="-15" x2="30" y2="-5" stroke="${S}" stroke-width="3"/>`,
-    animatedSvg: (f: number) => {
-      // La balanza oscila con ventaja para el olfato humano (inclinada hacia la derecha)
-      const balanceTilt = 10 + Math.sin(f * 0.18) * 3;
-      return `<g>
-        <!-- Soporte central triangular de la balanza -->
-        <polygon points="0,-16 -12,24 12,24" fill="#334155" stroke="${S}" stroke-width="3"/>
-        <circle cx="0" cy="-16" r="4" fill="#F59E0B" stroke="${S}" stroke-width="2"/>
+    animatedSvg: (f: number, _stepProgress?: number, currentState?: string) => {
+      const isHumanWin = currentState === "gana_nariz" || (currentState === undefined && f >= 60);
+      const balanceTilt = (isHumanWin ? 14 : 6) + Math.sin(f * 0.18) * 3;
+      return `<g transform="scale(1.65)">
+        <!-- Pedestal central de la balanza -->
+        <polygon points="0,-14 -14,26 14,26" fill="#334155" stroke="${S}" stroke-width="4" stroke-linejoin="round"/>
+        <circle cx="0" cy="-14" r="5" fill="#F59E0B" stroke="${S}" stroke-width="3"/>
 
-        <!-- Barra oscilante -->
+        <!-- Barra oscilante inclinada hacia la nariz humana ganadora -->
         <g transform="rotate(${balanceTilt.toFixed(1)})">
-          <line x1="-36" y1="-16" x2="36" y2="-16" stroke="${S}" stroke-width="4" stroke-linecap="round"/>
-          
-          <!-- Platillo Izquierdo: Tiburón con gota de sangre (más ligero / pierde) -->
-          <g transform="translate(-36, -16)">
-            <line x1="0" y1="0" x2="-8" y2="18" stroke="${S}" stroke-width="1.8"/>
-            <line x1="0" y1="0" x2="8" y2="18" stroke="${S}" stroke-width="1.8"/>
-            <path d="M -14,18 L 14,18 L 10,24 L -10,24 Z" fill="#64748B" stroke="${S}" stroke-width="2"/>
-            {/* Silueta de tiburón con gota de sangre roja */}
-            <path d="M -8,14 C -12,8 0,4 6,10 C 10,12 8,16 -8,14 Z" fill="#94A3B8" stroke="${S}" stroke-width="1.5"/>
-            <circle cx="-2" cy="6" r="3" fill="#DC2626"/>
-            <text x="0" y="32" text-anchor="middle" fill="#94A3B8" font-size="4" font-weight="900" font-family="'Arial Black'">TIBURÓN: 1 PPM</text>
+          <line x1="-36" y1="-14" x2="36" y2="-14" stroke="${S}" stroke-width="4.5" stroke-linecap="round"/>
+
+          <!-- Platillo Izquierdo: Tiburón con gota de sangre -->
+          <g transform="translate(-36, -14)">
+            <line x1="0" y1="0" x2="-9" y2="18" stroke="${S}" stroke-width="2.5"/>
+            <line x1="0" y1="0" x2="9" y2="18" stroke="${S}" stroke-width="2.5"/>
+            <path d="M -15,18 L 15,18 L 11,24 L -11,24 Z" fill="#64748B" stroke="${S}" stroke-width="3"/>
+            <path d="M -10,14 C -14,6 0,2 8,10 C 12,12 10,16 -10,14 Z" fill="#94A3B8" stroke="${S}" stroke-width="2.5"/>
+            <path d="M 0,2 C 3,6 3,10 0,12 C -3,10 -3,6 0,2 Z" fill="#EF4444" stroke="${S}" stroke-width="2"/>
           </g>
 
-          <!-- Platillo Derecho: Nariz humana oliendo petricor (más pesado / GANA) -->
-          <g transform="translate(36, -16)">
-            <line x1="0" y1="0" x2="-8" y2="24" stroke="${S}" stroke-width="1.8"/>
-            <line x1="0" y1="0" x2="8" y2="24" stroke="${S}" stroke-width="1.8"/>
-            <path d="M -14,24 L 14,24 L 10,30 L -10,30 Z" fill="#0284C7" stroke="${S}" stroke-width="2"/>
-            {/* Perfil de nariz y ondas de lluvia */}
-            <path d="M -4,12 C 0,16 6,18 4,22 C 2,24 -2,24 -4,22" fill="none" stroke="#F59E0B" stroke-width="2.5" stroke-linecap="round"/>
-            <circle cx="2" cy="14" r="2.5" fill="#38BDF8"/>
-            <text x="0" y="38" text-anchor="middle" fill="#0284C7" font-size="4.5" font-weight="900" font-family="'Arial Black'">HUMANO: 5 PPB (¡GANA!)</text>
+          <!-- Platillo Derecho: Nariz humana + gota de lluvia + corona dorada -->
+          <g transform="translate(36, -14)">
+            <line x1="0" y1="0" x2="-9" y2="22" stroke="${S}" stroke-width="2.5"/>
+            <line x1="0" y1="0" x2="9" y2="22" stroke="${S}" stroke-width="2.5"/>
+            <path d="M -15,22 L 15,22 L 11,28 L -11,28 Z" fill="#0284C7" stroke="${S}" stroke-width="3"/>
+            <path d="M -5,6 C 2,12 8,14 5,19 C 3,21 -3,21 -5,19" fill="#FED7AA" stroke="${S}" stroke-width="3" stroke-linecap="round"/>
+            <path d="M 6,6 C 9,10 9,14 6,16 C 3,14 3,10 6,6 Z" fill="#38BDF8" stroke="${S}" stroke-width="2"/>
+            ${isHumanWin ? `<circle cx="0" cy="-6" r="5" fill="#FACC15" stroke="${S}" stroke-width="2"/>` : ""}
           </g>
         </g>
       </g>`;
@@ -8477,214 +8465,186 @@ export const PROPS_LIBRARY: Record<string, PropDef> = {
   },
   piscina_olimpica_micro_gota: {
     id: "piscina_olimpica_micro_gota",
-    name: "Visualización 500 Piscinas Olímpicas vs 1 Gota",
+    name: "Cucharadita de Geosmina sobre Piscina Olímpica",
     family: "educacion_ciencia",
     defaultPlacement: "overhead",
     svg: `<rect x="-24" y="-14" width="48" height="28" rx="4" fill="#0284C7" stroke="${S}" stroke-width="3"/>`,
-    animatedSvg: (f: number) => {
+    animatedSvg: (f: number, _stepProgress?: number, currentState?: string) => {
+      const isDiluted = currentState === "onda_expansion" || (currentState === undefined && f >= 60);
       const dropBob = Math.sin(f * 0.22) * 3;
-      return `<g>
-        <!-- Representación isométrica de piscina olímpica -->
-        <rect x="-30" y="-16" width="60" height="34" rx="4" fill="#0284C7" stroke="${S}" stroke-width="3"/>
-        {/* Carriles de natación */}
-        <line x1="-26" y1="-8" x2="26" y2="-8" stroke="#38BDF8" stroke-width="1.5" stroke-dasharray="4 2"/>
-        <line x1="-26" y1="0" x2="26" y2="0" stroke="#38BDF8" stroke-width="1.5" stroke-dasharray="4 2"/>
-        <line x1="-26" y1="8" x2="26" y2="8" stroke="#38BDF8" stroke-width="1.5" stroke-dasharray="4 2"/>
-        
-        <!-- Sola micro-gota luminosa de geosmina cayendo en el centro -->
+      const rippleR = isDiluted ? 8 + ((f * 0.8) % 18) : 6;
+      return `<g transform="scale(1.65)">
+        <!-- Piscina olímpica vista en perspectiva -->
+        <rect x="-32" y="-12" width="64" height="34" rx="5" fill="#0284C7" stroke="${S}" stroke-width="4"/>
+        <line x1="-26" y1="-2" x2="26" y2="-2" stroke="#7DD3FC" stroke-width="2.5" stroke-dasharray="5 3"/>
+        <line x1="-26" y1="9" x2="26" y2="9" stroke="#7DD3FC" stroke-width="2.5" stroke-dasharray="5 3"/>
+        <!-- Onda dorada de geosmina expandiéndose en el agua -->
+        <ellipse cx="0" cy="4" rx="${rippleR.toFixed(1)}" ry="${(rippleR * 0.5).toFixed(1)}" fill="none" stroke="#FACC15" stroke-width="3"/>
+        <!-- Cucharita metálica arriba dejando caer una micro-gota dorada -->
         <g transform="translate(0, ${(-22 + dropBob).toFixed(1)})">
-          <path d="M 0,-8 C 4,-2 6,4 0,6 C -6,4 -4,-2 0,-8 Z" fill="#F59E0B" stroke="${S}" stroke-width="2"/>
-          <circle cx="-1" cy="2" r="1.2" fill="#FFFFFF"/>
+          <path d="M -22,-6 L -4,-6 C -2,-2 6,-2 8,-6 C 8,0 -2,2 -4,-2 L -22,-2 Z" fill="#E2E8F0" stroke="${S}" stroke-width="2.5"/>
+          <path d="M 3,-1 C 7,5 8,11 3,13 C -2,11 -1,5 3,-1 Z" fill="#FACC15" stroke="${S}" stroke-width="2.5"/>
         </g>
-
-        <!-- Cartel de proporción colosal -->
-        <rect x="-26" y="22" width="52" height="11" rx="3" fill="#0F172A" stroke="${S}" stroke-width="2"/>
-        <text x="0" y="29.5" text-anchor="middle" fill="#FEF08A" font-size="4.2" font-weight="900" font-family="'Arial Black'">1 GOTA EN 500 PISCINAS</text>
       </g>`;
     },
     tags: ["piscina", "gota", "geosmina", "concentracion", "partes_por_billon", "escala"],
   },
   bacteria_streptomyces_geosmina: {
     id: "bacteria_streptomyces_geosmina",
-    name: "Bacteria Streptomyces emitiendo Geosmina",
+    name: "Bacteria Streptomyces liberando Moléculas de Geosmina",
     family: "naturaleza_alimentos",
     defaultPlacement: "right",
     svg: `<circle cx="0" cy="0" r="18" fill="#15803D" stroke="${S}" stroke-width="3"/>`,
-    animatedSvg: (f: number) => {
-      const sporePulse = Math.sin(f * 0.25) * 2;
-      return `<g>
-        <!-- Placa de cultivo / suelo microbiológico -->
-        <ellipse cx="0" cy="6" rx="26" ry="16" fill="#292524" stroke="${S}" stroke-width="3.5"/>
-        
-        <!-- Red filamentosa de hifas de Streptomyces -->
-        <g stroke="#10B981" stroke-width="3" stroke-linecap="round" fill="none">
-          <path d="M -14,6 Q -8,-6 0,0 Q 8,6 14,-2"/>
-          <path d="M -4,0 Q -2,-12 6,-14 Q 10,-8 16,-8"/>
-          <path d="M -10,4 Q -16,-4 -18,-10"/>
+    animatedSvg: (f: number, _stepProgress?: number, currentState?: string) => {
+      const isSpore = currentState === "liberando_geosmina" || (currentState === undefined && f >= 60);
+      const sporePulse = Math.sin(f * 0.22) * 3;
+      return `<g transform="scale(1.65)">
+        <!-- Terrón de suelo húmedo -->
+        <ellipse cx="0" cy="10" rx="28" ry="15" fill="#451A03" stroke="${S}" stroke-width="4"/>
+        <!-- Red de filamentos verdes de Streptomyces -->
+        <g stroke="#10B981" stroke-width="4" stroke-linecap="round" fill="none">
+          <path d="M -16,8 Q -8,-6 0,2 Q 8,8 16,-2"/>
+          <path d="M -4,2 Q -2,-12 6,-14 Q 12,-8 18,-8"/>
+          <path d="M -10,6 Q -16,-4 -18,-12"/>
         </g>
-        
-        <!-- Esporas y microgotas de aroma emanando -->
+        <!-- Moléculas aromáticas de geosmina flotando hacia arriba -->
         <g transform="translate(0, ${(-10 + sporePulse).toFixed(1)})">
-          <circle cx="-8" cy="-8" r="3" fill="#38BDF8" stroke="${S}" stroke-width="1.5"/>
-          <circle cx="6" cy="-12" r="3.5" fill="#38BDF8" stroke="${S}" stroke-width="1.5"/>
-          <circle cx="0" cy="-18" r="4" fill="#FACC15" stroke="${S}" stroke-width="1.5"/>
+          <circle cx="-10" cy="-8" r="${isSpore ? 4.5 : 3}" fill="#38BDF8" stroke="${S}" stroke-width="2.5"/>
+          <circle cx="8" cy="-12" r="${isSpore ? 5 : 3.5}" fill="#38BDF8" stroke="${S}" stroke-width="2.5"/>
+          <circle cx="0" cy="-20" r="${isSpore ? 5.5 : 4}" fill="#FACC15" stroke="${S}" stroke-width="2.5"/>
         </g>
-        
-        <rect x="-24" y="-30" width="48" height="9" rx="2.5" fill="#047857" stroke="${S}" stroke-width="1.8"/>
-        <text x="0" y="-24" text-anchor="middle" fill="#FFFFFF" font-size="4.2" font-weight="900" font-family="'Arial Black'">STREPTOMYCES (SUELO)</text>
       </g>`;
     },
     tags: ["bacteria", "streptomyces", "geosmina", "esporas", "suelo", "olor", "microscopio"],
   },
   gota_lluvia_macro_aerosol: {
     id: "gota_lluvia_macro_aerosol",
-    name: "Impacto de Gota de Lluvia y Disparo de Aerosoles",
+    name: "Gota de Lluvia atrapando Burbujas y Disparando Aerosoles",
     family: "educacion_ciencia",
     defaultPlacement: "overhead",
     svg: `<path d="M 0,-14 C 10,-2 12,10 0,12 C -12,10 -10,-2 0,-14 Z" fill="#38BDF8" stroke="${S}" stroke-width="3"/>`,
-    animatedSvg: (f: number) => {
-      // Ciclo de impacto de gota y estallido de burbujas en aerosol
-      const phase = (f % 30) / 30;
-      const bubbleRise = phase * 24;
-      return `<g>
-        <!-- Suelo poroso café -->
-        <rect x="-30" y="8" width="60" height="16" rx="3" fill="#78350F" stroke="${S}" stroke-width="3"/>
-        <circle cx="-16" cy="16" r="2.5" fill="#451A03"/>
-        <circle cx="12" cy="14" r="3" fill="#451A03"/>
-        
-        <!-- Gota aplanándose en el impacto formando menisco -->
-        <ellipse cx="0" cy="8" rx="22" ry="7" fill="#38BDF8" stroke="${S}" stroke-width="3"/>
-        
-        <!-- Microburbujas de aire que se disparan como aerosol -->
-        <g transform="translate(0, -${bubbleRise.toFixed(1)})" opacity="${(1 - phase).toFixed(2)}">
-          <circle cx="-12" cy="0" r="3" fill="#FFFFFF" stroke="${S}" stroke-width="1.5"/>
-          <circle cx="-4" cy="-6" r="2.5" fill="#38BDF8" stroke="${S}" stroke-width="1.5"/>
-          <circle cx="8" cy="-2" r="3.5" fill="#FFFFFF" stroke="${S}" stroke-width="1.5"/>
-          <circle cx="16" cy="-8" r="2" fill="#FACC15" stroke="${S}" stroke-width="1.5"/>
+    animatedSvg: (f: number, _stepProgress?: number, currentState?: string) => {
+      const phase = (f % 36) / 36;
+      const bubbleRise = phase * 22;
+      return `<g transform="scale(1.65)">
+        <!-- Suelo poroso -->
+        <rect x="-30" y="8" width="60" height="16" rx="4" fill="#78350F" stroke="${S}" stroke-width="4"/>
+        <circle cx="-16" cy="16" r="3" fill="#451A03"/>
+        <circle cx="12" cy="15" r="3.5" fill="#451A03"/>
+        <!-- Menisco de la gota al impactar -->
+        <ellipse cx="0" cy="7" rx="23" ry="8" fill="#38BDF8" stroke="${S}" stroke-width="3.5"/>
+        <!-- Burbujas efervescentes subiendo como champán -->
+        <g transform="translate(0, -${bubbleRise.toFixed(1)})">
+          <circle cx="-12" cy="-2" r="4" fill="#FFFFFF" stroke="${S}" stroke-width="2.5"/>
+          <circle cx="-3" cy="-9" r="3.5" fill="#38BDF8" stroke="${S}" stroke-width="2"/>
+          <circle cx="9" cy="-4" r="4.5" fill="#FACC15" stroke="${S}" stroke-width="2.5"/>
+          <circle cx="16" cy="-11" r="3" fill="#FFFFFF" stroke="${S}" stroke-width="2"/>
         </g>
-
-        <!-- Etiqueta MIT 2015 -->
-        <rect x="-26" y="-26" width="52" height="10" rx="3" fill="#0F172A" stroke="${S}" stroke-width="2"/>
-        <text x="0" y="-19.5" text-anchor="middle" fill="#38BDF8" font-size="4.2" font-weight="900" font-family="'Arial Black'">AEROSOL MIT (CHAMPÁN)</text>
       </g>`;
     },
     tags: ["aerosol", "mit", "gota", "burbujas", "impacto", "champan", "fisica"],
   },
   mapa_sabana_oasis_ancestro: {
     id: "mapa_sabana_oasis_ancestro",
-    name: "Mapa Primitivo de Huellas hacia el Agua",
+    name: "Brújula Ancestral hacia la Tormenta y el Oasis",
     family: "historia_exploracion",
     defaultPlacement: "right",
     svg: `<rect x="-18" y="-14" width="36" height="28" rx="3" fill="#D97706" stroke="${S}" stroke-width="3"/>`,
-    animatedSvg: (f: number) => {
+    animatedSvg: (f: number, _stepProgress?: number, currentState?: string) => {
       const pulseOasis = Math.sin(f * 0.2) * 2;
-      return `<g>
-        <!-- Cuero / pergamino de mapa antiguo -->
-        <rect x="-26" y="-18" width="52" height="36" rx="4" fill="#D97706" stroke="${S}" stroke-width="3.5"/>
-        
-        <!-- Línea punteada de migración hacia tormenta -->
-        <path d="M -18,10 Q -4,4 6,-4" fill="none" stroke="#78350F" stroke-width="2.5" stroke-dasharray="3 2"/>
-        
-        <!-- Nube con lluvia al extremo del mapa -->
-        <g transform="translate(14, -6)">
-          <ellipse cx="0" cy="0" rx="8" ry="5" fill="#0284C7" stroke="${S}" stroke-width="1.5"/>
-          <line x1="-3" y1="5" x2="-4" y2="9" stroke="#38BDF8" stroke-width="1.5"/>
-          <line x1="2" y1="5" x2="1" y2="9" stroke="#38BDF8" stroke-width="1.5"/>
+      return `<g transform="scale(1.65)">
+        <rect x="-28" y="-18" width="56" height="38" rx="5" fill="#FDE68A" stroke="${S}" stroke-width="4"/>
+        <!-- Ruta punteada desde tierra seca hasta nube de lluvia y oasis -->
+        <path d="M -18,10 Q -4,4 8,-4" fill="none" stroke="#B45309" stroke-width="3.5" stroke-dasharray="4 3" stroke-linecap="round"/>
+        <g transform="translate(14, -5)">
+          <ellipse cx="0" cy="0" rx="10" ry="6" fill="#0284C7" stroke="${S}" stroke-width="2.5"/>
+          <line x1="-4" y1="6" x2="-5" y2="11" stroke="#38BDF8" stroke-width="2.5" stroke-linecap="round"/>
+          <line x1="3" y1="6" x2="2" y2="11" stroke="#38BDF8" stroke-width="2.5" stroke-linecap="round"/>
         </g>
-        
-        <!-- Brújula / sol primitivo -->
-        <circle cx="-16" cy="-8" r="${(4 + pulseOasis).toFixed(1)}" fill="#FEF08A" stroke="${S}" stroke-width="1.8"/>
-
-        <rect x="-24" y="22" width="48" height="9" rx="2.5" fill="#451A03" stroke="${S}" stroke-width="1.8"/>
-        <text x="0" y="28" text-anchor="middle" fill="#FEF08A" font-size="4" font-weight="900" font-family="'Arial Black'">SUPERVIVENCIA EN SABANA</text>
+        <circle cx="-16" cy="-7" r="${(5 + pulseOasis * 0.5).toFixed(1)}" fill="#F59E0B" stroke="${S}" stroke-width="2.5"/>
       </g>`;
     },
     tags: ["mapa", "ancestro", "sabana", "oasis", "agua", "supervivencia", "evolucion"],
   },
   paraguas_arcoiris_fresco: {
     id: "paraguas_arcoiris_fresco",
-    name: "Paraguas Amarillo con Gotas Frescas y Arcoíris",
+    name: "Paraguas Amarillo con Gotas Frescas y Espiral ADN",
     family: "vida_cotidiana",
     defaultPlacement: "overhead",
     svg: `<path d="M -22,0 C -22,-14 22,-14 22,0 Z" fill="#FDE047" stroke="${S}" stroke-width="3.5"/><line x1="0" y1="0" x2="0" y2="24" stroke="${S}" stroke-width="3"/>`,
-    animatedSvg: (f: number) => {
+    animatedSvg: (f: number, _stepProgress?: number, currentState?: string) => {
       const umbrellaTilt = Math.sin(f * 0.16) * 4;
-      return `<g transform="rotate(${umbrellaTilt.toFixed(1)})">
-        <!-- Arcoíris detrás -->
-        <path d="M -26,-2 A 28 28 0 0 1 26,-2" fill="none" stroke="#EF4444" stroke-width="2"/>
-        <path d="M -24,-2 A 26 26 0 0 1 24,-2" fill="none" stroke="#F59E0B" stroke-width="2"/>
-        <path d="M -22,-2 A 24 24 0 0 1 22,-2" fill="none" stroke="#22C55E" stroke-width="2"/>
-        <path d="M -20,-2 A 22 22 0 0 1 20,-2" fill="none" stroke="#38BDF8" stroke-width="2"/>
-
-        <!-- Cúpula del paraguas amarillo brillante -->
-        <path d="M -24,2 C -24,-16 24,-16 24,2 C 16,-1 8,2 0,-1 C -8,2 -16,-1 -24,2 Z" fill="#FDE047" stroke="${S}" stroke-width="3.5"/>
-        <polygon points="-1,-16 1,-16 0,-20" fill="#000000"/>
-        
-        <!-- Mango curvo de madera -->
-        <line x1="0" y1="-2" x2="0" y2="20" stroke="${S}" stroke-width="3.5"/>
-        <path d="M 0,20 C 0,26 -8,26 -8,20" fill="none" stroke="${S}" stroke-width="3.5" stroke-linecap="round"/>
-
-        <!-- Gotas brillantes rebotando -->
-        <circle cx="-16" cy="-8" r="2" fill="#38BDF8"/>
-        <circle cx="14" cy="-10" r="2.5" fill="#38BDF8"/>
+      return `<g transform="rotate(${umbrellaTilt.toFixed(1)}) scale(1.65)">
+        <path d="M -26,-2 A 28 28 0 0 1 26,-2" fill="none" stroke="#EF4444" stroke-width="3"/>
+        <path d="M -23,-2 A 25 25 0 0 1 23,-2" fill="none" stroke="#F59E0B" stroke-width="3"/>
+        <path d="M -20,-2 A 22 22 0 0 1 20,-2" fill="none" stroke="#22C55E" stroke-width="3"/>
+        <path d="M -24,2 C -24,-16 24,-16 24,2 C 16,-1 8,2 0,-1 C -8,2 -16,-1 -24,2 Z" fill="#FDE047" stroke="${S}" stroke-width="4"/>
+        <line x1="0" y1="-2" x2="0" y2="20" stroke="${S}" stroke-width="4"/>
+        <path d="M 0,20 C 0,26 -8,26 -8,20" fill="none" stroke="${S}" stroke-width="4" stroke-linecap="round"/>
+        <circle cx="-16" cy="-10" r="3" fill="#38BDF8" stroke="${S}" stroke-width="1.5"/>
+        <circle cx="15" cy="-12" r="3.5" fill="#38BDF8" stroke="${S}" stroke-width="1.5"/>
       </g>`;
     },
     tags: ["paraguas", "lluvia", "arcoiris", "frescura", "petricor", "vida", "alegria"],
   },
   roca_petricor_aceite_dorado: {
     id: "roca_petricor_aceite_dorado",
-    name: "Roca con Aceites Vegetales y Esencia de Icor Griego",
+    name: "Roca Mineral con Aceites Vegetales e Ícor Dorado",
     family: "educacion_ciencia",
     defaultPlacement: "right",
     svg: `<polygon points="-24,14 -18,-12 8,-18 24,-6 20,16" fill="#64748B" stroke="${S}" stroke-width="4.5"/>`,
-    animatedSvg: (f: number) => {
-      const glow = (0.7 + Math.sin(f * 0.15) * 0.3).toFixed(2);
-      const dropY = (Math.sin(f * 0.12) * 4).toFixed(1);
-      return `<g transform="scale(1.8)">
+    animatedSvg: (f: number, _stepProgress?: number, currentState?: string) => {
+      const glow = (0.75 + Math.sin(f * 0.16) * 0.25).toFixed(2);
+      const dropY = Math.sin(f * 0.14) * 3.5;
+      return `<g transform="scale(1.75)">
         <!-- Roca porosa gris neo-brutalista -->
         <polygon points="-24,14 -18,-12 8,-18 24,-6 20,16" fill="#64748B" stroke="${S}" stroke-width="4.5" stroke-linejoin="round"/>
         <!-- Grietas minerales con aceite vegetal dorado -->
-        <path d="M -14,-8 L -4,2 L -8,12" fill="none" stroke="#F59E0B" stroke-width="3" stroke-linecap="round"/>
-        <path d="M 4,-12 L 6,0 L 14,8" fill="none" stroke="#FBBF24" stroke-width="3.5" stroke-linecap="round"/>
-        <!-- Gotas de Icor (sangre dorada de los dioses) -->
-        <circle cx="6" cy="${dropY}" r="4.5" fill="#FDE047" stroke="${S}" stroke-width="2.5" opacity="${glow}"/>
-        <circle cx="-4" cy="${Number(dropY) + 4}" r="3" fill="#FDE047" stroke="${S}" stroke-width="2" opacity="${glow}"/>
-        <!-- Etiqueta griega 'PETRICOR' -->
-        <rect x="-20" y="18" width="40" height="12" rx="3" fill="#FFE600" stroke="${S}" stroke-width="3"/>
-        <text x="0" y="27" font-family="'Impact', 'Arial Black', sans-serif" font-size="7.5" font-weight="900" fill="#000" text-anchor="middle">PETRICOR</text>
+        <path d="M -14,-8 L -4,2 L -8,12" fill="none" stroke="#F59E0B" stroke-width="3.5" stroke-linecap="round"/>
+        <path d="M 4,-12 L 6,0 L 14,8" fill="none" stroke="#FBBF24" stroke-width="4" stroke-linecap="round"/>
+        <!-- Gotas de Ícor (fluido dorado divino) -->
+        <circle cx="6" cy="${dropY.toFixed(1)}" r="5" fill="#FDE047" stroke="${S}" stroke-width="2.5" opacity="${glow}"/>
+        <circle cx="-5" cy="${(dropY + 4).toFixed(1)}" r="3.5" fill="#FDE047" stroke="${S}" stroke-width="2" opacity="${glow}"/>
       </g>`;
     },
     tags: ["roca", "petricor", "aceite", "oro", "quimica", "mitologia", "icor"],
   },
   mesa_experimento_mano_goma: {
     id: "mesa_experimento_mano_goma",
-    name: "Mesa con Pantalla Divisoria y Mano de Goma",
+    name: "Mano de Goma Anatómica con Aura Neural",
     family: "educacion_ciencia",
     defaultPlacement: "overhead",
-    svg: `<rect x="-35" y="10" width="70" height="12" fill="#E2E8F0" stroke="${S}" stroke-width="4"/>`,
-    animatedSvg: (f: number) => {
-      const pulse = (0.8 + Math.sin(f * 0.14) * 0.2).toFixed(2);
-      return `<g transform="scale(1.7)">
-        <!-- Tablero de la mesa -->
-        <rect x="-40" y="8" width="80" height="14" rx="3" fill="#E2E8F0" stroke="${S}" stroke-width="4"/>
-        <!-- Pantalla opaca divisoria central -->
-        <rect x="-4" y="-35" width="8" height="43" rx="2" fill="#3B82F6" stroke="${S}" stroke-width="3.5"/>
-        <line x1="0" y1="-30" x2="0" y2="5" stroke="#1D4ED8" stroke-width="2"/>
-        <!-- Mano de goma visible (a la derecha) -->
-        <g transform="translate(18, -4)">
-          <rect x="-8" y="0" width="16" height="10" rx="3" fill="#F87171" stroke="${S}" stroke-width="3"/>
-          <line x1="-5" y1="2" x2="-5" y2="10" stroke="${S}" stroke-width="2"/>
-          <line x1="-1" y1="2" x2="-1" y2="10" stroke="${S}" stroke-width="2"/>
-          <line x1="3" y1="2" x2="3" y2="10" stroke="${S}" stroke-width="2"/>
-          <circle cx="0" cy="-6" r="4" fill="#FFE600" stroke="${S}" stroke-width="2" opacity="${pulse}"/>
-        </g>
-        <!-- Mano real oculta (a la izquierda, traslúcida/fantasma) -->
-        <g transform="translate(-18, -4)" opacity="0.45">
-          <rect x="-8" y="0" width="16" height="10" rx="3" fill="#FCA5A5" stroke="${S}" stroke-width="2" stroke-dasharray="2,2"/>
-        </g>
-        <!-- Rótulo 'GOMA VS REAL' -->
-        <rect x="-24" y="24" width="48" height="11" rx="3" fill="#FFE600" stroke="${S}" stroke-width="3"/>
-        <text x="0" y="32" font-family="'Impact', 'Arial Black', sans-serif" font-size="7" font-weight="900" fill="#000" text-anchor="middle">MANO DE GOMA</text>
+    svg: `<rect x="-25" y="-15" width="50" height="30" rx="6" fill="#F87171" stroke="${S}" stroke-width="4"/>`,
+    animatedSvg: (f: number, _stepProgress?: number, currentState?: string) => {
+      const isAdopting = currentState === "adoptada" || f > 120;
+      const pulse = (0.65 + Math.sin(f * 0.16) * 0.35).toFixed(2);
+      const fingerTwitch = isAdopting ? Math.sin(f * 0.22) * 3.5 : 0;
+      return `<g transform="scale(1.85)">
+        <!-- Aura de adopción somatosensorial cian cuando el cerebro la integra -->
+        ${isAdopting ? `<ellipse cx="0" cy="-4" rx="${34 + Math.sin(f * 0.18) * 4}" ry="${26 + Math.cos(f * 0.18) * 3}" fill="#38BDF8" opacity="0.28" stroke="#38BDF8" stroke-width="2.5" stroke-dasharray="5,4"/>` : ""}
+        <!-- Sombra sobre la mesa clínica -->
+        <ellipse cx="2" cy="18" rx="30" ry="7" fill="#0F172A" opacity="0.35"/>
+        <!-- Muñeca de látex con borde de corte de molde -->
+        <path d="M -28,6 L -12,4 L -12,16 L -28,18 Z" fill="#FB7185" stroke="${S}" stroke-width="4" stroke-linejoin="round"/>
+        <ellipse cx="-28" cy="12" rx="4" ry="7" fill="#BE123C" stroke="${S}" stroke-width="3.5"/>
+        <!-- Dorso y palma de la mano de goma sobre la mesa -->
+        <path d="M -14,2 C -6,-8 8,-8 16,-2 L 18,14 C 8,17 -6,17 -14,15 Z" fill="#FDA4AF" stroke="${S}" stroke-width="4" stroke-linejoin="round"/>
+        <!-- Dedos articulados de caucho -->
+        <path d="M -6,-4 L -12,-14 C -14,-17 -9,-20 -6,-16 L 0,-5" fill="#FDA4AF" stroke="${S}" stroke-width="3.5" stroke-linecap="round"/>
+        <path d="M 12,-4 L 30,${(-8 + fingerTwitch).toFixed(1)} C 34,-8 34,-3 29,-2 L 14,1" fill="#FDA4AF" stroke="${S}" stroke-width="3.5" stroke-linejoin="round"/>
+        <path d="M 15,0 L 34,${(-1 + fingerTwitch * 0.8).toFixed(1)} C 38,-1 38,4 33,5 L 15,5" fill="#FDA4AF" stroke="${S}" stroke-width="3.5" stroke-linejoin="round"/>
+        <path d="M 15,5 L 31,${(6 + fingerTwitch * 0.5).toFixed(1)} C 35,6 35,11 30,11 L 14,10" fill="#FDA4AF" stroke="${S}" stroke-width="3.5" stroke-linejoin="round"/>
+        <path d="M 12,10 L 25,13 C 28,13 28,17 24,17 L 10,15" fill="#FDA4AF" stroke="${S}" stroke-width="3.5" stroke-linejoin="round"/>
+        <!-- Brillo especular de plástico/caucho -->
+        <path d="M -6,1 Q 4,-3 12,0" fill="none" stroke="#FFFFFF" stroke-width="2.5" stroke-linecap="round" opacity="0.8"/>
+        <!-- Nodos sinápticos encendiéndose sobre el plástico cuando se adopta -->
+        ${isAdopting ? `<g opacity="${pulse}">
+          <circle cx="4" cy="4" r="4" fill="#FFE600" stroke="${S}" stroke-width="2"/>
+          <circle cx="26" cy="-4" r="3.5" fill="#38BDF8" stroke="${S}" stroke-width="2"/>
+          <circle cx="29" cy="2" r="3.5" fill="#38BDF8" stroke="${S}" stroke-width="2"/>
+          <line x1="4" y1="4" x2="26" y2="-4" stroke="#FFE600" stroke-width="2"/>
+          <line x1="4" y1="4" x2="29" y2="2" stroke="#38BDF8" stroke-width="2"/>
+        </g>` : ""}
       </g>`;
     },
     tags: ["mano", "goma", "experimento", "neurociencia", "ilusion", "mesa"],
@@ -8697,23 +8657,31 @@ export const PROPS_LIBRARY: Record<string, PropDef> = {
     defaultPlacement: "overhead",
     svg: `<line x1="-15" y1="-20" x2="-15" y2="15" stroke="#92400E" stroke-width="4"/>`,
     animatedSvg: (f: number) => {
-      const brushSweep = Math.sin(f * 0.18) * 14;
-      return `<g transform="scale(1.8)">
-        <!-- Pincel Izquierdo (Mano real oculta) -->
-        <g transform="translate(${-22 + brushSweep}, -10) rotate(-20)">
-          <line x1="0" y1="-24" x2="0" y2="8" stroke="#92400E" stroke-width="4.5" stroke-linecap="round"/>
-          <rect x="-3" y="6" width="6" height="6" fill="#F59E0B" stroke="${S}" stroke-width="2.5"/>
-          <path d="M -3,12 C -4,22 4,22 3,12 Z" fill="#FDE047" stroke="${S}" stroke-width="2.5"/>
+      const sweep = Math.sin(f * 0.20) * 14;
+      const bristleBend = Math.cos(f * 0.20) * 5;
+      const sparkAlpha = (0.5 + Math.abs(Math.cos(f * 0.20)) * 0.5).toFixed(2);
+      return `<g transform="scale(1.85)">
+        <!-- Barra superior de acoplamiento mecánico para mostrar sincronía 1:1 -->
+        <line x1="${-28 + sweep}" y1="-30" x2="${28 + sweep}" y2="-30" stroke="#38BDF8" stroke-width="3" stroke-dasharray="4,3"/>
+        <!-- Pincel Izquierdo (acariciando mano real oculta) -->
+        <g transform="translate(${-28 + sweep}, -8) rotate(-14)">
+          <path d="M -3,-26 L 3,-26 L 4,4 L -4,4 Z" fill="#D97706" stroke="${S}" stroke-width="3.5" stroke-linejoin="round"/>
+          <rect x="-4.5" y="4" width="9" height="7" rx="1" fill="#94A3B8" stroke="${S}" stroke-width="3"/>
+          <path d="M -4.5,11 Q ${-4 + bristleBend},22 ${bristleBend},25 Q ${4 + bristleBend},22 4.5,11 Z" fill="#FDE047" stroke="${S}" stroke-width="3" stroke-linejoin="round"/>
         </g>
-        <!-- Pincel Derecho (Mano de goma visible) en sincronía idéntica -->
-        <g transform="translate(${22 + brushSweep}, -10) rotate(-20)">
-          <line x1="0" y1="-24" x2="0" y2="8" stroke="#92400E" stroke-width="4.5" stroke-linecap="round"/>
-          <rect x="-3" y="6" width="6" height="6" fill="#F59E0B" stroke="${S}" stroke-width="2.5"/>
-          <path d="M -3,12 C -4,22 4,22 3,12 Z" fill="#FDE047" stroke="${S}" stroke-width="2.5"/>
+        <!-- Pincel Derecho (acariciando mano de goma visible) -->
+        <g transform="translate(${28 + sweep}, -8) rotate(-14)">
+          <path d="M -3,-26 L 3,-26 L 4,4 L -4,4 Z" fill="#D97706" stroke="${S}" stroke-width="3.5" stroke-linejoin="round"/>
+          <rect x="-4.5" y="4" width="9" height="7" rx="1" fill="#94A3B8" stroke="${S}" stroke-width="3"/>
+          <path d="M -4.5,11 Q ${-4 + bristleBend},22 ${bristleBend},25 Q ${4 + bristleBend},22 4.5,11 Z" fill="#FDE047" stroke="${S}" stroke-width="3" stroke-linejoin="round"/>
         </g>
-        <!-- Ondas de sincronía táctil -->
-        <path d="M -8,-5 Q 0,-15 8,-5" fill="none" stroke="#38BDF8" stroke-width="3" stroke-linecap="round" stroke-dasharray="3,3"/>
-        <text x="0" y="24" font-family="'Impact', 'Arial Black', sans-serif" font-size="7.5" font-weight="900" fill="#000" text-anchor="middle">100% SINCRÓNICO</text>
+        <!-- Ondas táctiles concéntricas idénticas en ambos puntos de contacto -->
+        <g opacity="${sparkAlpha}">
+          <ellipse cx="${-24 + sweep}" cy="18" rx="11" ry="4" fill="none" stroke="#22C55E" stroke-width="2.5"/>
+          <ellipse cx="${32 + sweep}" cy="18" rx="11" ry="4" fill="none" stroke="#38BDF8" stroke-width="2.5"/>
+          <circle cx="${-24 + sweep}" cy="16" r="3" fill="#FFE600" stroke="${S}" stroke-width="1.5"/>
+          <circle cx="${32 + sweep}" cy="16" r="3" fill="#FFE600" stroke="${S}" stroke-width="1.5"/>
+        </g>
       </g>`;
     },
     tags: ["pinceles", "sincronia", "tacto", "estimulo", "pinceladas", "gemelos"],
@@ -8721,26 +8689,30 @@ export const PROPS_LIBRARY: Record<string, PropDef> = {
 
   cerebro_corteza_somatosensorial: {
     id: "cerebro_corteza_somatosensorial",
-    name: "Cerebro con Corteza Somatosensorial y Homúnculo Activo",
+    name: "Cerebro con Corteza Somatosensorial y Reescritura Neural",
     family: "educacion_ciencia",
     defaultPlacement: "overhead",
     svg: `<path d="M -22,0 C -22,-18 22,-18 22,0 C 22,18 -22,18 -22,0 Z" fill="#F472B6" stroke="${S}" stroke-width="4"/>`,
-    animatedSvg: (f: number) => {
-      const synPulse = (0.7 + Math.sin(f * 0.22) * 0.3).toFixed(2);
-      const wave = Math.sin(f * 0.16) * 3;
-      return `<g transform="scale(1.8)">
-        <!-- Lóbulo cerebral rosa con contorno grueso -->
-        <path d="M -24,-2 C -26,-20 0,-24 4,-14 C 10,-24 28,-14 26,4 C 28,18 8,24 -2,16 C -12,24 -26,14 -24,-2 Z" fill="#F472B6" stroke="${S}" stroke-width="4.5" stroke-linejoin="round"/>
-        <!-- Pliegues cerebrales -->
-        <path d="M -16,-6 Q -6,-12 2,-4 Q 12,-12 18,-2" fill="none" stroke="${S}" stroke-width="3" stroke-linecap="round"/>
-        <path d="M -12,8 Q -2,2 6,10" fill="none" stroke="${S}" stroke-width="3" stroke-linecap="round"/>
-        <!-- Área Somatosensorial (Homúnculo) iluminada en cian -->
-        <path d="M 0,-14 Q 10,-4 8,10" fill="none" stroke="#38BDF8" stroke-width="5" stroke-linecap="round" opacity="${synPulse}"/>
-        <!-- Destellos de sinapsis conectando la mano falsa -->
-        <circle cx="10" cy="-6" r="4.5" fill="#FFE600" stroke="${S}" stroke-width="2" opacity="${synPulse}"/>
-        <circle cx="4" cy="${wave}" r="3" fill="#38BDF8" stroke="${S}" stroke-width="1.5"/>
-        <rect x="-24" y="24" width="48" height="11" rx="3" fill="#FFE600" stroke="${S}" stroke-width="3"/>
-        <text x="0" y="32" font-family="'Impact', 'Arial Black', sans-serif" font-size="7" font-weight="900" fill="#000" text-anchor="middle">MAPA REESCRITO</text>
+    animatedSvg: (f: number, _stepProgress?: number, currentState?: string) => {
+      const isRewriting = currentState === "reescribiendo" || f > 120;
+      const synPulse = (0.65 + Math.sin(f * 0.24) * 0.35).toFixed(2);
+      const signalPos = (f * 2.2) % 36;
+      return `<g transform="scale(1.9)">
+        <!-- Halo eléctrico de actividad cortical -->
+        <circle cx="0" cy="-2" r="32" fill="${isRewriting ? "#38BDF8" : "#EC4899"}" opacity="0.18"/>
+        <!-- Hemisferio cerebral con circunvoluciones detalladas -->
+        <path d="M -28,2 C -30,-18 -12,-26 2,-22 C 16,-26 30,-14 28,4 C 28,18 12,22 2,16 C -10,22 -26,16 -28,2 Z" fill="#F472B6" stroke="${S}" stroke-width="4.5" stroke-linejoin="round"/>
+        <!-- Surcos cerebrales -->
+        <path d="M -18,-4 Q -8,-12 0,-4 Q 10,-12 18,-2" fill="none" stroke="${S}" stroke-width="3" stroke-linecap="round"/>
+        <path d="M -14,7 Q -4,1 8,9" fill="none" stroke="${S}" stroke-width="3" stroke-linecap="round"/>
+        <!-- Franja de la Corteza Somatosensorial Primaria (iluminada) -->
+        <path d="M -2,-21 C 4,-10 4,4 0,15" fill="none" stroke="${isRewriting ? "#38BDF8" : "#FFE600"}" stroke-width="7" stroke-linecap="round" opacity="${synPulse}"/>
+        <path d="M -2,-21 C 4,-10 4,4 0,15" fill="none" stroke="${S}" stroke-width="2" stroke-dasharray="3,3"/>
+        <!-- Nodos sinápticos y puente de reescritura -->
+        <circle cx="-12" cy="-8" r="4" fill="#22C55E" stroke="${S}" stroke-width="2"/>
+        <circle cx="12" cy="-6" r="5" fill="#38BDF8" stroke="${S}" stroke-width="2"/>
+        <circle cx="${-12 + (signalPos / 36) * 24}" cy="-7" r="3.5" fill="#FFE600" stroke="${S}" stroke-width="1.5"/>
+        <line x1="-12" y1="-8" x2="12" y2="-6" stroke="#FFE600" stroke-width="2.5" stroke-dasharray="3,2"/>
       </g>`;
     },
     tags: ["cerebro", "corteza", "somatosensorial", "homunculo", "sinapsis", "neurociencia"],
@@ -8748,23 +8720,31 @@ export const PROPS_LIBRARY: Record<string, PropDef> = {
 
   martillo_amenaza_impacto: {
     id: "martillo_amenaza_impacto",
-    name: "Martillo de Demolición con Señal de Peligro",
+    name: "Martillo de Impacto con Golpe Descendente",
     family: "herramientas_objetos",
     defaultPlacement: "right",
     svg: `<rect x="-18" y="-12" width="36" height="20" rx="3" fill="#334155" stroke="${S}" stroke-width="4"/>`,
-    animatedSvg: (f: number) => {
-      const shake = Math.sin(f * 0.3) * 5;
-      return `<g transform="scale(1.8) rotate(${-15 + shake})">
-        <!-- Mango largo de madera -->
-        <line x1="0" y1="-8" x2="0" y2="38" stroke="#78350F" stroke-width="6" stroke-linecap="round"/>
-        <!-- Cabeza del martillo pesada con franjas amarillas de alerta -->
-        <rect x="-22" y="-20" width="44" height="24" rx="4" fill="#0F172A" stroke="${S}" stroke-width="4.5"/>
-        <rect x="-14" y="-17" width="8" height="18" fill="#FBBF24"/>
-        <rect x="6" y="-17" width="8" height="18" fill="#FBBF24"/>
-        <!-- Líneas de impacto y velocidad -->
-        <line x1="-28" y1="-8" x2="-36" y2="-8" stroke="#EF4444" stroke-width="3.5" stroke-linecap="round"/>
-        <line x1="-26" y1="-18" x2="-34" y2="-24" stroke="#EF4444" stroke-width="3.5" stroke-linecap="round"/>
-        <line x1="-26" y1="2" x2="-34" y2="8" stroke="#EF4444" stroke-width="3.5" stroke-linecap="round"/>
+    animatedSvg: (f: number, stepProgress?: number, currentState?: string) => {
+      const isStrike = currentState === "impacto" || (currentState === undefined && f >= 108);
+      const p = stepProgress !== undefined ? stepProgress : Math.min(1, Math.max(0, (f - 108) / 12));
+      const angle = isStrike ? (24 - Math.min(1, p * 4.5) * 96) : (26 + Math.sin(f * 0.28) * 5);
+      const showShockwave = isStrike && p > 0.12;
+      const ringR = showShockwave ? 12 + ((f * 4) % 28) : 0;
+      return `<g transform="scale(1.95)">
+        <!-- Onda de choque en el punto donde golpea la mano de goma -->
+        ${showShockwave ? `<g transform="translate(-26, 22)">
+          <ellipse cx="0" cy="0" rx="${ringR}" ry="${(ringR * 0.45).toFixed(1)}" fill="none" stroke="#EF4444" stroke-width="4"/>
+          <polygon points="0,-6 4,-18 10,-4 22,-8 8,2 14,12 0,4 -12,12 -6,0 -18,-8 -4,-4" fill="#FFE600" stroke="${S}" stroke-width="2.5"/>
+        </g>` : ""}
+        <!-- Martillo articulado desde el mango inferior -->
+        <g transform="translate(12, 18) rotate(${angle.toFixed(1)})">
+          <rect x="-5" y="-44" width="10" height="48" rx="4" fill="#B45309" stroke="${S}" stroke-width="4"/>
+          <rect x="-6" y="-10" width="12" height="16" rx="3" fill="#1E293B" stroke="${S}" stroke-width="3.5"/>
+          <rect x="-28" y="-62" width="56" height="24" rx="5" fill="#334155" stroke="${S}" stroke-width="4.5"/>
+          <rect x="-18" y="-58" width="9" height="16" fill="#FBBF24"/>
+          <rect x="9" y="-58" width="9" height="16" fill="#FBBF24"/>
+          <rect x="-31" y="-60" width="6" height="20" rx="2" fill="#EF4444" stroke="${S}" stroke-width="3"/>
+        </g>
       </g>`;
     },
     tags: ["martillo", "impacto", "peligro", "golpe", "panico", "amenaza"],
@@ -8772,22 +8752,21 @@ export const PROPS_LIBRARY: Record<string, PropDef> = {
 
   monitor_fisiologico_sudor_miedo: {
     id: "monitor_fisiologico_sudor_miedo",
-    name: "Monitor Cardíaco y Sensor de Respuesta Galvánica",
+    name: "Sensor Galvánico y Corazón Adrenalina",
     family: "tecnologia",
     defaultPlacement: "overhead",
     svg: `<rect x="-30" y="-22" width="60" height="44" rx="6" fill="#0F172A" stroke="${S}" stroke-width="4"/>`,
     animatedSvg: (f: number) => {
-      const alertBlink = (Math.sin(f * 0.25) > 0 ? 1 : 0.2).toFixed(2);
-      return `<g transform="scale(1.7)">
-        <!-- Pantalla de monitor clínico -->
-        <rect x="-32" y="-24" width="64" height="48" rx="6" fill="#0F172A" stroke="${S}" stroke-width="4.5"/>
-        <rect x="-27" y="-19" width="54" height="38" rx="3" fill="#022C22" stroke="${S}" stroke-width="2"/>
-        <!-- Línea ECG con pico de sobresalto -->
-        <path d="M -25,2 L -12,2 L -8,-14 L -4,12 L 0,-6 L 4,2 L 25,2" fill="none" stroke="#22C55E" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"/>
-        <!-- Alerta de 145 BPM -->
-        <text x="18" y="-8" font-family="'Impact', 'Arial Black', sans-serif" font-size="8" font-weight="900" fill="#EF4444" text-anchor="end" opacity="${alertBlink}">145 BPM</text>
-        <rect x="-24" y="26" width="48" height="11" rx="3" fill="#EF4444" stroke="${S}" stroke-width="3"/>
-        <text x="0" y="34" font-family="'Impact', 'Arial Black', sans-serif" font-size="7" font-weight="900" fill="#FFF" text-anchor="middle">¡PÁNICO REAL!</text>
+      const heartScale = (1 + Math.sin(f * 0.30) * 0.14).toFixed(2);
+      const dropY = (f * 1.4) % 18;
+      return `<g transform="scale(1.85)">
+        <rect x="-34" y="-24" width="68" height="46" rx="8" fill="#0F172A" stroke="${S}" stroke-width="4.5"/>
+        <rect x="-28" y="-18" width="56" height="34" rx="4" fill="#022C22" stroke="${S}" stroke-width="2.5"/>
+        <path d="M -25,4 L -14,4 L -10,-12 L -5,11 L -1,-6 L 3,4 L 24,4" fill="none" stroke="#22C55E" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"/>
+        <g transform="translate(-22, -18) scale(${heartScale})">
+          <path d="M 0,4 C -6,-2 -10,-8 -5,-12 C -1,-15 0,-10 0,-8 C 0,-10 1,-15 5,-12 C 10,-8 6,-2 0,4 Z" fill="#EF4444" stroke="${S}" stroke-width="2.5" stroke-linejoin="round"/>
+        </g>
+        <path d="M 24,${(-10 + dropY).toFixed(1)} C 21,${(-4 + dropY).toFixed(1)} 20,${(1 + dropY).toFixed(1)} 24,${(3 + dropY).toFixed(1)} C 28,${(1 + dropY).toFixed(1)} 27,${(-4 + dropY).toFixed(1)} 24,${(-10 + dropY).toFixed(1)} Z" fill="#38BDF8" stroke="${S}" stroke-width="2"/>
       </g>`;
     },
     tags: ["monitor", "cardiaco", "panico", "galvanica", "estres", "fisiologia"],
@@ -8795,45 +8774,62 @@ export const PROPS_LIBRARY: Record<string, PropDef> = {
 
   espejo_realidad_truco_mental: {
     id: "espejo_realidad_truco_mental",
-    name: "Espejo de Percepción y Realidad Multisensorial",
+    name: "Proyector Neural de Mapa Corporal Maleable",
     family: "educacion_ciencia",
     defaultPlacement: "right",
     svg: `<circle cx="0" cy="0" r="20" fill="#38BDF8" stroke="${S}" stroke-width="4"/>`,
     animatedSvg: (f: number) => {
-      const rot = Math.sin(f * 0.12) * 8;
-      return `<g transform="scale(1.7) rotate(${rot})">
-        <!-- Marco neo-brutalista de lupa/espejo -->
-        <circle cx="0" cy="-6" r="22" fill="#E0F2FE" stroke="${S}" stroke-width="4.5"/>
-        <line x1="0" y1="16" x2="0" y2="38" stroke="#334155" stroke-width="6" stroke-linecap="round"/>
-        <!-- Reflejo interior brillante -->
-        <path d="M -14,-16 Q 0,-22 14,-16" fill="none" stroke="#FFF" stroke-width="4" stroke-linecap="round"/>
-        <!-- Mano estilizada dentro del espejo -->
-        <rect x="-8" y="-12" width="16" height="12" rx="3" fill="#FFE600" stroke="${S}" stroke-width="3"/>
-        <line x1="-4" y1="-8" x2="-4" y2="0" stroke="${S}" stroke-width="2"/>
-        <line x1="0" y1="-8" x2="0" y2="0" stroke="${S}" stroke-width="2"/>
-        <line x1="4" y1="-8" x2="4" y2="0" stroke="${S}" stroke-width="2"/>
+      const pulse = (0.75 + Math.sin(f * 0.16) * 0.25).toFixed(2);
+      const orbitAngle = (f * 3) % 360;
+      return `<g transform="scale(1.85)">
+        <ellipse cx="0" cy="18" rx="26" ry="8" fill="#1E293B" stroke="${S}" stroke-width="4"/>
+        <ellipse cx="0" cy="18" rx="18" ry="4" fill="#38BDF8" opacity="${pulse}"/>
+        <polygon points="-18,18 -28,-22 28,-22 18,18" fill="#38BDF8" opacity="0.22"/>
+        <g transform="translate(0, ${(-4 + Math.sin(f * 0.15) * 3).toFixed(1)})">
+          <rect x="-10" y="-6" width="20" height="15" rx="4" fill="#FFE600" stroke="${S}" stroke-width="3.5"/>
+          <line x1="-6" y1="-6" x2="-8" y2="-18" stroke="#FFE600" stroke-width="5" stroke-linecap="round"/>
+          <line x1="-6" y1="-6" x2="-8" y2="-18" stroke="${S}" stroke-width="2.5" stroke-linecap="round"/>
+          <line x1="0" y1="-6" x2="0" y2="-20" stroke="#FFE600" stroke-width="5" stroke-linecap="round"/>
+          <line x1="0" y1="-6" x2="0" y2="-20" stroke="${S}" stroke-width="2.5" stroke-linecap="round"/>
+          <line x1="6" y1="-6" x2="8" y2="-17" stroke="#FFE600" stroke-width="5" stroke-linecap="round"/>
+          <line x1="6" y1="-6" x2="8" y2="-17" stroke="${S}" stroke-width="2.5" stroke-linecap="round"/>
+          <circle cx="0" cy="1" r="4" fill="#38BDF8" stroke="${S}" stroke-width="2"/>
+        </g>
+        <g transform="rotate(${orbitAngle})">
+          <circle cx="24" cy="0" r="4" fill="#EC4899" stroke="${S}" stroke-width="2"/>
+        </g>
       </g>`;
     },
     tags: ["espejo", "percepcion", "realidad", "ilusion", "truco", "neurociencia"],
   },
   brazo_venas_azules_diagrama: {
     id: "brazo_venas_azules_diagrama",
-    name: "Antebrazo con Venas Superficiales Azules",
+    name: "Antebrazo con Venas Superficiales Azules y Corte Anatómico",
     family: "educacion_ciencia",
     defaultPlacement: "overhead",
-    svg: `<rect x="-30" y="-12" width="60" height="24" rx="10" fill="#FCA5A5" stroke="${S}" stroke-width="4"/>`,
-    animatedSvg: (f: number) => {
-      const pulse = (0.7 + Math.sin(f * 0.16) * 0.3).toFixed(2);
-      return `<g transform="scale(1.8)">
-        <!-- Brazo estilizado color piel -->
-        <path d="M -35,-14 C -10,-18 15,-16 35,-12 L 35,12 C 15,16 -10,18 -35,14 Z" fill="#FED7AA" stroke="${S}" stroke-width="4.5" stroke-linejoin="round"/>
-        <!-- Venas ramificadas en azul cian aparente -->
-        <path d="M -30,0 Q -10,-6 8,-2 Q 22,-8 32,-4" fill="none" stroke="#0284C7" stroke-width="4" stroke-linecap="round"/>
-        <path d="M 8,-2 Q 18,6 28,4" fill="none" stroke="#38BDF8" stroke-width="3" stroke-linecap="round"/>
-        <circle cx="8" cy="-2" r="3.5" fill="#38BDF8" stroke="${S}" stroke-width="1.5" opacity="${pulse}"/>
-        <!-- Rótulo '¿SANGRE AZUL?' -->
-        <rect x="-26" y="22" width="52" height="11" rx="3" fill="#FFE600" stroke="${S}" stroke-width="3"/>
-        <text x="0" y="30" font-family="'Impact', 'Arial Black', sans-serif" font-size="7" font-weight="900" fill="#000" text-anchor="middle">¿SANGRE AZUL?</text>
+    svg: `<rect x="-30" y="-12" width="60" height="24" rx="10" fill="#FED7AA" stroke="${S}" stroke-width="4"/>`,
+    animatedSvg: (f: number, stepProgress?: number, currentState?: string) => {
+      const isRevealed = currentState === "cuestionado" || (currentState === undefined && f >= 75);
+      const pulse = (0.75 + Math.sin(f * 0.18) * 0.25).toFixed(2);
+      const lensX = isRevealed ? 6 + Math.sin(f * 0.14) * 6 : -14;
+      const veinColor = isRevealed ? "#991B1B" : "#0284C7";
+      const subVeinColor = isRevealed ? "#DC2626" : "#38BDF8";
+      return `<g transform="scale(1.85)">
+        <!-- Contorno volumétrico de antebrazo y muñeca con pliegues neo-brutalistas -->
+        <path d="M -38,-15 C -12,-19 16,-17 38,-12 L 38,13 C 16,17 -12,19 -38,15 Z" fill="#FED7AA" stroke="${S}" stroke-width="4.5" stroke-linejoin="round"/>
+        <path d="M -36,8 C -10,12 16,10 36,7" fill="none" stroke="#FDBA74" stroke-width="4" stroke-linecap="round"/>
+        <!-- Red de venas vista a través de la piel -->
+        <path d="M -32,-1 Q -10,-7 8,-2 Q 22,-8 34,-4" fill="none" stroke="#0284C7" stroke-width="4.5" stroke-linecap="round"/>
+        <path d="M 4,-2 Q 16,6 30,5" fill="none" stroke="#38BDF8" stroke-width="3.5" stroke-linecap="round"/>
+        <path d="M -24,5 Q -6,2 10,6" fill="none" stroke="#0284C7" stroke-width="3" stroke-linecap="round"/>
+        <!-- Lupa / Ventana de corte histológico que revela la sangre roja real adentro -->
+        <g transform="translate(${lensX.toFixed(1)}, -1)">
+          <circle cx="0" cy="0" r="14" fill="${isRevealed ? "#FEE2E2" : "#E0F2FE"}" stroke="${S}" stroke-width="4"/>
+          <path d="M -11,-1 Q 0,-5 11,-1" fill="none" stroke="${veinColor}" stroke-width="5.5" stroke-linecap="round"/>
+          <circle cx="-4" cy="-2" r="2.8" fill="${subVeinColor}" opacity="${pulse}"/>
+          <circle cx="4" cy="-1" r="2.8" fill="${subVeinColor}" opacity="${pulse}"/>
+          <line x1="10" y1="10" x2="19" y2="19" stroke="${S}" stroke-width="5" stroke-linecap="round"/>
+        </g>
       </g>`;
     },
     tags: ["brazo", "venas", "azul", "sangre", "anatomia", "piel"],
@@ -8841,26 +8837,40 @@ export const PROPS_LIBRARY: Record<string, PropDef> = {
 
   tubos_ensayo_sangre_rojo_oscuro: {
     id: "tubos_ensayo_sangre_rojo_oscuro",
-    name: "Tubos de Sangre Arterial (Rojo Vivo) y Venosa (Rojo Oscuro)",
+    name: "Tubos Vacutainer de Sangre Arterial Escarlata y Venosa Granate",
     family: "educacion_ciencia",
     defaultPlacement: "overhead",
     svg: `<rect x="-24" y="-18" width="16" height="36" rx="4" fill="#EF4444" stroke="${S}" stroke-width="4"/>`,
-    animatedSvg: (f: number) => {
-      const bubble = Math.sin(f * 0.2) * 3;
-      return `<g transform="scale(1.8)">
-        <!-- Gradilla gris de laboratorio -->
-        <rect x="-34" y="16" width="68" height="10" rx="2" fill="#64748B" stroke="${S}" stroke-width="3"/>
-        <!-- Tubo Arterial (Izquierda: Rojo Escarlata brillante) -->
-        <rect x="-24" y="-22" width="18" height="38" rx="5" fill="#EF4444" stroke="${S}" stroke-width="3.5"/>
-        <rect x="-22" y="-26" width="14" height="4" rx="1" fill="#DC2626" stroke="${S}" stroke-width="2"/>
-        <circle cx="-15" cy="${-8 + bubble}" r="2" fill="#FEE2E2" opacity="0.8"/>
-        <!-- Tubo Venoso (Derecha: Rojo Granate/Vino oscuro - ¡NUNCA AZUL!) -->
-        <rect x="6" y="-22" width="18" height="38" rx="5" fill="#881337" stroke="${S}" stroke-width="3.5"/>
-        <rect x="8" y="-26" width="14" height="4" rx="1" fill="#4C0519" stroke="${S}" stroke-width="2"/>
-        <circle cx="15" cy="${-8 - bubble}" r="2" fill="#FDA4AF" opacity="0.6"/>
-        <!-- Rótulo '100% ROJA' -->
-        <rect x="-26" y="28" width="52" height="11" rx="3" fill="#FFE600" stroke="${S}" stroke-width="3"/>
-        <text x="0" y="36" font-family="'Impact', 'Arial Black', sans-serif" font-size="7.5" font-weight="900" fill="#000" text-anchor="middle">AMBAS SON ROJAS</text>
+    animatedSvg: (f: number, stepProgress?: number, currentState?: string) => {
+      const isComp = currentState === "comparacion_rojos" || (currentState === undefined && f >= 75);
+      const bubble = Math.sin(f * 0.2) * 3.5;
+      const glowScale = isComp ? (1.06 + Math.sin(f * 0.22) * 0.05).toFixed(2) : "1";
+      return `<g transform="scale(1.85)">
+        <!-- Gradilla metálica de laboratorio -->
+        <rect x="-36" y="15" width="72" height="11" rx="3" fill="#64748B" stroke="${S}" stroke-width="4"/>
+        <rect x="-32" y="-6" width="64" height="5" rx="2" fill="#94A3B8" stroke="${S}" stroke-width="3"/>
+        <!-- Tubo Arterial (Izquierda: Rojo Escarlata brillante rico en O2) -->
+        <g transform="translate(-16, 0) scale(${glowScale})">
+          <rect x="-10" y="-22" width="20" height="38" rx="6" fill="#FEE2E2" stroke="${S}" stroke-width="4"/>
+          <path d="M -8,-10 L 8,-10 L 8,12 C 8,14 -8,14 -8,12 Z" fill="#EF4444" stroke="${S}" stroke-width="2.5"/>
+          <rect x="-11" y="-27" width="22" height="7" rx="2" fill="#DC2626" stroke="${S}" stroke-width="3.5"/>
+          <circle cx="-3" cy="${(-2 + bubble).toFixed(1)}" r="2.5" fill="#FECACA"/>
+          <circle cx="3" cy="${(5 - bubble).toFixed(1)}" r="2" fill="#FFFFFF" opacity="0.85"/>
+        </g>
+        <!-- Tubo Venoso (Derecha: Rojo Vino/Granate oscuro - ¡Jamás azul!) -->
+        <g transform="translate(16, 0) scale(${glowScale})">
+          <rect x="-10" y="-22" width="20" height="38" rx="6" fill="#FCE7F3" stroke="${S}" stroke-width="4"/>
+          <path d="M -8,-10 L 8,-10 L 8,12 C 8,14 -8,14 -8,12 Z" fill="#881337" stroke="${S}" stroke-width="2.5"/>
+          <rect x="-11" y="-27" width="22" height="7" rx="2" fill="#4C0519" stroke="${S}" stroke-width="3.5"/>
+          <circle cx="2" cy="${(-1 - bubble).toFixed(1)}" r="2.3" fill="#F43F5E" opacity="0.75"/>
+          <circle cx="-3" cy="${(6 + bubble * 0.6).toFixed(1)}" r="1.8" fill="#FB7185" opacity="0.65"/>
+        </g>
+        <!-- Símbolo prohibido sobre gota azul arriba -->
+        ${isComp ? `<g transform="translate(0, -34)">
+          <path d="M 0,-9 C 5,-2 6,4 0,7 C -6,4 -5,-2 0,-9 Z" fill="#38BDF8" stroke="${S}" stroke-width="2.5"/>
+          <circle cx="0" cy="-1" r="10" fill="none" stroke="#EF4444" stroke-width="3.5"/>
+          <line x1="-7" y1="-8" x2="7" y2="6" stroke="#EF4444" stroke-width="3.5" stroke-linecap="round"/>
+        </g>` : ""}
       </g>`;
     },
     tags: ["tubos", "sangre", "rojo", "venosa", "arterial", "oxigeno", "laboratorio"],
@@ -8868,25 +8878,27 @@ export const PROPS_LIBRARY: Record<string, PropDef> = {
 
   prisma_optico_piel_fotones: {
     id: "prisma_optico_piel_fotones",
-    name: "Modelo Óptico de Absorción Roja y Dispersión Azul",
+    name: "Corte Óptico de Piel con Absorción Roja y Rebote Azul",
     family: "educacion_ciencia",
     defaultPlacement: "overhead",
     svg: `<rect x="-30" y="-15" width="60" height="30" fill="#FED7AA" stroke="${S}" stroke-width="4"/>`,
-    animatedSvg: (f: number) => {
-      const redRay = (Math.sin(f * 0.18) * 4).toFixed(1);
-      const blueRay = (Math.sin(f * 0.22) * 6).toFixed(1);
-      return `<g transform="scale(1.8)">
-        <!-- Capa de piel/tejido -->
-        <rect x="-32" y="-5" width="64" height="26" fill="#FED7AA" stroke="${S}" stroke-width="4"/>
-        <!-- Vena subcutánea oscura profunda -->
-        <ellipse cx="0" cy="12" rx="18" ry="6" fill="#881337" stroke="${S}" stroke-width="3"/>
-        <!-- Haz de luz roja: penetra profundo y es absorbido -->
-        <path d="M -16,-22 L -8,${10 + Number(redRay)}" fill="none" stroke="#EF4444" stroke-width="4.5" stroke-linecap="round"/>
-        <text x="-24" y="-12" font-family="'Impact', 'Arial Black', sans-serif" font-size="6.5" font-weight="900" fill="#DC2626">ROJO ABSORBIDO</text>
-        <!-- Haz de luz azul: choca en la superficie y se dispersa hacia el ojo -->
-        <path d="M 12,-22 L 6,0 L 16,-18" fill="none" stroke="#0284C7" stroke-width="4" stroke-linecap="round"/>
-        <circle cx="16" cy={-18 + Number(blueRay)} r="3" fill="#38BDF8" stroke="${S}" stroke-width="1.5"/>
-        <text x="24" y="-12" font-family="'Impact', 'Arial Black', sans-serif" font-size="6.5" font-weight="900" fill="#0284C7">AZUL REBOTA</text>
+    animatedSvg: (f: number, stepProgress?: number, currentState?: string) => {
+      const isBounce = currentState === "rebote_azul" || (currentState === undefined && f >= 75);
+      const redRay = Math.sin(f * 0.18) * 3.5;
+      const blueRay = Math.sin(f * 0.24) * 5;
+      return `<g transform="scale(1.85)">
+        <!-- Capas de tejido cutáneo (Epidermis + Dermis) -->
+        <rect x="-34" y="-6" width="68" height="12" rx="2" fill="#FED7AA" stroke="${S}" stroke-width="4"/>
+        <rect x="-34" y="6" width="68" height="18" rx="2" fill="#FDBA74" stroke="${S}" stroke-width="4"/>
+        <!-- Vena profunda rojo granate -->
+        <ellipse cx="0" cy="15" rx="18" ry="6.5" fill="#881337" stroke="${S}" stroke-width="3.5"/>
+        <ellipse cx="-4" cy="14" rx="8" ry="2.5" fill="#BE123C"/>
+        <!-- Onda roja larga: penetra profundo hasta la vena y se absorbe -->
+        <path d="M -20,-28 L -8,${(12 + redRay).toFixed(1)}" fill="none" stroke="#EF4444" stroke-width="5" stroke-linecap="round"/>
+        <circle cx="-8" cy="${(12 + redRay).toFixed(1)}" r="4" fill="#FFE600" stroke="${S}" stroke-width="2"/>
+        <!-- Onda azul corta: choca en la epidermis/dermis y rebota hacia el ojo -->
+        <path d="M 10,-28 L 6,-1 L ${(22 + (isBounce ? 4 : 0)).toFixed(1)},${(-24 + blueRay).toFixed(1)}" fill="none" stroke="#0284C7" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+        <circle cx="${(22 + (isBounce ? 4 : 0)).toFixed(1)}" cy="${(-24 + blueRay).toFixed(1)}" r="4.5" fill="#38BDF8" stroke="${S}" stroke-width="2.5"/>
       </g>`;
     },
     tags: ["optica", "dispersion", "fotones", "luz", "rojo", "azul", "piel"],
@@ -8894,24 +8906,32 @@ export const PROPS_LIBRARY: Record<string, PropDef> = {
 
   molecula_hemoglobina_hierro: {
     id: "molecula_hemoglobina_hierro",
-    name: "Molécula de Hemoglobina con Átomo de Hierro",
+    name: "Complejo Hemo de Hemoglobina con Núcleo de Hierro Fe y Fotones Rojos",
     family: "educacion_ciencia",
     defaultPlacement: "overhead",
     svg: `<circle cx="0" cy="0" r="22" fill="#DC2626" stroke="${S}" stroke-width="4"/>`,
-    animatedSvg: (f: number) => {
-      const pulse = (0.8 + Math.sin(f * 0.2) * 0.2).toFixed(2);
-      return `<g transform="scale(1.8)">
-        <!-- Núcleo central de hierro Fe -->
-        <circle cx="0" cy="0" r="16" fill="#F59E0B" stroke="${S}" stroke-width="4"/>
-        <text x="0" y="5" font-family="'Impact', 'Arial Black', sans-serif" font-size="10" font-weight="900" fill="#000" text-anchor="middle">Fe</text>
-        <!-- 4 anillos de porfirina (rojo sangre) -->
-        <circle cx="-16" cy="-14" r="9" fill="#DC2626" stroke="${S}" stroke-width="3" opacity="${pulse}"/>
-        <circle cx="16" cy="-14" r="9" fill="#DC2626" stroke="${S}" stroke-width="3" opacity="${pulse}"/>
-        <circle cx="-16" cy="14" r="9" fill="#991B1B" stroke="${S}" stroke-width="3" opacity="${pulse}"/>
-        <circle cx="16" cy="14" r="9" fill="#991B1B" stroke="${S}" stroke-width="3" opacity="${pulse}"/>
-        <!-- Rótulo 'HEMOGLOBINA' -->
-        <rect x="-28" y="24" width="56" height="11" rx="3" fill="#FFE600" stroke="${S}" stroke-width="3"/>
-        <text x="0" y="32" font-family="'Impact', 'Arial Black', sans-serif" font-size="7" font-weight="900" fill="#000" text-anchor="middle">HEMOGLOBINA</text>
+    animatedSvg: (f: number, stepProgress?: number, currentState?: string) => {
+      const isReflect = currentState === "reflejo_rojo" || (currentState === undefined && f >= 75);
+      const pulse = (0.85 + Math.sin(f * 0.2) * 0.15).toFixed(2);
+      const rayLen = isReflect ? 10 + Math.sin(f * 0.25) * 4 : 4;
+      return `<g transform="scale(1.85)">
+        <!-- Enlaces químicos de coordinación -->
+        <line x1="-16" y1="-14" x2="16" y2="14" stroke="${S}" stroke-width="5"/>
+        <line x1="16" y1="-14" x2="-16" y2="14" stroke="${S}" stroke-width="5"/>
+        <!-- 4 subunidades globina / anillos de porfirina rojos -->
+        <circle cx="-17" cy="-15" r="10.5" fill="#EF4444" stroke="${S}" stroke-width="3.5" opacity="${pulse}"/>
+        <circle cx="17" cy="-15" r="10.5" fill="#DC2626" stroke="${S}" stroke-width="3.5" opacity="${pulse}"/>
+        <circle cx="-17" cy="15" r="10.5" fill="#991B1B" stroke="${S}" stroke-width="3.5" opacity="${pulse}"/>
+        <circle cx="17" cy="15" r="10.5" fill="#B91C1C" stroke="${S}" stroke-width="3.5" opacity="${pulse}"/>
+        <!-- Átomo central de Hierro (Fe) -->
+        <circle cx="0" cy="0" r="15" fill="#F59E0B" stroke="${S}" stroke-width="4"/>
+        <text x="0" y="5" font-family="'Impact', 'Arial Black', sans-serif" font-size="11" font-weight="900" fill="#000" text-anchor="middle">Fe</text>
+        <!-- Destellos de reflexión de luz roja pura -->
+        ${isReflect ? `<g stroke="#EF4444" stroke-width="3.5" stroke-linecap="round">
+          <line x1="0" y1="-22" x2="0" y2="${(-22 - rayLen).toFixed(1)}"/>
+          <line x1="24" y1="0" x2="${(24 + rayLen).toFixed(1)}" y2="0"/>
+          <line x1="-24" y1="0" x2="${(-24 - rayLen).toFixed(1)}" y2="0"/>
+        </g>` : ""}
       </g>`;
     },
     tags: ["hemoglobina", "hierro", "molecula", "sangre", "quimica", "oxigeno"],
@@ -8919,24 +8939,27 @@ export const PROPS_LIBRARY: Record<string, PropDef> = {
 
   pizarron_mito_escolar_tachado: {
     id: "pizarron_mito_escolar_tachado",
-    name: "Pizarrón con Mito de Sangre Azul Tachado",
+    name: "Diagrama de Sangre Azul Tachado con Sello de Ilusión Óptica",
     family: "educacion_ciencia",
     defaultPlacement: "overhead",
     svg: `<rect x="-30" y="-20" width="60" height="40" rx="4" fill="#064E3B" stroke="${S}" stroke-width="4"/>`,
-    animatedSvg: (f: number) => {
-      const alertBlink = (Math.sin(f * 0.25) > 0 ? 1 : 0.3).toFixed(2);
-      return `<g transform="scale(1.7)">
-        <!-- Marco de madera -->
-        <rect x="-34" y="-24" width="68" height="48" rx="5" fill="#78350F" stroke="${S}" stroke-width="4.5"/>
-        <rect x="-30" y="-20" width="60" height="40" rx="3" fill="#064E3B" stroke="${S}" stroke-width="2"/>
-        <!-- Texto falso 'SANGRE AZUL' -->
-        <text x="0" y="-4" font-family="'Impact', 'Arial Black', sans-serif" font-size="9" font-weight="900" fill="#38BDF8" text-anchor="middle">SANGRE AZUL</text>
-        <!-- Gran Cruz Roja de Desmentido -->
-        <line x1="-22" y1="-14" x2="22" y2="6" stroke="#EF4444" stroke-width="5" stroke-linecap="round"/>
-        <line x1="22" y1="-14" x2="-22" y2="6" stroke="#EF4444" stroke-width="5" stroke-linecap="round"/>
-        <!-- Sello '¡FALSO!' -->
-        <rect x="-24" y="10" width="48" height="12" rx="3" fill="#EF4444" stroke="${S}" stroke-width="3" opacity="${alertBlink}"/>
-        <text x="0" y="19" font-family="'Impact', 'Arial Black', sans-serif" font-size="8" font-weight="900" fill="#FFF" text-anchor="middle">¡MITO FALSO!</text>
+    animatedSvg: (f: number, stepProgress?: number, currentState?: string) => {
+      const isCrossed = currentState === "mito_tachado" || (currentState === undefined && f >= 60);
+      const scaleX = isCrossed ? (1 + Math.sin(f * 0.24) * 0.06).toFixed(2) : "0.85";
+      return `<g transform="scale(1.8)">
+        <!-- Marco de madera del pizarrón -->
+        <rect x="-34" y="-24" width="68" height="48" rx="6" fill="#78350F" stroke="${S}" stroke-width="4.5"/>
+        <rect x="-29" y="-19" width="58" height="38" rx="3" fill="#064E3B" stroke="${S}" stroke-width="3"/>
+        <!-- Gota azul falsa a la izquierda vs Gota roja real a la derecha -->
+        <path d="M -13,-10 C -6,0 -6,10 -13,13 C -20,10 -20,0 -13,-10 Z" fill="#38BDF8" stroke="${S}" stroke-width="3"/>
+        <path d="M 14,-10 C 21,0 21,10 14,13 C 7,10 7,0 14,-10 Z" fill="#EF4444" stroke="${S}" stroke-width="3"/>
+        <!-- Palomita verde en la gota roja -->
+        <path d="M 8,14 L 13,18 L 22,8" fill="none" stroke="#22C55E" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+        <!-- Gran X roja tachando la gota azul -->
+        <g transform="translate(-13, 2) scale(${scaleX})">
+          <line x1="-11" y1="-11" x2="11" y2="11" stroke="#EF4444" stroke-width="5.5" stroke-linecap="round"/>
+          <line x1="11" y1="-11" x2="-11" y2="11" stroke="#EF4444" stroke-width="5.5" stroke-linecap="round"/>
+        </g>
       </g>`;
     },
     tags: ["pizarron", "mito", "falso", "escuela", "sangre_azul", "desmentido"],
@@ -8944,20 +8967,27 @@ export const PROPS_LIBRARY: Record<string, PropDef> = {
 
   linterna_transiluminacion_roja: {
     id: "linterna_transiluminacion_roja",
-    name: "Linterna de Transiluminación Roja en Dedos",
+    name: "Linterna Potente Transiluminando Dedos en Rojo Carmesí",
     family: "educacion_ciencia",
     defaultPlacement: "right",
     svg: `<circle cx="0" cy="0" r="18" fill="#EF4444" stroke="${S}" stroke-width="4"/>`,
-    animatedSvg: (f: number) => {
-      const glow = (0.8 + Math.sin(f * 0.15) * 0.2).toFixed(2);
-      return `<g transform="scale(1.7)">
-        <!-- Cuerpo de la linterna negra -->
-        <rect x="-8" y="6" width="16" height="26" rx="3" fill="#0F172A" stroke="${S}" stroke-width="4"/>
-        <circle cx="0" cy="0" r="18" fill="#EF4444" stroke="${S}" stroke-width="4.5" opacity="${glow}"/>
-        <circle cx="0" cy="0" r="12" fill="#FDE047" opacity="0.8"/>
-        <!-- Dedo apoyado transmitiendo luz roja pura -->
-        <path d="M -12,-16 C -6,-22 6,-22 12,-16 L 12,-6 C 6,-2 -6,-2 -12,-6 Z" fill="#F87171" stroke="${S}" stroke-width="3"/>
-        <text x="0" y="38" font-family="'Impact', 'Arial Black', sans-serif" font-size="7" font-weight="900" fill="#000" text-anchor="middle">BRILLO ROJO PURO</text>
+    animatedSvg: (f: number, stepProgress?: number, currentState?: string) => {
+      const isLit = currentState === "transiluminacion_roja" || (currentState === undefined && f >= 50);
+      const glowRadius = isLit ? (22 + Math.sin(f * 0.22) * 3.5).toFixed(1) : "16";
+      const rayOp = isLit ? (0.75 + Math.sin(f * 0.25) * 0.25).toFixed(2) : "0.35";
+      return `<g transform="scale(1.85)">
+        <!-- Halo de transiluminación roja pura atravesando la carne y capilares -->
+        <circle cx="0" cy="-6" r="${glowRadius}" fill="#EF4444" stroke="${S}" stroke-width="4" opacity="${rayOp}"/>
+        <circle cx="0" cy="-6" r="13" fill="#FB7185" opacity="0.9"/>
+        <!-- Dos dedos juntos sobre el lente brillando en rojo vivo -->
+        <rect x="-13" y="-22" width="12" height="24" rx="6" fill="${isLit ? "#EF4444" : "#FDBA74"}" stroke="${S}" stroke-width="3.5"/>
+        <rect x="1" y="-24" width="12" height="26" rx="6" fill="${isLit ? "#DC2626" : "#FDBA74"}" stroke="${S}" stroke-width="3.5"/>
+        <!-- Red capilar interna iluminada -->
+        ${isLit ? `<path d="M -7,-18 Q -5,-10 -8,-4 M 7,-20 Q 5,-10 8,-4" fill="none" stroke="#FEF08A" stroke-width="2" stroke-linecap="round"/>` : ""}
+        <!-- Cuerpo metálico de la linterna táctica debajo -->
+        <path d="M -14,2 L 14,2 L 10,12 L -10,12 Z" fill="#475569" stroke="${S}" stroke-width="4" stroke-linejoin="round"/>
+        <rect x="-9" y="12" width="18" height="22" rx="3" fill="#1E293B" stroke="${S}" stroke-width="4"/>
+        <circle cx="0" cy="21" r="3.5" fill="${isLit ? "#22C55E" : "#EF4444"}" stroke="${S}" stroke-width="2"/>
       </g>`;
     },
     tags: ["linterna", "transiluminacion", "dedos", "rojo", "experimento", "luz"],
@@ -8968,22 +8998,30 @@ export const PROPS_LIBRARY: Record<string, PropDef> = {
     family: "naturaleza_alimentos",
     defaultPlacement: "right",
     svg: `<path d="M -12,-16 C -20,0 -8,18 0,24 C 8,18 20,0 12,-16 Z" fill="#EF4444" stroke="${S}" stroke-width="4"/>`,
-    animatedSvg: (f: number) => {
-      const flameScale = 1 + Math.sin(f * 0.28) * 0.15;
-      return `<g transform="scale(1.8)">
-        <!-- Llamas traseras animadas -->
-        <g transform="scale(${flameScale})">
-          <path d="M -22,-10 Q -28,-30 -14,-34 Q 0,-42 8,-28 Q 22,-36 22,-14 Z" fill="#FBBF24" opacity="0.8"/>
-          <path d="M -14,-8 Q -18,-24 -8,-28 Q 0,-34 6,-22 Q 16,-28 16,-10 Z" fill="#F97316" opacity="0.9"/>
+    animatedSvg: (f: number, stepProgress?: number, currentState?: string) => {
+      const isCombustion = currentState === "combustion" || (currentState === undefined && f >= 75);
+      const flameScale = (isCombustion ? 1.18 : 0.92) + Math.sin(f * 0.28) * 0.14;
+      const dropY = (f * 1.4) % 18;
+      return `<g transform="scale(1.85)">
+        <!-- Aura de calor y llamas traseras animadas -->
+        <g transform="scale(${flameScale.toFixed(2)})">
+          <path d="M -24,-8 Q -32,-34 -14,-38 Q 0,-48 10,-32 Q 26,-40 24,-12 Z" fill="#FFE600" stroke="${S}" stroke-width="3" stroke-linejoin="round"/>
+          <path d="M -16,-6 Q -22,-26 -8,-30 Q 2,-38 8,-24 Q 18,-30 18,-8 Z" fill="#F97316" stroke="${S}" stroke-width="2.5" stroke-linejoin="round"/>
         </g>
-        <!-- Cuerpo del chile rojo brillante -->
-        <path d="M -14,-14 C -22,4 -10,22 0,28 C 10,22 22,4 14,-14 Z" fill="#EF4444" stroke="${S}" stroke-width="4.5" stroke-linejoin="round"/>
-        <path d="M -4,-8 Q -8,4 -2,16" fill="none" stroke="#F87171" stroke-width="3" stroke-linecap="round"/>
-        <!-- Tallo verde curvo -->
-        <path d="M 0,-14 Q 4,-26 14,-22" fill="none" stroke="#22C55E" stroke-width="4.5" stroke-linecap="round"/>
-        <!-- Rótulo 'CAPSAICINA' -->
-        <rect x="-26" y="26" width="52" height="11" rx="3" fill="#FFE600" stroke="${S}" stroke-width="3"/>
-        <text x="0" y="34" font-family="'Impact', 'Arial Black', sans-serif" font-size="7" font-weight="900" fill="#000" text-anchor="middle">CAPSAICINA</text>
+        <!-- Cuerpo voluminoso del chile habanero con pliegues neo-brutalistas -->
+        <path d="M -16,-14 C -24,2 -14,22 0,30 C 14,22 24,2 16,-14 C 10,-18 -10,-18 -16,-14 Z" fill="#EF4444" stroke="${S}" stroke-width="4.5" stroke-linejoin="round"/>
+        <path d="M -6,-12 Q -10,4 -4,20" fill="none" stroke="#991B1B" stroke-width="3" stroke-linecap="round"/>
+        <path d="M 6,-12 Q 10,4 4,20" fill="none" stroke="#991B1B" stroke-width="3" stroke-linecap="round"/>
+        <path d="M -10,-8 Q -13,4 -8,14" fill="none" stroke="#FCA5A5" stroke-width="3.5" stroke-linecap="round"/>
+        <!-- Cáliz y tallo verde curvo -->
+        <path d="M -10,-14 Q 0,-20 10,-14 L 6,-10 Q 0,-13 -6,-10 Z" fill="#16A34A" stroke="${S}" stroke-width="3" stroke-linejoin="round"/>
+        <path d="M 0,-16 Q 4,-30 16,-26" fill="none" stroke="#16A34A" stroke-width="6" stroke-linecap="round"/>
+        <path d="M 0,-16 Q 4,-30 16,-26" fill="none" stroke="#22C55E" stroke-width="2.5" stroke-linecap="round"/>
+        <!-- Gotas de aceite de capsaicina rezumando -->
+        ${isCombustion ? `<g>
+          <circle cx="-18" cy="${(-2 + dropY).toFixed(1)}" r="3.5" fill="#F59E0B" stroke="${S}" stroke-width="2"/>
+          <circle cx="19" cy="${(4 + ((dropY + 9) % 18)).toFixed(1)}" r="3" fill="#EF4444" stroke="${S}" stroke-width="2"/>
+        </g>` : ""}
       </g>`;
     },
     tags: ["chile", "habanero", "picante", "fuego", "capsaicina", "comida"],
@@ -8995,18 +9033,24 @@ export const PROPS_LIBRARY: Record<string, PropDef> = {
     family: "educacion_ciencia",
     defaultPlacement: "overhead",
     svg: `<rect x="-30" y="-12" width="60" height="24" rx="6" fill="#F8FAFC" stroke="${S}" stroke-width="4"/>`,
-    animatedSvg: (f: number) => {
-      const pulse = (0.7 + Math.sin(f * 0.16) * 0.3).toFixed(2);
-      return `<g transform="scale(1.8)">
-        <!-- Cuerpo del termómetro digital -->
-        <rect x="-32" y="-14" width="64" height="28" rx="7" fill="#F8FAFC" stroke="${S}" stroke-width="4"/>
-        <rect x="-24" y="-8" width="48" height="16" rx="3" fill="#022C22" stroke="${S}" stroke-width="2"/>
-        <!-- Pantalla LCD 36.5 °C en verde -->
-        <text x="0" y="4" font-family="'Impact', 'Arial Black', sans-serif" font-size="12" font-weight="900" fill="#22C55E" text-anchor="middle">36.5 °C</text>
-        <circle cx="20" cy="-2" r="2.5" fill="#22C55E" opacity="${pulse}"/>
-        <!-- Rótulo 'TEMPERATURA NORMAL' -->
-        <rect x="-30" y="20" width="60" height="11" rx="3" fill="#FFE600" stroke="${S}" stroke-width="3"/>
-        <text x="0" y="28" font-family="'Impact', 'Arial Black', sans-serif" font-size="6.5" font-weight="900" fill="#000" text-anchor="middle">CERO QUEMADURA</text>
+    animatedSvg: (f: number, stepProgress?: number, currentState?: string) => {
+      const isVerified = currentState === "verificado_normal" || (currentState === undefined && f >= 90);
+      const pulse = (0.7 + Math.sin(f * 0.18) * 0.3).toFixed(2);
+      return `<g transform="scale(1.85)">
+        <!-- Punta metálica sensor a la izquierda con ondas de escaneo -->
+        <rect x="-42" y="-5" width="12" height="10" rx="3" fill="#94A3B8" stroke="${S}" stroke-width="3.5"/>
+        <path d="M -46,-10 Q -52,0 -46,10" fill="none" stroke="#22C55E" stroke-width="3" stroke-linecap="round" opacity="${pulse}"/>
+        <!-- Carcasa del termómetro clínico digital -->
+        <path d="M -32,-16 L 26,-18 C 34,-18 38,-12 38,0 C 38,12 34,18 26,18 L -32,16 Z" fill="#F8FAFC" stroke="${S}" stroke-width="4.5" stroke-linejoin="round"/>
+        <rect x="24" y="-10" width="8" height="20" rx="2" fill="#3B82F6" stroke="${S}" stroke-width="2.5"/>
+        <!-- Pantalla LCD retroiluminada en verde esmeralda -->
+        <rect x="-24" y="-10" width="44" height="20" rx="3" fill="${isVerified ? "#064E3B" : "#1E293B"}" stroke="${S}" stroke-width="3"/>
+        <text x="-2" y="5" font-family="'Impact', 'Arial Black', sans-serif" font-size="12.5" font-weight="900" fill="#4ADE80" text-anchor="middle">36.5°C</text>
+        <!-- Insignia superior de check médico sin daño térmico -->
+        ${isVerified ? `<g transform="translate(0, -26)">
+          <circle cx="0" cy="0" r="10" fill="#22C55E" stroke="${S}" stroke-width="3"/>
+          <path d="M -4,0 L -1,3 L 5,-3" fill="none" stroke="#FFFFFF" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+        </g>` : ""}
       </g>`;
     },
     tags: ["termometro", "temperatura", "normal", "falso_fuego", "quimica", "boca"],
@@ -9018,23 +9062,29 @@ export const PROPS_LIBRARY: Record<string, PropDef> = {
     family: "educacion_ciencia",
     defaultPlacement: "overhead",
     svg: `<rect x="-24" y="-20" width="48" height="40" rx="8" fill="#8B5CF6" stroke="${S}" stroke-width="4"/>`,
-    animatedSvg: (f: number) => {
-      const gateOpen = Math.sin(f * 0.22) * 6;
-      return `<g transform="scale(1.8)">
-        <!-- Membrana celular violeta -->
-        <rect x="-32" y="10" width="64" height="16" fill="#A855F7" stroke="${S}" stroke-width="3.5"/>
-        <!-- Canal iónico TRPV1 con compuertas abiertas -->
-        <g transform="translate(${-gateOpen}, 0)">
-          <path d="M -18,-18 L -6,-18 L -6,10 L -18,10 Z" fill="#6366F1" stroke="${S}" stroke-width="3.5"/>
+    animatedSvg: (f: number, stepProgress?: number, currentState?: string) => {
+      const isHacked = currentState === "abierto_alarma" || (currentState === undefined && f >= 85);
+      const gateShift = isHacked ? 9 + Math.sin(f * 0.25) * 2 : 2;
+      const ionY = -22 + ((f * 2.2) % 42);
+      return `<g transform="scale(1.85)">
+        <!-- Bicapa lipídica de la membrana nerviosa -->
+        <rect x="-36" y="4" width="72" height="18" rx="4" fill="#F472B6" stroke="${S}" stroke-width="4"/>
+        <line x1="-32" y1="13" x2="32" y2="13" stroke="#BE185D" stroke-width="2.5" stroke-dasharray="4,4"/>
+        <!-- Compuertas proteicas izquierda y derecha del canal TRPV1 -->
+        <g transform="translate(${(-gateShift).toFixed(1)}, 0)">
+          <rect x="-18" y="-16" width="15" height="36" rx="6" fill="#7C3AED" stroke="${S}" stroke-width="4"/>
+          <rect x="-14" y="-11" width="5" height="18" rx="2" fill="#C4B5FD"/>
         </g>
-        <g transform="translate(${gateOpen}, 0)">
-          <path d="M 6,-18 L 18,-18 L 18,10 L 6,10 Z" fill="#6366F1" stroke="${S}" stroke-width="3.5"/>
+        <g transform="translate(${gateShift.toFixed(1)}, 0)">
+          <rect x="3" y="-16" width="15" height="36" rx="6" fill="#7C3AED" stroke="${S}" stroke-width="4"/>
+          <rect x="7" y="-11" width="5" height="18" rx="2" fill="#C4B5FD"/>
         </g>
-        <!-- Señal de alarma de fuego '43°C' -->
-        <rect x="-18" y="-30" width="36" height="12" rx="3" fill="#EF4444" stroke="${S}" stroke-width="2.5"/>
-        <text x="0" y="-21" font-family="'Impact', 'Arial Black', sans-serif" font-size="7.5" font-weight="900" fill="#FFF" text-anchor="middle">43°C ¡FUEGO!</text>
-        <rect x="-24" y="24" width="48" height="11" rx="3" fill="#FFE600" stroke="${S}" stroke-width="3"/>
-        <text x="0" y="32" font-family="'Impact', 'Arial Black', sans-serif" font-size="7" font-weight="900" fill="#000" text-anchor="middle">RECEPTOR TRPV1</text>
+        <!-- Molécula llave de capsaicina acoplada y flujo de iones Ca2+ -->
+        <polygon points="0,-16 -7,-28 0,-24 7,-28" fill="#EF4444" stroke="${S}" stroke-width="3" stroke-linejoin="round"/>
+        ${isHacked ? `<g>
+          <circle cx="0" cy="${ionY.toFixed(1)}" r="4.5" fill="#FFE600" stroke="${S}" stroke-width="2"/>
+          <circle cx="0" cy="${((ionY + 18) % 42 - 22).toFixed(1)}" r="4" fill="#38BDF8" stroke="${S}" stroke-width="2"/>
+        </g>` : ""}
       </g>`;
     },
     tags: ["receptor", "trpv1", "calor", "canal_ionico", "neurona", "biologia"],
@@ -9046,20 +9096,26 @@ export const PROPS_LIBRARY: Record<string, PropDef> = {
     family: "vida_cotidiana",
     defaultPlacement: "overhead",
     svg: `<path d="M -16,-22 L -12,20 L 12,20 L 16,-22 Z" fill="#38BDF8" stroke="${S}" stroke-width="4"/>`,
-    animatedSvg: (f: number) => {
-      const ripple = Math.sin(f * 0.2) * 3;
-      return `<g transform="scale(1.8)">
-        <!-- Vaso de vidrio con agua -->
-        <polygon points="-16,-22 -12,22 12,22 16,-22" fill="#E0F2FE" stroke="${S}" stroke-width="4" stroke-linejoin="round"/>
-        <polygon points="-14,-10 -10,20 10,20 14,-10" fill="#38BDF8" opacity="0.6"/>
-        <!-- Gotas aceitosas de capsaicina flotando sin disolverse -->
-        <circle cx="-6" cy="${-6 + ripple}" r="4" fill="#EF4444" stroke="${S}" stroke-width="2"/>
-        <circle cx="6" cy="${-8 - ripple}" r="4.5" fill="#F97316" stroke="${S}" stroke-width="2"/>
-        <!-- Gran Cruz Roja 'EL AGUA EMPEORA' -->
-        <line x1="-22" y1="-18" x2="22" y2="18" stroke="#EF4444" stroke-width="5" stroke-linecap="round"/>
-        <line x1="22" y1="-18" x2="-22" y2="18" stroke="#EF4444" stroke-width="5" stroke-linecap="round"/>
-        <rect x="-26" y="26" width="52" height="11" rx="3" fill="#EF4444" stroke="${S}" stroke-width="3"/>
-        <text x="0" y="34" font-family="'Impact', 'Arial Black', sans-serif" font-size="7" font-weight="900" fill="#FFF" text-anchor="middle">¡NO USES AGUA!</text>
+    animatedSvg: (f: number, stepProgress?: number, currentState?: string) => {
+      const isRepelled = currentState === "esparciendo_error" || (currentState === undefined && f >= 80);
+      const spreadX = isRepelled ? 11 + Math.sin(f * 0.26) * 4 : 4 + Math.sin(f * 0.16) * 2;
+      const ripple = Math.sin(f * 0.22) * 2.5;
+      return `<g transform="scale(1.85)">
+        <!-- Vaso de cristal con agua helada -->
+        <polygon points="-20,-22 -15,24 15,24 20,-22" fill="#E0F2FE" stroke="${S}" stroke-width="4.5" stroke-linejoin="round"/>
+        <polygon points="-18,-8 -13,21 13,21 18,-8" fill="#38BDF8" opacity="0.75"/>
+        <path d="M -18,-8 Q -9,${-11 + ripple} 0,-8 T 18,-8" fill="none" stroke="#0284C7" stroke-width="3.5"/>
+        <!-- Gotas de aceite de capsaicina insolubles repeliéndose hacia los bordes -->
+        <circle cx="${(-spreadX).toFixed(1)}" cy="${(-8 + ripple).toFixed(1)}" r="5.5" fill="#EF4444" stroke="${S}" stroke-width="2.5"/>
+        <circle cx="${spreadX.toFixed(1)}" cy="${(-7 - ripple).toFixed(1)}" r="6" fill="#F97316" stroke="${S}" stroke-width="2.5"/>
+        <circle cx="0" cy="${(-12 + ripple * 0.6).toFixed(1)}" r="4.5" fill="#EF4444" stroke="${S}" stroke-width="2.5"/>
+        <!-- Aspa roja de error químico -->
+        ${isRepelled ? `<g>
+          <line x1="-22" y1="-16" x2="22" y2="18" stroke="#EF4444" stroke-width="7" stroke-linecap="round"/>
+          <line x1="-22" y1="-16" x2="22" y2="18" stroke="${S}" stroke-width="2.5" stroke-linecap="round"/>
+          <line x1="22" y1="-16" x2="-22" y2="18" stroke="#EF4444" stroke-width="7" stroke-linecap="round"/>
+          <line x1="22" y1="-16" x2="-22" y2="18" stroke="${S}" stroke-width="2.5" stroke-linecap="round"/>
+        </g>` : ""}
       </g>`;
     },
     tags: ["vaso", "agua", "aceite", "empeora", "error", "capsaicina"],
@@ -9071,17 +9127,28 @@ export const PROPS_LIBRARY: Record<string, PropDef> = {
     family: "naturaleza_alimentos",
     defaultPlacement: "overhead",
     svg: `<rect x="-18" y="-20" width="36" height="40" rx="3" fill="#F8FAFC" stroke="${S}" stroke-width="4"/>`,
-    animatedSvg: (f: number) => {
-      const wave = Math.sin(f * 0.16) * 2;
-      return `<g transform="scale(1.8)">
-        <!-- Cartón de leche azul y blanco -->
-        <polygon points="-18,-14 -12,-26 12,-26 18,-14 18,24 -18,24" fill="#F8FAFC" stroke="${S}" stroke-width="4" stroke-linejoin="round"/>
-        <rect x="-18" y="-2" width="36" height="26" fill="#3B82F6" stroke="${S}" stroke-width="3"/>
-        <text x="0" y="14" font-family="'Impact', 'Arial Black', sans-serif" font-size="9" font-weight="900" fill="#FFF" text-anchor="middle">LECHE</text>
-        <!-- Micela de caseína atrapando capsaicina -->
-        <circle cx="0" cy="${-8 + wave}" r="5" fill="#FFE600" stroke="${S}" stroke-width="2"/>
-        <rect x="-26" y="28" width="52" height="11" rx="3" fill="#FFE600" stroke="${S}" stroke-width="3"/>
-        <text x="0" y="36" font-family="'Impact', 'Arial Black', sans-serif" font-size="7" font-weight="900" fill="#000" text-anchor="middle">CASEÍNA = JABÓN</text>
+    animatedSvg: (f: number, stepProgress?: number, currentState?: string) => {
+      const isTrapping = currentState === "encapsulando_capsaicina" || (currentState === undefined && f >= 80);
+      const rotMicelle = (f * 2.5) % 360;
+      const orbitR = isTrapping ? 9 : 15;
+      return `<g transform="scale(1.85)">
+        <!-- Envase Brik de leche a la izquierda inclinado vertiendo caseína -->
+        <g transform="translate(-14, 2) rotate(14)">
+          <polygon points="-13,-12 -8,-22 8,-22 13,-12 13,20 -13,20" fill="#FFFFFF" stroke="${S}" stroke-width="4" stroke-linejoin="round"/>
+          <rect x="-13" y="-2" width="26" height="16" fill="#2563EB" stroke="${S}" stroke-width="3"/>
+          <path d="M -8,-22 L 0,-12 L 8,-22" fill="none" stroke="${S}" stroke-width="3" stroke-linejoin="round"/>
+        </g>
+        <!-- Micela de caseína actuando como detergente sobre la gota roja de capsaicina -->
+        <g transform="translate(15, -2)">
+          <circle cx="0" cy="0" r="14" fill="#DBEAFE" stroke="#2563EB" stroke-width="3" stroke-dasharray="5,3"/>
+          <circle cx="0" cy="0" r="6.5" fill="#EF4444" stroke="${S}" stroke-width="2.5"/>
+          <g transform="rotate(${rotMicelle})">
+            <circle cx="${orbitR}" cy="0" r="3.5" fill="#FFE600" stroke="${S}" stroke-width="2"/>
+            <circle cx="${-orbitR}" cy="0" r="3.5" fill="#FFE600" stroke="${S}" stroke-width="2"/>
+            <circle cx="0" cy="${orbitR}" r="3.5" fill="#38BDF8" stroke="${S}" stroke-width="2"/>
+            <circle cx="0" cy="${-orbitR}" r="3.5" fill="#38BDF8" stroke="${S}" stroke-width="2"/>
+          </g>
+        </g>
       </g>`;
     },
     tags: ["leche", "caseina", "detergente", "micela", "alivio", "proteina"],
@@ -9093,20 +9160,26 @@ export const PROPS_LIBRARY: Record<string, PropDef> = {
     family: "vida_cotidiana",
     defaultPlacement: "right",
     svg: `<polygon points="-16,-22 -12,22 12,22 16,-22" fill="#F8FAFC" stroke="${S}" stroke-width="4"/>`,
-    animatedSvg: (f: number) => {
-      const sparkle = (0.7 + Math.sin(f * 0.2) * 0.3).toFixed(2);
-      return `<g transform="scale(1.8)">
-        <!-- Vaso con leche blanca cremosa -->
-        <polygon points="-16,-22 -12,22 12,22 16,-22" fill="#F8FAFC" stroke="${S}" stroke-width="4" stroke-linejoin="round"/>
-        <!-- Cubitos de hielo -->
-        <rect x="-8" y="-14" width="7" height="7" rx="1.5" fill="#BAE6FD" stroke="${S}" stroke-width="1.5"/>
-        <rect x="2" y="-12" width="7" height="7" rx="1.5" fill="#BAE6FD" stroke="${S}" stroke-width="1.5"/>
-        <!-- Pajita roja y blanca -->
-        <line x1="2" y1="-28" x2="-4" y2="12" stroke="#EF4444" stroke-width="3.5" stroke-linecap="round"/>
-        <!-- Destellos de alivio -->
-        <polygon points="18,-18 20,-12 26,-10 20,-8 18,-2 16,-8 10,-10 16,-12" fill="#FFE600" opacity="${sparkle}"/>
-        <rect x="-24" y="26" width="48" height="11" rx="3" fill="#22C55E" stroke="${S}" stroke-width="3"/>
-        <text x="0" y="34" font-family="'Impact', 'Arial Black', sans-serif" font-size="7" font-weight="900" fill="#FFF" text-anchor="middle">¡ALIVIO TOTAL!</text>
+    animatedSvg: (f: number, stepProgress?: number, currentState?: string) => {
+      const sparkle = (0.65 + Math.sin(f * 0.22) * 0.35).toFixed(2);
+      const bob = (Math.sin(f * 0.16) * 2.5).toFixed(1);
+      return `<g transform="scale(1.85)">
+        <!-- Aura circular refrescante -->
+        <circle cx="0" cy="0" r="28" fill="#6EE7B7" opacity="0.25"/>
+        <!-- Pajita rayada -->
+        <line x1="6" y1="-30" x2="-4" y2="12" stroke="#EF4444" stroke-width="5" stroke-linecap="round"/>
+        <line x1="6" y1="-30" x2="-4" y2="12" stroke="${S}" stroke-width="2" stroke-linecap="round"/>
+        <!-- Vaso de leche cremosa fría -->
+        <polygon points="-18,-20 -13,24 13,24 18,-20" fill="#FFFFFF" stroke="${S}" stroke-width="4.5" stroke-linejoin="round"/>
+        <polygon points="-16,-10 -12,21 12,21 16,-10" fill="#F1F5F9"/>
+        <!-- Cubitos de hielo flotando -->
+        <g transform="translate(0, ${bob})">
+          <rect x="-10" y="-13" width="9" height="9" rx="2" fill="#BAE6FD" stroke="${S}" stroke-width="2.5" transform="rotate(-10 -5 -8)"/>
+          <rect x="2" y="-11" width="9" height="9" rx="2" fill="#BAE6FD" stroke="${S}" stroke-width="2.5" transform="rotate(12 6 -6)"/>
+        </g>
+        <!-- Destellos estelares de frescura -->
+        <polygon points="22,-18 24,-12 30,-10 24,-8 22,-2 20,-8 14,-10 20,-12" fill="#FFE600" stroke="${S}" stroke-width="2" opacity="${sparkle}"/>
+        <polygon points="-22,-6 -20,-2 -16,0 -20,2 -22,6 -24,2 -28,0 -24,-2" fill="#38BDF8" stroke="${S}" stroke-width="1.8" opacity="${sparkle}"/>
       </g>`;
     },
     tags: ["vaso", "leche", "fria", "hielo", "alivio", "frescura", "picante"],
@@ -10043,6 +10116,1450 @@ export const PROPS_LIBRARY: Record<string, PropDef> = {
       </g>`;
     },
     tags: ["taza", "cafe", "espuma", "sonrisa", "latte", "brindis", "vida_cotidiana", "pareidolia"],
+  },
+
+  limon_bolsa_dinero_invisible: {
+    id: "limon_bolsa_dinero_invisible",
+    name: "Medio Limón Exprimiendo Jugo y Bolsa de Banco",
+    family: "vida_cotidiana",
+    defaultPlacement: "both",
+    svg: `<circle cx="-10" cy="0" r="14" fill="#FDE047" stroke="${S}" stroke-width="4"/>`,
+    animatedSvg: (f: number) => {
+      const dropY1 = ((f * 1.8) % 24).toFixed(1);
+      const dropY2 = (((f + 12) * 1.8) % 24).toFixed(1);
+      const squeeze = (1 + Math.sin(f * 0.25) * 0.08).toFixed(2);
+      return `<g transform="scale(1.75)">
+        <!-- Saco de dinero del banco a la derecha -->
+        <g transform="translate(12, 4)">
+          <path d="M -12,14 C -16,14 -16,-6 -8,-12 L 8,-12 C 16,-6 16,14 12,14 Z" fill="#D97706" stroke="${S}" stroke-width="3"/>
+          <path d="M -6,-12 L -10,-18 L 0,-15 L 10,-18 L 6,-12 Z" fill="#B45309" stroke="${S}" stroke-width="2.5"/>
+          <line x1="-7" y1="-12" x2="7" y2="-12" stroke="#EF4444" stroke-width="3"/>
+          <text x="0" y="6" font-family="'Impact', 'Arial Black', sans-serif" font-size="12" font-weight="900" fill="#22C55E" stroke="${S}" stroke-width="0.8" text-anchor="middle">$</text>
+        </g>
+
+        <!-- Medio limón jugoso exprimiéndose a la izquierda -->
+        <g transform="translate(-14, -6) scale(${squeeze}) rotate(-20)">
+          <path d="M -14,0 A 14,14 0 0,1 14,0 Z" fill="#FACC15" stroke="${S}" stroke-width="3"/>
+          <ellipse cx="0" cy="0" rx="14" ry="4" fill="#FEF08A" stroke="${S}" stroke-width="2.5"/>
+          <!-- Gajos cítricos -->
+          <line x1="-8" y1="0" x2="8" y2="0" stroke="#EAB308" stroke-width="1.5"/>
+          <line x1="0" y1="-3" x2="0" y2="3" stroke="#EAB308" stroke-width="1.5"/>
+        </g>
+
+        <!-- Gotas de zumo de limón cayendo -->
+        <circle cx="-16" cy="${parseFloat(dropY1) - 2}" r="2.8" fill="#FEF08A" stroke="${S}" stroke-width="1.2"/>
+        <circle cx="-10" cy="${parseFloat(dropY2) - 2}" r="2.2" fill="#FDE047" stroke="${S}" stroke-width="1.2"/>
+
+        <!-- Rótulo inferior -->
+        <rect x="-28" y="24" width="56" height="11" rx="3" fill="#DC2626" stroke="${S}" stroke-width="2.5"/>
+        <text x="0" y="32" font-family="'Impact', 'Arial Black', sans-serif" font-size="6" font-weight="900" fill="#FFF" text-anchor="middle">¡JUGO = 0% INVISIBLE!</text>
+      </g>`;
+    },
+    tags: ["limon", "jugo", "banco", "robo", "invisible", "dunning_kruger", "dinero"],
+  },
+
+  esposas_papel_tinta_limon: {
+    id: "esposas_papel_tinta_limon",
+    name: "Esposas Policiales y Papel con Tinta Invisible de Limón",
+    family: "historia_exploracion",
+    defaultPlacement: "both",
+    svg: `<rect x="-20" y="-16" width="40" height="32" rx="4" fill="#94A3B8" stroke="${S}" stroke-width="4"/>`,
+    animatedSvg: (f: number) => {
+      const sway = (Math.sin(f * 0.22) * 4).toFixed(1);
+      const flameScale = (0.9 + Math.sin(f * 0.35) * 0.15).toFixed(2);
+      return `<g transform="scale(1.75)">
+        <!-- Hoja de papel revelando tinta de limón al calor -->
+        <g transform="translate(10, -2)">
+          <rect x="-14" y="-18" width="28" height="34" rx="2" fill="#FEF3C7" stroke="${S}" stroke-width="3"/>
+          <text x="0" y="-7" font-family="'Arial Black', sans-serif" font-size="4.2" font-weight="900" fill="#D97706" text-anchor="middle">TINTA DE</text>
+          <text x="0" y="0" font-family="'Arial Black', sans-serif" font-size="4.5" font-weight="900" fill="#B45309" text-anchor="middle">LIMÓN</text>
+          <!-- Vela pequeña calentando el papel -->
+          <rect x="-3" y="10" width="6" height="8" fill="#F8FAFC" stroke="${S}" stroke-width="1.5"/>
+          <path d="M 0,10 C -3,6 0,2 0,2 C 0,2 3,6 0,10 Z" fill="#F59E0B" transform="scale(${flameScale})"/>
+        </g>
+
+        <!-- Esposas metálicas cerradas a la izquierda -->
+        <g transform="translate(-14, 2) rotate(${sway})">
+          <!-- Cadena central -->
+          <line x1="-6" y1="-8" x2="6" y2="-8" stroke="#475569" stroke-width="3" stroke-dasharray="2 2"/>
+          <!-- Aro izquierdo -->
+          <circle cx="-10" cy="2" r="8" fill="none" stroke="#94A3B8" stroke-width="4"/>
+          <circle cx="-10" cy="2" r="8" fill="none" stroke="${S}" stroke-width="1.5"/>
+          <!-- Aro derecho -->
+          <circle cx="8" cy="2" r="8" fill="none" stroke="#94A3B8" stroke-width="4"/>
+          <circle cx="8" cy="2" r="8" fill="none" stroke="${S}" stroke-width="1.5"/>
+        </g>
+
+        <!-- Rótulo inferior -->
+        <rect x="-28" y="24" width="56" height="11" rx="3" fill="#1D4ED8" stroke="${S}" stroke-width="2.5"/>
+        <text x="0" y="32" font-family="'Impact', 'Arial Black', sans-serif" font-size="5.8" font-weight="900" fill="#FFF" text-anchor="middle">¡PERO SI USÉ EL JUGO!</text>
+      </g>`;
+    },
+    tags: ["esposas", "policia", "arresto", "tinta", "invisible", "limon", "papel"],
+  },
+
+  pizarra_curva_dunning_kruger: {
+    id: "pizarra_curva_dunning_kruger",
+    name: "Pizarra con Gráfica del Efecto Dunning-Kruger",
+    family: "educacion_ciencia",
+    defaultPlacement: "right",
+    svg: `<rect x="-24" y="-18" width="48" height="36" rx="4" fill="#064E3B" stroke="${S}" stroke-width="4"/>`,
+    animatedSvg: (f: number) => {
+      const dotPulse = (1 + Math.sin(f * 0.28) * 0.2).toFixed(2);
+      return `<g transform="scale(1.75)">
+        <!-- Marco de madera y pizarra verde académica -->
+        <rect x="-28" y="-22" width="56" height="42" rx="4" fill="#B45309" stroke="${S}" stroke-width="3.5"/>
+        <rect x="-24" y="-18" width="48" height="34" rx="2" fill="#064E3B" stroke="${S}" stroke-width="2"/>
+
+        <!-- Ejes cartesianos -->
+        <line x1="-18" y1="10" x2="-18" y2="-14" stroke="#FFFFFF" stroke-width="2"/>
+        <line x1="-18" y1="10" x2="20" y2="10" stroke="#FFFFFF" stroke-width="2"/>
+
+        <!-- Curva clásica de Dunning-Kruger en rojo brillante y amarillo -->
+        <path d="M -18,10 L -10,-12 Q -3,12 4,8 Q 12,4 19,-4" fill="none" stroke="#EF4444" stroke-width="3.5" stroke-linecap="round"/>
+
+        <!-- Punto brillante en el pico de la ignorancia -->
+        <g transform="translate(-10, -12) scale(${dotPulse})">
+          <circle cx="0" cy="0" r="3.5" fill="#FDE047" stroke="${S}" stroke-width="1.2"/>
+        </g>
+
+        <!-- Etiquetas de ejes -->
+        <text x="-4" y="-12" font-family="'Arial Black', sans-serif" font-size="3.8" font-weight="900" fill="#FDE047">PICO 100%</text>
+        <text x="2" y="15" font-family="'Arial Black', sans-serif" font-size="3.5" font-weight="900" fill="#A7F3D0" text-anchor="middle">SABIDURÍA →</text>
+
+        <!-- Rótulo inferior -->
+        <rect x="-28" y="24" width="56" height="11" rx="3" fill="#047857" stroke="${S}" stroke-width="2.5"/>
+        <text x="0" y="32" font-family="'Impact', 'Arial Black', sans-serif" font-size="6" font-weight="900" fill="#FFF" text-anchor="middle">CURVA DUNNING-KRUGER</text>
+      </g>`;
+    },
+    tags: ["pizarra", "grafica", "curva", "dunning", "kruger", "confianza", "sabiduria"],
+  },
+
+  megafono_bandera_cima_ignorancia: {
+    id: "megafono_bandera_cima_ignorancia",
+    name: "Megáfono de Soberbia y Bandera de Cima de la Ignorancia",
+    family: "reacciones_humor",
+    defaultPlacement: "right",
+    svg: `<polygon points="-16,-6 16,-16 16,16 -16,6" fill="#EF4444" stroke="${S}" stroke-width="4"/>`,
+    animatedSvg: (f: number) => {
+      const waveScale = (1 + Math.sin(f * 0.3) * 0.15).toFixed(2);
+      const flagSkew = (Math.sin(f * 0.25) * 3).toFixed(1);
+      return `<g transform="scale(1.75)">
+        <!-- Asta y bandera de falso campeón detrás -->
+        <line x1="-14" y1="-26" x2="-14" y2="20" stroke="#1E293B" stroke-width="3.5" stroke-linecap="round"/>
+        <g transform="translate(-14, -24) skewY(${flagSkew})">
+          <polygon points="0,0 28,6 0,14" fill="#FACC15" stroke="${S}" stroke-width="2.5"/>
+          <text x="10" y="9" font-family="'Impact', 'Arial Black', sans-serif" font-size="4.5" font-weight="900" fill="#000" text-anchor="middle">GENIO</text>
+        </g>
+
+        <!-- Megáfono rojo y blanco gritando -->
+        <g transform="translate(2, 2) rotate(-12)">
+          <polygon points="-14,-4 12,-14 12,10 -14,4" fill="#EF4444" stroke="${S}" stroke-width="3"/>
+          <rect x="-18" y="-4" width="5" height="8" rx="1" fill="#F8FAFC" stroke="${S}" stroke-width="2"/>
+          <path d="M -10,4 L -8,13 L -3,13 L -4,4" fill="#1E293B" stroke="${S}" stroke-width="2"/>
+          <!-- Ondas acústicas estridentes -->
+          <g transform="scale(${waveScale})">
+            <path d="M 16,-10 Q 22,-2 16,6" fill="none" stroke="#FDE047" stroke-width="2.5" stroke-linecap="round"/>
+            <path d="M 21,-14 Q 29,-2 21,10" fill="none" stroke="#F59E0B" stroke-width="2" stroke-linecap="round"/>
+          </g>
+        </g>
+
+        <!-- Rótulo inferior -->
+        <rect x="-28" y="24" width="56" height="11" rx="3" fill="#DC2626" stroke="${S}" stroke-width="2.5"/>
+        <text x="0" y="32" font-family="'Impact', 'Arial Black', sans-serif" font-size="5.8" font-weight="900" fill="#FFF" text-anchor="middle">CIMA DE LA IGNORANCIA</text>
+      </g>`;
+    },
+    tags: ["megafono", "bandera", "cima", "ignorancia", "soberbia", "experto", "grito"],
+  },
+
+  torre_libros_valle_desesperacion: {
+    id: "torre_libros_valle_desesperacion",
+    name: "Pila de Libros Complejos y Fórmulas en el Valle",
+    family: "educacion_ciencia",
+    defaultPlacement: "both",
+    svg: `<rect x="-20" y="-20" width="40" height="40" rx="3" fill="#3B82F6" stroke="${S}" stroke-width="4"/>`,
+    animatedSvg: (f: number) => {
+      const wobble = (Math.sin(f * 0.22) * 2).toFixed(1);
+      return `<g transform="scale(1.75)">
+        <!-- Torre tambaleante de libros pesados -->
+        <g transform="rotate(${wobble})">
+          <!-- Libro base 1 (Rojo) -->
+          <rect x="-22" y="10" width="44" height="10" rx="2" fill="#EF4444" stroke="${S}" stroke-width="2.8"/>
+          <rect x="-18" y="12" width="36" height="6" fill="#FEF3C7"/>
+          <!-- Libro 2 (Azul) -->
+          <rect x="-20" y="0" width="40" height="10" rx="2" fill="#2563EB" stroke="${S}" stroke-width="2.8"/>
+          <rect x="-16" y="2" width="32" height="6" fill="#FFFFFF"/>
+          <!-- Libro 3 (Verde) -->
+          <rect x="-24" y="-10" width="42" height="10" rx="2" fill="#059669" stroke="${S}" stroke-width="2.8"/>
+          <rect x="-20" y="-8" width="34" height="6" fill="#FEF3C7"/>
+          <!-- Libro 4 superior inclinado (Morado) -->
+          <g transform="translate(2, -16) rotate(8)">
+            <rect x="-18" y="-4" width="36" height="9" rx="2" fill="#7C3AED" stroke="${S}" stroke-width="2.8"/>
+            <text x="0" y="2.5" font-family="'Arial Black', sans-serif" font-size="4.2" font-weight="900" fill="#FDE047" text-anchor="middle">VOLUMEN I / M</text>
+          </g>
+        </g>
+
+        <!-- Fórmulas complejas flotando alrededor -->
+        <text x="-22" y="-18" font-family="'Courier New', monospace" font-size="6" font-weight="900" fill="#38BDF8">∫f(x)</text>
+        <text x="14" y="-18" font-family="'Courier New', monospace" font-size="6" font-weight="900" fill="#F87171">∑∞</text>
+
+        <!-- Rótulo inferior -->
+        <rect x="-28" y="24" width="56" height="11" rx="3" fill="#475569" stroke="${S}" stroke-width="2.5"/>
+        <text x="0" y="32" font-family="'Impact', 'Arial Black', sans-serif" font-size="6.2" font-weight="900" fill="#FFF" text-anchor="middle">¡NO SÉ CASI NADA!</text>
+      </g>`;
+    },
+    tags: ["libros", "torre", "valle", "desesperacion", "formulas", "complejidad", "estudio"],
+  },
+
+  libro_globo_depende_sabiduria: {
+    id: "libro_globo_depende_sabiduria",
+    name: "Libro Abierto y Bocadillo DEPENDE del Experto",
+    family: "educacion_ciencia",
+    defaultPlacement: "both",
+    svg: `<rect x="-22" y="-16" width="44" height="32" rx="4" fill="#0284C7" stroke="${S}" stroke-width="4"/>`,
+    animatedSvg: (f: number) => {
+      const floatY = (Math.sin(f * 0.18) * 1.8).toFixed(1);
+      return `<g transform="scale(1.75)">
+        <!-- Globo de diálogo prudente arriba: DEPENDE... -->
+        <g transform="translate(0, ${parseFloat(floatY) - 12})">
+          <rect x="-24" y="-14" width="48" height="18" rx="6" fill="#FFFFFF" stroke="${S}" stroke-width="3"/>
+          <polygon points="-4,4 4,4 -2,10" fill="#FFFFFF" stroke="${S}" stroke-width="2.5"/>
+          <text x="0" y="-2" font-family="'Impact', 'Arial Black', sans-serif" font-size="7.5" font-weight="900" fill="#0F172A" text-anchor="middle">«DEPENDE...»</text>
+        </g>
+
+        <!-- Libro abierto de sabiduría serena abajo -->
+        <g transform="translate(0, 10)">
+          <path d="M -22,8 L 0,12 L 22,8 L 22,-8 L 0,-4 L -22,-8 Z" fill="#0284C7" stroke="${S}" stroke-width="3"/>
+          <path d="M -19,5 L 0,9 L 19,5 L 19,-6 L 0,-2 L -19,-6 Z" fill="#FEF3C7" stroke="${S}" stroke-width="1.8"/>
+          <line x1="0" y1="-2" x2="0" y2="9" stroke="${S}" stroke-width="2"/>
+          <line x1="-14" y1="-1" x2="-4" y2="1" stroke="#64748B" stroke-width="1.5"/>
+          <line x1="4" y1="1" x2="14" y2="-1" stroke="#64748B" stroke-width="1.5"/>
+        </g>
+
+        <!-- Rótulo inferior -->
+        <rect x="-28" y="24" width="56" height="11" rx="3" fill="#059669" stroke="${S}" stroke-width="2.5"/>
+        <text x="0" y="32" font-family="'Impact', 'Arial Black', sans-serif" font-size="6.2" font-weight="900" fill="#FFF" text-anchor="middle">PRUDENCIA Y HUMILDAD</text>
+      </g>`;
+    },
+    tags: ["libro", "depende", "sabiduria", "experto", "prudencia", "humildad", "iluminacion"],
+  },
+
+  espejo_reflejo_limon_redes: {
+    id: "espejo_reflejo_limon_redes",
+    name: "Espejo de Mano con Reflejo de Limón y Móvil",
+    family: "vida_cotidiana",
+    defaultPlacement: "both",
+    svg: `<circle cx="0" cy="-4" r="18" fill="#38BDF8" stroke="${S}" stroke-width="4"/>`,
+    animatedSvg: (f: number) => {
+      const glint = (Math.sin(f * 0.25) * 3).toFixed(1);
+      return `<g transform="scale(1.75)">
+        <!-- Mango del espejo de mano -->
+        <rect x="-3.5" y="10" width="7" height="16" rx="3" fill="#D97706" stroke="${S}" stroke-width="2.5"/>
+
+        <!-- Marco ovalado del espejo -->
+        <circle cx="0" cy="-4" r="19" fill="#F59E0B" stroke="${S}" stroke-width="3.5"/>
+        <circle cx="0" cy="-4" r="15" fill="#E0F2FE" stroke="${S}" stroke-width="2"/>
+
+        <!-- Reflejo cómico dentro del espejo: carita con medio limón en la cabeza -->
+        <circle cx="0" cy="-2" r="7" fill="#FFFFFF" stroke="${S}" stroke-width="2"/>
+        <circle cx="-2.5" cy="-3" r="1.2" fill="#000"/>
+        <circle cx="2.5" cy="-3" r="1.2" fill="#000"/>
+        <path d="M -3,1 Q 0,3.5 3,1" fill="none" stroke="#000" stroke-width="1.5" stroke-linecap="round"/>
+        <!-- Medio limón amarillo sobre el reflejo -->
+        <path d="M -6,-9 A 6,6 0 0,1 6,-9 Z" fill="#FACC15" stroke="${S}" stroke-width="1.8"/>
+        <!-- Gotas amarillas en la cara reflejada -->
+        <circle cx="4" cy="-5" r="1.3" fill="#FACC15"/>
+
+        <!-- Brillo del cristal -->
+        <line x1="${-8 + parseFloat(glint)}" y1="-13" x2="${-2 + parseFloat(glint)}" y2="-7" stroke="#FFFFFF" stroke-width="2.5" stroke-linecap="round"/>
+
+        <!-- Rótulo inferior -->
+        <rect x="-28" y="24" width="56" height="11" rx="3" fill="#7C3AED" stroke="${S}" stroke-width="2.5"/>
+        <text x="0" y="32" font-family="'Impact', 'Arial Black', sans-serif" font-size="6.2" font-weight="900" fill="#FFF" text-anchor="middle">¡DUDA DE TI MISMO!</text>
+      </g>`;
+    },
+    tags: ["espejo", "reflejo", "limon", "redes", "autcritica", "humildad", "duda"],
+  },
+
+  pala_zanja_erosion_lodo: {
+    id: "pala_zanja_erosion_lodo",
+    name: "Pala de Jardinería Cavando y Lanzando Terrones de Lodo",
+    family: "educacion_ciencia",
+    defaultPlacement: "both",
+    svg: `<rect x="-18" y="-22" width="36" height="44" rx="4" fill="#78350F" stroke="${S}" stroke-width="4"/>`,
+    animatedSvg: (f: number, stepProgress?: number, currentState?: string) => {
+      const cycle = Math.sin(f * 0.24);
+      const shovelRot = currentState === "alarma"
+        ? (-10 + Math.sin(f * 0.3) * 6).toFixed(1)
+        : (-28 + cycle * 24).toFixed(1);
+      const shovelY = (Math.cos(f * 0.24) * 5).toFixed(1);
+      const clodT = (f * 0.08) % 1;
+      const clodX = (10 + clodT * 28).toFixed(1);
+      const clodY = (-6 - Math.sin(clodT * Math.PI) * 22).toFixed(1);
+      const splashT = ((f + 15) * 0.08) % 1;
+      const splashX = (-8 - splashT * 24).toFixed(1);
+      const splashY = (-4 - Math.sin(splashT * Math.PI) * 18).toFixed(1);
+      return `<g transform="scale(1.85)">
+        <!-- Terrones de lodo y gotas saliendo disparados por la pala -->
+        <g opacity="${(1 - clodT * 0.7).toFixed(2)}">
+          <path d="M ${clodX},${clodY} C ${parseFloat(clodX) + 5},${parseFloat(clodY) - 4} ${parseFloat(clodX) + 8},${parseFloat(clodY) + 3} ${parseFloat(clodX) + 2},${parseFloat(clodY) + 6} Z" fill="#5C2D0C" stroke="${S}" stroke-width="2"/>
+          <circle cx="${parseFloat(clodX) + 6}" cy="${parseFloat(clodY) - 5}" r="2.5" fill="#38BDF8" stroke="${S}" stroke-width="1.4"/>
+        </g>
+        <g opacity="${(1 - splashT * 0.7).toFixed(2)}">
+          <circle cx="${splashX}" cy="${splashY}" r="3.2" fill="#78350F" stroke="${S}" stroke-width="1.8"/>
+          <circle cx="${parseFloat(splashX) - 5}" cy="${parseFloat(splashY) - 4}" r="2.2" fill="#0284C7" stroke="${S}" stroke-width="1.4"/>
+        </g>
+
+        <!-- Pala de acero y madera animada con pivote físico -->
+        <g transform="translate(0, ${shovelY}) rotate(${shovelRot})">
+          <path d="M -8,-30 L 8,-30 L 6,-23 L -6,-23 Z" fill="#EF4444" stroke="${S}" stroke-width="2.5" stroke-linejoin="round"/>
+          <rect x="-4" y="-28" width="8" height="3" rx="1" fill="#F8FAFC" stroke="${S}" stroke-width="1.4"/>
+          <rect x="-2.8" y="-23" width="5.6" height="25" rx="2" fill="#D97706" stroke="${S}" stroke-width="2.5"/>
+          <line x1="-1" y1="-20" x2="-1" y2="-2" stroke="#F59E0B" stroke-width="1.2"/>
+          <path d="M -11,0 L 11,0 L 9,15 Q 0,23 -9,15 Z" fill="#94A3B8" stroke="${S}" stroke-width="2.8" stroke-linejoin="round"/>
+          <path d="M -7,2 L 7,2 L 5,13 Q 0,18 -5,13 Z" fill="#CBD5E1"/>
+          <path d="M -9,8 Q 0,3 9,8 Q 6,18 0,19 Q -6,18 -9,8 Z" fill="#5C2D0C" stroke="${S}" stroke-width="2"/>
+        </g>
+      </g>`;
+    },
+    tags: ["pala", "zanja", "lodo", "erosion", "charco", "lluvia", "patio"],
+  },
+
+  tabla_madera_rota_vectores_presion: {
+    id: "tabla_madera_rota_vectores_presion",
+    name: "Tabla de Madera Pandeándose y Quebrándose en Dos",
+    family: "educacion_ciencia",
+    defaultPlacement: "both",
+    svg: `<rect x="-22" y="-18" width="44" height="36" rx="4" fill="#B45309" stroke="${S}" stroke-width="4"/>`,
+    animatedSvg: (f: number, stepProgress?: number, currentState?: string) => {
+      const isBroken = currentState === "roto" || (currentState === undefined && f >= 42);
+      const prog = stepProgress ?? Math.min(1, Math.max(0, (f - 42) / 25));
+      if (!isBroken) {
+        const bow = (3 + Math.sin(f * 0.35) * 2.5).toFixed(1);
+        const shakeX = (Math.sin(f * 0.6) * 1.5).toFixed(1);
+        return `<g transform="scale(1.85) translate(${shakeX}, 0)">
+          <g>
+            <line x1="-26" y1="-12" x2="-10" y2="-12" stroke="#EF4444" stroke-width="3" stroke-linecap="round"/>
+            <polygon points="-8,-12 -14,-16 -14,-8" fill="#EF4444" stroke="${S}" stroke-width="1.2"/>
+            <line x1="-30" y1="0" x2="-8" y2="0" stroke="#EF4444" stroke-width="4.2" stroke-linecap="round"/>
+            <polygon points="-6,0 -13,-4.5 -13,4.5" fill="#EF4444" stroke="${S}" stroke-width="1.2"/>
+            <line x1="-34" y1="12" x2="-6" y2="12" stroke="#EF4444" stroke-width="5.5" stroke-linecap="round"/>
+            <polygon points="-4,12 -12,7 -12,17" fill="#EF4444" stroke="${S}" stroke-width="1.2"/>
+          </g>
+          <path d="M -4,-22 Q ${bow},0 -4,22 L 8,22 Q ${parseFloat(bow) + 12},0 8,-22 Z" fill="#D97706" stroke="${S}" stroke-width="3" stroke-linejoin="round"/>
+          <path d="M 8,0 L 1,-2 L 4,3 L -1,4" fill="none" stroke="${S}" stroke-width="2.2" stroke-linecap="round"/>
+        </g>`;
+      }
+      const flyDist = (prog * 18).toFixed(1);
+      const rotTop = (-18 - prog * 28).toFixed(1);
+      const rotBot = (18 + prog * 28).toFixed(1);
+      return `<g transform="scale(1.85)">
+        <path d="M -24,-8 Q 0,-12 24,-16 L 26,16 Q 0,12 -24,8 Z" fill="#38BDF8" stroke="${S}" stroke-width="2.5"/>
+        <path d="M -20,-3 L 18,-6 M -18,4 L 20,7" stroke="#E0F2FE" stroke-width="2.5" stroke-linecap="round"/>
+
+        <g transform="translate(${flyDist}, -${(10 + prog * 12).toFixed(1)}) rotate(${rotTop})">
+          <polygon points="-7,-14 7,-14 7,6 1,2 -3,7 -7,4" fill="#D97706" stroke="${S}" stroke-width="2.8" stroke-linejoin="round"/>
+          <line x1="-2" y1="-12" x2="-2" y2="2" stroke="#92400E" stroke-width="1.4"/>
+        </g>
+
+        <g transform="translate(${flyDist}, ${(10 + prog * 12).toFixed(1)}) rotate(${rotBot})">
+          <polygon points="-7,-5 -2,-2 2,-6 7,-3 7,14 -7,14" fill="#B45309" stroke="${S}" stroke-width="2.8" stroke-linejoin="round"/>
+          <line x1="2" y1="-2" x2="2" y2="12" stroke="#78350F" stroke-width="1.4"/>
+        </g>
+
+        <polygon points="4,-5 12,-11 9,-2 17,1 8,4" fill="#FACC15" stroke="${S}" stroke-width="1.8"/>
+        <rect x="${(10 + prog * 14).toFixed(1)}" y="-6" width="6" height="2.5" rx="1" transform="rotate(25)" fill="#F59E0B" stroke="${S}" stroke-width="1.2"/>
+      </g>`;
+    },
+    tags: ["tabla", "madera", "rota", "presion", "hidrostatica", "vectores", "agua"],
+  },
+
+  plano_azul_rocas_escollera: {
+    id: "plano_azul_rocas_escollera",
+    name: "Rocas Pesadas de Escollera Anclándose en el Lodo",
+    family: "educacion_ciencia",
+    defaultPlacement: "both",
+    svg: `<rect x="-22" y="-18" width="44" height="36" rx="4" fill="#64748B" stroke="${S}" stroke-width="4"/>`,
+    animatedSvg: (f: number, stepProgress?: number, currentState?: string) => {
+      if (currentState === "plano") {
+        const unroll = Math.min(1, (stepProgress ?? 0.8) * 1.3);
+        const w = (16 + unroll * 28).toFixed(1);
+        return `<g transform="scale(1.8)">
+          <rect x="-22" y="-16" width="${w}" height="30" rx="2" fill="#1E40AF" stroke="${S}" stroke-width="2.8"/>
+          <rect x="-19" y="-13" width="${Math.max(4, parseFloat(w) - 6).toFixed(1)}" height="24" fill="none" stroke="#60A5FA" stroke-width="1.2" stroke-dasharray="2 2"/>
+          <polygon points="-14,7 -2,-8 10,7" fill="#38BDF8" fill-opacity="0.35" stroke="#FDE047" stroke-width="2.2" stroke-linejoin="round"/>
+          <rect x="${(-22 + parseFloat(w) - 3).toFixed(1)}" y="-18" width="6" height="34" rx="3" fill="#93C5FD" stroke="${S}" stroke-width="2.5"/>
+        </g>`;
+      }
+      const p = stepProgress ?? Math.min(1, f / 90);
+      const r1Y = Math.min(0, -35 + p * 70).toFixed(1);
+      const r2Y = Math.min(0, -45 + Math.max(0, p - 0.25) * 85).toFixed(1);
+      const r3Y = Math.min(0, -50 + Math.max(0, p - 0.5) * 100).toFixed(1);
+      return `<g transform="scale(1.85)">
+        <g transform="translate(-12, ${r1Y})">
+          <polygon points="-11,6 -8,-6 3,-8 11,-1 9,8 -6,9" fill="#475569" stroke="${S}" stroke-width="2.8" stroke-linejoin="round"/>
+          <polygon points="-7,-4 2,-6 7,-1 -2,2" fill="#94A3B8"/>
+        </g>
+        <g transform="translate(11, ${r2Y})">
+          <polygon points="-10,7 -7,-5 5,-7 12,1 9,8 -5,9" fill="#64748B" stroke="${S}" stroke-width="2.8" stroke-linejoin="round"/>
+          <polygon points="-5,-3 4,-5 8,0 0,3" fill="#CBD5E1"/>
+        </g>
+        <g transform="translate(0, ${r3Y})">
+          <polygon points="-10,-1 -6,-12 6,-12 11,-1 6,5 -6,5" fill="#334155" stroke="${S}" stroke-width="2.8" stroke-linejoin="round"/>
+          <polygon points="-5,-10 5,-10 7,-3 -3,-2" fill="#64748B"/>
+        </g>
+      </g>`;
+    },
+    tags: ["plano", "azul", "rocas", "escollera", "gravedad", "ingenieria", "presa"],
+  },
+
+  cubetas_filtro_grava_arena: {
+    id: "cubetas_filtro_grava_arena",
+    name: "Cubeta Inclinándose y Vertiendo Lluvia de Grava y Arena Fina",
+    family: "educacion_ciencia",
+    defaultPlacement: "both",
+    svg: `<circle cx="0" cy="0" r="20" fill="#F59E0B" stroke="${S}" stroke-width="4"/>`,
+    animatedSvg: (f: number, stepProgress?: number, currentState?: string) => {
+      const isSand = currentState === "arena" || (currentState === undefined && f > 95);
+      const tiltAngle = (38 + Math.sin(f * 0.22) * 6).toFixed(1);
+      const bucketColor = isSand ? "#F59E0B" : "#EF4444";
+      const grainColor = isSand ? "#FDE047" : "#94A3B8";
+      const grainColor2 = isSand ? "#F59E0B" : "#64748B";
+      const fallOffset = ((f * 2.4) % 24).toFixed(1);
+      return `<g transform="scale(1.85)">
+        <g transform="translate(6, ${fallOffset})">
+          <circle cx="-2" cy="-6" r="${isSand ? 2.0 : 3.6}" fill="${grainColor}" stroke="${S}" stroke-width="1.6"/>
+          <circle cx="4" cy="0" r="${isSand ? 1.8 : 3.2}" fill="${grainColor2}" stroke="${S}" stroke-width="1.6"/>
+          <circle cx="-4" cy="6" r="${isSand ? 2.1 : 3.8}" fill="${grainColor}" stroke="${S}" stroke-width="1.6"/>
+          <circle cx="2" cy="11" r="${isSand ? 1.9 : 3.4}" fill="${grainColor2}" stroke="${S}" stroke-width="1.6"/>
+          <circle cx="-1" cy="16" r="${isSand ? 2.0 : 3.5}" fill="${grainColor}" stroke="${S}" stroke-width="1.6"/>
+        </g>
+
+        <g transform="translate(-8, -10) rotate(${tiltAngle})">
+          <path d="M -11,-8 A 11,11 0 0,1 11,-8" fill="none" stroke="#475569" stroke-width="2.5"/>
+          <polygon points="-12,-8 12,-8 9,12 -9,12" fill="${bucketColor}" stroke="${S}" stroke-width="2.8" stroke-linejoin="round"/>
+          <rect x="-13.5" y="-10" width="27" height="3.5" rx="1.5" fill="${bucketColor}" stroke="${S}" stroke-width="2.4"/>
+          <ellipse cx="0" cy="-8" rx="10" ry="3.5" fill="${grainColor}" stroke="${S}" stroke-width="1.8"/>
+        </g>
+      </g>`;
+    },
+    tags: ["cubetas", "grava", "arena", "filtro", "graduado", "terzaghi", "presa"],
+  },
+
+  alerta_desborde_canal_vertedero: {
+    id: "alerta_desborde_canal_vertedero",
+    name: "Regla Limnimétrica de Nivel Crítico y Pico de Excavación",
+    family: "educacion_ciencia",
+    defaultPlacement: "both",
+    svg: `<rect x="-22" y="-18" width="44" height="36" rx="4" fill="#EF4444" stroke="${S}" stroke-width="4"/>`,
+    animatedSvg: (f: number) => {
+      const waterRise = Math.min(20, (f * 0.16)).toFixed(1);
+      const blink = Math.sin(f * 0.3) > 0 ? "#EF4444" : "#FACC15";
+      const pickSwing = (Math.sin(f * 0.28) * 22).toFixed(1);
+      return `<g transform="scale(1.85)">
+        <g transform="translate(-12, 0)">
+          <rect x="-5" y="-22" width="10" height="42" rx="1.5" fill="#F8FAFC" stroke="${S}" stroke-width="2.6"/>
+          <line x1="-5" y1="-14" x2="1" y2="-14" stroke="#EF4444" stroke-width="2"/>
+          <line x1="-5" y1="-6" x2="0" y2="-6" stroke="${S}" stroke-width="1.6"/>
+          <line x1="-5" y1="2" x2="0" y2="2" stroke="${S}" stroke-width="1.6"/>
+          <line x1="-5" y1="10" x2="0" y2="10" stroke="${S}" stroke-width="1.6"/>
+          <circle cx="0" cy="${14 - parseFloat(waterRise)}" r="5.5" fill="${blink}" stroke="${S}" stroke-width="2.2"/>
+        </g>
+
+        <g transform="translate(10, -2) rotate(${pickSwing})">
+          <rect x="-2.2" y="-16" width="4.4" height="30" rx="1.8" fill="#D97706" stroke="${S}" stroke-width="2.2"/>
+          <path d="M -16,-14 Q 0,-21 16,-12 L 13,-8 Q 0,-15 -13,-10 Z" fill="#64748B" stroke="${S}" stroke-width="2.4" stroke-linejoin="round"/>
+        </g>
+      </g>`;
+    },
+    tags: ["alerta", "desborde", "canal", "vertedero", "aliviadero", "spillway", "nivel"],
+  },
+
+  escalones_piedra_espuma_coladera: {
+    id: "escalones_piedra_espuma_coladera",
+    name: "Coladera Pluvial de Hierro Fundido Tragando el Caudal Limpio",
+    family: "educacion_ciencia",
+    defaultPlacement: "both",
+    svg: `<rect x="-22" y="-18" width="44" height="36" rx="4" fill="#0284C7" stroke="${S}" stroke-width="4"/>`,
+    animatedSvg: (f: number) => {
+      const swirlRot = (f * 4) % 360;
+      const bubbleScale = (0.85 + Math.sin(f * 0.25) * 0.18).toFixed(2);
+      return `<g transform="scale(1.85)">
+        <ellipse cx="0" cy="6" rx="24" ry="11" fill="#475569" stroke="${S}" stroke-width="3"/>
+        <ellipse cx="0" cy="6" rx="19" ry="8" fill="#0F172A" stroke="${S}" stroke-width="2.2"/>
+        <line x1="-12" y1="0" x2="-12" y2="12" stroke="#64748B" stroke-width="2.8"/>
+        <line x1="-4" y1="-2" x2="-4" y2="14" stroke="#64748B" stroke-width="2.8"/>
+        <line x1="4" y1="-2" x2="4" y2="14" stroke="#64748B" stroke-width="2.8"/>
+        <line x1="12" y1="0" x2="12" y2="12" stroke="#64748B" stroke-width="2.8"/>
+
+        <g transform="translate(0, 4) scale(1, 0.55) rotate(${swirlRot})">
+          <path d="M -14,0 A 14,14 0 0,1 0,-14" fill="none" stroke="#38BDF8" stroke-width="4" stroke-linecap="round"/>
+          <path d="M 14,0 A 14,14 0 0,1 0,14" fill="none" stroke="#E0F2FE" stroke-width="3.5" stroke-linecap="round"/>
+        </g>
+        <g transform="scale(${bubbleScale})">
+          <circle cx="-8" cy="-2" r="3.5" fill="#FFFFFF" stroke="#38BDF8" stroke-width="1.5"/>
+          <circle cx="7" cy="-3" r="3" fill="#FFFFFF" stroke="#38BDF8" stroke-width="1.5"/>
+          <circle cx="0" cy="-6" r="4" fill="#E0F2FE" stroke="#0284C7" stroke-width="1.5"/>
+        </g>
+      </g>`;
+    },
+    tags: ["escalones", "piedra", "espuma", "coladera", "disipacion", "vertedero", "hidraulica"],
+  },
+
+  barquito_papel_lago_represa: {
+    id: "barquito_papel_lago_represa",
+    name: "Barquito de Papel Origami Navegando con Estela de Agua",
+    family: "vida_cotidiana",
+    defaultPlacement: "both",
+    svg: `<polygon points="-20,4 20,4 12,16 -12,16" fill="#FFFFFF" stroke="${S}" stroke-width="4"/>`,
+    animatedSvg: (f: number) => {
+      const bob = (Math.sin(f * 0.16) * 2.2).toFixed(1);
+      const tilt = (Math.sin(f * 0.14) * 3.8).toFixed(1);
+      const rippleRx = (18 + ((f * 0.35) % 10)).toFixed(1);
+      const rippleOp = (1 - ((f * 0.35) % 10) / 10).toFixed(2);
+      return `<g transform="scale(1.9)">
+        <ellipse cx="0" cy="12" rx="${rippleRx}" ry="5" fill="none" stroke="#E0F2FE" stroke-width="2" opacity="${rippleOp}"/>
+        <ellipse cx="0" cy="12" rx="16" ry="4" fill="#38BDF8" fill-opacity="0.45" stroke="#0284C7" stroke-width="1.8"/>
+
+        <g transform="translate(0, ${bob}) rotate(${tilt})">
+          <polygon points="0,-16 -10,3 10,3" fill="#E2E8F0" stroke="${S}" stroke-width="2.5" stroke-linejoin="round"/>
+          <polygon points="0,-14 -8,3 8,3" fill="#FFFFFF" stroke="${S}" stroke-width="2.4" stroke-linejoin="round"/>
+          <line x1="0" y1="-14" x2="0" y2="3" stroke="#94A3B8" stroke-width="1.5"/>
+          <polygon points="-22,2 22,2 14,12 -14,12" fill="#FFFFFF" stroke="${S}" stroke-width="2.8" stroke-linejoin="round"/>
+          <polygon points="-22,2 0,6 22,2 14,12 -14,12" fill="#F1F5F9" stroke="${S}" stroke-width="2.2" stroke-linejoin="round"/>
+        </g>
+      </g>`;
+    },
+    tags: ["barquito", "papel", "lago", "represa", "arcoiris", "victoria", "agua"],
+  },
+
+  foco_moribundo_cable_largo: {
+    id: "foco_moribundo_cable_largo",
+    name: "Foco Incandescente Moribundo con Cable Largo",
+    family: "tecnologia",
+    defaultPlacement: "both",
+    svg: `<circle cx="0" cy="-6" r="18" fill="#451A03" stroke="${S}" stroke-width="4"/>`,
+    animatedSvg: (f: number) => {
+      const emberFlicker = (0.35 + Math.sin(f * 0.4) * 0.15 + (f % 5 === 0 ? 0.08 : 0)).toFixed(2);
+      const emberRadius = (6 + Math.sin(f * 0.3) * 1.5).toFixed(1);
+      return `<g transform="scale(1.85)">
+        <!-- Cable negro largo serpenteante en la base -->
+        <path d="M -32,24 Q -16,14 0,26 Q 16,36 32,24" fill="none" stroke="#0F172A" stroke-width="5" stroke-linecap="round"/>
+        <path d="M 0,26 L 0,16" stroke="#0F172A" stroke-width="5"/>
+
+        <!-- Casquillo metálico roscado de latón -->
+        <rect x="-8" y="8" width="16" height="8" rx="2" fill="#D97706" stroke="${S}" stroke-width="2.5"/>
+        <line x1="-8" y1="11" x2="8" y2="11" stroke="#92400E" stroke-width="1.8"/>
+        <line x1="-8" y1="14" x2="8" y2="14" stroke="#92400E" stroke-width="1.8"/>
+
+        <!-- Bulbo de cristal oscuro y transparente -->
+        <circle cx="0" cy="-4" r="18" fill="#1E293B" fill-opacity="0.5" stroke="${S}" stroke-width="3"/>
+        <path d="M -8,8 L -6,0 C -6,-10 6,-10 6,0 L 8,8 Z" fill="#334155" fill-opacity="0.3"/>
+
+        <!-- Filamento de tungsteno apenas encendido en rojo moribundo -->
+        <g opacity="${emberFlicker}">
+          <!-- Soporte del filamento -->
+          <line x1="-4" y1="6" x2="-2" y2="-4" stroke="#78350F" stroke-width="1.6"/>
+          <line x1="4" y1="6" x2="2" y2="-4" stroke="#78350F" stroke-width="1.6"/>
+          <!-- Espiral débil -->
+          <path d="M -2,-4 Q 0,-10 2,-4" fill="none" stroke="#EF4444" stroke-width="2.6" stroke-linecap="round"/>
+          <circle cx="0" cy="-6" r="${emberRadius}" fill="#DC2626" fill-opacity="0.45"/>
+          <circle cx="0" cy="-6" r="2.5" fill="#FEF08A"/>
+        </g>
+      </g>`;
+    },
+    tags: ["foco", "bombilla", "cable", "electricidad", "moribundo", "filamento", "energia"],
+  },
+
+  multimetro_caida_tension_humo: {
+    id: "multimetro_caida_tension_humo",
+    name: "Multímetro Digital Midiendo Caída de Voltaje con Cable Caliente",
+    family: "tecnologia",
+    defaultPlacement: "both",
+    svg: `<rect x="-18" y="-24" width="36" height="48" rx="5" fill="#EAB308" stroke="${S}" stroke-width="4"/>`,
+    animatedSvg: (f: number, stepProgress?: number, currentState?: string) => {
+      const isLow = currentState === "caida" || (currentState === undefined && f >= 45);
+      const voltVal = isLow ? " 38 V" : "120 V";
+      const lcdColor = isLow ? "#EF4444" : "#22C55E";
+      const smokeY = ((f * 1.8) % 28).toFixed(1);
+      const smokeOp = (0.8 - ((f * 1.8) % 28) / 28).toFixed(2);
+      return `<g transform="scale(1.85)">
+        <!-- Hilillo de humo blanco saliendo del cable recalentado -->
+        <g transform="translate(18, ${-12 - parseFloat(smokeY)})" opacity="${smokeOp}">
+          <circle cx="0" cy="0" r="3.5" fill="#F8FAFC"/>
+          <circle cx="-3" cy="-6" r="4.5" fill="#E2E8F0"/>
+          <circle cx="2" cy="-12" r="5.5" fill="#CBD5E1"/>
+        </g>
+
+        <!-- Trozo de cable negro ardiendo -->
+        <path d="M 8,24 Q 18,18 24,6 Q 28,-4 26,-16" fill="none" stroke="#DC2626" stroke-width="5" stroke-linecap="round"/>
+        <path d="M 8,24 Q 18,18 24,6 Q 28,-4 26,-16" fill="none" stroke="#0F172A" stroke-width="3.5" stroke-linecap="round" stroke-dasharray="6 4"/>
+
+        <!-- Carcasa amarilla de multímetro industrial -->
+        <rect x="-20" y="-24" width="38" height="48" rx="6" fill="#FACC15" stroke="${S}" stroke-width="3.5"/>
+        <rect x="-16" y="-20" width="30" height="20" rx="3" fill="#0F172A" stroke="${S}" stroke-width="2"/>
+
+        <!-- Pantalla LCD digital retroiluminada -->
+        <rect x="-14" y="-18" width="26" height="16" rx="2" fill="#020617"/>
+        <text x="-1" y="-6" fill="${lcdColor}" font-family="'Courier New', monospace" font-size="9" font-weight="900" text-anchor="middle">
+          ${voltVal}
+        </text>
+
+        <!-- Selector giratorio central -->
+        <circle cx="-1" cy="9" r="6.5" fill="#1E293B" stroke="${S}" stroke-width="2"/>
+        <line x1="-1" y1="9" x2="-1" y2="4" stroke="#FDE047" stroke-width="2" stroke-linecap="round"/>
+
+        <!-- Bornes y puntas de prueba roja y negra -->
+        <circle cx="-8" cy="18" r="2.5" fill="#DC2626"/>
+        <circle cx="6" cy="18" r="2.5" fill="#000000"/>
+        <path d="M -8,20 Q -18,28 -24,20" fill="none" stroke="#DC2626" stroke-width="2.4" stroke-linecap="round"/>
+        <polygon points="-26,18 -22,22 -26,24" fill="#94A3B8" stroke="${S}" stroke-width="1.2"/>
+      </g>`;
+    },
+    tags: ["multimetro", "voltaje", "caida", "resistencia", "humo", "calor", "medicion"],
+  },
+
+  microcosmos_choque_electrones_joule: {
+    id: "microcosmos_choque_electrones_joule",
+    name: "Microcosmos del Cobre con Choques de Electrones y Calor Joule",
+    family: "educacion_ciencia",
+    defaultPlacement: "both",
+    svg: `<circle cx="0" cy="0" r="20" fill="#B45309" stroke="${S}" stroke-width="4"/>`,
+    animatedSvg: (f: number) => {
+      const eShift1 = ((f * 3.5) % 40) - 20;
+      const eShift2 = (((f + 14) * 3.2) % 40) - 20;
+      const sparkPulse = (Math.sin(f * 0.6) * 3).toFixed(1);
+      return `<g transform="scale(1.85)">
+        <!-- Tubo conductor de cobre transparente -->
+        <rect x="-26" y="-18" width="52" height="36" rx="6" fill="#78350F" fill-opacity="0.3" stroke="${S}" stroke-width="3"/>
+        <rect x="-26" y="-18" width="52" height="4" fill="#B45309"/>
+        <rect x="-26" y="14" width="52" height="4" fill="#B45309"/>
+
+        <!-- Átomos de cobre fijos en la red cristalina -->
+        <circle cx="-14" cy="-5" r="7" fill="#EA580C" stroke="${S}" stroke-width="2.2"/>
+        <text x="-14" y="-3" fill="#FEF08A" font-size="5" font-weight="900" text-anchor="middle">Cu</text>
+        <circle cx="14" cy="-5" r="7" fill="#EA580C" stroke="${S}" stroke-width="2.2"/>
+        <text x="14" y="-3" fill="#FEF08A" font-size="5" font-weight="900" text-anchor="middle">Cu</text>
+        <circle cx="0" cy="6" r="7.5" fill="#D97706" stroke="${S}" stroke-width="2.2"/>
+        <text x="0" y="8" fill="#FEF08A" font-size="5" font-weight="900" text-anchor="middle">Cu</text>
+
+        <!-- Ondas de choque térmico rojas por colisión (Efecto Joule) -->
+        <circle cx="-6" cy="-2" r="${8 + Math.abs(parseFloat(sparkPulse))}" fill="none" stroke="#EF4444" stroke-width="2.2" opacity="0.8"/>
+        <polygon points="-6,-6 -3,-2 -6,2 -9,-2" fill="#FACC15"/>
+
+        <!-- Electrones azules en tropel colisionando -->
+        <g transform="translate(${eShift1}, -5)">
+          <circle cx="0" cy="0" r="3.2" fill="#38BDF8" stroke="${S}" stroke-width="1.4"/>
+          <text x="0" y="1.5" fill="#000" font-size="4" font-weight="900" text-anchor="middle">-</text>
+        </g>
+        <g transform="translate(${eShift2}, 4)">
+          <circle cx="0" cy="0" r="3" fill="#60A5FA" stroke="${S}" stroke-width="1.4"/>
+          <text x="0" y="1.5" fill="#000" font-size="4" font-weight="900" text-anchor="middle">-</text>
+        </g>
+      </g>`;
+    },
+    tags: ["microcosmos", "cobre", "electrones", "joule", "calor", "choques", "resistencia"],
+  },
+
+  transformador_bobinas_balanza_potencia: {
+    id: "transformador_bobinas_balanza_potencia",
+    name: "Transformador Elevador con Bobinas de Cobre y Balanza de Potencia",
+    family: "educacion_ciencia",
+    defaultPlacement: "both",
+    svg: `<rect x="-20" y="-18" width="40" height="36" rx="4" fill="#334155" stroke="${S}" stroke-width="4"/>`,
+    animatedSvg: (f: number) => {
+      const humPulse = (Math.sin(f * 0.4) * 1.5).toFixed(1);
+      return `<g transform="scale(1.85)">
+        <!-- Núcleo de hierro laminado cuadrado (circuito magnético) -->
+        <rect x="-22" y="-20" width="44" height="40" rx="4" fill="#334155" stroke="${S}" stroke-width="3"/>
+        <rect x="-10" y="-8" width="20" height="16" rx="2" fill="#0F172A" stroke="${S}" stroke-width="2"/>
+
+        <!-- Bobinado primario de pocas vueltas (Izquierda, alambre grueso) -->
+        <g transform="translate(-16, 0)">
+          <rect x="-5" y="-14" width="10" height="5" rx="1.5" fill="#EA580C" stroke="${S}" stroke-width="1.4"/>
+          <rect x="-5" y="-6" width="10" height="5" rx="1.5" fill="#C2410C" stroke="${S}" stroke-width="1.4"/>
+          <rect x="-5" y="2" width="10" height="5" rx="1.5" fill="#EA580C" stroke="${S}" stroke-width="1.4"/>
+          <rect x="-5" y="10" width="10" height="5" rx="1.5" fill="#C2410C" stroke="${S}" stroke-width="1.4"/>
+        </g>
+
+        <!-- Bobinado secundario de miles de vueltas (Derecha, alambre delgado dorado) -->
+        <g transform="translate(16, 0)">
+          {[ -14, -10, -6, -2, 2, 6, 10 ].map((by, idx) => (
+            <rect key={idx} x="-4.5" y={by} width="9" height="3" rx="1" fill="#FACC15" stroke="${S}" stroke-width="1.2"/>
+          ))}
+        </g>
+
+        <!-- Campo magnético oscilante en el núcleo (zumbido 60Hz) -->
+        <g opacity="${0.6 + Math.abs(parseFloat(humPulse)) * 0.2}">
+          <line x1="-10" y1="-14" x2="10" y2="-14" stroke="#38BDF8" stroke-width="2" stroke-dasharray="3 2"/>
+          <line x1="-10" y1="14" x2="10" y2="14" stroke="#38BDF8" stroke-width="2" stroke-dasharray="3 2"/>
+        </g>
+      </g>`;
+    },
+    tags: ["transformador", "bobinas", "cobre", "hierro", "voltaje", "alta_tension", "potencia"],
+  },
+
+  poste_aislador_arco_voltaico: {
+    id: "poste_aislador_arco_voltaico",
+    name: "Poste Eléctrico con Aisladores Cerámicos y Arco Voltaico",
+    family: "tecnologia",
+    defaultPlacement: "both",
+    svg: `<rect x="-18" y="-22" width="36" height="44" rx="4" fill="#78350F" stroke="${S}" stroke-width="4"/>`,
+    animatedSvg: (f: number) => {
+      const sparkPoints = (f % 4 === 0)
+        ? "-6,-12 -2,-8 4,-14 8,-6"
+        : "-6,-12 0,-14 2,-8 8,-6";
+      const sparkGlow = (0.7 + Math.sin(f * 0.7) * 0.3).toFixed(2);
+      return `<g transform="scale(1.85)">
+        <!-- Poste de madera con cruceta superior -->
+        <rect x="-4" y="-24" width="8" height="48" rx="2" fill="#78350F" stroke="${S}" stroke-width="2.8"/>
+        <rect x="-24" y="-18" width="48" height="6" rx="2" fill="#92400E" stroke="${S}" stroke-width="2.5"/>
+
+        <!-- Aisladores cerámicos acampanados blancos en las puntas -->
+        <g transform="translate(-18, -18)">
+          <polygon points="-5,0 5,0 7,-8 -7,-8" fill="#F8FAFC" stroke="${S}" stroke-width="1.6"/>
+          <polygon points="-4,-7 4,-7 6,-13 -6,-13" fill="#E2E8F0" stroke="${S}" stroke-width="1.6"/>
+        </g>
+        <g transform="translate(18, -18)">
+          <polygon points="-5,0 5,0 7,-8 -7,-8" fill="#F8FAFC" stroke="${S}" stroke-width="1.6"/>
+          <polygon points="-4,-7 4,-7 6,-13 -6,-13" fill="#E2E8F0" stroke="${S}" stroke-width="1.6"/>
+        </g>
+
+        <!-- Cables aéreos de alta tensión tensados -->
+        <line x1="-30" y1="-31" x2="30" y2="-31" stroke="#38BDF8" stroke-width="2.5"/>
+
+        <!-- Arco voltaico crepitando en el aire -->
+        <polyline points="${sparkPoints}" fill="none" stroke="#C084FC" stroke-width="2.6" stroke-linecap="round" opacity="${sparkGlow}"/>
+        <polyline points="${sparkPoints}" fill="none" stroke="#FFFFFF" stroke-width="1.2" stroke-linecap="round"/>
+      </g>`;
+    },
+    tags: ["poste", "aislador", "arco_voltaico", "chispas", "alta_tension", "cables", "red"],
+  },
+
+  transformador_reductor_herramientas: {
+    id: "transformador_reductor_herramientas",
+    name: "Transformador Reductor Bajando a 120V con Destornillador",
+    family: "tecnologia",
+    defaultPlacement: "both",
+    svg: `<rect x="-18" y="-18" width="36" height="36" rx="4" fill="#0284C7" stroke="${S}" stroke-width="4"/>`,
+    animatedSvg: (f: number) => {
+      const toolAngle = (18 + Math.sin(f * 0.3) * 14).toFixed(1);
+      return `<g transform="scale(1.85)">
+        <!-- Transformador secundario de bajada -->
+        <rect x="-20" y="-18" width="40" height="36" rx="4" fill="#1E293B" stroke="${S}" stroke-width="3"/>
+        <rect x="-16" y="-14" width="32" height="18" rx="2" fill="#0F172A"/>
+
+        <!-- Reloj indicador analógico estabilizándose en 120V -->
+        <circle cx="0" cy="-5" r="7" fill="#F8FAFC" stroke="${S}" stroke-width="1.5"/>
+        <line x1="0" y1="-5" x2="2" y2="-9" stroke="#DC2626" stroke-width="1.5" stroke-linecap="round"/>
+
+        <!-- Bornes de salida domésticos de 120V -->
+        <circle cx="-10" cy="11" r="3" fill="#D97706" stroke="${S}" stroke-width="1.5"/>
+        <circle cx="10" cy="11" r="3" fill="#D97706" stroke="${S}" stroke-width="1.5"/>
+
+        <!-- Destornillador aislado de electricista ajustando el borne -->
+        <g transform="translate(10, 11) rotate(${toolAngle})">
+          <line x1="0" y1="0" x2="0" y2="-12" stroke="#94A3B8" stroke-width="2.2" stroke-linecap="round"/>
+          <rect x="-3" y="-24" width="6" height="12" rx="2" fill="#DC2626" stroke="${S}" stroke-width="1.8"/>
+        </g>
+      </g>`;
+    },
+    tags: ["transformador", "reductor", "120v", "herramientas", "destornillador", "electricista", "seguridad"],
+  },
+
+  bombilla_estallido_luz_gafas: {
+    id: "bombilla_estallido_luz_gafas",
+    name: "Bombilla Estallando en Luz Blanca Radiante con Gafas Oscuras",
+    family: "vida_cotidiana",
+    defaultPlacement: "both",
+    svg: `<circle cx="0" cy="0" r="20" fill="#FEF08A" stroke="${S}" stroke-width="4"/>`,
+    animatedSvg: (f: number) => {
+      const rayScale = (1.0 + Math.sin(f * 0.2) * 0.08).toFixed(2);
+      const glowPulse = (0.85 + Math.sin(f * 0.25) * 0.15).toFixed(2);
+      return `<g transform="scale(1.9)">
+        <!-- Rayos de luz envolventes poligonales de explosión luminosa -->
+        <g transform="scale(${rayScale})" opacity="${glowPulse}">
+          {[0, 45, 90, 135, 180, 225, 270, 315].map((deg, i) => (
+            <line
+              key={i}
+              x1="0"
+              y1="0"
+              x2={Math.cos((deg * Math.PI) / 180) * 28}
+              y2={Math.sin((deg * Math.PI) / 180) * 28}
+              stroke="#FEF08A"
+              stroke-width="3"
+              stroke-linecap="round"
+            />
+          ))}
+        </g>
+
+        <!-- Foco incandescente irradiando luz blanca radiante -->
+        <circle cx="0" cy="0" r="17" fill="#FFFFFF" stroke="${S}" stroke-width="3"/>
+        <circle cx="0" cy="0" r="13" fill="#FEF08A" fill-opacity="0.75"/>
+        <circle cx="0" cy="0" r="7" fill="#FFFFFF"/>
+
+        <!-- Gafas de sol oscuras icónicas superpuestas -->
+        <g transform="translate(0, 18)">
+          <path d="M -15,0 L 15,0" stroke="#000000" stroke-width="2.5"/>
+          <polygon points="-14,0 -5,0 -7,8 -12,8" fill="#0F172A" stroke="${S}" stroke-width="1.8"/>
+          <polygon points="5,0 14,0 12,8 7,8" fill="#0F172A" stroke="${S}" stroke-width="1.8"/>
+          <!-- Reflejo blanco en las gafas -->
+          <line x1="-12" y1="2" x2="-8" y2="6" stroke="#FFFFFF" stroke-width="1.2"/>
+          <line x1="7" y1="2" x2="11" y2="6" stroke="#FFFFFF" stroke-width="1.2"/>
+        </g>
+      </g>`;
+    },
+    tags: ["bombilla", "luz", "blanca", "estallido", "gafas", "sol", "victoria", "red_electrica"],
+  },
+
+  tabla_madera_quebrada_lodo: {
+    id: "tabla_madera_quebrada_lodo",
+    name: "Tabla de Madera Partida en Lodo",
+    family: "herramientas_objetos",
+    defaultPlacement: "both",
+    svg: `<rect x="-35" y="-6" width="70" height="12" rx="2" fill="#92400E" stroke="${S}" stroke-width="3.5"/>`,
+    animatedSvg: (f: number) => {
+      const sagY = (Math.sin(f * 0.15) * 4).toFixed(1);
+      const splashY = (-Math.abs(Math.sin(f * 0.25)) * 14).toFixed(1);
+      return `<g transform="scale(1.35)">
+        <!-- Mitades de tabla quebradas con astillas -->
+        <g transform="translate(0, ${sagY})">
+          <g transform="translate(-18, 0) rotate(14)">
+            <polygon points="-26,-6 6,-6 3,6 -26,6" fill="#B45309" stroke="${S}" stroke-width="3.5" stroke-linejoin="round"/>
+            <line x1="-20" y1="-1" x2="0" y2="-1" stroke="#78350F" stroke-width="2"/>
+            <polygon points="6,-6 11,-2 7,2 10,6 3,6" fill="#FDE68A" stroke="${S}" stroke-width="1.5"/>
+          </g>
+          <g transform="translate(18, 0) rotate(-14)">
+            <polygon points="-3,-6 26,-6 26,6 -6,6" fill="#B45309" stroke="${S}" stroke-width="3.5" stroke-linejoin="round"/>
+            <line x1="0" y1="-1" x2="20" y2="-1" stroke="#78350F" stroke-width="2"/>
+            <polygon points="-3,-6 -8,-2 -4,2 -9,6 -6,6" fill="#FDE68A" stroke="${S}" stroke-width="1.5"/>
+          </g>
+        </g>
+        <!-- Salpicadura de fango líquido viva -->
+        <g transform="translate(0, 16)">
+          <ellipse cx="0" cy="4" rx="34" ry="7" fill="#713F12" stroke="${S}" stroke-width="2.5"/>
+          <ellipse cx="0" cy="4" rx="24" ry="4" fill="#A16207"/>
+          <circle cx="-16" cy="${splashY}" r="4" fill="#713F12" stroke="${S}" stroke-width="1.5"/>
+          <circle cx="14" cy="${(Number(splashY) * 0.85).toFixed(1)}" r="4.5" fill="#713F12" stroke="${S}" stroke-width="1.5"/>
+          <circle cx="0" cy="${(Number(splashY) * 1.15).toFixed(1)}" r="3" fill="#A16207" stroke="${S}" stroke-width="1.2"/>
+        </g>
+      </g>`;
+    },
+    tags: ["tabla", "madera", "quebrada", "lodo", "fango", "agua", "astillas"],
+  },
+
+  diagrama_flexion_viga_flechas: {
+    id: "diagrama_flexion_viga_flechas",
+    name: "Viga en Banco de Flexión con Vectores",
+    family: "educacion_ciencia",
+    defaultPlacement: "both",
+    svg: `<rect x="-35" y="-10" width="70" height="20" rx="3" fill="#B45309" stroke="${S}" stroke-width="3.5"/>`,
+    animatedSvg: (f: number) => {
+      const pressDown = Math.sin(f * 0.2) * 4;
+      return `<g transform="scale(1.35)">
+        <!-- Bloques de apoyo en los extremos (apoyo simple) -->
+        <polygon points="-38,10 -30,-4 -22,10" fill="#64748B" stroke="${S}" stroke-width="3" stroke-linejoin="round"/>
+        <polygon points="22,10 30,-4 38,10" fill="#64748B" stroke="${S}" stroke-width="3" stroke-linejoin="round"/>
+
+        <!-- Pistón hidráulico / Peso cilíndrico que baja empujando -->
+        <g transform="translate(0, ${(-16 + pressDown).toFixed(1)})">
+          <rect x="-10" y="-14" width="20" height="18" rx="2" fill="#334155" stroke="${S}" stroke-width="3"/>
+          <path d="M 0 4 L 0 14 M -4 10 L 0 14 L 4 10" stroke="#EF4444" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+        </g>
+
+        <!-- Viga de madera curvándose bajo la carga -->
+        <path d="M -34 -2 Q 0 ${(-2 + pressDown * 1.8).toFixed(1)} 34 -2 L 34 8 Q 0 ${(8 + pressDown * 1.8).toFixed(1)} -34 8 Z" fill="#D97706" stroke="${S}" stroke-width="3.5"/>
+        <line x1="-30" y1="3" x2="30" y2="3" stroke="#FEF08A" stroke-width="1.5" stroke-dasharray="3 3"/>
+
+        <!-- FLECHAS DE COMPRESIÓN ARRIBA (rojo convergiendo) -->
+        <g transform="translate(0, ${(-10 + pressDown * 0.9).toFixed(1)})">
+          <path d="M -24 0 L -8 0 M -12 -3 L -8 0 L -12 3" stroke="#EF4444" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+          <path d="M 24 0 L 8 0 M 12 -3 L 8 0 L 12 3" stroke="#EF4444" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+          <text x="0" y="-4" font-family="'Arial Black', sans-serif" font-weight="900" font-size="6" fill="#EF4444" text-anchor="middle">COMPRESIÓN</text>
+        </g>
+
+        <!-- FLECHAS DE TENSIÓN ABAJO (cyan divergiendo) -->
+        <g transform="translate(0, ${(18 + pressDown * 1.2).toFixed(1)})">
+          <path d="M -8 0 L -24 0 M -20 -3 L -24 0 L -20 3" stroke="#38BDF8" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+          <path d="M 8 0 L 24 0 M 20 -3 L 24 0 L 20 3" stroke="#38BDF8" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+          <text x="0" y="9" font-family="'Arial Black', sans-serif" font-weight="900" font-size="6" fill="#38BDF8" text-anchor="middle">TENSIÓN</text>
+          <!-- Grieta que se abre en el centro inferior -->
+          <polygon points="-2,-10 0,-1 2,-10" fill="#EF4444" stroke="${S}" stroke-width="1.5"/>
+        </g>
+      </g>`;
+    },
+    tags: ["diagrama", "flexion", "viga", "compresion", "tension", "piston", "ensayo"],
+  },
+
+  cuerda_canamo_prueba_tension: {
+    id: "cuerda_canamo_prueba_tension",
+    name: "Cuerda de Cáñamo Tensada Vibrante",
+    family: "herramientas_objetos",
+    defaultPlacement: "both",
+    svg: `<path d="M -30 0 L 30 0" stroke="#F59E0B" stroke-width="8" stroke-linecap="round"/>`,
+    animatedSvg: (f: number) => {
+      const twangVib = (Math.sin(f * 0.45) * 2).toFixed(1);
+      const sparkRot = ((f * 10) % 360).toFixed(0);
+      return `<g transform="scale(1.35)">
+        <!-- Cuerda gruesa dorada estirada al máximo vibrando -->
+        <g transform="translate(0, ${twangVib})">
+          <line x1="-38" y1="0" x2="38" y2="0" stroke="${S}" stroke-width="11" stroke-linecap="round"/>
+          <line x1="-38" y1="0" x2="38" y2="0" stroke="#F59E0B" stroke-width="7" stroke-linecap="round"/>
+          {[-28, -18, -8, 2, 12, 22, 32].map((x, i) => (
+            <line key={i} x1={x} y1="-3.5" x2={x + 4} y2="3.5" stroke="#D97706" stroke-width="2.5" stroke-linecap="round"/>
+          ))}
+          <!-- Argollas de acero templado en los extremos -->
+          <circle cx="-38" cy="0" r="6" fill="#94A3B8" stroke="${S}" stroke-width="3"/>
+          <circle cx="38" cy="0" r="6" fill="#94A3B8" stroke="${S}" stroke-width="3"/>
+        </g>
+        <!-- Chispas doradas de tracción en el punto de máxima tensión -->
+        <g transform="translate(0, 0) rotate(${sparkRot})">
+          <line x1="-10" y1="0" x2="10" y2="0" stroke="#FDE047" stroke-width="3" stroke-linecap="round"/>
+          <line x1="0" y1="-10" x2="0" y2="10" stroke="#FDE047" stroke-width="3" stroke-linecap="round"/>
+        </g>
+      </g>`;
+    },
+    tags: ["cuerda", "canamo", "cable", "tension", "traccion", "fuerza"],
+  },
+
+  torre_madera_mazo_compresion: {
+    id: "torre_madera_mazo_compresion",
+    name: "Gran Mazo de Construcción y Poste",
+    family: "herramientas_objetos",
+    defaultPlacement: "both",
+    svg: `<line x1="0" y1="18" x2="0" y2="-110" stroke="#D97706" stroke-width="8" stroke-linecap="round"/><rect x="-24" y="-140" width="48" height="36" rx="5" fill="#334155" stroke="${S}" stroke-width="5"/>`,
+    animatedSvg: (f: number) => {
+      const hitCycle = f % 24;
+      // Ciclo de golpe: 0-11 elevación atrás (-75° sobre hombro), 12-15 golpe masivo vertical (+22°), 16-23 recuperación
+      let angle = -75;
+      let isHit = false;
+      if (hitCycle < 11) {
+        angle = -75 + (hitCycle / 11) * 20;
+      } else if (hitCycle >= 11 && hitCycle <= 15) {
+        angle = 22;
+        isHit = true;
+      } else {
+        angle = 22 - ((hitCycle - 15) / 8) * 97;
+      }
+      return `<g transform="translate(0, 0)">
+        <!-- Gran mazo de obra de dos manos pivoteando en el agarre (0,0) -->
+        <g transform="rotate(${angle.toFixed(1)})">
+          <!-- Mango largo reforzado de nogal macizo -->
+          <line x1="0" y1="20" x2="0" y2="-130" stroke="#000000" stroke-width="11" stroke-linecap="round"/>
+          <line x1="0" y1="20" x2="0" y2="-130" stroke="#D97706" stroke-width="7" stroke-linecap="round"/>
+          <circle cx="0" cy="20" r="7" fill="#78350F" stroke="#000000" stroke-width="3"/>
+          <line x1="-5" y1="-30" x2="5" y2="-30" stroke="#000000" stroke-width="3"/>
+          <line x1="-5" y1="-50" x2="5" y2="-50" stroke="#000000" stroke-width="3"/>
+
+          <!-- Cabeza colosal de acero forjado -->
+          <g transform="translate(0, -130)">
+            <rect x="-27" y="-20" width="54" height="40" rx="5" fill="#334155" stroke="${S}" stroke-width="5"/>
+            <polygon points="-27,-20 -20,-26 20,-26 27,-20" fill="#475569" stroke="${S}" stroke-width="3"/>
+            <rect x="-22" y="-15" width="44" height="10" fill="#64748B"/>
+            <line x1="-27" y1="0" x2="27" y2="0" stroke="#94A3B8" stroke-width="3.5"/>
+            <!-- Ojo del mango con cuña metálica -->
+            <ellipse cx="0" cy="0" rx="6" ry="12" fill="#0F172A" stroke="${S}" stroke-width="2"/>
+          </g>
+        </g>
+        <!-- Estallido de impacto y chispas al golpear el poste -->
+        ${isHit ? `
+          <g transform="translate(55, 30)">
+            <line x1="0" y1="0" x2="35" y2="-22" stroke="#FEF08A" stroke-width="6" stroke-linecap="round"/>
+            <line x1="0" y1="0" x2="28" y2="28" stroke="#FEF08A" stroke-width="6" stroke-linecap="round"/>
+            <line x1="0" y1="0" x2="-25" y2="30" stroke="#EF4444" stroke-width="6" stroke-linecap="round"/>
+            <line x1="0" y1="0" x2="42" y2="5" stroke="#FEF08A" stroke-width="5" stroke-linecap="round"/>
+            <circle cx="0" cy="0" r="14" fill="#FDE047" stroke="${S}" stroke-width="3"/>
+            <circle cx="0" cy="0" r="8" fill="#FFFFFF"/>
+          </g>
+        ` : ""}
+      </g>`;
+    },
+    tags: ["mazo", "martillo", "construccion", "golpe", "fuerza", "impacto"],
+  },
+
+  catenaria_anclaje_rocas_tierra: {
+    id: "catenaria_anclaje_rocas_tierra",
+    name: "Roca de Anclaje y Tensor a 45 Grados",
+    family: "educacion_ciencia",
+    defaultPlacement: "both",
+    svg: `<polygon points="-20,0 20,-10 15,20 -15,15" fill="#64748B" stroke="${S}" stroke-width="3"/>`,
+    animatedSvg: (f: number) => {
+      const cableTwang = (Math.sin(f * 0.4) * 1.5).toFixed(1);
+      return `<g transform="scale(1.35)">
+        <polygon points="-28,4 12,-16 32,8 18,28 -20,24" fill="#64748B" stroke="${S}" stroke-width="4" stroke-linejoin="round"/>
+        <line x1="-10" y1="2" x2="16" y2="4" stroke="#334155" stroke-width="2.5"/>
+        <line x1="4" y1="-8" x2="10" y2="16" stroke="#334155" stroke-width="2"/>
+        <circle cx="0" cy="0" r="7" fill="#94A3B8" stroke="${S}" stroke-width="3"/>
+        <g transform="translate(0, ${cableTwang})">
+          <line x1="0" y1="0" x2="-34" y2="-34" stroke="${S}" stroke-width="8" stroke-linecap="round"/>
+          <line x1="0" y1="0" x2="-34" y2="-34" stroke="#F59E0B" stroke-width="5" stroke-linecap="round"/>
+          <circle cx="0" cy="0" r="3.5" fill="#FDE047"/>
+        </g>
+      </g>`;
+    },
+    tags: ["roca", "anclaje", "deadman", "cable", "tensor", "45grados"],
+  },
+
+  pendolas_suspension_tabla_vuelo: {
+    id: "pendolas_suspension_tabla_vuelo",
+    name: "Tirantes Péndolas de Suspensión",
+    family: "educacion_ciencia",
+    defaultPlacement: "both",
+    svg: `<path d="M -15 -20 L -15 20 M 15 -20 L 15 20" stroke="#38BDF8" stroke-width="4"/>`,
+    animatedSvg: (f: number) => {
+      const flowY = ((f * 2) % 24) - 12;
+      return `<g transform="scale(1.35)">
+        <line x1="-30" y1="-20" x2="30" y2="-20" stroke="${S}" stroke-width="7" stroke-linecap="round"/>
+        <line x1="-30" y1="-20" x2="30" y2="-20" stroke="#F59E0B" stroke-width="4.5" stroke-linecap="round"/>
+        <line x1="-16" y1="-20" x2="-16" y2="16" stroke="${S}" stroke-width="4.5"/>
+        <line x1="-16" y1="-20" x2="-16" y2="16" stroke="#38BDF8" stroke-width="3"/>
+        <circle cx="-16" cy="16" r="3" fill="#0284C7" stroke="${S}" stroke-width="1.5"/>
+        <line x1="16" y1="-20" x2="16" y2="16" stroke="${S}" stroke-width="4.5"/>
+        <line x1="16" y1="-20" x2="16" y2="16" stroke="#38BDF8" stroke-width="3"/>
+        <circle cx="16" cy="16" r="3" fill="#0284C7" stroke="${S}" stroke-width="1.5"/>
+        <rect x="-30" y="16" width="60" height="8" rx="2" fill="#B45309" stroke="${S}" stroke-width="3"/>
+        <polygon points="-16,${flowY} -19,${flowY + 6} -13,${flowY + 6}" fill="#FEF08A"/>
+        <polygon points="16,${flowY} 13,${flowY + 6} 19,${flowY + 6}" fill="#FEF08A"/>
+      </g>`;
+    },
+    tags: ["pendolas", "tirantes", "suspension", "calzada", "cable"],
+  },
+
+  carretilla_empujada_rocas: {
+    id: "carretilla_empujada_rocas",
+    name: "Carretilla de Obra Empujada con Rueda Giratoria",
+    family: "herramientas_objetos",
+    defaultPlacement: "both",
+    svg: `<path d="M 0 0 L 80 50 L 140 120" stroke="#000" stroke-width="6"/>`,
+    animatedSvg: (f: number) => {
+      const bBounce = Math.sin(f * 0.45) * 2;
+      const wheelRot = (f * 26) % 360;
+      return `<g transform="translate(0, 0)">
+        <!-- Manillares empuñados por las manos del Stickman (0,0) -->
+        <line x1="-30" y1="-8" x2="30" y2="32" stroke="#000000" stroke-width="8" stroke-linecap="round"/>
+        <line x1="-30" y1="-8" x2="30" y2="32" stroke="#D97706" stroke-width="5" stroke-linecap="round"/>
+        <rect x="-36" y="-13" width="14" height="9" rx="2.5" fill="#1E293B" stroke="${S}" stroke-width="2"/>
+
+        <!-- Chasis inclinado que baja hasta la rueda rodando sobre la calzada (+175px) -->
+        <g transform="translate(0, ${bBounce.toFixed(1)})">
+          <line x1="30" y1="32" x2="125" y2="175" stroke="#000000" stroke-width="8" stroke-linecap="round"/>
+          <line x1="30" y1="32" x2="125" y2="175" stroke="#475569" stroke-width="5" stroke-linecap="round"/>
+
+          <!-- Pata de apoyo trasera (elevada mientras se empuja) -->
+          <line x1="38" y1="42" x2="34" y2="135" stroke="#000000" stroke-width="6" stroke-linecap="round"/>
+          <line x1="26" y1="135" x2="44" y2="135" stroke="#000000" strokeWidth="5" strokeLinecap="round"/>
+
+          <!-- Rueda delantera con rayos rodando exactamente sobre la calzada (+175px con radio 22) -->
+          <g transform="translate(125, 175)">
+            <circle cx="0" cy="0" r="22" fill="#0F172A" stroke="${S}" stroke-width="5"/>
+            <circle cx="0" cy="0" r="11" fill="#94A3B8" stroke="${S}" stroke-width="3"/>
+            <g transform="rotate(${wheelRot.toFixed(1)})">
+              <line x1="-24" y1="0" x2="24" y2="0" stroke="#E2E8F0" stroke-width="4"/>
+              <line x1="0" y1="-24" x2="0" y2="24" stroke="#E2E8F0" stroke-width="4"/>
+              <line x1="-17" y1="-17" x2="17" y2="17" stroke="#CBD5E1" stroke-width="3"/>
+              <line x1="-17" y1="17" x2="17" y2="-17" stroke="#CBD5E1" stroke-width="3"/>
+            </g>
+          </g>
+
+          <!-- Tolva de acero rojo neo-brutalista cargada de rocas pesadas -->
+          <polygon points="20,40 128,40 152,-18 10,-18" fill="#DC2626" stroke="${S}" stroke-width="6" stroke-linejoin="round"/>
+          <polygon points="26,35 122,35 144,-12 18,-12" fill="#EF4444"/>
+
+          <!-- Montaña de rocas de prueba pesadas apiladas -->
+          <polygon points="15,-18 62,-18 38,-56" fill="#64748B" stroke="${S}" stroke-width="4"/>
+          <polygon points="56,-18 116,-18 88,-62" fill="#94A3B8" stroke="${S}" stroke-width="4"/>
+          <polygon points="106,-18 152,-18 128,-50" fill="#475569" stroke="${S}" stroke-width="4"/>
+          <polygon points="34,-42 98,-42 66,-72" fill="#CBD5E1" stroke="${S}" stroke-width="4"/>
+          <circle cx="66" cy="-58" r="3.5" fill="#FEF08A"/>
+        </g>
+      </g>`;
+    },
+    tags: ["carretilla", "rocas", "empujar", "obra", "rueda", "giro"],
+  },
+
+  carretilla_estacionada_rocas: {
+    id: "carretilla_estacionada_rocas",
+    name: "Carretilla Estacionada en la Hierba",
+    family: "herramientas_objetos",
+    defaultPlacement: "both",
+    svg: `<path d="M 0 0 L 80 50 L 140 120" stroke="#000" stroke-width="6"/>`,
+    animatedSvg: () => {
+      return `<g transform="translate(0, 0)">
+        <!-- Manillares en reposo -->
+        <line x1="-25" y1="-5" x2="35" y2="40" stroke="#000000" stroke-width="9" stroke-linecap="round"/>
+        <line x1="-25" y1="-5" x2="35" y2="40" stroke="#D97706" stroke-width="5.5" stroke-linecap="round"/>
+        <rect x="-32" y="-10" width="16" height="10" rx="3" fill="#1E293B" stroke="${S}" stroke-width="2.5"/>
+
+        <!-- Chasis apoyado firmemente -->
+        <line x1="35" y1="40" x2="160" y2="150" stroke="#000000" stroke-width="8" stroke-linecap="round"/>
+        <line x1="35" y1="40" x2="160" y2="150" stroke="#475569" stroke-width="5" stroke-linecap="round"/>
+
+        <!-- Patas de apoyo traseras firmemente plantadas en el suelo (y=150) -->
+        <line x1="45" y1="50" x2="40" y2="150" stroke="#000000" stroke-width="8" stroke-linecap="round"/>
+        <line x1="32" y1="150" x2="52" y2="150" stroke="#000000" stroke-width="7" stroke-linecap="round"/>
+
+        <!-- Rueda delantera inmóvil tocando el pasto (y=150) -->
+        <g transform="translate(160, 150)">
+          <circle cx="0" cy="0" r="28" fill="#0F172A" stroke="${S}" stroke-width="5"/>
+          <circle cx="0" cy="0" r="14" fill="#94A3B8" stroke="${S}" stroke-width="3"/>
+          <line x1="-24" y1="0" x2="24" y2="0" stroke="#E2E8F0" stroke-width="4"/>
+          <line x1="0" y1="-24" x2="0" y2="24" stroke="#E2E8F0" stroke-width="4"/>
+        </g>
+
+        <!-- Tolva roja -->
+        <polygon points="25,50 145,50 175,-10 15,-10" fill="#DC2626" stroke="${S}" stroke-width="6" stroke-linejoin="round"/>
+        <polygon points="32,45 140,45 166,-3 22,-3" fill="#EF4444"/>
+
+        <!-- Rocas pesadas apiladas -->
+        <polygon points="20,-10 70,-10 45,-50" fill="#64748B" stroke="${S}" stroke-width="4.5"/>
+        <polygon points="65,-10 130,-10 100,-55" fill="#94A3B8" stroke="${S}" stroke-width="4.5"/>
+        <polygon points="120,-10 170,-10 145,-45" fill="#475569" stroke="${S}" stroke-width="4.5"/>
+        <polygon points="40,-35 110,-35 75,-70" fill="#CBD5E1" stroke="${S}" stroke-width="4.5"/>
+      </g>`;
+    },
+    tags: ["carretilla", "estacionada", "parada", "rocas", "hierba", "descanso"],
+  },
+
+
+
+  llave_abrazadera_escape: {
+    id: "llave_abrazadera_escape",
+    name: "Llave Ajustando Abrazadera de Escape",
+    family: "herramientas_objetos",
+    defaultPlacement: "right",
+    svg: `<path d="M 0 0 L 40 40" stroke="#000" stroke-width="6"/>`,
+    animatedSvg: (f: number) => {
+      const wiggle = Math.sin(f * 0.4) * 8;
+      const sparkOpacity = Math.sin(f * 0.8) > 0.4 ? 1 : 0;
+      return `<g transform="translate(0, 0)">
+        <!-- Tubo de escape de acero pulido -->
+        <rect x="15" y="-60" width="38" height="120" rx="6" fill="#94A3B8" stroke="${S}" stroke-width="5"/>
+        <line x1="28" y1="-50" x2="28" y2="50" stroke="#E2E8F0" stroke-width="4" stroke-linecap="round"/>
+        <!-- Abrazadera metálica con perno -->
+        <rect x="10" y="-14" width="48" height="28" rx="4" fill="#D97706" stroke="${S}" stroke-width="5"/>
+        <circle cx="50" cy="0" r="7" fill="#FEF08A" stroke="${S}" stroke-width="3.5"/>
+        <!-- Llave inglesa ajustando el perno con inclinación oscilante -->
+        <g transform="translate(50, 0) rotate(${wiggle.toFixed(1)})">
+          <line x1="0" y1="0" x2="85" y2="45" stroke="#000000" stroke-width="12" stroke-linecap="round"/>
+          <line x1="0" y1="0" x2="85" y2="45" stroke="#38BDF8" stroke-width="7" stroke-linecap="round"/>
+          <!-- Boca de la llave -->
+          <circle cx="0" cy="0" r="14" fill="#0284C7" stroke="${S}" stroke-width="4.5"/>
+          <circle cx="0" cy="0" r="6" fill="#0F172A"/>
+        </g>
+        <!-- Destello de torque mecánico -->
+        <g transform="translate(62, -10)" opacity="${sparkOpacity}">
+          <polygon points="0,-10 3,-3 10,0 3,3 0,10 -3,3 -10,0 -3,-3" fill="#FEF08A" stroke="${S}" stroke-width="2"/>
+        </g>
+      </g>`;
+    },
+    tags: ["llave", "escape", "abrazadera", "kart", "taller", "mecanica"],
+  },
+
+  sonometro_digital_alarma: {
+    id: "sonometro_digital_alarma",
+    name: "Sonómetro Digital de Alarma Sónica 115 dB",
+    family: "educacion_ciencia",
+    defaultPlacement: "right",
+    svg: `<path d="M 0 0 L 30 50" stroke="#000" stroke-width="6"/>`,
+    animatedSvg: (f: number) => {
+      const shake = Math.sin(f * 0.6) * 3;
+      const flash = (f % 10) < 5;
+      return `<g transform="translate(${shake.toFixed(1)}, 0)">
+        <!-- Cuerpo ergonómico del sonómetro amarillo industrial -->
+        <rect x="-24" y="-30" width="48" height="95" rx="10" fill="#FACC15" stroke="${S}" stroke-width="5.5"/>
+        <!-- Micrófono de medición con capuchón de espuma negra -->
+        <rect x="-10" y="-62" width="20" height="32" rx="7" fill="#0F172A" stroke="${S}" stroke-width="4"/>
+        <circle cx="0" cy="-62" r="10" fill="#334155" stroke="${S}" stroke-width="3"/>
+        <!-- Pantalla LCD retroiluminada roja de advertencia -->
+        <rect x="-18" y="-18" width="36" height="32" rx="4" fill="${flash ? "#DC2626" : "#7F1D1D"}" stroke="${S}" stroke-width="3.5"/>
+        <text x="0" y="-3" fill="#FFFFFF" font-size="11" font-weight="900" font-family="sans-serif" text-anchor="middle">115</text>
+        <text x="0" y="8" fill="#FEF08A" font-size="8" font-weight="900" font-family="sans-serif" text-anchor="middle">dB</text>
+        <!-- Vúmetro de barras LED sónico -->
+        <g transform="translate(-16, 20)">
+          <rect x="0" y="0" width="6" height="6" rx="1" fill="#22C55E" stroke="${S}" stroke-width="1.5"/>
+          <rect x="8" y="0" width="6" height="6" rx="1" fill="#F59E0B" stroke="${S}" stroke-width="1.5"/>
+          <rect x="16" y="0" width="6" height="6" rx="1" fill="#EF4444" stroke="${S}" stroke-width="1.5"/>
+          <rect x="24" y="0" width="6" height="6" rx="1" fill="#DC2626" stroke="${S}" stroke-width="1.5"/>
+        </g>
+        <!-- Ondas acústicas violentas en el aire -->
+        <path d="M 18 -62 Q 32 -55 36 -40" stroke="#EF4444" stroke-width="4" fill="none" stroke-linecap="round"/>
+        <path d="M 24 -72 Q 44 -60 48 -35" stroke="#EF4444" stroke-width="3" fill="none" stroke-linecap="round"/>
+      </g>`;
+    },
+    tags: ["sonometro", "decibelios", "ruido", "db", "medidor", "alarma"],
+  },
+
+  antorcha_soldadura_tig_chispas: {
+    id: "antorcha_soldadura_tig_chispas",
+    name: "Antorcha de Soldadura TIG con Chispas",
+    family: "herramientas_objetos",
+    defaultPlacement: "right",
+    svg: `<path d="M 0 0 L 50 20" stroke="#000" stroke-width="6"/>`,
+    animatedSvg: (f: number) => {
+      const spark1 = Math.sin(f * 0.7) * 14;
+      const spark2 = Math.cos(f * 0.9) * 18;
+      const arcGlow = 0.7 + Math.sin(f * 0.5) * 0.3;
+      return `<g transform="translate(0, 0)">
+        <!-- Mango azul y cable flexible de soldadora -->
+        <line x1="-35" y1="45" x2="10" y2="10" stroke="#000000" stroke-width="12" stroke-linecap="round"/>
+        <line x1="-35" y1="45" x2="10" y2="10" stroke="#2563EB" stroke-width="7" stroke-linecap="round"/>
+        <!-- Boquilla cerámica de tungsteno -->
+        <polygon points="10,10 32,-8 40,-2 18,16" fill="#F43F5E" stroke="${S}" stroke-width="4"/>
+        <line x1="36" y1="-5" x2="48" y2="-15" stroke="#FEF08A" stroke-width="4.5" stroke-linecap="round"/>
+        <!-- Destello de plasma / arco eléctrico brillante -->
+        <circle cx="50" cy="-17" r="${(8 * arcGlow).toFixed(1)}" fill="#FFFFFF" stroke="#38BDF8" stroke-width="3"/>
+        <circle cx="50" cy="-17" r="${(4 * arcGlow).toFixed(1)}" fill="#FEF08A"/>
+        <!-- Lluvia de micro-chispas incandescentes -->
+        <circle cx="${55 + spark1}" cy="${-12 + Math.abs(spark2)}" r="2.5" fill="#FDE047"/>
+        <circle cx="${62 + spark2}" cy="${-20 + Math.abs(spark1)}" r="2" fill="#F97316"/>
+        <circle cx="${46 - spark2 * 0.5}" cy="${-5 + Math.abs(spark1)}" r="2.2" fill="#FEF08A"/>
+      </g>`;
+    },
+    tags: ["soldadura", "antorcha", "tig", "chispas", "fabricacion", "taller"],
+  },
+
+  tubo_perforado_fibra_acustica: {
+    id: "tubo_perforado_fibra_acustica",
+    name: "Tubo Perforado envuelto en Fibra de Vidrio",
+    family: "educacion_ciencia",
+    defaultPlacement: "both",
+    svg: `<path d="M 0 0 L 80 0" stroke="#000" stroke-width="6"/>`,
+    animatedSvg: (f: number) => {
+      const waveOffset = (f * 4) % 36;
+      return `<g transform="translate(-10, 0)">
+        <!-- Manta externa gruesa de lana de roca / fibra de vidrio acolchada -->
+        <rect x="-40" y="-38" width="120" height="76" rx="14" fill="#FEF9C3" stroke="${S}" stroke-width="5.5"/>
+        <line x1="-30" y1="-22" x2="70" y2="-22" stroke="#FDE047" stroke-width="3" stroke-dasharray="8 6"/>
+        <line x1="-30" y1="22" x2="70" y2="22" stroke="#FDE047" stroke-width="3" stroke-dasharray="8 6"/>
+        <!-- Tubo central perforado de acero inoxidable -->
+        <rect x="-55" y="-16" width="150" height="32" rx="4" fill="#94A3B8" stroke="${S}" stroke-width="5"/>
+        <rect x="-45" y="-12" width="130" height="24" rx="2" fill="#CBD5E1"/>
+        <!-- Agujeros de coladera por donde escapan las ondas sonoras -->
+        {[-30, -10, 10, 30, 50, 70].map(gx => (
+          <g key={gx}>
+            <circle cx={gx} cy="-6" r="3.5" fill="#0F172A"/>
+            <circle cx={gx + 10} cy="6" r="3.5" fill="#0F172A"/>
+          </g>
+        ))}
+        <!-- Ondas agudas que se transforman en calor al entrar en los pelitos -->
+        <path d="M -50 0 Q -35 -10 -20 0 T 10 0 T 40 0" fill="none" stroke="#38BDF8" stroke-width="3.5" stroke-linecap="round"/>
+        <!-- Destellos térmicos de fricción disipada en la fibra -->
+        <circle cx="15" cy="-28" r="3" fill="#EF4444" opacity="0.8"/>
+        <circle cx="45" cy="28" r="3.5" fill="#F97316" opacity="0.8"/>
+      </g>`;
+    },
+    tags: ["fibra_vidrio", "tubo_perforado", "absorcion", "acustica", "calor", "silenciador"],
+  },
+
+  regla_marcador_longitud_onda: {
+    id: "regla_marcador_longitud_onda",
+    name: "Regla y Marcador de Desfase Lambda sobre Dos",
+    family: "educacion_ciencia",
+    defaultPlacement: "both",
+    svg: `<path d="M 0 0 L 60 40" stroke="#000" stroke-width="6"/>`,
+    animatedSvg: (f: number) => {
+      const pulse = 1 + Math.sin(f * 0.2) * 0.05;
+      return `<g transform="translate(0, 0)">
+        <!-- Tablero de diseño técnico milimetrado -->
+        <rect x="-50" y="-45" width="105" height="90" rx="8" fill="#1E293B" stroke="${S}" stroke-width="5"/>
+        <line x1="-40" y1="-20" x2="45" y2="-20" stroke="#475569" stroke-width="2" stroke-dasharray="6 4"/>
+        <line x1="-40" y1="10" x2="45" y2="10" stroke="#475569" stroke-width="2" stroke-dasharray="6 4"/>
+        <!-- Esquema de dos rutas: Ruta Corta (azul) vs Ruta Larga (naranja) -->
+        <path d="M -40 -10 L 10 -10" stroke="#38BDF8" stroke-width="5" stroke-linecap="round"/>
+        <path d="M -40 18 Q -10 38 20 38 Q 45 38 45 10" stroke="#F59E0B" stroke-width="5" fill="none" stroke-linecap="round"/>
+        <!-- Rótulo de la física: Δx = λ / 2 -->
+        <g transform="translate(2, -28) scale(${pulse.toFixed(2)})">
+          <rect x="-24" y="-12" width="48" height="18" rx="4" fill="#0284C7" stroke="${S}" stroke-width="2.5"/>
+          <text x="0" y="1" fill="#FFFFFF" font-size="10" font-weight="900" font-family="sans-serif" text-anchor="middle">Δx = λ/2</text>
+        </g>
+        <!-- Regla metálica graduada sostenida -->
+        <g transform="translate(-25, 42) rotate(-15)">
+          <rect x="0" y="-8" width="75" height="16" rx="2" fill="#E2E8F0" stroke="${S}" stroke-width="3"/>
+          {[10, 20, 30, 40, 50, 60].map(rx => (
+            <line key={rx} x1={rx} y1="-8" x2={rx} y2="-2" stroke="#0F172A" stroke-width="2"/>
+          ))}
+        </g>
+      </g>`;
+    },
+    tags: ["regla", "longitud_onda", "lambda", "deflectores", "diseno", "acustica"],
+  },
+
+  holograma_cancelacion_fases: {
+    id: "holograma_cancelacion_fases",
+    name: "Panel Holográfico de Cancelación Destructiva 1 + (-1) = 0",
+    family: "educacion_ciencia",
+    defaultPlacement: "both",
+    svg: `<path d="M 0 0 L 80 0" stroke="#000" stroke-width="6"/>`,
+    animatedSvg: (f: number) => {
+      const waveShift = Math.sin(f * 0.15) * 12;
+      return `<g transform="translate(0, 0)">
+        <!-- Pantalla holográfica translúcida con bisel oscuro -->
+        <rect x="-65" y="-55" width="130" height="105" rx="10" fill="#0F172A" stroke="${S}" stroke-width="5.5"/>
+        <rect x="-58" y="-48" width="116" height="60" rx="6" fill="#022C22" stroke="#10B981" stroke-width="2"/>
+        <!-- Línea horizontal de cancelación perfecta: ruido cero -->
+        <line x1="-50" y1="-18" x2="50" y2="-18" stroke="#22C55E" stroke-width="5.5" stroke-linecap="round"/>
+        <circle cx="0" cy="-18" r="4.5" fill="#FEF08A"/>
+        <!-- Ecuación maestra iluminada: 1 + (-1) = 0 -->
+        <g transform="translate(0, 32)">
+          <rect x="-52" y="-14" width="104" height="24" rx="5" fill="#FFE600" stroke="${S}" stroke-width="3"/>
+          <text x="0" y="3" fill="#000000" font-size="12" font-weight="900" font-family="sans-serif" text-anchor="middle">1 + (-1) = 0</text>
+        </g>
+        <!-- Flechitas opuestas de anulación de cresta y valle -->
+        <path d="M -30 -38 Q -20 -48 -10 -38" stroke="#38BDF8" stroke-width="3" fill="none" stroke-linecap="round"/>
+        <path d="M 10 -38 Q 20 -28 30 -38" stroke="#F97316" stroke-width="3" fill="none" stroke-linecap="round"/>
+      </g>`;
+    },
+    tags: ["cancelacion", "fase", "interferencia", "destructiva", "onda", "acustica"],
+  },
+
+
+  test_dummy_aplastado: {
+    id: "test_dummy_aplastado",
+    name: "Muñeco de Prueba Aplastado por Fuerzas G",
+    family: "educacion_ciencia",
+    defaultPlacement: "overhead",
+    svg: `<path d="M 0 0 L 20 20" stroke="#000" stroke-width="6"/>`,
+    animatedSvg: (f: number) => {
+      const wobble = Math.sin(f * 0.4) * 4;
+      const tagPulse = 1 + Math.sin(f * 0.6) * 0.1;
+      return `<g transform="translate(0, 0) rotate(${wobble})">
+        <!-- Cabeza de maniquí de madera con costuras y ojos en cruz -->
+        <circle cx="0" cy="-35" r="22" fill="#E2E8F0" stroke="${S}" stroke-width="4"/>
+        <line x1="-12" y1="-40" x2="-4" y2="-32" stroke="#EF4444" stroke-width="4" stroke-linecap="round"/>
+        <line x1="-4" y1="-40" x2="-12" y2="-32" stroke="#EF4444" stroke-width="4" stroke-linecap="round"/>
+        <line x1="4" y1="-40" x2="12" y2="-32" stroke="#EF4444" stroke-width="4" stroke-linecap="round"/>
+        <line x1="12" y1="-40" x2="4" y2="-32" stroke="#EF4444" stroke-width="4" stroke-linecap="round"/>
+        <!-- Boca mareada zigzag -->
+        <path d="M -8 -22 Q -4 -26 0 -22 Q 4 -18 8 -22" fill="none" stroke="${S}" stroke-width="3"/>
+        <!-- Torso de acordeón completamente comprimido -->
+        <path d="M -26 -12 L 26 -12 L -22 -2 L 22 -2 L -20 8 L 20 8 L -18 18 L 18 18 L -16 28 L 16 28 Z" fill="#CBD5E1" stroke="${S}" stroke-width="4"/>
+        <!-- Brazos caídos y doblados -->
+        <path d="M -26 -10 Q -36 5 -30 25" fill="none" stroke="${S}" stroke-width="5" stroke-linecap="round"/>
+        <path d="M 26 -10 Q 36 5 30 25" fill="none" stroke="${S}" stroke-width="5" stroke-linecap="round"/>
+        <!-- Etiqueta de advertencia 12G colgando -->
+        <g transform="translate(0, 36) scale(${tagPulse})">
+          <rect x="-30" y="-10" width="60" height="22" rx="4" fill="#EF4444" stroke="${S}" stroke-width="3"/>
+          <text x="0" y="6" text-anchor="middle" font-family="'Arial Black', sans-serif" font-size="11" font-weight="900" fill="#FFFFFF">¡12G!</text>
+        </g>
+      </g>`;
+    },
+    tags: ["dummy", "maniqui", "aplastado", "prueba", "fuerza_g", "colapso"],
+  },
+
+  carrito_montana_rusa_vintage: {
+    id: "carrito_montana_rusa_vintage",
+    name: "Carrito de Montaña Rusa Vintage 1895",
+    family: "educacion_ciencia",
+    defaultPlacement: "both",
+    svg: `<rect x="-30" y="-15" width="60" height="30" fill="#B45309" stroke="#000" stroke-width="4"/>`,
+    animatedSvg: (f: number) => {
+      const wheelSpin = (f * 24) % 360;
+      const sparkJitter = Math.sin(f * 0.8) * 2;
+      return `<g transform="translate(0, 0)">
+        <!-- Chasis de madera con remaches de latón -->
+        <rect x="-42" y="-16" width="84" height="36" rx="6" fill="#B45309" stroke="${S}" stroke-width="4.5"/>
+        <rect x="-38" y="-12" width="76" height="12" rx="2" fill="#78350F"/>
+        <!-- Barra de seguridad frontal de hierro -->
+        <path d="M -30 -16 L -20 -28 L 20 -28 L 30 -16" fill="none" stroke="#64748B" stroke-width="4"/>
+        <!-- Ruedas dobles de hierro acanaladas -->
+        <g transform="translate(-24, 22) rotate(${wheelSpin})">
+          <circle cx="0" cy="0" r="14" fill="#1E293B" stroke="${S}" stroke-width="3.5"/>
+          <circle cx="0" cy="0" r="5" fill="#94A3B8"/>
+          <line x1="-12" y1="0" x2="12" y2="0" stroke="#94A3B8" stroke-width="2.5"/>
+          <line x1="0" y1="-12" x2="0" y2="12" stroke="#94A3B8" stroke-width="2.5"/>
+        </g>
+        <g transform="translate(24, 22) rotate(${wheelSpin})">
+          <circle cx="0" cy="0" r="14" fill="#1E293B" stroke="${S}" stroke-width="3.5"/>
+          <circle cx="0" cy="0" r="5" fill="#94A3B8"/>
+          <line x1="-12" y1="0" x2="12" y2="0" stroke="#94A3B8" stroke-width="2.5"/>
+          <line x1="0" y1="-12" x2="0" y2="12" stroke="#94A3B8" stroke-width="2.5"/>
+        </g>
+        <!-- Chispas debajo de las ruedas por velocidad -->
+        <polygon points="26,34 32,30 30,38 38,32 32,42" fill="#FACC15" opacity="0.9" transform="translate(${sparkJitter}, 0)"/>
+      </g>`;
+    },
+    tags: ["carrito", "montana_rusa", "vintage", "madera", "riel", "velocidad"],
+  },
+
+  planos_blueprint_feria: {
+    id: "planos_blueprint_feria",
+    name: "Planos Blueprint de Montaña Rusa",
+    family: "educacion_ciencia",
+    defaultPlacement: "right",
+    svg: `<rect x="-25" y="-18" width="50" height="36" fill="#0284C7" stroke="#000" stroke-width="4"/>`,
+    animatedSvg: (f: number) => {
+      const pulse = 1 + Math.sin(f * 0.15) * 0.03;
+      return `<g transform="translate(0, 0) scale(${pulse})">
+        <!-- Hoja de plano azul cian desplegada -->
+        <rect x="-35" y="-25" width="70" height="50" rx="3" fill="#0284C7" stroke="${S}" stroke-width="4"/>
+        <!-- Cuadrícula técnica blanca -->
+        <line x1="-35" y1="-10" x2="35" y2="-10" stroke="#FFFFFF" stroke-width="1" opacity="0.4"/>
+        <line x1="-35" y1="5" x2="35" y2="5" stroke="#FFFFFF" stroke-width="1" opacity="0.4"/>
+        <line x1="-35" y1="20" x2="35" y2="20" stroke="#FFFFFF" stroke-width="1" opacity="0.4"/>
+        <line x1="-15" y1="-25" x2="-15" y2="25" stroke="#FFFFFF" stroke-width="1" opacity="0.4"/>
+        <line x1="10" y1="-25" x2="10" y2="25" stroke="#FFFFFF" stroke-width="1" opacity="0.4"/>
+        <!-- Dibujo técnico del bucle en blanco -->
+        <circle cx="5" cy="0" r="14" fill="none" stroke="#FFFFFF" stroke-width="2.5"/>
+        <!-- Sello de advertencia en rojo -->
+        <rect x="-28" y="-18" width="22" height="12" rx="2" fill="#EF4444" stroke="#FFFFFF" stroke-width="1.5"/>
+        <text x="-17" y="-9" text-anchor="middle" font-family="'Arial Black', sans-serif" font-size="7" font-weight="900" fill="#FFFFFF">12G</text>
+      </g>`;
+    },
+    tags: ["planos", "blueprint", "ingenieria", "diseno", "feria", "calculo"],
+  },
+
+  llave_inglesa_sabotaje: {
+    id: "llave_inglesa_sabotaje",
+    name: "Llave Inglesa Pesada de Sabotaje",
+    family: "vida_cotidiana",
+    defaultPlacement: "right",
+    svg: `<path d="M 0 0 L 25 25" stroke="#000" stroke-width="6"/>`,
+    animatedSvg: (f: number) => {
+      const angle = Math.sin(f * 0.2) * 12;
+      return `<g transform="translate(0, 0) rotate(${angle})">
+        <!-- Mango largo de acero forjado -->
+        <rect x="-6" y="-8" width="12" height="55" rx="3" fill="#475569" stroke="${S}" stroke-width="4"/>
+        <rect x="-3" y="10" width="6" height="30" fill="#334155"/>
+        <!-- Cabeza con mordaza ajustable -->
+        <rect x="-14" y="-24" width="28" height="18" rx="4" fill="#64748B" stroke="${S}" stroke-width="4"/>
+        <rect x="-8" y="-28" width="16" height="8" rx="2" fill="#94A3B8" stroke="${S}" stroke-width="3"/>
+        <!-- Hueco de la mordaza -->
+        <rect x="-4" y="-24" width="8" height="12" fill="#0F172A"/>
+      </g>`;
+    },
+    tags: ["llave_inglesa", "herramienta", "sabotaje", "hierro", "tuerca", "mecanica"],
+  },
+
+    gafas_sol_llave_kart_victoria: {
+    id: "gafas_sol_llave_kart_victoria",
+    name: "Gafas de Sol y Llave de Kart Triunfal",
+    family: "reacciones_humor",
+    defaultPlacement: "both",
+    svg: `<path d="M 0 0 L 30 20" stroke="#000" stroke-width="6"/>`,
+    animatedSvg: (f: number) => {
+      const shine = (f * 3) % 40;
+      return `<g transform="translate(0, 0)">
+        <!-- Llavero de carreras a cuadros -->
+        <rect x="-35" y="10" width="30" height="20" rx="3" fill="#0F172A" stroke="${S}" stroke-width="3"/>
+        <rect x="-35" y="10" width="15" height="10" fill="#FFFFFF"/>
+        <rect x="-20" y="20" width="15" height="10" fill="#FFFFFF"/>
+        <!-- Llave dorada de contacto del kart -->
+        <circle cx="-5" cy="20" r="8" fill="#FACC15" stroke="${S}" stroke-width="3.5"/>
+        <rect x="0" y="17" width="28" height="6" fill="#F59E0B" stroke="${S}" stroke-width="2.5"/>
+        <rect x="18" y="23" width="5" height="5" fill="#F59E0B" stroke="${S}" stroke-width="2"/>
+        <rect x="24" y="23" width="4" height="4" fill="#F59E0B" stroke="${S}" stroke-width="2"/>
+        <!-- Gafas de sol oscuras de piloto estilo aviador -->
+        <g transform="translate(15, -25)">
+          <rect x="-24" y="-12" width="22" height="16" rx="5" fill="#0F172A" stroke="${S}" stroke-width="3.5"/>
+          <rect x="2" y="-12" width="22" height="16" rx="5" fill="#0F172A" stroke="${S}" stroke-width="3.5"/>
+          <line x1="-2" y1="-6" x2="2" y2="-6" stroke="${S}" stroke-width="4"/>
+          <!-- Reflejo blanco en los cristales -->
+          <line x1="-18" y1="-9" x2="-8" y2="-3" stroke="#FFFFFF" stroke-width="2.5" stroke-linecap="round"/>
+          <line x1="8" y1="-9" x2="18" y2="-3" stroke="#FFFFFF" stroke-width="2.5" stroke-linecap="round"/>
+        </g>
+      </g>`;
+    },
+    tags: ["gafas_sol", "llave", "kart", "victoria", "carreras", "triunfo"],
   },
 
 };

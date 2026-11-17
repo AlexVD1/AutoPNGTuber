@@ -66,7 +66,8 @@
                     "y": 90
                   },
                   "curva": "suave",
-                  "procedural": "estatico"
+                  "procedural": "estatico",
+                  "hastaPalabra": "tiburón"
                 },
                 {
                   "inicioProgreso": 0.5,
@@ -78,7 +79,8 @@
                     "y": 90
                   },
                   "curva": "suave",
-                  "procedural": "estatico"
+                  "procedural": "estatico",
+                  "desdePalabra": "tiburón"
                 }
               ]
             }
@@ -90,145 +92,198 @@
           "id": "tiburon_balanza",
           "propId": "tiburon_frustrado_balanza",
           "posicion": {
-            "x": 190,
+            "x": 160,
             "y": -30
           },
           "escala": 1.15,
           "animacion": "vibrar",
-          "capaZ": 10
+          "capaZ": 28,
+          "pasos": [
+            {
+              "inicioProgreso": 0.0,
+              "finProgreso": 0.5,
+              "hastaPalabra": "tiburón",
+              "posicion": {
+                "x": 160,
+                "y": -30
+              },
+              "escala": 1.3,
+              "estado": "equilibrio",
+              "curva": "suave"
+            },
+            {
+              "inicioProgreso": 0.5,
+              "finProgreso": 1.0,
+              "desdePalabra": "tiburón",
+              "posicion": {
+                "x": 135,
+                "y": -20
+              },
+              "escala": 1.42,
+              "estado": "gana_nariz",
+              "curva": "rebote"
+            }
+          ]
         }
       ],
-      "duracionSegundos": 7.402,
+      "duracionSegundos": 7.522,
       "palabras": [
         {
           "palabra": "Tu",
           "inicioMs": 0,
-          "finMs": 160
+          "finMs": 180
         },
         {
           "palabra": "nariz",
-          "inicioMs": 160,
-          "finMs": 520
+          "inicioMs": 180,
+          "finMs": 560
         },
         {
           "palabra": "es",
-          "inicioMs": 520,
-          "finMs": 740
+          "inicioMs": 560,
+          "finMs": 800
         },
         {
           "palabra": "más",
-          "inicioMs": 740,
-          "finMs": 940
+          "inicioMs": 800,
+          "finMs": 980
         },
         {
           "palabra": "sensible",
-          "inicioMs": 940,
+          "inicioMs": 980,
           "finMs": 1380
         },
         {
           "palabra": "al",
           "inicioMs": 1380,
-          "finMs": 1720
+          "finMs": 1620
         },
         {
           "palabra": "olor",
-          "inicioMs": 1720,
-          "finMs": 1960
+          "inicioMs": 1620,
+          "finMs": 1860
         },
         {
           "palabra": "de",
+          "inicioMs": 1860,
+          "finMs": 1960
+        },
+        {
+          "palabra": "la",
           "inicioMs": 1960,
           "finMs": 2060
         },
         {
-          "palabra": "la",
-          "inicioMs": 2060,
-          "finMs": 2160
-        },
-        {
           "palabra": "lluvia",
-          "inicioMs": 2160,
-          "finMs": 2440
+          "inicioMs": 2060,
+          "finMs": 2360
         },
         {
           "palabra": "fresca",
-          "inicioMs": 2440,
-          "finMs": 3220
+          "inicioMs": 2360,
+          "finMs": 3260
         },
         {
           "palabra": "que",
-          "inicioMs": 3220,
-          "finMs": 3300
+          "inicioMs": 3260,
+          "finMs": 3340
         },
         {
           "palabra": "la",
-          "inicioMs": 3300,
-          "finMs": 3400
+          "inicioMs": 3340,
+          "finMs": 3440
         },
         {
           "palabra": "nariz",
-          "inicioMs": 3400,
-          "finMs": 3720
+          "inicioMs": 3440,
+          "finMs": 3740
         },
         {
           "palabra": "de",
-          "inicioMs": 3720,
+          "inicioMs": 3740,
           "finMs": 3840
         },
         {
           "palabra": "un",
           "inicioMs": 3840,
-          "finMs": 3980
+          "finMs": 3940
         },
         {
           "palabra": "tiburón",
-          "inicioMs": 3980,
-          "finMs": 4400
+          "inicioMs": 3940,
+          "finMs": 4360
         },
         {
           "palabra": "blanco",
-          "inicioMs": 4400,
+          "inicioMs": 4360,
           "finMs": 4800
         },
         {
           "palabra": "detectando",
           "inicioMs": 4800,
-          "finMs": 5340
+          "finMs": 5400
         },
         {
           "palabra": "una",
-          "inicioMs": 5340,
-          "finMs": 5500
+          "inicioMs": 5400,
+          "finMs": 5560
         },
         {
           "palabra": "gota",
-          "inicioMs": 5500,
-          "finMs": 5820
-        },
-        {
-          "palabra": "de",
-          "inicioMs": 5820,
+          "inicioMs": 5560,
           "finMs": 5900
         },
         {
-          "palabra": "sangre",
+          "palabra": "de",
           "inicioMs": 5900,
-          "finMs": 6200
+          "finMs": 5980
+        },
+        {
+          "palabra": "sangre",
+          "inicioMs": 5980,
+          "finMs": 6300
         },
         {
           "palabra": "en",
-          "inicioMs": 6200,
-          "finMs": 6340
+          "inicioMs": 6300,
+          "finMs": 6460
         },
         {
           "palabra": "el",
-          "inicioMs": 6340,
-          "finMs": 6440
+          "inicioMs": 6460,
+          "finMs": 6560
         },
         {
           "palabra": "océano",
-          "inicioMs": 6440,
-          "finMs": 6840
+          "inicioMs": 6560,
+          "finMs": 7000
+        }
+      ],
+      "focoCamara": [
+        {
+          "inicioProgreso": 0.0,
+          "finProgreso": 0.36,
+          "x": -90,
+          "y": 20,
+          "escala": 1.12,
+          "curva": "suave"
+        },
+        {
+          "inicioProgreso": 0.36,
+          "finProgreso": 0.72,
+          "desdePalabra": "tiburón",
+          "x": 95,
+          "y": -20,
+          "escala": 1.22,
+          "curva": "suave"
+        },
+        {
+          "inicioProgreso": 0.72,
+          "finProgreso": 1.0,
+          "x": 0,
+          "y": 0,
+          "escala": 1.0,
+          "curva": "suave"
         }
       ]
     },
@@ -259,7 +314,7 @@
           "nombre": "Stickman",
           "posicion": {
             "x": -180,
-            "y": 100
+            "y": 90
           },
           "escala": 1.0,
           "orientacion": "derecha",
@@ -276,10 +331,11 @@
                   "expresion": "talking_enthusiastic",
                   "posicion": {
                     "x": -180,
-                    "y": 100
+                    "y": 90
                   },
                   "curva": "suave",
-                  "procedural": "estatico"
+                  "procedural": "estatico",
+                  "hastaPalabra": "Eso"
                 },
                 {
                   "inicioProgreso": 0.45,
@@ -288,10 +344,11 @@
                   "expresion": "surprised",
                   "posicion": {
                     "x": -150,
-                    "y": 100
+                    "y": 90
                   },
                   "curva": "suave",
-                  "procedural": "estatico"
+                  "procedural": "estatico",
+                  "desdePalabra": "Eso"
                 }
               ]
             }
@@ -304,58 +361,84 @@
           "propId": "piscina_olimpica_micro_gota",
           "posicion": {
             "x": 160,
-            "y": -40
+            "y": -30
           },
           "escala": 1.25,
           "animacion": "pulso",
-          "capaZ": 10
+          "capaZ": 28,
+          "pasos": [
+            {
+              "inicioProgreso": 0.0,
+              "finProgreso": 0.5,
+              "hastaPalabra": "Eso",
+              "posicion": {
+                "x": 160,
+                "y": -30
+              },
+              "escala": 1.3,
+              "estado": "gota_cayendo",
+              "curva": "suave"
+            },
+            {
+              "inicioProgreso": 0.5,
+              "finProgreso": 1.0,
+              "desdePalabra": "Eso",
+              "posicion": {
+                "x": 135,
+                "y": -20
+              },
+              "escala": 1.42,
+              "estado": "onda_expansion",
+              "curva": "rebote"
+            }
+          ]
         }
       ],
-      "duracionSegundos": 10.09,
+      "duracionSegundos": 10.666,
       "palabras": [
         {
           "palabra": "El",
           "inicioMs": 0,
-          "finMs": 200
+          "finMs": 220
         },
         {
           "palabra": "cerebro",
-          "inicioMs": 200,
-          "finMs": 600
+          "inicioMs": 220,
+          "finMs": 580
         },
         {
           "palabra": "humano",
-          "inicioMs": 600,
-          "finMs": 840
+          "inicioMs": 580,
+          "finMs": 800
         },
         {
           "palabra": "puede",
-          "inicioMs": 840,
+          "inicioMs": 800,
           "finMs": 1180
         },
         {
           "palabra": "detectar",
           "inicioMs": 1180,
-          "finMs": 1740
+          "finMs": 1700
         },
         {
           "palabra": "el",
-          "inicioMs": 1740,
-          "finMs": 1840
+          "inicioMs": 1700,
+          "finMs": 1800
         },
         {
           "palabra": "compuesto",
-          "inicioMs": 1840,
-          "finMs": 2280
+          "inicioMs": 1800,
+          "finMs": 2240
         },
         {
           "palabra": "del",
-          "inicioMs": 2280,
-          "finMs": 2460
+          "inicioMs": 2240,
+          "finMs": 2440
         },
         {
           "palabra": "olor",
-          "inicioMs": 2460,
+          "inicioMs": 2440,
           "finMs": 2740
         },
         {
@@ -371,92 +454,119 @@
         {
           "palabra": "en",
           "inicioMs": 3100,
-          "finMs": 3180
+          "finMs": 3260
         },
         {
           "palabra": "concentraciones",
-          "inicioMs": 3180,
-          "finMs": 3780
+          "inicioMs": 3260,
+          "finMs": 3880
         },
         {
           "palabra": "diminutas",
-          "inicioMs": 3780,
-          "finMs": 4380
+          "inicioMs": 3880,
+          "finMs": 4620
         },
         {
           "palabra": "cinco",
-          "inicioMs": 4460,
-          "finMs": 4660
-        },
-        {
-          "palabra": "partes",
-          "inicioMs": 4660,
-          "finMs": 4880
-        },
-        {
-          "palabra": "por",
-          "inicioMs": 4880,
+          "inicioMs": 4820,
           "finMs": 5120
         },
         {
-          "palabra": "billón",
+          "palabra": "partes",
           "inicioMs": 5120,
-          "finMs": 5460
+          "finMs": 5420
+        },
+        {
+          "palabra": "por",
+          "inicioMs": 5420,
+          "finMs": 5680
+        },
+        {
+          "palabra": "billón",
+          "inicioMs": 5680,
+          "finMs": 6120
         },
         {
           "palabra": "Eso",
-          "inicioMs": 5660,
-          "finMs": 5860
+          "inicioMs": 6340,
+          "finMs": 6520
         },
         {
           "palabra": "equivale",
-          "inicioMs": 5860,
-          "finMs": 6200
+          "inicioMs": 6520,
+          "finMs": 6820
         },
         {
           "palabra": "a",
-          "inicioMs": 6200,
-          "finMs": 6240
+          "inicioMs": 6820,
+          "finMs": 6880
         },
         {
           "palabra": "encontrar",
-          "inicioMs": 6240,
-          "finMs": 6600
+          "inicioMs": 6880,
+          "finMs": 7240
         },
         {
           "palabra": "media",
-          "inicioMs": 6600,
-          "finMs": 6920
+          "inicioMs": 7240,
+          "finMs": 7500
         },
         {
           "palabra": "cucharadita",
-          "inicioMs": 6920,
-          "finMs": 7540
-        },
-        {
-          "palabra": "disuelta",
-          "inicioMs": 7540,
-          "finMs": 8000
-        },
-        {
-          "palabra": "en",
-          "inicioMs": 8000,
+          "inicioMs": 7500,
           "finMs": 8100
         },
         {
-          "palabra": "quinientas",
+          "palabra": "disuelta",
           "inicioMs": 8100,
-          "finMs": 8520
+          "finMs": 8560
+        },
+        {
+          "palabra": "en",
+          "inicioMs": 8560,
+          "finMs": 8640
+        },
+        {
+          "palabra": "quinientas",
+          "inicioMs": 8640,
+          "finMs": 9060
         },
         {
           "palabra": "piscinas",
-          "inicioMs": 8520,
-          "finMs": 8840
+          "inicioMs": 9060,
+          "finMs": 9420
         },
         {
           "palabra": "olímpicas",
-          "inicioMs": 8840,
-          "finMs": 9400
+          "inicioMs": 9420,
+          "finMs": 9980
+        }
+      ],
+      "focoCamara": [
+        {
+          "inicioProgreso": 0.0,
+          "finProgreso": 0.36,
+          "x": -90,
+          "y": 20,
+          "escala": 1.12,
+          "curva": "suave"
+        },
+        {
+          "inicioProgreso": 0.36,
+          "finProgreso": 0.72,
+          "desdePalabra": "Eso",
+          "x": 95,
+          "y": -20,
+          "escala": 1.22,
+          "curva": "suave"
+        },
+        {
+          "inicioProgreso": 0.72,
+          "finProgreso": 1.0,
+          "x": 0,
+          "y": 0,
+          "escala": 1.0,
+          "curva": "suave"
         }
       ]
     },
@@ -507,7 +617,8 @@
                     "y": 90
                   },
                   "curva": "suave",
-                  "procedural": "estatico"
+                  "procedural": "estatico",
+                  "hastaPalabra": "geosmina"
                 },
                 {
                   "inicioProgreso": 0.45,
@@ -519,7 +630,8 @@
                     "y": 90
                   },
                   "curva": "suave",
-                  "procedural": "estatico"
+                  "procedural": "estatico",
+                  "desdePalabra": "geosmina"
                 }
               ]
             }
@@ -531,29 +643,55 @@
           "id": "bacteria_geosmina",
           "propId": "bacteria_streptomyces_geosmina",
           "posicion": {
-            "x": 170,
-            "y": -40
+            "x": 160,
+            "y": -30
           },
           "escala": 1.3,
           "animacion": "vibrar",
-          "capaZ": 10
+          "capaZ": 28,
+          "pasos": [
+            {
+              "inicioProgreso": 0.0,
+              "finProgreso": 0.5,
+              "hastaPalabra": "geosmina",
+              "posicion": {
+                "x": 160,
+                "y": -30
+              },
+              "escala": 1.3,
+              "estado": "colonia",
+              "curva": "suave"
+            },
+            {
+              "inicioProgreso": 0.5,
+              "finProgreso": 1.0,
+              "desdePalabra": "geosmina",
+              "posicion": {
+                "x": 135,
+                "y": -20
+              },
+              "escala": 1.42,
+              "estado": "liberando_geosmina",
+              "curva": "rebote"
+            }
+          ]
         }
       ],
-      "duracionSegundos": 10.522,
+      "duracionSegundos": 9.922,
       "palabras": [
         {
           "palabra": "Pero",
           "inicioMs": 0,
-          "finMs": 240
+          "finMs": 220
         },
         {
           "palabra": "el",
-          "inicioMs": 240,
-          "finMs": 360
+          "inicioMs": 220,
+          "finMs": 340
         },
         {
           "palabra": "agua",
-          "inicioMs": 360,
+          "inicioMs": 340,
           "finMs": 500
         },
         {
@@ -564,11 +702,11 @@
         {
           "palabra": "no",
           "inicioMs": 840,
-          "finMs": 1000
+          "finMs": 980
         },
         {
           "palabra": "huele",
-          "inicioMs": 1000,
+          "inicioMs": 980,
           "finMs": 1240
         },
         {
@@ -579,117 +717,144 @@
         {
           "palabra": "nada",
           "inicioMs": 1340,
-          "finMs": 1620
+          "finMs": 1580
         },
         {
           "palabra": "Lo",
-          "inicioMs": 1880,
-          "finMs": 1960
+          "inicioMs": 1820,
+          "finMs": 1880
         },
         {
           "palabra": "que",
-          "inicioMs": 1960,
-          "finMs": 2100
+          "inicioMs": 1880,
+          "finMs": 2000
         },
         {
           "palabra": "estás",
-          "inicioMs": 2100,
-          "finMs": 2280
+          "inicioMs": 2000,
+          "finMs": 2180
         },
         {
           "palabra": "oliendo",
-          "inicioMs": 2280,
-          "finMs": 2620
+          "inicioMs": 2180,
+          "finMs": 2540
         },
         {
           "palabra": "se",
-          "inicioMs": 2620,
-          "finMs": 2840
+          "inicioMs": 2540,
+          "finMs": 2760
         },
         {
           "palabra": "llama",
-          "inicioMs": 2840,
-          "finMs": 3060
+          "inicioMs": 2760,
+          "finMs": 2960
         },
         {
           "palabra": "geosmina",
-          "inicioMs": 3060,
-          "finMs": 3760
+          "inicioMs": 2960,
+          "finMs": 3560
         },
         {
           "palabra": "una",
-          "inicioMs": 3980,
-          "finMs": 4140
+          "inicioMs": 3820,
+          "finMs": 3960
         },
         {
           "palabra": "molécula",
-          "inicioMs": 4140,
-          "finMs": 4660
+          "inicioMs": 3960,
+          "finMs": 4400
         },
         {
           "palabra": "producida",
-          "inicioMs": 4660,
-          "finMs": 5100
+          "inicioMs": 4400,
+          "finMs": 4840
         },
         {
           "palabra": "por",
-          "inicioMs": 5100,
-          "finMs": 5320
+          "inicioMs": 4840,
+          "finMs": 5040
         },
         {
           "palabra": "bacterias",
-          "inicioMs": 5320,
-          "finMs": 5760
+          "inicioMs": 5040,
+          "finMs": 5500
         },
         {
           "palabra": "microscópicas",
-          "inicioMs": 5760,
-          "finMs": 6520
+          "inicioMs": 5500,
+          "finMs": 6220
         },
         {
           "palabra": "llamadas",
-          "inicioMs": 6520,
-          "finMs": 6940
+          "inicioMs": 6220,
+          "finMs": 6680
         },
         {
           "palabra": "Streptomyces",
-          "inicioMs": 6940,
-          "finMs": 7780
+          "inicioMs": 6680,
+          "finMs": 7540
         },
         {
           "palabra": "que",
-          "inicioMs": 7780,
-          "finMs": 8120
+          "inicioMs": 7540,
+          "finMs": 7660
         },
         {
           "palabra": "viven",
-          "inicioMs": 8120,
-          "finMs": 8360
+          "inicioMs": 7660,
+          "finMs": 7880
         },
         {
           "palabra": "esperando",
-          "inicioMs": 8360,
-          "finMs": 8740
+          "inicioMs": 7880,
+          "finMs": 8200
         },
         {
           "palabra": "la",
-          "inicioMs": 8740,
-          "finMs": 8920
+          "inicioMs": 8200,
+          "finMs": 8440
         },
         {
           "palabra": "humedad",
-          "inicioMs": 8920,
-          "finMs": 9200
+          "inicioMs": 8440,
+          "finMs": 8720
         },
         {
           "palabra": "bajo",
-          "inicioMs": 9200,
-          "finMs": 9480
+          "inicioMs": 8720,
+          "finMs": 8960
         },
         {
           "palabra": "tierra",
-          "inicioMs": 9480,
-          "finMs": 9800
+          "inicioMs": 8960,
+          "finMs": 9380
+        }
+      ],
+      "focoCamara": [
+        {
+          "inicioProgreso": 0.0,
+          "finProgreso": 0.36,
+          "x": -90,
+          "y": 20,
+          "escala": 1.12,
+          "curva": "suave"
+        },
+        {
+          "inicioProgreso": 0.36,
+          "finProgreso": 0.72,
+          "desdePalabra": "geosmina",
+          "x": 95,
+          "y": -20,
+          "escala": 1.22,
+          "curva": "suave"
+        },
+        {
+          "inicioProgreso": 0.72,
+          "finProgreso": 1.0,
+          "x": 0,
+          "y": 0,
+          "escala": 1.0,
+          "curva": "suave"
         }
       ]
     },
@@ -740,7 +905,8 @@
                     "y": 90
                   },
                   "curva": "suave",
-                  "procedural": "estatico"
+                  "procedural": "estatico",
+                  "hastaPalabra": "porque"
                 },
                 {
                   "inicioProgreso": 0.5,
@@ -752,7 +918,8 @@
                     "y": 90
                   },
                   "curva": "suave",
-                  "procedural": "estatico"
+                  "procedural": "estatico",
+                  "desdePalabra": "porque"
                 }
               ]
             }
@@ -765,164 +932,217 @@
           "propId": "roca_petricor_aceite_dorado",
           "posicion": {
             "x": 160,
-            "y": -40
+            "y": -30
           },
           "escala": 1.35,
           "animacion": "pulso",
-          "capaZ": 10
+          "capaZ": 28,
+          "pasos": [
+            {
+              "inicioProgreso": 0.0,
+              "finProgreso": 0.5,
+              "hastaPalabra": "porque",
+              "posicion": {
+                "x": 160,
+                "y": -30
+              },
+              "escala": 1.3,
+              "estado": "roca_seca",
+              "curva": "suave"
+            },
+            {
+              "inicioProgreso": 0.5,
+              "finProgreso": 1.0,
+              "desdePalabra": "porque",
+              "posicion": {
+                "x": 135,
+                "y": -20
+              },
+              "escala": 1.42,
+              "estado": "aceite_dorado",
+              "curva": "rebote"
+            }
+          ]
         }
       ],
-      "duracionSegundos": 7.738,
+      "duracionSegundos": 10.498,
       "palabras": [
         {
           "palabra": "En",
           "inicioMs": 0,
-          "finMs": 180
+          "finMs": 220
         },
         {
           "palabra": "mil",
-          "inicioMs": 180,
-          "finMs": 303
+          "inicioMs": 220,
+          "finMs": 380
         },
         {
           "palabra": "novecientos",
-          "inicioMs": 303,
-          "finMs": 426
+          "inicioMs": 380,
+          "finMs": 1000
         },
         {
           "palabra": "sesenta",
-          "inicioMs": 426,
-          "finMs": 549
+          "inicioMs": 1000,
+          "finMs": 1380
         },
         {
           "palabra": "y",
-          "inicioMs": 549,
-          "finMs": 672
+          "inicioMs": 1380,
+          "finMs": 1420
         },
         {
           "palabra": "cuatro",
-          "inicioMs": 672,
-          "finMs": 795
+          "inicioMs": 1420,
+          "finMs": 1600
         },
         {
           "palabra": "los",
-          "inicioMs": 795,
-          "finMs": 918
+          "inicioMs": 1740,
+          "finMs": 1820
         },
         {
           "palabra": "científicos",
-          "inicioMs": 918,
-          "finMs": 1040
+          "inicioMs": 1820,
+          "finMs": 2400
         },
         {
           "palabra": "inventaron",
-          "inicioMs": 1040,
-          "finMs": 1162
+          "inicioMs": 2400,
+          "finMs": 2880
         },
         {
           "palabra": "la",
-          "inicioMs": 1162,
-          "finMs": 1285
+          "inicioMs": 2880,
+          "finMs": 3020
         },
         {
           "palabra": "palabra",
-          "inicioMs": 1285,
-          "finMs": 1408
+          "inicioMs": 3020,
+          "finMs": 3300
         },
         {
           "palabra": "petricor",
-          "inicioMs": 1408,
-          "finMs": 1530
+          "inicioMs": 3300,
+          "finMs": 3860
         },
         {
           "palabra": "uniendo",
-          "inicioMs": 1530,
-          "finMs": 1652
+          "inicioMs": 3860,
+          "finMs": 4200
         },
         {
           "palabra": "roca",
-          "inicioMs": 1652,
-          "finMs": 1775
+          "inicioMs": 4200,
+          "finMs": 4560
         },
         {
           "palabra": "e",
-          "inicioMs": 1775,
-          "finMs": 1898
+          "inicioMs": 4560,
+          "finMs": 4660
         },
         {
           "palabra": "ícor",
-          "inicioMs": 1898,
-          "finMs": 2020
+          "inicioMs": 4660,
+          "finMs": 4960
         },
         {
           "palabra": "la",
-          "inicioMs": 2020,
-          "finMs": 2080
+          "inicioMs": 5240,
+          "finMs": 5320
         },
         {
           "palabra": "sangre",
-          "inicioMs": 2080,
-          "finMs": 2420
+          "inicioMs": 5320,
+          "finMs": 5620
         },
         {
           "palabra": "dorada",
-          "inicioMs": 2420,
-          "finMs": 2780
+          "inicioMs": 5620,
+          "finMs": 5960
         },
         {
           "palabra": "de",
-          "inicioMs": 2780,
-          "finMs": 2980
+          "inicioMs": 5960,
+          "finMs": 6100
         },
         {
           "palabra": "los",
-          "inicioMs": 2980,
-          "finMs": 3120
+          "inicioMs": 6100,
+          "finMs": 6220
         },
         {
           "palabra": "dioses",
-          "inicioMs": 3120,
-          "finMs": 3440
+          "inicioMs": 6220,
+          "finMs": 6520
         },
         {
           "palabra": "griegos",
-          "inicioMs": 3440,
-          "finMs": 3920
+          "inicioMs": 6520,
+          "finMs": 6980
         },
         {
           "palabra": "porque",
-          "inicioMs": 4120,
-          "finMs": 4300
+          "inicioMs": 7200,
+          "finMs": 7380
         },
         {
           "palabra": "las",
-          "inicioMs": 4300,
-          "finMs": 4520
+          "inicioMs": 7380,
+          "finMs": 7580
         },
         {
           "palabra": "piedras",
-          "inicioMs": 4520,
-          "finMs": 4900
+          "inicioMs": 7580,
+          "finMs": 7920
         },
         {
           "palabra": "secas",
-          "inicioMs": 4900,
-          "finMs": 5280
+          "inicioMs": 7920,
+          "finMs": 8360
         },
         {
           "palabra": "atrapan",
-          "inicioMs": 5280,
-          "finMs": 5780
+          "inicioMs": 8360,
+          "finMs": 8920
         },
         {
           "palabra": "aceites",
-          "inicioMs": 5780,
-          "finMs": 6240
+          "inicioMs": 8920,
+          "finMs": 9300
         },
         {
           "palabra": "aromáticos",
-          "inicioMs": 6240,
-          "finMs": 6920
+          "inicioMs": 9300,
+          "finMs": 9920
+        }
+      ],
+      "focoCamara": [
+        {
+          "inicioProgreso": 0.0,
+          "finProgreso": 0.36,
+          "x": -90,
+          "y": 20,
+          "escala": 1.12,
+          "curva": "suave"
+        },
+        {
+          "inicioProgreso": 0.36,
+          "finProgreso": 0.72,
+          "desdePalabra": "porque",
+          "x": 95,
+          "y": -20,
+          "escala": 1.22,
+          "curva": "suave"
+        },
+        {
+          "inicioProgreso": 0.72,
+          "finProgreso": 1.0,
+          "x": 0,
+          "y": 0,
+          "escala": 1.0,
+          "curva": "suave"
         }
       ]
     },
@@ -973,7 +1193,8 @@
                     "y": 90
                   },
                   "curva": "suave",
-                  "procedural": "estatico"
+                  "procedural": "estatico",
+                  "hastaPalabra": "cada"
                 },
                 {
                   "inicioProgreso": 0.5,
@@ -985,7 +1206,8 @@
                     "y": 90
                   },
                   "curva": "impacto",
-                  "procedural": "temblar"
+                  "procedural": "temblar",
+                  "desdePalabra": "cada"
                 }
               ]
             }
@@ -998,179 +1220,232 @@
           "propId": "gota_lluvia_macro_aerosol",
           "posicion": {
             "x": 160,
-            "y": -50
+            "y": -30
           },
           "escala": 1.35,
           "animacion": "vibrar",
-          "capaZ": 10
+          "capaZ": 28,
+          "pasos": [
+            {
+              "inicioProgreso": 0.0,
+              "finProgreso": 0.5,
+              "hastaPalabra": "cada",
+              "posicion": {
+                "x": 160,
+                "y": -30
+              },
+              "escala": 1.3,
+              "estado": "impacto",
+              "curva": "suave"
+            },
+            {
+              "inicioProgreso": 0.5,
+              "finProgreso": 1.0,
+              "desdePalabra": "cada",
+              "posicion": {
+                "x": 135,
+                "y": -20
+              },
+              "escala": 1.42,
+              "estado": "aerosol_champan",
+              "curva": "rebote"
+            }
+          ]
         }
       ],
-      "duracionSegundos": 10.522,
+      "duracionSegundos": 10.042,
       "palabras": [
         {
           "palabra": "Y",
           "inicioMs": 0,
-          "finMs": 20
+          "finMs": 96
         },
         {
           "palabra": "cómo",
-          "inicioMs": 20,
-          "finMs": 40
+          "inicioMs": 96,
+          "finMs": 192
         },
         {
           "palabra": "viaja",
-          "inicioMs": 40,
-          "finMs": 60
+          "inicioMs": 192,
+          "finMs": 288
         },
         {
           "palabra": "hasta",
-          "inicioMs": 60,
-          "finMs": 80
+          "inicioMs": 288,
+          "finMs": 384
         },
         {
           "palabra": "tu",
-          "inicioMs": 80,
-          "finMs": 100
+          "inicioMs": 384,
+          "finMs": 480
         },
         {
           "palabra": "nariz",
-          "inicioMs": 100,
-          "finMs": 120
+          "inicioMs": 480,
+          "finMs": 576
         },
         {
           "palabra": "En",
-          "inicioMs": 120,
-          "finMs": 140
+          "inicioMs": 576,
+          "finMs": 672
         },
         {
           "palabra": "dos",
-          "inicioMs": 140,
-          "finMs": 160
+          "inicioMs": 672,
+          "finMs": 768
         },
         {
           "palabra": "mil",
-          "inicioMs": 160,
-          "finMs": 180
+          "inicioMs": 768,
+          "finMs": 864
         },
         {
           "palabra": "quince",
-          "inicioMs": 180,
-          "finMs": 220
+          "inicioMs": 864,
+          "finMs": 960
         },
         {
           "palabra": "el",
-          "inicioMs": 180,
-          "finMs": 1380
+          "inicioMs": 960,
+          "finMs": 1700
         },
         {
           "palabra": "MIT",
-          "inicioMs": 1380,
-          "finMs": 1840
+          "inicioMs": 1700,
+          "finMs": 2000
         },
         {
           "palabra": "descubrió",
-          "inicioMs": 1840,
-          "finMs": 3160
+          "inicioMs": 2000,
+          "finMs": 3480
         },
         {
           "palabra": "con",
-          "inicioMs": 3160,
-          "finMs": 3320
+          "inicioMs": 3480,
+          "finMs": 3660
         },
         {
           "palabra": "cámaras",
-          "inicioMs": 3320,
-          "finMs": 3800
+          "inicioMs": 3660,
+          "finMs": 4200
         },
         {
           "palabra": "ultra",
-          "inicioMs": 3800,
-          "finMs": 4060
+          "inicioMs": 4200,
+          "finMs": 4500
         },
         {
           "palabra": "lentas",
-          "inicioMs": 4060,
-          "finMs": 4540
+          "inicioMs": 4500,
+          "finMs": 5020
         },
         {
           "palabra": "que",
-          "inicioMs": 4540,
-          "finMs": 4620
+          "inicioMs": 5020,
+          "finMs": 5120
         },
         {
           "palabra": "cada",
-          "inicioMs": 4620,
-          "finMs": 4900
+          "inicioMs": 5120,
+          "finMs": 5400
         },
         {
           "palabra": "gota",
-          "inicioMs": 4900,
-          "finMs": 5260
+          "inicioMs": 5400,
+          "finMs": 5780
         },
         {
           "palabra": "de",
-          "inicioMs": 5260,
-          "finMs": 5340
+          "inicioMs": 5780,
+          "finMs": 5860
         },
         {
           "palabra": "lluvia",
-          "inicioMs": 5340,
-          "finMs": 5700
+          "inicioMs": 5860,
+          "finMs": 6260
         },
         {
           "palabra": "atrapa",
-          "inicioMs": 5700,
-          "finMs": 6180
+          "inicioMs": 6260,
+          "finMs": 6700
         },
         {
           "palabra": "diminutas",
-          "inicioMs": 6180,
-          "finMs": 6640
+          "inicioMs": 6700,
+          "finMs": 7240
         },
         {
           "palabra": "burbujas",
-          "inicioMs": 6640,
-          "finMs": 7100
+          "inicioMs": 7240,
+          "finMs": 7740
         },
         {
           "palabra": "de",
-          "inicioMs": 7100,
-          "finMs": 7200
+          "inicioMs": 7740,
+          "finMs": 7860
         },
         {
           "palabra": "aire",
-          "inicioMs": 7200,
-          "finMs": 7360
+          "inicioMs": 7860,
+          "finMs": 8040
         },
         {
           "palabra": "al",
-          "inicioMs": 7360,
-          "finMs": 7480
+          "inicioMs": 8040,
+          "finMs": 8220
         },
         {
           "palabra": "chocar",
-          "inicioMs": 7480,
-          "finMs": 7780
+          "inicioMs": 8220,
+          "finMs": 8580
         },
         {
           "palabra": "disparando",
-          "inicioMs": 7960,
-          "finMs": 8480
+          "inicioMs": 8760,
+          "finMs": 9280
         },
         {
           "palabra": "aerosoles",
-          "inicioMs": 8480,
-          "finMs": 8940
+          "inicioMs": 9280,
+          "finMs": 9700
         },
         {
           "palabra": "como",
-          "inicioMs": 8940,
-          "finMs": 9220
+          "inicioMs": 9700,
+          "finMs": 9746
         },
         {
           "palabra": "champán",
-          "inicioMs": 9220,
-          "finMs": 9780
+          "inicioMs": 9746,
+          "finMs": 9792
+        }
+      ],
+      "focoCamara": [
+        {
+          "inicioProgreso": 0.0,
+          "finProgreso": 0.36,
+          "x": -90,
+          "y": 20,
+          "escala": 1.12,
+          "curva": "suave"
+        },
+        {
+          "inicioProgreso": 0.36,
+          "finProgreso": 0.72,
+          "desdePalabra": "cada",
+          "x": 95,
+          "y": -20,
+          "escala": 1.22,
+          "curva": "suave"
+        },
+        {
+          "inicioProgreso": 0.72,
+          "finProgreso": 1.0,
+          "x": 0,
+          "y": 0,
+          "escala": 1.0,
+          "curva": "suave"
         }
       ]
     },
@@ -1201,7 +1476,7 @@
           "nombre": "Stickman",
           "posicion": {
             "x": -160,
-            "y": 100
+            "y": 90
           },
           "escala": 1.0,
           "orientacion": "derecha",
@@ -1214,26 +1489,28 @@
                 {
                   "inicioProgreso": 0,
                   "finProgreso": 0.5,
-                  "poseId": "looking_up_pose",
+                  "poseId": "investigating_magnifier",
                   "expresion": "analytical",
                   "posicion": {
                     "x": -160,
-                    "y": 100
+                    "y": 90
                   },
                   "curva": "suave",
-                  "procedural": "estatico"
+                  "procedural": "estatico",
+                  "hastaPalabra": "Porque"
                 },
                 {
                   "inicioProgreso": 0.5,
                   "finProgreso": 1.0,
-                  "poseId": "running",
-                  "expresion": "smile_wide",
+                  "poseId": "pointing_right",
+                  "expresion": "eureka",
                   "posicion": {
                     "x": -120,
-                    "y": 100
+                    "y": 90
                   },
                   "curva": "suave",
-                  "procedural": "caminar"
+                  "procedural": "caminar",
+                  "desdePalabra": "Porque"
                 }
               ]
             }
@@ -1246,14 +1523,40 @@
           "propId": "mapa_sabana_oasis_ancestro",
           "posicion": {
             "x": 160,
-            "y": -40
+            "y": -30
           },
           "escala": 1.25,
           "animacion": "flotar",
-          "capaZ": 10
+          "capaZ": 28,
+          "pasos": [
+            {
+              "inicioProgreso": 0.0,
+              "finProgreso": 0.5,
+              "hastaPalabra": "Porque",
+              "posicion": {
+                "x": 160,
+                "y": -30
+              },
+              "escala": 1.3,
+              "estado": "sequia",
+              "curva": "suave"
+            },
+            {
+              "inicioProgreso": 0.5,
+              "finProgreso": 1.0,
+              "desdePalabra": "Porque",
+              "posicion": {
+                "x": 135,
+                "y": -20
+              },
+              "escala": 1.42,
+              "estado": "ruta_oasis",
+              "curva": "rebote"
+            }
+          ]
         }
       ],
-      "duracionSegundos": 10.618,
+      "duracionSegundos": 10.306,
       "palabras": [
         {
           "palabra": "Por",
@@ -1273,142 +1576,169 @@
         {
           "palabra": "evolución",
           "inicioMs": 440,
-          "finMs": 880
+          "finMs": 860
         },
         {
           "palabra": "nos",
-          "inicioMs": 880,
+          "inicioMs": 860,
           "finMs": 1080
         },
         {
           "palabra": "dio",
           "inicioMs": 1080,
-          "finMs": 1280
+          "finMs": 1200
         },
         {
           "palabra": "este",
-          "inicioMs": 1280,
-          "finMs": 1560
+          "inicioMs": 1200,
+          "finMs": 1440
         },
         {
           "palabra": "olfato",
-          "inicioMs": 1560,
-          "finMs": 1920
+          "inicioMs": 1440,
+          "finMs": 1780
         },
         {
           "palabra": "sobrehumano",
-          "inicioMs": 2200,
-          "finMs": 2560
+          "inicioMs": 2060,
+          "finMs": 2380
         },
         {
           "palabra": "Porque",
-          "inicioMs": 2760,
-          "finMs": 2920
+          "inicioMs": 2620,
+          "finMs": 2740
         },
         {
           "palabra": "en",
-          "inicioMs": 2920,
-          "finMs": 3060
+          "inicioMs": 2740,
+          "finMs": 2900
         },
         {
           "palabra": "la",
-          "inicioMs": 3060,
-          "finMs": 3140
+          "inicioMs": 2900,
+          "finMs": 2960
         },
         {
           "palabra": "sabana",
-          "inicioMs": 3140,
-          "finMs": 3480
+          "inicioMs": 2960,
+          "finMs": 3300
         },
         {
           "palabra": "ancestral",
-          "inicioMs": 3480,
-          "finMs": 3940
+          "inicioMs": 3300,
+          "finMs": 3760
         },
         {
           "palabra": "oler",
-          "inicioMs": 4160,
-          "finMs": 4360
+          "inicioMs": 4080,
+          "finMs": 4240
         },
         {
           "palabra": "la",
-          "inicioMs": 4360,
-          "finMs": 4520
+          "inicioMs": 4240,
+          "finMs": 4400
         },
         {
           "palabra": "lluvia",
-          "inicioMs": 4520,
-          "finMs": 4840
+          "inicioMs": 4400,
+          "finMs": 4740
         },
         {
           "palabra": "a",
-          "inicioMs": 4840,
-          "finMs": 4980
+          "inicioMs": 4740,
+          "finMs": 4880
         },
         {
           "palabra": "kilómetros",
-          "inicioMs": 4980,
-          "finMs": 5340
+          "inicioMs": 4880,
+          "finMs": 5300
         },
         {
           "palabra": "significaba",
-          "inicioMs": 5340,
-          "finMs": 5980
+          "inicioMs": 5300,
+          "finMs": 6180
         },
         {
           "palabra": "encontrar",
-          "inicioMs": 5980,
-          "finMs": 6340
+          "inicioMs": 6180,
+          "finMs": 6540
         },
         {
           "palabra": "agua",
-          "inicioMs": 6340,
-          "finMs": 6720
+          "inicioMs": 6540,
+          "finMs": 6780
         },
         {
           "palabra": "dulce",
-          "inicioMs": 6720,
+          "inicioMs": 6780,
           "finMs": 7220
         },
         {
           "palabra": "comida",
-          "inicioMs": 7360,
-          "finMs": 7640
+          "inicioMs": 7460,
+          "finMs": 7760
         },
         {
           "palabra": "y",
-          "inicioMs": 7640,
-          "finMs": 7820
+          "inicioMs": 7760,
+          "finMs": 7940
         },
         {
           "palabra": "supervivencia",
-          "inicioMs": 7820,
-          "finMs": 8580
+          "inicioMs": 7940,
+          "finMs": 8700
         },
         {
           "palabra": "antes",
-          "inicioMs": 8580,
-          "finMs": 9040
+          "inicioMs": 8700,
+          "finMs": 9020
         },
         {
           "palabra": "de",
-          "inicioMs": 9040,
-          "finMs": 9240
+          "inicioMs": 9020,
+          "finMs": 9180
         },
         {
           "palabra": "morir",
-          "inicioMs": 9240,
-          "finMs": 9540
+          "inicioMs": 9180,
+          "finMs": 9420
         },
         {
           "palabra": "de",
-          "inicioMs": 9540,
-          "finMs": 9700
+          "inicioMs": 9420,
+          "finMs": 9580
         },
         {
           "palabra": "sed",
-          "inicioMs": 9700,
-          "finMs": 9920
+          "inicioMs": 9580,
+          "finMs": 9760
+        }
+      ],
+      "focoCamara": [
+        {
+          "inicioProgreso": 0.0,
+          "finProgreso": 0.36,
+          "x": -90,
+          "y": 20,
+          "escala": 1.12,
+          "curva": "suave"
+        },
+        {
+          "inicioProgreso": 0.36,
+          "finProgreso": 0.72,
+          "desdePalabra": "Porque",
+          "x": 95,
+          "y": -20,
+          "escala": 1.22,
+          "curva": "suave"
+        },
+        {
+          "inicioProgreso": 0.72,
+          "finProgreso": 1.0,
+          "x": 0,
+          "y": 0,
+          "escala": 1.0,
+          "curva": "suave"
         }
       ]
     },
@@ -1452,26 +1782,28 @@
                 {
                   "inicioProgreso": 0,
                   "finProgreso": 0.5,
-                  "poseId": "pointing_at_viewer",
+                  "poseId": "standing_confident",
                   "expresion": "smile_wide",
                   "posicion": {
                     "x": -120,
                     "y": 90
                   },
                   "curva": "suave",
-                  "procedural": "estatico"
+                  "procedural": "estatico",
+                  "hastaPalabra": "respira"
                 },
                 {
                   "inicioProgreso": 0.5,
                   "finProgreso": 1.0,
                   "poseId": "celebrating_arms_up",
-                  "expresion": "talking_enthusiastic",
+                  "expresion": "eureka",
                   "posicion": {
                     "x": -100,
                     "y": 90
                   },
                   "curva": "suave",
-                  "procedural": "caminar"
+                  "procedural": "caminar",
+                  "desdePalabra": "respira"
                 }
               ]
             }
@@ -1484,11 +1816,37 @@
           "propId": "paraguas_arcoiris_fresco",
           "posicion": {
             "x": 160,
-            "y": -40
+            "y": -30
           },
           "escala": 1.25,
           "animacion": "flotar",
-          "capaZ": 10
+          "capaZ": 28,
+          "pasos": [
+            {
+              "inicioProgreso": 0.0,
+              "finProgreso": 0.5,
+              "hastaPalabra": "respira",
+              "posicion": {
+                "x": 160,
+                "y": -30
+              },
+              "escala": 1.3,
+              "estado": "lluvia_fresca",
+              "curva": "suave"
+            },
+            {
+              "inicioProgreso": 0.5,
+              "finProgreso": 1.0,
+              "desdePalabra": "respira",
+              "posicion": {
+                "x": 135,
+                "y": -20
+              },
+              "escala": 1.42,
+              "estado": "adn_reconoce",
+              "curva": "rebote"
+            }
+          ]
         }
       ],
       "duracionSegundos": 9.634,
@@ -1521,122 +1879,149 @@
         {
           "palabra": "el",
           "inicioMs": 1360,
-          "finMs": 1520
+          "finMs": 1540
         },
         {
           "palabra": "olor",
-          "inicioMs": 1520,
-          "finMs": 1700
+          "inicioMs": 1540,
+          "finMs": 1760
         },
         {
           "palabra": "a",
-          "inicioMs": 1700,
-          "finMs": 1840
+          "inicioMs": 1760,
+          "finMs": 1880
         },
         {
           "palabra": "tierra",
-          "inicioMs": 1840,
-          "finMs": 2040
+          "inicioMs": 1880,
+          "finMs": 2080
         },
         {
           "palabra": "mojada",
-          "inicioMs": 2040,
-          "finMs": 2540
+          "inicioMs": 2080,
+          "finMs": 2580
         },
         {
           "palabra": "respira",
-          "inicioMs": 2880,
-          "finMs": 3240
+          "inicioMs": 2920,
+          "finMs": 3400
         },
         {
           "palabra": "hondo",
-          "inicioMs": 3240,
-          "finMs": 3680
+          "inicioMs": 3400,
+          "finMs": 3860
         },
         {
           "palabra": "tu",
-          "inicioMs": 3940,
-          "finMs": 4040
+          "inicioMs": 4080,
+          "finMs": 4160
         },
         {
           "palabra": "ADN",
-          "inicioMs": 4040,
-          "finMs": 4280
+          "inicioMs": 4160,
+          "finMs": 4480
         },
         {
           "palabra": "está",
-          "inicioMs": 4280,
-          "finMs": 4500
+          "inicioMs": 4480,
+          "finMs": 4700
         },
         {
           "palabra": "reconociendo",
-          "inicioMs": 4500,
-          "finMs": 5040
-        },
-        {
-          "palabra": "la",
-          "inicioMs": 5040,
+          "inicioMs": 4700,
           "finMs": 5220
         },
         {
-          "palabra": "fragancia",
+          "palabra": "la",
           "inicioMs": 5220,
-          "finMs": 5700
+          "finMs": 5420
+        },
+        {
+          "palabra": "fragancia",
+          "inicioMs": 5420,
+          "finMs": 5840
         },
         {
           "palabra": "que",
-          "inicioMs": 5700,
-          "finMs": 5820
+          "inicioMs": 5840,
+          "finMs": 5960
         },
         {
           "palabra": "mantuvo",
-          "inicioMs": 5820,
-          "finMs": 6160
+          "inicioMs": 5960,
+          "finMs": 6320
         },
         {
           "palabra": "con",
-          "inicioMs": 6160,
-          "finMs": 6360
+          "inicioMs": 6320,
+          "finMs": 6520
         },
         {
           "palabra": "vida",
-          "inicioMs": 6360,
-          "finMs": 6640
+          "inicioMs": 6520,
+          "finMs": 6780
         },
         {
           "palabra": "a",
-          "inicioMs": 6640,
-          "finMs": 6840
+          "inicioMs": 6780,
+          "finMs": 6920
         },
         {
           "palabra": "nuestros",
-          "inicioMs": 6840,
-          "finMs": 7040
+          "inicioMs": 6920,
+          "finMs": 7140
         },
         {
           "palabra": "antepasados",
-          "inicioMs": 7040,
-          "finMs": 7800
+          "inicioMs": 7140,
+          "finMs": 7860
         },
         {
           "palabra": "durante",
-          "inicioMs": 7800,
-          "finMs": 8140
+          "inicioMs": 7860,
+          "finMs": 8160
         },
         {
           "palabra": "millones",
-          "inicioMs": 8140,
-          "finMs": 8460
+          "inicioMs": 8160,
+          "finMs": 8440
         },
         {
           "palabra": "de",
-          "inicioMs": 8460,
-          "finMs": 8740
+          "inicioMs": 8440,
+          "finMs": 8760
         },
         {
           "palabra": "años",
-          "inicioMs": 8740,
-          "finMs": 8980
+          "inicioMs": 8760,
+          "finMs": 9000
+        }
+      ],
+      "focoCamara": [
+        {
+          "inicioProgreso": 0.0,
+          "finProgreso": 0.36,
+          "x": -90,
+          "y": 20,
+          "escala": 1.12,
+          "curva": "suave"
+        },
+        {
+          "inicioProgreso": 0.36,
+          "finProgreso": 0.72,
+          "desdePalabra": "respira",
+          "x": 95,
+          "y": -20,
+          "escala": 1.22,
+          "curva": "suave"
+        },
+        {
+          "inicioProgreso": 0.72,
+          "finProgreso": 1.0,
+          "x": 0,
+          "y": 0,
+          "escala": 1.0,
+          "curva": "suave"
         }
       ]
     }
