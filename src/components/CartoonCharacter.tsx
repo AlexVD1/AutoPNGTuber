@@ -1,7 +1,7 @@
 import React from "react";
 import { PalabraTiming } from "../types";
 
-export type CartoonPersona = "niko" | "rival" | "dummy";
+export type CartoonPersona = "niko" | "rival" | "dummy" | "eiji" | "kuroda";
 
 export type CartoonExpression =
   | "neutral"
@@ -20,7 +20,10 @@ export type CartoonHeldTool =
   | "sledgehammer"
   | "wrench"
   | "blueprint"
-  | "crushed_dummy";
+  | "crushed_dummy"
+  | "sonometro"
+  | "portapapeles"
+  | "binoculares";
 
 export interface CartoonPoseState {
   torsoLeanDeg?: number;
@@ -51,6 +54,7 @@ export interface CartoonCharacterProps {
   heldTool?: CartoonHeldTool;
   sweatDrops?: boolean;
   scarfWave?: boolean;
+  neckBinoculars?: boolean;
 }
 
 function degToRad(d: number) {
@@ -88,6 +92,7 @@ export const CartoonCharacter: React.FC<CartoonCharacterProps> = ({
   heldTool = "none",
   sweatDrops = false,
   scarfWave = false,
+  neckBinoculars = false,
 }) => {
   const currentTimeMs = (frame / fps) * 1000;
   const isSpeaking =
@@ -112,7 +117,33 @@ export const CartoonCharacter: React.FC<CartoonCharacterProps> = ({
 
   // Color palette by persona
   const palette =
-    persona === "rival"
+    persona === "eiji"
+      ? {
+          skin: "#FDE7D0",
+          skinShadow: "#EFC8A5",
+          shirt: "#FFFFFF", // White lab coat sleeves
+          vest: "#38BDF8", // Sky-blue shirt under open coat
+          vestDark: "#0284C7",
+          coat: "#F8FAFC",
+          coatHighlight: "#E2E8F0",
+          pants: "#1E293B",
+          boots: "#0F172A",
+          outline: "#0F172A",
+        }
+      : persona === "kuroda"
+      ? {
+          skin: "#F5D9BC",
+          skinShadow: "#DFB895",
+          shirt: "#1E3A8A",
+          vest: "#1E3A8A",
+          vestDark: "#172554",
+          coat: "#1E3A8A",
+          coatHighlight: "#2563EB",
+          pants: "#0F172A",
+          boots: "#090D16",
+          outline: "#0F172A",
+        }
+      : persona === "rival"
       ? {
           skin: "#FDEBD0",
           skinShadow: "#F5CBA7",
@@ -384,7 +415,7 @@ export const CartoonCharacter: React.FC<CartoonCharacterProps> = ({
         cx="0"
         cy="0"
         r="13"
-        fill={persona === "rival" ? "#F8FAFC" : palette.skin}
+        fill={persona === "rival" || persona === "kuroda" ? "#F8FAFC" : palette.skin}
         stroke={palette.outline}
         strokeWidth="4.5"
       />
@@ -393,7 +424,7 @@ export const CartoonCharacter: React.FC<CartoonCharacterProps> = ({
         cy="-4"
         rx="6"
         ry="4.5"
-        fill={persona === "rival" ? "#F8FAFC" : palette.skin}
+        fill={persona === "rival" || persona === "kuroda" ? "#F8FAFC" : palette.skin}
         stroke={palette.outline}
         strokeWidth="3.5"
       />
@@ -487,6 +518,58 @@ export const CartoonCharacter: React.FC<CartoonCharacterProps> = ({
           <path d="M -11 -21 L -3 -13 M -3 -21 L -11 -13" stroke="#0F172A" strokeWidth="3.5" strokeLinecap="round" />
           <path d="M 3 -21 L 11 -13 M 11 -21 L 3 -13" stroke="#0F172A" strokeWidth="3.5" strokeLinecap="round" />
           <path d="M -7 -5 Q 0 -9 7 -5" fill="none" stroke="#0F172A" strokeWidth="3" strokeLinecap="round" />
+        </g>
+      );
+    }
+
+    if (heldTool === "sonometro") {
+      const needleAng = 35 + Math.sin(frame * 0.9) * 18;
+      return (
+        <g transform={`translate(${rightArm.hx + 16}, ${rightArm.hy - 18})`}>
+          {/* Mic antenna */}
+          <rect x="-4" y="-68" width="8" height="32" rx="3" fill="#64748B" stroke="#0F172A" strokeWidth="3.5" />
+          <circle cx="0" cy="-70" r="8" fill="#1E293B" stroke="#0F172A" strokeWidth="3.5" />
+          {/* Yellow industrial decibel body */}
+          <rect x="-24" y="-38" width="48" height="72" rx="10" fill="#FACC15" stroke="#0F172A" strokeWidth="4.5" />
+          {/* Analog dial */}
+          <rect x="-17" y="-28" width="34" height="26" rx="5" fill="#FFFFFF" stroke="#0F172A" strokeWidth="3" />
+          <path d="M -12 -8 A 14 14 0 0 1 12 -8" fill="none" stroke="#EF4444" strokeWidth="5" />
+          <line
+            x1="0"
+            y1="-5"
+            x2={Math.sin((needleAng * Math.PI) / 180) * 14}
+            y2={-5 - Math.cos((needleAng * Math.PI) / 180) * 14}
+            stroke="#0F172A"
+            strokeWidth="3.2"
+            strokeLinecap="round"
+          />
+          <circle cx="0" cy="18" r="7" fill="#EF4444" stroke="#0F172A" strokeWidth="3" />
+        </g>
+      );
+    }
+
+    if (heldTool === "portapapeles") {
+      return (
+        <g transform={`translate(${rightArm.hx + 14}, ${rightArm.hy - 12}) rotate(-10)`}>
+          <rect x="-26" y="-42" width="52" height="72" rx="6" fill="#64748B" stroke="#0F172A" strokeWidth="4.5" />
+          <rect x="-12" y="-48" width="24" height="12" rx="4" fill="#CBD5E1" stroke="#0F172A" strokeWidth="3.5" />
+          <rect x="-20" y="-32" width="40" height="54" rx="2" fill="#FFFFFF" stroke="#0F172A" strokeWidth="2.5" />
+          {/* Abstract checklist lines + red warning bars (never mirrors text) */}
+          <line x1="-13" y1="-20" x2="13" y2="-20" stroke="#EF4444" strokeWidth="5" strokeLinecap="round" />
+          <line x1="-13" y1="-8" x2="10" y2="-8" stroke="#334155" strokeWidth="4" strokeLinecap="round" />
+          <line x1="-13" y1="4" x2="14" y2="4" stroke="#334155" strokeWidth="4" strokeLinecap="round" />
+          <line x1="-13" y1="14" x2="8" y2="14" stroke="#334155" strokeWidth="4" strokeLinecap="round" />
+        </g>
+      );
+    }
+
+    if (heldTool === "binoculares") {
+      return (
+        <g transform={`translate(${rightArm.hx + 10}, ${rightArm.hy - 8})`}>
+          <rect x="-22" y="-14" width="44" height="28" rx="8" fill="#1E293B" stroke="#0F172A" strokeWidth="4.5" />
+          <circle cx="14" cy="0" r="13" fill="#0F172A" stroke="#000" strokeWidth="3" />
+          <circle cx="14" cy="0" r="8" fill="#38BDF8" />
+          <line x1="10" y1="-4" x2="15" y2="-1" stroke="#FFFFFF" strokeWidth="2.5" strokeLinecap="round" />
         </g>
       );
     }
@@ -683,6 +766,43 @@ export const CartoonCharacter: React.FC<CartoonCharacterProps> = ({
               <path d={`M ${hipX + 2} ${hipY - torsoLen * 0.55 + 18} L ${hipX + 2} ${hipY - torsoLen * 0.55} L ${hipX - 16} ${hipY - torsoLen * 0.55} A 18 18 0 0 0 ${hipX + 2} ${hipY - torsoLen * 0.55 + 18}`} fill="#0F172A" />
             </g>
           )}
+
+          {persona === "eiji" && (
+            <g>
+              {/* Sky-blue inner shirt V-panel + dark tie under open white lab coat */}
+              <rect x={hipX - 14} y={hipY - torsoLen + 4} width="28" height={torsoLen} rx="6" fill="#38BDF8" stroke={palette.outline} strokeWidth="3" />
+              <polygon
+                points={`${hipX - 4},${hipY - torsoLen + 6} ${hipX + 4},${hipY - torsoLen + 6} ${hipX + 6},${hipY - torsoLen * 0.45} ${hipX},${hipY - torsoLen * 0.35} ${hipX - 6},${hipY - torsoLen * 0.45}`}
+                fill="#0F172A"
+              />
+              {/* Lab coat lapels & pocket */}
+              <path d={`M ${hipX - 14} ${hipY - torsoLen + 6} L ${hipX - 24} ${hipY - torsoLen + 36} L ${hipX - 14} ${hipY - torsoLen + 48}`} fill="#E2E8F0" stroke={palette.outline} strokeWidth="3.5" strokeLinejoin="round" />
+              <path d={`M ${hipX + 14} ${hipY - torsoLen + 6} L ${hipX + 24} ${hipY - torsoLen + 36} L ${hipX + 14} ${hipY - torsoLen + 48}`} fill="#E2E8F0" stroke={palette.outline} strokeWidth="3.5" strokeLinejoin="round" />
+              <rect x={hipX + 13} y={hipY - 46} width="14" height="16" rx="2" fill="#E2E8F0" stroke={palette.outline} strokeWidth="2.5" />
+              {/* Optional hanging binoculars around neck */}
+              {neckBinoculars && (
+                <g>
+                  <path d={`M ${hipX - 14} ${hipY - torsoLen + 4} Q ${hipX} ${hipY - torsoLen + 46} ${hipX + 14} ${hipY - torsoLen + 4}`} fill="none" stroke="#2563EB" strokeWidth="5" strokeLinecap="round" />
+                  <rect x={hipX - 16} y={hipY - torsoLen + 36} width="32" height="22" rx="6" fill="#0F172A" stroke="#000" strokeWidth="3" />
+                  <circle cx={hipX - 8} cy={hipY - torsoLen + 56} r="7" fill="#38BDF8" stroke="#0F172A" strokeWidth="2.5" />
+                  <circle cx={hipX + 8} cy={hipY - torsoLen + 56} r="7" fill="#38BDF8" stroke="#0F172A" strokeWidth="2.5" />
+                </g>
+              )}
+            </g>
+          )}
+
+          {persona === "kuroda" && (
+            <g>
+              {/* Navy railway uniform collar, gold stripe & double-breasted brass buttons */}
+              <polygon points={`${hipX - 12},${hipY - torsoLen + 4} ${hipX + 12},${hipY - torsoLen + 4} ${hipX},${hipY - torsoLen * 0.65}`} fill="#FFFFFF" stroke={palette.outline} strokeWidth="3" />
+              <polygon points={`${hipX - 5},${hipY - torsoLen + 6} ${hipX + 5},${hipY - torsoLen + 6} ${hipX},${hipY - torsoLen * 0.68}`} fill="#0F172A" />
+              <circle cx={hipX - 14} cy={hipY - 58} r="4.2" fill="#FACC15" stroke="#0F172A" strokeWidth="2" />
+              <circle cx={hipX + 14} cy={hipY - 58} r="4.2" fill="#FACC15" stroke="#0F172A" strokeWidth="2" />
+              <circle cx={hipX - 14} cy={hipY - 34} r="4.2" fill="#FACC15" stroke="#0F172A" strokeWidth="2" />
+              <circle cx={hipX + 14} cy={hipY - 34} r="4.2" fill="#FACC15" stroke="#0F172A" strokeWidth="2" />
+              <rect x={hipX - 28} y={hipY - 22} width="56" height="9" rx="3" fill="#0F172A" />
+            </g>
+          )}
         </g>
 
         {/* Neck */}
@@ -727,9 +847,60 @@ export const CartoonCharacter: React.FC<CartoonCharacterProps> = ({
                 fill="#0F172A"
               />
             )}
+
+            {/* Kuroda's trimmed grey/silver inspector mustache */}
+            {persona === "kuroda" && (
+              <path
+                d="M -18 14 Q 2 8 22 14 L 18 19 Q 2 15 -14 19 Z"
+                fill="#64748B"
+                stroke="#0F172A"
+                strokeWidth="2.5"
+              />
+            )}
+
+            {/* Eiji's rectangular thin eyeglasses */}
+            {persona === "eiji" && (
+              <g>
+                <rect x="-27" y="-17" width="24" height="22" rx="4" fill="rgba(224,242,254,0.22)" stroke="#1E293B" strokeWidth="3.5" />
+                <rect x="6" y="-17" width="24" height="22" rx="4" fill="rgba(224,242,254,0.22)" stroke="#1E293B" strokeWidth="3.5" />
+                <line x1="-3" y1="-8" x2="6" y2="-8" stroke="#1E293B" strokeWidth="3.5" />
+              </g>
+            )}
           </g>
 
           {/* Hair / Hat */}
+          {persona === "eiji" && (
+            <g>
+              {/* Sleek slightly tousled dark Japanese hair with bangs */}
+              <path
+                d="M -54 -14 C -58 -52 -22 -68 12 -64 C 44 -60 58 -36 53 -12 C 42 -26 30 -32 18 -20 C 12 -32 -2 -34 -12 -18 C -20 -30 -38 -26 -54 -14 Z"
+                fill="#0F172A"
+                stroke="#000000"
+                strokeWidth="4.5"
+                strokeLinejoin="round"
+              />
+            </g>
+          )}
+
+          {persona === "kuroda" && (
+            <g>
+              {/* Combed-back silver hair + navy peaked Japanese railway inspector cap */}
+              <path
+                d="M -54 -12 C -54 -40 -26 -54 0 -54 C 28 -54 54 -40 54 -12 Z"
+                fill="#94A3B8"
+                stroke="#0F172A"
+                strokeWidth="4"
+              />
+              <g transform="translate(0, -36)">
+                <path d="M -50 2 L -40 -34 L 44 -34 L 50 2 Z" fill="#1E3A8A" stroke="#0F172A" strokeWidth="5" strokeLinejoin="round" />
+                <rect x="-46" y="-6" width="92" height="10" fill="#FACC15" stroke="#0F172A" strokeWidth="3" />
+                {/* Gold railway crest */}
+                <circle cx="4" cy="-19" r="9" fill="#FACC15" stroke="#0F172A" strokeWidth="3" />
+                {/* Shiny black peaked visor */}
+                <path d="M -30 4 Q 8 18 58 6 Q 30 -2 -30 4 Z" fill="#0F172A" stroke="#000000" strokeWidth="4" />
+              </g>
+            </g>
+          )}
           {persona === "niko" && (
             <g>
               {/* Tousled brown inventor hair */}

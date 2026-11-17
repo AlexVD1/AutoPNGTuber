@@ -1,0 +1,31 @@
+ID / SLUG: pajaro_salvo_tren_bala_shinkansen
+Título: El Pájaro que Salvó al Tren Más Rápido del Mundo
+Gancho: Este tren alcanzaba trescientos kilómetros por hora, pero cada vez que entraba en un túnel provocaba una explosión sónica.
+Tema: El pájaro que salvó al tren más rápido del mundo: Cómo Eiji Nakatsu usó el pico del martín pescador (biomímesis) para eliminar el boom sónico del Shinkansen Serie 500
+Duración objetivo: [62, 86]
+============================================================
+
+[Escena 1] EXPLOSIÓN SÓNICA
+Este tren alcanzaba trescientos kilómetros por hora. Pero cada vez que entraba en un túnel, provocaba una explosión sónica.
+
+[Escena 2] LÍMITE EL VIERNES
+El inspector ferroviario fue tajante. Si no bajaban el ruido antes del viernes, el tren bala sería cancelado.
+
+[Escena 3] PISTÓN DE AIRE
+Eiji probó narices más afiladas en el túnel de viento. Pero todas empujaban el aire como un pistón gigante.
+
+[Escena 4] ESTANQUE AL ALBA
+Faltaban pocas horas y ninguna forma funcionaba. Agotado, Eiji salió al amanecer junto a un estanque cercano.
+
+[Escena 5] SIN SALPICAR
+De pronto, el martín pescador se lanzó en picado. Atravesó el agua a toda velocidad sin levantar una sola gota.
+
+[Escena 6] BIOMÍMESIS REAL
+Y aquí está la física. El agua es ochocientas veces más densa que el aire. El pico del ave aumenta su grosor de forma gradual. Eso desvía la presión a los lados, sin crear ola de choque. Así nació la nariz de quince metros del nuevo tren.
+
+[Escena 7] SILENCIO TOTAL
+Llegó el viernes de la prueba final. El nuevo tren con pico de ave cruzó el túnel a máxima velocidad en completo silencio. Las tejas ni se movieron, y el sonómetro se mantuvo en zona verde.
+
+[Escena 8] LEGADO NATURAL
+Ese diseño redujo el consumo eléctrico un quince por ciento y nació mirando un pájaro. A veces, la mejor ingeniería ya lleva millones de años volando.
+

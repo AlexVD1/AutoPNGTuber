@@ -1,0 +1,1232 @@
+{
+  "meta": {
+    "id": "pajaro_salvo_tren_bala_shinkansen",
+    "slug": "pajaro_salvo_tren_bala_shinkansen",
+    "temaResumen": "El pájaro que salvó al tren más rápido del mundo: Cómo Eiji Nakatsu usó el pico del martín pescador (biomímesis) para eliminar el boom sónico del Shinkansen Serie 500",
+    "duracionObjetivo": [
+      62,
+      86
+    ],
+    "titulo": "El Pájaro que Salvó al Tren Más Rápido del Mundo",
+    "titulo_corto": "El secreto del tren bala",
+    "gancho": "Este tren alcanzaba trescientos kilómetros por hora, pero cada vez que entraba en un túnel provocaba una explosión sónica.",
+    "genero": "Ciencia, Ingeniería y Biomímesis Histórica",
+    "playlist": "Ingeniería, Física y Curiosidades Fascinantes",
+    "fuentes": [
+      "Nakatsu, E. (1999). Shinkansen Technology and Biomimetics (JR West)",
+      "AskNature / Biomimicry Institute: Kingfisher-Inspired Bullet Train (Shinkansen 500 Series)",
+      "Howe, M. S. (1998). Mach number dependence of compression wave in tunnel (J. Sound and Vibration)"
+    ]
+  },
+  "escenas": [
+    {
+      "id": 1,
+      "texto": "Este tren alcanzaba trescientos kilómetros por hora. Pero cada vez que entraba en un túnel, provocaba una explosión sónica.",
+      "icono": "Zap",
+      "colorIcono": "#EF4444",
+      "tituloVisual": "EXPLOSIÓN SÓNICA",
+      "composicionVisual": "escenario_ilustrado",
+      "layout": "cinematico",
+      "transicion": "corte",
+      "escenaPersonalizada": "shinkansen_escena_1",
+      "sfx": "sfx/sfx_whoosh.wav",
+      "volumenSfx": 0.22,
+      "eventosSfx": [
+        {
+          "sfx": "sfx/sfx_sonic_boom_tunnel.wav",
+          "tiempoSegundos": 2.0,
+          "volumen": 0.3
+        },
+        {
+          "sfx": "sfx/sfx_tiles_rattle.wav",
+          "tiempoSegundos": 3.5,
+          "volumen": 0.25
+        },
+        {
+          "sfx": "sfx/sfx_sonometer_alarm.wav",
+          "tiempoSegundos": 5.5,
+          "volumen": 0.26
+        }
+      ],
+      "palabrasClave": [
+        "trescientos kilómetros",
+        "túnel",
+        "explosión sónica"
+      ],
+      "duracionSegundos": 6.73,
+      "palabras": [
+        {
+          "palabra": "Este",
+          "inicioMs": 0,
+          "finMs": 300
+        },
+        {
+          "palabra": "tren",
+          "inicioMs": 300,
+          "finMs": 500
+        },
+        {
+          "palabra": "alcanzaba",
+          "inicioMs": 500,
+          "finMs": 1040
+        },
+        {
+          "palabra": "trescientos",
+          "inicioMs": 1040,
+          "finMs": 1640
+        },
+        {
+          "palabra": "kilómetros",
+          "inicioMs": 1640,
+          "finMs": 2040
+        },
+        {
+          "palabra": "por",
+          "inicioMs": 2040,
+          "finMs": 2320
+        },
+        {
+          "palabra": "hora",
+          "inicioMs": 2320,
+          "finMs": 2520
+        },
+        {
+          "palabra": "Pero",
+          "inicioMs": 2760,
+          "finMs": 2860
+        },
+        {
+          "palabra": "cada",
+          "inicioMs": 2860,
+          "finMs": 3080
+        },
+        {
+          "palabra": "vez",
+          "inicioMs": 3080,
+          "finMs": 3240
+        },
+        {
+          "palabra": "que",
+          "inicioMs": 3240,
+          "finMs": 3380
+        },
+        {
+          "palabra": "entraba",
+          "inicioMs": 3380,
+          "finMs": 3700
+        },
+        {
+          "palabra": "en",
+          "inicioMs": 3700,
+          "finMs": 3780
+        },
+        {
+          "palabra": "un",
+          "inicioMs": 3780,
+          "finMs": 3900
+        },
+        {
+          "palabra": "túnel",
+          "inicioMs": 3900,
+          "finMs": 4240
+        },
+        {
+          "palabra": "provocaba",
+          "inicioMs": 4460,
+          "finMs": 4840
+        },
+        {
+          "palabra": "una",
+          "inicioMs": 4840,
+          "finMs": 4980
+        },
+        {
+          "palabra": "explosión",
+          "inicioMs": 4980,
+          "finMs": 5460
+        },
+        {
+          "palabra": "sónica",
+          "inicioMs": 5460,
+          "finMs": 5980
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "texto": "El inspector ferroviario fue tajante. Si no bajaban el ruido antes del viernes, el tren bala sería cancelado.",
+      "icono": "AlertTriangle",
+      "colorIcono": "#F59E0B",
+      "tituloVisual": "LÍMITE EL VIERNES",
+      "composicionVisual": "plano_general",
+      "layout": "cinematico",
+      "transicion": "whip_right",
+      "escenaPersonalizada": "shinkansen_escena_2",
+      "sfx": "sfx/sfx_clipboard_slam.wav",
+      "volumenSfx": 0.26,
+      "eventosSfx": [
+        {
+          "sfx": "sfx/sfx_dramatic_hit.wav",
+          "tiempoSegundos": 5.4,
+          "volumen": 0.24
+        }
+      ],
+      "palabrasClave": [
+        "inspector",
+        "ruido",
+        "cancelado"
+      ],
+      "duracionSegundos": 6.538,
+      "palabras": [
+        {
+          "palabra": "El",
+          "inicioMs": 0,
+          "finMs": 200
+        },
+        {
+          "palabra": "inspector",
+          "inicioMs": 200,
+          "finMs": 600
+        },
+        {
+          "palabra": "ferroviario",
+          "inicioMs": 600,
+          "finMs": 1260
+        },
+        {
+          "palabra": "fue",
+          "inicioMs": 1260,
+          "finMs": 1460
+        },
+        {
+          "palabra": "tajante",
+          "inicioMs": 1460,
+          "finMs": 2060
+        },
+        {
+          "palabra": "Si",
+          "inicioMs": 2340,
+          "finMs": 2420
+        },
+        {
+          "palabra": "no",
+          "inicioMs": 2420,
+          "finMs": 2560
+        },
+        {
+          "palabra": "bajaban",
+          "inicioMs": 2560,
+          "finMs": 2880
+        },
+        {
+          "palabra": "el",
+          "inicioMs": 2880,
+          "finMs": 3080
+        },
+        {
+          "palabra": "ruido",
+          "inicioMs": 3080,
+          "finMs": 3340
+        },
+        {
+          "palabra": "antes",
+          "inicioMs": 3340,
+          "finMs": 3560
+        },
+        {
+          "palabra": "del",
+          "inicioMs": 3560,
+          "finMs": 3740
+        },
+        {
+          "palabra": "viernes",
+          "inicioMs": 3740,
+          "finMs": 4160
+        },
+        {
+          "palabra": "el",
+          "inicioMs": 4400,
+          "finMs": 4520
+        },
+        {
+          "palabra": "tren",
+          "inicioMs": 4520,
+          "finMs": 4740
+        },
+        {
+          "palabra": "bala",
+          "inicioMs": 4740,
+          "finMs": 5100
+        },
+        {
+          "palabra": "sería",
+          "inicioMs": 5100,
+          "finMs": 5360
+        },
+        {
+          "palabra": "cancelado",
+          "inicioMs": 5360,
+          "finMs": 6000
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "texto": "Eiji probó narices más afiladas en el túnel de viento. Pero todas empujaban el aire como un pistón gigante.",
+      "icono": "Wind",
+      "colorIcono": "#38BDF8",
+      "tituloVisual": "PISTÓN DE AIRE",
+      "composicionVisual": "escenario_ilustrado",
+      "layout": "cinematico",
+      "transicion": "zoom_in",
+      "escenaPersonalizada": "shinkansen_escena_3",
+      "sfx": "sfx/sfx_wind_tunnel_crash.wav",
+      "volumenSfx": 0.26,
+      "palabrasClave": [
+        "túnel de viento",
+        "pistón gigante"
+      ],
+      "duracionSegundos": 6.322,
+      "palabras": [
+        {
+          "palabra": "Eiji",
+          "inicioMs": 0,
+          "finMs": 380
+        },
+        {
+          "palabra": "probó",
+          "inicioMs": 380,
+          "finMs": 740
+        },
+        {
+          "palabra": "narices",
+          "inicioMs": 740,
+          "finMs": 1160
+        },
+        {
+          "palabra": "más",
+          "inicioMs": 1160,
+          "finMs": 1420
+        },
+        {
+          "palabra": "afiladas",
+          "inicioMs": 1420,
+          "finMs": 2000
+        },
+        {
+          "palabra": "en",
+          "inicioMs": 2000,
+          "finMs": 2180
+        },
+        {
+          "palabra": "el",
+          "inicioMs": 2180,
+          "finMs": 2300
+        },
+        {
+          "palabra": "túnel",
+          "inicioMs": 2300,
+          "finMs": 2560
+        },
+        {
+          "palabra": "de",
+          "inicioMs": 2560,
+          "finMs": 2700
+        },
+        {
+          "palabra": "viento",
+          "inicioMs": 2700,
+          "finMs": 3120
+        },
+        {
+          "palabra": "Pero",
+          "inicioMs": 3320,
+          "finMs": 3440
+        },
+        {
+          "palabra": "todas",
+          "inicioMs": 3440,
+          "finMs": 3760
+        },
+        {
+          "palabra": "empujaban",
+          "inicioMs": 3760,
+          "finMs": 4200
+        },
+        {
+          "palabra": "el",
+          "inicioMs": 4200,
+          "finMs": 4340
+        },
+        {
+          "palabra": "aire",
+          "inicioMs": 4340,
+          "finMs": 4540
+        },
+        {
+          "palabra": "como",
+          "inicioMs": 4540,
+          "finMs": 4780
+        },
+        {
+          "palabra": "un",
+          "inicioMs": 4780,
+          "finMs": 4900
+        },
+        {
+          "palabra": "pistón",
+          "inicioMs": 4900,
+          "finMs": 5220
+        },
+        {
+          "palabra": "gigante",
+          "inicioMs": 5220,
+          "finMs": 5740
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "texto": "Faltaban pocas horas y ninguna forma funcionaba. Agotado, Eiji salió al amanecer junto a un estanque cercano.",
+      "icono": "Sunrise",
+      "colorIcono": "#FBBF24",
+      "tituloVisual": "ESTANQUE AL ALBA",
+      "composicionVisual": "plano_general",
+      "layout": "cinematico",
+      "transicion": "whip_left",
+      "escenaPersonalizada": "shinkansen_escena_4",
+      "sfx": "sfx/sfx_transition.wav",
+      "volumenSfx": 0.2,
+      "palabrasClave": [
+        "pocas horas",
+        "estanque",
+        "amanecer"
+      ],
+      "duracionSegundos": 6.706,
+      "palabras": [
+        {
+          "palabra": "Faltaban",
+          "inicioMs": 0,
+          "finMs": 460
+        },
+        {
+          "palabra": "pocas",
+          "inicioMs": 460,
+          "finMs": 860
+        },
+        {
+          "palabra": "horas",
+          "inicioMs": 860,
+          "finMs": 1060
+        },
+        {
+          "palabra": "y",
+          "inicioMs": 1060,
+          "finMs": 1320
+        },
+        {
+          "palabra": "ninguna",
+          "inicioMs": 1320,
+          "finMs": 1560
+        },
+        {
+          "palabra": "forma",
+          "inicioMs": 1560,
+          "finMs": 1920
+        },
+        {
+          "palabra": "funcionaba",
+          "inicioMs": 1920,
+          "finMs": 2620
+        },
+        {
+          "palabra": "Agotado",
+          "inicioMs": 2880,
+          "finMs": 3400
+        },
+        {
+          "palabra": "Eiji",
+          "inicioMs": 3620,
+          "finMs": 3820
+        },
+        {
+          "palabra": "salió",
+          "inicioMs": 3820,
+          "finMs": 4180
+        },
+        {
+          "palabra": "al",
+          "inicioMs": 4180,
+          "finMs": 4280
+        },
+        {
+          "palabra": "amanecer",
+          "inicioMs": 4280,
+          "finMs": 4740
+        },
+        {
+          "palabra": "junto",
+          "inicioMs": 4740,
+          "finMs": 5000
+        },
+        {
+          "palabra": "a",
+          "inicioMs": 5000,
+          "finMs": 5120
+        },
+        {
+          "palabra": "un",
+          "inicioMs": 5120,
+          "finMs": 5220
+        },
+        {
+          "palabra": "estanque",
+          "inicioMs": 5220,
+          "finMs": 5620
+        },
+        {
+          "palabra": "cercano",
+          "inicioMs": 5620,
+          "finMs": 6100
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "texto": "De pronto, el martín pescador se lanzó en picado. Atravesó el agua a toda velocidad sin levantar una sola gota.",
+      "icono": "Feather",
+      "colorIcono": "#0EA5E9",
+      "tituloVisual": "SIN SALPICAR",
+      "composicionVisual": "primer_plano",
+      "layout": "cinematico",
+      "transicion": "zoom_in",
+      "escenaPersonalizada": "shinkansen_escena_5",
+      "sfx": "sfx/sfx_water_plunge_clean.wav",
+      "volumenSfx": 0.28,
+      "palabrasClave": [
+        "martín pescador",
+        "picado",
+        "sin una sola gota"
+      ],
+      "duracionSegundos": 6.658,
+      "palabras": [
+        {
+          "palabra": "De",
+          "inicioMs": 0,
+          "finMs": 180
+        },
+        {
+          "palabra": "pronto",
+          "inicioMs": 180,
+          "finMs": 440
+        },
+        {
+          "palabra": "el",
+          "inicioMs": 720,
+          "finMs": 820
+        },
+        {
+          "palabra": "martín",
+          "inicioMs": 820,
+          "finMs": 1120
+        },
+        {
+          "palabra": "pescador",
+          "inicioMs": 1120,
+          "finMs": 1560
+        },
+        {
+          "palabra": "se",
+          "inicioMs": 1560,
+          "finMs": 1740
+        },
+        {
+          "palabra": "lanzó",
+          "inicioMs": 1740,
+          "finMs": 2020
+        },
+        {
+          "palabra": "en",
+          "inicioMs": 2020,
+          "finMs": 2100
+        },
+        {
+          "palabra": "picado",
+          "inicioMs": 2100,
+          "finMs": 2560
+        },
+        {
+          "palabra": "Atravesó",
+          "inicioMs": 2820,
+          "finMs": 3300
+        },
+        {
+          "palabra": "el",
+          "inicioMs": 3300,
+          "finMs": 3420
+        },
+        {
+          "palabra": "agua",
+          "inicioMs": 3420,
+          "finMs": 3660
+        },
+        {
+          "palabra": "a",
+          "inicioMs": 3660,
+          "finMs": 3820
+        },
+        {
+          "palabra": "toda",
+          "inicioMs": 3820,
+          "finMs": 3980
+        },
+        {
+          "palabra": "velocidad",
+          "inicioMs": 3980,
+          "finMs": 4560
+        },
+        {
+          "palabra": "sin",
+          "inicioMs": 4560,
+          "finMs": 4900
+        },
+        {
+          "palabra": "levantar",
+          "inicioMs": 4900,
+          "finMs": 5340
+        },
+        {
+          "palabra": "una",
+          "inicioMs": 5340,
+          "finMs": 5500
+        },
+        {
+          "palabra": "sola",
+          "inicioMs": 5500,
+          "finMs": 5720
+        },
+        {
+          "palabra": "gota",
+          "inicioMs": 5720,
+          "finMs": 6160
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "texto": "Y aquí está la física. El agua es ochocientas veces más densa que el aire. El pico del ave aumenta su grosor de forma gradual. Eso desvía la presión a los lados, sin crear ola de choque. Así nació la nariz de quince metros del nuevo tren.",
+      "icono": "Activity",
+      "colorIcono": "#10B981",
+      "tituloVisual": "BIOMÍMESIS REAL",
+      "composicionVisual": "cifras_concepto",
+      "layout": "cinematico",
+      "transicion": "flash",
+      "escenaPersonalizada": "shinkansen_escena_6",
+      "sfx": "sfx/sfx_physics_analysis.wav",
+      "volumenSfx": 0.24,
+      "eventosSfx": [
+        {
+          "sfx": "sfx/sfx_fair_victory.wav",
+          "tiempoSegundos": 5.5,
+          "volumen": 0.22
+        }
+      ],
+      "palabrasClave": [
+        "ochocientas veces",
+        "grosor gradual",
+        "ola de choque"
+      ],
+      "duracionSegundos": 13.234,
+      "palabras": [
+        {
+          "palabra": "Y",
+          "inicioMs": 0,
+          "finMs": 200
+        },
+        {
+          "palabra": "aquí",
+          "inicioMs": 200,
+          "finMs": 420
+        },
+        {
+          "palabra": "está",
+          "inicioMs": 420,
+          "finMs": 680
+        },
+        {
+          "palabra": "la",
+          "inicioMs": 680,
+          "finMs": 820
+        },
+        {
+          "palabra": "física",
+          "inicioMs": 820,
+          "finMs": 1140
+        },
+        {
+          "palabra": "El",
+          "inicioMs": 1400,
+          "finMs": 1540
+        },
+        {
+          "palabra": "agua",
+          "inicioMs": 1540,
+          "finMs": 1700
+        },
+        {
+          "palabra": "es",
+          "inicioMs": 1700,
+          "finMs": 1820
+        },
+        {
+          "palabra": "ochocientas",
+          "inicioMs": 1820,
+          "finMs": 2380
+        },
+        {
+          "palabra": "veces",
+          "inicioMs": 2380,
+          "finMs": 2520
+        },
+        {
+          "palabra": "más",
+          "inicioMs": 2520,
+          "finMs": 2820
+        },
+        {
+          "palabra": "densa",
+          "inicioMs": 2820,
+          "finMs": 3140
+        },
+        {
+          "palabra": "que",
+          "inicioMs": 3140,
+          "finMs": 3320
+        },
+        {
+          "palabra": "el",
+          "inicioMs": 3320,
+          "finMs": 3440
+        },
+        {
+          "palabra": "aire",
+          "inicioMs": 3440,
+          "finMs": 3640
+        },
+        {
+          "palabra": "El",
+          "inicioMs": 3880,
+          "finMs": 4000
+        },
+        {
+          "palabra": "pico",
+          "inicioMs": 4000,
+          "finMs": 4280
+        },
+        {
+          "palabra": "del",
+          "inicioMs": 4280,
+          "finMs": 4460
+        },
+        {
+          "palabra": "ave",
+          "inicioMs": 4460,
+          "finMs": 4640
+        },
+        {
+          "palabra": "aumenta",
+          "inicioMs": 4640,
+          "finMs": 5260
+        },
+        {
+          "palabra": "su",
+          "inicioMs": 5260,
+          "finMs": 5440
+        },
+        {
+          "palabra": "grosor",
+          "inicioMs": 5440,
+          "finMs": 5800
+        },
+        {
+          "palabra": "de",
+          "inicioMs": 5800,
+          "finMs": 5980
+        },
+        {
+          "palabra": "forma",
+          "inicioMs": 5980,
+          "finMs": 6240
+        },
+        {
+          "palabra": "gradual",
+          "inicioMs": 6240,
+          "finMs": 6700
+        },
+        {
+          "palabra": "Eso",
+          "inicioMs": 6920,
+          "finMs": 7080
+        },
+        {
+          "palabra": "desvía",
+          "inicioMs": 7080,
+          "finMs": 7420
+        },
+        {
+          "palabra": "la",
+          "inicioMs": 7420,
+          "finMs": 7560
+        },
+        {
+          "palabra": "presión",
+          "inicioMs": 7560,
+          "finMs": 7860
+        },
+        {
+          "palabra": "a",
+          "inicioMs": 7860,
+          "finMs": 7980
+        },
+        {
+          "palabra": "los",
+          "inicioMs": 7980,
+          "finMs": 8100
+        },
+        {
+          "palabra": "lados",
+          "inicioMs": 8100,
+          "finMs": 8400
+        },
+        {
+          "palabra": "sin",
+          "inicioMs": 8520,
+          "finMs": 8600
+        },
+        {
+          "palabra": "crear",
+          "inicioMs": 8600,
+          "finMs": 8780
+        },
+        {
+          "palabra": "ola",
+          "inicioMs": 8780,
+          "finMs": 8980
+        },
+        {
+          "palabra": "de",
+          "inicioMs": 8980,
+          "finMs": 9100
+        },
+        {
+          "palabra": "choque",
+          "inicioMs": 9100,
+          "finMs": 9480
+        },
+        {
+          "palabra": "Así",
+          "inicioMs": 10020,
+          "finMs": 10320
+        },
+        {
+          "palabra": "nació",
+          "inicioMs": 10320,
+          "finMs": 10680
+        },
+        {
+          "palabra": "la",
+          "inicioMs": 10680,
+          "finMs": 10800
+        },
+        {
+          "palabra": "nariz",
+          "inicioMs": 10800,
+          "finMs": 11100
+        },
+        {
+          "palabra": "de",
+          "inicioMs": 11100,
+          "finMs": 11260
+        },
+        {
+          "palabra": "quince",
+          "inicioMs": 11260,
+          "finMs": 11560
+        },
+        {
+          "palabra": "metros",
+          "inicioMs": 11560,
+          "finMs": 11900
+        },
+        {
+          "palabra": "del",
+          "inicioMs": 11900,
+          "finMs": 12100
+        },
+        {
+          "palabra": "nuevo",
+          "inicioMs": 12100,
+          "finMs": 12300
+        },
+        {
+          "palabra": "tren",
+          "inicioMs": 12300,
+          "finMs": 12600
+        }
+      ]
+    },
+    {
+      "id": 7,
+      "texto": "Llegó el viernes de la prueba final. El nuevo tren con pico de ave cruzó el túnel a máxima velocidad en completo silencio. Las tejas ni se movieron, y el sonómetro se mantuvo en zona verde.",
+      "icono": "CheckCircle",
+      "colorIcono": "#22C55E",
+      "tituloVisual": "SILENCIO TOTAL",
+      "composicionVisual": "escenario_ilustrado",
+      "layout": "cinematico",
+      "transicion": "whip_right",
+      "escenaPersonalizada": "shinkansen_escena_7",
+      "sfx": "sfx/sfx_shinkansen_silent_pass.wav",
+      "volumenSfx": 0.26,
+      "palabrasClave": [
+        "prueba final",
+        "pico de ave",
+        "completo silencio"
+      ],
+      "duracionSegundos": 7.834,
+      "palabras": [
+        {
+          "palabra": "Llegó",
+          "inicioMs": 0,
+          "finMs": 360
+        },
+        {
+          "palabra": "el",
+          "inicioMs": 360,
+          "finMs": 520
+        },
+        {
+          "palabra": "viernes",
+          "inicioMs": 520,
+          "finMs": 860
+        },
+        {
+          "palabra": "de",
+          "inicioMs": 860,
+          "finMs": 1020
+        },
+        {
+          "palabra": "la",
+          "inicioMs": 1020,
+          "finMs": 1120
+        },
+        {
+          "palabra": "prueba",
+          "inicioMs": 1120,
+          "finMs": 1320
+        },
+        {
+          "palabra": "final",
+          "inicioMs": 1320,
+          "finMs": 1820
+        },
+        {
+          "palabra": "El",
+          "inicioMs": 2140,
+          "finMs": 2340
+        },
+        {
+          "palabra": "nuevo",
+          "inicioMs": 2340,
+          "finMs": 2500
+        },
+        {
+          "palabra": "tren",
+          "inicioMs": 2500,
+          "finMs": 2800
+        },
+        {
+          "palabra": "con",
+          "inicioMs": 2800,
+          "finMs": 3080
+        },
+        {
+          "palabra": "pico",
+          "inicioMs": 3080,
+          "finMs": 3340
+        },
+        {
+          "palabra": "de",
+          "inicioMs": 3340,
+          "finMs": 3480
+        },
+        {
+          "palabra": "ave",
+          "inicioMs": 3480,
+          "finMs": 3660
+        },
+        {
+          "palabra": "cruzó",
+          "inicioMs": 3660,
+          "finMs": 3687
+        },
+        {
+          "palabra": "el",
+          "inicioMs": 3687,
+          "finMs": 3714
+        },
+        {
+          "palabra": "túnel",
+          "inicioMs": 3714,
+          "finMs": 3741
+        },
+        {
+          "palabra": "a",
+          "inicioMs": 3741,
+          "finMs": 3768
+        },
+        {
+          "palabra": "máxima",
+          "inicioMs": 3768,
+          "finMs": 3794
+        },
+        {
+          "palabra": "velocidad",
+          "inicioMs": 3794,
+          "finMs": 3820
+        },
+        {
+          "palabra": "en",
+          "inicioMs": 3820,
+          "finMs": 3847
+        },
+        {
+          "palabra": "completo",
+          "inicioMs": 3847,
+          "finMs": 3874
+        },
+        {
+          "palabra": "silencio",
+          "inicioMs": 3874,
+          "finMs": 3914
+        },
+        {
+          "palabra": "Las",
+          "inicioMs": 3900,
+          "finMs": 4000
+        },
+        {
+          "palabra": "tejas",
+          "inicioMs": 4000,
+          "finMs": 4300
+        },
+        {
+          "palabra": "ni",
+          "inicioMs": 4300,
+          "finMs": 4520
+        },
+        {
+          "palabra": "se",
+          "inicioMs": 4520,
+          "finMs": 4640
+        },
+        {
+          "palabra": "movieron",
+          "inicioMs": 4640,
+          "finMs": 5100
+        },
+        {
+          "palabra": "y",
+          "inicioMs": 5440,
+          "finMs": 5540
+        },
+        {
+          "palabra": "el",
+          "inicioMs": 5540,
+          "finMs": 5620
+        },
+        {
+          "palabra": "sonómetro",
+          "inicioMs": 5620,
+          "finMs": 6060
+        },
+        {
+          "palabra": "se",
+          "inicioMs": 6060,
+          "finMs": 6260
+        },
+        {
+          "palabra": "mantuvo",
+          "inicioMs": 6260,
+          "finMs": 6580
+        },
+        {
+          "palabra": "en",
+          "inicioMs": 6580,
+          "finMs": 6700
+        },
+        {
+          "palabra": "zona",
+          "inicioMs": 6700,
+          "finMs": 6860
+        },
+        {
+          "palabra": "verde",
+          "inicioMs": 6860,
+          "finMs": 7180
+        }
+      ]
+    },
+    {
+      "id": 8,
+      "texto": "Ese diseño redujo el consumo eléctrico un quince por ciento y nació mirando un pájaro. A veces, la mejor ingeniería ya lleva millones de años volando.",
+      "icono": "Sparkles",
+      "colorIcono": "#38BDF8",
+      "tituloVisual": "LEGADO NATURAL",
+      "composicionVisual": "plano_general",
+      "layout": "cinematico",
+      "transicion": "zoom_in",
+      "escenaPersonalizada": "shinkansen_escena_8",
+      "silencioFinalSegundos": 0.55,
+      "sfx": "sfx/sfx_fair_victory.wav",
+      "volumenSfx": 0.25,
+      "palabrasClave": [
+        "quince por ciento",
+        "mejor ingeniería",
+        "millones de años"
+      ],
+      "duracionSegundos": 8.794,
+      "palabras": [
+        {
+          "palabra": "Ese",
+          "inicioMs": 0,
+          "finMs": 300
+        },
+        {
+          "palabra": "diseño",
+          "inicioMs": 300,
+          "finMs": 740
+        },
+        {
+          "palabra": "redujo",
+          "inicioMs": 740,
+          "finMs": 1160
+        },
+        {
+          "palabra": "el",
+          "inicioMs": 1160,
+          "finMs": 1260
+        },
+        {
+          "palabra": "consumo",
+          "inicioMs": 1260,
+          "finMs": 1560
+        },
+        {
+          "palabra": "eléctrico",
+          "inicioMs": 1560,
+          "finMs": 2040
+        },
+        {
+          "palabra": "un",
+          "inicioMs": 2040,
+          "finMs": 2220
+        },
+        {
+          "palabra": "quince",
+          "inicioMs": 2220,
+          "finMs": 2520
+        },
+        {
+          "palabra": "por",
+          "inicioMs": 2520,
+          "finMs": 2720
+        },
+        {
+          "palabra": "ciento",
+          "inicioMs": 2720,
+          "finMs": 3080
+        },
+        {
+          "palabra": "y",
+          "inicioMs": 3080,
+          "finMs": 3320
+        },
+        {
+          "palabra": "nació",
+          "inicioMs": 3320,
+          "finMs": 3580
+        },
+        {
+          "palabra": "mirando",
+          "inicioMs": 3580,
+          "finMs": 3880
+        },
+        {
+          "palabra": "un",
+          "inicioMs": 3880,
+          "finMs": 4060
+        },
+        {
+          "palabra": "pájaro",
+          "inicioMs": 4060,
+          "finMs": 4460
+        },
+        {
+          "palabra": "A",
+          "inicioMs": 4840,
+          "finMs": 4960
+        },
+        {
+          "palabra": "veces",
+          "inicioMs": 4960,
+          "finMs": 5180
+        },
+        {
+          "palabra": "la",
+          "inicioMs": 5420,
+          "finMs": 5500
+        },
+        {
+          "palabra": "mejor",
+          "inicioMs": 5500,
+          "finMs": 5680
+        },
+        {
+          "palabra": "ingeniería",
+          "inicioMs": 5680,
+          "finMs": 6200
+        },
+        {
+          "palabra": "ya",
+          "inicioMs": 6200,
+          "finMs": 6340
+        },
+        {
+          "palabra": "lleva",
+          "inicioMs": 6340,
+          "finMs": 6600
+        },
+        {
+          "palabra": "millones",
+          "inicioMs": 6600,
+          "finMs": 6780
+        },
+        {
+          "palabra": "de",
+          "inicioMs": 6780,
+          "finMs": 7100
+        },
+        {
+          "palabra": "años",
+          "inicioMs": 7100,
+          "finMs": 7220
+        },
+        {
+          "palabra": "volando",
+          "inicioMs": 7220,
+          "finMs": 7660
+        }
+      ]
+    }
+  ]
+}

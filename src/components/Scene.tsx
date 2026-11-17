@@ -25,6 +25,7 @@ import { SceneObject } from "./SceneObject";
 import { Stickman } from "./Stickman";
 import { WordSubtitles } from "./WordSubtitles";
 import { CoasterCinematicScenes } from "./coaster/CoasterCinematicScenes";
+import { ShinkansenCinematicScenes } from "./shinkansen/ShinkansenCinematicScenes";
 
 interface SceneProps {
   escena: EscenaGuion;
@@ -260,6 +261,13 @@ export const Scene: React.FC<SceneProps> = ({ escena }) => {
       <div className="absolute inset-0 z-0">
         {escena.escenaPersonalizada?.startsWith("clotoide_") ? (
           <CoasterCinematicScenes
+            escena={escena}
+            frame={frame}
+            fps={fps}
+            durationFrames={sceneDurationFrames}
+          />
+        ) : escena.escenaPersonalizada?.startsWith("shinkansen_") ? (
+          <ShinkansenCinematicScenes
             escena={escena}
             frame={frame}
             fps={fps}

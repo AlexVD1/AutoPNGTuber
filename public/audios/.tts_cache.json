@@ -1,531 +1,401 @@
 {
   "escena_1": {
-    "sha256": "6def2e5cd65ac3c0015417862a3c71ff6d5976afc96a97feaf5c90191b52abda",
+    "sha256": "a5e056f56ac0844fc6f92c17678ac06420b3def30a7cf39f1c6d4aa8b49e8abb",
     "pipelineVersion": "v4_nw_precision_align",
-    "texto": "Niko martilleó el bucle de su montaña rusa hasta deformarlo por completo. ¡Era la primera atracción de la historia en ponerse de cabeza... y le había costado la vida entera!",
-    "textoTts": "Niko martilleó el bucle de su montaña rusa hasta deformarlo por completo. ¡Era la primera atracción de la historia en ponerse de cabeza... y le había costado la vida entera!",
+    "texto": "Este tren alcanzaba trescientos kilómetros por hora. Pero cada vez que entraba en un túnel, provocaba una explosión sónica.",
+    "textoTts": "Este tren alcanzaba trescientos kilómetros por hora. Pero cada vez que entraba en un túnel, provocaba una explosión sónica.",
     "voiceConds": "alex.conds.pt",
-    "duracionSegundos": 8.578,
+    "duracionSegundos": 6.73,
     "palabras": [
       {
-        "palabra": "Niko",
+        "palabra": "Este",
         "inicioMs": 0,
-        "finMs": 400
+        "finMs": 300
       },
       {
-        "palabra": "martilleó",
-        "inicioMs": 400,
-        "finMs": 1000
+        "palabra": "tren",
+        "inicioMs": 300,
+        "finMs": 500
       },
       {
-        "palabra": "el",
-        "inicioMs": 1000,
-        "finMs": 1120
+        "palabra": "alcanzaba",
+        "inicioMs": 500,
+        "finMs": 1040
       },
       {
-        "palabra": "bucle",
-        "inicioMs": 1120,
-        "finMs": 1400
+        "palabra": "trescientos",
+        "inicioMs": 1040,
+        "finMs": 1640
       },
       {
-        "palabra": "de",
-        "inicioMs": 1400,
-        "finMs": 1520
-      },
-      {
-        "palabra": "su",
-        "inicioMs": 1520,
-        "finMs": 1660
-      },
-      {
-        "palabra": "montaña",
-        "inicioMs": 1660,
-        "finMs": 2100
-      },
-      {
-        "palabra": "rusa",
-        "inicioMs": 2100,
-        "finMs": 2460
-      },
-      {
-        "palabra": "hasta",
-        "inicioMs": 2460,
-        "finMs": 2780
-      },
-      {
-        "palabra": "deformarlo",
-        "inicioMs": 2780,
-        "finMs": 3320
+        "palabra": "kilómetros",
+        "inicioMs": 1640,
+        "finMs": 2040
       },
       {
         "palabra": "por",
-        "inicioMs": 3320,
-        "finMs": 3500
+        "inicioMs": 2040,
+        "finMs": 2320
       },
       {
-        "palabra": "completo",
-        "inicioMs": 3500,
-        "finMs": 4060
+        "palabra": "hora",
+        "inicioMs": 2320,
+        "finMs": 2520
       },
       {
-        "palabra": "Era",
-        "inicioMs": 4300,
-        "finMs": 4380
+        "palabra": "Pero",
+        "inicioMs": 2760,
+        "finMs": 2860
       },
       {
-        "palabra": "la",
-        "inicioMs": 4380,
-        "finMs": 4500
+        "palabra": "cada",
+        "inicioMs": 2860,
+        "finMs": 3080
       },
       {
-        "palabra": "primera",
-        "inicioMs": 4500,
-        "finMs": 4720
+        "palabra": "vez",
+        "inicioMs": 3080,
+        "finMs": 3240
       },
       {
-        "palabra": "atracción",
-        "inicioMs": 4720,
-        "finMs": 5100
+        "palabra": "que",
+        "inicioMs": 3240,
+        "finMs": 3380
       },
       {
-        "palabra": "de",
-        "inicioMs": 5100,
-        "finMs": 5220
-      },
-      {
-        "palabra": "la",
-        "inicioMs": 5220,
-        "finMs": 5300
-      },
-      {
-        "palabra": "historia",
-        "inicioMs": 5300,
-        "finMs": 5520
+        "palabra": "entraba",
+        "inicioMs": 3380,
+        "finMs": 3700
       },
       {
         "palabra": "en",
-        "inicioMs": 5520,
-        "finMs": 5680
+        "inicioMs": 3700,
+        "finMs": 3780
       },
       {
-        "palabra": "ponerse",
-        "inicioMs": 5680,
-        "finMs": 6020
+        "palabra": "un",
+        "inicioMs": 3780,
+        "finMs": 3900
       },
       {
-        "palabra": "de",
-        "inicioMs": 6020,
-        "finMs": 6100
+        "palabra": "túnel",
+        "inicioMs": 3900,
+        "finMs": 4240
       },
       {
-        "palabra": "cabeza",
-        "inicioMs": 6100,
-        "finMs": 6360
+        "palabra": "provocaba",
+        "inicioMs": 4460,
+        "finMs": 4840
       },
       {
-        "palabra": "y",
-        "inicioMs": 6360,
-        "finMs": 6800
+        "palabra": "una",
+        "inicioMs": 4840,
+        "finMs": 4980
       },
       {
-        "palabra": "le",
-        "inicioMs": 6800,
-        "finMs": 6880
+        "palabra": "explosión",
+        "inicioMs": 4980,
+        "finMs": 5460
       },
       {
-        "palabra": "había",
-        "inicioMs": 6880,
-        "finMs": 7000
-      },
-      {
-        "palabra": "costado",
-        "inicioMs": 7000,
-        "finMs": 7340
-      },
-      {
-        "palabra": "la",
-        "inicioMs": 7340,
-        "finMs": 7460
-      },
-      {
-        "palabra": "vida",
-        "inicioMs": 7460,
-        "finMs": 7580
-      },
-      {
-        "palabra": "entera",
-        "inicioMs": 7580,
-        "finMs": 7940
+        "palabra": "sónica",
+        "inicioMs": 5460,
+        "finMs": 5980
       }
     ]
   },
   "escena_3": {
-    "sha256": "b0b708d0c79eefd2aeda4eebd64aeb362b327723fdc1db7f661553e8cd1c2bbe",
+    "sha256": "e5f300427f98c40895f1a9ba06c5e115939dc832357811233137a80a88765d0d",
     "pipelineVersion": "v4_nw_precision_align",
-    "texto": "Pero a medianoche, Niko hizo una prueba secreta con un muñeco... y cuando el carrito salió del círculo... ¡el muñeco estaba aplastado como una lata de refresco!",
-    "textoTts": "Pero a medianoche, Niko hizo una prueba secreta con un muñeco... y cuando el carrito salió del círculo... ¡el muñeco estaba aplastado como una lata de refresco!",
+    "texto": "Eiji probó narices más afiladas en el túnel de viento. Pero todas empujaban el aire como un pistón gigante.",
+    "textoTts": "Eiji probó narices más afiladas en el túnel de viento. Pero todas empujaban el aire como un pistón gigante.",
     "voiceConds": "alex.conds.pt",
-    "duracionSegundos": 8.89,
+    "duracionSegundos": 6.322,
     "palabras": [
       {
-        "palabra": "Pero",
+        "palabra": "Eiji",
         "inicioMs": 0,
-        "finMs": 180
+        "finMs": 380
       },
       {
-        "palabra": "a",
-        "inicioMs": 180,
-        "finMs": 280
+        "palabra": "probó",
+        "inicioMs": 380,
+        "finMs": 740
       },
       {
-        "palabra": "medianoche",
-        "inicioMs": 280,
-        "finMs": 840
+        "palabra": "narices",
+        "inicioMs": 740,
+        "finMs": 1160
       },
       {
-        "palabra": "Niko",
-        "inicioMs": 1220,
-        "finMs": 1400
+        "palabra": "más",
+        "inicioMs": 1160,
+        "finMs": 1420
       },
       {
-        "palabra": "hizo",
-        "inicioMs": 1400,
-        "finMs": 1640
+        "palabra": "afiladas",
+        "inicioMs": 1420,
+        "finMs": 2000
       },
       {
-        "palabra": "una",
-        "inicioMs": 1640,
-        "finMs": 1840
-      },
-      {
-        "palabra": "prueba",
-        "inicioMs": 1840,
-        "finMs": 2080
-      },
-      {
-        "palabra": "secreta",
-        "inicioMs": 2080,
-        "finMs": 2600
-      },
-      {
-        "palabra": "con",
-        "inicioMs": 2600,
-        "finMs": 2760
-      },
-      {
-        "palabra": "un",
-        "inicioMs": 2760,
-        "finMs": 2880
-      },
-      {
-        "palabra": "muñeco",
-        "inicioMs": 2880,
-        "finMs": 3580
-      },
-      {
-        "palabra": "y",
-        "inicioMs": 3580,
-        "finMs": 3620
-      },
-      {
-        "palabra": "cuando",
-        "inicioMs": 3620,
-        "finMs": 3820
+        "palabra": "en",
+        "inicioMs": 2000,
+        "finMs": 2180
       },
       {
         "palabra": "el",
-        "inicioMs": 3820,
-        "finMs": 4000
+        "inicioMs": 2180,
+        "finMs": 2300
       },
       {
-        "palabra": "carrito",
-        "inicioMs": 4000,
-        "finMs": 4280
-      },
-      {
-        "palabra": "salió",
-        "inicioMs": 4280,
-        "finMs": 4580
-      },
-      {
-        "palabra": "del",
-        "inicioMs": 4580,
-        "finMs": 4720
-      },
-      {
-        "palabra": "círculo",
-        "inicioMs": 4720,
-        "finMs": 5180
-      },
-      {
-        "palabra": "el",
-        "inicioMs": 5400,
-        "finMs": 5860
-      },
-      {
-        "palabra": "muñeco",
-        "inicioMs": 5860,
-        "finMs": 6280
-      },
-      {
-        "palabra": "estaba",
-        "inicioMs": 6280,
-        "finMs": 6480
-      },
-      {
-        "palabra": "aplastado",
-        "inicioMs": 6480,
-        "finMs": 6980
-      },
-      {
-        "palabra": "como",
-        "inicioMs": 6980,
-        "finMs": 7200
-      },
-      {
-        "palabra": "una",
-        "inicioMs": 7200,
-        "finMs": 7380
-      },
-      {
-        "palabra": "lata",
-        "inicioMs": 7380,
-        "finMs": 7620
+        "palabra": "túnel",
+        "inicioMs": 2300,
+        "finMs": 2560
       },
       {
         "palabra": "de",
-        "inicioMs": 7620,
-        "finMs": 7820
+        "inicioMs": 2560,
+        "finMs": 2700
       },
       {
-        "palabra": "refresco",
-        "inicioMs": 7820,
-        "finMs": 8560
+        "palabra": "viento",
+        "inicioMs": 2700,
+        "finMs": 3120
+      },
+      {
+        "palabra": "Pero",
+        "inicioMs": 3320,
+        "finMs": 3440
+      },
+      {
+        "palabra": "todas",
+        "inicioMs": 3440,
+        "finMs": 3760
+      },
+      {
+        "palabra": "empujaban",
+        "inicioMs": 3760,
+        "finMs": 4200
+      },
+      {
+        "palabra": "el",
+        "inicioMs": 4200,
+        "finMs": 4340
+      },
+      {
+        "palabra": "aire",
+        "inicioMs": 4340,
+        "finMs": 4540
+      },
+      {
+        "palabra": "como",
+        "inicioMs": 4540,
+        "finMs": 4780
+      },
+      {
+        "palabra": "un",
+        "inicioMs": 4780,
+        "finMs": 4900
+      },
+      {
+        "palabra": "pistón",
+        "inicioMs": 4900,
+        "finMs": 5220
+      },
+      {
+        "palabra": "gigante",
+        "inicioMs": 5220,
+        "finMs": 5740
       }
     ]
   },
   "escena_7": {
-    "sha256": "4ecf12079acf42622f64207833031efedf11edd0cccfa6414c8f3a202af4211c",
+    "sha256": "bc00750f039ae504e2fe3b807220d8977a418db9cdad6fea6a5047f1250ff676",
     "pipelineVersion": "v4_nw_precision_align",
-    "texto": "¡Y aquí está la física! Una curva cerrada a cinco kilómetros por hora no se siente... pero a cien por hora, te destroza. En un círculo perfecto, la curva más cerrada coincide con el fondo... ¡justo donde el carro va a máxima velocidad!",
-    "textoTts": "¡Y aquí está la física! Una curva cerrada a cinco kilómetros por hora no se siente... pero a cien por hora, te destroza. En un círculo perfecto, la curva más cerrada coincide con el fondo... ¡justo donde el carro va a máxima velocidad!",
+    "texto": "Llegó el viernes de la prueba final. El nuevo tren con pico de ave cruzó el túnel a máxima velocidad en completo silencio. Las tejas ni se movieron, y el sonómetro se mantuvo en zona verde.",
+    "textoTts": "Llegó el viernes de la prueba final. El nuevo tren con pico de ave cruzó el túnel a máxima velocidad en completo silencio. Las tejas ni se movieron, y el sonómetro se mantuvo en zona verde.",
     "voiceConds": "alex.conds.pt",
-    "duracionSegundos": 12.346,
+    "duracionSegundos": 7.834,
     "palabras": [
       {
-        "palabra": "Y",
+        "palabra": "Llegó",
         "inicioMs": 0,
-        "finMs": 40
+        "finMs": 360
       },
       {
-        "palabra": "aquí",
-        "inicioMs": 40,
-        "finMs": 280
+        "palabra": "el",
+        "inicioMs": 360,
+        "finMs": 520
       },
       {
-        "palabra": "está",
-        "inicioMs": 280,
-        "finMs": 600
+        "palabra": "viernes",
+        "inicioMs": 520,
+        "finMs": 860
+      },
+      {
+        "palabra": "de",
+        "inicioMs": 860,
+        "finMs": 1020
       },
       {
         "palabra": "la",
-        "inicioMs": 600,
-        "finMs": 740
+        "inicioMs": 1020,
+        "finMs": 1120
       },
       {
-        "palabra": "física",
-        "inicioMs": 740,
-        "finMs": 1040
+        "palabra": "prueba",
+        "inicioMs": 1120,
+        "finMs": 1320
       },
       {
-        "palabra": "Una",
-        "inicioMs": 1300,
-        "finMs": 1460
+        "palabra": "final",
+        "inicioMs": 1320,
+        "finMs": 1820
       },
       {
-        "palabra": "curva",
-        "inicioMs": 1460,
-        "finMs": 1780
-      },
-      {
-        "palabra": "cerrada",
-        "inicioMs": 1780,
-        "finMs": 2140
-      },
-      {
-        "palabra": "a",
+        "palabra": "El",
         "inicioMs": 2140,
-        "finMs": 2420
+        "finMs": 2340
       },
       {
-        "palabra": "cinco",
-        "inicioMs": 2420,
-        "finMs": 2700
+        "palabra": "nuevo",
+        "inicioMs": 2340,
+        "finMs": 2500
       },
       {
-        "palabra": "kilómetros",
-        "inicioMs": 2700,
-        "finMs": 3160
-      },
-      {
-        "palabra": "por",
-        "inicioMs": 3160,
-        "finMs": 3420
-      },
-      {
-        "palabra": "hora",
-        "inicioMs": 3420,
-        "finMs": 3580
-      },
-      {
-        "palabra": "no",
-        "inicioMs": 3580,
-        "finMs": 3740
-      },
-      {
-        "palabra": "se",
-        "inicioMs": 3740,
-        "finMs": 3880
-      },
-      {
-        "palabra": "siente",
-        "inicioMs": 3880,
-        "finMs": 4360
-      },
-      {
-        "palabra": "pero",
-        "inicioMs": 4360,
-        "finMs": 4480
-      },
-      {
-        "palabra": "a",
-        "inicioMs": 4480,
-        "finMs": 4620
-      },
-      {
-        "palabra": "cien",
-        "inicioMs": 4620,
-        "finMs": 4860
-      },
-      {
-        "palabra": "por",
-        "inicioMs": 4860,
-        "finMs": 5020
-      },
-      {
-        "palabra": "hora",
-        "inicioMs": 5020,
-        "finMs": 5220
-      },
-      {
-        "palabra": "te",
-        "inicioMs": 5340,
-        "finMs": 5400
-      },
-      {
-        "palabra": "destroza",
-        "inicioMs": 5400,
-        "finMs": 5940
-      },
-      {
-        "palabra": "En",
-        "inicioMs": 6160,
-        "finMs": 6260
-      },
-      {
-        "palabra": "un",
-        "inicioMs": 6260,
-        "finMs": 6380
-      },
-      {
-        "palabra": "círculo",
-        "inicioMs": 6380,
-        "finMs": 6760
-      },
-      {
-        "palabra": "perfecto",
-        "inicioMs": 6760,
-        "finMs": 7420
-      },
-      {
-        "palabra": "la",
-        "inicioMs": 7520,
-        "finMs": 7580
-      },
-      {
-        "palabra": "curva",
-        "inicioMs": 7580,
-        "finMs": 7940
-      },
-      {
-        "palabra": "más",
-        "inicioMs": 7940,
-        "finMs": 8140
-      },
-      {
-        "palabra": "cerrada",
-        "inicioMs": 8140,
-        "finMs": 8500
-      },
-      {
-        "palabra": "coincide",
-        "inicioMs": 8500,
-        "finMs": 9060
+        "palabra": "tren",
+        "inicioMs": 2500,
+        "finMs": 2800
       },
       {
         "palabra": "con",
-        "inicioMs": 9060,
-        "finMs": 9200
+        "inicioMs": 2800,
+        "finMs": 3080
+      },
+      {
+        "palabra": "pico",
+        "inicioMs": 3080,
+        "finMs": 3340
+      },
+      {
+        "palabra": "de",
+        "inicioMs": 3340,
+        "finMs": 3480
+      },
+      {
+        "palabra": "ave",
+        "inicioMs": 3480,
+        "finMs": 3660
+      },
+      {
+        "palabra": "cruzó",
+        "inicioMs": 3660,
+        "finMs": 3687
       },
       {
         "palabra": "el",
-        "inicioMs": 9200,
-        "finMs": 9340
+        "inicioMs": 3687,
+        "finMs": 3714
       },
       {
-        "palabra": "fondo",
-        "inicioMs": 9340,
-        "finMs": 9860
-      },
-      {
-        "palabra": "justo",
-        "inicioMs": 9860,
-        "finMs": 10160
-      },
-      {
-        "palabra": "donde",
-        "inicioMs": 10160,
-        "finMs": 10320
-      },
-      {
-        "palabra": "el",
-        "inicioMs": 10320,
-        "finMs": 10460
-      },
-      {
-        "palabra": "carro",
-        "inicioMs": 10460,
-        "finMs": 10640
-      },
-      {
-        "palabra": "va",
-        "inicioMs": 10640,
-        "finMs": 10860
+        "palabra": "túnel",
+        "inicioMs": 3714,
+        "finMs": 3741
       },
       {
         "palabra": "a",
-        "inicioMs": 10860,
-        "finMs": 11080
+        "inicioMs": 3741,
+        "finMs": 3768
       },
       {
         "palabra": "máxima",
-        "inicioMs": 11080,
-        "finMs": 11340
+        "inicioMs": 3768,
+        "finMs": 3794
       },
       {
         "palabra": "velocidad",
-        "inicioMs": 11340,
-        "finMs": 11600
+        "inicioMs": 3794,
+        "finMs": 3820
+      },
+      {
+        "palabra": "en",
+        "inicioMs": 3820,
+        "finMs": 3847
+      },
+      {
+        "palabra": "completo",
+        "inicioMs": 3847,
+        "finMs": 3874
+      },
+      {
+        "palabra": "silencio",
+        "inicioMs": 3874,
+        "finMs": 3914
+      },
+      {
+        "palabra": "Las",
+        "inicioMs": 3900,
+        "finMs": 4000
+      },
+      {
+        "palabra": "tejas",
+        "inicioMs": 4000,
+        "finMs": 4300
+      },
+      {
+        "palabra": "ni",
+        "inicioMs": 4300,
+        "finMs": 4520
+      },
+      {
+        "palabra": "se",
+        "inicioMs": 4520,
+        "finMs": 4640
+      },
+      {
+        "palabra": "movieron",
+        "inicioMs": 4640,
+        "finMs": 5100
+      },
+      {
+        "palabra": "y",
+        "inicioMs": 5440,
+        "finMs": 5540
+      },
+      {
+        "palabra": "el",
+        "inicioMs": 5540,
+        "finMs": 5620
+      },
+      {
+        "palabra": "sonómetro",
+        "inicioMs": 5620,
+        "finMs": 6060
+      },
+      {
+        "palabra": "se",
+        "inicioMs": 6060,
+        "finMs": 6260
+      },
+      {
+        "palabra": "mantuvo",
+        "inicioMs": 6260,
+        "finMs": 6580
+      },
+      {
+        "palabra": "en",
+        "inicioMs": 6580,
+        "finMs": 6700
+      },
+      {
+        "palabra": "zona",
+        "inicioMs": 6700,
+        "finMs": 6860
+      },
+      {
+        "palabra": "verde",
+        "inicioMs": 6860,
+        "finMs": 7180
       }
     ]
   },
@@ -1129,927 +999,692 @@
     ]
   },
   "escena_5": {
-    "sha256": "1a7564d8b68183716515e078f957b7821d6c83db5859ce501265c0c48295c0ee",
+    "sha256": "fce86b006dd218f0dedd35599191b2b4bf49def5917ed848a0aa6c283ed59c54",
     "pipelineVersion": "v4_nw_precision_align",
-    "texto": "El rival lo espió y se rio a carcajadas. Creyendo que Niko se había vuelto loco, se infiltró en la madrugada y apretó con manivelas los costados para estirarlo hacia arriba, jurando que el carro chocaría en la cima.",
-    "textoTts": "El rival lo espió y se rio a carcajadas. Creyendo que Niko se había vuelto loco, se infiltró en la madrugada y apretó con manivelas los costados para estirarlo hacia arriba, jurando que el carro chocaría en la cima.",
+    "texto": "De pronto, el martín pescador se lanzó en picado. Atravesó el agua a toda velocidad sin levantar una sola gota.",
+    "textoTts": "De pronto, el martín pescador se lanzó en picado. Atravesó el agua a toda velocidad sin levantar una sola gota.",
     "voiceConds": "alex.conds.pt",
-    "duracionSegundos": 11.434,
+    "duracionSegundos": 6.658,
     "palabras": [
       {
-        "palabra": "El",
+        "palabra": "De",
         "inicioMs": 0,
         "finMs": 180
       },
       {
-        "palabra": "rival",
+        "palabra": "pronto",
         "inicioMs": 180,
-        "finMs": 380
-      },
-      {
-        "palabra": "lo",
-        "inicioMs": 380,
-        "finMs": 560
-      },
-      {
-        "palabra": "espió",
-        "inicioMs": 560,
-        "finMs": 840
-      },
-      {
-        "palabra": "y",
-        "inicioMs": 840,
-        "finMs": 980
-      },
-      {
-        "palabra": "se",
-        "inicioMs": 980,
-        "finMs": 1060
-      },
-      {
-        "palabra": "rio",
-        "inicioMs": 1060,
-        "finMs": 1260
-      },
-      {
-        "palabra": "a",
-        "inicioMs": 1260,
-        "finMs": 1340
-      },
-      {
-        "palabra": "carcajadas",
-        "inicioMs": 1340,
-        "finMs": 1940
-      },
-      {
-        "palabra": "Creyendo",
-        "inicioMs": 2160,
-        "finMs": 2540
-      },
-      {
-        "palabra": "que",
-        "inicioMs": 2540,
-        "finMs": 2680
-      },
-      {
-        "palabra": "Niko",
-        "inicioMs": 2680,
-        "finMs": 2940
-      },
-      {
-        "palabra": "se",
-        "inicioMs": 2940,
-        "finMs": 3120
-      },
-      {
-        "palabra": "había",
-        "inicioMs": 3120,
-        "finMs": 3260
-      },
-      {
-        "palabra": "vuelto",
-        "inicioMs": 3260,
-        "finMs": 3620
-      },
-      {
-        "palabra": "loco",
-        "inicioMs": 3620,
-        "finMs": 4020
-      },
-      {
-        "palabra": "se",
-        "inicioMs": 4340,
-        "finMs": 4420
-      },
-      {
-        "palabra": "infiltró",
-        "inicioMs": 4420,
-        "finMs": 4960
-      },
-      {
-        "palabra": "en",
-        "inicioMs": 4960,
-        "finMs": 5080
-      },
-      {
-        "palabra": "la",
-        "inicioMs": 5080,
-        "finMs": 5140
-      },
-      {
-        "palabra": "madrugada",
-        "inicioMs": 5140,
-        "finMs": 5700
-      },
-      {
-        "palabra": "y",
-        "inicioMs": 5700,
-        "finMs": 5940
-      },
-      {
-        "palabra": "apretó",
-        "inicioMs": 5940,
-        "finMs": 6320
-      },
-      {
-        "palabra": "con",
-        "inicioMs": 6320,
-        "finMs": 6440
-      },
-      {
-        "palabra": "manivelas",
-        "inicioMs": 6440,
-        "finMs": 6980
-      },
-      {
-        "palabra": "los",
-        "inicioMs": 6980,
-        "finMs": 7160
-      },
-      {
-        "palabra": "costados",
-        "inicioMs": 7160,
-        "finMs": 7660
-      },
-      {
-        "palabra": "para",
-        "inicioMs": 7660,
-        "finMs": 7860
-      },
-      {
-        "palabra": "estirarlo",
-        "inicioMs": 7860,
-        "finMs": 8340
-      },
-      {
-        "palabra": "hacia",
-        "inicioMs": 8340,
-        "finMs": 8540
-      },
-      {
-        "palabra": "arriba",
-        "inicioMs": 8540,
-        "finMs": 8880
-      },
-      {
-        "palabra": "jurando",
-        "inicioMs": 9100,
-        "finMs": 9460
-      },
-      {
-        "palabra": "que",
-        "inicioMs": 9460,
-        "finMs": 9600
+        "finMs": 440
       },
       {
         "palabra": "el",
-        "inicioMs": 9600,
-        "finMs": 9680
+        "inicioMs": 720,
+        "finMs": 820
       },
       {
-        "palabra": "carro",
-        "inicioMs": 9680,
-        "finMs": 9880
+        "palabra": "martín",
+        "inicioMs": 820,
+        "finMs": 1120
       },
       {
-        "palabra": "chocaría",
-        "inicioMs": 9880,
-        "finMs": 10260
+        "palabra": "pescador",
+        "inicioMs": 1120,
+        "finMs": 1560
+      },
+      {
+        "palabra": "se",
+        "inicioMs": 1560,
+        "finMs": 1740
+      },
+      {
+        "palabra": "lanzó",
+        "inicioMs": 1740,
+        "finMs": 2020
       },
       {
         "palabra": "en",
-        "inicioMs": 10260,
-        "finMs": 10420
+        "inicioMs": 2020,
+        "finMs": 2100
       },
       {
-        "palabra": "la",
-        "inicioMs": 10420,
-        "finMs": 10460
+        "palabra": "picado",
+        "inicioMs": 2100,
+        "finMs": 2560
       },
       {
-        "palabra": "cima",
-        "inicioMs": 10420,
-        "finMs": 10660
+        "palabra": "Atravesó",
+        "inicioMs": 2820,
+        "finMs": 3300
+      },
+      {
+        "palabra": "el",
+        "inicioMs": 3300,
+        "finMs": 3420
+      },
+      {
+        "palabra": "agua",
+        "inicioMs": 3420,
+        "finMs": 3660
+      },
+      {
+        "palabra": "a",
+        "inicioMs": 3660,
+        "finMs": 3820
+      },
+      {
+        "palabra": "toda",
+        "inicioMs": 3820,
+        "finMs": 3980
+      },
+      {
+        "palabra": "velocidad",
+        "inicioMs": 3980,
+        "finMs": 4560
+      },
+      {
+        "palabra": "sin",
+        "inicioMs": 4560,
+        "finMs": 4900
+      },
+      {
+        "palabra": "levantar",
+        "inicioMs": 4900,
+        "finMs": 5340
+      },
+      {
+        "palabra": "una",
+        "inicioMs": 5340,
+        "finMs": 5500
+      },
+      {
+        "palabra": "sola",
+        "inicioMs": 5500,
+        "finMs": 5720
+      },
+      {
+        "palabra": "gota",
+        "inicioMs": 5720,
+        "finMs": 6160
       }
     ]
   },
   "escena_6": {
-    "sha256": "dd4afbe5c4c3e628056a42efab2eb4b8c8cfbc2ce375c04a068e7f521679e9b2",
+    "sha256": "935fd1b19188b78f52592682cbdd21f6f7fe2fbd07fce5a5c714cae99e8e72ac",
     "pipelineVersion": "v4_nw_precision_align",
-    "texto": "Al amanecer, toda la ciudad hacía fila frente a la montaña rusa del rival. Niko subió a su propio carrito con el corazón en la garganta... y al llegar a la cima vio la extraña forma de gota... ¡demasiado tarde para frenar!",
-    "textoTts": "Al amanecer, toda la ciudad hacía fila frente a la montaña rusa del rival. Niko subió a su propio carrito con el corazón en la garganta... y al llegar a la cima vio la extraña forma de gota... ¡demasiado tarde para frenar!",
+    "texto": "Y aquí está la física. El agua es ochocientas veces más densa que el aire. El pico del ave aumenta su grosor de forma gradual. Eso desvía la presión a los lados, sin crear ola de choque. Así nació la nariz de quince metros del nuevo tren.",
+    "textoTts": "Y aquí está la física. El agua es ochocientas veces más densa que el aire. El pico del ave aumenta su grosor de forma gradual. Eso desvía la presión a los lados, sin crear ola de choque. Así nació la nariz de quince metros del nuevo tren.",
     "voiceConds": "alex.conds.pt",
-    "duracionSegundos": 11.386,
+    "duracionSegundos": 13.234,
     "palabras": [
       {
-        "palabra": "Al",
+        "palabra": "Y",
         "inicioMs": 0,
-        "finMs": 240
+        "finMs": 200
       },
       {
-        "palabra": "amanecer",
-        "inicioMs": 240,
-        "finMs": 700
+        "palabra": "aquí",
+        "inicioMs": 200,
+        "finMs": 420
       },
       {
-        "palabra": "toda",
-        "inicioMs": 900,
-        "finMs": 1040
-      },
-      {
-        "palabra": "la",
-        "inicioMs": 1040,
-        "finMs": 1180
-      },
-      {
-        "palabra": "ciudad",
-        "inicioMs": 1180,
-        "finMs": 1440
-      },
-      {
-        "palabra": "hacía",
-        "inicioMs": 1440,
-        "finMs": 1720
-      },
-      {
-        "palabra": "fila",
-        "inicioMs": 1720,
-        "finMs": 2100
-      },
-      {
-        "palabra": "frente",
-        "inicioMs": 2100,
-        "finMs": 2280
-      },
-      {
-        "palabra": "a",
-        "inicioMs": 2280,
-        "finMs": 2460
+        "palabra": "está",
+        "inicioMs": 420,
+        "finMs": 680
       },
       {
         "palabra": "la",
-        "inicioMs": 2460,
-        "finMs": 2540
+        "inicioMs": 680,
+        "finMs": 820
       },
       {
-        "palabra": "montaña",
-        "inicioMs": 2540,
-        "finMs": 2960
+        "palabra": "física",
+        "inicioMs": 820,
+        "finMs": 1140
       },
       {
-        "palabra": "rusa",
-        "inicioMs": 2960,
-        "finMs": 3240
+        "palabra": "El",
+        "inicioMs": 1400,
+        "finMs": 1540
       },
       {
-        "palabra": "del",
-        "inicioMs": 3240,
-        "finMs": 3400
+        "palabra": "agua",
+        "inicioMs": 1540,
+        "finMs": 1700
       },
       {
-        "palabra": "rival",
-        "inicioMs": 3400,
-        "finMs": 3840
+        "palabra": "es",
+        "inicioMs": 1700,
+        "finMs": 1820
       },
       {
-        "palabra": "Niko",
-        "inicioMs": 3840,
-        "finMs": 4020
+        "palabra": "ochocientas",
+        "inicioMs": 1820,
+        "finMs": 2380
       },
       {
-        "palabra": "subió",
-        "inicioMs": 4020,
-        "finMs": 4320
+        "palabra": "veces",
+        "inicioMs": 2380,
+        "finMs": 2520
       },
       {
-        "palabra": "a",
-        "inicioMs": 4320,
-        "finMs": 4380
+        "palabra": "más",
+        "inicioMs": 2520,
+        "finMs": 2820
       },
       {
-        "palabra": "su",
-        "inicioMs": 4380,
-        "finMs": 4500
+        "palabra": "densa",
+        "inicioMs": 2820,
+        "finMs": 3140
       },
       {
-        "palabra": "propio",
-        "inicioMs": 4500,
-        "finMs": 4760
-      },
-      {
-        "palabra": "carrito",
-        "inicioMs": 4760,
-        "finMs": 5140
-      },
-      {
-        "palabra": "con",
-        "inicioMs": 5140,
-        "finMs": 5340
+        "palabra": "que",
+        "inicioMs": 3140,
+        "finMs": 3320
       },
       {
         "palabra": "el",
-        "inicioMs": 5340,
+        "inicioMs": 3320,
+        "finMs": 3440
+      },
+      {
+        "palabra": "aire",
+        "inicioMs": 3440,
+        "finMs": 3640
+      },
+      {
+        "palabra": "El",
+        "inicioMs": 3880,
+        "finMs": 4000
+      },
+      {
+        "palabra": "pico",
+        "inicioMs": 4000,
+        "finMs": 4280
+      },
+      {
+        "palabra": "del",
+        "inicioMs": 4280,
+        "finMs": 4460
+      },
+      {
+        "palabra": "ave",
+        "inicioMs": 4460,
+        "finMs": 4640
+      },
+      {
+        "palabra": "aumenta",
+        "inicioMs": 4640,
+        "finMs": 5260
+      },
+      {
+        "palabra": "su",
+        "inicioMs": 5260,
         "finMs": 5440
       },
       {
-        "palabra": "corazón",
+        "palabra": "grosor",
         "inicioMs": 5440,
-        "finMs": 5720
-      },
-      {
-        "palabra": "en",
-        "inicioMs": 5720,
-        "finMs": 5900
-      },
-      {
-        "palabra": "la",
-        "inicioMs": 5900,
-        "finMs": 5980
-      },
-      {
-        "palabra": "garganta",
-        "inicioMs": 5980,
-        "finMs": 6660
-      },
-      {
-        "palabra": "y",
-        "inicioMs": 6660,
-        "finMs": 6680
-      },
-      {
-        "palabra": "al",
-        "inicioMs": 6680,
-        "finMs": 6760
-      },
-      {
-        "palabra": "llegar",
-        "inicioMs": 6760,
-        "finMs": 6940
-      },
-      {
-        "palabra": "a",
-        "inicioMs": 6940,
-        "finMs": 7060
-      },
-      {
-        "palabra": "la",
-        "inicioMs": 7060,
-        "finMs": 7140
-      },
-      {
-        "palabra": "cima",
-        "inicioMs": 7140,
-        "finMs": 7340
-      },
-      {
-        "palabra": "vio",
-        "inicioMs": 7340,
-        "finMs": 7560
-      },
-      {
-        "palabra": "la",
-        "inicioMs": 7560,
-        "finMs": 7640
-      },
-      {
-        "palabra": "extraña",
-        "inicioMs": 7640,
-        "finMs": 8020
-      },
-      {
-        "palabra": "forma",
-        "inicioMs": 8020,
-        "finMs": 8220
+        "finMs": 5800
       },
       {
         "palabra": "de",
-        "inicioMs": 8220,
-        "finMs": 8420
+        "inicioMs": 5800,
+        "finMs": 5980
       },
       {
-        "palabra": "gota",
-        "inicioMs": 8420,
-        "finMs": 9240
+        "palabra": "forma",
+        "inicioMs": 5980,
+        "finMs": 6240
       },
       {
-        "palabra": "demasiado",
-        "inicioMs": 9240,
-        "finMs": 9760
+        "palabra": "gradual",
+        "inicioMs": 6240,
+        "finMs": 6700
       },
       {
-        "palabra": "tarde",
-        "inicioMs": 9760,
-        "finMs": 10060
+        "palabra": "Eso",
+        "inicioMs": 6920,
+        "finMs": 7080
       },
       {
-        "palabra": "para",
-        "inicioMs": 10060,
+        "palabra": "desvía",
+        "inicioMs": 7080,
+        "finMs": 7420
+      },
+      {
+        "palabra": "la",
+        "inicioMs": 7420,
+        "finMs": 7560
+      },
+      {
+        "palabra": "presión",
+        "inicioMs": 7560,
+        "finMs": 7860
+      },
+      {
+        "palabra": "a",
+        "inicioMs": 7860,
+        "finMs": 7980
+      },
+      {
+        "palabra": "los",
+        "inicioMs": 7980,
+        "finMs": 8100
+      },
+      {
+        "palabra": "lados",
+        "inicioMs": 8100,
+        "finMs": 8400
+      },
+      {
+        "palabra": "sin",
+        "inicioMs": 8520,
+        "finMs": 8600
+      },
+      {
+        "palabra": "crear",
+        "inicioMs": 8600,
+        "finMs": 8780
+      },
+      {
+        "palabra": "ola",
+        "inicioMs": 8780,
+        "finMs": 8980
+      },
+      {
+        "palabra": "de",
+        "inicioMs": 8980,
+        "finMs": 9100
+      },
+      {
+        "palabra": "choque",
+        "inicioMs": 9100,
+        "finMs": 9480
+      },
+      {
+        "palabra": "Así",
+        "inicioMs": 10020,
         "finMs": 10320
       },
       {
-        "palabra": "frenar",
+        "palabra": "nació",
         "inicioMs": 10320,
+        "finMs": 10680
+      },
+      {
+        "palabra": "la",
+        "inicioMs": 10680,
         "finMs": 10800
+      },
+      {
+        "palabra": "nariz",
+        "inicioMs": 10800,
+        "finMs": 11100
+      },
+      {
+        "palabra": "de",
+        "inicioMs": 11100,
+        "finMs": 11260
+      },
+      {
+        "palabra": "quince",
+        "inicioMs": 11260,
+        "finMs": 11560
+      },
+      {
+        "palabra": "metros",
+        "inicioMs": 11560,
+        "finMs": 11900
+      },
+      {
+        "palabra": "del",
+        "inicioMs": 11900,
+        "finMs": 12100
+      },
+      {
+        "palabra": "nuevo",
+        "inicioMs": 12100,
+        "finMs": 12300
+      },
+      {
+        "palabra": "tren",
+        "inicioMs": 12300,
+        "finMs": 12600
       }
     ]
   },
   "escena_8": {
-    "sha256": "3155c3fc0de7ae0cbcce718554ae57163f5f5698faae29177aa715abff5559f1",
+    "sha256": "203ad11a62eec076a8d943e3264edd19520b61d8a9b400af53995b374fd75954",
     "pipelineVersion": "v4_nw_precision_align",
-    "texto": "El martillazo de Niko suavizó la curva del fondo donde el carro vuela... y el sabotaje del rival mandó la curva cerrada arriba... ¡justo donde el carro casi se detiene! Niko flotó por el bucle sin un solo rasguño...",
-    "textoTts": "El martillazo de Niko suavizó la curva del fondo donde el carro vuela... y el sabotaje del rival mandó la curva cerrada arriba... ¡justo donde el carro casi se detiene! Niko flotó por el bucle sin un solo rasguño...",
+    "texto": "Ese diseño redujo el consumo eléctrico un quince por ciento y nació mirando un pájaro. A veces, la mejor ingeniería ya lleva millones de años volando.",
+    "textoTts": "Ese diseño redujo el consumo eléctrico un quince por ciento y nació mirando un pájaro. A veces, la mejor ingeniería ya lleva millones de años volando.",
     "voiceConds": "alex.conds.pt",
-    "duracionSegundos": 11.938,
+    "duracionSegundos": 8.794,
     "palabras": [
       {
-        "palabra": "El",
+        "palabra": "Ese",
         "inicioMs": 0,
-        "finMs": 220
+        "finMs": 300
       },
       {
-        "palabra": "martillazo",
-        "inicioMs": 220,
+        "palabra": "diseño",
+        "inicioMs": 300,
         "finMs": 740
       },
       {
-        "palabra": "de",
+        "palabra": "redujo",
         "inicioMs": 740,
-        "finMs": 920
-      },
-      {
-        "palabra": "Niko",
-        "inicioMs": 920,
-        "finMs": 1140
-      },
-      {
-        "palabra": "suavizó",
-        "inicioMs": 1140,
-        "finMs": 1620
-      },
-      {
-        "palabra": "la",
-        "inicioMs": 1620,
-        "finMs": 1740
-      },
-      {
-        "palabra": "curva",
-        "inicioMs": 1740,
-        "finMs": 2080
-      },
-      {
-        "palabra": "del",
-        "inicioMs": 2080,
-        "finMs": 2220
-      },
-      {
-        "palabra": "fondo",
-        "inicioMs": 2220,
-        "finMs": 2420
-      },
-      {
-        "palabra": "donde",
-        "inicioMs": 2420,
-        "finMs": 2720
+        "finMs": 1160
       },
       {
         "palabra": "el",
-        "inicioMs": 2720,
-        "finMs": 2920
+        "inicioMs": 1160,
+        "finMs": 1260
       },
       {
-        "palabra": "carro",
-        "inicioMs": 2920,
-        "finMs": 3040
+        "palabra": "consumo",
+        "inicioMs": 1260,
+        "finMs": 1560
       },
       {
-        "palabra": "vuela",
-        "inicioMs": 3040,
-        "finMs": 3800
-      },
-      {
-        "palabra": "y",
-        "inicioMs": 3800,
-        "finMs": 3820
-      },
-      {
-        "palabra": "el",
-        "inicioMs": 3820,
-        "finMs": 3940
-      },
-      {
-        "palabra": "sabotaje",
-        "inicioMs": 3940,
-        "finMs": 4380
-      },
-      {
-        "palabra": "del",
-        "inicioMs": 4380,
-        "finMs": 4560
-      },
-      {
-        "palabra": "rival",
-        "inicioMs": 4560,
-        "finMs": 4760
-      },
-      {
-        "palabra": "mandó",
-        "inicioMs": 4760,
-        "finMs": 5060
-      },
-      {
-        "palabra": "la",
-        "inicioMs": 5060,
-        "finMs": 5180
-      },
-      {
-        "palabra": "curva",
-        "inicioMs": 5180,
-        "finMs": 5500
-      },
-      {
-        "palabra": "cerrada",
-        "inicioMs": 5500,
-        "finMs": 5840
-      },
-      {
-        "palabra": "arriba",
-        "inicioMs": 5840,
-        "finMs": 6800
-      },
-      {
-        "palabra": "justo",
-        "inicioMs": 6800,
-        "finMs": 7240
-      },
-      {
-        "palabra": "donde",
-        "inicioMs": 7240,
-        "finMs": 7400
-      },
-      {
-        "palabra": "el",
-        "inicioMs": 7400,
-        "finMs": 7640
-      },
-      {
-        "palabra": "carro",
-        "inicioMs": 7640,
-        "finMs": 7860
-      },
-      {
-        "palabra": "casi",
-        "inicioMs": 7860,
-        "finMs": 8140
-      },
-      {
-        "palabra": "se",
-        "inicioMs": 8140,
-        "finMs": 8340
-      },
-      {
-        "palabra": "detiene",
-        "inicioMs": 8340,
-        "finMs": 8760
-      },
-      {
-        "palabra": "Niko",
-        "inicioMs": 9000,
-        "finMs": 9220
-      },
-      {
-        "palabra": "flotó",
-        "inicioMs": 9220,
-        "finMs": 9580
-      },
-      {
-        "palabra": "por",
-        "inicioMs": 9580,
-        "finMs": 9740
-      },
-      {
-        "palabra": "el",
-        "inicioMs": 9740,
-        "finMs": 9860
-      },
-      {
-        "palabra": "bucle",
-        "inicioMs": 9860,
-        "finMs": 10140
-      },
-      {
-        "palabra": "sin",
-        "inicioMs": 10140,
-        "finMs": 10400
+        "palabra": "eléctrico",
+        "inicioMs": 1560,
+        "finMs": 2040
       },
       {
         "palabra": "un",
-        "inicioMs": 10400,
-        "finMs": 10540
+        "inicioMs": 2040,
+        "finMs": 2220
       },
       {
-        "palabra": "solo",
-        "inicioMs": 10540,
-        "finMs": 10740
+        "palabra": "quince",
+        "inicioMs": 2220,
+        "finMs": 2520
       },
       {
-        "palabra": "rasguño",
-        "inicioMs": 10740,
-        "finMs": 11600
+        "palabra": "por",
+        "inicioMs": 2520,
+        "finMs": 2720
+      },
+      {
+        "palabra": "ciento",
+        "inicioMs": 2720,
+        "finMs": 3080
+      },
+      {
+        "palabra": "y",
+        "inicioMs": 3080,
+        "finMs": 3320
+      },
+      {
+        "palabra": "nació",
+        "inicioMs": 3320,
+        "finMs": 3580
+      },
+      {
+        "palabra": "mirando",
+        "inicioMs": 3580,
+        "finMs": 3880
+      },
+      {
+        "palabra": "un",
+        "inicioMs": 3880,
+        "finMs": 4060
+      },
+      {
+        "palabra": "pájaro",
+        "inicioMs": 4060,
+        "finMs": 4460
+      },
+      {
+        "palabra": "A",
+        "inicioMs": 4840,
+        "finMs": 4960
+      },
+      {
+        "palabra": "veces",
+        "inicioMs": 4960,
+        "finMs": 5180
+      },
+      {
+        "palabra": "la",
+        "inicioMs": 5420,
+        "finMs": 5500
+      },
+      {
+        "palabra": "mejor",
+        "inicioMs": 5500,
+        "finMs": 5680
+      },
+      {
+        "palabra": "ingeniería",
+        "inicioMs": 5680,
+        "finMs": 6200
+      },
+      {
+        "palabra": "ya",
+        "inicioMs": 6200,
+        "finMs": 6340
+      },
+      {
+        "palabra": "lleva",
+        "inicioMs": 6340,
+        "finMs": 6600
+      },
+      {
+        "palabra": "millones",
+        "inicioMs": 6600,
+        "finMs": 6780
+      },
+      {
+        "palabra": "de",
+        "inicioMs": 6780,
+        "finMs": 7100
+      },
+      {
+        "palabra": "años",
+        "inicioMs": 7100,
+        "finMs": 7220
+      },
+      {
+        "palabra": "volando",
+        "inicioMs": 7220,
+        "finMs": 7660
       }
     ]
   },
   "escena_2": {
-    "sha256": "7d2b890ae3d55a1ae0bc79bc088f87e7a99941ab1d10ed92eaabe4b330666d45",
+    "sha256": "e8c356e5b1cdb108a13ab4ccd4980050c26272d047f831ad6b025d2fe1937c14",
     "pipelineVersion": "v4_nw_precision_align",
-    "texto": "Por supuesto, su archirrival en la feria copió el invento tornillo por tornillo... para robarse a todo el público en la gran inauguración.",
-    "textoTts": "Por supuesto, su archirrival en la feria copió el invento tornillo por tornillo... para robarse a todo el público en la gran inauguración.",
+    "texto": "El inspector ferroviario fue tajante. Si no bajaban el ruido antes del viernes, el tren bala sería cancelado.",
+    "textoTts": "El inspector ferroviario fue tajante. Si no bajaban el ruido antes del viernes, el tren bala sería cancelado.",
     "voiceConds": "alex.conds.pt",
-    "duracionSegundos": 8.242,
-    "palabras": [
-      {
-        "palabra": "Por",
-        "inicioMs": 0,
-        "finMs": 100
-      },
-      {
-        "palabra": "supuesto",
-        "inicioMs": 100,
-        "finMs": 600
-      },
-      {
-        "palabra": "su",
-        "inicioMs": 780,
-        "finMs": 880
-      },
-      {
-        "palabra": "archirrival",
-        "inicioMs": 880,
-        "finMs": 1380
-      },
-      {
-        "palabra": "en",
-        "inicioMs": 1380,
-        "finMs": 1560
-      },
-      {
-        "palabra": "la",
-        "inicioMs": 1560,
-        "finMs": 1620
-      },
-      {
-        "palabra": "feria",
-        "inicioMs": 1620,
-        "finMs": 2000
-      },
-      {
-        "palabra": "copió",
-        "inicioMs": 2000,
-        "finMs": 2560
-      },
-      {
-        "palabra": "el",
-        "inicioMs": 2560,
-        "finMs": 2680
-      },
-      {
-        "palabra": "invento",
-        "inicioMs": 2680,
-        "finMs": 3120
-      },
-      {
-        "palabra": "tornillo",
-        "inicioMs": 3120,
-        "finMs": 3520
-      },
-      {
-        "palabra": "por",
-        "inicioMs": 3520,
-        "finMs": 3740
-      },
-      {
-        "palabra": "tornillo",
-        "inicioMs": 3740,
-        "finMs": 4480
-      },
-      {
-        "palabra": "para",
-        "inicioMs": 4480,
-        "finMs": 4960
-      },
-      {
-        "palabra": "robarse",
-        "inicioMs": 4960,
-        "finMs": 5420
-      },
-      {
-        "palabra": "a",
-        "inicioMs": 5420,
-        "finMs": 5540
-      },
-      {
-        "palabra": "todo",
-        "inicioMs": 5540,
-        "finMs": 5660
-      },
-      {
-        "palabra": "el",
-        "inicioMs": 5660,
-        "finMs": 5840
-      },
-      {
-        "palabra": "público",
-        "inicioMs": 5840,
-        "finMs": 6160
-      },
-      {
-        "palabra": "en",
-        "inicioMs": 6160,
-        "finMs": 6420
-      },
-      {
-        "palabra": "la",
-        "inicioMs": 6420,
-        "finMs": 6540
-      },
-      {
-        "palabra": "gran",
-        "inicioMs": 6540,
-        "finMs": 6780
-      },
-      {
-        "palabra": "inauguración",
-        "inicioMs": 6780,
-        "finMs": 7640
-      }
-    ]
-  },
-  "escena_4": {
-    "sha256": "9fad0d6b1a55d4a5ab191065a03e5cf20ef5b7dd9b6991ca2892e7a78dd06129",
-    "pipelineVersion": "v4_nw_precision_align",
-    "texto": "El círculo perfecto generaba doce gravedades. ¡Iba a partirle el cuello a sus pasajeros! Desesperado, Niko agarró el mazo y reventó la base del riel hacia afuera, ensanchando la curva a ciegas.",
-    "textoTts": "El círculo perfecto generaba doce gravedades. ¡Iba a partirle el cuello a sus pasajeros! Desesperado, Niko agarró el mazo y reventó la base del riel hacia afuera, ensanchando la curva a ciegas.",
-    "voiceConds": "alex.conds.pt",
-    "duracionSegundos": 10.738,
+    "duracionSegundos": 6.538,
     "palabras": [
       {
         "palabra": "El",
         "inicioMs": 0,
-        "finMs": 220
+        "finMs": 200
       },
       {
-        "palabra": "círculo",
-        "inicioMs": 220,
+        "palabra": "inspector",
+        "inicioMs": 200,
         "finMs": 600
       },
       {
-        "palabra": "perfecto",
+        "palabra": "ferroviario",
         "inicioMs": 600,
-        "finMs": 1180
+        "finMs": 1260
       },
       {
-        "palabra": "generaba",
-        "inicioMs": 1180,
-        "finMs": 1580
+        "palabra": "fue",
+        "inicioMs": 1260,
+        "finMs": 1460
       },
       {
-        "palabra": "doce",
-        "inicioMs": 1580,
-        "finMs": 2020
+        "palabra": "tajante",
+        "inicioMs": 1460,
+        "finMs": 2060
       },
       {
-        "palabra": "gravedades",
-        "inicioMs": 2020,
-        "finMs": 2640
+        "palabra": "Si",
+        "inicioMs": 2340,
+        "finMs": 2420
       },
       {
-        "palabra": "Iba",
+        "palabra": "no",
+        "inicioMs": 2420,
+        "finMs": 2560
+      },
+      {
+        "palabra": "bajaban",
+        "inicioMs": 2560,
+        "finMs": 2880
+      },
+      {
+        "palabra": "el",
         "inicioMs": 2880,
         "finMs": 3080
       },
       {
-        "palabra": "a",
+        "palabra": "ruido",
         "inicioMs": 3080,
-        "finMs": 3160
+        "finMs": 3340
       },
       {
-        "palabra": "partirle",
-        "inicioMs": 3160,
-        "finMs": 3700
-      },
-      {
-        "palabra": "el",
-        "inicioMs": 3700,
-        "finMs": 3920
-      },
-      {
-        "palabra": "cuello",
-        "inicioMs": 3920,
-        "finMs": 4180
-      },
-      {
-        "palabra": "a",
-        "inicioMs": 4180,
-        "finMs": 4260
-      },
-      {
-        "palabra": "sus",
-        "inicioMs": 4260,
-        "finMs": 4360
-      },
-      {
-        "palabra": "pasajeros",
-        "inicioMs": 4360,
-        "finMs": 4860
-      },
-      {
-        "palabra": "Desesperado",
-        "inicioMs": 5060,
-        "finMs": 5600
-      },
-      {
-        "palabra": "Niko",
-        "inicioMs": 5880,
-        "finMs": 6100
-      },
-      {
-        "palabra": "agarró",
-        "inicioMs": 6100,
-        "finMs": 6380
-      },
-      {
-        "palabra": "el",
-        "inicioMs": 6380,
-        "finMs": 6480
-      },
-      {
-        "palabra": "mazo",
-        "inicioMs": 6480,
-        "finMs": 6760
-      },
-      {
-        "palabra": "y",
-        "inicioMs": 6760,
-        "finMs": 6860
-      },
-      {
-        "palabra": "reventó",
-        "inicioMs": 6860,
-        "finMs": 7200
-      },
-      {
-        "palabra": "la",
-        "inicioMs": 7200,
-        "finMs": 7320
-      },
-      {
-        "palabra": "base",
-        "inicioMs": 7320,
-        "finMs": 7540
+        "palabra": "antes",
+        "inicioMs": 3340,
+        "finMs": 3560
       },
       {
         "palabra": "del",
-        "inicioMs": 7540,
-        "finMs": 7760
+        "inicioMs": 3560,
+        "finMs": 3740
       },
       {
-        "palabra": "riel",
-        "inicioMs": 7760,
-        "finMs": 7980
+        "palabra": "viernes",
+        "inicioMs": 3740,
+        "finMs": 4160
       },
       {
-        "palabra": "hacia",
-        "inicioMs": 7980,
-        "finMs": 8180
+        "palabra": "el",
+        "inicioMs": 4400,
+        "finMs": 4520
       },
       {
-        "palabra": "afuera",
-        "inicioMs": 8180,
-        "finMs": 8560
+        "palabra": "tren",
+        "inicioMs": 4520,
+        "finMs": 4740
       },
       {
-        "palabra": "ensanchando",
-        "inicioMs": 8820,
-        "finMs": 9300
+        "palabra": "bala",
+        "inicioMs": 4740,
+        "finMs": 5100
       },
       {
-        "palabra": "la",
-        "inicioMs": 9300,
-        "finMs": 9440
+        "palabra": "sería",
+        "inicioMs": 5100,
+        "finMs": 5360
       },
       {
-        "palabra": "curva",
-        "inicioMs": 9440,
-        "finMs": 9740
+        "palabra": "cancelado",
+        "inicioMs": 5360,
+        "finMs": 6000
+      }
+    ]
+  },
+  "escena_4": {
+    "sha256": "26e1a5f8ab914cca319ad281cb901ba0b3f50b25c621aa26e186b3a60b7fe4bc",
+    "pipelineVersion": "v4_nw_precision_align",
+    "texto": "Faltaban pocas horas y ninguna forma funcionaba. Agotado, Eiji salió al amanecer junto a un estanque cercano.",
+    "textoTts": "Faltaban pocas horas y ninguna forma funcionaba. Agotado, Eiji salió al amanecer junto a un estanque cercano.",
+    "voiceConds": "alex.conds.pt",
+    "duracionSegundos": 6.706,
+    "palabras": [
+      {
+        "palabra": "Faltaban",
+        "inicioMs": 0,
+        "finMs": 460
+      },
+      {
+        "palabra": "pocas",
+        "inicioMs": 460,
+        "finMs": 860
+      },
+      {
+        "palabra": "horas",
+        "inicioMs": 860,
+        "finMs": 1060
+      },
+      {
+        "palabra": "y",
+        "inicioMs": 1060,
+        "finMs": 1320
+      },
+      {
+        "palabra": "ninguna",
+        "inicioMs": 1320,
+        "finMs": 1560
+      },
+      {
+        "palabra": "forma",
+        "inicioMs": 1560,
+        "finMs": 1920
+      },
+      {
+        "palabra": "funcionaba",
+        "inicioMs": 1920,
+        "finMs": 2620
+      },
+      {
+        "palabra": "Agotado",
+        "inicioMs": 2880,
+        "finMs": 3400
+      },
+      {
+        "palabra": "Eiji",
+        "inicioMs": 3620,
+        "finMs": 3820
+      },
+      {
+        "palabra": "salió",
+        "inicioMs": 3820,
+        "finMs": 4180
+      },
+      {
+        "palabra": "al",
+        "inicioMs": 4180,
+        "finMs": 4280
+      },
+      {
+        "palabra": "amanecer",
+        "inicioMs": 4280,
+        "finMs": 4740
+      },
+      {
+        "palabra": "junto",
+        "inicioMs": 4740,
+        "finMs": 5000
       },
       {
         "palabra": "a",
-        "inicioMs": 9740,
-        "finMs": 9900
+        "inicioMs": 5000,
+        "finMs": 5120
       },
       {
-        "palabra": "ciegas",
-        "inicioMs": 9900,
-        "finMs": 10160
+        "palabra": "un",
+        "inicioMs": 5120,
+        "finMs": 5220
+      },
+      {
+        "palabra": "estanque",
+        "inicioMs": 5220,
+        "finMs": 5620
+      },
+      {
+        "palabra": "cercano",
+        "inicioMs": 5620,
+        "finMs": 6100
       }
     ]
   }
