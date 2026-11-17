@@ -700,6 +700,8 @@ export interface EscenaGuion {
   composicionVisual?: TipoComposicionVisual;
   /** Tipo de escenario ilustrado de fondo */
   escenario?: TipoEscenario;
+  /** Escena coreografiada personalizada (ej. 'clotoide_escena_1') */
+  escenaPersonalizada?: string;
   /** Múltiples personajes actuando de forma sincronizada en la escena */
   personajes?: PersonajeEscena[];
   /** Objetos o props interactivos presentes en el escenario */

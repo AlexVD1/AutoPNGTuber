@@ -71,7 +71,7 @@
                 },
                 {
                   "inicioProgreso": 0.45,
-                  "finProgreso": 1.0,
+                  "finProgreso": 1,
                   "poseId": "pushing",
                   "expresion": "angry",
                   "posicion": {
@@ -238,6 +238,24 @@
           "inicioMs": 7580,
           "finMs": 7940
         }
+      ],
+      "escenaPersonalizada": "clotoide_escena_1",
+      "eventosSfx": [
+        {
+          "sfx": "sfx/sfx_hammer_metal.wav",
+          "tiempoSegundos": 0.65,
+          "volumen": 0.28
+        },
+        {
+          "sfx": "sfx/sfx_hammer_metal.wav",
+          "tiempoSegundos": 1.85,
+          "volumen": 0.28
+        },
+        {
+          "sfx": "sfx/sfx_hammer_metal.wav",
+          "tiempoSegundos": 3.05,
+          "volumen": 0.28
+        }
       ]
     },
     {
@@ -292,7 +310,7 @@
                 },
                 {
                   "inicioProgreso": 0.5,
-                  "finProgreso": 1.0,
+                  "finProgreso": 1,
                   "poseId": "presenting_object",
                   "expresion": "proud",
                   "posicion": {
@@ -324,7 +342,7 @@
               "pasos": [
                 {
                   "inicioProgreso": 0,
-                  "finProgreso": 1.0,
+                  "finProgreso": 1,
                   "poseId": "frustrated_head_grab",
                   "expresion": "angry",
                   "posicion": {
@@ -456,6 +474,14 @@
           "inicioMs": 6780,
           "finMs": 7640
         }
+      ],
+      "escenaPersonalizada": "clotoide_escena_2",
+      "eventosSfx": [
+        {
+          "sfx": "sfx/sfx_whoosh.wav",
+          "tiempoSegundos": 4.15,
+          "volumen": 0.24
+        }
       ]
     },
     {
@@ -509,7 +535,7 @@
                 },
                 {
                   "inicioProgreso": 0.45,
-                  "finProgreso": 1.0,
+                  "finProgreso": 1,
                   "poseId": "shock_explosion",
                   "expresion": "shocked",
                   "posicion": {
@@ -674,6 +700,19 @@
           "inicioMs": 7820,
           "finMs": 8560
         }
+      ],
+      "escenaPersonalizada": "clotoide_escena_3",
+      "eventosSfx": [
+        {
+          "sfx": "sfx/sfx_coaster_clatter.wav",
+          "tiempoSegundos": 3.1,
+          "volumen": 0.26
+        },
+        {
+          "sfx": "sfx/sfx_crunch_dummy.wav",
+          "tiempoSegundos": 5.95,
+          "volumen": 0.3
+        }
       ]
     },
     {
@@ -728,7 +767,7 @@
                 },
                 {
                   "inicioProgreso": 0.35,
-                  "finProgreso": 1.0,
+                  "finProgreso": 1,
                   "poseId": "pushing",
                   "expresion": "angry",
                   "posicion": {
@@ -905,6 +944,34 @@
           "inicioMs": 9900,
           "finMs": 10160
         }
+      ],
+      "escenaPersonalizada": "clotoide_escena_4",
+      "eventosSfx": [
+        {
+          "sfx": "sfx/sfx_hammer_metal.wav",
+          "tiempoSegundos": 5.1,
+          "volumen": 0.28
+        },
+        {
+          "sfx": "sfx/sfx_hammer_metal.wav",
+          "tiempoSegundos": 6.2,
+          "volumen": 0.28
+        },
+        {
+          "sfx": "sfx/sfx_hammer_metal.wav",
+          "tiempoSegundos": 7.3,
+          "volumen": 0.28
+        },
+        {
+          "sfx": "sfx/sfx_hammer_metal.wav",
+          "tiempoSegundos": 8.5,
+          "volumen": 0.28
+        },
+        {
+          "sfx": "sfx/sfx_hammer_metal.wav",
+          "tiempoSegundos": 9.6,
+          "volumen": 0.28
+        }
       ]
     },
     {
@@ -959,7 +1026,7 @@
                 },
                 {
                   "inicioProgreso": 0.45,
-                  "finProgreso": 1.0,
+                  "finProgreso": 1,
                   "poseId": "pulling",
                   "expresion": "smile_wide",
                   "posicion": {
@@ -1171,6 +1238,24 @@
           "inicioMs": 10420,
           "finMs": 10660
         }
+      ],
+      "escenaPersonalizada": "clotoide_escena_5",
+      "eventosSfx": [
+        {
+          "sfx": "sfx/sfx_ratchet_wrench.wav",
+          "tiempoSegundos": 4.6,
+          "volumen": 0.26
+        },
+        {
+          "sfx": "sfx/sfx_ratchet_wrench.wav",
+          "tiempoSegundos": 6.8,
+          "volumen": 0.26
+        },
+        {
+          "sfx": "sfx/sfx_ratchet_wrench.wav",
+          "tiempoSegundos": 9,
+          "volumen": 0.26
+        }
       ]
     },
     {
@@ -1225,7 +1310,7 @@
                 },
                 {
                   "inicioProgreso": 0.5,
-                  "finProgreso": 1.0,
+                  "finProgreso": 1,
                   "poseId": "surprised_hands_up",
                   "expresion": "shocked",
                   "posicion": {
@@ -1452,6 +1537,19 @@
           "inicioMs": 10320,
           "finMs": 10800
         }
+      ],
+      "escenaPersonalizada": "clotoide_escena_6",
+      "eventosSfx": [
+        {
+          "sfx": "sfx/sfx_coaster_clatter.wav",
+          "tiempoSegundos": 3.8,
+          "volumen": 0.25
+        },
+        {
+          "sfx": "sfx/sfx_dramatic_hit.wav",
+          "tiempoSegundos": 7.8,
+          "volumen": 0.28
+        }
       ]
     },
     {
@@ -1505,7 +1603,7 @@
                 },
                 {
                   "inicioProgreso": 0.5,
-                  "finProgreso": 1.0,
+                  "finProgreso": 1,
                   "poseId": "warning_danger",
                   "expresion": "analytical",
                   "posicion": {
@@ -1737,6 +1835,14 @@
           "inicioMs": 11340,
           "finMs": 11600
         }
+      ],
+      "escenaPersonalizada": "clotoide_escena_7",
+      "eventosSfx": [
+        {
+          "sfx": "sfx/sfx_whoosh.wav",
+          "tiempoSegundos": 5.4,
+          "volumen": 0.22
+        }
       ]
     },
     {
@@ -1790,7 +1896,7 @@
                 },
                 {
                   "inicioProgreso": 0.5,
-                  "finProgreso": 1.0,
+                  "finProgreso": 1,
                   "poseId": "celebrating_arms_up",
                   "expresion": "smile_wide",
                   "posicion": {
@@ -2002,6 +2108,19 @@
           "inicioMs": 10740,
           "finMs": 11600
         }
+      ],
+      "escenaPersonalizada": "clotoide_escena_8",
+      "eventosSfx": [
+        {
+          "sfx": "sfx/sfx_physics_analysis.wav",
+          "tiempoSegundos": 0.2,
+          "volumen": 0.22
+        },
+        {
+          "sfx": "sfx/sfx_whoosh.wav",
+          "tiempoSegundos": 7.8,
+          "volumen": 0.24
+        }
       ]
     },
     {
@@ -2055,7 +2174,7 @@
                 },
                 {
                   "inicioProgreso": 0.5,
-                  "finProgreso": 1.0,
+                  "finProgreso": 1,
                   "poseId": "thumbs_up_approval",
                   "expresion": "smile_wide",
                   "posicion": {
@@ -2256,6 +2375,19 @@
           "palabra": "planeta",
           "inicioMs": 7020,
           "finMs": 7040
+        }
+      ],
+      "escenaPersonalizada": "clotoide_escena_9",
+      "eventosSfx": [
+        {
+          "sfx": "sfx/sfx_crunch_dummy.wav",
+          "tiempoSegundos": 1.48,
+          "volumen": 0.3
+        },
+        {
+          "sfx": "sfx/sfx_fair_victory.wav",
+          "tiempoSegundos": 2.9,
+          "volumen": 0.28
         }
       ]
     }

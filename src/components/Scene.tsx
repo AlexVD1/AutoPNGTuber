@@ -24,6 +24,7 @@ import { LightRaysOverlay, ParticleEmitterLayer } from "./ParticleEmitter";
 import { SceneObject } from "./SceneObject";
 import { Stickman } from "./Stickman";
 import { WordSubtitles } from "./WordSubtitles";
+import { CoasterCinematicScenes } from "./coaster/CoasterCinematicScenes";
 
 interface SceneProps {
   escena: EscenaGuion;
@@ -255,8 +256,16 @@ export const Scene: React.FC<SceneProps> = ({ escena }) => {
         );
       })}
 
-      {/* 1. MUNDO CINEMATOGRÁFICO: Escenario, props y personajes afectados por la cámara */}
+      {/* 1. MUNDO CINEMATOGRÁFICO: Escena coreografiada personalizada o motor estándar */}
       <div className="absolute inset-0 z-0">
+        {escena.escenaPersonalizada?.startsWith("clotoide_") ? (
+          <CoasterCinematicScenes
+            escena={escena}
+            frame={frame}
+            fps={fps}
+            durationFrames={sceneDurationFrames}
+          />
+        ) : (
         <CameraRig
           transicion={escena.transicion ?? "zoom_in"}
           efectosCamara={escena.efectosCamara ?? ["drift"]}
@@ -389,6 +398,7 @@ export const Scene: React.FC<SceneProps> = ({ escena }) => {
             </div>
           )}
         </CameraRig>
+        )}
       </div>
 
       {/* 2. CAPA HUD SUPERIOR E INFERIOR (Subtítulos y Rótulo inmunes al zoom de la cámara) */}
