@@ -2,7 +2,7 @@ ID / SLUG: forma_salvo_montanas_rusas_clotoide
 Título: La Forma que Salvó las Montañas Rusas
 Gancho: Niko martilleó el bucle de su montaña rusa hasta deformarlo por completo. ¡Era la primera atracción de la historia en ponerse de cabeza!
 Tema: La forma que salvó las montañas rusas: Por qué los bucles no son círculos perfectos sino gotas clotoides (La historia de Niko, fuerzas G y Werner Stengel)
-Duración objetivo: [65, 88]
+Duración objetivo: [65, 98]
 ============================================================
 
 [Escena 1] EL BUCLE IMPOSIBLE
@@ -30,5 +30,5 @@ Al amanecer, toda la ciudad hacía fila frente a la montaña rusa del rival. Nik
 El martillazo de Niko suavizó la curva del fondo donde el carro vuela... y el sabotaje del rival mandó la curva cerrada arriba... ¡justo donde el carro casi se detiene! Niko flotó por el bucle sin un solo rasguño...
 
 [Escena 9] EL TRIUNFO DE LA CLOTOIDE
-Mientras que en la feria de enfrente, el carrito del rival reventó la base del círculo. Aquella extraña gota se llama clotoide... ¡y hoy es la forma geométrica que salva vidas en cada montaña rusa del planeta!
+Mientras que en la feria de enfrente, el carrito del rival reventó la base del círculo. Aquella extraña gota se llama clotoide. ¡Y hoy es la forma geométrica que salva vidas en cada montaña rusa del planeta!
 

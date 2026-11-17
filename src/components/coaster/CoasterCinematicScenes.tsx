@@ -259,8 +259,8 @@ export const CoasterCinematicScenes: React.FC<CoasterSceneProps> = ({
       strikeTimes.reduce((acc, st) => acc + (tSec >= st ? 0.25 : 0), 0)
     );
 
-    const shoulderDeg = interpolate(swingPhase, [-1, 0, 1], [-150, -35, 68]);
-    const elbowDeg = interpolate(swingPhase, [-1, 0, 1], [-20, 40, 12]);
+    const shoulderDeg = interpolate(swingPhase, [-1, 0, 1], [202, 112, 62]);
+    const elbowDeg = interpolate(swingPhase, [-1, 0, 1], [22, 34, 12]);
     const torsoLean = interpolate(swingPhase, [-1, 0, 1], [-18, 5, 34]);
 
     const camZoom = isBeat2
@@ -366,10 +366,10 @@ export const CoasterCinematicScenes: React.FC<CoasterSceneProps> = ({
                   ? {
                       torsoLeanDeg: 4,
                       headTiltDeg: -8,
-                      rightShoulderDeg: -105,
-                      rightElbowDeg: -65,
-                      leftShoulderDeg: 22,
-                      leftElbowDeg: 35,
+                      rightShoulderDeg: 105,
+                      rightElbowDeg: 112,
+                      leftShoulderDeg: -18,
+                      leftElbowDeg: 22,
                     }
                   : {
                       torsoLeanDeg: torsoLean,
@@ -377,8 +377,8 @@ export const CoasterCinematicScenes: React.FC<CoasterSceneProps> = ({
                       bodySquashY: 1 - impactIntensity * 0.08,
                       rightShoulderDeg: shoulderDeg,
                       rightElbowDeg: elbowDeg,
-                      leftShoulderDeg: shoulderDeg + 18,
-                      leftElbowDeg: elbowDeg + 12,
+                      leftShoulderDeg: shoulderDeg + 8,
+                      leftElbowDeg: elbowDeg + 8,
                     }
               }
             />
@@ -421,7 +421,7 @@ export const CoasterCinematicScenes: React.FC<CoasterSceneProps> = ({
               frame={frame}
               fps={fps}
               isSpeaking={false}
-              pose={{ rightShoulderDeg: -35, rightElbowDeg: 45 }}
+              pose={{ rightShoulderDeg: 45, rightElbowDeg: 55, leftShoulderDeg: -15, leftElbowDeg: 18 }}
             />
           </div>
           {/* Foreground Rival peeking & sketching on blueprint */}
@@ -443,12 +443,12 @@ export const CoasterCinematicScenes: React.FC<CoasterSceneProps> = ({
               palabras={escena.palabras}
               heldTool="blueprint"
               pose={{
-                torsoLeanDeg: 10,
+                torsoLeanDeg: 8,
                 headTiltDeg: -6,
-                rightShoulderDeg: -45,
-                rightElbowDeg: -50,
-                leftShoulderDeg: 30,
-                leftElbowDeg: 55,
+                rightShoulderDeg: 38,
+                rightElbowDeg: 62,
+                leftShoulderDeg: -22,
+                leftElbowDeg: 28,
               }}
             />
           </div>
@@ -514,10 +514,10 @@ export const CoasterCinematicScenes: React.FC<CoasterSceneProps> = ({
             fps={fps}
             palabras={escena.palabras}
             pose={{
-              rightShoulderDeg: -115,
-              rightElbowDeg: -20,
-              leftShoulderDeg: 25,
-              leftElbowDeg: 40,
+              rightShoulderDeg: 118,
+              rightElbowDeg: 22,
+              leftShoulderDeg: -22,
+              leftElbowDeg: 32,
             }}
           />
         </div>
@@ -652,21 +652,23 @@ export const CoasterCinematicScenes: React.FC<CoasterSceneProps> = ({
                 isReveal
                   ? {
                       torsoLeanDeg: -6,
-                      rightShoulderDeg: -75,
-                      rightElbowDeg: -45,
-                      leftShoulderDeg: 35,
-                      leftElbowDeg: 45,
+                      rightShoulderDeg: 58,
+                      rightElbowDeg: 52,
+                      leftShoulderDeg: -20,
+                      leftElbowDeg: 28,
                     }
                   : isRide
                   ? {
-                      rightShoulderDeg: -120,
-                      rightElbowDeg: -30,
-                      leftShoulderDeg: -110,
-                      leftElbowDeg: 35,
+                      rightShoulderDeg: 135,
+                      rightElbowDeg: 20,
+                      leftShoulderDeg: 122,
+                      leftElbowDeg: 18,
                     }
                   : {
-                      rightShoulderDeg: -45,
-                      rightElbowDeg: 25,
+                      rightShoulderDeg: 65,
+                      rightElbowDeg: 15,
+                      leftShoulderDeg: -18,
+                      leftElbowDeg: 20,
                     }
               }
             />
@@ -781,16 +783,17 @@ export const CoasterCinematicScenes: React.FC<CoasterSceneProps> = ({
                 isBeat1
                   ? {
                       headTiltDeg: -10,
-                      rightShoulderDeg: -140,
-                      rightElbowDeg: -85,
-                      leftShoulderDeg: -140,
-                      leftElbowDeg: 85,
+                      rightShoulderDeg: 125,
+                      rightElbowDeg: 95,
+                      leftShoulderDeg: 115,
+                      leftElbowDeg: 90,
                     }
                   : {
-                      torsoLeanDeg: interpolate(swingPhase, [-1, 0, 1], [-15, 8, 38]),
-                      rightShoulderDeg: interpolate(swingPhase, [-1, 0, 1], [-145, -35, 72]),
-                      rightElbowDeg: interpolate(swingPhase, [-1, 0, 1], [-15, 38, 12]),
-                      leftShoulderDeg: interpolate(swingPhase, [-1, 0, 1], [-130, -25, 65]),
+                      torsoLeanDeg: interpolate(swingPhase, [-1, 0, 1], [-15, 8, 36]),
+                      rightShoulderDeg: interpolate(swingPhase, [-1, 0, 1], [202, 112, 62]),
+                      rightElbowDeg: interpolate(swingPhase, [-1, 0, 1], [22, 34, 12]),
+                      leftShoulderDeg: interpolate(swingPhase, [-1, 0, 1], [210, 120, 70]),
+                      leftElbowDeg: interpolate(swingPhase, [-1, 0, 1], [28, 40, 18]),
                     }
               }
             />
@@ -896,17 +899,17 @@ export const CoasterCinematicScenes: React.FC<CoasterSceneProps> = ({
                 ? {
                     torsoLeanDeg: -12,
                     headTiltDeg: -14,
-                    rightShoulderDeg: -45,
-                    rightElbowDeg: -65,
-                    leftShoulderDeg: -35,
-                    leftElbowDeg: 45,
+                    rightShoulderDeg: 45,
+                    rightElbowDeg: 88,
+                    leftShoulderDeg: -32,
+                    leftElbowDeg: 40,
                   }
                 : {
                     torsoLeanDeg: 14,
-                    rightShoulderDeg: -48 + Math.sin(crankAngle * 0.1) * 28,
-                    rightElbowDeg: -35 + Math.cos(crankAngle * 0.1) * 18,
-                    leftShoulderDeg: -35,
-                    leftElbowDeg: -20,
+                    rightShoulderDeg: 75 + Math.sin(crankAngle * 0.1) * 28,
+                    rightElbowDeg: 35 + Math.cos(crankAngle * 0.1) * 18,
+                    leftShoulderDeg: 52,
+                    leftElbowDeg: 42,
                   }
             }
           />
@@ -954,7 +957,7 @@ export const CoasterCinematicScenes: React.FC<CoasterSceneProps> = ({
               frame={frame}
               fps={fps}
               isSpeaking={false}
-              pose={{ rightShoulderDeg: -100, rightElbowDeg: -25 }}
+              pose={{ rightShoulderDeg: 112, rightElbowDeg: 22, leftShoulderDeg: -20, leftElbowDeg: 25 }}
             />
           </div>
         </div>
@@ -1417,18 +1420,19 @@ export const CoasterCinematicScenes: React.FC<CoasterSceneProps> = ({
   }
 
   // ============================================================================
-  // ESCENA 9 (7.07s): Choque del Rival -> Legado moderno al atardecer con megacoaster
+  // ESCENA 9 (~11.5s): Choque del Rival -> Legado moderno al atardecer con megacoaster
   // ============================================================================
-  const isCrashBeat = tSec < 2.85;
+  const crashSplitSec = 4.35;
+  const isCrashBeat = tSec < crashSplitSec;
 
   if (isCrashBeat) {
-    const crashP = clamp01(tSec / 2.85);
+    const crashP = clamp01(tSec / crashSplitSec);
     const circleSegs = buildMorphableLoopSegments(540, 1230, 225, 0, 0, true);
     const circleTrack = buildSampledTrack(circleSegs);
-    const cartU = Math.min(0.24, crashP * 0.42);
+    const cartU = Math.min(0.24, crashP * 0.44);
     const pt = sampleTrackAt(circleTrack, cartU);
-    const crashed = crashP > 0.52;
-    const crashAge = crashed ? (crashP - 0.52) / 0.48 : 0;
+    const crashed = crashP > 0.55;
+    const crashAge = crashed ? (crashP - 0.55) / 0.45 : 0;
     const shakeX = crashed ? Math.sin(frame * 2.8) * 18 * (1 - crashAge) : 0;
 
     return (
@@ -1494,7 +1498,7 @@ export const CoasterCinematicScenes: React.FC<CoasterSceneProps> = ({
               fps={fps}
               isSpeaking={false}
               sweatDrops={true}
-              pose={{ rightShoulderDeg: -135, leftShoulderDeg: -135 }}
+              pose={{ rightShoulderDeg: 135, rightElbowDeg: 20, leftShoulderDeg: 122, leftElbowDeg: 20 }}
             />
           </div>
         </div>
@@ -1502,8 +1506,9 @@ export const CoasterCinematicScenes: React.FC<CoasterSceneProps> = ({
     );
   }
 
-  // Beat B (2.85..7.07s): Modern Steel Megacoaster at Sunset with Clotoide Loop!
-  const legacyP = clamp01((tSec - 2.85) / 4.22);
+  // Beat B: Modern Steel Megacoaster at Sunset with Clotoide Loop!
+  const legacyDurSec = Math.max(2, durationFrames / fps - crashSplitSec);
+  const legacyP = clamp01((tSec - crashSplitSec) / legacyDurSec);
   const modSegs = buildMorphableLoopSegments(540, 1260, 240, 0.85, 0.9, true);
   const modTrack = buildSampledTrack(modSegs);
   const trainU = interpolate(legacyP, [0, 1], [0.15, 0.94]);
@@ -1555,10 +1560,10 @@ export const CoasterCinematicScenes: React.FC<CoasterSceneProps> = ({
           fps={fps}
           palabras={escena.palabras}
           pose={{
-            rightShoulderDeg: -115,
-            rightElbowDeg: -35,
-            leftShoulderDeg: 20,
-            leftElbowDeg: 40,
+            rightShoulderDeg: 135,
+            rightElbowDeg: 25,
+            leftShoulderDeg: -20,
+            leftElbowDeg: 30,
           }}
         />
       </div>

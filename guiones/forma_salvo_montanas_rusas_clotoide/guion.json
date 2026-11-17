@@ -5,7 +5,7 @@
     "temaResumen": "La forma que salvó las montañas rusas: Por qué los bucles no son círculos perfectos sino gotas clotoides (La historia de Niko, fuerzas G y Werner Stengel)",
     "duracionObjetivo": [
       65,
-      95
+      98
     ],
     "titulo": "La Forma que Salvó las Montañas Rusas",
     "titulo_corto": "El bucle que salvó vidas",
@@ -2125,7 +2125,7 @@
     },
     {
       "id": 9,
-      "texto": "Mientras que en la feria de enfrente, el carrito del rival reventó la base del círculo. Aquella extraña gota se llama clotoide... ¡y hoy es la forma geométrica que salva vidas en cada montaña rusa del planeta!",
+      "texto": "Mientras que en la feria de enfrente, el carrito del rival reventó la base del círculo. Aquella extraña gota se llama clotoide. ¡Y hoy es la forma geométrica que salva vidas en cada montaña rusa del planeta!",
       "icono": "Award",
       "colorIcono": "#F59E0B",
       "tituloVisual": "EL TRIUNFO DE LA CLOTOIDE",
@@ -2189,207 +2189,208 @@
           ]
         }
       ],
-      "duracionSegundos": 7.066,
+      "duracionSegundos": 11.89,
       "palabras": [
         {
           "palabra": "Mientras",
           "inicioMs": 0,
-          "finMs": 340
+          "finMs": 320
         },
         {
           "palabra": "que",
-          "inicioMs": 340,
-          "finMs": 540
+          "inicioMs": 320,
+          "finMs": 520
         },
         {
           "palabra": "en",
-          "inicioMs": 540,
-          "finMs": 620
+          "inicioMs": 520,
+          "finMs": 600
         },
         {
           "palabra": "la",
-          "inicioMs": 620,
-          "finMs": 680
+          "inicioMs": 600,
+          "finMs": 660
         },
         {
           "palabra": "feria",
-          "inicioMs": 680,
-          "finMs": 940
+          "inicioMs": 660,
+          "finMs": 920
         },
         {
           "palabra": "de",
-          "inicioMs": 940,
-          "finMs": 1060
+          "inicioMs": 920,
+          "finMs": 1040
         },
         {
           "palabra": "enfrente",
-          "inicioMs": 1060,
-          "finMs": 1500
+          "inicioMs": 1040,
+          "finMs": 1420
         },
         {
           "palabra": "el",
-          "inicioMs": 1700,
-          "finMs": 1800
+          "inicioMs": 1620,
+          "finMs": 1740
         },
         {
           "palabra": "carrito",
-          "inicioMs": 1800,
-          "finMs": 2120
+          "inicioMs": 1740,
+          "finMs": 2080
         },
         {
           "palabra": "del",
-          "inicioMs": 2120,
-          "finMs": 2300
+          "inicioMs": 2080,
+          "finMs": 2260
         },
         {
           "palabra": "rival",
-          "inicioMs": 2300,
-          "finMs": 2520
+          "inicioMs": 2260,
+          "finMs": 2480
         },
         {
           "palabra": "reventó",
-          "inicioMs": 2520,
-          "finMs": 3080
+          "inicioMs": 2480,
+          "finMs": 3020
         },
         {
           "palabra": "la",
-          "inicioMs": 3080,
-          "finMs": 3180
+          "inicioMs": 3020,
+          "finMs": 3160
         },
         {
           "palabra": "base",
-          "inicioMs": 3180,
-          "finMs": 3380
+          "inicioMs": 3160,
+          "finMs": 3360
         },
         {
           "palabra": "del",
-          "inicioMs": 3380,
-          "finMs": 3520
+          "inicioMs": 3360,
+          "finMs": 3540
         },
         {
           "palabra": "círculo",
-          "inicioMs": 3520,
-          "finMs": 4040
+          "inicioMs": 3540,
+          "finMs": 4000
         },
         {
           "palabra": "Aquella",
-          "inicioMs": 4260,
-          "finMs": 4660
+          "inicioMs": 4240,
+          "finMs": 4580
         },
         {
           "palabra": "extraña",
-          "inicioMs": 4660,
-          "finMs": 5160
+          "inicioMs": 4580,
+          "finMs": 5040
         },
         {
           "palabra": "gota",
-          "inicioMs": 5160,
-          "finMs": 5560
+          "inicioMs": 5040,
+          "finMs": 5360
         },
         {
           "palabra": "se",
-          "inicioMs": 5560,
-          "finMs": 5660
+          "inicioMs": 5360,
+          "finMs": 5500
         },
         {
           "palabra": "llama",
-          "inicioMs": 5660,
-          "finMs": 5920
+          "inicioMs": 5500,
+          "finMs": 5760
         },
         {
           "palabra": "clotoide",
-          "inicioMs": 5920,
-          "finMs": 6740
+          "inicioMs": 5760,
+          "finMs": 6500
         },
         {
-          "palabra": "y",
-          "inicioMs": 6740,
-          "finMs": 6760
-        },
-        {
-          "palabra": "hoy",
-          "inicioMs": 6760,
-          "finMs": 6780
-        },
-        {
-          "palabra": "es",
-          "inicioMs": 6780,
-          "finMs": 6800
-        },
-        {
-          "palabra": "la",
-          "inicioMs": 6800,
-          "finMs": 6820
-        },
-        {
-          "palabra": "forma",
-          "inicioMs": 6820,
-          "finMs": 6840
-        },
-        {
-          "palabra": "geométrica",
-          "inicioMs": 6840,
-          "finMs": 6860
-        },
-        {
-          "palabra": "que",
+          "palabra": "Y",
           "inicioMs": 6860,
-          "finMs": 6880
-        },
-        {
-          "palabra": "salva",
-          "inicioMs": 6880,
-          "finMs": 6900
-        },
-        {
-          "palabra": "vidas",
-          "inicioMs": 6900,
-          "finMs": 6920
-        },
-        {
-          "palabra": "en",
-          "inicioMs": 6920,
-          "finMs": 6940
-        },
-        {
-          "palabra": "cada",
-          "inicioMs": 6940,
           "finMs": 6960
         },
         {
-          "palabra": "montaña",
+          "palabra": "hoy",
           "inicioMs": 6960,
-          "finMs": 6980
+          "finMs": 7120
+        },
+        {
+          "palabra": "es",
+          "inicioMs": 7120,
+          "finMs": 7220
+        },
+        {
+          "palabra": "la",
+          "inicioMs": 7220,
+          "finMs": 7320
+        },
+        {
+          "palabra": "forma",
+          "inicioMs": 7320,
+          "finMs": 7580
+        },
+        {
+          "palabra": "geométrica",
+          "inicioMs": 7580,
+          "finMs": 8180
+        },
+        {
+          "palabra": "que",
+          "inicioMs": 8180,
+          "finMs": 8380
+        },
+        {
+          "palabra": "salva",
+          "inicioMs": 8380,
+          "finMs": 8660
+        },
+        {
+          "palabra": "vidas",
+          "inicioMs": 8660,
+          "finMs": 9020
+        },
+        {
+          "palabra": "en",
+          "inicioMs": 9020,
+          "finMs": 9140
+        },
+        {
+          "palabra": "cada",
+          "inicioMs": 9140,
+          "finMs": 9340
+        },
+        {
+          "palabra": "montaña",
+          "inicioMs": 9340,
+          "finMs": 9800
         },
         {
           "palabra": "rusa",
-          "inicioMs": 6980,
-          "finMs": 7000
+          "inicioMs": 9800,
+          "finMs": 10080
         },
         {
           "palabra": "del",
-          "inicioMs": 7000,
-          "finMs": 7020
+          "inicioMs": 10080,
+          "finMs": 10240
         },
         {
           "palabra": "planeta",
-          "inicioMs": 7020,
-          "finMs": 7040
+          "inicioMs": 10240,
+          "finMs": 10600
         }
       ],
       "escenaPersonalizada": "clotoide_escena_9",
       "eventosSfx": [
         {
           "sfx": "sfx/sfx_crunch_dummy.wav",
-          "tiempoSegundos": 1.48,
+          "tiempoSegundos": 2.4,
           "volumen": 0.3
         },
         {
           "sfx": "sfx/sfx_fair_victory.wav",
-          "tiempoSegundos": 2.9,
+          "tiempoSegundos": 4.4,
           "volumen": 0.28
         }
-      ]
+      ],
+      "silencioFinalSegundos": 0.55
     }
   ]
 }
